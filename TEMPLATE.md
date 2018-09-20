@@ -1,5 +1,5 @@
 ---
-title: PROJECT TITLE
+title: TITLE
 description: DESCRIPTION
 authors: 
  - @list
