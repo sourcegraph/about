@@ -16,7 +16,7 @@ export function activate(): void {
 }
 ```
 
-TODO: image or GIF of hello world
+![image](https://user-images.githubusercontent.com/1387653/46226421-0e811100-c311-11e8-9288-b711ecbbfe2a.png)
 
 Here’s another [extension that adds a link to the npm registry next to import/require statements in JavaScript/TypeScript code](TODO LINK):
 
