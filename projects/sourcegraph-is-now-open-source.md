@@ -11,7 +11,7 @@ published: false
 
 # Sourcegraph is now open source
 
-Sourcegraph development is now open source at [github.com/sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) (MIT License). You can now contribute to Sourcegraph:
+Sourcegraph development is now open source at [github.com/sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) (Apache-licensed). You can now contribute to Sourcegraph:
 
 * Submit PRs to the [Sourcegraph open-source project](https://github.com/sourcegraph/sourcegraph)
 * See, discuss, and propose changes to the [product roadmap](https://github.com/sourcegraph/about/tree/master/projects)
