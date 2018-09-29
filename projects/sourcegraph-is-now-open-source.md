@@ -26,7 +26,7 @@ We opened up Sourcegraph to bring code search and intelligence to more developer
 
 Watch our team click the button on GitHub to make the repository public:
 
-<!-- TODO: add video →
+<!-- TODO: add video -->
 
 We're also excited about what this means for Sourcegraph as a company. All of our customers, many with hundreds or thousands of developers using Sourcegraph internally every day, started out with a single developer spinning up a Sourcegraph instance and sharing it with their team. Being open-source makes it even easier to use Sourcegraph.
 
