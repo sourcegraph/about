@@ -1,6 +1,16 @@
-# Sourcegraph license keys
-Team: T.B.D.
-Dates: Ship on October 1
+---
+title: Product subscriptions and license keys
+description: TODO(sqs)
+authors:
+ - Quinn Slack
+startdate: 2018-09-01
+releasedate: 2018-11-01
+publishdate: yyyy-mm-dd
+published: false
+---
+
+# Product subscriptions and license keys
+
 
 TODO: This will be updated after the product tier naming is solidifed (see #product channel).
 
