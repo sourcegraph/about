@@ -21,7 +21,7 @@ Open company: for commercial products, being open product isn't enough to gain t
 
 Open company doesn't mean that all the implementation details of our company are public, but the way we develop and operate our business is public.
 
-We've made the sourcegraph/about open, which is our current and future product roadmap. Our website, internal and external documentation, and blog posts are available.
+We've made the sourcegraph/about open, which is our current and future product roadmap. In the future, our website, documentation, and all our blog content will be available in this repository.
 
 Product roadmap:
  - Lets customers and users know what's coming up.
@@ -29,8 +29,6 @@ Product roadmap:
  - Powerful internal communication tool that allows engineers own shipping products end to end and focus on the user.
  - Demonstrates efficiency: a single document is used for product planning and our release announcement.
  - Amazon does this internally: they pre-write the press release for anything they ship.
-
-Our blog content is also open and available. You can also see work in progress blog posts before they're published.
 
 Process:
  - We kick off projects with the project document in this repo.
