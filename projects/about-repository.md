@@ -36,8 +36,3 @@ Process:
  - Then, we go share this with customers, users, and anyone who can provide feedback to ensure we're on the right track.
  - The developers make GitHub issues and post a GitHub issues link to the project document.
  - The project team then makes this document true. They know exactly what they're building from day one, and won't have any surprise additions appear while building. When it's ready, they flip the switch and publish the post. There's no last minute rush to create a blog post that attempts to describe what was built.
-
-
-Implementation notes
- - We only have 3 or 4 pages on the site in HTML. Everything else is in Markdown, so everyone can easily read and contribute to our documents.
-
