@@ -2,9 +2,9 @@
 title: Open product, open company
 description: DESCRIPTION
 authors:
- - [Farhan Attamimi](https://github.com/attfarhan)
- - [Francis Schmaltz](https://github.com/francisschmaltz)
- - [Ryan Blunden](https://github.com/ryan-blunden)
+- Farhan Attamimi
+- Francis Schmaltz
+- Ryan Blunden
 startdate: 2018-09-21
 releasedate: 2018-10-01
 publishdate: yyyy-mm-dd
