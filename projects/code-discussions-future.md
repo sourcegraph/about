@@ -2,7 +2,7 @@
 title: The future of code discussions
 description: The future of Sourcegraph's code discussions feature.
 authors:
-  - @slimsag
+  - Stephen Gutekanst
 releasedate: 2018-09-28
 published: false
 ---

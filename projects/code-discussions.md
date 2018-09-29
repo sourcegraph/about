@@ -2,7 +2,7 @@
 title: Announcing code discussions for Sourcegraph
 description: Announcind the ability to discuss our code and roadmap on Sourcegraph.
 authors:
-  - @slimsag
+  - Stephen Gutekanst
 releasedate: 2018-09-28
 published: false
 ---
