@@ -2,7 +2,7 @@
 title: Sourcegraph is now open source
 description: TODO(sqs)
 authors:
- - [Quinn Slack](https://twitter.com/sqs
+ - Quinn Slack
 startdate: 2018-09-01
 releasedate: 2018-10-01
 publishdate: yyyy-mm-dd
