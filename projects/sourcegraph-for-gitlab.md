@@ -7,7 +7,7 @@ startdate: 2018-09-18
 enddate: 2018-10-01
 releasedate: 2018-10-01
 publishdate: 2018-10-01
-published: false
+published: true
 ---
 
 You can now get code intelligence on GitLab with the Sourcegraph browser
@@ -17,10 +17,10 @@ extension, just as 10,000s of developers get on GitHub now.
 
 To start using this:
 
-1. Install [Sourcegraph for Chrome](...) or [Sourcegraph for Firefox](...)
+1. Install [Sourcegraph for Chrome](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack) or [Sourcegraph for Firefox](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/)
 2. Visit [common/executor.go](https://gitlab.com/gitlab-org/gitlab-runner/blob/master/common/executor.go) in [gitlab-org/gitlab-runner](https://gitlab.com/gitlab-org/gitlab-runner) on GitLab (or any other file in a public repository)
-3. To enable Sourcegraph on your own GitLab instance on Chrome, right click the Sourcegraph logo in your browser's
-   toolbar and click "Enable Sourcegraph on this domain"
+3. Enable Sourcegraph for GitLab on Chrome by right clicking the Sourcegraph logo in your browser's
+   toolbar and click "Enable Sourcegraph on this domain".
 4. Hover over any token in the file to see tooltips
 
 To use this on your company's private code, run a [Sourcegraph instance](https://about.sourcegraph.com/docs).
