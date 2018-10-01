@@ -1,0 +1,83 @@
+.blog {
+    color: $dark-7;
+
+    &__head {
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 0.5rem;
+        background: $light-11;
+    }
+
+    &__posts {
+        &--container {
+            padding: 4rem;
+            border-bottom: 1px solid $light-11;
+            &:hover {
+                background-color: $light-11;
+                transition: background-color 0.25s ease-in;
+            }
+            @media (max-width: $media-md) {
+                padding: 2rem;
+            }
+        }
+
+        &--post {
+            color: $dark-7;
+            display: grid;
+            grid-template-columns: auto minmax(min-content, 350px) minmax(min-content, 600px) auto;
+            grid-column-gap: 3rem;
+
+            width: 100%;
+
+            @media (max-width: $media-md) {
+                grid-template-columns: 100%;
+                grid-template-rows: min-content(50%) 50%;
+                grid-row-gap: 2rem;
+            }
+
+            &-image {
+                grid-column-start: 2;
+                grid-row-start: 1;
+
+                @media (max-width: $media-md) {
+                    grid-row-start: 1;
+                    grid-column-start: 1;
+                }
+            }
+
+            &-text {
+                grid-column-start: 3;
+                grid-row-start: 1;
+
+                @media (max-width: $media-md) {
+                    grid-row-start: 2;
+                    grid-column-start: 1;
+                }
+            }
+
+            &-excerpt {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            &-byline {
+                opacity: 0.7;
+            }
+
+            &-readmore {
+                color: $blue-7;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__link-inactive {
+        color: $dark-7;
+        font-weight: bold;
+        &:hover {
+            color: inherit;
+            cursor: auto;
+        }
+    }
+}

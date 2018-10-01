@@ -1,0 +1,194 @@
+// jobs page
+
+.jobs {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        margin: auto auto;
+        padding: 2rem 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__head {
+        &-description {
+            max-width: 30em;
+            margin: 2rem auto;
+        }
+
+        &-button {
+            margin: auto auto;
+            background: $teal-7;
+            color: $light-12;
+        }
+    }
+
+    &__benefits {
+        background: $dark-8;
+        color: white;
+
+        &-list {
+            display: flex;
+            max-width: 64rem;
+            margin-left: auto;
+            margin-right: auto;
+            @media (max-width: $media-md) {
+                flex-direction: column;
+            }
+
+            &-item {
+                display: flex;
+                padding: 0.5rem 1rem;
+                margin: 0.5rem;
+                flex-grow: 1;
+                text-align: left;
+                font-size: 0.875rem;
+
+                @media (max-width: $media-md) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                &-icon {
+                    margin-right: 1rem;
+                    align-self: baseline;
+                }
+
+                &-title {
+                    font-size: 0.875rem;
+                    margin: 0;
+                }
+
+                &-description {
+                    font-size: 0.875rem;
+                    margin: 0 auto;
+                    margin-right: auto;
+                    margin-left: auto;
+                    max-width: 20em;
+                }
+            }
+        }
+    }
+
+    &__team {
+        background: $dark-10;
+        color: white;
+
+        &--text {
+            max-width: 64em;
+            margin: 0.5rem auto;
+        }
+
+        &--profiles {
+            max-width: 96rem;
+            margin: auto auto;
+
+            &-item {
+                width: 4rem;
+                height: 4rem;
+                margin: 0 1.25rem 1.25rem 1.25rem;
+            }
+        }
+    }
+
+    &__work {
+        background: $light-10;
+        color: black;
+
+        &--buttons {
+            display: flex;
+            justify-content: center;
+            text-align: left;
+
+            @media (max-width: $media-lg) {
+                flex-direction: column;
+            }
+
+            &-button {
+                display: flex;
+                background: $dark-8;
+                padding: 1rem;
+                margin: 0.5rem;
+                max-width: 30rem;
+                border-radius: 0.5rem;
+                justify-content: space-between;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                padding-right: 0.5rem;
+                max-width: 64rem;
+
+                &-title {
+                    color: $light-12;
+                }
+                &-description {
+                    color: $light-4;
+                }
+            }
+
+            &-icon {
+                svg path {
+                    fill: $light-11;
+                }
+                align-self: center;
+            }
+        }
+    }
+
+    &__positions {
+        background: $light-11;
+        color: black;
+
+        &--title {
+            margin: auto auto;
+            max-width: 30rem;
+            text-align: left;
+        }
+        &--dept {
+            max-width: 30em;
+            border-left: 1px solid $light-10;
+            border-top: 1px solid $light-10;
+            border-right: 1px solid $light-10;
+            border-radius: 0.25rem;
+            background: $light-12;
+            margin-top: 1rem;
+
+            &-container {
+                padding: 1rem;
+                background: $light-12;
+                border-bottom: 1px solid $light-10;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+        }
+
+        &--entry {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 1rem;
+            justify-content: space-between;
+            color: $blue-7;
+            border-bottom: 1px solid $light-10;
+            align-items: center;
+
+            &-button {
+                text-decoration: none;
+                transition: opacity 0.15s ease-in;
+                padding: 0.5rem 1rem;
+                color: $light-12;
+                background: $blue-7;
+                border-radius: 0.25rem;
+                height: 50%;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

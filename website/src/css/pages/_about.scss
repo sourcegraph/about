@@ -1,0 +1,92 @@
+.about {
+    &__jumbotron {
+        margin-bottom: 0;
+    }
+
+    &__plan {
+        padding: 3rem 0 0 0;
+        background-color: $light-10;
+        &-container {
+            background-color: white;
+            padding: 2rem 2rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        &-btn {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__values {
+        padding: 3rem 0;
+        background-color: $light-9;
+        svg {
+            color: $light-7;
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    &__founders {
+        padding: 3rem 0;
+        &-social {
+            margin-bottom: 1rem;
+            .icon {
+                margin-right: 0.5rem;
+            }
+        }
+
+        &-board {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+
+            @media (max-width: $media-sm) {
+                justify-content: unset;
+            }
+
+            &-member {
+                border-radius: 0.25rem;
+                padding-right: 1rem;
+                margin: 0 0 1rem 1rem;
+                background: $light-11;
+                display: flex;
+                img {
+                    margin-bottom: 0;
+                    height: 4rem;
+                    width: 4rem;
+                    border-top-left-radius: 0.5rem;
+                    border-bottom-left-radius: 0.5rem;
+                }
+                @media (max-width: $media-md) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-advisors {
+            margin-top: 1rem;
+
+            &-item {
+                display: inline-block;
+                border-bottom: 1px solid $light-10;
+                padding: 0.5rem 0;
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__investors {
+        padding: 3rem 0;
+        img {
+            width: 100%;
+            padding: 0 2rem;
+            margin: 1rem 0;
+        }
+    }
+}
