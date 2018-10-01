@@ -1,13 +1,12 @@
 ---
-title: Announcing code discussions for Sourcegraph
-description: Announcind the ability to discuss our code and roadmap on Sourcegraph.
+title: Discuss code and docs in repositories
 authors:
   - Stephen Gutekanst
 releasedate: 2018-09-28
 published: false
 ---
 
-Now that [Sourcegraph is open source](blog post link), we want everyone to be able to contribute to our code and product roadmap. To make this easy and open, we’re announcing code discussions:
+Now that [Sourcegraph is open source](https://about.sourcegraph.com/blog/sourcegraph-is-now-open-source/), we want everyone to be able to contribute to our code and product roadmap. To make this easy and open, we’re announcing code discussions:
 
 ![Code discussions on Sourcegraph demo](https://storage.googleapis.com/github-com-sourcegraph-about-content/code-discussions/code-discussions-on-sourcegraph.gif)
 
