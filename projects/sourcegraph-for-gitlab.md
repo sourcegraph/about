@@ -13,7 +13,7 @@ published: false
 You can now get code intelligence on GitLab with the Sourcegraph browser
 extension, just as 10,000s of developers get on GitHub now.
 
-<!-- Gif -->
+![Sourcegraph for GitLab](https://cl.ly/7916fe1453a4/download/sourcegraph-for-gitLab.gif)
 
 To start using this:
 
