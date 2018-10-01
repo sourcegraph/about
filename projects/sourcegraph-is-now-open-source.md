@@ -14,7 +14,7 @@ published: false
 Sourcegraph development is now open source (Apache License) at [github.com/sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph)! You can now contribute to Sourcegraph:
 
 * Submit PRs to the [Sourcegraph open-source project](https://github.com/sourcegraph/sourcegraph)
-* See, discuss, and propose changes to the [product roadmap](https://github.com/sourcegraph/about/tree/master/projects)
+* See, discuss, and propose changes to the work-in-progress [product roadmap](https://github.com/sourcegraph/about/tree/master/projects)
 * Add and improve [documentation](https://github.com/sourcegraph/about)
 * [Build Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api) to enhance viewing/reviewing code on both Sourcegraph and GitHub alike
 
@@ -32,5 +32,5 @@ Beyond open-sourcing Sourcegraph's code and development, we're also opening up o
 
 See you over at the [Sourcegraph open-source repository](https://github.com/sourcegraph/sourcegraph)!
 
-Thanks to Philip Thomas, Jay Taylor, and Dan Bentley <!-- TODO(sqs): add more --> for feedback and to all of the AUTHORS who have contributed to the project so far.
+> _Thanks to Philip Thomas, Jay Taylor, Kevin Wang, and Dan Bentley for feedback on the open-source repository's docs and scripts, and to all of the AUTHORS who have contributed to the project so far._
 
