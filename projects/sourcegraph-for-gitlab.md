@@ -18,15 +18,16 @@ extension, just as 10,000s of developers get on GitHub now.
 To start using this:
 
 1. Install [Sourcegraph for Chrome](...) or [Sourcegraph for Firefox](...)
-2. Visit <file> in <repo> on GitLab (or any other file in a public repository)
-3. Click the Sourcegraph logo in your browser's toolbar (TODO: implement this)
+2. Visit [common/executor.go](https://gitlab.com/gitlab-org/gitlab-runner/blob/master/common/executor.go) in [gitlab-org/gitlab-runner](https://gitlab.com/gitlab-org/gitlab-runner) on GitLab (or any other file in a public repository)
+3. To enable Sourcegraph on your own GitLab instance on Chrome, right click the Sourcegraph logo in your browser's
+   toolbar and click "Enable Sourcegraph on this domain"
 4. Hover over any token in the file to see tooltips
 
-To use this on your company's private code, run a [Sourcegraph instance](...docs).
+To use this on your company's private code, run a [Sourcegraph instance](https://about.sourcegraph.com/docs).
 
 GitLab is the first of many more code hosts Sourcegraph will support in [the open
-source Sourcegraph browser extension](repo). Check out the code it took to add
-GitLab support: <link to gitlab/code_intelligence.ts on sourcegraph.com>.
+source Sourcegraph browser extension](https://github.com/sourcegraph/browser-extensions). Check out the code it took to add
+GitLab support: https://sourcegraph.com/github.com/sourcegraph/browser-extensions/-/blob/src/libs/gitlab/code_intelligence.ts
 
 ## Implementation Notes
 
