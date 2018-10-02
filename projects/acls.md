@@ -13,7 +13,7 @@ This is a draft document about how we will add access control (ACLs) to Sourcegr
 
 ### Background/context
 
-Prospective customers have requested ACLs in Sourcegraph. The lack of ACLs synced from either code host or SSO identity provider has prevented multiple customers from adopting Sourcegraph.A
+Prospective customers have requested ACLs in Sourcegraph. The lack of ACLs synced from either code host or SSO identity provider has prevented multiple customers from adopting Sourcegraph.
 
 An ancillary benefit of ACLs is that it would require users to sign in to a given Sourcegraph instance, which means Sourcegraph instance admins could see more useful metrics about how that Sourcegraph instance is being used by developers.
 
