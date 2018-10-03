@@ -50,6 +50,6 @@
         "destination": "/index.html"
       }
     ],
-    "headers": [{ "source": "/styles.css", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }]
+    "headers": [{ "source": "/styles.css", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }, { "source": "**/*.html", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }]
   }
 }
