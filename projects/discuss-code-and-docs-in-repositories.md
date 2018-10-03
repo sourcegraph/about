@@ -16,6 +16,8 @@ With code discussions, you can:
 - See discussions attached to the code, even if lines around it have changed.
 - See discussions inline when you browse code on Sourcegraph and GitHub.
 
+> **Note:** For now, you must be signed into Sourcegraph.com to view and use code discussions.
+
 On our [open-source code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph), discuss the implementation or why we chose certain usage patterns:
 
 - [example: providing feedback about our Sourcegraph extension API](https://sourcegraph.com/github.com/sourcegraph/sourcegraph-extension-api/-/blob/src/sourcegraph.d.ts#L1-2&tab=discussions&threadID=28)
