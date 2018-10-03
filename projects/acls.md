@@ -131,4 +131,4 @@ TODO
 1. Enforcing ACLs on GitHub.com, Bitbucket.org, and GitLab.com would require supporting them as OAuth login methods (and requiring OAuth login before a user can access a Sourcegraph instance).
 1. Should the service responsible for fetching ACL data from code hosts (the ACLs service) be `repo-updater` (which is already responsible for talking directly to code hosts) or a separate service?
 1. There is no near-term plan to support Bitbucket Server.
-1. Don't yet have a fleshed outplan for supporting AWS CodeCommit.
+1. Don't yet have a fleshed-out plan for supporting AWS CodeCommit.
