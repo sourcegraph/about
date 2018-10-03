@@ -1,0 +1,161 @@
+.body-fixed {
+    // Locks posistion of page while nav is open
+    @media screen and (max-width: $media-md) {
+        overflow: hidden;
+    }
+}
+.docs-nav-container {
+    background-color: #f2f4f8;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+.sidebar-title {
+    padding: 15px;
+
+    text-align: center;
+    @media screen and (min-width: $media-md) {
+        display: none !important;
+    }
+}
+.documentation {
+    position: relative;
+    background-color: #ffffff;
+
+    &__title {
+        padding: 0 0 0.5 0;
+    }
+
+    &__body {
+        h1,
+        h2 {
+            &:first-child {
+                margin-top: 1rem;
+            }
+            &:not(:first-child) {
+                margin-top: 3rem;
+            }
+            margin-bottom: 1rem;
+        }
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__tab-content {
+        background-color: white;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__tab-pane {
+        display: flex;
+    }
+
+    &__markdown {
+        overflow: hidden;
+        padding-left: 2rem;
+    }
+
+    // Adapt docs page for mobile
+    .nav-toggle {
+        display: none;
+    }
+    @media screen and (max-width: $media-md) {
+        .nav-container {
+            padding: 2rem 0 6rem;
+            position: fixed;
+            top: -1.2rem;
+            bottom: 0;
+            -webkit-transition: all 1s ease; // Safari
+            transition: all 0.35s ease;
+            background: $white;
+            z-index: 100;
+        }
+        .show {
+            overflow: scroll;
+            left: 0;
+            right: 0;
+        }
+        .hide {
+            overflow: hidden;
+            top: -1.2rem;
+            left: -100%;
+            right: 100%;
+        }
+        .nav-toggle {
+            display: block;
+            position: fixed;
+            left: 1.5rem;
+            bottom: 1.5rem;
+            z-index: 999;
+            box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.1);
+            width: 56px;
+            height: 40px;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            // background: no-repeat;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+        .sidebar {
+            position: relative;
+            background-color: $white;
+            opacity: 1;
+            padding-left: 15px;
+            padding-right: 15px;
+            max-height: calc(100% - 8rem);
+            overflow: scroll;
+            width: 100%;
+            padding-top: 10px;
+        }
+        .ds-dropdown-menu .ds-with-1 {
+            width: 100%;
+        }
+        .algolia-autocomplete .ds-dropdown-menu {
+            min-width: 100px;
+            box-shadow: 0 8px 14px 4px rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+        .algolia-autocomplete,
+        .ds-input {
+            width: 100%;
+        }
+        &__markdown {
+            overflow: hidden;
+            padding-left: 0rem;
+        }
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+
+    .table {
+        &__tokens-all {
+            td:first-child,
+            td:last-child {
+                white-space: nowrap;
+            }
+        }
+        &__tokens-diff {
+            td:first-child,
+            td:last-child {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.code-intel-images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 1rem;
+}
+.header {
+    background-color: #f2f4f8 !important;
+    opacity: 1;
+}

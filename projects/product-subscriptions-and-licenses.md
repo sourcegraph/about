@@ -1,11 +1,12 @@
 ---
-title: Product subscriptions and license keys
-description: TODO(sqs)
-authors:
- - Quinn Slack
-startdate: 2018-09-01
-releasedate: 2018-11-01
-publishdate: yyyy-mm-dd
+title: 'Product subscriptions and license keys'
+author: 'Quinn Slack'
+publishDate: 2018-10-01T00:00-07:00
+tags: [
+  "blog"
+]
+slug: product-subscriptions-and-license-keys
+heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
 published: false
 ---
 

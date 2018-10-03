@@ -1,0 +1,55 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/docs/datacenter",
+        "destination": "https://github.com/sourcegraph/deploy-sourcegraph",
+        "type": 301
+      },
+      {
+        "source": "/docs/datacenter/admin-guide",
+        "destination": "https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/admin-guide.md",
+        "type": 301
+      },
+      {
+        "source": "/docs/datacenter/scaling",
+        "destination": "https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/scale.md",
+        "type": 301
+      },
+      {
+        "source": "/docs/datacenter/prometheus-metrics",
+        "destination": "https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/prom-metrics.md",
+        "type": 301
+      },
+      {
+        "source": "/docs/datacenter/update",
+        "destination": "https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/update.md",
+        "type": 301
+      },
+      {
+        "source": "/go/go-in-debian",
+        "destination": "/go/gophercon-2018-go-in-debian",
+        "type": 301
+      },
+      {
+        "source": "/blog/sourecgraph-liveblogging-at-gophercon-2018",
+        "destination": "/blog/sourcegraph-liveblogging-at-gophercon-2018",
+        "type": 301
+      },
+      {
+        "source": "/go/grpc-in-production",
+        "destination": "/go/grpc-in-production-alan-shreve/",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [{ "source": "/styles.css", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }]
+  }
+}

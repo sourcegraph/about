@@ -1,16 +1,14 @@
 ---
-title: Open product, open company
-description: DESCRIPTION
-authors:
-- Farhan Attamimi
-- Francis Schmaltz
-- Ryan Blunden
-startdate: 2018-09-21
-releasedate: 2018-10-01
-publishdate: yyyy-mm-dd
+title: 'Open product, open company'
+author: 'Farhan Attamimi, Ryan Blunden, Francis Schmaltz'
+publishDate: 2018-10-01T00:00-07:00
+tags: [
+  "blog"
+]
+slug: open-product-open-company
+heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
 published: false
 ---
-
 # Open product, open company
 
 As part of open-sourcing the core of Sourcegraph, we are also building and growing Sourcegraph in the open as an **open product** and (soon) **open company**. We're kicking this off by open-sourcing [sourcegraph/about](https://github.com/sourcegraph/about), which holds product- and company-related docs for Sourcegraph.

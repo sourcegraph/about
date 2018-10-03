@@ -1,0 +1,73 @@
+# Create a single-server deployment named sourcegraph using the latest Sourcegraph Docker image.
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sourcegraph
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sourcegraph
+    spec:
+      containers:
+      - name: sourcegraph
+        image: sourcegraph/server:latest
+        ports:
+        - containerPort: 7080
+        volumeMounts:
+        - mountPath: /etc/sourcegraph
+          name: config
+        - mountPath: /var/opt/sourcegraph
+          name: data
+      volumes:
+      - name: config
+        persistentVolumeClaim:
+          claimName: sourcegraph-config
+      - name: data
+        persistentVolumeClaim:
+          claimName: sourcegraph-data
+---
+# Create a LoadBalancer service to expose the deployment on port 80.
+apiVersion: v1
+kind: Service
+metadata:
+  name: sourcegraph
+  labels:
+    app: sourcegraph
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 7080
+    protocol: TCP
+  selector:
+    app: sourcegraph
+---
+# Create a 1GB persistent volume to hold Sourcegraph configuration data.
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: sourcegraph-config
+  labels:
+    app: sourcegraph
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+# Create a 500GB persistent volume to hold Sourcegraph cloned repositories, code intelligence metadata, and all other persistent metadata.
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: sourcegraph-data
+  labels:
+    app: sourcegraph
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 500Gi

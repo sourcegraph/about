@@ -1,0 +1,36 @@
+// 404
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    padding: 15% 4rem 25% 4rem;
+    background: url('/c-sprinkles-blank.svg');
+    background-size: cover;
+    @media screen and (max-width: $media-md) {
+        background: #fff;
+        background-size: 220%;
+    }
+
+    // background-color: $dark-10;
+
+    &__circle {
+        height: 8rem;
+        width: 8rem;
+        margin: 0 auto;
+        background: #afbcd4;
+    }
+
+    &__icon {
+        height: 8rem;
+        width: 8rem;
+        margin: 0 auto;
+        svg {
+            height: 8rem;
+            width: 8rem;
+            fill: #e4e9f1;
+        }
+    }
+}

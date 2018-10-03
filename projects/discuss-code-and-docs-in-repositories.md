@@ -1,9 +1,13 @@
 ---
-title: Discuss code and docs in repositories
-authors:
-  - Stephen Gutekanst
-releasedate: 2018-09-28
-published: false
+title: 'Discuss code and docs in repositories'
+author: 'Stephen Gutenkanst'
+publishDate: 2018-10-01T00:00-07:00
+tags: [
+  "blog"
+]
+slug: discuss-code-and-docs-in-repositories
+heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+published: true
 ---
 
 Now that [Sourcegraph is open source](https://about.sourcegraph.com/blog/sourcegraph-is-now-open-source/), we want everyone to be able to contribute to our code and product roadmap. To make this easy and open, we’re announcing code discussions:

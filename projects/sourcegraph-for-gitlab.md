@@ -1,13 +1,13 @@
 ---
-title: Sourcegraph for GitLab
-description: Sourcegraph features on GitLab
-authors:
-  - github.com/ijsnow
-startdate: 2018-09-18
-enddate: 2018-10-01
-releasedate: 2018-10-01
-publishdate: 2018-10-01
-published: true
+title: 'Sourcegraph for GitLab'
+author: 'Isaac Snow'
+publishDate: 2018-10-01T00:00-07:00
+tags: [
+  "blog"
+]
+slug: sourcegraph-for-gitlab
+heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+published: false
 ---
 
 You can now get code intelligence on GitLab with the Sourcegraph browser
