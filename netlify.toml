@@ -1,0 +1,5 @@
+[build]
+
+base = "website"
+publish = "website/public"
+command = "npm run prettier && npm run build"
