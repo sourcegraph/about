@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: discuss-code-and-docs-in-repositories
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: //images.ctfassets.net/le3mxztn6yoo/5CV9lPcnte6UKuYCwi6OuW/4e6f04254635f327c4c9da7a8695288a/Screenshot_from_2018-10-01_16-34-46.png
 published: true
 ---
 
