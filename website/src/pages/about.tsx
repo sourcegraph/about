@@ -25,26 +25,57 @@ export default class About extends React.Component<any, any> {
                         <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
                         <meta name="twitter:card" content="summary" />
 
-                        <meta
-                            name="twitter:description"
-                            content="The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
-                        />
-                        <meta
-                            property="og:description"
-                            content="The pace at which humans can write code is the only thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
-                        />
-                        <meta
-                            name="description"
-                            content="The pace at which humans can write code is the only thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
-                        />
-                    </Helmet>
-                    <div>
-                        <div className="light-11-bg jumbotron about__jumbotron text-center">
-                            <div className="container">
-                                <h1>
-                                    The pace at which humans can write code is the only thing that stands between us and
-                                    flying cars, a habitat on Mars, and a cure for cancer.
-                                </h1>
+                    <meta
+                        name="twitter:description"
+                        content="The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
+                    />
+                    <meta
+                        property="og:description"
+                        content="The pace at which humans can write code is the only thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
+                    />
+                    <meta
+                        name="description"
+                        content="The pace at which humans can write code is the only thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
+                    />
+                </Helmet>
+                <div>
+                    <div className="light-11-bg jumbotron about__jumbotron text-center">
+                        <div className="container">
+                            <h1>
+                                The pace at which humans can write code is the only thing that stands between us and
+                                flying cars, a habitat on Mars, and a cure for cancer.
+                            </h1>
+                        </div>
+                    </div>
+                    <div className="about__plan">
+                        <div className="about__plan-container container">
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <h1 className="mb-0">
+                                        Master Plan
+                                        <br />
+                                    </h1>
+                                    <hr />
+                                    <h2>
+                                        We believe code intelligence can help bring the future sooner.
+                                        <br />
+                                    </h2>
+                                    <p>
+                                        Our long-term vision is to make it so everyone, in every community, in every
+                                        country, and in every industry can create products using the best technology.
+                                        Here is what we are working on now to help this happen:
+                                    </p>
+                                    <ul>
+                                        <li>Make basic code intelligence ubiquitous</li>
+                                        <li>Make code review continuous and intelligent</li>
+                                        <li>Increase the amount and quality of open-source code</li>
+                                    </ul>
+                                    <Link to="/plan">
+                                        <button className="btn btn-primary about__plan-btn">
+                                            Read our master plan
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                         <div className="about__plan">
@@ -361,10 +392,6 @@ export default class About extends React.Component<any, any> {
                 </div>
             </Layout>
         )
-    }
-
-    private masterPlanClicked = () => {
-        eventLogger.trackMasterPlanClicked('Footer')
     }
 }
 

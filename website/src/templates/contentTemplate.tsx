@@ -36,6 +36,7 @@ export default class ContentTemplate extends React.Component<any, any> {
     }
 
     public render(): JSX.Element | null {
+        console.log(this.props)
         const md = this.props.data.markdownRemark
         const content = md.html
         const excerpt = md.excerpt
