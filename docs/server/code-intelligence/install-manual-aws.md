@@ -53,7 +53,7 @@ Generally you do not ever need to perform manual installation of code intelligen
     - service docker start
     - usermod -a -G docker ec2-user
     - [ sh, -c, 'docker network create --driver bridge lsp' ]
-    - [ sh, -c, 'docker run -d --publish 80:7080 --publish 443:7443 --network lsp --name sourcegraph --restart unless-stopped --volume /home/ec2-user/.sourcegraph/config:/etc/sourcegraph --volume /home/ec2-user/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:<server-version-number />
+    - [ sh, -c, 'docker run -d --publish 80:7080 --publish 443:7443 --network lsp --name sourcegraph --restart unless-stopped --volume /home/ec2-user/.sourcegraph/config:/etc/sourcegraph --volume /home/ec2-user/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:<server-version-number />' ]
     - [ sh, -c, 'docker run -d --network=lsp --name=typescript --restart unless-stopped sourcegraph/codeintel-typescript:latest' ]
     ```
 
