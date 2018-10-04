@@ -1,6 +1,6 @@
 ---
 title: 'Discuss code and docs in repositories'
-author: 'Stephen Gutenkanst'
+author: 'Stephen Gutekanst'
 publishDate: 2018-10-01T00:00-07:00
 tags: [
   "blog"
