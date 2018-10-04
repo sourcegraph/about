@@ -149,7 +149,7 @@ export default class BrowserExtension extends React.Component<any, any> {
                                         </button>
                                     </Link>
                                     <p className="small home__feature-block-small">
-                                        <Link to="/pricing">Starts at $5/user/month</Link>.
+                                        <Link to="/pricing">Starts at $4/user/month</Link>.
                                     </p>
                                 </div>
                             </div>

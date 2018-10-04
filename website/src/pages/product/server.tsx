@@ -43,7 +43,7 @@ export default class Server extends React.Component<any, any> {
                                         </a>{' '}
                                         on your private code.{' '}
                                         <Link to="/pricing" className="hero-link">
-                                            Upgraded features start at $5/user/month
+                                            Upgraded features start at $4/user/month
                                         </Link>
                                         .
                                     </p>
@@ -260,7 +260,7 @@ export default class Server extends React.Component<any, any> {
                                 </Link>
                                 <p className="small product__server__feature-block-small">
                                     <Link to="/pricing" onClick={this.pricingClickedCodeIntelligence}>
-                                        Starts at $5/user/month
+                                        Starts at $4/user/month
                                     </Link>
                                     .
                                 </p>
@@ -442,7 +442,7 @@ export default class Server extends React.Component<any, any> {
                                             </div>
                                             <p className="small product__server__deploy-card-small">
                                                 <Link to="/pricing" onClick={this.pricingClickedDataCenter}>
-                                                    Starts at $5/user/month
+                                                    Starts at $4/user/month
                                                 </Link>
                                                 .
                                             </p>
