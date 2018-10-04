@@ -55,6 +55,6 @@ For single-server Docker image deployments, add the following lines to your site
 
 Next, restart your Sourcegraph instance using the same `docker run` [command](/docs), but map the host port to the container HTTPS port 7443 (not the HTTP port 7080). In this example, the host port 443 (HTTPS) is mapped to the container's HTTPS port 7443.
 
-<div id="docker-command-docs"><pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 443:7443 --rm<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> --volume /var/run/docker.sock:/var/run/docker.sock<span class="virtual-br"></span> sourcegraph/server:<server-version-number></server-version-number></code></pre></div>
+<div id="docker-command-docs"><pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 443:7443 --rm<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> --volume /var/run/docker.sock:/var/run/docker.sock<span class="virtual-br"></span> sourcegraph/server:<server-version-number /></code></pre></div>
 
 If you are running on cloud infrastructure, you will likely need to add an ingress rule to make port 30443 accessible to the Internet.
