@@ -15,7 +15,7 @@ You can use your own PostgreSQL server with Sourcegraph if you wish. For example
 
 Simply add the standard PostgreSQL environment variables to your `docker run` command and Sourcegraph will use that PostgreSQL server instead of its built-in one. For example:
 
-<pre class="pre-wrap"><code>docker run [...]<span class="virtual-br"></span> -e PGHOST=psql.mycompany.org<span class="virtual-br"></span> -e PGUSER=sourcegraph<span class="virtual-br"></span> -e PGPASSWORD=secret<span class="virtual-br"></span> -e PGDATABASE=sourcegraph<span class="virtual-br"></span> -e PGSSLMODE=disable<span class="virtual-br"></span> sourcegraph/server:latest</code></pre>
+<pre class="pre-wrap"><code>docker run [...]<span class="virtual-br"></span> -e PGHOST=psql.mycompany.org<span class="virtual-br"></span> -e PGUSER=sourcegraph<span class="virtual-br"></span> -e PGPASSWORD=secret<span class="virtual-br"></span> -e PGDATABASE=sourcegraph<span class="virtual-br"></span> -e PGSSLMODE=disable<span class="virtual-br"></span> sourcegraph/server:<server-version-number /></code></pre>
 
 Most standard PostgreSQL environment variables may be specified (`PGPORT`, etc). See http://www.postgresql.org/docs/current/static/libpq-envars.html for a full list.
 
@@ -32,7 +32,7 @@ Generally, there is no reason to do this as Sourcegraph only stores ephemeral ca
 Simply add the `REDIS_ENDPOINT` environment variable to your `docker run` command and Sourcegraph will use that Redis server instead of its built-in one. For example:
 
 ```
-docker run [...] -e REDIS_ENDPOINT=redis.mycompany.org:6379 sourcegraph/server:latest
+docker run [...] -e REDIS_ENDPOINT=redis.mycompany.org:6379 sourcegraph/server:<server-version-number />
 ```
 
 <div class="alert alert-info">

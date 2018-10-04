@@ -12,7 +12,7 @@ permalink: docs
 
 <div id="docker-command-docs">
 
-<pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 7080:7080 --rm<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> --volume /var/run/docker.sock:/var/run/docker.sock <span class="virtual-br"></span>sourcegraph/server:<server-version-number></server-version-number><span class="virtual-br"></span></code></pre>
+<pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 7080:7080 --rm<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> --volume /var/run/docker.sock:/var/run/docker.sock <span class="virtual-br"></span>sourcegraph/server:<server-version-number /><span class="virtual-br"></span></code></pre>
 
 </div>
 
