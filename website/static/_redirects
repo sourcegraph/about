@@ -8,3 +8,5 @@
 /docs/datacenter/prometheus-metrics	https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/prom-metrics.md	301
 /docs/datacenter/scaling	https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/scale.md	301
 /docs/datacenter/update	https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/update.md	301
+
+/   https://sourcegraph.com	301
