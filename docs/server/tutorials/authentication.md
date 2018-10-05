@@ -50,7 +50,7 @@ The [`openidconnect` auth provider](/docs/config/site#code-classlanguage-textope
 To configure Sourcegraph to authenticate users via OpenID Connect:
 
 1.  Create a new OpenID Connect client in the external service (such as one of those listed above).
-    - **Redirect/callback URI:** `https://sourcegraph.example.com/.auth/openidconnect/callback` (replace `https://sourcegraph.example.com` with the value of the `appURL` property in your config)
+    - **Redirect/callback URI:** `https://sourcegraph.example.com/.auth/callback` (replace `https://sourcegraph.example.com` with the value of the `appURL` property in your config)
 1.  Provide the OpenID Connect client's issuer, client ID, and client secret in the Sourcegraph site configuration shown below.
 1.  (Optional) Require users to have a specific email domain name to authenticate (e.g., to limit users to only those from your organization).
 
@@ -84,7 +84,7 @@ Google's G Suite supports OpenID Connect, which is the best way to enable Source
     - **Application type:** Web application
     - **Name:** Sourcegraph (or any other name your users will recognize)
     - **Authorized JavaScript origins:** (leave blank)
-    - **Authorized redirect URIs:** `https://sourcegraph.example.com/.auth/openidconnect/callback` (replace `https://sourcegraph.example.com` with the value of the `appURL` property in your config)
+    - **Authorized redirect URIs:** `https://sourcegraph.example.com/.auth/callback` (replace `https://sourcegraph.example.com` with the value of the `appURL` property in your config)
 1.  Use the **client ID** and **client secret** values in Sourcegraph site configuration (as shown in the example below).
 1.  Set your G Suite domain in `requireEmailDomain` to prevent users outside your organization from signing in.
 
