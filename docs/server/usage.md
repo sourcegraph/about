@@ -40,6 +40,7 @@ Sourcegraph periodically sends a ping to Sourcegraph.com to help our product and
 - The email address of the initial site installer (or if deleted, the first active site admin), to know who to contact regarding sales, product updates, and policy updates
 - Which category of authentication provider is in use (built-in, OpenID Connect, an HTTP proxy, or SAML)
 - Whether code intelligence is enabled
+- Total count of existing user accounts
 - Aggregate counts of current daily, weekly, and monthly users
 - Aggregate counts of current users using code host integrations
 
