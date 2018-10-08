@@ -41,6 +41,7 @@ export default class DataCenterSidebar extends React.Component<any, any> {
                         { title: 'Webhook for repository updates', href: '/docs/config/update-repo-webhook' },
                         { title: 'Admin', header: true },
                         { title: 'Usage statistics', href: '/docs/usage' },
+                        { title: 'Sourcegraph pricing', href: '/docs/pricing' },
                         { title: 'Deploy', header: true },
                         { title: 'AWS', href: '/docs/deploy/AWS' },
                         { title: 'Google Cloud', href: '/docs/deploy/GCP' },
