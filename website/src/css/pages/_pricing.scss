@@ -294,6 +294,10 @@
             }
         }
     }
+    .pricing-true-up-notice {
+        padding-left: 23px;
+        padding-right: 23px;
+    }
 }
 .list-section {
     background-color: #fafcff;
@@ -302,7 +306,6 @@
     margin-bottom: 0;
     @media screen and (max-width: $media-md) {
         padding: 10vh 0;
-
     }
     h1 {
         padding-bottom: 4rem;
@@ -310,7 +313,6 @@
         font-weight: 600;
         @media screen and (max-width: $media-md) {
             font-size: 2.5rem;
-    
         }
     }
     .cta-row {
@@ -343,7 +345,7 @@
             .col-6:first-of-type {
                 text-align: left;
             }
-            
+
             .feature-title {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
