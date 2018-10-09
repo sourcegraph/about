@@ -4,7 +4,7 @@ title: Code intelligence on GitHub
 permalink: docs/features/github-extension
 ---
 
-The Sourcegraph browser extension will add **go-to-definition**, **find-references**, **hover tooltips**, and **code search** to all GitHub files and Pull Requests.
+The Sourcegraph browser extension adds **go-to-definition**, **find-references**, **hover tooltips**, and **code search** to all GitHub files and Pull Requests.
 
 By default, the extension will add code intelligence and code search to public repositories. The extension can be configured to work on private code by connecting it to a Sourcegraph instance that has [code intelligence](/docs/code-intelligence).
 
