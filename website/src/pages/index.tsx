@@ -205,8 +205,8 @@ export default class Index extends React.Component<any, any> {
                                         />
                                         <img
                                             className="home__customer-logos-image"
-                                            src="/external-logos/yelp.svg"
-                                            alt="Yelp"
+                                            src="/external-logos/sg-improbable.svg"
+                                            alt="Improbable"
                                         />
                                         <img
                                             className="home__customer-logos-image"
