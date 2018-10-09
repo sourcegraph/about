@@ -62,9 +62,11 @@ If your Sourcegraph instance is unable to connect to Sourcegraph.com (due to a f
 
 With Sourcegraph Enterprise, you can publish Sourcegraph extensions on your Sourcegraph instance to a private extension registry and control which extensions are available. Sourcegraph extensions that are published to the private extension registry on your instance are only visible to other users on your instance.
 
+The branded versions of Sourcegraph have a default remote URL of https://sourcegraph.com/.api/registry and the OSS version of Sourcegraph stands by itself without any dependencies on external services.
+
 #### Enabling the private extension registry
 
-Enable it in site config: TODO which key is it?
+Enable it in site config: TODO which key is it? This might not be implemented yet.
 
 #### Inheritance of Sourcegraph extensions from Sourcegraph.com
 
