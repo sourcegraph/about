@@ -58,19 +58,15 @@ If your Sourcegraph instance is unable to connect to Sourcegraph.com (due to a f
 1. Run `src extensions publish -extension-id $USER/$NAME` in the clone directory to publish the extension locally to your Sourcegraph instance. Replace `$USER` with your Sourcegraph username and `$NAME` with with `codecov` or `basic-code-intel`.
 1. Enable the extension for your Sourcegraph user account by clicking the **Extensions** link in the top navigation, clicking **Add**, and selecting your username.
 
-### Sourcegraph private extension registry
+### Private extension registry
 
 With Sourcegraph Enterprise, you can publish Sourcegraph extensions on your Sourcegraph instance to a private extension registry and control which extensions are available. Sourcegraph extensions that are published to the private extension registry on your instance are only visible to other users on your instance.
 
-The branded versions of Sourcegraph have a default remote URL of https://sourcegraph.com/.api/registry and the OSS version of Sourcegraph stands by itself without any dependencies on external services.
-
-#### Enabling the private extension registry
-
-Enable it in site config: TODO which key is it? This might not be implemented yet.
-
 #### Inheritance of Sourcegraph extensions from Sourcegraph.com
 
-By default, Sourcegraph instances inherit extensions from Sourcegraph.com. You can disable this by setting [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) to `false` in your site configuration:
+Branded Sourcegraph instances inherit extensions from Sourcegraph.com with [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) set to `"https://sourcegraph.com/.api/registry"`. The OSS version of Sourcegraph has no dependencies on external services, and its `extensions.remoteRegistry` is set to `""`.
+
+You can disable inheritance by setting [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) to `false` in your site configuration:
 
 ```json
 {
@@ -78,16 +74,15 @@ By default, Sourcegraph instances inherit extensions from Sourcegraph.com. You c
 }
 ```
 
-#### Whitelisting extensions from Sourcegraph.com
+#### Allowing specific extensions to be inherited from Sourcegraph.com
 
-You can also set up a [whitelist](https://about.sourcegraph.com/docs/config/site/#remoteWhitelist) so that only extensions in the whitelist will be inherited from Sourcegraph.com:
+You can also set [`extensions.allowRemoteExtensions](https://about.sourcegraph.com/docs/config/site/#allowRemoteExtensions) so that only extensions in that list will be inherited from Sourcegraph.com:
 
 ```json
 {
-  "extensions": { "remoteWhitelist": ["chris/token-highlights"] }
+  "extensions": { "allowRemoteExtensions": ["chris/token-highlights"] }
 }
 ```
-
 
 ### Next steps
 
