@@ -60,11 +60,11 @@ If your Sourcegraph instance is unable to connect to Sourcegraph.com (due to a f
 
 ### Private extension registry
 
-With Sourcegraph Enterprise, you can publish Sourcegraph extensions on your Sourcegraph instance to a private extension registry and control which extensions are available. Sourcegraph extensions that are published to the private extension registry on your instance are only visible to other users on your instance.
+On Sourcegraph Enterprise, you can publish Sourcegraph extensions on your Sourcegraph instance to a private extension registry and control which extensions are available. Sourcegraph extensions that are published to the private extension registry on your instance are only visible to other users on your instance.
 
 #### Inheritance of Sourcegraph extensions from Sourcegraph.com
 
-Branded Sourcegraph instances inherit extensions from Sourcegraph.com with [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) set to `"https://sourcegraph.com/.api/registry"`. The OSS version of Sourcegraph has no dependencies on external services, and its `extensions.remoteRegistry` is set to `""`.
+Sourcegraph Core, Enterprise Starter, and Enterprise instances inherit extensions from Sourcegraph.com with [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) set to `"https://sourcegraph.com/.api/registry"`. The OSS version of Sourcegraph has no dependencies on external services, and its `extensions.remoteRegistry` defaults to `false`.
 
 You can disable inheritance by setting [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) to `false` in your site configuration:
 
@@ -76,7 +76,7 @@ You can disable inheritance by setting [`extensions.remoteRegistry`](https://abo
 
 #### Allowing specific extensions to be inherited from Sourcegraph.com
 
-You can also set [`extensions.allowRemoteExtensions](https://about.sourcegraph.com/docs/config/site/#allowRemoteExtensions) so that only extensions in that list will be inherited from Sourcegraph.com:
+On Sourcegraph Enterprise, you can also set [`extensions.allowRemoteExtensions`](https://about.sourcegraph.com/docs/config/site/#allowRemoteExtensions) so that only extensions in that list will be inherited from Sourcegraph.com:
 
 ```json
 {
