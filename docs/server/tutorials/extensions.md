@@ -58,6 +58,32 @@ If your Sourcegraph instance is unable to connect to Sourcegraph.com (due to a f
 1. Run `src extensions publish -extension-id $USER/$NAME` in the clone directory to publish the extension locally to your Sourcegraph instance. Replace `$USER` with your Sourcegraph username and `$NAME` with with `codecov` or `basic-code-intel`.
 1. Enable the extension for your Sourcegraph user account by clicking the **Extensions** link in the top navigation, clicking **Add**, and selecting your username.
 
+### Private extension registry
+
+On Sourcegraph Enterprise, you can publish Sourcegraph extensions on your Sourcegraph instance to a private extension registry and control which extensions are available. Sourcegraph extensions that are published to the private extension registry on your instance are only visible to other users on your instance.
+
+#### Inheritance of Sourcegraph extensions from Sourcegraph.com
+
+Sourcegraph Core, Enterprise Starter, and Enterprise instances inherit extensions from Sourcegraph.com with [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) set to `"https://sourcegraph.com/.api/registry"`. The OSS version of Sourcegraph has no dependencies on external services, and its `extensions.remoteRegistry` defaults to `false`.
+
+You can disable inheritance by setting [`extensions.remoteRegistry`](https://about.sourcegraph.com/docs/config/site/#remoteregistry) to `false` in your site configuration:
+
+```json
+{
+  "extensions": { "remoteRegistry": false }
+}
+```
+
+#### Allowing specific extensions to be inherited from Sourcegraph.com
+
+On Sourcegraph Enterprise, you can also set [`extensions.allowRemoteExtensions`](https://about.sourcegraph.com/docs/config/site/#allowRemoteExtensions) so that only extensions in that list will be inherited from Sourcegraph.com:
+
+```json
+{
+  "extensions": { "allowRemoteExtensions": ["chris/token-highlights"] }
+}
+```
+
 ### Next steps
 
 - Sourcegraph extensions also work on Sourcegraph.com for public code, and on GitHub via [Sourcegraph for Chrome](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack) or [Sourcegraph for Firefox](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/). (Support for more code hosts is coming soon.) See the [sourcegraph-codecov README](https://github.com/sourcegraph/sourcegraph-codecov) for usage instructions.
