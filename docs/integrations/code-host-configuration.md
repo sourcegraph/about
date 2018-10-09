@@ -21,6 +21,10 @@ By default, the extension will add code intelligence and code search to public r
 </button>
 
 <button class="btn btn-outline-primary align-items-center">
+    <img src="/external-logos/gitlab-logo.svg"/>
+</button>
+
+<button class="btn btn-outline-primary align-items-center">
     <img src="/external-logos/phabricator-logo.svg"/>
 </button>
 
@@ -47,7 +51,7 @@ Browser extension configuration:
     ```json
     {
       // ...
-      "corsOrigin": "https://github.example.com https://bitbucket.example.org https://phabricator.example.com"
+      "corsOrigin": "https://github.example.com https://gitlab.example.com https://bitbucket.example.org https://phabricator.example.com"
       // ...
     }
     ```

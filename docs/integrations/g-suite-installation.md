@@ -12,7 +12,12 @@ Company-wide deployment via G Suite is a [paid upgrade](/pricing). [Buy G Suite 
 
 You can now install and preconfigure the Sourcegraph Chrome extension for all users in your G Suite organization.
 
-This means that everyone in your organization will get code intelligence in files, diffs, and PRs on GitHub.com, GitHub Enterprise, and Phabricator. After the admin configures G Suite automatic installation of the Chrome extension, each user's Chrome browser will install and configure the Sourcegraph Chrome extension automatically. (It may take a few hours to fully propagate the Chrome settings.) Then all users will see code intelligence like this:
+This means that everyone in your organization will get code intelligence in
+files, diffs, and PRs on GitHub.com, GitHub Enterprise, GitLab, and Phabricator. After
+the admin configures G Suite automatic installation of the Chrome extension,
+each user's Chrome browser will install and configure the Sourcegraph Chrome
+extension automatically. (It may take a few hours to fully propagate the Chrome
+settings.) Then all users will see code intelligence like this:
 
 <img src="./images/GitHubGSuiteDemo.png" style="border: 1px solid red"/>
 

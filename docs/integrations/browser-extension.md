@@ -4,7 +4,9 @@ title: Browser extension
 permalink: docs/features/browser-extension
 ---
 
-The [open-source](https://github.com/sourcegraph/browser-extensions) Sourcegraph browser extension adds code intelligence to files and diffs on GitHub, GitHub Enterprise, Phabricator, and Bitbucket Server.
+The [open-source](https://github.com/sourcegraph/browser-extensions) Sourcegraph
+browser extension adds code intelligence to files and diffs on GitHub, GitHub
+Enterprise, GitLab, Phabricator, and Bitbucket Server.
 
 1.  Install the browser extension to automatically get code intelligence on public repositories:
 

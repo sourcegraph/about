@@ -6,7 +6,7 @@ permalink: docs/features/search-shortcuts
 
 ### Code search from your browser's address bar
 
-If you have the [Sourcegraph browser extension](/docs/features/github-extension) installed, your search shortcut is already configured under the keyword `src`!
+If you have the [Sourcegraph browser extension](/docs/features/browser-extension) installed, your search shortcut is already configured under the keyword `src`!
 
 In your browser's address bar, type <kbd>src</kbd> followed by <kbd>tab</kbd> in Chrome or <kbd>src</kbd> followed by <kbd>space</kbd> in Firefox to initiate a Sourcegraph Search. You'll see search suggestions in your browser just as you would on your Sourcegraph Instance. You can use these suggestions to go directly to repos, files or more. Otherwise, when you press enter, you'll be taken to your Sourcegraph Instance's search results page for the search you entered.
 
