@@ -32,7 +32,7 @@ Assume the reader is a busy non-native English speaker.
 
 - Sourcegraph: main product, prefer using this name unless you need to be more precise
   - Sourcegraph OSS: the open source code for Sourcegraph. This is **not** the same as Sourcegraph Core.
-  - Sourcegraph Core: previously was called Sourcegraph Server, this build is the free tier of Sourcegraph built separately from Sourcegraph Core.
+  - Sourcegraph Core: previously was called Sourcegraph Server, this build is the free tier of Sourcegraph built separately from Sourcegraph OSS.
   - Sourcegraph Enterprise Starter: the tier of Sourcegraph that includes some features required for dev-ops/admins to deploy in their corporate environment.
   - Sourcegraph Enterprise: the tier of Sourcegraph that includes all enterprise features for dev-ops/admins to deploy Sourcegraph at a large scale.
   - Sourcegraph.com: the public instance of Sourcegraph for open-source code at https://sourcegraph.com
