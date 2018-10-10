@@ -31,8 +31,10 @@ Assume the reader is a busy non-native English speaker.
 ### Referring to the Product and Features
 
 - Sourcegraph: main product, prefer using this name unless you need to be more precise
-  - Sourcegraph Server: the form of our product that ships as the `sourcegraph/server` Docker image and runs on a single node
-  - Sourcegraph Data Center: the form of our product that runs on Kubernetes
+  - Sourcegraph OSS: the open source code for Sourcegraph. This is **not** the same as Sourcegraph Core.
+  - Sourcegraph Core: previously was called Sourcegraph Server, this build is the free tier of Sourcegraph built separately from Sourcegraph Core.
+  - Sourcegraph Enterprise Starter: the tier of Sourcegraph that includes some features required for dev-ops/admins to deploy in their corporate environment.
+  - Sourcegraph Enterprise: the tier of Sourcegraph that includes all enterprise features for dev-ops/admins to deploy Sourcegraph at a large scale.
   - Sourcegraph.com: the public instance of Sourcegraph for open-source code at https://sourcegraph.com
   - Sourcegraph integrations: the general term for our integrations
     - Sourcegraph['s] Phabricator integration
@@ -42,7 +44,7 @@ Assume the reader is a busy non-native English speaker.
       - Sourcegraph['s] Firefox add-on
       - Sourcegraph['s] Safari extension
 
-When specifically distinguishing between Server and Data Center, it might help to say "the [single-node] Server deployment option" and "the Data Center [cluster] deployment option".
+When specifically distinguishing between Core and OSS it is important to note that Core is not built from the OSS code base and OSS does not include tracking data, ability to upgrade, or Sourcegraph extensions. These are included in the Core version of Sourcegraph, that is built from the same code as Sourcegraph Enterprise and has the ability to upgrade later.
 
 You don't need to use the full name of the product each time you refer to it, but don't use a shortened name that could be confused with an official name. For example:
 
