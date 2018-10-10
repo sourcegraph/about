@@ -12,8 +12,7 @@ Our copy should be:
 ## General
 
 - Seek to make content available, and coherent, to all peoples.
-- Use Title Case for headers, buttons, features, and short lists.
-- Use sentence case for non-header text. When sentence case is used, full punctuation should be used.
+- Use sentence case for all text. When sentence case is used, full punctuation should be used.
 - Render proper nouns as their creators prefer ("GitHub" not "Github").
 - Punctuation goes outside of quotation marks, except in marketing when displaying a quote.
 - Use the most popular US English spelling and phrasing.
