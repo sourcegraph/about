@@ -40,6 +40,12 @@ type (
     AuthzID string
 )
 
+type Perm string
+
+const (
+    PermRead Perm = "read"
+)
+
 // AuthnProvider supplies the current user's canonical ID. The canonical ID is that
 // which uniquely identifies the user in the identity provider, the source of truth
 // for identity in the deployment environment. The identity provider can be any of
@@ -73,15 +79,17 @@ type AuthnProvider interface {
 // In most cases, the code host is the source of truth for repository permissions and therefore
 // the code host is the authorization provider.
 type AuthzProvider interface {
-    // ListRepositories lists the repositories that the specified user has access to.
-    // authzID is the user identity the AuthzProvider uses to determine what repo permissions
-    // to return.
-    ListRepositories(ctx context.Context, authzID AuthzID) ([]api.RepoURI, error)
-
-    // HasRepository returns true if/only if authzID has access to the specified repo.
-    // It can be implemented in terms of ListRepositories, but in some cases it is more
-    // efficient (due to API limits, etc.) to implement it separately.
-    HasRepository(ctx context.Context, authzID AuthzID, repo api.RepoURI) (bool, error)
+    // RepoPerms returns a map where the key set is the subset of the input repos to which the
+    // user identified by authzID has access. The values of the map indicate which permissions
+    // the user has for each repo.
+    //
+    // Discussion note: this is a better interface than ListAllRepos, because in some cases,
+    // the list of all repositories may be very long (especially if the returned list includes
+    // public repos). RepoPerms seems like a sufficient interface for all use cases inside
+    // Sourcegraph and leaves up to the implementation which repo permissions it needs to compute.
+    // In practice, most will probably use a combination of (1) "list all private repos the user
+    // has access to" and (2) a mechanism to determine which repos are public/private.
+    RepoPerms(ctx context.Context, authzID AuthzID, repos []api.RepoURI) (map[api.RepoURI]map[Perm]bool, error)
 }
 
 // IdentityToAuthzIDMapper maps canonical user IDs (provided by the AuthnProvider) to AuthzProvider
@@ -175,7 +183,7 @@ Configuration:
   SAML username.
 * `IdentityToAuthzIDMapper.AuthzID` is the identity function (it just returns the username as the
   AuthzID). This assumes that the GitLab username is the same as the SAML userame.
-* `AuthzProvider.ListRepositories` uses the [GitLab impersonation
+* `AuthzProvider.RepoPerms` uses the [GitLab impersonation
   token](https://docs.gitlab.com/ee/api/#impersonation-tokens) to [list all projects accessible to
   the username](https://docs.gitlab.com/ee/api/projects.html#list-all-projects).
 
@@ -206,7 +214,7 @@ Configuration:
 * `AuthnProvider.CurrentIdentity` returns the username of the current user, which is the same as the
   SAML username.
 * `IdentityToAuthzIDMapper.AuthzID` is the identity function.
-* `AuthzProvider.ListRepositories` calls the following endpoints to get the list of accessible
+* `AuthzProvider.RepoPerms` calls the following endpoints to get the list of accessible
   repositories:
   * [List user repositories](https://developer.github.com/v3/repos/#list-user-repositories)
   * [List organization repositories](https://developer.github.com/v3/repos/#list-organization-repositories)
@@ -252,7 +260,7 @@ Configuration:
 * `AuthnProvider.CurrentIdentity` returns the username of the current user, which is the same as the
   GitHub username.
 * `IdentityToAuthzIDMapper.AuthzID` is the identity function.
-* `AuthzProvider.ListRepositories` calls the [List your
+* `AuthzProvider.RepoPerms` calls the [List your
   repositories](https://developer.github.com/v3/repos/#list-your-repositories) endpoint using the
   current user's OAuth token.
 
@@ -284,7 +292,7 @@ Configuration:
   SAML username.
 * `IdentityToAuthzIDMapper.AuthzID` is the identity function. This assumes that the GitHub username
   is the same as the SAML userame.
-* `AuthzProvider.ListRepositories` uses the [GitHub Enterprise impersonation
+* `AuthzProvider.RepoPerms` uses the [GitHub Enterprise impersonation
   token](https://developer.github.com/enterprise/2.14/v3/enterprise-admin/users/#create-an-impersonation-oauth-token)
   to [list all repositories accessible to the
   user](https://developer.github.com/v3/repos/#list-your-repositories).
@@ -307,7 +315,7 @@ This section summarizes implementation notes for other `AuthzProvider` scenarios
 - LDAP
   - Need more specific customer use case feedback to move forward here.
 
-In situations where the implementation of `AuthzProvider.ListRepositories` is costly (e.g., due to
+In situations where the implementation of `AuthzProvider.RepoPerms` is costly (e.g., due to
 multiple API requests or API limits), it is acceptable to introduce some amount of caching to the
 `AuthzProvider`, meaning that repository permissions on Sourcegraph may lag those in the
 authorization provider by some amount of time (likely minutes to hours).
