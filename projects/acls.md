@@ -23,15 +23,7 @@ Sourcegraph instance is being used by developers.
 
 ## Customer questionnaire
 
-* Which code host do you use?
-* What is the source of truth for user identity? (E.g., Okta, OneLogin, Google apps, GitHub native
-  login, GitLab native login)
-* How do you log into your code host?
-* How do you (expect to) log into your Sourcegraph instance?
-* What is the source of truth for repository permissions? If not the code host, please describe the
-  setup.
-* Is a user's username on the code host guaranteed to be the same as the username in the identity
-  provider? If not, explain why.
+Please fill out this questionnaire: https://goo.gl/forms/ljcbTFGCkjM0sA2K2
 
 ## Permissions data model
 
