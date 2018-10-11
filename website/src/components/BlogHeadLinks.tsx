@@ -1,4 +1,4 @@
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import * as React from 'react'
 
 export default class BlogHeadLinks extends React.Component<any, any> {

@@ -1,35 +1,25 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import DataCenterDocsContainer from '../components/DataCenterDocsContainer'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import NavigationTabs from '../components/NavigationTabs'
+import '../css/styles.scss'
+import Footer from './Footer'
+import Header from './Header'
 
-interface DefaultLayoutProps extends React.HTMLProps<HTMLDivElement> {
+interface LayoutProps {
     location: {
         pathname: string
     }
-    children: any
+    children: JSX.Element
 }
 
-interface DefaultLayoutStates {
-    sidebarVisible: boolean
-}
-
-export default class DefaultLayout extends React.PureComponent<DefaultLayoutProps, DefaultLayoutStates> {
-    public state: any = { sidebarVisible: false }
-
-    public toggleSidebar(): void {
-        this.setState({ sidebarVisible: !this.state.sidebarVisible })
-    }
-
+export default class Layout extends React.PureComponent<LayoutProps> {
     public render(): JSX.Element | null {
-        const { pathname } = this.props.location
+        const pathname = this.props.location.pathname
         const isHome = pathname === '/'
+        const isProductPage = pathname.startsWith('/product/')
         const desc =
             'Sourcegraph is a free, self-hosted code search and intelligence server that helps developers find, review, understand, and debug code. Use it with any Git code host for teams from 1 to 10,000+.'
         return (
-            <div>
+            <div className="flex flex-column fill-height">
                 <Helmet>
                     <title>Sourcegraph - Code search and intelligence</title>
                     <meta name="twitter:title" content="Sourcegraph" />
@@ -48,17 +38,8 @@ export default class DefaultLayout extends React.PureComponent<DefaultLayoutProp
                     <link rel="icon" type="image/png" href="https://about.sourcegraph.com/sourcegraph-mark.png" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
                 </Helmet>
-                <Header />
-                <section className="documentation">
-                    <div className="docs-nav-container">
-                        {' '}
-                        <NavigationTabs activeTab="DataCenter" />
-                    </div>
-
-                    <div className="container">
-                        <DataCenterDocsContainer>{this.props.children()}</DataCenterDocsContainer>
-                    </div>
-                </section>
+                <Header isHome={isHome} isProductPage={isProductPage} />
+                <section className="d-flex flex-column fill-height">{this.props.children}</section>
                 <Footer />
             </div>
         )

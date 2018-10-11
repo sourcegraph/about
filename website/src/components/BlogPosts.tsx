@@ -1,4 +1,4 @@
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import * as React from 'react'
 
 interface BlogPostsProps {

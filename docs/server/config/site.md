@@ -43,6 +43,8 @@ Configure your Sourcegraph instance on the **Configuration** page in the site ad
 
 - [phabricator](#phabricator-array)
 
+- [git.cloneURLToRepositoryName](#gitcloneurltorepositoryname-array)
+
 - [github](#github-array)
 
 - [githubClientID](#githubclientid-string)
@@ -85,6 +87,8 @@ Configure your Sourcegraph instance on the **Configuration** page in the site ad
 
 - [htmlBodyBottom](#htmlbodybottom-string)
 
+- [licenseKey](#licensekey-string)
+
 - [maxReposToSearch](#maxrepostosearch-integer)
 
 - [executeGradleOriginalRootPaths](#executegradleoriginalrootpaths-string)
@@ -121,13 +125,17 @@ Configure your Sourcegraph instance on the **Configuration** page in the site ad
 
 - [email.smtp](#emailsmtp-smtpserverconfig)
 
+- [email.imap](#emailimap-imapserverconfig)
+
 - [email.address](#emailaddress-string)
 
 - [update.channel](#updatechannel-string-enum)
 
 - [langservers](#langservers-array)
 
-- [platform](#platform-object)
+- [extensions](#extensions-object)
+
+- [discussions](#discussions-object)
 
 - [settings](#settings-object)
 
@@ -140,6 +148,8 @@ Configure your Sourcegraph instance on the **Configuration** page in the site ad
 - [AWSCodeCommitConnection](#awscodecommitconnection-object)
 
 - [GitoliteConnection](#gitoliteconnection-object)
+
+- [CloneURLToRepositoryName](#cloneurltorepositoryname-object)
 
 - [Repository](#repository-object)
 
@@ -154,6 +164,8 @@ Configure your Sourcegraph instance on the **Configuration** page in the site ad
 - [AuthProviderCommon](#authprovidercommon-object)
 
 - [SMTPServerConfig](#smtpserverconfig-object)
+
+- [IMAPServerConfig](#imapserverconfig-object)
 
 - [SiteConfigSearchScope](#siteconfigsearchscope-array)
 
@@ -272,20 +284,16 @@ Default: `"disabled"`
 
 ### `multipleAuthProviders` (string, enum)
 
-Enables or disables the use of multiple authentication providers and a publicly accessible web page displaying authentication options for unauthenticated users. (WARNING: Do not use this unless you know what you're doing.)
+Enables or disables the use of multiple authentication providers and a publicly accessible web page displaying authentication options for unauthenticated users.
+
+Only applies to Sourcegraph Enterprise Starter and Sourcegraph Enterprise.
 
 This property must be one of the following enum values:
 
 - `enabled`
 - `disabled`
 
-Default: `"disabled"`
-
-### `platform` (boolean)
-
-Enables the platform experiment.
-
-Default: `false`
+Default: `"enabled"`
 
 ### `discussions` (string, enum)
 
@@ -414,6 +422,14 @@ The array object has the following properties:
 
 <br/>
 
+## `git.cloneURLToRepositoryName` (array)
+
+JSON array of configuration that maps from Git clone URL to repository URI. Sourcegraph automatically resolves remote clone URLs to their proper code host. However, there may be non-remote clone URLs (e.g., in submodule declarations) that Sourcegraph cannot automatically map to a code host. In this case, use this field to specify the mapping. The mappings are tried in the order they are specified and take precedence over automatic mappings.
+
+The object is an array with all elements of the type [`CloneURLToRepositoryName`](#cloneurltorepositoryname-object).
+
+<br/>
+
 ## `github` (array)
 
 JSON array of configuration for GitHub hosts. See GitHub Configuration section for more information.
@@ -510,7 +526,7 @@ The project ID on LightStep that corresponds to the `lightstepAccessToken`, only
 
 ## `useJaeger` (boolean)
 
-Use local Jaeger instance for tracing. Data Center only.
+Use local Jaeger instance for tracing. Kubernetes cluster deployments only.
 
 After enabling Jaeger and updating your Kubernetes cluster, `kubectl get pods`
 should display pods prefixed with `jaeger-cassandra`,
@@ -577,6 +593,12 @@ HTML to inject at the top of the `<body>` element on each page, for analytics sc
 ## `htmlBodyBottom` (string)
 
 HTML to inject at the bottom of the `<body>` element on each page, for analytics scripts
+
+<br/>
+
+## `licenseKey` (string)
+
+The license key associated with a Sourcegraph product subscription, which is necessary to activate Sourcegraph Enterprise functionality. To obtain this value, contact Sourcegraph to purchase a subscription.
 
 <br/>
 
@@ -652,7 +674,7 @@ Default: `"builtin"`
 
 The authentication providers to use for identifying and signing in users.
 
-Only one authentication provider is supported. If you set the deprecated field "auth.provider", then that value is used as the authentication provider, and you can't set another one here.
+Only one authentication provider is officially supported at the moment. Multiple providers can be specified, but the support is experimental. If you set the deprecated field "auth.provider", then that value is used as the authentication provider, and you can't set another one here.
 
 The elements of the array must match *exactly one* of the following types:
 
@@ -738,8 +760,8 @@ The string format is that of the Duration type in the Go time package (https://g
 
 Note: changing this field does not affect the expiration of existing sessions. If you would like to enforce this limit for existing sessions, you must log out currently signed-in users. You can force this by removing all keys beginning with "session_" from the Redis store:
 
-* For Sourcegraph Server: `docker exec $CONTAINER_ID redis-cli --raw keys 'session_*' | xargs docker exec $CONTAINER_ID redis-cli del`
-* For Data Center: 
+* For deployments using `sourcegraph/server`: `docker exec $CONTAINER_ID redis-cli --raw keys 'session_*' | xargs docker exec $CONTAINER_ID redis-cli del`
+* For cluster deployments: 
   ```
   REDIS_POD="$(kubectl get pods -l app=redis-store -o jsonpath={.items[0].metadata.name})";
   kubectl exec "$REDIS_POD" -- redis-cli --raw keys 'session_*' | xargs kubectl exec "$REDIS_POD" -- redis-cli --raw del;
@@ -761,6 +783,10 @@ DEPRECATED: Use "auth.providers" with an entry of the form {"type": "http-header
 <br/>
 
 ## `email.smtp` ([SMTPServerConfig](#smtpserverconfig-object))
+
+<br/>
+
+## `email.imap` ([IMAPServerConfig](#imapserverconfig-object))
 
 <br/>
 
@@ -798,7 +824,7 @@ The array object has the following properties:
   Name of the language mode for the language server (e.g. go, java)
 
 * `address` (string)
-  TCP address of the language server. Required for Sourcegraph Server; do not set for Sourcegraph Data Center.
+  TCP address of the language server. Required (except for Sourcegraph cluster deployments).
   Additional restrictions:
   * Regex pattern: `^tcp://`
 
@@ -823,11 +849,17 @@ The array object has the following properties:
 
 <br/>
 
-## `platform` (object)
+## `extensions` (object)
 
-Configures the Sourcegraph platform functionality. Requires experimentalFeatures.platform to be `true` to take effect. EXPERIMENTAL: This configuration is subject to change without notice.
+Configures Sourcegraph extensions.
 
-Properties of the `platform` object:
+Properties of the `extensions` object:
+
+### `disabled` (boolean)
+
+Disable all usage of extensions.
+
+Default: `false`
 
 ### `remoteRegistry`
 
@@ -838,13 +870,47 @@ The object must be one of the following types:
 - `string`
 - `boolean`
 
+### `allowRemoteExtensions` (array)
+
+Allow only the explicitly listed remote extensions (by extension ID, such as "alice/myextension") from the remote registry. If not set, all remote extensions may be used from the remote registry. To completely disable the remote registry, set `remoteRegistry` to `false`.
+
+Only available in Sourcegraph Enterprise.
+
+The object is an array with all elements of the type `string`.
+
+<br/>
+
+## `discussions` (object)
+
+Configures Sourcegraph code discussions.
+
+Properties of the `discussions` object:
+
+### `abuseProtection` (boolean)
+
+Enable abuse protection features (for public instances like Sourcegraph.com, not recommended for private instances).
+
+Default: `false`
+
+### `abuseEmails` (array)
+
+Email addresses to notify of e.g. new user reports about abusive comments. Otherwise emails will not be sent.
+
+The object is an array with all elements of the type `string`.
+
+Default:
+
+```
+[]
+```
+
 <br/>
 
 ## `settings` (object)
 
 Site settings hard-coded in site configuration.
 
-DEPRECATED: Specify site settings in the site admin global settings page instead of hard-coding them in the site configuration file. This makes it possible to change site settings without redeploying the cluster in Sourcegraph Data Center.
+DEPRECATED: Specify site settings in the site admin global settings page instead of hard-coding them in the site configuration file. This makes it possible to change site settings without redeploying for cluster deployments.
 
 Properties of the `settings` object:
 
@@ -1102,6 +1168,10 @@ For example, if your Bitbucket Server is https://bitbucket.example.com and your 
 
 Default: `"{host}/{projectKey}/{repositorySlug}"`
 
+### `excludePersonalRepositories` (boolean)
+
+Whether or not personal repositories should be excluded or not. When true, Sourcegraph will ignore personal repositories it may have access to. See [https://about.sourcegraph.com/docs/config/repositories/#excluding-personal-repositories](/docs/config/repositories/#excluding-personal-repositories) for more information. Default: false.
+
 ### `initialRepositoryEnablement` (boolean)
 
 Defines whether repositories from this Bitbucket Server instance should be enabled and cloned when they are first seen by Sourcegraph. If false, the site admin must explicitly enable Bitbucket Server repositories (in the site admin area) to clone them and make them searchable on Sourcegraph. If true, they will be enabled and cloned immediately (subject to rate limiting by Bitbucket Server); site admins can still disable them explicitly, and they'll remain disabled.
@@ -1184,6 +1254,24 @@ Regular expression to filter repositories from auto-discovery, so they will not 
 ### `phabricatorMetadataCommand` (string)
 
 Bash command that prints out the Phabricator callsign for a Gitolite repository. This will be run with environment variable $REPO set to the URI of the repository and used to obtain the Phabricator metadata for a Gitolite repository. (Note: this requires `bash` to be installed.)
+
+<hr />
+
+
+
+## `CloneURLToRepositoryName` (object)
+
+Describes a mapping from clone URL to repository name. The `from` field contains a regular expression with named capturing groups. The `to` field contains a template string that references capturing group names. For instance, if `from` is "^../(?P<name>\w+)$" and `to` is "github.com/user/{name}", the clone URL "../myRepository" would be mapped to the repository name "github.com/user/myRepository".
+
+Properties of the `CloneURLToRepositoryName` object:
+
+### `from` (string, required)
+
+A regular expression that matches a set of clone URLs. The regular expression should use the Go regular expression syntax (https://golang.org/pkg/regexp/) and contain at least one named capturing group. The regular expression matches partially by default, so use "^...$" if whole-string matching is desired.
+
+### `to` (string, required)
+
+The repository name output pattern. This should use `{matchGroup}` syntax to reference the capturing groups from the `from` field.
 
 <hr />
 
@@ -1456,6 +1544,32 @@ This property must be one of the following enum values:
 ### `domain` (string)
 
 The HELO domain to provide to the SMTP server (if needed).
+
+<hr />
+
+
+
+## `IMAPServerConfig` (object)
+
+Optional. The IMAP server used to retrieve emails (such as code discussion reply emails).
+
+Properties of the `IMAPServerConfig` object:
+
+### `host` (string, required)
+
+The IMAP server host.
+
+### `port` (integer, required)
+
+The IMAP server port.
+
+### `username` (string)
+
+The username to use when communicating with the IMAP server.
+
+### `password` (string)
+
+The username to use when communicating with the IMAP server.
 
 <hr />
 

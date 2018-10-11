@@ -13,13 +13,15 @@ function kebabcase(str) {
 
   return result
 }
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     const PostTemplate = path.resolve(`src/templates/blogPostTemplate.tsx`)
     const ContentTemplate = path.resolve(`src/templates/contentTemplate.tsx`)
-    const DocsTemplate = path.resolve(`src/templates/docsTemplate.tsx`)
+    const ServerDocsTemplate = path.resolve(`src/templates/serverDocsTemplate.tsx`)
+    const DataCenterDocsTemplate = path.resolve(`src/templates/dataCenterDocsTemplate.tsx`)
+    const IntegrationsDocsTemplate = path.resolve(`src/templates/integrationsDocsTemplate.tsx`)
 
     resolve(
       graphql(
@@ -55,17 +57,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             if (absPath.includes('/docs/server/')) {
               createPage({
                 path: slug,
-                component: DocsTemplate,
-                layout: 'ServerDocs',
-                context: {
-                  fileSlug: slug,
-                },
-              })
-            } else if (absPath.includes('/docs/datacenter/')) {
-              createPage({
-                path: slug,
-                component: DocsTemplate,
-                layout: 'DataCenterDocs',
+                component: ServerDocsTemplate,
                 context: {
                   fileSlug: slug,
                 },
@@ -73,8 +65,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             } else if (absPath.includes('/docs/integrations/')) {
               createPage({
                 path: slug,
-                component: DocsTemplate,
-                layout: 'IntegrationsDocs',
+                component: IntegrationsDocsTemplate,
                 context: {
                   fileSlug: slug,
                 },
@@ -127,8 +118,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
   let slug
   switch (node.internal.type) {
     case `MarkdownRemark`:

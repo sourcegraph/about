@@ -1,7 +1,9 @@
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import BlogHeadLinks from '../components/BlogHeadLinks'
 import BlogPosts from '../components/BlogPosts'
+import Layout from '../components/Layout';
 
 export default class BlogList extends React.Component<any, any> {
     constructor(props: any) {
@@ -14,6 +16,7 @@ export default class BlogList extends React.Component<any, any> {
         )
 
         return (
+            <Layout location={this.props.location}>
             <div className="blog">
                 <Helmet>
                     <title>Plain Text - the official Sourcegraph blog</title>
@@ -26,6 +29,7 @@ export default class BlogList extends React.Component<any, any> {
                 </div>
                 <BlogPosts blogType="blog" posts={markdownBlogPosts} />
             </div>
+            </Layout>
         )
     }
 }

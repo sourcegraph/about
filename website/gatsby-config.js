@@ -58,12 +58,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-react-next`,
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-sass`,
+    {
+        resolve: `gatsby-plugin-sass`,
+        options: {
+            includePaths: ["src/css"]
+        }
+    }
   ],
 }

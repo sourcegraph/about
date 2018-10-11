@@ -1,4 +1,4 @@
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import { OpenInAppIcon } from 'mdi-react'
 import * as React from 'react'
 import { eventLogger } from '../EventLogger'

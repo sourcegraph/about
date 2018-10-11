@@ -1,4 +1,4 @@
-import React from 'react'
+const React = require('React')
 
 exports.onRenderBody = ({ setPostBodyComponents }) =>
   setPostBodyComponents([
