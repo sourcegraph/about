@@ -35,6 +35,11 @@ concrete setups.
 The proposed design breaks repository permissions into three interfaces:
 
 ```go
+type (
+    UserID  string
+    AuthzID string
+)
+
 // AuthnProvider supplies the current user's canonical ID. The canonical ID is that
 // which uniquely identifies the user in the identity provider, the source of truth
 // for identity in the deployment environment. The identity provider can be any of
@@ -50,13 +55,13 @@ The proposed design breaks repository permissions into three interfaces:
 // In most cases, the AuthnProvider will just return the current user's Sourcegraph
 // username (which will be the same username provided by the identity provider).
 type AuthnProvider interface {
-    CurrentIdentity(ctx context.Context) (userID string)
+    CurrentIdentity(ctx context.Context) UserID
 }
 
 // AuthzProvider is the source of truth for which repositories a user is authorized to view.
-// The user is specified as an authzID, which identifies the user to the AuthzProvider.
-// In most cases, authzID is equivalent
-// to the userID supplied by the AuthnProvider, but in some cases, the authorization source of
+// The user is specified as an AuthzID, which identifies the user to the AuthzProvider.
+// In most cases, the AuthzID is equivalent
+// to the UserID supplied by the AuthnProvider, but in some cases, the authorization source of
 // truth has its own internal definition of identity which must be mapped from the authentication
 // source of truth. The IdentityToAuthzID interface handles this mapping. Examples of
 // authorization providers include the following:
@@ -71,12 +76,12 @@ type AuthzProvider interface {
     // ListRepositories lists the repositories that the specified user has access to.
     // authzID is the user identity the AuthzProvider uses to determine what repo permissions
     // to return.
-    ListRepositories(ctx context.Context, authzID string) ([]api.RepoURI, error)
+    ListRepositories(ctx context.Context, authzID AuthzID) ([]api.RepoURI, error)
 
-    // HasRepository returns true if/only if the authzID has access to the specified repo.
+    // HasRepository returns true if/only if authzID has access to the specified repo.
     // It can be implemented in terms of ListRepositories, but in some cases it is more
     // efficient (due to API limits, etc.) to implement it separately.
-    HasRepository(ctx context.Context, authzID string, repo api.RepoURI) (bool, error)
+    HasRepository(ctx context.Context, authzID AuthzID, repo api.RepoURI) (bool, error)
 }
 
 // IdentityToAuthzIDMapper maps canonical user IDs (provided by the AuthnProvider) to AuthzProvider
@@ -90,10 +95,10 @@ type AuthzProvider interface {
 // because it's good to give that responsibility to the AuthzProvider in case API rate limits
 // are a concern.
 type IdentityToAuthzIDMapper interface {
-    // AuthzID returns the authzID to use for the given authzProvider. This will
+    // AuthzID returns the authzID to use for the given AuthzProvider. This will
     // be the identity function in most cases. Returns the empty string if no authz identity
     // matches.
-    AuthzID(userID string, authzProvider AuthzProvider) (authzID string)
+    AuthzID(u UserID, a AuthzProvider) AuthzID
 }
 
 ```
