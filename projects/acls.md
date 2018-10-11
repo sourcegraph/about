@@ -211,16 +211,16 @@ Configuration:
 }
 ```
 
-* `AuthnProvider.CurrentIdentity` returns the username of the current user, which is the same as the
-  SAML username.
-* `IdentityToAuthzIDMapper.AuthzID` is the identity function.
-* `AuthzProvider.RepoPerms` calls the following endpoints to get the list of accessible
-  repositories:
-  * [List user repositories](https://developer.github.com/v3/repos/#list-user-repositories)
-  * [List organization repositories](https://developer.github.com/v3/repos/#list-organization-repositories)
-  * [List user organizations](https://developer.github.com/v3/orgs/#list-user-organizations)
+* ~`AuthnProvider.CurrentIdentity` returns the username of the current user, which is the same as the
+  SAML username.~
+* ~`IdentityToAuthzIDMapper.AuthzID` is the identity function.~
+* ~`AuthzProvider.RepoPerms` calls the following endpoints to get the list of accessible
+  repositories:~
+  * ~[List user repositories](https://developer.github.com/v3/repos/#list-user-repositories)~
+  * ~[List organization repositories](https://developer.github.com/v3/repos/#list-organization-repositories)~
+  * ~[List user organizations](https://developer.github.com/v3/orgs/#list-user-organizations)~
   
-  Note that this may omit some repositories the user has access to, including repositories
+  ~Note that this may omit some repositories the user has access to, including repositories
   accessible to an organization where the user's membership is not public and repositories that a
   user has been granted access to as an external collaborator. The GitHub API only permits listing
   all repositories accessible to a user via a request that is authenticated as the user in question.
@@ -228,7 +228,16 @@ Configuration:
   business cloud with SAML sign-in, however, it's unclear whether we have a way of obtaining that
   OAuth token (or if we do, if it would require double sign-in). If we can obtain an OAuth token,
   then this case reduces to that of vanilla GitHub.com (see below). If not, we will need to resort
-  to the implementation above.
+  to the implementation above.~
+
+Upon further investigation, it seems that GitHub.com Business Cloud with SAML SSO supports
+third-party OAuth apps in more or less the same way as vanilla GitHub.com with native auth.  So in
+this setup, Sourcegraph should treat GitHub as the source of identity (even though GitHub in turn
+treats the SSO provider as the source of identity).
+
+It reduces to the vanilla GitHub.com case (see below): Sourcegraph uses GitHub OAuth as a sign-in
+mechanism. It uses the user OAuth token to make API requests to determine what the user-repo
+permissions are.
 
 
 #### GitHub.com
