@@ -28,8 +28,9 @@ Please fill out this questionnaire: https://goo.gl/forms/ljcbTFGCkjM0sA2K2
 ## Permissions data model
 
 Customers, admins, and users should evaluate this data model to determine if it is powerful enough
-to support the repository permissions they would like to enforce. See the "Scenarios" subsection for
-walkthroughs of this data model as it would apply to a selection of concrete setups.
+to support the repository permissions they would like to enforce. See the ["Scenarios"
+subsection](#scenarios) for walkthroughs of this data model as it would apply to a selection of
+concrete setups.
 
 The proposed design breaks repository permissions into three interfaces:
 
