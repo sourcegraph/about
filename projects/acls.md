@@ -71,12 +71,12 @@ type AuthzProvider interface {
     // ListRepositories lists the repositories that the specified user has access to.
     // authzID is the user identity the AuthzProvider uses to determine what repo permissions
     // to return.
-    ListRepositories(authzID string) []api.RepoURI
+    ListRepositories(ctx context.Context, authzID string) ([]api.RepoURI, error)
 
     // HasRepository returns true if/only if the authzID has access to the specified repo.
     // It can be implemented in terms of ListRepositories, but in some cases it is more
     // efficient (due to API limits, etc.) to implement it separately.
-    HasRepository(authzID string, repo api.RepoURI) bool
+    HasRepository(ctx context.Context, authzID string, repo api.RepoURI) (bool, error)
 }
 
 // IdentityToAuthzIDMapper maps canonical user IDs (provided by the AuthnProvider) to AuthzProvider
@@ -90,8 +90,9 @@ type AuthzProvider interface {
 // because it's good to give that responsibility to the AuthzProvider in case API rate limits
 // are a concern.
 type IdentityToAuthzIDMapper interface {
-    // AuthzID should return the authzID to use for the given authzProvider. This will
-    // be the identity function in most cases.
+    // AuthzID returns the authzID to use for the given authzProvider. This will
+    // be the identity function in most cases. Returns the empty string if no authz identity
+    // matches.
     AuthzID(userID string, authzProvider AuthzProvider) (authzID string)
 }
 
