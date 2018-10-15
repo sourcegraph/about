@@ -1,16 +1,14 @@
 ---
 title: 'Pricing and package changes'
 author: 'Matt King'
-publishDate: 2018-10-01T00:00-07:00
+publishDate: 2018-10-15T11:00-07:00
 tags: [
   "blog"
 ]
 slug: pricing-and-package-changes
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-published: false
+published: true
 ---
-
-# Pricing and package changes
 
 Today we are excited to announce that most of Sourcegraph will be [open sourced](/blog/sourcegraph-is-now-open-source). As a part of this, more of Sourcegraph’s advanced features will be available to you for free, and one feature needed by larger companies is becoming paid. These changes will make it easier for teams to get started and get the full power of Sourcegraph right away.
 
