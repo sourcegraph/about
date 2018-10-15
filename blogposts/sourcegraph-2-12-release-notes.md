@@ -26,11 +26,11 @@ Here’s new, what’s changed, and what’s fixed in Sourcegraph 2.12.
 
 - [New product packaging and pricing](/blog/pricing-and-package-changes)
 
-- [Full Changelog (from 2.11 to 2.12)](#full-changelog-from-211-to-212)
+- [Full changelog (from 2.11 to 2.12)](#full-changelog-from-211-to-212)
 
 Ready to install or upgrade? [Get Sourcegraph for yourself (to get started)](/) or [deploy Sourcegraph for your team](/docs).
 
-## Full Changelog (from 2.11 to 2.12)
+## Full changelog (from 2.11 to 2.12)
 
 ### Changed
 
@@ -61,7 +61,7 @@ Ready to install or upgrade? [Get Sourcegraph for yourself (to get started)](/) 
 
 ### Removed
 
-- The deprecated environment variables `SRC_SESSION_STORE_REDIS` and `REDIS_MASTER_ENDPOINT` are no longer used to configure alternative redis endpoints. For more information view the [External Database](https://about.sourcegraph.com/docs/config/external-database) documentation.
+- The deprecated environment variables `SRC_SESSION_STORE_REDIS` and `REDIS_MASTER_ENDPOINT` are no longer used to configure alternative redis endpoints. For more information view the [External database](https://about.sourcegraph.com/docs/config/external-database) documentation.
 
 
 
