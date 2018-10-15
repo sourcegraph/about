@@ -1,16 +1,14 @@
 ---
 title: 'Product subscriptions and license keys'
 author: 'Quinn Slack'
-publishDate: 2018-10-08T00:00-07:00
+publishDate: 2018-10-15T11:00-07:00
 tags: [
   "blog"
 ]
 slug: product-subscriptions-and-license-keys
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-published: false
+published: true
 ---
-
-# Product subscriptions and license keys
 
 Site admins now have an easy way to enable paid [Sourcegraph Enterprise features](/pricing) on an existing Sourcegraph instance.
 

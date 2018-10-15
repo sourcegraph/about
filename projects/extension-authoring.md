@@ -1,16 +1,14 @@
 ---
-title: 'Extension authoring'
+title: 'Build your own Sourcegraph extensions'
 author: 'Chris Wendt'
-publishDate: 2018-10-01T00:00-07:00
+publishDate: 2018-10-15T11:00-07:00
 tags: [
   "blog"
 ]
 slug: extension-authoring
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-published: false
+published: true
 ---
-
-# Build your own Sourcegraph extensions WIP
 
 We’re happy to announce that [Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api) are ready for early adopters to start writing their own extensions.
 
@@ -34,7 +32,7 @@ Here’s another [extension that adds a link to the npm registry next to import/
 
 ![demo](https://user-images.githubusercontent.com/1387653/46236952-54040500-c336-11e8-885a-a68c3fff4ba4.gif)
 
-When you publish your extension to the [Sourcegraph extension registry](https://sourcegraph.com/extensions), anyone can install and instantly start using it. ([Sourcegraph Enterprise](https://about.sourcegraph.com/docs) supports a [private extension registry](https://about.sourcegraph.com/docs/extensions).)
+When you publish your extension to the [Sourcegraph extension registry](https://sourcegraph.com/extensions), anyone can install and instantly start using it. ([Sourcegraph Enterprise](/docs) supports a [private extension registry](/docs/extensions).)
 
 Next steps:
 
