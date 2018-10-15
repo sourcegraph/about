@@ -90,16 +90,10 @@
         },
         "multipleAuthProviders": {
           "description":
-            "Enables or disables the use of multiple authentication providers and a publicly accessible web page displaying authentication options for unauthenticated users. (WARNING: Do not use this unless you know what you're doing.)",
+            "Enables or disables the use of multiple authentication providers and a publicly accessible web page displaying authentication options for unauthenticated users.\n\nOnly applies to Sourcegraph Enterprise Starter and Sourcegraph Enterprise.",
           "type": "string",
           "enum": ["enabled", "disabled"],
-          "default": "disabled"
-        },
-        "platform": {
-          "description": "Enables the platform experiment.",
-          "type": "boolean",
-          "default": false,
-          "!go": { "pointer": true }
+          "default": "enabled"
         },
         "discussions": {
           "description": "Enables the code discussions experiment.",
@@ -196,6 +190,14 @@
         }
       }
     },
+    "git.cloneURLToRepositoryName": {
+      "description":
+        "JSON array of configuration that maps from Git clone URL to repository URI. Sourcegraph automatically resolves remote clone URLs to their proper code host. However, there may be non-remote clone URLs (e.g., in submodule declarations) that Sourcegraph cannot automatically map to a code host. In this case, use this field to specify the mapping. The mappings are tried in the order they are specified and take precedence over automatic mappings.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/CloneURLToRepositoryName"
+      }
+    },
     "github": {
       "description":
         "JSON array of configuration for GitHub hosts. See GitHub Configuration section for more information.",
@@ -277,7 +279,7 @@
     },
     "useJaeger": {
       "description":
-        "Use local Jaeger instance for tracing. Data Center only.\n\nAfter enabling Jaeger and updating your Kubernetes cluster, `kubectl get pods`\nshould display pods prefixed with `jaeger-cassandra`,\n`jaeger-collector`, and `jaeger-query`. `jaeger-collector` will start\ncrashing until you initialize the Cassandra DB. To do so, do the\nfollowing:\n\n1. Install [`cqlsh`](https://pypi.python.org/pypi/cqlsh).\n1. `kubectl port-forward $(kubectl get pods | grep jaeger-cassandra | awk '{ print $1 }') 9042`\n1. `git clone https://github.com/uber/jaeger && cd jaeger && MODE=test ./plugin/storage/cassandra/schema/create.sh | cqlsh`\n1. `kubectl port-forward $(kubectl get pods | grep jaeger-query | awk '{ print $1 }') 16686`\n1. Go to http://localhost:16686 to view the Jaeger dashboard.",
+        "Use local Jaeger instance for tracing. Kubernetes cluster deployments only.\n\nAfter enabling Jaeger and updating your Kubernetes cluster, `kubectl get pods`\nshould display pods prefixed with `jaeger-cassandra`,\n`jaeger-collector`, and `jaeger-query`. `jaeger-collector` will start\ncrashing until you initialize the Cassandra DB. To do so, do the\nfollowing:\n\n1. Install [`cqlsh`](https://pypi.python.org/pypi/cqlsh).\n1. `kubectl port-forward $(kubectl get pods | grep jaeger-cassandra | awk '{ print $1 }') 9042`\n1. `git clone https://github.com/uber/jaeger && cd jaeger && MODE=test ./plugin/storage/cassandra/schema/create.sh | cqlsh`\n1. `kubectl port-forward $(kubectl get pods | grep jaeger-query | awk '{ print $1 }') 16686`\n1. Go to http://localhost:16686 to view the Jaeger dashboard.",
       "type": "boolean"
     },
     "noGoGetDomains": {
@@ -314,6 +316,11 @@
     },
     "htmlBodyBottom": {
       "description": "HTML to inject at the bottom of the `<body>` element on each page, for analytics scripts",
+      "type": "string"
+    },
+    "licenseKey": {
+      "description":
+        "The license key associated with a Sourcegraph product subscription, which is necessary to activate Sourcegraph Enterprise functionality. To obtain this value, contact Sourcegraph to purchase a subscription.",
       "type": "string"
     },
     "maxReposToSearch": {
@@ -365,7 +372,7 @@
     },
     "auth.providers": {
       "description":
-        "The authentication providers to use for identifying and signing in users.\n\nOnly one authentication provider is supported. If you set the deprecated field \"auth.provider\", then that value is used as the authentication provider, and you can't set another one here.",
+        "The authentication providers to use for identifying and signing in users.\n\nOnly one authentication provider is officially supported at the moment. Multiple providers can be specified, but the support is experimental. If you set the deprecated field \"auth.provider\", then that value is used as the authentication provider, and you can't set another one here.",
       "type": "array",
       "items": {
         "required": ["type"],
@@ -428,7 +435,7 @@
     "auth.sessionExpiry": {
       "type": "string",
       "description":
-        "The duration of a user session, after which it expires and the user is required to re-authenticate. The default is 90 days. There is typically no need to set this, but some users may have specific internal security requirements.\n\nThe string format is that of the Duration type in the Go time package (https://golang.org/pkg/time/#ParseDuration). E.g., \"720h\", \"43200m\", \"2592000s\" all indicate a timespan of 30 days.\n\nNote: changing this field does not affect the expiration of existing sessions. If you would like to enforce this limit for existing sessions, you must log out currently signed-in users. You can force this by removing all keys beginning with \"session_\" from the Redis store:\n\n* For Sourcegraph Server: `docker exec $CONTAINER_ID redis-cli --raw keys 'session_*' | xargs docker exec $CONTAINER_ID redis-cli del`\n* For Data Center: \n  ```\n  REDIS_POD=\"$(kubectl get pods -l app=redis-store -o jsonpath={.items[0].metadata.name})\";\n  kubectl exec \"$REDIS_POD\" -- redis-cli --raw keys 'session_*' | xargs kubectl exec \"$REDIS_POD\" -- redis-cli --raw del;\n  ```\n",
+        "The duration of a user session, after which it expires and the user is required to re-authenticate. The default is 90 days. There is typically no need to set this, but some users may have specific internal security requirements.\n\nThe string format is that of the Duration type in the Go time package (https://golang.org/pkg/time/#ParseDuration). E.g., \"720h\", \"43200m\", \"2592000s\" all indicate a timespan of 30 days.\n\nNote: changing this field does not affect the expiration of existing sessions. If you would like to enforce this limit for existing sessions, you must log out currently signed-in users. You can force this by removing all keys beginning with \"session_\" from the Redis store:\n\n* For deployments using `sourcegraph/server`: `docker exec $CONTAINER_ID redis-cli --raw keys 'session_*' | xargs docker exec $CONTAINER_ID redis-cli del`\n* For cluster deployments: \n  ```\n  REDIS_POD=\"$(kubectl get pods -l app=redis-store -o jsonpath={.items[0].metadata.name})\";\n  kubectl exec \"$REDIS_POD\" -- redis-cli --raw keys 'session_*' | xargs kubectl exec \"$REDIS_POD\" -- redis-cli --raw del;\n  ```\n",
       "default": "2160h"
     },
     "auth.userIdentityHTTPHeader": {
@@ -438,6 +445,9 @@
     },
     "email.smtp": {
       "$ref": "#/definitions/SMTPServerConfig"
+    },
+    "email.imap": {
+      "$ref": "#/definitions/IMAPServerConfig"
     },
     "email.address": {
       "description": "The \"from\" address for emails sent by this server.",
@@ -484,8 +494,7 @@
             ]
           },
           "address": {
-            "description":
-              "TCP address of the language server. Required for Sourcegraph Server; do not set for Sourcegraph Data Center.",
+            "description": "TCP address of the language server. Required (except for Sourcegraph cluster deployments).",
             "type": "string",
             "pattern": "^tcp://",
             "format": "uri"
@@ -552,22 +561,54 @@
         "required": ["language"]
       }
     },
-    "platform": {
-      "description":
-        "Configures the Sourcegraph platform functionality. Requires experimentalFeatures.platform to be `true` to take effect. EXPERIMENTAL: This configuration is subject to change without notice.",
+    "extensions": {
+      "description": "Configures Sourcegraph extensions.",
       "type": "object",
       "properties": {
+        "disabled": {
+          "description": "Disable all usage of extensions.",
+          "type": "boolean",
+          "default": false,
+          "!go": { "pointer": true }
+        },
         "remoteRegistry": {
           "description":
             "The remote extension registry URL, or `false` to not use a remote extension registry. If not set, the default remote extension registry URL is used.",
           "oneOf": [{ "type": "string", "format": "uri" }, { "type": "boolean", "const": false }]
+        },
+        "allowRemoteExtensions": {
+          "description":
+            "Allow only the explicitly listed remote extensions (by extension ID, such as \"alice/myextension\") from the remote registry. If not set, all remote extensions may be used from the remote registry. To completely disable the remote registry, set `remoteRegistry` to `false`.\n\nOnly available in Sourcegraph Enterprise.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "discussions": {
+      "description": "Configures Sourcegraph code discussions.",
+      "type": "object",
+      "properties": {
+        "abuseProtection": {
+          "description":
+            "Enable abuse protection features (for public instances like Sourcegraph.com, not recommended for private instances).",
+          "type": "boolean",
+          "default": false
+        },
+        "abuseEmails": {
+          "description":
+            "Email addresses to notify of e.g. new user reports about abusive comments. Otherwise emails will not be sent.",
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
         }
       }
     },
     "settings": {
       "title": "SiteConfigSettings",
       "description":
-        "Site settings hard-coded in site configuration.\n\nDEPRECATED: Specify site settings in the site admin global settings page instead of hard-coding them in the site configuration file. This makes it possible to change site settings without redeploying the cluster in Sourcegraph Data Center.",
+        "Site settings hard-coded in site configuration.\n\nDEPRECATED: Specify site settings in the site admin global settings page instead of hard-coding them in the site configuration file. This makes it possible to change site settings without redeploying for cluster deployments.",
       "type": "object",
       "properties": {
         "search.scopes": { "$ref": "#/definitions/SiteConfigSearchScope" },
@@ -747,6 +788,11 @@
           "type": "string",
           "default": "{host}/{projectKey}/{repositorySlug}"
         },
+        "excludePersonalRepositories": {
+          "description":
+            "Whether or not personal repositories should be excluded or not. When true, Sourcegraph will ignore personal repositories it may have access to. See https://about.sourcegraph.com/docs/config/repositories/#excluding-personal-repositories for more information. Default: false.",
+          "type": "boolean"
+        },
         "initialRepositoryEnablement": {
           "description":
             "Defines whether repositories from this Bitbucket Server instance should be enabled and cloned when they are first seen by Sourcegraph. If false, the site admin must explicitly enable Bitbucket Server repositories (in the site admin area) to clone them and make them searchable on Sourcegraph. If true, they will be enabled and cloned immediately (subject to rate limiting by Bitbucket Server); site admins can still disable them explicitly, and they'll remain disabled.",
@@ -826,6 +872,25 @@
         "phabricatorMetadataCommand": {
           "description":
             "Bash command that prints out the Phabricator callsign for a Gitolite repository. This will be run with environment variable $REPO set to the URI of the repository and used to obtain the Phabricator metadata for a Gitolite repository. (Note: this requires `bash` to be installed.)",
+          "type": "string"
+        }
+      }
+    },
+    "CloneURLToRepositoryName": {
+      "description":
+        "Describes a mapping from clone URL to repository name. The `from` field contains a regular expression with named capturing groups. The `to` field contains a template string that references capturing group names. For instance, if `from` is \"^../(?P<name>\\w+)$\" and `to` is \"github.com/user/{name}\", the clone URL \"../myRepository\" would be mapped to the repository name \"github.com/user/myRepository\".",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to"],
+      "properties": {
+        "from": {
+          "description":
+            "A regular expression that matches a set of clone URLs. The regular expression should use the Go regular expression syntax (https://golang.org/pkg/regexp/) and contain at least one named capturing group. The regular expression matches partially by default, so use \"^...$\" if whole-string matching is desired.",
+          "type": "string"
+        },
+        "to": {
+          "description":
+            "The repository name output pattern. This should use `{matchGroup}` syntax to reference the capturing groups from the `from` field.",
           "type": "string"
         }
       }
@@ -1072,6 +1137,30 @@
         },
         "domain": {
           "description": "The HELO domain to provide to the SMTP server (if needed).",
+          "type": "string"
+        }
+      }
+    },
+    "IMAPServerConfig": {
+      "description": "Optional. The IMAP server used to retrieve emails (such as code discussion reply emails).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["host", "port"],
+      "properties": {
+        "host": {
+          "description": "The IMAP server host.",
+          "type": "string"
+        },
+        "port": {
+          "description": "The IMAP server port.",
+          "type": "integer"
+        },
+        "username": {
+          "description": "The username to use when communicating with the IMAP server.",
+          "type": "string"
+        },
+        "password": {
+          "description": "The username to use when communicating with the IMAP server.",
           "type": "string"
         }
       }

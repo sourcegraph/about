@@ -32,7 +32,7 @@ Here’s another [extension that adds a link to the npm registry next to import/
 
 ![demo](https://user-images.githubusercontent.com/1387653/46236952-54040500-c336-11e8-885a-a68c3fff4ba4.gif)
 
-When you publish your extension to the [Sourcegraph extension registry](https://sourcegraph.com/extensions), anyone can install and instantly start using it. ([Sourcegraph Enterprise](https://about.sourcegraph.com/docs) supports a [private extension registry](https://about.sourcegraph.com/docs/extensions).)
+When you publish your extension to the [Sourcegraph extension registry](https://sourcegraph.com/extensions), anyone can install and instantly start using it. ([Sourcegraph Enterprise](/docs) supports a [private extension registry](/docs/extensions).)
 
 Next steps:
 

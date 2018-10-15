@@ -26,7 +26,7 @@ Here’s new, what’s changed, and what’s fixed in Sourcegraph 2.12.
 
 - [New product packaging and pricing](/blog/pricing-and-package-changes)
 
-- [Full Changelog (from 2.10 to 2.11)](#full-changelog-from-211-to-212)
+- [Full Changelog (from 2.11 to 2.12)](#full-changelog-from-211-to-212)
 
 Ready to install or upgrade? [Get Sourcegraph for yourself (to get started)](/) or [deploy Sourcegraph for your team](/docs).
 
@@ -34,8 +34,8 @@ Ready to install or upgrade? [Get Sourcegraph for yourself (to get started)](/) 
 
 ### Changed
 
-- Reduced the size of in-memory data structures used for storing search results. This shdould reduce the backend memory usage of large result sets.
-- Code intelligence is now provided by [Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api). The extension for each language in the site configuration `langservers` property is automatically enabled. TODO BEFORE RELEASE: Make the previous sentence true. See https://github.com/sourcegraph/sourcegraph/issues/13125.
+- Reduced the size of in-memory data structures used for storing search results. This should reduce the backend memory usage of large result sets.
+- Code intelligence is now provided by [Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api). The extension for each language in the site configuration `langservers` property is automatically enabled.
 - Support for multiple authentication providers is now enabled by default. To disable it, set the `experimentalFeatures.multipleAuthProviders` site config option to `"disabled"`. This only applies to Sourcegraph Enterprise.
 - When using the `http-header` auth provider, valid auth cookies (from other auth providers that are currently configured or were previously configured) are now respected and will be used for authentication. These auth cookies also take precedence over the `http-header` auth. Previously, the `http-header` auth took precedence.
 - Bitbucket Server username configuration is now used to clone repositories if the Bitbucket Server API does not set a username.
