@@ -1,6 +1,6 @@
 ---
 title: 'Extension authoring'
-author: 'Quinn Slack'
+author: 'Chris Wendt'
 publishDate: 2018-10-01T00:00-07:00
 tags: [
   "blog"
