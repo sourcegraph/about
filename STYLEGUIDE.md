@@ -12,8 +12,7 @@ Our copy should be:
 ## General
 
 - Seek to make content available, and coherent, to all peoples.
-- Use Title Case for headers, buttons, features, and short lists.
-- Use sentence case for non-header text. When sentence case is used, full punctuation should be used.
+- Use sentence case across all text.
 - Render proper nouns as their creators prefer ("GitHub" not "Github").
 - Punctuation goes outside of quotation marks, except in marketing when displaying a quote.
 - Use the most popular US English spelling and phrasing.
@@ -32,8 +31,9 @@ Assume the reader is a busy non-native English speaker.
 ### Referring to the Product and Features
 
 - Sourcegraph: main product, prefer using this name unless you need to be more precise
-  - Sourcegraph Server: the form of our product that ships as the `sourcegraph/server` Docker image and runs on a single node
-  - Sourcegraph Data Center: the form of our product that runs on Kubernetes
+  - Sourcegraph Core: This build is the free tier of Sourcegraph built separately from Sourcegraph OSS.
+  - Sourcegraph Enterprise Starter: the tier of Sourcegraph that includes some features required to deploy in corporate environment.
+  - Sourcegraph Enterprise: the tier of Sourcegraph that includes all enterprise features to deploy Sourcegraph at a large scale. Enterprise includes the cluster deployment option formerly called Data Center.
   - Sourcegraph.com: the public instance of Sourcegraph for open-source code at https://sourcegraph.com
   - Sourcegraph integrations: the general term for our integrations
     - Sourcegraph['s] Phabricator integration
@@ -43,7 +43,9 @@ Assume the reader is a busy non-native English speaker.
       - Sourcegraph['s] Firefox add-on
       - Sourcegraph['s] Safari extension
 
-When specifically distinguishing between Server and Data Center, it might help to say "the [single-node] Server deployment option" and "the Data Center [cluster] deployment option".
+When referring to the build result of the open-source repository, use the name Sourcegraph OSS.
+
+When specifically distinguishing between Core and Sourcegraph OSS it is important to note that Core is not built from the open-source code base and Sourcegraph OSS does not include the ability to upgrade, or access the extension registry on sourcegraph.com. These are included in the Core version of Sourcegraph, that is built from the same code as Sourcegraph Enterprise and has the ability to upgrade later.
 
 You don't need to use the full name of the product each time you refer to it, but don't use a shortened name that could be confused with an official name. For example:
 
