@@ -15,7 +15,7 @@ YOUR CONTENT HERE.
 
 ## Writing tips
 
-Checkout the [style guide](https://sourcegraph.sgdev.org/github.com/sourcegraph/website/-/blob/STYLEGUIDE.md)
+Checkout the [style guide](STYLEGUIDE.md)
 
 # Content creation guide
 
