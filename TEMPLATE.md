@@ -1,20 +1,23 @@
 ---
 title: TITLE
-description: DESCRIPTION
-authors: 
- - @list
- - @of
- - @github
- - @handles 
-releasedate: YYYY-MM-DD
-published: true|false
+description: DESCRIPTION (Displayed in Google Search Snippets)
+author: AUTHOR
+publishDate: yyyy-mm-ddT00:00-07:00
+tags: [
+  blog
+]
+slug: blogpost-slug-here
+heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+published: false
 ---
 
 YOUR CONTENT HERE.
 
----
+## Writing tips
 
-# Content Creation Guide
+Checkout the [style guide](https://sourcegraph.sgdev.org/github.com/sourcegraph/website/-/blob/STYLEGUIDE.md)
+
+# Content creation guide
 
 Writing content can seem daunting but don't wait for inspiration to strike. Just start, using the below as a guide and improve as you go.
 
