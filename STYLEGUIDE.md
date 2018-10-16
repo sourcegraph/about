@@ -45,7 +45,7 @@ Assume the reader is a busy non-native English speaker.
 
 When referring to the build result of the open-source repository, use the name Sourcegraph OSS.
 
-When specifically distinguishing between Core and Sourcegraph OSS it is important to note that Core is not built from the open-source code base and Sourcegraph OSS does not include the ability to upgrade, or public Sourcegraph extensions. These are included in the Core version of Sourcegraph, that is built from the same code as Sourcegraph Enterprise and has the ability to upgrade later.
+When specifically distinguishing between Core and Sourcegraph OSS it is important to note that Core is not built from the open-source code base and Sourcegraph OSS does not include the ability to upgrade, or access the extension registry on sourcegraph.com. These are included in the Core version of Sourcegraph, that is built from the same code as Sourcegraph Enterprise and has the ability to upgrade later.
 
 You don't need to use the full name of the product each time you refer to it, but don't use a shortened name that could be confused with an official name. For example:
 
