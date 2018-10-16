@@ -1,4 +1,4 @@
-# Sourcegraph Style Guide
+# Sourcegraph style guide
 
 The goal of our product and marketing copy is to create the best impression of Sourcegraph on our target users. This style guide describes how to do so.
 
@@ -28,7 +28,7 @@ Assume the reader is a busy non-native English speaker.
 - Avoid ambiguous verbs. For example, avoid using verbs like "cluster", "document", "label", "group", "admin", etc., because we commonly use those as nouns.
 - Write robust sentences that can be understood even if the reader doesn't recognize all of the words.
 
-### Referring to the Product and Features
+### Referring to the product and features
 
 - Sourcegraph: main product, prefer using this name unless you need to be more precise
   - Sourcegraph Core: This build is the free tier of Sourcegraph built separately from Sourcegraph OSS.
@@ -91,7 +91,7 @@ Never use any of the following as link text:
 - instructions
 - these instructions
 
-### Instructions, References, and Citations
+### Instructions, references, and citations
 
 Render references to UI text in bold. Match the actual case of the UI text in other products even if it violates our style guide.
 
@@ -122,7 +122,7 @@ For consistency, all examples should use the following names (as appropriate).
 - Treat all supported platforms equally. For example, don't give instructions for Chrome or GitHub in a way that implies they are the "default".
 - Prefer linking to a 3rd-party tool's existing documentation over explaining it in our own documentation.
 
-### Specific Terms in Prose
+### Specific terms in prose
 
 - Repository (not "repo")
 - Organization (not "org")
@@ -141,7 +141,7 @@ For consistency, all examples should use the following names (as appropriate).
 - macOS (not any of: OS X, OSX, MacOS, MacOSX, etc.)
 - Capitalize as shown: Docker, Bitbucket, GitHub, React, JavaScript, TypeScript (all according to the intent of the creator)
 
-### "Contact Us" Language
+### "Contact us" Language
 
 When letting users know they can contact us with questions, feedback, or issues, always use the phrasing below:
 
