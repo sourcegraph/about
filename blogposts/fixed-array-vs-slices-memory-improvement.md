@@ -1,3 +1,16 @@
+---
+title: TITLE
+description: DESCRIPTION (Displayed in Google Search Snippets)
+author: AUTHOR
+publishDate: yyyy-mm-ddT00:00-07:00
+tags: [
+  blog
+]
+slug: blogpost-slug-here
+heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+published: false
+---
+
 # Fixed array size vs slices for improved memory management in Go
 
 WIP based off Keegan's post to Slack.
@@ -20,17 +33,17 @@ type Location struct {
 func main() {
 	a := []int32{1,2}
 	fmt.Println("[]int32{}  ", unsafe.Sizeof(a))
-	
+
 	b := [2]int32{}
-	fmt.Println("[2]int32{} ", unsafe.Sizeof(b))	
-	
+	fmt.Println("[2]int32{} ", unsafe.Sizeof(b))
+
 	c := Location{}
-	fmt.Println("Location{} ", unsafe.Sizeof(c))	
+	fmt.Println("Location{} ", unsafe.Sizeof(c))
 
 }
 ```
 
-Comment	
+Comment
 This looks like a 3x improvement but it's more than that.
 It's more like 4x:
 - You're paying the price of the slice data strcuture becore any data is even used.
