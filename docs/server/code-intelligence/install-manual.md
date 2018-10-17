@@ -30,7 +30,7 @@ If you're already running the `sourcegraph/server` Docker image (as described in
 
 Now, run the `sourcegraph/server` Docker image as described in the [quickstart](/docs), but with two additional flags: `--network=lsp` and `--name=sourcegraph`:
 
-<pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 7080:7080 --rm<span class="virtual-br"></span> --network=lsp --name=sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> sourcegraph/server:<server-version-number /><span class="virtual-br"></span></code></pre>
+<pre class="pre-wrap"><code>docker run<span class="virtual-br"></span> --publish 7080:7080 --rm<span class="virtual-br"></span> --network=lsp --name=sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/config:/etc/sourcegraph<span class="virtual-br"></span> --volume ~/.sourcegraph/data:/var/opt/sourcegraph<span class="virtual-br"></span> sourcegraph/server:<server-version-number></server-version-number><span class="virtual-br"></span></code></pre>
 
 ### Run the language server containers
 
