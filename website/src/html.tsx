@@ -3,17 +3,7 @@
 
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import eventLogger = require('./EventLogger')
-
-// Load production style
-let styles: string
-if (process.env.NODE_ENV === `production`) {
-    try {
-        styles = require('!raw-loader!../public/styles.css')
-    } catch (err) {
-        console.log(err)
-    }
-}
+import './css/styles.scss'
 
 interface HtmlProps {
     body: any
@@ -21,14 +11,9 @@ interface HtmlProps {
     headComponents: any
 }
 
-module.exports = class HTML extends React.Component<HtmlProps> {
+export default class HTML extends React.Component<HtmlProps> {
     public render(): JSX.Element | null {
         const head = Helmet.renderStatic()
-
-        const css =
-            process.env.NODE_ENV === `production` ? (
-                <style id="gatsby-inlined-css" dangerouslySetInnerHTML={{ __html: styles }} />
-            ) : null
 
         return (
             <html lang="en">
@@ -38,11 +23,11 @@ module.exports = class HTML extends React.Component<HtmlProps> {
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
-                    <link rel="stylesheet" href="/styles.css" />
+                    <link rel="stylesheet" type="text/css" href="styles.css" />
                     {head.title.toComponent()}
                     {head.meta.toComponent()}
                     {head.link.toComponent()}
-                    {css}
+                    {/* {css} */}
                     <script type="text/javascript" src="/scripts.js" />
                     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" />
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js" />

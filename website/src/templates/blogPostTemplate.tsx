@@ -1,6 +1,8 @@
-import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
+import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
 import { eventLogger } from '../EventLogger'
 
@@ -52,53 +54,55 @@ export default class ContentfulTemplate extends React.Component<any, any> {
             readMoreLink = '/blog'
         }
         return (
-            <div>
-                <Helmet>
-                    <title>{title}</title>
-                    <meta property="og:title" content={title} />
-                    <meta property="og:url" content={`https://about.sourcegraph.com/${slug}`} />
-                    <meta property="og:description" content={excerpt} />
-                    <meta property="og:image" content={image} />
-                    <meta property="og:type" content="website" />
+            <Layout location={this.props.location}>
+                <div>
+                    <Helmet>
+                        <title>{title}</title>
+                        <meta property="og:title" content={title} />
+                        <meta property="og:url" content={`https://about.sourcegraph.com/${slug}`} />
+                        <meta property="og:description" content={excerpt} />
+                        <meta property="og:image" content={image} />
+                        <meta property="og:type" content="website" />
 
-                    <meta name="twitter:site" content="@srcgraph" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:title" content={title} />
-                    <meta name="twitter:image" content={image} />
-                    <meta name="twitter:description" content={excerpt} />
-                    <meta name="description" content={excerpt} />
-                </Helmet>
-                <div className="blog-post">
-                    <div className="blog-post__wrapper">
-                        <section className="blog-post__title">
-                            <h1>{title}</h1>
-                            <p>
-                                By {author} on {date}
-                            </p>
-                        </section>
-                        <hr className="blog-post__title--rule" />
-                        <section className="blog-post__body">
-                            <div dangerouslySetInnerHTML={{ __html: content }} />
-                            <hr />
-                            <Link to="/docs/features/browser-extension/">
-                                <button className="btn btn-outline-primary">
-                                    Would you like go-to-def and find-refs on GitHub?
-                                </button>
-                            </Link>
-                            <div style={{ height: '0.5em' }} />
-                            <Link to={readMoreLink}>
-                                <button className="btn btn-outline-primary">Read more posts</button>
-                            </Link>
-                            <div style={{ height: '1em' }} />
-                            <div>
-                                <div className="mb-4">
-                                    <SocialLinks url={`https://about.sourcegraph.com/${slug}`} title={title} />
+                        <meta name="twitter:site" content="@srcgraph" />
+                        <meta name="twitter:card" content="summary_large_image" />
+                        <meta name="twitter:title" content={title} />
+                        <meta name="twitter:image" content={image} />
+                        <meta name="twitter:description" content={excerpt} />
+                        <meta name="description" content={excerpt} />
+                    </Helmet>
+                    <div className="blog-post">
+                        <div className="blog-post__wrapper">
+                            <section className="blog-post__title">
+                                <h1>{title}</h1>
+                                <p>
+                                    By {author} on {date}
+                                </p>
+                            </section>
+                            <hr className="blog-post__title--rule" />
+                            <section className="blog-post__body">
+                                <div dangerouslySetInnerHTML={{ __html: content }} />
+                                <hr />
+                                <Link to="/docs/features/browser-extension/">
+                                    <button className="btn btn-outline-primary">
+                                        Would you like go-to-def and find-refs on GitHub?
+                                    </button>
+                                </Link>
+                                <div style={{ height: '0.5em' }} />
+                                <Link to={readMoreLink}>
+                                    <button className="btn btn-outline-primary">Read more posts</button>
+                                </Link>
+                                <div style={{ height: '1em' }} />
+                                <div>
+                                    <div className="mb-4">
+                                        <SocialLinks url={`https://about.sourcegraph.com/${slug}`} title={title} />
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </section>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Layout>
         )
     }
 }

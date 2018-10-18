@@ -1,1 +1,4 @@
 .DS_Store
+
+# Generated config doc
+docs/server/config/site.md

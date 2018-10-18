@@ -1,7 +1,9 @@
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import BlogHeadLinks from '../components/BlogHeadLinks'
 import BlogPosts from '../components/BlogPosts'
+import Layout from '../components/Layout'
 
 export default class BlogList extends React.Component<any, any> {
     constructor(props: any) {
@@ -14,18 +16,20 @@ export default class BlogList extends React.Component<any, any> {
         )
 
         return (
-            <div className="blog">
-                <Helmet>
-                    <title>Plain Text - the official Sourcegraph blog</title>
-                    <meta name="twitter:title" content="Plain Text - the official Sourcegraph blog" />
-                    <meta property="og:title" content="Plain Text - the official Sourcegraph blog" />
-                </Helmet>
-                <div className="blog blog__head">
-                    <h1>Plain Text</h1>
-                    <BlogHeadLinks />
+            <Layout location={this.props.location}>
+                <div className="blog">
+                    <Helmet>
+                        <title>Plain Text - the official Sourcegraph blog</title>
+                        <meta name="twitter:title" content="Plain Text - the official Sourcegraph blog" />
+                        <meta property="og:title" content="Plain Text - the official Sourcegraph blog" />
+                    </Helmet>
+                    <div className="blog blog__head">
+                        <h1>Plain Text</h1>
+                        <BlogHeadLinks />
+                    </div>
+                    <BlogPosts blogType="blog" posts={markdownBlogPosts} />
                 </div>
-                <BlogPosts blogType="blog" posts={markdownBlogPosts} />
-            </div>
+            </Layout>
         )
     }
 }

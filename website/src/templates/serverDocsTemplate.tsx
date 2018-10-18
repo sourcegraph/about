@@ -1,11 +1,12 @@
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import * as rehypeReact from 'rehype-react'
+import ServerDocs from '../components/ServerDocs'
 import { ServerVersionNumber } from '../components/ServerVersionNumber'
-import '../css/styles.scss'
 import { eventLogger } from '../EventLogger'
 
-export default class DocsTemplate extends React.Component<any, any> {
+export default class ServerDocsTemplate extends React.Component<any, any> {
     constructor(props: any) {
         super(props)
     }
@@ -53,25 +54,27 @@ export default class DocsTemplate extends React.Component<any, any> {
         const title = md.frontmatter.title
 
         return (
-            <div className="documentation__markdown">
-                <Helmet>
-                    <title>{title}</title>
-                    <meta property="og:title" content={title} />
-                    <meta name="twitter:title" content={title} />
-                    <meta name="twitter:description" content={excerpt} />
-                    <meta property="og:description" content={excerpt} />
-                    <meta name="description" content={excerpt} />
-                </Helmet>
-                <h1 className="documentation__title">{title}</h1>
-                <hr />
-                <div className="documentation__body">{this.renderAst(htmlAst)}</div>
-            </div>
+            <ServerDocs location={this.props.location}>
+                <div className="documentation__markdown">
+                    <Helmet>
+                        <title>{title}</title>
+                        <meta property="og:title" content={title} />
+                        <meta name="twitter:title" content={title} />
+                        <meta name="twitter:description" content={excerpt} />
+                        <meta property="og:description" content={excerpt} />
+                        <meta name="description" content={excerpt} />
+                    </Helmet>
+                    <h1 className="documentation__title">{title}</h1>
+                    <hr />
+                    <div className="documentation__body">{this.renderAst(htmlAst)}</div>
+                </div>
+            </ServerDocs>
         )
     }
 }
 
 export const pageQuery = graphql`
-    query docsTemplate($fileSlug: String) {
+    query serverDocsTemplate($fileSlug: String) {
         markdownRemark(fields: { slug: { eq: $fileSlug } }) {
             frontmatter {
                 title

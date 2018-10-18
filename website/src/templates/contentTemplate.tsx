@@ -1,6 +1,7 @@
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
-
+import Layout from '../components/Layout'
 export default class ContentTemplate extends React.Component<any, any> {
     constructor(props: any) {
         super(props)
@@ -40,22 +41,24 @@ export default class ContentTemplate extends React.Component<any, any> {
         const excerpt = md.excerpt
         const title = md.frontmatter.title
         return (
-            <div>
-                <Helmet>
-                    <title>{title}</title>
-                    <meta property="og:title" content={title} />
-                    <meta name="twitter:title" content={title} />
-                    <meta name="twitter:description" content={excerpt} />
-                    <meta property="og:description" content={excerpt} />
-                    <meta name="description" content={excerpt} />
-                </Helmet>
-                <section className="content-page__title">
-                    <h1>{title}</h1>
-                </section>
-                <section className="content-page__body">
-                    <div dangerouslySetInnerHTML={{ __html: content }} />
-                </section>
-            </div>
+            <Layout location={this.props.location}>
+                <div>
+                    <Helmet>
+                        <title>{title}</title>
+                        <meta property="og:title" content={title} />
+                        <meta name="twitter:title" content={title} />
+                        <meta name="twitter:description" content={excerpt} />
+                        <meta property="og:description" content={excerpt} />
+                        <meta name="description" content={excerpt} />
+                    </Helmet>
+                    <section className="content-page__title">
+                        <h1>{title}</h1>
+                    </section>
+                    <section className="content-page__body">
+                        <div dangerouslySetInnerHTML={{ __html: content }} />
+                    </section>
+                </div>
+            </Layout>
         )
     }
 }
