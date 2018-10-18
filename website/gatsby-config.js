@@ -63,11 +63,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        includePaths: ['src/css'],
-      },
-    },
+    `gatsby-plugin-sass`,
   ],
 }
