@@ -6,8 +6,3 @@ node_modules/
 public/
 .DS_Store
 yarn-error.log
-
-# Generated config doc
-docs/server/config/site.md
-
-.firebase/
