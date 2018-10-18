@@ -109,8 +109,8 @@ export default class Index extends React.Component<any, any> {
                                             </p>
                                             <div className="py-2 d-flex flex-wrap">
                                                 <div className="btn-group">
-                                                    <Link
-                                                        to="/docs"
+                                                    <a
+                                                        href="https://docs.sourcegraph.com/admin/install/docker"
                                                         onClick={this.trackInstallSourcegraphServerCodeIntelligence}
                                                     >
                                                         <button className="btn btn-secondary" type="button">
@@ -120,7 +120,7 @@ export default class Index extends React.Component<any, any> {
                                                             />
                                                             Deploy
                                                         </button>
-                                                    </Link>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

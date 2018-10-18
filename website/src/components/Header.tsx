@@ -55,13 +55,12 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 </Link>
                             </li>
                             <li className="header__nav-item nav-item" role="presentation" onClick={this.docsClicked}>
-                                <Link
+                                <a
                                     className="header__nav-link nav-link"
-                                    to="/docs"
-                                    activeClassName="header__nav-link-active"
+                                    href="https://docs.sourcegraph.com"
                                 >
                                     Documentation
-                                </Link>
+                                </a>
                             </li>
                             <li className="header__nav-item nav-item" role="presentation" onClick={this.aboutClicked}>
                                 <Link
