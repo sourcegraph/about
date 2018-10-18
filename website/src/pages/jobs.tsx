@@ -122,6 +122,8 @@ export default class JobsPage extends React.Component<any, any> {
                             <img className="jobs__team--profiles-item" src="/profiles/isaac.png" />
                             <img className="jobs__team--profiles-item" src="/profiles/nick.png" />
                             <img className="jobs__team--profiles-item" src="/profiles/chris.png" />
+                            <img className="jobs__team--profiles-item" src="/profiles/francis.png" />
+                            <img className="jobs__team--profiles-item" src="/profiles/ryan.png" />
                         </div>
                     </div>
                 </section>
