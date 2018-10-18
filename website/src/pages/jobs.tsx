@@ -94,38 +94,38 @@ export default class JobsPage extends React.Component<any, any> {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section className="jobs__team">
-                    <div className="jobs__container">
-                        <h1>Our Team</h1>
-                        <p className="jobs__team jobs__team--text">
-                            Our team consists of talented, collaborative, driven individuals who are attracted to the
-                            massive problem we are tackling. We work in an open environment that treats people in a
-                            first-class manner and provides them with ownership, responsibility, and autonomy. Learn
-                            more about the company.
-                        </p>
-                        <div className="jobs__team jobs__team--profiles">
-                            <img className="jobs__team--profiles-item" src="/profiles/danA.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/farhan.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/felix.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/keegan.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/dan.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/geoffrey.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/stephen.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/matt.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/beyang.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/noemi.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/vanesa.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/scott.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/adam.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/milton.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/quinn.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/isaac.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/nick.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/chris.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/francis.png" />
-                            <img className="jobs__team--profiles-item" src="/profiles/ryan.png" />
+                    </section>
+                    <section className="jobs__team">
+                        <div className="jobs__container">
+                            <h1>Our Team</h1>
+                            <p className="jobs__team jobs__team--text">
+                                Our team consists of talented, collaborative, driven individuals who are attracted to
+                                the massive problem we are tackling. We work in an open environment that treats people
+                                in a first-class manner and provides them with ownership, responsibility, and autonomy.
+                                Learn more about the company.
+                            </p>
+                            <div className="jobs__team jobs__team--profiles">
+                                <img className="jobs__team--profiles-item" src="/profiles/danA.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/farhan.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/felix.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/keegan.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/dan.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/geoffrey.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/stephen.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/matt.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/beyang.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/noemi.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/vanesa.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/scott.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/adam.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/milton.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/quinn.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/isaac.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/nick.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/chris.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/francis.png" />
+                                <img className="jobs__team--profiles-item" src="/profiles/ryan.png" />
+                            </div>
                         </div>
                     </section>
                     <section className="jobs__work">

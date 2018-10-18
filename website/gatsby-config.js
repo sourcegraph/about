@@ -64,10 +64,10 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-typescript`,
     {
-        resolve: `gatsby-plugin-sass`,
-        options: {
-            includePaths: ["src/css"]
-        }
-    }
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ['src/css'],
+      },
+    },
   ],
 }
