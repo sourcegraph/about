@@ -71,9 +71,7 @@ export default class Footer extends React.Component<any, any> {
                                 <input type="checkbox" />
                                 <ul>
                                     <li>
-                                        <Link to="/plan">
-                                            Master plan
-                                        </Link>
+                                        <Link to="/plan">Master plan</Link>
                                     </li>
                                     <li>
                                         <Link to="/about" onClick={this.aboutClicked}>
