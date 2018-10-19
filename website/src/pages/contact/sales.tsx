@@ -27,7 +27,7 @@ export default class Trial extends React.Component<any, any> {
                 <section className="d-flex flex-column flex-lg-row sales">
                     <div className="form-area">
                         <div>
-                            <h1>Contact Our Team</h1>
+                            <h1>Contact our team</h1>
                             <p>
                                 Let us know which <Link to="/pricing">paid product</Link> you're interested in and for
                                 how many users. Our team is happy to answer any questions. Fill out the form and we’ll
@@ -40,7 +40,7 @@ export default class Trial extends React.Component<any, any> {
                     </div>
                     <div className="panel-area ml-lg-5">
                         <div className="d-flex flex-column panel">
-                            <h3>Your Team will Love Sourcegraph</h3>
+                            <h3>Your team will love Sourcegraph</h3>
                             <ul className="list pl0">
                                 <li className="mb-2">
                                     <div className="d-flex">Code search and intelligence for all your repositories</div>

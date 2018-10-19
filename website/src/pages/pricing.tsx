@@ -33,7 +33,7 @@ export default class Pricing extends React.Component<any, any> {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <h2>Sourcegraph Pricing</h2>
+                                            <h2>Sourcegraph pricing</h2>
                                             <h1>Open. For business.</h1>
                                             <p>
                                                 Sourcegraph is open source and ready to use for teams of all sizes. You
@@ -143,7 +143,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             href="/contact/sales"
                                                             onClick={this.trackContactUsClickedButton}
                                                         >
-                                                            Contact Us
+                                                            Contact us
                                                         </a>
                                                     </div>
                                                 </div>
@@ -193,7 +193,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             href="/contact/sales"
                                                             onClick={this.trackContactUsClickedButton}
                                                         >
-                                                            Contact Us
+                                                            Contact us
                                                         </a>
                                                     </div>
                                                 </div>
@@ -205,7 +205,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="col-xl-12 lg-12 pricing-true-up-notice">
                                         If you exceed your licensed users over the term of your subscription,
                                         Sourcegraph will true up your license at your next renewal. Learn more about{' '}
-                                        <a href="/docs/pricing">Sourcegraph's true-up pricing model</a>.
+                                        <a href="https://docs.sourcegraph.com/admin/subscriptions">Sourcegraph's true-up pricing model</a>.
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +329,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             Code intelligence for all languages (
-                                            <a href="/docs/code-intelligence" target="_blank">
+                                            <a href="https://docs.sourcegraph.com/extensions/language_servers" target="_blank">
                                                 learn more
                                             </a>
                                             )
@@ -440,7 +440,7 @@ export default class Pricing extends React.Component<any, any> {
                                 <div id="integrations" className="table-section">
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
-                                            <a href="/docs/integrations" target="_blank">
+                                            <a href="https://docs.sourcegraph.com/integration" target="_blank">
                                                 Browser, code host, and editor integrations
                                             </a>
                                         </div>
@@ -458,7 +458,7 @@ export default class Pricing extends React.Component<any, any> {
                                         <div className="col-6 feature-title">
                                             Instantly deploy company-wide via G Suite (
                                             <a
-                                                href="/docs/features/browser-extension/g-suite-installation"
+                                                href="https://docs.sourcegraph.com/integration/google_gsuite"
                                                 target="_blank"
                                             >
                                                 learn more
@@ -567,7 +567,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             Single sign-on integration (
-                                            <a href="/docs/config/authentication" target="_blank">
+                                            <a href="https://docs.sourcegraph.com/admin/auth" target="_blank">
                                                 learn more
                                             </a>
                                             )
@@ -613,7 +613,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             External database (
-                                            <a href="/docs/config/external-database" target="_blank">
+                                            <a href="https://docs.sourcegraph.com/admin/external_database" target="_blank">
                                                 learn more
                                             </a>
                                             )
@@ -643,7 +643,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             Webhooks for repository updates (
-                                            <a href="/docs/config/update-repo-webhook" target="_blank">
+                                            <a href="https://docs.sourcegraph.com/user/repo/webhooks" target="_blank">
                                                 learn more
                                             </a>
                                             )
@@ -661,7 +661,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             Logging and monitoring for your Sourcegraph instance (
-                                            <a href="/docs/config/monitoring-and-tracing" target="_blank">
+                                            <a href="https://docs.sourcegraph.com/admin/monitorg-and-tracing" target="_blank">
                                                 learn more
                                             </a>
                                             )
@@ -755,7 +755,7 @@ export default class Pricing extends React.Component<any, any> {
                                             href="/contact/sales"
                                             onClick={this.trackContactUsClickedButton}
                                         >
-                                            Contact Us
+                                            Contact us
                                         </a>
                                     </div>
                                 </div>
