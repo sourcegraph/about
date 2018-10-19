@@ -1,10 +1,9 @@
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 import { AccountMultipleIcon, MapIcon, NavigationIcon } from 'mdi-react'
 import * as React from 'react'
 import Helmet from 'react-helmet'
-
 import Layout from '../components/Layout'
 import { eventLogger } from '../EventLogger'
 import * as goldcrest from '../images/about/sg-goldcrest.png'
@@ -77,6 +76,7 @@ export default class About extends React.Component<any, any> {
                                         </Link>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                             <div className="about__values">
                                 <div className="container">
@@ -362,7 +362,6 @@ export default class About extends React.Component<any, any> {
                             </div>
                         </div>
                     </div>
-                </div>
             </Layout>
         )
     }
