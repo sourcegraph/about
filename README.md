@@ -42,4 +42,4 @@ Quinn, Ryan and Francis will pair with you to write the first version of your po
 
 ## Publishing your post
 
-Set `published` to `true` and presuming you've configured the frontmatter correctly, you're post will be live a few minutes after your commit is merged into the master branch.
+Set `published` to `true` and presuming you've configured the frontmatter correctly, your post will be live a few minutes after your commit is merged into the master branch.

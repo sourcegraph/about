@@ -1,6 +1,6 @@
 # Sourcegraph website
 
-This repository contains source code for the Sourcegraph marketing website, ([https://about.sourcegraph.com](https://about.sourcegraph.com)). The site is built using the [GatsbyJS](https://gatsbyjs.org) static site generator.
+This repository contains source code for the Sourcegraph website, ([https://about.sourcegraph.com](https://about.sourcegraph.com)). The site is built using the [GatsbyJS](https://gatsbyjs.org) static site generator.
 
 ### Development
 
@@ -17,33 +17,6 @@ Generate production build:
 Generate a production build of the site and serve it locally on http://localhost:9000:
 
 `npm run serve`
-
-## Documentation pages
-
-Currently, all our documentation pages live in the `../docs` directory.
-
-When writing documentation and website copy, please refer to the [styleguide](STYLEGUIDE.md).
-
-Checklist for docs adding a docs page:
-
-- [ ] Create Markdown file in `docs/`, with the frontmatter filled out appropriately.
-  - [ ] Title
-  - [ ] Permalink -- this is the exact path which will
-- [ ] If necessary, add your new page to the appropriate sidebar by adding a DocsSidebarItem to `ServerSidebar.tsx`, `DataCenterSidebar.tsx`, or `IntegrationsSidebar.tsx`.
-
-To update the site configuration documentation, copy the [site.schema.json](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/schema/site.schema.json) file from the sourcegraph/sourcegraph repository into [/utils/](/utils). The relevant markdown file will be generated as part of the build step during deployment. There is no need to run `npm run config-docs` manually.
-
-Currently, the site settings docs ([/data/docs/server/config/settings.md](/data/docs/server/config/site-settings.md)) are manually created/edited.
-
-```
-cp $GOPATH/src/github.com/sourcegraph/sourcegraph/schema/site.schema.json utils/
-```
-
-**Important:** when creating hyperlinks to pages within https://about.sourcegraph.com, never link include the base url.
-
-Correct: \[example\]\(/example)
-
-Incorrect: \[example\]\(https://about.sourcegraph.com/example).
 
 ### Blog
 
@@ -69,7 +42,7 @@ Blogposts will appear on our site if published is set to true.
 
 Correct: \[example\]\(/example)
 
-Wrong: \[example\]\(https://about.sourcegraph.com/example).
+Incorrect: \[example\]\(https://about.sourcegraph.com/example).
 
 #### Previewing blog post drafts
 
