@@ -71,9 +71,7 @@ export default class Footer extends React.Component<any, any> {
                                 <input type="checkbox" />
                                 <ul>
                                     <li>
-                                        <Link to="/plan" onClick={this.masterPlanClicked}>
-                                            Master Plan
-                                        </Link>
+                                        <Link to="/plan">Master plan</Link>
                                     </li>
                                     <li>
                                         <Link to="/about" onClick={this.aboutClicked}>
@@ -221,9 +219,6 @@ export default class Footer extends React.Component<any, any> {
     }
     private aboutClicked = () => {
         eventLogger.trackAboutClicked('Footer')
-    }
-    private masterPlanClicked = () => {
-        eventLogger.trackMasterPlanClicked('Footer')
     }
     private careersClicked = () => {
         eventLogger.trackCareersClicked('Footer')

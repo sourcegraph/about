@@ -87,11 +87,6 @@ class EventLogger {
             location_on_page: loc,
         })
     }
-    public trackMasterPlanClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'MasterPlanLinkClicked', {
-            location_on_page: loc,
-        })
-    }
     public trackDocsServerTabClicked(): void {
         this.trackEvent('Pages', 'Click', null, 'DocsServerTabClicked', {})
     }
