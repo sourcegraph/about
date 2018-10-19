@@ -8,15 +8,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/data/`,
+        name: `projects`,
+        path: `${__dirname}/../projects/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `projects`,
-        path: `${__dirname}/../projects/`,
+        name: `data`,
+        path: `${__dirname}/../docs/`,
       },
     },
     {
