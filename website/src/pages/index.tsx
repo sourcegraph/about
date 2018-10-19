@@ -15,7 +15,7 @@ export default class Index extends React.Component<any, any> {
                         <div className="container v-prop__container mt-4">
                             <div className="row d-flex justify-content-center">
                                 <div className="col-md-5">
-                                    <h1>Build Better Software</h1>
+                                    <h1>Build better software</h1>
                                     <p>
                                         Sourcegraph is a fast, solid, full-featured code navigation engine. Get
                                         cross-repository code intelligence, including:
@@ -27,7 +27,7 @@ export default class Index extends React.Component<any, any> {
                                         >
                                             <div className="d-flex align-items-center pb-2">
                                                 <MagnifyIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Advanced Code Search</span>
+                                                <span className="pl-1">Advanced code search</span>
                                             </div>
                                         </a>
                                         <a
@@ -36,7 +36,7 @@ export default class Index extends React.Component<any, any> {
                                         >
                                             <div className="d-flex align-items-center pb-2">
                                                 <ChatIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Hover Tooltips</span>
+                                                <span className="pl-1">Hover tooltips</span>
                                             </div>
                                         </a>
                                         <a
@@ -45,7 +45,7 @@ export default class Index extends React.Component<any, any> {
                                         >
                                             <div className="d-flex align-items-center pb-2">
                                                 <ReplyIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Jump-To-Definition</span>
+                                                <span className="pl-1">Jump-to-definition</span>
                                             </div>
                                         </a>
                                         <a
@@ -54,7 +54,7 @@ export default class Index extends React.Component<any, any> {
                                         >
                                             <div className="d-flex align-items-center pb-2">
                                                 <MagnifyIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Find References</span>
+                                                <span className="pl-1">Find references</span>
                                             </div>
                                         </a>
                                     </div>
@@ -75,7 +75,7 @@ export default class Index extends React.Component<any, any> {
                                             <div className="col-md-6 home__deploy-card">
                                                 <div className="d-flex">
                                                     <WebIcon className="material-icons" size={32} />
-                                                    <h2 className="ml-2">For Yourself</h2>
+                                                    <h2 className="ml-2">For yourself</h2>
                                                 </div>
                                                 <p>
                                                     Hover tooltips, go-to-definition, and find-references on GitHub,
@@ -105,7 +105,7 @@ export default class Index extends React.Component<any, any> {
                                             <div className="col-md-6 home__deploy-card">
                                                 <div className="d-flex align-items-center">
                                                     <ServerIcon className="material-icons" size={32} />
-                                                    <h2 className="ml-2">For Your Team</h2>
+                                                    <h2 className="ml-2">For your team</h2>
                                                 </div>
                                                 <p>
                                                     Advanced search and intelligence on a private instance for all your
@@ -143,7 +143,7 @@ export default class Index extends React.Component<any, any> {
                                             <figure className="search-icon" />
                                         </div>
                                         <div className="copy">
-                                            <h2>Powerful, Instant Code Search</h2>
+                                            <h2>Powerful, instant code search</h2>
                                             <p>
                                                 Search in files and diffs in your code using simple terms, regular
                                                 expressions, and other filters. Syncs repositories with your code host
@@ -156,11 +156,11 @@ export default class Index extends React.Component<any, any> {
                                             <figure className="dc-icon" />
                                         </div>
                                         <div className="copy">
-                                            <h2>Data Center</h2>
+                                            <h2>Enterprise</h2>
                                             <p>
                                                 As you grow to hundreds or thousands of users and repositories, graduate
                                                 from the single-server deployment to a highly scalable cluster with
-                                                Sourcegraph Data Center.
+                                                Sourcegraph Enterprise.
                                             </p>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@ export default class Index extends React.Component<any, any> {
                                             <figure className="ci-icon" />
                                         </div>
                                         <div className="copy">
-                                            <h2>Code Intelligence</h2>
+                                            <h2>Code intelligence</h2>
                                             <p>
                                                 Code intelligence makes browsing code easier, with IDE-like hovers,
                                                 go-to-definition, and find-references on your code, powered by language

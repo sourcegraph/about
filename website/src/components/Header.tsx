@@ -82,7 +82,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                             <a href="https://docs.sourcegraph.com/integration/browser_extension">
                                 <button className="btn btn-secondary" type="button">
                                     <OpenInAppIcon className="material-icons" />
-                                    Install Browser Extension
+                                    Install browser extension
                                 </button>
                             </a>
                         )}

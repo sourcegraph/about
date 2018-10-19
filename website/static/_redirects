@@ -52,7 +52,7 @@
 /docs/config/custom-domain                                                                https://docs.sourcegraph.com/admin/url                                                            301
 /docs/config/tlsssl                                                                       https://docs.sourcegraph.com/admin/tls_ssl                                                        301
 /docs/server/update                                                                       https://docs.sourcegraph.com/admin/updates                                                        301
-/docs/config/monitoring-and-tracing                                                       https://docs.sourcegraph.com/admin/monitorg-and-tracing                                           301
+/docs/config/monitoring-and-tracing                                                       https://docs.sourcegraph.com/admin/monitoring-and-tracing                                           301
 /docs/config/organizations                                                                https://docs.sourcegraph.com/user/organizations                                                   301
 /docs/config/federation                                                                   https://docs.sourcegraph.com/admin/federation                                                     301
 /docs/extensions                                                                          https://docs.sourcegraph.com/extensions                                                           301

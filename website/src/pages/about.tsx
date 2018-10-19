@@ -51,7 +51,7 @@ export default class About extends React.Component<any, any> {
                                 <div className="row">
                                     <div className="col-md-12">
                                         <h1 className="mb-0">
-                                            Master Plan
+                                            Master plan
                                             <br />
                                         </h1>
                                         <hr />
@@ -310,7 +310,7 @@ export default class About extends React.Component<any, any> {
                         <div className="about__founders">
                             <div className="container">
                                 <h1>
-                                    Advisors and Supporters
+                                    Advisors and supporters
                                     <br />
                                 </h1>
                                 <div className="about__founders-advisors">
