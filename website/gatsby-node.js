@@ -19,9 +19,6 @@ exports.createPages = ({ actions, graphql }) => {
   return new Promise((resolve, reject) => {
     const PostTemplate = path.resolve(`src/templates/blogPostTemplate.tsx`)
     const ContentTemplate = path.resolve(`src/templates/contentTemplate.tsx`)
-    const ServerDocsTemplate = path.resolve(`src/templates/serverDocsTemplate.tsx`)
-    const DataCenterDocsTemplate = path.resolve(`src/templates/dataCenterDocsTemplate.tsx`)
-    const IntegrationsDocsTemplate = path.resolve(`src/templates/integrationsDocsTemplate.tsx`)
 
     resolve(
       graphql(
@@ -54,23 +51,7 @@ exports.createPages = ({ actions, graphql }) => {
           if (node.fileAbsolutePath) {
             const slug = node.fields.slug
             const absPath = node.fileAbsolutePath
-            if (absPath.includes('/docs/server/')) {
-              createPage({
-                path: slug,
-                component: ServerDocsTemplate,
-                context: {
-                  fileSlug: slug,
-                },
-              })
-            } else if (absPath.includes('/docs/integrations/')) {
-              createPage({
-                path: slug,
-                component: IntegrationsDocsTemplate,
-                context: {
-                  fileSlug: slug,
-                },
-              })
-            } else if (
+            if (
               (absPath.includes('/blogposts') || absPath.includes('/projects')) &&
               node.frontmatter.published === true
             ) {

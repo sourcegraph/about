@@ -79,7 +79,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                             </li>
                         </ul>
                         {!(this.props.isHome || this.props.isProductPage) && (
-                            <a href="/docs/features/browser-extension/">
+                            <a href="https://docs.sourcegraph.com/integration/browser_extension">
                                 <button className="btn btn-secondary" type="button">
                                     <OpenInAppIcon className="material-icons" />
                                     Install Browser Extension
@@ -90,9 +90,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                 </div>
             </nav>
         )
-    }
-    private serverLinkClicked = () => {
-        eventLogger.trackServerLinkClicked('header')
     }
     private aboutClicked = () => {
         eventLogger.trackAboutClicked('header')

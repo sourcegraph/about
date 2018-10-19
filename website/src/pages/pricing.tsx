@@ -43,7 +43,7 @@ export default class Pricing extends React.Component<any, any> {
                                             <a
                                                 className="btn btn-deploy"
                                                 role="button"
-                                                href="/docs"
+                                                href="https://docs.sourcegraph.com"
                                                 onClick={this.trackInstallSourcegraphServerClicked}
                                             >
                                                 Deploy Sourcegraph
