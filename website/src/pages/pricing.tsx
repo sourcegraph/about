@@ -205,7 +205,10 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="col-xl-12 lg-12 pricing-true-up-notice">
                                         If you exceed your licensed users over the term of your subscription,
                                         Sourcegraph will true up your license at your next renewal. Learn more about{' '}
-                                        <a href="https://docs.sourcegraph.com/admin/subscriptions">Sourcegraph's true-up pricing model</a>.
+                                        <a href="https://docs.sourcegraph.com/admin/subscriptions">
+                                            Sourcegraph's true-up pricing model
+                                        </a>
+                                        .
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +332,10 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             Code intelligence for all languages (
-                                            <a href="https://docs.sourcegraph.com/extensions/language_servers" target="_blank">
+                                            <a
+                                                href="https://docs.sourcegraph.com/extensions/language_servers"
+                                                target="_blank"
+                                            >
                                                 learn more
                                             </a>
                                             )
@@ -613,7 +619,10 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             External database (
-                                            <a href="https://docs.sourcegraph.com/admin/external_database" target="_blank">
+                                            <a
+                                                href="https://docs.sourcegraph.com/admin/external_database"
+                                                target="_blank"
+                                            >
                                                 learn more
                                             </a>
                                             )
@@ -661,7 +670,10 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             Logging and monitoring for your Sourcegraph instance (
-                                            <a href="https://docs.sourcegraph.com/admin/monitorg-and-tracing" target="_blank">
+                                            <a
+                                                href="https://docs.sourcegraph.com/admin/monitorg-and-tracing"
+                                                target="_blank"
+                                            >
                                                 learn more
                                             </a>
                                             )
