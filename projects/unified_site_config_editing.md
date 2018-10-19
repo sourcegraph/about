@@ -12,3 +12,14 @@ In our Docker deployment, you can currently edit the configuration directly in o
 TODO: This work lays the foundation for having the ability to perform automatic schema migrations for your configuration, as well as integrating better secrets management 
 
 TODO: what is the migration path?
+
+<!--
+
+Other notes:
+
+Site config updating is clunky (Nov 5 release)
+K8s deployment can’t edit site config from UI
+Critical site config that can break the app (e.g. app url, authentication, tls config, etc.) stored elsewhere. Non critical site config is editable in UI (both k8s deploy and Server).
+Solves: secrets in site config are sketchy by storing info in db to give us ability to control access
+
+-->
