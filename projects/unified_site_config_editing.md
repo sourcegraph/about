@@ -13,6 +13,16 @@ TODO: This work lays the foundation for having the ability to perform automatic 
 
 TODO: what is the migration path?
 
+
+## Rough plan
+
+- Have all non-`frontend` services query `frontend` for the current site config over the network
+  - Can remove site config `configMaps` from all deployments besides `frontend`
+- Need to land both of these at the same time 
+  - Have `frontend` store the site configuration in postgres
+    - Allows us to remove site config `configMap` completely from all deployments
+  - Move "dangerous" site config options into separate management interface
+    - See categorized (safe/dangerous) options list [here](https://docs.google.com/document/d/1QxXHWLm4gcSSIzsO734TXeJ5A_QlISOZ1slCvXaRydU/edit#)
 <!--
 
 Other notes:
