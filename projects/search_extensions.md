@@ -24,6 +24,8 @@ Add documentation to:
 - Search query syntax documentation page
 - Review the tour and overview docs to see if this simplifies those
 - Sourcegraph.d.ts in sourcegraph-extension-api
+
+NOTE: We would like to make it such that this transformation also occurs on the backend, but we may not be able to finish this by the next release.
 -->
 
 ## Building Sourcegraph extensions for search
