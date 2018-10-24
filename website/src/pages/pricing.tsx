@@ -140,10 +140,10 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a
                                                             className="btn btn-pricing btn-lg justify-content-center text-center"
                                                             role="button"
-                                                            href="/contact/sales"
-                                                            onClick={this.trackContactUsClickedButton}
+                                                            href="https://sourcegraph.com/user/subscriptions/new"
+                                                            onClick={this.trackBuyEnterpriseStarterButtonClicked}
                                                         >
-                                                            Contact us
+                                                            Buy
                                                         </a>
                                                     </div>
                                                 </div>
@@ -190,10 +190,10 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a
                                                             className="btn btn-pricing btn-lg justify-content-center text-center"
                                                             role="button"
-                                                            href="/contact/sales"
-                                                            onClick={this.trackContactUsClickedButton}
+                                                            href="https://sourcegraph.com/user/subscriptions/new"
+                                                            onClick={this.trackBuyEnterpriseButtonClicked}
                                                         >
-                                                            Contact us
+                                                            Buy
                                                         </a>
                                                     </div>
                                                 </div>
@@ -765,7 +765,7 @@ export default class Pricing extends React.Component<any, any> {
                                             className="btn btn-secondary"
                                             role="button"
                                             href="/contact/sales"
-                                            onClick={this.trackContactUsClickedButton}
+                                            onClick={this.trackContactUsButtonClicked}
                                         >
                                             Contact us
                                         </a>
@@ -780,9 +780,15 @@ export default class Pricing extends React.Component<any, any> {
     }
 
     private trackInstallSourcegraphServerClicked = () => {
-        eventLogger.trackContactUsCTAClicked('ContactUs')
+        eventLogger.trackContactUsCTAClicked('PricingPage')
     }
-    private trackContactUsClickedButton = () => {
-        eventLogger.trackContactUsCTAClicked('ContactUsButton')
+    private trackBuyEnterpriseStarterButtonClicked = () => {
+        eventLogger.trackBuyEnterpriseStarterButtonClicked()
+    }
+    private trackBuyEnterpriseButtonClicked = () => {
+        eventLogger.trackBuyEnterpriseButtonClicked()
+    }
+    private trackContactUsButtonClicked = () => {
+        eventLogger.trackContactUsCTAClicked('PricingPage')
     }
 }
