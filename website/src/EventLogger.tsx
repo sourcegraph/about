@@ -169,6 +169,12 @@ class EventLogger {
     public trackContactUsFormSubmitted(): void {
         this.trackEvent('Pages', 'Submit', null, 'ContactUsFormSubmitted', {})
     }
+    public trackBuyEnterpriseStarterButtonClicked(): void {
+        this.trackEvent('Pages', 'Click', null, 'BuyEnterpriseStarterButtonClicked', {})
+    }
+    public trackBuyEnterpriseButtonClicked(): void {
+        this.trackEvent('Pages', 'Click', null, 'BuyEnterpriseButtonClicked', {})
+    }
 
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {
         if (!(window as any).telligent) {
