@@ -25,6 +25,30 @@ TODO: what is the migration path?
     - See categorized (safe/dangerous) options list [here](https://docs.google.com/document/d/1QxXHWLm4gcSSIzsO734TXeJ5A_QlISOZ1slCvXaRydU/edit#)
 <!--
 
+Site config keys that should be ONLY visible and editable in the mgmt console:
+- log
+- appURL
+- tls.letsencrypt
+- tlsCert
+- tlsKey
+- httpToHttpsRedirect
+- httpStrictTransportSecurity
+- useJaeger
+- lightstepAccessToken
+- lightstepProject
+- htmlHeadTop
+- htmlHeadBottom
+- htmlBodyTop
+- htmlBodyBottom
+- licenseKey
+- auth.providers [auth.provider will be removed]
+- auth.allowSignup
+- MAYBE: auth.accessTokens [auth.disableAccessTokens will be removed]
+- auth.public
+[auth.openIDConnect, auth.saml, auth.userIdentityHTTPHeader are deprecated and will be removed]
+- update.channel
+
+
 Other notes:
 
 Site config updating is clunky (Nov 5 release)
