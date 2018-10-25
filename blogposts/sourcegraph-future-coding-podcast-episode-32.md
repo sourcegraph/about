@@ -10,8 +10,6 @@ heroImage: /blog/sourcegraph-future-coding-podcast-episode-32.png
 published: true
 ---
 
-# Sourcegraph on the future of coding podcast episode 32
-
 Our CEO [@sqs (Quinn Slack)](https://twitter.com/sqs) was on the [Future of Coding podcast this week](https://futureofcoding.org/episodes/32) to talk about basic developer human rights, the [Sourcegraph master plan](https://about.sourcegraph.com/plan), and the future of developer tools.
 
 > As a developer, you have these questions you need answered: How do I do this thing in the code? Why is it built this way? Why did this thing break?
