@@ -13,19 +13,19 @@ published: false
 
 # The Sourcegraph string references extension
 
-Sourcegraph extensions at time of writing are still in alpha, but that didn't stop [Loïc Guychard](https://github.com/lguychard) creating an awesome Sourcegraph extension that [searches for string references throughout a repository](https://github.com/lguychard/sourcegraph-string-references).
+Sourcegraph extensions at time of writing are still in alpha, but that didn't stop [Loïc Guychard](https://github.com/lguychard) creating an awesome extension that [searches for string references throughout a repository](https://github.com/lguychard/sourcegraph-string-references).
 
-While our [documentation for Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-docs/) and tooling is always improving (e.g., using `npm init @sourcegraph/extension` to generate the skeleton of an extension), we love it when developers see an opportunity to build something and let nothing get in their way.
+While our [documentation for Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-docs/) and tooling is always improving (e.g., using `npm init @sourcegraph/extension` to generate the skeleton of an extension), we love it when developers see an opportunity to build something and let nothing stand in their way.
 
 ## It started with an idea
 
-Head of Engineering at Sourcegraph [Nick Snyder](https://github.com/nicksnyder) [created an issue on the Sourcegraph extension API](https://github.com/sourcegraph/sourcegraph-extension-api/issues/85) about an extension he wanted to see built.
+Head of Engineering at Sourcegraph [Nick Snyder](https://github.com/nicksnyder), created an [issue on the Sourcegraph extension API](https://github.com/sourcegraph/sourcegraph-extension-api/issues/85) about an extension he wanted to see built.
 
-After some discussion with other Sourcegraph team members in thread, Loïc chimed in, saying "I would like to tackle this!".
+After some discussion with other Sourcegraph team members in the thread, Loïc chimed in, saying "I would like to tackle this!".
 
-Two days later and with a bit of help, his extension is now [published on Sourcegraph.com](https://sourcegraph.com/extensions/lguychard/string-references).
+![Sourcegraph String References Extension](https://raw.githubusercontent.com/lguychard/sourcegraph-string-references/master/demo.gif)
 
-~[Sourcegraph String References Extension](https://raw.githubusercontent.com/lguychard/sourcegraph-string-references/master/demo.gif)
+Two days later, his extension is now [published on Sourcegraph.com](https://sourcegraph.com/extensions/lguychard/string-references) and because of the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension), it also works on GitHub.
 
 ## Sourcegraph is now a platform for you to build the dev tools you've always wanted
 
