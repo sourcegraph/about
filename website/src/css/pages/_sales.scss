@@ -1,17 +1,19 @@
 // contact sales
 .sales {
-    max-width: 96rem;
+    max-width: 72rem;
     padding: 2rem;
     margin: auto auto;
 
     .form-area {
-        width: 100%;
+        @media (min-width: $media-md) {
+            min-width: 28rem;
+        }
     }
 
     // Hubspot form style overrides - child selectors + non-BEM OK
     /* stylelint-disable */
     .form {
-        max-width: 64em;
+        max-width: 56em;
         margin: auto auto;
 
         .hs-form,
@@ -67,11 +69,17 @@
         }
 
         .submitted-message {
-            padding: 3rem;
+            margin: 1rem 0;
+            padding: 2rem;
+            color: $green-9;
+            background-color: $green-1;
+            border-radius: 0.3em;
+            border: 1px solid $green-5;
         }
     }
 
     .panel-area {
+        max-width: 32rem;
         @media (min-width: $media-lg) {
             margin: 3rem 0 3rem 0;
         }
@@ -85,5 +93,14 @@
             border-top: 1px solid $light-9;
             padding-top: 1rem;
         }
+    }
+
+    .logo {
+        max-height: 150px;
+    }
+
+    .subtitle {
+        max-width: 28rem;
+        text-align: center;
     }
 }
