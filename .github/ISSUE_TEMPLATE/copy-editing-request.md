@@ -1,6 +1,6 @@
 ---
-name: Copy Editing Request
-about: For Sourcegraph Engineers. When your content is ready for final editing before
+name: Copy editing request
+about: For Sourcegraph engineers, when your content is ready for final editing before
   publishing
 
 ---
