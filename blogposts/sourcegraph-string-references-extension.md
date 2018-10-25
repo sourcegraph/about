@@ -1,5 +1,5 @@
 ---
-title: Loïc Guychard's Sourcegraph String References Extension
+title: Loïc Guychard's Sourcegraph string references extension
 description: How a developer built a Sourcegraph extension and you can too.
 author: Ryan Blunden, Developer Advocate at Sourcegraph
 publishDate: 2018-10-24T00:00-07:00
