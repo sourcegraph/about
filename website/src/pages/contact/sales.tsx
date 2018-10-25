@@ -28,12 +28,8 @@ export default class Trial extends React.Component<any, any> {
                     <div className="jumbotron text-right dark-7">
                         <div className="row">
                             <div className="sales py-0 d-flex flex-grow flex-column flex-lg-row align-items-center justify-content-around">
-                                <img className="logo" src="/sourcegraph/sourcegraph-mark.png" alt="logo" />
                                 <div>
-                                    <h1 className="subtitle">Try Sourcegraph Enterprise free for 30 days</h1>
-                                    <p className="text-center">
-                                        Sourcegraph is a fast, solid, full-featured code navigation engine.
-                                    </p>
+                                    <h1 className="text-center">Try Sourcegraph Enterprise free for 30 days</h1>
                                 </div>
                             </div>
                         </div>
