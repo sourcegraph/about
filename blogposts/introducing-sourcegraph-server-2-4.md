@@ -16,7 +16,7 @@ Sourcegraph Server gives the power of great code search to every developer at yo
 
 Ready to install or upgrade? **[Install Sourcegraph Server 2.4.](/docs/server)** Existing Sourcegraph Data Center customers can [upgrade](/docs/server/datacenter#upgrading-to-a-new-version-of-sourcegraph) now.
 
-Key highlights of Sourcegraph Server 2.4: 
+Key highlights of Sourcegraph Server 2.4:
 * [Easier installation](#easier-installation)
 * [Free for unlimited repositories and users on a single server](#free-for-unlimited-repositories-and-users-on-a-single-server)
 * [Easier configuration](#easier-configuration)
@@ -30,17 +30,11 @@ Key highlights of Sourcegraph Server 2.4:
 
 We've made it easier than ever to start searching your code with Sourcegraph Server: [see the one-command `docker run` quickstart command](/docs/server).
 
-<div style="padding-bottom:70.9%;height:0;position:relative;overflow:hidden;">
-  
-<img src="/60SecondSetup.gif" class="br2 ba b--light-8 pa2" />
-
-</div>
-
 See the [installation documentation](/docs/server) for more information.
 
 ### Free for unlimited repositories and users on a single server
 
-Code search on Sourcegraph Server is now free on a single server for unlimited repositories and users. As you grow to hundreds or thousands of users and repositories, graduate from the single-server deployment to a highly scalable Kubernetes cluster with [Sourcegraph Data Center](/docs/server/datacenter).   
+Code search on Sourcegraph Server is now free on a single server for unlimited repositories and users. As you grow to hundreds or thousands of users and repositories, graduate from the single-server deployment to a highly scalable Kubernetes cluster with [Sourcegraph Data Center](/docs/server/datacenter).
 
 See our [pricing](/pricing) page for more information.
 
@@ -64,13 +58,13 @@ From here, click **Configuration** in the site admin menu to configure your Sour
 
 See the [configuration documentation](/docs/server/config) for more information, and see the [full configuration options](/docs/server/config/settings).
 
-### Search interface improvements 
+### Search interface improvements
 
-We've introduced a cleaner, more intuitive search interface in Sourcegraph Server 2.4. Saved search scopes appear as buttons on the search homepage, replacing the old scope dropdown. The selected scope is reflected in the search bar as part of the search query.  
+We've introduced a cleaner, more intuitive search interface in Sourcegraph Server 2.4. Saved search scopes appear as buttons on the search homepage, replacing the old scope dropdown. The selected scope is reflected in the search bar as part of the search query.
 
 ### Monitor saved query results
 
-Saved queries are useful for keeping track of important code changes. Now, you can monitor changes in your saved queries on the homepage. Adding a saved query to the homepage shows the current number of results and a graph of the number of results over time. Whether it's lint violations, security vulnerabilities, or hacks, you can now easily monitor changes in your code from the homepage. 
+Saved queries are useful for keeping track of important code changes. Now, you can monitor changes in your saved queries on the homepage. Adding a saved query to the homepage shows the current number of results and a graph of the number of results over time. Whether it's lint violations, security vulnerabilities, or hacks, you can now easily monitor changes in your code from the homepage.
 
 <div class="padding-bottom:69.89%;height:0;position:relative;overflow:hidden;">
 
@@ -79,10 +73,10 @@ Saved queries are useful for keeping track of important code changes. Now, you c
 </div>
 
 ### Diff search
-You can now search over commit diffs using the `type:diff` operator in search queries. This helps developers: 
+You can now search over commit diffs using the `type:diff` operator in search queries. This helps developers:
 * debug issues (“when was the  `parseDocument` function last changed?”)
 * catch issues before they appear (“what open pull requests modify sensitive files?”)
-* find usage examples (“show me a self-contained commit adding a new page to our web app”) 
+* find usage examples (“show me a self-contained commit adding a new page to our web app”)
 
 [See a sample diff search](https://sourcegraph.com/search?q=r:moby/moby+type:diff+MarshalJSON+after:%222+months+ago%22&sq=) on a public repository on Sourcegraph.com.
 
@@ -118,6 +112,6 @@ To go along with diff and commit search, we've added new search filters.
 
 See the [search documentation](/docs/search#query) for all filters and query tokens
 
-### Upgrade today 
+### Upgrade today
 
 **[Install Sourcegraph Server 2.4](/docs/server)** to bring powerful code search to your developers.
