@@ -28,7 +28,7 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <nav className="header navbar navbar-light navbar-expand-md">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
+                    <a className="navbar-brand" href="https://sourcegraph.com/start">
                         <img src="/sourcegraph/logo.svg" alt="logo" />
                     </a>
                     <button
