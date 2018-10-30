@@ -96,22 +96,22 @@ export default class Footer extends React.Component<any, any> {
                                 <input type="checkbox" />
                                 <ul>
                                     <li>
-                                        <Link to="/#search-datacenter" onClick={this.codeSearchClicked}>
+                                        <Link to="https://sourcegraph.com/start#search-datacenter" onClick={this.codeSearchClicked}>
                                             Code Search
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/#intelligence-ntegrations" onClick={this.codeIntelligenceClicked}>
+                                        <Link to="https://sourcegraph.com/start#intelligence-ntegrations" onClick={this.codeIntelligenceClicked}>
                                             Code Intelligence
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/#search-datacenter" onClick={this.dataCenterClicked}>
+                                        <Link to="https://sourcegraph.com/start#search-datacenter" onClick={this.dataCenterClicked}>
                                             Data Center
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/#intelligence-integrations" onClick={this.integrationsClicked}>
+                                        <Link to="https://sourcegraph.com/start#intelligence-integrations" onClick={this.integrationsClicked}>
                                             Integrations
                                         </Link>
                                     </li>
