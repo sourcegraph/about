@@ -96,36 +96,36 @@ export default class Footer extends React.Component<any, any> {
                                 <input type="checkbox" />
                                 <ul>
                                     <li>
-                                        <Link
-                                            to="https://sourcegraph.com/start#search-datacenter"
+                                        <a
+                                            href="https://sourcegraph.com/start#search-datacenter"
                                             onClick={this.codeSearchClicked}
                                         >
                                             Code Search
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link
-                                            to="https://sourcegraph.com/start#intelligence-ntegrations"
+                                        <a
+                                            href="https://sourcegraph.com/start#intelligence-ntegrations"
                                             onClick={this.codeIntelligenceClicked}
                                         >
                                             Code Intelligence
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link
-                                            to="https://sourcegraph.com/start#search-datacenter"
+                                        <a
+                                            href="https://sourcegraph.com/start#search-datacenter"
                                             onClick={this.dataCenterClicked}
                                         >
                                             Data Center
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link
-                                            to="https://sourcegraph.com/start#intelligence-integrations"
+                                        <a
+                                            href="https://sourcegraph.com/start#intelligence-integrations"
                                             onClick={this.integrationsClicked}
                                         >
                                             Integrations
-                                        </Link>
+                                        </a>
                                     </li>
                                 </ul>
                                 <div className="close--icon">
