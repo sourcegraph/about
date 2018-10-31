@@ -1,4 +1,4 @@
-/																						  https://sourcegraph.com/start																		301								
+/																						  https://sourcegraph.com/start																		301
 
 /blog/sourecgraph-liveblogging-at-gophercon-2018                                          /blog/sourcegraph-liveblogging-at-gophercon-2018                                                  301
 /go/sourcegraph-liveblogging-at-gophercon-2018-go                                         /blog/sourcegraph-liveblogging-at-gophercon-2018                                                  301
@@ -73,3 +73,4 @@
 /docs/config/repositories#bitbucket-server-configuration                                  https://docs.sourcegraph.com/bitbucket_server#syncing-bitbucket-server-repositories               301
 /docs/config/repositories#aws-codecommit-configuration                                    https://docs.sourcegraph.com/integration/aws_codecommit#aws-codecommit-configuration              301
 /docs/config/repositories#github-configuration                                            https://docs.sourcegraph.com/integration/github#syncing-github-repositories                       301
+/docs/migration/oracle-opengrok-to-sourcegraph                                            https://docs.sourcegraph.com/admin/migration/opengrok                                             301
