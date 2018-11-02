@@ -1,4 +1,4 @@
-# Searching dependencies
+# Search dependencies and create custom operators with Sourcegraph Extensions
 
 Sourcegraph's search is getting a lot more powerful and extensible. In addition to [code, commit, and diff search](https://docs.sourcegraph.com/user/search), you can now:
 
@@ -8,15 +8,20 @@ Sourcegraph's search is getting a lot more powerful and extensible. In addition 
 
 In what cases would you want to search for files that import a particular package?
 
-- You want to remove a dependency and want to see all places it's actually called
-- Look for examples in your codebase on how to use a package
-- Deciding which package to use based on how commonly used it is in your codebase
+- You want to remove a dependency and want to see all places it's actually called.
+- Look for examples in your codebase on how to use a package.
+- Deciding which package to use based on how commonly used it is in your codebase.
 
 All these searches work in Sourcegraph itself and [anywhere else you can get a Sourcegraph search box](https://docs.sourcegraph.com/integration).
 
-To use these search operators, enable the extension for the language you want to use.
+To use these search operators, enable the extension for the language you want to use: 
+- [Go](https://sourcegraph.com/extensions/farhan/go-imports-search)
+- [JavaScript/TypeScript](https://sourcegraph.com/extensions/farhan/js-dependency-search)
+- [Python](https://sourcegraph.com/extensions/farhan/python-imports-search)
+- [Java](https://sourcegraph.com/extensions/farhan/java-imports-search)
+- [PHP](https://sourcegraph.com/extensions/farhan/php-imports-search)
 
-Extensions will now also add a "See more usages" link to the end of import statements, which will trigger a search to find all files that use that package.
+These extensions also add a "See more usages" link to the end of import statements, which will trigger a search to find all files that use that package when clicked on.
 
 <!-- TODO:
 Add documentation to:
@@ -35,4 +40,3 @@ Want to build one of these yourself? You can write [Sourcegraph extensions](http
 We added a new extension API:
 
 - `sourcegraph.search.registerQueryTransformer` for defining custom search operators
-
