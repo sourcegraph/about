@@ -9,6 +9,7 @@ Sourcegraph has added [a lot of new features](https://about.sourcegraph.com/blog
   Instead of linking to "HEAD", the button now links to the default branch.
 
 - Search results using index search highlight correctly (https://github.com/sourcegraph/enterprise/issues/11960).
+  We found out there is a small Zoekt bug that returns too many lines when using a searching regex. There is now a workaround to limit the match to one line.
 
 - If the user adds a filter duplicate, their choice of filter name will be shown on the filter chip [user prioritized filter chip name](https://github.com/sourcegraph/sourcegraph/pull/348)
 
@@ -18,7 +19,3 @@ Also some minor UI fixes:
 - The Phabricator icon is now displayed correctly [Display Phabricator Icon correctly](https://github.com/sourcegraph/sourcegraph/pull/340)
 
 You might call this our version of [Project Paper Cuts](https://blog.github.com/2018-08-28-announcing-paper-cuts/)!
-
-## TODO
-
-- Move selected search filters to the front (https://github.com/sourcegraph/sourcegraph/issues/305)
