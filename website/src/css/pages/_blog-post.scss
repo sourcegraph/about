@@ -19,6 +19,9 @@
         p {
             margin: 1rem 0;
         }
+        li > p:first-child, li > p:last-child {
+            margin: 0;
+        }
 
         p + h1,
         ul + h1,
