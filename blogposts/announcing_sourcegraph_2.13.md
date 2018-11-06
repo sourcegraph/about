@@ -16,13 +16,13 @@ Sourcegraph 2.13 ships today, with several improvements:
 
 - Indexed search in the single-node Docker container deployment option (set [`search.index.enabled`](https://docs.sourcegraph.com/admin/site_config/all#search-index-enabled-boolean) to `true` in site configuration)
 - [Whole-file Git blame annotations](https://sourcegraph.com/extensions/sourcegraph/git-extras)
-- New search keywords:
-  - [`go.imports:PACKAGE` for finding Go `import`s](https://sourcegraph.com/extensions/sourcegraph/go-imports-search)
-  - [`js.depends:MODULE` for finding JavaScript/TypeScript `require`s/`import`s](https://sourcegraph.com/extensions/sourcegraph/js-dependency-search)
-  - [`py.imports:PACKAGE` for finding Python `import`s](https://sourcegraph.com/extensions/sourcegraph/python-imports-search) 
-  - [`java.imports:DOTTED_CLASS` for finding Java `import`s](https://sourcegraph.com/extensions/sourcegraph/java-imports-search) 
-  - [`php.imports:DOTTED_CLASS` for finding PHP `import`s](https://sourcegraph.com/extensions/sourcegraph/php-imports-search) 
-  - [`org:GITHUB_ORG` for searching all repsitories in a GitHub organization](https://sourcegraph.com/extensions/sourcegraph/org-search)
+- New search keywords for finding places where a package/module is used:
+  - [`go.imports:PACKAGE`](https://sourcegraph.com/extensions/sourcegraph/go-imports-search)
+  - [`js.depends:MODULE`](https://sourcegraph.com/extensions/sourcegraph/js-dependency-search)
+  - [`py.imports:PACKAGE`](https://sourcegraph.com/extensions/sourcegraph/python-imports-search) 
+  - [`java.imports:DOTTED_CLASS`](https://sourcegraph.com/extensions/sourcegraph/java-imports-search) 
+  - [`php.imports:DOTTED_CLASS`](https://sourcegraph.com/extensions/sourcegraph/php-imports-search) 
+- New [`org:GITHUB_ORG` search keyword](https://sourcegraph.com/extensions/sourcegraph/org-search) to search among a GitHub organization's repositories
 - [Basic code intelligence](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel) for definitions and references using text search heuristics (non-precise, non-compiler-based)
 - [More ways to specify which GitHub and GitHub Enterprise repositories to sync](https://docs.sourcegraph.com/admin/site_config/all#repositoryquery-array)
 - [Sourcegraph extension authoring guide](https://github.com/sourcegraph/sourcegraph-extension-docs)
