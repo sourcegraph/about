@@ -14,7 +14,7 @@ published: true
 
 Sourcegraph 2.13 ships today, with several improvements:
 
-- Indexed search in the single-node Docker container deployment option (set [`search.index.enabled`](https://docs.sourcegraph.com/admin/site_config/all#search-index-enabled-boolean) to `true` in site configuration)
+- [Indexed search](https://docs.sourcegraph.com/admin/search#indexed-search) option for single-node Docker container deployment to speed up searches (previously Enterprise-only, now free and open-source)
 - [Whole-file Git blame annotations](https://sourcegraph.com/extensions/sourcegraph/git-extras)
 - New search keywords for finding places where a package/module is used:
   - [`go.imports:PACKAGE`](https://sourcegraph.com/extensions/sourcegraph/go-imports-search)
