@@ -15,11 +15,11 @@ In what cases would you want to search for files that import a particular packag
 All these searches work in Sourcegraph itself and [anywhere else you can get a Sourcegraph search box](https://docs.sourcegraph.com/integration).
 
 To use these search operators, enable the extension for the language you want to use: 
-- [Go](https://sourcegraph.com/extensions/farhan/go-imports-search)
-- [JavaScript/TypeScript](https://sourcegraph.com/extensions/farhan/js-dependency-search)
-- [Python](https://sourcegraph.com/extensions/farhan/python-imports-search)
-- [Java](https://sourcegraph.com/extensions/farhan/java-imports-search)
-- [PHP](https://sourcegraph.com/extensions/farhan/php-imports-search)
+- [Go](https://sourcegraph.com/extensions/sourcegraph/go-imports-search)
+- [JavaScript/TypeScript](https://sourcegraph.com/extensions/sourcegraph/js-dependency-search)
+- [Python](https://sourcegraph.com/extensions/sourcegraph/python-imports-search)
+- [Java](https://sourcegraph.com/extensions/sourcegraph/java-imports-search)
+- [PHP](https://sourcegraph.com/extensions/sourcegraph/php-namespace-search)
 
 These extensions also add a "See more usages" link to the end of import statements, which will trigger a search to find all files that use that package when clicked on.
 
@@ -39,4 +39,4 @@ Want to build one of these yourself? You can write [Sourcegraph extensions](http
 
 We added a new extension API:
 
-- `sourcegraph.search.registerQueryTransformer` for defining custom search operators
+- `sourcegraph.search.registerQueryTransformer` for defining custom search operators.
