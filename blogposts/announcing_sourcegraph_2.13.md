@@ -15,6 +15,14 @@ published: true
 Sourcegraph 2.13 ships today, with several improvements:
 
 - [Indexed search](https://docs.sourcegraph.com/admin/search#indexed-search) option for single-node Docker container deployment to speed up searches (previously Enterprise-only, now free and open-source)
+- [More ways to specify which GitHub and GitHub Enterprise repositories to sync](https://docs.sourcegraph.com/admin/site_config/all#repositoryquery-array)
+- [In-product documentation at `/help`](https://docs.sourcegraph.com/dev/documentation#sourcegraph-help)
+- [Per-user repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) for GitLab, with more code hosts coming soon [Enterprise]
+- [Support for multiple authentication providers](https://docs.sourcegraph.com/admin/auth) [Enterprise]
+- Many smaller fixes listed in the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#213)
+
+We're also shipping Sourcegraph extensions that add other new features:
+
 - [Whole-file Git blame annotations](https://sourcegraph.com/extensions/sourcegraph/git-extras)
 - New search keywords for finding places where a package/module is used:
   - [`go.imports:PACKAGE`](https://sourcegraph.com/extensions/sourcegraph/go-imports-search)
@@ -24,16 +32,11 @@ Sourcegraph 2.13 ships today, with several improvements:
   - [`php.imports:DOTTED_CLASS`](https://sourcegraph.com/extensions/sourcegraph/php-imports-search) 
 - New [`org:GITHUB_ORG` search keyword](https://sourcegraph.com/extensions/sourcegraph/org-search) to search among a GitHub organization's repositories
 - [Basic code intelligence](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel) for definitions and references using text search heuristics (non-precise, non-compiler-based)
-- [More ways to specify which GitHub and GitHub Enterprise repositories to sync](https://docs.sourcegraph.com/admin/site_config/all#repositoryquery-array)
 - [Sourcegraph extension authoring guide](https://github.com/sourcegraph/sourcegraph-extension-docs)
-- [Per-user repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) (GitLab only, more code hosts coming soon) [Enterprise]
-- [In-product documentation at `/help`](https://docs.sourcegraph.com/dev/documentation#sourcegraph-help)
-- [Support for multiple authentication providers](https://docs.sourcegraph.com/admin/auth) [Enterprise]
-- Many smaller fixes listed in the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#213)
 
-For the features listed above that link to a Sourcegraph extension, visit **User menu > Extensions** on your instance to view and enable them. See [Sourcegraph extensions documentation](https://docs.sourcegraph.com/extensions#usage) for more information.
+To enable these extensions on your Sourcegraph instance, visit **User menu > Extensions**. See [Sourcegraph extensions documentation](https://docs.sourcegraph.com/extensions#usage) for more information.
 
-Ready to get Sourcegraph 2.13? [Install](https://docs.sourcegraph.com/#quickstart) or [update](https://docs.sourcegraph.com/admin/updates) now.
+**Ready to get Sourcegraph 2.13?** [Install](https://docs.sourcegraph.com/#quickstart) or [update](https://docs.sourcegraph.com/admin/updates) now.
 
 ## Thank you
 
@@ -46,7 +49,7 @@ Thank you to the [open-source contributors](https://github.com/sourcegraph/sourc
 - [@yevbar](https://github.com/yevbar): default color theme ([PR #409](https://github.com/sourcegraph/sourcegraph/pull/409))
 - [@ianlopshire](https://github.com/ianlopshire): use external URLs ([PR #269](https://github.com/sourcegraph/sourcegraph/pull/269))
 
-## What's next: Sourcegraph 3.0 (preview)
+## Next up: Sourcegraph 3.0 preview
 
 We're hard at work on the next major release, Sourcegraph 3.0. It will significantly improve language support for code intelligence, simplify deployment and site configuration, improve debuggability of code host integrations, and allow much more extensibility (including searching other types of things, such as GitHub issues and PR comments, rendered documentation, and log data). See the next couple months on the [Sourcegraph product roadmap](https://docs.sourcegraph.com/dev/roadmap#november-2018) for more details.
 
