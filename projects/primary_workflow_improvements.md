@@ -12,12 +12,12 @@ You might call this our version of [Project Paper Cuts](https://blog.github.com/
 - [Search results using index search highlight correctly](https://github.com/sourcegraph/enterprise/issues/11960).
   We found out there is a small Zoekt bug that returns too many lines when using a searching regex. There is now a workaround to limit the match to one line.
 
-- If the user adds a filter duplicate, their choice of filter name will be shown on the filter chip. [user prioritized filter chip name](https://github.com/sourcegraph/sourcegraph/pull/348)
+- If the user adds a filter duplicate, their choice of filter name will be shown on the filter chip: [User prioritized filter chip name](https://github.com/sourcegraph/sourcegraph/pull/348).
 
 - Users could not edit or delete Saved Searches that were saved in the global settings: [Saved Searches issue](https://github.com/sourcegraph/sourcegraph/issues/369). This has now been resolved and Site Admins can edit and delete Saved Searches. Furthermore, Non-Siteadmin users are now restricted from being able to edit or delete Saved Searches configured at the global level.
 
 Also some minor UI fixes:
 
-- The close button in the panel header stays located on the top [Panel header close button fix](https://github.com/sourcegraph/sourcegraph/pull/406)
-- The Phabricator icon is now displayed correctly [Display Phabricator Icon correctly](https://github.com/sourcegraph/sourcegraph/pull/340)
-- The view mode icon now shows the correct option when opening files in code view due to a line number in the URL. [View mode fix](https://github.com/sourcegraph/sourcegraph/pull/622)
+- The close button in the panel header stays located on the top [Panel header close button fix](https://github.com/sourcegraph/sourcegraph/pull/406).
+- The Phabricator icon is now displayed correctly [Display Phabricator Icon correctly](https://github.com/sourcegraph/sourcegraph/pull/340).
+- The view mode icon now shows the correct option when opening files in code view due to a line number in the URL: [View mode fix](https://github.com/sourcegraph/sourcegraph/pull/622).
