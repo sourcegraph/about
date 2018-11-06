@@ -19,7 +19,7 @@ published: false
 
 <!-- TODO(ryan): The sourcegraph-extension-api repository was archived, so the issue link is no longer a good idea to use here. Find a way to rephrase this without needing to link to the issue. -->
 
-A Sourcegrapher, [Nick Snyder (@nicksnyder)](https://github.com/nicksnyder), created an [issue in the Sourcegraph extension API repository](https://github.com/sourcegraph/sourcegraph-extension-api/issues/85) about an extension he wanted to see built.
+A Sourcegrapher, [Nick Snyder (@nicksnyder)](https://github.com/nicksnyder), created an issue in the Sourcegraph extension API repository about an extension he wanted to see built.
 
 After some discussion with other Sourcegraph team members in the thread, Loïc chimed in, saying "I would like to tackle this!".
 
