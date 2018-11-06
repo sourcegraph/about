@@ -31,7 +31,8 @@ We're also shipping Sourcegraph extensions that add other new features:
   - [java.imports:DOTTED_CLASS](https://sourcegraph.com/extensions/sourcegraph/java-imports-search) 
 - New [org:GITHUB_ORG search keyword](https://sourcegraph.com/extensions/sourcegraph/org-search) to search among a GitHub organization's repositories
 - [Basic code intelligence](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel) for definitions and references using text search heuristics (non-precise, non-compiler-based)
-- [Sourcegraph extension authoring guide](https://github.com/sourcegraph/sourcegraph-extension-docs)
+- [More comprehensive Sourcegraph extension documentation](https://docs.sourcegraph.com/extensions)
+  - [Authoring extensions](https://docs.sourcegraph.com/extensions/authoring)
 
 To enable these extensions on your Sourcegraph instance, visit **User menu > Extensions**. See [Sourcegraph extensions documentation](https://docs.sourcegraph.com/extensions#usage) for more information.
 
