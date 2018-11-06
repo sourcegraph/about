@@ -17,7 +17,9 @@ published: false
 
 ## It started with an extension request
 
- A Sourcegrapher, [Nick Snyder (@nicksnyder)](https://github.com/nicksnyder), created an [issue in the Sourcegraph extension API repository](https://github.com/sourcegraph/sourcegraph-extension-api/issues/85) about an extension he wanted to see built.
+<!-- TODO(ryan): The sourcegraph-extension-api repository was archived, so the issue link is no longer a good idea to use here. Find a way to rephrase this without needing to link to the issue. -->
+
+A Sourcegrapher, [Nick Snyder (@nicksnyder)](https://github.com/nicksnyder), created an [issue in the Sourcegraph extension API repository](https://github.com/sourcegraph/sourcegraph-extension-api/issues/85) about an extension he wanted to see built.
 
 After some discussion with other Sourcegraph team members in the thread, Loïc chimed in, saying "I would like to tackle this!".
 
@@ -27,4 +29,4 @@ Two days later, his extension is now [published on Sourcegraph.com](https://sour
 
 ## Want to build an extension?
 
-[View the list of extension requests](https://github.com/sourcegraph/sourcegraph-extension-api/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aext-request+) and [check out the extension authoring documentation](https://github.com/sourcegraph/sourcegraph-extension-docs/).
+[View the list of extension requests](https://github.com/sourcegraph/sourcegraph/labels/extension-request) and [check out the extension authoring documentation](https://github.com/sourcegraph/sourcegraph-extension-docs).

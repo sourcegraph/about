@@ -47,7 +47,7 @@ Other projects focused on internal improvements:
 
 There are even more promising and ambitious projects that we are continuing to work on.
 
-One of these (experimental) projects is [Sourcegraph extension API](https://github.com/sourcegraph/sourcegraph-extension-api). Sourcegraph extensions are like editor extensions, but they will work everywhere developers look at code (GitHub code files and PRs, other code hosts, Sourcegraph, multiple editors, etc.). This means important information can be available everywhere developers read or write code.
+One of these (experimental) projects is [Sourcegraph extension API](https://docs.sourcegraph.com/extensions). Sourcegraph extensions are like editor extensions, but they will work everywhere developers look at code (GitHub code files and PRs, other code hosts, Sourcegraph, multiple editors, etc.). This means important information can be available everywhere developers read or write code.
 
 Chris, Farhan, and Quinn have already built a few working Sourcegraph extensions, including one that decorates code with coverage information provided by [Codecov](https://codecov.io/) when viewing code on Sourcegraph or on GitHub via [Sourcegraph for your browser](https://about.sourcegraph.com/product/browser).
 

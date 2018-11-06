@@ -35,7 +35,7 @@ Ready to install or upgrade? [Get Sourcegraph for yourself (to get started)](/) 
 ### Changed
 
 - Reduced the size of in-memory data structures used for storing search results. This should reduce the backend memory usage of large result sets.
-- Code intelligence is now provided by [Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api). The extension for each language in the site configuration `langservers` property is automatically enabled.
+- Code intelligence is now provided by [Sourcegraph extensions](https://docs.sourcegraph.com/extensions). The extension for each language in the site configuration `langservers` property is automatically enabled.
 - Support for multiple authentication providers is now enabled by default. To disable it, set the `experimentalFeatures.multipleAuthProviders` site config option to `"disabled"`. This only applies to Sourcegraph Enterprise.
 - When using the `http-header` auth provider, valid auth cookies (from other auth providers that are currently configured or were previously configured) are now respected and will be used for authentication. These auth cookies also take precedence over the `http-header` auth. Previously, the `http-header` auth took precedence.
 - Bitbucket Server username configuration is now used to clone repositories if the Bitbucket Server API does not set a username.

@@ -22,12 +22,7 @@ With code discussions, you can:
 
 > **Note:** For now, you must be signed into Sourcegraph.com to view and use code discussions.
 
-On our [open-source code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph), discuss the implementation or why we chose certain usage patterns:
-
-- [example: providing feedback about our Sourcegraph extension API](https://sourcegraph.com/github.com/sourcegraph/sourcegraph-extension-api/-/blob/src/sourcegraph.d.ts#L1-2&tab=discussions&threadID=28)
-- [example: asking questions about a pattern used in one of our open-source projects](https://sourcegraph.com/github.com/sourcegraph/sourcegraph-extension-api/-/blob/src/util.ts#L1-5&tab=discussions&threadID=29)
-
-On our [product roadmap](https://sourcegraph.com/github.com/sourcegraph/about), influence what we’re building by giving us feedback (see more about our [open product](about-repository.md) approach):
+On our [open-source code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph), discuss the implementation or why we chose certain usage patterns. On our [product roadmap](https://sourcegraph.com/github.com/sourcegraph/about), influence what we’re building by giving us feedback (see more about our [open product](about-repository.md) approach):
 
 - [example: providing feedback about Sourcegraph's code host integration](https://sourcegraph.com/github.com/sourcegraph/about/-/blob/projects/sourcegraph-for-gitlab.md?view=code#L26-29&tab=discussions&threadID=27)
 - [example: providing feedback about Sourcegraph's planning process](https://sourcegraph.com/github.com/sourcegraph/about/-/blob/README.md?view=code#tab=discussions&threadID=26)

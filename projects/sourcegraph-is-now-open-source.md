@@ -17,7 +17,7 @@ Sourcegraph development is now open source (Apache License) at [github.com/sourc
 * Submit PRs to the [Sourcegraph open-source project](https://github.com/sourcegraph/sourcegraph)
 * See, discuss, and propose changes to the work-in-progress [product roadmap](https://github.com/sourcegraph/about/tree/master/projects)
 * Add and improve [documentation](https://github.com/sourcegraph/about)
-* [Build Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api) to enhance viewing/reviewing code on both Sourcegraph and GitHub alike
+* [Build Sourcegraph extensions](https://docs.sourcegraph.com/extensions) to enhance viewing/reviewing code on both Sourcegraph and GitHub alike
 
 We opened up Sourcegraph to bring code search and intelligence to more developers and developer ecosystems—and to help us realize the [Sourcegraph master plan](/plan):
 

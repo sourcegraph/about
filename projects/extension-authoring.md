@@ -10,7 +10,7 @@ heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a93
 published: true
 ---
 
-We’re happy to announce that [Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api) are ready for early adopters to start writing their own extensions.
+We’re happy to announce that [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) are ready for early adopters to start writing their own extensions.
 
 Sourcegraph extensions allow you to extend code hosts like GitHub in the same way that editor extensions allow you to extend editors. Once you write an extension, it runs anywhere you see code (e.g. GitHub).
 

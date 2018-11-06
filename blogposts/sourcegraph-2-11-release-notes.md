@@ -50,9 +50,9 @@ By default, Sourcegraph polls code hosts to keep repository contents up to date.
 
 ## Sourcegraph Extensions (Alpha): Show Info from Other Tools in Code and Reviews
 
-We're also excited to announce the alpha release of [Sourcegraph extensions](https://github.com/sourcegraph/sourcegraph-extension-api), a new way to enhance viewing and reviewing code in all of your favorite tools, starting with [Codecov](https://codecov.io) test coverage overlays on GitHub and Sourcegraph.
+We're also excited to announce the alpha release of [Sourcegraph extensions](https://docs.sourcegraph.com/extensions), a new way to enhance viewing and reviewing code in all of your favorite tools, starting with [Codecov](https://codecov.io) test coverage overlays on GitHub and Sourcegraph.
 
-More Sourcegraph extensions will be released soon that overlay information (from popular 3rd-party dev tools) on GitHub, Sourcegraph, etc., related to logging, monitoring, performance, linting, profiling, security, etc. [Learn more and start using Sourcegraph extensions.](https://github.com/sourcegraph/sourcegraph-extension-api#readme)
+More Sourcegraph extensions will be released soon that overlay information (from popular 3rd-party dev tools) on GitHub, Sourcegraph, etc., related to logging, monitoring, performance, linting, profiling, security, etc. [Learn more and start using Sourcegraph extensions.](https://docs.sourcegraph.com/extensions)
 
 Here's what the Codecov extension for Sourcegraph looks like, running on GitHub and adding test coverage overlays (as green/yellow/red line background colors):
 
