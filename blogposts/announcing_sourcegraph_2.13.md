@@ -29,7 +29,6 @@ We're also shipping Sourcegraph extensions that add other new features:
   - [js.depends:MODULE](https://sourcegraph.com/extensions/sourcegraph/js-dependency-search)
   - [py.imports:PACKAGE](https://sourcegraph.com/extensions/sourcegraph/python-imports-search) 
   - [java.imports:DOTTED_CLASS](https://sourcegraph.com/extensions/sourcegraph/java-imports-search) 
-  - [php.imports:DOTTED_CLASS](https://sourcegraph.com/extensions/sourcegraph/php-imports-search) 
 - New [org:GITHUB_ORG search keyword](https://sourcegraph.com/extensions/sourcegraph/org-search) to search among a GitHub organization's repositories
 - [Basic code intelligence](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel) for definitions and references using text search heuristics (non-precise, non-compiler-based)
 - [Sourcegraph extension authoring guide](https://github.com/sourcegraph/sourcegraph-extension-docs)
