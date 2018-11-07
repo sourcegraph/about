@@ -14,12 +14,21 @@ TODO: This work lays the foundation for having the ability to perform automatic 
 ## Rough plan
 
 [X] Have all non-`frontend` services query `frontend` for the current site config over the network
-  [ ] Can remove site config `configMaps` from all deployments besides `frontend`
-[ ] Need to land both of these at the same time 
-  [ ] Have `frontend` store the site configuration in postgres
-    [ ] Allows us to remove site config `configMap` completely from all deployments
-  [ ] Move "dangerous" site config options into separate management interface
-  
+  [X] Can remove site config `configMaps` from all deployments besides `frontend`
+1. @geoffrey Break up the schema into separate schema.SiteConfiguration AND schema.DangerousConfiguration
+2. @slimsag Update pkg/conf to use a unified UnifiedSiteConfiguration type which contains schema.SiteConfiguration AND schema.DangerousConfiguration and OtherConfiguration
+    - Update pkg/conf call sites to reference new `conf.Get().Dangerous` fields
+    - Figure out how to update defaults for the site configuration (inside of init we do this in some locations?)
+    - cmd/server creates a default site config file, this will need to be changed to a DB call somehow
+- @geoffrey Create a DB layer for storing and fetching the site config and dangerous config (using strings to retain whitespace/comments)
+- @geoffrey Implement conf.UpdateDangerousConfiguration (what Quinn's management console will call)
+- @sqs Management console UI
+- @geoffrey Deploy management console as a separate service (creating binary, docker image, Kubernetes deployment yaml, etc)
+
+Follow ups after 3.0 preview:
+
+- Ensure that cmd/server tries to internally restart the frontend process (may die, user will fix via mgmt console, then needs to try to restart itself)
+- Add restarting logic to kill frontend pods/process when options that require restart are changed in mgmt console
 <!--
 
 Site config keys that should be ONLY visible and editable in the mgmt console:
