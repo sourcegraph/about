@@ -71,6 +71,7 @@ export default class Pricing extends React.Component<any, any> {
                                                     <div className="col-12 user-pricing">
                                                         <h2>Free</h2>
                                                         <h3>&nbsp;</h3>
+                                                        <h4>Made for developers, priced for everyone</h4>
                                                     </div>
                                                 </div>
                                                 <div className="row">
@@ -119,6 +120,9 @@ export default class Pricing extends React.Component<any, any> {
                                                     <div className="col-12 user-pricing">
                                                         <h2>$4</h2>
                                                         <h3>/user /month</h3>
+                                                        <h4>
+                                                            Starts at $10 one-time for the first <nobr>10 users</nobr>
+                                                        </h4>
                                                     </div>
                                                 </div>
                                                 <div className="row">
@@ -160,6 +164,7 @@ export default class Pricing extends React.Component<any, any> {
                                                     <div className="col-12 user-pricing">
                                                         <h2>$19</h2>
                                                         <h3>/user /month</h3>
+                                                        <h4>Empowering developers company wide</h4>
                                                     </div>
                                                 </div>
                                                 <div className="row">
