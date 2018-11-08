@@ -13,17 +13,17 @@ TODO: This work lays the foundation for having the ability to perform automatic 
 
 ## Rough plan
 
-[X] Have all non-`frontend` services query `frontend` for the current site config over the network
-  [X] Can remove site config `configMaps` from all deployments besides `frontend`
-[x] @geoffrey Break up the schema into separate schema.SiteConfiguration AND schema.DangerousConfiguration
-[ ] @slimsag Update pkg/conf to use a unified UnifiedSiteConfiguration type which contains schema.SiteConfiguration AND schema.DangerousConfiguration and OtherConfiguration
+- [X] Have all non-`frontend` services query `frontend` for the current site config over the network
+  - [X] Can remove site config `configMaps` from all deployments besides `frontend`
+- [x] @geoffrey Break up the schema into separate schema.SiteConfiguration AND schema.DangerousConfiguration
+- [ ] @slimsag Update pkg/conf to use a unified UnifiedSiteConfiguration type which contains schema.SiteConfiguration AND schema.DangerousConfiguration and OtherConfiguration
     - Update pkg/conf call sites to reference new `conf.Get().Dangerous` fields
     - Figure out how to update defaults for the site configuration (inside of init we do this in some locations?)
     - cmd/server creates a default site config file, this will need to be changed to a DB call somehow
-[X] @geoffrey Create a DB layer for storing and fetching the site config and dangerous config (using strings to retain whitespace/comments)
-[X] @geoffrey Implement conf.UpdateDangerousConfiguration (what Quinn's management console will call)
-[ ] @sqs Management console UI
-[ ] @geoffrey Deploy management console as a separate service (creating binary, docker image, Kubernetes deployment yaml, etc). _Waiting on above parts for full implementation._
+- [X] @geoffrey Create a DB layer for storing and fetching the site config and dangerous config (using strings to retain whitespace/comments)
+- [X] @geoffrey Implement conf.UpdateDangerousConfiguration (what Quinn's management console will call)
+- [ ] @sqs Management console UI
+- [ ] @geoffrey Deploy management console as a separate service (creating binary, docker image, Kubernetes deployment yaml, etc). *Waiting on above parts for full implementation, but [here is a WIP PR](https://github.com/sourcegraph/deploy-sourcegraph/pull/140).*
 
 Follow ups after 3.0 preview:
 
