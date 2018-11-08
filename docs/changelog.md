@@ -8,6 +8,81 @@ permalink: changelog
 
 All notable changes to Sourcegraph Server and Data Center are documented in this file.
 
+## 2.13.2
+
+### Fixed
+
+- Fixed an issue where Sourcegraph would try to fetch more than the allowed number of repositories from AWS CodeCommit.
+
+## 2.13.1
+
+### Changed
+
+- The timeout when running `git ls-remote` to determine if a remote url is cloneable has been increased from 5s to 30s.
+- Git commands now use [version 2 of the Git wire protocol](https://opensource.googleblog.com/2018/05/introducing-git-protocol-version-2.html), which should speed up certain operations (e.g. `git ls-remote`, `git fetch`) when communicating with a v2 enabled server.
+
+## 2.13.0
+
+### Added
+
+- A new site config option `search.index.enabled` allows toggling on indexed search.
+- Search now uses [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) that register `queryTransformer`s.
+- GitLab repository permissions are now supported. To enable this, you will need to set the `authz`
+  field in the `GitLabConnection` configuration object and ensure that the access token set in the
+  `token` field has both `sudo` and `api` scope.
+
+### Changed
+
+- When the `DEPLOY_TYPE` environment variable is incorrectly specified, Sourcegraph now shuts down and logs an error message.
+- The `experimentalFeatures.canonicalURLRedirect` site config property now defaults to `enabled`. Set it to `disabled` to disable redirection to the `appURL` from other hosts.
+- Updating `maxReposToSearch` site config no longer requires a server restart to take effect.
+- The update check page no longer shows an error if you are using an insiders build. Insiders builds will now notify site administrators that updates are available 40 days after the release date of the installed build.
+- The `github.repositoryQuery` site config property now accepts arbitrary GitHub repository searches.
+
+### Fixed
+
+- The user account sidebar "Password" link (to the change-password form) is now shown correctly.
+- Fixed an issue where GitHub rate limits were underutilized if the remaining
+  rate limit dropped below 150.
+- Fixed an issue where GraphQL field `elapsedMilliseconds` returned invalid value on empty searches
+- Editor extensions now properly search the selection as a literal string, instead of incorrectly using regexp.
+- Fixed a bug where editing and deleting global saved searches was not possible.
+- In index search, if the search regex produces multiline matches, search results are still processed per line and highlighted correctly.
+- Go-To-GitHub and Go-To-GitLab buttons now link to the right branch, line and commit range.
+- Go-to-GitHub button links to default branch when no rev is given.
+- The close button in the panel header stays located on the top.
+- The Phabricator icon is now displayed correctly.
+- The view mode button in the BlobPage now shows the correct view mode to switch to.
+
+### Removed
+
+- The experimental feature flag to disable the new repo update scheduler has been removed.
+- The `experimentalFeatures.configVars` feature flag was removed.
+- The `experimentalFeatures.multipleAuthProviders` feature flag was removed because the feature is now always enabled.
+- The following deprecated auth provider configuration properties were removed: `auth.provider`, `auth.saml`, `auth.openIDConnect`, `auth.userIdentityHTTPHeader`, and `auth.allowSignup`. Use `auth.providers` for all auth provider configuration. (If you were still using the deprecated properties and had no `auth.providers` set, all access to your instance will be rejected until you manually set `auth.providers`.)
+- The deprecated site configuration properties `search.scopes` and `settings` were removed. Define search scopes and settings in global settings in the site admin area instead of in site configuration.
+- The `pendingContents` property has been removed from our GraphQL schema.
+- The **Explore** page was replaced with a **Repositories** search link in the top navigation bar.
+
+## 2.12.3
+
+### Fixed
+
+- Fixed an error that prevented users without emails from submitting satisfaction surveys.
+
+## 2.12.2
+
+### Fixed
+
+- Fixed an issue where private GitHub Enterprise repositories were not fetched.
+
+## 2.12.1
+
+### Fixed
+
+- We use GitHub's REST API to query affliated repositories. This API has wider support on older GitHub enterprise versions.
+- Fixed an issue that prevented users without email addresses from signing in (https://github.com/sourcegraph/sourcegraph/issues/426).
+
 ## 2.12.0
 
 ### Changed
