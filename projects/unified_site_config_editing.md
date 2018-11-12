@@ -22,7 +22,7 @@ TODO: This work lays the foundation for having the ability to perform automatic 
     - cmd/server creates a default site config file, this will need to be changed to a DB call somehow
 - [X] @geoffrey Create a DB layer for storing and fetching the site config and dangerous config (using strings to retain whitespace/comments)
 - [X] @geoffrey Implement conf.UpdateDangerousConfiguration (what Quinn's management console will call)
-- [ ] @sqs Management console UI
+- [ ] @geoffrey Management console UI
 - [ ] @geoffrey Deploy management console as a separate service (creating binary, docker image, Kubernetes deployment yaml, etc). *Waiting on above parts for full implementation, but [here is a WIP PR](https://github.com/sourcegraph/deploy-sourcegraph/pull/140).*
 
 Follow ups after 3.0 preview:
