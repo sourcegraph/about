@@ -1,5 +1,7 @@
 # Unified site config editing and management console
 
+NOTE: This has not yet been updated to reflect the changes in https://github.com/sourcegraph/sourcegraph/issues/965. That issue is canonical.
+
 Sourcegraph 3.0 improves and unifies the process for configuring Sourcegraph in our Docker and Kubernetes deployments. 
 
 Sourcegraph 3.0 adds a failsafe management console to edit critical configuration options. Before, all site configuration was a single JSON file. This included innocuous options like adding a GitHub token, and dangerous options like TLS_CERT that could potentially lock you out of your server. We’re separating these dangerous options in a new management console that’s available even if you misconfigure your instance. Right now, the managment console's editor is a simple plain-text one (plain monospace font editor, save button, warning banner for syntax+schema errors). We will upgrade it to a VSCode setting's UI-like interface in a future release. 
