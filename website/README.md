@@ -36,13 +36,19 @@ published: boolean
 ---
 ```
 
-Blogposts will appear on our site if published is set to true.
+Blog posts are visible on if published is set to `true`.
 
 **Important:** when creating hyperlinks to pages within https://about.sourcegraph.com, never link with the base URL https://about.sourcegraph.com.
 
 Correct: \[example\]\(/example)
 
 Incorrect: \[example\]\(https://about.sourcegraph.com/example).
+
+### Blog post images
+
+Blog post images (both hero and inline) belong in the `/website/static/blog/` directory, and the path to the image in your post is `/blog/your-image.png`.
+
+Images should be sized and compressed appropriately to optimize the file size without noticeably degrading the image quality. [ImageOptim](https://imageoptim.com/) is a good (and free) image compresion tool.
 
 ### Previewing blog post drafts
 
