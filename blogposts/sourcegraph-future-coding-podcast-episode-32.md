@@ -14,7 +14,7 @@ Our CEO [@sqs (Quinn Slack)](https://twitter.com/sqs) was on the [Future of Codi
 
 > As a developer, you have these questions you need answered: How do I do this thing in the code? Why is it built this way? Why did this thing break?
 
-> There are a lot of developers who've never seen what a good code search tool can do for you. They might search inside their editor, but they're not benefiting from code search.
+> There are a lot of developers who've never seen what a good code search tool can do for you. They might search inside their editor, but they're not benefiting from code search!
 
 > We're really building a brand new product that most developers do not have a ton of experience with, but that really clicks for them quickly.
 
