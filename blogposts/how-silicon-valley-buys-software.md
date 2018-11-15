@@ -8,7 +8,7 @@ tags: [
 ]
 slug: how-silicon-valley-buys-software
 heroImage: /blog/xkcd-is_it_worth_the_time_2x.png
-published: true
+published: false
 ---
 
 <img src="/blog/xkcd-is_it_worth_the_time_2x.png">
