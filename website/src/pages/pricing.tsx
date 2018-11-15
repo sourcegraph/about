@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
@@ -121,7 +122,8 @@ export default class Pricing extends React.Component<any, any> {
                                                         <h2>$4</h2>
                                                         <h3>/user /month</h3>
                                                         <h4>
-                                                            Starts at $10 one-time for the first <nobr>10 users</nobr>
+                                                            Starts at $10 one-time for the first{' '}
+                                                            <span className="text-nowrap">10 users</span>
                                                         </h4>
                                                     </div>
                                                 </div>
@@ -192,14 +194,14 @@ export default class Pricing extends React.Component<any, any> {
                                                         </a>
                                                     </div>
                                                     <div className="col-12 contact">
-                                                        <a
+                                                        <Link
                                                             className="btn btn-pricing btn-lg justify-content-center text-center"
                                                             role="button"
-                                                            href="https://sourcegraph.com/user/subscriptions/new"
+                                                            to="/contact/sales/"
                                                             onClick={this.trackBuyEnterpriseButtonClicked}
                                                         >
-                                                            Buy
-                                                        </a>
+                                                            Free trial
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>
