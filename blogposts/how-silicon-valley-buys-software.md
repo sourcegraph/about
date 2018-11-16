@@ -25,7 +25,7 @@ This same analysis serves as a convenient way to evaluate the tradeoffs of pursu
 
 <img src="/blog/sensitivity-Sourcegraph-value-add.png">
 
-A user can find their internal numbers or estimates on the two axes, and see how much value they get from Sourcegraph. If that number is <span style="color:red">red</span>, then they little reason to purchase our [Enterprise Starter](/pricing) tier (which costs $4/user/month). Similarly, if it is <span style="color:green">green</span>, they can easily justify deploying our high-availability [Enterprise](/pricing) tier (at $19/user/month). 
+A user can find their internal numbers or estimates on the two axes, and see how much value they get from Sourcegraph. If that number is <span style="color:red">red</span>, then they have little reason to purchase our [Enterprise Starter](/pricing) tier (which costs $4/user/month). Similarly, if it is <span style="color:green">green</span>, they can easily justify deploying our high-availability [Enterprise](/pricing) tier (at $19/user/month). 
 
 This is however, a crude and incomplete way to measure Sourcegraph's value, for a number of reasons:
 
