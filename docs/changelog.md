@@ -12,7 +12,7 @@ All notable changes to Sourcegraph are documented in this file.
 
 ### Changed
 
-- - The default for `experimentalFeatures.canonicalURLRedirect` in site config was changed back to `disabled` (to avoid [#807](https://github.com/sourcegraph/sourcegraph/issues/807)).
+- The default for `experimentalFeatures.canonicalURLRedirect` in site config was changed back to `disabled` (to avoid [#807](https://github.com/sourcegraph/sourcegraph/issues/807)).
 
 ## 2.13.3
 
