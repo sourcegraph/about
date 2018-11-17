@@ -8,6 +8,12 @@ permalink: changelog
 
 All notable changes to Sourcegraph are documented in this file.
 
+## 2.13.5
+
+### Fixed
+
+- Fixed another issue where Sourcegraph would try to fetch more than the allowed number of repositories from AWS CodeCommit.
+
 ## 2.13.4
 
 ### Changed
