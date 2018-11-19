@@ -5,7 +5,7 @@ publishDate: 2018-11-14T00:00-07:00
 tags: [
   blog
 ]
-slug: How-companies-buy-software-for-developers
+slug: how-companies-buy-software-for-developers
 heroImage: /blog/xkcd-is_it_worth_the_time_2x.png
 published: true
 ---
