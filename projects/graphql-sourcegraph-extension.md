@@ -15,14 +15,17 @@ Sourcegraph extensions make it easy to build code intelligence using existing la
 
 GraphQL is one of these languages that has [a language analysis tool](https://www.npmjs.com/package/@playlyfe/gql) and I spent a few days building a Sourcegraph extension for it.
 
+You can try it out on Sourcegraph.com by first [enabling the GraphQL extension](https://sourcegraph.com/extensions/chris/graphql) then visiting a [sample GraphQL file](https://sourcegraph.com/github.com/chrismwendt/graphql-ws-langserver@master/-/blob/schema.gql#L9:9).
+
+![image](https://user-images.githubusercontent.com/1387653/48732224-e4065280-ebf3-11e8-9689-d17da442728c.png)
+
 The first step was to start with the `activate()` function that will run when the Sourcegraph extension is run:
 
 ```typescript
-export function activate(): void {
-}
+export function activate(): void {}
 ```
 
-Then I grabbed the address of the GraphQL language server from a user setting:
+Then I grab the address of the GraphQL language server from a user setting:
 
 ```diff
  export function activate(): void {
@@ -54,9 +57,9 @@ Then I register a callback that will run when the user hovers over something in 
 
 It sends a request to a https://github.com/chrismwendt/graphql-ws-langserver running elsewhere.
 
-Then I converted the response to something that the Sourcegraph extension API understands (with Python syntax highlighting to recognize comment lines starting with `#`)
+Then I convert the response to something that the Sourcegraph extension API understands (with Python syntax highlighting to recognize comment lines starting with `#`)
 
-```diff
+````diff
  export function activate(): void {
    const address = sourcegraph.configuration.get<Settings>().get('graphql.langserver-address')
 
@@ -78,12 +81,6 @@ Then I converted the response to something that the Sourcegraph extension API un
 +    })
  }
 
-```
+````
 
-
-TODO Expand and weave in these links:
-
-https://sourcegraph.com/extensions/chris/graphql
-https://github.com/sourcegraph/sourcegraph-graphql
-https://github.com/sourcegraph/sourcegraph-graphql/blob/master/src/extension.ts
-https://github.com/chrismwendt/graphql-ws-langserver
+Check out the repository for the [extension](https://github.com/sourcegraph/sourcegraph-graphql) and the [server component](https://github.com/chrismwendt/graphql-ws-langserver).
