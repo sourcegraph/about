@@ -1,12 +1,11 @@
 ---
-title: "How Silicon Valley buys software
-(hint: engineers have all the power)"
+title: How companies buy software for developers
 author: Dan Adler
 publishDate: 2018-11-14T00:00-07:00
 tags: [
   blog
 ]
-slug: how-silicon-valley-buys-software
+slug: How-companies-buy-software-for-developers
 heroImage: /blog/xkcd-is_it_worth_the_time_2x.png
 published: true
 ---
