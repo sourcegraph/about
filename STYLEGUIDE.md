@@ -25,6 +25,7 @@ Assume the reader is a busy non-native English speaker.
 - Assume copy will be read through a screen-reader, poor translation, and on a device/screen that is different than your own.
 - Remove unnecessary words.
 - Use simple sentence syntax.
+  - Prefer commands ("Publish xyz to...") to 2nd-person phrasing ("Let's publish xyz to..." or "We can now publish xyz to...").
 - Avoid ambiguous verbs. For example, avoid using verbs like "cluster", "document", "label", "group", "admin", etc., because we commonly use those as nouns.
 - Write robust sentences that can be understood even if the reader doesn't recognize all of the words.
 
