@@ -94,9 +94,9 @@ Never use any of the following as link text:
 
 ### Lists
 
-#### Introductory sentances
+#### Introductory sentences
 
-Lists should begin with an introductory sentence. The sentence should end with a colon unless there is other content, such as an image or admonition between the introductory sentence and the list.
+Lists should begin with an introductory sentence. The sentence should end with a colon unless other content, such as an image or admonition is between the introductory sentence and the list.
 
 #### Punctuation and capitalization
 
