@@ -92,6 +92,22 @@ Never use any of the following as link text:
 - instructions
 - these instructions
 
+### Lists
+
+#### Introductory sentances
+
+Lists should begin with an introductory sentence. The sentence should end with a colon unless there is other content, such as an image or admonition between the introductory sentence and the list.
+
+#### Punctuation and capitalization
+
+Each list item should begin with a capital letter.
+
+Each list item should end with a period or other appropriate sentence-ending punctuation, except:
+
+- If the item is a single word.
+- If the item doesn't include a verb.
+- If the item is a code snippet.
+
 ### Instructions, references, and citations
 
 Render references to UI text in bold. Match the actual case of the UI text in other products even if it violates our style guide.
