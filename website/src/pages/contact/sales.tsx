@@ -35,7 +35,7 @@ export default class Trial extends React.Component<any, any> {
                         </div>
                     </div>
                     <section className="d-flex justify-content-around flex-column flex-lg-row sales">
-                        <div className="panel-area mr-lg-5 mt-0">
+                        <div className="panel-area mr-lg-5 mt-0 mb-2">
                             <div className="d-flex flex-column panel">
                                 <h3>Your team will love Sourcegraph Enterprise</h3>
                                 <p>The best way to search and browse all of your organization's code, with:</p>
