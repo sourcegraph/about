@@ -79,9 +79,9 @@
     }
 
     .panel-area {
-        max-width: 32rem;
         @media (min-width: $media-lg) {
             margin: 3rem 0 3rem 0;
+            max-width: 32rem;
         }
     }
 
