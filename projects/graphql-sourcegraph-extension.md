@@ -15,7 +15,7 @@ Sourcegraph extensions make it easy to build code intelligence using existing la
 
 GraphQL is one of these languages that has [a language analysis tool](https://www.npmjs.com/package/@playlyfe/gql) and I spent a few days building a Sourcegraph extension for it.
 
-You can try it out on Sourcegraph.com by first [enabling the GraphQL extension](https://sourcegraph.com/extensions/chris/graphql) then visiting a [sample GraphQL file](https://sourcegraph.com/github.com/chrismwendt/graphql-ws-langserver@master/-/blob/schema.gql#L9:9).
+You can try it out on Sourcegraph.com by first [enabling the GraphQL extension](https://sourcegraph.com/extensions/chris/graphql) then visiting a [sample GraphQL file](https://sourcegraph.com/github.com/chrismwendt/graphql-ws-langserver@master/-/blob/schema.gql#L9:9) (beware this is relatively experimental - only hover tooltips and jump-to-definition within the same file work).
 
 ![image](https://user-images.githubusercontent.com/1387653/48732224-e4065280-ebf3-11e8-9689-d17da442728c.png)
 
