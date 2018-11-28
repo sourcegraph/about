@@ -128,7 +128,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>$10 one-time for the first 10 users</p>
                                                         </a>
                                                         <a href="https://docs.sourcegraph.com/admin/subscriptions#volume-discounts">
-                                                            <p>10–20% discounts above 500 users</p>
+                                                            <p>Volume discounts above 500 users</p>
                                                         </a>
                                                         <a href="#admin">
                                                             <p>SSO integration</p>
