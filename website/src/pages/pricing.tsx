@@ -72,7 +72,6 @@ export default class Pricing extends React.Component<any, any> {
                                                     <div className="col-12 user-pricing">
                                                         <h2>Free</h2>
                                                         <h3>&nbsp;</h3>
-                                                        <h4>Made for developers, priced for everyone</h4>
                                                     </div>
                                                 </div>
                                                 <div className="row">
@@ -121,14 +120,16 @@ export default class Pricing extends React.Component<any, any> {
                                                     <div className="col-12 user-pricing">
                                                         <h2>$4</h2>
                                                         <h3>/user /month</h3>
-                                                        <h4>
-                                                            Starts at $10 one-time for the first{' '}
-                                                            <span className="text-nowrap">10 users</span>
-                                                        </h4>
                                                     </div>
                                                 </div>
                                                 <div className="row">
                                                     <div className="col-12 features">
+                                                        <a href="https://sourcegraph.com/user/subscriptions/new">
+                                                            <p>$10 one-time for the first 10 users</p>
+                                                        </a>
+                                                        <a href="https://docs.sourcegraph.com/admin/subscriptions#volume-discounts">
+                                                            <p>10–20% discounts above 500 users</p>
+                                                        </a>
                                                         <a href="#admin">
                                                             <p>SSO integration</p>
                                                         </a>
@@ -138,8 +139,6 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a href="#extensions">
                                                             <p>Company-wide browser extension deployment via G Suite</p>
                                                         </a>
-                                                        <p>&nbsp;</p>
-                                                        <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                     </div>
                                                     <div className="col-12 contact">
@@ -166,7 +165,6 @@ export default class Pricing extends React.Component<any, any> {
                                                     <div className="col-12 user-pricing">
                                                         <h2>$19</h2>
                                                         <h3>/user /month</h3>
-                                                        <h4>Empowering developers company wide</h4>
                                                     </div>
                                                 </div>
                                                 <div className="row">
@@ -212,7 +210,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="col-xl-12 lg-12 pricing-true-up-notice">
                                         If you exceed your licensed users over the term of your subscription,
                                         Sourcegraph will true up your license at your next renewal. Learn more about{' '}
-                                        <a href="https://docs.sourcegraph.com/admin/subscriptions">
+                                        <a href="https://docs.sourcegraph.com/admin/subscriptions#true-up-pricing">
                                             Sourcegraph's true-up pricing model
                                         </a>
                                         .
