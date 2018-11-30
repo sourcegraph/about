@@ -16,7 +16,7 @@ Code intelligence for Java and PHP (and other experimental languages) will be te
 
 Go, TypeScript/JavaScript, and Python continue to work and are not affected. In fact, those languages now have better, faster support because they use the new architecture.
 
-We will also enable [basic code intelligence](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel) on Sourcegraph.com, which provides best-effort (heuristic- and parser-based) code intelligence for all languages. To use it, select **Fuzzy** (not **Precise**) in the file header and then hover on a token to go to definition or find references.
+We will also enable [basic code intelligence](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel) on Sourcegraph.com, which provides best-effort (heuristic- and parser-based) code intelligence for all languages. To use it, [enable the extension](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel), select **Fuzzy** (not **Precise**) in the file header, and then hover on a token to go to definition or find references.
 
 ### Why are these languages being temporarily removed from Sourcegraph.com?
 
