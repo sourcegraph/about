@@ -1,11 +1,11 @@
-# Sourcegraph extensions hacky hour[0]
+# Sourcegraph extensions hacky hour 0
 
-Come to the Sourcegraph extensions hacky hour Friday December 14 from 3:00pm-5:00pm to hack on an extension.
+Come to the [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) hacky hour Friday December 14 from 3:00pm-5:00pm to hack on an extension.
 
 Sourcegraph extensions enable you to extend code hosts and Sourcegraph itself by adding features such as:
 
 - Code intelligence (go-to-definition, find references, hovers, etc.)
-- Test coverage overlays
+- [Test coverage overlays](https://sourcegraph.com/extensions/sourcegraph/codecov)
 - Links to live traces, log output, and performance data for a line of code
 - Custom search providers, e.g. GitHub issues and comments
 
@@ -24,6 +24,5 @@ The best way to think about what to build is:
 - [@chrismwendt](https://github.com/chrismwendt)
 - [@sqs](https://github.com/sqs)
 - [@vanesa](vanesa)
-- [@$you?]()
 
 Check out the [Sourcegraph extensions authoring documentation](https://docs.sourcegraph.com/extensions/authoring)
