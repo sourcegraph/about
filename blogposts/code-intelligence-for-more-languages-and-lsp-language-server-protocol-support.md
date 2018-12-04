@@ -69,6 +69,6 @@ For more information, see ["Code intelligence overview"](/docs/code-intelligence
 
 For developers interested in hacking on language servers, adapting a language server for use with Sourcegraph is straightforward. It massively increases the potential audience of your language server to all developers on the web, regardless of editor and without the need to install/configure it individually. Any organization running Sourcegraph internally will be able to use it on all of their code, and we'll deploy it to Sourcegraph.com for use on all open-source code.
 
-See [how to adapt a language server for use with Sourcegraph](/docs/code-intelligence/adapting-language-servers).
+See [how to adapt a language server for use with Sourcegraph](https://docs.sourcegraph.com/extensions/language_servers/adapting_existing_language_servers).
 
 We're also eager to sponsor people to build and improve open-source, LSP-based language servers. [Contact us](/contact) if you're interested, either as a part-time effort or to [join our team](https://github.com/sourcegraph/careers) as a full-time member.
