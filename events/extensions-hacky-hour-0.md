@@ -17,6 +17,8 @@ The best way to think about what to build is:
 
 ## Attendees
 
+Send us a PR with your name added if you'd like to attend.
+
 - [@beyang](https://github.com/beyang)
 - [@lguychard](https://github.com/lguychard)
 - [@slimsag](https://github.com/slimsag)
