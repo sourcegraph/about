@@ -17,7 +17,7 @@ The best way to think about what to build is:
 
 ## Attendees
 
-- [@beyang][https://github.com/beyang]
+- [@beyang](https://github.com/beyang)
 - [@lguychard](https://github.com/lguychard)
 - [@slimsag](https://github.com/slimsag)
 - [@ryan-blunden](https://github.com/ryan-blunden)
