@@ -1,6 +1,6 @@
 # Sourcegraph extensions hacky hour 0
 
-Come to the [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) hacky hour Friday December 14 from 3:00pm-5:00pm to hack on an extension.
+Come to the [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) hacky hour Friday December 7 from 3:00pm-5:00pm to hack on an extension.
 
 Sourcegraph extensions enable you to extend code hosts and Sourcegraph itself by adding features such as:
 
