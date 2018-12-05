@@ -92,7 +92,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Support on our public issue tracker</p>
                                                         </a>
                                                         <a href="#admin">
-                                                            <p>SSO Support</p>
+                                                            <p>SSO integration</p>
                                                         </a>
                                                         <a href="#integrations">
                                                             <p>Code host and editor integrations</p>
