@@ -62,7 +62,7 @@ export default class Pricing extends React.Component<any, any> {
                             </div>
                             <div className="container pricing-section">
                                 <div className="row">
-                                    <div className="col-xl-4 lg-12 pricing-card-col">
+                                    <div className="col-xl-4 col-lg-5 col-md-6 col-sm-12 pricing-card-col">
                                         <div className="pricing__card card card-body">
                                             <div className="pricing__card-list">
                                                 <div className="pricing__card-list-heading">
@@ -71,7 +71,7 @@ export default class Pricing extends React.Component<any, any> {
                                                 <div className="row">
                                                     <div className="col-12 user-pricing">
                                                         <h2>Free</h2>
-                                                        <h3>&nbsp;</h3>
+                                                        <h3>for 200 users</h3>
                                                     </div>
                                                 </div>
                                                 <div className="row">
@@ -90,6 +90,9 @@ export default class Pricing extends React.Component<any, any> {
                                                         </a>
                                                         <a href="#search">
                                                             <p>Support on our public issue tracker</p>
+                                                        </a>
+														<a href="#admin">
+                                                            <p>SSO Support</p>
                                                         </a>
                                                         <a href="#integrations">
                                                             <p>Code host and editor integrations</p>
@@ -110,52 +113,7 @@ export default class Pricing extends React.Component<any, any> {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-xl-4 lg-12 pricing-card-col">
-                                        <div className="pricing__card card card-body">
-                                            <div className="pricing__card-list">
-                                                <div className="pricing__card-list-heading">
-                                                    <h1>Enterprise Starter</h1>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 user-pricing">
-                                                        <h2>$4</h2>
-                                                        <h3>/user /month</h3>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 features">
-                                                        <a href="https://sourcegraph.com/user/subscriptions/new">
-                                                            <p>$10 one-time for the first 10 users</p>
-                                                        </a>
-                                                        <a href="https://docs.sourcegraph.com/admin/subscriptions#volume-discounts">
-                                                            <p>Volume discounts above 500 users</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>SSO integration</p>
-                                                        </a>
-                                                        <a href="#support">
-                                                            <p>Next business day support</p>
-                                                        </a>
-                                                        <a href="#extensions">
-                                                            <p>Company-wide browser extension deployment via G Suite</p>
-                                                        </a>
-                                                        <p>&nbsp;</p>
-                                                    </div>
-                                                    <div className="col-12 contact">
-                                                        <a
-                                                            className="btn btn-pricing btn-lg justify-content-center text-center"
-                                                            role="button"
-                                                            href="https://sourcegraph.com/user/subscriptions/new"
-                                                            onClick={this.trackBuyEnterpriseStarterButtonClicked}
-                                                        >
-                                                            Buy
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-4 lg-12 pricing-card-col">
+                                    <div className="col-xl-4 col-lg-5 col-md-6 col-sm-12 pricing-card-col">
                                         <div className="pricing__card card card-body">
                                             <div className="pricing__card-list">
                                                 <div className="pricing__card-list-heading">
@@ -190,6 +148,7 @@ export default class Pricing extends React.Component<any, any> {
                                                                 registry
                                                             </p>
                                                         </a>
+														<p>&nbsp;</p>
                                                     </div>
                                                     <div className="col-12 contact">
                                                         <Link
@@ -207,7 +166,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-xl-12 lg-12 pricing-true-up-notice">
+                                    <div className="col-xl-9 lg-12 pricing-true-up-notice">
                                         If you exceed your licensed users over the term of your subscription,
                                         Sourcegraph will true up your license at your next renewal. Learn more about{' '}
                                         <a href="https://docs.sourcegraph.com/admin/subscriptions#true-up-pricing">
@@ -227,24 +186,18 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div className="table-section">
                                     <div className="row feature-table-header">
-                                        <div className="col-6">
+                                        <div className="col-8">
                                             <h4>Feature</h4>
                                         </div>
                                         <div className="col-2">
                                             <h4>Core</h4>
                                         </div>
                                         <div className="col-2">
-                                            <h4>Enterprise Starter</h4>
-                                        </div>
-                                        <div className="col-2">
                                             <h4>Enterprise</h4>
                                         </div>
                                     </div>
                                     <div id="search" className="row feature-table-row">
-                                        <div className="col-6 feature-title">Code search</div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
+                                        <div className="col-8 feature-title">Code search</div>
                                         <div className="col-2">
                                             <div className="table-check" />
                                         </div>
@@ -253,13 +206,10 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Full-text search across all repositories
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -267,25 +217,10 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Search any commit or branch (hybrid real-time and indexed search)
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                    </div>
-                                    <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">Regular expression queries</div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -293,11 +228,8 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">Smart search filters</div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Regular expression queries</div>
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -305,13 +237,19 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">Smart search filters</div>
+										<div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                        <div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                    </div>
+                                    <div className="row feature-table-row indent-row">
+                                        <div className="col-8 feature-title">
                                             Search within diffs and commit messages
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -319,13 +257,10 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Saved searches, with email and Slack notifications
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -335,7 +270,7 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="intelligence" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Code intelligence for all languages (
                                             <a
                                                 href="https://docs.sourcegraph.com/extensions/language_servers"
@@ -345,22 +280,7 @@ export default class Pricing extends React.Component<any, any> {
                                             </a>
                                             )
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                    </div>
-                                    <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">Within a repository</div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -368,11 +288,17 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">Cross-repository</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
+                                        <div className="col-8 feature-title">Within a repository</div>
+										<div className="col-2">
+                                            <div className="table-check" />
                                         </div>
                                         <div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                    </div>
+                                    <div className="row feature-table-row indent-row">
+                                        <div className="col-8 feature-title">Cross-repository</div>
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -382,11 +308,8 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="browsing" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">Code browsing</div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Code browsing</div>
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -396,11 +319,8 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="extensions" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">Sourcegraph Extensions</div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Sourcegraph Extensions</div>
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -408,27 +328,21 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Instantly deploy company-wide in code reviews via G Suite
                                         </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Private registry for Sourcegraph extensions
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -436,11 +350,8 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">Whitelist Sourcegraph extensions</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Whitelist Sourcegraph extensions</div>
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -450,15 +361,12 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="integrations" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             <a href="https://docs.sourcegraph.com/integration" target="_blank">
                                                 Browser, code host, and editor integrations
                                             </a>
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -466,7 +374,7 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Instantly deploy company-wide via G Suite (
                                             <a
                                                 href="https://docs.sourcegraph.com/integration/google_gsuite"
@@ -476,11 +384,8 @@ export default class Pricing extends React.Component<any, any> {
                                             </a>
                                             )
                                         </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
@@ -489,11 +394,8 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="deployment" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">On-premises deployment</div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">On-premises deployment</div>
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -501,29 +403,23 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">Managed deployment option</div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Managed deployment option</div>
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             High-scale and high-availability cluster deployment option (
                                             <a href="https://github.com/sourcegraph/deploy-sourcegraph" target="_blank">
                                                 learn more
                                             </a>
                                             )
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -533,28 +429,13 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="support" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             <a href="https://github.com/sourcegraph/sourcegraph/issues" target="_blank">
                                                 Public issue tracker
                                             </a>{' '}
                                             support
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                    </div>
-                                    <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">Next business day support</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                         <div className="col-2">
@@ -562,11 +443,17 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">Premium support</div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Next business day support</div>
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                    </div>
+                                    <div className="row feature-table-row">
+                                        <div className="col-8 feature-title">Premium support</div>
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -576,31 +463,25 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="admin" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Single sign-on integration (
                                             <a href="https://docs.sourcegraph.com/admin/auth" target="_blank">
                                                 learn more
                                             </a>
                                             )
                                         </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             SSO Groups —<i> coming soon</i>
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -608,13 +489,10 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Repository ACLs —<i> coming soon</i>
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -622,7 +500,7 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             External database (
                                             <a
                                                 href="https://docs.sourcegraph.com/admin/external_database"
@@ -632,22 +510,7 @@ export default class Pricing extends React.Component<any, any> {
                                             </a>
                                             )
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                    </div>
-                                    <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">Custom certificate authority</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -655,17 +518,23 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">Custom certificate authority</div>
+										<div className="col-2">
+                                            <div className="table-blank" />
+                                        </div>
+                                        <div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                    </div>
+                                    <div className="row feature-table-row">
+                                        <div className="col-8 feature-title">
                                             Webhooks for repository updates (
                                             <a href="https://docs.sourcegraph.com/user/repo/webhooks" target="_blank">
                                                 learn more
                                             </a>
                                             )
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -673,7 +542,7 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">
                                             Logging and monitoring for your Sourcegraph instance (
                                             <a
                                                 href="https://docs.sourcegraph.com/admin/monitorg-and-tracing"
@@ -683,22 +552,7 @@ export default class Pricing extends React.Component<any, any> {
                                             </a>
                                             )
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                    </div>
-                                    <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">Prometheus integration and dashboards</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -706,23 +560,8 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">Sentry integration</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                    </div>
-                                    <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">OpenTracing integration</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Prometheus integration and dashboards</div>
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -730,13 +569,28 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row indent-row">
-                                        <div className="col-6 feature-title">
+                                        <div className="col-8 feature-title">Sentry integration</div>
+										<div className="col-2">
+                                            <div className="table-blank" />
+                                        </div>
+                                        <div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                    </div>
+                                    <div className="row feature-table-row indent-row">
+                                        <div className="col-8 feature-title">OpenTracing integration</div>
+										<div className="col-2">
+                                            <div className="table-blank" />
+                                        </div>
+                                        <div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                    </div>
+                                    <div className="row feature-table-row indent-row">
+                                        <div className="col-8 feature-title">
                                             User access audit logs —<i> coming soon</i>
                                         </div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
@@ -744,11 +598,8 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-6 feature-title">Backups and recovery</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
-                                        </div>
-                                        <div className="col-2">
+                                        <div className="col-8 feature-title">Backups and recovery</div>
+										<div className="col-2">
                                             <div className="table-blank" />
                                         </div>
                                         <div className="col-2">

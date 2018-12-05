@@ -99,32 +99,18 @@
     padding: 0 0;
     .pricing-section {
         padding-top: 15vh;
+		.row {
+			justify-content: space-evenly;
+		}
     }
 
     .pricing-card-col {
+
         &:nth-child(2) {
-            transform: translateX(-100%);
-            animation: slide1 650ms ease-in-out 750ms forwards;
-            @keyframes slide1 {
-                from {
-                    transform: matrix3d(0.87, 0, 0.7, 0, 0, 1, 0, 0, -0.5, 0, 0.87, 0, -100%, 0, 0, 1);
-                }
-                to {
-                    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-                }
-            }
+
         }
         &:nth-child(3) {
-            transform: translateX(-35%);
-            animation: slide2 650ms ease-in-out 750ms forwards;
-            @keyframes slide2 {
-                from {
-                    transform: matrix3d(0.87, 0, 0.7, 0, 0, 1, 0, 0, -0.5, 0, 0.87, 0, -35%, 0, 0, 1);
-                }
-                to {
-                    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-                }
-            }
+
         }
         &:first-of-type {
             .card-body {
@@ -132,19 +118,7 @@
                     // color: #0d97ff
                 }
             }
-            opacity: 0;
-            transform: translateX(-50px);
-            animation: display 650ms ease-in-out 1100ms forwards;
-            @keyframes display {
-                from {
-                    opacity: 0;
-                    transform: translateX(-50px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0px);
-                }
-            }
+
             .btn {
                 background-color: #0d97ff;
                 color: #fafcff;
@@ -342,7 +316,7 @@
         }
         .feature-table-header,
         .feature-table-row {
-            .col-6:first-of-type {
+            .col-8:first-of-type {
                 text-align: left;
             }
 
