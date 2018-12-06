@@ -2,13 +2,13 @@
 title: New GraphQL Sourcegraph extension
 description: New GraphQL Sourcegraph extension
 author: Chris Wendt
-publishDate: 2018-11-01T00:00-07:00
+publishDate: 2018-12-05T00:00-07:00
 tags: [
   blog
 ]
 slug: new-graphql-sourcegraph-extension
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-published: false
+published: true
 ---
 
 Sourcegraph extensions make it easy to build code intelligence using existing language analysis tools that don't necessarily speak [LSP (the Language Server Protocol)](https://microsoft.github.io/language-server-protocol/specification).
