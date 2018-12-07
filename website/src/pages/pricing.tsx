@@ -134,7 +134,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>No user limit</p>
                                                         </a>
                                                         <a href="#admin">
-                                                            <p>HA cluster support</p>
+                                                            <p>Scalable cluster support</p>
                                                         </a>
                                                         <a href="#intelligence">
                                                             <p>Cross-repository code intelligence</p>
@@ -178,7 +178,7 @@ export default class Pricing extends React.Component<any, any> {
                                         <a href="https://docs.sourcegraph.com/admin/subscriptions#true-up-pricing">
                                             Sourcegraph's true-up pricing model
                                         </a>
-                                        .
+                                        . For a limited starter package, <a href="/contact/sales/">contact us</a>.
                                     </div>
                                 </div>
                             </div>
