@@ -178,8 +178,9 @@
                 box-shadow: 0px 0px 8px 1px rgba(13, 151, 255, 0.45);
             }
 			@media screen and (max-width: $media-md) {
-				width: 100%;
+				width: calc(100% - 8px);
 				margin-left: 0;
+
 			}
         }
         .features {
