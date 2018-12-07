@@ -66,6 +66,10 @@
                 transition: all 300ms ease;
                 box-shadow: 0px 0px 4px 1px rgba(13, 69, 255, 0.4);
             }
+			@media screen and (max-width: $media-md) {
+				margin-bottom: 1rem;
+				width: 100%;
+			}
         }
         .btn-github {
             margin-left: 1.5rem;
@@ -80,10 +84,10 @@
                 transition: all 300ms ease;
                 box-shadow: 0px 0px 4px 1px rgba(178, 0, 248, 0.4);
             }
-            @media screen and (max-width: $media-md) {
-                margin-left: 0rem;
-                margin-top: 1rem;
-            }
+			@media screen and (max-width: $media-md) {
+				margin-left: 0;
+				width: 100%;
+			}
         }
         .hero-image {
             width: 100%;
@@ -98,7 +102,7 @@
     display: inline-block;
     padding: 0 0;
     .pricing-section {
-        padding-top: 15vh;
+        padding-top: calc(15vh - 20px);
 		.row {
 			justify-content: space-evenly;
 		}
@@ -173,6 +177,10 @@
             &:hover {
                 box-shadow: 0px 0px 8px 1px rgba(13, 151, 255, 0.45);
             }
+			@media screen and (max-width: $media-md) {
+				width: 100%;
+				margin-left: 0;
+			}
         }
         .features {
             line-height: 24px;
@@ -199,14 +207,15 @@
         }
 
         .contact {
-            @media (max-width: $media-md) {
-                padding-left: 1rem;
-                width: 100%;
-                max-width: 100%;
-            }
             margin-right: 0px;
             text-align: center;
-            padding-top: 4rem;
+            padding-top: 3rem;
+			@media (max-width: $media-md) {
+				padding-left: 1rem;
+				width: 100%;
+				max-width: 100%;
+				padding-top: 1rem;
+			}
         }
         &-list {
             margin-bottom: 0;
@@ -280,6 +289,7 @@
     margin-bottom: 0;
     @media screen and (max-width: $media-md) {
         padding: 10vh 0;
+		overflow: hidden;
     }
     h1 {
         padding-bottom: 4rem;
@@ -299,6 +309,10 @@
             display: inline-flex;
             margin-right: 2rem;
             margin-top: 1rem;
+			@media screen and (max-width: $media-md) {
+				width: 100%;
+				margin-right: 0;
+			}
         }
     }
     .table-section {
