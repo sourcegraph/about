@@ -76,6 +76,9 @@ export default class Pricing extends React.Component<any, any> {
                                                 </div>
                                                 <div className="row">
                                                     <div className="col-12 features">
+                                                        <a href="#admin">
+                                                            <p>200-user limit</p>
+                                                        </a>
                                                         <a href="#search">
                                                             <p>Code search</p>
                                                         </a>
@@ -127,6 +130,9 @@ export default class Pricing extends React.Component<any, any> {
                                                 </div>
                                                 <div className="row">
                                                     <div className="col-12 features">
+                                                        <a href="#admin">
+                                                            <p>No user limit</p>
+                                                        </a>
                                                         <a href="#admin">
                                                             <p>HA cluster support</p>
                                                         </a>
@@ -462,6 +468,15 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div id="admin" className="table-section">
+                                    <div className="row feature-table-row">
+                                        <div className="col-8 feature-title">Unlimited user accounts</div>
+                                        <div className="col-2">
+                                            <div className="table-blank" />
+                                        </div>
+                                        <div className="col-2">
+                                            <div className="table-check" />
+                                        </div>
+                                    </div>
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
                                             Single sign-on integration (
