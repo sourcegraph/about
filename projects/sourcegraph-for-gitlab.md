@@ -26,7 +26,7 @@ To start using this:
 To use this on your company's private code, run a [Sourcegraph instance](https://about.sourcegraph.com/docs).
 
 GitLab is the first of many more code hosts Sourcegraph will support in [the open
-source Sourcegraph browser extension](https://github.com/sourcegraph/browser-extensions). Check out the code it took to add
+source Sourcegraph browser extension](https://github.com/sourcegraph/sourcegraph/tree/master/client/browser). Check out the code it took to add
 GitLab support: https://sourcegraph.com/github.com/sourcegraph/browser-extensions/-/blob/src/libs/gitlab/code_intelligence.ts
 
 ## Implementation Notes

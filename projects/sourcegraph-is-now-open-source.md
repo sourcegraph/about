@@ -29,7 +29,7 @@ We're also excited about what this means for Sourcegraph as a company. All of ou
 
 Organizations using Sourcegraph can upgrade to [Sourcegraph Enterprise](/pricing) (previously called Data Center) to get the features that large organizations need (single sign-on, backups and recovery, cluster deployment, etc.). These additional features in Sourcegraph Enterprise are paid and not open source. The success of Sourcegraph Enterprise makes it possible for Sourcegraph Inc to keep working towards our [master plan](/plan).
 
-Beyond open-sourcing Sourcegraph's code and development, we're also opening up other product and company processes. Our [product roadmap](https://github.com/sourcegraph/about/blob/master/projects/about-repository.md), [browser extension](https://github.com/sourcegraph/browser-extensions),  [about.sourcegraph.com website](https://github.com/sourcegraph/about), [open job posts](https://github.com/sourcegraph/careers), and [much more](https://github.com/sourcegraph) are now public, too. And the [Sourcegraph master plan](/plan) has always been public.
+Beyond open-sourcing Sourcegraph's code and development, we're also opening up other product and company processes. Our [product roadmap](https://github.com/sourcegraph/about/blob/master/projects/about-repository.md), [browser extension](https://github.com/sourcegraph/sourcegraph/tree/master/client/browser),  [about.sourcegraph.com website](https://github.com/sourcegraph/about), [open job posts](https://github.com/sourcegraph/careers), and [much more](https://github.com/sourcegraph) are now public, too. And the [Sourcegraph master plan](/plan) has always been public.
 
 See you over at the [Sourcegraph open-source repository](https://github.com/sourcegraph/sourcegraph)!
 
