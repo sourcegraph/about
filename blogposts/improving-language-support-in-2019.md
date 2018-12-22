@@ -8,7 +8,7 @@ tags: [
 ]
 slug: improving-language-support-in-2019
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-published: false
+published: true
 ---
 
 Sourcegraph's [master plan](https://about.sourcegraph.com/plan) is to bring basic code intelligence to every devloper wherever you see code. Despite deploying [a ton of experimental language servers in 2018](https://about.sourcegraph.com/blog/sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api), language support has not improved much in the past year - why?
