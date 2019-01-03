@@ -10,20 +10,17 @@ heroImage: //images.ctfassets.net/le3mxztn6yoo/38oAzef5facQ0eeGESkUCy/53de2ea851
 published: true
 ---
 
-<div class="f4">
-
-Today, we're releasing more powerful code search on Sourcegraph.com and Sourcegraph Server. You can use operators such as **repo:** and **file:** to restrict your search to certain repositories and files (by regular expression match on their name).
+Today, we're releasing more powerful code search on Sourcegraph.com and Sourcegraph. You can use operators such as **repo:** and **file:** to restrict your search to certain repositories and files (by regular expression match on their name).
 
 For example, **repo:foo** will restrict your query to repositories whose name contains “foo,” and likewise for **file:bar**.
 
-Search scopes make it easier to quickly search only among the code you care about, such as all JavaScript files or only non-vendored code. Custom search scopes are only available in
-[Sourcegraph Server](/products/server/) right now, but we’ll let you define your own on Sourcegraph.com soon.
+Search scopes make it easier to quickly search only among the code you care about, such as all JavaScript files or only non-vendored code.
 
 <div>
     <img class="pa1 ba b--light-7" src="//images.contentful.com/le3mxztn6yoo/Fko76K31Ic6q0KC8IKEue/7e0dff2bb462e5cc4d60d1e5a3a3505d/search-demo.gif"/>
 </div>
 
-Try it out at [sourcegraph.com/search](https://sourcegraph.com/search) now.
+Try it out at [sourcegraph.com/search](https://sourcegraph.com/search) or on a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#quickstart) now.
 
 Use the search fields on the homepage to construct your query the first few times.
 
@@ -33,8 +30,6 @@ As you continue using it, you can express your query more quickly by using the o
 * Search repositories named “mux” in test files for “new route”: [**repogroup:sample file:(test|spec) repo:mux new route**](https://sourcegraph.com/search?q=repo:mux+new+route&sq=repogroup:sample+file:%28test%7Cspec%29)
 * Search for occurrences of “partial<” in TypeScript files: [**repogroup:sample file:\.ts$ partial<**](https://sourcegraph.com/search?q=file:%5C.ts+partial%3C&sq=repogroup:sample)
 
-Let us know what you think on Twitter ([@srcgraph](https://twitter.com/srcgraph)). To get advanced code search for your company’s code, [install Sourcegraph Server](/docs/server).
+Let us know what you think on Twitter ([@srcgraph](https://twitter.com/srcgraph)). To get advanced code search for your company’s code, [install Sourcegraph](https://docs.sourcegraph.com).
 
 p.s. One other minor improvement: You can now select multiple lines (and share a link to multiple lines) by shift-clicking on a line number to expand the selection when you’re viewing a code file.
-
-</div>

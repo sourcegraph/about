@@ -55,7 +55,10 @@ export default class Trial extends React.Component<any, any> {
                                         Contact us at <a href="https://twitter.com/srcgraph">@srcgraph</a> or{' '}
                                         <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>, or file
                                         issues on our{' '}
-                                        <a href="https://github.com/sourcegraph/issues/issues">public issue tracker</a>.
+                                        <a href="https://github.com/sourcegraph/sourcegraph/issues">
+                                            public issue tracker
+                                        </a>
+                                        .
                                     </p>
                                 </div>
                             </div>

@@ -16,7 +16,7 @@ We’ve added a file tree to GitHub so that you can quickly explore an entire re
 ![FileTree](//images.contentful.com/le3mxztn6yoo/kW80vVfYMSG8MqIkeuWMO/09b960497b3f136f7d1c45c17ee13514/FileTree.gif)
 
 
-Get started by downloading the [Sourcegraph for GitHub Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en)
+Get started by downloading the [Sourcegraph for GitHub Chrome extension](https://docs.sourcegraph.com/integration/browser_extension?hl=en)
 
 And then jump into a repository [https://github.com/hootsuite/atlantis/](https://github.com/hootsuite/atlantis/blob/master/cmd/bootstrap.go)
 

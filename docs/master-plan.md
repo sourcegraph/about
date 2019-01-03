@@ -9,7 +9,7 @@ slug: plan
 
 ## What we're building, and why it matters
 
-Today, Sourcegraph gives you code search and intelligence on the web with [Sourcegraph](/). You can use it on your company's internal code, or you can try it on open-source code on [Sourcegraph.com](https://sourcegraph.com/search) and with the [browser/editor integrations](/docs/integrations).
+Today, Sourcegraph gives you code search and intelligence on the web with [Sourcegraph](https://docs.sourcegraph.com). You can use it on your company's internal code, or you can try it on open-source code on [Sourcegraph.com](https://sourcegraph.com/search) and with the [browser/editor integrations](https://docs.sourcegraph.com/integration).
 
 What most people don't know is that our long-term vision is to make it so everyone, in every community, in every country, and in every industry—not just the ones working at the half-dozen dominant tech companies—can create products using the best technology. We believe this is the only way the world will sustain broad economic growth and build the innovations we need over the next 100 years in transportation, health care, energy, AI, communication, space travel, etc.
 

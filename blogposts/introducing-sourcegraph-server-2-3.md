@@ -1,5 +1,5 @@
 ---
-title: 'Introducing Sourcegraph Server 2.3'
+title: 'Introducing Sourcegraph 2.3'
 author: 'Quinn Slack'
 publishDate: 2017-12-05T00:00-08:00
 tags: [
@@ -12,12 +12,12 @@ published: true
 
 Search code over all of your company's repositories, save and reuse common search queries and scopes, and do it all more quickly with style. This release also includes previews of diff/commit search and author/date filters, which help you debug issues and find usage examples in your company’s code.
 
-Sourcegraph Server gives the power of [great code search](/products/code-search) to every developer at your company, so you can ship better code faster. It runs securely in your own network and is easy to install and upgrade.
+Sourcegraph gives the power of [great code search](https://docs.sourcegraph.com/user/search) to every developer at your company, so you can ship better code faster. It runs securely in your own network and is easy to install and upgrade.
 
 Ready to install or upgrade?
-**Install [Sourcegraph Server 2.3](/docs/server)** with a single command to get great code search today. Current customers can [upgrade now](/docs/server).
+**Install [Sourcegraph 2.3](https://docs.sourcegraph.com)** with a single command to get great code search today. Current customers can [update now](https://docs.sourcegraph.com/admin/updates).
 
-Key highlights of Sourcegraph Server 2.3: 
+Key highlights of Sourcegraph 2.3: 
 * [Better GitHub.com and GitHub Enteprise integration](#better-githubcom-and-github-enterprise-integration)
 * [Light color theme](#light-color-theme)
 * [Organizations](#organizations)
@@ -33,16 +33,17 @@ Key highlights of Sourcegraph Server 2.3:
 * [Features in preview](#other-features-in-preview)
 
 ## Better GitHub.com and GitHub Enterprise integration
-Sourcegraph Server now integrates more closely with GitHub.com and GitHub Enterprise to synchronize the list of searchable repositories. You can now specify a token for a bot user with access to the precise set of repositories to make searchable on Sourcegraph Server. This works for public and private repositories. You can even connect Sourcegraph Server to GitHub.com and multiple GitHub Enterprise servers at the same time.
+
+Sourcegraph now integrates more closely with GitHub.com and GitHub Enterprise to synchronize the list of searchable repositories. You can now specify a token for a bot user with access to the precise set of repositories to make searchable on Sourcegraph. This works for public and private repositories. You can even connect your Sourcegraph instance to GitHub.com and multiple GitHub Enterprise servers at the same time.
 
 Previously, server admins needed to add each repository manually. That still works for any Git repository host, and we'll expand this easier integration method to support more hosts soon.
 
-See how to set up Sourcegraph Server to search over repositories hosted on:
+See how to set up Sourcegraph to search over repositories hosted on:
 
-* [GitHub.com and GitHub Enterprise](/docs/server/config/#github-configuration) (new)
-* [Phabricator](/docs/server/config/phabricator) (new)
-* [AWS CodeCommit](/blog/great-code-search-for-aws-codecommit)
-* [Bitbucket.org, Bitbucket Server, GitLab, and other repository hosts](/docs/server/config/repositories)
+* [GitHub.com and GitHub Enterprise](https://docs.sourcegraph.com/integration/github) (new)
+* [Phabricator](https://docs.sourcegraph.com/integration/phabricator) (new)
+* [AWS CodeCommit](https://docs.sourcegraph.com/integration/aws_codecommit) (also see "[Great code search for AWS CodeCommit](/blog/great-code-search-for-aws-codecommit)")
+* [Bitbucket.org, Bitbucket Server, GitLab, and other repository hosts](https://docs.sourcegraph.com/admin/repo/add)
 
 ## Light color theme
 By popular request, we've added a light color theme in addition to our current dark theme! It's not just aesthetic: we've heard from people who use Sourcegraph on their daily train commute and on the beach (really!), and the light color theme handles glare better. Click the sun/moon toggle next to your profile avatar to switch between the light and dark themes.
@@ -53,23 +54,23 @@ By popular request, we've added a light color theme in addition to our current d
 ## Organizations
 You can now create and join organizations (also known as “orgs”). Organizations are named groups of users with an associated JSON settings file. These settings take effect for all users who are members of the organization. What kinds of settings, you might ask? This release includes custom search scopes and saved queries, and more features that rely on configuration will be rolling out soon.
 
-Server admins can [create organizations that new users automatically join](/docs/server/config/tutorial#organizations), and any user can create organizations and invite new members from the settings page.
+Server admins can [create organizations that new users automatically join](https://docs.sourcegraph.com/user/organizations), and any user can create organizations and invite new members from the settings page.
 <div style="padding-bottom:78.8%;height:0;position:relative;">
   <img alt="SS2.3 orgs" src="//images.contentful.com/le3mxztn6yoo/3xHwIft9qUqwqcYiYGamAu/c4dbe46cf2d8698472ce3e63aef0a7c2/Screen_Shot_2017-12-05_at_12.17.13_PM.png" />
 </div>
 
 ## Custom search scopes
-Every project and team has a different set of repositories they commonly work with and search over. We've added [custom search scopes](/docs/search/#scope) to enable users and organizations to search over predefined subsets of files and repositories. Instead of typing the set of files and repositories you search over, you can now simply define a search scope and select it from the dropdown next to the search box whenever you need.
+Every project and team has a different set of repositories they commonly work with and search over. We've added [custom search scopes](https://docs.sourcegraph.com/user/search/#scope) to enable users and organizations to search over predefined subsets of files and repositories. Instead of typing the set of files and repositories you search over, you can now simply define a search scope and select it from the dropdown next to the search box whenever you need.
 <div style="padding-bottom:72.8%;height:0;position:relative;">
   <img src="//images.contentful.com/le3mxztn6yoo/6mdWr31pBY2YwgQwmmE446/1c099368b51400f18a9cefdecb8d79dc/SS2017_settings_and_search_scopes.gif" alt="SS2.3 settings and search scopes" class="ba pa1 b--light-7 br2" />
 </div>
 
 ## Saved queries
-[Saved queries](/docs/search/#saved-queries) let you save and describe search queries so you can easily monitor the results on an ongoing basis. You might think of them as the beginning of “Google Alerts or IFTTT/Zapier for your code.”
+[Saved queries](https://docs.sourcegraph.com/user/search/#saved-queries) let you save and describe search queries so you can easily monitor the results on an ongoing basis. You might think of them as the beginning of “Google Alerts or IFTTT/Zapier for your code.”
 
 You can create a saved query for anything searchable, including (with this release) diffs and commits across all branches of your repositories. Saved queries can be an early warning system for common problems in your code--and a way to monitor best practices, the progress of refactors, etc.
 
-See some [examples of useful saved queries](/docs/search/#examples-of-useful-saved-queries), including:
+See some [examples of useful saved queries](https://docs.sourcegraph.com/user/search/#examples-of-useful-saved-queries), including:
 * Recently security-related changes on all branches (which we recommend tech leads monitor every day)
 * Hacks and TODOs in code
 * New usages of specific functions
@@ -81,13 +82,17 @@ See some [examples of useful saved queries](/docs/search/#examples-of-useful-sav
 </div>
 
 ## Admin dashboard
-Server admins now have a dashboard to view and manage users and usage. Go to the settings page and navigate to the admin tab to view the number of page views and search queries users have executed on Sourcegraph. Add admin users by adding usernames to the `adminUsername` field in your [server configuration](/docs/server/config/#configuration).
+
+Server admins now have a dashboard to view and manage users and usage. Go to **User menu > Site admin** to see the site admin area. Add admin users in the **Users** site admin page.
 
 ## More single sign-on (SSO) integrations: OpenID Connect and SAML
-Sourcegraph Server now supports [single sign-on (SSO) user authentication](/docs/server/config/authentication) via OpenID Connect and SAML 2.0. This includes (but is not limited to) support for the following SSO providers: Okta, OneLogin, Ping Identity, Auth0, Salesforce Identity, and Microsoft Azure Active Directory.
+
+Sourcegraph now supports [single sign-on (SSO) user authentication](https://docs.sourcegraph.com/admin/auth) via OpenID Connect and SAML 2.0. This includes (but is not limited to) support for the following SSO providers: Okta, OneLogin, Ping Identity, Auth0, Salesforce Identity, and Microsoft Azure Active Directory.
 
 ## Search and code intelligence on GitHub.com in Chrome/Firefox
-The Sourcegraph [Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack) and [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph-addon-for-github/) now support Sourcegraph Server. After entering the Sourcegraph Server URL in the browser extension settings page, a Sourcegraph search toggle icon will appear in the GitHub search box. Customers of Sourcegraph Enterprise can integrate with GitHub Enterprise and get code intelligence (hovers, go-to-definition, etc.) on GitHub.com and GitHub Enterprise.
+
+The [Sourcegraph browser extension (Chrome/Firefox)](https://docs.sourcegraph.com/integration/browser_extension) now supports self-hosted Sourcegraph instances. After entering the Sourcegraph URL in the browser extension's options menu (revealed by clicking on the Sourcegraph icon in the browser toolbar), you'll get code intelligence on GitHub.com or GitHub Enterprise.
+
 <div style="padding-bottom:73.4%;height:0;position:relative;">
 <img alt="SS2.3 GitHub browser extension" src="//images.contentful.com/le3mxztn6yoo/1fhRd4FYxcACYQOoy8yw8U/fb51d99384947e0a8bac29dff35b3619/SS2.3_GitHub_browser_extension.gif" class="ba pa1 b--light-7 br2 w-100"/>
 </div>
@@ -126,7 +131,12 @@ To go along with diff and commit search, we’ve added new search filters. While
 * `after:”3 weeks ago”`, `before:”june 25, 2017”`, `before:”last thursday”`, etc., to filter by commit date ([example](https://sourcegraph.com/search?q=repo:golang/go%24+type:diff+/package+%5Cw%2B_test/+after:%222+months+ago%22+before:%221+month+ago%22&sq=))
 * `message:”hello”` to show only commits or diffs whose commit message (including the full message body) contains “hello” ([example](https://sourcegraph.com/search?q=repo:Microsoft/TypeScript%24+type:commit+after:%222+weeks+ago%22+file:%5C.ts%24+message:%22fix%28es%29%3F+%23%22&sq=))
 
-## Upgrade today
-Want Sourcegraph Server? **[Install Sourcegraph Server](/docs/server)** for free with a single command.
+## Changelog
 
-Current customers can [upgrade now](/docs/server/).
+See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md) for a list of all changes in this release.
+
+## Upgrade today
+
+Want Sourcegraph? **[Install Sourcegraph](https://docs.sourcegraph.com/#quickstart)** for free with a single command.
+
+Current customers can [update now](https://docs.sourcegraph.com/admin/updates).

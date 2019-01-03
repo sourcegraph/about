@@ -23,6 +23,6 @@ And here’s what’s becoming paid:
 
 Find full details on our [pricing page](/pricing).
 
-As always, it’s [free to use](/docs) Sourcegraph for your team. To purchase a license to use SSO, we now provide self-service checkout right on Sourcegraph.com. Visit (https://sourcegraph.com/user/subscriptions/new) to buy a license today.
+As always, it’s [free to use](https://docs.sourcegraph.com) Sourcegraph for your team. To purchase a license to use SSO, we now provide self-service checkout right on Sourcegraph.com. Visit (https://sourcegraph.com/user/subscriptions/new) to buy a license today.
 
 Existing customer with questions about these changes? [Contact us](/contact) if with any questions.

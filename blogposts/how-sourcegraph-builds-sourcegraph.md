@@ -14,8 +14,8 @@ Our product, [Sourcegraph,](/) lets software teams search and explore their code
 
 We'll be publishing a series of posts here about how we build Sourcegraph. A few things make Sourcegraph and our development process different from many other companies:
 - Our product is for developers, so our developers naturally have a larger role in product  planning and user/customer interaction (compared to companies building products for salespeople, photographers, etc.).
-- Our product needs to be super easy for a single developer to [set up](/docs/server), get code search and intelligence on their organization's codebase, and share with their entire team.
-- Sourcegraph is self-hosted; organizations run the [Docker image](/docs/server/install) or [Kubernetes cluster](/docs/server/datacenter) for Sourcegraph on their own servers. We can't roll back or push out an automatic update. ([Sourcegraph.com](https://sourcegraph.com) is a public instance with only public code from GitHub.com and other sites; customers' code never touches our servers.)
+- Our product needs to be super easy for a single developer to [set up](https://docs.sourcegraph.com/#quickstart), get code search and intelligence on their organization's codebase, and share with their entire team.
+- Sourcegraph is self-hosted; organizations run the [Docker image](https://docs.sourcegraph.com/admin/install) or [Kubernetes cluster](https://docs.sourcegraph.com/admin/install/cluster) for Sourcegraph on their own servers. We can't roll back or push out an automatic update. ([Sourcegraph.com](https://sourcegraph.com) is a public instance with only public code from GitHub.com and other sites; customers' code never touches our servers.)
 - Unlike many other developer-facing products, developers directly interact with our product and its UI. It's not just running behind the scenes.
 
 All this means we need to communicate well internally and externally, and we need to ship a robust, high-quality product to customers on a consistent schedule.

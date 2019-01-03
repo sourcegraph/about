@@ -14,11 +14,11 @@ published: true
 
 <br />
 
-Today, we're bringing fast, powerful code search to the thousands of development teams on Bitbucket Server. With Sourcegraph Server 2.6, we've built out native support for Bitbucket Server to make it easier to get code search across all your Bitbucket Server repositories.
+Today, we're bringing fast, powerful code search to the thousands of development teams on Bitbucket Server. With Sourcegraph 2.6, we've built out native support for Bitbucket Server to make it easier to get code search across all your Bitbucket Server repositories.
 
 Follow these 4 steps to get code search for your Bitbucket Server code:
 
-1. [Spin up a Sourcegraph Server instance](/docs/server) (or use the [Data Center deployment option](https://about.sourcegraph.com/docs/server/datacenter) on Kubernetes for massive scale)
+1. [Spin up a Sourcegraph instance](https://docs.sourcegraph.com/admin) (or use the [cluster deployment option](https://docs.sourcegraph.com/admin/install/cluster) on Kubernetes for massive scale)
 2. Click **Configuration** in the site admin menu.
 3. Click **Add Bitbucket Server repositories** and fill in the fields in the generated `bitbucketServer` configuration option.
 
@@ -29,6 +29,6 @@ Follow these 4 steps to get code search for your Bitbucket Server code:
 
 And that’s it--you're ready to start searching across your Bitbucket Server repositories! 
 
-For all configuration options for Bitbucket Server, see the documentation for the [bitbucketServer configuration option](/docs/server/config/repositories#bitbucket-server-configuration).
+For all configuration options for Bitbucket Server, see the [Bitbucket Server integration documentation](https://docs.sourcegraph.com/integration/bitbucket_server).
 
-[Sourcegraph Server](/docs/server) helps development teams build better software with code search and intelligence. It's free, self-hosted, and takes 5 minutes to set up. Read the [Sourcegraph Server 2.6 announcement blog post](/blog/introducing-sourcegraph-server-2-6) to see more new features from our latest release.
+[Sourcegraph](https://docs.sourcegraph.com) helps development teams build better software with code search and intelligence. It's free, self-hosted, and takes 5 minutes to set up. Read the [Sourcegraph 2.6 announcement blog post](/blog/introducing-sourcegraph-server-2-6) to see more new features from our latest release.
