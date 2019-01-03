@@ -41,9 +41,9 @@ export default class Trial extends React.Component<any, any> {
                                 <p>The best way to search and browse all of your organization's code, with:</p>
                                 <ul className="list pl0">
                                     <li className="mb-2">
-                                        <div className="">HA cluster support</div>
+                                        <div className="">High-scale cluster deployment</div>
                                     </li>
-                                    <li className="mb-2">Cross-repository code intelligence</li>
+                                    <li className="mb-2">Repository-level user permissions</li>
                                     <li className="mb-2">Advanced logging</li>
                                     <li className="mb-2">External database support</li>
                                     <li className="mb-2">Premium support</li>
