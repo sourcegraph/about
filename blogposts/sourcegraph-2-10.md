@@ -18,13 +18,12 @@ This makes one of Sourcegraph's most-loved features—hover tooltips, go-to-defi
 - [Inline symbol typeahead on GitHub](#inline-symbol-typeahead-on-github)
 - [Experimental mermaid.js rendering on GitHub](#experimental-mermaidjs-rendering-on-github)
 - [Better repository syncing with your code host](#better-repository-syncing-with-code-hosts)
-- [Other improvements and fixes](#full-changelog-from-29-to-210)
 
-Ready to install or upgrade? [Get Sourcegraph for yourself (to get started)](/) or [deploy Sourcegraph for your team](/docs).
+Ready to install or upgrade? [Get Sourcegraph 2.10.](https://docs.sourcegraph.com/#quickstart)
 
 ## Smoother tooltips everywhere
 
-Last month we shipped [new, smoother tooltips on Sourcegraph](/blog/sourcegraph-2-9-announcement-code-search-user-rollout-in-large-organizations#improved-code-view-and-hover-tooltips). Now these are available in the [Sourcegraph integration](/docs/integrations) for your code host or code review tool, too (such as Sourcegraph for [Chrome](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/)).
+Last month we shipped [new, smoother tooltips on Sourcegraph](/blog/sourcegraph-2-9-announcement-code-search-user-rollout-in-large-organizations#improved-code-view-and-hover-tooltips). Now these are available in the [Sourcegraph integration](https://docs.sourcegraph.com/integration) for your code host or code review tool, too (such as the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension)).
 
 ![Screenshot from 2018-08-01 11-16-49](//images.ctfassets.net/le3mxztn6yoo/14pZiUUFXeSAeS4CAQ48IY/4630b6856f89cf846dfaf3549d39a4bb/Screenshot_from_2018-08-01_11-16-49.png)
 
@@ -36,7 +35,7 @@ This unification means that we've now built a common platform that lets us build
 
 You now get <kbd>!</kbd> symbol auto-complete in GitHub text boxes, just like GitHub's built-in autocomplete for <kbd>#</kbd> (issue/PR numbers and titles) and <kbd>@</kbd> (names of users and organizations). This makes it easier to link to code when reviewing PRs or filing issues.
 
-When typing an issue or PR comment on GitHub, just type <kbd>!</kbd> in the text box and then the first few letters of a function, class, type, etc., in your repository. (You need to have [Sourcegraph for Chrome/Firefox](/docs/features/browser-extension) installed.)
+When typing an issue or PR comment on GitHub, just type <kbd>!</kbd> in the text box and then the first few letters of a function, class, type, etc., in your repository. (You need to have [Sourcegraph for Chrome/Firefox](https://docs.sourcegraph.com/integration/browser_extension) installed.)
 
 ![2018-07-31 12.56.02](//images.ctfassets.net/le3mxztn6yoo/5o7PyFNNKg0emcI6e8Q6cS/f073f5e6c594fd3fa98b8ca9a9206bbf/2018-07-31_12.56.02.gif)
 
@@ -46,7 +45,7 @@ Architecture diagrams are incredibly useful when trying to understand a codebase
 
 Wouldn’t it be great if you could just specify a diagram directly in markdown, have it rendered nicely in your browser, and have it versioned alongside your code? Now you can!
 
-With the latest [Sourcegraph for Chrome/Firefox](/docs/features/browser-extension), you can can add [mermaid.js](https://mermaidjs.github.io/) diagrams to your markdown files and they will be rendered when viewed on GitHub.com. [Read the instructions](https://github.com/sourcegraph/mermaidjs-example/blob/master/README.md) to get started.
+With the latest [Sourcegraph for Chrome/Firefox](https://docs.sourcegraph.com/integration/browser_extension), you can can add [mermaid.js](https://mermaidjs.github.io/) diagrams to your markdown files and they will be rendered when viewed on GitHub.com. [Read the instructions](https://github.com/sourcegraph/mermaidjs-example/blob/master/README.md) to get started.
 
 ![mermaidjs](//images.ctfassets.net/le3mxztn6yoo/5k55EUL0CQiESGy8gwcyWS/29b17a9f25f9f92fc8f526186a771edd/mermaidjs.gif)
 
@@ -58,44 +57,14 @@ Sourcegraph also now tries harder to stay under your code host's API rate limit,
 
 _If your instance shares an IP or netblock with another host that is abusing GitHub (which happens sometimes on public cloud providers), it's still possible to get temporarily blocked by GitHub. This should be rare, and you're now unlikely to even notice it (except that new repositories and updated repository metadata will not be available)._
 
-_If you've either [disabled repository updates](/docs/config/site/#disableautogitupdates-boolean) or [reduced the repository update interval](/docs/config/site/#repolistupdateinterval-integer) because they were affecting performance, try re-adjusting these settings and let us know how it works out._
+_If you've either [disabled repository updates]https://docs.sourcegraph.com/admin/site_config/all/#disableautogitupdates-boolean) or [reduced the repository update interval]https://docs.sourcegraph.com/admin/site_config/all/#repolistupdateinterval-integer) because they were affecting performance, try re-adjusting these settings and let us know how it works out._
 
+## Changelog
 
-## Full changelog (from 2.9 to 2.10)
-
-- In the file tree, if a directory that contains only a single directory is expanded, its child directory is now expanded automatically. This is especially helpful for Java projects, which often have deeply nested directories.
-- Fixed an issue where Sourcegraph Server would not start code intelligence containers properly when the Sourcegraph Server container was shut down non-gracefully.
-- Fixed an issue where the file tree would return an error when navigating between repositories.
-- Repo-updater has a new and improved scheduler for periodic repository fetches. If you have problems with it, you can revert to the old behavior by adding `"experimentalFeatures": { "updateScheduler": "disabled" }` to your `config.json`.
-- A once-off migration will run changing the layout of cloned repos on disk. This should only affect installations created January 2018 or before. There should be no user visible changes.
-- Experimental feature flag `experimentalFeatures.updateScheduler` enables a smarter and less spammy algorithm for automatic repository updates.
-- It is no longer possible to disable code intelligence by unsetting the LSP_PROXY environment variable. Instead, code intelligence can be disabled per language on the site admin page (e.g. https://sourcegraph.example.com/site-admin/code-intelligence).
-- Bitbucket API requests made by Sourcegraph are now under a self-enforced API rate limit (since Bitbucket Server does not have a concept of rate limiting yet). This will reduce any chance of Sourcegraph slowing down or causing trouble for Bitbucket Server instances connected to it. The limits are: 7,200 total requests/hr, with a bucket size / maximum burst size of 500 requests.
-- Global, org, and user settings are now validated against the schema, so invalid settings will be shown in the settings editor with a red squiggly line.
-- The `http-header` auth provider now supports being used with other auth providers (still only when `experimentalFeatures.multipleAuthProviders` is `true`).
-- Periodic fetches of Gitolite-hosted repositories are now handled internally by repo-updater.
-- The `log.sentry.dsn` field in the site config makes Sourcegraph log application errors to a Sentry instance.
-- Two new repository page hotkeys were added: <kbd>r</kbd> to open the repositories menu and <kbd>v</kbd> to open the revision selector.
-- Repositories are periodically (~45 days) recloned from the codehost. The codehost can be relied on to give an efficient packing. This is an alternative to running a memory and CPU intensive git gc and git prune.
-- The `auth.sessionExpiry` field sets the session expiration age in seconds (defaults to 90 days).
-- Fixed a bug in the API console that caused it to display as a blank page in some cases.
-- Fixed cases where GitHub rate limit wasn't being respected.
-- Fixed a bug where scrolling in references, history, etc. file panels was not possible in Firefox.
-- Fixed cases where gitserver directory structure migration could fail/crash.
-- Fixed "Generate access token" link on user settings page. Previously, this link would 404.
-- Fixed a bug where the search query was not updated in the search bar when searching from the homepage.
-- Fixed a possible crash in github-proxy.
-- `SOURCEGRAPH_CONFIG` environment variable has been removed. Site configuration is always read from and written to disk. You can configure the location by providing `SOURCEGRAPH_CONFIG_FILE`. The default path is `/etc/sourcegraph/config.json`.
-- The search results page will merge duplicated lines of context.
-- The following deprecated site configuration properties have been removed: `github[].preemptivelyClone`, `gitOriginMap`, `phabricatorURL`, `githubPersonalAccessToken`, `githubEnterpriseURL`, `githubEnterpriseCert`, and `githubEnterpriseAccessToken`. (All have been superseded for 6 months by other properties.)
-- The `settings` field in the site config file is deprecated and will not be supported in a future release. Site admins should move those settings (if any) to global settings (in the site admin UI). Global settings are preferred to site config file settings because the former can be applied without needing to restart/redeploy the Sourcegraph server or cluster.
-- Fixed a goroutine leak which occurs when search requests are canceled.
-- Console output should have fewer spurious line breaks.
-- Fixed an issue where it was not possible to override the `StrictHostKeyChecking` SSH option in the SSH configuration.
-- Fixed an issue where saving an organization's configuration would hang indefinitely.
+See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md) for a list of all changes in this release.
 
 ---
 
-**Ready to install or upgrade? [Get Sourcegraph for yourself (to get started)](/) or [deploy Sourcegraph for your team](/docs).**
+Ready to install or upgrade? [Get Sourcegraph 2.10.](https://docs.sourcegraph.com/#quickstart)
 
-Questions/feedback/complaints/requests? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues). We're planning for our next release in August right now, so the sooner we hear from you, the better!
+Questions/feedback/complaints/requests? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues). We're planning for our next release in August right now, so the sooner we hear from you, the better!

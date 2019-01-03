@@ -1,5 +1,5 @@
 ---
-title: 'Sourcegraph, Code Intelligence, and the Language Server Protocol'
+title: 'Sourcegraph, code intelligence, and the Language Server Protocol'
 author: 'Beyang Liu'
 publishDate: 2017-05-15T00:00-07:00
 tags: [
@@ -16,19 +16,19 @@ Pick your favorite Java repository and a revision and file at random (or [try th
 
 How does the magic work? A big part of it is a new open standard called the **Language Server Protocol** (LSP). We think LSP will benefit almost every code editor and plugin, and we’d like to explain why with examples of how Sourcegraph has used it to scale to millions of repositories across many different languages.
 
-[![](https://cdn-images-1.medium.com/max/1000/1*LOyxNByJZg-9xdHVQWotbw.png)](https://sourcegraph.com/github.com/junit-team/junit4@d07ed0bf79efd81c260f327854a02097f59fffb2/-/blob/src/main/java/org/junit/Test.java#L66:20)Instant Code Intelligence on Sourcegraph
+[![](https://cdn-images-1.medium.com/max/1000/1*LOyxNByJZg-9xdHVQWotbw.png)](https://sourcegraph.com/github.com/junit-team/junit4@d07ed0bf79efd81c260f327854a02097f59fffb2/-/blob/src/main/java/org/junit/Test.java#L66:20)
 
-### Code Intelligence
+### Code intelligence
 
 Jump-to-definition, find references, and symbol search are crucial tools for the everyday tasks of understanding and working with code. Their importance is obvious to users of IDEs like the Eclipse IDE, and there’s a constant effort to build plugins that provide these features for more and more languages.
 
-The [Language Server Protocol](https://github.com/Microsoft/language-server-protocol), originally released by Microsoft, is an open standard that makes it much easier to write editor plugins that work across many languages. And beyond the code in your editor, it has enabled Sourcegraph to bring such features to all the other places programmers view code, including your [web browser](https://sourcegraph.com/github.com/junit-team/junit4@d07ed0bf79efd81c260f327854a02097f59fffb2/-/blob/src/main/java/org/junit/Test.java#L66:20), [code review tool](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en), and [code search](https://text.sourcegraph.com/introducing-code-search-in-sourcegraph-5944a3b75df7).
+The [Language Server Protocol](https://github.com/Microsoft/language-server-protocol), originally released by Microsoft, is an open standard that makes it much easier to write editor plugins that work across many languages. And beyond the code in your editor, it has enabled Sourcegraph to bring such features to all the other places programmers view code, including your [web browser](https://sourcegraph.com/github.com/junit-team/junit4@d07ed0bf79efd81c260f327854a02097f59fffb2/-/blob/src/main/java/org/junit/Test.java#L66:20), [code review tool](https://docs.sourcegraph.com/integration/browser_extension?hl=en), and [code search](https://text.sourcegraph.com/introducing-code-search-in-sourcegraph-5944a3b75df7).
 
 ![0-dfLDwCJbsrLWI63Q](//images.contentful.com/le3mxztn6yoo/2FxIw5zjk46e2a62SaYic8/738b01cc83f47bf63599ed3dae58807c/0-dfLDwCJbsrLWI63Q.png)
 
 An example of the protocol in use, from the <a href='https://github.com/Microsoft/language-server-protocol/blob/master/README.md'>README</a>.
 
-Sourcegraph is designed to be a quick, frictionless way to make sense of code. It’s faster than OpenGrok and as smart as your IDE when it comes to things like finding all references to a symbol. Underneath the hood is a complex system that parses and analyzes source code on the fly to provide underlying capabilities that we call **Code Intelligence**. “Code Intelligence” is just shorthand for language-aware productivity boosters like:
+Sourcegraph is designed to be a quick, frictionless way to make sense of code. It’s faster than OpenGrok and as smart as your IDE when it comes to things like finding all references to a symbol. Underneath the hood is a complex system that parses and analyzes source code on the fly to provide underlying capabilities that we call **code intelligence**. “Code Intelligence” is just shorthand for language-aware productivity boosters like:
 
 *   Jump to definition
 *   Find references
@@ -79,6 +79,6 @@ The primitive capabilities we require to support these features also happen to b
 
 I’d love to live in a world where it’s as easy to use the Eclipse IDE to write Python or JavaScript as it is to write Java. I’d also love a world where exploring code in any language with IDE-like superpowers was as easy as sharing [this hyperlink](https://sourcegraph.com/github.com/junit-team/junit4@d07ed0bf79efd81c260f327854a02097f59fffb2/-/blob/src/main/java/org/junit/Test.java#L66:22).
 
-We think the Language Server Protocol will enable both these dreams to become reality. Code Intelligence is what makes the experience of using your IDE magical, and LSP makes that magic far more tractable to implement. We’ve used it to great success so far at [Sourcegraph](https://sourcegraph.com/) and we’d highly encourage you to check it out for your IDE and editor plugins.
+We think the Language Server Protocol will enable both these dreams to become reality. Code intelligence is what makes the experience of using your IDE magical, and LSP makes that magic far more tractable to implement. We’ve used it to great success so far at [Sourcegraph](https://sourcegraph.com/) and we’d highly encourage you to check it out for your IDE and editor plugins.
 
 Questions, comments, or feedback about Sourcegraph or LSP? [Let us know](https://twitter.com/srcgraph)!

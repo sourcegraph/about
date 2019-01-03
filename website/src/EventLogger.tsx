@@ -7,11 +7,6 @@ class EventLogger {
             location_on_page: loc,
         })
     }
-    public trackEditorLinkClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'EditorLinkClicked', {
-            location_on_page: loc,
-        })
-    }
     public trackServerLinkClicked(loc: any): void {
         this.trackEvent('Pages', 'Click', null, 'ServerLinkClicked', {
             location_on_page: loc,

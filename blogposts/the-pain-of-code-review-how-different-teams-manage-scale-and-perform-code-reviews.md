@@ -14,7 +14,7 @@ published: true
 
 We invited ten developers from leading tech startups around the Bay Area to join us for an “off-the-record” dinner to discuss the practice of code review (and what we want in an ideal code review process). Below is a wrap-up of the salient points from our dinner. Given the off-the-record nature of this discussion, we have removed any mention of proprietary processes, repositories, or code examples.
 
-**Update, 11/1/2016:** The [Sourcegraph Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack) now provides tooltips and go to definition on pull requests for all Go, TypeScript, and JavaScript repositories.
+**Update, 11/1/2016:** The [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) now provides tooltips and go to definition on pull requests for all Go, TypeScript, and JavaScript repositories.
 
 #### A list of the tools mentioned:
 

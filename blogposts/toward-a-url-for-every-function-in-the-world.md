@@ -56,7 +56,7 @@ Here are some **examples of named URLs**:
 3.  Click on the result.
 4.  Copy the URL in the address bar.
 
-That’s it. You can also use the [Sourcegraph Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en) to make it easy to jump to any function’s URL when you’re on GitHub.
+That’s it. You can also use the [Sourcegraph Chrome extension](https://docs.sourcegraph.com/integration/browser_extension) to make it easy to jump to any function’s URL when you’re on GitHub.
 
 To refer to a function at a specific point in time, you can add an explicit commit ID by pressing “y”.
 

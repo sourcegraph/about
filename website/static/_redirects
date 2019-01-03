@@ -75,3 +75,5 @@
 /docs/config/repositories#aws-codecommit-configuration                                    https://docs.sourcegraph.com/integration/aws_codecommit#aws-codecommit-configuration              301
 /docs/config/repositories#github-configuration                                            https://docs.sourcegraph.com/integration/github#syncing-github-repositories                       301
 /docs/migration/oracle-opengrok-to-sourcegraph                                            https://docs.sourcegraph.com/admin/migration/opengrok                                             301
+/product/server 301 https://docs.sourcegraph.com
+/product/browser-extension 301 https://docs.sourcegraph.com/integration/browser_extension

@@ -676,7 +676,7 @@ export default class Pricing extends React.Component<any, any> {
                                         <div className="col-6 feature-title">
                                             Logging and monitoring for your Sourcegraph instance (
                                             <a
-                                                href="https://docs.sourcegraph.com/admin/monitorg-and-tracing"
+                                                href="https://docs.sourcegraph.com/admin/monitoring-and-tracing"
                                                 target="_blank"
                                             >
                                                 learn more

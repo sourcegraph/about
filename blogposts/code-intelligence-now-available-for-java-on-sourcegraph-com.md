@@ -39,9 +39,9 @@ Global usage examples show you how other repositories use a given class or metho
 
 #### Code Intelligence in your GitHub pull requests
 
-Java Code Intelligence on Maven-based projects is now also available in the Sourcegraph [GitHub Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en). That means hover tooltips and jump-to-definition in GitHub pull requests and the code browser:
+Java Code Intelligence on Maven-based projects is now also available in the Sourcegraph [GitHub Chrome extension](https://docs.sourcegraph.com/integration/browser_extension?hl=en). That means hover tooltips and jump-to-definition in GitHub pull requests and the code browser:
 
-[![](https://cdn-images-1.medium.com/max/800/1*F-6teGnQ7HMFjAkSKwtf8Q.png)](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack)Doc tooltips and jump-to-definition on GitHub
+[![](https://cdn-images-1.medium.com/max/800/1*F-6teGnQ7HMFjAkSKwtf8Q.png)](https://docs.sourcegraph.com/integration/browser_extension)Doc tooltips and jump-to-definition on GitHub
 
 #### Available in the cloud and on-premises
 

@@ -12,15 +12,15 @@ published: true
 
 
 
-Wouldn’t it be awesome if you could review, browse, and search code on GitHub as though you were in an IDE, with jump-to-definition, doc tooltips, and cross-references? We think so. That’s why we built the Sourcegraph [Chrome extension for GitHub.](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack)
+Wouldn’t it be awesome if you could review, browse, and search code on GitHub as though you were in an IDE, with jump-to-definition, doc tooltips, and cross-references? We think so. That’s why we built the Sourcegraph [Chrome extension for GitHub](https://docs.sourcegraph.com/integration/browser_extension).
 
 _Update (June 22, 2016): Added support for pull requests and diffs._
 
-[**Install Chrome extension for GitHub.**] (https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack) And don’t let your team review any code until they get it, too!_For Go, Java, TypeScript, and JavaScript only; more languages_ [_coming soon_](https://sourcegraph.com/beta)_!_
+[**Install Chrome extension for GitHub.**] (https://docs.sourcegraph.com/integration/browser_extension) And don’t let your team review any code until they get it, too!_For Go, Java, TypeScript, and JavaScript only; more languages_ [_coming soon_](https://sourcegraph.com/beta)_!_
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/hIs4QtuM1Ig" frameborder="0" allowfullscreen></iframe>
 
-The [Sourcegraph Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack) keeps you in flow while coding, with:
+The [Sourcegraph Chrome extension](https://docs.sourcegraph.com/integration/browser_extension) keeps you in flow while coding, with:
 
 1.  **Go-to-definition:** When you’re browsing files or reviewing pull requests on GitHub, you can use the extension to click on anything in your code to jump to its definition, or hover to get documentation tooltips.
 2.  **Find usages:** See examples of how a function or type is used across your company’s code as well as open-source repositories on GitHub.
@@ -39,7 +39,7 @@ It’s totally free. See what other devs are saying about it:
 
 * * *
 
-### [I**nstall the Sourcegraph Chrome extension**](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack)
+### [I**nstall the Sourcegraph Chrome extension**](https://docs.sourcegraph.com/integration/browser_extension)
 
 _Update (June 22, 2016): Added support for pull requests and diffs._
 

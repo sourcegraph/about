@@ -26,44 +26,13 @@ New in Sourcegraph 2.8:
 - [Server pings](#server-pings)
 - [Misc.](#misc)
 
-**Ready to install or upgrade? [Get Sourcegraph 2.8.](/)**
+**Ready to install or upgrade? [Get Sourcegraph 2.8.](https://docs.sourcegraph.com/#quickstart)**
 
 ## Code intelligence for 13 more languages, via LSP
 
-With code intelligence on Sourcegraph, you can navigate code more easily with hovers, 
-definitions, references, implementations, etc. It's all powered by language servers based on the [Language Server Protocol (LSP)](http://langserver.org) standard.
+With code intelligence on Sourcegraph, you can navigate code more easily with hovers, definitions, references, implementations, etc.
 
-Sourcegraph 2.8 ships with support for 13 more languages (in addition to the 6 languages already supported), thanks to the amazing contributions of hundreds of developers in the LSP ecosystem. In this release, you can also [connect any other LSP-compliant language server](/docs/code-intelligence/adapting-language-servers) to Sourcegraph.
-
-This brings the full list of languages with code intelligence on Sourcegraph to 19:
-
-*   [Go](/docs/code-intelligence/go)
-*   [JavaScript](/docs/code-intelligence/javascript)
-*   [TypeScript](/docs/code-intelligence/typescript)
-*   [Python](/docs/code-intelligence/python)
-*   [Java](/docs/code-intelligence/java)
-*   [PHP](/docs/code-intelligence/php)
-*   [Bash](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [Clojure](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [C++](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [C#](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [CSS](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [Dockerfile](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [Elixir](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [HTML](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [Lua](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [OCaml](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [R](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [Ruby](/docs/code-intelligence/experimental-language-servers) (experimental)
-*   [Rust](/docs/code-intelligence/experimental-language-servers) (experimental)
-
-To get code intelligence for these new languages, see "[Experimental language servers](/docs/code-intelligence/experimental-language-servers)". Of course, once you've set them up on your organization's Sourcegraph instance, you'll also get code intelligence in all the Sourcegraph integrations you're using, such as GitHub, Phabricator, etc.
-
-For more information, see today's announcement "[Code intelligence for 13 more languages, with first-class LSP support](/blog/code-intelligence-for-more-languages-and-lsp-language-server-protocol-support)".
-
-Here's a GIF of the experimental new C# support:
-
-<img src="https://cl.ly/2R1f0D2e1I1w/csharp.gif" style="max-width:550px" />
+**Update:** Sourcegraph now uses [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) for language support. This section has been edited to avoid confusion.
 
 ## Perf improvements for massive monorepos
 
@@ -75,13 +44,13 @@ Our test monorepo is too large for GitHub.com, but you can try the perf improvem
 
 ## Sourcegraph API
 
-Sourcegraph's API is ready for you to start building on. Here are some examples of things you can do with the Sourcegraph API on your organization's own Sourcegraph instance:
+Sourcegraph's GraphQL API is ready for you to start building on. Here are some examples of things you can do with the Sourcegraph API on your organization's own Sourcegraph instance:
 
 - [See the most-used programming languages in all of your organization's active repositories](https://sourcegraph.com/api/console#%7B%22query%22%3A%22%7B%5Cn%20%20repositories(enabled%3A%20true%2C%20query%3A%5C%22github.com%2Fsourcegraph%2F%5C%22)%20%7B%5Cn%20%20%20%20nodes%20%7B%5Cn%20%20%20%20%20%20name%5Cn%20%20%20%20%20%20language%5Cn%20%20%20%20%7D%5Cn%20%20%7D%5Cn%7D%5Cn%22%7D)
 - List all repositories without a Dockerfile, .travis.yml, LICENSE, README, etc.
 - Find all repositories that call a specific function or depend on a specific package
 
-See [interactive Sourcegraph API examples](/docs/features/api/examples) for more inspiration.
+See [Sourcegraph GraphQL API examples](https://docs.sourcegraph.com/api/graphql/examples) for more inspiration.
 
 The API exposes all of the data that Sourcegraph itself uses, such as:
 
@@ -92,9 +61,9 @@ The API exposes all of the data that Sourcegraph itself uses, such as:
 
 Sourcegraph uses this API for everything, so the API is just as powerful, fast, and reliable as the Sourcegraph itself. You can play around with it on the [GraphQL console](https://sourcegraph.com/api/console) on on Sourcegraph.com or your own instance. Two other new features shipping today also help you use the API: the [Sourcegraph CLI](https://github.com/sourcegraph/src-cli) tool and [access tokens](#access-token-improvements).
 
-One surprising thing we learned from customers is that never worrying about API rate limits is just as exciting as the new kinds of data exposed by the Sourcegraph API. We put tons of work into making Sourcegraph search, code intelligence, and mirrored Git data access super fast for interactive users--and that means you can write API clients that hit your Sourcegraph instance way harder than you could hit any code host. If needed, get [Sourcegraph Data Center](/docs/datacenter) for massive scale.
+One surprising thing we learned from customers is that never worrying about API rate limits is just as exciting as the new kinds of data exposed by the Sourcegraph API. We put tons of work into making Sourcegraph search, code intelligence, and mirrored Git data access super fast for interactive users--and that means you can write API clients that hit your Sourcegraph instance way harder than you could hit any code host. If needed, get [Sourcegraph cluster deployment option](https://docs.sourcegraph.com/admin/install/cluster) for massive scale.
 
-Check out the new [Sourcegraph API documentation](/docs/features/api) to get started. Not sure how to do something using the API? Post in our [public issue tracker](https://github.com/sourcegraph/issues).
+Check out the new [Sourcegraph GraphQL API documentation](https://docs.sourcegraph.com/api/graphql) to get started. Not sure how to do something using the API? Post in our [public issue tracker](https://github.com/sourcegraph/sourcegraph).
 
 ## Improved Phabricator integration for code intelligence in diffs
 
@@ -107,31 +76,31 @@ Code intelligence is most powerful when it's available in your code review tool.
 
 ![phabricator-extension-differential](//images.ctfassets.net/le3mxztn6yoo/5SXiFECe7SkKCIyeeoUGYe/959884db905b3f5ede1b14790d4ae346/phabricator-extension-differential.png)
 
-[Install the Sourcegraph extension for Phabricator.](https://github.com/sourcegraph/phabricator-extension) Want support for another code host or code review tool (other than GitHub, which is also supported)? File an issue in our [public issue tracker](https://github.com/sourcegraph/issues/issues).
+[Install the Sourcegraph extension for Phabricator.](https://github.com/sourcegraph/phabricator-extension) Want support for another code host or code review tool (other than GitHub, which is also supported)? File an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues).
 
 ## User authentication providers: easier, more configurable ways for users to sign into Sourcegraph
 
 We've improved Sourcegraph's support for user authentication providers, which allow users to sign into Sourcegraph using their existing accounts in your organization's SSO/directory service. Support is included for SAML, OpenID Connect (including G Suite for Google accounts), and HTTP authentication proxies.
 
 - The new site configuration property `auth.providers` defines the list of authentication providers in one place (instead of having authentication configuration scattered among `auth.provider` and other `auth.*` properties). Backcompat for the old (now-deprecated) `auth.provider` configuration is maintained.
-- All authentication provider configuration changes are reflected immediately (in Sourcegraph Server) without the need for a restart.
+- All authentication provider configuration changes are reflected immediately (in Sourcegraph) without the need for a restart.
 - Error messages describing authentication configuration problems are much better, both for end users and for site admins.
 - Improved user authentication provider documentation with clear steps for multiple commonly used services (Okta, OneLogin, G Suite, etc.).
 - Single-logout and token revocation are supported for OpenID Connect and SAML, so users can sign out of both Sourcegraph and the authentication provider.
 - Site admins can see who has signed into Sourcegraph via an authentication provider and inspect auth/account details for troubleshooting.
 
-See [user authentication provider documentation](/docs/config/authentication) for setup instructions. Need support for other authentication providers or other configuration points? File an issue in our [public issue tracker](https://github.com/sourcegraph/issues/issues).
+See [user authentication provider documentation](https://docs.sourcegraph.com/admin/auth) for setup instructions. Need support for other authentication providers or other configuration points? File an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues).
 
 ## Access token improvements
 
 This release improves support for access tokens, which enable access to the Sourcegraph API by external tools and scripts.
 
-- Access tokens now work with [external user authentication providers](/docs/config/authentication) (OpenID Connect, SAML, and HTTP authentication proxies).
-- A new [`site-admin:sudo` scope for access tokens](/docs/features/api#sudo-access-tokens) (which only site admins may use) lets the holder impersonate other users. This lays the foundation for future releases to integrate more closely with external tools in a seamless and authorization-aware manner. Stay tuned!
+- Access tokens now work with [external user authentication providers](https://docs.sourcegraph.com/admin/auth) (OpenID Connect, SAML, and HTTP authentication proxies).
+- A new [`site-admin:sudo` scope for access tokens](https://docs.sourcegraph.com/api/graphql#sudo-access-tokens) (which only site admins may use) lets the holder impersonate other users. This lays the foundation for future releases to integrate more closely with external tools in a seamless and authorization-aware manner. Stay tuned!
 - Site admins can now view all access tokens (created by any user) and revoke any access token.
 - The owner of an access token (and site admins) can now see when it was last used, to make it easier to prune unused tokens.
 
-Along with the [Sourcegraph API improvements](#sourcegraph-api) in this release, we're working hard to let you build new kinds of tools on Sourcegraph to speed up and automate your team's work.
+Along with the [Sourcegraph GraphQL API improvements](#sourcegraph-api) in this release, we're working hard to let you build new kinds of tools on Sourcegraph to speed up and automate your team's work.
 
 <!--
 
@@ -156,17 +125,21 @@ Try the new code view and hover on an [example open-source file](https://sourceg
 
 Sourcegraph no longer tracks any detailed usage data, so the `disableTelemetry` configuration option has been deprecated. (The telemetry that it disabled has been completely removed.)
 
-Sourcegraph instances will [ping Sourcegraph.com periodically with high-level and aggregate data](/docs/usage#server-pings). It never sends code, repository names, usernames, or any other specific data. Customers can disable pings. [Contact support](/contact) to learn more.
+Sourcegraph instances will [ping Sourcegraph.com periodically with high-level and aggregate data](https://docs.sourcegraph.com/admin/pings). It never sends code, repository names, usernames, or any other specific data. Customers can disable pings. [Contact support](/contact) to learn more.
 
 ## Misc.
 
 - The new repository contributors page ([example](https://sourcegraph.com/github.com/moby/moby/-/stats/contributors)) displays the top Git commit authors in a repository, with filtering options.
 - We've finally put the "graph" in Sourcegraph: the site admin analytics page now displays graphical charts of daily/weekly/monthly active user counts.
 - If the site configuration contains any deprecated options, a warning will be shown at the top of each page for all site admins. 
-- [MOTD](/docs/config/site-settings#motd-array-of-strings): display a dismissible Markdown-rendered message at the top of each page to all users.
+- [MOTD]https://docs.sourcegraph.com/admin/site_config/all-settings#motd-array-of-strings): display a dismissible Markdown-rendered message at the top of each page to all users.
+
+## Changelog
+
+See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md) for a list of all changes in this release.
 
 ---
 
-**Ready to install or upgrade? [Get Sourcegraph 2.8.](/)**
+**Ready to install or upgrade? [Get Sourcegraph 2.8.](https://docs.sourcegraph.com/#quickstart)**
 
-Questions/feedback/complaints/requests? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues). We're planning for our next release, Sourcegraph 2.9 in mid-June, right now. The sooner we hear from you, the better!
+Questions/feedback/complaints/requests? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues). We're planning for our next release, Sourcegraph 2.9 in mid-June, right now. The sooner we hear from you, the better!

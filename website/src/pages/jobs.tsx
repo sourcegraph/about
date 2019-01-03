@@ -44,7 +44,7 @@ export default class JobsPage extends React.Component<any, any> {
                                 in every industry can create products using the best technology.
                             </p>
                             <a href="https://github.com/sourcegraph/careers/blob/master/README.md">
-                                <button className="btn jobs__head-button">View Open Positions</button>
+                                <button className="btn jobs__head-button">View open positions</button>
                             </a>
                         </div>
                     </section>
@@ -86,7 +86,7 @@ export default class JobsPage extends React.Component<any, any> {
                                 <div className="jobs__benefits-list-item">
                                     <img className="jobs__benefits-list-item-icon" src="/jobs/family.svg" />
                                     <div>
-                                        <h3 className="jobs__benefits-list-item-title">Family Friendly</h3>
+                                        <h3 className="jobs__benefits-list-item-title">Family friendly</h3>
                                         <p className="jobs__benefits-list-item-description">
                                             We value and support teammates at all stages of life.
                                         </p>
@@ -97,7 +97,7 @@ export default class JobsPage extends React.Component<any, any> {
                     </section>
                     <section className="jobs__team">
                         <div className="jobs__container">
-                            <h1>Our Team</h1>
+                            <h1>Our team</h1>
                             <p className="jobs__team jobs__team--text">
                                 Our team consists of talented, collaborative, driven individuals who are attracted to
                                 the massive problem we are tackling. We work in an open environment that treats people
@@ -130,7 +130,7 @@ export default class JobsPage extends React.Component<any, any> {
                     </section>
                     <section className="jobs__work">
                         <div className="jobs__container">
-                            <h1>Our Work</h1>
+                            <h1>Our work</h1>
                             <p>
                                 View a few of our open-source projects to get an idea of some of the problems we are
                                 working on.
@@ -145,7 +145,7 @@ export default class JobsPage extends React.Component<any, any> {
                                         <div className="jobs__work--buttons-text">
                                             <span className="jobs__work--buttons-text-title">Go language server</span>
                                             <span className="jobs__work--buttons-text-description">
-                                                Go Language Server to Add Go Support to Editors
+                                                Go language server to add Go support to editors
                                             </span>
                                         </div>
                                         <div className="jobs__work--buttons-icon">
@@ -161,10 +161,10 @@ export default class JobsPage extends React.Component<any, any> {
                                     <div className="jobs__work--buttons-button">
                                         <div className="jobs__work--buttons-text">
                                             <span className="jobs__work--buttons-text-title">
-                                                JavaScript and TypeScript Language Server
+                                                JavaScript and TypeScript language server
                                             </span>
                                             <span className="jobs__work--buttons-text-description">
-                                                JavaScript and TypeScript Code Intelligence
+                                                JavaScript and TypeScript code intelligence
                                             </span>
                                         </div>
                                         <div className="jobs__work--buttons-icon">

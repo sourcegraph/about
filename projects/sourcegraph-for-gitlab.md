@@ -17,7 +17,7 @@ extension, just as 10,000s of developers get on GitHub now.
 
 To start using this:
 
-1. Install [Sourcegraph for Chrome](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack) or [Sourcegraph for Firefox](https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/)
+1. Install the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension)
 2. Visit [common/executor.go](https://gitlab.com/gitlab-org/gitlab-runner/blob/master/common/executor.go) in [gitlab-org/gitlab-runner](https://gitlab.com/gitlab-org/gitlab-runner) on GitLab (or any other file in a public repository)
 3. Enable Sourcegraph for GitLab on Chrome by right clicking the Sourcegraph logo in your browser's
    toolbar and click "Enable Sourcegraph on this domain".
