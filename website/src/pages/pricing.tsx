@@ -76,6 +76,9 @@ export default class Pricing extends React.Component<any, any> {
                                                 </div>
                                                 <div className="row">
                                                     <div className="col-12 features">
+                                                        <a href="#deployment">
+                                                            <p>Self-hosted or cloud managed</p>
+                                                        </a>
                                                         <a href="#admin">
                                                             <p>200-user limit</p>
                                                         </a>
@@ -95,7 +98,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Support on our public issue tracker</p>
                                                         </a>
                                                         <a href="#admin">
-                                                            <p>SSO integration</p>
+                                                            <p>SSO integrations</p>
                                                         </a>
                                                         <a href="#integrations">
                                                             <p>Code host and editor integrations</p>
@@ -130,14 +133,17 @@ export default class Pricing extends React.Component<any, any> {
                                                 </div>
                                                 <div className="row">
                                                     <div className="col-12 features">
+                                                        <a href="#deployment">
+                                                            <p>Self-hosted or cloud managed</p>
+                                                        </a>
                                                         <a href="#admin">
                                                             <p>No user limit</p>
                                                         </a>
                                                         <a href="#admin">
                                                             <p>Scalable cluster support</p>
                                                         </a>
-                                                        <a href="#intelligence">
-                                                            <p>Cross-repository code intelligence</p>
+                                                        <a href="#admin">
+                                                            <p>Repository-level user permissions</p>
                                                         </a>
                                                         <a href="#admin">
                                                             <p>Advanced logging</p>
@@ -178,7 +184,7 @@ export default class Pricing extends React.Component<any, any> {
                                         <a href="https://docs.sourcegraph.com/admin/subscriptions#true-up-pricing">
                                             Sourcegraph's true-up pricing model
                                         </a>
-                                        . For a limited starter package, <a href="/contact/sales/">contact us</a>.
+                                        .
                                     </div>
                                 </div>
                             </div>
@@ -400,7 +406,16 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="deployment" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-8 feature-title">On-premises deployment</div>
+                                        <div className="col-8 feature-title">On-premises deployment (
+                                            <a
+                                                href="https://docs.sourcegraph.com/"
+                                                target="_blank"
+                                                onClick={this.trackInstallSourcegraphServerClicked}
+                                            >
+                                                learn more
+                                            </a>
+                                            )
+                                        </div>
                                         <div className="col-2">
                                             <div className="table-check" />
                                         </div>
@@ -409,7 +424,12 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-8 feature-title">Managed deployment option</div>
+                                        <div className="col-8 feature-title">Managed deployment option (
+                                            <a href="/contact" target="_blank">
+                                                contact us
+                                            </a>
+                                            )
+                                        </div>
                                         <div className="col-2">
                                             <div className="table-blank" />
                                         </div>
@@ -419,8 +439,8 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
-                                            High-scale and high-availability cluster deployment option (
-                                            <a href="https://github.com/sourcegraph/deploy-sourcegraph" target="_blank">
+                                            High-scale cluster deployment option (
+                                            <a href="https://docs.sourcegraph.com/admin/install/cluster" target="_blank">
                                                 learn more
                                             </a>
                                             )
@@ -443,15 +463,6 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
-                                        </div>
-                                        <div className="col-2">
-                                            <div className="table-check" />
-                                        </div>
-                                    </div>
-                                    <div className="row feature-table-row">
-                                        <div className="col-8 feature-title">Next business day support</div>
-                                        <div className="col-2">
-                                            <div className="table-blank" />
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
@@ -486,7 +497,7 @@ export default class Pricing extends React.Component<any, any> {
                                             )
                                         </div>
                                         <div className="col-2">
-                                            <div className="table-blank" />
+                                            <div className="table-check" />
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
