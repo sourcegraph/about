@@ -406,7 +406,8 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="deployment" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-8 feature-title">On-premises deployment (
+                                        <div className="col-8 feature-title">
+                                            On-premises deployment (
                                             <a
                                                 href="https://docs.sourcegraph.com/"
                                                 target="_blank"
@@ -424,7 +425,8 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                     <div className="row feature-table-row">
-                                        <div className="col-8 feature-title">Managed deployment option (
+                                        <div className="col-8 feature-title">
+                                            Managed deployment option (
                                             <a href="/contact" target="_blank">
                                                 contact us
                                             </a>
@@ -440,7 +442,10 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
                                             High-scale cluster deployment option (
-                                            <a href="https://docs.sourcegraph.com/admin/install/cluster" target="_blank">
+                                            <a
+                                                href="https://docs.sourcegraph.com/admin/install/cluster"
+                                                target="_blank"
+                                            >
                                                 learn more
                                             </a>
                                             )
