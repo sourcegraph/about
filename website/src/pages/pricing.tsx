@@ -427,7 +427,11 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
                                             Managed deployment option (
-                                            <a href="/contact" target="_blank">
+                                            <a
+                                                href="/contact/sales"
+                                                target="_blank"
+                                                onClick={this.trackContactUsButtonClicked}
+                                            >
                                                 contact us
                                             </a>
                                             )
