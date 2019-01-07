@@ -323,6 +323,10 @@ export default class About extends React.Component<any, any> {
                                     </div>
                                     <br />
                                     <div className="about__founders-advisors-item">
+                                        <strong>David Stewart</strong>, Trinity Ventures
+                                    </div>
+                                    <br />
+                                    <div className="about__founders-advisors-item">
                                         <strong>Jens Pillgram-Larsen</strong>, Google
                                     </div>
                                     <br />
@@ -335,7 +339,15 @@ export default class About extends React.Component<any, any> {
                                     </div>
                                     <br />
                                     <div className="about__founders-advisors-item">
+                                        <strong>Mike Saparov</strong>, CoreOS
+                                    </div>
+                                    <br />
+                                    <div className="about__founders-advisors-item">
                                         <strong>Audrey Maclean</strong>, Entrepreneur
+                                    </div>
+                                    <br />
+                                    <div className="about__founders-advisors-item">
+                                        <strong>Joe Malchow</strong>, Hanover
                                     </div>
                                     <br />
                                     <div className="about__founders-advisors-item">
@@ -343,7 +355,7 @@ export default class About extends React.Component<any, any> {
                                     </div>
                                     <br />
                                     <div className="about__founders-advisors-item">
-                                        <strong>John Vrionis</strong>, Lightspeed Venture Partners
+                                        <strong>John Vrionis</strong>, Unusual Ventures
                                     </div>
                                     <br />
                                     <div className="about__founders-advisors-item">
