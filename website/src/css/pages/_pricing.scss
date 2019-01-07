@@ -290,7 +290,6 @@
     margin-bottom: 0;
     @media screen and (max-width: $media-md) {
         padding: 10vh 0;
-		overflow: hidden;
     }
     h1 {
         padding-bottom: 4rem;
@@ -303,22 +302,29 @@
     .cta-row {
         margin-top: 5rem;
         text-align: center;
+
         .btn {
             width: 12rem;
             text-align: center;
-            justify-content: center;
             display: inline-flex;
-            margin-right: 2rem;
+			justify-content: center;
             margin-top: 1rem;
+			margin-right: 2rem;
 			@media screen and (max-width: $media-md) {
-				width: 100%;
 				margin-right: 0;
-			}
+	        }
         }
+		.contact-row {
+			display: flex;
+			justify-content: center;
+			@media screen and (max-width: $media-md) {
+				justify-content: space-around;
+	        }
+		}
     }
 	.feature-table-header,
 	.feature-table-row {
-		.col-6:first-of-type {
+		.col-8:first-of-type {
 			text-align: left;
 		}
 
@@ -329,6 +335,7 @@
 		text-align: center;
 	}
 	.feature-table-header {
+		overflow: hidden;
 		position: sticky;
 		top: 0px;
 		padding-top: .5rem;
@@ -368,6 +375,7 @@
 			}
 		}
 		padding-top: 2.5rem;
+		padding-bottom: .5rem;
 	}
     .table-section {
         .indent-row {

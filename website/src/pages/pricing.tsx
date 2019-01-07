@@ -196,17 +196,12 @@ export default class Pricing extends React.Component<any, any> {
                                         <h1>Sourcegraph feature comparison</h1>
                                     </div>
                                 </div>
-                                <div className="table-section">
-                                    <div className="row feature-table-header">
-                                        <div className="col-8">
-                                            <h4>Feature</h4>
-                                        </div>
-                                        <div className="col-2">
-                                            <h4>Core</h4>
-                                        </div>
-                                        <div className="col-2">
-                                            <h4>Enterprise</h4>
-                                        </div>
+                                <div className="row feature-table-header">
+                                    <div className="col-8">
+                                        <h4>Feature</h4>
+                                    </div>
+                                    <div className="col-2">
+                                        <h4>Core</h4>
                                     </div>
                                     <div className="col-2">
                                         <h4>Enterprise</h4>
@@ -648,7 +643,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="row cta-row">
-                                    <div className="col-12">
+                                    <div className="col-12 contact-row">
                                         <a
                                             className="btn btn-primary"
                                             role="button"
