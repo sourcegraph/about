@@ -327,6 +327,10 @@ export default class About extends React.Component<any, any> {
                                     </div>
                                     <br />
                                     <div className="about__founders-advisors-item">
+                                        <strong>Adam Frankl</strong>, Marketing Executive
+                                    </div>
+                                    <br />
+                                    <div className="about__founders-advisors-item">
                                         <strong>Jens Pillgram-Larsen</strong>, Google
                                     </div>
                                     <br />
