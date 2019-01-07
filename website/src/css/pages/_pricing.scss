@@ -327,58 +327,63 @@
             margin-top: 1rem;
         }
     }
+	.feature-table-header,
+	.feature-table-row {
+		.col-6:first-of-type {
+			text-align: left;
+		}
+
+		.feature-title {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+		text-align: center;
+	}
+	.feature-table-header {
+		position: sticky;
+		top: 0px;
+		padding-top: .5rem;
+		z-index: 999;
+		-webkit-border-image: -webkit-gradient(
+				linear,
+				left top,
+				right top,
+				from(#00b3f8),
+				to(#f96216),
+				color-stop(0%, #00b3f8),
+				color-stop(50%, #b200f8),
+				color-stop(100%, #f96216)
+			)
+			0 0 3 0 repeat repeat;
+		border-image: -webkit-gradient(
+				linear,
+				left top,
+				right top,
+				from(#00b3f8),
+				to(#f96216),
+				color-stop(0%, #00b3f8),
+				color-stop(50%, #b200f8),
+				color-stop(100%, #f96216)
+			)
+			0 0 3 0 repeat repeat;
+		background-color: #fafcff;
+		border-bottom: 3px solid;
+		div h4 {
+			font-weight: 700;
+		}
+	}
+	.feature-table-header {
+		.col-2 {
+			@media screen and (max-width: $media-md) {
+				transform: rotate(-65deg);
+			}
+		}
+		padding-top: 2.5rem;
+	}
     .table-section {
         .indent-row {
             .feature-title {
                 padding-left: 2rem;
-            }
-        }
-        .feature-table-header {
-            .col-2 {
-                @media screen and (max-width: $media-md) {
-                    transform: rotate(-65deg);
-                }
-            }
-        }
-        .feature-table-header,
-        .feature-table-row {
-            .col-6:first-of-type {
-                text-align: left;
-            }
-
-            .feature-title {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
-            text-align: center;
-        }
-        .feature-table-header {
-            -webkit-border-image: -webkit-gradient(
-                    linear,
-                    left top,
-                    right top,
-                    from(#00b3f8),
-                    to(#f96216),
-                    color-stop(0%, #00b3f8),
-                    color-stop(50%, #b200f8),
-                    color-stop(100%, #f96216)
-                )
-                0 0 3 0 repeat repeat;
-            border-image: -webkit-gradient(
-                    linear,
-                    left top,
-                    right top,
-                    from(#00b3f8),
-                    to(#f96216),
-                    color-stop(0%, #00b3f8),
-                    color-stop(50%, #b200f8),
-                    color-stop(100%, #f96216)
-                )
-                0 0 3 0 repeat repeat;
-            background-color: #fafafa;
-            border-bottom: 3px solid;
-            div h4 {
-                font-weight: 700;
             }
         }
 

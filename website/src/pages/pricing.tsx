@@ -225,21 +225,21 @@ export default class Pricing extends React.Component<any, any> {
                                         <h1>Sourcegraph feature comparison</h1>
                                     </div>
                                 </div>
-                                <div className="table-section">
-                                    <div className="row feature-table-header">
-                                        <div className="col-6">
-                                            <h4>Feature</h4>
-                                        </div>
-                                        <div className="col-2">
-                                            <h4>Core</h4>
-                                        </div>
-                                        <div className="col-2">
-                                            <h4>Enterprise Starter</h4>
-                                        </div>
-                                        <div className="col-2">
-                                            <h4>Enterprise</h4>
-                                        </div>
+                                <div className="row feature-table-header">
+                                    <div className="col-6">
+                                        <h4>Feature</h4>
                                     </div>
+                                    <div className="col-2">
+                                        <h4>Core</h4>
+                                    </div>
+                                    <div className="col-2">
+                                        <h4>Enterprise Starter</h4>
+                                    </div>
+                                    <div className="col-2">
+                                        <h4>Enterprise</h4>
+                                    </div>
+                                </div>
+                                <div className="table-section">
                                     <div id="search" className="row feature-table-row">
                                         <div className="col-6 feature-title">Code search</div>
                                         <div className="col-2">
