@@ -5,7 +5,7 @@ publishDate: 2018-11-29T12:00-07:00
 tags: [
   "blog"
 ]
-slug: java-php-experimental-language-servers-temporarily-unavailable
+slug: java-php-experimental_language_servers-temporarily-unavailable
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
 published: true
 ---
@@ -35,7 +35,3 @@ Otherwise, you can [run a self-hosted instance of Sourcegraph 2.13](https://docs
 In the coming weeks and months, depending on the language. Our top priorities are Java and PHP (as well as introducing Swift support).
 
 See the [Sourcegraph roadmap](https://docs.sourcegraph.com/dev/roadmap) for a timeline of when these languages will be added back. If you don't see a language listed yet, we don't have a date to re-add it. If you'd like to contribute language support, let us know. We are [hiring software engineers](https://github.com/sourcegraph/careers), or we can sponsor you as a part-time contributor.
-
----
-
-Look out for the [Sourcegraph 3.0-preview](https://docs.sourcegraph.com/dev/roadmap#3-0-preview-2018-12-03) announcement next week, which will let you use the new language extensions on your own self-hosted Sourcegraph instance. [File an issue](https://github.com/sourcegraph/sourcegraph/issues) or [contact @srcgraph on Twitter](https://twitter.com/srcgraph) with questions.

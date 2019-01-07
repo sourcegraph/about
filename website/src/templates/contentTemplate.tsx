@@ -11,18 +11,6 @@ export default class ContentTemplate extends React.Component<any, any> {
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none')
         }
-
-        if (window.location.pathname.includes('/docs/server')) {
-            const results = document.getElementsByClassName('see-result')
-            const res = Array.from(results)
-            if (res.length > 0) {
-                res.map(el => {
-                    el.addEventListener('click', () => {
-                        this.toggleCodeBlock(el)
-                    })
-                })
-            }
-        }
     }
 
     public toggleCodeBlock(el: Element): void {

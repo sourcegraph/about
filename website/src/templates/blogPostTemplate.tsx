@@ -83,11 +83,6 @@ export default class ContentfulTemplate extends React.Component<any, any> {
                             <section className="blog-post__body">
                                 <div dangerouslySetInnerHTML={{ __html: content }} />
                                 <hr />
-                                <Link to="/docs/features/browser-extension/">
-                                    <button className="btn btn-outline-primary">
-                                        Would you like go-to-def and find-refs on GitHub?
-                                    </button>
-                                </Link>
                                 <div style={{ height: '0.5em' }} />
                                 <Link to={readMoreLink}>
                                     <button className="btn btn-outline-primary">Read more posts</button>

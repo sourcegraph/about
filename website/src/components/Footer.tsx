@@ -97,31 +97,31 @@ export default class Footer extends React.Component<any, any> {
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://sourcegraph.com/start#search-datacenter"
+                                            href="https://docs.sourcegraph.com/user/search"
                                             onClick={this.codeSearchClicked}
                                         >
-                                            Code Search
+                                            Code search
                                         </a>
                                     </li>
                                     <li>
                                         <a
-                                            href="https://sourcegraph.com/start#intelligence-ntegrations"
+                                            href="https://docs.sourcegraph.com/extensions"
                                             onClick={this.codeIntelligenceClicked}
                                         >
-                                            Code Intelligence
+                                            Code intelligence &amp; extensions
                                         </a>
                                     </li>
                                     <li>
                                         <a
-                                            href="https://sourcegraph.com/start#search-datacenter"
+                                            href="https://docs.sourcegraph.com/admin/install/cluster"
                                             onClick={this.dataCenterClicked}
                                         >
-                                            Data Center
+                                            Cluster
                                         </a>
                                     </li>
                                     <li>
                                         <a
-                                            href="https://sourcegraph.com/start#intelligence-integrations"
+                                            href="https://docs.sourcegraph.com/integration"
                                             onClick={this.integrationsClicked}
                                         >
                                             Integrations
@@ -137,14 +137,17 @@ export default class Footer extends React.Component<any, any> {
                                 <input type="checkbox" />
                                 <ul>
                                     <li>
-                                        <Link to="/docs" onClick={this.docsLinkClicked}>
+                                        <a href="https://docs.sourcegraph.com" onClick={this.docsLinkClicked}>
                                             Documentation
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link to="/changelog" onClick={this.changelogLinkClicked}>
+                                        <a
+                                            href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+                                            onClick={this.changelogLinkClicked}
+                                        >
                                             Changelog
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
                                         <Link to="/pricing" onClick={this.pricingLinkClicked}>

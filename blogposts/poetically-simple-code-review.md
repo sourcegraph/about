@@ -12,9 +12,9 @@ published: true
 
 
 
-_(Note: if you want to skip the poetry and just check out the project,_ [_click here_](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack)_)_
+_(Note: if you want to skip the poetry and just check out the project,_ [_click here_](https://docs.sourcegraph.com/integration/browser_extension)_)_
 
-Begin [code review](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en).
+Begin [code review](https://docs.sourcegraph.com/integration/browser_extension?hl=en).
 Too many lines, what to do?
 Hmm. LGTM?
 
@@ -24,13 +24,13 @@ There’s a better way
 to review fast but ensure
 good code quality:
 
-[![](https://cdn-images-1.medium.com/max/800/1*Zj9VrnJD7Tu05fj3tjom6w.png)](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en)
+[![](https://cdn-images-1.medium.com/max/800/1*Zj9VrnJD7Tu05fj3tjom6w.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)
 
 One-click jump-to-def
 and hover over for docs.
 Save time and focus:
 
-[![](https://cdn-images-1.medium.com/max/800/1*JJqFwhtYfXFypwV1G7zevA.png)](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en)
+[![](https://cdn-images-1.medium.com/max/800/1*JJqFwhtYfXFypwV1G7zevA.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)
 
 Find refs globally.
 See where the code’s being used.
@@ -54,13 +54,13 @@ in so many tabs.
 
 There’s a better way 
  — a Google Chrome extension.
-[**Try it out today**](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en).
+[**Try it out today**](https://docs.sourcegraph.com/integration/browser_extension?hl=en).
 
-[![](https://cdn-images-1.medium.com/max/800/1*adb7n4s1Z40lmUTek-hGPw.png)](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en)
+[![](https://cdn-images-1.medium.com/max/800/1*adb7n4s1Z40lmUTek-hGPw.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)
 
 No more git cloning,
 no more grepping and moaning.
-Just point, click, [**review**](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en).
+Just point, click, [**review**](https://docs.sourcegraph.com/integration/browser_extension?hl=en).
 
 (P.S.
 with Go support, and TypeScript and JavaScript in beta
@@ -70,4 +70,4 @@ with Go support, and TypeScript and JavaScript in beta
 
 P.P.S. Each stanza of this post was a haiku. If you think there’s something poetic about good code and good code reviews, [follow us on Twitter](https://twitter.com/srcgraph) or check out [Sourcegraph](https://sourcegraph.com).
 
-[![](https://cdn-images-1.medium.com/max/800/1*VUuHfrjTo93o7TreumQaRA.png)](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en)
+[![](https://cdn-images-1.medium.com/max/800/1*VUuHfrjTo93o7TreumQaRA.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)

@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { eventLogger } from '../EventLogger'
 
-export const CHROME_STORE_URL = 'https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack'
-export const FIREFOX_STORE_URL = 'https://addons.mozilla.org/en-US/firefox/addon/sourcegraph/'
+export const CHROME_STORE_URL = 'https://docs.sourcegraph.com/integration/browser_extension'
+export const FIREFOX_STORE_URL = 'https://docs.sourcegraph.com/integration/browser_extension'
 
 export class BrowserInstallButtons extends React.PureComponent<{}, {}> {
     public render(): JSX.Element {

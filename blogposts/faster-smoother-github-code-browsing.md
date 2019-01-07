@@ -19,6 +19,7 @@ We’re excited to announce more improvements to the Sourcegraph Chrome extensio
 In addition to the new features described below, the core functionality is faster and smoother: whenever you're viewing a file or reviewing a pull request, you can hover over code to see type signatures and documentation in a tooltip. Clicking will anchor the tooltip and let you jump to a definition, find references, or initiate a full-text search.
 
 ## Advanced code search
+
 Our extension now provides fast, multi-repository grep search with regular expressions. Just select any code inside a GitHub repository and use the Sourcegraph tooltip to execute a search. Search results for supported languages have code intelligence, and every result file has inline authorship and blame information.
 
 ![sourcegraphAdvancedSearch](//images.contentful.com/le3mxztn6yoo/3CEYtcHfeUUioAsyMA0I8w/80f68e9142de1db153ee5d37e77430ce/sourcegraphAdvancedSearch.gif)
@@ -32,17 +33,20 @@ In [supported languages](https://sourcegraph.com/help/languages), you can go to 
 
 ![sourcegraphJumpToDefinition](//images.contentful.com/le3mxztn6yoo/OZKyrqcdSm4208saaUQyQ/7a8177f2ed6bb5dcf9e1a0c5aca3ffb3/sourcegraphJumpToDefinition.gif)
 
-## Find References
+## Find references
+
 You can also see all callers of a function, property accesses, etc., just like in a powerful IDE.
 
 ![sourcegraphFindReferences](//images.contentful.com/le3mxztn6yoo/4vgpMXmNXW8Q2oIUwOSOcI/c89c8a00c44214751186314892268026/sourcegraphFindReferences.gif)
 
 ## View on Sourcegraph
+
 By clicking the "Sourcegraph" button on a repository homepage or while viewing a file, you can now jump to Sourcegraph. (Many users asked for this because going to Sourcegraph is the first thing they do when they get to a repository on GitHub!)
 
 ## Get it now
-[Install the Sourcegraph Chrome extension](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en) from the Chrome Web Store. If you’ve already installed it, Chrome will automatically update the extension, so you’ll already have these new features.
+
+[Install the Sourcegraph browser extension for Chrome or Firefox](https://docs.sourcegraph.com/integration/browser_extension). If you’ve already installed it, your browser will automatically update the extension, so you’ll already have these new features.
 
 Feedback or questions? Tweet us [@srcgraph](https://twitter.com/srcgraph).
 
-(If your company’s code is on GitHub Enterprise or some other code host, connect the browser extension to your instance of [Sourcegraph Server](https://about.sourcegraph.com/docs/server). The browser extension is also available for Firefox.)
+(If your company’s code is on GitHub Enterprise or some other code host, connect the browser extension to a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com). The browser extension is also available for Firefox.)

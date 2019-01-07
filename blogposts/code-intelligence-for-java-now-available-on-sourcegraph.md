@@ -40,7 +40,7 @@ Every feature mentioned in this post is available now for Java on Sourcegraph.co
 
 Sourcegraph works within seconds on any revision of code and scales to large repositories. It even works for newly pushed revisions such as those submitted for code review.
 
-[![](https://cdn-images-1.medium.com/max/1000/1*qgqyqzpJlLKgacUx-5QGwA.png)](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack?hl=en)Sourcegraph integrates with code review tools like GitHub pull requests.
+[![](https://cdn-images-1.medium.com/max/1000/1*qgqyqzpJlLKgacUx-5QGwA.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)Sourcegraph integrates with code review tools like GitHub pull requests.
 
 #### Code review integration
 

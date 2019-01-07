@@ -20,4 +20,4 @@ Great code search understands your code and integrates well with your editor and
 
 Great code search helps you find usage examples, debug issues, understand code, assess the impact of changes, and see who to ask. It helps you write better code—and it lets your entire organization build better software more quickly.
 
-At Sourcegraph, we’ve taken these lessons to heart. Sourcegraph Server gives you great code search for your organization’s code. Whether you’ve already seen great code search for yourself, or whether this post just speaks to you, you can [install Sourcegraph Server for free](/docs/server/) and start using it today.
+At Sourcegraph, we’ve taken these lessons to heart. Sourcegraph gives you great code search for your organization’s code. Whether you’ve already seen great code search for yourself, or whether this post just speaks to you, you can [install Sourcegraph for free](https://docs.sourcegraph.com) and start using it today.

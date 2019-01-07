@@ -8,7 +8,7 @@ Sourcegraph is how developers search code. Need to reach a real human being on o
 
 ## Help Using Sourcegraph
 
-<a class="intercom-toggle" href="#" onclick="window.Intercom('show')">Start chatting with us now</a>, file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues), or send an email to <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> with as much information as possible.
+<a class="intercom-toggle" href="#" onclick="window.Intercom('show')">Start chatting with us now</a>, file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or send an email to <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> with as much information as possible.
 
 - List the steps you took, what you expected, and what you saw.
 - Include links and screenshots, if relevant.

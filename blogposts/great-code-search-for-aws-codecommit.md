@@ -16,13 +16,13 @@ published: true
   }
 </style>
 
-# Install Sourcegraph Server to get great code search on AWS CodeCommit
+# Install Sourcegraph to get great code search on AWS CodeCommit
 
-Sourcegraph brings great code search and understanding abilities to development teams using [AWS CodeCommit](https://aws.amazon.com/codecommit/). Code search helps your engineering team find usage examples, debug errors, reuse existing libraries and packages, and understand unfamiliar parts of your code base more quickly. Learn more about [Sourcegraph code search](/products/code-search/).
+Sourcegraph brings great code search and understanding abilities to development teams using [AWS CodeCommit](https://aws.amazon.com/codecommit/). Code search helps your engineering team find usage examples, debug errors, reuse existing libraries and packages, and understand unfamiliar parts of your code base more quickly. Learn more about [Sourcegraph code search](https://docs.sourcegraph.com/user/search).
 
 Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy.
 
-1. First, [install and run an instance of Sourcegraph Server](/docs/server/install/). Using Minikube, Sourcegraph Server can run on any machine or VM.
+1. First, [install and run an instance of Sourcegraph](https://docs.sourcegraph.com/admin).
 2. Create a AWS IAM user with programmatic access.
 
  <img alt="CodeCommit-CreateUser" src="//images.contentful.com/le3mxztn6yoo/750VgGMn84q6ciwoOKiGMi/a6007e31880c976df94f9ecde68dcf1a/CodeCommit-CreateUser.png" class="ba pa1 b--light-7 br2" />
@@ -41,7 +41,7 @@ Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy
 
  <img alt="CodeCommit-PublicKey" src="//images.contentful.com/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png" class="ba pa1 b--light-7 br2" />
 
-6. Modify your `config.json` (which you created as part of installing Sourcegraph Server) to access your AWS CodeCommit repositories. You'll need to make two changes:
+6. Modify your `config.json` (which you created as part of installing Sourcegraph) to access your AWS CodeCommit repositories. You'll need to make two changes:
 
  a. Set the `gitOriginMap` field to include a mapping of the form `aws/!ssh://${YOUR_SSH_KEY_ID}@${YOUR_SSH_CLONE_URL_PREFIX}/%`. Substitute the SSH key ID associated with the SSH key you added and the SSH clone URL prefix, which you can obtain by viewing the SSH clone URL of any of your repositories. It should look something like this:    
   ```
@@ -55,9 +55,9 @@ Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy
   },
   ```  
 
-7. Update your Sourcegraph Server instance to reflect the changes you made to your `config.json` by running `sourcegraph-server-gen config.json ./helm-chart && helm upgrade sourcegraph ./helm-chart`.<br/>
+7. Update your Sourcegraph instance to reflect the changes you made to your `config.json` by running `sourcegraph-server-gen config.json ./helm-chart && helm upgrade sourcegraph ./helm-chart`.<br/>
 8. Add your AWS CodeCommit repositories by navigating to `https://${YOUR_SOURCEGRAPH_URL}/aws/${REPO_NAME}`.
 
-And that's it! Now you can search over all your AWS CodeCommit repositories at once or configure a search group that lets you and your team search over a targeted subset of repositories. You can also configure Sourcegraph to work with a variety of Enterprise SSO identity providers and additional code hosts. You can read more about customizations [in the docs](/docs/server/install/#production-configuration).
+And that's it! Now you can search over all your AWS CodeCommit repositories at once or configure a search group that lets you and your team search over a targeted subset of repositories. You can also configure Sourcegraph to work with a variety of Enterprise SSO identity providers and additional code hosts. You can read more about customizations [in the Sourcegraph administrator docs](https://docs.sourcegraph.com/admin).
 
-<a href="/docs/server"><span class="dib dim link mr3 pv2 ph3 f5 br2 ba b--blue-7 bg-blue-7 light-12">Install Sourcegraph Server</span></a>
+[Install a self-hosted Sourcegraph instance with 1 command.](https://docs.sourcegraph.com/#quickstart)

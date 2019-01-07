@@ -19,7 +19,6 @@ Sourcegraph 2.13 ships today, with several improvements:
 - [In-product documentation at `/help`](https://docs.sourcegraph.com/dev/documentation#sourcegraph-help)
 - [Per-user repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) for GitLab, with more code hosts coming soon [Enterprise]
 - [Support for multiple authentication providers](https://docs.sourcegraph.com/admin/auth) [Enterprise]
-- Many smaller fixes listed in the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#213)
 
 We're also shipping Sourcegraph extensions that add other new features:
 
@@ -39,6 +38,10 @@ To enable these extensions on your Sourcegraph instance, visit **User menu > Ext
 
 **Ready to get Sourcegraph 2.13?** [Install](https://docs.sourcegraph.com/#quickstart) or [update](https://docs.sourcegraph.com/admin/updates) now.
 
+## Changelog
+
+See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md) for a list of all changes in this release.
+
 ## Thank you
 
 Thank you to the [open-source contributors](https://github.com/sourcegraph/sourcegraph) who helped make Sourcegraph even better:
@@ -50,8 +53,8 @@ Thank you to the [open-source contributors](https://github.com/sourcegraph/sourc
 - [@yevbar](https://github.com/yevbar): default color theme ([PR #409](https://github.com/sourcegraph/sourcegraph/pull/409))
 - [@ianlopshire](https://github.com/ianlopshire): use external URLs ([PR #269](https://github.com/sourcegraph/sourcegraph/pull/269))
 
-## Next up: Sourcegraph 3.0 preview
+## Next up: Sourcegraph 3.0
 
-We're hard at work on the next major release, Sourcegraph 3.0. It will significantly improve language support for code intelligence, simplify deployment and site configuration, improve debuggability of code host integrations, and allow much more extensibility (including searching other types of things, such as GitHub issues and PR comments, rendered documentation, and log data). See the next couple months on the [Sourcegraph product roadmap](https://docs.sourcegraph.com/dev/roadmap#november-2018) for more details. Work has already begun on [sourcegraph/sourcegraph@`master`](https://github.com/sourcegraph/sourcegraph).
+We're hard at work on the next major release, Sourcegraph 3.0. It will significantly improve language support for code intelligence, simplify deployment and site configuration, improve debuggability of code host integrations, and allow much more extensibility (including searching other types of things, such as GitHub issues and PR comments, rendered documentation, and log data). See the next couple months on the [Sourcegraph product roadmap](https://docs.sourcegraph.com/dev/roadmap) for more details. Work has already begun on [sourcegraph/sourcegraph@`master`](https://github.com/sourcegraph/sourcegraph).
 
-A preview release (`3.0-preview`) will be ready in early November. If you're on Sourcegraph 2.x, you should update to 2.13 now (and wait until the non-preview release of 3.0 to update to 3.0).
+If you're on Sourcegraph 2.x, you should update to 2.13 now and can upgrade to 3.0 when it is released.

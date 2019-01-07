@@ -12,7 +12,7 @@ published: true
 
 
 
-Hi, we’re Sourcegraph, the [code search engine](https://sourcegraph.com) for Go and Java that lets you [jump to def and find refs across all your code on GitHub](https://chrome.google.com/webstore/detail/sourcegraph-for-github/dgjhfomjieaadpoljlnidmbgkdffpack). You may remember us from such developer conference liveblogs as [Gophercon](http://gophercon.sourcegraph.com/archive), FOSDEM, and [dotGo](http://dotgo.sourcegraph.com/archive).
+Hi, we’re Sourcegraph, the [code search engine](https://sourcegraph.com) for Go and Java that lets you [jump to def and find refs across all your code on GitHub](https://docs.sourcegraph.com/integration/browser_extension). You may remember us from such developer conference liveblogs as [Gophercon](http://gophercon.sourcegraph.com/archive), FOSDEM, and [dotGo](http://dotgo.sourcegraph.com/archive).
 
 This year, we’re excited to announce we’re liveblogging GitHub Universe!
 

@@ -146,7 +146,7 @@ For consistency, all examples should use the following names (as appropriate).
 
 When letting users know they can contact us with questions, feedback, or issues, always use the phrasing below:
 
-> Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/issues/issues).
+> Questions/feedback? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues).
 
 The `FeedbackText` component in the [Sourcegraph repository](https://github.com/sourcegraph/sourcegraph) should be used when possible.
 
