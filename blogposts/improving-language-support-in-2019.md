@@ -40,4 +40,9 @@ We will assess and test language servers roughly on these aspects:
 - Initialization time and response time
 - Cross-repository code intelligence
 
+Here are the first languages that we plan to put effort towards:
+
+- Python: [Microsoft/python-language-server](https://github.com/Microsoft/python-language-server) - [tracking issue](https://github.com/sourcegraph/sourcegraph/issues/959)
+- Swift: [apple/sourcekit-lsp](https://github.com/apple/sourcekit-lsp) - [tracking issue](https://github.com/sourcegraph/sourcegraph/issues/1557)
+
 If you're interested in language analysis and want to add language support to Sourcegraph, we want to hear from you! Tweet at @srcgraph. Sourcegraph is willing to sponsor work on language servers and Sourcegraph language extensions, provide technical advice, and gather feedback.
