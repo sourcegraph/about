@@ -1,15 +1,15 @@
-# Announcing Sourcegraph 3.0
+# Announcing Sourcegraph 3.0-beta
 
 We're excited to announce a big update: Sourcegraph 3.0. Searching, reading, and reviewing code well is crucial to being a good developer. This release means Sourcegraph brings these capabilities to every developer and team with code in Git, with:
 
-- Go-to-definition and find-references for all programming languages: 
+- Go-to-definition and find-references for all programming languages:
 - More 3rd-party tools for useful context in your code:
 - Any Docker-based cluster deployment:
 - Sourcegraph is now open source
 
 for all programming languages, preferred deployment methods, and necessary , . a platform that gives you code intelligence and other helpful integrations in code search, browsing, code hosts, and review tools (and, soon, editors). It includes:
- 
-For developers: When you're coding and get blocked by something, we want Sourcegraph to be the fastest way to unblock you. This release makes it so 
+
+For developers: When you're coding and get blocked by something, we want Sourcegraph to be the fastest way to unblock you. This release makes it so
 
 > TODO: The bullets below will link to the docs for each feature (which exist as PRs at https://github.com/sourcegraph/about/pulls).
 
