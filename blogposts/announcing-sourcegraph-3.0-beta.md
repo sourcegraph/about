@@ -6,6 +6,7 @@ The beta release of Sourcegraph 3.0 is now available (as version `3.0.0-beta`). 
 - [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using text-based heuristics.
 - [More Sourcegraph extension APIs](#more-sourcegraph-extension-apis): add more features and info to code on Sourcegraph and your code host.
 - [Extension registry improvements](#extension-registry-improvements): discover and manage Sourcegraph extensions.
+- [Management console and site config improvements](#management-console-site-config-improvements): an easier, failsafe web interface for editing site config (works on clusters, too).
 - [Deploy to more kinds of clusters](#deploy-to-more-kinds-of-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
 - [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
 - [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
@@ -54,6 +55,10 @@ The sourcegraph/basic-code-intel extension is enabled for all users by default o
 TODO(sqs)
 
 ### Extension registry improvements
+
+TODO(sqs)
+
+### Management console and site config improvements
 
 TODO(sqs)
 
