@@ -92,7 +92,19 @@ The [Sourcegraph.com extension registry](https://sourcegraph.com/extensions) lis
 
 ### Management console and site config improvements
 
-TODO(sqs)
+The new [management console](https://docs.sourcegraph.com/admin/management_console) is a separate, failsafe web interface for changing critical site configuration. This improves the experience for admins:
+
+- You'll never be locked out of your instance, even if you make a configuration mistake, because the management console is a separate service. (Previously, you could edit critical configuration online in the Sourcegraph site admin area, but a misconfiguration could make your instance inaccessible.)
+- [Cluster deployments](https://docs.sourcegraph.com/admin/install/cluster) now support editing site configuration online. (Previously, you needed to edit Kubernetes `.yml` files and redeploy.)
+- The above two things also allow Sourcegraph to support automatic migrations of configuration, so you won't need to manually update site configuration when we add or change the configuration schema in releases.
+
+The [management console](https://docs.sourcegraph.com/admin/management_console) runs on a separate port (2633 by default) and is protected by strong, randomly generated password that is visible only in the site admin area:
+
+![Management console password is shown in site admin](./announcing-sourcegraph-3.0-beta/management_console_password.png)
+
+Use this password to authenticate to `https://sourcegraph.example.com:2633` (using your actual hostname instead). Be sure to use `https` (and note that it uses a self-signed certificate that you will need to trust on first use). Once you're in, you can edit critical configuration (with validation and autocompletion):
+
+![Management console](./announcing-sourcegraph-3.0-beta/management_console.png)
 
 ### Deploy to more kinds of clusters
 
