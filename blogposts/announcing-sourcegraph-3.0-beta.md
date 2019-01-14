@@ -108,7 +108,11 @@ Use this password to authenticate to `https://sourcegraph.example.com:2633` (usi
 
 ### Deploy to more kinds of clusters
 
-TODO(sqs)
+Now you have more options when you need to scale to a cluster of Sourcegraph. ([Deploying Sourcegraph with Docker](https://docs.sourcegraph.com/admin/install/docker) to a single container is the most popular deployment method, and we still recommend all instances start with it.)
+
+The [pure-Docker cluster deployment reference](https://github.com/sourcegraph/deploy-sourcegraph-docker) for Sourcegraph contains multiple Dockerfiles that use only the most basic orchestration primitives to connect to each other. You can adapt these files to deploy to your preferred cluster management/orchestration system, such as [Netflix's Titus](https://netflix.github.io/titus/) or [Mesosphere](https://mesosphere.com/). If you don't have a preferred system, we recommend [deploying to Kubernetes](https://github.com/sourcegraph/deploy-sourcegraph) (which was previously the only cluster deployment option).
+
+See ["Installing Sourcegraph on a cluster"](https://docs.sourcegraph.com/admin/install/cluster) for more information.
 
 ### Authentication and repository permissions from GitHub
 
