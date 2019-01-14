@@ -14,7 +14,7 @@ Highlights of this release:
 - [Extension registry improvements](#extension-registry-improvements): discover and manage Sourcegraph extensions.
 - [Management console and site config improvements](#management-console-site-config-improvements): an easier, failsafe web interface for editing site config (works on clusters, too).
 - [Deploy to more kinds of clusters](#deploy-more-kinds-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
-<!-- - [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise. -->
+- [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
 - [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
 - [Nginx-based HTTP server](#nginx-based-http-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
 
@@ -120,8 +120,6 @@ The [pure-Docker cluster deployment reference](https://github.com/sourcegraph/de
 
 See ["Installing Sourcegraph on a cluster"](https://docs.sourcegraph.com/admin/install/cluster) for more information.
 
-<!--
-
 ### Authentication and repository permissions from GitHub
 
 You can configure Sourcegraph to [allow users to sign in via GitHub or GitHub Enterprise](https://docs.sourcegraph.com/admin/auth#github). (Many other [user authentication providers](https://docs.sourcegraph.com/admin/auth) are supported, such as SAML, OpenID Connect, GitLab, builtin username-password, and HTTP auth proxies).
@@ -129,8 +127,6 @@ You can configure Sourcegraph to [allow users to sign in via GitHub or GitHub En
 Sourcegraph can also [enforce GitHub or GitHub Enterprise repository access permissions](https://docs.sourcegraph.com/admin/repo/permissions#github), so that users can only search and view repositories on Sourcegraph if they are permitted to do so on GitHub. This feature makes Sourcegraph delegate authorization checks for repository access to GitHub, so your GitHub repository permissions are the source of truth.
 
 See ["GitHub integration with Sourcegraph"](https://docs.sourcegraph.com/integration/github) for more information.
-
--->
 
 ### Faster page load times
 
