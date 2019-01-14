@@ -2,7 +2,9 @@
 
 **NOTE:** This is a draft announcement. The version tag mentioned will be published early in the week of Mon Jan 14.
 
-The beta release of Sourcegraph 3.0 is now available (as version tag `3.0.0-beta`--**NOTE:** this is a draft announcement and the version tag is not yet published). Sourcegraph is an open-source, self-hosted code search and browsing tool for teams, with an efficient web interface and feels-like-native integration into your code host. This release comes with several big core updates:
+The beta release of Sourcegraph 3.0 is now available (as version tag `3.0.0-beta`--**NOTE:** this is a draft announcement and the version tag is not yet published). Sourcegraph is an **open-source, self-hosted code search and browsing tool** for teams, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
+
+Highlights of this release:
 
 - [Search query cheatsheet](#search-query-cheatsheet): click <kbd>?</kbd> next to the search button to see how to write search queries to find what you need.
 - [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using text-based heuristics.
@@ -14,7 +16,7 @@ The beta release of Sourcegraph 3.0 is now available (as version tag `3.0.0-beta
 - [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
 - [Nginx-based HTTP server](#nginx-based-http-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
 
-Several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) add features we think you'll like:
+Plus, there are several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions):
 
 - [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
 - [Datadog metrics](#datadog-metrics-extension): easily jump to Datadog metrics information from statsd calls in your code.
