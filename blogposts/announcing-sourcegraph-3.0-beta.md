@@ -9,18 +9,18 @@ Highlights of this release:
 <!-- TODO(sqs): check anchor links match up before publishing -->
 
 - [Search query cheatsheet](#search-query-cheatsheet): click <kbd>?</kbd> next to the search button to see how to write search queries to find what you need.
-- [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using text-based heuristics.
+- [Basic code intelligence for all languages](#basic-code-intelligence-all-languages): fast go-to-definition and find-references for code in any language, using text-based heuristics.
 - [More Sourcegraph extension APIs](#more-sourcegraph-extension-apis): add more features and info to code on Sourcegraph and your code host.
 - [Extension registry improvements](#extension-registry-improvements): discover and manage Sourcegraph extensions.
 - [Management console and site config improvements](#management-console-site-config-improvements): an easier, failsafe web interface for editing site config (works on clusters, too).
-- [Deploy to more kinds of clusters](#deploy-to-more-kinds-of-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
-- [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
+- [Deploy to more kinds of clusters](#deploy-more-kinds-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
+<!-- - [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise. -->
 - [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
 - [Nginx-based HTTP server](#nginx-based-http-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
 
 Plus, there are several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions):
 
-- [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
+- [Basic code intelligence for all languages](#basic-code-intelligence-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
 - [Datadog metrics](#datadog-metrics-extension): easily jump to Datadog metrics information from statsd calls in your code.
 - [JavaScript/TypeScript language support](https://sourcegraph.com/extensions/sourcegraph/lang-typescript)
 - [Go language support](https://sourcegraph.com/extensions/sourcegraph/lang-go)
@@ -120,6 +120,8 @@ The [pure-Docker cluster deployment reference](https://github.com/sourcegraph/de
 
 See ["Installing Sourcegraph on a cluster"](https://docs.sourcegraph.com/admin/install/cluster) for more information.
 
+<!--
+
 ### Authentication and repository permissions from GitHub
 
 You can configure Sourcegraph to [allow users to sign in via GitHub or GitHub Enterprise](https://docs.sourcegraph.com/admin/auth#github). (Many other [user authentication providers](https://docs.sourcegraph.com/admin/auth) are supported, such as SAML, OpenID Connect, GitLab, builtin username-password, and HTTP auth proxies).
@@ -127,6 +129,8 @@ You can configure Sourcegraph to [allow users to sign in via GitHub or GitHub En
 Sourcegraph can also [enforce GitHub or GitHub Enterprise repository access permissions](https://docs.sourcegraph.com/admin/repo/permissions#github), so that users can only search and view repositories on Sourcegraph if they are permitted to do so on GitHub. This feature makes Sourcegraph delegate authorization checks for repository access to GitHub, so your GitHub repository permissions are the source of truth.
 
 See ["GitHub integration with Sourcegraph"](https://docs.sourcegraph.com/integration/github) for more information.
+
+-->
 
 ### Faster page load times
 
@@ -163,61 +167,61 @@ This release includes more solid foundations for several Sourcegraph features:
 
 ## Thank you
 
-Thanks to the following for your efforts and contributions to make Sourcegraph 3.0 the best version yet:
+Thank you to the many people who contributed to make Sourcegraph better since our last release!
 
-- [@sabyasachi)](https://github.com/sabyasachi)
-- [@stackflow1234)](https://github.com/stackflow1234)
-- [@MaxLeiter)](https://github.com/MaxLeiter)
-- [@djuarezg)](https://github.com/djuarezg)
-- [@devil418)](https://github.com/devil418)
-- [@machbio)](https://github.com/machbio)
-- [@immanuelfodor)](https://github.com/immanuelfodor)
-- [@vincentwoo)](https://github.com/vincentwoo)
-- [@majapw)](https://github.com/majapw)
-- [@zapp42)](https://github.com/zapp42)
-- [@bastiankoetsier)](https://github.com/bastiankoetsier)
-- [@jlangston)](https://github.com/jlangston)
-- [@linknum23)](https://github.com/linknum23)
-- [@hsluoyz)](https://github.com/hsluoyz)
-- [@StephaneRob)](https://github.com/StephaneRob)
-- [@JoshuaKGoldberg)](https://github.com/JoshuaKGoldberg)
-- [@theotherp)](https://github.com/theotherp)
-- [@zheeeng)](https://github.com/zheeeng)
-- [@postables)](https://github.com/postables)
-- [@ijt)](https://github.com/ijt)
-- [@kidsil)](https://github.com/kidsil)
-- [@halseth)](https://github.com/halseth)
-- [@sslavian812)](https://github.com/sslavian812)
-- [@yevbar)](https://github.com/yevbar)
-- [@anishhegde)](https://github.com/anishhegde)
-- [@wusthuke)](https://github.com/wusthuke)
-- [@alanhamlett)](https://github.com/alanhamlett)
-- [@sfllaw)](https://github.com/sfllaw)
-- [@justinmydomain)](https://github.com/justinmydomain)
-- [@adam-moss)](https://github.com/adam-moss)
-- [@caarlos0)](https://github.com/caarlos0)
-- [@Warchant)](https://github.com/Warchant)
-- [@stephenh)](https://github.com/stephenh)
-- [@AndrewRussellHayes)](https://github.com/AndrewRussellHayes)
-- [@jhigdon)](https://github.com/jhigdon)
-- [@faec)](https://github.com/faec)
-- [@hillba)](https://github.com/hillba)
-- [@mqus)](https://github.com/mqus)
-- [@thanos-irodotou)](https://github.com/thanos-irodotou)
-- [@GotenXiao)](https://github.com/GotenXiao)
-- [@jacks0n)](https://github.com/jacks0n)
-- [@Taytay)](https://github.com/Taytay)
-- [@njbull4)](https://github.com/njbull4)
-- [@aisbaa)](https://github.com/aisbaa)
-- [@vinchauhan)](https://github.com/vinchauhan)
-- [@IizunaK)](https://github.com/IizunaK)
-- [@nnchang)](https://github.com/nnchang)
-- [@mhewett)](https://github.com/mhewett)
-- [@calvn)](https://github.com/calvn)
-- [@craffert0)](https://github.com/craffert0)
-- [@akshetpandey)](https://github.com/akshetpandey)
-- [@marco-c)](https://github.com/marco-c)
-- [@mcdan)](https://github.com/mcdan)
+- [@sabyasachi](https://github.com/sabyasachi)
+- [@stackflow1234](https://github.com/stackflow1234)
+- [@MaxLeiter](https://github.com/MaxLeiter)
+- [@djuarezg](https://github.com/djuarezg)
+- [@devil418](https://github.com/devil418)
+- [@machbio](https://github.com/machbio)
+- [@immanuelfodor](https://github.com/immanuelfodor)
+- [@vincentwoo](https://github.com/vincentwoo)
+- [@majapw](https://github.com/majapw)
+- [@zapp42](https://github.com/zapp42)
+- [@bastiankoetsier](https://github.com/bastiankoetsier)
+- [@jlangston](https://github.com/jlangston)
+- [@linknum23](https://github.com/linknum23)
+- [@hsluoyz](https://github.com/hsluoyz)
+- [@StephaneRob](https://github.com/StephaneRob)
+- [@JoshuaKGoldberg](https://github.com/JoshuaKGoldberg)
+- [@theotherp](https://github.com/theotherp)
+- [@zheeeng](https://github.com/zheeeng)
+- [@postables](https://github.com/postables)
+- [@ijt](https://github.com/ijt)
+- [@kidsil](https://github.com/kidsil)
+- [@halseth](https://github.com/halseth)
+- [@sslavian812](https://github.com/sslavian812)
+- [@yevbar](https://github.com/yevbar)
+- [@anishhegde](https://github.com/anishhegde)
+- [@wusthuke](https://github.com/wusthuke)
+- [@alanhamlett](https://github.com/alanhamlett)
+- [@sfllaw](https://github.com/sfllaw)
+- [@justinmydomain](https://github.com/justinmydomain)
+- [@adam-moss](https://github.com/adam-moss)
+- [@caarlos0](https://github.com/caarlos0)
+- [@Warchant](https://github.com/Warchant)
+- [@stephenh](https://github.com/stephenh)
+- [@AndrewRussellHayes](https://github.com/AndrewRussellHayes)
+- [@jhigdon](https://github.com/jhigdon)
+- [@faec](https://github.com/faec)
+- [@hillba](https://github.com/hillba)
+- [@mqus](https://github.com/mqus)
+- [@thanos-irodotou](https://github.com/thanos-irodotou)
+- [@GotenXiao](https://github.com/GotenXiao)
+- [@jacks0n](https://github.com/jacks0n)
+- [@Taytay](https://github.com/Taytay)
+- [@njbull4](https://github.com/njbull4)
+- [@aisbaa](https://github.com/aisbaa)
+- [@vinchauhan](https://github.com/vinchauhan)
+- [@IizunaK](https://github.com/IizunaK)
+- [@nnchang](https://github.com/nnchang)
+- [@mhewett](https://github.com/mhewett)
+- [@calvn](https://github.com/calvn)
+- [@craffert0](https://github.com/craffert0)
+- [@akshetpandey](https://github.com/akshetpandey)
+- [@marco-c](https://github.com/marco-c)
+- [@mcdan](https://github.com/mcdan)
 
 ## Install or upgrade
 
