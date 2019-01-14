@@ -52,7 +52,35 @@ The sourcegraph/basic-code-intel extension is enabled for all users by default o
 
 ### More Sourcegraph extension APIs
 
-TODO(sqs)
+We introduced new APIs for [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) to add functionality to Sourcegraph and your code hosts. The full API is defined in [`sourcegraph.d.ts`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/packages/sourcegraph-extension-api/src/sourcegraph.d.ts).
+
+- Progress notification (`sourcegraph.app.activeWindow.withProgress(...)` and `showProgress(...)`): extensions can show a window-level loading indicator for long-running tasks.
+- Light and dark color theme options for decorations ([`TextDocumentDecoration#light`](https://unpkg.com/sourcegraph/dist/docs/interfaces/_sourcegraph_.textdocumentdecoration.html#light) and [`TextDocumentDecoration#dark`](https://unpkg.com/sourcegraph/dist/docs/interfaces/_sourcegraph_.textdocumentdecoration.html#dark)): when decorating code files with text and links, extensions can specify different colors to use depending on the prevailing UI theme (dark or light) to ensure sufficient contrast.
+- Text selection ranges ([`CodeEditor#selections`](https://unpkg.com/sourcegraph/dist/docs/interfaces/_sourcegraph_.codeeditor.html#selections)): extensions can determine the currently selected range (or ranges, for multiple selections).
+- Workspace roots ([`sourcegraph.app.activeWindow.roots`](https://unpkg.com/sourcegraph/dist/docs/modules/_sourcegraph_.workspace.html#roots) and [`onDidChangeRoots`](https://unpkg.com/sourcegraph/dist/docs/modules/_sourcegraph_.workspace.html#ondidchangeroots)): extensions can determine the currently active repository and subscribe to changes (i.e, when the user navigates to a different repository or revision).
+- Custom panels ([`sourcegraph.app.createPanelView`](https://unpkg.com/sourcegraph/dist/docs/modules/_sourcegraph_.app.html#createpanelview)): extensions can define custom tabs in the panel, in addition to the standard definition and references tabs, such as for showing implementations, type definitions, and other information. The content can be a list of locations or arbitrary Markdown.
+- Streaming locations: providers (for references, definitions, and other kinds of locations) can now also return an observable, which lets them "stream" references in. Previously, they could only return an array or promise, so they were limited to a single result set.
+- Query transformers ([`sourcegraph.search.registerQueryTransformer`](https://unpkg.com/sourcegraph/dist/docs/modules/_sourcegraph_.search.html#registerquerytransformer)): extensions can define query transformers to implement custom search keywords, such as transforming [`js.depends:react`](https://sourcegraph.com/extensions/sourcegraph/js-dependency-search) to a query matching JavaScript/TypeScript files that import the `react` package.
+- [`panel/toolbar` menu contribution point](https://docs.sourcegraph.com/extensions/authoring/contributions#menus): extensions can add actions that are shown in the panel (above references and definitions). This is useful for actions that affect the result set of references or definitions, such as changing which types of references are shown (e.g., function calls only vs. all uses).
+- [Extension deactivation](https://docs.sourcegraph.com/extensions/authoring/activation#deactivation): this allows extensions to be cleanly unloaded when they are not in use, so that Sourcegraph runs smoothly for users.
+- [Builtin commands](https://docs.sourcegraph.com/extensions/authoring/builtin_commands): these perform useful actions in Sourcegraph, such as updating a user's settings and accessing the [Sourcegraph GraphQL API](https://docs.sourcegraph.com/api/graphql).
+<!--
+Mention this when the search result provider extension API is released.
+
+- [`searchFilters` contribution](https://docs.sourcegraph.com/extensions/authoring/contributions#search-filters): extensions can add static search filters to suggest additions to a user's query.
+-->
+
+We shipped other improvements to the extension development process:
+
+- [`npm init @sourcegraph/extension` extension generator](https://docs.sourcegraph.com/extensions/authoring/creating): easily create the skeleton of a new Sourcegraph extension.
+- [Sideload extensions](https://docs.sourcegraph.com/extensions/authoring/local_development): you can now run extensions during development by just entering a URL instead of needing to publish a WIP extension.
+- [WIP extensions](https://docs.sourcegraph.com/extensions/authoring/publishing#wip-extensions): an extension whose package.json contains `"wip": true` is marked as a work-in-progress so that users don't inadvertently install it.
+
+The [Sourcegraph extensions authoring documentation](https://docs.sourcegraph.com/extensions/authoring) also got some new tutorials:
+  - [Building a "Hello, world" extension](https://docs.sourcegraph.com/extensions/authoring/tutorials/hello_world)
+  - [Adding buttons and custom commands](https://docs.sourcegraph.com/extensions/authoring/tutorials/button_custom_commands)
+  - [Building an extension for a language](https://docs.sourcegraph.com/extensions/authoring/tutorials/lang_specific_extension_tutorial)
+
 
 ### Extension registry improvements
 
@@ -98,13 +126,18 @@ TODO(sqs)
 
 TODO(sqs)
 
-## New documentation
+## New documentation????????????
 
-TODO(sqs)
+- The [main docs.sourcegraph.com page](https://docs.sourcegraph.com/) was reorganized to make the most common documentation easier to get to.
 
 ## Engineering
 
-TODO(sqs)
+This release includes more solid foundations for several Sourcegraph features:
+
+- [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) are the sole source of code intelligence now. We removed the old way, which required a lot more Sourcegraph-specific custom integration work to add or configure a new language.
+- The [management console](https://docs.sourcegraph.com/admin/management_console) makes it so that all configuration can be edited online and in-band, which means future Sourcegraph releases can auto-migrate their own config instead of requiring manual (and error-prone) steps by the site admin.
+- The new concept of [external service connections](https://docs.sourcegraph.com/admin/repo/add) will allow us to improve Sourcegraph's synchronization of repositories in a future release.
+- Standardizing on Nginx for serving HTTP lets us remove a lot of complex core code to support numerous use cases better handled by Nginx.
 
 ## Thank you
 
