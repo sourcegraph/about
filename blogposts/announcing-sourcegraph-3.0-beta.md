@@ -114,25 +114,9 @@ TODO(sqs)
 
 TODO(sqs)
 
-### JavaScript/TypeScript language support
+## Documentation
 
-TODO(sqs)
-
-### Go language support
-
-TODO(sqs)
-
-### Python language support
-
-TODO(sqs)
-
-### Java language support
-
-TODO(sqs)
-
-## New documentation????????????
-
-- The [main docs.sourcegraph.com page](https://docs.sourcegraph.com/) was reorganized to make the most common documentation easier to get to.
+The [main docs.sourcegraph.com page](https://docs.sourcegraph.com/) was reorganized to make the most common documentation easier to get to. We've also added a lot more documentation pages throughout.
 
 ## Engineering
 
