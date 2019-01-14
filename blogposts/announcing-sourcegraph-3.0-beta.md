@@ -34,7 +34,20 @@ But when you're searching more than a couple times daily, learning Sourcegraph's
 
 ### Basic code intelligence for all languages
 
-TODO(sqs)
+Two of the most common questions developers have while reading code are:
+
+- "Where is this thing defined?"
+- "What calls/uses this thing?"
+
+The [sourcegraph/basic-code-intel](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel) extension adds go-to-definition and find-references support for all languages to answer these questions for you, when browsing any codebase and with zero configuration.
+
+It uses text search and heuristics to provide results, instead of actually compiling and analyzing the code (as most [other language extensions](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) do). This means it's super fast and needs zero configuration, but it's not precise.
+
+For example, if multiple functions in your code are named `open`, the reference results for `open` will include false positives. As long as you're aware of this limitation, it's so fast and helpful in most cases that we think you'll like it. (And if not, toggle it off temporarily in the command palette or disable the extension completely--it's an optional feature.)
+
+The sourcegraph/basic-code-intel extension is enabled for all users by default on [Sourcegraph.com](https://sourcegraph.com). To enable it on your own Sourcegraph instance, go to **User menu > Extensions** and search for `sourcegraph/basic-code-intel` ([more info](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel#usage)).
+
+![Basic code intelligence for all languages](./announcing-sourcegraph-3.0-beta/basic_code_intel.png)
 
 ### More Sourcegraph extension APIs
 
