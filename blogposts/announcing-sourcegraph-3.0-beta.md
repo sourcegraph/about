@@ -1,24 +1,23 @@
-# Announcing Sourcegraph 3.0-beta
+# Sourcegraph 3.0 beta available
 
-We're excited to announce a big update: Sourcegraph 3.0. Searching, reading, and reviewing code well is crucial to being a good developer. This release means Sourcegraph brings these capabilities to every developer and team with code in Git, with:
+The beta release of Sourcegraph 3.0 is now available (as version `3.0.0-beta`). Sourcegraph is an open-source, self-hosted code search and browsing tool for teams, with an efficient web interface and feels-like-native integration into your code host. This release comes with several big core updates:
 
-- Go-to-definition and find-references for all programming languages:
-- More 3rd-party tools for useful context in your code:
-- Any Docker-based cluster deployment:
-- Sourcegraph is now open source
+- [Search query cheatsheet](#search-query-cheatsheet): 1-click reminder of how to write search queries to find what you need.
+- [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is configured.
+- [More Sourcegraph extension APIs](#more-sourcegraph-extension-apis): add more features and info to code on Sourcegraph and your code host.
+- [Extension registry improvements](#extension-registry-improvements): discover and manage Sourcegraph extensions.
+- [Deploy to more kinds of clusters](#deploy-to-more-kinds-of-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
+- [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
+- [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
+- [Nginx-based HTTP configuration](#nginx-based-web-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
 
-for all programming languages, preferred deployment methods, and necessary , . a platform that gives you code intelligence and other helpful integrations in code search, browsing, code hosts, and review tools (and, soon, editors). It includes:
+Several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) add features we think you'll like:
 
-For developers: When you're coding and get blocked by something, we want Sourcegraph to be the fastest way to unblock you. This release makes it so
+- [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
+- [Datadog metrics](#datadog-metrics): easily jump to Datadog metrics information from statsd calls in your code.
+- [JavaScript/TypeScript language support](#TODO)
+- [Go language support](#TODO)
+- [Python language support](#TODO)
+- [Java language support](#TODO)
 
-> TODO: The bullets below will link to the docs for each feature (which exist as PRs at https://github.com/sourcegraph/about/pulls).
-
-- The ability to create and use Sourcegraph extensions, which are like editor extensions but run in all of your dev tools.
-- TODO: All code intelligence (hovers, definitions, references, etc.) is provided via Sourcegraph extensions, which means increased coverage, more language-specific features, and greater configurability.
-- TODO: Basic code intel
-- Search supports language-specific query keywords, such as searching for JavaScript files that depend on a library (with `js.depends:`) or Go files that import a package (with `go.imports:`).
-- Repository permissions on your code host (starting with GitHub and GitLab) are now respected, so users can only search/view code in authorized repositories.
-- Faster search on the single-node Docker image deployment option when indexed search is enabled.
-- Deploying and managing a Sourcegraph cluster for high-scale and high-availability is easier, with fewer services to run and online configuration updating.
-
-This 3.0 release is recommended for all new Sourcegraph instances. If you're currently running Sourcegraph 2.x, contact us for customized advice on how to upgrade to 3.0.
+##
