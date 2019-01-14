@@ -16,10 +16,10 @@ Several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/e
 
 - [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
 - [Datadog metrics](#datadog-metrics): easily jump to Datadog metrics information from statsd calls in your code.
-- [JavaScript/TypeScript language support](#TODO)
-- [Go language support](#TODO)
-- [Python language support](#TODO)
-- [Java language support](#TODO)
+- [JavaScript/TypeScript language support](https://sourcegraph.com/extensions/sourcegraph/lang-typescript)
+- [Go language support](https://sourcegraph.com/extensions/sourcegraph/lang-go)
+- [Python language support](https://sourcegraph.com/extensions/sourcegraph/python)
+- [Java language support](https://sourcegraph.com/extensions/sourcegraph/lang-java)
 
 Want to hear about new features and releases as soon as they're available? Follow [@srcgraph](https://twitter.com/srcgraph).
 
@@ -75,16 +75,20 @@ We shipped other improvements to the extension development process:
 - [`npm init @sourcegraph/extension` extension generator](https://docs.sourcegraph.com/extensions/authoring/creating): easily create the skeleton of a new Sourcegraph extension.
 - [Sideload extensions](https://docs.sourcegraph.com/extensions/authoring/local_development): you can now run extensions during development by just entering a URL instead of needing to publish a WIP extension.
 - [WIP extensions](https://docs.sourcegraph.com/extensions/authoring/publishing#wip-extensions): an extension whose package.json contains `"wip": true` is marked as a work-in-progress so that users don't inadvertently install it.
+- [Extension categories and tags](https://docs.sourcegraph.com/extensions/authoring/manifest#fields): these help users find your extension.
 
 The [Sourcegraph extensions authoring documentation](https://docs.sourcegraph.com/extensions/authoring) also got some new tutorials:
   - [Building a "Hello, world" extension](https://docs.sourcegraph.com/extensions/authoring/tutorials/hello_world)
   - [Adding buttons and custom commands](https://docs.sourcegraph.com/extensions/authoring/tutorials/button_custom_commands)
   - [Building an extension for a language](https://docs.sourcegraph.com/extensions/authoring/tutorials/lang_specific_extension_tutorial)
 
-
 ### Extension registry improvements
 
-TODO(sqs)
+The [Sourcegraph.com extension registry](https://sourcegraph.com/extensions) lists all publicly available [Sourcegraph extensions](https://docs.sourcegraph.com/extensions). You can also access it on your own Sourcegraph instance at **User menu > Extensions**. Here's what's new:
+
+- [Extension categories and tags](https://docs.sourcegraph.com/extensions/authoring/manifest#fields): use the [**Category** dropdown](https://sourcegraph.com/extensions) or `tag:mytag` extension query keyword to filter the list of extensions. For example, see ["Programming languages" category](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) and ["javascript" tag](https://sourcegraph.com/extensions?query=tag%3Ajavascript).
+- Show enabled/disabled extensions: use the [**Options** dropdown](https://sourcegraph.com/extensions) to show only extensions that are enabled (or disabled) for your user account. This makes it easier to manage your in-use extensions.
+- [WIP extensions](https://docs.sourcegraph.com/extensions/authoring/publishing#wip-extensions): extensions that are marked as work-in-progress by the author are indicated as such and are shown last in the list of results.
 
 ### Management console and site config improvements
 
