@@ -10,12 +10,12 @@ The beta release of Sourcegraph 3.0 is now available (as version tag `3.0.0-beta
 - [Deploy to more kinds of clusters](#deploy-to-more-kinds-of-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
 - [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
 - [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
-- [Nginx-based HTTP configuration](#nginx-based-web-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
+- [Nginx-based HTTP server](#nginx-based-http-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
 
 Several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) add features we think you'll like:
 
 - [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
-- [Datadog metrics](#datadog-metrics): easily jump to Datadog metrics information from statsd calls in your code.
+- [Datadog metrics](#datadog-metrics-extension): easily jump to Datadog metrics information from statsd calls in your code.
 - [JavaScript/TypeScript language support](https://sourcegraph.com/extensions/sourcegraph/lang-typescript)
 - [Go language support](https://sourcegraph.com/extensions/sourcegraph/lang-go)
 - [Python language support](https://sourcegraph.com/extensions/sourcegraph/python)
@@ -116,19 +116,31 @@ See ["Installing Sourcegraph on a cluster"](https://docs.sourcegraph.com/admin/i
 
 ### Authentication and repository permissions from GitHub
 
-TODO(sqs)
+You can configure Sourcegraph to [allow users to sign in via GitHub or GitHub Enterprise](https://docs.sourcegraph.com/admin/auth#github). (Many other [user authentication providers](https://docs.sourcegraph.com/admin/auth) are supported, such as SAML, OpenID Connect, GitLab, builtin username-password, and HTTP auth proxies).
+
+Sourcegraph can also [enforce GitHub or GitHub Enterprise repository access permissions](https://docs.sourcegraph.com/admin/repo/permissions#github), so that users can only search and view repositories on Sourcegraph if they are permitted to do so on GitHub. This feature makes Sourcegraph delegate authorization checks for repository access to GitHub, so your GitHub repository permissions are the source of truth.
+
+See ["GitHub integration with Sourcegraph"](https://docs.sourcegraph.com/integration/github) for more information.
 
 ### Faster page load times
 
-TODO(sqs)
+We trimmed the initial bundle size by ~50% for the Sourcegraph web app. This speeds up page loads on Sourcegraph.com and your own Sourcegraph instance.
 
-### Nginx-based HTTP configuration
+### Nginx-based HTTP server
 
-TODO(sqs)
+All external HTTP serving and configuration (TLS, listen ports, Let's Encrypt, etc.) is now handled by [Nginx](https://nginx.org/en/), a popular, open-source HTTP server. See ["Sourcegraph nginx HTTP server settings"](https://docs.sourcegraph.com/admin/nginx) for information on how to configure the external web server for Sourcegraph.
 
-### Datadog metrics
+Previously, Sourcegraph implemented these HTTP features internally. We found that most admins preferred to wrap Sourcegraph with Nginx (sometimes using [ingress-nginx](https://github.com/kubernetes/ingress-nginx)) anyway, so we decided to make that the preferred and only way. Now that Sourcegraph relies on Nginx, you have the full power and configurability of Nginx at your disposal.
 
-TODO(sqs)
+### Datadog metrics extension
+
+The new [Datadog metrics extension](https://sourcegraph.com/extensions/sourcegraph/datadog-metrics) adds **View metric** links at the end of lines of code that contain calls to record [Datadog](https://www.datadoghq.com)/statsd metrics. This makes it easy to see how code is behaving *in production and in real time* when you're reading and reviewing code.
+
+Because this is a [Sourcegraph extension](https://docs.sourcegraph.com/extensions), it works on Sourcegraph and on your code host (such as on GitHub code files and PRs).
+
+For example, if your code records the time it takes to respond to queries, this extension makes it easy to jump to the query response time statistics from your code:
+
+![Line of code with Datadog metrics link](./announcing-sourcegraph-3.0-beta/datadog_metrics.png)
 
 ## Documentation
 
@@ -144,6 +156,8 @@ This release includes more solid foundations for several Sourcegraph features:
 - Standardizing on Nginx for serving HTTP lets us remove a lot of complex core code to support numerous use cases better handled by Nginx.
 
 ## Thank you
+
+TODO(sqs)
 
 ## Install or upgrade
 
