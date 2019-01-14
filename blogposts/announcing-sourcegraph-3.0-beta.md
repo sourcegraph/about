@@ -6,6 +6,8 @@ The beta release of Sourcegraph 3.0 is now available (as version tag `3.0.0-beta
 
 Highlights of this release:
 
+<!-- TODO(sqs): check anchor links match up before publishing -->
+
 - [Search query cheatsheet](#search-query-cheatsheet): click <kbd>?</kbd> next to the search button to see how to write search queries to find what you need.
 - [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using text-based heuristics.
 - [More Sourcegraph extension APIs](#more-sourcegraph-extension-apis): add more features and info to code on Sourcegraph and your code host.
