@@ -98,7 +98,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Single sign-on (SSO) support</p>
                                                         </a>
                                                         <a href="#admin">
-                                                            <p>100 user limit</p>
+                                                            <p>100-user limit</p>
                                                         </a>
                                                         <a href="#search">
                                                             <p>Support on our public issue tracker</p>
@@ -329,7 +329,7 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                                 <div id="extensions" className="table-section">
                                     <div className="row feature-table-row">
-                                        <div className="col-8 feature-title">Sourcegraph Extensions</div>
+                                        <div className="col-8 feature-title">Sourcegraph extensions</div>
                                         <div className="col-2">
                                             <div className="table-check" />
                                         </div>
@@ -405,7 +405,7 @@ export default class Pricing extends React.Component<any, any> {
                                 <div id="deployment" className="table-section">
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
-                                            On-premises deployment (
+                                            Self-hosted (on-premises) deployment (
                                             <a
                                                 href="https://docs.sourcegraph.com/"
                                                 target="_blank"
@@ -424,7 +424,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
-                                            Managed deployment option (
+                                            Cloud-managed deployment option (
                                             <a
                                                 href="/contact/sales"
                                                 target="_blank"
@@ -463,10 +463,9 @@ export default class Pricing extends React.Component<any, any> {
                                 <div id="support" className="table-section">
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
-                                            <a href="https://github.com/sourcegraph/sourcegraph/issues" target="_blank">
-                                                Public issue tracker
-                                            </a>{' '}
-                                            support
+                                            Community support (<a href="https://github.com/sourcegraph/sourcegraph/issues" target="_blank">
+                                                public issue tracker
+                                            </a>)
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
@@ -512,7 +511,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="row feature-table-row indent-row">
                                         <div className="col-8 feature-title">
-                                            SSO Groups —<i> coming soon</i>
+                                            SSO groups — <i>coming soon</i>
                                         </div>
                                         <div className="col-2">
                                             <div className="table-blank" />
@@ -523,7 +522,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="row feature-table-row indent-row">
                                         <div className="col-8 feature-title">
-                                            Repository ACLs from GitHub and GitLab (
+                                            Repository permissions from GitHub and GitLab (
                                             <a
                                                 href="https://docs.sourcegraph.com/admin/repo/permissions"
                                                 target="_blank"
