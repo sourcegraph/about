@@ -134,7 +134,7 @@ See ["GitHub integration with Sourcegraph"](https://docs.sourcegraph.com/integra
 
 ### Faster page load times
 
-We trimmed the initial bundle size by ~50% for the Sourcegraph web app. This speeds up page loads on Sourcegraph.com and your own Sourcegraph instance.
+We trimmed the initial bundle size by ~50% for the Sourcegraph web app. This speeds up page loads on Sourcegraph.com and your own Sourcegraph instance. Thanks, [Webpack](https://webpack.js.org/)! (As a [JS Foundation member](https://js.foundation/about/members), Sourcegraph is proud to support Webpack.)
 
 ### Nginx-based HTTP server
 
