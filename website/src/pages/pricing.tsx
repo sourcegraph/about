@@ -39,7 +39,7 @@ export default class Pricing extends React.Component<any, any> {
                                             <p>
                                                 Sourcegraph is open source and ready to use for teams of all sizes. You
                                                 can get started by deploying a private Sourcegraph Core instance for
-                                                free, or view our code on GitHub.
+                                                free, or build from source from our GitHub repository.
                                             </p>
                                             <a
                                                 className="btn btn-deploy"
