@@ -1,8 +1,6 @@
 # Sourcegraph 3.0 beta is now available
 
-**NOTE:** This is a draft announcement. The version tag mentioned will be published early in the week of Mon Jan 14.
-
-The beta release of Sourcegraph 3.0 is now available (as version tag `3.0.0-beta`--**NOTE:** this is a draft announcement and the version tag is not yet published). Sourcegraph is an **open-source, self-hosted code search and browsing tool** for teams, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
+The beta release of Sourcegraph 3.0 is now available (as version tag [`3.0.0-beta`](#install-upgrade)). Sourcegraph is an **open-source, self-hosted code search and browsing tool** for teams, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-upgrade)
 
 Highlights of this release:
 
