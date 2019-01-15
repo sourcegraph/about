@@ -66,6 +66,10 @@
                 transition: all 300ms ease;
                 box-shadow: 0px 0px 4px 1px rgba(13, 69, 255, 0.4);
             }
+			@media screen and (max-width: $media-md) {
+				margin-bottom: 1rem;
+				width: 100%;
+			}
         }
         .btn-github {
             margin-left: 1.5rem;
@@ -80,10 +84,10 @@
                 transition: all 300ms ease;
                 box-shadow: 0px 0px 4px 1px rgba(178, 0, 248, 0.4);
             }
-            @media screen and (max-width: $media-md) {
-                margin-left: 0rem;
-                margin-top: 1rem;
-            }
+			@media screen and (max-width: $media-md) {
+				margin-left: 0;
+				width: 100%;
+			}
         }
         .hero-image {
             width: 100%;
@@ -98,33 +102,19 @@
     display: inline-block;
     padding: 0 0;
     .pricing-section {
-        padding-top: 15vh;
+        padding-top: calc(15vh - 20px);
+		.row {
+			justify-content: space-evenly;
+		}
     }
 
     .pricing-card-col {
+
         &:nth-child(2) {
-            transform: translateX(-100%);
-            animation: slide1 650ms ease-in-out 750ms forwards;
-            @keyframes slide1 {
-                from {
-                    transform: matrix3d(0.87, 0, 0.7, 0, 0, 1, 0, 0, -0.5, 0, 0.87, 0, -100%, 0, 0, 1);
-                }
-                to {
-                    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-                }
-            }
+
         }
         &:nth-child(3) {
-            transform: translateX(-35%);
-            animation: slide2 650ms ease-in-out 750ms forwards;
-            @keyframes slide2 {
-                from {
-                    transform: matrix3d(0.87, 0, 0.7, 0, 0, 1, 0, 0, -0.5, 0, 0.87, 0, -35%, 0, 0, 1);
-                }
-                to {
-                    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-                }
-            }
+
         }
         &:first-of-type {
             .card-body {
@@ -132,19 +122,7 @@
                     // color: #0d97ff
                 }
             }
-            opacity: 0;
-            transform: translateX(-50px);
-            animation: display 650ms ease-in-out 1100ms forwards;
-            @keyframes display {
-                from {
-                    opacity: 0;
-                    transform: translateX(-50px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0px);
-                }
-            }
+
             .btn {
                 background-color: #0d97ff;
                 color: #fafcff;
@@ -199,6 +177,11 @@
             &:hover {
                 box-shadow: 0px 0px 8px 1px rgba(13, 151, 255, 0.45);
             }
+			@media screen and (max-width: $media-md) {
+				width: calc(100% - 8px);
+				margin-left: 0;
+
+			}
         }
         .features {
             line-height: 24px;
@@ -225,14 +208,15 @@
         }
 
         .contact {
-            @media (max-width: $media-md) {
-                padding-left: 1rem;
-                width: 100%;
-                max-width: 100%;
-            }
             margin-right: 0px;
             text-align: center;
-            padding-top: 4rem;
+            padding-top: 3rem;
+			@media (max-width: $media-md) {
+				padding-left: 1rem;
+				width: 100%;
+				max-width: 100%;
+				padding-top: 1rem;
+			}
         }
         &-list {
             margin-bottom: 0;
@@ -318,18 +302,31 @@
     .cta-row {
         margin-top: 5rem;
         text-align: center;
+
         .btn {
             width: 12rem;
             text-align: center;
-            justify-content: center;
             display: inline-flex;
-            margin-right: 2rem;
+			justify-content: center;
             margin-top: 1rem;
+			margin-right: 2rem;
+			@media screen and (max-width: $media-md) {
+				margin-right: 0;
+				width: 100%;
+	        }
         }
+		.contact-row {
+			display: flex;
+			justify-content: center;
+			@media screen and (max-width: $media-md) {
+				justify-content: space-around;
+				flex-wrap: wrap;
+	        }
+		}
     }
 	.feature-table-header,
 	.feature-table-row {
-		.col-6:first-of-type {
+		.col-8:first-of-type {
 			text-align: left;
 		}
 
@@ -340,6 +337,7 @@
 		text-align: center;
 	}
 	.feature-table-header {
+		overflow: hidden;
 		position: sticky;
 		top: 0px;
 		padding-top: .5rem;
@@ -379,6 +377,7 @@
 			}
 		}
 		padding-top: 2.5rem;
+		padding-bottom: .5rem;
 	}
     .table-section {
         .indent-row {
