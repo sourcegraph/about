@@ -312,6 +312,7 @@
 			margin-right: 2rem;
 			@media screen and (max-width: $media-md) {
 				margin-right: 0;
+				width: 100%;
 	        }
         }
 		.contact-row {
@@ -319,6 +320,7 @@
 			justify-content: center;
 			@media screen and (max-width: $media-md) {
 				justify-content: space-around;
+				flex-wrap: wrap;
 	        }
 		}
     }
