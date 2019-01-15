@@ -23,7 +23,7 @@ Plus, there are several new and improved [Sourcegraph extensions](https://docs.s
 - [JavaScript/TypeScript language support](https://sourcegraph.com/extensions/sourcegraph/lang-typescript)
 - [Go language support](https://sourcegraph.com/extensions/sourcegraph/lang-go)
 - [Python language support](https://sourcegraph.com/extensions/sourcegraph/python)
-- [Java language support](https://sourcegraph.com/extensions/sourcegraph/lang-java)
+<!-- - [Java language support](https://sourcegraph.com/extensions/sourcegraph/lang-java) -->
 
 Want to hear about new features and releases as soon as they're available? Follow [@srcgraph](https://twitter.com/srcgraph).
 
