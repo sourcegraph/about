@@ -309,7 +309,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row indent-row">
                                         <div className="col-8 feature-title">Cross-repository</div>
                                         <div className="col-2">
-                                            <div className="table-blank" />
+                                            <div className="table-check" />
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
