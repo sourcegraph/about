@@ -25,9 +25,11 @@ Plus, there are several new and improved [Sourcegraph extensions](https://docs.s
 - [Python language support](https://sourcegraph.com/extensions/sourcegraph/python)
 <!-- - [Java language support](https://sourcegraph.com/extensions/sourcegraph/lang-java) -->
 
-Ready to [install or upgrade Sourcegraph](#install-or-upgrade)?
+Also, in case you missed it, [Sourcegraph is now open source](https://about.sourcegraph.com/blog/sourcegraph-is-now-open-source) (Apache-licensed).
 
 Want to hear about new features and releases as soon as they're available? Follow [@srcgraph](https://twitter.com/srcgraph).
+
+Ready to [install or upgrade a self-hosted Sourcegraph instance](#install-or-upgrade)? You can also [try these features on Sourcegraph.com for open-source code](https://sourcegraph.com).
 
 ## Highlights
 
@@ -37,7 +39,9 @@ We want anyone to be able to start using Sourcegraph for code search without rea
 
 But when you're searching more than a couple times daily, learning Sourcegraph's search keywords (such as `repo:`) will make you more productive. Click the new <kbd>?</kbd> icon next to any search button to see a quick reference. See ["Search query syntax"](https://docs.sourcegraph.com/user/search/queries) for more info.
 
-![Search query cheatsheet](./announcing-sourcegraph-3.0-beta/search_query_cheatsheet.png)
+[Try it out:](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
+
+[![Search query cheatsheet](./announcing-sourcegraph-3.0-beta/search_query_cheatsheet.png)](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
 
 ### Basic code intelligence for all languages
 
@@ -54,7 +58,9 @@ For example, if multiple functions in your code are named `open`, the reference 
 
 The sourcegraph/basic-code-intel extension is enabled for all users by default on [Sourcegraph.com](https://sourcegraph.com). To enable it on your own Sourcegraph instance, go to **User menu > Extensions** and search for `sourcegraph/basic-code-intel` ([more info](https://sourcegraph.com/extensions/sourcegraph/basic-code-intel#usage)).
 
-![Basic code intelligence for all languages](./announcing-sourcegraph-3.0-beta/basic_code_intel.png)
+[See it in action on Sourcegraph.com:](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
+
+[![Basic code intelligence for all languages](./announcing-sourcegraph-3.0-beta/basic_code_intel.png)](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
 
 ### More Sourcegraph extension APIs
 
