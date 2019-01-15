@@ -1,5 +1,5 @@
 ---
-title: 'Sourcegraph 2.11: Easier Configuration and Deployments, and Sourcegraph Extensions'
+title: 'Sourcegraph 2.11: Easier configuration and deployments, and Sourcegraph extensions'
 author: 'Ryan Blunden'
 publishDate: 2018-09-04T10:30-07:00
 tags: [
