@@ -523,7 +523,14 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="row feature-table-row indent-row">
                                         <div className="col-8 feature-title">
-                                            Repository ACLs from GitHub and GitLab
+                                            Repository ACLs from GitHub and GitLab (
+                                            <a
+                                                href="https://docs.sourcegraph.com/admin/repo/permissions"
+                                                target="_blank"
+                                            >
+                                                learn more
+                                            </a>
+                                            )
                                         </div>
                                         <div className="col-2">
                                             <div className="table-blank" />
