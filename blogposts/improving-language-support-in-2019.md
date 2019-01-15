@@ -29,7 +29,7 @@ Based on these learnings, the following principles will guide future improvement
 
 - Prioritize languages by a combination of popularity, ease of analysis, and Sourcegraph customer needs (statically-typed languages, ones that already have solid language servers, ones that customers are asking for, etc.)
 - Focus on quality over quantity (already tried quantity in 2018 with lsp-adapter and cold emails, and this stagnated)
-- Fund improvements to language servers it means language support will improve faster
+- Fund improvements to language servers if it means language support will improve faster
 - UI/UX ergonomics matter: suppress non-actionable errors and indicate when some analysis is taking a long time
 
 Sourcegraph believes that there will be one canonical language server per language, and we will be investing effort in the language server that is likely to succeed and become adopted by the respective language community.
