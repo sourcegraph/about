@@ -71,7 +71,7 @@ export default class Pricing extends React.Component<any, any> {
                                                 <div className="row">
                                                     <div className="col-12 user-pricing">
                                                         <h2>Free</h2>
-                                                        <h3>for 200 users</h3>
+                                                        <h3>for 100 users</h3>
                                                     </div>
                                                 </div>
                                                 <div className="row">
@@ -98,7 +98,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Single sign-on (SSO) support</p>
                                                         </a>
                                                         <a href="#admin">
-                                                            <p>200 user limit</p>
+                                                            <p>100 user limit</p>
                                                         </a>
                                                         <a href="#search">
                                                             <p>Support on our public issue tracker</p>
