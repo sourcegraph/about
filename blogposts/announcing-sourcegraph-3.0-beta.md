@@ -1,24 +1,24 @@
 # Sourcegraph 3.0 beta is now available
 
-The beta release of Sourcegraph 3.0 is now available (as version tag [`3.0.0-beta`](#install-upgrade)). Sourcegraph is an **open-source, self-hosted code search and browsing tool** for teams, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-upgrade)
+The beta release of Sourcegraph 3.0 is now available (as version tag [`3.0.0-beta`](#install-or-upgrade)). Sourcegraph is an **open-source, self-hosted code search and browsing tool** for teams, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
 
 Highlights of this release:
 
 <!-- TODO(sqs): check anchor links match up before publishing -->
 
 - [Search query cheatsheet](#search-query-cheatsheet): click <kbd>?</kbd> next to the search button to see how to write search queries to find what you need.
-- [Basic code intelligence for all languages](#basic-code-intelligence-all-languages): fast go-to-definition and find-references for code in any language, using text-based heuristics.
+- [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using text-based heuristics.
 - [More Sourcegraph extension APIs](#more-sourcegraph-extension-apis): add more features and info to code on Sourcegraph and your code host.
 - [Extension registry improvements](#extension-registry-improvements): discover and manage Sourcegraph extensions.
-- [Management console and site config improvements](#management-console-site-config-improvements): an easier, failsafe web interface for editing site config (works on clusters, too).
-- [Deploy to more kinds of clusters](#deploy-more-kinds-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
-- [Authentication and repository permissions from GitHub](#authenticate-via-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
+- [Management console and site config improvements](#management-console-and-site-config-improvements): an easier, failsafe web interface for editing site config (works on clusters, too).
+- [Deploy to more kinds of clusters](#deploy-to-more-kinds-of-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
+- [Authentication and repository permissions from GitHub](#authentication-and-repository-permissions-from-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
 - [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
 - [Nginx-based HTTP server](#nginx-based-http-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
 
 Plus, there are several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions):
 
-- [Basic code intelligence for all languages](#basic-code-intelligence-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
+- [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. (Also mentioned above.)
 - [Datadog metrics](#datadog-metrics-extension): easily jump to Datadog metrics information from statsd calls in your code.
 - [JavaScript/TypeScript language support](https://sourcegraph.com/extensions/sourcegraph/lang-typescript)
 - [Go language support](https://sourcegraph.com/extensions/sourcegraph/lang-go)
