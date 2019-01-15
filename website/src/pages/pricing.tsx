@@ -77,10 +77,7 @@ export default class Pricing extends React.Component<any, any> {
                                                 <div className="row">
                                                     <div className="col-12 features">
                                                         <a href="#deployment">
-                                                            <p>Self-hosted or cloud managed</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>200-user limit</p>
+                                                            <p>Self-hosted or cloud-managed</p>
                                                         </a>
                                                         <a href="#search">
                                                             <p>Code search</p>
@@ -94,15 +91,18 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a href="#extensions">
                                                             <p>Sourcegraph extensions</p>
                                                         </a>
-                                                        <a href="#search">
-                                                            <p>Support on our public issue tracker</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>SSO integrations</p>
-                                                        </a>
                                                         <a href="#integrations">
                                                             <p>Code host and editor integrations</p>
-                                                            <br />
+                                                        </a>
+                                                        <a href="#admin">
+                                                            <p>Single sign-on (SSO) support</p>
+                                                        </a>
+                                                        <a href="#admin">
+                                                            <p>200 user limit</p>
+                                                        </a>
+                                                        <a href="#search">
+                                                            <p>Support on our public issue tracker</p>
+                                                            <br/>
                                                         </a>
                                                     </div>
                                                     <div className="col-12 contact">
@@ -134,13 +134,10 @@ export default class Pricing extends React.Component<any, any> {
                                                 <div className="row">
                                                     <div className="col-12 features">
                                                         <a href="#deployment">
-                                                            <p>Self-hosted or cloud managed</p>
+                                                            <p>Self-hosted or cloud-managed</p>
                                                         </a>
                                                         <a href="#admin">
-                                                            <p>No user limit</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>Scalable cluster support</p>
+                                                            <p>High-scale cluster deployment</p>
                                                         </a>
                                                         <a href="#admin">
                                                             <p>Repository-level user permissions</p>
@@ -151,15 +148,16 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a href="#admin">
                                                             <p>External database support</p>
                                                         </a>
-                                                        <a href="#support">
-                                                            <p>Premium support</p>
-                                                        </a>
                                                         <a href="#extensions">
                                                             <p>
                                                                 Private Sourcegraph extension <br />
                                                                 registry
                                                             </p>
                                                         </a>
+                                                        <a href="#support">
+                                                            <p>Premium support</p>
+                                                        </a>
+                                                        <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                     </div>
                                                     <div className="col-12 contact">
@@ -499,7 +497,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
-                                            Single sign-on integration (
+                                            Single sign-on (SSO) support (
                                             <a href="https://docs.sourcegraph.com/admin/auth" target="_blank">
                                                 learn more
                                             </a>
@@ -525,7 +523,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="row feature-table-row indent-row">
                                         <div className="col-8 feature-title">
-                                            Repository ACLs —<i> coming soon</i>
+                                            Repository ACLs from GitHub and GitLab
                                         </div>
                                         <div className="col-2">
                                             <div className="table-blank" />
