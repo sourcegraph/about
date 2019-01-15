@@ -165,6 +165,8 @@ This release includes more solid foundations for several Sourcegraph features:
 - The new concept of [external service connections](https://docs.sourcegraph.com/admin/repo/add) will allow us to improve Sourcegraph's synchronization of repositories in a future release.
 - Standardizing on Nginx for serving HTTP lets us remove a lot of complex core code to support numerous use cases better handled by Nginx.
 
+We're now preparing for the 3.0 (non-beta) release ([issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+milestone%3A3.0)).
+
 ## Thank you
 
 Thank you to the many people who contributed to make Sourcegraph better since our last release!
