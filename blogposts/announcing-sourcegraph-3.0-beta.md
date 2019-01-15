@@ -13,8 +13,8 @@ Highlights of this release:
 - [Management console and site config improvements](#management-console-and-site-config-improvements): an easier, failsafe web interface for editing site config (works on clusters, too).
 - [Deploy to more kinds of clusters](#deploy-to-more-kinds-of-clusters): if our existing 1-Docker-container or Kubernetes deployment schemes don't work for you.
 - [Authentication and repository permissions from GitHub](#authentication-and-repository-permissions-from-github): allow user sign-in and enforce repository access permissions from GitHub or GitHub Enterprise.
-- [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
 - [Nginx-based HTTP server](#nginx-based-http-server): for ease of deployment, all HTTP configuration (TLS, listen ports, etc.) is now handled by Nginx instead of being built into Sourcegraph.
+- [Faster page load times](#faster-page-load-times): 50% smaller initial bundle size.
 
 Plus, there are several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions):
 
@@ -132,15 +132,15 @@ Sourcegraph can also [enforce GitHub or GitHub Enterprise repository access perm
 
 See ["GitHub integration with Sourcegraph"](https://docs.sourcegraph.com/integration/github) for more information.
 
-### Faster page load times
-
-We trimmed the initial bundle size by ~50% for the Sourcegraph web app. This speeds up page loads on Sourcegraph.com and your own Sourcegraph instance. Thanks, [Webpack](https://webpack.js.org/)! (As a [JS Foundation member](https://js.foundation/about/members), Sourcegraph is proud to support Webpack.)
-
 ### Nginx-based HTTP server
 
 All external HTTP serving and configuration (TLS, listen ports, Let's Encrypt, etc.) is now handled by [Nginx](https://nginx.org/en/), a popular, open-source HTTP server. See ["Sourcegraph nginx HTTP server settings"](https://docs.sourcegraph.com/admin/nginx) for information on how to configure the external web server for Sourcegraph.
 
 Previously, Sourcegraph implemented these HTTP features internally. We found that most admins preferred to wrap Sourcegraph with Nginx (sometimes using [ingress-nginx](https://github.com/kubernetes/ingress-nginx)) anyway, so we decided to make that the preferred and only way. Now that Sourcegraph relies on Nginx, you have the full power and configurability of Nginx at your disposal.
+
+### Faster page load times
+
+We trimmed the initial bundle size by ~50% for the Sourcegraph web app. This speeds up page loads on Sourcegraph.com and your own Sourcegraph instance. Thanks, [Webpack](https://webpack.js.org/)! (As a [JS Foundation member](https://js.foundation/about/members), Sourcegraph is proud to support Webpack.)
 
 ### Datadog metrics extension
 
