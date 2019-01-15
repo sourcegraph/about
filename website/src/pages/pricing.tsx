@@ -102,7 +102,7 @@ export default class Pricing extends React.Component<any, any> {
                                                         </a>
                                                         <a href="#search">
                                                             <p>Support on our public issue tracker</p>
-                                                            <br/>
+                                                            <br />
                                                         </a>
                                                     </div>
                                                     <div className="col-12 contact">
