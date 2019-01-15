@@ -463,9 +463,11 @@ export default class Pricing extends React.Component<any, any> {
                                 <div id="support" className="table-section">
                                     <div className="row feature-table-row">
                                         <div className="col-8 feature-title">
-                                            Community support (<a href="https://github.com/sourcegraph/sourcegraph/issues" target="_blank">
+                                            Community support (
+                                            <a href="https://github.com/sourcegraph/sourcegraph/issues" target="_blank">
                                                 public issue tracker
-                                            </a>)
+                                            </a>
+                                            )
                                         </div>
                                         <div className="col-2">
                                             <div className="table-check" />
