@@ -39,7 +39,7 @@ We want anyone to be able to start using Sourcegraph for code search without rea
 
 But when you're searching more than a couple times daily, learning Sourcegraph's search keywords (such as `repo:`) will make you more productive. Click the new <kbd>?</kbd> icon next to any search button to see a quick reference. See ["Search query syntax"](https://docs.sourcegraph.com/user/search/queries) for more info.
 
-[Try it out:](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
+[Try it out](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller) (click the <kbd>?</kbd> next to the search button):
 
 [![Search query cheatsheet](./announcing-sourcegraph-3.0-beta/search_query_cheatsheet.png)](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
 
