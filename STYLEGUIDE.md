@@ -139,7 +139,7 @@ For consistency, all examples should use the following names (as appropriate).
 - PostgreSQL (not any of: Postgres, postgres, PgSQL, Postgresql, PostGres, etc.)
 - Go (not "Golang")
 - macOS (not any of: OS X, OSX, MacOS, MacOSX, etc.)
-- Capitalize as shown: Docker, Bitbucket, GitHub, React, JavaScript, TypeScript (all according to the intent of the creator)
+- Capitalize as shown (in prose): Docker, Bitbucket, GitHub, React, Git, JavaScript, TypeScript (all according to the intent of the creator)
 
 ### "Contact us" Language
 
