@@ -53,11 +53,11 @@ You can now answer these questions easily across all of your organization's code
 
 It works immediately for all code with zero configuration because it uses heuristics to provide fuzzy results by default. This is surprisingly helpful and fast, and it finds results in your other repositories, too.
 
-Want precise results? Many of the [N language extensions](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) also can provide precise results, by building and analyzing the code like a compiler, often by using a language server. See each extension's page (such as the [TypeScript/JavaScript extension](https://sourcegraph.com/extensions/sourcegraph/typescript)) for details.
+Want precise results? Many of the [N language extensions](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) also can provide precise results, by building and analyzing the code like a compiler (using a language server). See each extension's page (such as the [TypeScript/JavaScript extension](https://sourcegraph.com/extensions/sourcegraph/typescript)) for details.
 
-As long as you're aware of the limitations of the default (fuzzy) mode, you'll like it lot. For example, in the fuzzy mode, if multiple functions in your code are named `open`, the reference results for `open` will include false positives. (If it bothers you, toggle it off temporarily in the command palette or disable the language extension completely.)
+As long as you're aware of the limitations of the default (non-language server) mode, you'll like it lot. For example, in this mode, if multiple functions in your code are named `open`, the reference results for `open` will include false positives. (If it bothers you, run the extension's associated language server for precise results, or disable the language extension.)
 
-The new language extensions are enabled by default on [Sourcegraph.com](https://sourcegraph.com) and self-hosted instances on Sourcegraph 3.0.
+For the most popular languages, the new language extensions are enabled by default on [Sourcegraph.com](https://sourcegraph.com) and self-hosted instances on Sourcegraph 3.0.
 
 [See it in action on Sourcegraph.com:](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
 
