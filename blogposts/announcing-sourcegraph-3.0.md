@@ -42,16 +42,6 @@ Ready to [install or upgrade a self-hosted Sourcegraph instance](#install-or-upg
 
 ## Highlights
 
-### Search query cheatsheet
-
-We want anyone to be able to start using Sourcegraph for code search without reading a manual. That's why we made Sourcegraph search super fast and added one-click query suggestions (computed locally using heuristics) to refine your query.
-
-But when you're searching more than a couple times daily, learning Sourcegraph's search keywords (such as `repo:`) will make you more productive. Click the new <kbd>?</kbd> icon next to any search button to see a quick reference. See ["Search query syntax"](https://docs.sourcegraph.com/user/search/queries) for more info.
-
-[Try it out](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller) (click the <kbd>?</kbd> next to the search button):
-
-[![Search query cheatsheet](./announcing-sourcegraph-3.0/search_query_cheatsheet.png)](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
-
 ### Code intelligence for all languages
 
 Two of the most common questions developers have while reading code are:
@@ -72,6 +62,16 @@ The new language extensions are enabled by default on [Sourcegraph.com](https://
 [See it in action on Sourcegraph.com:](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
 
 [![Basic code intelligence for all languages](./announcing-sourcegraph-3.0/basic_code_intel.png)](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
+
+### Search query cheatsheet
+
+We want anyone to be able to start using Sourcegraph for code search without reading a manual. That's why we made Sourcegraph search super fast and added one-click query suggestions (computed locally using heuristics) to refine your query.
+
+But when you're searching more than a couple times daily, learning Sourcegraph's search keywords (such as `repo:`) will make you more productive. Click the new <kbd>?</kbd> icon next to any search button to see a quick reference. See ["Search query syntax"](https://docs.sourcegraph.com/user/search/queries) for more info.
+
+[Try it out](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller) (click the <kbd>?</kbd> next to the search button):
+
+[![Search query cheatsheet](./announcing-sourcegraph-3.0/search_query_cheatsheet.png)](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
 
 ### More Sourcegraph extension APIs
 
