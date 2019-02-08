@@ -1,7 +1,7 @@
 ---
 title: 'Announcing Sourcegraph 3.0'
 author: 'Quinn Slack'
-publishDate: 2019-01-15T05:59-06:00
+publishDate: 2019-02-08T05:59-06:00
 tags: [
   "blog"
 ]
@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph 3.0 is now shipping! This release come with *HUGE* improvements so you can search and navigate all your organization's code more quickly, with code intelligence (go-to-definition and find-references) for all languages.
 
-What is Sourcegraph? Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
+What is Sourcegraph? Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install] or upgrade Sourcegraph.](#install-or-upgrade)
 
 Highlights of this release:
 
@@ -28,10 +28,10 @@ Highlights of this release:
 
 Plus, there are several new and improved [Sourcegraph extensions](https://docs.sourcegraph.com/extensions):
 
-- [Basic code intelligence for all languages](#basic-code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. Enabled by default! (Also mentioned above.)
+- [Code intelligence for all languages](#code-intelligence-for-all-languages): fast go-to-definition and find-references for code in any language, using effective, zero-configuration heuristics when precise analysis is not configured. Enabled by default! (Also mentioned above.)
 - [Datadog metrics](#datadog-metrics-extension): easily jump to Datadog metrics information from statsd calls in your code.
-- [JavaScript/TypeScript language support](https://sourcegraph.com/extensions/sourcegraph/lang-typescript)
-- [Go language support](https://sourcegraph.com/extensions/sourcegraph/lang-go)
+- [JavaScript/TypeScript language support](https://sourcegraph.com/extensions/sourcegraph/typescript)
+- [Go language support](https://sourcegraph.com/extensions/sourcegraph/go)
 - [Python language support](https://sourcegraph.com/extensions/sourcegraph/python)
 
 Also, in case you missed it, [Sourcegraph is now open source](https://about.sourcegraph.com/blog/sourcegraph-is-now-open-source) (Apache-licensed).
@@ -49,7 +49,7 @@ Two of the most common questions developers have while reading code are:
 - "Where is this thing defined?"
 - "What calls/uses this thing?"
 
-You can now answer these questions easily across all of your organization's code, with Sourcegraph's improved code intelligence (go-to-definition and find-references) for [N (TODO) languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22).
+You can now answer these questions easily across all of your organization's code, with Sourcegraph's improved code intelligence (go-to-definition and find-references) for [N languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22).
 
 It works immediately for all code with zero configuration because it uses heuristics to provide fuzzy results by default. This is surprisingly helpful and fast, and it finds results in your other repositories, too.
 
@@ -201,7 +201,7 @@ Thank you to the many people who contributed to make Sourcegraph better since ou
 
 ## Install or upgrade
 
-Ready to install? [**Install Sourcegraph 3.0.**](https://docs.sourcegraph.com/#quickstart)
+Ready to install? [**Install Sourcegraph 3.0.**](https://docs.sourcegraph.com/)
 
 Updating from Sourcegraph 2.x or 3.0 beta? [Update Sourcegraph.](https://docs.sourcegraph.com/admin/updates)
 
