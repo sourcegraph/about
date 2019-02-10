@@ -10,7 +10,7 @@ heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a93
 published: true
 ---
 
-Sourcegraph 3.0 is now shipping! This release come with *HUGE* improvements so you can search and navigate all your organization's code more quickly, with code intelligence (go-to-definition and find-references) for all languages.
+Sourcegraph 3.0 is now shipping! This release comes with *HUGE* improvements so you can search and navigate all your organization's code more quickly, with code intelligence (go-to-definition and find-references) for all languages.
 
 What is Sourcegraph? Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
 
