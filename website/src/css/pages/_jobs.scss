@@ -73,27 +73,6 @@
         }
     }
 
-    &__team {
-        background: $dark-10;
-        color: white;
-
-        &--text {
-            max-width: 64em;
-            margin: 0.5rem auto;
-        }
-
-        &--profiles {
-            max-width: 96rem;
-            margin: auto auto;
-
-            &-item {
-                width: 4rem;
-                height: 4rem;
-                margin: 0 1.25rem 1.25rem 1.25rem;
-            }
-        }
-    }
-
     &__work {
         background: $light-10;
         color: black;
