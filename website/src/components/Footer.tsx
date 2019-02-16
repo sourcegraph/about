@@ -30,11 +30,6 @@ export default class Footer extends React.Component<any, any> {
                                 <input type="checkbox" />
                                 <ul>
                                     <li>
-                                        <Link to="/blog" onClick={this.blogClicked}>
-                                            Blog
-                                        </Link>
-                                    </li>
-                                    <li>
                                         <a
                                             href="https://github.com/sourcegraph"
                                             target="_blank"
@@ -44,13 +39,9 @@ export default class Footer extends React.Component<any, any> {
                                         </a>
                                     </li>
                                     <li>
-                                        <a
-                                            href="https://www.linkedin.com/company/4803356/"
-                                            target="_blank"
-                                            onClick={this.linkedInClicked}
-                                        >
-                                            LinkedIn
-                                        </a>
+                                        <Link to="/blog" onClick={this.blogClicked}>
+                                            Blog
+                                        </Link>
                                     </li>
                                     <li>
                                         <a
@@ -59,6 +50,15 @@ export default class Footer extends React.Component<any, any> {
                                             onClick={this.twitterClicked}
                                         >
                                             Twitter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.linkedin.com/company/4803356/"
+                                            target="_blank"
+                                            onClick={this.linkedInClicked}
+                                        >
+                                            LinkedIn
                                         </a>
                                     </li>
                                 </ul>
@@ -113,18 +113,18 @@ export default class Footer extends React.Component<any, any> {
                                     </li>
                                     <li>
                                         <a
-                                            href="https://docs.sourcegraph.com/admin/install/cluster"
-                                            onClick={this.dataCenterClicked}
-                                        >
-                                            Cluster
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
                                             href="https://docs.sourcegraph.com/integration"
                                             onClick={this.integrationsClicked}
                                         >
                                             Integrations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://about.sourcegraph.com/pricing"
+                                            onClick={this.dataCenterClicked}
+                                        >
+                                            Enterprise
                                         </a>
                                     </li>
                                 </ul>
