@@ -28,7 +28,7 @@ Even experienced Sourcegraph users will find something new. Give it a try and le
 
 ## Improved go-to-definition and hover tooltips for all languages
 
-Code intelligence for [every language](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) continues to improve, the highlights being:
+We've improved Sourcegraph's [code intelligence extensions](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22), which let you go to definitions, find references, and see hover tooltips on your code (in all languages).
 
 - No longer showing "Go to definition" on comments, except for tokens that look like code (e.g. when surrounded by backticks, or when it looks like a function call `foo()`)
 - More accurate docstring extraction from single-line or multi-line block comments.
