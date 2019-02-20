@@ -38,7 +38,7 @@ We're actively improving code intelligence in all languages, so please [send us 
 
 ## Site admin improvements
 
-Administering Sourcegraph in an enterprise SSO environment is now easier thanks to a couple of small, but important features:
+We've added a couple features to help site admins manage a Sourcegraph instance in an enterprise environment:
 
 - Querying users by email address.
 - [Disabling the changing of usernames](https://docs.sourcegraph.com/admin/config/critical_config#reference).
