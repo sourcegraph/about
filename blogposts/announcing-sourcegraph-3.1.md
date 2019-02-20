@@ -93,7 +93,7 @@ If new Sourcegraphers have contributed, add their username to the exclude list.
 
 Ready to install? [Install Sourcegraph 3.1](https://docs.sourcegraph.com/)
 
-Upgrading from 2.x or 3.0.1? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
+Upgrading from 2.x? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
 
 ---
 
