@@ -63,7 +63,7 @@ The documentation pages for [site configuration](https://docs.sourcegraph.com/ad
 The [Sourcegraph extension API](https://docs.sourcegraph.com/extensions) has two new APIs to make it easier to add interactive features to code views on Sourcegraph, GitHub, and other similar tools:
 
 - [API for accessing the current text selection range(s)](https://github.com/sourcegraph/sourcegraph/issues/702)
-- [APIs for listening to active text editor changes and selections](https://github.com/sourcegraph/sourcegraph/issues/2026).
+- [APIs for listening to changes to the active text editor and its selections](https://github.com/sourcegraph/sourcegraph/issues/2026).
 
 This means the [Git extras Sourcegraph extension](https://sourcegraph.com/extensions?query=git-extras) works better than ever. Want this functionality on GitHub too? Just install the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
 
