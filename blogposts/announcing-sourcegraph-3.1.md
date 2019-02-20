@@ -30,9 +30,9 @@ Even experienced Sourcegraph users will find something new. Give it a try and le
 
 We've improved Sourcegraph's [code intelligence extensions](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22), which let you go to definitions, find references, and see hover tooltips on your code (in all languages).
 
-- No longer showing "Go to definition" on comments, except for tokens that look like code (e.g. when surrounded by backticks, or when it looks like a function call `foo()`)
-- More accurate docstring extraction from single-line or multi-line block comments.
-- Indented sections of docstrings are rendered as code blocks.
+- The docstrings in hover tooltips are more accurate.
+- Indented sections in docstrings are rendered as code blocks in hovers.
+- Tokens in comments ignored unless they look like code (e.g., if they're wrapped in backticks or look like a function call `foo()`)
 
 We're actively improving code intelligence in all languages, so please [send us feedback](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=Language%20extension%20improvement%20for)!```
 
