@@ -26,7 +26,7 @@ Even experienced Sourcegraph users will find something new. Give it a try and le
 
 <!-- TODO (ryan): GIF using the query builder -->
 
-## Code intelligence updates
+## Improved go-to-definition and hover tooltips for all languages
 
 Code intelligence for [every language](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) continues to improve, the highlights being:
 
