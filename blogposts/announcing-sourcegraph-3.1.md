@@ -26,7 +26,7 @@ What is Sourcegraph? Sourcegraph is an open-source, self-hosted, cross-repositor
 
 Did you know that in addition to code, you can search commit diffs, commit messages, and symbols?
 
-Even experienced Sourcegraph users will find something new. Give it a try and let us know what you think via [GitHub](https://github.com/sourcegraph/sourcegraph/issues/new/choose) or [Twitter](https://twitter.com/srcgraph).
+Give it a try and let us know what you think via [GitHub](https://github.com/sourcegraph/sourcegraph/issues/new/choose) or [Twitter](https://twitter.com/srcgraph).
 
 ## Improved go-to-definition and hover tooltips for all languages
 
