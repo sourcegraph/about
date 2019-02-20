@@ -40,7 +40,7 @@ We're actively improving code intelligence in all languages, so please [send us 
 
 Administering Sourcegraph in an enterprise SSO environment is now easier thanks to a couple of small, but important features:
 
-- [Querying users by email address](https://sourcegraph.com/api/console#%7B%22query%22%3A%22%7B%5Cn%20%20user(email%3A%20%5C%22ryan%40sourcegraph.com%5C%22)%20%7B%5Cn%20%20%20%20id%5Cn%20%20%7D%5Cn%7D%5Cn%22%7D).
+- Querying users by email address.
 - [Disabling the changing of usernames](https://docs.sourcegraph.com/admin/config/critical_config#reference).
 
 Making configuration changes through the JSON editor is now easier too with easy to access documentation in the editor itself.
