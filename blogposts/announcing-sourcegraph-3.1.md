@@ -34,7 +34,7 @@ We've improved Sourcegraph's [code intelligence extensions](https://sourcegraph.
 - More accurate docstring extraction from single-line or multi-line block comments.
 - Indented sections of docstrings are rendered as code blocks.
 
-Improving code intelligence is a priority for us in  2019 so expect regular improvement updates in future releases. Want to improve support for your favorite language(s)? [Create an issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=Language%20extension%20improvement%20for).
+We're actively improving code intelligence in all languages, so please [send us feedback](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=Language%20extension%20improvement%20for)!```
 
 ## Site admin improvements
 
