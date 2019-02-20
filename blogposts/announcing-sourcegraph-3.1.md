@@ -75,7 +75,23 @@ We received feedback from many of you asking for a more regular and predictable 
 
 ## Changelog
 
-See the [Sourcegraph changelog](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#31) for a list of all changes in this release.
+### Added
+
+- Added Docker-specific help text when running the Sourcegraph docker image in an environment with an sufficient open file descriptor limit.
+- Added syntax highlighting for Kotlin and Dart.
+- Added a management console environment variable to disable HTTPS, see [the docs](https://docs.sourcegraph.com/admin/management_console#can-i-disable-https-on-the-management-console) for more information.
+- Added `auth.disableUsernameChanges` to critical configuration to prevent users from changing their usernames.
+- Site admins can query a user by email address or username from the GraphQL API.
+- Added a search query builder to the main search page. Click "Use search query builder" to open the query builder, which is a form with separate inputs for commonly used search keywords.
+
+### Changed
+
+- File match search results now show full repository name if there are results from mirrors on different code hosts (e.g. github.com/sourcegraph/sourcegraph and gitlab.com/sourcegraph/sourcegraph)
+- Search queries now use "smart case" by default. Searches are case insensitive unless you use uppercase letters. To explicitly set the case, you can still use the `case` field (e.g. `case:yes`, `case:no`). To explicitly set smart case, use `case:auto`.
+
+### Fixed
+
+- Fixed an issue where the management console would improperly regenerate the TLS cert/key unless `CUSTOM_TLS=true` was set. See the documentation for [how to use your own TLS certificate with the management console](https://docs.sourcegraph.com/admin/management_console#how-can-i-use-my-own-tls-certificates-with-the-management-console).
 
 ## Thank you
 
