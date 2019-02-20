@@ -69,7 +69,7 @@ This means the [Git extras Sourcegraph extension](https://sourcegraph.com/extens
 
 <!-- TODO (ryan): Gif of git-extras extension -->
 
-## Switching to scheduled releases on the 20th of each month
+## Fixed release schedule: a new Sourcegraph release on the 20th of every month
 
 We received feedback from many of you asking for a more regular and predictable release schedule and as a result, Sourcegraph will now be released on the 20th of each month 🎉.
 
