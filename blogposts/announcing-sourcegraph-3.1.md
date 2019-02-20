@@ -41,7 +41,7 @@ We're actively improving code intelligence in all languages, so please [send us 
 We've added a couple features to help site admins manage a Sourcegraph instance in an enterprise environment:
 
 - Querying users by email address.
-- [Disabling the changing of usernames](https://docs.sourcegraph.com/admin/config/critical_config#reference).
+- [Prevent users from changing their username](https://docs.sourcegraph.com/admin/config/critical_config#reference) (from the username set by SSO)
 
 Making configuration changes through the JSON editor is now easier too with easy to access documentation in the editor itself.
 
