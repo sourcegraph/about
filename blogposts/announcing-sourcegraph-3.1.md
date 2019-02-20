@@ -115,19 +115,25 @@ We encourage feedback as early as possible so we can incorporate it into our pro
 
 Thank you to the many people who contributed to make Sourcegraph better since the last release!
 
-<!-- TODO (ryan): Generate list -->
-
-<!--
-Use script at https://gist.github.com/ryan-blunden/c8898c989b48ba7a83e64ff9ae242cc2 to generate contributors for this release.
-
-If new Sourcegraphers have contributed, add their username to the exclude list.
--->
+- [@AndreKR](https://github.com/AndreKR)
+- [@ijt](https://github.com/ijt)
+- [@adam-moss](https://github.com/adam-moss)
+- [@caarlos0](https://github.com/caarlos0)
+- [@jlangston](https://github.com/jlangston)
+- [@CH-JosephBironas](https://github.com/CH-JosephBironas)
+- [@mjhogan](https://github.com/mjhogan)
+- [@chmllr](https://github.com/chmllr)
+- [@yevbar](https://github.com/yevbar)
+- [@vinchauhan](https://github.com/vinchauhan)
+- [@immanuelfodor](https://github.com/immanuelfodor)
+- [@terinjokes](https://github.com/terinjokes)
+- [@maxhallinan](https://github.com/maxhallinan)
 
 ## Install or upgrade
 
 Ready to install? [Install Sourcegraph 3.1](https://docs.sourcegraph.com/)
 
-Upgrading from 2.x? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
+Upgrading from 2.x or 3.0? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
 
 ---
 
