@@ -32,7 +32,7 @@ We've improved Sourcegraph's [code intelligence extensions](https://sourcegraph.
 
 - The docstrings in hover tooltips are more accurate.
 - Indented sections in docstrings are rendered as code blocks in hovers.
-- Tokens in comments ignored unless they look like code (e.g., if they're wrapped in backticks or look like a function call `foo()`)
+- Tokens in comments are ignored unless they look like code (e.g., if they're wrapped in backticks or look like a function call `foo()`)
 
 We're actively improving code intelligence in all languages, so please [send us feedback](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=Language%20extension%20improvement%20for)!```
 
