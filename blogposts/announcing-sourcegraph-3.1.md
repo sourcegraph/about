@@ -133,7 +133,7 @@ Thank you to the many people who contributed to make Sourcegraph better since th
 
 Ready to install? [Install Sourcegraph 3.1](https://docs.sourcegraph.com/)
 
-Upgrading from 2.x or 3.0? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
+Upgrading from 2.x? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
 
 ---
 
