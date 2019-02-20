@@ -10,7 +10,7 @@ heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a93
 published: false
 ---
 
-Sourcegraph 3.1 is now out! This release helps you create more powerful queries, improves code intelligence, adds new Sourcegraph extension APIs, and adds a huge amount of new documentation. We're also changing to scheduled releases on the 20th of each month.
+Sourcegraph 3.1 is now out! This release includes stability and documentation improvements, plus an easy query builder for searching your code (with useful query examples). Also, mark your calendars: our new fixed release schedule means you get a new Sourcegraph release on the 20th of each month.
 
 <!-- (ryan): Hyperlink to headings in above paragraph -->
 
