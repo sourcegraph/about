@@ -40,6 +40,7 @@ We're actively improving code intelligence in all languages, so please [send us 
 
 We've added a couple features to help site admins manage a Sourcegraph instance in an enterprise environment:
 
+- Improved [management console](https://docs.sourcegraph.com/admin/management_console) JSON editor for critical configuration, now with editor completion, inline documentation, and validation.
 - Querying users by email address.
 - [Prevent users from changing their username](https://docs.sourcegraph.com/admin/config/critical_config#reference) (from the username set by SSO)
 
