@@ -1,5 +1,5 @@
 ---
-title: 'Announcing Sourcegraph 3.1'
+title: 'Sourcegraph 3.1 released'
 author: 'Ryan Blunden'
 publishDate: 2019-02-20T05:59-06:00
 tags: [
