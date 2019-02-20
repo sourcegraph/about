@@ -46,6 +46,12 @@ We're actively improving code intelligence in all languages, so please [send us 
 
 ## Site admin improvements
 
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/318533427?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+</p>
+
 We've added a couple features to help site admins manage a Sourcegraph instance in an enterprise environment:
 
 - Improved [management console](https://docs.sourcegraph.com/admin/management_console) JSON editor for critical configuration, now with editor completion, inline documentation, and validation.
@@ -53,8 +59,6 @@ We've added a couple features to help site admins manage a Sourcegraph instance 
 - [Prevent users from changing their username](https://docs.sourcegraph.com/admin/config/critical_config#reference) (from the username set by SSO)
 
 Making configuration changes through the JSON editor is now easier too with easy to access documentation in the editor itself.
-
-<!-- TODO (ryan): GIF showing editor using the help tool tip with an item that requires a choice of values -->
 
 ## Improved configuration management and documentation
 
@@ -66,14 +70,18 @@ The documentation pages for [site configuration](https://docs.sourcegraph.com/ad
 
 ## New Sourcegraph extension APIs
 
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/318541630?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+</p>
+
 The [Sourcegraph extension API](https://docs.sourcegraph.com/extensions) has two new APIs to make it easier to add interactive features to code views on Sourcegraph, GitHub, and other similar tools:
 
 - [API for accessing the current text selection range(s)](https://github.com/sourcegraph/sourcegraph/issues/702)
 - [APIs for listening to changes to the active text editor and its selections](https://github.com/sourcegraph/sourcegraph/issues/2026).
 
 This means the [Git extras Sourcegraph extension](https://sourcegraph.com/extensions?query=git-extras) works better than ever. Want this functionality on GitHub too? Just install the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
-
-<!-- TODO (ryan): Gif of git-extras extension -->
 
 ## Fixed release schedule: a new Sourcegraph release on the 20th of every month
 
