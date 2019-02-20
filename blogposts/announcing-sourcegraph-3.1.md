@@ -56,7 +56,7 @@ We've [updated our documentation](https://docs.sourcegraph.com/admin/config) to 
 - [Critical configuration](https://docs.sourcegraph.com/admin/config/critical_config).
 - [Site configuration](https://docs.sourcegraph.com/admin/config/site_config).
 
-Reference documentation for [site configuration](https://docs.sourcegraph.com/admin/config/site_config#reference) and [critical configuration](https://docs.sourcegraph.com/admin/config/critical_config#reference) values are now rendered using the schema files themselves to ensure they'll never get out of date.
+The documentation pages for [site configuration](https://docs.sourcegraph.com/admin/config/site_config#reference) and [critical configuration](https://docs.sourcegraph.com/admin/config/critical_config#reference) now describe each option and give examples, to make it easier for you to configure your Sourcegraph instance. You can get the same documentation and examples in the JSON editors for both types of configuration, too.
 
 ## New Sourcegraph extension APIs
 
