@@ -60,7 +60,7 @@ The documentation pages for [site configuration](https://docs.sourcegraph.com/ad
 
 ## New Sourcegraph extension APIs
 
-The [Sourcegraph extension API](https://docs.sourcegraph.com/extensions/authoring) continues to evolve with two new APIs:
+The [Sourcegraph extension API](https://docs.sourcegraph.com/extensions) has two new APIs to make it easier to add interactive features to code views on Sourcegraph, GitHub, and other similar tools:
 
 - [Exposing text selection to extensions](https://github.com/sourcegraph/sourcegraph/issues/702).
 - [APIs for listening to active text editor changes and selections](https://github.com/sourcegraph/sourcegraph/issues/2026).
