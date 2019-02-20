@@ -60,10 +60,7 @@ Making configuration changes through the JSON editor is now easier too with easy
 
 Sourcegraph 3.0 introduced the [management console](https://about.sourcegraph.com/blog/sourcegraph-3.0#management-console-and-site-config-improvements) for editing critical configuration to allow recovery from misconfiguration in the site admin.
 
-We've [updated our documentation](https://docs.sourcegraph.com/admin/config) to reflect this change, separating configuration into two sections:
-
-- [Critical configuration](https://docs.sourcegraph.com/admin/config/critical_config).
-- [Site configuration](https://docs.sourcegraph.com/admin/config/site_config).
+We've [updated our documentation](https://docs.sourcegraph.com/admin/config) to reflect this change, separating configuration into two sections: [site configuration](https://docs.sourcegraph.com/admin/config/site_config#reference) and [critical configuration](https://docs.sourcegraph.com/admin/config/critical_config#reference).
 
 The documentation pages for [site configuration](https://docs.sourcegraph.com/admin/config/site_config#reference) and [critical configuration](https://docs.sourcegraph.com/admin/config/critical_config#reference) now describe each option and give examples, to make it easier for you to configure your Sourcegraph instance. You can get the same documentation and examples in the JSON editors for both types of configuration, too.
 
