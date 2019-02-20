@@ -65,7 +65,7 @@ The [Sourcegraph extension API](https://docs.sourcegraph.com/extensions/authorin
 - [Exposing text selection to extensions](https://github.com/sourcegraph/sourcegraph/issues/702).
 - [APIs for listening to active text editor changes and selections](https://github.com/sourcegraph/sourcegraph/issues/2026).
 
-This means the `[Git extras Sourcegraph extension](https://sourcegraph.com/extensions?query=git-extras) works better than ever. Want this functionality on GitHub too? Just install the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
+This means the [Git extras Sourcegraph extension](https://sourcegraph.com/extensions?query=git-extras) works better than ever. Want this functionality on GitHub too? Just install the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
 
 <!-- TODO (ryan): Gif of git-extras extension -->
 
