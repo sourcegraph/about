@@ -95,7 +95,7 @@ We received feedback from many of you asking for a more regular and predictable 
 
 ## Thank you
 
-Thank you to the many people who contributed to make Sourcegraph better since our last release!
+Thank you to the many people who contributed to make Sourcegraph better since the last release!
 
 <!-- TODO (ryan): Generate list -->
 
