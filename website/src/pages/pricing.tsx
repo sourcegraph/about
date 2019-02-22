@@ -77,7 +77,7 @@ export default class Pricing extends React.Component<any, any> {
                                                 <div className="row">
                                                     <div className="col-12 features">
                                                         <a href="#deployment">
-                                                            <p>Self-hosted or cloud-managed</p>
+                                                            <p>Self-hosted</p>
                                                         </a>
                                                         <a href="#search">
                                                             <p>Code search</p>
