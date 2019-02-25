@@ -164,20 +164,18 @@ class EventLogger {
     public trackContactUsFormSubmitted(): void {
         this.trackEvent('Pages', 'Submit', null, 'ContactUsFormSubmitted', {})
     }
-    public trackBuyEnterpriseStarterButtonClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'BuyEnterpriseStarterButtonClicked', {})
+    public trackBuyUnlimitedButtonClicked(): void {
+        this.trackEvent('Pages', 'Click', null, 'BuyUnlimitedButtonClicked', {})
     }
     public trackBuyEnterpriseButtonClicked(): void {
         this.trackEvent('Pages', 'Click', null, 'BuyEnterpriseButtonClicked', {})
     }
 
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {
-        if (!(window as any).telligent) {
-            return
-        }
-        const props = {
-            ...eventProps,
-            ...{
+        let props = { ...eventProps }
+        if ((window as any).telligent) {
+            props = {
+                ...props,
                 eventCategory: category,
                 eventAction: action,
                 eventFeature: feature,
@@ -186,9 +184,9 @@ class EventLogger {
                 path_name:
                     window && window.location && window.location.pathname ? window.location.pathname.slice(1) : '',
                 static: true,
-            },
+            }
+            ;(window as any).telligent('track', action, props)
         }
-        ;(window as any).telligent('track', action, props)
         if ((window as any).ga) {
             ;(window as any).ga('send', {
                 hitType: 'event',

@@ -66,10 +66,10 @@
                 transition: all 300ms ease;
                 box-shadow: 0px 0px 4px 1px rgba(13, 69, 255, 0.4);
             }
-			@media screen and (max-width: $media-md) {
-				margin-bottom: 1rem;
-				width: 100%;
-			}
+            @media screen and (max-width: $media-md) {
+                margin-bottom: 1rem;
+                width: 100%;
+            }
         }
         .btn-github {
             margin-left: 1.5rem;
@@ -84,10 +84,10 @@
                 transition: all 300ms ease;
                 box-shadow: 0px 0px 4px 1px rgba(178, 0, 248, 0.4);
             }
-			@media screen and (max-width: $media-md) {
-				margin-left: 0;
-				width: 100%;
-			}
+            @media screen and (max-width: $media-md) {
+                margin-left: 0;
+                width: 100%;
+            }
         }
         .hero-image {
             width: 100%;
@@ -103,9 +103,9 @@
     padding: 0 0;
     .pricing-section {
         padding-top: calc(15vh - 20px);
-		.row {
-			justify-content: space-evenly;
-		}
+        .row {
+            justify-content: space-evenly;
+        }
     }
 
     .pricing-card-col {
@@ -177,11 +177,11 @@
             &:hover {
                 box-shadow: 0px 0px 8px 1px rgba(13, 151, 255, 0.45);
             }
-			@media screen and (max-width: $media-md) {
-				width: calc(100% - 8px);
-				margin-left: 0;
+            @media screen and (max-width: $media-md) {
+                width: calc(100% - 8px);
+                margin-left: 0;
 
-			}
+            }
         }
         .features {
             line-height: 24px;
@@ -211,12 +211,12 @@
             margin-right: 0px;
             text-align: center;
             padding-top: 3rem;
-			@media (max-width: $media-md) {
-				padding-left: 1rem;
-				width: 100%;
-				max-width: 100%;
-				padding-top: 1rem;
-			}
+            @media (max-width: $media-md) {
+                padding-left: 1rem;
+                width: 100%;
+                max-width: 100%;
+                padding-top: 1rem;
+            }
         }
         &-list {
             margin-bottom: 0;
@@ -307,78 +307,73 @@
             width: 12rem;
             text-align: center;
             display: inline-flex;
-			justify-content: center;
+            justify-content: center;
             margin-top: 1rem;
-			margin-right: 2rem;
-			@media screen and (max-width: $media-md) {
-				margin-right: 0;
-				width: 100%;
-	        }
+            margin-right: 2rem;
+            @media screen and (max-width: $media-md) {
+                margin-right: 0;
+                width: 100%;
+            }
         }
-		.contact-row {
-			display: flex;
-			justify-content: center;
-			@media screen and (max-width: $media-md) {
-				justify-content: space-around;
-				flex-wrap: wrap;
-	        }
-		}
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width: $media-md) {
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
     }
-	.feature-table-header,
-	.feature-table-row {
-		.col-8:first-of-type {
-			text-align: left;
-		}
+    .feature-table-header,
+    .feature-table-row {
+        .col-6:first-of-type {
+            text-align: left;
+        }
 
-		.feature-title {
-			margin-top: 1rem;
-			margin-bottom: 1rem;
-		}
-		text-align: center;
-	}
-	.feature-table-header {
-		overflow: hidden;
-		position: sticky;
-		top: 0px;
-		padding-top: .5rem;
-		z-index: 999;
-		-webkit-border-image: -webkit-gradient(
-				linear,
-				left top,
-				right top,
-				from(#00b3f8),
-				to(#f96216),
-				color-stop(0%, #00b3f8),
-				color-stop(50%, #b200f8),
-				color-stop(100%, #f96216)
-			)
-			0 0 3 0 repeat repeat;
-		border-image: -webkit-gradient(
-				linear,
-				left top,
-				right top,
-				from(#00b3f8),
-				to(#f96216),
-				color-stop(0%, #00b3f8),
-				color-stop(50%, #b200f8),
-				color-stop(100%, #f96216)
-			)
-			0 0 3 0 repeat repeat;
-		background-color: #fafcff;
-		border-bottom: 3px solid;
-		div h4 {
-			font-weight: 700;
-		}
-	}
-	.feature-table-header {
-		.col-2 {
-			@media screen and (max-width: $media-md) {
-				transform: rotate(-65deg);
-			}
-		}
-		padding-top: 2.5rem;
-		padding-bottom: .5rem;
-	}
+        .feature-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        text-align: center;
+    }
+    .feature-table-header {
+        overflow: hidden;
+        position: sticky;
+        top: 0px;
+        padding-top: 2.5rem;
+        padding-bottom: .5rem;
+        z-index: 999;
+        -webkit-border-image: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(#00b3f8),
+                to(#f96216),
+                color-stop(0%, #00b3f8),
+                color-stop(50%, #b200f8),
+                color-stop(100%, #f96216)
+        ) 0 0 3 0 repeat repeat;
+        border-image: -webkit-gradient(
+                linear,
+                left top,
+                right top,
+                from(#00b3f8),
+                to(#f96216),
+                color-stop(0%, #00b3f8),
+                color-stop(50%, #b200f8),
+                color-stop(100%, #f96216)
+        ) 0 0 3 0 repeat repeat;
+        background-color: #fafcff;
+        border-bottom: 3px solid;
+        div h4 {
+            font-weight: 700;
+        }
+        .col-2 {
+            @media screen and (max-width: $media-md) {
+                transform: rotate(-65deg);
+            }
+        }
+    }
     .table-section {
         .indent-row {
             .feature-title {
@@ -415,13 +410,13 @@
     .table-check {
         width: 100%;
     }
-    .table-check:after {
+    .table-check::after {
         width: 100%;
         display: inherit;
         content: '✓';
         font-weight: 500;
         font-size: 2rem;
-        color: 34a4c7f;
+        color: #4a4c7f;
         text-align: center;
     }
 }
