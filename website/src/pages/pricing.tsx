@@ -208,6 +208,8 @@ export default class Pricing extends React.Component<any, any> {
                                                             <br />
                                                         </a>
                                                         <p>&nbsp;</p>
+                                                        <p>&nbsp;</p>
+                                                        <p>&nbsp;</p>
                                                     </div>
                                                     <div className="col-12 contact">
                                                         <Link
