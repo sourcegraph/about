@@ -164,6 +164,10 @@ class EventLogger {
     public trackContactUsFormSubmitted(): void {
         this.trackEvent('Pages', 'Submit', null, 'ContactUsFormSubmitted', {})
     }
+
+    public trackHackathonFormSubmitted(): void {
+        this.trackEvent('Pages', 'Submit', null, 'HackathonFormSubmitted', {})
+    }
     public trackBuyUnlimitedButtonClicked(): void {
         this.trackEvent('Pages', 'Click', null, 'BuyUnlimitedButtonClicked', {})
     }
