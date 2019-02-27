@@ -184,7 +184,7 @@ export default class Footer extends React.Component<any, any> {
                         <div className="row">
                             <div className="col-lg-12 copyright__container item">
                                 <span>
-                                    <p className="copyright">Copyright © 2018 Sourcegraph, Inc.</p>
+                                    <p className="copyright">Copyright © 2019 Sourcegraph, Inc.</p>
                                 </span>
                                 <span className="terms">
                                     <Link to="/terms" onClick={this.termsClicked}>
