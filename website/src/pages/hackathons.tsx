@@ -47,7 +47,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <li>We'll <b>answer any questions and share tips</b> to make sure you can successfully deploy and demo Sourcegraph</li>
                                 </ul>
 
-                                <p>Fill out the form, and we'll get back to you  ASAP on how to get started!</p>
+                                <p>Fill out the form, and we'll get back to you ASAP on how to get started!</p>
                                 <div className="panel__help">
                                     <p>Get started with the <a target="blank" href="https://docs.sourcegraph.com/admin/install/docker">installation docs.</a></p>
                                     <p>When you're ready to present, check out the <a target="blank" href="https://docs.sourcegraph.com/user/tour">Sourcegraph tour</a> for example use-cases to show off.</p>
