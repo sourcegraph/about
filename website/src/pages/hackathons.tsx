@@ -37,9 +37,7 @@ export default class Pricing extends React.Component<any, any> {
                                 <div>
                                     <h1 className="text-center">Set up Sourcegraph during a hackathon</h1>
                                     <p className="text-center measure">
-                                        Hackathons are the perfect time to set up code search and intelligence for your
-                                        team. We'll give you access to all of Sourcegraph's features to set you up for
-                                        the best possible demo.
+                                        We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to your team.
                                     </p>
                                 </div>
                             </div>
@@ -49,21 +47,16 @@ export default class Pricing extends React.Component<any, any> {
                         <div className="panel-area mr-lg-5 mt-0 mb-2">
                             <div className="d-flex flex-column panel">
                                 <p>
-                                    Want to bring lasting value to your company during a hackathon? Set up Sourcegraph
-                                    and bring the power of code search and code intelligence to your engineering team.
+                                    Want to win your hackathon? Set up Sourcegraph
+                                    and bring the power of code search and code intelligence to your engineering team!
                                 </p>
                                 <ul>
-                                    <li>
-                                        We'll give you <b>access to our Enterprise features</b> so you can ship
-                                        Sourcegraph's full feature set to your team and for your demo.
-                                    </li>
-                                    <li>
-                                        We'll <b>answer any questions and share tips</b> to make sure you can
-                                        successfully deploy and demo Sourcegraph
-                                    </li>
+                                    <li>We'll give you access to all of our <a href="/pricing" target="_blank">Enterprise features</a></li>
+                                    <li>We'll give you live tech support</li>
+                                    <li>We'll ship you a bag of stickers, shirts, socks, and other great swag!</li>
                                 </ul>
 
-                                <p>Fill out the form, and we'll get back to you ASAP on how to get started!</p>
+                                <p>Fill out the form or tweet us <a href="https://twitter.com/srcgraph" target="_blank">@srcgraph</a>, and we'll get back to you ASAP on how to get started!</p>
                                 <div className="panel__help">
                                     <p>
                                         Get started with the{' '}
