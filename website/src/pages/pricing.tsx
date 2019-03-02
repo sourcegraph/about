@@ -357,10 +357,7 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="row feature-table-row">
                                         <div className="col-6 feature-title">
                                             Code intelligence for all languages (
-                                            <a
-                                                href="https://docs.sourcegraph.com/extensions/language_servers"
-                                                target="_blank"
-                                            >
+                                            <a href="https://docs.sourcegraph.com/extensions" target="_blank">
                                                 learn more
                                             </a>
                                             )
