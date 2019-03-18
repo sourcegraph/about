@@ -97,14 +97,13 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a href="#admin">
                                                             <p>Single sign-on (SSO) support</p>
                                                         </a>
-                                                        <a href="#admin">
-                                                            <p>100-user limit</p>
-                                                        </a>
                                                         <a href="#search">
                                                             <p>Support on our public issue tracker</p>
                                                             <br />
                                                         </a>
                                                     </div>
+                                                    <p>&nbsp;</p>
+                                                    <p>&nbsp;</p>
                                                     <div className="col-12 contact">
                                                         <a
                                                             className="btn btn-pricing btn-lg justify-content-center text-center"
