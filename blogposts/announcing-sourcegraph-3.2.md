@@ -30,7 +30,7 @@ That’s why this release focuses on productivity and stability improvements tha
 - [Better SSL documentation](#better-ssl-documentation)
 - [Integrations refactoring and improvements](#integrations-refactoring-and-improvements)
 - [Code intelligence improvements](#code-intelligence-improvements)
-- [Changelog](changelog)
+- [Changelog](#changelog)
 
 ## Onboarding flow for site admins and users
 
