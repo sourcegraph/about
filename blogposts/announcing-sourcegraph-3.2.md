@@ -25,11 +25,12 @@ Seemingly small improvements can deliver huge productivity gains to engineers at
 
 That’s why this release focuses on productivity and stability improvements that every Sourcegraph can user benefit from.
 
-- Onboarding flow for site admins and users
-- Easier deployment to EC2 and DigitalOcean
-Better SSL documentation
-- Integrations refactoring and improvements
-- Code intelligence improvements
+- [Onboarding flow for site admins and users](#onboarding-flow-for-site-admins-and-users)
+- [Easier deployment to EC2 and DigitalOcean](#easier-deployment-to-ec2-and-digitalocean)
+- [Better SSL documentation](#better-ssl-documentation)
+- [Integrations refactoring and improvements](#integrations-refactoring-and-improvements)
+- [Code intelligence improvements](#code-intelligence-improvements)
+- [Changelog](changelog)
 
 ## Onboarding flow for site admins and users
 
@@ -71,7 +72,6 @@ Hover tooltips and jump-to-definition continue to be quicker and more efficient 
 [RYAN VIDEO DEMO]
 
 ## Changelog
-
 
 ### Added
 
