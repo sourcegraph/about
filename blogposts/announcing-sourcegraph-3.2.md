@@ -15,11 +15,11 @@ published: true
   <small>Credit: <a href="https://twitter.com/rstevens">Rich Stevens</a></small>
 </p>
 
-Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade).
+*Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade).*
 
 [Developing Sourcegraph in the open](https://docs.sourcegraph.com/dev/open_source_open_company) with a [public product roadmap](https://docs.sourcegraph.com/dev/roadmap), and having a product used by tons of developers, means we receive a constant stream of feedback. A clear theme emerged:
 
-“Improving x feature would help me more than adding new features.”
+<p style="text-align:center;font-style:italic">“Improving x feature would help me more than adding new features.”</p>
 
 Seemingly small improvements can deliver huge productivity gains to engineers at companies such as Uber,  Lyft, and Yelp, which have hundreds or thousands of developers using Sourcegraph to search and navigate thousands of repositories every day.
 
