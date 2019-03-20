@@ -23,7 +23,7 @@ Sourcegraph is an open-source, self-hosted, cross-repository code search and nav
 
 Seemingly small improvements can deliver huge productivity gains to engineers at companies such as Uber,  Lyft, and Yelp, which have hundreds or thousands of developers using Sourcegraph to search and navigate thousands of repositories every day.
 
-That’s why this release focuses on productivity and stability improvements that every Sourcegraph can user benefit from.
+That’s why this release focuses on productivity and stability improvements that every Sourcegraph user can benefit from.
 
 - [Onboarding flow for site admins and users](#onboarding-flow-for-site-admins-and-users)
 - [Easier deployment to EC2 and DigitalOcean](#easier-deployment-to-ec2-and-digitalocean)
