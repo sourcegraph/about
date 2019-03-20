@@ -1,5 +1,7 @@
 # Sourcegraph projects and content repository
 
+> NOTE: If you're writing a blog post for a release, use the [release blog post template](blogposts/RELEASE_BLOG_POST_TEMPLATE.md) 
+
 We're trying something new with this repository, capturing current projects and blog posts as Open Source code in Markdown using embedded YAML for metadata (front matter).
 
 The publishing of these blog posts is automatic, using the value of the `published` front matter key.
