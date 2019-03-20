@@ -56,6 +56,13 @@ Users are guided through performing their first search and code navigation actio
   <p style="text-align: center"><a href="https://vimeo.com/325473911" target="_blank">View on Vimeo</a></p>
 </p>
 
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/321525296?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/321525296" target="_blank">View on Vimeo</a></p>
+</p>
+
 You can [run Sourcegraph locally with a single Docker command](https://docs.sourcegraph.com/#quickstart-guide), but what about when you want to share Sourcegraph with your team?
 
 We’ve made it easier to deploy Sourcegraph to your preferred cloud environments:
