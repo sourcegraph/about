@@ -96,7 +96,7 @@ Much of 3.2 is building the foundation upon which these improvements can be made
   <p style="text-align: center"><a href="https://vimeo.com/325480377" target="_blank">View on Vimeo</a></p>
 </p>
 
-Hover tooltips and jump-to-definition continue to be quicker and more efficient as you can see in the below demo of navigating around Torvald’s Linux on Sourcegraph.com.
+Hover tooltips and jump-to-definition continue to be quicker and more efficient as you can see in the below demo of navigating around the Linux repository on Sourcegraph.com.
 
 ## Changelog
 
