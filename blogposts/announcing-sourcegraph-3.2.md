@@ -34,6 +34,13 @@ That’s why this release focuses on productivity and stability improvements tha
 
 ## Onboarding flow for site admins and users
 
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/325481465?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/325481465" target="_blank">View on Vimeo</a></p>
+</p>
+
 Getting your team on Sourcegraph is now easier thanks to the onboarding guide in the top navigation bar.
 
 Site admins are guided through the steps to connect their repositories on their Sourcegraph instance and set up user authentication so it's ready to share.
@@ -42,7 +49,14 @@ Users are guided through performing their first search and code navigation actio
 
 ## Easier deployment to EC2 and DigitalOcean
 
-You can [run Sourcegraph locally with a single Docker command](https://docs.sourcegraph.com/#quickstart-guide), but what about when you want to share Sourcegraph with your team? 
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/325473911?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/325473911" target="_blank">View on Vimeo</a></p>
+</p>
+
+You can [run Sourcegraph locally with a single Docker command](https://docs.sourcegraph.com/#quickstart-guide), but what about when you want to share Sourcegraph with your team?
 
 We’ve made it easier to deploy Sourcegraph to your preferred cloud environments:
 
@@ -68,8 +82,14 @@ Much of 3.2 is building the foundation upon which these improvements can be made
 
 ## Code intelligence improvements
 
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/325480377?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/325480377" target="_blank">View on Vimeo</a></p>
+</p>
+
 Hover tooltips and jump-to-definition continue to be quicker and more efficient as you can see in the below demo of navigating around Torvald’s Linux on Sourcegraph.com.
-[RYAN VIDEO DEMO]
 
 ## Changelog
 
