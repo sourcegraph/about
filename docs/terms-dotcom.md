@@ -6,7 +6,7 @@ permalink: terms-dotcom
 
 Last modified: March __, 2019
 
-Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of the applications, software, products, and services we make available at Sourcegraph.com. 
+Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of the applications, software, products, and services we make available at Sourcegraph.com.
 
 <div class="ml-2 mr-2 p-3" style="background: #f2f4f8;">
 
@@ -95,15 +95,15 @@ As used on this page, the following terms have the following specific meanings:
 
 2.1 **Account Responsibility and Security.**
 
-1. **Generally**. If you’re entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Accounts tied to the Organization. Only you may use your Account, and a single Account may not be shared by multiple people. You are, or your Organization is, fully responsible for your Account and all Content posted under it.  
+1. **Generally**. If you’re entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Accounts tied to the Organization. Only you may use your Account, and a single Account may not be shared by multiple people. You are, or your Organization is, fully responsible for your Account and all Content posted under it.
 
 2. **Age Limitation**. In order to create an Account or use our Services, you must be at least eighteen (18) years old and, in any event, we do not permit any users under thirteen (13) years old to use our Services for any purpose. If we discover that an Account is being used by a user under thirteen (13) years old, we will terminate that Account immediately without notice to you.
 
-3. **Security**. You’re responsible for the security of your Account when using our Services. While we may offer tools to help you maintain your Account’s security, these are not guaranteed to work. Accordingly: 
+3. **Security**. You’re responsible for the security of your Account when using our Services. While we may offer tools to help you maintain your Account’s security, these are not guaranteed to work. Accordingly:
 
-    (i) you’re responsible for all Content posted under your Account (even if you didn’t post it); 
+    (i) you’re responsible for all Content posted under your Account (even if you didn’t post it);
 
-    (ii) you’re responsible for maintaining the security of your Account and password and we have no liability of any kind for any loss or damage from your failure to secure them; and 
+    (ii) you’re responsible for maintaining the security of your Account and password and we have no liability of any kind for any loss or damage from your failure to secure them; and
 
     (iii) you must notify us immediately on becoming aware of any unauthorized use of or access to the Services through your Account.
 
@@ -147,7 +147,7 @@ As used on this page, the following terms have the following specific meanings:
 
 <span style="color:#777777"><i>**Short version**: We have the right to collect usage data from Sourcegraph.com, as described in our [Privacy Policy](/privacy).</i></span>
 
-In the course of your use of the Services, we may collect certain information about your use, including aggregated data derived from you and other users’ access and use of the Services (**“Usage Data”**). You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products and services. 
+In the course of your use of the Services, we may collect certain information about your use, including aggregated data derived from you and other users’ access and use of the Services (**“Usage Data”**). You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products and services.
 
 If we share or publicly disclose any information constituting or derived from Usage Data (e.g., in marketing materials), we will aggregate or anonymize that information to avoid identifying you or any other individual.
 
@@ -159,7 +159,7 @@ If we share or publicly disclose any information constituting or derived from Us
 
 <span style="color:#777777"><i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i></span>
 
-User privacy is important to us. Please read our [Privacy Policy](/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us. 
+User privacy is important to us. Please read our [Privacy Policy](/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us.
 
 We have implemented commercially reasonable technical and organizational measures designed to secure information you provide us from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. You acknowledge that you provide any sensitive information to us at your own risk.
 
@@ -171,9 +171,9 @@ We have implemented commercially reasonable technical and organizational measure
 
 <span style="color:#777777"><i>**Short version**: We can shut off the services or discontinue your access for any reason at any time.</i></span>
 
-You agree that we, in our sole discretion and for any or no reason, may terminate any Account (or any part of any Account) you may have. In addition, we reserve the right to discontinue any aspect of the Services at any time, including the right to discontinue the display and analysis of any Public Code Data. 
+You agree that we, in our sole discretion and for any or no reason, may terminate any Account (or any part of any Account) you may have. In addition, we reserve the right to discontinue any aspect of the Services at any time, including the right to discontinue the display and analysis of any Public Code Data.
 
-You agree that any termination of your access to the Services or your Account may happen without prior notice, and you agree that we will not be liable for such termination. 
+You agree that any termination of your access to the Services or your Account may happen without prior notice, and you agree that we will not be liable for such termination.
 
 Any suspected fraudulent, abusive, or illegal activity that may be grounds for termination of your use of the Services may be referred to appropriate law enforcement authorities. These remedies are in addition to any other remedies we may have at law or in equity.
 
@@ -195,9 +195,9 @@ The Services made available via the Site are provided to you at no charge, subje
 
 <span style="color:#777777"><i>**Short version**: Third party services and software may be necessary for Sourcegraph.com to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
 
-The Services may call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk. 
+The Services may call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
 
-The Services may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs). 
+The Services may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs).
 
 If there’s ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
 
@@ -255,7 +255,7 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 
 <span style="color:#777777"><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access to the services. Please read this section carefully.</i></span>
 
-UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL WE (OR OUR AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SERVICES, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL WE (OR OUR AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SERVICES, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU. IN SUCH CASES, OUR LIABILITY WILL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW.
 
@@ -271,13 +271,13 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 <span style="color:#777777"><i>**Short version**: The services and public code data are provided at your own risk.</i></span>
 
-You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiaries, agents, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from: 
+You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiaries, agents, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from:
 
-1. your use of and access to the Services, including any data or work transmitted or received by you; 
-2. your violation of any term of the Agreement, including without limitation, your breach of any of the representations and warranties above; 
-3. your violation of any third-party right, including without limitation any right of privacy, publicity rights or intellectual property rights; 
-4. your violation of any law, rule or regulation of the United States or any other country; 
-5. any claim or damages that arise as a result of your use of the Public Code Data or any Content submitted via your account (including UGC); or 
+1. your use of and access to the Services, including any data or work transmitted or received by you;
+2. your violation of any term of the Agreement, including without limitation, your breach of any of the representations and warranties above;
+3. your violation of any third-party right, including without limitation any right of privacy, publicity rights or intellectual property rights;
+4. your violation of any law, rule or regulation of the United States or any other country;
+5. any claim or damages that arise as a result of your use of the Public Code Data or any Content submitted via your account (including UGC); or
 6. any other party's access and use of the Services with your unique username, password or other appropriate security code. We will have the right to control the defense, settlement, adjustment or compromise of any such claims, actions or proceedings by using counsel selected by us. We will use reasonable efforts to notify you of any such claims, actions, or proceedings upon becoming aware of the same.
 
 <span style="color:#f96216;">

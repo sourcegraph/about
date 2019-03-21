@@ -6,7 +6,7 @@ permalink: terms-private
 
 Last modified: March __, 2019
 
-Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of software, products, and services we make available at Sourcegraph.com. 
+Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of software, products, and services we make available at Sourcegraph.com.
 
 <div class="ml-2 mr-2 p-3" style="background: #f2f4f8;">
 
@@ -93,7 +93,7 @@ As used on this page, the following terms have the following specific meanings:
 
 2.1 **Account Responsibility and Security.**
 
-1. **Generally**. If you’re entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Instances tied to the Organization. You are or your Organization is fully responsible for your Instance and all Content posted under it.  
+1. **Generally**. If you’re entering into the Agreement on behalf of your Organization, your Organization has administrative control of all Instances tied to the Organization. You are or your Organization is fully responsible for your Instance and all Content posted under it.
 
 2. **Age Limitation**. In order to create an Instance, you must be at least eighteen (18) years old and we do not permit any users under thirteen (13) years old to use our Software for any purpose. If we discover that an Instance is being used by a user under thirteen (13) years old, we will notify you that the Instance must immediately be shut down.
 
@@ -109,9 +109,9 @@ As used on this page, the following terms have the following specific meanings:
 
 3.1 **License from Us to You**. The source code for our Software is publicly available at https://github.com/sourcegraph. Your rights to access and use that code is covered by the software license in that repository.
 
-3.2 **Restrictions**. You may not, and may not permit any third-party to: 
+3.2 **Restrictions**. You may not, and may not permit any third-party to:
 
-1. redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all or any part of the Software; 
+1. redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all or any part of the Software;
 
 2. permit a number of users of the Software more than permitted by us; or
 
@@ -131,9 +131,9 @@ As used on this page, the following terms have the following specific meanings:
 
 <span style="color:#777777"><i>**Short version**: We have the right to collect aggregate and high-level data from private Sourcegraph instances, as described in our [Privacy Policy](/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com).</i></span>
 
-We may collect data derived from your use of the Software (**“Usage Data”**). A specific list of Usage Data that we receive from self-hosted and private instances is always available in our [Documentation](https://dosc.sourcegraph.com) and in the site-admin area on your Instance. You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products. 
+We may collect data derived from your use of the Software (**“Usage Data”**). A specific list of Usage Data that we receive from self-hosted and private instances is always available in our [Documentation](https://dosc.sourcegraph.com) and in the site-admin area on your Instance. You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products.
 
-If we share or publicly disclose any information constituting or derived from Usage Data (e.g., in marketing materials), we will aggregate or anonymize that information to avoid identification. 
+If we share or publicly disclose any information constituting or derived from Usage Data (e.g., in marketing materials), we will aggregate or anonymize that information to avoid identification.
 
 <span style="color:#f96216;">
 
@@ -143,7 +143,7 @@ If we share or publicly disclose any information constituting or derived from Us
 
 <span style="color:#777777"><i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i></span>
 
-Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software. 
+Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
 
 We have implemented, and the Software contains, commercially reasonable technical and organizational measures designed to secure Your Code and any other information you provide that is stored on your Instance (which we do not have access to), and any information that we do have access to (such as support emails you send to us, Usage Data, etc.), from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. You acknowledge that you store sensitive information on your Instance, or provide any sensitive information to us at your own risk.
 
@@ -155,15 +155,15 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 <span style="color:#777777"><i>**Short version**: You and we will each protect the other party’s confidential information.</i></span>
 
-6.1 **Definition**.  **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure. 
+6.1 **Definition**.  **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
 
-6.2 **Exclusions.** Confidential Information does not include any information that 
+6.2 **Exclusions.** Confidential Information does not include any information that
 
-1. was or becomes publicly known through no fault of the receiving party; 
+1. was or becomes publicly known through no fault of the receiving party;
 
-2. was rightfully known or becomes rightfully known to the receiving party without confidential restriction from a third-party that has a right to disclose it; 
+2. was rightfully known or becomes rightfully known to the receiving party without confidential restriction from a third-party that has a right to disclose it;
 
-3. is approved by the disclosing party for disclosure without restriction in a written document or electronic record; or 
+3. is approved by the disclosing party for disclosure without restriction in a written document or electronic record; or
 
 4. the receiving party independently develops without access to or use of the other party's Confidential Information.
 
@@ -191,19 +191,19 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 <span style="color:#777777"><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Pricing can change at any time, but you will receive notice at least seven days in advance. Your subscription will automatically renew.</i></span>
 
-8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) and applicable taxes associated with the Software in a timely manner with a valid payment method. You agree that we may charge for any such fees owed. You are required to keep your billing information current. 
+8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) and applicable taxes associated with the Software in a timely manner with a valid payment method. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
 
-8.2 **Term**. Authorization to charge your chosen payment method account will remain in effect until you cancel or modify your preference. You agree that charges may be accumulated as incurred and may be submitted as one or more aggregate charges during or at the end of the applicable billing cycle. 
+8.2 **Term**. Authorization to charge your chosen payment method account will remain in effect until you cancel or modify your preference. You agree that charges may be accumulated as incurred and may be submitted as one or more aggregate charges during or at the end of the applicable billing cycle.
 
-8.3 **Responsibility for Charges**. You are responsible for all charges incurred by usage of your Instance (whether made by you or anyone who may use your Instance, such as your co-workers, colleagues, team-members, etc.). If your payment method fails or you are past due on amounts owed, we may collect fees owed using other collection mechanisms. You are also responsible for paying any governmental taxes imposed on your use of the Software, including, but not limited to, sales, use, or value-added taxes. 
+8.3 **Responsibility for Charges**. You are responsible for all charges incurred by usage of your Instance (whether made by you or anyone who may use your Instance, such as your co-workers, colleagues, team-members, etc.). If your payment method fails or you are past due on amounts owed, we may collect fees owed using other collection mechanisms. You are also responsible for paying any governmental taxes imposed on your use of the Software, including, but not limited to, sales, use, or value-added taxes.
 
 8.4 **No Refunds**. All fees and charges are earned upon receipt by us and are nonrefundable unless negotiated otherwise, except (a) as expressly set forth herein, and/or (b) as required by applicable law.
 
-8.5 **Price Changes**. We reserve the right to change the amount of, or basis for determining, any fees or charges for the Software, and to institute new fees, charges, or terms effective upon prior notice. You will receive notice of any fee change at least seven (7) days before the scheduled date of the transaction and failure to cancel your subscription will constitute acceptance of such fee change. 
+8.5 **Price Changes**. We reserve the right to change the amount of, or basis for determining, any fees or charges for the Software, and to institute new fees, charges, or terms effective upon prior notice. You will receive notice of any fee change at least seven (7) days before the scheduled date of the transaction and failure to cancel your subscription will constitute acceptance of such fee change.
 
 8.6 **Renewals**. Your subscription will be automatically renewed and your credit card account (or other payment method account) will be charged as follows without further authorization from you every month, year, or other period you subscribed to. You acknowledge that your subscription is subject to automatic renewals and you consent to and accept responsibility for all related recurring charges to your applicable payment method without further authorization from you and without further notice unless required by law. You acknowledge that the amount of the recurring charge may change if the applicable tax rates change or if there has been a change in the applicable fees.
 
-8.7 **Cancellation**. Unless otherwise required by applicable law, for annual subscriptions, you must provide us with written notice of your intention not to renew at least fifteen (15) days prior to the end of the current term of your subscription. 
+8.7 **Cancellation**. Unless otherwise required by applicable law, for annual subscriptions, you must provide us with written notice of your intention not to renew at least fifteen (15) days prior to the end of the current term of your subscription.
 
 
 <span style="color:#f96216;">
@@ -214,9 +214,9 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 <span style="color:#777777"><i>**Short version**: Third party services and software may be necessary for Sourcegraph to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
 
-The Software may call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk. 
+The Software may call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
 
-The Software may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs). 
+The Software may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs).
 
 If there’s ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
 
@@ -240,7 +240,7 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 
 <span style="color:#777777"><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access the software. Please read this section carefully.</i></span>
 
-UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL WE (OR OUR AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SOFTWARE, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL WE (OR OUR AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SOFTWARE, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU. IN SUCH CASES, OUR LIABILITY WILL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW.
 
@@ -256,13 +256,13 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 <span style="color:#777777"><i>**Short version**: Sourcegraph is provided at your own risk.</i></span>
 
-You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiaries, agents, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from: 
+You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiaries, agents, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from:
 
-1. your use of the Software, including any data or work transmitted or received by you; 
-2. your violation of any term of the Agreement, including without limitation, your breach of any of the representations and warranties above; 
-3. your violation of any third-party right, including without limitation any right of privacy, publicity rights or intellectual property rights; 
-4. your violation of any law, rule or regulation of the United States or any other country; 
-5. any claim or damages that arise as a result of your use of the Software or any Content submitted via your account; or 
+1. your use of the Software, including any data or work transmitted or received by you;
+2. your violation of any term of the Agreement, including without limitation, your breach of any of the representations and warranties above;
+3. your violation of any third-party right, including without limitation any right of privacy, publicity rights or intellectual property rights;
+4. your violation of any law, rule or regulation of the United States or any other country;
+5. any claim or damages that arise as a result of your use of the Software or any Content submitted via your account; or
 6. any other party's access and use of the Software with your unique username, password or other appropriate security code. We will have the right to control the defense, settlement, adjustment or compromise of any such claims, actions or proceedings by using counsel selected by us. We will use reasonable efforts to notify you of any such claims, actions, or proceedings upon becoming aware of the same.
 
 <span style="color:#f96216;">
