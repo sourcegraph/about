@@ -7,7 +7,7 @@ tags: [
 ]
 slug: sourcegraph-3.3
 heroImage: /blog/sourcegraph-mark
-published: true
+published: false
 ---
 
 <!--
