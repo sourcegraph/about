@@ -4,7 +4,7 @@ title: Sourcegraph Privacy Policy
 permalink: privacy
 ---
 
-Last modified: Mar _, 2019
+Last modified: March _, 2019
 
 Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**) understands that privacy is important to our online visitors to our Sourcegraph.com website and users of our online services (collectively, for the purposes of this Privacy Policy, our **"Website"**), as well as users of our private or self-hosted Sourcegraph instances (collectively with our Website, our **"Service"** or **"Services"**). This Privacy Policy explains how we collect, use, share and protect your personal information that we collect through our Service. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
@@ -46,7 +46,7 @@ Sourcegraph collects aggregate and high-level information about usage from self-
 
 <div class="ml-2 mr-2 mt-4 mb-4 p-3" style="background: #f2f4f8;">For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> to opt out of server pings.</div>
 
-The only personal information collected is the email address of the initial Sourcegraph installer and site admin (or, if that user is deleted or demoted to not be an admin, the first such active site admin). This information allows us to contact the technical administrator of the Sourcegraph instance to deliver information about product updates and policy changes, and for customer development purposes. Other than the initial site admin email address, only aggregates of usage data are sent: no usernames, user emails, user personal information, code, repository names, file names, URLs, or other such private content is sent to Sourcegraph. 
+The only personal information collected is the email address of the initial Sourcegraph installer and site admin (or, if that user is deleted or demoted to not be an admin, the first such active site admin). This information allows us to contact the technical administrator of the Sourcegraph instance to deliver information about product updates and policy changes, and for customer development purposes. Other than the initial site admin email address, only aggregates of usage data are sent: no usernames, user emails, user personal information, code, repository names, file names, URLs, or other such private content is sent to Sourcegraph.
 
 ### Information from Sourcegraph.com visitors
 
@@ -71,7 +71,7 @@ We may use the data collected through cookies, log file, device identifiers, loc
 1.  diagnose or fix technology problems; and
 1.  otherwise to plan for and enhance our service
 
-### Third-party services and data processors 
+### Third-party services and data processors
 
 We use third-party automated devices and applications, such as Google Analytics, to evaluate usage of our Website. Google Analytics is a Web-based analysis tool provided by the Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043-1351, USA. Google provides further information about its own privacy practices and offers a browser add-on to opt out of Google Analytics tracking at <a href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a>.
 
@@ -83,7 +83,7 @@ We use third-party applications such as Google Cloud Platform, Honeycomb, and mo
 
 We use third-party applications such as Stripe and Xero to manage corporate billing and invoicing. These companies provide further information about their own privacy practices on their websites.
 
-While we advertise on some ad platforms (such as Google Ads, Twitter, and Carbon Ads), we don't share any user personal information with third-party services, such as ad networks, for the purpose of advertising to you.
+We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third party tracking and online advertising”](#third-party-tracking-and-online-advertising) below.
 
 <span style="color:#f96216;">
 
@@ -118,6 +118,16 @@ We may share your personal information with:
 We may also aggregate or otherwise strip data of all personally identifying characteristics and may share that aggregated or pseudonymized data with third parties.
 
 Any information or content that you voluntarily disclose for posting to the Website becomes available to the public, as controlled by any applicable privacy settings. If you remove information or content that you posted to the Website, copies may remain viewable in cached and archived pages of the Website, or if other Users have copied or saved that information.
+
+### Third Party Tracking and Online Advertising
+
+We participate in interest-based advertising and use third party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third party online advertising networks, social media companies, and other third party services, to collect information about your use of our Service over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use. Typically, though not always, the information used for interest-based advertising is collected through cookies or similar tracking technologies. We and our third party partners use this information to make the advertisements you see online more relevant to your interests, as well as to provide advertising-related services such as reporting, attribution, analytics and market research.
+
+To learn more about interest-based advertising and how you may be able to opt-out of some of this advertising, you may wish to visit the Network Advertising Initiative’s online resources, at http://www.networkadvertising.org/choices, and/or the DAA’s resources at www.aboutads.info/choices. You may also be able to set your browser to delete or notify you of cookies by actively managing the settings on your browser or mobile device. Please note that some advertising opt-outs may not be effective unless your browser is set to accept cookies. Furthermore, if you use a different device, change browsers or delete the opt-out cookies, you may need to perform the opt-out task again.
+
+You may also be able to limit certain interest-based mobile advertising through the settings on your mobile device by selecting “limit ad tracking” (iOS) or “opt-out of interest based ads” (Android).
+
+**Google Analytics and Advertising**. We may also utilize certain forms of display advertising and other advanced features through Google Analytics, such as Remarketing with Google Analytics, Google Display Network Impression Reporting, the DoubleClick Campaign Manager Integration, and Google Analytics Demographics and Interest Reporting. These features enable us to use first-party cookies (such as the Google Analytics cookie) and third-party cookies (such as the DoubleClick advertising cookie) or other third-party cookies together to inform, optimize, and display ads based on your past visits to the Sites. You may control your advertising preferences or opt-out of certain Google advertising products by visiting the Google Ads Preferences Manager, currently available at https://google.com/ads/preferences, or by vising NAI’s online resources at http://www.networkadvertising.org/choices.
 
 <span style="color:#f96216;">
 
