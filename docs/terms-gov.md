@@ -16,7 +16,7 @@ Sourcegraph and You (together, the **"Parties"**) agree that modifications to th
 
 <span style="color:#f96216;">
 
-A. Public purpose
+## A. Public purpose
 
 </span>
 
@@ -24,7 +24,7 @@ A. Public purpose
 
 <span style="color:#f96216;">
 
-B. Your content on Sourcegraph
+## B. Your content on Sourcegraph
 
 </span>
 
@@ -36,7 +36,7 @@ B. Your content on Sourcegraph
 
 <span style="color:#f96216;">
 
-C. Unpaid and paid plans
+## C. Unpaid and paid plans
 
 </span>
 
@@ -48,7 +48,7 @@ C. Unpaid and paid plans
 
 <span style="color:#f96216;">
 
-D. Federal Regulations
+## D. Federal Regulations
 
 </span>
 
@@ -58,7 +58,7 @@ D. Federal Regulations
 
 <span style="color:#f96216;">
 
-E. General Conditions
+## E. General Conditions
 
 </span>
 
@@ -72,7 +72,7 @@ E. General Conditions
 
 <span style="color:#f96216;">
 
-F. Changes to this agreement
+## F. Changes to this agreement
 
 </span>
 

@@ -129,9 +129,9 @@ As used on this page, the following terms have the following specific meanings:
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: We have the right to collect aggregate and high-level data from private Sourcegraph instances, as described in our [Privacy Policy](/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com).</i></span>
+<span style="color:#777777"><i>**Short version**: We have the right to collect aggregate and high-level data from private Sourcegraph instances, as described in our [Privacy Policy](/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).</i></span>
 
-We may collect data derived from your use of the Software (**“Usage Data”**). A specific list of Usage Data that we receive from self-hosted and private instances is always available in our [Documentation](https://dosc.sourcegraph.com) and in the site-admin area on your Instance. You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products.
+We may collect data derived from your use of the Software (**“Usage Data”**). A specific list of Usage Data that we receive from self-hosted and private instances is always available in our [Documentation](https://docs.sourcegraph.com/admin/pings) and in the site-admin area on your Instance. You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products.
 
 If we share or publicly disclose any information constituting or derived from Usage Data (e.g., in marketing materials), we will aggregate or anonymize that information to avoid identification.
 
