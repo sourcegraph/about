@@ -15,7 +15,7 @@ export default class Pricing extends React.Component<any, any> {
                 formId: '21cd17a4-7038-4873-8857-68c443b5fb59',
                 target: '#dotGoForm',
                 onFormSubmit: (e: Event) => {
-                eventLogger.trackDotGoFormSubmitted()
+                    eventLogger.trackDotGoFormSubmitted()
                 },
             })
         })
@@ -36,8 +36,7 @@ export default class Pricing extends React.Component<any, any> {
                             <div className="sales py-0 d-flex flex-grow flex-column flex-lg-row align-items-center justify-content-around">
                                 <div>
                                     <h1 className="text-center">Sourcegraph @dotGo 2019</h1>
-                                    <p className="text-center measure">
-                                    </p>
+                                    <p className="text-center measure" />
                                 </div>
                             </div>
                         </div>
