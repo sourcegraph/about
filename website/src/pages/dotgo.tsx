@@ -36,7 +36,12 @@ export default class Pricing extends React.Component<any, any> {
                             <div className="sales py-0 d-flex flex-grow flex-column flex-lg-row align-items-center justify-content-around">
                                 <div>
                                     <h1 className="text-center">Sourcegraph @dotGo 2019</h1>
-                                    <p className="text-center measure" />
+                                    <p className="text-center measure">
+                                        We want to help you and your team get the best out of Sourcegraph.
+                                        <br />
+                                        Enter your details so we can check-in after the conference to see how it's
+                                        working for you.
+                                    </p>
                                 </div>
                             </div>
                         </div>
