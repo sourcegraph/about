@@ -5,7 +5,7 @@ publishDate: 2019-03-29T05:59-06:00
 tags: [
   blog
 ]
-slug: advanced-typeScript-tooling-talk-fosdem-2019
+slug: advanced-typescript-tooling-talk-fosdem-2019
 heroImage: https://user-images.githubusercontent.com/133014/55199644-f67f3280-5177-11e9-8aae-56238f6c80f0.jpg
 published: false
 ---
