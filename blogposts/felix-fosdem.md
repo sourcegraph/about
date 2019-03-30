@@ -7,7 +7,7 @@ tags: [
 ]
 slug: advanced-typescript-tooling-talk-fosdem-2019
 heroImage: https://user-images.githubusercontent.com/133014/55199644-f67f3280-5177-11e9-8aae-56238f6c80f0.jpg
-published: false
+published: true
 ---
 
 <p class="container">
