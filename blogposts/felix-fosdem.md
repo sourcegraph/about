@@ -24,7 +24,7 @@ This presentation gives a tour and history of how TypeScript is able to provide 
 
 I showed how it can be used to provide code intelligence features like jump-to-definition and find-references at cross-repository scale, using some of TypeScript’s newest features like declaration maps and combining it with lesser-known interesting features of the JavaScript package management tooling.
 
-At the end of this talk, you'll know how TypeScript tooling works under the hood and how it can be combined with other tools in the ecosystem to make developers more productive. The goal is to inspire innovation in the TypeScript tooling ecosystem by showing what is possible and how
+At the end of this talk, you'll know how TypeScript tooling works under the hood and how it can be combined with other tools in the ecosystem to make developers more productive. The goal is to inspire innovation in the TypeScript tooling ecosystem by showing what is possible and how.
 
 <p style="text-align:center">
   <a href="https://fosdem.org/2019/schedule/event/typescript_advanced_tooling/attachments/slides/3023/export/events/attachments/typescript_advanced_tooling/slides/3023/FOSDEM_2019_TypeScript_Tooling_Slides.pdf">Download slides from the FOSDEM website</a>.
