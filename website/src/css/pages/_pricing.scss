@@ -103,32 +103,15 @@
     display: inline-block;
     padding: 0 0;
     .pricing-section {
-        padding-top: calc(15vh - 20px);
         .row {
             justify-content: space-evenly;
         }
     }
 
-    .pricing-card-col {
-        &:first-of-type {
-            .card-body {
-                h2 {
-                    // color: #0d97ff
-                }
-            }
-
-            .btn {
-                background-color: #0d97ff;
-                color: #fafcff;
-            }
-        }
-    }
-    //
     &__card {
         border: none;
         margin: 8vh 0.5rem 2rem 0.5rem;
-        padding: 0 1rem 1.5rem 1.5rem;
-        background-color: rgba(245, 245, 245, 0.82);
+        background-color: rgba(255, 255, 255, 0.9);
         box-shadow: rgba(110, 132, 152, 0.2) 0 0 0 2px;
         -webkit-backdrop-filter: saturate(160%) blur(10px);
         backdrop-filter: saturate(160%) blur(10px);
@@ -154,9 +137,6 @@
             padding-top: 16px;
             padding-bottom: 6px;
             display: block;
-        }
-        p {
-            // color: #ffffff;
         }
 
         .btn-pricing {
@@ -186,8 +166,6 @@
 
         .user-pricing {
             text-align: center;
-            padding-top: 2vh;
-            padding-bottom: 4vh;
             h2 {
                 font-size: 3.5rem;
                 font-weight: 600;
@@ -203,7 +181,6 @@
         .contact {
             margin-right: 0;
             text-align: center;
-            padding-top: 3rem;
             @media (max-width: $media-md) {
                 padding-left: 1rem;
                 width: 100%;
@@ -213,25 +190,6 @@
         }
         &-list {
             margin-bottom: 0;
-            &-heading {
-                padding: 4vh 0;
-                border-top-left-radius: 0.5rem;
-                border-top-right-radius: 0.5rem;
-                h5 {
-                    color: $green-9;
-                    font-size: 1.5rem;
-                    line-height: 2rem;
-                    letter-spacing: 2px;
-                    margin: 0;
-                }
-
-                &--paid {
-                    background-color: $dark-9;
-                    h5 {
-                        color: $light-5;
-                    }
-                }
-            }
 
             &-item {
                 display: flex;

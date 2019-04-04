@@ -3,6 +3,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import { eventLogger } from '../EventLogger'
+import { PricingPlan } from './pricing/PricingPlan'
 
 export default class Pricing extends React.Component<any, any> {
     public render(): JSX.Element | null {
@@ -61,174 +62,87 @@ export default class Pricing extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div className="container pricing-section">
-                                <div className="row">
-                                    <div className="col-xl-4 col-lg-5 col-md-6 col-sm-12 pricing-card-col">
-                                        <div className="pricing__card card card-body">
-                                            <div className="pricing__card-list">
-                                                <div className="pricing__card-list-heading">
-                                                    <h1>Core</h1>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 user-pricing">
-                                                        <h2>Free</h2>
-                                                        <h3>individuals &amp; small teams</h3>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 features">
-                                                        <a href="#deployment">
-                                                            <p>Self-hosted</p>
-                                                        </a>
-                                                        <a href="#search">
-                                                            <p>Code search</p>
-                                                        </a>
-                                                        <a href="#intelligence">
-                                                            <p>Code intelligence</p>
-                                                        </a>
-                                                        <a href="#browsing">
-                                                            <p>Code browsing</p>
-                                                        </a>
-                                                        <a href="#extensions">
-                                                            <p>Sourcegraph extensions</p>
-                                                        </a>
-                                                        <a href="#integrations">
-                                                            <p>Code host and editor integrations</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>Single sign-on (SSO) support</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>20-user limit</p>
-                                                        </a>
-                                                        <a href="#search">
-                                                            <p>Support on our public issue tracker</p>
-                                                            <br />
-                                                        </a>
-                                                    </div>
-
-                                                    <div className="col-12 contact">
-                                                        <a
-                                                            className="btn btn-pricing btn-lg justify-content-center text-center"
-                                                            role="button"
-                                                            href="/docs"
-                                                            onClick={this.trackInstallSourcegraphServerClicked}
-                                                        >
-                                                            Deploy
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div className="row no-gutters">
+                                    <div className="col-lg-3">
+                                        <PricingPlan
+                                            name="Core"
+                                            description="Helping developers search and browse their code."
+                                            price="$0"
+                                            priceSubtitle="individuals & small teams TODO!(sqs) 20-users"
+                                            features={[
+                                                { name: 'Self-hosted', id: 'deployment' },
+                                                { name: 'Code search', id: 'search' },
+                                                { name: 'Code intelligence', id: 'intelligence' },
+                                                { name: 'Code browsing', id: 'browsing' },
+                                                { name: 'Sourcegraph extensions', id: 'extensions' },
+                                                { name: 'Code host and editor integrations', id: 'integrations' },
+                                                { name: 'Single sign-on (SSO) support', id: 'admin' },
+                                                { name: 'Community support', id: 'support' },
+                                            ]}
+                                            buttonLabel="Install"
+                                            buttonOnClick={this.trackInstallSourcegraphServerClicked}
+                                            buttonHref="https://docs.sourcegraph.com/#quickstart"
+                                        />
                                     </div>
-                                    <div className="col-xl-4 col-lg-5 col-md-6 col-sm-12 pricing-card-col">
-                                        <div className="pricing__card card card-body">
-                                            <div className="pricing__card-list">
-                                                <div className="pricing__card-list-heading">
-                                                    <h1>Enterprise</h1>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 user-pricing">
-                                                        <h2>$19</h2>
-                                                        <h3>/user /month</h3>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 features">
-                                                        <a href="#deployment">
-                                                            <p>Self-hosted or cloud-managed</p>
-                                                        </a>
-                                                        <a href="#deployment">
-                                                            <p>High-scale cluster deployment</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>Repository-level user permissions</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>Advanced logging</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>External database support</p>
-                                                        </a>
-                                                        <a href="#extensions">
-                                                            <p>
-                                                                Private Sourcegraph extension <br />
-                                                                registry
-                                                            </p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>Unlimited users</p>
-                                                        </a>
-                                                        <a href="#support">
-                                                            <p>Premium support</p>
-                                                        </a>
-                                                        <p>&nbsp;</p>
-                                                    </div>
-                                                    <div className="col-12 contact">
-                                                        <Link
-                                                            className="btn btn-pricing btn-lg justify-content-center text-center"
-                                                            role="button"
-                                                            to="/contact/sales/"
-                                                            onClick={this.trackBuyEnterpriseButtonClicked}
-                                                        >
-                                                            Free trial
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div className="col-lg-3">
+                                        <PricingPlan
+                                            name="Starter"
+                                            description="Speeding up the software development cycle and incident response."
+                                            price="$19"
+                                            priceSubtitle="/user/month"
+                                            features={[
+                                                { name: 'Self-hosted or cloud-managed', id: 'deployment' },
+                                                { name: 'High-scale cluster deployment', id: 'deployment' },
+                                                { name: 'Repository-level user permissions', id: 'admin' },
+                                                { name: 'Advanced logging', id: 'admin' },
+                                                { name: 'External database support', id: 'admin' },
+                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
+                                                { name: 'Premium support', id: 'support' },
+                                            ]}
+                                            buttonLabel="Free trial"
+                                            buttonOnClick={this.trackBuyEnterpriseButtonClicked}
+                                            buttonHref="/contact/sales"
+                                        />
                                     </div>
-                                    <div className="col-xl-4 col-lg-5 col-md-6 col-sm-12 pricing-card-col">
-                                        <div className="pricing__card card card-body">
-                                            <div className="pricing__card-list">
-                                                <div className="pricing__card-list-heading">
-                                                    <h1>Unlimited</h1>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 user-pricing">
-                                                        <h2>$99</h2>
-                                                        <h3>/user /month</h3>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-12 features">
-                                                        <a href="#admin">
-                                                            <p>Management reporting</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>Access logs and security audits</p>
-                                                        </a>
-                                                        <a href="#extensions">
-                                                            <p>License compliance analysis</p>
-                                                        </a>
-                                                        <a href="#extensions">
-                                                            <p>Security and custom code analysis</p>
-                                                        </a>
-                                                        <a href="#integrations">
-                                                            <p>Custom integrations</p>
-                                                        </a>
-                                                        <a href="#admin">
-                                                            <p>Unlimited guest users</p>
-                                                        </a>
-                                                        <a href="#support">
-                                                            <p>Dedicated support</p>
-                                                            <br />
-                                                        </a>
-                                                        <p>&nbsp;</p>
-                                                        <p>&nbsp;</p>
-                                                    </div>
-                                                    <div className="col-12 contact">
-                                                        <Link
-                                                            className="btn btn-pricing btn-lg justify-content-center text-center"
-                                                            role="button"
-                                                            to="/contact/sales/"
-                                                            onClick={this.trackBuyUnlimitedButtonClicked}
-                                                        >
-                                                            Contact us
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div className="col-lg-3">
+                                        <PricingPlan
+                                            name="Enterprise"
+                                            description="Enabling ."
+                                            price="$19"
+                                            priceSubtitle="/user/month"
+                                            features={[
+                                                { name: 'Self-hosted or cloud-managed', id: 'deployment' },
+                                                { name: 'High-scale cluster deployment', id: 'deployment' },
+                                                { name: 'Repository-level user permissions', id: 'admin' },
+                                                { name: 'Advanced logging', id: 'admin' },
+                                                { name: 'External database support', id: 'admin' },
+                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
+                                                { name: 'Premium support', id: 'support' },
+                                            ]}
+                                            buttonLabel="Free trial"
+                                            buttonOnClick={this.trackBuyEnterpriseButtonClicked}
+                                            buttonHref="/contact/sales"
+                                        />
+                                    </div>
+                                    <div className="col-lg-3">
+                                        <PricingPlan
+                                            name="Unlimited"
+                                            description="Helping developers search and browse their code."
+                                            price="$99"
+                                            priceSubtitle="/user/month"
+                                            features={[
+                                                { name: 'Unlimited guest users', id: 'admin' },
+                                                { name: 'Management reporting', id: 'admin' },
+                                                { name: 'Access logs and security audits', id: 'admin' },
+                                                { name: 'License compliance analysis', id: 'extensions' },
+                                                { name: 'Security and custom code analysis', id: 'extensions' },
+                                                { name: 'Custom integrations', id: 'integrations' },
+                                                { name: 'Dedicated support', id: 'support' },
+                                            ]}
+                                            buttonLabel="Contact us"
+                                            buttonOnClick={this.trackBuyUnlimitedButtonClicked}
+                                            buttonHref="/contact/sales"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -252,6 +166,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="col-2">
                                         <h4>Unlimited</h4>
+                                        {/* TODO!(sqs) */}
                                     </div>
                                 </div>
                                 <div className="table-section">

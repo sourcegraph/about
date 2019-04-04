@@ -1,0 +1,6 @@
+.pricing-plan {
+    &__description {
+        // Equal height for all plans' descriptions.
+        min-height: 80px;
+    }
+}
