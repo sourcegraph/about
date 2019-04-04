@@ -1,4 +1,4 @@
-// 404
+// stylelint-disable declaration-property-unit-whitelist
 
 .error-page {
     display: flex;
@@ -10,7 +10,7 @@
     background: url('/c-sprinkles-blank.svg');
     background-size: cover;
     @media screen and (max-width: $media-md) {
-        background: #fff;
+        background: #ffffff;
         background-size: 220%;
     }
 

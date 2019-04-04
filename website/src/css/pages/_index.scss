@@ -1,3 +1,6 @@
+// stylelint-disable declaration-property-unit-whitelist
+// stylelint-disable selector-class-pattern
+// stylelint-disable selector-max-id
 .home {
     &__jumbotron {
         background-color: $dark-9;
@@ -36,7 +39,7 @@
         text-align: left;
         border-radius: 0.5rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: white;
+        background-color: #ffffff;
 
         &-instructions {
             padding: 2rem;
@@ -233,11 +236,9 @@
         text-align: left;
         padding: 2rem;
         border-radius: 8px;
-        background-color: white;
+        background-color: #ffffff;
         margin: 1rem 0;
         height: 100%;
-        &:last-of-type {
-        }
         &-hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -356,7 +357,6 @@
     }
 }
 
-
 .product__server {
     &__jumbotron {
         background-color: $dark-9;
@@ -395,10 +395,10 @@
         text-align: left;
         border-radius: 0.5rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: black;
+        background-color: #000000;
         &-text {
             h3 {
-                margin: 1rem 0 .5rem 0;
+                margin: 1rem 0 0.5rem 0;
             }
             text-align: left;
         }
@@ -467,7 +467,6 @@
     }
 
     &__feature-block {
-
         #integrations {
             @media (max-width: $media-md) {
                 display: none;
@@ -601,7 +600,7 @@
     }
     &__deploy-text {
         text-align: left;
-        padding: 2.6rem 5rem 0rem 0rem ;
+        padding: 2.6rem 5rem 0 0;
         margin: 1rem 0;
         height: 100%;
         @media (max-width: $media-sm) {
@@ -612,13 +611,11 @@
         text-align: left;
         padding: 2rem;
         border-radius: 8px;
-        background-color: white;
+        background-color: #ffffff;
         margin: 1rem 0;
         height: 100%;
         @media (max-width: $media-sm) {
             margin: 1.5rem;
-        }
-        &:last-of-type {
         }
         &-hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

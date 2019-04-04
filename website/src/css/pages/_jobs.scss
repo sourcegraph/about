@@ -1,5 +1,4 @@
-// jobs page
-
+// stylelint-disable declaration-property-unit-whitelist
 .jobs {
     -webkit-font-smoothing: antialiased;
     width: 100%;
@@ -28,7 +27,7 @@
 
     &__benefits {
         background: $dark-8;
-        color: white;
+        color: #ffffff;
 
         &-list {
             display: flex;
@@ -75,7 +74,7 @@
 
     &__work {
         background: $light-10;
-        color: black;
+        color: #000000;
 
         &--buttons {
             display: flex;
@@ -124,7 +123,7 @@
 
     &__positions {
         background: $light-11;
-        color: black;
+        color: #000000;
 
         &--title {
             margin: auto auto;
