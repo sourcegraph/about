@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph $VERSION: $GREAT_TITLE'
 author: $NAME
-publishDate: yyyy-mm-ddT05:59-06:00
+publishDate: 1900-01-01T05:59-06:00
 tags: [
   blog
 ]

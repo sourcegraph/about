@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from 'mdi-react'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
