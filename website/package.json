@@ -46,12 +46,12 @@
   "scripts": {
     "build": "rm -rf .cache && gatsby build",
     "start": "gatsby develop",
-    "serve": "npm run build && gatsby serve",
+    "serve": "yarn run build && gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint -c tslint.json -p .",
     "stylelint": "stylelint --quiet 'src/**/*.scss'",
     "prettier": "prettier '**/*.{js?(on),ts?(x),md}' --write --list-different",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "yarn run build && firebase deploy"
   },
   "devDependencies": {
     "@sourcegraph/prettierrc": "^2.1.1",
