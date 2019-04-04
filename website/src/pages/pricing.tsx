@@ -231,16 +231,6 @@ export default class Pricing extends React.Component<any, any> {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row">
-                                    <div className="col-xl-9 lg-12 pricing-true-up-notice">
-                                        If you exceed your licensed users over the term of your subscription,
-                                        Sourcegraph will true up your license at your next renewal. Learn more about{' '}
-                                        <a href="https://docs.sourcegraph.com/admin/subscriptions#true-up-pricing">
-                                            Sourcegraph's true-up pricing model
-                                        </a>
-                                        .
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div className="list-section">
