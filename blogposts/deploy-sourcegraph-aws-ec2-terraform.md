@@ -7,7 +7,7 @@ tags: [
 ]
 slug: deploy-sourcegraph-aws-ec2-terraform`
 heroImage: /blog/sourcegraph-aws-terraform.png
-published: false
+published: true
 ---
 
 You can now use [Terraform to deploy Sourcegraph on an EC2 instance](https://github.com/sourcegraph/deploy-sourcegraph-aws/tree/master/ec2) with SSL using a self-signed certificate.
