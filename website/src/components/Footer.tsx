@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-import { CloseIcon } from 'mdi-react'
+import CloseIcon from 'mdi-react/CloseIcon'
 import * as React from 'react'
 import { eventLogger } from '../EventLogger'
 
