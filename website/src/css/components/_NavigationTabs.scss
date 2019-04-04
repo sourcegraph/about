@@ -1,3 +1,4 @@
+// stylelint-disable declaration-property-unit-whitelist
 .nav-tabs {
     .nav-item {
         position: relative;
@@ -5,7 +6,7 @@
         border-top-right-radius: 4px;
         overflow: hidden;
         @media screen and (max-width: $media-md) {
-            font-size: 0px;
+            font-size: 0;
         }
         a {
             color: $dark-1;
@@ -49,7 +50,7 @@
 .nav-item.buttons {
     .docs-nav-button {
         margin-top: 8px;
-        padding: 0px 12px 0 20px;
+        padding: 0 12px 0 20px;
         display: inline-block !important;
     }
     @media screen and (max-width: $media-md) {

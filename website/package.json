@@ -55,6 +55,7 @@
   },
   "devDependencies": {
     "@sourcegraph/prettierrc": "^2.1.1",
+    "@sourcegraph/stylelint-config": "^1.1.2",
     "@sourcegraph/tslint-config": "^13.0.0",
     "@types/bootstrap": "^4.1.0",
     "@types/lodash": "^4.14.109",
@@ -67,8 +68,6 @@
     "prettier": "^1.14.2",
     "sharp": "^0.22.0",
     "stylelint": "^9.2.1",
-    "stylelint-config-prettier": "^5.0.0",
-    "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.1.0",
     "tslint": "^5.10.0",
     "typescript": "^3.1.2"

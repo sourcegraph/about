@@ -1,3 +1,4 @@
+// stylelint-disable declaration-property-unit-whitelist
 .pricing-bg {
     background: url('/bg-hero-d-sp.svg');
     z-index: -1;
@@ -30,8 +31,8 @@
             padding-left: 42px;
             padding-right: 42px;
             @media (max-width: $media-md) {
-                padding-left: 0px;
-                padding-right: 0px;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
         h1 {
@@ -64,7 +65,7 @@
             transition: all 300ms ease;
             &:hover {
                 transition: all 300ms ease;
-                box-shadow: 0px 0px 4px 1px rgba(13, 69, 255, 0.4);
+                box-shadow: 0 0 4px 1px rgba(13, 69, 255, 0.4);
             }
             @media screen and (max-width: $media-md) {
                 margin-bottom: 1rem;
@@ -82,7 +83,7 @@
             transition: all 300ms ease;
             &:hover {
                 transition: all 300ms ease;
-                box-shadow: 0px 0px 4px 1px rgba(178, 0, 248, 0.4);
+                box-shadow: 0 0 4px 1px rgba(178, 0, 248, 0.4);
             }
             @media screen and (max-width: $media-md) {
                 margin-left: 0;
@@ -109,13 +110,6 @@
     }
 
     .pricing-card-col {
-
-        &:nth-child(2) {
-
-        }
-        &:nth-child(3) {
-
-        }
         &:first-of-type {
             .card-body {
                 h2 {
@@ -135,7 +129,7 @@
         margin: 8vh 0.5rem 2rem 0.5rem;
         padding: 0 1rem 1.5rem 1.5rem;
         background-color: rgba(245, 245, 245, 0.82);
-        box-shadow: rgba(110, 132, 152, 0.2) 0px 0px 0px 2px;
+        box-shadow: rgba(110, 132, 152, 0.2) 0 0 0 2px;
         -webkit-backdrop-filter: saturate(160%) blur(10px);
         backdrop-filter: saturate(160%) blur(10px);
         text-align: left;
@@ -175,12 +169,11 @@
             width: 124px;
             margin-left: calc(50% - 60px);
             &:hover {
-                box-shadow: 0px 0px 8px 1px rgba(13, 151, 255, 0.45);
+                box-shadow: 0 0 8px 1px rgba(13, 151, 255, 0.45);
             }
             @media screen and (max-width: $media-md) {
                 width: calc(100% - 8px);
                 margin-left: 0;
-
             }
         }
         .features {
@@ -208,7 +201,7 @@
         }
 
         .contact {
-            margin-right: 0px;
+            margin-right: 0;
             text-align: center;
             padding-top: 3rem;
             @media (max-width: $media-md) {
@@ -335,9 +328,9 @@
     .feature-table-header {
         overflow: hidden;
         position: sticky;
-        top: 0px;
+        top: 0;
         padding-top: 2.5rem;
-        padding-bottom: .5rem;
+        padding-bottom: 0.5rem;
         z-index: 999;
         -webkit-border-image: -webkit-gradient(
                 linear,
@@ -348,7 +341,8 @@
                 color-stop(0%, #00b3f8),
                 color-stop(50%, #b200f8),
                 color-stop(100%, #f96216)
-        ) 0 0 3 0 repeat repeat;
+            )
+            0 0 3 0 repeat repeat;
         border-image: -webkit-gradient(
                 linear,
                 left top,
@@ -358,7 +352,8 @@
                 color-stop(0%, #00b3f8),
                 color-stop(50%, #b200f8),
                 color-stop(100%, #f96216)
-        ) 0 0 3 0 repeat repeat;
+            )
+            0 0 3 0 repeat repeat;
         background-color: #fafcff;
         border-bottom: 3px solid;
         div h4 {

@@ -1,3 +1,4 @@
+// stylelint-disable declaration-property-unit-whitelist
 .blog-post {
     margin: auto;
     width: 980px;
@@ -19,7 +20,8 @@
         p {
             margin: 1rem 0;
         }
-        li > p:first-child, li > p:last-child {
+        li > p:first-child,
+        li > p:last-child {
             margin: 0;
         }
 
