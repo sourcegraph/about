@@ -31,51 +31,41 @@ export default class Pricing extends React.Component<any, any> {
                     <div className="pricing-bg" />
                     <div>
                         <div className="pricing">
-                            <div className="hero-section">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <h2>Sourcegraph pricing</h2>
-                                            <h1>Open. For business.</h1>
-                                            <p>
-                                                Sourcegraph is open source and ready to use for teams of all sizes. You
-                                                can get started by deploying a private Sourcegraph Core instance for
-                                                free, or build from source from our GitHub repository.
-                                            </p>
-                                            <a
-                                                className="btn btn-deploy"
-                                                role="button"
-                                                href="https://docs.sourcegraph.com"
-                                                onClick={this.trackInstallSourcegraphServerClicked}
-                                            >
-                                                Deploy Sourcegraph
-                                            </a>
-                                            <a
-                                                className="btn btn-github"
-                                                role="button"
-                                                href="https://github.com/sourcegraph/sourcegraph/"
-                                            >
-                                                View on GitHub
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <ul className="nav nav-pills justify-content-center mt-5">
+                                <li className="nav-item">
+                                    <a className="nav-link active" href="#">
+                                        Self-managed
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link border rounded ml-2 text-muted bg-light" href="#">
+                                        Sourcegraph.com (cloud-hosted)
+                                    </a>
+                                </li>
+                            </ul>
+                            <div className="hero-section text-center my-4 py-3">
+                                <h2>Try Sourcegraph Ultimate risk-free for 30 days</h2>
+                                <a
+                                    className="btn btn-github"
+                                    href="/contact/sales"
+                                    onClick={this.trackContactUsButtonClicked}
+                                >
+                                    Free trial
+                                </a>
                             </div>
-                            <div className="container pricing-section">
-                                <div className="row no-gutters">
+                            <div className="container-fluid pricing-section">
+                                <div className="row no-gutters mt-5">
                                     <div className="col-lg-3">
                                         <PricingPlan
                                             name="Core"
                                             description="Helping developers search and browse their code."
                                             price="$0"
-                                            priceSubtitle="individuals & small teams TODO!(sqs) 20-users"
+                                            priceCaption="(20 users max)"
                                             features={[
-                                                { name: 'Self-hosted', id: 'deployment' },
                                                 { name: 'Code search', id: 'search' },
-                                                { name: 'Code intelligence', id: 'intelligence' },
-                                                { name: 'Code browsing', id: 'browsing' },
+                                                { name: 'Code navigation (definitions & references)', id: 'search' },
                                                 { name: 'Sourcegraph extensions', id: 'extensions' },
-                                                { name: 'Code host and editor integrations', id: 'integrations' },
+                                                { name: 'Code host & editor integration', id: 'integrations' },
                                                 { name: 'Single sign-on (SSO) support', id: 'admin' },
                                                 { name: 'Community support', id: 'support' },
                                             ]}
@@ -87,59 +77,68 @@ export default class Pricing extends React.Component<any, any> {
                                     <div className="col-lg-3">
                                         <PricingPlan
                                             name="Starter"
-                                            description="Speeding up the software development cycle and incident response."
-                                            price="$19"
-                                            priceSubtitle="/user/month"
+                                            description="Speeding up your team's software development and incident response."
+                                            price="$4"
+                                            priceCaption="(50 users max)"
                                             features={[
-                                                { name: 'Self-hosted or cloud-managed', id: 'deployment' },
-                                                { name: 'High-scale cluster deployment', id: 'deployment' },
-                                                { name: 'Repository-level user permissions', id: 'admin' },
-                                                { name: 'Advanced logging', id: 'admin' },
-                                                { name: 'External database support', id: 'admin' },
-                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
-                                                { name: 'Premium support', id: 'support' },
+                                                { name: 'Code review integration', id: 'integrations' },
+                                                { name: 'External database storage', id: 'admin' },
+                                                { name: 'Next-business-day support', id: 'support' },
                                             ]}
-                                            buttonLabel="Free trial"
+                                            buttonLabel="Buy now"
                                             buttonOnClick={this.trackBuyEnterpriseButtonClicked}
                                             buttonHref="/contact/sales"
                                         />
                                     </div>
                                     <div className="col-lg-3">
                                         <PricingPlan
-                                            name="Enterprise"
-                                            description="Enabling ."
+                                            name="Premium"
+                                            description="Enabling engineering, devops, and IT leaders to speed up the organization's software lifecycle and monitor risks."
                                             price="$19"
-                                            priceSubtitle="/user/month"
+                                            priceCaption="(billed annually)"
                                             features={[
-                                                { name: 'Self-hosted or cloud-managed', id: 'deployment' },
-                                                { name: 'High-scale cluster deployment', id: 'deployment' },
-                                                { name: 'Repository-level user permissions', id: 'admin' },
-                                                { name: 'Advanced logging', id: 'admin' },
-                                                { name: 'External database support', id: 'admin' },
-                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
-                                                { name: 'Premium support', id: 'support' },
+                                                { name: 'Repository access permissions', id: 'admin' },
+                                                { name: 'Code change monitoring & notifications', id: 'admin' },
+                                                { name: 'Code & repository statistics', id: 'admin' },
+                                                { name: 'Metrics & monitoring', id: 'admin' },
+                                                {
+                                                    name: 'High-scale/availability cluster deployment option',
+                                                    id: 'deployment',
+                                                },
+                                                { name: 'Cloud-managed option', id: 'deployment' },
+                                                { name: 'Priority support', id: 'support' },
                                             ]}
-                                            buttonLabel="Free trial"
+                                            buttonLabel="Buy now"
                                             buttonOnClick={this.trackBuyEnterpriseButtonClicked}
                                             buttonHref="/contact/sales"
                                         />
                                     </div>
                                     <div className="col-lg-3">
                                         <PricingPlan
-                                            name="Unlimited"
-                                            description="Helping developers search and browse their code."
+                                            name="Ultimate"
+                                            description="Enabling businesses to transform the software lifecycle with automation and intelligence."
                                             price="$99"
-                                            priceSubtitle="/user/month"
+                                            priceCaption="(billed annually)"
                                             features={[
-                                                { name: 'Unlimited guest users', id: 'admin' },
-                                                { name: 'Management reporting', id: 'admin' },
-                                                { name: 'Access logs and security audits', id: 'admin' },
-                                                { name: 'License compliance analysis', id: 'extensions' },
-                                                { name: 'Security and custom code analysis', id: 'extensions' },
+                                                { name: 'Free guest users', id: 'admin' },
+                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
                                                 { name: 'Custom integrations', id: 'integrations' },
+                                                { name: '24/7 uptime support', id: 'support' },
                                                 { name: 'Dedicated support', id: 'support' },
+                                                {
+                                                    name: 'Large-scale refactoring and automation',
+                                                    id: 'extensions',
+                                                    future: true,
+                                                },
+                                                { name: 'Code reporting & analytics', id: 'admin', future: true },
+                                                { name: 'Audit logs', id: 'admin', future: true },
+                                                {
+                                                    name: 'License compliance and security analysis',
+                                                    id: 'extensions',
+                                                    future: true,
+                                                },
                                             ]}
-                                            buttonLabel="Contact us"
+                                            buttonLabel="Buy now"
                                             buttonOnClick={this.trackBuyUnlimitedButtonClicked}
                                             buttonHref="/contact/sales"
                                         />

@@ -12,10 +12,8 @@
 }
 .pricing {
     .hero-section {
-        background-color: #ffffff;
         box-shadow: rgba(45, 70, 115, 0.25) 0 -12px 90px 24px;
-        width: 100%;
-        min-height: calc(50vh);
+        background-color: rgba(255, 255, 255, 0.8);
         @media (max-width: $media-md) {
             padding-left: 2rem;
             padding-right: 2rem;
@@ -103,6 +101,7 @@
     display: inline-block;
     padding: 0 0;
     .pricing-section {
+        max-width: 1300px;
         .row {
             justify-content: space-evenly;
         }
@@ -110,13 +109,14 @@
 
     &__card {
         border: none;
-        margin: 8vh 0.5rem 2rem 0.5rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: rgba(110, 132, 152, 0.2) 0 0 0 2px;
         -webkit-backdrop-filter: saturate(160%) blur(10px);
         backdrop-filter: saturate(160%) blur(10px);
         text-align: left;
-        a {
+        a:not(.btn) {
             color: $dark-3;
             &:hover {
                 color: $dark-9;
@@ -128,54 +128,6 @@
             font-weight: 700;
             letter-spacing: -0.025rem;
             text-align: center;
-        }
-        small {
-            text-align: right;
-            font-size: 12px;
-            letter-spacing: 4px;
-            width: 100%;
-            padding-top: 16px;
-            padding-bottom: 6px;
-            display: block;
-        }
-
-        .btn-pricing {
-            background-attachment: rgba(0, 0, 0, 0.125);
-            border: 2px solid rgba(13, 151, 255, 0.7);
-            color: $dark-5;
-            font-size: 18px;
-            font-weight: 400;
-            transition: all 250ms ease;
-            width: 124px;
-            margin-left: calc(50% - 60px);
-            &:hover {
-                box-shadow: 0 0 8px 1px rgba(13, 151, 255, 0.45);
-            }
-            @media screen and (max-width: $media-md) {
-                width: calc(100% - 8px);
-                margin-left: 0;
-            }
-        }
-        .features {
-            line-height: 24px;
-            p {
-                font-size: 1rem;
-                font-weight: 500;
-            }
-        }
-
-        .user-pricing {
-            text-align: center;
-            h2 {
-                font-size: 3.5rem;
-                font-weight: 600;
-            }
-            h3 {
-                font-size: 0.65rem;
-                letter-spacing: 0.2rem;
-                text-transform: uppercase;
-                padding-left: 0.35rem;
-            }
         }
 
         .contact {
