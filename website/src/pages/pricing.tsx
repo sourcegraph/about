@@ -105,8 +105,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <br />
                                                         </a>
                                                     </div>
-                                                    <p>&nbsp;</p>
-                                                    <p>&nbsp;</p>
+
                                                     <div className="col-12 contact">
                                                         <a
                                                             className="btn btn-pricing btn-lg justify-content-center text-center"
@@ -163,7 +162,6 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Premium support</p>
                                                         </a>
                                                         <p>&nbsp;</p>
-                                                        <p>&nbsp;</p>
                                                     </div>
                                                     <div className="col-12 contact">
                                                         <Link
@@ -212,7 +210,6 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Dedicated support</p>
                                                             <br />
                                                         </a>
-                                                        <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
