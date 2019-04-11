@@ -98,7 +98,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Single sign-on (SSO) support</p>
                                                         </a>
                                                         <a href="#admin">
-                                                            <p>10-user limit</p>
+                                                            <p>20-user limit</p>
                                                         </a>
                                                         <a href="#search">
                                                             <p>Support on our public issue tracker</p>
@@ -206,11 +206,13 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a href="#integrations">
                                                             <p>Custom integrations</p>
                                                         </a>
+                                                        <a href="#admin">
+                                                            <p>Unlimited guest users</p>
+                                                        </a>
                                                         <a href="#support">
                                                             <p>Dedicated support</p>
                                                             <br />
                                                         </a>
-                                                        <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                     </div>
