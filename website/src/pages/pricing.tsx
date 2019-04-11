@@ -97,6 +97,9 @@ export default class Pricing extends React.Component<any, any> {
                                                         <a href="#admin">
                                                             <p>Single sign-on (SSO) support</p>
                                                         </a>
+                                                        <a href="#admin">
+                                                            <p>10-user limit</p>
+                                                        </a>
                                                         <a href="#search">
                                                             <p>Support on our public issue tracker</p>
                                                             <br />
@@ -153,6 +156,9 @@ export default class Pricing extends React.Component<any, any> {
                                                                 registry
                                                             </p>
                                                         </a>
+                                                        <a href="#admin">
+                                                            <p>Unlimited users</p>
+                                                        </a>
                                                         <a href="#support">
                                                             <p>Premium support</p>
                                                         </a>
@@ -206,6 +212,7 @@ export default class Pricing extends React.Component<any, any> {
                                                             <p>Dedicated support</p>
                                                             <br />
                                                         </a>
+                                                        <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
                                                         <p>&nbsp;</p>
