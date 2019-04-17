@@ -1,11 +1,11 @@
 ---
 title: 'Sourcegraph 3.3: Improving the user experience for site admins'
 author: Ryan Blunden
-publishDate: 2019-03-20T05:59-06:00
+publishDate: 2019-04-22T10:00-07:00
 tags: [
   blog
 ]
-slug: sourcegraph-3.3
+slug: sourcegraph-3
 heroImage: /sourcegraph-mark.png
 published: true
 ---
@@ -14,11 +14,11 @@ published: true
 
 ---
 
-  <h3 style="text-align: center">Deploy or upgrade Sourcegraph 3.3</h3>
+<h3 style="text-align: center">Deploy or upgrade Sourcegraph 3.3</h3>
 
 <div style="text-align: center">
 
-  [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes](https://github.com/sourcegraph/deploy-sourcegraph-aws)
+  [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes](https://github.com/sourcegraph/deploy-sourcegraph)
 
 Want to try pre-release development builds? Change the Docker image tag to  `sourcegraph:insiders`.
 
@@ -26,31 +26,31 @@ Want to try pre-release development builds? Change the Docker image tag to  `sou
 
 ---
 
-The major theme for this release is making Sourcegraph easier to set up, configure and manage. 
+This release focusses on making Sourcegraph easier to set up, configure and manage repositories.
 
 We’ve completely overhauled how repositories are selected and kept in-sync, benefiting everyone, but especially organizations with thousands (or tens of thousands) of repositories. We’ve also added Sentry to our list of third party developer tool integrations and improved Swift code intelligence and navigation.
 
 Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
 
-In this release:
+**Release highlights**:
 
-[**🛠️ New! Config based repository selection**]()<br />
+[**🛠️ New! Config based repository selection**](#repo-config)<br />
 Repositories now chosen via explicit lists and query rules in the external service config.
 
-[**🔌 New Sentry integration and Bitbucket Server fixes**]()<br />
+**[🔌 New Sentry integration](#sentry) and [Bitbucket Server fixes](#bitbucket-fixes)**<br />
 Jump to Sentry from Sourcegraph and other integrations improvements.
 
-[**More precise code intelligence**]()<br />
+[**🧭 More precise code intelligence**](#code-intel)<br />
 Symbols scoped to the current file and improved Swift support.
 
-[**📖 New docs design**]()<br />
-Better UI, new page navigation, and docs improvements for site admins.
-
-[**🚢  More infrastructure as code deployments and secure by default**]()<br />
+[**🚢  Deployments secure by default with TLS pre-configured**](#deployments)<br />
 TLS on all Terraform plans and improved AWS deployment docs.
 
-[**Helping your team grok code search and Sourcegraph**]()<br />📣
+[**Making Sourcegraph a part of your dev tools stack**](#grok-sourcegraph)<br />📣
 Tips for integrating Sourcegraph and code search into your team for better code.
+
+[**📖 New docs design**](#docs)<br />
+Better UI, new page navigation, and docs improvements for site admins.
 
 Also in this release:
 
@@ -60,11 +60,13 @@ Every detail that changed in this release
 [**🎖️ Thank you**]()<br />
 Sourcegraph couldn’t be what it is without the community
 
+<div id="repo-config"></div>
+
 ## New repository configuration for GitHub, GitLab, and Bitbucket Server
 
 Prior to 3.3, integrating with a code host and selecting which repositories to use was a manual process:
 
-DIAGRAM EMBED
+![](/blog/old-repository-sync.png)
 
 While it was simple, it presented some problems:
 Sourcegraph would fetch and list all repositories accessible to the token which often included both an account’s private repositories, as well as the repositories from associated GitHub orgs.
@@ -77,14 +79,12 @@ This configuration exclusively determines which repositories are used, eliminati
 
 Additionally, if a repository is deleted from the code host or if it is no longer accessible to the provided token, it will be deleted from Sourcegraph automatically. Renames of upstream repositories are also gracefully detected and handled. 
 
-DIAGRAM EMBED
+![](/blog/new-repository-sync.png)
 
 For example, here are the fields for repository selection for the GitHub external service.
 
-TODO(ryan): Add table styles
-
-|**Field** | **Description** |
-| ------------- |:-------------:|
+|**Field**      | **Description** |
+| ------------- |-----------------|
 |repos | List of repositories to add "owner/name" format ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L38-L42)) |
 | repositoryQuery | List of strings that are queries by type, e.g. `affiliated`  and/or code host specific search filters ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L66-L75)) |
 | exclude\* | List of repositories to exclude in "owner/name" format (view in schema) |
@@ -94,6 +94,8 @@ TODO(ryan): Add table styles
 The [GitLab](https://github.com/sourcegraph/sourcegraph/blob/master/schema/gitlab.schema.json#L38-L91) and [Bitbucket Server](https://github.com/sourcegraph/sourcegraph/blob/master/schema/bitbucket_server.schema.json#L68-L113) fields for repository selection are similar to [GitHub](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L38-L75), but differ based on the search and selection options in the code host's API.
 
 This has been implemented for [GitHub](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab#repository-syncing) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server#repository-syncing) with additional code hosts being migrated to this model in 3.4.
+
+<div id="sentry"></div>
 
 ## New Sentry integration with the Sentry Sourcegraph extension
 
@@ -120,6 +122,8 @@ The initial version of the extension provides support for the most popular langu
 
 Additional languages will be added as part of each new release and if you want a particular language added, create an issue on the `sourcegraph-sentry GitHub repository`.
 
+<div id="bitbucket-fixes"></div>
+
 ## Bitbucket Server integration and browser extension fixes
 
 The refactoring and fixing work for integrations which started in 3.2 continues in this release, with many Bitbucket Server integration and browser extension fixes:
@@ -131,9 +135,26 @@ Better Sourcegraph connection error handling and prompts for when the extension 
 
 We’re also boosting our end-to-end test coverage to catch code host related  issues such as GitHub DOM changes faster. This reduces the time from issue logged, to patched and released, the goal being to catch any code host integration issues before our users do.
 
+<div id="code-intel"></div>
+
+## Code intel: Improved Swift support and directory/file scoped symbols
+
+Swift code intelligence is more comprehensive now that symbol detection has been improved, and the symbols sidebar is now scoped to the current file/directory you’re viewing:
+
+![](/blog/swift.png)
+
+Other updates include:
+
+- Jump-to-definition is more precise now that the definitions are filtered by the import statements at the top of the file.
+- The Go language server responds faster upon first visiting a page now that it caches zip archives more intelligently.
+
+<div id="deployments"></div>
+
 ## Deployments secure by default with TLS pre-configured
 
-![](/blog/tls.png)
+<p style="text-align: center">
+  <img src="/blog/tls.png" style="width: 350px" />
+</p>
 
 Regardless of your hosting environment, Sourcegraph should be fast and easy to deploy with infrastructure as code solutions such as Terraform being 
 
@@ -144,6 +165,8 @@ The 3.2 release brought with it 2 new ways of deploying Sourcegraph to the cloud
 They have been updated for 3.3 and now come pre-configured to use TLS with  a self-signed certificate. Additional documentation now exists for getting the [self-signed certificate trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
 
 Terraform plans for Google Cloud and Azure are being scheduled for upcoming releases. Let us know via [tweet](https://twittercom/srcgraph) or [GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=) which cloud provider you want support for next, along with any special instructions for that provider.
+
+<div id="grok-sourcegraph"></div>
 
 ## Making Sourcegraph a part of your dev tools stack
 
@@ -164,22 +187,13 @@ If a code search tool already exists such as Hound or OpenGrok, our code search 
 [**3. See how our customers use Sourcegraph**](https://docs.sourcegraph.com/user/tour)<br />
 See examples of how developers at companies such as Uber, Lyft, and Yelp depend on Sourcegraph everyday.
 
-## Code intel: Improved Swift support and directory/file scoped symbols
+<div id="docs"></div>
 
-Swift code intelligence is more comprehensive now that symbol detection has been improved, and the symbols sidebar is now scoped to the current file/directory you’re viewing:
-
-![](/blog/swift.png)
-
-Other updates include:
-
-- Jump-to-definition is more precise now that the definitions are filtered by the import statements at the top of the file.
-- The Go language server responds faster upon first visiting a page now that it caches zip archives more intelligently.
-
-## Documentation design refresh
+## New docs design
 
 Our [docs site](https://docs.sourcegraph.com/) got a design refresh, as well as a left-rail navigation menu to make it easier to find what you're looking for.
 
-EMBED
+![](/blog/new-docs.png)
 
 ## Search improvements
 
