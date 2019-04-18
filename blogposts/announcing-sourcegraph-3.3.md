@@ -129,7 +129,7 @@ The refactoring and fixing work for integrations which started in 3.2 continues 
 
 - [**Bitbucket server fixes**](https://github.com/sourcegraph/sourcegraph/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+label%3Abitbucket+milestone%3A3.3+)<br />
 Many UI improvements so Sourcegraph feels like a native integration of Bitbucket Server.<br /><br />
-- [**Browser extension fixes**](https://github.com/sourcegraph/sourcegraph/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A3.3+label%3Abrowser-extension+)
+- [**Browser extension fixes**](https://github.com/sourcegraph/sourcegraph/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A3.3+label%3Abrowser-extension+)<br />
 Better Sourcegraph connection error handling and prompts for when the extension must be manually activated, e.g. if using GitLab.com, as well as new [browser extension troubleshooting tips](https://docs.sourcegraph.com/integration/browser_extension#troubleshooting).
 
 We’re also boosting our end-to-end test coverage to catch code host related  issues such as GitHub DOM changes faster. This reduces the time from issue logged, to patched and released, the goal being to catch any code host integration issues before our users do.
