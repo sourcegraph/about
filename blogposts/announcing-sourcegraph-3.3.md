@@ -28,7 +28,7 @@ Want to try pre-release development builds? Change the Docker image tag to  `sou
 
 This release focusses on making Sourcegraph easier to set up, configure and manage repositories.
 
-We’ve completely overhauled how repositories are selected and kept in-sync, benefiting everyone, but especially organizations with thousands (or tens of thousands) of repositories. We’ve also added Sentry to our list of third party developer tool integrations and improved Swift code intelligence and navigation.
+We’ve completely overhauled how repositories are mirrored from your code host so that it is easier to configure and more reliable. This benefits everyone, but especially organizations with thousands (or tens of thousands) of repositories. We’ve also added Sentry to our list of third party developer tool integrations and improved Swift code intelligence and navigation.
 
 Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
 
