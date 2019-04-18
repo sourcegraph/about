@@ -82,7 +82,7 @@ export default class Pricing extends React.Component<any, any> {
                                             priceCaption="(50 users max)"
                                             features={[
                                                 { name: 'Code review integration', id: 'integrations' },
-                                                { name: 'External database storage', id: 'admin' },
+                                                { name: 'External database option', id: 'admin' },
                                                 { name: 'Next-business-day support', id: 'support' },
                                             ]}
                                             buttonLabel="Buy now"
