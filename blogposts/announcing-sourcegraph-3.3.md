@@ -109,7 +109,7 @@ TODO: Replace screencast with Sourcegraph intro screen
 
 [Sentry](https://sentry.io/) is an [open-source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly.. When browsing code on Sourcegraph or your code host, wouldn’t it be great if you could jump straight to the Sentry records page whenever you see error handling code, without having to manually open Sentry and find it?
 
-The new [Sentry Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/sourcegraph-sentry) does just that and runs anywhere that Sourcegraph does, such as code views on GitHub/GitLab with the [Sourcegraph browser extension\(https://docs.sourcegraph.com/integration/browser_extension).
+The new [Sentry Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/sourcegraph-sentry) does just that and runs anywhere that Sourcegraph does, such as code views on GitHub/GitLab with the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
 
 The initial version of the extension provides support for the most popular languages:
 
