@@ -46,7 +46,7 @@ Symbols scoped to the current file and improved Swift support.
 [**🚢  Deployments secure by default with TLS pre-configured**](#deployments)<br />
 TLS on all Terraform plans and improved AWS deployment docs.
 
-[**Making Sourcegraph a part of your dev tools stack**](#grok-sourcegraph)<br />📣
+[**📣 Making Sourcegraph a part of your dev tools stack**](#grok-sourcegraph)<br />
 Tips for integrating Sourcegraph and code search into your team for better code.
 
 [**📖 New docs design**](#docs)<br />
