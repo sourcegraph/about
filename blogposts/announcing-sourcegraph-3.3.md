@@ -52,7 +52,6 @@ Tips for integrating Sourcegraph and code search into your team for better code.
 [**📖 New docs design**](#docs)<br />
 Better UI, new page navigation, and docs improvements for site admins.
 
-Also in this release:
 
 [**📝 Changelog**]()<br />
 Every detail that changed in this release
