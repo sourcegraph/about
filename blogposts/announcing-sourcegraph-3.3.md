@@ -5,7 +5,7 @@ publishDate: 2019-04-22T10:00-07:00
 tags: [
   blog
 ]
-slug: sourcegraph-3
+slug: sourcegraph-3.3
 heroImage: /sourcegraph-mark.png
 published: true
 ---
@@ -14,11 +14,11 @@ published: true
 
 ---
 
-<h3 style="text-align: center">Deploy or upgrade Sourcegraph 3.3</h3>
+<h3 style="text-align: center">Deploy or upgrade to Sourcegraph 3.3</h3>
 
 <div style="text-align: center">
 
-  [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes](https://github.com/sourcegraph/deploy-sourcegraph)
+  [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
 Want to try pre-release development builds? Change the Docker image tag to  `sourcegraph:insiders`.
 
@@ -26,16 +26,20 @@ Want to try pre-release development builds? Change the Docker image tag to  `sou
 
 ---
 
-This release focusses on making Sourcegraph easier to set up, configure and manage repositories.
+This release focusses on making it easier for admins to set up, configure and manage repositories at any scale.
 
-We’ve completely overhauled how repositories are mirrored from your code host so that it is easier to configure and more reliable. This benefits everyone, but especially organizations with thousands (or tens of thousands) of repositories. We’ve also added Sentry to our list of third party developer tool integrations and improved Swift code intelligence and navigation.
+We’ve completely overhauled how repositories are mirrored from your code host so that it is easier to configure and more reliable. This benefits everyone, but especially organizations with thousands (or tens of thousands) of repositories.
+
+Sentry joins our list of developer tool integrations, and Swift developers get better symbols definition and better code navigation.
 
 Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
 
-**Release highlights**:
+## Release highlights
+
+<div style="padding-left: 2rem">
 
 [**🛠️ New! Config based repository selection**](#repo-config)<br />
-Repositories now chosen via explicit lists and query rules in the external service config.
+Repositories now chosen via add/exclude lists and query rules.
 
 **[🔌 New Sentry integration](#sentry) and [Bitbucket Server fixes](#bitbucket-fixes)**<br />
 Jump to Sentry from Sourcegraph and other integrations improvements.
@@ -44,20 +48,21 @@ Jump to Sentry from Sourcegraph and other integrations improvements.
 Symbols scoped to the current file and improved Swift support.
 
 [**🚢  Deployments secure by default with TLS pre-configured**](#deployments)<br />
-TLS on all Terraform plans and improved AWS deployment docs.
+AWS and DigitalOcean deployments with TLS via self-signed certs.
 
 [**📣 Making Sourcegraph a part of your dev tools stack**](#grok-sourcegraph)<br />
-Tips for integrating Sourcegraph and code search into your team for better code.
+Tips for integrating Sourcegraph and code search into your team's workflow.
 
 [**📖 New docs design**](#docs)<br />
-Better UI, new page navigation, and docs improvements for site admins.
-
+Nicer looking design and new site navigation menu.
 
 [**📝 Changelog**]()<br />
 Every detail that changed in this release
 
 [**🎖️ Thank you**]()<br />
 Sourcegraph couldn’t be what it is without the community
+
+</div>
 
 <div id="repo-config"></div>
 
@@ -69,6 +74,8 @@ Prior to 3.3, integrating with a code host and selecting which repositories to u
 
 While it was simple, it presented some problems:
 Sourcegraph would fetch and list all repositories accessible to the token which often included both an account’s private repositories, as well as the repositories from associated GitHub orgs.
+
+### Why manual enabling and disabling was problematic
 
 Once dealing with more than a few dozen repositories (most of our customers have many thousands), manually enabling each repository was time consuming, and often resulted in scripted GraphQL queries with selection logic.
 
@@ -155,9 +162,7 @@ Other updates include:
   <img src="/blog/tls.png" style="width: 350px" />
 </p>
 
-Regardless of your hosting environment, Sourcegraph should be fast and easy to deploy with infrastructure as code solutions such as Terraform being 
-
-The 3.2 release brought with it 2 new ways of deploying Sourcegraph to the cloud:
+The 3.2 release brought with it two new ways of deploying Sourcegraph to the cloud:
 - [One-click installer on the DigitalOcean marketplace](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)
 - [AWS EC2 Terraform plan](https://github.com/sourcegraph/deploy-sourcegraph-aws)
 
