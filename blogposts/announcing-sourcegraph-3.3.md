@@ -46,10 +46,11 @@ Jump to Sentry from Sourcegraph and other integrations improvements.
 
 [**🧭 More precise code intelligence**](#code-intel)<br />
 Symbols scoped to the current file and improved Swift support.
-
+<!--
+TODO(ryan): Show once 3.3 is available on DigitalOcean
 [**🚢 Deployments secure by default with TLS pre-configured**](#deployments)<br />
 AWS and DigitalOcean deployments with TLS via self-signed certs.
-
+-->
 [**📣 Making Sourcegraph a part of your dev tools stack**](#grok-sourcegraph)<br />
 Tips for integrating Sourcegraph and code search into your team's workflow.
 
@@ -155,6 +156,8 @@ Other updates include:
 - Jump-to-definition is more precise now that the definitions are filtered by the import statements at the top of the file.
 - The Go language server responds faster upon first visiting a page now that it caches zip archives more intelligently.
 
+<!--
+TODO(ryan): Show once 3.3 is available on DigitalOcean
 <div id="deployments"></div>
 
 ## Deployments secure by default with TLS pre-configured
@@ -171,6 +174,7 @@ The 3.2 release brought with it two new ways of deploying Sourcegraph to the clo
 They have been updated for 3.3 and now come pre-configured to use TLS with a self-signed certificate. Additional documentation now exists for getting the [self-signed certificate trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
 
 Terraform plans for Google Cloud and Azure are being scheduled for upcoming releases. Let us know via [tweet](https://twittercom/srcgraph) or [GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=) which cloud provider you want support for next, along with any special instructions for that provider.
+-->
 
 <div id="grok-sourcegraph"></div>
 
