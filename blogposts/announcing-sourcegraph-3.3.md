@@ -53,13 +53,16 @@ AWS and DigitalOcean deployments with TLS via self-signed certs.
 [**📣 Making Sourcegraph a part of your dev tools stack**](#grok-sourcegraph)<br />
 Tips for integrating Sourcegraph and code search into your team's workflow.
 
+[**🔎 Search improvements**](#search)<br />
+Auto-fixing search queries and new option to search in large files (> 20Mb).
+
 [**📖 New docs design**](#docs)<br />
 Nicer looking design and new site navigation menu.
 
-[**📝 Changelog**]()<br />
+[**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
 
-[**🎖️ Thank you**]()<br />
+[**🎖️ Thank you**](#thankyou)<br />
 Sourcegraph couldn’t be what it is without the community
 
 </div>
@@ -105,16 +108,14 @@ This has been implemented for [GitHub](https://docs.sourcegraph.com/admin/extern
 
 ## New Sentry integration with the Sentry Sourcegraph extension
 
-TODO: Replace screencast with Sourcegraph intro screen
-
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/330644055?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/331346276?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/330644055" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/331346276" target="_blank">View on Vimeo</a></p>
 </p>
 
-[Sentry](https://sentry.io/) is an [open-source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly.. When browsing code on Sourcegraph or your code host, wouldn’t it be great if you could jump straight to the Sentry records page whenever you see error handling code, without having to manually open Sentry and find it?
+[Sentry](https://sentry.io/) is an [open-source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly. When browsing code on Sourcegraph or your code host, wouldn’t it be great if you could jump straight to the Sentry records page whenever you see error handling code instead of manually navigating around Sentry?
 
 The new [Sentry Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/sourcegraph-sentry) does just that and runs anywhere that Sourcegraph does, such as code views on GitHub/GitLab with the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
 
@@ -126,20 +127,20 @@ The initial version of the extension provides support for the most popular langu
 - JavaScript
 - TypeScript
 
-Additional languages will be added as part of each new release and if you want a particular language added, create an issue on the `sourcegraph-sentry GitHub repository`.
+Additional languages will be added as part of each new release and if you want a particular language added, create an issue for the [sourcegraph-sentry repository](https://github.com/sourcegraph/sentry/issues).
 
 <div id="bitbucket-fixes"></div>
 
 ## Bitbucket Server integration and browser extension fixes
 
-The refactoring and fixing work for integrations which started in 3.2 continues in this release, with many Bitbucket Server integration and browser extension fixes:
+The refactoring and fixing work for integrations which started in 3.2 continues in this release, with many Bitbucket Server and browser extension fixes:
 
 - [**Bitbucket server fixes**](https://github.com/sourcegraph/sourcegraph/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+label%3Abitbucket+milestone%3A3.3+)<br />
 Many UI improvements so Sourcegraph feels like a native integration of Bitbucket Server.<br /><br />
 - [**Browser extension fixes**](https://github.com/sourcegraph/sourcegraph/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A3.3+label%3Abrowser-extension+)<br />
 Better Sourcegraph connection error handling and prompts for when the extension must be manually activated, e.g. if using GitLab.com, as well as new [browser extension troubleshooting tips](https://docs.sourcegraph.com/integration/browser_extension#troubleshooting).
 
-We’re also boosting our end-to-end test coverage to catch code host related  issues such as GitHub DOM changes faster. This reduces the time from issue logged, to patched and released, the goal being to catch any code host integration issues before our users do.
+As part of making the browser extension more robust, we're increasing end-to-end test coverage to catch code host related  issues such as GitHub DOM changes faster. This reduces the time from issue logged, to patched and released, the goal being to catch any code host integration issues before our users do.
 
 <div id="code-intel"></div>
 
@@ -178,7 +179,7 @@ Once a Sourecgraph instance is configured and ready for sharing, a site admin us
 
 - *“What is the best way to run a trial of Sourcegraph in my team/org?”*
 - *“How can I best communicate the value of code search to developers who’ve not used it before?”*
-- *“How can I make it easy for developers to compare Sourcegraph to an existing internal code search tool?”*
+- *“How can I make it easy for developers to compare Sourcegraph to our existing code search tool?”*
 
 To help make it easier for a site admin to introduce Sourcegraph into their development tools stack, we’ve created the following three resources:
 
@@ -191,13 +192,7 @@ If a code search tool already exists such as Hound or OpenGrok, our code search 
 [**3. See how our customers use Sourcegraph**](https://docs.sourcegraph.com/user/tour)<br />
 See examples of how developers at companies such as Uber, Lyft, and Yelp depend on Sourcegraph everyday.
 
-<div id="docs"></div>
-
-## New docs design
-
-Our [docs site](https://docs.sourcegraph.com/) got a design refresh, as well as a left-rail navigation menu to make it easier to find what you're looking for.
-
-![](/blog/new-docs.png)
+<div id="search"></div>
 
 ## Search improvements
 
@@ -213,19 +208,106 @@ By default, code search excludes files over 20MB by default. Files such as packa
 
 We added a site setting to whitelist certain files to be searched regardless of their size. Use the `search.largeFiles` setting to specify a list of files that should always be searched over. For example, `search.largeFiles`: `[“package.json”, “yarn.lock”, “package-lock.json”]`.
 
-## Changelog
+<div id="docs"></div>
 
-UPDATE AFTER CHANGELOG FINALIZED
+## New docs design
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) is available on GitHub.
+Our [docs site](https://docs.sourcegraph.com/) got a design refresh, as well as a left-rail navigation menu to make it easier to find what you're looking for.
+
+![](/blog/new-docs.png)
+
+<div id="changelog"></div>
+
+## 3.3.0 Changelog
+
+### Added
+
+- In search queries, treat `foo(` as `foo\(` and `bar[` as `bar\[` rather than failing with an error message.
+- Enterprise admins can now customize the appearance of the homepage and search icon.
+- A new settings property `notices` allows showing custom informational messages on the homepage and at the top of each page. The `motd` property is deprecated and its value is automatically migrated to the new `notices` property.
+- The new `gitlab.exclude` setting in [GitLab external service config](https://docs.sourcegraph.com/admin/external_service/gitlab#configuration) allows you to exclude specific repositories matched by `gitlab.projectQuery` and `gitlab.projects` (so that they won't be synced).
+- The new `gitlab.projects` setting in [GitLab external service config](https://docs.sourcegraph.com/admin/external_service/gitlab#configuration) allows you to select specific repositories to be synced.
+- The new `bitbucketserver.exclude` setting in [Bitbucket Server external service config](https://docs.sourcegraph.com/admin/external_service/bitbucketserver#configuration) allows you to exclude specific repositories matched by `bitbucketserver.repositoryQuery` and `bitbucketserver.repos` (so that they won't be synced).
+- The new `bitbucketserver.repos` setting in [Bitbucket Server external service config](https://docs.sourcegraph.com/admin/external_service/bitbucketserver#configuration) allows you to select specific repositories to be synced.
+- The new required `bitbucketserver.repositoryQuery` setting in [Bitbucket Server external service configuration](https://docs.sourcegraph.com/admin/external_service/bitbucketserver#configuration) allows you to use Bitbucket API repository search queries to select repos to be synced. Existing configurations will be migrate to have it set to `["?visibility=public", "?visibility=private"]` which is equivalent to the previous implicit behaviour that this setting supersedes.
+- "Quick configure" buttons for common actions have been added to the config editor for all external services.
+- "Quick configure" buttons for common actions have been added to the management console.
+- Site-admins now receive an alert every day for the seven days before their license key expires.
+- The user menu (in global nav) now lists the user's organizations.
+- All users on an instance now see a non-dismissable alert when when there's no license key in use and the limit of free user accounts is exceeded.
+- All users will see a dismissible warning about limited search performance and accuracy on when using the sourcegraph/server Docker image with more than 100 repositories enabled.
+
+### Changed
+
+- Indexed searches that time out more consistently report a timeout instead of erroneously saying "No results."
+- The symbols sidebar now only shows symbols defined in the current file or directory.
+- The dynamic filters on search results pages will now display `lang:` instead of `file:` filters for language/file-extension filter suggestions.
+- The default `github.repositoryQuery` of a [GitHub external service configuration](https://docs.sourcegraph.com/admin/external_service/github#configuration) has been changed to `["none"]`. Existing configurations that had this field unset will be migrated to have the previous default explicitly set (`["affiliated", "public"]`).
+- The default `gitlab.projectQuery` of a [GitLab external service configuration](https://docs.sourcegraph.com/admin/external_service/gitlab#configuration) has been changed to `["none"]`. Existing configurations that had this field unset will be migrated to have the previous default explicitly set (`["?membership=true"]`).
+- The default value of `maxReposToSearch` is now unlimited (was 500).
+- The default `github.repositoryQuery` of a [GitHub external service configuration](https://docs.sourcegraph.com/admin/external_service/github#configuration) has been changed to `["none"]` and is now a required field. Existing configurations that had this field unset will be migrated to have the previous default explicitly set (`["affiliated", "public"]`).
+- The default `gitlab.projectQuery` of a [GitLab external service configuration](https://docs.sourcegraph.com/admin/external_service/gitlab#configuration) has been changed to `["none"]` and is now a required field. Existing configurations that had this field unset will be migrated to have the previous default explicitly set (`["?membership=true"]`).
+- The `bitbucketserver.username` field of a [Bitbucket Server external service configuration](https://docs.sourcegraph.com/admin/external_service/bitbucketserver#configuration) is now **required**. This field is necessary to authenticate with the Bitbucket Server API with either `password` or `token`.
+- The settings and account pages for users and organizations are now combined into a single tab.
+
+### Removed
+
+- Removed the option to show saved searches on the Sourcegraph homepage.
+
+### Fixed
+
+- Fixed an issue where the site-admin repositories page `Cloning`, `Not Cloned`, `Needs Index` tabs were very slow on instances with thousands of repositories.
+
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#330) is available on GitHub.
+
+<div id="thankyou"></div>
 
 ## Thank you
 
 Thank you to the many people who contributed to make Sourcegraph better since the last release!
 
-<!--
-  Generate the list of people who contributed (created tickets) by using the script at https://gist.github.com/ryan-blunden/c8898c989b48ba7a83e64ff9ae242cc2
--->
+
+- [@varaamo](https://github.com/varaamo)
+- [@saurabh-hirani](https://github.com/saurabh-hirani)
+- [@immanuelfodor](https://github.com/immanuelfodor)
+- [@prestonvanloon](https://github.com/prestonvanloon)
+- [@julianvmodesto](https://github.com/julianvmodesto)
+- [@CH-JosephBironas](https://github.com/CH-JosephBironas)
+- [@b-j-p](https://github.com/b-j-p)
+- [@leoluk](https://github.com/leoluk)
+- [@dbentley](https://github.com/dbentley)
+- [@Phrohdoh](https://github.com/Phrohdoh)
+- [@shyim](https://github.com/shyim)
+- [@marco-c](https://github.com/marco-c)
+- [@mrubinsk](https://github.com/mrubinsk)
+- [@zheeeng](https://github.com/zheeeng)
+- [@akshetpandey](https://github.com/akshetpandey)
+- [@markus-wa](https://github.com/markus-wa)
+- [@abeyerpath](https://github.com/abeyerpath)
+- [@gerbal](https://github.com/gerbal)
+- [@JoshuaKGoldberg](https://github.com/JoshuaKGoldberg)
+- [@ijt](https://github.com/ijt)
+- [@kevinchen94](https://github.com/kevinchen94)
+- [@asinwang](https://github.com/asinwang)
+- [@sslavian812](https://github.com/sslavian812)
+- [@alanhamlett](https://github.com/alanhamlett)
+- [@sfllaw](https://github.com/sfllaw)
+- [@carun](https://github.com/carun)
+- [@AndrewRussellHayes](https://github.com/AndrewRussellHayes)
+- [@mcdan](https://github.com/mcdan)
+- [@machbio](https://github.com/machbio)
+- [@joemccall86](https://github.com/joemccall86)
+- [@mqus](https://github.com/mqus)
+- [@terinjokes](https://github.com/terinjokes)
+- [@thinktopdown](https://github.com/thinktopdown)
+- [@amarsiingh](https://github.com/amarsiingh)
+- [@djuarezg](https://github.com/djuarezg)
+- [@AndreKR](https://github.com/AndreKR)
+- [@postables](https://github.com/postables)
+- [@IizunaK](https://github.com/IizunaK)
+- [@nnchang](https://github.com/nnchang)
+- [@linknum23](https://github.com/linknum23)
+- [@caseylmanus](https://github.com/caseylmanus)
 
 ## Install or upgrade
 
