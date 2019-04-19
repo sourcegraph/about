@@ -18,7 +18,7 @@ _Sourcegraph is an open-source, self-hosted, cross-repository code search and na
 
 <div style="text-align: center">
 
-[Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
+[Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) <!--| [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)--> | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
 Want to try pre-release development builds? Change the Docker image tag to `sourcegraph:insiders`.
 
