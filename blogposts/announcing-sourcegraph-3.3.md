@@ -10,7 +10,7 @@ heroImage: /sourcegraph-mark.png
 published: true
 ---
 
-*Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade).*
+_Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade)._
 
 ---
 
@@ -18,9 +18,9 @@ published: true
 
 <div style="text-align: center">
 
-  [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
+[Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-Want to try pre-release development builds? Change the Docker image tag to  `sourcegraph:insiders`.
+Want to try pre-release development builds? Change the Docker image tag to `sourcegraph:insiders`.
 
 </div>
 
@@ -47,7 +47,7 @@ Jump to Sentry from Sourcegraph and other integrations improvements.
 [**🧭 More precise code intelligence**](#code-intel)<br />
 Symbols scoped to the current file and improved Swift support.
 
-[**🚢  Deployments secure by default with TLS pre-configured**](#deployments)<br />
+[**🚢 Deployments secure by default with TLS pre-configured**](#deployments)<br />
 AWS and DigitalOcean deployments with TLS via self-signed certs.
 
 [**📣 Making Sourcegraph a part of your dev tools stack**](#grok-sourcegraph)<br />
@@ -86,17 +86,17 @@ From 3.3 onwards, selecting which repositories to search and mirror from GitHub,
 
 This configuration exclusively determines which repositories are used, eliminating the manual process of enabling, disabling and deleting individual repositories.
 
-Additionally, if a repository is deleted from the code host or if it is no longer accessible to the provided token, it will be deleted from Sourcegraph automatically. Renames of upstream repositories are also gracefully detected and handled. 
+Additionally, if a repository is deleted from the code host or if it is no longer accessible to the provided token, it will be deleted from Sourcegraph automatically. Renames of upstream repositories are also gracefully detected and handled.
 
 ![](/blog/new-repository-sync.png)
 
 For example, here are the fields for repository selection for the GitHub external service.
 
-|**Field**      | **Description** |
-| ------------- |-----------------|
-|repos | List of repositories to add "owner/name" format ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L38-L42)) |
-| repositoryQuery | List of strings that are queries by type, e.g. `affiliated`  and/or code host specific search filters ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L66-L75)) |
-| exclude\* | List of repositories to exclude in "owner/name" format (view in schema) |
+| **Field**       | **Description**                                                                                                                                                                                                   |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| repos           | List of repositories to add "owner/name" format ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L38-L42))                                                      |
+| repositoryQuery | List of strings that are queries by type, e.g. `affiliated` and/or code host specific search filters ([view in schema](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L66-L75)) |
+| exclude\*       | List of repositories to exclude in "owner/name" format (view in schema)                                                                                                                                           |
 
 <p><small>*exclude takes precedence over the `repos` and `repositoryQuery` syntax.</small></p>
 
@@ -136,11 +136,11 @@ Additional languages will be added as part of each new release and if you want a
 The refactoring and fixing work for integrations which started in 3.2 continues in this release, with many Bitbucket Server and browser extension fixes:
 
 - [**Bitbucket server fixes**](https://github.com/sourcegraph/sourcegraph/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+label%3Abitbucket+milestone%3A3.3+)<br />
-Many UI improvements so Sourcegraph feels like a native integration of Bitbucket Server.<br /><br />
+  Many UI improvements so Sourcegraph feels like a native integration of Bitbucket Server.<br /><br />
 - [**Browser extension fixes**](https://github.com/sourcegraph/sourcegraph/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A3.3+label%3Abrowser-extension+)<br />
-Better Sourcegraph connection error handling and prompts for when the extension must be manually activated, e.g. if using GitLab.com, as well as new [browser extension troubleshooting tips](https://docs.sourcegraph.com/integration/browser_extension#troubleshooting).
+  Better Sourcegraph connection error handling and prompts for when the extension must be manually activated, e.g. if using GitLab.com, as well as new [browser extension troubleshooting tips](https://docs.sourcegraph.com/integration/browser_extension#troubleshooting).
 
-As part of making the browser extension more robust, we're increasing end-to-end test coverage to catch code host related  issues such as GitHub DOM changes faster. This reduces the time from issue logged, to patched and released, the goal being to catch any code host integration issues before our users do.
+As part of making the browser extension more robust, we're increasing end-to-end test coverage to catch code host related issues such as GitHub DOM changes faster. This reduces the time from issue logged, to patched and released, the goal being to catch any code host integration issues before our users do.
 
 <div id="code-intel"></div>
 
@@ -164,10 +164,11 @@ Other updates include:
 </p>
 
 The 3.2 release brought with it two new ways of deploying Sourcegraph to the cloud:
+
 - [One-click installer on the DigitalOcean marketplace](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)
 - [AWS EC2 Terraform plan](https://github.com/sourcegraph/deploy-sourcegraph-aws)
 
-They have been updated for 3.3 and now come pre-configured to use TLS with  a self-signed certificate. Additional documentation now exists for getting the [self-signed certificate trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
+They have been updated for 3.3 and now come pre-configured to use TLS with a self-signed certificate. Additional documentation now exists for getting the [self-signed certificate trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
 
 Terraform plans for Google Cloud and Azure are being scheduled for upcoming releases. Let us know via [tweet](https://twittercom/srcgraph) or [GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=) which cloud provider you want support for next, along with any special instructions for that provider.
 
@@ -177,9 +178,9 @@ Terraform plans for Google Cloud and Azure are being scheduled for upcoming rele
 
 Once a Sourecgraph instance is configured and ready for sharing, a site admin usually thinks:
 
-- *“What is the best way to run a trial of Sourcegraph in my team/org?”*
-- *“How can I best communicate the value of code search to developers who’ve not used it before?”*
-- *“How can I make it easy for developers to compare Sourcegraph to our existing code search tool?”*
+- _“What is the best way to run a trial of Sourcegraph in my team/org?”_
+- _“How can I best communicate the value of code search to developers who’ve not used it before?”_
+- _“How can I make it easy for developers to compare Sourcegraph to our existing code search tool?”_
 
 To help make it easier for a site admin to introduce Sourcegraph into their development tools stack, we’ve created the following three resources:
 
@@ -265,7 +266,6 @@ The [changelog for this and previous releases](https://github.com/sourcegraph/so
 ## Thank you
 
 Thank you to the many people who contributed to make Sourcegraph better since the last release!
-
 
 - [@varaamo](https://github.com/varaamo)
 - [@saurabh-hirani](https://github.com/saurabh-hirani)
