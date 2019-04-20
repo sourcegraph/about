@@ -207,12 +207,6 @@ Sourcegraph supports powerful regular expression search by default. However, use
 
 For example, if you searched for myFunc(, you would receive an invalid regular expression error, because the open parenthesis is treated as the beginning of a regular expression match group. Now, we auto-fix queries with trailing open parentheses. For example, the myFunc( query would get automatically fixed to myFunc\( behind the scenes.
 
-### Site setting for searching over large files
-
-By default, code search excludes files over 20MB by default. Files such as package-lock.json sometimes exceed the 20MB limit, but our customers still want to be able to search over them.
-
-We added a site setting to whitelist certain files to be searched regardless of their size. Use the `search.largeFiles` setting to specify a list of files that should always be searched over. For example, `search.largeFiles`: `[“package.json”, “yarn.lock”, “package-lock.json”]`.
-
 <div id="docs"></div>
 
 ## New docs design
