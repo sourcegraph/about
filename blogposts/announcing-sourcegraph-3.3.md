@@ -223,7 +223,7 @@ Our [docs site](https://docs.sourcegraph.com/) got a design refresh, as well as 
 
 <div id="changelog"></div>
 
-## 3.3.0
+## 3.3.0 Changelog
 
 ### Added
 
