@@ -17,6 +17,7 @@ Our copy should be:
 - Punctuation goes outside of quotation marks, except in marketing when displaying a quote.
 - Use the most popular US English spelling and phrasing.
 - Prefer the serial comma in lists, except where ambiguity would be introduced by including it.
+- No spaces between two terms separated by a slash ("a/b", not "a / b" ).
 
 ### Clarity
 
@@ -42,6 +43,8 @@ Assume the reader is a busy non-native English speaker.
       - Sourcegraph['s] Chrome extension
       - Sourcegraph['s] Firefox add-on
       - Sourcegraph['s] Safari extension
+
+- Code intel reserved for describing benefit of using Sourcegraph holistically or from the organizations point of view. If referring to "go to definition" for example, use "code navigation" (not "code intel").
 
 When referring to the build result of the open-source repository, use the name Sourcegraph OSS.
 
@@ -133,13 +136,17 @@ For consistency, all examples should use the following names (as appropriate).
 - Configuration not config ("config" is OK in paths and navigation links)
 - Setup is a noun, "set up" is a verb ([see notaverb.com/setup](http://notaverb.com/setup), although see [note on descriptivism](#note))
 - Prefer "sign in" to "log in" (also: "login" is a noun, "log in" is a verb)
-- Sourcegraph (not "sourcegraph" or "SourceGraph")
+- Sourcegraph (not "sourcegraph" or "SourceGraph", or "sg")
 - URL (not "url")
 - OpenID Connect (not "OIDC")
 - PostgreSQL (not any of: Postgres, postgres, PgSQL, Postgresql, PostGres, etc.)
 - Go (not "Golang")
 - macOS (not any of: OS X, OSX, MacOS, MacOSX, etc.)
 - Capitalize as shown (in prose): Docker, Bitbucket, GitHub, React, Git, JavaScript, TypeScript (all according to the intent of the creator)
+- Go to definition (not "jump to definition", j2e, go-to-def)
+- Prefer regexp ("not regex" or "regular expressions")
+- Prefer "call site" (not "callsite")
+- Prefer "go to definition" (not "jump to definition", "jump-to-def", or "j2d")
 
 ### "Contact us" Language
 
