@@ -11,6 +11,7 @@ interface Props {
     name: string
     description: string
     price: string
+    priceInterval?: string | React.ReactFragment
     priceCaption: string
     features: PricingPlanFeature[]
     buttonLabel: string
@@ -26,6 +27,13 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     name,
     description,
     price,
+    priceInterval = (
+        <>
+            per user
+            <br />
+            per month
+        </>
+    ),
     priceCaption,
     features,
     buttonLabel,
@@ -34,14 +42,12 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
 }) => (
     <div className={`card pricing__card ${className}`}>
         <h1 className="card-title border-bottom py-2">{name}</h1>
-        <div className="card-body py-1 pricing-plan__description text-center">{description}</div>
-        <div className="card-body pt-2 d-flex flex-column align-items-center">
+        <div className="card-body py-1 pricing-plan__description text-center flex-grow-0">{description}</div>
+        <div className="card-body pt-2 d-flex flex-column align-items-center flex-grow-0">
             <div className="pricing-plan__price d-flex align-items-center justify-content-center">
                 <span className="pricing-plan__price-amount mr-2">{price}</span>
                 <span className="pricing-plan__price-caption small">
-                    per user
-                    <br />
-                    per month
+                    {priceInterval}
                     {priceCaption && (
                         <>
                             <br />
@@ -64,7 +70,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
                     key={i}
                     href={`#${id}`}
                     className={`list-group-item list-group-item-action bg-transparent border-0 py-1 ${
-                        future ? 'font-italic' : ''
+                        future ? 'font-italic-TODO!sqsoff' : ''
                     }`}
                 >
                     {name}

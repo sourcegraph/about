@@ -7,6 +7,8 @@ import { PricingPlan } from './pricing/PricingPlan'
 
 export default class Pricing extends React.Component<any, any> {
     public render(): JSX.Element | null {
+        const isSelfManaged = this.props.location.hash !== '#sourcegraph-com'
+
         return (
             <Layout location={this.props.location}>
                 <div>
@@ -33,17 +35,17 @@ export default class Pricing extends React.Component<any, any> {
                         <div className="pricing">
                             <ul className="nav nav-pills justify-content-center mt-5">
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="#">
+                                    <a className="nav-link active" href="#self-managed">
                                         Self-managed
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link border rounded ml-2 text-muted bg-light" href="#">
+                                    <a className="nav-link border rounded ml-2 bg-light" href="#sourcegraph-com">
                                         Sourcegraph.com (cloud-hosted)
                                     </a>
                                 </li>
                             </ul>
-                            <div className="hero-section text-center my-4 py-3">
+                            <div className="hero-section text-center my-4 py-4">
                                 <h2>Try Sourcegraph Ultimate risk-free for 30 days</h2>
                                 <a
                                     className="btn btn-github"
@@ -55,34 +57,23 @@ export default class Pricing extends React.Component<any, any> {
                             </div>
                             <div className="container-fluid pricing-section">
                                 <div className="row no-gutters mt-5">
-                                    <div className="col-lg-3">
+                                    <div className="col-lg-4">
                                         <PricingPlan
-                                            name="Core"
-                                            description="Helping developers search and browse their code."
-                                            price="$0"
+                                            className="pricing__plan"
+                                            name="Starter"
+                                            description="Helping developers search, browse, and grok their code, for faster software development and incident response."
+                                            price="$2,950"
+                                            priceInterval="per year"
                                             priceCaption="(20 users max)"
                                             features={[
                                                 { name: 'Code search', id: 'search' },
                                                 { name: 'Code navigation (definitions & references)', id: 'search' },
                                                 { name: 'Sourcegraph extensions', id: 'extensions' },
                                                 { name: 'Code host & editor integration', id: 'integrations' },
-                                                { name: 'Single sign-on (SSO) support', id: 'admin' },
-                                                { name: 'Community support', id: 'support' },
-                                            ]}
-                                            buttonLabel="Install"
-                                            buttonOnClick={this.trackInstallSourcegraphServerClicked}
-                                            buttonHref="https://docs.sourcegraph.com/#quickstart"
-                                        />
-                                    </div>
-                                    <div className="col-lg-3">
-                                        <PricingPlan
-                                            name="Starter"
-                                            description="Speeding up your team's software development and incident response."
-                                            price="$4"
-                                            priceCaption="(50 users max)"
-                                            features={[
-                                                { name: 'Code review integration', id: 'integrations' },
-                                                { name: 'External database option', id: 'admin' },
+                                                {
+                                                    name: 'Single sign-on (SSO) user authentication',
+                                                    id: 'admin',
+                                                },
                                                 { name: 'Next-business-day support', id: 'support' },
                                             ]}
                                             buttonLabel="Buy now"
@@ -90,17 +81,18 @@ export default class Pricing extends React.Component<any, any> {
                                             buttonHref="/contact/sales"
                                         />
                                     </div>
-                                    <div className="col-lg-3">
+                                    <div className="col-lg-4">
                                         <PricingPlan
+                                            className="pricing__plan"
                                             name="Premium"
-                                            description="Enabling engineering, devops, and IT leaders to speed up the organization's software lifecycle and monitor risks."
+                                            description="Enabling engineering and DevOps leaders to speed up the organization's software lifecycle and monitor risks."
                                             price="$19"
                                             priceCaption="(billed annually)"
                                             features={[
-                                                { name: 'Repository access permissions', id: 'admin' },
+                                                { name: 'Code review & pull request integration', id: 'integrations' },
                                                 { name: 'Code change monitoring & notifications', id: 'admin' },
-                                                { name: 'Code & repository statistics', id: 'admin' },
-                                                { name: 'Metrics & monitoring', id: 'admin' },
+                                                { name: 'Repository access permissions', id: 'admin' },
+                                                { name: 'Deployment metrics & monitoring', id: 'admin' },
                                                 {
                                                     name: 'High-scale/availability cluster deployment option',
                                                     id: 'deployment',
@@ -113,30 +105,35 @@ export default class Pricing extends React.Component<any, any> {
                                             buttonHref="/contact/sales"
                                         />
                                     </div>
-                                    <div className="col-lg-3">
+                                    <div className="col-lg-4">
                                         <PricingPlan
+                                            className="pricing__plan"
                                             name="Ultimate"
                                             description="Enabling businesses to transform the software lifecycle with automation and intelligence."
                                             price="$99"
                                             priceCaption="(billed annually)"
                                             features={[
-                                                { name: 'Free guest users', id: 'admin' },
-                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
-                                                { name: 'Custom integrations', id: 'integrations' },
-                                                { name: '24/7 uptime support', id: 'support' },
-                                                { name: 'Dedicated support', id: 'support' },
                                                 {
-                                                    name: 'Large-scale refactoring and automation',
+                                                    name: 'Large-scale code modifications and automated refactoring',
                                                     id: 'extensions',
                                                     future: true,
                                                 },
                                                 { name: 'Code reporting & analytics', id: 'admin', future: true },
-                                                { name: 'Audit logs', id: 'admin', future: true },
                                                 {
                                                     name: 'License compliance and security analysis',
                                                     id: 'extensions',
                                                     future: true,
                                                 },
+                                                {
+                                                    name: 'Remote development environment',
+                                                    id: 'admin',
+                                                    future: true,
+                                                },
+                                                { name: 'Free guest users', id: 'admin' },
+                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
+                                                { name: '24/7 uptime support', id: 'support' },
+                                                { name: 'Dedicated support', id: 'support' },
+                                                { name: 'Audit logs', id: 'admin', future: true },
                                             ]}
                                             buttonLabel="Buy now"
                                             buttonOnClick={this.trackBuyUnlimitedButtonClicked}
