@@ -8,7 +8,7 @@ Last modified: March __, 2019
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of the applications, software, products, and services we make available at Sourcegraph.com.
 
-<div class="ml-2 mr-2 p-3" style="background: #f2f4f8;">
+<div class="p-3" style="background: #f2f4f8; word-wrap: break-word;">
 
 <span style="color:#f96216;">
 

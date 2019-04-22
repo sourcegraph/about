@@ -44,7 +44,7 @@ We use this information to operate, maintain, and provide to you the features of
 
 Sourcegraph collects aggregate and high-level information about usage from self-hosted Sourcegraph instances through a server ping. The server ping sends a payload containing data such as total number of users and whether certain features are enabled or in use.
 
-<div class="ml-2 mr-2 mt-4 mb-4 p-3" style="background: #f2f4f8;">For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> to opt out of server pings.</div>
+<div class="mt-4 mb-4 p-3" style="background: #f2f4f8; word-wrap: break-word;">For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> to opt out of server pings.</div>
 
 The only personal information collected is the email address of the initial Sourcegraph installer and site admin (or, if that user is deleted or demoted to not be an admin, the first such active site admin). This information allows us to contact the technical administrator of the Sourcegraph instance to deliver information about product updates and policy changes, and for customer development purposes. Other than the initial site admin email address, only aggregates of usage data are sent: no usernames, user emails, user personal information, code, repository names, file names, URLs, or other such private content is sent to Sourcegraph.
 
