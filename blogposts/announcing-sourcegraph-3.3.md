@@ -20,17 +20,15 @@ _Sourcegraph is an open-source, self-hosted, cross-repository code search and na
 
 [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) <!--| [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)--> | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-Want to try pre-release development builds? Change the Docker image tag to `sourcegraph:insiders`.
-
 </div>
 
 ---
 
-This release focusses on making it easier for admins to set up, configure and manage repositories at any scale.
+This release focuses on making it easier for admins to set up, configure and manage repositories to use on Sourcegraph.
 
-We’ve completely overhauled how repositories are mirrored from your code host so that it is easier to configure and more reliable. This benefits everyone, but especially organizations with thousands (or tens of thousands) of repositories.
+We’ve completely overhauled how repositories are mirrored from your code host. This benefits everyone, especially organizations with thousands (or tens of thousands) of repositories.
 
-Sentry joins our list of developer tool integrations, and Swift developers get better symbols definition and better code navigation.
+Also, Sentry joins our list of developer tool integrations, and Swift developers get better symbols and code navigation.
 
 Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
 
@@ -77,7 +75,7 @@ Prior to 3.3, integrating with a code host and selecting which repositories to u
 ![](/blog/old-repository-sync.png)
 
 While it was simple, it presented some problems:
-Sourcegraph would fetch and list all repositories accessible to the token which often included both an account’s private repositories, as well as the repositories from associated GitHub orgs.
+Sourcegraph would fetch and list all repositories accessible to the token which often included both an account’s private repositories, as well as the repositories from associated GitHub organizations.
 
 ### Why manual enabling and disabling was problematic
 
