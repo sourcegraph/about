@@ -4,7 +4,7 @@ title: Terms of Service for Sourcegraph.com
 permalink: terms-dotcom
 ---
 
-Last modified: March __, 2019
+Last modified: April 22, 2019
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of the applications, software, products, and services we make available at Sourcegraph.com.
 
