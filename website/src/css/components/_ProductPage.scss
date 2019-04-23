@@ -1,7 +1,9 @@
-// stylelint-disable declaration-property-unit-whitelist
-// stylelint-disable selector-class-pattern
-// stylelint-disable selector-max-id
-.home {
+.product-page {
+    &__logomark {
+        height: 32px;
+        width: 32px;
+    }
+
     &__jumbotron {
         background-color: $dark-9;
         padding: 6rem 4rem;
@@ -39,20 +41,25 @@
         text-align: left;
         border-radius: 0.5rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-
+        background-color: #000000;
+        &-text {
+            h3 {
+                margin: 1rem 0 0.5rem 0;
+            }
+            text-align: left;
+        }
         &-instructions {
-            padding: 2rem;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
+            padding: 1rem 2rem;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
         }
 
         &-command {
             padding: 1.5rem;
             background-color: $dark-11;
             color: $teal-3;
-            border-bottom-left-radius: 0.5rem;
-            border-bottom-right-radius: 0.5rem;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
             @media (max-width: $media-lg) {
                 font-size: 0.875rem;
                 margin-bottom: 1rem;
@@ -106,6 +113,11 @@
     }
 
     &__feature-block {
+        #integrations {
+            @media (max-width: $media-md) {
+                display: none;
+            }
+        }
         padding: 3rem 0;
         background: $light-12;
 
@@ -232,6 +244,15 @@
             }
         }
     }
+    &__deploy-text {
+        text-align: left;
+        padding: 2.6rem 5rem 0 0;
+        margin: 1rem 0;
+        height: 100%;
+        @media (max-width: $media-sm) {
+            padding: 1.5rem;
+        }
+    }
     &__deploy-card {
         text-align: left;
         padding: 2rem;
@@ -239,6 +260,9 @@
         background-color: #ffffff;
         margin: 1rem 0;
         height: 100%;
+        @media (max-width: $media-sm) {
+            margin: 1.5rem;
+        }
         &-hover {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }

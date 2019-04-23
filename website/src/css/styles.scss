@@ -9,6 +9,15 @@ $media-xl: 1200px;
 @import 'colors';
 @import 'prism';
 
+$brand-primary: $dark-9;
+
+$theme-colors: (
+    'dark': $dark-9,
+    'light': $light-10,
+);
+
+$jumbotron-padding: 60px;
+
 $popover-arrow-width: 0;
 $popover-arrow-color: transparent;
 $popover-arrow-outer-color: transparent;
@@ -439,6 +448,7 @@ a {
 }
 
 @import 'components/ProductPopover';
+@import 'components/ProductPage';
 @import 'components/Header';
 @import 'components/Footer';
 @import 'components/Testimonials';
