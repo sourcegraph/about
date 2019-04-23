@@ -59,126 +59,6 @@ hr {
     margin-bottom: 2rem;
 }
 
-.btn {
-    align-items: center;
-    display: flex;
-    padding: 7px 15px;
-    i {
-        margin-right: 0.25rem;
-    }
-    &-success {
-        background-color: $green-7;
-        border-color: $green-7;
-        color: $light-11;
-        &:hover {
-            background-color: $green-9;
-            border-color: $green-9;
-            color: $light-12;
-        }
-    }
-    &-info {
-        background-color: $teal-7;
-        border-color: $teal-7;
-        color: $light-11;
-        &:hover {
-            background-color: $teal-9;
-            border-color: $teal-9;
-            color: $light-12;
-        }
-    }
-    &-primary {
-        background-color: $blue-7;
-        border-color: $blue-7;
-        color: $light-11;
-        &:hover {
-            background-color: $blue-9;
-            border-color: $blue-9;
-            color: $light-12;
-        }
-    }
-    &-warning {
-        background-color: $yellow-7;
-        border-color: $yellow-7;
-        color: $light-11;
-        &:hover {
-            background-color: $yellow-9;
-            border-color: $yellow-9;
-            color: $light-12;
-        }
-    }
-    &-danger {
-        background-color: $red-7;
-        border-color: $red-7;
-        color: $light-11;
-        &:hover {
-            background-color: $red-9;
-            border-color: $red-9;
-            color: $light-12;
-        }
-    }
-    &-secondary {
-        background-color: $dark-7;
-        border-color: $dark-7;
-        color: $light-11;
-        &:hover {
-            background-color: $dark-9;
-            border-color: $dark-9;
-            color: $light-12;
-        }
-    }
-    &.cyan {
-        background-color: $cyan-7;
-        border-color: $cyan-7;
-        color: $light-11;
-        &:hover {
-            background-color: $cyan-9;
-            border-color: $cyan-9;
-            color: $light-12;
-        }
-    }
-    &.teal {
-        background-color: $teal-7;
-        border-color: $teal-7;
-        color: $light-11;
-        &:hover {
-            background-color: $teal-9;
-            border-color: $teal-9;
-            color: $light-12;
-        }
-    }
-    &.indigo {
-        background-color: $indigo-7;
-        border-color: $indigo-7;
-        color: $light-11;
-        &:hover {
-            background-color: $indigo-9;
-            border-color: $indigo-9;
-            color: $light-12;
-        }
-    }
-    &.violet {
-        background-color: $violet-7;
-        border-color: $violet-7;
-        color: $light-11;
-        &:hover {
-            background-color: $violet-9;
-            border-color: $violet-9;
-            color: $light-12;
-        }
-    }
-
-    &.grape {
-        background-color: $grape-7;
-        border-color: $grape-7;
-        color: $light-11;
-        &:hover {
-            background-color: $grape-9;
-            border-color: $grape-9;
-            color: $light-12;
-        }
-    }
-}
-
 #integrations-btns {
     &.btn-group {
         @media (max-width: $media-md) {
@@ -448,7 +328,7 @@ a {
 }
 
 @import 'components/ProductPopover';
-@import 'components/ProductPage';
+@import 'components/content/ContentPage';
 @import 'components/Header';
 @import 'components/Footer';
 @import 'components/Testimonials';

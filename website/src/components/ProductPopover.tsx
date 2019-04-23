@@ -8,7 +8,7 @@ const ProductPopoverBody: React.FunctionComponent = () => {
         <div className="p-3">
             <div className="list-group list-group-flush">
                 <Link
-                    to="/product/server"
+                    to="/product"
                     className={`product-popover-body__product-link list-group-item list-group-item-action border-0 py-3 px-2 d-flex align-items-center ${itemClassName}`}
                 >
                     <img
@@ -24,13 +24,19 @@ const ProductPopoverBody: React.FunctionComponent = () => {
             <div className="text-muted mt-3 mb-2 mx-2 font-weight-normal">Popular Sourcegraph use cases</div>
             <ul className="nav flex-column">
                 {[
-                    { text: 'Code search and navigation', to: '/product/server' },
+                    { text: 'Code search & navigation', to: '/product/code-search-navigation' },
                     { text: 'Code review', to: '/product/code-review' },
-                    { text: 'Incident response', to: '/product/incident-response' },
-                    { text: 'Code change rules & monitoring', to: '/product/asdf' },
-                    { text: 'Integrate tools into the dev workflow', to: '/product/asdf' },
-                    { text: 'Manage 100s/1000s of services and APIs', to: '/product/asdf' },
-                    { text: 'Onboard new developers faster', to: '/product/asdf' },
+                    { text: 'Code change rules & monitoring', to: '/product/code-rules-monitoring-automation' },
+                    { text: 'Incident response (SRE/DevOps)', to: '/solutions/incident-response' },
+                    {
+                        text: 'Integrate tools into the dev workflow',
+                        to: '/solutions/developer-workflow-tooling-integrations',
+                    },
+                    {
+                        text: 'Manage 100s/1000s of services & APIs',
+                        to: '/solutions/manage-services-microservices-apis',
+                    },
+                    { text: 'Onboard new developers faster', to: '/solutions/developer-onboarding' },
                 ].map(({ text, to }, i) => (
                     <li className="nav-item" key={i}>
                         <Link

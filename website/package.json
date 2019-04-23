@@ -36,7 +36,7 @@
     "react-share": "^2.1.1",
     "reactstrap": "^8.0.0",
     "rehype-react": "^3.0.2",
-    "ts-loader": "^5.2.1"
+    "ts-loader": "^5.4.3"
   },
   "keywords": [
     "gatsby"
@@ -59,17 +59,17 @@
     "@sourcegraph/tslint-config": "^13.0.0",
     "@types/bootstrap": "^4.1.0",
     "@types/lodash": "^4.14.109",
-    "@types/react": "^16.4.16",
-    "@types/react-dom": "^16.0.9",
-    "@types/react-router-dom": "^4.2.6",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.2",
     "@types/react-share": "^2.1.0",
-    "@types/reactstrap": "^5.0.25",
+    "@types/reactstrap": "^8.0.1",
     "gatsby-cli": "^2.4.3",
     "prettier": "^1.14.2",
     "sharp": "^0.22.0",
     "stylelint": "^9.2.1",
     "stylelint-scss": "^3.1.0",
     "tslint": "^5.10.0",
-    "typescript": "^3.1.2"
+    "typescript": "^3.4.4"
   }
 }

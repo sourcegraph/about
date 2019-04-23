@@ -990,10 +990,10 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-dom@^16.0.9":
-  version "16.8.3"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.3.tgz#6131b7b6158bc7ed1925a3374b88b7c00481f0cb"
-  integrity sha512-HF5hD5YR3z9Mn6kXcW1VKe4AQ04ZlZj1EdLBae61hzQ3eEWWxMgNLUbIxeZp40BnSxqY1eAYLsH9QopQcxzScA==
+"@types/react-dom@^16.8.4":
+  version "16.8.4"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.4.tgz#7fb7ba368857c7aa0f4e4511c4710ca2c5a12a88"
+  integrity sha512-eIRpEW73DCzPIMaNBDP5pPIpK1KXyZwNgfxiVagb5iGiz6da+9A5hslSX6GAQKdO7SayVCS/Fr2kjqprgAvkfA==
   dependencies:
     "@types/react" "*"
 
@@ -1004,10 +1004,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-router-dom@^4.2.6":
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.3.1.tgz#71fe2918f8f60474a891520def40a63997dafe04"
-  integrity sha512-GbztJAScOmQ/7RsQfO4cd55RuH1W4g6V1gDW3j4riLlt+8yxYLqqsiMzmyuXBLzdFmDtX/uU2Bpcm0cmudv44A==
+"@types/react-router-dom@^4.3.2":
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.3.2.tgz#52c17c3682597638f31c17c42620403dc5c2a3f5"
+  integrity sha512-biesHodFxPgDxku2m08XwPeAfUYBcxAnrQG7pwFikuA3L2e3u2OKAb+Sb16bJuU3L5CTHd+Ivap+ke4mmGsHqQ==
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
@@ -1028,7 +1028,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.4.16":
+"@types/react@*":
   version "16.8.12"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.12.tgz#ffbdd7bcd2b7037c3f78e26c708922a2befbb71f"
   integrity sha512-MZZiv11BQhsxFp5DHDmRKBi6Nv3jwOhRiFFDE7ZJ1+rb52gdOd9y/qY0+5wyV/PQVK9926wFMjpQj3BJ18pb4Q==
@@ -1036,12 +1036,21 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/reactstrap@^5.0.25":
-  version "5.0.27"
-  resolved "https://registry.yarnpkg.com/@types/reactstrap/-/reactstrap-5.0.27.tgz#0973e83ac5db1ef70aedec73b8e2c2f51f97373d"
-  integrity sha512-V0xMn5Q4njrDdCqK+MJM6v90eto7ncyfsx4milkFYMCRq97gW+B2tfJ21bd5VM2qlOw+H9a2B3yhmvwsR32Maw==
+"@types/react@^16.8.14":
+  version "16.8.14"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.14.tgz#b561bfabeb8f60d12e6d4766367e7a9ae927aa18"
+  integrity sha512-26tFVJ1omGmzIdFTFmnC5zhz1GTaqCjxgUxV4KzWvsybF42P7/j4RBn6UeO3KbHPXqKWZszMXMoI65xIWm954A==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/reactstrap@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@types/reactstrap/-/reactstrap-8.0.1.tgz#356cc359657a9f6bc84a2f689656cb8790229aaa"
+  integrity sha512-Gn3u6zAFxfBcxDxEMbyUC/A+zS8KpKNg/gKjdFLHug+sG4XOMUaychNiA5buRLeh0r3s+amsjD+xrX8gT612YA==
   dependencies:
     "@types/react" "*"
+    popper.js "^1.14.1"
 
 "@types/sizzle@*":
   version "2.3.2"
@@ -11957,10 +11966,10 @@ ts-invariant@^0.3.2:
   dependencies:
     tslib "^1.9.3"
 
-ts-loader@^5.2.1:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.3.3.tgz#8b4af042e773132d86b3c99ef0acf3b4d325f473"
-  integrity sha512-KwF1SplmOJepnoZ4eRIloH/zXL195F51skt7reEsS6jvDqzgc/YSbz9b8E07GxIUwLXdcD4ssrJu6v8CwaTafA==
+ts-loader@^5.4.3:
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.4.3.tgz#837f7f397799a665fc1774303c9fd0930d1c5947"
+  integrity sha512-pHwZFkZioL7Yi2su0bhW2/djxZ+0iGat1cxlAif4Eg9j5znVYuWGtW0YYY/5w8W+IzLcAlD5KwJDrs5unUKIRA==
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"
@@ -12075,10 +12084,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.1.2:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.1.tgz#b6691be11a881ffa9a05765a205cb7383f3b63c6"
-  integrity sha512-3NSMb2VzDQm8oBTLH6Nj55VVtUEpe/rgkIzMir0qVoLyjDZlnMBva0U6vDiV3IH+sl/Yu6oP5QwsAQtHPmDd2Q==
+typescript@^3.4.4:
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.4.tgz#aac4a08abecab8091a75f10842ffa0631818f785"
+  integrity sha512-xt5RsIRCEaf6+j9AyOBgvVuAec0i92rgCaS3S+UVf5Z/vF2Hvtsw08wtUTJqp4djwznoAgjSxeCcU4r+CcDBJA==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
