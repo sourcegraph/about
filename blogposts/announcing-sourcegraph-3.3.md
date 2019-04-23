@@ -190,7 +190,7 @@ Terraform plans for Google Cloud and Azure are being scheduled for upcoming rele
 
 ## Handle common search queries containing (unintended) invalid regexp
 
-Using [regexp in search queries](https://docs.sourcegraph.com/user/search/queries) is powerful, but problematic prior to 3.3 in cases such as searching for function call sites, e.g. `throw(`. This pattern is now treated as a literal string (as expected).
+Using [regexps in search queries](https://docs.sourcegraph.com/user/search/queries) is powerful, but sometimes you forget and just want to find matches for `open(`. Previously, this was treated as a regexp error, but now Sourcegraph does The Right Thing™ and looks for the literal match when there is no ambiguity.
 
 ## Making Sourcegraph a part of your dev tools stack
 
