@@ -21,7 +21,7 @@ Define add/exclude lists in external services instead of enabling/disabling.
 Your error and exception handling code, annotated with Sentry links.
 
 **[🔌 Bitbucket Server integration](#bitbucket-server-integration)**<br />
-Better PR code reviews on Bitbucket Server with hover tool-tips and "go to definition".
+Better PR code reviews on Bitbucket Server with hover tooltips and "go to definition".
 
 **[✔️Grant permissions on your code host](#grant-permissions-on-your-code-host)**<br />
 When using code hosts other than GitHub.com.
