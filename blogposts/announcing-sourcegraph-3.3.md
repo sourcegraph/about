@@ -155,14 +155,6 @@ Definitions are now filtered using `import` / `require` statements to reduce fal
 
 See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googleprojectzero/fuzzilli/-/blob/Sources/Fuzzilli/Configuration.swift#L64:27) or use it on your own instance for yourself or [for all users](https://docs.sourcegraph.com/admin/extensions#enable-an-extension-for-all-users):
 
-```json
-..."extensions": {
-    ...
-    "sourcegraph/swift": true
-    }
-}
-```
-
 ## Symbols for the current file
 
 The symbols sidebar is now scoped to the current file/directory you’re viewing.
