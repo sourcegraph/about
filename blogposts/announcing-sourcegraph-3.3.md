@@ -153,7 +153,7 @@ Definitions are now filtered using `import` / `require` statements to reduce fal
   <p style="text-align: center"><a href="https://vimeo.com/331859021" target="_blank">View on Vimeo</a></p>
 </p>
 
-See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googleprojectzero/fuzzilli/-/blob/Sources/Fuzzilli/Configuration.swift#L64:27) or enable it for all users on your private instance by adding it to the `extensions` object in **Site admin > global settings** (path is `/site-admin/global-settings`):
+See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googleprojectzero/fuzzilli/-/blob/Sources/Fuzzilli/Configuration.swift#L64:27) or use it on your own instance for yourself or [for all users](https://docs.sourcegraph.com/admin/extensions#enable-an-extension-for-all-users):
 
 ```json
 ..."extensions": {
