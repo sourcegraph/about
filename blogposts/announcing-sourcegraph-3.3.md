@@ -42,7 +42,7 @@ AWS and DigitalOcean deployments with TLS via self-signed certs.
 Searching for function call sites such as `open(` now work as expected.
 
 [**📣 Tips for making Sourcegraph a part of your dev tools stack**](#making-sourcegraph-a-part-of-your-dev-tools-stack)<br />
-Tips for integrating Sourcegraph and code search into your team's workflow.
+Documentation on integrating Sourcegraph and code search into your team's workflow.
 
 **[🧯 Jump to Sentry issue from your code](#jump-to-sentry-issue-from-your-code)**<br/>
 Your error and exception handling code, annotated with Sentry links.
