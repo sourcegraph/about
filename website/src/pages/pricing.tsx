@@ -33,38 +33,22 @@ export default class Pricing extends React.Component<any, any> {
                     <div className="pricing-bg" />
                     <div>
                         <div className="pricing">
-                            <ul className="nav nav-pills justify-content-center mt-5">
-                                <li className="nav-item">
-                                    <a className="nav-link active" href="#self-managed">
-                                        Self-managed
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link border rounded ml-2 bg-light" href="#sourcegraph-com">
-                                        Sourcegraph.com (cloud-hosted)
-                                    </a>
-                                </li>
-                            </ul>
-                            <div className="hero-section text-center my-4 py-4">
-                                <h2>Try Sourcegraph Ultimate risk-free for 30 days</h2>
-                                <a
-                                    className="btn btn-github"
-                                    href="/contact/sales"
-                                    onClick={this.trackContactUsButtonClicked}
-                                >
-                                    Free trial
-                                </a>
-                            </div>
                             <div className="container-fluid pricing-section">
                                 <div className="row no-gutters mt-5">
-                                    <div className="col-lg-4">
-                                        <PricingPlan // TODO!(sqs)
+                                    <div className="col-8 mx-auto mb-4 col-lg-4">
+                                        <PricingPlan
                                             className="pricing__plan"
-                                            name="Starter"
+                                            name="Core"
                                             description="Helping developers search, browse, and grok their code, for faster software development and incident response."
-                                            price="$2,950"
-                                            priceInterval="per year"
-                                            priceCaption="(20 users max)"
+                                            price="$0"
+                                            priceInterval=""
+                                            priceCaption={
+                                                <>
+                                                    for individuals
+                                                    <br />
+                                                    and small teams
+                                                </>
+                                            }
                                             features={[
                                                 { name: 'Code search', id: 'search' },
                                                 { name: 'Code navigation (definitions & references)', id: 'search' },
@@ -74,17 +58,18 @@ export default class Pricing extends React.Component<any, any> {
                                                     name: 'Single sign-on (SSO) user authentication',
                                                     id: 'admin',
                                                 },
+                                                { name: '20-user limit', id: 'admin' },
                                                 { name: 'Next-business-day support', id: 'support' },
                                             ]}
-                                            buttonLabel="Buy now"
+                                            buttonLabel="Install"
                                             buttonOnClick={this.trackBuyEnterpriseButtonClicked}
-                                            buttonHref="/contact/sales"
+                                            buttonHref="https://docs.sourcegraph.com/#quickstart"
                                         />
                                     </div>
-                                    <div className="col-lg-4">
+                                    <div className="col-8 mx-auto mb-4 col-lg-4">
                                         <PricingPlan
                                             className="pricing__plan"
-                                            name="Premium"
+                                            name="Enterprise"
                                             description="Enabling engineering and DevOps leaders to speed up the organization's software lifecycle and monitor risks."
                                             price="$19"
                                             priceCaption="(billed annually)"
@@ -105,16 +90,20 @@ export default class Pricing extends React.Component<any, any> {
                                             buttonHref="/contact/sales"
                                         />
                                     </div>
-                                    <div className="col-lg-4">
+                                    <div className="col-8 mx-auto mb-4 col-lg-4">
                                         <PricingPlan
                                             className="pricing__plan"
-                                            name="Ultimate"
+                                            name="Unlimited"
                                             description="Enabling businesses to transform the software lifecycle with automation and intelligence."
                                             price="$99"
                                             priceCaption="(billed annually)"
                                             features={[
+                                                { name: 'Free guest users', id: 'admin' },
+                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
+                                                { name: '24/7 uptime support', id: 'support' },
+                                                { name: 'Dedicated support', id: 'support' },
                                                 {
-                                                    name: 'Large-scale code modifications and automated refactoring',
+                                                    name: 'Large-scale code modifications/refactoring',
                                                     id: 'extensions',
                                                     future: true,
                                                 },
@@ -129,10 +118,6 @@ export default class Pricing extends React.Component<any, any> {
                                                     id: 'admin',
                                                     future: true,
                                                 },
-                                                { name: 'Free guest users', id: 'admin' },
-                                                { name: 'Private Sourcegraph extension registry', id: 'extensions' },
-                                                { name: '24/7 uptime support', id: 'support' },
-                                                { name: 'Dedicated support', id: 'support' },
                                                 { name: 'Audit logs', id: 'admin', future: true },
                                             ]}
                                             buttonLabel="Buy now"
@@ -140,6 +125,16 @@ export default class Pricing extends React.Component<any, any> {
                                             buttonHref="/contact/sales"
                                         />
                                     </div>
+                                </div>
+                                <div className="hero-section text-center my-4 py-4">
+                                    <h2>Try Sourcegraph Unlimited risk-free for 30 days</h2>
+                                    <a
+                                        className="btn btn-github"
+                                        href="/contact/sales"
+                                        onClick={this.trackContactUsButtonClicked}
+                                    >
+                                        Free trial
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +157,6 @@ export default class Pricing extends React.Component<any, any> {
                                     </div>
                                     <div className="col-2">
                                         <h4>Unlimited</h4>
-                                        {/* TODO!(sqs) */}
                                     </div>
                                 </div>
                                 <div className="table-section">

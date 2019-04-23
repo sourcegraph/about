@@ -1,0 +1,25 @@
+.product-popover-button {
+    &__btn {
+    }
+}
+
+.product-popover-body {
+    &__product-link,
+    &__use-case-link {
+        &:hover {
+            background-color: $light-11;
+        }
+    }
+
+    &__logomark {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__use-case-link {
+        color: $violet-9;
+        &:hover {
+            color: $violet-5;
+        }
+    }
+}

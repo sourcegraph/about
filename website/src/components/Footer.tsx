@@ -11,10 +11,12 @@ export default class Footer extends React.Component<any, any> {
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-4 col-m-4 col-lg-4 item logo__section">
-                                <img className="footer__logo" src="/sourcegraph/logo--light.svg" />
+                                <Link to="/">
+                                    <img className="footer__logo" src="/sourcegraph/logo--light.svg" />
+                                </Link>
                                 <div className="footer__contact">
                                     <p>
-                                        <a className="mail__contect" href="mailto:hi@sourcegraph.com" target="_blank">
+                                        <a href="mailto:hi@sourcegraph.com" target="_blank">
                                             hi@sourcegraph.com
                                         </a>
                                     </p>

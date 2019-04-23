@@ -1,7 +1,10 @@
 import { Link } from 'gatsby'
 import OpenInAppIcon from 'mdi-react/OpenInAppIcon'
 import * as React from 'react'
+import { Popover } from 'reactstrap'
 import { eventLogger } from '../EventLogger'
+import Dropdown from './Dropdown'
+import { ProductPopoverButton } from './ProductPopover'
 
 interface HeaderProps {
     isHome?: boolean
@@ -28,9 +31,9 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <nav className="header navbar navbar-light navbar-expand-md">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="https://sourcegraph.com/start">
+                    <Link className="navbar-brand" to="/">
                         <img src="/sourcegraph/logo.svg" alt="logo" />
-                    </a>
+                    </Link>
                     <button
                         className="navbar-toggler"
                         data-toggle="collapse"
@@ -45,6 +48,13 @@ export default class Header extends React.Component<HeaderProps, any> {
                         id="navcol-1"
                     >
                         <ul className="nav navbar-nav">
+                            <li
+                                className="header__nav-item nav-item"
+                                role="presentation"
+                                onClick={() => eventLogger.trackProductClicked('header')}
+                            >
+                                <ProductPopoverButton className="header__nav-link nav-link" />
+                            </li>
                             <li className="header__nav-item nav-item" role="presentation" onClick={this.pricingClicked}>
                                 <Link
                                     className="header__nav-link nav-link"

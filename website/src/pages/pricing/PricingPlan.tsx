@@ -12,7 +12,7 @@ interface Props {
     description: string
     price: string
     priceInterval?: string | React.ReactFragment
-    priceCaption: string
+    priceCaption?: string | React.ReactFragment
     features: PricingPlanFeature[]
     buttonLabel: string
     buttonOnClick: () => void
@@ -70,7 +70,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
                     key={i}
                     href={`#${id}`}
                     className={`list-group-item list-group-item-action bg-transparent border-0 py-1 ${
-                        future ? 'font-italic-TODO!sqsoff' : ''
+                        future ? 'font-italic' : ''
                     }`}
                 >
                     {name}

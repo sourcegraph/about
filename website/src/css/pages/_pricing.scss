@@ -1,6 +1,6 @@
 // stylelint-disable declaration-property-unit-whitelist
 .pricing-bg {
-    background: url('/bg-hero-d-sp.svg');
+    // background: url('/bg-hero-d-sp.svg');
     z-index: -1;
     background-size: cover;
     height: 100%;
@@ -12,7 +12,7 @@
 }
 .pricing {
     .hero-section {
-        box-shadow: rgba(45, 70, 115, 0.25) 0 -12px 90px 24px;
+        box-shadow: rgba(45, 70, 115, 0.15) 0 -12px 90px 24px;
         background-color: rgba(255, 255, 255, 0.8);
         @media (max-width: $media-md) {
             padding-left: 2rem;
@@ -183,7 +183,7 @@
     }
 
     &__plan {
-        min-height: 667px;
+        min-height: 714px;
     }
 }
 .list-section {

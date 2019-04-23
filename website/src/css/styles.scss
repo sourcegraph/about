@@ -8,6 +8,12 @@ $media-xl: 1200px;
 
 @import 'colors';
 @import 'prism';
+
+$popover-arrow-width: 0;
+$popover-arrow-color: transparent;
+$popover-arrow-outer-color: transparent;
+$popover-max-width: 400px;
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 // layout
@@ -253,10 +259,6 @@ hr {
     }
 }
 
-.nav-link {
-    color: $dark-7;
-}
-
 // type
 p {
     margin-bottom: 0.5rem;
@@ -307,8 +309,6 @@ h5,
 .h5 {
     font-size: 0.75rem;
     line-height: 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 h6,
@@ -431,6 +431,14 @@ a {
     }
 }
 
+.popover {
+    // Prevent a child element with non-rounded corners from extruding.
+    // overflow: hidden;
+
+    border: 0;
+}
+
+@import 'components/ProductPopover';
 @import 'components/Header';
 @import 'components/Footer';
 @import 'components/Testimonials';

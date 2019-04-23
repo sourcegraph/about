@@ -42,6 +42,11 @@ class EventLogger {
             location_on_page: loc,
         })
     }
+    public trackProductClicked(loc: any): void {
+        this.trackEvent('Pages', 'Click', null, 'ProductLinkClicked', {
+            location_on_page: loc,
+        })
+    }
     public trackPricingClicked(loc: any): void {
         this.trackEvent('Pages', 'Click', null, 'PricingLinkClicked', {
             location_on_page: loc,

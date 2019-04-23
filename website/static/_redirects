@@ -1,4 +1,3 @@
-/ https://sourcegraph.com/start 301
 /changelog https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md 301
 /blog/sourecgraph-liveblogging-at-gophercon-2018 /blog/sourcegraph-liveblogging-at-gophercon-2018 301
 /go/sourcegraph-liveblogging-at-gophercon-2018-go /blog/sourcegraph-liveblogging-at-gophercon-2018 301
@@ -62,5 +61,5 @@
 /docs/config/repositories#aws-codecommit-configuration https://docs.sourcegraph.com/integration/aws_codecommit#aws-codecommit-configuration 301
 /docs/config/repositories#github-configuration https://docs.sourcegraph.com/integration/github#syncing-github-repositories 301
 /docs/migration/oracle-opengrok-to-sourcegraph https://docs.sourcegraph.com/admin/migration/opengrok 301
-/product/server https://docs.sourcegraph.com 301
+/product/server /product 301
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301
