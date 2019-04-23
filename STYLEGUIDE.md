@@ -146,6 +146,7 @@ For consistency, all examples should use the following names (as appropriate).
 - Prefer "go to definition" (not "jump to definition", "jump-to-def", or "j2d")
 - Prefer regexp ("not regex" or "regular expressions")
 - Prefer "call site" (not "callsite")
+- Prefer "tooltips" (not "tool-tips")
 
 ### "Contact us" Language
 
