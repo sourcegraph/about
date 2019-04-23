@@ -126,7 +126,7 @@ Additional languages will be added as part of each new release and if you want a
   <p style="text-align: center"><a href="https://vimeo.com/331821650" target="_blank">View on Vimeo</a></p>
 </p>
 
-Get IDE-like features on your next pull request review inline on Bitbucket Server by installing the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension), then enabling it for your Bitbucket Server URL.
+Get IDE-like features on your next pull request review inline on Bitbucket Server by installing the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension), then granting permissions for your Bitbucket Server domain.
 
 ## Grant permissions on your code host
 
