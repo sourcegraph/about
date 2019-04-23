@@ -58,7 +58,7 @@ export default class Pricing extends React.Component<any, any> {
                             <div className="container-fluid pricing-section">
                                 <div className="row no-gutters mt-5">
                                     <div className="col-lg-4">
-                                        <PricingPlan
+                                        <PricingPlan // TODO!(sqs)
                                             className="pricing__plan"
                                             name="Starter"
                                             description="Helping developers search, browse, and grok their code, for faster software development and incident response."
