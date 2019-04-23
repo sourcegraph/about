@@ -18,7 +18,7 @@ We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navi
 Define add/exclude lists in external services instead of enabling/disabling.
 
 **[🧯 Jump to Sentry issue from your code](#new-sentry-integration-with-the-sentry-sourcegraph-extension)**<br/>
-Error and exception handling code, annotated with Sentry links.
+Your error and exception handling code, annotated with Sentry links.
 
 **[🔌 Bitbucket Server integration](#bitbucket-server-integration)**<br />
 Better PR code reviews on Bitbucket Server with hover tool-tips and "go to definition".
