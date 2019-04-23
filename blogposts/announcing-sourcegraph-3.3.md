@@ -17,9 +17,6 @@ We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navi
 [**🛠️ Config-based repository selection**](#config-based-repository-selection)<br />
 Define add/exclude lists in external services instead of enabling/disabling.
 
-**[🧯 Jump to Sentry issue from your code](#new-sentry-integration-with-the-sentry-sourcegraph-extension)**<br/>
-Your error and exception handling code, annotated with Sentry links.
-
 **[🔌 Bitbucket Server integration](#bitbucket-server-integration)**<br />
 Better PR code reviews on Bitbucket Server with hover tooltips and "go to definition".
 
@@ -46,6 +43,9 @@ Searching for function call sites such as `open(` now work as expected.
 
 [**📣 Tips for making Sourcegraph a part of your dev tools stack**](#making-sourcegraph-a-part-of-your-dev-tools-stack)<br />
 Documentation on integrating Sourcegraph and code search into your team's workflow.
+
+**[🧯 Jump to Sentry issue from your code](#jump-to-sentry-issue-from-your-code)**<br/>
+Your error and exception handling code, annotated with Sentry links.
 
 [**📝 Changelog**](#330-changelog)<br />
 Every detail that changed in this release
@@ -93,29 +93,6 @@ For example, here are the fields for repository selection for the GitHub externa
 The [GitLab](https://github.com/sourcegraph/sourcegraph/blob/master/schema/gitlab.schema.json#L38-L91) and [Bitbucket Server](https://github.com/sourcegraph/sourcegraph/blob/master/schema/bitbucket_server.schema.json#L68-L113) fields for repository selection are similar to [GitHub](https://github.com/sourcegraph/sourcegraph/blob/master/schema/github.schema.json#L38-L75), but differ based on the search and selection options in the code host's API.
 
 This has been implemented for [GitHub](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab#repository-syncing) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server#repository-syncing) with additional code hosts being migrated to this model in 3.4.
-
-## Jump to Sentry issue from your code
-
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/331346276?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/331346276" target="_blank">View on Vimeo</a></p>
-</p>
-
-[Sentry](https://sentry.io/) is an [open-source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly. When browsing code on Sourcegraph or your code host, wouldn’t it be great if you could jump straight to the Sentry records page whenever you see error handling code instead of manually navigating around Sentry?
-
-The new [Sentry Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/sourcegraph-sentry) does just that and runs anywhere that Sourcegraph does, such as code views on GitHub/GitLab with the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
-
-The initial version of the extension provides support for the most popular languages:
-
-- Go
-- Python
-- Java
-- JavaScript
-- TypeScript
-
-Additional languages will be added as part of each new release and if you want a particular language added, create an issue for the [sourcegraph-sentry repository](https://github.com/sourcegraph/sentry/issues).
 
 ## Bitbucket Server integration
 
@@ -202,6 +179,29 @@ If a code search tool already exists such as Hound or OpenGrok, our code search 
 
 [**3. See how our customers use Sourcegraph**](https://docs.sourcegraph.com/user/tour)<br />
 See examples of how developers at companies such as Uber, Lyft, and Yelp depend on Sourcegraph every day.
+
+## Jump to Sentry issue from your code
+
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/331346276?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/331346276" target="_blank">View on Vimeo</a></p>
+</p>
+
+[Sentry](https://sentry.io/) is an [open-source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly. When browsing code on Sourcegraph or your code host, wouldn’t it be great if you could jump straight to the Sentry records page whenever you see error handling code instead of manually navigating around Sentry?
+
+The new [Sentry Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/sourcegraph-sentry) does just that and runs anywhere that Sourcegraph does, such as code views on GitHub/GitLab with the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
+
+The initial version of the extension provides support for the most popular languages:
+
+- Go
+- Python
+- Java
+- JavaScript
+- TypeScript
+
+Additional languages will be added as part of each new release and if you want a particular language added, create an issue for the [sourcegraph-sentry repository](https://github.com/sourcegraph/sentry/issues).
 
 ## 3.3.0 Changelog
 
