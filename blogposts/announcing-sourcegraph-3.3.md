@@ -42,7 +42,7 @@ AWS and DigitalOcean deployments with TLS via self-signed certs.
 -->
 
 [**🔎 Handle common search queries containing (unintended) invalid regexp**](#handle-common-search-queries-containing-unintended-invalid-regexp)<br />
-Searching for function call sites e.g. `throw(` now work as expected.
+Searching for function call sites such as `open(` now work as expected.
 
 [**📣 Making Sourcegraph a part of your dev tools stack**](#making-sourcegraph-a-part-of-your-dev-tools-stack)<br />
 Tips for integrating Sourcegraph and code search into your team's workflow.
