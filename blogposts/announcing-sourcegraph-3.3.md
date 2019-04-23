@@ -51,7 +51,7 @@ Tips for integrating Sourcegraph and code search into your team's workflow.
 Every detail that changed in this release
 
 [**🎖️ Thank you**](#thank-you)<br />
-Sourcegraph couldn’t be what it is without the community
+Sourcegraph couldn’t be what it is without the community.
 
 </div>
 
