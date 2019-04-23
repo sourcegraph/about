@@ -27,7 +27,7 @@ Better PR code reviews on Bitbucket Server with hover tooltips and "go to defini
 When using code hosts other than GitHub.com.
 
 [**🧭 "Go to definition" using dependency graph**](#go-to-definition-using-dependency-graph)<br />
-`import` / `require` statements used to help find the right definition.
+`import` / `require` statements are used to help find the right definition.
 
 [**🦅 Swift code navigation**](#swift-code-navigation)<br />
 Fly around Swift code on Sourcegraph.com or your code host.
