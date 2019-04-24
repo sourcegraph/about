@@ -63,3 +63,4 @@
 /docs/migration/oracle-opengrok-to-sourcegraph https://docs.sourcegraph.com/admin/migration/opengrok 301
 /product/server /product 301
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301
+/blog/github-universe-liveblog-innersource-and-reaping-the-benefits-of-open-source-behind-your-firewall /github-universe-liveblog-innersource 301

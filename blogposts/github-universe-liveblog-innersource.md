@@ -5,7 +5,7 @@ publishDate: 2016-09-14T22:22-07:00
 tags: [
   "blog"
 ]
-slug: github-universe-liveblog-innersource-and-reaping-the-benefits-of-open-source-behind-your-firewall
+slug: github-universe-liveblog-innersource
 heroImage: //images.ctfassets.net/le3mxztn6yoo/3fg8DZm2jCgma0GoK8M6kM/fcb7325505954579a80ae76b1f5d5798/1_OIAqPdJH9_SsxxfzTDu0SA.jpeg
 published: true
 ---
