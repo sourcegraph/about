@@ -11,6 +11,7 @@ import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
+import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from '../../components/ProductPopover'
 import { ServerVersionNumber } from '../../components/ServerVersionNumber'
 import { eventLogger } from '../../EventLogger'
 
@@ -200,6 +201,41 @@ export default ((props: any) => {
                             analysis, etc.)
                         </li>
                     </ul>
+                </ContentSection>
+                <hr />
+                <ContentSection>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <h4>Key Sourcegraph features:</h4>
+                            <ul className="nav flex-column">
+                                {PRODUCT_FEATURES.map(({ text, to }, i) => (
+                                    <li key={i} className="nav-item">
+                                        <Link
+                                            className="nav-link d-inline-block btn btn-outline-primary mr-2 mb-2"
+                                            to={to}
+                                        >
+                                            {text}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="col-md-6">
+                            <h4>Popular Sourcegraph use cases:</h4>
+                            <ul className="nav flex-column">
+                                {PRODUCT_USE_CASES.map(({ text, to }, i) => (
+                                    <li key={i} className="nav-item">
+                                        <Link
+                                            className="nav-link d-inline-block btn btn-outline-primary mr-2 mb-2"
+                                            to={to}
+                                        >
+                                            {text}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </ContentSection>
                 <Jumbotron
                     color="purple"

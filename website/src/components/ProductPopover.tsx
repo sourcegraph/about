@@ -2,6 +2,30 @@ import { Link } from 'gatsby'
 import React, { useLayoutEffect, useRef, useState } from 'react'
 import { Popover } from 'reactstrap'
 
+interface ProductFeatureOrUseCase {
+    text: string
+    to: string
+}
+
+export const PRODUCT_FEATURES: ProductFeatureOrUseCase[] = [
+    { text: 'Code search & navigation', to: '/product/code-search-navigation' },
+    { text: 'Code review', to: '/product/code-review' },
+    { text: 'Code change rules & monitoring', to: '/product/code-rules-monitoring-automation' },
+]
+
+export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
+    { text: 'Incident response (SRE/DevOps)', to: '/solutions/incident-response' },
+    {
+        text: 'Integrate tools into the dev workflow',
+        to: '/solutions/developer-workflow-tooling-integrations',
+    },
+    {
+        text: 'Manage 100s/1000s of services & APIs',
+        to: '/solutions/manage-services-microservices-apis',
+    },
+    { text: 'Onboard new developers faster', to: '/solutions/developer-onboarding' },
+]
+
 const ProductPopoverBody: React.FunctionComponent = () => {
     const itemClassName = 'rounded'
     return (
@@ -23,21 +47,7 @@ const ProductPopoverBody: React.FunctionComponent = () => {
             </div>
             <div className="text-muted mt-3 mb-2 mx-2 font-weight-normal">Popular Sourcegraph use cases</div>
             <ul className="nav flex-column">
-                {[
-                    { text: 'Code search & navigation', to: '/product/code-search-navigation' },
-                    { text: 'Code review', to: '/product/code-review' },
-                    { text: 'Code change rules & monitoring', to: '/product/code-rules-monitoring-automation' },
-                    { text: 'Incident response (SRE/DevOps)', to: '/solutions/incident-response' },
-                    {
-                        text: 'Integrate tools into the dev workflow',
-                        to: '/solutions/developer-workflow-tooling-integrations',
-                    },
-                    {
-                        text: 'Manage 100s/1000s of services & APIs',
-                        to: '/solutions/manage-services-microservices-apis',
-                    },
-                    { text: 'Onboard new developers faster', to: '/solutions/developer-onboarding' },
-                ].map(({ text, to }, i) => (
+                {[...PRODUCT_FEATURES, ...PRODUCT_USE_CASES].map(({ text, to }, i) => (
                     <li className="nav-item" key={i}>
                         <Link
                             to={to}
