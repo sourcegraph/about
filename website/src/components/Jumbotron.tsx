@@ -2,6 +2,7 @@ import React from 'react'
 
 const COLORS = {
     dark: 'bg-dark text-light',
+    purple: 'bg-purple text-light',
 }
 
 export const Jumbotron: React.FunctionComponent<{
