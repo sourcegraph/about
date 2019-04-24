@@ -8,7 +8,7 @@ interface LayoutProps {
     location: {
         pathname: string
     }
-    children: JSX.Element
+    children: React.ReactNode
 }
 
 export default class Layout extends React.PureComponent<LayoutProps> {

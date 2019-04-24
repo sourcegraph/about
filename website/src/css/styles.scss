@@ -1,10 +1,18 @@
 // stylelint-disable declaration-property-unit-whitelist
 // stylelint-disable selector-max-id
 
-$media-sm: 576px;
-$media-md: 768px;
-$media-lg: 992px;
-$media-xl: 1200px;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+);
 
 @import 'colors';
 @import 'prism';
@@ -15,8 +23,6 @@ $theme-colors: (
     'dark': $dark-9,
     'light': $light-10,
 );
-
-$jumbotron-padding: 60px;
 
 $popover-arrow-width: 0;
 $popover-arrow-color: transparent;
@@ -59,52 +65,11 @@ hr {
     margin-bottom: 2rem;
 }
 
-#integrations-btns {
-    &.btn-group {
-        @media (max-width: $media-md) {
-            flex-direction: column;
-        }
-    }
-    .btn-outline-primary {
-        padding: 0.5rem 1rem;
-        color: $dark-7;
-        background-color: transparent;
-        border-color: $light-10;
-        @media (max-width: $media-sm) {
-            width: 100%;
-        }
-        &:hover {
-            background-color: $light-11;
-            color: $dark-11;
-        }
-        img {
-            height: 2.5rem;
-            margin: auto;
-            margin-right: 0.5rem;
-            padding: 0;
-            width: auto;
-            border-radius: 0;
-        }
-    }
-}
-
-.jumbotron {
-    padding: 3rem;
-    margin-bottom: 0;
-    @media (max-width: $media-md) {
-        padding: 2rem 1rem;
-    }
-}
-
 //utilities
 
 .bg-sprinkles {
     background: url('/c-sprinkles.png') no-repeat;
     background-size: cover;
-    @media screen and (max-width: $media-md) {
-        background: url('/c-sprinkles-blur.png') no-repeat;
-        background-size: 220%;
-    }
 
     background-color: $dark-10;
 }
@@ -128,11 +93,6 @@ hr {
 
 .fill-height {
     flex: 1 0 auto;
-}
-
-.container-fluid {
-    padding-right: 1rem;
-    padding-left: 1rem;
 }
 
 .material-icons {
@@ -298,28 +258,6 @@ a {
     }
 }
 
-// Utilities
-.d-sm-n {
-    @media screen and (max-width: $media-sm) {
-        display: none;
-    }
-}
-.d-md-n {
-    @media (min-width: $media-sm) and (max-width: $media-md) {
-        display: none;
-    }
-}
-.d-lg-n {
-    @media (min-width: $media-md) and (max-width: $media-lg) {
-        display: none;
-    }
-}
-.d-xl-n {
-    @media (min-width: $media-xl) {
-        display: none;
-    }
-}
-
 .popover {
     // Prevent a child element with non-rounded corners from extruding.
     // overflow: hidden;
@@ -329,6 +267,7 @@ a {
 
 @import 'components/ProductPopover';
 @import 'components/content/ContentPage';
+@import 'components/content/ContentSection';
 @import 'components/Header';
 @import 'components/Footer';
 @import 'components/Testimonials';

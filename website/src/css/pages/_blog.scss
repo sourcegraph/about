@@ -16,9 +16,6 @@
                 background-color: $light-11;
                 transition: background-color 0.25s ease-in;
             }
-            @media (max-width: $media-md) {
-                padding: 2rem;
-            }
         }
 
         &--post {
@@ -29,30 +26,14 @@
 
             width: 100%;
 
-            @media (max-width: $media-md) {
-                grid-template-columns: 100%;
-                grid-template-rows: min-content(50%) 50%;
-                grid-row-gap: 2rem;
-            }
-
             &-image {
                 grid-column-start: 2;
                 grid-row-start: 1;
-
-                @media (max-width: $media-md) {
-                    grid-row-start: 1;
-                    grid-column-start: 1;
-                }
             }
 
             &-text {
                 grid-column-start: 3;
                 grid-row-start: 1;
-
-                @media (max-width: $media-md) {
-                    grid-row-start: 2;
-                    grid-column-start: 1;
-                }
             }
 
             &-excerpt {

@@ -5,15 +5,9 @@
     &__jumbotron {
         background-color: $dark-9;
         padding: 6rem 4rem;
-        @media (max-width: $media-md) {
-            padding: 3rem 1rem;
-        }
         margin-bottom: 0;
         &--btn {
             margin: 0 0.5rem;
-            @media (max-width: $media-md) {
-                margin-bottom: 0.5rem;
-            }
         }
         h1,
         h2,
@@ -53,15 +47,6 @@
             color: $teal-3;
             border-bottom-left-radius: 0.5rem;
             border-bottom-right-radius: 0.5rem;
-            @media (max-width: $media-lg) {
-                font-size: 0.875rem;
-                margin-bottom: 1rem;
-            }
-            @media (max-width: $media-md) {
-                padding: 1.25rem;
-                font-size: 0.5rem;
-                margin-bottom: 1rem;
-            }
         }
     }
 
@@ -79,10 +64,6 @@
             flex-direction: column;
             align-items: center;
             margin: 0 1rem;
-            @media (max-width: $media-md) {
-                margin: 0 0.875rem;
-                padding: 1rem 0;
-            }
         }
 
         .material-icons {
@@ -115,10 +96,6 @@
 
         &--btn-link {
             margin-top: 1.5rem;
-            @media (max-width: $media-md) {
-                margin-top: 0;
-                padding-left: 0;
-            }
         }
 
         &--gatsby-image-outer-wrapper {
@@ -147,9 +124,6 @@
             padding: 0.3rem;
             border-radius: 50%;
             display: inline-block;
-            @media (max-width: $media-md) {
-                margin-top: 1rem;
-            }
             .material-icons {
                 height: 24px;
                 width: 24px;
@@ -189,9 +163,6 @@
             border-radius: 50%;
             display: inline-block;
             margin-bottom: 1rem;
-            @media (max-width: $media-md) {
-                margin-top: 1rem;
-            }
             .material-icons {
                 height: 32px;
                 width: 32px;
@@ -222,14 +193,6 @@
 
         &-extra-row {
             padding-top: 4rem;
-            @media (max-width: $media-sm) {
-                flex-direction: column;
-            }
-            &-col {
-                @media (max-width: $media-sm) {
-                    flex-basis: auto;
-                }
-            }
         }
     }
     &__deploy-card {
@@ -327,9 +290,6 @@
             &:first-child {
                 padding-top: 0;
             }
-            @media (max-width: $media-sm) {
-                padding-top: 2rem;
-            }
         }
     }
 
@@ -349,9 +309,6 @@
             margin: 0 1rem 1rem 0;
             &:first-child {
                 padding-top: 0;
-            }
-            @media (max-width: $media-sm) {
-                padding-top: 2rem;
             }
         }
     }

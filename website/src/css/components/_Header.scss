@@ -22,9 +22,7 @@
         color: $dark-7 !important;
         padding: 0.25rem 0 !important;
         &-active {
-            @media (min-width: $media-md) {
-                border-bottom: 0.125rem solid $blue-7;
-            }
+            border-bottom: 0.125rem solid $blue-7;
         }
 
         &:hover {

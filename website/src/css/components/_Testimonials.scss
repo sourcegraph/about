@@ -3,10 +3,6 @@
     padding: 2rem 0;
     .twitter-tweet {
         margin: 0 2rem;
-        @media (max-width: $media-lg) {
-            flex-direction: column;
-            margin: auto;
-        }
     }
     .carousel-inner {
         padding: 0 1rem 0 1rem;
@@ -38,9 +34,4 @@
 .carousel-item-container {
     min-height: 245px;
     padding: 0 2rem;
-    @media (max-width: $media-lg) {
-        flex-direction: column;
-        min-height: 660px;
-        margin: auto;
-    }
 }

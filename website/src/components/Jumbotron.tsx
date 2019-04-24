@@ -14,7 +14,7 @@ export const Jumbotron: React.FunctionComponent<{
 }> = ({ className = '', color = 'dark', title, description, children }) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
         <div className="container text-center">
-            <img style={{ width: '32px', height: '32px' }} src="/sourcegraph/sourcegraph-mark.svg" />
+            <img className="mb-1" style={{ width: '32px', height: '32px' }} src="/sourcegraph/sourcegraph-mark.svg" />
             <h1>{title}</h1>
             {description && <p className="mb-4">{description}</p>}
             {children}

@@ -9,10 +9,6 @@
     padding: 15% 4rem 25% 4rem;
     background: url('/c-sprinkles-blank.svg');
     background-size: cover;
-    @media screen and (max-width: $media-md) {
-        background: #ffffff;
-        background-size: 220%;
-    }
 
     // background-color: $dark-10;
 

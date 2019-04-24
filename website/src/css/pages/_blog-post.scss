@@ -59,24 +59,4 @@
             margin: 0.5rem 0;
         }
     }
-
-    @media (max-width: $media-lg) {
-        width: 692px;
-        &__wrapper {
-            width: 83.3333%;
-        }
-    }
-
-    @media (max-width: $media-md) {
-        width: 87.5%;
-    }
-
-    @media (max-width: $media-sm) {
-        width: 100%;
-        &__title {
-            h1 {
-                font-size: 28px;
-            }
-        }
-    }
 }
