@@ -5,7 +5,7 @@ publishDate: 2016-05-30T00:00-07:00
 tags: [
   "blog"
 ]
-slug: google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go
+slug: google-i-o-talk-building-sourcegraph
 heroImage: //images.ctfassets.net/le3mxztn6yoo/3ayCsUlsBiAM2wsu0Ioc6M/93ceb6323af51a6c0eb49d1e2c8422ae/0_DJYjK6JTlwcaMvH4.png
 published: true
 ---
