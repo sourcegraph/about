@@ -2,6 +2,28 @@
 // stylelint-disable selector-class-pattern
 // stylelint-disable selector-max-id
 .home {
+    &__jumbotron-intro {
+        h1 {
+            font-size: 3.5rem;
+            line-height: normal;
+        }
+
+        background-color: $dark-9;
+
+        padding: 0;
+        &-fade {
+            background: linear-gradient(
+                to right,
+                transparent 0%,
+                rgba($dark-9, 0.95) 25%,
+                $dark-9 50%,
+                rgba($dark-9, 0.95) 75%,
+                transparent 100%
+            );
+            padding: 6rem 4rem;
+        }
+    }
+
     &__jumbotron {
         background-color: $dark-9;
         padding: 6rem 4rem;
@@ -52,220 +74,6 @@
 
     &__col-right {
         min-width: 50%;
-    }
-
-    &__features-nav {
-        padding: 2rem 0;
-        background: $light-12;
-        justify-content: center;
-
-        &-link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 1rem;
-        }
-
-        .material-icons {
-            font-size: 32px;
-        }
-        &--code-search:hover {
-            color: $teal-7;
-        }
-        &--code-intelligence:hover {
-            color: $cyan-7;
-        }
-        &--saved-searches:hover {
-            color: $blue-7;
-        }
-        &--integrations:hover {
-            color: $indigo-7;
-        }
-        &--data-center:hover {
-            color: $violet-7;
-        }
-    }
-
-    &__feature-block {
-        padding: 3rem 0;
-        background: $light-12;
-
-        &--btn {
-            margin-top: 1.5rem;
-        }
-
-        &--btn-link {
-            margin-top: 1.5rem;
-        }
-
-        &--gatsby-image-outer-wrapper {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        &--gatsby-image-inner-wrapper {
-            position: absolute;
-            width: 100%;
-        }
-
-        &--border-bottom {
-            border-color: $light-10;
-        }
-
-        &-small {
-            margin-top: 0.5rem;
-        }
-
-        &-small-icon {
-            width: 34px;
-            height: 34px;
-            padding: 0.3rem;
-            border-radius: 50%;
-            display: inline-block;
-            .material-icons {
-                height: 24px;
-                width: 24px;
-                margin-right: 0;
-            }
-            .icon-flipped {
-                -o-transform: scaleX(-1);
-                -moz-transform: scaleX(-1);
-                -webkit-transform: scaleX(-1);
-                -ms-transform: scaleX(-1);
-                transform: scaleX(-1);
-            }
-            &-code-intel {
-                color: $cyan-3;
-                background: linear-gradient(180deg, $cyan-0 0%, $cyan-1 100%);
-            }
-            &-code-search {
-                color: $teal-3;
-                background: linear-gradient(180deg, $teal-0 0%, $teal-1 100%);
-            }
-            &-saved-searches {
-                color: $blue-3;
-                background: linear-gradient(180deg, $blue-0 0%, $blue-1 100%);
-            }
-            &-integrations {
-                color: $indigo-3;
-                background: linear-gradient(180deg, $indigo-0 0%, $indigo-1 100%);
-            }
-            &-deployment-options {
-                color: $violet-3;
-                background: linear-gradient(180deg, $violet-0 0%, $violet-1 100%);
-            }
-        }
-
-        &-big-icon {
-            padding: 1rem 1rem 10px 1rem;
-            border-radius: 50%;
-            display: inline-block;
-            margin-bottom: 1rem;
-            .material-icons {
-                height: 32px;
-                width: 32px;
-                margin-right: 0;
-            }
-
-            &-code-intel {
-                color: $cyan-3;
-                background: linear-gradient(180deg, $cyan-0 0%, $cyan-1 100%);
-            }
-            &-code-search {
-                color: $teal-3;
-                background: linear-gradient(180deg, $teal-0 0%, $teal-1 100%);
-            }
-            &-saved-searches {
-                color: $blue-3;
-                background: linear-gradient(180deg, $blue-0 0%, $blue-1 100%);
-            }
-            &-integrations {
-                color: $indigo-3;
-                background: linear-gradient(180deg, $indigo-0 0%, $indigo-1 100%);
-            }
-            &-deployment-options {
-                color: $violet-3;
-                background: linear-gradient(180deg, $violet-0 0%, $violet-1 100%);
-            }
-        }
-
-        &-extra-row {
-            padding-top: 4rem;
-        }
-    }
-    &__deploy-card {
-        text-align: left;
-        padding: 2rem;
-        border-radius: 8px;
-        background-color: #ffffff;
-        margin: 1rem 0;
-        height: 100%;
-        &-hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .d-flex .material-icons {
-            margin-bottom: 0.5rem;
-            font-size: 32px;
-        }
-        &-btn {
-            margin-left: 2.5rem;
-        }
-        &-small {
-            margin-top: 0.5rem;
-            margin-left: 2.5rem;
-        }
-
-        &-detail {
-            padding: 1rem 0 1rem 0;
-            display: flex;
-            .icon {
-                width: 36px;
-                height: 100%;
-                margin-right: 12px;
-            }
-            .copy {
-                height: 100%;
-                margin-right: 12px;
-            }
-            .search-icon {
-                margin-top: 6px;
-                width: 32px;
-                height: 32px;
-                margin-bottom: 0;
-                background: url('/c-search-icon.png');
-                background-size: cover;
-                display: inline-block;
-            }
-            .dc-icon {
-                margin-top: 5px;
-                width: 32px;
-                height: 32px;
-                margin-bottom: 0;
-                background: url('/c-dc-icon.png');
-                background-size: cover;
-                display: inline-block;
-            }
-            .ci-icon {
-                margin-top: 5px;
-                width: 32px;
-                height: 32px;
-                margin-bottom: 0;
-                background: url('/c-ci-icon.png');
-                background-size: cover;
-                display: inline-block;
-            }
-            .int-icon {
-                margin-top: 5px;
-                width: 32px;
-                height: 32px;
-                margin-bottom: 0;
-                background: url('/c-int-icon.png');
-                background-size: cover;
-                display: inline-block;
-            }
-        }
     }
 
     // customer logos

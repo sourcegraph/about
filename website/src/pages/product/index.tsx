@@ -11,26 +11,26 @@ import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
+import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { ProductFeatures } from '../../components/product/ProductFeatures'
 import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from '../../components/ProductPopover'
 import { ServerVersionNumber } from '../../components/ServerVersionNumber'
+import { RequestADemoAction } from '../../css/components/actions/RequestADemoAction'
+import { StartAFreeTrialAction } from '../../css/components/actions/StartAFreeTrialAction'
 import { eventLogger } from '../../EventLogger'
 
 export default ((props: any) => {
     const actions = (
         <div>
-            <a className="btn btn-light btn-lg mr-2" href="https://docs.sourcegraph.com/#quickstart">
-                Start a free trial
-            </a>
-            <Link className="btn btn-primary btn-lg mr-2" to="/contact/sales">
-                Request a demo
-            </Link>
+            <StartAFreeTrialAction className="mr-2" />
+            <RequestADemoAction />
         </div>
     )
     return (
         <Layout location={props.location}>
             <ContentPage
                 title="Sourcegraph: Code intelligence platform"
-                description="A single platform for developers and DevOps to speed up the entire software development cycle: search, navigation, review, verification, and automation. Integrates with your code host and other favorite tools."
+                description="A single platform for developers and DevOps to speed up the entire software development cycle, with code search, navigation, review, verification, and automation. Integrates with your code host and other favorite tools."
                 mainActions={actions}
             >
                 <ContentSection>
@@ -202,6 +202,12 @@ export default ((props: any) => {
                         </li>
                     </ul>
                 </ContentSection>
+                <hr />
+                <h2 className="text-center my-5">Sourcegraph is the #1 code intelligence platform.</h2>
+                <div className="border rounded w-75 mx-auto py-4">
+                    <CustomerLogosSection />
+                </div>
+                <ProductFeatures />
                 <hr />
                 <ContentSection>
                     <div className="row">
