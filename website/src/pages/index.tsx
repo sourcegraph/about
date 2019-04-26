@@ -1,22 +1,16 @@
 import { Link } from 'gatsby'
-import ChatIcon from 'mdi-react/ChatIcon'
-import MagnifyIcon from 'mdi-react/MagnifyIcon'
-import OpenInAppIcon from 'mdi-react/OpenInAppIcon'
-import ReplyIcon from 'mdi-react/ReplyIcon'
-import ServerIcon from 'mdi-react/ServerIcon'
-import SyncIcon from 'mdi-react/SyncIcon'
-import WebIcon from 'mdi-react/WebIcon'
 import * as React from 'react'
 import { BrowserInstallButtons, CHROME_STORE_URL, FIREFOX_STORE_URL } from '../components/BrowserInstallButtons'
 import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
+import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
+import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductFeatures } from '../components/product/ProductFeatures'
 import Testimonials from '../components/Testimonials'
 import { RequestADemoAction } from '../css/components/actions/RequestADemoAction'
 import { StartAFreeTrialAction } from '../css/components/actions/StartAFreeTrialAction'
 import { eventLogger } from '../EventLogger'
-import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 
 export default class Index extends React.Component<any, any> {
     public render(): JSX.Element | null {
@@ -34,11 +28,31 @@ export default class Index extends React.Component<any, any> {
                         <div className="home__jumbotron-intro-fade">
                             <div className="container">
                                 <div className="row text-center justify-content-center">
-                                    <h1>The&nbsp;#1 Code&nbsp;Intelligence Platform</h1>
+                                    <h1>The new standard for developer infrastructure</h1>
                                     <p className="col-md-9">
-                                        Speed up the entire software development cycle with code search, navigation,
-                                        review, verification, and automation. Integrates with your code host and other
-                                        favorite tools.
+                                        Google and Facebook have invested $100Ms in internal developer infrastructure
+                                        for code search, code review, and automation to ship software faster. We provide
+                                        these capabilities to every team so they can operate at elite levels of
+                                        productivity and quality.
+                                    </p>
+                                    <p className="col-md-9 d-none">
+                                        Sourcegraph We provide every code search, code review, and automation to ship
+                                        software faster. We platforms to build software at scale. Sourcegraph is the
+                                        best platform for building software at scale.
+                                        {/*software development cycle  Speed up the software development
+                                        cycle. developers, DevOps teams, and engineering leaders developer
+                                        infrastructure that connects teams, code, and tools. Developers and DevOps teams
+                                        get Turns your code into a structured, searchable knowledge base where
+                                        developers and DevOps teams find answers. | Speed up the software development
+                                        cycle. With Sourcegraph, your organization's code becomes a searchable,
+                                        shareable asset for developers, DevOps teams, and engineering leaders.*/}
+                                    </p>
+                                    <p className="col-md-9 d-none">
+                                        Sourcegraph is how companies reach elite development. Where elite development
+                                        happens. With Sourcegraph, your organization's developers, DevOps teams, and
+                                        engineering leaders can search, share, reuse, and review code. Developer
+                                        experience Your organization's code is With Sourcegraph, your code makes your
+                                        code useful and valuable
                                     </p>
                                     {actions}
                                 </div>
@@ -47,9 +61,11 @@ export default class Index extends React.Component<any, any> {
                     </div>
                     <CustomerLogosSection />
                     <hr />
+                    <IntegratesWithSection />
+                    <hr />
                     <ContentSection>
                         <div className="text-center mb-5">
-                            <h3>See how code intelligence speeds up the entire software development cycle:</h3>
+                            <h3>See how code intelligence speeds up the software development cycle:</h3>
                         </div>
                         <div
                             style={{ backgroundColor: '#efefef', width: '100%', height: '350px', margin: '0 auto' }}
@@ -58,6 +74,7 @@ export default class Index extends React.Component<any, any> {
                             (DEMO VIDEO)
                         </div>
                     </ContentSection>
+                    <hr />
                     <ContentSection>
                         <h2 className="mt-4">The only enterprise solution</h2>
                         <p>

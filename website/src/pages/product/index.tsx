@@ -30,7 +30,7 @@ export default ((props: any) => {
         <Layout location={props.location}>
             <ContentPage
                 title="Sourcegraph: Code intelligence platform"
-                description="A single platform for developers and DevOps to speed up the entire software development cycle, with code search, navigation, review, verification, and automation. Integrates with your code host and other favorite tools."
+                description="A single platform for developers and DevOps to speed up the software development cycle, with code search, navigation, review, verification, and automation. Integrates with your code host and other favorite tools."
                 mainActions={actions}
             >
                 <ContentSection>
