@@ -8,7 +8,7 @@ import { CustomerLogosSection } from '../components/product/CustomerLogosSection
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductFeatures } from '../components/product/ProductFeatures'
 import Testimonials from '../components/Testimonials'
-import { ContactSupportAction } from '../css/components/actions/ContactSupportAction'
+import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetStartedAction } from '../css/components/actions/GetStartedAction'
 import { RequestADemoAction } from '../css/components/actions/RequestADemoAction'
 import { StartAFreeTrialAction } from '../css/components/actions/StartAFreeTrialAction'
@@ -20,7 +20,7 @@ export default class Index extends React.Component<any, any> {
         const actions = (
             <div className="mt-2">
                 <GetStartedAction showEmailInput={true} className="mt-4" />
-                <ContactSupportAction className="mt-3" />
+                <ContactPresalesSupportAction className="mt-3" />
                 <ViewDeveloperDocumentationAction className="mt-1" />
             </div>
         )
@@ -30,10 +30,10 @@ export default class Index extends React.Component<any, any> {
                 <div className="home">
                     <div className="home__intro container">
                         <div className="row">
-                            <div className="col-lg-6 mb-5 mb-lg-0">
-                                <h1 className="home__intro-header">The new standard developer platform</h1>
-                                <p className="home__intro-text mt-4 font-weight-light">
-                                    Google &amp; Facebook invested $100Ms in their internal developer platforms for{' '}
+                            <div className="col-lg-6 mb-6 mb-lg-0">
+                                <h1 className="home__intro-header display-3">The new standard developer platform</h1>
+                                <p className="home__intro-text mt-5 font-weight-light">
+                                    Google &amp; Facebook invested $100Ms in their internal developer&nbsp;platforms for{' '}
                                     <Link className="home__intro-text-link home__intro-text-link-1">
                                         code&nbsp;search
                                     </Link>
@@ -44,17 +44,17 @@ export default class Index extends React.Component<any, any> {
                                     , and{' '}
                                     <Link className="home__intro-text-link home__intro-text-link-3">automation</Link>.
                                 </p>
-                                <p className="home__intro-text mt-4 font-weight-light">
+                                <p className="home__intro-text mt-5 font-weight-light">
                                     <img
                                         style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
                                         src="/sourcegraph/sourcegraph-mark.svg"
                                     />{' '}
-                                    <strong>Sourcegraph</strong> brings this standard of developer&nbsp;platform to
-                                    every company, helping startups and large enterprises achieve elite development.
+                                    <strong>Sourcegraph</strong> brings this standard of developer&nbsp;platform to{' '}
+                                    every&nbsp;company, helping startups and large&nbsp;enterprises achieve
+                                    elite&nbsp;development.
                                 </p>
-                                <GetStartedAction showEmailInput={true} className="mt-4" />
-                                <ContactSupportAction className="mt-3" />
-                                <ViewDeveloperDocumentationAction className="mt-1" />
+                                <GetStartedAction showEmailInput={true} className="mt-5" />
+                                <ContactPresalesSupportAction className="mt-2 text-light" />
                             </div>
                             <div className="col-lg-6">
                                 <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />

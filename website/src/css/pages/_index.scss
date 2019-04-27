@@ -9,25 +9,24 @@
             margin-bottom: $margin-y;
         }
         @include media-breakpoint-only(md) {
-            $margin-y: 4rem;
+            $margin-y: 5rem;
             margin-top: $margin-y;
             margin-bottom: $margin-y;
         }
         @include media-breakpoint-up(lg) {
-            $margin-y: 7rem;
+            $margin-y: 6rem;
             margin-top: $margin-y;
             margin-bottom: $margin-y;
         }
 
         &-header {
-            font-size: 2.9rem;
         }
         &-text {
             font-weight: $font-weight-light;
             strong {
                 font-weight: $font-weight-base;
             }
-            font-size: $font-size-base * 1.2;
+            font-size: $font-size-base * 1.1;
             &-link {
                 color: unset;
                 border-bottom: solid 1px transparent;

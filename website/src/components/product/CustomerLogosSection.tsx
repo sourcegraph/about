@@ -2,7 +2,9 @@ import React from 'react'
 
 export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div className={`customer-logos-section text-center ${className}`}>
-        <strong>Trusted by elite companies:</strong>
+        <h2>
+            <span className="font-weight-light">Trusted by</span> elite companies
+        </h2>
         <div className="mt-2 d-flex justify-content-center align-items-center">
             <div className="customer-logos-section__logo mx-2" style={{ lineHeight: 'normal', width: '130px' }}>
                 <img style={{ width: '130px' }} src="/external-logos/uber.svg" />

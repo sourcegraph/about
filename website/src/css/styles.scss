@@ -10,24 +10,38 @@ $font-family-sans-serif: 'Open Sans';
 $font-family-base: 'Open Sans';
 $headings-font-family: 'Circular';
 
-$brand-primary: $dark-9;
-
-$theme-colors: (
-    'dark': $dark-9,
-    'light': $light-11,
-    'purple': $violet-9,
-);
-
+$blue: #2c7ef6;
 $brand-purple: #b200f8;
 $brand-cyan: #00b4f2;
 $brand-orange: #f96316;
 $colors: (
+    'blue': $blue,
     'brand-purple': $brand-purple,
     'brand-cyan': $brand-cyan,
     'brand-orange': $brand-orange,
 );
 
+$theme-colors: (
+    'primary': darken($blue, 9%),
+    'dark': $dark-9,
+    'light': $light-11,
+    'purple': $violet-9,
+);
+
+$brand-primary: $brand-purple;
+
 $grid-gutter-width: 18px;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 1092px,
+);
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 1060px,
+);
 
 $border-radius: 0.125rem;
 $border-radius-lg: 0.25rem;
@@ -37,11 +51,31 @@ $font-weight-semibold: 600;
 $font-weight-bold: $font-weight-semibold; // uses Open Sans SemiBold
 $font-weight-bolder: 700; // uses Open Sans Bold
 
-$input-btn-padding-y: 0.45rem;
+$input-btn-padding-y: 0.55rem;
 
 @import 'node_modules/bootstrap/scss/variables';
 
 // Set variables that rely on Bootstrap variables.
+
+$spacers: (
+    0: 0,
+    1: (
+        $spacer * 0.25,
+    ),
+    2: (
+        $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+        $spacer * 1.5,
+    ),
+    5: (
+        $spacer * 2,
+    ),
+    6: (
+        $spacer * 4,
+    ),
+);
 
 $body-bg: $black;
 $body-color: $white;
@@ -49,6 +83,11 @@ $body-color: $white;
 $border-color: $gray-900;
 
 $hr-border-color: rgba($white, 0.15);
+
+$display1-size: 5rem;
+$display2-size: 4.5rem;
+$display3-size: 3.5rem;
+$display4-size: 2.9rem;
 
 $navbar-nav-link-padding-x: 1.25rem;
 $navbar-dark-color: $body-color;
