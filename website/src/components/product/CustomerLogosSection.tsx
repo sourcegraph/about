@@ -2,10 +2,8 @@ import React from 'react'
 
 export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div className={`customer-logos-section text-center ${className}`}>
-        <h2>
-            <span className="font-weight-light">Trusted by</span> elite companies
-        </h2>
-        <div className="mt-2 d-flex justify-content-center align-items-center">
+        <h4>Elite companies trust Sourcegraph</h4>
+        <div className="mt-3 d-flex justify-content-center align-items-center">
             <div className="customer-logos-section__logo mx-2" style={{ lineHeight: 'normal', width: '130px' }}>
                 <img style={{ width: '130px' }} src="/external-logos/uber.svg" />
                 <br />
@@ -44,36 +42,6 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
                     Top 5 media company
                 </small>
                 <small>Every developer uses Sourcegraph</small>
-            </div>
-            <div
-                className="customer-logos-section__logo mx-3 d-none justify-content-center flex-column"
-                style={{ lineHeight: 'normal', width: '100px' }}
-            >
-                <small
-                    style={{ width: '100px' }}
-                    className="mx-auto mb-1 d-block border rounded border-danger text-danger p-2 "
-                >
-                    Top 3 CRM&nbsp;software company
-                </small>
-                &nbsp;
-                <br />
-                &nbsp;
-                <br />
-            </div>
-            <div
-                className="customer-logos-section__logo mx-3 d-none justify-content-center flex-column"
-                style={{ lineHeight: 'normal', width: '100px' }}
-            >
-                <small
-                    style={{ width: '80px' }}
-                    className="mx-auto mb-1 d-none border rounded border-info text-info p-2"
-                >
-                    Top 10 hedge fund
-                </small>
-                &nbsp;
-                <br />
-                &nbsp;
-                <br />
             </div>
         </div>
     </div>

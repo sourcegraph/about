@@ -32,19 +32,31 @@ export default class Index extends React.Component<any, any> {
                         <div className="row">
                             <div className="col-lg-6 mb-6 mb-lg-0">
                                 <h1 className="home__intro-header display-3">The new standard developer platform</h1>
-                                <p className="home__intro-text mt-5 font-weight-light">
+                                <p className="home__intro-text mt-3 font-weight-light">
                                     Google &amp; Facebook invested $100Ms in their internal developer&nbsp;platforms for{' '}
-                                    <Link className="home__intro-text-link home__intro-text-link-1">
+                                    <Link
+                                        className="home__intro-text-link home__intro-text-link-1"
+                                        to="/product/code-search-navigation"
+                                    >
                                         code&nbsp;search
                                     </Link>
                                     ,{' '}
-                                    <Link className="home__intro-text-link home__intro-text-link-2">
+                                    <Link
+                                        className="home__intro-text-link home__intro-text-link-2"
+                                        to="/product/code-review"
+                                    >
                                         code&nbsp;review
                                     </Link>
                                     , and{' '}
-                                    <Link className="home__intro-text-link home__intro-text-link-3">automation</Link>.
+                                    <Link
+                                        className="home__intro-text-link home__intro-text-link-3"
+                                        to="/product/code-rules-monitoring-automation"
+                                    >
+                                        automation
+                                    </Link>
+                                    .
                                 </p>
-                                <p className="home__intro-text mt-5 font-weight-light">
+                                <p className="home__intro-text mt-4 font-weight-light">
                                     <img
                                         style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
                                         src="/sourcegraph/sourcegraph-mark.svg"
