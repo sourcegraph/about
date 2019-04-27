@@ -38,10 +38,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                     <link rel="icon" type="image/png" href="https://about.sourcegraph.com/sourcegraph-mark.png" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-                    <link
-                        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Titillium+Web:300,400,600,700"
-                        rel="stylesheet"
-                    />
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
                 </Helmet>
                 <Header isHome={isHome} isProductPage={isProductPage} />
                 <section className="d-flex flex-column fill-height">{this.props.children}</section>

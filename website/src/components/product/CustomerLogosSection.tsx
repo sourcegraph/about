@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const CustomerLogosSection: React.FunctionComponent<{}> = () => (
-    <div className="customer-logos-section text-center">
+export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
+    <div className={`customer-logos-section text-center ${className}`}>
         <strong>Trusted by elite companies:</strong>
         <div className="mt-2 d-flex justify-content-center align-items-center">
             <div className="customer-logos-section__logo mx-2" style={{ lineHeight: 'normal', width: '130px' }}>

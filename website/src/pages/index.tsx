@@ -28,28 +28,41 @@ export default class Index extends React.Component<any, any> {
         return (
             <Layout location={this.props.location}>
                 <div className="home">
-                    <div className="home__jumbotron-intro jumbotron rounded-0 bg-dark text-light bg-sprinkles">
-                        <div className="home__jumbotron-intro-fade">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-6 mb-5 mb-lg-0">
-                                        <h1>The new standard developer platform</h1>
-                                        <p>
-                                            Google and Facebook invested $100Ms in their internal developer platforms
-                                            for code search, code review, and automation. With Sourcegraph, now every
-                                            company gets the best developer platform to reach elite levels of
-                                            productivity and quality.
-                                        </p>
-                                        {actions}
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
-                                    </div>
-                                </div>
+                    <div className="home__intro container">
+                        <div className="row">
+                            <div className="col-lg-6 mb-5 mb-lg-0">
+                                <h1 className="home__intro-header">The new standard developer platform</h1>
+                                <p className="home__intro-text mt-4 font-weight-light">
+                                    Google &amp; Facebook invested $100Ms in their internal developer platforms for{' '}
+                                    <Link className="home__intro-text-link home__intro-text-link-1">
+                                        code&nbsp;search
+                                    </Link>
+                                    ,{' '}
+                                    <Link className="home__intro-text-link home__intro-text-link-2">
+                                        code&nbsp;review
+                                    </Link>
+                                    , and{' '}
+                                    <Link className="home__intro-text-link home__intro-text-link-3">automation</Link>.
+                                </p>
+                                <p className="home__intro-text mt-4 font-weight-light">
+                                    <img
+                                        style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
+                                        src="/sourcegraph/sourcegraph-mark.svg"
+                                    />{' '}
+                                    <strong>Sourcegraph</strong> brings this standard of developer&nbsp;platform to
+                                    every company, helping startups and large enterprises achieve elite development.
+                                </p>
+                                <GetStartedAction showEmailInput={true} className="mt-4" />
+                                <ContactSupportAction className="mt-3" />
+                                <ViewDeveloperDocumentationAction className="mt-1" />
+                            </div>
+                            <div className="col-lg-6">
+                                <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
                             </div>
                         </div>
                     </div>
-                    <CustomerLogosSection />
+                    <hr />
+                    <CustomerLogosSection className="my-5" />
                     <hr />
                     <IntegratesWithSection className="d-none" />
                     <ContentSection>

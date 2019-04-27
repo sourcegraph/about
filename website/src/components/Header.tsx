@@ -29,7 +29,7 @@ export default class Header extends React.Component<HeaderProps, any> {
 
     public render(): JSX.Element | null {
         return (
-            <nav className="header navbar navbar-dark navbar-expand-md p-3">
+            <nav className="header navbar navbar-dark navbar-expand-md border-bottom p-3">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph logo" />

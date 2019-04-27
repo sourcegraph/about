@@ -1,27 +1,14 @@
 // stylelint-disable declaration-property-unit-whitelist
 // stylelint-disable selector-max-id
 
-$grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-);
-
-$container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-);
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/mixins';
 
 @import 'colors';
-@import 'prism';
 
 $font-family-sans-serif: 'Open Sans';
+$font-family-base: 'Open Sans';
 $headings-font-family: 'Circular';
-
-$body-bg: #000000;
-$body-color: #ffffff;
 
 $brand-primary: $dark-9;
 
@@ -31,16 +18,70 @@ $theme-colors: (
     'purple': $violet-9,
 );
 
+$brand-purple: #b200f8;
+$brand-cyan: #00b4f2;
+$brand-orange: #f96316;
+$colors: (
+    'brand-purple': $brand-purple,
+    'brand-cyan': $brand-cyan,
+    'brand-orange': $brand-orange,
+);
+
+$grid-gutter-width: 18px;
+
+$border-radius: 0.125rem;
+$border-radius-lg: 0.25rem;
+$border-radius-sm: 0.1rem;
+
+$font-weight-semibold: 600;
+$font-weight-bold: $font-weight-semibold; // uses Open Sans SemiBold
+$font-weight-bolder: 700; // uses Open Sans Bold
+
+$input-btn-padding-y: 0.45rem;
+
+@import 'node_modules/bootstrap/scss/variables';
+
+// Set variables that rely on Bootstrap variables.
+
+$body-bg: $black;
+$body-color: $white;
+
+$border-color: $gray-900;
+
+$hr-border-color: rgba($white, 0.15);
+
+$navbar-nav-link-padding-x: 1.25rem;
 $navbar-dark-color: $body-color;
 $navbar-dark-hover-color: rgba($body-color, 0.75);
 $navbar-dark-active-color: rgba($body-color, 0.875);
+
+$btn-padding-x: 1.5rem;
+$btn-font-weight: 600;
+
+$input-bg: $gray-900;
+$input-color: $body-color;
+$input-box-shadow: none;
+$input-border-color: $gray-900;
+$input-focus-bg: $input-bg;
+$input-focus-color: $body-color;
+$input-placeholder-color: $gray-600;
+$input-focus-border-color: darken($component-active-bg, 25%);
+$input-focus-box-shadow: none;
 
 $popover-arrow-width: 0;
 $popover-arrow-color: transparent;
 $popover-arrow-outer-color: transparent;
 $popover-max-width: 400px;
 
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap/scss/root';
+@import 'node_modules/bootstrap/scss/reboot';
+@import 'node_modules/bootstrap/scss/type';
+@import 'node_modules/bootstrap/scss/grid';
+@import 'node_modules/bootstrap/scss/forms';
+@import 'node_modules/bootstrap/scss/buttons';
+@import 'node_modules/bootstrap/scss/nav';
+@import 'node_modules/bootstrap/scss/navbar';
+@import 'node_modules/bootstrap/scss/utilities';
 
 html,
 body,

@@ -2,119 +2,58 @@
 // stylelint-disable selector-class-pattern
 // stylelint-disable selector-max-id
 .home {
-    &__jumbotron-intro {
-        h1 {
-            font-size: 2.7rem;
-            line-height: normal;
+    &__intro {
+        @include media-breakpoint-down(sm) {
+            $margin-y: 2.5rem;
+            margin-top: $margin-y;
+            margin-bottom: $margin-y;
+        }
+        @include media-breakpoint-only(md) {
+            $margin-y: 4rem;
+            margin-top: $margin-y;
+            margin-bottom: $margin-y;
+        }
+        @include media-breakpoint-up(lg) {
+            $margin-y: 7rem;
+            margin-top: $margin-y;
+            margin-bottom: $margin-y;
         }
 
-        padding: 0;
-        &-fade {
-            background: linear-gradient(
-                to right,
-                rgba($dark-9, 0.3) 0%,
-                rgba($dark-9, 0.91) 15%,
-                $dark-9 50%,
-                rgba($dark-9, 0.91) 85%,
-                rgba($dark-9, 0.3) 100%
-            );
-            padding-top: 6rem;
-            padding-bottom: 6rem;
+        &-header {
+            font-size: 2.9rem;
         }
-    }
-
-    &__jumbotron {
-        background-color: $dark-9;
-        margin-bottom: 0;
-        &--btn {
-            margin: 0 0.5rem;
-        }
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        p {
-            color: $light-10;
-        }
-        .hero-link {
-            color: $blue-3;
-
-            &:hover {
-                color: $blue-7;
+        &-text {
+            font-weight: $font-weight-light;
+            strong {
+                font-weight: $font-weight-base;
             }
-        }
-        .material-icons {
-            fill: $blue-1;
-        }
-    }
+            font-size: $font-size-base * 1.2;
+            &-link {
+                color: unset;
+                border-bottom: solid 1px transparent;
+                &-1 {
+                    border-bottom-color: $brand-purple;
+                    &:hover {
+                        color: $brand-purple;
+                    }
+                }
+                &-2 {
+                    border-bottom-color: $brand-cyan;
+                    &:hover {
+                        color: $brand-cyan;
+                    }
+                }
+                &-3 {
+                    border-bottom-color: $brand-orange;
+                    &:hover {
+                        color: $brand-orange;
+                    }
+                }
 
-    &__jumbo-col {
-        text-align: left;
-        border-radius: 0.5rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-
-        &-instructions {
-            padding: 2rem;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
-        }
-
-        &-command {
-            padding: 1.5rem;
-            background-color: $dark-11;
-            color: $teal-3;
-            border-bottom-left-radius: 0.5rem;
-            border-bottom-right-radius: 0.5rem;
-        }
-    }
-
-    &__col-right {
-        min-width: 50%;
-    }
-
-    // customer logos
-
-    &__customer-block {
-        padding: 2rem 0 1rem 0;
-        background: $light-12;
-    }
-
-    &__customer-logos {
-        padding: 0 0 1rem 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-
-        &-image {
-            width: 200px;
-            height: auto;
-            margin: 0;
-            padding: 0 2rem;
-            &:first-child {
-                padding-top: 0;
-            }
-        }
-    }
-
-    // code host logos
-
-    &__code-host-logos {
-        padding: 0 0 1rem 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-
-        &-image {
-            min-width: 100px;
-            max-width: 200px;
-            max-height: 50px;
-            margin: 0 1rem 1rem 0;
-            &:first-child {
-                padding-top: 0;
+                &:hover {
+                    text-decoration: none;
+                    @include transition($btn-transition);
+                }
             }
         }
     }
