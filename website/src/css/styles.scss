@@ -25,12 +25,12 @@ $theme-colors: (
     'primary': darken($blue, 9%),
     'dark': $dark-9,
     'light': $light-11,
-    'purple': $violet-9,
+    'purple': $brand-purple,
 );
 
 $brand-primary: $brand-purple;
 
-$grid-gutter-width: 18px;
+$grid-gutter-width: 25px;
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
@@ -81,8 +81,6 @@ $body-bg: $black;
 $body-color: $white;
 
 $border-color: $gray-900;
-
-$hr-border-color: rgba($white, 0.15);
 
 $display1-size: 5rem;
 $display2-size: 4.5rem;

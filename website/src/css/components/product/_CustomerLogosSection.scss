@@ -1,6 +1,30 @@
 .customer-logos-section {
-    &__logo {
-        max-width: 150px;
-        height: auto;
+    $max-width: 150px;
+    &__item {
+        min-width: 120px;
+        max-width: $max-width;
+        margin-bottom: 1.5rem;
+        line-height: 1.15;
+        &-logo {
+            // stylelint-disable-next-line declaration-property-unit-whitelist
+            height: 70px;
+            max-width: $max-width;
+            margin-bottom: 0.5rem;
+            &-synthesized {
+                border-width: 2px !important;
+                $custom-color: #e83c3b;
+                font-family: 'Circular' !important;
+                $color: $custom-color;
+                border-color: lighten($color, 30%) !important;
+                background: linear-gradient(
+                    to left,
+                    rgba($color, 0.15) 0%,
+                    transparent 45%,
+                    transparent 55%,
+                    rgba($color, 0.15) 100%
+                );
+                color: $color;
+            }
+        }
     }
 }
