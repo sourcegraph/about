@@ -4,29 +4,27 @@
 .home {
     &__jumbotron-intro {
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.7rem;
             line-height: normal;
         }
-
-        background-color: $dark-9;
 
         padding: 0;
         &-fade {
             background: linear-gradient(
                 to right,
-                transparent 0%,
-                rgba($dark-9, 0.95) 25%,
+                rgba($dark-9, 0.3) 0%,
+                rgba($dark-9, 0.91) 15%,
                 $dark-9 50%,
-                rgba($dark-9, 0.95) 75%,
-                transparent 100%
+                rgba($dark-9, 0.91) 85%,
+                rgba($dark-9, 0.3) 100%
             );
-            padding: 6rem 4rem;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         }
     }
 
     &__jumbotron {
         background-color: $dark-9;
-        padding: 6rem 4rem;
         margin-bottom: 0;
         &--btn {
             margin: 0 0.5rem;

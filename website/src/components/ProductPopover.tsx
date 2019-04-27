@@ -41,7 +41,7 @@ const ProductPopoverBody: React.FunctionComponent = () => {
                     />
                     <div>
                         <h4 className="mt-1 mb-0">Sourcegraph</h4>
-                        <small className="text-muted">Code intelligence platform</small>
+                        <small className="text-muted">The standard developer platform</small>
                     </div>
                 </Link>
             </div>

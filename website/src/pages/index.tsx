@@ -8,16 +8,20 @@ import { CustomerLogosSection } from '../components/product/CustomerLogosSection
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductFeatures } from '../components/product/ProductFeatures'
 import Testimonials from '../components/Testimonials'
+import { ContactSupportAction } from '../css/components/actions/ContactSupportAction'
+import { GetStartedAction } from '../css/components/actions/GetStartedAction'
 import { RequestADemoAction } from '../css/components/actions/RequestADemoAction'
 import { StartAFreeTrialAction } from '../css/components/actions/StartAFreeTrialAction'
+import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 import { eventLogger } from '../EventLogger'
 
 export default class Index extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const actions = (
             <div className="mt-2">
-                <StartAFreeTrialAction className="mr-2" />
-                <RequestADemoAction />
+                <GetStartedAction showEmailInput={true} className="mt-4" />
+                <ContactSupportAction className="mt-3" />
+                <ViewDeveloperDocumentationAction className="mt-1" />
             </div>
         )
 
@@ -27,45 +31,30 @@ export default class Index extends React.Component<any, any> {
                     <div className="home__jumbotron-intro jumbotron rounded-0 bg-dark text-light bg-sprinkles">
                         <div className="home__jumbotron-intro-fade">
                             <div className="container">
-                                <div className="row text-center justify-content-center">
-                                    <h1>The new standard for developer infrastructure</h1>
-                                    <p className="col-md-9">
-                                        Google and Facebook have invested $100Ms in internal developer infrastructure
-                                        for code search, code review, and automation to ship software faster. We provide
-                                        these capabilities to every team so they can operate at elite levels of
-                                        productivity and quality.
-                                    </p>
-                                    <p className="col-md-9 d-none">
-                                        Sourcegraph We provide every code search, code review, and automation to ship
-                                        software faster. We platforms to build software at scale. Sourcegraph is the
-                                        best platform for building software at scale.
-                                        {/*software development cycle  Speed up the software development
-                                        cycle. developers, DevOps teams, and engineering leaders developer
-                                        infrastructure that connects teams, code, and tools. Developers and DevOps teams
-                                        get Turns your code into a structured, searchable knowledge base where
-                                        developers and DevOps teams find answers. | Speed up the software development
-                                        cycle. With Sourcegraph, your organization's code becomes a searchable,
-                                        shareable asset for developers, DevOps teams, and engineering leaders.*/}
-                                    </p>
-                                    <p className="col-md-9 d-none">
-                                        Sourcegraph is how companies reach elite development. Where elite development
-                                        happens. With Sourcegraph, your organization's developers, DevOps teams, and
-                                        engineering leaders can search, share, reuse, and review code. Developer
-                                        experience Your organization's code is With Sourcegraph, your code makes your
-                                        code useful and valuable
-                                    </p>
-                                    {actions}
+                                <div className="row">
+                                    <div className="col-lg-6 mb-5 mb-lg-0">
+                                        <h1>The new standard developer platform</h1>
+                                        <p>
+                                            Google and Facebook invested $100Ms in their internal developer platforms
+                                            for code search, code review, and automation. With Sourcegraph, now every
+                                            company gets the best developer platform to reach elite levels of
+                                            productivity and quality.
+                                        </p>
+                                        {actions}
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <CustomerLogosSection />
                     <hr />
-                    <IntegratesWithSection />
-                    <hr />
+                    <IntegratesWithSection className="d-none" />
                     <ContentSection>
                         <div className="text-center mb-5">
-                            <h3>See how code intelligence speeds up the software development cycle:</h3>
+                            <h3>See how Sourcegraph speeds up the software development cycle:</h3>
                         </div>
                         <div
                             style={{ backgroundColor: '#efefef', width: '100%', height: '350px', margin: '0 auto' }}
@@ -113,10 +102,10 @@ export default class Index extends React.Component<any, any> {
                     <Jumbotron
                         color="purple"
                         className="mt-5 mb-0"
-                        title="Get code intelligence now"
-                        description="Start shipping better software faster."
+                        title="Get the new standard developer platform now"
+                        description="Reach elite levels of developer productivity and quality."
                     >
-                        {actions}
+                        <div className="d-flex flex-column justify-content-center align-items-center">{actions}</div>
                     </Jumbotron>
                 </div>
             </Layout>

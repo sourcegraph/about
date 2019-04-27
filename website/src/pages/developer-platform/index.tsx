@@ -29,9 +29,8 @@ export default ((props: any) => {
     return (
         <Layout location={props.location}>
             <ContentPage
-                title="Sourcegraph: The new standard developer platform"
-                description="The "
-                mainActions={actions}
+                title="Developer platforms"
+                description="How the most elite software development teams maximize speed and quality."
             >
                 <ContentSection>
                     <h2>The world's leading technology companies use developer platforms</h2>

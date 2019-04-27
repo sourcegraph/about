@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const IntegratesWithSection: React.FunctionComponent<{}> = () => (
-    <div className="integrates-with-section text-center">
+export const IntegratesWithSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
+    <div className={`integrates-with-section text-center ${className}`}>
         <strong>Integrates with:</strong>
         <div className="mt-2 d-flex justify-content-center align-items-center">
             <img className="integrates-with-section__logo mx-2" src="/external-logos/github-horizontal-logo.svg" />

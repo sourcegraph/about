@@ -11,7 +11,7 @@ import { Jumbotron } from '../Jumbotron'
 interface Props {
     title: string
     description: string
-    mainActions: React.ReactFragment
+    mainActions?: React.ReactFragment
     children: React.ReactNode
 }
 
