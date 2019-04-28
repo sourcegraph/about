@@ -1,86 +1,36 @@
 // stylelint-disable declaration-property-unit-whitelist
-.footer__block {
-    background: $dark-10;
-    color: $light-2;
-    padding: 4rem 0 1rem 0;
-    overflow: hidden;
-    .small__contact {
-        padding-top: 1.5rem;
-        margin-bottom: -2rem;
-    }
-    .logo__section {
-        a {
-            color: $light-6;
-        }
-        .footer__logo {
-            padding: 0 0 1.25rem 0;
-            margin: 0 0 0 -8px;
-        }
+.footer {
+    &__container {
+        max-width: var(--breakpoint-lg) !important;
+        padding-left: $navbar-nav-link-padding-x;
+        padding-right: $navbar-nav-link-padding-x;
     }
 
-    .social__column {
-        .icon {
-            margin-left: 1rem;
-            svg path {
-                fill: $dark-1;
-            }
-            &:hover {
-                svg path {
-                    fill: $dark-11;
-                }
-            }
-        }
-        img,
-        .btn {
-            margin-bottom: 1rem;
-        }
-        .copyright {
-            color: $dark-1;
+    &__nav-sections {
+        .nav-item > a {
+            color: $white;
+            font-size: 0.9rem;
+            padding: 0.25rem 0;
+            display: inline-block;
         }
     }
-    h3 {
+    &__nav-header {
+        opacity: 0.4;
         text-transform: uppercase;
-        font-weight: 400;
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        font-weight: bolder;
     }
-    ul {
-        color: $light-6;
-        margin: 0;
-        list-style: none;
 
-        li {
-            margin-bottom: 0.5rem;
-
-            a {
-                color: $light-6;
-                &:hover {
-                    color: $light-11;
-                    text-decoration: underline;
-                }
+    &__postscript {
+        .nav-item > a {
+            padding-top: 0;
+            padding-bottom: 0;
+            color: $text-muted;
+            &:hover {
+                color: rgba($text-muted, 0.8);
             }
+            padding-left: $navbar-nav-link-padding-x * 0.5;
+            padding-right: $navbar-nav-link-padding-x * 0.5;
         }
-    }
-    .copyright__container {
-        margin: 3rem 0 0 0;
-        padding-top: 1rem;
-        border-top: 2px solid $dark-4;
-        .copyright {
-            float: left;
-        }
-        .terms {
-            float: right;
-            a {
-                margin-left: 2rem;
-            }
-        }
-    }
-}
-
-.align-footer {
-    align-content: flex-end !important;
-
-    * {
-        align-self: center;
     }
 }

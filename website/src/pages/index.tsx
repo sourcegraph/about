@@ -7,7 +7,7 @@ import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
-import Testimonials from '../components/Testimonials'
+import { Testimonials } from '../components/Testimonials'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetStartedAction } from '../css/components/actions/GetStartedAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
@@ -118,14 +118,16 @@ export default ((props: any) => (
             </ContentSection>
             <hr />
             <div className="bg-white text-dark py-4">
-                <ContentSection>
+                <div className="container">
                     <div className="text-center mt-5">
                         <h3 className="font-weight-light">
                             Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
                         </h3>
                     </div>
+                </div>
+                <div className="container-fluid">
                     <Testimonials />
-                </ContentSection>
+                </div>
             </div>
             <Jumbotron
                 color="purple"
@@ -134,10 +136,15 @@ export default ((props: any) => (
                 description="Start shipping better software faster with the new standard developer platform."
                 logomark={false}
             >
-                <div className="d-flex flex-column justify-content-end align-items-center">
-                    <GetStartedAction showEmailInput={true} className="mt-4" />
-                    <ContactPresalesSupportAction className="mt-3" />
-                    <ViewDeveloperDocumentationAction className="mt-1" />
+                <div className="d-flex justify-content-center w-100 mb-3">
+                    <div
+                        className="flex-0 bg-white rounded px-4"
+                        style={{ opacity: '0.95', boxShadow: 'rgba(255,255,255,0.3) 0 0 15px 10px' }}
+                    >
+                        <GetStartedAction showEmailInput={true} className="mt-4" />
+                        <ContactPresalesSupportAction className="mt-3" />
+                        <ViewDeveloperDocumentationAction className="mt-1 mb-3" />
+                    </div>
                 </div>
             </Jumbotron>
         </div>

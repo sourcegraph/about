@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import '../css/styles.scss'
-import Footer from './Footer'
+import { Footer } from './Footer'
 import Header from './Header'
 
 interface LayoutProps {
