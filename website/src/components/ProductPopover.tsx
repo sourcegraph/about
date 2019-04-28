@@ -1,6 +1,7 @@
 import { Link } from 'gatsby'
 import React, { useLayoutEffect, useRef, useState } from 'react'
-import { Popover } from 'reactstrap'
+import OverlayTrigger, { OverlayTriggerProps } from 'react-bootstrap/OverlayTrigger'
+import Popover from 'react-bootstrap/Popover'
 
 interface ProductFeatureOrUseCase {
     text: string
@@ -66,35 +67,23 @@ interface ProductPopoverButtonProps {
     className?: string
 }
 
-export const ProductPopoverButton: React.FunctionComponent<ProductPopoverButtonProps> = ({ className = '' }) => {
-    const targetRef = useRef<HTMLElement>()
-    const [target, setTarget] = useState<HTMLElement | null>(null)
-    useLayoutEffect(() => setTarget(targetRef.current))
+const OVERLAY_TRIGGERS: OverlayTriggerProps['trigger'] = ['click', 'hover', 'focus']
 
-    const [isOpen, setIsOpen] = useState(false)
-
-    return (
-        <div>
-            <Link
-                ref={targetRef}
-                className={`product-popover-button__btn nav-link outline-0 ${className}`}
-                to="/product"
-            >
-                Product
-            </Link>
-            {targetRef.current && (
-                <Popover
-                    placement="bottom"
-                    isOpen={isOpen}
-                    target={target}
-                    toggle={() => setIsOpen(!isOpen)}
-                    trigger="click hover focus"
-                    delay={{ show: 0, hide: 500 }}
-                    innerClassName="shadow"
-                >
+export const ProductPopoverButton: React.FunctionComponent<ProductPopoverButtonProps> = ({ className = '' }) => (
+    <div>
+        <OverlayTrigger
+            trigger={OVERLAY_TRIGGERS}
+            placement="bottom"
+            delay={{ show: 0, hide: 500 }}
+            overlay={
+                <Popover id="product-popover" transition={true}>
                     <ProductPopoverBody />
                 </Popover>
-            )}
-        </div>
-    )
-}
+            }
+        >
+            <Link className={`product-popover-button__btn nav-link outline-0 ${className}`} to="/product">
+                Product
+            </Link>
+        </OverlayTrigger>
+    </div>
+)

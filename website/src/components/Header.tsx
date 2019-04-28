@@ -1,9 +1,6 @@
 import { Link } from 'gatsby'
-import OpenInAppIcon from 'mdi-react/OpenInAppIcon'
 import * as React from 'react'
-import { Popover } from 'reactstrap'
 import { eventLogger } from '../EventLogger'
-import Dropdown from './Dropdown'
 import { ProductPopoverButton } from './ProductPopover'
 
 interface HeaderProps {
