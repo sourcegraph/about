@@ -134,7 +134,7 @@ export default ((props: any) => (
                 description="Start shipping better software faster with the new standard developer platform."
                 logomark={false}
             >
-                <div className="d-flex flex-column justify-content-center align-items-center">
+                <div className="d-flex flex-column justify-content-end align-items-center">
                     <GetStartedAction showEmailInput={true} className="mt-4" />
                     <ContactPresalesSupportAction className="mt-3" />
                     <ViewDeveloperDocumentationAction className="mt-1" />

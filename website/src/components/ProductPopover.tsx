@@ -1,7 +1,9 @@
 import { Link } from 'gatsby'
 import React, { useLayoutEffect, useRef, useState } from 'react'
+import Overlay from 'react-bootstrap/Overlay'
 import OverlayTrigger, { OverlayTriggerProps } from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
+import HoverablePopover from './HoverablePopover'
 
 interface ProductFeatureOrUseCase {
     text: string
@@ -27,10 +29,10 @@ export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
     { text: 'Onboard new developers faster', to: '/solutions/developer-onboarding' },
 ]
 
-const ProductPopoverBody: React.FunctionComponent = () => {
+const ProductPopoverBody = React.forwardRef((props, ref) => {
     const itemClassName = 'rounded'
     return (
-        <div className="p-3">
+        <div className="p-3" ref={ref}>
             <div className="list-group list-group-flush">
                 <Link
                     to="/product"
@@ -61,7 +63,7 @@ const ProductPopoverBody: React.FunctionComponent = () => {
             </ul>
         </div>
     )
-}
+})
 
 interface ProductPopoverButtonProps {
     className?: string
@@ -70,20 +72,16 @@ interface ProductPopoverButtonProps {
 const OVERLAY_TRIGGERS: OverlayTriggerProps['trigger'] = ['click', 'hover', 'focus']
 
 export const ProductPopoverButton: React.FunctionComponent<ProductPopoverButtonProps> = ({ className = '' }) => (
-    <div>
-        <OverlayTrigger
+    <>
+        <HoverablePopover
             trigger={OVERLAY_TRIGGERS}
             placement="bottom"
             delay={{ show: 0, hide: 500 }}
-            overlay={
-                <Popover id="product-popover" transition={true}>
-                    <ProductPopoverBody />
-                </Popover>
-            }
+            component={<ProductPopoverBody />}
         >
             <Link className={`product-popover-button__btn nav-link outline-0 ${className}`} to="/product">
                 Product
             </Link>
-        </OverlayTrigger>
-    </div>
+        </HoverablePopover>
+    </>
 )
