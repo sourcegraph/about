@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useRef, useState } from 'react'
 import Overlay from 'react-bootstrap/Overlay'
 import OverlayTrigger, { OverlayTriggerProps } from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
-import HoverablePopover from './HoverablePopover'
+import { HoverablePopover } from './HoverablePopover'
 
 interface ProductFeatureOrUseCase {
     text: string

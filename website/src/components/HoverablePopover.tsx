@@ -1,102 +1,40 @@
-/*
- * Usage:
- * <HoverablePopover
- *    component={<div>Holy guacamole! I'm Sticky.</div>}
- *    placement="top"
- *    onMouseEnter={() => { }}
- *    delay={200}
- * >
- *   <div>Show the sticky tooltip</div>
- * </HoverablePopover>
- */
+import React, { useLayoutEffect, useRef, useState } from 'react'
+import Overlay, { Placement } from 'react-bootstrap/Overlay'
+import Popover from 'react-bootstrap/Popover'
 
-import PropTypes from 'prop-types'
-import React from 'react'
-import { Overlay, Popover } from 'react-bootstrap'
+export const HoverablePopover: React.FunctionComponent<{
+    delay?: number | { show: number; hide: number }
+    placement?: Placement
+    onMouseEnter?: () => void
+    children: React.ReactElement
+    component: React.ReactNode
+}> = ({ delay = 0, placement, children, component }) => {
+    const targetRef = useRef<HTMLDivElement>(null)
+    const [target, setTarget] = useState<HTMLDivElement | null>(null)
+    useLayoutEffect(() => setTarget(targetRef.current))
 
-export default class HoverablePopover extends React.Component {
-    constructor(props) {
-        super(props)
+    const [isOpen, setIsOpen] = useState(false)
 
-        this.handleMouseEnter = this.handleMouseEnter.bind(this)
-        this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    const setIsOpenTrue = () => setIsOpen(true)
+    const setIsOpenFalse = () => setIsOpen(false)
 
-        this.state = {
-            showPopover: false,
-        }
+    const child = React.Children.only(children)
+    const triggerProps = {
+        onClick: setIsOpenTrue,
+        onFocus: setIsOpenTrue,
+        onBlur: setIsOpenFalse,
+        onMouseOver: setIsOpenTrue,
+        onMouseOut: setIsOpenFalse,
     }
 
-    handleMouseEnter() {
-        const { delay, onMouseEnter } = this.props
-
-        this.setTimeoutConst = setTimeout(() => {
-            this.setState({ showPopover: true }, () => {
-                if (onMouseEnter) {
-                    onMouseEnter()
-                }
-            })
-        }, delay)
-    }
-
-    handleMouseLeave() {
-        clearTimeout(this.setTimeoutConst)
-        this.setState({ showPopover: false })
-    }
-
-    componentWillUnmount() {
-        if (this.setTimeoutConst) {
-            clearTimeout(this.setTimeoutConst)
-        }
-    }
-
-    render() {
-        const { component, children, placement } = this.props
-
-        const child = React.Children.map(children, child =>
-            React.cloneElement(child, {
-                onMouseEnter: this.handleMouseEnter,
-                onMouseLeave: this.handleMouseLeave,
-                ref: node => {
-                    this._child = node
-                    const { ref } = child
-                    if (typeof ref === 'function') {
-                        ref(node)
-                    }
-                },
-            })
-        )[0]
-
-        return (
-            <React.Fragment>
-                {child}
-                <Overlay
-                    show={this.state.showPopover}
-                    placement={placement}
-                    target={this._child}
-                    shouldUpdatePosition={true}
-                >
-                    <Popover
-                        onMouseEnter={() => {
-                            this.setState({ showPopover: true })
-                        }}
-                        onMouseLeave={this.handleMouseLeave}
-                        id="popover"
-                    >
-                        {component}
-                    </Popover>
-                </Overlay>
-            </React.Fragment>
-        )
-    }
-}
-
-HoverablePopover.defaultProps = {
-    delay: 0,
-}
-
-HoverablePopover.propTypes = {
-    delay: PropTypes.number,
-    onMouseEnter: PropTypes.func,
-    children: PropTypes.element.isRequired,
-    component: PropTypes.node.isRequired,
+    return (
+        <div ref={targetRef}>
+            {child && React.cloneElement(child, triggerProps)}
+            <Overlay show={isOpen} placement={placement} target={target || undefined}>
+                <Popover onMouseEnter={setIsOpenTrue} onMouseLeave={setIsOpenFalse} id="popover">
+                    {component}
+                </Popover>
+            </Overlay>
+        </div>
+    )
 }
