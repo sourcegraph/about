@@ -10,13 +10,29 @@ export const Jumbotron: React.FunctionComponent<{
     color?: keyof typeof COLORS
     logomark?: boolean
     title: string
+    titleClassName?: string
     description?: string
     children: React.ReactNode
-}> = ({ className = '', color = 'dark', title, description, children }) => (
+}> = ({
+    className = '',
+    color = 'dark',
+    logomark = true,
+    title,
+    titleClassName = 'display-3',
+    description,
+    children,
+}) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
         <div className="container text-center">
-            <img className="mb-1" style={{ width: '32px', height: '32px' }} src="/sourcegraph/sourcegraph-mark.svg" />
-            <h1>{title}</h1>
+            {logomark && (
+                <img
+                    className="mb-1"
+                    // tslint:disable-next-line: jsx-ban-props
+                    style={{ width: '2rem', height: '2rem' }}
+                    src="/sourcegraph/sourcegraph-mark.svg"
+                />
+            )}
+            <h1 className={titleClassName}>{title}</h1>
             {description && <p className="mb-4">{description}</p>}
             {children}
         </div>

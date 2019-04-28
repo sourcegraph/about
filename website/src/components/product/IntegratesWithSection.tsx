@@ -2,7 +2,7 @@ import React from 'react'
 
 export const IntegratesWithSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div className={`integrates-with-section text-center ${className}`}>
-        <h4 className="text-center font-weight-light">Integrates with:</h4>
+        <h4 className="text-center font-weight-light">Integrates with your existing tools and workflow</h4>
         <div className="mt-4 d-flex justify-content-center align-items-center">
             <img className="integrates-with-section__logo mx-2" src="/external-logos/github-horizontal-logo.svg" />
             <img className="integrates-with-section__logo mx-2" src="/external-logos/github-enterprise-logo.svg" />
