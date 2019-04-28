@@ -19,15 +19,15 @@ const ITEMS: (
         url: '/external-logos/yelp.svg',
     },
     {
-        topN: 10,
+        topN: 5,
         description: 'hospitality company',
         className: 'customer-logos-section__item-logo-synthesized-0',
     },
-    {
-        topN: 5,
-        description: 'media company',
-        className: 'customer-logos-section__item-logo-synthesized-1',
-    },
+    // {
+    //     topN: 5,
+    //     description: 'media company',
+    //     className: 'customer-logos-section__item-logo-synthesized-1',
+    // },
 ]
 
 export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
@@ -36,14 +36,16 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
         <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) =>
                 'name' in logo ? (
-                    <div key={i} className="customer-logos-section__item mx-3">
+                    <div key={i} className="customer-logos-section__item mx-2">
                         <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
-                        <small className="text-muted">Every developer at {logo.name} uses Sourcegraph</small>
+                        <small className="customer-logos-section__item-caption text-muted">
+                            Every developer at {logo.name} uses Sourcegraph
+                        </small>
                     </div>
                 ) : (
                     <div
                         key={i}
-                        className="customer-logos-section__item mx-3 d-flex justify-content-center flex-column"
+                        className="customer-logos-section__item mx-2 d-flex justify-content-center flex-column"
                     >
                         <div
                             className={`customer-logos-section__item-logo customer-logos-section__item-logo-synthesized mx-auto border rounded px-3 font-weight-bold d-flex align-items-center ${
@@ -54,7 +56,9 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
                             <br />
                             {logo.description}
                         </div>
-                        <small className="text-muted">Every developer uses Sourcegraph</small>
+                        <small className="customer-logos-section__item-caption text-muted">
+                            Every developer uses Sourcegraph
+                        </small>
                     </div>
                 )
             )}

@@ -7,6 +7,7 @@ import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
+import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from '../components/ProductPopover'
 import { Testimonials } from '../components/Testimonials'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetStartedAction } from '../css/components/actions/GetStartedAction'
@@ -36,7 +37,7 @@ export default ((props: any) => (
                                 className="home__intro-text-link home__intro-text-link-3"
                                 to="/product/code-rules-monitoring-automation"
                             >
-                                automation
+                                alerts &amp; automation
                             </Link>
                             .
                         </p>
@@ -51,7 +52,7 @@ export default ((props: any) => (
                         <GetStartedAction showEmailInput={true} className="mt-5" />
                         <ContactPresalesSupportAction className="mt-2 text-light" />
                     </div>
-                    <div className="col-lg-6 d-none">
+                    <div className="col-lg-6">
                         <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
                     </div>
                 </div>
@@ -69,7 +70,7 @@ export default ((props: any) => (
                     <div
                         style={{
                             backgroundColor: 'rgba(255,255,255,0.75)',
-                            width: '87%',
+                            width: '100%',
                             height: '480px',
                             margin: '0 auto',
                         }}
@@ -80,12 +81,44 @@ export default ((props: any) => (
                             style={{ width: '60px', height: '60px', opacity: '0.7' }}
                         />
                     </div>
+                    <div className="row mt-6">
+                        <div className="col-md-6">
+                            <h4>Features</h4>
+                            <ul className="nav flex-column">
+                                {PRODUCT_FEATURES.map(({ text, to }, i) => (
+                                    <li key={i} className="nav-item">
+                                        <Link
+                                            className="nav-link d-inline-block btn btn-outline-light font-weight-normal mr-2 mb-2"
+                                            to={to}
+                                        >
+                                            {text}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="col-md-6">
+                            <h4>Use cases</h4>
+                            <ul className="nav flex-column">
+                                {PRODUCT_USE_CASES.map(({ text, to }, i) => (
+                                    <li key={i} className="nav-item">
+                                        <Link
+                                            className="nav-link d-inline-block btn btn-outline-light font-weight-normal mr-2 mb-2"
+                                            to={to}
+                                        >
+                                            {text}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </ContentSection>
             </div>
             <hr />
             <ContentSection className="my-5">
                 <div className="pt-2 row justify-content-center">
-                    <div className="col-md-8">
+                    <div className="col-md-10">
                         <CityIcon className="d-block mx-auto" style={{ width: '80px', height: '80px' }} />
                         <h2 className="mt-4 display-4 text-center">The only enterprise solution</h2>
                         <p className="text-center">
@@ -96,19 +129,19 @@ export default ((props: any) => (
                     </div>
                 </div>
                 <div className="pt-5 row justify-content-between">
-                    <div className="col-sm-4">
-                        <h4 className="mb-1">Proven at scale</h4>
+                    <div className="col-md-4">
+                        <h4 className="mb-1 font-weight-light">Proven at scale</h4>
                         <p>10,000s of developers and repositories on Sourcegraph? You're in good company.</p>
                     </div>
-                    <div className="col-sm-4">
-                        <h4 className="mb-1">24/7 support</h4>
+                    <div className="col-md-4">
+                        <h4 className="mb-1 font-weight-light">24/7 support</h4>
                         <p>
                             We provide outstanding support whenever you need it, including deployment assistance and
                             help integrating custom dev tools with Sourcegraph.
                         </p>
                     </div>
-                    <div className="col-sm-4">
-                        <h4 className="mb-1">Deploy your way</h4>
+                    <div className="col-md-4">
+                        <h4 className="mb-1 font-weight-light">Deploy your way</h4>
                         <p>
                             Self-manage your organization's Sourcegraph instance, or let us manage it for you (on our
                             secure infrastructure or your cloud provider sub-account).

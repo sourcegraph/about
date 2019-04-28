@@ -14,7 +14,7 @@ interface ProductFeatureOrUseCase {
 export const PRODUCT_FEATURES: ProductFeatureOrUseCase[] = [
     { text: 'Code search', to: '/product/code-search-navigation' },
     { text: 'Code review', to: '/product/code-review' },
-    { text: 'Code automation', to: '/product/code-rules-monitoring-automation' },
+    { text: 'Code alerts & automation', to: '/product/code-rules-monitoring-automation' },
 ]
 
 export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
@@ -23,11 +23,11 @@ export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
         text: 'Integrate tools into the dev workflow',
         to: '/solutions/developer-workflow-tooling-integrations',
     },
-    {
-        text: 'Make large-scale code modifications',
-        detail: '& refactors',
-        to: '/solutions/developer-onboarding',
-    },
+    // {
+    //     text: 'Make large-scale code modifications',
+    //     detail: '& refactors',
+    //     to: '/solutions/developer-onboarding',
+    // },
     { text: 'Onboard new developers faster', to: '/solutions/developer-onboarding' },
 ]
 

@@ -1,7 +1,6 @@
 .customer-logos-section {
-    $max-width: 150px;
+    $max-width: 135px;
     &__item {
-        min-width: 120px;
         max-width: $max-width;
         margin-bottom: 1.5rem;
         line-height: 1.15;
@@ -25,6 +24,11 @@
                 );
                 color: $color;
             }
+        }
+        &-caption {
+            font-size: 0.7rem;
+            line-height: normal;
+            display: block;
         }
     }
 }

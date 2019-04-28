@@ -149,10 +149,7 @@ export const IntegratesWithSection: React.FunctionComponent<{ className?: string
     <div className={`integrates-with-section ${className} mx-auto px-4`}>
         <h4 className="text-center font-weight-light">Integrates with your existing tools and workflow</h4>
         <div className="mt-6 mb-2">
-            <IntegrationEntriesRow
-                text="Code hosts & code review"
-                entries={ENTRIES.filter(e => e.type === 'codeHost')}
-            />
+            <IntegrationEntriesRow text="Code hosting & review" entries={ENTRIES.filter(e => e.type === 'codeHost')} />
             <IntegrationEntriesRow
                 text="Other services in your workflow"
                 entries={ENTRIES.filter(e => e.type === 'service')}
