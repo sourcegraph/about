@@ -1,10 +1,4 @@
 import { Link } from 'gatsby'
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import CityIcon from 'mdi-react/CityIcon'
-import MagnifyIcon from 'mdi-react/MagnifyIcon'
-import OpenInAppIcon from 'mdi-react/OpenInAppIcon'
-import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
-import WebIcon from 'mdi-react/WebIcon'
 import * as React from 'react'
 import { Blockquote } from '../../components/Blockquote'
 import { ContentPage } from '../../components/content/ContentPage'
@@ -14,10 +8,8 @@ import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { ProductFeatures } from '../../components/product/ProductFeatures'
 import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from '../../components/ProductPopover'
-import { ServerVersionNumber } from '../../components/ServerVersionNumber'
 import { RequestADemoAction } from '../../css/components/actions/RequestADemoAction'
 import { StartAFreeTrialAction } from '../../css/components/actions/StartAFreeTrialAction'
-import { eventLogger } from '../../EventLogger'
 
 export default ((props: any) => {
     const actions = (

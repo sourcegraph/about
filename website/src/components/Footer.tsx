@@ -1,5 +1,9 @@
 import { Link } from 'gatsby'
+import GitHubCircleIcon from 'mdi-react/GithubCircleIcon'
+import LinkedinIcon from 'mdi-react/LinkedinBoxIcon'
+import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
+import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from './ProductPopover'
 
 export const Footer: React.FunctionComponent<any> = () => (
     <footer className="footer pt-6 pb-2">
@@ -9,22 +13,54 @@ export const Footer: React.FunctionComponent<any> = () => (
                     <Link to="/">
                         <img className="footer__logo" src="/sourcegraph/logo--light.svg" />
                     </Link>
+                    <ul className="nav footer__social mt-1">
+                        <li className="nav-item">
+                            <a href="https://github.com/sourcegraph" target="_blank">
+                                <GitHubCircleIcon />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="https://twitter.com/srcgraph" target="_blank">
+                                <TwitterIcon />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="https://www.linkedin.com/company/4803356/" target="_blank">
+                                <LinkedinIcon />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
-                    <h3 className="footer__nav-header">Product</h3>
+                    <h3 className="footer__nav-header">Why Sourcegraph?</h3>
                     <ul className="nav flex-column">
                         <li className="nav-item">
-                            <a href="https://docs.sourcegraph.com/user/search">Code search</a>
+                            <Link to="/product">Product</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="https://docs.sourcegraph.com/extensions">Code intelligence &amp; extensions</a>
+                            <Link to="/solutions">Use cases</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="https://docs.sourcegraph.com/integration">Integrations</a>
+                            <Link to="/product">What is a developer platform?</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="https://about.sourcegraph.com/pricing">Enterprise</a>
+                            <Link to="/pricing">Pricing</Link>
                         </li>
+                    </ul>
+                </div>
+                <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                    <h3 className="footer__nav-header">Features &amp; use cases</h3>
+                    <ul className="nav flex-column">
+                        {PRODUCT_FEATURES.map(({ text, to }, i) => (
+                            <li key={i} className="nav-item">
+                                <Link to={to}>{text}</Link>
+                            </li>
+                        ))}
+                        {PRODUCT_USE_CASES.map(({ text, to }, i) => (
+                            <li key={i} className="nav-item">
+                                <Link to={to}>{text}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
@@ -39,7 +75,7 @@ export const Footer: React.FunctionComponent<any> = () => (
                             </a>
                         </li>
                         <li className="nav-item">
-                            <Link to="/pricing">Pricing</Link>
+                            <Link to="/blog">Blog</Link>
                         </li>
                     </ul>
                 </div>
@@ -60,31 +96,8 @@ export const Footer: React.FunctionComponent<any> = () => (
                         </li>
                     </ul>
                 </div>
-                <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
-                    <h3 className="footer__nav-header">Community</h3>
-                    <ul className="nav flex-column">
-                        <li className="nav-item">
-                            <a href="https://github.com/sourcegraph" target="_blank">
-                                GitHub
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/blog">Blog</Link>
-                        </li>
-                        <li className="nav-item">
-                            <a href="https://twitter.com/srcgraph" target="_blank">
-                                Twitter
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="https://www.linkedin.com/company/4803356/" target="_blank">
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div className="footer__postscript d-flex justify-content-between py-2 small">
+            <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
                 <ul className="nav">
                     <li className="nav-item text-muted mr-3">Copyright &copy; 2019 Sourcegraph</li>
                     <li className="nav-item">

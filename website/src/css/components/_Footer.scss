@@ -21,14 +21,20 @@
         font-weight: bolder;
     }
 
+    &__social,
     &__postscript {
         .nav-item > a {
-            padding-top: 0;
-            padding-bottom: 0;
             color: $text-muted;
             &:hover {
                 color: rgba($text-muted, 0.8);
             }
+        }
+    }
+
+    &__postscript {
+        .nav-item > a {
+            padding-top: 0;
+            padding-bottom: 0;
             padding-left: $navbar-nav-link-padding-x * 0.5;
             padding-right: $navbar-nav-link-padding-x * 0.5;
         }
