@@ -30,9 +30,12 @@ const ITEMS: (
     // },
 ]
 
-export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
+export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string; className?: string }> = ({
+    trustWhat,
+    className = '',
+}) => (
     <div className={`customer-logos-section ${className}`}>
-        <h4 className="text-center font-weight-light">Elite companies trust Sourcegraph</h4>
+        <h4 className="text-center font-weight-light">Elite companies trust Sourcegraph {trustWhat}</h4>
         <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) =>
                 'name' in logo ? (

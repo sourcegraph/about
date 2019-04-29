@@ -1,7 +1,6 @@
 .code-search-navigation-page {
     &__use-cases {
-        th {
-            font-weight: normal;
-        }
+        max-width: var(--breakpoint-lg);
+        margin: 0 auto;
     }
 }
