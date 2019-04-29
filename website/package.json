@@ -67,7 +67,7 @@
     "gatsby-cli": "^2.5.9",
     "gatsby-plugin-tslint": "^0.0.2",
     "prettier": "^1.17.0",
-    "sharp": "^0.22.0",
+    "sharp": "^0.22.1",
     "stylelint": "^10.0.1",
     "stylelint-scss": "^3.6.0",
     "tslint": "^5.16.0",
