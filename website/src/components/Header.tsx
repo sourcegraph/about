@@ -45,11 +45,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                         id="navcol-1"
                     >
                         <ul className="nav navbar-nav">
-                            <li
-                                className="header__nav-item nav-item"
-                                role="presentation"
-                                onClick={() => eventLogger.trackTODO()}
-                            >
+                            <li className="header__nav-item nav-item" role="presentation">
                                 <Link
                                     className="header__nav-link nav-link"
                                     to="/developer-platform"

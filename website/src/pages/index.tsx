@@ -7,9 +7,12 @@ import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
+import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
+import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
 import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from '../components/ProductPopover'
 import { Testimonials } from '../components/Testimonials'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
+import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { GetStartedAction } from '../css/components/actions/GetStartedAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 
@@ -49,7 +52,7 @@ export default ((props: any) => (
                             <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to every
                             company, helping startups and large&nbsp;enterprises ship better software faster.
                         </p>
-                        <GetStartedAction showEmailInput={true} className="mt-5" />
+                        <GetStartedAction className="mt-5" />
                         <ContactPresalesSupportAction className="mt-2 text-light" />
                     </div>
                     <div className="col-lg-6">
@@ -64,55 +67,8 @@ export default ((props: any) => (
             </div>
             <div className="bg-primary py-6">
                 <ContentSection>
-                    <h3 className="text-center mb-5 text-light font-weight-light">
-                        How Sourcegraph speeds up the software development cycle
-                    </h3>
-                    <div
-                        style={{
-                            backgroundColor: 'rgba(255,255,255,0.75)',
-                            width: '100%',
-                            height: '480px',
-                            margin: '0 auto',
-                        }}
-                        className="border d-flex align-items-center justify-content-center"
-                    >
-                        <ArrowRightDropCircleIcon
-                            className="text-dark"
-                            style={{ width: '60px', height: '60px', opacity: '0.7' }}
-                        />
-                    </div>
-                    <div className="row mt-6">
-                        <div className="col-md-6">
-                            <h4>Features</h4>
-                            <ul className="nav flex-column">
-                                {PRODUCT_FEATURES.map(({ text, to }, i) => (
-                                    <li key={i} className="nav-item">
-                                        <Link
-                                            className="nav-link d-inline-block btn btn-outline-light font-weight-normal mr-2 mb-2"
-                                            to={to}
-                                        >
-                                            {text}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="col-md-6">
-                            <h4>Use cases</h4>
-                            <ul className="nav flex-column">
-                                {PRODUCT_USE_CASES.map(({ text, to }, i) => (
-                                    <li key={i} className="nav-item">
-                                        <Link
-                                            className="nav-link d-inline-block btn btn-outline-light font-weight-normal mr-2 mb-2"
-                                            to={to}
-                                        >
-                                            {text}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+                    <ProductDemoVideo />
+                    <ProductFeaturesAndUseCases className="mt-6" />
                 </ContentSection>
             </div>
             <hr />
@@ -169,19 +125,7 @@ export default ((props: any) => (
                 description="Start shipping better software faster with the new standard developer platform."
                 logomark={false}
             >
-                <div className="d-flex justify-content-center w-100 pt-2 mb-3">
-                    <div
-                        className="flex-0 rounded rounded-lg px-4"
-                        style={{
-                            backgroundColor: 'rgba(0,0,0,1)',
-                            boxShadow: 'rgba(255,255,255,0.3) 0 0 30px 20px',
-                        }}
-                    >
-                        <GetStartedAction showEmailInput={true} className="mt-4" />
-                        <ContactPresalesSupportAction className="text-light mt-2" />
-                        <ViewDeveloperDocumentationAction className="text-light mt-1 mb-3" />
-                    </div>
-                </div>
+                <GetSourcegraphNowActions />
             </Jumbotron>
         </div>
     </Layout>

@@ -26,6 +26,7 @@ $theme-colors: (
     'dark': $dark-9,
     'light': $light-11,
     'purple': $brand-purple,
+    'gray': #cccccc,
 );
 
 $brand-primary: $brand-purple;
@@ -119,6 +120,7 @@ $popover-max-width: 400px;
 @import 'node_modules/bootstrap/scss/transitions';
 @import 'node_modules/bootstrap/scss/nav';
 @import 'node_modules/bootstrap/scss/navbar';
+@import 'node_modules/bootstrap/scss/media';
 @import 'node_modules/bootstrap/scss/list-group';
 @import 'node_modules/bootstrap/scss/popover';
 @import 'node_modules/bootstrap/scss/carousel';
@@ -152,12 +154,12 @@ body {
 @import 'components/ProductPopover';
 @import 'components/content/ContentPage';
 @import 'components/content/ContentSection';
-@import 'components/product/ProductFeatures';
 @import 'components/product/CustomerLogosSection';
 @import 'components/product/IntegratesWithSection';
 @import 'components/Header';
 @import 'components/Footer';
 @import 'components/Testimonials';
+@import 'components/IconItem';
 @import 'pages/404';
 @import 'pages/about';
 @import 'pages/browser';

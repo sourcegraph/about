@@ -1,7 +1,7 @@
 import React from 'react'
 
 const COLORS = {
-    dark: 'bg-dark text-light',
+    dark: 'bg-black text-light',
     purple: 'bg-purple text-light',
 }
 
@@ -23,7 +23,7 @@ export const Jumbotron: React.FunctionComponent<{
     children,
 }) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
-        <div className="container text-center">
+        <div className="container text-center pt-6 pb-5">
             {logomark && (
                 <img
                     className="mb-1"
