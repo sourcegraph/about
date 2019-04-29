@@ -110,8 +110,10 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-6">
-                <h2 id="used-by">The most elite software organizations use a developer platform</h2>
-                <p>
+                <h2 id="used-by" className="text-center">
+                    The most elite software organizations use a developer platform
+                </h2>
+                <p className="text-center">
                     Google, Facebook, Uber, Lyft, Yelp, and other world-class companies rely on a developer platform
                     (not just a code host) to ship software.
                 </p>
@@ -208,6 +210,43 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
+            <div className="container-fluid py-6">
+                <h2 className="mb-5 text-center">
+                    Watch Google &amp; Facebook engineers present their internal dev platforms
+                </h2>
+                <div className="d-flex flex-wrap justify-content-center">
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fatscaleevents%2Fvideos%2F1911812842425144%2F&show_text=false&appId&width=700"
+                        width="560"
+                        height="315"
+                        style={{ border: 'none', overflow: 'hidden' }}
+                        scrolling="no"
+                        frameBorder="0"
+                        allowTransparency={true}
+                        allow="encrypted-media"
+                        allowFullScreen={true}
+                        className="m-2"
+                    />
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/KTJs-0EInW8"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullscreen={true}
+                        className="m-2"
+                    />
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/cIVUP9wUAJA"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullscreen={true}
+                        className="m-2"
+                    />
+                </div>
+            </div>
             <ContentSection color="white" className="pt-4 pb-6 border-top border-gray">
                 <h2 className="text-center my-5">Sourcegraph is the new standard developer platform.</h2>
                 <div className="border border-gray rounded w-75 mx-auto py-4">

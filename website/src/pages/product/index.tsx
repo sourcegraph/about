@@ -10,6 +10,7 @@ import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../../components/product/ProductFeaturesAndUseCases'
@@ -38,7 +39,7 @@ export default ((props: any) => {
                 <ContentSection color="white" className="py-5">
                     <div className="row">
                         <div className="col-md-6 mb-4">
-                            <IconItem icon={SearchIcon} color="brand-cyan">
+                            <IconItem className="position-relative" icon={SearchIcon} color="brand-cyan">
                                 <h4>Grok your code</h4>
                                 <p>
                                     Search and explore all of your code, with{' '}
@@ -50,13 +51,13 @@ export default ((props: any) => {
                                     10,000s of repositories, all branches and commits, all programming languages, any
                                     code host&mdash;all of your code is accessible on Sourcegraph from your web browser.
                                 </p>
-                                <Link to="/product/code-search-navigation">
-                                    Learn more about Sourcegraph's <strong>code search</strong> &raquo;
+                                <Link to="/product/code-search-navigation" className="stretched-link">
+                                    How <strong>code search</strong> makes you a better developer &raquo;
                                 </Link>
                             </IconItem>
                         </div>
                         <div className="col-md-6 mb-4">
-                            <IconItem icon={MapIcon} color="brand-orange">
+                            <IconItem className="position-relative" icon={MapIcon} color="brand-orange">
                                 <h4>Do code review right&mdash;and faster</h4>
                                 <p>
                                     Get cross-repository/dependency code intelligence when reviewing code, so you can
@@ -68,13 +69,13 @@ export default ((props: any) => {
                                     With Sourcegraph, your team's code reviews will be faster and will catch more bugs
                                     before they ship to production.
                                 </p>
-                                <Link to="/product/code-review">
-                                    Learn more about how Sourcegraph enhances <strong>code review</strong> &raquo;
+                                <Link to="/product/code-review" className="stretched-link">
+                                    How to do <strong>code review</strong> right &raquo;
                                 </Link>
                             </IconItem>
                         </div>
                         <div className="col-md-6 mb-4">
-                            <IconItem icon={MegaphoneIcon} color="green">
+                            <IconItem className="position-relative" icon={MegaphoneIcon} color="green">
                                 <h4>Watch for important or risky changes</h4>
                                 <p>
                                     Want to know who's starting to use the service you own, changing security-sensitive
@@ -85,21 +86,21 @@ export default ((props: any) => {
                                     anything of interest. Get instant email, Slack, or webhook notifications for every
                                     new match.
                                 </p>
-                                <Link to="/product/code-review">
-                                    Learn more about Sourcegraph's <strong>code alerts &amp; automation</strong> &raquo;
+                                <Link to="/product/code-review" className="stretched-link">
+                                    Why <strong>code alerts &amp; automation</strong> is important &raquo;
                                 </Link>
                             </IconItem>
                         </div>
                         <div className="col-md-6 mb-4">
-                            <IconItem icon={ToolboxIcon} color="brand-purple">
+                            <IconItem className="position-relative" icon={ToolboxIcon} color="brand-purple">
                                 <h4>Integrates into your workflow</h4>
                                 <p>
                                     Get hovers and code navigation on files and code reviews right inside GitHub,
                                     GitLab, Bitbucket Server, and Phabricator. Search code from your web browser,
                                     editor, or shell.
                                 </p>
-                                <a href="https://docs.sourcegraph.com/integration">
-                                    Learn more about Sourcegraph's <strong>integrations</strong> &raquo;
+                                <a href="https://docs.sourcegraph.com/integration" className="stretched-link">
+                                    See and install Sourcegraph's <strong>integrations</strong> &raquo;
                                 </a>
                             </IconItem>
                         </div>
@@ -113,6 +114,9 @@ export default ((props: any) => {
                     <CustomerLogosSection className="pt-6 pb-4" />
                     <hr />
                     <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+                </ContentSection>
+                <ContentSection color="black" className="py-6">
+                    <EnterpriseReadySolution />
                 </ContentSection>
                 <Jumbotron
                     color="purple"

@@ -1,6 +1,4 @@
 import { Link } from 'gatsby'
-import ArrowRightDropCircleIcon from 'mdi-react/ArrowRightDropCircleIcon'
-import CityIcon from 'mdi-react/CityIcon'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
@@ -9,12 +7,10 @@ import { CustomerLogosSection } from '../components/product/CustomerLogosSection
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
-import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from '../components/ProductPopover'
 import { Testimonials } from '../components/Testimonials'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { GetStartedAction } from '../css/components/actions/GetStartedAction'
-import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -73,37 +69,7 @@ export default ((props: any) => (
             </div>
             <hr />
             <ContentSection className="my-5">
-                <div className="pt-2 row justify-content-center">
-                    <div className="col-md-10">
-                        <CityIcon className="d-block mx-auto" style={{ width: '80px', height: '80px' }} />
-                        <h2 className="mt-4 display-4 text-center">The only enterprise solution</h2>
-                        <p className="text-center">
-                            Sourcegraph is built for companies of all sizes, from startups that need a solid foundation
-                            for growth, all the way to the largest enterprises with complex security, scaling, and
-                            deployment needs.
-                        </p>
-                    </div>
-                </div>
-                <div className="pt-5 row justify-content-between">
-                    <div className="col-md-4">
-                        <h4 className="mb-1 font-weight-light">Proven at scale</h4>
-                        <p>10,000s of developers and repositories on Sourcegraph? You're in good company.</p>
-                    </div>
-                    <div className="col-md-4">
-                        <h4 className="mb-1 font-weight-light">24/7 support</h4>
-                        <p>
-                            We provide outstanding support whenever you need it, including deployment assistance and
-                            help integrating custom dev tools with Sourcegraph.
-                        </p>
-                    </div>
-                    <div className="col-md-4">
-                        <h4 className="mb-1 font-weight-light">Deploy your way</h4>
-                        <p>
-                            Self-manage your organization's Sourcegraph instance, or let us manage it for you (on our
-                            secure infrastructure or your cloud provider sub-account).
-                        </p>
-                    </div>
-                </div>
+                <EnterpriseReadySolution className="pt-2" />
             </ContentSection>
             <hr />
             <div className="bg-white text-dark py-4">
