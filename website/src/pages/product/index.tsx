@@ -52,7 +52,7 @@ export default ((props: any) => {
                                     code host&mdash;all of your code is accessible on Sourcegraph from your web browser.
                                 </p>
                                 <Link to="/product/code-search-navigation" className="stretched-link">
-                                    How <strong>code search</strong> makes you a better developer &raquo;
+                                    Why the best developers use <strong>code search</strong>&nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
@@ -70,7 +70,7 @@ export default ((props: any) => {
                                     before they ship to production.
                                 </p>
                                 <Link to="/product/code-review" className="stretched-link">
-                                    How to do <strong>code review</strong> right &raquo;
+                                    How to do <strong>code review</strong> right&nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
@@ -86,8 +86,9 @@ export default ((props: any) => {
                                     anything of interest. Get instant email, Slack, or webhook notifications for every
                                     new match.
                                 </p>
-                                <Link to="/product/code-review" className="stretched-link">
-                                    Why <strong>code alerts &amp; automation</strong> is important &raquo;
+                                <Link to="/product/code-alerts-automation" className="stretched-link">
+                                    Move fast and don't break things with <strong>code alerts &amp; automation</strong>
+                                    &nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
@@ -100,7 +101,7 @@ export default ((props: any) => {
                                     editor, or shell.
                                 </p>
                                 <a href="https://docs.sourcegraph.com/integration" className="stretched-link">
-                                    See and install Sourcegraph's <strong>integrations</strong> &raquo;
+                                    See and install Sourcegraph's <strong>integrations</strong>&nbsp;&raquo;
                                 </a>
                             </IconItem>
                         </div>

@@ -70,16 +70,9 @@ interface ProductPopoverButtonProps {
     className?: string
 }
 
-const OVERLAY_TRIGGERS: OverlayTriggerProps['trigger'] = ['click', 'hover', 'focus']
-
 export const ProductPopoverButton: React.FunctionComponent<ProductPopoverButtonProps> = ({ className = '' }) => (
     <>
-        <HoverablePopover
-            trigger={OVERLAY_TRIGGERS}
-            placement="bottom"
-            delay={{ show: 0, hide: 500 }}
-            component={<ProductPopoverBody />}
-        >
+        <HoverablePopover placement="bottom" delay={{ show: 0, hide: 500 }} component={<ProductPopoverBody />}>
             <Link className={`product-popover-button__btn nav-link outline-0 ${className}`} to="/product">
                 Product
             </Link>
