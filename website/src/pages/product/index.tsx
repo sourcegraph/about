@@ -33,10 +33,10 @@ export default ((props: any) => {
         <Layout location={props.location}>
             <ContentPage
                 title="The new standard developer platform"
-                description="Sourcegraph is a developer platform with enhanced code search, review, and alerts & automation. It takes minutes to set up and integrates with your favorite tools."
+                description="Ship better software faster with Sourcegraph, the developer platform with enhanced code search, review, and alerts & automation."
                 mainActions={actions}
             >
-                <ContentSection color="white" className="py-5">
+                <ContentSection color="white" className="py-6">
                     <div className="row">
                         <div className="col-md-6 mb-4">
                             <IconItem className="position-relative" icon={SearchIcon} color="brand-cyan">

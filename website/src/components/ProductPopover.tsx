@@ -1,8 +1,6 @@
 import { Link } from 'gatsby'
-import React, { useLayoutEffect, useRef, useState } from 'react'
-import Overlay from 'react-bootstrap/Overlay'
-import OverlayTrigger, { OverlayTriggerProps } from 'react-bootstrap/OverlayTrigger'
-import Popover from 'react-bootstrap/Popover'
+import React from 'react'
+import { OverlayTriggerProps } from 'react-bootstrap/OverlayTrigger'
 import { HoverablePopover } from './HoverablePopover'
 
 interface ProductFeatureOrUseCase {
@@ -46,7 +44,7 @@ const ProductPopoverBody = React.forwardRef((props, ref) => {
                     />
                     <div>
                         <h4 className="mt-1 mb-0">Sourcegraph</h4>
-                        <small className="text-muted">The standard developer platform</small>
+                        <small className="text-muted">The new standard developer platform</small>
                     </div>
                 </Link>
             </div>

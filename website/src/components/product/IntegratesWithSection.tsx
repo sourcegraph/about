@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface IntegrationEntry {
-    type: 'codeHost' | 'service' | 'plugin'
+    type: 'codeHost' | 'service' | 'plugin' | 'language'
     iconUrl: string
     description: string
     width?: number
@@ -145,31 +145,48 @@ const IntegrationEntriesRow: React.FunctionComponent<{
     </div>
 )
 
-export const IntegratesWithSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
+export const IntegratesWithSection: React.FunctionComponent<{
+    className?: string
+    showTypes?: IntegrationEntry['type'][]
+    customTypeLabels?: Partial<Record<IntegrationEntry['type'], string>>
+}> = ({ className = '', showTypes, customTypeLabels }) => (
     <div className={`integrates-with-section ${className} mx-auto px-4`}>
         <h4 className="text-center font-weight-light">Integrates with your existing tools and workflow</h4>
         <div className="mt-6 mb-2">
-            <IntegrationEntriesRow text="Code hosting & review" entries={ENTRIES.filter(e => e.type === 'codeHost')} />
-            <IntegrationEntriesRow
-                text="Other services in your workflow"
-                entries={ENTRIES.filter(e => e.type === 'service')}
-            />
-            <IntegrationEntriesRow
-                text="Browser & editor extensions"
-                entries={ENTRIES.filter(e => e.type === 'plugin')}
-            />
-            <IntegrationEntriesRow text="Programming languages">
-                <div className="mt-1">
-                    All programming languages are supported.{' '}
-                    <a
-                        href="https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22"
-                        target="_blank"
-                    >
-                        24 programming languages
-                    </a>{' '}
-                    have additional code intelligence support.
-                </div>
-            </IntegrationEntriesRow>
+            {(!showTypes || showTypes.includes('codeHost')) && (
+                <IntegrationEntriesRow
+                    text={(customTypeLabels && customTypeLabels.codeHost) || 'Code hosting & review'}
+                    entries={ENTRIES.filter(e => e.type === 'codeHost')}
+                />
+            )}
+            {(!showTypes || showTypes.includes('service')) && (
+                <IntegrationEntriesRow
+                    text={(customTypeLabels && customTypeLabels.service) || 'Other services in your workflow'}
+                    entries={ENTRIES.filter(e => e.type === 'service')}
+                />
+            )}
+            {(!showTypes || showTypes.includes('plugin')) && (
+                <IntegrationEntriesRow
+                    text={(customTypeLabels && customTypeLabels.plugin) || 'Browser & editor integrations'}
+                    entries={ENTRIES.filter(e => e.type === 'plugin')}
+                />
+            )}
+            {(!showTypes || showTypes.includes('language')) && (
+                <IntegrationEntriesRow
+                    text={(customTypeLabels && customTypeLabels.language) || 'Programming languages'}
+                >
+                    <div className="mt-1">
+                        All programming languages are supported.{' '}
+                        <a
+                            href="https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22"
+                            target="_blank"
+                        >
+                            24 programming languages
+                        </a>{' '}
+                        have additional code intelligence support.
+                    </div>
+                </IntegrationEntriesRow>
+            )}
         </div>
     </div>
 )
