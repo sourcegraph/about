@@ -12,6 +12,7 @@ import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
+import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../../components/product/ProductDemoVideo'
@@ -40,40 +41,17 @@ export default ((props: any) => (
                 </div>
             }
         >
+            <PageSectionLinks
+                sections={[
+                    { text: 'Why code search?', url: '#why' },
+                    { text: 'Use cases', url: '#use-cases' },
+                    { text: 'Features', url: '#features' },
+                    { text: 'Integrations', url: '#integrations' },
+                    { text: 'Demo screencasts', url: '#demo' },
+                    { text: 'Who uses it', url: '#customers' },
+                ]}
+            />
             <ContentSection color="white" className="py-3">
-                <ul className="nav nav-pills mt-5 mb-6 justify-content-center">
-                    <li className="nav-item mr-2 mb-2">
-                        <a className="nav-link btn btn-outline-primary rounded-lg active" href="#why">
-                            Why code search?
-                        </a>
-                    </li>
-                    <li className="nav-item mr-2 mb-2">
-                        <a className="nav-link btn btn-outline-primary rounded-lg" href="#use-cases">
-                            Use cases
-                        </a>
-                    </li>
-                    <li className="nav-item mr-2 mb-2">
-                        <a className="nav-link btn btn-outline-primary rounded-lg" href="#features">
-                            Features
-                        </a>
-                    </li>
-                    <li className="nav-item mr-2 mb-2">
-                        <a className="nav-link btn btn-outline-primary rounded-lg" href="#integrations">
-                            Integrations
-                        </a>
-                    </li>
-                    <li className="nav-item mr-2 mb-2">
-                        <a className="nav-link btn btn-outline-primary rounded-lg" href="#demo">
-                            Demo screencasts
-                        </a>
-                    </li>
-                    <li className="nav-item mr-2 mb-2">
-                        <a className="nav-link btn btn-outline-primary rounded-lg" href="#customers">
-                            Customers
-                        </a>
-                    </li>
-                </ul>
-
                 <h2 id="why" className="text-center mb-3">
                     The best developers and teams use code search
                 </h2>
