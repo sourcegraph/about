@@ -1,8 +1,5 @@
-import { Link } from 'gatsby'
 import GlobeIcon from 'mdi-react/GlobeIcon'
 import LockIcon from 'mdi-react/LockIcon'
-import SearchIcon from 'mdi-react/SearchIcon'
-import StopwatchIcon from 'mdi-react/StopwatchIcon'
 import React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -17,6 +14,7 @@ import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourc
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
+import { GetStartedAction } from '../../css/components/actions/GetStartedAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -25,16 +23,14 @@ export default ((props: any) => (
             description="Continuously monitor all changes to all repositories for risky or important changes. Get instant email, Slack, or webhook notifications for every hit."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
-                    <a className="btn btn-primary mb-2" href="https://docs.sourcegraph.com/#quickstart">
-                        Install
-                    </a>
+                    <GetStartedAction className="mt-4" />
                     <ViewDeveloperDocumentationAction
-                        className="text-light my-1"
+                        className="text-light my-3"
                         url="https://docs.sourcegraph.com/user/search/saved_searches"
                     >
                         Documentation
                     </ViewDeveloperDocumentationAction>
-                    <ContactPresalesSupportAction className="text-light" />
+                    {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
                 </div>
             }
         >

@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import DirectionsIcon from 'mdi-react/DirectionsIcon'
 import FlameIcon from 'mdi-react/FlameIcon'
 import MicroscopeIcon from 'mdi-react/MicroscopeIcon'
@@ -39,7 +40,7 @@ export default ((props: any) => (
                     >
                         Code review integrations documentation
                     </ViewDeveloperDocumentationAction>
-                    <ContactPresalesSupportAction className="text-light" />
+                    {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
                 </div>
             }
         >
@@ -76,6 +77,10 @@ export default ((props: any) => (
                 <h2 id="features" className="display-4 mb-5 text-center">
                     How code review is better with Sourcegraph
                 </h2>
+                <p className="text-center mb-5">
+                    Sourcegraph <Link to="#integrations">integrates</Link> with your existing code review tool and lets
+                    you:
+                </p>
                 <div className="row">
                     <div className="col-lg-6 mb-4">
                         <IconItem className="position-relative" icon={DirectionsIcon} color="brand-cyan">

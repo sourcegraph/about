@@ -2,7 +2,6 @@ import { Link } from 'gatsby'
 import FilesIcon from 'mdi-react/FilesIcon'
 import GlobeIcon from 'mdi-react/GlobeIcon'
 import HistoryIcon from 'mdi-react/HistoryIcon'
-import LockIcon from 'mdi-react/LockIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
 import StopwatchIcon from 'mdi-react/StopwatchIcon'
 import React from 'react'
@@ -17,8 +16,8 @@ import { CustomerLogosSection } from '../../components/product/CustomerLogosSect
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
-import { UseCasesTable } from '../../components/product/UseCasesTable'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
+import { UseCasesTable } from '../../components/product/UseCasesTable'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
@@ -39,7 +38,7 @@ export default ((props: any) => (
                     >
                         Code search documentation
                     </ViewDeveloperDocumentationAction>
-                    <ContactPresalesSupportAction className="text-light" />
+                    {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
                 </div>
             }
         >

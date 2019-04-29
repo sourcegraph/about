@@ -80,7 +80,7 @@ export default ((props: any) => (
                                     { name: 'Priority support', id: 'support' },
                                 ]}
                                 buttonLabel="Buy now"
-                                buttonHref="/contact/sales"
+                                buttonHref="http://sourcegraph.com/subscriptions/new"
                             />
                         </div>
                         <div className="col-8 col-md-4 mx-auto mb-4">

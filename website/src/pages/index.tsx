@@ -12,6 +12,7 @@ import { Testimonials } from '../components/Testimonials'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { GetStartedAction } from '../css/components/actions/GetStartedAction'
+import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -50,7 +51,7 @@ export default ((props: any) => (
                             company, helping startups and large&nbsp;enterprises ship better software faster.
                         </p>
                         <GetStartedAction className="mt-5" />
-                        <ContactPresalesSupportAction className="mt-2 text-light" />
+                        <ViewDeveloperDocumentationAction className="text-light mt-3" />
                     </div>
                     <div className="col-lg-6 d-none">
                         <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />

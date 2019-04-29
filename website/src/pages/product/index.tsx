@@ -25,8 +25,8 @@ export default ((props: any) => {
         <div className="d-flex justify-content-center mt-6">
             <div>
                 <GetStartedAction />
-                <ContactPresalesSupportAction className="text-light" />
-                <ViewDeveloperDocumentationAction className="text-light" />
+                {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
+                <ViewDeveloperDocumentationAction className="mt-3 text-light" />
             </div>
         </div>
     )
