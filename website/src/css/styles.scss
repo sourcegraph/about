@@ -158,6 +158,11 @@ body {
     font-family: $font-family-sans-serif;
 }
 
+.popover-body {
+    border: solid 1px $gray-200;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 9px 3px;
+}
+
 @import 'circular-font';
 @import 'components/ProductPopover';
 @import 'components/content/ContentPage';

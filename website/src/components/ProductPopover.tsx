@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import { OverlayTriggerProps } from 'react-bootstrap/OverlayTrigger'
 import { HoverablePopover } from './HoverablePopover'
 
 interface ProductFeatureOrUseCase {
@@ -16,23 +15,25 @@ export const PRODUCT_FEATURES: ProductFeatureOrUseCase[] = [
 ]
 
 export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
-    { text: 'Speed up incident response', detail: '(SRE/DevOps)', to: '/solutions/incident-response' },
-    {
-        text: 'Integrate tools into the dev workflow',
-        to: '/solutions/developer-workflow-tooling-integrations',
-    },
+    // TODO(sqs): not written yet
+    //
+    // { text: 'Speed up incident response', detail: '(SRE/DevOps)', to: '/solutions/incident-response' },
+    // {
+    //     text: 'Integrate tools into the dev workflow',
+    //     to: '/solutions/developer-workflow-tooling-integrations',
+    // },
     // {
     //     text: 'Make large-scale code modifications',
     //     detail: '& refactors',
     //     to: '/solutions/developer-onboarding',
     // },
-    { text: 'Onboard new developers faster', to: '/solutions/developer-onboarding' },
+    // { text: 'Onboard new developers faster', to: '/solutions/developer-onboarding' },
 ]
 
-const ProductPopoverBody = React.forwardRef((props, ref) => {
+const ProductPopoverBody: React.FunctionComponent<any> = () => {
     const itemClassName = 'rounded'
     return (
-        <div className="p-3" ref={ref}>
+        <div className="p-3">
             <div className="list-group list-group-flush">
                 <Link
                     to="/product"
@@ -64,7 +65,7 @@ const ProductPopoverBody = React.forwardRef((props, ref) => {
             </ul>
         </div>
     )
-})
+}
 
 interface ProductPopoverButtonProps {
     className?: string

@@ -17,8 +17,8 @@ export default ((props: any) => (
     <Layout location={props.location}>
         <div className="home">
             <div className="home__intro container">
-                <div className="row">
-                    <div className="col-lg-6 mb-6 mb-lg-0">
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 mb-6 mb-lg-0">
                         <h1 className="home__intro-header display-3">The new standard developer platform</h1>
                         <p className="home__intro-text mt-3 font-weight-light">
                             Google &amp; Facebook invested $100Ms to build internal developer&nbsp;platforms for{' '}
@@ -52,7 +52,7 @@ export default ((props: any) => (
                         <GetStartedAction className="mt-5" />
                         <ContactPresalesSupportAction className="mt-2 text-light" />
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 d-none">
                         <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
                     </div>
                 </div>
