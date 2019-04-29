@@ -11,6 +11,7 @@ $font-family-base: 'Open Sans';
 $headings-font-family: 'Circular';
 
 $blue: #2c7ef6;
+$red: #dc3545;
 $brand-purple: #b200f8;
 $brand-cyan: #00b4f2;
 $brand-orange: #f96316;
@@ -27,6 +28,9 @@ $theme-colors: (
     'light': $light-11,
     'purple': $brand-purple,
     'gray': #cccccc,
+    'pink': lighten($red, 35%),
+    'light-orange': lighten($brand-orange, 35%),
+    'orange': $brand-orange,
 );
 
 $brand-primary: $brand-purple;
@@ -148,6 +152,10 @@ body {
     // overflow: hidden;
 
     border: 0;
+}
+
+.text-sans-serif {
+    font-family: $font-family-sans-serif;
 }
 
 @import 'circular-font';

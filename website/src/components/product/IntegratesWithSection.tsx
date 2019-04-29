@@ -1,7 +1,9 @@
 import React from 'react'
+import { SupportedProgrammingLanguagesLink } from './SupportedProgrammingLanguagesLink'
 
 interface IntegrationEntry {
     type: 'codeHost' | 'service' | 'plugin' | 'language'
+    codeReviewIntegration?: true
     iconUrl: string
     description: string
     width?: number
@@ -10,22 +12,26 @@ interface IntegrationEntry {
 const ENTRIES: IntegrationEntry[] = [
     {
         type: 'codeHost',
+        codeReviewIntegration: true,
         iconUrl: '/external-logos/github-horizontal-logo.svg',
         description: 'GitHub.com and GitHub Enterprise Server (code hosting and review)',
         width: 95,
     },
     {
         type: 'codeHost',
+        codeReviewIntegration: true,
         iconUrl: '/external-logos/gitlab-logo.svg',
         description: 'GitLab.com and self-managed GitLab CE/EE instances (code hosting and review)',
     },
     {
         type: 'codeHost',
+        codeReviewIntegration: true,
         iconUrl: '/external-logos/bitbucket-server-logo.svg',
         description: 'Bitbucket Server (code hosting and review)',
     },
     {
         type: 'codeHost',
+        codeReviewIntegration: true,
         iconUrl: '/external-logos/phabricator-logo.svg',
         description: 'Phabricator (code hosting and review)',
     },
@@ -148,15 +154,20 @@ const IntegrationEntriesRow: React.FunctionComponent<{
 export const IntegratesWithSection: React.FunctionComponent<{
     className?: string
     showTypes?: IntegrationEntry['type'][]
+    showOnlyCodeHostsWithCodeReviewIntegration?: boolean
     customTypeLabels?: Partial<Record<IntegrationEntry['type'], string>>
-}> = ({ className = '', showTypes, customTypeLabels }) => (
+}> = ({ className = '', showTypes, showOnlyCodeHostsWithCodeReviewIntegration, customTypeLabels }) => (
     <div className={`integrates-with-section ${className} mx-auto px-4`}>
         <h4 className="text-center font-weight-light">Integrates with your existing tools and workflow</h4>
         <div className="mt-6 mb-2">
             {(!showTypes || showTypes.includes('codeHost')) && (
                 <IntegrationEntriesRow
                     text={(customTypeLabels && customTypeLabels.codeHost) || 'Code hosting & review'}
-                    entries={ENTRIES.filter(e => e.type === 'codeHost')}
+                    entries={ENTRIES.filter(
+                        e =>
+                            e.type === 'codeHost' &&
+                            (!showOnlyCodeHostsWithCodeReviewIntegration || e.codeReviewIntegration)
+                    )}
                 />
             )}
             {(!showTypes || showTypes.includes('service')) && (
@@ -176,14 +187,8 @@ export const IntegratesWithSection: React.FunctionComponent<{
                     text={(customTypeLabels && customTypeLabels.language) || 'Programming languages'}
                 >
                     <div className="mt-1">
-                        All programming languages are supported.{' '}
-                        <a
-                            href="https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22"
-                            target="_blank"
-                        >
-                            24 programming languages
-                        </a>{' '}
-                        have additional code intelligence support.
+                        All programming languages are supported. <SupportedProgrammingLanguagesLink /> have additional
+                        code intelligence support.
                     </div>
                 </IntegrationEntriesRow>
             )}

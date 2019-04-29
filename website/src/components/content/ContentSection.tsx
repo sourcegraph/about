@@ -6,6 +6,9 @@ const COLORS = {
     gray: 'bg-dark text-light',
     purple: 'bg-purple text-light',
     primary: 'bg-primary text-light',
+    pink: 'bg-pink text-dark',
+    'light-orange': 'bg-light-orange text-dark',
+    orange: 'bg-orange text-light',
 }
 
 export const ContentSection: React.FunctionComponent<{

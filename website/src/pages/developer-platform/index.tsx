@@ -203,6 +203,10 @@ export default ((props: any) => (
                             quote="Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible."
                             by="Lyft engineering manager"
                         />
+                        <Blockquote
+                            quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
+                            by="Uber senior engineer"
+                        />
                     </div>
                 </div>
             </ContentSection>

@@ -4,6 +4,7 @@ import MegaphoneIcon from 'mdi-react/MegaphoneIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
 import ToolboxIcon from 'mdi-react/ToolboxIcon'
 import * as React from 'react'
+import { Blockquote } from '../../components/Blockquote'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
@@ -18,7 +19,6 @@ import { ContactPresalesSupportAction } from '../../css/components/actions/Conta
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { GetStartedAction } from '../../css/components/actions/GetStartedAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
-
 export default ((props: any) => {
     const actions = (
         <div className="d-flex justify-content-center mt-6">
@@ -112,6 +112,20 @@ export default ((props: any) => {
                 </ContentSection>
                 <ContentSection color="white">
                     <CustomerLogosSection className="pt-6 pb-4" />
+                    <div className="row">
+                        <div className="col-md-6">
+                            <Blockquote
+                                quote="Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible."
+                                by="Lyft engineering manager"
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <Blockquote
+                                quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
+                                by="Uber senior engineer"
+                            />
+                        </div>
+                    </div>
                     <hr />
                     <IntegratesWithSection className="mt-4 pt-5 pb-6" />
                 </ContentSection>

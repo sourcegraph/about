@@ -35,7 +35,7 @@ export default ((props: any) => (
                             , and{' '}
                             <Link
                                 className="home__intro-text-link home__intro-text-link-3"
-                                to="/product/code-rules-monitoring-automation"
+                                to="/product/code-alerts-automation"
                             >
                                 alerts &amp; automation
                             </Link>

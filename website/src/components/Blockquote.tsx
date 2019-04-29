@@ -4,12 +4,12 @@ export const Blockquote: React.FunctionComponent<{
     quote: string
     by?: string | React.ReactFragment
 }> = ({ quote, by }) => (
-    <blockquote className="p-2 text-muted bg-light rounded">
+    <blockquote className="p-3 bg-light rounded rounded-lg">
         &ldquo;{quote}&rdquo;
         {by && (
             <>
                 <br />
-                <div className="text-right">&mdash; {by}</div>
+                <div className="text-right text-muted">&mdash; {by}</div>
             </>
         )}
     </blockquote>

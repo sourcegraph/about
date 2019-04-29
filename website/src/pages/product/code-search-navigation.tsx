@@ -14,12 +14,14 @@ import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
+import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { UseCasesTable } from '../../components/product/UseCasesTable'
+import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
-import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -113,6 +115,12 @@ export default ((props: any) => (
                         <Blockquote
                             quote="Sourcegraph [code search] … has made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast."
                             by="Lyft engineering manager"
+                        />
+                    </div>
+                    <div className="col-md-4">
+                        <Blockquote
+                            quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
+                            by="Uber senior engineer"
                         />
                     </div>
                 </div>
@@ -305,13 +313,7 @@ export default ((props: any) => (
                                 package, dependency, and repository boundaries. Even if your IDE can do this,
                                 Sourcegraph lets you explore code intelligently in your web browser in any repository on
                                 any branch, instantly and without losing your local context. Works for{' '}
-                                <a
-                                    href="https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22"
-                                    target="_blank"
-                                >
-                                    24 programming languages
-                                </a>
-                                .
+                                <SupportedProgrammingLanguagesLink />.
                             </p>
                         </IconItem>
                     </div>
@@ -338,21 +340,7 @@ export default ((props: any) => (
                         </IconItem>
                     </div>
                     <div className="col-md-6 mb-4">
-                        <IconItem className="position-relative" icon={LockIcon} color="blue">
-                            <h4>Open-source, self-managed, &amp; privacy-respectful</h4>
-                            <p>
-                                Sourcegraph is{' '}
-                                <a href="https://docs.sourcegraph.com/#quickstart" target="_blank">
-                                    self-hosted
-                                </a>
-                                , so your code never leaves your network. And it's{' '}
-                                <a href="https://github.com/sourcegraph/sourcegraph" target="_blank">
-                                    open-source
-                                </a>{' '}
-                                (Apache 2.0), so you can verify this. (If you prefer not to self-manage your instance,
-                                we offer <Link to="/pricing">cloud-managed deployment</Link>, too.)
-                            </p>
-                        </IconItem>
+                        <OpenSourcePrivacyFeatureItem />
                     </div>
                 </div>
             </ContentSection>

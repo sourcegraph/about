@@ -12,7 +12,7 @@ interface ProductFeatureOrUseCase {
 export const PRODUCT_FEATURES: ProductFeatureOrUseCase[] = [
     { text: 'Code search', to: '/product/code-search-navigation' },
     { text: 'Code review', to: '/product/code-review' },
-    { text: 'Code alerts & automation', to: '/product/code-rules-monitoring-automation' },
+    { text: 'Code alerts & automation', to: '/product/code-alerts-automation' },
 ]
 
 export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
