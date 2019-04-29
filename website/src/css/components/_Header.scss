@@ -1,34 +1,7 @@
-// head
-
+// stylelint-disable declaration-property-unit-whitelist
 .header {
-    background-color: #f2f4f8;
-    padding: 1rem;
-
-    &--home {
-        background-color: inherit;
-    }
-    .navbar {
-        background-color: $light-11;
-        padding: 1rem;
-        z-index: 2;
-    }
-
-    &__nav-item {
-        margin-right: 1.5rem;
-    }
-
     &__nav-link {
-        color: $dark-7 !important;
-        padding: 0.25rem 0 !important;
-        &-active {
-            @media (min-width: $media-md) {
-                border-bottom: 0.125rem solid $blue-7;
-            }
-        }
-
-        &:hover {
-            opacity: 0.5;
-            transition: opacity 0.15s ease-in;
-        }
+        font-size: 0.9rem;
+        font-weight: 600;
     }
 }

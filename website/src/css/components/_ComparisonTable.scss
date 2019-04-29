@@ -36,9 +36,6 @@
 
 .table-row {
     &-mobile {
-        @media (min-width: $media-md) {
-            display: none;
-        }
         flex-direction: column;
         text-align: left;
         margin: auto auto;

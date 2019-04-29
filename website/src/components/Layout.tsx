@@ -1,14 +1,14 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import '../css/styles.scss'
-import Footer from './Footer'
+import { Footer } from './Footer'
 import Header from './Header'
 
 interface LayoutProps {
     location: {
         pathname: string
     }
-    children: JSX.Element
+    children: React.ReactNode
 }
 
 export default class Layout extends React.PureComponent<LayoutProps> {
@@ -37,6 +37,8 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                     <link rel="icon" type="image/png" href="https://about.sourcegraph.com/favicon.png" />
                     <link rel="icon" type="image/png" href="https://about.sourcegraph.com/sourcegraph-mark.png" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
                 </Helmet>
                 <Header isHome={isHome} isProductPage={isProductPage} />
                 <section className="d-flex flex-column fill-height">{this.props.children}</section>

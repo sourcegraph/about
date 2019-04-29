@@ -4,12 +4,6 @@
     padding: 2rem;
     margin: auto auto;
 
-    .form-area {
-        @media (min-width: $media-md) {
-            min-width: 28rem;
-        }
-    }
-
     // Hubspot form style overrides - child selectors + non-BEM OK
     /* stylelint-disable */
     .form {
@@ -75,13 +69,6 @@
             background-color: $green-1;
             border-radius: 0.3em;
             border: 1px solid $green-5;
-        }
-    }
-
-    .panel-area {
-        @media (min-width: $media-lg) {
-            margin: 3rem 0 3rem 0;
-            max-width: 32rem;
         }
     }
 

@@ -1,5 +1,4 @@
-// jobs page
-
+// stylelint-disable declaration-property-unit-whitelist
 .jobs {
     -webkit-font-smoothing: antialiased;
     width: 100%;
@@ -28,16 +27,13 @@
 
     &__benefits {
         background: $dark-8;
-        color: white;
+        color: #ffffff;
 
         &-list {
             display: flex;
             max-width: 64rem;
             margin-left: auto;
             margin-right: auto;
-            @media (max-width: $media-md) {
-                flex-direction: column;
-            }
 
             &-item {
                 display: flex;
@@ -46,11 +42,6 @@
                 flex-grow: 1;
                 text-align: left;
                 font-size: 0.875rem;
-
-                @media (max-width: $media-md) {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
 
                 &-icon {
                     margin-right: 1rem;
@@ -75,16 +66,12 @@
 
     &__work {
         background: $light-10;
-        color: black;
+        color: #000000;
 
         &--buttons {
             display: flex;
             justify-content: center;
             text-align: left;
-
-            @media (max-width: $media-lg) {
-                flex-direction: column;
-            }
 
             &-button {
                 display: flex;
@@ -124,7 +111,7 @@
 
     &__positions {
         background: $light-11;
-        color: black;
+        color: #000000;
 
         &--title {
             margin: auto auto;

@@ -15,7 +15,7 @@ export default class GraphQLSummitList extends React.Component<any, any> {
 
         return (
             <Layout location={this.props.location}>
-                <div className="gray-9">
+                <div className="gray-9 bg-white text-dark">
                     <Helmet>
                         <title>GraphQL Summit 2017 liveblog by Sourcegraph</title>
                         <meta name="twitter:title" content="GraphQL Summit 2017 liveblog by Sourcegraph" />

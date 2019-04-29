@@ -1,7 +1,7 @@
 ---
 title: 'Announcing Checkup: simple, self-hosted health checks'
 author: 'Beyang Liu'
-publishDate: 2016-06-08T11:31-07:00
+date: 2016-06-08T11:31-07:00
 tags: [
   "blog"
 ]

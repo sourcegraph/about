@@ -1,3 +1,4 @@
+// stylelint-disable declaration-property-unit-whitelist
 .blog-post {
     margin: auto;
     width: 980px;
@@ -18,7 +19,8 @@
         p {
             margin: 1rem 0;
         }
-        li > p:first-child, li > p:last-child {
+        li > p:first-child,
+        li > p:last-child {
             margin: 0;
         }
 
@@ -55,26 +57,6 @@
             border: 1px solid $light-11;
             padding: 0.25rem;
             margin: 0.5rem 0;
-        }
-    }
-
-    @media (max-width: $media-lg) {
-        width: 692px;
-        &__wrapper {
-            width: 83.3333%;
-        }
-    }
-
-    @media (max-width: $media-md) {
-        width: 87.5%;
-    }
-
-    @media (max-width: $media-sm) {
-        width: 100%;
-        &__title {
-            h1 {
-                font-size: 28px;
-            }
         }
     }
 }

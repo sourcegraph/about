@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
-import { OpenInAppIcon } from 'mdi-react'
 import * as React from 'react'
 import { eventLogger } from '../EventLogger'
+import { ProductPopoverButton } from './ProductPopover'
 
 interface HeaderProps {
     isHome?: boolean
@@ -26,11 +26,11 @@ export default class Header extends React.Component<HeaderProps, any> {
 
     public render(): JSX.Element | null {
         return (
-            <nav className="header navbar navbar-light navbar-expand-md">
+            <nav className="header navbar navbar-dark navbar-expand-md border-bottom p-3">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="https://sourcegraph.com/start">
-                        <img src="/sourcegraph/logo.svg" alt="logo" />
-                    </a>
+                    <Link className="navbar-brand" to="/">
+                        <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph logo" />
+                    </Link>
                     <button
                         className="navbar-toggler"
                         data-toggle="collapse"
@@ -45,6 +45,22 @@ export default class Header extends React.Component<HeaderProps, any> {
                         id="navcol-1"
                     >
                         <ul className="nav navbar-nav">
+                            <li className="header__nav-item nav-item" role="presentation">
+                                <Link
+                                    className="header__nav-link nav-link"
+                                    to="/developer-platform"
+                                    activeClassName="header__nav-link-active"
+                                >
+                                    What is a developer platform?
+                                </Link>
+                            </li>
+                            <li
+                                className="header__nav-item nav-item"
+                                role="presentation"
+                                onClick={() => eventLogger.trackProductClicked('header')}
+                            >
+                                <ProductPopoverButton className="header__nav-link nav-link" />
+                            </li>
                             <li className="header__nav-item nav-item" role="presentation" onClick={this.pricingClicked}>
                                 <Link
                                     className="header__nav-link nav-link"
@@ -56,7 +72,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                             </li>
                             <li className="header__nav-item nav-item" role="presentation" onClick={this.docsClicked}>
                                 <a className="header__nav-link nav-link" href="https://docs.sourcegraph.com">
-                                    Documentation
+                                    Docs
                                 </a>
                             </li>
                             <li className="header__nav-item nav-item" role="presentation" onClick={this.aboutClicked}>
@@ -78,14 +94,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 </Link>
                             </li>
                         </ul>
-                        {!(this.props.isHome || this.props.isProductPage) && (
-                            <a href="https://docs.sourcegraph.com/integration/browser_extension">
-                                <button className="btn btn-secondary" type="button">
-                                    <OpenInAppIcon className="material-icons" />
-                                    Install browser extension
-                                </button>
-                            </a>
-                        )}
                     </div>
                 </div>
             </nav>

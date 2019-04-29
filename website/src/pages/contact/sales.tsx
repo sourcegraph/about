@@ -24,12 +24,12 @@ export default class Trial extends React.Component<any, any> {
     public render(): JSX.Element | null {
         return (
             <Layout location={this.props.location}>
-                <div>
+                <div className="bg-white text-dark pt-6">
                     <div className="jumbotron text-right dark-7">
                         <div className="row">
                             <div className="sales py-0 d-flex flex-grow flex-column flex-lg-row align-items-center justify-content-around">
                                 <div>
-                                    <h1 className="text-center">Try Sourcegraph Enterprise free for 30 days</h1>
+                                    <h1 className="text-center">Try Sourcegraph Unlimited free for 30 days</h1>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,7 @@ export default class Trial extends React.Component<any, any> {
                     <section className="d-flex justify-content-around flex-column flex-lg-row sales">
                         <div className="panel-area mr-lg-5 mt-0 mb-2">
                             <div className="d-flex flex-column panel">
-                                <h3>Your team will love Sourcegraph Enterprise</h3>
+                                <h3>Your team will love Sourcegraph Unlimited</h3>
                                 <p>The best way to search and browse all of your organization's code, with:</p>
                                 <ul className="list pl0">
                                     <li className="mb-2">
@@ -52,7 +52,7 @@ export default class Trial extends React.Component<any, any> {
                                 <div className="panel__help">
                                     <strong>Need help?</strong>
                                     <p>
-                                        Contact us at <a href="https://twitter.com/srcgraph">@srcgraph</a> or{' '}
+                                        Contact us at{' '}
                                         <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>, or file
                                         issues on our{' '}
                                         <a href="https://github.com/sourcegraph/sourcegraph/issues">

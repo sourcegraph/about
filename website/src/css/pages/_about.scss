@@ -7,7 +7,7 @@
         padding: 3rem 0 0 0;
         background-color: $light-10;
         &-container {
-            background-color: white;
+            background-color: #ffffff;
             padding: 2rem 2rem;
             border-top-left-radius: 0.5rem;
             border-top-right-radius: 0.5rem;
@@ -44,10 +44,6 @@
             list-style-type: none;
             padding: 0;
 
-            @media (max-width: $media-sm) {
-                justify-content: unset;
-            }
-
             &-member {
                 border-radius: 0.25rem;
                 padding-right: 1rem;
@@ -60,9 +56,6 @@
                     width: 4rem;
                     border-top-left-radius: 0.5rem;
                     border-bottom-left-radius: 0.5rem;
-                }
-                @media (max-width: $media-md) {
-                    width: 100%;
                 }
             }
         }

@@ -1,46 +1,10 @@
-// testimonials
-.carousel {
+// stylelint-disable declaration-property-unit-whitelist
+.testimonials {
+    max-width: var(--breakpoint-lg);
+    margin: 0 auto;
     padding: 2rem 0;
     .twitter-tweet {
-        margin: 0 2rem;
-        @media (max-width: $media-lg) {
-            flex-direction: column;
-            margin: auto;
-        }
-    }
-    .carousel-inner {
-        padding: 0 1rem 0 1rem;
-    }
-    background: $light-12;
-    .carousel-control-prev,
-    .carousel-control-next {
-        opacity: 1;
-        width: 5%;
-    }
-    .carousel-control-prev {
-        width: 50px;
-        height: 100%;
-        background: linear-gradient(to right, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 100%);
-    }
-    .carousel-control-next {
-        width: 50px;
-        height: 100%;
-        background: linear-gradient(to left, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 100%);
-    }
-    .carousel-control-prev-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23dee2e6' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    }
-    .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23dee2e6' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-    }
-}
-
-.carousel-item-container {
-    min-height: 245px;
-    padding: 0 2rem;
-    @media (max-width: $media-lg) {
-        flex-direction: column;
-        min-height: 660px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

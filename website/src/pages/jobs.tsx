@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from 'mdi-react'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
@@ -21,7 +21,7 @@ export default class JobsPage extends React.Component<any, any> {
             'Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology.'
         return (
             <Layout location={this.props.location}>
-                <div className="jobs">
+                <div className="jobs bg-white text-dark">
                     <Helmet>
                         <title>Careers at Sourcegraph</title>
                         <meta name="twitter:title" content="Careers at Sourcegraph" />
@@ -105,7 +105,7 @@ export default class JobsPage extends React.Component<any, any> {
                             <div className="jobs__work--buttons">
                                 <a
                                     href="https://github.com/sourcegraph/go-langserver"
-                                    className="mr-lg-2 link"
+                                    className="mr-lg-2 link text-decoration-none"
                                     target="blank"
                                 >
                                     <div className="jobs__work--buttons-button">
@@ -122,7 +122,7 @@ export default class JobsPage extends React.Component<any, any> {
                                 </a>
                                 <a
                                     href="https://github.com/sourcegraph/javascript-typescript-langserver"
-                                    className="link"
+                                    className="link text-decoration-none"
                                     target="blank"
                                 >
                                     <div className="jobs__work--buttons-button">
