@@ -37,6 +37,7 @@ export default class BlogPosts extends React.Component<any, any> {
                                         : `/${this.props.blogType}/${post.node.frontmatter.slug}`
                                 }
                                 key={i}
+                                className="text-decoration-none"
                             >
                                 <div className="blog__posts--container" role="article">
                                     <div className="blog__posts--post">

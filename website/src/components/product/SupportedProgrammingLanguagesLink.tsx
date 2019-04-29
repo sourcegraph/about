@@ -1,7 +1,12 @@
 import React from 'react'
 
+export const SUPPORTED_PROGRAMMING_LANGUAGES_URL =
+    'https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22'
+
+export const SUPPORTED_PROGRAMMING_LANGUAGES_COUNT = 24
+
 export const SupportedProgrammingLanguagesLink: React.FunctionComponent<{}> = () => (
-    <a href="https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22" target="_blank">
-        24 programming languages
+    <a href={SUPPORTED_PROGRAMMING_LANGUAGES_URL} target="_blank">
+        {SUPPORTED_PROGRAMMING_LANGUAGES_COUNT} programming languages
     </a>
 )

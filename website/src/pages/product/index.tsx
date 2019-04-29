@@ -10,6 +10,7 @@ import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
+import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
@@ -36,7 +37,15 @@ export default ((props: any) => {
                 description="Ship better software faster with Sourcegraph, the developer platform with enhanced code search, review, and alerts & automation."
                 mainActions={actions}
             >
+                <PageSectionLinks
+                    sections={[
+                        { text: 'Features', url: '#features' },
+                        { text: 'Who uses it', url: '#customers' },
+                        { text: 'Integrations', url: '#integrations' },
+                    ]}
+                />
                 <ContentSection color="white" className="py-6">
+                    <span id="features" />
                     <div className="row">
                         <div className="col-md-6 mb-4">
                             <IconItem className="position-relative" icon={SearchIcon} color="brand-cyan">
@@ -107,11 +116,12 @@ export default ((props: any) => {
                         </div>
                     </div>
                 </ContentSection>
-                <ContentSection color="primary" className="py-6">
+                <ContentSection color="primary" className="py-6 d-none">
                     <ProductDemoVideo title="How software development is better with Sourcegraph" />
                     <ProductFeaturesAndUseCases className="mt-6" />
                 </ContentSection>
                 <ContentSection color="white">
+                    <span id="customers" />
                     <CustomerLogosSection className="pt-6 pb-4" />
                     <div className="row">
                         <div className="col-md-6">
@@ -128,6 +138,7 @@ export default ((props: any) => {
                         </div>
                     </div>
                     <hr />
+                    <span id="integrations" />
                     <IntegratesWithSection className="mt-4 pt-5 pb-6" />
                 </ContentSection>
                 <ContentSection color="black" className="py-6">

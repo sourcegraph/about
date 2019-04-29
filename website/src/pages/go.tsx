@@ -15,7 +15,7 @@ export default class GoList extends React.Component<any, any> {
 
         return (
             <Layout location={this.props.location}>
-                <div className="gray-9">
+                <div className="gray-9 bg-white text-dark">
                     <Helmet>
                         <title>Go conference liveblogs by Sourcegraph</title>
                         <meta name="twitter:title" content="Go conference liveblogs by Sourcegraph" />

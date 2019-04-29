@@ -15,7 +15,7 @@ interface Props {
     priceCaption?: string | React.ReactFragment
     features: PricingPlanFeature[]
     buttonLabel: string
-    buttonOnClick: () => void
+    buttonOnClick?: () => void
     buttonHref: string
 }
 
@@ -69,9 +69,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
                 <a
                     key={i}
                     href={`#${id}`}
-                    className={`list-group-item list-group-item-action bg-transparent border-0 py-1 ${
-                        future ? 'font-italic' : ''
-                    }`}
+                    className={`list-group-item list-group-item-action bg-transparent border-0 py-1`}
                 >
                     {name}
                 </a>

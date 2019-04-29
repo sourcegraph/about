@@ -17,7 +17,7 @@ export default class BlogList extends React.Component<any, any> {
 
         return (
             <Layout location={this.props.location}>
-                <div className="blog">
+                <div className="blog bg-white text-dark">
                     <Helmet>
                         <title>Plain Text - the official Sourcegraph blog</title>
                         <meta name="twitter:title" content="Plain Text - the official Sourcegraph blog" />

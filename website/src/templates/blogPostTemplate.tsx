@@ -55,7 +55,7 @@ export default class ContentfulTemplate extends React.Component<any, any> {
         }
         return (
             <Layout location={this.props.location}>
-                <div>
+                <div className="bg-white text-dark">
                     <Helmet>
                         <title>{title}</title>
                         <meta property="og:title" content={title} />

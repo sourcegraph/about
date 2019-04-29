@@ -62,10 +62,10 @@ export default ((props: any) => (
                 <hr />
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </div>
-            <div className="bg-primary py-6">
+            <div className="bg-primary py-6 d-none">
                 <ContentSection>
                     <ProductDemoVideo />
-                    <ProductFeaturesAndUseCases className="mt-6" />
+                    <ProductFeaturesAndUseCases />
                 </ContentSection>
             </div>
             <hr />

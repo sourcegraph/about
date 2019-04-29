@@ -15,7 +15,7 @@ export default class About extends React.Component<any, any> {
     public render(): JSX.Element | null {
         return (
             <Layout location={this.props.location}>
-                <div className="about">
+                <div className="about bg-white text-dark">
                     <Helmet>
                         <title>Sourcegraph - About</title>
                         <meta name="twitter:title" content="Sourcegraph - About" />
@@ -39,7 +39,7 @@ export default class About extends React.Component<any, any> {
                     </Helmet>
                     <div>
                         <div className="light-11-bg jumbotron about__jumbotron text-center">
-                            <div className="container">
+                            <div className="container py-5">
                                 <h1>
                                     The pace at which humans can write code is the only thing that stands between us and
                                     flying cars, a habitat on Mars, and a cure for cancer.
@@ -125,7 +125,7 @@ export default class About extends React.Component<any, any> {
                                     <div className="col">
                                         <div>
                                             <h1>Quinn Slack</h1>
-                                            <h5>ceo</h5>
+                                            <h5>CEO</h5>
                                             <div className="d-flex about__founders-social">
                                                 <a href="https://github.com/sqs" target="_blank">
                                                     <div className="icon">
@@ -175,7 +175,7 @@ export default class About extends React.Component<any, any> {
                                     <div className="col">
                                         <div>
                                             <h1>Beyang Liu</h1>
-                                            <h5>cto</h5>
+                                            <h5>CTO</h5>
                                             <div className="d-flex about__founders-social">
                                                 <a href="https://github.com/beyang" target="_blank">
                                                     <div className="icon">

@@ -27,7 +27,7 @@ $theme-colors: (
     'dark': $dark-9,
     'light': $light-11,
     'purple': $brand-purple,
-    'gray': #cccccc,
+    'gray': #dddddd,
     'pink': lighten($red, 35%),
     'light-orange': lighten($brand-orange, 35%),
     'orange': $brand-orange,
@@ -173,6 +173,7 @@ body {
 @import 'components/Header';
 @import 'components/Footer';
 @import 'components/Testimonials';
+@import 'components/PricingTable';
 @import 'components/IconItem';
 @import 'pages/404';
 @import 'pages/about';
@@ -187,5 +188,4 @@ body {
 @import 'pages/product/code-search-navigation';
 @import 'pages/sales';
 @import 'pages/uninstall';
-
-@import '../pages/pricing/PricingPlan.scss';
+@import 'components/PricingPlan';
