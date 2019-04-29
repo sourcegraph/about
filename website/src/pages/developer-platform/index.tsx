@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import * as React from 'react'
 import { Blockquote } from '../../components/Blockquote'
 import { ContentPage } from '../../components/content/ContentPage'
@@ -110,7 +111,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-6">
-                <h2 id="used-by" className="text-center">
+                <h2 id="used-by" className="text-center display-4">
                     The most elite software organizations use a developer platform
                 </h2>
                 <p className="text-center">
@@ -127,7 +128,6 @@ export default ((props: any) => (
                             <li>
                                 98% of developers say it is "critical" to their job (in a{' '}
                                 <a
-                                    className="link"
                                     href="https://docs.google.com/document/d/1LQxLk4E3lrb3fIsVKlANu_pUjnILteoWMMNiJQmqNVU/edit#heading=h.xxziwxixfqq3"
                                     target="_blank"
                                 >
@@ -138,23 +138,19 @@ export default ((props: any) => (
                             <li>$100Ms invested, with dozens of full-time engineers building it</li>
                             <li>
                                 Use cases and value are{' '}
-                                <a
-                                    className="link"
-                                    href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
-                                    target="_blank"
-                                >
-                                    documented in a Google-published research study
-                                </a>
+                                <Link to="/product/code-search-navigation#use-cases">
+                                    documented in a Google internal research study
+                                </Link>
                             </li>
                         </ul>
                         <Blockquote
-                            quote="Crucial to learning an area of codebase. … This tool is as critical as the code review tool to me. Without it I would be nothing. … I use it several times a minute while coding."
+                            quote="[It's] essential to be able to easily search [the] whole source … huge productivity boost: easy to find uses, defs, examples, etc."
                             by={
                                 <a
-                                    href="https://docs.google.com/document/d/1LQxLk4E3lrb3fIsVKlANu_pUjnILteoWMMNiJQmqNVU/edit#heading=h.8y8wjz142kaq"
+                                    href="https://static.googleusercontent.com/media/research.google.com/en/people/jeff/stanford-295-talk.pdf"
                                     target="_blank"
                                 >
-                                    Google engineers
+                                    Jeff Dean (Google Senior Fellow)
                                 </a>
                             }
                         />
@@ -248,7 +244,9 @@ export default ((props: any) => (
                 </div>
             </div>
             <ContentSection color="white" className="pt-4 pb-6 border-top border-gray">
-                <h2 className="text-center my-5">Sourcegraph is the new standard developer platform.</h2>
+                <h2 className="text-center my-5">
+                    Sourcegraph is the new standard developer platform for <em>every</em> company.
+                </h2>
                 <div className="border border-gray rounded w-75 mx-auto py-4">
                     <CustomerLogosSection />
                 </div>
