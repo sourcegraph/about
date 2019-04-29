@@ -37,9 +37,9 @@ export const Footer: React.FunctionComponent<any> = () => (
                         <li className="nav-item">
                             <Link to="/product">Product</Link>
                         </li>
-                        <li className="nav-item">
+                        {/*<li className="nav-item">
                             <Link to="/solutions">Use cases</Link>
-                        </li>
+</li> TODO(sqs)*/}
                         <li className="nav-item">
                             <Link to="/product">What is a developer platform?</Link>
                         </li>
