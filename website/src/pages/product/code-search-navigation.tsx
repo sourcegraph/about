@@ -19,6 +19,7 @@ import { UseCasesTable } from '../../components/product/UseCasesTable'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
+import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -60,7 +61,7 @@ export default ((props: any) => (
                             quote="[It's] essential to be able to easily search [the] whole source … huge productivity boost: easy to find uses, defs, examples, etc."
                             by={
                                 <a
-                                    href="https://static.googleusercontent.com/media/research.google.com/en/people/jeff/stanford-295-talk.pdf"
+                                    href="https://static.googleusercontent.com/media/research.google.com/en//people/jeff/stanford-295-talk.pdf"
                                     target="_blank"
                                 >
                                     Jeff Dean (Google Senior Fellow)
@@ -404,6 +405,9 @@ export default ((props: any) => (
                     </a>
                     .
                 </p>
+            </ContentSection>
+            <ContentSection color="black" className="py-5">
+                <EnterpriseReadySolution />
             </ContentSection>
             <Jumbotron
                 color="purple"

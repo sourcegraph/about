@@ -147,7 +147,7 @@ export default ((props: any) => (
                             quote="[It's] essential to be able to easily search [the] whole source … huge productivity boost: easy to find uses, defs, examples, etc."
                             by={
                                 <a
-                                    href="https://static.googleusercontent.com/media/research.google.com/en/people/jeff/stanford-295-talk.pdf"
+                                    href="https://static.googleusercontent.com/media/research.google.com/en//people/jeff/stanford-295-talk.pdf"
                                     target="_blank"
                                 >
                                     Jeff Dean (Google Senior Fellow)

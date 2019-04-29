@@ -16,7 +16,10 @@ export const EnterpriseReadySolution: React.FunctionComponent<{ className?: stri
         <div className="pt-5 row justify-content-between">
             <div className="col-md-4">
                 <h4 className="mb-1 font-weight-light">Proven at scale</h4>
-                <p>10,000s of developers and repositories on Sourcegraph? You're in good company.</p>
+                <p>
+                    10,000s of developers and repositories on Sourcegraph? You're in good company. Not at that scale?
+                    You'll still benefit from the robustness.
+                </p>
             </div>
             <div className="col-md-4">
                 <h4 className="mb-1 font-weight-light">24/7 support</h4>
