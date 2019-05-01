@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Security is Core to Everything We Do
+title: Security is core to everything we do
 permalink: security
 ---
 
@@ -10,14 +10,14 @@ We don&#39;t stop at keeping your code safe. When your team&#39;s developers use
 
 If you have specific questions or concerns, contact us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>.
 
-## Access Controls
+## Access controls
 
 - Access to all internal systems is protected by multi-factor authentication. Access is restricted to those who require it to perform their job, and is regularly reviewed and revoked upon termination or when no longer needed.
 - All application and user access logs are stored centrally and monitored.
 - Company policy prevents customer data from being downloaded to portable devices, such as laptops.
 - Device management is in place for remote wiping of all devices.
 
-## Network Security
+## Network security
 
 - All production systems are hosted on Google Cloud Platform (https://cloud.google.com/security/), where all storage volumes are encrypted at rest.
 - All external network communication between production services occur over HTTPS / TLS.
@@ -26,13 +26,13 @@ If you have specific questions or concerns, contact us at <a href="mailto:securi
 - Customer data can be deleted from all primary and backup systems within 7 days of request.
 - Recurring third party security assessments available on request
 
-## Site Security
+## Site security
 
 - All data from Sourcegraph.com (https://sourcegraph.com/) is transmitted over HTTPS.
 - Monitoring services alert our 24/7 support team of potential attacks.
 - Annual third party security assessments available on request - last report February 2017
 
-## Bug Reports
+## Bug reports
 
 If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. Please do not publicly disclose the issue until we’ve addressed it.
 
