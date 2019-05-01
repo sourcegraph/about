@@ -58,5 +58,16 @@
             padding: 0.25rem;
             margin: 0.5rem 0;
         }
+
+        code {
+            background-color: #f2f4f8;
+            display: inline-block;
+            padding: .1rem;
+            font-size: 1rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
     }
 }
