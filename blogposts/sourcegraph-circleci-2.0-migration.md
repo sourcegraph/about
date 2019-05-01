@@ -10,38 +10,76 @@ heroImage: /sourcegraph-mark.png
 published: false
 ---
 
-CircleCI 2.0 officially came out of beta in July 2017, one of the changes being a versioned config file in a new location: `.circle/config.yml`.
+In this post, we'll demonstrate how Sourcegraph code search can be used to report on the progress of a software upgrade.
 
-For an Engineering Manager managing the upgrade, the question will be _"How do I know which teams are yet to upgrade?"_.
+CircleCI 2.0 officially came out of beta in July 2017, introducing a versioned config file at `.circle/config.yml`, replacing the previous `circle.yml` file.
 
-Using [Sourcegraph.com](https://sourcegraph.com/) and [Segments open source code on GitHub](https://github.com/segmentio), let's search for all repositories in the `segmentio` GitHub organization that contain the 1.0 `circle.yml` file:
+If the Director of Engineering requested all teams upgrade to CircleCI 2.0, how could they track the progress company wide for all repositories?
 
-<a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/segmentio/+file:circle.yml">
+Using [Sourcegraph.com](https://sourcegraph.com/) and for examples sake, [Segment's open source code on GitHub](https://github.com/segmentio), let's search for repositories that contain the 1.0 `circle.yml` file:
 
-![](/blog/circleci-results.png)
+<div class="text-center" style="margin-bottom: -1rem">
 
-</a>
-
-<div class="text-center">
-
-  Query: [`repo:^github\.com/segmentio/ file:circle.yml`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/segmentio/+file:circle.yml).
+  Query: [`repo:/segmentio/ file:circle.yml`](https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml).
 
 </div>
 
-Typing this query every time would be inefficient so let's save this search:
+<a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
+  <img src="/blog/circleci-results.png" />
+</a>
 
-![](/blog/circleci-create-saved-search.png)
+<p style="margin-top:2rem">
+  Typing this query every time would be inefficient so let's save this query as a saved search:
+  <img src="/blog/circleci-create-saved-search.png" />
+</p>
 
-Then we can access it with a single click:
+<p style="margin-top:2rem">
+  Then we can access it with a single click:
+  <img src="/blog/circleci-access-saved-search.png" />
+</p>
 
-![](/blog/circleci-access-saved-search.png)
+<p style="margin-top:2rem">
+  We can take this a step further by opting to receive a notification when the number of results for <code>circle.yml</code> files change:
+  <img src="/blog/circleci-saved-search-notification.png" />
+</p>
 
-We can take this a step further by opting to receive a notification when the number of results for `circle.yml` files change:
+## Bonus queries
 
-![](/blog/circle-ci-saved-search-notification.png)
+If we wanted to find which repositories **have** been upgraded:
 
-Using Sourcegraph, finding answers in code across your organization with 10,000+ repositories and thousands of developers requires a web browser, and a simple query.
+<div class="text-center" style="margin-bottom: -1rem">
 
-Although we used CircleCI config files as an example, this same process applies to other upgrade/migration/change related tasks as well.
+Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/search?q=repo:/segmentio/+file:%5C.circleci/config%5C.yml).
 
-<style>.blog-post__body img { border: none; }</style>
+</div>
+
+<div class="text-center">
+  <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
+    <img src="/blog/circleci-results.png" />
+  </a>  
+</div>
+
+<p style="margin-top:2rem">
+  Using Sourcegraph's diff search (<code>type: diff</code>), we can find who made the commit that contained the upgrade:  
+</p>
+
+<div class="text-center" style="margin-bottom: -1rem">
+
+  Query: [`repo:/segmentio/ file:\.circleci/config\.yml type:diff "version: 2"`](https://sourcegraph.com/search?q=repo:/segmentio/+file:%5C.circleci/config%5C.yml+type:diff+%22version:+2%22).
+
+</div>
+
+<a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
+  <img src="circleci-who-upgraded.png" />
+</a>
+
+## Find answers in code with Sourcegraph
+
+Sourcegraph helps you find answers in code across your organization with 10,000+ repositories and thousands of developers.
+
+Although we used the CircleCI config file upgrade as this example, the same process applies well to other upgrade/migration/change related tasks.
+
+<style>
+  .blog-post__body img { border: none; }
+  .blog-post__body code { font-size: 0.9rem; }
+</style>
