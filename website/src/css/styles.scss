@@ -110,6 +110,8 @@ $input-placeholder-color: $gray-600;
 $input-focus-border-color: darken($component-active-bg, 25%);
 $input-focus-box-shadow: none;
 
+$list-group-action-hover-color: $link-hover-color;
+
 $popover-arrow-width: 0;
 $popover-arrow-color: transparent;
 $popover-arrow-outer-color: transparent;
@@ -124,6 +126,7 @@ $popover-max-width: 400px;
 @import 'node_modules/bootstrap/scss/transitions';
 @import 'node_modules/bootstrap/scss/nav';
 @import 'node_modules/bootstrap/scss/navbar';
+@import 'node_modules/bootstrap/scss/card';
 @import 'node_modules/bootstrap/scss/media';
 @import 'node_modules/bootstrap/scss/list-group';
 @import 'node_modules/bootstrap/scss/popover';
@@ -161,6 +164,29 @@ body {
 .popover-body {
     border: solid 1px $gray-200;
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 9px 3px;
+}
+
+// Formats an icon so that it appears inline in the text
+// with height matching the text
+.icon-inline {
+    // SVGs already include padding to account for text baseline,
+    // so align with the bottom of the text
+    vertical-align: bottom;
+    display: inline-flex;
+    align-items: center;
+}
+svg.icon-inline,
+img.icon-inline,
+.icon-inline svg,
+.icon-inline img {
+    // TODO find a better way to scale icons that is not proportional to the font size
+    // 14px font size -> 20px icon size
+    // stylelint-disable-next-line declaration-property-unit-whitelist
+    width: (20em / 14);
+    // stylelint-disable-next-line declaration-property-unit-whitelist
+    height: (20em / 14);
+    // Match color of the text
+    fill: currentColor;
 }
 
 @import 'circular-font';
