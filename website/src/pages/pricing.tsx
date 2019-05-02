@@ -78,6 +78,7 @@ export default ((props: any) => (
                                         id: 'deployment',
                                     },
                                     { name: 'Cloud-managed option', id: 'deployment' },
+                                    { name: 'Custom branding with your logo', id: 'admin' },
                                     { name: 'Priority support', id: 'support' },
                                 ]}
                                 plusEverythingIn="Core"

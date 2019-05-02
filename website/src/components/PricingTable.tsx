@@ -193,6 +193,10 @@ const DATA: PricingItemCategory[] = [
                 plans: ENTERPRISE_PLAN,
             },
             {
+                name: 'Custom branding with your logo',
+                plans: ENTERPRISE_PLAN,
+            },
+            {
                 name: 'External database storage',
                 url: 'https://docs.sourcegraph.com/admin/external_database',
                 plans: ENTERPRISE_PLAN,
