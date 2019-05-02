@@ -31,7 +31,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </a>
                             </li>
                         </ul>
-                        )}
                     </div>
                     <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
                         <h3 className="footer__nav-header">Why Sourcegraph?</h3>
