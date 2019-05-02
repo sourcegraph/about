@@ -189,6 +189,12 @@ img.icon-inline,
     fill: currentColor;
 }
 
+.container-lg {
+    max-width: var(--breakpoint-lg);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @import 'circular-font';
 @import 'components/ProductPopover';
 @import 'components/content/ContentPage';

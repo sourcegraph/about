@@ -51,7 +51,8 @@ export default ((props: any) => (
                             company, helping startups and large&nbsp;enterprises ship better software faster.
                         </p>
                         <GetStartedAction className="mt-5" />
-                        <ViewDeveloperDocumentationAction className="text-light mt-3" />
+                        <ContactPresalesSupportAction className="text-light mt-3" />
+                        <ViewDeveloperDocumentationAction className="text-light mt-2" />
                     </div>
                     <div className="col-lg-6 d-none">
                         <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />

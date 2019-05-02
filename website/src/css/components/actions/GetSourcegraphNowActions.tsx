@@ -13,9 +13,8 @@ export const GetSourcegraphNowActions: React.FunctionComponent<any> = () => (
             }}
         >
             <GetStartedAction className="mt-4" />
-            {/*<ContactPresalesSupportAction className="text-light mt-2" />*/}
-            {/* TODO(sqs): add back when form works */}
-            <ViewDeveloperDocumentationAction className="text-light mt-3 mb-3" />
+            <ContactPresalesSupportAction className="text-light mt-3" />
+            <ViewDeveloperDocumentationAction className="text-light mt-2 mb-3" />
         </div>
     </div>
 )
