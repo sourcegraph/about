@@ -13,8 +13,8 @@ import { IntegratesWithSection } from '../../components/product/IntegratesWithSe
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
+import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
-import { GetStartedAction } from '../../css/components/actions/GetStartedAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -23,14 +23,20 @@ export default ((props: any) => (
             description="Continuously monitor all changes to all repositories for risky or important changes. Get instant email, Slack, or webhook notifications for every hit."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
-                    <GetStartedAction className="mt-4" />
+                    <RequestDemoAction className="mt-3" />
+                    <ContactPresalesSupportAction className="mt-3 text-light" />
                     <ViewDeveloperDocumentationAction
-                        className="text-light my-3"
+                        className="text-light mt-2"
                         url="https://docs.sourcegraph.com/user/search/saved_searches"
                     >
                         Documentation
                     </ViewDeveloperDocumentationAction>
-                    {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
+                    <ViewDeveloperDocumentationAction
+                        className="text-light mt-2"
+                        url="https://docs.sourcegraph.com/#quickstart"
+                    >
+                        Install
+                    </ViewDeveloperDocumentationAction>
                 </div>
             }
         >

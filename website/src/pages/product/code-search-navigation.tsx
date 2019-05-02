@@ -20,6 +20,7 @@ import { SupportedProgrammingLanguagesLink } from '../../components/product/Supp
 import { UseCasesTable } from '../../components/product/UseCasesTable'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
+import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
@@ -29,16 +30,14 @@ export default ((props: any) => (
             description="Code search helps you grok code so you can write better code more quickly. Sourcegraph's code search is used by elite software teams."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
-                    <a className="btn btn-primary mb-2" href="https://docs.sourcegraph.com/#quickstart">
-                        Install
-                    </a>
+                    <RequestDemoAction className="mt-3" />
+                    <ContactPresalesSupportAction className="mt-3 text-light" />
                     <ViewDeveloperDocumentationAction
-                        className="text-light my-1"
-                        url="https://docs.sourcegraph.com/user/search"
+                        className="text-light mt-2"
+                        url="https://docs.sourcegraph.com/#quickstart"
                     >
-                        Code search documentation
+                        Documentation &amp; self-service install
                     </ViewDeveloperDocumentationAction>
-                    {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
                 </div>
             }
         >

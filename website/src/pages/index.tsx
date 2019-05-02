@@ -11,7 +11,7 @@ import { ProductFeaturesAndUseCases } from '../components/product/ProductFeature
 import { Testimonials } from '../components/Testimonials'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
-import { GetStartedAction } from '../css/components/actions/GetStartedAction'
+import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
@@ -50,7 +50,7 @@ export default ((props: any) => (
                             <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to every
                             company, helping startups and large&nbsp;enterprises ship better software faster.
                         </p>
-                        <GetStartedAction className="mt-5" />
+                        <RequestDemoAction className="mt-5" />
                         <ContactPresalesSupportAction className="text-light mt-3" />
                         <ViewDeveloperDocumentationAction className="text-light mt-2" />
                     </div>

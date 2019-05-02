@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContactPresalesSupportAction } from './ContactPresalesSupportAction'
-import { GetStartedAction } from './GetStartedAction'
+import { RequestDemoAction } from './RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from './ViewDeveloperDocumentationAction'
 
 export const GetSourcegraphNowActions: React.FunctionComponent<any> = () => (
@@ -12,7 +12,7 @@ export const GetSourcegraphNowActions: React.FunctionComponent<any> = () => (
                 boxShadow: 'rgba(255,255,255,0.3) 0 0 30px 20px',
             }}
         >
-            <GetStartedAction className="mt-4" />
+            <RequestDemoAction className="mt-4" />
             <ContactPresalesSupportAction className="text-light mt-3" />
             <ViewDeveloperDocumentationAction className="text-light mt-2 mb-3" />
         </div>
