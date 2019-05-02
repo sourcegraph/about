@@ -1,13 +1,13 @@
 ---
-title: 'Using Sourcegraph to help teams migrate to CircleCI 2.0'
+title: 'Tip: Using Sourcegraph code search to help teams migrate to CircleCI 2.0'
 author: Ryan Blunden
-publishDate: 2019-05-01T10:00-07:00
+publishDate: 2019-05-02T10:00-07:00
 tags: [
   blog
 ]
 slug: sourcegraph-circleci-2.0-migration
 heroImage: /sourcegraph-mark.png
-published: false
+published: true
 ---
 
 In this post, we'll explain how Sourcegraph code search can be used to report on the progress of upgrading CircleCI config files to the 2.0 format.
