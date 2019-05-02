@@ -198,6 +198,10 @@ const DATA: PricingItemCategory[] = [
                 plans: ENTERPRISE_PLAN,
             },
             {
+                name: 'Custom branding',
+                plans: ENTERPRISE_PLAN,
+            },
+            {
                 name: 'Extension whitelist',
                 url:
                     'https://docs.sourcegraph.com/admin/extensions#allow-only-specific-extensions-from-sourcegraph-com',
