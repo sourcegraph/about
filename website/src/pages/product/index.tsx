@@ -18,15 +18,15 @@ import { ProductDemoVideo } from '../../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../../components/product/ProductFeaturesAndUseCases'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
-import { GetStartedAction } from '../../css/components/actions/GetStartedAction'
+import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 export default ((props: any) => {
     const actions = (
         <div className="d-flex justify-content-center mt-6">
             <div>
-                <GetStartedAction />
-                {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
-                <ViewDeveloperDocumentationAction className="mt-3 text-light" />
+                <RequestDemoAction />
+                <ContactPresalesSupportAction className="mt-3 text-light" />
+                <ViewDeveloperDocumentationAction className="mt-2 text-light" />
             </div>
         </div>
     )

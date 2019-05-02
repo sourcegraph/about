@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
@@ -79,6 +80,7 @@ export default ((props: any) => (
                                     { name: 'Cloud-managed option', id: 'deployment' },
                                     { name: 'Priority support', id: 'support' },
                                 ]}
+                                plusEverythingIn="Core"
                                 buttonLabel="Buy now"
                                 buttonHref="http://sourcegraph.com/subscriptions/new"
                             />
@@ -113,8 +115,9 @@ export default ((props: any) => (
                                     },
                                     { name: 'Audit logs', id: 'admin', future: true },
                                 ]}
+                                plusEverythingIn="Enterprise"
                                 buttonLabel="Buy now"
-                                buttonHref="/contact/sales"
+                                buttonHref="http://sourcegraph.com/subscriptions/new"
                             />
                         </div>
                     </div>
@@ -122,9 +125,15 @@ export default ((props: any) => (
             </div>
             <ContentSection color="purple" className="hero-section text-center py-5">
                 <h2>Try Sourcegraph Unlimited risk-free for 30 days</h2>
-                <a className="btn btn-lg btn-outline-light mt-3" href="/contact/sales">
+                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/request-demo">
                     Free trial
-                </a>
+                </Link>
+            </ContentSection>
+            <ContentSection color="primary" className="hero-section text-center py-5">
+                <h2>Questions?</h2>
+                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/sales">
+                    Contact sales
+                </Link>
             </ContentSection>
             <div className="pricing-page__compare container-fluid py-6">
                 <h2 className="text-center display-4 mb-6">Compare plans</h2>

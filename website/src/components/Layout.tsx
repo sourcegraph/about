@@ -9,6 +9,7 @@ interface LayoutProps {
         pathname: string
     }
     children: React.ReactNode
+    minimal?: boolean
 }
 
 export default class Layout extends React.PureComponent<LayoutProps> {
@@ -40,9 +41,9 @@ export default class Layout extends React.PureComponent<LayoutProps> {
 
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
                 </Helmet>
-                <Header isHome={isHome} isProductPage={isProductPage} />
+                <Header isHome={isHome} isProductPage={isProductPage} minimal={this.props.minimal} />
                 <section className="d-flex flex-column fill-height">{this.props.children}</section>
-                <Footer />
+                <Footer minimal={this.props.minimal} />
             </div>
         )
     }

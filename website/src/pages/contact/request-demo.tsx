@@ -1,37 +1,14 @@
 import React, { useLayoutEffect } from 'react'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { eventLogger } from '../../EventLogger'
-
-interface HubSpotForm {
-    portalId: string
-    formId: string
-    targetId: string
-    onFormSubmit?: () => void
-}
-
-export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit }: HubSpotForm): void {
-    const script = document.createElement('script')
-    script.src = '//js.hsforms.net/forms/v2.js'
-    const hubspot = document.getElementById(targetId)
-    hubspot!.appendChild(script)
-    script.addEventListener('load', () => {
-        ;(window as any).hbspt.forms.create({
-            portalId,
-            formId,
-            target: `#${targetId}`,
-            onFormSubmit,
-        })
-    })
-}
+import { createHubSpotForm } from './sales'
 
 export default ((props: any) => {
     useLayoutEffect(() => {
         createHubSpotForm({
             portalId: '2762526',
-            formId: '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9',
-            targetId: 'hubspotContactForm',
-            onFormSubmit: () => eventLogger.trackContactUsFormSubmitted(),
+            formId: '310000a0-2b6b-4da2-89e9-2be930a8a298',
+            targetId: 'hubspotRequestDemoForm',
         })
     }, [])
     return (
@@ -41,12 +18,12 @@ export default ((props: any) => {
                 <div className="container-lg py-6 px-5">
                     <div className="row flex-wrap-reverse">
                         <div className="col-md-6">
-                            <h1 className="display-4">Contact product specialist</h1>
+                            <h1 className="display-4">Request a demo</h1>
                             <h3 className="font-weight-light text-sans-serif">
-                                Let us know how we can help. We'll follow up soon.
+                                We'll reach out to discuss a product demo and trial.
                             </h3>
                             <div className="form mt-5">
-                                <div id="hubspotContactForm" className="d-flex justify-center" />
+                                <div id="hubspotRequestDemoForm" className="d-flex justify-center" />
                             </div>
                         </div>
                         <div className="col-md-6">

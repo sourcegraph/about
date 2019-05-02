@@ -19,6 +19,7 @@ import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourc
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
+import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
@@ -28,19 +29,20 @@ export default ((props: any) => (
             description="Start doing code reviews right. Sourcegraph enhances your existing code review tool with inline code intelligence, helping you speed up the review cycle and catch more bugs before they're deployed to production."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
+                    <RequestDemoAction className="mt-3" />
                     <a
-                        className="btn btn-primary mb-2"
+                        className="btn btn-outline-primary mt-3"
                         href="https://docs.sourcegraph.com/integration/browser_extension"
                     >
                         Install browser extension
                     </a>
+                    <ContactPresalesSupportAction className="mt-3 text-light" />
                     <ViewDeveloperDocumentationAction
-                        className="text-light my-1"
+                        className="text-light mt-2"
                         url="https://docs.sourcegraph.com/integration"
                     >
                         Code review integrations documentation
                     </ViewDeveloperDocumentationAction>
-                    {/*<ContactPresalesSupportAction className="text-light" /> TODO(sqs) */}
                 </div>
             }
         >

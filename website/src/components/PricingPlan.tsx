@@ -14,6 +14,7 @@ interface Props {
     priceInterval?: string | React.ReactFragment
     priceCaption?: string | React.ReactFragment
     features: PricingPlanFeature[]
+    plusEverythingIn?: string
     buttonLabel: string
     buttonOnClick?: () => void
     buttonHref: string
@@ -36,11 +37,12 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     ),
     priceCaption,
     features,
+    plusEverythingIn,
     buttonLabel,
     buttonOnClick,
     buttonHref,
 }) => (
-    <div className={`card pricing__card ${className}`}>
+    <div className={`card border-0 pricing__card ${className}`}>
         <h1 className="card-title border-bottom py-2">{name}</h1>
         <div className="card-body py-1 pricing-plan__description text-center flex-grow-0">{description}</div>
         <div className="card-body pt-2 d-flex flex-column align-items-center flex-grow-0">
@@ -74,6 +76,11 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
                     {name}
                 </a>
             ))}
+            {plusEverythingIn && (
+                <div className="list-group-item border-0 text-muted font-italic pt-1">
+                    Plus everything in {plusEverythingIn}
+                </div>
+            )}
         </div>
     </div>
 )
