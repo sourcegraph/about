@@ -199,6 +199,7 @@ const DATA: PricingItemCategory[] = [
             },
             {
                 name: 'Custom branding',
+                url: 'https://docs.sourcegraph.com/admin/config/site_config#reference',
                 plans: ENTERPRISE_PLAN,
             },
             {
