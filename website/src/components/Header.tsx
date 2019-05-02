@@ -45,7 +45,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                         id="navcol-1"
                     >
                         <ul className="nav navbar-nav">
-                            <li className="header__nav-item nav-item" role="presentation">
+                            <li className="header__nav-item nav-item d-none d-lg-block" role="presentation">
                                 <Link
                                     className="header__nav-link nav-link"
                                     to="/developer-platform"
@@ -92,6 +92,24 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 >
                                     Blog
                                 </Link>
+                            </li>
+                            <li className="header__nav-item nav-item" role="presentation">
+                                <a
+                                    className="header__nav-link nav-link"
+                                    href="https://sourcegraph.com/sign-in"
+                                    title="For public code only on Sourcegraph.com"
+                                >
+                                    Sign in
+                                </a>
+                            </li>
+                            <li className="header__nav-item nav-item" role="presentation">
+                                <a
+                                    className="header__nav-link nav-link"
+                                    href="https://sourcegraph.com/sign-up"
+                                    title="For public code only on Sourcegraph.com"
+                                >
+                                    Sign up
+                                </a>
                             </li>
                         </ul>
                     </div>
