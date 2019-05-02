@@ -72,6 +72,7 @@ export default ((props: any) => (
                                     { name: 'Code review & pull request integration', id: 'code-review' },
                                     { name: 'Code alerts & automation', id: 'code-alerts-automation' },
                                     { name: 'Repository access permissions', id: 'admin' },
+                                    { name: 'Custom branding', id: 'admin' },
                                     { name: 'Deployment metrics & monitoring', id: 'deployment' },
                                     {
                                         name: 'High-scale/availability cluster deployment option',
