@@ -12,7 +12,7 @@ published: false
 
 In this post, we'll explain how Sourcegraph code search can be used to report on the progress of upgrading CircleCI config files to the 2.0 format.
 
-CircleCI 2.0 officially came out of beta in July 2017, introducing a versioned config file at `.circle/config.yml`, replacing the previous `circle.yml` file. A likely scenario could be an Engineering Manager requesting all teams upgrade to CircleCI 2.0, and wants to track the progress for all repositories without human intervention.
+CircleCI 2.0 officially came out of beta in July 2017, introducing a versioned config file (`.circleci/config.yml`) to replace the previous `circle.yml` file. A likely scenario could be an Engineering Manager requesting all teams upgrade to CircleCI 2.0 and wanting to track progress without human intervention.
 
 Using [Sourcegraph.com](https://sourcegraph.com/) and as an example, [Segment's open source code on GitHub](https://github.com/segmentio), let's search for repositories that contain the 1.0 `circle.yml` file:
 
@@ -74,9 +74,9 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 
 ## Find answers in code with Sourcegraph
 
-Sourcegraph helps you find answers in code company wide, supporting 10,000+ repositories and thousands of developers.
+Sourcegraph helps you find answers in code, supporting 10,000+ repositories and thousands of developers.
 
-Although upgrading CircleCI config files was used in this example, the same process could apply to other use cases such as tracking the removal redundant of a Node.js package.
+Although this example was specific to CircleCI config files, the concepts apply equally well for many other similar use cases, such as tracking the removal of a deprecated Node.js package.
 
 <style>
   .blog-post__body img { border: none; }
