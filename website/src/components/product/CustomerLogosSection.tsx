@@ -23,6 +23,10 @@ const ITEMS: (
         description: 'hospitality company',
         className: 'customer-logos-section__item-logo-synthesized-0',
     },
+    {
+        name: 'Plaid',
+        url: '/external-logos/plaid-logo.svg',
+    },
     // {
     //     topN: 5,
     //     description: 'media company',
