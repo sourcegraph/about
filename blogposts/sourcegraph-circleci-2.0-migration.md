@@ -23,23 +23,23 @@ Using [Sourcegraph.com](https://sourcegraph.com/) and as an example, [Segment's 
 </div>
 
 <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
-  <img src="/blog/circleci-results.png" />
+  <img src="https://about.sourcegraph.com/blog/circleci-results.png" />
 </a>
 
 <p style="margin-top:2rem">
   Typing this query every time would be inefficient, so let's save this query as a saved search.
-  <img src="/blog/circleci-create-saved-search.png" />
+  <img src="https://about.sourcegraph.com/blog/circleci-create-saved-search.png" />
 </p>
 
 <p style="margin-top:2rem">
   Then we can access it with a single click.
-  <img src="/blog/circleci-access-saved-search.png" />
+  <img src="https://about.sourcegraph.com/blog/circleci-access-saved-search.png" />
 </p>
 
 <!--
 TODO(ryan): Needs type:diff <p style="margin-top:2rem">
   We can take this a step further by opting to receive a notification when the number of results for <code>circle.yml</code> files change:
-  <img src="/blog/circleci-saved-search-notification.png" />
+  <img src="https://about.sourcegraph.com//blog/circleci-saved-search-notification.png" />
 </p> -->
 
 ## Bonus queries
@@ -54,7 +54,7 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 
 <div class="text-center">
   <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
-    <img src="/blog/circleci-results.png" />
+    <img src="https://about.sourcegraph.com/blog/circleci-results.png" />
   </a>  
 </div>
 
@@ -69,7 +69,7 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 </div>
 
 <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
-  <img src="circleci-who-upgraded.png" />
+  <img src="https://about.sourcegraph.com/blog/circleci-who-upgraded.png" />
 </a>
 
 ## Find answers in code with Sourcegraph
