@@ -10,9 +10,9 @@ heroImage: /sourcegraph-mark.png
 published: true
 ---
 
-In this post, we'll explain how the Sourcegraph code search can be used to report on the progress of upgrading CircleCI config files to the 2.0 format. A likely scenario could be an Engineering Manager requesting all teams upgrade to CircleCI 2.0 and wanting to track progress without human intervention.
+In this post, we'll explain how the Sourcegraph code search can be used to report on the progress of upgrading CircleCI config files to the 2.0 format.
 
-A bit of background: CircleCI 2.0 officially came out of beta in July 2017. At that time, it introduced a versioned config file (`.circleci/config.yml`) to replace the previous `circle.yml` file. 
+A bit of background: CircleCI 2.0 officially came out of beta in July 2017. At that time, it introduced a versioned config file (`.circleci/config.yml`) to replace the previous `circle.yml` file.  A likely scenario could be an Engineering Manager requesting all teams upgrade to CircleCI 2.0 and wanting to track progress without human intervention.
 
 Using [Sourcegraph.com](https://sourcegraph.com/) and as an example, [Segment's open source code on GitHub](https://github.com/segmentio), let's search for repositories that contain the 1.0 `circle.yml` file:
 
