@@ -33,7 +33,7 @@ export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
 const ProductPopoverBody: React.FunctionComponent<any> = () => {
     const itemClassName = 'rounded'
     return (
-        <div className="p-3">
+        <div className="product-popover-body p-3">
             <div className="list-group list-group-flush">
                 <Link
                     to="/product"
@@ -80,7 +80,7 @@ interface ProductPopoverButtonProps {
 export const ProductPopoverButton: React.FunctionComponent<ProductPopoverButtonProps> = ({ className = '' }) => (
     <>
         <HoverablePopover placement="bottom" delay={{ show: 0, hide: 500 }} component={<ProductPopoverBody />}>
-            <Link className={`product-popover-button__btn nav-link outline-0 ${className}`} to="/product">
+            <Link className={`nav-link outline-0 ${className}`} to="/product">
                 Product
             </Link>
         </HoverablePopover>
