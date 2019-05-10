@@ -2,6 +2,8 @@ import CheckIcon from 'mdi-react/CheckIcon'
 import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import QuestionMarkCircleOutlineIcon from 'mdi-react/QuestionMarkCircleOutlineIcon'
 import React from 'react'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
 import {
     SUPPORTED_PROGRAMMING_LANGUAGES_COUNT,
     SUPPORTED_PROGRAMMING_LANGUAGES_URL,
@@ -319,16 +321,23 @@ export const PricingTable: React.FunctionComponent<{
                             <div className="col-4 pricing-table__item-name">
                                 <div className="p-2">
                                     {name}
-                                    {description && !url && (
-                                        <span title={description} className="text-muted ml-2">
-                                            <QuestionMarkCircleOutlineIcon />
+                                    <OverlayTrigger
+                                        placement="auto"
+                                        overlay={description ? <Tooltip id="tooltip">{description}</Tooltip> : <span />}
+                                    >
+                                        <span>
+                                            {description && !url && (
+                                                <span className="text-muted ml-2">
+                                                    <QuestionMarkCircleOutlineIcon />
+                                                </span>
+                                            )}
+                                            {url && (
+                                                <a href={url} target="_blank" className="text-muted ml-2">
+                                                    <ExternalLinkIcon />
+                                                </a>
+                                            )}
                                         </span>
-                                    )}
-                                    {url && (
-                                        <a title={description} href={url} target="_blank" className="text-muted ml-2">
-                                            <ExternalLinkIcon />
-                                        </a>
-                                    )}
+                                    </OverlayTrigger>
                                 </div>
                             </div>
                             {allPlans.map(plan => (
