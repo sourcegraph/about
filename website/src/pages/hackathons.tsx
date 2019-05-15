@@ -31,11 +31,11 @@ export default class Pricing extends React.Component<any, any> {
                         <meta property="og:title" content="Set up Sourcegraph at a Hackathon" />
                     </Helmet>
                     <div className="pricing-bg" />
-                    <div className="jumbotron text-right dark-7">
+                    <div className="jumbotron text-right">
                         <div className="row">
                             <div className="sales py-0 d-flex flex-grow flex-column flex-lg-row align-items-center justify-content-around">
                                 <div>
-                                    <h1 className="text-center">Set up Sourcegraph during a hackathon</h1>
+                                    <h1 className="text-center mt-4">Set up Sourcegraph during a hackathon</h1>
                                     <p className="text-center measure">
                                         We'll give you access to Sourcegraph Enterprise features so you can ship code
                                         search and intelligence to your team.
@@ -44,7 +44,7 @@ export default class Pricing extends React.Component<any, any> {
                             </div>
                         </div>
                     </div>
-                    <section className="d-flex justify-content-around flex-column flex-lg-row sales bg-white">
+                    <section className="d-flex justify-content-around flex-column flex-lg-row sales bg-white text-dark">
                         <div className="panel-area mr-lg-5 mt-0 mb-2">
                             <div className="d-flex flex-column panel">
                                 <p>
