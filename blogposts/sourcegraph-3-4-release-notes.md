@@ -76,9 +76,42 @@ The [changelog for this and previous releases](https://github.com/sourcegraph/so
 
 Thank you to the many people who contributed to make Sourcegraph better since the last release!
 
-<!--
-  Generate the list of people who contributed (created tickets) by using the script at https://gist.github.com/ryan-blunden/c8898c989b48ba7a83e64ff9ae242cc2
--->
+- [@akshetpandey](https://github.com/akshetpandey)
+- [@IntelDan](https://github.com/IntelDan)
+- [@wxio](https://github.com/wxio)
+- [@b-j-p](https://github.com/b-j-p)
+- [@sriniCA](https://github.com/sriniCA)
+- [@JP3BGY](https://github.com/JP3BGY)
+- [@MaxLeiter](https://github.com/MaxLeiter)
+- [@jlangston](https://github.com/jlangston)
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@ijsnow](https://github.com/ijsnow)
+- [@siddharthab](https://github.com/siddharthab)
+- [@aisbaa](https://github.com/aisbaa)
+- [@yevbar](https://github.com/yevbar)
+- [@anishhegde](https://github.com/anishhegde)
+- [@calvn](https://github.com/calvn)
+- [@kevinchen94](https://github.com/kevinchen94)
+- [@chadasapp](https://github.com/chadasapp)
+- [@thewarpaint](https://github.com/thewarpaint)
+- [@djuarezg](https://github.com/djuarezg)
+- [@francisschmaltz](https://github.com/francisschmaltz)
+- [@GotenXiao](https://github.com/GotenXiao)
+- [@sslavian812](https://github.com/sslavian812)
+- [@craffert0](https://github.com/craffert0)
+- [@keremgocen](https://github.com/keremgocen)
+- [@jamidwyer](https://github.com/jamidwyer)
+- [@sickyoon](https://github.com/sickyoon)
+- [@carloslfu](https://github.com/carloslfu)
+- [@JoshuaKGoldberg](https://github.com/JoshuaKGoldberg)
+- [@sfllaw](https://github.com/sfllaw)
+- [@thinktopdown](https://github.com/thinktopdown)
+- [@kofoworola](https://github.com/kofoworola)
+- [@todo[bot]](https://github.com/apps/todo)
+- [@postables](https://github.com/postables)
+- [@jacks0n](https://github.com/jacks0n)
+- [@markus-wa](https://github.com/markus-wa)
+- [@abeyerpath](https://github.com/abeyerpath)
 
 ## Install or upgrade
 
