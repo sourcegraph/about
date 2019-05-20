@@ -76,7 +76,7 @@ As a result, AWS CodeCommit and Gitolite get a new `exclude` field, plus AWS Cod
 
 Storing site and critical configuration in the database (as of Sourcegraph 3.0), suits most deployments, but for teams requiring config changes to go through code review, Sourcegraph now provides the option of loading configuration from a file or ConfigMap.
 
-[Site config], [critical config], or [external services] config can be loaded from the file system or ConfigMap if the following environment variables are set on the server:
+[Site config](https://docs.sourcegraph.com/admin/config/site_config), [critical config](https://docs.sourcegraph.com/admin/config/critical_config), or [external services](https://docs.sourcegraph.com/admin/external_service) config can be loaded from the file system or ConfigMap if the following environment variables are set on the server:
 
 ```bash
 CRITICAL_CONFIG_FILE=critical.json
