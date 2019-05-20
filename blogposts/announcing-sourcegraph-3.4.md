@@ -10,40 +10,32 @@ heroImage: /sourcegraph-mark.png
 published: true
 ---
 
-We're excited to announce Sourcegraph 3.4. Sourcegraph is a code search and navigation tool (self-hosted, open-source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
+[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company can get access to the same kind of tools that Google and Facebook developers use every day.
 
-This release makes Sourcegraph more flexible and configurable to meet the needs of [large enterprises](https://about.sourcegraph.com/), such as Uber, Lyft and Yelp. Our customers rely on Sourcegraph syncing and searching 30,000 plus repositories, with thousands of daily users.
-
-To meet these needs, this release focussed on improving search performance, adding new configuration options, enhanced repository syncing logic to reduce code host API calls, and providing customers with a standard set of monitoring, tracing and diagnostic tools to help them resolve issues faster.
+We're excited to announce Sourcegraph 3.4. This release makes Sourcegraph more flexible and configurable to meet the needs of [our large enterprise customers](https://about.sourcegraph.com/), such as Uber, Lyft and Yelp. Our customers rely on Sourcegraph to search across 30,000+ repositories, with 1,000s of daily users on single instances.
 
 <div style="padding-left: 2rem">
 
 [**🗺 Browser extension now supports repository path mapping**](#browser-extension-now-supports-repository-path-mapping)<br />
-Get shorter repository path URLs in Sourcegraph.
+Get shorter repository URLs in Sourcegraph.
 
 [**🛠 Code host sync improvements for AWS CodeCommit and Gitolite**](#code-host-sync-improvements-for-aws-codecommit-and-gitolite)<br />
-Easily manage thousands of repositories, plus AWS CodeCommit gets new gitCredentials field.
+Easily manage thousands of repositories, plus AWS CodeCommit gets a new `gitCredentials` field.
 
-[**🗂 Optionally loading config from the file system or K8s ConfigMap**](#optionally-loading-config-from-the-file-system-or-k8s-configmap)<br />
-For teams wanting code review for config changes, instead of saving directly to the database.
+[**🗂 Optional loading of configuration from the file system or Kubernetes ConfigMap**](#optional-loading-of-configuration-from-the-file-system-or-kubernetes-configmap)<br />
+For site admins, instead of saving configuration to the database.
 
-[**⏰ Controlling upgrade notifications for patch releases**](#controlling-upgrade-notifications-for-patch-releases)<br />
-Patch release upgrade notifications for admins can now be disabled
+[**⏰ Configurable upgrade notifications for patch releases**](#configurable-upgrade-notifications-for-patch-releases)<br />
 
 [**🔎 Higher information density in search results**](#higher-information-density-in-search-results)<br />
-See more content above the fold
 
 [**📝 Changelog**](#340-changelog)<br />
-Every detail that changed in this release
 
 [**🎖️ Thank you**](#thank-you)<br />
-Sourcegraph couldn’t be what it is without the community.
 
 </div>
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
-
-**Insiders:** Want to try pre-release development builds? Change the Docker image tag to `sourcegraph:insiders`.
 
 ## Browser extension now supports repository path mapping
 
@@ -54,29 +46,23 @@ Sourcegraph couldn’t be what it is without the community.
 <p style="text-align: center"><a href="https://vimeo.com/336923053" target="_blank">View on Vimeo</a></p>
 </p>
 
-By default, the URL path to a repository on Sourcegraph includes the code host, plus the path to the repository, e.g. `/github.com/kubernetes/kubernetes`. Unless you have multiple code hosts with the same `owner/repository` combinations, the hostname in the path is unnecessary. You’ll especially want to remove it if your code host hostname is long, such as `devtools.githubenterprise.internal`.
+If your code host's hostname is long, such as `githubenterprise.mycompany.internal`, then your Sourcegraph URLs will be long (e.g. `https://sourcegraph.mycompany.internal/githubenterprise.mycompany.internal/myteam/myproject`). To shorten these URLs, you can use the [`repositoryPathPattern`](https://www.google.com/search?ie=UTF-8&q=site%3Adocs.sourcegraph.com+%22repositoryPathPattern%22) external service configuration property.
 
-To reduce the path to `owner/repository`,  the GitHub external service configuration would be altered to include:
-
-```json
-"repositoryPathPattern": "{nameWithOwner}"
-```
-
-In Sourcegraph 3.4, the browser extension is now aware of repository name mappings, so you can now accurately jump to Sourcegraph from your code host, or from your code host to Sourcegraph.
+Sourcegraph 3.4 fixes a problem where the browser extension didn't work if you used `repositoryPathPattern`. If you had been holding off on using the browser extension due to this problem, it will now work.
 
 ## Code host sync improvements for AWS CodeCommit and Gitolite
 
-Sourcegraph 3.3 saw the introduction of [config based repository selection](https://about.sourcegraph.com/blog/sourcegraph-3.3#config-based-repository-selection) (for [GitHub](https://docs.sourcegraph.com/admin/external_service/github), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server)), and 3.4 brings the same model to [AWS CodeCommit](al_service/aws_codecommit), and [Gitolite](https://docs.sourcegraph.com/admin/external_service/gitolite).
+Sourcegraph 3.3 saw the introduction of [config-based repository selection](https://about.sourcegraph.com/blog/sourcegraph-3.3#config-based-repository-selection) (for [GitHub](https://docs.sourcegraph.com/admin/external_service/github), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server)). Now, Sourcegraph 3.4 brings the same model to [AWS CodeCommit](al_service/aws_codecommit), and [Gitolite](https://docs.sourcegraph.com/admin/external_service/gitolite).
 
 As a result, AWS CodeCommit and Gitolite get a new `exclude` field, plus AWS CodeCommit now supports the `gitCredentials` option for using a static username and password tied to an IAM user.
 
 [See the changelog](#340-changelog) for more details
 
-## Optionally loading config from the file system or K8s ConfigMap
+## Optional loading of configuration from the file system or Kubernetes ConfigMap
 
-Storing site and critical configuration in the database (as of Sourcegraph 3.0), suits most deployments, but for teams requiring config changes to go through code review, Sourcegraph now provides the option of loading configuration from a file or ConfigMap.
+Some teams for whom Sourcegraph is a critical piece of infrastructure want to check their Sourcegraph configuration into version control.
 
-[Site config](https://docs.sourcegraph.com/admin/config/site_config), [critical config](https://docs.sourcegraph.com/admin/config/critical_config), or [external services](https://docs.sourcegraph.com/admin/external_service) config can be loaded from the file system or ConfigMap if the following environment variables are set on the server:
+For these teams, [site configuration](https://docs.sourcegraph.com/admin/config/site_config), [critical configuration](https://docs.sourcegraph.com/admin/config/critical_config), and [external services configuration](https://docs.sourcegraph.com/admin/external_service) can be loaded from the file system or Kubernetes ConfigMap if the following environment variables are set on the server:
 
 ```bash
 CRITICAL_CONFIG_FILE=critical.json
@@ -84,9 +70,9 @@ SITE_CONFIG_FILE=site.json
 EXTSVC_CONFIG_FILE=extsvc.json
 ```
 
-For [cluster (Kubernetes)](https://github.com/sourcegraph/deploy-sourcegraph) deployments, an admin is responsible for creating and applying the ConfigMap values into the frontend container.
+For [cluster (Kubernetes) deployments](https://github.com/sourcegraph/deploy-sourcegraph), an admin is responsible for creating the ConfigMap resources and setting these environment variables to refer to the ConfigMaps' files on disk.
 
-## Controlling upgrade notifications for patch releases
+## Configurable upgrade notifications for patch releases
 
 <p class="container">
 <div style="padding:56.25% 0 0 0;position:relative;">
@@ -95,7 +81,7 @@ For [cluster (Kubernetes)](https://github.com/sourcegraph/deploy-sourcegraph) de
 <p style="text-align: center"><a href="https://vimeo.com/336927042" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph detects when a new version is available and shows a dismissable notification to site admins. In Sourcegraph 3.4, admins can now control if they want to see patch release notifications by adding the following configuration to global, organization, or user settings:
+Sourcegraph detects when a new version is available and shows a dismissible notification to site admins. In Sourcegraph 3.4, site admins can now control if they want to see patch release notifications by adding the following to settings:
 
 ```json
 {
@@ -105,17 +91,21 @@ Sourcegraph detects when a new version is available and shows a dismissable noti
 }
 ```
 
-**Note:** Upgrade notifications are always shown for major.minor releases.
+Upgrade notifications are always shown for major (e.g. 4.0) or minor (e.g. 3.x) releases.
 
 ## Higher information density in search results
 
-We're tightening up the Sourcegraph UI to remove unnecessary whitespace, so you can see more information without scrolling. This release ships with a cleaner search results interface, and higher information density.
+We're tightening up the Sourcegraph UI to remove unnecessary whitespace so you can see more information without scrolling. This release ships with a cleaner search results interface.
+
+File search results (before and after):
 
 ![](/blog/3.4-density-2.png)
 
+Text search results (before and after):
+
 ![](/blog/3.4-density-1.png)
 
-## 3.4 Changelog
+## 3.4 changelog
 
 ### Added
 
@@ -190,12 +180,8 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 - [@markus-wa](https://github.com/markus-wa)
 - [@abeyerpath](https://github.com/abeyerpath)
 
-## Deploy or upgrade
-
-[Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
-
-Upgrading from 2.x or 3.0? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
-
 ---
+
+**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
 From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
