@@ -16,7 +16,7 @@ published: false
 
 *Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade).*
 
-INTRODUCTION
+This release is all about making Sourcegraph more configurable and flexible to meet the unique needs of [large enterprises](https://about.sourcegraph.com/) with 30,000+ repositories who rely on Sourcegraph every day. We love 🥰our site admins who run Sourcegraph for hundreds to thousands of their colleagues every day.
 
 - [Link to each section](#section-link)
 - [Changelog](#changelog)
@@ -33,6 +33,55 @@ Each section should have a screencast when possible, usually without sound as th
     <p style="text-align: center"><a href="https://vimeo.com/VIMEO_VIDEO_ID" target="_blank">View on Vimeo</a></p>
   </p>
 -->
+
+## Controlling upgrade notifications for patch releases
+
+Sourcegraph detects when a new version is available and shows a dismissable notification to site admins. In Sourcegraph 3.4, admins can now control if they want to see patch release notifications by adding the following configuration to global, organization, or user settings:
+
+```
+“alerts.showPatchUpdates": false
+```
+
+**Note:** Notifications will still display for major.minor releases.
+
+## Code host sync improvements for AWS CodeCommit and Gitolite
+
+Sourcegraph 3.3 saw the introduction of [config based repository selection](https://about.sourcegraph.com/blog/sourcegraph-3.3#config-based-repository-selection) (for GitHub, GitLab and Bitbucket Server), and 3.4 brings the same model to AWS CodeCommit, and Gitolite.
+
+As a result, AWS CodeCommit and Gitolite get a new `exclude` field, plus AWS CodeCommit now supports the `gitCredentials` option for using a static username and password tied to an IAM user.
+
+[See the changelog] for more details
+
+
+## Optionally loading config from the file system or K8s ConfigMap
+
+Storing site and critical configuration in the database (as of Sourcegraph 3.0), suits most deployments, but for teams requiring config changes to go through code review, Sourcegraph now provides the option of loading configuration from a file or ConfigMap.
+
+[Site config], [critical config], or [external services] config can be loaded from the file system or ConfigMap if the following environment variables are set on the server:
+
+```
+CRITICAL_CONFIG_FILE=critical.json
+SITE_CONFIG_FILE=site.json
+EXTSVC_CONFIG_FILE=extsvc.json
+```
+
+For cluster (Kubernetes) deployments, an admin is responsible for creating and applying the ConfigMap values into the frontend container.
+
+## Browser extension now supports repository path mapping
+
+By default, the URL path to a repository on Sourcegraph includes the code host, plus the path to the repository, e.g. `/github.com/kubernetes/kubernetes`. Unless you have multiple code hosts with the same `owner/repository` combinations, the hostname in the path is unnecessary. You’ll especially want to remove it if your code host hostname is long, such as `devtools.githubenterprise.internal`.
+
+To reduce the path to `owner/repository`,  the GitHub external service configuration would be altered to include:
+
+```
+"repositoryPathPattern": "{nameWithOwner}"
+```
+
+In Sourcegraph 3.4, the browser extension is now aware of repository name mappings, so you can now accurately jump to Sourcegraph from your code host, or from your code host to Sourcegraph.
+
+## Higher information density
+
+We're tightening up the Sourcegraph UI to remove unnecessary whitespace, so you can see more information without scrolling. This release ships with a cleaner search results interface, and higher information density.
 
 ## Changelog
 
