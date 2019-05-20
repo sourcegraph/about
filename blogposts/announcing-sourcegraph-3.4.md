@@ -1,5 +1,5 @@
 ---
-title: Sourcegraph 3.4
+title: 'Sourcegraph 3.4: Performance and configuration enhancements for managing 30,000+ repositories'
 author: Ryan Blunden and Christina Forney
 publishDate: 2019-05-20T10:00-07:00
 tags: [
