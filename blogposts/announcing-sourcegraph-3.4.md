@@ -12,7 +12,9 @@ published: true
 
 We're excited to announce Sourcegraph 3.4. Sourcegraph is a code search and navigation tool (self-hosted, open-source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
 
-This release is all about making Sourcegraph more configurable and flexible to meet the unique needs of [large enterprises](https://about.sourcegraph.com/) with 30,000+ repositories who rely on Sourcegraph every day. We love 🥰 our site admins who run Sourcegraph for hundreds to thousands of their colleagues every day.
+This release makes Sourcegraph more flexible and configurable to meet the needs of [large enterprises](https://about.sourcegraph.com/), such as Uber, Lyft and Yelp. Our customers rely on Sourcegraph syncing and searching 30,000 plus repositories, with thousands of daily users.
+
+To meet these needs, this release focussed on improving search performance, adding new configuration options, enhanced repository syncing logic to reduce code host API calls, and providing customers with a standard set of monitoring, tracing and diagnostic tools to help them resolve issues faster.
 
 <div style="padding-left: 2rem">
 
@@ -56,7 +58,7 @@ By default, the URL path to a repository on Sourcegraph includes the code host, 
 
 To reduce the path to `owner/repository`,  the GitHub external service configuration would be altered to include:
 
-```
+```json
 "repositoryPathPattern": "{nameWithOwner}"
 ```
 
