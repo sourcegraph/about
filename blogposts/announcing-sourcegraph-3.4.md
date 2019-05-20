@@ -12,24 +12,24 @@ published: true
 
 We're excited to announce Sourcegraph 3.4. Sourcegraph is a code search and navigation tool (self-hosted, open-source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
 
-This release is all about making Sourcegraph more configurable and flexible to meet the unique needs of [large enterprises](https://about.sourcegraph.com/) with 30,000+ repositories who rely on Sourcegraph every day. We love 🥰our site admins who run Sourcegraph for hundreds to thousands of their colleagues every day.
+This release is all about making Sourcegraph more configurable and flexible to meet the unique needs of [large enterprises](https://about.sourcegraph.com/) with 30,000+ repositories who rely on Sourcegraph every day. We love 🥰 our site admins who run Sourcegraph for hundreds to thousands of their colleagues every day.
 
 <div style="padding-left: 2rem">
 
-[**🛠️ Browser extension now supports repository path mapping**](#browser-extension-now-supports-repository-path-mapping)<br />
-One line summary of this new feature
+[**🗺 Browser extension now supports repository path mapping**](#browser-extension-now-supports-repository-path-mapping)<br />
+Get shorter repository path URLs in Sourcegraph.
 
-[**🛠️ Code host sync improvements for AWS CodeCommit and Gitolite**](#code-host-sync-improvements-for-aws-codecommit-and-gitolite)<br />
-One line summary of this new feature
+[**🛠 Code host sync improvements for AWS CodeCommit and Gitolite**](#code-host-sync-improvements-for-aws-codecommit-and-gitolite)<br />
+Easily manage thousands of repositories, plus AWS CodeCommit gets new gitCredentials field.
 
-[**🛠️ Optionally loading config from the file system or K8s ConfigMap**](#optionally-loading-config-from-the-file-system-or-k8s-configmap)<br />
-One line summary of this new feature
+[**🗂 Optionally loading config from the file system or K8s ConfigMap**](#optionally-loading-config-from-the-file-system-or-k8s-configmap)<br />
+For teams wanting code review for config changes, instead of saving directly to the database.
 
-[**🛠️ Controlling upgrade notifications for patch releases**](#controlling-upgrade-notifications-for-patch-releases)<br />
-One line summary of this new feature
+[**⏰ Controlling upgrade notifications for patch releases**](#controlling-upgrade-notifications-for-patch-releases)<br />
+Patch release upgrade notifications for admins can now be disabled
 
-[**🛠️ Higher information density in search results**](#higher-information-density-in-search-results)<br />
-One line summary of this new feature
+[**🔎 Higher information density in search results**](#higher-information-density-in-search-results)<br />
+See more content above the fold
 
 [**📝 Changelog**](#34-changelog)<br />
 Every detail that changed in this release
