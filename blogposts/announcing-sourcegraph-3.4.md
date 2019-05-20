@@ -33,7 +33,7 @@ Patch release upgrade notifications for admins can now be disabled
 [**🔎 Higher information density in search results**](#higher-information-density-in-search-results)<br />
 See more content above the fold
 
-[**📝 Changelog**](#34-changelog)<br />
+[**📝 Changelog**](#340-changelog)<br />
 Every detail that changed in this release
 
 [**🎖️ Thank you**](#thank-you)<br />
@@ -66,11 +66,11 @@ In Sourcegraph 3.4, the browser extension is now aware of repository name mappin
 
 ## Code host sync improvements for AWS CodeCommit and Gitolite
 
-Sourcegraph 3.3 saw the introduction of [config based repository selection](https://about.sourcegraph.com/blog/sourcegraph-3.3#config-based-repository-selection) (for GitHub, GitLab and Bitbucket Server), and 3.4 brings the same model to AWS CodeCommit, and Gitolite.
+Sourcegraph 3.3 saw the introduction of [config based repository selection](https://about.sourcegraph.com/blog/sourcegraph-3.3#config-based-repository-selection) (for [GitHub](https://docs.sourcegraph.com/admin/external_service/github), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server)), and 3.4 brings the same model to [AWS CodeCommit](al_service/aws_codecommit), and [Gitolite](https://docs.sourcegraph.com/admin/external_service/gitolite).
 
 As a result, AWS CodeCommit and Gitolite get a new `exclude` field, plus AWS CodeCommit now supports the `gitCredentials` option for using a static username and password tied to an IAM user.
 
-[See the changelog] for more details
+[See the changelog](#340-changelog) for more details
 
 ## Optionally loading config from the file system or K8s ConfigMap
 
@@ -84,7 +84,7 @@ SITE_CONFIG_FILE=site.json
 EXTSVC_CONFIG_FILE=extsvc.json
 ```
 
-For cluster (Kubernetes) deployments, an admin is responsible for creating and applying the ConfigMap values into the frontend container.
+For [cluster (Kubernetes)](https://github.com/sourcegraph/deploy-sourcegraph) deployments, an admin is responsible for creating and applying the ConfigMap values into the frontend container.
 
 ## Controlling upgrade notifications for patch releases
 
@@ -105,7 +105,7 @@ Sourcegraph detects when a new version is available and shows a dismissable noti
 }
 ```
 
-**Note:** Notifications will still display for major.minor releases.
+**Note:** Upgrade notifications are always shown for major.minor releases.
 
 ## Higher information density in search results
 
