@@ -22,7 +22,9 @@ Vimeo embed
 </p>
 -->
 
-We're excited to announce Sourcegraph {VERSION}. Sourcegraph is a code search and navigation tool (self-hosted, open-source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
+[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company can get access to the same kind of tools that Google and Facebook developers use every day.
+
+We're excited to announce Sourcegraph {VERSION}. This release makes Sourcegraph more flexible and configurable to meet the needs of [our large enterprise customers](https://about.sourcegraph.com/), such as Uber, Lyft and Yelp. Our customers rely on Sourcegraph to search across 30,000+ repositories, with 1,000s of daily users on single instances.
 
 <div style="padding-left: 2rem">
 
@@ -37,13 +39,11 @@ Sourcegraph couldn’t be what it is without the community.
 
 </div>
 
+**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
+
 ## New feature
 
 New feature section. Good if you have screenshots or diagrams and even better if you have a screencast.
-
-**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
-
-**Insiders:** Want to try pre-release development builds? Change the Docker image tag to `sourcegraph:insiders`.
 
 ## {VERSION} Changelog
 
@@ -58,15 +58,11 @@ The [changelog for this and previous releases](https://github.com/sourcegraph/so
 Thank you to the many people who contributed to Sourcegraph since the last release!
 
 <!--
-  Generate the list of people who contributed (created issues) by copying the output of the script at https://gist.github.com/ryan-blunden/c8898c989b48ba7a83e64ff9ae242cc2
+  Generate the list of people who contributed to this release (created issues) by copying the output from bin/generate_contributors.go:
+
+  Usage: GO111MODULE=on go run bin/generate_contributors.go
 -->
 
-## Deploy or upgrade
-
-[Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
-
-Upgrading from 2.x or 3.0? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
-
----
+**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
 From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!

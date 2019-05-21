@@ -2,3 +2,4 @@
 yarn.lock
 .yarn-integrity
 docs/server/config/site.md
+.idea
