@@ -24,6 +24,10 @@ const ITEMS: (
         className: 'customer-logos-section__item-logo-synthesized-0',
     },
     {
+        name: 'Quantcast',
+        url: '/external-logos/quantcast-logo.svg',
+    },
+    {
         name: 'Plaid',
         url: '/external-logos/plaid-logo.svg',
     },
