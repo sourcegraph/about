@@ -29,7 +29,7 @@ For site admins, instead of saving configuration to the database.
 
 [**🔎 Higher information density in search results**](#higher-information-density-in-search-results)<br />
 
-[**📝 Changelog**](#340-changelog)<br />
+[**📝 Changelog**](#34-changelog)<br />
 
 [**🎖️ Thank you**](#thank-you)<br />
 
