@@ -22,7 +22,7 @@ Then to serve the site, you have a two options:
 yarn serve
 ```
 
-To serve the site using the development server with auto-compiling and page reloading:
+2. To serve the site using the development server with auto-compiling and page reloading:
 
 ```shell
 yarn start
