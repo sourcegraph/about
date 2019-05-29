@@ -1,47 +1,39 @@
-# Sourcegraph projects and content repository
+# Sourcegraph about.sourcegraph.com website
 
-> NOTE: If you're writing a blog post for a release, use the [release blog post template](blogposts/RELEASE_BLOG_POST_TEMPLATE.md) 
+Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
-We're trying something new with this repository, capturing current projects and blog posts as Open Source code in Markdown using embedded YAML for metadata (front matter).
+## Requirements
 
-The publishing of these blog posts is automatic, using the value of the `published` front matter key.
+Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) for installing packages.
 
-## Why we're doing this
+## Developing locally
 
-Sourcegraph is committed to Open Source and developing in the open as much as possible. While we currently do our iteration planning in Google docs, we can't use the tools we know and love as Developers. We want to be in a terminal or editor writing code, not a web browser writing a document.
+In a terminal, change into the `website` directory, and run:
 
-We also want more transparency in what we're working on (projects) and what we're writing about (blogs), so we can get as much feedback as possible during the creation and review process outside of just the Sourcegraph team.
+```shell
+yarn install
+```
 
-## What we hope to get out of this
+Then to serve the site, you have two options:
 
-We build tools to help developers write better quality code, and we want those same developers to tell us what would make them more productive and successful.
+1. To serve the static (built) version of the website (good for final review):
 
-We want feedback while we're working on features and creating content to ensure everything we release and publish is incredibly high quality and meets the needs of our developer audience.
+    ```shell
+    yarn serve
+    ```
 
-## For non-Sourcegraph Team members. How you can contribute
+2. To serve the site using the development server with auto-compiling and page reloading:
 
-- Watch this repository for updates to see what's happening. Share your thoughts with us here on [on Twitter](http://twitter.com/srcgraph).
-- Create issues for features or content you want to see.
-- Create issues telling us how we can improve our project and content sharing process.
+    ```shell
+    yarn start
+    ```
 
-It's early days so consider this a work in progress. Thanks for joining us on our mission to help everyone write better code, to build better software and therefore, bring the future sooner.
+## Adding a blog post
 
-## Why a public project planning and blog post repository?
+Add a blog post by creating a new Markdown file in the `blogposts` directory. Front matter is used to provide metadata about the post, as well as determining whether the blog post is rendered or not (`published`).
 
-The assertion is that each project is significant enough to deserve a dedicated blog post. Instead of doing this at the end of the iteration in a separate document, the project plan is now also the blog post about your project. Writing it may be tough but has enormous benefits:
+The recommended flow for publishing a blog post is:
 
-- As it's a blog post (not just an internal document), it has an external audience which forces a higher quality of content.
-- Distributing the responsibility of blog post creation to team members means more content for our developer audience and more engagement on our blog.
-- You'll improve your writing and communication skills.
-
-## Adding your project or blog post
-
-Copy the contents of `TEMPLATE.md` into a new file in either `projects` or `blogposts`.
-
-## Writing your project post
-
-Quinn, Ryan and Francis will pair with you to write the first version of your post as this is where the scope of features for the project are defined.
-
-## Publishing your post
-
-Set `published` to `true` and presuming you've configured the frontmatter correctly, your post will be live a few minutes after your commit is merged into the master branch.
+ - Create a PR with the new blog post Markdown file, setting `published` to `true`
+ - Get your PR reviewed and approved
+ - Once the PR is merged, Netlify will build and deploy the new static site, which takes around 5 minutes.
