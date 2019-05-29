@@ -16,7 +16,7 @@ yarn install
 
 Then to serve the site, you have a two options:
 
-To serve the static (built) version of the site (good for final review):
+1. To serve the static (built) version of the site (good for final review):
 
 ```shell
 yarn serve
