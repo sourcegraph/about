@@ -8,7 +8,7 @@ Gatsby requires Node.js and we recommend using [yarn](https://yarnpkg.com/en/) f
 
 ## Developing locally
 
-In a terminal, change into the `website` directory, then run:
+In a terminal, change into the `website` directory, and run:
 
 ```shell
 yarn install
