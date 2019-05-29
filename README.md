@@ -14,7 +14,7 @@ In a terminal, change into the `website` directory, and run:
 yarn install
 ```
 
-Then to serve the site, you have a two options.
+Then to serve the site, you have a two options:
 
 To serve the static (built) version of the site (good for final review):
 
