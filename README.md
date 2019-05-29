@@ -18,15 +18,15 @@ Then to serve the site, you have a two options:
 
 1. To serve the static (built) version of the site (good for final review):
 
-```shell
-yarn serve
-```
+    ```shell
+    yarn serve
+    ```
 
 2. To serve the site using the development server with auto-compiling and page reloading:
 
-```shell
-yarn start
-```
+    ```shell
+    yarn start
+    ```
 
 ## Adding a blog post
 
