@@ -46,7 +46,7 @@ For site admins, instead of saving configuration to the database.
 <p style="text-align: center"><a href="https://vimeo.com/336923053" target="_blank">View on Vimeo</a></p>
 </p>
 
-If your code host's hostname is long, such as `githubenterprise.mycompany.internal`, then your Sourcegraph URLs will be long (e.g. `https://sourcegraph.mycompany.internal/githubenterprise.mycompany.internal/myteam/myproject`). To shorten these URLs, you can use the [`repositoryPathPattern`](https://www.google.com/search?ie=UTF-8&q=site%3Adocs.sourcegraph.com+%22repositoryPathPattern%22) external service configuration property.
+If your code host's hostname is long, such as `githubenterprise.mycompany.internal`, then your Sourcegraph URLs will be long (e.g. `https://sourcegraph.mycompany.internal` `/githubenterprise.mycompany.internal` `/myteam/myproject`). To shorten these URLs, you can use the [`repositoryPathPattern`](https://www.google.com/search?ie=UTF-8&q=site%3Adocs.sourcegraph.com+%22repositoryPathPattern%22) external service configuration property.
 
 Sourcegraph 3.4 fixes a problem where the browser extension didn't work if you used `repositoryPathPattern`. If you had been holding off on using the browser extension due to this problem, it will now work.
 

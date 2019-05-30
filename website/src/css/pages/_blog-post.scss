@@ -1,7 +1,8 @@
 // stylelint-disable declaration-property-unit-whitelist
 .blog-post {
     margin: auto;
-    width: 980px;
+    // FIXME(#125): temporary solution to text running over.
+    // width: 980px;
     padding: 45px 0;
 
     &__wrapper {
