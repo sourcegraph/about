@@ -17,6 +17,7 @@ import { EnterpriseReadySolution } from '../../components/product/EnterpriseRead
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
+import { Vimeo } from '../../components/Vimeo'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
@@ -138,22 +139,12 @@ export default ((props: any) => (
                     customTypeLabels={{ codeHost: 'Code review tools' }}
                 />
             </ContentSection>
-            <ContentSection color="primary" className="py-6">
+            <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
-                    Demo: GitHub pull requests with Sourcegraph
+                    GitHub with the Sourcegraph browser extension
                 </h2>
-                <video autoPlay={true} muted={true} loop={true} playsInline={true} className="w-100 h-auto">
-                    <source
-                        src="https://storage.googleapis.com/sourcegraph-assets/video/welcome/video/Welcome-GitHub.mp4"
-                        type="video/mp4"
-                    />
-                    <source
-                        src="https://storage.googleapis.com/sourcegraph-assets/video/welcome/video/Welcome-GitHub.m4v"
-                        type="video/x-m4v"
-                    />
-                    Demo video playback is not supported on your browser.
-                </video>
+                <Vimeo id={340033634} />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
