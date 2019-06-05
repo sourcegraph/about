@@ -18,6 +18,7 @@ import { IntegratesWithSection } from '../../components/product/IntegratesWithSe
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { UseCasesTable } from '../../components/product/UseCasesTable'
+import { Vimeo } from '../../components/Vimeo'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
@@ -350,22 +351,12 @@ export default ((props: any) => (
                     customTypeLabels={{ codeHost: 'Code hosts' }}
                 />
             </ContentSection>
-            <ContentSection color="primary" className="py-6">
+            <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
-                    Demo: Sourcegraph code search
+                    Use Sourcegraph to find answers in code, faster!
                 </h2>
-                <video autoPlay={true} muted={true} loop={true} playsInline={true} className="w-100 h-auto">
-                    <source
-                        src="https://storage.googleapis.com/sourcegraph-assets/video/welcome/video/Welcome-Search.mp4"
-                        type="video/mp4"
-                    />
-                    <source
-                        src="https://storage.googleapis.com/sourcegraph-assets/video/welcome/video/Welcome-Search.m4v"
-                        type="video/x-m4v"
-                    />
-                    Demo video playback is not supported on your browser.
-                </video>
+                <Vimeo id={340491490} />
             </ContentSection>
             <ContentSection color="purple" className="py-6">
                 <h2 className="text-center display-4 pb-4">Demo: Sourcegraph code navigation</h2>
