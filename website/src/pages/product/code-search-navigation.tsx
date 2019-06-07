@@ -357,7 +357,6 @@ export default ((props: any) => (
                     Use Sourcegraph to find answers in code, faster!
                 </h2>
                 <Vimeo id={340491490} />
-                <p>&nbsp;</p>
                 <Vimeo id={340774081} />
             </ContentSection>
             <ContentSection color="purple" className="py-6">
