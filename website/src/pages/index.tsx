@@ -9,6 +9,7 @@ import { IntegratesWithSection } from '../components/product/IntegratesWithSecti
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
 import { Testimonials } from '../components/Testimonials'
+import {Vimeo} from '../components/Vimeo'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
@@ -70,11 +71,12 @@ export default ((props: any) => (
                     <ProductFeaturesAndUseCases />
                 </ContentSection>
             </div>
-            <hr />
-            <ContentSection className="my-5">
-                <EnterpriseReadySolution className="pt-2" />
+            <ContentSection color="black" className="py-6">
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    See why developers rely on Sourcegraph daily
+                </h2>
+                <Vimeo id={342154659} />
             </ContentSection>
-            <hr />
             <div className="bg-white text-dark py-4">
                 <div className="container">
                     <div className="text-center mt-5">
@@ -87,6 +89,9 @@ export default ((props: any) => (
                     <Testimonials />
                 </div>
             </div>
+            <ContentSection className="my-5">
+                <EnterpriseReadySolution className="pt-2" />
+            </ContentSection>
             <Jumbotron
                 color="purple"
                 className="py-6 mb-0"
