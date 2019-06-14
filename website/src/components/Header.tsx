@@ -104,6 +104,19 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <li
                                         className="header__nav-item nav-item"
                                         role="presentation"
+                                        onClick={this.contactClicked}
+                                    >
+                                        <Link
+                                            className="header__nav-link nav-link"
+                                            to="/contact"
+                                            activeClassName="header__nav-link-active"
+                                        >
+                                            Contact
+                                        </Link>
+                                    </li>
+                                    <li
+                                        className="header__nav-item nav-item"
+                                        role="presentation"
                                         onClick={this.blogClicked}
                                     >
                                         <Link
@@ -148,6 +161,9 @@ export default class Header extends React.Component<HeaderProps, any> {
     }
     private pricingClicked = () => {
         eventLogger.trackPricingClicked('header')
+    }
+    private contactClicked = () => {
+        eventLogger.trackContactUsClicked('header')
     }
     private blogClicked = () => {
         eventLogger.trackBlogClicked('header')
