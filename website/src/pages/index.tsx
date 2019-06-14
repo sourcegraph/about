@@ -71,11 +71,12 @@ export default ((props: any) => (
                     <ProductFeaturesAndUseCases />
                 </ContentSection>
             </div>
-            <hr />
-            <ContentSection className="my-5">
-                <EnterpriseReadySolution className="pt-2" />
+            <ContentSection color="black" className="py-6">
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    See why developers rely on Sourcegraph daily
+                </h2>
+                <Vimeo id={342154659} />
             </ContentSection>
-            <hr />
             <div className="bg-white text-dark py-4">
                 <div className="container">
                     <div className="text-center mt-5">
@@ -88,11 +89,8 @@ export default ((props: any) => (
                     <Testimonials />
                 </div>
             </div>
-            <ContentSection color="black" className="py-6">
-                <h2 id="demo" className="text-center display-4 pb-4">
-                    See why developers rely on Sourcegraph daily
-                </h2>
-                <Vimeo id={342154659} />
+            <ContentSection className="my-5">
+                <EnterpriseReadySolution className="pt-2" />
             </ContentSection>
             <Jumbotron
                 color="purple"
