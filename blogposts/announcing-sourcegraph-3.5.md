@@ -1,5 +1,5 @@
 ---
-title: 'Sourcegraph 3.5: Improved searching, repository syncing, and Bitbucket Server ACLs'
+title: 'Sourcegraph 3.5: Improved searching, repository syncing, and Bitbucket Server repository permissions'
 author: Ryan Blunden and Christina Forney
 publishDate: 2019-06-20T10:00-07:00
 tags: [
@@ -18,7 +18,7 @@ published: true
 
 [**📅 Restrict search results to repositories with recent activity**](#restrict-search-results-to-repositories-with-recent-activity)<br />
 
-[**📂 Restrict search to repositories with or without a file**](#restrict-search-to-repositories-with-or-without-a-file)<br />
+[**📂 Restrict search to repositories with or without a specific filename**](#restrict-search-to-repositories-with-or-without-a-specific-filename)<br />
 
 [**🔒 Introducing Bitbucket Server ACLs**](#introducing-bitbucket-server-acls)<br />
 Enforce repository permissions defined in Bitbucket Server.
@@ -73,7 +73,7 @@ Examples:
 
 **Note:** `repohascommitafter` is considered beta as performance degrades significantly on very large repository sets. We are [addressing this in 3.6](https://github.com/sourcegraph/sourcegraph/issues/4614).
 
-## Restrict search to repositories with or without a file
+## Restrict search to repositories with or without a specific filename
 
 Sometimes, you want to search repositories based on the existence or absence of a file. This is now possible with the new `repohasfile` [search filter](https://docs.sourcegraph.com/user/search/queries) which comes in two forms, `repohasfile` and `-repohasfile`.
 
@@ -184,7 +184,7 @@ Due to its experimental status, Sourcegraph instances with 500+ repositories may
 
 ### Changed
 
-- The saved searches UI has changed. There is now a Saved searches page in the user and organizations settings area. A saved search appears in the settings area of the user or organization it is associated with.
+- The saved searches UI has changed. There is now a saved searches page in the user and organizations settings area. A saved search appears in the settings area of the user or organization it is associated with.
 
 ### Removed
 
@@ -197,7 +197,7 @@ Due to its experimental status, Sourcegraph instances with 500+ repositories may
 - On the /extensions page, the UI is now less ambiguous when an extension has not been activated. (#4446)
 
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.5) is available on GitHub.
+See the [full Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md).
 
 ## Thank you
 
