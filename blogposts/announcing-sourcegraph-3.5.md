@@ -109,9 +109,9 @@ We are working closely with our customers with larger Sourcegraph instances to i
 
 <p class="container">
 <div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/52c9a6daa8?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  <iframe src="https://player.vimeo.com/video/343070976?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </div>
-<p style="text-align: center"><a href="https://vimeo.com/52c9a6daa8" target="_blank">View on Vimeo</a></p>
+<p style="text-align: center"><a href="https://vimeo.com/343070976" target="_blank">View on Vimeo</a></p>
 </p>
 
 Line decorations enhance code views with Sourcegraph extensions such as [Codecov](https://sourcegraph.com/extensions/sourcegraph/codecov), [Sentry](https://sourcegraph.com/extensions/sourcegraph/sentry), and [Datadog](https://sourcegraph.com/extensions/sourcegraph/datadog-metrics). In 3.5, line decorations support is now available on pull/merge requests.
@@ -153,14 +153,12 @@ If filtering the list of repositories is required, e.g. `archived:no  forked:no`
 
 ## Repository syncing status for site admins
 
-VIDEO
-
-<!-- <p class="container">
+<p class="container">
 <div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/342111852?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  <iframe src="https://player.vimeo.com/video/343706613?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </div>
-<p style="text-align: center"><a href="https://vimeo.com/342111852" target="_blank">View on Vimeo</a></p>
-</p> -->
+<p style="text-align: center"><a href="https://vimeo.com/343706613" target="_blank">View on Vimeo</a></p>
+</p>
 
 We want customers to have greater visibility into the status of repository syncing and updating operations. in 3.5, we’re experimenting with an optional new status indicator in the navigation bar.
 
