@@ -99,6 +99,9 @@ Examples:
 
 ## Introducing Bitbucket Server ACLs
 
+
+_Note: [GitHub](https://docs.sourcegraph.com/admin/repo/permissions#github) and [GitLab](https://docs.sourcegraph.com/admin/repo/permissions#gitlab) repository permissions are already supported._
+
 Configuring Sourcegraph to enforce Bitbucket Server ACLs for code search and navigation is now available for instances with < 2,500 repositories.
 
 Making this possible, is the new `authorization` field, which enables Sourcegraph to communicate with the Bitbucket Server through an application link. Check out the [configuring Bitbucket Server and Sourcegraph guide](https://docs.sourcegraph.com/admin/repo/permissions#bitbucket-server)for requirements and end to end configuration.
