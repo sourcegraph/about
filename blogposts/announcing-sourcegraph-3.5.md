@@ -23,7 +23,7 @@ published: true
 [**🔒 Introducing Bitbucket Server ACLs**](#introducing-bitbucket-server-acls)<br />
 Enforce repository permissions defined in Bitbucket Server.
 
-[**🎄 Improved code reviews with line decorations in pull requests**](#improved-code-reviews-with-line-decorations-in-pull-requests)<br />
+[**🌈 Improved code reviews with line decorations in pull requests**](#improved-code-reviews-with-line-decorations-in-pull-requests)<br />
 Use extensions like Codecov, Sentry, Datadog, and more to put info in context of a code review.
 
 [**💾 Powering code alerts with saved searches**](#powering-code-alerts-with-saved-searches)<br />
@@ -117,7 +117,8 @@ We are working closely with our customers with larger Sourcegraph instances to i
 <p style="text-align: center"><a href="https://vimeo.com/343070976" target="_blank">View on Vimeo</a></p>
 </p>
 
-Line decorations enhance code views with Sourcegraph extensions such as [Codecov](https://sourcegraph.com/extensions/sourcegraph/codecov), [Sentry](https://sourcegraph.com/extensions/sourcegraph/sentry), and [Datadog](https://sourcegraph.com/extensions/sourcegraph/datadog-metrics). In 3.5, line decorations support is now available on pull/merge requests.
+Line decorations enhance code views with Sourcegraph extensions such as [Codecov](https://sourcegraph.com/extensions/sourcegraph/codecov), [Sentry](https://sourcegraph.com/extensions/sourcegraph/sentry), and [Datadog](https://sourcegraph.com/extensions/sourcegraph/datadog-metrics). In 3.5, line decorations are now available on pull/merge requests on GitHub, Bitbucket Server, and GitLab.
+
 
 Here is an example of the Codecov Sourcegraph extension showing covered (and uncovered) lines in a pull request in GitHub:
 
@@ -130,15 +131,15 @@ Here is an example of the Codecov Sourcegraph extension showing covered (and unc
 <p style="text-align: center"><a href="https://vimeo.com/342111852" target="_blank">View on Vimeo</a></p>
 </p>
 
-[Saved searches](https://docs.sourcegraph.com/user/search/saved_searches) can act as bookmarks to frequently used searches, and when combined with email notifications, can help monitor critical parts of your code, organization wide.
+[Saved searches](https://docs.sourcegraph.com/user/search/saved_searches) can be used to bookmark your frequently used searches. Additionally, you can monitor critical parts of your code by turning on saved search email notifications.
 
-Saving a search is faster and easier, and is now accessed from the user and organization settings page.
+User-level and organization-level saved searches are now separate. You can view and manage saved searches in the user and organization profile areas, respectively.
 
 ## New `orgs` field to optimize repository syncing for GitHub organizations
 
 For customers using GitHub with 1,000+ repositories, Sourcegraph would sometimes exceed GitHub’s search API rate limit during syncing, resulting in an incomplete set of cloned repositories.
 
-To address this, a [new `orgs` field](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search) has been added for customers not needing to filter the list of repositories for their organization. This uses a different GitHub API not subject to rate limiting.
+To address this, a [new `orgs` field](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search) has been added for customers who want to sync all repositories for their organization. This uses a different GitHub API that is not subject to rate limiting.
 
 The `orgs` field is a list of GitHub organizations:
 
@@ -163,7 +164,7 @@ If filtering the list of repositories is required, e.g. `archived:no  forked:no`
 <p style="text-align: center"><a href="https://vimeo.com/343706613" target="_blank">View on Vimeo</a></p>
 </p>
 
-We want customers to have greater visibility into the status of repository syncing and updating operations. in 3.5, we’re experimenting with an optional new status indicator in the navigation bar.
+To give more visibility into the status of repository syncing and updating operations, we added an experimental status indicator in the navigation bar.
 
 To enable the repository syncing status indicator, add this to your site configuration:
 
@@ -171,7 +172,7 @@ To enable the repository syncing status indicator, add this to your site configu
 "experimentalFeatures": { "statusIndicator": "enabled" }
 ``` 
 
-Due to its experimental status, Sourcegraph instances with 500+ repositories may experience inaccurate status updates.
+Due to its experimental status, Sourcegraph instances with 500+ repositories may experience confusing status updates.
 
 ## 3.5 changelog
 
