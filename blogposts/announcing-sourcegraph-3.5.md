@@ -1,5 +1,5 @@
 ---
-title: 'Sourcegraph 3.5: Improved searching, repository syncing, and Bitbucket Server repository permissions'
+title: 'Sourcegraph 3.5: Powerful new search filters, improved configuration, and Bitbucket Server repository permissions'
 author: Ryan Blunden and Christina Forney
 publishDate: 2019-06-20T10:00-07:00
 tags: [
