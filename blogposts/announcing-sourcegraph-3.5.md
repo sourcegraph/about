@@ -14,6 +14,9 @@ published: true
 
 <div style="padding-left: 2rem">
 
+[**🎄 Improved code reviews with line decorations in pull requests**](#improved-code-reviews-with-line-decorations-in-pull-requests)<br />
+Use extensions like Codecov, Sentry, Datadog, and more to put info in context of a code review.
+
 [**🔒 Introducing Bitbucket Server ACLs**](#introducing-bitbucket-server-acls)<br />
 Enforce repository permissions defined in Bitbucket Server.
 
@@ -22,9 +25,6 @@ Enforce repository permissions defined in Bitbucket Server.
 [**📅 Restrict search results to repositories with recent activity**](#restrict-search-results-to-repositories-with-recent-activity)<br />
 
 [**📂 Restrict search to repositories with or without a file**](#restrict-search-to-repositories-with-or-without-a-file)<br />
-
-[**🎄 Improved code reviews with line decorations in pull requests**](#improved-code-reviews-with-line-decorations-in-pull-requests)<br />
-Use extensions like Codecov, Sentry, Datadog, and more to put info in context of a code review.
 
 [**💾 Powering code alerts with saved searches**](#powering-code-alerts-with-saved-searches)<br />
 Improved UI to separate User and Organization saved searches.
@@ -43,17 +43,25 @@ Easier configuration for cloning all repos in an organization.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
+## Improved code reviews with line decorations in pull requests
+
+Line decorations in file views are one of the awesome features of the Sourcegraph browser extension. Now, these same line decorations are inside your pull requests on all code hosts! 
+
+Here is an example of the [Codecov Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/codecov) showing covered (and uncovered) lines in a pull request in GitHub.
+
+![](/blog/3.5-line-decorations.png)
+
 ## Introducing Bitbucket Server ACLs
 
 Configuring Sourcegraph to respect Bitbucket Server ACLs for code search and navigation is now available for instances with < 2,500 repositories.
 
 Making this possible, is the new `authorization` field, which enables Sourcegraph to communicate with the Bitbucket Server through an application link. Check out the [configuring Bitbucket Server and Sourcegraph guide](https://docs.sourcegraph.com/admin/repo/permissions#bitbucket-server), which documents the requirements and configuration process from start to finish.
 
-Work [will continue in 3.6](#) to improve performance to scale beyond 10,000+ repositories.
+We are working closely with our customers with larger Sourcegraph instances to improve performance beyond 10,000+ repositories.
 
 ## Multi-line search with newline (`\n`) characters
 
-Sourcegraph now supports multi-line searches by matching on `\n`, providing new search use cases. For example, to identify usage of Python decorators at the module, and class level:
+Sourcegraph now supports multi-line searches by matching on `\n`, providing new search use cases. For example, to identify usage of Python decorators at the module and class level:
 
 ```
 lang:python ^\s*@.*\n\s*def
@@ -63,7 +71,7 @@ lang:python ^\s*@.*\n\s*def
 
 ## Restrict search results to repositories with recent activity
 
-When you’re searching over 10,000+ repositories in an enterprise setting, it’s common to get results from old repositories with no active maintainers. You can now exclude repositories with no recent commits (to their default branch) with the beta `repohascommitafter` search filter.
+When you’re searching over 10,000+ repositories in an enterprise setting, it’s common to get results from old repositories with no active maintainers. You can now exclude repositories with no recent commits (to their default branch) with the beta `repohascommitafter` [search filter](https://docs.sourcegraph.com/user/search/queries).
 
 For example: Find Dockerfiles requiring upgrades from an obsolete version of Debian so you can contact the maintainers:
 
@@ -81,7 +89,7 @@ aws_instance lang:hcl repohascommitafter:"1 month ago"
 
 ## Restrict search to repositories with or without a file
 
-Sometimes, you want to search repositories based on the existence or absence of a file. This is now possible with the new `repohasfile` filter which comes in two forms, `repohasfile` and `-repohasfile`.
+Sometimes, you want to search repositories based on the existence or absence of a file. This is now possible with the new `repohasfile` [search filter](https://docs.sourcegraph.com/user/search/queries) which comes in two forms, `repohasfile` and `-repohasfile`.
 
 An example using `repohasfile`, is finding applications with a Dockerfile, written in Go, that use Travis CI:
 
@@ -101,23 +109,6 @@ Another, is finding Python applications using `pytest` without a pytest.ini or p
 -repohasfile:(pytest\.ini|pytest\.conf) lang:python "import pytest"
 ```
 
-## Improved code reviews with line decorations in pull requests
-
-<!-- <p class="container">
-<div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/52c9a6daa8?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-</div>
-<p style="text-align: center"><a href="https://vimeo.com/52c9a6daa8" target="_blank">View on Vimeo</a></p>
-</p> -->
-
-CODECOV VIDEO?
-
-Line decorations in file views are one of the awesome features of the Sourcegraph browser extension. Now, these same line decorations are inside your pull requests on all code hosts! 
-
-Here is an example of the Codecov Sourcegraph extension showing covered (and uncovered) lines in a pull request in GitHub.
-
-![](/blog/3.5-line-decorations.png)
-
 ## Powering code alerts with saved searches
 
 <p class="container">
@@ -127,7 +118,7 @@ Here is an example of the Codecov Sourcegraph extension showing covered (and unc
 <p style="text-align: center"><a href="https://vimeo.com/342111852" target="_blank">View on Vimeo</a></p>
 </p>
 
-Saved searches can act as bookmarks to frequently used searches, and when combined with email notifications, can help monitor critical parts of your code, organization wide.
+[Saved searches](https://docs.sourcegraph.com/user/search/saved_searches) can act as bookmarks to frequently used searches, and when combined with email notifications, can help monitor critical parts of your code, organization wide.
 
 Saving a search is faster and easier, and is now accessed from the user and organization settings page.
 
@@ -156,7 +147,7 @@ Due to its experimental status, Sourcegraph instances with 500+ repositories may
 
 For customers using GitHub with 1,000+ repositories, Sourcegraph would sometimes exceed GitHub’s search API rate limit during syncing, resulting in an incomplete set of cloned repositories.
 
-To address this, a new `orgs` field has been added for customers not needing to filter the list of repositories for their organization. This uses a different GitHub API not subject to rate limiting.
+To address this, a [new `orgs` field](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search) has been added for customers not needing to filter the list of repositories for their organization. This uses a different GitHub API not subject to rate limiting.
 
 The `orgs` field is a list of GitHub organizations:
 
