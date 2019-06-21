@@ -15,7 +15,7 @@ published: true
 <div style="padding-left: 2rem">
 
 [**🔒 Introducing Bitbucket Server ACLs**](#introducing-bitbucket-server-acls)<br />
-Enforce repository permissions defined in BitBucket Server.
+Enforce repository permissions defined in Bitbucket Server.
 
 [**⏎ Multi-line search with newline (`\n`) characters**](#multi-line-search-with-newline-code-classlanguage-textncode-characters)<br />
 
