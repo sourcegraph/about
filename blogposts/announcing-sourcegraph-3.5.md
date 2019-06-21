@@ -45,9 +45,9 @@ Easier configuration for cloning all repos in an organization.
 
 ## Improved code reviews with line decorations in pull requests
 
-Line decorations in file views are one of the awesome features of the Sourcegraph browser extension. Now, these same line decorations are inside your pull requests on all code hosts! 
+Line decorations enhance code views with Sourcegraph extensions such as [Codecov](https://sourcegraph.com/extensions/sourcegraph/codecov), [Sentry](https://sourcegraph.com/extensions/sourcegraph/sentry), and [Datadog](https://sourcegraph.com/extensions/sourcegraph/datadog-metrics). In 3.5, line decorations support is now available on pull/merge requests.
 
-Here is an example of the [Codecov Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/codecov) showing covered (and uncovered) lines in a pull request in GitHub.
+Here is an example of the Codecov Sourcegraph extension showing covered (and uncovered) lines in a pull request in GitHub:
 
 ![](/blog/3.5-line-decorations.png)
 
