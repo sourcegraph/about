@@ -10,7 +10,9 @@ heroImage: /sourcegraph-mark.png
 published: true
 ---
 
-**Happy Pride Month 🏳️‍🌈 from all of us at Sourcegraph!**
+<p class="text-center">
+  <b>Happy Pride Month 🏳️‍🌈 from all of us at Sourcegraph!</b>
+</p>
 
 [Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
