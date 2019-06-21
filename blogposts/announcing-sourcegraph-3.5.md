@@ -10,7 +10,9 @@ heroImage: /sourcegraph-mark.png
 published: true
 ---
 
-[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company can get access to the same kind of tools that Google and Facebook developers use every day.
+**Happy Pride Month 🏳️‍🌈 from all of us at Sourcegraph!**
+
+[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
 
@@ -20,7 +22,7 @@ published: true
 
 [**📂 Restrict search to repositories with or without a specific filename**](#restrict-search-to-repositories-with-or-without-a-specific-filename)<br />
 
-[**🔒 Introducing Bitbucket Server ACLs**](#introducing-bitbucket-server-acls)<br />
+[**🔒 Introducing Bitbucket Server repository permissions**](#introducing-bitbucket-server-repository-permissions)<br />
 Enforce repository permissions defined in Bitbucket Server.
 
 [**🌈 Improved code reviews with line decorations in pull requests**](#improved-code-reviews-with-line-decorations-in-pull-requests)<br />
@@ -97,16 +99,15 @@ Examples:
     -repohasfile:(pytest\.ini|pytest\.conf) lang:python "import pytest"
     ```
 
-## Introducing Bitbucket Server ACLs
-
+## Introducing Bitbucket Server repository permissions
 
 _Note: [GitHub](https://docs.sourcegraph.com/admin/repo/permissions#github) and [GitLab](https://docs.sourcegraph.com/admin/repo/permissions#gitlab) repository permissions are already supported._
 
-Configuring Sourcegraph to enforce Bitbucket Server ACLs for code search and navigation is now available for instances with < 2,500 repositories.
+Configuring Sourcegraph to enforce Bitbucket Server repository permissions for code search and navigation is now available for instances with < 2,500 repositories.
 
-Making this possible, is the new `authorization` field, which enables Sourcegraph to communicate with the Bitbucket Server through an application link. Check out the [configuring Bitbucket Server and Sourcegraph guide](https://docs.sourcegraph.com/admin/repo/permissions#bitbucket-server)for requirements and end to end configuration.
+Making this possible, is the new `authorization` field, which enables Sourcegraph to communicate with the Bitbucket Server through an application link. Check out the [configuring Bitbucket Server and Sourcegraph guide](https://docs.sourcegraph.com/admin/repo/permissions#bitbucket-server) for requirements and end to end configuration.
 
-We are working closely with our customers with larger Sourcegraph instances to improve performance beyond 10,000+ repositories.
+We are working closely with our customers who have larger Sourcegraph instances to improve performance beyond 10,000+ repositories.
 
 ## Improved code reviews with line decorations in pull requests
 
@@ -119,9 +120,6 @@ We are working closely with our customers with larger Sourcegraph instances to i
 
 Line decorations enhance code views with Sourcegraph extensions such as [Codecov](https://sourcegraph.com/extensions/sourcegraph/codecov), [Sentry](https://sourcegraph.com/extensions/sourcegraph/sentry), and [Datadog](https://sourcegraph.com/extensions/sourcegraph/datadog-metrics). In 3.5, line decorations are now available on pull/merge requests on GitHub, Bitbucket Server, and GitLab.
 
-
-Here is an example of the Codecov Sourcegraph extension showing covered (and uncovered) lines in a pull request in GitHub:
-
 ## Powering code alerts with saved searches
 
 <p class="container">
@@ -131,13 +129,13 @@ Here is an example of the Codecov Sourcegraph extension showing covered (and unc
 <p style="text-align: center"><a href="https://vimeo.com/342111852" target="_blank">View on Vimeo</a></p>
 </p>
 
-[Saved searches](https://docs.sourcegraph.com/user/search/saved_searches) can be used to bookmark your frequently used searches. Additionally, you can monitor critical parts of your code by turning on saved search email notifications.
-
 User-level and organization-level saved searches are now separate. You can view and manage saved searches in the user and organization profile areas, respectively.
+
+[Saved searches](https://docs.sourcegraph.com/user/search/saved_searches) can be used to bookmark your frequently used searches. Additionally, you can monitor critical parts of your code by turning on saved search email notifications.
 
 ## New `orgs` field to optimize repository syncing for GitHub organizations
 
-For customers using GitHub with 1,000+ repositories, Sourcegraph would sometimes exceed GitHub’s search API rate limit during syncing, resulting in an incomplete set of cloned repositories.
+For customers using GitHub with 1,000+ repositories, Sourcegraph sometimes exceeds GitHub’s search API rate limit during syncing, and may result in an incomplete set of cloned repositories.
 
 To address this, a [new `orgs` field](https://docs.sourcegraph.com/admin/external_service/github#selecting-repositories-for-code-search) has been added for customers who want to sync all repositories for their organization. This uses a different GitHub API that is not subject to rate limiting.
 
@@ -151,7 +149,11 @@ The `orgs` field is a list of GitHub organizations:
 
 If filtering the list of repositories is required, e.g. `archived:no  forked:no` the `repositoryQuery` should be used instead of `orgs`. If the result of a query entry in `repositoryQuery` exceeds 1,000 repositories, it will need to be split out over multiple entries. Please [contact support](mailto:support@sourcegraph.com) if you require assistance.
 
+Here is an example of the configuration to sync all repositories for the Gorilla organization:
+
 ![](/blog/3.5-org-settings.png)
+
+This is the resulting set of repositories from the above configuration:
 
 ![](/blog/3.5-org-repos.png)
 
@@ -166,13 +168,13 @@ If filtering the list of repositories is required, e.g. `archived:no  forked:no`
 
 To give more visibility into the status of repository syncing and updating operations, we added an experimental status indicator in the navigation bar.
 
-To enable the repository syncing status indicator, add this to your site configuration:
+To enable the repository syncing status indicator, add this setting to your site configuration:
 
 ```
 "experimentalFeatures": { "statusIndicator": "enabled" }
 ``` 
 
-Due to its experimental status, Sourcegraph instances with 500+ repositories may experience confusing status updates.
+Due to the experimental status of this feature, Sourcegraph instances with 500+ repositories may experience confusing status updates.
 
 ## 3.5 changelog
 
@@ -188,8 +190,6 @@ Due to its experimental status, Sourcegraph instances with 500+ repositories may
 
 - The saved searches UI has changed. There is now a saved searches page in the user and organizations settings area. A saved search appears in the settings area of the user or organization it is associated with.
 
-### Removed
-
 ### Fixed
 
 - Fixed repository search patterns which contain `.*`. Previously our optimizer would ignore `.*`, which in some cases would lead to our repository search excluding some repositories from the results.
@@ -197,7 +197,6 @@ Due to its experimental status, Sourcegraph instances with 500+ repositories may
 - Fixed an issue where the "Empty repository" banner would be shown on a repository page when starting to clone a repository.
 - Prevent data inconsistency on cached archives due to restarts. (#4366)
 - On the /extensions page, the UI is now less ambiguous when an extension has not been activated. (#4446)
-
 
 See the [full Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md).
 
