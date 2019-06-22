@@ -1,6 +1,6 @@
 import React from 'react'
 
-const COLORS = {
+export const COLORS = {
     dark: 'bg-black text-light',
     purple: 'bg-purple text-light',
 }
