@@ -1,0 +1,71 @@
+.case-studies {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    &__wrapper {
+        width: 66.667%;
+        margin: auto;
+        max-width: 740px; // Copied from medium.com
+    }
+
+    &__title {
+        &--rule {
+            margin: 25px 0;
+        }
+    }
+
+    &__logo {
+        margin: 0 0 2rem 0;
+        height: 3rem;
+    }
+
+    &__quote {
+     img {
+            width: 100%;
+            max-width: 200px;
+
+        }
+
+        p {
+            text-indent: 0.4em;
+            font-weight: 600;
+            color: #212529;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.015em;
+
+            &:before {
+                text-indent: -0.4em;
+                content: "“";
+                position: absolute;
+                margin-left: -2px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 2.2rem;
+            }
+
+            &:after {
+                content: "”";
+                margin-left: 2px;
+            }
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        &--in-content {
+            margin: 2rem 0;
+
+            p {
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+        }
+    }
+}

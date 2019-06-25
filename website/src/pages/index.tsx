@@ -9,7 +9,7 @@ import { IntegratesWithSection } from '../components/product/IntegratesWithSecti
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
 import { Testimonials } from '../components/Testimonials'
-import {Vimeo} from '../components/Vimeo'
+import { Vimeo } from '../components/Vimeo'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
