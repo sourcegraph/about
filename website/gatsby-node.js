@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const parseFilePath = require('parse-filepath')
 const path = require('path')
-import slugify from 'slugify'
+const slugify = require('slugify')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -98,13 +98,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       if (fileNode.relativePath) {
         const parsedFilePath = parseFilePath(fileNode.relativePath)
         const name = node.frontmatter.title
-        const slug = slugify(name)
+        const slugified = slugify(name)
         if (parsedFilePath.name !== `index` && parsedFilePath.dirname !== '' && !node.frontmatter.permalink) {
-          slug = `/${parsedFilePath.dirname}/${slug}/`
+          slug = `/${parsedFilePath.dirname}/${slugified}/`
         } else if (parsedFilePath.name !== `index` && node.frontmatter.slug && !node.frontmatter.permalink) {
           slug = `${node.frontmatter.slug}`
         } else if (parsedFilePath.name !== `index` && !node.frontmatter.permalink) {
-          slug = `/${slug}/`
+          slug = `/${slugified}/`
         } else if (parsedFilePath.name !== `index`) {
           slug = node.frontmatter.permalink
         } else {
