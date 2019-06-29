@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
+import { CaseStudyJumbotron } from '../components/CaseStudyJumbotron'
 import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
@@ -62,7 +63,17 @@ export default ((props: any) => (
             </div>
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
-                <hr />
+            </div>
+            <ContentSection color="black">
+                <CaseStudyJumbotron
+                    title="See how Thorn uses Sourcegraph to sunset legacy applications"
+                    quote="In pull requests, team members would include links to Sourcegraph code search, in order to prove all references to a deprecated system had been removed."
+                    author="Thorn Software Engineer, Jacob Gilesspie"
+                    url="/case-studies/we-are-thorn"
+                    image="/case-studies/thorn-logo-square.png"
+                />
+            </ContentSection>
+            <div className="bg-white text-dark">
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </div>
             <div className="bg-primary py-6 d-none">
