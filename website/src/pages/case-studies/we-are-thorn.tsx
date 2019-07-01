@@ -58,7 +58,7 @@ export default ((props: any) => (
 
                 <p>
                     Thorn builds technology to defend children from sexual abuse. Their work focuses on finding victims
-                    of child sex trafficking faster, and eliminating child sexual abuse from the internet.Thorn partners
+                    of child sex trafficking faster, and eliminating child sexual abuse from the internet. Thorn partners
                     with tech companies, law enforcement, as well as other NGOs, to build products that provide the
                     front lines with the latest technology to find the most vulnerable child victims faster.
                 </p>
@@ -98,7 +98,7 @@ export default ((props: any) => (
 
                 <p>
                     Sourcegraph’s multi-repository code search, was able to prove that no code referencing legacy
-                    systems exists organization-wide
+                    systems exists organization-wide.
                 </p>
 
                 <p>
