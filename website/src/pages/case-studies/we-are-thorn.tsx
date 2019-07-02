@@ -26,7 +26,7 @@ export default ((props: any) => (
                 name="description"
                 content="Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process."
             />
-            <link rel="icon" type="image/png" href="https://about.sourcegraph.com/favicon.png" />
+            <link rel="icon" type="image/png" href="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png" />
             <link
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
