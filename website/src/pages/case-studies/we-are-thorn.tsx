@@ -54,7 +54,7 @@ export default ((props: any) => (
                     Thorn builds technology to defend children from sexual abuse. Their work focuses on finding victims
                     of child sex trafficking quickly and eliminating child sexual abuse from the internet. Thorn
                     partners with tech companies, law enforcement, and other NGOs to build products to find vulnerable
-                    child victims faster. Thorn software reduces the time to identify many children.
+                    child victims faster. Thorn's software has helped law enforcement reduce investigation times by 60%, ensuring that we find more children, faster.
                 </p>
 
                 <h2 class="pt-5 pb-1">Sunsetting deprecated systems was costly and risked production stability</h2>
