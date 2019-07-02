@@ -66,8 +66,8 @@ export default ((props: any) => (
             </div>
             <ContentSection color="black">
                 <CaseStudyJumbotron
-                    title="See how Thorn uses Sourcegraph to sunset legacy applications"
-                    quote="In pull requests, team members would include links to Sourcegraph code search, in order to prove all references to a deprecated system had been removed."
+                    title="See how Thorn sunsets legacy applications safely with Sourcegraph"
+                    quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
                     author="Thorn Software Engineer, Jacob Gilesspie"
                     url="/case-studies/we-are-thorn"
                     image="/case-studies/thorn-logo-square.png"
