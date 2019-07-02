@@ -5,7 +5,7 @@ const COLORS = {
     purple: 'bg-purple text-light',
 }
 
-export const CaseStudyJumbotron: React.FunctionComponent<{
+export const CaseStudyFeature: React.FunctionComponent<{
     title: string
     titleClassName?: string
     quote: string
@@ -33,7 +33,7 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
         <div className="row container justify-content-center">
             <div class="col-sm-12 col-md-2 case-studies-feature__image">
                 <a href={url}>
-                    <img class="p-3 img-thumbnail align-middle" src={image} />
+                    <img class="img-thumbnail align-middle" src={image} />
                 </a>
             </div>
             <div class="col-md-6 case-studies-feature__content">
