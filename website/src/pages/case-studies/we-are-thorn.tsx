@@ -9,42 +9,15 @@ import { RequestDemoAction } from '../../css/components/actions/RequestDemoActio
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
-    <Layout location={props.location}>
-        <Helmet>
-            <title>Thorn sunsets legacy applications safely with Sourcegraph</title>
-            <meta name="twitter:title" content="How Thorn sunsets legacy applications safely with Sourcegraph" />
-            <meta property="og:title" content="How Thorn sunsets legacy applications safely with Sourcegraph" />
-            <meta
-                name="twitter:description"
-                content="Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process."
-            />
-            <meta
-                name="twitter:image"
-                content="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png"
-            />
-            <meta
-                property="og:description"
-                content="Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process."
-            />
-            <meta
-                name="og:image"
-                content="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png"
-            />
-            <meta
-                name="description"
-                content="Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process."
-            />
-            <link
-                rel="icon"
-                type="image/png"
-                href="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png"
-            />
-            <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-            ></link>
-        </Helmet>
-
+    <Layout
+        location={props.location}
+        meta={{
+            title: 'Thorn sunsets legacy applications safely with Sourcegraph',
+            description:
+                'Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process.',
+            image: 'https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png',
+        }}
+    >
         <CaseStudyPage
             title="Thorn sunsets legacy applications safely with Sourcegraph"
             logo="/case-studies/thorn-logo.png"
