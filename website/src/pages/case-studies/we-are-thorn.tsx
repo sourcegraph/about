@@ -21,7 +21,7 @@ export default ((props: any) => (
         <CaseStudyPage
             title="Thorn sunsets legacy applications safely with Sourcegraph"
             logo="/case-studies/thorn-logo.png"
-            pdf="https://storage.googleapis.com/sourcegraph-assets/Thorn%20Sourcegraph%20case%20study.pdf"
+            pdf="https://storage.googleapis.com/sourcegraph-assets/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
             className="thorn-case-study"
         >
             <ContentSection color="white" className="pt-5 pb-3">
