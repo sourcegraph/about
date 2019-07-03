@@ -19,14 +19,26 @@ export default ((props: any) => (
                 content="Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process."
             />
             <meta
+                name="twitter:image"
+                content="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png"
+            />
+            <meta
                 property="og:description"
                 content="Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process."
+            />
+            <meta
+                name="og:image"
+                content="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png"
             />
             <meta
                 name="description"
                 content="Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process."
             />
-            <link rel="icon" type="image/png" href="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png" />
+            <link
+                rel="icon"
+                type="image/png"
+                href="https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png"
+            />
             <link
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
@@ -54,7 +66,8 @@ export default ((props: any) => (
                     Thorn builds technology to defend children from sexual abuse. Their work focuses on finding victims
                     of child sex trafficking quickly and eliminating child sexual abuse from the internet. Thorn
                     partners with tech companies, law enforcement, and other NGOs to build products to find vulnerable
-                    child victims faster. Thorn's software has helped law enforcement reduce investigation times by 60%, ensuring that we find more children, faster.
+                    child victims faster. Thorn's software has helped law enforcement reduce investigation times by 60%,
+                    ensuring that we find more children, faster.
                 </p>
 
                 <h2 class="pt-5 pb-1">Sunsetting deprecated systems was costly and risked production stability</h2>
@@ -93,9 +106,7 @@ export default ((props: any) => (
 
                 <p>Sourcegraph is now essential to their code review process. </p>
 
-                <InContentBlockquote
-                    quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed, giving the reviewer confidence that the code is safe to merge."
-                />
+                <InContentBlockquote quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed, giving the reviewer confidence that the code is safe to merge." />
 
                 <h2 class="pt-5 pb-1">Deprecated systems were taken offline without downtime</h2>
                 <p>
