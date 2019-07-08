@@ -40,7 +40,7 @@ export default ((props: any) => (
                     of child sex trafficking quickly and eliminating child sexual abuse from the internet. Thorn
                     partners with tech companies, law enforcement, and other NGOs to build products to find vulnerable
                     child victims faster. Thorn's software has helped law enforcement reduce investigation times by 60%,
-                    ensuring that we find more children, faster.
+                    ensuring that more children are found, faster.
                 </p>
 
                 <h2 class="pt-5 pb-1">Sunsetting deprecated systems was costly and risked production stability</h2>

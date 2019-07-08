@@ -43,7 +43,7 @@ export const CaseStudyFeature: React.FunctionComponent<{
                         <cite>{author}</cite>
                     </footer>
                 </blockquote>
-                <a href={url} class="btn btn-primary mt-4" rel="nofollow">
+                <a href={url} class="btn btn-primary mt-4">
                     {buttonText}
                 </a>
             </div>
