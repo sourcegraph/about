@@ -15,7 +15,7 @@ export default ((props: any) => (
             title: 'Thorn sunsets legacy applications safely with Sourcegraph',
             description:
                 'Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process.',
-            image: 'https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png',
+            image: 'https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study-og-embed.jpg',
         }}
     >
         <CaseStudyPage
