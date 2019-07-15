@@ -68,7 +68,7 @@ export default ((props: any) => (
                 <CaseStudyFeature
                     title="See how Thorn sunsets legacy applications safely with Sourcegraph"
                     quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
-                    author="Thorn Software Engineer, Jacob Gilesspie"
+                    author="Thorn Software Engineer, Jacob Gillespie"
                     url="/case-studies/we-are-thorn"
                     image="/case-studies/thorn-sourcegraph-case-study.png"
                 />

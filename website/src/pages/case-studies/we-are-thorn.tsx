@@ -28,7 +28,7 @@ export default ((props: any) => (
                 <MediaQuote
                     image="/case-studies/jacob-gillespie-thorn-square.jpg"
                     quote="Ensuring that changes to legacy systems didn’t affect production stability was taking too long."
-                    author="Thorn Software Engineer Jacob Gilesspie"
+                    author="Thorn Software Engineer Jacob Gillespie"
                 />
             </ContentSection>
 
