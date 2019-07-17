@@ -22,9 +22,7 @@ Vimeo embed
 </p>
 -->
 
-[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company can get access to the same kind of tools that Google and Facebook developers use every day.
-
-We're excited to announce Sourcegraph {VERSION}. This release makes Sourcegraph more flexible and configurable to meet the needs of [our large enterprise customers](https://about.sourcegraph.com/), such as Uber, Lyft and Yelp. Our customers rely on Sourcegraph to search across 30,000+ repositories, with 1,000s of daily users on single instances.
+[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
 
