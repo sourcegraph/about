@@ -51,7 +51,6 @@ TO DO: VIDEO
 
 Admins can now install the [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) on their Bitbucket Server instance to provide code intelligence automatically to their teams. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, and line decorations while browsing and reviewing code in Bitbucket Server.
 
-
 There are two configuration steps:
 
 1. Install the [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin)
@@ -84,13 +83,20 @@ Quick links can be defined at the global, organization, and user level using the
 {
   // ...
   "quicklinks": [
+    // An external doc resource
     {
       "name": "Sourcegraph docs",
       "url": "https://docs.sourcegraph.com"
     },
+    // The main repository for your organization
     {
       "name": "Main repository",
       "url": "/github.com/sourcegraph/sourcegraph"
+    },
+    // A commonly used search (all CHANGELOG updates)
+    {
+      "name": "Changelog updates",
+      "url": "/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:changelog.md+type:diff"
     }
   ]
   // ...
@@ -110,7 +116,7 @@ TO DO: VIDEO
 </p>
 -->
 
-Sourcegraph 3.6 now supports repository syncing for [Bitbucket Cloud](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this initial release, all repositories accessible by the token for the user (including associated teams) will be synced. Support for excluding repositories is slated for 3.7.
+Sourcegraph 3.6 now supports repository syncing for [Bitbucket Cloud](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this initial release, all repositories accessible by the token for the user (including from teams listed in the config) will be synced. Support for excluding repositories is coming in a future version.
 
 ## Improved repository syncing progress UI
 
@@ -127,7 +133,7 @@ TO DO: Updated video (should we mark the 3.5 video as deprecated?)
 
 Applying an external service configuration change is now done in the background upon save, with progress information available to admins by clicking the syncing status indicator on the global navigation bar.
 
-The experimental repository syncing status indicator announced in 3.5 has been improved enough to turn this feature on for all site admins by default. Improvements include handling scale of 30,000+ repositories, and only showing the number of repositories remaining to be cloned.
+The repository syncing status indicator announced in 3.5 has been improved to support instances with 30,000+ repositories, and to only show the number of repositories remaining to be cloned. This UI feature is now shown to all site admins.
 
 ## Exclude rules for GitHub repository sync configuration now support regexp
 
