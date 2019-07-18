@@ -10,7 +10,7 @@ heroImage: /sourcegraph-mark.png
 published: true
 ---
 
-[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
 
@@ -51,7 +51,6 @@ TO DO: VIDEO
 
 Admins can now install the [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) on their Bitbucket Server instance to provide code intelligence automatically to their teams. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, and line decorations while browsing and reviewing code in Bitbucket Server.
 
-Previously, many users were not aware of the Sourcegraph browser extension. Now, admins can provide an easier onboarding path for all team members who want to browse or review code on Bitbucket Server.
 
 There are two configuration steps:
 
@@ -77,9 +76,9 @@ TO DO: VIDEO
 </p>
 -->
 
-[Quick links](https://docs.sourcegraph.com/user/quick_links) can now be added below the search bar on the home page and search results page. This makes it easier for teams to quickly access the Sourcegraph pages they care most about such as your team’s main repository, or have easy access to external resources like your CI system or team documentation.
+[Quick links](https://docs.sourcegraph.com/user/quick_links) can now be added below the search bar on the home and search results pages. They can be used for quickly accessing frequently used URLs such as a code search, main repository, or external resources like your CI system or team documentation.
 
-Add a quick link to global, organization, or user settings with the `quicklinks` field:
+Quick links can be defined at the global, organization, and user level using the `quicklinks` field:
 
 ```
 {
@@ -111,7 +110,7 @@ TO DO: VIDEO
 </p>
 -->
 
-Previously, Bitbucket Cloud repositories had to be added and configured as individual git repositories. In Sourcegraph 3.6 we added first class support for connecting [Bitbucket Cloud repositories](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this release, all repositories will be added for the username configured, and teams listed that the Bitbucket Cloud app password grants access to.
+Sourcegraph 3.6 now supports repository syncing for [Bitbucket Cloud](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this initial release, all repositories accessible by the token for the user (including associated teams) will be synced. Support for excluding repositories is slated for 3.7.
 
 ## Improved repository syncing progress UI
 
@@ -126,15 +125,15 @@ TO DO: Updated video (should we mark the 3.5 video as deprecated?)
 </p>
 -->
 
-Admins no longer have to wait for an external service to finish syncing before navigating away from the configuration page. Previously, this was problematic for customers adding external services with lots of repositories. Now, the syncing continues in the background and progress is shown to admins in the global navigation bar’s syncing status indicator.
+Applying an external service configuration change is now done in the background upon save, with progress information available to admins by clicking the syncing status indicator on the global navigation bar.
 
 The experimental repository syncing status indicator announced in 3.5 has been improved enough to turn this feature on for all site admins by default. Improvements include handling scale of 30,000+ repositories, and only showing the number of repositories remaining to be cloned.
 
 ## Exclude rules for GitHub repository sync configuration now support regexp
 
-The `github.exclude` setting in [GitHub external service config](https://docs.sourcegraph.com/admin/external_service/github#configuration) has been expanded to handle regular expressions using `{"pattern": "^topsecretrepogroup/.*"}`.
+The `github.exclude` field for the [GitHub external service](https://docs.sourcegraph.com/admin/external_service/github#configuration) now supports the use of regular expressions using `{"pattern": "^topsecretrepogroup/.*"}`.
 
-Previously, only names or IDs could be specified. Now, it is easier to exclude entire groups of repositories, such as repositories containing secrets, or data projects that aren’t relevant for code browsing.
+Now, entire groups of repositories such as those containing secrets, can be excluded in a single regexp instead of manually entering the name or id for each repository.
 
 ## Meet the team at GopherCon 2019!
 
