@@ -14,21 +14,21 @@ published: true
 
 <div style="padding-left: 2rem">
 
-[**🌎 Sourcegraph plugin provides native code intelligence to Bitbucket Server**](#)<br />
+[**🌎 Sourcegraph plugin provides native code intelligence to Bitbucket Server**](#sourcegraph-plugin-provides-native-code-intelligence-to-bitbucket-server)<br />
 
-[**📉 30% indexed search latency improvement for small and medium instances**](#)<br />
+[**📉 30% indexed search latency improvement for small and medium instances**](#30-indexed-search-latency-improvement-for-small-and-medium-instances)<br />
 
-[**🔗 New customizable quick links for frequently used code searches or other URLs**](#)<br />
+[**🔗 New customizable quick links for frequently used code searches or other URLs**](#new-customizable-quick-links-for-frequently-used-code-searches-or-other-urls)<br />
 
-[**☁️ New repository syncing support for Bitbucket Cloud**](#)<br />
+[**☁️ New repository syncing support for Bitbucket Cloud**](#new-repository-syncing-support-for-bitbucket-cloud)<br />
 
-[**🛠 Improved repository syncing progress UI**](#)<br />
+[**🛠 Improved repository syncing progress UI**](#improved-repository-syncing-progress-ui)<br />
 
-[**🙅‍♀️ Exclude rules for GitHub repository sync configuration now support regexp**](#)<br />
+[**🙅‍♀️ Exclude rules for GitHub repository sync configuration now support regexp**](#exclude-rules-for-github-repository-sync-configuration-now-support-regexp)<br />
 
-[**✈️ Meet the team at GopherCon 2019!**](#)<br />
+[**✈️ Meet the team at GopherCon 2019!**](#meet-the-team-at-gophercon-2019)<br />
 
-[**📝 Changelog**](#35-changelog)<br />
+[**📝 Changelog**](#36-changelog)<br />
 
 [**🎖️ Thank you**](#thank-you)<br />
 
