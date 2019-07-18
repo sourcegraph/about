@@ -24,9 +24,9 @@ published: true
 
 [**🛠 Improved repository syncing progress UI**](#)<br />
 
-[**🙅‍♀️ Easily exclude GitHub repositories from syncing (by regexp)**](#)<br />
+[**🙅‍♀️ Exclude rules for GitHub repository sync configuration now support regexp**](#)<br />
 
-[**✈️ Meet us in person at GopherCon!**](#)<br />
+[**✈️ Meet the team at GopherCon 2019!**](#)<br />
 
 [**📝 Changelog**](#35-changelog)<br />
 
