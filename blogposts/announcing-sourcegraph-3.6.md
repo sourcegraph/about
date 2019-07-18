@@ -18,11 +18,11 @@ published: true
 
 [**📉 30% indexed search latency improvement for small and medium instances**](#)<br />
 
-[**🔗 Add quick links to repositories or important resources below the search bar**](#)<br />
+[**🔗 New customizable quick links for frequently used code searches or other URLs**](#)<br />
 
-[**☁️ Added support for Bitbucket Cloud external service configuration**](#)<br />
+[**☁️ New repository syncing support for Bitbucket Cloud**](#)<br />
 
-[**🛠 Improved external service configuration and syncing experience for admins**](#)<br />
+[**🛠 Improved repository syncing progress UI**](#)<br />
 
 [**🙅‍♀️ Easily exclude GitHub repositories from syncing (by regexp)**](#)<br />
 
