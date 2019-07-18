@@ -60,7 +60,7 @@ There are two configuration steps:
 
 ![chart showing 30% improvement of search latency](images/3.6-search-latency.png "30% improvement of search latency")
 
-We have made several changes to our search algorithm that improve performance and reduce peak memory usage. Our benchmarks show that the **99th percentile latency** of indexed searches in small to medium instances (less than 3000 repositories) **is reduced by up to 30%**. We will be continuing work to further benchmark and optimize Sourcegraph for our customers with 30,000+ repositories.
+We have improved our search algorithm's performance and reduced peak memory usage. Our benchmarks show that the **99th percentile latency** of indexed searches in small to medium instances (less than 3000 repositories) **is reduced by up to 30%**. We will be continuing work to further benchmark and optimize Sourcegraph for our customers with 30,000+ repositories.
 
 ## New customizable quick links for frequently used code searches or other URLs
 
