@@ -14,7 +14,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 <div style="padding-left: 2rem">
 
-[**🌎 Sourcegraph plugin provides native code intelligence to Bitbucket Server**](#sourcegraph-plugin-provides-native-code-intelligence-to-bitbucket-server)<br />
+[**🌎 Native code intelligence with Sourcegraph Bitbucket Server plugin**](#native-code-intelligence-with-sourcegraph-bitbucket-server-plugin)<br />
 
 [**📉 30% indexed search latency improvement for small and medium instances**](#30-indexed-search-latency-improvement-for-small-and-medium-instances)<br />
 
@@ -36,7 +36,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## Sourcegraph plugin provides native code intelligence to Bitbucket Server
+## Native code intelligence with Sourcegraph Bitbucket Server plugin
 
 TO DO: VIDEO
 
