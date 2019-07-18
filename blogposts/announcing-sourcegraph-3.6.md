@@ -1,5 +1,5 @@
 ---
-title: 'Sourcegraph 3.6: Native code intelligence for Bitbucket Server, search performance improvements, and quick links'
+title: 'Sourcegraph 3.6: Bitbucket Server plugin, search performance improvements, and quick links'
 author: Christina Forney
 publishDate: 2019-07-20T10:00-07:00
 tags: [
@@ -16,13 +16,15 @@ published: true
 
 [**🌎 Sourcegraph plugin provides native code intelligence to Bitbucket Server**](#)<br />
 
-[**📉 30% search latency improvement for small and medium instances**](#)<br />
+[**📉 30% indexed search latency improvement for small and medium instances**](#)<br />
 
 [**🔗 Add quick links to repositories or important resources below the search bar**](#)<br />
 
-[**☁️ Added support for Bitbucket.org external service configuration**](#)<br />
+[**☁️ Added support for Bitbucket Cloud external service configuration**](#)<br />
 
 [**🛠 Improved external service configuration and syncing experience for admins**](#)<br />
+
+[**🙅‍♀️ Easily exclude GitHub repositories from syncing (by regexp)**](#)<br />
 
 [**✈️ Meet us in person at GopherCon!**](#)<br />
 
@@ -47,9 +49,9 @@ TO DO: VIDEO
 </p>
 -->
 
-Admins can now install the [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) to their Bitbucket Server instance to provide code intelligence automatically to their teams. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, and line decorations while browsing and reviewing code in Bitbucket Server.
+Admins can now install the [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) on their Bitbucket Server instance to provide code intelligence automatically to their teams. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, and line decorations while browsing and reviewing code in Bitbucket Server.
 
-Previously, many users were not aware of the Sourcegraph browser extension, or had trouble configuring it to use their company’s Sourcegraph instance. Now, admins can provide an easier onboarding path for all team members who want to browse or review code on Bitbucket Server.
+Previously, many users were not aware of the Sourcegraph browser extension. Now, admins can provide an easier onboarding path for all team members who want to browse or review code on Bitbucket Server.
 
 There are two configuration steps:
 
@@ -96,7 +98,7 @@ Add a quick link to global, organization, or user settings with the `quicklinks`
 }
 ```
 
-## Added support for Bitbucket.org external service configuration
+## Added support for Bitbucket Cloud external service configuration
 
 TO DO: VIDEO
 
@@ -109,7 +111,7 @@ TO DO: VIDEO
 </p>
 -->
 
-Previously, Bitbucket cloud repositories had to be added and configured as individual git repositories. In Sourcegraph 3.6 we first class support for connecting [Bitbucket Cloud repositories](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this release, all repositories will be added for the username configured, and teams listed that the Bitbucket Cloud app password grants access to.
+Previously, Bitbucket Cloud repositories had to be added and configured as individual git repositories. In Sourcegraph 3.6 we added first class support for connecting [Bitbucket Cloud repositories](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this release, all repositories will be added for the username configured, and teams listed that the Bitbucket Cloud app password grants access to.
 
 ## Improved external service configuration and syncing experience for admins
 
@@ -124,19 +126,19 @@ TO DO: Updated video (should we mark the 3.5 video as deprecated?)
 </p>
 -->
 
-Admins no longer have to wait for an external service to finish syncing before moving off of the configuration page. Previously, this was problematic for customers adding external services with lots of repositories. Now, the syncing continues in the background and progress is reflected to admins in the syncing status indicator.
+Admins no longer have to wait for an external service to finish syncing before navigating away from the configuration page. Previously, this was problematic for customers adding external services with lots of repositories. Now, the syncing continues in the background and progress is shown to admins in the global navigation bar’s syncing status indicator.
 
-The experimental repository syncing status indicator announced in 3.5 has been improved in performance and information shown, so we are making the experimental flag on by default. The syncing status indicator now handles large scales of repositories, has been updated to only show the number of repositories remaining to be cloned, and will be shown to all site admins.
+The experimental repository syncing status indicator announced in 3.5 has been improved enough to turn this feature on for all site admins by default. Improvements include handling scale of 30,000+ repositories, and only showing the number of repositories remaining to be cloned.
 
-## Easily exclude GitHub repositories from syncing with regexp
+## Easily exclude GitHub repositories from syncing (by regexp)
 
 The `github.exclude` setting in [GitHub external service config](https://docs.sourcegraph.com/admin/external_service/github#configuration) has been expanded to handle regular expressions using `{"pattern": "^topsecretrepogroup/.*"}`.
 
-Previously, only names or ids could be specified. Now, it is easier to exclude entire groups of repositories, for example repositories containing secrets, or data projects that aren’t relevant for code browsing.
+Previously, only names or IDs could be specified. Now, it is easier to exclude entire groups of repositories, such as repositories containing secrets, or data projects that aren’t relevant for code browsing.
 
 ## Meet us in person at GopherCon!
 
-Our remote first team from around the world is coming together at GopherCon next week. We are looking forward to seeing our friends in the Go community, so make sure to find us while you’re there!
+Our remote-first team from around the world is coming together at GopherCon next week. We are looking forward to seeing our friends in the Go community, so make sure to find us while you’re there!
 
 ## 3.6 Changelog
 
