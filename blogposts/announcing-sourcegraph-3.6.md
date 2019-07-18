@@ -64,7 +64,7 @@ There are two configuration steps:
 
 We have made several changes to our search algorithm that improve performance and reduce peak memory usage. Our benchmarks show that the **99th percentile latency** of indexed searches in small to medium instances (less than 3000 repositories) **is reduced by up to 30%**. We will be continuing work to further benchmark and optimize Sourcegraph for our customers with 30,000+ repositories.
 
-## Add quick links to repositories or important resources below the search bar
+## New customizable quick links for frequently used code searches or other URLs
 
 TO DO: VIDEO
 
@@ -98,7 +98,7 @@ Add a quick link to global, organization, or user settings with the `quicklinks`
 }
 ```
 
-## Added support for Bitbucket Cloud external service configuration
+## New repository syncing support for Bitbucket Cloud
 
 TO DO: VIDEO
 
@@ -113,7 +113,7 @@ TO DO: VIDEO
 
 Previously, Bitbucket Cloud repositories had to be added and configured as individual git repositories. In Sourcegraph 3.6 we added first class support for connecting [Bitbucket Cloud repositories](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this release, all repositories will be added for the username configured, and teams listed that the Bitbucket Cloud app password grants access to.
 
-## Improved external service configuration and syncing experience for admins
+## Improved repository syncing progress UI
 
 TO DO: Updated video (should we mark the 3.5 video as deprecated?)
 
@@ -130,13 +130,13 @@ Admins no longer have to wait for an external service to finish syncing before n
 
 The experimental repository syncing status indicator announced in 3.5 has been improved enough to turn this feature on for all site admins by default. Improvements include handling scale of 30,000+ repositories, and only showing the number of repositories remaining to be cloned.
 
-## Easily exclude GitHub repositories from syncing (by regexp)
+## Exclude rules for GitHub repository sync configuration now support regexp
 
 The `github.exclude` setting in [GitHub external service config](https://docs.sourcegraph.com/admin/external_service/github#configuration) has been expanded to handle regular expressions using `{"pattern": "^topsecretrepogroup/.*"}`.
 
 Previously, only names or IDs could be specified. Now, it is easier to exclude entire groups of repositories, such as repositories containing secrets, or data projects that aren’t relevant for code browsing.
 
-## Meet us in person at GopherCon!
+## Meet the team at GopherCon 2019!
 
 Our remote-first team from around the world is coming together at GopherCon next week. We are looking forward to seeing our friends in the Go community, so make sure to find us while you’re there!
 
