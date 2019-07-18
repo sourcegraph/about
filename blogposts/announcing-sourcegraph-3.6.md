@@ -143,7 +143,9 @@ Now, entire groups of repositories such as those containing secrets, can be excl
 
 ## Meet the team at GopherCon 2019!
 
-Our remote-first team from around the world is coming together at GopherCon next week. We are looking forward to seeing our friends in the Go community, so make sure to find us while you’re there!
+Our remote-first team from around the world is coming together at GopherCon next week. We are looking forward to seeing our friends in the Go community, so make sure to find us while you’re there! You can find a Sourcegrapher by spotting someone wearing one of these hoodies:
+
+![Sourcegraph GopherCon hoodie](images/3.6-gophercon-hoodie.jpg "Sourcegraph GopherCon hoodie")
 
 ## 3.6 Changelog
 
