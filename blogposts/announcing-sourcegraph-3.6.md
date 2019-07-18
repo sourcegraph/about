@@ -56,7 +56,7 @@ There are two configuration steps:
 1. Install the [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin)
 2. Update the [Bitbucket Server external service configuration](https://docs.sourcegraph.com/admin/external_service/bitbucket_server#native-extension) in your Sourcegraph instance to include `”corsOrigin”: “<bitbucket server url>”`
 
-## 30% search latency improvement for small and medium instances
+## 30% indexed search latency improvement for small and medium instances
 
 ![chart showing 30% improvement of search latency](images/3.6-search-latency.png "30% improvement of search latency")
 
