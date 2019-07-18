@@ -49,7 +49,7 @@ TO DO: VIDEO
 </p>
 -->
 
-Admins can now install the [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) on their Bitbucket Server instance to provide code intelligence automatically to their teams. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, and line decorations while browsing and reviewing code in Bitbucket Server.
+The [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) is now available for installation on Bitbucket Server instances to provide native code intelligence automatically. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, go to definition, and custom line decorations when browsing and reviewing code on Bitbucket Server instances.
 
 There are two configuration steps:
 
