@@ -131,9 +131,9 @@ TO DO: Updated video (should we mark the 3.5 video as deprecated?)
 </p>
 -->
 
-Applying an external service configuration change is now done in the background upon save, with progress information available to admins by clicking the syncing status indicator on the global navigation bar.
+Applying an external service configuration change is now done in the background upon saving, with progress information available to admins by clicking the syncing status indicator on the global navigation bar.
 
-The repository syncing status indicator announced in 3.5 has been improved to support instances with 30,000+ repositories, and to only show the number of repositories remaining to be cloned. This UI feature is now shown to all site admins.
+The repository syncing status indicator announced in 3.5 has been improved to support instances with 30,000+ repositories and to only show the number of repositories remaining to be cloned. This UI feature is now shown to all site admins.
 
 ## Exclude rules for GitHub repository sync configuration now support regexp
 
