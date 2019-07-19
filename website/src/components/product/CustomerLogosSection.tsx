@@ -31,6 +31,10 @@ const ITEMS: (
         name: 'Plaid',
         url: '/external-logos/plaid-logo.svg',
     },
+    {
+        name: 'GetYourGuide',
+        url: '/external-logos/gyg.svg',
+    },
     // {
     //     topN: 5,
     //     description: 'media company',
