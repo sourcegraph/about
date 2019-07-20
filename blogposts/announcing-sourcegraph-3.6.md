@@ -74,7 +74,7 @@ We have improved our search algorithm's performance and reduced peak memory usag
 
 Quick links can be defined at the global, organization, and user level using the `quicklinks` field:
 
-```
+```json
 {
   // ...
   "quicklinks": [
