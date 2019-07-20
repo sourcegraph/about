@@ -38,7 +38,6 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 ## Native code intelligence with Sourcegraph Bitbucket Server plugin
 
-TO DO: VIDEO
 
 <!--
 <p class="container">
