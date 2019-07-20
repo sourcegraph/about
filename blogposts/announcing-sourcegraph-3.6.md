@@ -64,16 +64,12 @@ We have improved our search algorithm's performance and reduced peak memory usag
 
 ## New customizable quick links for frequently used code searches or other URLs
 
-TO DO: VIDEO
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/349147319?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/349147319" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 [Quick links](https://docs.sourcegraph.com/user/quick_links) can now be added below the search bar on the home and search results pages. They can be used for quickly accessing frequently used URLs such as a code search, main repository, or external resources like your CI system or team documentation.
 
