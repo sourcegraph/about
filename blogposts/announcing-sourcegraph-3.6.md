@@ -107,7 +107,7 @@ Quick links can be defined at the global, organization, and user level using the
   <p style="text-align: center"><a href="https://vimeo.com/349145191" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph 3.6 now supports repository syncing for [Bitbucket Cloud](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this initial release, all repositories accessible by the token for the user (including from teams listed in the config) will be synced. Support for excluding repositories is coming in a future version.
+Sourcegraph 3.6 now supports repository syncing for [Bitbucket Cloud](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this initial release, all repositories accessible by the token for the user (including from teams listed in the config) will be synced. Support for excluding repositories and for adding public repositories is coming in a future version.
 
 ## Improved repository syncing progress UI
 
