@@ -105,16 +105,12 @@ Quick links can be defined at the global, organization, and user level using the
 
 ## New repository syncing support for Bitbucket Cloud
 
-TO DO: VIDEO
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/349145191?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/349145191" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 Sourcegraph 3.6 now supports repository syncing for [Bitbucket Cloud](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this initial release, all repositories accessible by the token for the user (including from teams listed in the config) will be synced. Support for excluding repositories is coming in a future version.
 
