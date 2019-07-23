@@ -43,4 +43,4 @@ Our remote-first team from around the world is coming together at GopherCon next
 
 ![Sourcegraph GopherCon hoodie](images/3.6-gophercon-hoodie.jpg "Sourcegraph GopherCon hoodie")
 
-And one more thing. Livebloggers will also receive one of these hoodies at the end of the conference.
+One more thing: Livebloggers will receive one of these awesome hoodies at the end of the conference!
