@@ -22,7 +22,14 @@ Liveblogging is an excellent way to get more involved with the Go community, sup
 
 ## How it works
 
-Liveblogging is a live stream in written form. It's capturing the essential parts of a talk, converting that into Markdown including images is cool too), then making a pull request against our [website repository](https://github.com/sourcegraph/about). Once your pull request is merged, it will live on the [GopherCon blog](/go) in less than 5 minutes.
+Liveblogging is a live stream in written form to capture the essential parts of a talk, and convert that into a published blog post. 
+
+Steps to live blog:
+- Take notes capturing talk key points.
+- Convert notes to Markdown - including images is a bonus!
+- Clone the [blog post template](#)
+- Make a pull request against our [website repository](https://github.com/sourcegraph/about).
+- After your pull request is merged, it will be live on the [GopherCon blog](/go) in less than 5 minutes.
 
 We will then promote your post from the  GopherCon and Sourcegraph Twitter accounts, crediting you and raising your profile to over 28,000 developers.
 
