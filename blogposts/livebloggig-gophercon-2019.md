@@ -18,22 +18,25 @@ For the third year, Sourcegraph is proud to host the official liveblog for Gophe
 
 ## Why liveblog
 
-Liveblogging is an excellent way to get more involved with the Go community, support the presenters, and get your name on an artifact of GopherCon. Sign up for multiple sessions to keep your options open and help make sure the schedule gets filled.
+Liveblogging is an excellent way to get more involved with the Go community, support the presenters, and get your name on an artifact of GopherCon. You can sign up for multiple sessions to keep your options open and help make sure the schedule gets filled.
 
 ## How it works
 
-Liveblogging is a live stream in written form to capture the essential parts of a talk, and convert that into a published blog post. 
+Liveblogging is about capturing and summarizing the essential parts of a talk, then converting that into a published blog post. We aim to get posts live 2-3 hours after the talk concludes.
 
 Steps to live blog:
+
 - Take notes capturing talk key points.
-- Convert notes to Markdown - including images is a bonus!
-- Clone the [blog post template](#)
-- Make a pull request against our [website repository](https://github.com/sourcegraph/about).
+- Fork our [website repository](https://github.com/sourcegraph/about).
+- Find the Markdown file for your talk in the `blogposts` directory and add your content.
+- Make a pull request.
 - After your pull request is merged, it will be live on the [GopherCon blog](/go) in less than 5 minutes.
 
-When your blog post is live, we will promote your post from the GopherCon and Sourcegraph Twitter accounts, crediting you and raising your profile to over 28,000 developers.
+Once live, your post will be promoted from the [GopherCon](https://twitter.com/gophercon) and [Sourcegraph](https://twitter.com/srcgraph) Twitter accounts, crediting you and raising your profile to over 28,000 followers.
 
-## To sign-up
+If possible, we provide access to the slides beforehand, making it easier to extract code snippets, images, and get familiar with the content.
+
+## To sign up
 
 [Fill out our Google form](http://bit.ly/gophercon-liveblog-signup-2019) with your contact details and the talks you want to cover. We will then be in touch to confirm your assignment.
 
