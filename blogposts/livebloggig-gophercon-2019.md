@@ -30,7 +30,7 @@ Steps to live blog:
 - Fork our [website repository](https://github.com/sourcegraph/about).
 - Find the Markdown file for your talk in the `blogposts` directory and add your content.
 - Make a pull request.
-- After your pull request is merged, it will be live on the [GopherCon blog](/go) in less than 5 minutes.
+- After your pull request is merged, it will be live on the [Sourcegraph GopherCon liveblog](/go) in less than 5 minutes.
 
 Once live, your post will be promoted from the [GopherCon](https://twitter.com/gophercon) and [Sourcegraph](https://twitter.com/srcgraph) Twitter accounts, crediting you and raising your profile to over 28,000 followers.
 
