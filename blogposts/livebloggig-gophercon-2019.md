@@ -12,8 +12,9 @@ published: true
 
 <p class="text-center"><img alt="GopherCon 2019 Banner" src="https://res.cloudinary.com/bizzaboprod/image/upload/w_740,c_fit,fl_any_format,q_auto:best/mjkpm9uwwnknzs4u7b6s.png" class="h5"></p>
 
+<!-- Add back once the blog post list page uses the `description` frontmatter field value.
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
-
+ -->
 For the third year, Sourcegraph is proud to host the official liveblog for GopherCon. We're looking for attendees who want to contribute - is that you?
 
 ## Why liveblog
