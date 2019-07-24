@@ -11,7 +11,9 @@ export default class GoList extends React.Component<any, any> {
     }
 
     public render(): JSX.Element | null {
-        const goPosts = this.props.data.allMarkdownRemark.edges
+        const goPosts = this.props.data.allMarkdownRemark.edges.filter(
+            (post: any) => post.node.frontmatter.published === true
+        )
 
         return (
             <Layout location={this.props.location}>
@@ -55,6 +57,7 @@ export const pageQuery = graphql`
                         publishDate(formatString: "MMMM D, YYYY")
                         slug
                         description
+                        published
                     }
                     html
                     excerpt(pruneLength: 300)
