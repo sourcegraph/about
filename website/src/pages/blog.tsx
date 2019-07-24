@@ -50,6 +50,7 @@ export const pageQuery = graphql`
                         publishDate(formatString: "MMMM D, YYYY")
                         slug
                         published
+                        description
                     }
                     html
                     excerpt(pruneLength: 300)
