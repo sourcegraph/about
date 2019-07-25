@@ -19,9 +19,7 @@ published: true
 <p class="text-center"><strong>Liveblogger assignments - <a href="http://bit.ly/gophercon-2019-liveblog-assignments">http://bit.ly/gophercon-2019-liveblog-assignments</a></strong></p>
 ---
 
-<!-- Add back once the blog post list page uses the `description` frontmatter field value.
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
- -->
 
 For the third year, Sourcegraph is proud to host the official liveblog for GopherCon. We're looking for attendees who want to contribute - is that you?
 
