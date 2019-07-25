@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: writing-a-go-tool-to-parse-and-modify-struct-tags
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1jsbunUDpOo0QkkO2wucGC/a793ce04c93f80667577a62464efe664/IMG_4098.JPG.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1jsbunUDpOo0QkkO2wucGC/a793ce04c93f80667577a62464efe664/IMG_4098.JPG.jpeg
 published: true
 ---
 

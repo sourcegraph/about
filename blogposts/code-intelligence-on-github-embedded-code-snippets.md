@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: code-intelligence-on-github-embedded-code-snippets
-heroImage: //images.ctfassets.net/le3mxztn6yoo/UrsmRAa3EOGWiISoeiq26/2df156407145ac91fc97ca2a055c9417/EmbeddedSnippetIntelligence.gif
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/UrsmRAa3EOGWiISoeiq26/2df156407145ac91fc97ca2a055c9417/EmbeddedSnippetIntelligence.gif
 published: true
 ---
 

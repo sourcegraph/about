@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: self-deploying-kubernetes-applications-kelsey-hightower
-heroImage: //assets.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp
+heroImage: https://assets.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp
 published: true
 ---
 

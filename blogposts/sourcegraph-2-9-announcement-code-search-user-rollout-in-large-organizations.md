@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-2-9-announcement-code-search-user-rollout-in-large-organizations
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1TbeS9cVu0MOE4soS2W2wQ/6089a348cac88a3d460771b5b65c3e7c/Screenshot_from_2018-06-19_09-35-26.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1TbeS9cVu0MOE4soS2W2wQ/6089a348cac88a3d460771b5b65c3e7c/Screenshot_from_2018-06-19_09-35-26.png
 published: true
 ---
 
@@ -58,7 +58,7 @@ Try it on Sourcegraph.com: search for [repogroup:sample open](https://sourcegrap
 ## Large result sets and pagination
 It's now easier to work with searches with many results and to share search links with teammates:
 
-- Searches that find all results (e.g. there is no `+` after the result count) will be sorted in a stable way. If you reload the page or share the link with someone else, the list of results will be the exact same (assuming the underlying repository contents don't change in the meantime). 
+- Searches that find all results (e.g. there is no `+` after the result count) will be sorted in a stable way. If you reload the page or share the link with someone else, the list of results will be the exact same (assuming the underlying repository contents don't change in the meantime).
 - If you perform a search that does not find all results (e.g. there is a `+` after the result count), you can click the “Show more” to look for more results or you can manually specify the number of results to search for by adding `count:N` to your search query.
 - As you scroll down the list of search results, the URL in your browser's address bar is updated to point to your position (with `&at=N`). So, if you reload or share the link, the scroll position will be preserved.
 

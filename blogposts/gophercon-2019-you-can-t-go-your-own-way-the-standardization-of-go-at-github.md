@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-you-can-t-go-your-own-way-the-standardization-of-go-at-github
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 

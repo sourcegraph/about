@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-c-l-eye-catching-user-interfaces
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -199,7 +199,7 @@ Using this gives you full control, e.g. someone types a password you can control
 
 __Fullscreen interfaces__
 
-This is a combination of: 
+This is a combination of:
 * Raw mode
 * Direct TTY access
 * Alternate buffer
@@ -243,4 +243,4 @@ A few links if you want to play around or learn more...
 * [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
 * [termios(3)](http://man7.org/linux/man-pages/man3/termios.3.html)
 * [XTerm Control Sequences](http://invisible-island.net/xterm/ctlseqs/ctlseqs.html)
- 
+

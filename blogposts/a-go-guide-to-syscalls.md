@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: a-go-guide-to-syscalls
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4C6mXzqOmIcSgyQ8wawUIg/c4563c96f0b6e6f55605ae155ca22dee/IMG_4097.JPG.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4C6mXzqOmIcSgyQ8wawUIg/c4563c96f0b6e6f55605ae155ca22dee/IMG_4097.JPG.jpeg
 published: true
 ---
 

@@ -6,13 +6,13 @@ tags: [
   "graphql"
 ]
 slug: getting-buy-in-a-recipe-for-graphql-adoption
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png
 published: true
 ---
 
 
 Jira Vinyoopongphan [@thekamahele](https://twitter.com/thekamahele)
-Software Engineer @ Capital One 
+Software Engineer @ Capital One
 
 Jira is a Software Engineer at Capital One who is passionate about GraphQL and JavaScript. She has worked on everything from consumer apps and Node.js platforms to marketing pages. When not coding, Jira can be found roaming around the world or weightlifting on the platform.
 

@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: writing-network-clients-in-go-the-design-and-implementation-of-the-nats-client
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6OiLu7yVkkie2um2EyCYoY/23be476b4f7c8b14b293a223e3bff599/waldemar.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6OiLu7yVkkie2um2EyCYoY/23be476b4f7c8b14b293a223e3bff599/waldemar.jpg
 published: true
 ---
 

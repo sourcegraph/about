@@ -7,7 +7,7 @@ tags: [
   blog
 ]
 slug: new-graphql-sourcegraph-extension
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

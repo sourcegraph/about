@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: valuable-lessons-in-over-engineering-the-core-of-kubernetes-kops
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5iLZDFTA1GqO04yikSSGiY/87e9a7c0a36c9fd4546a8b38840cb54c/Selection_020.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5iLZDFTA1GqO04yikSSGiY/87e9a7c0a36c9fd4546a8b38840cb54c/Selection_020.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: unmasking-netpoll-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6rUiU3pf9uCCAq4K244wUs/e0855e037b1992d4f110cd40387d7d6d/IMG_0027.JPG
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6rUiU3pf9uCCAq4K244wUs/e0855e037b1992d4f110cd40387d7d6d/IMG_0027.JPG
 published: true
 ---
 
