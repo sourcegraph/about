@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: jp-robinson-of-nytimes-on-go-kit-gizmo-and-marvin
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2fNM9V86sAGw4aQQIWUqGk/5c761b436ece37c070532d327a8cd2bb/jp_robinson.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2fNM9V86sAGw4aQQIWUqGk/5c761b436ece37c070532d327a8cd2bb/jp_robinson.jpeg
 published: true
 ---
 

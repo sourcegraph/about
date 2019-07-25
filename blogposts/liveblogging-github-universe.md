@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: liveblogging-github-universe
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1Q4ROVk2SgUi0gCKO0WuAa/cd593adb777028731ef92f8f400721fc/1_lutbfMDzzU8wJYIWvwV9kw.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1Q4ROVk2SgUi0gCKO0WuAa/cd593adb777028731ef92f8f400721fc/1_lutbfMDzzU8wJYIWvwV9kw.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: the-graphql-stack-how-everything-fits-together
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1H9b2gUgdOIwmqUoYUskum/889f8713e476e6ded08560df6126d316/stubailo.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1H9b2gUgdOIwmqUoYUskum/889f8713e476e6ded08560df6126d316/stubailo.jpg
 published: true
 ---
 

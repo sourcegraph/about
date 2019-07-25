@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: toward-a-url-for-every-function-in-the-world
-heroImage: //images.ctfassets.net/le3mxztn6yoo/47219SjMUUCyUmae0mUaiq/77c4ca8dd8899369c758225af610282d/1_qwvlhN_OxHQH_aLVAkqBzw.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/47219SjMUUCyUmae0mUaiq/77c4ca8dd8899369c758225af610282d/1_qwvlhN_OxHQH_aLVAkqBzw.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: ipfs-the-permanent-web-by-juan-benet
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1fNup8iuU2QgGIwAgW8Ewq/cbe19d0788e06e89350e22e06127fdc9/0-RsrS68m6tNt9Yazz.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1fNup8iuU2QgGIwAgW8Ewq/cbe19d0788e06e89350e22e06127fdc9/0-RsrS68m6tNt9Yazz.jpeg
 published: true
 ---
 

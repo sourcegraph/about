@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: the-august-2018-docker-hub-outage-and-the-impact-on-kubernetes-deployments
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1LMHTsJzjOwOweIoUmMk2i/2ff8fd218923eda3f0e32f81cec6016f/Docker-logo-011.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1LMHTsJzjOwOweIoUmMk2i/2ff8fd218923eda3f0e32f81cec6016f/Docker-logo-011.png
 published: true
 ---
 
@@ -18,11 +18,11 @@ You may be thinking “I use Kubernetes, doesn’t this only affect people execu
 
 Below is the advice we’ve given our customers to help them work around the outage and we encourage you to share this with anyone who uses Kubernetes to help them have an incident and outage free weekend.
 
-## Check your imagePullPolicy 
+## Check your imagePullPolicy
 We use the imagePullPolicy [default value](https://kubernetes.io/docs/concepts/configuration/overview/#container-images) (IfNotPresent), meaning the image will not be pulled if available locally.
 
 ## Avoid changing the state of the Kubernetes cluster
-The idea is to not give a Kubernetes worker node a reason to pull an image from Docker Hub. 
+The idea is to not give a Kubernetes worker node a reason to pull an image from Docker Hub.
 
 While this is somewhat out of our control (if a node dies), we recommend to:
 

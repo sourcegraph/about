@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: graphql-under-the-hood
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3KrbaZSH5CiYWGQeOw0awY/39ee5be467c85c233be343be8205dcc2/Screen-Shot-2017-10-26-at-10.21.23-AM.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3KrbaZSH5CiYWGQeOw0awY/39ee5be467c85c233be343be8205dcc2/Screen-Shot-2017-10-26-at-10.21.23-AM.png
 published: true
 ---
 

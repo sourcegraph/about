@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: announcing-checkup-simple-self-hosted-health-checks
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Ii4dXpUuAEKgG0oE0EmA8/fc1630a53930c3cee13dcb41d3a4c69e/0_AEcci4InW9CYuloX.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Ii4dXpUuAEKgG0oE0EmA8/fc1630a53930c3cee13dcb41d3a4c69e/0_AEcci4InW9CYuloX.jpg
 published: true
 ---
 

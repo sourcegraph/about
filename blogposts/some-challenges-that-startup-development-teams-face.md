@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: some-challenges-that-startup-development-teams-face
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6NmfpJgoV2M4WGiUgkOSao/64a9a5624a47de19271c2f6ec87f59d1/1_QqyAGU4FbfAYLAlhC9FjSw.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6NmfpJgoV2M4WGiUgkOSao/64a9a5624a47de19271c2f6ec87f59d1/1_QqyAGU4FbfAYLAlhC9FjSw.png
 published: true
 ---
 
