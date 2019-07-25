@@ -40,8 +40,7 @@ export default class GoList extends React.Component<any, any> {
 
                     <div>
                         <div className="blog blog__head">
-                            <h1>Plain Text</h1>
-                            <BlogHeadLinks />
+                            <h1 class="pb-4">GopherCon liveblog</h1>
                             <div className="container subscription-grid">
                                 <div className="grid-item-1 flex-0 rounded rounded-lg py-4 px-6 bg-white h-100">
                                     <h4>Subscribe to the GopherCon 2019 Liveblog</h4>
@@ -57,6 +56,8 @@ export default class GoList extends React.Component<any, any> {
                                 </div>
                             </div>
                         </div>
+
+                        <hr/>
 
                         <BlogPosts blogType="go" posts={goPosts} />
                     </div>
