@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: go-code-intelligence-on-sourcegraph-now-in-general-availability-ga
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
 published: true
 ---
 

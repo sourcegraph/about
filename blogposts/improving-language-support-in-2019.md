@@ -7,7 +7,7 @@ tags: [
   blog
 ]
 slug: improving-language-support-in-2019
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
 published: true
 ---
 

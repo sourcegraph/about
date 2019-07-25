@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-3.0-beta-is-now-available
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
 published: true
 ---
 
