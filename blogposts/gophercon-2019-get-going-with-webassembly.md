@@ -4,7 +4,7 @@ description: "Curious about WebAssembly and how we can use it with Go? This tuto
 author: 'Alex Boten for the GopherCon Liveblog'
 publishDate: 2019-07-25T00:00-06:00
 tags: [
-  "gophercon"
+  gophercon
 ]
 slug: gophercon-2019-get-going-with-webassembly
 heroImage: /gophercon2019.png
