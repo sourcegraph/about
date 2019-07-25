@@ -15,8 +15,8 @@ published: true
 
 ---
 
+<p class="text-center"><strong>Liveblogger sign up - <a href="http://bit.ly/gophercon-liveblog-signup-2019">http://bit.ly/gophercon-liveblog-signup-2019</a></strong></p>
 <p class="text-center"><strong>Liveblogger assignments - <a href="http://bit.ly/gophercon-2019-liveblog-assignments">http://bit.ly/gophercon-2019-liveblog-assignments</a></strong></p>
-
 ---
 
 <!-- Add back once the blog post list page uses the `description` frontmatter field value.
