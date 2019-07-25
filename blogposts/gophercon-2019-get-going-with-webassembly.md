@@ -1,18 +1,21 @@
 ---
-title: 'GopherCon 2019 - Get Going with WebAssembly'
+title: "GopherCon 2019 - Get going with WebAssembly"
+description: "Curious about WebAssembly and how we can use it with Go? This tutorial will introduce the technology, show how to get started with WebAssembly and Go, discuss what is possible today and what will be possible tomorrow."
 author: 'Alex Boten for the GopherCon Liveblog'
 publishDate: 2019-07-25T00:00-06:00
 tags: [
   "gophercon"
 ]
 slug: gophercon-2019-get-going-with-webassembly
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: /gophercon2019.png
 published: true
 ---
 
 Presenter: [Johan Brandhorst](https://www.gophercon.com/agenda/speakers/435214)
 
 Liveblogger: [Alex Boten](https://twitter.com/codeboten)
+
+## Overview
 
 Curious about WebAssembly and how we can use it with Go? In this session, Johan introduces the technology, shows how to get started with WebAssembly and Go, discusses what is possible today and what will be possible tomorrow.
 
