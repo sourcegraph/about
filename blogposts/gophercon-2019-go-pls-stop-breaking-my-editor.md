@@ -1,7 +1,7 @@
 ---
 title: "GopherCon 2019 - Go, pls stop breaking my editor"
 description: "The Go community has built many amazing tools to improve the Go developer experience. However, when a maintainer disappears or a new Go release wreaks havoc, the Go development experience becomes frustrating and complicated. This talk will cover the details behind a new tool to solve these issues: gopls (pronounced 'go please'). This tool is currently in development by the Go team and community, and it will ultimately serve as the backend for your Go editor."
-author: $LIVEBLOGGER_NAME for the GopherCon 2019 Liveblog
+author: Vanessa Nicole Naff for the GopherCon 2019 Liveblog
 publishDate: 2019-07-25T00:00-11:20
 tags: [
   gophercon
@@ -72,6 +72,8 @@ But every tool has its own CLI, *and* return message format, *and* is maintained
 
 We need it to be easier for all different editors to use all these tools.
 
+![Every editor uses every tool](/gophercon-2019/gopls-editors-tools.jpg)
+
 Inefficiency is a major concern here. The VSCode Go extension doesn't set up a persistent server, so we create a new `godef` process *every time*, starting from scratch. No work is shared for each request to `godef`, even from a single file.
 
 File is read -> Package found -> Dependency tree found -> All parsed and read
@@ -82,6 +84,8 @@ We need a shared infrastructure between these tools to cache results and work fa
 
 ## New Go releases break features
 
+![This is fine](/gophercon-2019/gopls-thisisfine.jpg)
+
 Rebecca used `gocode` as a real example here. (There are three forks.)
 It was written in 2014 by the community, and is the default autoomplete tool for VSCode and vim.
 But Go 1.10 added a build cache, which is incompatible with the way `gocode` works!
@@ -91,6 +95,8 @@ Then it happened *again* with go modules.
 They broke autocompletion and all tools, essentially.
 The core team had to [fork again](https://github.com/stamblerre/gocode) and rewrite for modules.
 Now the VSCode extension has to choose between three forks of `gocode`...
+
+![Three forks of gocode](/gophercon-2019/gopls-gocode-forks.jpg)
 
 Key takeaway: The core team should invest effort not to break the engineer and maintainer experience with Go when releasing.
 
@@ -117,6 +123,8 @@ What are the essential features; what should be supported? The team had to ask t
 Fortunately, there is a standard answer! [The Language Server Protocol (LSP)](https://langserver.org/) already solves the problem. 
 The LSP already defines core features to answer the questions the editor asks.
 A language server can just route your request to the correct server, so if we have one for Go, we can support all the editors that already know how to use LSP. (That's mostly all of them.)
+
+![Every editor uses the Go language server](/gophercon-2019/gopls-editors-langserver.jpg)
 
 ## `gopls` is the Go language server
 It is:
