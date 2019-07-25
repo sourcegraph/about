@@ -9,6 +9,7 @@ tags: [
 slug: gophercon-2019-how-uber-go-es
 heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
+---
 
 Presenter: [Elena Morozova](https://twitter.com/lelenanam)
 
