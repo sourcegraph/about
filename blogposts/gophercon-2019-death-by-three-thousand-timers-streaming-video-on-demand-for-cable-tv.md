@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-death-by-three-thousand-timers-streaming-video-on-demand-for-cable-tv
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 

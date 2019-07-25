@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-go-module-proxy-life-of-a-query
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 

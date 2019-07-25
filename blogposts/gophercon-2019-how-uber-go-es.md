@@ -7,13 +7,13 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-how-uber-go-es
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 
 Presenter: Elena Morozova
 
-Liveblogger: [$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
 
 ## Overview
 

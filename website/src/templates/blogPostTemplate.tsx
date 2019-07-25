@@ -37,10 +37,10 @@ export default class ContentfulTemplate extends React.Component<any, any> {
         const date = md.frontmatter.publishDate
         const excerpt = md.excerpt
         const tags = md.frontmatter.tags || ''
-        const image = md.heroImage
-            ? `https:${md.heroImage.file.url}`
+        const image = md.frontmatter.heroImage
+            ? `${md.frontmatter.heroImage}`
             : 'https://about.sourcegraph.com/sourcegraph-mark.png'
-
+        console.log(md)
         let slug = md.slug
         let readMoreLink
         if (tags.includes('graphql')) {
@@ -53,8 +53,11 @@ export default class ContentfulTemplate extends React.Component<any, any> {
             slug = 'blog/' + slug
             readMoreLink = '/blog'
         }
+        const meta = {
+            image,
+        }
         return (
-            <Layout location={this.props.location}>
+            <Layout location={this.props.location} meta={meta}>
                 <div className="bg-white text-dark">
                     <Helmet>
                         <title>{title}</title>

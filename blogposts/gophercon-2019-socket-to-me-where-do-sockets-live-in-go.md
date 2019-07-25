@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-socket-to-me-where-do-sockets-live-in-go
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 
