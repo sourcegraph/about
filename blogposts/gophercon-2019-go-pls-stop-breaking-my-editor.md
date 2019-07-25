@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-go-pls-stop-breaking-my-editor
-heroImage: about.sourcegraph.com/gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 
