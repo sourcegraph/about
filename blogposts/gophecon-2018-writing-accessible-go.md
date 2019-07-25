@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophecon-2018-writing-accessible-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -55,22 +55,22 @@ What we were listening to was also faster than normal and trust me, very annoyin
 
 There are things that everyone can do that will make code easier to read for everyone. These suggestion do allow the voice overs to be more effective for those who need to use it.
 
-**Group code blocks logically**  
+**Group code blocks logically**
 Less lines of code isn’t always more for readability. Sometimes doing less per line of code can help paint a better mental model of the logic.
 
-**Keep names short**  
+**Keep names short**
 For anyone who is listening to code being read this is especially important. It allows for easier listening and navigating through the code.
 
-**Make names meaningful**  
+**Make names meaningful**
 A variable based on a vector type should ignore what type it is. A variable named “total” is better than “tvec”. Not only is using “total” more meaningful but hearing the computer say “tvec” adds cognitive load to your ability to remember the logic.
 
-**Use pronounceable names**  
+**Use pronounceable names**
 This goes with making names meaningful but it also adds another component. One day she kept hearing the computer say, “jeet-hu”. She kept playing that over and over again, “jeet-hu”. Eventually she realized the word being said was “github”. The idea here is to be careful with concatenating words that the computer will have a hard time pronouncing.
 
-**Use new lines intentionally**  
+**Use new lines intentionally**
 When voice is your guide, a newline is a line of code. The word “newline” will be spoken. It’s important to treat newlines like new paragraphs. Be clear when things are changing (use a newline) or not.
 
-**Be Consistent**  
+**Be Consistent**
 A team needs to decide on styles early, have them documents and follow them. If you find a better way to do something and change the style, change as much of the code base as possible to reflect the change. If not, someone new will start to see the different styles and won’t have the context to understand why. Most important, enforce the styles and teach to them during code reviews.
 
 ## Curb Cut Effect
@@ -96,7 +96,7 @@ Writing accessible Go is about three things. Working towards organizing code to 
 
 Here are links to learn more:
 
-[Python code styles for blind developers](https://www.youtube.com/watch?v=bTAFl8P2DkE&feature=youtu.be&t=22m59s)  
-[EmacSpeak](https://github.com/tvraman/emacspeak)  
-[The tools of a blind programmer](https://www.parhamdoustdar.com/2016/04/03/tools-of-blind-programmer/)  
+[Python code styles for blind developers](https://www.youtube.com/watch?v=bTAFl8P2DkE&feature=youtu.be&t=22m59s)
+[EmacSpeak](https://github.com/tvraman/emacspeak)
+[The tools of a blind programmer](https://www.parhamdoustdar.com/2016/04/03/tools-of-blind-programmer/)
 [Curb Cuts](https://99percentinvisible.org/episde/curb-cuts/)

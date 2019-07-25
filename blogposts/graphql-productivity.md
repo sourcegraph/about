@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: graphql-productivity
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1AloAOmXha8oKe0EkcISKC/a14414add35b3879f02aa3331e70cc4a/abhi-aiyer.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1AloAOmXha8oKe0EkcISKC/a14414add35b3879f02aa3331e70cc4a/abhi-aiyer.jpg
 published: true
 ---
 
@@ -24,7 +24,7 @@ You should organize your types into its own code structure and take time to revi
 Define your schema
 
     import faker from 'faker';
-    
+
     export const typeDefs = `
       type Query {
         name: String
@@ -33,7 +33,7 @@ Define your schema
         query: Query
       }
     `;
-    
+
     export const mockResolvers = {
       Query: () => {
         return {
@@ -46,32 +46,32 @@ Define your schema
 
 * decorator
 
-    
+
     import { configure, addDecorator } from '@storybook/react';
     import apolloStorybookDecorator from 'apollo-storybook-decorator';
-    
+
     addDecorator(
       apolloStorybookDecorator({
         typeDefs,
         mocks,
       })
     );
-    
+
     function loadStories() {
       require('../stories/index.js');
     }
-    
+
     configure(loadStories, module);
-    
+
 
 * write a storybook story.
 
-    
+
     import React from 'react';
     import { graphql } from 'react-apollo';
     import gql from 'graphql-tag';
     import { storiesOf } from '@storybook/react';
-    
+
     let HelloWorld = function HelloWorld({ data }) {
       const name = data && data.name;
       if (data && data.loading) {
@@ -83,18 +83,18 @@ Define your schema
         </h1>
       );
     };
-    
+
     const query = gql`
       query hello {
         name
       }
     `;
-    
+
     HelloWorld = graphql(query)(HelloWorld);
-    
+
     storiesOf('Apollo Storybook Example', module)
       .add('A simple component for GraphQL Summit', () => {
         return <HelloWorld />;
       });
-    
-    
+
+

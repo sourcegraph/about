@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-adventures-in-cgo-performance
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -59,7 +59,7 @@ additional housekeeping to pass control of the underlying thread. This is all
 overhead. There is a great blog post by Cockroach Labs called [Cost of
 complexity of
 cgo](https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/). It
-contains some interesting timings: 
+contains some interesting timings:
 - cgo  10,000,000 runs    avg 171ns/op
 - go   2,000,000,000 runs avg 1.83ns/op
 

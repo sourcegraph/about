@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-liveblogging-at-gophercon-2018
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -16,7 +16,7 @@ We are Sourcegraph, known
 to our Developers as "[a great source code browsing/discovery tool, especially for large codebase like k8s](https://twitter.com/VladimirVivien/status/1032099627078696960)", and "[like Google's internal code search but for rest of us](https://twitter.com/tsaha/status/1032016464583131136)". We help developers write better software by giving them IDE like features in code hosts such as GitHub and Bitbucket server, both for Open Source and private repositories.
 
 We're proud to once again be hosting the **official liveblog for GopherCon** so we’re looking for attendees who want to contribute. Is that you?
-   
+
 ## About liveblogging
 
 Liveblogging is hugely beneficial for the presenters, the bloggers, and those reading them.

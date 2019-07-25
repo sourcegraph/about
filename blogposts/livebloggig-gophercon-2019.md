@@ -7,7 +7,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-liveblogging-at-gophercon-2019
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 

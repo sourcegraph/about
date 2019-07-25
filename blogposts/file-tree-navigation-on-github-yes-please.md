@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: file-tree-navigation-on-github-yes-please
-heroImage: //images.ctfassets.net/le3mxztn6yoo/kW80vVfYMSG8MqIkeuWMO/09b960497b3f136f7d1c45c17ee13514/FileTree.gif
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/kW80vVfYMSG8MqIkeuWMO/09b960497b3f136f7d1c45c17ee13514/FileTree.gif
 published: true
 ---
 

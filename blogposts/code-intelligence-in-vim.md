@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: code-intelligence-in-vim
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4IzbdAhbYQ48s2qWgwAS26/6de0af95399f0eb3c43128aca88f67a0/sourcegraph-vim-golang-code-intelligence.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4IzbdAhbYQ48s2qWgwAS26/6de0af95399f0eb3c43128aca88f67a0/sourcegraph-vim-golang-code-intelligence.png
 published: true
 ---
 
@@ -42,7 +42,7 @@ call plug#end()
 
 Before we configure the Vim language server client, we need a language server installed locally, so the client has something to communicate with.
 
-At Sourcegraph, we write a lot of Go, so we’ll use the Go language server for this example. If you don’t use Go, you can pick a [language server](http://langserver.org/) for your language of choice. 
+At Sourcegraph, we write a lot of Go, so we’ll use the Go language server for this example. If you don’t use Go, you can pick a [language server](http://langserver.org/) for your language of choice.
 > Note that [Go must be installed](https://golang.org/dl/) to use the Go language server.
 
 Let’s install the Go language server.
@@ -148,7 +148,7 @@ nnoremap <silent> <leader>r :call LanguageClient_textDocument_rename()<CR>
 nnoremap <silent> <leader>r :call LanguageClient_contextMenu()<CR>
 ```
 
-There you go! You now have the basic features you know and love from Sourcegraph code intelligence inside Vim or Neovim. 
+There you go! You now have the basic features you know and love from Sourcegraph code intelligence inside Vim or Neovim.
 
 Got any other Vim plugins and integrations I should know about? Let me know by tweeting at [ij_snow](https://twitter.com/ij_snow) and [@srcgraph](https://twitter.com/srcgraph)!
-    
+

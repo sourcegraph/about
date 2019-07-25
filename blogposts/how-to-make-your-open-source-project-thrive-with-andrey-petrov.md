@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: how-to-make-your-open-source-project-thrive-with-andrey-petrov
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

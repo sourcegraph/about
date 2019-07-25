@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: getting-started-with-sourcegraph
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4Sx9KpIgEEkwOKECYGCKCg/e25a20e341684445c79c904bb11f40cc/1_L7rutXCP6us7mRu_5tEzGg.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4Sx9KpIgEEkwOKECYGCKCg/e25a20e341684445c79c904bb11f40cc/1_L7rutXCP6us7mRu_5tEzGg.png
 published: true
 ---
 
