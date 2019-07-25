@@ -78,7 +78,7 @@ Uber created [Fx](https://github.com/uber-go/fx) to provide dependency
 injection.
 
 ![Dependency
-injection](images/gophercon-2019-uber-dependency-injection.jpg "Uber
+injection](/gophercon-2019/gophercon-2019-uber-dependency-injection.jpg "Uber
 dependency injection")
 
 ## Standardizing code structure
@@ -118,7 +118,7 @@ Architecture](https://www.oreilly.com/library/view/clean-architecture-a/97801344
 Glue is used to initialize new services with consistent code structure.
 
 ![Consistent code
-structure](images/gophercon-2019-uber-code-structure.jpg "Uber's
+structure](/gophercon-2019/gophercon-2019-uber-code-structure.jpg "Uber's
 divisions of services into transports, controllers, repositories, and
 gateways")
 
@@ -145,7 +145,7 @@ Every service is inherently updated by a single commit to the
 dependency, because the dependency code is compiled into its consumers
 right from the single repository, not a managed dependency.
 
-![Before the monorepo](images/gophercon-2019-uber-monorepo.jpg "Gopher
+![Before the monorepo](/gophercon-2019/gophercon-2019-uber-monorepo.jpg "Gopher
 surrounded by fire saying 'this is fine' about deploying global features
 before the monorepo")
 
@@ -158,5 +158,5 @@ them to scale to over a thousand Go services containing over two million
 lines of Go code!
 
 ![Consistency is the key to
-efficiency](images/gophercon-2019-uber-consistency.jpg "Consistency is
+efficiency](/gophercon-2019/gophercon-2019-uber-consistency.jpg "Consistency is
 the key to efficiency")
