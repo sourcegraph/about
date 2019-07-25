@@ -61,6 +61,46 @@
             cursor: auto;
         }
     }
+
+    .subscription-grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        max-width: 990px;
+    }
+
+    .grid-item-1 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .grid-item-2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .grid-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .blog {
+        .subscription-grid {
+            display: block;
+        }
+        .grid-item-2 {
+            display: none;
+        }
+    }
+}
+
+#gopherConForm {
+    justify-content: center;
 }
 
 table {
