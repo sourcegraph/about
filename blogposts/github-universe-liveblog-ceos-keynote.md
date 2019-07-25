@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-ceos-keynote
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3SV1PYaaXY4ouIKIqs2mSi/ede744c450d239a0d39c281a6005b65c/1_osXoxusdlabxfnY6dlKzIQ.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3SV1PYaaXY4ouIKIqs2mSi/ede744c450d239a0d39c281a6005b65c/1_osXoxusdlabxfnY6dlKzIQ.jpeg
 published: true
 ---
 

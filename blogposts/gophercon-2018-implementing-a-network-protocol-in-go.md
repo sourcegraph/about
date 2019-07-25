@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-implementing-a-network-protocol-in-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -33,7 +33,7 @@ Outline:
 
 ## Intro to IPv6
 
-IPv6 adoption: 
+IPv6 adoption:
 
 ![image](https://user-images.githubusercontent.com/1646931/44633783-6d372180-a944-11e8-8539-4a3ed4c62fae.png)
 
@@ -575,7 +575,7 @@ go-fuzz usage:
   ```
 * Inspect the resulting crasher inputs
   ```
-  $ cat fuzz/crashers/4c24217a9963fae05ea48d657c342549a731989.quoted 
+  $ cat fuzz/crashers/4c24217a9963fae05ea48d657c342549a731989.quoted
         "\x860000000000000000\x05"
   ```
 * Write a test, fix the bug, and repeat!

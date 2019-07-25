@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-binary-search-tree-algorithms
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -43,8 +43,8 @@ This screenshot is from the binary search tree section of Introduction to Algori
 Some examples of this:
 
 - This page references lots of terms that the book defines elsewhere. So you need to know things like
-   - what satellite data is 
-   - what a linked list is 
+   - what satellite data is
+   - what a linked list is
    - what "pre-order" and "post-order" tree traversal mean
 
   You won't know what those things are if you haven't taken notes on every single page in the book.
@@ -115,7 +115,7 @@ node. In the above picture, all the numbers to the right of the green
 line are greater than `32`, all the numbers to the left of the red line
 are smaller than `32`.
 
-So, now that we know the fundamentals, let's start writing some code. 
+So, now that we know the fundamentals, let's start writing some code.
 
 ```go
 type Node struct {
@@ -128,7 +128,7 @@ type Node struct {
 The fundamental structure that we are going to use is a `struct`. If
 you are new to `struct`s, they are essentially just a collection of
 fields. The three fields that you need are `Key` (used for comparisons with
-other nodes), and the `Left` and `Right` child nodes. 
+other nodes), and the `Left` and `Right` child nodes.
 
 When you want to define a `Node`, you can do it using a struct
 literal:
@@ -138,7 +138,7 @@ tree := &Node{Key: 6}
 ```
 
 This creates a `Node` with a `Key` value `6`. You might be wondering
-where the `Left` and `Right` fields are. Nothing is stopping you 
+where the `Left` and `Right` fields are. Nothing is stopping you
 from providing all the fields:
 
 ```go
@@ -148,9 +148,9 @@ tree := &Node{
     Right: nil,
 }
 ```
-However, you are allowed to 
+However, you are allowed to
 specify only a subset of the `struct`'s fields if you a provide field names
-(e.g., `Key` in this case). 
+(e.g., `Key` in this case).
 
 You can also instantiate a `Node` without named fields:
 
@@ -174,7 +174,7 @@ So, let's write the algorithm for `Search`:
 ```go
 func (n *Node) Search(key int) bool {
     // This is our base case. If n == nil, `key`
-    // doesn't exist in our binary search tree. 
+    // doesn't exist in our binary search tree.
     if n == nil {
         return false
     }
@@ -190,18 +190,18 @@ func (n *Node) Search(key int) bool {
 }
 ```
 
-## Insert 
+## Insert
 
 ![](https://cl.ly/aaa1f718d537/Screen%252520Recording%2525202018-08-29%252520at%25252010.17%252520PM.gif)
 
-The above GIF is an example of inserting `81` into the tree. Insert is very similar to search. We want to find where `81` should go inside the tree, so we walk the tree using the same rules that we used in `search`, and insert `81` once we find an empty spot. 
+The above GIF is an example of inserting `81` into the tree. Insert is very similar to search. We want to find where `81` should go inside the tree, so we walk the tree using the same rules that we used in `search`, and insert `81` once we find an empty spot.
 
 ```go
 func (n *Node) Insert(key int) {
     if n.Key < key {
         if n.Right == nil { // we found an empty spot, done!
             n.Right = &Node{Key: key}
-        } else { // look right 
+        } else { // look right
             n.Right.Insert(key)
         }
     } else if n.Key > key {
@@ -217,11 +217,11 @@ func (n *Node) Insert(key int) {
 
 [If you haven't seen the `(n *Node)` syntax before, it's known as a pointer receiver.](https://tour.golang.org/methods/4)
 
-## Delete 
+## Delete
 
 ![](https://cl.ly/e261dd30e743/Screen%252520Recording%2525202018-08-29%252520at%25252010.33%252520PM.gif)
 
-The above GIF is an example of deleting `78` from the tree. We search for `78` like we've done before, and in this case, we're able to just "snip" `78` from the tree by directly connecting `85` as the right child of `57`. 
+The above GIF is an example of deleting `78` from the tree. We search for `78` like we've done before, and in this case, we're able to just "snip" `78` from the tree by directly connecting `85` as the right child of `57`.
 
 ```go
 func (n *Node) Delete(key int) *Node {
@@ -229,21 +229,21 @@ func (n *Node) Delete(key int) *Node {
     if n.Key < key {
         n.Right = n.Right.Delete(key)
     } else if n.Key > key {
-        n.Left = n.Left.Delete(key)   
+        n.Left = n.Left.Delete(key)
     // n.Key == `key`
     } else {
-        if n.Left == nil { // just point to opposite node 
+        if n.Left == nil { // just point to opposite node
             return n.Right
-        } else if n.Right == nil { // just point to opposite node 
+        } else if n.Right == nil { // just point to opposite node
             return n.Left
         }
 
-        // if `n` has two children, you need to 
-        // find the next highest number that 
+        // if `n` has two children, you need to
+        // find the next highest number that
         // should go in `n`'s position so that
-        // the BST stays correct 
+        // the BST stays correct
         min := n.Right.Min()
- 
+
         // we only update `n`'s key with min
         // instead of replacing n with the min
         // node so n's immediate children aren't orphaned
@@ -259,7 +259,7 @@ func (n *Node) Delete(key int) *Node {
 
 ![](https://cl.ly/9f703767f7c9/Image%2525202018-08-29%252520at%25252011.20.37%252520PM.png)
 
-If you move to the left over and over, you get the smallest number (`24` in this case). 
+If you move to the left over and over, you get the smallest number (`24` in this case).
 
 ```go
 func (n *Node) Min() int {
@@ -283,18 +283,18 @@ func (n *Node) Max() int {
 }
 ```
 
-If you move to the right over and over, you get the largest number (`96` in this case). 
+If you move to the right over and over, you get the largest number (`96` in this case).
 
-## Testing 
+## Testing
 
-Since we've written the code for each of the primary functions of binary search trees, let's actually test our code! Testing was the most fun part of the process for Kaylyn: testing in Go is _much_ more straightforward than a lot of other languages like Python and C. 
+Since we've written the code for each of the primary functions of binary search trees, let's actually test our code! Testing was the most fun part of the process for Kaylyn: testing in Go is _much_ more straightforward than a lot of other languages like Python and C.
 
 ```go
 // You only need to import one library!
 import "testing"
 
-// This is called a test table. It's a way to easily 
-// specify tests while avoiding boilerplate. 
+// This is called a test table. It's a way to easily
+// specify tests while avoiding boilerplate.
 // See https://github.com/golang/go/wiki/TableDrivenTests
 var tests = []struct {
     input  int
@@ -310,8 +310,8 @@ func TestSearch(t *testing.T) {
     //    /
     //   3
     tree := &Node{Key: 6, Left: &Node{Key: 3}}
-    
-    for i, test := range tests { 
+
+    for i, test := range tests {
         if res := tree.Search(test.input); res != test.output {
             t.Errorf("%d: got %v, expected %v", i, res, test.output)
         }
@@ -328,7 +328,7 @@ All you have to do to run this is:
 
 Go runs your tests and will print a nicely formatted result that tells you if your tests passed, error messages from your test failures, and how long your tests took.
 
-## Benchmarking 
+## Benchmarking
 
 But wait––there's more! Go also makes it easy to do some very simple benchmarking. This is all the code that you need:
 
@@ -344,7 +344,7 @@ func BenchmarkSearch(b *testing.B) {
 }
 ```
 
-`b.N` will run `tree.Search()` over and over again until it observes a stable execution time for `tree.Search()`. 
+`b.N` will run `tree.Search()` over and over again until it observes a stable execution time for `tree.Search()`.
 
 You can run this test with just the following command:
 
@@ -369,28 +369,28 @@ The line that you want to pay attention to is this:
 BenchmarkSearch-4       1000000000               2.84 ns/op
 ```
 
-This line tells you the speed of the function you have. In this case `test.Search()` took ~2.84 nanoseconds to execute. 
+This line tells you the speed of the function you have. In this case `test.Search()` took ~2.84 nanoseconds to execute.
 
 Since it's easy to run benchmarks, you can start running some experiments such as:
 
 - What happens if I use a much larger / deeper tree?
 - What happens if I change the key that I am searching for?
 
-Kaylyn found it particularly helpful for things like understanding the performance characteristics between maps and slices. It's nice to get quick, tactile feedback about things that you read about online. 
+Kaylyn found it particularly helpful for things like understanding the performance characteristics between maps and slices. It's nice to get quick, tactile feedback about things that you read about online.
 
-## Binary Search Tree Terminology 
+## Binary Search Tree Terminology
 
 The last thing that we're going to take a look at is some binary search tree terminology. If you decide to learn more about binary search trees on your own, it'll be useful for you know to about these terms:
 
-**Tree height**: Number of edges on the longest path from the root to the base. This determines the speed of your algorithm. 
+**Tree height**: Number of edges on the longest path from the root to the base. This determines the speed of your algorithm.
 
 ![](https://cl.ly/705355d982d4/Image%2525202018-08-30%252520at%25252012.05.11%252520AM.png)
 
-This tree has a height of `5`. 
+This tree has a height of `5`.
 
 **Node depth**: Number of edges from the root to that node
 
-`48` is `2` edges away from the root. 
+`48` is `2` edges away from the root.
 
 ![](https://cl.ly/a0058d294af0/Image%2525202018-08-30%252520at%25252012.08.04%252520AM.png)
 
@@ -412,7 +412,7 @@ Imagine that you're searching for `47` in this tree. Do you see how that takes `
 
 ![](https://cl.ly/8ba095d064c8/Image%2525202018-08-30%252520at%25252012.20.17%252520AM.png)
 
-This tree contains the same nodes as the unbalanced tree, but searches on balanced trees are faster (on average) than on unbalanced trees. 
+This tree contains the same nodes as the unbalanced tree, but searches on balanced trees are faster (on average) than on unbalanced trees.
 
 ## Contact Information
 

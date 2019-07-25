@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: why-vacation-at-tech-companies-should-be-mandatory-better-code-happier-people
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5ZsfNz62fCCaswwyMEEWGw/03c4d56925f5843f6bc439b78dfadb72/0_oDIH90jQ4ZzUANWM.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5ZsfNz62fCCaswwyMEEWGw/03c4d56925f5843f6bc439b78dfadb72/0_oDIH90jQ4ZzUANWM.jpg
 published: true
 ---
 

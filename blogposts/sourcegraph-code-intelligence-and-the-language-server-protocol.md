@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-code-intelligence-and-the-language-server-protocol
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

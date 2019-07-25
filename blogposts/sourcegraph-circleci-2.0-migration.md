@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-circleci-2.0-migration
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -55,7 +55,7 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 <div class="text-center">
   <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
     <img src="https://about.sourcegraph.com/blog/circleci-results.png" />
-  </a>  
+  </a>
 </div>
 
 <p style="margin-top:2rem">

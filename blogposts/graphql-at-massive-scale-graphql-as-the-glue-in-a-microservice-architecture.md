@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: graphql-at-massive-scale-graphql-as-the-glue-in-a-microservice-architecture
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6t2OF30gV2U2WMIcQouceE/6c82ff3b7e356a00ac6d24dde625fbb9/jason-lengstorf-tokyo-footer.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6t2OF30gV2U2WMIcQouceE/6c82ff3b7e356a00ac6d24dde625fbb9/jason-lengstorf-tokyo-footer.jpg
 published: true
 ---
 

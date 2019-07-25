@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: the-pain-of-code-review-how-different-teams-manage-scale-and-perform-code-reviews
-heroImage: //images.ctfassets.net/le3mxztn6yoo/mmCXczHbxYQgyUgy2mCsI/d456527519625a4993577de4efb72c8d/1_0lf5CXM0eXoh-d1syiDPMg.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/mmCXczHbxYQgyUgy2mCsI/d456527519625a4993577de4efb72c8d/1_0lf5CXM0eXoh-d1syiDPMg.png
 published: true
 ---
 

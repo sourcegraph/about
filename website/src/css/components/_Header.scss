@@ -5,3 +5,36 @@
         font-weight: 600;
     }
 }
+
+.gophercon {
+    position: static;
+    display: flex;
+    align-items: center;
+    flex-grow: inherit;
+    z-index: 1;
+    left: 0;
+    max-height: 500px;
+    right: 0;
+    width: 100%;
+    background-color: #e0ebf5;
+    text-align: center;
+    justify-content: center;
+    a {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .go-gopher {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url('/go-gopher.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        margin-right: 0.5rem;
+        display: inline-block;
+        padding-top: 1px;
+        position: relative;
+        top: 3px;
+    }
+}

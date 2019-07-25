@@ -7,13 +7,13 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-better-x86-assembly-generation-from-go
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 
 Presenter: Michael McLoughlin
 
-Liveblogger: [$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
 
 ## Overview
 
