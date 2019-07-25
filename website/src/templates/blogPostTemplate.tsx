@@ -40,7 +40,7 @@ export default class ContentfulTemplate extends React.Component<any, any> {
         const image = md.frontmatter.heroImage
             ? `${md.frontmatter.heroImage}`
             : 'https://about.sourcegraph.com/sourcegraph-mark.png'
-        console.log(md)
+
         let slug = md.slug
         let readMoreLink
         if (tags.includes('graphql')) {
