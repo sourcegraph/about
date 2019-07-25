@@ -72,7 +72,7 @@ But every tool has its own CLI, *and* return message format, *and* is maintained
 
 We need it to be easier for all different editors to use all these tools.
 
-![Every editor uses every tool](/gophercon-2019/gopls-editors-tools.jpg)
+![Every editor uses every tool](/gophercon-2019/gopls-editors-tools.png)
 
 Inefficiency is a major concern here. The VSCode Go extension doesn't set up a persistent server, so we create a new `godef` process *every time*, starting from scratch. No work is shared for each request to `godef`, even from a single file.
 
@@ -84,7 +84,9 @@ We need a shared infrastructure between these tools to cache results and work fa
 
 ## New Go releases break features
 
-![This is fine](/gophercon-2019/gopls-thisisfine.jpg)
+![This is fine](/gophercon-2019/gopls-thisisfine.png)
+
+*image credit: [KC Green](http://gunshowcomic.com/648)*
 
 Rebecca used `gocode` as a real example here. (There are three forks.)
 It was written in 2014 by the community, and is the default autoomplete tool for VSCode and vim.
@@ -96,7 +98,7 @@ They broke autocompletion and all tools, essentially.
 The core team had to [fork again](https://github.com/stamblerre/gocode) and rewrite for modules.
 Now the VSCode extension has to choose between three forks of `gocode`...
 
-![Three forks of gocode](/gophercon-2019/gopls-gocode-forks.jpg)
+![Three forks of gocode](/gophercon-2019/gopls-gocode-forks.png)
 
 Key takeaway: The core team should invest effort not to break the engineer and maintainer experience with Go when releasing.
 
@@ -124,7 +126,7 @@ Fortunately, there is a standard answer! [The Language Server Protocol (LSP)](ht
 The LSP already defines core features to answer the questions the editor asks.
 A language server can just route your request to the correct server, so if we have one for Go, we can support all the editors that already know how to use LSP. (That's mostly all of them.)
 
-![Every editor uses the Go language server](/gophercon-2019/gopls-editors-langserver.jpg)
+![Every editor uses the Go language server](/gophercon-2019/gopls-editors-langserver.png)
 
 ## `gopls` is the Go language server
 It is:
