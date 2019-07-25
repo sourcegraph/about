@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: the-ibm-system-360-the-first-modular-general-purpose-computer
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3xizkAu6Gsu6ukwCCgUqSa/ab2af09166b2e09adfbcea9637293989/1_O8716r4hduFUkb6tjAOR5A.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3xizkAu6Gsu6ukwCCgUqSa/ab2af09166b2e09adfbcea9637293989/1_O8716r4hduFUkb6tjAOR5A.png
 published: true
 ---
 

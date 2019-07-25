@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-the-gopher-s-manual-of-style
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: operability-in-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4XSktee85iOQWyY6QGimuG/4f3fa9f9b39eaf50acbd2ea16c00d84a/ianschenck.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4XSktee85iOQWyY6QGimuG/4f3fa9f9b39eaf50acbd2ea16c00d84a/ianschenck.jpg
 published: true
 ---
 

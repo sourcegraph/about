@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-go-pls-stop-breaking-my-editor
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 
@@ -61,24 +61,24 @@ _So let's deep-dive into some issues, but first:_
 
 ## A step back: How does my editor even work?
 
-Rebecca used VSCode as an example: 
+Rebecca used VSCode as an example:
 
 The Go extension is written in Typescript, so it's not doing direct analysis on our Go code.
 
 It calls out to tools, like [`godef`](https://godoc.org/github.com/rogpeppe/godef). You could use CLI to do this yourself. It returns a position, and VSCode will move you to that position.
-But every tool has its own CLI, *and* return message format, *and* is maintained differently.
+But every tool has its own CLI, _and_ return message format, _and_ is maintained differently.
 
- **The VSCode extension uses 24 different Go tools.**
+**The VSCode extension uses 24 different Go tools.**
 
 We need it to be easier for all different editors to use all these tools.
 
 ![Every editor uses every tool](/gophercon-2019/gopls-editors-tools.png)
 
-Inefficiency is a major concern here. The VSCode Go extension doesn't set up a persistent server, so we create a new `godef` process *every time*, starting from scratch. No work is shared for each request to `godef`, even from a single file.
+Inefficiency is a major concern here. The VSCode Go extension doesn't set up a persistent server, so we create a new `godef` process _every time_, starting from scratch. No work is shared for each request to `godef`, even from a single file.
 
 File is read -> Package found -> Dependency tree found -> All parsed and read
 
-This works for a small package, but it can take *multiple seconds* to find all references for a large package.
+This works for a small package, but it can take _multiple seconds_ to find all references for a large package.
 
 We need a shared infrastructure between these tools to cache results and work faster!
 
@@ -86,14 +86,14 @@ We need a shared infrastructure between these tools to cache results and work fa
 
 ![This is fine](/gophercon-2019/gopls-thisisfine.png)
 
-*image credit: [KC Green](http://gunshowcomic.com/648)*
+_image credit: [KC Green](http://gunshowcomic.com/648)_
 
 Rebecca used `gocode` as a real example here. (There are three forks.)
 It was written in 2014 by the community, and is the default autoomplete tool for VSCode and vim.
 But Go 1.10 added a build cache, which is incompatible with the way `gocode` works!
 It had to be [forked](https://github.com/mdempsky/gocode) and rewritten to fix the broken user experience.
 
-Then it happened *again* with go modules.
+Then it happened _again_ with go modules.
 They broke autocompletion and all tools, essentially.
 The core team had to [fork again](https://github.com/stamblerre/gocode) and rewrite for modules.
 Now the VSCode extension has to choose between three forks of `gocode`...
@@ -119,17 +119,19 @@ The core team first took this on explicitly when they broke everyone's tools wit
 Rebecca here introducted the creation of a layer that will work this all dependency trees to avoid the dependency on `go build` behavior.
 It communicates with the Go packages driver, so we don't have to care about how dependencies are managed by the build. This reduces tool maintenance significantly, since now we can fix the driver instead of 24+ tools if there's a breaking change.
 
-## How do we improve usability? 
+## How do we improve usability?
 
 What are the essential features; what should be supported? The team had to ask these questions first.
-Fortunately, there is a standard answer! [The Language Server Protocol (LSP)](https://langserver.org/) already solves the problem. 
+Fortunately, there is a standard answer! [The Language Server Protocol (LSP)](https://langserver.org/) already solves the problem.
 The LSP already defines core features to answer the questions the editor asks.
 A language server can just route your request to the correct server, so if we have one for Go, we can support all the editors that already know how to use LSP. (That's mostly all of them.)
 
 ![Every editor uses the Go language server](/gophercon-2019/gopls-editors-langserver.png)
 
 ## `gopls` is the Go language server
+
 It is:
+
 - Built on the Go language API and LSP
 - Collaborated on by the Go team and Go community
 - Pronounced "go please", not "goppels"
@@ -139,8 +141,9 @@ It is:
 (Its speed doesn't degrade with modules!)
 
 `gopls` will be esier to improve upon than other go tools; you just have to add a new function to add a new feature.
-Rebecca talked about a plan to add some other really cool support. 
+Rebecca talked about a plan to add some other really cool support.
 Here's a sneak preview:
+
 - Additional diagnostics beyond `go build` and `go vet`, e.g. `golint`
 - Quickfix suggestions
 - Autocompletion for un-imported packages
@@ -156,4 +159,3 @@ Rebecca asked that you please send feature requests, feedback, and that you cont
 --
 
 [The `gopls` wiki](https://github.com/golang/go/wiki/gopls)
-

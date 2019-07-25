@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-allocator-wrestling
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -97,7 +97,7 @@ type heapArena struct {
    // page-granularity map to spans
   spans [pagesPerArena]*mspan
   // pointer/scalar bitmap (2bits/word)
-  bitmap [heapArenaBitmapBytes]byte 
+  bitmap [heapArenaBitmapBytes]byte
 }
 ```
 
@@ -155,7 +155,7 @@ At the end, objects are either white or black:
 
 ![image](https://user-images.githubusercontent.com/1646931/44679461-45a19100-a9f8-11e8-81f1-8952fbfe5190.png)
 
-White objects can then be swept and freed. 
+White objects can then be swept and freed.
 
 Simple, right? Well, it leaves some questions open:
 * How do we know what an object's referents are?
@@ -174,7 +174,7 @@ type Row struct {
 }
 ```
 
-In memory, that looks like: 
+In memory, that looks like:
 
 ![image](https://user-images.githubusercontent.com/1646931/44679558-90bba400-a9f8-11e8-89c6-9ad3ec1273e6.png)
 
@@ -241,7 +241,7 @@ func mallocgc(size uintptr, ...) unsafe.Pointer {
    // ...
    assistG.gcAssistBytes -= int64(size)
 	if assistG.gcAssistBytes < 0 {
-       // This goroutine is in debt. Assist the GC to 
+       // This goroutine is in debt. Assist the GC to
        // this before allocating. This must happen
        // before disabling preemption.
        gcAssistAlloc(assistG)
@@ -368,7 +368,7 @@ Okay, now onto things we can change in code to improve allocation/GC behavior...
 
 The Go compiler can be enticed to tell you why a variable is heap-allocated:
 ```
-go build -gcflags="-m -m" 
+go build -gcflags="-m -m"
 ```
 but its output is a bit unwieldy.
 

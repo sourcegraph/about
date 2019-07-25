@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: faster-smoother-github-code-browsing
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3CEYtcHfeUUioAsyMA0I8w/80f68e9142de1db153ee5d37e77430ce/sourcegraphAdvancedSearch.gif
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3CEYtcHfeUUioAsyMA0I8w/80f68e9142de1db153ee5d37e77430ce/sourcegraphAdvancedSearch.gif
 published: true
 ---
 

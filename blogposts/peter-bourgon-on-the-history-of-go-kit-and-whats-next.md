@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: peter-bourgon-on-the-history-of-go-kit-and-whats-next
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4cWREdTh1uK4Wm60CgCYUQ/6f763d940fb0192f25b7a3d22b3a02e2/bourgon.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4cWREdTh1uK4Wm60CgCYUQ/6f763d940fb0192f25b7a3d22b3a02e2/bourgon.jpg
 published: true
 ---
 

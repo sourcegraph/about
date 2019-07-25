@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: setting-up-graphql-in-complicated-apis
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4Bs8BBBEdyCUaUQ0siGuAc/9e17b3c61c2d36b6ad2c51f67f0b0521/graphql2017laptop_Selection_003.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4Bs8BBBEdyCUaUQ0siGuAc/9e17b3c61c2d36b6ad2c51f67f0b0521/graphql2017laptop_Selection_003.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: extending-the-limits-of-graphql-syrus-akbary
-heroImage: //images.ctfassets.net/le3mxztn6yoo/54WEsX4ry8WKIM22sOI2KG/3953c4b0af55d2d681920fbac828679a/akbary-1.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/54WEsX4ry8WKIM22sOI2KG/3953c4b0af55d2d681920fbac828679a/akbary-1.png
 published: true
 ---
 

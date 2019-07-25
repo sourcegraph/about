@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-how-uber-go-es
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 

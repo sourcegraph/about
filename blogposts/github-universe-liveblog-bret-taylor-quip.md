@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-bret-taylor-quip
-heroImage: //images.ctfassets.net/le3mxztn6yoo/fRzqBIhmOkMWQakgKMcUM/6410e64b54f0002874c9f153dda056b6/1_v90JbRraqWznmWkkDKmLzg.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/fRzqBIhmOkMWQakgKMcUM/6410e64b54f0002874c9f153dda056b6/1_v90JbRraqWznmWkkDKmLzg.jpeg
 published: true
 ---
 
