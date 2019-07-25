@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: regexp-queries-directories-openid-connect-and-more-updates-to-sourcegraph
-heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

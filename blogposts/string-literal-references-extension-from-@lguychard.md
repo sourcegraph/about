@@ -7,7 +7,7 @@ tags: [
   blog
 ]
 slug: string-literal-references-extension-from-@lguychard
-heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: false
 ---
 

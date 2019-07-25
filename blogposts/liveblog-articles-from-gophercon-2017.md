@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: liveblog-articles-from-gophercon-2017
-heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

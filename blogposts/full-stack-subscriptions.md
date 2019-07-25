@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: full-stack-subscriptions
-heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

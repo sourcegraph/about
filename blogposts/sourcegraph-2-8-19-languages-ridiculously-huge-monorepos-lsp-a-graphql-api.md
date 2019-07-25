@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api
-heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

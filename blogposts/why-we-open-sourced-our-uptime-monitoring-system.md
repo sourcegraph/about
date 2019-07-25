@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: why-we-open-sourced-our-uptime-monitoring-system
-heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

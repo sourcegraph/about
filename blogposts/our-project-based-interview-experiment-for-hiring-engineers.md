@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: our-project-based-interview-experiment-for-hiring-engineers
-heroImage: https://about.sourcegraph.com//sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
