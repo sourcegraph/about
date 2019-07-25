@@ -21,7 +21,7 @@ We're on the road to Go 2. But where exactly are we? Where are we headed? Come f
 
 ---
 
-# Summary
+## Summary
 
 Development on Go has been a loop consisting of the following stages:
 
@@ -42,7 +42,9 @@ The main areas of focus for Go2 are:
 
 ---
 
-# Introduction
+## Introduction
+
+![introduction](/gophercon-2019/introduction.jpg)
 
 Development on Go began with a loop consisting of the following stages:
 
@@ -58,20 +60,23 @@ The 4 Rs of simplifying guide the process:
 
 Let's see some examples.
 
-## Reshaping
+### Reshaping
 
 We reshaped the go command from many binaries into a single binary.
 
-## Redefining
+### Redefining
 
 During early development, we noticed that appendToList was being rewritten
 frequently.  This led to redefining those functions into the function we now
 know as `append`.  It initially only supported bytes slices, but was extended
 to support all slices.
 
-## Removing
+### Removing
 
-## Restricting
+If something isn't useful to the language or an experiment didn't work, we
+remove it.
+
+### Restricting
 
 All Go files must be utf-8.  Other encodings are not supported.  This simplifies
 the toolchain by not having to support a wide range of encoding formats.
@@ -86,9 +91,11 @@ The loop now becomes:
 - Simplify
 - Ship
 
+![ship-process](/gophercon-2019/ship-process.jpg)
+
 After Go1.0, any simplification must not include breaking changes.
 
-# The path to Go2
+## The path to Go2
 
 The path to Go2 is much like the path to Go1: Experiment, simplify, ship.
 
@@ -99,13 +106,13 @@ The main areas of focus for Go2 are:
 - Dependency Management
 - Tooling
 
-# Error Handling
+## Error Handling
 
 Writing a program correctly without errors is hard.  Writing a program
 correctly accounting for errors and external dependencies is much more
 difficult.
 
-## History of the error type
+### History of the error type
 
 Circa 2008: Original syscall error was just an int.
 
@@ -126,7 +133,7 @@ handling nested errors that many helper packages implemented.
 
 ![Before Unwrap](/gophercon-2019/before-unwrap.png)
 
-## Errors in Go1.13
+### Errors in Go1.13
 
 Thanks to these experiments, Go1.13 introduces the following error handling helpers:
 
@@ -163,7 +170,7 @@ and break visibility of coverage tools into those blocks of error handling
 code.  Ultimately it wasn't clear that the try proposal would actually simplify
 Go overall.
 
-# Generics
+## Generics
 
 "Let's talk about something less controversial: Generics" - Russ Cox
 
@@ -177,7 +184,7 @@ language.
 
 Ian Taylor will present the latest design in his talk tomorrow.
 
-# Dependency Management
+## Dependency Management
 
 With Go, we wanted to explicitly refer to dependencies similar to Java.
 
@@ -243,7 +250,7 @@ Please take a look at modules in Go1.13.  Kubernetes, a fairly complex project,
 has already made the move, so it's likely you can too!  If you can't, please
 let the Go team know.
 
-# Tools
+## Tools
 
 Finally, as a result of all these changes, we can distill and refine the Go
 toolchain.
@@ -253,7 +260,7 @@ aims to create a smoother, standard interface to integrate with all editors,
 IDEs, continuous integration and others.  See the talk about "Go Please" later
 today to learn more!
 
-# Conclusion
+## Conclusion
 
 Each time we release a new experiment, even if we don't adopt it, we learn.
 Eventually we'll learn that we've experimented enough, and we'll have Go2.
