@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: 5-short-stories-from-open-source-pains-in-gains
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6hTNJKUymQkogSUaKGaCu2/436c99c4b8afb55c302fbf8079e6d562/1_3eFc2KNwHBjrHFpD_vjbhA.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6hTNJKUymQkogSUaKGaCu2/436c99c4b8afb55c302fbf8079e6d562/1_3eFc2KNwHBjrHFpD_vjbhA.jpeg
 published: true
 ---
 

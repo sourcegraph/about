@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: introducing-sourcegraph-2-7
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3nwI43eRv2E2CuEmU8iWeC/4c3354f2e1d6b33ebdf90ac7dd01710d/SourcegraphDiff.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3nwI43eRv2E2CuEmU8iWeC/4c3354f2e1d6b33ebdf90ac7dd01710d/SourcegraphDiff.png
 published: true
 ---
 
@@ -49,9 +49,9 @@ You can now view and browse diffs with code intelligence directly in Sourcegraph
 
 ## Find implementations and improved references panel
 
-Sourcegraph can now answer "Which types implement this interface?" for any [extension](https://docs.sourcegraph.com/extensions) that supports the feature, for example Go. After clicking find references on an interface, click the **Implementations** tab in the references panel to view all implementations. 
+Sourcegraph can now answer "Which types implement this interface?" for any [extension](https://docs.sourcegraph.com/extensions) that supports the feature, for example Go. After clicking find references on an interface, click the **Implementations** tab in the references panel to view all implementations.
 
-We’ve also improved the references panel for all languages to also show the full docstring, all definitions, and external references grouped by calling repository. 
+We’ve also improved the references panel for all languages to also show the full docstring, all definitions, and external references grouped by calling repository.
 
 ![Go Implementations](//images.ctfassets.net/le3mxztn6yoo/3IIFzwaA64EigaAkWiGk4C/42ce0b01c69af2d9853f274797e634dd/GoImplementations.png)
 

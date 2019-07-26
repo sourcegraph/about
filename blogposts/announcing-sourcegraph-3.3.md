@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.3
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -112,7 +112,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 <div style="text-align: center">
 
   ![](/blog/sourcegraph-browser-extension-enable-prompt.png)
-  
+
 </div>
 
 ## "Go to definition" using dependency graph

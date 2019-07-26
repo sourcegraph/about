@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: building-toward-the-sourcegraph-master-plan
-heroImage: //images.ctfassets.net/le3mxztn6yoo/ExRGBfWJBmAQqwwMWySMy/40d48f99e4561db3fea684ebef24a4ca/blog-chart--big.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/ExRGBfWJBmAQqwwMWySMy/40d48f99e4561db3fea684ebef24a4ca/blog-chart--big.png
 published: true
 ---
 

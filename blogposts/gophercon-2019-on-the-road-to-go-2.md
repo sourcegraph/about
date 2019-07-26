@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-on-the-road-to-go-2
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 

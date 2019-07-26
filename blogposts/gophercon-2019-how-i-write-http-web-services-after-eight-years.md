@@ -7,13 +7,13 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-how-i-write-http-web-services-after-eight-years
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 
 Presenter: Mat Ryer
 
-Liveblogger: [$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
 
 ## Overview
 

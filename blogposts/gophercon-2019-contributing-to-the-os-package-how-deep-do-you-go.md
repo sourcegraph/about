@@ -7,13 +7,13 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-contributing-to-the-os-package-how-deep-do-you-go
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 
 Presenter: Oliver Stenbom
 
-Liveblogger: [$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
 
 ## Overview
 

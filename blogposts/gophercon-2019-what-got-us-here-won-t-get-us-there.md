@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-what-got-us-here-won-t-get-us-there
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 

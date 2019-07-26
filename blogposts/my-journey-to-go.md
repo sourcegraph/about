@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: my-journey-to-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1E8Fg3njm4Q2cA6yMaaKwM/a0dd3088c8c921cb27cb33867b809d34/ashley-speaker.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1E8Fg3njm4Q2cA6yMaaKwM/a0dd3088c8c921cb27cb33867b809d34/ashley-speaker.jpg
 published: true
 ---
 

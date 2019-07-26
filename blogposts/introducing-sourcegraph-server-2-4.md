@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: introducing-sourcegraph-server-2-4
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4r2yOyPFbWAUSCgAKoQesO/74658437ab34d7e67bced62cc98aeed6/ConfigEditor.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4r2yOyPFbWAUSCgAKoQesO/74658437ab34d7e67bced62cc98aeed6/ConfigEditor.png
 published: true
 ---
 

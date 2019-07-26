@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-going-serverless
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -34,7 +34,7 @@ Some devs when coming to the Serverless world might say:
 
 > I don't want to give up control to this black box.
 
-But you've already yielded a lot of that control to your language of choice, your framework etc. 
+But you've already yielded a lot of that control to your language of choice, your framework etc.
 
 What's important is making observability a priority. So while the function hosting environment remains a black box, how our code is running is not. Tools like [Open Census](https://opencensus.io/) are essential.
 

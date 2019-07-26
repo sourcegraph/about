@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: why-chris-joined-sourcegraph
-heroImage: //images.ctfassets.net/le3mxztn6yoo/LabGBbz3Ii4o2gmmMiy60/482be43a746c56e876fa1858765f4b29/Chris_profile.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/LabGBbz3Ii4o2gmmMiy60/482be43a746c56e876fa1858765f4b29/Chris_profile.png
 published: true
 ---
 
