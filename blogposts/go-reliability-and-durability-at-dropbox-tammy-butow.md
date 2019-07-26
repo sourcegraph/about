@@ -120,7 +120,7 @@ The biggest pain with Go that Tammy identified was in dealing with race conditio
 * The [Go data race detector](https://blog.golang.org/race-detector) doesn't always help. It's important to understand when it *won't* help you.
 * It's important to carefully design the way your Go program will access data concurrently.
 
-Dropbox hires engineers who care about reliability and durability, so this comes naturally to them (even though concurrency is perenially tough everywhere).
+Dropbox hires engineers who care about reliability and durability, so this comes naturally to them (even though concurrency is perennially tough everywhere).
 
 ---
 

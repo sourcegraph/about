@@ -159,7 +159,7 @@ Just because commits are small don;t mean they aren't important. It's a good way
 
 This is very common. Small commits are important because they open the door to larger ownership over the codebase.
 
-## Practice commiting
+## Practice committing
 
 bit.ly/goscratch
 

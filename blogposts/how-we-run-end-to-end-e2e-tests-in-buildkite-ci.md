@@ -86,7 +86,7 @@ Being run against an actual deployment, end-to-end tests are subject to latency,
 
 Mocha’s `--retries` option is also helpful to prevent flakiness, but be aware that this might hide actual failures that only happen a fraction of the time.
 
-To make sure end-to-end tests are not accidently broken, we use special CSS classes prefixed with `e2e` for elements that are asserted on in tests.
+To make sure end-to-end tests are not accidentally broken, we use special CSS classes prefixed with `e2e` for elements that are asserted on in tests.
 
 ## Giving insight into failures with screenshots
 
