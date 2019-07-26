@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: runtime-generated-typesafe-and-declarative-pick-any-three
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5aNRjQxFd6mKi46EoaWqU/1daac9ca1f076a1e11b9fb539dfadd35/proteus1.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5aNRjQxFd6mKi46EoaWqU/1daac9ca1f076a1e11b9fb539dfadd35/proteus1.png
 published: true
 ---
 
@@ -47,7 +47,7 @@ We brag about language features. Take these examples:
 		my-list))
 ```
 
-"My langauge has generics"
+"My language has generics"
 ```
 case class ListNode(+T)(h: T, t: ListNode[T]) {
 	def head: T = h

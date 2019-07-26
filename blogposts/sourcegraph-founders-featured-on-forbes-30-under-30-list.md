@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-founders-featured-on-forbes-30-under-30-list
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3UJwVV13zaSqAySCIUY8gI/c85ad5e7a09ba7d07115e05b303ee285/1_sccXLEMQ6GSZN81h_1CJSg.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3UJwVV13zaSqAySCIUY8gI/c85ad5e7a09ba7d07115e05b303ee285/1_sccXLEMQ6GSZN81h_1CJSg.png
 published: true
 ---
 

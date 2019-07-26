@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: the-pain-that-minimal-version-selection-solves
-heroImage: //images.ctfassets.net/le3mxztn6yoo/7Gbpa546asA62wmquWA6W2/46715d41c2fc5d28f4acd359d1d37a0c/mvs.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/7Gbpa546asA62wmquWA6W2/46715d41c2fc5d28f4acd359d1d37a0c/mvs.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-from-prototype-to-production-lessons-from-building-and
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -72,7 +72,7 @@ the system it is now in production.
 Some notable tools used in the ad-server infrastructure:
 - Apache Thrift for all RPCs. Thrift has been around since 2007, and Reddit has been using this since the very beginning. Every system Reddit builds must be able to talk thrift.
 - RocksDB for datastorage. It's an OSS key-value store built by Facebook. It is an embeddable data store, it avoids network hop, and is optimized for high reads and writes.
-- They also decided to use Go as the main backend language. It is quite an obvious choice in hindisght. This is the first time that Reddit has used Go in production. Prior to this, it's been mostly Python and Java at Reddit. The team wanted to make sure that Go would be a first class citizen in the set of languages Reddit used, and supported everything Reddit needed.
+- They also decided to use Go as the main backend language. It is quite an obvious choice in hindsight. This is the first time that Reddit has used Go in production. Prior to this, it's been mostly Python and Java at Reddit. The team wanted to make sure that Go would be a first class citizen in the set of languages Reddit used, and supported everything Reddit needed.
 
 
 
@@ -88,7 +88,7 @@ A brief overview of how it works:
 - After receiving the response from the enrichment service, ad selector selects the add, and returns the ad to reddit.com to be shown to the user. It also sends the response to Kafka.
 - Once the ad is shown to users, some post-processing needs to occur. The client sends an event HTTP request to the **event tracker** service. This event serves as confirmation that the ad got served. This event notification also gets shelled out to Kafka.
 - Kafka provides data to two Apache Spark jobs:
-  - The **Event Stats** streaming job is always running, and it writes to the enrichment service to provide infromation that is used for learning to select better ads.
+  - The **Event Stats** streaming job is always running, and it writes to the enrichment service to provide information that is used for learning to select better ads.
   - There is also the **Pacing** loop, which involves the Pacing Spark job. This involves a streaming job that counts how many ads have been shown for each advertiser, and and another job that makes sure advertisements are shown optimally.
 
 In this architecture, the Go services are:
@@ -161,9 +161,9 @@ There are some things to note about this architecture. The center service has 2 
 
 There are several middleware layers: tracing, logging, and metrics. Finally, the Thrift transport is at the top level. This structure makes it easy to make changes. For example, if they wanted to change the transport layer from Thrift to gRPC, they'd only need to change the top layer.
 
-Using Go-Kit was beneficial because it gave the team a good exmaple on how to structure Go code. They didn't have experience in this before, so using Go-Kit was helpful for understanding the typical structure for Go services.
+Using Go-Kit was beneficial because it gave the team a good example on how to structure Go code. They didn't have experience in this before, so using Go-Kit was helpful for understanding the typical structure for Go services.
 
-**Lesson 1: Use a framework/toolkit.** Not neccesarily for everything you use Go for, but for production services that require metrics, logging, and so on, use libraries that have solved the problem rather than trying to do it yourself.
+**Lesson 1: Use a framework/toolkit.** Not necessarily for everything you use Go for, but for production services that require metrics, logging, and so on, use libraries that have solved the problem rather than trying to do it yourself.
 
 #### Problem 2: How to roll out the new system safely and quickly?
 
@@ -265,7 +265,7 @@ Rapid iteration and complex business logic can lead to performance issues. The a
 Load testing using [bender](https://github.com/pinterest/bender):
 ![image](https://user-images.githubusercontent.com/16265452/44771811-5bfb3a00-ab29-11e8-995d-4ad98186ca70.png)
 
-This is what using you'd get in repsonse from Bender:
+This is what using you'd get in response from Bender:
 ![image](https://user-images.githubusercontent.com/16265452/44771832-6a495600-ab29-11e8-814f-82700d02f154.png)
 
 Load testing is really useful for testing changes under heavy load, and lets developers optimize new features for high load before pushing to production.

@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: gos-work-stealing-scheduler
-heroImage: //images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c1626b318de4be28314cbdc989a01525/logo-dotgo-black-web.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c1626b318de4be28314cbdc989a01525/logo-dotgo-black-web.png
 published: true
 ---
 

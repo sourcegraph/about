@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-innersource
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3fg8DZm2jCgma0GoK8M6kM/fcb7325505954579a80ae76b1f5d5798/1_OIAqPdJH9_SsxxfzTDu0SA.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3fg8DZm2jCgma0GoK8M6kM/fcb7325505954579a80ae76b1f5d5798/1_OIAqPdJH9_SsxxfzTDu0SA.jpeg
 published: true
 ---
 
@@ -18,7 +18,7 @@ Engineering leaders from Bloomberg, Walmart Labs, Line, HP, IBM, and GitHub talk
 
 “InnerSource” is a new term for something that programmers have been doing for a long time. It’s about openness, transparency, and increased efficiency. It’s easy to describe, hard to do, but if done right it can be transformative for your company’s processes and culture.
 
-Today, we hear from practioners on the forefront of adopting InnerSource for many different industries.
+Today, we hear from practitioners on the forefront of adopting InnerSource for many different industries.
 
 *   Panna Pavangadkar of **Bloomberg**, Global Head of Engineering Development Experience
 *   Yasuhiro Inami, iOS engineer of **Line**, one of the fastest growing social networks and messaging apps in Japan

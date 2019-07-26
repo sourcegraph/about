@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: more-powerful-code-search-on-sourcegraph
-heroImage: //images.ctfassets.net/le3mxztn6yoo/38oAzef5facQ0eeGESkUCy/53de2ea85149ed5d13c682035624c7fc/new-query-syntax.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/38oAzef5facQ0eeGESkUCy/53de2ea85149ed5d13c682035624c7fc/new-query-syntax.png
 published: true
 ---
 

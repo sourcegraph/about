@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: great-code-search-for-aws-codecommit
-heroImage: //images.ctfassets.net/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png
 published: true
 ---
 
@@ -43,17 +43,17 @@ Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy
 
 6. Modify your `config.json` (which you created as part of installing Sourcegraph) to access your AWS CodeCommit repositories. You'll need to make two changes:
 
- a. Set the `gitOriginMap` field to include a mapping of the form `aws/!ssh://${YOUR_SSH_KEY_ID}@${YOUR_SSH_CLONE_URL_PREFIX}/%`. Substitute the SSH key ID associated with the SSH key you added and the SSH clone URL prefix, which you can obtain by viewing the SSH clone URL of any of your repositories. It should look something like this:    
+ a. Set the `gitOriginMap` field to include a mapping of the form `aws/!ssh://${YOUR_SSH_KEY_ID}@${YOUR_SSH_CLONE_URL_PREFIX}/%`. Substitute the SSH key ID associated with the SSH key you added and the SSH clone URL prefix, which you can obtain by viewing the SSH clone URL of any of your repositories. It should look something like this:
   ```
   "gitOriginMap": "aws/!ssh://XXXXXXXXXXXXXXXXXXXX@git-codecommit.us-west-1.amazonaws.com/v1/repos/%",
-  ``` 
-    
+  ```
+
  b. Copy the private SSH key to a file called `id_rsa` in the directory that contains your `config.json`. Then add the following entry:
-  ```        
+  ```
   "gitserverSSH": {
     "id_rsa": "file!id_rsa"
   },
-  ```  
+  ```
 
 7. Update your Sourcegraph instance to reflect the changes you made to your `config.json` by running `sourcegraph-server-gen config.json ./helm-chart && helm upgrade sourcegraph ./helm-chart`.<br/>
 8. Add your AWS CodeCommit repositories by navigating to `https://${YOUR_SOURCEGRAPH_URL}/aws/${REPO_NAME}`.

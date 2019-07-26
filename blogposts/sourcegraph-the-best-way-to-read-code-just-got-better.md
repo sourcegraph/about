@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-the-best-way-to-read-code-just-got-better
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

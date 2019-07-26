@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: the-future-of-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/69VBxnKJEcgCCmAuMw6Q0y/110246d95c70fc4c90bf20ca20ab70f5/cox.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/69VBxnKJEcgCCmAuMw6Q0y/110246d95c70fc4c90bf20ca20ab70f5/cox.jpg
 published: true
 ---
 

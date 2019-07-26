@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: the-graphql-stack-how-everything-fits-together
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1H9b2gUgdOIwmqUoYUskum/889f8713e476e6ded08560df6126d316/stubailo.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1H9b2gUgdOIwmqUoYUskum/889f8713e476e6ded08560df6126d316/stubailo.jpg
 published: true
 ---
 
@@ -41,7 +41,7 @@ It's now easier to write a GraphQL server in any language (JS, Scala, Elixir, Py
 
 The GraphQL duality:
 * client sends detailed data reqs
-* Server provides felxible, performant capabilities
+* Server provides flexible, performant capabilities
 
 The GraphQL Query is a unit of data fetching
 1. Send all of the the requirements for a unit of your UI in ONE request

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: clarence-wardell
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1NbGrwYvFeOq6imUOimgMg/27e1186b665e0e9ed3e9e8e2ca118fc2/1_75TAuLENSspfiw96cW5Q2A.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1NbGrwYvFeOq6imUOimgMg/27e1186b665e0e9ed3e9e8e2ca118fc2/1_75TAuLENSspfiw96cW5Q2A.jpeg
 published: true
 ---
 

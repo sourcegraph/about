@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: machine-learning-and-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/7MLYQeQ1TGcumqgUmuY2mY/18d5fdda571bf8f5b6c3e6cc8dcabb89/Image_uploaded_from_iOS.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/7MLYQeQ1TGcumqgUmuY2mY/18d5fdda571bf8f5b6c3e6cc8dcabb89/Image_uploaded_from_iOS.jpg
 published: true
 ---
 

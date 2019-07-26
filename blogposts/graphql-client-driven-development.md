@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: graphql-client-driven-development
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2WwhQ5KDfy0egKekSSa4gk/0a6adf193abaaffe91a46289d3d77dfe/GraphQLSummit_Selection_033.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2WwhQ5KDfy0egKekSSa4gk/0a6adf193abaaffe91a46289d3d77dfe/GraphQLSummit_Selection_033.png
 published: true
 ---
 
@@ -209,7 +209,7 @@ Directives were initially created to enable conditional field fetching. Suppose 
 
 ```
 query {
-  me { 
+  me {
     name
     nickname
   }
@@ -219,7 +219,7 @@ query {
 But they had a client that really wanted to do something like this:
 ```
 query {
-  me { 
+  me {
     name
     nickname(if: $in_nickname_test)
   }
@@ -229,7 +229,7 @@ The above is what the syntax looked like for 3 years, but when they went to codi
 
 ```
 query {
-  me { 
+  me {
     name
     nickname @include(if: $in_nickname_test)
   }

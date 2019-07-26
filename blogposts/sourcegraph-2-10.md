@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-2-10
-heroImage: //images.ctfassets.net/le3mxztn6yoo/14pZiUUFXeSAeS4CAQ48IY/4630b6856f89cf846dfaf3549d39a4bb/Screenshot_from_2018-08-01_11-16-49.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/14pZiUUFXeSAeS4CAQ48IY/4630b6856f89cf846dfaf3549d39a4bb/Screenshot_from_2018-08-01_11-16-49.png
 published: true
 ---
 

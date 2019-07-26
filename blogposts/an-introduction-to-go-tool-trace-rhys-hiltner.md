@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: an-introduction-to-go-tool-trace-rhys-hiltner
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6ISMViZAA0QwgqcwQUO0Cw/e77570002073afff3245061060460893/Selection_029.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6ISMViZAA0QwgqcwQUO0Cw/e77570002073afff3245061060460893/Selection_029.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-alvind-salehi-federal-government
-heroImage: //images.ctfassets.net/le3mxztn6yoo/vklRiLNSLukWa6cgoaY6y/7199c801db5f5f98ea43b4dda6b5c1a0/1_J2Mnd3ypIFewnjJG7OKp8g.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/vklRiLNSLukWa6cgoaY6y/7199c801db5f5f98ea43b4dda6b5c1a0/1_J2Mnd3ypIFewnjJG7OKp8g.jpeg
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: 5-easy-ways-to-start-contributing-to-docker-using-sourcegraph
-heroImage: //images.ctfassets.net/le3mxztn6yoo/47OGxPo0EMqok4IyUumkkI/72e0297483475f7a13380d01ed357313/1_tBX0RwBYWxD1pPBRw6j8vQ.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/47OGxPo0EMqok4IyUumkkI/72e0297483475f7a13380d01ed357313/1_tBX0RwBYWxD1pPBRw6j8vQ.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: creating-a-custom-serialization-format
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3elFLYsyUouIS0Cci8iyk4/207db7cd751cd19a631e9ad6fa9284e9/DEogyASVoAEn0jj.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3elFLYsyUouIS0Cci8iyk4/207db7cd751cd19a631e9ad6fa9284e9/DEogyASVoAEn0jj.jpg
 published: true
 ---
 

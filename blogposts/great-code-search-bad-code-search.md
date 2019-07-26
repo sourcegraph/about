@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: great-code-search-bad-code-search
-heroImage: //images.ctfassets.net/le3mxztn6yoo/Fko76K31Ic6q0KC8IKEue/7e0dff2bb462e5cc4d60d1e5a3a3505d/search-demo.gif
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/Fko76K31Ic6q0KC8IKEue/7e0dff2bb462e5cc4d60d1e5a3a3505d/search-demo.gif
 published: true
 ---
 

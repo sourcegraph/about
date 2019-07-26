@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-ian-lee-lawrence-livermore-national-laboratory
-heroImage: //images.ctfassets.net/le3mxztn6yoo/20fvPueXZGqOYSq2Oo68M0/a3434fc1cac1aaa96f9f4c3f913c8722/1_8LeAkNACLvgEnCXP-1qUBw.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/20fvPueXZGqOYSq2Oo68M0/a3434fc1cac1aaa96f9f4c3f913c8722/1_8LeAkNACLvgEnCXP-1qUBw.jpeg
 published: true
 ---
 
