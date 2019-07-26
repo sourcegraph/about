@@ -26,6 +26,8 @@ It's a library used by Go programs while they are executing. It controls things 
 - the garbage collector, managing memory
 - the goroutine scheduler 
 
+![Presenter Patrick Hawley](/website/static/gophercon-2019/gophercon-2019-controlling-go-runtime-presenter.jpg
+
 It is a helpful assistant. It is a Go package (https://golang.org/pkg/runtime/). It is not an interpreter (e.g. Python, Ruby) or full runtime environment such as the Java virtual machine. It is useful for profiling and observing what happens during program execution.
 
 Some functions that can be used to control the garbage collector:
@@ -59,6 +61,8 @@ The above requests that all goroutines with ctx, stop. This is scheduler control
 #### So ... Why Control the Runtime?
 Performance reasons. Testing and benchmarks.
 
+![Why Control the Runtime?](/website/static/gophercon-2019/gophercon-2019-controlling-go-runtime-slide1.jpg
+
 `go test -cpu 1,2,4`
 
 Jaeger tracing uses runtime control to match container CPU quota changes.
@@ -88,6 +92,8 @@ These are a thought experiment, they do NOT exist (yet)!
 Proposals:
 
 1) GoSchedNext() - instruct runtime what to run next. Not by goroutine ids, but goroutines of a certain type. Patrick used the analogy of a "color" to describe goroutines of a related type
+
+![GoSchedNext Colors](/website/static/gophercon-2019/gophercon-2019-controlling-go-runtime-slide2.jpg
 
 2) GoAffinity() - requires or suggests that all goroutines of a certain "color" execute on the same CPU.  
 Reasons:
