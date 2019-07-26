@@ -1,7 +1,7 @@
 ---
 title: 'GopherCon 2019 - Get Going with WebAssembly'
 author: 'Alex Boten for the GopherCon Liveblog'
-publishDate: 2019-07-25T00:00-06:00
+publishDate: 2019-07-25T00:00-11:55
 tags: [
   gophercon
 ]
