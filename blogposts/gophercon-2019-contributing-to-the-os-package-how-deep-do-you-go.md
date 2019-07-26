@@ -13,7 +13,7 @@ published: true
 
 Presenter: Oliver Stenbom
 
-Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [Issac Trotts](https://github.com/ijt)
 
 ## Overview
 
