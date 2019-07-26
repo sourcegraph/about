@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: building-graphql-native-microservices
-heroImage: //images.ctfassets.net/le3mxztn6yoo/24qcvAlDhGUCYCsEYA4ooE/6ee1d9d9ca0feccb226777907f80bd20/Screen_Shot_2017-10-25_at_12.30.05_PM.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/24qcvAlDhGUCYCsEYA4ooE/6ee1d9d9ca0feccb226777907f80bd20/Screen_Shot_2017-10-25_at_12.30.05_PM.png
 published: true
 ---
 

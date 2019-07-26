@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.5
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -66,7 +66,7 @@ Examples:
 - Find Dockerfiles requiring upgrades from an obsolete version of Debian so you can contact the maintainers:
 
     ```
-    file:Dockerfile FROM debian\:jessie|8 repohascommitafter:”1 month ago” 
+    file:Dockerfile FROM debian\:jessie|8 repohascommitafter:”1 month ago”
     ```
 
 - Find Terraform files with an `aws_instance` resource to analyze EBS volume configuration:
@@ -174,7 +174,7 @@ To enable the repository syncing status indicator, add this setting to your site
 
 ```
 "experimentalFeatures": { "statusIndicator": "enabled" }
-``` 
+```
 
 Due to the experimental status of this feature, Sourcegraph instances with 500+ repositories may experience confusing status updates.
 

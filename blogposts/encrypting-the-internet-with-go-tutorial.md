@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: encrypting-the-internet-with-go-tutorial
-heroImage: //images.ctfassets.net/le3mxztn6yoo/a3Y5rqBJPU6wg8S6egaUy/0b2dcdab51e21bbff9f9ee42f35bf8b1/filippo.JPG
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/a3Y5rqBJPU6wg8S6egaUy/0b2dcdab51e21bbff9f9ee42f35bf8b1/filippo.JPG
 published: true
 ---
 
@@ -47,13 +47,13 @@ So for the 0-RTT API, there are two important things the server needs:
 
 He goes over five possible options to handle these challenges using Go, explaining the downside of each:
 
-![opt1](//images.contentful.com/le3mxztn6yoo/4iG86W6ybSMeC4eIWWQiUK/5f873528058a3af1feda8e0f3898c888/opt1.png) 
+![opt1](//images.contentful.com/le3mxztn6yoo/4iG86W6ybSMeC4eIWWQiUK/5f873528058a3af1feda8e0f3898c888/opt1.png)
 
-![opt2](//images.contentful.com/le3mxztn6yoo/6Gx1kKANBCYUayQOWMUykm/07a0eeb7af06f5ffed300e884ad39b7c/opt2.png) 
+![opt2](//images.contentful.com/le3mxztn6yoo/6Gx1kKANBCYUayQOWMUykm/07a0eeb7af06f5ffed300e884ad39b7c/opt2.png)
 
-![opt3](//images.contentful.com/le3mxztn6yoo/68o0cQJzpugA2YyiEqokms/5e1814b75543a402b34bbf9268bb404b/opt3.png) 
+![opt3](//images.contentful.com/le3mxztn6yoo/68o0cQJzpugA2YyiEqokms/5e1814b75543a402b34bbf9268bb404b/opt3.png)
 
-![opt4](//images.contentful.com/le3mxztn6yoo/62mKpqMuliMOCcmw6GG46A/64caa54a3d3b024b43195d5c879f1cc2/opt4.png) 
+![opt4](//images.contentful.com/le3mxztn6yoo/62mKpqMuliMOCcmw6GG46A/64caa54a3d3b024b43195d5c879f1cc2/opt4.png)
 
 ![opt5](//images.contentful.com/le3mxztn6yoo/Cnq2quDkrYYwOi2UWgccQ/c8e102625699ac6c1b3e7f2cc758f11b/opt5.png)
 
@@ -75,9 +75,9 @@ He goes over five possible options to handle these challenges using Go, explaini
 
 - Patches to the standard library:
 
-![patch](//images.contentful.com/le3mxztn6yoo/1FqIL5akiECcQAQoUmgcuU/053ed2cd50ebee3461232b68967ce46f/patch.png) 
+![patch](//images.contentful.com/le3mxztn6yoo/1FqIL5akiECcQAQoUmgcuU/053ed2cd50ebee3461232b68967ce46f/patch.png)
 
-![patch2](//images.contentful.com/le3mxztn6yoo/31XPDIPtYkEAWAoEWEy08c/95e3d8361d33dffb48fbcfd89d4f36c8/patch2.png) 
+![patch2](//images.contentful.com/le3mxztn6yoo/31XPDIPtYkEAWAoEWEy08c/95e3d8361d33dffb48fbcfd89d4f36c8/patch2.png)
 
 ![patch3](//images.contentful.com/le3mxztn6yoo/2WpKDEOyiQiuGe6QqG0oYu/6423149a4a952610038ea6c13555d297/patch3.png)
 
@@ -89,8 +89,8 @@ He goes over five possible options to handle these challenges using Go, explaini
 
 - Passing TLS connections to nginx: if there's a file descriptor, pass the connection directly to Go. No OpenSSL is involved in the processing of the data:
 
-![ssl](//images.contentful.com/le3mxztn6yoo/2kAXGVe5G46ioe06K46cWW/34a9e9a11d22fc1c36c66ce3731cbaa3/ssl.png) 
-![ssl2](//images.contentful.com/le3mxztn6yoo/42NTjE8NDqC2g2yEU64Mce/737bbc2e05d3780a42e515fa65538f56/ssl2.png) 
+![ssl](//images.contentful.com/le3mxztn6yoo/2kAXGVe5G46ioe06K46cWW/34a9e9a11d22fc1c36c66ce3731cbaa3/ssl.png)
+![ssl2](//images.contentful.com/le3mxztn6yoo/42NTjE8NDqC2g2yEU64Mce/737bbc2e05d3780a42e515fa65538f56/ssl2.png)
 ![ssl3](//images.contentful.com/le3mxztn6yoo/5RnmhUxRvOYGmAigMUi0I/c0d5940bed6b5a7ee8da4c44b395a2a9/ssl3.png)
 
 ### Some pointers about net/http

@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-future-coding-podcast-episode-32
-heroImage: /blog/sourcegraph-future-coding-podcast-episode-32.png
+heroImage: https://about.sourcegraph.com/blog/sourcegraph-future-coding-podcast-episode-32.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: announcing-sourcegraph-2
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4JC9PXHpviy2Om2AKa6Ime/4de7c31950910afb02e7a4929b2497cb/code-comments.gif
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4JC9PXHpviy2Om2AKa6Ime/4de7c31950910afb02e7a4929b2497cb/code-comments.gif
 published: true
 ---
 
@@ -17,7 +17,7 @@ We’ve been hard at work on some major improvements to how you search, browse, 
 ## Introducing Sourcegraph
 
 Already used by many of our customers and now available to all companies, Sourcegraph gives you code search and intelligence across all your company’s private and public code. It integrates with multiple code hosts, editors, and code review tools to increase productivity throughout the developer workflow.
-			
+
 Sourcegraph is what powers <a href="https://sourcegraph.com/">Sourcegraph.com</a>, and now you can run it inside your company's network. [Install a self-hosted Sourcegraph instance in 1 command.](https://docs.sourcegraph.com/#quickstart)
 
 ## Explore open-source code with the new Sourcegraph.com and browser extensions

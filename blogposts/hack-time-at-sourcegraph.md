@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: hack-time-at-sourcegraph
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5aQ98mlQLKQcOOOwyMiwaa/3faf82d2a8255e62a050839a1b896f78/codecov-github2.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5aQ98mlQLKQcOOOwyMiwaa/3faf82d2a8255e62a050839a1b896f78/codecov-github2.png
 published: true
 ---
 

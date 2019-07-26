@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: how-caddy-auto-detects-https-interception
-heroImage: //images.ctfassets.net/le3mxztn6yoo/10PF9uoNQceQEOWOYE6uWc/0c204cb05e90d123ee5eac81fae69e90/1_dxC5SLwJzx9lOiKHTQZWWg.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/10PF9uoNQceQEOWOYE6uWc/0c204cb05e90d123ee5eac81fae69e90/1_dxC5SLwJzx9lOiKHTQZWWg.png
 published: true
 ---
 

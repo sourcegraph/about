@@ -7,7 +7,7 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-design-command-line-tools-people-love
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 

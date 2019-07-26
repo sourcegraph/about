@@ -6,11 +6,11 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-browser-extensions-are-now-open-source
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1IQ1TRsJwsYcMaqgWE2Iw6/4db79f948c15617c782799ece68bf657/hover-tooltip.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1IQ1TRsJwsYcMaqgWE2Iw6/4db79f948c15617c782799ece68bf657/hover-tooltip.png
 published: true
 ---
 
-[Sourcegraph's browser extensions for Chrome and Firefox](https://docs.sourcegraph.com/integration/browser_extension) are now **open source** in [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph/tree/master/client/browser). These popular browser extensions add code intelligence (hovers, go to definition, find references, find implementations, and soon much more) to every website where you read code — including GitHub, GitHub Enterprise, Bitbucket Server, Phabricator, and more [coming soon](https://docs.sourcegraph.com/integration/browser_extension). The original Sourcegraph for Chrome browser extension was built as a summer hack project by [Farhan](https://github.com/attfarhan) and now has more than 36,000 active installs worldwide. 
+[Sourcegraph's browser extensions for Chrome and Firefox](https://docs.sourcegraph.com/integration/browser_extension) are now **open source** in [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph/tree/master/client/browser). These popular browser extensions add code intelligence (hovers, go to definition, find references, find implementations, and soon much more) to every website where you read code — including GitHub, GitHub Enterprise, Bitbucket Server, Phabricator, and more [coming soon](https://docs.sourcegraph.com/integration/browser_extension). The original Sourcegraph for Chrome browser extension was built as a summer hack project by [Farhan](https://github.com/attfarhan) and now has more than 36,000 active installs worldwide.
 
 ![githubcodeintelligence](//images.ctfassets.net/le3mxztn6yoo/1IQ1TRsJwsYcMaqgWE2Iw6/4db79f948c15617c782799ece68bf657/hover-tooltip.png)
 

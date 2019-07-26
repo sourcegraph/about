@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: large-scale-code-modification-product-preview-and-feedback
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: false
 ---
 

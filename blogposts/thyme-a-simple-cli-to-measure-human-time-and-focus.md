@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: thyme-a-simple-cli-to-measure-human-time-and-focus
-heroImage: //images.ctfassets.net/le3mxztn6yoo/mFepCUJ0COsGMISO8OQ6S/e3e5697bf8ee1f00c5425a32f9b373c3/1_2v_gWy792Wru6O1MiookSA.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/mFepCUJ0COsGMISO8OQ6S/e3e5697bf8ee1f00c5425a32f9b373c3/1_2v_gWy792Wru6O1MiookSA.png
 published: true
 ---
 

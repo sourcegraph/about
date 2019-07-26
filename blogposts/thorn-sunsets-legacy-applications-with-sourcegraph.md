@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: thorn-sunsets-legacy-applications-with-sourcegraph
-heroImage: /case-studies/thorn-sourcegraph-case-study.png
+heroImage: https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study.png
 published: true
 description: "Thorn builds technology to defend children from sexual abuse, helping law enforcement reduce investigation times by 60%, ensuring that more children are found, faster. Sourcegraph is helping Thorn with their mission, by making it safer to deprecate legacy applications—searching all repositories in any branch to find code still relying on legacy architecture."
 ---

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: how-sourcegraph-builds-sourcegraph
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
