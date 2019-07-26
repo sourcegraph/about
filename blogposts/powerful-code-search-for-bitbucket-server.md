@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: powerful-code-search-for-bitbucket-server
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6seAQtaQo0UI0QY4eOo0iU/fd332addff6d9c8629fe4a5566f9204b/sg_bb-logos--for-farhan.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6seAQtaQo0UI0QY4eOo0iU/fd332addff6d9c8629fe4a5566f9204b/sg_bb-logos--for-farhan.png
 published: true
 ---
 
@@ -27,7 +27,7 @@ Follow these 4 steps to get code search for your Bitbucket Server code:
 
 4. Click **Repositories** in the site admin menu and enable the repositories you want to search over.
 
-And that’s it--you're ready to start searching across your Bitbucket Server repositories! 
+And that’s it--you're ready to start searching across your Bitbucket Server repositories!
 
 For all configuration options for Bitbucket Server, see the [Bitbucket Server integration documentation](https://docs.sourcegraph.com/integration/bitbucket_server).
 

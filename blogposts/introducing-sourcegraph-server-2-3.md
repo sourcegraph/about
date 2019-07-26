@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: introducing-sourcegraph-server-2-3
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3xHwIft9qUqwqcYiYGamAu/c4dbe46cf2d8698472ce3e63aef0a7c2/Screen_Shot_2017-12-05_at_12.17.13_PM.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3xHwIft9qUqwqcYiYGamAu/c4dbe46cf2d8698472ce3e63aef0a7c2/Screen_Shot_2017-12-05_at_12.17.13_PM.png
 published: true
 ---
 
@@ -17,7 +17,7 @@ Sourcegraph gives the power of [great code search](https://docs.sourcegraph.com/
 Ready to install or upgrade?
 **Install [Sourcegraph 2.3](https://docs.sourcegraph.com)** with a single command to get great code search today. Current customers can [update now](https://docs.sourcegraph.com/admin/updates).
 
-Key highlights of Sourcegraph 2.3: 
+Key highlights of Sourcegraph 2.3:
 * [Better GitHub.com and GitHub Enteprise integration](#better-githubcom-and-github-enterprise-integration)
 * [Light color theme](#light-color-theme)
 * [Organizations](#organizations)

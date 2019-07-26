@@ -9,7 +9,6 @@ tags: [
 slug: gophercon-2019-generics-in-go
 heroImage: /gophercon2019.png
 published: true
----
 
 Presenter: Ian Lance Taylor
 

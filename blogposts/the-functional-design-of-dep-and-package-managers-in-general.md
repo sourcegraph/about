@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: the-functional-design-of-dep-and-package-managers-in-general
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6Wtkah53tCQO4kIaCm40ak/862ae4e0f3aea940269778b19a799277/IMG_0024.JPG
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6Wtkah53tCQO4kIaCm40ak/862ae4e0f3aea940269778b19a799277/IMG_0024.JPG
 published: true
 ---
 
@@ -70,10 +70,10 @@ solution := solver.Solve()
 WriteDepTree("path/to/vendor", solution)
 ```
 
-### Introducing memoization 
+### Introducing memoization
 
 Producing `Gopkg.lock` from `Project src` and `Gopkg.toml` is a resource-intensive task. But by adhering to the conceptual model above (and treating `Deps src` as a sink, not as an input), we can use memoization to speed this task up.
 
 To do this, we need to assume that the function that produces `Gopkg.lock` is a pure function, even though it's not. It depends on the file system and possibly the network. To make this assumption safely, we need to design the entire dependency system correctly.
 
-That concludes his talk, but if you're interested in more, Sam discussed these design principles in his well-known 2016 blog post: [So you want to write a package manager](https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527#.740o43vxi). 
+That concludes his talk, but if you're interested in more, Sam discussed these design principles in his well-known 2016 blog post: [So you want to write a package manager](https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527#.740o43vxi).

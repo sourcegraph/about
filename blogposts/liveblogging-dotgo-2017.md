@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: liveblogging-dotgo-2017
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4mYbWG3HL2MiweO2Si8OGA/7d44f227a75697aeccd62d98366614cb/logo-dotgo.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4mYbWG3HL2MiweO2Si8OGA/7d44f227a75697aeccd62d98366614cb/logo-dotgo.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: go-when-is-it-ok-to-recover
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6fB88E9rzycWawk0maeiYK/62b0487a3ae91e47097499eb76cf9c2b/Screen_Shot_2018-03-05_at_4.44.09_PM.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6fB88E9rzycWawk0maeiYK/62b0487a3ae91e47097499eb76cf9c2b/Screen_Shot_2018-03-05_at_4.44.09_PM.png
 published: true
 ---
 
@@ -28,9 +28,9 @@ By searching over the Go repository itself, we can find examples of when the Go 
 One notable example of recover being used is in [net/http](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24%40go1.10+-file:_test.go+file:net/http+%22%3D+recover%28%29%22). The connection struct recovers from panics so that a panic in a request handler doesn’t crash the entire server. Interestingly enough, this might actually be an anti-pattern [according to David Symonds](https://github.com/grpc/grpc-go/issues/441#issuecomment-155588816):
 
 > Quietly catching a panic might leave the server in an inconsistent or incorrect state, so while crashing sucks at least you'll find out and can go fix the panic.
-> 
+>
 > We've come to regret the net/http panic catching after running Go in production for a while. It sounded like a good idea at the time, but it has caused its own issues in practice.
-> 
+>
 > If it's mission critical, you'll want some sort of frontend (e.g. nginx) that can quietly retry the request if a backend crashes. There's no way to completely rule out crashes in bad code, and catching panics in only the RPC server handler goroutines isn't going to stop them all.
 
 It seems then that recover, like panic, should be used sparingly in non-test code.

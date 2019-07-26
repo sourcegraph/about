@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: appdash-an-open-source-perf-tracing-suite
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2cqIONdy7Ccumacy4eCC8W/bf4a730c417954a3c7a30394cd8ddd51/0_jXkIPsoJBjXY80cs.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2cqIONdy7Ccumacy4eCC8W/bf4a730c417954a3c7a30394cd8ddd51/0_jXkIPsoJBjXY80cs.png
 published: true
 ---
 

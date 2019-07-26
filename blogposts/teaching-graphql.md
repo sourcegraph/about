@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: teaching-graphql
-heroImage: //images.ctfassets.net/le3mxztn6yoo/7gb0ceRxw48gaiCaQkEQuq/baf62d502bd7b73c1ebd41859b970fa3/leanne_1.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/7gb0ceRxw48gaiCaQkEQuq/baf62d502bd7b73c1ebd41859b970fa3/leanne_1.png
 published: true
 ---
 
@@ -57,8 +57,8 @@ Let's start here and add GraphQL concepts on top of these.
 
 
 Here are the key ideas of RESTful APIs. Some ideas are familiar to almost all devs. Others are not well understood by all or perhaps taken for granted:
-* (Familiar idea) Client-server architecture: Distributed model where a client requests data from a server - often over a network 
-* (Familiar idea) Uniform interface: all clients and servers interact with the API in the same way (e.x. multiple resource endpoints)  
+* (Familiar idea) Client-server architecture: Distributed model where a client requests data from a server - often over a network
+* (Familiar idea) Uniform interface: all clients and servers interact with the API in the same way (e.x. multiple resource endpoints)
 * (Unfamiliar idea) Layered system, Statelessness, and Cacheability
 
 Key ideas of CRUD
@@ -70,7 +70,7 @@ Key ideas of CRUD
 Here's a common framework for a REST API:
 
  ![leanne 16](//images.contentful.com/le3mxztn6yoo/4OJzpZgXIcwEousm66cuAi/41780174f482debe63c32d872acfc6d6/leanne_16.png)
- 
+
 The RESTful APIs we're most familiar with group data by resource. Here's an example query with our REST API:
 
 ![leanne 17](//images.contentful.com/le3mxztn6yoo/6ykNcqplugOMg0qYYyCqgK/f3b8e1f4267b1720e82cca11ff7d762f/leanne_17.png)
@@ -78,8 +78,8 @@ The RESTful APIs we're most familiar with group data by resource. Here's an exam
 ## GraphQL for beginners
 
 When Leanne asked developers at Shopify what they thought were the key ideas of GraphQL, there were some ideas they could explain well and others that they couldn't:
-* (Familiar idea) Clients can dictate format of data in response - solves over-fetching 
-* (Unfamiliar idea) A query language for APIs 
+* (Familiar idea) Clients can dictate format of data in response - solves over-fetching
+* (Unfamiliar idea) A query language for APIs
 * (Unfamiliar idea) One endpoint that returns a data graph
 * (Unfamiliar idea) A type system defines all queryable data
 

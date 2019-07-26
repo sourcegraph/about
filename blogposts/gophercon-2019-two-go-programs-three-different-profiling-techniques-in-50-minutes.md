@@ -7,13 +7,13 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-two-go-programs-three-different-profiling-techniques-in-50-minutes
-heroImage: /gophercon2019.png
+heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: false
 ---
 
 Presenter: Dave Cheney
 
-Liveblogger: [$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
 
 ## Overview
 

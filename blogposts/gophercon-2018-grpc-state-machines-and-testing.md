@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-grpc-state-machines-and-testing
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -168,10 +168,10 @@ In the server, the GetVersion func returns the current version specification, wi
 
 (Briefly: protobuf defines a "Service" with various functions, which becomes an interface you have to implement, and then each "Message" is a struct.  An RPC function takes a struct as input, and returns a struct as output.  If you want multiple inputs / outputs, you have to wrap them all in the struct.)
 
-service VersionService, with single GetVersion rpc call defined  
-message GetVersionRequest  
-message Package  
-message GetVersionResponse  
+service VersionService, with single GetVersion rpc call defined
+message GetVersionRequest
+message Package
+message GetVersionResponse
 
 gRPC generates the Go code from the protobuf definition
 

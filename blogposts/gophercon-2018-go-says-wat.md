@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-go-says-wat
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -449,18 +449,18 @@ Crowd guess: `true`, `false`.
 
 Answer: `true`, `false`.
 
-Why? 
+Why?
 
 Short answer: `nil` means different things for an interface, vs other types.
 
 Long answer: Three basic ideas:
 - `nil` is weird in Go, and in most languages with an equivalent concept. It's a "hole in the type system".
-- Interfaces are represented as (tab, data); a tab is (interface type, underlying type). 
+- Interfaces are represented as (tab, data); a tab is (interface type, underlying type).
 - Rules for instance comparisons are moderately complex.
 
-That underlying type is the key difference in this WAT: 
+That underlying type is the key difference in this WAT:
 - With `var err error`, the underlying type is the zero value, or `nil` here.
-- When a variable of concrete type is assigned to a variable of interface type (`var me *MyError` is assigned to `err` after `var err error`), the value is copied and the concrete type is copied. 
+- When a variable of concrete type is assigned to a variable of interface type (`var me *MyError` is assigned to `err` after `var err error`), the value is copied and the concrete type is copied.
 - When a variable of interface type is assigned to another variable of interface type (`var err1 error` is assigned to `err` after `var err error`), Go copies both the value and the underlying type.
 
 Go never wraps one interface inside of another.

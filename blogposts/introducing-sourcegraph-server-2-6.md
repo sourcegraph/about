@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: introducing-sourcegraph-server-2-6
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4umPKXWx0kSeIgw0SKQw8e/265b6eadb480f3837261e4f4e1a4c771/Symbols3.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4umPKXWx0kSeIgw0SKQw8e/265b6eadb480f3837261e4f4e1a4c771/Symbols3.png
 published: true
 ---
 
@@ -33,7 +33,7 @@ Symbol search is now available in Sourcegraph for over 75 languages. Use the `ty
 
 ![Symbols3](//images.ctfassets.net/le3mxztn6yoo/4umPKXWx0kSeIgw0SKQw8e/265b6eadb480f3837261e4f4e1a4c771/Symbols3.png)
 
-You can also browse all symbols in a repository with the symbols sidebar.  Click the **Symbols** tab in the sidebar while viewing a repository to see a list of all symbols. Click on a symbol to go to its definition.  
+You can also browse all symbols in a repository with the symbols sidebar.  Click the **Symbols** tab in the sidebar while viewing a repository to see a list of all symbols. Click on a symbol to go to its definition.
 
 ![SymbolSidebar](//images.ctfassets.net/le3mxztn6yoo/2rFkutjx76GScgCW2wS2a0/2f5e4ef5daa64623bdf0e6bd6ae52962/SymbolSidebar.png)
 
@@ -46,7 +46,7 @@ Changes to most site configuration options are now automatically detected and no
 
 Now, you can filter search results by programming language with the `lang:` filter. For example, use [`test lang:yaml`](https://sourcegraph.com/search?q=repogroup:sample+lang:yaml+test) for files containing `test` in YAML files, or `import lang:python` for [`import` statements in Python files](https://sourcegraph.com/search?q=repogroup:sample+lang:python+import).
 
-## Search filter suggestions 
+## Search filter suggestions
 
 Filtering with search scopes is now smarter and dynamic. After executing a search, the **Filters** bar below the search area will suggest up to 12 `file:` and `repo:` filters based on the result set to help narrow your search query.
 
@@ -75,7 +75,7 @@ As always, in addition to natively supported code hosts (GitHub, GitLab, Gitolit
 
 We now display a **View on Phabricator** link rather than a **View on other code host** link if you are using Phabricator and hosting your code on GitHub or another code host with a UI. Commit links will now also point to Phabricator.
 
-[Read the Phabricator integration documentation](https://docs.sourcegraph.com/integration/phabricator) to integrate Sourcegraph with Phabricator. 
+[Read the Phabricator integration documentation](https://docs.sourcegraph.com/integration/phabricator) to integrate Sourcegraph with Phabricator.
 
 
 ## Changelog

@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: generating-better-machine-code-with-ssa
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3V5DUfYGA0q8yYQouKIWS6/4220ae048c5b0a2bb700119e68e7de64/keithrandall.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3V5DUfYGA0q8yYQouKIWS6/4220ae048c5b0a2bb700119e68e7de64/keithrandall.jpg
 published: true
 ---
 

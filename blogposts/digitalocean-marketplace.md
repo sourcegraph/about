@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-digitalocean-marketplace
-heroImage: /blog/sourcegraph-digitalocean-marketplace.png
+heroImage: https://about.sourcegraph.com/blog/sourcegraph-digitalocean-marketplace.png
 published: true
 ---
 

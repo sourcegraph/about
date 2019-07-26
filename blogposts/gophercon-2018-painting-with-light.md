@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-painting-with-light
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -95,7 +95,7 @@ Trying to create more sophisticated renderings, he ran into two obstacles that t
 
 ![snapseed](https://user-images.githubusercontent.com/16265452/44746600-0cd0ed00-aac8-11e8-902f-623ab4d608bc.jpg)
 
-One cool thing about the alogrithm is that it's "embarassingly parallel", so he scaled up to 10 workers. We'll revisit this at the end of the talk.
+One cool thing about the algorithm is that it's "embarassingly parallel", so he scaled up to 10 workers. We'll revisit this at the end of the talk.
 
 ## How to build a path tracer
 
@@ -151,7 +151,7 @@ That's where Monte Carlo integration comes back into the scene. The Monte Carlo 
 - Add them all up and **average** them
 - That's probably **close** to the real answer
 
-Combining the path tracing alogrithm and Monte Carlo integration yields an image like this:
+Combining the path tracing algorithm and Monte Carlo integration yields an image like this:
 
 ![image](https://user-images.githubusercontent.com/16265452/44736745-39c3d680-aaad-11e8-8b9c-4bad240cae0c.png)
 
@@ -193,7 +193,7 @@ type Direction Vector3
 ```
 
 Creating explicit types for Units, Direction, and Energy, which were all represented by Vector3s before helped find tons of bugs. It also helped performance a ton because he got rid of unnecessary work he was doing because of type confusion. He got rid of unnecessary conversions when he was unsure of the type, and similar issues.
-Ultimately, he found ways to get help from the complier.
+Ultimately, he found ways to get help from the compiler.
 
 The original function signature above would turn into something like this, which is much easier to read:
 
