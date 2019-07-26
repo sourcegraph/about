@@ -8,12 +8,12 @@ tags: [
 ]
 slug: gophercon-2019-go-module-proxy-life-of-a-query
 heroImage: /gophercon2019.png
-published: false
+published: true
 ---
 
 Presenter: Katie Hockman
 
-Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [Royce Miller](https://github.com/r0yce)
 
 ## Overview
 
@@ -120,7 +120,7 @@ You could see semantic versions like v1.4.1 as well as pseudo-versions like v0.0
 
 By specifying that your code relies on a module with version 1.4.1 or later, then you guarantee that everyone who imports your package will never be allowed to use a version older than 1.4.1 with your code.
 
-The go command uses something called “minimal version selection” to build a module, based on the versions specified in a go.mod file.
+The go command uses something called "minimal version selection" to build a module, based on the versions specified in a go.mod file.
 
 As a basic example, let's say we have module A and B, both of which Katie's module depends on.
 
@@ -128,7 +128,7 @@ As a basic example, let's say we have module A and B, both of which Katie's modu
   <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-15.png">
 </p>
 
-Each of these modules relies on C, but at a different version. “A” requires at least version 1.5 and “B” requires at least version 1.6.
+Each of these modules relies on C, but at a different version. "A" requires at least version 1.5 and "B" requires at least version 1.6.
 
 C has also published another, newer version. 1.7
 
@@ -230,7 +230,7 @@ Let's instead run `go get go.dog/breeds` but append @master to the end. This is 
 
 We'll immediately jump into requesting the info for the master branch
 
-In this case, you'll see that the info given back is a bit different. This time, we got a pseudo-version which is the _canonical_ version at “master” at the time of the request.
+In this case, you'll see that the info given back is a bit different. This time, we got a pseudo-version which is the _canonical_ version at "master" at the time of the request.
 
 <p align="center">
   <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-39.png">
@@ -306,7 +306,7 @@ This might mean that this source code was modified, a proxy or origin server has
 
 All of this is a definite improvement from having no go.sum at all, but it has its limits.
 
-The downside: it works by “trust on first use”, and more specifically, your first use.
+The downside: it works by "trust on first use", and more specifically, your first use.
 
 When you add a new dependency to your module that you've never seen before, including when you upgrade to a new version of a dependency you are already using, the go command fetches the code and creates the go.sum lines on the fly. It doesn't have anything to check it against, so it'll just pop them into your go.sum file.
 
@@ -329,6 +329,8 @@ What we can do _instead_ is the next best thing: let's make sure that everyone a
 <p align="center">
   <img width="600" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-58.png">
 </p>
+
+[Design document for sumdb](https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md)
 
 We can do this by creating a global source of go.sum lines, called a checksum database.
 
@@ -380,6 +382,8 @@ We need a solution that won't let the checksum database misbehave, and will make
   <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-67.png">
 </p>
 
+[Transparent Logs and Merkle Trees Research](https://research.swtch.com/tlog)
+
 We'll do this by storing our go.sum lines inside what's called a Transparent Log. It's a tree structure that's built by hashing node pairs.
 
 This is the same technique used by certificate transparency to protect HTTPS.
@@ -412,24 +416,24 @@ If a single record in the log is changed, then the hashes would no longer line u
 
 So if the go command can prove that the go.sum lines that it's about to add to your module's go.sum file is in this transparent log, then it can be very confident that these are the right go.sum lines to add to your module's go.sum file.
 
-Remember that our goal is to make sure that everyone is getting the “correct” module version from a proxy or origin server every time.
+Remember that our goal is to make sure that everyone is getting the "correct" module version from a proxy or origin server every time.
 
-And from our and the go command's perspective, “correct” means..
+And from our and the go command's perspective, "correct" means..
 
 <p align="center">
   <img width="600" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-74.png">
 </p>
 
-“the same as it was yesterday and every day before that, for every single person that asks for it”, so it's important that we have a data structure that can't be tampered with.
+"the same as it was yesterday and every day before that, for every single person that asks for it", so it's important that we have a data structure that can't be tampered with.
 
 <p align="center">
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-75.png">
+  <img width="800" height="600" src="/gophercon-2019/go-module-proxy-life-of-a-query-75.png">
 </p>
 
 This log provides a very reliable way to prove two key things to auditors and the go command:
 
-1. That a specific record exists in the log through something called an “inclusion proof”.
-2. That the tree hasn't been tampered with. Specifically, that a later tree contains an older tree that we already knew about, called a “consistency proof”.
+1. That a specific record exists in the log through something called an "inclusion proof".
+2. That the tree hasn't been tampered with. Specifically, that a later tree contains an older tree that we already knew about, called a "consistency proof".
 
 These two proofs can give the go command confidence when validating against a set of go.sum lines in this log. The go command performs these proofs on the fly before adding new go.sum lines to your module's go.sum file.
 
@@ -511,7 +515,7 @@ Let's say we want to verify the go.sum lines of go.dog/breeds at version 0.3.2 w
   <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-86.png">
 </p>
 
-The first thing we'll do, is hit an endpoint on the checksum database called “lookup” with our module version, and it gives us back 3 things
+The first thing we'll do, is hit an endpoint on the checksum database called "lookup" with our module version, and it gives us back 3 things
 
 <p align="center">
   <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-87.png">
@@ -550,11 +554,9 @@ As this tree grows, you'll get new tree heads, and you should check that these n
 
 Oftentimes, the size of the tree won't be a power of 2, but we still want to be able to do our inclusion proofs in those cases. That's still possible!
 
-In this example we have 13 records in our tree, which includes some “temporary” nodes, which are marked by x's in this diagram.
+In this example we have 13 records in our tree, which includes some "temporary" nodes, which are marked by x's in this diagram.
 
 The only difference is that our path from leaf to head contains some temporary nodes that we need to create on the fly, that can be thrown away when we're done with them.
-
-_pause_
 
 That's really all there is to the inclusion proof. In practice, the last thing we need to figure out is how to get these inner nodes circled in blue from the checksum database, in order to do our proofs.
 
@@ -632,7 +634,7 @@ Under the hood, the go command has a few environment variables that can be confi
 
 GO111MODULE and GOPROXY have been around since Go1.11.
 
-You can set GO111MODULE to “on” to enable module mode everywhere or leave it at “auto”.
+You can set GO111MODULE to "on" to enable module mode everywhere or leave it at "auto".
 
 You can set GOPROXY to a proxy of your choice to get picked up by the go command when in module mode. Though this has been around since 1.11, the ability to provide a comma-separated list is new for 1.13. This tells the go command to try multiple sources before giving up. If you want to use the Go team's module mirror, you can set it to https://proxy.golang.org.
 
@@ -662,8 +664,8 @@ The Go team plans on fine-tuning these features, and we hope you'll try them out
 
 Katie Hockman, Google, Go Open Source
 
-github.com/katiehockman
+[github.com/katiehockman](https://github.com/katiehockman)
 
-@katie_hockman
+[@katie_hockman](https://twitter.com/katiehockman)
 
 > Content provided by Katie Hockman's slide notes.
