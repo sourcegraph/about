@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: fallacies-of-distributed-gomputing
-heroImage: //images.ctfassets.net/le3mxztn6yoo/12WDBKdk9quUIYMm2OwumM/12159a4e2e6ac61be8752d93d2e49d60/screenshot-20_2017-07-14.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/12WDBKdk9quUIYMm2OwumM/12159a4e2e6ac61be8752d93d2e49d60/screenshot-20_2017-07-14.png
 published: true
 ---
 

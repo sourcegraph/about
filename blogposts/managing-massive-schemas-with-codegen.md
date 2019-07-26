@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: managing-massive-schemas-with-codegen
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png
 published: true
 ---
 

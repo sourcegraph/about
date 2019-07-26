@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-computer-vision-using-go-and-opencv-3
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -16,7 +16,7 @@ Liveblogger: [@beyang](https://twitter.com/beyang)
 
 ## Summary
 
-An introduction to and tour of computer vision programs written in Go using GoCV––with code snippets and live demos!   
+An introduction to and tour of computer vision programs written in Go using GoCV––with code snippets and live demos!
 
 ----
 
@@ -60,7 +60,7 @@ import (
 
 func main() {
     webcam, _ := gocv.VideoCaptureDevice(0)
-    window := gocv.NewWindow("Hello")	
+    window := gocv.NewWindow("Hello")
     img := gocv.NewMat()
 
     for {

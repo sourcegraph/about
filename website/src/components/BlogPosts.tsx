@@ -48,7 +48,9 @@ export default class BlogPosts extends React.Component<any, any> {
                                             </div>
                                             <div className="blog__posts--post-excerpt">
                                                 <p>
-                                                    {post.node.excerpt}{' '}
+                                                    {post.node.frontmatter.description
+                                                        ? post.node.frontmatter.description
+                                                        : post.node.excerpt}{' '}
                                                     <span className="blog__posts--post-readmore">Read more</span>
                                                 </p>
                                             </div>

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: the-sourcegraph-developer-release-a-better-way-to-discover-and-understand-code
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4vQQGPlrpSKIayi2A8SUCI/2c486b9b5be796b1e203ece2cf0e1096/1_RzHYLrAIuhh8p4xOVnjoSQ.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4vQQGPlrpSKIayi2A8SUCI/2c486b9b5be796b1e203ece2cf0e1096/1_RzHYLrAIuhh8p4xOVnjoSQ.png
 published: true
 ---
 

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: code-intelligence-for-more-languages-and-lsp-language-server-protocol-support
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

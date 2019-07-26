@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.6
-heroImage: /sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -38,15 +38,12 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 ## Native code intelligence with Sourcegraph Bitbucket Server plugin
 
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/350033114?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/350033114" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 The [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) is now available for installation on Bitbucket Server instances to provide native code intelligence automatically. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, go to definition, and custom line decorations when browsing and reviewing code on Bitbucket Server instances.
 

@@ -6,12 +6,12 @@ tags: [
   "graphql"
 ]
 slug: designing-with-graphql
-heroImage: //images.ctfassets.net/le3mxztn6yoo/bUF8CmwxdQsy64QAoiEc6/6bec8d8453d8be520f1ad09fea3f5b88/brian-lovin.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/bUF8CmwxdQsy64QAoiEc6/6bec8d8453d8be520f1ad09fea3f5b88/brian-lovin.jpg
 published: true
 ---
 
 
-Brian Lovin [@brian_lovin](https://twitter.com/brian_lovin) 
+Brian Lovin [@brian_lovin](https://twitter.com/brian_lovin)
 
 Brian is a co-founder at Spectrum, a platform for building communities online. He has a background in product design and previously worked at Facebook and Buffer. Brian currently lives and works in SF with his dog, Taco.
 

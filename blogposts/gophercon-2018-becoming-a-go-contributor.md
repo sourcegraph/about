@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-becoming-a-go-contributor
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -203,4 +203,4 @@ There are many places where it's expected you'll get stuck (bad docs, confusing 
 
 ## Slides
 
-[https://kev.inburke.com/slides/becoming-go-contributor](https://kev.inburke.com/slides/becoming-go-contributor)  
+[https://kev.inburke.com/slides/becoming-go-contributor](https://kev.inburke.com/slides/becoming-go-contributor)

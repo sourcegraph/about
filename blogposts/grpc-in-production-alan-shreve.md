@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: grpc-in-production-alan-shreve
-heroImage: //images.ctfassets.net/le3mxztn6yoo/46Fbuugk4o4oGasG0SW4My/3a033c1566a68bdd38f9b4cdf5045691/Selection_081.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/46Fbuugk4o4oGasG0SW4My/3a033c1566a68bdd38f9b4cdf5045691/Selection_081.png
 published: true
 ---
 

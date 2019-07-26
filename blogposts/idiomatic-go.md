@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: idiomatic-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/MOi3PwYtUWake66iIGIu8/c880e5b8750cf88f94fb954cd596df88/IMG_9383.JPG
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/MOi3PwYtUWake66iIGIu8/c880e5b8750cf88f94fb954cd596df88/IMG_9383.JPG
 published: true
 ---
 
