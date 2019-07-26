@@ -80,4 +80,4 @@ Also on the roadmap
 * Progressive web apps
     * This handles case of using the browser for your boarding pass, having terrible airport wfii and no data, and panicking right before your flight.
 * Persisted queries
-    * Saves bandwith, and therefore money for customers in many countries where data is expensive.
+    * Saves bandwidth, and therefore money for customers in many countries where data is expensive.

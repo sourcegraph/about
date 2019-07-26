@@ -41,7 +41,7 @@ It's now easier to write a GraphQL server in any language (JS, Scala, Elixir, Py
 
 The GraphQL duality:
 * client sends detailed data reqs
-* Server provides felxible, performant capabilities
+* Server provides flexible, performant capabilities
 
 The GraphQL Query is a unit of data fetching
 1. Send all of the the requirements for a unit of your UI in ONE request

@@ -122,7 +122,7 @@ structure](/gophercon-2019/gophercon-2019-uber-code-structure.jpg "Uber's
 divisions of services into transports, controllers, repositories, and
 gateways")
 
-## Swtiching to a monorepo
+## Switching to a monorepo
 
 Uber was initially using many repositories for its services. The boundaries
 created by all the separately-maintained repos made coordination difficult,

@@ -474,7 +474,7 @@ func connect(addr string) error {
             // return fmt.Errorf("failed to connect to %s: %v", err.Net, err)
             return errors.Wrapf(err, "failed to connect to %s", err.Net)
         default:
-            // return fmt.Errorf("unkown error: %v", err)
+            // return fmt.Errorf("unknown error: %v", err)
             return errors.Wrap(err, "unknown error")
         }
     }
