@@ -287,11 +287,11 @@ Boost the preformance of the code - nearly 4 times!
 ![Tracing](/images/gophercon2019-tracing-02.jpg "Tracing")
 
 
-##Conclusion
+## Conclusion
 
 ![Amdahl's law](/images/gophercon2019-amdahls-law.jpg "Amdahl's law")
 
-For this algorythm - more CPUs - better! If we have 1000 cores we can solve each row at the same. If we have  10000000 cores - we can compute every pixel in paralel.
+For this algorythm - more CPUs - better! If we have 1000 cores we can solve each row at the same. If we have  1000000 cores - we can compute every pixel in paralel.
 But we spend 50% of writing the image. But thats a sequantial operation.
 
 The speed is limited by serial part of an application that can not be parallelised. 
