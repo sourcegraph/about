@@ -111,7 +111,17 @@ We have to make our program to run faster.
 First thing we need to do is to profile this program.
 
 ## Techninque 1 - CPU Profiling
-defer profile.Start(profile.CPUProfile, ....)
+
+```golang
+import (
+        "github.com/pkg/profile"
+)
+
+func main() {
+        defer profile.Start(profile.CPUProfile, ....).Stop()
+        // ...
+```
+
 run this program.
 
 ![CPU Profiling](/images/gophercon2019-profiling-01.jpg "CPU Profiling")
