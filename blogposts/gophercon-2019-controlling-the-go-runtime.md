@@ -1,7 +1,7 @@
 ---
 title: "GopherCon 2019 - Controlling the go runtime"
 description: "Sometimes we need to tell the go runtime what to do. This talk explains how to control the runtime, why we should, and describes two new ways to control it better."
-author: $LIVEBLOGGER_NAME for the GopherCon 2019 Liveblog
+author: Sue Spence for the GopherCon 2019 Liveblog
 publishDate: 2019-07-25T00:00-11:55
 tags: [
   gophercon
@@ -13,7 +13,7 @@ published: true
 
 Presenter: Patrick Hawley
 
-Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
+Liveblogger: [Sue Spence](https://twitter.com/virtualsue)
 
 ## Overview
 
@@ -25,6 +25,8 @@ Sometimes we need to tell the go runtime what to do. This talk explains how to c
 It's a library used by Go programs while they are executing. It controls things like:
 - the garbage collector, managing memory
 - the goroutine scheduler 
+
+![Presenter Patrick Hawley](/website/static/gophercon-2019/gophercon-2019-controlling-go-runtime-presenter.jpg
 
 It is a helpful assistant. It is a Go package (https://golang.org/pkg/runtime/). It is not an interpreter (e.g. Python, Ruby) or full runtime environment such as the Java virtual machine. It is useful for profiling and observing what happens during program execution.
 
@@ -52,18 +54,20 @@ env vars: GOMAXPROCS (max executing operating system threads), GOGC (turn off ga
 
 You can get indirect control of the runtime via context
 
-```ctx, cancel := context.WithCancel(ctx)```
+`ctx, cancel := context.WithCancel(ctx)`
 
 The above requests that all goroutines with ctx, stop. This is scheduler control
 
 #### So ... Why Control the Runtime?
 Performance reasons. Testing and benchmarks.
 
-```go test -cpu 1,2,4```
+![Why Control the Runtime?](/website/static/gophercon-2019/gophercon-2019-controlling-go-runtime-slide1.jpg
+
+`go test -cpu 1,2,4`
 
 Jaeger tracing uses runtime control to match container CPU quota changes.
 
-We use Goexit() all the time via ```t.Fatal("some test failed")```
+We use Goexit() all the time via `t.Fatal("some test failed")`
 
 Gosched() yields processor to allow other goroutines to run. This can be put in a tight loop to make sure the CPU isn't hogged.
 
@@ -89,10 +93,13 @@ Proposals:
 
 1) GoSchedNext() - instruct runtime what to run next. Not by goroutine ids, but goroutines of a certain type. Patrick used the analogy of a "color" to describe goroutines of a related type
 
-2) GoAffinity() - requires or suggests that all goroutines of a certain "color" execute on the same CPU. Reasons:
- * avoid CPU L1/L2 cache misses
- * NUMA architecture
- * isolation, keeping code of a certain type separate from other types (e.g. math operations vs http)
+![GoSchedNext Colors](/website/static/gophercon-2019/gophercon-2019-controlling-go-runtime-slide2.jpg
+
+2) GoAffinity() - requires or suggests that all goroutines of a certain "color" execute on the same CPU.  
+Reasons:
+  * avoid CPU L1/L2 cache misses
+  * NUMA architecture
+  * isolation, keeping code of a certain type separate from other types (e.g. math operations vs http)
 
 3) GoCancel() - cancel all goroutines of a particular "color"
 
@@ -100,17 +107,17 @@ Proposals:
 
 #### Or, Better Not Go There??
 
-a) We should never control the Go runtime directly
-b) Controlling the runtime is bad programming
-c) ids for Go routines?? Never! Color is just an alias for ids...
+a) We should never control the Go runtime directly  
+b) Controlling the runtime is bad programming  
+c) ids for Go routines?? Never! Color is just an alias for ids...    
 d) Let's just make the runtime better
 
 #### But
 
-a) Performance and testing are really necessary items that runtime helps with
-b) User space ought to be fair game for us to control. It's not the kernel, which is legitimately off-limits
-Let users have tools, empower them
-c) Use types, not tokens. Also, why not be open to ids?
+a) Performance and testing are really necessary items that runtime helps with  
+b) User space ought to be fair game for us to control. It's not the kernel, which is legitimately off-limits  
+Let users have tools, empower them  
+c) Use types, not tokens. Also, why not be open to ids?  
 d) YES, make the runtime better. But also give programmers more options.
 
 Main takeaway:
