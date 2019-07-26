@@ -106,9 +106,14 @@ But it’s far too strict.
 
 Here’s an example why. 
 
-old: ```type Point struct { X, Y int }```
-new: ```type Point struct { X, Y, Z int }```
-client: ```var p struct { X, Y int } = pkg.Point{}```
+old: 
+```type Point struct { X, Y int }```
+
+new: 
+```type Point struct { X, Y, Z int }```
+
+client: 
+```var p struct { X, Y int } = pkg.Point{}```
 
 You’ll see a lot of these three-box examples in the talk. The first box shows the original code of the package. The second is the new code, the change. And the last is client code—code that’s outside the package, using it. In the client code, we’ll always call the package “pkg”.
 
