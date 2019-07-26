@@ -143,7 +143,7 @@ We fix it - we buffer.
 
 The times are very small now.
 
-The cpu profiling does nont show any usefull anymore - its just a backgrounnnd noise.
+The cpu profiling does nont show any usefull anymore - its just a background noise.
 
 ## Techninque 2 - Memory Profiling
 Lets switch from CPU profiling to memory profiling.
