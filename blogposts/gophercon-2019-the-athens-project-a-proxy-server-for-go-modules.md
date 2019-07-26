@@ -9,6 +9,7 @@ tags: [
 slug: gophercon-2019-the-athens-project-a-proxy-server-for-go-modules
 heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
+---
 
 Presenter: Aaron Schlessinger
 
