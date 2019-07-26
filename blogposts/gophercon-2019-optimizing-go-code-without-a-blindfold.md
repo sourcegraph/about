@@ -166,10 +166,5 @@ $ chromium ssa.html
 
 Find more information in `cmd/compile/README` and `cmd/compile/internal/ssa/README`.
 
-## Demo
-
-In the current `encoding/json` package (beofre Go 1.13), the code performs linear search
-while looking for a struct field. A more efficient approach can use a Go map and find
-the corresponding value field quickly.
-
-For more details, check out https://go-review.googlesource.com/c/go/+/172918.
+## References
+* Slides https://docs.google.com/presentation/d/e/2PACX-1vQ9aFgICdqCz5pjrVJ4zFZrWtTKbfGYFPCOKsScomkLoE1Kzk3DVd9-u4k_XgZekqJ7nl-YTy4lD8Uq
