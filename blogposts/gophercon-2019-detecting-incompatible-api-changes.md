@@ -198,11 +198,7 @@ But the package author can rename “point” — to, say, “vertex” — and 
 
 When we compare the old and new APIs, we want to compare point with vertex—they correspond.
 
-[PAUSE]
-
-So it looks like to find which types correspond, we have to consider possible renamings. 
-
-And that, indeed, is the definition I use for correspondence:
+So it looks like to find which types correspond, we have to consider possible renamings. And that, indeed, is the definition I use for correspondence:
 
 Two type names correspond if they’re the same, or you can rename one to the other without changing the API.
 
@@ -255,6 +251,7 @@ We’ll start with variables, because they’re easy.
 Two variables are compatible if their types correspond. That’s it for variables. We match up package-level variables by name, and their types must correspond. Now let’s move to functions, which are a little more interesting.
 
 **Functions** 
+
 Here’s the rule for functions. It’s almost as simple as variables, except for one extra bit of wiggle room: you can backwards-compatibly change a function into a variable with the same name and type. You can’t go in the other direction, though. You can’t change a variable to a function, because someone may have assigned to the variable, and you can’t assign to a function.
 
 Now, the part about the type signatures corresponding seems clear enough, but there’s something important going on there. The rule precludes something that you really want to do sometimes. And that is to change a function’s signature in a call-compatible way, a way that won’t break any callers.
