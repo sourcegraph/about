@@ -110,7 +110,7 @@ We have to make our program to run faster.
 
 First thing we need to do is to profile this program.
 
-##Techninque 1 - CPU Profiling
+## Techninque 1 - CPU Profiling
 defer profile.Start(profile.CPUProfile, ....)
 run this program.
 
@@ -135,7 +135,7 @@ The times are very small now.
 
 The cpu profiling does nont show any usefull anymore - its just a backgrounnnd noise.
 
-##Techninque 2 - Memory Profiling
+## Techninque 2 - Memory Profiling
 Lets switch from CPU profiling to memory profiling.
 
 time ./words moby.txt
@@ -163,7 +163,7 @@ We are only twice as slow as wc
 
 ---
 
-##Techninque 3 - Tracing
+## Techninque 3 - Tracing
 
 An example that produces a mandelbrot image
 
