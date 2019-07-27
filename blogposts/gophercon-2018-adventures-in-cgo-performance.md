@@ -78,7 +78,7 @@ comment was written.
 ## Recommendations
 
 Batch your CGO calls. You should know this going into it, since it can
-fundementally affect your design. Additionally once you cross the boundary,
+fundamentally affect your design. Additionally once you cross the boundary,
 try to do as much on the other side as you can. So for go => "C" do as much as
 you can in a single "C" call. Similarly for "C" => go do as much as you can in
 a single go call. Even more so since the overhead is much higher.

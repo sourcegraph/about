@@ -71,7 +71,7 @@ which has the following special characters:
 * `-[3]*` Left justify and pad by the value of arg 3
 * `[2]s` Print the string value of arg 2 (e.g. "====")
 
-If we were resizing the progress bar based on the size of ther terminal, we could pass this in as a variable.
+If we were resizing the progress bar based on the size of their terminal, we could pass this in as a variable.
 
 __Demo 2: Unicode__
 

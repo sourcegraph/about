@@ -131,7 +131,7 @@ But why does throughput flatten after 4 CPUs?
 
 The first coffee runs on CPU1, taking 1 millisecond per stage. The second coffee waits 1 millisecond to use the grinder, then can proceed in parallel on CPU2. The third coffee waits again for the grinder and then proceeds on CPU3, and the same for the fourth coffee on CPU4.
 
-What about the fifth coffee? By the time the grinder is free, CPU1 is free again, so it can run there. It can't start sooner beacuse the grinder would be in use. This system has a maximum of 4 CPUs in parallel because of contention on the grinder, which is why the throughput of this system flattens at 1000 lattes per second: 4 CPUs running at 250 lattes per second.
+What about the fifth coffee? By the time the grinder is free, CPU1 is free again, so it can run there. It can't start sooner because the grinder would be in use. This system has a maximum of 4 CPUs in parallel because of contention on the grinder, which is why the throughput of this system flattens at 1000 lattes per second: 4 CPUs running at 250 lattes per second.
 
 Given this structural limit, how can we increase the performance of our system? When the critical resources you have are running at capactiy, the solution is to have more resources. So, having a second set of machines or a second coffee shop means more people could make coffee simultaneously.
 
@@ -211,7 +211,7 @@ When we look at the performance of this pipeline, it looks a lot like the fine-g
 The latency is the time it takes to run each of the 4 stages, so it makes sense that that would remain the same in the locking and pipeline implementations. But the pipeline’s throughput is less because it is not utilizing the three contended machines as efficiently.
 
 The real world analogy:
-Consider what happens when the person using the grinder finishes grinding the beans.  In the locking implementation, the person steps away and waits for the espressso machine, and someone else can use the grinder.
+Consider what happens when the person using the grinder finishes grinding the beans.  In the locking implementation, the person steps away and waits for the espresso machine, and someone else can use the grinder.
 
 But in the pipeline implementation, the person grinding beans has to wait to hand off the grounds to the person making espresso before they can start the next grind. If the second person is busy making espresso, the first person just stands there, holding out the grounds. This is a blocked channel send in our implementation.
 

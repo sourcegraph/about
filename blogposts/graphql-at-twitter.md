@@ -194,7 +194,7 @@ Philosophically, GraphQL and Strato are very similar. Strato has many of the sam
 
 Strato has existed at Twitter much longer than GraphQL, and is used to power the GraphQL API. It integrates tightly with Twitter's Thrift services, and in combination with the GraphQL API, gives them **end-to-end types from database to the client**.  It is similar in spirit to many of the other technologies presented at this conference that stitch together multiple data sources into a single source of truth. This approach is extremely powerful.
 
-For example, The Strato team has made it possible to add data to the Strato Catalog with a simple config file, and made deploys automatic. This allows engineers to have much more power and flexibility by reducing coordination needed between teams. This is an example Strato column that would store the brithdays of Twitter users in a database. It's just a config:
+For example, The Strato team has made it possible to add data to the Strato Catalog with a simple config file, and made deploys automatic. This allows engineers to have much more power and flexibility by reducing coordination needed between teams. This is an example Strato column that would store the birthdays of Twitter users in a database. It's just a config:
 
 <img alt="Ashworth-3" src="//images.contentful.com/le3mxztn6yoo/2bKiqAhmKooYoyg4amKCSU/8ed0a5520b0ad8f5e629916f1513a277/Screen_Shot_2017-11-10_at_12.43.30_PM.png" class="flex center"/>
 
