@@ -23,7 +23,7 @@ There's never been a better time to adopt Go. The language is attracting more ne
 
 The Go Community is growing, we're doing quite well.
 
-![GopherCons](/gophercon-2019/gophercon-2019-1-gophers "GopherCons")
+![GopherCons](/gophercon-2019/gophercon-2019-1-gophers.png "GopherCons")
 
 The GopherCon has grown, my first GopherCon was in 2014.
 
@@ -31,34 +31,34 @@ Now it's 1800 people, it's amazing and it's just a small fraction from all the p
 
 It's said that theres 1 million around the world.
 
-![Go](/gophercon-2019/gophercon-2019-2-go "Go")
+![Go](/gophercon-2019/gophercon-2019-2-go.png "Go")
 
 
-![Google GoBridge](/gophercon-2019/gophercon-2019-3-google_gobridge "Google GoBridge")
+![Google GoBridge](/gophercon-2019/gophercon-2019-3-google_gobridge.png "Google GoBridge")
 
 The Go developer network is a collaboration with group worldwide meetup.
 
-![Map](/gophercon-2019/gophercon-2019-4-map "Map")
+![Map](/gophercon-2019/gophercon-2019-4-map.png "Map")
 
 Since we know not everyone uses meetup, this is not a representation of all the world.
 
-![Membership](/gophercon-2019/gophercon-2019-5-membership "Membership")
+![Membership](/gophercon-2019/gophercon-2019-5-membership.png "Membership")
 
 Month after month we continue to see an increase in memberships, so this is a thriving community.
 
-![Top Wanted](/gophercon-2019/gophercon-2019-6-survey-wanted "Top Wanted")
+![Top Wanted](/gophercon-2019/gophercon-2019-6-survey-wanted.png "Top Wanted")
 
-![Top Paying](/gophercon-2019/gophercon-2019-7-survey-paying "Top Paying")
+![Top Paying](/gophercon-2019/gophercon-2019-7-survey-paying.png "Top Paying")
 
 And Go also gets you paid, we are on fire! So give yourselves a round of applause for that.
 
-![landscape](/gophercon-2019/gophercon-2019-8-landscape)
+![landscape](/gophercon-2019/gophercon-2019-8-landscape.png)
 
 I consider myself lucky to have a front-row seat since the beginning. We have something here, not just Go itself. This room, all over the world. We've got something here, it's about the people, not just the technology.
 
 When people say community some folks say it's technology, some say it's open-source contributions. But at the end it's human interaction, exchanging ideas, talk about cool stuff you're working on, talk about cool stuff that you would like to work on, that's what ties this bond that we have, that's what brings it into focus, almost.
 
-![places](/gophercon-2019/gophercon-2019-9-places)
+![places](/gophercon-2019/gophercon-2019-9-places.png)
 
 Community gives **safety**.
 
@@ -84,11 +84,11 @@ A few months ago I met a developer they come to me, they tell me "I follow you o
 
 It's a paradox, the more you give the more you get. Community doesn't give, it gives back. The more I've given to this comunity, it has given me back. So wax on, wax of, start giving of yourself before you start expecting from others.
 
-![people](/gophercon-2019/gophercon-2019-90-people)
+![people](/gophercon-2019/gophercon-2019-90-people.png)
 
 My experiences has been nothing short of amazing, we've grown together. I hope you care as much as i do care about you. Take a look at your neighbors, do you see what's missing? Or what we could use more of?
 
-![2019](/gophercon-2019/gophercon-2019-91-gophercon2019)
+![2019](/gophercon-2019/gophercon-2019-91-gophercon2019.png)
 
 Yesterday I gave myself a little challenge, I decided to go meet every person who looks like me, so I went throught the entire GopherCon, taking pictures with complete strangers thinking "this has potential, I want to meet every single person that looks like me at the conference".
 
@@ -100,7 +100,7 @@ We can say that we are a welcoming, diverse, inclusive community, or we can be o
 
 To whom much is given, much is expected
 
-![GoBridge](/gophercon-2019/gohpercon-2019-911-gobridge "GoBridge")
+![GoBridge](/gophercon-2019/gohpercon-2019-911-gobridge.png "GoBridge")
 
 How you can step up. A very specific way you can help is organize a GoBridge workshop. You can have an impact in underrepresentend folks' lives in this community.
 
@@ -110,6 +110,6 @@ Nothing would make me happier than if at the end of this talk all the people tha
 
 So, one last thing
 
-![thanks](/gophercon-2019/gophercon-2019-92-thanks "Thanks")
+![thanks](/gophercon-2019/gophercon-2019-92-thanks.png "Thanks")
 
 This community holds a special place in my heart. There's nowhere else I'd rather be. Even if I've never met you, I care about you. Help me make a difference.
