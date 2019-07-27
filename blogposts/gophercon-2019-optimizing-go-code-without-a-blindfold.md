@@ -7,13 +7,17 @@ tags: [
   gophercon
 ]
 slug: gophercon-2019-optimizing-go-code-without-a-blindfold
-heroImage: https://about.sourcegraph.com/gophercon2019.png
+heroImage: /gophercon-2019/optimizing-without-a-blindfold-illustration.jpg
 published: true
 ---
 
 Presenter: [Daniel Martí](https://twitter.com/mvdan_)
 
 Liveblogger: [Colin King](https://twitter.com/maydayitscolink)
+
+![illustration](/gophercon-2019/optimizing-without-a-blindfold-illustration.jpg)
+
+_Illustration by [Sketch Post](https://sketchpost.com/)_
 
 ## Overview
 
