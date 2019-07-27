@@ -262,7 +262,7 @@ All your system needs to do is be able to make HTTP requests to it.
 
 Now we have builds that are reproducible, and we have more confidence that our dependencies won't disappear.
 
-2 down, one to go!! _smile_
+2 down, one to go!!
 
 Let's talk about how we can trust the source code that the go command is fetching for you.
 
@@ -540,6 +540,7 @@ The go command can create node 9 at level 0 by hashing the go.sum lines it was g
 
 Here, in order to calculate the hash at node 4, we need to hash together nodes 8 and 9.
 Then, we can use that newly created hash at node 4 and hash it together with node 5 to create node 2, and so on , until we have the top level 4 hash.
+
 If this level 4 hash that we just created at the top of the tree is consistent with the tree head that we got back from the lookup endpoint, then we've done our inclusion proof, and verified the go.sum lines that we were looking for exist in our checksum database, and we're done!
 
 <p align="center">
@@ -562,15 +563,19 @@ That's really all there is to the inclusion proof. In practice, the last thing w
 
 And the way these inner nodes are stored and served are through something new, called a tile.
 
-No not that kind of tile!
-
-This kind of tile!
-
 Under the hood, the checksum database breaks this tree apart into chunks called tiles. Each tile contains a set of hash nodes that can be used for proofs and accessed by clients.
+
+<p align="center">
+  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-94.png">
+</p>
 
 In this example, we've chosen a tile height of 2, meaning that a new tile is created every two levels up the tree. The actual checksum database tree is much larger than this, so that uses a tile height of 8 in practice.
 
 As an example of how the go command uses tiles, let's again look at our inclusion proof for record 9
+
+<p align="center">
+  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-95.png">
+</p>
 
 We know that one of the nodes we'll need for this proof is node 3 at level 2, like before.
 
@@ -580,15 +585,27 @@ Using tiles has a few great benefits.
 
 Tiles are nice for the checksum database server, since they are very cache-friendly at the frontend.
 
+<p align="center">
+  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-96.png">
+</p>
+
 But it's also nice for the clients, because they only cache the bottom row of each tile, and build any necessary intermediate nodes from that. We've chosen a tile height of 8, so this cuts down on your storage costs. Instead of caching the entire tree, the go command is just caching every 8th level in the tree, and building inner nodes on the fly as needed.
 
 Now that you've seen some of the math, let's get back to how it works within the context of Go.
 
+<p align="center">
+  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-97.png">
+</p>
+
 This tree is made available to the go command through the checksum database spec that you see here. It uses the lookup and tile endpoints to retrieve the data we just talked about.
 
-There is an additional endpoint, /latest, which serves the latest tree head that the checksum database has created. It is just used for auditors if they want to incrementally verify records based on the increasingly sized STHs that are provided.
+There is an additional endpoint, `/latest`, which serves the latest tree head that the checksum database has created. It is just used for auditors if they want to incrementally verify records based on the increasingly sized STHs that are provided.
 
-A signed tree head looks something like this.
+A signed tree head looks something like this:
+
+<p align="center">
+  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-98.png">
+</p>
 
 It tells you the size of the tree for this tree head, and it's hash value.
 In this example, the tree size is 11,131.
@@ -596,6 +613,10 @@ In this example, the tree size is 11,131.
 At the bottom is the signature, which contains the name of the checksum database, sum.golang.org, followed by its unique signature of that tree head. This signature is important, because it allows auditors to easily put the blame on sum.golang.org if it serves something it shouldn't have.
 
 Let's go back to our example with the proxy. The last thing we did was fetch the zip of go.dog/breeds at version 0.3.2.
+
+<p align="center">
+  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-102.png">
+</p>
 
 Before it updates your go.sum and go.mod file, it will make a hash, then check that this is the same hash that the checksum database has.
 
@@ -605,11 +626,15 @@ The checksum db gives back its record number, go.sum lines, and a signed tree he
 
 Based on this record number and the records and tiles already cached and verified on your machine by the go command….
 
-It can now start hitting the /tile endpoint to get the tiles it needs for its proofs.
+It can now start hitting the `/tile` endpoint to get the tiles it needs for its proofs.
 
 Once the go command is done with it's proofs, it can update your module's go.sum file with the new go.sum lines, and we're done!
 
 Now, instead of every person in the world individually trusting their first download of a module, the _first_ version that the checksum database signs is the only one that is trusted. This ensures that the source code for a version of a module will be the same for every person in the world, since there is a single source of checksums to trust that can be verified and audited.
+
+<p align="center">
+  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-103.png">
+</p>
 
 And this all works really well, even with just one checksum database that everyone uses. The community has the means of holding it accountable, and the go command does proofs on-the-fly as well, verifying that the checksum database hasn't been tampered with.
 
@@ -636,31 +661,25 @@ GO111MODULE and GOPROXY have been around since Go1.11.
 
 You can set GO111MODULE to "on" to enable module mode everywhere or leave it at "auto".
 
-You can set GOPROXY to a proxy of your choice to get picked up by the go command when in module mode. Though this has been around since 1.11, the ability to provide a comma-separated list is new for 1.13. This tells the go command to try multiple sources before giving up. If you want to use the Go team's module mirror, you can set it to https://proxy.golang.org.
+You can set GOPROXY to a proxy of your choice to get picked up by the go command when in module mode. Though this has been around since 1.11, the ability to provide a comma-separated list is new for 1.13. This tells the go command to try multiple sources before giving up. If you want to use the Go team's module mirror, you can set it to [https://proxy.golang.org](https://proxy.golang.org).
 
 The nature of the proxy and checksum database is that the source code has to be available on the public internet, so it can be audited and used by everyone. But if you're using private modules, you can disable the proxy and checksum database for the domains that you want to skip, by listing them in the GOPRIVATE environment variable.
 
-I want to speak for a brief moment about the open source project that we used for our transparency log.
+She mentioned the open source project the Go team used for their transparency log.
 
-We used Trillian for an implementation of the merkle tree data structure that she described earlier. We relied on their data store to hold the go.sum lines and corresponding hashes that the go command uses for its proofs.
+They used [Trillian](https://github.com/google/trillian) for an implementation of the merkle tree data structure that she described earlier. They relied on their data store to hold the go.sum lines and corresponding hashes that the go command uses for its proofs.
 
-You can check them out at github.com/google/trillian
+We've talked about [proxy.golang.org](https://proxy.golang.org) and [sum.golang.org](https://sum.golang.org/), but there is one more service that the Go team is providing in conjunction with these, a Module index.
 
-We've talked about proxy.golang.org and sum.golang.org, but there is one more service that the Go team is providing in conjunction with these, a Module index.
+[index.golang.org](https://index.golang.org/) is simple feed of new modules that have been discovered by proxy.golang.org](https://proxy.golang.org). You can see this feed at [index.golang.org/index](https://index.golang.org/index), and optionally provide a since parameter if you only want to view modules newer than a specific timestamp.
 
-Index.golang.org is simple feed of new modules that have been discovered by proxy.golang.org. You can see this feed at index.golang.org/index, and optionally provide a since parameter if you only want to view modules newer than a specific timestamp.
-
-We're really excited about the future of modules, providing a better dependency management experience to developers by creating reproducible builds, ensuring that dependencies won't disappear overnight, and making sure that the source code that you asked for is the source code that you and everyone else in the world gets every single time.
+The Go team is really excited about the future of modules, providing a better dependency management experience to developers by creating reproducible builds, ensuring that dependencies won't disappear overnight, and making sure that the source code that you asked for is the source code that you and everyone else in the world gets every single time.
 
 And she is personally happy, because now she has a set of solutions that can help her build out her module….
 
 ...which will make for happier puppies everywhere. :)
 
-The Go team plans on fine-tuning these features, and we hope you'll try them out and give us feedback when you can! We'd love to hear how the mirror and checksum database are working for you, and we encourage you to file issues on Github as you spot them. The dogs of the world thank you.
-
-...which will make for happier puppies everywhere. :)
-
-The Go team plans on fine-tuning these features, and we hope you'll try them out and give us feedback when you can! We'd love to hear how the mirror and checksum database are working for you, and we encourage you to file issues on Github as you spot them. The dogs of the world thank you.
+The Go team plans on fine-tuning these features, and they hope you'll try them out and give them feedback when you can! They'd love to hear how the mirror and checksum database are working for you, and we encourage you to file issues on Github as you spot them. The dogs of the world thank you.
 
 Katie Hockman, Google, Go Open Source
 
