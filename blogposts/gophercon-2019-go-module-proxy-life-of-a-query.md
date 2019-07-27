@@ -262,8 +262,6 @@ All your system needs to do is be able to make HTTP requests to it.
 
 Now we have builds that are reproducible, and we have more confidence that our dependencies won't disappear.
 
-2 down, one to go!!
-
 Let's talk about how we can trust the source code that the go command is fetching for you.
 
 Without modules or proxies, the go command would fetch source code directly from the origin servers using HTTPS at head.
