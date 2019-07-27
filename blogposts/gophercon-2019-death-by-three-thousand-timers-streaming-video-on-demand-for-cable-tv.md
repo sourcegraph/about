@@ -242,11 +242,11 @@ random sending into chunks, back to back, so they wouldn't have to sleep?
 
 What if they could change this
 
-![Several streams multiplexed on one cpu](/gophercon-2019/death-by-3000-timers-Several streams multiplexed on one cpu.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-Several%20streams%20multiplexed%20on%20one%20cpu.png" alt="Several streams multiplexed on one cpu" style="width: 90%;">
 
 into this?
 
-![what if we could do this?](/gophercon-2019/death-by-3000-timers-What if we could do this.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-What%20if%20we%20could%20do%20this.png" alt="What if we could do this?" style="width: 90%;">
 
 Fewer sleeps, less work stealing, fewer context switching to wake up, and
 (hopefully) less CPU for the same work.
@@ -280,17 +280,17 @@ This is their initial cpu usage graph.  Bottom axis is # of streams, and left
 axis is CPU usage as reported by the os.  Note the "hockey stick" starting
 about a third of the way across the graph.
 
-![Go 1.9 Naive](/gophercon-2019/death-by-3000-timers-09 go-1.9-naive.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-09%20go-1.9-naive.png" alt="Go 1.9 Naive" style="width: 90%;">
 
 This was the same code after switching to Go 1.11.  Before the hockey stick
 the graph is higher (more CPU) and the hockey stick starts sooner.
 
-![Go 1.11 Naive](/gophercon-2019/death-by-3000-timers-10 go-1.11-naive.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-10%20go-1.11-naive.png" alt="Go 1.11 Naive" style="width: 90%;">
 
 Implementing the synchronized wake-up took 15 minutes; it was literally a
 one-line change: add `time.Truncate()` to the wake-up time.
 
-![Go 1.11 Sync/Wake](/gophercon-2019/death-by-3000-timers-11 go-1.11-sync-wake.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-11%20go-1.11-sync-wake.png" alt="Go 1.11 Sync/Wake" style="width: 90%;">
 
 So now there's no hockey stick behavior, and it does a much better job on the
 high end.  Weirdly, on the left, it's worse, which was surprising, and they
@@ -300,7 +300,7 @@ too.  ???  But *shrug* this is the real data.
 So anyway, then they got their multiplexed idea implemented, and they got
 this:
 
-![Go 1.11 Multiplexed](/gophercon-2019/death-by-3000-timers-12 go-1.11-multiplexed.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-12%20go-1.11-multiplexed.png" alt="Go 1.11 Multiplexed" style="width: 90%;">
 
 So now they're better *everywhere*, and they're nice and linear.
 
@@ -371,7 +371,7 @@ So they tried Ian's branch with their tool.  Separate goroutines for every
 stream.  The bad one is Go 1.11, and the bottom line is with Ian's new timers,
 without any special multiplexing on their side.
 
-![New timers](/gophercon-2019/death-by-3000-timers-13 new timers.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-13%20new%20timers.png" alt="New timers" style="width: 90%;">
 
 Has many of the properties of their multiplexed implementation, but if you
 look carefully it starts to bend a little upwards at the end.
@@ -380,7 +380,7 @@ Here's their implementation, with the new timers, both "naive" and
 multiplexed.  So theirs is a couple percentage points better, but it's mostly
 "in the noise".
 
-![New timers multiplexed](/gophercon-2019/death-by-3000-timers-14 new timers multiplexed.png | width = 90%)
+<img src="/gophercon-2019/death-by-3000-timers-14%20new%20timers%20multiplexed.png" alt="New timers multiplexed" style="width: 90%;">
 
 So could they just throw away their multiplexing code when 1.14 comes out?
 Maaaaybe.  But their approach lets them use `ipv4.WriteBatch`, to send lots of
