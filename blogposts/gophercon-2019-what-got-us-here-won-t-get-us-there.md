@@ -52,13 +52,13 @@ Month after month we continue to see an increase in memberships, so this is a th
 
 And Go also gets you paid, we are on fire! So give yourselves a round of applause for that.
 
-![landscape](/gophercon-2019/gophercon-2019-8-landscape.png)
+![landscape](/gophercon-2019/gophercon-2019-8-landscape.jpg)
 
 I consider myself lucky to have a front-row seat since the beginning. We have something here, not just Go itself. This room, all over the world. We've got something here, it's about the people, not just the technology.
 
 When people say community some folks say it's technology, some say it's open-source contributions. But at the end it's human interaction, exchanging ideas, talk about cool stuff you're working on, talk about cool stuff that you would like to work on, that's what ties this bond that we have, that's what brings it into focus, almost.
 
-![places](/gophercon-2019/gophercon-2019-9-places.png)
+![places](/gophercon-2019/gophercon-2019-9-places.jpg)
 
 Community gives **safety**.
 
@@ -84,11 +84,11 @@ A few months ago I met a developer they come to me, they tell me "I follow you o
 
 It's a paradox, the more you give the more you get. Community doesn't give, it gives back. The more I've given to this comunity, it has given me back. So wax on, wax of, start giving of yourself before you start expecting from others.
 
-![people](/gophercon-2019/gophercon-2019-90-people.png)
+![people](/gophercon-2019/gophercon-2019-90-people.jpg)
 
 My experiences has been nothing short of amazing, we've grown together. I hope you care as much as i do care about you. Take a look at your neighbors, do you see what's missing? Or what we could use more of?
 
-![2019](/gophercon-2019/gophercon-2019-91-gophercon2019.png)
+![2019](/gophercon-2019/gophercon-2019-91-gophercon2019.jpg)
 
 Yesterday I gave myself a little challenge, I decided to go meet every person who looks like me, so I went throught the entire GopherCon, taking pictures with complete strangers thinking "this has potential, I want to meet every single person that looks like me at the conference".
 
