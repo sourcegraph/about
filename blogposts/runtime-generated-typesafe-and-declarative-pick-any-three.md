@@ -47,7 +47,7 @@ We brag about language features. Take these examples:
 		my-list))
 ```
 
-"My langauge has generics"
+"My language has generics"
 ```
 case class ListNode(+T)(h: T, t: ListNode[T]) {
 	def head: T = h

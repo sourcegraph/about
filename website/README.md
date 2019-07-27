@@ -48,7 +48,7 @@ Incorrect: \[example\]\(https://about.sourcegraph.com/example).
 
 Blog post images (both hero and inline) belong in the `/website/static/blog/` directory, and the path to the image in your post is `/blog/your-image.png`.
 
-Images should be sized and compressed appropriately to optimize the file size without noticeably degrading the image quality. [ImageOptim](https://imageoptim.com/) is a good (and free) image compresion tool.
+Images should be sized and compressed appropriately to optimize the file size without noticeably degrading the image quality. [ImageOptim](https://imageoptim.com/) is a good (and free) image compression tool.
 
 ### Previewing blog post drafts
 
