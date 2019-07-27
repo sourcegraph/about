@@ -23,7 +23,7 @@ TinyGo takes the Go programming language to the 'final frontier' where we could 
 In this presentation, Ron Evans, creator GoCV, GoBot and "technologist for hire", demonstrated how Go code can be run on embedded systems using TinyGo, a compiler intended for use in microcontrollers, WebAssembly (WASM), and command-line tools. Evans began his presentation by countering the idea that Go, while fast, produces executables too large to run on the smallest computers. While that may be true of the standard Go compiler, TinyGo produces much smaller outputs. For example: 
 
 "Hello World" program compiled using Go 1.12 => 1.1 MB
-</br>
+
 Same program compiled using TinyGo 0.7.0 => **12 KB**
 
 The TinyGo takes source code, creates its SSA (Static Single Assignment) form using Go's SSA package, then transforms the SSA into LLVM intermediate representation (IR). The IR is optimized by LLVM, then emitted as machine code by LLVM to an object file. Read more about the pipeline [here](https://tinygo.org/compiler-internals/pipeline/).
