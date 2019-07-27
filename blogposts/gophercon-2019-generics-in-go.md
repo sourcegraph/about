@@ -114,7 +114,7 @@ features by permitting their free combination. We want to do the same with gener
   - Any errors in using a generic package should be reported in a way that is easy to understand and to fix.
   - easy to debug calls into generic code.
 
-- **Writer and user can work independenty**
+- **Writer and user can work independently**
 
   - Shouldn't worry about the other is doing, anymore than the caller of regular functions
   - Sounds obvious, but it isn't true of other generics implementations.
