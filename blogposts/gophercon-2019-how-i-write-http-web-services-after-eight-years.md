@@ -241,4 +241,57 @@ func (s *server) respond(w http.ResponseWriter, r *http.Request, data interface{
 
 A huge advantage of this abstraction is that with regards to the http service response, whenever a change needs to occur, it occurs at only one single point i.e giving you the ability to have more flexibility with less repetition
 
+### Decoding helper
+
+```go
+func (s *server) decode(w http.ResponseWriter, r *http.Request, v interface{}) error {
+  return json.NewDecoder(r.Body).Decode(v)
+}
+```
+
+This enables you to abstract the decoding functionality. This gives you the flexibility to also make changes in one place that affects your entire http service.
+
+### Future proof helpers
+
+### Request and response data types
+
+```go
+func (s *server) handleGreet() http.HandlerFunc {
+  type request struct {
+    Name string
+  }
+  type response struct {
+    Greeting string `json:"greeting"`
+  }
+  return func(w http.ResponseWriter, r *http.Request) {
+    ...
+  }
+}
+```
+
+If an endpoint has its own request and response types, usually they’re only useful for that particular handler. If that’s the case, you can define them inside the function. This declutters your package space and allows you to name these kinds of types the same, instead of having to think up handler-specific versions.
+
+### Lazy setup with sync.Once
+
+```go
+func (s *server) handleTemplate(files string...) http.HandlerFunc {
+  var (
+    init    sync.Once
+    tpl     *template.Template
+    tplerr  error
+  )
+  return func(w http.ResponseWriter, r *http.Request) {
+    init.Do(func(){
+      tpl, tplerr = template.ParseFiles(files...)
+    })
+    if tplerr != nil {
+      http.Error(w, tplerr.Error(), http.StatusInternalServerError)
+      return
+    }
+    // use tpl
+  }
+}
+```
+
+## Testing
 
