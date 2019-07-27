@@ -23,6 +23,10 @@ The Go team has built a module mirror and checksum database, which adds reliabil
 
 ## Introduction
 
+<p align="center">
+  <img width="800" height="500" src="/gophercon-2019/go-module-proxy-life-of-a-query-katie.jpg">
+</p>
+
 Katie Hockman, a software engineer at Google working on the Go Open Source team in NYC, is part of the group of engineers building the Go module mirror and checksum database.
 
 Katie's talk is about some new things that are happening around package management and authentication in Go. She wants to help you understand how these things work at a more tangible level.
