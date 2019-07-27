@@ -31,7 +31,7 @@ TinyGo currently lacks support for the full Go language and Go standard library.
 
 Evans demonstrated that despite some limitations, thanks to TinyGo, the Go language can still be run in embedded systems. Shout-out to Evans' son Salvador, who assisted with his dad's demonstrations.
 
-DEMO 1: Digispark 
+### DEMO 1: Digispark   
 The Digispark is a microcontroller smaller even than an Arduino. It has an 8-bit processor and 8 KB of RAM. Evans flashed the Digispark with this program and then plugged the device into a battery pack get an LED to flash. 
 
 ```package main
@@ -52,16 +52,16 @@ func main() {
 }
 ```
 
-DEMO 2: Circuit Playground Express
+### DEMO 2: Circuit Playground Express  
 For this demo, Evans strapped an Arduino Circuit Playground Express to a Gopherbot, a programmable stuffed animal with an antenna tipped by an LED. The program written for this demo successfully detected if a button had been pressed and then lit up the LED if it had.  
 
-DEMO 3: Flight controller 
+### DEMO 3: Flight controller  
 This demonstration used an Arduino Nano 33, an analog joystick, a small OLED display, and buttons. Using some standard Go packages but also `tinydraw` and `tinyfront` Evans created a program that displays the X and Y coordinates that described the joystick's position. 
 
-DEMO 4: Flight controller in action 
+### DEMO 4: Flight controller in action  
 In this demo, Evans used the flight controller from Demo 3 to fly a Tello Movidius X drone around the front of the room. The drone used GoCV to run facial recognition software that identified members of the audience as "humans". (Salvador lamented that this was not a weaponized attack drone.)
 
-DEMO 5: TinyGo Playground and HiFive board
+### DEMO 5: TinyGo Playground and HiFive board  
 The [TinyGo Playground](https://play.tinygo.org) allows you to compile Go code online using TinyGo and uses a board similator, so that users can do things like light up an "LED" on the screen. After showing a small program in the playground, Evans flashed a HiFive board with it, allowing another LED to blink.
 
 TinyGo offers exciting possibilities to run Go in the "smallest" places. Maker-minded Gophers are invited to explore more on Saturday, which is **Community Day** at Gophercon. Activities feature a hardware hack session where attendees can experiment with TinyGo and even receive one of **300 Arduino Nano 33 IoT boards**. Much thanks to Evans for demonstrating how to expand our Go horizons by shrinking our code. 
