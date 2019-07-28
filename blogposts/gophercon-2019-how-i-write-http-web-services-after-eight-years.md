@@ -295,6 +295,10 @@ Sync one gives you the ability to run the code when the given handler is first c
 
 ## Testing
 
+Testing is a great tool for maintainability and this is something needed in http services regardless of the language they are written in. You definitely need testing.
+
+The `httptest` package should be your best friend and your default go to package for testing http services as it is insanely useful. You can create HTTP requests with it, however, unlike the HTTP.NewRequest function that can return an error, the `httptest` doesn't, hence making writing tests easier. The ability to simulate http request coming in is super useful
+
 
 ## Summary
 
