@@ -21,12 +21,6 @@ A look at how Mat Ryer builds web services after doing so for the past eight yea
 
 ---
 
-## Summary
-
-This talk by Matt Ryer is based on a blog post he authored. The blogpost which can be found [here]( https://medium.com/statuscode/37c208122831) went viral. It is quite popular in the go community and definitely worth a read. The post was shared on reddit and resulted in a lot of questions, feedback as well as suggestions. This talk is a culmination of what he has learnt since that time. It is focused on the philosophy behind his thinking for his prefered approach as opposed to a hardline on some specific ruleset. 
-
-He emphasizes that tech leads, engineering managers, CTO's, etc. should strive to create a buffer where engineers are allowed to trynew things within a reasonable scope. This talk isn't one to be followed blindly as different teams might have different needs and usecases/edgecases.
-
 ## About Mat Ryer
 
 Mat is an early go adopter. He started using go even before it hit it's first major version (v1). He currently works at Machine Box and Veritone. He is also and ardent believer in open source and can be found around the BitBar, Testify, Gopherize.me open source projects. He has been building https services in Go for a long time and has learnt a lot of things as well as changes a lot of things along the way. You can find him on twitter at @matryer
@@ -239,7 +233,7 @@ func (s *server) respond(w http.ResponseWriter, r *http.Request, data interface{
 }
 ```
 
-A huge advantage of this abstraction is that with regards to the http service response, whenever a change needs to occur, it occurs at only one single point i.e giving you the ability to have more flexibility with less repetition
+A huge advantage of this abstraction is that with regards to the http service response, whenever a change needs to occur, it occurs at only one single point i.e giving you the ability to have more flexibility with less repetition. Respond helper usually starts very small and simple
 
 ### Decoding helper
 
@@ -249,9 +243,11 @@ func (s *server) decode(w http.ResponseWriter, r *http.Request, v interface{}) e
 }
 ```
 
-This enables you to abstract the decoding functionality. This gives you the flexibility to also make changes in one place that affects your entire http service.
+Just like the respond helper, this enables you to abstract the decoding functionality. This gives you the flexibility to also make changes in one place that affects your entire http service.
 
 ### Future proof helpers
+
+You can future proof any helper you write with a simple rule of always taking both the response writer and the request. Even though you do not need them at the beginning, it is usually all you really need to deal with http in go
 
 ### Request and response data types
 
@@ -270,6 +266,8 @@ func (s *server) handleGreet() http.HandlerFunc {
 ```
 
 If an endpoint has its own request and response types, usually they’re only useful for that particular handler. If that’s the case, you can define them inside the function. This declutters your package space and allows you to name these kinds of types the same, instead of having to think up handler-specific versions.
+
+Although it is very common to put the request and response type in the package space, putting them inside a little closure environment as shown in the code snippet above helps you in decluttering.
 
 ### Lazy setup with sync.Once
 
@@ -293,5 +291,14 @@ func (s *server) handleTemplate(files string...) http.HandlerFunc {
 }
 ```
 
+Sync one gives you the ability to run the code when the given handler is first called as opposed to when the program first starts up. Expensive setup slows down the service start time hence running this only when it is called the first time greatly improves that.
+
 ## Testing
+
+
+## Summary
+
+This talk by Matt Ryer is based on a blog post he authored. The blogpost which can be found [here]( https://medium.com/statuscode/37c208122831) went viral. It is quite popular in the go community and definitely worth a read. The post was shared on reddit and resulted in a lot of questions, feedback as well as suggestions. This talk is a culmination of what he has learnt since that time. It is focused on the philosophy behind his thinking for his prefered approach as opposed to a hardline on some specific ruleset. 
+
+He emphasizes that tech leads, engineering managers, CTO's, etc. should strive to create a buffer where engineers are allowed to trynew things within a reasonable scope. This talk isn't one to be followed blindly as different teams might have different needs and usecases/edgecases.
 
