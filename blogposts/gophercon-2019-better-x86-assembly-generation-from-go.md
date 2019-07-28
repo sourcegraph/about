@@ -37,7 +37,7 @@ This talk was technically dense, and a lot of detail was pointed out in the code
 - The avo library
 - Examples
   - Dot Product
-  - SHA-1 256
+  - SHA-1
 
 ## Assembly Language
 
@@ -268,7 +268,7 @@ Additionally it autogenerates stub files so we can call our assembly functions f
 
 Michael then goes through the library. In particular, the dot product example, which using avo to generate assembly allows you to take advantage of special hardware instructures such as "FMA" (Fused-Multiply-Add) instructions like `VFMADD231PS` which allows you to perform 8 single-precision FMAs.
 
-In the end, the dot product example was 116 avo lines which translated to about 1500 assembly lines, and showed how using a library like avo can make your assembly easier to write, read, and maintain.
+In the end, the SHA-1 example was 116 avo lines which translated to about 1500 assembly lines, and showed how using a library like avo can make your assembly easier to write, read, and maintain.
 
 Michael then finishes with some goals and directions avo could go in the future:
 
