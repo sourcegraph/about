@@ -1,6 +1,5 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import BlogHeadLinks from '../components/BlogHeadLinks'
 import BlogPosts from '../components/BlogPosts'
 import Layout from '../components/Layout'
@@ -14,15 +13,19 @@ export default class BlogList extends React.Component<any, any> {
         const markdownBlogPosts = this.props.data.allMarkdownRemark.edges.filter(
             (post: any) => post.node.frontmatter.published === true
         )
+        const metaProps = {
+            title: 'Sourcegraph blog',
+            description: 'Plain text - the official Sourcegraph blog.',
+        }
 
         return (
-            <Layout location={this.props.location}>
+            <Layout
+                location={this.props.location}
+                meta={{
+                    title: metaProps.title,
+                    description: metaProps.description
+            }}>
                 <div className="blog bg-white text-dark">
-                    <Helmet>
-                        <title>Sourcegraph blog</title>
-                        <meta name="twitter:title" content="Sourcegraph blog" />
-                        <meta property="og:title" content="Sourcegraph blog" />
-                    </Helmet>
                     <div className="blog blog__head">
                         <h1>Sourcegraph blog</h1>
                         <BlogHeadLinks />
@@ -44,13 +47,13 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
+                        description
                         heroImage
                         author
                         tags
                         publishDate(formatString: "MMMM D, YYYY")
                         slug
                         published
-                        description
                     }
                     html
                     excerpt(pruneLength: 300)

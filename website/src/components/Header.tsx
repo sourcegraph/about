@@ -5,6 +5,7 @@ import { ProductPopoverButton } from './ProductPopover'
 
 interface HeaderProps {
     isHome?: boolean
+    isBlog?: boolean
     isProductPage?: boolean
     minimal?: boolean
 }
@@ -28,11 +29,11 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                {this.props.isHome && (
+                {(this.props.isHome || this.props.isBlog) && (
                     <div className="gophercon">
                         <Link to="/go">
                             <span className="go-gopher" />
-                            Checkout the official <u>GopherCon Liveblog</u> proudly
+                            Check out the official <u>GopherCon Liveblog</u> proudly
                             hosted by Sourcegraph.
                         </Link>
                     </div>
