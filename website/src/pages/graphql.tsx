@@ -23,8 +23,7 @@ export default class GraphQLSummitList extends React.Component<any, any> {
                     </Helmet>
                     <div>
                         <div className="blog blog__head">
-                            <h1>Plain Text</h1>
-                            <BlogHeadLinks />
+                            <h1>GraphQL Summit 2017 liveblog</h1>
                         </div>
                         <BlogPosts blogType="graphql" posts={graphqlPosts} />
                     </div>

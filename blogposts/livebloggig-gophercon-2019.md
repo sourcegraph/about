@@ -11,12 +11,17 @@ heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 
-<p class="text-center"><img alt="GopherCon 2019 Banner" src="https://res.cloudinary.com/bizzaboprod/image/upload/w_740,c_fit,fl_any_format,q_auto:best/mjkpm9uwwnknzs4u7b6s.png" class="h5"></p>
+<p class="text-center">
+  <a href="/go" title="Go to the GopherCon 2019 liveblog">
+    <img alt="GopherCon 2019 Banner" src="/gophercon-2019/gophercon-2019-banner.png" class="h5" />
+  </a>
+</p>
 
 ---
 
-<p class="text-center"><strong>Liveblogger sign up - <a href="http://bit.ly/gophercon-liveblog-signup-2019">http://bit.ly/gophercon-liveblog-signup-2019</a></strong></p>
-<p class="text-center"><strong>Liveblogger assignments - <a href="http://bit.ly/gophercon-2019-liveblog-assignments">http://bit.ly/gophercon-2019-liveblog-assignments</a></strong></p>
+<p class="text-center">
+  <strong>Go to the liveblog - <a href="https://about.sourcegraph.com/go/">https://about.sourcegraph.com/go/</a></strong>
+</p>
 
 ---
 

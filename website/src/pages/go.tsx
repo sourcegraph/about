@@ -29,18 +29,18 @@ export default class GoList extends React.Component<any, any> {
             <Layout location={this.props.location}>
                 <div className="gray-9 bg-white text-dark">
                     <Helmet>
-                        <title>Go conference liveblogs by Sourcegraph</title>
-                        <meta name="twitter:title" content="Go conference liveblogs by Sourcegraph" />
-                        <meta property="og:title" content="Go conference liveblogs by Sourcegraph" />
+                        <title>GopherCon and dotGo liveblogs by Sourcegraph</title>
+                        <meta name="twitter:title" content="GopherCon and dotGo liveblogs by Sourcegraph" />
+                        <meta property="og:title" content="GopherCon and dotGo liveblogs by Sourcegraph" />
                         <meta
                             property="og:image"
-                            content="https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg?w=400"
+                            content="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png"
                         />
                     </Helmet>
 
                     <div>
                         <div className="blog blog__head">
-                            <h1 class="pb-4">GopherCon liveblog</h1>
+                            <h1 class="pb-4 sr-only">GopherCon 2019 liveblog</h1>
                             <div className="container subscription-grid">
                                 <div className="grid-item-1 flex-0 rounded rounded-lg py-4 px-6 bg-white h-100">
                                     <h4>Subscribe to the GopherCon 2019 Liveblog</h4>

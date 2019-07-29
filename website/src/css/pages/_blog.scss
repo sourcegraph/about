@@ -4,13 +4,12 @@
     &__head {
         flex-direction: column;
         text-align: center;
-        padding: 4rem 0.5rem;
-        background: $light-11;
+        padding: 1rem 0.5rem;
     }
 
     &__posts {
         &--container {
-            padding: 4rem;
+            padding: 2.5rem 0 2.5rem 0;
             border-bottom: 1px solid $light-11;
             &:hover {
                 background-color: $light-11;
@@ -22,7 +21,6 @@
             color: $dark-7;
             display: grid;
             grid-template-columns: auto minmax(min-content, 350px) minmax(min-content, 600px) auto;
-            grid-column-gap: 3rem;
 
             width: 100%;
 

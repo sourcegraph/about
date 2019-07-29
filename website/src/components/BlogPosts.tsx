@@ -42,7 +42,7 @@ export default class BlogPosts extends React.Component<any, any> {
                                 <div className="blog__posts--container" role="article">
                                     <div className="blog__posts--post">
                                         <div className="blog__posts--post-text">
-                                            <h1 className="blog__posts--post-title">{post.node.frontmatter.title}</h1>
+                                            <h2 className="blog__posts--post-title">{post.node.frontmatter.title}</h2>
                                             <div className="blog__posts--post-byline">
                                                 by {post.node.frontmatter.author} on {post.node.frontmatter.publishDate}
                                             </div>

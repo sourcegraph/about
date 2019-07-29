@@ -19,12 +19,12 @@ export default class BlogList extends React.Component<any, any> {
             <Layout location={this.props.location}>
                 <div className="blog bg-white text-dark">
                     <Helmet>
-                        <title>Plain Text - the official Sourcegraph blog</title>
-                        <meta name="twitter:title" content="Plain Text - the official Sourcegraph blog" />
-                        <meta property="og:title" content="Plain Text - the official Sourcegraph blog" />
+                        <title>Sourcegraph blog</title>
+                        <meta name="twitter:title" content="Sourcegraph blog" />
+                        <meta property="og:title" content="Sourcegraph blog" />
                     </Helmet>
                     <div className="blog blog__head">
-                        <h1>Plain Text</h1>
+                        <h1>Sourcegraph blog</h1>
                         <BlogHeadLinks />
                     </div>
                     <BlogPosts blogType="blog" posts={markdownBlogPosts} />

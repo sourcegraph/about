@@ -6,15 +6,15 @@ export default class BlogHeadLinks extends React.Component<any, any> {
         return (
             <p>
                 <Link to="/blog" activeClassName="blog__link-inactive">
-                    <span> The official Sourcegraph blog</span>
+                    <span>Sourcegraph liveblogs</span>
                 </Link>{' '}
                 •
                 <Link to="/go" activeClassName="blog__link-inactive">
-                    <span> Go conference liveblogs</span>
+                    <span> GopherCon and dotGo</span>
                 </Link>{' '}
                 •
                 <Link to="/graphql" activeClassName="blog__link-inactive">
-                    <span> GraphQL Summit 2017 liveblog</span>
+                    <span> GraphQL Summit 2017</span>
                 </Link>
             </p>
         )
