@@ -2,13 +2,13 @@
 title: "GopherCon 2019 - Death by three thousand timers: Streaming video-on-demand for Cable TV"
 description: "Can Go handle soft real-time applications? Learn about the challenges my team overcame to deliver video-on-demand MPEG streams to millions of cable TV customers using pure Go. Along the way we'll dig deeper into how Go manages timers and goroutine scheduling."
 author: Larry Clapp for the GopherCon 2019 Liveblog
-publishDate: 2019-07-26T00:00-11:55
+publishDate: 2019-07-29T15:14-11:55
 tags: [
   gophercon
 ]
 slug: gophercon-2019-death-by-three-thousand-timers-streaming-video-on-demand-for-cable-tv
 heroImage: https://about.sourcegraph.com/gophercon2019.png
-published: false
+published: true
 ---
 
 Presenter: Chris Hines
