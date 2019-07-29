@@ -687,6 +687,6 @@ Katie Hockman, Google, Go Open Source
 
 [github.com/katiehockman](https://github.com/katiehockman)
 
-[@katie_hockman](https://twitter.com/katiehockman)
+[@katie_hockman](https://twitter.com/katie_hockman)
 
 > Content provided by Katie Hockman's slide notes.
