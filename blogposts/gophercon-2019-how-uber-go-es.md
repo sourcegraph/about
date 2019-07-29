@@ -154,7 +154,7 @@ before the monorepo")
 Through the changes described above, Uber greatly increased the consistency
 of the developer experience for creating Go services, and this has directly
 affected the efficiency of creating and maintaining Go services, allowing
-them to scale to over a thousand Go services containing over two million
+them to scale to over a thousand Go services containing over 20 million
 lines of Go code!
 
 ![Consistency is the key to
