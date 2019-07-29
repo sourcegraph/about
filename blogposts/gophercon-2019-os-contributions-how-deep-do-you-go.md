@@ -80,7 +80,7 @@ Long and meandering path to getting the solution merged. Problem, solution, deve
 * Time zone issue from being in Europe, so slower progress.
 * Go freezing deadline was coming up.
 * Go has extremely high standards.
-* Didn’t turn out as expected.
+* Didn't’t turn out as expected.
 
 ## Rewards
 

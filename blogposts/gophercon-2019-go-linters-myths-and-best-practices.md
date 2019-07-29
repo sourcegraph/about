@@ -8,12 +8,10 @@ tags: [
 ]
 slug: gophercon-2019-go-linters-myths-and-best-practices
 heroImage: https://about.sourcegraph.com/gophercon2019.png
-published: false
+published: true
 ---
 
-Presenter: Denis Isaev
-
-Liveblogger: [John Reese](https://reese.dev)
+Presenter: [Denis Isaev](https://twitter.com/jirfag) | Liveblogger: [John Reese](https://reese.dev)
 
 ## Overview
 

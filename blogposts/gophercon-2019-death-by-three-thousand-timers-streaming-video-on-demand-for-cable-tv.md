@@ -8,10 +8,10 @@ tags: [
 ]
 slug: gophercon-2019-death-by-three-thousand-timers-streaming-video-on-demand-for-cable-tv
 heroImage: https://about.sourcegraph.com/gophercon2019.png
-published: false
+published: true
 ---
 
-Presenter: Chris Hines
+Presenter: [Chris Hines](https://twitter.com/chris_csguy)
 
 Liveblogger: [Larry Clapp, @readcodesing](https://twitter.com/readcodesing)
 
@@ -69,7 +69,7 @@ So the pump takes the 1M chunks of data and chops it up and sends it out.
 
 #### Hardware
 * Bare metal
-* 56 CPUs (28 hyperthreaded cores)
+* 56 CPU's (28 hyperthreaded cores)
 
 #### Target Capacity
 * Max video output / server: 16 Gbps
@@ -191,7 +191,7 @@ happening?
 ### Scheduler Observations
 
 * It's good at quickly finding a new goroutine to run
-* It's good at keeping available CPUs busy
+* It's good at keeping available CPU's busy
 * It burns CPU proportional to GOMAXPROCS in work stealing when run queues are empty
 * Waking from a timer takes multiple context switches on OS threads, which
   isn't cheap.

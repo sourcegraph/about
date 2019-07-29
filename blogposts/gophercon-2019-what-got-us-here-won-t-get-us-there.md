@@ -29,7 +29,7 @@ The GopherCon has grown, my first GopherCon was in 2014.
 
 Now it's 1800 people, it's amazing and it's just a small fraction from all the people that use Go from around the world.
 
-It's said that theres 1 million around the world.
+It's said that there's 1 million around the world.
 
 ![Go](/gophercon-2019/gophercon-2019-2-go.png "Go")
 
