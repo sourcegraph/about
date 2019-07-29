@@ -30,7 +30,7 @@ grpc and protobuf are becoming industry standard technologies for building servi
 but interacting with them ad-hoc for human consumption like you do with `curl` for
 http services is not as easy.
 
-grpcurl is a tool and associated libraries opensourced by fullstory to solve this problem.
+grpcurl is a tool and associated libraries opensourced by FullStory to solve this problem.
 And we'll talk about the pieces and mechanisms in protobuf and grpc that make it possible
 to create these libraries and the tool.
 
@@ -40,28 +40,28 @@ to create these libraries and the tool.
   - specification for rpcs
   - canonical errors, cancellation, semantics,
   - code generation tools for each language that generate stubs
-  - runtime libraries for each language implement the connection, transport protocol, serialization, plugins for load balancing/service discoveryetc
+  - runtime libraries for each language implement the connection, transport protocol, serialization, plugins for load balancing/service discovery etc
 
 #### Protocol Buffers
   - used with grpc
   - IDL (Interface definition language) that we can use to  declare the shape of data structures sent across the wire
-  - can be serialized to binary, human readable text, json or other formats
-  - `protoc` -> the compiler that injests protobuf defintions and generates code for the message structures in different languages
+  - can be serialized to binary, human readable text, JSON or other formats
+  - `protoc` -> the compiler that ingests protobuf definitions and generates code for the message structures in different languages
 
 ## Backstory and Motivation
 
-  - at fullstory we have an App Engine app, task queues, cloud datastore
+  - at FullStory we have an App Engine app, task queues, cloud data store
   - added search and other services
   - but the only way to talk to other services is by communicating out of app engine via `urlfetch` service, basically an http/1.1 proxy
   - developers wanted to use rpc to talk to these new services because RPC frameworks have an easier to use programming model and benefit from tooling:
     developers can ignore all the transport and serialization logic because the generated code and runtime libraries do the heavy lifting
-  - fullstory built a bespoke rpc system on top of http/1.1 to work through urlfetch/appengine. this solution predates grpc
+  - FullStory built a bespoke rpc system on top of http/1.1 to work through urlfetch/appengine. this solution predates grpc
   - since then, we've migrated to k8s/grpc for as much as we can
   - now all new services run on k8s and use grpc but there's a small bridge piece to allow the app engine service to communicate to them via urlfetch
 
 #### Motivation for grpcurl
 
-  - at fullstory, there's an internal administration service called `commander`. It's a grpc service and there was a CLI tool that would just parse command line flags
+  - at FullStory, there's an internal administration service called `commander`. It's a grpc service and there was a CLI tool that would just parse command line flags
     and then make grpc calls to the server.
   - that was great except that whenever there is a new grpc method added to the commander service then a developer would have to write a bunch of boilerplate code
     to expose that method in the CLI by creating flags and parsing them into a protobuf structure and displaying the result.
@@ -74,16 +74,16 @@ to create these libraries and the tool.
 ### Proto Reflection
   - proto 'descriptors': language model for protocol buffer definitions
   - they're protobufs as well and this is actually what you use to write protoc plugins! (protobuf is described in protobuf)
-  - normally the way we interact with protobuf messages is via a serialized go structure, but we want to work with *dynamic* messages, ones that we don't have a struct for. dynamica messages will need to support any kind of message
+  - normally the way we interact with protobuf messages is via a serialized go structure, but we want to work with *dynamic* messages, ones that we don't have a struct for. dynamic messages will need to support any kind of message
   - Java and C++ have extensive support for protobuf descriptors and dynamic messages, but not really in Go
-  - go protoc generates descriptors in the generated code, but support is limited, not really intended for public usae
-  - go protoc also has a global registry for types, enums, extensions that we'll need later
+  - go protoc generates descriptors in the generated code, but support is limited, not really intended for public usage
+  - go protoc also has a global registry for types, Enums, extensions that we'll need later
   - there's currently work just starting on a v2 of the proto runtime for Go
   - I started to hack on these problems over a vacation: both descriptors and dynamic messages
 
 #### Descriptors
   - take the limited descriptor that protoc generates for us and turn it into a much richer descriptor with better type/field information
-  - gives us access to rich messages, enums, extensions
+  - gives us access to rich messages, Enums, extensions
   - created packages:
     - one to "upgrade" the limited descriptor into a rich one
     - protoparse - allows us to parse proto source code
@@ -92,19 +92,19 @@ to create these libraries and the tool.
 #### Dynamic Messages
   - created a package for dynamic messages
   - implements `proto.Message` so it can be used in place of the structures generated by typical protoc go
-  - but has a broad api for querying/mutating field values and doing serializing/deserializing
+  - but has a broad API for querying/mutating field values and doing serializing/deserializing
   - construct with a message descriptor
 
 ### GRPC reflection
-  - okay we have dynaimc protos but how do we do it with rpc?
-  - whole purpose of this is so that a client can ask a server for all of its methods and type siguatre so we can autogenerate CLI calls to them
+  - okay we have dynamic protos but how do we do it with rpc?
+  - whole purpose of this is so that a client can ask a server for all of its methods and type signature so we can auto-generate CLI calls to them
   - service reflection!
 
 #### Reflection
   - there's a grpc reflection service, you can import it from grpc-go. (it's a streaming call, a little clunky to use)
   - you can enable it on any existing grpc service via an option when constructing your grpc server object
   - but what if we don't/can't use server reflection? still OK, we can do 'reflection' by passing in the source proto files of the server
-  - created a grpcreflection package
+  - created a gRPC reflection package
     - a client for the grpc reflection service
     - wraps around the native grpc reflection client implementation that makes it easier to use, caching, etc
 
@@ -115,7 +115,7 @@ to create these libraries and the tool.
 
 ## grpcurl
   - now we can tie it all together
-  - command line tool that allows you to call methods on remote grpc services for humans: simple command line flags, json rpresentation
+  - command line tool that allows you to call methods on remote grpc services for humans: simple command line flags, JSON representation
   - there's a command line tool like this in the grpc repo but doesn't support streaming
   - not just a command line tool, but also a package that simplifies construction of other command line clients
   - grpcurl allows you to list services, find symbols, create descriptors from reflection or from sources
@@ -125,9 +125,9 @@ to create these libraries and the tool.
   - `grpcurl list <Service>`: show all methods on the service
   - `grpcurl <Service>.<Method>`: invoke a method
   - use `-H` to supply header metadata (like curl)
-  - `grpcurl describe <fully qualified service method>`: describes input/output types and rpc mode (unary vs steraming) of the method
-  - `grpcurl describe <fully qualified Protobuf Message>`: prints out protobuf descriptor in json format
-  - still clunky to call methods because we have to manually type out json object on the command line. how do we make it easier to construct the payload to send as arguments?  method template command line option on `describe` causes the command to dump an example payload we can modify
+  - `grpcurl describe <fully qualified service method>`: describes input/output types and rpc mode (unary vs streaming) of the method
+  - `grpcurl describe <fully qualified Protobuf Message>`: prints out protobuf descriptor in JSON format
+  - still clunky to call methods because we have to manually type out JSON object on the command line. how do we make it easier to construct the payload to send as arguments?  method template command line option on `describe` causes the command to dump an example payload we can modify
   - like curl, we specify `-d` to send input arguments OR `-d @` to provide via stdin
   - grpcurl supports streaming, including bidirectional!
   - streaming with `-d @` so that you can write via stdin; example with streaming chat

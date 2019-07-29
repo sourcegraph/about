@@ -45,7 +45,7 @@ Using GraphQL built-in features such as arguments, fragments, and directives, yo
 
 # A better picture of our data: where we are today
 
-## Javascript Client: Apollo Client
+## JavaScript Client: Apollo Client
 Apollo Client is the most popular GraphQL client for the web and React Native applications. It's designed for ease of use, but is powerful enough for production applications.
 
 ##  Native GraphQL: Apollo iOS/Android

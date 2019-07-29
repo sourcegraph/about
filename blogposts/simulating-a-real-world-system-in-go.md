@@ -54,9 +54,9 @@ func idealBrew() latte {
 
 ![Ajmani-3](//images.contentful.com/le3mxztn6yoo/3SR8J0Z4Fa0uek8ck26ewc/e6f229546477797931fa3f64cc57a157/Screen_Shot_2017-11-05_at_5.40.26_PM.png)
 
-These two charts show the performance of the coffee shop as the number of workers increases from 1 to 6. In the ideal implementation, we would be able to prepare as many lattes in parallel as the CPUs can handle, so a single CPU could prepare 1 latte in 4 milliseconds.
+These two charts show the performance of the coffee shop as the number of workers increases from 1 to 6. In the ideal implementation, we would be able to prepare as many lattes in parallel as the CPU's can handle, so a single CPU could prepare 1 latte in 4 milliseconds.
 
-Our throughput is therefore 250 lattes per second, and is the starting point on the chart on the left. Throughput scales linearly, so with 6 CPUs we'd get 1500 lattes per second. On the throughput chart, higher values are better.
+Our throughput is therefore 250 lattes per second, and is the starting point on the chart on the left. Throughput scales linearly, so with 6 CPU's we'd get 1500 lattes per second. On the throughput chart, higher values are better.
 
 The chart on the right shows the "cafe au lait-encity," the median time to make a latte, which stays flat at 4 milliseconds. Lower values are better on this chart.
 
@@ -64,7 +64,7 @@ Unfortunately, this ideal coffee shop isn't too realistic. In reality, each of t
 
 ### Lesson: use the race detector
 
-If you run the ideal implementation with multiple CPUs and enable the race detector, you get a runtime error indicating the data race. If you create your own simulation in Go, you can use the race detector to check that you're synchronizing access to shared resources properly.
+If you run the ideal implementation with multiple CPU's and enable the race detector, you get a runtime error indicating the data race. If you create your own simulation in Go, you can use the race detector to check that you're synchronizing access to shared resources properly.
 
 ## Locking
 
@@ -85,7 +85,7 @@ func lockingBrew() latte {
 
 ![Ajmani-7](//images.contentful.com/le3mxztn6yoo/4KtIntZ19YGqcSUkcQ4Mou/7e4876d455559c298eeb1b164ef811ab/Screen_Shot_2017-11-05_at_6.18.13_PM.png)
 
-This scenario yields the exact opposite of the ideal scenario: throughout stays flat at 250 lattes per second, and latency grows linearly with CPUs. Why? Because there's no way for more than one person to make coffee at a time. So when the Nth person joins the line, they must wait 4 milliseconds for each of the preceding N-1 people. You see better in the real world (at real coffee shops), so we can do better than this.
+This scenario yields the exact opposite of the ideal scenario: throughout stays flat at 250 lattes per second, and latency grows linearly with CPU's. Why? Because there's no way for more than one person to make coffee at a time. So when the Nth person joins the line, they must wait 4 milliseconds for each of the preceding N-1 people. You see better in the real world (at real coffee shops), so we can do better than this.
 
 ## Fine-grain locking
 
@@ -115,7 +115,7 @@ func lockingSteam() milk {
 
 ![Ajmani-4](//images.contentful.com/le3mxztn6yoo/5tXgLCzBAI6eKs0KySk0E8/4d4d027a46932b6dbc8360fd5ebd74ec/Screen_Shot_2017-11-05_at_6.13.43_PM.png)
 
-Now the throughput and latency curves look more interesting as we add CPUs. Up to four CPUs, we get our ideal implementation: throughput grows linearly and latency stays flat. But after this, throughput stays flat and latency increases.
+Now the throughput and latency curves look more interesting as we add CPU's. Up to four CPU's, we get our ideal implementation: throughput grows linearly and latency stays flat. But after this, throughput stays flat and latency increases.
 
 ![Ajmani-5](//images.contentful.com/le3mxztn6yoo/37feSChqFq8sy0cMQGeiE8/29b14761210dec59b061c4026cd0e9cb/Screen_Shot_2017-11-05_at_6.13.52_PM.png)
 
@@ -125,13 +125,13 @@ With three people in the kitchen, each takes their turn at a machine and moves o
 
 There's greater parallelism and increased throughput by minimizing the time that any one resource is locked. We also avoid holding any locks during the fourth phase since there's no resource contention in this step.
 
-But why does throughput flatten after 4 CPUs?
+But why does throughput flatten after 4 CPU's?
 
 ![Ajmani-6](//images.contentful.com/le3mxztn6yoo/4HO4t1VDXiUKeq64Qm6W4U/8d383ebe7bdccad74e295a42492d34a3/Screen_Shot_2017-11-05_at_6.14.25_PM.png)
 
 The first coffee runs on CPU1, taking 1 millisecond per stage. The second coffee waits 1 millisecond to use the grinder, then can proceed in parallel on CPU2. The third coffee waits again for the grinder and then proceeds on CPU3, and the same for the fourth coffee on CPU4.
 
-What about the fifth coffee? By the time the grinder is free, CPU1 is free again, so it can run there. It can't start sooner because the grinder would be in use. This system has a maximum of 4 CPUs in parallel because of contention on the grinder, which is why the throughput of this system flattens at 1000 lattes per second: 4 CPUs running at 250 lattes per second.
+What about the fifth coffee? By the time the grinder is free, CPU1 is free again, so it can run there. It can't start sooner because the grinder would be in use. This system has a maximum of 4 CPU's in parallel because of contention on the grinder, which is why the throughput of this system flattens at 1000 lattes per second: 4 CPU's running at 250 lattes per second.
 
 Given this structural limit, how can we increase the performance of our system? When the critical resources you have are running at capactiy, the solution is to have more resources. So, having a second set of machines or a second coffee shop means more people could make coffee simultaneously.
 
@@ -164,13 +164,13 @@ func multiSteam() milk {
 
 ![Ajmani-8](//images.contentful.com/le3mxztn6yoo/59mhejBl20QUSaUQG8UiCU/f01d5ccd24b5323594ebf2a0b6074344/Screen_Shot_2017-11-05_at_6.41.40_PM.png)
 
-With two sets of machines, ideal performance goes up to 6 CPUs. Throughput increases linearly and latency stays flat.
+With two sets of machines, ideal performance goes up to 6 CPU's. Throughput increases linearly and latency stays flat.
 
 These charts are another way to compare the performance of the implemantations so far:
 
 ![Ajmani-9](//images.contentful.com/le3mxztn6yoo/6JcrlbxMsgQQoCYOWA6uOC/374cb81475b49e86a1095e6f3926f34f/Screen_Shot_2017-11-05_at_6.42.16_PM.png)
 
-The left-hand chart shows the throughput of each implementation when running with 6 CPUs, and the right shows their latency distributions. The whole-kitchen locking has much lower throughput and much higher latency than our ideal implementation. The fine-grain locking implementation does better, peaking at around 1000 lattes per second due the the structural limits we saw earlier. We overcome this structural limit by adding more coffee machines. With two of each machine, we achieve ideal performance. Doubling again to four of each machine gains us nothing, since we’ve already maxed out our 6 CPUs. Now, our CPUs are the limiting factor, so to increase performance further, we’ll need more CPUs.
+The left-hand chart shows the throughput of each implementation when running with 6 CPU's, and the right shows their latency distributions. The whole-kitchen locking has much lower throughput and much higher latency than our ideal implementation. The fine-grain locking implementation does better, peaking at around 1000 lattes per second due the the structural limits we saw earlier. We overcome this structural limit by adding more coffee machines. With two of each machine, we achieve ideal performance. Doubling again to four of each machine gains us nothing, since we’ve already maxed out our 6 CPU's. Now, our CPU's are the limiting factor, so to increase performance further, we’ll need more CPU's.
 
 So far, we've simulated a shared kitchen, where each person making coffee takes turns using a shared set of machines. However, we usually see a small number of baristas operating the machines, which is more efficient. The next simulation is a coffee assembly line, where one person operates each machine.
 
@@ -207,7 +207,7 @@ The grinder receives new orders on the orders channel, grinds the beans, and pas
 
 ![Ajmani-10](//images.contentful.com/le3mxztn6yoo/3hW6CAFiWsiaucickKY6G6/c696e28c310cefaeb4ddcc1d7ebf2fe2/Screen_Shot_2017-11-05_at_6.42.38_PM.png)
 
-When we look at the performance of this pipeline, it looks a lot like the fine-grain locking implementation. the latency is identical, but the throughput is slightly less until we reach 6 CPUs.
+When we look at the performance of this pipeline, it looks a lot like the fine-grain locking implementation. the latency is identical, but the throughput is slightly less until we reach 6 CPU's.
 The latency is the time it takes to run each of the 4 stages, so it makes sense that that would remain the same in the locking and pipeline implementations. But the pipeline’s throughput is less because it is not utilizing the three contended machines as efficiently.
 
 The real world analogy:
@@ -223,7 +223,7 @@ Sameer tested pipelines with buffer size 1 and size 10. Their lines are overlapp
 
 ![Ajmani-12](//images.contentful.com/le3mxztn6yoo/4IcTrvh78I04gKcqUqI0cQ/c8003aa4361820d8d0bb51e7f45dd991/Screen_Shot_2017-11-05_at_6.42.56_PM.png)
 
-What we see in these charts is that the differences between fine-grain locking and the various pipelines are all pretty minor. The two big gains came from structural changes. The first was moving from the whole-kitchen lock to fine-grain, per-machine locks. This reduced the time spent in any one critical section, so that more work could run in parallel. The second was recognizing when our existing resources were fully utilized and adding more capacity. This allowed us to max out our 6 CPUs. The CPUs are now our limiting resource, so if we want to get more throughput, we’ll need to add more CPUs to run our simulation.
+What we see in these charts is that the differences between fine-grain locking and the various pipelines are all pretty minor. The two big gains came from structural changes. The first was moving from the whole-kitchen lock to fine-grain, per-machine locks. This reduced the time spent in any one critical section, so that more work could run in parallel. The second was recognizing when our existing resources were fully utilized and adding more capacity. This allowed us to max out our 6 CPU's. The CPU's are now our limiting resource, so if we want to get more throughput, we’ll need to add more CPU's to run our simulation.
 
 ![Ajmani-13](//images.contentful.com/le3mxztn6yoo/3vevQinLteSYUykY60qqmo/8fc797f91c0e10288cddb3c6305aa8a2/Screen_Shot_2017-11-05_at_6.43.03_PM.png)
 

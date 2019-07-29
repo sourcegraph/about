@@ -23,7 +23,7 @@ Technically TLS is a transparent security protocol for data transfer over the in
 
 At its core, TLS is about a client and a server that want to communicate securely over the network. To do that, both sides need to agree on some key material to use to encrypt the rest of the traffic for that connection. Handshake is the name of the phase when this agreement happens. A handshake involves some public key cryptography and some data being shuffled between the client to the server, or from the server to the client.
 
-TLS 1.2 has been the standard for almost a decade. But over this time, version 1.3 was being worked on. One of the most visible change of this new version was that in TLS 1.3 the handshake has been re-structured to shave off an entire handshake roundtrip. Not only that, but for connections that are from visitors who have recently visited a site and are resuming a previous connection, TLS 1.3 allows for a dramatic speed boost with zero round trip time resumption (0-RTT).
+TLS 1.2 has been the standard for almost a decade. But over this time, version 1.3 was being worked on. One of the most visible change of this new version was that in TLS 1.3 the handshake has been re-structured to shave off an entire handshake round trip. Not only that, but for connections that are from visitors who have recently visited a site and are resuming a previous connection, TLS 1.3 allows for a dramatic speed boost with zero round trip time resumption (0-RTT).
 
 Filippo commented that the Go crypto/tls package is so good that cryptographers look at it to understand TLS. TLS implementation is not a trivial endeavor, but Go's crypto/tls package simplifies it to the point that you can serialize the state machine down to if statements.
 
@@ -38,7 +38,7 @@ Filippo goes over some Go code and shares some graphics to demonstrate the norma
 ### Enter Cloudflare's 0-RTT
 He then goes on to highlight aspects of Cloudflare's 0-RTT and how it differs from the normal TLS flow. Of note: 0-RTT data is disabled by default.
 
-0-RTT data brings challenges in internals and also in api design, because it doesn't benefit from all the guarantees of TLS. For example, the server gets an answer immediately, it doesn't have to wait for confirmation from the client.
+0-RTT data brings challenges in internals and also in API design, because it doesn't benefit from all the guarantees of TLS. For example, the server gets an answer immediately, it doesn't have to wait for confirmation from the client.
 
 So for the 0-RTT API, there are two important things the server needs:
 
@@ -58,9 +58,9 @@ He goes over five possible options to handle these challenges using Go, explaini
 ![opt5](//images.contentful.com/le3mxztn6yoo/Cnq2quDkrYYwOi2UWgccQ/c8e102625699ac6c1b3e7f2cc758f11b/opt5.png)
 
 ### Other aspects of the API
-- The 0-RTT api needs to be exposed to HTTP handler, because it needs access to the live ConnectionState and the ConfirmHandshake method. It uses context key information like ServerContextKey and LocalAddrContextKey.
+- The 0-RTT API needs to be exposed to HTTP handler, because it needs access to the live ConnectionState and the ConfirmHandshake method. It uses context key information like ServerContextKey and LocalAddrContextKey.
 
-- API design decisions and points out how important it is to keep details irrelevant to application developers out of the api interface.
+- API design decisions and points out how important it is to keep details irrelevant to application developers out of the API interface.
 
 - Need to be aware of order of operations to avoid blocking:
 
@@ -87,7 +87,7 @@ He goes over five possible options to handle these challenges using Go, explaini
 
 - He talks about the `GetConfigForClient` callback, and the proposal to add fields to ClientHelloInfo - [https://github.com/golang/go/issues/17430](https://github.com/golang/go/issues/17430).
 
-- Passing TLS connections to nginx: if there's a file descriptor, pass the connection directly to Go. No OpenSSL is involved in the processing of the data:
+- Passing TLS connections to NGINX: if there's a file descriptor, pass the connection directly to Go. No OpenSSL is involved in the processing of the data:
 
 ![ssl](//images.contentful.com/le3mxztn6yoo/2kAXGVe5G46ioe06K46cWW/34a9e9a11d22fc1c36c66ce3731cbaa3/ssl.png)
 ![ssl2](//images.contentful.com/le3mxztn6yoo/42NTjE8NDqC2g2yEU64Mce/737bbc2e05d3780a42e515fa65538f56/ssl2.png)
@@ -103,7 +103,7 @@ Filippo goes into detail about these issues:
 
 ## Take away
 
-"We didn’t break the Internet!"
+"We didn't’t break the Internet!"
 
 This was a very detailed talk. Be sure not to miss watching the video of it when it comes out!
 

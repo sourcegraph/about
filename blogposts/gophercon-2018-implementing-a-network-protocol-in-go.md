@@ -567,7 +567,7 @@ go-fuzz usage:
   ```
   $ CGO_ENABLED=0 go-fuzz-build github.com/mdlayher/ndp
   ```
-* Run go-fuzz with multiple CPUs and output results to ./fuzz/
+* Run go-fuzz with multiple CPU's and output results to ./fuzz/
   ```
   $ go-fuzz -bin ./ndp-fuzz.zip -procs 16 -workdir ./fuzz/
   … workers: 16, corpus: 78 (0s ago), crashers: 5

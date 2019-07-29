@@ -39,7 +39,7 @@ Some functions that can be used to control the garbage collector:
 
 Some functions that can be used to control the scheduler:
 
-- GOMAXPROCS(n) - set max simultaneously executing CPUS 
+- GOMAXPROCS(n) - set max simultaneously executing CPU's 
 - Goexit() - terminate the calling goroutine
 - Gosched() - yield processor allowing other goroutines to run
 - LockOSThread()/UnlockOSThread() - wire/unwire goroutine to current OS thread

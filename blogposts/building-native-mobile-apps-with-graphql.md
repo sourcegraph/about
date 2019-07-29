@@ -33,7 +33,7 @@ It's not just about performance, though. GraphQL provides some additional benefi
 
 ### 1. Empowers and unblocks app developers
 
-Mobile teams are usually completely separate from backend teams: they use different languages and have a different culture.  As a result, theres often a bit of conflict between mobile and backend developers.
+Mobile teams are usually completely separate from backend teams: they use different languages and have a different culture.  As a result, there's often a bit of conflict between mobile and backend developers.
 
 From a mobile dev perspective, they want data for a particular flow as efficiently as possible, overfetching or making round trips. On the other hand, backend developers don't want to add version specific or custom endpoints for mobile.
 
