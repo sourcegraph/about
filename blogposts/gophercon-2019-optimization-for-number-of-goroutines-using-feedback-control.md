@@ -8,7 +8,7 @@ tags: [
 ]
 slug: gophercon-2019-optimization-for-number-of-goroutines-using-feedback-control
 heroImage: https://about.sourcegraph.com/gophercon2019.png
-published: true
+published: false
 ---
 
 Presenter: [Yusuke Miyake](https://twitter.com/monochromegane) | Liveblogger: [\$LIVEBLOGGER_NAME]($LIVEBLOGGER_URL)
