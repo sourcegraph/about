@@ -33,7 +33,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                     <div className="gophercon">
                         <Link to="/go">
                             <span className="go-gopher" />
-                            Checkout the official <u>GopherCon Liveblog</u> proudly
+                            Check out the official <u>GopherCon Liveblog</u> proudly
                             hosted by Sourcegraph.
                         </Link>
                     </div>

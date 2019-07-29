@@ -21,7 +21,7 @@ export default class GoList extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const metaProps = {
             title: 'GopherCon and dotGo Liveblogs by Sourcegraph',
-            description: 'Checkout the official GopherCon 2019 Liveblog proudly hosted by Sourcegraph.',
+            description: 'Check out the official GopherCon 2019 Liveblog proudly hosted by Sourcegraph.',
             image: 'https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png'
         }
         const goPosts = this.props.data.allMarkdownRemark.edges.filter(
