@@ -8,7 +8,7 @@ interface LayoutProps {
     meta?: {
         title?: string
         description?: string
-        image: string
+        image?: string
         icon?: string
     }
     location: {
@@ -21,7 +21,7 @@ interface LayoutProps {
 export default class Layout extends React.PureComponent<LayoutProps> {
     public render(): JSX.Element | null {
         const defaultMetaProps: LayoutProps['meta'] = {
-            title: 'Sourcegraph',
+            title: 'Sourcegraph - Code search and intelligence',
             description:
                 'Sourcegraph is a free, self-hosted code search and intelligence server that helps developers find, review, understand, and debug code. Use it with any Git code host for teams from 1 to 10,000+.',
             image: 'https://about.sourcegraph.com/sourcegraph-mark.png',
@@ -29,13 +29,14 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         }
         const pathname = this.props.location.pathname
         const isHome = pathname === '/'
+        const isBlog = pathname === '/blog'
         const isProductPage = pathname.startsWith('/product/')
-        const metaProps = this.props.meta || defaultMetaProps
+        const metaProps = {...defaultMetaProps, ...this.props.meta}
 
         return (
             <div className="flex flex-column fill-height">
                 <Helmet>
-                    <title>Sourcegraph - Code search and intelligence</title>
+                    <title>{metaProps.title}</title>
                     <meta name="twitter:title" content={metaProps.title} />
                     <meta name="twitter:site" content="@srcgraph" />
                     <meta name="twitter:image" content={metaProps.image} />
@@ -54,7 +55,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
 
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
                 </Helmet>
-                <Header isHome={isHome} isProductPage={isProductPage} minimal={this.props.minimal} />
+                <Header isHome={isHome} isBlog={isBlog} isProductPage={isProductPage} minimal={this.props.minimal} />
                 <section className="d-flex flex-column fill-height">{this.props.children}</section>
                 <Footer minimal={this.props.minimal} />
             </div>

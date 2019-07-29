@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
 import { eventLogger } from '../EventLogger'
@@ -32,10 +31,10 @@ export default class ContentfulTemplate extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const md = this.props.data.markdownRemark
         const title = md.frontmatter.title
+        const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
         const author = md.frontmatter.author
         const content = md.html
         const date = md.frontmatter.publishDate
-        const excerpt = md.excerpt
         const tags = md.frontmatter.tags || ''
         const image = md.frontmatter.heroImage
             ? `${md.frontmatter.heroImage}`
@@ -54,26 +53,14 @@ export default class ContentfulTemplate extends React.Component<any, any> {
             readMoreLink = '/blog'
         }
         const meta = {
+            title,
             image,
+            description
         }
         return (
             <Layout location={this.props.location} meta={meta}>
                 <div className="bg-white text-dark">
-                    <Helmet>
-                        <title>{title}</title>
-                        <meta property="og:title" content={title} />
-                        <meta property="og:url" content={`https://about.sourcegraph.com/${slug}`} />
-                        <meta property="og:description" content={excerpt} />
-                        <meta property="og:image" content={image} />
-                        <meta property="og:type" content="website" />
 
-                        <meta name="twitter:site" content="@srcgraph" />
-                        <meta name="twitter:card" content="summary_large_image" />
-                        <meta name="twitter:title" content={title} />
-                        <meta name="twitter:image" content={image} />
-                        <meta name="twitter:description" content={excerpt} />
-                        <meta name="description" content={excerpt} />
-                    </Helmet>
                     <div className="blog-post">
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
@@ -110,6 +97,7 @@ export const pageQuery = graphql`
         markdownRemark(fields: { slug: { eq: $fileSlug } }) {
             frontmatter {
                 title
+                description
                 heroImage
                 author
                 tags
