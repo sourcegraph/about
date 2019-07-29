@@ -1,10 +1,10 @@
 ---
 title: "GopherCon 2019 - How I write HTTP web services after eight years"
 description: "A look at how Mat Ryer builds web services after doing so for the past eight years. Extremely practical, tried and tested patterns that everybody can start using today."
-author: [Kenigbolo Meya Stephen](https://twitter.com/expensivestevie) for the GopherCon 2019 Liveblog
+author: Kenigbolo Meya Stephen for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-14:55
 tags: [
-  gophercon
+gophercon
 ]
 slug: gophercon-2019-how-i-write-http-web-services-after-eight-years
 heroImage: https://about.sourcegraph.com/gophercon2019.png
@@ -53,22 +53,22 @@ After taking into consideration the different factors listed above, the next ste
 
 ```go
 func main () {
-    if err := run(); err != nil {
-        fmt.Fprintf(os.Stderr, “%s\n”, err)
-        os.Exit(1)
-    }
+  if err := run(); err != nil {
+      fmt.Fprintf(os.Stderr, “%s\n”, err)
+      os.Exit(1)
+  }
 }
 
 func run() error {
-    db, dbtidy, err := setupDatabase()
-    if err != nil {
-        return errors.Wrap(err, “setup database”)
-    }
-    defer dbtidy()
-    srv := &server{
-        db: db,
-    }
-    //... more stuff
+  db, dbtidy, err := setupDatabase()
+  if err != nil {
+      return errors.Wrap(err, “setup database”)
+  }
+  defer dbtidy()
+  srv := &server{
+      db: db,
+  }
+  //... more stuff
 
 ```
 
@@ -78,9 +78,9 @@ Mat believes such tiny abstractions like the one above allows him to return an e
 
 ```go
 type server struct {
-    db     *someDatabase
-    router *someRouter
-    email  EmailSender
+  db     *someDatabase
+  router *someRouter
+  email  EmailSender
 }
 ```
 
@@ -90,9 +90,9 @@ Instead of having the code above in the package space you put this in the server
 
 ```go
 func newServer() *server {
-  s := &server{}
-  s.routes()
-  return s
+s := &server{}
+s.routes()
+return s
 }
 ```
 
@@ -102,7 +102,7 @@ It is important not to set up dependencies in the server constructor. If you nee
 
 ```go
 func (s *server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-  s.router.ServeHTTP(w, r)
+s.router.ServeHTTP(w, r)
 }
 ```
 
@@ -114,9 +114,9 @@ The goal here is to pass execution to the router. Ideally you should never put l
 package main
 
 func (s *server) routes() {
-    s.router.Get("/api/", s.handleAPI())
-    s.router.Get("/about", s.handleAbout())
-    s.router.Get(“/", s.handleIndex())
+  s.router.Get("/api/", s.handleAPI())
+  s.router.Get("/about", s.handleAbout())
+  s.router.Get(“/", s.handleIndex())
 }
 ```
 
@@ -126,7 +126,7 @@ A single route file that maps out your different routing services is always usef
 
 ```go
 func (s *server) handleSomething() http.HandlerFunc { 
-    // put some programming here
+  // put some programming here
 }
 ```
 
@@ -149,10 +149,10 @@ It is adviceable to group the names based on responsibility. It makes it easier 
 
 ```go
 func (s *server) handleSomething() http.HandlerFunc {
-    thing := prepareThing()
-    return func(w http.ResponseWriter, r *http.Request) {
-        // use thing        
-    }
+  thing := prepareThing()
+  return func(w http.ResponseWriter, r *http.Request) {
+      // use thing        
+  }
 }
 ```
 The handler gives you a closure environment where you can If you have your handler specific setup. 
@@ -161,9 +161,9 @@ The handler gives you a closure environment where you can If you have your handl
 
 ```go
 func (s *server) handleGreeting(format string) http.HandlerFunc {
-  return func(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, format, r.FormValue(“name”))
-  }
+return func(w http.ResponseWriter, r *http.Request) {
+  fmt.Fprintf(w, format, r.FormValue(“name”))
+}
 }
 s.router.HandleFunc(“/one”, s.handleGreeting(“Hello %s”))
 s.router.HandleFunc(“/two”, s.handleGreeting(“Hola %s”))
@@ -177,9 +177,9 @@ Y
 
 ```go
 func (s *server) handleSomething() http.HandlerFunc {
-    return func(w http.ResponseWriter, r *http.Request) {
-    
-    }
+  return func(w http.ResponseWriter, r *http.Request) {
+
+  }
 }
 ```
 
@@ -191,13 +191,13 @@ PS - If you find yourself switching often between handlers and handler func then
 
 ```go
 func (s *server) adminOnly(h http.HandlerFunc) http.HandlerFunc {
-  return func(w http.ResponseWriter, r *http.Request) {
-    if !currentUser(r).IsAdmin {
-      http.NotFound(w, r)
-      return
-    }
-  h(w, r)
+return func(w http.ResponseWriter, r *http.Request) {
+  if !currentUser(r).IsAdmin {
+    http.NotFound(w, r)
+    return
   }
+h(w, r)
+}
 }
 ```
 
@@ -208,10 +208,10 @@ Middlewares are normal go functions which takes in a handler as an argument and 
 ```go
 package main
 func (s *server) routes() {
-  s.router.Get("/api/", s.handleAPI())
-  s.router.Get("/about", s.handleAbout())
-  s.router.Get("/", s.handleIndex())
-  s.router.Get(“/admin", s.adminOnly(s.handleAdminIndex()))
+s.router.Get("/api/", s.handleAPI())
+s.router.Get("/about", s.handleAbout())
+s.router.Get("/", s.handleIndex())
+s.router.Get(“/admin", s.adminOnly(s.handleAdminIndex()))
 }
 ```
 
@@ -225,11 +225,11 @@ As developers we are always tempted to abstract functionality and keep our code 
 
 ```go
 func (s *server) respond(w http.ResponseWriter, r *http.Request, data interface{}, status int) {
-  w.WriteHeader(status)
-  if data != nil {
-    err := json.NewEncoder(w).Encode(data)
-    // TODO: handle err
-  }
+w.WriteHeader(status)
+if data != nil {
+  err := json.NewEncoder(w).Encode(data)
+  // TODO: handle err
+}
 }
 ```
 
@@ -239,7 +239,7 @@ A huge advantage of this abstraction is that with regards to the http service re
 
 ```go
 func (s *server) decode(w http.ResponseWriter, r *http.Request, v interface{}) error {
-  return json.NewDecoder(r.Body).Decode(v)
+return json.NewDecoder(r.Body).Decode(v)
 }
 ```
 
@@ -253,15 +253,15 @@ You can future proof any helper you write with a simple rule of always taking bo
 
 ```go
 func (s *server) handleGreet() http.HandlerFunc {
-  type request struct {
-    Name string
-  }
-  type response struct {
-    Greeting string `json:"greeting"`
-  }
-  return func(w http.ResponseWriter, r *http.Request) {
-    ...
-  }
+type request struct {
+  Name string
+}
+type response struct {
+  Greeting string `json:"greeting"`
+}
+return func(w http.ResponseWriter, r *http.Request) {
+  ...
+}
 }
 ```
 
@@ -273,21 +273,21 @@ Although it is very common to put the request and response type in the package s
 
 ```go
 func (s *server) handleTemplate(files string...) http.HandlerFunc {
-  var (
-    init    sync.Once
-    tpl     *template.Template
-    tplerr  error
-  )
-  return func(w http.ResponseWriter, r *http.Request) {
-    init.Do(func(){
-      tpl, tplerr = template.ParseFiles(files...)
-    })
-    if tplerr != nil {
-      http.Error(w, tplerr.Error(), http.StatusInternalServerError)
-      return
-    }
-    // use tpl
+var (
+  init    sync.Once
+  tpl     *template.Template
+  tplerr  error
+)
+return func(w http.ResponseWriter, r *http.Request) {
+  init.Do(func(){
+    tpl, tplerr = template.ParseFiles(files...)
+  })
+  if tplerr != nil {
+    http.Error(w, tplerr.Error(), http.StatusInternalServerError)
+    return
   }
+  // use tpl
+}
 }
 ```
 
