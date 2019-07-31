@@ -301,7 +301,7 @@ Two are _value_ methods: the receiver is the type itself, Number.
 Two are _pointer_ methods: the receiver is a pointer to Number.
 
 We’ll call all the exported methods of a type its exported method set. 
-there's the exported method set of Number, and the exported method set of pointer to Number.
+There's the exported method set of Number, and the exported method set of pointer to Number.
 
 Now we’re ready for the compatibility rule on defined types.
 
@@ -325,7 +325,7 @@ But you can change a pointer method to a value method. That works because the po
 
 How does the client code work with the new version of the package, where P is a value method? Go dereferences the pointer to get a value, then calls the method on that value.
 
-there's a deliberate asymmetry in the language here. You can always call a value method on a pointer, because you can always dereference a pointer to get a value.
+There's a deliberate asymmetry in the language here. You can always call a value method on a pointer, because you can always dereference a pointer to get a value.
 
 But you can’t always call a pointer method on a value, because you can’t always take the address of a value to get a pointer.
 
@@ -336,7 +336,7 @@ We’ve talked about defined types. Let’s move on to channels.
 
 **Channels**
 
-there's only one compatible change you can make to a channel type: you can remove the direction marker. 
+There's only one compatible change you can make to a channel type: you can remove the direction marker. 
 
 For example, if you started with a channel that you can only send on, you can change that to a channel that can either send or receive. That’s clearly safe, because any code that tried to receive from the channel Wouldn't have compiled in the first place.
 
@@ -487,7 +487,7 @@ Happily, the package compatibility rules we just covered do most of the work. We
 
 We only care about packages you can see outside the module, so internal packages don’t matter.
 
-there's one wrinkle, an interesting violation of the Fundamental Rule of Compatibility: you can remove a package from a module and maintain compatibility, as long as you move it to another module and make sure that your original module requires that other module. In order for the package import path to stay the same, that other module must be nested inside the first. 
+There's one wrinkle, an interesting violation of the Fundamental Rule of Compatibility: you can remove a package from a module and maintain compatibility, as long as you move it to another module and make sure that your original module requires that other module. In order for the package import path to stay the same, that other module must be nested inside the first. 
 
 Let’s look at an example of that.
 
