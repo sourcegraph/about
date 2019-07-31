@@ -86,7 +86,7 @@ The wrap up questions are used to cover any additional topics or follow-up on an
 
 ### Developing insights
 
-you've completed your research, started to see patterns in the questions, and you feel like a pro interviewer. But what now?
+You've completed your research, started to see patterns in the questions, and you feel like a pro interviewer. But what now?
 
 One of the hardest parts of research is framing the insights. It’s easy to have a knee-jerk reaction to what users tell you during the interview process. Your goal at the end of this research should be to identify the consistent behavioral themes.
 
