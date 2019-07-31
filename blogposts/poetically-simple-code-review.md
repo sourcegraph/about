@@ -52,7 +52,7 @@ Stop context-switching
 and getting lost line by line
 in so many tabs.
 
-there's a better way 
+There's a better way 
  — a Google Chrome extension.
 [**Try it out today**](https://docs.sourcegraph.com/integration/browser_extension?hl=en).
 
