@@ -89,7 +89,7 @@ The White House is using GitHub. Introducing Alvand Salehi.
 
 GitHub has a lot of integrations and are investing in relationships with integration partners to grow the ecosystem. They have a new early access program for key partners to get access to beta, unreleased features.
 
-there's a new GraphQL API, already released to selected integration partners.
+There's a new GraphQL API, already released to selected integration partners.
 
 GitHub is shipping new authentication features for large companies
 
