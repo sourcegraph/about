@@ -50,7 +50,7 @@ Historically, the problem of supporting multiple languages in multiple editors h
 
 Defining a clear protocol between the language analyzer and the code viewer/editor is crucial. Separating these concerns means no language-specific code at the application layer. The folks working on the frontend can focus on user experience without worrying about language semantics. The folks working on language analysis have a clear interface and don’t have to worry about the mechanics of the frontend.
 
-LSP defines such a protocol that sits between editor plugins and the underlying analysis libraries. You build one language server for each language and one plugin for each editor. Each editor plugin that speaks LSP will now have support for every single language server. you've reduced a O(M·N) problem to a O(M+N) problem.
+LSP defines such a protocol that sits between editor plugins and the underlying analysis libraries. You build one language server for each language and one plugin for each editor. Each editor plugin that speaks LSP will now have support for every single language server. You've reduced a O(M·N) problem to a O(M+N) problem.
 
 ![1*ws2LYhzfuHpEimlb9-knWQ](//images.contentful.com/le3mxztn6yoo/5fAE4L5xKEM2wOE6WGsMyY/18126663e1f38d946fcfae2b06c2cd88/1_ws2LYhzfuHpEimlb9-knWQ.png)
 
