@@ -34,7 +34,7 @@ At the top of the main function, we see a lot of code related to setting up logg
 
 ### Step 2: Get to the core
 
-In many applications and libraries, there’s one or two key interfaces that describe the core functionality or essence. Let’s try to get there from where we are now.
+In many applications and libraries, there's one or two key interfaces that describe the core functionality or essence. Let’s try to get there from where we are now.
 
 Clicking on the [NewDockerCli](https://sourcegraph.com/github.com/docker/docker/-/def/GoPackage/github.com/docker/docker/api/client/-/NewDockerCli) search result, we arrive at the definition of the function. Since what we’re interested in is the struct that the function returns, [DockerCli](https://sourcegraph.com/github.com/docker/docker/-/def/GoPackage/github.com/docker/docker/api/client/-/DockerCli), let’s click on the return type to jump to its definition.
 
@@ -48,7 +48,7 @@ Reading the implementation of [DockerCli’s Command method](https://sourcegraph
 
 So, in the case of “docker build”, it calls the [CmdBuild](https://sourcegraph.com/github.com/docker/docker/-/def/GoPackage/github.com/docker/docker/api/client/-/DockerCli/CmdBuild) method, which we can navigate to using Sourcegraph.
 
-There’s a lot going on here. At the top of the method, we see code dealing with a variety of input methods for the Dockerfile and configuration. Oftentimes, a good strategy for reading through a long method is to work backwards. Start at the bottom and look at what the method does at the very end. In many cases, that’s the meat of the method and everything before is just setup for completing that core action.
+There's a lot going on here. At the top of the method, we see code dealing with a variety of input methods for the Dockerfile and configuration. Oftentimes, a good strategy for reading through a long method is to work backwards. Start at the bottom and look at what the method does at the very end. In many cases, that’s the meat of the method and everything before is just setup for completing that core action.
 
 Now that we’ve understood a single Docker client command through and through, you might be interested in diving deeper still and finding where the daemon receives the request and following it all the way down to its interaction with LXC and the kernel. That’s certainly a valid route, but we leave that for now as an exercise to the reader. Instead, let’s get a broader understanding of the key components of the client.
 
@@ -68,7 +68,7 @@ Try this out for a few more functions and methods to understand how they’re in
 
 ### Step 5: Select an issue and start coding!
 
-Now that you have a decent picture of the Docker codebase as a whole, take a look at the [issue tracker](https://github.com/docker/docker/issues) to see what needs working on, and reach out to members of the Docker community with questions you aren’t able to answer yourself. Because you’ve taken the time to explore and understand the code, you’ll be better equipped to ask smart questions and know where specific issues fit into the broader picture.
+Now that you have a decent picture of the Docker codebase as a whole, take a look at the [issue tracker](https://github.com/docker/docker/issues) to see what needs working on, and reach out to members of the Docker community with questions you aren’t able to answer yourself. Because you've taken the time to explore and understand the code, you’ll be better equipped to ask smart questions and know where specific issues fit into the broader picture.
 
 And if you feel up for it, take notes along the way, document your experience, and write it up as a blog post like this one. The Docker team would love to hear about your experience diving into their code.
 

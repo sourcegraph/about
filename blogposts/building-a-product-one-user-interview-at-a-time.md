@@ -18,7 +18,7 @@ We’d like to open our doors and show how we improve [Sourcegraph](https://sour
 
 ### The setup
 
-User research is best when it mimics a familiar environment for your users. When designing research for a product that is dependent on space and context, like understanding how a parent uses a shopping cart at the grocery store, you might perform an ethnographic study by taking a trip with them to their local grocery store to better familiarize yourself with their life and the decisions they make before, during, and after the trip. But for programmers (who can code wherever there’s enough space for a laptop), we just host our sessions here at our office in San Francisco. To do this, we prepare:
+User research is best when it mimics a familiar environment for your users. When designing research for a product that is dependent on space and context, like understanding how a parent uses a shopping cart at the grocery store, you might perform an ethnographic study by taking a trip with them to their local grocery store to better familiarize yourself with their life and the decisions they make before, during, and after the trip. But for programmers (who can code wherever there's enough space for a laptop), we just host our sessions here at our office in San Francisco. To do this, we prepare:
 
 *   A testing laptop that runs a working prototype of Sourcegraph in a production environment and a second screen so everyone can see what the participant is doing in real time. An audio recording device (a smartphone is fine) is great for reviewing any feedback or dialogue later.
 *   A quiet place (any office with a closed door is fine) to conduct the interview to limit distractions.
@@ -86,7 +86,7 @@ The wrap up questions are used to cover any additional topics or follow-up on an
 
 ### Developing insights
 
-You’ve completed your research, started to see patterns in the questions, and you feel like a pro interviewer. But what now?
+You've completed your research, started to see patterns in the questions, and you feel like a pro interviewer. But what now?
 
 One of the hardest parts of research is framing the insights. It’s easy to have a knee-jerk reaction to what users tell you during the interview process. Your goal at the end of this research should be to identify the consistent behavioral themes.
 

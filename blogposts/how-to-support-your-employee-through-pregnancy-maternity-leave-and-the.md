@@ -22,7 +22,7 @@ Today was my first day back to work at [Sourcegraph](https://sourcegraph.com) af
 
 5. Your employee has the right to take up to 4 weeks pregnancy related disability leave before the due date in California. Make sure they feel safe enough to take this leave without worrying about their job/position/career development. The last pregnancy month is the hardest.
 
-6. Respect your employee’s wish to work until they feel ready to take their leave. I was able and wanting to work up to 3 days before giving birth due to an “easy” pregnancy with no complications. I’m glad I got to work so long, though I know other moms-to-be need the time off due to more difficult pregnancies. It was great that my team was supportive of my decision, didn’t make me feel uncomfortable or was judgmental about my choice. Every pregnancy is different.
+6. Respect your employee’s wish to work until they feel ready to take their leave. I was able and wanting to work up to 3 days before giving birth due to an “easy” pregnancy with no complications. I’m glad I got to work so long, though I know other moms-to-be need the time off due to more difficult pregnancies. It was great that my team was supportive of my decision, didn't make me feel uncomfortable or was judgmental about my choice. Every pregnancy is different.
 
 7. After birth: A no-brainer, but FYI: Your employee just created a little miracle (or maybe even more than one)! Rejoice and welcome the new life with a thoughtful gift that will help the new parents: baby clothes/props are great and also something nice for the new mama like a beautiful flower bouquet**!
 

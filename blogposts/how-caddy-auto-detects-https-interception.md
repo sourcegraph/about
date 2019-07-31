@@ -22,7 +22,7 @@ Caddy is the HTTP/2 web server with automatic HTTPS. (New logo shown.)
 
 Pluggable servers benefit both you (the developer) _and all the people who use your site/service._ You get a single, consistent interface with which to configure your server(s), and your visitors enjoy (without realizing it) the sensible, secure defaults programmed into Caddy. In fact, Caddy’s signature advantage is its TLS stack, which is designed for HTTPS but can work with any other server type. Powered by the Go standard library’s robust [crypto/tls](https://sourcegraph.com/github.com/golang/go@master/-/tree/src/crypto/tls) package, Caddy takes full advantage of everything from modern cipher suites to side channel protection and memory safety.
 
-But the standard library doesn’t always export the functions you need. In this post, I’ll explain what my process was for implementing an unusual new feature in Caddy that involved hooking into some of the standard library’s un-exported codebase. Specifically, we’ll be looking at the new [mitm.go file](https://sourcegraph.com/github.com/mholt/caddy/-/blob/caddyhttp/httpserver/mitm.go).
+But the standard library doesn't always export the functions you need. In this post, I’ll explain what my process was for implementing an unusual new feature in Caddy that involved hooking into some of the standard library’s un-exported codebase. Specifically, we’ll be looking at the new [mitm.go file](https://sourcegraph.com/github.com/mholt/caddy/-/blob/caddyhttp/httpserver/mitm.go).
 
 (The technical/design solutions here were not all my own work. This feature is based on a paper. I also had help from the [Gophers Slack](https://gophers.slack.com), [Go Forum](https://forum.golangbridge.org), and [Filippo Valsorda](https://twitter.com/FiloSottile). It’s always great to learn from programmers more brilliant than yourself!)
 
@@ -70,9 +70,9 @@ With our own listener, we’re close to accessing the raw bytes from the wire.
 
 Somehow we need to read bytes from the network without consuming them exclusively, or else we need to perform the entire TLS handshake ourselves. No thanks. So, buffering it is. Fortunately, the ClientHello is the first message of a TLS handshake (preceded only by a short 5-byte header).
 
-We could implement our own `Accept()` method which reads the bytes we need before returning with the underlying `Accept()`. But don’t forget— <a href="https://sourcegraph.com/github.com/golang/go@db6e27c38d20cdd6af205bbf99c1b1d3327e6c6f/-/blob/src/net/http/server.go#L2648:1-2650:1"><code>Accept()</code></a> is a blocking call in the HTTP server loop. Never read from the network in the same goroutine as the server’s `Accept()` loop; you won’t be able to accept new connections until you’ve finished reading from the previous one! That is bad, even for just a few hundred bytes.
+We could implement our own `Accept()` method which reads the bytes we need before returning with the underlying `Accept()`. But don’t forget— <a href="https://sourcegraph.com/github.com/golang/go@db6e27c38d20cdd6af205bbf99c1b1d3327e6c6f/-/blob/src/net/http/server.go#L2648:1-2650:1"><code>Accept()</code></a> is a blocking call in the HTTP server loop. Never read from the network in the same goroutine as the server’s `Accept()` loop; you won’t be able to accept new connections until you've finished reading from the previous one! That is bad, even for just a few hundred bytes.
 
-What’s the alternative? We can’t block on `Accept()`, but there’s a function that’s specifically for reading from the network, and it runs in its own goroutine: `net.Conn.Read()`. So I implemented my own “wrapper” over the standard `net.Conn` type:
+What’s the alternative? We can’t block on `Accept()`, but there's a function that’s specifically for reading from the network, and it runs in its own goroutine: `net.Conn.Read()`. So I implemented my own “wrapper” over the standard `net.Conn` type:
 
 <pre name="c54c" id="c54c" class="graf graf--pre graf-after--p">type clientHelloConn struct {
     net.Conn
@@ -104,13 +104,13 @@ Ah, much better! No blocking, and we can still hook into the connection by imple
 
 This is tricky. Not only are we dealing with highly volatile network environments, but these are also TLS connections, which are highly sensitive to mistakes.
 
-The first iteration of our `Read()` is a simple pass-thru that doesn’t do anything custom:
+The first iteration of our `Read()` is a simple pass-thru that doesn't do anything custom:
 
 <pre name="c886" id="c886" class="graf graf--pre graf-after--p">func (c *clientHelloConn) Read(b []byte) (n int, err error) {
     return c.Conn.Read(b)
 }</pre>
 
-Booorrrring. So what do we know? We know that we need to read the ClientHello if it hasn’t already been read. But if it has, our job is done, and it can carry on as if we weren’t there:
+Booorrrring. So what do we know? We know that we need to read the ClientHello if it hasn’t already been read. But if it has, our job is done, and it can carry on as if we weren't there:
 
 <pre name="2067" id="2067" class="graf graf--pre graf-after--p">func (c *clientHelloConn) Read(b []byte) (n int, err error) {
     if c.readHello {

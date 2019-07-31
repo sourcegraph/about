@@ -21,7 +21,7 @@ As developers, we always wanted a better way to discover and understand code:
 *   Why can’t you see everywhere a function is being called, so you know the right way to use it?
 *   Why is code search so archaic — plain-text, single-repository, and ugly?
 
-After reaching hundreds of thousands of developers and hearing from thousands of companies using early versions of Sourcegraph, we knew we weren’t alone. That’s why we’re building Sourcegraph.
+After reaching hundreds of thousands of developers and hearing from thousands of companies using early versions of Sourcegraph, we knew we weren't alone. That’s why we’re building Sourcegraph.
 
 **If you want a better way to discover and understand code, we invite you to** [**start using Sourcegraph today.**](https://sourcegraph.com/) It’s free for public and private code, it’s integrated with GitHub, and you can start using it immediately.
 
@@ -29,7 +29,7 @@ After reaching hundreds of thousands of developers and hearing from thousands of
 
 Already, Sourcegraph is helping developers at startups and large organizations discover and understand code better. In the coming months, we’re excited to share these teams’ stories about how Sourcegraph helps them build better software. These folks tell us they chose Sourcegraph for the following reasons:
 
-**With Code Intelligence, Sourcegraph actually understands your code.** Your code comes alive when you can browse like an IDE, easily jumping to definitions and viewing docs and type information. It’s hard to go back to browsing code elsewhere once you’ve experienced this. (Note: It’s currently for Go and Java only; more languages coming soon.)
+**With Code Intelligence, Sourcegraph actually understands your code.** Your code comes alive when you can browse like an IDE, easily jumping to definitions and viewing docs and type information. It’s hard to go back to browsing code elsewhere once you've experienced this. (Note: It’s currently for Go and Java only; more languages coming soon.)
 
 ![1*RzHYLrAIuhh8p4xOVnjoSQ](//images.contentful.com/le3mxztn6yoo/4vQQGPlrpSKIayi2A8SUCI/2c486b9b5be796b1e203ece2cf0e1096/1_RzHYLrAIuhh8p4xOVnjoSQ.png)
 

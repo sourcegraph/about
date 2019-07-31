@@ -103,7 +103,7 @@ She has taken on more responsibility over the years and its hard when imposter s
 
 Only 0.1% of the Gophers are here today (we are the 0.1%).
 
-How can we who are knowledgable in Go help beginners?
+How can we who are knowledgeable in Go help beginners?
 
  - Encourage Asking Stupid Questions (although no question should be thought of as stupid). This is a good practice to adopt everywhere, e.g. when onboarding new devs in your team.
  - Be patient, e.g. answering the same question for the 100th time.

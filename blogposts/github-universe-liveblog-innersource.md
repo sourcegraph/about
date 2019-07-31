@@ -27,7 +27,7 @@ Today, we hear from practitioners on the forefront of adopting InnerSource for m
 *   Jeff Jagoda, Senior Software Engineer of **IBM**
 *   Moderated by Kakul Srivastava, VP Product Management of **GitHub**
 
-Q: What’s your role at your company? What are the business reasons why inner sourcing is important? What’s the one thing you’ve learned about inner source that most people don’t know.
+Q: What’s your role at your company? What are the business reasons why inner sourcing is important? What’s the one thing you've learned about inner source that most people don’t know.
 
 Panna: The focus of my her department is improving the developer experience and productivity. Their core product is the Bloomberg Terminal. Inner Source is not new to Bloomberg (they used to call it “collaboratively sourced”). Their competitive advantage is the ability to come up with new ideas and ship them quickly to consumers of the terminal. Three pillars to making inner source successful:
 
@@ -39,7 +39,7 @@ Yasuhiro: Line was started in 2011, 220 milllion MAU, recently listed on Tokyo a
 
 Jeremy: Walmart Labs is a global division with offices around the world. They’re responsible for all of Walmart eCommerce sites. They were given the mandate of rebooting Walmart’s entire technology division and basically started from the ground up. To do this, you want to create an “irresistible development environment” — best practices, modern tools, strong code review processes. They also focus on experiences that combine digital and physical experiences (e.g., scanning an item in store and paying for it). Inner source helps spread knowledge around, unlocking collaborative bottlenecks and eliminating territoriality around private code. Walmart Labs has been inner sourcing since the beginning.
 
-Joan: HP is an active member of the Linux community. Open source has always been a “part of their DNA.” What’s changing now is the specific tools they’re using. She works across organizations and roles (engineers, data scientists, managers) to improve developer productivity. Inner source is an amazing competitive advantage for HP. They’ve built a “Google-like developer experience” inside their company. And it helps them accelerate time to market. One of the big challenges is a big culture shift that they’re working through, but the benefits justify the effort.
+Joan: HP is an active member of the Linux community. Open source has always been a “part of their DNA.” What’s changing now is the specific tools they’re using. She works across organizations and roles (engineers, data scientists, managers) to improve developer productivity. Inner source is an amazing competitive advantage for HP. They've built a “Google-like developer experience” inside their company. And it helps them accelerate time to market. One of the big challenges is a big culture shift that they’re working through, but the benefits justify the effort.
 
 Jeff: IBM sees inner source as a way to improve efficiency and encourage the spread of shared knowledge across the company. The coding part is just the tip of the iceberg of the “social coding” shift. It also involves changes to project management, staffing, dependency management, relationship between security team and dev organization (training squad or quasi-regulatory agency?)
 
@@ -55,9 +55,9 @@ Q: What’s the single biggest challenge so far?
 
 Jeremy: They had a guy quit because he became the only expert on an area of the code. He spent all his time reviewing and responding to issues and couldn’t code anymore
 
-Yasuhiro: The firewall makes it more difficult to collaborate. If more things were open source, this wouldn’t be an issue.
+Yasuhiro: The firewall makes it more difficult to collaborate. If more things were open source, this Wouldn't be an issue.
 
-Joan: There’s a big culture shift required, especially for people accustomed to doing things a certain way.
+Joan: there's a big culture shift required, especially for people accustomed to doing things a certain way.
 
 Jeff: Tension between security risk and the productivity associated with greater sharing.
 
@@ -67,16 +67,16 @@ Joan: It would probably be security — if there was a security breach of so
 
 Q: Can you elaborate on how you’re dealing with security concerns?
 
-Jeff: We’re investing in automation to flag patterns that might indicate security breaches or code leakage. There’s still a long way to go in quantifying cost and risk (in some cases, it might be cheaper to just let someone steal code).
+Jeff: We’re investing in automation to flag patterns that might indicate security breaches or code leakage. There's still a long way to go in quantifying cost and risk (in some cases, it might be cheaper to just let someone steal code).
 
-Jeremy: There’s no going back. We just have to deal with it and learn more about encryption to make sure things are secure while they become more open.
+Jeremy: there's no going back. We just have to deal with it and learn more about encryption to make sure things are secure while they become more open.
 
 Panna: Yeah, the ship has sailed. Her focus is on ensuring their developers understands how to collaborate effectively, across different geographic locations and cultures.
 
-Jeff: IBM has learned from a couple of painful experiences to shift away from super strict compliance enforcement. If someone is doing something a certain way, there’s probably a good reason for it, so now we try to understand and learn why someone is doing something that might go against our inner source policy and figure out if it’s helping or hurting our business.
+Jeff: IBM has learned from a couple of painful experiences to shift away from super strict compliance enforcement. If someone is doing something a certain way, there's probably a good reason for it, so now we try to understand and learn why someone is doing something that might go against our inner source policy and figure out if it’s helping or hurting our business.
 
 Q: Final question: are there specific ways that make your inner sourcing approach unique due to the constraints of your specific industry?
 
 Panna: Inner source helps people help themselves — you can submit a pull request without having to wait on someone’s answer to your question. This is especially important for us because of all the different components and pieces of information we have tie together.
 
-Jeremy: I don’t think there’s a lot of things specific to retail. A lot of the stuff we do translates to other industries. For example, we’re releasing an open source React framework soon called Electrode that should be useful for a wide range of web apps.
+Jeremy: I don’t think there's a lot of things specific to retail. A lot of the stuff we do translates to other industries. For example, we’re releasing an open source React framework soon called Electrode that should be useful for a wide range of web apps.

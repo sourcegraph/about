@@ -114,7 +114,7 @@ They've been deliberate in creating boundaries between each of the three parts t
 
 ### "Clients subscribe to an event": event production
 
-Twitter has an extensive pub/sub system called EventBus, with thousands of different events that flow through it. They watned to give clients access to this stream of data with GraphQL subscriptions.
+Twitter has an extensive pub/sub system called EventBus, with thousands of different events that flow through it. They wanted to give clients access to this stream of data with GraphQL subscriptions.
 
 EventBus is a distributed queue system. Event producers are services that publish events to EventBus streams. Subscribers are services that subscribe to EventBus to receive events.
 
@@ -155,7 +155,7 @@ Next, the resulting payloads need to be delivered. Streamed event delivery at sc
 
 <img alt="Ashworth-13" src="//images.contentful.com/le3mxztn6yoo/5y1uKSOAaAyYWSSgWoOOKU/9c9031b0e71b491165d0bdc5aad9c2a8/Screen_Shot_2017-11-10_at_11.11.18_AM.png" class="flex center"/>
 
-In the live pipeline model, clients listen for events on a specific "topic". Event producers can push events onto a topic by publishing them to Live Pipeline. Then the event is delviered to all clients subscribed to the event's topic.
+In the live pipeline model, clients listen for events on a specific "topic". Event producers can push events onto a topic by publishing them to Live Pipeline. Then the event is delivered to all clients subscribed to the event's topic.
 
 To deliver GraphQL subscription payloads, a unique Live Pipeline topic is used per GraphQL subscription. Combining a bunch of data about the subscription creates a unique topic, and the client is informed of the topic so they can subscribe to it using Live Pipeline.
 

@@ -120,7 +120,7 @@ if err != nil {
 defer fp.Close()
 ```
 
-This snippet is guaranteed to work even if cases where there’s a panic and it’s standard Go practice.
+This snippet is guaranteed to work even if cases where there's a panic and it’s standard Go practice.
 
 So what's the problem? In very large files where resources cannot be tracked and freed properly, this becomes a problem.
 

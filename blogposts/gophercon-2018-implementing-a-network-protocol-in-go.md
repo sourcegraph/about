@@ -321,7 +321,7 @@ func (ns *NeighborSolicitation) marshal() ([]byte, error) {
 	// Allocation
 }
 ```
-Don’t bother allocating memory until you’ve checked your inputs:
+Don’t bother allocating memory until you've checked your inputs:
 ```go
 // Only accept IPv6 target.
 if err := checkIPv6(ns.TargetAddress); err != nil {
@@ -526,7 +526,7 @@ created by testing.(*T).Run
         /usr/local/go/src/testing/testing.go:824 +0x2e0
 ```
 
-Enter Dmitry Vyukov's `go-fuzz`. If you’re parsing raw bytes, there’s a high potential for unexpected behavior:
+Enter Dmitry Vyukov's `go-fuzz`. If you’re parsing raw bytes, there's a high potential for unexpected behavior:
 * Bad input causing application problems
 * Possibility of a panic taking down your program!
 
@@ -600,7 +600,7 @@ Let's implement the struct that represents an NDP connection.
 
 `net` vs `x/net`
 * NDP is transported over IPv6 + ICMPv6
-* Standard library net doesn’t quite provide all the functionality we need
+* Standard library net doesn't quite provide all the functionality we need
   * golang.org/x/net is designed for advanced use-cases!
 
 ICMPv6 networking packages in Go:

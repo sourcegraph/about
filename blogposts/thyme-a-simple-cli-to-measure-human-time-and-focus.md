@@ -27,7 +27,7 @@ Programmers seek out and use tools that we think will help us squeeze the most o
 *   What’s distracting me from my main focus?
 *   _Where does all my time go?_
 
-Time-tracking programs are a dime a dozen, but when we looked around, we didn’t find any that we’d want to use day-to-day as developers. Existing trackers made you manually enter information, use a clunky GUI, or didn’t let you drill down into the data. We wanted a time-tracking utility that had all the things you’d expect from a great developer tool: a simple and easy CLI, full control and access to the raw data, and source code that’s hackable and open.
+Time-tracking programs are a dime a dozen, but when we looked around, we didn't find any that we’d want to use day-to-day as developers. Existing trackers made you manually enter information, use a clunky GUI, or didn't let you drill down into the data. We wanted a time-tracking utility that had all the things you’d expect from a great developer tool: a simple and easy CLI, full control and access to the raw data, and source code that’s hackable and open.
 
 So we wrote [Thyme](https://sourcegraph.com/github.com/sourcegraph/thyme), an open-source command-line tool that lets you easily track and analyze the time you spend on your computer. Think of it as a sampling profiler, but for You instead of your machine.
 
@@ -67,7 +67,7 @@ Observations:
 
 *   In the “Active” row, you can see that the first 30 minutes of the afternoon was a period of high-frequency context switches. This was when I was deciding which charting library to use, so I was opening a new browser tab every minute and quickly scanning through docs.
 *   You can see where I became frustrated in the middle of looking for charting libraries. It’s the purple chunk of 5–10 minutes labeled “michael phelps — Google Search ”. The number of charting libraries to consider was overwhelming, so I temporarily gave up and started reading some news about the Olympics. (As a side note, holy cow Michael Phelps. What an athlete!)
-*   There’s a solid 45-minute block of blue in the “Active” row between 16:30 and 17:30\. I remember this period. It was when I wrote 70% of the code and it felt amazing. I was mainly referencing [Sourcegraph](https://sourcegraph.com/) ([“template.Must — golang/go”](https://sourcegraph.com/github.com/golang/go/-/info/GoPackage/text/template/-/Must)) and the Google charts documentation. Everything I needed was in the Chrome window next to my editor so I was in the zone.
+*   There's a solid 45-minute block of blue in the “Active” row between 16:30 and 17:30\. I remember this period. It was when I wrote 70% of the code and it felt amazing. I was mainly referencing [Sourcegraph](https://sourcegraph.com/) ([“template.Must — golang/go”](https://sourcegraph.com/github.com/golang/go/-/info/GoPackage/text/template/-/Must)) and the Google charts documentation. Everything I needed was in the Chrome window next to my editor so I was in the zone.
 *   The remainder of the afternoon shows more frequent context switches and felt less productive. I was mainly tweaking the UI and scanning through documentation for the charting library I was using. You can see frequent switches to “out.html”, which was the browser window that displayed the work-in-progress Thyme charts UI.
 
 #### Chart 3: Which apps do you rely on overall?

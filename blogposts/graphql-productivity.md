@@ -13,7 +13,7 @@ published: true
 
 Abhi Aiyer [@abhiaiyer](https://twitter.com/abhiaiyer) Senior Software Engineer @ Workpop
 
-Abhi is a life architect, but has mainly used his talents for technology. He used to love Object Oriented Problem Solving, but now finds himself in the functional world…"Schemin". Technology is not only a passion but an outlet for creative lateral thinking. Abhi is JavaScript developer with growing experience in NodeJS, React, and GraphQL. He currently hosts of GraphQL Radio and contributes tutorial content for How To GraphQL.
+Abhi is a life architect, but has mainly used his talents for technology. He used to love Object Oriented Problem Solving, but now finds himself in the functional world…"Schemin". Technology is not only a passion but an outlet for creative lateral thinking. Abhi is JavaScript developer with growing experience in Node.js, React, and GraphQL. He currently hosts of GraphQL Radio and contributes tutorial content for How To GraphQL.
 
 Stages of Schema First DevelopmentLast year Daniel talks about these 3 things that looks like this![](https://d2mxuefqeaa7sj.cloudfront.net/s_8BA9FC874D3E7ED0D40192D2B2970C884F13EC0698D6926808459705F453E563_1508967501600_Screenshot\+2017-10-25\+14.37.44.png)But it really looks like this.![](https://d2mxuefqeaa7sj.cloudfront.net/s_8BA9FC874D3E7ED0D40192D2B2970C884F13EC0698D6926808459705F453E563_1508967519947_Screenshot\+2017-10-25\+14.37.49.png)\
 **Types & Codegen & Review**\

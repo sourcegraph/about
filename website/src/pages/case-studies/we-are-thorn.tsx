@@ -27,7 +27,7 @@ export default ((props: any) => (
             <ContentSection color="white" className="pt-5 pb-3">
                 <MediaQuote
                     image="/case-studies/jacob-gillespie-thorn-square.jpg"
-                    quote="Ensuring that changes to legacy systems didn’t affect production stability was taking too long."
+                    quote="Ensuring that changes to legacy systems didn't affect production stability was taking too long."
                     author="Thorn Software Engineer Jacob Gillespie"
                 />
             </ContentSection>
@@ -46,9 +46,9 @@ export default ((props: any) => (
                 <h2 class="pt-5 pb-1">Sunsetting deprecated systems was costly and risked production stability</h2>
                 <p>
                     Determining which code relied on legacy architecture was difficult. Developers took too long to
-                    ensure that changes to legacy systems didn’t affect production stability.
+                    ensure that changes to legacy systems didn't affect production stability.
                 </p>
-                <InContentBlockquote quote="Ensuring that changes to legacy systems didn’t affect production stability was taking too long." />
+                <InContentBlockquote quote="Ensuring that changes to legacy systems didn't affect production stability was taking too long." />
 
                 <p>
                     Over 9,000 officers in 38 countries rely on Thorn to identify child victims of sexual abuse. Any

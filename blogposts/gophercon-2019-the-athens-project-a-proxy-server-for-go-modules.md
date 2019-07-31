@@ -23,7 +23,7 @@ Go 1.11 was a big release for all of us because we got a new package management 
 
 ![Athens gopher](/gophercon-2019/gophercon-2019-athens-gopher.png "Athens Gopher")
 
-Modules solved a lot, but _there’s still work to do._
+Modules solved a lot, but _there's still work to do._
 
 ## Dependency management
 
@@ -90,6 +90,6 @@ It is 5 REST API endpoints:
 
 ## Decentralization
 
-- Keep in mind: APIs stay open because of participation - If we don’t use the API (cast our votes to keep it open), it may as well be closed - Doesn’t matter if there is only one implementation, it’s not - CALL: Go try Athens, go try Athens, get involved in the Athens community. - Make your stuff work with the rest of the ecosystem. - Benefits - Dependable builds - Keep our ecosystem growing at an amazing rate - Privacy benefits
+- Keep in mind: APIs stay open because of participation - If we don’t use the API (cast our votes to keep it open), it may as well be closed - doesn't matter if there is only one implementation, it’s not - CALL: Go try Athens, go try Athens, get involved in the Athens community. - Make your stuff work with the rest of the ecosystem. - Benefits - Dependable builds - Keep our ecosystem growing at an amazing rate - Privacy benefits
 - If you want to contribute to Athens - absolutely everybody is welcome! - # athens on Gophers Slack - We will help you get started into the community
 - To get inovled: - docs.gomods.io we have instructions on how to get started - Get it running locally with docker or using our binary - Come into the Athens channel on Gophers Slack - Get help submitting your first PR - Ask questions - Meet the community

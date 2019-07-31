@@ -33,7 +33,7 @@ One line summary of this new feature
 Every detail that changed in this release
 
 [**🎖️ Thank you**](#thank-you)<br />
-Sourcegraph couldn’t be what it is without the community.
+Sourcegraph couldn't be what it is without the community.
 
 </div>
 

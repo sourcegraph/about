@@ -112,7 +112,7 @@ When a goroutine needs to be paused, chan calls into the scheduler to park G1, w
 
 ![Selection 063](//images.contentful.com/le3mxztn6yoo/31ysUHAcYMSIYke6koU8Qq/d9b30737dd4ba3dc8386e936f8c0def9/Selection_063.png)
 
-When G1 finally runs, it needs to acquire the lock. But the runtime is actually is so much smarter to make this less costly. Runtime can copy directly to the receiver stack. G1 writes directly to G2’s stack and doesn’t have to acquire any locks.
+When G1 finally runs, it needs to acquire the lock. But the runtime is actually is so much smarter to make this less costly. Runtime can copy directly to the receiver stack. G1 writes directly to G2’s stack and doesn't have to acquire any locks.
 
 On resuming, G2 does not need to acquire channel lock and manipulate the buffer. This also means one fewer memory copy.
 

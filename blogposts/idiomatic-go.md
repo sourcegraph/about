@@ -304,7 +304,7 @@ Often, larger interfaces in codebases with 6 or even 12 methods tend to only hav
 
 These large interfaces tend to be defined up-front. They aren’t discovered across implementations at a later date. Interfaces should be discovered from existing types and extracted out of them.
 
-The `io.Reader` and `io.Writer` interfaces weren’t designed up front, they were discovered later. The network, file and other byte handling types shared a similar implementation. Out of those similarities the `io.Reader` and `io.Writer` interfaces were born.
+The `io.Reader` and `io.Writer` interfaces weren't designed up front, they were discovered later. The network, file and other byte handling types shared a similar implementation. Out of those similarities the `io.Reader` and `io.Writer` interfaces were born.
 
 Key takeaways:
 

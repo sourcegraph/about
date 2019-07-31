@@ -88,7 +88,7 @@ This is done by supplying a special http.Transport to the HTTP client that issue
 
 Let’s say that a user of your application has reported to you that it’s responding very slowly to their requests. With thousands of people using the service everyday, browsing through the list of all traces hoping to find the trace corresponding to their request is like trying to find a needle in a haystack.
 
-Appdash solves this problem by giving you access to the appdash.SpanID for a given request in the SetContextSpan function for the httptrace.Middleware described above. Earlier, we used gorilla/context to associate the SpanID with the request. And we can render the span IDright into our very simple web page (perhaps in an HTML comment if you didn’t want it to be visible to all users).
+Appdash solves this problem by giving you access to the appdash.SpanID for a given request in the SetContextSpan function for the httptrace.Middleware described above. Earlier, we used gorilla/context to associate the SpanID with the request. And we can render the span IDright into our very simple web page (perhaps in an HTML comment if you didn't want it to be visible to all users).
 
 Now, a user who is experiencing performance issues with our site can directly give us the trace ID of a slow request. Alternatively, you could create an automated system to do this whenever a user reports an issue from a slow page.
 

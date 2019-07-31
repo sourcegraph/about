@@ -48,7 +48,7 @@ It’s bad enough having to wait for your IDE to boot up on the single revision 
 
 To make this possible, we added an on-demand file fetching extension to LSP. Recall that in LSP, there is a strict separation of editor frontend and language analysis. The language analysis backend is composed of programs called language servers, which expose endpoints like `textDocument/definition` that map to Code Intelligence abilities like “jump to definition.”
 
-In the original specification, language servers were assumed to have access to the local filesystem, because that’s where the code is for your editor. This doesn’t work for Sourcegraph, because we index vast quantities of code across multiple languages — too much to fit on one local disk. Our initial implementation simply used `git clone --depth 1` to fetch repositories to language server, but we soon realized this was too slow. Some of the repositories we index (especially the private ones) are massive. It can take twenty seconds or more for the `git clone` to complete and that doesn’t even involve running any code analysis yet.
+In the original specification, language servers were assumed to have access to the local filesystem, because that’s where the code is for your editor. This doesn't work for Sourcegraph, because we index vast quantities of code across multiple languages — too much to fit on one local disk. Our initial implementation simply used `git clone --depth 1` to fetch repositories to language server, but we soon realized this was too slow. Some of the repositories we index (especially the private ones) are massive. It can take twenty seconds or more for the `git clone` to complete and that doesn't even involve running any code analysis yet.
 
 To make our language servers lightning fast, we had to make files accessible to them file-by-file, as needed.
 
@@ -92,7 +92,7 @@ Cross-repository jump to definition and global usage examples are specific to So
 
 #### Integration with package managers and package repositories
 
-More and more language communities are relying on vibrant open-source package ecosystems to share and distribute libraries. A problem that comes with this brave new world, however, is the issue of keeping your dependencies up to date. Wouldn’t it be nice if your editor or IDE was aware of the dependencies in your project and could tell you which packages have new versions available for download, or could provide you the set of licenses you’re pulling in through your dependencies? The `workspace/xpackages` endpoint would make this functionality widely available.
+More and more language communities are relying on vibrant open-source package ecosystems to share and distribute libraries. A problem that comes with this brave new world, however, is the issue of keeping your dependencies up to date. Wouldn't it be nice if your editor or IDE was aware of the dependencies in your project and could tell you which packages have new versions available for download, or could provide you the set of licenses you’re pulling in through your dependencies? The `workspace/xpackages` endpoint would make this functionality widely available.
 
 #### Advanced definition search
 

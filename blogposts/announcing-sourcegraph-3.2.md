@@ -73,7 +73,7 @@ We’ve made it easier to deploy Sourcegraph to your preferred cloud environment
 
 ## Better SSL documentation
 
-Our [NGINX SSL configuration documentation](https://docs.sourcegraph.com/admin/nginx) has been revised and improved, plus there’s now a [guide for creating self-signed certificates](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx) and how to get them [trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
+Our [NGINX SSL configuration documentation](https://docs.sourcegraph.com/admin/nginx) has been revised and improved, plus there's now a [guide for creating self-signed certificates](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx) and how to get them [trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
 
 The 3.3 release will bring even more documentation improvements such as a new theme and better documentation for administrators first setting up a Sourcegraph instance.
 

@@ -20,7 +20,7 @@ Hmm. LGTM?
 
 ![Code review is tedious.](//images.contentful.com/le3mxztn6yoo/3fbdV3zjyMCAI4s0iegQaK/14672e9928b60bcd0c06650713e694db/1_KbPOkjIgK5Y9-znSHL0ymg.png)
 
-There’s a better way
+there's a better way
 to review fast but ensure
 good code quality:
 
@@ -52,7 +52,7 @@ Stop context-switching
 and getting lost line by line
 in so many tabs.
 
-There’s a better way 
+There's a better way 
  — a Google Chrome extension.
 [**Try it out today**](https://docs.sourcegraph.com/integration/browser_extension?hl=en).
 
@@ -68,6 +68,6 @@ with Go support, and TypeScript and JavaScript in beta
 
 ![1*H8CMqa0AW96Qo3QYJHzV0Q](//images.contentful.com/le3mxztn6yoo/jRPMuudUFqik84G6UKk48/d752b4a5ac3fafbc5bc7132fe6a3e8c5/1_H8CMqa0AW96Qo3QYJHzV0Q.png)
 
-P.P.S. Each stanza of this post was a haiku. If you think there’s something poetic about good code and good code reviews, [follow us on Twitter](https://twitter.com/srcgraph) or check out [Sourcegraph](https://sourcegraph.com).
+P.P.S. Each stanza of this post was a haiku. If you think there's something poetic about good code and good code reviews, [follow us on Twitter](https://twitter.com/srcgraph) or check out [Sourcegraph](https://sourcegraph.com).
 
 [![](https://cdn-images-1.medium.com/max/800/1*VUuHfrjTo93o7TreumQaRA.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)

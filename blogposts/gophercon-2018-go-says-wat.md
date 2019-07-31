@@ -31,7 +31,7 @@ Go developers watch videos like Gary Bernhardt's Wat and feel smug. After all, G
 - Strong typing doesn't always save us.
 
 Common WATs:
-- Why doesn’t this compile?
+- Why doesn't this compile?
 - Why aren’t these things equal?
 - Where did my updates go?
 - Why does Go allow this?

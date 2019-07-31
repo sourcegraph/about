@@ -46,7 +46,7 @@ Kat answers the opening question by building a beer reviewing service that has a
 - Ability to add some sample data.
 
 ## Types of Structure
-There’s a variety of ways one can dive in and start organizing a project. Some common ways of the beer reviewing service could be structured are:
+There's a variety of ways one can dive in and start organizing a project. Some common ways of the beer reviewing service could be structured are:
 - [Flat Structure](https://sourcegraph.com/github.com/katzien/go-structure-examples@master/-/tree/flat)
 <img width="832" alt="screenshot 2018-08-28 16 01 40" src="https://user-images.githubusercontent.com/4897310/44753563-c2f20200-aadb-11e8-908d-16803b637fe4.png">
 
@@ -65,7 +65,7 @@ However, there are some issues with the group by function approach. For example,
     - Everything is grouped logically, but it’s still hard to decide which packages should be reused or when to make a new package.
 <img width="832" alt="screenshot 2018-08-28 16 02 01" src="https://user-images.githubusercontent.com/4897310/44753609-e6b54800-aadb-11e8-8d3e-73698cc0da4a.png">
 
-There’s a different approach that we can try - Grouping by context or also known as Domain Driven Development.
+There's a different approach that we can try - Grouping by context or also known as Domain Driven Development.
 
 ## Domain Driven Development
 Domain driven development works by first establishing your domain and business logic. It makes you think about the domain you’re dealing with and the business logic in your app before you even write a single line of code. Next, you’ll define bounded contexts which help you decide what has to be consistent and what can develop independently.

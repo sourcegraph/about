@@ -14,7 +14,7 @@ published: true
 
 Docker announced that the Docker Hub and Docker Store (backed by the same Docker Registry) [will be down](https://success.docker.com/article/planned-downtime-on-hub-cloud-store) (totally offline) from [11:00 Pacific Time](https://everytimezone.com/#2018-8-25,-1080,b8jj) 25 August with 15-45 minutes (expected) downtime.
 
-You may be thinking “I use Kubernetes, doesn’t this only affect people executing `docker image pull`? Well yes, but that is what Kubernetes does when it doesn’t find a requested image locally.
+You may be thinking “I use Kubernetes, doesn't this only affect people executing `docker image pull`? Well yes, but that is what Kubernetes does when it doesn't find a requested image locally.
 
 Below is the advice we’ve given our customers to help them work around the outage and we encourage you to share this with anyone who uses Kubernetes to help them have an incident and outage free weekend.
 
