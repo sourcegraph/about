@@ -48,7 +48,7 @@ Reading the implementation of [DockerCli’s Command method](https://sourcegraph
 
 So, in the case of “docker build”, it calls the [CmdBuild](https://sourcegraph.com/github.com/docker/docker/-/def/GoPackage/github.com/docker/docker/api/client/-/DockerCli/CmdBuild) method, which we can navigate to using Sourcegraph.
 
-there's a lot going on here. At the top of the method, we see code dealing with a variety of input methods for the Dockerfile and configuration. Oftentimes, a good strategy for reading through a long method is to work backwards. Start at the bottom and look at what the method does at the very end. In many cases, that’s the meat of the method and everything before is just setup for completing that core action.
+There's a lot going on here. At the top of the method, we see code dealing with a variety of input methods for the Dockerfile and configuration. Oftentimes, a good strategy for reading through a long method is to work backwards. Start at the bottom and look at what the method does at the very end. In many cases, that’s the meat of the method and everything before is just setup for completing that core action.
 
 Now that we’ve understood a single Docker client command through and through, you might be interested in diving deeper still and finding where the daemon receives the request and following it all the way down to its interaction with LXC and the kernel. That’s certainly a valid route, but we leave that for now as an exercise to the reader. Instead, let’s get a broader understanding of the key components of the client.
 
