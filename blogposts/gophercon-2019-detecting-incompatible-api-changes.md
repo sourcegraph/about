@@ -130,7 +130,7 @@ Now the package author might be tempted to say, “You fool! I gave you a name f
 
 Instead of saying that every possible bit of client code has to compile for a change to be compatible, we’ll exclude some problematic constructs. We just saw one: copying a struct literal or other type literal from inside the package. 
 
-Another one is the use of unkeyed struct literals, where you omit the field names when building a struct. Those are fine if you control the struct—if it’s in your own package, for instance. But don’t use them for structs outside your package. there's even a vet check for that one.
+Another one is the use of unkeyed struct literals, where you omit the field names when building a struct. Those are fine if you control the struct—if it’s in your own package, for instance. But don’t use them for structs outside your package. There's even a vet check for that one.
 
 It should come as no surprise that we have to exclude the use of the unsafe package from our definition of compile-time compatibility. For example, you can use `unsafe.Sizeof` to get the size of a struct as a compile-time constant, which basically means that any change to the size of the struct could break client code.
 
@@ -240,7 +240,7 @@ Given two packages, an old and and a new, we go through their APIs and compare e
 
 We match symbols by name at this stage. And the fundamental rule of compatibility applies: if a name was removed, that’s an incompatible change; if a name was added, that’s a compatible change.
 
-It’s worth repeating: it’s always a compatible change to add a top-level symbol to your package. You can’t possibly break old code by doing that. there's no way old code could even detect your new symbol, not even by reflection.
+It’s worth repeating: it’s always a compatible change to add a top-level symbol to your package. You can’t possibly break old code by doing that. There's no way old code could even detect your new symbol, not even by reflection.
 
 And what if the name is present in both the old and new packages? Then the rule depends on the sort of thing we’re looking at. 
 
@@ -441,7 +441,7 @@ One last category of types to talk about: numeric types. You can compatibly “w
 
 Now wait a minute, you say. That can’t be right. I can’t change an int32 to an int64 in my package without potentially breaking clients, as this example shows.
 
-That’s true. there's something I haven’t mentioned yet. It turns out to simplify things immensely. The compatibility rule for numeric types — in fact, _all the **type** compatibility rules I've been telling you about_ — assume that the type in question is the underlying type of a defined type. Or in plain English, that the type has a name.
+That’s true. There's something I haven’t mentioned yet. It turns out to simplify things immensely. The compatibility rule for numeric types — in fact, _all the **type** compatibility rules I've been telling you about_ — assume that the type in question is the underlying type of a defined type. Or in plain English, that the type has a name.
 
 According to this definition of compatibility, you can’t compatibly change a type unless you've named it.
 

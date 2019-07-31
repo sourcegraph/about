@@ -67,7 +67,7 @@ Joan: It would probably be security — if there was a security breach of so
 
 Q: Can you elaborate on how you’re dealing with security concerns?
 
-Jeff: We’re investing in automation to flag patterns that might indicate security breaches or code leakage. there's still a long way to go in quantifying cost and risk (in some cases, it might be cheaper to just let someone steal code).
+Jeff: We’re investing in automation to flag patterns that might indicate security breaches or code leakage. There's still a long way to go in quantifying cost and risk (in some cases, it might be cheaper to just let someone steal code).
 
 Jeremy: there's no going back. We just have to deal with it and learn more about encryption to make sure things are secure while they become more open.
 
