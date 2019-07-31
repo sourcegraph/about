@@ -67,7 +67,7 @@ Open source projects die or fade for a variety of reasons: maintainers move on, 
 
 *   It might be depended on by something somewhere
 *   Security and trust are important values of open source and to ensure these, the code needs to be kept up to date.
-*   there's potential to build new features and fix new bugs that can benefit others.
+*   There's potential to build new features and fix new bugs that can benefit others.
 
 How can you start?
 
