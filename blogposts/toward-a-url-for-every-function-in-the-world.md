@@ -12,7 +12,7 @@ published: true
 
 
 
-What’s the best semantic and future-proof way to link to a piece of code? there's been some interesting [discussion](https://news.ycombinator.com/item?id=8046710) about [the right way](http://andrew.yurisich.com/work/2014/07/16/dont-link-that-line-number/), and it’s something we think about a lot at [Sourcegraph](https://sourcegraph.com) as we build a better way for developers to discover and understand code.
+What’s the best semantic and future-proof way to link to a piece of code? There's been some interesting [discussion](https://news.ycombinator.com/item?id=8046710) about [the right way](http://andrew.yurisich.com/work/2014/07/16/dont-link-that-line-number/), and it’s something we think about a lot at [Sourcegraph](https://sourcegraph.com) as we build a better way for developers to discover and understand code.
 
 The consensus is that when you’re linking to a file, you should refer to a specific commit ID, not a branch or tag, so that the link works even if the file’s lines change. (On GitHub and [Sourcegraph](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/fmt/-/Fprintf), you can change the URL to refer to an absolute commit ID by pressing “y”.)
 
