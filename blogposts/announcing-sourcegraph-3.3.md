@@ -189,7 +189,7 @@ See examples of how developers at companies such as Uber, Lyft, and Yelp depend 
   <p style="text-align: center"><a href="https://vimeo.com/331346276" target="_blank">View on Vimeo</a></p>
 </p>
 
-[Sentry](https://sentry.io/) is an [open-source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly. When browsing code on Sourcegraph or your code host, Wouldn't it be great if you could jump straight to the Sentry records page whenever you see error handling code instead of manually navigating around Sentry?
+[Sentry](https://sentry.io/) is an [open-source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly. When browsing code on Sourcegraph or your code host, wouldn't it be great if you could jump straight to the Sentry records page whenever you see error handling code instead of manually navigating around Sentry?
 
 The new [Sentry Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/sourcegraph-sentry) does just that and runs anywhere that Sourcegraph does, such as code views on GitHub/GitLab with the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
 
