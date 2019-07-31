@@ -14,7 +14,7 @@ published: true
 
 **Update (September 20, 2017):** Viewing a list of repositories that refer to another repository is currently disabled. It will be added back soon. Viewing function call sites across repositories is still supported.
 
-As an open-source author, I love seeing who else uses my projects. It’s super motivating, and it makes the world of code feel more connected (hello to my library users in Azerbaijan and Nigeria and everywhere else!). As a user, this information helps me choose the best library to use. People usually rely on GitHub stars to see this information. But there’s a problem: **stars only tell you who’s interested in a project, not who actually uses it.**
+As an open-source author, I love seeing who else uses my projects. It’s super motivating, and it makes the world of code feel more connected (hello to my library users in Azerbaijan and Nigeria and everywhere else!). As a user, this information helps me choose the best library to use. People usually rely on GitHub stars to see this information. But there's a problem: **stars only tell you who’s interested in a project, not who actually uses it.**
 
 Today, we’re introducing **Sourcegraph “used by” badges**, for you to show off how many people are using your library. Check out the sample badges below.
 

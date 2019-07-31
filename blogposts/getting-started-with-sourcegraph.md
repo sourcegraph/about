@@ -14,7 +14,7 @@ published: true
 
 ## Use Sourcegraph to discover and understand code better
 
-There’s a gold mine of code available to programmers, but choosing the right library and understanding how to use it can be tricky. We created [Sourcegraph](https://sourcegraph.com), a fast, semantic code search and cross-reference engine, to help developers like you discover and understand code better.
+there's a gold mine of code available to programmers, but choosing the right library and understanding how to use it can be tricky. We created [Sourcegraph](https://sourcegraph.com), a fast, semantic code search and cross-reference engine, to help developers like you discover and understand code better.
 
 [Sourcegraph](https://sourcegraph.com) semantically indexes all the open-source code available on the web (in multiple languages). You can search for any definition in code and see everywhere it’s being used. When viewing code, everything is clickable (with jump-to-definition links) and has documentation/type tooltips. And you can do all of this in your web browser, without needing to configure any editor plugins.
 

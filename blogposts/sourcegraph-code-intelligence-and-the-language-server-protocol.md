@@ -20,7 +20,7 @@ How does the magic work? A big part of it is a new open standard called the **La
 
 ### Code intelligence
 
-Jump-to-definition, find references, and symbol search are crucial tools for the everyday tasks of understanding and working with code. Their importance is obvious to users of IDEs like the Eclipse IDE, and there’s a constant effort to build plugins that provide these features for more and more languages.
+Jump-to-definition, find references, and symbol search are crucial tools for the everyday tasks of understanding and working with code. Their importance is obvious to users of IDEs like the Eclipse IDE, and there's a constant effort to build plugins that provide these features for more and more languages.
 
 The [Language Server Protocol](https://github.com/Microsoft/language-server-protocol), originally released by Microsoft, is an open standard that makes it much easier to write editor plugins that work across many languages. And beyond the code in your editor, it has enabled Sourcegraph to bring such features to all the other places programmers view code, including your [web browser](https://sourcegraph.com/github.com/junit-team/junit4@d07ed0bf79efd81c260f327854a02097f59fffb2/-/blob/src/main/java/org/junit/Test.java#L66:20), [code review tool](https://docs.sourcegraph.com/integration/browser_extension?hl=en), and [code search](https://text.sourcegraph.com/introducing-code-search-in-sourcegraph-5944a3b75df7).
 
@@ -50,7 +50,7 @@ Historically, the problem of supporting multiple languages in multiple editors h
 
 Defining a clear protocol between the language analyzer and the code viewer/editor is crucial. Separating these concerns means no language-specific code at the application layer. The folks working on the frontend can focus on user experience without worrying about language semantics. The folks working on language analysis have a clear interface and don’t have to worry about the mechanics of the frontend.
 
-LSP defines such a protocol that sits between editor plugins and the underlying analysis libraries. You build one language server for each language and one plugin for each editor. Each editor plugin that speaks LSP will now have support for every single language server. You’ve reduced a O(M·N) problem to a O(M+N) problem.
+LSP defines such a protocol that sits between editor plugins and the underlying analysis libraries. You build one language server for each language and one plugin for each editor. Each editor plugin that speaks LSP will now have support for every single language server. you've reduced a O(M·N) problem to a O(M+N) problem.
 
 ![1*ws2LYhzfuHpEimlb9-knWQ](//images.contentful.com/le3mxztn6yoo/5fAE4L5xKEM2wOE6WGsMyY/18126663e1f38d946fcfae2b06c2cd88/1_ws2LYhzfuHpEimlb9-knWQ.png)
 

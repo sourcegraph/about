@@ -12,7 +12,7 @@ published: true
 
 In Go, it is idiomatic to have explicit error handling. This means that many functions return an `error` in addition to the expected result (e.g. [strconv.ParseBool](https://golang.org/pkg/strconv/#ParseBool)).
 
-Go code can also [panic](https://golang.org/doc/effective_go.html#panic) and [recover](https://golang.org/doc/effective_go.html#recover), which is similar to throwing and catching exceptions in other languages. In Go, panic should be reserved for situations where the error is unrecoverable and it doesn’t make sense for normal execution to continue.
+Go code can also [panic](https://golang.org/doc/effective_go.html#panic) and [recover](https://golang.org/doc/effective_go.html#recover), which is similar to throwing and catching exceptions in other languages. In Go, panic should be reserved for situations where the error is unrecoverable and it doesn't make sense for normal execution to continue.
 
 If panics are supposed to be unrecoverable, then when does it make sense to recover from them in practice?
 
@@ -25,7 +25,7 @@ By searching over the Go repository itself, we can find examples of when the Go 
 - [87 references to recover in test files](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24%40go1.10+file:_test.go%24+max:100+%22%3D+recover%28%29%22)
     - It is usually used to verify that a panic happened when it was intended to.
 
-One notable example of recover being used is in [net/http](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24%40go1.10+-file:_test.go+file:net/http+%22%3D+recover%28%29%22). The connection struct recovers from panics so that a panic in a request handler doesn’t crash the entire server. Interestingly enough, this might actually be an anti-pattern [according to David Symonds](https://github.com/grpc/grpc-go/issues/441#issuecomment-155588816):
+One notable example of recover being used is in [net/http](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24%40go1.10+-file:_test.go+file:net/http+%22%3D+recover%28%29%22). The connection struct recovers from panics so that a panic in a request handler doesn't crash the entire server. Interestingly enough, this might actually be an anti-pattern [according to David Symonds](https://github.com/grpc/grpc-go/issues/441#issuecomment-155588816):
 
 > Quietly catching a panic might leave the server in an inconsistent or incorrect state, so while crashing sucks at least you'll find out and can go fix the panic.
 >

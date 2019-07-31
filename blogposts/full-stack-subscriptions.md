@@ -26,7 +26,7 @@ Executing this query returns a list of houses, their name, amount of banner men 
 - we sent a request containing a document, got a response (JSON)
 - GraphQL Language Specification (domain agnostic)
 - Schema (domain specific)
-- Express (NodeJS HTTP server)
+- Express (Node.js HTTP server)
 - GraphQL Server (GraphQL-js)
 - GraphiQL
 

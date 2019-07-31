@@ -96,7 +96,7 @@ to create these libraries and the tool.
   - construct with a message descriptor
 
 ### GRPC reflection
-  - okay we have dynamic protos but how do we do it with rpc?
+  - okay we have dynamic protobufs but how do we do it with rpc?
   - whole purpose of this is so that a client can ask a server for all of its methods and type signature so we can auto-generate CLI calls to them
   - service reflection!
 

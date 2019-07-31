@@ -15,7 +15,7 @@ Presenter: [George Tankersley](https://www.gophercon.com/agenda/speakers/279045)
 Liveblogger: [Matt Jaffee](https://twitter.com/mattjaffee)
 
 Everyone knows: if you need to go fast, bust out the assembly. But what if
-there’s better performance to be had just by writing Go more carefully?
+there's better performance to be had just by writing Go more carefully?
 
 ## Summary
 

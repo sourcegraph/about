@@ -123,11 +123,11 @@ Fetching remote data is the cornerstone of nearly every tool that developers use
 
 ### Smart components with Apollo Link
 
-Create componnets that manage the control flow of data request and reuse them everywhere.
+Create components that manage the control flow of data request and reuse them everywhere.
 
 ## Schema stitching: using GraphQL with GraphQL
 
-Piggybacking in GraphQL's instropection ability, you can create dynamic endpoints that are always up to date. You can mix and match API microservices and third parties to build the request shape your app needs. `
+Piggybacking in GraphQL's introspection ability, you can create dynamic endpoints that are always up to date. You can mix and match API microservices and third parties to build the request shape your app needs. `
 
 ## Apollo Engine: unlock your GraphQL
 

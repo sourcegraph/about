@@ -57,7 +57,7 @@ Make sure it was installed and is executable.
 go-langserver -version
 ```
 
-> If the above didn’t work, make sure you have [Go configured correctly](https://golang.org/doc/install#testing).
+> If the above didn't work, make sure you have [Go configured correctly](https://golang.org/doc/install#testing).
 
 That’s it! The Go language server is ready to use.
 

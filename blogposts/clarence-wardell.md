@@ -18,7 +18,7 @@ His time as innovation fellow started in 2014, right around the time the convers
 
 ![1*75TAuLENSspfiw96cW5Q2A](//images.contentful.com/le3mxztn6yoo/1NbGrwYvFeOq6imUOimgMg/27e1186b665e0e9ed3e9e8e2ca118fc2/1_75TAuLENSspfiw96cW5Q2A.jpeg)
 
-They compiled 49 recommendations based on data for the White House. We looked around the country and saw police departments actively responding to citizen concerns, not waiting around for mandates or legislation — Dallas, Seattle, Louisville. They invited folks to the White House to have a discussion and workshops. They started a conversation to share more data and ended the meeting with a commitment board: 14 PDs committed to releasing policing data in formats that were machine-readable. They didn’t ask for a specific product right away, but wanted folks to get the process started and off the ground. This became the Police Data Initiative in May 2015.
+They compiled 49 recommendations based on data for the White House. We looked around the country and saw police departments actively responding to citizen concerns, not waiting around for mandates or legislation — Dallas, Seattle, Louisville. They invited folks to the White House to have a discussion and workshops. They started a conversation to share more data and ended the meeting with a commitment board: 14 PDs committed to releasing policing data in formats that were machine-readable. They didn't ask for a specific product right away, but wanted folks to get the process started and off the ground. This became the Police Data Initiative in May 2015.
 
 As of this past summer, they’ve reached 56 police departments around the country, both big and small. 80 jurisdictions, 150+ data sets covering 40 million individuals.
 

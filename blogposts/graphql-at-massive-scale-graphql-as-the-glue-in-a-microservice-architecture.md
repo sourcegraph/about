@@ -36,7 +36,7 @@ Into this fray, GraphQL provides a number of key points of value that help bring
 * The GraphQL API boundary enforces a clear separation between underlying data sources and presentation layer
 
 That being said, GraphQL also comes with some costs:
-* Which team "owns" the Graph QL microservice and is responsible for maintaining code standards and enforcing conventions?
+* Which team "owns" the GraphQL microservice and is responsible for maintaining code standards and enforcing conventions?
 * How can teams continue to make independent changes to their own services without having to go through a central clearinghouse that can easily become a development bottleneck?
 * Does this introduce a single point of failure where one bad commit can take down the whole system?
 * How to deal with tracing given the extra API layer GraphQL introduces

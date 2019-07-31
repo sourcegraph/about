@@ -21,9 +21,9 @@ There are many benefits to open-sourcing your code. Here are just a few:
 *   It helps give you a bigger footprint of influence in the programming world.
 *   It lets you get the most out of sunk costs.
 
-You’ve invested a lot of time and effort into your code. Open-sourcing it makes it available and reusable. Employees come and go, as do companies, but open-source code will always be available to you and others who find it useful.
+you've invested a lot of time and effort into your code. Open-sourcing it makes it available and reusable. Employees come and go, as do companies, but open-source code will always be available to you and others who find it useful.
 
-Open-sourcing has many benefits, but there’s a lot of open-source code out there already. How do you make your project stand out? Here’s Andrey’s 4 steps you can use to build great open-source software.
+Open-sourcing has many benefits, but there's a lot of open-source code out there already. How do you make your project stand out? Here’s Andrey’s 4 steps you can use to build great open-source software.
 
 **_Read on for more, or watch the video and slides._**
 
@@ -42,7 +42,7 @@ The beginning of every open-source project looks like this:
 3.  Discard the original project to focus on the libraries, which become your new project.
 4.  Go back to step 2 and repeat.
 
-The story of [urllib3](https://github.com/shazow/urllib3) begins with the problem of trying to upload billions of images to S3 in 2008\. Using existing Python libraries, this would have taken 3+ weeks because there was no good concurrency support. You could use s3funnel, a multithreaded S3 client, but managing threads is painful. You could use a worker pool in s3funnel, instead, but existing HTTP libraries didn’t re-use connections and most solutions weren’t threadsafe or lacked multipart (filepost) encoding. Enter [urllib3](https://github.com/shazow/urllib3).
+The story of [urllib3](https://github.com/shazow/urllib3) begins with the problem of trying to upload billions of images to S3 in 2008\. Using existing Python libraries, this would have taken 3+ weeks because there was no good concurrency support. You could use s3funnel, a multithreaded S3 client, but managing threads is painful. You could use a worker pool in s3funnel, instead, but existing HTTP libraries didn't re-use connections and most solutions weren't threadsafe or lacked multipart (filepost) encoding. Enter [urllib3](https://github.com/shazow/urllib3).
 
 In Andrey’s words, “The solution space [in engineering] is about building something and solving a problem. For [urllib3](https://github.com/shazow/urllib3), the space was really small and the solution to other things were really useful, and that’s what made it successful.”
 
@@ -86,7 +86,7 @@ Two things helped Docker develop into a widely adopted open-source project:
 1.  It’s very well funded.
 2.  It has thousands of contributors helping for free.
 
-One of the key insights behind Docker’s success is that they didn’t over-focus on the business model until the OSS project was insanely popular. So how can you replicate this? Enter the “corp’en source model” — where open source work becomes the core competency and business of a corporation.
+One of the key insights behind Docker’s success is that they didn't over-focus on the business model until the OSS project was insanely popular. So how can you replicate this? Enter the “corp’en source model” — where en source work becomes the core competency and business of a corporation.
 
 **The Corp’en source model**
 
@@ -94,7 +94,7 @@ Some of the most well-known companies that embrace corp-en source include:
 
 1.  Docker (via an open core)
 2.  Gratipay (via dogfooding their own product to receive revenue)
-3.  Nginx (via consulting and support)
+3.  NGINX (via consulting and support)
 4.  Mozilla (via advertising)
 5.  GnuPG (via charity and grants)
 

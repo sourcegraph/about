@@ -74,7 +74,7 @@ Fortunately, Go and a few libraries make it relatively simple to avoid these iss
 
 ### No web framework
 
-We don’t use a web framework because we found we didn’t need one in Go. Go’s [net/http](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/net/http/-/DefaultClient) and a few wrapper/helper functions suffice for us. Here are the techniques and glue code we use to make it all work in the absence of a framework.
+We don’t use a web framework because we found we didn't need one in Go. Go’s [net/http](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/net/http/-/DefaultClient) and a few wrapper/helper functions suffice for us. Here are the techniques and glue code we use to make it all work in the absence of a framework.
 
 **Handler functions:** We define our handlers with an error return value, and we use a simple wrapper function to make them implement [http.Handler](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/net/http/-/Handler). This means we can centralize error handling instead of having to format error messages and pass them to the [http.Error](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/net/http/-/Error) func for each possible error. Our handler functions look like:
 

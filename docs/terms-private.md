@@ -77,7 +77,7 @@ As used on this page, the following terms have the following specific meanings:
 
 1.7 **“Sourcegraph”**, **“we”**, or **“us”** refers to Sourcegraph, Inc., as well as its affiliates.
 
-1.8 **“You”** refers to the individual person, company, or organization that has visited or is using the Software, that accesses an Instance, or that directs the use of the Instance. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), you represent and warrant that you’re authorized to bind that company or organization to the Agreement and that you’ve read, understood, and agree to be bound by the Agreement on that company or organization’s behalf.
+1.8 **“You”** refers to the individual person, company, or organization that has visited or is using the Software, that accesses an Instance, or that directs the use of the Instance. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), you represent and warrant that you’re authorized to bind that company or organization to the Agreement and that you've read, understood, and agree to be bound by the Agreement on that company or organization’s behalf.
 
 1.9 **“Your Code”** means the source code and all source code metadata (e.g. version control system (VCS) data) that you analyze via the Software.
 
@@ -95,7 +95,7 @@ As used on this page, the following terms have the following specific meanings:
 
 2. **Age Limitation**. In order to create an Instance, you must be at least eighteen (18) years old and we do not permit any users under thirteen (13) years old to use our Software for any purpose. If we discover that an Instance is being used by a user under thirteen (13) years old, we will notify you that the Instance must immediately be shut down.
 
-3. **Security**. You’re responsible for the security of your Instance when using our Software. While we may offer tools to help you maintain your Instance’s security, these are not guaranteed to work. You’re responsible for all Content posted on your Instance under your user account, even if you didn’t post it. We have no liability of any kind for any loss or damage from your failure to secure your Instance.
+3. **Security**. You’re responsible for the security of your Instance when using our Software. While we may offer tools to help you maintain your Instance’s security, these are not guaranteed to work. You’re responsible for all Content posted on your Instance under your user account, even if you didn't post it. We have no liability of any kind for any loss or damage from your failure to secure your Instance.
 
 <span style="color:#f96216;">
 
@@ -216,7 +216,7 @@ The Software may call the servers of other websites or services (**“Third Part
 
 The Software may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs).
 
-If there’s ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
+If there's ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
 
 <span style="color:#f96216;">
 

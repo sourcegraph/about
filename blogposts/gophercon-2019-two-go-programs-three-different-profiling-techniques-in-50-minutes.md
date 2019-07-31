@@ -300,7 +300,7 @@ Boost the performance of the code - nearly 4 times!
 ![Amdahl's law](/images/gophercon2019-amdahls-law.jpg "Amdahl's law")
 
 For this algorithm - more CPU's - better! If we have 1000 cores we can solve each row at the same. If we have  1000000 cores - we can compute every pixel in parallel.
-But we spend 50% of writing the image. But thats a sequantial operation.
+But we spend 50% of writing the image. But that's a sequential operation.
 
 The speed is limited by serial part of an application that can not be paralleled. 
 

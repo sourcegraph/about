@@ -53,7 +53,7 @@ If your favorite code review tool is not yet supported, please let us know!
 
 #### Have more fruitful conversations around code
 
-Because Sourcegraph is just a web app, you can link to any location in your codebase. Our users have found this useful as a starting point for **code discussions**. Sharing a link is easy and doesn’t require the person on the other end to go through the annoying exercise of opening up a new editor or stashing their work-in-progress changes to check out your branch.
+Because Sourcegraph is just a web app, you can link to any location in your codebase. Our users have found this useful as a starting point for **code discussions**. Sharing a link is easy and doesn't require the person on the other end to go through the annoying exercise of opening up a new editor or stashing their work-in-progress changes to check out your branch.
 
 This addresses a critical communication bottleneck in software development and makes it easier to disseminate knowledge across your team. (Hint hint: if you want to give the management a good reason to try Sourcegraph, we’ve found “addresses a critical communication bottleneck” and “disseminate knowledge across our team” to be persuasive lines). Here’s how it looks in action:
 
@@ -65,7 +65,7 @@ Using Sourcegraph, I was easily able to identify the author of a piece of code a
 
 Do you rely heavily on open-source libraries? Or does your team have multiple microservices versioned in separate repositories? Sourcegraph lets you trace state changes and control flow logic across repository boundaries:
 
-[![](https://cdn-images-1.medium.com/max/1000/1*utBisaCtaS1qtRPtHwtXpw.png)](https://sourcegraph.com/github.com/Sberned/kafka-logback@582266a6ad00fd878315f4f3ff983900f04e7c1f/-/blob/src/test/java/ru/sberned/kafkalogback/KafkaAppenderTest.java#L118:21-118:29)Sourcegraph’s jump-to-definition works even if the definition is in a separate repository or an open-source library. Because it’s all on the web, there’s no need to check out code to your local machine.
+[![](https://cdn-images-1.medium.com/max/1000/1*utBisaCtaS1qtRPtHwtXpw.png)](https://sourcegraph.com/github.com/Sberned/kafka-logback@582266a6ad00fd878315f4f3ff983900f04e7c1f/-/blob/src/test/java/ru/sberned/kafkalogback/KafkaAppenderTest.java#L118:21-118:29)Sourcegraph’s jump-to-definition works even if the definition is in a separate repository or an open-source library. Because it’s all on the web, there's no need to check out code to your local machine.
 
 #### Supported Java project types
 

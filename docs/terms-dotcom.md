@@ -63,7 +63,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 As used on this page, the following terms have the following specific meanings:
 
-1.1 **“Account”** means the account you’ve created via the Site in order to use the Services.
+1.1 **“Account”** means the account you've created via the Site in order to use the Services.
 
 1.2 **“Agreement”** means, collectively, the terms and conditions laid out on this page (these “Terms”), and all other applicable rules, policies, and procedures that we may publish from time to time on the Site, including but not limited to our [Privacy Policy](/privacy).
 
@@ -81,7 +81,7 @@ As used on this page, the following terms have the following specific meanings:
 
 1.9 **“Sourcegraph”**, **“we”**, or **“us”** refers to Sourcegraph, Inc., as well as its affiliates.
 
-1.10 **“You”** refers to the individual person, company, or organization that has visited or is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), you represent and warrant that you’re authorized to bind that company or organization to the Agreement and that you’ve read, understood, and agree to be bound by the Agreement on that company or organization’s behalf.
+1.10 **“You”** refers to the individual person, company, or organization that has visited or is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), you represent and warrant that you’re authorized to bind that company or organization to the Agreement and that you've read, understood, and agree to be bound by the Agreement on that company or organization’s behalf.
 
 <span style="color:#f96216;">
 
@@ -99,7 +99,7 @@ As used on this page, the following terms have the following specific meanings:
 
 3. **Security**. You’re responsible for the security of your Account when using our Services. While we may offer tools to help you maintain your Account’s security, these are not guaranteed to work. Accordingly:
 
-    (i) you’re responsible for all Content posted under your Account (even if you didn’t post it);
+    (i) you’re responsible for all Content posted under your Account (even if you didn't post it);
 
     (ii) you’re responsible for maintaining the security of your Account and password and we have no liability of any kind for any loss or damage from your failure to secure them; and
 
@@ -127,7 +127,7 @@ As used on this page, the following terms have the following specific meanings:
 
 2. **Grant**. By posting UGC on or through the Services, you grant (and you represent and warrant that you have all rights necessary to grant) to Sourcegraph a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, modify, and publish all such UGC via the Services (including your name, voice, and/or likeness as contained in your UGC), including for marketing and promotion.
 
-3. **Representations and Warranties Regarding UGC**. In connection with your UGC, you represent, warrant, and covenant that you have the right to post it, including written consent from anyone referenced or involved, it doesn’t violate any laws (such as IP or privacy rights), and we won’t have to pay anybody else (including you) in order to host it and make it available to other users.
+3. **Representations and Warranties Regarding UGC**. In connection with your UGC, you represent, warrant, and covenant that you have the right to post it, including written consent from anyone referenced or involved, it doesn't violate any laws (such as IP or privacy rights), and we won’t have to pay anybody else (including you) in order to host it and make it available to other users.
 
 4. **Responsibility for UGC**. We take no responsibility and assume no liability for any UGC that you or any other user or third-party posts. You’re solely responsible for your UGC and the consequences of posting it, and you agree that we’re only acting as a passive conduit for your online distribution and publication of your UGC. You understand and agree that you may be exposed to UGC that is inaccurate, objectionable, inappropriate for children, or otherwise unsuited to your purpose, and we’re not liable for any damages you allege to incur as a result.
 
@@ -197,7 +197,7 @@ The Services may call the servers of other websites or services (**“Third Part
 
 The Services may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs).
 
-If there’s ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
+If there's ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
 
 <span style="color:#f96216;">
 

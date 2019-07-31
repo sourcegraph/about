@@ -188,7 +188,7 @@ Ian Taylor will present the latest design in his talk tomorrow.
 
 With Go, we wanted to explicitly refer to dependencies similar to Java.
 
-We started with goinstall which downloaded the dependencies into GOROOT.
+We started with goinstall which downloaded the dependencies into $GOROOT.
 
 In 2011, we introduced GOPATH to separate the distribution from the actual
 dependencies so that users could run multiple different distributions and to
