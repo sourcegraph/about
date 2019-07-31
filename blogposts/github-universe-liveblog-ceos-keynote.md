@@ -49,7 +49,7 @@ Let’s talk about students. When Wanstrath was in college, he torrented a lot o
 
 _[Editor’s note: unfortunately, conference WiFi cut out at this part of the talk. We’re trying to get the slides to fill this in.]_
 
-there's also GitHub Classroom. GitHub also sponsors Major League Hacking and other hackathons. They’re also partnering with Udacity and Black Girls Code.
+There's also GitHub Classroom. GitHub also sponsors Major League Hacking and other hackathons. They’re also partnering with Udacity and Black Girls Code.
 
 Wanstrath hands it off to Kimberly Bryant, founder of Black Girls Code.
 
