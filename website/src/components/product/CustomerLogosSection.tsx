@@ -15,6 +15,10 @@ const ITEMS: (
         url: '/external-logos/lyft-logo.svg',
     },
     {
+        name: 'Convoy',
+        url: '/external-logos/convoy.png',
+    },
+    {
         name: 'Yelp',
         url: '/external-logos/yelp.svg',
     },
@@ -30,10 +34,6 @@ const ITEMS: (
     {
         name: 'Plaid',
         url: '/external-logos/plaid-logo.svg',
-    },
-    {
-        name: 'Convoy',
-        url: '/external-logos/convoy.png',
     },
     {
         name: 'GetYourGuide',
