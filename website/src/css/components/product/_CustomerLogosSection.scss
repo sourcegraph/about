@@ -41,5 +41,9 @@
             line-height: normal;
             display: block;
         }
+
+        &.quantcast, &.convoy {
+            padding-top: 16px;
+        }
     }
 }

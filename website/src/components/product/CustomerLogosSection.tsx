@@ -55,7 +55,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
         <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) =>
                 'name' in logo ? (
-                    <div key={i} className="customer-logos-section__item mx-2">
+                    <div key={i} className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item mx-2`}>
                         <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
                         <small className="customer-logos-section__item-caption text-muted">
                             Every developer at {logo.name} uses Sourcegraph
