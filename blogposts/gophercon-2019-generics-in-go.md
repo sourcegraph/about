@@ -141,3 +141,7 @@ On the slides is a link to actual implementations using the current draft [golan
 ## Parting note during talk:
 
 > Our goal is to arrive at a design that makes it possible to write the kinds of generic code I discused today without making the language too complex to use and without making it not feel like Go anymore.
+
+## More on Generics in Go
+
+Ian has written a [Why Generics](https://blog.golang.org/why-generics) post on the [Go Blog](https://golang.org/).
