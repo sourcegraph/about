@@ -16,7 +16,7 @@ const ITEMS: (
     },
     {
         name: 'Convoy',
-        url: '/external-logos/convoy.png',
+        url: '/external-logos/convoy-logo.svg',
     },
     {
         name: 'Yelp',
