@@ -31,19 +31,19 @@ export const CaseStudyFeature: React.FunctionComponent<{
             <h2 className={`text-center ${titleClassName}`}>{title}</h2>
         </div>
         <div className="row container justify-content-center">
-            <div class="col-sm-12 col-md-2 case-studies-feature__image">
+            <div className="col-sm-12 col-md-2 case-studies-feature__image">
                 <a href={url}>
-                    <img class="img-thumbnail align-middle" src={image} />
+                    <img className="img-thumbnail align-middle" src={image} />
                 </a>
             </div>
-            <div class="col-md-6 case-studies-feature__content">
-                <blockquote class="blockquote">
-                    <p class="mb-1">{quote}</p>
-                    <footer class="blockquote-footer">
+            <div className="col-md-6 case-studies-feature__content">
+                <blockquote className="blockquote">
+                    <p className="mb-1">{quote}</p>
+                    <footer className="blockquote-footer">
                         <cite>{author}</cite>
                     </footer>
                 </blockquote>
-                <a href={url} class="btn btn-primary mt-4">
+                <a href={url} className="btn btn-primary mt-4">
                     {buttonText}
                 </a>
             </div>

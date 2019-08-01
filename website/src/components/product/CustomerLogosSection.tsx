@@ -32,6 +32,10 @@ const ITEMS: (
         url: '/external-logos/plaid-logo.svg',
     },
     {
+        name: 'Convoy',
+        url: '/external-logos/convoy.png',
+    },
+    {
         name: 'GetYourGuide',
         url: '/external-logos/gyg.svg',
     },
