@@ -17,17 +17,17 @@ Liveblogger: [Dimitrios Arethas](https://twitter.com/darethas)
 
 ## Overview
 
-This talk will equip you with the tools to safely write lightning fast assembly functions for Go. We will introduce Go assembly and the role it plays in the Go ecosystem, promote best practices for assembly development and demonstrate how code generation tools can manage complexity in large assembly projects.
+This talk will equip you with the tools to safely write lightning-fast assembly functions for Go. We will introduce Go assembly and the role it plays in the Go ecosystem, promote best practices for assembly development, and demonstrate how code generation tools can manage complexity in large assembly projects.
 
 ---
 
 ## Summary
 
-In this talk, Michael made the case for code generation techniques for writing x86 assembly from Go. Michael introduced us to assembly, assembly in Go, the use cases for when you would want to drop into assembly, and techniques for realizing speedups using assembly. He recognized that most of the time, pure Go will be enough for 97% of us, but there are those 3% of cases where it is warranted, and the examples he brought up were crypto, syscalls, and scientific computing. Michael then introduces us to a package called [avo](https://github.com/mmcloughlin/avo) which makes high-performance Go assembly easier to write. Michael also makes the case that writing your assembly in Go will allow you to realize the benefits of a high level language such as code readability, the ability to create loops, variables, and functions, and parameterized code generation all while still realizing the benefits of writing assembly. Michael concludes the talk by stating his ideas for the future of avo.
+In this talk, Michael made a case for code generation techniques for writing x86 assembly from Go. Michael introduced us to assembly, assembly in Go, the use cases for when you would want to drop into assembly, and techniques for realizing speedups using assembly. He recognized that pure Go will be enough for 97% of us. However, there are 3% of cases where it is warranted. The examples he brought up were crypto, syscalls, and scientific computing. Michael then introduces us to a package called [avo](https://github.com/mmcloughlin/avo) which makes high-performance Go assembly easier to write. Michael also makes the case that writing your assembly in Go will allow you to realize the benefits of a high level language such as code readability, the ability to create loops, variables, and functions, and parameterized code generation all while still realizing the benefits of writing assembly. Finally, he concludes the talk by stating his ideas for the future of avo.
 
 ## Preface
 
-This talk was technically dense, and a lot of detail was pointed out in the code. presented on the slide and narrated as the transitions were occuring. As such, this makes liveblogging this sort of talk difficult. This liveblog captures the essense of the talk, and the major points made. Please make sure to reference the slides available here: [https://speakerdeck.com/mmcloughlin/better-x86-assembly-generation-with-go-gophercon-2019](https://speakerdeck.com/mmcloughlin/better-x86-assembly-generation-with-go-gophercon-2019)
+This talk was technically dense, and a lot of detail was pointed out in the code. The information was presented on the slide and narrated as the transitions were occurring. As such, this makes liveblogging this sort of talk difficult. This liveblog captures the essence as well as the major points made. Please make sure to reference the slides available here: [https://speakerdeck.com/mmcloughlin/better-x86-assembly-generation-with-go-gophercon-2019](https://speakerdeck.com/mmcloughlin/better-x86-assembly-generation-with-go-gophercon-2019)
 
 ## Outline of the talk
 
@@ -41,9 +41,9 @@ This talk was technically dense, and a lot of detail was pointed out in the code
 
 ## Assembly Language
 
-What is assembly language? A low level language that allows programming at the architecture level
+What is assembly language? A low level language that allows programming at the architecture level.
 
-Michael thinks of it as Layers in software that "turtles all the way down". And if you are writing assembly you are at the bottom.
+Michael thinks of it as Layers in software that "tunnels all the way down." If you are writing assembly, then you are at the bottom.
 
 Main question: Should you write assembly? Probably no.
 
