@@ -133,6 +133,11 @@ const DATA: PricingItemCategory[] = [
             { name: 'Saved searches', plans: ENTERPRISE_PLAN },
             { name: 'Email notifications', plans: ENTERPRISE_PLAN },
             {
+                name: 'Slack and webhook notifications',
+                description: 'Coming soon',
+                plans: ENTERPRISE_PLAN,
+            },
+            {
                 name: 'Large-scale code modifications',
                 description: 'Only available to select customers in preview',
                 plans: UNLIMITED_PLAN,
