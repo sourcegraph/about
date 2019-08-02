@@ -131,7 +131,7 @@ const DATA: PricingItemCategory[] = [
         title: 'Code alerts & automation',
         items: [
             { name: 'Saved searches', plans: ENTERPRISE_PLAN },
-            { name: 'Email, Slack, and webhook notifications', plans: ENTERPRISE_PLAN },
+            { name: 'Email notifications', plans: ENTERPRISE_PLAN },
             {
                 name: 'Large-scale code modifications',
                 description: 'Only available to select customers in preview',
