@@ -22,7 +22,7 @@ export const CaseStudyFeature: React.FunctionComponent<{
     author,
     url,
     image,
-    buttonText = 'Learn their strategy',
+    buttonText = 'Learn more',
     color = 'dark',
     className = '',
 }) => (
