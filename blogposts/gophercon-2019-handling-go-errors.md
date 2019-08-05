@@ -22,60 +22,72 @@ Let's talk about programmable errors and how you can design your own architectur
 ---
 
 ## Summary
+
 1. Errors are `i/o`:
-    * Sometimes you need to read an error
-    * Sometimes you need to write an error
-    * How can this be improved?
+   - Sometimes you need to read an error
+   - Sometimes you need to write an error
+   - How can this be improved?
 2. Don't just check errors => Handle them gracefully
 3. Stack traces are for disasters: Decorate errors for better tracing
 
 How to improve error tracing?
-* Categorize errors by severity
-* Categorize errors by type
-* Add application specific data
-* You can query all of the above
+
+- Categorize errors by severity
+- Categorize errors by type
+- Add application specific data
+- You can query all of the above
 
 ## Learning concepts vs. Learning syntax
+
 Assuming `Go` isn't your first programming language, there are two ways to approach diving into a new language, Marwan explains. When learning syntax, one can ask:
+
 > How do I parse a JSON string in Go?
 
 If on other hand, we are learning the concept, the question is:
+
 > What is data serialization?
 
 Another example:
->Syntax: How do I import a library in Go?
 
->Concept: What are dependencies?
+> Syntax: How do I import a library in Go?
+
+> Concept: What are dependencies?
 
 And with regards to errors:
->Syntax: How do I catch an error in Go?
 
->Concept: What is error handling?
+> Syntax: How do I catch an error in Go?
+
+> Concept: What is error handling?
 
 ![Learn Like a Beginner](/gophercon-2019/handling-go-errors-learn-like-beginner.png)
 
 Let's focus on concepts and use the flexibility of Go to create better tooling for error handling and tracing.
 
 ## Concept of Errors
+
 Errors are values:
-* PRO: You get to define the importance of errors
-* CON: You get to define the importance of errors
+
+- PRO: You get to define the importance of errors
+- CON: You get to define the importance of errors
 
 We can furthermore think of errors as just `i/o`:
-* Sometimes you need to read an error
-* Sometimes you need to write an error
+
+- Sometimes you need to read an error
+- Sometimes you need to write an error
 
 But when reading or writing an error, context matters in understanding what caused the error as well as how to address it. e.g.:
-* Is your program a CLI tool?
-* Is your program a library?
-* Is your program a long running system?
-* Who is consuming your program? And How?
+
+- Is your program a CLI tool?
+- Is your program a library?
+- Is your program a long running system?
+- Who is consuming your program? And How?
 
 #### Example: Make a sandwich
 
 ![make a sandwich](/gophercon-2019/handling-go-errors-make-sandwich.png)
 
 Let's pretend we are designing a service that fetches ingredients from different sources and then returns a slice of ingredients. Our code may look like:
+
 ```golang
 package main
 
@@ -96,7 +108,9 @@ func getIngredients() ([]Ingredient, error) {
 }
 
 ```
+
 Now the above code assumes there are no errors. So how do we handle errors? Well we can rewrite `getIngredients` to actually return an error when they are returned from an upstream module:
+
 ```golang
 func getIngredients() ([]Ingredient, error) {
     avocados, err := wholefoods.BuyAvocados()
@@ -117,7 +131,9 @@ func getIngredients() ([]Ingredient, error) {
     return []Ingredient{avocados, boiledEggs, bread}, nil
 }
 ```
+
 So what would we see now if we ran the above?
+
 ```golang
 func main() {
     ingredients, err := getIngredients()
@@ -134,15 +150,21 @@ func main() {
 As we can see the default behavior leaves out a lot of information about the context of the error. "Don't just check errors, handle them gracefully" - Marwan
 
 Let's now discuss how we can decorate errors in go:
-* Can use `fmt` to create a new error with more context:
+
+- Can use `fmt` to create a new error with more context:
+
 ```golang
 return fmt.Errorf("unique error message: %w", err)
 ```
-* Alternatively can `import "github.com/pkg/errors"` and use this module's wrapping ability:
+
+- Alternatively can `import "github.com/pkg/errors"` and use this module's wrapping ability:
+
 ```golang
 return errors.Wrap(err, "unique error message")
 ```
+
 Let's look at the `getIngredients` function now:
+
 ```golang
 import "github.com/pkg/errors"
 
@@ -164,18 +186,22 @@ func getIngredients() ([]Ingredient, error) {
 
     return []Ingredient{avocados, boiledEggs, bread}, nil
 }
-``` 
- Now we have additional context in our error log and no longer need stacktrace:
- 
- ![bye stacktrace](/gophercon-2019/handling-go-errors-stacktrace-bye.png)
- 
+```
+
+Now we have additional context in our error log and no longer need stacktrace:
+
+![bye stacktrace](/gophercon-2019/handling-go-errors-stacktrace-bye.png)
+
 #### Stacktraces are for disasters
-* They're hard to read
-* They're hard to parse
-* At best, they say where an error went wrong, and not why
+
+- They're hard to read
+- They're hard to parse
+- At best, they say where an error went wrong, and not why
 
 #### What if we want to act on an error?
+
 Since errors are values we can create specific ones and compare to take specific actions:
+
 ```golang
 import "github.com/pkg/errors"
 
@@ -202,19 +228,23 @@ func getIngredients() ([]Ingredient, error) {
     return []Ingredient{avocados, boiledEggs, bread}, nil
 }
 ```
+
 Now we can handle errors gracefully, trace the error back to the code and act upon an error. What more can we do?
-* Categorize errors by severity.
-* Categorize errors by type.
-* Add application specific data.
-* Query all of the above.
+
+- Categorize errors by severity.
+- Categorize errors by type.
+- Add application specific data.
+- Query all of the above.
 
 Let's take a look at how this relates to The New York Times. Like many companies, The New York Times has several services that talk to each other:
 
 ![nyt architecture](/gophercon-2019/handling-go-errors-nyt-architecture.png)
 
 Not much different from making sandwiches:
-* One service that talks to a bunch of other services
-* Instead of panicking, we log and monitor
+
+- One service that talks to a bunch of other services
+- Instead of panicking, we log and monitor
+
 ```golang
 func getUser(userID string) (Subscription, time.Time, error) {
     err := loginService.Validate(userID)
@@ -231,11 +261,13 @@ func getUser(userID string) (Subscription, time.Time, error) {
     if err != nil {
         return err
     }
-    
+
     return subscription, deliveryTime, nil
 }
 ```
+
 and in an http handler:
+
 ```golang
 func getUserHandler(w http.ResponseWriter, r *http.Request) {
 	// set up handler
@@ -248,19 +280,22 @@ func getUserHandler(w http.ResponseWriter, r *http.Request) {
 	// return info to client
 }
 ```
+
 Now our errors are logged and we have some context:
 
 ![nyt logs](/gophercon-2019/handling-go-errors-logs.png)
 
-However, we are still missing severity as well as types of errors so how can this be improved? 
-* Can filter unexpected errors
-* Group by error types
-* Be able to answer specific questions
-* Inspiration:
-  * [Error Handling In Upsin - Andrew Gerrand/Rob Pike](https://commandcenter.blogspot.com/2017/12/error-handling-in-upspin.html)
-  * [Failure Is Your Domain - Ben Johnson](https://middlemost.com/failure-is-your-domain/)
+However, we are still missing severity as well as types of errors so how can this be improved?
+
+- Can filter unexpected errors
+- Group by error types
+- Be able to answer specific questions
+- Inspiration:
+  - [Error Handling In Upsin - Andrew Gerrand/Rob Pike](https://commandcenter.blogspot.com/2017/12/error-handling-in-upspin.html)
+  - [Failure Is Your Domain - Ben Johnson](https://middlemost.com/failure-is-your-domain/)
 
 Let's create our own error struct:
+
 ```golang
 package errors
 
@@ -271,7 +306,9 @@ type Error struct {
     //... application specific fields
 }
 ```
-How do we use? 
+
+How do we use?
+
 ```golang
 if err != nil {
     return &errors.Error{
@@ -279,8 +316,10 @@ if err != nil {
         Err: err,
     }
 }
-``` 
+```
+
 Alternatively, can use a helper function:
+
 ```golang
 package errors
 
@@ -310,12 +349,13 @@ if err != nil {
 ```
 
 #### What is an Operation?
+
 ```
 type Op string
 ```
 
-* A unique string describing a method or a function
-* Multiple operations can construct a friendly stack trace.
+- A unique string describing a method or a function
+- Multiple operations can construct a friendly stack trace.
 
 ```golang
 // app/account/account.go
@@ -401,12 +441,14 @@ created by net/http.(*Server).Serve
 ```
 
 #### Benefits of errors.Op
-* A custom stack of your code only
-* Easier to read
-* Parsable and queryable. 
-* Not only can you know where something went wrong, but the impact it had on your entire application.
+
+- A custom stack of your code only
+- Easier to read
+- Parsable and queryable.
+- Not only can you know where something went wrong, but the impact it had on your entire application.
 
 #### Query your stack trace
+
 ```
 SELECT * FROM logs WHERE operations.include("login.Validate")
 
@@ -418,18 +460,21 @@ SELECT * FROM logs WHERE operations.include("login.Validate")
 ```
 
 #### Kind
-* Groups all errors into smaller categories
-* Can be predefined codes (http/gRPC)
-* Or it can be your own defined codes
+
+- Groups all errors into smaller categories
+- Can be predefined codes (http/gRPC)
+- Or it can be your own defined codes
+
 ```golang
 const (
     KindNotFound = http.StatusNotFound
     KindUnauthorized = http.StatusUnauthorized
     KindUnexpected = http.StatusUnexpected
-)  
+)
 ```
 
 #### Extracting a Kind from an error
+
 ```golang
 func Kind(err error) codes.Code {
 	e, ok := err.(*Error)
@@ -446,6 +491,7 @@ func Kind(err error) codes.Code {
 ```
 
 Let's add severity to our errors:
+
 ```golang
 type Error struct {
     ...
@@ -501,13 +547,16 @@ func SystemErr(err error) {
 ```
 
 #### What can we do with this?
-* Show me all paper delivery errors in zip code 22434
-* Show me all food delivery errors by seafood restaurants
-* Show me all errors that happened while trying to stream the latest Beyonce album
+
+- Show me all paper delivery errors in zip code 22434
+- Show me all food delivery errors by seafood restaurants
+- Show me all errors that happened while trying to stream the latest Beyonce album
 
 ## Takeaways:
-* The error interface is intentionally simple. 
-* Design an errors package that makes sense to your application, and no one else
+
+- The error interface is intentionally simple.
+- Design an errors package that makes sense to your application, and no one else
 
 ## Conclusion
- > A big part of all programming, for real, is how you handle errors  - Rob Pike
+
+> A big part of all programming, for real, is how you handle errors - Rob Pike
