@@ -28,7 +28,7 @@ Dave was doing a life demo of showing 3 different types of profiling:
 
  Dave started with looking through the following example of code which counts the number of words in the text file provided.
 
-```golang
+```go
 package main
 
 import (
@@ -110,7 +110,7 @@ First thing we need to do is to profile this program.
 
 ## Technique 1 - CPU Profiling
 
-```golang
+```go
 import (
         "github.com/pkg/profile"
 )
@@ -181,7 +181,7 @@ An example that produces a Mandelbrot image
 An algorithm runs 1.6s - to generate 1Mb image.
 Lets see if we can improve it.
 
-```golang
+```go
 Defer profile.Start(profile.CPUProfile, profile.ProfilePath("."))
 ```
 
@@ -220,7 +220,7 @@ sys     0m0.015s
 
 We can see from the trace that the program is only using one CPU.
 
-```golang
+```go
 func seqFillImg(m *img) {
 	for i, row := range m.m {
 		for j := range row {

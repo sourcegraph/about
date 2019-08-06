@@ -88,7 +88,7 @@ But when reading or writing an error, context matters in understanding what caus
 
 Let's pretend we are designing a service that fetches ingredients from different sources and then returns a slice of ingredients. Our code may look like:
 
-```golang
+```go
 package main
 
 import (
@@ -111,7 +111,7 @@ func getIngredients() ([]Ingredient, error) {
 
 Now the above code assumes there are no errors. So how do we handle errors? Well we can rewrite `getIngredients` to actually return an error when they are returned from an upstream module:
 
-```golang
+```go
 func getIngredients() ([]Ingredient, error) {
     avocados, err := wholefoods.BuyAvocados()
     if err != nil {
@@ -134,7 +134,7 @@ func getIngredients() ([]Ingredient, error) {
 
 So what would we see now if we ran the above?
 
-```golang
+```go
 func main() {
     ingredients, err := getIngredients()
     if err != nil {
@@ -153,19 +153,19 @@ Let's now discuss how we can decorate errors in go:
 
 - Can use `fmt` to create a new error with more context:
 
-```golang
+```go
 return fmt.Errorf("unique error message: %w", err)
 ```
 
 - Alternatively can `import "github.com/pkg/errors"` and use this module's wrapping ability:
 
-```golang
+```go
 return errors.Wrap(err, "unique error message")
 ```
 
 Let's look at the `getIngredients` function now:
 
-```golang
+```go
 import "github.com/pkg/errors"
 
 func getIngredients() ([]Ingredient, error) {
@@ -202,7 +202,7 @@ Now we have additional context in our error log and no longer need stacktrace:
 
 Since errors are values we can create specific ones and compare to take specific actions:
 
-```golang
+```go
 import "github.com/pkg/errors"
 
 func getIngredients() ([]Ingredient, error) {
@@ -245,7 +245,7 @@ Not much different from making sandwiches:
 - One service that talks to a bunch of other services
 - Instead of panicking, we log and monitor
 
-```golang
+```go
 func getUser(userID string) (Subscription, time.Time, error) {
     err := loginService.Validate(userID)
     if err != nil {
@@ -268,7 +268,7 @@ func getUser(userID string) (Subscription, time.Time, error) {
 
 and in an http handler:
 
-```golang
+```go
 func getUserHandler(w http.ResponseWriter, r *http.Request) {
 	// set up handler
 	sub, deliveryTime, err := getUser(user)
@@ -296,7 +296,7 @@ However, we are still missing severity as well as types of errors so how can thi
 
 Let's create our own error struct:
 
-```golang
+```go
 package errors
 
 type Error struct {
@@ -309,7 +309,7 @@ type Error struct {
 
 How do we use?
 
-```golang
+```go
 if err != nil {
     return &errors.Error{
         Op: "getUser",
@@ -320,7 +320,7 @@ if err != nil {
 
 Alternatively, can use a helper function:
 
-```golang
+```go
 package errors
 
 func E(args ...interface{}) error {
@@ -342,7 +342,7 @@ func E(args ...interface{}) error {
 }
 ```
 
-```golang
+```go
 if err != nil {
     return errors.E(op, err, errors.KindUnexpected)
 }
@@ -357,7 +357,7 @@ type Op string
 - A unique string describing a method or a function
 - Multiple operations can construct a friendly stack trace.
 
-```golang
+```go
 // app/account/account.go
 package account
 
@@ -383,7 +383,7 @@ func Validate(userID string) err {
 }
 ```
 
-```golang
+```go
 // app/errors/errors.go
 package errors
 
@@ -406,7 +406,7 @@ func Ops(e *Error) []Op {
 
 What does our stacktrace look like now?
 
-```golang
+```go
 // errors.Ops stack trace
 ["account.GetUser", "login.Validate", "db.LookUp"]
 ```
@@ -465,7 +465,7 @@ SELECT * FROM logs WHERE operations.include("login.Validate")
 - Can be predefined codes (http/gRPC)
 - Or it can be your own defined codes
 
-```golang
+```go
 const (
     KindNotFound = http.StatusNotFound
     KindUnauthorized = http.StatusUnauthorized
@@ -475,7 +475,7 @@ const (
 
 #### Extracting a Kind from an error
 
-```golang
+```go
 func Kind(err error) codes.Code {
 	e, ok := err.(*Error)
 	if !ok {
@@ -492,14 +492,14 @@ func Kind(err error) codes.Code {
 
 Let's add severity to our errors:
 
-```golang
+```go
 type Error struct {
     ...
     Severity logrus.Level
 }
 ```
 
-```golang
+```go
 func getUser(userID string) (*User, err) {
     const op errors.Op = "account.getUser"
     err := loginService.Validate(userID)
