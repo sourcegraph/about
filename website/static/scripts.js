@@ -13,23 +13,6 @@ function initializeTelligent(appId, env, retry) {
     }
     return
   }
-
-  const telligentUrl = 'sourcegraph-logging.telligentdata.com'
-  window.telligent('newTracker', 'sg', telligentUrl, {
-    appId: appId,
-    platform: 'Web',
-    encodeBase64: false,
-    env: env,
-    configUseCookies: true,
-    useCookies: true,
-    cookieDomain: 'sourcegraph.com',
-    metadata: {
-      gaCookies: true,
-      performanceTiming: true,
-      augurIdentityLite: true,
-      webPage: true,
-    },
-  })
 }
 
 function initializeGA() {
