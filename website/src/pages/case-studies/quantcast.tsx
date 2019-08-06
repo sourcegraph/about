@@ -106,9 +106,7 @@ export default ((props: any) => (
 
                 <InContentBlockquote quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production." />
 
-                <h2 className="pt-5 pb-1">
-                    Large scale refactoring is now possible without risking production stability
-                </h2>
+                <h2 className="pt-5 pb-1">Large scale refactoring is now possible without risking production stability</h2>
 
                 <p>
                     Multi-repository code search makes large scale refactoring at Quantcast systematic, safe, and
