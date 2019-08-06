@@ -64,13 +64,22 @@ export default ((props: any) => (
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
-            <ContentSection color="black">
+            <ContentSection color="black">case
+                {/*Hide until case study carousel is ready*/}
                 <CaseStudyFeature
                     title="See how Thorn sunsets legacy applications safely with Sourcegraph"
                     quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
                     author="Thorn Software Engineer, Jacob Gillespie"
                     url="/case-studies/we-are-thorn"
                     image="/case-studies/thorn-sourcegraph-case-study.png"
+                    className="sr-only"
+                />
+                <CaseStudyFeature
+                    title="See how Sourcegraph enabled large scale refactoring at Quantcast"
+                    quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
+                    author="Simon Law, Staff Software Engineer, Quantcast"
+                    url="/case-studies/quantcast"
+                    image="/case-studies/quantcast_thumbnail_500x500px.jpg"
                 />
             </ContentSection>
             <div className="bg-white text-dark">

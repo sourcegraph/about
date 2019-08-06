@@ -6,7 +6,7 @@ interface Props {
     description?: string
     extraDescription?: React.ReactFragment
     mainActions?: React.ReactFragment
-    children: React.ReactNode
+    children?: React.ReactNode
 }
 
 export const ContentPage: React.FunctionComponent<Props> = ({
