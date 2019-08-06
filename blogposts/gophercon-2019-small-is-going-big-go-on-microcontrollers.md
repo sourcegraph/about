@@ -34,7 +34,8 @@ Evans demonstrated that despite some limitations, thanks to TinyGo, the Go langu
 ### DEMO 1: Digispark   
 The Digispark is a microcontroller smaller even than an Arduino. It has an 8-bit processor and 8 KB of RAM. Evans flashed the Digispark with this program and then plugged the device into a battery pack get an LED to flash. 
 
-```package main
+```go
+package main
 
 import (
   "machine"

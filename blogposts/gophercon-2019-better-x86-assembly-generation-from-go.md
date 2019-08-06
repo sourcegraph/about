@@ -71,7 +71,7 @@ The purpose of the talk is not to say don't use assembly, but if you are going t
 
 ## Go Assembly Primer
 
-```(go)
+```go
 package add
 
 // Add x and y
@@ -82,7 +82,7 @@ func Add(x, y uint64) uint64 {
 
 You can then run the Go disassembler on this code...
 
-```
+```bash
 go build -o add.a
 go tool objdump add.a
 ```
@@ -100,7 +100,7 @@ TEXT %22%22.Add(SB) gofile../Users/michaelmcloughlin/Dev...
 
 The column on the far right is the interesting part. It is showing us the instructions.
 
-```(go)
+```go
 package add
 
 // Add x and y

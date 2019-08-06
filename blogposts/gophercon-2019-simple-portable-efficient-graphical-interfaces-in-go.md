@@ -72,7 +72,7 @@ Some programs require you to maintain state for your widgetry. In Gio, you draw 
 
 This is all you need to render a simple blank window:
 
-```golang
+```go
 package main
 
 import (
@@ -95,7 +95,7 @@ This is odd, because you’re doing the event loop in your go routine.
 
 Slightly more advanced example, but in this case you are loading up some support structures and adding `text.Label` to display your label:
 
-```golang
+```go
 func main() {
     go func() {
         w := app.NewWindow(nil)
@@ -211,7 +211,7 @@ Operations buffer and type called ui ops and you add operations to that to your 
 
 #### Serializing operations
 
-```golang
+```go
 import “gioui.org/ui” // Pure Go
 
 var ops ui.Ops
@@ -224,7 +224,7 @@ ui.InvalidateOp{}.Add(ops)
 
 #### Only the app package depends on platform libraries
 
-```golang
+```go
 import “gioui.org/ui/app”
 
 var w app.Window
@@ -235,7 +235,7 @@ w.Draw(&ops)
 
 #### Position other operations
 
-```golang
+```go
 import “gioui.org/ui”
 
 ui.TransformOp{ui.Offset(f32.Point{…})}.Add(ops)
@@ -245,7 +245,7 @@ ui.TransformOp{ui.Offset(f32.Point{…})}.Add(ops)
 
 #### Request a redraw
 
-```golang
+```go
 ui.InvalidateOp{}.Add(ops) // Immediate
 ui.InvalidateOp{At: …}.Add(ops) // Delayed
 ```
@@ -258,7 +258,7 @@ ui.InvalidateOp{At: …}.Add(ops) // Delayed
 
 #### Set current color or image
 
-```golang
+```go
 import “gioui.org/ui/draw”
 
 draw.ColorOp{Color: color.RGBA{…}}.Add(ops)
@@ -277,7 +277,7 @@ draw.ImageOp{Src: …, Rect: …}.Add(ops)
 
 #### Clip drawing to a rectangle
 
-```golang
+```go
 import “gioui.org/draw”
 
 draw.RectClip(image.Rectangle{…}).Add(ops)
@@ -287,7 +287,7 @@ draw.RectClip(image.Rectangle{…}).Add(ops)
 
 #### Or to an outline
 
-```golang
+```go
 var b draw.PathBuilder
 b.Init(ops)
 b.Line(…)
@@ -304,7 +304,7 @@ b.End()
 
 #### Keyboard and text input
 
-```golang
+```go
 import “gioui.org/ui/key”
 
 // Declare key handler.
@@ -318,7 +318,7 @@ key.HideInputOp{}.Add(ops)
 
 #### Mouse and touch input
 
-```golang
+```go
 import “gioui.org/ui/pointer”
 
 // Define hit area.
@@ -337,7 +337,7 @@ pointer.HandlerOp{Key: c, Grab true/false}
 
 #### Drawing and animating a clipped square
 
-```golang
+```go
     square := f32.Rectangle{Max: f32.Point{X: 500, Y: 500}}
     radius := animateRadius(e.Config.Now(), 250)
 
@@ -369,7 +369,7 @@ If you have non-trivial setup, you need some way to lay them out - you don’t w
 
 #### Constraints are input
 
-```golang
+```go
 package layout // import gioui.org/ui/layout
 
 type Constraints struct {
@@ -386,7 +386,7 @@ type Constraint struct {
 
 #### Dimensions are output
 
-```golang
+```go
 type Dimens struct {
     Size     image.Point
     Baseline int
@@ -397,7 +397,7 @@ type Dimens struct {
 
 #### Widgets accept constraints, output dimensions
 
-```golang
+```go
 package text // import gioui.org/ui/text
 
 func (l Label) Layout(ops *ui.Ops, cs layout.Constraints) layout.Dimens
@@ -412,7 +412,7 @@ func (im Image) Layout(c ui.Config, ops *ui.Ops, cs layout.Constraints) layout.D
 
 ### Example - two labels
 
-```golang
+```go
 func drawLabels(face text.Face, ops *ui.Ops, cs layout.Constraints) {
     **cs.Height.Min = 0**
     lbl := text.Label{Face: face, Text: “One label”}
@@ -433,7 +433,7 @@ Can layout to the compass directions or to specific place, like the center.
 
 #### Aligning
 
-```golang
+```go
 var ops *ui.Ops
 var cs layout.Constraints
 
@@ -447,7 +447,7 @@ dimensions = align.End(dimensions)
 
 #### Insetting
 
-```golang
+```go
 var cfg ui.Config
 inset := layout.Inset{Top: ui.Dp(8), …} // 8dp top inset
 cs = inset.Begin(c, ops, cs)
@@ -465,7 +465,7 @@ dimensions = inset.End(dimensions)
 
 #### Lay out widgets on an axis.
 
-```golang
+```go
 func drawRects(c ui.Config, ops *ui.Ops, cs layout.Constraints) {
     flex := layout.Flex{}
     flex.Init(ops, cs)
@@ -490,7 +490,7 @@ func drawRects(c ui.Config, ops *ui.Ops, cs layout.Constraints) {
 
 ### Stack layout
 
-```golang
+```go
 func drawRects(c ui.Config, ops *ui.Ops, cs layout.Constraints) {
     stack := layout.Stack{Alignment: layout.Center}
     stack.Init(ops, cs)
@@ -515,7 +515,7 @@ func drawRects(c ui.Config, ops *ui.Ops, cs layout.Constraints) {
 
 ### List layout
 
-```golang
+```go
         list := &layout.List{
             Axis: layout.Vertical,
         }
@@ -537,7 +537,7 @@ func drawList(c ui.Config, q input.Queue, list *layout.List, face text.Face, ops
 
 ### Input queue and handler keys
 
-```golang
+```go
 // Queue maps an event handler key to the events
 // available to the handler.
 type Queue interface {
@@ -553,7 +553,7 @@ type Key interface{}
 
 ### Pointer event handling
 
-```golang
+```go
 func (b *Button) Layout(queue input.Queue, ops *ui.Ops) {
     for _, e := range queue.Events(b) {
         if e, ok := e.(pointer.Event); ok {
@@ -586,7 +586,7 @@ Takes all available events, updates it’s own state, system can know whether th
 
 #### The Window’s Queue method returns an input.Queue for OS events.
 
-```golang
+```go
 package app // import gioui.org/ui/app
 
 func (w *Window) Queue() *Queue
@@ -596,7 +596,7 @@ func (w *Window) Queue() *Queue
 
 ### Gestures
 
-```golang
+```go
 import “gioui.org/ui”
 import “gioui.org/ui/gesture”
 import “gioui.org/ui/input”
@@ -606,7 +606,7 @@ import “gioui.org/ui/input”
 
 #### Detect clicks
 
-```golang
+```go
 var queue input.Queue
 var c gesture.Click
 for _, event := range c.Events(queue) {
@@ -618,7 +618,7 @@ for _, event := range c.Events(queue) {
 
 #### Determine scroll distance from mouse wheel or touch drag/fling
 
-```golang
+```go
 var cfg ui.Config
 var s gesture.Scroll
 
@@ -635,7 +635,7 @@ Complete implementation of a text area field. It’s a complicated widget, but i
 
 #### Initialize the editor
 
-```golang
+```go
 import “gioui.org/ui/text”
 
     var faces measure.Faces
@@ -649,7 +649,7 @@ import “gioui.org/ui/text”
 
 #### Draw, layout and handle input in one call.
 
-```golang
+```go
 editor.Layout(cfg, queue, ops, cs)
 ```
 
