@@ -64,8 +64,18 @@
         code {
             background-color: #f2f4f8;
             display: inline-block;
-            padding: .1rem;
-            font-size: 1rem;
+            padding: .1rem .3rem;
+            font-size: 0.9em;
+        }
+
+
+        pre {
+            code {
+                color: #f2f4f8;
+                background: #444;
+                width: 100%;
+                padding: 1rem;
+            }
         }
 
         .text-center {
