@@ -56,7 +56,7 @@ export default ((props: any) => (
                        Quantcast created a tiger-team to not only meet GDPR compliance, but exceed the requirements. They
                        analyzed what services ought to handle GDPR-defined personal data, and used Sourcegraph to discover
                        which actually did. Personal data, such as IP addresses, can be identified within source code by
-                       using Sourcegraph’s regular expression search. Searching for ip would return too many results.
+                       using Sourcegraph’s regular expression search. Searching for <code className="language-text">"ip"</code> would return too many results.
                    </p>
 
                    <p>
