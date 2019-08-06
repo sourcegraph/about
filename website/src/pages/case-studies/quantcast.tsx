@@ -13,7 +13,7 @@ export default ((props: any) => (
         meta={{
             title: 'How Sourcegraph code search enabled large scale refactoring at Quantcast',
             description:  'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
-            image: '/case-studies/quantcast_1200x630.jpg',
+            image: 'https://about.sourcegraph.com/case-studies/quantcast_1200x630.jpg',
         }}
     >
         <CaseStudyPage
@@ -24,7 +24,7 @@ export default ((props: any) => (
         >
             <ContentSection color="white" className="pt-5 pb-3">
                 <MediaQuote
-                    image="https://about.sourcegraph.com/case-studies/simon-law-quantcast.jpg"
+                    image="/case-studies/simon-law-quantcast.jpg"
                     quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
                     author="Simon Law, Staff Software Engineer, Quantcast"
                 />
