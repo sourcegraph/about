@@ -64,7 +64,7 @@ export default ((props: any) => (
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
-            <ContentSection color="black">case
+            <ContentSection color="black">
                 {/*Hide until case study carousel is ready*/}
                 <CaseStudyFeature
                     title="See how Thorn sunsets legacy applications safely with Sourcegraph"

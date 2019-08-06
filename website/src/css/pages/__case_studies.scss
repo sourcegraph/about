@@ -73,6 +73,10 @@
 }
 
 .case-studies-feature {
+    h2 a {
+        color: #fff;
+        text-decoration: none;
+    }
     &__image {
 
         img {
