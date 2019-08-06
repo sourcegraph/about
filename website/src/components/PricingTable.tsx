@@ -260,7 +260,7 @@ const DATA: PricingItemCategory[] = [
                 description:
                     'Have Sourcegraph run and manage your instance, using our secure infrastructure or a sub-account on your own cloud provider',
                 plans: {
-                    Enterprise: '+$19/user/month',
+                    Enterprise: 'Additional fees per user',
                     Unlimited: true,
                 },
             },
