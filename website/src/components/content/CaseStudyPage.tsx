@@ -55,9 +55,9 @@ export const MediaQuote: React.FunctionComponent<{
     <div className="container">
         <div className="case-studies__quote row">
             <div className="col-sm-12 col-md-2">
-                <img className="rounded-circle img-fluid mx-auto d-block py-4" src={image} alt={author} />
+                <img className="rounded-circle img-fluid mx-auto d-block" src={image} alt={author} />
             </div>
-            <div className="col">
+            <div className="col pt-4 pt-md-0">
                 <blockquote className="blockquote">
                     <p>{quote}</p>
                     <footer className="blockquote-footer">{author}</footer>
