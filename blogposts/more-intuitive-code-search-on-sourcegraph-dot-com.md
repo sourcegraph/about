@@ -1,5 +1,14 @@
-# More intuitive code search on sourcegraph.com
-
+---
+title: "More intuitive code search on sourcegraph.com"
+description: "How a hack week project made sourcegraph.com search more usable, and how you can use it"
+author: Issac Trotts (ijt@sourcegraph.com)
+publishDate: 2019-08-09
+tags: [
+  search
+  ]
+  slug: more-intuitive-code-search-on-sourcegraph-dot-com
+  published: false
+---
 For our recent hack week, we changed search on [sourcegraph.com](http://sourcegraph.com) to be more intuitive by no longer requiring any information about which repositories to search.
 
 Let's look at an example. If you'd recently heard about Google's "Distroless" container image and were curious about its usage, you could search [Sourcegraph.com](http://sourcegraph.com/) for `file:Dockerfile FROM gcr.io/distroless`. Before, this search would get an error message and no results, like this:
