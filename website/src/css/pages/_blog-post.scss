@@ -65,4 +65,12 @@
             text-align: center;
         }
     }
+
+    p > code[class*='language-'] {
+        background-color: #f2f4f8;
+        color: #2d2d2d;
+        display: inline-block;
+        padding: .1rem .3rem;
+        font-size: 0.9em;
+    }
 }
