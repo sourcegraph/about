@@ -2,11 +2,12 @@
 title: "More intuitive code search on sourcegraph.com"
 description: "How a hack week project made sourcegraph.com search more usable, and how you can use it"
 author: Issac Trotts
-publishDate: 2019-08-09
+publishDate: 2019-08-08T00:00-11:55
 tags: [
-  search
-  ]
+  blog
+]
 slug: more-intuitive-code-search-on-sourcegraph-dot-com
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
