@@ -51,7 +51,7 @@ export default ((props: any) => (
                                 price="$29"
                                 features={[
                                     { name: 'Code review & pull request integration', id: 'code-review' },
-                                    { name: 'Code alerts & automation', id: 'code-alerts-automation' },
+                                    { name: 'Code alerts', id: 'code-alerts-automation' },
                                     { name: 'Deployment metrics & monitoring', id: 'deployment' },
                                     {
                                         name: 'High-scale/availability cluster deployment option',
@@ -120,7 +120,7 @@ export default ((props: any) => (
                 </div>
             </div>
             <ContentSection color="white" className="hero-section text-center py-5">
-                                * Limitations apply
+                * Limitations apply
             </ContentSection>
             <ContentSection color="purple" className="hero-section text-center py-5">
                 <h2>Try Sourcegraph Enterprise Plus risk-free for 30 days</h2>
