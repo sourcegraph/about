@@ -49,7 +49,7 @@ export default ((props: any) => (
                    <p>
                        May 2018 was the deadline for the EU General Data Protection Regulation, a law that provides
                        widespread protections for users and their personal data. Quantcast saw it as an opportunity to
-                       strengthen their position as a privacy-first advertiser.
+                       strengthen their position as a privacy-first organization.
                    </p>
 
                    <p>
