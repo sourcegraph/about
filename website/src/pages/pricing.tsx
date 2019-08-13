@@ -36,7 +36,7 @@ export default ((props: any) => (
             <div className="pricing-page">
                 <ContentSection color="white" className="hero-section text-center py-5">
                     <h4 className="font-weight-light">
-                        Sourcegraph code search, code navigation,&nbsp;
+                        Sourcegraph code search, code navigation, and other limited features
                         <PricingFreeTierPopoverButton />
                         are free for individuals and small teams. <a href="https://docs.sourcegraph.com">Install</a> to get started today!
                     </h4>
@@ -61,9 +61,8 @@ export default ((props: any) => (
                                     { name: 'Technical support', id: 'support' },
                                     { name: 'Cloud-managed option', id: 'deployment' },
                                 ]}
-                                // plusEverythingIn="Core"
-                                buttonLabel="Buy now"
-                                buttonHref="http://sourcegraph.com/subscriptions/new"
+                                buttonLabel="Try now"
+                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-enterprise"
                             />
                         </div>
                         <div className="col-8 col-md-4 mx-auto mb-4">
@@ -81,8 +80,8 @@ export default ((props: any) => (
                                     { name: 'Priority support', id: 'support' },
                                 ]}
                                 plusEverythingIn="Enterprise"
-                                buttonLabel="Buy now"
-                                buttonHref="http://sourcegraph.com/subscriptions/new"
+                                buttonLabel="Try now"
+                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-enterprise-plus"
                             />
                         </div>
                         <div className="col-8 col-md-4 mx-auto mb-4">
@@ -113,8 +112,8 @@ export default ((props: any) => (
                                     { name: 'Dedicated support available', id: 'support' },
                                 ]}
                                 plusEverythingIn="Enterprise Plus"
-                                buttonLabel="Buy now"
-                                buttonHref="http://sourcegraph.com/subscriptions/new"
+                                buttonLabel="Try now"
+                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-elite"
                             />
                         </div>
                     </div>

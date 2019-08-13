@@ -24,7 +24,6 @@ interface ProductPopoverButtonProps {
 export const PricingFreeTierPopoverButton: React.FunctionComponent<ProductPopoverButtonProps> = ({ className = '' }) => (
     <HoverablePopover placement="bottom" delay={{ show: 0, hide: 500 }} component={<PricingFreeTierPopoverBody />}>
         <a className={`pricing-free-tier-popover-body outline-0 ${className}`} href="https://docs.sourcegraph.com">
-            and other limited features
             <span className="text-muted ml-1 mr-1">
                 <QuestionMarkCircleOutlineIcon />
             </span>
