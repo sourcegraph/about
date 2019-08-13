@@ -38,7 +38,7 @@ export default ((props: any) => (
                     <h4 className="font-weight-light">
                         Sourcegraph code search, code navigation,&nbsp;
                         <PricingFreeTierPopoverButton />
-                        are free for individuals and small teams (up to 20 users). <a href="https://docs.sourcegraph.com">Install</a> to get started today!
+                        are free for individuals and small teams. <a href="https://docs.sourcegraph.com">Install</a> to get started today!
                     </h4>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
@@ -58,6 +58,7 @@ export default ((props: any) => (
                                         id: 'deployment',
                                     },
                                     { name: 'Single sign-on (SSO)', id: 'admin' },
+                                    { name: 'Technical support', id: 'support' },
                                     { name: 'Cloud-managed option', id: 'deployment' },
                                 ]}
                                 // plusEverythingIn="Core"
