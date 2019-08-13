@@ -11,7 +11,8 @@ const PricingFreeTierPopoverBody: React.FunctionComponent<any> = () =>
                 <li className="nav-item mb-1">Editor and code host integrations</li>
                 <li className="nav-item mb-1">Sourcegraph extensions</li>
                 <li className="nav-item mb-1">Single sign-on (SSO)</li>
-                <li className="nav-item">20-user limit</li>
+                <li className="nav-item mb-1">20-user limit</li>
+                <li className="nav-item">Community support</li>
             </ul>
         </div>
     )
