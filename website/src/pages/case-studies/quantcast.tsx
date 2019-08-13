@@ -19,7 +19,7 @@ export default ((props: any) => (
         <CaseStudyPage
             title="How Sourcegraph code search enabled large scale refactoring at Quantcast"
             logo="/case-studies/quantcast-logo.png"
-            pdf="https://storage.googleapis.com/sourcegraph-assets/Quantcast%20Sourcegraph%20case%20study.pdf"
+            pdf="https://storage.googleapis.com/sourcegraph-assets/Quantcast%20Sourcegraph%20case%20study.pdf?v2"
             className="quantcast-case-study"
         >
             <ContentSection color="white" className="pt-5 pb-3">
