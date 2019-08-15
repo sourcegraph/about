@@ -132,7 +132,7 @@ Then Every function is going to start with some MOV instructions, and all argume
 
 ![Top assembly lines by std lib packages](/gophercon-2019/x86talk-table1.png)
 
-Crypto is the heavy hitter here. Crypto is also in this awkward intersection where you need top performance, but you need complete correctness. Any error could lead to a critical security vulnurability.
+Crypto is the heavy hitter here. Crypto is also in this awkward intersection where you need top performance, but you need complete correctness. Any error could lead to a critical security vulnerability.
 
 Drilling down even further into some code in the crypto package (There is no expectation that the code is understood, it is just to give a feel for the problem Michael is talking about)
 
@@ -212,7 +212,7 @@ The fix is just 5 lines. It was origially just believed to be just a compatibili
 
 ![bug cve](/gophercon-2019/x86talk-cve.png)
 
-But actually it was later discovered to be a critical vulnurability. This critical error could be exploited to leak secure information.
+But actually it was later discovered to be a critical vulnerability. This critical error could be exploited to leak secure information.
 
 ![this is fine](/gophercon-2019/x86talk-thisisfine.png)
 
