@@ -90,7 +90,7 @@ My experiences has been nothing short of amazing, we've grown together. I hope y
 
 ![2019](/gophercon-2019/gophercon-2019-91-gophercon2019.jpg)
 
-Yesterday I gave myself a little challenge, I decided to go meet every person who looks like me, so I went throught the entire GopherCon, taking pictures with complete strangers thinking "this has potential, I want to meet every single person that looks like me at the conference".
+Yesterday I gave myself a little challenge, I decided to go meet every person who looks like me, so I went through the entire GopherCon, taking pictures with complete strangers thinking "this has potential, I want to meet every single person that looks like me at the conference".
 
 Out of 1800 people I couldn't fill this slide.
 
@@ -106,7 +106,7 @@ How you can step up. A very specific way you can help is organize a GoBridge wor
 
 This work not only exposes Go and programming, it also sends a strong message that we're working in this community to make it safe for everybody, and this is full of opportunities if you're willing to put in the work.
 
-Nothing would make me happier than if at the end of this talk all the people that look like me go to the terrace and take a group picture togehter. We could make this a tradition and hopefully grow every year.
+Nothing would make me happier than if at the end of this talk all the people that look like me go to the terrace and take a group picture together. We could make this a tradition and hopefully grow every year.
 
 So, one last thing
 

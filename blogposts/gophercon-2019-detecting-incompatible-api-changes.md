@@ -376,7 +376,7 @@ So that leads us to our rule for interfaces, which we’ll cover in two parts.
 
 First, if your interface has no unexported methods, then it must remain exactly the same to be backwards-compatible. You can’t add a method, and you can’t remove a method. An interesting violation of the fundamental rule of compatibility.
 
-This is the reason it’s recommended that your package’s functions return concrete types, not interfaces: you can compatibily add methods to a concrete type, as we saw before when talking about defined types; but you can’t compatibly add methods to an interface.
+This is the reason it’s recommended that your package’s functions return concrete types, not interfaces: you can compatibility add methods to a concrete type, as we saw before when talking about defined types; but you can’t compatibly add methods to an interface.
 
 Unless, that is, your interface has an unexported method. Then you can add methods to it, both exported and unexported. You can even remove or change unexported methods.
 

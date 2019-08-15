@@ -102,7 +102,7 @@ In closing, Denis gave us four things that we should all do *tomorrow* in regard
 
 - Introduce golangci-lint and enable new linters
 - Add golangci-lint to our CI process, IDE, and enable pre-commit hooks for linting
-- Use `--new-from-rev` to easily integrate with exsiting projects
+- Use `--new-from-rev` to easily integrate with existing projects
 - Use a tool like ReviewDog, GolangCI, or SonarQube to really push the envelope on automation
 
 Denis has proved that linting your Go code adds a lot of value and is something that we as developers should add to our development processes.
