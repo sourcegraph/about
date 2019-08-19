@@ -16,7 +16,7 @@ published: true
  <br/><small>Sourcegraph.com stats as of August 2019</small>
 </p>
 
-Wouldn't it be awesome if you could review, browse, and search code from the top ten thousand open source repositories on GitHub? You can, using [Sourcegraph.com](https://sourcegraph.com), and we've now made it easier to use!
+Wouldn't it be awesome if you could scope a code search to find usage examples from the top ten thousand open source repositories on GitHub? You can, using [Sourcegraph.com](https://sourcegraph.com), and we've now made it easier to use!
 
 ## Using Sourcegraph.com like a regular search engine
 
