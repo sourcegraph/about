@@ -1,6 +1,6 @@
 ---
 title: "Search the top 10,000 open source repositories on Sourcegraph.com"
-description: "How a hack week project made Sourcegraph.com easier to use, by searching the top 10k open source repositories on GitHub by default."
+description: "How Sourcegraph.com became easier to use, by setting the default search scope to the top ten thousand open source repositories on GitHub."
 author: Issac Trotts, Software Engineer at Sourcegraph
 publishDate: 2019-08-16T00:00-11:55
 tags: [
