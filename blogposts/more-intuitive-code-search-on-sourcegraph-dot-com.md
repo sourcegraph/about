@@ -52,7 +52,7 @@ Here are some additional searches:
 
 ## Want to help us build the ultimate open source code search engine?
 
-We are a small, remote first, distributed team of mostly engineers who love to code. Technologies that we use: Go, TypeScript, React, RxJS, GraphQL, Docker + Kubernetes.
+We are a small, remote first team of mostly engineers who love to code. Technologies that we use: Go, TypeScript, React, RxJS, GraphQL, Docker + Kubernetes.
 
 If you are passionate about making the world better through software:
 
