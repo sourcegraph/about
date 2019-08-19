@@ -48,7 +48,7 @@ Here are some additional searches:
  - [Dockerfile's for Python Flask apps using uwsgi: `file:Dockerfile ^FROM\s+python\: uwsgi flask`](https://sourcegraph.com/search?q=file:Dockerfile+%5EFROM%5Cs%2Bpython%5C:+uwsgi+flask+timeout:1000s+count:100)
  - [TypeScript examples using `tap` from RxJS: `lang:typescript rxjs tap\( timeout:1000s count:100`](https://sourcegraph.com/search?q=lang:typescript+rxjs+tap%5C%28+timeout:1000s+count:100)
  - [CockroachDB usage in Java: `cockroachdb lang:java`](https://sourcegraph.com/search?q=cockroachdb+lang:java)
- - [Prometheus client usage in Go: `lang:go ^\s*\"github.com/prometheus/client_golang`](https://sourcegraph.com/search?q=lang:go+%5E%5Cs*%5C%22github.com/prometheus/client_golang)
+ - [Prometheus client usage in Go: `lang:go ^\s*\"github.com/prometheus/client_golang`](https://sourcegraph.com/search?q=lang:go+%5E%5Cs*%5C"github.com/prometheus/client_golang)
  - [References to Donald Knuth and "literate programming"](https://sourcegraph.com/search?q=knuth%5Cs*donald%7Cdonald%5Cs*knuth%7Cliterate%5Cs*programming+timeout:1000s+count:100)
 
 ## Want to help us build the ultimate open source code search engine?
