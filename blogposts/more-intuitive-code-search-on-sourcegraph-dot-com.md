@@ -1,6 +1,6 @@
 ---
 title: "Search the top 10,000 open source repositories on Sourcegraph.com"
-description: "How Sourcegraph.com became easier to use, by setting the default search scope to the top ten thousand open source repositories on GitHub."
+description: "How Sourcegraph.com became easier to use, by setting the default search scope to the top 10,000 open source repositories on GitHub."
 author: Issac Trotts, Software Engineer at Sourcegraph
 publishDate: 2019-08-16T00:00-11:55
 tags: [
@@ -16,7 +16,7 @@ published: true
  <br/><small>Sourcegraph.com stats as of August 2019</small>
 </p>
 
-Wouldn't it be awesome if you could scope a code search to find usage examples from the top ten thousand open source repositories on GitHub? You can, using [Sourcegraph.com](https://sourcegraph.com), and we've now made it easier to use!
+[Sourcegraph.com](https://sourcegraph.com) can now search across the top 10,000 open source repositories on GitHub so you can find usage examples of popular projects.
 
 ## Using Sourcegraph.com like a regular search engine
 
@@ -26,8 +26,7 @@ Let's say you've recently heard about Google's [Distroless container image](http
 
 ![](/blog/too-many-matching-repos.png)
 
-After some [Sourcegraph.com](https://sourcegraph.com) specific code changes ([#4959](https://github.com/sourcegraph/sourcegraph/pull/4959/files) and [#5062](https://github.com/sourcegraph/sourcegraph/pull/5062/files)
-), Sourcegraph (by default), will now search the top 10,000 open source repositories from GitHub (ordered by watch count) if a [`repo` filter](https://docs.sourcegraph.com/user/search/queries) was not provided. This means a query for a [distroless based Dockerfile](https://sourcegraph.com/search?q=file:Dockerfile+FROM+gcr.io/distroless) now returns a useful set of results to explore.
+After some [Sourcegraph.com](https://sourcegraph.com) specific code changes ([#4959](https://github.com/sourcegraph/sourcegraph/pull/4959/files) and [#5062](https://github.com/sourcegraph/sourcegraph/pull/5062/files)), Sourcegraph (by default), will now search the top 10,000 open source repositories from GitHub (ordered by watch count) if a [`repo` filter](https://docs.sourcegraph.com/user/search/queries) was not provided. This means a query for a [distroless based Dockerfile](https://sourcegraph.com/search?q=file:Dockerfile+FROM+gcr.io/distroless) now returns a useful set of results to explore.
 
 ![](/blog/distroless-image-results.png)
 
