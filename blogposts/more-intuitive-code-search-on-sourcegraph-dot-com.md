@@ -20,7 +20,7 @@ Wouldn't it be awesome if you could review, browse, and search code from the top
 
 ## Using Sourcegraph.com like a regular search engine
 
-[Sourcegraph.com](https://sourcegraph.com) indexes over 4 million open source repositories on GitHub! The only problem, was that a [`repo` filter](https://docs.sourcegraph.com/user/search/queries) was required to narrow the repository set to a manageable number, the downside of which, meant you had to know what repositories to search. This meant [Sourcegraph.com](https://sourcegraph.com) was missing out on a key use case⁠—random usage discovery.
+[Sourcegraph.com](https://sourcegraph.com) has always allowed developers to browse any open source repository from GitHub, but it wasn't possible to perform a search without adding a `repo` filter to limit the number of repositories that needed to be searched (private Sourcegraph instances don't have this limitation). This meant [Sourcegraph.com](https://sourcegraph.com) was missing out on a key use case, of finding usage examples for a library, class, method, or function, from a set or reputable and predefined open source repositories.
 
 Let's say you've recently heard about Google's [Distroless container image](https://github.com/GoogleContainerTools/distroless), and are curious about its usage. Previously, without specifying any repsoitories, your search would've returned this:
 
