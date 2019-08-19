@@ -12,7 +12,7 @@ published: true
 ---
 
 <p style="text-align: center">
-  <img src="/blog/sourcegraph-com-usage.png" alt="My top feature request is: no new features. Just fix what's broken">
+  <img src="/blog/sourcegraph-com-usage.png" />
   <br/><small>Sourcegraph.com stats as of August 2019</small>
 </p>
 
