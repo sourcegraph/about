@@ -4,7 +4,7 @@ description: "How a hack week project made Sourcegraph.com easier to use, by sea
 author: Issac Trotts, Software Engineer at Sourcegraph
 publishDate: 2019-08-16T00:00-11:55
 tags: [
-  blog
+ blog
 ]
 slug: Search-the-top-10000-open-source-repositories-Sourcegraph-com
 heroImage: /blog/sourcegraph-com-usage.png
@@ -12,17 +12,17 @@ published: true
 ---
 
 <p style="text-align: center">
-  <img src="/blog/sourcegraph-com-usage.png" />
-  <br/><small>Sourcegraph.com stats as of August 2019</small>
+ <img src="/blog/sourcegraph-com-usage.png" />
+ <br/><small>Sourcegraph.com stats as of August 2019</small>
 </p>
 
 Wouldn't it be awesome if you could review, browse, and search code from the top ten thousand open source repositories on GitHub? You can, using [Sourcegraph.com](https://sourcegraph.com), and we've now made it easier to use!
 
 ## Using Sourcegraph.com like a regular search engine
 
-[Sourcegraph.com](https://sourcegraph.com) has always allowed developers to browse any open source repository from GitHub, but it wasn't possible to perform a search without adding a `repo` filter to limit the number of repositories that needed to be searched (private Sourcegraph instances don't have this limitation). This meant [Sourcegraph.com](https://sourcegraph.com) was missing out on a key use case, of finding usage examples for a library, class, method, or function, from a set or reputable and predefined open source repositories.
+[Sourcegraph.com](https://sourcegraph.com) has always allowed developers to browse any open source repository from GitHub, but it wasn't possible to perform a search without adding a `repo` filter to limit the number of repositories that needed to be searched (private Sourcegraph instances don't have this limitation). This meant [Sourcegraph.com](https://sourcegraph.com) was missing a crucial use case—finding usage examples for a library, class, method, or function, from a set or reputable, and predefined open source repositories.
 
-Let's say you've recently heard about Google's [Distroless container image](https://github.com/GoogleContainerTools/distroless), and are curious about its usage. Previously, without specifying any repsoitories, your search would've returned this:
+Let's say you've recently heard about Google's [Distroless container image](https://github.com/GoogleContainerTools/distroless), and are curious about its usage. Previously, without specifying any repositories, your search would've returned this:
 
 ![](/blog/too-many-matching-repos.png)
 
@@ -33,7 +33,7 @@ After some [Sourcegraph.com](https://sourcegraph.com) specific code changes ([#4
 
 ## Sourcegraph.com as a research and usage discovery tool
 
-This exposes a huge amount of code discovery possibilities, such as examples of [Python's Pipenv within Dockerfiles](https://sourcegraph.com/search?q=pipenv+f:Dockerfile):
+Let's explore some research and usage possibilities, such as examples of [Python's Pipenv within Dockerfiles](https://sourcegraph.com/search?q=pipenv+f:Dockerfile):
 
 ![](/blog/pipenv-search.png)
 
@@ -41,7 +41,7 @@ Or how developers are using [React in Typescript](https://sourcegraph.com/search
 
 ![](/blog/react-typescript-search.png)
 
-We're excited by the increased discoverability of code on [Sourcegraph.com](https://sourcegraph.com) for languages, packages, libraries, and frameworks. There is also the added benefit of [Sourcegraph.com](https://sourcegraph.com) working for a first time user (when they don't necesssarily know the [`repo` filter](https://docs.sourcegraph.com/user/search/queries) exists).
+We're excited by the increased discoverability of code on [Sourcegraph.com](https://sourcegraph.com) for languages, packages, libraries, and frameworks. There is also the added benefit of [Sourcegraph.com](https://sourcegraph.com) working for a first time user (when they don't necessarily know the [`repo` filter](https://docs.sourcegraph.com/user/search/queries) exists).
 
 Here are some additional searches:
 
@@ -52,7 +52,7 @@ Here are some additional searches:
 
 ## Want to help us build the ultimate open source code search engine?
 
-We are a small, remote first team of mostly engineers who love to code. Technologies that we use: Go, TypeScript, React, RxJS, GraphQL, Docker + Kubernetes.
+We are a small, remote-first team of mostly engineers who love to code. Technologies that we use: Go, TypeScript, React, RxJS, GraphQL, Docker + Kubernetes.
 
 If you are passionate about making the world better through software:
 
