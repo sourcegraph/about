@@ -26,7 +26,8 @@ Let's say you've recently heard about Google's [Distroless container image](http
 
 ![](/blog/too-many-matching-repos.png)
 
-After some [Sourcegraph.com](https://sourcegraph.com) specific code and infrastructure changes, Sourcegraph (by default), will now search the top 10,000 open source repositories from GitHub (ordered by watch count) if a [`repo` filter](https://docs.sourcegraph.com/user/search/queries) was not provided. This means a query for a [distroless based Dockerfile](https://sourcegraph.com/search?q=file:Dockerfile+FROM+gcr.io/distroless) now returns a useful set of results to explore.
+After some [Sourcegraph.com](https://sourcegraph.com) specific code changes ([#4959](https://github.com/sourcegraph/sourcegraph/pull/4959/files) and [#5062](https://github.com/sourcegraph/sourcegraph/pull/5062/files)
+), Sourcegraph (by default), will now search the top 10,000 open source repositories from GitHub (ordered by watch count) if a [`repo` filter](https://docs.sourcegraph.com/user/search/queries) was not provided. This means a query for a [distroless based Dockerfile](https://sourcegraph.com/search?q=file:Dockerfile+FROM+gcr.io/distroless) now returns a useful set of results to explore.
 
 ![](/blog/distroless-image-results.png)
 
