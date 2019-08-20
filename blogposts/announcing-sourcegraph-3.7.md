@@ -57,12 +57,16 @@ Sourcegraph couldn't be what it is without the community.
 
 Symbol search (`type:symbol`) is a powerful feature for finding specific symbols, such as a function, variable, or package, and not just all text occurrences of your query. More and more users are taking advantage of symbol search results, which was leading to performance issues for some users with large instances. **[Symbol search is now indexed](https://docs.sourcegraph.com/admin/config/site_config#search-index-symbols-enabled) for default branches**, which will be a major improvement for both users running symbol searches, and the users with large instances who were having performance issues.
 
-<hr>
-
 <div class="alert alert-warning">
-  <p><strong class="alert-heading">Deployment note:</strong> We recommend you perform this upgrade after hours, because upon upgrading, Sourcegraph will automatically re-index all your repositories, which may take several (up to 12) hours depending on the size of your instance. During the reindex, search will continue to function, but will be un-indexed resulting in slower searches. You can monitor the reindex status at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>. This update is enabled by default, but if you would like to opt-out of this change, you can set <code class="language-text">"search.index.symbols.enabled": false</code> in your site config.</p>
+  <h4 class="alert-heading">Deployment note</h4>
+  <p> We recommend you perform this upgrade after hours, because upon upgrading, Sourcegraph will automatically re-index all your repositories, which may take several (up to 12) hours depending on the size of your instance. During the reindex, search will continue to function, but will be un-indexed resulting in slower searches. You can monitor the reindex status at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
+  
+  <p>This update is enabled by default, but if you would like to opt-out of adding symbols to your index, you can set <code class="language-text">"search.index.symbols.enabled": false</code> in your site config. <strong>A re-index is required for all instances due to the index structure change, even if symbols are disabled.</strong></p>
 
-  <p class="mb-0"><strong>Instance resource needs:</strong> This change will increase the memory resources required by your Sourcegraph instance by approximately 10% (This is an estimated number and we are running some final benchmarks to determine a recommendation and will update this post by 8/21/2019).</p>
+  <hr />
+
+  <h4>Instance resourcing</h4>
+  <p class="mb-0">This change will increase the memory resources required by your Sourcegraph instance by approximately 10% (This is an estimated number and we are running some final benchmarks to determine a recommendation and will update this post by 8/21/2019).</p>
 </div>
 
 ## Search performance, efficiency, and reliability
@@ -77,8 +81,6 @@ As we continue to make incremental improvements, Sourcegraph search is getting f
 - We’ve improved support for Unicode search results, so that [combined characters now highlight properly](https://github.com/sourcegraph/sourcegraph/issues/4791#issuecomment-510203777).
 
 ## More accurate TypeScript code intelligence
-
-VIDEO FOR CODE INTELLIGENCE
 
 <!--
 <p class="container">
@@ -101,12 +103,12 @@ You can read [this blog post](https://opensource.googleblog.com/2018/05/introduc
 
 ## Multi-line (`\n`) search on all branches
 
-In Sourcegraph 3.5 [we introduced the ability to do a multi-line search](https://about.sourcegraph.com/blog/sourcegraph-3.5#multi-line-search-with-newline-code-classlanguage-textncode-characters) by using `\n` in queries, however it was limited to only indexed default (e.g. `master`) branches. In 3.7 we expand this option to include unindexed branches so **you can now perform multi-line searches on any branch**.
+In Sourcegraph 3.5 [we introduced the ability to do a multi-line search in](https://about.sourcegraph.com/blog/sourcegraph-3.5#multi-line-search-with-newline-code-classlanguage-textncode-characters) by using `\n` in queries, however it was limited to only indexed default (e.g. `master`) branches. In 3.7 we expand this option to include unindexed branches so **you can now perform multi-line searches on any branch**.
 
-For example, [find all empty `if` and `else` statements in the Go language server code](https://sourcegraph.com/search?q=repo:github%5C.com/sourcegraph/go-langserver%40*refs/heads/+lang:go+type:diff+%5Cbif%7Celse%5Cb+%5C%7B%5Cn%5Cs*%5C%7D+count:100).
+For example, [watch for commits containing empty `if` and `else` statements in pull requests](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%40*refs/heads/+lang:go+file:.*auth.go%24+if%7Celse+%5C%7B%5Cs*%5Cn%5Cs*%5C%7D+type:diff+count:100).
 
 ```
-repo:github\.com/sourcegraph/go-langserver@*refs/heads/ lang:go type:diff \bif|else\b \{\n\s*\} count:100
+repo:^github\.com/sourcegraph/sourcegraph$@*refs/heads/ lang:go file:.*auth.go$ if|else \{\n\s*\} type:diff count:100
 ```
 
 ## Language extensions get icons
