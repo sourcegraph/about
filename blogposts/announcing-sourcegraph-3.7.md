@@ -18,7 +18,7 @@ published: true
 Symbol searches are now indexed for default branches.
 
 [**🔎 Search performance, efficiency, and reliability**](#search-performance-efficiency-and-reliability)<br />
-Speed improvements for `repohasfile:`, more frequent garbage collections, and support for unicode search results.
+Speed improvements for `repohasfile:`, more frequent garbage collections, and support for Unicode search results.
 
 [**🧠 More accurate TypeScript code intelligence**](#more-accurate-typescript-code-intelligence)<br />
 Jump to definition is more accurate, with fewer false positives.
@@ -61,7 +61,7 @@ This update is enabled by default for all instances using indexed search. If you
 
 <div class="alert alert-warning">
   <h4 class="alert-heading">⚠️ Deployment note</h4>
-  <p> We recommend you perform this upgrade after hours, because upon upgrading, Sourcegraph will automatically re-index all your repositories. This may take several (up to 12) hours depending on the size of your instance. During the reindex, search will continue to function, but will be un-indexed resulting in slower searches. You can monitor the reindex status at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
+  <p> We recommend you perform this upgrade after hours, because upon upgrading, Sourcegraph will automatically re-index all your repositories. This may take several (up to 12) hours depending on the size of your instance. During the reindex, search will continue to function, but will be un-indexed, resulting in slower searches. You can monitor the reindex status at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
 
   <hr />
 
@@ -103,7 +103,7 @@ You can read [this blog post](https://opensource.googleblog.com/2018/05/introduc
 
 ## Multi-line (`\n`) search on all branches
 
-In Sourcegraph 3.5 [we introduced the ability to do a multi-line search in](https://about.sourcegraph.com/blog/sourcegraph-3.5#multi-line-search-with-newline-code-classlanguage-textncode-characters) by using `\n` in queries, however it was limited to only indexed default (e.g. `master`) branches. In 3.7 we expand this option to include unindexed branches so **you can now perform multi-line searches on any branch**.
+In Sourcegraph 3.5 [we introduced the ability to do a multi-line search in](https://about.sourcegraph.com/blog/sourcegraph-3.5#multi-line-search-with-newline-code-classlanguage-textncode-characters) by using `\n` in queries, however, it was limited to only indexed default (e.g. `master`) branches. In 3.7 we expand this option to include unindexed branches so **you can now perform multi-line searches on any branch**.
 
 For example, [watch for commits containing empty `if` and `else` statements in pull requests](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%40*refs/heads/+lang:go+file:.*auth.go%24+if%7Celse+%5C%7B%5Cs*%5Cn%5Cs*%5C%7D+type:diff+count:100).
 
@@ -119,7 +119,7 @@ Icons have been added to the language extensions in the extension registry, and 
 
 ## Sourcegraph configuration temporary overrides in the UI
 
-Sourcegraph 3.4 [introduced an optional way to load Sourcegraph configuration from a file or Kubernetes config map](https://about.sourcegraph.com/blog/sourcegraph-3.4#optional-loading-of-configuration-from-the-file-system-or-kubernetes-configmap). It is helpful for teams with Sourcegraph as a critical piece of infrastructure, to be able to check the Sourcegraph configuration into version control. We received feedback that it would be nice to be able to make temporary edits in the web UI and diverge from the files on disk intentionally (i.e. to try an option out before committing it).
+Sourcegraph 3.4 [introduced an optional way to load Sourcegraph configuration from a file or Kubernetes config map](https://about.sourcegraph.com/blog/sourcegraph-3.4#optional-loading-of-configuration-from-the-file-system-or-kubernetes-configmap). It is helpful for teams with Sourcegraph as a critical piece of infrastructure, to be able to check the Sourcegraph configuration into version control. We received feedback that it would be nice to be able to make temporary edits in the web UI and diverge from the files on disk intentionally (i.e., to try an option out before committing it).
 
 You can now set `EXTSVC_CONFIG_ALLOW_EDITS=true` and `SITE_CONFIG_ALLOW_EDITS=true` to allow the active Sourcegraph configuration to diverge from the file, thus allowing temporary edits. For complete details, see [the documentation](https://docs.sourcegraph.com/admin/config/advanced_config_file).
 
@@ -127,7 +127,7 @@ You can now set `EXTSVC_CONFIG_ALLOW_EDITS=true` and `SITE_CONFIG_ALLOW_EDITS=tr
 
 <a href="/go"/>
   <img src="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png" alt="GopherCon liveblog San Diago 2019" />
-</a>  
+</a>
 
 We were proud to host the official [liveblog for GopherCon 2019](/go), and all 28 talks are now live.
 
@@ -148,7 +148,7 @@ Some of our favorites were:
 
 - Indexed search now supports symbol queries. This feature will require re-indexing all repositories. This will increase the disk and memory usage of indexed search by roughly 10%. You can disable the feature with the configuration `search.index.symbols.enabled`. [#3534](https://github.com/sourcegraph/sourcegraph/issues/3534)
 - Multi-line search now works for non-indexed search. [#4518](https://github.com/sourcegraph/sourcegraph/issues/4518)
-- When using `SITE_CONFIG_FILE` and `EXTSVC_CONFIG_FILE`, you [may now also specify e.g. `SITE_CONFIG_ALLOW_EDITS=true`](https://docs.sourcegraph.com/admin/config/advanced_config_file) to allow edits to be made to the config in the application which will be overwritten on the next process restart. [#4912](https://github.com/sourcegraph/sourcegraph/issues/4912)
+- When using `SITE_CONFIG_FILE` and `EXTSVC_CONFIG_FILE`, you [may now also specify, e.g. `SITE_CONFIG_ALLOW_EDITS=true`](https://docs.sourcegraph.com/admin/config/advanced_config_file) to allow edits to be made to the config in the application which will be overwritten on the next process restart. [#4912](https://github.com/sourcegraph/sourcegraph/issues/4912)
 
 #### Changed
 
