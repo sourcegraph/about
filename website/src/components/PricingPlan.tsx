@@ -30,7 +30,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     price,
     priceInterval = (
         <>
-            per user
+            per active user
             <br />
             per month
         </>
