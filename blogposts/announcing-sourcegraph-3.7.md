@@ -105,12 +105,6 @@ You can read [this blog post](https://opensource.googleblog.com/2018/05/introduc
 
 In Sourcegraph 3.5 [we introduced the ability to do a multi-line search in](https://about.sourcegraph.com/blog/sourcegraph-3.5#multi-line-search-with-newline-code-classlanguage-textncode-characters) by using `\n` in queries, however, it was limited to only indexed default (e.g. `master`) branches. In 3.7 we expand this option to include unindexed branches so **you can now perform multi-line searches on any branch**.
 
-For example, [watch for commits containing empty `if` and `else` statements in pull requests](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%40*refs/heads/+lang:go+file:.*auth.go%24+if%7Celse+%5C%7B%5Cs*%5Cn%5Cs*%5C%7D+type:diff+count:100).
-
-```
-repo:^github\.com/sourcegraph/sourcegraph$@*refs/heads/ lang:go file:.*auth.go$ if|else \{\n\s*\} type:diff count:100
-```
-
 ## Language extensions get icons
 
 ![extension registry](images/3.7-extension-icons.png "extension registry")
