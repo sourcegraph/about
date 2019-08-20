@@ -55,13 +55,13 @@ Sourcegraph couldn't be what it is without the community.
   <p style="text-align: center"><a href="https://vimeo.com/354904682" target="_blank">View on Vimeo</a></p>
 </p>
 
-Symbol search (`type:symbol`) is a powerful feature for finding specific symbols, such as a function, variable, or package, and not just all text occurrences of your query. More and more users are taking advantage of symbol search results, which was leading to performance issues for some users with large instances. **[Symbol search is now indexed](https://docs.sourcegraph.com/admin/config/site_config#search-index-symbols-enabled) for default branches**, which will be a major improvement for both users running symbol searches, and the users with large instances who were having performance issues.
+Symbol search (`type:symbol`) is a powerful feature for finding specific symbols, such as a function, variable, or package, and not just all text occurrences of your query. More and more users are taking advantage of symbol search results, which was leading to performance issues for some users with large instances. **Symbol search is now indexed for default branches**, which will be a major improvement for both users running symbol searches, and the users with large instances who were having performance issues.
+
+This update is enabled by default for all instances using indexed search. If you would like to [opt-out of adding symbols to your search index](https://docs.sourcegraph.com/admin/config/site_config#search-index-symbols-enabled), you can set `"search.index.symbols.enabled": false` in your site config. **A re-index is required for all instances due to the index structure change, even if indexing of symbols are disabled.**
 
 <div class="alert alert-warning">
-  <h4 class="alert-heading">Deployment note</h4>
-  <p> We recommend you perform this upgrade after hours, because upon upgrading, Sourcegraph will automatically re-index all your repositories, which may take several (up to 12) hours depending on the size of your instance. During the reindex, search will continue to function, but will be un-indexed resulting in slower searches. You can monitor the reindex status at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
-  
-  <p>This update is enabled by default, but if you would like to opt-out of adding symbols to your index, you can set <code class="language-text">"search.index.symbols.enabled": false</code> in your site config. <strong>A re-index is required for all instances due to the index structure change, even if symbols are disabled.</strong></p>
+  <h4 class="alert-heading">⚠️ Deployment note</h4>
+  <p> We recommend you perform this upgrade after hours, because upon upgrading, Sourcegraph will automatically re-index all your repositories. This may take several (up to 12) hours depending on the size of your instance. During the reindex, search will continue to function, but will be un-indexed resulting in slower searches. You can monitor the reindex status at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
 
   <hr />
 
