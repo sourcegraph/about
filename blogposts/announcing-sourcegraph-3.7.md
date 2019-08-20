@@ -125,9 +125,20 @@ You can now set `EXTSVC_CONFIG_ALLOW_EDITS=true` and `SITE_CONFIG_ALLOW_EDITS=tr
 
 ## In case you missed it...
 
-- We learned a ton at GopherCon, and you can read about some of the awesome talks from the GopherCon live-blog!
-- We had a fruitful hackweek, with one project resulting in [improved default search on sourcegraph.com]
-- We have been exploring LSIF as a fast and precise code intelligence solution. Read about [what we’ve been learning]!
+<a href="/go"/>
+  <img src="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png" alt="GopherCon liveblog San Diago 2019" />
+</a>  
+
+We were proud to host the official [liveblog for GopherCon 2019](/go), and all 28 talks are now live.
+
+Some of our favorites were:
+
+- [Two Go programs, three different profiling techniques, in 50 minutes](/go/gophercon-2019-two-go-programs-three-different-profiling-techniques-in-50-minutes) by [Dave Cheney](https://twitter.com/davecheney)
+- [Generics in Go](/go/gophercon-2019-generics-in-go) by Ian Lance Taylor
+- [Get Going with Web Assembly](/go/gophercon-2019-get-going-with-webassembly) by [Johan Brandhorst](https://twitter.com/JohanBrandhorst)
+- [How Uber "Go"es](/go/gophercon-2019-how-uber-go-es) by [Elena Morozova](https://twitter.com/lelenanam)
+
+[Check out the rest of the talks!](/go/)
 
 ## Changelog
 
