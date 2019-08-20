@@ -57,7 +57,7 @@ Sourcegraph couldn't be what it is without the community.
 
 Symbol search (`type:symbol`) is a powerful feature for finding specific symbols, such as a function, variable, or package, and not just all text occurrences of your query. More and more users are taking advantage of symbol search results, which was leading to performance issues for some users with large instances. **Symbol search is now indexed for default branches**, which will be a major improvement for both users running symbol searches, and the users with large instances who were having performance issues.
 
-This update is enabled by default for all instances using indexed search. If you would like to [opt-out of adding symbols to your search index](https://docs.sourcegraph.com/admin/config/site_config#search-index-symbols-enabled), you can set `"search.index.symbols.enabled": false` in your site config. **A re-index is required for all instances due to the index structure change, even if indexing of symbols are disabled.**
+This update is enabled by default for all instances using indexed search. If you would like to [opt-out of adding symbols to your search index](https://docs.sourcegraph.com/admin/config/site_config#search-index-symbols-enabled), you can set `"search.index.symbols.enabled": false` in your site config. **A re-index is required for all instances due to the index structure change, even if indexing of symbols is disabled.**
 
 <div class="alert alert-warning">
   <h4 class="alert-heading">⚠️ Deployment note</h4>
