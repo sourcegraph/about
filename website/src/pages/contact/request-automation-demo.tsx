@@ -15,9 +15,10 @@ export default ((props: any) => {
         <Layout
             meta={{
                 title: 'Request a large scale code automation demo',
-                description: 'We\'ll reach out to discuss a a demo and to learn more about your use cases.',
+                description: "We'll reach out to discuss a a demo and to learn more about your use cases.",
             }}
-            location={props.location} minimal={true}
+            location={props.location}
+            minimal={true}
         >
             <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
             <div className="bg-white text-dark">
@@ -26,7 +27,7 @@ export default ((props: any) => {
                         <div className="col-md-6">
                             <h1 className="display-4">Request a large scale code automation demo</h1>
                             <h3 className="font-weight-light text-sans-serif">
-                                We'll reach out to discuss a a demo and to learn more about your use cases.
+                                We'll reach out to discuss a demo and to learn more about your use cases.
                             </h3>
                             <div className="form mt-5">
                                 <div id="hubspotRequestAutomationDemoForm" className="d-flex justify-center" />

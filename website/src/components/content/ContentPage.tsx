@@ -19,7 +19,7 @@ export const ContentPage: React.FunctionComponent<Props> = ({
     titleClassName,
     children,
 }) => (
-    <div className={`{slugify(title).toLowerCase()} content-page`}>
+    <div className={`${slugify(title).toLowerCase()} content-page`}>
         <Jumbotron className="mb-5" title={title} description={description} titleClassName={titleClassName}>
             {extraDescription}
             {mainActions}
