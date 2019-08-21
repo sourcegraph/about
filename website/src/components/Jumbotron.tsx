@@ -23,7 +23,7 @@ export const Jumbotron: React.FunctionComponent<{
     children,
 }) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
-        <div className="container text-center pt-6 pb-5">
+        <div className="logo container text-center pt-6 pb-5">
             {logomark && (
                 <img
                     className="mb-1"

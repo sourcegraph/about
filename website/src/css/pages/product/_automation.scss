@@ -1,0 +1,30 @@
+.automation {
+   .container img {
+       display: inline-block;
+       width: 100% !important;
+    }
+
+    h1 {
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: -0.2rem;
+            right: -6.7rem;
+            content: 'Coming soon';
+            color: $light-11;
+            background-color: #dc3545;
+            text-transform: uppercase;
+            border: 1px solid transparent;
+            padding: .15rem .3rem;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
