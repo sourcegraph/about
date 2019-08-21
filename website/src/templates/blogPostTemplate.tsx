@@ -55,12 +55,11 @@ export default class ContentfulTemplate extends React.Component<any, any> {
         const meta = {
             title,
             image,
-            description
+            description,
         }
         return (
             <Layout location={this.props.location} meta={meta}>
                 <div className="bg-white text-dark">
-
                     <div className="blog-post">
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">

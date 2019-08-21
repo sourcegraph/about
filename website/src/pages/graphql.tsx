@@ -12,17 +12,18 @@ export default class GraphQLSummitList extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const metaProps = {
             title: 'GraphQL Summit 2017 Liveblog',
-            description: 'Check out the official GraphQL Summit 2017 Liveblog proudly hosted by Sourcegraph.'
+            description: 'Check out the official GraphQL Summit 2017 Liveblog proudly hosted by Sourcegraph.',
         }
         const graphqlPosts = this.props.data.allMarkdownRemark.edges
 
         return (
             <Layout
-            location={this.props.location}
-            meta={{
-                title: metaProps.title,
-                description: metaProps.description,
-            }}>
+                location={this.props.location}
+                meta={{
+                    title: metaProps.title,
+                    description: metaProps.description,
+                }}
+            >
                 <div className="gray-9 bg-white text-dark">
                     <div>
                         <div className="blog blog__head">

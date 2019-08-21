@@ -22,7 +22,7 @@ export default class GoList extends React.Component<any, any> {
         const metaProps = {
             title: 'GopherCon and dotGo Liveblogs by Sourcegraph',
             description: 'Check out the official GopherCon 2019 Liveblog proudly hosted by Sourcegraph.',
-            image: 'https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png'
+            image: 'https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png',
         }
         const goPosts = this.props.data.allMarkdownRemark.edges.filter(
             (post: any) => post.node.frontmatter.published === true
@@ -30,12 +30,13 @@ export default class GoList extends React.Component<any, any> {
 
         return (
             <Layout
-            location={this.props.location}
-            meta={{
-                title: metaProps.title,
-                description: metaProps.description,
-                image: metaProps.image
-            }}>
+                location={this.props.location}
+                meta={{
+                    title: metaProps.title,
+                    description: metaProps.description,
+                    image: metaProps.image,
+                }}
+            >
                 <div className="gray-9 bg-white text-dark">
                     <div>
                         <div className="blog blog__head">
@@ -51,12 +52,16 @@ export default class GoList extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="grid-item-2">
-                                    <img className="grid-image" src="/gophercon-2019/gophercon-thumbnail.png" alt="GopherCon 2019 Liveblog proudly hosted by Sourcegraph"></img>
+                                    <img
+                                        className="grid-image"
+                                        src="/gophercon-2019/gophercon-thumbnail.png"
+                                        alt="GopherCon 2019 Liveblog proudly hosted by Sourcegraph"
+                                    ></img>
                                 </div>
                             </div>
                         </div>
 
-                        <hr/>
+                        <hr />
 
                         <BlogPosts blogType="go" posts={goPosts} />
                     </div>
