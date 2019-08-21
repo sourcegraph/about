@@ -212,7 +212,7 @@ const DATA: PricingItemCategory[] = [
                 name: 'Extension whitelist',
                 url:
                     'https://docs.sourcegraph.com/admin/extensions#allow-only-specific-extensions-from-sourcegraph-com',
-                plans: ENTERPRISE_PLAN,
+                plans: ENTERPRISE_PLUS_PLAN,
             },
             {
                 name: 'Private extension registry',
