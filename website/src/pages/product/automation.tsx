@@ -224,8 +224,8 @@ export default ((props: any) => (
                         projects.
                     </p>
                 </div>
-                <Vimeo id={355392896} className="mt-4" />
-                <Vimeo id={355392936} className="mt-5" />
+                <Vimeo id={355392896} muted={false} className="mt-4" />
+                <Vimeo id={355392936} muted={false} className="mt-5" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
