@@ -15,7 +15,7 @@ export default ((props: any) => {
         <Layout
             meta={{
                 title: 'Request a large-scale code automation demo',
-                description: "We'll reach out to discuss a a demo and to learn more about your use cases.",
+                description: "We'll reach out to discuss a demo and to learn more about your use cases.",
             }}
             location={props.location}
             minimal={true}
