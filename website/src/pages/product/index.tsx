@@ -93,7 +93,7 @@ export default ((props: any) => {
                                     Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt.
                                 </p>
                                 <Link to="/product/automation" className="stretched-link">
-                                    Learn more about large scale code changes with <strong>automation</strong> &nbsp;&raquo;
+                                    Learn more about large-scale code changes with <strong>automation</strong> &nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
