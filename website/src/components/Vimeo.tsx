@@ -23,7 +23,7 @@ export const Vimeo: React.FunctionComponent<{
     controls = true,
     color = '0CB6F4',
     autoplay = false,
-    autopause=true,
+    autopause = true,
     loop = false,
     time = '0',
     texttrack = 'en.subtitles',
