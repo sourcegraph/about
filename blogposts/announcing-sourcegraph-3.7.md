@@ -10,14 +10,14 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
 
 [**🏎 Symbol search performant at scale**](#symbol-search-performant-at-scale)<br />
 Symbol searches are now indexed for default branches.
 
-[**🔎 Search performance, efficiency, and reliability**](#search-performance-efficiency-and-reliability)<br />
+[**🔎 Search performance, efficiency, and reliability improvements**](#search-performance-efficiency-and-reliability-improvements)<br />
 Speed improvements for `repohasfile:`, more frequent garbage collections, and support for Unicode search results.
 
 [**🧠 More accurate TypeScript code intelligence**](#more-accurate-typescript-code-intelligence)<br />
@@ -61,15 +61,21 @@ This update is enabled by default for all instances using indexed search. If you
 
 <div class="alert alert-warning">
   <h4 class="alert-heading">⚠️ Deployment note</h4>
-  <p> We recommend you perform this upgrade after hours, because upon upgrading, Sourcegraph will automatically re-index all your repositories. This may take several (up to 12) hours depending on the size of your instance. During the reindex, search will continue to function, but will be un-indexed, resulting in slower searches. You can monitor the reindex status at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
+  <p>Upon upgrading, Sourcegraph will automatically re-index all repositories on your instance. Sourcegraph cluster deployments will index at approximately 6,000 repositories per hour. Improvements from this change should not be expected until the re-index has completed. Monitor the reindex status of your instance at e.g. <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
 
   <hr />
 
   <h4>Instance resourcing</h4>
-  <p class="mb-0">This change will increase the memory resources required by your Sourcegraph instance by approximately 10% (This is an estimated number and we are running some final benchmarks to determine a recommendation and will update this post by 8/21/2019).</p>
+  <p class="mb-0">This change will increase the resources required by your Sourcegraph instance <code class="language-text">zoekt-indexserver</code> (k8s pod: <code class="language-text">indexed-search</code>), so please make the following changes if needed:
+    <ul>
+      <li>Increase disk space by 30%.</li>
+      <li>Increase memory by 30%.</li>
+      <li>Reduce <code class="language-text">symbol</code> replicas by a comparable amount.</li>
+    </ul>
+  </p>
 </div>
 
-## Search performance, efficiency, and reliability
+## Search performance, efficiency, and reliability improvements
 
 ![search speed comparison](images/3.7-symbol-search-comparison.png "search speed comparison")
 

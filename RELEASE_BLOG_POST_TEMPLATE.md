@@ -22,7 +22,7 @@ Vimeo embed
 </p>
 -->
 
-[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
 
@@ -43,7 +43,7 @@ Sourcegraph couldn't be what it is without the community.
 
 New feature section. Good if you have screenshots or diagrams and even better if you have a screencast.
 
-## {VERSION} Changelog
+## Changelog
 
 <!--
   Copy and paste the changelog for this release here and link, and replace the `{VERSION}` placeholder in the below changelog link.
