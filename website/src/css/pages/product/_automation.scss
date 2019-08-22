@@ -1,18 +1,13 @@
 .automation {
-   .container img {
-       display: inline-block;
-       width: 100% !important;
-    }
-
     h1 {
         display: inline-block;
         position: relative;
 
         &::after {
             position: absolute;
-            top: -0.2rem;
-            right: -6.7rem;
-            content: 'Coming soon';
+            top: -0.3rem;
+            right: -6rem;
+            content: 'Private beta';
             color: $light-11;
             background-color: #dc3545;
             text-transform: uppercase;
@@ -24,7 +19,21 @@
         }
     }
 
+    .jumbotron__logo {
+        display: inline-block;
+        width: 100% !important;
+    }
+
+    .request-automation-demo-footer h1::after {
+        display: none;
+    }
+
     h2 {
         text-align: center;
+    }
+
+    .submit-form-container {
+        background-color: rgba(0,0,0,1);
+        box-shadow: rgba(255,255,255,0.3) 0 0 30px 20px;
     }
 }
