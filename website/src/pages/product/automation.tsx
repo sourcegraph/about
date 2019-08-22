@@ -29,9 +29,9 @@ const seeItInActionClicked = () => {
 export const CampaignsTable: React.FunctionComponent<{
     campaigns: string[]
 }> = ({ campaigns }) => (
-    <div className="pricing-table col-lg-7 mt-4">
+    <div className="pricing-table">
         <div id="code-search" className="pricing-table__item row border-bottom border-gray">
-            <h5 className="col-12 text-uppercase text-muted font-weight-bold">Built-in automation campaigns</h5>
+            <h5 className="col text-uppercase text-muted font-weight-bold">Built-in automation campaigns</h5>
         </div>
 
         {campaigns.map(campaign => (
@@ -80,7 +80,7 @@ export default ((props: any) => (
                     heavily in code change automation
                 </h2>
                 <div className="row justify-content-lg-center">
-                    <p>
+                    <div className="col text-center">
                         <a
                             className="btn btn-outline-primary rounded-lg active mb-5 px-6"
                             href="#see-it-in-action"
@@ -88,7 +88,7 @@ export default ((props: any) => (
                         >
                             See it in action
                         </a>
-                    </p>
+                    </div>
                 </div>
                 <div className="row pb-4">
                     <div className="col-md-6">
@@ -181,37 +181,38 @@ export default ((props: any) => (
                 <h2 id="easily-define-campaigns-track-progress" className="text-center display-4 mb-3 mt-4">
                     Easily define campaigns and track their progress
                 </h2>
-
-                <div className="row mt-4">
-                    <div className="row justify-content-md-center">
-                        <p className="col-lg-9">
-                            Sourcegraph's automation lets you create campaigns, which are collections of pull requests
-                            and issues across multiple repositories. The following campaign types are built in, and you
-                            can create other ad-hoc campaigns from the UI or use the <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more advanced campaigns:
-                        </p>
-                        <CampaignsTable
-                            campaigns={[
-                                'Deprecate a Java artifact dependency',
-                                'Deprecate a package.json dependency (npm/yarn)',
-                                'Gradually enforce a new ESLint rule',
-                                'Require all files to have valid code owners',
-                                'Find-replace across multiple repositories',
-                                'Triage search results',
-                                'Track an existing collection of issues and pull requests',
-                            ]}
-                        />
+                <div className="container-fluid">
+                    <div className="row mt-4 justify-content-md-center">
+                        <div className="col-lg-10">
+                            <p>
+                                Sourcegraph's automation lets you create campaigns, which are collections of pull requests
+                                and issues across multiple repositories. The following campaign types are built in, and you
+                                can create other ad-hoc campaigns from the UI or use the <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more advanced campaigns:
+                            </p>
+                        </div>
+                        <div className="col-lg-8 mt-4">
+                            <CampaignsTable
+                                campaigns={[
+                                    'Deprecate a Java artifact dependency',
+                                    'Deprecate a package.json dependency (npm/yarn)',
+                                    'Gradually enforce a new ESLint rule',
+                                    'Require all files to have valid code owners',
+                                    'Find-replace across multiple repositories',
+                                    'Triage search results',
+                                    'Track an existing collection of issues and pull requests',
+                                ]}
+                            />
+                        </div>
                     </div>
                 </div>
 
-                <div className="row mt-5">
-                    <div className="row justify-content-md-center">
-                        <p className="col-lg-9">
-                            When you create a campaign, Sourcegraph automatically creates pull requests and issues as
-                            needed with the correct reviewers and context—and keeps them up-to-date. You can track the
-                            progress of the campaign with the burndown chart and see all related activity across all
-                            repositories. All this makes completing the campaign as fast and painless as possible.
-                        </p>
-                    </div>
+                <div className="row mt-5 justify-content-md-center">
+                    <p className="col-lg-10">
+                        When you create a campaign, Sourcegraph automatically creates pull requests and issues as
+                        needed with the correct reviewers and context—and keeps them up-to-date. You can track the
+                        progress of the campaign with the burndown chart and see all related activity across all
+                        repositories. All this makes completing the campaign as fast and painless as possible.
+                    </p>
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-3">
@@ -246,4 +247,4 @@ export default ((props: any) => (
             </Jumbotron>
         </ContentPage>
     </Layout>
-)) as React.FunctionComponent<any>
+)) as React.FunctionComponent
