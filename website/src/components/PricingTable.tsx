@@ -11,16 +11,18 @@ import {
 
 enum Plan {
     OpenSource = 'Open source',
-    Core = 'Core',
+    Free = 'Free',
     Enterprise = 'Enterprise',
-    Unlimited = 'Unlimited',
+    EnterprisePlus = 'Enterprise Plus',
+    Elite = 'Elite',
 }
 
 const PLAN_CHECK_ICON_CLASS: Record<Plan, string> = {
     'Open source': 'text-dark',
-    Core: 'text-success',
+    Free: 'text-success',
     Enterprise: 'text-success',
-    Unlimited: 'text-success',
+    'Enterprise Plus': 'text-success',
+    Elite: 'text-success',
 }
 
 interface PricingItemCategory {
@@ -36,13 +38,15 @@ interface PricingItem {
     plans: Partial<Record<Plan, boolean | string>>
 }
 
-const ALL_PLANS: PricingItem['plans'] = { 'Open source': true, Core: true, Enterprise: true, Unlimited: true }
+const ALL_PLANS: PricingItem['plans'] = { 'Open source': true, Free: true, Enterprise: true, 'Enterprise Plus': true, Elite: true }
 
-const CORE_PLAN: PricingItem['plans'] = { Core: true, Enterprise: true, Unlimited: true }
+const FREE_PLAN: PricingItem['plans'] = { Free: true, Enterprise: true, 'Enterprise Plus': true, Elite: true }
 
-const ENTERPRISE_PLAN: PricingItem['plans'] = { Enterprise: true, Unlimited: true }
+const ENTERPRISE_PLAN: PricingItem['plans'] = { Enterprise: true, 'Enterprise Plus': true, Elite: true }
 
-const UNLIMITED_PLAN: PricingItem['plans'] = { Unlimited: true }
+const ENTERPRISE_PLUS_PLAN: PricingItem['plans'] = { 'Enterprise Plus': true, Elite: true }
+
+const ELITE_PLAN: PricingItem['plans'] = { Elite: true }
 
 const DATA: PricingItemCategory[] = [
     {
@@ -56,13 +60,13 @@ const DATA: PricingItemCategory[] = [
             { name: 'Repository, path, & language filters', plans: ALL_PLANS },
             { name: 'Regular expression queries', plans: ALL_PLANS },
             { name: 'Browser search shortcuts', plans: ALL_PLANS },
+            { name: 'High-scale clustered search', plans: ENTERPRISE_PLAN },
             {
                 name: 'Per-user repository permissions',
                 description: 'From your code host (GitHub or GitLab only)',
                 url: 'https://docs.sourcegraph.com/admin/repo/permissions',
-                plans: ENTERPRISE_PLAN,
+                plans: ENTERPRISE_PLUS_PLAN,
             },
-            { name: 'High-scale clustered search', plans: ENTERPRISE_PLAN },
         ],
     },
     {
@@ -95,7 +99,7 @@ const DATA: PricingItemCategory[] = [
                 name: 'Per-user repository permissions',
                 description: 'From your code host (GitHub or GitLab only)',
                 url: 'https://docs.sourcegraph.com/admin/repo/permissions',
-                plans: ENTERPRISE_PLAN,
+                plans: ENTERPRISE_PLUS_PLAN,
             },
         ],
     },
@@ -106,9 +110,9 @@ const DATA: PricingItemCategory[] = [
             {
                 name: `${SUPPORTED_PROGRAMMING_LANGUAGES_COUNT} supported languages`,
                 url: SUPPORTED_PROGRAMMING_LANGUAGES_URL,
-                plans: CORE_PLAN,
+                plans: FREE_PLAN,
             },
-            { name: 'Single repository definitions and references', plans: CORE_PLAN },
+            { name: 'Single repository definitions and references', plans: FREE_PLAN },
             { name: 'Cross-repository definitions and references', plans: ENTERPRISE_PLAN },
             {
                 name: 'High-scale clustered language servers',
@@ -117,7 +121,7 @@ const DATA: PricingItemCategory[] = [
             {
                 name: 'Remote development environment',
                 description: 'Coming soon',
-                plans: UNLIMITED_PLAN,
+                plans: ELITE_PLAN,
             },
         ],
     },
@@ -140,12 +144,12 @@ const DATA: PricingItemCategory[] = [
             {
                 name: 'Large-scale code modifications',
                 description: 'Only available to select customers in preview',
-                plans: UNLIMITED_PLAN,
+                plans: ELITE_PLAN,
             },
             {
                 name: 'License compliance and security analysis',
                 description: 'Coming soon',
-                plans: UNLIMITED_PLAN,
+                plans: ELITE_PLAN,
             },
         ],
     },
@@ -181,7 +185,7 @@ const DATA: PricingItemCategory[] = [
             {
                 name: 'Sourcegraph.com extension registry',
                 url: 'https://sourcegraph.com/extensions',
-                plans: CORE_PLAN,
+                plans: FREE_PLAN,
             },
         ],
     },
@@ -192,11 +196,11 @@ const DATA: PricingItemCategory[] = [
             {
                 name: 'User authentication via SSO (SAML/OpenID Connect/etc.)',
                 url: 'https://docs.sourcegraph.com/admin/auth',
-                plans: CORE_PLAN,
+                plans: FREE_PLAN,
             },
             {
-                name: 'Per-user repository permissions',
-                url: 'https://docs.sourcegraph.com/admin/repo/permissions',
+                name: 'Audit logs',
+                description: 'Coming soon',
                 plans: ENTERPRISE_PLAN,
             },
             {
@@ -205,29 +209,29 @@ const DATA: PricingItemCategory[] = [
                 plans: ENTERPRISE_PLAN,
             },
             {
-                name: 'Custom branding',
-                url: 'https://docs.sourcegraph.com/admin/config/site_config#reference',
-                plans: ENTERPRISE_PLAN,
-            },
-            {
                 name: 'Extension whitelist',
                 url:
                     'https://docs.sourcegraph.com/admin/extensions#allow-only-specific-extensions-from-sourcegraph-com',
-                plans: ENTERPRISE_PLAN,
+                plans: ENTERPRISE_PLUS_PLAN,
             },
             {
                 name: 'Private extension registry',
                 url: 'https://docs.sourcegraph.com/admin/extensions',
-                plans: UNLIMITED_PLAN,
+                plans: ENTERPRISE_PLUS_PLAN,
+            },
+            {
+                name: 'Custom branding',
+                url: 'https://docs.sourcegraph.com/admin/config/site_config#reference',
+                plans: ENTERPRISE_PLUS_PLAN,
+            },
+            {
+                name: 'Per-user repository permissions',
+                url: 'https://docs.sourcegraph.com/admin/repo/permissions',
+                plans: ENTERPRISE_PLUS_PLAN,
             },
             {
                 name: 'Unlimited guest users',
-                plans: UNLIMITED_PLAN,
-            },
-            {
-                name: 'Audit logs',
-                description: 'Coming soon',
-                plans: UNLIMITED_PLAN,
+                plans: ELITE_PLAN,
             },
         ],
     },
@@ -261,7 +265,8 @@ const DATA: PricingItemCategory[] = [
                     'Have Sourcegraph run and manage your instance, using our secure infrastructure or a sub-account on your own cloud provider',
                 plans: {
                     Enterprise: 'Additional fees per user',
-                    Unlimited: true,
+                    'Enterprise Plus': 'Additional fees per user',
+                    Elite: true,
                 },
             },
         ],
@@ -281,11 +286,14 @@ const DATA: PricingItemCategory[] = [
             },
             {
                 name: '24/7 uptime support',
-                plans: UNLIMITED_PLAN,
+                plans: {
+                    'Enterprise Plus': 'Additional fees per user',
+                    Elite: true,
+                },
             },
             {
                 name: 'Dedicated support',
-                plans: UNLIMITED_PLAN,
+                plans: ELITE_PLAN,
             },
         ],
     },
@@ -294,7 +302,7 @@ const DATA: PricingItemCategory[] = [
 export const PricingTable: React.FunctionComponent<{
     allPlans?: Plan[]
     categoriesAndItems?: PricingItemCategory[]
-}> = ({ allPlans = [Plan.OpenSource, Plan.Core, Plan.Enterprise, Plan.Unlimited], categoriesAndItems = DATA }) => (
+}> = ({ allPlans = [Plan.OpenSource, Plan.Free, Plan.Enterprise, Plan.EnterprisePlus, Plan.Elite], categoriesAndItems = DATA }) => (
     <div className="pricing-table">
         <div className="row align-items-center border border-gray">
             <div className="col-4 py-3">
@@ -305,17 +313,19 @@ export const PricingTable: React.FunctionComponent<{
                     src="/sourcegraph/logo.svg"
                 />
             </div>
-            {allPlans.map(plan => (
-                <div className="col-2 py-3 px-3 border-left border-gray">
-                    <h3 className="h4 mb-0 text-center">{plan}</h3>
-                </div>
-            ))}
+            <div className="col-8 row">
+                {allPlans.map(plan => (
+                        <div className="col py-3 px-3 border-left border-gray">
+                            <h3 className="h4 mb-0 text-center">{plan}</h3>
+                        </div>
+                ))}
+            </div>
         </div>
         <div>
             {categoriesAndItems.map(({ id, title, items }, i) => (
                 <React.Fragment key={i}>
                     <div id={id} className="pricing-table__category row mt-5 pt-4 px-2 py-1">
-                        <h6 className="col-12 text-uppercase text-muted font-weight-bold">{title}</h6>
+                        <h6 className="col-14 text-uppercase text-muted font-weight-bold">{title}</h6>
                     </div>
                     {items.map(({ name, description, url, plans }, i) => (
                         <div
@@ -346,13 +356,15 @@ export const PricingTable: React.FunctionComponent<{
                                     </OverlayTrigger>
                                 </div>
                             </div>
-                            {allPlans.map(plan => (
-                                <div className="col-2 p-2 border-left border-gray text-center">
-                                    {typeof plans[plan] === 'string'
-                                        ? plans[plan]
-                                        : plans[plan] && <CheckIcon className={PLAN_CHECK_ICON_CLASS[plan]} />}
-                                </div>
-                            ))}
+                            <div className="col-8 row">
+                                {allPlans.map(plan => (
+                                    <div className="col p-2 border-left border-gray text-center">
+                                        {typeof plans[plan] === 'string'
+                                            ? plans[plan]
+                                            : plans[plan] && <CheckIcon className={PLAN_CHECK_ICON_CLASS[plan]} />}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     ))}
                 </React.Fragment>

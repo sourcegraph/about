@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
+import { PricingFreeTierPopoverButton } from '../components/PricingFreeTierPopover'
 import { PricingPlan } from '../components/PricingPlan'
 import { PricingTable } from '../components/PricingTable'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
@@ -27,84 +28,74 @@ export default ((props: any) => (
                     name="description"
                     content="Sourcegraph is always free for public and open-source code. Start using it for private code with a paid plan."
                 />
-                <link rel="icon" type="image/png" href="https://about.sourcegraph.com/favicon.png" />
+                <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>
             <div className="pricing-page">
+                <ContentSection color="white" className="hero-section text-center py-5">
+                    <h4 className="font-weight-light">
+                        Sourcegraph code search, code navigation, and other limited features
+                        <PricingFreeTierPopoverButton />
+                        are free for individuals and small teams. <a href="https://docs.sourcegraph.com">Install</a> to get started today!
+                    </h4>
+                </ContentSection>
                 <div className="container-fluid pricing-page__plans">
                     <div className="row pt-6">
                         <div className="col-8 col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing__plan"
-                                name="Core"
-                                description="Helping developers search, browse, and grok their code, for faster software development and incident response."
-                                price="$0"
-                                priceInterval=""
-                                priceCaption={
-                                    <>
-                                        for individuals
-                                        <br />
-                                        and small teams
-                                    </>
-                                }
-                                features={[
-                                    { name: 'Code search', id: 'code-search' },
-                                    { name: 'Code navigation (definitions & references)', id: 'code-navigation' },
-                                    { name: 'Sourcegraph extensions', id: 'integrations' },
-                                    { name: 'Code host & editor integration', id: 'integrations' },
-                                    {
-                                        name: 'Single sign-on (SSO) user authentication',
-                                        id: 'admin',
-                                    },
-                                    { name: '20-user limit', id: 'admin' },
-                                ]}
-                                buttonLabel="Install"
-                                buttonHref="https://docs.sourcegraph.com/#quickstart"
-                            />
-                        </div>
-                        <div className="col-8 col-md-4 mx-auto mb-4">
-                            <PricingPlan
-                                className="pricing__plan"
                                 name="Enterprise"
-                                description="Enabling engineering and DevOps leaders to speed up the organization's software lifecycle and monitor risks."
-                                price="$19"
-                                priceCaption="(billed annually)"
+                                description="Enabling engineering and DevOps leaders to speed up the organization's software development and monitor risks."
+                                price="$29"
                                 features={[
                                     { name: 'Code review & pull request integration', id: 'code-review' },
-                                    { name: 'Code monitoring', id: 'automation' },
-                                    { name: 'Repository access permissions', id: 'admin' },
-                                    { name: 'Custom branding', id: 'admin' },
+                                    { name: 'Code alerts', id: 'automation' },
                                     { name: 'Deployment metrics & monitoring', id: 'deployment' },
                                     {
                                         name: 'High-scale/availability cluster deployment option',
                                         id: 'deployment',
                                     },
+                                    { name: 'Single sign-on (SSO)', id: 'admin' },
+                                    { name: 'Technical support', id: 'support' },
                                     { name: 'Cloud-managed option', id: 'deployment' },
-                                    { name: 'Priority support', id: 'support' },
                                 ]}
-                                plusEverythingIn="Core"
-                                buttonLabel="Buy now"
-                                buttonHref="http://sourcegraph.com/subscriptions/new"
+                                buttonLabel="Try now"
+                                buttonHref="/contact/sales/?form_submission_source=pricing-enterprise"
                             />
                         </div>
                         <div className="col-8 col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing__plan"
-                                name="Unlimited"
-                                description="Enabling businesses to transform the software lifecycle with automation and code intelligence."
-                                price="$99"
-                                priceCaption="(billed annually)"
+                                name="Enterprise Plus"
+                                description="Enabling large and complex organizations to accelerate the software lifecycle universally, across teams."
+                                price="$69"
                                 features={[
-                                    { name: 'Automation', id: 'automation' },
-                                    { name: 'Free guest users', id: 'admin' },
+                                    { name: 'Repository access permissions', id: 'admin' },
+                                    { name: 'Custom branding', id: 'admin' },
+                                    { name: 'Sourcegraph extension whitelist', id: 'admin' },
+                                    { name: 'Code reporting & analytics', id: 'admin', future: true },
+                                    { name: 'Audit logs', id: 'admin', future: true },
+                                    { name: 'Priority support', id: 'support' },
+                                ]}
+                                plusEverythingIn="Enterprise"
+                                buttonLabel="Try now"
+                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-enterprise-plus"
+                            />
+                        </div>
+                        <div className="col-8 col-md-4 mx-auto mb-4">
+                            <PricingPlan
+                                className="pricing__plan"
+                                name="Elite"
+                                description="Enabling businesses to transform the software lifecycle with automation and intelligence."
+                                price="$149"
+                                features={[
+                                    { name: 'Free guest users*', id: 'admin' },
                                     { name: 'Private Sourcegraph extension registry', id: 'admin' },
                                     { name: '24/7 uptime support', id: 'support' },
-                                    { name: 'Dedicated support', id: 'support' },
                                     {
                                         name: 'Large-scale code modifications/refactoring',
                                         id: 'automation',
                                         future: true,
                                     },
-                                    { name: 'Code reporting & analytics', id: 'admin', future: true },
                                     {
                                         name: 'License compliance and security analysis',
                                         id: 'automation',
@@ -115,18 +106,21 @@ export default ((props: any) => (
                                         id: 'code-intelligence',
                                         future: true,
                                     },
-                                    { name: 'Audit logs', id: 'admin', future: true },
+                                    { name: 'Dedicated support available', id: 'support' },
                                 ]}
-                                plusEverythingIn="Enterprise"
-                                buttonLabel="Buy now"
-                                buttonHref="http://sourcegraph.com/subscriptions/new"
+                                plusEverythingIn="Enterprise Plus"
+                                buttonLabel="Try now"
+                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-elite"
                             />
                         </div>
                     </div>
                 </div>
             </div>
+            <ContentSection color="white" className="hero-section text-center py-5">
+                * Limitations apply
+            </ContentSection>
             <ContentSection color="purple" className="hero-section text-center py-5">
-                <h2>Try Sourcegraph Unlimited risk-free for 30 days</h2>
+                <h2>Try Sourcegraph Enterprise Plus risk-free for 30 days</h2>
                 <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/request-demo">
                     Free trial
                 </Link>

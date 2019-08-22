@@ -28,13 +28,13 @@ export const HoverablePopover: React.FunctionComponent<{
     }
 
     return (
-        <div ref={targetRef}>
+        <span ref={targetRef}>
             {child && React.cloneElement(child, triggerProps)}
             <Overlay show={isOpen} placement={placement} target={target || undefined}>
                 <Popover onMouseEnter={setIsOpenTrue} onMouseLeave={setIsOpenFalse} id="popover">
                     {component}
                 </Popover>
             </Overlay>
-        </div>
+        </span>
     )
 }
