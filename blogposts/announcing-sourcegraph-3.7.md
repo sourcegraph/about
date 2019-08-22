@@ -61,14 +61,14 @@ This update is enabled by default for all instances using indexed search. If you
 
 <div class="alert alert-warning">
   <h4 class="alert-heading">⚠️ Deployment note</h4>
-  <p>Upon upgrading, Sourcegraph will automatically re-index all repositories on your instance. Sourcegraph cluster deployments will index at approximately 6,000 repositories per hour. Improvements from this change should not be expected until the re-index has completed. Monitor the reindex status of your instance at <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
+  <p>Upon upgrading, Sourcegraph will automatically re-index all repositories on your instance. Sourcegraph cluster deployments will index at approximately 6,000 repositories per hour. Improvements from this change should not be expected until the re-index has completed. Monitor the reindex status of your instance at e.g. <a href="https://sourcegraph.example.com/site-admin/repositories?filter=needs-index">https://sourcegraph.example.com/site-admin/repositories?filter=needs-index</a>.</p>
 
   <hr />
 
   <h4>Instance resourcing</h4>
-  <p class="mb-0">This change will increase the resources required by your Sourcegraph instance <code class="language-text">zoekt-indexserver</code> (k8s pod: <code class="language-text">indexed-search</code>):
+  <p class="mb-0">This change will increase the resources required by your Sourcegraph instance <code class="language-text">zoekt-indexserver</code> (k8s pod: <code class="language-text">indexed-search</code>), so please make the following changes if needed:
     <ul>
-      <li>Increase disk storage by a max of 26%.</li>
+      <li>Increase disk space by 30%.</li>
       <li>Increase memory by 30%.</li>
       <li>Reduce <code class="language-text">symbol</code> replicas by a comparable amount.</li>
     </ul>
