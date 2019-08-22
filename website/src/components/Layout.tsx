@@ -31,7 +31,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         const isHome = pathname === '/'
         const isBlog = pathname === '/blog'
         const isProductPage = pathname.startsWith('/product/')
-        const metaProps = {...defaultMetaProps, ...this.props.meta}
+        const metaProps = { ...defaultMetaProps, ...this.props.meta }
 
         return (
             <div className="flex flex-column fill-height">

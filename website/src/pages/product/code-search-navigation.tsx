@@ -356,7 +356,7 @@ export default ((props: any) => (
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Use Sourcegraph to find answers in code, faster!
                 </h2>
-                <Vimeo id={340491490} />
+                <Vimeo id={340491490} className="mb-6" />
                 <Vimeo id={340774081} />
             </ContentSection>
             <ContentSection color="purple" className="py-6">

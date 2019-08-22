@@ -36,10 +36,7 @@ export default ((props: any) => (
                                 code&nbsp;review
                             </Link>
                             , and{' '}
-                            <Link
-                                className="home__intro-text-link home__intro-text-link-3"
-                                to="/product/code-alerts-automation"
-                            >
+                            <Link className="home__intro-text-link home__intro-text-link-3" to="/product/automation">
                                 alerts &amp; automation
                             </Link>
                             .
@@ -86,7 +83,7 @@ export default ((props: any) => (
                 <h2 id="demo" className="text-center display-4 pb-4">
                     See why developers rely on Sourcegraph daily
                 </h2>
-                <Vimeo id={342154659} />
+                <Vimeo id={353422112} muted={false}  />
             </ContentSection>
             <div className="bg-white text-dark py-4">
                 <div className="container">

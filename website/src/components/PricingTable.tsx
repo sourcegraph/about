@@ -38,7 +38,13 @@ interface PricingItem {
     plans: Partial<Record<Plan, boolean | string>>
 }
 
-const ALL_PLANS: PricingItem['plans'] = { 'Open source': true, Free: true, Enterprise: true, 'Enterprise Plus': true, Elite: true }
+const ALL_PLANS: PricingItem['plans'] = {
+    'Open source': true,
+    Free: true,
+    Enterprise: true,
+    'Enterprise Plus': true,
+    Elite: true,
+}
 
 const FREE_PLAN: PricingItem['plans'] = { Free: true, Enterprise: true, 'Enterprise Plus': true, Elite: true }
 
@@ -131,8 +137,8 @@ const DATA: PricingItemCategory[] = [
         items: [{ name: 'Code intelligence integrations for code review tools', plans: ENTERPRISE_PLAN }],
     },
     {
-        id: 'code-alerts-automation',
-        title: 'Code alerts & automation',
+        id: 'automation',
+        title: 'Automation',
         items: [
             { name: 'Saved searches', plans: ENTERPRISE_PLAN },
             { name: 'Email notifications', plans: ENTERPRISE_PLAN },
@@ -302,7 +308,10 @@ const DATA: PricingItemCategory[] = [
 export const PricingTable: React.FunctionComponent<{
     allPlans?: Plan[]
     categoriesAndItems?: PricingItemCategory[]
-}> = ({ allPlans = [Plan.OpenSource, Plan.Free, Plan.Enterprise, Plan.EnterprisePlus, Plan.Elite], categoriesAndItems = DATA }) => (
+}> = ({
+    allPlans = [Plan.OpenSource, Plan.Free, Plan.Enterprise, Plan.EnterprisePlus, Plan.Elite],
+    categoriesAndItems = DATA,
+}) => (
     <div className="pricing-table">
         <div className="row align-items-center border border-gray">
             <div className="col-4 py-3">
@@ -315,9 +324,9 @@ export const PricingTable: React.FunctionComponent<{
             </div>
             <div className="col-8 row">
                 {allPlans.map(plan => (
-                        <div className="col py-3 px-3 border-left border-gray">
-                            <h3 className="h4 mb-0 text-center">{plan}</h3>
-                        </div>
+                    <div className="col py-3 px-3 border-left border-gray">
+                        <h3 className="h4 mb-0 text-center">{plan}</h3>
+                    </div>
                 ))}
             </div>
         </div>

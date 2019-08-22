@@ -4,15 +4,16 @@ import React from 'react'
 export const Vimeo: React.FunctionComponent<{
     className?: string
     id: number
-    title: string
-    byline: string
-    muted: true
-    controls: boolean
-    color: string
-    autoplay: boolean
-    loop: boolean
-    time: string
-    texttrack: string
+    title?: string
+    byline?: string
+    muted?: boolean
+    controls?: boolean
+    color?: string
+    autoplay?: boolean
+    autopause?: boolean
+    loop?: boolean
+    time?: string
+    texttrack?: string
 }> = ({
     className = '',
     id,
@@ -22,17 +23,16 @@ export const Vimeo: React.FunctionComponent<{
     controls = true,
     color = '0CB6F4',
     autoplay = false,
+    autopause = true,
     loop = false,
     time = '0',
     texttrack = 'en.subtitles',
 }) => (
-    <div className={`vimeo-embed ${className}`}>
+    <div className={`vimeo-embed embed-responsive embed-responsive-16by9 ${className}`}>
         <iframe
-            src={`https://player.vimeo.com/video/${id}?title=${title}&amp;byline=${byline}&amp;muted=${muted}&amp;controls=${controls}&amp;autoplay=${autoplay}&amp;&loop=${loop}&amp;time=${time}&amp;texttrack=${texttrack}`}
-            frameborder="0"
-            webkitallowfullscreen=""
-            mozallowfullscreen=""
-            allowfullscreen=""
+            className="embed-responsive-item"
+            src={`https://player.vimeo.com/video/${id}?color=${color}&title=${title}&byline=${byline}&muted=${muted}&controls=${controls}&autoplay=${autoplay}&autopause=${autopause}&loop=${loop}&time=${time}&texttrack=${texttrack}`}
+            allow="fullscreen"
         />
     </div>
 )
