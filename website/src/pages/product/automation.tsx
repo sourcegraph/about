@@ -187,11 +187,7 @@ export default ((props: any) => (
                         <p className="col-lg-9">
                             Sourcegraph's automation lets you create campaigns, which are collections of pull requests
                             and issues across multiple repositories. The following campaign types are built in, and you
-                            can create other ad-hoc campaigns from the UI or use the{' '}
-                            <a href="https://docs.sourcegraph.com/extensions" className="href">
-                                Sourcegraph extension API
-                            </a>
-                            for more advanced campaigns:
+                            can create other ad-hoc campaigns from the UI or use the <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more advanced campaigns:
                         </p>
                         <CampaignsTable
                             campaigns={[
