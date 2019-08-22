@@ -70,7 +70,7 @@ export default ((props: any) => (
                                 priceCaption="(billed annually)"
                                 features={[
                                     { name: 'Code review & pull request integration', id: 'code-review' },
-                                    { name: 'Code alerts & automation', id: 'code-alerts-automation' },
+                                    { name: 'Code monitoring', id: 'automation' },
                                     { name: 'Repository access permissions', id: 'admin' },
                                     { name: 'Custom branding', id: 'admin' },
                                     { name: 'Deployment metrics & monitoring', id: 'deployment' },
@@ -90,23 +90,24 @@ export default ((props: any) => (
                             <PricingPlan
                                 className="pricing__plan"
                                 name="Unlimited"
-                                description="Enabling businesses to transform the software lifecycle with automation and intelligence."
+                                description="Enabling businesses to transform the software lifecycle with automation and code intelligence."
                                 price="$99"
                                 priceCaption="(billed annually)"
                                 features={[
+                                    { name: 'Automation', id: 'automation' },
                                     { name: 'Free guest users', id: 'admin' },
                                     { name: 'Private Sourcegraph extension registry', id: 'admin' },
                                     { name: '24/7 uptime support', id: 'support' },
                                     { name: 'Dedicated support', id: 'support' },
                                     {
                                         name: 'Large-scale code modifications/refactoring',
-                                        id: 'code-alerts-automation',
+                                        id: 'automation',
                                         future: true,
                                     },
                                     { name: 'Code reporting & analytics', id: 'admin', future: true },
                                     {
                                         name: 'License compliance and security analysis',
-                                        id: 'code-alerts-automation',
+                                        id: 'automation',
                                         future: true,
                                     },
                                     {
