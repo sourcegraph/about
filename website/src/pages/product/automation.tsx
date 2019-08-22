@@ -130,7 +130,7 @@ export default ((props: any) => (
                         <IconItem className="position-relative" icon={NotificationsActiveIcon} color="green">
                             <h4>Dependency updates</h4>
                             <p>
-                                Keep your library dependencies **and how you use those libraries** up-to-date and
+                                Keep your library dependencies <i>and how you use those libraries</i> up-to-date and
                                 consistent across all of your organization's code, to avoid old bugs or security
                                 problems in old dependencies, and problems arising from inconsistent dependency version
                                 use across your codebase.
