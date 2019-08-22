@@ -131,8 +131,8 @@ const DATA: PricingItemCategory[] = [
         items: [{ name: 'Code intelligence integrations for code review tools', plans: ENTERPRISE_PLAN }],
     },
     {
-        id: 'code-alerts-automation',
-        title: 'Code alerts & automation',
+        id: 'automation',
+        title: 'Automation',
         items: [
             { name: 'Saved searches', plans: ENTERPRISE_PLAN },
             { name: 'Email notifications', plans: ENTERPRISE_PLAN },

@@ -31,7 +31,7 @@ export default ((props: any) => (
                     name="description"
                     content="Sourcegraph is always free for public and open-source code. Start using it for private code with a paid plan."
                 />
-                <link rel="icon" type="image/png" href="https://about.sourcegraph.com/favicon.png" />
+                <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>
             <div className="pricing-page">
                 <ContentSection color="white" className="hero-section text-center py-5">
@@ -51,7 +51,7 @@ export default ((props: any) => (
                                 price="$29"
                                 features={[
                                     { name: 'Code review & pull request integration', id: 'code-review' },
-                                    { name: 'Code alerts', id: 'code-alerts-automation' },
+                                    { name: 'Code alerts', id: 'automation' },
                                     { name: 'Deployment metrics & monitoring', id: 'deployment' },
                                     {
                                         name: 'High-scale/availability cluster deployment option',
@@ -62,7 +62,7 @@ export default ((props: any) => (
                                     { name: 'Cloud-managed option', id: 'deployment' },
                                 ]}
                                 buttonLabel="Try now"
-                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-enterprise"
+                                buttonHref="/contact/sales/?form_submission_source=pricing-enterprise"
                             />
                         </div>
                         <div className="col-8 col-md-4 mx-auto mb-4">
@@ -96,12 +96,12 @@ export default ((props: any) => (
                                     { name: '24/7 uptime support', id: 'support' },
                                     {
                                         name: 'Large-scale code modifications/refactoring',
-                                        id: 'code-alerts-automation',
+                                        id: 'automation',
                                         future: true,
                                     },
                                     {
                                         name: 'License compliance and security analysis',
-                                        id: 'code-alerts-automation',
+                                        id: 'automation',
                                         future: true,
                                     },
                                     {
