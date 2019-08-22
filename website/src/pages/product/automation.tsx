@@ -194,7 +194,7 @@ export default ((props: any) => (
                                 'Deprecate a Java artifact dependency',
                                 'Deprecate a package.json dependency (npm/yarn)',
                                 'Gradually enforce a new ESLint rule',
-                                'Enforce all files have valid code owners',
+                                'Require all files to have valid code owners',
                                 'Find-replace across multiple repositories',
                                 'Triage search results',
                                 'Track an existing collection of issues and pull requests',
