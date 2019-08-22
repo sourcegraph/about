@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import MapIcon from 'mdi-react/MapIcon'
-import AutorenewIcon from "mdi-react/AutorenewIcon";
+import AutorenewIcon from 'mdi-react/AutorenewIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
 import ToolboxIcon from 'mdi-react/ToolboxIcon'
 import * as React from 'react'
@@ -87,13 +87,16 @@ export default ((props: any) => {
                             <IconItem className="position-relative" icon={AutorenewIcon} color="green">
                                 <h4>Automation</h4>
                                 <p>
-                                    Sourcegraph's automation lets you create campaigns, which are collections of pull requests and issues across multiple repositories.
+                                    Sourcegraph's automation lets you create campaigns, which are collections of pull
+                                    requests and issues across multiple repositories.
                                 </p>
                                 <p>
-                                    Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt.
+                                    Automate large-scale code changes to remove legacy code, fix critical security
+                                    issues, and pay down tech debt.
                                 </p>
                                 <Link to="/product/automation" className="stretched-link">
-                                    Learn more about large-scale code changes with <strong>automation</strong> &nbsp;&raquo;
+                                    Learn more about large-scale code changes with <strong>automation</strong>{' '}
+                                    &nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>

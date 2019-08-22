@@ -35,7 +35,8 @@ export default ((props: any) => (
                     <h4 className="font-weight-light">
                         Sourcegraph code search, code navigation, and other limited features
                         <PricingFreeTierPopoverButton />
-                        are free for individuals and small teams. <a href="https://docs.sourcegraph.com">Install</a> to get started today!
+                        are free for individuals and small teams. <a href="https://docs.sourcegraph.com">Install</a> to
+                        get started today!
                     </h4>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">

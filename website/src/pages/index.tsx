@@ -36,10 +36,7 @@ export default ((props: any) => (
                                 code&nbsp;review
                             </Link>
                             , and{' '}
-                            <Link
-                                className="home__intro-text-link home__intro-text-link-3"
-                                to="/product/automation"
-                            >
+                            <Link className="home__intro-text-link home__intro-text-link-3" to="/product/automation">
                                 alerts &amp; automation
                             </Link>
                             .

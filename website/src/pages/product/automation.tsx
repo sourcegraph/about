@@ -12,14 +12,19 @@ import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
+import { Vimeo } from '../../components/Vimeo'
 import {
     RequestAutomationDemoAction,
     RequestAutomationDemoActionNow,
 } from '../../css/components/actions/RequestDemoAction'
+import { eventLogger } from '../../EventLogger'
 
 const title = 'Automation'
 const description =
     'Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt.'
+const seeItInActionClicked = () => {
+    eventLogger.automationSeeItInActionButtonClicked()
+}
 
 export const CampaignsTable: React.FunctionComponent<{
     campaigns: string[]
@@ -74,6 +79,17 @@ export default ((props: any) => (
                     <br />
                     heavily in code change automation
                 </h2>
+                <div className="row justify-content-lg-center">
+                    <p>
+                        <a
+                            className="btn btn-outline-primary rounded-lg active mb-5 px-6"
+                            href="#see-it-in-action"
+                            onClick={seeItInActionClicked}
+                        >
+                            See it in action
+                        </a>
+                    </p>
+                </div>
                 <div className="row pb-4">
                     <div className="col-md-6">
                         <Blockquote
@@ -171,8 +187,11 @@ export default ((props: any) => (
                         <p className="col-lg-9">
                             Sourcegraph's automation lets you create campaigns, which are collections of pull requests
                             and issues across multiple repositories. The following campaign types are built in, and you
-                            can create other ad-hoc campaigns from the UI or use the <a href="https://docs.sourcegraph.com/extensions" className="href">Sourcegraph extension API</a> for more
-                            advanced campaigns:
+                            can create other ad-hoc campaigns from the UI or use the{' '}
+                            <a href="https://docs.sourcegraph.com/extensions" className="href">
+                                Sourcegraph extension API
+                            </a>
+                            for more advanced campaigns:
                         </p>
                         <CampaignsTable
                             campaigns={[
@@ -198,8 +217,9 @@ export default ((props: any) => (
                         </p>
                     </div>
                 </div>
-
-                <h2 id="easily-define-campaigns-track-progress" className="text-center display-4 mb-3 mt-5">
+            </ContentSection>
+            <ContentSection color="white" className="py-3">
+                <h2 id="see-it-in-action" className="text-center display-4 mt-5">
                     See it in action
                 </h2>
                 <div className="row justify-content-md-center">
@@ -208,6 +228,8 @@ export default ((props: any) => (
                         projects.
                     </p>
                 </div>
+                <Vimeo id={355392896} className="mt-4" />
+                <Vimeo id={355392936} className="mt-5" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
@@ -222,8 +244,7 @@ export default ((props: any) => (
                 className="request-automation-demo-footer py-4"
                 logomark={false}
                 title="Request a Sourcegraph automation demo"
-                headingLevel={2}
-                description="Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt."
+                description="Stay on top of risks and automate changes in your code so your developers can focus on coding tasks that truly require their human brain."
             >
                 <RequestAutomationDemoActionNow />
             </Jumbotron>

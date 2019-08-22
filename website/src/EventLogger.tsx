@@ -184,6 +184,9 @@ class EventLogger {
     public trackBuyEnterpriseButtonClicked(): void {
         this.trackEvent('Pages', 'Click', null, 'BuyEnterpriseButtonClicked', {})
     }
+    public automationSeeItInActionButtonClicked(): void {
+        this.trackEvent('Pages', 'Click', null, 'AutomationSeeItInActionButtonClicked', {})
+    }
 
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {
         let props = { ...eventProps }
