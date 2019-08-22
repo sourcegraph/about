@@ -10,14 +10,14 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-[Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
 
 [**🏎 Symbol search performant at scale**](#symbol-search-performant-at-scale)<br />
 Symbol searches are now indexed for default branches.
 
-[**🔎 Search performance, efficiency, and reliability**](#search-performance-efficiency-and-reliability)<br />
+[**🔎 Search performance, efficiency, and reliability improvements**](#search-performance-efficiency-and-reliability-improvements)<br />
 Speed improvements for `repohasfile:`, more frequent garbage collections, and support for Unicode search results.
 
 [**🧠 More accurate TypeScript code intelligence**](#more-accurate-typescript-code-intelligence)<br />
@@ -75,7 +75,7 @@ This update is enabled by default for all instances using indexed search. If you
   </p>
 </div>
 
-## Search performance, efficiency, and reliability
+## Search performance, efficiency, and reliability improvements
 
 ![search speed comparison](images/3.7-symbol-search-comparison.png "search speed comparison")
 
