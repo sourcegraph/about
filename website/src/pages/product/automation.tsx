@@ -182,7 +182,7 @@ export default ((props: any) => (
                                 'Enforce all files have valid code owners',
                                 'Find-replace across multiple repositories',
                                 'Triage search results',
-                                'Track an existing collection issues and pull requests',
+                                'Track an existing collection of issues and pull requests',
                             ]}
                         />
                     </div>
