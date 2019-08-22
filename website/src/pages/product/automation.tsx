@@ -192,7 +192,7 @@ export default ((props: any) => (
                     <div className="row justify-content-md-center">
                         <p className="col-lg-9">
                             When you create a campaign, Sourcegraph automatically creates pull requests and issues as
-                            needed with the correct reviewers and context--and keeps them up-to-date. You can track the
+                            needed with the correct reviewers and context—and keeps them up-to-date. You can track the
                             progress of the campaign with the burndown chart and see all related activity across all
                             repositories. All this makes completing the campaign as fast and painless as possible.
                         </p>
