@@ -171,7 +171,7 @@ export default ((props: any) => (
                         <p className="col-lg-9">
                             Sourcegraph's automation lets you create campaigns, which are collections of pull requests
                             and issues across multiple repositories. The following campaign types are built in, and you
-                            can create other ad-hoc campaigns from the UI or use the Sourcegraph extension API for more
+                            can create other ad-hoc campaigns from the UI or use the <a href="https://docs.sourcegraph.com/extensions" className="href">Sourcegraph extension API</a> for more
                             advanced campaigns:
                         </p>
                         <CampaignsTable
@@ -219,9 +219,10 @@ export default ((props: any) => (
             </ContentSection>
             <Jumbotron
                 color="purple"
-                className="py-4"
+                className="request-automation-demo-footer py-4"
                 logomark={false}
                 title="Request a Sourcegraph automation demo"
+                headingLevel={2}
                 description="Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt."
             >
                 <RequestAutomationDemoActionNow />
