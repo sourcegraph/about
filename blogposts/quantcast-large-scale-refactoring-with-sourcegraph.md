@@ -1,7 +1,7 @@
 ---
 title: How Sourcegraph code search enabled large scale refactoring at Quantcast
 author: Ryan Blunden
-publishDate: 2019-08-07T10:00-07:00
+publishDate: 2019-08-23T10:00-07:00
 tags: [
   blog
 ]
