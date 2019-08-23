@@ -37,7 +37,7 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
             <img className="case-studies__logo" src={logo} />
             <h1 className={titleClassName}>{title}</h1>
             {pdf && (
-                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow">
+                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow" target="_blank">
                     <i className="fa fa-file-pdf pr-2"></i>
                     Download PDF
                 </a>

@@ -13,13 +13,13 @@ export default ((props: any) => (
         meta={{
             title: 'How Sourcegraph code search enabled large scale refactoring at Quantcast',
             description:  'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
-            image: 'https://about.sourcegraph.com/case-studies/quantcast_1200x630.jpg',
+            image: 'https://about.sourcegraph.com/case-studies/quantcast_1200x630-generic.jpg',
         }}
     >
         <CaseStudyPage
             title="How Sourcegraph code search enabled large scale refactoring at Quantcast"
             logo="/case-studies/quantcast-logo.png"
-            pdf="https://storage.googleapis.com/sourcegraph-assets/Quantcast%20Sourcegraph%20case%20study.pdf?v2"
+            pdf="https://storage.googleapis.com/sourcegraph-assets/Quantcast-Sourcegraph-case-study.pdf"
             className="quantcast-case-study"
         >
             <ContentSection color="white" className="pt-5 pb-3">

@@ -79,7 +79,7 @@ export default ((props: any) => (
                     quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
                     author="Simon Law, Staff Software Engineer, Quantcast"
                     url="/case-studies/quantcast"
-                    image="/case-studies/quantcast_thumbnail_500x500px.jpg"
+                    image="/case-studies/quantcast_thumbnail_500x500px-generic.jpg"
                 />
             </ContentSection>
             <div className="bg-white text-dark">
