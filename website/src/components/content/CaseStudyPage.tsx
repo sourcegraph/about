@@ -37,8 +37,8 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
             <img className="case-studies__logo" src={logo} />
             <h1 className={titleClassName}>{title}</h1>
             {pdf && (
-                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow">
-                    <i className="fa fa-file-pdf pr-2" />
+                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow" target="_blank">
+                    <i className="fa fa-file-pdf pr-2"></i>
                     Download PDF
                 </a>
             )}
@@ -69,7 +69,7 @@ export const MediaQuote: React.FunctionComponent<{
 
 export const InContentBlockquote: React.FunctionComponent<{
     quote: string
-    author: string
+    author?: string
 }> = ({ quote, author }) => (
     <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
         <p>{quote}</p>

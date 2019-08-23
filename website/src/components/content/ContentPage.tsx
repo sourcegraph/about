@@ -8,7 +8,7 @@ interface Props {
     extraDescription?: React.ReactFragment
     mainActions?: React.ReactFragment
     titleClassName?: string
-    children: React.ReactNode
+    children?: React.ReactNode
 }
 
 export const ContentPage: React.FunctionComponent<Props> = ({
