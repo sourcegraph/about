@@ -29,15 +29,6 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                {(this.props.isHome || this.props.isBlog) && (
-                    <div className="gophercon">
-                        <Link to="/go">
-                            <span className="go-gopher" />
-                            Check out the official <u>GopherCon Liveblog</u> proudly
-                            hosted by Sourcegraph.
-                        </Link>
-                    </div>
-                )}
                 <nav className="header navbar navbar-dark navbar-expand-md border-bottom p-3">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">

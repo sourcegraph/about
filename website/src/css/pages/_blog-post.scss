@@ -49,9 +49,14 @@
 
         h1,
         h2,
-        h3 {
+        h3,
+        h4 {
             margin-top: 1rem;
             margin-bottom: 0;
+        }
+
+        h4 {
+            font-size: 1.25rem;
         }
 
         img {
@@ -64,5 +69,20 @@
         .text-center {
             text-align: center;
         }
+    }
+
+    p > code[class*='language-'],
+    a > code[class*='language-'],
+    h1 > code[class*='language-'],
+    h2 > code[class*='language-'],
+    h3 > code[class*='language-'],
+    h4 > code[class*='language-'],
+    li > code[class*='language-'],
+    strong > code[class*='language-'] {
+        background-color: #f2f4f8;
+        color: #2d2d2d;
+        display: inline-block;
+        padding: 0.1rem 0.3rem;
+        font-size: 0.9em;
     }
 }

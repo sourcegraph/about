@@ -29,13 +29,15 @@ A few months ago, I was faced with a problem. I was responsible for maintaining 
 And I realized, even when it seems feasible to check compatibility by hand, it’s easy to make mistakes. 
 
 _old_
-```type S struct {
+```go
+type S struct {
 A int
 }
 ```
 
 _new_
-```type S struct {
+```go
+type S struct {
 A int
 b []int
 }
@@ -107,13 +109,19 @@ But it’s far too strict.
 Here’s an example why. 
 
 old: 
-```type Point struct { X, Y int }```
+```go
+type Point struct { X, Y int }
+```
 
 new: 
-```type Point struct { X, Y, Z int }```
+```go
+type Point struct { X, Y, Z int }
+```
 
 client: 
-```var p struct { X, Y int } = pkg.Point{}```
+```go
+var p struct { X, Y int } = pkg.Point{}
+```
 
 You’ll see a lot of these three-box examples in the talk. The first box shows the original code of the package. The second is the new code, the change. And the last is client code—code that’s outside the package, using it. In the client code, we’ll always call the package “pkg”.
 
@@ -138,7 +146,7 @@ You may be familiar with the Go 1 Compatibility Promise, which tries to define w
 
 By the way, even though we’ve agreed that unkeyed struct literals aren’t our problem, it might still be nice to prevent clients from being able to write them. So here is my first compatibility tip. You can’t write an unkeyed struct literal if there are any unexported fields, so add one, as shown here.
 
-```
+```go
 type Point struct {
 _ struct{}
   X, Y int
@@ -368,7 +376,7 @@ So that leads us to our rule for interfaces, which we’ll cover in two parts.
 
 First, if your interface has no unexported methods, then it must remain exactly the same to be backwards-compatible. You can’t add a method, and you can’t remove a method. An interesting violation of the fundamental rule of compatibility.
 
-This is the reason it’s recommended that your package’s functions return concrete types, not interfaces: you can compatibily add methods to a concrete type, as we saw before when talking about defined types; but you can’t compatibly add methods to an interface.
+This is the reason it’s recommended that your package’s functions return concrete types, not interfaces: you can compatibility add methods to a concrete type, as we saw before when talking about defined types; but you can’t compatibly add methods to an interface.
 
 Unless, that is, your interface has an unexported method. Then you can add methods to it, both exported and unexported. You can even remove or change unexported methods.
 

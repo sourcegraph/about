@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import MapIcon from 'mdi-react/MapIcon'
-import MegaphoneIcon from 'mdi-react/MegaphoneIcon'
+import AutorenewIcon from 'mdi-react/AutorenewIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
 import ToolboxIcon from 'mdi-react/ToolboxIcon'
 import * as React from 'react'
@@ -84,19 +84,18 @@ export default ((props: any) => {
                             </IconItem>
                         </div>
                         <div className="col-md-6 mb-4">
-                            <IconItem className="position-relative" icon={MegaphoneIcon} color="green">
-                                <h4>Watch for important or risky changes</h4>
+                            <IconItem className="position-relative" icon={AutorenewIcon} color="green">
+                                <h4>Automation</h4>
                                 <p>
-                                    Want to know who's starting to use the service you own, changing security-sensitive
-                                    files, or accidentally committing API tokens?
+                                    Sourcegraph's automation lets you create campaigns, which are collections of pull
+                                    requests and issues across multiple repositories.
                                 </p>
                                 <p>
-                                    With Sourcegraph, you can continuously monitor all changes to all repositories for
-                                    anything of interest. Get instant email, Slack, or webhook notifications for every
-                                    new match.
+                                    Automate large-scale code changes to remove legacy code, fix critical security
+                                    issues, and pay down tech debt.
                                 </p>
-                                <Link to="/product/code-alerts-automation" className="stretched-link">
-                                    Move fast and don't break things with <strong>code alerts &amp; automation</strong>
+                                <Link to="/product/automation" className="stretched-link">
+                                    Learn more about large-scale code changes with <strong>automation</strong>{' '}
                                     &nbsp;&raquo;
                                 </Link>
                             </IconItem>

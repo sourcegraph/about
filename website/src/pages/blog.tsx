@@ -23,8 +23,9 @@ export default class BlogList extends React.Component<any, any> {
                 location={this.props.location}
                 meta={{
                     title: metaProps.title,
-                    description: metaProps.description
-            }}>
+                    description: metaProps.description,
+                }}
+            >
                 <div className="blog bg-white text-dark">
                     <div className="blog blog__head">
                         <h1>Sourcegraph blog</h1>

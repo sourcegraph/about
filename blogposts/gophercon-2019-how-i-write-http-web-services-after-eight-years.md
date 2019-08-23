@@ -25,7 +25,7 @@ A look at how Mat Ryer builds web services after doing so for the past eight yea
 
 Mat is an early go adopter. He started using go even before it hit it's first major version (v1). He currently works at Machine Box and Veritone. He is also and ardent believer in open source and can be found around the BitBar, Testify, Gopherize.me open source projects. He has been building https services in Go for a long time and has learnt a lot of things as well as changes a lot of things along the way. You can find him on twitter at @matryer
 
-## Factors to consider when writting HTTP services
+## Factors to consider when writing HTTP services
 
 Mat highlights some very important factors to consider when writing http services. He reiterates that these factors are important and would help you in writing your https services to be clear and concise. The factors are as follows
 
@@ -47,7 +47,7 @@ Writing code that is similar to other code in the codebase helps to increase fam
 
 ## Design Patterns/Decisions
 
-After taking into consideration the different factors listed above, the next step is to make design decisions/patterns based on those considerations. While different use cases exists and it is important people use what works best for them, Mat believes in majority of the cases, the design patterns to be listed below, will actually be super useful for writting https services
+After taking into consideration the different factors listed above, the next step is to make design decisions/patterns based on those considerations. While different use cases exists and it is important people use what works best for them, Mat believes in majority of the cases, the design patterns to be listed below, will actually be super useful for writing https services
 
 ###  Creating a tiny main abstraction
 
@@ -302,7 +302,7 @@ The `httptest` package should be your best friend and your default go to package
 
 ## Summary
 
-This talk by Matt Ryer is based on a blog post he authored. The blogpost which can be found [here]( https://medium.com/statuscode/37c208122831) went viral. It is quite popular in the go community and definitely worth a read. The post was shared on reddit and resulted in a lot of questions, feedback as well as suggestions. This talk is a culmination of what he has learnt since that time. It is focused on the philosophy behind his thinking for his prefered approach as opposed to a hardline on some specific ruleset. 
+This talk by Matt Ryer is based on a blog post he authored. The blogpost which can be found [here]( https://medium.com/statuscode/37c208122831) went viral. It is quite popular in the go community and definitely worth a read. The post was shared on reddit and resulted in a lot of questions, feedback as well as suggestions. This talk is a culmination of what he has learnt since that time. It is focused on the philosophy behind his thinking for his preferred approach as opposed to a hardline on some specific ruleset. 
 
 He emphasizes that tech leads, engineering managers, CTO's, etc. should strive to create a buffer where engineers are allowed to trynew things within a reasonable scope. This talk isn't one to be followed blindly as different teams might have different needs and usecases/edgecases.
 

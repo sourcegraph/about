@@ -26,7 +26,7 @@ export const Jumbotron: React.FunctionComponent<{
         <div className="container text-center pt-6 pb-5">
             {logomark && (
                 <img
-                    className="mb-1"
+                    className="jumbotron__logo mb-1"
                     // tslint:disable-next-line: jsx-ban-props
                     style={{ width: '2rem', height: '2rem' }}
                     src="/sourcegraph/sourcegraph-mark.svg"
