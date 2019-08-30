@@ -62,21 +62,24 @@ export default ((props: any) => (
                 <CustomerLogosSection className="py-5" />
             </div>
             <ContentSection color="black">
-                {/*Hide until case study carousel is ready*/}
+                <h2 className="text-center display-4 mb-5 mt-4">
+                    Learn how Sourcegraph code search makes large scale refactoring possible
+                </h2>
+                <hr style={{borderColor: '#333'}} />
                 <CaseStudyFeature
-                    title="See how Thorn sunsets legacy applications safely with Sourcegraph"
-                    quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
-                    author="Thorn Software Engineer, Jacob Gillespie"
-                    url="/case-studies/we-are-thorn"
-                    image="/case-studies/thorn-sourcegraph-case-study.png"
-                    className="sr-only"
-                />
-                <CaseStudyFeature
-                    title="See how Sourcegraph enabled large scale refactoring at Quantcast"
+                    // title="See how Sourcegraph enabled large scale refactoring at Quantcast"
                     quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
                     author="Simon Law, Staff Software Engineer, Quantcast"
                     url="/case-studies/quantcast"
                     image="/case-studies/quantcast_thumbnail_500x500px-generic.jpg"
+                />
+                <hr style={{borderColor: '#333'}} />
+                <CaseStudyFeature
+                    // title="See how Thorn sunsets legacy applications safely with Sourcegraph"
+                    quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
+                    author="Thorn Software Engineer, Jacob Gillespie"
+                    url="/case-studies/we-are-thorn"
+                    image="/case-studies/thorn-sourcegraph-case-study.png"
                 />
             </ContentSection>
             <div className="bg-white text-dark">
