@@ -59,7 +59,7 @@ Once live, your post will be promoted on the [Strange Loop](https://twitter.com/
 
 ## Preparing for writing your liveblog post
 
-We request slides from the speakers in advance to make it easier to extract code snippets, images, etc., as well as helping you get familiar with the concepts and content.
+We request slides from the speakers in advance to make it easier to extract code snippets, images, etc., and help you get familiar with the concepts and content.
 
 ## To sign up for liveblogging
 
