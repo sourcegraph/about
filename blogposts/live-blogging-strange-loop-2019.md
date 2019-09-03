@@ -42,7 +42,7 @@ Read on for what's required and why its a novel way to feel like part of the con
 
 ## Why liveblog?
 
-To liveblog a talk, is to capture and summarize the essential concepts and messages, then converting that into a written form in Markdown. The publishing of your post then makes your summary available to anyone in the world, only hours after the presentation. As a liveblogger, you get benefits of deepening your knowledge of the content presented, plus your name on a promoted artifact of Strange Loop 2019.
+To liveblog a talk is to capture and summarize the essential concepts and messages in a written form. Publishing your post then makes it available to anyone in the world, only hours after the presentation. As a liveblogger, you get to deepen your knowledge of the content presented, give back to everyone in the community who couldn't be there live, and get your name on a promoted artifact of Strange Loop 2019.
 
 ## How to publish a liveblog post
 
