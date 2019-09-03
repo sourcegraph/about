@@ -48,7 +48,8 @@ To liveblog a talk is to capture and summarize the essential concepts and messag
 
 To create and publish a liveblog post:
 
-1. Take notes, capturing, and summarizing the talk's key points.
+1. We request slides from the speakers in advance to make it easier to extract code snippets, images, etc., and help you get familiar with the concepts and content.
+1. Take notes during the presentation, capturing, and summarizing the talk's key points.
 1. Fork our [website repository](https://github.com/sourcegraph/about), then edit the Markdown file for your post in the `blogposts` directory.
 1. Optionally, you can preview your post by following the instructions to [run the dev server locally](https://github.com/sourcegraph/about/blob/master/README.md).
 1. Once ready, make a pull request.
@@ -56,10 +57,6 @@ To create and publish a liveblog post:
 1. A Sourcegrapher will also review your pull request, and once approved and merged, will be online in less than 5 minutes.
 
 Once live, your post will be promoted on the [Strange Loop](https://twitter.com/strangeloop_stl) and [Sourcegraph](https://twitter.com/srcgraph) Twitter accounts, crediting you and raising your profile to our combined 20,000+ followers.
-
-## Preparing for writing your liveblog post
-
-We request slides from the speakers in advance to make it easier to extract code snippets, images, etc., and help you get familiar with the concepts and content.
 
 ## To sign up for liveblogging
 
