@@ -38,7 +38,7 @@ We are huge fans of [Strange Loop](https://thestrangeloop.com)! The theme of cre
 
 We're also excited to announce that Sourcegraph and Strange Loop are partnering together to produce the first Strange Loop liveblog! We've hosted and managed liveblogs for conferences such as [GopherCon](/go) and the [GraphQL summit](/graphql), and we love to help as many community members as possible get involved and contribute! Could that be you?
 
-Read on for what's required and why its a novel way to feel like part of the conference.
+Read on for what's involved and why it's a novel way to be part of the conference.
 
 ## Why liveblog?
 
