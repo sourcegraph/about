@@ -36,7 +36,7 @@ Sourcegraph is the standard developer platform for [code search](/product/code-s
 
 We are huge fans of [Strange Loop](https://thestrangeloop.com)! The theme of creativity and balance of aspirational vs. practitioner content makes it one of our favorite conferences and why we are proud to be a [bronze sponsor](https://thestrangeloop.com/sponsors.html) this year.
 
-We're also excited to announce that Sourcegraph and Strange Loop are partnering together to produce the first Strange Loop liveblog! We've hosted and managed liveblogs for conferences such as [GopherCon](/go) and the [GraphQL summit](/graphql), and our recipe for success involves as many attendees as possible to help and contribute. Could that be you?
+We're also excited to announce that Sourcegraph and Strange Loop are partnering together to produce the first Strange Loop liveblog! We've hosted and managed liveblogs for conferences such as [GopherCon](/go) and the [GraphQL summit](/graphql), and we love to help as many community members as possible get involved and contribute! Could that be you?
 
 Read on for what's required and why its a novel way to feel like part of the conference.
 
