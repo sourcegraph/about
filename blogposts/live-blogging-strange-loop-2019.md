@@ -5,7 +5,7 @@ author: Ryan Blunden
 publishDate: 2019-09-02T00:00-07:00
 tags: [blog]
 slug: sourcegraph-liveblogging-2019-strange-loop-conference
-heroImage: /blog/strange-loop-thumbnail-square.png
+heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
 published: true
 ---
  
@@ -23,12 +23,14 @@ published: true
 
 -->
 
+<p class="text-center">
+  <img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner-landscape.jpg" class="h5" />
+</p>  
+
 <div class="alert alert-info text-center">
   Want to sign up to liveblog at Strange Loop?
   <a href="https://forms.gle/egsGKSrapRJkhiWw6" class="btn btn-primary ml-3" rel="nofollow" target="_blank"><i class="fa fa-file-pdf pr-2"></i>Sign up here</a>
-  </div>
-
-<img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner.jpg" class="h5" />
+</div>
 
 Sourcegraph is the standard developer platform for [code search](/product/code-search-navigation), [review](/product/code-review), and [automation](/product/automation) for many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
