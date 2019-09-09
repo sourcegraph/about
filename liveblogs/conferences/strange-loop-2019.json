@@ -1,0 +1,1536 @@
+[
+  {
+    "title": "How to teach programming (and other things)?",
+    "description": "Everyone should learn programming, right? Yes! But how... Should we allow children to explore and learn about syntax on their own, or should we drill programming like we rote memorize the table of multiplication or German grammatical cases? Felienne's talk outlines this history of programming education and didactics beliefs in programming that lead to the prevalence of exploratory forms of teaching, starting with Papert's LOGO. She will then explore programming education in relation to mathematics and language education and explore how rote learning could look like for programming. Felienne will discuss her own research into misconceptions and code phonology as means to teach programming more effectively.",
+    "speakers": [
+      {
+        "name": "Felienne Hermans",
+        "gitHubUrl": "https://github.com/Felienne",
+        "twitterUrl": "https://twitter.com/Felienne",
+        "speakerUrl": "http://felienne.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "9:10AM",
+    "endTime": "10:00AM"
+  },
+  {
+    "title": "Behind The New York Times Crossword",
+    "description": "The New York Times Crossword is serious business. Operated like a startup within the company, the NYT Games Team works tirelessly to keep our 500,000+ subscribers happily solving while driving significant revenue to support great journalism. With serious solvers comes the need for serious technology. Since rewriting the entire platform in Go and migrating it to a serverless ecosystem, the Games Team has driven innovation at The Times with the most cutting edge tools and infrastructure. Take a behind-the-scenes look of how a puzzle makes it from a constructor to our solvers around the world and the tech challenges we've had to overcome to enable it. See how we've built our games platform to handle immense traffic spikes when new puzzles are released, allow us to fearlessly test in and push changes to production, and quickly launch new games for our subscribers to puzzle over.",
+    "speakers": [
+      {
+        "name": "Darren McCleary",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/darren_out",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Typing the Untyped: Soundness in Gradual Type Systems",
+    "description": "Recent years have seen an explosion of gradual type systems and superset languages that add types to previously untyped languages: TypeScript & Flow for Javascript, MyPy and Pyre for Python, Hack and PHP7 for PHP, Sorbet for Ruby, and many more. Implementing these type systems involves making tradeoffs between soundness (catching as many errors as possible) and completeness (not rejecting valid programs) that fundamentally impact the usability and usefulness of the type system.",
+    "speakers": [
+      {
+        "name": "Ben Weissmann",
+        "gitHubUrl": "https://github.com/benweissmann",
+        "twitterUrl": "",
+        "speakerUrl": "http://benweissmann.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "date": "2019-09-13",
+    "date": "2019-09-13",
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "How to Fix AI: Solutions to ML Bias (And Why They Don't Matter)",
+    "description": "Bias in machine learning is a Problem. This is common knowledge for many of us now, and yet our algorithms continue to operate unfairly in the real world, perpetuating structural inequality along lines of class and color. After all, \"better training data\" is not so easy to get our hands on, right?",
+    "speakers": [
+      {
+        "name": "Joyce Xu",
+        "gitHubUrl": "https://github.com/joycex99",
+        "twitterUrl": "https://twitter.com/joycex99",
+        "speakerUrl": "https://www.joycexu.io/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Recreating forgotten programming languages, for art!",
+    "description": "The early beginnings of computer graphics in the 1960s saw the birth of a number programming languages that were created specifically for making animations and graphics. Almost all of them are now obsolete and mostly forgotten. However, back then, many of these languages cutting-edge and made possible the completely new field of making art with computers. A prolific example of this was Bell Labs' BEFLIX, a language created to make animations using a microfilm plotter.",
+    "speakers": [
+      {
+        "name": "Sher Minn Chong",
+        "gitHubUrl": "https://github.com/piratefsh",
+        "twitterUrl": "https://twitter.com/piratefsh",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Dive into Streams with Brooklin",
+    "description": "Although LinkedIn data continues to grow rapidly over the years, scaling up to handle the increasing data volume has not been the only challenge in streaming data in near real-time. Supporting the proliferation of new data systems has become yet another huge endeavor for data streaming infrastructure at LinkedIn. Building separate, specialized solutions to move data across heterogeneous systems is not sustainable, as it slows down development and makes the infrastructure unmanageable. This called for a centralized, managed, and extensible solution that can continuously deliver data to nearline applications.",
+    "speakers": [
+      {
+        "name": "Celia Kung",
+        "gitHubUrl": "",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Makings of a Modern ACID Compliant Distributed Database",
+    "description": "There's plenty of distributed databases on the market these days. There's only a few that are both distributed and provide ACID guarantees. In this talk, I'll be shedding light on some of the more interesting aspects of the internal design of FaunaDB, one such database that I also happen to work on. We'll look at Calvin, the protocol that ensures deterministic transaction application in a distributed environment with very little coordination (much less than two- or three-phase commit protocols.) We'll see how we can scale Calvin for throughput. We'll look at how you can make a distributed transaction system independent of clocks. (It's never good to have a distributed system depend on clocks for correctness, yet many databases do. This one does not.) We'll talk about how you can take a correctly operating database and make it fast too with judicious application of control theory: into what points of the system can you plug in either a PID controller or a Kálmán filter to further reduce latencies. We learned (and are still learning) a lot while implementing FaunaDB, and in this talk, we want to share some of what we learned so far with you!",
+    "speakers": [
+      {
+        "name": "Attila Szegedi",
+        "gitHubUrl": "https://github.com/szegedi",
+        "twitterUrl": "https://twitter.com/asz",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Better Spotify Playlists through Discrete Optimization",
+    "description": "I am a Spotify addict, former DJ, amateur musician, and professional software engineer. I take special pride in making expertly-curated playlists for myself and friends. It takes a lot of time and energy to set the right mood and tone, and even more time and energy to transition smoothly from one song to another in a way that makes sense and is pleasing to the ear. Through many years of practice, I've observed that making a good playlist is a lot like solving a puzzle; and just like puzzles, there are rules and patterns to follow if you want to produce a cohesive output. In this talk, we'll explore the notion of teaching these rules to a computer, building a planning & optimization algorithm that follows these rules, and letting it loose on a set of tracks to generate delightful playlists on Spotify. We'll also cover the basics of music theory and why certain songs sound better together. There will likely also be fast talking, live keyboard playing, and some unrehearsed demos against a random sample of Spotify playlists submitted by the audience.",
+    "speakers": [
+      {
+        "name": "Cedric Hurst",
+        "gitHubUrl": "https://github.com/divideby0",
+        "twitterUrl": "https://twitter.com/divideby0",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Empowering people to build a digital bank",
+    "description": "We are going to talk about how we built, maintain and scale our microservices architecture. We are a fast-growing digital bank with a lot of challenges regarding scalability, operability and reliability and we would like to present a structured talk about the key components of our ecosystem and also how they interact with each other. Since day-one we architectured our entire infrastructure to run on cloud and to be platform agnostic, that gave us the ability of growing fast and ensuring our high standards reliability. Nowadays we decouple our infrastructure from EC2 Amazon instances to Kubernetes where we gained the desired agnosticism. There's a few characteristics that are not so usual and gives us a lot of leverage when compared to our competitors, things like Sharding and Homogeneous Codebase, using functional programming as our main paradigm. Also, we build and maintain abstractions that help our engineering team to smoothly operate and constantly improve their microservices, and furthermore the products we offer to customers. One of things we use to achieve high levels of resilience and reliability is Kubernetes with our own developed tooling and abstractions, which allows us to provide fast interaction cycle and an even more optimized way to deploy services and other infrastructure parts. For instance, we deploy things like Thanos, Prometheus and Grafana using those abstractions to ensure fast-ish manner to release and control software versioning.",
+    "speakers": [
+      {
+        "name": "Eric Yoshimura",
+        "gitHubUrl": "https://github.com/ericyoshimura",
+        "twitterUrl": "https://twitter.com/ericyoshimura_",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Riad Vargas",
+        "gitHubUrl": "https://github.com/riadvargas",
+        "twitterUrl": "https://twitter.com/riadvargas",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Observability: Superpowers for Developers",
+    "description": "Who wants to spend time dreaming about the ability to leap tall buildings with a single bound, when we can recast stories we live day to day as powers of our own... and improve our own lives in a practical way? When observability is folded into the development process itself, it represents the potential for a beautifully virtuous cycle: production stops being just where our development code runs into issues, and it becomes where part of our development process lives.",
+    "speakers": [
+      {
+        "name": "Christine Yen",
+        "gitHubUrl": "https://github.com/christineyen",
+        "twitterUrl": "https://twitter.com/cyen",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Temporal Databases for Streaming Architectures",
+    "description": "Time is intrinsic to information and yet it is usually an afterthought in database designs. We present Crux, a general purpose open source document database with bitemporal graph queries.",
+    "speakers": [
+      {
+        "name": "Jeremy Taylor",
+        "gitHubUrl": "https://github.com/refset",
+        "twitterUrl": "https://twitter.com/refset",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Jon Pither",
+        "gitHubUrl": "https://github.com/jonpither",
+        "twitterUrl": "https://twitter.com/jonpither",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Ruby on the Apple II: Adventures in Retro Programming",
+    "description": "The minimum system requirements for PowerPoint 2019 are 4 GB of RAM and a 1.6 GHz CPU. The system requirements for this talk are a few kilobytes of RAM, a 5 1/4\" floppy disk drive, and a 30 year old computer.  With an 8-bit CPU running at 1 megahertz and kilobytes of RAM, the Apple ][ was a humble machine. Many people first learned to program on it, but the languages designed for the Apple ][ tended to be clumsy and limiting by modern standards. Surely it isn't possible to fit a language as dynamic, rich, and complicated as Ruby on such a limited machine, right?  Come see Ruby running where it has never run before, learn how programming was done decades ago.",
+    "speakers": [
+      {
+        "name": "Colin Fulton",
+        "gitHubUrl": "https://github.com/justcolin",
+        "twitterUrl": "https://twitter.com/PeterQuines",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "A Robot Poet Goes for a Walk in the Park",
+    "description": "Designing complex, dynamic systems that can produce interesting and aesthetically pleasing art is a very hard problem to solve, even when you're just talking about something as focused as a Twitter bot. What happens when you try to make procgen art that doesn't just exist on the Internet, but actually lives in and interacts with the real world?",
+    "speakers": [
+      {
+        "name": "Em Lazer-Walker",
+        "gitHubUrl": "https://github.com/lazerwalker",
+        "twitterUrl": "https://twitter.com/lazerwalker",
+        "speakerUrl": "https://lazerwalker.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Easy Abstract Interpretation with SPARTA",
+    "description": "Using abstract interpretation to build a scalable tool from scratch is a daunting engineering task that generally requires a protracted development effort. To streamline that process, we built (SPARTA)1, a C++ library of components for building high-performance static analyzers that can run in a production environment. SPARTA provides the building blocks so an engineer can focus solely on the logic that extracts the desired information from the program. The library ensures that the resulting analysis is sound, efficient, and scalable.",
+    "speakers": [
+      {
+        "name": "Arnaud Venet",
+        "gitHubUrl": "https://github.com/arnaudvenet",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Jez Ng",
+        "gitHubUrl": "https://github.com/int3",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Learning to Love JavaScript",
+    "description": "JavaScript is an imperfect programming language. It’s weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter?",
+    "speakers": [
+      {
+        "name": "Tara Vancil",
+        "gitHubUrl": "https://github.com/taravancil",
+        "twitterUrl": "https://twitter.com/taravancil",
+        "speakerUrl": "https://taravancil.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "RGB to XYZ: The Science and History of Color",
+    "description": "Color is a fascinating subject. It is both incredibly subjective (ie. what makes a painting beautiful) and perfectly scientific (ie. wavelengths of light) at the same time. This talk will be a deep dive into the history and science of color and the fascinating world of human perception and the scientists that attempt to define it.",
+    "speakers": [
+      {
+        "name": "John Austin",
+        "gitHubUrl": "https://github.com/kleptine",
+        "twitterUrl": "https://twitter.com/kleptine",
+        "speakerUrl": "https://johnaustin.io",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "New programming constructs for probabilistic AI",
+    "description": "What if it were possible to do state-of-the-art AI programming without having to do math? This talk presents novel programming constructs for probabilistic AI that automate and hide difficult mathematical and numerical details from the user. These constructs are analogous to automatic differentiation for deep learning, but apply to a broader class of AI approaches that exhibit more aspects of human-like intelligence and can work without any training data.",
+    "speakers": [
+      {
+        "name": "Marco Cusumano-Towner",
+        "gitHubUrl": "https://github.com/marcoct",
+        "twitterUrl": "",
+        "speakerUrl": "http://web.mit.edu/marcoct/www/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Finding bugs without running or even looking at code",
+    "description": "What if you could find complex bugs in systems without ever having looked at any of the code, without running the code, without cloning the code, or even knowing what language the code is written in or where its git repo lives? What if you could validate the correctness of an architectural proposal before writing code?",
+    "speakers": [
+      {
+        "name": "Jay Parlar",
+        "gitHubUrl": "https://github.com/parlarjb",
+        "twitterUrl": "https://twitter.com/parlar",
+        "speakerUrl": "http://parlar.ca",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Beyond traces: the insights in trace aggregates",
+    "description": "The value proposition for distributed tracing is well-understood: assembling and visualizing end-to-end transactions helps to identify latency bottlenecks and provides a head-start on problem diagnosis. However, traditional tracing practices enable data presentation at the granularity of only a single transaction. This data is useful for debugging specific issues, but it is difficult to draw conclusions about the overall system without knowing how representative a lone trace is. Instead, aggregating these traces can reveal much more, and can do so with greater precision and certainty.",
+    "speakers": [
+      {
+        "name": "Daniela Miao",
+        "gitHubUrl": "https://github.com/danielamiao",
+        "twitterUrl": "https://twitter.com/dymxzvf",
+        "speakerUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/danielamiao/"
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Voice Driven Development: Who needs a keyboard anyway?",
+    "description": "As a programmer, being unable to use a keyboard can seem like a career-ending limitation. I was facing that reality a year ago due to Repetitive Strain Injury, when every productive day was a step back for my health. In a futile, last-ditch effort at saving my career, I turned to speech recognition. Unexpectedly, not only was I able to return to pain-free productivity, but I found voice-driven development to be enjoyable, efficient, and a source of renewed excitement for programming. Speech recognition isn't exactly known in software development circles as a workable approach to programming, but it's better than you (probably) think! Far from imposing a tedious workflow with a specialized set of commands, speech can enable flexibility and optimizations that are difficult to achieve with a keyboard, and does not get in the way when adapting to new technologies, tools, or languages. This practical, demo-driven talk presents the approach and tools that have allowed me to continue on with my career. I'll present real world experience with speech-related topics like disambiguating homophones on the fly and teaching the voice engine new technical vocabulary. Beyond technical aspects, I will share my experience guiding a team to support this working style, and challenges to adding a microphone into an open office environment. Speech not only removes the compromise between health and career when an injury is present, but can also augment and improve the workflow for a wider audience.",
+    "speakers": [
+      {
+        "name": "Emily Shea",
+        "gitHubUrl": "https://github.com/2shea",
+        "twitterUrl": "https://twitter.com/yomilly",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "The Idea Becomes a Machine That Makes the Art That...",
+    "description": "...Makes a Machine That Makes the Art",
+    "speakers": [
+      {
+        "name": "Christine Stavridis",
+        "gitHubUrl": "https://github.com/promptandpleasant",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Jonathan King",
+        "gitHubUrl": "https://github.com/promptandpleasant",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Apache Pulsar and the Legacy of Telegraphy",
+    "description": "The Wireless Telegraph was invited in the 1890s and quickly spread to be the dominant method of peer-to-peer communication throughout the 19th century. As a method of communication, the Telegraph allowed for a secure, Intercontinental, high-throughput and extensible message transmission. Toward the end of its popularity, Telegraphs were a broadcast protocol (one sender to many recipients), and their utility skyrocketed. The design considerations and engineering of the Telegraph are seen in contemporary messaging systems, especially Apache Pulsar. This talk covers the design considerations required to enabled globally distributed, low-latency applications to run on top of Apache Pulsar. From the storage model to replication and deployment, I explore each of these design decisions and how they contrast with the design of wireless telegraphy. The talk concludes with a demo of Apache Pulsar functions and Pulsar SQL, displaying the extensibility of Pulsar. Attendees can expect to learn a brief history of wireless telegraphy and a deep understanding of the design of Apache Pulsar.",
+    "speakers": [
+      {
+        "name": "Jowanza Joseph",
+        "gitHubUrl": "https://github.com/josep2",
+        "twitterUrl": "https://twitter.com/Jowanza",
+        "speakerUrl": "https://www.jowanza.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "How not to read the room: Creating wearables with ML",
+    "description": "I'm an introvert. This can be a bit unfortunate, when you are a person that enjoys spending a lot of free time creating fashion things bedazzled with LEDs... only to rarely wear them out in public. In an effort to actually share my weird and wonderful creations with others, I decided to create a wearable project that would force me to be sociable in order for it to reveal its magic. In this talk, I'll share how I am using machine learning with javascript and tiny computers to make \"fashion\" that is responsive to the people around you and the attention you are (or aren't) receiving.",
+    "speakers": [
+      {
+        "name": "Stephanie Nemeth",
+        "gitHubUrl": "https://github.com/traumverloren",
+        "twitterUrl": "https://twitter.com/stephaniecodes",
+        "speakerUrl": "https://stephanie.lol",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "A Stitch in Time - The Future of OSS Sustainability",
+    "description": "Open Source Software (OSS) has created enormous value for individuals and businesses. However the creators of that software often capture a tiny fraction of that value, and can end up tired, burnt out, or quitting the project entirely. In the past few years, new fears have arisen that cloud providers will 'take' open source software and resell it, leading some companies to move away from open-source licenses to prevent this from happening.",
+    "speakers": [
+      {
+        "name": "Daniel Compton",
+        "gitHubUrl": "https://github.com/danielcompton",
+        "twitterUrl": "https://twitter.com/danielwithmusic",
+        "speakerUrl": "https://danielcompton.net/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Privacy Governance & Explainability in ML/AI",
+    "description": "Since the General Data Protection Regulation (GDPR) went into effect in May 2018, matters of data privacy have grown from minor organizational adjustments to enterprise-level initiatives with impact on innovation and day-to-day operations alike. While privacy compliance may be straightforward in some areas, the growth and expansion of machine learning (ML) and artificial intelligence (AI) have has created an impasse between consumer data and processes that are, to say the least, difficult to fully explain. Integrating processes with ML and AI techniques often prove to significantly benefit the accuracy and efficiency of processes and decision making, but one's ability to fully understand precisely how an output was generated or a decision was made for an individual is much easier said than done. Yet, regulators across the globe are challenging businesses to explain how they are using governance techniques to protect consumer data privacy and to explain how decision making within ML/AI is impacting consumers. How can one identify bias? What processes can be introduced to protect consumer privacy while rooting out potential bias in the underlying models? In this talk, we will explore methods for enhancing privacy and governing data that is used for ML/AI, as well as to consider procedural approaches available for rooting out bias and building a foundation for consumer confidence in an otherwise complex and opaque space.",
+    "speakers": [
+      {
+        "name": "Jared Maslin",
+        "gitHubUrl": "",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/jared-maslin-6315934b/"
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Declarative APIs in an Imperative World",
+    "description": "Declarative UI frameworks have taken over the JavaScript landscape. Which is great, because making assumptions about your application's state is a source of pain, frustration, and bugs. But what happens when you need to glue together imperative APIs with your declarative UI framework?",
+    "speakers": [
+      {
+        "name": "Tilde Thurium",
+        "gitHubUrl": "https://github.com/annthurium",
+        "twitterUrl": "https://twitter.com/annthurium",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Deterministic Docker Images with Go Microservices",
+    "description": "At Samsara, we continuously deploy more than a hundred different microservices, all of which we wanted to do as easily and automatically as possible. We wanted to make this even better by bringing our deploy times to under 20 minutes while minimizing disruption, as this would also mean that we would start to deploy nearly our entire stack about 3 times a hour. Our solution to that: deterministically building our services in our deployed images to minimize time spent building services, network costs with moving images around, but most importantly, being able to automatically figure out which of our services have actually changed and only deploying those.",
+    "speakers": [
+      {
+        "name": "Jon San Miguel",
+        "gitHubUrl": "https://github.com/jsm",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Digital and Social Resilience through the NYC Mesh",
+    "description": "NYC Mesh is a community-run mesh network that helps over three-hundred homes connect to high-speed Internet; making it one of the largest mesh networks in the world. We work with anyone interested in reclaiming ownership over their Internet, but specifically engage with underserved populations including residents in low-income housing and community centers. Built by a combination of consumer-grade materials and donated fiber-optic cable, this network gives people ownership and control over their Internet usage.",
+    "speakers": [
+      {
+        "name": "Michael Donatz",
+        "gitHubUrl": "https://github.com/donutsonhudson",
+        "twitterUrl": "https://twitter.com/donutsonhudson",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Jillian Murphy",
+        "gitHubUrl": "",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/jillianemurphy"
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Improving law interpretability using NLP",
+    "description": "The process of legal reasoning is heavily reliant on information stored in text, but while legal texts are generally easily accessible, their interpretation often isn't straight forward, making the understanding of the law effectively inaccessible to the general public.",
+    "speakers": [
+      {
+        "name": "Serena Peruzzo",
+        "gitHubUrl": "https://github.com/sereprz",
+        "twitterUrl": "https://twitter.com/sereprz",
+        "speakerUrl": "http://serenaperuzzo.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Alda's dynamic relationship with Clojure",
+    "description": "Alda is a music programming language that provides a way to describe a musical composition as a text document. Its syntax is easy to use and well-suited for both musicians with little-to-no programming knowledge and programmers who lack music theory knowledge.",
+    "speakers": [
+      {
+        "name": "Dave Yarwood",
+        "gitHubUrl": "https://github.com/daveyarwood",
+        "twitterUrl": "https://twitter.com/dave_yarwood",
+        "speakerUrl": "https://djy.io",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "How to build with data trust and privacy as a baseline",
+    "description": "Tim Berners-Lee recently published his Contract for the Web with a core principle stating we must \"Respect consumers' privacy and personal data so people are in control of their lives online.\"",
+    "speakers": [
+      {
+        "name": "Noble Ackerson",
+        "gitHubUrl": "https://github.com/stigsfoot",
+        "twitterUrl": "https://twitter.com/nobleackerson",
+        "speakerUrl": "https://nobles.page",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Automating Operations of a Global CDN",
+    "description": "Aspects of the Netflix growth story are very visible - the transition from physical media delivery to digital streaming, or from a domestic focus to a global one. However, there are some transitions that may be less noticeable.",
+    "speakers": [
+      {
+        "name": "Robert Fernandes",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/bovilexic",
+        "speakerUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/robertfernandes/"
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Riding the stream processing wave",
+    "description": "At LinkedIn, we run several thousands of stream processing applications which, coupled with our scale, has exposed us to some unique challenges. We will talk about the 3 kinds of applications that have made the most impact on our stream processing platform.  Machine Learning applications are driving some of the latest innovations for streaming. The current trend is to train a model in batch environments and do inference in online environments. We built some native capabilities such as \"side-inputs\" for handling large state, while allowing features to be continuously pushed from offline grids to streaming environments. Data Scientists prefer DSL's for feature generation and access. Consequently, we built the ability to convert a machine learning DSL to a streaming job and use it for feature engineering. We will talk about this capability and how this can be extended to convert Hive, Pig or other custom DSL to streaming applications.  We have observed the emergence of applications that are moving from batch processing mode to nearline processing mode as well as operating on both batch (HDFS) and streaming (Kafka) datasets (e.g Experimentation). At LinkedIn, we use Samza for stream processing, and Samza applications can achieve offline-online convergence of stream and batch processing by simply switching the streaming input systems like Kafka with HDFS-based input. Apache Beam integration for Samza enables the capability to execute in different environments. Streaming applications now maintain very large local state, and during deployments, application or node failures it is critical to restore this state to its previous version. We will talk about the impact of these failures on large stateful applications and some of the recent improvements we have made in host affinity, state restore and our new standby container solution.",
+    "speakers": [
+      {
+        "name": "Samarth Shetty",
+        "gitHubUrl": "",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Uptime 15,364 days - The Computers of Voyager",
+    "description": "The Voyager 1 and Voyager 2 space probes, both launched in 1977, each had a primary objective to explore Jupiter and Saturn. This goal was achieved by 1981. Yet Voyager, NASA's longest running mission, has continued to this day. Both Voyager probes are still operating, and returning scientific data from outside our solar system.",
+    "speakers": [
+      {
+        "name": "Aaron Cummings",
+        "gitHubUrl": "https://github.com/aaroncummings",
+        "twitterUrl": "https://twitter.com/btvaaron",
+        "speakerUrl": "http://aaroncummings.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Safety in Chaos: Forming Realistic Failure Hypotheses",
+    "description": "Subjecting systems to failures is supposed to increase confidence in their stability. But why? How do you form failure hypotheses? How do you reason about their safety? Why should your organization listen to you and invest in testing your failure hypotheses?",
+    "speakers": [
+      {
+        "name": "Subbu Allamaraju",
+        "gitHubUrl": "https://github.com/S3u",
+        "twitterUrl": "https://twitter.com/sallamar",
+        "speakerUrl": "https://subbu.org",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Assistive Augmentation: Lip Reading with AI",
+    "description": "In the US alone, approximately 3% of the population (10 million) are either deaf or have moderate to profound hearing loss. This is 3 times as many people than those in wheelchairs yet reasonable disability accommodations for the deaf or hearing impaired only require an ASL (American Sign Language) interpreter in certain circumstances such in official political, legal, education, law enforcement, and employment events and situations. The problem with this is that only a fraction of the functionally deaf (250-500 thousand) speak ASL (also called \"signers\") and situations that have accommodations are few and far in-between anyway so how can the hearing impaired engage with events like the rest of us and especially those that don't have interpreters such as meetups, conferences, and debates.",
+    "speakers": [
+      {
+        "name": "Serg Masis",
+        "gitHubUrl": "https://github.com/smasis001",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/smasis/"
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Towards an Open, Reason(ML)able Web",
+    "description": "Web technologies today are converging towards two paradigms - static typing and compilation to JavaScript. More than ever before, engineers want sound type systems and elegant language ergonomics while generating performant JS. ReasonML promises the best of both by pairing OCaml's robust type system with a blazing fast JavaScript compiler, BuckleScript.",
+    "speakers": [
+      {
+        "name": "Parker Ziegler",
+        "gitHubUrl": "https://github.com/parkerziegler",
+        "twitterUrl": "https://twitter.com/parker_ziegler",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Enhancing Angklung Music Rehearsals with Modern Tech",
+    "description": "Angklung is a traditional musical instrument from Indonesia. This instrument has a lot of variety in how it is performed; a common format is the orchestral format in which 15-30 players gather to form a team. Playing angklung in this way is fun but also presents some challenges that are hard to solve manually. In this talk, we will learn how technology is used to improve the quality of rehearsals of this age-old instrument.",
+    "speakers": [
+      {
+        "name": "Trapsilo Bumi",
+        "gitHubUrl": "https://github.com/tbumi",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Formal Specification and Taming Other People's Tech",
+    "description": "Formal specifications are not just for academics and have applications way beyond checking algorithms like Paxos and Raft. Join us for a tour of using formal specifications for every day system design. If you've ever configured a load balancer or a message queue then you're already doing the kind of engineering work that formal specifications were intended for. This talk tells the story of a real life in production system built with common open source technologies that was struggling with growth and how we untangled its built-in assumptions and reworked its design using formal specifications.",
+    "speakers": [
+      {
+        "name": "Marianne Bellotti",
+        "gitHubUrl": "https://github.com/mbellotti",
+        "twitterUrl": "https://twitter.com/bellmar",
+        "speakerUrl": "https://medium.com/@bellmar",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "The strange loop making parasitic insects our friends",
+    "description": "The history of ecology and functional programming are intertwined. The Fibonacci sequence, commonly used to illustrate recursion for learners of functional programming, was initially created to model a population of rabbits. In 1935, the entomologist John Nicholson and the physicist Victor Bailey published The Balance of Animal Populations. They proposed equations to represent the population interaction between a parasitic wasp and its insect host. At the heart of the Nicholson-Bailey model is a mutually recursive relationship: a strange loop. The two populations depend upon each other and will recurse forever or crash as they both approach zero. The model became a paradigm in ecological modeling and is an essential tool in the field of biological control, where insect parasites that lay their eggs inside an invasive pest species are augmented for pest management. However, Nicholson-Bailey type models used in biological control studies rarely utilize high-level programming language tools. Generations is an open-source Python package containing parameterizable modules for understanding the population dynamics of biological control insects and their target plants (invasive weeds). Generations models the response of an invasive plant population to an herbivorous parasite, through a set of recursive functions. Come learn how functional programming is used to find organic solutions to invasive species problems to save native ecosystems and minimize the use of pesticides.",
+    "speakers": [
+      {
+        "name": "Mary Marek-Spartz",
+        "gitHubUrl": "https://github.com/alfalimajuliett",
+        "twitterUrl": "https://twitter.com/mMarekSpartz",
+        "speakerUrl": "http://mary.marek-spartz.org/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Building a Unified Cancer Immunotherapy Data Library",
+    "description": "The introduction of immunotherapies has revolutionized the treatment of cancer and ushered in a corresponding explosion of research into cancer, the immune system, and their interaction. In September 2018, there were 3,394 Cancer Immunotherapy agents being tested in clinical trials - a 67% increase from the number of agents being tested one year earlier. With this explosion in research comes an explosion of data and the challenge of keeping track of and unifying published and public data so that research organizations can stay on top of the field.",
+    "speakers": [
+      {
+        "name": "Lacey Kitch",
+        "gitHubUrl": "https://github.com/ParkerICI",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Ben Kamphaus",
+        "gitHubUrl": "https://github.com/benkamphaus",
+        "twitterUrl": "https://twitter.com/benkamphaus",
+        "speakerUrl": "http://benkampha.us",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "ASTRIAGraph: Monitoring Global Traffic in Space!",
+    "description": "ASTRIAGraph: Toward an open, transparent, and crowdsourced space traffic and environment monitoring and awareness system   The US department of defense tracks approximately 26000 resident space objects (RSOs) ranging from the size of a softball to a school bus. From these, roughly 2000 are actively controlled and all else are effectively space garbage. As such, they do not transmit their identities making them more difficult to track. Tracking is understood as both detecting an object and positively identifying it. Most of these objects are measured as point detections (i.e. non-resolved). Astrodynamics is the science that studies motion of resident space objects. There are four field effects driving RSO motion: gravitational, radiative, particulates, and geomagnetic. Of these, only the gravitational field effects are independent of the RSO's physical characteristics. The question then is, how do we positively identify all of the RSOs in the population and thus improve our ability to predict their behavior to satisfy a growing need for space safety, security, and sustainability? Moreover, how do we do this in the presence of uncertainty driven by both randomness and ignorance? Dr. Jah will describe current state of practice, compare this to state of the art, and identify scientific and engineering gaps that are in need of being satisfied. He will also provide a summary of his research program at UT Austin and how this focus area fits into a larger vision of rigorous and comprehensive space situational awareness and space traffic management.",
+    "speakers": [
+      {
+        "name": "Moriba Jah",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/moribajah",
+        "speakerUrl": "http://sites.utexas.edu/moriba/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-13",
+    "startTime": "4:30PM",
+    "endTime": "5:20PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "How Computers Misunderstand the World",
+    "description": "AI offers so many exciting possibilities for campuses, corporations, and communities. However, as we look to the future, we must keep in mind that technology has fundamental limits and AI is not a magic bullet that solves all social problems. In this talk, author and professor Meredith Broussard looks at the inner workings and outer limits of AI and argues why we should never assume that computers get everything right. Making a case against \"techno-chauvisnism\" - the belief that technology is always the superior solution - Broussard looks at why self-driving cars don't actually work and why a digital \"utopia\" will still harbor the social problems we experience today. She explores how understanding the limits of what we can do with technology allows us to make better choices about what we should do with technology to make the world better for everyone.",
+    "speakers": [
+      {
+        "name": "Meredith Broussard",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/merbroussard",
+        "speakerUrl": "http://meredithbroussard.com/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "9:10AM",
+    "endTime": "10:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "How We Tell Stories In Code",
+    "description": "If you you ask the experts how to write 'good' software, they will likely emphasize precision and predictability. They may recommend great tools like functional programming, immutability, testing, and type systems - all of which aim to make software more reliable. But software must interact with the real world to be useful, and the real world always presents scenarios software does not account for. You can't write good software by trying to architect unpredictability out of your program. To write good working software, you must build systems that work well even though they are unpredictable and incomplete. Your code has to describe and solve a real world problem without accounting for all details of the problem. Good software tells a narrative, but like all narratives leaves things out. Maybe good programmers are really just good story tellers.",
+    "speakers": [
+      {
+        "name": "Hannah Howard",
+        "gitHubUrl": "https://github.com/hannahhoward",
+        "twitterUrl": "https://twitter.com/techgirlwonder",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Complexities of Color in Computing",
+    "description": "Most of us don't question the assumptions we make about color and how we implement it in the technology we build, beyond perhaps a quick contrast check. This inattention to color is a grave mistake, as the history of color in computing is vibrant, and its impact on our lives can be significant! In this talk, we learn about the difference between Euclidean distance and delta-e between colors, and how it can break ADA compliance, crash your AI, and trick your facial recognition software into thinking you don't exist, all without raising an eyebrow.",
+    "speakers": [
+      {
+        "name": "Ellen Wondra",
+        "gitHubUrl": "https://github.com/ln1draw",
+        "twitterUrl": "https://twitter.com/ln1draw",
+        "speakerUrl": "http://www.ellenwondra.com/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Beyond Alt-Text: Trends in Online Accessibility",
+    "description": "If you're like the 2016 version of me, then you think you have a decent handle on web accessibility. You put alt attributes on all your images (though you don't give much thought to the actual text) and you make sure your sites can be used with a keyboard (except for overlays sometimes). Then the day comes when you're given a 100 page accessibility audit from a client and a deadline for all issues to be fixed. What is high contrast mode, you ask yourself, and why does it matter if these links are implemented in a list?",
+    "speakers": [
+      {
+        "name": "Ian Forrest",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/ianforr",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Can Androids Conceive of Electric Sheep",
+    "description": "What began as a hackathon project turned into a minor obsession...",
+    "speakers": [
+      {
+        "name": "Kwame Thomison",
+        "gitHubUrl": "https://github.com/Kwamenum86",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/kwamethomison"
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Federated learning: private distributed ML",
+    "description": "Federated learning is a way to do machine learning when training data is partitioned between nodes that are either unable or unwilling to share it.",
+    "speakers": [
+      {
+        "name": "Mike Lee Williams",
+        "gitHubUrl": "https://github.com/williamsmj",
+        "twitterUrl": "https://twitter.com/mikepqr",
+        "speakerUrl": "https://mike.place",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Securing cloud applications and their credentials",
+    "description": "With the rise of containerized cloud-based infrastructure, security in these architectures has been an area that has been often deferred to developers and \"shadow IT\" because the tools and technologies used previously have have not been as quick to catch up. While developers generally make reasonable decisions about securing workloads, pushes for higher velocity end up causing simple implementation misconfigurations that exponentially increase the attack surface. Attendees will learn common container security problems as well as how to increase security of your apps both on the container and scheduler level. We will also cover some of the next-gen tooling and see where long-term security initiatives are heading in this space.",
+    "speakers": [
+      {
+        "name": "Srdjan Grubor",
+        "gitHubUrl": "https://github.com/sgnn7",
+        "twitterUrl": "https://twitter.com/sgnn7",
+        "speakerUrl": "https://sgnn7.org",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Minimalist Piano Forever",
+    "description": "French composer Erik Satie was the forefather of avant-garde music, the founder of a one-man occult sect, and the inventor of entirely new genres for his hauntingly repetitive, minimalist piano works. Personally, I could listen to his \"Gnossiennes\" forever, so I created a way to do so, using digital sheet music, markov chains, and browser-based midi to create a generative, unending Gnossienne. This talk will explore the strategies, algorithms, and libraries I used to go from 19th and 20th century piano music to generative audio and on-the-fly sheet music in the browser. It features forays into topics ranging from how to make computer generated music sound more natural, to Erik Satie's very peculiar life.",
+    "speakers": [
+      {
+        "name": "Mouse Reeve",
+        "gitHubUrl": "https://github.com/mouse-reeve",
+        "twitterUrl": "https://twitter.com/tripofmice",
+        "speakerUrl": "https://mousereeve.com/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Why do tree ensembles work?",
+    "description": "Ensembles of decision trees (e.g., the random forest and AdaBoost algorithms) are powerful and well-known methods of classification and regression. This talk will survey work aimed at understanding the statistical properties of decision tree ensembles, with the goal of explaining why they work. After sketching the algorithms, we will give an initial explanation for their effectiveness via generic arguments (bias-variance decomposition, Hoeffding's inequality), then proceed to more detailed topics (the interpretation of random forests as kernel machines, the role of the margin, interpolation). The audience is expected to have some experience with supervised learning and statistical arguments.",
+    "speakers": [
+      {
+        "name": "Joe Ross",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/robusteza",
+        "speakerUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/joseph-ross-6335b297/"
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "10:20AM",
+    "endTime": "11:00AM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Correctness proofs of distributed systems with Isabelle",
+    "description": "Testing systems is great, but tests can only explore a finite set of inputs and behaviors. Many real systems, especially distributed systems, have a potentially infinite state space. If you want to be sure that a program does the right thing in all possible situations, testing is not sufficient: you need proof. Only mathematical proof, e.g. by induction, can cover an infinite state space.",
+    "speakers": [
+      {
+        "name": "Martin Kleppmann",
+        "gitHubUrl": "https://github.com/ept",
+        "twitterUrl": "https://twitter.com/martinkl",
+        "speakerUrl": "https://martin.kleppmann.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Compacting the Uncompactable",
+    "description": "Programs written in C/C++, can suffer from serious memory fragmentation, leading to low utilization of memory, degraded performance, and application failure due to memory exhaustion. This problem extends to languages like Ruby and Python, where the standard interpreters for these languages are themselves C programs. This talk introduces Mesh, a plug-in replacement for malloc that, for the first time, eliminates fragmentation in unmodified C/C++ applications through compaction. A key challenge is that, unlike in garbage-collected environments, the addresses of allocated objects in C and C++ are directly exposed to programmers, and applications may do things like stash addresses in integers or store flags in the low bits of aligned addresses. This hostile environment makes it impossible to safely relocate objects, as the runtime cannot precisely locate and update pointers. Mesh combines novel randomized algorithms with widely-supported virtual memory operations to provably reduce fragmentation, breaking long-established worst-case bounds on memory efficiency with high probability. Mesh generally matches the runtime performance of state-of-the art memory allocators while reducing memory consumption and eliminating pathological cases; in particular, Mesh reduces the memory of consumption of Firefox by 16% and Redis by 39%. There are efforts underway to incorporate Mesh's approach to eliminate fragmentation into existing allocators, like jemalloc.",
+    "speakers": [
+      {
+        "name": "Bobby Powers",
+        "gitHubUrl": "https://github.com/bpowers",
+        "twitterUrl": "https://twitter.com/lilbobbypowers",
+        "speakerUrl": "https://bpowers.net",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Designing Systems Against Domestic Violence",
+    "description": "In a country where 3 women are murdered every day by their male partners, thinking about domestic safety isn't an edge case. How can keeping people safe be built into our products? This talk will cover real-world situations, their digital solutions, and how to prioritize safety.",
+    "speakers": [
+      {
+        "name": "Eva PenzeyMoog",
+        "gitHubUrl": "https://github.com/epenzeymoog",
+        "twitterUrl": "https://twitter.com/epenzeymoog",
+        "speakerUrl": "https://evapenzeymoog.com/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Networking and Go: An Engineer's Journey",
+    "description": "My foray into Go began a few years ago when I started working at DigitalOcean. While building an abstraction layer on top of Kubernetes and familiarizing myself with the language, I began to love it. Syntactically simple, with amazing concurrency primitives and a wonderful community, Go was an excellent choice for a cloud-hosting company with a variety of low-level, server-side microservices.",
+    "speakers": [
+      {
+        "name": "Sneha Inguva",
+        "gitHubUrl": "https://github.com/si74",
+        "twitterUrl": "https://twitter.com/snehainguva",
+        "speakerUrl": "http://www.snehainguva.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Building Haskell Programs with Fused Effects",
+    "description": "Haskell is a purely functional programming language: by default, Haskell functions do not cause side effects such as system I/O, nondeterminism, or exception handling. As such, Haskell programs are generally expressed in terms of monad transformers, which provide the facility to compose different side effects into a single interface powerful enough to express the programmer's needs. The monad transformer library, mtl, is mature and powerful, but complicates and in some cases constrains the construction and generalization of user-specified monads.",
+    "speakers": [
+      {
+        "name": "Patrick Thomson",
+        "gitHubUrl": "https://github.com/patrickt",
+        "twitterUrl": "https://twitter.com/importantshock",
+        "speakerUrl": "https://blog.sumtypeofway.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Probabilistic scripts for automating common-sense tasks",
+    "description": "As engineers, we love automating tedious tasks. But when those tasks require common-sense reasoning, automation can be difficult. Consider, for example, cleaning a messy dataset-full of typos, NULL values, numbers in the wrong units, and other problems. People have little trouble fixing these errors by hand, but it can be difficult to express the rules for doing so programmatically.",
+    "speakers": [
+      {
+        "name": "Alexander Lew",
+        "gitHubUrl": "https://github.com/alex-lew",
+        "twitterUrl": "",
+        "speakerUrl": "http://alexlew.net",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Custom-Made Games with Machine Learning and Big Data",
+    "description": "{description}",
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "A better story for Kubernetes secrets",
+    "description": "Secrets are a key pillar of Kubernetes, but anyone with access to etcd can all the plaintext values!",
+    "speakers": [
+      {
+        "name": "Seth Vargo",
+        "gitHubUrl": "https://github.com/sethvargo",
+        "twitterUrl": "https://twitter.com/sethvargo",
+        "speakerUrl": "https://www.sethvargo.com/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "11:20AM",
+    "endTime": "12:00PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Better Integration Tests for Performance Monitoring",
+    "description": "In late 2017, Slack's largest customers were plagued with relentless performance-related outages. Our monolithic, spaghetti codebase was increasingly difficult to reason about; small, innocuous changes might accidentally cause a cascade of regressions. A few concerned engineers teamed up to build a tool detecting and preventing these changes from reaching production. Known as \"Slerf\" (for \"Sl\"ack P\"erf\"ormance), the simple system runs atop Slack's existing unit testing framework and alerts backend engineers early to any potential regressions their code might introduce. Learn how you can extend your own testing framework and improve both the confidence of your engineers and stability of your product while maintaining a high development velocity!",
+    "speakers": [
+      {
+        "name": "Maude Lemaire",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/qcmaude",
+        "speakerUrl": "http://maudethecodetoad.com/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Explainable AI: the apex of human and machine learning",
+    "description": "Black Box AI technologies like Deep Learning have seen great success in domains like ad delivery, speech recognition, and image classification; and have even defeated the world's best human players in Go, Starcraft, and DOTA. As a result, adoption of these technologies has skyrocketed. But as employment of Black Box AI increases in safety-intensive and scientific domains, we are learning hard lessons about their limitations: they go wrong unexpectedly and are difficult to diagnose.",
+    "speakers": [
+      {
+        "name": "Baxter Eaves",
+        "gitHubUrl": "https://github.com/BaxterEaves",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Everything You Wanted to Know About Distributed Tracing",
+    "description": "In the age of microservices, understanding how applications are executing in a highly distributed environment can be complicated. Looking at log files only gives a snapshot of the whole story and looking at a single service in isolation simply does not give enough information. Each service is just one side of a bigger story. Distributed tracing has emerged as an invaluable technique that succeeds in summarizing all sides of the story into a shared timeline. Yet deploying it can be quite challenging, especially in the large scale, polyglot environments of modern companies that mix together many different technologies. During this session, we will take a look at patterns and means to implement Tracing for services. After introducing the basic concepts we will cover how the tracing model works, and how to safely use it in production to troubleshoot and diagnose issues.",
+    "speakers": [
+      {
+        "name": "Hungai Kevin Amuhinda",
+        "gitHubUrl": "https://github.com/hungaikev",
+        "twitterUrl": "https://twitter.com/Hungai",
+        "speakerUrl": "https://hungaikev.in",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Parser Parser Combinators for Program Transformation",
+    "description": "Multi-language tool support for syntax transformation is hard due to heterogeneous representations in syntax and abstract syntax trees (ASTs). Regex-based search-and-replace falls short of recognizing syntax that fundamentally delineates tree data structures. Recent approaches develop new strategies that overcome the limitations of regex matching but remain underdeveloped for easily changing code. Our work goes one step further, focusing on the problem of enabling lightweight program transformation in every language for every programmer. We show that the problem can be decomposed where (1) a common grammar expresses the central context-free language properties shared by many contemporary languages (e.g., balanced parentheses) and (2) open extension points in the grammar customizes syntax handling (e.g., for language-specific comments) with smaller parsers. We introduce Parser Parser Combinators (PPCs), our key mechanism implementing these ideas. PPCs are parser combinators that produce parsers from user-supplied patterns. Generated parsers run directly on program source to match syntax of interest (we don't define or use any AST), thereby lifting syntax rewriting to a modularly-defined parsing problem. We share large-scale results from rewriting code across 12 languages (Go, Rust, Scala, and Elm to name but a few) for top-100 most popular GitHub repositories (per language). We show over 50 syntactic changes merged into 40+ of these projects using our tool, and give a demo.",
+    "speakers": [
+      {
+        "name": "Rijnard van Tonder",
+        "gitHubUrl": "https://github.com/rvantonder",
+        "twitterUrl": "https://twitter.com/rvtond",
+        "speakerUrl": "https://www.cs.cmu.edu/~rvantond/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Computer Vision and NLP for Multi-Task Fashion Modeling",
+    "description": "Shoprunner aggregates millions of products from 140 retailers which represent thousands of brands. In order to make these products findable and searchable by users it is important for Shoprunner to be able to standardize the attributes (style, color, pattern etc) of these millions of products. Even after defining what attributes to model, choosing the best way to predict attributes is difficult because every product can be represented in a variety of forms such as images, product description, title,and brand name. These different data representations each have their strengths and weaknesses. Images encode information such as color and pattern well while other attributes related to length and cut may be well captured in text descriptions. This session will go through the multi-task learning ensemble that the Data Science team at Shoprunner has built using both custom multi-task CNNs for images and fine-tuned Bert model for text classification in Pytorch for attribute modeling.",
+    "speakers": [
+      {
+        "name": "Michael Sugimura",
+        "gitHubUrl": "https://github.com/sugi-chan",
+        "twitterUrl": "https://twitter.com/sugichan014",
+        "speakerUrl": "https://medium.com/@michaelsugimura",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Building an Open Source Artificial Pancreas",
+    "description": "Have you ever thought about what open source software or hardware could achieve? What if it could help improve people's lives by solving some of their health problems?",
+    "speakers": [
+      {
+        "name": "Sarah Withee",
+        "gitHubUrl": "https://github.com/geekygirlsarah",
+        "twitterUrl": "https://twitter.com/geekygirlsarah",
+        "speakerUrl": "https://sarahwithee.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Unison: a new distributed programming language",
+    "description": "Unison is an open source functional programming language with special support for building distributed, elastic systems. It began as an experiment: rethink all aspects of the programming experience, including the core language, runtime, tooling, as well as code versioning and publishing, and then do whatever is necessary to eliminate needless complexity and make building software once again delightful, or at the very least, reasonable.",
+    "speakers": [
+      {
+        "name": "Paul Chiusano",
+        "gitHubUrl": "https://github.com/pchiusano",
+        "twitterUrl": "https://twitter.com/pchiusano",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "CSS Algorithms",
+    "description": "Wait...CSS algorithms? Can one really write algorithms in CSS? Absolutely.",
+    "speakers": [
+      {
+        "name": "Lara Schenck",
+        "gitHubUrl": "https://github.com/laras126",
+        "twitterUrl": "https://twitter.com/laras126",
+        "speakerUrl": "https://notlaura.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "1:30PM",
+    "endTime": "2:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Community Driven Development",
+    "description": "As developers who want to lend our skills to support organizations fighting for social justice, how do we build effective, impactful collaborations with organizations and make the resulting open source projects sustainable? Over two years and 1,062 commits, we'll follow the evolution of an open source project built with and for New Sanctuary Coalition (NSC), an NYC immigrant rights organization, to meet exponentially growing demand for their immigration court accompaniment program, pro se legal clinic, and anti-detention program following the 2016 election.",
+    "speakers": [
+      {
+        "name": "Christine Zagrobelny",
+        "gitHubUrl": "https://github.com/CZagrobelny",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Performance Matters",
+    "description": "Performance clearly matters to users. For example, the most common software update on the AppStore is \"Bug fixes and performance enhancements.\" Now that Moore's Law has ended, programmers have to work hard to get high performance for their applications. But why is performance hard to deliver?",
+    "speakers": [
+      {
+        "name": "Emery Berger",
+        "gitHubUrl": "https://github.com/emeryberger",
+        "twitterUrl": "https://twitter.com/emeryberger",
+        "speakerUrl": "https://emeryberger.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Machine learning to interpret sign language",
+    "description": "Instead of just teaching Deaf people how to get along with the rest of the world and understand them, why don't we make an effort to understand them and their language via technology?! In this talk we will learn how to use machine learning to interpret sign language.",
+    "speakers": [
+      {
+        "name": "Shagufta Gurmukhdas",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/shaguftamethwan",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Realtime Hybrid Reinforcement Learning at Scale",
+    "description": "Next best action (NBA) is a technique that takes unique user history and characteristics into consideration and recommends the next actions that help the customer progressing towards business goals as quickly and smoothly as possible. It is not easy to design such a AI powered NBA engine. Ideally a hand-free NBA engine needs to handle the following problems. a) It should deal with incomplete historical feedback that are skewed towards a small set of actions; b) It should adapt to dynamic actions, which can be added or removed frequently due to seasonal changes or shifts in business strategies; c) It needs to optimize for multiple complex business objectives, which usually consist of reaching a set of target events or moving users to next more preferred stage; d) Most importantly, it has to learn and make decisions in realtime and at massive scale. Most of the solutions in the market only addresses a few of those challenges, due to model or technical challenges. In this presentation, we will show how we address all those issues at Salesforce Marketing Cloud Einstein. We will present a hybrid model based on reinforcement learning that balances both online and offline learning. We will show how we utilize distributed big data processing technologies and services to train and make predictions at massive scale. We will also discuss an offline evaluation mechanism to provide bounded expected performance, which has been a hard problem for reinforcement machine learning in general.",
+    "speakers": [
+      {
+        "name": "Kexin Xie",
+        "gitHubUrl": "https://github.com/realstraw",
+        "twitterUrl": "https://twitter.com/realstraw",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Yuxi Zhang",
+        "gitHubUrl": "https://github.com/juziyt",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Zipline - A Declarative Feature Engineering Library",
+    "description": "Zipline is Airbnb's data management platform specifically designed for ML use cases. Previously, ML practitioners at Airbnb spent roughly 60% of their time on collecting and writing transformations for machine learning tasks. Zipline reduces this task from months to days - by making the process declarative. It allows data scientists to easily define features in a simple configuration language. The framework then provides access to point-in-time correct features - for both - offline model training and online inference.",
+    "speakers": [
+      {
+        "name": "Nikhil Simha",
+        "gitHubUrl": "",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Jagged, ragged, awkward arrays",
+    "description": "Data processing languages, such as SQL, R, MATLAB, and Numpy/Pandas, implicitly loop over identically-typed objects (\"rows\") of a dataset (\"table\"). This makes for a succinct syntax in an interactive environment, but what do you do if your table doesn't have a regular shape?",
+    "speakers": [
+      {
+        "name": "Jim Pivarski",
+        "gitHubUrl": "https://github.com/jpivarski",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Rhapsody in Zero Knowledge: Proving Without Revealing",
+    "description": "What does it mean to prove something? Propositional logic requires we reveal propositions and then prove them true, but what if it were possible to create proofs which reveal nothing but their own validity? This is the core idea behind the emergent field of zero knowledge proofs: a decades old solution to a problem we didn't even know existed yet. As we increasingly turn to machine learning to solve problems related to security, such as detecting frauds, fakes, or other threat actors, solutions increasingly rely on accumulating massive amounts of personal data, undermining privacy and risking data breaches. This talk is about how we don't have to sacrifice privacy to get security, and the potential power of constraints, complexity, and universal verifiable computation, and assumes no prior knowledge of cryptography or proof systems.",
+    "speakers": [
+      {
+        "name": "Tony Arcieri",
+        "gitHubUrl": "https://github.com/tarcieri",
+        "twitterUrl": "https://twitter.com/bascule",
+        "speakerUrl": "https://tonyarcieri.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "¡Escuincla babosa! A Python Deep Learning Telenovela",
+    "description": "Telenovelas are beloved for their over the top drama and intricate plot twists. In this talk, we'll review popular telenovelas to synthesize a typical telenovela arc and use it to train a deep learning model.",
+    "speakers": [
+      {
+        "name": "Lorena Mesa",
+        "gitHubUrl": "https://github.com/lorenanicole",
+        "twitterUrl": "https://twitter.com/loooorenanicole",
+        "speakerUrl": "http://lorenamesa.com",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "2:30PM",
+    "endTime": "3:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "InferenceQL: AI for data engineers, without the math",
+    "description": "Can we empower data engineers to use AI to explore, monitor, clean, and predict data streams, without having to learn math?",
+    "speakers": [
+      {
+        "name": "Ulrich Schaechtle",
+        "gitHubUrl": "",
+        "twitterUrl": "https://twitter.com/Schaechtle",
+        "speakerUrl": "http://schaechtle.com/",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "How Your Company Can Help Sustain Open Source",
+    "description": "Would you like your company and co-workers to be giving back to the open source projects you use every day? In this talk, I will present a number of different ways that companies are contributing to open source, and discuss the pros and cons of each, so that you can help your company to sustain the projects upon which you depend. This will include: - Various exciting corporate initiatives for funding open source projects, and how to choose which projects get that money - What an OSPO (Open Source Program Office) is and why your company might want one - Ways to encourage employees to contribute, and how to make contributing easy for them - How to measure your company's and employees' contributions to open source- This includes philosophical questions of what should you be measuring, and the logistical answers of what tools are available to do so You will leave this talk with specific , practical ideas and examples you can use to promote open source sustainability.",
+    "speakers": [
+      {
+        "name": "Danielle Gellis",
+        "gitHubUrl": "https://github.com/danisyellis",
+        "twitterUrl": "https://twitter.com/danisyellis",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Tweet My Wedding Dress",
+    "description": "Inspired by a love of rainbows and silly tech projects, I decided to make my own first wearable tech - a wedding dress full of lights that could be controlled by tweets from my friends and family!",
+    "speakers": [
+      {
+        "name": "Jo Franchetti",
+        "gitHubUrl": "https://github.com/thisisjofrank",
+        "twitterUrl": "https://twitter.com/thisisjofrank",
+        "speakerUrl": "https://medium.com/@jofranchetti",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Meander: Declarative Explorations at the Limits of FP",
+    "description": "As functional programmers we love to pay lip service to declarative data transformation. Yet this allegiance rarely plays out in our actual code. Data transforming combinators (map, filter, reduce, etc) offer significant expressive power over manual loops and mutation, but when combined in complex ways, lose their declarative power. Lost in a web of nested pipelines, the shape of our data becomes obscured; our code becomes hard to follow. We wind up, yet again, needing to play computer in our heads to understand what our code is doing.",
+    "speakers": [
+      {
+        "name": "Jimmy Miller",
+        "gitHubUrl": "https://github.com/jimmyhmiller",
+        "twitterUrl": "https://twitter.com/jimmyhmiller",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Watch the Watcher: Facial-Recognition & Police Oversight",
+    "description": "Increased state use of facial recognition technology threatens to increase the power dynamic between the state and disenfranchised communities. However, what happens when individuals use facial recognition to watch the watchers? OpenOversight is an open-source project that promotes police accountability through public data. Users can sort through photos to identify an officer against whom they would like to complain. A lack of officer identification information has stifled previous attempts to monitor police; in Chicago from 2011 - 2015, 28% of complaints against police were immediately dropped due to a lack of identification. The OpenOversight team has leveraged facial recognition to make the project more effective. For example, we use the AWS tool Rekognition, which has been used by various police departments, to identify with 90% accuracy if police or military officers are present in a photo. This pre-processing has made the volunteer job of photo sorting more efficient. We also use face-api.js to match new photos against existing images in the database. After a discussion of this technical implementation, the talk will close by discussing legal considerations that we encountered, such as department-specific guidelines and compliance with Illinois's Biometric Information Privacy Act. The talk will provide concrete tools and strategies for community responses to state surveillance.",
+    "speakers": [
+      {
+        "name": "Eileen McFarland",
+        "gitHubUrl": "https://github.com/McEileen",
+        "twitterUrl": "",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "#lang wishful thinking",
+    "description": "What might solving a real production problem in a language specifically designed for building languages that cooperate look like? Racket lets you program by fusing multiple DSLs together, reshaping and moulding your language to fit the domain, putting up towers of languages, in fact, each level closer to the language of the desired discourse. Get a glimpse of how this might work by implementing something that's simple yet spans a whole range on the abstraction ladder from bit twiddling to Web frameworks. Learn how to really go off on a tangent while implementing FastCGI protocol in Racket: we won't tie ourselves to the defaults that Racket designers blessed us with, but boldly employ wishful thinking, borrow readily from other languages. We won't rush to map domain vocabulary onto what basic building blocks our language provides - we'll try to actually speak the language of the domain. Want prototypes with Lua-style metatables? Concise syntax? Single and multiple inheritance with generic dispatch? How generic should that generic be? Multimethods? Full Metaobject Protocol, maybe? Beyond Metaobject Protocol? A language of patterns to avoid bit twiddling? That one Web framework that speaks the language of the Web yet lets you write plain \"desktop app\" code? Build yourself a better language. Dare say: I wish I could - then make it so.",
+    "speakers": [
+      {
+        "name": "Vlad Kozin",
+        "gitHubUrl": "https://github.com/vkz",
+        "twitterUrl": "https://twitter.com/zeRusski",
+        "speakerUrl": "http://fullmeta.me",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Pattern Matching @ Scale Using Finite State Machine",
+    "description": "Working with data often means trying to locate data that fits patterns, akin to finding a needle in a haystack. When we add big data from non homogenous sources to the mix, this problem becomes exponentially complex. One of the use cases at Netflix, is about improving the Sign Up experience through experimentation. Being able to find user journeys across billions of events; that follow certain patterns, is a key insight into simplifying the sign up process.",
+    "speakers": [
+      {
+        "name": "Ajit Koti",
+        "gitHubUrl": "https://github.com/ajitkoti",
+        "twitterUrl": "https://twitter.com/ajitkoti",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      },
+      {
+        "name": "Rashmi Shamprasad",
+        "gitHubUrl": "https://github.com/rshamprasad",
+        "twitterUrl": "https://twitter.com/rshamprasad",
+        "speakerUrl": "",
+        "linkedInUrl": ""
+      }
+    ],
+    "date": "2019-09-14",
+    "startTime": "3:30PM",
+    "endTime": "4:10PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  },
+  {
+    "title": "Closing Keynote",
+    "description": "{description}",
+    "date": "2019-09-14",
+    "startTime": "4:30PM",
+    "endTime": "5:20PM",
+    "livebloggerName": "{livebloggerName}",
+    "livebloggerUrl": "{livebloggerUrl}"
+  }
+]

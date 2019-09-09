@@ -1,0 +1,201 @@
+{
+  "day1": [
+    {
+      "session": "On the road to Go 2",
+      "presenter": "Russ Cox",
+      "start_time": "09:10",
+      "description": "We're on the road to Go 2. But where exactly are we? Where are we headed? Come find out.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "How Uber 'Go'es",
+      "presenter": "Elena Morozova",
+      "start_time": "09:50",
+      "description": "Maintaining a large codebase with maximum readability and minimal overhead is hard. This is the story of how Go went from a few enthusiastic Gophers to the most popular language for microservices at Uber. Learn where we failed, and how that led us to solutions that we think are pretty darn neat!",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Portable, immediate mode GUI programs for mobile and desktop in 100% Go",
+      "presenter": "Elias Naur",
+      "start_time": "10:50",
+      "description": "Gio is a new open source Go library for writing immediate mode GUI programs that run on all the major platforms: Android, iOS/tvOS, macOS, Linux, Windows. The talk will cover Gio's unusual design and how it achieves simplicity, portability and performance.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Go, pls stop breaking my editor",
+      "presenter": "Rebecca Stambler",
+      "start_time": "11:20",
+      "description": "The Go community has built many amazing tools to improve the Go developer experience. However, when a maintainer disappears or a new Go release wreaks havoc, the Go development experience becomes frustrating and complicated. This talk will cover the details behind a new tool to solve these issues: gopls (pronounced 'go please'). This tool is currently in development by the Go team and community, and it will ultimately serve as the backend for your Go editor.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Handling Go errors",
+      "presenter": "Marwan Sulaiman",
+      "start_time": "11:55",
+      "description": "Let's talk about programmable errors and how you can design your own architecture that allows you to legibly master your system failures.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Get going with WebAssembly",
+      "presenter": "Johan Brandhorst",
+      "start_time": "11:55",
+      "description": "Curious about WebAssembly and how we can use it with Go? This tutorial will introduce the technology, show how to get started with WebAssembly and Go, discuss what is possible today and what will be possible tomorrow.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Go Module Proxy: Life of a query",
+      "presenter": "Katie Hockman",
+      "start_time": "14:00",
+      "description": "The Go team has built a module mirror and checksum database, which adds reliability and security to the Go ecosystem. This talk discusses the technical details of authenticated module proxies, following the journey of a request through the go command, proxy, and checksum database.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Controlling the go runtime",
+      "presenter": "Patrick Hawley",
+      "start_time": "11:55",
+      "description": "Sometimes we need to tell the go runtime what to do. This talk explains how to control the runtime, why we should, and describes two new ways to control it better.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Optimization for number of goroutines using feedback control",
+      "presenter": "Yusuke Miyake",
+      "start_time": "14:00",
+      "description": "The design for the number of concurrency is important to achieve both speed and stability. To give a good performance without depending on platform and load conditions, it’s desirable for the number to be dynamic and rapidly controlled. In this talk, I will propose an architecture to solve this by utilizing feedback control."
+    },
+    {
+      "session": "Better x86 Assembly Generation from Go",
+      "presenter": "Michael McLoughlin",
+      "start_time": "14:00",
+      "description": "This talk will equip you with the tools to safely write lightning fast assembly functions for Go. We will introduce Go assembly and the role it plays in the Go ecosystem, promote best practices for assembly development and demonstrate how code generation tools can manage complexity in large assembly projects.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Design Command-Line Tools People Love",
+      "presenter": "Carolyn Van Slyck",
+      "start_time": "14:55",
+      "description": "It is a joy to build command-line tools that are not only easy to learn, but that other developers are willing to maintain. Often a team's engineering efforts are spent on the backend, while the cli doesn't receive the same level of attention. This can result in hard-to-test tools and dumping maintenance of them to whoever most recently joined the team. Learn how to take full advantage of popular Go libraries, structure your Go code to improve reuse and testability, publish binaries, and of course design your commands to be user friendly.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "The Gopher's manual of style",
+      "presenter": "Kris Brandow",
+      "start_time": "14:55",
+      "description": "Our industry has borrowed ideas and practices from a range of industries to improve the design and production of software. In this talk, we'll look to the publishing industry for ways to improve software development for our industry and within the Go community.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "PKI for Gophers",
+      "presenter": "Eric Chiang",
+      "start_time": "14:55",
+      "description": "TLS is easy, PKI is hard. Learn about Go primitives for generating certificate hierarchies, instrumenting mTLS, hardware backed keys, and public infrastructure like Let's Encrypt and Certificate Transparency. Along the way we'll discuss roots of trust for automated issuance, nuances of revocation, and encourage you to roll your own PKI.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Contributing to the os Package: How deep do you Go?",
+      "presenter": "Oliver Stenbom",
+      "start_time": "16:25",
+      "description": "When the core of a language fails you, and you can't remove a file, how can you fix it? Oliver will share his contribution journey from bug to merge in a crucial part of Golang: the os package. Discover how Golang manages platform independence and how even novices can contribute Unix system calls.",
+      "tweeted": "yes"
+    }
+  ],
+  "day2": [
+    {
+      "session": "The Athens project: A proxy server for Go modules",
+      "presenter": "Aaron Schlessinger",
+      "start_time": "09:10",
+      "description": "Go 1.11 was a big release for all of us because we got a new package management system called modules built right into the go CLI. If you tried out vgo before 1.11, you'll be familiar with modules. There's some really cool stuff in there, but there's one piece that a lot of us missed that we need to pay special attention to: the download API.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Generics in Go",
+      "presenter": "Ian Lance Taylor",
+      "start_time": "09:40",
+      "description": "Advantages and requirements for generics in Go.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "You can't Go your own way: The standardization of Go at GitHub",
+      "presenter": "Jessica Lucci",
+      "start_time": "10:50",
+      "description": "Ever feel like moving code bases, even in the same language, can feel like working at an entirely new company? Over the past year, GitHub has been working on standardizing its' usage of Go to mitigate issues like this. This talk will cover challenges faced and lessons learned throughout this process.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Small is going big: Go On microcontrollers",
+      "presenter": "Ron Evans",
+      "start_time": "11:20",
+      "description": "TinyGo takes the Go programming language to the 'final frontier' where we could not go before... running directly on microcontrollers like Arduino and more! In this talk I will introduce TinyGo (http://tinygo.org) a new miniature version of the Go language that uses the LLVM compiler toolchain to create native code that can run directly even on the smallest of computing devices. This talk will feature live coding demos of flying objects!",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Socket to me: Where do Sockets live in Go?",
+      "presenter": "Gabbi Fisher",
+      "start_time": "11:55",
+      "description": "Have you ever used HTTP server functions surfaced by the net/http package? Or gone down a couple of network levels and used TCP and UDP Listeners? Sockets are the secret sauce underlying these networking tools in Go. While Go abstracts away sockets, there are circumstances where knowing about sockets and how to configure them is instrumental. This talk will explain the fundamentals of socket-level programming in Go, and how and where to use it.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Death by three thousand timers: Streaming video-on-demand for Cable TV",
+      "presenter": "Chris Hines",
+      "start_time": "11:55",
+      "description": "Can Go handle soft real-time applications? Learn about the challenges my team overcame to deliver video-on-demand MPEG streams to millions of cable TV customers using pure Go. Along the way we'll dig deeper into how Go manages timers and goroutine scheduling.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Optimizing Go Code without a blindfold",
+      "presenter": "Daniel Martí",
+      "start_time": "11:55",
+      "description": "Making code faster is exciting, and benchmarks in Go make that easy to do! Not really. Optimizing a program can be complex and requires careful consideration to do so properly. This session will demonstrate techniques and tools which are a must for any performance aficionado.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Detecting incompatible API changes",
+      "presenter": "Jonathan Amsterdam",
+      "start_time": "14:00",
+      "description": "Detecting whether your package's API is backwards-compatible is an important problem. You want to know whether your change could break existing users, or whether you're just adding new features. In this tutorial, I'll begin by discussing what we mean by API compatibility. I'll talk about how computing it is harder than it might seem at first, and I'll describe the algorithm I used to write my apidiff tool. Along the way, I'll provide tips on how to future-proof your own code against API breakage. Listeners will emerge with a new appreciation for and a deeper understanding of the Go language, as well as a sense of how to build tools like this one.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Go Linters: Myths and best practices",
+      "presenter": "Denis Isaev",
+      "start_time": "14:00",
+      "description": "Go contains over 50 different linters. For linter adepts, I'll reveal how to use their full power, as well as little-known tips and tricks to get ahead. For linters beginners, this presentation explains what they are, the benefit of their use, and the best way to introduce them into a workflow.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Dynamically instrumenting Go programs",
+      "presenter": "Jason Keene",
+      "start_time": "14:00",
+      "description": "Ever wanted to ask arbitrary questions about your program while it is running with minimal impact on performance? In this talk, we go beyond static instrumentation and look at specific techniques for gathering information about your programs so that you can understand what your gophers are up to!",
+      "tweeted": "yes"
+    },
+    {
+      "session": "How I write HTTP web services after eight years",
+      "presenter": "Mat Ryer",
+      "start_time": "14:55",
+      "description": "A look at how Mat Ryer builds web services after doing so for the past eight years. Extremely practical, tried and tested patterns that everybody can start using today.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Two Go programs, three different profiling techniques, in 50 minutes",
+      "presenter": "Dave Cheney",
+      "start_time": "14:55",
+      "description": "Go, being a relatively recent statically typed, compiled language, is known to produce efficient programs. But writing a program in Go is not sufficient for good performance.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "Tracking inter-process dependencies using static analysis",
+      "presenter": "Mike Seplowitz",
+      "start_time": "14:55",
+      "description": "Using a service-oriented architecture instead of a monolithic architecture adds flexibility but also increases complexity. How will we keep track of which parts of our system depend on each other? To help solve this problem, I've been working on a project to analyze Go code (using Go!) to detect inter-process dependencies in our system. In this talk, I'll give a brief introduction to the static analysis libraries I used and share a few tips about how to use them effectively. I'll discuss obstacles I encountered along the way and my attempts to overcome them.",
+      "tweeted": "yes"
+    },
+    {
+      "session": "What got us here, won't get us there",
+      "presenter": "Johnny Boursiquot",
+      "start_time": "16:25",
+      "description": "There's never been a better time to adopt Go. The language is attracting more newcomers every day and by all accounts, its community has a lot to do with it. If, however, we want to retain what makes Go special beyond the language itself, we, as a community, must recognize and amplify what makes us great and address what threatens our unity.",
+      "tweeted": "yes"
+    }
+  ]
+}
