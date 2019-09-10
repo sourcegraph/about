@@ -25,8 +25,7 @@ Here’s what the setup process will look like:
 
 What format is that code intelligence data in? We are using [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (Language Server Index Format), which is a graph of code intelligence information such as definitions, references, hover documentation, similar in spirit to [Kythe](https://kythe.io). The graph is comprised of vertices for each definition/reference/hover and edges that connect references to definitions.
 
-To learn more, check out our lightning talk about LSIF from GopherCon
-2019:
+To learn more, check out our lightning talk about LSIF from GopherCon 2019:
 
 [https://www.youtube.com/watch?v=fMIRKRj\_A88](https://www.youtube.com/watch?v=fMIRKRj_A88)
 
