@@ -7,7 +7,7 @@ tags: [
 ]
 slug: code-intelligence-with-lsif
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
-published: false
+published: true
 ---
 
 Since the [last code intelligence update](https://about.sourcegraph.com/blog/improving-language-support-in-2019), we shifted our efforts from improving language servers (which are difficult to deploy and scale) to building [basic-code-intel](https://github.com/sourcegraph/sourcegraph-basic-code-intel) (based on ctags and text search) in order to contribute to our early-2019 goal of increasing Sourcegraph adoption. Although basic-code-intel works out of the box, its limited analysis provides at best approximate and fuzzy code intelligence.
