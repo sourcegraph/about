@@ -1,0 +1,33 @@
+---
+title: 'Code intelligence with LSIF'
+author: 'Chris Wendt'
+publishDate: 2019-12-01T00:00-07:00
+tags: [
+  "blog"
+]
+slug: code-intelligence-with-lsif
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+published: false
+---
+
+Since the [last code intelligence update](https://about.sourcegraph.com/blog/improving-language-support-in-2019), we shifted our efforts from improving language servers (which are difficult to deploy and scale) to building [basic-code-intel](https://github.com/sourcegraph/sourcegraph-basic-code-intel) (based on ctags and text search) in order to contribute to our early-2019 goal of increasing Sourcegraph adoption. Although basic-code-intel works out of the box, its limited analysis provides at best approximate and fuzzy code intelligence.
+
+Now, we are working on a new way of providing code intelligence that’s both fast and precise. The idea is to use compiler frontends to precompute code intelligence data in a project-specific build environment then upload that data to Sourcegraph. This has a lot of benefits:
+
+  - Precision and correctness: code analysis is performed in the proper build environment for the project using the same compiler frontend as your normal build
+  - Fast: since the code intelligence data is precomputed, go to definition and find references are essentially table lookups
+  - Precedent: this is how the largest software companies provide code intelligence to their employees
+
+Here’s what the setup process will look like:
+
+  - Add a step to your CI that runs on each commit or daily (depending on the repository size)
+  - In that step, generate code intelligence data and upload it to Sourcegraph (this is similar to other build artifacts such as code coverage information)
+
+What format is that code intelligence data in? We are using [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (Language Server Index Format), which is a graph of code intelligence information such as definitions, references, hover documentation, similar in spirit to [Kythe](https://kythe.io). The graph is comprised of vertices for each definition/reference/hover and edges that connect references to definitions.
+
+To learn more, check out our lightning talk about LSIF from GopherCon
+2019:
+
+[https://www.youtube.com/watch?v=fMIRKRj\_A88](https://www.youtube.com/watch?v=fMIRKRj_A88)
+
+In addition to the existing LSIF exporters that Microsoft has created for [TypeScript](https://github.com/microsoft/lsif-node) and [Java](https://github.com/microsoft/lsif-java), in the few weeks that we’ve been working on LSIF support we created new LSIF exporters for [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp).
