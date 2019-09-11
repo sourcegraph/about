@@ -14,14 +14,14 @@ Since the [last code intelligence update](https://about.sourcegraph.com/blog/imp
 
 Now, we are working on a new way of providing code intelligence that’s both fast and precise. The idea is to use compiler frontends to precompute code intelligence data in a project-specific build environment and then upload that data to Sourcegraph. This has a lot of benefits:
 
-  - Precision and correctness: code analysis is performed in the proper build environment for the project using the same compiler frontend as your normal build.
-  - Fast: since the code intelligence data is precomputed, go to definition and find references are essentially table lookups.
-  - Precedent: this is how the largest software companies provide code intelligence to their employees.
+- Precision and correctness: code analysis is performed in the proper build environment for the project using the same compiler frontend as your normal build.
+- Fast: since the code intelligence data is precomputed, go to definition and find references are essentially table lookups.
+- Precedent: this is how the largest software companies provide code intelligence to their employees.
 
 Here’s what the setup process will look like:
 
-  - Add a step to your CI that runs on each commit or daily (depending on the repository size)
-  - In that step, generate code intelligence data and upload it to Sourcegraph (this is similar to other build artifacts such as code coverage information)
+- Add a step to your CI that runs on each commit or daily (depending on the repository size)
+- In that step, generate code intelligence data and upload it to Sourcegraph (this is similar to other build artifacts such as code coverage information)
 
 What format is that code intelligence data in? We are using [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (Language Server Index Format), which is a graph of code intelligence information such as definitions, references, hover documentation, similar in spirit to [Kythe](https://kythe.io). The graph is comprised of vertices for each definition/reference/hover and edges that connect references to definitions.
 
