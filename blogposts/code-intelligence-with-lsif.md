@@ -10,9 +10,9 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-Since the [last code intelligence update](https://about.sourcegraph.com/blog/improving-language-support-in-2019), we shifted our efforts from improving language servers (which are difficult to deploy and scale) to building [basic-code-intel](https://github.com/sourcegraph/sourcegraph-basic-code-intel) (based on ctags and text search) in order to contribute to our early-2019 goal of increasing Sourcegraph adoption. Although basic-code-intel works out of the box, its limited analysis provides at best approximate and fuzzy code intelligence.
+Since the [last code intelligence update](https://about.sourcegraph.com/blog/improving-language-support-in-2019), we have shifted our efforts away from improving language servers. We found that language servers were hard to develop due to the number of build and dependency systems per language, hard to deploy and connect to a Sourcegraph instance, and hard to make fast enough to meet our user's expectations. The Sourcegraph 3.0 release in February included [zero configuration code intelligence for the 20+ most popular languages](https://github.com/sourcegraph/sourcegraph-basic-code-intel) based on ctags and text search. This has provided a much better default experience for Sourcegraph customers, but there is one limitation: results are imprecise unless a customer configures a language server.
 
-Now, we are working on a new way of providing code intelligence that’s both fast and precise. The idea is to use compiler frontends to precompute code intelligence data in a project-specific build environment then upload that data to Sourcegraph. This has a lot of benefits:
+Now, we are working on a new way of providing code intelligence that’s both fast and precise. The idea is to use compiler frontends to precompute code intelligence data in a project-specific build environment and then upload that data to Sourcegraph. This has a lot of benefits:
 
   - Precision and correctness: code analysis is performed in the proper build environment for the project using the same compiler frontend as your normal build.
   - Fast: since the code intelligence data is precomputed, go to definition and find references are essentially table lookups.
