@@ -29,4 +29,8 @@ To learn more, check out our lightning talk about LSIF from GopherCon 2019:
 
 [https://www.youtube.com/watch?v=fMIRKRj\_A88](https://www.youtube.com/watch?v=fMIRKRj_A88)
 
-In addition to the existing LSIF exporters that Microsoft has created for [TypeScript](https://github.com/microsoft/lsif-node) and [Java](https://github.com/microsoft/lsif-java), in the few weeks that we’ve been working on LSIF support we created new LSIF exporters for [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp).
+We have found that developing LSIF indexers is much easier than language servers. A one-shot command line tool that runs in the proper build environment and writes data to file is simpler than implementing a long lived remote LSP server. In the few weeks that we’ve been working on LSIF support we have been able to create new LSIF exporters for [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp). Microsoft has also already created LSIF exporters for [TypeScript](https://github.com/microsoft/lsif-node) and [Java](https://github.com/microsoft/lsif-java).
+
+We are looking forward to working with customers to start producing LSIF data in their build pipelines so that they can enjoy the benefits of fast precise code intelligence.
+
+If you are interested to work on code intelligence at Sourcegraph, [we're hiring](https://hire.withgoogle.com/public/jobs/sourcegraphcom/view/P_AAAAAADAAADP_pY7jAAAXU?trackingTag=sourcegraphCodeIntelBlog)!
