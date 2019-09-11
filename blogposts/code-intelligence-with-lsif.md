@@ -14,9 +14,9 @@ Since the [last code intelligence update](https://about.sourcegraph.com/blog/imp
 
 Now, we are working on a new way of providing code intelligence that’s both fast and precise. The idea is to use compiler frontends to precompute code intelligence data in a project-specific build environment then upload that data to Sourcegraph. This has a lot of benefits:
 
-  - Precision and correctness: code analysis is performed in the proper build environment for the project using the same compiler frontend as your normal build
-  - Fast: since the code intelligence data is precomputed, go to definition and find references are essentially table lookups
-  - Precedent: this is how the largest software companies provide code intelligence to their employees
+  - Precision and correctness: code analysis is performed in the proper build environment for the project using the same compiler frontend as your normal build.
+  - Fast: since the code intelligence data is precomputed, go to definition and find references are essentially table lookups.
+  - Precedent: this is how the largest software companies provide code intelligence to their employees.
 
 Here’s what the setup process will look like:
 
