@@ -1,6 +1,6 @@
 ---
 title: "Strange Loop 2019 - Closing Keynote"
-description: "{description}"
+description: "London based recording artist Imogen Heap blurs the boundaries between pure art form and creative entrepreneurship. Writing and producing 4 solo albums, one as Frou Frou (with Guy Sigsworth), and collaborating with Jeff Beck, Mika and Josh Groban amongst others, Heap has penned tracks for movies, TV shows and produced the score for Harry Potter and the Cursed Child, winning the 'Outstanding Music in a Play' Drama Desk Award."
 author: Blogy McBlogerson
 authorUrl: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-16:30
@@ -12,13 +12,21 @@ heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
 published: false
 ---
 
-
+<div class="container p-0 liveblog-presenters">
+  <div class="row m-0">
+      <p class=" mr-12 m-0">
+        <span class="liveblog-presenters__name">Imogen Heap</span>
+        <a href="https://twitter.com/imogenheap" target="_blank" title="Twitter"><i class="fa fa-twitter pr-2"></i></a>
+        <a href="http://www.imogenheap.com/" target="_blank" title="Speaker's site"><i class="fa fa-globe pr-2"></i></a>
+      </p>
+  </div>
+</div>
 
 ---
 
 ## Overview
 
-{description}
+London based recording artist Imogen Heap blurs the boundaries between pure art form and creative entrepreneurship. Writing and producing 4 solo albums, one as Frou Frou (with Guy Sigsworth), and collaborating with Jeff Beck, Mika and Josh Groban amongst others, Heap has penned tracks for movies, TV shows and produced the score for Harry Potter and the Cursed Child, winning the 'Outstanding Music in a Play' Drama Desk Award.
 
 ---
 

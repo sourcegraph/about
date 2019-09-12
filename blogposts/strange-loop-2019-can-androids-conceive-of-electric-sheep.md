@@ -9,7 +9,7 @@ tags: [
 ]
 slug: strange-loop-2019-can-androids-conceive-of-electric-sheep
 heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
-published: true
+published: false
 ---
 
 <div class="container p-0 liveblog-presenters">
