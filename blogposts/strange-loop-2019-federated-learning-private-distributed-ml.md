@@ -1,7 +1,7 @@
 ---
 sessionId: 1
 title: "Strange Loop 2019 - Federated learning: private distributed ML"
-description: "Federated learning is a way to do machine learning when training data is partitioned between nodes that are either unable or unwilling to share it."
+description: "This talk will explain these ideas in more detail. I'll describe a specific instance of a federated learning algorithm (called federated averaging), and I'll explain the ways in which the real world full of malicious actors and distributed systems complicates the naive picture. I'll then talk about the research that is going on right now to harden security, reduce communication costs, and strengthen privacy guarantees."
 author: Blogy McBlogerson
 authorUrl: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-10:20
@@ -28,7 +28,7 @@ published: false
 
 ## Overview
 
-Federated learning is a way to do machine learning when training data is partitioned between nodes that are either unable or unwilling to share it.
+This talk will explain these ideas in more detail. I'll describe a specific instance of a federated learning algorithm (called federated averaging), and I'll explain the ways in which the real world full of malicious actors and distributed systems complicates the naive picture. I'll then talk about the research that is going on right now to harden security, reduce communication costs, and strengthen privacy guarantees.
 
 ---
 

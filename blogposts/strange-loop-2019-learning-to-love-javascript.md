@@ -1,7 +1,7 @@
 ---
 sessionId: 1
 title: "Strange Loop 2019 - Learning to Love JavaScript"
-description: "JavaScript is an imperfect programming language. It’s weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter?"
+description: "JavaScript is an imperfect programming language. It’s weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter? In this talk, I’ll argue that judging the merits of JavaScript solely as a programming language is missing the point, and to accurately weigh its place in the world, you must consider JavaScript beyond types, scope, and syntax. You’ll walk away with a deeper appreciation for the feat of human cooperation that is the World Wide Web, and how JavaScript became one of the Web’s most important threads."
 author: Blogy McBlogerson
 authorUrl: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-11:20
@@ -28,7 +28,7 @@ published: false
 
 ## Overview
 
-JavaScript is an imperfect programming language. It’s weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter?
+JavaScript is an imperfect programming language. It’s weakly-typed, scoping rules and type coercion can make difficult-to-diagnose bugs, and cross-browser compatibility sometimes feels like a pipe dream. But does it matter? In this talk, I’ll argue that judging the merits of JavaScript solely as a programming language is missing the point, and to accurately weigh its place in the world, you must consider JavaScript beyond types, scope, and syntax. You’ll walk away with a deeper appreciation for the feat of human cooperation that is the World Wide Web, and how JavaScript became one of the Web’s most important threads.
 
 ---
 

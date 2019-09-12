@@ -1,7 +1,7 @@
 ---
 sessionId: 1
 title: "Strange Loop 2019 - Automating Operations of a Global CDN"
-description: "Aspects of the Netflix growth story are very visible - the transition from physical media delivery to digital streaming, or from a domestic focus to a global one. However, there are some transitions that may be less noticeable."
+description: "Aspects of the Netflix growth story are very visible - the transition from physical media delivery to digital streaming, or from a domestic focus to a global one. However, there are some transitions that may be less noticeable. Through this talk, you will receive insight into how we have streamlined our automation story. How we actively transitioned from large monoliths to a more decomposed, scalable set of microservices we refer to as the Open Connect Administration Platform. You will be walked through our automation journey - our history, our future, the pitfalls we have encountered and the lessons we have learned along the way."
 author: Blogy McBlogerson
 authorUrl: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-14:30
@@ -27,7 +27,7 @@ published: false
 
 ## Overview
 
-Aspects of the Netflix growth story are very visible - the transition from physical media delivery to digital streaming, or from a domestic focus to a global one. However, there are some transitions that may be less noticeable.
+Aspects of the Netflix growth story are very visible - the transition from physical media delivery to digital streaming, or from a domestic focus to a global one. However, there are some transitions that may be less noticeable. Through this talk, you will receive insight into how we have streamlined our automation story. How we actively transitioned from large monoliths to a more decomposed, scalable set of microservices we refer to as the Open Connect Administration Platform. You will be walked through our automation journey - our history, our future, the pitfalls we have encountered and the lessons we have learned along the way.
 
 ---
 

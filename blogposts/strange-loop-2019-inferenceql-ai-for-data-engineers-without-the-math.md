@@ -1,7 +1,7 @@
 ---
 sessionId: 1
 title: "Strange Loop 2019 - InferenceQL: AI for data engineers, without the math"
-description: "Can we empower data engineers to use AI to explore, monitor, clean, and predict data streams, without having to learn math?"
+description: "Can we empower data engineers to use AI to explore, monitor, clean, and predict data streams, without having to learn math? InferenceQL was made by some of the same people behind BayesDB and Empirical Systems, first presented at Strange Loop in 2015. Unlike BayesDB, InferenceQL is not a database, but instead can be embedded alongside data tables, data streams, and client-side web applications. We are just starting to seek external beta testers, contributors, and volunteers."
 author: Blogy McBlogerson
 authorUrl: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-15:30
@@ -27,7 +27,7 @@ published: false
 
 ## Overview
 
-Can we empower data engineers to use AI to explore, monitor, clean, and predict data streams, without having to learn math?
+Can we empower data engineers to use AI to explore, monitor, clean, and predict data streams, without having to learn math? InferenceQL was made by some of the same people behind BayesDB and Empirical Systems, first presented at Strange Loop in 2015. Unlike BayesDB, InferenceQL is not a database, but instead can be embedded alongside data tables, data streams, and client-side web applications. We are just starting to seek external beta testers, contributors, and volunteers.
 
 ---
 

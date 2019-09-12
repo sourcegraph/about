@@ -1,7 +1,7 @@
 ---
 sessionId: 1
 title: "Strange Loop 2019 - The Idea Becomes a Machine That Makes the Art That..."
-description: "...Makes a Machine That Makes the Art"
+description: "Sol LeWitt was a prolific American artist credited with founding Conceptual Art and Minimalism. This talk is inspired by his series of participatory, conceptual art called, \"Wall Drawings\". The Wall Drawings are large-scale installations that grow from a set of simple written instructions by Sol LeWitt himself."
 author: Blogy McBlogerson
 authorUrl: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-13:30
@@ -30,7 +30,7 @@ published: false
 
 ## Overview
 
-...Makes a Machine That Makes the Art
+Sol LeWitt was a prolific American artist credited with founding Conceptual Art and Minimalism. This talk is inspired by his series of participatory, conceptual art called, \"Wall Drawings\". The Wall Drawings are large-scale installations that grow from a set of simple written instructions by Sol LeWitt himself.
 
 ---
 
