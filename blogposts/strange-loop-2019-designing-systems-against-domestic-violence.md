@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Designing Systems Against Domestic Violence"
 description: "In a country where 3 women are murdered every day by their male partners, thinking about domestic safety isn't an edge case. How can keeping people safe be built into our products? This talk will cover real-world situations, their digital solutions, and how to prioritize safety."
 author: Blogy McBlogerson

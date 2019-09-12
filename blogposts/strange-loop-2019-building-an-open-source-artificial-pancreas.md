@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Building an Open Source Artificial Pancreas"
 description: "Have you ever thought about what open source software or hardware could achieve? What if it could help improve people's lives by solving some of their health problems?"
 author: Blogy McBlogerson

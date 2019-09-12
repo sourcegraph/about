@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Networking and Go: An Engineer's Journey"
 description: "My foray into Go began a few years ago when I started working at DigitalOcean. While building an abstraction layer on top of Kubernetes and familiarizing myself with the language, I began to love it. Syntactically simple, with amazing concurrency primitives and a wonderful community, Go was an excellent choice for a cloud-hosting company with a variety of low-level, server-side microservices."
 author: Blogy McBlogerson

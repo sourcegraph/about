@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Improving law interpretability using NLP"
 description: "The process of legal reasoning is heavily reliant on information stored in text, but while legal texts are generally easily accessible, their interpretation often isn't straight forward, making the understanding of the law effectively inaccessible to the general public."
 author: Blogy McBlogerson

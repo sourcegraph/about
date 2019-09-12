@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Community Driven Development"
 description: "As developers who want to lend our skills to support organizations fighting for social justice, how do we build effective, impactful collaborations with organizations and make the resulting open source projects sustainable? Over two years and 1,062 commits, we'll follow the evolution of an open source project built with and for New Sanctuary Coalition (NSC), an NYC immigrant rights organization, to meet exponentially growing demand for their immigration court accompaniment program, pro se legal clinic, and anti-detention program following the 2016 election."
 author: Blogy McBlogerson

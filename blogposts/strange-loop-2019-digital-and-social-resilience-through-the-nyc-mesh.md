@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Digital and Social Resilience through the NYC Mesh"
 description: "NYC Mesh is a community-run mesh network that helps over three-hundred homes connect to high-speed Internet; making it one of the largest mesh networks in the world. We work with anyone interested in reclaiming ownership over their Internet, but specifically engage with underserved populations including residents in low-income housing and community centers. Built by a combination of consumer-grade materials and donated fiber-optic cable, this network gives people ownership and control over their Internet usage."
 author: Blogy McBlogerson

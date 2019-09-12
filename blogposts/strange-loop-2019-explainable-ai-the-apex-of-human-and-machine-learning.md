@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Explainable AI: the apex of human and machine learning"
 description: "Black Box AI technologies like Deep Learning have seen great success in domains like ad delivery, speech recognition, and image classification; and have even defeated the world's best human players in Go, Starcraft, and DOTA. As a result, adoption of these technologies has skyrocketed. But as employment of Black Box AI increases in safety-intensive and scientific domains, we are learning hard lessons about their limitations: they go wrong unexpectedly and are difficult to diagnose."
 author: Blogy McBlogerson

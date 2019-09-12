@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - CSS Algorithms"
 description: "Wait...CSS algorithms? Can one really write algorithms in CSS? Absolutely."
 author: Blogy McBlogerson

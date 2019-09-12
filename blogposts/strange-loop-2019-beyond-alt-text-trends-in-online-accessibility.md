@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Beyond Alt-Text: Trends in Online Accessibility"
 description: "If you're like the 2016 version of me, then you think you have a decent handle on web accessibility. You put alt attributes on all your images (though you don't give much thought to the actual text) and you make sure your sites can be used with a keyboard (except for overlays sometimes). Then the day comes when you're given a 100 page accessibility audit from a client and a deadline for all issues to be fixed. What is high contrast mode, you ask yourself, and why does it matter if these links are implemented in a list?"
 author: Blogy McBlogerson

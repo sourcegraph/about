@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Alda's dynamic relationship with Clojure"
 description: "Alda is a music programming language that provides a way to describe a musical composition as a text document. Its syntax is easy to use and well-suited for both musicians with little-to-no programming knowledge and programmers who lack music theory knowledge. Alda and Clojure have a complex relationship that is at the center of this talk. I will tell the story of how the two became intertwined and my current effort to disentangle them. Interesting topics that will be discussed along the way include ZeroMQ, Open Sound Control (OSC), and the creation of native executables."
 author: Blogy McBlogerson

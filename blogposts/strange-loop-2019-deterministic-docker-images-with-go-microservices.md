@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Deterministic Docker Images with Go Microservices"
 description: "At Samsara, we continuously deploy more than a hundred different microservices, all of which we wanted to do as easily and automatically as possible. We wanted to make this even better by bringing our deploy times to under 20 minutes while minimizing disruption, as this would also mean that we would start to deploy nearly our entire stack about 3 times a hour. Our solution to that: deterministically building our services in our deployed images to minimize time spent building services, network costs with moving images around, but most importantly, being able to automatically figure out which of our services have actually changed and only deploying those."
 author: Blogy McBlogerson

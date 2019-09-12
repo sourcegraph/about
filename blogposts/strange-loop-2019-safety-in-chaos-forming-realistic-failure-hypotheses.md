@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Safety in Chaos: Forming Realistic Failure Hypotheses"
 description: "Subjecting systems to failures is supposed to increase confidence in their stability. But why? How do you form failure hypotheses? How do you reason about their safety? Why should your organization listen to you and invest in testing your failure hypotheses?"
 author: Blogy McBlogerson

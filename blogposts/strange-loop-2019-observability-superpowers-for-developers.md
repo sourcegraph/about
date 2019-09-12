@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Observability: Superpowers for Developers"
 description: "Who wants to spend time dreaming about the ability to leap tall buildings with a single bound, when we can recast stories we live day to day as powers of our own... and improve our own lives in a practical way? When observability is folded into the development process itself, it represents the potential for a beautifully virtuous cycle: production stops being just where our development code runs into issues, and it becomes where part of our development process lives."
 author: Blogy McBlogerson

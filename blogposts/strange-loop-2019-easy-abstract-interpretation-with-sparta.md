@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Easy Abstract Interpretation with SPARTA"
 description: "Using abstract interpretation to build a scalable tool from scratch is a daunting engineering task that generally requires a protracted development effort. To streamline that process, we built (SPARTA)1, a C++ library of components for building high-performance static analyzers that can run in a production environment. SPARTA provides the building blocks so an engineer can focus solely on the logic that extracts the desired information from the program. The library ensures that the resulting analysis is sound, efficient, and scalable."
 author: Blogy McBlogerson

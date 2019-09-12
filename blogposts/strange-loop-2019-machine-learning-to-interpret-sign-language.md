@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Machine learning to interpret sign language"
 description: "Instead of just teaching Deaf people how to get along with the rest of the world and understand them, why don't we make an effort to understand them and their language via technology?! In this talk we will learn how to use machine learning to interpret sign language."
 author: Blogy McBlogerson

@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Assistive Augmentation: Lip Reading with AI"
 description: "In the US alone, approximately 3% of the population (10 million) are either deaf or have moderate to profound hearing loss. This is 3 times as many people than those in wheelchairs yet reasonable disability accommodations for the deaf or hearing impaired only require an ASL (American Sign Language) interpreter in certain circumstances such in official political, legal, education, law enforcement, and employment events and situations. The problem with this is that only a fraction of the functionally deaf (250-500 thousand) speak ASL (also called \"signers\") and situations that have accommodations are few and far in-between anyway so how can the hearing impaired engage with events like the rest of us and especially those that don't have interpreters such as meetups, conferences, and debates."
 author: Blogy McBlogerson

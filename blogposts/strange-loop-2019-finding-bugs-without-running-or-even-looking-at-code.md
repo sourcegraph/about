@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Finding bugs without running or even looking at code"
 description: "What if you could find complex bugs in systems without ever having looked at any of the code, without running the code, without cloning the code, or even knowing what language the code is written in or where its git repo lives? What if you could validate the correctness of an architectural proposal before writing code?"
 author: Blogy McBlogerson

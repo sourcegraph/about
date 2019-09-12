@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Probabilistic scripts for automating common-sense tasks"
 description: "As engineers, we love automating tedious tasks. But when those tasks require common-sense reasoning, automation can be difficult. Consider, for example, cleaning a messy dataset-full of typos, NULL values, numbers in the wrong units, and other problems. People have little trouble fixing these errors by hand, but it can be difficult to express the rules for doing so programmatically."
 author: Blogy McBlogerson

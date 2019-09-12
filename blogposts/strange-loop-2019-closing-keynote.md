@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Closing Keynote"
 description: "{description}"
 author: Blogy McBlogerson

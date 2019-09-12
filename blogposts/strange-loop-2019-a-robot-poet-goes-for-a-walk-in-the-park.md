@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - A Robot Poet Goes for a Walk in the Park"
 description: "Designing complex, dynamic systems that can produce interesting and aesthetically pleasing art is a very hard problem to solve, even when you're just talking about something as focused as a Twitter bot. What happens when you try to make procgen art that doesn't just exist on the Internet, but actually lives in and interacts with the real world?"
 author: Blogy McBlogerson

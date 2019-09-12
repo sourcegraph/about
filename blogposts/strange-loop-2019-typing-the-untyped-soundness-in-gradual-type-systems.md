@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Typing the Untyped: Soundness in Gradual Type Systems"
 description: "Recent years have seen an explosion of gradual type systems and superset languages that add types to previously untyped languages: TypeScript & Flow for Javascript, MyPy and Pyre for Python, Hack and PHP7 for PHP, Sorbet for Ruby, and many more. Implementing these type systems involves making tradeoffs between soundness (catching as many errors as possible) and completeness (not rejecting valid programs) that fundamentally impact the usability and usefulness of the type system."
 author: Blogy McBlogerson

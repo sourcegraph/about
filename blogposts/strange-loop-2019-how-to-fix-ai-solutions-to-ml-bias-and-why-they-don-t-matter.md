@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - How to Fix AI: Solutions to ML Bias (And Why They Don't Matter)"
 description: "Bias in machine learning is a Problem. This is common knowledge for many of us now, and yet our algorithms continue to operate unfairly in the real world, perpetuating structural inequality along lines of class and color. After all, \"better training data\" is not so easy to get our hands on, right?"
 author: Blogy McBlogerson

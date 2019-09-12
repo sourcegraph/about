@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - A better story for Kubernetes secrets"
 description: "Secrets are a key pillar of Kubernetes, but anyone with access to etcd can all the plaintext values! Attendees will learn techniques for securing Kubernetes secrets including encryption, KMS plugins, and tools like HashiCorp Vault, and the tradeoffs of each approach to better secure their clusters."
 author: Blogy McBlogerson

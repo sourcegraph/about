@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Why do tree ensembles work?"
 description: "Ensembles of decision trees (e.g., the random forest and AdaBoost algorithms) are powerful and well-known methods of classification and regression. This talk will survey work aimed at understanding the statistical properties of decision tree ensembles, with the goal of explaining why they work. After sketching the algorithms, we will give an initial explanation for their effectiveness via generic arguments (bias-variance decomposition, Hoeffding's inequality), then proceed to more detailed topics (the interpretation of random forests as kernel machines, the role of the margin, interpolation). The audience is expected to have some experience with supervised learning and statistical arguments."
 author: Blogy McBlogerson

@@ -1,5 +1,4 @@
 ---
-sessionId: 1
 title: "Strange Loop 2019 - Pattern Matching @ Scale Using Finite State Machine"
 description: "Working with data often means trying to locate data that fits patterns, akin to finding a needle in a haystack. When we add big data from non homogenous sources to the mix, this problem becomes exponentially complex. One of the use cases at Netflix, is about improving the Sign Up experience through experimentation. Being able to find user journeys across billions of events; that follow certain patterns, is a key insight into simplifying the sign up process."
 author: Blogy McBlogerson
