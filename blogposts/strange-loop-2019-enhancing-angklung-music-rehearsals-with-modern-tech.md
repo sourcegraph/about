@@ -29,60 +29,95 @@ Angklung is a traditional musical instrument from Indonesia. This instrument has
 
 ---
 
-<!-- My Stuff Goes Here -->
+Trapsilo comes from Bandung, Indonesia. The 3rd largest city in Indonesia.
 
+![Map of Indonesia](/blog/strange-loop-2019/angklung/Indonesia_map.png)
 
+![Map of Bandung, Indonesia](/blog/strange-loop-2019/angklung/Bandung-Indonesia_map.png)
 
-Trapsilo has played Angklung for over 10 years and has played in Italy, Greece, Maylasia and Singapore. Trapsilo has also conducted several concerts and performances.
+Trapsilo has played Angklung for over 10 years and has played in Italy, Greece, Maylasia and Singapore and has also conducted several concerts and performances.
+
+He has been programming far longer than he has been playing Angklung. Naturally he though of programming ways to solve the problems his groups had when doing performances.
 
 ## What is an Angklung?
 
+They are made of bamboo tubes. Larger Angklung produce lower notes and smaller Angklung produce smaller notes.
+
 ![Angklung Instrument](/blog/strange-loop-2019/angklung/angklung.png)
+
+To visualize Angklung pitches look at a keyboard. Each Angklung represents one key on a piano keyboard.
+
 ![Angklung visualize on Piano](/blog/strange-loop-2019/angklung/angklung-piano.png)
 
-## Where is it played?
+## How is it played?
 
-![Map of Indonesia](/blog/strange-loop-2019/angklung/Indonesia_map.png)
-![Map of Bandung, Indonesia](/blog/strange-loop-2019/angklung/Bandung-Indonesia_map.png)
-
-## What are the difficulties playing an Angklung?
-
-Multiple Angklung are assigned to each person in order to cover all of the pitches required for a performance. There are some difficulties in deciding how to distribute Angklungs among performers.
-
-Performers cannot be assigned Angklungs that play conflicting notes in the performance. Also the size difference of the Angklungs needs to be manageable by the performer.
+An Angklung performance is done by many performers. Each performer plays multiple Angklung.
 
 ![An Angklung Performance](/blog/strange-loop-2019/angklung/angklung-performance.png)
 
-Traditional notation is not used to dictate an Angklung performance. A cipher notation is used instead.
+### Angklung Cipher Notation
+
+Traditional western music notation cannot be used. Angklung players read a Cipher Notation. It is read it left to right, top to bottom.
 
 ![Angklung Notation](/blog/strange-loop-2019/angklung/angklung-notation.png)
+
+Angklung Cipher notation encodes a lot of information like key signature, octave, absolute and relative notes.
+
+## What are the difficulties of an Angklung performance?
+
+There are more Angklung than players, so how do we distribute the Angklung among the performers?
+
+### Can We Distribute Angklung randomly?
+
+No. There are problems with this naive approach.
+
+Multiple Angklung are assigned to each person in order to cover all of the pitches required for a performance.
+
+Performers cannot play two Angklung of a different pitch at the same time.
+
+Each player will want to participate evenly. They will not want to just play one note.
+
+A player assigned a bunch of small Angklung will have a hard time playing them. Likewise a player assigned a bunch of large Angklung will also have difficulty. The players need a good range of Angklung assigned to them.
+
+## The Solution
+
+Let's program it.
+
+Since this is an optimization problem, there is no one right answer. There are multiple acceptable solutions.
+
+The Angklung Cipher notation is a table like a spreadsheet. So we can put Cipher Notation into Excel.
+
+![Angklung Notation In SpreadSheet](/blog/strange-loop-2019/angklung/angklung-spreadsheet.png)
+
+What kind of algorithm could help us distribute the instruments better among the performers?
+
+### Algorithm Goals
+
+What is the optimal distribtion of Angklung among players?
+
+1. **Minimize** collisions (2 players can't play the same note)
+1. **Maximize** amount of player's time (don't want to leave someone out :( )
+1. Good balance of size of Angklungs
 
 
 ## The Algorithm
 
-What kind of algorithm could help us distribute the instruments better among the performers?
-
-![Angklung Notation In SpreadSheet](/blog/strange-loop-2019/angklung/angklung-spreadsheet.png)
-
-Angklung Cipher Notation is basically a spreadsheet
-
-
-
-### Algorithm Goals
-
-- **Minimize** collisions
-- **Maximize** amount of player's time
-- Good balance of size of Angklungs
-
-
-
-### Implementation
-
 - Read in the spreadsheet in
-- Compute note collisions in the piece
-- Compute player time (don't want to leave someone out :( )
+- Compute note collisions in the piece (build a collision table)
+- Compute player time 
 - Compute Angklung size distribution
 
+Use the collision table to assign a weight to the Angklung.
+
+Decrease the weight based on the play time.
+
+If a player already has a big Angklung, don't give that player a big one.
+
+### Do we consider the strength of the Angklung player?
+
+Player ability is hard to quantify. Initial implementation took this into account but was later abandoned.
+
+## Implementation
 
 ### Load Excel SpreadSheet
 
@@ -100,7 +135,6 @@ for row in wb.active.rows:
     score[internal_row] += new_row
     internal row += 1 
 ```
-
 
 ### Calculate Collision Table
 
@@ -135,9 +169,7 @@ def calculate_collision_table(score):
         norm_collision_table[a_pair] = collision_table[a_pair] / max_collision 
 
     return norm_collision_table 
-
 ```
-
 
 ### Calculate Play Time
 
@@ -210,5 +242,4 @@ def generate_distribution(play_time, collision_table, num_players, num_each_angk
                     for i, angklungs in distribution.items()}
     return distribution
 ```
-
 
