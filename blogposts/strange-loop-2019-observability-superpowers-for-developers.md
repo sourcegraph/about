@@ -36,13 +36,13 @@ Christine Yen’s talk took inspiration from the Marvel Cinematic Universe (with
 
 Christine is the co-founder of honeycomb.io, a company that practices what they preach. She started with a brief survey of the room to get a sense of who identifies as “ops” and who identifies as “developer”. She is firmly in the developer camp (and delights in it). 
 
-As part of the exposition, her early career included joy at being a fast developer. WRITE-TEST-COMMIT! It was some time later she met her first Ops person and started to understand her development cycle included truly impactful changes being pushed to production, which the ops team had to deal with. 
+As part of the exposition, her early career included glee at being a fast developer. WRITE-TEST-COMMIT! It was some time later she met her first Ops person and started to understand how her cycle of development actually included debugging truly impactful changes pushed to production, which the ops team had to deal with. 
 
-Through continued partnership with Ops, Christine learned about taking responsibility for the changes she made, rather than giving the auto-response “it worked on my machine”. A February 2019 Medium post by Subbu Allamaraju at Expedia [https://m.subbu.org/incidents-trends-from-the-trenches-e2f8497d52ed](https://m.subbu.org/incidents-trends-from-the-trenches-e2f8497d52ed) helps show the reality that change in production lead to production incidents. Allamaraju analyzed incident data and provided the following insight: “Observation 1: Change is the most common trigger” (not root cause, actual trigger of an incident). A change could be any number of things: automated ci/cd releases, partially automated legacy deploys, manual changes, config updates, and/or experimental changes like A/B tests. 
-
-If the the first wave in getting dev and ops to work better together was teaching Ops to develop, the second wave is to teach devs to own their code all the way into production. Observability as defined on Wikipedia is “understanding the behavior of a system based on knowledge of its external outputs.” As simple yet rigid monolith apps are replaced with flexible yet complex collections of services, Observability is the bridge to continue to blur the line between DEV and OPS to create positive software outcomes for everyone. 
+Through continued partnership with Ops, Christine learned about taking responsibility for the changes she made, rather than giving the auto-response “it worked on my machine”. A February 2019 Medium post by Subbu Allamaraju at Expedia ([https://m.subbu.org/incidents-trends-from-the-trenches-e2f8497d52ed](https://m.subbu.org/incidents-trends-from-the-trenches-e2f8497d52ed)) helps show the reality that change in production lead to production incidents. Allamaraju analyzed incident data and provided the following insight: “Observation 1: Change is the most common trigger” (not root cause, actual trigger of an incident). A change could be any number of things: automated ci/cd releases, partially automated legacy deploys, manual changes, config updates, and/or experimental changes like A/B tests. 
 
 > Observability: "What is my software doing, and why is it behaving that way?" ~ Christine Yen
+
+If the the first wave in getting dev and ops to work better together was teaching Ops to develop, the second wave is to teach devs to own their code all the way into production. Observability as defined on Wikipedia is “understanding the behavior of a system based on knowledge of its external outputs.” As simple yet rigid monolith apps are replaced with flexible yet complex collections of services, Observability is the bridge to continue to blur the line between DEV and OPS to create positive software outcomes for everyone. 
 
 ## Character Development 
 
@@ -62,13 +62,13 @@ Items 3, 4, and 6 in the list above are generally agreed to be "testing" and lea
 
 _Note from Rainya: My favorite use of American pop-culture reference material in the whole presentation was when Christine used Meeko (the racoon from the animated film Pocahontas) to illustrate the "expected" outcome, and then Rocket (the racoon from Guardians of the Galaxy), for the "actual" outcome._
 
-As a real world example of the value of including Observability in software development, @ceejbbot recently posted a thread about how her team  prioritized observability, leading to the direct quote “it no longer feels like a scary fucking conundrum” in regards to performance problems they were experiencing. [https://threader.app/thread/1169408562855940097](https://threader.app/thread/1169408562855940097)
+As a real world example of the value of including Observability in software development, @ceejbbot recently posted a thread about how her team  prioritized observability, leading to the direct quote “it no longer feels like a scary fucking conundrum” in regards to performance problems they were experiencing. ([https://threader.app/thread/1169408562855940097](https://threader.app/thread/1169408562855940097))
 
 By folding Observability into the development process, we create a virtuous cycle that shortens the feedback loop from production to the developer. Adding “Observe” in the development cycle is more than a set of tools or a set of data. It is also about process and the culture of a team practicing looking through the code together. 
 
 ## Training Montage 
 
-> “Having Thor’s hammer doesn’t make you Thor.” ~ hristine Chen 
+> “Having Thor’s hammer doesn’t make you Thor.” ~Christine Chen 
 
 ### Teach Prod Tools to Speak Dev
 
@@ -83,12 +83,14 @@ By folding Observability into the development process, we create a virtuous cycl
   - Understanding the nouns that matter and also have high-cardinality data is important to being able to slice and dice what is happening 
   - i.e. “build_ID” matters day to day for a developer to understand change impact. Has it shipped? Where in the process is it? 
 
-**Instrumentation sould evolve alongside code**
+**Instrumentation should evolve alongside code**
+
   - Instrumentation is another form of expressing what code is doing 
   - Like docs and tests, it should be updated whenever changes are made
 - All of this leads to being more comfortable understanding what is happening in production 
 
 **Start with the familiar**
+
   -	Tracing is one of most friendly options for developers which describes workflows that feel familiar and is is not just for distributed systems (can help monoliths and single services, too)
   -	Tracing is like “Chrome dev tools for now-browser software!” that allows you to see what’s happening in the wild of production 
   -	Groups logs can form the basis for a trace
@@ -99,7 +101,7 @@ By folding Observability into the development process, we create a virtuous cycl
 
 **Know WHAT code to write**
 
--	Users complain something slow… what’s slow? For who? When?
+-	Users complain something is slow… what’s slow? For who? When?
 -	You can connect a dev profiler and try to recreate, but with data streaming from production, you just go there for the answers on what code is acting up.
 -	You can dig into what’s really happening, starting with a high level signal 
 -	Zoom in, remove the noise, zoom in further, find an actual example, iterate on the resolution
