@@ -90,14 +90,14 @@ So what do Jon and Jeremy suggest? A custom temporal view with full control.
 
 They discuss a case study which is similar to the enterprise example described above.
 
-![Case study: transactions in a global enterprise][/blog/strange-loop-2019/temporal-arch-img2.jpg]
+![Case study: transactions in a global enterprise]()/blog/strange-loop-2019/temporal-arch-img2.jpg)
 
 The diagram above shows events from multiple timezones flowing into the same event stream.
 
 To add bitemporality to the events, JUXT used RocksDB which is a robust key-value store capable of handling petabytes of data.
 They created a key-value pair for ValidTime and TransactionTime (see IndexB in the image below).
 
-![RocksDB implementation for bitemporality][/blog/strange-loop-2019/temporal-arch-img1.jpg]
+![RocksDB implementation for bitemporality]()/blog/strange-loop-2019/temporal-arch-img1.jpg)
 
 ValidTime is flexible which is why you need TransactionTime to tie it to something that is queryable and
 IndexC is for joins because otherwise they could not do joins between IndexB & the value they needed to tie to ValidTime and TransactionTime
@@ -119,7 +119,7 @@ The operations supported on Crux are
  - EVICT
  - CAS: stands for Compare and Swap and is used to ensure that the data in a document/entity is what you think it is before adding a new version, or else abort the transaction.
 
-![Crux Architecture][/blog/strange-loop-2019/temporal-arch-img-3.png]
+![Crux Architecture](/blog/strange-loop-2019/temporal-arch-img-3.png)
 
 Using a separate topic for documents allows for compaction to remove duplicates since the ID is the hash of the document.
 Crux nodes ingest data from the event log and index transactions and documents into a key-value store such as RocksDB or LMDB  which both serve as local document stores and bitemporal indexes for Crux's graph query. Jeremy mentioned that as an index, LMDB was more performant than RocksDB.
