@@ -44,7 +44,7 @@ When looking for topics, Sol LeWitt is the first person who came to mind.
 Sol LeWitt was an artists who lived from 1928 - 2007. He was a founder of the minimalist and conceptual art movements. He was known in particular for his Wall Drawings, whose titles are actually the instructions for generating the drawing. LeWitt didn't usually execute the drawing himself; instead they were done by a large team of assistants.
 
 
-## Wall Drawings and The Idea That Creates The Machine
+## Wall Drawings And The Idea That Creates The Machine
 
 Christine and Jonathon feel like these wall drawings are a perfect example of a wholly encapsulated system. They contain all the instructions needed to install themselves, and you can think of their titles as psuedocode for art. These simple instructions can create a beautiful array of generative works, where the interactions between the drafters and the physical wall it's installed on have meaningful affects on the piece. LeWitt had the idea that lines could be drawn by anyone anywhere, within the bounds of the instruction, and the idea was still true.
 
