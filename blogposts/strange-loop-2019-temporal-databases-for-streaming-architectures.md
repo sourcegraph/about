@@ -90,14 +90,14 @@ So what do Jon and Jeremy suggest? A custom temporal view with full control.
 
 They discuss a case study which is similar to the enterprise example described above.
 
-![Case study: transactions in a global enterprise](/blog/strange-loop-2019/temporal-arch-img2.jpg)
+![Case study: transactions in a global enterprise](/blog/strange-loop-2019/temporal-arch-img-2.jpg)
 
 The diagram above shows events from multiple timezones flowing into the same event stream.
 
 To add bitemporality to the events, JUXT used RocksDB which is a robust key-value store capable of handling petabytes of data.
 They created a key-value pair for ValidTime and TransactionTime (see IndexB in the image below).
 
-![RocksDB implementation for bitemporality](/blog/strange-loop-2019/temporal-arch-img1.jpg)
+![RocksDB implementation for bitemporality](/blog/strange-loop-2019/temporal-arch-img-1.jpg)
 
 ValidTime is flexible which is why you need TransactionTime to tie it to something that is queryable and
 IndexC is for joins because otherwise they could not do joins between IndexB & the value they needed to tie to ValidTime and TransactionTime
