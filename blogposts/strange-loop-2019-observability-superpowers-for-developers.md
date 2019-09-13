@@ -1,19 +1,35 @@
-@@ -1,8 +1,8 @@
 ---
 title: "Strange Loop 2019 - Observability: Superpowers for Developers"
 description: "Who wants to spend time dreaming about the ability to leap tall buildings with a single bound, when we can recast stories we live day to day as powers of our own... and improve our own lives in a practical way? When observability is folded into the development process itself, it represents the potential for a beautifully virtuous cycle: production stops being just where our development code runs into issues, and it becomes where part of our development process lives."
 author: Blogy McBlogerson
 authorUrl: https://heresblogy.com/
-author: Rainya Mosher
-authorUrl: https://www.linkedin.com/in/rainyamosher/
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop
-@ -30,7 +30,132 @@ Who wants to spend time dreaming about the ability to leap tall buildings with a
+]
+slug: strange-loop-2019-observability-superpowers-for-developers
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
+published: false
+---
+
+<div class="container p-0 liveblog-presenters">
+  <div class="row m-0">
+      <p class=" mr-12 m-0">
+        <span class="liveblog-presenters__name">Christine Yen</span>
+        <a href="https://twitter.com/cyen" target="_blank" title="Twitter"><i class="fa fa-twitter pr-2"></i></a>
+        <a href="https://github.com/christineyen" target="_blank" title="GitHub"><i class="fa fa-github pr-2"></i></a>
+      </p>
+  </div>
+</div>
 
 ---
 
-AWESOME LIVEBLOG CONTENT HERE!
+## Overview
+
+Who wants to spend time dreaming about the ability to leap tall buildings with a single bound, when we can recast stories we live day to day as powers of our own... and improve our own lives in a practical way? When observability is folded into the development process itself, it represents the potential for a beautifully virtuous cycle: production stops being just where our development code runs into issues, and it becomes where part of our development process lives.
+
+---
+
 Christine Yen’s talk took inspiration from the Marvel Cinematic Universe (with a small dabble into DC Justice League towards the end to reference the broody Batman) to explain to both Devs and Ops the importance of shifting the production feedback loop all the way left into the _developer’s_ hands. With the right set of tools and some cultural willingness to change, Observability provides the entire team with quantitative data straight from the real world, making it the latest superpower for developers to harness in the ever-changing, software-focused world we work in. 
  
 #Intro Sequence: Exposition
@@ -52,7 +68,7 @@ By folding Observability into the development process, we create a virtuous cycl
 
 #Training Montage 
 
->>“Having Thor’s hammer doesn’t make you Thor.” ~ Christine Chen 
+>“Having Thor’s hammer doesn’t make you Thor.” ~ Christine Chen 
 
 ##Teach production tools to speak dev
 
@@ -77,7 +93,7 @@ By folding Observability into the development process, we create a virtuous cycl
   -	Tracing is like “Chrome dev tools for now-browser software!” that allows you to see what’s happening in the wild of production 
   -	Groups logs can form the basis for a trace
 
->>"Tracing happens when logs grow up." ~ Christine Yen
+>"Tracing happens when logs grow up." ~ Christine Yen
 
 ##Discovering new powers
 
@@ -96,7 +112,7 @@ By folding Observability into the development process, we create a virtuous cycl
 -	Instrumentation is like adding lightweight debug statements in production 
 -	Allows us to understand in real time with flexibility
 -	Is an edge case a true edge or is a normal behavior for the general user population we just didn’t anticipate? 
--	Yes, this overlaps into the domain of _product managers_ who figure out how users behave. This is often qualitative data from customer discussions and intuition. Instrumentation gives quantitative data developers can use to confirm or counter the intuition of their product team. 
+-	Yes, this overlaps into the domain of _product managers_ who figure out how users are most likely to behave. This is often qualitative data from customer discussions and intuition. Instrumentation gives quantitative data developers can use to confirm or counter the intuition of their product team. 
 
 **Know if the code WORKS**
 
@@ -129,15 +145,15 @@ Observability REDUCES THE BATTLES WE FIGHT, allowing us to skip the entire CGI b
 
 #Questions & Answers
 
-*COMPLIANCE*: Production Write vs Read! Adding production to the dev process is reading of signals about how our code behaves, not writing or changing anything production. Other option is to rely on users to tell you when things go wrong. 
+**COMPLIANCE**: Production Write vs Read! Adding production to the dev process is reading of signals about how our code behaves, not writing or changing anything production. Other option is to rely on users to tell you when things go wrong. 
 
-*LOW PRODUCTION TRAFFIC PRODUCTS*: Still meaningful for any setup; taking software you deeply understand and putting it into an environment you don’t deeply understand, observability can still help; feedback loops are necessary at every stage for ever product; exception trackers only work if the thing that you don’t understand throws an exception 
+**LOW PRODUCTION TRAFFIC PRODUCTS**: Still meaningful for any setup; taking software you deeply understand and putting it into an environment you don’t deeply understand, observability can still help; feedback loops are necessary at every stage for ever product; exception trackers only work if the thing that you don’t understand throws an exception 
 
-*WHAT ABOUT WHEN IT’S SEEN AS NICE TO HAVE*: Show them what you can do when you get there; it’s like tests  you like tests right?!; work on speaking the language of devs who don’t want to slow down; counter perception that instrumentation is a big heavy lift and can be incremental that evolves with the code you’re shipping
+**WHAT ABOUT WHEN IT’S SEEN AS NICE TO HAVE**: Show them what you can do when you get there; it’s like tests  you like tests right?!; work on speaking the language of devs who don’t want to slow down; counter perception that instrumentation is a big heavy lift and can be incremental that evolves with the code you’re shipping
 
-*HOW CAN YOU CHECK IF YOU’RE DOING IT WELL?* Do you have outages or incidents where you don’t know the answer? If you have tools in place and still can’t figure out why something is busted, signal something isn’t right yet. Easy to have 5 tools do the same thing with none of them giving you an actual ANSWER! Seeing a graph, tells you something is off, but doesn’t give you the WHY behind it!
+**HOW CAN YOU CHECK IF YOU’RE DOING IT WELL?** Do you have outages or incidents where you don’t know the answer? If you have tools in place and still can’t figure out why something is busted, signal something isn’t right yet. Easy to have 5 tools do the same thing with none of them giving you an actual ANSWER! Seeing a graph, tells you something is off, but doesn’t give you the WHY behind it!
 
-*IS UAT A WASTE OF TIME?* Christine didn’t know what UAT stood for, so guessing it isn't part of her world! Once defined as "user acceptance testing", her take was having end users testing it with their goals in mind can be useful, but still you need to ask if you will get coverage in a way that you care about. This sort of testing still relies on predicting what will matter in a world where you just cannot predict without gathering data. She does see a a trend towards moving away from staging environments as production observability increases.
+**IS UAT A WASTE OF TIME?** Christine didn’t know what UAT stood for, so guessing it isn't part of her world! Once defined as "user acceptance testing", her take was having end users testing it with their goals in mind can be useful, but still you need to ask if you will get coverage in a way that you care about. This sort of testing still relies on predicting what will matter in a world where you just cannot predict without gathering data. She does see a a trend towards moving away from staging environments as production observability increases.
 
 
 
