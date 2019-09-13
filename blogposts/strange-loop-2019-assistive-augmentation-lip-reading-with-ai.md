@@ -8,7 +8,7 @@ tags: [
   strange-loop
 ]
 slug: strange-loop-2019-assistive-augmentation-lip-reading-with-ai
-heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
 published: false
 ---
 
