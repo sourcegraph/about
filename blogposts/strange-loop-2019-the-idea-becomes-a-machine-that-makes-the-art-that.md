@@ -75,7 +75,7 @@ They went through some examples of artists using machine learning for art well. 
 Sougwen Chung, who trained a neural net that she then paints with collaboratively.
 Tom White, who  was trying to create GANs that could fool ImageNet.
 
-![Weekly traffic spikes](/blog/strange-loop-2019/tomwhite.png)
+![tom white art](/blog/strange-loop-2019/tomwhite.png)
 
 Holly Herndon, who is working on training an AI baby on her and her partner's own voices. It's learning to sing and was recently credited on her new album.
 Memo Akten, who says 'we see things not as they are but as we are' and has made an artificial neural network that looks out on the world and tries to make sense of what it sees based on what it's seen before.
@@ -97,7 +97,7 @@ With Christine and Jonathon's original Mechanical Turker model, they had imagine
 
 Many of LeWitt's assistants have special and unique knowledge, which fits in better with a 'many models' approach, where each model reflects its own knowledge and specialty. They took what they'd learned and created 2 networks trained on inputs that each of them generated separately. It only took 6 drawings from each of them to train the models, which was a lot less than they expected.
 
-![Weekly traffic spikes](/blog/strange-loop-2019/christine+jonathonwall.png)
+![christine and jonathon wall art](/blog/strange-loop-2019/christine+jonathonwall.png)
 
 By doing this, they were able to make models that captured their unique styles and taste, and produced work that resembled human assistants collaborating. Not all the assistant-models worked well together however - but even that discordance reflects almost an artistic argument.
 
