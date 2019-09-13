@@ -53,7 +53,7 @@ However, even though LeWitt felt like anyone could install these and they were a
 
 ## Making The Machine That Makes The Art
 
-So Christine and Jonathon decided to try their hand at implementing Wall Drawing [797] using machine learning. Their first prototype used React, p5.js, and node.js. They intended to use Mechanical Turk to get a lot of human input for the model which would all be drawn on to make 1 wall drawing. However, the first one didn't work very well or aesthetically similar to LeWitt's Wall Drawings.
+So Christine and Jonathon decided to try their hand at implementing Wall Drawing 797 using machine learning. Their first prototype used React, p5.js, and node.js. They intended to use Mechanical Turk to get a lot of human input for the model which would all be drawn on to make 1 wall drawing. However, the first one didn't work very well or aesthetically similar to LeWitt's Wall Drawings.
 
 So for the next iteration, Jonathon and Christine used just their work as inputs, and it looked much better, though it took about 30 minutes to make each input drawing and they had to take lots of mental and physical breaks. Given that it was so intensive to produce each input for the model, they didn't feel like their initial multi-contributor vision was practical while still paying a decent wage, which was important to them. And, as it happened, it was in-keeping with LeWitt's philosophy!
 
