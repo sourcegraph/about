@@ -37,7 +37,7 @@ export default class GoList extends React.Component<any, any> {
                     image: metaProps.image,
                 }}
             >
-                <div className="gray-9 bg-white text-dark">
+                <div className="strange-loop-liveblog gray-9 bg-white text-dark">
                     <div>
                         <div className="blog blog__head">
                             <h1 className="pb-4 sr-only">{metaProps.title}</h1>
@@ -45,7 +45,7 @@ export default class GoList extends React.Component<any, any> {
                                 <div className="row justify-content-md-center">
                                     <p className="text-center col-12 mt-4">
                                         <img
-                                            style={{ maxWidth: '900px' }}
+                                            className="strange-loop-liveblog__header"
                                             alt="Strange Loop 2019 Banner"
                                             src="/blog/strange-loop-banner-landscape.jpg"
                                         />
