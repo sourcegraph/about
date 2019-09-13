@@ -1,8 +1,8 @@
 ---
 title: "Strange Loop 2019 - Observability: Superpowers for Developers"
 description: "Who wants to spend time dreaming about the ability to leap tall buildings with a single bound, when we can recast stories we live day to day as powers of our own... and improve our own lives in a practical way? When observability is folded into the development process itself, it represents the potential for a beautifully virtuous cycle: production stops being just where our development code runs into issues, and it becomes where part of our development process lives."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+author: Rainya Mosher
+authorUrl: https://www.linkedin.com/in/rainyamosher/s
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop
@@ -32,7 +32,7 @@ Who wants to spend time dreaming about the ability to leap tall buildings with a
 
 Christine Yen’s talk took inspiration from the Marvel Cinematic Universe (with a small dabble into DC Justice League towards the end to reference the broody Batman) to explain to both Devs and Ops the importance of shifting the production feedback loop all the way left into the _developer’s_ hands. With the right set of tools and some cultural willingness to change, Observability provides the entire team with quantitative data straight from the real world, making it the latest superpower for developers to harness in the ever-changing, software-focused world we work in. 
  
-#Intro Sequence: Exposition
+##Intro Sequence: Exposition
 
 Christine is the co-founder of honeycomb.io, a company that practices what they preach. She started with a brief survey of the room to get a sense of who identifies as “ops” and who identifies as “developer”. She is firmly in the developer camp (and delights in it). 
 
@@ -44,7 +44,7 @@ If the the first wave in getting dev and ops to work better together was teachin
 
 >>Observability: "What is my software doing, and why is it behaving that way?" ~ Christine Yen
 
-#Character Development 
+##Character Development 
 
 What is a standard(ish) software development process? 
 
@@ -66,11 +66,11 @@ As a real world example of the value of including Observability in software deve
 
 By folding Observability into the development process, we create a virtuous cycle that shortens the feedback loop from production to the developer. Adding “Observe” in the development cycle is more than a set of tools or a set of data. It is also about process and the culture of a team practicing looking through the code together. 
 
-#Training Montage 
+##Training Montage 
 
 >“Having Thor’s hammer doesn’t make you Thor.” ~ Christine Chen 
 
-##Teach production tools to speak dev
+###Teach production tools to speak dev
 
 **Support natural dev vocabulary**
 
@@ -95,7 +95,7 @@ By folding Observability into the development process, we create a virtuous cycl
 
 >"Tracing happens when logs grow up." ~ Christine Yen
 
-##Discovering new powers
+###Discovering new powers
 
 **Know WHAT code to write in first place**
 
@@ -123,7 +123,7 @@ By folding Observability into the development process, we create a virtuous cycl
 -	Feature flags + observabily = yellow heart of love emoji
 -	Use the flags to segment traffic and shove it into tooling; see top level metrics broken down by what functions are flagged “in” for a given day; answer the question “do our expectations for a feature match reality when flagged in?” before you turn it on for everyone
 
-#Building a super hero crew
+##Building a super hero crew
 
 - Build a shared brain by tapping into teammates’ knowledge via shared context and answer “why does this matter?” more quickly together 
 - “Social” habits help in single player mode, too! All debugging is multi-player, even if the players are just the past, present, and future you 
@@ -133,17 +133,17 @@ By folding Observability into the development process, we create a virtuous cycl
 - Passive – chatops and slack bots, too; instrumentation creates a papertrail to help teammates resolve issues on their own; share your work without effort; level up your skills on your own time as you work issues 
 - Many people new to being on call observe that experienced triagers make “leaps of intuition akin to magic” but really, it’s just sufficiently advanced technology
 
-#Broody Retrospective 
+##Broody Retrospective 
 
 In the past, Devs cared about code in dev envs while Ops cared about production. 
 
 Observability REDUCES THE BATTLES WE FIGHT, allowing us to skip the entire CGI battle sequence. It reduces the tension in release and reduces when we get woken up in the middle of the night. We can ship more reliably. We can think through expected vs actual outcomes, be resilient, and do what we love, avoiding burnout along the way. 
 
-*For Operators*: think how you can share the great responsibility and (great power!)
+**For Operators**: think how you can share the great responsibility and (great power!)
 
-*For Developers*: embrace observability; bring prod closer to dev; ground your code in the reality of production insight, not just intuition 
+**For Developers**: embrace observability; bring prod closer to dev; ground your code in the reality of production insight, not just intuition 
 
-#Questions & Answers
+##sQuestions & Answers
 
 **COMPLIANCE**: Production Write vs Read! Adding production to the dev process is reading of signals about how our code behaves, not writing or changing anything production. Other option is to rely on users to tell you when things go wrong. 
 
