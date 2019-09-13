@@ -73,11 +73,13 @@ What are the bounds of the power of machine learning? Where is it useful, and wh
 They went through some examples of artists using machine learning for art well. They included:
 
 Sougwen Chung, who trained a neural net that she then paints with collaboratively.
+
 Tom White, who  was trying to create GANs that could fool ImageNet.
 
 ![tom white art](/blog/strange-loop-2019/tomwhite.png)
 
 Holly Herndon, who is working on training an AI baby on her and her partner's own voices. It's learning to sing and was recently credited on her new album.
+
 Memo Akten, who says 'we see things not as they are but as we are' and has made an artificial neural network that looks out on the world and tries to make sense of what it sees based on what it's seen before.
 
 So then they asked themselves, are we still doing this in honor of Sol? Or is it for ourselves? What would he want from it?
