@@ -151,7 +151,7 @@ Observability REDUCES THE BATTLES WE FIGHT, allowing us to skip the entire CGI b
 
 **LOW PRODUCTION TRAFFIC PRODUCTS**: Still meaningful for any setup; taking software you deeply understand and putting it into an environment you don’t deeply understand, observability can still help; feedback loops are necessary at every stage for ever product; exception trackers only work if the thing that you don’t understand throws an exception 
 
-**WHAT ABOUT WHEN IT’S SEEN AS NICE TO HAVE**: Show them what you can do when you get there; it’s like tests  you like tests right?!; work on speaking the language of devs who don’t want to slow down; counter perception that instrumentation is a big heavy lift and can be incremental that evolves with the code you’re shipping
+**WHAT ABOUT WHEN IT’S SEEN AS NICE TO HAVE**: Show them what you can do when you get there; it’s like tests -- you like tests right?!; work on speaking the language of devs who don’t want to slow down; counter perception that instrumentation is a big heavy lift and can be incremental that evolves with the code you’re shipping
 
 **HOW CAN YOU CHECK IF YOU’RE DOING IT WELL?** Do you have outages or incidents where you don’t know the answer? If you have tools in place and still can’t figure out why something is busted, signal something isn’t right yet. Easy to have 5 tools do the same thing with none of them giving you an actual ANSWER! Seeing a graph, tells you something is off, but doesn’t give you the WHY behind it!
 
