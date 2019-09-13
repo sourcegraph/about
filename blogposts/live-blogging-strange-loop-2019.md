@@ -2,30 +2,28 @@
 title: Sourcegraph liveblogging the 2019 Strange Loop conference
 description: Sourcegraph is proud to be hosting the first ever liveblog for Strange Loop 2019, and we're looking for attendees to help contribute.
 author: Ryan Blunden
+authorUrl: https://twitter.com/ryan_blunden
 publishDate: 2019-09-02T00:00-07:00
 tags: [blog]
 slug: sourcegraph-liveblogging-2019-strange-loop-conference
-heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
 published: true
+
 ---
  
-<!-- Uncomment and remove above image once landing page ready
 <p class="text-center">
-  <a href="/strange-loop-liveblog/” title="Go to the Strange Loop 2019 liveblog">
-<img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner.jpg" class="h5" />
+  <a href="/strange-loop/" title="Go to the Strange Loop 2019 liveblog">
+    <img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner-landscape.jpg" />
   </a>
 </p>
 
+---
+
 <p class="text-center">
-  <strong>Go to the liveblog - <a href="/strange-loop-liveblog/">/strange-loop-liveblog/</a></strong>
+  <strong>Go to the liveblog - <a href="/strange-loop/">https://about.sourcegraph.com/strange-loop/</a></strong>
 </p>
-—
 
--->
-
-<p class="text-center">
-  <img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner-landscape.jpg" class="h5" />
-</p>  
+---
 
 <div class="alert alert-info text-center">
   Want to sign up to liveblog at Strange Loop?
@@ -76,3 +74,11 @@ For any questions, reach out to me (Ryan) via [Twitter DM](https://twitter.com/r
 [Quinn](https://twitter.com/sqs), [Geoffrey](https://github.com/ggilmore), [Rijnard](https://twitter.com/rvtond) ([who is also presenting](https://www.thestrangeloop.com/2019/parser-parser-combinators-for-program-transformation.html)), and [myself](https://twitter.com/ryan_blunden) are attending so come talk to us at our table in the Union Station foyer outside the Grand Ballroom. Hope to see you there!
 
 From all of us at Sourcegraph, we hope you enjoy Strange Loop 2019!
+
+---
+
+<p class="text-center">
+  <strong>Go to the liveblog - <a href="/strange-loop/">https://about.sourcegraph.com/strange-loop/</a></strong>
+</p>
+
+---

@@ -4,6 +4,14 @@ import BlogHeadLinks from '../components/BlogHeadLinks'
 import BlogPosts from '../components/BlogPosts'
 import Layout from '../components/Layout'
 
+export enum BLOGS {
+    GopherCon = 'go',
+    DotGo = 'go',
+    GraphQLSummit = 'graphql',
+    StrangeLoop = 'strange-loop',
+    Blog = 'blog',
+}
+
 export default class BlogList extends React.Component<any, any> {
     constructor(props: any) {
         super(props)
