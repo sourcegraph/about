@@ -54,7 +54,7 @@ export default ((props: any) => (
                             <h5 className="card-header">Jobs</h5>
                             <div className="card-body">
                                 <p className="card-text">For information about joining our team:</p>
-                                <Link className="btn btn-outline-primary stretched-link" to="/contact/sales">
+                                <Link className="btn btn-outline-primary stretched-link" to="/jobs">
                                     See career opportunities
                                 </Link>
                             </div>

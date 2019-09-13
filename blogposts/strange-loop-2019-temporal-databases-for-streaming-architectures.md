@@ -8,10 +8,10 @@ tags: [
   strange-loop
 ]
 slug: strange-loop-2019-temporal-databases-for-streaming-architectures
-heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
 published: true
-
 ---
+
 <div class="container p-0 liveblog-presenters">
   <div class="row m-0">
       <p class=" mr-6 m-0">
