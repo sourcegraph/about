@@ -42,7 +42,7 @@ Through continued partnership with Ops, Christine learned about taking responsib
 
 If the the first wave in getting dev and ops to work better together was teaching Ops to develop, the second wave is to teach devs to own their code all the way into production. Observability as defined on Wikipedia is “understanding the behavior of a system based on knowledge of its external outputs.” As simple yet rigid monolith apps are replaced with flexible yet complex collections of services, Observability is the bridge to continue to blur the line between DEV and OPS to create positive software outcomes for everyone. 
 
->>Observability: "What is my software doing, and why is it behaving that way?" ~ Christine Yen
+> Observability: "What is my software doing, and why is it behaving that way?" ~ Christine Yen
 
 ## Character Development 
 
@@ -70,7 +70,7 @@ By folding Observability into the development process, we create a virtuous cycl
 
 > “Having Thor’s hammer doesn’t make you Thor.” ~ hristine Chen 
 
-###Teach production tools to speak dev
+### Teach Prod Tools to Speak Dev
 
 **Support natural dev vocabulary**
 
@@ -83,7 +83,7 @@ By folding Observability into the development process, we create a virtuous cycl
   - Understanding the nouns that matter and also have high-cardinality data is important to being able to slice and dice what is happening 
   - i.e. “build_ID” matters day to day for a developer to understand change impact. Has it shipped? Where in the process is it? 
 
-**Instrumentation should evolve alongside code**
+**Instrumentation sould evolve alongside code**
   - Instrumentation is another form of expressing what code is doing 
   - Like docs and tests, it should be updated whenever changes are made
 - All of this leads to being more comfortable understanding what is happening in production 
@@ -95,9 +95,9 @@ By folding Observability into the development process, we create a virtuous cycl
 
 > "Tracing is what happens when logs grow up." ~Christine Yen
 
-### Discovering new powers
+### Discovering New Powers
 
-**Know WHAT code to write in first place**
+**Know WHAT code to write**
 
 -	Users complain something slow… what’s slow? For who? When?
 -	You can connect a dev profiler and try to recreate, but with data streaming from production, you just go there for the answers on what code is acting up.
@@ -123,7 +123,7 @@ By folding Observability into the development process, we create a virtuous cycl
 -	Feature flags + observabily = yellow heart of love emoji
 -	Use the flags to segment traffic and shove it into tooling; see top level metrics broken down by what functions are flagged “in” for a given day; answer the question “do our expectations for a feature match reality when flagged in?” before you turn it on for everyone
 
-## Building a super hero crew
+## Building a Super Hero Crew
 
 - Build a shared brain by tapping into teammates’ knowledge via shared context and answer “why does this matter?” more quickly together 
 - “Social” habits help in single player mode, too! All debugging is multi-player, even if the players are just the past, present, and future you 
@@ -143,7 +143,7 @@ Observability REDUCES THE BATTLES WE FIGHT, allowing us to skip the entire CGI b
 
 **For Developers**: embrace observability; bring prod closer to dev; ground your code in the reality of production insight, not just intuition 
 
-##sQuestions & Answers
+## Questions & Answers
 
 **COMPLIANCE**: Production Write vs Read! Adding production to the dev process is reading of signals about how our code behaves, not writing or changing anything production. Other option is to rely on users to tell you when things go wrong. 
 
