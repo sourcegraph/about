@@ -98,8 +98,15 @@
     }
 }
 
-#gopherConForm {
+#gopherConForm, #strangeLoopForm  {
     justify-content: center;
+}
+
+.strange-loop-liveblog {
+    &__header {
+        width: 100%;
+        max-width: 900px;
+    }
 }
 
 table {

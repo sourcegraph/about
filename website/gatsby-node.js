@@ -72,6 +72,14 @@ exports.createPages = ({ actions, graphql }) => {
                     fileSlug: slug,
                   },
                 })
+              } else if (node.frontmatter.tags && node.frontmatter.tags.includes('strange-loop')) {
+                createPage({
+                  path: `/strange-loop/${slug}`,
+                  component: PostTemplate,
+                  context: {
+                    fileSlug: slug,
+                  },
+                })
               }
             } else {
               createPage({
