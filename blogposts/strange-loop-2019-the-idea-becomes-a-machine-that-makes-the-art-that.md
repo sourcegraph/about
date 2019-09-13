@@ -97,7 +97,7 @@ With Christine and Jonathon's original Mechanical Turker model, they had imagine
 
 Many of LeWitt's assistants have special and unique knowledge, which fits in better with a 'many models' approach, where each model reflects its own knowledge and specialty. They took what they'd learned and created 2 networks trained on inputs that each of them generated separately. It only took 6 drawings from each of them to train the models, which was a lot less than they expected.
 
-![Weekly traffic spikes](/blog/strange-loop-2019/christinee+jonathonwall.jpg)
+![Weekly traffic spikes](/blog/strange-loop-2019/christine+jonathonwall.jpg)
 
 By doing this, they were able to make models that captured their unique styles and taste, and produced work that resembled human assistants collaborating. Not all the assistant-models worked well together however - but even that discordance reflects almost an artistic argument.
 
