@@ -29,7 +29,7 @@ Angklung is a traditional musical instrument from Indonesia. This instrument has
 
 ---
 
-Trapsilo comes from Bandung, Indonesia. The 3rd largest city in Indonesia.
+Trapsilo comes from Bandung, Indonesia. Bandung is the 3rd largest city in Indonesia.
 
 ![Map of Indonesia](/blog/strange-loop-2019/angklung/Indonesia_map.png)
 
