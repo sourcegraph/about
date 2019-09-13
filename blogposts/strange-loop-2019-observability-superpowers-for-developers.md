@@ -32,7 +32,7 @@ Who wants to spend time dreaming about the ability to leap tall buildings with a
 
 Christine Yen’s talk took inspiration from the Marvel Cinematic Universe (with a small dabble into DC Justice League towards the end to reference the broody Batman) to explain to both Devs and Ops the importance of shifting the production feedback loop all the way left into the _developer’s_ hands. With the right set of tools and some cultural willingness to change, Observability provides the entire team with quantitative data straight from the real world, making it the latest superpower for developers to harness in the ever-changing, software-focused world we work in. 
  
-##Intro Sequence: Exposition
+## Intro Sequence: Exposition
 
 Christine is the co-founder of honeycomb.io, a company that practices what they preach. She started with a brief survey of the room to get a sense of who identifies as “ops” and who identifies as “developer”. She is firmly in the developer camp (and delights in it). 
 
@@ -44,7 +44,7 @@ If the the first wave in getting dev and ops to work better together was teachin
 
 >>Observability: "What is my software doing, and why is it behaving that way?" ~ Christine Yen
 
-##Character Development 
+## Character Development 
 
 What is a standard(ish) software development process? 
 
@@ -60,15 +60,15 @@ What is a standard(ish) software development process?
 
 Items 3, 4, and 6 in the list above are generally agreed to be "testing" and lead to approaces like test-driven development. Tests form a feedback loop from non-prod back to the developer. Successful dev teams do lots of testing! Christine affirms that item 9 above, “observe our code in production”, can be seen as an extension of the testing process. Unlike the testing we can do in non-prod, observing our code in production provides exposure to eal world usage and situations we cannot predict with static non-prod testing. Try as we might to anticipate everything, once our code is in a production environment with users actually using it, unpredictable outcomes will happen.
 
-_Note from Rainya: My favorite use of American pop-culture reference material in the whole presentation was using Mekko, the racoon from Pochahontas, for the "expected" outcome, and Rocket, the racoon from Guardians of the Galaxy, for the unpredictable outcomes._
+_Note from Rainya: My favorite use of American pop-culture reference material in the whole presentation was when Christine used Meeko (the racoon from the animated film Pocahontas) to illustrate the "expected" outcome, and then Rocket (the racoon from Guardians of the Galaxy), for the "actual" outcome._
 
 As a real world example of the value of including Observability in software development, @ceejbbot recently posted a thread about how her team  prioritized observability, leading to the direct quote “it no longer feels like a scary fucking conundrum” in regards to performance problems they were experiencing. [https://threader.app/thread/1169408562855940097](https://threader.app/thread/1169408562855940097)
 
 By folding Observability into the development process, we create a virtuous cycle that shortens the feedback loop from production to the developer. Adding “Observe” in the development cycle is more than a set of tools or a set of data. It is also about process and the culture of a team practicing looking through the code together. 
 
-##Training Montage 
+## Training Montage 
 
->“Having Thor’s hammer doesn’t make you Thor.” ~ Christine Chen 
+> “Having Thor’s hammer doesn’t make you Thor.” ~ hristine Chen 
 
 ###Teach production tools to speak dev
 
@@ -93,9 +93,9 @@ By folding Observability into the development process, we create a virtuous cycl
   -	Tracing is like “Chrome dev tools for now-browser software!” that allows you to see what’s happening in the wild of production 
   -	Groups logs can form the basis for a trace
 
->"Tracing happens when logs grow up." ~ Christine Yen
+> "Tracing is what happens when logs grow up." ~Christine Yen
 
-###Discovering new powers
+### Discovering new powers
 
 **Know WHAT code to write in first place**
 
@@ -123,7 +123,7 @@ By folding Observability into the development process, we create a virtuous cycl
 -	Feature flags + observabily = yellow heart of love emoji
 -	Use the flags to segment traffic and shove it into tooling; see top level metrics broken down by what functions are flagged “in” for a given day; answer the question “do our expectations for a feature match reality when flagged in?” before you turn it on for everyone
 
-##Building a super hero crew
+## Building a super hero crew
 
 - Build a shared brain by tapping into teammates’ knowledge via shared context and answer “why does this matter?” more quickly together 
 - “Social” habits help in single player mode, too! All debugging is multi-player, even if the players are just the past, present, and future you 
@@ -133,7 +133,7 @@ By folding Observability into the development process, we create a virtuous cycl
 - Passive – chatops and slack bots, too; instrumentation creates a papertrail to help teammates resolve issues on their own; share your work without effort; level up your skills on your own time as you work issues 
 - Many people new to being on call observe that experienced triagers make “leaps of intuition akin to magic” but really, it’s just sufficiently advanced technology
 
-##Broody Retrospective 
+## Broody Retrospective 
 
 In the past, Devs cared about code in dev envs while Ops cared about production. 
 
