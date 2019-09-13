@@ -57,7 +57,7 @@ So Christine and Jonathon decided to try their hand at implementing Wall Drawing
 
 So for the next iteration, Jonathon and Christine used just their work as inputs, and it looked much better, though it took about 30 minutes to make each input drawing and they had to take lots of mental and physical breaks. Given that it was so intensive to produce each input for the model, they didn't feel like their initial multi-contributor vision was practical while still paying a decent wage, which was important to them. And, as it happened, it was in-keeping with LeWitt's philosophy!
 
->I had the idea that if you can pass on the instructions from one person to another that they can draw a line ... [this idea] is still true. But although anyone can do the kinds of lines that are very precise, only a few people can do them very well.
+>"I had the idea that if you can pass on the instructions from one person to another that they can draw a line ... [this idea] is still true. But although anyone can do the kinds of lines that are very precise, only a few people can do them very well". - Sol LeWitt
 
 One other approach they tried was training a net on the instruction themselves for 250 of LeWitt's wall drawings. A few were pretty successful if you didn't look too close (new wall drawings number) Why did these instructions come out wonky? It turns out LeWitt didn't have a lot of variance in his titles, so it was hard to avoid over-training the models and completely replicating existing titles. Also, in a later period he got more simplistic (for instance naming one 'Splat') and there wasn't enough to learn from them. They considered if Markov Chains would work better here, but but it ultimately felt too far from LeWitt's thoughtful style.
 
@@ -66,7 +66,7 @@ Then they realized: they were just doing ML for ML's sake.
 
 ## But is it Art?
 
->New materials are one of the great afflictions of contemporary art. Some artists confuse new materials with new ideas. -Sol LeWitt
+>"New materials are one of the great afflictions of contemporary art. Some artists confuse new materials with new ideas". -Sol LeWitt
 
 What are the bounds of the power of machine learning? Where is it useful, and where is it weak? What other artists are using it in a meaningful way?
 
@@ -104,4 +104,6 @@ By doing this, they were able to make models that captured their unique styles a
 
 ## Conclusion
 
-So where do we go from here? Christine and Jonathan want to combine model and human outputs in the physical world, and to talk more to the assistants to find out how machine learning algorithms can help preserve LeWitt's work. They're also left with the question of how they validate that the models actually captured their aesthetic and intentions. And if that's even necessary! As they put it, `We wanted these models to capture advice from the past, but the thing about advice is you don't have to take it`.
+So where do we go from here? Christine and Jonathan want to combine model and human outputs in the physical world, and to talk more to the assistants to find out how machine learning algorithms can help preserve LeWitt's work. They're also left with the question of how they validate that the models actually captured their aesthetic and intentions. And if that's even necessary! As they put it,
+
+>"We wanted these models to capture advice from the past, but the thing about advice is you don't have to take it".
