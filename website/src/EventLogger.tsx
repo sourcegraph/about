@@ -178,6 +178,10 @@ class EventLogger {
         this.trackEvent('Pages', 'Submit', null, 'DotGoFormSubmitted', {})
     }
 
+    public trackStrangeLoopFormSubmitted(): void {
+        this.trackEvent('Pages', 'Submit', null, 'StrangeLoopFormSubmitted', {})
+    }
+
     public trackBuyUnlimitedButtonClicked(): void {
         this.trackEvent('Pages', 'Click', null, 'BuyUnlimitedButtonClicked', {})
     }
