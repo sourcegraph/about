@@ -1,4 +1,6 @@
 import { Link } from 'gatsby'
+import truncate from 'lodash/truncate'
+import { BLOGS } from '../pages/blog'
 import * as React from 'react'
 
 interface BlogPostsProps {
@@ -30,12 +32,7 @@ export default class BlogPosts extends React.Component<any, any> {
                     (post: any, i: number) =>
                         postIsComplete(post) && (
                             <Link
-                                // HACK: to make the GopherCon 2018 root post appear on both /go and /blog
-                                to={
-                                    post.node.slug === 'sourcegraph-liveblogging-at-gophercon-2018'
-                                        ? `/blog/${post.node.frontmatter.slug}`
-                                        : `/${this.props.blogType}/${post.node.frontmatter.slug}`
-                                }
+                                to={`/${this.props.blogType}/${post.node.frontmatter.slug}`}
                                 key={i}
                                 className="text-decoration-none"
                             >
@@ -49,7 +46,7 @@ export default class BlogPosts extends React.Component<any, any> {
                                             <div className="blog__posts--post-excerpt">
                                                 <p>
                                                     {post.node.frontmatter.description
-                                                        ? post.node.frontmatter.description
+                                                        ? truncate(post.node.frontmatter.description, { length: 300 })
                                                         : post.node.excerpt}{' '}
                                                     <span className="blog__posts--post-readmore">Read more</span>
                                                 </p>

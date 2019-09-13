@@ -1,11 +1,18 @@
-import { graphql } from 'gatsby'
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import * as React from 'react'
+import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
 import { eventLogger } from '../EventLogger'
+import { BLOGS } from '../pages/blog'
 
-export default class ContentfulTemplate extends React.Component<any, any> {
+// Question: Should these be local to the render function since they are not used elsewhere?
+interface AuthorProps {
+    author: string
+    authorUrl: string
+}
+
+export default class BlogPostTemplate extends React.Component<any, any> {
     constructor(props: any) {
         super(props)
     }
@@ -27,53 +34,72 @@ export default class ContentfulTemplate extends React.Component<any, any> {
             document.addEventListener('mouseup', this.logSelectDockercommand)
         }
     }
+    // Question: Shuold this be a Function Component?
+    public Author(props: AuthorProps): Element {
+        let element: any
+
+        if (props.authorUrl) {
+            element = (
+                <p>
+                    Written by <a href={props.authorUrl}>{props.author}</a>
+                </p>
+            )
+        } else {
+            element = <p>Written by {props.author}</p>
+        }
+
+        return element
+    }
 
     public render(): JSX.Element | null {
         const md = this.props.data.markdownRemark
         const title = md.frontmatter.title
+        let slug = md.slug
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
-        const author = md.frontmatter.author
         const content = md.html
-        const date = md.frontmatter.publishDate
-        const tags = md.frontmatter.tags || ''
         const image = md.frontmatter.heroImage
             ? `${md.frontmatter.heroImage}`
             : 'https://about.sourcegraph.com/sourcegraph-mark.png'
-
-        let slug = md.slug
-        let readMoreLink
-        if (tags.includes('graphql')) {
-            slug = 'graphql/' + slug
-            readMoreLink = '/graphql'
-        } else if (tags.includes('gophercon') || tags.includes('dotGo')) {
-            slug = 'go/' + slug
-            readMoreLink = '/go'
-        } else {
-            slug = 'blog/' + slug
-            readMoreLink = '/blog'
-        }
         const meta = {
             title,
             image,
             description,
         }
+
+        switch (slug) {
+            case BLOGS.GopherCon:
+                slug = `/${BLOGS.GopherCon}/${slug}`
+                break
+            case BLOGS.GraphQLSummit:
+                slug = `/${BLOGS.GraphQLSummit}/${slug}`
+                break
+            case BLOGS.StrangeLoop:
+                slug = `/${BLOGS.StrangeLoop}/${slug}`
+            default:
+                slug = `/${BLOGS.Blog}/${slug}`
+        }
+
         return (
             <Layout location={this.props.location} meta={meta}>
+                <Helmet>
+                    <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                    />
+                </Helmet>
                 <div className="bg-white text-dark">
                     <div className="blog-post">
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
-                                <p>
-                                    By {author} on {date}
-                                </p>
+                                <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} />
                             </section>
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
                                 <div dangerouslySetInnerHTML={{ __html: content }} />
                                 <hr />
                                 <div style={{ height: '0.5em' }} />
-                                <Link to={readMoreLink}>
+                                <Link to={BLOGS.Blog}>
                                     <button className="btn btn-outline-primary">Read more posts</button>
                                 </Link>
                                 <div style={{ height: '1em' }} />
@@ -99,6 +125,7 @@ export const pageQuery = graphql`
                 description
                 heroImage
                 author
+                authorUrl
                 tags
                 publishDate(formatString: "MMMM D, YYYY")
             }
