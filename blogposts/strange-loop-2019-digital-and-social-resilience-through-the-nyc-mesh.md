@@ -30,228 +30,328 @@ published: false
 
 ## Overview
 
-NYC Mesh is a community-run mesh network that helps over three-hundred homes connect to high-speed Internet; making it one of the largest mesh networks in the world. We work with anyone interested in reclaiming ownership over their Internet, but specifically engage with underserved populations including residents in low-income housing and community centers. Built by a combination of consumer-grade materials and donated fiber-optic cable, this network gives people ownership and control over their Internet usage.
+NYC Mesh is a community-run mesh network that helps over three-hundred homes
+connect to high-speed Internet; making it one of the largest mesh networks in
+the world. We work with anyone interested in reclaiming ownership over their
+Internet, but specifically engage with underserved populations including
+residents in low-income housing and community centers. Built by a combination
+of consumer-grade materials and donated fiber-optic cable, this network gives
+people ownership and control over their Internet usage.
 
 ---
 
 # Digital and Social Resilience through NYC Mesh
 
-Hi everyone! Oh yeah, okay.
+Hi everyone, and thank you for coming to our talk! We're Jillian and Michael,
+and we are volunteers at a non-profit called NYC Mesh.
 
-Hi everyone, thank yo ufor coming to our talk! My name is Jillian and I'm Michael and we are volunteers at a nonprofit called NYC Mesh
+So, this talk is split into two main sections. In the first section, we'll talk
+about the  social and political realities of internet connectivity in New York
+City: the basics of the network technology, and the inspiration for our
+organization, NYC Mesh. In the second half, we'll focus on the organization
+structure of NYC Mesh: how our volunteers cooperate, how we reach out to and
+foster community involvement, and how we are trying to increase the overall
+awareness of mesh networks.
 
-So, this talk is split into two main sections:
+*Note:* Neither of us are network engineers. We're going to simplify
+explanations a lot for the purpose of this talk, but that'll get us halfway
+there.
 
-We're going to talk about [the highlighted things ]
+## What is the internet?
 
-The second half will be talking about the resilience of the network.
+The global internet, in a nutshell, is a network of networks. It connects 3.5
+billion people - about half of the people in the world.
 
-I'm not an  network engineer, I'm going to simplify tings
-For the purpose of this tak we'll get halfway tere
+It accomplishes this through standardized protocols that define how messages
+should go over the network, and the behavior of the hardware that carries a
+physical signal. Most networks use fiber optics, copper wire, and radio
+antennas, but anything that can carry messages and data can be used to build a
+network - carrier pigeons, thumb drives hidden in sneakers, or planes full of
+hard-drives.
 
+NYC Mesh builds most of its network with radio antennas.
 
-The protocols in the internet in a nutshell 
+Many large continental networks are connected with massive undersea cables
 
-is a network of networks, communicating over protocols. They can be over physical cables or wireless or you can even put thumbdrives or put it in the 
-You can transfer data using pigeons 
+Here's an image of the undersea cable network that connects the global
+internet. This high-bandwidth network of networks forms what's called the
+"internet backbone".
 
-[ISPs 
+TK [image: slide 6]
 
-They came aobut in the 1980s when everyone wanted to be able to connect to the internet via dialup. After the move of broadband, cable networks had a huge advantage.
+Connecting your own home to this global network is called the "Last Mile
+Problem", and is the responsibility of an ISP.
 
-Designed for things
+## What is an ISP?
 
-The Digital Divide  - separates rich nad poor
+ISP stands for Internet Service Provider.
 
-This impacts the ability of poor to get access to critical sevices.
+ISPs started back in the 80s as a competitive market, providing dial-up
+internet access to end users who wanted to connect to a global internet.
 
----
-Connective in NYC
+Then, with the dominance of broadband internet access, cable companies had a
+huge advantage as they already had built direct lines to customers' homes.
 
-NYC have "compromised connectivity": most people have only 1 or 2 broadband providers, and still at the mercy of the monopoly.
+The infrastructure is built with profit in mind, so wealthier communities tend
+to have high-end connectivity while poorer communities have slower speeds or no
+connectivity at all.
 
+With the amount of services that now have moved to the internet, this impacts
+the ability of poor to get access to critical sevices.
 
-This map shows off how there is limited connectivity  - red is less connectivity. Manhattan is basically white, while the outer boroughs are much less connected
+This disparity is called the **digital divide**.
 
----
+## Connectivity in NYC
 
-Outer Borough maps
+TK Image: map on slides 8 & 9.
 
+These maps show how limited the connectivity is - red is less. Manhattan is
+basically white, while the outer boroughs are much less connected. In the
+Bronx, only 70% of homes have access to broadband.
 
----
+NYC has "compromised connectivity". Most people have only 1 or 2 broadband
+providers, and are still at the mercy of their ISPs.
 
+Half of all small businesses in NYC are unable to get gigabit internet - this
+limits what kind of business can exist in what neighborhoods.
 
-So NYC Mesh - broadband providers don't offer significant 
+## Solution: NYC Mesh
 
-"Trust of your internet extends beyond your home, and to the broader community to which you are connected."
+NYC Mesh aims to provide a solution to the shortcomings of ISPs. Rather than
+being profit-driven, it attempts to be community-driven. It's predicated on the
+belief that everyone deserves a connection that is high-speed, affordable, and
+reliable. 
 
----
+"Trust of your internet extends beyond your home, and to the broader community
+to which you are connected."
 
-We dynamically route through nodes rather than traveling through a singular lossy access point. The idea of a mesh network
-has been around since the 80s
+We dynamically route through nearby nodes rather than traveling through a
+singular lossy access point. The idea of a mesh network has been around since
+the 80s. But, it's only recently that the tech became cheap, available, and
+user-friendly enough to allow for true community-owned networks.
 
-It's only recent that the tech became cheap, user-friendly enough to allow for true community-owned networks.
+TK slide 15 image
 
----
+Example: here's how we can add additional nodes in between to offer more
+resilience across the nodes.
 
-Example: here's how we can add additional nodes in between to offer more resilience across the nodes
+## Other Meshes Worldwide
 
----
+We're not alone! Guifi and others run mesh networks around the world. Guifi has
+35k active nodes, and they're located in Catalonia in Spain and they are the
+gold standard of mesh networks. Catalonia is also famous for grassroots and
+community organizing.
 
-We're not alone! Guifi and others run mesh networks around the world. Guifi has 35k active nodes, and they're located in catalonia in spain and they are the gold standard of mesh networks. Catalonia is also famous for grassroots and community organizing.
+There is also Freifunk in Germany, wlan slovenija, and WasabiNet right here in
+St. Louis!
 
+We were particularly inspired by the 4 tenets listed in Guifi's Network Commons
+License:
 
----
-inspired by 4 tenets
+* Participants are free to use the network in any way that does not limit
+  others' ability to do the same.
+* Participants are free to know how the network and its components function
+* Participants are free to offer and accept services on the internet on their
+  own terms
+* By joining the free network you agree to extend the network to others under
+  the same rules
 
----
+## Resilient Communities
 
+Now it's time to take a deep dive into the ways in which NYC Mesh is a
+resilient network and community.
 
-Doing a deep dive into the ways in which NYC Mesh is resilient network and community
+NYC Mesh the organization is run cecentralized, and we maintain a very flat
+organization. We are conservative when selecting tools, nad we remain sensitive
+to hidden costs - money spent traveling to install sites, and human time costs
+in operational complexity.
 
----
+Regarding being tied into the community - we engage in outreach to try and
+increase engagement, turning end-users into hobbyists into activists.
 
-Decentralized, maintain avery flat organization. Vey conservative to selecting tools. Very sensitive to hidden costs - money spent traveling to install sites, and time costs in complexity.
+We host monthly events, and try to focus on education.
 
----
+"When I went out and did the first community outreach, it became clear that
+people really just wanted a cheap internet, and didn't care about the greater
+mission so much."
 
-Building a community network
+I also believe that building a diverse community is important and that we
+should make this kind of mesh networking is available to people who are not
+very technical.
 
-Originally I was excited to work on this alternative internet. People really just wanted a cheap internet, didn't care about the greater mission so much.
- I also believe that building a diverse community is important and that we should make this kind of mesh networking is available to people who are not very technical.
+We try to create opportunities for people to contribute that highlight their
+own individual strengths, regardless of whether or not those are technical. We
+also try to encourage new people to take leadership roles in areas that align
+with their passion and vision.
 
-We try to create opportunities for people to highlight their own individual strengths, regardless of whether or not those are technical. Try to encourage people to take leadership roles in areas that align with their passion and vision.
 
----
+## Breaking down the barriers to entry
 
-Breaking down the barriers to entry
+Running an organization this way is really hard - not everyone has the time
+required to volunteer, how do we keep those people relevant?
 
-Running an organization this way is really hard - not everyone has the time required to volunteer, how do we keep those people relevant.
+We run organizational meetings with frequency, but we changed how they were run
+over time. It used to be at a bar, which was intimidating to people who didn't
+feel comfortable with drinking, and there have been other observations like
+that.
 
-We run organizational meetings with frequency. It used to be at a bar - it was very intimidating, etc. We now don't do that any more because it was exclusionary.
+We now don't do that any more because it was exclusionary. We hold our meetings
+in a common community space.
 
----
 
-Our org meeting this month - we had folks from the Queens Digital Tech Lab present, we try to collaborate with other organizations and build community that way.
+Our org meeting this past month, we had folks from the Queens Digital Tech Lab
+present, which is one of the ways we try to collaborate with other
+organizations and build community that way.
 
-We try to always leave with a project plan.
+We want to keep these meetings productive, and try to always leave with a
+project plan.
 
-A lot of people don't have internet - we try to make sure that all of our materials are accessible both physically and digitaly.
+Also, a lot of attendees don't have internet - we try to make sure that all of
+our materials are accessible both physically and digitaly.
 
-We try to run general classes and talks - try to keep it event and non-profit oriented so as to not scare away people who are intimidated by attending a tech event.
+We also run general classes and talks - try to keep the messaging oriented
+around event and non-profit oriented so as to not scare away people who are
+intimidated by attending a tech event.
 
----
+## Mentorship
 
-There's a mentorship model - Install Leaders take Install Novices with them on node installations. After a number of node installations, Novices get promoted to leaders and can carry on the tradition. This is part of the install leader trainings. There's also a classroom style process where they teach people how to run these installs.
+There's a mentorship model - Install Leaders take Install Novices with them on
+node installations. After a number of node installations, Novices get promoted
+to leaders and can carry on the tradition. This is part of the install leader
+trainings. There's also a classroom style process where they teach people how
+to run these installs.
 
----
+Group Installations are a way for people to get past the idea of the daunting
+learn  This one on the left had 70 attendees. At least 30% of the people there
+have been actively engaged in other projects.
 
-These blue dots up at the top are a disconnected node but they're still logically connected to the mesh network via VPN so they can enjoy the benefits of the mesh networks.
+TK Image: slide 34
 
----
+Photos of new members, happy volunteers. They historically have little to no
+training and are exciting about where they're connecting to and building a
+sence of community.
 
-Photos of new members, happy volunteers. They historically have little to no training and are exciting about where they're connecting to and building a sence of community.
 
+# Where are we?
 
----
+We're mostly situated in Manhattan and Brooklyn.
 
-We cover a wide variety of buildings: from 4-story walk-ups to entire apartment
-complexes. This is the Saratoga node, it's run by the  NYC Housing Authority.
+We cover a wide variety of buildings, from 4-story walk-ups to entire apartment
+complexes. The Saratoga node, a housing unit run by the NYC Housing Authority,
+is our first foray into public-private partnerships.
 
----
+TK Slide 37
 
-This was taken at the St. Francis school for the deaf.
+This picture was taken at the St. Francis school for the deaf, which we've
+helped get on the mesh.
 
-Group Installations are a way for people to get past the idea of the daunting learn  This one on the left had 70 attendees. At least 30% of the people there have been actively engaged in other projects.
+People are chomping at the bit. In Queens people have stopped waiting for us to
+be ready and are just willing to go and build their own mesh. We are trying to
+figure out how we're trying to meet that demand for leadership.
 
----
+Smaller scale group installations in the Greenpoint network - we're getting
+connectivity and meshing happening in the neighborhood over the summer.
 
-We're mostly situated in Manhattan and brooklyn.
+We're getting things going at block parties in BedStuy in brooklyn. We've been
+speaking  at block parties and getting people interested. We managed to
+outcompete a neighbroing build-your-own-ice-cream stand.
 
-How do we get connected? People are chomping at the bit. In Queens people have stopped waiting and are just willing to go and build stuff. We are trying to figure out how we're trying to meet that demand for leadership.
+We are lucky to be in NYC, get lots of free journalism. People like free or
+affordable internet, it's a great conversation starter.
 
-Smaller scale group installations in the Greenpoint network - we're getting connectivity and meshing happening in the neighborhood over the summer.
+Our outreach surpasses NYC - we have a Slack group. There are other people
+around the country curious about how to build mesh networks. We invite them to
+reach out to the Slack group. We also go to conferences to share our learnings,
+like Strangeloop and BattleMesh.
 
-We're getting things going at block parties in BedStuy in brooklyn. We've been speaking  at block parties and getting people interested. We managed to outcompete a neighbroing build-your-own-ice-cream stand.
+BattleMesh started off as a big conference of mesh protocols to compete with
+each other, but now has more of a collaborative learning atmosphere.
 
---- 
+We've learned a lot. We're good at surviving on a small amount of money. We're
+the only self-sustaining community netowrk. We've been able to scale up
+volunteers over time. Interest has spiked since the repeal of net neutrality.
 
-People are excited about free internet.
+We still have problems, though!  We haven't figured out how to structure
+ourselves as a distributed organization. We're not sure how to secure funding.
+We don't know how we're oging to be able to hire employees, and pay people for
+their work. We're also still really bad at reaching consensus.
 
-Lucky to be in NYC, get lots of journalism and stuff. People like free or affordable internet.
+We're hoping that once we reach 1000 nodes, we might be able to pay some people
+for their hard work. We're also open to hosting applications on the mesh network
+that empower the local communities, like chat and emergency response.
 
----
+Thank you! *[applause]*
 
-Our outreach surpasses NYC - we have aslack group and there's other people around the country curious about how to build mesh networks. We invite anyone to reach out to the Slack group and stuff. We go to conferences to share things. BattleMesh started off as a big conference of mesh protocols to compete with each other, 
+## Q&A
 
----
+We can take a few qustions but just a reminder: We are not network engineers.
 
-We've learned a lot - we're survigin on a small amount of money. We're the only self-sustaining community netowrk. We've been able to scale up volunteers.
+**Audience 1:** How does a decentralized organization sign contracts / function with other ISPs?
 
-We haven't figured out how to structure ourselves as a distributed organization. We're not sure how to secure funding. We don't know how we're oging to be able to hire employees. We're also still really bad at reaching consensus.
+**J:** We used to be project of the internet society ISOC, and they were
+the fallbacks for that. However it still relied on individuals for that. We're
+in the process of applying for a 501c3 so that we can be our own organization.
+We're trying really hard to not centralize the organization for this.
+Specifically, establishing a board has been really tricky.
 
----
+**Audience 2:** Do you have plans for how to reduce your reliance on ISPs for
+longer-distance connections?
 
-Once we reach 1k nodes, we might be able to pay some people for their hard work. We'd like to host applications on their netowrk that empower the local communities. **LOOK_HERE**
+**M:** Short: no. There'es always going t obe  longer-distnace issues
+where ISPs are going to be things. Maybe we can join with a regional mesh
+network. 
 
+**J:** Another issue is being located on backbone, where we're located,
+NYC, doesn't have much connectivity.
 
-Thank you!
+**Audience 3:** Do you have a relationship with HUD (NYC Housing and Urban
+Development)?
 
----
-We can take a few qustions, we are not network engineers.
+**M:** We try to! NYC is very beauracratic. We're hoping that Saratoga is
+an experiment in that space, trying to show we're reliable. Howvevr they are
+already contracting with Sprint.
 
-How does a decentralized organization sign contracts / function with other ISPs?
+**Audience 4:** What's the cost of a typical node install?
 
-- We used to be project of the internet society ISOC, and they were the
-  fallbacks for that. However it still relied on individuals for that. We're in
-the process of applying for a 501c3 so that we can be our own organization.
-We're trying really hard to not centralize the organization for this. Specifically, establishing a board has been really tricky.
+**M:** We're Ubiquity fanboys, for lightbeams they run about $110. For Hub
+nodes its about $160. That's for the sector beams that need to travel a few
+hundred feet.
 
+**J:** We try in our installation price to offer a $50 volunteer fee. We try to
+subsidise installation fees and help out other people. It's a volunteer thing, so if people 
 
-D you have plans for how to reduce your reliance on ISPs for longer-distance connections?
+**Audience 5:** Can you talk about how you patch your network and that sort of thing?
 
-- Short: no. There'es always going t obe  longer-distnace issues where ISPs are going to be things. Maybe we can join with a regional mesh network. 
+**J:** We're compromisable over physical sitations. We are password protected.
+Our general guidance is to keep your network transmission as secure as you
+would in a coffee shop.
 
-- Another issue is being located on backbone, where we're located doesn't have much connectivity.
+**Audience 6:** Have you had to overcome organized opposition? We had to tear
+down the mesh network in Seattle because it was being part of a camera - so
+mesh network has a bad taste there.
 
-Do you have a relationship with HUD?
+**M:** No, not really.
 
-- We try to! NYC is very beauracratic. We're hoping that Saratoga is an experiment in that space, trying to show we're reliable. Howvevr they are already contracting with Sprint.
+**J:** This is where our education plays into this, and teaching how the tech
+works. For example, we're trying to combat the notion that we're just a tool of
+the police because we're not associated with them at all.
 
-What's the cost of a typical node install?
+**Audience 7:** Have you developed strategies to maintain a non-heirarchical organization?
 
-- We're ubiquity fanboys, for lightbeams they run about $110. For Hub nodes its about $160. That's for the sector beams that need to travel a few hundred feet.
+**J:** This is where we tie in to working with neighborhood groups. It's
+definitely challenging. It's still a work in progress. It's something we're
+working on this year.
 
-- We try in our installation price to offer a $50 volunteer fee. We try to subsidise installation fees and help out other people. It's a volunteer thing.
+**Audience 8:** You said you're fearing the day that ISPs notice. What happens
+when the FTC makes this illegal?
 
-Can you talk about how you patch your network and that sort of thing?
+**M:** I don't want to say on camera.
 
-- We're compromisable over physical sitations. We are password protected
-
-Have you had to overcome organized opposition?
-
-- Like...?
-
-We had to tear down in Seattle because it was being part of a camera - so mesh network has a bad taste there.
-
-- No not really
-
-- This is where our education plays into this. How the tech works. We're trying t ocombat the notion that we're just a tool of the police because we're not there at all.
-
-Have you developed strategies to maintain a non-heirarchical organization?
-
-- This is where we tie in to being neighborhood groups. It's definitely challenging. It's still a work in progress.
-
-You siad you're fearing the day that ISPs notice? What happens when the FTC makes this illegal?
-
-- Michael: I don't want to say on camera.
-
-[thunderous applause]
-
----
+*[laughter and applause]*
 
 Thank you for coming to this talk!
 
+*This talk was originally given at Strangeloop 2019.*
 
 <!-- Note on images
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
