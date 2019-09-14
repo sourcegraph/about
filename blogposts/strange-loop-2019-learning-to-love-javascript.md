@@ -37,12 +37,6 @@ Speaker: Tara Vancil
 
 Where she works: [GLITCH](https://glitch.com/)
 
-Speaker Site: [Tara's Site](https://taravancil.com/)
-
-Twitter: @taravancil
-
-Github: [taravancil](https://github.com/taravancil)
-
 ## Why are you here and what will you walk away with?
 
 ### Why are you here?
