@@ -8,8 +8,9 @@ tags: [
   strange-loop
 ]
 slug: strange-loop-2019-apache-pulsar-and-the-legacy-of-telegraphy
-heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
 published: true
+
 ---
 
 <div class="container p-0 liveblog-presenters">
