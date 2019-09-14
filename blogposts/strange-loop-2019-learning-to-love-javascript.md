@@ -170,5 +170,5 @@ JavaScript is precious, learn to love it or eat it's dust.
 ## Q&A
 
 1. **What book would you recommend?**<br>She learned from MDN, Moxilla Developers Network?<br><br>
-1. **What are your thoughts on [WASM](https://webassembly.org/)?**<br>
+2. **What are your thoughts on [WASM](https://webassembly.org/)?**<br>
 Very excited about it because it cooperates with the web, doesn't change/break it.
