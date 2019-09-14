@@ -8,7 +8,7 @@ tags: [
   strange-loop
 ]
 slug: strange-loop-2019-how-to-fix-ai-solutions-to-ml-bias-and-why-they-don-t-matter
-heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
 published: false
 ---
 
