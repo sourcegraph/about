@@ -9,7 +9,7 @@ tags: [
 ]
 slug: strange-loop-2019-machine-learning-to-interpret-sign-language
 heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
-published: false
+published: true
 ---
 
 <div class="container p-0 liveblog-presenters">
@@ -29,7 +29,7 @@ Instead of just teaching Deaf people how to get along with the rest of the world
 
 ---
 
-# The problem that exists
+## The problem that exists
 
 Gestures: composed of hand posture, motion, and position with respect to each other, body parts, objects, etc.
 
@@ -45,7 +45,7 @@ There are parallels between signed and spoken languages in terms of machine reco
 
 Signed languages have some aspects spoken languages don't have, such as facial expressions, signing speed as a modifier of verb meaning, and... well, three dimensions. You need to deal with lighting, differences in pose and camera angle, etc. Various attempts to solve this with multiple cameras, gloves, etc. have been tried. There have also been various attempts to develop annotation systems that transcribe signed languages and otherwise represent them in 2D writing.
 
-# How technology can resolve it
+## How technology can resolve it
 
 Convolutional neural networks (CNNs) are a type of feed-forward neural network inspired by animal vision. As data flows from one layer to the next, it is progressively analyzed at higher and higher levels. Recurrent neural networks (RNN) resemble lists, and also cascade data forward. Exploding and vanishing gradients are an issue that RNNs amplify because they layer so many things atop each other. 
 
