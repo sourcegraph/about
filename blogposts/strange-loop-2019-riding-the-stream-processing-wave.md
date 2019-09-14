@@ -89,7 +89,7 @@ With this approach, restore time is bounded to the frequency of the container he
 
 LinkedIn uses [Frame](https://www.slideshare.net/DavidStein1/frame-feature-management-for-productive-machine-learning) to abstract away all the details of data sources behind a single string.
 
-Just by specifying something like `com.linkedin.member.profile.Title`, both streaming and batch jobs alike can access the required data sources. This allows a lambda architecture with a single codebase, improving maintainability of processing pipeline code.
+Just by specifying something like `com.linkedin.member.profile.Title`, both streaming and batch jobs alike can access the required data sources. This allows data scientists to ride on streams by making it really easy to refer to an existing feature, or to combine features.
 
 ## References
 
