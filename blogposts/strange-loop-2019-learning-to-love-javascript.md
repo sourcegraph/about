@@ -89,9 +89,9 @@ Where she works: [GLITCH](https://glitch.com/)
   * Anyone can participate, no entry fee
   * If you speak the language, you can participate
   * Might not be easy, but is doable
-1. The web is decentralized
+2. The web is decentralized
   * While some goverments/corporations have a large amount of influence, none of them actually own it.
-1. The web is shared
+3. The web is shared
   * Because it doesn't belong to anyone, it belongs to all of us.
   * We have a shared responsibility to maintain it.
 
@@ -99,8 +99,8 @@ Where she works: [GLITCH](https://glitch.com/)
 
 1. JavaScript is an imperfect programming language. All programming languages are imperfect.
   * JavaScript maybe a bit more than the rest
-1. The web is a miracle and we ought to preserve
-1. It's not that serious. Debates about programming languages are all in good fun, but are secondary to what we build with them and who we build for.
+2. The web is a miracle and we ought to preserve
+3. It's not that serious. Debates about programming languages are all in good fun, but are secondary to what we build with them and who we build for.
 
 ### It doesn't make sense to judge JavaScript in a vacuum
 
@@ -123,8 +123,8 @@ Where she works: [GLITCH](https://glitch.com/)
 ### Experiment: What is instead of JavaScript the Web used Haskell?
 
 1. Would the web be the same?
-1. Would schools use it as an intro?
-1. Would we have the same shared commitment?
+2. Would schools use it as an intro?
+3. Would we have the same shared commitment?
 
 Tara would like to argue no!
 
