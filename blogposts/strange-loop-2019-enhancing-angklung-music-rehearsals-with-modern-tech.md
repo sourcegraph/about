@@ -42,7 +42,7 @@ He has been programming far longer than he has been playing Angklung. Naturally 
 
 ## What is an Angklung?
 
-They are made of bamboo tubes. Larger Angklung produce lower notes and smaller Angklung produce smaller notes.
+They are made of bamboo tubes. Larger Angklung produce lower frequency notes and smaller Angklung produce higher frequency notes.
 
 ![Angklung Instrument](/blog/strange-loop-2019/angklung/angklung.png)
 
