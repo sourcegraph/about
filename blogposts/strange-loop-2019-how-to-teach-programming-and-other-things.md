@@ -102,3 +102,7 @@ Things like direct instruction, vocalizing syntax aloud, and being provided exam
 3. Not having a teacher in our programming education is fairly common, however, that's not really the most efficient way to learn. Don’t be afraid to try something different.
 
 4. Research shows that reading things aloud paired with expert explanations produces the greatest success.
+
+#### Watch the Official Recording
+
+[![Strange Loop 2019 - Felienne Hermans "How to Teach Programming and Other Things"](/blog/strange-loop-2019/hot-to-teach-programming.png)](https://youtu.be/g1ib43q3uXQ)
