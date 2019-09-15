@@ -28,125 +28,24 @@ published: false
 Gaming is a rapidly growing industry. Players generate extremely rich datasets that record each and every in-game action, social interaction, ad view or purchase. Because of the constant and continued relationship between player and game, player behavioral data constitutes a unique source of information on human behavior: a simplified dynamic system that replicates real life. In this talk I will discuss the common challenges to both industries and the emergency of models that scale to really big datasets and manage to capture various kinds of consumer tastes and behaviors. Because of the importance of the temporal dimension, models based on CNN, LSTM or DeepAR play a crucial role to push back this new technological frontier. I will review how these techniques can be used to create customized events and provide personalized predictions.
 
 ---
+![From Video Games to Fashion: a Machine Learning Journey, title slide](`/blog/strange-loop-2019/strange-loop-perianez-title.jpg`)
+Note: to get the most out of this talk, one would need a strong background in big data analysis, modeling and forecasting. For technical details, please keep an eye out for the slides to be published. This live blog will be geared toward big data newcomers.
 
-From Video Games to Fashion: a Machine Learning Journey
+As she opened the talk, Perianez noted this was one of the most difficult talks for her to prepare given her recent career shifts. Coming from big data work with CERN, the German weather service and Japanese satellite data, Perianez spent 2015-2019 applying her skills in the realm of video games--analyzing and predicting player behavior. However in the last year she has begun working at Inditex, AI for fashion, and this has brought new challenges to how she approaches data science and predictive forecasting.
+![career shifts 2005-2019](`/blog/strange-loop-2019/strange-loop-perianez-careers.jpg`)
+
+Inditex covers whole cycle of fashion, production, distribution, entailing the tracking of complex supply chains. Every piece of unsold clothes is an error of matching supply and demand. To improve their predictions, Inditex keeps track of every single item from production to sale. 
+
+![man is a deterministic device thrown into a probalistic Universe](`/blog/strange-loop-2019/strange-loop-perianez-deterministic`)
+Still, the greatest challenge is working with humans.
  
-One of the most difficult talks for her to prepare given her recent career background. 
+A classic model for forecasting is Autoregressive--such as the Autoregressive Integrated Moving Average (ARIMA). While this algorithm dates back to the Box and Jenkins work from 1976, it is still one of the most used methods for predicting the future based on the past. 
+
+![Forecasting with ARIMA](`/blog/strange-loop-2019/strange-loop-perianez-arima.jpg`)
+![Forecasting with DeepAR](`/blog/strange-loop-2019/strange-loop-perianez-deepar.jpg`)
+While the specific predictions in video games and fashion differ--predicting player purchases of in-game items vs. consumer purchases of clothing items--they also have much in common, particularly in terms of the role of probalistic forecasting. Perianez gave an extensive breakdown of how two specific modeling systems--ARIMA and DeepAR--performed across her work. DeepAR is promising, a new product out of Amazon, but it is a third-party black box, which has some drawbacks.
  
-Solving practically sequential forecasting problems
- 
-Joined the German weather service to work on big data predictions. Atmospheric dynamics very sensitive I initial conditions. Need to select the right amount of data (tons available) quickly. 
- 
-2014 to Japan to work with satellite data. Change. Move to other fields. 
- 
-Last four years working on predicting player behavior. Video games. 
- 
-This summer changed career to Inditex—AI for fashion. 
- 
-Video game data provides great amounts of player data to understand human behavior. Traditionally had not been properly using the data to solve player needs. 
- 
-Provided info in an operational manner, what they will like from behavior so far. 
- 
-Fashion
-Cambridge Analutica discovered fashion and music preferences were valuable for predicting political affiliation
- 
-Inditex—covers whole cycle of fashion, production, distribution etc. Complex supply chains. 
- 
-Every piece of unsold clothes is an error of matching supply and demand. 
- 
-Full track of every item from production to sale. 
- 
-Slide
-Balance art and science
-Side
- 
-Working with game designers for four years—biggest challenge is working with humans. 
- 
-Often work hard to get knowledge you already have , but don’t want to see conflicting data. 
- 
-Slide
-Challenges
- 
-Slide
-Probabilistic forecasting
-Key to both fields
- 
-Slide
-Slide
-2 graphs from Japanese rpg 
-Sales and playtime. Want to balance
- 
-Slide
-Auto régressive
-Slide
-Box and Jenkins models
-1976
-Still one of the most used methods for solving forecasting problems
-Predict future based on the past 
- 
-Slide 
-30 day forecast 
-Aroma outperforms the rest
- 
-Slide
-Forecasting horizon
- 
-Slide
-Pretty optimistic about deepAR
-Récurrent neural network able to learn from many time series
-Able to do individual predictions for every time series—used on Amazon
- 
-Slide
-Goal
-Learns automatically
-Slide
-DeepAR
-Slide
-Model
-Model conditional distribution of every time series. 
-Slide
-Output of the network is feedback for next step for the training set and the forecast
- 
-Slide
-Compare deep ar and arima 
-Slide
-Arima works better but deep AR is much easier to start with less training data
- 
-Slide 
-Harder to see indliencw
- 
-Slide
-Forecasting with arima
-Pros and cons
- 
-Slide
-Forecasting with deep ar
- 
-Slide
-Recommendationsysrems
-Slide
-Maximize retention
-Want probabilité of next item purchased — all play styles
-Both industries have challenge with time—time is important
-Slide
-Too many items
-Clustering
-Then apply ML model to predict what they will purchase next
-Collaborative filter for every cluster
- 
-Slide
-Dimensionalitu reduction
-See what items are similar
-Slide
-Ensemble learning
-Predict most likely clusters
-Very randomized trees
-Extremely efficient and not biased results
-Slide
-Collaborative feedback
-Slide
-Filtering
- 
+
 Slide 
 Production
 Slide
