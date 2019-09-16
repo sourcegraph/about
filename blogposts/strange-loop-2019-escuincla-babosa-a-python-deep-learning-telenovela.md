@@ -48,6 +48,8 @@ When people start talking about what's possible with deep learning, Mesa said we
 
 ## So why Telenovelas?
 
+![Maria yells escuincla babosa](/blog/strange-loop-2019/escuincla.png)
+
 First off, Mesa asks, why not? One her favorites is called Maria la del Barrio, and there's this scene that's perhaps more absurd than the auto-generated Hasselhoff script, but people wrote this one. The basic premise is that our main villain, Soraya Montenegro, is having a party where Nandito, her ex's son, slips into his stepsister's room to tell her he loves her. As they're having this moment where they're about to kiss, Soraya walks in and screams "Escuincla babosa!"" which roughly means 'you stupid spoiled entitled brat!' The next few minutes are a huge mess, in which a very dramatic fight takes place where Soraya basically fights everyone, including a random man in a suit whose presence is not even explained. Mesa's thinking was if people can generate this delightful absurdity on their own, machine learning really has something to contribute there.
 
 Thinking about what it means to generate a telenovela with deep learning, Mesa says we have to ask ourselves what a telenovela is.
@@ -81,8 +83,7 @@ Mesa looked at 3 major famous telenovelas; La Reina del Sur, Yo Soy Betty, La Fe
 
 So then she got into how to use deep learning for text generation. She brought up the following definition of what machine learning actually is:
 
->"A computer program is said to said to learn from experience (E) with respect to some task (T) and some performance measure (P), if its performance on T, as measured by P, improves with experience E."
--  Tom Mitchell , Machine Learning (1997)"
+>"A computer program is said to said to learn from experience (E) with respect to some task (T) and some performance measure (P), if its performance on T, as measured by P, improves with experience E." -  Tom Mitchell , Machine Learning (1997)
 
 She showed us the below graph of the machine learning landscape:
 
@@ -143,20 +144,3 @@ Her final take away is that text generation is hard, and though small snippets o
 
 Finally, there wasn't a pre-existing dataset for this! Mesa generated hers herself, and would love help expanding it here: github.com/lorenanicole/
 telenovela_scripts
-
-
-
-
-AWESOME LIVEBLOG CONTENT HERE!
-
-<!-- Note on images
-  Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
-
-  Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color
-    - JPEG compression set between 60%-80%
-    - Resizing the image to be no wider then 750px
-    - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
-
-  I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
