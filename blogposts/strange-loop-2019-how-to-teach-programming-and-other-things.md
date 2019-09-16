@@ -105,4 +105,4 @@ Things like direct instruction, vocalizing syntax aloud, and being provided exam
 
 #### Watch the Official Recording
 
-[![Strange Loop 2019 - Felienne Hermans "How to Teach Programming and Other Things"](/blog/strange-loop-2019/hot-to-teach-programming.png)](https://youtu.be/g1ib43q3uXQ)
+[![Strange Loop 2019 - Felienne Hermans "How to Teach Programming and Other Things"](/blog/strange-loop-2019/how-to-teach-programming.png)](https://youtu.be/g1ib43q3uXQ)
