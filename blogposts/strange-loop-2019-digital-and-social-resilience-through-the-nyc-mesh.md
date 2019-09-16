@@ -77,7 +77,7 @@ Here's an image of the undersea cable network that connects the global
 internet. This high-bandwidth network of networks forms what's called the
 "internet backbone".
 
-![map of undersea cables constituting the "internet backbone"](/blog/strange-loop-2019/nyc-mesh-1.jpeg)
+![map of undersea cables constituting the "internet backbone"](/blog/strange-loop-2019/nyc-mesh-1.png)
 
 Connecting your own home to this global network is called the "Last Mile
 Problem", and is the responsibility of an ISP.
@@ -103,7 +103,7 @@ This disparity is called the **digital divide**.
 
 ## Connectivity in NYC
 
-![map of home internet connectivity in NYC, showing Harlem, the Bronx and Queens as underserved](/blog/strange-loop-2019/nyc-mesh-2.jpeg)
+![map of home internet connectivity in NYC, showing Harlem, the Bronx and Queens as underserved](/blog/strange-loop-2019/nyc-mesh-2.png)
 
 These maps show how limited the connectivity is - red is less. Manhattan is
 basically white, while the outer boroughs are much less connected. In the
@@ -130,7 +130,7 @@ singular lossy access point. The idea of a mesh network has been around since
 the 80s. But, it's only recently that the tech became cheap, available, and
 user-friendly enough to allow for true community-owned networks.
 
-![connectivity graph of the Jefferson street neighborhood hub](/blog/strange-loop-2019/nyc-mesh-3.jpeg)
+![connectivity graph of the Jefferson street neighborhood hub](/blog/strange-loop-2019/nyc-mesh-3.png)
 
 Example: here's how we can add additional nodes in between to offer more
 resilience across the nodes.
@@ -225,7 +225,7 @@ Group Installations are a way for people to get past the idea of the daunting
 learn  This one on the left had 70 attendees. At least 30% of the people there
 have been actively engaged in other projects.
 
-![photos of happy volunteers installing routers](/blog/strange-loop-2019/nyc-mesh-6.jpeg)
+![photos of happy volunteers installing routers](/blog/strange-loop-2019/nyc-mesh-6.png)
 
 Photos of new members, happy volunteers. They historically have little to no
 training and are exciting about where they're connecting to and building a
@@ -240,7 +240,7 @@ We cover a wide variety of buildings, from 4-story walk-ups to entire apartment
 complexes. The Saratoga node, a housing unit run by the NYC Housing Authority,
 is our first foray into public-private partnerships.
 
-![front view of St. Francis School for the Deaf](/blog/strange-loop-2019/nyc-mesh-5.jpeg)
+![front view of St. Francis School for the Deaf](/blog/strange-loop-2019/nyc-mesh-5.png)
 
 This picture was taken at the St. Francis school for the deaf, which we've
 helped get on the mesh.
@@ -271,7 +271,7 @@ We've learned a lot. We're good at surviving on a small amount of money. We're
 the only self-sustaining community network. We've been able to scale up
 volunteers over time. Interest has spiked since the repeal of net neutrality.
 
-![graph showing dramatic increase in install rate and install request rate after vote of net neutrality](/blog/strange-loop-2019/nyc-mesh-4.jpeg)
+![graph showing dramatic increase in install rate and install request rate after vote of net neutrality](/blog/strange-loop-2019/nyc-mesh-4.png)
 
 We still have problems, though!  We haven't figured out how to structure
 ourselves as a distributed organization. We're not sure how to secure funding.
@@ -353,17 +353,4 @@ when the FTC makes this illegal?
 
 Thank you for coming to this talk!
 
-
 *This talk was originally given at Strangeloop 2019.*
-
-<!-- Note on images
-  Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
-
-  Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
-    - JPEG compression set between 60%-80%
-    - Resizing the image to be no wider then 750px
-    - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
-
-  I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
