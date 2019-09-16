@@ -199,8 +199,7 @@ is a tool called Alloy.
       - He'd go back to Bob to refine model based on what's possible or not
       - After two weeks of minimal interactions of back and forth, he realized that the API would not work. The folks who built the Customer Experience UI had a completely different understanding of the API. Ended up scrapping the API
 
-3) [Invalidating the Chord Protocol]
-(http://www.pamelazave.com/chord.html)
+3) [Invalidating the Chord Protocol](http://www.pamelazave.com/chord.html)
 
 * By Pamela Zave
 * 7 different correctness claims for Chord protocol
