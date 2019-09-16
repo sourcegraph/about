@@ -30,11 +30,11 @@ Gaming is a rapidly growing industry. Players generate extremely rich datasets t
 ---
 ![From Video Games to Fashion: a Machine Learning Journey, title slide](website/static/blog/strange-loop-2019/strange-loop-perianez-title.jpg)
 
-Having recently made a dramatic shift between industries--from video games to fashion--Perianez noted that this was one of the most difficult talks for her to prepare. Her forecasting work is now in a completely new context. Coming from big data work with CERN, the German weather service and Japanese satellite data, Perianez spent 2015-2019 applying her skills in the realm of video games--analyzing and predicting player behavior. 
+Having recently made a dramatic shift between industries--from video games to fashion--Perianez noted that this was one of the most difficult talks for her to prepare. While she has continued in the practice of predictive forecasting, this work is now in a completely new context. Earlier in her career Perianez worked with academia and atomspheric data sets at CERN, the German weather service and Japanese satellite data. She then moved into the field of video games, where she spent 2015-2019 analyzing and predicting player behavior. 
 
 ![career shifts 2005-2019](website/static/blog/strange-loop-2019/strange-loop-perianez-careers.jpg)
 
-In the last year she has begun working at Inditex, AI for fashion, and this has brought new challenges to how she approaches data science and predictive forecasting. Inditex covers whole cycle of fashion, production, distribution, entailing the tracking of complex supply chains. Every piece of unsold clothes is an error of matching supply and demand. To improve their predictions, Inditex keeps track of every single item from production to sale.
+In the last year Perianez has begun working at Inditex, AI for fashion. Inditex covers whole cycle of fashion, production, distribution, entailing the tracking of complex supply chains. Every piece of unsold clothes is an error of matching supply and demand, so improve their predictions, Inditex keeps track of every single item from production to sale.
 
 ### Man is a deterministic device thrown into a probabilistic Universe
 ![man is a deterministic device thrown into a probalistic Universe](website/static/blog/strange-loop-2019/strange-loop-perianez-deterministic.jpg)
@@ -66,26 +66,28 @@ A classic model for forecasting is Autoregressive--such as the Autoregressive In
 
 ![Forecasting with DeepAR](website/static/blog/strange-loop-2019/strange-loop-perianez-deepar.jpg) 
 
-Slide 
-Production
-Slide
-Workflow
-Dealing with every click, lots of data, done in spark
-Slide 
-Overall system
-Cassandra db
-Slide
-Main challenges
-Many challenges scalability
-Most important communication between data engineers and data scientists 
-Compromise tween goals
- 
-Slide
-Book
-Slide 
-Thank you
+For a more thorough exploration of these models and how Perianez and her team implemented them in various contexts, please watch the video of her Strange Loop talk.
 
+### Main Challenges in Summary
 
+![Main Challenges](website/static/blog/strange-loop-2019/strange-loop-perianez-main-challenges.jpg) 
+
+In summary, the main challenges of Perianez's recent work have been:
+
+* Features can be non-trivial
+* Data cleaning
+* Performance tuning (OOM etc..)
+* Spark testing and research models validation
+
+Despite this, perhaps the greatest challenge she found was communication between Data Engineers and Data Scientists.  With competing priorities and complementary skill sets, the groups need to work hard to stay aligned.
+
+### Conclusions
+
+![Superforecasting](website/static/blog/strange-loop-2019/strange-loop-perianez-quote-2.jpg) 
+
+Quoting "Superforecasting: The Art and Science of Prediction," by Philip E. Tetlock and Dan Gardner: "The Point is now indisputable: when you have a well-validated statistical algorithm, *use it*."
+
+We have an array of excellent tools at our disposal.  Now we need to apply them appropriately and make sure we stay focused on shared goals throughout the process of bringing the power of machine learning and probabilistic forecasting to an industry, whether fashion, video games, or some other field.
 
 <!-- Note on images
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
