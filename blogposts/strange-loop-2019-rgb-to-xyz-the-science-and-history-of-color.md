@@ -1,15 +1,15 @@
 ---
 title: "Strange Loop 2019 - RGB to XYZ: The Science and History of Color"
 description: "Color is a fascinating subject. It is both incredibly subjective (ie. what makes a painting beautiful) and perfectly scientific (ie. wavelengths of light) at the same time. This talk will be a deep dive into the history and science of color and the fascinating world of human perception and the scientists that attempt to define it."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+author: Brittany Walker
+authorUrl: https://musicalwebdev.com
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop
 ]
 slug: strange-loop-2019-rgb-to-xyz-the-science-and-history-of-color
 heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
-published: false
+published: true
 ---
 
 <div class="container p-0 liveblog-presenters">
@@ -31,16 +31,14 @@ Color is a fascinating subject. It is both incredibly subjective (ie. what makes
 
 ---
 
-# # RGB to XYZ: The History and Science of Color - LIVEBLOG
-John Austin
-
+## Introduction
 John Austin is an Independent game developer. He is here today to talk about color.
 
-The talk begins with an overview of when color was beginning to be standardized. At this time in history, math was being done on slide rules and there was barely a concept of electrical computing. Electricity was still not available throughout all of the US and the country was going through the biggest depression in US history because of the stock market crash.
-
-**In the midst of all of this, a bunch of people decide this would be a good time to get together and come up with a unified standard of color.**
+The talk begins with an overview of when color was beginning to be standardized. At this time in history, math was being done on slide rules and there was barely a concept of electrical computing. Electricity was still not available throughout all of the US and the country was going through the biggest depression in US history because of the stock market crash. In the midst of all of this, a group of people decided this would be a good time to get together and come up with a unified standard of color.
 
 In 1931, a group of representatives from various countries met in Paris, France to come up with a unified standard of color. This group of people came up with the systems that still last 100 years later and underly all of the systems we use today for colors.
+
+## Color Science
 
 The talk then went into how we perceive color and how relevant it is in our everyday lives. In today’s world, color is everywhere - on the web, in books, in our clothing. In this world of color, we assume that we must have complex systems to manage it but most use of color is just eyeballing until things look about right.
 
@@ -48,13 +46,11 @@ Color is a weird subject because it is both objective and subjective. It involve
 
 Light is a spectrum. We can only see a fairly small part of the spectrum.  If we were built differently, we would see different parts of the color spectrum. Light and color isn’t as objective as it might seem at first. When light hits our eye it goes into cones. Cones are responsible for our color perception. When perceiving color, humans have short, medium and long cones that all respond differently to the spectrum and mostly align with red, green and blue. (7)
 
-Each cone produces a number. If you are looking at an apple for example, each of your cones responds in a different way. And three numbers are sent to the brain.
-
-_We can describe all colors we can see with just three numbers._
+Each cone produces a number. If you are looking at an apple for example, each of your cones responds in a different way. And three numbers are sent to the brain. We can describe all colors we can see with just three numbers
 
 You only need three numbers to describe every single visible color that you can see. Animals also perceive colors differently. A pigeon for example has five cones so they might see totally different colors. It is just biological happenstance.Color is pretty weird, right?
 
-**Being able to talk about colors is important.** 
+## Color History
 
 We go back to the 1930s and the systems that were created in to learn more.  Back then, a main concern for standardizing colors was globalization. For example, plane and boat signal light colors were very important. If you tell your ally that green is on the left and red is on the right, it is extremely important that there is standardization there for proper communication.
 
@@ -70,13 +66,13 @@ Irwin arrived to the Paris event a week early to meet with John Guild to discuss
 
 The final resolution was based on John Guild’s additive primaries theory but with modifications. 
 
+## Color Spaces
+
 Let’s discuss additive primaries. Back in the day, you couldn’t measure color. You’d need super specialized tools. If you take a target color on one side and then place three primary colors on the other side with known wavelengths. You can add and subtract from those three colors until you have the target color. It gives you three colors or how much of the primaries you need to make up that color.
 
 If you plot these colors in 3D space, with each axis being the amount of the color - then you get a volume of color, which is the color space.  It’s a space with a bunch of colors in it. Also known as color volume.
 
-You can do math in this color space. You can take three numbers and add them together and the color you would get from those numbers would be the same as the color you would get in real life using lights.
-
-**This was the fundamental basis of how we use color…And that’s how they put together these early color spaces.**
+You can do math in this color space. You can take three numbers and add them together and the color you would get from those numbers would be the same as the color you would get in real life using lights. This was the fundamental basis of how we use color. And that’s how they put together these early color spaces.
 
 When making the first color space, there were issues and it is easier to describe by going into 2D space. All the colors we can make are inside of a color because those are the colors that can be blended between the three primaries. So you actually cannot present all colors with a fixed set of primaries. This means that today you cannot make a monitor that can present all visible colors if you use a fixed set of primaries. A $6,500 laser TV with no less than six laser primaries gets you pretty close, but not all the way there.
 
@@ -90,17 +86,13 @@ But CIE-RGB has a lot of problems. Colors can have negative numbers which makes 
 
 When working with color transformations, they have to be linear. This means that the origin must stay in the same spot and the lines have to stay straight. You need it to be linear to get mathematical behavior. 
 
-CIE-XYZ is a color space where we can stretch our colorspace to be positive instead of negative. It is called  XYZ because the axis does not have meaning anymore.  The Y axis is aligned with brightness.
-
-**It is mathematically beautiful.**
+CIE-XYZ is a color space where we can stretch our color space to be positive instead of negative. It is called  XYZ because the axis does not have meaning anymore.  The Y axis is aligned with brightness. It is mathematically beautiful.
 
 CIE-XYZ is the main player in todays world when it comes to color. If Adobe was to create a new color space, they would provide a transformation back to CIE-XYZ, rather than the other color spaces. 
 
-Now in 2019, we are in the digital world. Color is everywhere - in our monitors, displays and images. Back in the 1970s, they realized that we need a color space for the digital world. This is where sRGB comes in. This is the color space you have been waiting for, this is what is being used when you use a color picker in Chrome or in Photoshop.
+Now in 2019, we are in the digital world. Color is everywhere - in our monitors, displays and images. Back in the 1970s, they realized that we need a color space for the digital world. This is where sRGB comes in. This is the color space you have been waiting for, this is what is being used when you use a color picker in Chrome or in Photoshop. This is the "standard RGB".
 
-**This is the standard RGB.**
-
-Let’s compare sRGB with XYZ. 
+## sRGB vs XYZ
 
 sRGB is a subset of XYZ. Monitors use visible primaries so it has to be a subset, and it is a particularly small subset. It was originally designed for CRT monitors, and they were not able to display more than the small subset.
 
@@ -108,9 +100,7 @@ Interesting to note, we are looking at this presentation right now in sRGB!
 
 sRGB is just one more transformation. There is a weird quirk. When you look at a gradient, we are much better telling the difference between darker colors verses lighter colors. This was realized in the 1970s. So they decided add more bits down at the part where we can tell the difference. 
 
-Then they applied the gamma curve (essentially a square root). The curve spreads out the color space so that it is more optimal for storage. But this is not linear! What ends up happening, is that math is not correct in sRGB. If you add two colors, you won’t end up with the color you would get if you add them in real life. This is a perceptual problem in an incredible amount of software. 
-
-**So you probably shouldn’t be doing math in sRGB.**
+Then they applied the gamma curve (essentially a square root). The curve spreads out the color space so that it is more optimal for storage. But this is not linear! What ends up happening, is that math is not correct in sRGB. If you add two colors, you won’t end up with the color you would get if you add them in real life. This is a perceptual problem in an incredible amount of software. So you probably shouldn’t be doing math in sRGB.
 
 You might think this isn’t a big deal. But in 2010, most game rendering was done in sRGB. All of the light was thrown into an exponential function and it looks awful. So after 2010, gaming started using a linear color space instead for a more realistic look. Generally most game engines now use a linear sRGB. 
 
@@ -124,7 +114,7 @@ Let’s look at one more example using CIELAB. Say we want to desaturate an imag
 
 A chart of which color space to use is below:
 
-What color space should I use?
+## What color space should I use?
 
 **Linear sRGB** 
 * Why? When you want to recreate the behavior of real-world light.
@@ -143,8 +133,10 @@ What color space should I use?
 
 In summary, if you really want to create correct to life light, use linear color. But if you care about perceptual correctness, smoothness, and uniformity use CIELAB. In general, we have to use sRGB because it is expected. But we should probably get out of sRGB as soon as possible.
 
-Follow John on Twitter @kleptine
-His website: https://johnaustin.io
+Follow John on Twitter [@kleptine](https://twitter.com/kleptine?lang=en)
+
+His website: [https://johnaustin.io](https://johnaustin.io)
+
 He posts about games, art and math!
 
 <!-- Note on images
