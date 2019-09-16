@@ -313,17 +313,13 @@ If there’s anything you should take away from our experience building Slerf, i
 
 1. Build from what you have; take inventory of the tools already available to you and you might be surprised to see the many creative ways you can combine them.
 
-You might not get to an optimal solution, but you might get a surprisingly effective
-approximation.
+    * You might not get to an optimal solution, but you might get a surprisingly effective approximation.
 
 2. Gate responsibly.
 
-What I mean by this is this: if you’re planning to introduce a new test which is able to block merges, think carefully about what you want that interaction to look like.
-
-We were able to make Slerf a blocking test because we had a
-way for developers to acknowledge failures and move on.
-
-We trusted them to make the right call once they’d read the results of the test suite, and that trust has served us well.
+    * What I mean by this is this: if you’re planning to introduce a new test which is able to block merges, think carefully about what you want that interaction to look like.
+    * We were able to make Slerf a blocking test because we had a way for developers to acknowledge failures and move on.
+    * We trusted them to make the right call once they’d read the results of the test suite, and that trust has served us well.
 
 ** END DISCLAIMER **
 
