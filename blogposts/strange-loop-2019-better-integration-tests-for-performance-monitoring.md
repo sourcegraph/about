@@ -74,7 +74,7 @@ It wasn’t incredibly sustainable given that we were also on-boarding new engin
 
 It was a little bit like trying to launch a fast-food restaurant with a ten-page menu out of a tiny apartment kitchen and trying to increase throughput by throwing more chefs at the problem rather than redesigning the kitchen.
 
-![If you’ve heard of the game Overcooked, it was a little bit like that.](/blog/strange-loop-2019/strange-loop-2019-better-integration-tests-for-performance-monitoring-overcooked.jpg "Overcooked")
+![If you’ve heard of the game Overcooked, it was a little bit like that.](/blog/strange-loop-2019/strange-loop-2019-better-integration-tests-for-performance-monitoring-overcook.jpg)
 
 On top of these growing pains, we were also deploying code to production from 0 to 100% of our servers in under a minute.
 
