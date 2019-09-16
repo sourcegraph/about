@@ -8,7 +8,7 @@ tags: [
   strange-loop
 ]
 slug: strange-loop-2019-ruby-on-the-apple-ii-adventures-in-retro-programming
-heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
 published: false
 ---
 
