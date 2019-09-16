@@ -110,6 +110,7 @@ This is a standard curb with an approx 5 inch drop for this wheelchair.
 To fix the above wheelchair problem, curb cuts were invented. For the first time, wheelchair riders are able to get around town on their own.
 
 ### Curb-Cut Effect
+
 the idea that improvements we make for users with disabilities end up making things better for everyone.
 
 Many people don't actually realize [curb cuts](https://99percentinvisible.org/episode/curb-cuts/) were initially designed for wheelchair riders. People assume that they exist to help with strollers, luggage, pull carts, etc.
@@ -130,6 +131,7 @@ Ian didn't want to mention WCAG very much, while its incredibly helpful he feels
 So where do you start with accessibility? Your keyboard.
 
 1. Focus Management
+
 - **Goal:** Users are able to tab through a page in logical order
 - Make sure the user can tell which element has current focus
   - Show the "blue outline" that is default on links, its essential to this goal. (Outline none, or zero, is so bad it has its own [website](http://www.outlinenone.com).)
@@ -138,25 +140,30 @@ So where do you start with accessibility? Your keyboard.
   - Think of focus outlines as a "digital curb cut" and how they can be helpful to all users. (Removing link outlines, as well as link underlines, are a type of reverse curb-cut effect.)
 
 2. Alt Text and Screen Reader Text
+
 - **Goal:** screen reader users can understand what the active element is.
 - Context needs to be properly communicated to the user through alt text for images, icons, etc.
-- Don't forget links, pagination, etc that are important in page navigation. 
+- Don't forget links, pagination, etc that are important in page navigation.
 
 3. Repetitive Links
+
 - Avoid duplicate or repetitive links for a screen reader. This is not efficient navigation.
 - Use skip links as well as hiding links from screen readers to ensure efficient page navigation.
 
 4. Headings
+
 - Screen readers rely on HTML headings (H tags) to understand how the content on the page is organized. Think of this as a table of contents.
 - Headings of the same level do not need to be styled the same.
 - The semantics that headings provide to screen readers is the most important thing here.
 
 5. Low Vision
+
 - **Magnification:** Use a relative font unit like rems or ems to accomodate screen magnification.
 - **Color Contrast:** Colors should meet [WCAG AA requirements to color contrast](https://webaim.org/resources/contrastchecker/) which benefits all users as another digital curb-cut.
 - **High Contrast Themes:** these themes allow users with low vision to use your site with less difficulty. However, this comes with its own hiccups for CSS implemented background images.
 
 6. Cognitive Accessibility
+
 - Remember that your users are varied in terms of reading level or cognitive abilities.
 - Example isues could be:
   - icons that the user doesn't understand
@@ -166,25 +173,26 @@ So where do you start with accessibility? Your keyboard.
 
 ## Accessibility culture where you work
 
-**EVERYONE NEEDS TRAINING**
+### EVERYONE NEEDS TRAINING
 
-Everyone needs to know the basics and be aware of accessibility concerns and needs to create a better solution for a websites intended users. 
+Everyone needs to know the basics and be aware of accessibility concerns and needs to create a better solution for a websites intended users.
 
 Two recommended training:
+
 1. [Web Accessibility By Google: Developing with Empathy](https://www.udacity.com/course/web-accessibility--ud891)
 2. [Frontend Masters: Accessibility in JavaScript Applications by Marcy Sutton](https://frontendmasters.com/courses/javascript-accessibility/)
 
-Always test for accessability. Reach out to local accessibility communities for feedback as well as assistance in testing. 
+Always test for accessability. Reach out to local accessibility communities for feedback as well as assistance in testing.
 
-**SHARE YOUR KNOWLEDGE**
+### SHARE YOUR KNOWLEDGE
 
-Document your accessibility improvements as much as possible to ensure accessibility is consistent throughtout all aspects of a project and are clearly understood by all team members. 
+Document your accessibility improvements as much as possible to ensure accessibility is consistent throughtout all aspects of a project and are clearly understood by all team members.
 
-A great example of this is [eBay's accessibility documentation](http://ebay.github.io/mindpatterns/). 
+A great example of this is [eBay's accessibility documentation](http://ebay.github.io/mindpatterns/).
 
-**INTERNAL COMMUNICATION**
+### INTERNAL COMMUNICATION
 
-Create a slack channel for internal communication regarding accessibility. This is a space where you could ask for feedback, share resources, or generally have accessibility discussions. 
+Create a slack channel for internal communication regarding accessibility. This is a space where you could ask for feedback, share resources, or generally have accessibility discussions.
 
 ## Closing Thoughts
 
@@ -192,6 +200,6 @@ Create a slack channel for internal communication regarding accessibility. This 
 2. Accessibility is about more than screen readers.
 3. Show some damn empathy, this has an effect on real people.
 
-#### Watch the Official Recording
+### Watch the Official Recording
 
 [![Strange Loop 2019 - Ian Forrest's "Beyond Alt-Text: Trends in Online Accessibility"](/blog/strange-loop-2019/beyond-alt-text-3.png)](https://youtu.be/pNcB7ChyO1E)
