@@ -30,8 +30,9 @@ published: true
 Most of us don't question the assumptions we make about color and how we implement it in the technology we build, beyond perhaps a quick contrast check. This inattention to color is a grave mistake, as the history of color in computing is vibrant, and its impact on our lives can be significant! In this talk, we learn about the difference between Euclidean distance and delta-e between colors, and how it can break ADA compliance, crash your AI, and trick your facial recognition software into thinking you don't exist, all without raising an eyebrow.
 
 ---
-
+[Watch the video recording here](https://www.youtube.com/watch?v=VCvOwoeOgv8)
 ## Introduction
+
 ![speaker intro](/blog/strange-loop-2019/complexities-intro.jpg)
 
 Ellen Wondra is a web developer based in Tacoma, WA, and a graduate of the inaugural class of Ada Developers Academy, a software engineering training program for women and gender diverse people in Seattle. Before she was a developer, Ellen's first introduction to algorithms was through crafting and knitting, when visiting the clearance section on Michaels. She mostly dabbles in fiber arts. A few years ago, Ellen created the Stitchify Ruby gem, which converts an image into a crossstich pattern made with the available colors. This was more difficult than she thought it would be, and she needed to learn a lot about color in order to complete this project.
