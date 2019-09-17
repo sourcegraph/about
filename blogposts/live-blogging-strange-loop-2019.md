@@ -6,7 +6,7 @@ authorUrl: https://twitter.com/ryan_blunden
 publishDate: 2019-09-02T00:00-07:00
 tags: [blog]
 slug: sourcegraph-liveblogging-2019-strange-loop-conference
-heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
+heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
 published: true
 
 ---
