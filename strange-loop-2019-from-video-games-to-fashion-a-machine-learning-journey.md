@@ -30,7 +30,7 @@ Gaming is a rapidly growing industry. Players generate extremely rich datasets t
 ---
 ![From Video Games to Fashion: a Machine Learning Journey, title slide](website/static/blog/strange-loop-2019/strange-loop-perianez-title.jpg)
 
-Dr. África Periáñez has traced a career from scientist to data scientist, including a stint as a CEO along the way, but her recent focus has been probabilistic forecasting.  Having recently made a dramatic shift between industries--from video games to fashion--Periáñez noted that this was one of the most difficult talks for her to prepare. While she has continued in the practice of predictive forecasting, her work is now in a completely new context. Earlier in her career Periáñez worked with academia and atomspheric data sets at CERN and the German weather service. She then moved into the field of video games, where she spent 2015-2019 analyzing and predicting player behavior. 
+Dr. África Periáñez has traced a career from scientist to data scientist, including a stint as a CEO along the way, but her focus for the last few years has been probabilistic forecasting.  Having recently made a dramatic shift between industries--from video games to fashion--Periáñez noted that this was one of the most difficult talks for her to prepare. While she has continued in the practice of predictive forecasting, her work is now in a completely new context. Earlier in her career Periáñez worked with academia and atomspheric data sets at CERN and the German weather service. She then moved into the field of video games, where she spent 2015-2019 analyzing and predicting player behavior. 
 
 ![career shifts 2005-2019](website/static/blog/strange-loop-2019/strange-loop-perianez-careers.jpg)
 
