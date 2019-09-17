@@ -168,12 +168,12 @@ signers.
 
 These two papers present the future without the limitations of previous processes.
 
-Bulletproofs: non interactive zero knowledge proofs with small proof size
+[Bulletproofs: non interactive zero knowledge proofs with small proof size](https://crypto.stanford.edu/bulletproofs/)
 - requires no trusted setup
 - uses normal elliptic cursves - doesn't require bilinear curves
 - ideally suited for ranged proofs - but still provides R1CS
 
-zkSTARKs - Symmetric Cryptography - post quantum security
+[zkSTARKs - Symmetric Cryptography - post quantum security](https://eprint.iacr.org/2018/046.pdf)
 - no trusted setup: eliminates CRS with techniques close to erasure codes
 - algebraic intermediate representation instead of R1CS
 - complex math
@@ -199,7 +199,7 @@ setup](https://www.semanticscholar.org/paper/Spartan%3A-Efficient-and-general-pu
 
 On Tuesday (September 10, 2019), major new development had happened with the publication of 
 [Halo: Recursive Proof
-Composition](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/). Halo combines best parts of SNARKs and Bullet proofs with no trusted setup and uses normal elliptic curves.
+Composition](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/). Halo combines best parts of SNARKs and Bullet proofs with no trusted setup and uses normal elliptic curves. If you want to see it in practice, there's a WIP implementation on github: [https://github.com/ebfull/halo](https://github.com/ebfull/halo)
 
 ## Q&A
 
@@ -207,17 +207,3 @@ Tony deffered the question about the link between P!=NP and Zero Knowledge Proof
 proofs would be step towards proving P!=NP. 
 His work involves building a bridge between Cosmos and the Zcash Shielded Pools.
 In terms of practical usages, Tony presented the idea of checking for Non inclusion lists like checking for no fly lists without disclosing name, etc 
-
-
-
-<!-- Note on images
-  Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
-
-  Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
-    - JPEG compression set between 60%-80%
-    - Resizing the image to be no wider then 750px
-    - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
-
-  I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
