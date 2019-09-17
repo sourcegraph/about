@@ -9,7 +9,7 @@ tags: [
 ]
 slug: strange-loop-2019-the-idea-becomes-a-machine-that-makes-the-art-that
 heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
-published: false
+published: true
 ---
 
 <div class="container p-0 liveblog-presenters">
