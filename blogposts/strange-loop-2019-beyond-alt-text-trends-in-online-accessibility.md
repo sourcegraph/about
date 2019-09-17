@@ -42,7 +42,7 @@ If you're like the 2016 version of me, then you think you have a decent handle o
 -->  
 ![Beyond Alt-Text: Trends in Online Accessibility Presentation Title Slide](/blog/strange-loop-2019/beyond-alt-text-0.png)
 
-## A bit about our speaker, Ian Forrest
+## A bit about our speaker - Ian Forrest
 
 Ian is an Engineering Manager based out of Toronto. Currently he works at BiblioCommons, where he leads the development of a multi-site WordPress application used by public libraries in over twenty cities including St. Louis, Chicago, and Boston. He has also had some successful side projects including gradient-animator.com, a CSS generator for animated gradients. In his free time he enjoys watching old movies and hopelessly cheering for local sports teams.
 
@@ -51,7 +51,7 @@ Ian is an Engineering Manager based out of Toronto. Currently he works at Biblio
 Terminology is important, it helps each of us to understand exactly what we are talking about.
 
 >**Disability:**
->a physical, mental, cognitive, or developmental condition that limits a persnon's ability to engage in certain tasks or participate in typical daily activities.
+>a physical, mental, cognitive, or developmental condition that limits a person's ability to engage in certain tasks or participate in typical daily activities.
 
 What's important here is to pay attention to the word **typical**, this is key. Disability can be very contextual.
 
@@ -102,7 +102,7 @@ However, we **all** use and take these for granted. These public affordances did
 
 A strong [disability rights movement](https://en.wikipedia.org/wiki/Disability_rights_movement) took place in the 60's and 70's, thanks to [Ed Roberts](https://en.wikipedia.org/wiki/Ed_Roberts_(activist)), that really changed the way we percieve and value people with disabilities.
 
-Although this major shift in public opinon occurred several decades ago, we can still see renovations and retrofits occuring to public spaces. The Toronoto subway stations are a prime example. The stations were built in the 60's and are today retrofitting elevators, a very slow and expensive process.
+Although this major shift in public opinion occurred several decades ago, we can still see renovations and retrofits occuring to public spaces. The Toronto subway stations are a prime example. The stations were built in the 60's and are today retrofitting elevators, a very slow and expensive process.
 
 ![Presentation slide showing a wheelchair at a curb with a 5 inch drop. No curb cut present.](/blog/strange-loop-2019/beyond-alt-text-1.png)
 This is a standard curb with an approx 5 inch drop for this wheelchair.
@@ -111,13 +111,13 @@ To fix the above wheelchair problem, curb cuts were invented. For the first time
 
 ### Curb-Cut Effect
 
-the idea that improvements we make for users with disabilities end up making things better for everyone.
+The idea that improvements we make for users with disabilities end up making things better for everyone.
 
 Many people don't actually realize [curb cuts](https://99percentinvisible.org/episode/curb-cuts/) were initially designed for wheelchair riders. People assume that they exist to help with strollers, luggage, pull carts, etc.
 
 While the curb-cut effect benefits everyone, its important to remember that these affordances are **essential** for people with disabilities.
 
-![Presentation slide showing a wheelchair path to cross at an intersection without curb cuts.](/blog/strange-lopp-2019/bwyond-alt-text-2.png)
+![Presentation slide showing a wheelchair path to cross at an intersection without curb cuts.](/blog/strange-loop-2019/beyond-alt-text-2.png)
 Here we have the path a wheelchair must take to get from one corner at an intersection to another without curb-cuts. Crossing the street is no longer a simple matter for a wheelchair rider.
 
 Today, we're in the midst of a similar push for disability right, but this time for our digital spaces.
@@ -130,7 +130,7 @@ Ian didn't want to mention WCAG very much, while its incredibly helpful he feels
 
 So where do you start with accessibility? Your keyboard.
 
-1. Focus Management
+### Focus Management
 
 - **Goal:** Users are able to tab through a page in logical order
 - Make sure the user can tell which element has current focus
@@ -139,30 +139,30 @@ So where do you start with accessibility? Your keyboard.
   - Use skip links when necessary to aid in page navigation.
   - Think of focus outlines as a "digital curb cut" and how they can be helpful to all users. (Removing link outlines, as well as link underlines, are a type of reverse curb-cut effect.)
 
-2. Alt Text and Screen Reader Text
+### Alt Text and Screen Reader Text
 
 - **Goal:** screen reader users can understand what the active element is.
 - Context needs to be properly communicated to the user through alt text for images, icons, etc.
 - Don't forget links, pagination, etc that are important in page navigation.
 
-3. Repetitive Links
+### Repetitive Links
 
 - Avoid duplicate or repetitive links for a screen reader. This is not efficient navigation.
 - Use skip links as well as hiding links from screen readers to ensure efficient page navigation.
 
-4. Headings
+### Headings
 
 - Screen readers rely on HTML headings (H tags) to understand how the content on the page is organized. Think of this as a table of contents.
 - Headings of the same level do not need to be styled the same.
 - The semantics that headings provide to screen readers is the most important thing here.
 
-5. Low Vision
+### Low Vision
 
 - **Magnification:** Use a relative font unit like rems or ems to accomodate screen magnification.
 - **Color Contrast:** Colors should meet [WCAG AA requirements to color contrast](https://webaim.org/resources/contrastchecker/) which benefits all users as another digital curb-cut.
 - **High Contrast Themes:** these themes allow users with low vision to use your site with less difficulty. However, this comes with its own hiccups for CSS implemented background images.
 
-6. Cognitive Accessibility
+### Cognitive Accessibility
 
 - Remember that your users are varied in terms of reading level or cognitive abilities.
 - Example isues could be:
@@ -171,7 +171,7 @@ So where do you start with accessibility? Your keyboard.
   - if your target audience and content reading level do not match
 - [HemingwayApp](http://www.hemingwayapp.com/) is a tool that you can use to test the readability of your sentences or paragraphs.
 
-## Accessibility culture where you work
+## Accessibility culture where you work, what YOU can do
 
 ### EVERYONE NEEDS TRAINING
 
