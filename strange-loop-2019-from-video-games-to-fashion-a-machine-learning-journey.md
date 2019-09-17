@@ -9,7 +9,7 @@ tags: [
 ]
 slug: strange-loop-2019-from-video-games-to-fashion-a-machine-learning-journey
 heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
-published: false
+published: true
 ---
 
 <div class="container p-0 liveblog-presenters">
