@@ -127,6 +127,6 @@ Mike cautions against applying federated learning until you've established perfo
 
 ### Referenced Material
 
-1. [Turbofan](turbofan.fastforwardlabs.com)
+1. [Turbofan](https://turbofan.fastforwardlabs.com)
 
 ![Reading list](/blog/strange-loop-2019/fed-learning-7.jpeg)
