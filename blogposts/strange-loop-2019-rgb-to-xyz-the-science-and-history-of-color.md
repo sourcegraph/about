@@ -153,11 +153,18 @@ A chart of which color space to use is below:
 
 In summary, if you really want to create correct to life light, use linear color. But if you care about perceptual correctness, smoothness, and uniformity use CIELAB. In general, we have to use sRGB because it is expected. But we should probably get out of sRGB as soon as possible.
 
-Follow John on Twitter [@kleptine](https://twitter.com/kleptine?lang=en)
+### Contact Information
+
+Follow John on Twitter [@kleptine](https://twitter.com/kleptine?lang=en). He posts about games, art, and math!
 
 His website: [https://johnaustin.io](https://johnaustin.io)
 
-He posts about games, art, and math!
+### Watch the Official Recording on Youtube
+
+[![Strange Loop 2019 - "RGB to XYZ: The Science and History of Color" by John Austin"](/blog/strange-loop-2019/rgb-to-xyz-video-screenshot.png)](https://www.youtube.com/watch?v=AS1OHMW873s)
+
+
+
 
 <!-- Note on images
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
