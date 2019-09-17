@@ -39,12 +39,12 @@ What if you could find complex bugs in systems without ever having looked at any
 
 The problem with these is that these require either your or a tool is looking at your code or your code is running.
 
-## Where to Start with finding bugs:
+## Where to Start with finding bugs
 
-1. **Talking to an expert and writing stuff down**<br>
+1. **Talking to an expert and writing stuff down**<br/>
 As the explainer explains the code, they might find scenarios due to the fact that explaining forces your brain to work in different ways and potentially sees new paths.<br/><br/>
 
-2. **Write down on paper what you know or think you know about your system**<br>
+2. **Write down on paper what you know or think you know about your system**<br/>
 Writing is nature's way of letting you know how sloppy your thinking is. - quote by Dick Guindon
 
 ## What you're probably thinking?
@@ -58,7 +58,8 @@ He's not going to just stand here and tell people to write things down, the focu
 is a tool called Alloy.
 
 [Alloy](http://alloy.lcs.mit.edu/alloy/) is a tool from MIT, from the general class of tools known as a Model Checker.
-  - Describe your formal design in a way that the computer can explore the various scenarios and check state against correctness properties.
+  
+- Describe your formal design in a way that the computer can explore the various scenarios and check state against correctness properties.
 
 ## Working Example
 
@@ -103,7 +104,7 @@ is a tool called Alloy.
             - New bug: User has permissions on resource that belongs to another account.
     - Next Steps Taken in Alloy GUI:
         1. Add implies
-            -  user with permissions on resources has access to resources account
+          -  user with permissions on resources has access to resources account
     - Alloy lets you make assertions, which you can ask it to check to make sure the assertion is met.
     - Next Steps Taken in Alloy GUI:
         1. Add Check/Assertion: Resource belongs to exactly one account
@@ -117,12 +118,16 @@ is a tool called Alloy.
             - returns true if the resource is in the list of resources a user has access to or if the resource has a parent that the user has access to.
         2. Add new check/assertion: Implicit access
         3. Run execute: New bug! User can't access more than n-1 levels deep.
+
 #### What did we do with this example?
+
 1. Design validation
     - One of the biggest reasons to use a model checker. Helps cover cases that could potentially be unit tests since you can't check them all.
 2. Design Exploration
     - Alloy gives you a way to explore possible scenarios a system might enter and lets you decide how to handle them.
-### Real Life Example:
+
+### Real Life Example
+
 1. Help model interaction with multiple other systems with Alloy
     - Experiment to test integration of other system into the company's multiple system
         - multiple portals
@@ -146,13 +151,14 @@ is a tool called Alloy.
         - Once the model was in a reasonable spot (one day's worth of work), he'd run scenario
         - He'd go back to Bob to refine model based on what's possible or not
         - After two weeks of minimal interactions of back and forth, he realized that the API would not work. The folks who built the Customer Experience UI had a completely different understanding of the API. Ended up scrapping the API
-3. [Invalidating the Chord Protocol]
-(http://www.pamelazave.com/chord.html)
+3. [Invalidating the Chord Protocol](http://www.pamelazave.com/chord.html)
     - By Pamela Zave
     - 7 different correctness claims for Chord protocol
     - Pamela put the claims in as checks, Alloy found counter examples
     - she then used alloy to fix it
-## Takeaways:
+
+## Takeaways
+
 1. Write things down!!!
     - Not in code, give your brain a chance to think on things differently
 2. Model existing systems
@@ -160,7 +166,9 @@ is a tool called Alloy.
     - Use it to model existing systems to find improvements.
 3. Model new systems
     - Find bugs in the modeling stage
-## Resources:
+
+## Resources
+
 - [The Book](alloytools.org/book.html)
 - [www.aosabook.org/en/500L/the-same-origin-policy.html](www.aosabook.org/en/500L/the-same-origin-policy.html)
 - [www.hillelwayne.com (Alloy and TLA+)](www.hillelwayne.co)
