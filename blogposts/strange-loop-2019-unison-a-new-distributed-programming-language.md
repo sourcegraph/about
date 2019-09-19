@@ -1,7 +1,7 @@
 ---
 title: "Strange Loop 2019 - Unison: a new distributed programming language"
 description: "Unison is an open source functional programming language with special support for building distributed, elastic systems. It began as an experiment: rethink all aspects of the programming experience, including the core language, runtime, tooling, as well as code versioning and publishing, and then do whatever is necessary to eliminate needless complexity and make building software once again delightful, or at the very least, reasonable."
-author: Sneha Inguva for the Strange Loop 2019 Liveblog
+author: Sneha Inguva
 authorUrl: http://www.snehainguva.com/
 publishDate: 2019-09-14T00:00-13:30
 tags: [
