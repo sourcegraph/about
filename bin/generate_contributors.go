@@ -56,6 +56,7 @@ func main() {
 		"chrismwendt":     "",
 		"christinaforney": "",
 		"dadlerj":         "",
+		"efritz":          "",
 		"felixfbecker":    "",
 		"ggilmore":        "",
 		"ijt":             "",
@@ -74,6 +75,7 @@ func main() {
 		"sqs":             "",
 		"todo":            "",
 		"tsenart":         "",
+		"uwedeportivo":    "",
 		"vanesa":          "",
 	}
 
