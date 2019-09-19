@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-This release contains lots of behind the scenes work, both foundational and forward looking. Sourcegraph 3.8 introduces faster and more precise [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)-based code intelligence, and campaign monitoring, the first step towards [code change Automation](https://about.sourcegraph.com/product/automation). In addition to these new concepts, 3.8 introduces search result tabs for better search result discoverability, and the first step towards better monitoring for admins with built-in monitoring tools deployed with every instance.
+This release contains lots of behind the scenes work, both foundational and forward-looking. Sourcegraph 3.8 introduces faster and more precise [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)-based code intelligence, and campaign monitoring, the first step towards [code change Automation](https://about.sourcegraph.com/product/automation). In addition to these new concepts, 3.8 introduces search result tabs for better search result discoverability, and the first step towards better monitoring for admins with built-in monitoring tools deployed with every instance.
 
 <div style="padding-left: 2rem">
 
@@ -22,7 +22,7 @@ TO DO???
 [**🧠 Beta release of fast and precise LSIF-based code intelligence**](#beta-release-of-fast-and-precise-lsif-based-code-intelligence)<br />
 Faster, more precise code intelligence for TypeScript, Go, Python, and C/C++
 
-[**🔎 Search result tabs for improved resuslt type discoverability**](#search-result-tabs-for-improved-resuslt-type-discoverability)<br />
+[**🔎 Search result tabs for improved result type discoverability**](#search-result-tabs-for-improved-result-type-discoverability)<br />
 
 [**📊 Out of the box monitoring of your Sourcegraph instance**](#out-of-the-box-monitoring-of-your-sourcegraph-instance)<br />
 
@@ -76,7 +76,7 @@ Our solution to fast and precise code intelligence is with LSIF. We first wrote 
 
 In Sourcegraph 3.8, LSIF-backed code intelligence is available for beta testing by early adopters. The currently supported languages (ones with LSIF indexers) are [TypeScript](https://github.com/microsoft/lsif-node), [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp). Check out the documentation for [details on how to try it out on your code](https://docs.sourcegraph.com/user/code_intelligence/lsif).
 
-## Search result tabs for improved resuslt type discoverability
+## Search result tabs for improved result type discoverability
 
 TO DO: VIDEO
 
@@ -104,7 +104,7 @@ TO DO: VIDEO
 </p>
 -->
 
-Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins to keep tabs on the health of your Sourcegraph instance. Sourcegraph now ships with Grafana and Prometheus built-in, and some basic dashboards for better debugging of your instance. We will continue to work on improving the dashboards and metrics surfaced in the next release, with the goal of providing an accurate view into the health of your instance.
+Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins to keep tabs on the health of your Sourcegraph instance. Sourcegraph now ships with Grafana and Prometheus built-in, and some basic dashboards for better debugging of your instance. We will continue to work on improving the dashboards and metrics surfaced in the next release, with the goal of providing an accurate view of the health of your instance.
 
 ## Behind the scenes: Even more benchmarking, automated testing, and QA
 
@@ -133,7 +133,7 @@ TO DO: VIDEO
 </p>
 -->
 
-You can now toggle the browser extension on and off without having to fully disable the extension. This was added to make testing and personal workflows easier for users to quickly opt in and out of the extension capabilities.
+You can now toggle the browser extension on and off without having to fully disable the extension. This was added to make testing and personal workflows easier for users to quickly opt-in and out of the extension capabilities.
 
 ## Changelog
 
