@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-We're excited to announce Sourcegraph 3.8. This release contains lots of behind the scenes work, both foundational and forward looking. Sourcegraph 3.8 introduces faster and more precise [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)-based code intelligence, and campaign monitoring, the first step towards [code change Automation](https://about.sourcegraph.com/product/automation). In addition to these new concepts, 3.8 introduces search result tabs for better search result discoverability, and the first step towards better monitoring for admins with built-in monitoring tools deployed with every instance.
+This release contains lots of behind the scenes work, both foundational and forward looking. Sourcegraph 3.8 introduces faster and more precise [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)-based code intelligence, and campaign monitoring, the first step towards [code change Automation](https://about.sourcegraph.com/product/automation). In addition to these new concepts, 3.8 introduces search result tabs for better search result discoverability, and the first step towards better monitoring for admins with built-in monitoring tools deployed with every instance.
 
 <div style="padding-left: 2rem">
 
@@ -53,7 +53,7 @@ TO DO: Include one of the demo videos here?
 </p>
 -->
 
-[Large scale code change Automation](https://about.sourcegraph.com/product/automation) is coming soon to Sourcegraph. With this functionality, you will be able to automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt. We have started our implementation with campaign management - the ability to track sets of changes (e.g. pull requests) to ensure they are rolled out throughout your organization.
+We have started working to add new [Automation](https://about.sourcegraph.com/product/automation) workflows to Sourcegraph. Soon, you will be able to automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
 
 [See our prototype of Automation in action](https://about.sourcegraph.com/product/automation#see-it-in-action) and let us know if you are interested in learning more, or if Automation would benefit you and your company.
 
@@ -70,7 +70,7 @@ TO DO: VIDEO?
 </p>
 -->
 
-Each Sourcegraph instance ships with basic code intelligence that provides jump to definition and find references for every language. Basic code intelligence works well for many of our customers, but some customers have been asking for more precise code intelligence. We previously used language servers to provide precise code intelligence, but they were complex to configure, required separate deployment, and were slow to initialize.
+Each Sourcegraph instance ships with basic code intelligence that provides jump to definition and find references for every language. Basic code intelligence works well for many of our customers, but some customers have been asking for more precise code intelligence. Language servers provide precise code intelligence, but they are complex to configure, require separate deployment, and are slow to initialize, so we have added support for LSIF based code intelligence.
 
 Our solution to fast and precise code intelligence is with LSIF. We first wrote about LSIF (Language Server Index Format) in [code intelligence using LSIF](https://about.sourcegraph.com/blog/code-intelligence-with-lsif). This blogpost gives an overview of what LSIF is, and why we are working to support it.
 
@@ -108,7 +108,7 @@ Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins 
 
 ## Behind the scenes: Even more benchmarking, automated testing, and QA
 
-Over the last few releases we have worked on improving Sourcegraph’s performance at scale for customers with 30k+ repositories, and we continue to do so. With each major improvement we make to search, we’re now running even more extensive end-to-end load tests to verify our improvements. Previously, we would rely primarily on unit-level benchmarks. These load tests enable us to quickly gather and analyze approximately one million search API requests, and automatically generate reports we can interpret and learn from:
+Over the last few releases we have worked on improving Sourcegraph’s performance at scale for customers with 30k+ repositories, and we continue to do so. With each major improvement we make to search, we’re now running even more extensive end-to-end load tests to verify our improvements. These load tests enable us to quickly gather and analyze approximately one million search API requests, and automatically generate reports we can interpret and learn from:
 
 ![search performance benchmarks](images/3.8-benchmarks.png "search performance benchmarks")
 
