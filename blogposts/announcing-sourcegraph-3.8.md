@@ -16,7 +16,7 @@ We're excited to announce Sourcegraph 3.8. This release contains lots of behind 
 
 <div style="padding-left: 2rem">
 
-[**🤖 Introducing Automation: first steps toward supporting large-scale code modification**](#introducing-automation-first-steps-toward-large-scale-code-code-modification)<br />
+[**🤖 Introducing Automation: first steps toward supporting large-scale code modification**](#introducing-automation-first-steps-toward-supporting-large-scale-code-modification)<br />
 Learn more about new functionality that is coming soon to Sourcegraph!
 
 [**🧠 Beta release of fast and precise LSIF-based code intelligence**](#beta-release-of-fast-and-precise-lsif-based-code-intelligence)<br />
@@ -51,11 +51,11 @@ Sourcegraph couldn't be what it is without the community.
 
 Soon, you can [use Sourcegraph to automate](https://about.sourcegraph.com/product/automation) large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
 
-[Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see it in action. We're opening it up to organizations upon request right now in the private beta period, so reach out to us using the form on that page if you'd like to start using it.
+[Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see it in action. We're opening it up to organizations upon request for the private beta period, so reach out to us using the form on that page if you'd like to start using it.
 
 ## Beta release of fast and precise LSIF-based code intelligence
 
-<!-- ![LSIF code intelligence comparison](images/3.8-lsif.png "LSIF code intelligence comparison") -->
+![LSIF code intelligence comparison](images/3.8-lsif.png "LSIF code intelligence comparison")
 
 Each Sourcegraph instance ships with basic code intelligence that provides jump to definition and find references for every language. Basic code intelligence works well for many of our customers, but some customers have been asking for more precise code intelligence. Language servers provide precise code intelligence, but they are complex to configure, require separate deployment, and are slow to initialize, so we have added support for LSIF based code intelligence.
 
