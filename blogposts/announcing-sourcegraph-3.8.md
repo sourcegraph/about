@@ -16,7 +16,7 @@ We're excited to announce Sourcegraph 3.8. This release contains lots of behind 
 
 <div style="padding-left: 2rem">
 
-[**🤖 Introducing Automation: first steps toward large scale code code modification**](#introducing-automation-first-steps-toward-large-scale-code-code-modification)<br />
+[**🤖 Introducing Automation: first steps toward supporting large-scale code modification**](#introducing-automation-first-steps-toward-large-scale-code-code-modification)<br />
 Learn more about new functionality that is coming soon to Sourcegraph!
 
 [**🧠 Beta release of fast and precise LSIF-based code intelligence**](#beta-release-of-fast-and-precise-lsif-based-code-intelligence)<br />
@@ -40,7 +40,7 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## Introducing Automation: first steps toward large scale code code modification
+## Introducing Automation: first steps toward supporting large-scale code modification
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -49,9 +49,9 @@ Sourcegraph couldn't be what it is without the community.
   <p style="text-align: center"><a href="https://vimeo.com/355392896" target="_blank">View on Vimeo</a></p>
 </p>
 
-We have started working to add new [Automation](https://about.sourcegraph.com/product/automation) workflows to Sourcegraph. Soon, you will be able to automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
+Soon, you can [use Sourcegraph to automate](https://about.sourcegraph.com/product/automation) large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
 
-See [the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) in action and let us know if you are interested in learning more, or if Automation would benefit you and your company.
+[Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see it in action. We're opening it up to organizations upon request right now in the private beta period, so reach out to us using the form on that page if you'd like to start using it.
 
 ## Beta release of fast and precise LSIF-based code intelligence
 
