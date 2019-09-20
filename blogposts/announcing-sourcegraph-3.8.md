@@ -65,23 +65,23 @@ In Sourcegraph 3.8, LSIF-backed code intelligence is available for beta testing 
 
 ## Search result tabs for improved result type discoverability
 
-<!-- <p class="container">
+<p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/361355622?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p> -->
+  <p style="text-align: center"><a href="https://vimeo.com/361355622" target="_blank">View on Vimeo</a></p>
+</p>
 
 Many users were not aware of the different search result types that are supported by Sourcegraph, such as diff or symbol results. We have added tabs to the search results page to surface the different result types and make it quick and easy to navigate between them.
 
 ## Out of the box monitoring of your Sourcegraph instance
 
-<!-- <p class="container">
+<p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/361342137?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p> -->
+  <p style="text-align: center"><a href="https://vimeo.com/361342137" target="_blank">View on Vimeo</a></p>
+</p>
 
 Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins to keep tabs on the health of your Sourcegraph instance. Sourcegraph now ships with Grafana and Prometheus built-in, and some basic dashboards for better debugging of your instance. We will continue to work on improving the dashboards and metrics surfaced in the next release, with the goal of providing an accurate view of the health of your instance.
 
@@ -101,12 +101,12 @@ We’ve also been hard at work automating even more of our internal testing and 
 
 ## Quickly toggle the browser extension on/off
 
-<!-- <p class="container">
+<p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/361358653?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p> -->
+  <p style="text-align: center"><a href="https://vimeo.com/361358653" target="_blank">View on Vimeo</a></p>
+</p>
 
 You can now toggle the browser extension on and off without having to fully disable the extension. This was added to make testing and personal workflows easier for users to quickly opt in and out of the extension capabilities.
 
