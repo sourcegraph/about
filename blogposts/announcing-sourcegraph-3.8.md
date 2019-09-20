@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.8: Search UI improvements, monitoring tools, Automation, and LSIF-based code intelligence"
 author: Christina Forney
-publishDate: 2019-09-01T10:00-07:00
+publishDate: 2019-09-20T10:00-07:00
 tags: [
   blog
 ]
