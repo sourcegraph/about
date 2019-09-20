@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.8: Introducing campaign management with Automation and LSIF-based code intelligence"
+title: "Sourcegraph 3.8: Foundational and forward looking features with search UI improvements, monitoring tools, Automation, and LSIF-based code intelligence"
 author: Christina Forney
 publishDate: 2019-09-01T10:00-07:00
 tags: [
@@ -12,15 +12,15 @@ published: true
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-This release contains lots of behind the scenes work, both foundational and forward-looking. Sourcegraph 3.8 introduces faster and more precise [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md)-based code intelligence, and campaign monitoring, the first step towards [code change Automation](https://about.sourcegraph.com/product/automation). In addition to these new concepts, 3.8 introduces search result tabs for better search result discoverability, and the first step towards better monitoring for admins with built-in monitoring tools deployed with every instance.
+We're excited to announce Sourcegraph 3.8. This release contains lots of behind the scenes work, both foundational and forward-looking.
 
 <div style="padding-left: 2rem">
 
-[**🤖 Introducing Automation: first stages of campaign management**](#introducing-automation-first-stages-of-campaign-management)<br />
-TO DO???
+[**🤖 Introducing Automation: first steps toward large scale code code modification**](#introducing-automation-first-steps-toward-large-scale-code-code-modification)<br />
+Learn more about new functionality that is coming soon to Sourcegraph!
 
 [**🧠 Beta release of fast and precise LSIF-based code intelligence**](#beta-release-of-fast-and-precise-lsif-based-code-intelligence)<br />
-Faster, more precise code intelligence for TypeScript, Go, Python, and C/C++
+Faster, more precise code intelligence for TypeScript, Go, Python, and C/C++.
 
 [**🔎 Search result tabs for improved result type discoverability**](#search-result-tabs-for-improved-result-type-discoverability)<br />
 
@@ -31,7 +31,7 @@ Faster, more precise code intelligence for TypeScript, Go, Python, and C/C++
 [**🔦 Quickly toggle the browser extension on/off**](#quickly-toggle-the-browser-extension-onoff)<br />
 
 [**📝 Changelog**](#changelog)<br />
-Every detail that changed in this release
+Every detail that changed in this release.
 
 [**🎖️ Thank you**](#thank-you)<br />
 Sourcegraph couldn't be what it is without the community.
@@ -40,35 +40,22 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## Introducing Automation: first stages of campaign management
+## Introducing Automation: first steps toward large scale code code modification
 
-TO DO: Include one of the demo videos here?
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/355392896?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/355392896" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 We have started working to add new [Automation](https://about.sourcegraph.com/product/automation) workflows to Sourcegraph. Soon, you will be able to automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
 
-[See our prototype of Automation in action](https://about.sourcegraph.com/product/automation#see-it-in-action) and let us know if you are interested in learning more, or if Automation would benefit you and your company.
+See [part 2 of the Automation prototype](https://about.sourcegraph.com/product/automation#see-it-in-action) in action and let us know if you are interested in learning more, or if Automation would benefit you and your company.
 
 ## Beta release of fast and precise LSIF-based code intelligence
 
-TO DO: VIDEO?
-
-<!--
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p>
--->
+![LSIF code intelligence comparison](images/3.8-lsif.png "LSIF code intelligence comparison")
 
 Each Sourcegraph instance ships with basic code intelligence that provides jump to definition and find references for every language. Basic code intelligence works well for many of our customers, but some customers have been asking for more precise code intelligence. Language servers provide precise code intelligence, but they are complex to configure, require separate deployment, and are slow to initialize, so we have added support for LSIF based code intelligence.
 
@@ -78,31 +65,23 @@ In Sourcegraph 3.8, LSIF-backed code intelligence is available for beta testing 
 
 ## Search result tabs for improved result type discoverability
 
-TO DO: VIDEO
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 Many users were not aware of the different search result types that are supported by Sourcegraph, such as diff or symbol results. We have added tabs to the search results page to surface the different result types and make it quick and easy to navigate between them.
 
 ## Out of the box monitoring of your Sourcegraph instance
 
-TO DO: VIDEO
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins to keep tabs on the health of your Sourcegraph instance. Sourcegraph now ships with Grafana and Prometheus built-in, and some basic dashboards for better debugging of your instance. We will continue to work on improving the dashboards and metrics surfaced in the next release, with the goal of providing an accurate view of the health of your instance.
 
@@ -122,18 +101,14 @@ We’ve also been hard at work automating even more of our internal testing and 
 
 ## Quickly toggle the browser extension on/off
 
-TO DO: VIDEO
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
-You can now toggle the browser extension on and off without having to fully disable the extension. This was added to make testing and personal workflows easier for users to quickly opt-in and out of the extension capabilities.
+You can now toggle the Sourcegraph browser extension on and off to temporarily disable functionality without having to take the extra steps disable or uninstall the extension.
 
 ## Changelog
 
