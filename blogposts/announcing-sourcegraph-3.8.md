@@ -51,7 +51,7 @@ Sourcegraph couldn't be what it is without the community.
 
 Soon, you can [use Sourcegraph to automate](https://about.sourcegraph.com/product/automation) large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
 
-[Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see it in action. We're opening it up to organizations upon request for the private beta period, so reach out to us using the form on that page if you'd like to start using it.
+[Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see it in action. Automation is in private beta and you can [apply by requesting a demo](/contact/request-automation-demo/).
 
 ## Beta release of fast and precise LSIF-based code intelligence
 
