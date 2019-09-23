@@ -3,6 +3,7 @@ title: "Strange Loop 2019 - The Idea Becomes a Machine That Makes the Art That..
 description: "Sol LeWitt was a prolific American artist credited with founding Conceptual Art and Minimalism. This talk is inspired by his series of participatory, conceptual art called, \"Wall Drawings\". The Wall Drawings are large-scale installations that grow from a set of simple written instructions by Sol LeWitt himself."
 author: Alla Hoffman
 authorUrl: http://rsid.github.io/portfolio/
+linkedinUrl: https://www.linkedin.com/in/allahoffman
 publishDate: 2019-09-13T00:00-13:30
 tags: [
   strange-loop

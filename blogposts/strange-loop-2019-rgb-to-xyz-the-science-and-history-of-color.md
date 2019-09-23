@@ -3,6 +3,7 @@ title: "Strange Loop 2019 - RGB to XYZ: The Science and History of Color"
 description: "Color is a fascinating subject. It is both incredibly subjective (ie. what makes a painting beautiful) and perfectly scientific (ie. wavelengths of light) at the same time. This talk will be a deep dive into the history and science of color and the fascinating world of human perception and the scientists that attempt to define it."
 author: Brittany Walker
 authorUrl: https://musicalwebdev.com
+linkedinUrl: https://www.linkedin.com/in/brittanyrwalker/
 publishDate: 2019-09-17T00:00-11:20
 tags: [
   strange-loop
