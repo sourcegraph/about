@@ -233,9 +233,6 @@ export default ((props: any) => (
                 <hr />
                 <CustomerLogosSection className="mt-6 mb-4" />
             </ContentSection>
-            <ContentSection color="black" className="py-5">
-                <EnterpriseReadySolution />
-            </ContentSection>
             <Jumbotron
                 color="purple"
                 className="request-automation-demo-footer py-4"
