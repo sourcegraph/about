@@ -43,7 +43,11 @@
         ol + h5,
         p + h6,
         ul + h6,
-        ol + h6 {
+        ol + h6,
+        h2 + ul,
+        h2 + ol,
+        h3 + ul,
+        h3 + ol {
             margin-top: 1.4em;
         }
 
