@@ -4,7 +4,7 @@ description: "Color is a fascinating subject. It is both incredibly subjective (
 author: Brittany Walker
 authorUrl: https://musicalwebdev.com
 linkedInUrl: https://www.linkedin.com/in/brittanyrwalker/
-publishDate: 2019-09-17T00:00-11:20
+publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop
 ]
