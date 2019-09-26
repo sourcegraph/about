@@ -77,7 +77,7 @@ We use third-party automated devices and applications, such as Google Analytics,
 
 We use Telligent Data, located at 180 Sansome Street, San Francisco, CA 94104, USA, as a subprocessor to receive and store data collected on our Website. Telligent Data provides a data pipeline management service, and provides further information about its own privacy practices at <a href="https://telligentdata.com/privacy-policy.html">https://telligentdata.com/privacy-policy.html</a>
 
-We use third-party applications such as Google Apps, HubSpot, Intercom, GitHub, Slack, DocuSign, and more to track and manage conversations, chats, or email exchanges with our users and customers. These products and companies provide further information about their own privacy practices on their websites.
+We use third-party applications such as Google Apps, HubSpot GitHub, Slack, DocuSign, and more to track and manage conversations, chats, or email exchanges with our users and customers. These products and companies provide further information about their own privacy practices on their websites.
 
 We use third-party applications such as Google Cloud Platform, Honeycomb, and more to host, serve, store, and analyze our Website's operational infrastructure and operational data collected on our Website. These products and companies provide further information about their own privacy practices on their websites.
 

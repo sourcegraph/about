@@ -28,15 +28,6 @@ function initializeGA() {
   })
 }
 
-function initializeIntercom(appId) {
-  if (!window.intercom || !window.intercomSettings) {
-    return
-  }
-  this.intercom('boot', this.intercomSettings)
-  this.setIntercomProperty('is_on_prem', false)
-  this.setIntercomProperty('tracking_app_id', appId)
-}
-
 function trackPageView() {
   if (!window.telligent) {
     return
