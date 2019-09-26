@@ -65,7 +65,7 @@ export default ((props: any) => (
                 <h2 className="text-center display-4 mb-5 mt-4">
                     Learn how Sourcegraph code search makes large scale refactoring possible
                 </h2>
-                <hr style={{borderColor: '#333'}} />
+                <hr style={{ borderColor: '#333' }} />
                 <CaseStudyFeature
                     // title="See how Sourcegraph enabled large scale refactoring at Quantcast"
                     quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
@@ -73,7 +73,7 @@ export default ((props: any) => (
                     url="/case-studies/quantcast"
                     image="/case-studies/quantcast_thumbnail_500x500px-generic.jpg"
                 />
-                <hr style={{borderColor: '#333'}} />
+                <hr style={{ borderColor: '#333' }} />
                 <CaseStudyFeature
                     // title="See how Thorn sunsets legacy applications safely with Sourcegraph"
                     quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
@@ -95,7 +95,7 @@ export default ((props: any) => (
                 <h2 id="demo" className="text-center display-4 pb-4">
                     See why developers rely on Sourcegraph daily
                 </h2>
-                <Vimeo id={353422112} muted={false}  />
+                <Vimeo id={353422112} muted={false} />
             </ContentSection>
             <div className="bg-white text-dark py-4">
                 <div className="container">
