@@ -222,7 +222,7 @@ export default ((props: any) => (
                         style={{ border: 'none', overflow: 'hidden' }}
                         scrolling="no"
                         frameBorder="0"
-                        allowTransparency={true}
+                        allowtransparency="yes"
                         allow="encrypted-media"
                         allowFullScreen={true}
                         className="m-2"
@@ -233,7 +233,7 @@ export default ((props: any) => (
                         src="https://www.youtube.com/embed/KTJs-0EInW8"
                         frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullscreen={true}
+                        allowFullScreen={true}
                         className="m-2"
                     />
                     <iframe
@@ -242,7 +242,7 @@ export default ((props: any) => (
                         src="https://www.youtube.com/embed/cIVUP9wUAJA"
                         frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullscreen={true}
+                        allowFullScreen={true}
                         className="m-2"
                     />
                 </div>

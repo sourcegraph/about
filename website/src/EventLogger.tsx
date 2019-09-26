@@ -193,21 +193,6 @@ class EventLogger {
     }
 
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {
-        let props = { ...eventProps }
-        if ((window as any).telligent) {
-            props = {
-                ...props,
-                eventCategory: category,
-                eventAction: action,
-                eventFeature: feature,
-                eventLabel: label,
-                platform: 'Web',
-                path_name:
-                    window && window.location && window.location.pathname ? window.location.pathname.slice(1) : '',
-                static: true,
-            }
-            ;(window as any).telligent('track', action, props)
-        }
         if ((window as any).ga) {
             ;(window as any).ga('send', {
                 hitType: 'event',
@@ -216,7 +201,6 @@ class EventLogger {
                 eventLabel: label,
             })
         }
-        this.logToConsole(label, props)
     }
 
     public logToConsole(eventName: string, object: object): void {
