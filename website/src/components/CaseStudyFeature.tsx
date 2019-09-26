@@ -28,9 +28,11 @@ export const CaseStudyFeature: React.FunctionComponent<{
 }) => (
     <div className={`jumbotron case-studies-feature pt-5 pb-3 ${COLORS[color]} ${className}`}>
         <div className="row container justify-content-center mb-4">
-            {title && (<h2 className={`text-center ${titleClassName}`}>
-                <a href={url}>{title}</a>
-            </h2>)}
+            {title && (
+                <h2 className={`text-center ${titleClassName}`}>
+                    <a href={url}>{title}</a>
+                </h2>
+            )}
         </div>
         <div className="row container justify-content-center">
             <div className="col-sm-12 col-md-2 case-studies-feature__image">
