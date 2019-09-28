@@ -31,21 +31,43 @@ export default ((props: any) => (
                 <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>
             <div className="pricing-page">
-                <ContentSection color="white" className="hero-section text-center py-5">
-                    <h4 className="font-weight-light">
-                        Sourcegraph code search, code navigation, and other limited features
-                        <PricingFreeTierPopoverButton />
-                        are free for individuals and small teams. <a href="https://docs.sourcegraph.com">Install</a> to
-                        get started today!
-                    </h4>
+                <ContentSection color="primary" className="hero-section text-center py-5">
+                    <h3>
+                        Free to start.<br/>
+                        No commitment.<br/>
+                        Only pay for active users.
+                    </h3>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
                     <div className="row pt-6">
-                        <div className="col-8 col-md-4 mx-auto mb-4">
+                        <div className="col-6 col-md-3 mx-auto mb-4">
+                            <PricingPlan
+                                className="pricing__plan"
+                                name="Free"
+                                description="For individuals and small teams."
+                                price="Free"
+                                priceInterval=""
+                                features={[
+                                    { name: 'Code search', id: 'code-search' },
+                                    { name: 'Code navigation (definitions and references)', id: 'code-intelligence' },
+                                    { name: 'Editor and code host integrations', id: 'integrations' },
+                                    {
+                                        name: 'Sourcegraph extensions',
+                                        id: 'deployment',
+                                    },
+                                    { name: 'Single sign-on (SSO)', id: 'admin' },
+                                    { name: 'Community support', id: 'support' },
+                                    { name: '10 monthly active user limit', id: 'deployment' },
+                                ]}
+                                buttonLabel="Install now"
+                                buttonHref="https://docs.sourcegraph.com#quickstart-guide"
+                            />
+                        </div>
+                        <div className="col-6 col-md-3 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing__plan"
                                 name="Enterprise"
-                                description="Enabling engineering and DevOps leaders to speed up the organization's software development and monitor risks."
+                                description="Helping developers answer questions and ship faster."
                                 price="$29"
                                 features={[
                                     { name: 'Code review & pull request integration', id: 'code-review' },
@@ -59,15 +81,16 @@ export default ((props: any) => (
                                     { name: 'Technical support', id: 'support' },
                                     { name: 'Cloud-managed option', id: 'deployment' },
                                 ]}
-                                buttonLabel="Try now"
-                                buttonHref="/contact/sales/?form_submission_source=pricing-enterprise"
+                                plusEverythingIn="Free"
+                                buttonLabel="Start a trial"
+                                buttonHref="http://about.sourcegraph.com/contact/request-demo/?form_submission_source=pricing-enterprise"
                             />
                         </div>
-                        <div className="col-8 col-md-4 mx-auto mb-4">
+                        <div className="col-6 col-md-3 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing__plan"
                                 name="Enterprise Plus"
-                                description="Enabling large and complex organizations to accelerate the software lifecycle universally, across teams."
+                                description="Accelerating software development across teams."
                                 price="$69"
                                 features={[
                                     { name: 'Repository access permissions', id: 'admin' },
@@ -78,18 +101,17 @@ export default ((props: any) => (
                                     { name: 'Priority support', id: 'support' },
                                 ]}
                                 plusEverythingIn="Enterprise"
-                                buttonLabel="Try now"
-                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-enterprise-plus"
+                                buttonLabel="Start a trial"
+                                buttonHref="http://about.sourcegraph.com/contact/request-demo/?form_submission_source=pricing-enterprise-plus"
                             />
                         </div>
-                        <div className="col-8 col-md-4 mx-auto mb-4">
+                        <div className="col-6 col-md-3 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing__plan"
                                 name="Elite"
-                                description="Enabling businesses to transform the software lifecycle with automation and intelligence."
+                                description="Transforming the software lifecycle with automation."
                                 price="$149"
                                 features={[
-                                    { name: 'Free guest users*', id: 'admin' },
                                     { name: 'Private Sourcegraph extension registry', id: 'admin' },
                                     { name: '24/7 uptime support', id: 'support' },
                                     {
@@ -110,25 +132,22 @@ export default ((props: any) => (
                                     { name: 'Dedicated support available', id: 'support' },
                                 ]}
                                 plusEverythingIn="Enterprise Plus"
-                                buttonLabel="Try now"
-                                buttonHref="http://about.sourcegraph.com/contact/sales/?form_submission_source=pricing-elite"
+                                buttonLabel="Contact us"
+                                buttonHref="http://about.sourcegraph.com/contact/request-demo/?form_submission_source=pricing-elite"
                             />
                         </div>
                     </div>
                 </div>
             </div>
-            <ContentSection color="white" className="hero-section text-center py-5">
-                * Limitations apply
-            </ContentSection>
             <ContentSection color="purple" className="hero-section text-center py-5">
                 <h2>Try Sourcegraph Enterprise Plus risk-free for 30 days</h2>
-                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/request-demo">
+                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/request-demo/?form_submission_source=pricing-free-trial-banner">
                     Free trial
                 </Link>
             </ContentSection>
             <ContentSection color="primary" className="hero-section text-center py-5">
                 <h2>Questions?</h2>
-                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/sales">
+                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/sales/?form_submission_source=pricing-contact-sales-banner">
                     Contact sales
                 </Link>
             </ContentSection>
