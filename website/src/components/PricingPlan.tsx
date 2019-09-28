@@ -43,7 +43,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     buttonHref,
 }) => (
     <div className={`card border-0 pricing__card ${className}`}>
-        <h1 className="card-title border-bottom py-2">{name}</h1>
+        <h2 className="card-title border-bottom py-2">{name}</h2>
         <div className="card-body py-1 pricing-plan__description text-center flex-grow-0">{description}</div>
         <div className="card-body pt-2 d-flex flex-column align-items-center flex-grow-0">
             <div className="pricing-plan__price d-flex align-items-center justify-content-center">

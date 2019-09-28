@@ -235,10 +235,6 @@ const DATA: PricingItemCategory[] = [
                 url: 'https://docs.sourcegraph.com/admin/repo/permissions',
                 plans: ENTERPRISE_PLUS_PLAN,
             },
-            {
-                name: 'Unlimited guest users',
-                plans: ELITE_PLAN,
-            },
         ],
     },
     {
