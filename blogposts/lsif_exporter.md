@@ -220,4 +220,4 @@ with [dot](https://graphviz.gitlab.io/download/).
 
 Of course since we're Sourcegraph we would be happy if you try out LSIF with a Sourcegraph instance by following these [instructions](https://docs.sourcegraph.com/user/code_intelligence/lsif).
 
-If you enjoyed this article and like working on developer tools, [we're hiring](https://hire.withgoogle.com/public/jobs/sourcegraphcom/view/P_AAAAAADAAADP_pY7jAAAXU?trackingTag=sourcegraphCodeIntelBlog)!
+If you enjoyed the material in this article and like working on developer tools, [we're hiring](https://hire.withgoogle.com/public/jobs/sourcegraphcom/view/P_AAAAAADAAADP_pY7jAAAXU?trackingTag=sourcegraphCodeIntelBlog)!
