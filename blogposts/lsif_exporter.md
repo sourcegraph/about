@@ -164,7 +164,7 @@ The three nodes are:
 - a _resultSet_ node
 - a _definitionResult_ node
 
-The _resultSet_ node will be connected to the definition and all the use nodes bound to that definition. This allows LSIF to hang off information shared by all these nodes to be hung off the _resultSet_ node instead of repeating it for each node. Since all use nodes and the definition node are connected to the _resultSet_ node we need a way to call out which node is the actual definition. This is done with the _definitionResult_ node which points back to the _range_ node.
+The _resultSet_ node will be connected to the definition and all the use nodes bound to that definition. This allows LSIF to attach information that is shared by all these nodes to the _resultSet_ node instead of repeating it for each node. Since all use nodes and the definition node are connected to the _resultSet_ node we need a way to call out which node is the actual definition. This is done with the _definitionResult_ node which points back to the _range_ node.
 
 For the reference we add one more node to this subgraph making it as follows:
 
