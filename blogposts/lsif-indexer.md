@@ -15,7 +15,7 @@ At a high level, an LSIF indexer analyzes a collection of input source code file
 This article explores what it would take to write an LSIF indexer. Along the way, we will learn a little bit about parsing, walking abstract syntax trees, scopes and the LSIF file format.
 
 To make things concrete for our exploration, we will write an LSIF indexer for the programming language Jsonnet, and we will limit ourselves to providing enough data for "Jump to Definition" in a Jsonnet file including its imports.
-[Jsonnet](https://jsonnet.org) is a configuration language and data templating language closely linked to JSON. It is simple enough that parsing will not become a distraction in this exploration, but it is complex enough to show simple lexical text search will not be sufficient for accurate "Jump to Definition" LSIF data. We will write our LSIF indexer in [Go](https://golang.org) and use the parser generator [Antlr](https://www.antlr.org) to do the heavy lifting on the parsing side.
+[Jsonnet](https://jsonnet.org) is a configuration and data templating language closely linked to JSON. It is simple enough that parsing will not become a distraction in this exploration, but it is complex enough to show that simple lexical text search will not be sufficient for accurate "Jump to Definition" LSIF data. We will write our LSIF indexer in [Go](https://golang.org) and use the parser generator [Antlr](https://www.antlr.org) to do the heavy lifting on the parsing side.
 
 _Note: All the code for this exploration is available at [lsif-jsonnet](https://github.com/sourcegraph/lsif-jsonnet)._
 
