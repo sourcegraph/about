@@ -1,23 +1,21 @@
 ---
-title: "Writing an LSIF Exporter"
+title: "Writing an LSIF Indexer"
 author: Uwe Hoffmann
 publishDate: 2019-09-28T10:00-07:00
 tags: [
   blog
 ]
-slug: writing-an-lsif-exporter
+slug: writing-an-lsif-indexer
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-## Introduction
+At a high level an LSIF indexer analyzes a collection of input source code files and produces an LSIF data file. This LSIF data file in turn is used by an editor or a Sourcegraph instance or some other developer tool to offer functionality like "Jump to Definition", "Show References", hover results with documentation and type information, semantic search, etc.
 
-At a high level an LSIF exporter analyzes a collection of input source code files and produces an LSIF data file. This LSIF data file in turn is used by an editor or a Sourcegraph instance or some other developer tool to offer functionality like "Jump to Definition", "Show References", hover results with documentation and type information, semantic search, etc.
+This article explores what it would take to write an LSIF indexer. Along the way we will learn a little bit about parsing, walking abstract syntax trees, scopes and the LSIF file format.
 
-This article explores what it would take to write an LSIF exporter. Along the way we will learn a little bit about parsing, walking abstract syntax trees, scopes and the LSIF file format.
-
-To make things concrete for our exploration we will write an LSIF exporter for the programming language JSonnet and we will limit ourselves to providing enough data for "Jump to Definition" in a JSonnet file including its imports.
-[JSonnet](https://jsonnet.org) is a configuration language and data templating language closely linked to JSON. It is simple enough that parsing will not become a distraction in this exploration but it is complex enough to show simple lexical text search will not be sufficient for accurate "Jump to Definition" LSIF data. We will write our LSIF exporter in [Go](https://golang.org) and use the parser generator [Antlr](https://www.antlr.org) to do the heavy lifting on the parsing side.
+To make things concrete for our exploration we will write an LSIF indexer for the programming language Jsonnet and we will limit ourselves to providing enough data for "Jump to Definition" in a Jsonnet file including its imports.
+[Jsonnet](https://jsonnet.org) is a configuration language and data templating language closely linked to JSON. It is simple enough that parsing will not become a distraction in this exploration but it is complex enough to show simple lexical text search will not be sufficient for accurate "Jump to Definition" LSIF data. We will write our LSIF indexer in [Go](https://golang.org) and use the parser generator [Antlr](https://www.antlr.org) to do the heavy lifting on the parsing side.
 
 _Note: All the code for this exploration is available at [lsif-jsonnet](https://github.com/sourcegraph/lsif-jsonnet)._
 
@@ -25,9 +23,9 @@ So let's dive right in. First we figure out what data a developer tool would nee
 
 Our units of data are locations in input source files. The cursor is at one location and will move to another location. There are also relationships between locations: one location is linked to another location because the reference is at one location and its definition at the other. We need to extract these two things from the input source files: locations of identifiers and the relationships between these locations.
 
-Why do we need fullfledged parsing to extract this data? Consider the JSonnet file in Listing 1.
+Why do we need fullfledged parsing to extract this data? Consider the Jsonnet file in Listing 1.
 
-![listingOne](lsif_exporter_files/listingOne.png)
+![listingOne](lsif-indexer-files/listingOne.png)
 Listing 1.
 
 There are many locations where the string "foo" appears. Even if we separate the input into proper tokens (which eliminates "call\_foo" and "call\_method\_foo" as locations for identifier "foo") we would still struggle to establish the correct relationships between all the locations where the identifier "foo" appears. 
@@ -37,9 +35,9 @@ _Note: From here on in this article we will denote locations as (line:column) tu
 
 ## Parsing
 
-There are many ways to write parsers. For this exploration we choose the parser generator [Antlr](https://www.antlr.org). It will generate the Go code that does the actual parsing for us using a specification of the grammar of the language we want to parse, namely JSonnet. We could start from scratch and specify the grammar from the [JSonnet language spec](https://jsonnet.org/ref/spec.html), but luckily [somebody else](http://ironchefpython.github.io/) already did [this work](https://gist.github.com/ironchefpython/84380aa60871853dc86719dd598c35e4) and we can just reuse their grammar file (thank you!). Antlr takes this grammar file as input and generates a [Go package](https://github.com/sourcegraph/lsif-jsonnet/tree/master/parser) that parses JSonnet files and produces AST data structures (abstract syntax trees). We don't need to touch the parser package, it is generated by the Antlr tool. 
+There are many ways to write parsers. For this exploration we choose the parser generator [Antlr](https://www.antlr.org). It will generate the Go code that does the actual parsing for us using a specification of the grammar of the language we want to parse, namely Jsonnet. We could start from scratch and specify the grammar from the [Jsonnet language spec](https://jsonnet.org/ref/spec.html), but luckily [somebody else](http://ironchefpython.github.io/) already did [this work](https://gist.github.com/ironchefpython/84380aa60871853dc86719dd598c35e4) and we can just reuse their grammar file (thank you!). Antlr takes this grammar file as input and generates a [Go package](https://github.com/sourcegraph/lsif-jsonnet/tree/master/parser) that parses Jsonnet files and produces AST data structures (abstract syntax trees). We don't need to touch the parser package, it is generated by the Antlr tool. 
 
-For example the following JSonnet snippet:
+For example the following Jsonnet snippet:
 
 ```
 local bar = 5;
@@ -51,7 +49,7 @@ local bar = 5;
 
 will result in this AST:
 
-![ast](lsif_exporter_files/ast.png)
+![ast](lsif-indexer-files/ast.png)
 
 The leaf nodes correspond to tokens and the non-leaf nodes correspond to rules in the grammar. The text in a non-leaf node in the diagram above shows which rule corresponds to the subtree rooted in that node. For example the "expr:LocalBind" node corresponds to the LocalBind alternative in the expr rule (line 43 in the [grammar file](https://github.com/sourcegraph/lsif-jsonnet/blob/master/Jsonnet.g4)).
 
@@ -65,10 +63,10 @@ We have to write the [listener](https://github.com/sourcegraph/lsif-jsonnet/blob
 
 So what is the useful information from the parsed abstract syntax tree that we need ? To figure this out let's go back to Listing 1. Each occurrence of the identifier "foo" happens within a scope, a region of the whole program. The figure below shows the scopes of Listing 1. The scopes form a tree, the file scope is the parent scope and certain language constructs activate additional scopes such as a function parameter scope or an inner object scope. For each reference of "foo" we can find its definition by looking in the tree path of active scopes. If no definition is found in a scope we look in its parent and so on all the way to the file scope. We are interested in these bindings from reference to definition (the curvy lines in the figure connecting the "foo"'s).
 
-![scopes](lsif_exporter_files/scopes.png)
+![scopes](lsif-indexer-files/scopes.png)
 
 
-![scope_tree](lsif_exporter_files/scopes_tree.png)
+![scope_tree](lsif-indexer-files/scopes_tree.png)
 Tree hierarchy of scopes for Listing 1.
 
 We need to:
@@ -143,20 +141,20 @@ func (ll *Listener) ExitFunction(ctx *parser.FunctionContext) {
 ```
 It deactivates the function scope and makes its parent the current scope.
 
-There are [more listener methods](https://github.com/sourcegraph/lsif-jsonnet/blob/master/refs/listener.go) for other AST node types where scopes get activated/deactivated, identifiers are used, functions are called, fields are referenced etc. They are similar to the examples shown. After the AST of a JSonnet file has been visited we have all the declarations and for each declaration its uses. We are ready to export to a LSIF data file.
+There are [more listener methods](https://github.com/sourcegraph/lsif-jsonnet/blob/master/refs/listener.go) for other AST node types where scopes get activated/deactivated, identifiers are used, functions are called, fields are referenced etc. They are similar to the examples shown. After the AST of a Jsonnet file has been visited we have all the declarations and for each declaration its uses. We are ready to export to a LSIF data file.
 
-_Note: Because of our choice of JSonnet as the language we are analyzing our parsing and data extraction is not 100% accurate. JSonnet is a dynamic, interpreted language and we are doing static analysis. For example `(expr).field` with `expr` being a complicated expression that resolves at runtime in the interpreter makes it impossible to bind `field` to the right definition without running a JSonnet interpreter._
+_Note: Because of our choice of Jsonnet as the language we are analyzing our parsing and data extraction is not 100% accurate. Jsonnet is a dynamic, interpreted language and we are doing static analysis. For example `(expr).field` with `expr` being a complicated expression that resolves at runtime in the interpreter makes it impossible to bind `field` to the right definition without running a Jsonnet interpreter._
 	
 ## LSIF data format
 
-Before we export to LSIF we should look and understand the LSIF data format. We have seen in the introduction that the units of data are locations in files and the relationships between them. As a whole these elements form a graph. LSIF captures this graph by listing the nodes and edges in this graph as a sequence of JSON objects. The best way to illustrate this is by working through an example. Consider again the JSonnet snippet:
+Before we export to LSIF we should look and understand the LSIF data format. We have seen in the introduction that the units of data are locations in files and the relationships between them. As a whole these elements form a graph. LSIF captures this graph by listing the nodes and edges in this graph as a sequence of JSON objects. The best way to illustrate this is by working through an example. Consider again the Jsonnet snippet:
 
-![snippet](lsif_exporter_files/snippet.png)
+![snippet](lsif-indexer-files/snippet.png)
 
 The two locations of interest are (1, 7) where "bar" is defined and (4, 10) where "bar" is used.
 For the definition we need to generate the following subgraph:
 
-![def-graph](lsif_exporter_files/def-graph.png)
+![def-graph](lsif-indexer-files/def-graph.png)
 
 The three nodes are:
 
@@ -168,13 +166,13 @@ The _resultSet_ node will be connected to the definition and all the use nodes b
 
 For the reference we add one more node to this subgraph making it as follows:
 
-![use-graph](lsif_exporter_files/use-graph.png)
+![use-graph](lsif-indexer-files/use-graph.png)
 
 That is basically it. These subgraphs get created for each definition and reference and then connected together by document nodes that in turn are connected to a project node.
 
-Since the snippet above is a valid JSonnet program, we can generate the real LSIF graph:
+Since the snippet above is a valid Jsonnet program, we can generate the real LSIF graph:
 
-![lsif-snippet](lsif_exporter_files/lsif-snippet.png)
+![lsif-snippet](lsif-indexer-files/lsif-snippet.png)
 
 _Note: Locations are zero-based in the real LSIF graph. Also each node has a unique ID which allows us to specify the edges connecting them._
 
@@ -203,9 +201,9 @@ The LSIF data file looks like this:
 
 The only additional vertices not described yet are the ones labelled "$event". They serve as delimiting markers for start and finish of projects and start and finish of documents (files).
 
-## Exporting
+## Generating
 
-We are finally ready to export LSIF data. The code is in [dumper.go](https://github.com/sourcegraph/lsif-jsonnet/blob/master/dumper/dumper.go). We proceed in a top-down fashion. We start with the project and the listener for the main JSonnet file. We emit the project node and delimiter marker for start of project and then call the method for emiting a document. This in turn emits a document node and start of document marker. It then emits declarations which create those subgraphs from above by also iterating through their reference lists. We also recursively calls document emit methods for each import passing in the corresponding import listener created from parsing the import file. We finish by returning from these methods, creating stop markers as we unwind.
+We are finally ready to generate the LSIF data. The code is in [dumper.go](https://github.com/sourcegraph/lsif-jsonnet/blob/master/dumper/dumper.go). We proceed in a top-down fashion. We start with the project and the listener for the main Jsonnet file. We emit the project node and delimiter marker for start of project and then call the method for emiting a document. This in turn emits a document node and start of document marker. It then emits declarations which create those subgraphs from above by also iterating through their reference lists. We also recursively calls document emit methods for each import passing in the corresponding import listener created from parsing the import file. We finish by returning from these methods, creating stop markers as we unwind.
 
 The actual emiting is done by [protocol.go](https://github.com/sourcegraph/lsif-jsonnet/blob/master/protocol/protocol.go) which has utility methods to create the appropriate vertices, edges and JSON lines.
 
