@@ -14,7 +14,7 @@ At a high level, an LSIF indexer analyzes a collection of input source code file
 
 This article explores what it would take to write an LSIF indexer. Along the way, we will learn a little bit about parsing, walking abstract syntax trees, scopes and the LSIF file format.
 
-To make things concrete for our exploration we will write an LSIF indexer for the programming language Jsonnet, and we will limit ourselves to providing enough data for "Jump to Definition" in a Jsonnet file including its imports.
+To make things concrete for our exploration, we will write an LSIF indexer for the programming language Jsonnet, and we will limit ourselves to providing enough data for "Jump to Definition" in a Jsonnet file including its imports.
 [Jsonnet](https://jsonnet.org) is a configuration language and data templating language closely linked to JSON. It is simple enough that parsing will not become a distraction in this exploration, but it is complex enough to show simple lexical text search will not be sufficient for accurate "Jump to Definition" LSIF data. We will write our LSIF indexer in [Go](https://golang.org) and use the parser generator [Antlr](https://www.antlr.org) to do the heavy lifting on the parsing side.
 
 _Note: All the code for this exploration is available at [lsif-jsonnet](https://github.com/sourcegraph/lsif-jsonnet)._
@@ -92,7 +92,7 @@ type Listener struct {
 ```
 We have one listener for each file. Each import expression will add an additional listener to the `imports` field (by recursively parsing the imported file). We store the file scope, the current scope and a list of declarations. Each declaration will keep track of all its uses. Let's look at some of the listener interface method implementations.
 
-When the AST walker enters a function node our listener `EnterFunction` method is called. We create a new scope for the function parameters and activate it. 
+When the AST walker enters a function node, our listener `EnterFunction` method is called. We create a new scope for the function parameters and activate it.
 
 ```go
 func (ll *Listener) EnterFunction(ctx *parser.FunctionContext) {
