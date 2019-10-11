@@ -99,47 +99,12 @@ export default class JobsPage extends React.Component<any, any> {
                         <div className="jobs__container">
                             <h1>Our work</h1>
                             <p>
-                                View a few of our open-source projects to get an idea of some of the problems we are
-                                working on.
+                                Sourcegraph is an{' '}
+                                <a href="https://docs.sourcegraph.com/dev/open_source_open_company">open company</a>.
+                                You can get a sense about what it is like to work here by looking at{' '}
+                                <a href="https://github.com/sourcegraph/sourcegraph">our code</a> and reading about{' '}
+                                <a href="https://docs.sourcegraph.com/dev">how we build Sourcegraph</a>.
                             </p>
-                            <div className="jobs__work--buttons">
-                                <a
-                                    href="https://github.com/sourcegraph/go-langserver"
-                                    className="mr-lg-2 link text-decoration-none"
-                                    target="blank"
-                                >
-                                    <div className="jobs__work--buttons-button">
-                                        <div className="jobs__work--buttons-text">
-                                            <span className="jobs__work--buttons-text-title">Go language server</span>
-                                            <span className="jobs__work--buttons-text-description">
-                                                Go language server to add Go support to editors
-                                            </span>
-                                        </div>
-                                        <div className="jobs__work--buttons-icon">
-                                            <ArrowRightIcon />
-                                        </div>
-                                    </div>
-                                </a>
-                                <a
-                                    href="https://github.com/sourcegraph/javascript-typescript-langserver"
-                                    className="link text-decoration-none"
-                                    target="blank"
-                                >
-                                    <div className="jobs__work--buttons-button">
-                                        <div className="jobs__work--buttons-text">
-                                            <span className="jobs__work--buttons-text-title">
-                                                JavaScript and TypeScript language server
-                                            </span>
-                                            <span className="jobs__work--buttons-text-description">
-                                                JavaScript and TypeScript code intelligence
-                                            </span>
-                                        </div>
-                                        <div className="jobs__work--buttons-icon">
-                                            <ArrowRightIcon />
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
                         </div>
                     </section>
                 </div>
