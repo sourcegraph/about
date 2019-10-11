@@ -163,6 +163,7 @@ const DATA: PricingItemCategory[] = [
             },
             {
                 name: 'License compliance and security analysis',
+                url: 'https://docs.sourcegraph.com/direction/secure',
                 description: 'Coming soon',
                 plans: ELITE_PLAN,
             },
