@@ -67,46 +67,6 @@
     &__work {
         background: $light-10;
         color: #000000;
-
-        &--buttons {
-            display: flex;
-            justify-content: center;
-            text-align: left;
-
-            &-button {
-                display: flex;
-                background: $dark-8;
-                padding: 1rem;
-                margin: 0.5rem;
-                max-width: 30rem;
-                border-radius: 0.5rem;
-                justify-content: space-between;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            &-text {
-                display: flex;
-                flex-direction: column;
-                align-self: center;
-                padding-right: 0.5rem;
-                max-width: 64rem;
-
-                &-title {
-                    color: $light-12;
-                }
-                &-description {
-                    color: $light-4;
-                }
-            }
-
-            &-icon {
-                svg path {
-                    fill: $light-11;
-                }
-                align-self: center;
-            }
-        }
     }
 
     &__positions {
