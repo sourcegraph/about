@@ -140,8 +140,16 @@ const DATA: PricingItemCategory[] = [
         id: 'automation',
         title: 'Automation',
         items: [
-            { name: 'Saved searches', plans: ENTERPRISE_PLAN },
-            { name: 'Email notifications', plans: ENTERPRISE_PLAN },
+            {
+                name: 'Saved searches',
+                url: 'https://docs.sourcegraph.com/user/search/saved_searches',
+                plans: ENTERPRISE_PLAN,
+            },
+            {
+                name: 'Email notifications',
+                url: 'https://docs.sourcegraph.com/user/search/saved_searches#configuring-email-notifications',
+                plans: ENTERPRISE_PLAN,
+            },
             {
                 name: 'Slack and webhook notifications',
                 description: 'Coming soon',
