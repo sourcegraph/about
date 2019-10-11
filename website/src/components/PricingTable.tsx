@@ -148,8 +148,9 @@ const DATA: PricingItemCategory[] = [
                 plans: ENTERPRISE_PLAN,
             },
             {
-                name: 'Large-scale code modifications',
-                description: 'Only available to select customers in preview',
+                name: 'Large-scale code change automation',
+                url: 'https://about.sourcegraph.com/product/automation',
+                description: 'Remove legacy code, fix critical security issues, and pay down tech debt',
                 plans: ELITE_PLAN,
             },
             {
