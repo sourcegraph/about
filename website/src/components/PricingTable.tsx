@@ -140,20 +140,30 @@ const DATA: PricingItemCategory[] = [
         id: 'automation',
         title: 'Automation',
         items: [
-            { name: 'Saved searches', plans: ENTERPRISE_PLAN },
-            { name: 'Email notifications', plans: ENTERPRISE_PLAN },
+            {
+                name: 'Saved searches',
+                url: 'https://docs.sourcegraph.com/user/search/saved_searches',
+                plans: ENTERPRISE_PLAN,
+            },
+            {
+                name: 'Email notifications',
+                url: 'https://docs.sourcegraph.com/user/search/saved_searches#configuring-email-notifications',
+                plans: ENTERPRISE_PLAN,
+            },
             {
                 name: 'Slack and webhook notifications',
                 description: 'Coming soon',
                 plans: ENTERPRISE_PLAN,
             },
             {
-                name: 'Large-scale code modifications',
-                description: 'Only available to select customers in preview',
+                name: 'Large-scale code change automation',
+                url: 'https://about.sourcegraph.com/product/automation',
+                description: 'Remove legacy code, fix critical security issues, and pay down tech debt',
                 plans: ELITE_PLAN,
             },
             {
                 name: 'License compliance and security analysis',
+                url: 'https://docs.sourcegraph.com/direction/secure',
                 description: 'Coming soon',
                 plans: ELITE_PLAN,
             },
