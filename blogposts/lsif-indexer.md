@@ -220,4 +220,6 @@ with [dot](https://graphviz.gitlab.io/download/).
 
 Of course, since we're Sourcegraph, we would be happy if you try out LSIF with a Sourcegraph instance by following these [instructions](https://docs.sourcegraph.com/user/code_intelligence/lsif).
 
+Check out [LSIF.dev](https://lsif.dev) for a curated list of LSIF indexers (similar to https://langserver.org for LSP). If you are interested in adding your LSIF indexer to the list, create a pull request [here](https://github.com/lsif/lsif.github.io).
+
 If you enjoyed the material in this article and like working on developer tools, [we're hiring](https://hire.withgoogle.com/public/jobs/sourcegraphcom/view/P_AAAAAADAAADP_pY7jAAAXU?trackingTag=sourcegraphCodeIntelBlog)!
