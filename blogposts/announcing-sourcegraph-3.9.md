@@ -66,7 +66,7 @@ Other backcompat notes:
 
 ## Manage cross-repository PR campaigns
 
-Keeping your code secure and up-to-date often requires making changes and merging pull requests across  many repositories. As step toward shipping [our vision of the future of code automation](https://about.sourcegraph.com/product/automation#see-it-in-action), Sourcegraph now lets you track status and activity on campaigns of pull requests across repositories for GitHub and Bitbucket Server.
+Keeping your code secure and up-to-date often requires making changes and merging pull requests across  many repositories. A step toward shipping [our vision of the future of code automation](https://about.sourcegraph.com/product/automation#see-it-in-action), Sourcegraph now lets you track status and activity on campaigns of pull requests across repositories for GitHub and Bitbucket Server.
 
 For example, if you've applied a critical security fix to 1,000 repositories, Sourcegraph makes it easy to see which and how many PRs are open/merged/closed, and you can monitor comments and review activity to see how to help get the fix approved and deployed.
 
