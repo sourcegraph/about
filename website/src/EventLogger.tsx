@@ -225,7 +225,11 @@ class EventLogger {
 export const eventLogger = new EventLogger()
 
 {/* Required by HubSpot */}
-window.jQuery = window.jQuery || (() => ({
-    change: () => {},
-    trigger: () => {},
-}));
+if (window) {
+    (window as any).jQuery = (window as any).jQuery || (() => ({
+        // tslint:disable-next-line:no-empty
+        change: () => {},
+        // tslint:disable-next-line:no-empty
+        trigger: () => {},
+    }));
+}
