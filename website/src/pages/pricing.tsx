@@ -33,8 +33,10 @@ export default ((props: any) => (
             <div className="pricing-page">
                 <ContentSection color="primary" className="hero-section text-center py-5">
                     <h3>
-                        Free to start.<br/>
-                        No commitment.<br/>
+                        Free to start.
+                        <br />
+                        No commitment.
+                        <br />
                         Only pay for active users.
                     </h3>
                 </ContentSection>
@@ -141,13 +143,19 @@ export default ((props: any) => (
             </div>
             <ContentSection color="purple" className="hero-section text-center py-5">
                 <h2>Try Sourcegraph Enterprise Plus risk-free for 30 days</h2>
-                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/request-demo/?form_submission_source=pricing-free-trial-banner">
+                <Link
+                    className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
+                    to="/contact/request-demo/?form_submission_source=pricing-free-trial-banner"
+                >
                     Free trial
                 </Link>
             </ContentSection>
             <ContentSection color="primary" className="hero-section text-center py-5">
                 <h2>Questions?</h2>
-                <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/contact/sales/?form_submission_source=pricing-contact-sales-banner">
+                <Link
+                    className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
+                    to="/contact/sales/?form_submission_source=pricing-contact-sales-banner"
+                >
                     Contact sales
                 </Link>
             </ContentSection>
