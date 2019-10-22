@@ -213,7 +213,6 @@ class EventLogger {
     }
 
     public logConversion(): void {
-        console.log('CONVERSION')
         if (window && (window as any).gtag) {
             (window as any).gtag('event', 'conversion', {
                 send_to: 'AW-868484203/aCNZCLa7gbEBEOuIkJ4D',
