@@ -11,7 +11,6 @@ import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { Vimeo } from '../../components/Vimeo'
 import {
     RequestAutomationDemoAction,
@@ -65,7 +64,7 @@ export default ((props: any) => (
     >
         <ContentPage
             title={title}
-            titleClassName="automation"
+            titleClassName="automation display-3"
             description={description}
             mainActions={
                 <div className="d-flex flex-column align-items-center">
@@ -74,7 +73,7 @@ export default ((props: any) => (
             }
         >
             <ContentSection color="white" className="pt-6 pb-2">
-                <h2 id="most-elite-teams-invest-heavily-code-change-automation" className="display-4 mb-5">
+                <h2 id="most-elite-teams-invest-heavily-code-change-automation" className="display-3 mb-5">
                     The most elite teams invest
                     <br />
                     heavily in code change automation
