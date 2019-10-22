@@ -185,9 +185,11 @@ export default ((props: any) => (
                     <div className="row mt-4 justify-content-md-center">
                         <div className="col-lg-10">
                             <p>
-                                Sourcegraph's automation lets you create campaigns, which are collections of pull requests
-                                and issues across multiple repositories. The following campaign types are built in, and you
-                                can create other ad-hoc campaigns from the UI or use the <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more advanced campaigns:
+                                Sourcegraph's automation lets you create campaigns, which are collections of pull
+                                requests and issues across multiple repositories. The following campaign types are built
+                                in, and you can create other ad-hoc campaigns from the UI or use the{' '}
+                                <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more
+                                advanced campaigns:
                             </p>
                         </div>
                         <div className="col-lg-8 mt-4">
@@ -208,10 +210,10 @@ export default ((props: any) => (
 
                 <div className="row mt-5 justify-content-md-center">
                     <p className="col-lg-10">
-                        When you create a campaign, Sourcegraph automatically creates pull requests and issues as
-                        needed with the correct reviewers and context—and keeps them up-to-date. You can track the
-                        progress of the campaign with the burndown chart and see all related activity across all
-                        repositories. All this makes completing the campaign as fast and painless as possible.
+                        When you create a campaign, Sourcegraph automatically creates pull requests and issues as needed
+                        with the correct reviewers and context—and keeps them up-to-date. You can track the progress of
+                        the campaign with the burndown chart and see all related activity across all repositories. All
+                        this makes completing the campaign as fast and painless as possible.
                     </p>
                 </div>
             </ContentSection>

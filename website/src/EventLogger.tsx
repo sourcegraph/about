@@ -200,7 +200,7 @@ class EventLogger {
 
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {
         if (window && (window as any).gtag) {
-            (window as any).gtag('event', action, { event_category: category, event_label: label })
+            ;(window as any).gtag('event', action, { event_category: category, event_label: label })
         }
         this.logToConsole(label)
     }
@@ -214,22 +214,12 @@ class EventLogger {
 
     public logConversion(): void {
         if (window && (window as any).gtag) {
-            (window as any).gtag('event', 'conversion', {
+            ;(window as any).gtag('event', 'conversion', {
                 send_to: 'AW-868484203/aCNZCLa7gbEBEOuIkJ4D',
                 // event_callback: callback
-            });
+            })
         }
     }
 }
 
 export const eventLogger = new EventLogger()
-
-{/* Required by HubSpot */}
-if (window) {
-    (window as any).jQuery = (window as any).jQuery || (() => ({
-        // tslint:disable-next-line:no-empty
-        change: () => {},
-        // tslint:disable-next-line:no-empty
-        trigger: () => {},
-    }));
-}

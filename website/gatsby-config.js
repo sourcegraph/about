@@ -44,24 +44,24 @@ module.exports = {
       },
     },
     {
-        resolve: `gatsby-plugin-google-gtag`,
-        options: {
-            trackingIds: [
-                "UA-40540747-17", // Google Analytics
-                "AW-868484203", // Google Ads
-            ],
-            gtagConfig: {
-                anonymize_ip: true,
-                cookie_expires: 0,
-            },
-            // This object is used for configuration specific to this plugin
-            pluginConfig: {
-                // Puts tracking script in the head instead of the body
-                head: true,
-                // Setting this parameter is also optional
-                respectDNT: true,
-            },
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          'UA-40540747-17', // Google Analytics
+          'AW-868484203', // Google Ads
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
         },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+        },
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,

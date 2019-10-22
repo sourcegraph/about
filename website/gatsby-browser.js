@@ -7,6 +7,18 @@ exports.onInitialClientRender = function() {
       window.twttr.widgets.load()
     }
   })
+
+  {
+    /* Required by HubSpot */
+  }
+  if (window) {
+    window.jQuery =
+      window.jQuery ||
+      (() => ({
+        change: () => {},
+        trigger: () => {},
+      }))
+  }
 }
 
 exports.onRouteUpdate = function({ location }) {
