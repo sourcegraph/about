@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-We're excited to announce Sourcegraph 3.9. This release contains lots of behind the scenes work, both foundational and forward-looking.
+We're excited to announce Sourcegraph 3.9. This release contains lots of behind-the-scenes work, both foundational and forward-looking.
 
 <div style="padding-left: 2rem">
 
