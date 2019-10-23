@@ -22,7 +22,7 @@ export default ((props: any) => {
                         <div className="col-md-6">
                             <h1 className="display-4">Request a demo</h1>
                             <h3 className="font-weight-light text-sans-serif">
-                                We'll reach out to discuss a product demo and trial.
+                                To schedule a demo with a product specialist, tell us a bit about yourself.
                             </h3>
                             <div className="form mt-5">
                                 <div id="hubspotRequestDemoForm" className="d-flex justify-center" />
