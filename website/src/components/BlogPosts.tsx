@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import truncate from 'lodash/truncate'
-import { BLOGS } from '../pages/blog'
 import * as React from 'react'
 
 interface BlogPostsProps {
