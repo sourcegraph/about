@@ -16,7 +16,7 @@ We're excited to announce Sourcegraph 3.9. This release contains lots of behind 
 
 <div style="padding-left: 2rem">
 
-[**🔎 Search query terms are now literal not regexp (by default)**](#search-query-terms-are-now-literal-not-regexp-by-default)
+[**🔎 Search queries are now literal (not regexp) by default**](#search-queries-are-now-literal-not-regexp-by-default)
 
 [**🤖 Manage cross-repository PR campaigns**](#manage-cross-repository-pr-campaigns)
 
@@ -41,7 +41,7 @@ We're excited to announce Sourcegraph 3.9. This release contains lots of behind 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
 
-## Search query terms are now literal not regexp (by default)
+## Search queries are now literal (not regexp) by default
 
 In Sourcegraph 3.9, search query terms are interpreted literally instead of as regular expressions by default. You can toggle this behavior using the `.*` icon in the search field.
 
