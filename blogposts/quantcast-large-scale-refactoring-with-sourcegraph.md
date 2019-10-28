@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: quantcast-large-scale-refactoring-with-sourcegraph
-heroImage: http://localhost:8000/case-studies/quantcast-sourcegraph-case-study.jpg
+heroImage: https://about.sourcegraph.com/case-studies/quantcast-sourcegraph-case-study.jpg
 published: true
 description: "Founded in 2006, Quantcast's engineering team had amassed thousands of repositories. Learn how after deploying Sourcegraph, Quantcast was able to do major refactors with confidence."
 ---
