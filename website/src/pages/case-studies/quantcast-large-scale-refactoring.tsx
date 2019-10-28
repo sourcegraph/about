@@ -14,7 +14,7 @@ export default ((props: any) => (
             title: 'How Sourcegraph code search enabled large scale refactoring at Quantcast',
             description:
                 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
-            image: 'https://about.sourcegraph.com/case-studies/quantcast_1200x630-generic.jpg',
+            image: 'https://about.sourcegraph.com/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg',
         }}
     >
         <CaseStudyPage

@@ -70,8 +70,8 @@ export default ((props: any) => (
                     // title="See how Sourcegraph enabled large scale refactoring at Quantcast"
                     quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
                     author="Simon Law, Staff Software Engineer, Quantcast"
-                    url="/case-studies/quantcast"
-                    image="/case-studies/quantcast_thumbnail_500x500px-generic.jpg"
+                    url="/case-studies/quantcast-large-scale-refactoring"
+                    image="/case-studies/quantcast-sourcegraph-case-study.jpg"
                 />
                 <hr style={{ borderColor: '#333' }} />
                 <CaseStudyFeature
