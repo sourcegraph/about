@@ -31,7 +31,7 @@ To make it simple for our customers to stay on the latest Sourcegraph version, w
 ## Code Base Security
 Many of our customers have high security requirements and don’t feel comfortable uploading their private code to an external cloud software provider. They prefer a solution that can run on their own infrastructure, under their own security terms and authorization mechanisms, with full control over who has access. Since the release of Sourcegraph 2.3 as an on-premises, self-hosted product, we’ve experienced much higher Sourcegraph adoption rates for enterprise usage.
 
-![Weekly Active Users from Customers since 2017](images/on-prem-customerWAUs.jpg)
+![Weekly Active Users from Customers since 2017](images/on-prem-customerWAUs.jpg "Weekly Active Users from Customers since 2017")
 
 Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to source out the codebase up to an unauthorized cloud infrastructure provider.
 
