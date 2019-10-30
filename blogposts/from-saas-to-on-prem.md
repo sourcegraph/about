@@ -36,7 +36,7 @@ Many of our customers have high security requirements and don’t feel comfortab
 
 ![Weekly Active Users from paying customers since 2017](images/on-prem-customerWAUs.jpg "Weekly Active Users from paying customers since 2017")
 
-Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to source out the codebase up to an unauthorized cloud infrastructure provider.
+Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to grant access to the codebase to an external cloud infrastructure provider.
 <br>
 <br>
 ## Ensuring scalability and performance
