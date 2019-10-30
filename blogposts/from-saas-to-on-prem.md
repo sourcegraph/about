@@ -35,7 +35,7 @@ Many of our customers have high security requirements and don’t feel comfortab
 
 Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to source out the codebase up to an unauthorized cloud infrastructure provider.
 
-## Ensuring Scalability and Performance
+## Ensuring scalability and performance
 The performance of locally run software depends mostly on how much hardware the customer is willing to allocate. The benefit for on-premises software here is that, contrary to SaaS, companies aren’t restrained to a one-size-fits-all performance framework, but can scale the software based on the best hardware that best suits their needs and resources. Sourcegraph is able to work with the existing infrastructure of our customers, and scale and perform accordingly. 
 On the flip side, Sourcegraph has to tackle the diverse challenges that come with running software in different environments.
 
