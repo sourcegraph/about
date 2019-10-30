@@ -51,4 +51,4 @@ Switching from SaaS to on-premises was essential for Sourcegraph to become the d
 
 ![Customer versions](images/on-prem-customerversions.jpg "Customer versions")
 
-While Saas may be the right solution for a variety of products, having on-premises deployment turned out to be the deciding factor for security conscious companies to adopt Sourcegraph.
+While SaaS may be the right solution for a variety of products, providing on-premises deployment turned out to be the deciding factor for security-conscious companies to adopt Sourcegraph.
