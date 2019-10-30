@@ -12,6 +12,7 @@ published: true
 
  **“Trust is great. Control is better.”** - German proverb
 <br>
+<br>
 In December 2017, Sourcegraph went from being a traditional cloud-hosted Software as a Service (SaaS) product to an on-premises, self-hosted product. This blog post covers what drove our decision and what challenges we encountered. It explains why we still believe that on-premises and self-hosted are the best way to ensure the success of a product dealing with sensitive customer data. We will focus on the technical benefits and challenges of this decision, some of which overlap with the positive business aspects that are mentioned in the [Self-hosted > cloud-hosted](https://docs.google.com/presentation/d/1SpTssaLfALx3SIQj5xkA0ZO8l_6tcuLacQtMqeJubo4) ([Open Core Summit 2019](https://opencoresummit.com/))(https://opencoresummit.com/) talk by Sourcegraph CEO Quinn Slack.
 <br>
 ## Going against the SaaS trend
