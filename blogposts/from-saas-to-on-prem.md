@@ -49,7 +49,7 @@ By running on-premises, our DevOps work is exposed to the customer, making them 
 Occasionally, things go wrong. One of the challenges of dealing with customer hosted software is that the debugging process requires access to their error logs, alerts, local configuration, deployment environment, and more. To overcome this hurdle, we have improved Sourcegraph’s observability, building [logging and metrics](https://docs.sourcegraph.com/admin/monitoring_and_tracing) into the application to give more information about the root cause of bugs. Fortunately, our customers have been quick to alert us whenever there was an issue.
 
 ![Grafana dashboard for monitoring Sourcegraph instance health](images/3.9-grafana-dashboard.png "Grafana dashboard for monitoring Sourcegraph instance health")
-<br>
+
 ## Conclusion
 Switching from SaaS to on-premises was essential for Sourcegraph to become the de facto developer platform that all engineers use among top companies like Lyft, Uber, Plaid, Convoy and many more. Our main challenges are maintaining high standards for our code quality to reduce the more tedious debugging process of an on-premises solution and ensuring Sourcegraph runs smoothly in different environments. The majority of our customers run fairly up-to-date Sourcegraph versions. We are able to achieve this by making our upgrade process as simple as possible and communicating our enticing new features to our customers. 
 
