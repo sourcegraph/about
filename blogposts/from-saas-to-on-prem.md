@@ -31,7 +31,7 @@ To make it simple for our customers to stay on the latest Sourcegraph version, w
 ## Code Base Security
 Many of our customers have high security requirements and don’t feel comfortable uploading their private code to an external cloud software provider. They prefer a solution that can run on their own infrastructure, under their own security terms and authorization mechanisms, with full control over who has access. Since the release of Sourcegraph 2.3 as an on-premises, self-hosted product, we’ve experienced much higher Sourcegraph adoption rates for enterprise usage.
 
-![Weekly Active Users from Customers since 2017](images/on-prem-customerWAUs.jpg "Weekly Active Users from Customers since 2017")
+![Weekly Active Users from paying customers since 2017](images/on-prem-customerWAUs.jpg "Weekly Active Users from paying customers since 2017")
 
 Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to source out the codebase up to an unauthorized cloud infrastructure provider.
 
@@ -49,6 +49,6 @@ Occasionally, things go wrong. One of the challenges of dealing with customer ho
 ## Conclusion
 Switching from SaaS to on-premises was essential for Sourcegraph to become the de facto developer platform that all engineers use among top companies like Lyft, Uber, Plaid, Convoy and many more. Our main challenges are maintaining high standards for our code quality to reduce the more tedious debugging process of an on-premises solution and ensuring Sourcegraph runs smoothly in different environments. The majority of our customers run fairly up-to-date Sourcegraph versions. We are able to achieve this by making our upgrade process as simple as possible and communicating our enticing new features to our customers. 
 
-![Customer versions](images/on-prem-customerversions.jpg "Customer versions")
+![Current customer versions (as of October 2019)](images/on-prem-customerversions.jpg "Current customer versions (as of October 2019)")
 
 While SaaS may be the right solution for a variety of products, providing on-premises deployment turned out to be the deciding factor for security-conscious companies to adopt Sourcegraph.
