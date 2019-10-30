@@ -24,7 +24,7 @@ While a decade ago on-premises solutions were difficult to setup and required on
 To make it simple for our customers to stay on the latest Sourcegraph version, we optimized the updating process with the following changes:
 
 - We moved from continuous delivery to monthly iteration cycles.
-- We emphasized feature development to encourage keeping up with the newest Sourcegraph version. We also have policies that ask customers to stay on the newest versions.
+- We emphasized feature development to encourage keeping up with the newest Sourcegraph version. We also have support policies that ask customers to stay on the newest versions.
 - We established a standard release testing process to better detect bugs in our releases.
 - We wrote [better docs](https://docs.sourcegraph.com/admin/install) to tackle the challenge of running Sourcegraph smoothly on different environments.
 
