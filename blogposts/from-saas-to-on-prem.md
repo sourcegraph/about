@@ -29,7 +29,7 @@ To make it simple for our customers to stay on the latest Sourcegraph version, w
 - We established a standard release testing process to better detect bugs in our releases.
 - We wrote [better, developer-friendly docs](https://docs.sourcegraph.com/admin/install) to tackle the challenge of running Sourcegraph smoothly on different environments.
 
-<br>
+
 
 ## Code base security
 
