@@ -47,7 +47,7 @@ Occasionally, things go wrong. One of the challenges of dealing with customer ho
 ![Grafana dashboard for monitoring Sourcegraph instance health](images/3.9-grafana-dashboard.png "Grafana dashboard for monitoring Sourcegraph instance health")
 
 ## Conclusion
-Switching from SaaS to on-premises was essential for Sourcegraph to become the de facto developer platform that all engineers use among top companies like Lyft, Uber, Plaid, Convoy and many more. Our main challenges are maintaining high standards for our code quality to reduce the slightly more tedious debugging process of an on-premises solution and ensuring Sourcegraph runs smoothly on different environments. The majority of our customers run fairly up to date Sourcegraph versions. We are able to achieve this by making our upgrade process as simple as possible and communicating our enticing new features to our customers. 
+Switching from SaaS to on-premises was essential for Sourcegraph to become the de facto developer platform that all engineers use among top companies like Lyft, Uber, Plaid, Convoy and many more. Our main challenges are maintaining high standards for our code quality to reduce the more tedious debugging process of an on-premises solution and ensuring Sourcegraph runs smoothly in different environments. The majority of our customers run fairly up-to-date Sourcegraph versions. We are able to achieve this by making our upgrade process as simple as possible and communicating our enticing new features to our customers. 
 
 ![Customer versions](images/on-prem-customerversions.jpg "Customer versions")
 
