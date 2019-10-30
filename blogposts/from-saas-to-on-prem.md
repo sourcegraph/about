@@ -26,7 +26,7 @@ To make it simple for our customers to stay on the latest Sourcegraph version, w
 - We moved from continuous delivery to monthly iteration cycles.
 - We emphasized feature development to encourage keeping up with the newest Sourcegraph version. We also have support policies that ask customers to stay on the newest versions.
 - We established a standard release testing process to better detect bugs in our releases.
-- We wrote [better docs](https://docs.sourcegraph.com/admin/install) to tackle the challenge of running Sourcegraph smoothly on different environments.
+- We wrote [better, developer-friendly docs](https://docs.sourcegraph.com/admin/install) to tackle the challenge of running Sourcegraph smoothly on different environments.
 
 ## Code Base Security
 Many of our customers have high security requirements and don’t feel comfortable uploading their private code to an external cloud software provider. They prefer a solution that can run on their own infrastructure, under their own security terms and authorization mechanisms, with full control over who has access. Since the release of Sourcegraph 2.3 as an on-premises, self-hosted product, we’ve experienced much higher Sourcegraph adoption rates for enterprise usage.
