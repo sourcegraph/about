@@ -89,7 +89,7 @@ export const InContentBlockquote: React.FunctionComponent<{
     author?: string
 }> = ({ quote, author }) => (
     <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-        <p>{quote}</p>
+        <p dangerouslySetInnerHTML={{ __html: quote }} />
         {author && <footer className="blockquote-footer">{author}</footer>}
     </blockquote>
 )

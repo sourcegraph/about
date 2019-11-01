@@ -46,8 +46,8 @@ export default ((props: any) => (
                                 style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                             />{' '}
-                            <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to help
-                            every elite&nbsp;development team ship better software faster.
+                            <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to help every
+                            elite&nbsp;development team ship better software faster.
                         </p>
                         <RequestDemoAction className="mt-5" />
                         <ContactPresalesSupportAction className="text-light mt-3" />
