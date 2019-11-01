@@ -41,7 +41,7 @@ export default ((props: any) => {
                 <div className="container-lg py-6 px-5">
                     <div className="row flex-wrap-reverse">
                         <div className="col-md-6">
-                            <h1 className="display-4">Contact product specialist</h1>
+                            <h1 className="display-4">Talk to a product specialist</h1>
                             <h3 className="font-weight-light text-sans-serif">
                                 Let us know how we can help. We'll follow up soon.
                             </h3>
