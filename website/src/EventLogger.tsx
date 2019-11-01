@@ -171,47 +171,46 @@ class EventLogger {
         this.logConversion()
         this.trackEvent('Pages', 'click', null, 'DemoFormSubmitted', {})
     }
+    public trackRequestDemoActionFormSubmitted(): void {
+        this.trackEvent('Pages', 'click', null, 'RequestDemoActionFormSubmitted', {})
+    }
     public trackAutomationDemoFormSubmitted(): void {
         this.logConversion()
         this.trackEvent('Pages', 'click', null, 'AutomationDemoFormSubmitted', {})
     }
-
     public trackHackathonFormSubmitted(): void {
         this.trackEvent('Pages', 'click', null, 'HackathonFormSubmitted', {})
     }
-
     public trackDotGoFormSubmitted(): void {
         this.trackEvent('Pages', 'click', null, 'DotGoFormSubmitted', {})
     }
-
     public trackStrangeLoopFormSubmitted(): void {
         this.trackEvent('Pages', 'click', null, 'StrangeLoopFormSubmitted', {})
     }
-
     public trackBuyUnlimitedButtonClicked(): void {
         this.trackEvent('Pages', 'click', null, 'BuyUnlimitedButtonClicked', {})
     }
     public trackBuyEnterpriseButtonClicked(): void {
         this.trackEvent('Pages', 'click', null, 'BuyEnterpriseButtonClicked', {})
     }
-    public automationSeeItInActionButtonClicked(): void {
+    public trackAutomationSeeItInActionButtonClicked(): void {
         this.trackEvent('Pages', 'click', null, 'AutomationSeeItInActionButtonClicked', {})
     }
-
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {
         if (window && (window as any).gtag) {
             ;(window as any).gtag('event', action, { event_category: category, event_label: label })
         }
         this.logToConsole(label)
     }
-
+    public trackCaeStudyDownloadPDFClicked(customer: string): void {
+        this.trackEvent('Pages', 'click', null, `CaseStudyDownloadPDFButtonClicked`, { caseStudy: customer })
+    }
     public logToConsole(eventName: string): void {
         const eventLogDebug = typeof localStorage !== 'undefined' && localStorage.getItem('eventLogDebug') !== null
         if (eventLogDebug) {
             console.log('%cEVENT %s', 'color: #aaa', eventName)
         }
     }
-
     public logConversion(): void {
         if (window && (window as any).gtag) {
             ;(window as any).gtag('event', 'conversion', {
@@ -221,5 +220,4 @@ class EventLogger {
         }
     }
 }
-
 export const eventLogger = new EventLogger()

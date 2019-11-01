@@ -9,23 +9,25 @@
         max-width: 740px; // Copied from medium.com
     }
 
-    &__title {
-        &--rule {
-            margin: 25px 0;
-        }
+    &__label {
+        margin-top: .5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     &__logo {
-        margin: 0 0 2rem 0;
-        height: 3rem;
+        height: 5rem;
     }
 
     &__quote {
+        width: 85%;
+        margin: 0 auto;
         padding: 0 2.5rem;
 
         img {
             width: 100%;
-            max-width: 200px;
+            max-width: 125px;
         }
 
         p {
@@ -53,8 +55,8 @@
         }
 
         footer {
-            margin-top: 2rem;
-            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-size: 1.15rem;
             font-weight: 400;
         }
 
@@ -115,6 +117,20 @@
 
         @include media-breakpoint-up(md) {
             margin-left: 1rem;
+        }
+    }
+}
+
+.lyft-case-study {
+    .case-studies {
+        &__logo {
+            height: 7rem;
+        }
+
+        &__quote {
+            p {
+                font-size: 1.4rem;
+            }
         }
     }
 }

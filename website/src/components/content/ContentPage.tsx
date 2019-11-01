@@ -1,6 +1,5 @@
 import React from 'react'
 import { Jumbotron } from '../Jumbotron'
-import slugify from 'slugify'
 
 interface Props {
     title: string
@@ -8,6 +7,7 @@ interface Props {
     extraDescription?: React.ReactFragment
     mainActions?: React.ReactFragment
     titleClassName?: string
+    className?: string
     children?: React.ReactNode
 }
 
@@ -17,10 +17,11 @@ export const ContentPage: React.FunctionComponent<Props> = ({
     extraDescription,
     mainActions,
     titleClassName,
+    className = '',
     children,
 }) => (
-    <div className={`${slugify(title).toLowerCase()} content-page`}>
-        <Jumbotron className="mb-5" title={title} description={description} titleClassName={titleClassName}>
+    <div className={`${className}- content-page`}>
+        <Jumbotron title={title} description={description} titleClassName={titleClassName} d={`${title} mb-5`}>
             {extraDescription}
             {mainActions}
         </Jumbotron>
