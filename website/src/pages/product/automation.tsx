@@ -64,6 +64,7 @@ export default ((props: any) => (
     >
         <ContentPage
             title={title}
+            className="automation"
             titleClassName="automation display-3"
             description={description}
             mainActions={

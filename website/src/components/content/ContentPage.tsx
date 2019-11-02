@@ -20,8 +20,8 @@ export const ContentPage: React.FunctionComponent<Props> = ({
     className = '',
     children,
 }) => (
-    <div className={`${className}- content-page`}>
-        <Jumbotron title={title} description={description} titleClassName={titleClassName} d={`${title} mb-5`}>
+    <div className={`${className} content-page`}>
+        <Jumbotron title={title} description={description} titleClassName={titleClassName} className={`${title} mb-5`}>
             {extraDescription}
             {mainActions}
         </Jumbotron>

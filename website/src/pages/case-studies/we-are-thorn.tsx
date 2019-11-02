@@ -1,10 +1,5 @@
 import * as React from 'react'
-import {
-    CaseStudyPage,
-    CaseStudyRequestDemoForm,
-    InContentBlockquote,
-    MediaQuote,
-} from '../../components/content/CaseStudyPage'
+import { CaseStudyPage, CaseStudyRequestDemoForm, InContentBlockquote } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 
@@ -22,16 +17,14 @@ export default ((props: any) => (
             customer="We are Thorn"
             title="Thorn sunsets legacy applications safely with Sourcegraph"
             logo="/case-studies/thorn-logo.png"
+            quote={{
+                quote:
+                    "Ensuring that changes to legacy systems didn't affect production stability was taking too long.",
+                author: 'Thorn Software Engineer Jacob Gillespie',
+                image: '/case-studies/jacob-gillespie-thorn-square.jpg',
+            }}
             pdf="https://storage.googleapis.com/sourcegraph-assets/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
         >
-            <ContentSection color="white" className="pt-5 pb-3">
-                <MediaQuote
-                    image="/case-studies/jacob-gillespie-thorn-square.jpg"
-                    quote="Ensuring that changes to legacy systems didn't affect production stability was taking too long."
-                    author="Thorn Software Engineer Jacob Gillespie"
-                />
-            </ContentSection>
-
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
                     <h2>Thorn defends children</h2>

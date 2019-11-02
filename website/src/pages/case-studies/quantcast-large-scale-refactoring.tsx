@@ -1,10 +1,5 @@
 import * as React from 'react'
-import {
-    CaseStudyPage,
-    InContentBlockquote,
-    MediaQuote,
-    CaseStudyRequestDemoForm,
-} from '../../components/content/CaseStudyPage'
+import { CaseStudyPage, InContentBlockquote, CaseStudyRequestDemoForm } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 
@@ -22,16 +17,13 @@ export default ((props: any) => (
             customer="Quantcast"
             title="How Sourcegraph code search enabled large scale refactoring at Quantcast"
             logo="/case-studies/quantcast-logo.png"
+            quote={{
+                quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
+                author: 'Simon Law, Staff Software Engineer, Quantcast',
+                image: '/case-studies/simon-law-quantcast.jpg',
+            }}
             pdf="https://storage.googleapis.com/sourcegraph-assets/Quantcast-Sourcegraph-case-study.pdf"
         >
-            <ContentSection color="white" className="pt-5 pb-3">
-                <MediaQuote
-                    image="/case-studies/simon-law-quantcast.jpg"
-                    quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
-                    author="Simon Law, Staff Software Engineer, Quantcast"
-                />
-            </ContentSection>
-
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
                     <p>
