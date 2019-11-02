@@ -67,15 +67,13 @@ export default ((props: any) => (
                 </h2>
                 <hr style={{ borderColor: '#333' }} />
                 <CaseStudyFeature
-                    // title="See how Sourcegraph enabled large scale refactoring at Quantcast"
                     quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
-                    author="Simon Law, Staff Software Engineer, Quantcast"
+                    author="Quantcast Staff Software Engineer, Simon Law"
                     url="/case-studies/quantcast-large-scale-refactoring"
                     image="/case-studies/quantcast-sourcegraph-case-study.jpg"
                 />
-                <hr style={{ borderColor: '#333' }} />
+                <hr style={{ borderColor: "#333" }} />
                 <CaseStudyFeature
-                    // title="See how Thorn sunsets legacy applications safely with Sourcegraph"
                     quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
                     author="Thorn Software Engineer, Jacob Gillespie"
                     url="/case-studies/we-are-thorn"
