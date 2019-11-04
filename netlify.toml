@@ -7,3 +7,39 @@ command = "yarn run prettier && yarn run build"
 [build.environment]
   YARN_VERSION = "1.15.2"
   YARN_FLAGS = "--no-ignore-optional"
+
+[[redirects]]
+  from = "/assets/*"
+  to = "https://f155c4ab.ngrok.io/assets/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/community/*"
+  to = "https://f155c4ab.ngrok.io/community/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/direction/*"
+  to = "https://f155c4ab.ngrok.io/direction/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/company/*"
+  to = "https://f155c4ab.ngrok.io/company/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/handbook/*"
+  to = "https://f155c4ab.ngrok.io/handbook/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/retrospectives/*"
+  to = "https://f155c4ab.ngrok.io/retrospectives/:splat"
+  status = 200
+  force = true

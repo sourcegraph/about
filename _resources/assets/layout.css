@@ -1,0 +1,232 @@
+/* GLOBAL */
+:root {
+	--breakpoint-width: 900px;
+	--text-color: #242f30;
+	--link-color: #0066c5;
+	--link-hover-color: #1986ea;
+	--border-color: #e1e3e8;
+	--body-bg: #f4f6f8;
+	--header-bg: #f4f6f8;
+	--width: 1200px;
+	--spacing: 1rem;
+	--logo-width: 120px;
+	--logo-height: 16.84px;
+	--logo-padding-y: 0.75rem;
+	--header-height: calc(var(--logo-height) + 2*var(--logo-padding-y) + 1px);
+}
+body {
+	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	background-color: var(--body-bg);
+	color: var(--text-color);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14px;
+}
+a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+a:hover {
+	color: var(--link-hover-color);
+	text-decoration: underline;
+}
+
+/* UTILITIES */
+.container {
+	max-width: var(--width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Scroll slightly beyond in-page anchor so that the fixed header doesn't obscure it. */
+:target::before {
+	content: "";
+	display: block;
+	position: relative;
+	pointer-events: none;
+}
+:not(.anchor-inline):target::before {
+	/* Scroll so that header anchors are at the top of the viewport. */
+	height: var(--header-height);
+	margin-top: calc(-1 * var(--header-height));
+}
+.anchor-inline:target::before {
+	/* Scroll so that inline anchors are at the center (vertically) of the viewport. */
+	/* height: calc(50vh + var(--header-height)); */
+	/* margin-top: calc(-1 * (50vh + var(--header-height))); */
+	height: 50vh;
+	margin-top: -50vh;
+}
+.anchor-inline + .anchor-inline-link::before {
+	content: "🔗";
+	width: 1rem;
+	height: 1rem;
+}
+.anchor-inline:target + .anchor-inline-link {
+	background-color: yellow;
+	border: solid 1px #eecc11;
+	display: inline-block;
+	padding: 0.1rem;
+	margin: -0.1rem;
+}
+
+/* HEADER */
+#header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: var(--header-bg);
+	border-bottom: solid 1px var(--border-color);
+	padding-left: calc(0.5*var(--spacing));
+}
+#header > .container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+#header #logo {
+	flex: 0 0;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	color: inherit;
+	text-decoration: none;
+	padding-top: var(--logo-padding-y);
+	padding-bottom: var(--logo-padding-y);
+	margin-right: 0.5rem;
+}
+#header #logo img {
+	width: var(--logo-width);
+	height: var(--logo-height);
+	margin-right: 7px;
+}
+#header nav {
+	flex: 1 0;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 0.25rem;
+	white-space: nowrap;
+}
+#header nav > a {
+	color: var(--text-color);
+	padding: 0.25rem 0.4rem;
+	text-decoration: none;
+}
+
+/* SEARCH */
+#search-form {
+	display: inline-flex;
+	margin-bottom: 0;
+	margin-right: 0.5rem;
+}
+#search, #search-button {
+	padding: 0.325rem;
+}
+#search {
+	-webkit-appearance: textfield;
+	border: solid 1px var(--border-color);
+	border-radius: 0;
+	width: 10rem;
+}
+#search-button {
+	margin-left: 0.125rem;
+	background-color: transparent;
+	border: solid 1px var(--border-color);
+	cursor: pointer;
+}
+#search-button:hover, #search-button:active, #search-button:focus {
+	color: var(--link-color);
+}
+
+/* PAGE */
+@media (max-width: 900px) {
+	.visible-sm { display: unset; }
+	.visible-lg { display: none; }
+}
+@media (min-width: 900px) {
+	.visible-sm { display: none; }
+	.visible-lg { display: unset; }
+	#page > .container {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	#index {
+		flex: 1 1 calc(var(--width) * 0.15);
+		position: sticky;
+		top: var(--header-height);
+		max-height: calc(100vh - var(--header-height) - 2*var(--index-spacing));
+	}
+}
+
+/* INDEX */
+:root {
+	--index-border-color: #dadcdf;
+	--index-spacing: var(--spacing);
+	--index-margin-top: 3rem;
+}
+#index {
+	padding: var(--index-spacing);
+	font-size: 90%;
+	line-height: 24px;
+	margin-top: var(--index-margin-top);
+	overflow-y: auto;
+}
+#index > h3.version {
+	font-weight: bold;
+	font-size: 100%;
+	opacity: 0.7;
+	margin-bottom: 0;
+}
+#index > h4 {
+	opacity: 0.8;
+	font-weight: normal;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#index > ul {
+	margin-top: 0.125rem;
+	padding-left: var(--spacing);
+}
+#index > ul ul {
+	padding-left: 20px;
+}
+#index > ul li {
+	list-style: none;
+}
+#index > ul li::before {
+	margin-left: -0.8rem;
+	content: "\203A\00a0";
+}
+
+/* CONTENT */
+#content {
+	flex: 8 4;
+	background-color: white;
+	padding: var(--spacing) var(--spacing) calc(3*var(--spacing));
+	overflow: hidden;
+}
+#content > .breadcrumbs {
+	font-size: 90%;
+}
+#content > .breadcrumbs {
+	margin-bottom: 0.75rem;
+}
+#content > .breadcrumbs > .active {
+	color: inherit;
+	opacity: 0.8;
+}
+
+/* PAGE BUTTON */
+.page-btn {
+	display: inline-block;
+	font-size: 90%;
+	color: inherit;
+	border: solid 1px var(--index-border-color);
+	margin-top: calc(var(--spacing));
+	padding: 0.2rem 0.4rem 0.1rem;
+}
