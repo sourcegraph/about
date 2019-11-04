@@ -103,7 +103,10 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                                 <Link to={BLOGS.Blog}>
                                     <button className="btn btn-outline-primary">Read more posts</button>
                                 </Link>
-                                <a href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`} className="ml-3">
+                                <a
+                                    href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
+                                    className="ml-3"
+                                >
                                     <button className="btn btn-outline-primary">Edit this post</button>
                                 </a>
                                 <div style={{ height: '1em' }} />

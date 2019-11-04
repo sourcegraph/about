@@ -9,29 +9,29 @@
         max-width: 740px; // Copied from medium.com
     }
 
-    &__title {
-        &--rule {
-            margin: 25px 0;
-        }
+    &__label {
+        margin-top: .5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity: 0.9;
     }
 
     &__logo {
-        margin: 0 0 2rem 0;
-        height: 3rem;
+        height: 5rem;
     }
 
     &__quote {
+        margin: 0 auto;
         padding: 0 2.5rem;
 
         img {
             width: 100%;
-            max-width: 200px;
+            max-width: 150px;
         }
 
         p {
             text-indent: 0.4em;
-            font-weight: 600;
-            color: #212529;
             font-size: 1.5rem;
             line-height: 1.2;
             letter-spacing: -0.015em;
@@ -48,14 +48,14 @@
             }
 
             @include media-breakpoint-up(lg) {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
             }
         }
 
         footer {
-            margin-top: 2rem;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: 400;
+            opacity: 0.6;
         }
 
         &--in-content {
