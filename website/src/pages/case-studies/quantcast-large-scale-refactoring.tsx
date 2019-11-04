@@ -1,11 +1,7 @@
 import * as React from 'react'
-import { CaseStudyPage, InContentBlockquote, MediaQuote } from '../../components/content/CaseStudyPage'
-import { ContentPage } from '../../components/content/ContentPage'
+import { CaseStudyPage, InContentBlockquote, CaseStudyRequestDemoForm } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
-import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
-import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
-import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
     <Layout
@@ -18,19 +14,16 @@ export default ((props: any) => (
         }}
     >
         <CaseStudyPage
+            customer="Quantcast"
             title="How Sourcegraph code search enabled large scale refactoring at Quantcast"
             logo="/case-studies/quantcast-logo.png"
+            quote={{
+                quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
+                author: 'Simon Law, Staff Software Engineer, Quantcast',
+                image: '/case-studies/simon-law-quantcast.jpg',
+            }}
             pdf="https://storage.googleapis.com/sourcegraph-assets/Quantcast-Sourcegraph-case-study.pdf"
-            className="quantcast-case-study"
         >
-            <ContentSection color="white" className="pt-5 pb-3">
-                <MediaQuote
-                    image="/case-studies/simon-law-quantcast.jpg"
-                    quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
-                    author="Simon Law, Staff Software Engineer, Quantcast"
-                />
-            </ContentSection>
-
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
                     <p>
@@ -130,21 +123,6 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
         </CaseStudyPage>
-        <ContentPage
-            title="Get Sourcegraph for your team"
-            description="Sourcegraph’s code search enables developers and DevOps teams to find dead code, unused packages, and references to deprecated systems, organization-wide across tens of thousands of repositories."
-            mainActions={
-                <div className="d-flex flex-column align-items-center">
-                    <RequestDemoAction className="mt-3" />
-                    <ContactPresalesSupportAction className="mt-3 text-light" />
-                    <ViewDeveloperDocumentationAction
-                        className="text-light mt-2"
-                        url="https://docs.sourcegraph.com/#quickstart"
-                    >
-                        Documentation &amp; self-service install
-                    </ViewDeveloperDocumentationAction>
-                </div>
-            }
-        />
+        <CaseStudyRequestDemoForm />
     </Layout>
 )) as React.FunctionComponent<any>

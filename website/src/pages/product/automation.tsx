@@ -22,7 +22,7 @@ const title = 'Automation'
 const description =
     'Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt.'
 const seeItInActionClicked = () => {
-    eventLogger.automationSeeItInActionButtonClicked()
+    eventLogger.trackAutomationSeeItInActionButtonClicked()
 }
 
 export const CampaignsTable: React.FunctionComponent<{
@@ -64,6 +64,7 @@ export default ((props: any) => (
     >
         <ContentPage
             title={title}
+            className="automation"
             titleClassName="automation display-3"
             description={description}
             mainActions={

@@ -26,7 +26,7 @@ export const CaseStudyFeature: React.FunctionComponent<{
     color = 'dark',
     className = '',
 }) => (
-    <div className={`jumbotron case-studies-feature pt-5 pb-3 ${COLORS[color]} ${className}`}>
+    <div className={`jumbotron pt-5 pb-3 ${COLORS[color]} ${className}`}>
         <div className="row container justify-content-center mb-4">
             {title && (
                 <h2 className={`text-center ${titleClassName}`}>
