@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: from-saas-to-on-premises
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/blog/on-prem-preview.jpg
 published: true
 ---
 
