@@ -9,7 +9,7 @@ import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySo
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
-import { Testimonials } from '../components/Testimonials'
+import { Tweets } from '../components/Tweets'
 import { Vimeo } from '../components/Vimeo'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
@@ -104,7 +104,7 @@ export default ((props: any) => (
                     </div>
                 </div>
                 <div className="container-fluid">
-                    <Testimonials />
+                    <Tweets />
                 </div>
             </div>
             <ContentSection className="my-5">
