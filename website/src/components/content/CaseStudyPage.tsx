@@ -39,7 +39,7 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
         </CaseStudyJumbotron>
 
         <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
-            <div className="container py-4 text-center ">
+            <div className="container py-4">
                 <h1 className={`${titleClassName}`}>{title}</h1>
                 {pdf && (
                     <a

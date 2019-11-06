@@ -1,0 +1,83 @@
+
+.testimonial-carousel {
+
+    &__quote-icon {
+        width: 65px;
+    }
+
+    &__testimonials {
+        list-style: none;
+    }
+
+    &__testimonial {
+
+    }
+
+    &__logo {
+        height: 50px;
+    }
+
+    &__blockquote {
+        font-size: 1.35rem;
+
+        .blockquote-footer::before {
+            content: "";
+        }
+    }
+
+    &__author-image {
+        height: 100px;
+    }
+
+    &__author-name {
+        font-size: 1.5rem;
+        color: white;
+        font-style: normal;
+    }
+
+    &__author-title {
+
+    }
+
+    &__content {
+        p {
+            margin-top: -0.6rem;
+
+            &::before {
+                text-indent: -0.4em;
+                content: '"';
+                position: absolute;
+                margin-left: -2px;
+            }
+
+            &::after {
+                content: "”";
+                margin-left: 2px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-left: 1rem;
+        }
+    }
+
+    .yelp {
+        .testimonial-carousel__logo {
+            height: 60px;
+        }
+    }
+}
+
+
+//.lyft-case-study {
+//    .case-studies {
+//        &__logo {
+//            height: 7rem;
+//        }
+//    }
+//}
