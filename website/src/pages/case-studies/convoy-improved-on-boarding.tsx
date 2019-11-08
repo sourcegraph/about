@@ -36,7 +36,7 @@ export default ((props: any) => (
                     <p>
                         For Brandon Bloom, a new hire who was eager to start contributing, using GitHub’s native search
                         across Convoy’s voluminous repositories rarely gave him the results he needed. His frustration
-                        led him to Sourcegraph. As an
+                        led him to Sourcegraph. As an{' '}
                         <a href="https://about.sourcegraph.com/blog/from-saas-to-on-premises">
                             on-prem and self-hosted product
                         </a>
