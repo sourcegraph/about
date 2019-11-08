@@ -37,3 +37,12 @@ The recommended flow for publishing a blog post is:
  - Create a PR with the new blog post Markdown file, setting `published` to `true`
  - Get your PR reviewed and approved
  - Once the PR is merged, Netlify will build and deploy the new static site, which takes around 5 minutes.
+
+## Handbook
+
+The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in this repository. Soon it will be deployed together with the rest of the about.sourcegraph.com site.
+
+The handbook uses [docsite](https://github.com/sourcegraph/docsite).
+
+- To preview changes to handbook content locally, run `docsite serve -http=:5081`, and open http://localhost:5081.
+- To check for broken links and other lint problems, run `docsite check`.

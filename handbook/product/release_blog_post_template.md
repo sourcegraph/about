@@ -10,6 +10,8 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: false
 ---
 
+# Release blog post template
+
 <!-- CONTENT TEMPLATES --
 
 Vimeo embed

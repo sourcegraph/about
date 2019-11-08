@@ -1,0 +1,9 @@
+:root {
+    --body-bg: #ffffff;
+}
+
+body {
+	background: var(--body-bg);
+    margin: 0;
+    padding: 0;
+}
