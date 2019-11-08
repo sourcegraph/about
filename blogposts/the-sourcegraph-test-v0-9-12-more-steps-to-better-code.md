@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: the-sourcegraph-test-v0-9-12-more-steps-to-better-code
-heroImage: //images.ctfassets.net/le3mxztn6yoo/4NjrERYveEGikIQwUsaeas/a76e07e3bbe32f55f51b49bbf9f87254/12-steps.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/4NjrERYveEGikIQwUsaeas/a76e07e3bbe32f55f51b49bbf9f87254/12-steps.jpg
 published: true
 ---
 

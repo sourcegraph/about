@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-ian-lee-lawrence-livermore-national-laboratory
-heroImage: //images.ctfassets.net/le3mxztn6yoo/20fvPueXZGqOYSq2Oo68M0/a3434fc1cac1aaa96f9f4c3f913c8722/1_8LeAkNACLvgEnCXP-1qUBw.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/20fvPueXZGqOYSq2Oo68M0/a3434fc1cac1aaa96f9f4c3f913c8722/1_8LeAkNACLvgEnCXP-1qUBw.jpeg
 published: true
 ---
 
@@ -14,7 +14,7 @@ published: true
 
 [Ian Lee](https://twitter.com/ianlee1521) of Lawrence Livermore National Laboratory talks about how LLNL is using, producing, and encouraging open source in government ([slides here](https://speakerdeck.com/ianlee1521/developing-open-source-in-service-to-national-security)).
 
-Open source software and national security — two topics you don’t hear together too often. But there’s a lot of work in government agencies being done right now — open source, inner source, and closed source.
+Open source software and national security — two topics you don’t hear together too often. But there's a lot of work in government agencies being done right now — open source, inner source, and closed source.
 
 ![1*8LeAkNACLvgEnCXP-1qUBw](//images.contentful.com/le3mxztn6yoo/20fvPueXZGqOYSq2Oo68M0/a3434fc1cac1aaa96f9f4c3f913c8722/1_8LeAkNACLvgEnCXP-1qUBw.jpeg)
 

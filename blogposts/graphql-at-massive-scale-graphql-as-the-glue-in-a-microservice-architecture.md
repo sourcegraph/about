@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: graphql-at-massive-scale-graphql-as-the-glue-in-a-microservice-architecture
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6t2OF30gV2U2WMIcQouceE/6c82ff3b7e356a00ac6d24dde625fbb9/jason-lengstorf-tokyo-footer.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6t2OF30gV2U2WMIcQouceE/6c82ff3b7e356a00ac6d24dde625fbb9/jason-lengstorf-tokyo-footer.jpg
 published: true
 ---
 
@@ -36,7 +36,7 @@ Into this fray, GraphQL provides a number of key points of value that help bring
 * The GraphQL API boundary enforces a clear separation between underlying data sources and presentation layer
 
 That being said, GraphQL also comes with some costs:
-* Which team "owns" the Graph QL microservice and is responsible for maintaining code standards and enforcing conventions?
+* Which team "owns" the GraphQL microservice and is responsible for maintaining code standards and enforcing conventions?
 * How can teams continue to make independent changes to their own services without having to go through a central clearinghouse that can easily become a development bottleneck?
 * Does this introduce a single point of failure where one bad commit can take down the whole system?
 * How to deal with tracing given the extra API layer GraphQL introduces

@@ -1,5 +1,4 @@
-// jobs page
-
+// stylelint-disable declaration-property-unit-whitelist
 .jobs {
     -webkit-font-smoothing: antialiased;
     width: 100%;
@@ -28,16 +27,13 @@
 
     &__benefits {
         background: $dark-8;
-        color: white;
+        color: #ffffff;
 
         &-list {
             display: flex;
             max-width: 64rem;
             margin-left: auto;
             margin-right: auto;
-            @media (max-width: $media-md) {
-                flex-direction: column;
-            }
 
             &-item {
                 display: flex;
@@ -46,11 +42,6 @@
                 flex-grow: 1;
                 text-align: left;
                 font-size: 0.875rem;
-
-                @media (max-width: $media-md) {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
 
                 &-icon {
                     margin-right: 1rem;
@@ -75,56 +66,12 @@
 
     &__work {
         background: $light-10;
-        color: black;
-
-        &--buttons {
-            display: flex;
-            justify-content: center;
-            text-align: left;
-
-            @media (max-width: $media-lg) {
-                flex-direction: column;
-            }
-
-            &-button {
-                display: flex;
-                background: $dark-8;
-                padding: 1rem;
-                margin: 0.5rem;
-                max-width: 30rem;
-                border-radius: 0.5rem;
-                justify-content: space-between;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            &-text {
-                display: flex;
-                flex-direction: column;
-                align-self: center;
-                padding-right: 0.5rem;
-                max-width: 64rem;
-
-                &-title {
-                    color: $light-12;
-                }
-                &-description {
-                    color: $light-4;
-                }
-            }
-
-            &-icon {
-                svg path {
-                    fill: $light-11;
-                }
-                align-self: center;
-            }
-        }
+        color: #000000;
     }
 
     &__positions {
         background: $light-11;
-        color: black;
+        color: #000000;
 
         &--title {
             margin: auto auto;

@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Sourcegraph Open Source Code of Conduct
+title: Sourcegraph open-source code of conduct
 permalink: codeofconduct
 ---
 
@@ -20,7 +20,7 @@ This code of conduct applies to all repos and communities for Sourcegraph-manage
 
 Note: Some Sourcegraph-managed communities have codes of conduct that pre-date this document and issue resolution process. While communities are not required to change their code, they are expected to use the resolution process outlined here. The review team will coordinate with the communities involved to address your concerns.
 
-# Reporting Code of Conduct Issues
+# Reporting code of conduct issues
 
 We encourage all communities to resolve issues on their own whenever possible. This builds a broader and deeper understanding and ultimately a healthier interaction. In the event that an issue cannot be resolved locally, please feel free to report your concerns by contacting [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
 

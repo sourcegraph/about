@@ -6,13 +6,13 @@ tags: [
   "blog"
 ]
 slug: browse-review-code-on-github-like-in-an-ide-with-the-sourcegraph-chrome-extension
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2THS1dp1BeuOcCUu42QqGO/b513955b9070cc33abc348d9de2fd3d3/1_DZhwRJxGyZF7T1G0m--lfA.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2THS1dp1BeuOcCUu42QqGO/b513955b9070cc33abc348d9de2fd3d3/1_DZhwRJxGyZF7T1G0m--lfA.png
 published: true
 ---
 
 
 
-Wouldn’t it be awesome if you could review, browse, and search code on GitHub as though you were in an IDE, with jump-to-definition, doc tooltips, and cross-references? We think so. That’s why we built the Sourcegraph [Chrome extension for GitHub](https://docs.sourcegraph.com/integration/browser_extension).
+Wouldn't it be awesome if you could review, browse, and search code on GitHub as though you were in an IDE, with jump-to-definition, doc tooltips, and cross-references? We think so. That’s why we built the Sourcegraph [Chrome extension for GitHub](https://docs.sourcegraph.com/integration/browser_extension).
 
 _Update (June 22, 2016): Added support for pull requests and diffs._
 
@@ -39,7 +39,7 @@ It’s totally free. See what other devs are saying about it:
 
 * * *
 
-### [I**nstall the Sourcegraph Chrome extension**](https://docs.sourcegraph.com/integration/browser_extension)
+### [**Install the Sourcegraph Chrome extension**](https://docs.sourcegraph.com/integration/browser_extension)
 
 _Update (June 22, 2016): Added support for pull requests and diffs._
 

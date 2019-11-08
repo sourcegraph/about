@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: gos-work-stealing-scheduler
-heroImage: //images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c1626b318de4be28314cbdc989a01525/logo-dotgo-black-web.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c1626b318de4be28314cbdc989a01525/logo-dotgo-black-web.png
 published: true
 ---
 
@@ -19,7 +19,7 @@ Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us 
 --
 
 The runtime scheduler picks which goroutine to runs, which threads they run on
-as well as which CPUs the threads run on. In Go we don't deal with the
+as well as which CPU's the threads run on. In Go we don't deal with the
 processor or the threads, the runtime does it for us. We instead just deal
 with goroutines. This talk is about how the runtime does the scheduling for
 us.

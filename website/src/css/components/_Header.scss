@@ -1,34 +1,40 @@
-// head
-
+// stylelint-disable declaration-property-unit-whitelist
 .header {
-    background-color: #f2f4f8;
-    padding: 1rem;
-
-    &--home {
-        background-color: inherit;
-    }
-    .navbar {
-        background-color: $light-11;
-        padding: 1rem;
-        z-index: 2;
-    }
-
-    &__nav-item {
-        margin-right: 1.5rem;
-    }
-
     &__nav-link {
-        color: $dark-7 !important;
-        padding: 0.25rem 0 !important;
-        &-active {
-            @media (min-width: $media-md) {
-                border-bottom: 0.125rem solid $blue-7;
-            }
-        }
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
 
-        &:hover {
-            opacity: 0.5;
-            transition: opacity 0.15s ease-in;
-        }
+.gophercon {
+    position: static;
+    display: flex;
+    align-items: center;
+    flex-grow: inherit;
+    z-index: 1;
+    left: 0;
+    max-height: 500px;
+    right: 0;
+    width: 100%;
+    background-color: #e0ebf5;
+    text-align: center;
+    justify-content: center;
+    a {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .go-gopher {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url('/go-gopher.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        margin-right: 0.5rem;
+        display: inline-block;
+        padding-top: 1px;
+        position: relative;
+        top: 3px;
     }
 }

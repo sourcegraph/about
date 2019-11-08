@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -131,7 +131,7 @@ Sourcegraph instances will [ping Sourcegraph.com periodically with high-level an
 
 - The new repository contributors page ([example](https://sourcegraph.com/github.com/moby/moby/-/stats/contributors)) displays the top Git commit authors in a repository, with filtering options.
 - We've finally put the "graph" in Sourcegraph: the site admin analytics page now displays graphical charts of daily/weekly/monthly active user counts.
-- If the site configuration contains any deprecated options, a warning will be shown at the top of each page for all site admins. 
+- If the site configuration contains any deprecated options, a warning will be shown at the top of each page for all site admins.
 - [MOTD]https://docs.sourcegraph.com/admin/site_config/all-settings#motd-array-of-strings): display a dismissible Markdown-rendered message at the top of each page to all users.
 
 ## Changelog

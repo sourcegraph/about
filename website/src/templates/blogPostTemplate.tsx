@@ -1,12 +1,18 @@
-import { graphql } from 'gatsby'
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
+import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
 import { eventLogger } from '../EventLogger'
+import { BLOGS } from '../pages/blog'
 
-export default class ContentfulTemplate extends React.Component<any, any> {
+// Question: Should these be local to the render function since they are not used elsewhere?
+interface AuthorProps {
+    author: string
+    authorUrl: string
+}
+
+export default class BlogPostTemplate extends React.Component<any, any> {
     constructor(props: any) {
         super(props)
     }
@@ -28,65 +34,81 @@ export default class ContentfulTemplate extends React.Component<any, any> {
             document.addEventListener('mouseup', this.logSelectDockercommand)
         }
     }
+    // Question: Shuold this be a Function Component?
+    public Author(props: AuthorProps): Element {
+        let element: any
+
+        if (props.authorUrl) {
+            element = (
+                <p>
+                    Written by <a href={props.authorUrl}>{props.author}</a>
+                </p>
+            )
+        } else {
+            element = <p>Written by {props.author}</p>
+        }
+
+        return element
+    }
 
     public render(): JSX.Element | null {
         const md = this.props.data.markdownRemark
         const title = md.frontmatter.title
-        const author = md.frontmatter.author
-        const content = md.html
-        const date = md.frontmatter.publishDate
-        const excerpt = md.excerpt
-        const tags = md.frontmatter.tags || ''
-        const image = md.heroImage
-            ? `https:${md.heroImage.file.url}`
-            : 'https://about.sourcegraph.com/sourcegraph-mark.png'
-
         let slug = md.slug
-        let readMoreLink
-        if (tags.includes('graphql')) {
-            slug = 'graphql/' + slug
-            readMoreLink = '/graphql'
-        } else if (tags.includes('gophercon') || tags.includes('dotGo')) {
-            slug = 'go/' + slug
-            readMoreLink = '/go'
-        } else {
-            slug = 'blog/' + slug
-            readMoreLink = '/blog'
+        const fileName = md.fileAbsolutePath.split('/').pop()
+        const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
+        const content = md.html
+        const image = md.frontmatter.heroImage
+            ? `${md.frontmatter.heroImage}`
+            : 'https://about.sourcegraph.com/sourcegraph-mark.png'
+        const meta = {
+            title,
+            image,
+            description,
         }
-        return (
-            <Layout location={this.props.location}>
-                <div>
-                    <Helmet>
-                        <title>{title}</title>
-                        <meta property="og:title" content={title} />
-                        <meta property="og:url" content={`https://about.sourcegraph.com/${slug}`} />
-                        <meta property="og:description" content={excerpt} />
-                        <meta property="og:image" content={image} />
-                        <meta property="og:type" content="website" />
 
-                        <meta name="twitter:site" content="@srcgraph" />
-                        <meta name="twitter:card" content="summary_large_image" />
-                        <meta name="twitter:title" content={title} />
-                        <meta name="twitter:image" content={image} />
-                        <meta name="twitter:description" content={excerpt} />
-                        <meta name="description" content={excerpt} />
-                    </Helmet>
+        switch (slug) {
+            case BLOGS.GopherCon:
+                slug = `/${BLOGS.GopherCon}/${slug}`
+                break
+            case BLOGS.GraphQLSummit:
+                slug = `/${BLOGS.GraphQLSummit}/${slug}`
+                break
+            case BLOGS.StrangeLoop:
+                slug = `/${BLOGS.StrangeLoop}/${slug}`
+            default:
+                slug = `/${BLOGS.Blog}/${slug}`
+        }
+
+        return (
+            <Layout location={this.props.location} meta={meta}>
+                <Helmet>
+                    <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                    />
+                </Helmet>
+                <div className="bg-white text-dark">
                     <div className="blog-post">
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
-                                <p>
-                                    By {author} on {date}
-                                </p>
+                                <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} />
                             </section>
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
                                 <div dangerouslySetInnerHTML={{ __html: content }} />
                                 <hr />
                                 <div style={{ height: '0.5em' }} />
-                                <Link to={readMoreLink}>
+                                <Link to={BLOGS.Blog}>
                                     <button className="btn btn-outline-primary">Read more posts</button>
                                 </Link>
+                                <a
+                                    href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
+                                    className="ml-3"
+                                >
+                                    <button className="btn btn-outline-primary">Edit this post</button>
+                                </a>
                                 <div style={{ height: '1em' }} />
                                 <div>
                                     <div className="mb-4">
@@ -107,8 +129,10 @@ export const pageQuery = graphql`
         markdownRemark(fields: { slug: { eq: $fileSlug } }) {
             frontmatter {
                 title
+                description
                 heroImage
                 author
+                authorUrl
                 tags
                 publishDate(formatString: "MMMM D, YYYY")
             }
@@ -117,6 +141,7 @@ export const pageQuery = graphql`
             fields {
                 slug
             }
+            fileAbsolutePath
         }
     }
 `

@@ -1,244 +1,124 @@
 import { Link } from 'gatsby'
-import { ChatIcon, MagnifyIcon, OpenInAppIcon, ReplyIcon, ServerIcon, SyncIcon, WebIcon } from 'mdi-react'
 import * as React from 'react'
-import { BrowserInstallButtons, CHROME_STORE_URL, FIREFOX_STORE_URL } from '../components/BrowserInstallButtons'
+import { CaseStudyFeature } from '../components/CaseStudyFeature'
+import { ContentSection } from '../components/content/ContentSection'
+import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
-import Testimonials from '../components/Testimonials'
-import { eventLogger } from '../EventLogger'
+import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
+import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySolution'
+import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
+import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
+import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
+import { Tweets } from '../components/Tweets'
+import { Vimeo } from '../components/Vimeo'
+import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
+import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
+import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
+import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 
-export default class Index extends React.Component<any, any> {
-    public render(): JSX.Element | null {
-        return (
-            <Layout location={this.props.location}>
-                <div className="home">
-                    <div className="home__jumbotron bg-sprinkles">
-                        <div className="container v-prop__container mt-4">
-                            <div className="row d-flex justify-content-center">
-                                <div className="col-md-5">
-                                    <h1>Build better software</h1>
-                                    <p>
-                                        Sourcegraph is a fast, solid, full-featured code navigation engine. Get
-                                        cross-repository code intelligence, including:
-                                    </p>
-                                    <div className="py-2">
-                                        <a
-                                            className="hero-link"
-                                            href="https://sourcegraph.com/search?q=repo:ethereum/ethash+buf.*size"
-                                        >
-                                            <div className="d-flex align-items-center pb-2">
-                                                <MagnifyIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Advanced code search</span>
-                                            </div>
-                                        </a>
-                                        <a
-                                            className="hero-link"
-                                            href="https://sourcegraph.com/github.com/kubernetes/apiserver/-/blob/pkg/authentication/user/user.go#L20:6"
-                                        >
-                                            <div className="d-flex align-items-center pb-2">
-                                                <ChatIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Hover tooltips</span>
-                                            </div>
-                                        </a>
-                                        <a
-                                            className="hero-link"
-                                            href="https://sourcegraph.com/github.com/golang/go/-/blob/src/archive/tar/common.go#L52:13"
-                                        >
-                                            <div className="d-flex align-items-center pb-2">
-                                                <ReplyIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Jump-to-definition</span>
-                                            </div>
-                                        </a>
-                                        <a
-                                            className="hero-link"
-                                            href="https://sourcegraph.com/github.com/golang/go/-/blob/src/archive/tar/common.go#L52:13&tab=references"
-                                        >
-                                            <div className="d-flex align-items-center pb-2">
-                                                <MagnifyIcon className="material-icons" size={24} />
-                                                <span className="pl-1">Find references</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <BrowserInstallButtons />
-                                </div>
-                                <div className="col-md-7 d-md-n d-sm-n">
-                                    <img width="100%" src="/products/code-intelligence/GitHubCodeIntelligence.png" />
-                                </div>
-                            </div>
-                        </div>
+export default ((props: any) => (
+    <Layout location={props.location}>
+        <div className="home">
+            <div className="home__intro container">
+                <div className="row justify-content-center">
+                    <div className="col-lg-8 mb-6 mb-lg-0">
+                        <h1 className="home__intro-header display-3">The new standard developer platform</h1>
+                        <p className="home__intro-text mt-3 font-weight-light">
+                            Google &amp; Facebook invested $100Ms to build internal developer&nbsp;platforms for{' '}
+                            <Link
+                                className="home__intro-text-link home__intro-text-link-1"
+                                to="/product/code-search-navigation"
+                            >
+                                code&nbsp;search
+                            </Link>
+                            ,{' '}
+                            <Link className="home__intro-text-link home__intro-text-link-2" to="/product/code-review">
+                                code&nbsp;review
+                            </Link>
+                            , and{' '}
+                            <Link className="home__intro-text-link home__intro-text-link-3" to="/product/automation">
+                                alerts &amp; automation
+                            </Link>
+                            .
+                        </p>
+                        <p className="home__intro-text mt-4 font-weight-light">
+                            <img
+                                style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
+                                src="/sourcegraph/sourcegraph-mark.svg"
+                            />{' '}
+                            <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to help every
+                            elite&nbsp;development team ship better software faster.
+                        </p>
+                        <RequestDemoAction className="mt-5" />
+                        <ContactPresalesSupportAction className="text-light mt-3" />
+                        <ViewDeveloperDocumentationAction className="text-light mt-2" />
                     </div>
-                    <div className="home__feature-block border-bottom py-2">
-                        <div className="container v-prop__container">
-                            <div className="row" id="data-center">
-                                <div className="col-md-12" style={{ textAlign: 'center' }}>
-                                    <div>
-                                        <div className="row">
-                                            <div className="col-md-6 home__deploy-card">
-                                                <div className="d-flex">
-                                                    <WebIcon className="material-icons" size={32} />
-                                                    <h2 className="ml-2">For yourself</h2>
-                                                </div>
-                                                <p>
-                                                    Hover tooltips, go-to-definition, and find-references on GitHub,
-                                                    Phabricator, and Bitbucket Server.
-                                                </p>
-                                                <div className="py-2 d-flex flex-wrap">
-                                                    <div className="btn-group">
-                                                        {
-                                                            <Link
-                                                                to="/product/browser"
-                                                                onClick={
-                                                                    this.trackInstallSourcegraphServerCodeIntelligence
-                                                                }
-                                                            >
-                                                                <button className="btn btn-secondary" type="button">
-                                                                    <OpenInAppIcon
-                                                                        className="material-icons"
-                                                                        style={{ marginBottom: '0' }}
-                                                                    />
-                                                                    Install
-                                                                </button>
-                                                            </Link>
-                                                        }
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 home__deploy-card">
-                                                <div className="d-flex align-items-center">
-                                                    <ServerIcon className="material-icons" size={32} />
-                                                    <h2 className="ml-2">For your team</h2>
-                                                </div>
-                                                <p>
-                                                    Advanced search and intelligence on a private instance for all your
-                                                    repositories.
-                                                </p>
-                                                <div className="py-2 d-flex flex-wrap">
-                                                    <div className="btn-group">
-                                                        <a
-                                                            href="https://docs.sourcegraph.com/admin/install/docker"
-                                                            onClick={this.trackInstallSourcegraphServerCodeIntelligence}
-                                                        >
-                                                            <button className="btn btn-secondary" type="button">
-                                                                <OpenInAppIcon
-                                                                    className="material-icons"
-                                                                    style={{ marginBottom: '0' }}
-                                                                />
-                                                                Deploy
-                                                            </button>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="home__feature-block border-bottom py-2">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-md-6 home__deploy-card" id="search-datacenter">
-                                    <div className="home__deploy-card-detail">
-                                        <div className="icon">
-                                            <figure className="search-icon" />
-                                        </div>
-                                        <div className="copy">
-                                            <h2>Powerful, instant code search</h2>
-                                            <p>
-                                                Search in files and diffs in your code using simple terms, regular
-                                                expressions, and other filters. Syncs repositories with your code host
-                                                and supports searching any commit/branch, with no indexing delay.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="home__deploy-card-detail">
-                                        <div className="icon">
-                                            <figure className="dc-icon" />
-                                        </div>
-                                        <div className="copy">
-                                            <h2>Enterprise</h2>
-                                            <p>
-                                                As you grow to hundreds or thousands of users and repositories, graduate
-                                                from the single-server deployment to a highly scalable cluster with
-                                                Sourcegraph Enterprise.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 home__deploy-card" id="intelligence-integrations">
-                                    <div className="home__deploy-card-detail">
-                                        <div className="icon">
-                                            <figure className="ci-icon" />
-                                        </div>
-                                        <div className="copy">
-                                            <h2>Code intelligence</h2>
-                                            <p>
-                                                Code intelligence makes browsing code easier, with IDE-like hovers,
-                                                go-to-definition, and find-references on your code, powered by language
-                                                servers based on the open-source Language Server Protocol.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="home__deploy-card-detail">
-                                        <div className="icon">
-                                            <figure className="int-icon" />
-                                        </div>
-                                        <div className="copy">
-                                            <h2>Integrations</h2>
-                                            <p>
-                                                Take your workflow to the next level. Search code from your editor, and
-                                                get code intelligence while browsing code on the web in GitHub and
-                                                Phabricator.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="home__customer-block">
-                        <div className="container">
-                            <h2 className="text-center">Powering developers at</h2>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="home__customer-logos">
-                                        <div className="row justify-content-around">
-                                            <img
-                                                className="home__customer-logos-image"
-                                                src="/external-logos/lyft-logo.svg"
-                                                alt="Lyft"
-                                            />
-                                            <img
-                                                className="home__customer-logos-image"
-                                                src="/external-logos/sg-improbable.svg"
-                                                alt="Improbable"
-                                            />
-                                            <img
-                                                className="home__customer-logos-image"
-                                                src="/external-logos/cloudflare-logo.svg"
-                                                alt="Cloudflare"
-                                            />
-                                            <img
-                                                className="home__customer-logos-image"
-                                                src="/external-logos/plaid-logo.svg"
-                                                alt="Plaid"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3 className="text-center">...and more teams operating at massive scale.</h3>
-                            <Testimonials />
-                        </div>
+                    <div className="col-lg-6 d-none">
+                        <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
                     </div>
                 </div>
-            </Layout>
-        )
-    }
-    private trackInstallSourcegraphServerCodeIntelligence = () => {
-        eventLogger.trackInstallSourcegraphServerCTAClicked('Homepage')
-    }
-    private pricingClickedDataCenter = () => {
-        eventLogger.trackPricingClicked('HomepageDataCenter')
-    }
-}
+            </div>
+            <div className="bg-white text-dark">
+                <CustomerLogosSection className="py-5" />
+            </div>
+            <ContentSection color="black">
+                <h2 className="text-center display-4 mb-5 mt-4">
+                    Learn how Sourcegraph code search makes large scale refactoring possible
+                </h2>
+                <hr style={{ borderColor: '#333' }} />
+                <CaseStudyFeature
+                    quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
+                    author="Quantcast Staff Software Engineer, Simon Law"
+                    url="/case-studies/quantcast-large-scale-refactoring"
+                    image="/case-studies/quantcast-sourcegraph-case-study.jpg"
+                />
+                <hr style={{ borderColor: "#333" }} />
+                <CaseStudyFeature
+                    quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
+                    author="Thorn Software Engineer, Jacob Gillespie"
+                    url="/case-studies/we-are-thorn"
+                    image="/case-studies/thorn-sourcegraph-case-study.png"
+                />
+            </ContentSection>
+            <div className="bg-white text-dark">
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+            </div>
+            <div className="bg-primary py-6 d-none">
+                <ContentSection>
+                    <ProductDemoVideo />
+                    <ProductFeaturesAndUseCases />
+                </ContentSection>
+            </div>
+            <ContentSection color="black" className="py-6">
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    See why developers rely on Sourcegraph daily
+                </h2>
+                <Vimeo id={353422112} muted={false} />
+            </ContentSection>
+            <div className="bg-white text-dark py-4">
+                <div className="container">
+                    <div className="text-center mt-5">
+                        <h3 className="font-weight-light">
+                            Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
+                        </h3>
+                    </div>
+                </div>
+                <div className="container-fluid">
+                    <Tweets />
+                </div>
+            </div>
+            <ContentSection className="my-5">
+                <EnterpriseReadySolution className="pt-2" />
+            </ContentSection>
+            <Jumbotron
+                color="purple"
+                className="py-6 mb-0"
+                title="Get Sourcegraph now"
+                description="Start shipping better software faster with the new standard developer platform."
+                logomark={false}
+            >
+                <GetSourcegraphNowActions />
+            </Jumbotron>
+        </div>
+    </Layout>
+)) as React.FunctionComponent<any>

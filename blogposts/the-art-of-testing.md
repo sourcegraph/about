@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: the-art-of-testing
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2w5ubsfTaMYQY24kCOeeKi/6bed02d745c1586984ad128466df2cbb/IMG_0020.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2w5ubsfTaMYQY24kCOeeKi/6bed02d745c1586984ad128466df2cbb/IMG_0020.jpg
 published: true
 ---
 

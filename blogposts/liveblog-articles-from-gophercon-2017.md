@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: liveblog-articles-from-gophercon-2017
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -15,7 +15,7 @@ published: true
 
 ![GopherCon banner](/blog-images/Selection_012.bmp)
 
-We’re excited to be the official liveblogging partner for GopherCon 2017!
+We’re excited to be the official live-blogging partner for GopherCon 2017!
 
 That’s right — we’ll be writing up concise technical summaries of as many of the amazing talks by Go experts this year as we can. For folks tuning in from home, the liveblog will be a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it’s a great way to remind yourself of the key takeaways of each talk.
 
@@ -37,7 +37,7 @@ Mile High Gopher Meetup
 * [Filippo Valsorda - Encrypting the internet with Go](https://about.sourcegraph.com/go/encrypting-the-internet-with-go-tutorial)
 * David Crawshaw - Go Build Modes
 * [Kelsey Hightower - Self Deploying Kubernetes Applications](https://about.sourcegraph.com/go/self-deploying-kubernetes-applications-kelsey-hightower)
-* [Kris Nova - Valuable lessons from the core of kubernetes kops](https://about.sourcegraph.com/go/valuable-lessons-in-over-engineering-the-core-of-kubernetes-kops)
+* [Kris Nova - Valuable lessons from the core of Kubernetes kops](https://about.sourcegraph.com/go/valuable-lessons-in-over-engineering-the-core-of-kubernetes-kops)
 * [Fatih Arslan - Writing a Go tool to parse and modify struct tags](https://about.sourcegraph.com/go/writing-a-go-tool-to-parse-and-modify-struct-tags) [(slides)](https://speakerdeck.com/farslan/building-a-go-tool-to-modify-struct-tags)
 * [Edward Muller - Idiomatic Go](https://about.sourcegraph.com/go/idiomatic-go)
 * [Ian Schenck - Operability in Go](https://about.sourcegraph.com/go/operability-in-go)

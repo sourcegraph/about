@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: announcing-sourcegraph-2.13
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -26,7 +26,7 @@ We're also shipping Sourcegraph extensions that add other new features:
 - New search keywords for finding places where a package/module is used:
   - [go.imports:PACKAGE](https://sourcegraph.com/extensions/sourcegraph/go-imports-search)
   - [js.depends:MODULE](https://sourcegraph.com/extensions/sourcegraph/js-dependency-search)
-  - [py.imports:PACKAGE](https://sourcegraph.com/extensions/sourcegraph/python-imports-search) 
+  - [py.imports:PACKAGE](https://sourcegraph.com/extensions/sourcegraph/python-imports-search)
   - [java.imports:DOTTED_CLASS](https://sourcegraph.com/extensions/sourcegraph/java-imports-search)
   - [php.uses:ALIAS](https://sourcegraph.com/extensions/sourcegraph/php-alias-search)
 - New [org:GITHUB_ORG search keyword](https://sourcegraph.com/extensions/sourcegraph/org-search) to search among a GitHub organization's repositories

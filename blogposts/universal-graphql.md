@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: universal-graphql
-heroImage: //images.ctfassets.net/le3mxztn6yoo/21r1Z7dBVW4Omgq4S0skmq/66acb4a4cf6bcc44c55d305261f9e002/Baxley-1.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/21r1Z7dBVW4Omgq4S0skmq/66acb4a4cf6bcc44c55d305261f9e002/Baxley-1.png
 published: true
 ---
 
@@ -17,7 +17,7 @@ published: true
 
 ## Apollo Client 2.0: Discovering Universal GraphQL in Practice
 
-Apollo 2.0 is a "universal GraphQL" client. What is "universal GraphQL"? By the end of this talk, you'll understand what that means. There are four main features of the new Apollo client: 
+Apollo 2.0 is a "universal GraphQL" client. What is "universal GraphQL"? By the end of this talk, you'll understand what that means. There are four main features of the new Apollo client:
 * Flexible network using Apollo Link (completely customizable network stack)
 * Modular cache with Apollo cache (so you can target your use case)
 * Faster runtime (5x faster)
@@ -27,7 +27,7 @@ Apollo 2.0 is a "universal GraphQL" client. What is "universal GraphQL"? By the 
 
 
 
-# Why GraphQL? 
+# Why GraphQL?
 
 It comes down to describing your data.
 
@@ -41,11 +41,11 @@ Using a descriptive language as the go-between for your client and server keeps 
 
 ## Static descriptions, dynamic execution
 
-Using GraphQL built-in features such as arguments, fragments, and directives, you can create expressive and safe ways to query and update your data. 
+Using GraphQL built-in features such as arguments, fragments, and directives, you can create expressive and safe ways to query and update your data.
 
 # A better picture of our data: where we are today
 
-## Javascript Client: Apollo Client
+## JavaScript Client: Apollo Client
 Apollo Client is the most popular GraphQL client for the web and React Native applications. It's designed for ease of use, but is powerful enough for production applications.
 
 ##  Native GraphQL: Apollo iOS/Android
@@ -113,7 +113,7 @@ Using directives, we can define from where to resolve our data and how it should
 
 But there's still a gap between data and rendering. There's three ways you can connect those dots.
 
-## Apollo Link 
+## Apollo Link
 
 James thinks Apollo link is the most exciting part of Apollo 2.0.
 
@@ -123,11 +123,11 @@ Fetching remote data is the cornerstone of nearly every tool that developers use
 
 ### Smart components with Apollo Link
 
-Create componnets that manage the control flow of data request and reuse them everywhere.
+Create components that manage the control flow of data request and reuse them everywhere.
 
 ## Schema stitching: using GraphQL with GraphQL
 
-Piggybacking in GraphQL's instropection ability, you can create dynamic endpoints that are always up to date. You can mix and match API microservices and third parties to build the request shape your app needs. `
+Piggybacking in GraphQL's introspection ability, you can create dynamic endpoints that are always up to date. You can mix and match API microservices and third parties to build the request shape your app needs. `
 
 ## Apollo Engine: unlock your GraphQL
 
@@ -139,7 +139,7 @@ Apollo Engine is a layer in your stack that sits between your client and your se
 
 As the availability of JavaScript runtimes grow, so does the ability to easily use GraphQL to power how you build your products. There's a crossbow that can be controlled via GraphQL. There's a golf ball with GraphQL and a hole-and-one mutation.
 
-Some other possibilities include: 
+Some other possibilities include:
 * Alexa skills built with GraphQL
 * Creating phone to phone communications solely with GraphQL
 * Building a GraphQL driven package manager

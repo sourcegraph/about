@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-ceos-keynote
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3SV1PYaaXY4ouIKIqs2mSi/ede744c450d239a0d39c281a6005b65c/1_osXoxusdlabxfnY6dlKzIQ.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3SV1PYaaXY4ouIKIqs2mSi/ede744c450d239a0d39c281a6005b65c/1_osXoxusdlabxfnY6dlKzIQ.jpeg
 published: true
 ---
 
@@ -14,7 +14,7 @@ published: true
 
 GitHub’s invention — wasn’t invented invented in a vacuum. An evolution of great ideas from the past (like Henry Ford, Isaac Newton, etc.)
 
-GitHub didn’t invent the pull request.
+GitHub didn't invent the pull request.
 
 So what was the “big idea” for GitHub? It boils down to tools and people. Our key insight was that “developers are people, too.” Developer tools should just get out of your way.
 
@@ -49,7 +49,7 @@ Let’s talk about students. When Wanstrath was in college, he torrented a lot o
 
 _[Editor’s note: unfortunately, conference WiFi cut out at this part of the talk. We’re trying to get the slides to fill this in.]_
 
-There’s also GitHub Classroom. GitHub also sponsors Major League Hacking and other hackathons. They’re also partnering with Udacity and Black Girls Code.
+There's also GitHub Classroom. GitHub also sponsors Major League Hacking and other hackathons. They’re also partnering with Udacity and Black Girls Code.
 
 Wanstrath hands it off to Kimberly Bryant, founder of Black Girls Code.
 
@@ -89,7 +89,7 @@ The White House is using GitHub. Introducing Alvand Salehi.
 
 GitHub has a lot of integrations and are investing in relationships with integration partners to grow the ecosystem. They have a new early access program for key partners to get access to beta, unreleased features.
 
-There’s a new GraphQL API, already released to selected integration partners.
+There's a new GraphQL API, already released to selected integration partners.
 
 GitHub is shipping new authentication features for large companies
 
@@ -107,7 +107,7 @@ GitHub is authoring new workflow features, too:
 
 Announcing today: GitHub Projects. GitHub Issues have traditionally not been enough. Projects introduces a way to organize issues for project and product managers at large companies. They add much needed structure for enterprise-ready collaboration, whether you’re using Agile or whatever project management methodology.
 
-GitHub is also shipping substantial improvements to Pull Requests. The essence of Pull Requests is collaboration — they’re a “great way to collaborate get comments, but not a good way to review code.” They’ve now added:
+GitHub is also shipping substantial improvements to Pull Requests. The essence of Pull Requests is collaboration — they’re a “great way to collaborate get comments, but not a good way to review code.” They've now added:
 
 *   Collaborative forks
 *   Protected branches

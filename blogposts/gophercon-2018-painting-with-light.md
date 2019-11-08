@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-painting-with-light
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -26,7 +26,7 @@ A group of American scientists working in secret developed the first atomic bomb
 
 #### 1986: Kajiya's rendering equation
 
-A Caltech student named James Kajiya tried developing better computer graphic renderings, and applied the Monte Carlo method to photons instead of neutrons, in orer to simulate the movement of light. The conclusion is that if applied properly, the rendering would be indistinguishable from a photograph. He named the algorithm **path tracing**. But, this remained mostly academic because actually applying the algorithm would require tons of computing power, and one gigaflop of compute cost $44 million at the time.
+A CalTech student named James Kajiya tried developing better computer graphic renderings, and applied the Monte Carlo method to photons instead of neutrons, in order to simulate the movement of light. The conclusion is that if applied properly, the rendering would be indistinguishable from a photograph. He named the algorithm **path tracing**. But, this remained mostly academic because actually applying the algorithm would require tons of computing power, and one gigaflop of compute cost $44 million at the time.
 
 #### 1995: Toy Story
 
@@ -42,11 +42,11 @@ Monster House in 2006 was not as big a commercial success, but it was a huge tec
 
 #### 2014: Big Hero 6
 
-Big Hero 6 was rendered using Hyperion, the in-house Monte Carlo path tracer Disney had developed for 3 years in secret. It solved many of the problems in Monster House, such as brightness and grainynes. Luckily, compute had become so cheap by this point, because this movie required tons of compute. It was rendered across 4 server farms, across 4600 total servers, and an average frame took 83 hours to render! However, the cost of compute was only $0.13/gigaflop at this point.
+Big Hero 6 was rendered using Hyperion, the in-house Monte Carlo path tracer Disney had developed for 3 years in secret. It solved many of the problems in Monster House, such as brightness and graininess. Luckily, compute had become so cheap by this point, because this movie required tons of compute. It was rendered across 4 server farms, across 4600 total servers, and an average frame took 83 hours to render! However, the cost of compute was only $0.13/gigaflop at this point.
 
 #### 2016: Deadpool and path tracing only
 
-Deadpool's 2-minute-long intro scene involved no real cameras or real actors or props. Every single shot is completely computer generated, and every pixel is entriely rendered in a computer. People used to complain about too much CGI, but it turns out there's no less CGI, but we just can't notice it anymore.
+Deadpool's 2-minute-long intro scene involved no real cameras or real actors or props. Every single shot is completely computer generated, and every pixel is entirely rendered in a computer. People used to complain about too much CGI, but it turns out there's no less CGI, but we just can't notice it anymore.
 
 There's no real actor in this image!:
 ![image](https://user-images.githubusercontent.com/16265452/44745351-b8783e00-aac4-11e8-82b1-4a5d19a4e4ba.png)
@@ -59,7 +59,7 @@ Amazingly, all the success of these movies can be traced back to the development
 
 ## Hunter's experience with path-tracing
 
-Hunter was introduced to Disney's Practical Guide to Path Tracing, which is an accessible guide to path tracing that set him on this ptah.
+Hunter was introduced to Disney's Practical Guide to Path Tracing, which is an accessible guide to path tracing that set him on this path.
 
 #### Path tracing basics
 
@@ -95,11 +95,11 @@ Trying to create more sophisticated renderings, he ran into two obstacles that t
 
 ![snapseed](https://user-images.githubusercontent.com/16265452/44746600-0cd0ed00-aac8-11e8-902f-623ab4d608bc.jpg)
 
-One cool thing about the alogrithm is that it's "embarassingly parallel", so he scaled up to 10 workers. We'll revisit this at the end of the talk.
+One cool thing about the algorithm is that it's "embarrassingly parallel", so he scaled up to 10 workers. We'll revisit this at the end of the talk.
 
 ## How to build a path tracer
 
-..."A physically-based path tracer in plain english with as little math as possible and just a touch of physics"
+..."A physically-based path tracer in plain English with as little math as possible and just a touch of physics"
 
 #### What is light?
 
@@ -120,7 +120,7 @@ How computers represent light:
 
 This is one of the coolest things learned on this project. Light behaves similarly when interacting with wildly different materials.
 
-Metals only reflect. Non-metals can do both. Once light refracts into a surface, it colldides with other particles, loses energy, and scatters in new directions. Once refracted, the only difference in behavior is how far light continues moving into a surface before getting reflected out. When it moves through the material, it's being **transmitted**. When it gets reflected and scattered out, it is being **diffused**.
+Metals only reflect. Non-metals can do both. Once light refracts into a surface, it collides with other particles, loses energy, and scatters in new directions. Once refracted, the only difference in behavior is how far light continues moving into a surface before getting reflected out. When it moves through the material, it's being **transmitted**. When it gets reflected and scattered out, it is being **diffused**.
 
 So, light is either:
 
@@ -151,7 +151,7 @@ That's where Monte Carlo integration comes back into the scene. The Monte Carlo 
 - Add them all up and **average** them
 - That's probably **close** to the real answer
 
-Combining the path tracing alogrithm and Monte Carlo integration yields an image like this:
+Combining the path tracing algorithm and Monte Carlo integration yields an image like this:
 
 ![image](https://user-images.githubusercontent.com/16265452/44736745-39c3d680-aaad-11e8-8b9c-4bad240cae0c.png)
 
@@ -180,7 +180,7 @@ func (*m &Material) absorb(wi, wo Vector3) (bool, Vector3, Vector3)
 There are a bunch of Vector3 types, or XYZ values, that represent things like RGB, when simulating light.
 
 Often times, he'd realize that he wasn't sure what a given Vector3 being passed in was. It could be a direction, or energy and he wouldn't be able to tell the difference.
-He'd unknowlingly start telling Go to do things like:
+He'd unknowingly start telling Go to do things like:
 
 > Direction = 2 meters up + a halogen light bulb
 
@@ -193,7 +193,7 @@ type Direction Vector3
 ```
 
 Creating explicit types for Units, Direction, and Energy, which were all represented by Vector3s before helped find tons of bugs. It also helped performance a ton because he got rid of unnecessary work he was doing because of type confusion. He got rid of unnecessary conversions when he was unsure of the type, and similar issues.
-Ultimately, he found ways to get help from the complier.
+Ultimately, he found ways to get help from the compiler.
 
 The original function signature above would turn into something like this, which is much easier to read:
 
@@ -205,7 +205,7 @@ func (m *Material) absorb (wi, wo Direction) (bool, Vector3, Energy)
 Watching talks about Go early on, there were a couple memorable quotes about concurrency that influenced the design of his path tracer:
 
 - Parallelization can fall out from concurrent design
-- Goroutines arent free but they're very cheap
+- Goroutines aren't free but they're very cheap
 
 His initial implementation was slow, and involved 2 separate sectors: one section that did writes to change state only, and another that was purely Goroutines working on tracing paths. It made sense but was super slow, and found that increasing the buffer of paths that a Goroutine would try to trace actually made the work faster. Eventually, he found out that having Goroutines work independently, and then merging the images from each, was much faster.
 

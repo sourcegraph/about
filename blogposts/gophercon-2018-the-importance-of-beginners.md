@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-the-importance-of-beginners
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -34,7 +34,7 @@ But how can we help beginners and why is this important?
 
 Yesterday, Russ announced big changes for the [Go language](https://blog.golang.org/go2draft).
 
-The community doubled its size in the last year. 
+The community doubled its size in the last year.
 
 Total number of Go users from last 9 years = number of new Go users in 2018. Lots of people new to the language.
 
@@ -94,7 +94,7 @@ If you're coming from a job or language where you weren't new, it can be especia
  - 2016: Started mentoring and running [GoBridge](https://golangbridge.org/) workshops.
  - 2017: Spent a year teaching Go in Nairobi.
  - 2018: Started organizing GopherCon EU
- 
+
 She still feels like a beginner in many ways, e.g. beginner keynote speaker.
 
 She has taken on more responsibility over the years and its hard when imposter syndrome kicks in.
@@ -103,7 +103,7 @@ She has taken on more responsibility over the years and its hard when imposter s
 
 Only 0.1% of the Gophers are here today (we are the 0.1%).
 
-How can we who are knowledgable in Go help beginners?
+How can we who are knowledgeable in Go help beginners?
 
  - Encourage Asking Stupid Questions (although no question should be thought of as stupid). This is a good practice to adopt everywhere, e.g. when onboarding new devs in your team.
  - Be patient, e.g. answering the same question for the 100th time.

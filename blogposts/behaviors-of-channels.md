@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: behaviors-of-channels
-heroImage: //images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c1626b318de4be28314cbdc989a01525/logo-dotgo-black-web.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/40NFOZBGkgG6IyKoMgQIGg/c1626b318de4be28314cbdc989a01525/logo-dotgo-black-web.png
 published: true
 ---
 
@@ -18,7 +18,7 @@ Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us 
 
 Writing a service for a TV, but the tv stream fails because you can't write logs anymore. To simulate this we set up a custom `io.Writer` to simulate problems that can happen called `device`. So we use the `log` package to log, but to our custom `io.Writer` `device`. When running the code the `device` fails and the whole app fails because the calls to `log.Println` are blocking.
 
-Bill then proceded to do live coding for a custom Logger which solves our problem, below is the code he wrote annotated with what he was explaining as he wrote it:
+Bill then proceeded to do live coding for a custom Logger which solves our problem, below is the code he wrote annotated with what he was explaining as he wrote it:
 
 <div class="src-snippet" data-file-path="test.go" data-commit="ad6f12f5071742201c61ea16f0a5d6e6f1dc17ec"></div>
 
@@ -50,7 +50,7 @@ func New(w io.Writer, cap int) *Logger {
 	l.wg.Add(1)
 	go func() {
 		// important to note everything we are doing is just the core
-		// langauge, not even the stdlib.
+		// language, not even the stdlib.
 		for v := range l.ch {
 			fmt.Fprintf(w, v)
 		}

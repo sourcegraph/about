@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-asynchronous-networking-patterns
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -40,7 +40,7 @@ Servers like [Nginx](https://www.nginx.com/) use an event loop. A pool of thread
 
 When a thread needs to perform an operation that might block, it asks the operating system to not block and instead notify it later when the operation is done.
 
-It is hard to write plugins for Nginx because you need to be careful to save state and not block.
+It is hard to write plugins for NGINX because you need to be careful to save state and not block.
 
 ## Goroutines
 
@@ -111,7 +111,7 @@ func proxyConn(conn net.Conn) {
 }
 ```
 
-This is as fast a Nginx because it uses splice(2) under the hood to avoid copying data into/out of user space.
+This is as fast a NGINX because it uses splice(2) under the hood to avoid copying data into/out of user space.
 
 The magic happens when io.Copy detects that TCPConn implements io.ReaderFrom. When TCPConn's ReadFrom detects that it is reading from another TCPConn, it uses [splice](https://sourcegraph.com/github.com/golang/go@go1.11/-/blob/src/net/splice_linux.go#L30).
 

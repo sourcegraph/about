@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: github-universe-liveblog-alvind-salehi-federal-government
-heroImage: //images.ctfassets.net/le3mxztn6yoo/vklRiLNSLukWa6cgoaY6y/7199c801db5f5f98ea43b4dda6b5c1a0/1_J2Mnd3ypIFewnjJG7OKp8g.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/vklRiLNSLukWa6cgoaY6y/7199c801db5f5f98ea43b4dda6b5c1a0/1_J2Mnd3ypIFewnjJG7OKp8g.jpeg
 published: true
 ---
 
@@ -26,10 +26,10 @@ They also plan to release more government code as open source. At least 20% of a
 
 The White House open-sourced the “We the People” petition website. It’s all on GitHub. Another great project is analytics.usa.gov. Several state and local governments have forked this repository and used the same code to show stats about individual cities.
 
-They’ve put a lot into thinking about this problem and planning for it, and now they’re finally ready to execute.
+They've put a lot into thinking about this problem and planning for it, and now they’re finally ready to execute.
 
 ![1*Ddg0pNTSJU9NvmsfjcJIuA](//images.contentful.com/le3mxztn6yoo/BWyzAxWd5muiACegY42QI/d6f62a8c532c08c9d91826ff67a756d9/1_Ddg0pNTSJU9NvmsfjcJIuA.jpeg)
 
-Introducing code.gov. It’s the single destination for all government-developed source code. They’re building it in the open. He wants all of us to help build this platform. This is the People’s Code. They’ve put in on GitHub and have a bunch of requests for contributions for open source authors. This should be the “best damn open-source platform the world has ever seen.”
+Introducing code.gov. It’s the single destination for all government-developed source code. They’re building it in the open. He wants all of us to help build this platform. This is the People’s Code. They've put in on GitHub and have a bunch of requests for contributions for open source authors. This should be the “best damn open-source platform the world has ever seen.”
 
 A lot of people question whether the federal government should open-source at all. What’s important to Alvind is that we help them make the doubters understand the rationale to open-source. It’s the People’s Code, so let’s all work together to unlock of our country’s open source software.

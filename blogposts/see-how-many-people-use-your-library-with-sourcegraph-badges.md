@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: see-how-many-people-use-your-library-with-sourcegraph-badges
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 

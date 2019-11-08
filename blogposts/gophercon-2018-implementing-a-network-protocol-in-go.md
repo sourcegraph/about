@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-implementing-a-network-protocol-in-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -33,7 +33,7 @@ Outline:
 
 ## Intro to IPv6
 
-IPv6 adoption: 
+IPv6 adoption:
 
 ![image](https://user-images.githubusercontent.com/1646931/44633783-6d372180-a944-11e8-8539-4a3ed4c62fae.png)
 
@@ -321,7 +321,7 @@ func (ns *NeighborSolicitation) marshal() ([]byte, error) {
 	// Allocation
 }
 ```
-Don’t bother allocating memory until you’ve checked your inputs:
+Don’t bother allocating memory until you've checked your inputs:
 ```go
 // Only accept IPv6 target.
 if err := checkIPv6(ns.TargetAddress); err != nil {
@@ -526,7 +526,7 @@ created by testing.(*T).Run
         /usr/local/go/src/testing/testing.go:824 +0x2e0
 ```
 
-Enter Dmitry Vyukov's `go-fuzz`. If you’re parsing raw bytes, there’s a high potential for unexpected behavior:
+Enter Dmitry Vyukov's `go-fuzz`. If you’re parsing raw bytes, there's a high potential for unexpected behavior:
 * Bad input causing application problems
 * Possibility of a panic taking down your program!
 
@@ -567,7 +567,7 @@ go-fuzz usage:
   ```
   $ CGO_ENABLED=0 go-fuzz-build github.com/mdlayher/ndp
   ```
-* Run go-fuzz with multiple CPUs and output results to ./fuzz/
+* Run go-fuzz with multiple CPU's and output results to ./fuzz/
   ```
   $ go-fuzz -bin ./ndp-fuzz.zip -procs 16 -workdir ./fuzz/
   … workers: 16, corpus: 78 (0s ago), crashers: 5
@@ -575,7 +575,7 @@ go-fuzz usage:
   ```
 * Inspect the resulting crasher inputs
   ```
-  $ cat fuzz/crashers/4c24217a9963fae05ea48d657c342549a731989.quoted 
+  $ cat fuzz/crashers/4c24217a9963fae05ea48d657c342549a731989.quoted
         "\x860000000000000000\x05"
   ```
 * Write a test, fix the bug, and repeat!
@@ -600,7 +600,7 @@ Let's implement the struct that represents an NDP connection.
 
 `net` vs `x/net`
 * NDP is transported over IPv6 + ICMPv6
-* Standard library net doesn’t quite provide all the functionality we need
+* Standard library net doesn't quite provide all the functionality we need
   * golang.org/x/net is designed for advanced use-cases!
 
 ICMPv6 networking packages in Go:

@@ -1,262 +1,124 @@
 import { Link } from 'gatsby'
-import { CloseIcon } from 'mdi-react'
+import GitHubCircleIcon from 'mdi-react/GithubCircleIcon'
+import LinkedinIcon from 'mdi-react/LinkedinBoxIcon'
+import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
-import { eventLogger } from '../EventLogger'
+import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from './ProductPopover'
 
-export default class Footer extends React.Component<any, any> {
-    public render(): JSX.Element | null {
-        return (
-            <div className="footer__block">
-                <footer>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-sm-4 col-m-4 col-lg-4 item logo__section">
-                                <img className="footer__logo" src="/sourcegraph/logo--light.svg" />
-                                <div className="footer__contact">
-                                    <p>
-                                        <a className="mail__contect" href="mailto:hi@sourcegraph.com" target="_blank">
-                                            hi@sourcegraph.com
-                                        </a>
-                                    </p>
-                                    <p className="addr__contact">
-                                        142 Minna St, 2nd Floor
-                                        <br />
-                                        San Francisco CA, 94105
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-xs-12 col-sm-12 col-m-2 col-lg-2 item footer__extend community">
-                                <h3>Community</h3>
-                                <input type="checkbox" />
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="https://github.com/sourcegraph"
-                                            target="_blank"
-                                            onClick={this.gitHubClicked}
-                                        >
-                                            GitHub
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <Link to="/blog" onClick={this.blogClicked}>
-                                            Blog
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://twitter.com/srcgraph"
-                                            target="_blank"
-                                            onClick={this.twitterClicked}
-                                        >
-                                            Twitter
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://www.linkedin.com/company/4803356/"
-                                            target="_blank"
-                                            onClick={this.linkedInClicked}
-                                        >
-                                            LinkedIn
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div className="close--icon">
-                                    <CloseIcon className="material-icons" />
-                                </div>
-                            </div>
-                            <div className="col-xs-12 col-sm-12 col-m-2 col-lg-2 item footer__extend company">
-                                <h3>Company</h3>
-                                <input type="checkbox" />
-                                <ul>
-                                    <li>
-                                        <Link to="/plan">Master plan</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/about" onClick={this.aboutClicked}>
-                                            About
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/contact">Contact</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/jobs" onClick={this.careersClicked}>
-                                            Careers
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <div className="close--icon">
-                                    <CloseIcon className="material-icons" />
-                                </div>
-                            </div>
-                            <div className="col-xs-12 col-sm-12 col-m-2 col-lg-2 item footer__extend features">
-                                <h3>Features</h3>
-                                <input type="checkbox" />
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="https://docs.sourcegraph.com/user/search"
-                                            onClick={this.codeSearchClicked}
-                                        >
-                                            Code search
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://docs.sourcegraph.com/extensions"
-                                            onClick={this.codeIntelligenceClicked}
-                                        >
-                                            Code intelligence &amp; extensions
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://docs.sourcegraph.com/integration"
-                                            onClick={this.integrationsClicked}
-                                        >
-                                            Integrations
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://about.sourcegraph.com/pricing"
-                                            onClick={this.dataCenterClicked}
-                                        >
-                                            Enterprise
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div className="close--icon">
-                                    <CloseIcon className="material-icons" />
-                                </div>
-                            </div>
-                            <div className="col-xs-12 col-sm-12 col-m-2 col-lg-2 item footer__extend resources">
-                                <h3>Resources</h3>
-                                <input type="checkbox" />
-                                <ul>
-                                    <li>
-                                        <a href="https://docs.sourcegraph.com" onClick={this.docsLinkClicked}>
-                                            Documentation
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                                            onClick={this.changelogLinkClicked}
-                                        >
-                                            Changelog
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <Link to="/pricing" onClick={this.pricingLinkClicked}>
-                                            Pricing
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/security" onClick={this.securityClicked}>
-                                            Security
-                                        </Link>
-                                    </li>
-                                </ul>
-                                <div className="close--icon">
-                                    <CloseIcon className="material-icons" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="small__contact">
-                            <div className="footer__contact">
-                                <p>
-                                    <a className="mail__contect" href="mailto:hi@sourcegraph.com" target="_blank">
-                                        hi@sourcegraph.com
-                                    </a>
-                                </p>
-                                <p className="addr__contact">
-                                    142 Minna St, 2nd Floor
-                                    <br />
-                                    San Francisco CA, 94105
-                                </p>
-                            </div>
-                        </div>
+export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
+    <footer className="footer pt-6 pb-2">
+        <div className="footer__container container">
+            {!minimal && (
+                <div className="row footer__nav-sections">
+                    <div className="col-12 col-lg-3 mb-5">
+                        <Link to="/">
+                            <img className="footer__logo" src="/sourcegraph/logo--light.svg" />
+                        </Link>
+                        <ul className="nav footer__social mt-1">
+                            <li className="nav-item">
+                                <a href="https://github.com/sourcegraph" target="_blank">
+                                    <GitHubCircleIcon />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="https://twitter.com/srcgraph" target="_blank">
+                                    <TwitterIcon />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="https://www.linkedin.com/company/4803356/" target="_blank">
+                                    <LinkedinIcon />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 copyright__container item">
-                                <span>
-                                    <p className="copyright">Copyright © 2019 Sourcegraph, Inc.</p>
-                                </span>
-                                <span className="terms">
-                                    <Link to="/terms" onClick={this.termsClicked}>
-                                        Terms
-                                    </Link>
-                                    <Link to="/privacy" onClick={this.privacyClicked}>
-                                        Privacy
-                                    </Link>
-                                </span>
-                            </div>
-                        </div>
+                    <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <h3 className="footer__nav-header">Why Sourcegraph?</h3>
+                        <ul className="nav flex-column">
+                            <li className="nav-item">
+                                <Link to="/product">Product</Link>
+                            </li>
+                            {/*<li className="nav-item">
+                            <Link to="/solutions">Use cases</Link>
+</li> TODO(sqs)*/}
+                            <li className="nav-item">
+                                <Link to="/product">What is a developer platform?</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/pricing">Pricing</Link>
+                            </li>
+                        </ul>
                     </div>
-                </footer>
+                    <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <h3 className="footer__nav-header">Features &amp; use cases</h3>
+                        <ul className="nav flex-column">
+                            {PRODUCT_FEATURES.map(({ text, to }, i) => (
+                                <li key={i} className="nav-item">
+                                    <Link to={to}>{text}</Link>
+                                </li>
+                            ))}
+                            {PRODUCT_USE_CASES.map(({ text, to }, i) => (
+                                <li key={i} className="nav-item">
+                                    <Link to={to}>{text}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <h3 className="footer__nav-header">Resources</h3>
+                        <ul className="nav flex-column">
+                            <li className="nav-item">
+                                <a href="https://docs.sourcegraph.com">Documentation</a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
+                                    Changelog
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/blog">Blog</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <h3 className="footer__nav-header">Company</h3>
+                        <ul className="nav flex-column">
+                            <li className="nav-item">
+                                <Link to="/plan">Master plan</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/jobs">Careers</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            )}
+            <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
+                <ul className="nav">
+                    <li className="nav-item text-muted mr-3">Copyright &copy; 2019 Sourcegraph</li>
+                    <li className="nav-item">
+                        <Link to="/terms" className="nav-link">
+                            Terms
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/security" className="nav-link">
+                            Security
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/privacy" className="nav-link">
+                            Privacy
+                        </Link>
+                    </li>
+                </ul>
             </div>
-        )
-    }
-
-    private installServerClicked = () => {
-        eventLogger.trackInstallSourcegraphServerCTAClicked('Footer')
-    }
-    private codeSearchClicked = () => {
-        eventLogger.trackCodeSearchLinkClicked('Footer')
-    }
-    private codeIntelligenceClicked = () => {
-        eventLogger.trackCodeIntelligenceLinkClicked('Footer')
-    }
-    private savedQueriesClicked = () => {
-        eventLogger.trackSavedQueriesLinkClicked('Footer')
-    }
-    private integrationsClicked = () => {
-        eventLogger.trackIntegrationsLinkClicked('Footer')
-    }
-    private dataCenterClicked = () => {
-        eventLogger.trackDataCenterLinkClicked('Footer')
-    }
-    private docsLinkClicked = () => {
-        eventLogger.trackDocsClicked('Footer')
-    }
-    private changelogLinkClicked = () => {
-        eventLogger.trackChangelogClicked('Footer')
-    }
-    private pricingLinkClicked = () => {
-        eventLogger.trackPricingClicked('Footer')
-    }
-    private blogClicked = () => {
-        eventLogger.trackBlogClicked('Footer')
-    }
-    private aboutClicked = () => {
-        eventLogger.trackAboutClicked('Footer')
-    }
-    private careersClicked = () => {
-        eventLogger.trackCareersClicked('Footer')
-    }
-    private termsClicked = () => {
-        eventLogger.trackTermsClicked('Footer')
-    }
-    private securityClicked = () => {
-        eventLogger.trackSecurityClicked('Footer')
-    }
-    private privacyClicked = () => {
-        eventLogger.trackPrivacyClicked('Footer')
-    }
-    private gitHubClicked = () => {
-        eventLogger.socialMediaClicked('GitHub')
-    }
-    private twitterClicked = () => {
-        eventLogger.socialMediaClicked('Twitter')
-    }
-    private linkedInClicked = () => {
-        eventLogger.socialMediaClicked('LinkedIn')
-    }
-    private searchPublicCodeClicked = () => {
-        eventLogger.trackSearchPublicCodeClicked('Footer')
-    }
-}
+        </div>
+    </footer>
+)

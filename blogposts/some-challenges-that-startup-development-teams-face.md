@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: some-challenges-that-startup-development-teams-face
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6NmfpJgoV2M4WGiUgkOSao/64a9a5624a47de19271c2f6ec87f59d1/1_QqyAGU4FbfAYLAlhC9FjSw.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6NmfpJgoV2M4WGiUgkOSao/64a9a5624a47de19271c2f6ec87f59d1/1_QqyAGU4FbfAYLAlhC9FjSw.png
 published: true
 ---
 
@@ -36,7 +36,7 @@ The biggest problem people had with Git (the most widely used version control sy
 
 Keeping all of your projects in the same repository has many downsides, though. We heard horror stories about how long basic Git operations take when Git is operating “at scale” on very large repositories. Facebook uses Mercurial, and they addressed this issue by [modifying it so that it would work on their large code base](https://code.facebook.com/posts/218678814984400/scaling-mercurial-at-facebook/).
 
-Placing your projects in one repository also complicates development on company-sponsored free and open-source projects. There’s tension between making development as open possible and integrating an open source project with a company’s internal tools and processes. Some teams keep open-source projects separate and see synching issues as a price they have to pay for a healthy open source community. Alternatively, some companies do open source development internally and push it out to the community, while others take a hybrid approach of the two styles. There are merits to each approach and it’s important to make the decision with the best interests of the company and its free/open source community in mind.
+Placing your projects in one repository also complicates development on company-sponsored free and open-source projects. There's tension between making development as open possible and integrating an open source project with a company’s internal tools and processes. Some teams keep open-source projects separate and see synching issues as a price they have to pay for a healthy open source community. Alternatively, some companies do open source development internally and push it out to the community, while others take a hybrid approach of the two styles. There are merits to each approach and it’s important to make the decision with the best interests of the company and its free/open source community in mind.
 
 ### 3\. Code review practices are fragmented and tooling is immature.
 

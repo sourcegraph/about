@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-go-for-information-displays
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -59,7 +59,7 @@ Great example as a warriors fan:
 
 ### [OpenVG](https://github.com/ajstarks/openvg)
 
-RaspberryPi Go SVG 
+RaspberryPi Go SVG
 
 ![img_20180828_110526](https://user-images.githubusercontent.com/3791413/44739358-ca51e500-aab4-11e8-8341-6e84867aaa1b.jpg)
 

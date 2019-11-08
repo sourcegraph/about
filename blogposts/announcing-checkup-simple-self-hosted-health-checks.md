@@ -1,12 +1,12 @@
 ---
 title: 'Announcing Checkup: simple, self-hosted health checks'
 author: 'Beyang Liu'
-publishDate: 2016-06-08T11:31-07:00
+date: 2016-06-08T11:31-07:00
 tags: [
   "blog"
 ]
 slug: announcing-checkup-simple-self-hosted-health-checks
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Ii4dXpUuAEKgG0oE0EmA8/fc1630a53930c3cee13dcb41d3a4c69e/0_AEcci4InW9CYuloX.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Ii4dXpUuAEKgG0oE0EmA8/fc1630a53930c3cee13dcb41d3a4c69e/0_AEcci4InW9CYuloX.jpg
 published: true
 ---
 
@@ -20,16 +20,16 @@ The Checkup status page works out of the box
 
 Monitoring uptime is a crucial part of running any web service. It lets you sleep well at night knowing that you’ll be notified if an outage occurs. There are many existing SaaS health check services that offer a range of features, but when we tried them at Sourcegraph, we found none that fully met our needs. Here were a few of the pain points:
 
-*   **Clunky GUIs:** Most uptime services force you to define health checks using a GUI. We’ve found these are often clunky and slow. Ironically, one tool we used to ensure our page loads didn’t exceed hundreds of milliseconds itself took 7+ seconds to load.
+*   **Clunky GUIs:** Most uptime services force you to define health checks using a GUI. We’ve found these are often clunky and slow. Ironically, one tool we used to ensure our page loads didn't exceed hundreds of milliseconds itself took 7+ seconds to load.
 *   **You forget to update your health checks.** Someone changes a URL, deploys the change without updating the check, and the on-call engineer is paged that the site is down.
 *   **Internal services:** You can’t use SaaS health checkers for internal services that aren’t accessible via the public Internet.
-*   **Uptime services go down!** A lot of the newer offerings on the market experience downtime themselves and when they do, there’s no record of what happened with your site during the outage.
+*   **Uptime services go down!** A lot of the newer offerings on the market experience downtime themselves and when they do, there's no record of what happened with your site during the outage.
 
 ### (╯°□°)╯︵ ┻━┻
 
 At Sourcegraph, we grew tired of fighting our health checks to accomplish tasks we thought should have been straightforward. Why did we have to define our checks using a thick JavaScript web client or some clunky API? Why couldn’t they be defined in a simple config file and perhaps even versioned with the code itself?
 
-We talked to [Matt Holt](https://twitter.com/mholt6), creator of the [Caddy web server](https://caddyserver.com), and found we weren’t alone. So we decided to sponsor Matt to create a tool that would do health checks the way we thought they should be done as developers.
+We talked to [Matt Holt](https://twitter.com/mholt6), creator of the [Caddy web server](https://caddyserver.com), and found we weren't alone. So we decided to sponsor Matt to create a tool that would do health checks the way we thought they should be done as developers.
 
 ### Health checks should be as easy as unit tests
 

@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: full-stack-subscriptions
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -26,7 +26,7 @@ Executing this query returns a list of houses, their name, amount of banner men 
 - we sent a request containing a document, got a response (JSON)
 - GraphQL Language Specification (domain agnostic)
 - Schema (domain specific)
-- Express (NodeJS HTTP server)
+- Express (Node.js HTTP server)
 - GraphQL Server (GraphQL-js)
 - GraphiQL
 

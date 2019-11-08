@@ -6,13 +6,13 @@ tags: [
   "blog"
 ]
 slug: go-code-intelligence-on-sourcegraph-now-in-general-availability-ga
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
 
 
-First, some background: Beyang and I have deep respect for how Google builds software. Beyang interned there, and I’ve worked with Googlers on many open-source projects, including Chromium. What’s their secret? How are they so good?
+First, some background: Beyang and I have deep respect for how Google builds software. Beyang interned there, and I've worked with Googlers on many open-source projects, including Chromium. What’s their secret? How are they so good?
 
 Ask any Google developer, and they’ll give much of the credit to their internal Code Search web app, which lets them navigate and cross-reference the entire codebase by function calls, authors, etc. They’ll tell you that Code Search makes them smarter and more productive. (You may want to time-box the conversation, because they sure love to talk about Code Search!)
 

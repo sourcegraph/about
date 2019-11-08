@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-an-over-engineering-disaster-with-macaroons
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -120,7 +120,7 @@ Tyler Close, ACLs don’t
 Identity is not ideal: it often depends on a Deputy to lookup a user, but that Deputy can get confused.
 
 A common case is CSRF: Cross Site Request Forgery which could result in the Deputy to get “confused”
-and take action on behalf of another actor who doesn’t have that authority.
+and take action on behalf of another actor who doesn't have that authority.
 
 Solution: Create a token unique per session. i.e. increase the security of the Identity system by adding a Capability.
 
@@ -130,7 +130,7 @@ that makes it much safer?
 Now, if only we could combine the strengths of both world, like having a Bearer token (like our car key) that
 could be attenuated or limited so it can be much safer.
 
-This would be like we handed the valet a key that wouldn’t work generally, but would work within a one-mile radius,
+This would be like we handed the valet a key that Wouldn't work generally, but would work within a one-mile radius,
 or if the driver was wearing the valet-company uniform or some other set of caveats that are based on the context.
 
 ## Macaroons

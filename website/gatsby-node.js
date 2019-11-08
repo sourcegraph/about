@@ -1,18 +1,8 @@
 const _ = require('lodash')
 const parseFilePath = require('parse-filepath')
 const path = require('path')
+const slugify = require('slugify')
 
-function kebabcase(str) {
-  result = str.toLowerCase()
-  // Convert non-alphanumeric characters to hyphens
-  result = result.replace(/[^-'a-z0-9]+/g, '-')
-  result = result.replace(/'/, '')
-  // Remove hyphens from both ends
-  result = result.replace(/^-+/, '').replace(/-$/, '')
-  result = result.replace(/(-)\1{1,}/, '-')
-
-  return result
-}
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -82,6 +72,14 @@ exports.createPages = ({ actions, graphql }) => {
                     fileSlug: slug,
                   },
                 })
+              } else if (node.frontmatter.tags && node.frontmatter.tags.includes('strange-loop')) {
+                createPage({
+                  path: `/strange-loop/${slug}`,
+                  component: PostTemplate,
+                  context: {
+                    fileSlug: slug,
+                  },
+                })
               }
             } else {
               createPage({
@@ -108,13 +106,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       if (fileNode.relativePath) {
         const parsedFilePath = parseFilePath(fileNode.relativePath)
         const name = node.frontmatter.title
-        const kebabName = kebabcase(name)
+        const slugified = slugify(name)
         if (parsedFilePath.name !== `index` && parsedFilePath.dirname !== '' && !node.frontmatter.permalink) {
-          slug = `/${parsedFilePath.dirname}/${kebabName}/`
+          slug = `/${parsedFilePath.dirname}/${slugified}/`
         } else if (parsedFilePath.name !== `index` && node.frontmatter.slug && !node.frontmatter.permalink) {
           slug = `${node.frontmatter.slug}`
         } else if (parsedFilePath.name !== `index` && !node.frontmatter.permalink) {
-          slug = `/${kebabName}/`
+          slug = `/${slugified}/`
         } else if (parsedFilePath.name !== `index`) {
           slug = node.frontmatter.permalink
         } else {

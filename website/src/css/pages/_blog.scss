@@ -4,20 +4,16 @@
     &__head {
         flex-direction: column;
         text-align: center;
-        padding: 4rem 0.5rem;
-        background: $light-11;
+        padding: 1rem 0.5rem;
     }
 
     &__posts {
         &--container {
-            padding: 4rem;
+            padding: 2.5rem 0 2.5rem 0;
             border-bottom: 1px solid $light-11;
             &:hover {
                 background-color: $light-11;
                 transition: background-color 0.25s ease-in;
-            }
-            @media (max-width: $media-md) {
-                padding: 2rem;
             }
         }
 
@@ -25,34 +21,17 @@
             color: $dark-7;
             display: grid;
             grid-template-columns: auto minmax(min-content, 350px) minmax(min-content, 600px) auto;
-            grid-column-gap: 3rem;
 
             width: 100%;
-
-            @media (max-width: $media-md) {
-                grid-template-columns: 100%;
-                grid-template-rows: min-content(50%) 50%;
-                grid-row-gap: 2rem;
-            }
 
             &-image {
                 grid-column-start: 2;
                 grid-row-start: 1;
-
-                @media (max-width: $media-md) {
-                    grid-row-start: 1;
-                    grid-column-start: 1;
-                }
             }
 
             &-text {
                 grid-column-start: 3;
                 grid-row-start: 1;
-
-                @media (max-width: $media-md) {
-                    grid-row-start: 2;
-                    grid-column-start: 1;
-                }
             }
 
             &-excerpt {
@@ -80,4 +59,78 @@
             cursor: auto;
         }
     }
+
+    .subscription-grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        max-width: 990px;
+    }
+
+    .grid-item-1 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .grid-item-2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        background-color: white;
+    }
+
+    .grid-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .blog {
+        .subscription-grid {
+            display: block;
+        }
+        .grid-item-2 {
+            display: none;
+        }
+    }
+}
+
+#gopherConForm, #strangeLoopForm  {
+    justify-content: center;
+}
+
+.strange-loop-liveblog {
+    &__header {
+        width: 100%;
+        max-width: 900px;
+    }
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+table td,
+table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+}
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
+}
+table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+table {
+    background-color: #fff;
 }

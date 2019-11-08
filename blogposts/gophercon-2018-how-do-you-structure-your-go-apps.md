@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-how-do-you-structure-your-go-apps
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
 
@@ -22,7 +22,7 @@ How should I structure my Go code?” is probably one of the most commonly asked
 Should I keep all my files under one directory or should I split them up? How should I divide my code and into what packages? Can I write object-oriented code in Go? Why do some projects have a cmd directory and what is the advantage of that?
 
 ## Summary
-To answer the question, “How should I structure my Go code?” Kat first provides an overview of common design patterns such as: 
+To answer the question, “How should I structure my Go code?” Kat first provides an overview of common design patterns such as:
 - Flat structure
 - Layered
 - Modular
@@ -46,7 +46,7 @@ Kat answers the opening question by building a beer reviewing service that has a
 - Ability to add some sample data.
 
 ## Types of Structure
-There’s a variety of ways one can dive in and start organizing a project. Some common ways of the beer reviewing service could be structured are:
+There's a variety of ways one can dive in and start organizing a project. Some common ways of the beer reviewing service could be structured are:
 - [Flat Structure](https://sourcegraph.com/github.com/katzien/go-structure-examples@master/-/tree/flat)
 <img width="832" alt="screenshot 2018-08-28 16 01 40" src="https://user-images.githubusercontent.com/4897310/44753563-c2f20200-aadb-11e8-908d-16803b637fe4.png">
 
@@ -57,7 +57,7 @@ As the application gets more complex we can try other approaches:
   - A layered architecture approach that places files that interact with similar areas in the same directory.
   - This grouping by functional type is a classic MVC used by a lot of frameworks.
 <img width="428" alt="screenshot 2018-08-28 16 01 48" src="https://user-images.githubusercontent.com/4897310/44753601-ddc47680-aadb-11e8-882c-54e7d9ebb8ef.png">
-	
+
 However, there are some issues with the group by function approach. For example, it could be problematic if a variable needs to be shared by two different layers, which layer do you put it in? Or do you duplicate? Or it could be tough to understand where does initialization go? Does main initialize a storage shared between models, or does each model initialize their own storage.
 
 - [Modular](https://sourcegraph.com/github.com/katzien/go-structure-examples@master/-/tree/modular)
@@ -65,7 +65,7 @@ However, there are some issues with the group by function approach. For example,
     - Everything is grouped logically, but it’s still hard to decide which packages should be reused or when to make a new package.
 <img width="832" alt="screenshot 2018-08-28 16 02 01" src="https://user-images.githubusercontent.com/4897310/44753609-e6b54800-aadb-11e8-8d3e-73698cc0da4a.png">
 
-There’s a different approach that we can try - Grouping by context or also known as Domain Driven Development.
+There's a different approach that we can try - Grouping by context or also known as Domain Driven Development.
 
 ## Domain Driven Development
 Domain driven development works by first establishing your domain and business logic. It makes you think about the domain you’re dealing with and the business logic in your app before you even write a single line of code. Next, you’ll define bounded contexts which help you decide what has to be consistent and what can develop independently.

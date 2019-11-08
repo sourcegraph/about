@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: the-august-2018-docker-hub-outage-and-the-impact-on-kubernetes-deployments
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1LMHTsJzjOwOweIoUmMk2i/2ff8fd218923eda3f0e32f81cec6016f/Docker-logo-011.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1LMHTsJzjOwOweIoUmMk2i/2ff8fd218923eda3f0e32f81cec6016f/Docker-logo-011.png
 published: true
 ---
 
@@ -14,15 +14,15 @@ published: true
 
 Docker announced that the Docker Hub and Docker Store (backed by the same Docker Registry) [will be down](https://success.docker.com/article/planned-downtime-on-hub-cloud-store) (totally offline) from [11:00 Pacific Time](https://everytimezone.com/#2018-8-25,-1080,b8jj) 25 August with 15-45 minutes (expected) downtime.
 
-You may be thinking “I use Kubernetes, doesn’t this only affect people executing `docker image pull`? Well yes, but that is what Kubernetes does when it doesn’t find a requested image locally.
+You may be thinking “I use Kubernetes, doesn't this only affect people executing `docker image pull`? Well yes, but that is what Kubernetes does when it doesn't find a requested image locally.
 
 Below is the advice we’ve given our customers to help them work around the outage and we encourage you to share this with anyone who uses Kubernetes to help them have an incident and outage free weekend.
 
-## Check your imagePullPolicy 
+## Check your imagePullPolicy
 We use the imagePullPolicy [default value](https://kubernetes.io/docs/concepts/configuration/overview/#container-images) (IfNotPresent), meaning the image will not be pulled if available locally.
 
 ## Avoid changing the state of the Kubernetes cluster
-The idea is to not give a Kubernetes worker node a reason to pull an image from Docker Hub. 
+The idea is to not give a Kubernetes worker node a reason to pull an image from Docker Hub.
 
 While this is somewhat out of our control (if a node dies), we recommend to:
 

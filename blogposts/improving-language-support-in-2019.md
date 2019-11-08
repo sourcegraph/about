@@ -7,7 +7,7 @@ tags: [
   blog
 ]
 slug: improving-language-support-in-2019
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -15,13 +15,13 @@ Sourcegraph's [master plan](https://about.sourcegraph.com/plan) is to bring basi
 
 - Wrapping language servers gave us remote execution of the language server, but [lsp-adapter](https://github.com/sourcegraph/lsp-adapter) did not solve more fundamental problems related to incompatible compiler and package manager versions, not installing dependencies, slow initialization, and poor quality in general
 - lsp-proxy was complex and no single Sourcegrapher fully understood how lsp-proxy, lsp-adapter, and indexer worked
-- Aside from Swift, we simply didn’t prioritize work on language servers (partly because of the complexity of lsp-proxy, partly because of other priorities)
+- Aside from Swift, we simply didn't prioritize work on language servers (partly because of the complexity of lsp-proxy, partly because of other priorities)
 
 Many things have changed in the last year to make it possible to improve language support now:
 
 - With [Sourcegraph extensions](https://docs.sourcegraph.com/extensions), it’s easier to understand how code intelligence on Sourcegraph works, which makes it easier to build on and all you need to understand is the Sourcegraph extension API (no need to understand [xfiles/xcontents](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-files.md), [xcache](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-cache.md), [lsp-adapter](https://github.com/sourcegraph/lsp-adapter), lsp-proxy, etc.) in order to add language support
-- There’s a new [Swift language server (apple/sourcekit-lsp)](https://github.com/apple/sourcekit-lsp)
-- There’s a new [Python language server (Microsoft/python-language-server)](https://github.com/Microsoft/python-language-server)
+- There's a new [Swift language server (apple/sourcekit-lsp)](https://github.com/apple/sourcekit-lsp)
+- There's a new [Python language server (Microsoft/python-language-server)](https://github.com/Microsoft/python-language-server)
 - We’ve learned that it’s fairly easy to patch existing language servers (Go, TypeScript, and Python) to support zip archive fetching and WebSockets. This results in a more maintainable and "pure" language server than wrapping a language server with lsp-adapter.
 - We’ve learned that shipping experimental language servers is not an effective way to attract community/contractor help or useful feedback. (We [deactivated experimental language servers](https://about.sourcegraph.com/blog/java-php-experimental-language-servers-temporarily-unavailable).)
 

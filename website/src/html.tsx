@@ -23,32 +23,20 @@ export default class HTML extends React.Component<HtmlProps> {
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
-                    <link rel="stylesheet" type="text/css" href="styles.css" />
+                    <link rel="stylesheet" type="text/css" href="/styles.css" />
                     {head.title.toComponent()}
                     {head.meta.toComponent()}
                     {head.link.toComponent()}
                     {/* {css} */}
-                    <script type="text/javascript" src="/scripts.js" />
-                    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" />
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js" />
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" />
-                    <link rel="icon" type="image/png" href="https://about.sourcegraph.com/favicon.png" />
+                    <link rel="icon" type="image/png" href="/favicon.png" />
                     <link
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
-                    />
-                    <link
-                        rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
                     />
                 </head>
                 <body>
                     <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
                     {this.props.postBodyComponents}
-                    <script
-                        type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"
-                    />
                 </body>
             </html>
         )

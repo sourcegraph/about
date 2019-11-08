@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-5-mistakes-c-c-devs-make-writing-go
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -15,17 +15,18 @@ Nyah Check ([@nyah_check](https://twitter.com/nyah_check), [slides](https://talk
 Nyah comes from a C/C++ background and subsequently wrote a lot of bad Go code early on. He hopes others can learn from his mistakes.
 
 He has classified his mistakes under 3 topics:
-* Heap vs. Stack
-* Memory & Goroutine leaks
-* Error handling
+
+- Heap vs. Stack
+- Memory & Goroutine leaks
+- Error handling
 
 ## Heap vs. Stack
 
 What is a Heap and Stack in Go?
-A Stack is a special region in created to store temporary variables bound to a function. 
+A Stack is a special region in created to store temporary variables bound to a function.
 It's self cleaning and expands and shrinks accordingly.
 
-A Heap is a bigger region in memory in addition to the stack used for storing values, 
+A Heap is a bigger region in memory in addition to the stack used for storing values,
 It's more costly to maintain since the GC needs to clean the region from time to time adding extra latency.
 
 ![image](https://user-images.githubusercontent.com/1646931/44812292-1758b880-ab94-11e8-889d-95d902928d2f.png)
@@ -46,12 +47,13 @@ int foo() {
 
 Wrong assumptions:
 
-* In C++, we know new(int) is allocated on the heap.
-* In Go, we don't really know for sure.
-* May be the new keyword was stolen from C++ as a result might likely be allocated on the heap?
-* Given my C++ bias, I thought minimizing it's use will reduce heap allocation.
+- In C++, we know new(int) is allocated on the heap.
+- In Go, we don't really know for sure.
+- May be the new keyword was stolen from C++ as a result might likely be allocated on the heap?
+- Given my C++ bias, I thought minimizing it's use will reduce heap allocation.
 
 Let's look at some code...
+
 ```go
 package main
 
@@ -87,22 +89,22 @@ In the above example, `x` escapes to the heap. That's because `fmt.Println` take
 Escape analysis is not trivial in Go. You need to do runtime analysis; can't just look at the code.
 
 Lessons
-* Escape analysis is very important in writing more performant Go programs, yet there's no language specification on this.
-* Some of the compiler's escape analysis decisions are counterintuitive, yet trial and error is the only way to know
-* Do not make assumptions, rather do escape analysis on the code and make informed decisions.
 
+- Escape analysis is very important in writing more performant Go programs, yet there's no language specification on this.
+- Some of the compiler's escape analysis decisions are counterintuitive, yet trial and error is the only way to know
+- Do not make assumptions, rather do escape analysis on the code and make informed decisions.
 
 Conclusion: "Understand heap vs stack allocation in your Go program by checking the compiler's escape analysis report and making informed decisions, do not guess"
-
 
 ## Memory leaks
 
 How does memory leak in Go
-* I assumed since there's a garbage collector, then everything is fine
-Not True!
-* Memory leaks are common in any language including garbage collected languages
-* It can be caused by: assigned but unused memory, synchronization issues.
-* Some of these errors can be hard to detect, but Go has a set of tools which could be very effective in debugging these bugs
+
+- I assumed since there's a garbage collector, then everything is fine
+  Not True!
+- Memory leaks are common in any language including garbage collected languages
+- It can be caused by: assigned but unused memory, synchronization issues.
+- Some of these errors can be hard to detect, but Go has a set of tools which could be very effective in debugging these bugs
 
 ### Mistake 2: Do not defer in an infinite Loop
 
@@ -118,17 +120,17 @@ if err != nil {
 defer fp.Close()
 ```
 
-This snippet is guaranteed to work even if cases where there’s a panic and it’s standard Go practice.
-
-
+This snippet is guaranteed to work even if cases where there's a panic and it’s standard Go practice.
 
 So what's the problem? In very large files where resources cannot be tracked and freed properly, this becomes a problem.
 
 Consider a file monitoring program in C where:
-* We check a specific directory for db file dumps
-* perform some operation(logging, file versioning, etc)
+
+- We check a specific directory for db file dumps
+- perform some operation(logging, file versioning, etc)
 
 Something like this might work:
+
 ```cpp
 #define TIME_TO_WAIT 1 /* wait for one second */
 int main() {
@@ -156,9 +158,8 @@ int main() {
 
 This will be sure to open and close up the files (open, close, open, close, etc.) once the operations are done.
 
+However in Go:
 
-
-However in Go: 
 ```go
 func loggingMonitorErr(files ...string) {
     for range time.Tick(time.Second) {
@@ -175,16 +176,17 @@ func loggingMonitorErr(files ...string) {
 
 The output from running the program shows there is no closing of files.
 
-Problems: 
-- Deferred code never executes since the function has not returned 
-- So memory clean up never happens and it’s use keeps piling up 
+Problems:
+
+- Deferred code never executes since the function has not returned
+- So memory clean up never happens and it’s use keeps piling up
 - Files will never be closed, therefore causing loss of data due to lack of flush.
 
 How do I fix this?
-* Creating a function literal for each file monitoring process
-* This ensures everything is bound to the context
-* Hence files are opened and closed
 
+- Creating a function literal for each file monitoring process
+- This ensures everything is bound to the context
+- Hence files are opened and closed
 
 The fixed solution looks like this:
 
@@ -212,11 +214,11 @@ func loggingMonitorFix(files ...string) {
 ```
 
 Lessons learned:
-* Since defer is tied to the new function context, we are sure it's executed and memory is flushed when files close
-* When defer executes we are certain our function literal finished execution, so no memory leaks
+
+- Since defer is tied to the new function context, we are sure it's executed and memory is flushed when files close
+- When defer executes we are certain our function literal finished execution, so no memory leaks
 
 Conclusion: "Do not defer in an infinite loop, since the defer statement invokes the function execution ONLY when the surrounding function returns"
-
 
 ## Pointers to accessible parts of a slice
 
@@ -227,21 +229,23 @@ A slice is a dynamically sized flexible view into an array.
 We know arrays have fixed fizes.
 
 There are two main features of slices to think about:
-* The length of a slice is simply the total number of elements contained in the slice
-* The capacity of a slice is the number of elements in the underlying array.
+
+- The length of a slice is simply the total number of elements contained in the slice
+- The capacity of a slice is the number of elements in the underlying array.
 
 Understanding this can avoid some robustness issues.
 
-
 ### Mistake 3: Keeping pointers to an accessible(although not visible) part of a slice
 
-Prior to Go 1.2 there was a memory safety issue with slices: 
-* You could access elements of the underlying array.
-* This could lead to unintended memory writes.
-* Cause robustness issues
-* These regions of memory are not garbage collected.
+Prior to Go 1.2 there was a memory safety issue with slices:
+
+- You could access elements of the underlying array.
+- This could lead to unintended memory writes.
+- Cause robustness issues
+- These regions of memory are not garbage collected.
 
 Example:
+
 ```go
 func main() {
     a := []*int{new(int), new(int)}
@@ -255,23 +259,23 @@ func main() {
 }
 ```
 
-
 If you run this code, the third `Println` shows in `c` you somehow have access to elements in `a` that aren't accessible in `b`.
 
 What are some of the problems?
-* Write regions of memory unintentionally.
-* Robustness issues: Memory is not garbage collected since there's a reference to it.
-* It's a source for potential bugs
 
+- Write regions of memory unintentionally.
+- Robustness issues: Memory is not garbage collected since there's a reference to it.
+- It's a source for potential bugs
 
 How do you solve this then? Go 1.2++ added the 3-Index-Slice operation:
 
-* This enables you to specify the capacity during slicing.
-* The restricted slice capacity provides a level of protection to the underlying array
-* No unintended memory writes.
-* Unused areas of the underlying array are garbage collected.
+- This enables you to specify the capacity during slicing.
+- The restricted slice capacity provides a level of protection to the underlying array
+- No unintended memory writes.
+- Unused areas of the underlying array are garbage collected.
 
 Rewriting our code gives:
+
 ```go
 func main() {
     a := []*int{new(int), new(int)}
@@ -302,30 +306,31 @@ exit status 2
 
 Our slice cap was set to 1, we can't access regions of memory we don't have permissions to, rightly creating a panic.
 
-
 Lesson
-* Our slice capacity was set to 1, so can't access restricted regions in memory, rightly creating a panic
-* More robust programs
-* Fewer memory leaks since unused memory is garbage collected.
-* Reduce sources for potential bugs in your code.
 
+- Our slice capacity was set to 1, so can't access restricted regions in memory, rightly creating a panic
+- More robust programs
+- Fewer memory leaks since unused memory is garbage collected.
+- Reduce sources for potential bugs in your code.
 
 ## Goroutine leaks
 
-
 What's a Goroutine?
-* It's a lightweight thread of execution, it consists of functions that run concurrently with other functions/methods.
-* What about channels?
-* A channel is a pipe that connects concurrent goroutines.
-* An understanding of these two concepts embodies concurrency in Go.
+
+- It's a lightweight thread of execution, it consists of functions that run concurrently with other functions/methods.
+- What about channels?
+- A channel is a pipe that connects concurrent goroutines.
+- An understanding of these two concepts embodies concurrency in Go.
 
 There's no language-level analog in C/C++. You have to use special libraries to write multi-threaded code.
-* C/C++ has libraries for multi-threaded programming.
-* Concurrency in Go materializes itself in the form of goroutines and channels.
+
+- C/C++ has libraries for multi-threaded programming.
+- Concurrency in Go materializes itself in the form of goroutines and channels.
 
 How do goroutines leak? There are different possible causes for goroutine leaks, some include:
-* Infinite loops
-* Blocks on synchronization points(channels, mutexes), deadlocks
+
+- Infinite loops
+- Blocks on synchronization points(channels, mutexes), deadlocks
 
 However when these occur the program takes up more memory than it actually needs leading to high latency and frequent crashes.
 
@@ -333,7 +338,8 @@ Let's take a look at an example.
 
 ### Mistake 4: Error handling with channels where # channels < # goroutines
 
-Consider: 
+Consider:
+
 ```go
 func doSomethingTwice() error {
     // Issue occurs below
@@ -352,15 +358,13 @@ func doSomethingTwice() error {
 }
 ```
 
-
 What are the problems with the code?
-* More goroutines than channels are present to write to send data back to main
-* When one routine writes to the channel, the program exits and the other goroutine is lost, building up memory use as a results
-* that region of memory is not garbage collected
 
+- More goroutines than channels are present to write to send data back to main
+- When one routine writes to the channel, the program exits and the other goroutine is lost, building up memory use as a results
+- that region of memory is not garbage collected
 
-
-How do we fix this? We simply increase the number of channels to 2, 
+How do we fix this? We simply increase the number of channels to 2,
 This makes it possible for the two goroutines to pass their results to the calling program.
 
 ```go
@@ -386,13 +390,12 @@ func doSomethingTwice() error {
 Goroutine leaks are very common in Go development.
 
 However there are some best practices you can follow to avoid some of these errors:
-* Using the context package to terminate or timeout goroutines which may otherwise run indefinitely
-* Using a done signal or timeout channel can help in terminating a running goroutine preventing leaks
-* Profiling the code, Stack trace instrumentation and adding benchmarks can go a long way in finding these leaks
-* Take advantage of the go tooling ecosystem: go tool trace, go tool profile , go-torch, gops, leaktest etc
-* Worth checking the errgroup package for this pattern
 
-
+- Using the context package to terminate or timeout goroutines which may otherwise run indefinitely
+- Using a done signal or timeout channel can help in terminating a running goroutine preventing leaks
+- Profiling the code, Stack trace instrumentation and adding benchmarks can go a long way in finding these leaks
+- Take advantage of the go tooling ecosystem: go tool trace, go tool profile , go-torch, gops, leaktest etc
+- Worth checking the errgroup package for this pattern
 
 ## Error handling
 
@@ -400,7 +403,7 @@ What are errors in Go?
 
 Go has a built-in error type which uses error values to indicate an abnormal state.
 
-Also these error type is based on an error *interface.
+Also these error type is based on an error \*interface.
 
 ```go
 type error interface {
@@ -414,8 +417,8 @@ A closer look at the errors package will provide some good insides into handling
 
 ### Mistake 5: Errors are not just strings, but much more
 
-
 Consider a C program with a division by zero error:
+
 ```c
 #include <stdio.h> /* for fprintf and stderr */
 #include <stdlib.h> /* for exit */
@@ -426,14 +429,14 @@ int main( void )
    int quotient;
 
    if (divisor == 0) {
-       /* Example error handling. 
+       /* Example error handling.
         * Writing a message to stderr, and
         * exiting with failure.
         */
        fprintf(stderr, "Division by zero! Aborting...\n");
        exit(EXIT_FAILURE); /* indicate failure.*/
    }
-    
+
    quotient = dividend / divisor;
    exit(EXIT_SUCCESS); /* indicate success.*/
 }
@@ -458,7 +461,6 @@ func main() {
 
 Using `%T` in the format string, you can print the type of the error, which often provides useful information.
 
-
 Wrapping Errors in Go with `github.com/pkg/errors`:
 
 Consider another example
@@ -472,7 +474,7 @@ func connect(addr string) error {
             // return fmt.Errorf("failed to connect to %s: %v", err.Net, err)
             return errors.Wrapf(err, "failed to connect to %s", err.Net)
         default:
-            // return fmt.Errorf("unkown error: %v", err)
+            // return fmt.Errorf("unknown error: %v", err)
             return errors.Wrap(err, "unknown error")
         }
     }
@@ -483,34 +485,37 @@ func connect(addr string) error {
 }
 ```
 
-
 Advantages of Wrap and Cause funcs:
-* You can preserve the error context and pass to the calling program
-* Using the errors.Cause() function call we can determine what caused this error later in the program
+
+- You can preserve the error context and pass to the calling program
+- Using the errors.Cause() function call we can determine what caused this error later in the program
 
 Nyah believes it’s a feature some developers my overlook but if used properly will give a better Go development experience.
 
 Lessons learned:
-* The errors package provides a lot of powerful tools for handling errors which some devs may ignore.
-* Wrap() and errors.Cause() are very useful in preserving context of an error later in the program.
+
+- The errors package provides a lot of powerful tools for handling errors which some devs may ignore.
+- Wrap() and errors.Cause() are very useful in preserving context of an error later in the program.
 
 Take a look at the [errors package](https://godoc.org/github.com/pkg/errors) and see elegant examples.
 
 ## Conclusion
-* Understand Escape analysis by looking at the compiler decisions, do not make reasonable guesses.
-* Defer executes only when the function returns. Using it in a infinite loop is a mistake.
-* Three Index_slices adds an extra robustness utility in Go, use it.
-* Profile your Go code to identify bottlenecks early on, it's a good practice.
-* Errors in Go are not just strings, but much more.
-* Wrap errors to preserve context and handle them gracefully.
+
+- Understand Escape analysis by looking at the compiler decisions, do not make reasonable guesses.
+- Defer executes only when the function returns. Using it in a infinite loop is a mistake.
+- Three Index_slices adds an extra robustness utility in Go, use it.
+- Profile your Go code to identify bottlenecks early on, it's a good practice.
+- Errors in Go are not just strings, but much more.
+- Wrap errors to preserve context and handle them gracefully.
 
 There are many more errors C/C++ devs make. Just remember:
-* Bringing concepts from C/C++ is fine but be ready to be challenged by differences.
-* "Programming in Go is like being young again (but more productive!)."
 
+- Bringing concepts from C/C++ is fine but be ready to be challenged by differences.
+- "Programming in Go is like being young again (but more productive!)."
 
 ## Q&A
 
 What tools do you miss from C/C++?
-* GDB and Valgrind
-* For GDB-lovers, there's the Delve Go debugger.
+
+- GDB and Valgrind
+- For GDB-lovers, there's the Delve Go debugger.

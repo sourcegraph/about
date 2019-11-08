@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: faster-smoother-github-code-browsing
-heroImage: //images.ctfassets.net/le3mxztn6yoo/3CEYtcHfeUUioAsyMA0I8w/80f68e9142de1db153ee5d37e77430ce/sourcegraphAdvancedSearch.gif
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/3CEYtcHfeUUioAsyMA0I8w/80f68e9142de1db153ee5d37e77430ce/sourcegraphAdvancedSearch.gif
 published: true
 ---
 
@@ -45,7 +45,7 @@ By clicking the "Sourcegraph" button on a repository homepage or while viewing a
 
 ## Get it now
 
-[Install the Sourcegraph browser extension for Chrome or Firefox](https://docs.sourcegraph.com/integration/browser_extension). If you’ve already installed it, your browser will automatically update the extension, so you’ll already have these new features.
+[Install the Sourcegraph browser extension for Chrome or Firefox](https://docs.sourcegraph.com/integration/browser_extension). If you've already installed it, your browser will automatically update the extension, so you’ll already have these new features.
 
 Feedback or questions? Tweet us [@srcgraph](https://twitter.com/srcgraph).
 

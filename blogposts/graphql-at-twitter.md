@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: graphql-at-twitter
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6aI39UzzjiOYewEag2mGks/375f23bea8d04834da9b80b700168c72/tgvashworth.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6aI39UzzjiOYewEag2mGks/375f23bea8d04834da9b80b700168c72/tgvashworth.png
 published: true
 ---
 
@@ -45,7 +45,7 @@ And here is where the GraphQL API fits in as an HTTP and Thrift service:
 
 <img alt="Ashworth-8" src="//images.contentful.com/le3mxztn6yoo/2S5EjqJXDqs00CEcecUqcc/172310b88eb6e327513c12ec321d132e/Screen_Shot_2017-11-10_at_10.53.55_AM.png" class="flex center"/>
 
-GraphQL fits into this picture as an HTTP _and_ Thrift service alongside the others. It uses many data sources including existing HTTP endpoints and other Thrift services. Remember, communication between all Twitter's microservices is already typed using Thrift. The entire system sounds like it could be a GraphQL-native pattern. So, the GraphQL community isn't the first to find a service-to-service type system useful. 
+GraphQL fits into this picture as an HTTP _and_ Thrift service alongside the others. It uses many data sources including existing HTTP endpoints and other Thrift services. Remember, communication between all Twitter's microservices is already typed using Thrift. The entire system sounds like it could be a GraphQL-native pattern. So, the GraphQL community isn't the first to find a service-to-service type system useful.
 
 Twitter uses Scala, so they use the open source [Sangria](https://github.com/sangria-graphql/sangria) library.
 
@@ -72,9 +72,9 @@ They also use GraphQL-specific defenses. Imagine a pathologically nested query (
 }
 ```
 
-They have two defences: complexity and depth. 
+They have two defences: complexity and depth.
 
-First, they measure query complexity. They assign a "score" (some point value) to each field, and calculate the total cost of a query. The total cost is the _complexity_ of a query, and is calculated before execution. They then limit queries to some maximum complexity, and reject queries that are too costly. 
+First, they measure query complexity. They assign a "score" (some point value) to each field, and calculate the total cost of a query. The total cost is the _complexity_ of a query, and is calculated before execution. They then limit queries to some maximum complexity, and reject queries that are too costly.
 
 Twitter also uses _query depth_ measurement, which simply calculates the height of a query. For example, they could reject queries that goes further than 10 fields deep.
 
@@ -90,7 +90,7 @@ Lastly on the topic of the Twitter API, Tom will cover how they handle authentic
 
 <img alt="Ashworth-10" src="//images.contentful.com/le3mxztn6yoo/3E1d9dZVTisKC0igc6GYkc/524f4769a1870cb4b786e148f2feb65c/Screen_Shot_2017-11-10_at_10.55.07_AM.png" class="flex center"/>
 
-Imagine a request to api.twitter.com that is authenticated using a cookie header. TFE is responsible for user authentication. Because validating a cookie is fairly involved, this is done in the TFE layer, and passes on a bundle of Twitter Identity Assertion headers to GraphQL. 
+Imagine a request to api.twitter.com that is authenticated using a cookie header. TFE is responsible for user authentication. Because validating a cookie is fairly involved, this is done in the TFE layer, and passes on a bundle of Twitter Identity Assertion headers to GraphQL.
 
 <img alt="Ashworth-9" src="//images.contentful.com/le3mxztn6yoo/mpuHunFbwGeYGguSeISeI/a822c118c1e8782897b53506e7eba45d/Screen_Shot_2017-11-10_at_10.55.13_AM.png" class="flex center"/>
 
@@ -114,9 +114,9 @@ They've been deliberate in creating boundaries between each of the three parts t
 
 ### "Clients subscribe to an event": event production
 
-Twitter has an extensive pub/sub system called EventBus, with thousands of different events that flow through it. They watned to give clients access to this stream of data with GraphQL subscriptions.
+Twitter has an extensive pub/sub system called EventBus, with thousands of different events that flow through it. They wanted to give clients access to this stream of data with GraphQL subscriptions.
 
-EventBus is a distributed queue system. Event producers are services that publish events to EventBus streams. Subscribers are services that subscribe to EventBus to receive events. 
+EventBus is a distributed queue system. Event producers are services that publish events to EventBus streams. Subscribers are services that subscribe to EventBus to receive events.
 
 <img alt="Ashworth-1" src="//images.contentful.com/le3mxztn6yoo/5WTEFIVKEwYQImIE6W6g0A/31ef69d5907919e4a03d5b98faaa3a73/Screen_Shot_2017-11-07_at_5.57.07_PM.png" class="flex center"/>
 
@@ -129,7 +129,7 @@ Now that there's a service that picks up events from EventBus, the events need t
 
 <img alt="Ashworth-2" src="//images.contentful.com/le3mxztn6yoo/366xlCgPQQM0o08EC8qIGc/d56c7d69c65915d2a8ca0eb10c41feb6/Screen_Shot_2017-11-07_at_6.07.20_PM.png" class="flex center"/>
 
-This means that the API receives both a query and an event, and uses the event as the basis for the query execution. This is similar to a Thrift interface, so they are using GraphQL over both Thrift and HTTP. 
+This means that the API receives both a query and an event, and uses the event as the basis for the query execution. This is similar to a Thrift interface, so they are using GraphQL over both Thrift and HTTP.
 
 This JSON bundle shows that the API will run the query against the event. This keeps the GraphQL API concerned only with executing GraphQL queries:
 ```
@@ -141,7 +141,7 @@ This JSON bundle shows that the API will run the query against the event. This k
   },
   "user": {
     "id": "12"
-  }  
+  }
 }
 ```
 
@@ -155,7 +155,7 @@ Next, the resulting payloads need to be delivered. Streamed event delivery at sc
 
 <img alt="Ashworth-13" src="//images.contentful.com/le3mxztn6yoo/5y1uKSOAaAyYWSSgWoOOKU/9c9031b0e71b491165d0bdc5aad9c2a8/Screen_Shot_2017-11-10_at_11.11.18_AM.png" class="flex center"/>
 
-In the live pipeline model, clients listen for events on a specific "topic". Event producers can push events onto a topic by publishing them to Live Pipeline. Then the event is delviered to all clients subscribed to the event's topic. 
+In the live pipeline model, clients listen for events on a specific "topic". Event producers can push events onto a topic by publishing them to Live Pipeline. Then the event is delivered to all clients subscribed to the event's topic.
 
 To deliver GraphQL subscription payloads, a unique Live Pipeline topic is used per GraphQL subscription. Combining a bunch of data about the subscription creates a unique topic, and the client is informed of the topic so they can subscribe to it using Live Pipeline.
 
@@ -167,36 +167,36 @@ The client subscribes to this topic and gets the result of the query.
 
 <img alt="Ashworth-14" src="//images.contentful.com/le3mxztn6yoo/6Kgp3xMxckKSiAu8KEsQOI/2bcc907756bbb40b897ec8654c560dda/Screen_Shot_2017-11-10_at_11.11.51_AM.png" class="flex center"/>
 
-Putting it all together: 
+Putting it all together:
 * The client makes a subscription query to the GraphQL API
 * The API contacts an event producer to notify that there's a new subscriber
 * It then returns a Live Pipeline topic, which the client subscribes to
 * Once the event producer starts making events, the Subscriptions service will pick those up and execute the original queries using the API
 * After the API has executed the query, the payload is published to the client through Live Pipeline.
 
-This is the general overview of Twitter's GraphQL subscriptions system. This system is built to deliver thousands of events per second to thousands of clients. 
+This is the general overview of Twitter's GraphQL subscriptions system. This system is built to deliver thousands of events per second to thousands of clients.
 
 <img alt="Ashworth-15" src="//images.contentful.com/le3mxztn6yoo/3Q242XreY86UY2A8OkCyOW/f9ebf2baa6d2020547160e076eaf236e/Screen_Shot_2017-11-10_at_11.12.06_AM.png" class="flex center"/>
 
 ## Schema
 
-Lastly, Tom will tell us about the vision for GraphQL at Twitter. 
+Lastly, Tom will tell us about the vision for GraphQL at Twitter.
 
-One of the main goals is to help teams at Twitter build great products and features more quickly and easily, and GraphQL helps push this forward by making new data easily available without anyone manually editing schema code. 
+One of the main goals is to help teams at Twitter build great products and features more quickly and easily, and GraphQL helps push this forward by making new data easily available without anyone manually editing schema code.
 
 Twitter uses Strato to power this. Before learning more about Strato, a caveat: Strato is a technology internal to Twitter and there are no plans to open source it.
 
-Strato is a kind of virtual database. A virtual database, also called a federated database, brings together multiple data sources so they can be queried and mutated uniformly. This sounds a lot like GraphQL:  
+Strato is a kind of virtual database. A virtual database, also called a federated database, brings together multiple data sources so they can be queried and mutated uniformly. This sounds a lot like GraphQL:
 
 <img alt="Ashworth-15" src="//images.contentful.com/le3mxztn6yoo/3pF4Rbussgey2eAG6SUso4/89171b4bc6b439dfc9d747cd01f306a7/Screen_Shot_2017-11-10_at_12.56.33_PM.png" class="flex center"/>
 
-Philosophically, GraphQL and Strato are very similar. Strato has many of the same benefits of GraphQL, but isn't focused specifically on building client applications. 
+Philosophically, GraphQL and Strato are very similar. Strato has many of the same benefits of GraphQL, but isn't focused specifically on building client applications.
 
 Strato has existed at Twitter much longer than GraphQL, and is used to power the GraphQL API. It integrates tightly with Twitter's Thrift services, and in combination with the GraphQL API, gives them **end-to-end types from database to the client**.  It is similar in spirit to many of the other technologies presented at this conference that stitch together multiple data sources into a single source of truth. This approach is extremely powerful.
 
-For example, The Strato team has made it possible to add data to the Strato Catalog with a simple config file, and made deploys automatic. This allows engineers to have much more power and flexibility by reducing coordination needed between teams. This is an example Strato column that would store the brithdays of Twitter users in a database. It's just a config: 
+For example, The Strato team has made it possible to add data to the Strato Catalog with a simple config file, and made deploys automatic. This allows engineers to have much more power and flexibility by reducing coordination needed between teams. This is an example Strato column that would store the birthdays of Twitter users in a database. It's just a config:
 
-<img alt="Ashworth-3" src="//images.contentful.com/le3mxztn6yoo/2bKiqAhmKooYoyg4amKCSU/8ed0a5520b0ad8f5e629916f1513a277/Screen_Shot_2017-11-10_at_12.43.30_PM.png" class="flex center"/>             
+<img alt="Ashworth-3" src="//images.contentful.com/le3mxztn6yoo/2bKiqAhmKooYoyg4amKCSU/8ed0a5520b0ad8f5e629916f1513a277/Screen_Shot_2017-11-10_at_12.43.30_PM.png" class="flex center"/>
 
 Twitter has built Strato-powered GraphQL, which allows data in the Strato Catalog to automatically appear in the GraphQL Schema with a simple config change:
 

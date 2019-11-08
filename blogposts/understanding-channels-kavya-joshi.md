@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: understanding-channels-kavya-joshi
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1bLhl0PavGUCa2OKSCm0GS/24def891d0798b5c216b3ac645ed3680/Selection_064.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1bLhl0PavGUCa2OKSCm0GS/24def891d0798b5c216b3ac645ed3680/Selection_064.png
 published: true
 ---
 
@@ -60,13 +60,13 @@ ch := make(chan Task, 3)
 * Can cause block/unblock
 
 
-![Selection 059](//images.contentful.com/le3mxztn6yoo/65EmHei252GgU8CoWUag0S/45204cd810750733d6dbbb9a3f60c1a6/Selection_059.png) 
+![Selection 059](//images.contentful.com/le3mxztn6yoo/65EmHei252GgU8CoWUag0S/45204cd810750733d6dbbb9a3f60c1a6/Selection_059.png)
 
 `make chan` allocates an hchan struct on the heap and initializes it and returns a pointer to it. This is why we can pass channels between functions.
 
 ## Using the channels
 
-![Selection 060](//images.contentful.com/le3mxztn6yoo/6siFDT2yHKeUsGg2eUYMI2/e67e66e91e2cf6ffefbf122455e3b87d/Selection_060.png) 
+![Selection 060](//images.contentful.com/le3mxztn6yoo/6siFDT2yHKeUsGg2eUYMI2/e67e66e91e2cf6ffefbf122455e3b87d/Selection_060.png)
 
 
 ### How send and receive works?
@@ -88,7 +88,7 @@ Assume G1 keep sending and it takes a long time to process G2. When channel is f
 ### Pausing goroutines
 
 
-![Selection 061](//images.contentful.com/le3mxztn6yoo/16s9byzycQoyCoyyC6OUKy/1d67eb5b8de87a2a14eaf47219573820/Selection_061.png) 
+![Selection 061](//images.contentful.com/le3mxztn6yoo/16s9byzycQoyCoyyC6OUKy/1d67eb5b8de87a2a14eaf47219573820/Selection_061.png)
 
 When a goroutine needs to be paused, chan calls into the scheduler to park G1, what scheduler does is to change G1 from running to waiting. And schedule another goroutine on the OS thread.
 
@@ -112,7 +112,7 @@ When a goroutine needs to be paused, chan calls into the scheduler to park G1, w
 
 ![Selection 063](//images.contentful.com/le3mxztn6yoo/31ysUHAcYMSIYke6koU8Qq/d9b30737dd4ba3dc8386e936f8c0def9/Selection_063.png)
 
-When G1 finally runs, it needs to acquire the lock. But the runtime is actually is so much smarter to make this less costly. Runtime can copy directly to the receiver stack. G1 writes directly to G2’s stack and doesn’t have to acquire any locks.
+When G1 finally runs, it needs to acquire the lock. But the runtime is actually is so much smarter to make this less costly. Runtime can copy directly to the receiver stack. G1 writes directly to G2’s stack and doesn't have to acquire any locks.
 
 On resuming, G2 does not need to acquire channel lock and manipulate the buffer. This also means one fewer memory copy.
 

@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-the-best-way-to-read-code-just-got-better
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
@@ -50,7 +50,7 @@ If you want to see how something is used, you can quickly find and flip through 
 
 [![](https://cdn-images-1.medium.com/max/1000/1*e31UMNeXH2iZjneS2bbUkg.png)](https://sourcegraph.com/github.com/golang/go/-/blob/src/net/http/request.go#L690)Find refs.
 
-There’s a new quick-launch bar that lets you jump to any symbol or file faster than you can say “global graph of code.” Activate it by clicking “Search” in the upper-right corner or just by typing “/” on any page.
+There's a new quick-launch bar that lets you jump to any symbol or file faster than you can say “global graph of code.” Activate it by clicking “Search” in the upper-right corner or just by typing “/” on any page.
 
 ![1*kqiD7GzlN5OIrZpjYvNiEQ](//images.contentful.com/le3mxztn6yoo/5gZ2HHuMMMuKgO0muUoWE2/dace479f83af5083e4cd5d8ac1e026ad/1_kqiD7GzlN5OIrZpjYvNiEQ.png)
 

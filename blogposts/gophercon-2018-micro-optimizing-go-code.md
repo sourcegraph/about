@@ -6,7 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-micro-optimizing-go-code
-heroImage: //images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
 
@@ -15,7 +15,7 @@ Presenter: [George Tankersley](https://www.gophercon.com/agenda/speakers/279045)
 Liveblogger: [Matt Jaffee](https://twitter.com/mattjaffee)
 
 Everyone knows: if you need to go fast, bust out the assembly. But what if
-there’s better performance to be had just by writing Go more carefully?
+there's better performance to be had just by writing Go more carefully?
 
 ## Summary
 
@@ -87,7 +87,7 @@ Doesn't work for Blake2
 - [go bench](https://dave.cheney.net/2013/06/30/how-to-write-benchmarks-in-go)
 - benchstat
 - pprof
-and this...? 
+and this...?
 ```bash
 DATE=`date -u +'%s' | tr -d '\n'`; BRANCH=`git
 rev-parse --abbrev-ref HEAD`; for i in {1..8}; do
@@ -212,4 +212,4 @@ carefully that new Go versions don't break your "optimizations".
 
 You won't be competitive in assemply in pure Go - maybe use Rust?
 
-<img width="1394" alt="screen shot 2018-08-29 at 1 41 50 pm" src="https://user-images.githubusercontent.com/926067/44808250-576a6c00-ab91-11e8-8eea-cd63ac21dbe7.png">  
+<img width="1394" alt="screen shot 2018-08-29 at 1 41 50 pm" src="https://user-images.githubusercontent.com/926067/44808250-576a6c00-ab91-11e8-8eea-cd63ac21dbe7.png">

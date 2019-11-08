@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-2-10
-heroImage: //images.ctfassets.net/le3mxztn6yoo/14pZiUUFXeSAeS4CAQ48IY/4630b6856f89cf846dfaf3549d39a4bb/Screenshot_from_2018-08-01_11-16-49.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/14pZiUUFXeSAeS4CAQ48IY/4630b6856f89cf846dfaf3549d39a4bb/Screenshot_from_2018-08-01_11-16-49.png
 published: true
 ---
 
@@ -43,7 +43,7 @@ When typing an issue or PR comment on GitHub, just type <kbd>!</kbd> in the text
 
 Architecture diagrams are incredibly useful when trying to understand a codebase, but how do you include them in your documentation and keep them up to date with your code? Using a separate tool to create/export/edit diagrams results in outdated diagrams or none at all!
 
-Wouldn’t it be great if you could just specify a diagram directly in markdown, have it rendered nicely in your browser, and have it versioned alongside your code? Now you can!
+Wouldn't it be great if you could just specify a diagram directly in markdown, have it rendered nicely in your browser, and have it versioned alongside your code? Now you can!
 
 With the latest [Sourcegraph for Chrome/Firefox](https://docs.sourcegraph.com/integration/browser_extension), you can can add [mermaid.js](https://mermaidjs.github.io/) diagrams to your markdown files and they will be rendered when viewed on GitHub.com. [Read the instructions](https://github.com/sourcegraph/mermaidjs-example/blob/master/README.md) to get started.
 

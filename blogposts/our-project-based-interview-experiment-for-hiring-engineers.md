@@ -6,11 +6,11 @@ tags: [
   "blog"
 ]
 slug: our-project-based-interview-experiment-for-hiring-engineers
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-At Sourcegraph, we’re building not only a great product for engineers, but also a great, inclusive company for engineers to be a part of. Over the last few months, we’ve been experimenting with our hiring process and wanted to share our experience so far. 
+At Sourcegraph, we’re building not only a great product for engineers, but also a great, inclusive company for engineers to be a part of. Over the last few months, we’ve been experimenting with our hiring process and wanted to share our experience so far.
 
 (Our last experiment was putting open roles and job descriptions in the [sourcegraph/careers Git repository](https://github.com/sourcegraph/careers) in Markdown. That worked well!)
 
@@ -24,11 +24,11 @@ We set out to test whether giving candidates an option to work on a real-world, 
 To test this idea, we  started offering candidates who pass the initial phone screen 2 choices for next steps:
 
 - **Option #1 (existing):** 6-hour interview consisting of 6 different interview modules with different members of the team, covering technical proficiency, teamwork, and communication. (This used to be the only option.)
-- **Option #2 (new):** A real project. Candidates get a list of real issues on open source libraries that Sourcegraph actually uses. They pick the one that sounds most interesting to them. 
+- **Option #2 (new):** A real project. Candidates get a list of real issues on open source libraries that Sourcegraph actually uses. They pick the one that sounds most interesting to them.
 
-The project (option 2) replaces some but not all interviews in the hiring process. It gives candidates an option to highlight their skills, work on their own schedules, work in their preferred environments, and show us how they work with others (especially how they respond to code reviews). 
+The project (option 2) replaces some but not all interviews in the hiring process. It gives candidates an option to highlight their skills, work on their own schedules, work in their preferred environments, and show us how they work with others (especially how they respond to code reviews).
 
-We’re aware that engineers are often asked to work on a project for a company as part of the interview process. It’s a significant time  commitment. To respect their time, anyone who does a project (option 2)  is compensated with a fixed payment for their efforts, regardless of the outcome of the interview. 
+We’re aware that engineers are often asked to work on a project for a company as part of the interview process. It’s a significant time  commitment. To respect their time, anyone who does a project (option 2)  is compensated with a fixed payment for their efforts, regardless of the outcome of the interview.
 
 ## The results
 So far it has been a success! We obviously can’t divulge many specifics without violating privacy, but here’s what we’ve learned:
@@ -39,7 +39,7 @@ So far it has been a success! We obviously can’t divulge many specifics withou
 
 Because the work is all open source, you can check out [one of our new teammate’s interview projects](https://sourcegraph.com/github.com/sourcegraph/go-langserver/-/commit/7f84cdc942f706cf3e36bdbd5c5bf6e1f8cb044b).
 
-We will always be learning and testing new ways to let great candidates show their skills. Our hope is that more choices helps us find more awesome teammates—and helps establish Sourcegraph as a company that's thoughtful about growing our team. 
+We will always be learning and testing new ways to let great candidates show their skills. Our hope is that more choices helps us find more awesome teammates—and helps establish Sourcegraph as a company that's thoughtful about growing our team.
 
 We'd love to hear your thoughts on these questions. Reach us on Twitter at [@srcgraph](https://twitter.com/srcgraph)!
 

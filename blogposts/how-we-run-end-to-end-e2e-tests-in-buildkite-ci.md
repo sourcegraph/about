@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: how-we-run-end-to-end-e2e-tests-in-buildkite-ci
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2z90IVNXxWqQgGggq4sOeO/399539c22c100b1797fa71026114bdd8/Screen_Shot_2018-09-10_at_4.46.47_PM.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2z90IVNXxWqQgGggq4sOeO/399539c22c100b1797fa71026114bdd8/Screen_Shot_2018-09-10_at_4.46.47_PM.png
 published: true
 ---
 
@@ -78,15 +78,15 @@ The `concurrency_group` and `concurrency_limit` settings here prevent other depl
 
 ## Writing an end-to-end test suite
 
-For the actual tests, we use [Puppeteer](https://github.com/GoogleChrome/puppeteer) - a lightweight library by Google to control a headless Google Chrome instance. It will navigate to pages, click elements, and assert that certain elements appear or have the right content.   Together with a test runner like [Mocha](https://mochajs.org/) that supports `async`/`await` in tests, it enables tests that are both easy to read and write. 
+For the actual tests, we use [Puppeteer](https://github.com/GoogleChrome/puppeteer) - a lightweight library by Google to control a headless Google Chrome instance. It will navigate to pages, click elements, and assert that certain elements appear or have the right content.   Together with a test runner like [Mocha](https://mochajs.org/) that supports `async`/`await` in tests, it enables tests that are both easy to read and write.
 
 ### Making assertions
 
-Being run against an actual deployment, end-to-end tests are subject to latency, so most actions and assertions need to account for variable loading times. That means it is not possible to, for example, programmatically click an element and directly assert that the desired effect occurred. Adding an artificial timeout between the action and the assertion doesn’t work well because the time that needs to be waited for can vary. If the delay is too short, then the test will fail when it should pass, but if the delay is too long then it slows down the entire test suite. A better approach is to retry every assertion a fixed number of times, with a small delay between every retry. The [`p-retry`](https://www.npmjs.com/package/p-retry) module from npm makes this very easy.
+Being run against an actual deployment, end-to-end tests are subject to latency, so most actions and assertions need to account for variable loading times. That means it is not possible to, for example, programmatically click an element and directly assert that the desired effect occurred. Adding an artificial timeout between the action and the assertion doesn't work well because the time that needs to be waited for can vary. If the delay is too short, then the test will fail when it should pass, but if the delay is too long then it slows down the entire test suite. A better approach is to retry every assertion a fixed number of times, with a small delay between every retry. The [`p-retry`](https://www.npmjs.com/package/p-retry) module from npm makes this very easy.
 
 Mocha’s `--retries` option is also helpful to prevent flakiness, but be aware that this might hide actual failures that only happen a fraction of the time.
 
-To make sure end-to-end tests are not accidently broken, we use special CSS classes prefixed with `e2e` for elements that are asserted on in tests.
+To make sure end-to-end tests are not accidentally broken, we use special CSS classes prefixed with `e2e` for elements that are asserted on in tests.
 
 ## Giving insight into failures with screenshots
 

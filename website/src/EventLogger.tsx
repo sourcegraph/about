@@ -3,211 +3,221 @@ class EventLogger {
      * Global convenience methods
      */
     public trackProductsDropdownClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'ProductsDropdownClicked', {
+        this.trackEvent('Pages', 'click', null, 'ProductsDropdownClicked', {
             location_on_page: loc,
         })
     }
     public trackServerLinkClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'ServerLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'ServerLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackCodeSearchLinkClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'CodeSearchLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'CodeSearchLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackCodeIntelligenceLinkClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'CodeIntelligenceLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'CodeIntelligenceLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackSavedQueriesLinkClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'SavedQueriesLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'SavedQueriesLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackIntegrationsLinkClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'IntegrationsLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'IntegrationsLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackDataCenterLinkClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'DataCenterLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'DataCenterLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackAboutClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'AboutLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'AboutLinkClicked', {
+            location_on_page: loc,
+        })
+    }
+    public trackProductClicked(loc: any): void {
+        this.trackEvent('Pages', 'click', null, 'ProductLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackPricingClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'PricingLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'PricingLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackBlogClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'BlogLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'BlogLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackDocsClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'DocsLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'DocsLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackChangelogClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'ChangelogLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'ChangelogLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackCareersClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'CareersLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'CareersLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackSecurityClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'SecurityLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'SecurityLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackTermsClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'TermsLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'TermsLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackPrivacyClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'PrivacyLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'PrivacyLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackDocsServerTabClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'DocsServerTabClicked', {})
+        this.trackEvent('Pages', 'click', null, 'DocsServerTabClicked', {})
     }
     public trackDocsDataCenterTabClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'DocsDataCenterTabClicked', {})
+        this.trackEvent('Pages', 'click', null, 'DocsDataCenterTabClicked', {})
     }
     public trackDocsIntegrationsTabClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'DocsIntegrationsTabClicked', {})
+        this.trackEvent('Pages', 'click', null, 'DocsIntegrationsTabClicked', {})
     }
     public socialMediaClicked(site: any): void {
-        this.trackEvent('Pages', 'Click', null, 'SocialMediaLinkClicked', { site })
+        this.trackEvent('Pages', 'click', null, 'SocialMediaLinkClicked', { site })
     }
     public trackIntegrationInstallClicked(category: any, integration: any, loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'IntegrationInstallClicked', {
+        this.trackEvent('Pages', 'click', null, 'IntegrationInstallClicked', {
             integrationCategory: category,
             integration,
             location_on_page: loc,
         })
     }
     public trackDeepLinkRedirectDownloadClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'DeepLinkRedirectDownloadClicked', {})
-    }
-    public trackRequestSearchDemoClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'RequestSearchDemoClicked', {})
+        this.trackEvent('Pages', 'click', null, 'DeepLinkRedirectDownloadClicked', {})
     }
     public trackStartServerFreeTrialClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'StartServerFreeTrialClicked', {})
+        this.trackEvent('Pages', 'click', null, 'StartServerFreeTrialClicked', {})
     }
     public trackSearchPublicCodeClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'SearchPublicCodeClicked', {
+        this.trackEvent('Pages', 'click', null, 'SearchPublicCodeClicked', {
             location_on_page: loc,
         })
     }
     public tryCodeIntelligenceClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'TryCodeIntelligenceClicked', {
+        this.trackEvent('Pages', 'click', null, 'TryCodeIntelligenceClicked', {
             location_on_page: loc,
         })
     }
     public trackContactUsCTAClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'ContactUsLinkClicked', {
+        this.trackEvent('Pages', 'click', null, 'ContactUsLinkClicked', {
             location_on_page: loc,
         })
     }
     public trackHomepageCTAClicked(buttonType: any, loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'HomepageCTAClicked', {
+        this.trackEvent('Pages', 'click', null, 'HomepageCTAClicked', {
             button_type: buttonType,
             location_on_page: loc,
         })
     }
     public trackInstallSourcegraphServerCTAClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'InstallSourcegraphServerCTAClicked', {
+        this.trackEvent('Pages', 'click', null, 'InstallSourcegraphServerCTAClicked', {
             location_on_page: loc,
         })
     }
     public trackDocumentationCTAClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'DocumentationCTAClicked', {
+        this.trackEvent('Pages', 'click', null, 'DocumentationCTAClicked', {
             location_on_page: loc,
         })
     }
     public trackInstallBrowserExtensionCTAClicked(loc: any): void {
-        this.trackEvent('Pages', 'Click', null, 'InstallBrowerExtensionCTAClicked', {
+        this.trackEvent('Pages', 'click', null, 'InstallBrowerExtensionCTAClicked', {
             location_on_page: loc,
         })
     }
     public trackHompageNavRowButtonClicked(buttonType: any): void {
-        this.trackEvent('Pages', 'Click', null, 'HomepageNavRowButtonClicked', {
+        this.trackEvent('Pages', 'click', null, 'HomepageNavRowButtonClicked', {
             button_type: buttonType,
         })
     }
     public trackInstallServerCommandHighlighted(loc: any): void {
-        this.trackEvent('Pages', 'Select', null, 'InstallServerCommandHighlighted', {
+        this.trackEvent('Pages', 'click', null, 'InstallServerCommandHighlighted', {
             location_on_page: loc,
         })
     }
     public trackInstallCodeIntelligenceCommandHighlighted(loc: any): void {
-        this.trackEvent('Pages', 'Select', null, 'InstallCodeIntelligenceCommandHighlighted', {
+        this.trackEvent('Pages', 'click', null, 'InstallCodeIntelligenceCommandHighlighted', {
             location_on_page: loc,
         })
     }
     public trackContactUsFormSubmitted(): void {
-        this.trackEvent('Pages', 'Submit', null, 'ContactUsFormSubmitted', {})
+        this.logConversion()
+        this.trackEvent('Pages', 'click', null, 'ContactUsFormSubmitted', {})
     }
-
+    public trackDemoFormSubmitted(): void {
+        this.logConversion()
+        this.trackEvent('Pages', 'click', null, 'DemoFormSubmitted', {})
+    }
+    public trackRequestDemoActionFormSubmitted(): void {
+        this.trackEvent('Pages', 'click', null, 'RequestDemoActionFormSubmitted', {})
+    }
+    public trackAutomationDemoFormSubmitted(): void {
+        this.logConversion()
+        this.trackEvent('Pages', 'click', null, 'AutomationDemoFormSubmitted', {})
+    }
     public trackHackathonFormSubmitted(): void {
-        this.trackEvent('Pages', 'Submit', null, 'HackathonFormSubmitted', {})
+        this.trackEvent('Pages', 'click', null, 'HackathonFormSubmitted', {})
+    }
+    public trackDotGoFormSubmitted(): void {
+        this.trackEvent('Pages', 'click', null, 'DotGoFormSubmitted', {})
+    }
+    public trackStrangeLoopFormSubmitted(): void {
+        this.trackEvent('Pages', 'click', null, 'StrangeLoopFormSubmitted', {})
     }
     public trackBuyUnlimitedButtonClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'BuyUnlimitedButtonClicked', {})
+        this.trackEvent('Pages', 'click', null, 'BuyUnlimitedButtonClicked', {})
     }
     public trackBuyEnterpriseButtonClicked(): void {
-        this.trackEvent('Pages', 'Click', null, 'BuyEnterpriseButtonClicked', {})
+        this.trackEvent('Pages', 'click', null, 'BuyEnterpriseButtonClicked', {})
     }
-
+    public trackAutomationSeeItInActionButtonClicked(): void {
+        this.trackEvent('Pages', 'click', null, 'AutomationSeeItInActionButtonClicked', {})
+    }
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {
-        let props = { ...eventProps }
-        if ((window as any).telligent) {
-            props = {
-                ...props,
-                eventCategory: category,
-                eventAction: action,
-                eventFeature: feature,
-                eventLabel: label,
-                platform: 'Web',
-                path_name:
-                    window && window.location && window.location.pathname ? window.location.pathname.slice(1) : '',
-                static: true,
-            }
-            ;(window as any).telligent('track', action, props)
+        if (window && (window as any).gtag) {
+            ;(window as any).gtag('event', action, { event_category: category, event_label: label })
         }
-        if ((window as any).ga) {
-            ;(window as any).ga('send', {
-                hitType: 'event',
-                eventCategory: category || '',
-                eventAction: action || '',
-                eventLabel: label,
-            })
-        }
-        this.logToConsole(label, props)
+        this.logToConsole(label)
     }
-
-    public logToConsole(eventName: string, object: object): void {
+    public trackCaeStudyDownloadPDFClicked(customer: string): void {
+        this.trackEvent('Pages', 'click', null, `CaseStudyDownloadPDFButtonClicked`, { caseStudy: customer })
+    }
+    public logToConsole(eventName: string): void {
         const eventLogDebug = typeof localStorage !== 'undefined' && localStorage.getItem('eventLogDebug') !== null
         if (eventLogDebug) {
-            console.log('%cEVENT %s', 'color: #aaa', eventName, object)
+            console.log('%cEVENT %s', 'color: #aaa', eventName)
+        }
+    }
+    public logConversion(): void {
+        if (window && (window as any).gtag) {
+            ;(window as any).gtag('event', 'conversion', {
+                send_to: 'AW-868484203/aCNZCLa7gbEBEOuIkJ4D',
+                // event_callback: callback
+            })
         }
     }
 }
-
 export const eventLogger = new EventLogger()

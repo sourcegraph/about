@@ -6,14 +6,14 @@ tags: [
   "graphql"
 ]
 slug: graphql-productivity
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1AloAOmXha8oKe0EkcISKC/a14414add35b3879f02aa3331e70cc4a/abhi-aiyer.jpg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1AloAOmXha8oKe0EkcISKC/a14414add35b3879f02aa3331e70cc4a/abhi-aiyer.jpg
 published: true
 ---
 
 
 Abhi Aiyer [@abhiaiyer](https://twitter.com/abhiaiyer) Senior Software Engineer @ Workpop
 
-Abhi is a life architect, but has mainly used his talents for technology. He used to love Object Oriented Problem Solving, but now finds himself in the functional world…"Schemin". Technology is not only a passion but an outlet for creative lateral thinking. Abhi is JavaScript developer with growing experience in NodeJS, React, and GraphQL. He currently hosts of GraphQL Radio and contributes tutorial content for How To GraphQL.
+Abhi is a life architect, but has mainly used his talents for technology. He used to love Object Oriented Problem Solving, but now finds himself in the functional world…"Schemin". Technology is not only a passion but an outlet for creative lateral thinking. Abhi is JavaScript developer with growing experience in Node.js, React, and GraphQL. He currently hosts of GraphQL Radio and contributes tutorial content for How To GraphQL.
 
 Stages of Schema First DevelopmentLast year Daniel talks about these 3 things that looks like this![](https://d2mxuefqeaa7sj.cloudfront.net/s_8BA9FC874D3E7ED0D40192D2B2970C884F13EC0698D6926808459705F453E563_1508967501600_Screenshot\+2017-10-25\+14.37.44.png)But it really looks like this.![](https://d2mxuefqeaa7sj.cloudfront.net/s_8BA9FC874D3E7ED0D40192D2B2970C884F13EC0698D6926808459705F453E563_1508967519947_Screenshot\+2017-10-25\+14.37.49.png)\
 **Types & Codegen & Review**\
@@ -24,7 +24,7 @@ You should organize your types into its own code structure and take time to revi
 Define your schema
 
     import faker from 'faker';
-    
+
     export const typeDefs = `
       type Query {
         name: String
@@ -33,7 +33,7 @@ Define your schema
         query: Query
       }
     `;
-    
+
     export const mockResolvers = {
       Query: () => {
         return {
@@ -46,32 +46,32 @@ Define your schema
 
 * decorator
 
-    
+
     import { configure, addDecorator } from '@storybook/react';
     import apolloStorybookDecorator from 'apollo-storybook-decorator';
-    
+
     addDecorator(
       apolloStorybookDecorator({
         typeDefs,
         mocks,
       })
     );
-    
+
     function loadStories() {
       require('../stories/index.js');
     }
-    
+
     configure(loadStories, module);
-    
+
 
 * write a storybook story.
 
-    
+
     import React from 'react';
     import { graphql } from 'react-apollo';
     import gql from 'graphql-tag';
     import { storiesOf } from '@storybook/react';
-    
+
     let HelloWorld = function HelloWorld({ data }) {
       const name = data && data.name;
       if (data && data.loading) {
@@ -83,18 +83,18 @@ Define your schema
         </h1>
       );
     };
-    
+
     const query = gql`
       query hello {
         name
       }
     `;
-    
+
     HelloWorld = graphql(query)(HelloWorld);
-    
+
     storiesOf('Apollo Storybook Example', module)
       .add('A simple component for GraphQL Summit', () => {
         return <HelloWorld />;
       });
-    
-    
+
+

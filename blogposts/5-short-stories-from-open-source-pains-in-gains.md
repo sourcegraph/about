@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: 5-short-stories-from-open-source-pains-in-gains
-heroImage: //images.ctfassets.net/le3mxztn6yoo/6hTNJKUymQkogSUaKGaCu2/436c99c4b8afb55c302fbf8079e6d562/1_3eFc2KNwHBjrHFpD_vjbhA.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/6hTNJKUymQkogSUaKGaCu2/436c99c4b8afb55c302fbf8079e6d562/1_3eFc2KNwHBjrHFpD_vjbhA.jpeg
 published: true
 ---
 
@@ -41,7 +41,7 @@ At one point, Jason was spending all his time answering GitHub Issues instead of
 
 An obvious solution was just to spend less time on Issues, but that’s bad, because users feel ignored and post mean memes to your project.
 
-An better strategy is to ask for clarification instead of trying to guess what an issue reporter is trying to say. “Can you elaborate? What did you mean by X?” This doesn’t take a lot of your time, but shows that you are super responsive.
+An better strategy is to ask for clarification instead of trying to guess what an issue reporter is trying to say. “Can you elaborate? What did you mean by X?” This doesn't take a lot of your time, but shows that you are super responsive.
 
 Asking for clarification tells a user you are responsive to their needs, so they will in turn reciprocate by investing time into composing a more detailed description of their issue. If you’re lucky, they may even end up answering their own questions.
 
@@ -67,7 +67,7 @@ Open source projects die or fade for a variety of reasons: maintainers move on, 
 
 *   It might be depended on by something somewhere
 *   Security and trust are important values of open source and to ensure these, the code needs to be kept up to date.
-*   There’s potential to build new features and fix new bugs that can benefit others.
+*   There's potential to build new features and fix new bugs that can benefit others.
 
 How can you start?
 
@@ -80,7 +80,7 @@ Even if a community is dormant, they can still be woken up and act as a team. Bi
 
 ![1*O9cLEjpyzkAXgqCBsLTkEA](//images.contentful.com/le3mxztn6yoo/6hf0VLR2gMcO2ySoCKk8WC/77e6591edde86e487d8c331e2a22bd1e/1_O9cLEjpyzkAXgqCBsLTkEA.jpeg)
 
-Open source is everywhere, but change is still frightening. Imagine you’ve discovered a great open-source project, but it’s still unknown to the stakeholders in your org.
+Open source is everywhere, but change is still frightening. Imagine you've discovered a great open-source project, but it’s still unknown to the stakeholders in your org.
 
 > Fighting for open source is a lot like Street Fighter.
 

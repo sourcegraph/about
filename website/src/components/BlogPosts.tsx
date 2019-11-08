@@ -1,4 +1,5 @@
 import { Link } from 'gatsby'
+import truncate from 'lodash/truncate'
 import * as React from 'react'
 
 interface BlogPostsProps {
@@ -30,24 +31,22 @@ export default class BlogPosts extends React.Component<any, any> {
                     (post: any, i: number) =>
                         postIsComplete(post) && (
                             <Link
-                                // HACK: to make the GopherCon 2018 root post appear on both /go and /blog
-                                to={
-                                    post.node.slug === 'sourcegraph-liveblogging-at-gophercon-2018'
-                                        ? `/blog/${post.node.frontmatter.slug}`
-                                        : `/${this.props.blogType}/${post.node.frontmatter.slug}`
-                                }
+                                to={`/${this.props.blogType}/${post.node.frontmatter.slug}`}
                                 key={i}
+                                className="text-decoration-none"
                             >
                                 <div className="blog__posts--container" role="article">
                                     <div className="blog__posts--post">
                                         <div className="blog__posts--post-text">
-                                            <h1 className="blog__posts--post-title">{post.node.frontmatter.title}</h1>
+                                            <h2 className="blog__posts--post-title">{post.node.frontmatter.title}</h2>
                                             <div className="blog__posts--post-byline">
                                                 by {post.node.frontmatter.author} on {post.node.frontmatter.publishDate}
                                             </div>
                                             <div className="blog__posts--post-excerpt">
                                                 <p>
-                                                    {post.node.excerpt}{' '}
+                                                    {post.node.frontmatter.description
+                                                        ? truncate(post.node.frontmatter.description, { length: 300 })
+                                                        : post.node.excerpt}{' '}
                                                     <span className="blog__posts--post-readmore">Read more</span>
                                                 </p>
                                             </div>

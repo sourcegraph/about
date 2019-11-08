@@ -6,7 +6,7 @@ tags: [
   "graphql"
 ]
 slug: handling-authentication-and-authorization-in-graphql
-heroImage: //images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png
 published: true
 ---
 
@@ -100,7 +100,7 @@ const checkScopeAndResolve = (scope, expectedScope, controller) => {
 
   const resolvers = {
     Query: {
-      articlesByAuthor: (_, args, context) 
+      articlesByAuthor: (_, args, context)
         => checkScopeAndResolve(
              context.user.scope,
              ['read:articles'],
@@ -159,7 +159,7 @@ We can use custom directives on our server:
 ```js
 
   const typeDefs = `
-    
+
     directive @isAuthenticated on QUERY | FIELD
     directive @hasScope(scope: [String]) on QUERY | FIELDtypeArticle {
       id: ID!

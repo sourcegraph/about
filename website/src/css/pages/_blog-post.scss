@@ -1,17 +1,19 @@
+// stylelint-disable declaration-property-unit-whitelist
 .blog-post {
     margin: auto;
-    width: 980px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    // FIXME(#125): temporary solution to text running over.
+    // width: 980px;
+    padding: 45px 0;
 
     &__wrapper {
         width: 66.667%;
         margin: auto;
+        max-width: 740px; // Copied from medium.com
     }
 
     &__title {
         &--rule {
-            margin: 65px 0;
+            margin: 25px 0;
         }
     }
 
@@ -19,7 +21,8 @@
         p {
             margin: 1rem 0;
         }
-        li > p:first-child, li > p:last-child {
+        li > p:first-child,
+        li > p:last-child {
             margin: 0;
         }
 
@@ -40,15 +43,24 @@
         ol + h5,
         p + h6,
         ul + h6,
-        ol + h6 {
+        ol + h6,
+        h2 + ul,
+        h2 + ol,
+        h3 + ul,
+        h3 + ol {
             margin-top: 1.4em;
         }
 
         h1,
         h2,
-        h3 {
+        h3,
+        h4 {
             margin-top: 1rem;
             margin-bottom: 0;
+        }
+
+        h4 {
+            font-size: 1.25rem;
         }
 
         img {
@@ -57,25 +69,45 @@
             padding: 0.25rem;
             margin: 0.5rem 0;
         }
-    }
 
-    @media (max-width: $media-lg) {
-        width: 692px;
-        &__wrapper {
-            width: 83.3333%;
-        }
-    }
+        .liveblog-presenters {
+            &__name {
+                display: block;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
 
-    @media (max-width: $media-md) {
-        width: 87.5%;
-    }
+            .fa {
+                color: $dark;
+                font-size: 2rem;
 
-    @media (max-width: $media-sm) {
-        width: 100%;
-        &__title {
-            h1 {
-                font-size: 28px;
+                &.fa-linkedin {
+                    color: #0077b5;
+                }
+
+                &.fa-twitter {
+                    color: #1da1f2;
+                }
+
+                &.fa-github {
+                    color: #211f1f;
+                }
             }
         }
+    }
+
+    p > code[class*='language-'],
+    a > code[class*='language-'],
+    h1 > code[class*='language-'],
+    h2 > code[class*='language-'],
+    h3 > code[class*='language-'],
+    h4 > code[class*='language-'],
+    li > code[class*='language-'],
+    strong > code[class*='language-'] {
+        background-color: #f2f4f8;
+        color: #2d2d2d;
+        display: inline-block;
+        padding: 0.1rem 0.3rem;
+        font-size: 0.9em;
     }
 }

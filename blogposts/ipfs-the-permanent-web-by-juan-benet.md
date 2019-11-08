@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: ipfs-the-permanent-web-by-juan-benet
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1fNup8iuU2QgGIwAgW8Ewq/cbe19d0788e06e89350e22e06127fdc9/0-RsrS68m6tNt9Yazz.jpeg
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1fNup8iuU2QgGIwAgW8Ewq/cbe19d0788e06e89350e22e06127fdc9/0-RsrS68m6tNt9Yazz.jpeg
 published: true
 ---
 
@@ -32,7 +32,7 @@ IPFS envisions a world where any resource is available via a locally mounted fil
 <pre name="d756" id="d756" class="graf graf--pre graf-after--pre"># or a permanent path
 /ipfs/QmaKtFK3wiq9z2LmhMKgoXvuB4XDeY5Xrac8vVBLPjc9CX/some/file.txt</pre>
 
-But this file doesn’t necessarily reside on the local disk. Instead, it exists in IPFS, a global distributed storage system. IPFS makes files in this namespace:
+But this file doesn't necessarily reside on the local disk. Instead, it exists in IPFS, a global distributed storage system. IPFS makes files in this namespace:
 
 *   **highly available**, so they can be fetched from any host that stores and is willing to provide the data, not just their originator or owner
 *   **fast to access**, so you can treat the /ipns and /ipfs filesystems as local storage instead of remote servers, as in HTTP. In fact, nodes chose which files they store locally

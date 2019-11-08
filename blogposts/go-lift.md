@@ -6,7 +6,7 @@ tags: [
   "dotGo"
 ]
 slug: go-lift
-heroImage: //images.ctfassets.net/le3mxztn6yoo/1BO7zPl9haGeiWKoeMsuMq/5b02056f1204f5f115e43f5636bbd77c/Screen_Shot_2017-11-06_at_15.26.47.png
+heroImage: https://images.ctfassets.net/le3mxztn6yoo/1BO7zPl9haGeiWKoeMsuMq/5b02056f1204f5f115e43f5636bbd77c/Screen_Shot_2017-11-06_at_15.26.47.png
 published: true
 ---
 
@@ -17,14 +17,14 @@ Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us 
 ## Part 1: Constant Interruptions
 
 * Connect to the server
-* Send first command 
+* Send first command
 * Wait for ok
 * Send second command
 
 
 `conn := net.Dial("tcp", "server:9876")`
 
-What if this goes wrong? 
+What if this goes wrong?
 
 `conn, err := net.Dial("tcp", "server"9876")`
 
@@ -42,7 +42,7 @@ What if this goes wrong?
 
 * Not really the network
 * An abstraction
-* A value 
+* A value
 * ...containing data about the connection
 * ...and behavior to use it
 * Determined by the _type_
@@ -76,7 +76,7 @@ c.write(command2) // then this does nothing
 if c.err != nil {
   panic("omg")
 }
-``` 
+```
 
 Repeat for other errors
 
@@ -114,7 +114,7 @@ func divide(a, b, c int) {
   fmt.Println(answer)
 }
 
-divide(100, 10, 2) // 5 
+divide(100, 10, 2) // 5
 divide(100, 10, 0) // panic: runtime error: integer divide by zero
 ```
 
@@ -161,7 +161,7 @@ func (d *Divideinator) divide(X int) {
 }
 ```
 
-Wrap the conditional: 
+Wrap the conditional:
 
 ```go
 func (d *Divideinator) divide(x int) {
@@ -170,13 +170,13 @@ func (d *Divideinator) divide(x int) {
     return
   }
   d.answer = d.answer / x
-  
-  
+
+
 func (d Divideinator) String() string {
   if d.isZero {
     return fmt.Sprintf("Can't divide by zero")
   }
-  
+
   return fmt.Sprintf("%d", d.answer)
 ```
 
@@ -197,12 +197,12 @@ divide(100, 10, 0)
 // Can't divide by zero
 ```
 This is the same approach as error handling:
-* Create a new type 
+* Create a new type
 * Wrap the initial value
 * Wrap the behavior
 * Wrap the conditional
 
-To understand this let's look at the shape of the code. 
+To understand this let's look at the shape of the code.
 
 ![Cinnamond-1](//images.contentful.com/le3mxztn6yoo/1A5LJ10wBeGGG8SUkoyK0E/89724b388f35c00fee0ac37c94ed7095/Screen_Shot_2017-11-05_at_7.54.42_PM.png)
 
@@ -228,20 +228,20 @@ John has been working on a new project http://doesgohavegenericsyet.com
 ```go
 func signupHandler(w http.ResponseWriter, r *http.Request) {
   email := r.FormValue("email")
-  
+
   if !validateEmail(email) {
     logRequest("invalid email", r)
     htpp.Error(w, ...)
     return
   }
-  
+
   if alreadyRegistered(email) {
     sellEmailToRecruiters(email)
     logRequest("already registered", r)
     http.Error(w, ...)
     return
   }
-  
+
   if err := register(email); err != nil {
     sellEmailToRecruiters(email)
     logRequest("registration failed", r)
@@ -301,7 +301,7 @@ func (s *SignupRequest) checkNewRegistration() {
   if s.err != nil {
     return
   }
-  
+
   if existingEmails.Contain(s.email) {
     s.err = "already registered"
   }
