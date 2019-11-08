@@ -22,3 +22,5 @@ If you need me to review something (such as a blog post or plan), please state:
 - What input you need from me
 
 This is to avoid me jumping in and making low-level wording fixes when you're looking for high-level strategy input.
+
+If the document to be reviewed isn't private, please post the review request with the context above [publicly](../communication.md). Other people involved may have relevant context of their own to share.
