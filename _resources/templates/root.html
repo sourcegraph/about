@@ -7,13 +7,13 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 			{{block "head" .}}{{end}}
 		</head>
-		<body {{with .Content}}data-path="{{.Path}}"{{end}} class="is-docsite">
+		<body>
 			<header id="header">
 				<div class="container">
 					<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" /></a>
 					<nav>
-						<form id="search-form" onsubmit="location.href = 'https://www.google.com/search?ie=UTF-8&q=site%3Aabout.sourcegraph.com+'+encodeURIComponent(document.getElementById('search').value);return false">
-							<input type="text" id="search" placeholder="Search handbook..." spellcheck="false" />
+						<form id="search-form" method="get" action="/search">
+							<input type="text" id="search" name="q" value="{{block "query" .}}{{end}}" placeholder="Search handbook..." spellcheck="false" />
 							<button id="search-button" type="submit">Search</button>
 						</form>
 						<a href="https://about.sourcegraph.com">About</a>
