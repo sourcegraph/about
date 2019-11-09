@@ -43,3 +43,9 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   to = "https://f155c4ab.ngrok.io/retrospectives/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/search"
+  to = "https://f155c4ab.ngrok.io/search"
+  status = 200
+  force = true
