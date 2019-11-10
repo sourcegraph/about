@@ -36,24 +36,3 @@
 		</body>
 	</html>
 {{end}}
-
-{{define "index"}}
-	{{with (or (and (eq (len .Doc.Tree) 1) (index .Doc.Tree 0).Children) .Doc.Tree)}}
-		<h4 class="visible-sm">{{$.Doc.Title}}</h4>
-		<h4 class="visible-lg">On this page:</h4>
-		<ul>{{template "doc_nav" .}}</ul>
-	{{end}}
-	<a class="page-btn" href="https://github.com/sourcegraph/about/edit/master/{{.FilePath}}">Edit this page</a>
-	<a class="page-btn" href="https://sourcegraph.com/github.com/sourcegraph/about@master/-/blob/{{.FilePath}}#tab=history">History</a>
-{{end}}
-{{define "doc_nav"}}
-	{{range .}}
-		<li>
-			<a href="{{.URL}}">{{.Title}}</a>
-			{{with .Children}}
-				<ul>
-					{{template "doc_nav" .}}
-				</ul>
-			{{end}}
-	{{end}}
-{{end}}
