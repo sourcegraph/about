@@ -15,14 +15,23 @@
 		<ol class="document-results">
 			{{range $dr := .Result.DocumentResults}}
 			<li class="document-result">
-				<h2 class="document-result-title"><a href="/{{$dr.ID|printf "%s"|nomd}}">{{highlight ($dr.ID|printf "%s"|nomd)}}</a></h2>
-				<span class="document-result-path">{{highlight ($dr.ID|printf "%s"|nomd)}}</span>
+				<h2 class="document-result-title"><a href="{{$dr.URL}}">{{with $dr.Title}}{{highlight .}}{{else}}Untitled{{end}}</a></h2>
+				<span class="document-result-path">{{highlight (replace (trimPrefix $dr.URL "/") "/" " › " -1)}}</span>
 				{{if $dr.SectionResults}}
 					<ol class="section-results">
 					{{range $sr := $dr.SectionResults}}
 						<li class="section-result">
 							{{if $sr.ID}}
-								<h3 class="section-result-title"><a href="/{{$dr.ID|printf "%s"|nomd}}#{{$sr.ID}}">{{highlight $sr.ID}}</a>{{if $sr.Excerpts}}:{{end}}</h3>
+								<h3 class="section-result-title">
+									<a href="{{$dr.URL}}{{with $sr.ID}}#{{.}}{{end}}">
+										{{range $i, $titleEntry := $sr.TitleStack}}
+											{{if ge $i 2}}
+												{{highlight $titleEntry}}
+												{{if ne $i (subtract (len $sr.TitleStack) 1)}}›{{end}}
+											{{end}}
+										{{end}}
+									</a>
+								</h3>
 							{{end}}
 							{{if $sr.Excerpts}}
 								{{range (slice $sr.Excerpts 0 1)}}
@@ -38,25 +47,4 @@
 		</ol>
 		{{end}}
 	</section>
-{{end}}
-
-{{define "index"}}
-	{{with (or (and (eq (len .Doc.Tree) 1) (index .Doc.Tree 0).Children) .Doc.Tree)}}
-		<h4 class="visible-sm">{{$.Doc.Title}}</h4>
-		<h4 class="visible-lg">On this page:</h4>
-		<ul>{{template "doc_nav" .}}</ul>
-	{{end}}
-	<a class="page-btn" href="https://github.com/sourcegraph/about/edit/master/{{.FilePath}}">Edit this page</a>
-	<a class="page-btn" href="https://sourcegraph.com/github.com/sourcegraph/about@master/-/blob/{{.FilePath}}#tab=history">History</a>
-{{end}}
-{{define "doc_nav"}}
-	{{range .}}
-		<li>
-			<a href="{{.URL}}">{{.Title}}</a>
-			{{with .Children}}
-				<ul>
-					{{template "doc_nav" .}}
-				</ul>
-			{{end}}
-	{{end}}
 {{end}}
