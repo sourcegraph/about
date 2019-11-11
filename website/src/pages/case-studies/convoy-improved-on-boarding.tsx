@@ -40,7 +40,7 @@ export default ((props: any) => (
                         <a href="https://about.sourcegraph.com/blog/from-saas-to-on-premises">
                             on-prem and self-hosted product
                         </a>
-                        , he could safely and independently set up a Sourcegraph instance locally and was able to get
+                        , he could safely and independently set up a Sourcegraph instance locally, and was able to get
                         everything up and running within a matter of minutes. Suddenly, searching across hundreds of
                         repositories returned exact results and code affected by any changes became fully traceable
                     </p>
