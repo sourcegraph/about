@@ -34,7 +34,7 @@ export default ((props: any) => (
                     </p>
                     <p>
                         With Sourcegraph, Convoy’s data scientists can trace back how and when data is written to the
-                        databases and model endpoints are invoked. They can keep track of Convoy’s ever transforming
+                        databases and model endpoints are invoked. They can keep track of Convoy’s ever-transforming
                         data warehouse.
                     </p>
                     <InContentBlockquote
