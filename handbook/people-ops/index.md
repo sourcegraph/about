@@ -1,5 +1,6 @@
 # People Ops
 
+- [Spending company money](spending_company_money.md)
 - [Travel](travel.md)
 
 ## [Roles](roles.md)

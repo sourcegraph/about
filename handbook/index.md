@@ -14,6 +14,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## People Ops
 
 - [People Ops](people-ops/index.md)
+  - [Spending company money](people-ops/spending_company_money.md)
   - [Leadership](leadership/index.md)
   - [1-1](leadership/1-1.md)
 
