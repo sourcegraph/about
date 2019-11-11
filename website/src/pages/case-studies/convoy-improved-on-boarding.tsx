@@ -46,7 +46,7 @@ export default ((props: any) => (
                     </p>
                     <p>
                         It didn’t take long for other engineers in his team to realize the immense benefits Sourcegraph
-                        provided when it came to understanding Convoy’s broad and growing code base.
+                        provided when it came to understanding Convoy’s growing code base.
                     </p>
                     <InContentBlockquote
                         quote="It's helped me out a lot. Made going through other people's code much easier and was better for learning different patterns used in other repos."
