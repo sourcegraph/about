@@ -17,4 +17,4 @@
 1.  Product and development updates
 1.  Other announcements
     - Also share these announcements in #general.
-1.  IQ&A (internal questions and answers)
+1.  Q&A (questions and answers about anything company-wide)
