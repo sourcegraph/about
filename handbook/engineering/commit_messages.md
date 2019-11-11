@@ -23,9 +23,9 @@ It should be prefixed by the the area of code that was affected, eg `web:`, `cmd
 
 The subject should always be able to complete the sentence: `This commit will`
 
-Instead of "Fixed a bug in XYZ", "Fix bug in XYZ"
+Prefer "Fix bug in XYZ" over "Fixed a bug in XYZ"
 
-Or, instead of "Changing behavior of X", "Change behavior of X"
+Prefer "Change behavior of X" over "Changing behavior of X"
 
 ## Body
 
