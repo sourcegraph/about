@@ -53,7 +53,7 @@ export default ((props: any) => (
                         author="Aamir Jawaid, Software Engineer, Convoy"
                     />
                     <InContentBlockquote
-                        quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives and self-service during their investigations."
+                        quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
                         author="Owen Kim, Senior Software Engineer, Convoy"
                     />
                     <p>
