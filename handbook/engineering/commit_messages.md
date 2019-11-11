@@ -30,9 +30,9 @@ TBD
 
 Links to any related RFCs should be included at the end of the commit, one per line.
 
-### Github issues
+### GitHub issues
 
-Links to any related Github issues should appear at the end of the commit message, one per line.
+Links to any related GitHub issues should appear at the end of the commit message, one per line.
 
 ## Enforcing rules
 
