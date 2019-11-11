@@ -12,7 +12,7 @@ To get some background, please read [How to Write a Git Commit Message](https://
 4. Do not end the subject line with a period
 5. Use the imperative mood in the subject line
 6. Wrap the body at 72 characters
-7. Use the body to explain what and why vs. how
+7. Use the body to explain what and why instead of how
 
 ## Subject line
 
