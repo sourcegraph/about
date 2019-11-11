@@ -10,7 +10,7 @@ To get some background, please read [How to Write a Git Commit Message](https://
 2. Limit the subject line to 50 characters
 3. Capitalize the subject line
 4. Do not end the subject line with a period
-5. Use the imperative mood in the subject line
+5. Use the imperative mood in the subject line (See examples below)
 6. Use the body to explain what and why instead of how
 
 ## Subject line
@@ -18,6 +18,14 @@ To get some background, please read [How to Write a Git Commit Message](https://
 The subject line should be concise and easy to visually scan in a list of commits, giving context around what code has changed.
 
 It should be prefixed by the the area of code that was affected, eg `web:`, `cmd/searcher:`
+
+### Imperative mood
+
+The subject should always be able to complete the sentence: `This commit will`
+
+Instead of "Fixed a bug in XYZ", "Fix bug in XYZ"
+
+Or, instead of "Changing behavior of X", "Change behavior of X"
 
 ## Body
 
