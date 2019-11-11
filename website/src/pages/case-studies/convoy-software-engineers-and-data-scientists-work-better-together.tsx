@@ -29,7 +29,7 @@ export default ((props: any) => (
                     <p>
                         Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater
                         efficiency and improved data integrity. Sourcegraph's multi-repository company-wide code search
-                        and navigation, enables data scientists to analyze and verify data transformation code
+                        and navigation enables data scientists to analyze and verify data transformation code
                         independently, and at any time.
                     </p>
                     <p>
