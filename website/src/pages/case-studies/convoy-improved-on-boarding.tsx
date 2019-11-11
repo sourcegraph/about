@@ -54,7 +54,7 @@ export default ((props: any) => (
                     />
                     <InContentBlockquote
                         quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives and self-service during their investigations."
-                        author="Owen Kim - Senior Software Engineer, Convoy"
+                        author="Owen Kim, Senior Software Engineer, Convoy"
                     />
                     <p>
                         The usage grew organically and so did the speed in which they were able to ship solutions for
