@@ -2,8 +2,6 @@
 
 Having consistent commit messages makes it easier to see at a glance what code has been affected by recent changes. It also makes it easier to search through our commit history.
 
-The body should contain
-
 To get some background, please read [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 
 ## General guidelines
@@ -21,6 +19,10 @@ To get some background, please read [How to Write a Git Commit Message](https://
 The subject line should be concise and easy to visually scan in a list of commits, giving context around what code has changed.
 
 It should be prefixed by the the area of code that was affected, eg `web:`, `cmd/searcher:`
+
+## Body
+
+TBD
 
 ## Metadata
 
