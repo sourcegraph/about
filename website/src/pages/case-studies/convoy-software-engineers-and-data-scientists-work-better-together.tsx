@@ -46,7 +46,7 @@ export default ((props: any) => (
                         Prior to using Sourcegraph, Convoy’s engineers had to clone repos locally in order to find
                         necessary data. This would cause problems, as Owen, a Senior Software Engineer, recalls:
                     </p>
-                    <InContentBlockquote quote="I was asked to provide the max size of our database connection pulls from our clients. To get this number I used my IDE to search through a repository I had cloned locally before. I didn’t notice that the repository was outdated and the data I was providing was already a few days old. It consisted of only half of the actual amount which led to a wrong estimation, overprovisioning of a fleet and messed up database connections. An expensive mistake." />
+                    <InContentBlockquote quote="I was asked to provide the max size of our database connection pulls from our clients. To get this number I used my IDE to search through a repository I had cloned locally before. I didn’t notice that the repository was outdated and the data I was providing was already a few days old. It consisted of only half of the actual amount which led to a wrong estimation, overprovisioning of a fleet, and messed up database connections. An expensive mistake." />
                     <InContentBlockquote
                         quote="
                         Now that we are using Sourcegraph, we don’t need to worry about data being out of date."
