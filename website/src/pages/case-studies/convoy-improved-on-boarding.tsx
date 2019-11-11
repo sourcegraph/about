@@ -62,7 +62,7 @@ export default ((props: any) => (
                     </p>
 
                     <InContentBlockquote
-                        quote="Fast, org-wide code search is a necessity in any organization, and tooling for this especially necessary when we’ve chosen a multi-repo approach to code organization.
+                        quote="Fast, org-wide code search is a necessity in any organization, and tooling for this is especially necessary when we’ve chosen a multi-repo approach to code organization.
                         The time I would otherwise spend using either GitHub’s slow search or finding and cloning repos is worth a lot more than $20 / month."
                         author="James Reggio, Principal Engineer, Convoy"
                     />
