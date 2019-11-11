@@ -70,7 +70,7 @@ Do:
 
 ## What makes an effective code review?
 
-Recommended reading:
+Please read:
 
 - [On code reviews](https://medium.com/@schrockn/on-code-reviews-b1c7c94d868c)
 - [Code Health: Respectful Reviews == Useful Reviews](https://testing.googleblog.com/2019/11/code-health-respectful-reviews-useful.html)
