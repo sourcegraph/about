@@ -6,6 +6,7 @@ import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySolution'
+import { GitLabIntegrationSection } from '../components/product/GitLabIntegrationSection'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
@@ -61,6 +62,7 @@ export default ((props: any) => (
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
+            <GitLabIntegrationSection />
             <ContentSection color="black">
                 <h2 className="text-center display-4 mb-5 mt-4">
                     Learn how Sourcegraph code search makes large scale refactoring possible
