@@ -35,7 +35,8 @@ Our OKR practices are heavily inspired by [GitLab's OKR practices](https://about
 We set OKRs for each quarter. The (rough) schedule for setting OKRs for an upcoming quarter is:
 
 - -3 weeks: CEO creates the upcoming quarter's OKR document with company-level goals (as a Google Doc for easy collaboration) and links it from this page.
-- -1 week: Each Sourcegraph team has written their team OKRs, and these OKRs have been approved by the owners of the OKRs above them.
+- -2 weeks: Each team adds proposed OKRs to the doc and solicits feedback from relevant stakeholders.
+- -1 week: OKRs have been approved by the owners of the OKRs in the levels above them.
 - 0 (start of quarter)
   - Add relevant OKRs to top of [1-1 note docs](../../handbook/leadership/1-1.md#okrs-in-notes-doc).
   - Delete all content from the OKR Google Doc except the [key for sensitive information](#sensitive-information), and add a notice to the top stating `See <URL to OKRs on about.sourcegraph.com>.`
@@ -54,7 +55,7 @@ Each OKR has the following format:
 1. The `Objective as 1 sentence.` is a pithy, informal summary of the objective, not an exhaustive and precise definition or description of the implementation. For example:
    - Good: `Automate time-consuming ops and support tasks.`
    - Bad: `Write scripts for headless browser testing of release grid items and update sourcegraph/sourcegraph and sourcegraph/deploy-sourcegraph CI pipelines to execute these scripts.`
-1. The `Key result, key result, key result.` is a list of 1-3 key results (the fewer the better) that have precise definitions.
+1. The `Key result, key result, key result.` is a list of 1-3 key results that have precise definitions.
    - Quantitative key results are ideal, but if they aren't appropriate for the objective, don't try to force it. Instead, choose a key result that is clear in its reliance on someone's judgment.
    - If a key result has a complex definition (more than a few words), link to a handbook page with the precise definition instead of inlining it in the OKR list.
    - Key results can be links to issues or [RFCs](../../handbook/engineering/rfcs/index.md).
