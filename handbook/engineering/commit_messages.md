@@ -10,7 +10,7 @@ Note: These are recommendations to strive for, not hard requirements. Each case 
 
 1. Separate subject from body with a blank line
 2. Limit the subject line to 50 characters
-3. Capitalize the subject line
+3. Prefix and then capitalize the subject line
 4. Do not end the subject line with a period
 5. Use the imperative mood in the subject line (See examples below)
 6. Use the body to explain what and why instead of how
@@ -20,6 +20,10 @@ Note: These are recommendations to strive for, not hard requirements. Each case 
 The subject line should be concise and easy to visually scan in a list of commits, giving context around what code has changed.
 
 It should be prefixed by the the area of code that was affected, eg `web:`, `cmd/searcher:`
+
+Example:
+
+`cmd/searcher: Add scaffolding for structural search`
 
 ### Imperative mood
 
@@ -35,13 +39,9 @@ TBD
 
 ## Metadata
 
-### RFCs
+### Pull Request ID
 
-Links to any related RFCs should be included at the end of the commit, one per line.
-
-### GitHub issues
-
-Links to any related GitHub issues should appear at the end of the commit message, one per line.
+We use "squash and merge" on GitHub which includes the PR id. Other metadata such as associated issues and RFC's should be included in the PR.
 
 ## Enforcing rules
 
