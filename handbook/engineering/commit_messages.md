@@ -30,3 +30,7 @@ Example:
 ## Body
 
 The body should explain _what_ changed and _why_. The _how_ is the diff.
+
+## Pull requests
+
+[Code review](code_reviews.md) happens in PRs, which should contain a good subject and description. Since we prefer to squash merge PRs (mainly for atomic reverts), you don't necessarily need to spend effort crafting the commit messages in your branch (unless the change is larger and you have organized your change into separate commits for easier reviewability). Instead, copy your PR subject and description into your commit message at (squash) merge time.
