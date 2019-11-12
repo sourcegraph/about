@@ -23,7 +23,7 @@ Over 100,000 organizations use GitLab to manage their DevOps lifecycle. Today Gi
 
 Developers have always relied on go-to-definition and find-references functionality in the editor. Development becomes more collaborative and complex, and developers spend more hours per day reading and reviewing code on their code host. GitLab realized that these code navigation and code intelligence features are essential to have in the code host and at code review, not just in the editor. 
 
-Sourcegraph provides these much-loved, much-used features at scale for all code organization-wide—across repositories and for all popular programming languages and code hosts. The world's most elite technology companies rely on Sourcegraph, including Lyft, Uber, Yelp, Convoy, SoFi, and Quantcast.
+Sourcegraph provides these much-loved, much-used features at scale for all code organization-wide—across repositories and for all popular programming languages and code hosts. The world's most elite development teams rely on Sourcegraph, including Lyft, Uber, Yelp, Convoy, SoFi, and Quantcast.
 
 With many happy customers in common, a shared focus on developers, and some [CEO-to-CEO discussion on Hacker News](https://news.ycombinator.com/item?id=18118924), GitLab chose Sourcegraph to deeply integrate these essential code navigation and code intelligence features for the 100,000+ organizations who trust GitLab.
 
