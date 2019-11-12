@@ -45,4 +45,4 @@ Links to any related GitHub issues should appear at the end of the commit messag
 
 ## Enforcing rules
 
-We currently do not enforce any of the above.
+We currently do not enforce any of the above, because a majority of the guidelines above are not strict requirements.
