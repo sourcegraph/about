@@ -26,7 +26,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                     </div>
                 </p>
                 <p className="home__intro-text font-weight-light">
-                GitLab and Sourcegraph just announced a partnership to provide code navigation and code intelligence natively to GitLab and GitLab.com users
+                GitLab and Sourcegraph just announced a partnership to provide code navigation natively to GitLab users
                 </p>
                 <RequestDemoAction className="mt-5" />
                 <a className="mt-3 d-flex align-items-center text-decoration-none" href="https://about.sourcegraph.com/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence" target="_blank">
