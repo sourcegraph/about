@@ -14,7 +14,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
             <div className="col-lg-8 mb-6 mb-lg-0">
                 <div className=" gitlab-integration-section__quote">
                     <p className="font-weight-light">
-                        Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab.
+                        Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet&mdash;and they brought it to GitLab.
                     </p>
                     <footer>
                         Sid Sijbrandij, GitLab CEO
