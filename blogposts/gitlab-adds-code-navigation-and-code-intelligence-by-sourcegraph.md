@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: gitlab-adds-code-navigation-and-code-intelligence-by-sourcegraph
-heroImage: /images/gitlab-integration-symbols-preview-dark.jpg
+heroImage: https://about.sourcegraph.com/blog/gitlab-integration-symbols-preview-dark.jpg
 published: true
 ---
 <p style="text-align: center">
@@ -16,6 +16,7 @@ published: true
 **"Every single developer that used Sourcegraph and talked to me about it loved the product. Every code product must have intelligent navigation."** - [Sid Sijbrandij, GitLab CEO](https://news.ycombinator.com/item?id=18118924)
 <br>
 <br>
+
 Over 100,000 organizations use GitLab to manage their DevOps lifecycle. Today GitLab announced a collaboration with Sourcegraph to make code navigation and code intelligence available to all GitLab users, integrated seamlessly in the GitLab developer workflow and user interface.
 
 ## Developers need code navigation and code intelligence 
