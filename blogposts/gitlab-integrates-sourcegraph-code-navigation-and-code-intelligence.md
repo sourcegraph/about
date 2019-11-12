@@ -4,7 +4,7 @@ author: Christina Forney
 publishDate: 2019-11-12T10:00-07:00
 tags: [blog]
 slug: gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence
-heroImage: https://about.sourcegraph.com/gitlab-integration-preview-dark.png
+heroImage: https://about.sourcegraph.com/blog/gitlab-integration-preview-dark.png
 published: true
 ---
 
