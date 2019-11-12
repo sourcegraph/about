@@ -9,7 +9,8 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
     <div className="gitlab-integration-section py-5 row justify-content-center ">
         <div className="row justify-content-center container">
             <h2 className="text-center display-4 mb-2">
-                GitLab adds code navigation with Sourcegraph
+                <div className="gitlab-integration-section__new-badge">New</div>
+                <div className="gitlab-integration-section__title ml-4">GitLab adds code navigation with Sourcegraph</div>
             </h2>
             <div className="col-lg-8 mb-6 mb-lg-0">
                 <div className=" gitlab-integration-section__quote">

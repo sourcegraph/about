@@ -2,6 +2,23 @@
     $max-width: 135px;
     background-color: #111111;
 
+    &__title {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    &__new-badge {
+        color: $light-11;
+        background-color: #dc3545;
+        border: 1px solid transparent;
+        padding: .15rem .75rem;
+        border-radius: .25rem;
+        display: inline-block;
+        vertical-align: middle;
+        font-size:1.5rem;
+        font-weight: bold;
+    }
+
     &__quote {
         margin: 0 auto;
         padding: 2.5rem 0;
