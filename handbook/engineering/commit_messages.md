@@ -6,6 +6,8 @@ To get some background, please read [How to Write a Git Commit Message](https://
 
 ## General guidelines
 
+Note: These are recommendations to strive for, not hard requirements. Each case is different and if you have a good reason to break a guideline below, you probably should.
+
 1. Separate subject from body with a blank line
 2. Limit the subject line to 50 characters
 3. Capitalize the subject line
