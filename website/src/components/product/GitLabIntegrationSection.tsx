@@ -6,7 +6,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
     className = '',
 }) => (
 
-    <div className="gitlab-integration-section py-5 row justify-content-center ">
+    <div className="gitlab-integration-section py-5 row justify-content-center text-dark">
         <div className="row justify-content-center container">
             <h2 className="text-center display-4 mb-2">
                 <div className="gitlab-integration-section__new-badge">New</div>
@@ -21,13 +21,13 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                         Sid Sijbrandij, GitLab CEO
                     </footer>
                 </div>
-                <p class="container">
+                <p className="container">
                     <div style={{padding: '56.25% 0 0 0', position:'relative'}}>
                         <iframe src="https://player.vimeo.com/video/372590007?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                     </div>
                 </p>
                 <p className="home__intro-text font-weight-light">
-                GitLab and Sourcegraph just announced a partnership to provide code navigation natively to GitLab users
+                GitLab and Sourcegraph just announced a partnership to provide code navigation natively to GitLab users.
                 </p>
                 <RequestDemoAction className="mt-5" />
                 <a className="mt-3 d-flex align-items-center text-decoration-none" href="https://about.sourcegraph.com/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence" target="_blank">
