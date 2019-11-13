@@ -38,12 +38,7 @@ Sourcegraph provides these much-loved, much-used features at scale for all code,
 
 Because we have many satisfied customers in common, a shared focus on developers, and some [CEO-to-CEO discussion on Hacker News](https://news.ycombinator.com/item?id=18118924), GitLab chose Sourcegraph to integrate these essential code navigation and code intelligence features for the 100,000+ organizations who trust GitLab.
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/372226334?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/372226334" target="_blank">View on Vimeo</a></p>
-</p>
+![GitLab integration demo GIF](/blog/gitlab-integration-demo-long.gif)
 
 ## Built-in IDE-like features improve code reviews
 
