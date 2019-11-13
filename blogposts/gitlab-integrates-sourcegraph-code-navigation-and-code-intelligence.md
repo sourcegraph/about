@@ -12,6 +12,10 @@ published: true
   <img src="/blog/gitlab-integration-banner-dark.png" />
 </p>
 
+<p style="text-align: center; font-style: italic;">
+  Read <a href="https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/" target="_blank">GitLab's partnership announcement blog post</a>.</i>
+</p>
+
 <div class="blockquote case-studies__quote case-studies__quote--in-content">
   <p>
     Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab.
