@@ -12,10 +12,6 @@ published: true
   <img src="/blog/gitlab-integration-banner-dark.png" />
 </p>
 
-<p style="text-align: center; font-style: italic;">
-  Read <a href="https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/" target="_blank">GitLab's partnership announcement blog post</a>.</i>
-</p>
-
 <div class="blockquote case-studies__quote case-studies__quote--in-content">
   <p>
     Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab.
@@ -32,7 +28,7 @@ published: true
   <p style="text-align: center"><a href="https://vimeo.com/372590007" target="_blank">View on Vimeo</a></p>
 </p>
 
-Over 100,000 organizations use GitLab to manage their DevOps lifecycle. Today, GitLab announced its collaboration with Sourcegraph to provide a native integration for these organizations, making code navigation and code intelligence available to all GitLab users.
+Over 100,000 organizations use GitLab to manage their DevOps lifecycle. Today, [GitLab announced its collaboration with Sourcegraph](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/) to provide a native integration for these organizations, making code navigation and code intelligence available to all GitLab users.
 
 ## Developers need code navigation and code intelligence
 
