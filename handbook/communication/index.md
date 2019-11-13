@@ -1,5 +1,7 @@
 # Communication
 
+We're an [all-remote](../../company/remote/index.md) company, with teammates from all around the world and (soon) no primary office. To make this work, we 
+
 ## Sources of truth
 
 These places are the source of truth for information at Sourcegraph. Information in these places is expected to be accurate and up-to-date:
@@ -88,7 +90,8 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 1. Set Zoom meetings to be recorded to the cloud so that you and other teammates can refer back to them later.
    - If any participant doesn't feel comfortable with the meeting being recorded, it is fine to not record it.
 
-
 ## Writing
 
 1. Always use [ISO dates](https://en.wikipedia.org/wiki/ISO_8601#Calendar_dates) in all writing and legal documents because other formats [lead to online confusion](http://xkcd.com/1179/). Use `yyyy-mm-dd`, for example 2020-04-13, and never 04-13-2020, 13-04-2020, 2020/04/13, nor April 13, 2020. Even if you use an unambiguous alternative format, it is still harder to search for a date, sort on a date, and for other team members to know we use the ISO standard. For months use `yyyy-mm`, so 2020-01 for January 2020.
+
+
