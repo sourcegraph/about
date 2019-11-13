@@ -21,6 +21,8 @@ published: true
   </footer>
 </div>
 
+Check out the below video where Quinn sat down with GitLab CEO Sid Sijbrandij to discuss the native GitLab integration, and why Sourcegraph's code intelligence means better code reviews and improved code quality for [GitLab Enterprise](https://about.gitlab.com/solutions/enterprise-class/) customers and open source projects on [GitLab.com](https://gitlab.com/explore).
+
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://player.vimeo.com/video/372590007?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
