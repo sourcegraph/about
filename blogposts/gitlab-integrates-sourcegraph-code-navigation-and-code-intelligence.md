@@ -28,7 +28,7 @@ published: true
   <p style="text-align: center"><a href="https://vimeo.com/372590007" target="_blank">View on Vimeo</a></p>
 </p>
 
-Over 100,000 organizations use GitLab to manage their DevOps lifecycle. Today, GitLab announced its collaboration with Sourcegraph to provide a native integration for these organizations, making code navigation and code intelligence available to all GitLab users.
+Over 100,000 organizations use GitLab to manage their DevOps lifecycle. Today, [GitLab announced its collaboration with Sourcegraph](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/) to provide a native integration for these organizations, making code navigation and code intelligence available to all GitLab users.
 
 ## Developers need code navigation and code intelligence
 
