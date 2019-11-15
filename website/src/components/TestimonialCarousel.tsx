@@ -1,5 +1,6 @@
 import React from 'react'
 import slugify from 'slugify'
+import Carousel from 'react-bootstrap/Carousel'
 
 export enum CarouselColors {
     dark = 'bg-black text-light',
@@ -39,39 +40,43 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
     <div className={`container" ${className}`}>
         <div className="row justify-content-center pt-5">
             <div className="testimonial-carousel col-sm-12 col-md-9 col-lg-7 text-center">
-                <img src="/case-studies/quote.svg" className="testimonial-carousel__quote-icon" alt=""/>
-                <ul className="testimonial-carousel__testimonials mt-5">
-                {testimonials.map(({customer, logo, quote, author, cta}, i) => (
-                    <li className={`${slugify(customer).toLowerCase()} testimonial-carousel__testimonial mt-6`}>
-                        <img src={logo} className="testimonial-carousel__logo d-inline-block" />
-                        <blockquote className="testimonial-carousel__blockquote blockquote">
-                            <p className="mt-4 mb-5">{quote}</p>
-                            {author &&
-                            <footer className="blockquote-footer">
-                                {author.image &&
-                                    <img src={author.image} className="testimonial-carousel__author-image rounded-circle img-fluid mx-auto d-block pb-3" alt={author.name}/>
-                                }
-                                <cite className="d-block">
-                                    <span className="testimonial-carousel__author-name d-block">{author.name}</span>
-                                    {author.title &&
-                                    <span className="testimonial-carousel__author-title  d-block">{customer} {author.title}</span>
-                                    }
-                                </cite>
-                            </footer>
-                            }
-                        </blockquote>
-                        {cta &&
-                            <a href={cta.url} className="testimonial-carousel__cta btn btn-primary mt-2">{cta.text}</a>
-                        }
-                    </li>
-                ))}
-                </ul>
-            </div>
 
+                <div className="testimonial-carousel__testimonials">
+                    <img src="/case-studies/quote.svg" className="testimonial-carousel__quote-icon mt-5 mb-5" alt=""/>
+                    <Carousel controls={false}>
+                        {testimonials.map(({customer, logo, quote, author, cta}, i) => (
+                        <div className={`${slugify(customer).toLowerCase()} testimonial-carousel__testimonial`}>
+                            <img src={logo} className="testimonial-carousel__logo d-inline-block mb-4" />
+                            <blockquote className="testimonial-carousel__blockquote blockquote">
+                                <p className="mb-5">{quote}</p>
+                                {author &&
+                                <footer className="blockquote-footer mt-6">
+                                    {author.image &&
+                                        <img src={author.image} className="testimonial-carousel__author-image rounded-circle img-fluid mx-auto d-block pb-3" alt={author.name}/>
+                                    }
+                                    <cite className="d-block">
+                                        <span className="testimonial-carousel__author-name d-block">{author.name}</span>
+                                        {author.title &&
+                                        <span className="testimonial-carousel__author-title  d-block">{customer} {author.title}</span>
+                                        }
+                                    </cite>
+                                </footer>
+                                }
+                            </blockquote>
+                            {cta &&
+                                <a href={cta.url} className="testimonial-carousel__cta btn btn-primary mt-2">{cta.text}</a>
+                            }
+                    </div>
+                ))}
+                    </Carousel>
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
 )
-//
+
+
+
 // {testimonials.map(({}, index: number) => (
 //     <h2>Hi</h2>
 // ))}

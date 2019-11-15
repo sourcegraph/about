@@ -1,16 +1,21 @@
 
 .testimonial-carousel {
+    .carousel-indicators {
+        // top: 75px;
 
-    &__quote-icon {
-        width: 65px;
+        li {
+            margin-left: 7px;
+            margin-right: 7px;
+            width: 15px;
+        }
     }
 
-    &__testimonials {
-        list-style: none;
+    &__quote-icon {
+        height: 35px;
     }
 
     &__testimonial {
-
+        height: 550px;
     }
 
     &__logo {
@@ -18,7 +23,7 @@
     }
 
     &__blockquote {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
 
         .blockquote-footer::before {
             content: "";
