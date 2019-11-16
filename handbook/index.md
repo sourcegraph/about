@@ -14,7 +14,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 - [People Ops](people-ops/index.md)
   - [Leadership](leadership/index.md)
-  - [1-1](leadership/1-1.md)
+  - [Team](team.md)
 
 ## Product
 
