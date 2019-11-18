@@ -16,7 +16,7 @@ The subject line should be concise and easy to visually scan in a list of commit
 
 1. Prefix the subject with the primary area of code that was affected (e.g. `web:`, `cmd/searcher:`).
 2. Limit the subject line to 50 characters.
-3. Do not end the subject line with a period.
+3. Do not end the subject line with punctuation.
 4. Use the [imperative mood](https://chris.beams.io/posts/git-commit/#imperative) in the subject line.
    | Prefer | Instead of |
    |--------|------------|
