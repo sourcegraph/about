@@ -22,7 +22,7 @@ const testimonials:Testimonial[] = [
         logo: '/external-logos/yelp.svg',
         quote: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
         author: {
-            name: 'Mark Larah, Dennis Coldwell, and Kevin Chen'
+            name: 'Yelp Software Engineers: Mark Larah, Dennis Coldwell, and Kevin Chen'
         },
         cta: {
             text: 'Read engineering blog post',
