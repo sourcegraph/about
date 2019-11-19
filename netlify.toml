@@ -2,7 +2,7 @@
 
 base = "website"
 publish = "website/public"
-command = "yarn run prettier && yarn run build"
+command = "yarn run prettier-check && yarn run build"
 
 [build.environment]
   YARN_VERSION = "1.15.2"
