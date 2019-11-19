@@ -82,12 +82,14 @@ We strive to maintain the response and resolution times below.
 #### For customers with on-premises/self-hosted Sourcegraph instances:
 
 ||Description|Response time|Resolution time|
+|---|---|---|---|
 |Severity 1|Any error reported where usage of Sourcegraph is severely impacted, and causes a high impact to the business, in a production environment.|Within 24 hours of becoming aware of the issue|Within 72 hours, using commercially reasonable efforts to provide a resolution or workaround.|
 |Severity 2|Any error reported that involves partial, non-critical loss of use, or any general usage questions, feature requests, and similar.|Within one business week of becoming aware of the issue|When complete, using commercially reasonable efforts to provide a resolution, workaround, or product update.|
 
 #### For customers with managed instances:
 
 ||Description|Response time|Resolution time|
+|---|---|---|---|
 |Severity 1|Any error reported where usage of Sourcegraph is severely impacted, and causes a high impact to the business, in a production environment.|Within 24 hours of becoming aware of the issue|Within 72 hours, using commercially reasonable efforts to provide a resolution or workaround.|
 |Severity 2|Any error reported that involves partial, non-critical loss of use, or any general usage questions, feature requests, and similar.|Within one business week of becoming aware of the issue|When complete, using commercially reasonable efforts to provide a resolution, workaround, or product update.|
 
