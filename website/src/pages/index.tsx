@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { CaseStudyFeature } from '../components/CaseStudyFeature'
+import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
@@ -16,6 +16,82 @@ import { ContactPresalesSupportAction } from '../css/components/actions/ContactP
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
+
+const testimonials: Testimonial[] = [
+    {
+        customer: 'Yelp',
+        logo: '/external-logos/yelp.svg',
+        quote: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
+        author: {
+            name: 'Kevin Chen',
+            title: 'Software Engineer',
+            image: 'case-studies/kevin-chen-yelp.jpg',
+        },
+        cta: {
+            text: 'Read case study',
+            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
+            target: '_blank',
+        },
+    },
+    {
+        customer: 'Quantcast',
+        logo: '/external-logos/quantcast-logo-white.svg',
+        quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
+        author: {
+            name: 'Simon Law',
+            title: 'Staff Software Engineer',
+            image: '/case-studies/simon-law-quantcast.jpg',
+        },
+        cta: {
+            text: 'Read case study',
+            url: 'case-studies/quantcast-large-scale-refactoring',
+        },
+    },
+    {
+        customer: 'Convoy',
+        logo: '/external-logos/convoy-logo-white.svg',
+        quote:
+            'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
+        author: {
+            name: 'Brandon Bloom',
+            title: 'Senior Software Engineer',
+            image: '/case-studies/brandon-bloom-convoy.jpg',
+        },
+        cta: {
+            text: 'Read case study',
+            url: '/case-studies/convoy-improved-on-boarding',
+        },
+    },
+    {
+        customer: 'Thorn',
+        logo: '/case-studies/thorn-logo.png',
+        quote:
+            'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
+        author: {
+            name: 'Jacob Gillespie',
+            title: 'Software Engineer',
+            image: '/case-studies/jacob-gillespie-thorn-square.jpg',
+        },
+        cta: {
+            text: 'Read case study',
+            url: 'case-studies/we-are-thorn',
+        },
+    },
+    {
+        customer: 'Convoy',
+        logo: '/external-logos/convoy-logo-white.svg',
+        quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
+        author: {
+            name: 'Owen Kim',
+            title: 'Senior Software Engineer',
+            image: '/case-studies/owen-kim-convoy.jpg',
+        },
+        cta: {
+            text: 'Read case study',
+            url: '/case-studies/convoy-software-engineers-and-data-scientists-work-better-together',
+        },
+    },
+]
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -64,23 +140,7 @@ export default ((props: any) => (
             </div>
             <GitLabIntegrationSection />
             <ContentSection color="black">
-                <h2 className="text-center display-4 mb-5 mt-4">
-                    Learn how Sourcegraph code search makes large scale refactoring possible
-                </h2>
-                <hr style={{ borderColor: '#333' }} />
-                <CaseStudyFeature
-                    quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
-                    author="Quantcast Staff Software Engineer, Simon Law"
-                    url="/case-studies/quantcast-large-scale-refactoring"
-                    image="/case-studies/quantcast-sourcegraph-case-study.jpg"
-                />
-                <hr style={{ borderColor: "#333" }} />
-                <CaseStudyFeature
-                    quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
-                    author="Thorn Software Engineer, Jacob Gillespie"
-                    url="/case-studies/we-are-thorn"
-                    image="/case-studies/thorn-sourcegraph-case-study.png"
-                />
+                <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
             </ContentSection>
             <div className="bg-white text-dark">
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
