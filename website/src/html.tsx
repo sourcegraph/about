@@ -28,7 +28,6 @@ export default class HTML extends React.Component<HtmlProps> {
                     {head.meta.toComponent()}
                     {head.link.toComponent()}
                     {/* {css} */}
-                    <script type="text/javascript" src="/scripts.js" />
                     <link rel="icon" type="image/png" href="/favicon.png" />
                     <link
                         rel="chrome-webstore-item"

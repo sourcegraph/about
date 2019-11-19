@@ -55,6 +55,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
         const md = this.props.data.markdownRemark
         const title = md.frontmatter.title
         let slug = md.slug
+        const fileName = md.fileAbsolutePath.split('/').pop()
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
         const content = md.html
         const image = md.frontmatter.heroImage
@@ -102,6 +103,12 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                                 <Link to={BLOGS.Blog}>
                                     <button className="btn btn-outline-primary">Read more posts</button>
                                 </Link>
+                                <a
+                                    href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
+                                    className="ml-3"
+                                >
+                                    <button className="btn btn-outline-primary">Edit this post</button>
+                                </a>
                                 <div style={{ height: '1em' }} />
                                 <div>
                                     <div className="mb-4">
@@ -134,6 +141,7 @@ export const pageQuery = graphql`
             fields {
                 slug
             }
+            fileAbsolutePath
         }
     }
 `

@@ -1,0 +1,41 @@
+{{define "root"}}
+	<html>
+		<head>
+			<title>{{block "title" .}}Home{{end}} - Sourcegraph</title>
+			<link rel="icon" type="image/png" href="{{asset "sourcegraph-mark.png"}}" />
+			<link rel="stylesheet" type="text/css" href="{{asset "layout.css"}}" />
+			<link rel="stylesheet" type="text/css" href="{{asset "document.css"}}" />
+			<link rel="stylesheet" type="text/css" href="{{asset "search.css"}}" />
+			<link rel="stylesheet" type="text/css" href="{{asset "content.css"}}" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			{{block "head" .}}{{end}}
+		</head>
+		<body>
+			<header id="header">
+				<div class="container">
+					<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" /></a>
+					<nav>
+						<form id="search-form" method="get" action="/search">
+							<input type="text" id="search" name="q" value="{{block "query" .}}{{end}}" placeholder="Search handbook..." spellcheck="false" />
+							<button id="search-button" type="submit">Search</button>
+						</form>
+						<a href="https://about.sourcegraph.com">About</a>
+						<a href="https://sourcegraph.com">Sourcegraph.com</a>
+					</nav>
+				</div>
+			</header>
+			<div id="page">
+				<div class="container">
+					{{block "content" .}}{{end}}
+				</div>
+			</div>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40540747-17"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());	
+				gtag('config', 'UA-40540747-17');
+			</script>
+		</body>
+	</html>
+{{end}}

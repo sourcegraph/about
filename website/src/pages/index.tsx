@@ -6,10 +6,11 @@ import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySolution'
+import { GitLabIntegrationSection } from '../components/product/GitLabIntegrationSection'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
-import { Testimonials } from '../components/Testimonials'
+import { Tweets } from '../components/Tweets'
 import { Vimeo } from '../components/Vimeo'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
@@ -46,8 +47,8 @@ export default ((props: any) => (
                                 style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                             />{' '}
-                            <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to every
-                            company, helping startups and large&nbsp;enterprises ship better software faster.
+                            <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to help every
+                            elite&nbsp;development team ship better software faster.
                         </p>
                         <RequestDemoAction className="mt-5" />
                         <ContactPresalesSupportAction className="text-light mt-3" />
@@ -61,21 +62,20 @@ export default ((props: any) => (
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
+            <GitLabIntegrationSection />
             <ContentSection color="black">
                 <h2 className="text-center display-4 mb-5 mt-4">
                     Learn how Sourcegraph code search makes large scale refactoring possible
                 </h2>
                 <hr style={{ borderColor: '#333' }} />
                 <CaseStudyFeature
-                    // title="See how Sourcegraph enabled large scale refactoring at Quantcast"
                     quote="Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything."
-                    author="Simon Law, Staff Software Engineer, Quantcast"
-                    url="/case-studies/quantcast"
-                    image="/case-studies/quantcast_thumbnail_500x500px-generic.jpg"
+                    author="Quantcast Staff Software Engineer, Simon Law"
+                    url="/case-studies/quantcast-large-scale-refactoring"
+                    image="/case-studies/quantcast-sourcegraph-case-study.jpg"
                 />
-                <hr style={{ borderColor: '#333' }} />
+                <hr style={{ borderColor: "#333" }} />
                 <CaseStudyFeature
-                    // title="See how Thorn sunsets legacy applications safely with Sourcegraph"
                     quote="In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed."
                     author="Thorn Software Engineer, Jacob Gillespie"
                     url="/case-studies/we-are-thorn"
@@ -106,7 +106,7 @@ export default ((props: any) => (
                     </div>
                 </div>
                 <div className="container-fluid">
-                    <Testimonials />
+                    <Tweets />
                 </div>
             </div>
             <ContentSection className="my-5">

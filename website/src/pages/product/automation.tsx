@@ -11,7 +11,6 @@ import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { Vimeo } from '../../components/Vimeo'
 import {
     RequestAutomationDemoAction,
@@ -23,7 +22,7 @@ const title = 'Automation'
 const description =
     'Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt.'
 const seeItInActionClicked = () => {
-    eventLogger.automationSeeItInActionButtonClicked()
+    eventLogger.trackAutomationSeeItInActionButtonClicked()
 }
 
 export const CampaignsTable: React.FunctionComponent<{
@@ -65,7 +64,8 @@ export default ((props: any) => (
     >
         <ContentPage
             title={title}
-            titleClassName="automation"
+            className="automation"
+            titleClassName="automation display-3"
             description={description}
             mainActions={
                 <div className="d-flex flex-column align-items-center">
@@ -74,7 +74,7 @@ export default ((props: any) => (
             }
         >
             <ContentSection color="white" className="pt-6 pb-2">
-                <h2 id="most-elite-teams-invest-heavily-code-change-automation" className="display-4 mb-5">
+                <h2 id="most-elite-teams-invest-heavily-code-change-automation" className="display-3 mb-5">
                     The most elite teams invest
                     <br />
                     heavily in code change automation
@@ -185,9 +185,11 @@ export default ((props: any) => (
                     <div className="row mt-4 justify-content-md-center">
                         <div className="col-lg-10">
                             <p>
-                                Sourcegraph's automation lets you create campaigns, which are collections of pull requests
-                                and issues across multiple repositories. The following campaign types are built in, and you
-                                can create other ad-hoc campaigns from the UI or use the <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more advanced campaigns:
+                                Sourcegraph's automation lets you create campaigns, which are collections of pull
+                                requests and issues across multiple repositories. The following campaign types are built
+                                in, and you can create other ad-hoc campaigns from the UI or use the{' '}
+                                <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more
+                                advanced campaigns:
                             </p>
                         </div>
                         <div className="col-lg-8 mt-4">
@@ -208,10 +210,10 @@ export default ((props: any) => (
 
                 <div className="row mt-5 justify-content-md-center">
                     <p className="col-lg-10">
-                        When you create a campaign, Sourcegraph automatically creates pull requests and issues as
-                        needed with the correct reviewers and context—and keeps them up-to-date. You can track the
-                        progress of the campaign with the burndown chart and see all related activity across all
-                        repositories. All this makes completing the campaign as fast and painless as possible.
+                        When you create a campaign, Sourcegraph automatically creates pull requests and issues as needed
+                        with the correct reviewers and context—and keeps them up-to-date. You can track the progress of
+                        the campaign with the burndown chart and see all related activity across all repositories. All
+                        this makes completing the campaign as fast and painless as possible.
                     </p>
                 </div>
             </ContentSection>

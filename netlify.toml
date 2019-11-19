@@ -2,8 +2,50 @@
 
 base = "website"
 publish = "website/public"
-command = "yarn run prettier-check && yarn run build"
+command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/releases/download/v1.1.0/docsite_v1.1.0_linux_amd64 && chmod +x /tmp/docsite && (cd .. && /tmp/docsite check) && yarn run prettier-check && yarn run build"
 
 [build.environment]
   YARN_VERSION = "1.15.2"
   YARN_FLAGS = "--no-ignore-optional"
+
+[[redirects]]
+  from = "/assets/*"
+  to = "https://about-docsite.sourcegraph.com/assets/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/community/*"
+  to = "https://about-docsite.sourcegraph.com/community/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/direction/*"
+  to = "https://about-docsite.sourcegraph.com/direction/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/company/*"
+  to = "https://about-docsite.sourcegraph.com/company/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/handbook/*"
+  to = "https://about-docsite.sourcegraph.com/handbook/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/retrospectives/*"
+  to = "https://about-docsite.sourcegraph.com/retrospectives/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/search"
+  to = "https://about-docsite.sourcegraph.com/search"
+  status = 200
+  force = true
