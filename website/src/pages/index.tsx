@@ -25,12 +25,12 @@ const testimonials: Testimonial[] = [
         author: {
             name: 'Kevin Chen',
             title: 'Software Engineer',
-            image: 'case-studies/kevin-chen-yelp.jpg'
+            image: 'case-studies/kevin-chen-yelp.jpg',
         },
         cta: {
             text: 'Read case study',
             url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
-            target: '_blank'
+            target: '_blank',
         },
     },
     {
@@ -80,8 +80,7 @@ const testimonials: Testimonial[] = [
     {
         customer: 'Convoy',
         logo: '/case-studies/convoy-logo.svg',
-        quote:
-            'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
+        quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
         author: {
             name: 'Owen Kim',
             title: 'Senior Software Engineer',

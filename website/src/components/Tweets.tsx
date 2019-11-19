@@ -1,11 +1,14 @@
 import * as React from 'react'
 
 export const Tweets: React.FunctionComponent<any> = props => (
-  <div className="tweets row">
+    <div className="tweets row">
         <div className="col-md-4">
             <blockquote className="twitter-tweet" data-lang="en">
                 <p lang="en" dir="ltr">
-                    Our engineers loved <a href="https://twitter.com/srcgraph?ref_src=twsrc%5Etfw">@srcgraph</a> so much that we decided to make it the singular supported tool at Yelp for <a href="https://twitter.com/hashtag/codesearch?src=hash&amp;ref_src=twsrc%5Etfw">#codesearch</a> and viewing 🤩: <a href="https://bit.ly/2pEko0o">https://bit.ly/2pEko0o</a>
+                    Our engineers loved <a href="https://twitter.com/srcgraph?ref_src=twsrc%5Etfw">@srcgraph</a> so much
+                    that we decided to make it the singular supported tool at Yelp for{' '}
+                    <a href="https://twitter.com/hashtag/codesearch?src=hash&amp;ref_src=twsrc%5Etfw">#codesearch</a>{' '}
+                    and viewing 🤩: <a href="https://bit.ly/2pEko0o">https://bit.ly/2pEko0o</a>
                 </p>
                 &mdash; YelpEngineering (@YelpEngineering){' '}
                 <a href="https://twitter.com/YelpEngineering/status/1191460849162113024?ref_src=twsrc%5Etfw">

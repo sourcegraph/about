@@ -37,19 +37,19 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
         <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
             {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
             {pdf && (
-                    <a
-                        href={pdf}
-                        className="btn btn-primary mt-4"
-                        rel="nofollow"
-                        onClick={() => {
-                            eventLogger.trackCaeStudyDownloadPDFClicked(customer)
-                        }}
-                        target="_blank"
-                    >
-                        <i className="fa fa-file-pdf pr-2"></i>
-                        Download PDF
-                    </a>
-                )}
+                <a
+                    href={pdf}
+                    className="btn btn-primary mt-4"
+                    rel="nofollow"
+                    onClick={() => {
+                        eventLogger.trackCaeStudyDownloadPDFClicked(customer)
+                    }}
+                    target="_blank"
+                >
+                    <i className="fa fa-file-pdf pr-2"></i>
+                    Download PDF
+                </a>
+            )}
         </CaseStudyJumbotron>
 
         <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">

@@ -29,8 +29,8 @@ export default ((props: any) => (
                 <div className="container">
                     <p>
                         Founded in 2015, Convoy has quickly grown to over 500 employees. However, their accelerated team
-                        growth comes with challenges: new hires have to quickly learn how to contribute to a
-                        dynamic system of microservices.
+                        growth comes with challenges: new hires have to quickly learn how to contribute to a dynamic
+                        system of microservices.
                     </p>
                     <h2 className="pt-5 pb-1">Onboarding new hires</h2>
                     <p>

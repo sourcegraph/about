@@ -72,7 +72,11 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
                                     )}
                                 </blockquote>
                                 {cta && (
-                                    <a href={cta.url} className="testimonial-carousel__cta btn btn-primary mt-2" target={cta.target}>
+                                    <a
+                                        href={cta.url}
+                                        className="testimonial-carousel__cta btn btn-primary mt-2"
+                                        target={cta.target}
+                                    >
                                         {cta.text}
                                     </a>
                                 )}
