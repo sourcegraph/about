@@ -16,47 +16,48 @@ import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegra
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 
-const testimonials:Testimonial[] = [
+const testimonials: Testimonial[] = [
     {
         customer: 'Yelp',
         logo: '/external-logos/yelp.svg',
         quote: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
         author: {
-            name: 'Yelp Software Engineers: Mark Larah, Dennis Coldwell, and Kevin Chen'
+            name: 'Yelp Software Engineers: Mark Larah, Dennis Coldwell, and Kevin Chen',
         },
         cta: {
             text: 'Read engineering blog post',
-            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html'
-        }
+            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
+        },
     },
     {
         customer: 'Quantcast',
         logo: '/external-logos/quantcast-logo-gray.svg',
-        quote: 'Sourcegraph’s search gave us confidence because we knew we wouldn\'t overlook anything.',
+        quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
         author: {
             name: 'Simon Law',
             title: 'Staff Software Engineer',
-            image: '/case-studies/simon-law-quantcast.jpg'
+            image: '/case-studies/simon-law-quantcast.jpg',
         },
         cta: {
             text: 'Read case study',
-            url: 'case-studies/quantcast-large-scale-refactoring'
-        }
+            url: 'case-studies/quantcast-large-scale-refactoring',
+        },
     },
     {
         customer: 'Thorn',
         logo: '/case-studies/thorn-logo.png',
-        quote: 'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
+        quote:
+            'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
         author: {
             name: 'Jacob Gillespie',
             title: 'Software Engineer',
-            image: '/case-studies/jacob-gillespie-thorn-square.jpg'
+            image: '/case-studies/jacob-gillespie-thorn-square.jpg',
         },
         cta: {
             text: 'Read case study',
-            url: 'case-studies/we-are-thorn'
-        }
-    }
+            url: 'case-studies/we-are-thorn',
+        },
+    },
 ]
 
 export default ((props: any) => (
