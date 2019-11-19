@@ -7,15 +7,16 @@ export enum CarouselColors {
     purple = 'bg-purple text-light',
 }
 
-export interface Author {
+interface Author {
     name: string
     title?: string
     image?: string
 }
 
-export interface CTA {
+interface CTA {
     text: string
     url: string
+    target?: string
 }
 
 export interface Testimonial {
@@ -41,7 +42,7 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
         <div className="row justify-content-center pt-5">
             <div className="testimonial-carousel col-sm-12 col-md-9 col-lg-7 text-center">
                 <div className="testimonial-carousel__testimonials">
-                    <img src="/case-studies/quote.svg" className="testimonial-carousel__quote-icon mt-3 mb-5" alt="" />
+                    <img src="/case-studies/quote.svg" className="testimonial-carousel__quote-icon mb-5" alt="" />
                     <Carousel controls={false}>
                         {testimonials.map(({ customer, logo, quote, author, cta }, i) => (
                             <div className={`${slugify(customer).toLowerCase()} testimonial-carousel__testimonial`}>
@@ -53,7 +54,7 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
                                             {author.image && (
                                                 <img
                                                     src={author.image}
-                                                    className="testimonial-carousel__author-image rounded-circle img-fluid mx-auto d-block pb-3"
+                                                    className="testimonial-carousel__author-image rounded-circle img-fluid mx-auto d-block"
                                                     alt={author.name}
                                                 />
                                             )}
@@ -62,7 +63,7 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
                                                     {author.name}
                                                 </span>
                                                 {author.title && (
-                                                    <span className="testimonial-carousel__author-title  d-block">
+                                                    <span className="testimonial-carousel__author-title d-block">
                                                         {customer} {author.title}
                                                     </span>
                                                 )}
@@ -71,7 +72,7 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
                                     )}
                                 </blockquote>
                                 {cta && (
-                                    <a href={cta.url} className="testimonial-carousel__cta btn btn-primary mt-2">
+                                    <a href={cta.url} className="testimonial-carousel__cta btn btn-primary mt-2" target={cta.target}>
                                         {cta.text}
                                     </a>
                                 )}
@@ -83,63 +84,3 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
         </div>
     </div>
 )
-
-// {testimonials.map(({}, index: number) => (
-//     <h2>Hi</h2>
-// ))}
-
-{
-    /*<div className={`jumbotron pt-5 pb-3 ${COLORS[color]} ${className}`}>*/
-}
-{
-    /*    <div className="row container justify-content-center mb-4">*/
-}
-{
-    /*        {title && (*/
-}
-{
-    /*            <h2 className={`text-center ${titleClassName}`}>*/
-}
-{
-    /*                <a href={url}>{title}</a>*/
-}
-{
-    /*            </h2>*/
-}
-{
-    /*        )}*/
-}
-{
-    /*    </div>*/
-}
-{
-    /*    <div className="row container justify-content-center">*/
-}
-{
-    /*        <div className="col-sm-12 col-md-2 case-studies-feature__image">*/
-}
-{
-    /*            <a href={url}>*/
-}
-{
-    /*                <img className="img-thumbnail align-middle" src={image} />*/
-}
-{
-    /*            </a>*/
-}
-{
-    /*        </div>*/
-}
-{
-    /*        <div className="col-md-6 case-studies-feature__content">*/
-}
-
-{
-    /*        </div>*/
-}
-{
-    /*    </div>*/
-}
-{
-    /*</div>*/
-}
