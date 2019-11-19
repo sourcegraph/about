@@ -49,7 +49,7 @@ const testimonials: Testimonial[] = [
     },
     {
         customer: 'Convoy',
-        logo: '/case-studies/convoy-logo.svg',
+        logo: '/external-logos/convoy-logo-white.svg',
         quote:
             'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
         author: {
@@ -79,7 +79,7 @@ const testimonials: Testimonial[] = [
     },
     {
         customer: 'Convoy',
-        logo: '/case-studies/convoy-logo.svg',
+        logo: '/external-logos/convoy-logo-white.svg',
         quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
         author: {
             name: 'Owen Kim',
