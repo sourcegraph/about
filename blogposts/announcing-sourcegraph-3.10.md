@@ -62,16 +62,12 @@ Users with private GitLab instances or repositories can enable Sourcegraph code 
 
 ## Create cross-repository search and replace campaigns
 
-TO DO: VIDEO
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/374473021?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/374473021" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 Sourcegraph now supports creating and tracking code-aware search and replace campaigns on GitHub and Bitbucket Server. When running a search and replace campaign, you can preview the changes across repositories and then generate the corresponding pull requests on your GitHub and Bitbucket Server instances. Once created, you can track the PRs to completion in a burndown chart.
 
