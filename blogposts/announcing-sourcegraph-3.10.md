@@ -36,16 +36,12 @@ Sourcegraph couldn't be what it is without the community.
 
 ## Improved autocompletion for search query filters
 
-TO DO: VIDEO
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/374329715?color=0CB6F4&title=0&byline=&loop=1&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/374329715" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 Autocomplete suggestions make it easier to use filters in your Sourcegraph searches. Use `ctrl-space` to trigger suggestions for filters you can apply to your query. As you type, the suggestions become more relevant, helping you to apply correct filter options or autocomplete repository or file names.
 
@@ -53,7 +49,7 @@ Autocomplete suggestions make it easier to use filters in your Sourcegraph searc
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/372226334?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/372226334?color=0CB6F4&title=&byline=&loop=1&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://vimeo.com/372226334/de668e24fa" target="_blank">View on Vimeo</a></p>
 </p>
@@ -95,9 +91,8 @@ Sourcegraph Automation campaigns are in private beta. [Watch the Automation scre
 
 ## Precise LSIF-based code intelligence for 5 languages
 
-TO DO: VIDEO
-
 <!--
+Video will be added later, not essential for release post, but important in its own right
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
