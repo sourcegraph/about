@@ -42,7 +42,7 @@ export default ((props: any) => (
                         codebase across projects. The need for fast and accurate code search and code intelligence led
                         the engineering team to install Sourcegraph. As a FinTech company that contains highly sensitive
                         data from their customers, SoFi emphasizes on security and appreciated Sourcegraph’s{' '}
-                        <a href="https://about.sourcegraph.com/blog/from-saas-to-on-premises">on-prem solution</a>.
+                        <a href="/blog/from-saas-to-on-premises">on-prem solution</a>.
                     </p>
                     <h2 className="pt-5 pb-1">Move fast and don’t break things</h2>
                     <p>
