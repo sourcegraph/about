@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.10: Improved search autocompletion, native GitLab integration, and find-and-replace automation campaigns"
+title: "Sourcegraph 3.10: Improved search autocompletion, native GitLab integration, and search and replace automation campaigns"
 author: Christina Forney
 publishDate: 2019-11-20T10:00-07:00
 tags: [blog]
@@ -73,7 +73,7 @@ TO DO: VIDEO
 </p>
 -->
 
-Sourcegraph now supports creating and tracking code-aware search and replace campaigns on GitHub and Bitbucket Server. When running a search and replace campaign, you preview the changes, then generate the corresponding pull requests on your GitHub and Bitbucket Server instances. Once created, you can track the PRs to completion in a burndown chart.
+Sourcegraph now supports creating and tracking code-aware search and replace campaigns on GitHub and Bitbucket Server. When running a search and replace campaign, you can preview the changes across repositories and then generate the corresponding pull requests on your GitHub and Bitbucket Server instances. Once created, you can track the PRs to completion in a burndown chart.
 
 Sourcegraph is introducing [Comby syntax](https://comby.dev/#basic-usage) for automated search and replace campaigns. Comby syntax is code-aware and simplifies finding patterns in code. This new capability makes operations that could require complex or awkward regexp queries much simpler to write.
 
@@ -112,8 +112,10 @@ Customers wanting better indexed search performance or wishing to add many more 
 The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourcegraph) for indexed-search services has changed from a Normal Service to a Headless Service. This enables Sourcegraph to individually resolve indexed-search pods. Services are immutable, so a [migration is required](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310).
 
 <div class="alert alert-warning">
-  <h4 class="alert-heading">IMPORTANT: required migration for all Kubernetes deployments</h4>
-  <p>Please see the <a href="https://docs.sourcegraph.com/admin/migration/3_10">3.10 migration guide</a> for details.</p>
+  <p>
+    <strong>IMPORTANT: required migration for all Kubernetes deployments.</strong>
+    Please see the <a href="https://docs.sourcegraph.com/admin/migration/3_10">3.10 migration guide</a> for details.
+  </p>
 </div>
 
 ## Fully automated release testing process
