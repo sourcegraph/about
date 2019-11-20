@@ -110,13 +110,13 @@ We are looking for feedback from project owners interested in trying out precise
 
 ## Scaling search for our largest customers
 
-Customers with large Kubernetes deployments can now horizontally scale their search indexes by adding more search nodes.
+Customers wanting better indexed search performance or wishing to add many more thousands of repositories to Sourcegraph are now in luck! Sourcegraph's indexed search can now scale horizontally in cluster deployments.
 
 **This improvement requires a Kubernetes migration**. The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourcegraph) for indexed-search services has changed from a Normal Service to a Headless Service. This enables Sourcegraph to individually resolve indexed-search pods. Services are immutable, so please follow the [migration guide](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310).
 
 ## Fully automated release testing process
 
-As part of Sourcegraph’s ongoing commitment to providing the highest quality, stable releases, our manual end-to-end release testing process has been replaced with a fully automated regression testing suite. Read more about this in the upcoming blogpost from Beyang, Sourcegraph CTO.
+As part of Sourcegraph’s ongoing commitment to providing the highest quality, stable releases, our manual QA process has in the last two months been turned into a fully automated regression testing suite. We continue to aggressively invest in automated testing of Sourcegraph to provide extremely stable and reliable releases, and ultimately better features for our users. Look forward to reading more about this in an upcoming blogpost from Sourcegraph CTO, Beyang Liu, [on our blog](https://about.sourcegraph.com/blog/).
 
 ## Changelog
 
@@ -195,4 +195,4 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+From the entire [@srcgraph](https://twitter.com/srcgraph) team, happy coding!
