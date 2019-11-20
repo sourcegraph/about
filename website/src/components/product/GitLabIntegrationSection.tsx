@@ -19,17 +19,17 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                     </p>
                     <footer>Sid Sijbrandij, GitLab CEO</footer>
                 </div>
-                <p class="container">
+                <div className="container mb-4">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                         <iframe
                             src="https://player.vimeo.com/video/372590007?color=0CB6F4&amp;title=0&amp;byline="
                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                            webkitallowfullscreen=""
-                            mozallowfullscreen=""
-                            allowfullscreen=""
+                            webkiallowfullscreen="true"
+                            mozallowfullscreen="true"
+                            allowFullScreen={true}
                         ></iframe>
                     </div>
-                </p>
+                </div>
                 <p className="home__intro-text font-weight-light">
                     GitLab and Sourcegraph just announced a partnership to provide code navigation natively to GitLab
                     users
