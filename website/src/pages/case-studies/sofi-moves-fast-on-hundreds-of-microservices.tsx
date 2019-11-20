@@ -53,7 +53,7 @@ export default ((props: any) => (
                         another. This ability safeguards against breaking production with code changes and avoids code
                         duplications. SoFi’s codebase is updated hundreds of times a day making Sourcegraph’s real time
                         code investigation features with “go to definition” and “find all references” across all
-                        microservices indispensable for SoFi’s engineers’ daily coding activities, mentoring and stack
+                        microservices indispensable for SoFi engineers’ daily coding activities, mentoring and stack
                         trace investigations. With Sourcegraph, SoFi engineers fully understand the scope and breadth of
                         how their code changes impact other microservices.
                     </p>
