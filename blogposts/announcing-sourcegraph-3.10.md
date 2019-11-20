@@ -75,9 +75,9 @@ TO DO: VIDEO
 
 Sourcegraph now supports creating and tracking code-aware search and replace campaigns on GitHub and Bitbucket Server. When running a search and replace campaign, you preview the changes, then generate the corresponding pull requests on your GitHub and Bitbucket Server instances. Once created, you can track the PRs to completion in a burndown chart.
 
-Sourcegraph is introducing [Comby syntax](https://comby.dev/#basic-usage) for automated search and replace campaigns. Comby is a code aware search syntax that simplifies finding patterns in code. This makes operations that previously required complex regexp or sed queries much simpler to write.
+Sourcegraph is introducing [Comby syntax](https://comby.dev/#basic-usage) for automated search and replace campaigns. Comby syntax is code-aware and simplifies finding patterns in code. This new capability makes operations that could require complex or awkward regexp queries much simpler to write.
 
-For example, they changing how errors are logged throughout your code, like in [this commit in the Go source](https://github.com/golang/go/commit/3507551a1f0d34d567d77242b68bf19b00caf9b7):
+For example, to change how errors are logged throughout your code, like in [this commit in the Go source](https://github.com/golang/go/commit/3507551a1f0d34d567d77242b68bf19b00caf9b7):
 
 ```Go
 // match:
@@ -103,13 +103,18 @@ Video will be added later, not essential for release post, but important in its 
 
 With the completion of the Java LSIF indexer, LSIF-based precise code intelligence now supports five languages: Go, Typescript, Java, C++, and Python. See [lsif.dev](https://lsif.dev/) for the most up-to-date information on the list of languages with LSIF indexers.
 
-We are looking for feedback from project owners interested in trying out precise code intelligence! If you are responsible for projects using any of the languages we support, we’d love to hear from you. Use our new [LSIF quickstart guide](https://docs.sourcegraph.com/user/code_intelligence/lsif_quickstart) to try it out manually before adding it as a step in your CI.
+We are looking for feedback from project owners interested in trying out precise code intelligence! Use our new [LSIF quickstart guide](https://docs.sourcegraph.com/user/code_intelligence/lsif_quickstart) to try it out manually before adding it as a step in your CI.
 
 ## Scaling search for our largest customers
 
 Customers wanting better indexed search performance or wishing to add many more thousands of repositories to Sourcegraph are now in luck! Sourcegraph's indexed search can now scale horizontally in cluster deployments.
 
-**This improvement requires a Kubernetes migration**. The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourcegraph) for indexed-search services has changed from a Normal Service to a Headless Service. This enables Sourcegraph to individually resolve indexed-search pods. Services are immutable, so please follow the [migration guide](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310).
+The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourcegraph) for indexed-search services has changed from a Normal Service to a Headless Service. This enables Sourcegraph to individually resolve indexed-search pods. Services are immutable, so a [migration is required](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310).
+
+<div class="alert alert-warning">
+  <h4 class="alert-heading">IMPORTANT: required migration for all Kubernetes deployments</h4>
+  <p>Please see the <a href="https://docs.sourcegraph.com/admin/migration/3_10">3.10 migration guide</a> for details.</p>
+</div>
 
 ## Fully automated release testing process
 
