@@ -35,7 +35,7 @@ export default ((props: any) => (
                     <h2 className="pt-5 pb-1">The need for cross-repository code search</h2>
                     <p>
                         When SoFi decided to switch their code host from Bitbucket to GitLab
-                        earlier this year, they quickly realized they would need a more powerful code search tool to
+                        they quickly realized they would need a more powerful code search tool to
                         search over their hundreds of repositories. They also saw an increase in issues due to
                         overlooked code interdependencies when newer engineers committed their code changes. While
                         GitLab fulfilled many of their code host needs, it didn’t offer a good way to investigate the
