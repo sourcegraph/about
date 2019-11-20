@@ -16,7 +16,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 [**🦊 Sourcegraph provides native code intelligence to GitLab**](#sourcegraph-provides-native-code-intelligence-to-gitlab)<br />
 
-[**🤖 Create cross-repository search and replace campaigns**](#precise-lsif-based-code-intelligence-for-5-languages)<br />
+[**🤖 Create cross-repository search and replace campaigns**](#create-cross-repository-search-and-replace-campaigns)<br />
 
 [**🧠 Precise LSIF-based code intelligence for 5 languages**](#precise-lsif-based-code-intelligence-for-5-languages)<br />
 
@@ -77,11 +77,13 @@ TO DO: VIDEO
 </p>
 -->
 
-Sourcegraph now supports creating and tracking code-aware search and replace campaigns on GitHub and Bitbucket Server. When running a search and replace campaign, you preview the changes, then generate the corresponding pull requests on your GitHub and/or Bitbucket Server instances. Once created, you can track the PRs to completion in a burndown chart.
+Sourcegraph now supports creating and tracking code-aware search and replace campaigns on GitHub and Bitbucket Server. When running a search and replace campaign, you preview the changes, then generate the corresponding pull requests on your GitHub and Bitbucket Server instances. Once created, you can track the PRs to completion in a burndown chart.
 
-Sourcegraph is introducing [Comby syntax](https://comby.dev/#basic-usage) for automated search and replace campaigns. Comby is a code aware search syntax that simplifies finding patterns in code. This makes operations that previously required complex regexp or sed queries much simpler to write. For example, changing how errors are logged throughout your code:
+Sourcegraph is introducing [Comby syntax](https://comby.dev/#basic-usage) for automated search and replace campaigns. Comby is a code aware search syntax that simplifies finding patterns in code. This makes operations that previously required complex regexp or sed queries much simpler to write.
 
-```c
+For example, they changing how errors are logged throughout your code, like in [this commit in the Go source](https://github.com/golang/go/commit/3507551a1f0d34d567d77242b68bf19b00caf9b7):
+
+```Go
 // match:
 errors.New(fmt.Sprintf(:[args]))
 
