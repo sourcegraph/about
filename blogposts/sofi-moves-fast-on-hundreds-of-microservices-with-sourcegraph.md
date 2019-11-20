@@ -17,6 +17,6 @@ description: "With Sourcegraph, SoFi can innovate and move quickly while keeping
 
 SoFi helps its over 900,000 members achieve financial independence to realize their ambitions with products for borrowing, saving, spending, investing, and protecting their money. 
 
-With Sourcegraph, SoFi can innovate and move quickly while keeping up with [hundreds of microservices](/case-studies/sofi-moves-fast-on-hundreds-of-microservices).
+In this case study, learn how Sourcegraph enables SoFi to innovate and move quickly while ensuring production stability for their [hundreds of microservices](/case-studies/sofi-moves-fast-on-hundreds-of-microservices).
 
 <a href="/case-studies/sofi-moves-fast-on-hundreds-of-microservices" class="btn btn-primary mt-4">Learn more</a>
