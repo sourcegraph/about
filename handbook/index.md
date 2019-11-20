@@ -38,3 +38,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## Sales
 
 - [Sales](sales/index.md)
+
+## BizOps
+
+- [Analytics](bizops/index.md)
