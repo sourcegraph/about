@@ -23,7 +23,7 @@ See job descriptions and responsibilities of roles on the People Ops team:
 
 **Phone Number:** (650) 318-3480
 
-### WIFI
+### WiFi
 
 We have an internal line and a guest connection. Use the internal connection for your laptop, you may use the guest connection for your cell phone, tablets, or other hardware.
 
