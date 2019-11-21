@@ -6,7 +6,7 @@ The source-of-truth for our open positions is [our careers repository](https://g
 
 We use [Google Hire](https://hire.withgoogle.com/t/sourcegraphcom/hiring/landing/active) for our applicant tracking system (ATS). Google Hire is [being discontinued September 1, 2020](https://support.google.com/hire/answer/9460306) so we are in the process of evaluating alternatives.
 
-## Values
+## Values and practices
 
 1. We want our hiring process to access all potential qualified candidates.
    - We proactively promote our open positions to many different groups, communities, and networks.
