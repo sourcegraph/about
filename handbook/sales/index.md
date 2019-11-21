@@ -114,3 +114,7 @@ Different customers and deals have different needs from our sales team. We segme
 - **Tier 1** = $100k+ ARR
 - **Tier 2** = $42k+ ARR
 - **Tier 3** = $22k+ ARR
+
+## Roles
+
+Account Executive: Responisble for closing deals
