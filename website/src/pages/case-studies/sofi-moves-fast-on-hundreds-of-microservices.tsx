@@ -23,7 +23,7 @@ export default ((props: any) => (
                 author: 'Ursula Robertson, Engineering Manager, SoFi',
                 image: '/case-studies/ursula-robertson-sofi.jpg',
             }}
-            // pdf="https://storage.googleapis.com/sourcegraph-assets/SoFi-Sourcegraph-case-study.pdf"
+            pdf="https://storage.googleapis.com/sourcegraph-assets/sofi_case_study.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
@@ -45,7 +45,7 @@ export default ((props: any) => (
                     </p>
                     <h2 className="pt-5 pb-1">Move fast and don’t break things</h2>
                     <p>
-                        As a financial institution, SoFi needs to avoid downtime--but they also need to continuously
+                        As a financial institution, SoFi needs to avoid downtime—but they also need to continuously
                         innovate to compete. SoFi runs hundreds of microservices. Their fast growth makes it difficult
                         to maintain a complete list of the published APIs showing the interdependencies of their
                         services. A common use case for Sourcegraph is to find which microservice is referenced by
