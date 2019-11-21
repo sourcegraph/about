@@ -1,7 +1,8 @@
 # People Ops
 
-- [Travel](travel.md)
+- [Hiring](hiring.md)
 - [Onboarding](onboarding/index.md)
+- [Travel](travel.md)
 - [Expense reports](expenses.md)
 - [Spending company money](spending-company-money.md)
 - [Glossary](from-graphbook/glossary.md)
