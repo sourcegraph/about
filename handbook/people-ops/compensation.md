@@ -16,7 +16,7 @@ TODO(@sourcegraph/people-ops): add more detail here about the kind of options an
 
 ## Benefits and perks
 
-See [Benefits and perks](benefits-and-perks).
+See [Benefits and perks](benefits-and-perks.md).
 
 ## Compensation increases
 
