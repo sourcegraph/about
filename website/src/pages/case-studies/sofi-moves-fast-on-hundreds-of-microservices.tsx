@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { CaseStudyPage, CaseStudyRequestDemoForm, InContentBlockquote } from '../../components/content/CaseStudyPage'
+import { CaseStudyPage, CaseStudyRequestDemoForm } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 
@@ -16,7 +16,7 @@ export default ((props: any) => (
         <CaseStudyPage
             customer="SoFi"
             title="SoFi moves fast on hundreds of microservices with Sourcegraph"
-            logo="/case-studies/sofi-logo.png"
+            logo="/external-logos/sofi-logo-white.png"
             quote={{
                 quote:
                     'Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
