@@ -33,7 +33,13 @@ export default class HTML extends React.Component<HtmlProps> {
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
                     />
-                    <script type="text/javascript" id="hs-script-loader" async={true} defer={true} src="//js.hs-scripts.com/2762526.js"></script>
+                    <script
+                        type="text/javascript"
+                        id="hs-script-loader"
+                        async={true}
+                        defer={true}
+                        src="//js.hs-scripts.com/2762526.js"
+                    ></script>
                 </head>
                 <body>
                     <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />

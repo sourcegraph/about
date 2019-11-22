@@ -53,6 +53,7 @@
     "lint": "tslint -c tslint.json -p .",
     "stylelint": "stylelint --quiet 'src/**/*.scss'",
     "prettier": "prettier '**/*.{js?(on),ts?(x),md}' --write --list-different",
+    "prettier-check": "yarn run prettier --write=false",
     "deploy": "yarn run build && firebase deploy"
   },
   "devDependencies": {
