@@ -22,7 +22,7 @@ export default ((props: any) => (
                 author: 'Owen Kim, Senior Software Engineer, Convoy',
                 image: '/case-studies/owen-kim-convoy.jpg',
             }}
-            // pdf="https://storage.googleapis.com/sourcegraph-assets/Convoy-Sourcegraph-case-study.pdf"
+            pdf="https://storage.googleapis.com/sourcegraph-assets/convoy_software_engineers_and_data_scientists_work_better_together.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
