@@ -16,13 +16,13 @@ export default ((props: any) => (
         <CaseStudyPage
             customer="Convoy"
             title="At Convoy, Software Engineers and Data Scientists work better together"
-            logo="/case-studies/convoy-logo.png"
+            logo="/external-logos/convoy-logo-white.svg"
             quote={{
                 quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
                 author: 'Owen Kim, Senior Software Engineer, Convoy',
                 image: '/case-studies/owen-kim-convoy.jpg',
             }}
-            // pdf="https://storage.googleapis.com/sourcegraph-assets/Convoy-Sourcegraph-case-study.pdf"
+            pdf="https://storage.googleapis.com/sourcegraph-assets/convoy_software_engineers_and_data_scientists_work_better_together.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
