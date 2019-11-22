@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
         customer: 'SoFi',
         logo: '/external-logos/sofi-logo-white.png',
         quote:
-            'Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
+            'With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
         author: {
             name: 'Ursula Robertson',
             title: 'Engineering Manager',
