@@ -110,7 +110,7 @@ The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourc
 <div class="alert alert-warning">
   <p>
     <strong>IMPORTANT: required migration for all Kubernetes deployments.</strong>
-    Please see the <a href="https://docs.sourcegraph.com/admin/migration/3_10">3.10 migration guide</a> for details.
+    Please see the <a href="https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310">3.10 migration guide</a> for details.
   </p>
 </div>
 
