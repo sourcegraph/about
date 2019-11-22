@@ -26,8 +26,10 @@ Everyone's compensation is reviewed regularly as part of our [performance review
 
 We use market data from various sources (e.g. venture capital firms, 3rd-party consultants) to determine the market rate for each role and level within that role.
 
-To provide competitive and generous compensation (both salary and equity) to everyone, regardless of location, we target our initial offers to the 80th-percentile market rate in San Francisco, California ([one of the most expensive cities in the world](https://www.businessinsider.com/how-expensive-is-san-francisco-mind-blowing-facts-2019-5)). This means that when you start at Sourcegraph, your compensation will be higher than 80% of people who are in the same role as you at companies similar in size/stage to Sourcegraph in San Francisco.
+<!-- We need to get fresh data and document our comp ranges before we can claim this
+To provide competitive and generous compensation (both salary and equity) to everyone, regardless of location, we target our initial offers to the Xth-percentile market rate in San Francisco, California ([one of the most expensive cities in the world](https://www.businessinsider.com/how-expensive-is-san-francisco-mind-blowing-facts-2019-5)). This means that when you start at Sourcegraph, your compensation will be higher than X% of people who are in the same role as you at technology companies similar in size/stage to Sourcegraph in the San Francisco Bay Area.
+-->
 
 ## Ranges
 
-TODO(@sourcegraph/people-ops): publish salary and equity ranges for each role and level.
+TODO(@sourcegraph/people-ops): document salary and equity ranges for each role and level, and document the percentile compensation we target for initial offers (see above paragraph that is commented out).
