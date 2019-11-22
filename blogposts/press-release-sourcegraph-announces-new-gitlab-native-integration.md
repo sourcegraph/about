@@ -8,7 +8,7 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-**GitLab Collaboration Emphasizes Importance of Code Navigation and Intelligence in the Developer Workflow; Universal Code Search Solution Makes Elite Development Accessible for All; Company Momentum Fueled by Increasing Demand for Universal Developer Tools**
+**GitLab Collaboration Emphasizes Importance of Code Navigation and Intelligence in the Developer Workflow; Universal Code Search Solution Makes Elite Development Accessible for All; Company Momentum Fueled by Increasing Demand for Universal Developer Tools** 
 <p style="text-align: center">
   <img src="/blog/gitlab-integration-banner-dark.png" />
 </p>
