@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
@@ -10,6 +9,7 @@ import { GitLabIntegrationSection } from '../components/product/GitLabIntegratio
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
+import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { Tweets } from '../components/Tweets'
 import { Vimeo } from '../components/Vimeo'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
@@ -31,6 +31,21 @@ const testimonials: Testimonial[] = [
             text: 'Read case study',
             url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
             target: '_blank',
+        },
+    },
+    {
+        customer: 'SoFi',
+        logo: '/external-logos/sofi-logo-white.png',
+        quote:
+            'Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
+        author: {
+            name: 'Ursula Robertson',
+            title: 'Engineering Manager',
+            image: '/case-studies/ursula-robertson-sofi.jpg',
+        },
+        cta: {
+            text: 'Read case study',
+            url: 'case-studies/sofi-moves-fast-on-hundreds-of-microservices',
         },
     },
     {

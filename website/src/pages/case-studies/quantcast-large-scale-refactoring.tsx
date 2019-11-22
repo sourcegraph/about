@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { CaseStudyPage, InContentBlockquote, CaseStudyRequestDemoForm } from '../../components/content/CaseStudyPage'
+import { CaseStudyPage, CaseStudyRequestDemoForm, InContentBlockquote } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 

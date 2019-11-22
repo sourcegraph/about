@@ -16,7 +16,7 @@ export default ((props: any) => (
         <CaseStudyPage
             customer="Convoy"
             title="Convoy improved their developer on-boarding with Sourcegraph"
-            logo="/case-studies/convoy-logo.png"
+            logo="/external-logos/convoy-logo-white.svg"
             quote={{
                 quote:
                     'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
