@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export const Tweets: React.FunctionComponent<any> = props => (
-    <div className="testimonials row">
+    <div className="tweets row">
         <div className="col-md-4">
             <blockquote className="twitter-tweet" data-lang="en">
                 <p lang="en" dir="ltr">

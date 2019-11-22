@@ -36,25 +36,25 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
     <div className={`${slugify(customer).toLowerCase()}-${className}`}>
         <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
             {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
+            {pdf && (
+                <a
+                    href={pdf}
+                    className="btn btn-primary mt-4"
+                    rel="nofollow"
+                    onClick={() => {
+                        eventLogger.trackCaeStudyDownloadPDFClicked(customer)
+                    }}
+                    target="_blank"
+                >
+                    <i className="fa fa-file-pdf pr-2"></i>
+                    Download PDF
+                </a>
+            )}
         </CaseStudyJumbotron>
 
         <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
-            <div className="container py-4 text-center ">
+            <div className="container py-4">
                 <h1 className={`${titleClassName}`}>{title}</h1>
-                {pdf && (
-                    <a
-                        href={pdf}
-                        className="btn btn-primary mt-3 mb-4"
-                        rel="nofollow"
-                        onClick={() => {
-                            eventLogger.trackCaeStudyDownloadPDFClicked(customer)
-                        }}
-                        target="_blank"
-                    >
-                        <i className="fa fa-file-pdf pr-2"></i>
-                        Download PDF
-                    </a>
-                )}
             </div>
         </ContentSection>
 

@@ -1115,27 +1115,15 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@react-bootstrap/react-popper@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@react-bootstrap/react-popper/-/react-popper-1.2.1.tgz#4edf4851d5b4dcf2eb6b264ebbed1a7b7654177b"
-  integrity sha512-4l3q7LcZEhrSkI4d3Ie3g4CdrXqqTexXX4PFT45CB0z5z2JUbaxgRwKNq7r5j2bLdVpZm+uvUGqxJw8d9vgbJQ==
-  dependencies:
-    babel-runtime "6.x.x"
-    create-react-context "^0.2.1"
-    popper.js "^1.14.4"
-    prop-types "^15.6.1"
-    typed-styles "^0.0.5"
-    warning "^3.0.0"
-
 "@restart/context@^2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@restart/context/-/context-2.1.4.tgz#a99d87c299a34c28bd85bb489cb07bfd23149c02"
   integrity sha512-INJYZQJP7g+IoDUh/475NlGiTeMfwTXUEr3tmRneckHIxNolGOW9CTq83S8cxq0CgJwwcMzMJFchxvlwe7Rk8Q==
 
-"@restart/hooks@^0.3.0":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.1.tgz#bcc0ee82500bb2ac5849c3c3384d520a196cb7a0"
-  integrity sha512-kjGGlli8iTe5TFDw6qHZJ5QK1naITMveIO+o8yQJJqwX8VIkiQzLddK98Lduga2krJMzWlNqDR/4isGLiyBlUA==
+"@restart/hooks@^0.3.11":
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.15.tgz#17cb37a272dfb9cbacf83614a5a7170e68f17d75"
+  integrity sha512-rVNba1A2oMzKBg16fCrrHmCf4JjOzFhT9TWR8J+Y8iOcY4zffxtP3ke7mEsakvghHZT+9//uDOPSSeuBDW41GQ==
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
@@ -1319,6 +1307,14 @@
   version "16.8.22"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.22.tgz#7f18bf5ea0c1cad73c46b6b1c804a3ce0eec6d54"
   integrity sha512-C3O1yVqk4sUXqWyx0wlys76eQfhrQhiDhDlHBrjER76lR2S2Agiid/KpOU9oCqj1dISStscz7xXz1Cg8+sCQeA==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/react@^16.8.23", "@types/react@^16.9.11":
+  version "16.9.11"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.11.tgz#70e0b7ad79058a7842f25ccf2999807076ada120"
+  integrity sha512-UBT4GZ3PokTXSWmdgC/GeCGEJXE5ofWyibCcecRLUVN2ZBpXQGVgQGtG2foS7CrTKFKlQVVswLvf7Js6XA/CVQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -2032,7 +2028,7 @@ babel-preset-gatsby@^0.2.0:
     "@babel/preset-react" "^7.0.0"
     babel-plugin-macros "^2.4.2"
 
-babel-runtime@6.x.x, babel-runtime@^6.26.0, babel-runtime@^6.6.1:
+babel-runtime@^6.26.0, babel-runtime@^6.6.1:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -10290,15 +10286,15 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-bootstrap@^1.0.0-beta.8:
-  version "1.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.0.0-beta.9.tgz#3d9e429fd3d7a81db241aa824646c73e99a8566c"
-  integrity sha512-M0BYLuuUdMITJ16+DDDb1p4vWV87csEBi/uOxZYODuDZh7hvbrJVahfvPXcqeqq4eEpNL+PKSlqb9fNaY0HZyA==
+react-bootstrap@^1.0.0-beta.14:
+  version "1.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.0.0-beta.14.tgz#30330df61edbed1f0405f75363ef72d77c1fed57"
+  integrity sha512-UGK5f78FE8wAei1YL/oSwFlJZLqxJ/h4S8DCwHyY8hQjFCrjEW5PoEBTOOhQ6PQL6WOsZe1jkiOJG7L5TZWu+w==
   dependencies:
     "@babel/runtime" "^7.4.2"
-    "@react-bootstrap/react-popper" "1.2.1"
     "@restart/context" "^2.1.4"
-    "@restart/hooks" "^0.3.0"
+    "@restart/hooks" "^0.3.11"
+    "@types/react" "^16.8.23"
     classnames "^2.2.6"
     dom-helpers "^3.4.0"
     invariant "^2.2.4"
@@ -10308,7 +10304,7 @@ react-bootstrap@^1.0.0-beta.8:
     prop-types-extra "^1.1.0"
     react-overlays "^1.2.0"
     react-transition-group "^4.0.0"
-    uncontrollable "^6.1.0"
+    uncontrollable "^7.0.0"
     warning "^4.0.3"
 
 react-context-toolbox@^2.0.2:
@@ -12674,11 +12670,6 @@ type-of@^2.0.1:
   resolved "https://registry.yarnpkg.com/type-of/-/type-of-2.0.1.tgz#e72a1741896568e9f628378d816d6912f7f23972"
   integrity sha1-5yoXQYllaOn2KDeNgW1pEvfyOXI=
 
-typed-styles@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/typed-styles/-/typed-styles-0.0.5.tgz#a60df245d482a9b1adf9c06c078d0f06085ed1cf"
-  integrity sha512-ht+rEe5UsdEBAa3gr64+QjUOqjOLJfWLvl5HZR5Ev9uo/OnD3p43wPeFSB1hNFc13GXQF/JU1Bn0YHLUqBRIlw==
-
 typed-styles@^0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/typed-styles/-/typed-styles-0.0.7.tgz#93392a008794c4595119ff62dde6809dbc40a3d9"
@@ -12712,13 +12703,23 @@ unc-path-regex@^0.1.2:
   resolved "https://registry.yarnpkg.com/unc-path-regex/-/unc-path-regex-0.1.2.tgz#e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa"
   integrity sha1-5z3T17DXxe2G+6xrCufYxqadUPo=
 
-uncontrollable@^6.0.0, uncontrollable@^6.1.0:
+uncontrollable@^6.0.0:
   version "6.2.3"
   resolved "https://registry.yarnpkg.com/uncontrollable/-/uncontrollable-6.2.3.tgz#e7dba0d746e075122ed178f27ad2354d343196c7"
   integrity sha512-VgOAoBU2ptCL2bfTG2Mra0I8i1u6Aq84AFonD5tmCAYSfs3hWvr2Rlw0q2ntoxXTHjcQOmZOh3FKaN+UZVyREQ==
   dependencies:
     "@babel/runtime" "^7.4.5"
     invariant "^2.2.4"
+
+uncontrollable@^7.0.0:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/uncontrollable/-/uncontrollable-7.1.1.tgz#f67fed3ef93637126571809746323a9db815d556"
+  integrity sha512-EcPYhot3uWTS3w00R32R2+vS8Vr53tttrvMj/yA1uYRhf8hbTG2GyugGqWDY0qIskxn0uTTojVd6wPYW9ZEf8Q==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+    "@types/react" "^16.9.11"
+    invariant "^2.2.4"
+    react-lifecycles-compat "^3.0.4"
 
 underscore.string@^3.3.5:
   version "3.3.5"
