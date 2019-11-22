@@ -45,7 +45,7 @@ const testimonials: Testimonial[] = [
         },
         cta: {
             text: 'Read case study',
-            url: 'case-studies/sofi-moves-fast-on-hundreds-of-microservices',
+            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
         },
     },
     {
