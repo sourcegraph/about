@@ -5,7 +5,7 @@ This page lists the roles and responsibilities of the Sourcegraph CEO.
 ## Responsibilities
 
 - Set the high-level strategy (how we realize our vision and achieve our mission).
-- Communicate the [values](../values.md), mission, vision, and strategy to our team and the entire community.
+- Communicate the [values](../../company/values.md), mission, vision, and strategy to our team and the entire community.
 - Hire great people. Help people that are not a good fit find another job.
 - Ensure the company has enough cash (through revenue, cost-cutting, and/or fundraising).
 - Engage with the current and prospective Sourcegraph community in person, on social media, etc.
