@@ -44,6 +44,6 @@ The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in
 
 The handbook uses [docsite](https://github.com/sourcegraph/docsite).
 
-- To preview changes to handbook content locally, run `docsite serve -http=:5081`, and open http://localhost:5081.
-- To check for broken links and other lint problems, run `docsite check`.
-- See [detailed `docsite` installation instructions](handbook/editing.md#running-a-local-handbook-site).
+- To preview changes to handbook content locally, run `make serve`, and open http://localhost:5082.
+- To check for broken links and other lint problems, run `make docsite-check`.
+- See [detailed `docsite` instructions](handbook/editing.md#running-a-local-handbook-site).
