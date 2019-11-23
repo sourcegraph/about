@@ -46,3 +46,16 @@ A user is an individual who has installed Sourcegraph.
 ### Lead
 
 A lead is an individual with an indicated interest in the product who has given us their contact information through installating Sourcegraph or submitting a 'Request a Demo' form. 
+
+### Marketing Qualified Lead
+
+An MQL is an individual who has signaled interest in a paid version of Sourcegraph and works for an organization that meets the qualifications to be passed off to sales.
+
+The following actions signal intent:
+- Submitting 'Request a Demo ' form
+- Installing Sourcegraph
+- Showing interest at an event or conference
+
+The following attributes satisfy qualification:
+- Representing an organization with 50+ engineers
+- Job title contains Director, Manager, VP, Vice President, Senior, Sr, Head, Lead or CTO
