@@ -31,6 +31,8 @@ At Sourcegraph, we want to fix this and eventually enable everyone to build soft
 
 When phase 1 is almost done, we'll reveal phase 2: how we'll work toward enabling everyone to code. If you think that's crazy, ask yourself: now that billions of people have access to the Internet, is coding more like reading and writing (which virtually everyone does) or publishing books (which 0.1% of the population does)?
 
+See [Sourcegraph strategy](/company/strategy).
+
 ## Make basic code intelligence ubiquitous
 
 Every developer deserves to have all these features work 100% of the time:
