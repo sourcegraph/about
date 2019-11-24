@@ -112,11 +112,11 @@ export default class About extends React.Component<any, any> {
                                         </p>
                                     </div>
                                 </div>
-                                <Link to="/handbook">
+                                <a href="/handbook">
                                     <button className="btn btn-primary about__plan-btn">
                                         Read the Sourcegraph handbook
                                     </button>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                         <div className="about__founders">
