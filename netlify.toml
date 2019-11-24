@@ -45,6 +45,12 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   force = true
 
 [[redirects]]
+  from = "/workflow/*"
+  to = "https://about-docsite.sourcegraph.com/workflow/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/search"
   to = "https://about-docsite.sourcegraph.com/search"
   status = 200
