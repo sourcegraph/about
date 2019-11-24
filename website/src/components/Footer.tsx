@@ -38,9 +38,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <li className="nav-item">
                                 <Link to="/product">Product</Link>
                             </li>
-                            {/*<li className="nav-item">
-                            <Link to="/solutions">Use cases</Link>
-</li> TODO(sqs)*/}
                             <li className="nav-item">
                                 <Link to="/product">What is a developer platform?</Link>
                             </li>
@@ -88,6 +85,9 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             </li>
                             <li className="nav-item">
                                 <Link to="/about">About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/handbook">Handbook</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/contact">Contact</Link>
