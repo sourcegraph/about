@@ -2,7 +2,7 @@
 
 We want Sourcegraph to be:
 
-- **For developers:** the best way to answer questions and get unblocked while writing, reviewing, or reading code.
+- **For developers:** the best way to answer questions and get unblocked while writing, reviewing, and reading code.
 - **For organizations** (engineering leaders and internal tools teams): the infrastructure for developer tools and data.
 
 This is an overview of what’s coming in the next 3-6 months.  More details are in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing). Our high-level vision is outlined in the [Sourcegraph master plan](https://about.sourcegraph.com/plan).
