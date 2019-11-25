@@ -90,4 +90,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [:octocat: vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
 - Vanesa loves to travel (45 countries so far), spend time with her daughter and husband, sing and make jewelry. She grew up in the jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics and Political Science before transtitioning to software engineering. Her weakness is sushi.
 
+## Noemi Mercado
+
+- People Ops
+- San Francisco, CA, USA 🇺🇸
+- [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/)
+- Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. She has two teenage brothers that keep her up to date on the latest trends and lingo. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pug named Pumba.
+
 <!-- Paste *your* section above this line! -->
