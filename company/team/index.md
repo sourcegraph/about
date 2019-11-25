@@ -97,4 +97,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/)
 - Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. She has two teenage brothers that keep her up to date on the latest trends and lingo. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pug named Pumba.
 
+## Nick Snyder
+
+- VP Engineering
+- Belmont, CA, USA 🇺🇸
+- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/)
+- Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the priviledge to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits. 
+
 <!-- Paste *your* section above this line! -->
