@@ -62,4 +62,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [:octocat: efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
 - Eric received a PhD in Computer Science from the University of Wisconsin - Milwaukee where he published research on compiler construction and taught courses in compilers and software engineering. Prior to Sourcegraph, Eric built infrastructure for UCaaS products. While not programming, Eric enjoys cooking while muttering Gordon Ramsay deep cuts to himself.
 
+## Keegan Carruthers-Smith
+
+- Software Engineer
+- Cape Town, South Africa :south_africa:
+- [keegan@sourcegraph.com](mailto:keegan@sourcegraph.com), [:octocat: keegancsmith](https://github.com/keegancsmith), [@keegan_csmith](https://twitter.com/keegan_csmith)
+- Keegan likes living in places with lots of sun and fibre internet. Prior to Sourcegraph, Keegan worked on the developer tools team at Facebook and spent too much time studying Mathematics and Computer Science. When not doing his day job, Keegan is usually out and about with his wife and son. He can also be found in a skatepark, on a squash court or on a mountain.
+
 <!-- Paste *your* section above this line! -->
