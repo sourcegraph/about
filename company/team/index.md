@@ -32,7 +32,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Product Manager
 - Redwood City, CA, USA 🇺🇸
 - [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney)
-- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and lead a small dev team at Platinum Performance. At Palantir Technologies, lead the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science. 
+- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and lead a small dev team at Platinum Performance. At Palantir Technologies, lead the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science.
 
 ## Stephen Gutekanst
 
@@ -44,8 +44,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Ryan Slade
 
 - Software Engineer
-- Cape Town, South Africa :south_africa: 
+- Cape Town, South Africa :south_africa:
 - [rslade@sourcegraph.com](mailto:rslade@sourcegraph.com), [@frefity](https://twitter.com/frefity), [LinkedIn](https://www.linkedin.com/in/ryan-slade-1bb36bb/)
 - Ryan enjoys spending time with his family, mountain biking and playing squash. Prior to Sourcegraph he helped develop a real time bidding system for online advertisers at Avocet and worked for a taxi hailing company in London, Hailo. He studied Computer Science at the University of Cape Town and has lived in the South Africa, the UK, Singapore and the US.
+
+## Rijnard van Tonder
+
+- Software Engineer
+- Phoenix, AZ, USA 🇺🇸
+[rijnard@sourcegraph.com](mailto:rijnard@sourcegraph.com), [@rvtond](https://twitter.com/rvtond), [LinkedIn](https://www.linkedin.com/in/rijnard)
+- Rijnard just wants to stop the proliferation of bad code. Seriously, it's out of control. His favorite color is OCaml, and he collects stamps and flashlights. He is currently living a pretty unthethered life while working for Sourcegraph. Incidentally, this aligns well with his goals of building future thinking dev tools that improve the state of software. Rijnard holds a PhD in Computer Science from Carnegie Mellon University, where his research focused on automated bug finding and bug fixing.
 
 <!-- Paste *your* section above this line! -->
