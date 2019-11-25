@@ -83,4 +83,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [joe@sourcegraph.com](mailto:joe@sourcegraph.com), [@unknwon](https://github.com/unknwon), [LinkedIn](https://www.linkedin.com/in/jiahua-chen-86218a81/)
 - Joe lives in his little dark room. Prior to Sourcegraph, Joe created the Gogs project, a painless self-hosted Git service. Joe graduated with a MS in Software Development from Boston University.
 
+## Vanesa Ortiz
+
+- Content Engineer
+- San Francisco, CA, USA 🇺🇸
+- [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [:octocat: vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
+- Vanesa loves to travel (45 countries so far), spend time with her daughter and husband, sing and make jewelry. She grew up in the jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics and Political Science before transtitioning to software engineering. Her weakness is sushi.
+
 <!-- Paste *your* section above this line! -->
