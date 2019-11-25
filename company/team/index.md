@@ -53,6 +53,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer
 - Phoenix, AZ, USA 🇺🇸
 [rijnard@sourcegraph.com](mailto:rijnard@sourcegraph.com), [@rvtond](https://twitter.com/rvtond), [LinkedIn](https://www.linkedin.com/in/rijnard)
-- Rijnard just wants to stop the proliferation of bad code. Seriously, it's out of control. His favorite color is OCaml, and he collects stamps and flashlights. He currently lives a pretty unthethered life while working for Sourcegraph. Incidentally, this aligns well with his goal of building future thinking dev tools that improve the state of software. Rijnard holds a PhD in Computer Science from Carnegie Mellon University, where his research focused on automated bug finding and bug fixing.
+- Rijnard just wants to stop the proliferation of bad code. Seriously, it's out of control. His favorite color is OCaml, and he collects stamps and flashlights. He currently lives a pretty untethered life while working for Sourcegraph. Incidentally, this aligns well with his goal of building future thinking dev tools that improve the state of software. Rijnard holds a PhD in Computer Science from Carnegie Mellon University, where his research focused on automated bug finding and bug fixing.
 
 <!-- Paste *your* section above this line! -->
