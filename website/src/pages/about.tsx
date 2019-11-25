@@ -113,9 +113,7 @@ export default class About extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <a href="/handbook">
-                                    <button className="btn btn-primary about__plan-btn">
-                                        Read the Sourcegraph handbook
-                                    </button>
+                                    <button className="btn btn-primary">Read the Sourcegraph handbook</button>
                                 </a>
                             </div>
                         </div>
