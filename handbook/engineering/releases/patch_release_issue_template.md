@@ -2,23 +2,30 @@
 This template is used for patch releases.
 It is not used for our monthly major/minor releases of Sourcegraph.
 See [release_issue_template.md](release_issue_template.md) for the monthly release checklist.
+
+Run a find replace on:
+- $MAJOR
+- $MINOR
+- $PATCH
 -->
 
-# MAJOR.MINOR.PATCH Release
+**Attention developers:** Add pending changes to this checklist, cherry-pick the relevant commits onto branch `$MAJOR.$MINOR`, and then check off the item:
 
-- [ ] Create a checklist of the changes that you want to release (i.e. open or merged PRs).
-- [ ] Communicate your intentions by sending a message to #dev-announce that includes a link to this issue.
-- [ ] Cherry pick changes into the existing release branch (this exists already as `MAJOR.MINOR`, do not create a new branch) and check them off the list above.
-    - [ ] Ensure that the cherry-picked commits don't depend on any commits that aren't already in the release branch.
-- [ ] Push the release branch with your cherry-picked commit(s) and make sure CI passes.
+- [ ] TODO: Add items
 
 ## Release sourcegraph/server
 
-- [ ] Create an annotated git tag and push it (this triggers CI to build the Docker images for the new version). For example:
+- [ ] Push the branch `$MAJOR.$MINOR` with your cherry-picked commit(s) and make sure CI passes.
+- [ ] Push a release candidate tag:
     ```
-    VERSION='v3.2.1-rc.1' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
+    VERSION=$MAJOR.$MINOR git checkout "$VERSION"
+    VERSION='v$MAJOR.$MINOR.$PATCH-rc.1' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
     ```
-
+- [ ] If CI passes, push the release tag:
+    ```
+    VERSION=$MAJOR.$MINOR git checkout "$VERSION"
+    VERSION='v$MAJOR.$MINOR.$PATCH' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
+    ```
 - [ ] Wait for the final Docker images to be available at https://hub.docker.com/r/sourcegraph/server/tags.
 
 ## Release Kubernetes deployment
@@ -26,7 +33,15 @@ See [release_issue_template.md](release_issue_template.md) for the monthly relea
 In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
 
 - [ ] Wait for Renovate to open a PR to update the image tags and merge that PR ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/199)).
-- [ ] Follow the ["Cutting a new patch version" instructions in https://github.com/sourcegraph/deploy-sourcegraph/blob/master/README.dev.md](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/README.dev.md#cutting-a-new-patch-version-eg-v2121)
+- [ ] Cherry-pick the image tag update commits from `master` onto `$MAJOR.$MINOR` branch. Then push the release tag:
+    ```
+    git checkout $MAJOR.$MINOR
+    git pull
+    git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
+    git push $MAJOR.$MINOR
+    git tag v$MAJOR.$MINOR.$PATCH
+    git push v$MAJOR.$MINOR.$PATCH
+    ```
 
 ## Update the docs
 
