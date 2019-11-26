@@ -107,6 +107,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Christopher Flournoy
 - San Francisco, CA USA
-- [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
+- [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chrisflournoy/)
 - Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events.  Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration. 
 <!-- Paste *your* section above this line! -->
