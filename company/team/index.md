@@ -111,9 +111,16 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/)
 - Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the privilege to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits. 
 
-
 ## Christopher Flournoy
 - San Francisco, CA, USA 🇺🇸
 - [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chrisflournoy/)
 - Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events.  Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration. 
+
+## Thorsten Ball
+
+- Software Engineer
+- Aschaffenburg, Bavaria, Germany 🇩🇪
+- [thorsten@sourcegraph.com](mailto:thorsten@sourcegraph.com), [@thorstenball](https://twitter.com/thorstenball), [LinkedIn](https://www.linkedin.com/in/thorsten-ball-3142b652), [thorstenball.com](https://thorstenball.com)
+- Thorsten started his career as a software engineer after dropping out of college where he studied philosophy. Since then he's mainly worked for startups (flinc, ioki) in the mobility space before starting at Sourcegraph. In his spare time, he's also a writer and wrote and self-published [two](https://interpreterbook.com) [books](https://compilerbook.com) about his favorite pet topics: interpreters & compilers. He lives together with his wife and daughter in a small-ish city in Germany. He met his wife, who happened to hail from the same small town in Germany, in Australia while he was working at a shipyard.
+
 <!-- Paste *your* section above this line! -->
