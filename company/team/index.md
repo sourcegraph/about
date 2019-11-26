@@ -123,11 +123,18 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [thorsten@sourcegraph.com](mailto:thorsten@sourcegraph.com), [@thorstenball](https://twitter.com/thorstenball), [LinkedIn](https://www.linkedin.com/in/thorsten-ball-3142b652), [thorstenball.com](https://thorstenball.com)
 - Thorsten started his career as a software engineer after dropping out of college where he studied philosophy. Since then he's mainly worked for startups (flinc, ioki) in the mobility space before starting at Sourcegraph. In his spare time, he's also a writer and wrote and self-published [two](https://interpreterbook.com) [books](https://compilerbook.com) about his favorite pet topics: interpreters & compilers. He lives together with his wife and daughter in a small-ish city in Germany. He met his wife, who happened to hail from the same small town in Germany, in Australia while he was working at a shipyard.
 
+## Loïc Guychard
+
+- Software engineer, manager 
+- Brest, Brittany, France 🇫🇷
+- [loic@sourcegraph.com](mailto:loic@sourcegraph.com), [lguychard](https://github.com/lguychard), [LinkedIn](https://www.linkedin.com/in/lo%C3%AFc-guychard-749b8152/)
+- Loïc loves oceanside living and long bike rides. He started his career as a linguist, before transitioning to software engineering while working at Dashlane.
+
 ## Chris Wendt
 
 - Software Engineer
 - Boise, ID, USA 🇺🇸
-- [chris@sourcegraph.com](mailto:chris@sourcegraph.com), [:octocat: chrismwendt](https://github.com/chrismwendt), [@chrismwendt](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
+- [chris@sourcegraph.com](mailto:chris@sourcegraph.com), [chrismwendt](https://github.com/chrismwendt), [@chrismwendt](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
 - Chris is a programming language enthusiast, speedcuber, SSBM player, and dog lover. He has worked on a distributed data pipeline at Microsoft, search at GitHub, developer experience at ThoughtSpot, and earned his BS in Computer Science with a specialization in computer graphics from Purdue.
 
 <!-- Paste *your* section above this line! -->
