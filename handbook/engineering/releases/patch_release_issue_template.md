@@ -12,7 +12,7 @@ Arguments:
 
 **Attention developers:** Add pending changes to this checklist, cherry-pick the relevant commits onto branch `$MAJOR.$MINOR`, and then check off the item:
 
-- [ ] TODO: Add items
+- [ ] TODO: Add PR or commit links here
 
 ## Release sourcegraph/server
 
