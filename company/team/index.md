@@ -104,17 +104,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/)
 - Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the priviledge to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits. 
 
+
 ## Christopher Flournoy
-
-- Account Executive 
-- San Francisco, CA 🇺🇸
-- [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chrisflournoy/)
-- Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events.  Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration. 
-
-## Eric Brody-Moore
-
-- Growth & Business Operations 
-- San Francisco, CA 🇺🇸
-- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ericbm/), [:octocat: ebrodymoore](https://github.com/ebrodymoore)
-- Eric splits his weekends eating his way through the Bay Area and getting out of town to explore the west coast nature, snowboard or golf. Prior to Sourcegraph, Eric was the first hire at Drift Marketplace, where he built the finance and analytics functions, and Deloitte Consulting’s strategy and operations practice. Eric graduated with a BS in Finance from the University of Washington.
+- San Francisco, CA USA
+- [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
+- Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events.  Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration. 
 <!-- Paste *your* section above this line! -->
