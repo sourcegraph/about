@@ -151,5 +151,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [ryan@sourcegraph.com](mailto:ryan@sourcegraph.com), [@ryan_blunden](https://twitter.com/ryan_blunden), [LinkedIn](https://www.linkedin.com/in/ryanblunden/)
 - For work, Ryan enjoys writing documentation, creating videos, case studies, blog posts, and presenting. Essentially, sharing with developers everywhere how Sourcegraph can help them save time and ship better code. For fun, he loves hanging out with his daughter Ruby (Python wasn't an option :), [playing drums](https://rynodrums.com/), and riding his motorcycle to explore new places and meet new people. And eating eggs benedict at every opportunity.
 
+## Dan Adler
+
+- VP Business
+- San Francisco, CA, USA 🇦🇺
+- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/)
+- In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
 
 <!-- Paste *your* section above this line! -->
