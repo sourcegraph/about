@@ -62,6 +62,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
 - Eric received a PhD in Computer Science from the University of Wisconsin - Milwaukee where he published research on compiler construction and taught courses in compilers and software engineering. Prior to Sourcegraph, Eric built infrastructure for UCaaS products. While not programming, Eric enjoys cooking while muttering Gordon Ramsay deep cuts to himself.
 
+## Eric Brody-Moore
+
+- Growth & Business Operations 
+- San Francisco, CA 🇺🇸
+- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ericbm/), [:octocat: ebrodymoore](https://github.com/ebrodymoore)
+- Eric splits his weekends eating his way through the Bay Area and getting out of town to explore the west coast nature, snowboard or golf. Prior to Sourcegraph, Eric was the first hire at Drift Marketplace, where he built the finance and analytics functions, and Deloitte Consulting’s strategy and operations practice. Eric graduated with a BS in Finance from the University of Washington.
+
 ## Keegan Carruthers-Smith
 
 - Software Engineer
