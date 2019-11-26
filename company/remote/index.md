@@ -4,11 +4,13 @@
 
 Sourcegraph is an all-remote company, which means:
 
-- All teammates work remotely.
-- Sourcegraph does not have any offices.
+- All teammates work remotely.*
+- Sourcegraph does not have any offices.*
 - We work asynchronously across time zones and continents.
 
 - [Tips for working remotely](tips.md)
+
+<small>* Except for a small office in San Francisco used to provide a mailing address, for corporate filings, and as legally required.</small>
 
 ## Transition to all-remote
 
