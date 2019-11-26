@@ -110,6 +110,10 @@ Note that this is a stage we may add in the future to indicate we are almost at 
 
 Deal signed!
 
+## How to create a license key
+
+Once a deal is closed won, a license key needs to be created. In order to create a license key for it is critical for the administrator to create a Sourcegraph.com account and username. Once the username is created, we will issue a license key for the customer to input into their management console in the licenseKey field.
+
 ## Segmentation
 
 Different customers and deals have different needs from our sales team. We segment customers and deals based on their actual or projected ARR:
@@ -159,4 +163,8 @@ Categorize any outbound emails into the ‘Manual Outbound Workflow’, which se
 
 Maintaining [Server Installers to Company List](https://docs.google.com/spreadsheets/d/1Y2Z23-2uAjgIEITqmR_tC368OLLbuz12dKjEl4CMINA/edit?usp=sharing) and [Server to Company List](https://docs.google.com/spreadsheets/d/1wo_KQIcGrNGCWYKa6iHJ7MImJ_aI7GN12E-T21Es8TU/edit?usp=sharing) spreadsheets for every new company on a trial and new customers.
 
+<<<<<<< HEAD
 These are used as join tables in Looker, and are important to connect instance data to a specific customer.
+=======
+These are used as join tables in Looker, and are important to connect instance data to a specific customer.  
+>>>>>>> How to create a license key
