@@ -44,7 +44,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Ryan Slade
 
 - Software Engineer
-- Cape Town, South Africa :south_africa:
+- Cape Town, South Africa 🇿🇦
 - [rslade@sourcegraph.com](mailto:rslade@sourcegraph.com), [@frefity](https://twitter.com/frefity), [LinkedIn](https://www.linkedin.com/in/ryan-slade-1bb36bb/)
 - Ryan enjoys spending time with his family, mountain biking and playing squash. Prior to Sourcegraph he helped develop a real time bidding system for online advertisers at Avocet and worked for a taxi hailing company in London, Hailo. He studied Computer Science at the University of Cape Town and has lived in the South Africa, the UK, Singapore and the US.
 
@@ -59,21 +59,21 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Milwaukee, WI, USA 🇺🇸
-- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [:octocat: efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
+- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
 - Eric received a PhD in Computer Science from the University of Wisconsin - Milwaukee where he published research on compiler construction and taught courses in compilers and software engineering. Prior to Sourcegraph, Eric built infrastructure for UCaaS products. While not programming, Eric enjoys cooking while muttering Gordon Ramsay deep cuts to himself.
 
 ## Keegan Carruthers-Smith
 
 - Software Engineer
-- Cape Town, South Africa :south_africa:
-- [keegan@sourcegraph.com](mailto:keegan@sourcegraph.com), [:octocat: keegancsmith](https://github.com/keegancsmith), [@keegan_csmith](https://twitter.com/keegan_csmith)
+- Cape Town, South Africa 🇿🇦
+- [keegan@sourcegraph.com](mailto:keegan@sourcegraph.com), [keegancsmith](https://github.com/keegancsmith), [@keegan_csmith](https://twitter.com/keegan_csmith)
 - Keegan likes living in places with lots of sun and fibre internet. Prior to Sourcegraph, Keegan worked on the developer tools team at Facebook and spent too much time studying Mathematics and Computer Science. When not doing his day job, Keegan is usually out and about with his wife and son. He can also be found in a skatepark, on a squash court or on a mountain.
 
 ## Uwe Hoffmann
 
 - Software Engineer
 - San Francisco Bay Area, CA, USA 🇺🇸
-- [uwe@sourcegraph.com](mailto:uwe@sourcegraph.com), [:octocat: uwedeportivo](https://github.com/uwedeportivo)
+- [uwe@sourcegraph.com](mailto:uwe@sourcegraph.com), [uwedeportivo](https://github.com/uwedeportivo)
 - Uwe has finally given up on his dream of playing in the NBA and has decided that writing software is not that bad after all.
 
 ## Joe Chen
@@ -87,7 +87,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Content Engineer
 - San Francisco, CA, USA 🇺🇸
-- [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [:octocat: vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
+- [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
 - Vanesa loves to travel (45 countries so far), spend time with her daughter and husband, sing and make jewelry. She grew up in the jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics and Political Science before transtitioning to software engineering. Her weakness is sushi.
 
 ## Noemi Mercado
@@ -95,18 +95,18 @@ To add yourself to this page, copy the following template, paste it at the end o
 - People Ops
 - San Francisco, CA, USA 🇺🇸
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/)
-- Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. She has two teenage brothers that keep her up to date on the latest trends and lingo. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pug named Pumba.
+- Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. She has two teenage brothers that keep her up to date on the latest trends and lingo. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pug named Pumba.
 
 ## Nick Snyder
 
 - VP Engineering
 - Belmont, CA, USA 🇺🇸
 - [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/)
-- Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the priviledge to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits. 
+- Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the privilege to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits. 
 
 
 ## Christopher Flournoy
-- San Francisco, CA USA
+- San Francisco, CA, USA 🇺🇸
 - [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chrisflournoy/)
 - Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events.  Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration. 
 <!-- Paste *your* section above this line! -->
