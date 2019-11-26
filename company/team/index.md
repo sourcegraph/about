@@ -144,4 +144,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [adam@sourcegraph.com](mailto:adam@sourcegraph.com),  [LinkedIn](https://www.linkedin.com/in/adamfrankl)
 - Adam has spent most of his career marketing technology to developers. He has co-founded or led marketing at 16 VC-backed startups, raning from developer tools to game technology to developer tools. He is a US Army veteran, and has been practising yoga for over 20 years.
 
+## Ryan Blunden
+
+- Developer Advocate
+- Brisbane, Australia 🇦🇺🦘
+- [ryan@sourcegraph.com](mailto:ryan@sourcegraph.com), [@ryan_blunden](https://twitter.com/ryan_blunden), [LinkedIn](https://www.linkedin.com/in/ryanblunden/)
+- For work, Ryan enjoys writing documentation, creating videos, case studies, blog posts, and presenting. Essentially, sharing with developers everywhere how Sourcegraph can help them save time and ship better code. For fun, he loves hanging out with his daughter Ruby (Python wasn't an option :), [playing drums](https://rynodrums.com/), and riding his motorcycle to explore new places and meet new people. And eating eggs benedict at every opportunity.
+
+
 <!-- Paste *your* section above this line! -->
