@@ -18,7 +18,7 @@ Arguments:
 
 ## $FIVE_WORKING_DAYS_BEFORE_RELEASE (5 work days before release): Prep for branch cut
 
-- [ ] In the [Retrospectives folder](https://drive.google.com/drive/u/0/folders/1UiNZujRgsThPFkHoWJvymlsNDsBRtn6O), copy the previous retrospective   doc into the current one (which should contain placeholder text).
+- [ ] In the [Retrospectives folder](https://drive.google.com/drive/u/0/folders/1UiNZujRgsThPFkHoWJvymlsNDsBRtn6O), copy the previous retrospective doc into the current one (which should contain placeholder text).
 - [ ] Post to [#dev-announce](https://app.slack.com/client/T02FSM7DL/C0EPTDE9L) the following message:
   ```
   :captain: *Release captain announcement:*
