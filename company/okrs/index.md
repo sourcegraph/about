@@ -58,7 +58,7 @@ Each OKR has the following format:
 1. The `Key result, key result, key result.` is a list of 1-3 key results that have precise definitions.
    - Quantitative key results are ideal, but if they aren't appropriate for the objective, don't try to force it. Instead, choose a key result that is clear in its reliance on someone's judgment.
    - If a key result has a complex definition (more than a few words), link to a handbook page with the precise definition instead of inlining it in the OKR list.
-   - Key results can be links to issues or [RFCs](../../handbook/engineering/rfcs/index.md).
+   - Key results can be links to issues or [RFCs](../../handbook/communication/rfcs/index.md).
    - Examples:
      - Good (quantitative): `$M net new ARR`, `100% of monthly releases ship on time`
      - Good (human judgment): `Support LSIF-based code intel in targeted languages (Go, JavaScript/TypeScript, Python, Java, C#, and C/C++)` because quantitatively defining this has proven to be unproductive
