@@ -70,13 +70,13 @@ Each OKR has the following format:
 
 Do not include any specific financial numbers, customer names, or any other sensitive information in the public OKR document. Instead, use placeholders (such as `N` and `M` for 2 numbers or `C1` and `C2` for 2 customers) and document their meanings in the linked `OKRs YYYY-QN` Google Doc's `Key for sensitive information` section.
 
-### Changing OKRs mid-quarter
+### Changing OKRs
 
-If your OKR no longer accurately communicates what's important, why, and how it'll get done, then you should change it even if the quarter has already started. We want to minimize mid-quarter OKR changes as much as possible, but sometimes it's the least bad course of action.
+We don't change OKRs once the quarter starts. Why? It is useful to have a conversation at the end of the quarter about how outcomes diverged from our plan, and why. There might be very good reasons why we changed our plan, and that is ok. If we edit our OKRs it becomes more difficult to have this valuable conversation.
 
-1. Get approval from the CEO and everyone who's affected by the change.
-1. In general, don't change an OKR's key result to raise or lower the numeric outcome based on information you've gleaned while working on that OKR. That makes it harder to look back on our OKRs and learn at the end of the quarter.
-   - If you know you'll significantly exceed or miss a key result, indicate so in the [outcome](#updating-okr-outcomes).
+If your OKR no longer accurately communicates what's important or what you think is realistically going to get done, then you should immediately update the [outcome](#updateing-okr-outcomes) with the expected result and a brief reason why.
+
+You _may_ add a new OKR mid-quarter to reflect new priorities that weren't captured by OKRs written at the beginning of the quarter. Get approval from the CEO and everyone who's affected by the change.
 
 ## Updating OKR outcomes
 
