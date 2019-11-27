@@ -20,10 +20,10 @@ Our OKR practices are heavily inspired by [GitLab's OKR practices](https://about
 ### OKRs are stretch goals
 
 1. Set OKRs to be ambitious but achievable, so that they convey your aims and what you could achieve if things go well.
-  - In (rough) numeric terms, if you achieve less than 70% of your KR, it was probably not achievable. If you regularly achieve 100%+ of your KRs, they are probably not ambitious enough.
-  - Your KRs are **not** the 99.99% likelihood outcome or the 1% moonshot outcome.
+   - In (rough) numeric terms, if you achieve less than 70% of your KR, it was probably not achievable. If you regularly achieve 100%+ of your KRs, they are probably not ambitious enough.
+   - Your KRs are **not** the 99.99% likelihood outcome or the 1% moonshot outcome.
 1. OKRs are for communication and alignment (everyone knowing what's important, why, and how it'll get done), **not** for estimation, scheduling, or promising/committing.
-   - Setting an OKR for *X* is not the same as *committing* to shipping *X* to customers. We are much more conservative in setting expectations with customers about ship dates than we are in setting OKRs, and it wouldn't make sense to be locked into a ship date that we decided at the beginning of the quarter when setting OKRs.
+   - Setting an OKR for _X_ is not the same as _committing_ to shipping _X_ to customers. We are much more conservative in setting expectations with customers about ship dates than we are in setting OKRs, and it wouldn't make sense to be locked into a ship date that we decided at the beginning of the quarter when setting OKRs.
    - OKRs are not used directly for giving individual performance review feedback or for compensation purposes.
    - Write your OKRs so they communicate effectively to an audience who understands that OKRs aren't promises. Don't write OKRs so cautiously that they are hard to understand. (For example, "Improve code intelligence support for Java" is a good objective, especially with well defined key results. But "Investigate feasibility of improvements to Java code intelligence" is probably bad.)
 1. For new projects, it can be hard to define the right OKRs. Do your best. Then refine them next quarter.
@@ -60,9 +60,9 @@ Each OKR has the following format:
    - If a key result has a complex definition (more than a few words), link to a handbook page with the precise definition instead of inlining it in the OKR list.
    - Key results can be links to issues or [RFCs](../../handbook/engineering/rfcs/index.md).
    - Examples:
-      - Good (quantitative): `$M net new ARR`, `100% of monthly releases ship on time`
-	  - Good (human judgment): `Support LSIF-based code intel in targeted languages (Go, JavaScript/TypeScript, Python, Java, C#, and C/C++)` because quantitatively defining this has proven to be unproductive
-	  - Bad: `Create an effective pitch for Fortune 500 prospects` because "effective" is not defined and different people are likely to have a wide variety of opinions about what it means
+     - Good (quantitative): `$M net new ARR`, `100% of monthly releases ship on time`
+     - Good (human judgment): `Support LSIF-based code intel in targeted languages (Go, JavaScript/TypeScript, Python, Java, C#, and C/C++)` because quantitatively defining this has proven to be unproductive
+     - Bad: `Create an effective pitch for Fortune 500 prospects` because "effective" is not defined and different people are likely to have a wide variety of opinions about what it means
 1. The `=> Outcome, outcome, outcome.` part is only added/updated after the quarter starts.
 1. Top-level CEO OKRs may just be short phrases (such as `Net new ARR`) instead of listing out key results when those key results would be redundant with the sub-OKRs.
 
