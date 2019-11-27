@@ -70,7 +70,7 @@ Each OKR has the following format:
 
 Do not include any specific financial numbers, customer names, or any other sensitive information in the public OKR document. Instead, use placeholders (such as `N` and `M` for 2 numbers or `C1` and `C2` for 2 customers) and document their meanings in the linked `OKRs YYYY-QN` Google Doc's `Key for sensitive information` section.
 
-### Changing OKRs
+### Changing OKRs mid-quarter
 
 We don't change OKRs once the quarter starts. Why? It is useful to have a conversation at the end of the quarter about how outcomes diverged from our plan, and why. There might be very good reasons why we changed our plan, and that is ok. If we edit our OKRs it becomes more difficult to have this valuable conversation.
 
