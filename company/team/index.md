@@ -158,4 +158,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/)
 - In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
 
+## Tomás Senart
+
+- Engineering Manager
+- Lisbon, Portugal 🇵🇹 / Berlin, Germany 🇩🇪
+- [tomas@sourcegraph.com](mailto:tomas@sourcegraph.com), [@tsenart](https://twitter.com/tsenart), [LinkedIn](https://www.linkedin.com/in/tsenart/)
+- Tomás started fiddling with computers because he was fascinated with how hackers were depicted in Hollywood movies. He has since moved on to not only build distributed systems but also distributed teams. Before Sourcegraph he's been at companies like Apple, Mesosphere, Thomson Reuters and Soundcloud. In his free time he likes to spend time with his partner, play Chess and Rocket League, eat great food, hit the gym and read books.
+
 <!-- Paste *your* section above this line! -->
