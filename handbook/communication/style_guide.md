@@ -28,6 +28,8 @@ Assume the reader is a busy non-native English speaker.
   - Prefer commands ("Publish xyz to...") to 2nd-person phrasing ("Let's publish xyz to..." or "We can now publish xyz to...").
 - Avoid ambiguous verbs. For example, avoid using verbs like "cluster", "document", "label", "group", "admin", etc., because we commonly use those as nouns.
 - Write robust sentences that can be understood even if the reader doesn't recognize all of the words.
+- Use active verbs. Passive sentance structure evades responsibility.
+- Use adverbs sparingly. Adverbs are not your friend.
 
 ### Avoid jargon and acronyms
 
