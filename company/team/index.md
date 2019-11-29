@@ -140,6 +140,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [chris@sourcegraph.com](mailto:chris@sourcegraph.com), [chrismwendt](https://github.com/chrismwendt), [@chrismwendt](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
 - Chris is a programming language enthusiast, speedcuber, SSBM player, and dog lover. He has worked on a distributed data pipeline at Microsoft, search at GitHub, developer experience at ThoughtSpot, and earned his BS in Computer Science with a specialization in computer graphics from Purdue.
 
+## Aileen Agricola
+
+- Senior Digital Marketing Manager
+- San Carlos, CA and Bainbridge Island, WA USA 🇺🇸
+- [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
+- Aileen is a techie at heart with a foundation in IT and databases. Her first startup experience was at Patrol Software where she got the startup buzz to try out multiple roles in customer support, product management, business development and sales.   Most recently, she built the website for [Neo4j](https://neo4j.com) and learned that everything is connected.  In her spare time she keeps active by hiking, running or biking.  She also loves to travel and binges the best in streaming tv.
+
 ## Adam Frankl
 
 - Head of Marketing
