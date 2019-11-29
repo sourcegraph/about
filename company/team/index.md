@@ -1,5 +1,7 @@
 # Sourcegraph team
 
+This page contains brief bios of our team. Teammates may also have a personal documentation page in this directory that is named according to their Sourcegraph email address (e.g. you@sourcegraph.com -> you.md).
+
 <!--
 
 To add yourself to this page, copy the following template, paste it at the end of this file, and make it about yourself!
@@ -64,7 +66,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Eric Brody-Moore
 
-- Growth & Business Operations 
+- Growth & Business Operations
 - San Francisco, CA 🇺🇸
 - [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ericbm/), [ebrodymoore](https://github.com/ebrodymoore)
 - Eric splits his weekends eating his way through the Bay Area and getting out of town to explore the west coast nature, snowboard or golf. Prior to Sourcegraph, Eric was the first hire at Drift Marketplace, where he built the finance and analytics functions, and Deloitte Consulting’s strategy and operations practice. Eric graduated with a BS in Finance from the University of Washington.
@@ -108,13 +110,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - VP Engineering
 - Belmont, CA, USA 🇺🇸
-- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/)
-- Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the privilege to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits. 
+- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [personal docs](nick.md)
+- Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the privilege to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits.
 
 ## Christopher Flournoy
+
 - San Francisco, CA, USA 🇺🇸
 - [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chrisflournoy/)
-- Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events.  Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration. 
+- Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events. Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration.
 
 ## Thorsten Ball
 
@@ -125,7 +128,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Loïc Guychard
 
-- Software engineer, manager 
+- Software engineer, manager
 - Brest, Brittany, France 🇫🇷
 - [loic@sourcegraph.com](mailto:loic@sourcegraph.com), [lguychard](https://github.com/lguychard), [LinkedIn](https://www.linkedin.com/in/lo%C3%AFc-guychard-749b8152/)
 - Loïc loves oceanside living and long bike rides. He started his career as a linguist, before transitioning to software engineering while working at Dashlane.
@@ -148,7 +151,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Head of Marketing
 - Hillsborough, CA, USA 🇺🇸
-- [adam@sourcegraph.com](mailto:adam@sourcegraph.com),  [LinkedIn](https://www.linkedin.com/in/adamfrankl)
+- [adam@sourcegraph.com](mailto:adam@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/adamfrankl)
 - Adam has spent most of his career marketing technology to developers. He has co-founded or led marketing at 16 VC-backed startups, raning from developer tools to game technology to developer tools. He is a US Army veteran, and has been practising yoga for over 20 years.
 
 ## Ryan Blunden
@@ -157,5 +160,19 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Brisbane, Australia 🇦🇺🦘
 - [ryan@sourcegraph.com](mailto:ryan@sourcegraph.com), [@ryan_blunden](https://twitter.com/ryan_blunden), [LinkedIn](https://www.linkedin.com/in/ryanblunden/)
 - For work, Ryan enjoys writing documentation, creating videos, case studies, blog posts, and presenting. Essentially, sharing with developers everywhere how Sourcegraph can help them save time and ship better code. For fun, he loves hanging out with his daughter Ruby (Python wasn't an option :), [playing drums](https://rynodrums.com/), and riding his motorcycle to explore new places and meet new people. And eating eggs benedict at every opportunity.
+
+## Dan Adler
+
+- VP Business
+- San Francisco, CA, USA 🇦🇺
+- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/)
+- In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
+
+## Tomás Senart
+
+- Engineering Manager
+- Lisbon, Portugal 🇵🇹 / Berlin, Germany 🇩🇪
+- [tomas@sourcegraph.com](mailto:tomas@sourcegraph.com), [tsenart](https://github.com/tsenart), [@tsenart](https://twitter.com/tsenart), [LinkedIn](https://www.linkedin.com/in/tsenart/)
+- Tomás started fiddling with computers because he was fascinated with how hackers were depicted in Hollywood movies. He has since moved on to not only build distributed systems but also distributed teams. Before Sourcegraph he's been at companies like Apple, Mesosphere, Thomson Reuters and Soundcloud. In his free time he likes to spend time with his partner, play Chess and Rocket League, eat great food, hit the gym and read books.
 
 <!-- Paste *your* section above this line! -->
