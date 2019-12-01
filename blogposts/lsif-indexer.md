@@ -10,6 +10,12 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
+<div class="alert alert-info">
+
+Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/user/code_intelligence/lsif)".
+
+</div>
+
 This article explores what it would take to write an LSIF indexer. Along the way, we will learn a little bit about parsing, walking abstract syntax trees, scopes and the LSIF file format.
 
 [LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (Language Server Index Format) is a data format that captures code intelligence facilitating code navigation, hover documentation etc. The blog post _[Code intelligence with LSIF](https://about.sourcegraph.com/blog/code-intelligence-with-lsif)_ has more details about LSIF.
