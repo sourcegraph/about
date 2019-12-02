@@ -10,6 +10,12 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
+<div class="alert alert-info">
+
+Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/user/code_intelligence/lsif)".
+
+</div>
+
 Since the [last code intelligence update](https://about.sourcegraph.com/blog/improving-language-support-in-2019), we have shifted our efforts away from improving language servers. We found that language servers were hard to develop due to the number of build and dependency systems per language, hard to deploy and connect to a Sourcegraph instance, and hard to make fast enough to meet our user's expectations. The Sourcegraph 3.0 release in February included [zero configuration code intelligence for the 20+ most popular languages](https://github.com/sourcegraph/sourcegraph-basic-code-intel) based on ctags and text search. This has provided a much better default experience for Sourcegraph customers, but there is one limitation: results are imprecise unless a customer configures a language server.
 
 Now, we are working on a new way of providing code intelligence that’s both fast and precise. The idea is to use compiler frontends to precompute code intelligence data in a project-specific build environment and then upload that data to Sourcegraph. This has a lot of benefits:
