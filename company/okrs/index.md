@@ -44,18 +44,18 @@ We set OKRs for each quarter. The (rough) schedule for setting OKRs for an upcom
 
 ### Format
 
-> This is taken from [GitLab OKR format](https://about.gitlab.com/company/okrs/#format).
+> This is based on the [GitLab OKR format](https://about.gitlab.com/company/okrs/#format).
 
 Each OKR has the following format:
 
-`Title or team: Objective as 1 sentence. Key result, key result, key result. => Outcome, outcome, outcome.`
+`Title or team: Objective as 1 sentence. Key result. Key result. Key result. => Outcome. Outcome. Outcome.`
 
 1. The `Title or team` is the title (e.g., `CEO` or `VP Engineering`) of the person who is directly responsible or the name of the team responsible.
    - The first 2 levels of OKRs all have a directly responsible individual. Deeper levels can have teams. (For functions where we don't yet have a management structure in place, we may violate this.)
 1. The `Objective as 1 sentence.` is a pithy, informal summary of the objective, not an exhaustive and precise definition or description of the implementation. For example:
    - Good: `Automate time-consuming ops and support tasks.`
    - Bad: `Write scripts for headless browser testing of release grid items and update sourcegraph/sourcegraph and sourcegraph/deploy-sourcegraph CI pipelines to execute these scripts.`
-1. The `Key result, key result, key result.` is a list of 1-3 key results that have precise definitions.
+1. The `Key result. Key result. Key result.` is a list of 1-3 key results that have precise definitions.
    - Quantitative key results are ideal, but if they aren't appropriate for the objective, don't try to force it. Instead, choose a key result that is clear in its reliance on someone's judgment.
    - If a key result has a complex definition (more than a few words), link to a handbook page with the precise definition instead of inlining it in the OKR list.
    - Key results can be links to issues or [RFCs](../../handbook/communication/rfcs/index.md).
@@ -63,7 +63,7 @@ Each OKR has the following format:
      - Good (quantitative): `$M net new ARR`, `100% of monthly releases ship on time`
      - Good (human judgment): `Support LSIF-based code intel in targeted languages (Go, JavaScript/TypeScript, Python, Java, C#, and C/C++)` because quantitatively defining this has proven to be unproductive
      - Bad: `Create an effective pitch for Fortune 500 prospects` because "effective" is not defined and different people are likely to have a wide variety of opinions about what it means
-1. The `=> Outcome, outcome, outcome.` part is only added/updated after the quarter starts.
+1. The `=> Outcome. Outcome. Outcome.` part is only added/updated after the quarter starts.
 1. Top-level CEO OKRs may just be short phrases (such as `Net new ARR`) instead of listing out key results when those key results would be redundant with the sub-OKRs.
 
 ### Sensitive information
@@ -80,7 +80,7 @@ You _may_ add a new OKR mid-quarter to reflect new priorities that weren't captu
 
 ## Updating OKR outcomes
 
-Update `=> Outcome, outcome, outcome.` for OKRs throughout the quarter.
+Update `=> Outcome. Outcome. Outcome.` for OKRs throughout the quarter.
 
 1. If possible, link to a live dashboard tracking the outcome.
 1. When you make meaningful progress toward an OKR's outcome, post in the #progress channel and include a link to the PR that updates the OKR document.
