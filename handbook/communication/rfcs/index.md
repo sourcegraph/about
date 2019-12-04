@@ -18,6 +18,7 @@ Each RFC has a status that is in the title of the RFC (e.g. "RFC 1 WIP: Title").
 | REVIEW | The RFC is ready to be reviewed. The RFC explicitly lists whose approvals are required and a requested timeline for those approvals. |
 | APPROVED | All comment threads are resolved and the RFC has been approved by all required approvers. Just because an RFC is approved doesn't mean it will definitely be implemented (e.g. priorities may change, or new information might be discovered during implementation or code review that causes a change in the plan). It is in the author's best interest to avoid surprises at code review time by ensuring the RFC has a sufficient level of detail and has approval from all relevant stakeholders. |
 | ABANDONED | There are no plans to move forward with this RFC. The particular reason is communicated in the metadata section of the RFC. For example, the RFC may have failed to get the necessary approvals, it may be been superseded by another RFC, priorities may have changed, or we may not have resources to work on this RFC in the foreseeable future. |
+| IN PROGRESS | This RFC is currently being worked on and has been migrated to a GitHub issue and broken down (as needed) into sub-issues.
 | IMPLEMENTED | This RFC has been implemented. |
 
 A prose description of the status appears in the [metadata](#RFC-structure) of an RFC.
@@ -110,6 +111,10 @@ Sometimes there is information relevant to an RFC, but that information can't be
 - If a material amount of the content is non-public then it is ok to make the RFC only accessible to the Sourcegraph team.
 
 Only Sourcegraph teammates are able to see the revision history of RFCs (because edit access is required for that). This means if sensitive information is found in the document all you need to do is remove that information. Comments that accidentally contain sensitive info can be deleted.
+
+## Implementing RFCs
+
+When the team decides to implement an APPROVED RFC, a tracking issue is created in GitHub with as-needed sub-issues created to break down the work required to implement the full RFC. Teams may choose to implement only a portion of an RFC, and this enables us to capture the work that has not yet been completed for later prioritization.
 
 ## References
 
