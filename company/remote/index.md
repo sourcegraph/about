@@ -14,7 +14,7 @@ Sourcegraph is an all-remote company, which means:
 
 ## Transition to all-remote
 
-As of 2019-11, we are transitioning from remote-first (where we maintained a San Francisco office with about 1/3 of our team) to all-remote. When we get rid of our San Francisco office (date TBD), SF-based teammates will no longer have the option to work from a company-maintained office. They will still have the same choices as teammates anywhere else in the world: work from home, from a coworking space, or from some other place or office of their choosing.
+As of 2019-11, we are transitioning from remote-first (where we maintained a San Francisco office with about 1/3 of our team) to all-remote. When we get rid of our current San Francisco office (date TBD), SF-based teammates will no longer have the option to work from it. They will still have the same choices as teammates anywhere else in the world: work from home, from a coworking space, or from some other place or office of their choosing.
 
 SF teammates who enjoy working in an office with other teammates are welcome to jointly coordinate working out of the same coworking space. We plan to formalize reimbursement of coworking spaces for teammates who prefer that to working from home.
 
