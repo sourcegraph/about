@@ -108,3 +108,11 @@ If your change touches multiple parts of our codebase (e.g. Go, TypeScript), the
 GitHub will automatically assign reviewers if there is a matching entry in the [CODEOWNERS](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/.github/CODEOWNERS) file, but that doesn't necessarily mean that you need to wait for an approval from everyone. For example, if you are making a change to the search backend then you only need approval from one person on that team, not all of them.
 
 Use your best judgement and ask if you are uncertain.
+
+## When should I use a draft PR?
+
+A draft PR signals that the change is not ready for reviewed. If you are looking for feedback or discussion on your change, you should mark the PR as ready for review, even if you expect more work to be done on the change.
+
+Draft PRs are great for:
+
+- Doing a self-review (see [effective code reviews](#what-makes-an-effective-code-review) above).
