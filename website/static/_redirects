@@ -61,8 +61,9 @@
 /docs/config/repositories#aws-codecommit-configuration https://docs.sourcegraph.com/integration/aws_codecommit#aws-codecommit-configuration 301
 /docs/config/repositories#github-configuration https://docs.sourcegraph.com/integration/github#syncing-github-repositories 301
 /docs/migration/oracle-opengrok-to-sourcegraph https://docs.sourcegraph.com/admin/migration/opengrok 301
-/product/server /product 301
+/product/browser https://docs.sourcegraph.com/integration/browser_extension 301
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301
+/product/server /product 301
 /blog/github-universe-liveblog-innersource-and-reaping-the-benefits-of-open-source-behind-your-firewall /blog/github-universe-liveblog-innersource 301
 /blog/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go /blog/google-i-o-talk-building-sourcegraph 301
 /product/code-alerts-automation /product/automation 301
