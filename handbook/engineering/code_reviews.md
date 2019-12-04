@@ -111,8 +111,4 @@ Use your best judgement and ask if you are uncertain.
 
 ## When should I use a draft PR?
 
-A draft PR signals that the change is not ready for reviewed. If you are looking for feedback or discussion on your change, you should mark the PR as ready for review, even if you expect more work to be done on the change.
-
-Draft PRs are great for:
-
-- Doing a self-review (see [effective code reviews](#what-makes-an-effective-code-review) above).
+A draft PR signals that the change is not ready for reviewed. This is useful, for example, if you want to self-review your diff before sending review requests to others. If you are looking for feedback or discussion on your change, then you should mark the PR as ready for review and communicate your intentions in the PR description.
