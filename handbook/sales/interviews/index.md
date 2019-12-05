@@ -14,6 +14,8 @@
 - Tell me about your quota,  performance, average deal size, territories and verticals.
 - Do you do your own demos?
 - Do you do your own prospecting?
-- Do you currently or have you ever sold with a free trial or a proof-of-concept?
+- Do you currently or have you ever sold with a...
+  - Free trial or a proof-of-concept?
+  - Freemium or open-source tier?
 - Have you worked remotely?
 - If this ended up being the right fit on both sides, how soon would you be able to make a move?
