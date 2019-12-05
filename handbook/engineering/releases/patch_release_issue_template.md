@@ -41,7 +41,7 @@ In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
     git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
     git push $MAJOR.$MINOR
     git tag v$MAJOR.$MINOR.$PATCH
-    git push v$MAJOR.$MINOR.$PATCH
+    git push origin v$MAJOR.$MINOR.$PATCH
     ```
 
 ## Update the docs
