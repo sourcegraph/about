@@ -56,8 +56,12 @@ Please see below for a list of reimbursable expenses (all in USD).
 
 ## How to submit Expenses:
 Log in to Expensify. 
+
 Create an expense report.
+
 Upload receipts to be expenses to the report. 
+
 Select the appropriate spending category and enter necessary details.
+
 Submit your expense report at the end of the month.
 
