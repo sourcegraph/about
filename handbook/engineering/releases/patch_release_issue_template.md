@@ -19,13 +19,13 @@ Arguments:
 - [ ] Push the branch `$MAJOR.$MINOR` with your cherry-picked commit(s) and make sure CI passes.
 - [ ] Push a release candidate tag:
     ```
-    VERSION=$MAJOR.$MINOR git checkout "$VERSION"
-    VERSION='v$MAJOR.$MINOR.$PATCH-rc.1' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
+    git checkout '$MAJOR.$MINOR'
+    git tag -a 'v$MAJOR.$MINOR.$PATCH-rc.1' -m 'v$MAJOR.$MINOR.$PATCH-rc.1' && git push origin 'v$MAJOR.$MINOR.$PATCH-rc.1'
     ```
 - [ ] If CI passes, push the release tag:
     ```
-    VERSION=$MAJOR.$MINOR git checkout "$VERSION"
-    VERSION='v$MAJOR.$MINOR.$PATCH' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
+    git checkout '$MAJOR.$MINOR'
+    git tag -a 'v$MAJOR.$MINOR.$PATCH' -m 'v$MAJOR.$MINOR.$PATCH' && git push origin 'v$MAJOR.$MINOR.$PATCH'
     ```
 - [ ] Wait for the final Docker images to be available at https://hub.docker.com/r/sourcegraph/server/tags.
 
