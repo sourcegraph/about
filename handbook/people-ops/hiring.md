@@ -24,7 +24,7 @@ We don't share specific reasons or feedback if we decide not to move forward in 
 
 We can only interview and hire a finite number of people in a given amount of time, so we move forward with only a few of the best candidates at each stage of our hiring pipeline.
 
-Ultimately, each hiring decision is a complex judgement call based on many inputs.
+Ultimately, each hiring decision is a complex one based on many inputs.
 
 ## Respecting time
 
