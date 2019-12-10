@@ -26,7 +26,7 @@ How does Sourcegraph help solve these problems?
 
 <!--
 
-TODO(sqs): Before merging, update the other about.sourcegraph.com pages (eg the homepage, product pages, etc.) to reflect the final messaging, including:
+TODO(adamfrankl): Update the other about.sourcegraph.com pages (eg the homepage, product pages, etc.) to reflect the final messaging, including:
 
 - updating "standard developer platform"
 - updating use of "organizations" vs "enterprises" vs "teams"
@@ -46,6 +46,8 @@ Sourcegraph is the universal code search and automation application, bringing ca
 
 Sourcegraph is the universal code search and automation application, bringing capabilities to every enterprise that previously only Google and Facebook had (and invested $100Ms in to build). Sourcegraph is the single place in an organization where developers go to discover and understand code and coordinate large-scale changes.
 
+<!--
+
 ### Medium message (~250 words)
 
 TODO - above, plus add more detail on specific use cases
@@ -53,6 +55,8 @@ TODO - above, plus add more detail on specific use cases
 ### Long message (~450 words)
 
 TODO - above, plus add more detail on positioning w.r.t. other tools (such as code hosts)
+
+-->
 
 ## Company overview
 
