@@ -53,15 +53,6 @@ Please see below for a list of reimbursable expenses (all in USD).
 
 **Travel expenses:** please see our page on travel budgets. 
 
+Find out how to submit your expenses [here](https://about.sourcegraph.com/handbook/people-ops/expenses).
 
-## How to submit Expenses:
-1. Log in to Expensify. 
-
-2. Create an expense report.
-
-3. Upload receipts to be expenses to the report. 
-
-4. Select the appropriate spending category and enter necessary details.
-
-5. Submit your expense report at the end of the month.
 
