@@ -37,7 +37,7 @@ Please see below for a list of reimbursable expenses (all in USD).
 ## Ongoing expenses
 **Software/SaaS/cloud:** please check with the appropriate team and manager to ask if we already have a subscription or licenses to the software. If not, please get @sourcegraph/people-ops's approval for software or a subscription that would cost more than $500 per year.
 
-**Internet/WiFi plan:** $60/month
+**Internet/WiFi plan:** $50/month (no need to expense, this is automatically added onto your pay).
 
 **Cell phone plan:** $75/month (no need to expense, this is automatically added onto your pay).
 
