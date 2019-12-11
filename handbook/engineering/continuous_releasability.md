@@ -9,7 +9,7 @@ that serves the needs of customers running their own Sourcegraph instances.
 * `master` branch is always releasable
 * Every new feature includes a feature flag
 
-**`master` is always releasable**
+### `master` is always releasable
 
 Every change merged into `master` must preserve the releasability of `master`. *Releasable* means
 that the revision can be released to customers. In particular,
