@@ -9,7 +9,7 @@ Please see below for a list of reimbursable expenses (all in USD).
   - Any other laptop that meets minimum requirements (4-cores, 16 GB, SSD) and is not more expensive than the pre-approved laptops above.
 
 **Laptop (non-engineers):** 
-- [13" MacBook Pro, 2.4 GHz 4-core, 8 GB, 256 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-256gb-2.4ghz-quad-core-processor-with-turbo-boost-up-to-4.1ghz#). If you need to update any specs, please reach out to PeopleOps for approval. 
+- [13" MacBook Pro, 2.4 GHz 4-core, 8 GB, 256 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-256gb-2.4ghz-quad-core-processor-with-turbo-boost-up-to-4.1ghz#). If you need to update any specs, please reach out to @sourcegraph/people-ops's for approval. 
 - Any other laptop that is of equal or lesser value than the pre-approved laptop.
 
 **Laptop insurance:** $380
@@ -35,7 +35,7 @@ Please see below for a list of reimbursable expenses (all in USD).
 
 
 ## Ongoing expenses
-**Software:** case by case, please get your manager’s approval.
+**Software/SaaS/cloud:** please check with the appropriate team and manager to ask if we already have a subscription or licenses to the software. If not, please get @sourcegraph/people-ops's approval for software or a subscription that would cost more than $500 per year.
 
 **Internet/WiFi plan:** $60/month
 
@@ -53,7 +53,7 @@ Please see below for a list of reimbursable expenses (all in USD).
 
 ## Other expenses:
 
-**Laptop repairs:** if your laptop requires repairs, we cover up to $500 a year on repairs. If necessary repairs exceed the yearly budget please reach out to PeopleOps for approval.
+**Laptop repairs:** if your laptop requires repairs, we cover up to $500 a year on repairs. If necessary repairs exceed the yearly budget please reach out to @sourcegraph/people-ops's for approval.
 
 **Laptop upgrade:** if your laptop is 4 years or older, you are eligible for a new laptop (same budget as new laptop applies).
 
