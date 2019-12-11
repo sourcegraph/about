@@ -44,7 +44,7 @@ Feature flags achieve 2 things:
   Releasability Contract. E.g., if we discover a critical bug in a new feature 1 day before release,
   we can immediately disable it to make the release deadline.
 
-### Exceptions
+## Exceptions
 
 In some cases, it may be prohibitively expensive to preserve releasability. For example, a major
 change made the indexed search backend horizontally scalable. Maintaining strict releasability of
