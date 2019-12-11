@@ -18,6 +18,13 @@ We use [Google Hire](https://hire.withgoogle.com/t/sourcegraphcom/hiring/landing
    - All interviewers submit written feedback independently before being able to see feedback from other interviewers.
    - We maintain a consistent hiring decision process for all candidates.
 
+## Job descriptions
+
+Each job description lists qualifications (requirements) and nice-to-haves. If you are unsure if you meet our qualifications, please apply.
+
+We avoid listing "years of experience" as a qualification because time is only an indirect measure of what we really care about: skills and maturity.
+Our team contains highly motivated and productive members who've joined immediately after high school/university or after 10+ years of working at some of the best companies.
+
 ## Sharing feedback
 
 We don't share specific reasons or feedback if we decide not to move forward in our hiring process with a candidate.
