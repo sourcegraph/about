@@ -28,7 +28,7 @@ that the revision can be released to customers. In particular,
 * **Up-to-date Regression test suite**: Every key workflow has a regression test.
   * This means adding/updating regression tests when you add/update workflows.
 
-**A feature flag is required for every new feature**
+### A feature flag is required for every new feature
 
 The preferred feature flag mechanism is the
 [`experimentalFeatures`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@2b90ec5006f6879193d9a0fd2d2493bc6e061004/-/blob/schema/site.schema.json#L47:6)
