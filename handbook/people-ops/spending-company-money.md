@@ -4,9 +4,8 @@ Please see below for a list of reimbursable expenses (all in USD).
 ## One-time expenses
 
 **Laptop (engineers):** (Choose one)
-  - [13" MacBook Pro, 2.8 GHz 4-core, 16 GB, 512 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-256gb-2.4ghz-quad-core-processor-with-turbo-boost-up-to-4.1ghz#)
-  - [16" MacBook Pro, 2.6 GHz 6‑core, 16 GB, 512 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-gray-512gb-2.6ghz-6-core-processor#)
-  - Any other laptop that meets minimum requirements (4-cores, 16 GB, SSD) and is not more expensive than the pre-approved laptops above.
+  - [16" MacBook Pro, 2.4 GHz (5 GHz turbo) 8‑core, 32 GB, 1 TB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-gray-1tb-2.3ghz-8-core-processor#)
+  - Any other laptop that is of equal or lesser value than the pre-approved laptop.
 
 **Laptop (non-engineers):** 
 - [13" MacBook Pro, 2.4 GHz 4-core, 8 GB, 256 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-256gb-2.4ghz-quad-core-processor-with-turbo-boost-up-to-4.1ghz#). If you need to update any specs, please reach out to @sourcegraph/people-ops's for approval. 
