@@ -2,7 +2,11 @@
 Please see below for a list of reimbursable expenses (all in USD).
 
 ## One-time expenses
-**Laptop (engineers):** $3500
+
+**Laptop (engineers):** (Choose one)
+  - [13" MacBook Pro, 2.8 GHz 4-core, 16 GB, 512 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-256gb-2.4ghz-quad-core-processor-with-turbo-boost-up-to-4.1ghz#)
+  - [16" MacBook Pro, 2.6 GHz 6‑core, 16 GB, 512 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-gray-512gb-2.6ghz-6-core-processor#)
+  - Any other laptop that meets minimum requirements (4-cores, 16 GB, SSD) and is not more expensive than the pre-approved laptops above.
 
 **Laptop (non-engineers):** $2000
 
@@ -54,5 +58,4 @@ Please see below for a list of reimbursable expenses (all in USD).
 **Travel expenses:** please see our page on [travel budgets](https://about.sourcegraph.com/handbook/people-ops/travel). 
 
 Find out how to submit your expenses [here](https://about.sourcegraph.com/handbook/people-ops/expenses).
-
 
