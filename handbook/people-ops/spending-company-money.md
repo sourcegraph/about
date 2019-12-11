@@ -51,7 +51,7 @@ Please see below for a list of reimbursable expenses (all in USD).
 
 **Laptop upgrade:** if your laptop is 4 years or older, you are eligible for a new laptop (same budget as new laptop applies).
 
-**Travel expenses:** please see our page on travel budgets. 
+**Travel expenses:** please see our page on [travel budgets](https://about.sourcegraph.com/handbook/people-ops/travel). 
 
 Find out how to submit your expenses [here](https://about.sourcegraph.com/handbook/people-ops/expenses).
 
