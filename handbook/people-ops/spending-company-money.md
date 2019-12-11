@@ -8,9 +8,11 @@ Please see below for a list of reimbursable expenses (all in USD).
   - [16" MacBook Pro, 2.6 GHz 6‑core, 16 GB, 512 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-gray-512gb-2.6ghz-6-core-processor#)
   - Any other laptop that meets minimum requirements (4-cores, 16 GB, SSD) and is not more expensive than the pre-approved laptops above.
 
-**Laptop (non-engineers):** $2000
+**Laptop (non-engineers):** 
+- [13" MacBook Pro, 2.4 GHz 4-core, 8 GB, 256 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-256gb-2.4ghz-quad-core-processor-with-turbo-boost-up-to-4.1ghz#). If you need to update any specs, please reach out to PeopleOps for approval. 
+- Any other laptop that is of equal or lesser value than the pre-approved laptop.
 
-**Laptop coverage:** $380
+**Laptop insurance:** $380
 
 **Monitor:** $380
 
