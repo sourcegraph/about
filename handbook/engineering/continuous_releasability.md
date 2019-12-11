@@ -1,3 +1,5 @@
+# Continuous releasability
+
 We practice **continuous releasability**. This is a variant of [continous
 delivery](https://en.wikipedia.org/wiki/Continuous_delivery) adapted to a monthly release cadence
 that serves the needs of customers running their own Sourcegraph instances.
