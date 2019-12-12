@@ -140,6 +140,10 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
+                <div className="container-fluid pricing-page__prepaid mb-5">
+                    Prepaid plans and volume discounts are available. <Link to="/contact/sales">Contact us</Link> to
+                    learn more.
+                </div>
             </div>
             <ContentSection color="purple" className="hero-section text-center py-5">
                 <h2>Try Sourcegraph Enterprise Plus risk-free for 30 days</h2>

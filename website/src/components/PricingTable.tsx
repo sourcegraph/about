@@ -111,7 +111,7 @@ const DATA: PricingItemCategory[] = [
     },
     {
         id: 'code-intelligence',
-        title: 'Code intelligence',
+        title: 'Code navigation and intelligence',
         items: [
             {
                 name: `${SUPPORTED_PROGRAMMING_LANGUAGES_COUNT} supported languages`,
@@ -119,11 +119,7 @@ const DATA: PricingItemCategory[] = [
                 plans: FREE_PLAN,
             },
             { name: 'Single repository definitions and references', plans: FREE_PLAN },
-            { name: 'Cross-repository definitions and references', plans: ENTERPRISE_PLAN },
-            {
-                name: 'High-scale clustered language servers',
-                plans: ENTERPRISE_PLAN,
-            },
+            { name: 'Precise, cross-repository definitions and references', plans: ENTERPRISE_PLAN },
             {
                 name: 'Remote development environment',
                 description: 'Coming soon',
