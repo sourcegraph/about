@@ -24,7 +24,7 @@ Engineering Managers are people managers who build teams of [Software Engineers]
 - Collaborate with [product](../product/index.md) to maintain a [prioritized roadmap](../../direction/index.md) for the work owned by your team.
 - Commit to a set of work that will be accomplished by the team for each [monthly release](releases/index.md) and capture those commitments in a tracking issue on GitHub.
 - Conduct monthly [retrospectives](retrospectives/index.md) with your team.
-- Mentor and coach engineers through regular [1-1s](../leadership/1-1.md) to level up their careers.
+- Mentor and coach engineers through regular [1-1s](../leadership/1-1.md) to grow their careers.
 - [Review the performance](../people-ops/performance-reviews.md) of your direct reports to determine compensation.
 - Interview candidates and own making improvements to our hiring process.
 - Review applications and make final hiring decisions for candidates interested in your team.
