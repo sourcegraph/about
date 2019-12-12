@@ -17,7 +17,7 @@ Sofware Engineers are individual contributors who build software to satisfy the 
 
 ## Software Engineer Manager 
 
-Software Engineer Managers are people managers who build teams of [Software Engineers](#software-engineer) to statisfy the needs of the business.
+Software Engineer Managers are people managers who build teams of [Software Engineers](#software-engineer) to satisfy the needs of the business.
 
 ### Responsibilities
 
