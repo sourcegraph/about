@@ -43,7 +43,7 @@ Switching between an individual contributor role and a people management role (o
 
 1. The IC is interested in becoming a people manager and understands how a people manager role differs from an individual contributor role.
 2. The IC's manager agrees that the IC is a good candidate for a people manager role. Ideally the IC is already doing some parts of the job that are applicable — technical leadership, planning, mentoring. The IC's manager should collect feedback from relevant teammates.
-3. The IC's manager identifies a small initial set of people for the IC to manage (e.g. 2-3 direct reports) for 1-2 months. This role change may involve, or be driven by, a team organization change.
+3. The IC's manager identifies a small initial set of people for the IC to manage (e.g. 2-3 direct reports) for 1-2 months.
 4. The IC's manager communicates to the team that this is a trial and the timeline for that trial.
 5. The IC sets up [1-1s](../leadership/1-1.md) with their new reports and the IC's manager continues their 1-1s with these reports (but may reduce the candence).
 6. Throughout the trial period the IC and the IC's manager discuss whether the trial is on track for success (and if not, what corrective actions can be taken).
