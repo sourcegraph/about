@@ -37,7 +37,7 @@ TODO
 
 ## Switching roles
 
-Switching between an individual contributor role and a people management role (or vice versa) is a role change (not a promotion or a demotion). Each role requires a different set of skills. Generally we expect people managers to have experience doing the role of their direct reports.
+Switching between an individual contributor role and a people management role (or vice versa) is a role change (not a promotion or a demotion). Each role requires a different set of skills. Generally we expect people managers to have experience doing the role of their direct reports. Role changes may involve, or be driven by, a team organization change.
 
 ### Individual contributor to people manager
 
