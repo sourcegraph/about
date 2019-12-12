@@ -30,7 +30,6 @@ We review each candidate at each stage of our hiring pipeline (e.g. application,
     - Does this candidate have the skills and experience that we are looking for?
     - How does this candidate compare to other candidates in our pipeline and our current team?
     - What makes us excited about hiring this candidate?
-    - Is this candidate in the top N candidates for the role (where N is the number of hires we want to make)?
 
 ## Sharing interview feedback
 
