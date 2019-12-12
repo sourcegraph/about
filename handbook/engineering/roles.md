@@ -15,7 +15,7 @@ Sofware Engineers are individual contributors who build software to satisfy the 
 - Help your teammates by empathetically [reviewing code](code_reviews.md) and [RFCs](rfcs/index.md).
 - Interview candidates and suggest improvements to our hiring process.
 
-## Software Engineer Manager 
+## Engineering Manager
 
 Software Engineer Managers are people managers who build teams of [Software Engineers](#software-engineer) to satisfy the needs of the business.
 
