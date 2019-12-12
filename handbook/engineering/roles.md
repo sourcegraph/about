@@ -54,7 +54,7 @@ Switching between an individual contributor role and a people management role (o
     - Is the IC's manager happy? 
   - Outcomes:
     - If the trial was not a success then revert back to the previous state.
-    - If the trial was a success then the IC is not a people manager and we can move forward with adding more direct reports in the future.
+    - If the trial was a success then the IC is now a people manager and we can move forward with adding more direct reports in the future.
 
 ### People manager to individual contributor
 
