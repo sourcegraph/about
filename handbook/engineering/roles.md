@@ -46,7 +46,7 @@ Switching between an individual contributor role and a people management role (o
 3. The IC's manager identifies a small initial set of people for the IC to manage (e.g. 2-3 direct reports) for 1-2 months. This role change may involve, or be driven by, a team organization change.
 4. The IC's manager communicates to the team that this is a trial and the timeline for that trial.
 5. The IC sets up [1-1s](../leadership/1-1.md) with their new reports and the IC's manager continues their 1-1s with these reports (but may reduce the candence).
-6. Throughout the trial period the IC's manager 
+6. Throughout the trial period the IC and the IC's manager discuss whether the trial is on track for success (and if not, what corrective actions can be taken).
 7. After the trial period is over the IC's manager decides if the trial was a success.
   - Questions to consider:
     - Is the IC happy in the new role?
