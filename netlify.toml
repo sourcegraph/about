@@ -2,7 +2,7 @@
 
 base = "website"
 publish = "website/public"
-command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/releases/download/v1.1.0/docsite_v1.1.0_linux_amd64 && chmod +x /tmp/docsite && (cd .. && /tmp/docsite check) && yarn run prettier-check && yarn run build"
+command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/releases/download/v1.1.0/docsite_v1.1.0_linux_amd64 && chmod +x /tmp/docsite && (cd .. && /tmp/docsite check) && yarn run build"
 
 [build.environment]
   YARN_VERSION = "1.15.2"
