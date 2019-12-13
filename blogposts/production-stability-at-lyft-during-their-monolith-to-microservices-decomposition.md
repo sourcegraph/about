@@ -18,6 +18,6 @@ description: "Learn how Sourcegraph code search helped Lyft ensure (largely) iss
 
 Lyft's mission is to improve people's lives with the world's best transportation. With over 30 million riders in 2018, Lyft's business is growing, as is the number of engineers, repositories, and microservices.
 
-Learn how, Sourcegraph's [multi-repository code search](/product/code-search-navigation) helped Lyft ensure (largely) issue free production deploys during their monolith to microservices decomposition.
+Learn how Sourcegraph's [multi-repository code search](/product/code-search-navigation) helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition.
 
 <a href="/case-studies/lyft-monolith-to-microservices" class="btn btn-primary mt-4">Learn more</a>
