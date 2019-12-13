@@ -86,7 +86,7 @@ Do:
 - If the author were to address all of your comments faithfully and you would be content, then you should also approve to avoid the author needing to wait for a subsequent review without reason (exception: you asked for fundamental or vast/large changes and believe those will need re-review by you).
 - When you are making comments on a PR, use a tone that is kind, empathetic, collaborative, and humble. [Further reading](https://mtlynch.io/human-code-reviews-1/).
 
-|😕|🤗| Why?|
+|Try to avoid|and do this instead| Why?|
 |--|--|-----|
 | You misspelled "successfully"                   | sucessfully -> successfully | Avoid using "you" because it can make the comment feel like a personal attack instead of just a minor correction. |
 | Move the `Foo` class to a separate file. | Can we move the `Foo` class to a separate file to avoid large files that are hard to scan? | Feedback that is framed as a request encourages collaborative conversation. Including your reason helps the author understand the motivation behind your request.|
