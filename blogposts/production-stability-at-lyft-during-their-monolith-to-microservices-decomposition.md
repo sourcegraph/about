@@ -8,7 +8,7 @@ tags: [
 slug: production-stability-at-lyft-during-their-monolith-to-microservices-decomposition
 heroImage: https://about.sourcegraph.com/blog/lyft-logo.png
 published: true
-description: "Learn how Sourcegraph code search helped Lyft ensure (largely) issue free production deploys during their monolith to microservices decomposition"
+description: "Learn how Sourcegraph code search helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition"
 ---
 
 <!-- pending approval 
