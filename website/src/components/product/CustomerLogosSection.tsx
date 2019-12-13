@@ -5,7 +5,8 @@ const ITEMS: (
           name: string
           url: string
       }
-    | { topN: number; description: string; className: string })[] = [
+    | { topN: number; description: string; className: string }
+)[] = [
     {
         name: 'Uber',
         url: '/external-logos/uber.svg',
@@ -70,9 +71,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
                         className="customer-logos-section__item mx-2 d-flex justify-content-center flex-column"
                     >
                         <div
-                            className={`customer-logos-section__item-logo customer-logos-section__item-logo-synthesized mx-auto border rounded px-3 font-weight-bold d-flex align-items-center ${
-                                logo.className
-                            }`}
+                            className={`customer-logos-section__item-logo customer-logos-section__item-logo-synthesized mx-auto border rounded px-3 font-weight-bold d-flex align-items-center ${logo.className}`}
                         >
                             Top {logo.topN}
                             <br />
