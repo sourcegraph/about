@@ -5,7 +5,8 @@ const ITEMS: (
           name: string
           url: string
       }
-    | { topN: number; description: string; className: string })[] = [
+    | { topN: number; description: string; className: string }
+)[] = [
     {
         name: 'Uber',
         url: '/external-logos/uber.svg',
