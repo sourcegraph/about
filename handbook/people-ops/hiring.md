@@ -20,7 +20,7 @@ We use [Google Hire](https://hire.withgoogle.com/t/sourcegraphcom/hiring/landing
 
 ## Decision making process
 
-We review each candidate at each stage of our hiring pipeline (e.g. application, phone screen, interviews, references) to determine if we want to move the candidate to the next stage. Here some things that we consider:
+We review each candidate at each stage of our hiring pipeline (e.g. application, phone screen, interviews, references) to determine if we want to move the candidate to the next stage. Here are some things that we consider:
 
 - Applications
     - Does this candidate meet all qualifications for the role they are applying for?
