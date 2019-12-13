@@ -18,6 +18,10 @@ that pointer may be `nil`. When the pointer is nil, the function does its defaul
 If the options struct should not be nil, either make the argument the value instead of a
 pointer or document it.
 
+## Pull requests
+
+Avoid unnecessary whitespace changes unless they are made by formatting tools (e.g. `prittier`, `gofmt`).
+
 ## Group code blocks logically
 
 Declare your variables close to where they are actually used.
