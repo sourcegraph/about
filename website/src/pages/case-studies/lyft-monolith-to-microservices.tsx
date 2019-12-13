@@ -30,7 +30,7 @@ export default ((props: any) => (
                 <div className="container">
                     <p>
                         Lyft's mission is to improve people's lives with the world's best transportation. With over 30
-                        million riders in 2018, Lyft's business is growing, as is the number of engineers, repositories,
+                        million riders in 2018, Lyft's business is growing, as are the numbers of engineers, repositories,
                         and microservices. Effectively scaling and managing a large engineering organization requires an
                         elite set of development tools and practices to preserve efficiency, while protecting, and
                         enhancing code quality.
