@@ -25,10 +25,11 @@ We review each candidate at each stage of our hiring pipeline (e.g. application,
 - Applications
     - Does this candidate meet all qualifications for the role they are applying for?
     - Does this candidate's resume and application effectively communicate their skills, accomplishments, and a genuine interest in Sourcegraph?
-    - How does this candidate compare to other candidate's in our pipeline and our current team?
+    - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
+    - What makes this candidate's application stand out and excite us about moving forward with interviews?
 - Interviews
     - Does this candidate have the skills and experience that we are looking for?
-    - How does this candidate compare to other candidates in our pipeline and our current team?
+    - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
     - What makes us excited about hiring this candidate?
 
 ## Sharing interview feedback
