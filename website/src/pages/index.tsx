@@ -30,7 +30,7 @@ const testimonials: Testimonial[] = [
         },
         cta: {
             text: 'Read case study',
-            url: '/case-studies/case-studies/lyft-monolith-to-microservices',
+            url: '/case-studies/lyft-monolith-to-microservices',
         },
     },
     {
