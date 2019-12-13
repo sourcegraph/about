@@ -19,6 +19,21 @@ import { ViewDeveloperDocumentationAction } from '../css/components/actions/View
 
 const testimonials: Testimonial[] = [
     {
+        customer: 'Lyft',
+        logo: '/external-logos/lyft-logo.svg',
+        quote:
+            'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition.',
+        author: {
+            name: 'Justin Phillips',
+            title: 'Software Engineer',
+            image: '/case-studies/justin-phillips-lyft.jpg',
+        },
+        cta: {
+            text: 'Read case study',
+            url: '/case-studies/lyft-monolith-to-microservices',
+        },
+    },
+    {
         customer: 'Yelp',
         logo: '/external-logos/yelp.svg',
         quote: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',

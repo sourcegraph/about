@@ -27,7 +27,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                             webkiallowfullscreen="true"
                             mozallowfullscreen="true"
                             allowFullScreen={true}
-                        ></iframe>
+                        />
                     </div>
                 </div>
                 <p className="home__intro-text font-weight-light">

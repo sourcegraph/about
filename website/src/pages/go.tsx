@@ -56,7 +56,7 @@ export default class GoList extends React.Component<any, any> {
                                         className="grid-image"
                                         src="/gophercon-2019/gophercon-thumbnail.png"
                                         alt="GopherCon 2019 Liveblog proudly hosted by Sourcegraph"
-                                    ></img>
+                                    />
                                 </div>
                             </div>
                         </div>
