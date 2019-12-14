@@ -6,7 +6,7 @@ We have [a bug bounty program](https://hackerone.com/sourcegraph).
 
 Code reviews from senior engineers and peers are mandatory for any code to be merged (no direct
 pushes to `master`). Security-sensitive pull requests must undergo [review by the proper security
-code owner](/handbook/engineering/code_reviews#security). Furthermore, we use Sourcegraph to provide
+code owner](code_reviews.md#security). Furthermore, we use Sourcegraph to provide
 critical context during code reviews (such as identifying dependencies of modified code).
 
 We use a number of static analysis tools to identify security risks in development, including the
