@@ -82,6 +82,7 @@ export default ((props: any) => (
                         quote="Lyft teams are constantly innovating and building new systems, necessitating decomposing and migrating off of older ones. Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
                         <br /><br />
                         “Sourcegraph makes it easy to survey and understand existing use cases to make sure we build the right thing."
+                        author="Aneesh Agrawal, Software Engineer, Lyft"
                     />
 
                     <p className="pb-5">
