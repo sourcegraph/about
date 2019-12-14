@@ -41,3 +41,5 @@ Sourcegraph supports HTTPS encryption when deployed on-premises.
 If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. Please do not publicly disclose the issue until we’ve addressed it.
 
 We provide monetary rewards, up to $10,000, for open bounties. This is determined based on the percentage of users impacted, the likelihood of encountering the vulnerability under normal use of the site, and the severity of potential service disruption or data leakage.
+
+For additional information, see the [Sourcegraph Handbook page on security](/handbook/engineering/security).
