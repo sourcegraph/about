@@ -113,3 +113,7 @@ Use your best judgement and ask if you are uncertain.
 ## When should I use a draft PR?
 
 A draft PR signals that the change is not ready for reviewed. This is useful, for example, if you want to self-review your diff before sending review requests to others. If you are looking for feedback or discussion on your change, then you should mark the PR as ready for review and communicate your intentions in the PR description.
+
+## Security
+
+Special care should be taken when reviewing a diff that contains, or is adjacent to, comments that contain the following string: `🚨 SECURITY`. These comments indicate security-sensitive code, the correctness of which is necessary to ensure that no private data is accessed by unauthorized actors. The code owner of any modified security-sensitive code must approve the changeset before it is merged.
