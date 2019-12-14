@@ -16,24 +16,28 @@ If you have specific questions or concerns, contact us at <a href="mailto:securi
 - All application and user access logs are stored centrally and monitored.
 - Company policy prevents customer data from being downloaded to portable devices, such as laptops.
 - Device management is in place for remote wiping of all devices.
+- Development laptops have encrypted hard drives.
 
 ## Network security
 
+When you run Sourcegraph on your own infrastructure, you are protected by the network security policies enforced by your infrastructure environment. On sourcegraph.com, we maintain the following policies:
+
 - All production systems are hosted on Google Cloud Platform (https://cloud.google.com/security/), where all storage volumes are encrypted at rest.
-- All external network communication between production services occur over HTTPS / TLS.
-- External access to production systems is restricted by firewall to restricted IP ranges.
+- All external network communication between production services occurs over HTTPS / TLS.
+- External access to production systems is restricted by firewall. Secrets that grant access to
+  compute resources are stored only on encrypted local drives or in a secret management service.
 - Our dedicated security team at Sourcegraph handles all security escalations, and is available 24/7.
 - Customer data can be deleted from all primary and backup systems within 7 days of request.
-- Recurring third party security assessments available on request
 
 ## Site security
 
-- All data from Sourcegraph.com (https://sourcegraph.com/) is transmitted over HTTPS.
+Sourcegraph supports HTTPS encryption when deployed on-premises.
+
+- All traffic to sourcegraph.com is transmitted over HTTPS.
 - Monitoring services alert our 24/7 support team of potential attacks.
-- Annual third party security assessments available on request - last report February 2017
 
 ## Bug reports
 
 If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. Please do not publicly disclose the issue until we’ve addressed it.
 
-We provide monetary rewards, up to $4,000, for open bounties. This is determined based on the percentage of users impacted, the likelihood of encountering the vulnerability under normal use of the site, and the severity of potential service disruption or data leakage.
+We provide monetary rewards, up to $10,000, for open bounties. This is determined based on the percentage of users impacted, the likelihood of encountering the vulnerability under normal use of the site, and the severity of potential service disruption or data leakage.
