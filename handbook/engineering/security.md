@@ -26,15 +26,14 @@ All development laptops have encrypted hard drives.
 Sourcegraph instances that host private code are typically deployed on-premises and therefore Sourcegraph
 employees have no access to customer data.
 
-Self-hosted Sourcegraph instances do not send any customer code to other servers. Additional
-customer private data such as email addresses is never sent (with the exception of emails collected
-explicitly for sales and support purposes).
+Self-hosted Sourcegraph instances do not send any customer code to other servers. Additionally,
+other than the email address of the initial installer (for customer support, security, and product
+notification purposes) Sourcegraph never sends any private user data, such as usernames or email
+addresses, or other specific data to any other servers. Learn more in our [pings
+documentation](https://docs.sourcegraph.com/admin/pings).
 
-Sourcegraph uses role-based access controls to ensure only customer administrators have access to private configuration data, such as code host and authentication service access tokens.
-
-On sourcegraph.com, Sourcegraph uses role-based access controls to ensure only administrators have
-direct access to production compute resources and sensitive configuration data. All persistent
-volumes are encrypted.
+Sourcegraph uses role-based access controls to ensure only customer administrators have access to
+private configuration data, such as code host and authentication service access tokens.
 
 Internal traffic and RPCs between services that comprise Sourcegraph are TLS-encrypted.
 
