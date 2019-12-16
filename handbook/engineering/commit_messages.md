@@ -30,7 +30,7 @@ Example:
 
 ## Body
 
-The commit body is optional, and should explain _what_ changed and _why_ if a longer description is needed. The _how_ is the diff. When merging strive to keep the final commit body clean (see [pull requests](pull-request)).
+The commit body is optional, and should explain _what_ changed and _why_ if a longer description is needed. The _how_ is the diff. When merging strive to keep the final commit body clean (see [pull requests](pull-requests)).
 
 ## Pull requests
 
