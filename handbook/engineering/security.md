@@ -30,6 +30,8 @@ Self-hosted Sourcegraph instances do not send any customer code to other servers
 customer private data such as email addresses is never sent (with the exception of emails collected
 explicitly for sales and support purposes).
 
+Sourcegraph uses role-based access controls to ensure only customer administrators have access to private configuration data, such as code host and authentication service access tokens.
+
 On sourcegraph.com, Sourcegraph uses role-based access controls to ensure only administrators have
 direct access to production compute resources and sensitive configuration data. All persistent
 volumes are encrypted.
