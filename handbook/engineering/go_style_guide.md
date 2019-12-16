@@ -20,7 +20,7 @@ pointer or document it.
 
 ## Pull requests
 
-Avoid unnecessary whitespace changes unless they are made by formatting tools (e.g. `prittier`, `gofmt`).
+Avoid unnecessary formatting changes that are unrelated to your change. If you find code that isn't formatted correctly, fix the formatting in a separate PR by running the appropriate formatter (e.g. `prettier`, `gofmt`).
 
 ## Group code blocks logically
 
