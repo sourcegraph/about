@@ -14,6 +14,7 @@ following:
 - language-specific linters
 - notifications and alerts for risky code patterns using Sourcegraph saved searches
 - code coverage tools to ensure unit test coverage
+- end to end tests to validate authentication workflows
 - tools such as dependabot and GitHub security alerts to identify security vulnerabilities in our
   code and in dependencies
 - enhanced code reviews via Sourcegraph.
