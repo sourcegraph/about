@@ -23,7 +23,7 @@ All development laptops have encrypted hard drives.
 
 ## Ops
 
-Sourcegraph instances that host private code are deployed on-premises and therefore Sourcegraph
+Sourcegraph instances that host private code are typically deployed on-premises and therefore Sourcegraph
 employees have no access to customer data.
 
 On-premises Sourcegraph instances do not send any customer code to other servers. Additional
