@@ -12,7 +12,7 @@ critical context during code reviews (such as identifying dependencies of modifi
 We use a number of static analysis tools to identify security risks in development, including the
 following:
 - language-specific linters
-- notifications and alerts for risky code patterns
+- notifications and alerts for risky code patterns using Sourcegraph saved searches
 - code coverage tools to ensure unit test coverage
 - tools such as dependabot and GitHub security alerts to identify security vulnerabilities in our
   code and in dependencies
