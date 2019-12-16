@@ -41,4 +41,4 @@ Internal traffic and RPCs between services that comprise Sourcegraph are TLS-enc
 ## Code permissions
 
 Sourcegraph respects code host access controls. Unit and integration tests protect the correctness
-of this permissions check.
+of these permissions checks.
