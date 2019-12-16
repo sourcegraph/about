@@ -42,4 +42,4 @@ If you think that you have found a security issue, please email us at <a href="m
 
 We provide monetary rewards, up to $10,000, for open bounties. This is determined based on the percentage of users impacted, the likelihood of encountering the vulnerability under normal use of the site, and the severity of potential service disruption or data leakage.
 
-For additional information, see the [Sourcegraph Handbook page on security](/handbook/engineering/security).
+For additional information, see the internal [Sourcegraph Handbook page on security](/handbook/engineering/security).
