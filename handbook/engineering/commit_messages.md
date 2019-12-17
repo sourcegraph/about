@@ -34,8 +34,4 @@ The commit body is optional, and should explain _what_ changed and _why_ if a lo
 
 ## Pull requests
 
-[Code review](code_reviews.md) happens in PRs, which should contain a good subject and description. When a PR is approved, we by default squash and merge commits. After clicking "Squash and merge", edit the body of the final commit message so that it is clean and informative. For example, delete any unnecessary and uninformative bullet points introduced by previous commits. Some guidelines:
-
-- GitHub will add your first commit message and the subject line to the squashed commit. This is often redundant. Delete the commit bullet in this case.
-- Phrases like `* add test`, `* fix test`, `* try X`, or `Update filename.md` are not useful and clutter the body. Delete these.
-- Accepting suggested changes will add a commit like `Update... Co-Authored-By...`. Delete these.
+[Code review](code_reviews.md) happens in PRs, which should contain a good subject and description. When a PR is approved, we prefer to squash merge all commits on the PR branch into a single commit on master. After clicking "Squash and merge", edit the body of the final commit message so that it is clean and informative. The commit body should either be empty (assuming that you have a good PR description), or a brief summary of your change (which could be exactly your PR description if it is concise). It should not include information from incremental commits on the PR branch (e.g. `* add test`, `* fix test`, `* try X`, `Update filename.md`, `Co-Authored-By...`).
