@@ -1,6 +1,6 @@
 # Spending company money
 
-We want to make sure you have what you need to be productive and happy in your role at Sourcegraph, so we've come up with a few guidelines to help you when you have work-related expenses. Below you'll find a list of some typical purchases that would be reimbursed for, as well as a few things to keep in mind:
+We want to make sure you have what you need to be productive and happy in your role at Sourcegraph, so we've come up with a few guidelines to help you when you have work-related expenses. Below you'll find a list of some typical purchases that would be reimbursed for, as well as a few things to keep in mind when expensing purchases:
 
 - You are free to purchase these items and expense them without asking permission as long as it's in the interest of the company. When in doubt, please contact @sourcegraph/people-ops for clarification before the purchase.
 
