@@ -1,5 +1,5 @@
 ---
-title: How Sourcegraph ensured production stability at Lyft during their monolith to microservices decomposition
+title: How Sourcegraph helped ensure production stability at Lyft during their monolith to microservices decomposition
 author: Ryan Blunden
 publishDate: 2019-12-13T10:00-07:00
 tags: [
