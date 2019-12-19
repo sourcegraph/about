@@ -29,14 +29,14 @@ Here are the following sources we collect data from:
 * Sourcegraph.com Site-admin pages: customer subscriptions and license keys
 * [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information
 * [Custom tool to track events](https://github.com/sourcegraph/sourcegraph/issues/5486) on the Sourcegraph.com instance
-* [Prometheus search data](https://sourcegraph.com/-/debug/grafana/d/0ZBSEmRWk/searcher?orgId=1&refresh=5s) represents the breakdown of search statuses (success, error, timeout, partial timeout) on [Sourcegraph.com](https://sourcegraph.com/search)
+* [Prometheus dashboards](https://sourcegraph.com/-/debug/grafana/?orgId=1) show high-level insight into the health of a Sourcegraph instance to admins. Sourcegraph teammates can see the health of Sourcegraph.com. 
 
 ### Data tools
 
 * [Looker](#using-looker): Business intelligence/data visualization tool
 * Google Cloud Platform: BigQuery is our data warehouse and the database Looker runs on top of
 * Google Sheets: There are a [number of spreadsheets](https://drive.google.com/drive/folders/1vOyhFO90FjHe-bwnHOZeljHLuhXL2BAv)that Looker queries (by way of BigQuery).
-* BizOps does built ah-hoc tools to analyze data for various reasons. Currently, the only major tool [analyzes Sourcegraph.com search data](https://docs.google.com/spreadsheets/d/1C7ZMcurYv48CmKr_B1_rFNBdFazsxNq5c-wZMlUQjXQ/edit#gid=1679017494). All scripts are in the [analytics repo](https://github.com/sourcegraph/analytics). 
+* BizOps builds ah-hoc tools to analyze data for various reasons. The projects are in the [Google Drive Analytics folder](https://drive.google.com/drive/folders/13b2PJqiQzjLMrM2ZAjlsax0fT_DQlxFm) and the source code is available in the [analytics repo](https://github.com/sourcegraph/analytics).
 
 ### Data pipelines
 
