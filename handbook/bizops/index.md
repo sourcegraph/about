@@ -40,7 +40,7 @@ Here are the following sources we collect data from:
 
 ### Data pipelines
 
-Every data source is assumed to always be up-to-date unless noted otherwise.  
+Every underlying data source (not chart!) is assumed to always be up-to-date unless noted otherwise.
 
 * HubSpot data: Every week on Sunday night or Monday morning, BizOps triggers [scripts](https://github.com/sourcegraph/analytics/tree/master/HubSpot%20ETL) that retrieve data from HubSpot and upload it to BigQuery. This does mean that currently our HubSpot data in Looker is not updated during the week. If you have a particular reason you'd like it to be updated during the week, mention @ericbm in the #analytics channel in Slack. 
 
