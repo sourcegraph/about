@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.11: NPM credentials campaign, structural search, language statistics, and removed management console"
+title: "Sourcegraph 3.11: Structural search, removed management console, language statistics, and NPM credentials campaign"
 author: Christina Forney
 publishDate: 2019-12-20T10:00-07:00
 tags: [blog]
@@ -12,10 +12,6 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 <div style="padding-left: 2rem">
 
-[**🤖 Find and remove leaked NPM credentials**](#find-and-remove-leaked-npm-credentials)<br />
-
-[**🔎 Search query language statistics**](#search-query-language-statistics)<br />
-
 [**🏗 Introducing code-aware structural search**](#introducing-code-aware-structural-search)<br />
 
 [**🛠 Management console removed to simplify configuration**](#management-console-removed-to-simplify-configuration)<br />
@@ -23,6 +19,10 @@ Sourcegraph is the standard developer platform for code search and navigation at
 [**📊 Comprehensive overhaul of instance health monitoring and dashboards**](#high-level-health-monitoring)<br />
 
 [**⚙️ Global settings now configurable via local file**](#global-settings-now-configurable-via-local-file)<br />
+
+[**🤖 Find and remove leaked NPM credentials**](#find-and-remove-leaked-npm-credentials)<br />
+
+[**🔎 Search query language statistics**](#search-query-language-statistics)<br />
 
 [**🗞 In other news**](#in-other-news)<br />
 How Lyft used Sourcegraph during its monolith to microservice decomposition and Sourcegraph proudly sponsoring GitLab Commit.
@@ -37,33 +37,7 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## Find and remove leaked NPM credentials
-
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/380663070?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/380663070" target="_blank">View on Vimeo</a></p>
-</p>
-
-Credential leaks compromise organization code and are a top concern for security teams and developers alike. Sourcegraph 3.11 introduces a new automation campaign type to find and remove leaked NPM credentials across all repositories at your organization. The leaked credentials campaign type allows you to preview the proposed changes, create pull requests on your code hosts, and track the PRs in a burndown chart to ensure they are merged.
-
-Sourcegraph Automation campaigns are in private beta. [Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see what we have planned and [apply for early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
-
-## Search query language statistics
-
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/380662321?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/380662321" target="_blank">View on Vimeo</a></p>
-</p>
-
-A new experimental feature has been added to show [language statistics about your search query](https://docs.sourcegraph.com/user/search#statistics). Search result pages now have a **Stats** link to a visual breakdown of the languages that comprise the results for the query. This data is also available through our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
-
-Language analysis is computationally expensive, so this feature is currently behind a feature flag. To enable, update your global, organization, or user settings to include `{ “experimentalFeatures”: { “searchStats”: true } }`.
-
-## Introducing code-aware structural search
+## Introducing code aware structural search
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -72,21 +46,29 @@ Language analysis is computationally expensive, so this feature is currently beh
   <p style="text-align: center"><a href="https://vimeo.com/380662673" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph 3.11 introduces structural search, a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
+Sourcegraph 3.11 introduces [structural search](https://docs.sourcegraph.com/user/search/structural), a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
 
 It can be awkward or difficult to match code blocks or nested expressions with regexp. To meet this challenge we’ve introduced a new and easier way to search code that operates more closely on the parse tree of the input using [Comby syntax](https://comby.dev/) for structural matching.
 
-Here is a search query that [matches all the arguments in `fmt.Sprintf` calls](https://sourcegraph.com/search?q=repo%3A%5Egithub%5C.com%2Fsourcegraph%2Fsourcegraph%24++%27fmt.Sprintf%28%3A%5Bargs%5D%29%27+count%3A100&patternType=structural) in the Sourcegraph code base:
+For example, this can be used to [find all the places that `fmt.Sprintf` are unnecessary](https://sourcegraph.com/search?q=repo:sourcegraph/sourcegraph%24+%27fmt.Sprintf%28%22:%5Bstr%5D%22%29%27&patternType=structural):
 
 ```text
-patterntype:structural “fmt.Sprintf(:[args])”
+patterntype:structural 'fmt.Sprintf(":[str]")'
 ```
 
-The `:[args]` part is a hole with a descriptive name `args` that matches code. The important part is that this pattern understands that the parentheses are balanced.
+Or to [identify all the places an `http.Client` is created with a `Transport`](https://sourcegraph.com/search?q=repo:sourcegraph/sourcegraph%24+%22http.Client%7B:%5Ba%5D+Transport:+:%5Bb%5D+:%5Bc%5D%7D%22+count:1000&patternType=structural):
 
-Note, to use this query syntax you must include `patterntype:structural` to activate the search type.
+```text
+patterntype:structural "http.Client{:[a] Transport: :[b] :[c]}"
+```
 
-See our [documentation on structural search](https://docs.sourcegraph.com/user/search/structural) for a complete syntax reference and more examples.
+In these examples, the `:[str]` part is a hole with a descriptive name `str` that matches code. The important part is that this pattern understands that the structual pieces (e.g. parentheses, braces) are balanced.
+
+Known limitations:
+
+- Only indexed repositories will show results for structural search. On sourcegraph.com, we index roughly the top 13,000 repositories by GitHub stars.
+- To use this query syntax you must include `patterntype:structural` to activate the search type.
+- See [additional functionality and limitations](https://docs.sourcegraph.com/user/search/structural#current-functionality-and-restrictions)
 
 ## Management console removed to simplify configuration
 
@@ -118,6 +100,32 @@ Future versions will add more exhaustive alert definitions and more detailed inf
 ## Global settings now configurable via local file
 
 Some teams prefer updating Sourcegraph configuration in version control rather than through the Site admin UI. In Sourcegraph 3.11, admins can configure their instance to [load global settings](https://docs.sourcegraph.com/admin/config/advanced_config_file#global-settings) from a file on-disk using the new `GLOBAL_SETTINGS_FILE` environment variable. Sourcegraph 3.4 enabled this functionality for [external services](https://docs.sourcegraph.com/admin/config/advanced_config_file#external-services-configuration) and [site configuration](https://docs.sourcegraph.com/admin/config/advanced_config_file#site-configuration).
+
+## Find and remove leaked NPM credentials
+
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/380663070?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/380663070" target="_blank">View on Vimeo</a></p>
+</p>
+
+Credential leaks compromise organization code and are a top concern for security teams and developers alike. Sourcegraph 3.11 introduces a new automation campaign type to find and remove leaked NPM credentials across all repositories at your organization. The leaked credentials campaign type allows you to preview the proposed changes, create pull requests on your code hosts, and track the PRs in a burndown chart to ensure they are merged.
+
+Sourcegraph Automation campaigns are in private beta. [Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see what we have planned and [apply for early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
+
+## Search query language statistics
+
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/380662321?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/380662321" target="_blank">View on Vimeo</a></p>
+</p>
+
+A new experimental feature has been added to show [language statistics about your search query](https://docs.sourcegraph.com/user/search#statistics). Search result pages now have a **Stats** link to a visual breakdown of the languages that comprise the results for the query. This data is also available through our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
+
+Language analysis is computationally expensive, so this feature is currently behind a feature flag. To enable, update your global, organization, or user settings to include `{ “experimentalFeatures”: { “searchStats”: true } }`.
 
 ## In other news
 
