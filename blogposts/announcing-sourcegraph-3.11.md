@@ -37,7 +37,7 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## Introducing code aware structural search
+## Introducing code-aware structural search
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -66,7 +66,7 @@ In these examples, the `:[str]` part is a hole with a descriptive name `str` tha
 
 Known limitations:
 
-- Only indexed repositories will show results for structural search. On sourcegraph.com, we index roughly the top 13,000 repositories by GitHub stars.
+- Only indexed repositories will show results for structural search. On [Sourcegraph](https://sourcegraph.com/search), we index roughly the top 13,000 repositories by GitHub stars.
 - To use this query syntax you must include `patterntype:structural` to activate the search type.
 - See [additional functionality and limitations](https://docs.sourcegraph.com/user/search/structural#current-functionality-and-restrictions)
 
