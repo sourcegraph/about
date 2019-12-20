@@ -16,7 +16,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 [**🔎 Search query language statistics**](#search-query-language-statistics)<br />
 
-[**🏗 Introducing code aware structural search**](#introducing-code-aware-structural-search)<br />
+[**🏗 Introducing code-aware structural search**](#introducing-code-aware-structural-search)<br />
 
 [**🛠 Management console removed to simplify configuration**](#management-console-removed-to-simplify-configuration)<br />
 
@@ -63,7 +63,7 @@ A new experimental feature has been added to show [language statistics about you
 
 Language analysis is computationally expensive, so this feature is currently behind a feature flag. To enable, update your global, organization, or user settings to include `{ “experimentalFeatures”: { “searchStats”: true } }`.
 
-## Introducing code aware structural search
+## Introducing code-aware structural search
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -72,7 +72,7 @@ Language analysis is computationally expensive, so this feature is currently beh
   <p style="text-align: center"><a href="https://vimeo.com/380662673" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph 3.11 introduces structural search, a code aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
+Sourcegraph 3.11 introduces structural search, a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
 
 It can be awkward or difficult to match code blocks or nested expressions with regexp. To meet this challenge we’ve introduced a new and easier way to search code that operates more closely on the parse tree of the input using [Comby syntax](https://comby.dev/) for structural matching.
 
