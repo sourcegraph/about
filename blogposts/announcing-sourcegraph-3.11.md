@@ -62,7 +62,7 @@ Or to [identify all the places an `http.Client` is created with a `Transport`](h
 patterntype:structural "http.Client{:[a] Transport: :[b] :[c]}"
 ```
 
-In these examples, the `:[str]` part is a hole with a descriptive name `str` that matches code. The important part is that this pattern understands that the structual pieces (e.g. parentheses, braces) are balanced.
+In these examples, the `:[str]` part is a hole with a descriptive name `str` that matches code. The important part is that these patterns understand that the structural pieces (e.g. parentheses and braces) are balanced.
 
 Known limitations:
 
