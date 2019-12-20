@@ -2,7 +2,7 @@
 
 Our passionate users provide a constant stream of thoughtful feedback and love engaging with us to help them and their teams solve their toughest problems. This trust and feedback is a gift, and we take it seriously and listen carefully to what users tell us.
 
-## Sources
+## Sources of feedback
 
 - GitHub issues
 - Twitter
@@ -20,4 +20,8 @@ We aggregate all of this feedback in [productboard](https://sourcegraph.productb
 
 ### Adding feedback to productboard
 
-All of the above sources (with the exception of HubSpot forms) require the team help forward that data into productboard using the Slack integration, [browser extension](https://chrome.google.com/webstore/detail/productboard-make-product/mlpbdkpkicfkhgagnoamdcimmhdkakni?hl=en), or [forwarding email address](mailto:inbox-hkpsum5melnwcauyjvztbtsq@inbound.productboard.com).
+All of the above sources of feedback (with the exception of HubSpot forms) require the team help forward that data into productboard using:
+
+- Slack integration
+- [browser extension](https://chrome.google.com/webstore/detail/productboard-make-product/mlpbdkpkicfkhgagnoamdcimmhdkakni?hl=en)
+- [forwarding email address](mailto:inbox-hkpsum5melnwcauyjvztbtsq@inbound.productboard.com).
