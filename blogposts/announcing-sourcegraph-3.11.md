@@ -66,7 +66,7 @@ In these examples, the `:[str]` part is a hole with a descriptive name `str` tha
 
 Known limitations:
 
-- Only indexed repositories will show results for structural search. On [Sourcegraph](https://sourcegraph.com/search), we index roughly the top 13,000 repositories by GitHub stars.
+- Only indexed repositories will show results for structural search. On [Sourcegraph](https://sourcegraph.com/search), we index approximately 10,000 of the most popular repositories on GitHub.
 - To use this query syntax you must include `patterntype:structural` to activate the search type.
 - See [additional functionality and limitations](https://docs.sourcegraph.com/user/search/structural#current-functionality-and-restrictions)
 
