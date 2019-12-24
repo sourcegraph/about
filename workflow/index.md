@@ -93,7 +93,12 @@ See product comparisons and integrations with:
 </tr>
 
 <tr>
-    <td>Basic text and file search</td>
+    <td class="tooltip">
+        Basic text and file search
+        <span class="tooltiptext">
+            Offers some search capabilities over code, often very limited and not tailored to core code search use cases.
+        </span>
+    </td>
     <td class="green"></td>
     <td class="green"></td>
     <td class="green"></td>
@@ -102,7 +107,10 @@ See product comparisons and integrations with:
 </tr>
 
 <tr>
-    <td>Symbol search</td>
+    <td class="tooltip">
+        Symbol search
+        <span class="tooltiptext">The ability to search specifically for function, class, and variable names, while filtering out noise from matches in non-code files, comments, and string constants.</span>
+    </td>
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -111,7 +119,10 @@ See product comparisons and integrations with:
 </tr>
 
 <tr>
-    <td>Regex</td>
+    <td class="tooltip">
+        Regular expressions
+        <span class="tooltiptext">Regular expressions ("regex") are a powerful pattern-matching syntax used for many types of patterns found in code, such as similarly named functions, anti-patterns that should be avoided, and fuzzy matching.</span>
+    </td>
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -119,7 +130,10 @@ See product comparisons and integrations with:
     <td class="green"></td>
 </tr>
 <tr>
-    <td>Multi-repository regex search</td>
+    <td class="tooltip">
+        Multi-repository regex search
+        <span class="tooltiptext">Regular expression search is especially useful when you can look for patterns and anti-patterns across all repositories in your organization.</span>
+    </td>
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -127,7 +141,12 @@ See product comparisons and integrations with:
     <td class="green"></td>
 </tr>
 <tr>
-    <td><a href="https://comby.dev/" target="_blank">Comby syntax</a></td>
+    <td class="tooltip">
+        <a href="https://comby.dev/" target="_blank">Comby syntax</a>
+        <span class="tooltiptext">
+            A powerful pattern-matching syntax that goes beyond regular expressions and makes it easy to match common patterns in code (like balanced parens) that are hard to describe in regex.
+        </span>
+    </td>
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -146,7 +165,7 @@ See product comparisons and integrations with:
     <td class="tooltip">
         Universal search
         <span class="tooltiptext">
-            Search across all repositories and code hosts
+            Most engineering organizations have multiple repositories and code hosts. Universal search lets you search across all repositories, wherever they may be hosted, while obeying whatever permissions are defined.
         </span>
     </td>
     <td class="green"></td>
@@ -169,7 +188,12 @@ See product comparisons and integrations with:
     <td class="green"></td>
 </tr>
 <tr>
-    <td>Symbol outline</td>
+    <td class="tooltip">
+        Symbol outline
+        <span class="tooltiptext">
+            View an outline of functions, classes, and variables defined in a code file.
+        </span>
+    </td>
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -177,7 +201,8 @@ See product comparisons and integrations with:
     <td class="green"></td>
 </tr>
 <tr>
-    <td class="tooltip">Basic code intelligence
+    <td class="tooltip">
+        Basic code intelligence
         <span class="tooltiptext">Jump-to-definition within the same file, in some languages</span>
     </td>
     <td class="green"></td>
@@ -211,7 +236,12 @@ See product comparisons and integrations with:
     <th colspan="20"></th>
 </tr>
 <tr>
-    <td>Integrates with major code hosts and code review</td>
+    <td class="tooltip">
+        Integrates with major code hosts and code review
+        <span class="tooltiptext">
+            Whatever code host or code review tool is used, makes code searchable, navigable, and accessible.
+        </span>
+    </td>
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -219,8 +249,11 @@ See product comparisons and integrations with:
     <td class="gray"></td>
 </tr>
 <tr>
-    <td class="tooltip">Extensions
-    <span class="tooltiptext">Third-party and internal developer tools integrating directly into search and code browsing UI.<span>
+    <td class="tooltip">
+        Extensions
+        <span class="tooltiptext">
+            Third-party and internal developer tools integrating directly into search and code browsing UI.
+        <span>
     </td>
     <td class="green"></td>
     <td class="gray"></td>
@@ -237,8 +270,11 @@ See product comparisons and integrations with:
     <td class="gray"></td>
 </tr>
 <tr>
-    <td class="tooltip">Code-as-data GraphQL API
-        <span class="tooltiptext">GraphQL API supports structured information about source code that is used to power smart internal developer tools</span>
+    <td class="tooltip">
+        Code-as-data GraphQL API
+        <span class="tooltiptext">
+            GraphQL API supports structured information about source code that is used to power smart internal developer tools
+        </span>
     </td>
     <td class="green"></td>
     <td class="gray"></td>
@@ -247,7 +283,12 @@ See product comparisons and integrations with:
     <td class="gray"></td>
 </tr>
 <tr>
-    <td>On-prem deployment</td>
+    <td class="tooltip">
+        On-prem deployment
+        <span class="tooltiptext">
+            Can be deployed on-premises in a deployment environment you control and which obeys the security policies you set.
+        </span>
+    </td>
     <td class="green"></td>
     <td class="green"></td>
     <td class="green"></td>
@@ -256,3 +297,4 @@ See product comparisons and integrations with:
 </tr>
 
 </table>
+<br><br><br>
