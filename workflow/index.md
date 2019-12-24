@@ -82,6 +82,7 @@ See product comparisons and integrations with:
     <th></th>
     <th>Sourcegraph</th>
     <th>GitHub</th>
+    <th>GitLab</th>
     <th>Oracle OpenGrok</th>
     <th>Google Cloud Source Repositories</th>
 </thead>
@@ -97,11 +98,13 @@ See product comparisons and integrations with:
     <td class="green"></td>
     <td class="green"></td>
     <td class="green"></td>
+    <td class="green"></td>
 </tr>
 
 <tr>
     <td>Symbol search</td>
     <td class="green"></td>
+    <td class="gray"></td>
     <td class="gray"></td>
     <td class="green"></td>
     <td class="gray"></td>
@@ -111,6 +114,7 @@ See product comparisons and integrations with:
     <td>Regex</td>
     <td class="green"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
     <td class="green"></td>
     <td class="green"></td>
 </tr>
@@ -119,11 +123,13 @@ See product comparisons and integrations with:
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
     <td class="green"></td>
 </tr>
 <tr>
-    <td>Comby syntax</td>
+    <td><a href="https://comby.dev/" target="_blank">Comby syntax</a></td>
     <td class="green"></td>
+    <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -131,6 +137,7 @@ See product comparisons and integrations with:
 <tr>
     <td>Scales to 100,000s of repositories</td>
     <td class="green"></td>
+    <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -146,6 +153,7 @@ See product comparisons and integrations with:
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
 </tr>
 
 <tr>
@@ -158,10 +166,12 @@ See product comparisons and integrations with:
     <td class="green"></td>
     <td class="green"></td>
     <td class="green"></td>
+    <td class="green"></td>
 </tr>
 <tr>
     <td>Symbol outline</td>
     <td class="green"></td>
+    <td class="gray"></td>
     <td class="gray"></td>
     <td class="green"></td>
     <td class="green"></td>
@@ -174,6 +184,7 @@ See product comparisons and integrations with:
     <td class="green"></td>
     <td class="gray"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
 </tr>
 <tr>
     <td class="tooltip">Universal code intelligence
@@ -183,10 +194,12 @@ See product comparisons and integrations with:
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
 </tr>
 <tr>
     <td>Provides code navigation on all major code hosts</td>
     <td class="green"></td>
+    <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
@@ -203,6 +216,7 @@ See product comparisons and integrations with:
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
 </tr>
 <tr>
     <td class="tooltip">Extensions
@@ -212,11 +226,13 @@ See product comparisons and integrations with:
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
 </tr>
 <tr>
     <td>Open source</td>
     <td class="green"></td>
     <td class="gray"></td>
+    <td class="green"></td>
     <td class="green"></td>
     <td class="gray"></td>
 </tr>
@@ -228,9 +244,11 @@ See product comparisons and integrations with:
     <td class="gray"></td>
     <td class="gray"></td>
     <td class="gray"></td>
+    <td class="gray"></td>
 </tr>
 <tr>
     <td>On-prem deployment</td>
+    <td class="green"></td>
     <td class="green"></td>
     <td class="green"></td>
     <td class="green"></td>
