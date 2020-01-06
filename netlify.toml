@@ -8,6 +8,11 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   YARN_VERSION = "1.15.2"
   YARN_FLAGS = "--no-ignore-optional"
 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+
 [[redirects]]
   from = "/assets/*"
   to = "https://about-docsite.sourcegraph.com/assets/:splat"
