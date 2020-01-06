@@ -67,7 +67,7 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
                                                 </span>
                                                 {author.title && (
                                                     <span className="testimonial-carousel__author-title d-block">
-                                                        {customer} {author.title}
+                                                        {author.title}, {customer}
                                                     </span>
                                                 )}
                                             </cite>

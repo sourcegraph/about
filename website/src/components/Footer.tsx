@@ -101,7 +101,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
             )}
             <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
                 <ul className="nav">
-                    <li className="nav-item text-muted mr-3">Copyright &copy; 2019 Sourcegraph</li>
+                    <li className="nav-item text-muted mr-3">&copy; 2020 Sourcegraph</li>
                     <li className="nav-item">
                         <Link to="/terms" className="nav-link">
                             Terms

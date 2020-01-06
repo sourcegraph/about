@@ -39,7 +39,7 @@ export default class HTML extends React.Component<HtmlProps> {
                         async={true}
                         defer={true}
                         src="//js.hs-scripts.com/2762526.js"
-                    ></script>
+                    />
                 </head>
                 <body>
                     <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />

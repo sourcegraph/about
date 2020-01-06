@@ -7,6 +7,8 @@ Sourcegraph is an all-remote company, which means:
 - All teammates work remotely.*
 - Sourcegraph does not have any offices.*
 - We work asynchronously across time zones and continents.
+  - Teammates are responsible for setting their own work hours and marking them in Google Calendar.
+  - We try to limit the number of synchronous meetings, but there are some [company](../../handbook/communication/company_meeting.md) and team meetings that you need to attend which might be outside of your normal working hours. We do our best to optimize meeting times for all involved participants.
 
 - [Tips for working remotely](tips.md)
 

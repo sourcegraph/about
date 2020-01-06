@@ -7,6 +7,7 @@ We believe that team get-togethers are invaluable for building cohesiveness in r
 The budgets for each category of travel below are non-transferable (and each of the company-wide events are as well). Each should be considered "use it, or lose it".
 
 As examples:
+
 - A teammate cannot reallocate the budget from a company-wide event to an individual trip.
 - A teammate cannot use their team budget for individual travel.
 - A teammate cannot skip the winter holiday party to get a longer stay at the Spring/Summer company-wide event.
@@ -21,15 +22,12 @@ The first category of travel is company-wide events. Sourcegraph holds two compa
 
 Each team is allocated USD $4K per year per teammate for team events (minimum two members of the team). This is designed to allow each team to hold at least one event every six months (in addition to the company-wide events above). This budget can be used for travel (airfare, trains, etc.), lodging (hotels, rental homes, etc.), events, meals and entertainment, and more. Teams are expected to use discretion about what events are appropriate for team outings, and should contact @sourcegraph/people-ops with any questions.
 
-If one individual is a member of both a product team and a project team (e.g. a member of both Core services and Automation), the total budget per person would stay the same at USD $4K, and the individual (and their teams) would have to figure out how to split it.
-
-Today, “teams” includes both permanent product teams and project-specific teams (this is subject to change, and should be confirmed with your manager):
+If one individual is a member of multiple teams, the total budget per person would stay the same at USD $4K, and the individual (and their teams) would have to figure out how to split it.
 
 - Dev: Web
 - Dev: Core services
 - Dev: Distribution
 - Dev: Code intelligence
-- Dev: Automation
 - DevRel, Marketing, and Growth
 - Sales
 

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 
 export const GitLabIntegrationSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <div id="gitlab-integration" className="gitlab-integration-section py-5 row justify-content-center ">
+    <div id="gitlab-integration" className="gitlab-integration-section py-5 container-fluid justify-content-center d-flex">
         <div className="row justify-content-center container">
             <h2 className="text-center display-4 mb-2">
                 <div className="gitlab-integration-section__new-badge">New</div>
@@ -27,7 +27,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                             webkiallowfullscreen="true"
                             mozallowfullscreen="true"
                             allowFullScreen={true}
-                        ></iframe>
+                        />
                     </div>
                 </div>
                 <p className="home__intro-text font-weight-light">

@@ -46,7 +46,7 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
                     }}
                     target="_blank"
                 >
-                    <i className="fa fa-file-pdf pr-2"></i>
+                    <i className="fa fa-file-pdf pr-2" />
                     Download PDF
                 </a>
             )}
