@@ -8,9 +8,8 @@ To provide competitive and generous compensation (both cash and equity) to every
 
 ## Cash (salary and commission)
 
-We pay competatively because we want to hire the best people and we want our teammates to be focused on helping Sourcegraph succeed, not worrying about paying bills.
+We pay competitively because we want to hire the best people and we want our teammates to be focused on helping Sourcegraph succeed, not worrying about paying bills.
 
-<!-- We are an [all remote team](../../company/remote/index.md),  -->
 
 We pay salaries in USD.
 
