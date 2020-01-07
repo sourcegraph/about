@@ -32,10 +32,9 @@ export default ((props: any) => (
             </Helmet>
             <div className="pricing-page">
                 <ContentSection color="primary" className="hero-section text-center py-5">
+                    <h1>Sourcegraph pricing</h1>
                     <h3>
-                        Free to start.
-                        <br />
-                        No commitment.
+                        Free to start.  No commitment.
                         <br />
                         Only pay for active users.
                     </h3>
