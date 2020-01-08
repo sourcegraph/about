@@ -49,7 +49,7 @@ We want to make sure you have what you need to be productive and happy in your r
 
 **Cell phone plan:** $75/month (no need to expense, this is automatically added onto your pay).
 
-**Coworking/office space:** TBD
+**Coworking/office space:** $300-500/month (these are meant to be averages, and it should be dependent on the average cost of coworking spaces in your particular location, if your coworking space is significantly more than the averages listed here, please get approval from @sourcegraph/people-ops). 
 
 **Professional development (conferences, courses):** $1000/year
 
