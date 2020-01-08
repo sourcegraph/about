@@ -8,11 +8,12 @@ We maintain multiple deployments of Sourcegraph:
 
 ## Deploying to sourcegraph.com
 
-The configuration for sourcegraph.com is at github.com/sourcegraph/deploy-sourcegraph-dot-com. This configuration is deployed to sourcegraph.com on every commit to the `master` branch.
+The configuration for sourcegraph.com is in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com). 
 
 Here is how commits on `master` in [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) eventually get deployed to sourcegraph.com:
 
 1. Every commit on `master` in [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) pushes updated Docker images for all of our services.
-1. [Renovate](https://app.renovatebot.com/dashboard#github/sourcegraph/deploy-sourcegraph-dot-com) checks for updated Docker images about every hour and [opens and merges a PR](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate) to update the image tags.
+1. [Renovate](https://app.renovatebot.com/dashboard#github/sourcegraph/deploy-sourcegraph-dot-com) checks for updated Docker images about every hour and [opens and merges a PR](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate) to update the image tags in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com).
+1. This configuration is deployed to sourcegraph.com on every commit to the `master` branch of [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com) in CI.
 
 If you want to manually expedite a deploy, you can manually create and merge a PR that updates the Docker image tags in [sourcegraph/deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com).
