@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { Tweets } from '../components/Tweets'
+import Conferences from '../components/EventsList'
 export default class EventsPage extends React.Component<any, any> {
     constructor(props: any) {
         super(props)
@@ -43,16 +44,11 @@ export default class EventsPage extends React.Component<any, any> {
                         </div>
                     </section>
                     <section className="events">
-                        <div class="container">
-                            <div class="row justify-content-md-center">
-                                <div class="col mt-5">
-                                    <ul>
-                                        <li><a href="https://www.rxjs.live/" rel="nofollow">RxJS Live</a> March 20, 2020, London, England</li>
-                                        <li><a href="https://tsconf.eu/" rel="nofollow">TSConf EU 2020</a> March 31, 2020 Linz, Austria</li>
-                                    </ul>
-                                </div>
+                        <div className="bg-white text-dark py-6">
+                            <div className="container">   
+                                <Conferences></Conferences>
                             </div>
-                         </div>                   
+                        </div>                                         
                     </section>
                                        
                     <section className="events">
