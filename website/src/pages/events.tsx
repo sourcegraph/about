@@ -23,16 +23,15 @@ export default class EventsPage extends React.Component<any, any> {
         const desc =
             'Meet Sourcegraph at these conferences and meetups around the world.'
         return (
-            <Layout location={this.props.location}>
+            <Layout location={this.props.location}
+                meta={{
+                    title:
+                        'Sourcegraph developer events',
+                    description:
+                        'Join Sourcegraph at these upcoming developer events'
+                 }}
+            >
                 <div className="Events bg-white text-dark">
-                    <Helmet>
-                        <title>Sourcegraph developer events</title>
-                        <meta name="twitter:title" content="Sourcegraph developer events" />
-                        <meta property="og:title" content="Sourcegraph developer events" />
-                        <meta name="description" content="Sourcegraph developer events" />
-                        <meta name="twitter:description" content="Sourcegraph developer events" />
-                        <meta property="og:description" content="Sourcegraph developer events" />
-                    </Helmet>
                     <section className="events events__head">
                         <div className="events__container">
                         <ContentSection color="primary" className="hero-section text-center py-5">
