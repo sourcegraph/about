@@ -23,7 +23,7 @@ Everyone should have these notifications enabled so that you are notified when s
 This option will send you the firehose of notifications for all of the repositories that you are watching (and by default this is all repositories in the Sourcegraph org when you join it). There are two reasons why you might want to do this:
 
 1. So that you can search your email to find conversations that are not involved in.
-1. So that if you are added to an existing conversation in a PR or issue, you will have the complete conversation in your email already.
+2. So that if you are added to an existing conversation in a PR or issue, you will have the complete conversation in your email already.
 
 If you enable email notifications for watched repositories then you will want to setup some email filters (otherwise your email inbox will be overwhelemed and important things will get buried). You should _not_ attempt to read every issue and PR that doesn't involve you.
 
