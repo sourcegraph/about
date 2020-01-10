@@ -88,3 +88,63 @@ The other clusters are deployed and rolled back in the same way as sourcegraph.c
 	```
 	kubectl get pods --all-namespaces
 	```
+
+## kubectl cheatsheet
+
+These example commands are for the `dot-com` cluster where the Sourcegraph application is deployed to the `prod` namespace.
+
+<table>
+
+<tr>
+  <td>List all pods</td>
+  <td><code>kubectl get pods --namespace=prod -o=wide</code></td>
+</tr>
+
+<tr>
+  <td>Describe the properties of a pod</td>
+  <td><code>kubectl --namespace=prod describe pod $POD_NAME</code></td>
+</tr>
+
+<tr>
+  <td>Pull logs</td>
+  <td><code>kubectl --namespace=prod logs $POD_NAME</code></td>
+</tr>
+
+<tr>
+  <td>Get an interactive shell in a running pod container</td>
+  <td><code>kubectl exec --namespace=prod -ti $POD_NAME -- /bin/sh</code></td>
+</tr>
+
+<tr>
+  <td>Edit a "deployment" (such as changing environment variables).</td>
+  <td><code>kubectl edit deployment --namespace=prod DEPLOYMENT_NAME</code><br/>
+  Note that the deployment name is not the pod name, and affects all pods running that deployment.</td>
+</tr>
+
+<tr>
+  <td>SSH into the VM running a pod</td>
+  <td>Find the node ID from the NODE column of <code>kubectl get pods --namespace=prod -o=wide</code>. Go to the Google Compute Engine dashboard and click the "SSH" button in the top left to get the <code>gcloud</code> command to SSH into the node.<br /><code>kubectl -n prod exec -it POD_NAME /bin/sh</code></td>
+</tr>
+
+<tr>
+  <td>Kill a pod. All of our pods are part of a deployment, so the deployment will spin up a replacement pod automatically.</td>
+  <td><code>kubectl delete --namespace=prod pod $POD_NAME</code></td>
+</tr>
+
+<tr>
+  <td>Get a PostgreSQL client on the prod database.</td>
+  <td><code>kubectl exec --namespace=prod -ti $PSQL_POD_ID -- psql -U sg</code></td>
+</tr>
+
+<tr>
+  <td>List versions in production.</td>
+  <td>
+	<code>kubectl -n prod get deploy -o jsonpath='{.items[*].spec.template.spec.containers[0].image} ' | tr ' ' '\n' | sort -u</code>
+  </td>
+</tr>
+
+</table>
+
+## Backups
+
+Snapshots of all Kubernetes resources are taken periodically and pushed to https://github.com/sourcegraph/kube-backup/.
