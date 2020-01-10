@@ -25,4 +25,7 @@ Welcome to Sourcegraph! This document will guide you through engineering specifi
 - Join #dev-announce, #dev-chat, and your team's channel on Slack. [Team chat documentation](../communication/team_chat.md#engineering)
 - Read through the rest of the engineering handbook to learn more about how we operate.
 - Setup your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next engineer that we hire doesn't run into the same problem).
+- Make yourself an admin on sourcegraph.com and sgdev.org by updating the database directly (this is not what a normal user would do, but doing it this way will expose you to useful knowledge). Relevant documentation:
+  - [Our deployments](deployments.md)
+  - [How do I access the Sourcegraph database?](https://docs.sourcegraph.com/admin/faq#how-do-i-access-the-sourcegraph-database)
 - Start working on the started tasks that your manager has assigned you.

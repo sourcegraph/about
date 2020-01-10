@@ -4,12 +4,21 @@ We maintain multiple deployments of Sourcegraph:
 
 - sourcegraph.com is our production deployment for open source code.
   - [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dot-com?project=sourcegraph-dev)
+    ```
+    gcloud container clusters get-credentials dot-com --zone us-central1-f --project sourcegraph-dev
+    ```
   - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
 - sourcegraph.sgdev.org is our private deployment of Sourcegraph that contains our private code.
   - [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
+    ```
+    gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
+    ```
   - [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/master/kubernetes/dogfood)
 - k8s.sgdev.org is a dogfood deployment that replicates the scale of our largest customers.
   - [dogfood-full-k8s cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood-full-k8s?project=sourcegraph-dev)
+    ```
+    gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
+    ```
   - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
 
 ## Deploying to sourcegraph.com
@@ -49,3 +58,33 @@ git push origin release
 ## Deploying and rolling back other clusters
 
 The other clusters are deployed and rolled back in the same way as sourcegraph.com. Use the links at the top of this page to see where the Kubernetes configurations for each cluster is stored.
+
+## How to setup access to Kubernetes
+
+1. Make sure that you have been granted access to our Google Cloud project: https://console.developers.google.com/project/sourcegraph-dev?authuser=0. You may need to change `authuser` to the index of your sourcegraph.com Google account.
+
+1. Install the `gcloud` command (CLI for interacting with the Google Cloud):
+
+	```
+	curl https://sdk.cloud.google.com | bash
+	```
+
+1.	Get authorization for your `gcloud` command:
+
+	```
+	gcloud auth login
+	```
+
+1.	Install the `kubectl` command (CLI for interacting with Kubernetes):
+
+	```
+	gcloud components install kubectl
+	```
+
+1. Configure `kubectl` to point to the desired cluster using the appropriate `gcloud container clusters get-credentials` command listed at the top of this document.
+
+1. Verify that you have access to kubernetes:
+
+	```
+	kubectl get pods --all-namespaces
+	```
