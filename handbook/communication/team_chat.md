@@ -9,7 +9,7 @@ If you are a new member of the engineering team, you'll most likely want to join
 - #general - Anything about Sourcegraph in general (that doesn't fit a more specific channel below).
 - #random - Cool things you're doing in life, cat photos, jokes, vacation photos, etc.
 - #progress - Share cool/interesting progress with the team
-- #thanks - Appreciate someone's work? You can thank them here! :)
+- #thanks - Appreciate someone's work? You can thank them here! :) {#thanks}
 - #handbook - Updates to and discussion of [this handbook](../index.md)
 
 ## Product
@@ -21,7 +21,8 @@ If you are a new member of the engineering team, you'll most likely want to join
 
 ## Business
 
-- #go-to-market - Going to market, selling to customers
+- #marketing - [Marketing](../marketing/index.md)
+- #sales - [Sales](../sales/index.md)
 - #marketintel - Market and industry intelligence - products, funding, competition
 - #payments - Customer payment notifications
 - #hiring-active - Candidate hiring

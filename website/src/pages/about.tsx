@@ -112,6 +112,9 @@ export default class About extends React.Component<any, any> {
                                         </p>
                                     </div>
                                 </div>
+                                <a href="/handbook">
+                                    <button className="btn btn-primary">Read the Sourcegraph handbook</button>
+                                </a>
                             </div>
                         </div>
                         <div className="about__founders">
@@ -161,7 +164,7 @@ export default class About extends React.Component<any, any> {
                                             <p>
                                                 Quinn Slack is CEO and co-founder of Sourcegraph. Prior to Sourcegraph,
                                                 Quinn co-founded Blend Labs, an enterprise technology company with over
-                                                100 employees dedicated to improving home lending.
+                                                500 employees dedicated to improving home lending.
                                             </p>
                                             <p>
                                                 At Palantir Technologies, he created a technology platform to help two
@@ -213,7 +216,7 @@ export default class About extends React.Component<any, any> {
                                             </div>
                                             <p>
                                                 Beyang Liu is CTO and co-founder of Sourcegraph. Prior to Sourcegraph,
-                                                Beyang was a software engineer at Palantir Technologies where he
+                                                Beyang was a software engineer at Palantir Technologies, where he
                                                 developed new data analysis software on a small, customer-facing team
                                                 working with Fortune 500 companies.
                                             </p>
@@ -225,6 +228,9 @@ export default class About extends React.Component<any, any> {
                                         </div>
                                     </div>
                                 </div>
+                                <a href="/company/team">
+                                    <button className="btn btn-primary">See all Sourcegraph team members</button>
+                                </a>
                             </div>
                         </div>
                         <div className="about__investors">

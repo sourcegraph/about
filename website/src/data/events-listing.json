@@ -1,0 +1,32 @@
+{
+"Conference":[
+	{
+		"eventTitle":"GitLab Commit",
+		"eventDate": "January 14, 2020",
+		"eventLocation":"San Francisco, CA",
+		"eventLink": "https://about.gitlab.com/events/commit/",
+		"eventImage": "/external-logos/gitlab-commit-logo.png"
+	},
+	{
+		"eventTitle":"TSConf JP 2020",
+		"eventDate": "February 22, 2020",
+		"eventLocation":"Tokyo, Japan",
+		"eventLink": "https://www.tsconf.jp/2020/",
+		"eventImage": "/external-logos/tsconf-js-logo.svg"
+	},
+	{
+		"eventTitle":"RxJS Live",
+		"eventDate": "March 20, 2020",
+		"eventLocation":"London, England",
+		"eventLink": "https://www.rxjs.live/",
+		"eventImage": "/external-logos/rxjs-live-london-logo.svg"
+	},
+	{
+		"eventTitle":"TSConf EU 2020",
+		"eventDate": "March 31, 2020",
+		"eventLocation":"Linz, Austria",
+		"eventLink": "https://tsconf.eu/",
+		"eventImage": "/external-logos/tsconf-eu-logo.svg"
+	}	
+]
+}

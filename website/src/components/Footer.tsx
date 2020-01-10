@@ -38,9 +38,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <li className="nav-item">
                                 <Link to="/product">Product</Link>
                             </li>
-                            {/*<li className="nav-item">
-                            <Link to="/solutions">Use cases</Link>
-</li> TODO(sqs)*/}
                             <li className="nav-item">
                                 <Link to="/product">What is a developer platform?</Link>
                             </li>
@@ -78,6 +75,9 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <li className="nav-item">
                                 <Link to="/blog">Blog</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/events">Events</Link>
+                            </li>                           
                         </ul>
                     </div>
                     <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
@@ -88,6 +88,9 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             </li>
                             <li className="nav-item">
                                 <Link to="/about">About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <a href="/handbook">Handbook</a>
                             </li>
                             <li className="nav-item">
                                 <Link to="/contact">Contact</Link>
@@ -101,7 +104,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
             )}
             <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
                 <ul className="nav">
-                    <li className="nav-item text-muted mr-3">Copyright &copy; 2019 Sourcegraph</li>
+                    <li className="nav-item text-muted mr-3">&copy; 2020 Sourcegraph</li>
                     <li className="nav-item">
                         <Link to="/terms" className="nav-link">
                             Terms

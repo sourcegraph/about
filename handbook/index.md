@@ -4,11 +4,11 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 ## Company
 
-- [Values](values.md)
+- [Strategy](../company/strategy.md)
 - [Handbook usage](usage.md)
 - [Communication](communication/index.md)
-  - [Company meeting](communication/company_meeting.md)
   - [Style guide](communication/style_guide.md)
+- [Team](../company/team/index.md)
 - [CEO](ceo/index.md)
 
 ## People Ops
@@ -20,6 +20,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## Product
 
 - [Product](product/index.md)
+  - [Sourcegraph workflow](../workflow/index.md)
   - [Direction](../direction/index.md)
   - [Personas](product/personas.md)
 
@@ -34,8 +35,16 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## Marketing
 
 - [Marketing](marketing/index.md)
-  - [Developer Relations](marketing/developer-relations/index.md)
+  - [Messaging](marketing/messaging.md)
+    - [What is Sourcegraph?](marketing/messaging.md#sourcegraph-value-proposition)
+    - [What problems does Sourcegraph solve?](marketing/messaging.md#what-problems-does-sourcegraph-solve)
+- [Developer Relations](marketing/developer-relations/index.md)
+
 
 ## Sales
 
 - [Sales](sales/index.md)
+
+## Business Operations
+
+- [Business Operations](bizops/index.md)

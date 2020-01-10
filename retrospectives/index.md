@@ -4,15 +4,13 @@ We value continuous learning and improvement.
 
 Retrospectives are a chance for teams to reflect on past experiences, celebrate what went well, and identify areas of improvement for the future.
 
-The [release captain](../handbook/engineering/releases.md#release-captain) is responsible for facilitating an engineering wide retrospective for each monthly release, but additional retrospectives may be organized by anyone for any reason (e.g. team retrospective, ops incident, customer incident).
-
 ## How to facilitate a retrospective
 
 If you are facilitating a retrospective for a project or release, follow these steps.
 
 ### Collect feedback
 
-Create a new Google Doc with an appropriate title (e.g. "3.2 retrospective") that is editable by everyone who is participating in the retrospective. Paste in the following agenda:
+Create a new Google Doc with an appropriate title (e.g. "3.2 retrospective") in the [Retrospectives folder](https://drive.google.com/drive/u/0/folders/1UiNZujRgsThPFkHoWJvymlsNDsBRtn6O) that is editable by everyone participating in the retrospective. Paste in the following agenda:
 
 ```
 Purpose: [SHORT DESCRIPTION OF THE SCOPE AND PURPOSE OF THIS RETROSPECTIVE]
@@ -55,10 +53,6 @@ This is to assure that a retrospective has the right tone to make it a positive 
 
 Review the action items from the previous retrospective and discuss the current state. Is it complete? If not, why? Are there any followup actions?
 
-#### Group (15 min)
-
-Have the author of each feedback item read it out loud and answer any questions or points of clarification (this is not time for discussion).
-
 #### Vote (5 min)
 
 Ask each participant vote on the items that they deem most important. Make sure that participants understand the rules for voting:
@@ -75,35 +69,10 @@ After voting is complete, sort the items based on the number of votes each recei
 
 The discussion is the main part of any retrospective and where real value is extracted.
 
-This phase lasts for the rest of the scheduled meeting (minus 5 minutes for the meta retro).
+This phase lasts for the rest of the scheduled meeting.
 
-Based on the vote distribution, choose which topics are going to be discussed and the time limit for each topic. 10 minutes is a good default. Enforce the time limit! You can always return to a topic at the end if there is extra time.
+Based on the vote distribution, choose which topics are going to be discussed and the time limit for each topic. 10 minutes is a good default. Enforce the time limit! You can always return to a topic at the end if there is extra time, or continue the converation on Slack.
 
 Ensure you ask everyone what their thoughts on each topic are. Everyone is different; some people are loud and very outspoken. Some are quiet and observe more. It's important to capture everyone's opinions.
 
 For each topic, if necessary, ensure there's a written down actionable commitment with an agreed upon owner who will pursue its resolution. Additionally, capture important discussion points for each topic in the shared document.
-
-### Publish the results
-
-Remove any sensitive information from the retrospective document and commit it to this directory.
-
-To maintain list formatting, download the Google Doc as plaintext instead of attempting to copy/paste: File > Download As > Plain Text (.txt).
-
-## Completed retrospectives
-
-<!--
-Add links to completed retrospective docs here. These are publicly visible, so make sure they don't include anything sensitive.
--->
-
-- [3.0 beta](3_0_beta.md)
-- [3.0](3_0.md)
-- [Tomás’ notes on the PostgreSQL upgrade](postgresql_upgrade.md)
-- [3.2](3_2.md)
-- [Customer license expiration](customer_license_expiration.md)
-- [3.3](3_3.md)
-- [3.4](3_4.md)
-- [3.5](3_5.md)
-- [3.6](3_6.md)
-- [3.7](3_7.md)
-- [3.8](3_8.md)
-- [3.9](3_9.md)

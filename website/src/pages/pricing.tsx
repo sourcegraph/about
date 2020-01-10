@@ -32,10 +32,9 @@ export default ((props: any) => (
             </Helmet>
             <div className="pricing-page">
                 <ContentSection color="primary" className="hero-section text-center py-5">
+                    <h1>Sourcegraph pricing</h1>
                     <h3>
-                        Free to start.
-                        <br />
-                        No commitment.
+                        Free to start.  No commitment.
                         <br />
                         Only pay for active users.
                     </h3>
@@ -139,6 +138,10 @@ export default ((props: any) => (
                             />
                         </div>
                     </div>
+                </div>
+                <div className="container-fluid pricing-page__prepaid mb-5">
+                    Prepaid plans and volume discounts are available. <Link to="/contact/sales">Contact us</Link> to
+                    learn more.
                 </div>
             </div>
             <ContentSection color="purple" className="hero-section text-center py-5">

@@ -29,9 +29,20 @@ Assume the reader is a busy non-native English speaker.
 - Avoid ambiguous verbs. For example, avoid using verbs like "cluster", "document", "label", "group", "admin", etc., because we commonly use those as nouns.
 - Write robust sentences that can be understood even if the reader doesn't recognize all of the words.
 
+### Avoid jargon and acronyms
+
+- Prefer plain English terms over jargon and acronyms (especially Sourcegraph-specific ones).
+  - Example: "sales", "marketing", or "sales and marketing" instead of "GTM" ("go-to-market")
+- If you use an acronym, make sure that someone can search for it in the [handbook](../index.md) and easily find the definition.
+  - Exception: acronyms that have a single obvious meaning when you Google them (such as "HTML" or "LSP")
+
+> See "[Acronyms Seriously Suck](https://gist.github.com/klaaspieter/12cd68f54bb71a3940eae5cdd4ea1764)" from Elon Musk.
+
 ### Referring to the product and features
 
 - Sourcegraph: main product, prefer using this name unless you need to be more precise
+  - Self-hosted Sourcegraph instance: only if clarification between the Sourcegraph.com instance, managed instances, and on-premises instances is required
+  - Managed Sourcegraph instance: only if clarification between the Sourcegraph.com instance, self-hosted instances, and managed instances is required
   - Sourcegraph.com: the public instance of Sourcegraph for open-source code at https://sourcegraph.com
   - Sourcegraph integrations: the general term for our integrations
     - Sourcegraph['s] Phabricator integration
@@ -121,7 +132,7 @@ For consistency, all examples should use the following names (as appropriate).
 
 - Repository (not "repo")
 - Organization (not "org")
-- When referring to a user's assumed corporate entity or employer, prefer calling it an "organization" (not "company" or "team")
+- When referring to a user's assumed corporate entity or employer, prefer calling it an "[organization](../sales/index.md#organization)" (not "company" or "team")
 - Email address (not "email")
 - Admin or Site admin (not "administrator" or "site administrator")
 - Documentation not docs ("docs" is OK in paths and navigation links)

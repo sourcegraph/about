@@ -2,7 +2,7 @@
 
 We want Sourcegraph to be:
 
-- **For developers:** the best way to answer questions and get unblocked while writing, reviewing, or reading code.
+- **For developers:** the best way to answer questions and get unblocked while writing, reviewing, and reading code.
 - **For organizations** (engineering leaders and internal tools teams): the infrastructure for developer tools and data.
 
 This is an overview of what’s coming in the next 3-6 months.  More details are in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing). Our high-level vision is outlined in the [Sourcegraph master plan](https://about.sourcegraph.com/plan).
@@ -29,7 +29,7 @@ Our current product priorities are:
 
 ### Improved usability
 
-Sourcegraph is intuitive to use for a wide range of roles, from developers to PMs, engineering managers, data analysts, and more. It adds value to this wide range of roles by making more information about code available, such as language statistics and dependency graphs. [Search has an improved UI](https://docs.google.com/document/d/1Vo7HlwO_HgrK8O-VEIZ9wHuSyHdEA0zk9qucNCoF0jg/edit?usp=sharing) that makes it more accessible, easier to use, and faster to drill down on what you're looking for.
+Sourcegraph is intuitive to use for a wide range of roles, from developers to PMs, engineering managers, data analysts, and more. It adds value to this wide range of roles by making more information about code available, such as language statistics and dependency graphs. [Search has an improved UI](https://about.sourcegraph.com/blog/sourcegraph-3.10#improved-autocompletion-for-search-query-filters) that makes it more accessible, easier to use, and faster to drill down on what you're looking for.
 
 Improving upon on our [basic code intelligence](https://docs.sourcegraph.com/user/code_intelligence) that works for every language, Sourcegraph provides precise code intelligence for a subset of common languages including Go, TypeScript, C/C++, Java, and C#.
 
