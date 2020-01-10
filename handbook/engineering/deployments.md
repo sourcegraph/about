@@ -3,7 +3,7 @@
 We maintain multiple deployments of Sourcegraph:
 
 - sourcegraph.com is our production deployment for open source code.
-  - [dot-com Kubernetes cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dot-com?project=sourcegraph-dev)
+  - [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dot-com?project=sourcegraph-dev)
   - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
 - sourcegraph.sgdev.org is our private deployment of Sourcegraph that contains our private code.
   - [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
