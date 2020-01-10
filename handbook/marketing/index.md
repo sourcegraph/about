@@ -28,3 +28,7 @@ See job descriptions and responsibilities of roles on the Marketing team:
 ## Definitions
 
 See "[Marketing definitions](https://docs.google.com/document/d/1h6xQeGHpMrsUUJ63Q6KupUNzq1iOpZfZSMC6ta3pLiY/edit#heading=h.pt4ztk7qhub0)".
+
+## [Marketing operations](marketing_operations.md)
+
+See "[Marketing operations](marketing_operations.md)". 
