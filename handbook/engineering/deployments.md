@@ -69,13 +69,13 @@ The other clusters are deployed and rolled back in the same way as sourcegraph.c
 	curl https://sdk.cloud.google.com | bash
 	```
 
-1.	Get authorization for your `gcloud` command:
+1. Get authorization for your `gcloud` command:
 
 	```
 	gcloud auth login
 	```
 
-1.	Install the `kubectl` command (CLI for interacting with Kubernetes):
+1. Install the `kubectl` command (CLI for interacting with Kubernetes):
 
 	```
 	gcloud components install kubectl
