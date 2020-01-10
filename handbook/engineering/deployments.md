@@ -17,7 +17,7 @@ We maintain multiple deployments of Sourcegraph:
 - k8s.sgdev.org is a dogfood deployment that replicates the scale of our largest customers.
   - [dogfood-full-k8s cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood-full-k8s?project=sourcegraph-dev)
     ```
-    gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
+    gcloud container clusters get-credentials dogfood-full-k8s --zone us-central1-a --project sourcegraph-dev
     ```
   - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
 
