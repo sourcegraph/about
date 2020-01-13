@@ -113,12 +113,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [personal docs](nick.md)
 - Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the privilege to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits.
 
-## Christopher Flournoy
-
-- San Francisco, CA, USA 🇺🇸
-- [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chrisflournoy/)
-- Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events. Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration.
-
 ## Thorsten Ball
 
 - Software Engineer
