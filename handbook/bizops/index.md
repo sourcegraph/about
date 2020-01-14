@@ -2,21 +2,23 @@
 
 The Business Operations (BizOps) team is responsible for [translating business goals (strategy) into tactical operations (execution)](https://medium.com/business-startup-development-and-more/why-your-startup-also-needs-a-bizops-team-5d2e7d436a0).
 
+# Analytics
+
 This page describes Sourcegraph's analytics function, our data sources, and how to use our data tools.
 
-If you have any questions, mention @ericbm in either the #analytics, #sales, or #marketing Slack channels.
-
-## Analytics
+To reach us, mention @ericbm in the most relevant channel (i.e. #marketing for a marketing-related question).
 
 ## Submitting a data request
 
-Proposals to capture and report on new data are in [GitHub issues in the Sourcegraph analytics repository](https://github.com/sourcegraph/analytics/issues). Provide the following data to help us understand and prioritize your request:
+**Projects:** Proposals to capture and report on new data are in [GitHub issues in the Sourcegraph analytics repository](https://github.com/sourcegraph/analytics/issues). Provide the following data to help us understand and prioritize your request:
 - What is the purpose of the visualization?
 - Will it be frequently used, or is it only needed sporadically?
 - How does it support Sourcegraph's company and team OKRs?
 - Do you know how you want the data visualized? If you need a new graph or chart, adding a photo of a sketch on paper helps immensely.
 - When does this need to be delivered?
 - How urgent is this request?
+
+**Small asks and questions:** Post in the #analytics channel. 
 
 If you need clarification or are not sure about any of the above, ask a question in the [Slack #analytics channel](https://sourcegraph.slack.com/archives/CN4FC7XT4).
 
@@ -31,7 +33,7 @@ We collect data from the following:
 - [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information
 - [Custom tool to track events](https://github.com/sourcegraph/sourcegraph/issues/5486) on the Sourcegraph.com instance
 
-### Data tools
+## Data tools
 
 - [Looker](#using-looker): Business intelligence/data visualization tool
 - Google Cloud Platform: BigQuery is our data warehouse, and the database Looker runs on top of
@@ -44,10 +46,11 @@ We collect data from the following:
 ### Sourcegraph quick links
 
 - [All Instances](https://sourcegraph.looker.com/looks/436)<br/>
-[Specific Instance Overview](https://sourcegraph.looker.com/dashboards/94?Unique%20Server%20ID=&Site%20ID=&filter_config=%7B%22Unique%20Server%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:4%7D%5D,%22Site%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:5%7D%5D%7D) (To select a specific company, fill the Unique Server ID field)<br/>
+- [Specific Instance Overview](https://sourcegraph.looker.com/dashboards/94?Unique%20Server%20ID=&Site%20ID=&filter_config=%7B%22Unique%20Server%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:4%7D%5D,%22Site%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:5%7D%5D%7D) (To select a specific company, fill the Unique Server ID field)<br/>
 
 **Folders**
 
+- [Go-to-market](https://sourcegraph.looker.com/browse/boards/2)<br/>
 - [Marketing](https://sourcegraph.looker.com/folders/109)<br/>
 - [Sales](https://sourcegraph.looker.com/folders/114)<br/>
 - [Product Insights](https://sourcegraph.looker.com/folders/113)<br/>
@@ -60,7 +63,7 @@ Looker provides tools for building and exploring custom reports and visualizatio
 - [Visualizing data](http://www.looker.com/docs/exploring-data/visualizing-query-results)
 - [Building dashboards](http://www.looker.com/docs/exploring-data/building-dashboards)
 
-### Querying Lookr data
+### Querying Looker data
 
 Looker created a query language called [LookML](https://docs.looker.com/data-modeling/learning-lookml/what-is-lookml) for defining calculations and data relationships in a SQL database. The 'Explores' and other functionality you see in Looker is all based on a LookML model.  The average Sourcegraph teammate should not need to write any LookML code, but should you need or want to, here are some resources to get started.
 
