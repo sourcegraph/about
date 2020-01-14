@@ -1,14 +1,17 @@
 # Engineering
 
+- [Onboarding](onboarding.md)
 - RFCs (requests for comment)
   - [All RFC documents](https://drive.google.com/drive/folders/1bip_pMeWePyNNdCEETRzoyMdLtntcNKR) (Google Drive)
   - [How we use RFCs](../communication/rfcs/index.md)
 - [Code reviews](code_reviews.md)
 - [Go style guide](go_style_guide.md)
+- [Continuous releasability](continuous_releasability.md)
 - [Commit message guidelines](commit_messages.md)
 - [Incidents](incidents.md)
 - [Releases](releases/index.md)
   - [Release issue template](releases/release_issue_template.md)
+- [Deployments](deployments.md)
 - [On-call](on_call/index.md)
 - [Prometheus](prometheus.md)
 - [Security](security.md)

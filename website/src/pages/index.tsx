@@ -185,7 +185,7 @@ export default ((props: any) => (
                 <h2 id="demo" className="text-center display-4 pb-4">
                     See why developers rely on Sourcegraph daily
                 </h2>
-                <Vimeo id={353422112} muted={false} />
+                <Vimeo id={353422112} muted={false} autoplay={true} loop={true} />
             </ContentSection>
             <div className="bg-white text-dark py-4">
                 <div className="container">

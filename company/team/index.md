@@ -113,12 +113,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [personal docs](nick.md)
 - Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the privilege to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits.
 
-## Christopher Flournoy
-
-- San Francisco, CA, USA 🇺🇸
-- [christopher@sourcegraph.com](mailto:christopher@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chrisflournoy/)
-- Chris enjoys new adventures, traveling with his wife, wine-tasting and spending time with friends and family. Depending on the season, you'll either find him skiing or attending professional sporting events. Prior to Sourcegraph, Chris helped expand BetterCloud's sales presence out west, and has held various sales roles within software companies. Chris attended Temple University where he earned a BS in Business Administration.
-
 ## Thorsten Ball
 
 - Software Engineer
@@ -174,5 +168,21 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Lisbon, Portugal 🇵🇹 / Berlin, Germany 🇩🇪
 - [tomas@sourcegraph.com](mailto:tomas@sourcegraph.com), [tsenart](https://github.com/tsenart), [@tsenart](https://twitter.com/tsenart), [LinkedIn](https://www.linkedin.com/in/tsenart/)
 - Tomás started fiddling with computers because he was fascinated with how hackers were depicted in Hollywood movies. He has since moved on to not only build distributed systems but also distributed teams. Before Sourcegraph he's been at companies like Apple, Mesosphere, Thomson Reuters and Soundcloud. In his free time he likes to spend time with his partner, play Chess and Rocket League, eat great food, hit the gym and read books.
+
+
+## Michael Fromberger
+
+- Software Engineer
+- Seattle, WA, USA 🇺🇸
+- [michael@sourcegraph.com](mailto:michael@sourcegraph.com), [creachadair](https://github.com/creachadair), [@creachadair](https://twitter.com/creachadair), [LinkedIn](https://www.linkedin.com/in/michael-fromberger/)
+- Michael has been programming since about age 7, and has never lost his fascination with the ways code serves, simultaneously, as a language for people and computers. He pursued this fascination via a degree in linguistics and an (unfinished) Ph.D. in computer science. Prior to joining Sourcegraph, he managed the [Kythe](https://kythe.io) team at Google and led the Language Analysis team at source{d}. He lives in Seattle with his wife and two kittens. When not fiddling with computers he loves to read, write, teach, cook, play music, and spin yarn, among other hobbies.
+
+## Adam Herzog
+
+- Product Marketing Manager
+- San Francisco, CA, USA 🇺🇸
+- [herzog@sourcegraph.com](mailto:herzog@sourcegraph.com), [@ah3rz](https://twitter.com/ah3rz), [LinkedIn](https://www.linkedin.com/in/herzogadam/)
+- Adam is an experienced developer marketer, now focusing on product marketing at Sourcegraph. He's previously led developer relations, digital demand generation, and other marketing functions at companies like Docker, Humio, and Neo4j. Adam advocates for inclusivity 🌈 within the entire tech industry (and the world!) and probably uses the word "awesome" too much. He is passionate about good food, Hatha yoga, and jean jackets in no particular order.
+
 
 <!-- Paste *your* section above this line! -->
