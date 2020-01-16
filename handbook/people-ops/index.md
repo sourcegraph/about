@@ -9,7 +9,7 @@
 - [Spending company money](spending-company-money.md)
 - [Glossary](from-graphbook/glossary.md)
 - [Vacation/FTO](vacation-and-fto.md)
-- [Holidays](from-graphbook/holidays.md)
+- [Holidays](holidays.md)
 - [All-remote work](../../company/remote/index.md)
 - [Teammate philosophy](teammate_philosophy.md)
 - [List of team members](../../company/team/index.md)
