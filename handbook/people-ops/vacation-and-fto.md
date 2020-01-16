@@ -6,11 +6,11 @@ Unless taking time off for a reason that would qualify for an approved leave of 
 
 Employees taking FTO for any reason that qualifies for an approved leave of absence must work with human resources to ensure time off is properly designated. FTO may be used during time off that qualifies for an approved leave of absence up to the following limits (please see human resources with any questions):
 
-* Pregnancy disability leave or other state disability leave (non-short term disability eligible): Up to seven days. If leave is taken on an intermittent basis, up to seven days or 56 hours of FTO may be used to cover the intermittent absences.
+- Pregnancy disability leave or other state disability leave (non-short term disability eligible): Up to seven days. If leave is taken on an intermittent basis, up to seven days or 56 hours of FTO may be used to cover the intermittent absences.
 
-* Pregnancy disability leave or other state disability leave (short term disability eligible): Up to seven days to coincide with the California State Disability Insurance (SDI) waiting period.
+- Pregnancy disability leave or other state disability leave (short term disability eligible): Up to seven days to coincide with the California State Disability Insurance (SDI) waiting period.
 
-* Military Leave (all types – under USERRA (or any state equivalent)): Up to seven days.
+- Military Leave (all types – under USERRA (or any state equivalent)): Up to seven days.
 
 FTO is not earned or accrued, and there is no payout of FTO upon separation from the Company.
 
