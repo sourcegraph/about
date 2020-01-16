@@ -8,7 +8,7 @@
 - [Expense reports](expenses.md)
 - [Spending company money](spending-company-money.md)
 - [Glossary](from-graphbook/glossary.md)
-- [Vacation/FTO](fhttps://github.com/sourcegraph/Graphbook/blob/master/Holidays,%20FTO,%20and%20leaves%20of%20absence/Vacation%20and%20FTO.md)
+- [Vacation/FTO](vacation-and-fto.md)
 - [Holidays](from-graphbook/holidays.md)
 - [All-remote work](../../company/remote/index.md)
 - [Teammate philosophy](teammate_philosophy.md)

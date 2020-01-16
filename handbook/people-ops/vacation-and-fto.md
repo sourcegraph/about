@@ -14,6 +14,6 @@ Employees taking FTO for any reason that qualifies for an approved leave of abse
 
 FTO is not earned or accrued, and there is no payout of FTO upon separation from the Company.
 
-
 ## Calendar protocol
+
 Once employees have discussed their scheduled time off with their managers and received approval, employees must add the dates of their unavailability to the "Not working" shared company calendar. 
