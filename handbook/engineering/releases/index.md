@@ -99,14 +99,13 @@ A---B---C---D---E---F---G---H---I---J---K---L (master branch)
 
 In order to cherry-pick a fix onto a release branch:
 
-1. Get approval from **release captain**.
 1. Merge changes into `master` as a squashed commit.
-1. Checkout the release branch (e.g. `3.12`).
-1. Make sure your local release branch is up to date.
+1. Get approval from the **release captain**.
+1. Checkout the release branch (e.g. `git checkout 3.12`).
+1. Make sure your local release branch is up to date (i.e. `git pull`).
 1. `git cherry-pick <commit-sha-of-squashed-commit>`
 1. `git push`
-1. Let the release captain know (either by sending a message on Slack or leaving a commit on the merged PR with the SHA of the cherry-picked commit, see [example](https://github.com/sourcegraph/sourcegraph/pull/7753#issuecomment-575134117).
-
+1. Let the release captain know (either by sending a message on Slack or leaving a comment on the merged PR with the SHA of the cherry-picked commit, see [example](https://github.com/sourcegraph/sourcegraph/pull/7753#issuecomment-575134117).
 
 ### Issues
 
