@@ -1,0 +1,12 @@
+.news {
+    &__image {
+        width: 100%;
+        max-width: 150px;
+	margin-bottom: 1rem;
+    }
+   &__date {
+	font-size: 0.9em;
+	margin-left: .5em;
+	opacity: .7;
+    }
+}
