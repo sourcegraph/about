@@ -14,7 +14,7 @@ The forms that support UTM are:
 - Contact us form
 - In-product request (enterprise) trial 
 
-The parameters that our HubSpot workflows support are utm_campaign, utm_source and utm_medium. Tag @ericbm in #marketing if more parameters are needed. 
+The parameters that our HubSpot workflows support are `utm_campaign`, `utm_source` and `utm_medium`. Tag @ericbm in #marketing if more parameters are needed. 
 
 [Workflows]('https://app.hubspot.com/workflows/2762526/flow/9011999/edit') are set up in HubSpot to capture the latest conversion information, and copy this information to the ‘First event’ fields if they are blank and unknown.
 
