@@ -2,7 +2,6 @@
 
 This file documents how we test code at Sourcegraph.
 
-## Permissions
 
 ### Percy
 
