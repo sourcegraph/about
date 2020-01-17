@@ -44,7 +44,7 @@ export default class NewsPage extends React.Component<any, any> {
                         <div class="container">
                             <div class="row">
                                 <div class="col mt-5 mb-5 ">
-                                    <h3>Press Releases</h3>
+                                    <h3>Press releases</h3>
                                      <ul>
                                         <li><a href="/blog/press-release-sourcegraph-announces-new-gitlab-native-integration/?ref=news" >New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum</a> 
                                         <span class="news__date">November 12, 2019</span>
@@ -163,7 +163,7 @@ export default class NewsPage extends React.Component<any, any> {
                         <div class="container">
                             <div class="row justify-content-md-center">
                                 <div class="col mt-5">                                           
-                                    <h3>Media Contact</h3>
+                                    <h3>Media contact</h3>
                                     <p>Tanya Carlsson<br />
                                     Offleash PR for Sourcegraph<br />
                                     <a href="mailto:tanya@offleashpr.com">tanya @ offleashpr.com</a><br />
