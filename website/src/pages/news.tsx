@@ -166,8 +166,8 @@ export default class NewsPage extends React.Component<any, any> {
                                     <h3>Media contact</h3>
                                     <p>Tanya Carlsson<br />
                                     Offleash PR for Sourcegraph<br />
-                                    <a href="mailto:tanya@offleashpr.com">tanya @ offleashpr.com</a><br />
-                                    707.529.6139<br />
+                                    <a href="mailto:tanya@offleashpr.com">tanya@offleashpr.com</a><br />
+                                    <a href="tel:+17075296139">+1 707-529-6139</a><br />
                                     &nbsp;</p>
                                 </div>
                             </div>
