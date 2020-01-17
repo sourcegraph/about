@@ -47,7 +47,7 @@ After this triage process, the team manager puts together a draft tracking issue
 At this point, everyone on the team is asked to:
 
 1. Update their availability for the month in the Not Working calendar and write down the number of working days in the designated section in the tracking issue.
-1. Propose other work for the iteration in a comment in the tracking issue. Each proposed work item must be captured in separate GitHub issue that is assigned to the right owner, estimated, and categorized as per the above mentioned requirements.
+1. Propose other work for the iteration in a comment in the tracking issue. Each proposed work item must be captured in a separate GitHub issue that is assigned to the right owner, estimated, and categorized as per the above mentioned requirements.
 
 All planned work items are meant to be finished in the iteration. If this doesn't happen, it is either due to unknown unknowns or lack of estimating accuracy. While we cannot work on the former, we can on the latter — over time, we aim to estimate better.
 
