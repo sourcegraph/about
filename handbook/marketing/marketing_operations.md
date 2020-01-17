@@ -2,7 +2,7 @@
 
 ## UTMs
 
-All URLs used on external sites should contain UTM parameters for lead attribution. Any URLs built must be logged in the UTM builder.
+All URLs used on external sites should contain UTM parameters for lead attribution. Any URLs built must be logged in the [UTM builder]('https://docs.google.com/spreadsheets/d/1U0HRC5WVz3tsP6z9pqDLG8igTMSf2-pQGhbRoVn_iu0/edit#gid=0').
 
 ### HubSpot and UTMs
 
