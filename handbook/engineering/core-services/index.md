@@ -27,7 +27,7 @@ Here's an example of a [good weekly check-in](https://github.com/sourcegraph/sou
 
 Planning happens monthly in the last week of the current iteration to match [Sourcegraph's monthly release cycle](../releases/index.md).
 
-The team manager and another senior engineer set-up a block of time together to triage all open issues [labeled with **team/core-services**](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fcore-services).
+The team manager and a senior team mate set-up a block of time together to triage all open issues [labeled with **team/core-services**](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fcore-services).
 
 Each issue is:
 
