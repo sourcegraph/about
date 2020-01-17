@@ -1,6 +1,6 @@
 # Testing
 
-This file documents how we test code at Sourcegraph. See [permissions](#permissions) for help on accessing our testing tools. 
+This file documents how we test code at Sourcegraph.
 
 ## Permissions
 
