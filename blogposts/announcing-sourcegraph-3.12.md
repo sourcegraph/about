@@ -116,7 +116,7 @@ Sourcegraph now provides out of the box repository permissions for teams who hav
 
 ### Faster permissions fetching on Bitbucket Server
 
-![Faster permissions fetching chart](/images/3-12-permissions.png "Faster permissions fetching chart")
+![Faster permissions fetching chart](/images/3-12-faster-permissions.png "Faster permissions fetching chart")
 
 Previously, fetching ACL data from Bitbucket Server was limited by API constraints. Enhancements to the [Sourcegraph Bitbucket Server plugin](https://docs.sourcegraph.com/integration/bitbucket_server#sourcegraph-native-code-intelligence-plugin) have made fetching Bitbucket Server ACL data faster. To take advantage of this improvement install the Bitbucket Server plugin and add `{ "experimentalFeatures": { "bitbucketServerFastPerm": "enabled" } }` to your site configuration.
 
