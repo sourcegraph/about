@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.12"
+title: "Sourcegraph 3.12: Match case toggle, draft campaigns, and a bunch of experimental features"
 author: Christina Forney
 publishDate: 2020-01-20T10:00-07:00
 tags: [
@@ -10,38 +10,24 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-<!-- CONTENT TEMPLATES --
-
-Vimeo embed
-
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p>
--->
-
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+
+We're excited to announce Sourcegraph 3.12. This release contains a bunch of exciting experimental features we are looking forward to getting your feedback on!
 
 <div style="padding-left: 2rem">
 
-[**⌨️ New case sensitivity toggle**](#new-case-sensitivity-toggle)<br />
+[**⌨️ Search bar match case toggle**](#search-bar-match-case-toggle)<br />
 
-[**📝 Create draft automation campaigns**](#create-draft-automation-campaigns)<br />
+[**🤖 Create draft automation campaigns**](#create-draft-automation-campaigns)<br />
 
-[**🚫 Exclude archived Bitbucket Server repositories**](#exclude-archived-bitbucket-server-repositories)<br />
+[**🚫 Exclude archived Bitbucket Server repositories in queries**](#exclude-archived-bitbucket-server-repositories-in-queries)<br />
 
-[**⬇️ Download files in code view**](#download-files-in-code-view)<br />
+[**⬇️ Download files from code views**](#download-files-from-code-views)<br />
 
 [**🛠 GitHub authentication now supports org membership restriction**](#github-authentication-now-supports-org-membership-restriction)<br />
 
 [**🧪 Experimental features**](#experimental-features)<br />
-- Interactive search mode
-- Search across multiple revisions
-- Out of the box repository permissions
-- Faster permissions fetching on Bitbucket Server
-- Indicate code intelligence precision
+Interactive search mode, search across multiple revisions, out of the box repository permissions, faster permissions fetching on Bitbucket Server, and code intelligence precision indicator.
 
 [**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
@@ -53,7 +39,7 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## New case sensitivity toggle
+## Search bar match case toggle
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -62,11 +48,9 @@ Sourcegraph couldn't be what it is without the community.
   <p style="text-align: center"><a href="https://vimeo.com/385925610" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph 3.12 introduces quick access to toggle between case sensitive and case insensitive queries using the `Aa` icon in the search field. Previously, this filter was applied by adding `case:yes` to the search query.
+Quickly toggle between case sensitive and case insensitive queries using the `Aa` icon in the search field. Previously, this filter was applied by adding `case:yes` to the search query. This toggle simplifies and standardizes this functionality.
 
 ## Create draft automation campaigns
-
-TODO: video
 
 <!-- <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -75,15 +59,15 @@ TODO: video
   <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
 </p> -->
 
-Campaigns can now be created as drafts prior to creating changesets (i.e. pull requests) on your code hosts. This lets you share the campaign with your teammates for review, send out individual changes, all before rolling out organization-wide by publishing the campaign.
+When rolling out changes organization wide, it is desireable to reveiw campaigns with your teammates and to test the change on a specific repository before creating changes across the organization. Automation campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
 
 Automation campaigns are in private beta, [apply to get early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
 
-## Exclude archived Bitbucket Server repositories
+## Exclude archived Bitbucket Server repositories in queries
 
 You can now exclude archived repositories from Bitbucket Server using the `archived:no` query [syntax](https://docs.sourcegraph.com/user/search/queries). Archived repositories are designated with the label `archived` in Bitbucket Server. This is helpful when searching for repositories with specific characteristics such as all repositories in my organization with Gradle build files that are not archived (`archived:no repohasfile:build.gradle`).
 
-## Download files in code view
+## Download files from code views
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -157,7 +141,7 @@ Sourcegraph now provides out of the box repository permissions for teams who hav
 
 ### Faster permissions fetching on Bitbucket Server
 
-TODO: chart
+![Faster permissions fetching chart](/images/3-12-permissions.png "Faster permissions fetching chart")
 
 Previously, fetching ACL data from Bitbucket Server was limited by API constraints. Enhancements to the [Sourcegraph Bitbucket Server plugin](https://docs.sourcegraph.com/integration/bitbucket_server#sourcegraph-native-code-intelligence-plugin) have made fetching Bitbucket Server ACL data faster. To take advantage of this improvement install the Bitbucket Server plugin and enable the experimental feature flag in your site configuration:
 
