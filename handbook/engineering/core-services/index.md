@@ -21,7 +21,7 @@ Everyone writes a weekly check-in in the active tracking issue of the on-going i
 
 This process helps each teammate reflect and plan each week proactively and enables other parts of the organization to have visibility into on-going progress.
 
-Both Friday end of day and Monday beginning of the day are appropriate times to write this check-in.
+Appropriate times to write this check-in are end of day on Friday or beginning of day on Monday.
 
 Here's an example of a [good weekly check-in](https://github.com/sourcegraph/sourcegraph/issues/7190#issuecomment-573564817).
 
