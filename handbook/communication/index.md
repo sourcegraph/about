@@ -26,6 +26,8 @@ The following places are not sources of truth. Treat documents and conversations
 - Zoom recordings
 - All other Google Docs/Sheets/Slides
 
+The [jargon file](jargon.md) is an incomplete list of terms that may be used in a context that creates confusion for other members of the team. This list should be helpful during onboarding, and during cross-team discussions (e.g. engineering and marketing).
+
 ## Meetings
 
 - [Company meeting](company_meeting.md) (Mondays 10:30-11:00am PST/PDT)
