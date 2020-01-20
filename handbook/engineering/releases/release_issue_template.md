@@ -41,7 +41,7 @@ Arguments:
 - [ ] Tag and announce the first release candidate:
   ```
   yarn run release release-candidate:create $MAJOR.$MINOR.0-rc.1
-  yarn run release release-candidate:announce $MAJOR.$MINOR.0-rc.1
+  yarn run release release-candidate:dev-announce $MAJOR.$MINOR.0-rc.1
   ```
 - [ ] Run regression tests:
   - [ ] New Sourcegraph Docker container:
@@ -67,7 +67,7 @@ Cut a new release candidate daily if necessary:
 - [ ] Cut and announce release candidate:
   ```
   N=<release-candidate-number> yarn run release release-candidate:create $MAJOR.$MINOR.0-rc.$N
-  N=<release-candidate-number> yarn run release release-candidate:announce $MAJOR.$MINOR.0-rc.$N
+  N=<release-candidate-number> yarn run release release-candidate:dev-announce $MAJOR.$MINOR.0-rc.$N
   ```
 - [ ] Re-run the automated test suite against the new release candidate, file any regressions as
   `release-blocker` issues.
@@ -77,8 +77,8 @@ Cut a new release candidate daily if necessary:
 
 - [ ] Tag and announce on Slack the final release:
   ```
-  yarn run release release-candidate:create $MAJOR.$MINOR.0`
-  yarn run release release-candidate:announce $MAJOR.$MINOR.0
+  yarn run release release-candidate:create $MAJOR.$MINOR.0
+  yarn run release release-candidate:dev-announce $MAJOR.$MINOR.0
   ```
 - [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) on
   `master` is accurate (no items should have been added since branch cut, but some items may need to
@@ -88,7 +88,7 @@ Cut a new release candidate daily if necessary:
     - [ ] Wait for Renovate to open a PR to update the image tags and merge that PR into `master` ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/199)).
     - [ ] Create the `$MAJOR.$MINOR` release branch from this commit.
       ```
-      VERSION=`$MAJOR.$MINOR` bash -c 'git fetch origin && git checkout origin/master && git branch $VERSION && git checkout $VERSION && git push -u origin $VERSION'
+      VERSION='$MAJOR.$MINOR' bash -c 'git fetch origin && git checkout origin/master && git branch $VERSION && git checkout $VERSION && git push -u origin $VERSION'
       ```
     - [ ] Tag the `v$MAJOR.$MINOR.0` release at this commit.
         ```
@@ -96,6 +96,7 @@ Cut a new release candidate daily if necessary:
         ```
 - [ ] Open (but do not merge) PRs that publish the new release:
   ```
+  # Run this in the main sourcegraph repository in the `dev/release` directory on `master` branch:
   yarn run release release:publish $MAJOR.$MINOR.0
   ```
 - [ ] Review [all issues in the release milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+milestone%3A$MAJOR.$MINOR). Backlog things that didn't make it into the release and ping issues that still need to be done for the release (e.g. Tweets, marketing).
