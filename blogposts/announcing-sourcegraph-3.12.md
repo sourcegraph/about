@@ -35,7 +35,7 @@ Interactive search mode, search across multiple revisions, repository permission
 Every detail that changed in this release
 
 [**🎖️ Thank you**](#thank-you)<br />
-Sourcegraph couldn't be what it is without the community.
+Sourcegraph couldn't be what it is without the community
 
 </div>
 
@@ -61,7 +61,7 @@ Quickly toggle between case sensitive and case insensitive queries using the `Aa
   <p style="text-align: center"><a href="https://vimeo.com/386036051" target="_blank">View on Vimeo</a></p>
 </p>
 
-When rolling out changes organization wide, it is desireable to reveiw campaigns with your teammates and to test the change on a specific repository before creating changes across the organization. Automation campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
+When rolling out changes organization wide, it is desirable to review campaigns with your teammates and to test the change on a specific repository before creating changes across the organization. Automation campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
 
 Automation campaigns are in private beta, [apply to get early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
 
