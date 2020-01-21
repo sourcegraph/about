@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-We're excited to announce Sourcegraph 3.12. This release contains exciting experimental features that we are looking forward to getting your feedback on!
+We're excited to announce Sourcegraph 3.12. In addition to the usual updates, this release includes powerful experimental features. We're looking forward to your feedback!
 
 <div style="padding-left: 2rem">
 
@@ -29,7 +29,7 @@ We're excited to announce Sourcegraph 3.12. This release contains exciting exper
 [**🔎 Search-based code intelligence indicator**](#search-based-code-intelligence-indicator)<br />
 
 [**🧪 Experimental features**](#experimental-features)<br />
-Interactive search mode, search across multiple revisions, repository permissions API, faster permissions fetching on Bitbucket Server, and code intelligence precision indicator
+Interactive search mode, search across multiple revisions, repository permissions API, and faster permissions fetching on Bitbucket Server
 
 [**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
@@ -50,7 +50,7 @@ Sourcegraph couldn't be what it is without the community
   <p style="text-align: center"><a href="https://vimeo.com/385925610" target="_blank">View on Vimeo</a></p>
 </p>
 
-Quickly toggle between case sensitive and case insensitive queries using the `Aa` icon in the search field. Previously, this filter was applied by adding `case:yes` to the search query. This toggle simplifies and standardizes this functionality.
+Quickly toggle between case sensitive and case insensitive queries using the `Aa` icon in the search field. Previously, this filter was applied by adding `case:yes` to the search query. The toggle simplifies and standardizes this functionality.
 
 ## Create draft automation campaigns
 
@@ -61,7 +61,7 @@ Quickly toggle between case sensitive and case insensitive queries using the `Aa
   <p style="text-align: center"><a href="https://vimeo.com/386036051" target="_blank">View on Vimeo</a></p>
 </p>
 
-When rolling out changes organization wide, it is desirable to review campaigns with your teammates and to test the change on a specific repository before creating changes across the organization. Automation campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
+When rolling out organization-wide changes, it is desirable to review campaigns with your teammates. Automation campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
 
 Automation campaigns are in private beta, [apply to get early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
 
@@ -99,7 +99,7 @@ Hover tooltips and find reference results now display a badge to indicate when a
 
 ## Experimental features
 
-This release contains many exciting new improvements to the Sourcegraph UI, configuration, and search capabilities. We are excited to hear your feedback about them! Tweet [@srcgraph](https://twitter.com/srcgraph) or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) with your thoughts.
+This release contains many exciting new improvements to the Sourcegraph UI, configuration, and search capabilities. We look forward to hearing your feedback about them! Tweet [@srcgraph](https://twitter.com/srcgraph) or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) with your thoughts.
 
 ### Interactive search mode
 
@@ -110,7 +110,7 @@ This release contains many exciting new improvements to the Sourcegraph UI, conf
   <p style="text-align: center"><a href="https://vimeo.com/386108600" target="_blank">View on Vimeo</a></p>
 </p>
 
-A new interactive search mode has been added to help users construct queries using UI elements. The new UI components help to narrow down search results as you iterate on your search. The existing plain text search mode, and the query builder are still available via the dropdown menu to the left of the search bar.
+A new interactive search mode has been added to help users construct queries using UI elements. The new UI components help to narrow down search results as you iterate on your search. The existing plain text search mode and the query builder are still available via the dropdown menu to the left of the search bar.
 
 To enable this feature add `{ "experimentalFeatures": { "splitSearchModes": true } }` to your user, org, or global settings.
 
@@ -120,7 +120,7 @@ To search across multiple revisions of the same repository, list multiple branch
 
 ### Repository permissions API for managing ACLs in Sourcegraph
 
-Sourcegraph now provides a GraphQL API for setting repository permissions. Teams with complex permissioning requirements, such as having multiple code hosts, will benefit from setting up access controls directly in Sourcegraph. To enable Sourcegraph repository permissions, add `{ "permissions.userMapping" { "enabled": true, "bindID": "email" } }` to your site configuration. See the [explicit permissions API](https://docs.sourcegraph.com/admin/repo/permissions#explicit-permissions-api) documentation for more details.
+Sourcegraph now provides a GraphQL API for setting repository permissions. Teams with complex permissioning requirements (e.g., multiple code hosts), will benefit from setting up access controls directly in Sourcegraph. To enable Sourcegraph repository permissions, add `{ "permissions.userMapping" { "enabled": true, "bindID": "email" } }` to your site configuration. See the [explicit permissions API](https://docs.sourcegraph.com/admin/repo/permissions#explicit-permissions-api) documentation for more details.
 
 ### Faster permissions fetching on Bitbucket Server
 
