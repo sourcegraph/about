@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.12: Match case toggle, draft campaigns, and some experimental features"
+title: "Sourcegraph 3.12: Match case toggle, draft campaigns, and exciting experimental features"
 author: Christina Forney
 publishDate: 2020-01-20T10:00-07:00
 tags: [
@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-We're excited to announce Sourcegraph 3.12. This release contains some exciting experimental features we are looking forward to getting your feedback on!
+We're excited to announce Sourcegraph 3.12. This release contains exciting experimental features that we are looking forward to getting your feedback on!
 
 <div style="padding-left: 2rem">
 
@@ -29,7 +29,7 @@ We're excited to announce Sourcegraph 3.12. This release contains some exciting 
 [**🔎 Search-based code intelligence indicator**](#search-based-code-intelligence-indicator)<br />
 
 [**🧪 Experimental features**](#experimental-features)<br />
-Interactive search mode, search across multiple revisions, repository permissions API, faster permissions fetching on Bitbucket Server, and code intelligence precision indicator.
+Interactive search mode, search across multiple revisions, repository permissions API, faster permissions fetching on Bitbucket Server, and code intelligence precision indicator
 
 [**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
@@ -126,7 +126,7 @@ Sourcegraph now provides a GraphQL API for setting repository permissions. Teams
 
 ![Faster permissions fetching chart](/images/3-12-faster-permissions.png "Faster permissions fetching chart")
 
-Previously, fetching ACL data from Bitbucket Server was limited by API constraints. Enhancements to the [Sourcegraph Bitbucket Server plugin](https://docs.sourcegraph.com/integration/bitbucket_server#sourcegraph-native-code-intelligence-plugin) have made fetching Bitbucket Server ACL data faster. To take advantage of this improvement install the Bitbucket Server plugin and add `{ "experimentalFeatures": { "bitbucketServerFastPerm": "enabled" } }` to your site configuration.
+Previously, fetching ACL data from Bitbucket Server was limited by API constraints. Enhancements to the [Sourcegraph Bitbucket Server plugin](https://docs.sourcegraph.com/integration/bitbucket_server#sourcegraph-native-code-intelligence-plugin) have made fetching Bitbucket Server ACL data faster. To take advantage of this improvement, install the Bitbucket Server plugin and add `{ "experimentalFeatures": { "bitbucketServerFastPerm": "enabled" } }` to your site configuration.
 
 ## Changelog
 
