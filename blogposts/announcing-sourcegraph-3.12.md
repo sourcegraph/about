@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.12: Match case toggle, draft campaigns, and a bunch of experimental features"
+title: "Sourcegraph 3.12: Match case toggle, draft campaigns, and some experimental features"
 author: Christina Forney
 publishDate: 2020-01-20T10:00-07:00
 tags: [
@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-We're excited to announce Sourcegraph 3.12. This release contains a bunch of exciting experimental features we are looking forward to getting your feedback on!
+We're excited to announce Sourcegraph 3.12. This release contains some exciting experimental features we are looking forward to getting your feedback on!
 
 <div style="padding-left: 2rem">
 
