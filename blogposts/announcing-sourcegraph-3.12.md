@@ -26,8 +26,10 @@ We're excited to announce Sourcegraph 3.12. This release contains a bunch of exc
 
 [**🛠 GitHub authentication now supports org membership restriction**](#github-authentication-now-supports-org-membership-restriction)<br />
 
+[**🔎 Search-based code intelligence indicator**](#search-based-code-intelligence-indicator)<br />
+
 [**🧪 Experimental features**](#experimental-features)<br />
-Interactive search mode, search across multiple revisions, out of the box repository permissions, faster permissions fetching on Bitbucket Server, and code intelligence precision indicator.
+Interactive search mode, search across multiple revisions, repository permissions API, faster permissions fetching on Bitbucket Server, and code intelligence precision indicator.
 
 [**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
@@ -87,7 +89,13 @@ Quickly download files from Sourcegraph using the new download icon in the file 
   <p style="text-align: center"><a href="https://vimeo.com/385925276" target="_blank">View on Vimeo</a></p>
 </p>
 
-For organizations using GitHub for authentication, we have added the ability to restrict access to different GitHub organizations for enhanced security and configuration. In the site configuration `auth.providers`, find the GitHub section (or add it using the ‘Add GitHub sign-in’ quick config button). Add the new `allowOrgs` setting and list the organizations whose members should have access to your Sourcegraph instance.
+Organizations using GitHub for authentication can now whitelist access to different GitHub organizations for enhanced security and configuration. In the site configuration `auth.providers`, find the GitHub section (or add it using the ‘Add GitHub sign-in’ quick config button). Add the new `allowOrgs` setting, and list the organizations whose members should have access to your Sourcegraph instance.
+
+## Search-based code intelligence indicator
+
+![Code intel indicator](/images/3-12-code-intel-indicator.png "Code intel indicator")
+
+Hover tooltips and find reference results now display a badge to indicate when a [result is search-based](https://docs.sourcegraph.com/user/code_intelligence/basic_code_intelligence). These indicators can be disabled by adding `{ "experimentalFeatures": { "showBadgeAttachments": false } }` to your user, organization, or global settings.
 
 ## Experimental features
 
@@ -95,12 +103,12 @@ This release contains many exciting new improvements to the Sourcegraph UI, conf
 
 ### Interactive search mode
 
-<!-- <p class="container">
+<p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/386108600?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p> -->
+  <p style="text-align: center"><a href="https://vimeo.com/386108600" target="_blank">View on Vimeo</a></p>
+</p>
 
 A new interactive search mode has been added to help users construct queries using UI elements. The new UI components help to narrow down search results as you iterate on your search. The existing plain text search mode, and the query builder are still available via the dropdown menu to the left of the search bar.
 
@@ -110,21 +118,15 @@ To enable this feature add `{ "experimentalFeatures": { "splitSearchModes": true
 
 To search across multiple revisions of the same repository, list multiple branch names (or other revspecs) separated by `:` in your query, as in `repo:myrepo@branch1:branch2:branch2`. To search all branches, use `repo:myrepo@*refs/heads/`. To enable this feature, add `{ "experimentalFeatures": { "searchMultipleRevisionsPerRepository": true } }` to the site configuration. Previously this was only supported for diff and commit searches.
 
-### Out of the box repository permissions in Sourcegraph
+### Repository permissions API for managing ACLs in Sourcegraph
 
-Sourcegraph now provides out of the box repository permissions for teams who have specific customization needs. Teams with multiple code hosts will benefit from setting up access controls natively in Sourcegraph. To enable Sourcegraph repository permissions, add `{ "permissions.userMapping" { "enabled": true, "bindID": "email" } }` to your site configuration.
+Sourcegraph now provides a GraphQL API for setting repository permissions. Teams with complex permissioning requirements, such as having multiple code hosts, will benefit from setting up access controls directly in Sourcegraph. To enable Sourcegraph repository permissions, add `{ "permissions.userMapping" { "enabled": true, "bindID": "email" } }` to your site configuration. See the [explicit permissions API](https://docs.sourcegraph.com/admin/repo/permissions#explicit-permissions-api) documentation for more details.
 
 ### Faster permissions fetching on Bitbucket Server
 
 ![Faster permissions fetching chart](/images/3-12-faster-permissions.png "Faster permissions fetching chart")
 
 Previously, fetching ACL data from Bitbucket Server was limited by API constraints. Enhancements to the [Sourcegraph Bitbucket Server plugin](https://docs.sourcegraph.com/integration/bitbucket_server#sourcegraph-native-code-intelligence-plugin) have made fetching Bitbucket Server ACL data faster. To take advantage of this improvement install the Bitbucket Server plugin and add `{ "experimentalFeatures": { "bitbucketServerFastPerm": "enabled" } }` to your site configuration.
-
-### Indicate code intelligence precision
-
-![Code intel indicator](/images/3-12-code-intel-indicator.png "Code intel indicator")
-
-Hover tooltips and find reference results now display a badge to indicate when a [result is search-based](https://docs.sourcegraph.com/user/code_intelligence/basic_code_intelligence). These indicators can be disabled by adding `{ "experimentalFeatures": { "showBadgeAttachments": false } }` to your user, organization, or global settings.
 
 ## Changelog
 
