@@ -2,10 +2,10 @@
 title: Structural code search. At scale and from your browser.
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
-publishDate: FIXME
+publishDate: 2020-01-24T10:00-07:00
 tags: [blog]
 slug: structural-code-search-at-scale-from-your-browser
-heroImage: FIXME
+heroImage: https://TODO
 published: true
 ---
 
@@ -59,6 +59,8 @@ Search for `++i` [in our codebase](https://sourcegraph.com/search?q=repo:%5Egith
 - You might be running structural search for the first time on a repo! :sunglasses: If your
 query times out, give the page a refresh because we're probably warming up the
 cache for you. 
+
+- Need more inspiration? See the [CactusCon Talk](https://www.youtube.com/watch?v=yOZQsZs35FA)
 
 - Have a usage question or suggestion? [Send us a tweet](https://twitter.com/srcgraph) or e-mail us at <feedback@sourcegraph.com>
 
