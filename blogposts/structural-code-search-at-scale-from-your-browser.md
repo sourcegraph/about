@@ -16,7 +16,8 @@ code search. And we're making it available at scale.
 
 Structural code search is the idea that you can search for _syntactic
 structures_ in code that correspond more closely to a program's underlying
-concrete syntax tree.<sup>1</sup> For example, `for` [loops in Rust](https://doc.rust-lang.org/1.2.0/book/for-loops.html) look something like
+concrete syntax tree.<sup>1</sup> For example, `for` [loops in
+Rust](https://doc.rust-lang.org/1.2.0/book/for-loops.html) look something like
 this:
 
 ```rust
@@ -25,30 +26,32 @@ for var in expression {
 }
 ```
 
-The `code` block can contain may contain nested `for` loops, `if` statements,
-and so on. If we wanted to match all of the `code` block contents and search
-for patterns inside it, our search engine must understand that `code` is
-contained inside the _balanced_ braces `{ ... }`. While regular expressions can
-go a long way to match such syntactic structures, they are [not
+The `code` block can contain nested `for` loops, `if` statements, and so on. If
+we wanted to match all of the `code` block contents for these expressions, and
+search for patterns inside them, our search engine must understand that `code`
+exists inside balanced braces `{ ... }`. Regular expressions can go a
+long way to match such syntactic structures but [they are not
 ideal](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags).
-Parsers, on the other hand, are better suited. Parsers convert syntax like
-`{...}` (delineating possibly nested code blocks) into tree data structures.
-But most code search today is not based on true parsing or tree data
-structures. Instead, it's based on matching literal strings and regular
-expressions. We could more easily search for richer and interesting patterns if
-today's search tools _also_ treated code as syntax trees, and that's the key
-idea behind structural search. 
+In practice we use _parsing_ to interpret and convert syntax for nested
+expressions like `{...}` into trees, which encode richer structural properties
+than the textual representation.
+
+![Nested expressions figure](images/nested-expressions.png "Figure 1: Nested expressions can expand inside code blocks. Parsing converts such expressions into tree data structures.")
+
+Most code search today is not based on true parsing or tree data structures.
+Instead, we use literal strings or regular expressions, which is "good enough"
+for many kinds of searches. But this flavor of text search isn't ideal for
+matching nested expressions as in Figure 1. We could more easily and precisely
+search for richer syntactic patterns if today's search tools _also_ treated
+code as syntax trees, and that's the key idea behind structural search. 
 
 As a feature, the idea is not entirely new. There are some neat developer and
-compiler tools that search or match over tree structures (see our [list]() at
-the end of this post!). But none are at your fingertips, just seconds away from
-running on some of today's largest and most popular code bases.
-
-We are happy to announce that Sourcegraph now supports a first release of
-structural search available at scale, for nearly every language, directly from
-your browser.
-
-[1] Or parse tree.
+compiler tools that search or match over tree structures already (see
+[additional resources](#additional-resources) at the end of this post!). But
+none are available at your fingertips, just seconds away from running on some
+of today's largest and most popular code bases. That is why we are happy to
+announce that Sourcegraph now supports a first release of structural search
+available at scale, for nearly every language, directly from your browser.
 
 ## Examples! Show me examples!
 
@@ -58,7 +61,7 @@ Search for `++i` [in our codebase](https://sourcegraph.com/search?q=repo:%5Egith
 
 - See our [usage documentation](https://docs.sourcegraph.com/user/search/structural) for more help.
 
-- You might be running structural search for the first time on a repo! :sunglasses: If your
+- You might be running structural search for the first time on a repo! 😎 If your
 query times out, give the page a refresh because we're probably warming up the
 cache for you. 
 
@@ -66,9 +69,11 @@ cache for you.
 
 - Have a usage question or suggestion? [Send us a tweet](https://twitter.com/srcgraph) or e-mail us at <feedback@sourcegraph.com>
 
-- Run into a bug? [Share it with us on GitHub](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=bug_report.md&title=)
+- Run into a bug? [Create an issue on GitHub](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=bug_report.md&title=)
 
-## How is this all that different from regular expressions?
+## How is this different from regular expressions?
+
+They key differences in functionality are:
 
 - Builtin, convenient constraints `:[x] :[x]`.
 - Language-aware (only code, contextual strings)
@@ -83,8 +88,9 @@ cache for you.
 Structural search is not a replacement for regexp search. It's another tool in
 your toolkit that works well for matching blocks of code or expressions, and
 simplifies catching buggy syntactic patterns. If you only want to find a simple
-string or pattern, consider using Sourcegraph's [literal search] or [regexp
-search], because these are typically much faster!
+string or pattern, consider using Sourcegraph's literal or regexp
+[search](https://sourcegraph.com/search), because these are typically much
+faster!
 
 ## What's next for structural search?
 
@@ -92,15 +98,16 @@ We have more features and improvements planned. _If you want to see any of
 these features arrive more quickly, please +1 the related issue tracker so
 that we can prioritize our engineering to deliver them sooner!_
 
-- **Structural search enabled for all mirrored repositories** We want structural
+- **Structural search enabled for all mirrored repositories.** We want structural
   search to be available for _your_ repository, and not just the really popular
-  ones. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
-- **Regular expression support in structural holes** We want to add support for
-  regexp syntax inside holes for refine search (e.g., `\d+` to match only
-  numerical digits). [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
-- **Make it faster** Structural search is typically slower than our regexp
+  ones [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+- **Regular expression support in structural holes.** We want to add support for
+  regexp syntax inside holes for refine search, like `\d+` to match only
+  numerical digits [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+- **Make it faster.** Structural search is typically slower than our regexp
   search because it does more work. If you find it valuable, we
-  want to make it faster. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
+  want to make it faster [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
 
 Have something else in mind? Send us an e-mail at <feedback@sourcegraph.com>
 
@@ -112,9 +119,9 @@ Happy searching!
 
 There is an immense amount of existing parsing and query tools for syntax
 trees. Most compilers today offer a library or visitor framework, and linters
-or static analyzers use these libraries for checks. We've put together a list
-of tools related to structural search and matching that you may be
-familiar with or find interesting:
+or static analyzers may build on them to implement checks. Here is just a
+non-exhaustive, short list of tools related to structural search and matching
+that you may be familiar with or find interesting:
 
 - IntelliJ IDE support for structural search and replace, or `SSR` [[1](https://www.jetbrains.com/help/idea/structural-search-and-replace.html)]
 - Coccinelle for C code [[1](http://coccinelle.lip6.fr/)]
@@ -126,5 +133,11 @@ familiar with or find interesting:
 At Sourcegraph we're continually looking to improve developer tools, and to
 integrate richer search functionality. If you find these tools or others
 valuable, share your thoughts with us at <feedback@sourcegraph.com>.
+
+---
+
+[1] Or _parse tree_.
+
+
 
 
