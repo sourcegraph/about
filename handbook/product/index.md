@@ -45,9 +45,12 @@ We anticipate most delivery plans will:
 
 ### Process
 
-The delivery plan for each feature is created during planning (along with the tracking issue and prioritization discussions).
-
-When a developer's work is ready, they *immediately* start following the delivery plan. They do not check in with sales/product/marketing (e.g., "hey, feature XYZ is ready, can you ping the customer?" or "can you check the delivery plan to make sure it's still up to date before I send this email?") before doing so. This enforces that the delivery plan is written comprehensively beforehand and is kept up to date by sales/product/marketing if customer circumstances change. We are an all-remote company and need to avoid synchronous processes.
+1. The delivery plan for each feature is created during planning (along with the tracking issue and prioritization discussions).
+1. When a developer's work is ready, they *immediately* start following the delivery plan.
+  - They do not check in with sales/product/marketing (e.g., "hey, feature XYZ is ready, can you ping the customer?" or "can you check the delivery plan to make sure it's still up to date before I send this email?") before doing so. This enforces that the delivery plan is written comprehensively beforehand and is kept up to date by sales/product/marketing if customer circumstances change. We are an all-remote company and need to avoid synchronous processes.
+1. When steps in the delivery plan are executed (such as emailing a customer), comment on the delivery plan issue.
+1. When the hypotheses have results, comment on the issue.
+1. When the delivery plan is finished and all hypotheses have results, close the issue.
 
 See [RFC 97: Delivery plans for getting customer feedback/usage sooner](https://docs.google.com/document/d/1cZ7JIVuRWrF2MxwDdH36SC7zOyT2qJf9AMUd9Wc9_aY/edit#) (where this idea was originally proposed) for more background.
 
