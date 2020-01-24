@@ -59,11 +59,11 @@ available at scale, for nearly every language, directly from your browser.
 
 **Structural search on the Linux kernel**
 
-The Linux kernel is perhaps one of the largest and most popular projects out
-there. One important function is `copy_from_user`, which copies memory from
-userspace into the kernel space. We can find all `copy_from_user` calls with a
-query like `copy_from_user(:[args])` where `:[args]` is a wildcard matcher that
-will matches all text between balanced parentheses.
+The Linux kernel is a large and popular project out there.  One important
+function is `copy_from_user`, which copies memory from userspace into the
+kernel space. We can find all `copy_from_user` calls with a query like
+`copy_from_user(:[args])` where `:[args]` is a wildcard matcher that will
+matches all text between balanced parentheses.
 
 > Run this query live: [`copy_from_user(:[args])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
 
@@ -80,13 +80,13 @@ copy_from_user(&txc.tick, &txc_p->tick, sizeof(struct timex32) -
 			   offsetof(struct timex32, tick))
 ```
 
-whose argument spans multiple lines. By default, `:[hole]` syntax matches
+where the argument spans multiple lines. By default, `:[hole]` syntax matches
 across multiple lines just like code structures can. An interesting thing about
 this call is that it calculates the size of memory using `sizeof(...) - ...`.
 Let's see if there are other calls that calulate the size of memory in a
 similar way:
 
-> Run this query live: [`copy_from_user(:[dst], :[src], sizeof(:[_]) - :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
+Run this query live: [`copy_from_user(:[dst], :[src], sizeof(:[_]) - :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
 
 Here the query breaks up the original `:[args]` hole into holes for the
 destination buffer `dst`, source buffer `src`, and the calculation for the
@@ -100,7 +100,7 @@ convenient. For example, one [clean
 up](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e)
 in the kernel looks like this:
 
-```patch
+```diff
 @@ -128,8 +128,7 @@ static void __zcrypt_increase_preference(struct zcrypt_device *zdev)
  	if (l == zdev->list.prev)
  		return;
@@ -113,7 +113,7 @@ in the kernel looks like this:
 
 This query makes it easy to find more of these:
 
-> [`list_del(:[x]); list_add(:[x], :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
+[`list_del(:[x]); list_add(:[x], :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
 
 This time, we're using the same identifier `:[x]` twice, to make sure that the
 argument is the same for both list calls. We could choose any identifier,
@@ -123,7 +123,7 @@ these calls across newlines.
 
 Structural search is purely syntactic, so there are some matches that cannot cleaned up:
 
-```
+```c
 	if (!list_empty(&page->lru))
 		list_del(&page->lru);
 
@@ -202,7 +202,7 @@ that we can prioritize our engineering to deliver them sooner!_
 - **Regular expression support in structural holes.** We want to add support for
   regexp syntax inside holes for refine search, like `\d+` to match only
   numerical digits [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
-- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. And this video has more details FIXME. If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
 - **Make it faster.** Structural search is typically slower than our regexp
   search because it does more work. If you find it valuable, we
   want to make it faster [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
