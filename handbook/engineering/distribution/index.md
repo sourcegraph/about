@@ -47,3 +47,4 @@ Now you can switch between any added roles and your Sourcegraph AWS account usin
 ## Misc
 
 - [How to set up a separate website maintained by Sourcegraph](separate_website.md)
+- [How to replay a metrics dump from a customer](use_metrics_dump.md)
