@@ -16,7 +16,7 @@ code search. And we're making it available at scale.
 
 Structural code search is the idea that you can search for _syntactic
 structures_ in code that correspond more closely to a program's underlying
-concrete syntax tree.<sup>1</sup> For example, `for` [loops in
+concrete syntax tree (or parse tree). For example, `for` [loops in
 Rust](https://doc.rust-lang.org/1.2.0/book/for-loops.html) look something like
 this:
 
@@ -36,14 +36,16 @@ In practice we use _parsing_ to interpret and convert syntax for nested
 expressions like `{...}` into trees, which encode richer structural properties
 than the textual representation.
 
-![Nested expressions figure](images/nested-expressions.png "Figure 1: Nested expressions can expand inside code blocks. Parsing converts such expressions into tree data structures.")
+![Nested expressions figure](images/nested-expressions.png) Figure 1: Nested
+expressions can expand inside code blocks. Parsing converts such expressions
+into tree data structures.
 
 Most code search today is not based on true parsing or tree data structures.
 Instead, we use literal strings or regular expressions, which is "good enough"
 for many kinds of searches. But this flavor of text search isn't ideal for
-matching nested expressions as in Figure 1. We could more easily and precisely
-search for richer syntactic patterns if today's search tools _also_ treated
-code as syntax trees, and that's the key idea behind structural search. 
+matching blocks of nested expressions as in Figure 1. We could more easily and
+precisely search for richer syntactic patterns if today's search tools _also_
+treated code as syntax trees, and that's the key idea behind structural search. 
 
 As a feature, the idea is not entirely new. There are some neat developer and
 compiler tools that search or match over tree structures already (see
@@ -55,9 +57,105 @@ available at scale, for nearly every language, directly from your browser.
 
 ## Examples! Show me examples!
 
+**Structural search on the Linux kernel**
+
+The Linux kernel is perhaps one of the largest and most popular projects out
+there. One important function is `copy_from_user`, which copies memory from
+userspace into the kernel space. We can find all `copy_from_user` calls with a
+query like `copy_from_user(:[args])` where `:[args]` is a wildcard matcher that
+will matches all text between balanced parentheses.
+
+> Run this query live: [`copy_from_user(:[args])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+
+Of course, we could run a simpler search in Sourcegraph like
+[`copy_from_user(`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
+and get results more quickly, and sometimes that's the right thing to do. 
+
+But in other cases we can do more interesting things with structural search
+that becomes awkward with, e.g., regular expressions. For example, one result
+for structural search is:
+
+```c
+copy_from_user(&txc.tick, &txc_p->tick, sizeof(struct timex32) - 
+			   offsetof(struct timex32, tick))
+```
+
+whose argument spans multiple lines. By default, `:[hole]` syntax matches
+across multiple lines just like code structures can. An interesting thing about
+this call is that it calculates the size of memory using `sizeof(...) - ...`.
+Let's see if there are other calls that calulate the size of memory in a
+similar way:
+
+> Run this query live: [`copy_from_user(:[dst], :[src], sizeof(:[_]) - :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
+
+Here the query breaks up the original `:[args]` hole into holes for the
+destination buffer `dst`, source buffer `src`, and the calculation for the
+memory size. The `:[_]` syntax is just a hole that we don't particularly care
+to name. This query finds just two more results, so this is a really uncommon
+pattern in the code base! Certain calculation for memory sizes can mean bugs.
+For example...
+
+Identifying patterns to clean up is another example where structural search is
+convenient. For example, one [clean
+up](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e)
+in the kernel looks like this:
+
+```patch
+@@ -128,8 +128,7 @@ static void __zcrypt_increase_preference(struct zcrypt_device *zdev)
+ 	if (l == zdev->list.prev)
+ 		return;
+ 	/* Move zdev behind l */
+-	list_del(&zdev->list);
+-	list_add(&zdev->list, l);
++	list_move(&zdev->list, l);
+ }
+```
+
+This query makes it easy to find more of these:
+
+> [`list_del(:[x]); list_add(:[x], :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
+
+This time, we're using the same identifier `:[x]` twice, to make sure that the
+argument is the same for both list calls. We could choose any identifier,
+except for `:[_]`, which is just a placeholder. The whitespace between the
+calls is interpreted to possibly include newlines, so there's no issue matching
+these calls across newlines.
+
+Structural search is purely syntactic, so there are some matches that cannot cleaned up:
+
+```
+	if (!list_empty(&page->lru))
+		list_del(&page->lru);
+
+	list_add(&page->lru, &pool->lru);
+```
+
+In this case, the problem is that the `list_del` call is in scope of the `if`
+block. However, the majority of matches carry our intended meaning. In the
+future, we are introducing [rules]() to refine queries further, giving you full
+control for avoiding unintended matches.
+
+---
+
+WIP
+
+Rough, want examples for Rust, JS/TS/React, C, Go, Python
+
 Search for `++i` [in our codebase](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24++lang:typescript+%27for+%28:%5Bx%5D+%2B%2Bi%29%27&patternType=structural)
 
+---
+
 *A couple of things to keep in mind*
+
+- Structural search on sourcegraph.com is only enabled for roughly the top
+  10,000 most popular repositories on GitHub. We plan to open it up to all
+  mirrored repositories and you can [help make that happen
+  faster](#whats-next-for-structural-search). Until then, you can [set up
+  Sourcegraph locally](https://docs.sourcegraph.com/#quickstart) for your own
+  code or any other repository you'd like and get all of the structural search
+  goodness.
+
+- The longer your pattern, the more suitable for structural search. Bad: `:[x]`
 
 - See our [usage documentation](https://docs.sourcegraph.com/user/search/structural) for more help.
 
@@ -124,7 +222,7 @@ non-exhaustive, short list of tools related to structural search and matching
 that you may be familiar with or find interesting:
 
 - IntelliJ IDE support for structural search and replace, or `SSR` [[1](https://www.jetbrains.com/help/idea/structural-search-and-replace.html)]
-- Coccinelle for C code [[1](http://coccinelle.lip6.fr/)]
+- Coccinelle for C code [[1](http://coccinelle.lip6.fr/)]. Our list example in this post is taken from work done by Coccinelle, and there are [many more patterns](http://coccinelle.lip6.fr/impact_linux.php) to browse through and try out!
 - `gogrep` for matching Go syntax trees [[1](https://github.com/mvdan/gogrep)]
 - `Sgrep`, or Syntactical grep for multiple languages [[1](https://github.com/facebookarchive/pfff/wiki/Sgrep)], [[2](https://github.com/returntocorp/bento/blob/master/SGREP-README.md)]
 - `tree-sitter` for parsing multiple language grammars [[1](https://github.com/tree-sitter/tree-sitter)]
@@ -133,11 +231,3 @@ that you may be familiar with or find interesting:
 At Sourcegraph we're continually looking to improve developer tools, and to
 integrate richer search functionality. If you find these tools or others
 valuable, share your thoughts with us at <feedback@sourcegraph.com>.
-
----
-
-[1] Or _parse tree_.
-
-
-
-
