@@ -15,6 +15,7 @@ These places are the source of truth for information at Sourcegraph. Information
 - [Project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit#)
 - [Issue tracker](https://github.com/sourcegraph/sourcegraph)
 - [HubSpot](https://app.hubspot.com)
+- [JIRA Service Desk](https://sourcegraph.atlassian.net/jira/servicedesk/projects/SG)
 
 ### Scratchpads and ephemeral information (non-sources of truth)
 
