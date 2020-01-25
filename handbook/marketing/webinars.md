@@ -12,7 +12,7 @@ All webinars will require the following details for planning:
 - Webinar Link from Zoom
 - Audience
 
-These are the web applications used for running a webinar:
+Sourcegraph uses these web applications for running a webinar:
 - Zoom 
 -- Manage registration landing page and attendance
 -- Run and record the webinar
@@ -53,19 +53,17 @@ Post webinar, Sourcegraph will send followup emails:
 
 ### Hubspot webinar nomenclature
 
-**Hubspot folder structure**
+**Hubspot folder structure**  
 *folder format*:  
-WBR YYQ# \| Title \| Mon DD
-*example* 
-WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
+WBR YYQ# \| Title \| Mon DD  
+*example*:  
+WBR 20Q1 \| GitLab Commit 2020 \| Feb 05  
 
-**Hubspot marketing email titles**
-*email format*:
-EM-type WBR YYQ# \| Title \| Mon DD
-*examples*:
-EM-invite WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
-EM-remind-1day WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
-EM-remind-1hour WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
-EM-thanks WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
-
-
+**Hubspot marketing email titles**   
+*email format*:  
+EM-type WBR YYQ# \| Title \| Mon DD   
+*examples*:  
+EM-invite WBR 20Q1 \| GitLab Commit 2020 \| Feb 05  
+EM-remind-1day WBR 20Q1 \| GitLab Commit 2020 \| Feb 05  
+EM-remind-1hour WBR 20Q1 \| GitLab Commit 2020 \| Feb 05  
+EM-thanks WBR 20Q1 \| GitLab Commit 2020 \| Feb 05  
