@@ -10,6 +10,8 @@ We don&#39;t stop at keeping your code safe. When your team&#39;s developers use
 
 If you have specific questions or concerns, contact us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>.
 
+If you think you have discovered a security vulnerability in our product, please follow our instructions on [how to report a security vulnerability](#how-to-report-a-security-vulnerability).
+
 ## Sourcegraph on-premise
 
 Sourcegraph instances that host private code are typically deployed on-premise and therefore Sourcegraph employees have no access to customer data or code.
@@ -63,10 +65,42 @@ We use a number of static analysis tools to identify security risks in developme
 
 All development laptops have encrypted hard drives.
 
-## Bug reports
+## How to report a security vulnerability
 
-If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. Please do not publicly disclose the issue until we’ve addressed it.
+If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will acknowledge receiving your report within 1 business day and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread.
 
-We provide monetary rewards, up to $10,000, for reporting security issues. This is determined based on the percentage of users impacted, the likelihood of encountering the vulnerability under normal use of the product, and the severity of potential service disruption or data leakage. Bounties will be awarded after the issue is confirmed fixed.
+We provide monetary rewards, up to $10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers impacted, the difficulty of exploiting the vulnerability, and the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit.
 
-For additional information, see the internal [Sourcegraph Handbook page on security](/handbook/engineering/security).
+We will send payment to a valid PayPal account after the issue is confirmed fixed or 90 days from the original report, whichever happens first. We will ask you for the name and country associated with your PayPal account.
+
+We will not issue a reward if any of the following apply:
+
+1. You engage in disruptive behavior on sourcegraph.com itself (e.g. spamming our system with requests, fake accounts, denial of service). Sourcegraph is [open source software](https://github.com/sourcegraph/sourcegraph), so you can [install a copy yourself](https://docs.sourcegraph.com/#quickstart-guide) and test against that instead.
+1. You publically disclose a vulnerability before we have fixed it.
+1. You spam us with duplicate and/or low quality vulnerability reports (e.g. copy/pasting generic issues from automatic scanning tools).
+1. You are currently a teammate at Sourcegraph (e.g. employee, contractor, intern).
+
+We define multipliers for each of the factors for the reward amount and apply these multipliers against our maximum bounty. For example, a vulnerability that impacts a small number of customers (0.5x), is difficult to exploit (0.5x), and would cause a lot of harm (1x), might be awarded $2,500 USD.
+
+These are only guidelines and the final award amount for any issue is at the discression of Sourcegraph.
+
+
+| Vulnerable customers* | Reward multiplier |
+|----------------------|-------------------|
+| A majority (> 50%) of customers | 1x |
+| A small number of customers | 0.5x |
+| No customers | 0.01x |
+
+\* A **customer** is defined as a paid user of Sourcegraph. Please note that there are currently no paying customers on sourcegraph.com because sourcegraph.com only hosts public code and is free to use. As such, an issue that impacts all **users** on sourcegraph.com doesn't necessarily impact any **customers**.
+
+
+| Difficulty of exploit | Reward multiplier |
+|-----------------------|-------------------|
+| Anyone can feasibly exploit this vulnerability. | 1x |
+| This vulerability is difficult to exploit for one or more reasons (e.g. requires uncommon circumstances that aren't under the attacker's control). | 0.5x |
+
+
+| Severity | Reward multiplier |
+|----------|-------------------|
+| A successful exploit could result in material harm to Sourcegraph and/or our customers. | 1x |
+| A successful exploit wouldn't actually cause any harm to Sourcegraph or its customers. | 0.01x |
