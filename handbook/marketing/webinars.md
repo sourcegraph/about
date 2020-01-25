@@ -55,17 +55,17 @@ Post webinar, Sourcegraph will send followup emails:
 
 **Hubspot folder structure**
 *folder format*:  
-WBR YYQ# | Title | Mon DD
+WBR YYQ# \| Title \| Mon DD
 *example* 
-WBR 20Q1 | GitLab Commit 2020 | Feb 05
+WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
 
 **Hubspot marketing email titles**
 *email format*:
-EM-type WBR YYQ# | Title | Mon DD
+EM-type WBR YYQ# \| Title \| Mon DD
 *examples*:
-EM-invite WBR 20Q1 | GitLab Commit 2020 | Feb 05
-EM-remind-1day WBR 20Q1 | GitLab Commit 2020 | Feb 05
-EM-remind-1hour WBR 20Q1 | GitLab Commit 2020 | Feb 05
-EM-thanks WBR 20Q1 | GitLab Commit 2020 | Feb 05
+EM-invite WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
+EM-remind-1day WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
+EM-remind-1hour WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
+EM-thanks WBR 20Q1 \| GitLab Commit 2020 \| Feb 05
 
 
