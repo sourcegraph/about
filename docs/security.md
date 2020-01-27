@@ -82,7 +82,7 @@ We will not issue a reward if any of the following apply:
 
 We define multipliers for each of the factors for the reward amount and apply these multipliers against our maximum bounty. For example, a vulnerability that impacts a small number of customers (0.5x), is difficult to exploit (0.5x), and would cause a lot of harm (1x), might be awarded $2,500 USD.
 
-These are only guidelines and the final award amount for any issue is at the discression of Sourcegraph.
+These are only guidelines and the final award amount for any issue is at the discretion of Sourcegraph.
 
 
 | Vulnerable customers* | Reward multiplier |
