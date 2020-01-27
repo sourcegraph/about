@@ -80,7 +80,7 @@ We will not issue a reward if any of the following apply:
 1. You spam us with duplicate and/or low quality vulnerability reports (e.g. copy/pasting generic issues from automatic scanning tools).
 1. You are currently a teammate at Sourcegraph (e.g. employee, contractor, intern).
 
-We define multipliers for each of the factors for the reward amount and apply these multipliers against our maximum bounty. For example, a vulnerability that impacts a small number of customers (0.5x), is difficult to exploit (0.5x), and would cause a lot of harm (1x), might be awarded $2,500 USD.
+We define multipliers for each of the factors for the reward amount and apply these multipliers against our maximum bounty ($10,000 USD). For example, a vulnerability that impacts a small number of customers (0.5x), is difficult to exploit (0.5x), and would cause a lot of harm (1x), might be awarded $2,500 USD (i.e. `$10,000 * 0.5 * 0.5 * 1.0 = $2,500`).
 
 These are only guidelines and the final award amount for any issue is at the discretion of Sourcegraph.
 
