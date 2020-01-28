@@ -18,6 +18,12 @@
 1. Hiring
 1. Sales and marketing
 1. Product and development updates
+  - Each engineering team owns a slide that _summarizes_ relevant progress to the rest of the company in the last week.
+    - The engineering manager for each team is ultimately responsible for their team's slide, but they may delegate this responsibility to other teammates on any given week.
+    - The slide should contain short bullet points for each team project that has been completed, started, or is still in progress since the last update. Usually these bullet points are items on the roadmap. Communciate if ongoing work items are on-track for the next [monthly release](../engineering/releases/index.md).
+    - The slide should communicate how team's progress contribute to their [quarterly OKRs](../../company/okrs/index.md).
+    - The speaker notes on the slide should be exactly what the presenter is going to say (so anyone who can't attend company meeting can quickly catch up).
+    - [Here is an example of a good team slide](https://docs.google.com/presentation/d/1pIoUFHpKI7jLK-F-H6z_aFke_aDZDbXZKuJff6Kf_nc/edit#slide=id.g4d25168c6a_0_55)
 1. Other announcements
    - Also share these announcements in #general.
 1. Q&A (questions and answers about anything company-wide)
