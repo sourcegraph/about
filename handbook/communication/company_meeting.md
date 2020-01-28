@@ -18,7 +18,7 @@
 1. Hiring
 1. Sales and marketing
 1. Product and development updates
-  - Each engineering team owns a slide that _summarizes_ relevant progress to the rest of the company in the last week.
+  - Each engineering team owns a slide that _summarizes_ relevant progress  in the last week to the rest of the company.
     - The engineering manager for each team is ultimately responsible for their team's slide, but they may delegate this responsibility to other teammates on any given week.
     - The slide should contain short bullet points for each team project that has been completed, started, or is still in progress since the last update. Usually these bullet points are items on the roadmap. Ongoing work items should be marked with the [monthly release](../engineering/releases/index.md) that they are expected to be included in (if applicable).
     - The slide should communicate how the team's progress contributes to their [quarterly OKRs](../../company/okrs/index.md), usually by inlining the teams objectives as top-level bullet points and nesting project bullet points under the relevant objective.
