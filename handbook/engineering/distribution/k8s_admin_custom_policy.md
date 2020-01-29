@@ -17,7 +17,7 @@ First we need a pod security policy that matches as close as possible the restri
 apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
-  name: foopolicy
+  name: nonroot-policy
 spec:
   privileged: false
   allowPrivilegeEscalation: false
@@ -43,10 +43,10 @@ spec:
   readOnlyRootFilesystem: true
 ``` 
 
-Save this yaml into `foopolicy.yaml` and add the policy to the cluster:
+Save this yaml into `nonroot-policy.yaml` and add the policy to the cluster:
 
 ```shell script
-kubectl apply -f foopolicy.yaml 
+kubectl apply -f nonroot-policy.yaml 
 ```
 
 We now create a fake account, bind this policy to the account and impersonate it when we deploy and manage Sourcegraph.
@@ -67,19 +67,19 @@ kubectl create rolebinding fake-editor --clusterrole=edit --serviceaccount=defau
 We create a role for the pod security policy:
 
 ```shell script
-kubectl create role foo:unprivileged --verb=use --resource=podsecuritypolicy --resource-name=foopolicy
+kubectl create role nonroot:unprivileged --verb=use --resource=podsecuritypolicy --resource-name=nonroot-policy
 ``` 
 
 and then bind it to the fake user:
 
 ```shell script
-kubectl create rolebinding fake-user:foo:unprivileged --role=foo:unprivileged --serviceaccount=default:fake-user
+kubectl create rolebinding fake-user:nonroot:unprivileged --role=nonroot:unprivileged --serviceaccount=default:fake-user
 ```
 
 Our fake user is now under the spell of the pod security policy. Let's check that:
 
 ```shell script
-kubectl --as=system:serviceaccount:default:fake-user auth can-i use podsecuritypolicy/foopolicy
+kubectl --as=system:serviceaccount:default:fake-user auth can-i use podsecuritypolicy/nonroot-policy
 ```
 
 It should return `yes`.
