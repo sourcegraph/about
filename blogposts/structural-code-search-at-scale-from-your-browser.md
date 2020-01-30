@@ -67,7 +67,7 @@ One important function is `copy_from_user`, which copies content from userspace
 memory into the kernelspace memory. We can find all `copy_from_user` calls with
 a query like `copy_from_user(:[args])`. 
 
-	Run this query live: [copy_from_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+Run this query live: [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
 
 The `:[args]` syntax is a wildcard matcher that matches all text between
 _balanced parentheses_. The `args` part is just a descriptive alphanumeric
@@ -97,8 +97,8 @@ this call is that it calculates the size of memory using `sizeof(...) - ...`.
 Let's see if there are other calls that calulate the size of memory in a
 similar way:
 
-Run this query live: [copy_from_user(:[dst], :[src], sizeof(:[_]) -
-:[_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
+Run this query live: [copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
+:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
 
 Here the query breaks up the original `:[args]` hole into holes for the
 destination buffer `dst`, source buffer `src`, and the calculation for the
