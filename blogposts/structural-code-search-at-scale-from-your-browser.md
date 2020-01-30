@@ -26,54 +26,65 @@ for var in expression {
 }
 ```
 
-The `code` block can contain nested `for` loops, `if` statements, and so on. If
-we wanted to match all of the `code` block contents for these expressions, and
-search for patterns inside them, our search engine must understand that `code`
-exists inside balanced braces `{ ... }`. Regular expressions can go a
-long way to match such syntactic structures but [they are not
+The `code` block can contain nested `for` loops, `if` statements, and so on. To
+match all of the `code` block contents for these expressions, and search for
+patterns inside them, our search engine must understand that `code` exists
+inside balanced braces `{ ... }`. Regular expressions can go a long way to
+match such syntactic structures but [they are not
 ideal](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags).
 In practice we use _parsing_ to interpret and convert syntax for nested
 expressions like `{...}` into trees, which encode richer structural properties
 than the textual representation.
 
 ![Nested expressions figure](images/nested-expressions.png) Figure 1: Nested
-expressions can expand inside code blocks. Parsing converts such expressions
+expressions can expand inside code blocks. Parsing converts nested expressions
 into tree data structures.
 
 Most code search today is not based on true parsing or tree data structures.
 Instead, we use literal strings or regular expressions, which is "good enough"
-for many kinds of searches. But this flavor of text search isn't ideal for
-matching blocks of nested expressions as in Figure 1. We could more easily and
-precisely search for richer syntactic patterns if today's search tools _also_
-treated code as syntax trees, and that's the key idea behind structural search. 
+for many kinds of searches. But these methods make it tricky to match precisely
+on the possible blocks, or their expressions, that can expand inside the loop
+in Figure 1. We could more easily and precisely search for richer syntactic
+patterns if today's search tools _also_ treated code as syntax trees, and
+that's the key idea behind structural search. 
 
-As a feature, the idea is not entirely new. There are some neat developer and
-compiler tools that search or match over tree structures already (see
-[additional resources](#additional-resources) at the end of this post!). But
-none are available at your fingertips, just seconds away from running on some
-of today's largest and most popular code bases. That is why we are happy to
-announce that Sourcegraph now supports a first release of structural search
-available at scale, for nearly every language, directly from your browser.
+There already exists many neat developer and compilter tools that search or
+match over tree structures (see [additional resources](#additional-resources)
+at the end of this post!). But none are available at your fingertips, just
+seconds away from running on some of today's largest and most popular
+codebases. That is why we are happy to announce that Sourcegraph now supports a
+first release of structural search available at scale, for nearly every
+language, directly from your browser.
 
 ## Examples! Show me examples!
 
-**Structural search on the Linux kernel**
 
-The Linux kernel is a large and popular project out there.  One important
-function is `copy_from_user`, which copies memory from userspace into the
-kernel space. We can find all `copy_from_user` calls with a query like
-`copy_from_user(:[args])` where `:[args]` is a wildcard matcher that will
-matches all text between balanced parentheses.
+Let's look for things in the Linux kernel. After all, why not show off
+structural search at scale on one of the largest and most popular projects in
+open source software?
 
-> Run this query live: [`copy_from_user(:[args])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+One important function is `copy_from_user`, which copies content from userspace
+memory into the kernelspace memory. We can find all `copy_from_user` calls with
+a query like `copy_from_user(:[args])`. 
 
-Of course, we could run a simpler search in Sourcegraph like
+	Run this query live: [copy_from_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+
+The `:[args]` syntax is a wildcard matcher that matches all text between
+_balanced parentheses_. The `args` part is just a descriptive alphanumeric
+identifier. The match syntax and behavior is based on
+[Comby](https://comby.dev), which is the underlying engine behind structural
+search. You can find out more about the match syntax in our [usage
+docs](https://docs.sourcegraph.com/user/search/structural)---for now it's
+enough to just follow along this blog post!
+
+Now, of course, we _could_ have run a simpler regex search for the prefix with
+something like
 [`copy_from_user(`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
 and get results more quickly, and sometimes that's the right thing to do. 
 
 But in other cases we can do more interesting things with structural search
-that becomes awkward with, e.g., regular expressions. For example, one result
-for structural search is:
+that becomes awkward otherwise. For example, one result for structural search
+is:
 
 ```c
 copy_from_user(&txc.tick, &txc_p->tick, sizeof(struct timex32) - 
@@ -86,7 +97,8 @@ this call is that it calculates the size of memory using `sizeof(...) - ...`.
 Let's see if there are other calls that calulate the size of memory in a
 similar way:
 
-Run this query live: [`copy_from_user(:[dst], :[src], sizeof(:[_]) - :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
+Run this query live: [copy_from_user(:[dst], :[src], sizeof(:[_]) -
+:[_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
 
 Here the query breaks up the original `:[args]` hole into holes for the
 destination buffer `dst`, source buffer `src`, and the calculation for the
@@ -148,40 +160,21 @@ Search for `++i` [in our codebase](https://sourcegraph.com/search?q=repo:%5Egith
 *A couple of things to keep in mind*
 
 - Structural search on sourcegraph.com is only enabled for roughly the top
-  10,000 most popular repositories on GitHub. We plan to open it up to all
-  mirrored repositories and you can [help make that happen
-  faster](#whats-next-for-structural-search). Until then, you can [set up
-  Sourcegraph locally](https://docs.sourcegraph.com/#quickstart) for your own
-  code or any other repository you'd like and get all of the structural search
-  goodness.
-
-- The longer your pattern, the more suitable for structural search. Bad: `:[x]`
-
-- See our [usage documentation](https://docs.sourcegraph.com/user/search/structural) for more help.
+  10,000 most popular repositories on GitHub, and on the most recent commit of
+  the default branch. We plan to open it up to all mirrored repositories and
+  you can [help make that happen faster](#whats-next-for-structural-search).
+  Until then, you can [set up Sourcegraph
+  locally](https://docs.sourcegraph.com/#quickstart) for your own code or any
+  other repository you'd like and get all of the structural search goodness.
 
 - You might be running structural search for the first time on a repo! 😎 If your
 query times out, give the page a refresh because we're probably warming up the
 cache for you. 
 
-- Need more inspiration? See the [CactusCon Talk](https://www.youtube.com/watch?v=yOZQsZs35FA)
 
-- Have a usage question or suggestion? [Send us a tweet](https://twitter.com/srcgraph) or e-mail us at <feedback@sourcegraph.com>
-
-- Run into a bug? [Create an issue on GitHub](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=bug_report.md&title=)
+- See our [usage documentation](https://docs.sourcegraph.com/user/search/structural) for more help.
 
 ## How is this different from regular expressions?
-
-They key differences in functionality are:
-
-- Builtin, convenient constraints `:[x] :[x]`.
-- Language-aware (only code, contextual strings)
-- Convenient multiline/insignificant whitespace matching
-- Delimeters are _always_ balanced, no guesswork involved
-- Less metasyntax, less escaping
-
-- No support for `\d+` (see feature improvements).
-
-**When you should use structural search**
 
 Structural search is not a replacement for regexp search. It's another tool in
 your toolkit that works well for matching blocks of code or expressions, and
@@ -190,22 +183,32 @@ string or pattern, consider using Sourcegraph's literal or regexp
 [search](https://sourcegraph.com/search), because these are typically much
 faster!
 
+They key differences in functionality are:
+
+- Builtin, convenient constraints `:[x] :[x]`.
+- Language-aware (only code, contextual strings)
+- Convenient multiline/insignificant whitespace matching
+- Delimiters are _always_ balanced, no guesswork involved
+- Less metasyntax, less escaping
+
+- No support for `\d+` (see feature improvements).
+
 ## What's next for structural search?
 
 We have more features and improvements planned. _If you want to see any of
-these features arrive more quickly, please +1 the related issue tracker so
-that we can prioritize our engineering to deliver them sooner!_
+these features arrive more quickly, please +1 the related issue tracker so that
+we can prioritize our engineering to deliver them sooner!_
 
 - **Structural search enabled for all mirrored repositories.** We want structural
   search to be available for _your_ repository, and not just the really popular
-  ones [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+  ones. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
 - **Regular expression support in structural holes.** We want to add support for
   regexp syntax inside holes for refine search, like `\d+` to match only
-  numerical digits [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+  numerical digits. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
 - **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. And this video has more details FIXME. If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
 - **Make it faster.** Structural search is typically slower than our regexp
   search because it does more work. If you find it valuable, we
-  want to make it faster [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+  want to make it faster. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
 
 Have something else in mind? Send us an e-mail at <feedback@sourcegraph.com>
 
@@ -228,6 +231,15 @@ that you may be familiar with or find interesting:
 - `tree-sitter` for parsing multiple language grammars [[1](https://github.com/tree-sitter/tree-sitter)]
 - CodeQL for analyzing a number of poular languages [[1](https://securitylab.github.com/tools/codeql)]
 
+- Need more inspiration? See the [CactusCon Talk](https://www.youtube.com/watch?v=yOZQsZs35FA)
+
+
 At Sourcegraph we're continually looking to improve developer tools, and to
 integrate richer search functionality. If you find these tools or others
 valuable, share your thoughts with us at <feedback@sourcegraph.com>.
+
+## Feedback
+
+- Have a usage question or suggestion about structural search? [Send us a tweet](https://twitter.com/srcgraph) or e-mail us at <feedback@sourcegraph.com>
+
+- Run into a bug? [Create an issue on GitHub](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=bug_report.md&title=)
