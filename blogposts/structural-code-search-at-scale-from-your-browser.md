@@ -43,7 +43,7 @@ into tree data structures.
 Most code search today is not based on true parsing or tree data structures.
 Instead, we use literal strings or regular expressions, which is "good enough"
 for many kinds of searches. But these methods make it tricky to match precisely
-on the possible blocks, or their expressions, that can expand inside the loop
+on blocks or expressions that can expand inside statements like the loop
 in Figure 1. We could more easily and precisely search for richer syntactic
 patterns if today's search tools _also_ treated code as syntax trees, and
 that's the key idea behind structural search.
@@ -76,13 +76,13 @@ because incorrect uses can (and have) lead to vulnerabilities. We can find all
 
 The `:[args]` syntax is a structural hole that matches all text between
 balanced parentheses. The `args` part is just a descriptive identifier. We
-currently support [Comby syntax](https://comby.dev/#match-syntax), which is the
+support [Comby syntax](https://comby.dev/#match-syntax), which is currently the
 underlying engine behind structural search. You can find out more about the
 match syntax in our [usage
 docs](https://docs.sourcegraph.com/user/search/structural), but for now it's enough
 to just follow along this blog post!
 
-Now, of course, we _could_ have run a simpler regex search for the prefix with
+Of course, we _could_ have run a simpler regex search for the prefix with
 something like
 [copy\_from\_user(](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
 and get results more quickly, and sometimes that's the right thing to do.
@@ -107,7 +107,7 @@ above, using substraction and `sizeof`:
 <div style="padding-left: 2rem">
 
 🔎 [copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
-:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
+:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c+count:1000&patternType=structural)
 
 </div>
 
@@ -126,7 +126,7 @@ Here's a query to easily find more of these patterns:
 
 <div style="padding-left: 2rem">
 
-🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
+🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+count:2000&patternType=structural)
 
 </div>
 
