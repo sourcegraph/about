@@ -66,25 +66,25 @@ One important function is `copy_from_user`, which copies content from userspace
 memory into the kernelspace memory. This function has a history of [careful
 auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf),
 because incorrect uses can (and have) lead to vulnerabilities. We can find all
-`copy_from_user` calls with a query like `copy_from_user(:[args])`.
+`copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it live:
 
 <div style="padding-left: 2rem">
 
-🔎 Run this query live: [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
 
 </div>
 
 The `:[args]` syntax is a wildcard matcher that matches all text between
-balanced parentheses. The `args` part is just a descriptive identifier. The
-match syntax and behavior is based on [Comby](https://comby.dev), which is the
+balanced parentheses. The `args` part is just a descriptive identifier. We
+currently support [Comby syntax](https://comby.dev/#match-syntax), which is the
 underlying engine behind structural search. You can find out more about the
 match syntax in our [usage
-docs](https://docs.sourcegraph.com/user/search/structural)---for now it's
-enough to just follow along this blog post!
+docs](https://docs.sourcegraph.com/user/search/structural)---for now it's enough
+to just follow along this blog post!
 
 Now, of course, we _could_ have run a simpler regex search for the prefix with
 something like
-[`copy_from_user(`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
+[copy_from_user(](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
 and get results more quickly, and sometimes that's the right thing to do.
 
 But in other cases we can do more interesting things with structural search
@@ -118,25 +118,15 @@ to name. This query finds just a handful of results, so this is a rather uncommo
 pattern in the code base!
 
 Structural search can also identify patterns to clean up. For example, one [clean
-up](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e)
-patch in the kernel looks like this:
+up patch](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e) in the kernel looks like this:
 
-```diff
-@@ -128,8 +128,7 @@ static void __zcrypt_increase_preference(struct zcrypt_device *zdev)
- 	if (l == zdev->list.prev)
- 		return;
- 	/* Move zdev behind l */
--	list_del(&zdev->list);
--	list_add(&zdev->list, l);
-+	list_move(&zdev->list, l);
- }
-```
+![Linux clean up patch](images/linux-cleanup-patch.png)
 
 Here's a query to easily find more of these patterns:
 
 <div style="padding-left: 2rem">
 
-🔎 [`list_del(:[x]); list_add(:[x], :[\_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
+🔎 [list_del(:[x]); list_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
 
 </div>
 
@@ -225,7 +215,11 @@ we can prioritize our engineering to deliver them sooner!_
 
 Have something else in mind? Send us an e-mail at <feedback@sourcegraph.com>
 
+
+
 If you want to know more about `Comby` and rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA). Turn on subtitles, audio is poor.
+
+For more patterns, have a look at Coccinelle, your favorite linter, or atoms of confusion.
 
 
 Happy searching!
