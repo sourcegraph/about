@@ -70,7 +70,7 @@ because incorrect uses can (and have) lead to vulnerabilities. We can find all
 
 <div style="padding-left: 2rem">
 
-🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c+count:1000&patternType=structural)
 
 </div>
 
@@ -79,7 +79,7 @@ balanced parentheses. The `args` part is just a descriptive identifier. We
 currently support [Comby syntax](https://comby.dev/#match-syntax), which is the
 underlying engine behind structural search. You can find out more about the
 match syntax in our [usage
-docs](https://docs.sourcegraph.com/user/search/structural)---for now it's enough
+docs](https://docs.sourcegraph.com/user/search/structural), but for now it's enough
 to just follow along this blog post!
 
 Now, of course, we _could_ have run a simpler regex search for the prefix with
@@ -175,7 +175,7 @@ that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+%27print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29%27+lang:python&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5Bx%5D%29+.next%28:%5By%5D%29%27&patternType=structural) (the latter matches across newlines)
+🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29.next%28%29%27+count:1000&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29+.next%28%29%27&patternType=structural) (the latter matches across newlines)
 
 </div>
 
@@ -183,7 +183,7 @@ that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/withspectrum/spectrum%24++%27:%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+:%5Bfn%5D%28%29%7D%27+&patternType=structural)
+🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo%3A%5Egithub%5C.com%2Fwithspectrum%2Fspectrum%24++%27%3A%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+%3A%5Bfn%5D%28%29%7D%27++count%3A1000&patternType=structural)
 
 </div>
 
@@ -191,7 +191,7 @@ that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [{ :[z] } else if :[y] { :[z] }](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24++%27%7B+:%5Bz%5D+%7D+else+if+:%5By%5D+%7B+:%5Bz%5D+%7D%27&patternType=structural)
+🔎 [{ :[z] } else if :[y] { :[z] }](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24++%27%7B:%5Bz%5D%7D+else+if+:%5By%5D+%7B:%5Bz%5D%7D%27+count:1000&patternType=structural)
 
 </div>
 
