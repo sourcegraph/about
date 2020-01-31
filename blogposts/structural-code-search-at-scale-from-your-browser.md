@@ -64,13 +64,11 @@ open source software?
 
 One important function is `copy_from_user`, which copies content from userspace
 memory into the kernelspace memory. This function has a history of [careful
-auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf),
-because incorrect uses can (and have) lead to vulnerabilities. We can find all
-`copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it live:
+auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf) because incorrect uses can (and have) lead to vulnerabilities. We can find all `copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it live:
 
 <div style="padding-left: 2rem">
 
-🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c+count:1000&patternType=structural)
+🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bargs%5D%29%22+lang:c+count:1000&patternType=structural)
 
 </div>
 
@@ -151,9 +149,8 @@ future, we are introducing [rules](#whats-next-for-structural-search) to refine
 queries further, giving you greater control for avoiding unintended matches.
 
 Structural search works on practically all languages, and understands the basic
-syntactic structures (strings, comments, code) for them. Here's a short list
-that gives just a taste of some patterns you can try out:
-
+syntactic structures for them (like strings, comments, and code blocks). Here's
+a short list that gives just a taste of some patterns you can try out:
 
 **Java**. Find try-catch-finally statements where the catch statement has no body (the `catch` clause could be omitted)
 
