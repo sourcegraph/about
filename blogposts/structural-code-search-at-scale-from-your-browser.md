@@ -46,7 +46,7 @@ for many kinds of searches. But these methods make it tricky to match precisely
 on the possible blocks, or their expressions, that can expand inside the loop
 in Figure 1. We could more easily and precisely search for richer syntactic
 patterns if today's search tools _also_ treated code as syntax trees, and
-that's the key idea behind structural search. 
+that's the key idea behind structural search.
 
 Many neat developer and compiler tools already exist for querying or
 matching tree structures (see [additional resources](#additional-resources)
@@ -66,9 +66,13 @@ One important function is `copy_from_user`, which copies content from userspace
 memory into the kernelspace memory. This function has a history of [careful
 auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf),
 because incorrect uses can (and have) lead to vulnerabilities. We can find all
-`copy_from_user` calls with a query like `copy_from_user(:[args])`. 
+`copy_from_user` calls with a query like `copy_from_user(:[args])`.
 
-![Small logo](images/logo-40x40.png) Run this query live: [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+<div style="padding-left: 2rem">
+
+🔎 Run this query live: [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
+
+</div>
 
 The `:[args]` syntax is a wildcard matcher that matches all text between
 balanced parentheses. The `args` part is just a descriptive identifier. The
@@ -81,14 +85,14 @@ enough to just follow along this blog post!
 Now, of course, we _could_ have run a simpler regex search for the prefix with
 something like
 [`copy_from_user(`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
-and get results more quickly, and sometimes that's the right thing to do. 
+and get results more quickly, and sometimes that's the right thing to do.
 
 But in other cases we can do more interesting things with structural search
 that becomes awkward otherwise. For example, one result for the above query
 is:
 
 ```c
-copy_from_user(&txc.tick, &txc_p->tick, sizeof(struct timex32) - 
+copy_from_user(&txc.tick, &txc_p->tick, sizeof(struct timex32) -
 			   offsetof(struct timex32, tick))
 ```
 
@@ -100,21 +104,22 @@ error-prone than simple or static values. So, one thing we could check is
 whether other calls that calulate the size of memory in a similar way to the
 above, using substraction and `sizeof`:
 
-<img style="float: left;" height="25" width="25" src="images/logo-40x40.png"> Run this query live:
-[copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
+<div style="padding-left: 2rem">
+
+🔎 [copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
 :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
+
+</div>
 
 This query breaks up the original `:[args]` hole into holes for the
 destination buffer `dst`, source buffer `src`, and the calculation for the
 memory size. The `:[_]` syntax is just a hole that we don't particularly care
-to name. This query finds just two more results, so this is a really uncommon
-pattern in the code base! Certain calculation for memory sizes can mean bugs.
-For example...
+to name. This query finds just a handful of results, so this is a rather uncommon
+pattern in the code base!
 
-Identifying patterns to clean up is another example where structural search is
-convenient. For example, one [clean
+Structural search can also identify patterns to clean up. For example, one [clean
 up](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e)
-in the kernel looks like this:
+patch in the kernel looks like this:
 
 ```diff
 @@ -128,8 +128,7 @@ static void __zcrypt_increase_preference(struct zcrypt_device *zdev)
@@ -127,17 +132,21 @@ in the kernel looks like this:
  }
 ```
 
-Here's a query for easily finding more of these:
+Here's a query to easily find more of these patterns:
 
-[`list_del(:[x]); list_add(:[x], :[_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
+<div style="padding-left: 2rem">
+
+🔎 [`list_del(:[x]); list_add(:[x], :[\_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
+
+</div>
 
 This time, we're using the same identifier `:[x]` twice, to make sure that the
-argument is the same for both list calls. We could choose any identifier,
-except for `:[_]`, which is just a placeholder. The whitespace between the
-calls is interpreted to possibly include newlines, so there's no issue matching
-these calls across newlines.
+argument is the same for both `list_del` and `list_add` calls. We could choose
+any identifier, except for `:[_]`, which is just a placeholder. The whitespace
+between the calls is interpreted to possibly include newlines, so there's no
+issue matching these calls across newlines.
 
-Structural search is purely syntactic, so there are some matches that cannot cleaned up:
+Do note that structural search is purely syntactic, so there are some matches that cannot cleaned up:
 
 ```c
 	if (!list_empty(&page->lru))
@@ -148,8 +157,8 @@ Structural search is purely syntactic, so there are some matches that cannot cle
 
 In this case, the problem is that the `list_del` call is in scope of the `if`
 block. However, the majority of matches carry our intended meaning. In the
-future, we are introducing [rules]() to refine queries further, giving you greater
-control for avoiding unintended matches.
+future, we are introducing [rules](#whats-next-for-structural-search) to refine
+queries further, giving you greater control for avoiding unintended matches.
 
 ---
 
@@ -173,7 +182,7 @@ Search for `++i` [in our codebase](https://sourcegraph.com/search?q=repo:%5Egith
 
 - You might be running structural search for the first time on a repo! 😎 If your
 query times out, give the page a refresh because we're probably warming up the
-cache for you. 
+cache for you.
 
 
 - See our [usage documentation](https://docs.sourcegraph.com/user/search/structural) for more help.
