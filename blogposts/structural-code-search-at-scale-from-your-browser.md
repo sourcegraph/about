@@ -171,13 +171,11 @@ that gives just a taste of some patterns you can try out:
 
 </div>
 
-**Rust**. Find chained `filter(...).next()` calls that could perhaps be simplified to `.find(...)` (based on [Clippy lint](https://rust-lang.github.io/rust-clippy/master/index.html#filter_next))
+**Rust**. Find chained `filter(...).next()` that could simplified to `.find(...)` (based on [lint](https://rust-lang.github.io/rust-clippy/master/index.html#filter_next))
 
 <div style="padding-left: 2rem">
 
-🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+%27print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29%27+lang:python&patternType=structural)
-
-🔎 [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5Bx%5D%29+.next%28:%5By%5D%29%27&patternType=structural) (with a whitespace to match across newlines)
+🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+%27print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29%27+lang:python&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5Bx%5D%29+.next%28:%5By%5D%29%27&patternType=structural) (the latter matches across newlines)
 
 </div>
 
@@ -201,7 +199,7 @@ that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [Image.asset(:[_] width: 100,:[_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%27Image.asset%28:%5B_%5D+width:+100%2C:%5B_%5D%29%27+lang:dart&patternType=structural)
+🔎 [Image.asset(:[\_] width: 100,:[_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%27Image.asset%28:%5B_%5D+width:+100%2C:%5B_%5D%29%27+lang:dart&patternType=structural)
 
 </div>
 
