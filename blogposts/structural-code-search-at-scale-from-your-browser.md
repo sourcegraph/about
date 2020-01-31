@@ -84,7 +84,7 @@ to just follow along this blog post!
 
 Now, of course, we _could_ have run a simpler regex search for the prefix with
 something like
-[copy_from_user(](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
+[copy\_from\_user(](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
 and get results more quickly, and sometimes that's the right thing to do.
 
 But in other cases we can do more interesting things with structural search
