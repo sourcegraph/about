@@ -63,16 +63,18 @@ structural search working on one of the largest and most popular projects in
 open source software?
 
 One important function is `copy_from_user`, which copies content from userspace
-memory into the kernelspace memory. We can find all `copy_from_user` calls with
-a query like `copy_from_user(:[args])`. 
+memory into the kernelspace memory. This function has a history of [careful
+auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf),
+because incorrect uses can (and have) lead to vulnerabilities. We can find all
+`copy_from_user` calls with a query like `copy_from_user(:[args])`. 
 
 ![Small logo](images/logo-40x40.png) Run this query live: [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%27copy_from_user%28:%5Bargs%5D%29%27+lang:c&patternType=structural)
 
 The `:[args]` syntax is a wildcard matcher that matches all text between
-balanced parentheses. The `args` part is just a descriptive 
-identifier. The match syntax and behavior is based on
-[Comby](https://comby.dev), which is the underlying engine behind structural
-search. You can find out more about the match syntax in our [usage
+balanced parentheses. The `args` part is just a descriptive identifier. The
+match syntax and behavior is based on [Comby](https://comby.dev), which is the
+underlying engine behind structural search. You can find out more about the
+match syntax in our [usage
 docs](https://docs.sourcegraph.com/user/search/structural)---for now it's
 enough to just follow along this blog post!
 
@@ -92,11 +94,14 @@ copy_from_user(&txc.tick, &txc_p->tick, sizeof(struct timex32) -
 
 where the argument spans multiple lines. By default, `:[hole]` syntax matches
 across multiple lines just like code structures can. An interesting thing about
-this call is that it calculates the size of memory using `sizeof(...) - ...`.
-Let's see if there are other calls that calulate the size of memory in a
-similar way:
+the call above is that it calculates the size of memory using `sizeof(...) -
+...`.  Calculating and checking the size of memory to copy can be more
+error-prone than simple or static values. So, one thing we could check is
+whether other calls that calulate the size of memory in a similar way to the
+above, using substraction and `sizeof`:
 
-Run this query live: [copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
+<img style="float: left;" height="25" width="25" src="images/logo-40x40.png"> Run this query live:
+[copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
 :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c&patternType=structural)
 
 This query breaks up the original `:[args]` hole into holes for the
