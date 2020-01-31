@@ -74,7 +74,7 @@ because incorrect uses can (and have) lead to vulnerabilities. We can find all
 
 </div>
 
-The `:[args]` syntax is a wildcard matcher that matches all text between
+The `:[args]` syntax is a structural hole that matches all text between
 balanced parentheses. The `args` part is just a descriptive identifier. We
 currently support [Comby syntax](https://comby.dev/#match-syntax), which is the
 underlying engine behind structural search. You can find out more about the
@@ -126,7 +126,7 @@ Here's a query to easily find more of these patterns:
 
 <div style="padding-left: 2rem">
 
-🔎 [list_del(:[x]); list_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
+🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+&patternType=structural)
 
 </div>
 
@@ -150,34 +150,61 @@ block. However, the majority of matches carry our intended meaning. In the
 future, we are introducing [rules](#whats-next-for-structural-search) to refine
 queries further, giving you greater control for avoiding unintended matches.
 
----
+Structural search works on practically all languages, and understands the basic
+syntactic structures (strings, comments, code) for them. Here's a short list
+that gives just a taste of some patterns you can try out:
 
-WIP
 
-Rough, want examples for Rust, JS/TS/React, C, Go, Python
+- Java: Find try-catch-finally statements where the catch statement has no body (the `catch` clause could be omitted)
 
-Search for `++i` [in our codebase](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24++lang:typescript+%27for+%28:%5Bx%5D+%2B%2Bi%29%27&patternType=structural)
+<div style="padding-left: 2rem">
 
----
+🔎 [try {:[try\_body]} catch (:[\_]) { } finally {:[finally\_body]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24++%27try+%7B:%5Btry_body%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5Bfinally_body%5D%7D%27+lang:java&patternType=structural)
 
-*A couple of things to keep in mind*
+</div>
+
+- Python: Find old-style string formatted `print` statements
+
+<div style="padding-left: 2rem">
+
+🔎 [print(":[string]" % :[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+%27print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29%27+lang:python&patternType=structural)
+
+</div>
+
+- Rust: Find chained `filter(...).next()` calls that could perhaps be simplified to `.find(...)` (based on [Clippy](https://rust-lang.github.io/rust-clippy/master/index.html#filter_next) lint).
+
+<div style="padding-left: 2rem">
+
+🔎 [.filter(:[x]).next(:[y])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+%27print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29%27+lang:python&patternType=structural)
+
+🔎 [.filter(:[x]) .next(:[y])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5Bx%5D%29+.next%28:%5By%5D%29%27&patternType=structural) (matches across newlines)
+
+</div>
+
+
+## You're ready to try it yourself
+
+**Here are a couple of things to keep in mind*
 
 - Structural search on sourcegraph.com is only enabled for roughly the top
   10,000 most popular repositories on GitHub, and on the most recent commit of
-  the default branch. We plan to open it up to all mirrored repositories and
-  you can [help make that happen faster](#whats-next-for-structural-search).
-  Until then, you can [set up Sourcegraph
+  the default branch. We plan to open it up to all mirrored repositories and you
+  can [help make that happen faster](#whats-next-for-structural-search). Until
+  then, you can [set up Sourcegraph
   locally](https://docs.sourcegraph.com/#quickstart) for your own code or any
   other repository you'd like and get all of the structural search goodness.
+  Running locally will also likely be faster than using sourcegraph.com
 
-- You might be running structural search for the first time on a repo! 😎 If your
-query times out, give the page a refresh because we're probably warming up the
-cache for you.
+- You might be running structural search for the first time on a repo! 😎 If
+your query times out, give the page a refresh because we're probably warming up
+the cache for you.
 
+- See our [usage
+  documentation](https://docs.sourcegraph.com/user/search/structural) for more
+  help and the [Comby FAQ](https://comby.dev/#faq) for more details and known
+  limitations of the matching engine.
 
-- See our [usage documentation](https://docs.sourcegraph.com/user/search/structural) for more help.
-
-## How is this different from regular expressions?
+**A note on regular expressions: How is structural search different?**
 
 Structural search is not a replacement for regexp search. It's another tool in
 your toolkit that works well for matching blocks of code or expressions, and
@@ -186,21 +213,34 @@ string or pattern, consider using Sourcegraph's literal or regexp
 [search](https://sourcegraph.com/search), because these are typically much
 faster!
 
-They key differences in functionality are:
+Here are some key differences and comparisons to regexp-based search:
 
-- Builtin, convenient constraints `:[x] :[x]`.
-- Language-aware (only code, contextual strings)
-- Convenient multiline/insignificant whitespace matching
-- Delimiters are _always_ balanced, no guesswork involved
-- Less metasyntax, less escaping
+- Structural search is language-aware. For example, it understands certain pieces of syntax for code blocks, string delimiters, and comments. The language can be forced by specifying the `lang:` filter. If omitted, we perform a best-effort to infer the language based on matching file extensions, or fall back to a generic structural matcher.
 
-- No support for `\d+` (see feature improvements).
+- `:[hole]` syntax matches across multiple lines by default.
+
+- Whitespace matching is fuzzy: a space in the pattern will match contiguous
+  whitespace including newlines in the code.
+
+- Delimiters like `{}`, `[]`, `()` are expected to _always_ be balanced
+  (depending on language). For example, a dangling parenthesis in Java is
+  considered a syntax error and can't be matched. A dangling delimiter in the
+  pattern implies a syntax error (prefer regexp search if you want to match
+  dangling delimiters).
+
+- Built-in equality constraints when using the same identifier in patterns like
+  `foo(:[x], :[x])`. This issimilar to, e.g., backreferences in regular
+  expressions.
+
+- No explicit support for matching regexp character classes like `\d+` yet (see planned improvements).
+
+For a complete overview, refer to [comby.dev](https://comby.dev).
 
 ## What's next for structural search?
 
-We have more features and improvements planned. _If you want to see any of
-these features arrive more quickly, please +1 the related issue tracker so that
-we can prioritize our engineering to deliver them sooner!_
+We have more features and improvements planned. _If you want to see any of these
+features arrive more quickly, please +1 the related issue tracker so that we can
+prioritize our engineering to deliver them sooner!_
 
 - **Structural search enabled for all mirrored repositories.** We want structural
   search to be available for _your_ repository, and not just the really popular
@@ -208,19 +248,10 @@ we can prioritize our engineering to deliver them sooner!_
 - **Regular expression support in structural holes.** We want to add support for
   regexp syntax inside holes for refine search, like `\d+` to match only
   numerical digits. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
-- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. And this video has more details FIXME. If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
 - **Make it faster.** Structural search is typically slower than our regexp
   search because it does more work. If you find it valuable, we
   want to make it faster. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
-
-Have something else in mind? Send us an e-mail at <feedback@sourcegraph.com>
-
-
-
-If you want to know more about `Comby` and rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA). Turn on subtitles, audio is poor.
-
-For more patterns, have a look at Coccinelle, your favorite linter, or atoms of confusion.
-
 
 Happy searching!
 
