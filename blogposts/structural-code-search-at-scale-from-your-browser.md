@@ -68,7 +68,7 @@ auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCO
 
 <div style="padding-left: 2rem">
 
-🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bargs%5D%29%22+lang:c+count:1000&patternType=structural)
+🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bargs%5D%29%22+lang:c+&patternType=structural)
 
 </div>
 
