@@ -155,7 +155,7 @@ syntactic structures (strings, comments, code) for them. Here's a short list
 that gives just a taste of some patterns you can try out:
 
 
-**Java** Find try-catch-finally statements where the catch statement has no body (the `catch` clause could be omitted)
+**Java**. Find try-catch-finally statements where the catch statement has no body (the `catch` clause could be omitted)
 
 <div style="padding-left: 2rem">
 
@@ -163,7 +163,7 @@ that gives just a taste of some patterns you can try out:
 
 </div>
 
-**Python** Find old-style string formatted `print` statements
+**Python**. Find old-style string formatted `print` statements
 
 <div style="padding-left: 2rem">
 
@@ -171,7 +171,7 @@ that gives just a taste of some patterns you can try out:
 
 </div>
 
-**Rust** Find chained `filter(...).next()` calls that could perhaps be simplified to `.find(...)` (based on [Clippy lint](https://rust-lang.github.io/rust-clippy/master/index.html#filter_next)).
+**Rust**. Find chained `filter(...).next()` calls that could perhaps be simplified to `.find(...)` (based on [Clippy lint](https://rust-lang.github.io/rust-clippy/master/index.html#filter_next))
 
 <div style="padding-left: 2rem">
 
@@ -181,6 +181,29 @@ that gives just a taste of some patterns you can try out:
 
 </div>
 
+**ReactJS**. Look for opportunities to optimize away arrow functions (see the [React FAQ](https://reactjs.org/docs/faq-functions.html#arrow-function-in-render))
+
+<div style="padding-left: 2rem">
+
+🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/withspectrum/spectrum%24++%27:%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+:%5Bfn%5D%28%29%7D%27+&patternType=structural)
+
+</div>
+
+**Go**. Find `if` branches that contain the same body
+
+<div style="padding-left: 2rem">
+
+🔎 [{ :[z] } else if :[y] { :[z] }](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24++%27%7B+:%5Bz%5D+%7D+else+if+:%5By%5D+%7B+:%5Bz%5D+%7D%27&patternType=structural)
+
+</div>
+
+**Dart**. Find `Image.asset` constructors in the Flutter API where width is initialized to `100`
+
+<div style="padding-left: 2rem">
+
+🔎 [Image.asset(:[_] width: 100,:[_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%27Image.asset%28:%5B_%5D+width:+100%2C:%5B_%5D%29%27+lang:dart&patternType=structural)
+
+</div>
 
 ## You're ready to try it yourself
 
