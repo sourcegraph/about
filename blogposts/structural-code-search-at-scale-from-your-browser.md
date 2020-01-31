@@ -241,14 +241,14 @@ prioritize our engineering to deliver them sooner!_
 
 - **Structural search enabled for all mirrored repositories.** We want structural
   search to be available for _your_ repository, and not just the really popular
-  ones. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
+  ones. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8164)
 - **Regular expression support in structural holes.** We want to add support for
   regexp syntax inside holes for refine search, like `\d+` to match only
-  numerical digits. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
-- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME).
+  numerical digits. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8165)
+- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8166).
 - **Make it faster.** Structural search is typically slower than our regexp
   search because it does more work. If you find it valuable, we
-  want to make it faster. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/FIXME)
+  want to make it faster. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8167)
 
 Happy searching!
 
