@@ -199,7 +199,7 @@ that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [Image.asset(:[\_] width: 100,:[_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%27Image.asset%28:%5B_%5D+width:+100%2C:%5B_%5D%29%27+lang:dart&patternType=structural)
+🔎 [Image.asset(:[\_] width: 100,:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%27Image.asset%28:%5B_%5D+width:+100%2C:%5B_%5D%29%27+lang:dart&patternType=structural)
 
 </div>
 
