@@ -186,7 +186,7 @@ that gives just a taste of some patterns you can try out:
 
 **Here are a couple of things to keep in mind*
 
-- Structural search on sourcegraph.com is only enabled for roughly the top
+- Structural search on [sourcegraph.com](https://sourcegraph.com/search?q=&patternType=structural) is only enabled for roughly the top
   10,000 most popular repositories on GitHub, and on the most recent commit of
   the default branch. We plan to open it up to all mirrored repositories and you
   can [help make that happen faster](#whats-next-for-structural-search).
@@ -194,7 +194,7 @@ that gives just a taste of some patterns you can try out:
 - You can [set up Sourcegraph
   locally](https://docs.sourcegraph.com/#quickstart) for your own code or any
   other repository you'd like and get all of the structural search goodness.
-  Running locally will also likely be faster than using sourcegraph.com.
+  Running locally will also likely be faster than using [sourcegraph.com](https://sourcegraph.com/search?q=&patternType=structural).
 
 - You might be running structural search for the first time on a repo! 😎 If
 your query times out, give the page a refresh because we're probably warming up
@@ -205,7 +205,7 @@ the cache for you.
   help and the [Comby FAQ](https://comby.dev/#faq) for more details and known
   limitations of the matching engine.
 
-**A note on regular expressions: How is structural search different?**
+**A note on regular expressions: How is structural search different?*
 
 Structural search is not a replacement for regexp search. It's another tool in
 your toolkit that works well for matching blocks of code or expressions, and
@@ -213,7 +213,7 @@ simplifies catching buggy syntactic patterns. If you only want to find a simple
 string or pattern, consider using Sourcegraph's literal or regexp
 [search](https://sourcegraph.com/search), because these queries are typically
 much faster! For a more detailed breakdown, see the short comparison at the [end
-of this post](comparing-structural-search-to-more-traditional-text-search).
+of this post](#comparing-structural-search-to-more-traditional-text-search).
 
 ## What's next for structural search?
 
@@ -249,14 +249,14 @@ that you may be familiar with or find interesting:
 - `Sgrep`, or Syntactical grep (multiple languages) [[1](https://github.com/facebookarchive/pfff/wiki/Sgrep)], [[2](https://github.com/returntocorp/bento/blob/master/SGREP-README.md)]
 - `tree-sitter`, parsing and query framework (multiple languages) [[1](https://github.com/tree-sitter/tree-sitter)]
 - `gogrep` for declaratively matching Go syntax trees [[1](https://github.com/mvdan/gogrep)]
-- `Spoofax`, AST querying using the Spoofax Language Workbench (multiple languages) [[1]](http://www.metaborg.org/en/latest/source/langdev/meta/lang/flowspec/stratego-api.html#querying-analysis)
+- `Spoofax`, AST querying using the Spoofax Language Workbench (multiple languages) [[1](http://www.metaborg.org/en/latest/source/langdev/meta/lang/flowspec/stratego-api.html#querying-analysis)]
 - CodeQL, querying tree and graph properties for a number of poular languages [[1](https://securitylab.github.com/tools/codeql)]
 
 At Sourcegraph we're continually looking to improve developer tools, and to
 integrate richer search functionality. If you find these tools or others
 valuable, share your thoughts with us at <feedback@sourcegraph.com>.
 
-## Comparing structural search to more traditional text search
+## Structural search vs. more traditional text search
 
 Here are some key differences and comparisons to regexp-based text search:
 
