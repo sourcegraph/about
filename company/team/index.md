@@ -191,6 +191,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [geoffrey@sourcegraph.com](mailto:geoffrey@sourcegraph.com), [ggilmore](https://github.com/ggilmore)
 - Geoffrey is an MIT graduatate who enjoys kicking people in his spare time.
 
+## Farhan Attamimi
 
+- Software Engineer
+- Singapore 🇸🇬
+- [farhan@sourcegraph.com](mailto:farhan@sourcegraph.com), [attfarhan](https://github.com/attfarhan)
+- Farhan writes code to pass the time while impatiently waiting for Manchester United to return to glory.
 
 <!-- Paste *your* section above this line! -->
