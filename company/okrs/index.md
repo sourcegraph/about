@@ -4,7 +4,7 @@
 
 Our OKRs are public:
 
-- [2020-Q1 (WIP)](https://github.com/sourcegraph/about/pull/422)
+- [2020-Q1 (active)](2020_q1.md)
 - [2019-Q4](2019_q4.md)
 - [2019-Q3](2019_q3.md)
 
