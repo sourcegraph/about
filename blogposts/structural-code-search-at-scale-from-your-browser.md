@@ -99,8 +99,8 @@ across multiple lines just like code structures can. An interesting thing about
 the call above is that it calculates the size of memory using `sizeof(...) -
 ...`.  Calculating and checking the size of memory to copy can be more
 error-prone than simple or static values. So, one thing we could check is
-whether other calls that calulate the size of memory in a similar way to the
-above, using substraction and `sizeof`:
+whether other calls that calculate the size of memory in a similar way to the
+above, using subtraction and `sizeof`:
 
 <div style="padding-left: 2rem">
 
