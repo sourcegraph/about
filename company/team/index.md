@@ -198,4 +198,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [farhan@sourcegraph.com](mailto:farhan@sourcegraph.com), [attfarhan](https://github.com/attfarhan)
 - Farhan writes code to pass the time while impatiently waiting for Manchester United to return to glory.
 
+## Erik Seliger
+
+- Software Engineer
+- Bremen, Germany 🇩🇪
+- [erik@sourcegraph.com](mailto:erik@sourcegraph.com), [eseliger](https://github.com/eseliger), [LinkedIn](https://www.linkedin.com/in/erik-seliger/)
+- Erik has a background in Systems Engineering and decided that software is the most interesting field of engineering, which he never quit since first touching Turbo Pascal at age 11.
+
 <!-- Paste *your* section above this line! -->
