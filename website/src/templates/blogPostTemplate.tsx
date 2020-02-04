@@ -34,18 +34,16 @@ export default class BlogPostTemplate extends React.Component<any, any> {
             document.addEventListener('mouseup', this.logSelectDockercommand)
         }
     }
-    // Question: Shuold this be a Function Component?
+    // Question: Should this be a Function Component?
     public Author(props: AuthorProps): Element {
         let element: any
 
         if (props.authorUrl) {
             element = (
-                <p>
-                    Written by <a href={props.authorUrl}>{props.author}</a>
-                </p>
+             <span>Written by <a href={props.authorUrl}>{props.author}</a></span>
             )
         } else {
-            element = <p>Written by {props.author}</p>
+            element = <span>Written by {props.author}</span>
         }
 
         return element
@@ -54,6 +52,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const md = this.props.data.markdownRemark
         const title = md.frontmatter.title
+        const publishDate = md.frontmatter.publishDate
         let slug = md.slug
         const fileName = md.fileAbsolutePath.split('/').pop()
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
@@ -93,7 +92,8 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
-                                <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} />
+                                <p><this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} /><br />
+                                {publishDate}</p>
                             </section>
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
