@@ -25,6 +25,8 @@ There's a gold mine of code available to programmers, but choosing the right lib
 
 Sourcegraph indexes code at a semantic level, which means it parses and understands code the same way a compiler does. This is necessary to support features like semantic search and finding usage examples. It currently supports Go, JavaScript, and TypeScript. Python, Java, and other languages are [coming soon](https://sourcegraph.com/beta).
 
+> **UPDATE:** Sourcegraph now supports [nearly every major language](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22).
+
 ![1*vZYaY5vKIyyn5bwh4dE1Gw](//images.contentful.com/le3mxztn6yoo/57PgJfXJj2kiGwIUoGy0As/cfc16d9cee87e58c26b582616ce052eb/1_vZYaY5vKIyyn5bwh4dE1Gw.png)
 
 #### Are you a repository author?
