@@ -116,23 +116,23 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 </tr>
 
 <tr>
-  <td>Edit a "deployment" (such as changing environment variables)</td>
+  <td>Edit a "deployment" (such as changing environment variables).</td>
   <td><code>kubectl edit deployment --namespace=prod DEPLOYMENT_NAME</code><br/>
   Note that the deployment name is not the pod name, and affects all pods running that deployment.</td>
 </tr>
 
 <tr>
-  <td>SSH into the VM running a pod</td>
-  <td>Find the node ID from the NODE column of <code>kubectl get pods --namespace=prod -o=wide</code>. Go to the Google Compute Engine dashboard and click the "SSH" button in the top left to get the <code>gcloud</code> command to SSH into the node<br /><code>kubectl -n prod exec -it POD_NAME /bin/sh</code></td>
+  <td>SSH into the VM running a pod.</td>
+  <td>Find the node ID from the NODE column of <code>kubectl get pods --namespace=prod -o=wide</code>. Go to the Google Compute Engine dashboard and click the "SSH" button in the top left to get the <code>gcloud</code> command to SSH into the node.<br /><code>kubectl -n prod exec -it POD_NAME /bin/sh</code></td>
 </tr>
 
 <tr>
-  <td>Kill a pod. All of our pods are part of a deployment, so the deployment will spin up a replacement pod automatically</td>
+  <td>Kill a pod. All of our pods are part of a deployment, so the deployment will spin up a replacement pod automatically.</td>
   <td><code>kubectl delete --namespace=prod pod $POD_NAME</code></td>
 </tr>
 
 <tr>
-  <td>Get a PostgreSQL client on the prod database</td>
+  <td>Get a PostgreSQL client on the prod database.</td>
   <td><code>kubectl exec --namespace=prod -ti $PSQL_POD_ID -- psql -U sg</code></td>
 </tr>
 
