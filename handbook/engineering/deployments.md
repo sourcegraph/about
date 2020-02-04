@@ -101,7 +101,7 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 </tr>
 
 <tr>
-  <td>Describe the properties of a pod</td>
+  <td>Describe the properties of a pod.</td>
   <td><code>kubectl --namespace=prod describe pod $POD_NAME</code></td>
 </tr>
 
@@ -137,14 +137,14 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 </tr>
 
 <tr>
-  <td>List versions in production</td>
+  <td>List versions in production.</td>
   <td>
 	<code>kubectl -n prod get deploy -o jsonpath='{.items[*].spec.template.spec.containers[0].image} ' | tr ' ' '\n' | sort -u</code>
   </td>
 </tr>
 
 <tr>
-  <td>Get access to Jaeger locally</td>
+  <td>Get access to Jaeger locally.</td>
   <td>
 	<code>kubectl port-forward svc/jaeger-query 16686</code>
   </td>
