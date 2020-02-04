@@ -40,10 +40,10 @@ export default class BlogPostTemplate extends React.Component<any, any> {
 
         if (props.authorUrl) {
             element = (
-             <span>Written by <a href={props.authorUrl}>{props.author}</a></span>
+             <span>by <a href={props.authorUrl}>{props.author}</a></span>
             )
         } else {
-            element = <span>Written by {props.author}</span>
+            element = <span>by {props.author}</span>
         }
 
         return element
@@ -92,8 +92,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
-                                <p><this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} /><br />
-                                {publishDate}</p>
+                                <div class="blog__posts--post-byline">
+				    <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} /> on {publishDate}
+				</div>
                             </section>
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
