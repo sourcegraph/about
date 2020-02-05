@@ -4,6 +4,7 @@ The following information describes the planning and execution of a Sourcegraph 
 
 ## Webinar information
 All webinars will require the following details for planning:
+
 - Title
 - Date/Time
 - Short Description
@@ -14,6 +15,7 @@ All webinars will require the following details for planning:
 - Audience
 
 Sourcegraph uses these web applications for running a webinar:
+
 - Zoom 
   *  Manage registration landing page and attendance
   * Run and record the webinar
@@ -36,18 +38,21 @@ Sourcegraph uses these web applications for running a webinar:
 
 ### Zoom setup
 Create the webinar, configuring the following:
+
 - Set the schedule, host and details
 - Registration landing page form
 - Thanks for registering email which includes the webinar link
 
 ### Hubspot setup
 The following Hubspot emails will be created to promote the webinar:
+
 - Invitation which include the link to the Zoom registration landing page 
 - Reminder email T-3 day which includes the Zoom webinar link
 - Reminder email T-1 day which includes the Zoom webinar link
 - Reminder email T-1 hour which includes the Zoom webinar link
 
 Post webinar, Sourcegraph will send followup emails:
+
 - Attendee thank you email with link to rewatch
 - Registered but an attendee email with link to watch
 
