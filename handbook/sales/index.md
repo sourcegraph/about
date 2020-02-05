@@ -31,6 +31,20 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 Annual Recurring Revenue (ARR) is the dollar value of contracted recurring revenue in a (normalized) one-year period.
 
+### IARR
+
+Incremental [ARR](#arr) (IARR) is the change in ARR from one period to another.
+
+### New IARR
+
+New [IARR](#iarr) is IARR from *new customers* (i.e., organizations that were **not** existing customers at the beginning of the period). See also [expansion IARR](#expansion-iarr).
+
+### Expansion IARR
+
+Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations that were already customers at the beginning of the period).
+
+If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
+
 ### Customer
 
 A customer is an organization with a Sourcegraph subscription contract that has not ended.
@@ -163,8 +177,4 @@ Categorize any outbound emails into the ‘Manual Outbound Workflow’, which se
 
 Maintaining [Server Installers to Company List](https://docs.google.com/spreadsheets/d/1Y2Z23-2uAjgIEITqmR_tC368OLLbuz12dKjEl4CMINA/edit?usp=sharing) and [Server to Company List](https://docs.google.com/spreadsheets/d/1wo_KQIcGrNGCWYKa6iHJ7MImJ_aI7GN12E-T21Es8TU/edit?usp=sharing) spreadsheets for every new company on a trial and new customers.
 
-<<<<<<< HEAD
 These are used as join tables in Looker, and are important to connect instance data to a specific customer.
-=======
-These are used as join tables in Looker, and are important to connect instance data to a specific customer.  
->>>>>>> How to create a license key
