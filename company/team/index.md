@@ -189,7 +189,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer
 - San Francisco, CA, USA 🇺🇸
 - [geoffrey@sourcegraph.com](mailto:geoffrey@sourcegraph.com), [ggilmore](https://github.com/ggilmore)
-- Geoffrey is an MIT graduatate who enjoys kicking people in his spare time.
+- Geoffrey is an MIT graduate who enjoys kicking people in his spare time.
 
 ## Farhan Attamimi
 
