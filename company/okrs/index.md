@@ -4,9 +4,9 @@
 
 Our OKRs are public:
 
-- [2020-Q1 (active)](2020_q1.md)
-- [2019-Q4](2019_q4.md)
-- [2019-Q3](2019_q3.md)
+- [FY20-Q1 (active)](2020_q1.md)
+- [CY19-Q4](2019_q4.md)
+- [CY19-Q3](2019_q3.md)
 
 ## What are OKRs?
 
@@ -74,7 +74,7 @@ Each OKR has the following format:
 
 ### Sensitive information
 
-Do not include any specific financial numbers, customer names, or any other sensitive information in the public OKR document. Instead, use placeholders (such as `N` and `M` for 2 numbers or `C1` and `C2` for 2 customers) and document their meanings in the linked `OKRs YYYY-QN` Google Doc's `Key for sensitive information` section.
+Do not include any specific financial numbers, customer names, or any other sensitive information in the public OKR document. Instead, use placeholders (such as `N` and `M` for 2 numbers or `C1` and `C2` for 2 customers) and document their meanings in the linked `OKRs FYYY-QN` Google Doc's `Key for sensitive information` section.
 
 ### Changing OKRs mid-quarter
 
