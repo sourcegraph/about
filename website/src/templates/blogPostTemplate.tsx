@@ -43,7 +43,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
              <span>By <a href={props.authorUrl}>{props.author}</a></span>
             )
         } else {
-            element = <span>by {props.author}</span>
+            element = <span>By {props.author}</span>
         }
 
         return element
