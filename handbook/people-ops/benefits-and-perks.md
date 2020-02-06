@@ -12,7 +12,7 @@ We have a flexible vacation policy with mandatory annual vacation time that enco
 
 ## 🏥 Medical
 
-We offer high-quality medical and dental care for all full-time US employees and their dependents.
+We offer high-quality medical and dental care for all full-time employees and their dependents.
 
 ## 🏃 Wellness
 
