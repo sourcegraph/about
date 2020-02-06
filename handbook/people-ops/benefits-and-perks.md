@@ -12,7 +12,7 @@ We have a flexible vacation policy with mandatory annual vacation time that enco
 
 ## 🏥 Medical
 
-We offer high-quality medical and dental care for all full-time employees and their dependents.
+We offer high-quality medical and dental care for all full-time employees and their dependents. If you are a full-time contractor (this commonly how teammates outside of the US structure their relationship with Sourcegraph), then your salary will be increased instead.
 
 ## 🏃 Wellness
 
