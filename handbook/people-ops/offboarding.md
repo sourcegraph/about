@@ -12,6 +12,7 @@ These announcements will be brief and won't go into details to protect the priva
 
 ## Checklist
 
-- [] Remove the teammate from the [team page](../../company/team/index.md)
+- [] [Announce the departure](#announcing-departures).
+- [] Remove the teammate from the [team page](../../company/team/index.md).
 
 Coming soon
