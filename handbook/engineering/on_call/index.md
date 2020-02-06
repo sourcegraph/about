@@ -140,7 +140,7 @@ Open the alert UI to click on the check URL that was failing and verify it's now
 
 ### Useful dashboards
 
-[Lightstep dashboard for endpoint latency](https://app.lightstep.com/sourcegraph-prod/dashboard/gC24vW3g?range=3600)
+Check out the [kubectl cheatsheet](../deployments.md#kubectl-cheatsheet) for how to get access to Jaeger locally.
 
 ### PostgreSQL database problems
 
