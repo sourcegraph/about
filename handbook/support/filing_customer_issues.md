@@ -8,6 +8,8 @@ Customer support tickets should be translated to issues when they require a non-
 
 >Requested by $COMPANY_URL
 
+Do not use a custom markdown link for this. Link destinations are not searchable in GitHub issues—only the rendered text. Leaving the full URL visible in the text makes it possible to search a given company's HubSpot ID to find all issues related to them.
+
 Or, if multiple companies have requested the same thing:
 
 >Requested by:
