@@ -142,6 +142,12 @@ Open the alert UI to click on the check URL that was failing and verify it's now
 
 Check out the [kubectl cheatsheet](../deployments.md#kubectl-cheatsheet) for how to get access to Jaeger locally.
 
+### Access pod logs in GCP console
+
+1. Go to **Kubernetes Engine > Workloads**, then search and click on the pod you're interested, e.g. `sourcegraph-frontend`.
+2. In the **Deployment details** page, there is a row called **Logs**, which has both **Container logs** and **Audit logs**.
+3. Click on the **Container logs**, then you should be redirected to the **Logs Viewer** page.
+
 ### PostgreSQL database problems
 
 We provide two sets of instructions here, shell commands and PostgreSQL commands to be run inside a `psql` instance. PostgreSQL commands are denoted by the prompt `sg=#` in this documentation; the actual prompt corresponds to the postgres user name.
