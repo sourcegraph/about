@@ -12,7 +12,7 @@ We have a flexible vacation policy with mandatory annual vacation time that enco
 
 ## 🏥 Medical
 
-We offer high-quality medical and dental care for all full-time US employees and their dependents. If you a full-time teammate located outside of the US, your salary will be increased instead.
+We offer high-quality medical and dental care for all full-time US employees and their dependents. If you are a full-time teammate located outside of the US, your salary will be increased instead.
 
 ## 🏃 Wellness
 
