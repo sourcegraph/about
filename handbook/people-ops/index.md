@@ -10,6 +10,7 @@
 - [Onboarding](onboarding/index.md)
 - Performance reviews (coming soon)
 - [Leaving](leaving.md)
+- [Offboarding checklist](offboarding.md)
 
 ## Benefits
 - [Compensation](compensation.md)
