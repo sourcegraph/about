@@ -34,7 +34,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Product Manager
 - Redwood City, CA, USA 🇺🇸
 - [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney)
-- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and lead a small dev team at Platinum Performance. At Palantir Technologies, she lead the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science.
+- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and the lead of a small dev team at Platinum Performance. At Palantir Technologies, she led the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science.
 
 ## Stephen Gutekanst
 
