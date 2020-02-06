@@ -5,8 +5,12 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Pricing](https://about.sourcegraph.com/pricing)
 - [Common questions from prospective customers](common_customer_questions.md)
 - [Sales team onboarding](onboarding/index.md)
+<<<<<<< HEAD
 - [Sales interviews](interviews/index.md)
 - [Recording lead and customer emails, calls, and notes](records.md)
+=======
+- [Creating and maintaining license keys for customers](license_keys.md)
+>>>>>>> Update license key instructions
 
 ## Pipeline and models
 
@@ -109,10 +113,6 @@ Note that this is a stage we may add in the future to indicate we are almost at 
 ### Closed Won
 
 Deal signed!
-
-## How to create a license key
-
-Once a deal is closed won, a license key needs to be created. In order to create a license key for it is critical for the administrator to create a Sourcegraph.com account and username. Once the username is created, we will issue a license key for the customer to input into their management console in the licenseKey field.
 
 ## Segmentation
 
