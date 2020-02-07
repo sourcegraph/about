@@ -1,6 +1,6 @@
 # Filing customer issues
 
-Read [the support overview](./) before filing an issue.
+Read [the support overview](index.md) before filing an issue.
 
 ## 1. Begin to create an issue
 
