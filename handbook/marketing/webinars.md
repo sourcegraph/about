@@ -46,7 +46,7 @@ Create the webinar, configuring the following:
 ### Hubspot setup
 The following Hubspot emails will be created to promote the webinar:
 
-- Invitation which include the link to the Zoom registration landing page 
+- Invitation which includes the link to the Zoom registration landing page 
 - Reminder email T-3 day which includes the Zoom webinar link
 - Reminder email T-1 day which includes the Zoom webinar link
 - Reminder email T-1 hour which includes the Zoom webinar link
