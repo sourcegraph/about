@@ -8,7 +8,7 @@ We use [Lattice](https://lattice.com/) to conduct our 360 review cycles. It may 
 
 The 360 review process entails writing your own self review along with giving feedback to your manager, and some of the peers you’ve worked closest with. You will also receive feedback from your manager, as well as a few peers that you've selected to receive feedback from. 
 
-If you joined within the last month or so, many of the questions in the review cycle might not apply yet to you, so please answer those which you can, and write “N/A” in the box for those that don’t yet apply. 
+If you joined Sourcegraph within the last month, many of the questions in the review cycle wouldn't apply to you yet, so please answer those which you can, and write “N/A” where you can't. 
 
 Review cycles take place in February and August, they start the first week of each given month and last three weeks.
 
