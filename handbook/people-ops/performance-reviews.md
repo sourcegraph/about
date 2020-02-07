@@ -10,7 +10,7 @@ The 360 review process entails writing your own self review along with giving fe
 
 If you joined Sourcegraph within the last month, many of the questions in the review cycle wouldn't apply to you yet, so please answer those which you can, and write “N/A” where you can't. 
 
-Review cycles take place in February and August, they start the first week of each given month and last three weeks.
+Review cycles take place in February and August. They begin the first week of each of those months, and last for three weeks.
 
 
 ## 360 review cycle stages
