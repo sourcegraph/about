@@ -152,7 +152,7 @@ For consistency, all examples should use the following names (as appropriate).
 - Prefer "call site" (not "callsite")
 - Prefer "tooltips" (not "tool-tips")
 
-### Numbers
+### Currency
 
 Use shorthand suffixes for shortening numbers in the thousands ("k"), millions ("m"), billions ("b"), and above. Prefer lower case suffixes.
 
