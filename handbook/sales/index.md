@@ -5,12 +5,9 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Pricing](https://about.sourcegraph.com/pricing)
 - [Common questions from prospective customers](common_customer_questions.md)
 - [Sales team onboarding](onboarding/index.md)
-<<<<<<< HEAD
 - [Sales interviews](interviews/index.md)
 - [Recording lead and customer emails, calls, and notes](records.md)
-=======
 - [Creating and maintaining license keys for customers](license_keys.md)
->>>>>>> Update license key instructions
 
 ## Pipeline and models
 
