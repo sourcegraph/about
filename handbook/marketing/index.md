@@ -31,7 +31,7 @@ See job descriptions and responsibilities of roles on the Marketing team:
 
 A marketing qualified lead is any of:
 
-- a submission of the request-demo form
+- a submission of the request a demo, contact us, automation, or hackathon forms
 - a new Sourcegraph instance set up
 
 ### [SQL](../sales/index.md#lead) (sales-qualified lead)
