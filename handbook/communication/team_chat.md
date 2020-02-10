@@ -4,7 +4,7 @@ We use [Slack for team chat](index.md#slack). We have many Slack channels. You d
 
 If you are a new member of the engineering team, you'll most likely want to join all of the channels in the engineering section below.
 
-NOTE: All Slack messages are [deleted after 90 days](https://about.sourcegraph.com/handbook/communication#slack), as it is not a source of truth. 
+NOTE: All Slack messages are [deleted after 90 days](../communication/index.md#slack), as it is not a source of truth.
 
 ## General
 
@@ -36,7 +36,7 @@ NOTE: All Slack messages are [deleted after 90 days](https://about.sourcegraph.c
 
 ### Engineering teams
 
-- #a8n - All things automation. 
+- #a8n - All things automation.
 - #code-intel - All things code intelligence.
 - #core-services - Repository management, authentication, stability -- you name it.
 - #distribution - Everything from how Sourcegraph is packaged and delivered to customers, to ensuring it works well for them).
