@@ -24,3 +24,16 @@ See job descriptions and responsibilities of roles on the Marketing team:
 - [Developer Advocate](roles.md#developer-advocate)
 - [VP Marketing](roles.md#vp-marketing)
 - [Online Marketer](roles.md#online-marketer)
+
+## Definitions
+
+### MQL (marketing-qualified lead)
+
+A marketing qualified lead is any of:
+
+- a submission of the request-demo form
+- a new Sourcegraph instance set up
+
+### [SQL](../sales/index.md#lead) (sales-qualified lead)
+
+See "[Lead](../sales/index.md#lead)" in the sales team handbook section.
