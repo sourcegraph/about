@@ -27,12 +27,19 @@ See job descriptions and responsibilities of roles on the Marketing team:
 
 ## Definitions
 
+### Inquiry
+
+An inquiry is a person who has requested information from Sourcegraph for the first time and has provided Sourcegraph with at least an email address. This may be online via a web form, or in person, for example, at a conference. Someone may become an inquiry and a MQL at the same time, or may take years between converting from an inquiry to a MQL.
+
 ### MQL (marketing-qualified lead)
 
 A marketing qualified lead is any of:
 
-- a submission of the request a demo, contact us, automation, or hackathon forms
-- a new Sourcegraph instance set up
+- A person who fills out a demo request form
+- A person who fills out a free trial form
+- A person who fills out and form requesting to speak with a Sourcegraph representative
+- A person who sets up a new Sourcegraph instance
+
 
 ### [SQL](../sales/index.md#lead) (sales-qualified lead)
 
