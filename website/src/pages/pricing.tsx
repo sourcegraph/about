@@ -111,7 +111,8 @@ export default ((props: any) => (
                                 className="pricing__plan"
                                 name="Elite"
                                 description="Transforming the software lifecycle with automation."
-                                price="$149"
+                                price="Elite"
+                                priceInterval=""
                                 features={[
                                     { name: 'Private Sourcegraph extension registry', id: 'admin' },
                                     { name: '24/7 uptime support', id: 'support' },
