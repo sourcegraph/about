@@ -187,11 +187,11 @@ a short list that gives just a taste of some patterns you can try out:
 
 </div>
 
-**Go**. Find `if` branches that contain the same body
+**Go**. Find `.type(...)` switches that contain a `nil:` case
 
 <div style="padding-left: 2rem">
 
-🔎 [{ :[z] } else if :[y] { :[z] }](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24++%27%7B:%5Bz%5D%7D+else+if+:%5By%5D+%7B:%5Bz%5D%7D%27+count:1000&patternType=structural)
+🔎 [switch :[[v]] := :[x].(type) {:[_] case nil: :[_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24+%27switch+:%5B%5Bv%5D%5D+:%3D+:%5Bx%5D.%28type%29+%7B:%5B_%5D+case+nil:+:%5B_%5D%7D%27+lang:go+&patternType=structural)
 
 </div>
 
