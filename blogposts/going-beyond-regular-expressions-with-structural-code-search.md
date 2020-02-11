@@ -71,7 +71,7 @@ live:
 
 <div style="padding-left: 2rem">
 
-🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bargs%5D%29%22+lang:c+&patternType=structural)
+🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bargs%5D%29%22&patternType=structural)
 
 </div>
 
@@ -159,7 +159,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [try {:[try\_body]} catch (:[\_]) { } finally {:[finally\_body]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24++%27try+%7B:%5Btry_body%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5Bfinally_body%5D%7D%27+lang:java&patternType=structural)
+🔎 [try {:[try\_body]} catch (:[\_]) { } finally {:[finally\_body]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24++%22try+%7B:%5Btry_body%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5Bfinally_body%5D%7D%22+lang:java&patternType=structural)
 
 </div>
 
@@ -175,7 +175,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29.next%28%29%27+count:1000&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29+.next%28%29%27&patternType=structural) (the latter matches across newlines)
+🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29.next%28%29%27&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29+.next%28%29%27&patternType=structural) (the latter matches across newlines)
 
 </div>
 
@@ -183,7 +183,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo%3A%5Egithub%5C.com%2Fwithspectrum%2Fspectrum%24++%27%3A%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+%3A%5Bfn%5D%28%29%7D%27++count%3A1000&patternType=structural)
+🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/withspectrum/spectrum%24++%27:%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+:%5Bfn%5D%28%29%7D%27&patternType=structural)
 
 </div>
 
@@ -199,7 +199,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [Image.asset(:[\_] width: 100,:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%27Image.asset%28:%5B_%5D+width:+100%2C:%5B_%5D%29%27+lang:dart&patternType=structural)
+🔎 [Image.asset(:[\_] width: 100, :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%22Image.asset%28:%5B_%5D+width:+100%2C+:%5B_%5D%29%22+lang:dart&patternType=structural)
 
 </div>
 
@@ -254,7 +254,7 @@ prioritize our engineering to deliver them sooner!_
 - **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8166).
 
 That's it for this blog post. You'll find some additional resources and
-discussion if you're interested.  Happy searching!
+discussion below if you're interested in more reading. Happy searching!
 
 ---
 
