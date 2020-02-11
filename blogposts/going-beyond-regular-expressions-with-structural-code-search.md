@@ -1,16 +1,16 @@
 ---
-title: Structural code search. At scale and from your browser.
+title: Going beyond regular expressions with structural code search
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
 publishDate: 2020-01-24T10:00-07:00
 tags: [blog]
-slug: structural-code-search-at-scale-from-your-browser
-heroImage: https://TODO
+slug: going-beyond-regular-expressions-with-structural-code-search
+heroImage: /blog/structural-search-hero.png
 published: true
 ---
 
-We're introducing a richer way to search code at Sourcegraph with structural
-code search. And we're making it available at scale.
+We're introducing a new way to search code at Sourcegraph with structural
+code search.
 
 ## What _is_ structural code search?
 
@@ -36,7 +36,7 @@ In practice we use _parsing_ to interpret and convert syntax for nested
 expressions like `{...}` into trees, which encode richer structural properties
 than the textual representation.
 
-![Nested expressions figure](images/nested-expressions.png) Figure 1: Nested
+![Nested expressions figure](images/structural-search-nested-expressions.png) Figure 1: Nested
 expressions can expand inside code blocks. Parsing converts nested expressions
 into tree data structures.
 
@@ -64,7 +64,10 @@ open source software?
 
 One important function is `copy_from_user`, which copies content from userspace
 memory into the kernelspace memory. This function has a history of [careful
-auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf) because incorrect uses can (and have) lead to vulnerabilities. We can find all `copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it live:
+auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf)
+because incorrect uses can (and have) lead to vulnerabilities. We can find all
+`copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it
+live:
 
 <div style="padding-left: 2rem">
 
@@ -77,8 +80,8 @@ balanced parentheses. The `args` part is just a descriptive identifier. We
 support [Comby syntax](https://comby.dev/#match-syntax), which is currently the
 underlying engine behind structural search. You can find out more about the
 match syntax in our [usage
-docs](https://docs.sourcegraph.com/user/search/structural), but for now it's enough
-to just follow along this blog post!
+docs](https://docs.sourcegraph.com/user/search/structural), but for now it's
+enough to just follow along this blog post!
 
 Of course, we _could_ have run a simpler regex search for the prefix with
 something like
@@ -109,16 +112,15 @@ above, using subtraction and `sizeof`:
 
 </div>
 
-This query breaks up the original `:[args]` hole into holes for the
-destination buffer `dst`, source buffer `src`, and the calculation for the
-memory size. The `:[_]` syntax is just a hole that we don't particularly care
-to name. This query finds just a handful of results, so this is a rather uncommon
-pattern in the code base!
+This query breaks up the original `:[args]` hole into holes for the destination
+buffer `dst`, source buffer `src`, and the calculation for the memory size. The
+`:[_]` syntax is just a hole that we don't particularly care to name. This
+query finds just a handful of results, so this is a rather uncommon pattern in
+the code base!
 
-Structural search can also identify patterns to clean up. For example, one [clean
-up patch](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e) in the kernel looks like this:
+Structural search can also identify patterns to clean up. For example, one [cleanup patch](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e) in the kernel looks like this:
 
-![Linux clean up patch](images/linux-cleanup-patch.png)
+![Linux clean up patch](images/structural-search-linux-cleanup-patch.png)
 
 Here's a query to easily find more of these patterns:
 
@@ -134,7 +136,8 @@ any identifier, except for `:[_]`, which is just a placeholder. The whitespace
 between the calls is interpreted to possibly include newlines, so there's no
 issue matching these calls across newlines.
 
-Do note that structural search is purely syntactic, so there are some matches that cannot cleaned up:
+Do note that structural search is purely syntactic, so there are some matches
+that cannot cleaned up:
 
 ```c
 	if (!list_empty(&page->lru))
@@ -245,12 +248,13 @@ prioritize our engineering to deliver them sooner!_
 - **Regular expression support in structural holes.** We want to add support for
   regexp syntax inside holes for refine search, like `\d+` to match only
   numerical digits. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8165)
-- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8166).
 - **Make it faster.** Structural search is typically slower than our regexp
   search because it does more work. If you find it valuable, we
   want to make it faster. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8167)
+- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8166).
 
-Happy searching!
+That's it for this blog post. You'll find some additional resources and
+discussion if you're interested.  Happy searching!
 
 ---
 
