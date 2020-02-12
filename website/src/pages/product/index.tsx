@@ -31,10 +31,17 @@ export default ((props: any) => {
         </div>
     )
     return (
-        <Layout location={props.location}>
+        <Layout location={props.location}
+            meta={{
+                title:
+                    'Sourcegraph Universal Code Search',
+                description:
+                    'Ship better software faster with Sourcegraph Universal Code Search with enhanced code search, review, and alerts & automation.'
+                }}
+            >
             <ContentPage
-                title="The new standard developer platform"
-                description="Ship better software faster with Sourcegraph, the developer platform with enhanced code search, review, and alerts & automation."
+                title="Universal Code Search"
+                description="Ship better software faster with Sourcegraph Universal Code Search with enhanced code search, review, and alerts & automation."
                 mainActions={actions}
             >
                 <PageSectionLinks
