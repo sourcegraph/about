@@ -23,8 +23,8 @@ You will be asked the following questions:
   - What specific product or engineering decisions will be made by having this data?
   - Will this data be needed from every single installation, or only from a select few? Will it be needed forever, or only for a short time?
   - Have you considered alternatives? E.g., collecting this data from Sourcegraph.com, or adding a report for admins that we can request from some number of friendly customers?
-1. When the RFC is approved, use the [life of a ping documentation](https://docs.sourcegraph.com/dev/architecture/life-of-a-ping) to implement the change. At least one member of the Business Operations team must approve the resulting PR before it can be merged.
+2. When the RFC is approved, use the [life of a ping documentation](https://docs.sourcegraph.com/dev/architecture/life-of-a-ping) to implement the change. At least one member of the Business Operations team must approve the resulting PR before it can be merged.
   - Ensure a CHANGELOG entry is added, and that the two sources of truth for ping data are updated along with your PR:
     - Pings documentation: https://docs.sourcegraph.com/admin/pings
     - The Site-admin > Pings page, e.g.: https://sourcegraph.com/site-admin/pings
-1. Request help from the Business Operations team to add the new field(s) to BigQuery and Looker. 
+3. Request help from the Business Operations team to add the new field(s) to BigQuery and Looker. 
