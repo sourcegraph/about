@@ -16,7 +16,7 @@ All webinars will require the following details for planning:
 
 Sourcegraph uses these web applications for running a webinar:
 
-- Zoom 
+- Zoom:
   *  Manage registration landing page and attendance
   * Run and record the webinar
 - Hubspot
