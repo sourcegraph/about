@@ -11,7 +11,7 @@ import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegra
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
-            title="What is a Universal Code Search?"
+            title="What is Universal Code Search?"
         >
             <ContentSection color="white" className="pt-6 pb-5">
             <div className="row justify-content-md-center">
