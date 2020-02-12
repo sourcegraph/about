@@ -23,7 +23,7 @@ export default class CookiesPage extends React.Component<any, any> {
             <Layout location={this.props.location}
                 meta={{
                     title:
-                        'Sourcegraph Cookie Policy',
+                        'Sourcegraph cookie policy',
                     description:
                         'About.sourcegraph.com uses cookies.'
                  }}
