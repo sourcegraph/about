@@ -3,6 +3,7 @@
 The following information describes the planning and execution of a Sourcegraph webinar. 
 
 ## Webinar information
+
 All webinars will require the following details for planning:
 
 - Title
