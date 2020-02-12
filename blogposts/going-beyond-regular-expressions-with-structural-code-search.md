@@ -9,8 +9,9 @@ heroImage: /blog/structural-search-hero.png
 published: true
 ---
 
-We're introducing a new way to search code at Sourcegraph with structural
-code search.
+We're introducing a new way to search code at Sourcegraph with structural code
+search. Structural code search lets you match nested expressions and whole code
+blocks that can be difficult or awkward to match using regular expressions.
 
 ## What _is_ structural code search?
 
@@ -67,7 +68,7 @@ memory into the kernelspace memory. This function has a history of [careful
 auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf)
 because incorrect uses can (and have) lead to vulnerabilities. We can find all
 `copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it
-live:
+live (the <img src="images/brackets.png"> button toggles structural search):
 
 <div style="padding-left: 2rem">
 
