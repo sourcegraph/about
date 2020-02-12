@@ -56,7 +56,7 @@ The following Hubspot emails will be created to promote the webinar:
 Post webinar, Sourcegraph will send followup emails:
 
 - Attendee thank you email with link to rewatch
-- Registered but an attendee email with link to watch
+- Registered, but non-attendee email with link to watch
 
 ### Hubspot webinar nomenclature
 
