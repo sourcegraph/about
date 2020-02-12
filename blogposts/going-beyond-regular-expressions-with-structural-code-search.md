@@ -108,7 +108,7 @@ above, using subtraction and `sizeof`:
 <div style="padding-left: 2rem">
 
 🔎 [copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
-:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22+lang:c+count:1000&patternType=structural)
+:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22&patternType=structural)
 
 </div>
 
@@ -126,7 +126,7 @@ Here's a query to easily find more of these patterns:
 
 <div style="padding-left: 2rem">
 
-🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27+count:2000&patternType=structural)
+🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27&patternType=structural)
 
 </div>
 
@@ -159,7 +159,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [try {:[try\_body]} catch (:[\_]) { } finally {:[finally\_body]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24++%22try+%7B:%5Btry_body%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5Bfinally_body%5D%7D%22+lang:java&patternType=structural)
+🔎 [try {:[\_]} catch (:[\_]) { } finally {:[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24++%22try+%7B:%5B_%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5B_%5D%7D%22+lang:java&patternType=structural)
 
 </div>
 
@@ -191,7 +191,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [switch :[[v]] := :[x].(type) {:[_] case nil: :[_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24+%27switch+:%5B%5Bv%5D%5D+:%3D+:%5Bx%5D.%28type%29+%7B:%5B_%5D+case+nil:+:%5B_%5D%7D%27+lang:go+&patternType=structural)
+🔎 [switch :[[v]] := :[x].(type) {:[\_] case nil: :[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24+%27switch+:%5B%5Bv%5D%5D+:%3D+:%5Bx%5D.%28type%29+%7B:%5B_%5D+case+nil:+:%5B_%5D%7D%27+lang:go+&patternType=structural)
 
 </div>
 
@@ -254,7 +254,7 @@ prioritize our engineering to deliver them sooner!_
 - **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8166).
 
 That's it for this blog post. You'll find some additional resources and
-discussion below if you're interested in more reading. Happy searching!
+discussion below if you're interested in reading more. Happy searching!
 
 ---
 
@@ -278,6 +278,8 @@ At Sourcegraph we're continually looking to improve developer tools, and to
 integrate richer search functionality. If you find these tools or others
 valuable, share your thoughts with us at <feedback@sourcegraph.com>.
 
+---
+
 ## Structural search vs. more traditional text search
 
 Here are some key differences and comparisons to regexp-based text search:
@@ -296,12 +298,14 @@ Here are some key differences and comparisons to regexp-based text search:
   dangling delimiters).
 
 - Built-in equality constraints when using the same identifier in patterns like
-  `foo(:[x], :[x])`. This issimilar to, e.g., backreferences in regular
+  `foo(:[x], :[x])`. This is similar to, e.g., backreferences in regular
   expressions.
 
 - No explicit support for matching regexp character classes like `\d+` yet (see planned improvements).
 
 For a complete overview, refer to [comby.dev](https://comby.dev).
+
+---
 
 ## Feedback
 
