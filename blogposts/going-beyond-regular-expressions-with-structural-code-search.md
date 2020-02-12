@@ -68,7 +68,7 @@ memory into the kernelspace memory. This function has a history of [careful
 auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf)
 because incorrect uses can (and have) lead to vulnerabilities. We can find all
 `copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it
-live (the <img src="images/brackets.png"> button toggles structural search):
+live (the <svg class="mdi-icon " width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> button toggles structural search):
 
 <div style="padding-left: 2rem">
 
