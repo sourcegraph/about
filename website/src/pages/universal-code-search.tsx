@@ -9,7 +9,14 @@ import { CustomerLogosSection } from '../components/product/CustomerLogosSection
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 
 export default ((props: any) => (
-    <Layout location={props.location}>
+    <Layout location={props.location}
+        meta={{
+            title:
+                'What is Universal Code Search',
+            description:
+                'Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems.'
+            }}
+    >
         <ContentPage
             title="What is Universal Code Search?"
         >
@@ -131,7 +138,7 @@ export default ((props: any) => (
                     Google, Facebook, Uber, Lyft, Yelp, and other world-class companies rely on Universal Code Search
                     (not just a code host) to ship software.
                 </p>
-                <div className="row mt-6">
+                <div className="row mt-5">
                     <div className="col-md-6 col-lg-4 mb-3 pr-5">
                         <h4>Google CodeSearch</h4>
                         <h5><em>internal-only tool</em></h5>
@@ -259,7 +266,7 @@ export default ((props: any) => (
             </div>
             <ContentSection color="white" className="pt-4 pb-6 border-top border-gray">
                 <h2 className="text-center my-5">
-                    Sourcegraph provides Universal Code Searchprovides  for <em>every</em> company.
+                    Sourcegraph provides Universal Code Search for <em>every</em> company.
                 </h2>
                 <div className="border border-gray rounded w-75 mx-auto py-4">
                     <CustomerLogosSection />

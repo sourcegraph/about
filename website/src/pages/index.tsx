@@ -124,12 +124,19 @@ const testimonials: Testimonial[] = [
 ]
 
 export default ((props: any) => (
-    <Layout location={props.location}>
+    <Layout location={props.location}
+        meta={{
+            title:
+                'Sourcegraph',
+            description:
+                'Start shipping better software faster with Universal Code Search.'
+            }}
+    >
         <div className="home">
             <div className="home__intro container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8 mb-6 mb-lg-0">
-                        <h1 className="home__intro-header display-3">The new standard developer platform</h1>
+                        <h1 className="home__intro-header display-3">Universal Code Search</h1>
                         <p className="home__intro-text mt-3 font-weight-light">
                             Google &amp; Facebook invested $100Ms to build internal developer&nbsp;platforms for{' '}
                             <Link
@@ -153,7 +160,7 @@ export default ((props: any) => (
                                 style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                             />{' '}
-                            <strong>Sourcegraph</strong> provides this standard developer&nbsp;platform to help every
+                            <strong>Sourcegraph</strong> provides Universal Code Search to help every
                             elite&nbsp;development team ship better software faster.
                         </p>
                         <RequestDemoAction className="mt-5" />
@@ -206,7 +213,7 @@ export default ((props: any) => (
                 color="purple"
                 className="py-6 mb-0"
                 title="Get Sourcegraph now"
-                description="Start shipping better software faster with the new standard developer platform."
+                description="Start shipping better software faster with Universal Code Search."
                 logomark={false}
             >
                 <GetSourcegraphNowActions />
