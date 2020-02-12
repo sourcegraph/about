@@ -196,6 +196,14 @@ a short list that gives just a taste of some patterns you can try out:
 
 </div>
 
+**Clojure**. Find `cond` expressions with an `:else nil` branch at the end
+
+<div style="padding-left: 2rem">
+
+🔎 [(cond :[\_] :else nil)](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/LightTable/LightTable%24+%22%28cond+:%5B_%5D+:else+nil%29%22+lang:clojure&patternType=structural)
+
+</div>
+
 **Dart**. Find `Image.asset` constructors in the Flutter API where width is initialized to `100`
 
 <div style="padding-left: 2rem">
