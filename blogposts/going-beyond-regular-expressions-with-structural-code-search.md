@@ -2,7 +2,7 @@
 title: Going beyond regular expressions with structural code search
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
-publishDate: 2020-02-12T10:00-07:00
+publishDate: 2020-02-12T13:00-07:00
 tags: [blog]
 slug: going-beyond-regular-expressions-with-structural-code-search
 heroImage: /blog/structural-search-hero.png
@@ -29,8 +29,8 @@ for var in expression {
 
 The `code` block can contain nested `for` loops, `if` statements, and so on. To
 match all of the `code` block contents for these expressions, and search for
-patterns inside them, our search engine must understand that `code` exists
-inside balanced braces `{ ... }`. Regular expressions can go a long way to
+patterns inside them, a search engine must understand that `code` exists
+inside the _balanced_ braces `{ ... }`. Regular expressions can go a long way to
 match such syntactic structures but they are [not
 ideal](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags).
 In practice we use _parsing_ to interpret and convert syntax for nested
@@ -42,7 +42,7 @@ expressions can expand inside code blocks. Parsing converts nested expressions
 into tree data structures.
 
 Most code search today is not based on true parsing or tree data structures.
-Instead, we use literal strings or regular expressions, which is "good enough"
+Instead, we use literal strings or regular expressions which is good enough
 for many kinds of searches. But these methods make it tricky to match precisely
 on blocks or expressions that can expand inside statements like the loop
 in Figure 1. We could more easily and precisely search for richer syntactic
@@ -50,7 +50,7 @@ patterns if today's search tools _also_ treated code as syntax trees, and
 that's the key idea behind structural search.
 
 Many neat developer and compiler tools already exist for querying or
-matching tree structures (see [additional resources](#additional-resources)
+matching tree structures (see [#additional resources](#additional-resources)
 at the end of this post!). But none are available at your fingertips, just
 seconds away from running on some of today's largest and most popular
 codebases. That is why we are happy to announce that Sourcegraph now supports a
@@ -68,7 +68,7 @@ memory into the kernelspace memory. This function has a history of [careful
 auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf)
 because incorrect uses can (and have) lead to vulnerabilities. We can find all
 `copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it
-live (the <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> button activates structural search):
+live (the <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> toggle means structural search is active):
 
 <div style="padding-left: 2rem">
 
@@ -78,7 +78,7 @@ live (the <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius:
 
 The `:[args]` syntax is a structural hole that matches all text between
 balanced parentheses. The `args` part is just a descriptive identifier. We
-support [Comby syntax](https://comby.dev/#match-syntax), which is currently the
+support [comby syntax](https://comby.dev/#match-syntax), which is currently the
 underlying engine behind structural search. You can find out more about the
 match syntax in our [usage
 docs](https://docs.sourcegraph.com/user/search/structural), but for now it's
@@ -90,7 +90,7 @@ something like
 and get results more quickly, and sometimes that's the right thing to do.
 
 But in other cases we can do more interesting things with structural search
-that becomes awkward otherwise. For example, one result for the above query
+that become awkward otherwise. For example, one result for the above query
 is:
 
 ```c
@@ -103,7 +103,7 @@ across multiple lines just like code structures can. An interesting thing about
 the call above is that it calculates the size of memory using `sizeof(...) -
 ...`.  Calculating and checking the size of memory to copy can be more
 error-prone than simple or static values. So, one thing we could check is
-whether other calls that calculate the size of memory in a similar way to the
+whether there are other calls that calculate the size of memory in a similar way to the
 above, using subtraction and `sizeof`:
 
 <div style="padding-left: 2rem">
@@ -224,10 +224,10 @@ the cache for you.
 
 - See our [usage
   documentation](https://docs.sourcegraph.com/user/search/structural) for more
-  help and the [Comby FAQ](https://comby.dev/#faq) for more details and known
+  help and the [comby FAQ](https://comby.dev/#faq) for more details and known
   limitations of the matching engine.
 
-**A note on regular expressions: How is structural search different?*
+**A quick note on regular expressions: How is structural search different?*
 
 Structural search is not a replacement for regexp search. It's another tool in
 your toolkit that works well for matching blocks of code or expressions, and
@@ -235,7 +235,7 @@ simplifies catching buggy syntactic patterns. If you only want to find a simple
 string or pattern, consider using Sourcegraph's literal or regexp
 [search](https://sourcegraph.com/search), because these queries are typically
 much faster! For a more detailed breakdown, see the short comparison at the [end
-of this post](#comparing-structural-search-to-more-traditional-text-search).
+of this post](#structural-search-vs-more-traditional-text-search).
 
 ## What's next for structural search?
 
@@ -259,7 +259,7 @@ discussion below if you're interested in reading more. Happy searching!
 
 ---
 
-## Additional resources
+### Additional resources
 
 There is an immense amount of existing parsing and query tools for syntax
 trees. Most compilers today offer a library or visitor framework, and linters
@@ -273,7 +273,7 @@ that you may be familiar with or find interesting:
 - `tree-sitter`, parsing and query framework (multiple languages) [[1](https://github.com/tree-sitter/tree-sitter)]
 - `gogrep` for declaratively matching Go syntax trees [[1](https://github.com/mvdan/gogrep)]
 - `Spoofax`, AST querying using the Spoofax Language Workbench (multiple languages) [[1](http://www.metaborg.org/en/latest/source/langdev/meta/lang/flowspec/stratego-api.html#querying-analysis)]
-- CodeQL, querying tree and graph properties for a number of poular languages [[1](https://securitylab.github.com/tools/codeql)]
+- `CodeQL`, querying tree and graph properties for a number of poular languages [[1](https://securitylab.github.com/tools/codeql)]
 
 At Sourcegraph we're continually looking to improve developer tools, and to
 integrate richer search functionality. If you find these tools or others
@@ -281,7 +281,7 @@ valuable, share your thoughts with us at <feedback@sourcegraph.com>.
 
 ---
 
-## Structural search vs. more traditional text search
+### Structural search vs. more traditional text search
 
 Here are some key differences and comparisons to regexp-based text search:
 
