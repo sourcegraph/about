@@ -55,10 +55,10 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li className="header__nav-item nav-item d-none d-lg-block" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
-                                                to="/developer-platform"
+                                                to="/universal-code-search"
                                                 activeClassName="header__nav-link-active"
                                             >
-                                                What is a developer platform?
+                                                What is Universal Code Search?
                                             </Link>
                                         </li>
                                         <li
