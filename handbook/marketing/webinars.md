@@ -37,6 +37,7 @@ Sourcegraph uses these web applications for running a webinar:
  Post webinar | Send out thank you emails with link to recorded webinar 
 
 ### Zoom setup
+
 Create the webinar, configuring the following:
 
 - Set the schedule, host and details
