@@ -44,6 +44,7 @@ Create the webinar, configuring the following:
 - Thanks for registering email which includes the webinar link
 
 ### Hubspot setup
+
 The following Hubspot emails will be created to promote the webinar:
 
 - Invitation which includes the link to the Zoom registration landing page 
