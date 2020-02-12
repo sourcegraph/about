@@ -2,7 +2,7 @@
 title: Going beyond regular expressions with structural code search
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
-publishDate: 2020-02-12T13:00-07:00
+publishDate: 2020-02-12T14:00-07:00
 tags: [blog]
 slug: going-beyond-regular-expressions-with-structural-code-search
 heroImage: /blog/structural-search-hero.png
@@ -50,7 +50,7 @@ patterns if today's search tools _also_ treated code as syntax trees, and
 that's the key idea behind structural search.
 
 Many neat developer and compiler tools already exist for querying or
-matching tree structures (see [#additional resources](#additional-resources)
+matching tree structures (see [additional resources](#additional-resources)
 at the end of this post!). But none are available at your fingertips, just
 seconds away from running on some of today's largest and most popular
 codebases. That is why we are happy to announce that Sourcegraph now supports a
