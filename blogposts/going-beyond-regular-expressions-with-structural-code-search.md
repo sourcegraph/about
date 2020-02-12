@@ -2,7 +2,7 @@
 title: Going beyond regular expressions with structural code search
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
-publishDate: 2020-01-24T10:00-07:00
+publishDate: 2020-02-12T10:00-07:00
 tags: [blog]
 slug: going-beyond-regular-expressions-with-structural-code-search
 heroImage: /blog/structural-search-hero.png
