@@ -23,6 +23,8 @@ Welcome to Sourcegraph! As a member of the sales team, you represent us and our 
   - [General onboarding steps](../../people-ops/onboarding/index.md#for-all-new-teammates)
   - [Sourcegraph handbook](../../index.md) intro
   - GitHub account setup and tutorial
+  - HubSpot account setup
+    - Ensure emails are logged in HubSpot
 - [CEO](../../ceo/index.md)
   - Vision
   - [Values](../../../company/values.md)
