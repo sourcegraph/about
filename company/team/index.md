@@ -212,4 +212,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [kevin.zheng@sourcegraph.com](mailto:kevin.zheng@sourcegraph.com), [kzh](https://github.com/kzh)
 - Kevin enjoys tinkering with his `.dotfiles` and traversing ASTs. His passion for CS started early with his stints in the Minecraft modding scene and gradually transitioned into robotics during high school. He is on an indefinite hiatus from his BS CS studies at Rutgers University New Brunswick.
 
+## Kai Passo
+
+- Account Executive
+- Atlanta, GA, USA 🇺🇸
+- [kai@sourcegraph.com](mailto:kai@sourcegraph.com), [kpsource](https://github.com/kpsource)
+- Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.   
 <!-- Paste *your* section above this line! -->
