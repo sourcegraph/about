@@ -37,7 +37,7 @@ export default ((props: any) => {
     return (
         <Layout location={props.location} minimal={true}>
             <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
-            <div className="bg-white text-dark">
+            <div className="landing-page bg-white text-dark">
                 <div className="container-lg py-6 px-5">
                     <div className="row flex-wrap-reverse">
                         <div className="col-md-12"> 
@@ -60,9 +60,9 @@ export default ((props: any) => {
                                 <li>why engineering leaders need code search and intelligence for their teams</li>
                             </ul>
                         </div>
-                        <div className="col-md-4" class="justify-content-center">
-                            <img src="https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/sourcegraph-universal-code-search-ebook-cover_300w.jpg" alt="Download: Universal Code Search and Intelligence" />
-                        </div>                  
+                        <div className="col-md-4">
+                            <img src="/external-logos/sourcegraph-universal-code-search-ebook-v1.svg" alt="Download: Universal Code Search and Intelligence" className="landing-page__img" />
+                        </div>                 
                         <div className="col-md-4">
                             <h3 className="font-weight-light text-sans-serif">Get your free ebook.</h3>
                             <div className="form mt-5">
