@@ -6,13 +6,15 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Common questions from prospective customers](common_customer_questions.md)
 - [Sales team onboarding](onboarding/index.md)
 - [Sales interviews](interviews/index.md)
+- [Recording lead and customer emails, calls, and notes](records.md)
+- [Creating and maintaining license keys for customers](license_keys.md)
 
 ## Pipeline and models
 
 - [All deals (HubSpot)](https://app.hubspot.com/contacts/2762526/deals/board/view/all/)
-   - [Phu's pipeline SOTU](https://docs.google.com/spreadsheets/d/1cI-uwtftjes3Im4k63oLTZiPK5c2OPO18vvND6iGESw/edit#gid=0)
-- [2019-Q4 model](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=665660264) showing forecast of net new ARR based on closed-won deals and probability-weighted active deals
-- [2020 model](https://docs.google.com/spreadsheets/d/1iyGwOocgVKfeKsXHCVM7eKBSx7PWSURnZVgaoQnimgY/edit)
+- [Deals sheet](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=0)
+- [FY20-Q1 forecast](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=1656440710)
+- [FY20 plan](https://docs.google.com/spreadsheets/d/1hOd5OSLv7_e-OHR-CwB478gycc1ioAMKximH9sH8oF4/edit#gid=1071026049)
 
 ## How sales works with other Sourcegraph teams
 
@@ -26,6 +28,20 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 Annual Recurring Revenue (ARR) is the dollar value of contracted recurring revenue in a (normalized) one-year period.
 
+### IARR
+
+Incremental [ARR](#arr) (IARR) is the change in ARR from one period to another.
+
+### New IARR
+
+New [IARR](#iarr) is IARR from *new customers* (i.e., organizations that were **not** existing customers at the beginning of the period). See also [expansion IARR](#expansion-iarr).
+
+### Expansion IARR
+
+Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations that were already customers at the beginning of the period).
+
+If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
+
 ### Customer
 
 A customer is an organization with a Sourcegraph subscription contract that has not ended.
@@ -36,6 +52,8 @@ A customer is an organization with a Sourcegraph subscription contract that has 
 1. If an organization's contract will start in the future, they are still considered a customer. (This can happen when we agree to have a contract start on the next 1st of the month because that makes life easier for a customer, for example.)
 
 ## Stages
+
+See also the [MQL (marketing-qualified lead) definition](../marketing/index.md#mql).
 
 ### Prospect
 
@@ -56,14 +74,14 @@ The **Prospect** stage is for leads where **ALL** of the following are true:
 
 > ~10% probability of winning
 
-The **Lead** stage is for leads where **ALL** of the following are true:
+The **Lead** stage is for leads that are sales qualified (i.e., SQLs), which means **ALL** of the following are true:
 
 1. After vetting/qualifying, we have sufficient info to believe they may fit our criteria to be a customer, and Sales should continue to pursue.
    - Note that Sales is responsible for reviewing the prospects that come through our automated channels. If there are prospects you connect with yourself and believe they are a lead, please send an email to intro the contact to Sales.
 1. The potential deal size >= $22,800 ARR
    - Take their total # of developers company-wide and multiply it by $19, and then multiply it by 12 months
    - Rationale for the $19 is because it’s the lower number of our 2 pricing models and allows for a conservative ARR estimate, accounting for the customer potentially opting for the discounted plan
-      - As a rule of thumb, this equates to 100 developers in their company!
+      - As a rule of thumb, this equates to 100 developers in their company
       - As we wouldn’t yet have their exact developer figure at this point, we must take the best guess with the info provided online (LinkedIn), or from conversations with a Prospect
       - If they don’t meet this criteria, we could discuss internally on whether Sourcegraph would benefit from having this company as a customer (e.g., reputable logo, we want to support a non-profit org’s mission, we can partner with them in multiple ways, etc.).
 1. We *have* reached out to them requesting a call/meeting to introduce Sourcegraph’s offering, but the call/meeting has *not* occurred yet (i.e. it is still upcoming on the calendar, or they have not yet responded with agreement for the call/meeting).
@@ -119,25 +137,25 @@ Different customers and deals have different needs from our sales team. We segme
 
 ## Using HubSpot
 
-This page describes how we use HubSpot to maintain high data quality. This allows us to increase the effectiveness of all Sourcegraph teams through accurate insights. 
+This page describes how we use HubSpot to maintain high data quality. This allows us to increase the effectiveness of all Sourcegraph teams through accurate insights.
 
-Account Executives are responisble for maintaining HubSpot as a [source of truth](https://about.sourcegraph.com/handbook/communication#sources-of-truth). The data is synced between HubSpot and Looker every weekend so this data must be updated (at least) by end of day Friday. 
+Account Executives are responisble for maintaining HubSpot as a [source of truth](https://about.sourcegraph.com/handbook/communication#sources-of-truth). The data is synced between HubSpot and Looker every weekend so this data must be updated (at least) by end of day Friday.
 
 ### Associating contacts to deals
 
-It is critical to associate all of the most important contacts within a company with any new deal. This should include the technical decision-maker, the economic decision-maker (if they are different) and the original member who introduced Sourcegraph to the organization. 
+It is critical to associate all of the most important contacts within a company with any new deal. This should include the technical decision-maker, the economic decision-maker (if they are different) and the original member who introduced Sourcegraph to the organization.
 
 This ensures that all deal-related communication is visible within the deal timeline for teammates to quickly get context surrounding the deal. This also allows us to evaluate the effectiveness of marketing channels and sales touchpoints that our team has with an organization. How we reached the person(s) who introduced Sourcegraph to their organization is one of the most important factors in evaluating the success of marketing activities.
 
 ### Maintaining up-to-date information on deals
 
-Please keep the following information updated for deals. These are the the most important deal fields for weekly reviews and tracking, but the more fields that have up-to-date information, the better.  
+Please keep the following information updated for deals. These are the the most important deal fields for weekly reviews and tracking, but the more fields that have up-to-date information, the better.
 
 * Deal stage
 * Deal size
 * Number of engineers
 
-If a deal comes through a referral or introduction, tell [BizOps](../bizops/index.md) so an adjustment can be made in the database to reflect this. 
+If a deal comes through a referral or introduction, tell [BizOps](../bizops/index.md) so an adjustment can be made in the database to reflect this.
 
 ### When a deal is won
 1. Mark the ‘Deal Status’ as ‘Closed Won’
@@ -145,7 +163,7 @@ If a deal comes through a referral or introduction, tell [BizOps](../bizops/inde
 
 ### When a deal is lost
 1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../bizops/index.md) about adding one
-1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](https://about.sourcegraph.com/company/okrs/2019_q4) to identify the top 3 reasons potential customers don't sign. 
+1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](https://about.sourcegraph.com/company/okrs/2019_q4) to identify the top 3 reasons potential customers don't sign.
 
 ### Recording outbound activity
 
@@ -156,6 +174,6 @@ Categorize any outbound emails into the ‘Manual Outbound Workflow’, which se
 
 ### Maintaining customer spreadsheets
 
-Maintaining [Server Installers to Company List](https://docs.google.com/spreadsheets/d/1Y2Z23-2uAjgIEITqmR_tC368OLLbuz12dKjEl4CMINA/edit?usp=sharing) and [Server to Company List](https://docs.google.com/spreadsheets/d/1wo_KQIcGrNGCWYKa6iHJ7MImJ_aI7GN12E-T21Es8TU/edit?usp=sharing) spreadsheets for every new company on a trial and new customers. 
+Maintaining [Server Installers to Company List](https://docs.google.com/spreadsheets/d/1Y2Z23-2uAjgIEITqmR_tC368OLLbuz12dKjEl4CMINA/edit?usp=sharing) and [Server to Company List](https://docs.google.com/spreadsheets/d/1wo_KQIcGrNGCWYKa6iHJ7MImJ_aI7GN12E-T21Es8TU/edit?usp=sharing) spreadsheets for every new company on a trial and new customers.
 
-These are used as join tables in Looker, and are important to connect instance data to a specific customer.  
+These are used as join tables in Looker, and are important to connect instance data to a specific customer.
