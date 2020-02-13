@@ -30,9 +30,9 @@ Review cycles take place in February and August. They begin the first week of ea
 - Manager review: you will write a review of your manager.
 - Peer reviews: you will write reviews of any peers that selected you to write feedback for them.
 
-### Manager feedback + summaries (9 days)
+### Manager feedback (9 days)
 
-**Managers:** You will be able to review all existing feedback for each of your direct reports and you will now be able to write your own review as well as an overall summary for each direct report. Once all of your reviews are submitted, you are ready to discuss and share the complete review packets with your direct reports during your one-on-ones.
+**Managers:** You will be able to review all existing feedback for each of your direct reports and you will now be able to write your own review. Once all of your reviews are submitted, you are ready to discuss and share the complete review packets with your direct reports during your one-on-ones.
 
 Once the reviews are complete for each of your direct reports, you’ll be able to close out their review cycle individually in order to share their review packet with them during your next one-on-one. Here is a quick [“how-to” guide](https://help.lattice.com/en/articles/1712875-ending-a-direct-report-s-review-cycle-as-a-manager) on closing a direct report’s cycle as a manager.
 
@@ -59,3 +59,4 @@ Once the reviews are complete for each of your direct reports, you’ll be able 
 
 - Describe this person’s impact at Sourcegraph and since the last review cycle and how that impact compares to your expectations.
 - What are this person’s biggest opportunities for personal development and growth moving forward?
+- What are your thoughts on the peer feedback that this person received?
