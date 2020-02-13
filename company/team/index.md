@@ -34,7 +34,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Product Manager
 - Redwood City, CA, USA 🇺🇸
 - [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney)
-- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and lead a small dev team at Platinum Performance. At Palantir Technologies, she lead the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science.
+- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and the lead of a small dev team at Platinum Performance. At Palantir Technologies, she led the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science.
 
 ## Stephen Gutekanst
 
@@ -184,5 +184,38 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [herzog@sourcegraph.com](mailto:herzog@sourcegraph.com), [@ah3rz](https://twitter.com/ah3rz), [LinkedIn](https://www.linkedin.com/in/herzogadam/)
 - Adam is an experienced developer marketer, now focusing on product marketing at Sourcegraph. He's previously led developer relations, digital demand generation, and other marketing functions at companies like Docker, Humio, and Neo4j. Adam advocates for inclusivity 🌈 within the entire tech industry (and the world!) and probably uses the word "awesome" too much. He is passionate about good food, Hatha yoga, and jean jackets in no particular order.
 
+## Geoffrey Gilmore
 
+- Software Engineer
+- San Francisco, CA, USA 🇺🇸
+- [geoffrey@sourcegraph.com](mailto:geoffrey@sourcegraph.com), [ggilmore](https://github.com/ggilmore)
+- Geoffrey is an MIT graduate who enjoys kicking people in his spare time.
+
+## Farhan Attamimi
+
+- Software Engineer
+- Singapore 🇸🇬
+- [farhan@sourcegraph.com](mailto:farhan@sourcegraph.com), [attfarhan](https://github.com/attfarhan)
+- Farhan writes code to pass the time while impatiently waiting for Manchester United to return to glory.
+
+## Erik Seliger
+
+- Software Engineer
+- Bremen, Germany 🇩🇪
+- [erik@sourcegraph.com](mailto:erik@sourcegraph.com), [eseliger](https://github.com/eseliger), [LinkedIn](https://www.linkedin.com/in/erik-seliger/)
+- Erik has a background in Systems Engineering and decided that software is the most interesting field of engineering, which he never quit since first touching Turbo Pascal at age 11.
+
+## Kevin Zheng
+
+- Software Engineer
+- Brooklyn, NYC, USA 🇺🇸
+- [kevin.zheng@sourcegraph.com](mailto:kevin.zheng@sourcegraph.com), [kzh](https://github.com/kzh)
+- Kevin enjoys tinkering with his `.dotfiles` and traversing ASTs. His passion for CS started early with his stints in the Minecraft modding scene and gradually transitioned into robotics during high school. He is on an indefinite hiatus from his BS CS studies at Rutgers University New Brunswick.
+
+## Kai Passo
+
+- Account Executive
+- Atlanta, GA, USA 🇺🇸
+- [kai@sourcegraph.com](mailto:kai@sourcegraph.com), [kpsource](https://github.com/kpsource)
+- Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.   
 <!-- Paste *your* section above this line! -->

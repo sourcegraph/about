@@ -281,7 +281,7 @@ export default ((props: any) => (
                                 <a href="https://docs.sourcegraph.com/user/search/queries" target="_blank">
                                     much more
                                 </a>
-                                . Use the visual query builder to narrow down your search and get familiar withsearch
+                                . Use the visual query builder to narrow down your search and get familiar with search
                                 syntax for next time.
                             </p>
                         </IconItem>
@@ -296,7 +296,7 @@ export default ((props: any) => (
                                 <a href="https://docs.sourcegraph.com/user/search/queries" target="_blank">
                                     refine your search
                                 </a>{' '}
-                                using suggested filters, to narrow down results by repository, language, directory, or
+                                using suggested filters, to narrow down results by repository, language, directory, or{' '}
                                 <a href="https://docs.sourcegraph.com/user/search/scopes" target="_blank">
                                     custom scopes
                                 </a>

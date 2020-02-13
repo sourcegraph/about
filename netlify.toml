@@ -12,6 +12,7 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
 
 [[redirects]]
   from = "/assets/*"
