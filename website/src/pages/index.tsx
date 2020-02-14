@@ -124,13 +124,12 @@ const testimonials: Testimonial[] = [
 ]
 
 export default ((props: any) => (
-    <Layout location={props.location}
+    <Layout
+        location={props.location}
         meta={{
-            title:
-                'Sourcegraph',
-            description:
-                'Start shipping better software faster with Universal Code Search.'
-            }}
+            title: 'Sourcegraph',
+            description: 'Start shipping better software faster with Universal Code Search.',
+        }}
     >
         <div className="home">
             <div className="home__intro container">
@@ -138,7 +137,7 @@ export default ((props: any) => (
                     <div className="col-lg-8 mb-6 mb-lg-0">
                         <h1 className="home__intro-header display-3">Universal Code Search</h1>
                         <p className="home__intro-text mt-3 font-weight-light">
-                            Google &amp; Facebook invested $100Ms to build internal developer&nbsp;platforms for{' '}
+                            Google &amp; Facebook invested $100Ms to build an internal&nbsp;tool for{' '}
                             <Link
                                 className="home__intro-text-link home__intro-text-link-1"
                                 to="/product/code-search-navigation"
@@ -150,8 +149,11 @@ export default ((props: any) => (
                                 code&nbsp;review
                             </Link>
                             , and{' '}
-                            <Link className="home__intro-text-link home__intro-text-link-3" to="/product/automation">
-                                alerts &amp; automation
+                            <Link
+                                className="home__intro-text-link home__intro-text-link-3"
+                                to="/product/code-change-management"
+                            >
+                                code&nbsp;change&nbsp;management
                             </Link>
                             .
                         </p>
@@ -160,8 +162,8 @@ export default ((props: any) => (
                                 style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                             />{' '}
-                            <strong>Sourcegraph</strong> provides Universal Code Search to help every
-                            elite&nbsp;development team ship better software faster.
+                            <strong>Sourcegraph</strong> provides Universal Code Search to help every development team
+                            ship better software faster.
                         </p>
                         <RequestDemoAction className="mt-5" />
                         <ContactPresalesSupportAction className="text-light mt-3" />

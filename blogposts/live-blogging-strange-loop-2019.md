@@ -10,7 +10,7 @@ heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.j
 published: true
 
 ---
- 
+
 <p class="text-center">
   <a href="/strange-loop/" title="Go to the Strange Loop 2019 liveblog">
     <img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner-landscape.jpg" />
@@ -30,7 +30,7 @@ published: true
   <a href="https://forms.gle/egsGKSrapRJkhiWw6" class="btn btn-primary ml-3" rel="nofollow" target="_blank"><i class="fa fa-file-pdf pr-2"></i>Sign up here</a>
 </div>
 
-Sourcegraph is the standard developer platform for [code search](/product/code-search-navigation), [review](/product/code-review), and [automation](/product/automation) for many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Sourcegraph is the standard developer platform for [code search](/product/code-search-navigation), [review](/product/code-review), and [code change management](/product/code-change-management) for many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 ---
 

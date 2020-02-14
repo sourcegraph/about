@@ -174,8 +174,9 @@ class EventLogger {
     public trackRequestDemoActionFormSubmitted(): void {
         this.trackEvent('Pages', 'click', null, 'RequestDemoActionFormSubmitted', {})
     }
-    public trackAutomationDemoFormSubmitted(): void {
+    public trackCampaignsDemoFormSubmitted(): void {
         this.logConversion()
+        // The event name still uses the old name for code change management ("automation").
         this.trackEvent('Pages', 'click', null, 'AutomationDemoFormSubmitted', {})
     }
     public trackHackathonFormSubmitted(): void {
@@ -193,7 +194,8 @@ class EventLogger {
     public trackBuyEnterpriseButtonClicked(): void {
         this.trackEvent('Pages', 'click', null, 'BuyEnterpriseButtonClicked', {})
     }
-    public trackAutomationSeeItInActionButtonClicked(): void {
+    public trackCampaignsSeeItInActionButtonClicked(): void {
+        // The event name still uses the old name for code change management ("automation").
         this.trackEvent('Pages', 'click', null, 'AutomationSeeItInActionButtonClicked', {})
     }
     public trackEvent(category: string, action: string, feature: any, label: string, eventProps: object): void {

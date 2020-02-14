@@ -18,7 +18,7 @@ We're excited to announce Sourcegraph 3.12. In addition to the usual updates, th
 
 [**⌨️ Search bar match case toggle**](#search-bar-match-case-toggle)<br />
 
-[**🤖 Create draft automation campaigns**](#create-draft-automation-campaigns)<br />
+[**🤖 Create draft campaigns**](#create-draft-campaigns)<br />
 
 [**🚫 Exclude archived Bitbucket Server repositories in queries**](#exclude-archived-bitbucket-server-repositories-in-queries)<br />
 
@@ -52,7 +52,7 @@ Sourcegraph couldn't be what it is without the community
 
 Quickly toggle between case sensitive and case insensitive queries using the `Aa` icon in the search field. Previously, this filter was applied by adding `case:yes` to the search query. The toggle simplifies and standardizes this functionality.
 
-## Create draft automation campaigns
+## Create draft  campaigns
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -61,9 +61,9 @@ Quickly toggle between case sensitive and case insensitive queries using the `Aa
   <p style="text-align: center"><a href="https://vimeo.com/386036051" target="_blank">View on Vimeo</a></p>
 </p>
 
-When rolling out organization-wide changes, it is desirable to review campaigns with your teammates. Automation campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
+When rolling out organization-wide changes, it is desirable to review campaigns with your teammates. Campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
 
-Automation campaigns are in private beta, [apply to get early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
+Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
 ## Exclude archived Bitbucket Server repositories in queries
 
@@ -138,7 +138,7 @@ Previously, fetching ACL data from Bitbucket Server was limited by API constrain
 - Support case field in repository search. [#7671](https://github.com/sourcegraph/sourcegraph/issues/7671)
 - Skip LFS content when cloning git repositories. [#7322](https://github.com/sourcegraph/sourcegraph/issues/7322)
 - Hover tooltips and _Find Reference_ results now display a badge to indicate when a result is search-based. These indicators can be disabled by adding `{ "experimentalFeatures": { "showBadgeAttachments": false } }` in global settings.
-- Automation campaigns can now be created as drafts, which can be shared and updated without creating changesets (pull requests) on code hosts. When ready, a draft can then be published, either completely or changeset by changeset, to create changesets on the code host. [#7659](https://github.com/sourcegraph/sourcegraph/pull/7659)
+- Campaigns can now be created as drafts, which can be shared and updated without creating changesets (pull requests) on code hosts. When ready, a draft can then be published, either completely or changeset by changeset, to create changesets on the code host. [#7659](https://github.com/sourcegraph/sourcegraph/pull/7659)
 - Experimental: feature flag `BitbucketServerFastPerm` can be enabled to speed up fetching ACL data from Bitbucket Server instances. This requires [Bitbucket Server Sourcegraph plugin](https://github.com/sourcegraph/bitbucket-server-plugin) to be installed.
 - Experimental: A site configuration field `{ "experimentalFeatures" { "tls.external": true } }` which allows you to configure SSL/TLS settings for Sourcegraph contacting your code hosts. Currently just supports turning off TLS/SSL verification. [#71](https://github.com/sourcegraph/sourcegraph/issues/71)
 - Experimental: To search across multiple revisions of the same repository, list multiple branch names (or other revspecs) separated by `:` in your query, as in `repo:myrepo@branch1:branch2:branch2`. To search all branches, use `repo:myrepo@*refs/heads/`. Requires the site configuration value `{ "experimentalFeatures": { "searchMultipleRevisionsPerRepository": true } }`. Previously this was only supported for diff and commit searches.

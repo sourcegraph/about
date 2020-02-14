@@ -64,16 +64,15 @@ Other backcompat notes:
 </p>
 
 
-## Manage cross-repository PR campaigns
+## Cross-repository code change management
 
-Keeping your code secure and up-to-date often requires making changes and merging pull requests across  many repositories. A step toward shipping [our vision of the future of code automation](https://about.sourcegraph.com/product/automation#see-it-in-action), Sourcegraph now lets you track status and activity on campaigns of pull requests across repositories for GitHub and Bitbucket Server.
+Keeping your code secure and up-to-date often requires making changes and merging pull requests across  many repositories. As a step toward shipping support for [large-scale code change campaigns](https://about.sourcegraph.com/product/code-change-management#see-it-in-action), Sourcegraph now lets you track status and activity on campaigns of pull requests across repositories for GitHub and Bitbucket Server.
 
 For example, if you've applied a critical security fix to 1,000 repositories, Sourcegraph makes it easy to see which and how many PRs are open/merged/closed, and you can monitor comments and review activity to see how to help get the fix approved and deployed.
 
 Next, we plan to ship the ability to create branches and PRs across hundreds or thousands of repositories for common use cases (such as fixing security issues, upgrading dependencies, and refactoring usage of deprecated APIs).
 
-This feature is in private beta. [Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see what it'll look like, and [apply to get early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
-
+Code change management campaigns are in private beta. [Watch the code change management screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to this feature.
 
 ## Monitor the health of your Sourcegraph instance
 
@@ -130,7 +129,7 @@ To retain your existing indexes, follow the [migration guide](https://github.com
   - There is now a dot-star icon in the search input bar to toggle the pattern type of a query between regexp and literal.
   - There is a new `search.defaultPatternType` setting to configure the default pattern type, regexp or literal, for searches.
   - There is a new `patternType:` search token which overrides the `search.defaultPatternType` setting, and the active state of the dot-star icon in determining the pattern type of the query.
-- Added support for GitHub organization webhooks to enable faster updates of metadata used by [Automation](https://about.sourcegraph.com/product/automation/), such as pull requests or issue comments. See the [GitHub webhook documentation](https://docs.sourcegraph.com/admin/external_service/github#webhooks) for instructions on how to enable webhooks.
+- Added support for GitHub organization webhooks to enable faster updates of metadata used by [campaigns](https://about.sourcegraph.com/product/code-change-management/), such as pull requests or issue comments. See the [GitHub webhook documentation](https://docs.sourcegraph.com/admin/external_service/github#webhooks) for instructions on how to enable webhooks.
 - Added burndown chart to visualize progress of campaigns.
 - Added ability to edit campaign titles and descriptions.
 

@@ -34,7 +34,7 @@ export default ((props: any) => (
                 <ContentSection color="primary" className="hero-section text-center py-5">
                     <h1>Sourcegraph pricing</h1>
                     <h3>
-                        Free to start.  No commitment.
+                        Free to start. No commitment.
                         <br />
                         Only pay for active users.
                     </h3>
@@ -72,7 +72,7 @@ export default ((props: any) => (
                                 price="$29"
                                 features={[
                                     { name: 'Code review & pull request integration', id: 'code-review' },
-                                    { name: 'Code alerts', id: 'automation' },
+                                    { name: 'Code alerts', id: 'code-change-management' },
                                     { name: 'Deployment metrics & monitoring', id: 'deployment' },
                                     {
                                         name: 'High-scale/availability cluster deployment option',
@@ -110,20 +110,19 @@ export default ((props: any) => (
                             <PricingPlan
                                 className="pricing__plan"
                                 name="Elite"
-                                description="Transforming the software lifecycle with automation."
+                                description="Transforming the software lifecycle."
                                 price="Elite"
                                 priceInterval=""
                                 features={[
-                                    { name: 'Private Sourcegraph extension registry', id: 'admin' },
                                     { name: '24/7 uptime support', id: 'support' },
                                     {
-                                        name: 'Large-scale code modifications/refactoring',
-                                        id: 'automation',
-                                        future: true,
+                                        name: 'Code change management campaigns',
+                                        id: 'code-change-management',
                                     },
+                                    { name: 'Private Sourcegraph extension registry', id: 'admin' },
                                     {
                                         name: 'License compliance and security analysis',
-                                        id: 'automation',
+                                        id: 'code-change-management',
                                         future: true,
                                     },
                                     {

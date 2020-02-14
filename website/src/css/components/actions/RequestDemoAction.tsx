@@ -6,15 +6,21 @@ export const RequestDemoAction: React.FunctionComponent<{ className?: string; bu
     buttonText = 'Request a demo',
 }) => <SubmitEmailForm formAction="/contact/request-demo" buttonText={buttonText} className={className} />
 
-export const RequestAutomationDemoAction: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <SubmitEmailForm formAction="/contact/request-automation-demo" buttonText="Request a demo" className={className} />
+export const RequestCodeChangeManagementDemoAction: React.FunctionComponent<{ className?: string }> = ({
+    className = '',
+}) => (
+    <SubmitEmailForm
+        formAction="/contact/request-code-change-management-demo"
+        buttonText="Request a demo"
+        className={className}
+    />
 )
 
-export const RequestAutomationDemoActionNow: React.FunctionComponent<any> = () => (
-    <div className="request-automation-demo-now d-flex justify-content-center w-100 pt-2 mb-3">
+export const RequestCodeChangeManagementDemoActionNow: React.FunctionComponent<any> = () => (
+    <div className="request-code-change-management-demo-now d-flex justify-content-center w-100 pt-2 mb-3">
         <div className="submit-form-container flex-0 rounded rounded-lg py-4 px-6">
             <SubmitEmailForm
-                formAction="/contact/request-automation-demo"
+                formAction="/contact/request-code-change-management-demo"
                 buttonText="Request a demo"
                 className="mt-4"
             />

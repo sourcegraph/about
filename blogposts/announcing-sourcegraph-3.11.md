@@ -110,9 +110,9 @@ Some teams prefer updating Sourcegraph configuration in version control rather t
   <p style="text-align: center"><a href="https://vimeo.com/380663070" target="_blank">View on Vimeo</a></p>
 </p>
 
-Credential leaks compromise organization code and are a top concern for security teams and developers alike. Sourcegraph 3.11 introduces a new automation campaign type to find and remove leaked NPM credentials across all repositories at your organization. The leaked credentials campaign type allows you to preview the proposed changes, create pull requests on your code hosts, and track the PRs in a burndown chart to ensure they are merged.
+Credential leaks compromise organization code and are a top concern for security teams and developers alike. Sourcegraph 3.11 introduces a new campaign type to find and remove leaked NPM credentials across all repositories at your organization. The leaked credentials campaign type allows you to preview the proposed changes, create pull requests on your code hosts, and track the PRs in a burndown chart to ensure they are merged.
 
-Sourcegraph Automation campaigns are in private beta. [Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see what we have planned and [apply for early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
+Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
 ## Search query language statistics
 
@@ -154,8 +154,8 @@ Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit
 - Global settings can be configured from a local file using the environment variable `GLOBAL_SETTINGS_FILE`.
 - High-level health metrics and dashboards have been added to Sourcegraph's monitoring (found under the **Site admin** -> **Monitoring** area). [#7216](https://github.com/sourcegraph/sourcegraph/pull/7216)
 - Logging for GraphQL API requests not issued by Sourcegraph is now much more verbose, allowing for easier debugging of problematic queries and where they originate from. [#5706](https://github.com/sourcegraph/sourcegraph/issues/5706)
-- A new Automation campaign type finds and removes leaked NPM credentials. [#6893](https://github.com/sourcegraph/sourcegraph/pull/6893)
-- Automation campaigns can now be retried to create failed changesets due to ephemeral errors (e.g. network problems when creating a pull request on GitHub). [#6718](https://github.com/sourcegraph/sourcegraph/issues/6718)
+- A new campaign type finds and removes leaked NPM credentials. [#6893](https://github.com/sourcegraph/sourcegraph/pull/6893)
+- Campaigns can now be retried to create failed changesets due to ephemeral errors (e.g. network problems when creating a pull request on GitHub). [#6718](https://github.com/sourcegraph/sourcegraph/issues/6718)
 - The initial release of [structural code search](https://docs.sourcegraph.com/user/search/structural).
 
 ### Changed
@@ -174,8 +174,8 @@ Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit
 - Deleting an external service will not show warnings for the non-existent service. [#5617](https://github.com/sourcegraph/sourcegraph/issues/5617)
 - Suggested search filter chips are quoted if necessary. [#6498](https://github.com/sourcegraph/sourcegraph/issues/6498)
 - Remove potential panic in gitserver if heavily loaded. [#6710](https://github.com/sourcegraph/sourcegraph/issues/6710)
-- Multiple fixes to make the preview and creation of Automation campaigns more robust and a smoother user experience. [#6682](https://github.com/sourcegraph/sourcegraph/pull/6682) [#6625](https://github.com/sourcegraph/sourcegraph/issues/6625) [#6658](https://github.com/sourcegraph/sourcegraph/issues/6658) [#7088](https://github.com/sourcegraph/sourcegraph/issues/7088) [#6766](https://github.com/sourcegraph/sourcegraph/issues/6766) [#6717](https://github.com/sourcegraph/sourcegraph/issues/6717) [#6659](https://github.com/sourcegraph/sourcegraph/issues/6659)
-- Repositories referenced in Automation campaigns that are removed in an external service configuration change won't lead to problems with the syncing process anymore. [#7015](https://github.com/sourcegraph/sourcegraph/pull/7015)
+- Multiple fixes to make the preview and creation of campaigns more robust and a smoother user experience. [#6682](https://github.com/sourcegraph/sourcegraph/pull/6682) [#6625](https://github.com/sourcegraph/sourcegraph/issues/6625) [#6658](https://github.com/sourcegraph/sourcegraph/issues/6658) [#7088](https://github.com/sourcegraph/sourcegraph/issues/7088) [#6766](https://github.com/sourcegraph/sourcegraph/issues/6766) [#6717](https://github.com/sourcegraph/sourcegraph/issues/6717) [#6659](https://github.com/sourcegraph/sourcegraph/issues/6659)
+- Repositories referenced in campaigns that are removed in an external service configuration change won't lead to problems with the syncing process anymore. [#7015](https://github.com/sourcegraph/sourcegraph/pull/7015)
 - The Searcher dashboard (and the `src_graphql_search_response` Prometheus metric) now properly account for search alerts instead of them being incorrectly added to the `timeout` category. [#7214](https://github.com/sourcegraph/sourcegraph/issues/7214)
 - In the experimental search pagination API, the `cloning`, `missing`, and other repository fields now return a well-defined set of results. [#6000](https://github.com/sourcegraph/sourcegraph/issues/6000)
 

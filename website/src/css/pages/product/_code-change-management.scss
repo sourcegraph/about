@@ -1,4 +1,4 @@
-.automation {
+.code-change-management {
     h1 {
         display: inline-block;
         position: relative;
@@ -12,10 +12,10 @@
             background-color: #dc3545;
             text-transform: uppercase;
             border: 1px solid transparent;
-            padding: .15rem .3rem;
+            padding: 0.15rem 0.3rem;
             font-size: 0.8rem;
             line-height: 1.5;
-            border-radius: .25rem;
+            border-radius: 0.25rem;
         }
     }
 
@@ -24,7 +24,7 @@
         width: 100% !important;
     }
 
-    .request-automation-demo-footer h1::after {
+    .request-code-change-management-demo-footer h1::after {
         display: none;
     }
 
@@ -33,7 +33,7 @@
     }
 
     .submit-form-container {
-        background-color: rgba(0,0,0,1);
-        box-shadow: rgba(255,255,255,0.3) 0 0 30px 20px;
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: rgba(255, 255, 255, 0.3) 0 0 30px 20px;
     }
 }

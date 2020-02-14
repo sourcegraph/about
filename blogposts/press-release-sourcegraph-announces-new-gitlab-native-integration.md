@@ -13,7 +13,7 @@ published: true
   <img src="/blog/gitlab-integration-banner-dark.png" />
 </p>
 
-**SAN FRANCISCO, Nov. 12, 2019 (GLOBE NEWSWIRE)** -- [Sourcegraph](https://about.sourcegraph.com/), the leader in universal code search, intelligence, and automation, today announced a new collaboration with GitLab, along with the world’s first universal source code search engine. The company has experienced exponential growth fueled by its expanding community of over 10,000 paid developers and tens of thousands of free open source developers who actively use its platform.
+**SAN FRANCISCO, Nov. 12, 2019 (GLOBE NEWSWIRE)** -- [Sourcegraph](https://about.sourcegraph.com/), the leader in universal code search, today announced a new collaboration with GitLab, along with the world’s first universal source code search engine. The company has experienced exponential growth fueled by its expanding community of over 10,000 paid developers and tens of thousands of free open source developers who actively use its platform.
 
 “GitLab and Sourcegraph are both oriented around the open source developer community and strive to improve the lives of developers everywhere,” said Quinn Slack, co-founder and CEO of Sourcegraph. “Today’s news of our integration shows that GitLab recognizes that code intelligence is essential, and is putting their weight behind Sourcegraph to provide it for all developers around the world.
 
@@ -29,14 +29,14 @@ Sourcegraph’s code intelligence works on 25 languages, and enables developers 
 
 ## Universal Source Code Search Engine Makes Elite Development Possible for All
 
-Tech giants like Google and Facebook have invested hundreds of millions of dollars to build internal developer platforms for code search, code review, and alerts and automation. Sourcegraph is making this standard available to all development teams—not just the ones working at the half-dozen dominant tech companies—and empowering them to ship better software faster.
+Tech giants like Google and Facebook have invested hundreds of millions of dollars to build internal developer tools for code search, code review, and code change management. Sourcegraph is making this standard available to all development teams—not just the ones working at the half-dozen dominant tech companies—and empowering them to ship better software faster.
 
 Sourcegraph’s universal source code search engine enables developers to search all of their organization’s code, across GitLab, GitHub, Bitbucket, Perforce, and more. It is the only enterprise code search solution on the market that integrates multiple code hosts for indexing tens of thousands of repositories, and thousands of daily active users.
 
 More information on Sourcegraph’s universal source code search is available [here](https://about.sourcegraph.com/product/code-search-navigation/#customers).
 
-## Code Change Automation Solution on the Horizon
-Code change automation gives developers the power to automate large-scale code changes across their entire organization. Teams can remove deprecated code and legacy systems, triage and follow-through on critical security issues, and keep library dependencies up-to-date and consistent across all of an organization's code. Additional functionalities of Sourcegraph’s code change automation solution will be made available in early 2020.
+## Code Change Management Solution on the Horizon
+Code change management gives developers the power to perform large-scale code changes across their entire organization. Teams can remove deprecated code and legacy systems, triage and follow-through on critical security issues, and keep library dependencies up-to-date and consistent across all of an organization's code. Additional functionalities of Sourcegraph’s code change management solution will be made available in early 2020.
 
 ## Company Momentum Charges Ahead
 
@@ -64,7 +64,7 @@ Over 10,000 developers rely on the Sourcegraph platform to ship high-quality sof
 - [Sourcegraph on GitHub](https://github.com/sourcegraph)
 
 ## About Sourcegraph
-Sourcegraph empowers all developers with an elite set of solutions for universal code search, intelligence, and automation. Code intelligence can help bring the future sooner, and Sourcegraph’s mission is to provide tools that let developers from any organization create quality products by leveraging the best technology available. Sourcegraph is built for companies of all sizes, from startups that need a solid foundation for growth, to the world’s largest enterprises with complex security, scaling, and deployment needs. The company is headquartered in San Francisco, CA, and is backed by Redpoint Ventures and Goldcrest Capital. Follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph) or visit [www.sourcegraph.com](https://sourcegraph.com/).
+Sourcegraph empowers all developers with universal code search. Sourcegraph’s mission is to provide tools that let developers from any organization create quality products by leveraging the best technology available. Sourcegraph is built for companies of all sizes, from startups that need a solid foundation for growth, to the world’s largest enterprises with complex security, scaling, and deployment needs. The company is headquartered in San Francisco, CA, and is backed by Redpoint Ventures and Goldcrest Capital. Follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph) or visit [www.sourcegraph.com](https://sourcegraph.com/).
 
 ## Media Contact
 Tanya Carlsson<br>

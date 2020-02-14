@@ -31,17 +31,17 @@ export default ((props: any) => {
         </div>
     )
     return (
-        <Layout location={props.location}
+        <Layout
+            location={props.location}
             meta={{
-                title:
-                    'Sourcegraph Universal Code Search',
+                title: 'Sourcegraph Universal Code Search',
                 description:
-                    'Ship better software faster with Sourcegraph Universal Code Search with enhanced code search, review, and alerts & automation.'
-                }}
-            >
+                    'Ship better software faster with Sourcegraph Universal Code Search, including code navigation, code intelligence, and code change management.',
+            }}
+        >
             <ContentPage
                 title="Universal Code Search"
-                description="Ship better software faster with Sourcegraph Universal Code Search with enhanced code search, review, and alerts & automation."
+                description="Ship better software faster with Sourcegraph Universal Code Search, including code navigation, code intelligence, and code change management."
                 mainActions={actions}
             >
                 <PageSectionLinks
@@ -92,18 +92,17 @@ export default ((props: any) => {
                         </div>
                         <div className="col-md-6 mb-4">
                             <IconItem className="position-relative" icon={AutorenewIcon} color="green">
-                                <h4>Automation</h4>
+                                <h4>Code change management</h4>
                                 <p>
-                                    Sourcegraph's automation lets you create campaigns, which are collections of pull
-                                    requests and issues across multiple repositories.
+                                    Run code change campaigns to remove legacy code, fix critical security issues, and
+                                    pay down tech debt.
                                 </p>
                                 <p>
-                                    Automate large-scale code changes to remove legacy code, fix critical security
-                                    issues, and pay down tech debt.
+                                    With Sourcegraph, you can easily make changes, create branches, and track pull
+                                    requests across all of your repositories.
                                 </p>
-                                <Link to="/product/automation" className="stretched-link">
-                                    Learn more about large-scale code changes with <strong>automation</strong>{' '}
-                                    &nbsp;&raquo;
+                                <Link to="/product/code-change-management" className="stretched-link">
+                                    Learn more about <strong>code&nbsp;change&nbsp;management</strong> &nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>

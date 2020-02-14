@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.8: Search UI improvements, monitoring tools, Automation, and LSIF-based code intelligence"
+title: "Sourcegraph 3.8: Search UI improvements, monitoring tools, code change campaigns, and LSIF-based code intelligence"
 author: Christina Forney
 publishDate: 2019-09-20T10:00-07:00
 tags: [
@@ -16,7 +16,7 @@ We're excited to announce Sourcegraph 3.8. This release contains lots of behind 
 
 <div style="padding-left: 2rem">
 
-[**🤖 Introducing Automation: first steps toward supporting large-scale code modification**](#introducing-automation-first-steps-toward-supporting-large-scale-code-modification)<br />
+[**🤖 Introducing code change management campaigns**](#introducing-code-change-management-campaigns)<br />
 Learn more about new functionality that is coming soon to Sourcegraph!
 
 [**🧠 Beta release of fast and precise LSIF-based code intelligence**](#beta-release-of-fast-and-precise-lsif-based-code-intelligence)<br />
@@ -40,7 +40,7 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## Introducing Automation: first steps toward supporting large-scale code modification
+## Introducing code change management campaigns
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -49,9 +49,9 @@ Sourcegraph couldn't be what it is without the community.
   <p style="text-align: center"><a href="https://vimeo.com/355392896" target="_blank">View on Vimeo</a></p>
 </p>
 
-Soon, you can [use Sourcegraph to automate](https://about.sourcegraph.com/product/automation) large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
+Soon, you can [use Sourcegraph for large-scale code change campaigns](https://about.sourcegraph.com/product/code-change-management) to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
 
-[Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see it in action. Automation is in private beta and you can [apply by requesting a demo](/contact/request-automation-demo/).
+Code change management campaigns are in private beta. [Watch the code change management screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to this feature.
 
 ## Beta release of fast and precise LSIF-based code intelligence
 
