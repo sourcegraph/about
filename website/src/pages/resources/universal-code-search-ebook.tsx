@@ -54,10 +54,10 @@ export default ((props: any) => {
                             
                             <p>With this ebook, you will learn:</p>
                             <ul>
-                                <li>what is universal code search</li>
-                                <li>top reasons developers rely on Sourcegraph</li>
-                                <li>how to improve code reviews with code navigation</li>
-                                <li>why engineering leaders need code search and intelligence for their teams</li>
+                                <li>What is universal code search</li>
+                                <li>Top reasons developers rely on Sourcegraph</li>
+                                <li>How to improve code reviews with code navigation</li>
+                                <li>Why engineering leaders need code search and intelligence for their teams</li>
                             </ul>
                         </div>
                         <div className="col-md-4">
