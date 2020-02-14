@@ -61,7 +61,7 @@ export default ((props: any) => {
                             </ul>
                         </div>
                         <div className="col-md-4">
-                            <img src="/external-logos/sourcegraph-universal-code-search-ebook-v1.svg" alt="Download: Universal Code Search and Intelligence" className="landing-page__img" />
+                            <img src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg" alt="Download: Universal Code Search and Intelligence" className="landing-page__img" />
                         </div>                 
                         <div className="col-md-4">
                             <h3 className="font-weight-light text-sans-serif">Get your free ebook.</h3>
