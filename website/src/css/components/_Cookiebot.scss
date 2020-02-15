@@ -14,16 +14,19 @@
     max-width: 1000px!important;
 }
 #CybotCookiebotDialogBodyButtonDetails {
-    display: none;
+    display: none!important;
 }	
+#CybotCookiebotDialog a {
+  text-decoration: none;
+  color: #0a65ea;
+}
 #CybotCookiebotDialogBodyButtonDecline {
    background-color:transparent!important;
    border: none!important;
    color: #6c757d!important;
 }
-#CybotCookiebotDialog a {
-   color: #0a65ea!important;
-   
+#CybotCookiebotDialogBodyButtonAccept {
+   color: #fff!important;
 }
 #CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink:hover, 
 #CybotCookiebotDialogBodyLevelDetailsButton:hover {
