@@ -19,21 +19,20 @@
 #CybotCookiebotDialogBodyButtonDetails {
     display: none!important;
 }	
-#CybotCookiebotDialog a,
 #CookiePolicyLink a {
-  color: #0a65ea;
-  text-decoration: none;
+  color: #0a65ea!important;
+  text-decoration: none!important;
 }
-#CybotCookiebotDialogBodyButtonDecline {
+#CybotCookiebotDialogBodyButtonDecline a {
    background-color:transparent!important;
    border: none!important;
    color: #0a65ea!important;
    font-weight: 300;
 }
-#CybotCookieDialogBodyButtonDecline:hover
+#CybotCookieDialogBodyButtonDecline a:hover,
 #CookiePolicyLink a:hover {
    color: #0745a1!important;
-   text-decoration: underline;
+   text-decoration: underline!important;
 }
 #CybotCookiebotDialogBodyButtonAccept {
    color: #fff!important;
