@@ -22,9 +22,8 @@ export default ((props: any) => (
         >
             <ContentSection color="white" className="pt-6 pb-5">
             <div className="row justify-content-md-center">
-                <div className="col-md-12">
-                    <h4>
-                   Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems. </h4>
+                <div className="col-md-10">
+                    <h3 class="text-center">Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems.</h3>
                     <p>It ties together information from many tools, from repositories on your code host to dependency relationships among your projects and application runtime information.</p>
                     
                     <p>
@@ -34,10 +33,23 @@ export default ((props: any) => (
                 </div>
             </div>
             </ContentSection>
+            <ContentSection color="primary" className="py-5">
+                <div className="row justify-content-md-center">
+                    <div className="col-md-3 text-center">
+                        <img src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg" alt="Download: Universal Code Search and Intelligence" width="170" />
+                    </div>                        
+                    <div className="col-md-6">
+                        <h5>EBOOK</h5>
+                        <h3>Universal code search and intelligence</h3>
+                        <h5>How to increase programming productivity and improve code quality</h5>
+                        <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=web&utm_content=universal_code_search">Free download</Link>
+                    </div> 
+                </div>
+            </ContentSection>
             <ContentSection color="purple" className="py-5">
                 <div className="row">
                     <div className="col-md-12">
-                        <h2>A code host is no longer enough</h2>
+                        <h2 class="text-center">A code host is no longer enough</h2>
                         <p>
                             Historically, the code host (such as GitHub) provided search. But the most elite
                             software development organizations such as Google, Facebook, Uber, Lyft, and Yelp realized that a
@@ -73,7 +85,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-5">
-                <h3 className="mb-5">Universal Code Search helps answer your team's questions</h3>
+                <h3 className="mb-5 text-center">Universal Code Search helps answer your team's questions</h3>
                 <div className="row">
                     <div className="col-md-4 pr-5">
                         <h5 className="mb-2 font-weight-light border-bottom border-purple">For developers</h5>
@@ -104,8 +116,8 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="primary" className="py-5">
-                <h3>Universal Code Search</h3>
-                <p>Universal Code Search must have these things. Anything else is just a code host.</p>
+                <h3 className="text-center">Universal Code Search</h3>
+                <p className="text-center">Universal Code Search must have these things. Anything else is just a code host.</p>
                 <div className="row mt-5">
                     <div className="col-md-4 pr-5">
                         <h5>Code</h5>
@@ -131,7 +143,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-6">
-                <h2 id="used-by" className="text-center display-4">
+                <h2 id="used-by" className="text-center display-5">
                     The most elite software organizations use Universal Code Search
                 </h2>
                 <p className="text-center">
