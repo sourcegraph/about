@@ -42,7 +42,7 @@ These URLs also show other useful information about the definition: its type sig
 
 <a href='https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/encoding/json/-/MarshalIndent'>The source code of a Go function, MarshalIndent, on Sourcegraph</a>
 
-Lots of open-source projects already use these Sourcegraph URLs to refer to specific functions in their docs and bug trackers ([Django](https://code.djangoproject.com/ticket/22000), for example).
+Lots of open source projects already use these Sourcegraph URLs to refer to specific functions in their docs and bug trackers ([Django](https://code.djangoproject.com/ticket/22000), for example).
 
 Here are some **examples of named URLs**:
 

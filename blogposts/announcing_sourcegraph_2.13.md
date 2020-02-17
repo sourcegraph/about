@@ -14,7 +14,7 @@ published: true
 
 Sourcegraph 2.13 ships today, with several improvements:
 
-- [Indexed search](https://docs.sourcegraph.com/admin/search#indexed-search) option for single-node Docker container deployment to speed up searches (previously Enterprise-only, now free and open-source)
+- [Indexed search](https://docs.sourcegraph.com/admin/search#indexed-search) option for single-node Docker container deployment to speed up searches (previously Enterprise-only, now free and open source)
 - [More ways to specify which GitHub and GitHub Enterprise repositories to sync](https://docs.sourcegraph.com/admin/site_config/all#repositoryquery-array)
 - [In-product documentation at `/help`](https://docs.sourcegraph.com/dev/documentation#sourcegraph-help)
 - [Per-user repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) for GitLab, with more code hosts coming soon [Enterprise]
@@ -44,7 +44,7 @@ See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/s
 
 ## Thank you
 
-Thank you to the [open-source contributors](https://github.com/sourcegraph/sourcegraph) who helped make Sourcegraph even better:
+Thank you to the [open source contributors](https://github.com/sourcegraph/sourcegraph) who helped make Sourcegraph even better:
 
 - [@faec](https://github.com/faec): support advanced `repositoryQuery` specification for which GitHub repositories to sync ([PR #482](https://github.com/sourcegraph/sourcegraph/pull/482))
 - [@lukeautry](https://github.com/lukeautry): offline support for JSON Schema resolution ([PR #550](https://github.com/sourcegraph/sourcegraph/pull/550)), fix invalid elapsedMilliseconds ([PR #551](https://github.com/sourcegraph/sourcegraph/pull/551))

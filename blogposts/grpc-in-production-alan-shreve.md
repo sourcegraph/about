@@ -42,7 +42,7 @@ It's a lot of repetitive boilerplate.
 
 ## So let's use gRPC to build a cache service
 
-gRPC is a "high-performance open-source universal RPC framework."
+gRPC is a "high-performance open source universal RPC framework."
 
 Let's build a caching service together using gRPC.
 

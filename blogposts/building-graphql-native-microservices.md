@@ -50,7 +50,7 @@ Graphcool started as a means to have better building blocks for creating GraphQL
 
 While it is easy to get started with Graphcool with a nice user interface, the team has received a lot of feedback from users that they would like to have a way to interact with it more programmatically. Users were also concerned with potential vendor lock-in.
 
-As of today, Graphcool has been open-sourced as a framework to meet these needs.
+As of today, Graphcool has been open sourced as a framework to meet these needs.
 
 ## Graphcool Framework Details
 

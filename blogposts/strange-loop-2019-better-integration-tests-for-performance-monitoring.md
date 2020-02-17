@@ -245,7 +245,7 @@ Key benefits of existing unit testing infrastructure:
 2. track database and memcache usage through mocking libraries
     * I mentioned previously that we have mocking libraries which kick in at the network boundaries of our application when we’re running unit tests.
     * These libraries vary in complexity; some will attempt to mimic the behaviour of the external system with a high degree of fidelity; others will accept an input and return the same, hard-coded output.
-    * One of our more sophisticated libraries is SQLFake; it provides a near-complete in-memory simulation of MySQL. it was recently open-sourced by one of my teammates, and you can check it out on GitHub!
+    * One of our more sophisticated libraries is SQLFake; it provides a near-complete in-memory simulation of MySQL. it was recently open sourced by one of my teammates, and you can check it out on GitHub!
     * On the other hand, our memcache mock is rather simple
         * it mimics a key-value store in memory rather than a distributed key-value store.
     * Because these mocks are developed by us, they give us an incredible amount of flexibility

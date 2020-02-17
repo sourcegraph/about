@@ -12,7 +12,7 @@ published: true
 
 
 
-First, some background: Beyang and I have deep respect for how Google builds software. Beyang interned there, and I've worked with Googlers on many open-source projects, including Chromium. What’s their secret? How are they so good?
+First, some background: Beyang and I have deep respect for how Google builds software. Beyang interned there, and I've worked with Googlers on many open source projects, including Chromium. What’s their secret? How are they so good?
 
 Ask any Google developer, and they’ll give much of the credit to their internal Code Search web app, which lets them navigate and cross-reference the entire codebase by function calls, authors, etc. They’ll tell you that Code Search makes them smarter and more productive. (You may want to time-box the conversation, because they sure love to talk about Code Search!)
 

@@ -12,4 +12,4 @@ published: true
 
 **Update:** Sourcegraph now uses [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) for language support. This blog post has been removed to avoid confusion.
 
-We're still eager to sponsor people to build and improve open-source, LSP-based language servers. [Contact us](/contact) if you're interested, either as a part-time effort or to [join our team](https://github.com/sourcegraph/careers) as a full-time member.
+We're still eager to sponsor people to build and improve open source, LSP-based language servers. [Contact us](/contact) if you're interested, either as a part-time effort or to [join our team](https://github.com/sourcegraph/careers) as a full-time member.

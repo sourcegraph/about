@@ -35,7 +35,7 @@ Already, Sourcegraph is helping developers at startups and large organizations d
 
 [On Sourcegraph, everything in code is clickable (jump-to-def) and has doc tooltips. You can understand code more quickly with these.](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/fmt/-/Fprintf)
 
-**Live usage examples save time and encourage best practices.** With Sourcegraph, you’ll instantly see how any function, class, type, etc., is used across all of your company’s private code and/or open-source code. As a wise developer once said, “The right example is worth a thousand words of documentation.”
+**Live usage examples save time and encourage best practices.** With Sourcegraph, you’ll instantly see how any function, class, type, etc., is used across all of your company’s private code and/or open source code. As a wise developer once said, “The right example is worth a thousand words of documentation.”
 
 ![1*e2ecNFlkz80d0tjK2rgpzw](//images.contentful.com/le3mxztn6yoo/X7Su8GvcsuyY2IiOsOYGS/ab96b46d609614acadf94e8fd9718a29/1_e2ecNFlkz80d0tjK2rgpzw.png)
 

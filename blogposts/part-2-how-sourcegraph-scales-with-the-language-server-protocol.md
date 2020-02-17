@@ -14,7 +14,7 @@ published: true
 
 ## Making Code Intelligence “just work”
 
-In [my last post](https://text.sourcegraph.com/part-1-how-sourcegraph-scales-with-the-language-server-protocol), I introduced the Language Server Protocol as the open-source protocol that we at Sourcegraph believe will enable a new set of developer tools powered by **Code Intelligence**. Code Intelligence, if you recall, is just shorthand for
+In [my last post](https://text.sourcegraph.com/part-1-how-sourcegraph-scales-with-the-language-server-protocol), I introduced the Language Server Protocol as the open source protocol that we at Sourcegraph believe will enable a new set of developer tools powered by **Code Intelligence**. Code Intelligence, if you recall, is just shorthand for
 
 *   jump-to-def
 *   find-references
@@ -79,7 +79,7 @@ Two of the “superpowers” that Sourcegraph provides are cross-repository jump
 
 **Cross-repository jump to definition** lets you jump from the source code of one repository to a definition located in a dependency. On Sourcegraph, this works even if you haven’t vendored your dependencies and, of course, without having to check out any code to your local machine.
 
-**Global usage examples** is like “find references” across all the code in the world. It lets you see how a function or type is used by others, whether they be fellow teammates or open-source developers halfway across the world.
+**Global usage examples** is like “find references” across all the code in the world. It lets you see how a function or type is used by others, whether they be fellow teammates or open source developers halfway across the world.
 
 We’ve thought long and hard about how to implement these abilities, and a good part of that thought process was figuring out how to boil them down to a set of primitives that could be provided by language servers. Here’s the set of endpoints we came up with:
 
@@ -92,7 +92,7 @@ Cross-repository jump to definition and global usage examples are specific to So
 
 #### Integration with package managers and package repositories
 
-More and more language communities are relying on vibrant open-source package ecosystems to share and distribute libraries. A problem that comes with this brave new world, however, is the issue of keeping your dependencies up to date. Wouldn't it be nice if your editor or IDE was aware of the dependencies in your project and could tell you which packages have new versions available for download, or could provide you the set of licenses you’re pulling in through your dependencies? The `workspace/xpackages` endpoint would make this functionality widely available.
+More and more language communities are relying on vibrant open source package ecosystems to share and distribute libraries. A problem that comes with this brave new world, however, is the issue of keeping your dependencies up to date. Wouldn't it be nice if your editor or IDE was aware of the dependencies in your project and could tell you which packages have new versions available for download, or could provide you the set of licenses you’re pulling in through your dependencies? The `workspace/xpackages` endpoint would make this functionality widely available.
 
 #### Advanced definition search
 
@@ -110,6 +110,6 @@ Currently, most editors offer a way to find references to a single definition, b
 
 Both the file-fetching and cross-repository extensions are works in progress. We’re still ironing out the details of the API, and in the meantime have submitted both as proposals to the LSP community for feedback and discussion. The community has been great about providing constructive feedback thus far, and we’re excited to see where the discussion goes.
 
-The extensibility of the Language Server Protocol has made it relatively easy to experiment with new features like those mentioned above without worrying about breaking the backwards compatibility of the [dozens of open-source language servers and LSP editor plugins currently being developed](http://langserver.org/). LSP is both standardizing a lot of what we’ve come to expect from IDEs and editor plugins _and_ enabling new innovation in Code Intelligence like what you see on Sourcegraph. For these reasons, we think it is an invaluable contribution to the larger software ecosystem. We hope you’ll join us in making it the open standard for Code Intelligence.
+The extensibility of the Language Server Protocol has made it relatively easy to experiment with new features like those mentioned above without worrying about breaking the backwards compatibility of the [dozens of open source language servers and LSP editor plugins currently being developed](http://langserver.org/). LSP is both standardizing a lot of what we’ve come to expect from IDEs and editor plugins _and_ enabling new innovation in Code Intelligence like what you see on Sourcegraph. For these reasons, we think it is an invaluable contribution to the larger software ecosystem. We hope you’ll join us in making it the open standard for Code Intelligence.
 
 In the next post in this series, I’ll dive into implementation details of how we make language servers fast. Stay tuned!

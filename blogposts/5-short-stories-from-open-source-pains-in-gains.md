@@ -61,7 +61,7 @@ Hoodie is trying to be one of open source’s most diverse and inclusive communi
 
 ![1*ikoFbqyILY5H9oczYHqoaQ](//images.contentful.com/le3mxztn6yoo/44Xf6DWI3KGgo4mgksy8uk/d1d8064469e910184456edd4ad36342a/1_ikoFbqyILY5H9oczYHqoaQ.jpeg)
 
-A while back, Enrique found a bug in an open-source dependency. He explored the code and submitted a pull request. It took 7 weeks for the change to be merged. He felt that the project was important, though, so he continued to contribute and invest in it. After awhile, one of the contributors invited Enrique to become a contributor himself.
+A while back, Enrique found a bug in an open source dependency. He explored the code and submitted a pull request. It took 7 weeks for the change to be merged. He felt that the project was important, though, so he continued to contribute and invest in it. After awhile, one of the contributors invited Enrique to become a contributor himself.
 
 Open source projects die or fade for a variety of reasons: maintainers move on, lose interest. Why should we rescue projects?
 
@@ -80,7 +80,7 @@ Even if a community is dormant, they can still be woken up and act as a team. Bi
 
 ![1*O9cLEjpyzkAXgqCBsLTkEA](//images.contentful.com/le3mxztn6yoo/6hf0VLR2gMcO2ySoCKk8WC/77e6591edde86e487d8c331e2a22bd1e/1_O9cLEjpyzkAXgqCBsLTkEA.jpeg)
 
-Open source is everywhere, but change is still frightening. Imagine you've discovered a great open-source project, but it’s still unknown to the stakeholders in your org.
+Open source is everywhere, but change is still frightening. Imagine you've discovered a great open source project, but it’s still unknown to the stakeholders in your org.
 
 > Fighting for open source is a lot like Street Fighter.
 

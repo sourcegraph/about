@@ -38,4 +38,4 @@ As we've grown, we've needed to consolidate and standardize on ways of doing thi
 
 As time goes on, gizmo's packages are starting to look more and more like Go kit's. More and more of their developers are using Go kit.
 
-Just open-sourced github.com/NYTimes/marvin, a go-kit HTTP server for the App Engine Standard Environment. Similar to gizmo, tries to give you a composed framework for what a web server looks like.
+Just open sourced github.com/NYTimes/marvin, a go-kit HTTP server for the App Engine Standard Environment. Similar to gizmo, tries to give you a composed framework for what a web server looks like.

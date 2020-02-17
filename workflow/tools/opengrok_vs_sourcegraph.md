@@ -1,6 +1,6 @@
 # Oracle OpenGrok
 
-[Oracle OpenGrok](https://github.com/oracle/opengrok) was traditionally the most popular open-source code search tool. Originally developed inside Sun Microsystems around 2004, it’s now an Oracle open-source project after Oracle acquired Sun.
+[Oracle OpenGrok](https://github.com/oracle/opengrok) was traditionally the most popular open source code search tool. Originally developed inside Sun Microsystems around 2004, it’s now an Oracle open source project after Oracle acquired Sun.
 
 Sourcegraph is a good replacement for OpenGrok for almost every organization.
 
