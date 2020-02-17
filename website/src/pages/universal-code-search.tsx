@@ -42,7 +42,7 @@ export default ((props: any) => (
                         <h5>EBOOK</h5>
                         <h3>Universal code search and intelligence</h3>
                         <h5>How to increase programming productivity and improve code quality</h5>
-                        <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=web&utm_content=universal_code_search">Free download</Link>
+                        <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search">Free download</Link>
                     </div> 
                 </div>
             </ContentSection>
