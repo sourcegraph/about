@@ -3,16 +3,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout'
 export default class CookiesPage extends React.Component<any, any> {
-
-    public componentDidMount(): void {
-        if (document) {
-            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none')
-        }
-    }
-
     public render(): JSX.Element | null {
-        const desc =
-            'Sourcegraph cookie policy'
         return (
             <Layout location={this.props.location}
                 meta={{
