@@ -4,9 +4,9 @@
 
 Our OKRs are public:
 
-- [2020-Q1 (active)](2020_q1.md)
-- [2019-Q4](2019_q4.md)
-- [2019-Q3](2019_q3.md)
+- [FY20-Q1 (active)](2020_q1.md)
+- [CY19-Q4](2019_q4.md)
+- [CY19-Q3](2019_q3.md)
 
 ## What are OKRs?
 
@@ -66,15 +66,15 @@ Each OKR has the following format:
    - If a key result has a complex definition (more than a few words), link to a handbook page with the precise definition instead of inlining it in the OKR list.
    - Key results can be links to issues or [RFCs](../../handbook/communication/rfcs/index.md).
    - Examples:
-     - Good (quantitative): `$M net new ARR`, `100% of monthly releases ship on time`
+     - Good (quantitative): `$M IARR`, `100% of monthly releases ship on time`
      - Good (human judgment): `Support LSIF-based code intel in targeted languages (Go, JavaScript/TypeScript, Python, Java, C#, and C/C++)` because quantitatively defining this has proven to be unproductive
      - Bad: `Create an effective pitch for Fortune 500 prospects` because "effective" is not defined and different people are likely to have a wide variety of opinions about what it means
 1. The `=> Outcome.` part is only added/updated after the quarter starts.
-1. Top-level CEO OKRs may just be short phrases (such as `Net new ARR`) instead of listing out key results when those key results would be redundant with the sub-OKRs.
+1. Top-level CEO OKRs may just be short phrases (such as `IARR`) instead of listing out key results when those key results would be redundant with the sub-OKRs.
 
 ### Sensitive information
 
-Do not include any specific financial numbers, customer names, or any other sensitive information in the public OKR document. Instead, use placeholders (such as `N` and `M` for 2 numbers or `C1` and `C2` for 2 customers) and document their meanings in the linked `OKRs YYYY-QN` Google Doc's `Key for sensitive information` section.
+Do not include any specific financial numbers, customer names, or any other sensitive information in the public OKR document. Instead, use placeholders (such as `N` and `M` for 2 numbers or `C1` and `C2` for 2 customers) and document their meanings in the linked `OKRs FYYY-QN` Google Doc's `Key for sensitive information` section.
 
 ### Changing OKRs mid-quarter
 

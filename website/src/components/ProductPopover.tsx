@@ -45,14 +45,14 @@ const ProductPopoverBody: React.FunctionComponent<any> = () => {
                     />
                     <div>
                         <h4 className="mt-1 mb-0">Sourcegraph</h4>
-                        <small className="text-muted">The new standard developer platform</small>
+                        <small className="text-muted">Universal Code Search</small>
                     </div>
                 </Link>
                 <Link
-                    to="/developer-platform"
+                    to="/universal-code-search"
                     className={`product-popover-body__use-case-link list-group-item list-group-item-action px-2 font-weight-bold border-0 ${itemClassName}`}
                 >
-                    What is a developer platform?
+                    What is Universal Code Search?
                 </Link>
             </div>
             <div className="text-muted mt-3 mb-2 mx-2 font-weight-normal">Popular Sourcegraph use cases</div>

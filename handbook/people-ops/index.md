@@ -8,7 +8,7 @@
 - [All-remote work](../../company/remote/index.md)
 - [Hiring](hiring.md)
 - [Onboarding](onboarding/index.md)
-- Performance reviews (coming soon)
+- [Performance review cycles](review-cycles.md)
 - [Leaving](leaving.md)
 
 ## Benefits
@@ -20,9 +20,6 @@
 - [Vacation/FTO](https://github.com/sourcegraph/Graphbook/blob/master/Holidays,%20FTO,%20and%20leaves%20of%20absence/Vacation%20and%20FTO.md)
 - [Holidays](holidays.md)
 
-## Other
-- [Glossary](from-graphbook/glossary.md)
-
 ## [Roles](roles.md)
 
 See job descriptions and responsibilities of roles on the People Ops team:
@@ -31,8 +28,8 @@ See job descriptions and responsibilities of roles on the People Ops team:
 
 ## General office information
 
-### Address and contact information
+### Business address and contact information
 
-**Address:** 142 Minna St. 2nd Floor, San Francisco, CA 94105
+**Address:** Covo Coworking: 981 Mission St, San Francisco, CA 94103
 
 **Phone Number:** (650) 318-3480

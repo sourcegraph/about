@@ -7,6 +7,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Sales team onboarding](onboarding/index.md)
 - [Sales interviews](interviews/index.md)
 - [Recording lead and customer emails, calls, and notes](records.md)
+- [Creating and maintaining license keys for customers](license_keys.md)
 
 ## Pipeline and models
 
@@ -27,6 +28,20 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 Annual Recurring Revenue (ARR) is the dollar value of contracted recurring revenue in a (normalized) one-year period.
 
+### IARR
+
+Incremental [ARR](#arr) (IARR) is the change in ARR from one period to another.
+
+### New IARR
+
+New [IARR](#iarr) is IARR from *new customers* (i.e., organizations that were **not** existing customers at the beginning of the period). See also [expansion IARR](#expansion-iarr).
+
+### Expansion IARR
+
+Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations that were already customers at the beginning of the period).
+
+If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
+
 ### Customer
 
 A customer is an organization with a Sourcegraph subscription contract that has not ended.
@@ -37,6 +52,8 @@ A customer is an organization with a Sourcegraph subscription contract that has 
 1. If an organization's contract will start in the future, they are still considered a customer. (This can happen when we agree to have a contract start on the next 1st of the month because that makes life easier for a customer, for example.)
 
 ## Stages
+
+See also the [MQL (marketing-qualified lead) definition](../marketing/index.md#mql).
 
 ### Prospect
 
@@ -57,14 +74,14 @@ The **Prospect** stage is for leads where **ALL** of the following are true:
 
 > ~10% probability of winning
 
-The **Lead** stage is for leads where **ALL** of the following are true:
+The **Lead** stage is for leads that are sales qualified (i.e., SQLs), which means **ALL** of the following are true:
 
 1. After vetting/qualifying, we have sufficient info to believe they may fit our criteria to be a customer, and Sales should continue to pursue.
    - Note that Sales is responsible for reviewing the prospects that come through our automated channels. If there are prospects you connect with yourself and believe they are a lead, please send an email to intro the contact to Sales.
 1. The potential deal size >= $22,800 ARR
    - Take their total # of developers company-wide and multiply it by $19, and then multiply it by 12 months
    - Rationale for the $19 is because it’s the lower number of our 2 pricing models and allows for a conservative ARR estimate, accounting for the customer potentially opting for the discounted plan
-      - As a rule of thumb, this equates to 100 developers in their company!
+      - As a rule of thumb, this equates to 100 developers in their company
       - As we wouldn’t yet have their exact developer figure at this point, we must take the best guess with the info provided online (LinkedIn), or from conversations with a Prospect
       - If they don’t meet this criteria, we could discuss internally on whether Sourcegraph would benefit from having this company as a customer (e.g., reputable logo, we want to support a non-profit org’s mission, we can partner with them in multiple ways, etc.).
 1. We *have* reached out to them requesting a call/meeting to introduce Sourcegraph’s offering, but the call/meeting has *not* occurred yet (i.e. it is still upcoming on the calendar, or they have not yet responded with agreement for the call/meeting).
