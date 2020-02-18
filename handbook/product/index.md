@@ -24,7 +24,6 @@ See job descriptions and responsibilities of roles on the Product team:
 - [Delivery plans](delivery_plans.md) - how validate the things we build solve user problems.
 - [Prioritizing](prioritizing.md) - how we prioritize work, and how to get things prioritized.
 - [Tracking user feedback](user_feedback.md) - sources of feedback and how we keep track of that feedback.
-- [How we track issues](issue_tracking.md)
 
 ## Release early, release often
 
