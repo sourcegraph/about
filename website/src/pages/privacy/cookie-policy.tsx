@@ -22,8 +22,8 @@ export default class CookiesPage extends React.Component<any, any> {
                         'About.sourcegraph.com uses cookies.'
                  }}
             >
-                <ContentPage title="Sourcegraph cookie policy" description="How about.sourcegraph.com uses cookies.">
-                    <ContentSection color="white" className="py-5">
+                <ContentPage title="Sourcegraph cookie policy" description="How we use cookies.">
+                    <ContentSection color="white" className="pb-5">
                         <div className="content-page__body">
                             <script id="CookieDeclaration" data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d" src="https://consent.cookiebot.com/fb31dc3e-afb3-4be8-ae84-7090bba7797d/cd.js" type="text/javascript" async></script>
                         </div>
