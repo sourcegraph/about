@@ -4,9 +4,9 @@ title: Security is core to everything we do
 permalink: security
 ---
 
-## We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We&#39;ve detailed our strict production security guidelines for customers below.
+## We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We've detailed our strict production security guidelines for customers below
 
-We don&#39;t stop at keeping your code safe. When your team&#39;s developers use Sourcegraph, they can discover and use your own security best practices much more easily in your own code. Your team can also more easily enforce security standards during code review.
+We don't stop at keeping your code safe. When your team's developers use Sourcegraph, they can discover and use your own security best practices much more easily in your own code. Your team can also more easily enforce security standards during code review.
 
 If you have specific questions or concerns, contact us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>.
 
@@ -22,7 +22,7 @@ Additionally, other than the email address of the initial installer (for custome
 
 Learn more in our [pings documentation](https://docs.sourcegraph.com/admin/pings).
 
-## Code host ACLs 
+## Code host ACLs
 
 [Sourcegraph can be configured to enforce repository permissions from code hosts.](https://docs.sourcegraph.com/admin/repo/permissions). Unit and integration tests protect the correctness of these permissions checks.
 
@@ -54,9 +54,10 @@ Sourcegraph supports HTTPS encryption when deployed on-premises.
 
 ## Development
 
-Code reviews are mandatory for all code changes to our product. Security-sensitive pull requests must undergo [review by the proper security code owner](code_reviews.md#security). Furthermore, we use Sourcegraph to provide critical context during code reviews (such as identifying dependencies of modified code).
+Code reviews are mandatory for all code changes to our product. Security-sensitive pull requests must undergo [review by the proper security code owner](../handbook/engineering/code_reviews#security). Furthermore, we use Sourcegraph to provide critical context during code reviews (such as identifying dependencies of modified code).
 
 We use a number of static analysis tools to identify security risks in development, including the following:
+
 - Language-specific linters
 - Notifications and alerts for risky code patterns using Sourcegraph saved searches
 - Code coverage tools to ensure unit test coverage
@@ -78,7 +79,7 @@ We will send payment to a valid PayPal account after the issue is confirmed fixe
 We may choose to not issue a reward if any of the following apply:
 
 1. You engage in disruptive behavior on sourcegraph.com itself (e.g. spamming our system with requests, fake accounts, denial of service). Sourcegraph is [open source software](https://github.com/sourcegraph/sourcegraph), so you can [install a copy yourself](https://docs.sourcegraph.com/#quickstart-guide) and test against that instead.
-1. You publically disclose a vulnerability before we have fixed it.
+1. You publicly disclose a vulnerability before we have fixed it.
 1. You spam us with duplicate and/or low quality vulnerability reports (e.g. copy/pasting generic issues from automatic scanning tools).
 1. You are a current or former teammate at Sourcegraph (e.g. employee, contractor, intern).
 1. You are friends or family with a current or former teammate at Sourcegraph.
