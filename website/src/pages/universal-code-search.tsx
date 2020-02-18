@@ -9,41 +9,57 @@ import { CustomerLogosSection } from '../components/product/CustomerLogosSection
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 
 export default ((props: any) => (
-    <Layout location={props.location}
+    <Layout
+        location={props.location}
         meta={{
-            title:
-                'What is Universal Code Search',
+            title: 'What is Universal Code Search',
             description:
-                'Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems.'
-            }}
+                'Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems.',
+        }}
     >
-        <ContentPage
-            title="What is Universal Code Search?"
-        >
+        <ContentPage title="What is Universal Code Search?">
             <ContentSection color="white" className="pt-6 pb-5">
-            <div className="row justify-content-md-center">
-                <div className="col-md-10">
-                    <h3 class="text-center">Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems.</h3>
-                    <p>It ties together information from many tools, from repositories on your code host to dependency relationships among your projects and application runtime information.</p>
-                    
-                    <p>
-                        <a href="#used-by">Google, Facebook, Uber, Lyft, Yelp, and other elite software organizations</a>{' '}
-                        rely on Universal Code Search, not just code hosts.
-                    </p>
+                <div className="row justify-content-md-center">
+                    <div className="col-md-10">
+                        <h3 class="text-center">
+                            Universal Code Search is the one place where developers and DevOps teams go to answer
+                            questions about code and systems.
+                        </h3>
+                        <p>
+                            It ties together information from many tools, from repositories on your code host to
+                            dependency relationships among your projects and application runtime information.
+                        </p>
+
+                        <p>
+                            <a href="#used-by">
+                                Google, Facebook, Uber, Lyft, Yelp, and other elite software organizations
+                            </a>{' '}
+                            rely on Universal Code Search, not just code hosts.
+                        </p>
+                    </div>
                 </div>
-            </div>
             </ContentSection>
-            <ContentSection color="primary" className="py-5">
+            <ContentSection color="gray" className="py-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-3 text-center">
-                        <img src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg" alt="Download: Universal Code Search and Intelligence" width="170" />
-                    </div>                        
+                        <img
+                            src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
+                            alt="Download: Universal Code Search and Intelligence"
+                            width="170"
+                            className="universal-code-search--glow"
+                        />
+                    </div>
                     <div className="col-md-6">
                         <h5>EBOOK</h5>
                         <h3>Universal code search and intelligence</h3>
                         <h5>How to increase programming productivity and improve code quality</h5>
-                        <Link className="btn btn-lg btn-outline-light mt-3 font-weight-normal" to="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search">Free download</Link>
-                    </div> 
+                        <Link
+                            className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal "
+                            to="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search"
+                        >
+                            Free download
+                        </Link>
+                    </div>
                 </div>
             </ContentSection>
             <ContentSection color="purple" className="py-5">
@@ -51,8 +67,8 @@ export default ((props: any) => (
                     <div className="col-md-12">
                         <h2 class="text-center">A code host is no longer enough</h2>
                         <p>
-                            Historically, the code host (such as GitHub) provided search. But the most elite
-                            software development organizations such as Google, Facebook, Uber, Lyft, and Yelp realized that a
+                            Historically, the code host (such as GitHub) provided search. But the most elite software
+                            development organizations such as Google, Facebook, Uber, Lyft, and Yelp realized that a
                             code host isn't enough:
                         </p>
                     </div>
@@ -62,7 +78,8 @@ export default ((props: any) => (
                         <ul>
                             <li className="mb-3">
                                 With more code and more repositories, <strong>cross-repository code search</strong> is
-                                necessary. <br />&nbsp;
+                                necessary. <br />
+                                &nbsp;
                             </li>
                             <li className="mb-3">
                                 With more internal libraries, services, and APIs owned by disparate teams,{' '}
@@ -73,8 +90,8 @@ export default ((props: any) => (
                     <div className="col-md-6">
                         <ul>
                             <li className="mb-3">
-                                With faster development cycles and more intricately connected systems, developers need to{' '}
-                                <strong>understand how a change affects other components in code review</strong>.
+                                With faster development cycles and more intricately connected systems, developers need
+                                to <strong>understand how a change affects other components in code review</strong>.
                             </li>
                             <li className="mb-3">
                                 With more tools collecting error and performance data about code, developers need to see{' '}
@@ -117,7 +134,9 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="primary" className="py-5">
                 <h3 className="text-center">Universal Code Search</h3>
-                <p className="text-center">Universal Code Search must have these things. Anything else is just a code host.</p>
+                <p className="text-center">
+                    Universal Code Search must have these things. Anything else is just a code host.
+                </p>
                 <div className="row mt-5">
                     <div className="col-md-4 pr-5">
                         <h5>Code</h5>
@@ -153,7 +172,9 @@ export default ((props: any) => (
                 <div className="row mt-5">
                     <div className="col-md-6 col-lg-4 mb-3 pr-5">
                         <h4>Google CodeSearch</h4>
-                        <h5><em>internal-only tool</em></h5>
+                        <h5>
+                            <em>internal-only tool</em>
+                        </h5>
                         <ul className="pl-3">
                             <li>
                                 Used 5-10 times daily by almost every Google technical employee for the last 10+ years
@@ -189,8 +210,12 @@ export default ((props: any) => (
                         />
                     </div>
                     <div className="col-md-6 col-lg-4 mb-3 pr-5">
-                        <h4>Facebook BigGrep/<abbr title="The Big Grep Search">TBGS</abbr></h4>
-                        <h5><em>internal-only tool</em></h5>
+                        <h4>
+                            Facebook BigGrep/<abbr title="The Big Grep Search">TBGS</abbr>
+                        </h4>
+                        <h5>
+                            <em>internal-only tool</em>
+                        </h5>
                         <ul className="pl-3">
                             <li>Used daily by almost every Facebook technical employee for the last ~8 years</li>
                             <li>
@@ -218,8 +243,10 @@ export default ((props: any) => (
                         />
                     </div>
                     <div className="col-md-12 col-lg-4 mb-3 pr-5">
-                        <h4><img style={{ width: '17px', height: '17px' }} src="/sourcegraph/sourcegraph-mark.svg" />{' '}
-                            Sourcegraph</h4>
+                        <h4>
+                            <img style={{ width: '17px', height: '17px' }} src="/sourcegraph/sourcegraph-mark.svg" />{' '}
+                            Sourcegraph
+                        </h4>
                         <h5>Used by Uber, Lyft, Yelp, and more</h5>
                         <ul className="pl-3">
                             <li>Every developer at these organizations uses Sourcegraph</li>
