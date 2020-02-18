@@ -43,10 +43,10 @@ Tracking issues are GitHub issues that encapsulate the planned work for an itera
 
 Teams should aggressively prioritize work for the iteration so that expectations can be set accordingly with users waiting for features or bug fixes. If work is carried over for multiple iterations it is an indication that the priority of that item is not actually as high as believed, or that the team is trying to do too many things in an iteration. Engineering can lean on Product for help with prioritization.
 
-### Delivery plans
+### [Delivery plans](delivery_plans.md)
 
 See [delivery plans](delivery_plans.md).
 
-### Prioritizing
+### [Prioritizing](prioritizing.md)
 
 See [prioritizing](prioritizing.md).
