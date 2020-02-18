@@ -24,8 +24,6 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                         <iframe
                             src="https://player.vimeo.com/video/372590007?color=0CB6F4&amp;title=0&amp;byline="
                             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                            webkiallowfullscreen="true"
-                            mozallowfullscreen="true"
                             allowFullScreen={true}
                         />
                     </div>
