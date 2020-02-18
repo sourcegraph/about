@@ -1,6 +1,5 @@
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout'
 export default class CookiesPage extends React.Component<any, any> {
     constructor(props: any) {
@@ -22,13 +21,13 @@ export default class CookiesPage extends React.Component<any, any> {
             >
                 <div className="bg-white text-dark">
                     <section>
-                        <div class="content-page__title">
+                        <div className="content-page__title">
                             <h1>Sourcegraph Cookie Policy</h1>
                         </div>
                     </section>
                     <section>
-                        <div class="content-page__body">
-                            <script id="CookieDeclaration" src="https://consent.cookiebot.com/fb31dc3e-afb3-4be8-ae84-7090bba7797d/cd.js" type="text/javascript" async></script>
+                        <div className="content-page__body">
+                            <script id="CookieDeclaration" data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d" src="https://consent.cookiebot.com/fb31dc3e-afb3-4be8-ae84-7090bba7797d/cd.js" type="text/javascript" async></script>
                         </div>
                     </section>
                 </div>
