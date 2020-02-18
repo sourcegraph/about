@@ -53,7 +53,6 @@ func main() {
 		"attfarhan":       "",
 		"beyang":          "",
 		"bot":             "",
-		"chrismwendt":     "",
 		"christinaforney": "",
 		"dadlerj":         "",
 		"efritz":          "",
