@@ -23,8 +23,19 @@ You will be asked the following questions:
     - What specific product or engineering decisions will be made by having this data?
     - Will this data be needed from every single installation, or only from a select few? Will it be needed forever, or only for a short time?
     - Have you considered alternatives? E.g., collecting this data from Sourcegraph.com, or adding a report for admins that we can request from some number of friendly customers?
-2. When the RFC is approved, use the [life of a ping documentation](https://docs.sourcegraph.com/dev/architecture/life-of-a-ping) to implement the change. At least one member of the Business Operations team must approve the resulting PR before it can be merged.
+2. When the RFC is approved, use the [life of a ping documentation](https://docs.sourcegraph.com/dev/architecture/life-of-a-ping) and [an example PR](https://github.com/sourcegraph/sourcegraph/pull/8374) to implement the change. At least one member of the Business Operations team must approve the resulting PR before it can be merged.
     - Ensure a CHANGELOG entry is added, and that the two sources of truth for ping data are updated along with your PR:
       - Pings documentation: https://docs.sourcegraph.com/admin/pings
       - The Site-admin > Pings page, e.g.: https://sourcegraph.com/site-admin/pings
-3. Request help from the Business Operations team to add the new field(s) to BigQuery and Looker. 
+3. Determine if any transformations/ETL jobs are required, and if so, add them to the [script](https://console.cloud.google.com/storage/browser/_details/sg-analytics-data/dataflow/pipelines/udf/transform.js?project=telligentsourcegraph&authuser=0&angularJsUrl=%2Fstorage%2Fbrowser%2F_details%2Fsg-analytics-data%2Fdataflow%2Fpipelines%2Fudf%2Ftransform.js%3Fproject%3Dtelligentsourcegraph%26authuser%3D1)
+4. Open a PR to change [the schema](https://github.com/sourcegraph/analytics/tree/master/BigQuery%20Schemas) with Business Operations (EricB and Dan) as approvers. Keep in mind:
+	- Check the data types sent in the JSON match up with the BigQuery schema (e.g. aA JSON '1' will not match up with a BigQuery integer). 
+	- Every field in the BigQuery schema should be `"mode": "NULLABLE"`. There will be instances on the older Sourcegraph versions that will not be sending new data fields, and this will cause pings to fail.
+
+
+## Changing the BigQuery schema
+
+1. Use the merged JSON to update the schema in the test table `ericbrodymoore$ bq --project_id=telligentsourcegraph update --schema schema.json sourcegraph_analytics.update_checks_backup`
+2. Once the test is complete and the changes are ready to be implemented, run the same command on the table `ericbrodymoore$ bq --project_id=telligentsourcegraph update --schema schema.json sourcegraph_analytics.update_checks`
+
+To get the current schema for any reason, use `bq --project_id=telligentsourcegraph --format=prettyjson show sourcegraph_analytics.update_checks > schema.json`
