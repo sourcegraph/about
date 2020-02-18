@@ -1,6 +1,7 @@
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import * as React from 'react'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
+import { Vimeo } from '../../components/Vimeo'
 
 export const GitLabIntegrationSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="gitlab-integration" className="gitlab-integration-section py-5 container-fluid justify-content-center d-flex">
@@ -20,13 +21,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                     <footer>Sid Sijbrandij, GitLab CEO</footer>
                 </div>
                 <div className="container mb-4">
-                    <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                        <iframe
-                            src="https://player.vimeo.com/video/372590007?color=0CB6F4&amp;title=0&amp;byline="
-                            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                            allowFullScreen={true}
-                        />
-                    </div>
+                    <Vimeo id={372590007}/>
                 </div>
                 <p className="home__intro-text font-weight-light">
                     GitLab and Sourcegraph just announced a partnership to provide code navigation natively to GitLab
