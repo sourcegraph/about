@@ -52,7 +52,7 @@ Sourcegraph couldn't be what it is without the community
 
 Quickly toggle between case sensitive and case insensitive queries using the `Aa` icon in the search field. Previously, this filter was applied by adding `case:yes` to the search query. The toggle simplifies and standardizes this functionality.
 
-## Create draft  campaigns
+## Create draft campaigns
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
