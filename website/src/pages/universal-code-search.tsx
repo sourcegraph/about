@@ -7,7 +7,6 @@ import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
-import Helmet from 'react-helmet'
 
 export default ((props: any) => (
     <Layout
@@ -18,21 +17,11 @@ export default ((props: any) => (
                 'Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems.',
         }}
     >
-        <Helmet>
-            <style dangerouslySetInnerHTML={{__html: `>.async-hide { opacity: 0 !important}`}} />
-            <script>
-                {`(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-            })(window,document.documentElement,'async-hide','dataLayer',4000,
-            {'GTM-TB4NLS7':true});`}
-            </script>
-        </Helmet>
         <ContentPage title="What is Universal Code Search?">
             <ContentSection color="white" className="pt-6 pb-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-10">
-                        <h3 className="text-center">
+                        <h3 class="text-center">
                             Universal Code Search is the one place where developers and DevOps teams go to answer
                             questions about code and systems.
                         </h3>
@@ -76,7 +65,7 @@ export default ((props: any) => (
             <ContentSection color="purple" className="py-5">
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className="text-center">A code host is no longer enough</h2>
+                        <h2 class="text-center">A code host is no longer enough</h2>
                         <p>
                             Historically, the code host (such as GitHub) provided search. But the most elite software
                             development organizations such as Google, Facebook, Uber, Lyft, and Yelp realized that a
