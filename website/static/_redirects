@@ -69,5 +69,7 @@
 /developer-platform /universal-code-search 301
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301
-/product/code-alerts-automation /product/automation 301
+/product/code-alerts-automation /product/code-change-management 301
+/product/automation /product/code-change-management 301
 /product/server /product 301
+/contact/request-automation-demo /contact/request-code-change-management-demo 301

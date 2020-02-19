@@ -201,10 +201,9 @@ img.icon-inline,
 code {
     background-color: #f2f4f8;
     display: inline-block;
-    padding: .1rem .3rem;
+    padding: 0.1rem 0.3rem;
     font-size: 0.9em;
 }
-
 
 pre {
     code {
@@ -245,7 +244,7 @@ pre {
 @import 'pages/plan';
 @import 'pages/pricing';
 @import 'pages/product/code-search-navigation';
-@import 'pages/product/automation';
+@import 'pages/product/code-change-management';
 @import 'pages/sales';
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';

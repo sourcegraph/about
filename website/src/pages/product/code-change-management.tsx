@@ -13,16 +13,16 @@ import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { Vimeo } from '../../components/Vimeo'
 import {
-    RequestAutomationDemoAction,
-    RequestAutomationDemoActionNow,
+    RequestCodeChangeManagementDemoAction,
+    RequestCodeChangeManagementDemoActionNow,
 } from '../../css/components/actions/RequestDemoAction'
 import { eventLogger } from '../../EventLogger'
 
-const title = 'Automation'
+const title = 'Code change management'
 const description =
-    'Automate large-scale code changes to remove legacy code, fix critical security issues, and pay down tech debt.'
+    'Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt. Compute changes, create branches, and track pull requests across all affected repositories.'
 const seeItInActionClicked = () => {
-    eventLogger.trackAutomationSeeItInActionButtonClicked()
+    eventLogger.trackCampaignsSeeItInActionButtonClicked()
 }
 
 export const CampaignsTable: React.FunctionComponent<{
@@ -30,11 +30,11 @@ export const CampaignsTable: React.FunctionComponent<{
 }> = ({ campaigns }) => (
     <div className="pricing-table">
         <div id="code-search" className="pricing-table__item row border-bottom border-gray">
-            <h5 className="col text-uppercase text-muted font-weight-bold">Built-in automation campaigns</h5>
+            <h5 className="col text-uppercase text-muted font-weight-bold">Example campaigns</h5>
         </div>
 
-        {campaigns.map(campaign => (
-            <div className="pricing-table__item row border-bottom border-gray">
+        {campaigns.map((campaign, i) => (
+            <div className="pricing-table__item row border-bottom border-gray" key={i}>
                 <div className="col-9 pricing-table__item-name">
                     <div className="p-2">{campaign}</div>
                 </div>
@@ -64,21 +64,17 @@ export default ((props: any) => (
     >
         <ContentPage
             title={title}
-            className="automation"
-            titleClassName="automation display-3"
+            className="code-change-management"
+            titleClassName="code-change-management display-3"
             description={description}
             mainActions={
                 <div className="d-flex flex-column align-items-center">
-                    <RequestAutomationDemoAction className="mt-3" />
+                    <RequestCodeChangeManagementDemoAction className="mt-3" />
                 </div>
             }
         >
             <ContentSection color="white" className="pt-6 pb-2">
-                <h2 id="most-elite-teams-invest-heavily-code-change-automation" className="display-3 mb-5">
-                    The most elite teams invest
-                    <br />
-                    heavily in code change automation
-                </h2>
+                <h2 className="display-3 mb-5">Leading dev teams invest heavily in code&nbsp;change&nbsp;management</h2>
                 <div className="row justify-content-lg-center">
                     <div className="col text-center">
                         <a
@@ -118,8 +114,8 @@ export default ((props: any) => (
                         />
                     </div>
                 </div>
-                <h2 id="automation-helps-teams-move-more-quickly" className="text-center display-4 mb-3 mt-4">
-                    How automation helps teams move quickly and safely
+                <h2 className="text-center display-4 mb-3 mt-4">
+                    How code&nbsp;change&nbsp;campaigns help teams move quickly and safely
                 </h2>
                 <div className="row mt-4">
                     <div className="col-lg-4 mb-4">
@@ -144,7 +140,7 @@ export default ((props: any) => (
                     </div>
                     <div className="col-lg-4 mb-4">
                         <IconItem className="position-relative" icon={NotificationsActiveIcon} color="green">
-                            <h4>Dependency updates</h4>
+                            <h4>Keep dependencies up-to-date</h4>
                             <p>
                                 Keep your library dependencies <i>and how you use those libraries</i> up-to-date and
                                 consistent across all of your organization's code, to avoid old bugs or security
@@ -159,17 +155,17 @@ export default ((props: any) => (
                         <IconItem className="position-relative" icon={PlaylistAddCheckIcon} color="brand-orange">
                             <h4>Deploy new static analysis gradually in the developer workflow</h4>
                             <p>
-                                Increase adoption of automatic linters and enable progressively stricter rules across
-                                all of your organization's code, so you can continuously improve the quality of all of
-                                your code. Developers will see diagnostics and fixes in their editor and on their code
-                                host to gently nudge them toward adherence, and you can enforce rules after a certain
-                                time period.
+                                Increase adoption of linters and enable progressively stricter rules across all of your
+                                organization's code, so you can continuously improve the quality of all of your code.
+                                Developers will see diagnostics and fixes in their editor and on their code host to
+                                gently nudge them toward adherence, and you can enforce rules after a certain time
+                                period.
                             </p>
                         </IconItem>
                     </div>
                     <div className="col-lg-4 mb-4">
                         <IconItem className="position-relative" icon={BuildIcon} color="blue">
-                            <h4>Consistent build and deploy configuration</h4>
+                            <h4>Standardize build and deploy configuration</h4>
                             <p>
                                 Keep the build and deployment configurations up-to-date and consistent across all of
                                 your organization's code, so that you can iterate and deploy continuously and reliably
@@ -179,17 +175,14 @@ export default ((props: any) => (
                     </div>
                 </div>
                 <h2 id="easily-define-campaigns-track-progress" className="text-center display-4 mb-3 mt-4">
-                    Easily define campaigns and track their progress
+                    Easily run campaigns and track their progress
                 </h2>
                 <div className="container-fluid">
                     <div className="row mt-4 justify-content-md-center">
                         <div className="col-lg-10">
                             <p>
-                                Sourcegraph's automation lets you create campaigns, which are collections of pull
-                                requests and issues across multiple repositories. The following campaign types are built
-                                in, and you can create other ad-hoc campaigns from the UI or use the{' '}
-                                <a href="https://docs.sourcegraph.com/extensions">Sourcegraph extension API</a> for more
-                                advanced campaigns:
+                                Sourcegraph lets you create campaigns, which compute diffs and create branches and pull
+                                requests across multiple repositories. Use it for these common types of campaigns:
                             </p>
                         </div>
                         <div className="col-lg-8 mt-4">
@@ -210,10 +203,10 @@ export default ((props: any) => (
 
                 <div className="row mt-5 justify-content-md-center">
                     <p className="col-lg-10">
-                        When you create a campaign, Sourcegraph automatically creates pull requests and issues as needed
-                        with the correct reviewers and context—and keeps them up-to-date. You can track the progress of
-                        the campaign with the burndown chart and see all related activity across all repositories. All
-                        this makes completing the campaign as fast and painless as possible.
+                        When you create a campaign, Sourcegraph creates branches and pull requests as needed with the
+                        correct reviewers and context—and keeps them up-to-date. You can track the progress of the
+                        campaign with the burndown chart and see all related activity across all repositories. All this
+                        makes completing the campaign as fast and painless as possible.
                     </p>
                 </div>
             </ContentSection>
@@ -223,8 +216,7 @@ export default ((props: any) => (
                 </h2>
                 <div className="row justify-content-md-center">
                     <p className="text-center">
-                        Watch how to use Sourcegraph to automate the deprecation of a JavaScript library across 100+
-                        projects.
+                        Watch how to use Sourcegraph to the deprecate a JavaScript library across 100+ repositories.
                     </p>
                 </div>
                 <Vimeo id={355392896} muted={false} className="mt-4" />
@@ -237,12 +229,12 @@ export default ((props: any) => (
             </ContentSection>
             <Jumbotron
                 color="purple"
-                className="request-automation-demo-footer py-4"
+                className="request-campaigns-demo-footer py-4"
                 logomark={false}
-                title="Request a Sourcegraph automation demo"
-                description="Stay on top of risks and automate changes in your code so your developers can focus on coding tasks that truly require their human brain."
+                title="Request a Sourcegraph code change management demo"
+                description="With code change management, large-scale fixes and changes that previously took weeks or months can be completed in hours."
             >
-                <RequestAutomationDemoActionNow />
+                <RequestCodeChangeManagementDemoActionNow />
             </Jumbotron>
         </ContentPage>
     </Layout>

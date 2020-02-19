@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.10: Improved search autocompletion, native GitLab integration, and search and replace automation campaigns"
+title: "Sourcegraph 3.10: Improved search autocompletion, native GitLab integration, and search and replace campaigns"
 author: Christina Forney
 publishDate: 2019-11-20T10:00-07:00
 tags: [blog]
@@ -83,7 +83,7 @@ errors.New(fmt.Sprintf(:[args]))
 fmt.Errorf(:[args])
 ```
 
-Sourcegraph Automation campaigns are in private beta. [Watch the Automation screencasts](https://about.sourcegraph.com/product/automation#see-it-in-action) to see what we have planned and [apply for early access](https://about.sourcegraph.com/contact/request-automation-demo/) to Automation for your organization.
+Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
 ## Precise LSIF-based code intelligence for 5 languages
 
@@ -136,7 +136,7 @@ As part of Sourcegraph’s ongoing commitment to providing the highest quality, 
 - Fields of type `String` in our GraphQL API that contain [JSONC](https://komkom.github.io/) now have the custom scalar type `JSONCString`. [#6209](https://github.com/sourcegraph/sourcegraph/pull/6209)
 - `ZOEKT_HOST` environment variable has been deprecated. Please use `INDEXED_SEARCH_SERVERS` instead. `ZOEKT_HOST` will be removed in 3.12.
 - Directory names on the repository tree page are now shown in bold to improve readability.
-- Added support for Bitbucket Server pull request activity to the [Automation](https://about.sourcegraph.com/product/automation/) campaign burndown chart. When used, this feature leads to more requests being sent to Bitbucket Server, since Sourcegraph needs to keep track of how a pull request's state changes over time. With [the instance scoped webhooks](https://docs.google.com/document/d/1I3Aq1WSUh42BP8KvKr6AlmuCfo8tXYtJu40WzdNT6go/edit) in our [Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin/pull/10) as well as up-coming [heuristical syncing changes](#6389), this additional load will be significantly reduced in the future.
+- Added support for Bitbucket Server pull request activity to the [campaign](https://about.sourcegraph.com/product/code-change-management) burndown chart. When used, this feature leads to more requests being sent to Bitbucket Server, since Sourcegraph needs to keep track of how a pull request's state changes over time. With [the instance scoped webhooks](https://docs.google.com/document/d/1I3Aq1WSUh42BP8KvKr6AlmuCfo8tXYtJu40WzdNT6go/edit) in our [Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin/pull/10) as well as up-coming [heuristical syncing changes](#6389), this additional load will be significantly reduced in the future.
 
 ### Fixed
 

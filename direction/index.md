@@ -17,13 +17,13 @@ We're continually improving Sourcegraph's core features for developers:
 
 - Code search and navigation (with code intelligence)
 - Integration into code review
-- Automation of large-scale code changes
+- Code change management campaigns
 
 Our current product priorities are:
 
 - Usability: Sourcegraph is intuitive to use for anyone looking for answers about their code, and easy for admins to configure and maintain.
 - Scalability: Sourcegraph performs reliably at scale for our largest customers.
-- Automation: clean up tech debt and make other large-scale code changes across your entire code base.
+- Code change management campaigns: fix and change things across all of your repositories.
 
 ## In 3-6 months, Sourcegraph will have:
 
@@ -37,6 +37,6 @@ Improving upon on our [basic code intelligence](https://docs.sourcegraph.com/use
 
 Sourcegraph performs at the scale of our largest customers under a wide variety of configurations and deployment infrastructure. [Code search is fast at large scale](https://docs.google.com/document/d/18w8T_KzYxQye8wg1g01QpMOX4_ERTtbOxMBRYaOEkmk/edit?usp=sharing) (~80k repositories), and the API can support enterprise level usage. Sourcegraph enforces repository permissions using ACLs from Bitbucket Server, GitHub, and GitLab. Admins understand the health of their instances and are alerted proactively if things fail.
 
-### Large-scale code change automation
+### Code change management
 
-Use Sourcegraph to [automate large-scale code changes](https://about.sourcegraph.com/product/automation) to remove legacy code, fix critical security issues, and pay down tech debt. You can create campaigns across thousands of repositories and code owners. Sourcegraph automatically creates and updates all of the branches and pull requests, and you can track progress and activity in one place.
+Use Sourcegraph to [run large-scale code change campaigns](https://about.sourcegraph.com/product/code-change-management) to remove legacy code, fix critical security issues, and pay down tech debt. You can create campaigns across thousands of repositories and code owners. Sourcegraph automatically creates and updates all of the branches and pull requests, and you can track progress and activity in one place.

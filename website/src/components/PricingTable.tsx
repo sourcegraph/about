@@ -133,8 +133,8 @@ const DATA: PricingItemCategory[] = [
         items: [{ name: 'Code intelligence integrations for code review tools', plans: ENTERPRISE_PLAN }],
     },
     {
-        id: 'automation',
-        title: 'Automation',
+        id: 'code-change-management',
+        title: 'Code change management',
         items: [
             {
                 name: 'Saved searches',
@@ -152,9 +152,10 @@ const DATA: PricingItemCategory[] = [
                 plans: ENTERPRISE_PLAN,
             },
             {
-                name: 'Large-scale code change automation',
-                url: 'https://about.sourcegraph.com/product/automation',
-                description: 'Remove legacy code, fix critical security issues, and pay down tech debt',
+                name: 'Campaigns',
+                url: 'https://about.sourcegraph.com/product/code-change-management',
+                description:
+                    'Refactor across all repositories, fix critical security issues, and migrate to new APIs and dependencies faster',
                 plans: ELITE_PLAN,
             },
             {
@@ -368,8 +369,8 @@ export const PricingTable: React.FunctionComponent<{
                                 </div>
                             </div>
                             <div className="col-8 row">
-                                {allPlans.map(plan => (
-                                    <div className="col p-2 border-left border-gray text-center">
+                                {allPlans.map((plan, i) => (
+                                    <div className="col p-2 border-left border-gray text-center" key={i}>
                                         {typeof plans[plan] === 'string'
                                             ? plans[plan]
                                             : plans[plan] && <CheckIcon className={PLAN_CHECK_ICON_CLASS[plan]} />}

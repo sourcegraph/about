@@ -7,7 +7,6 @@
 
 /handbook/engineering @nicksnyder
 
-/handbook/engineering/automation @sourcegraph/automation
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
 /handbook/engineering/core-services @sourcegraph/core-services
 /handbook/engineering/distribution @sourcegraph/distribution
