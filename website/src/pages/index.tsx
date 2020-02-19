@@ -16,13 +16,12 @@ import { ContactPresalesSupportAction } from '../css/components/actions/ContactP
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
+import Helmet from 'react-helmet'
 
-const testimonials: Testimonial[] = [
-    {
+const testimonials: Testimonial[] = [{
         customer: 'Lyft',
         logo: '/external-logos/lyft-logo.svg',
-        quote:
-            'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition.',
+        quote: 'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition.',
         author: {
             name: 'Justin Phillips',
             title: 'Software Engineer',
@@ -51,8 +50,7 @@ const testimonials: Testimonial[] = [
     {
         customer: 'SoFi',
         logo: '/external-logos/sofi-logo-white.png',
-        quote:
-            'With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
+        quote: 'With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
         author: {
             name: 'Ursula Robertson',
             title: 'Engineering Manager',
@@ -80,8 +78,7 @@ const testimonials: Testimonial[] = [
     {
         customer: 'Convoy',
         logo: '/external-logos/convoy-logo-white.svg',
-        quote:
-            'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
+        quote: 'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
         author: {
             name: 'Brandon Bloom',
             title: 'Senior Software Engineer',
@@ -95,8 +92,7 @@ const testimonials: Testimonial[] = [
     {
         customer: 'Thorn',
         logo: '/case-studies/thorn-logo.png',
-        quote:
-            'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
+        quote: 'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
         author: {
             name: 'Jacob Gillespie',
             title: 'Software Engineer',
@@ -131,6 +127,16 @@ export default ((props: any) => (
             description: 'Start shipping better software faster with Universal Code Search.',
         }}
     >
+    <Helmet>
+        <style dangerouslySetInnerHTML={{__html: `>.async-hide { opacity: 0 !important}`}} />
+        <script>
+            {`(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000,
+        {'GTM-TB4NLS7':true});`}
+        </script>
+    </Helmet>
         <div className="home">
             <div className="home__intro container">
                 <div className="row justify-content-center">
@@ -222,4 +228,4 @@ export default ((props: any) => (
             </Jumbotron>
         </div>
     </Layout>
-)) as React.FunctionComponent<any>
+)) as React.FunctionComponent < any >
