@@ -30,7 +30,7 @@ You will be asked the following questions:
 3. Determine if any transformations/ETL jobs are required, and if so, add them to the [script](https://console.cloud.google.com/storage/browser/_details/sg-analytics-data/dataflow/pipelines/udf/transform.js?project=telligentsourcegraph&authuser=0&angularJsUrl=%2Fstorage%2Fbrowser%2F_details%2Fsg-analytics-data%2Fdataflow%2Fpipelines%2Fudf%2Ftransform.js%3Fproject%3Dtelligentsourcegraph%26authuser%3D1).
 4. Open a PR to change [the schema](https://github.com/sourcegraph/analytics/tree/master/BigQuery%20Schemas) with Business Operations (EricB and Dan) as approvers. Keep in mind:
 	- Check the data types sent in the JSON match up with the BigQuery schema (e.g. a JSON '1' will not match up with a BigQuery integer). 
-	- Every field in the BigQuery schema should be `"mode": "NULLABLE"`. There will be instances on the older Sourcegraph versions that will not be sending new data fields, and this will cause pings to fail.
+	- Every field in the BigQuery schema should not be non-nullable (i.e. `"mode": "NULLABLE"` and `"mode": "REPEATED"` are acceptable). There will be instances on the older Sourcegraph versions that will not be sending new data fields, and this will cause pings to fail.
 
 
 ## Changing the BigQuery schema
