@@ -35,7 +35,7 @@ You will be asked the following questions:
 
 ## Changing the BigQuery schema
 
-1. Use the merged JSON to update the schema in the test table `bq --project_id=telligentsourcegraph update --schema schema.json sourcegraph_analytics.update_checks_backup`
+1. Use the merged JSON to update the schema in the test table `bq --project_id=$PROJECT update --schema $SCHEMA_FILE $DATASET.$TABLE`, replacing `$PROJECT` with the project ID, `$SCHEMA_FILE` with the path to the schema JSON file generated above, and `$DATASET.$TABLE` with the dataset and table name, separated by a dot. 
 2. Once the test is complete and the changes are ready to be implemented, run the same command on the table `bq --project_id=telligentsourcegraph update --schema schema.json sourcegraph_analytics.update_checks`
 
 To get the current schema for any reason, use `bq --project_id=telligentsourcegraph --format=prettyjson show sourcegraph_analytics.update_checks > schema.json`
