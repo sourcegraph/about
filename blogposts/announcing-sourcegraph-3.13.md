@@ -30,12 +30,12 @@ Quickly explore and better understand all the code everywhere with Sourcegraph U
 
 [**📌 Changes to Sourcegraph’s upgrade policy**](#changes-to-sourcegraphs-upgrade-policy)<br />
 
-[**🛠 Customizations**](#)<br />
+[**🛠 Customization settings**](#customization-settings)<br />
 
-[**🛎 Addition of code intelligence data to Sourcegraph pings**](#)<br />
+[**🛎 Code intelligence data added to Sourcegraph pings**](#code-intelligence-data-added-to-sourcegraph-pings)<br />
 
 [**🧪 Experimental features**](#experimental-features)<br />
-One line summary
+Smart search field, custom git fetch commands, and importing code from any code host with `src-expose`
 
 [**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
@@ -100,10 +100,6 @@ For example, if I wanted to bump the version of RxJS in several repositories, my
 }
 ```
 
-GitHub labels associated with campaigns are now displayed. Support for Bitbucket Server labels is coming soon.
-
-When creating a campaign, users can now specify the branch name that will be used on code host. This is also a breaking change for users of the GraphQL API since the `branch` attribute is now required in `CreateCampaignInput` when a `plan` is also specified.
-
 ## Basic code intelligence support reaches 32 languages
 
 ![Sourcegraph basic code intelligence languages](/images/3-13-language-extensions.png "Sourcegraph basic code intelligence languages")
@@ -141,16 +137,14 @@ Upgrading Sourcegraph is officially supported for one minor version increment (e
 
 ## Customization settings
 
-Sourcegraph 3.13 introduces some new customization settings:
+Sourcegraph 3.13 introduces two new customization settings:
 
 - Users who prefer not to see search autocompletion suggestions can disable them by adding `search.hideSuggestions` set to `true` to their user settings. This will hide search suggestions in the search bar.
 - Admins can now set a minimum password length on their instance. Add `auth.minPasswordLength` to the site config to enforce the password length upon user creation or updating passwords.
-- Scala and Pascal hover tooltips now have syntax highlighting.
-Repositories with bad object packs or bad objects are automatically repaired. We now detect suspect output of git commands to mark a repository for repair. [#6676](https://github.com/sourcegraph/sourcegraph/issues/6676)
 
-## Addition of code intelligence data to Sourcegraph pings
+## Code intelligence data added to Sourcegraph pings
 
-The privacy of our customers is incredibly important to us, and we only collect data that is aggregated and anonymized, see our [ping philosophy](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). Code intelligence usage statistics will be sent back via pings by default. Aggregated event counts can be disabled via the site admin flag `disableNonCriticalTelemetry`. This data addition to our pings is in support of building better code intelligence.
+Sourcegraph collects a small amount of anonymized, aggregate, and non-specific data from each instance. See the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). Code intelligence usage statistics will be sent back via pings by default. Aggregated event counts can be disabled via the site admin flag `disableNonCriticalTelemetry`.
 
 ## Experimental features
 
@@ -158,19 +152,35 @@ This release contains several new features that have been released as experiment
 
 ### Smart search field
 
-Experimental: the search query input now provides syntax highlighting, hover tooltips, and diagnostics on filters in search queries. Requires the global settings value `{ "experimentalFeatures": { "smartSearchField": true } }`.
+TODO: video
+
+<!-- <p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+</p> -->
+
+The plain text mode search query input now provides syntax highlighting, hover tooltips, and diagnostics on filters in search queries. Requires the global settings value `{ "experimentalFeatures": { "smartSearchField": true } }`.
 
 ### Custom git fetch commands
 
-Experimental: Added new field `experimentalFeatures.customGitFetch` that allows defining custom git fetch commands for code hosts and repositories with special settings. [#8435](https://github.com/sourcegraph/sourcegraph/pull/8435)
+Added a new experimenal field `experimentalFeatures.customGitFetch` that allows defining custom git fetch commands for code hosts and repositories with special settings.
 
 ### Import code from any code host with src-expose
+
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/368923038?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/368923038" target="_blank">View on Vimeo</a></p>
+</p>
 
 A new tool [src-expose](https://docs.sourcegraph.com/admin/external_service/other#experimental-src-expose) enables admins to import code from any code host. This is a useful way to get code from other version control systems or textual artifacts from non-version controlled systems (e.g., configuration) into Sourcegraph.
 
 ### Certificate handling
 
-Experimental: Added new field `certificates` as in `{ "experimentalFeatures" { "tls.external": { "certificates": ["&lt;CERT>"] } } }`. This allows you to add certificates to trust when communicating with a code host (via API or git+http). We expect this to be useful for adding internal certificate authorities/self-signed certificates. [#71](https://github.com/sourcegraph/sourcegraph/issues/71)
+A new field `certificates` has been added to allow you to add certificates to trust when communicating with a code host (via API or git+http). We expect this to be useful for adding internal certificate authorities/self-signed certificates. To use this feature, add `{ "experimentalFeatures" { "tls.external": { "certificates": ["<CERT>"] } } }` to your site config.
 
 ## Changelog
 
