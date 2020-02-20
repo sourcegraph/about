@@ -2,7 +2,7 @@
 
 This specializes and augments the official admin docs for the integration with gotchas when running on localhost.
 It assumes you want to develop/debug the Sourcegraph side of this relationship so therefore will run the `dev/start.sh`
-Sourcegraph and will run a Gitlab CE instance in a docker container.
+command for Sourcegraph and Gitlab CE in a Docker container.
 
 ## Sourcegraph instance
 
