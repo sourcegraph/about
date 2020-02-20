@@ -109,7 +109,12 @@ With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, a
 
 ## LSIF-based precise code intelligence for Dart
 
-TODO: screenshots
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/392760161?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://vimeo.com/392760161" target="_blank">View on Vimeo</a></p>
+</p>
 
 The [Dart LSIF indexer](https://github.com/sourcegraph/lsif-dart) makes precise code intelligence available for Dart projects. LSIF (Language Server Index Format) is a file format for precomputed code intelligence data that you can upload to your Sourcegraph instance for your projects. Follow the [LSIF quickstart guide](https://docs.sourcegraph.com/user/code_intelligence/lsif_quickstart) to get started and see the most up-to-date information on languages with LSIF indexers at [lsif.dev](https://lsif.dev/).
 
@@ -152,14 +157,12 @@ This release contains several new experimental features. We look forward to hear
 
 ### Smart search field in plain text mode
 
-TODO: video
-
-<!-- <p class="container">
+<p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/392761379?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p> -->
+  <p style="text-align: center"><a href="https://vimeo.com/392761379" target="_blank">View on Vimeo</a></p>
+</p>
 
 The plain text mode search query input field now provides syntax highlighting, hover tooltips, and diagnostics on filters. Set the user or global settings value `{ "experimentalFeatures": { "smartSearchField": true } }` to take advantage of this feature.
 
