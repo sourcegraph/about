@@ -6,7 +6,7 @@ command for Sourcegraph and Gitlab CE in a Docker container.
 
 ## Sourcegraph instance
 
-Launch a Sourcegraph instance as usual with `dev/start.sh` or `enterprise/dev/start.sh`.
+Launch a Sourcegraph instance with `dev/start.sh` or `enterprise/dev/start.sh`.
 
 If you need a TLS endpoint for the Sourcegraph instance (for example to debug secure-only cookies) you can use [Caddy](https://caddyserver.com/),
  [ngrok](https://dashboard.ngrok.com/get-started) or similar to create the TLS endpoint and reverse-proxy the Sourcegraph instance.
