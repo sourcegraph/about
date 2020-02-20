@@ -62,14 +62,12 @@ The option to use interactive search mode can be disabled by adding `{ "experime
 
 ## Code-aware structural search toggle
 
-TODO: video
-
-<!-- <p class="container">
+<p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/392724955?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p> -->
+  <p style="text-align: center"><a href="https://vimeo.com/392724955" target="_blank">View on Vimeo</a></p>
+</p>
 
 Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> for structural search. Structural search, a code-aware search syntax, was introduced in Sourcegraph 3.11 and previously enabled using the `patternType:structural` query parameter. When enabled, the regexp and case sensitivity toggles will be disabled, since the search types work independently. Structural code search lets you match nested expressions and whole code blocks that can be difficult or awkward to match using regular expressions. Read more about structural search and see examples in our recent blog post ["Going beyond regular expressions with structural code search"](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search).
 
@@ -102,7 +100,7 @@ For example, if I wanted to bump the version of RxJS in several repositories, my
 
 ## Basic code intelligence support reaches 32 languages
 
-![Sourcegraph basic code intelligence languages](/images/3-13-language-extensions.png "Sourcegraph basic code intelligence languages")
+![Sourcegraph basic code intelligence languages](/blog/3-13-language-extensions.png)
 
 With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, and VHDL, Sourcegraph basic code intelligence now supports 32 languages. Every Sourcegraph instance comes enabled with basic code intelligence provided by search based heuristics. For fast and precise code intelligence see our [LSIF documentation](https://docs.sourcegraph.com/user/code_intelligence/lsif).
 
@@ -125,7 +123,7 @@ We added a new `content:` search keyword to help with searching for patterns tha
 
 ## Custom branch names and GitHub labels for campaigns
 
-TODO: image
+![](/blog/campaigns-branch-name.png)
 
 When creating a campaign, users can now specify the branch name that will be used. This is a breaking change for users of the GraphQL API since the `branch` attribute is now required in `CreateCampaignInput` when a `plan` is also specified.
 
