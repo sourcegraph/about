@@ -228,4 +228,4 @@ export default ((props: any) => (
             </Jumbotron>
         </div>
     </Layout>
-)) as React.FunctionComponent < any >
+)) as React.FunctionComponent<any>
