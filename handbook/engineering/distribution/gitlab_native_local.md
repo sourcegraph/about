@@ -1,4 +1,4 @@
-# How to test the Gitlab native integration on a local dev machine
+# How to test the GitLab native integration on a local dev machine
 
 This specializes and augments the official admin docs for the integration with gotchas when running on localhost.
 It assumes you want to develop/debug the Sourcegraph side of this relationship so therefore will run the `dev/start.sh`
