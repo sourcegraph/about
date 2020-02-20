@@ -33,7 +33,7 @@ Custom branch names and GitHub labels
 
 [**🛠 Customization settings**](#customization-settings)<br />
 
-[**🛎 Code intelligence data added to Sourcegraph pings**](#code-intelligence-data-added-to-sourcegraph-pings)<br />
+[**🛎 Code intelligence and campaigns data added to Sourcegraph pings**](#code-intelligence-and-campaigns-data-added-to-sourcegraph-pings)<br />
 
 [**🧪 Experimental features**](#experimental-features)<br />
 Smart search field in plain text mode, custom git fetch commands, and importing code from any code host with `src-expose`
@@ -100,6 +100,8 @@ For example, if I wanted to bump the version of RxJS in several repositories, my
 ```
 
 See [our documentation](https://docs.sourcegraph.com/user/automation#creating-a-campaign-from-a-set-of-patches) for more details and examples.
+
+Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
 ## Basic code intelligence support reaches 32 languages
 
