@@ -35,7 +35,15 @@ export default ((props: any) => {
         })
     }, [])
     return (
-        <Layout location={props.location} minimal={true}>
+        <Layout
+            location={props.location}
+            minimal={true}
+            meta={{
+                title: 'Sourcegraph: Universal code search and intelligence',
+                description: 'Download the eBook: Universal code search and intelligence',
+                image: 'https://info.sourcegraph.com/hubfs/sourcegraph-universal-code-search-ebook-social.png'
+            }}
+        >
             <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
             <div className="landing-page bg-white text-dark">
                 <div className="container-lg py-6 px-5">
