@@ -86,15 +86,21 @@ Sourcegraph code change campaigns now support running arbitrary code over all yo
 
 Simply provide an `action.json` with a scope query and command steps. The CLI will programmatically download zips of each of your repositories that match the scope query, and apply each command to each of those repositories. The result will be a diff to be uploaded to Sourcegraph for previewing and creating a campaign.
 
-For example, if I wanted to bump the version of a library my `action.json` would be:
+For example, if I wanted to bump the version of RxJS in several repositories, my [`action.json`](https://github.com/sourcegraph/campaign-examples/tree/master/rxjs-upgrade) using a Docker container could be:
 
 ```json
-
-TO DO
-
+{
+  "scopeQuery": "repo:github.com/sourcegraph/(sourcegraph|codeintellify|sourcegraph-basic-code-intel)$ repohasfile:yarn.lock file:^package.json$ archived:no fork:no rxjs",
+  "steps": [
+    {
+      "type": "docker",
+      "image": "sourcegraph/rxjs-upgrade:latest"
+    }
+  ]
+}
 ```
 
-GitHub labels associated with campaigns are now displayed. Support for Bitbucket Server labels is coming soon. 
+GitHub labels associated with campaigns are now displayed. Support for Bitbucket Server labels is coming soon.
 
 When creating a campaign, users can now specify the branch name that will be used on code host. This is also a breaking change for users of the GraphQL API since the `branch` attribute is now required in `CreateCampaignInput` when a `plan` is also specified.
 
