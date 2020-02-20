@@ -10,7 +10,7 @@ Launch a Sourcegraph instance with `dev/start.sh` or `enterprise/dev/start.sh`.
 
 If you need a TLS endpoint or reverse-proxy for your Sourcegraph instance (e.g. to example to debug secure-only cookies), [Caddy](https://caddyserver.com/) and
  [ngrok](https://dashboard.ngrok.com/get-started) are recommended.
- Please don't forget to update the external URL of the Sourcegraph instance in the site config to the appropriate TLS endpoint value.
+> NOTE: If using a TLS endpoint, remember to update the external URL of the Sourcegraph instance in the site config.
  
 ## Gitlab instance
 
