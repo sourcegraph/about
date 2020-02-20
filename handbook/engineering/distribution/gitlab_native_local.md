@@ -28,7 +28,7 @@ docker run --hostname localhost -p 4080:4080  \
 > Important: Make sure if you run Gitlab on a port different from port 80 then the container port has to match the host port
 > so in this case 4080:4080.
 
-Once Gitlab is running it will set up configs in `/Users/exampledev/sourcegraph-docker/gitlab-disk/config`. We need to tell it
+Once Gitlab is running it will set up configs in `~/sourcegraph-gitlab/gitlab-disk/config`. We need to tell it
 its external URL, so go into that directory and open `gitlab.rb` in an editor. Uncomment and change the `external_url` value to `http://localhost:4080`.
 You have to restart Gitlab: `docker restart gitlab`.
 
