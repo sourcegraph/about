@@ -14,7 +14,7 @@ If you need a TLS endpoint or reverse-proxy for your Sourcegraph instance (e.g. 
  
 ## Gitlab instance
 
-It is assumed here that you have a functioning Docker runtime on your local dev machine. We will run Gitlab like so:
+Use Docker to run a local GitLab CE instance:
 
 ```shell script
 docker run --hostname localhost -p 4080:4080  \
