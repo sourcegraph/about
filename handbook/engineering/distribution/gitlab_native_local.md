@@ -51,7 +51,13 @@ Follow the remaining steps from both docs.
 
 ## Testing
 
-If everything worked you should see the Sourcegraph code intel hover when you're in a File view of a Go file in the repo you set up.
+Test code intelligence is working by viewing a file in GitLab and hovering over a token. If it doesn't appear to be working,  open the browser developer tools console and wait for a "code view added" log message. If this does not appear after 10 or so seconds, code intelligence has not been added to any code view(s).
+
+Clicking **Go to definition** should keep you inside GitLab, and ensure that it also takes you to the line where the token is defined.
+
+Be sure to test code intelligence works in merge requests too! To create a merge request (as these will not be migrated from another code host), view a branch, then create a merge request.
+
+Also test that code intelligence works on PRs, as well as viewing code files.
 Clicking on the hover will take you to the Sourcegraph instance to that point in code.
 
   
