@@ -10,31 +10,31 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-Ship better software faster with Sourcegraph Universal Code Search, including code navigation, code intelligence, and code change management. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Quickly explore and better understand all the code everywhere with Sourcegraph Universal Code Search. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
 
-[**🔎 Interactive search mode**](#)<br />
+[**🔎 Interactive search mode**](#interactive-search-mode)<br />
 
-[**🏗 Find code patterns with the structural search toggle**](#)<br />
+[**🏗 Code-aware structural search toggle**](#code-aware-structural-search-toggle)<br />
 
-[**📣 Create campaigns to run arbitrary code over all your repositories using the `src-cli`**](#)<br />
+[**📣 Campaigns with custom code execution using `src-cli`**](#campaigns-with-custom-code-execution-using-code-classlanguage-textsrc-clicode)<br />
 
-[**🧠 Basic code intelligence support reaches 33 languages**](#)<br />
+[**🧠 Basic code intelligence support reaches 33 languages**](#basic-code-intelligence-support-reaches-32-languages)<br />
 
-[**🎯 LSIF-based precise code intelligence for Dart**](#)<br />
+[**🎯 LSIF-based precise code intelligence for Dart**](#lsif-based-precise-code-intelligence-for-dart)<br />
 
-[**🕵️‍♀️ New `content` search keyword**](#)<br />
+[**🕵️‍♀️ New `content` search keyword**](#new-code-classlanguage-textcontentcode-search-keyword)<br />
 
-[**📌 Changes to Sourcegraph’s upgrade policy**](#)<br />
+[**🏷 Custom branch names and GitHub labels for campaigns**](#custom-branch-names-and-github-labels-for-campaigns)<br />
 
-[**Syntax highlighting for Scala and Perl**](#)<br />
+[**📌 Changes to Sourcegraph’s upgrade policy**](#changes-to-sourcegraphs-upgrade-policy)<br />
 
 [**🛠 Customizations**](#)<br />
 
 [**🛎 Addition of code intelligence data to Sourcegraph pings**](#)<br />
 
-[**🧪 Experimental features**](#)<br />
+[**🧪 Experimental features**](#experimental-features)<br />
 One line summary
 
 [**📝 Changelog**](#changelog)<br />
@@ -56,24 +56,24 @@ Sourcegraph couldn't be what it is without the community
   <p style="text-align: center"><a href="https://vimeo.com/392614914" target="_blank">View on Vimeo</a></p>
 </p>
 
-Interactive search mode helps users construct queries using UI elements and is now enabled by default for all users. In this mode, query filters are more discoverable, and the query input is simplified by extracting filters as UI elements. A dropdown to the left of the search bar allows users to switch between interactive and plain text modes.
+Interactive search mode helps users construct queries using UI elements, and is now enabled by default for all users. In this mode, query filters are more discoverable, and the query input is simplified by extracting filters as UI elements. A dropdown to the left of the search bar allows users to switch between interactive and plain text modes.
 
 The option to use interactive search mode can be disabled by adding `{ "experimentalFeatures": { "splitSearchModes": false } }` in global settings.
 
-## Find code patterns with the structural search toggle
+## Code-aware structural search toggle
 
 TODO: video
 
 <!-- <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392614914?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392614914" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
 </p> -->
 
-Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> for structural search. Structural search, a code-aware search syntax, was introduced in Sourcegraph 3.11 and previously enabled using the `patternType:structural` query parameter. When enabled, the regexp and case sensitivity toggles will be disabled, since the search types work independently. Structural code search lets you match nested expressions and whole code blocks that can be difficult or awkward to match using regular expressions. Read more about structural search and see examples in our [recent blog post](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search).
+Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> for structural search. Structural search, a code-aware search syntax, was introduced in Sourcegraph 3.11 and previously enabled using the `patternType:structural` query parameter. When enabled, the regexp and case sensitivity toggles will be disabled, since the search types work independently. Structural code search lets you match nested expressions and whole code blocks that can be difficult or awkward to match using regular expressions. Read more about structural search and see examples in our recent blog post ["Going beyond regular expressions with structural code search"](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search).
 
-## Create campaigns to run arbitrary code over all your repositories using the `src-cli`
+## Campaigns with custom code execution using `src-cli`
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -82,9 +82,9 @@ Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid
   <p style="text-align: center"><a href="https://vimeo.com/390882141" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph code change campaigns now support running arbitrary code over all your repositories. Using the `src-cli`, you will generate a diff from customized steps. This means that you can now run series of steps in your campaigns, such as a find and replace action, then running a linter over the changed code. 
+Sourcegraph campaigns now support running arbitrary code over all your repositories using the Sourcegraph CLI. This is helpful for when you need to run a series of steps over your code, or run a formatter after making an update.
 
-Simply provide an `action.json` with a scope query and command steps. The CLI will programmatically download zips of each of your repositories that match the scope query, and apply each command to each of those repositories. The result will be a diff to be uploaded to Sourcegraph for previewing and creating a campaign.
+The `src-cli` takes an input of an `action.json` file with a `scopeQuery` and series of commands. It then programmatically downloads zips of each repository that matches the `scopeQuery`, applies each command, and generates a diff with the changes. The resulting diff file can then be sent to Sourcegraph to previewing the changes and create the campaign.
 
 For example, if I wanted to bump the version of RxJS in several repositories, my [`action.json`](https://github.com/sourcegraph/campaign-examples/tree/master/rxjs-upgrade) using a Docker container could be:
 
@@ -118,33 +118,34 @@ The [Dart LSIF indexer](https://github.com/sourcegraph/lsif-dart) makes precise 
 
 ## New `content` search keyword
 
-TODO: video
-
-<!-- <p class="container">
+<p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392614914?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/392639232?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392614914" target="_blank">View on Vimeo</a></p>
-</p> -->
+  <p style="text-align: center"><a href="https://vimeo.com/392639232" target="_blank">View on Vimeo</a></p>
+</p>
 
 We added a new `content:` search keyword to help with searching for patterns that might clash with other parts of the query. For example, if you want to search for `file:file` in javascript files, you can now use the following query: `file:.js content:”file:file”`. This parameter overrides any other search patterns in a query.
 
-## Changes to Sourcegraph’s upgrade policy
-
-Upgrading Sourcegraph is officially supported for one minor version increment (e.g., `3.12` -> `3.13`). Previously, upgrades from two minor version increments were supported. Please reach out to support@sourcegraph.com if you would like assistance upgrading from a much older version of Sourcegraph. Our [upgrade policy](https://docs.sourcegraph.com/#upgrading-sourcegraph) is now enforced by the `sourcegraph-frontend` on startup to prevent admins from mistakenly jumping too many versions. 
-
-## Syntax highlighting in hover tooltips for Scala and Perl
+## Custom branch names and GitHub labels for campaigns
 
 TODO: image
 
-Hover tooltips for Scala and Perl files now have syntax highlighting.
+When creating a campaign, users can now specify the branch name that will be used. This is a breaking change for users of the GraphQL API since the `branch` attribute is now required in `CreateCampaignInput` when a `plan` is also specified.
+
+Campaign changesets from GitHub now show the GitHub labels. Support for Bitbucket Server labels is coming soon.
+
+## Changes to Sourcegraph’s upgrade policy
+
+Upgrading Sourcegraph is officially supported for one minor version increment (e.g., `3.12` -> `3.13`). Previously, upgrades from two minor version increments were supported. Please reach out to support@sourcegraph.com if you would like assistance upgrading from a much older version of Sourcegraph. Our [upgrade policy](https://docs.sourcegraph.com/#upgrading-sourcegraph) is now enforced by the `sourcegraph-frontend` on startup to prevent admins from mistakenly jumping too many versions.
 
 ## Customization settings
 
-Added a setting `search.hideSuggestions`, which when set to `true`, will hide search suggestions in the search bar.
+Sourcegraph 3.13 introduces some new customization settings:
 
-Added a setting `auth.minPasswordLength`, which when set, causes a minimum password length to be enforced when users sign up or change passwords. [#7521](https://github.com/sourcegraph/sourcegraph/issues/7521)
-
+- Users who prefer not to see search autocompletion suggestions can disable them by adding `search.hideSuggestions` set to `true` to their user settings. This will hide search suggestions in the search bar.
+- Admins can now set a minimum password length on their instance. Add `auth.minPasswordLength` to the site config to enforce the password length upon user creation or updating passwords.
+- Scala and Pascal hover tooltips now have syntax highlighting.
 Repositories with bad object packs or bad objects are automatically repaired. We now detect suspect output of git commands to mark a repository for repair. [#6676](https://github.com/sourcegraph/sourcegraph/issues/6676)
 
 ## Addition of code intelligence data to Sourcegraph pings
