@@ -30,7 +30,7 @@ docker run --hostname localhost -p 4080:4080  \
 
 Once Gitlab is running it will set up configs in `~/sourcegraph-gitlab/gitlab-disk/config`. We need to tell it
 its external URL, so go into that directory and open `gitlab.rb` in an editor. Uncomment and change the `external_url` value to `http://localhost:4080`.
-You have to restart Gitlab: `docker restart gitlab`.
+You have to restart GitLab by running the command: `docker restart gitlab`.
 
 At this point you can add content to Gitlab to make it available for testing. Create a new project and clone the repo
 locally to add some Go files to it (we want to test code navigation for example).
