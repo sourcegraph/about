@@ -20,13 +20,14 @@ Quickly explore and better understand all the code everywhere with Sourcegraph U
 
 [**📣 Campaigns with custom code execution using `src-cli`**](#campaigns-with-custom-code-execution-using-code-classlanguage-textsrc-clicode)<br />
 
-[**🧠 Basic code intelligence support reaches 33 languages**](#basic-code-intelligence-support-reaches-32-languages)<br />
+[**🧠 Basic code intelligence support reaches 32 languages**](#basic-code-intelligence-support-reaches-32-languages)<br />
 
 [**🎯 LSIF-based precise code intelligence for Dart**](#lsif-based-precise-code-intelligence-for-dart)<br />
 
 [**🕵️‍♀️ New `content` search keyword**](#new-code-classlanguage-textcontentcode-search-keyword)<br />
 
-[**🏷 Custom branch names and GitHub labels for campaigns**](#custom-branch-names-and-github-labels-for-campaigns)<br />
+[**🏷 Campaign UI updates**](#custom-branch-names-and-github-labels-for-campaigns)<br />
+Custom branch names and GitHub labels
 
 [**📌 Changes to Sourcegraph’s upgrade policy**](#changes-to-sourcegraphs-upgrade-policy)<br />
 
@@ -35,7 +36,7 @@ Quickly explore and better understand all the code everywhere with Sourcegraph U
 [**🛎 Code intelligence data added to Sourcegraph pings**](#code-intelligence-data-added-to-sourcegraph-pings)<br />
 
 [**🧪 Experimental features**](#experimental-features)<br />
-Smart search field, custom git fetch commands, and importing code from any code host with `src-expose`
+Smart search field in plain text mode, custom git fetch commands, and importing code from any code host with `src-expose`
 
 [**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
@@ -56,7 +57,7 @@ Sourcegraph couldn't be what it is without the community
   <p style="text-align: center"><a href="https://vimeo.com/392614914" target="_blank">View on Vimeo</a></p>
 </p>
 
-Interactive search mode helps users construct queries using UI elements, and is now enabled by default for all users. In this mode, query filters are more discoverable, and the query input is simplified by extracting filters as UI elements. A dropdown to the left of the search bar allows users to switch between interactive and plain text modes.
+Interactive search mode helps users construct queries using UI elements, and is now enabled by default for all users. In this mode, search filters are more discoverable and the query input is simplified to the search query pattern. A dropdown to the left of the search bar allows users to switch between interactive and plain text modes.
 
 The option to use interactive search mode can be disabled by adding `{ "experimentalFeatures": { "splitSearchModes": false } }` in global settings.
 
@@ -69,7 +70,7 @@ The option to use interactive search mode can be disabled by adding `{ "experime
   <p style="text-align: center"><a href="https://vimeo.com/392724955" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> for structural search. Structural search, a code-aware search syntax, was introduced in Sourcegraph 3.11 and previously enabled using the `patternType:structural` query parameter. When enabled, the regexp and case sensitivity toggles will be disabled, since the search types work independently. Structural code search lets you match nested expressions and whole code blocks that can be difficult or awkward to match using regular expressions. Read more about structural search and see examples in our recent blog post ["Going beyond regular expressions with structural code search"](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search).
+Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> for structural search, a code-aware search syntax. Structural search was introduced in Sourcegraph 3.11 and was previously enabled using the `patternType:structural` query parameter. When enabled, the regexp and case sensitivity toggles will be disabled, since the search types work independently. Structural code search lets you match nested expressions and whole code blocks that can be difficult or awkward to match using regular expressions. Read more about structural search and see examples in our recent blog post ["Going beyond regular expressions with structural code search"](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search).
 
 ## Campaigns with custom code execution using `src-cli`
 
@@ -80,15 +81,15 @@ Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid
   <p style="text-align: center"><a href="https://vimeo.com/390882141" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph campaigns now support running arbitrary code over all your repositories using the Sourcegraph CLI. This is helpful for when you need to run a series of steps over your code, or run a formatter after making an update.
+Sourcegraph campaigns now support running arbitrary code over all your repositories using the [Sourcegraph CLI](https://github.com/sourcegraph/src-cli). This is helpful when you need to run a series of steps over your code, or run a formatter after making an update.
 
-The `src-cli` takes an input of an `action.json` file with a `scopeQuery` and series of commands. It then programmatically downloads zips of each repository that matches the `scopeQuery`, applies each command, and generates a diff with the changes. The resulting diff file can then be sent to Sourcegraph to previewing the changes and create the campaign.
+The `src-cli` takes your custom `action.json` file, containing a `scopeQuery` and series of commands as `steps`, as input. It then programmatically downloads zips of each repository that match the `scopeQuery`, applies each command step, and generates a diff with the changes. The resulting diff file can then be sent to Sourcegraph so you can preview the changes and create the campaign.
 
 For example, if I wanted to bump the version of RxJS in several repositories, my [`action.json`](https://github.com/sourcegraph/campaign-examples/tree/master/rxjs-upgrade) using a Docker container could be:
 
 ```json
 {
-  "scopeQuery": "repo:github.com/sourcegraph/(sourcegraph|codeintellify|sourcegraph-basic-code-intel)$ repohasfile:yarn.lock file:^package.json$ archived:no fork:no rxjs",
+  "scopeQuery": "repohasfile:yarn.lock file:^package.json$ archived:no fork:no rxjs",
   "steps": [
     {
       "type": "docker",
@@ -97,6 +98,8 @@ For example, if I wanted to bump the version of RxJS in several repositories, my
   ]
 }
 ```
+
+See [our documentation](https://docs.sourcegraph.com/user/automation#creating-a-campaign-from-a-set-of-patches) for more details and examples.
 
 ## Basic code intelligence support reaches 32 languages
 
@@ -119,36 +122,35 @@ The [Dart LSIF indexer](https://github.com/sourcegraph/lsif-dart) makes precise 
   <p style="text-align: center"><a href="https://vimeo.com/392639232" target="_blank">View on Vimeo</a></p>
 </p>
 
-We added a new `content:` search keyword to help with searching for patterns that might clash with other parts of the query. For example, if you want to search for `file:file` in javascript files, you can now use the following query: `file:.js content:”file:file”`. This parameter overrides any other search patterns in a query.
+We added a new `content:` search keyword to help you search for patterns that might clash with other parts of the query. For example, if you want to search for `file:file` in javascript files, you can now use the following query: `file:.js content:"file:file"`. This parameter overrides any other search patterns in a query.
 
-## Custom branch names and GitHub labels for campaigns
+## Campaign UI updates
 
-![](/blog/campaigns-branch-name.png)
+![Campaign branch name](/blog/campaigns-branch-name.png)
 
-When creating a campaign, users can now specify the branch name that will be used. This is a breaking change for users of the GraphQL API since the `branch` attribute is now required in `CreateCampaignInput` when a `plan` is also specified.
-
-Campaign changesets from GitHub now show the GitHub labels. Support for Bitbucket Server labels is coming soon.
+- Users can now specify the branch name during campaign creation. When using the GraphQL API to create a campaign, the branch name is now required.
+- Campaign changesets now display labels from code hosts. GitHub labels are currently supported and Bitbucket Server labels are coming soon.
 
 ## Changes to Sourcegraph’s upgrade policy
 
-Upgrading Sourcegraph is officially supported for one minor version increment (e.g., `3.12` -> `3.13`). Previously, upgrades from two minor version increments were supported. Please reach out to support@sourcegraph.com if you would like assistance upgrading from a much older version of Sourcegraph. Our [upgrade policy](https://docs.sourcegraph.com/#upgrading-sourcegraph) is now enforced by the `sourcegraph-frontend` on startup to prevent admins from mistakenly jumping too many versions.
+Our upgrade policy previously supported upgrades from two minor version increments. We have updated our policy to restrict upgrading to one minor version at a time (e.g., `3.12` -> `3.13`). Please reach out to support@sourcegraph.com if you would like assistance upgrading from a much older version of Sourcegraph. This [upgrade policy](https://docs.sourcegraph.com/#upgrading-sourcegraph) is now enforced by the `sourcegraph-frontend` on startup to prevent admins from mistakenly jumping too many versions.
 
 ## Customization settings
 
 Sourcegraph 3.13 introduces two new customization settings:
 
-- Users who prefer not to see search autocompletion suggestions can disable them by adding `search.hideSuggestions` set to `true` to their user settings. This will hide search suggestions in the search bar.
-- Admins can now set a minimum password length on their instance. Add `auth.minPasswordLength` to the site config to enforce the password length upon user creation or updating passwords.
+- Users who prefer not to see search autocompletion suggestions can hide them by setting `search.hideSuggestions` to `true` in their user settings.
+- Admins can now set a minimum password length on their instance. Add `auth.minPasswordLength` to the site config to enforce the password length when users create accounts or update passwords.
 
 ## Code intelligence data added to Sourcegraph pings
 
-Sourcegraph collects a small amount of anonymized, aggregate, and non-specific data from each instance. See the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). Code intelligence usage statistics will be sent back via pings by default. Aggregated event counts can be disabled via the site admin flag `disableNonCriticalTelemetry`.
+Sourcegraph collects a small amount of anonymized, aggregate, and non-specific data from each instance. See the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). Code intelligence usage statistics will be sent to Sourcegraph via pings by default. Aggregated event counts can be disabled via the site admin flag `disableNonCriticalTelemetry`.
 
 ## Experimental features
 
-This release contains several new features that have been released as experimental. We look forward to hearing your feedback about them! Tweet [@srcgraph](https://twitter.com/srcgraph) or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) with your thoughts.
+This release contains several new experimental features. We look forward to hearing your feedback about them! Tweet [@srcgraph](https://twitter.com/srcgraph) or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) with your thoughts.
 
-### Smart search field
+### Smart search field in plain text mode
 
 TODO: video
 
@@ -159,11 +161,11 @@ TODO: video
   <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
 </p> -->
 
-The plain text mode search query input now provides syntax highlighting, hover tooltips, and diagnostics on filters in search queries. Requires the global settings value `{ "experimentalFeatures": { "smartSearchField": true } }`.
+The plain text mode search query input field now provides syntax highlighting, hover tooltips, and diagnostics on filters. Set the user or global settings value `{ "experimentalFeatures": { "smartSearchField": true } }` to take advantage of this feature.
 
 ### Custom git fetch commands
 
-Added a new experimenal field `experimentalFeatures.customGitFetch` that allows defining custom git fetch commands for code hosts and repositories with special settings.
+A new experimenal field `experimentalFeatures.customGitFetch` allows defining custom git fetch commands for code hosts and repositories with special settings.
 
 ### Import code from any code host with src-expose
 
@@ -174,11 +176,11 @@ Added a new experimenal field `experimentalFeatures.customGitFetch` that allows 
   <p style="text-align: center"><a href="https://vimeo.com/368923038" target="_blank">View on Vimeo</a></p>
 </p>
 
-A new tool [src-expose](https://docs.sourcegraph.com/admin/external_service/other#experimental-src-expose) enables admins to import code from any code host. This is a useful way to get code from other version control systems or textual artifacts from non-version controlled systems (e.g., configuration) into Sourcegraph.
+[src-expose](https://docs.sourcegraph.com/admin/external_service/other#experimental-src-expose) is a new tool that enables admins to import code from any code host. This makes it possible to bring code from other version control systems or textual artifacts from non-version controlled systems (e.g., configuration) into Sourcegraph.
 
 ### Certificate handling
 
-A new field `certificates` has been added to allow you to add certificates to trust when communicating with a code host (via API or git+http). We expect this to be useful for adding internal certificate authorities/self-signed certificates. To use this feature, add `{ "experimentalFeatures" { "tls.external": { "certificates": ["<CERT>"] } } }` to your site config.
+The new `certificates` field allows you to add certificates to trust when communicating with a code host (via API or git+http). This is useful for configurations using internal certificate authorities or self-signed certificates. Add  `{ "experimentalFeatures" { "tls.external": { "certificates": ["<CERT>"] } } }` to your site config.
 
 ## Changelog
 
