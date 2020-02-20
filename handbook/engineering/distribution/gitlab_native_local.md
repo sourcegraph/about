@@ -37,7 +37,7 @@ locally to add some Go files to it (we want to test code navigation for example)
 
 On the Sourcegraph side add the Gitlab instance as an external service and check that the repo cloned.
 
-## Turn on native integration
+## Enable the Sourcegraph native integration
 
 The two relevant docs are:
 
