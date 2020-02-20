@@ -19,7 +19,7 @@ Use Docker to run a local GitLab CE instance:
 ```shell script
 docker run --hostname localhost -p 4080:4080  \
         --name gitlab \
-        --volume /Users/exampledev/sourcegraph-docker/gitlab-disk/config:/etc/gitlab \
+        --volume ~/.sourcegraph-gitlab/gitlab-disk/config:/etc/gitlab \
         --volume /Users/exampledev/sourcegraph-docker/gitlab-disk/logs:/var/log/gitlab \
         --volume /Users/exampledev/sourcegraph-docker/gitlab-disk/data:/var/opt/gitlab \
         gitlab/gitlab-ce:latest
