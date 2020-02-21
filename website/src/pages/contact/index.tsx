@@ -97,9 +97,9 @@ export default ((props: any) => (
                                     <div>
                                         Sourcegraph
                                         <br />
-                                        142 Minna St, 2nd Floor
+                                        981 Mission St
                                         <br />
-                                        San Francisco, CA 94105 (USA)
+                                        San Francisco, CA 94103 (USA)
                                         <br />
                                         <small>
                                             <a target="_blank" href="https://goo.gl/maps/LqTFnekUjRb9N12q6">
