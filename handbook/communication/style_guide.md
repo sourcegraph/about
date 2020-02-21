@@ -130,6 +130,7 @@ For consistency, all examples should use the following names (as appropriate).
 
 ### Specific terms in prose
 
+- Open source (not "open-source"), [favoring common usage](https://github.com/sourcegraph/about/issues/508#issuecomment-588600005) over grammatical correctness
 - Repository (not "repo")
 - Organization (not "org")
 - When referring to a user's assumed corporate entity or employer, prefer calling it an "[organization](../sales/index.md#organization)" (not "company" or "team")
