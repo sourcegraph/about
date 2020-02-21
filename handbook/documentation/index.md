@@ -12,7 +12,10 @@ We use the [monthly release blog post](https://about.sourcegraph.com/blog) as a 
 
 ## Naming and linking documentation pages
 
-1. There is no global index or nav, so all docs should be linked from their parent index page. Every new document should be cross-linked to its related documentation, and linked from its topic-related index, when it exists.
+1. All docs should be linked to from their parent index page.
+1. Every new document should be:
+    - Cross-linked to its related documentation, and linked from its topic-related index, when it exists.
+    - Linked to from the [docs global nav template](https://github.com/sourcegraph/sourcegraph/blob/master/doc/_resources/templates/document.html#L58).
 1. Always cross-link to `.md` files, including the file extension, so that the docs are browseable as-is (e.g., in GitHub's file browser).
 1. When you create a new directory, always start with an `index.md` file. Don't use another file name and don't create `README.md` files.
 1. Don't use special chars and spaces, or capital letters in file names, directory names, branch names, and anything that generates a path.
