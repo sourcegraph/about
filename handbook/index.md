@@ -27,6 +27,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## Engineering
 
 - [Engineering](engineering/index.md)
+- [Documentation](documentation/index.md)
 
 ## Support
 
