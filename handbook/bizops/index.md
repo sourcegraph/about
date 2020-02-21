@@ -30,7 +30,7 @@ We collect data from the following:
 * HubSpot: Marketing automation and CRM
 * Apollo: Email marketing automation
 * Sourcegraph.com Site-admin pages: customer subscriptions and license keys
-* [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information. There are [specific guidelines](../engineering/adding_ping_data) that must be followed for teams to add ping data. 
+* [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information. There are [specific guidelines](../engineering/adding_ping_data.md) that must be followed for teams to add ping data. 
 * [Custom tool to track events](https://github.com/sourcegraph/sourcegraph/issues/5486) on the Sourcegraph.com instance
 * [Prometheus dashboards](https://sourcegraph.com/-/debug/grafana/?orgId=1) show high-level insight into the health of a Sourcegraph instance to admins. Sourcegraph teammates can see the health of Sourcegraph.com. 
 
