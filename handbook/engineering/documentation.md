@@ -1,4 +1,4 @@
-# Sourcegraph engineering documentation
+# Product documentation
 
 These guidelines are for contributing documentation to the [sourcegraph repository](https://github.com/sourcegraph/sourcegraph/tree/master/doc). See [editing the handbook](../editing.md) for how to contribute handbook content.
 
