@@ -31,7 +31,7 @@ Join the `#handbook` Slack channel to see proposed changes.
 1. Strongly prefer creating a pull request over filing an issue on the handbook or mentioning it on Slack, even if you aren't able to propose the full edits you'd like to make.
 1. Follow the [style guide](communication/style_guide.md).
 
-> NOTE: If your contribution is about using or configuring Sourcegraph (the product), it most likely belongs in the [Sourcegraph documentation](engineering/documentation.md).
+> NOTE: If your contribution is about using or configuring Sourcegraph (the product), it most likely belongs in the [product documentation](engineering/product_documentation.md).
 
 ## Why handbook-first?
 
