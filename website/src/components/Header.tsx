@@ -124,6 +124,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 className="header__nav-link nav-link"
                                                 href="https://sourcegraph.com/sign-in"
                                                 title="For public code only on Sourcegraph.com"
+                                                onClick={this.signinClicked}
                                             >
                                                 Sign in
                                             </a>
@@ -133,6 +134,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 className="header__nav-link nav-link"
                                                 href="https://sourcegraph.com/sign-up"
                                                 title="For public code only on Sourcegraph.com"
+                                                onClick={this.signupClicked}
                                             >
                                                 Sign up
                                             </a>
@@ -157,5 +159,11 @@ export default class Header extends React.Component<HeaderProps, any> {
     }
     private blogClicked = () => {
         eventLogger.trackBlogClicked('header')
+    }
+    private signinClicked = () => {
+        eventLogger.trackSigninClicked('header')
+    }
+    private signupClicked = () => {
+        eventLogger.trackSignupClicked('header')
     }
 }

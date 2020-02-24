@@ -125,6 +125,7 @@ export default ((props: any) => (
         meta={{
             title: 'Sourcegraph',
             description: 'Start shipping better software faster with Universal Code Search.',
+            image: 'https://info.sourcegraph.com/hubfs/sourcegraph_logo.png'
         }}
     >
     <Helmet>

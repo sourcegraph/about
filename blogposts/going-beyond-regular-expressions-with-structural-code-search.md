@@ -280,6 +280,7 @@ that you may be familiar with or find interesting:
 - `Sgrep`, or Syntactical grep (multiple languages) [[1](https://github.com/facebookarchive/pfff/wiki/Sgrep)], [[2](https://github.com/returntocorp/bento/blob/master/SGREP-README.md)]
 - `tree-sitter`, parsing and query framework (multiple languages) [[1](https://github.com/tree-sitter/tree-sitter)]
 - `gogrep` for declaratively matching Go syntax trees [[1](https://github.com/mvdan/gogrep)]
+- `Spoon` for declaratively matching Java code [[1](http://spoon.gforge.inria.fr/matcher.html)], [[2](http://spoon.gforge.inria.fr/pattern.html)]
 - `Spoofax`, AST querying using the Spoofax Language Workbench (multiple languages) [[1](http://www.metaborg.org/en/latest/source/langdev/meta/lang/flowspec/stratego-api.html#querying-analysis)]
 - `CodeQL`, querying tree and graph properties for a number of poular languages [[1](https://securitylab.github.com/tools/codeql)]
 

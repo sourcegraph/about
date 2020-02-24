@@ -4,7 +4,7 @@ title: Sourcegraph Privacy Policy
 permalink: privacy
 ---
 
-Last modified: February 16, 2020
+Last modified: February 21, 2020
 
 Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**) understands that privacy is important to our online visitors to our Sourcegraph.com website and users of our online services (collectively, for the purposes of this Privacy Policy, our **"Website"**), as well as users of our private or self-hosted Sourcegraph instances (collectively with our Website, our **"Service"** or **"Services"**). This Privacy Policy explains how we collect, use, share and protect your personal information that we collect through our Service. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
@@ -18,7 +18,7 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 The Data Controller for Sourcegraph and our Services is:
 
-Sourcegraph, Inc. <br/>142 Minna Street, 2nd Floor, San Francisco, CA 94105
+Sourcegraph, Inc. <br/>981 Mission St, San Francisco, CA 94103 
 
 <span style="color:#f96216;">
 

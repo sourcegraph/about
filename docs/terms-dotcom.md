@@ -4,7 +4,7 @@ title: Terms of Service for Sourcegraph.com
 permalink: terms-dotcom
 ---
 
-Last modified: April 22, 2019
+Last modified: February 21, 2020
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of the applications, software, products, and services we make available at Sourcegraph.com.
 
@@ -219,10 +219,9 @@ If you believe that your copyrighted work has been copied in a way that constitu
 The above information must be submitted to the following DMCA Agent:
 
 ```
-Attn: 		DMCA Notice
+Attn: 	    DMCA Notice
             Sourcegraph Inc.
-Address: 	142 Minna St.
-            2nd Floor
+Address:    981 Mission St, San Francisco, CA 94103  	
 Tel.        (650) 318-3480
 Email:      legal@sourcegraph.com
 ```
@@ -330,4 +329,4 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 15.10 **Claims**. To the extent permissible under applicable law, you and we agree that any cause of action you may have arising out of or related to the Services or Public Code Data must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
 
-15.11 **Disclosures**. The Services are offered by Sourcegraph, Inc., located at 142 Minna St, 2nd Floor, San Francisco, CA 94105, and can be reached via email at support@sourcegraph.com or telephone at (650) 318-3480. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
+15.11 **Disclosures**. The Services are offered by Sourcegraph, Inc., located at 981 Mission St, San Francisco, CA 94103, and can be reached via email at support@sourcegraph.com or telephone at (650) 318-3480. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
