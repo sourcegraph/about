@@ -49,7 +49,7 @@ Create the webinar, configuring the following:
 
 Ask the customer:
 
-> Could you add the following configuration to your Sourcegraph instance's global user settings found at https://sourcegraph.example.com/site-admin/global-settings ? This will let all the users visiting Sourcegraph know that they can join the webinar via a dismissible notice:
+> Could you add the following configuration to your Sourcegraph instance's global user settings found at https://sourcegraph.example.com/site-admin/global-settings? This will let all the users visiting Sourcegraph know that they can join the webinar via a dismissible notice:
 >
 > ![image](https://user-images.githubusercontent.com/3173176/75200913-423db180-5724-11ea-9ee9-fbea5be2129b.png)
 >
