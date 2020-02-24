@@ -4,6 +4,6 @@ This page is shown only when [running the handbook locally](handbook/editing.md#
 
 ## Quick links
 
-- [Handbook homepage](/handbook/index.md)
-- [Handbook usage](/handbook/usage)
+- [Handbook homepage](handbook/index.md)
+- [Handbook usage](handbook/usage.md)
 - [Contributing to the handbook](handbook/editing.md)
