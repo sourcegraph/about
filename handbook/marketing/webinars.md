@@ -63,7 +63,7 @@ Ask the customer:
 >  ],
 > ```
 
-**IMPORTANT**: Before sending the above email, be sure to replace the date with the actual date, and the link `https://sourcegraph.com` with the actual Zoom webinar link!
+**IMPORTANT**: Before sending the above email, make sure you update the webinar date and URL!
 
 ### Hubspot setup
 
