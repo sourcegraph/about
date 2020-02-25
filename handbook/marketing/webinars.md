@@ -58,7 +58,7 @@ Ask the customer:
 >    {
 >      "dismissible": true,
 >      "location": "top",
->      "message": "Join us and the Sourcegraph team for the live Zoom webinar on [Tuesday, Feb 25, 2020 @ 3pm Central](https://sourcegraph.com) to learn how Sourcegraph can improve your workflow!"
+>      "message": "Join us and the Sourcegraph team for the live Zoom webinar on [Tuesday, Feb 25, 2020 @ 3pm Central](<WEBINAR LINK>) to learn about Universal Code Search and improving your workflow!"
 >      }
 >  ],
 > ```
