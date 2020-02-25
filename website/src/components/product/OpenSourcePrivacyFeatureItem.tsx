@@ -5,7 +5,7 @@ import { IconItem } from '../IconItem'
 
 export const OpenSourcePrivacyFeatureItem: React.FunctionComponent<{}> = () => (
     <IconItem className="position-relative" icon={LockIcon} color="blue">
-        <h4>Open-source, self-managed, &amp; privacy-respectful</h4>
+        <h4>Open source, self-managed, &amp; privacy-respectful</h4>
         <p>
             Sourcegraph is{' '}
             <a href="https://docs.sourcegraph.com/#quickstart" target="_blank">
