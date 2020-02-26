@@ -198,13 +198,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [erik@sourcegraph.com](mailto:erik@sourcegraph.com), [eseliger](https://github.com/eseliger), [LinkedIn](https://www.linkedin.com/in/erik-seliger/)
 - Erik has a background in Systems Engineering and decided that software is the most interesting field of engineering, which he never quit since first touching Turbo Pascal at age 11.
 
-## Kevin Zheng
-
-- Software Engineer
-- Brooklyn, NYC, USA 🇺🇸
-- [kevin.zheng@sourcegraph.com](mailto:kevin.zheng@sourcegraph.com), [kzh](https://github.com/kzh)
-- Kevin enjoys tinkering with his `.dotfiles` and traversing ASTs. His passion for CS started early with his stints in the Minecraft modding scene and gradually transitioned into robotics during high school. He is on an indefinite hiatus from his BS CS studies at Rutgers University New Brunswick.
-
 ## Kai Passo
 
 - Account Executive
