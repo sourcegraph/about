@@ -125,7 +125,8 @@ into a file 'sourcegraph.Storageclass.yaml' and executing
 kubectl apply -f sourcegraph.Storageclass.yaml
 ```
 
-- cd to your clone of [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) and execute
+- cd to your clone of [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) and follow the remaining
+steps of the [installation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md).
 
 ```shell script
 ./kubectl-apply-all.sh
@@ -139,6 +140,10 @@ kubectl apply -f sourcegraph.Storageclass.yaml
 ```shell script
 kubectl port-forward svc/sourcegraph-frontend 3080:30080 
 ```  
+
+Please delete your test cluster when you are done testing by going
+[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
+appropriate delete button.
 
 ## kubectl cheatsheet
 
