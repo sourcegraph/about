@@ -141,7 +141,7 @@ steps of the [installation](https://github.com/sourcegraph/deploy-sourcegraph/bl
 kubectl port-forward svc/sourcegraph-frontend 3080:30080 
 ```  
 
-Please delete your test cluster when you are done testing by going
+Please delete your test cluster when you are done testing by going to
 [Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
 appropriate delete button.
 
