@@ -98,8 +98,8 @@ The other clusters are deployed and rolled back in the same way as sourcegraph.c
 - Set the default pool to 3 nodes.
 - Change machine type to n1-standard-8.
 - Click "Create Cluster".
-- When cluster is ready, click connect and copy/paste the command and execute it (it looks something like `
-gcloud container clusters get-credentials ....`). Now kubectl is acting on this cluster.
+- When cluster is ready, click connect and copy/paste the command and execute it (it looks something 
+  like `gcloud container clusters get-credentials ....`). Now kubectl is acting on this cluster.
 - Give yourself admin superpowers by executing: 
 
 ```shell script
