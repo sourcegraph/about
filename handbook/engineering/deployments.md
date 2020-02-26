@@ -103,7 +103,7 @@ The other clusters are deployed and rolled back in the same way as sourcegraph.c
 - Give yourself admin superpowers by executing: 
 
 ```shell
-kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)` 
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
 ```
 
 - Add a storage class by saving these contents
