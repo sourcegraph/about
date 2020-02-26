@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import { eventLogger } from '../EventLogger'
 
 export default class Pricing extends React.Component<any, any> {
     public componentDidMount(): void {
@@ -14,9 +13,6 @@ export default class Pricing extends React.Component<any, any> {
                 portalId: '2762526',
                 formId: '21cd17a4-7038-4873-8857-68c443b5fb59',
                 target: '#dotGoForm',
-                onFormSubmit: (e: Event) => {
-                    eventLogger.trackDotGoFormSubmitted()
-                },
             })
         })
     }

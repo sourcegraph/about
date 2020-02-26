@@ -1,7 +1,6 @@
 import React from 'react'
 import { COLORS } from '../Jumbotron'
 import slugify from 'slugify'
-import { eventLogger } from '../../EventLogger'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ContentPage } from './ContentPage'
 import { ContentSection } from './ContentSection'
@@ -41,9 +40,6 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
                     href={pdf}
                     className="btn btn-primary mt-4"
                     rel="nofollow"
-                    onClick={() => {
-                        eventLogger.trackCaeStudyDownloadPDFClicked(customer)
-                    }}
                     target="_blank"
                 >
                     <i className="fa fa-file-pdf pr-2" />

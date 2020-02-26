@@ -1,7 +1,6 @@
 import React, { useLayoutEffect } from 'react'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { eventLogger } from '../../EventLogger'
 
 interface HubSpotForm {
     portalId: string
@@ -31,7 +30,6 @@ export default ((props: any) => {
             portalId: '2762526',
             formId: '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9',
             targetId: 'hubspotContactForm',
-            onFormSubmit: () => eventLogger.trackContactUsFormSubmitted(),
         })
     }, [])
     return (

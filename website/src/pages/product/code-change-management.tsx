@@ -16,14 +16,10 @@ import {
     RequestCodeChangeManagementDemoAction,
     RequestCodeChangeManagementDemoActionNow,
 } from '../../css/components/actions/RequestDemoAction'
-import { eventLogger } from '../../EventLogger'
 
 const title = 'Code change management'
 const description =
     'Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt. Compute changes, create branches, and track pull requests across all affected repositories.'
-const seeItInActionClicked = () => {
-    eventLogger.trackCampaignsSeeItInActionButtonClicked()
-}
 
 export const CampaignsTable: React.FunctionComponent<{
     campaigns: string[]
@@ -80,7 +76,6 @@ export default ((props: any) => (
                         <a
                             className="btn btn-outline-primary rounded-lg active mb-5 px-6"
                             href="#see-it-in-action"
-                            onClick={seeItInActionClicked}
                         >
                             See it in action
                         </a>
