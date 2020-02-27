@@ -33,7 +33,7 @@ Unison is an open source functional programming language with special support fo
 ## Background
 
 Unison is a new programming language with special support for building distributed systems.
-Specifically, it is an open-source statically-typed, functional language that was Influenced
+Specifically, it is an open source statically-typed, functional language that was Influenced
 in party by Haskell, Erlang, and another research language called Frank. Unison has been a research language for several years but it is in public alpha now.
 
 ## Goals

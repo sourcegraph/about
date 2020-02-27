@@ -12,7 +12,7 @@ published: true
 
 Sourcegraph 3.0 is now shipping! This release comes with *HUGE* improvements so you can search and navigate all your organization's code more quickly, with code intelligence (go-to-definition and find-references) for all languages.
 
-What is Sourcegraph? Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
+What is Sourcegraph? Sourcegraph is an open source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
 
 Highlights of this release:
 
@@ -34,11 +34,11 @@ Plus, there are several new and improved [Sourcegraph extensions](https://docs.s
 - [Go language support](https://sourcegraph.com/extensions/sourcegraph/go)
 - [Python language support](https://sourcegraph.com/extensions/sourcegraph/python)
 
-Also, in case you missed it, [Sourcegraph is now open source](https://about.sourcegraph.com/blog/sourcegraph-is-now-open-source) (Apache-licensed).
+Also, in case you missed it, [Sourcegraph is now open source](https://about.sourcegraph.com/blog/sourcegraph-is-now-open source) (Apache-licensed).
 
 Want to hear about new features and releases as soon as they're available? Follow [@srcgraph](https://twitter.com/srcgraph).
 
-Ready to [install or upgrade a self-hosted Sourcegraph instance](#install-or-upgrade)? You can also [try these features on Sourcegraph.com for open-source code](https://sourcegraph.com).
+Ready to [install or upgrade a self-hosted Sourcegraph instance](#install-or-upgrade)? You can also [try these features on Sourcegraph.com for open source code](https://sourcegraph.com).
 
 ## Highlights
 
@@ -143,7 +143,7 @@ See ["GitHub integration with Sourcegraph"](https://docs.sourcegraph.com/integra
 
 ### Nginx-based HTTP server
 
-All external HTTP serving and configuration (TLS, listen ports, Let's Encrypt, etc.) is now handled by [Nginx](https://nginx.org/en/), a popular, open-source HTTP server. See ["Sourcegraph nginx HTTP server settings"](https://docs.sourcegraph.com/admin/nginx) for information on how to configure the external web server for Sourcegraph.
+All external HTTP serving and configuration (TLS, listen ports, Let's Encrypt, etc.) is now handled by [Nginx](https://nginx.org/en/), a popular, open source HTTP server. See ["Sourcegraph nginx HTTP server settings"](https://docs.sourcegraph.com/admin/nginx) for information on how to configure the external web server for Sourcegraph.
 
 Previously, Sourcegraph implemented these HTTP features internally. We found that most admins preferred to wrap Sourcegraph with Nginx (sometimes using [ingress-nginx](https://github.com/kubernetes/ingress-nginx)) anyway, so we decided to make that the preferred and only way. Now that Sourcegraph relies on Nginx, you have the full power and configurability of Nginx at your disposal.
 

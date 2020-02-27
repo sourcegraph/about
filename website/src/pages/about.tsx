@@ -67,7 +67,7 @@ export default class About extends React.Component<any, any> {
                                         <ul>
                                             <li>Make basic code intelligence ubiquitous</li>
                                             <li>Make code review continuous and intelligent</li>
-                                            <li>Increase the amount and quality of open-source code</li>
+                                            <li>Increase the amount and quality of open source code</li>
                                         </ul>
                                         <Link to="/plan">
                                             <button className="btn btn-primary about__plan-btn">

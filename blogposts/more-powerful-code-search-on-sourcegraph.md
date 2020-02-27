@@ -24,7 +24,7 @@ Try it out at [sourcegraph.com/search](https://sourcegraph.com/search) or on a [
 
 Use the search fields on the homepage to construct your query the first few times.
 
-As you continue using it, you can express your query more quickly by using the operators (**repo:** and **file:**, etc.) in the main search box. Here are some sample queries (across a sample set of open-source projects) to get you started:
+As you continue using it, you can express your query more quickly by using the operators (**repo:** and **file:**, etc.) in the main search box. Here are some sample queries (across a sample set of open source projects) to get you started:
 
 * Search non-vendored files for “open file”: [**repogroup:sample -file:vendor/ -file:node_modules/ open file**](https://sourcegraph.com/search?q=open+file&sq=repogroup:sample+-file:vendor/+-file:node_modules/)
 * Search repositories named “mux” in test files for “new route”: [**repogroup:sample file:(test|spec) repo:mux new route**](https://sourcegraph.com/search?q=repo:mux+new+route&sq=repogroup:sample+file:%28test%7Cspec%29)

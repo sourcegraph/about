@@ -22,7 +22,7 @@ We will also enable [basic code intelligence](https://sourcegraph.com/extensions
 
 Temporarily removing these languages lets us fully switch over to the new [Sourcegraph extension-based](https://docs.sourcegraph.com/extensions) architecture for language support. The new scheme makes it much easier for us (and others) to add more and better language support using [existing language servers](https://langserver.org/).
 
-We apologize to users who used code intelligence for the affected languages on Sourcegraph.com for open-source code, and we commit to bringing them back better than before. Because [Sourcegraph is open source](https://github.com/sourcegraph/sourcegraph) and you can run your own self-hosted Sourcegraph instance, there is a free and open-source workaround to still get support for these languages.
+We apologize to users who used code intelligence for the affected languages on Sourcegraph.com for open source code, and we commit to bringing them back better than before. Because [Sourcegraph is open source](https://github.com/sourcegraph/sourcegraph) and you can run your own self-hosted Sourcegraph instance, there is a free and open source workaround to still get support for these languages.
 
 ### How do I get code intelligence for the affected languages?
 

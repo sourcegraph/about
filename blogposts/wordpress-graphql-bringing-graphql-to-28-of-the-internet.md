@@ -41,11 +41,11 @@ Performance with the REST API also frustrated engineers.  Jason showed us a scre
 ## Why WordPress + GraphQL? (Generally speaking)
 
 Since Jason and team decided to build a GraphQL server for internal use, they thought that an open source solution to bring GraphQL to any WordPress site would benefit the wider internet.
-WordPress powers 28% of the web, and has a stated goal to boost that percentage to 51%.  GraphQL wants to achieve ubiquity, so having WordPress sites using GraphQL is a catalyst for achieving this goal.  Both WordPress and GraphQL are open-source and community-centric, and aim to solve general problems for the web, so it is natural that GraphQL and WordPress go hand in hand.
+WordPress powers 28% of the web, and has a stated goal to boost that percentage to 51%.  GraphQL wants to achieve ubiquity, so having WordPress sites using GraphQL is a catalyst for achieving this goal.  Both WordPress and GraphQL are open source and community-centric, and aim to solve general problems for the web, so it is natural that GraphQL and WordPress go hand in hand.
 
 ![Bahl-3](//images.contentful.com/le3mxztn6yoo/2Uzi2t3SykUuGEeMwGY0oq/ccdf74de67546ba279e10e2fe88ef67e/Bahl-3.png)
 
-GraphQL is the missing piece in the WordPress stack, so Jason and team set out to create a way for any WordPress site to harness the power of GraphQL, and built [WPGraphQL](https://github.com/wp-graphql/wp-graphql).  WPGraphQL is a free, open-source WordPress plugin that provides an extendable GraphQL schema and API for any WordPress site.
+GraphQL is the missing piece in the WordPress stack, so Jason and team set out to create a way for any WordPress site to harness the power of GraphQL, and built [WPGraphQL](https://github.com/wp-graphql/wp-graphql).  WPGraphQL is a free, open source WordPress plugin that provides an extendable GraphQL schema and API for any WordPress site.
 
 ## A quick overview of WordPress
 

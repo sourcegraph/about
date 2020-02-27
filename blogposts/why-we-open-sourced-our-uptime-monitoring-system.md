@@ -1,5 +1,5 @@
 ---
-title: 'Why we open-sourced our uptime monitoring system'
+title: 'Why we open sourced our uptime monitoring system'
 author: 'Beyang Liu'
 publishDate: 2016-09-08T00:00-07:00
 tags: [
@@ -12,9 +12,9 @@ published: true
 
 
 
-About a month ago, [Sourcegraph](https://sourcegraph.com/) released [Checkup](https://sourcegraph.github.io/checkup/), an [open-source](https://sourcegraph.com/github.com/sourcegraph/checkup/-/blob/checkup.go), self-hosted uptime monitoring system written by [Matt Holt](https://github.com/mholt).
+About a month ago, [Sourcegraph](https://sourcegraph.com/) released [Checkup](https://sourcegraph.github.io/checkup/), an [open source](https://sourcegraph.com/github.com/sourcegraph/checkup/-/blob/checkup.go), self-hosted uptime monitoring system written by [Matt Holt](https://github.com/mholt).
 
-Following its release, a lot of people asked us how we were using Checkup at Sourcegraph. Today, we’re sharing our public [status page](http://checkup.sourcegraph.com/), powered by Checkup, and laying out some of the big advantages we’ve found using an open-source health check tool.
+Following its release, a lot of people asked us how we were using Checkup at Sourcegraph. Today, we’re sharing our public [status page](http://checkup.sourcegraph.com/), powered by Checkup, and laying out some of the big advantages we’ve found using an open source health check tool.
 
 [![](https://cdn-images-1.medium.com/max/1000/1*9ytaM5nY14EhaIOQlDWp9g.png)](http://checkup.sourcegraph.com/)
 
@@ -29,7 +29,7 @@ We sponsored the creation of Checkup, because we found none of the existing paid
 
 ### How Sourcegraph uses Checkup
 
-Using an open-source health check system makes it possible to incorporate health checks into a few different stages in the software development cycle.
+Using an open source health check system makes it possible to incorporate health checks into a few different stages in the software development cycle.
 
 #### 1\. Uptime monitoring
 
@@ -71,7 +71,7 @@ We think Checkup has a lot going for it as a health check tool. It’s not for e
 
 Having the source available means you can dive into the inner workings of Checkup if unexpected behavior crops up. And you can extend the tool to fit your needs (and push those changes upstream to share those capabilities with other Checkup users). Already, community contributors have added support for new underlying data stores and new types of checks (TCP and DNS).
 
-But availability alone is not enough. There are plenty of open-source projects where the code is available but inscrutable. Documentation and API design are key, but so is making the code itself as easy to navigate as possible. And in that spirit, here are 5 different places where you can dive into the Checkup source and understand how it all works:
+But availability alone is not enough. There are plenty of open source projects where the code is available but inscrutable. Documentation and API design are key, but so is making the code itself as easy to navigate as possible. And in that spirit, here are 5 different places where you can dive into the Checkup source and understand how it all works:
 
 *   [The main function](https://sourcegraph.com/github.com/sourcegraph/checkup@d7cd4db3ced36aea99e56f3ed13d877688bff20c/-/def/GoPackage/github.com/sourcegraph/checkup/cmd/checkup/-/main.go/main). This is where it all begins. Like many main functions, ours is simply a wrapper around a method call…
 *   [RootCmd.Run](https://sourcegraph.com/github.com/sourcegraph/checkup@d7cd4db3ced36aea99e56f3ed13d877688bff20c/-/def/GoPackage/github.com/sourcegraph/checkup/cmd/-/RootCmd)(). Checkup’s “true” main function. We use spf13's Cobra library, which lets you define a CLI by creating an instance of the [cobra.Command](https://sourcegraph.com/github.com/spf13/cobra@9c28e4bbd74e5c3ed7aacbc552b2cab7cfdfe744/-/def/GoPackage/github.com/spf13/cobra/-/Command) struct.

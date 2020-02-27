@@ -13,9 +13,9 @@ published: true
 
 **Update (September 20, 2017):** Viewing a list of repositories that refer to another repository is currently disabled. It will be added back soon. Viewing function call sites across repositories is still supported.
 
-We’re excited to announce that **Sourcegraph “used by” badges** now support Java libraries. If you’re an open-source author, these badges tell you how many other projects depend on your work. If you’re an open-source user, the badges help you make an informed decision based on how many others are actually using and relying on a library.
+We’re excited to announce that **Sourcegraph “used by” badges** now support Java libraries. If you’re an open source author, these badges tell you how many other projects depend on your work. If you’re an open source user, the badges help you make an informed decision based on how many others are actually using and relying on a library.
 
-![](https://cdn-images-1.medium.com/max/800/1*d3pUuXjGPHqmW_Sz69Y19A.png)[![](https://cdn-images-1.medium.com/max/800/1*1dziZxK--_T9DmzYdGIIIA.png)](https://sourcegraph.com/github.com/junit-team/junit@cebbf5e15725b4dc247ac0557f6fa63f475b15af/-/blob/src/main/java/org/junit/Test.java#L66:19-66:23)JUnit is used by over 6 thousand open-source projects.
+![](https://cdn-images-1.medium.com/max/800/1*d3pUuXjGPHqmW_Sz69Y19A.png)[![](https://cdn-images-1.medium.com/max/800/1*1dziZxK--_T9DmzYdGIIIA.png)](https://sourcegraph.com/github.com/junit-team/junit@cebbf5e15725b4dc247ac0557f6fa63f475b15af/-/blob/src/main/java/org/junit/Test.java#L66:19-66:23)JUnit is used by over 6 thousand open source projects.
 
 Our badges pull dependency information from the same global code graph that helps you make sense of code on [Sourcegraph.com](https://sourcegraph.com). Code is data, and we’re on a mission to make that data useful to programmers everywhere.
 
@@ -32,7 +32,7 @@ Customize the look and feel of your badge with 3 different styles by tacking any
 *   `?style=flat`
 *   `?style=flat-square`
 
-Here are just a few of the popular open-source repositories that already use the badge:
+Here are just a few of the popular open source repositories that already use the badge:
 
 *   [gorilla/mux](https://github.com/gorilla/mux#readme), URL router and dispatcher for Go: used by 3,000+ projects
 *   [Gogs](https://github.com/gogits/gogs#readme), a self-hosted Git service: used by 1,000+ projects
@@ -40,7 +40,7 @@ Here are just a few of the popular open-source repositories that already use the
 *   [Go kit](https://github.com/go-kit/kit#readme), a toolkit for microservices: used by 509 projects
 *   [Caddy webserver](https://github.com/mholt/caddy#readme): used by 237 projects
 
-How many people rely on your open-source code? Find out now by pasting the Markdown snippet into your README. Here it is again:
+How many people rely on your open source code? Find out now by pasting the Markdown snippet into your README. Here it is again:
 
 <pre name="af89" id="af89" class="graf graf--pre graf-after--p graf--trailing">[![Sourcegraph]
 (https://sourcegraph.com/github.com/junit-team/junit4/-/badge.svg)](https://sourcegraph.com/github.com/junit-team/junit4?badge)</pre>

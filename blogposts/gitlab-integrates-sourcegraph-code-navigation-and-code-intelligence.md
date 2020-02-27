@@ -52,7 +52,7 @@ Because we have many satisfied customers in common, a shared focus on developers
 
 Higher quality code reviews become possible when developers have more context about code they are reviewing. With this new integration, hover tooltips provide access to go-to-definition and find references in the browser on their code host. This means that developers can traverse the code they are reviewing, investigate the impact of code changes thoroughly by finding all affected references, and complete their code reviews faster, all without leaving the browser.
 
-Higher-quality code reviews mean fewer bugs, and more time spent on building new features. Making open-source code easier to read and understand means faster identification of vulnerabilities, a better understanding of libraries, and less duplicated code.
+Higher-quality code reviews mean fewer bugs, and more time spent on building new features. Making open source code easier to read and understand means faster identification of vulnerabilities, a better understanding of libraries, and less duplicated code.
 
 Together, GitLab and Sourcegraph are creating a better world for enterprise and open source developers, consumers, and organizations.
 

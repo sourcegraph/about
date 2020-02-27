@@ -29,7 +29,7 @@ Programmers seek out and use tools that we think will help us squeeze the most o
 
 Time-tracking programs are a dime a dozen, but when we looked around, we didn't find any that we’d want to use day-to-day as developers. Existing trackers made you manually enter information, use a clunky GUI, or didn't let you drill down into the data. We wanted a time-tracking utility that had all the things you’d expect from a great developer tool: a simple and easy CLI, full control and access to the raw data, and source code that’s hackable and open.
 
-So we wrote [Thyme](https://sourcegraph.com/github.com/sourcegraph/thyme), an open-source command-line tool that lets you easily track and analyze the time you spend on your computer. Think of it as a sampling profiler, but for You instead of your machine.
+So we wrote [Thyme](https://sourcegraph.com/github.com/sourcegraph/thyme), an open source command-line tool that lets you easily track and analyze the time you spend on your computer. Think of it as a sampling profiler, but for You instead of your machine.
 
 ### Finding actionable productivity insights with Thyme
 
@@ -99,4 +99,4 @@ Then just open **thyme.html** in your favorite web browser and voila, you get th
 
 All the information Thyme collects is kept safely on your local disk so you have full control over your data. It never sends any information over the Internet.
 
-Thyme currently supports Linux (with X-Windows) and macOS support is on the way soon. It’s built with simplicity and hackability in mind. The code is [open-source](https://sourcegraph.com/github.com/sourcegraph/thyme/-/def/GoPackage/github.com/sourcegraph/thyme/cmd/thyme/-/main.go/TrackCmd/Execute), [well-documented](https://godoc.org/github.com/sourcegraph/thyme), and easily extensible. [Try it out](https://github.com/sourcegraph/thyme) and [let us know what you think](http://twitter.com/srcgraph)!
+Thyme currently supports Linux (with X-Windows) and macOS support is on the way soon. It’s built with simplicity and hackability in mind. The code is [open source](https://sourcegraph.com/github.com/sourcegraph/thyme/-/def/GoPackage/github.com/sourcegraph/thyme/cmd/thyme/-/main.go/TrackCmd/Execute), [well-documented](https://godoc.org/github.com/sourcegraph/thyme), and easily extensible. [Try it out](https://github.com/sourcegraph/thyme) and [let us know what you think](http://twitter.com/srcgraph)!

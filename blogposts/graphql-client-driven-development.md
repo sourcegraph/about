@@ -238,4 +238,4 @@ query {
 
 In the future, they hope directives will allow creation and testing of more experimental features. It is a way to keep evolving GraphQL. GraphQL is not static and it's never going to be done.
 
-Seeing the evolution from inception in 2012 all the way to today, there's no way they could have foreseen where it is today. They weren't sure it would be used much inside Facebook, much less be a massively successful open-source project. So it's hard for him to forecast what GraphQL will look like in another 5 years. But he does believe that one thing will be the same: it'll still be Client-Driven Development.
+Seeing the evolution from inception in 2012 all the way to today, there's no way they could have foreseen where it is today. They weren't sure it would be used much inside Facebook, much less be a massively successful open source project. So it's hard for him to forecast what GraphQL will look like in another 5 years. But he does believe that one thing will be the same: it'll still be Client-Driven Development.

@@ -9,7 +9,7 @@ slug: plan
 
 ## What we're building, and why it matters
 
-Today, Sourcegraph gives you code search and intelligence on the web with [Sourcegraph](https://docs.sourcegraph.com). You can use it on your company's internal code, or you can try it on open-source code on [Sourcegraph.com](https://sourcegraph.com/search) and with the [browser/editor integrations](https://docs.sourcegraph.com/integration).
+Today, Sourcegraph gives you code search and intelligence on the web with [Sourcegraph](https://docs.sourcegraph.com). You can use it on your company's internal code, or you can try it on open source code on [Sourcegraph.com](https://sourcegraph.com/search) and with the [browser/editor integrations](https://docs.sourcegraph.com/integration).
 
 What most people don't know is that our long-term vision is to make it so everyone, in every community, in every country, and in every industry—not just the ones working at the half-dozen dominant tech companies—can create products using the best technology. We believe this is the only way the world will sustain broad economic growth and build the innovations we need over the next 100 years in transportation, health care, energy, AI, communication, space travel, etc.
 
@@ -27,7 +27,7 @@ At Sourcegraph, we want to fix this and eventually enable everyone to build soft
 
 1. Make basic code intelligence ubiquitous
 2. Make code review continuous and intelligent
-3. Increase the amount and quality of open-source code
+3. Increase the amount and quality of open source code
 
 When phase 1 is almost done, we'll reveal phase 2: how we'll work toward enabling everyone to code. If you think that's crazy, ask yourself: now that billions of people have access to the Internet, is coding more like reading and writing (which virtually everyone does) or publishing books (which 0.1% of the population does)?
 
@@ -63,8 +63,8 @@ The current approach is broken because it's an "m-times-n" solution: one tool fo
 Here's how to fix it and bring basic code intelligence to every developer everywhere:
 
 1. Transform the "m-times-n" language-editor tool problem into a more manageable "m-plus-n" problem by using the [Language Server Protocol (LSP)](https://github.com/Microsoft/language-server-protocol) open standard
-  - Create open-source LSP language servers for every language -- [in progress](http://langserver.org)
-  - Create open-source LSP adapter plugins for every editor, code viewer, and code review tool -- [in progress](http://langserver.org)
+  - Create open source LSP language servers for every language -- [in progress](http://langserver.org)
+  - Create open source LSP adapter plugins for every editor, code viewer, and code review tool -- [in progress](http://langserver.org)
   - Make it easy for projects to supply the necessary configuration (if any) so that everyone gets code intelligence on the project's code
   - Make it quick and easy to add/install code intelligence for any language in your tools of choice
 
@@ -98,20 +98,20 @@ Here's how we'll bring continuous, intelligent code review (as described above) 
 
 The fundamental problem of software development is that most developers spend most of their time doing things that aren't core to solving their actual problem. Of all the code you write, only a tiny fraction is core to your particular business or application. Likewise for the bugs you spend time fixing.
 
-We will make it much easier to create and reuse public, open-source code by giving everyone access to the global code graph. The global code graph is the collection of all the code in the world, stored in a system that understands the dependency and call graph relationships across tens of millions of codebases. It’s what powers the features in the previous steps.
+We will make it much easier to create and reuse public, open source code by giving everyone access to the global code graph. The global code graph is the collection of all the code in the world, stored in a system that understands the dependency and call graph relationships across tens of millions of codebases. It’s what powers the features in the previous steps.
 
-This will increase the amount and reusability of available code by 10-100x because the current tools for creating and using open-source code are very limited. For one: creators and maintainers of open-source projects have no data about who's using their project and how, except from bug reports. Imagine running and stocking a supermarket if you only knew what items customers returned, not what they bought.
+This will increase the amount and reusability of available code by 10-100x because the current tools for creating and using open source code are very limited. For one: creators and maintainers of open source projects have no data about who's using their project and how, except from bug reports. Imagine running and stocking a supermarket if you only knew what items customers returned, not what they bought.
 
-The global code graph will make it easier and more rewarding to create and maintain open-source code:
+The global code graph will make it easier and more rewarding to create and maintain open source code:
 
-- Users can opt in to share aggregate data about how they're using open-source projects (what APIs, patterns, etc., they use), determined automatically from the users' own code. Every project's community will grow because every user becomes a contributor.
+- Users can opt in to share aggregate data about how they're using open source projects (what APIs, patterns, etc., they use), determined automatically from the users' own code. Every project's community will grow because every user becomes a contributor.
 - Projects can use this information to prioritize enhancements, bug fixes, documentation, etc.
 - Creators and maintainers can see and understand how they are helping hundreds or thousands of people all around the world (instead of just seeing bug reports and stars).
 
-The global code graph will also make it easier for you to find and reuse high-quality open-source code:
+The global code graph will also make it easier for you to find and reuse high-quality open source code:
 
 - When coding, you can see contextual usage examples/patterns and discussions based on everyone else's similar (opted-in) code—on the web or in your editor.
 - If you make a common mistake that other users have encountered and flagged, you'll be notified immediately. When a library releases an update, you'll be notified about the impact it has on your own code, and you can see information from everyone else who has upgraded.
 - When evaluating a library, you can see how many people are actively using it, what APIs they're calling, what other libraries they're using alongside it, etc., to make the best decision about which library to use.
 
-Getting these right and building the global code graph means you'll be able to find and use more existing, high-quality open-source components for the common parts of your application, so you can focus on solving the problems that are unique to your business or project.
+Getting these right and building the global code graph means you'll be able to find and use more existing, high-quality open source components for the common parts of your application, so you can focus on solving the problems that are unique to your business or project.

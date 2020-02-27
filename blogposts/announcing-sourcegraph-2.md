@@ -20,9 +20,9 @@ Already used by many of our customers and now available to all companies, Source
 
 Sourcegraph is what powers <a href="https://sourcegraph.com/">Sourcegraph.com</a>, and now you can run it inside your company's network. [Install a self-hosted Sourcegraph instance in 1 command.](https://docs.sourcegraph.com/#quickstart)
 
-## Explore open-source code with the new Sourcegraph.com and browser extensions
+## Explore open source code with the new Sourcegraph.com and browser extensions
 
-Search and browse open-source code on <a href="https://sourcegraph.com/">Sourcegraph.com</a> and using the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) (on GitHub), with full code intelligence: go-to-definition, find-references, etc. The full power of Sourcegraph is always free for open source.
+Search and browse open source code on <a href="https://sourcegraph.com/">Sourcegraph.com</a> and using the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) (on GitHub), with full code intelligence: go-to-definition, find-references, etc. The full power of Sourcegraph is always free for open source.
 
 What’s new and different:
 
@@ -31,7 +31,7 @@ What’s new and different:
 
 ## Use Sourcegraph at work
 
-We hear overwhelmingly from our users: "I love Sourcegraph on open-source code, and I want to use it for work." Our new products are built to make this even easier. You can use Sourcegraph on your organization's code, and it all stays secure on your own network. Your code never touches our servers, and both products connect directly to your cloud or enterprise code hosts to work across all of your repositories.
+We hear overwhelmingly from our users: "I love Sourcegraph on open source code, and I want to use it for work." Our new products are built to make this even easier. You can use Sourcegraph on your organization's code, and it all stays secure on your own network. Your code never touches our servers, and both products connect directly to your cloud or enterprise code hosts to work across all of your repositories.
 
 ---
 
