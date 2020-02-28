@@ -2,6 +2,10 @@
 // stylelint-disable selector-class-pattern
 // stylelint-disable selector-max-id
 .home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/bg-home-mountains-TEST.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
     &__intro {
         @include media-breakpoint-down(sm) {
             $margin-y: 2.5rem;
