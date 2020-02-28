@@ -9,10 +9,10 @@ interface ProductFeatureOrUseCase {
 }
 
 export const PRODUCT_FEATURES: ProductFeatureOrUseCase[] = [
-    { text: 'Code search', to: '/product/code-search-navigation' },
+    { text: 'Code discovery', to: '/product/code-search-navigation' },
     { text: 'Code intelligence', to: '/product/code-intelligence' },    
-    { text: 'Code review', to: '/product/code-review' },
     { text: 'Code change management', to: '/product/code-change-management' },
+    { text: 'Code review', to: '/product/code-review' },
 ]
 
 export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
@@ -56,7 +56,6 @@ const ProductPopoverBody: React.FunctionComponent<any> = () => {
                     What is Universal Code Search?
                 </Link>
             </div>
-            <div className="text-muted mt-3 mb-2 mx-2 font-weight-normal">Popular Sourcegraph use cases</div>
             <ul className="nav flex-column">
                 {[...PRODUCT_FEATURES, ...PRODUCT_USE_CASES].map(({ text, detail, to }, i) => (
                     <li className="nav-item" key={i}>
