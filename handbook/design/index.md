@@ -5,5 +5,5 @@ TO DO
 ## Resources
 
 - [Figma](https://www.figma.com/files/team/438792081639669302/Sourcegraph)
-- [Zeplin](#)
+- [Zeplin](https://app.zeplin.io/organization/5c89680f35ff390de83a2cb0/dashboard)
 - TODO
