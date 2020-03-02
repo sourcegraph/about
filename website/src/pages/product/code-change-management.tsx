@@ -231,8 +231,8 @@ export default ((props: any) => (
                 color="purple"
                 className="request-campaigns-demo-footer py-4"
                 logomark={false}
-                title="Request a Sourcegraph code change management demo"
-                description="With code change management, large-scale fixes and changes that previously took weeks or months can be completed in hours."
+                title="See how Sourcegraph code change management can help your team"
+                description="With code change campaigns, large-scale fixes and changes that previously took weeks or months can be completed in hours."
             >
                 <RequestCodeChangeManagementDemoActionNow />
             </Jumbotron>
