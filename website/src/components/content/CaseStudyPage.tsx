@@ -116,8 +116,8 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     title?: string
     description?: string
 }> = ({
-    title = 'See the difference Sourcegraph can make with a demo and free enterprise trial',
-    description = "Sourcegraph's code search enables developers find dead code, unused packages, and deprecated references in tens of thousands of repositories within seconds. Let us show you how.",
+    title = 'See how Sourcegraph can help with a demo and free enterprise trial',
+    description = "Universal Code Search enables developers to explore and better understand all code, everywhere, faster. Let us show you how.",
 }) => (
     <ContentPage
         title={title}

@@ -7,7 +7,7 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'How Sourcegraph code search enabled large scale refactoring at Quantcast',
+            title: 'Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring',
             description:
                 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
             image: 'https://about.sourcegraph.com/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg',
@@ -15,7 +15,7 @@ export default ((props: any) => (
     >
         <CaseStudyPage
             customer="Quantcast"
-            title="How Sourcegraph code search enabled large scale refactoring at Quantcast"
+            title="Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring"
             logo="/external-logos/quantcast-logo-white.svg"
             quote={{
                 quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
