@@ -21,3 +21,4 @@ Campaign users don't have to worry about:
 * Turn the result into patches
 * Create pull requests from patches
 * Draft, keep track of and update a large number of pull requests
+* Re-running code when the base branch changes
