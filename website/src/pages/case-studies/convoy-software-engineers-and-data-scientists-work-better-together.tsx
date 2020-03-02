@@ -7,7 +7,7 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'At Convoy, Software Engineers and Data Scientists work better together',
+            title: 'Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together',
             description:
                 'At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
             image: 'https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
