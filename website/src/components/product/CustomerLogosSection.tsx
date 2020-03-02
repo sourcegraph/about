@@ -51,7 +51,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
     className = '',
 }) => (
     <div className={`customer-logos-section ${className}`}>
-        <h4 className="text-center font-weight-light">Every developer at these companies uses Sourcegraph Universal Code Search</h4>
+        <h3 className="text-center font-weight-light">Every developer at these companies uses Sourcegraph Universal Code Search</h3>
         <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) =>
                 'name' in logo ? (
