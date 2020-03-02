@@ -51,7 +51,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
     className = '',
 }) => (
     <div className={`customer-logos-section ${className}`}>
-        <h4 className="text-center font-weight-light">Elite companies trust Sourcegraph {trustWhat}</h4>
+        <h4 className="text-center font-weight-light">Every developer at these companies uses Sourcegraph Universal Code Search</h4>
         <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) =>
                 'name' in logo ? (
@@ -60,9 +60,6 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
                         className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item mx-2`}
                     >
                         <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
-                        <small className="customer-logos-section__item-caption text-muted">
-                            Every developer at {logo.name} uses Sourcegraph
-                        </small>
                     </div>
                 ) : (
                     <div
@@ -78,12 +75,10 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
                             <br />
                             {logo.description}
                         </div>
-                        <small className="customer-logos-section__item-caption text-muted">
-                            Every developer uses Sourcegraph
-                        </small>
                     </div>
                 )
             )}
         </div>
+                <h4 className="text-center font-weight-light">use Sourcegraph Universal Code Search</h4>
     </div>
 )
