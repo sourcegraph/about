@@ -96,7 +96,7 @@ export default ((props: any) => (
         </CaseStudyPage>
         <CaseStudyRequestDemoForm
             title="Need help with your monolith to microservices migration?"
-            description="Sourcegraph can ensure a safe and efficient deployment plan for migrating you monolith to microservices. Get in touch to schedule a demo."
+            description="Sourcegraph Universal Code Search can ensure a safe and efficient deployment plan for migrating your monolith to microservices. Get in touch to schedule a demo."
         />
     </Layout>
 )) as React.FunctionComponent<any>
