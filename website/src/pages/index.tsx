@@ -184,6 +184,7 @@ export default ((props: any) => (
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
+            <GitLabIntegrationSection />
             <ContentSection color="black">
                 <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
             </ContentSection>
@@ -214,7 +215,6 @@ export default ((props: any) => (
                     <Tweets />
                 </div>
             </div>
-            <GitLabIntegrationSection />
             <ContentSection className="my-5">
                 <EnterpriseReadySolution className="pt-2" />
             </ContentSection>
