@@ -79,6 +79,5 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
                 )
             )}
         </div>
-                <h4 className="text-center font-weight-light">use Sourcegraph Universal Code Search</h4>
     </div>
 )
