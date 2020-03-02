@@ -11,7 +11,7 @@ When I write an AWS Lambda function I want to focus on which requests it receive
 
 When I deploy a static site on Netlify I want to focus on my site — its content and design — and not think about where it's deployed, how to get new SSL certificates, how to install dependencies to run the static site generator on a server, how to preview the site in a pull request.
 
-**Campaigns allow users to focus on finding code that needs to be changed and changing it by running code**.
+**Find code that needs to be changed and change it by running code**.
 
 Campaign users don't have to worry about:
 
