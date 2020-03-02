@@ -9,7 +9,7 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title:
-                'How Sourcegraph helped ensure production stability at Lyft during their monolith to microservices decomposition',
+                'Lyft adopts Sourcegraph Universal Code Search to ensure production stability during their monolith to microservices decomposition',
             description:
                 'Learn how Sourcegraph code search helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition',
             // image: "https://about.sourcegraph.com/lyft-sourcegraph-case-study-og-embed.jpg"-pending approval
@@ -17,7 +17,7 @@ export default ((props: any) => (
     >
         <CaseStudyPage
             customer="Lyft"
-            title="How Sourcegraph helped ensure production stability at Lyft during their monolith to microservices decomposition"
+            title="Lyft adopts Sourcegraph Universal Code Search to ensure production stability during their monolith to microservices decomposition"
             logo="/external-logos/lyft-logo.svg"
             quote={{
                 quote:
