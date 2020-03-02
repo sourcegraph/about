@@ -15,7 +15,7 @@ export default ((props: any) => (
     >
         <CaseStudyPage
             customer="Convoy"
-            title="At Convoy, Software Engineers and Data Scientists work better together"
+            title="Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together"
             logo="/external-logos/convoy-logo-white.svg"
             quote={{
                 quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
