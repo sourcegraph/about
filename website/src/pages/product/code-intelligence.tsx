@@ -65,12 +65,12 @@ export default ((props: any) => (
                 </h2>
                   <IconItem color="brand-orange" icon={FolderSearchOutlineIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Find the definition or function calls and anything else in code, across package, dependency, and repository boundaries.
+                        Find the definition, function calls and anything else in code, across packages, dependencies, and repositories.
                     </h5>
                     </IconItem>
                 <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Explore code intelligently in your web browser in any repository on any branch, instantly and without losing local context.
+                        Explore code in your web browser in any repository on any branch, instantly and without losing local context.
                     </h5>
                      </IconItem>
                 <IconItem color="brand-orange" icon={CodeBracesIcon} className="py-3">
@@ -81,7 +81,7 @@ export default ((props: any) => (
             </ContentSection>
                         <ContentSection color="black" className="py-6">
                 <h2 id="demo" className="text-center display-4 pb-4">
-                    See why developers rely on Sourcegraph daily
+                    See Sourcegraph code intelligence in action
                 </h2>
                 <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
             </ContentSection>
@@ -141,12 +141,7 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <hr id="integrations" />
-                <IntegratesWithSection
-                    className="py-6"
-                    showTypes={['codeHost', 'language']}
-                    showOnlyCodeHostsWithCodeReviewIntegration={true}
-                    customTypeLabels={{ codeHost: 'Code review tools' }}
-                />
+                   <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
