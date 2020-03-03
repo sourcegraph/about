@@ -88,6 +88,62 @@ The other clusters are deployed and rolled back in the same way as sourcegraph.c
 	```
 	kubectl get pods --all-namespaces
 	```
+ 
+ ## How to start a test cluster in our "Sourcegraph Auxiliary' project on GCP
+ 
+- Go to [Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server)
+- Click create a cluster.
+- Give it a name (a good convention is to prefix with your username).
+- Keep the defaults zonal and us-central1.
+- Set the default pool to 3 nodes.
+- Change machine type to n1-standard-16.
+- Click "Create Cluster".
+- When cluster is ready, click connect and copy/paste the command and execute it (it looks something 
+  like `gcloud container clusters get-credentials ....`). Now kubectl is acting on this cluster.
+- Give yourself admin superpowers by executing: 
+
+```shell
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
+```
+
+- Add a storage class by saving these contents
+
+```yaml
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: sourcegraph
+  labels:
+    deploy: sourcegraph-storage
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-ssd # This configures SSDs (recommended).
+```
+into a file 'sourcegraph.Storageclass.yaml' and executing
+
+```shell script
+kubectl apply -f sourcegraph.Storageclass.yaml
+```
+
+- cd to your clone of [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) and follow the remaining
+steps of the [installation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md).
+
+```shell script
+./kubectl-apply-all.sh
+```
+
+> Recommendation: [k9s](https://github.com/derailed/k9s) is a nice command-line GUI tool for common kubectl operations.
+> It shows the state of your cluster and offers keyboard short-cuts for all the common kubectl commands.
+
+- Once all the pods are running you can port-forward the frontend (or any other services you are interested in)
+
+```shell script
+kubectl port-forward svc/sourcegraph-frontend 3080:30080 
+```  
+
+Please delete your test cluster when you are done testing by going to
+[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
+appropriate delete button.
 
 ## kubectl cheatsheet
 
@@ -162,3 +218,25 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 ## Backups
 
 Snapshots of all Kubernetes resources are taken periodically and pushed to https://github.com/sourcegraph/kube-backup/.
+
+## Building Docker images for a specific branch
+
+If you need to build Docker images on Buildkite for testing purposes, e.g. you
+have a PR with a fix and want to deploy that fix to a test instance, you can
+push the branch to the special `docker-images-patch` and
+`docker-images-patch-notest` branches.
+
+Example: you want to build a new Docker image for `frontend` and `gitserver`
+based on the branch `my_fix`.
+
+```
+git push origin my_fix:docker-images-patch-notest/frontend
+git push origin my_fix:docker-images-patch-notest/gitserver
+```
+
+This will trigger two builds on Buildkite for these branches:
+
+* https://buildkite.com/sourcegraph/sourcegraph/builds?branch=docker-images-patch-notest%2Ffrontend
+* https://buildkite.com/sourcegraph/sourcegraph/builds?branch=docker-images-patch-notest%2Fgitserver
+
+And the end of the build you can find the name of the newly built Docker image.

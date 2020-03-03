@@ -7,7 +7,7 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'At Convoy, Software Engineers and Data Scientists work better together',
+            title: 'Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together',
             description:
                 'At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
             image: 'https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
@@ -15,7 +15,7 @@ export default ((props: any) => (
     >
         <CaseStudyPage
             customer="Convoy"
-            title="At Convoy, Software Engineers and Data Scientists work better together"
+            title="Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together"
             logo="/external-logos/convoy-logo-white.svg"
             quote={{
                 quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',

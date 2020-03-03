@@ -43,7 +43,7 @@ Your users won’t tell you how to build your product but with the right line of
 
 #### Testing a new way of thinking
 
-For our research, we wanted to test a completely new user interface to allow our users to explore annotated source code and examples, similar to the way we explore Wikipedia articles and find related but new information through our own curiosity. Can people actually think of code like this? If not, how can we change the limitations around how we interact with open-source code? And what kind of new behaviors would this create? We started thinking of more questions than could ever be answered and settled on 3 main hypotheses to test around one of the most overlooked and necessary parts of a product: user education.
+For our research, we wanted to test a completely new user interface to allow our users to explore annotated source code and examples, similar to the way we explore Wikipedia articles and find related but new information through our own curiosity. Can people actually think of code like this? If not, how can we change the limitations around how we interact with open source code? And what kind of new behaviors would this create? We started thinking of more questions than could ever be answered and settled on 3 main hypotheses to test around one of the most overlooked and necessary parts of a product: user education.
 
 With the page redesign, we focused on three questions for each section of our website:
 

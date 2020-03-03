@@ -18,7 +18,7 @@ Slides for this talk have been posted [here](https://speakerdeck.com/mschoch/val
 
 ## About The Speaker
 
-Marty Schoch is a Senior Software Engineer at [Couchbase](https://couchbase.com) and the lead developer at [Bleve](http://www.blevesearch.com/), an open-source full-text search library for Go.
+Marty Schoch is a Senior Software Engineer at [Couchbase](https://couchbase.com) and the lead developer at [Bleve](http://www.blevesearch.com/), an open source full-text search library for Go.
 
 ---
 

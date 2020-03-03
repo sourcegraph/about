@@ -211,11 +211,10 @@ export default ((props: any) => (
                 </h2>
                 <div className="row justify-content-md-center">
                     <p className="text-center">
-                        Watch how to use Sourcegraph to the deprecate a JavaScript library across 100+ repositories.
+                        Watch how to use Sourcegraph code change campaigns to upgrade the RxJS library in multiple repositories.
                     </p>
                 </div>
-                <Vimeo id={355392896} muted={false} className="mt-4" />
-                <Vimeo id={355392936} muted={false} className="mt-5" />
+                <Vimeo id={390882141} muted={false} className="mt-4" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
@@ -226,8 +225,8 @@ export default ((props: any) => (
                 color="purple"
                 className="request-campaigns-demo-footer py-4"
                 logomark={false}
-                title="Request a Sourcegraph code change management demo"
-                description="With code change management, large-scale fixes and changes that previously took weeks or months can be completed in hours."
+                title="See how Sourcegraph code change management can help your team"
+                description="With code change campaigns, large-scale fixes and changes that previously took weeks or months can be completed in hours."
             >
                 <RequestCodeChangeManagementDemoActionNow />
             </Jumbotron>

@@ -49,7 +49,7 @@ Jeff: Tying to dollars is hard, but we’re measuring other metrics. Our most pr
 
 Panna: Internally, Bloomberg created a scoresheet where we scan all our repositories with a Contributing.md and look at other stats (forks, help wanted issues). We’ve kind of gamified the experience to get people excited about sharing things. Another interesting case study was a recent Businessweek issue that was about code. The journalists on that issue used GitHub to collaborate on the articles, even though none of them were programmers.
 
-Jeremy: It’s amazing how much higher quality the code that people open-source is. That’s a thing that’s hard to measure exactly, but the improvement is obvious.
+Jeremy: It’s amazing how much higher quality the code that people open source is. That’s a thing that’s hard to measure exactly, but the improvement is obvious.
 
 Q: What’s the single biggest challenge so far?
 

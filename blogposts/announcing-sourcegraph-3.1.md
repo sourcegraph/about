@@ -14,7 +14,7 @@ Sourcegraph 3.1 is now out! This release includes stability and documentation im
 
 <!-- (ryan): Hyperlink to headings in above paragraph -->
 
-What is Sourcegraph? Sourcegraph is an open-source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
+What is Sourcegraph? Sourcegraph is an open source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
 
 ## Find answers in code more easily with the new query builder
 

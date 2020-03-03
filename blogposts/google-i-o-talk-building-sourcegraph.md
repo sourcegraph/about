@@ -16,7 +16,7 @@ _This was originally a talk at_ [_Google I/O 2014_](https://www.google.com/event
 
 #### What is Sourcegraph?
 
-[Sourcegraph](https://sourcegraph.com/) is a large-scale, multi-language code search and cross-reference engine that indexes hundreds of thousands of open-source repositories. Sourcegraph lets developers:
+[Sourcegraph](https://sourcegraph.com/) is a large-scale, multi-language code search and cross-reference engine that indexes hundreds of thousands of open source repositories. Sourcegraph lets developers:
 
 *   Search for functions, types, and other definitions across code on the web
 *   See real usage examples for any function (taken from other projects that use it)
@@ -237,7 +237,7 @@ Then to generate URLs in our HTTP API client using the router, we use the existi
 
 Notice that we’re no longer hardcoding URLs, so if we update the route definitions, our generated URLs will automatically be updated as well.
 
-We’ve actually made our route definitions open source, as part of our open source client library. Our API server imports the client library, which is where the route definitions live, and just mounts handlers as we saw on the previous slide. So, it’s much easier for us to keep our API client library in sync with our servers. (In fact, we think all web services should open-source their routing! It would make building API clients much easier.)
+We’ve actually made our route definitions open source, as part of our open source client library. Our API server imports the client library, which is where the route definitions live, and just mounts handlers as we saw on the previous slide. So, it’s much easier for us to keep our API client library in sync with our servers. (In fact, we think all web services should open source their routing! It would make building API clients much easier.)
 
 ### Sharing parameter structs
 

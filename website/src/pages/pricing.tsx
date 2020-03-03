@@ -18,15 +18,15 @@ export default ((props: any) => (
                 <meta property="og:title" content="Sourcegraph - Pricing" />
                 <meta
                     name="twitter:description"
-                    content="Sourcegraph is always free for public and open-source code. Start using it for private code with a paid plan."
+                    content="Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan."
                 />
                 <meta
                     property="og:description"
-                    content="Sourcegraph is always free for public and open-source code. Start using it for private code with a paid plan."
+                    content="Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan."
                 />
                 <meta
                     name="description"
-                    content="Sourcegraph is always free for public and open-source code. Start using it for private code with a paid plan."
+                    content="Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan."
                 />
                 <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>

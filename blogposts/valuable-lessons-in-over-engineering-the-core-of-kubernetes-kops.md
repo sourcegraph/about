@@ -103,7 +103,7 @@ So, in a nutshell:
 
 ![Selection 026](//images.ctfassets.net/le3mxztn6yoo/19sCQjbgYA8WOOIAYa2QoU/2e545e9059c68f5650b2d630d277573d/Selection_026.png)
 
-Kris describes being an open-source maintainer as kind of like the movie, The Sandlot. A bunch of friends getting together to play ball, write code. The Beast (the big scary dog in the movie that steals the kids' baseball), in this case, was the issue of dealing with their overly complex YAML. Kris was "Smalls", the character who confronts the Beast.
+Kris describes being an open source maintainer as kind of like the movie, The Sandlot. A bunch of friends getting together to play ball, write code. The Beast (the big scary dog in the movie that steals the kids' baseball), in this case, was the issue of dealing with their overly complex YAML. Kris was "Smalls", the character who confronts the Beast.
 
 Kris convinced the team to scrap all their templated YAML files. In one commit, they removed the entire kops models directory where the YAML was.
 

@@ -45,6 +45,6 @@ Java Code Intelligence on Maven-based projects is now also available in the Sour
 
 #### Available in the cloud and on-premises
 
-Sourcegraph will index any open-source or authorized private repository hosted on GitHub.com. For enterprise customers, we also support GitHub Enterprise, Bitbucket, GitLab, and Phabricator. [Read more about our enterprise offering here](https://sourcegraph.com/pricing) or sign up for free on [Sourcegraph.com](https://sourcegraph.com).
+Sourcegraph will index any open source or authorized private repository hosted on GitHub.com. For enterprise customers, we also support GitHub Enterprise, Bitbucket, GitLab, and Phabricator. [Read more about our enterprise offering here](https://sourcegraph.com/pricing) or sign up for free on [Sourcegraph.com](https://sourcegraph.com).
 
 [![](https://cdn-images-1.medium.com/max/800/1*FjQjUq7Pvoy-0dKvR4fJ5Q.png)](https://sourcegraph.com/login)

@@ -41,7 +41,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Distribution / Software Engineer
 - Phoenix, AZ, USA 🇺🇸
 - [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com), [@slimsag](https://twitter.com/slimsag), [LinkedIn](https://www.linkedin.com/in/slimsag)
-- Stephen enjoys spending time with his numerous kittos in his Phoenix home while solving some of the most critical and technically challenging issues he can get his hands on. Rapid iteration, working directly with some of our biggest customers, and relentlessly advocating for users to find solutions is what he thrives on. Prior to Sourcegraph, he worked 3 years full-time on an open-source game engine in Go.
+- Stephen enjoys spending time with his numerous kittos in his Phoenix home while solving some of the most critical and technically challenging issues he can get his hands on. Rapid iteration, working directly with some of our biggest customers, and relentlessly advocating for users to find solutions is what he thrives on. Prior to Sourcegraph, he worked 3 years full-time on an open source game engine in Go.
 
 ## Ryan Slade
 
@@ -198,17 +198,17 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [erik@sourcegraph.com](mailto:erik@sourcegraph.com), [eseliger](https://github.com/eseliger), [LinkedIn](https://www.linkedin.com/in/erik-seliger/)
 - Erik has a background in Systems Engineering and decided that software is the most interesting field of engineering, which he never quit since first touching Turbo Pascal at age 11.
 
-## Kevin Zheng
-
-- Software Engineer
-- Brooklyn, NYC, USA 🇺🇸
-- [kevin.zheng@sourcegraph.com](mailto:kevin.zheng@sourcegraph.com), [kzh](https://github.com/kzh)
-- Kevin enjoys tinkering with his `.dotfiles` and traversing ASTs. His passion for CS started early with his stints in the Minecraft modding scene and gradually transitioned into robotics during high school. He is on an indefinite hiatus from his BS CS studies at Rutgers University New Brunswick.
-
 ## Kai Passo
 
 - Account Executive
 - Atlanta, GA, USA 🇺🇸
 - [kai@sourcegraph.com](mailto:kai@sourcegraph.com), [kpsource](https://github.com/kpsource)
 - Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.   
+
+## Tommy Roberts
+
+- Product Designer
+- London, UK 🇬🇧
+- [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [@imtommyroberts](https://twitter.com/imtommyroberts), [LinkedIn](https://www.linkedin.com/in/imtommyroberts)
+- Before Sourcegraph Tommy was providing freelance product design services to early stage startups. He's passionate about accessible design, the relationship between design and development, and ethics in tech. Outside of work he likes to explore the food scene in London, criticize his own cooking, read too many articles, and watch too many youtube videos.
 <!-- Paste *your* section above this line! -->

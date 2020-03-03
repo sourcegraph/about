@@ -56,7 +56,7 @@ And Go also gets you paid, we are on fire! So give yourselves a round of applaus
 
 I consider myself lucky to have a front-row seat since the beginning. We have something here, not just Go itself. This room, all over the world. We've got something here, it's about the people, not just the technology.
 
-When people say community some folks say it's technology, some say it's open-source contributions. But at the end it's human interaction, exchanging ideas, talk about cool stuff you're working on, talk about cool stuff that you would like to work on, that's what ties this bond that we have, that's what brings it into focus, almost.
+When people say community some folks say it's technology, some say it's open source contributions. But at the end it's human interaction, exchanging ideas, talk about cool stuff you're working on, talk about cool stuff that you would like to work on, that's what ties this bond that we have, that's what brings it into focus, almost.
 
 ![places](/gophercon-2019/gophercon-2019-9-places.jpg)
 

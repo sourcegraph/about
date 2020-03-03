@@ -12,7 +12,7 @@ published: true
 
 
 
-[Ian Lee](https://twitter.com/ianlee1521) of Lawrence Livermore National Laboratory talks about how LLNL is using, producing, and encouraging open source in government ([slides here](https://speakerdeck.com/ianlee1521/developing-open-source-in-service-to-national-security)).
+[Ian Lee](https://twitter.com/ianlee1521) of Lawrence Livermore National Laboratory talks about how LLNL is using, producing, and encouraging open source in government ([slides here](https://speakerdeck.com/ianlee1521/developing-open source-in-service-to-national-security)).
 
 Open source software and national security — two topics you don’t hear together too often. But there's a lot of work in government agencies being done right now — open source, inner source, and closed source.
 
@@ -22,7 +22,7 @@ Lawrence Livermore grew out of the aftermath of the Los Alamos Project, one of 1
 
 You also may have seen us on Star Trek Into Darkness. The warp core came from them.
 
-We do a lot of closed source, but also a good amount of open source. They don’t want to reinvent all the great things that the open-source community has already created.
+We do a lot of closed source, but also a good amount of open source. They don’t want to reinvent all the great things that the open source community has already created.
 
 Over the past 20 years, they’ve had 3 out of the 16 #1 supercomputing systems. That’s a lot of computation power.
 
