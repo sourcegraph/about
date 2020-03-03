@@ -49,7 +49,6 @@ export default ((props: any) => (
         >
             <PageSectionLinks
                 sections={[
-                    { text: 'Why code review is critical', url: '#why' },
                     { text: 'Features', url: '#features' },
                     { text: 'Integrations', url: '#integrations' },
                     { text: 'Demo screencast', url: '#demo' },
@@ -57,7 +56,7 @@ export default ((props: any) => (
                 ]}
             />
             <ContentSection color="white" className="py-5">
-                <h2 id="why" className="display-4 mb-4">
+                <h2 className="display-4 mb-4">
                     Code review is the most critical process for engineering teams
                 </h2>
                 <IconItem color="brand-orange" icon={FlameIcon} className="py-3">
