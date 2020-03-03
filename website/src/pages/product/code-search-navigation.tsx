@@ -149,18 +149,6 @@ export default ((props: any) => (
                 </video>
             </ContentSection>
             
-            <ContentSection color="white" className="pt-6 pb-2">
-                <div className="row">
-                    <div className="col-md-6 mb-4">
-                    <h2 id="use-cases" className="mt-5 display-4 text-center">
-                        How does code search help?
-                    </h2>
-                    <p className="text-center w-75 mx-auto">
-                        Google developers use code search 5-10 times daily (<em>Table 1</em> in <a
-                            href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
-                            target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
-                    </p>
-                </div>
             <ContentSection className="pt-5 pb-4" color="white">
                 <h2 id="use-cases" className="text-center display-3">
                     How does code search help?
