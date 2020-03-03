@@ -5,6 +5,8 @@ import MicroscopeIcon from 'mdi-react/MicroscopeIcon'
 import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
 import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
 import TurtleIcon from 'mdi-react/TurtleIcon'
+import iframeBracesOutline from 'mdi-react/iframeBracesOutline'
+import tooltipPlus from 'mdi-react/tooltipPlus'
 import React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -26,8 +28,8 @@ import { ViewDeveloperDocumentationAction } from '../../css/components/actions/V
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
-            title="DRAFT Code Intelligence"
-            description="Start doing code reviews right. Sourcegraph enhances your existing code review tool with inline code intelligence, helping you speed up the review cycle and catch more bugs before they're deployed to production."
+            title="Code Intelligence"
+            description="Find answers faster, with inline contextual information around code."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestDemoAction className="mt-3" />
@@ -58,27 +60,33 @@ export default ((props: any) => (
             />
             <ContentSection color="white" className="py-5">
                 <h2 id="why" className="display-4 mb-4">
-                    Code review is the most critical process for engineering teams
+                    Explore definitions & references, even across all projects 
                 </h2>
-                <IconItem color="brand-orange" icon={FlameIcon} className="py-3">
+                <IconItem color="brand-orange" icon={iframeBracesOutline} className="py-3">
                     <h5 className="text-sans-serif">
-                        A mistake that slips past code review becomes ~10x harder to fix.
+                        Find the definition or callers of functions and anything else in code, even across package, dependency, and repository boundaries.
                     </h5>
                 </IconItem>
-                <IconItem color="brand-orange" icon={TurtleIcon} className="py-3">
+                <IconItem color="brand-orange" icon={tooltipPlus} className="py-3">
                     <h5 className="text-sans-serif">
-                        A slow code review process hurts productivity (just like slow compilation or slow tests).
+                        Even if your IDE can do this, Sourcegraph lets you explore code intelligently in your web browser in any repository on any branch, instantly and without losing your local context.
                     </h5>
                 </IconItem>
                 <IconItem color="brand-orange" icon={QuestionMarkCircleIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        An ineffective code review process hinders knowledge transfer and new employee onboarding.
+                        Works for 24 programming languages.
                     </h5>
                 </IconItem>
             </ContentSection>
+                        <ContentSection color="black" className="py-6">
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    See why developers rely on Sourcegraph daily
+                </h2>
+                <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
+            </ContentSection>
             <ContentSection color="white" className="pt-6 pb-2">
                 <h2 id="features" className="display-4 mb-5 text-center">
-                    How code review is better with Sourcegraph
+                    Better code reviews with code intelligence
                 </h2>
                 <p className="text-center mb-5">
                     Sourcegraph <Link to="#integrations">integrates</Link> with your existing code review tool and lets
@@ -142,7 +150,7 @@ export default ((props: any) => (
             <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
-                    GitHub with the Sourcegraph browser extension
+                    Better code reviews with the Sourcegraph browser extension
                 </h2>
                 <Vimeo id={340033634} />
             </ContentSection>
@@ -157,8 +165,8 @@ export default ((props: any) => (
                 color="purple"
                 className="py-4"
                 logomark={false}
-                title="Get Sourcegraph now"
-                description="Start doing code review right with Sourcegraph, used by elite software teams."
+                title="Try Sourcegraph now"
+                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
             >
                 <GetSourcegraphNowActions />
                 <a className="btn btn-primary mt-2" href="https://docs.sourcegraph.com/integration/browser_extension">
