@@ -112,7 +112,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
                        <ContentSection color="white" className="py-6">
-                        <div className="bg-white text-dark">
+                        <div className="bg-white text-dark" id="used-by" >
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </div>
             <div className="bg-white text-dark">
@@ -120,7 +120,7 @@ export default ((props: any) => (
             </div>
             </ContentSection>
             <ContentSection color="white" className="py-6">
-                <h2 id="used-by" className="text-center display-5">
+                <h2 className="text-center display-5">
                     Code search is the superpower
                 </h2>
                 <p className="text-center">
