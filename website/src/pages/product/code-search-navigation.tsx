@@ -199,24 +199,8 @@ export default ((props: any) => (
                     </div>
                 </div>
                         </ContentSection>
-                        <ContentSection color="white" className="pt-5 pb-3">
-                <span id="customers" />
-                <CustomerLogosSection trustWhat="code search" />
-            </ContentSection>
-            
-                    <ContentSection color="black" className="py-6">
-                {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
-                <h2 id="demo" className="text-center display-4 pb-4">
-                    Use Sourcegraph to find answers in code, faster!
-                </h2>
-                <Vimeo id={340491490} className="mb-6" />
-                <Vimeo id={340774081} />
-            </ContentSection>
-            <ContentSection color="white" className="py-3">
-                <br />&nbsp;
-                <h2 id="why" className="text-center mb-3">
-                    Why code search?
-                </h2>
+             <ContentSection color="white" className="py-3">
+ 
                 <div className="row">
                     <div className="col-md-4">
                         <Blockquote
@@ -245,6 +229,15 @@ export default ((props: any) => (
                
             </ContentSection>
             
+                    <ContentSection color="black" className="py-6">
+                {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    Use Sourcegraph to find answers in code, faster!
+                </h2>
+                <Vimeo id={340491490} className="mb-6" />
+                <Vimeo id={340774081} />
+            </ContentSection>
+       
             
             <ContentSection color="white" className="pt-5 pb-3">
                 <hr id="integrations" />
@@ -255,6 +248,11 @@ export default ((props: any) => (
                 />
             </ContentSection>
             
+            
+                        <ContentSection color="white" className="pt-5 pb-3">
+                <span id="customers" />
+                <CustomerLogosSection trustWhat="code search" />
+            </ContentSection>
          
             <ContentSection color="black" className="py-5">
                 <EnterpriseReadySolution />
