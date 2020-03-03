@@ -161,7 +161,17 @@ export default ((props: any) => (
                             target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
                     </p>
                 </div>
-                    <div className="col-md-6 mb-4">
+            <ContentSection className="pt-5 pb-4" color="white">
+                <h2 id="use-cases" className="text-center display-3">
+                    How does code search help?
+                </h2>
+<p className="text-center w-75 mx-auto">
+                        Google developers use code search 5-10 times daily (<em>Table 1</em> in <a
+                            href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
+                            target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
+                    </p>
+            </ContentSection>
+            <ContentSection color="white" className="pt-6 pb-2">
                             <h4>Find example code</h4>
                             <ul>
                                 <li>API consumer needs help: <em>How should this function be called?</em></li>
