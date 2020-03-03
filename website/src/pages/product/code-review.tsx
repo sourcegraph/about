@@ -127,8 +127,7 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-                            <hr id="customers" />
-                                    <ContentSection color="white" className="pt-5 pb-3">
+                                    <ContentSection color="white" className="pt-5 pb-3" id="customers" >
                 <CustomerLogosSection />
             </ContentSection>
                         <ContentSection color="black" className="py-6">

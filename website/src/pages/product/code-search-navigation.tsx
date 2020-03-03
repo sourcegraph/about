@@ -44,9 +44,8 @@ export default ((props: any) => (
         >
             <PageSectionLinks
                 sections={[
-                    { text: 'Why code search?', url: '#why' },
+                   { text: 'Features', url: '#features' },
                     { text: 'Use cases', url: '#use-cases' },
-                    { text: 'Features', url: '#features' },
                     { text: 'Integrations', url: '#integrations' },
                     { text: 'Demo screencasts', url: '#demo' },
                     { text: 'Who uses it', url: '#customers' },
@@ -151,7 +150,6 @@ export default ((props: any) => (
             
             <div className="container-fluid bg-white text-dark pt-1 pb-5">
                 <div className="code-search-navigation-page__use-cases">
-                    <hr className="pt-5" />
                     <h2 id="use-cases" className="mt-5 display-4 text-center">
                         How does code search help?
                     </h2>
@@ -297,13 +295,14 @@ export default ((props: any) => (
             </ContentSection>
        
             
-            <ContentSection color="white" className="pt-5 pb-3" id="integrations" >
-
+            <ContentSection color="white" className="pt-5 pb-3">
+<div id="integrations">
                 <IntegratesWithSection
                     className="py-6"
                     showTypes={['codeHost', 'plugin', 'language']}
                     customTypeLabels={{ codeHost: 'Code hosts' }}
                 />
+                </div>
             </ContentSection>
            
                         <ContentSection color="white" className="pt-5 pb-3">
