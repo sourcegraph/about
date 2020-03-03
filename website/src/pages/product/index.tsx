@@ -52,7 +52,7 @@ export default ((props: any) => {
                         { text: 'Integrations', url: '#integrations' },
                     ]}
                 />
-                 <ContentSection color="purple" className="py-5">
+                 <ContentSection color="primary" className="py-5">
                      <span id="ucs" />
                 <h3 className="text-center">Universal across everything </h3>
                 <p className="text-center">
