@@ -216,11 +216,10 @@ export default ((props: any) => (
                 </h2>
                 <div className="row justify-content-md-center">
                     <p className="text-center">
-                        Watch how to use Sourcegraph to the deprecate a JavaScript library across 100+ repositories.
+                        Watch how to use Sourcegraph code change campaigns to upgrade the RxJS library in multiple repositories.
                     </p>
                 </div>
-                <Vimeo id={355392896} muted={false} className="mt-4" />
-                <Vimeo id={355392936} muted={false} className="mt-5" />
+                <Vimeo id={390882141} muted={false} className="mt-4" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
