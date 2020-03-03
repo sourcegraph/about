@@ -30,11 +30,10 @@
 
         // Don't allow logos to wrap beyond 1200px wide
         // This may change once we have enough logos to fill 2 lines
-        @include media-breakpoint-up(lg) {
-            &:nth-child(n+8) {
-                @include sr-only();
-            }
-        }
+        //@include media-breakpoint-up(lg) {
+        //    &:nth-child(n+8) {
+        //        @include sr-only();
+        //}
 
         &-caption {
             font-size: 0.7rem;
