@@ -52,7 +52,7 @@ export default ((props: any) => (
                     { text: 'Who uses it', url: '#customers' },
                 ]}
             />
-            <ContentSection color="black" className="pt-5 pb-4">
+            <ContentSection className="pt-5 pb-4">
                 <h2 id="features" className="text-center display-3">
                     Code navigation and exploration
                 </h2>
@@ -160,50 +160,45 @@ export default ((props: any) => (
                     </p>
                 </div>
             </div>
-            <ContentSection color="white" className="pt-6 pb-2">
                 <div className="row">
                     <div className="col-md-6 mb-4">
                             <h4>Find example code</h4>
                             <ul>
-                                <li>API consumer needs help: <em>“I want to know how a function should be called”</em></li>
-                                <li>Discover correct library for task: <em>“Best way to convert output stream into a string of limited length”</em></li>
-                                <li>Example to build off of: <em>“Just want to copy-and-paste some code I'm changing”</em></li>
-                                    <li>How to do something: <em>“How to write a hash function”</em></li>
+                                <li>API consumer needs help: <em>How should this function be called?</em></li>
+                                <li>Discover correct library for task: <em>Best way to convert output stream into a string of limited length</em></li>
+                                <li>Example to build off of: <em>Want to copy-paste some code I'm changing</em></li>
+                                    <li>How to do something: <em>How to write a hash function</em></li>
                                     </ul>
                     </div>
                     <div className="col-md-6 mb-4">
                             <h4>Explore or read code</h4>
                             <ul>
-                                <li>Check implementation details: <em>“What does a particular script do?”</em></li>
-                                <li>Browsing: <em>“Re-familiarizing myself with some code referenced in a code review”</em></li>
-                                <li>Check best practices: <em>“Where are friend classes usually declared?”</em></li>
-                                    <li>Name completion: <em>“I'm looking for an enum member that begins with a particular prefix”</em></li>
+                                <li>Check implementation details: <em>What does a particular script do?</em></li>
+                                <li>Browsing: <em>Re-familiarizing myself with some code referenced in a code review</em></li>
+                                <li>Check best practices: <em>Where are friend classes usually declared?</em></li>
+                                    <li>Name completion: <em>I'm looking for an enum member that begins with a particular prefix</em></li>
                                     </ul>
                     </div>
                     <div className="col-md-6 mb-4">
                             <h4>Find specific locations</h4>
                             <ul>
-                                <li>Trace through call graph: <em>“Where is this class instantiated?”</em></li>
-                                <li>Sharing: <em>“I'm trying to create a link to a known piece of code, to give to someone else”</em></li>
-                                <li>Locations in source: <em>“Where are all the environment configurations declared?”</em></li>
-                                    <li>Trace code history: <em>“Who last touched this code?”</em></li>
-                                    <li>Responsibility: <em>“Who is allowed to approve changes to this file?”</em></li>
+                                <li>Trace through call graph: <em>Where is this class instantiated?</em></li>
+                                <li>Sharing: <em>I'm trying to create a link to a known piece of code, to give to someone else</em></li>
+                                <li>Locations in source: <em>Where are all the environment configurations declared?</em></li>
+                                    <li>Trace code history: <em>Who last touched this code?</em></li>
+                                    <li>Responsibility: <em>Who is allowed to approve changes to this file?”/em></li>
                                     </ul>
                     </div>
                         <div className="col-md-6 mb-4">
                             <h4>Determine impact</h4>
                             <ul>
-                                <li>Why is something failing?: <em>“Wondering why my change didn't fix a problem in production and am reading the code to diagnose”</em></li>
-                                <li>Understanding dependencies: <em>“Looking for dependencies of a build file”</em></li>
-                                <li>Side efects of a proposed change: <em>“Am I about to blow up production with my change?”</em></li>     
+                                <li>Why is something failing?: <em>Wondering why my change didn't fix a problem in production and am reading the code to diagnose</em></li>
+                                <li>Understanding dependencies: <em>Looking for build file dependencies</em></li>
+                                <li>Side efects of a proposed change: <em>Am I about to blow up production with my change?</em></li>     
                                     </ul>
                     </div>
-                    
-                    <div className="col-md-6 mb-4">
-                        <OpenSourcePrivacyFeatureItem />
-                    </div>
+                   
                 </div>
-            </ContentSection>
                     <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
@@ -213,6 +208,7 @@ export default ((props: any) => (
                 <Vimeo id={340774081} />
             </ContentSection>
             <ContentSection color="white" className="py-3">
+                <br />&nbsp;
                 <h2 id="why" className="text-center mb-3">
                     Why code search?
                 </h2>
