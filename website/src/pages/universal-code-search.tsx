@@ -111,14 +111,14 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-           
+                       <ContentSection color="white" className="py-6">
                         <div className="bg-white text-dark">
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </div>
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
-            
+            </ContentSection>
             <ContentSection color="white" className="py-6">
                 <h2 id="used-by" className="text-center display-5">
                     Code search is the superpower
