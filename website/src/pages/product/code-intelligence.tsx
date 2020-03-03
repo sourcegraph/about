@@ -68,7 +68,7 @@ export default ((props: any) => (
                         Find the definition or callers of functions and anything else in code, even across package, dependency, and repository boundaries.
                     </h5>
                 </IconItem>
-                <IconItem color="brand-orange" icon={TooltipPlus} className="py-3">
+                <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
                     <h5 className="text-sans-serif">
                         Even if your IDE can do this, Sourcegraph lets you explore code intelligently in your web browser in any repository on any branch, instantly and without losing your local context.
                     </h5>
