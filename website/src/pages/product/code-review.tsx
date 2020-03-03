@@ -125,9 +125,6 @@ export default ((props: any) => (
                             </p>
                         </IconItem>
                     </div>
-                    <div className="col-lg-6 mb-4">
-                        <OpenSourcePrivacyFeatureItem />
-                    </div>
                 </div>
             </ContentSection>
                             <hr id="customers" />
