@@ -25,7 +25,6 @@ import { ContactPresalesSupportAction } from '../../css/components/actions/Conta
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
-import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 
 export default ((props: any) => (
     <Layout location={props.location}>
