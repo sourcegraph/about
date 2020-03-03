@@ -172,6 +172,7 @@ export default ((props: any) => (
                     </p>
             </ContentSection>
             <ContentSection color="white" className="pt-6 pb-2">
+                 <div className="col-md-6 mb-4">
                             <h4>Find example code</h4>
                             <ul>
                                 <li>API consumer needs help: <em>How should this function be called?</em></li>
