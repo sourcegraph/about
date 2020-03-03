@@ -130,6 +130,10 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
+                            <hr id="customers" />
+                                    <ContentSection color="white" className="pt-5 pb-3">
+                <CustomerLogosSection />
+            </ContentSection>
                         <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
@@ -137,12 +141,9 @@ export default ((props: any) => (
                 </h2>
                 <Vimeo id={340033634} />
             </ContentSection>
-                        <ContentSection color="white" className="pt-5 pb-3">
-                <span id="customers" />
-                <CustomerLogosSection />
-            </ContentSection>
+
             <ContentSection color="white" className="pt-5 pb-3">
-                <hr id="integrations" />
+                <br id="integrations" />
                 <IntegratesWithSection
                     className="py-6"
                     showTypes={['codeHost', 'language']}
