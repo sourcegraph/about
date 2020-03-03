@@ -52,7 +52,7 @@ export default ((props: any) => (
         >
             <PageSectionLinks
                 sections={[
-                    { text: 'Features', url: '#features' },
+                    { text: 'Better code reviews', url: '#codereviews' },
                     { text: 'Integrations', url: '#integrations' },
                     { text: 'Demo screencast', url: '#demo' },
                     { text: 'Who uses it', url: '#customers' },
@@ -85,7 +85,7 @@ export default ((props: any) => (
                 <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
             </ContentSection>
             <ContentSection color="white" className="pt-6 pb-2">
-                <h2 id="features" className="display-4 mb-5 text-center">
+                <h2 id="codereviews" className="display-4 mb-5 text-center">
                     Better code reviews with code intelligence
                 </h2>
                 <p className="text-center mb-5">
