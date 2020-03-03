@@ -124,7 +124,7 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title: 'Sourcegraph',
-            description: 'Start shipping better software faster with Universal Code Search.',
+            description: 'Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search.',
             image: 'https://info.sourcegraph.com/hubfs/sourcegraph_logo.png'
         }}
     >
@@ -195,6 +195,10 @@ export default ((props: any) => (
                             Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
                         </h3>
                     </div>
+                                    <div className="container-fluid">
+                    <Tweets />
+                </div>
+            </div>
                 </div>
             <GitLabIntegrationSection />
             <ContentSection color="black">
@@ -208,10 +212,6 @@ export default ((props: any) => (
                     <ProductDemoVideo />
                     <ProductFeaturesAndUseCases />
                 </ContentSection>
-            </div>
-                <div className="container-fluid">
-                    <Tweets />
-                </div>
             </div>
             <ContentSection className="my-5">
                 <EnterpriseReadySolution className="pt-2" />
