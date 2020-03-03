@@ -305,9 +305,7 @@ export default ((props: any) => (
                     customTypeLabels={{ codeHost: 'Code hosts' }}
                 />
             </ContentSection>
-            
-                            <hr />
-            
+           
                         <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
                 <CustomerLogosSection trustWhat="code search" />
