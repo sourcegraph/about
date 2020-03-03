@@ -54,7 +54,7 @@ export default ((props: any) => {
                 />
                  <ContentSection color="primary" className="py-5">
                      <span id="ucs" />
-                <h3 className="text-center">Universal across everything </h3>
+                <h2 className="text-center">Universal across everything </h2>
                 <p className="text-center">
                     Code hosts and IDEs provide limited search functionality on their platform. Development now is across many repos, languages, file formats, codebases making Universal Code Search essential for enterprises like Uber, Lyft and Yelp.
                 </p>
@@ -68,7 +68,7 @@ export default ((props: any) => {
                     <div className="col-md-4 pr-5">
                         <h5>Code Intelligence</h5>
                         <p>
-                            An understanding of the structure of and relationships in your codebase, not just the raw
+                            Understand of the structure of and relationships in your codebase, not just the raw
                             text
                         </p>
                     </div>
