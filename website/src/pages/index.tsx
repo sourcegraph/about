@@ -124,7 +124,7 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title: 'Sourcegraph',
-            description: 'Start shipping better software faster with Universal Code Search.',
+            description: 'Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search.',
             image: 'https://info.sourcegraph.com/hubfs/sourcegraph_logo.png'
         }}
     >
@@ -144,16 +144,23 @@ export default ((props: any) => (
                     <div className="col-lg-8 mb-6 mb-lg-0">
                         <h1 className="home__intro-header display-3">Universal Code Search</h1>
                         <p className="home__intro-text mt-3 font-weight-light">
-                            Google &amp; Facebook invested $100Ms to build an internal&nbsp;tool for{' '}
+                            Explore, navigate, and better understand all code, everywhere, faster.{' '}
+                        </p>
+                        <p className="home__intro-text mt-4 font-weight-light">
+                            <img
+                                style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
+                                src="/sourcegraph/sourcegraph-mark.svg"
+                            />{' '}
+                            <strong>Sourcegraph Universal Code Search</strong> provides{' '}
                             <Link
                                 className="home__intro-text-link home__intro-text-link-1"
-                                to="/product/code-search-navigation"
+                                to="/product/code-discovery"
                             >
-                                code&nbsp;search
+                                code&nbsp;discovery
                             </Link>
                             ,{' '}
-                            <Link className="home__intro-text-link home__intro-text-link-2" to="/product/code-review">
-                                code&nbsp;review
+                            <Link className="home__intro-text-link home__intro-text-link-2" to="/product/code-intelligence">
+                                code&nbsp;intelligence
                             </Link>
                             , and{' '}
                             <Link
@@ -161,16 +168,7 @@ export default ((props: any) => (
                                 to="/product/code-change-management"
                             >
                                 code&nbsp;change&nbsp;management
-                            </Link>
-                            .
-                        </p>
-                        <p className="home__intro-text mt-4 font-weight-light">
-                            <img
-                                style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
-                                src="/sourcegraph/sourcegraph-mark.svg"
-                            />{' '}
-                            <strong>Sourcegraph</strong> provides Universal Code Search to help every development team
-                            ship better software faster.
+                            </Link>.
                         </p>
                         <RequestDemoAction className="mt-5" />
                         <ContactPresalesSupportAction className="text-light mt-3" />
@@ -184,6 +182,24 @@ export default ((props: any) => (
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
+            <ContentSection color="black" className="py-6">
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    See why developers rely on Sourcegraph daily
+                </h2>
+                <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
+            </ContentSection>
+                        <div className="bg-white text-dark py-4">
+                <div className="container">
+                    <div className="text-center mt-5">
+                        <h3 className="font-weight-light">
+                            Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
+                        </h3>
+                    </div>
+                                    <div className="container-fluid">
+                    <Tweets />
+                </div>
+            </div>
+                </div>
             <GitLabIntegrationSection />
             <ContentSection color="black">
                 <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
@@ -197,32 +213,14 @@ export default ((props: any) => (
                     <ProductFeaturesAndUseCases />
                 </ContentSection>
             </div>
-            <ContentSection color="black" className="py-6">
-                <h2 id="demo" className="text-center display-4 pb-4">
-                    See why developers rely on Sourcegraph daily
-                </h2>
-                <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
-            </ContentSection>
-            <div className="bg-white text-dark py-4">
-                <div className="container">
-                    <div className="text-center mt-5">
-                        <h3 className="font-weight-light">
-                            Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
-                        </h3>
-                    </div>
-                </div>
-                <div className="container-fluid">
-                    <Tweets />
-                </div>
-            </div>
             <ContentSection className="my-5">
                 <EnterpriseReadySolution className="pt-2" />
             </ContentSection>
             <Jumbotron
                 color="purple"
                 className="py-6 mb-0"
-                title="Get Sourcegraph now"
-                description="Start shipping better software faster with Universal Code Search."
+                title="Try Sourcegraph now"
+                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search."
                 logomark={false}
             >
                 <GetSourcegraphNowActions />

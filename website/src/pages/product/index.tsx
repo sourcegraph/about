@@ -36,21 +36,50 @@ export default ((props: any) => {
             meta={{
                 title: 'Sourcegraph Universal Code Search',
                 description:
-                    'Ship better software faster with Sourcegraph Universal Code Search, including code navigation, code intelligence, and code change management.',
+                    'Explore, navigate, and understand all code, everywhere, faster – Sourcegraph Universal Code Search provides code navigation, code intelligence, and code change management.',
             }}
         >
             <ContentPage
                 title="Universal Code Search"
-                description="Ship better software faster with Sourcegraph Universal Code Search, including code navigation, code intelligence, and code change management."
+                description="Explore, navigate, and understand all code, everywhere, faster"
                 mainActions={actions}
             >
                 <PageSectionLinks
                     sections={[
+                        { text: 'Why universal', url: '#ucs' },
                         { text: 'Features', url: '#features' },
                         { text: 'Who uses it', url: '#customers' },
                         { text: 'Integrations', url: '#integrations' },
                     ]}
                 />
+                 <ContentSection color="primary" className="py-5">
+                     <span id="ucs" />
+                <h2 className="text-center">Universal across everything </h2>
+                <p className="text-center">
+                    Code hosts and IDEs provide limited search functionality on their platform. Development now is across many repos, languages, file formats, codebases making Universal Code Search essential for enterprises like Uber, Lyft and Yelp.
+                </p>
+                <div className="row mt-5">
+                    <div className="col-md-4 pr-5">
+                        <h5>Code Discovery</h5>
+                        <p>
+                            Search anywhere – across all repos, all languages, all file formats, all code – in one centralized place
+                        </p>
+                    </div>
+                    <div className="col-md-4 pr-5">
+                        <h5>Code Intelligence</h5>
+                        <p>
+                            Understand of the structure of and relationships in your codebase, not just the raw
+                            text
+                        </p>
+                    </div>
+                    <div className="col-md-4 pr-5">
+                        <h5>Code Change Management</h5>
+                        <p>
+                            Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt
+                        </p>
+                    </div>
+                </div>
+            </ContentSection>
                 <ContentSection color="white" className="py-6">
                     <span id="features" />
                     <div className="row">
@@ -68,7 +97,7 @@ export default ((props: any) => {
                                     code host&mdash;all of your code is accessible on Sourcegraph from your web browser.
                                 </p>
                                 <Link to="/product/code-search-navigation" className="stretched-link">
-                                    Why the best developers use <strong>code search</strong>&nbsp;&raquo;
+                                    Why the best developers use <strong>code discovery</strong>&nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
@@ -86,7 +115,7 @@ export default ((props: any) => {
                                     before they ship to production.
                                 </p>
                                 <Link to="/product/code-review" className="stretched-link">
-                                    How to do <strong>code review</strong> right&nbsp;&raquo;
+                                    How to do better <strong>code reviews</strong> &nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
@@ -125,6 +154,29 @@ export default ((props: any) => {
                     <ProductDemoVideo title="How software development is better with Sourcegraph" />
                     <ProductFeaturesAndUseCases className="mt-6" />
                 </ContentSection>
+                <ContentSection color="gray" className="py-5">
+                    <div className="row justify-content-md-center">
+                        <div className="col-md-3 text-center">
+                            <img
+                                src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
+                                alt="Download: Universal Code Search and Intelligence"
+                                width="170"
+                                className="universal-code-search--glow"
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <h5>EBOOK</h5>
+                            <h3>Universal code search and intelligence</h3>
+                            <h5>How to increase programming productivity and improve code quality</h5>
+                            <Link
+                                className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal "
+                                to="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=product"
+                            >
+                                Free download
+                            </Link>
+                        </div>
+                    </div>
+                </ContentSection>
                 <ContentSection color="white">
                     <span id="customers" />
                     <CustomerLogosSection className="pt-6 pb-4" />
@@ -153,8 +205,8 @@ export default ((props: any) => {
                     color="purple"
                     className="pt-4 pb-6"
                     logomark={false}
-                    title="Get Sourcegraph now"
-                    description="Start shipping better software faster."
+                    title="Try Sourcegraph now"
+                    description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
                 >
                     <GetSourcegraphNowActions />
                 </Jumbotron>
