@@ -70,7 +70,7 @@ export default ((props: any) => (
                     </IconItem>
                 <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Explore code intelligently in your web browser in any repository on any branch, instantly and without losing local context.
+                        Explore code in your web browser in any repository on any branch, instantly and without losing local context.
                     </h5>
                      </IconItem>
                 <IconItem color="brand-orange" icon={CodeBracesIcon} className="py-3">
