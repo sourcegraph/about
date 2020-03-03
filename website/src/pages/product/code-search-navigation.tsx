@@ -186,7 +186,7 @@ export default ((props: any) => (
                                 <li>Sharing: <em>I'm trying to create a link to a known piece of code, to give to someone else</em></li>
                                 <li>Locations in source: <em>Where are all the environment configurations declared?</em></li>
                                     <li>Trace code history: <em>Who last touched this code?</em></li>
-                                    <li>Responsibility: <em>Who is allowed to approve changes to this file?”/em></li>
+                                    <li>Responsibility: <em>Who is allowed to approve changes to this file?”</em></li>
                                     </ul>
                     </div>
                         <div className="col-md-6 mb-4">
