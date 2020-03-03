@@ -306,7 +306,7 @@ export default ((props: any) => (
             </ContentSection>
            
                         <ContentSection color="white" className="pt-5 pb-3">
-                <span id="customers" />
+                <hr id="customers" />
                 <CustomerLogosSection trustWhat="code search" />
             </ContentSection>
          
