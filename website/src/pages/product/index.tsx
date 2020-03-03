@@ -41,7 +41,7 @@ export default ((props: any) => {
         >
             <ContentPage
                 title="Universal Code Search"
-                description="Ship better software faster with Sourcegraph Universal Code Search, including code navigation, code intelligence, and code change management."
+                description="Explore, navigate, and understand all code, everywhere, faster –  Sourcegraph Universal Code Search includes code navigation, code intelligence, and code change management."
                 mainActions={actions}
             >
                 <PageSectionLinks
@@ -68,7 +68,7 @@ export default ((props: any) => {
                                     code host&mdash;all of your code is accessible on Sourcegraph from your web browser.
                                 </p>
                                 <Link to="/product/code-search-navigation" className="stretched-link">
-                                    Why the best developers use <strong>code search</strong>&nbsp;&raquo;
+                                    Why the best developers use <strong>code discovery</strong>&nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
@@ -86,7 +86,7 @@ export default ((props: any) => {
                                     before they ship to production.
                                 </p>
                                 <Link to="/product/code-review" className="stretched-link">
-                                    How to do <strong>code review</strong> right&nbsp;&raquo;
+                                    How to do better <strong>code reviews</strong> &nbsp;&raquo;
                                 </Link>
                             </IconItem>
                         </div>
@@ -176,7 +176,7 @@ export default ((props: any) => {
                     color="purple"
                     className="pt-4 pb-6"
                     logomark={false}
-                    title="Get Sourcegraph now"
+                    title="Try Sourcegraph now"
                     description="Start shipping better software faster."
                 >
                     <GetSourcegraphNowActions />
