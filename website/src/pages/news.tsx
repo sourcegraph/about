@@ -46,6 +46,9 @@ export default class NewsPage extends React.Component<any, any> {
                                 <div class="col mt-5 mb-5 ">
                                     <h3>Press releases</h3>
                                      <ul>
+                                        <li><a href="/blog/press-release-sourcegraph-secures-series-b/?ref=news" >Sourcegraph Secures $23 Million Series B Round for Universal Code Search</a> 
+                                        <span class="news__date">March 3, 2020</span>
+                                        </li>                                
                                         <li><a href="/blog/press-release-sourcegraph-announces-new-gitlab-native-integration/?ref=news" >New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum</a> 
                                         <span class="news__date">November 12, 2019</span>
                                         </li>
