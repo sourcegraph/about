@@ -57,7 +57,7 @@ export default ((props: any) => (
                 ]}
             />
             <ContentSection color="white" className="py-5">
-                <h2 id="why" className="display-4 mb-4">
+                <h2 className="display-4 mb-4" id="why" >
                     Code review is the most critical process for engineering teams
                 </h2>
                 <IconItem color="brand-orange" icon={FlameIcon} className="py-3">
