@@ -156,11 +156,11 @@ export default ((props: any) => (
                                 className="home__intro-text-link home__intro-text-link-1"
                                 to="/product/code-search-navigation"
                             >
-                                code&nbsp;search
+                                code&nbsp;discovery
                             </Link>
                             ,{' '}
-                            <Link className="home__intro-text-link home__intro-text-link-2" to="/product/code-review">
-                                code&nbsp;review
+                            <Link className="home__intro-text-link home__intro-text-link-2" to="/product/code-intelligence">
+                                code&nbsp;intelligence
                             </Link>
                             , and{' '}
                             <Link
@@ -188,6 +188,14 @@ export default ((props: any) => (
                 </h2>
                 <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
             </ContentSection>
+                        <div className="bg-white text-dark py-4">
+                <div className="container">
+                    <div className="text-center mt-5">
+                        <h3 className="font-weight-light">
+                            Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
+                        </h3>
+                    </div>
+                </div>
             <GitLabIntegrationSection />
             <ContentSection color="black">
                 <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
@@ -201,14 +209,6 @@ export default ((props: any) => (
                     <ProductFeaturesAndUseCases />
                 </ContentSection>
             </div>
-            <div className="bg-white text-dark py-4">
-                <div className="container">
-                    <div className="text-center mt-5">
-                        <h3 className="font-weight-light">
-                            Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
-                        </h3>
-                    </div>
-                </div>
                 <div className="container-fluid">
                     <Tweets />
                 </div>
