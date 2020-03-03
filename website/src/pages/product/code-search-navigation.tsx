@@ -27,8 +27,8 @@ import { ViewDeveloperDocumentationAction } from '../../css/components/actions/V
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
-            title="Code search and navigation"
-            description="Code search helps you grok code so you can write better code more quickly. Sourcegraph's code search is used by elite software teams."
+            title="Code discovery"
+            description="Navigate, explore, and understand the code you are looking for, even if you didn’t know it existed."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestDemoAction className="mt-3" />
@@ -52,222 +52,12 @@ export default ((props: any) => (
                     { text: 'Who uses it', url: '#customers' },
                 ]}
             />
-            <ContentSection color="white" className="py-3">
-                <h2 id="why" className="text-center mb-3">
-                    The best developers and teams use code search
-                </h2>
-                <div className="row">
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="[It's] essential to be able to easily search [the] whole source … huge productivity boost: easy to find uses, defs, examples, etc."
-                            by={
-                                <a
-                                    href="https://static.googleusercontent.com/media/research.google.com/en//people/jeff/stanford-295-talk.pdf"
-                                    target="_blank"
-                                >
-                                    Jeff Dean (Google Senior Fellow)
-                                </a>
-                            }
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="Things...that clearly would have helped every software company I've ever worked at: … instant code search over the entire codebase"
-                            by={
-                                <a href="https://www.kalzumeus.com/2019/3/18/two-years-at-stripe/" target="_blank">
-                                    Patrick McKenzie (patio11)
-                                </a>
-                            }
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="Software engineering is more about reading code than writing it, and part of this process is finding the code that you should read."
-                            by={
-                                <a href="https://github.com/google/zoekt/blob/master/doc/faq.md" target="_blank">
-                                    Han-Wen Nienhuys (Google engineer)
-                                </a>
-                            }
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="tbgs [Facebook's code search tool] is the StackOverflow for Facebook engineers"
-                            by={
-                                <a href="https://twitter.com/cyan_binary/status/1015015559115653121" target="_blank">
-                                    Facebook engineer
-                                </a>
-                            }
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="A substantial amount of my day is spent inside of Google's internal code search tool."
-                            by={
-                                <a href="https://twitter.com/foxxtrot/status/988850022530867203?ref_src=twsrc%5Etfw">
-                                    Google engineer
-                                </a>
-                            }
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="Sourcegraph [code search] … has made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast."
-                            by="Lyft engineering manager"
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
-                            by="Uber senior engineer"
-                        />
-                    </div>
-                </div>
-                <h5 className="mt-3">Want more data on the value of code search?</h5>
-                <p>
-                    <strong>98%</strong> of Google developers say their Sourcegraph-like internal code search tool is{' '}
-                    <strong>"critical"</strong>, according to an{' '}
-                    <a
-                        href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
-                        target="_blank"
-                    >
-                        internal code search research study from Google
-                    </a>
-                    &nbsp;and a{' '}
-                    <a
-                        href="https://docs.google.com/document/d/1LQxLk4E3lrb3fIsVKlANu_pUjnILteoWMMNiJQmqNVU/edit#heading=h.xxziwxixfqq3"
-                        target="_blank"
-                    >
-                        Google developer survey
-                    </a>
-                    . Contact us for more data and an <Link to="/contact">code search ROI calculator</Link>.
-                </p>
-            </ContentSection>
-            <div className="container-fluid bg-white text-dark pt-1 pb-5">
-                <div className="code-search-navigation-page__use-cases">
-                    <hr className="pt-5" />
-                    <h2 id="use-cases" className="mt-5 display-4 text-center">
-                        How does code search help?
-                    </h2>
-                    <p className="text-center w-75 mx-auto">
-                        <a
-                            href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
-                            target="_blank"
-                        >
-                            Google's internal code search research study
-                        </a>{' '}
-                        (<em>Table 1</em>) answers how Google developers use code search (5-10 times daily). Sourcegraph
-                        code search users report similar use cases and frequency.
-                    </p>
-                    <div className="row justify-content-center">
-                        <div className="col-md-6 mt-3">
-                            <h5>Find example code</h5>
-                            <UseCasesTable
-                                data={[
-                                    {
-                                        description: 'API consumer needs help',
-                                        example: 'I want to know how a function should be called',
-                                    },
-                                    {
-                                        description: 'Discover correct library for task',
-                                        example: 'Best way to convert output stream into a string of limited length',
-                                    },
-                                    {
-                                        description: 'Example to build off of',
-                                        example: "Just want to copy-and-paste some code I'm changing",
-                                    },
-                                    { description: 'How to do something', example: 'How to write a hash function' },
-                                ]}
-                            />
-                        </div>
-                        <div className="col-md-6 mt-3">
-                            <h5>Explore or read code</h5>
-                            <UseCasesTable
-                                data={[
-                                    {
-                                        description: 'Check implementation details',
-                                        example: 'What does a particular script do?',
-                                    },
-                                    {
-                                        description: 'Browsing',
-                                        example: 'Re-familiarizing myself with some code referenced in a code review',
-                                    },
-                                    {
-                                        description: 'Check best practices',
-                                        example: 'Where are friend classes usually declared?',
-                                    },
-                                    {
-                                        description: 'Name completion',
-                                        example: "I'm looking for an enum member that begins with a particular prefix",
-                                    },
-                                ]}
-                            />
-                        </div>
-                        <div className="col-md-6 mt-3">
-                            <h5>Find specific locations</h5>
-                            <UseCasesTable
-                                data={[
-                                    {
-                                        description: 'Trace through call graph',
-                                        example: 'Where is this class instantiated?',
-                                    },
-                                    {
-                                        description: 'Sharing',
-                                        example:
-                                            "I'm trying to create a link to a known piece of code, to give to someone else",
-                                    },
-                                    {
-                                        description: 'Locations in source',
-                                        example: 'Where are all the environment configurations declared?',
-                                    },
-                                ]}
-                            />
-                        </div>
-                        <div className="col-md-6 mt-3">
-                            <h5>Determine impact</h5>
-                            <UseCasesTable
-                                data={[
-                                    {
-                                        description: 'Why is something failing?',
-                                        example:
-                                            "Wondering why my change didn't fix a problem in production and am reading the code to diagnose",
-                                    },
-                                    {
-                                        description: 'Understanding dependencies',
-                                        example: 'Looking for dependencies of a build file',
-                                    },
-                                    {
-                                        description: 'Side effects of a proposed change',
-                                        example: 'Am I about to blow up production with my change?',
-                                    },
-                                ]}
-                            />
-                        </div>
-                        <div className="col-md-6 mt-3">
-                            <h5>Find specific locations</h5>
-                            <UseCasesTable
-                                data={[
-                                    {
-                                        description: 'Trace code history',
-                                        example: 'Who last touched this code?',
-                                    },
-                                    {
-                                        description: 'Responsibility',
-                                        example: 'Who is allowed to approve changes to this file?',
-                                    },
-                                ]}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ContentSection color="black" className="pt-5 pb-4">
+            <ContentSection className="pt-5 pb-4" color="white">
                 <h2 id="features" className="text-center display-3">
-                    Sourcegraph code search and navigation
+                    Code navigation and exploration
                 </h2>
                 <p className="text-center">
-                    Convinced of the value of code search? Now see why Sourcegraph is the code search tool used by elite
-                    software teams.
+                    Find answers faster, across any codebase from one centralized place.
                 </p>
             </ContentSection>
             <ContentSection color="white" className="pt-6 pb-2">
@@ -343,24 +133,9 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="white" className="pt-5 pb-3">
-                <hr id="integrations" />
-                <IntegratesWithSection
-                    className="py-6"
-                    showTypes={['codeHost', 'plugin', 'language']}
-                    customTypeLabels={{ codeHost: 'Code hosts' }}
-                />
-            </ContentSection>
-            <ContentSection color="black" className="py-6">
-                {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
-                <h2 id="demo" className="text-center display-4 pb-4">
-                    Use Sourcegraph to find answers in code, faster!
-                </h2>
-                <Vimeo id={340491490} className="mb-6" />
-                <Vimeo id={340774081} />
-            </ContentSection>
+            
             <ContentSection color="purple" className="py-6">
-                <h2 className="text-center display-4 pb-4">Demo: Sourcegraph code navigation</h2>
+                <h2 className="text-center display-4 pb-4">See Sourcegraph code discovery in action</h2>
                 <video autoPlay={true} muted={true} loop={true} playsInline={true} className="w-100 h-auto">
                     <source
                         src="https://storage.googleapis.com/sourcegraph-assets/video/welcome/video/Welcome-CodeNavigation.mp4"
@@ -373,17 +148,169 @@ export default ((props: any) => (
                     Demo video playback is not supported on your browser.
                 </video>
             </ContentSection>
-            <ContentSection color="white" className="pt-5 pb-3">
+            
+            <div className="container-fluid bg-white text-dark pt-1 pb-5">
+                <div className="code-search-navigation-page__use-cases">
+                    <hr className="pt-5" />
+                    <h2 id="use-cases" className="mt-5 display-4 text-center">
+                        How does code search help?
+                    </h2>
+                    <p className="text-center w-75 mx-auto">
+                        Google developers use code search 5-10 times daily (<em>Table 1</em> in <a
+                            href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
+                            target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
+                    </p>
+                    <div className="row justify-content-center">
+                        <div className="col-md-6 mt-3">
+                            <h5>Find example code</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'API consumer needs help',
+                                        example: 'I want to know how a function should be called',
+                                    },
+                                    {
+                                        description: 'Discover correct library for task',
+                                        example: 'Best way to convert output stream into a string of limited length',
+                                    },
+                                    {
+                                        description: 'Example to build off of',
+                                        example: "Just want to copy-and-paste some code I'm changing",
+                                    },
+                                    { description: 'How to do something', example: 'How to write a hash function' },
+                                ]}
+                            />
+                        </div>
+                        <div className="col-md-6 mt-3">
+                            <h5>Explore or read code</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'Check implementation details',
+                                        example: 'What does a particular script do?',
+                                    },
+                                    {
+                                        description: 'Browsing',
+                                        example: 'Re-familiarizing myself with some code referenced in a code review',
+                                    },
+                                    {
+                                        description: 'Check best practices',
+                                        example: 'Where are friend classes usually declared?',
+                                    },
+                                    {
+                                        description: 'Name completion',
+                                        example: "I'm looking for an enum member that begins with a particular prefix",
+                                    },
+                                ]}
+                            />
+                        </div>
+                        <div className="col-md-6 mt-3">
+                            <h5>Find specific locations</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'Trace through call graph',
+                                        example: 'Where is this class instantiated?',
+                                    },
+                                    {
+                                        description: 'Sharing',
+                                        example:
+                                            "I'm trying to create a link to a known piece of code, to give to someone else",
+                                    },
+                                    {
+                                        description: 'Locations in source',
+                                        example: 'Where are all the environment configurations declared?',
+                                    },
+                                    {
+                                        description: 'Trace code history',
+                                        example: 'Who last touched this code?',
+                                    },
+                                    {
+                                        description: 'Responsibility',
+                                        example: 'Who is allowed to approve changes to this file?',
+                                    },
+                                ]}
+                            />
+                        </div>
+                        <div className="col-md-6 mt-3">
+                            <h5>Determine impact</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'Why is something failing?',
+                                        example:
+                                            "Wondering why my change didn't fix a problem in production and am reading the code to diagnose",
+                                    },
+                                    {
+                                        description: 'Understanding dependencies',
+                                        example: 'Looking for dependencies of a build file',
+                                    },
+                                    {
+                                        description: 'Side effects of a proposed change',
+                                        example: 'Am I about to blow up production with my change?',
+                                    },
+                                ]}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+             <ContentSection color="white" className="py-3">
+ 
+                <div className="row">
+                    <div className="col-md-4">
+                        <Blockquote
+                            quote="Software engineering is more about reading code than writing it, and part of this process is finding the code that you should read."
+                            by={
+                                <a href="https://github.com/google/zoekt/blob/master/doc/faq.md" target="_blank">
+                                    Han-Wen Nienhuys (Google engineer)
+                                </a>
+                            }
+                        />
+                    </div>
+
+                    <div className="col-md-4">
+                        <Blockquote
+                            quote="Sourcegraph [code search] … has made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast."
+                            by="Lyft engineering manager"
+                        />
+                    </div>
+                    <div className="col-md-4">
+                        <Blockquote
+                            quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
+                            by="Uber senior engineer"
+                        />
+                    </div>
+                </div>
+               
+            </ContentSection>
+            
+                    <ContentSection color="black" className="py-6">
+                {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    Use Sourcegraph to find answers in code, faster!
+                </h2>
+                <Vimeo id={340491490} className="mb-6" />
+                <Vimeo id={340774081} />
+            </ContentSection>
+       
+            
+            <ContentSection color="white" className="pt-5 pb-3" id="integrations" >
+
+                <IntegratesWithSection
+                    className="py-6"
+                    showTypes={['codeHost', 'plugin', 'language']}
+                    customTypeLabels={{ codeHost: 'Code hosts' }}
+                />
+            </ContentSection>
+           
+                        <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
                 <CustomerLogosSection trustWhat="code search" />
-                <p className="text-center mt-4 small">
-                    Curious what other code search tools exist? Check out our{' '}
-                    <a href="https://docs.sourcegraph.com/adopt/comp" target="_blank">
-                        code search tool comparison guide
-                    </a>
-                    .
-                </p>
             </ContentSection>
+         
             <ContentSection color="black" className="py-5">
                 <EnterpriseReadySolution />
             </ContentSection>
@@ -391,8 +318,8 @@ export default ((props: any) => (
                 color="purple"
                 className="py-4"
                 logomark={false}
-                title="Get Sourcegraph now"
-                description="Start shipping better software faster with the code search tool used by elite software teams."
+                title="Try Sourcegraph now"
+                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search."
             >
                 <GetSourcegraphNowActions />
             </Jumbotron>
