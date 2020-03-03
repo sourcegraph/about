@@ -34,11 +34,11 @@ export default ((props: any) => (
                 <div className="row justify-content-md-center">
                     <div className="col-md-10">
                         <h3 className="text-center">
-                            Universal Code Search is the one place to answer
+                            Universal Code Search is the one place to answer any
                             questions about code and systems.
                         </h3>
                         <p>
-                            Explore and better understand all code, faster, with contextual code intelligence to improve developer productivity and code change management.
+                            Explore and better understand all code, faster, with contextual code intelligence to improve developer productivity and code change management to make large-scale changes.
                         </p>
 
                         <p>
@@ -82,53 +82,36 @@ export default ((props: any) => (
                     <div className="col-md-4 pr-5">
                         <h5>Code Discovery</h5>
                         <p>
-                            Search anywhere – across all repos, all languages, all file formats, all code – in one centralized place
+                           <ul className="pl-3">
+                            <li>Navigate and explore code across any codebase</li>
+                            <li>Access anything stored as code from a centralized place</li>
+                            <li>Improve the speed to understand complex or unfamiliar codebases</li>
+                        </ul>
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
                         <h5>Code Intelligence</h5>
                         <p>
-                            An understanding of the structure of and relationships in your codebase, not just the raw
-                            text
-                        </p>
-                    </div>
-                    <div className="col-md-4 pr-5">
-                        <h5>Code Change Management</h5>
-                        <p>
-                            Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt
-                        </p>
-                    </div>
-                </div>
-            </ContentSection>
-            <ContentSection color="white" className="py-5">
-                <h3 className="mb-5 text-center">Answer questions faster with Sourcegraph Universal Code Search</h3>
-                <div className="row">
-                    <div className="col-md-4 pr-5">
-                        <h5 className="mb-2 font-weight-light border-bottom border-purple">Code discovery</h5>
-                        <ul className="pl-3">
-                            <li>Navigate and explore code across any codebase</li>
-                            <li>Access anything stored as code from a centralized place</li>
-                            <li>Improve the speed to understand complex or unfamiliar codebases</li>
-                        </ul>
-                    </div>
-                    <div className="col-md-4 pr-5">
-                        <h5 className="mb-2 font-weight-light border-bottom border-purple">Code intelligence</h5>
                         <ul className="pl-3">
                             <li>Understand code in context</li>
                             <li>Find answers faster, without huge amounts of effort</li>
                             <li>Better code reviews with code intelligence to find defintions or references</li>
                         </ul>
+                        </p>
                     </div>
                     <div className="col-md-4 pr-5">
-                        <h5 className="mb-2 font-weight-light border-bottom border-purple">Code change management</h5>
-                        <ul className="pl-3">
+                        <h5>Code Change Management</h5>
+                        <p>
+                            <ul className="pl-3">
                             <li>Manage large-scale changes across the entire codebase</li>
                             <li>Easily run campaigns with a query and track results</li>
                             <li>Migrate code to new APIs, address deprecations, update dependencies, and more</li>
                         </ul>
+                        </p>
                     </div>
                 </div>
             </ContentSection>
+           
                         <div className="bg-white text-dark">
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </div>
