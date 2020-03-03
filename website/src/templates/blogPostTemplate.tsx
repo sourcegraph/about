@@ -5,6 +5,8 @@ import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
 import { eventLogger } from '../EventLogger'
 import { BLOGS } from '../pages/blog'
+import { Jumbotron } from '../components/Jumbotron'
+import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 
 // Question: Should these be local to the render function since they are not used elsewhere?
 interface AuthorProps {
@@ -92,7 +94,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
-                                <div class="blog__posts--post-byline">
+                                <div className="blog__posts--post-byline">
 				    <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} /> on {publishDate}
 				</div>
                             </section>
@@ -120,6 +122,15 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                         </div>
                     </div>
                 </div>
+                <Jumbotron
+                color="purple"
+                className="py-4"
+                logomark={false}
+                title="Try Sourcegraph now"
+                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
+            >
+                <GetSourcegraphNowActions />
+            </Jumbotron>
             </Layout>
         )
     }
