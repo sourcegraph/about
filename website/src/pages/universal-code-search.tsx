@@ -8,6 +8,7 @@ import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import Helmet from 'react-helmet'
+import 'components/product/IntegratesWithSection'
 
 export default ((props: any) => (
     <Layout
