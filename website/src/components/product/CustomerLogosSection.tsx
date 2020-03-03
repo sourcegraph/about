@@ -44,6 +44,10 @@ const ITEMS: (
         url: '/external-logos/quantcast-logo.svg',
     },
     {
+        name: 'CERN',
+        url: '/external-logos/cern-blue-logo.png',
+    },
+    {
         name: 'SoFi',
         url: '/external-logos/sofi-logo.svg',
     },
