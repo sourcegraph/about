@@ -197,9 +197,7 @@ export default ((props: any) => (
                                 <li>Side efects of a proposed change: <em>Am I about to blow up production with my change?</em></li>     
                                     </ul>
                     </div>
-                   
                 </div>
-            </div>
                         </ContentSection>
                     <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
