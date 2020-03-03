@@ -239,8 +239,8 @@ export default ((props: any) => (
             </ContentSection>
        
             
-            <ContentSection color="white" className="pt-5 pb-3">
-                <hr id="integrations" />
+            <ContentSection color="white" className="pt-5 pb-3" id="integrations" >
+
                 <IntegratesWithSection
                     className="py-6"
                     showTypes={['codeHost', 'plugin', 'language']}
@@ -248,6 +248,7 @@ export default ((props: any) => (
                 />
             </ContentSection>
             
+                            <hr />
             
                         <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
