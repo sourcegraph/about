@@ -133,6 +133,7 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
+            
             <ContentSection color="purple" className="py-6">
                 <h2 className="text-center display-4 pb-4">See Sourcegraph code discovery in action</h2>
                 <video autoPlay={true} muted={true} loop={true} playsInline={true} className="w-100 h-auto">
@@ -147,8 +148,10 @@ export default ((props: any) => (
                     Demo video playback is not supported on your browser.
                 </video>
             </ContentSection>
-            <div className="container-fluid bg-white text-dark pt-1 pb-5">
-                <div className="code-search-navigation-page__use-cases">
+            
+            <ContentSection color="white" className="pt-6 pb-2">
+                <div className="row">
+                    <div className="col-md-6 mb-4">
                     <h2 id="use-cases" className="mt-5 display-4 text-center">
                         How does code search help?
                     </h2>
@@ -158,7 +161,6 @@ export default ((props: any) => (
                             target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
                     </p>
                 </div>
-                <div className="row">
                     <div className="col-md-6 mb-4">
                             <h4>Find example code</h4>
                             <ul>
@@ -198,6 +200,7 @@ export default ((props: any) => (
                    
                 </div>
             </div>
+                        </ContentSection>
                     <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
