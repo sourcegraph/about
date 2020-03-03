@@ -15,7 +15,7 @@ export default ((props: any) => (
         meta={{
             title: 'What is Universal Code Search',
             description:
-                'Universal Code Search is the one place where developers and DevOps teams go to answer questions about code and systems.',
+                'Universal Code Search is the one place to answer questions about code and systems.',
         }}
     >
         <Helmet>
@@ -33,17 +33,16 @@ export default ((props: any) => (
                 <div className="row justify-content-md-center">
                     <div className="col-md-10">
                         <h3 className="text-center">
-                            Universal Code Search is the one place where developers and DevOps teams go to answer
+                            Universal Code Search is the one place to answer
                             questions about code and systems.
                         </h3>
                         <p>
-                            It ties together information from many tools, from repositories on your code host to
-                            dependency relationships among your projects and application runtime information.
+                            Explore and better understand all code, faster, with contextual code intelligence to improve developer productivity and code change management.
                         </p>
 
                         <p>
                             <a href="#used-by">
-                                Google, Facebook, Uber, Lyft, Yelp, and other elite software organizations
+                                Uber, Lyft, Yelp, and other enterprises
                             </a>{' '}
                             rely on Universal Code Search, not just code hosts.
                         </p>
@@ -73,111 +72,75 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="purple" className="py-5">
-                <div className="row">
-                    <div className="col-md-12">
-                        <h2 className="text-center">A code host is no longer enough</h2>
-                        <p>
-                            Historically, the code host (such as GitHub) provided search. But the most elite software
-                            development organizations such as Google, Facebook, Uber, Lyft, and Yelp realized that a
-                            code host isn't enough:
-                        </p>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        <ul>
-                            <li className="mb-3">
-                                With more code and more repositories, <strong>cross-repository code search</strong> is
-                                necessary. <br />
-                                &nbsp;
-                            </li>
-                            <li className="mb-3">
-                                With more internal libraries, services, and APIs owned by disparate teams,{' '}
-                                <strong>code navigation across packages and repositories</strong> is necessary.
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="col-md-6">
-                        <ul>
-                            <li className="mb-3">
-                                With faster development cycles and more intricately connected systems, developers need
-                                to <strong>understand how a change affects other components in code review</strong>.
-                            </li>
-                            <li className="mb-3">
-                                With more tools collecting error and performance data about code, developers need to see{' '}
-                                <strong>rich inline information on code files and reviews</strong>.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </ContentSection>
-            <ContentSection color="white" className="py-5">
-                <h3 className="mb-5 text-center">Universal Code Search helps answer your team's questions</h3>
-                <div className="row">
-                    <div className="col-md-4 pr-5">
-                        <h5 className="mb-2 font-weight-light border-bottom border-purple">For developers</h5>
-                        <ul className="pl-3">
-                            <li>How do I use this function or service?</li>
-                            <li>If I change this, what could break?</li>
-                            <li>What's the right library or service to use for this task?</li>
-                            <li>How (and where) is this feature implemented?</li>
-                        </ul>
-                    </div>
-                    <div className="col-md-4 pr-5">
-                        <h5 className="mb-2 font-weight-light border-bottom border-purple">For DevOps teams</h5>
-                        <ul className="pl-3">
-                            <li>
-                                What recently changed in the code about <em>X</em> that broke it?
-                            </li>
-                            <li>Tell me whenever code is committed that makes a DB connection.</li>
-                            <li>What's the performance of this line of code in production?</li>
-                        </ul>
-                    </div>
-                    <div className="col-md-4 pr-5">
-                        <h5 className="mb-2 font-weight-light border-bottom border-purple">For engineering leaders</h5>
-                        <p>
-                            Ensure that everyone who interacts with this code can answer these questions on their own in
-                            a single place.
-                        </p>
-                    </div>
-                </div>
-            </ContentSection>
-            <ContentSection color="primary" className="py-5">
-                <h3 className="text-center">Universal Code Search</h3>
+                        <ContentSection color="purple" className="py-5">
+                <h3 className="text-center">Universal across everything </h3>
                 <p className="text-center">
-                    Universal Code Search must have these things. Anything else is just a code host.
+                    Universal Code Search must have these things. Anything else is just a code search tool.
                 </p>
                 <div className="row mt-5">
                     <div className="col-md-4 pr-5">
-                        <h5>Code</h5>
+                        <h5>Code Discovery</h5>
                         <p>
-                            One place to search, navigate, and analyze all of your organization's code (subject to user
-                            permissions)
+                            Search anywhere – across all repos, all languages, all file formats, all code – in one centralized place
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
-                        <h5>Intelligence</h5>
+                        <h5>Code Intelligence</h5>
                         <p>
                             An understanding of the structure of and relationships in your codebase, not just the raw
                             text
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
-                        <h5>Platform</h5>
+                        <h5>Code Change Management</h5>
                         <p>
-                            Deep integrations with your other tools for viewing code (code host, code reviews, and
-                            editors) or collecting data about code (logging, monitoring, static analysis, etc.)
+                            Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt
                         </p>
                     </div>
                 </div>
             </ContentSection>
+            <ContentSection color="white" className="py-5">
+                <h3 className="mb-5 text-center">Answer questions faster with Sourcegraph Universal Code Search</h3>
+                <div className="row">
+                    <div className="col-md-4 pr-5">
+                        <h5 className="mb-2 font-weight-light border-bottom border-purple">Code discovery</h5>
+                        <ul className="pl-3">
+                            <li>Navigate and explore code across any codebase</li>
+                            <li>Access anything stored as code from a centralized place</li>
+                            <li>Improve the speed to understand complex or unfamiliar codebases</li>
+                        </ul>
+                    </div>
+                    <div className="col-md-4 pr-5">
+                        <h5 className="mb-2 font-weight-light border-bottom border-purple">Code intelligence</h5>
+                        <ul className="pl-3">
+                            <li>Understand code in context</li>
+                            <li>Find answers faster, without huge amounts of effort</li>
+                            <li>Better code reviews with code intelligence to find defintions or references</li>
+                        </ul>
+                    </div>
+                    <div className="col-md-4 pr-5">
+                        <h5 className="mb-2 font-weight-light border-bottom border-purple">Code change management</h5>
+                        <ul className="pl-3">
+                            <li>Manage large-scale changes across the entire codebase</li>
+                            <li>Easily run campaigns with a query and track results</li>
+                            <li>Migrate code to new APIs, address deprecations, update dependencies, and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </ContentSection>
+                        <div className="bg-white text-dark">
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+            </div>
+            <div className="bg-white text-dark">
+                <CustomerLogosSection className="py-5" />
+            </div>
+            
             <ContentSection color="white" className="py-6">
                 <h2 id="used-by" className="text-center display-5">
-                    The most elite software organizations use Universal Code Search
+                    Code search is the superpower
                 </h2>
                 <p className="text-center">
-                    Google, Facebook, Uber, Lyft, Yelp, and other world-class companies rely on Universal Code Search
+                    Uber, Lyft, Yelp, and other world-class companies rely on Sourcegraph Universal Code Search
                     (not just a code host) to ship software.
                 </p>
                 <div className="row mt-5">
@@ -277,57 +240,14 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <div className="container-fluid py-6">
-                <h2 className="mb-5 text-center">
-                    Watch Google &amp; Facebook engineers present their internal dev platforms
-                </h2>
-                <div className="d-flex flex-wrap justify-content-center">
-                    <iframe
-                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fatscaleevents%2Fvideos%2F1911812842425144%2F&show_text=false&appId&width=700"
-                        width="560"
-                        height="315"
-                        style={{ border: 'none', overflow: 'hidden' }}
-                        scrolling="no"
-                        frameBorder="0"
-                        allowtransparency="yes"
-                        allow="encrypted-media"
-                        allowFullScreen={true}
-                        className="m-2"
-                    />
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/KTJs-0EInW8"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen={true}
-                        className="m-2"
-                    />
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/cIVUP9wUAJA"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen={true}
-                        className="m-2"
-                    />
-                </div>
-            </div>
-            <ContentSection color="white" className="pt-4 pb-6 border-top border-gray">
-                <h2 className="text-center my-5">
-                    Sourcegraph provides Universal Code Search for <em>every</em> company.
-                </h2>
-                <div className="border border-gray rounded w-75 mx-auto py-4">
-                    <CustomerLogosSection />
-                </div>
-            </ContentSection>
+            
+
             <Jumbotron
                 color="purple"
                 className="py-4"
                 logomark={false}
-                title="Get Sourcegraph now"
-                description="Your team deserves Universal Code Search, not just a code host. Use Sourcegraph, trusted by the most elite software teams."
+                title="Try Sourcegraph now"
+                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
             >
                 <GetSourcegraphNowActions />
             </Jumbotron>
