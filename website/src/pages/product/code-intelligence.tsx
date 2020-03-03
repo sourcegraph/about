@@ -29,7 +29,7 @@ import { ViewDeveloperDocumentationAction } from '../../css/components/actions/V
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
-            title="Code Intelligence"
+            title="Code intelligence"
             description="Find answers faster, with inline contextual information around code."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
