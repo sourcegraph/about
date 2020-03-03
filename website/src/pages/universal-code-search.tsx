@@ -105,7 +105,7 @@ export default ((props: any) => (
                             <ul className="pl-3">
                             <li>Manage large-scale changes across the entire codebase</li>
                             <li>Easily run campaigns with a query and track results</li>
-                            <li>Migrate code to new APIs, address deprecations, update dependencies, and more</li>
+                            <li>Migrate code to new APIs, address deprecations and dependencies, and more</li>
                         </ul>
                         </p>
                     </div>
