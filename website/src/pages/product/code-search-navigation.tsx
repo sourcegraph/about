@@ -209,6 +209,12 @@ export default ((props: any) => (
                     </div>
                 </div>
                         </ContentSection>
+                        <ContentSection color="white" className="pt-5 pb-3">
+                <span id="customers" />
+                <CustomerLogosSection trustWhat="code search" />
+                
+            </ContentSection>
+            
                     <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
@@ -261,11 +267,6 @@ export default ((props: any) => (
             </ContentSection>
             
          
-            <ContentSection color="white" className="pt-5 pb-3">
-                <span id="customers" />
-                <CustomerLogosSection trustWhat="code search" />
-                
-            </ContentSection>
             <ContentSection color="black" className="py-5">
                 <EnterpriseReadySolution />
             </ContentSection>
