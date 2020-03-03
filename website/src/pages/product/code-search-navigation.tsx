@@ -149,56 +149,114 @@ export default ((props: any) => (
                 </video>
             </ContentSection>
             
-            <ContentSection className="pt-5 pb-4" color="white">
-                <h2 id="use-cases" className="text-center display-3">
-                    How does code search help?
-                </h2>
-<p className="text-center w-75 mx-auto">
+            <div className="container-fluid bg-white text-dark pt-1 pb-5">
+                <div className="code-search-navigation-page__use-cases">
+                    <hr className="pt-5" />
+                    <h2 id="use-cases" className="mt-5 display-4 text-center">
+                        How does code search help?
+                    </h2>
+                    <p className="text-center w-75 mx-auto">
                         Google developers use code search 5-10 times daily (<em>Table 1</em> in <a
                             href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
                             target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
                     </p>
-            </ContentSection>
-            <ContentSection color="white" className="pt-6 pb-2">
-                       <div className="row">
-                 <div className="col-md-6 mb-4">
-                            <h4>Find example code</h4>
-                            <ul>
-                                <li>API consumer needs help: <em>How should this function be called?</em></li>
-                                <li>Discover correct library for task: <em>Best way to convert output stream into a string of limited length</em></li>
-                                <li>Example to build off of: <em>Want to copy-paste some code I'm changing</em></li>
-                                    <li>How to do something: <em>How to write a hash function</em></li>
-                                    </ul>
-                    </div>
-                    <div className="col-md-6 mb-4">
-                            <h4>Explore or read code</h4>
-                            <ul>
-                                <li>Check implementation details: <em>What does a particular script do?</em></li>
-                                <li>Browsing: <em>Re-familiarizing myself with some code referenced in a code review</em></li>
-                                <li>Check best practices: <em>Where are friend classes usually declared?</em></li>
-                                    <li>Name completion: <em>I'm looking for an enum member that begins with a particular prefix</em></li>
-                                    </ul>
-                    </div>
-                    <div className="col-md-6 mb-4">
-                            <h4>Find specific locations</h4>
-                            <ul>
-                                <li>Trace through call graph: <em>Where is this class instantiated?</em></li>
-                                <li>Sharing: <em>I'm trying to create a link to a known piece of code, to give to someone else</em></li>
-                                <li>Locations in source: <em>Where are all the environment configurations declared?</em></li>
-                                    <li>Trace code history: <em>Who last touched this code?</em></li>
-                                    <li>Responsibility: <em>Who is allowed to approve changes to this file?”</em></li>
-                                    </ul>
-                    </div>
-                        <div className="col-md-6 mb-4">
-                            <h4>Determine impact</h4>
-                            <ul>
-                                <li>Why is something failing?: <em>Wondering why my change didn't fix a problem in production and am reading the code to diagnose</em></li>
-                                <li>Understanding dependencies: <em>Looking for build file dependencies</em></li>
-                                <li>Side efects of a proposed change: <em>Am I about to blow up production with my change?</em></li>     
-                                    </ul>
+                    <div className="row justify-content-center">
+                        <div className="col-md-6 mt-3">
+                            <h5>Find example code</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'API consumer needs help',
+                                        example: 'I want to know how a function should be called',
+                                    },
+                                    {
+                                        description: 'Discover correct library for task',
+                                        example: 'Best way to convert output stream into a string of limited length',
+                                    },
+                                    {
+                                        description: 'Example to build off of',
+                                        example: "Just want to copy-and-paste some code I'm changing",
+                                    },
+                                    { description: 'How to do something', example: 'How to write a hash function' },
+                                ]}
+                            />
+                        </div>
+                        <div className="col-md-6 mt-3">
+                            <h5>Explore or read code</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'Check implementation details',
+                                        example: 'What does a particular script do?',
+                                    },
+                                    {
+                                        description: 'Browsing',
+                                        example: 'Re-familiarizing myself with some code referenced in a code review',
+                                    },
+                                    {
+                                        description: 'Check best practices',
+                                        example: 'Where are friend classes usually declared?',
+                                    },
+                                    {
+                                        description: 'Name completion',
+                                        example: "I'm looking for an enum member that begins with a particular prefix",
+                                    },
+                                ]}
+                            />
+                        </div>
+                        <div className="col-md-6 mt-3">
+                            <h5>Find specific locations</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'Trace through call graph',
+                                        example: 'Where is this class instantiated?',
+                                    },
+                                    {
+                                        description: 'Sharing',
+                                        example:
+                                            "I'm trying to create a link to a known piece of code, to give to someone else",
+                                    },
+                                    {
+                                        description: 'Locations in source',
+                                        example: 'Where are all the environment configurations declared?',
+                                    },
+                                    {
+                                        description: 'Trace code history',
+                                        example: 'Who last touched this code?',
+                                    },
+                                    {
+                                        description: 'Responsibility',
+                                        example: 'Who is allowed to approve changes to this file?',
+                                    },
+                                ]}
+                            />
+                        </div>
+                        <div className="col-md-6 mt-3">
+                            <h5>Determine impact</h5>
+                            <UseCasesTable
+                                data={[
+                                    {
+                                        description: 'Why is something failing?',
+                                        example:
+                                            "Wondering why my change didn't fix a problem in production and am reading the code to diagnose",
+                                    },
+                                    {
+                                        description: 'Understanding dependencies',
+                                        example: 'Looking for dependencies of a build file',
+                                    },
+                                    {
+                                        description: 'Side effects of a proposed change',
+                                        example: 'Am I about to blow up production with my change?',
+                                    },
+                                ]}
+                            />
+                        </div>
                     </div>
                 </div>
-                        </ContentSection>
+            </div>
+            
+           
              <ContentSection color="white" className="py-3">
  
                 <div className="row">
