@@ -73,7 +73,7 @@ export default ((props: any) => (
                         Even if your IDE can do this, Sourcegraph lets you explore code intelligently in your web browser in any repository on any branch, instantly and without losing your local context.
                     </h5>
                 </IconItem>
-                <IconItem color="brand-orange" icon={IframeBracesOutline} className="py-3">
+                <IconItem color="brand-orange" icon={IframeBracesOutlineIcon} className="py-3">
                     <h5 className="text-sans-serif">
                         Works for 24 programming languages.
                     </h5>
