@@ -7,6 +7,7 @@ import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
 import TurtleIcon from 'mdi-react/TurtleIcon'
 import TooltipPlusIcon from 'mdi-react/TooltipPlusIcon'
 import FolderSearchOutlineIcon from 'mdi-react/FolderSearchOutlineIcon'
+import CodeBracesIcon from 'mdi-react/CodeBracesIcon'
 import React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -64,17 +65,17 @@ export default ((props: any) => (
                 </h2>
                   <IconItem color="brand-orange" icon={FolderSearchOutlineIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Find the definition or callers of functions and anything else in code, even across package, dependency, and repository boundaries.
+                        Find the definition or function calls and anything else in code, across package, dependency, and repository boundaries.
                     </h5>
                     </IconItem>
                 <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Even if your IDE can do this, Sourcegraph lets you explore code intelligently in your web browser in any repository on any branch, instantly and without losing your local context.
+                        Explore code intelligently in your web browser in any repository on any branch, instantly and without losing local context.
                     </h5>
                      </IconItem>
-                <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
+                <IconItem color="brand-orange" icon={CodeBracesIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Works for 24 programming languages.
+                        Works for <SupportedProgrammingLanguagesLink />.
                     </h5>
                     </IconItem>
             </ContentSection>
