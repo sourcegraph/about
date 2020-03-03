@@ -167,7 +167,7 @@ export default ((props: any) => (
                             <ul>
                                 <li>API consumer needs help: <em>“I want to know how a function should be called”</em></li>
                                 <li>Discover correct library for task: <em>“Best way to convert output stream into a string of limited length”</em></li>
-                                <li>Example to build off of: <em>“Just want to copy-and-paste some code I'm changing”</em>
+                                <li>Example to build off of: <em>“Just want to copy-and-paste some code I'm changing”</em></li>
                                     <li>How to do something: <em>“How to write a hash function”</em></li>
                                     </ul>
                     </div>
