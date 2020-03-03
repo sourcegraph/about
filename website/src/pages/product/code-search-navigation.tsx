@@ -208,12 +208,10 @@ export default ((props: any) => (
                                 <li>Side efects of a proposed change: <em>Am I about to blow up production with my change?</em></li>     
                                     </ul>
                     </div>
-                </div>
                         </ContentSection>
                         <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
                 <CustomerLogosSection trustWhat="code search" />
-                
             </ContentSection>
             
                     <ContentSection color="black" className="py-6">
