@@ -7,6 +7,7 @@ import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
 import TurtleIcon from 'mdi-react/TurtleIcon'
 import IframeBracesOutlineIcon from 'mdi-react/IframeBracesOutlineIcon'
 import TooltipPlusIcon from 'mdi-react/TooltipPlusIcon'
+import FolderSearchOutlineIcon from 'mdi-react/FolderSearchOutlineIcon'
 import React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -62,17 +63,17 @@ export default ((props: any) => (
                 <h2 id="why" className="display-4 mb-4">
                     Explore definitions & references, even across all projects 
                 </h2>
-                <IconItem color="brand-orange" icon={iframeBracesOutline} className="py-3">
+                <IconItem color="brand-orange" icon={FolderSearchOutlineIcon} className="py-3">
                     <h5 className="text-sans-serif">
                         Find the definition or callers of functions and anything else in code, even across package, dependency, and repository boundaries.
                     </h5>
                 </IconItem>
-                <IconItem color="brand-orange" icon={tooltipPlus} className="py-3">
+                <IconItem color="brand-orange" icon={TooltipPlus} className="py-3">
                     <h5 className="text-sans-serif">
                         Even if your IDE can do this, Sourcegraph lets you explore code intelligently in your web browser in any repository on any branch, instantly and without losing your local context.
                     </h5>
                 </IconItem>
-                <IconItem color="brand-orange" icon={QuestionMarkCircleIcon} className="py-3">
+                <IconItem color="brand-orange" icon={IframeBracesOutline} className="py-3">
                     <h5 className="text-sans-serif">
                         Works for 24 programming languages.
                     </h5>
