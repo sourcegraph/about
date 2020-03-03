@@ -52,7 +52,7 @@ export default ((props: any) => (
                     { text: 'Who uses it', url: '#customers' },
                 ]}
             />
-            <ContentSection className="pt-5 pb-4">
+            <ContentSection className="pt-5 pb-4" color="white">
                 <h2 id="features" className="text-center display-3">
                     Code navigation and exploration
                 </h2>
@@ -149,7 +149,6 @@ export default ((props: any) => (
             </ContentSection>
             <div className="container-fluid bg-white text-dark pt-1 pb-5">
                 <div className="code-search-navigation-page__use-cases">
-                    <hr className="pt-5" />
                     <h2 id="use-cases" className="mt-5 display-4 text-center">
                         How does code search help?
                     </h2>
@@ -159,7 +158,6 @@ export default ((props: any) => (
                             target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
                     </p>
                 </div>
-            </div>
                 <div className="row">
                     <div className="col-md-6 mb-4">
                             <h4>Find example code</h4>
@@ -199,6 +197,7 @@ export default ((props: any) => (
                     </div>
                    
                 </div>
+            </div>
                     <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
