@@ -160,6 +160,7 @@ export default ((props: any) => (
                     </p>
             </ContentSection>
             <ContentSection color="white" className="pt-6 pb-2">
+                       <div className="row">
                  <div className="col-md-6 mb-4">
                             <h4>Find example code</h4>
                             <ul>
@@ -196,6 +197,7 @@ export default ((props: any) => (
                                 <li>Side efects of a proposed change: <em>Am I about to blow up production with my change?</em></li>     
                                     </ul>
                     </div>
+                </div>
                         </ContentSection>
                         <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
