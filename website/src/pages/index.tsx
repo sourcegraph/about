@@ -154,7 +154,7 @@ export default ((props: any) => (
                             <strong>Sourcegraph Universal Code Search</strong> provides{' '}
                             <Link
                                 className="home__intro-text-link home__intro-text-link-1"
-                                to="/product/code-search-navigation"
+                                to="/product/code-discovery"
                             >
                                 code&nbsp;discovery
                             </Link>
