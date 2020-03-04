@@ -182,10 +182,7 @@ export default ((props: any) => (
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
             </div>
-            <ContentSection color="black" className="py-6">
-                <h2 id="demo" className="text-center display-4 pb-4">
-                    See why developers rely on Sourcegraph daily
-                </h2>
+            <ContentSection id="demo" color="black" className="py-6">
                 <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
             </ContentSection>
                         <div className="bg-white text-dark py-4">
