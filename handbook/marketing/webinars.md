@@ -19,7 +19,7 @@ Sourcegraph uses these web applications for running a webinar:
 
 - GotoWebinar:
   * Manage registration and attendance
-  * Email and reminders with webinar link and details
+  * Invitation email and reminders with webinar link and details
   * Run and record the webinar
 - Hubspot
   * Set up landing page for registration
