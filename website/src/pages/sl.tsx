@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import { eventLogger } from '../EventLogger'
 
 export default class Pricing extends React.Component<any, any> {
     public componentDidMount(): void {
@@ -14,9 +13,6 @@ export default class Pricing extends React.Component<any, any> {
                 portalId: '2762526',
                 formId: '429cabbb-658d-428b-b325-fc8996738775',
                 target: '#strangeLoopForm',
-                onFormSubmit: (e: Event) => {
-                    eventLogger.trackStrangeLoopFormSubmitted()
-                },
             })
         })
     }
