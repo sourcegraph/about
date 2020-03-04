@@ -7,9 +7,9 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import * as goldcrest from '../images/about/sg-goldcrest.png'
-import * as lightspeed from '../images/about/sg-lightspeed.png'
+import * as craft from '../images/about/sg-craftventures.png'
 import * as redpoint from '../images/about/sg-redpoint.png'
-import * as sway from '../images/about/sg-sway.png'
+import * as sacks from '../images/about/david-sacks.jpg'
 
 export default class About extends React.Component<any, any> {
     public render(): JSX.Element | null {
@@ -241,16 +241,13 @@ export default class About extends React.Component<any, any> {
                                 </h1>
                                 <div className="row align-items-center">
                                     <div className="col-md-3">
+                                        <img src={craft} />
+                                    </div>                                
+                                    <div className="col-md-3">
                                         <img src={redpoint} />
                                     </div>
                                     <div className="col-md-3">
                                         <img src={goldcrest} />
-                                    </div>
-                                    <div className="col-md-3">
-                                        <img src={lightspeed} />
-                                    </div>
-                                    <div className="col-md-3">
-                                        <img src={sway} />
                                     </div>
                                 </div>
                             </div>
@@ -262,6 +259,17 @@ export default class About extends React.Component<any, any> {
                                     <br />
                                 </h1>
                                 <ul className="about__founders-board">
+                                    <li className="about__founders-board-member">
+                                        <img
+                                            src={sacks}
+                                            alt="David Sacks"
+                                        />
+                                        <div className="p-2">
+                                            <strong>David Sacks</strong>
+                                            <br />
+                                            Craft Ventures
+                                        </div>
+                                    </li>
                                     <li className="about__founders-board-member">
                                         <img
                                             src="https://www.redpoint.com/app/uploads/2015/08/Redpoint_Scott_Raney-0033-Edit-297x297.jpg"
