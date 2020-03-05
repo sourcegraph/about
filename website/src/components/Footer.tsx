@@ -5,30 +5,9 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
 import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from './ProductPopover'
 import { useLayoutEffect } from 'react'
-
-interface HubSpotForm {
-    portalId?: string
-    formId: string
-    targetId: string
-    onFormSubmit?: () => void
-}
+import { createHubSpotForm } from '../components/HubSpot'
 
 const hubspotNewsletterFormId = 'hubspot-newsletter-form'
-
-export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit }: HubSpotForm): void {
-    const script = document.createElement('script')
-    script.src = '//js.hsforms.net/forms/v2.js'
-    const hubspot = document.getElementById(targetId)
-    hubspot && hubspot.appendChild(script)
-        script.addEventListener('load', () => {
-        ;(window as any).hbspt.forms.create({
-            portalId,
-            formId,
-            target: `#${targetId}`,
-            onFormSubmit,
-        })
-    })
-}
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => {
     useLayoutEffect(() => {
