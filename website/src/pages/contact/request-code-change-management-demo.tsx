@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from 'react'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { createHubSpotForm } from './sales'
+import { createHubSpotForm } from '../../components/HubSpot'
 
 export default ((props: any) => {
     useLayoutEffect(() => {
