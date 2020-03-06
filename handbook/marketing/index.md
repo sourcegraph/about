@@ -27,6 +27,10 @@ See job descriptions and responsibilities of roles on the Marketing team:
 
 ## Definitions
 
+### Web traffic
+
+Web traffic is measured in [users](https://www.lovesdata.com/blog/google-analytics-glossary#user). Unless otherwise noted, web traffic refers to traffic from the United States and Canada. If the web traffic is labeled `geo7` or similar, it refers to the web traffic from the US, Canada, Australia, United Kingdom, Germany, France and Sweden. 
+
 ### Inquiry
 
 An inquiry is a person who has requested information from Sourcegraph for the first time and has provided Sourcegraph with at least an email address. This may be online via a web form, or in person, for example, at a conference. Someone may become an inquiry and a [MQL](#mql) at the same time, or may take years between converting from an inquiry to a [MQL](#mql).
