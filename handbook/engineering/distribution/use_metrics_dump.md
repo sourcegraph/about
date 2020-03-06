@@ -8,7 +8,7 @@ to use the same version of Sourcegraph as the origin of the snapshot.
 There are two ways to achieve this:
 
 - set the flag value
-* move the snapshot to where the flag currently points
+- move the snapshot to where the flag currently points
 
 Depending on the deployment and development environment, choose whichever is easier. For example in an `enterprise/dev/start.sh` or
 `dev/start.sh` case, it's probably easier to copy or move the snapshot directory to the location
