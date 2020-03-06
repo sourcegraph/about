@@ -5,7 +5,7 @@ to use the same version of Sourcegraph as the origin of the snapshot.
 
 ## Flag `--storage.tsdb.path` pointing at the snapshot
 
-Two ways to achieve this:
+There are two ways to achieve this:
 
 * set the flag value
 * move the snapshot to where the flag currently points
