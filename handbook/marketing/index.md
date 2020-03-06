@@ -29,7 +29,7 @@ See job descriptions and responsibilities of roles on the Marketing team:
 
 ### Web traffic
 
-Web traffic is measured in [users](https://www.lovesdata.com/blog/google-analytics-glossary#user). Unless otherwise noted, web traffic refers to traffic from the United States and Canada. If the web traffic is labeled `geo7` or similar, it refers to the web traffic from the US, Canada, Australia, United Kingdom, Germany, France and Sweden. 
+Web traffic is measured by analyzing two metrics: [all users](https://www.lovesdata.com/blog/google-analytics-glossary#user) and [organic users](https://theupperranks.com/blog/organic-search/). Unless otherwise noted, web traffic refers to web visitors from the United States and Canada. If the web traffic is labeled `geo7` or similar, it refers to the web traffic from the US, Canada, Australia, United Kingdom, Germany, France and Sweden.   Also note, that web traffic currently includes the following sites:  about.sourcegraph.com and info.sourcegraph.com.
 
 ### Inquiry
 
