@@ -1,10 +1,9 @@
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { Tweets } from '../components/Tweets'
 import Conferences from '../components/EventsList'
+
 export default class EventsPage extends React.Component<any, any> {
     constructor(props: any) {
         super(props)

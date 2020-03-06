@@ -1,13 +1,6 @@
 {
 "Conference":[
 	{
-		"eventTitle":"TSConf JP 2020",
-		"eventDate": "February 22, 2020",
-		"eventLocation":"Tokyo, Japan",
-		"eventLink": "https://www.tsconf.jp/2020/",
-		"eventImage": "/external-logos/tsconf-js-logo.svg"
-	},
-	{
 		"eventTitle":"RxJS Live",
 		"eventDate": "March 20, 2020",
 		"eventLocation":"London, England",
