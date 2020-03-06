@@ -1,11 +1,10 @@
 import * as React from 'react'
-import EventData from "../data/events-listing"
+import EventData from '../data/events-listing'
 
 class Conferences extends React.Component {
-	render() {		
+	render() {
 		return (
-			<div class="card-deck">
-				
+			<div className="card-deck">
 				{EventData.Conference.map((eventDetail, index)=> {
 					return ( 					
 						<div className="card col-sm-3 event__item">
@@ -13,9 +12,11 @@ class Conferences extends React.Component {
 							<div className="card-body">
 								<h6>CONFERENCE</h6>
 								<h5>{eventDetail.eventTitle}</h5>
-								<p>{eventDetail.eventLocation}<br />
-								{eventDetail.eventDate}<br />
-								<a href={eventDetail.eventLink} ref="nofollow">Join us &rarr;</a></p>
+								<p>
+									{eventDetail.eventLocation}<br />
+									{eventDetail.eventDate}<br />
+									<a href={eventDetail.eventLink} ref="nofollow">Join us &rarr;</a>
+								</p>
 							</div>
 						</div>
 					)
@@ -33,10 +34,9 @@ class Conferences extends React.Component {
 						</div>
 					)
 				})}
-
 			</div>
-			)
-		}	       	
+		)
+	}
 }
 
 export default Conferences;
