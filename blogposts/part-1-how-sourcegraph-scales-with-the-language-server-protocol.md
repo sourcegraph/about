@@ -43,7 +43,7 @@ We’ve experimented with different protocols to satisfy our needs along the way
 
 ### The Language Server Protocol
 
-The [Language Server Protocol](https://github.com/Microsoft/language-server-protocol) (LSP) is an open protocol originally created and open-sourced by Microsoft that defines a set of standard Code Intelligence capabilities for editor plugins. Here is a subset that will be familiar to any professional programmer:
+The [Language Server Protocol](https://github.com/Microsoft/language-server-protocol) (LSP) is an open protocol originally created and open sourced by Microsoft that defines a set of standard Code Intelligence capabilities for editor plugins. Here is a subset that will be familiar to any professional programmer:
 
 *   Jump to definition
 *   Find all references
@@ -59,7 +59,7 @@ Sourcegraph is not an editor, but we view IDE-level Code Intelligence as table s
 
 #### The M x N problem
 
-We originally wrote about the M x N problem back in 2013, when we created srclib, our open-source offline language analysis library. It is the problem of having M editors (Emacs, Vim, Sublime, Visual Studio Code, Atom, etc.) and N programming languages (JavaScript, Java, Go, Python, Rust, TypeScript, etc.) Each of the editors has editing capabilities (buffer management, file navigation, keyboard shortcuts, look-and-feel, etc.) that should be orthogonal to choice of language. In the perfect world, you should be able to stick with your editor of choice no matter what language you work in.
+We originally wrote about the M x N problem back in 2013, when we created srclib, our open source offline language analysis library. It is the problem of having M editors (Emacs, Vim, Sublime, Visual Studio Code, Atom, etc.) and N programming languages (JavaScript, Java, Go, Python, Rust, TypeScript, etc.) Each of the editors has editing capabilities (buffer management, file navigation, keyboard shortcuts, look-and-feel, etc.) that should be orthogonal to choice of language. In the perfect world, you should be able to stick with your editor of choice no matter what language you work in.
 
 But that’s not the world we live in. Why not? Because to make every editor support Code Intelligence for every language, you’d need to build M x N editor plugins, each of which needs to integrate with the plugin API of a specific editor _and_ understand the compiler-level semantics of the language.
 
@@ -88,7 +88,7 @@ None of this precludes building a semantic data model on top of LSP. In fact, at
 
 #### Extensibility
 
-The last important feature of LSP that I’ll touch upon in this post is extensibility. The creators of LSP foresaw that in the future, people would desire new functionality out of language servers beyond what was defined in the original spec. Sourcegraph needs to support features like cross-repository jump-to-definition and global usage examples that no editor or IDE currently offers. The primitive capabilities we require to support these features also happen to be useful to editor plugins in many cases. To that end, we’ve [extended](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-cache.md) [the](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-files.md) [protocol](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-workspace-references.md). I’ll dive into specifics in a later post, but for now, I’ll just note that it is easy to add new functionality to LSP without breaking backwards compatibility. Indeed, there is a vibrant, open-source community that continues to contribute changes to the protocol while maintaining backwards compatibility with existing LSP plugins.
+The last important feature of LSP that I’ll touch upon in this post is extensibility. The creators of LSP foresaw that in the future, people would desire new functionality out of language servers beyond what was defined in the original spec. Sourcegraph needs to support features like cross-repository jump-to-definition and global usage examples that no editor or IDE currently offers. The primitive capabilities we require to support these features also happen to be useful to editor plugins in many cases. To that end, we’ve [extended](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-cache.md) [the](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-files.md) [protocol](https://github.com/sourcegraph/language-server-protocol/blob/master/extension-workspace-references.md). I’ll dive into specifics in a later post, but for now, I’ll just note that it is easy to add new functionality to LSP without breaking backwards compatibility. Indeed, there is a vibrant, open source community that continues to contribute changes to the protocol while maintaining backwards compatibility with existing LSP plugins.
 
 ### The future of Code Intelligence
 

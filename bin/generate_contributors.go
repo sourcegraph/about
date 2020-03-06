@@ -50,11 +50,12 @@ func main() {
 	//
 	// TODO: Replace with API call as part of the running of this script
 	sourcegraphers := map[string]string{
+		"aileenrose":      "",
 		"attfarhan":       "",
 		"beyang":          "",
 		"bot":             "",
-		"chrismwendt":     "",
 		"christinaforney": "",
+		"creachadair":     "",
 		"dadlerj":         "",
 		"efritz":          "",
 		"eseliger":        "",

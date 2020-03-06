@@ -35,9 +35,9 @@ Here is a strategy for handling this question live (for simplicity, this assumes
 
 > Yes, see repository permissions documentation (https://docs.sourcegraph.com/admin/repo/permissions).
 
-## Why should I pay for Sourcegraph and not just use the open-source version?
+## Why should I pay for Sourcegraph and not just use the open source version?
 
-Here's a comprehensive answer that you can trim down based on the prospective customer's specific needs. It assumes that their developers are already using Sourcegraph internally because it's extremely rare that organizations begin by using the open-source version (this question usually comes up at the end of a trial).
+Here's a comprehensive answer that you can trim down based on the prospective customer's specific needs. It assumes that their developers are already using Sourcegraph internally because it's extremely rare that organizations begin by using the open source version (this question usually comes up at the end of a trial).
 
 > You're using Sourcegraph to accelerate your organization's software development. Based on the usage levels and survey results you've shared with us, Sourcegraph is living up to that promise. That means your developers are frequently going to Sourcegraph to understand your organization's code, fix critical problems, and make large-scale refactors.
 >
@@ -49,7 +49,7 @@ Here's a comprehensive answer that you can trim down based on the prospective cu
 > - Single sign-on (SSO) user authentication (see [docs](https://docs.sourcegraph.com/admin/auth)). This makes it so all of your developers can easily and securely access Sourcegraph with central account provisioning (e.g., ensuring you don't forget to deactivate someone's Sourcegraph account when they are no longer employed).
 > - High-scale and high-availability cluster deployment (see [docs](https://docs.sourcegraph.com/admin/install/cluster)).
 > - Technical support. Your developers already rely on Sourcegraph, and a day of reduced productivity if Sourcegraph goes down costs you far more than the price of the paid tiers.
-> - Ease and security of official builds. If you run the open-source version of Sourcegraph, you'll need to build the Docker images on your own, which requires writing and maintaining your own build scripts and tracking our release calendar. Using the official builds saves you the hassle and ensures you'll have regular updates available (and immediate updates when a critical security issue is discovered in Sourcegraph or any other related infrastructure, such as OpenSSL or PostgreSQL).
+> - Ease and security of official builds. If you run the open source version of Sourcegraph, you'll need to build the Docker images on your own, which requires writing and maintaining your own build scripts and tracking our release calendar. Using the official builds saves you the hassle and ensures you'll have regular updates available (and immediate updates when a critical security issue is discovered in Sourcegraph or any other related infrastructure, such as OpenSSL or PostgreSQL).
 
 ## How hard is it to set up and maintain Sourcegraph in my organization?
 
@@ -70,6 +70,18 @@ Usually this question means the person has the following concerns:
 Here is an answer that addresses all of these concerns. You can tailor it to address the person's specific concerns.
 
 > [Sourcegraph is an application](../marketing/messaging.md#sourcegraph-is-an-a-application) that developers use primarily from their web browser for universal code search. It integrates with your existing repositories, code hosts, code review tools, editors, and other developer tools to give your developers a single place to discover and understand code and make large-scale changes. You can [set up Sourcegraph](https://docs.sourcegraph.com/#quickstart) and start seeing value in 5 minutes.
+
+## What's the difference between Sourcegraph and Elasticsearch?
+
+[Elastic](https://www.elastic.co/) is an enterprise software company that produces [Elasticsearch](https://www.elastic.co/elasticsearch), which is a low-level search engine that other applications can use to provide search functionality. Elasticsearch is not an end-user application; it must be integrated into another application. Because it has a generally good reputation for general-purpose search, many end-user applications that rely on Elasticsearch for search make that fact public (even though it's not necessary or common for applications to tell users all the other underlying technologies they use).
+
+The built-in (non-universal) code search functionality of many code hosts (including GitHub, GitLab, and Bitbucket Server) uses Elasticsearch under the hood.
+
+> Unlike Elasticsearch, Sourcegraph is a universal code search application that you can use directly. Sourcegraph connects directly to all of your code hosts, syncs and indexes repositories, and gives you an easy, powerful search and code navigation UI.
+>
+> Elasticsearch is not an end-user product. It's an underlying backend service that provides low-level indexing and query APIs to your own applications, but you need to build the UI, syncing, analysis, deployment, etc., yourself. It's also built for general purpose document search, not code search.
+>
+> We initially considered having Sourcegraph use Elasticsearch under the hood. But we decided to build our own search that is optimized for code, because code is a very special kind of data with meaningful structure, history, and (of course) punctuation and special characters that Elasticsearch was not built to handle.
 
 ## Needs answer
 
@@ -94,6 +106,6 @@ Here is an answer that addresses all of these concerns. You can tailor it to add
 - Do you support negative regex look arounds?
 - Can Sourcegraph search within our code review comments?
 - Does Sourcegraph have a Slack integration for notifications from Saved Searches?
-- When should I expect Sourcegraph Automation to be available? Can I access the feature set today?
+- When should I expect Sourcegraph code change management campaigns to be available? Can I access the feature set today?
 - Why is Sourcegraph more expensive than GitHub Enterprise / Stack Overflow / Slack / Asana / JIRA licenses?
 - Can you break down your pricing fees for managed instances?

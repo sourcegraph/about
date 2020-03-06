@@ -5,7 +5,8 @@ Welcome to Sourcegraph! This document will guide you through engineering specifi
 ## Manager checklist
 
 - Grant access to necessary services.
-  - [Sourcegraph organization on GitHub](https://github.com/sourcegraph/people)
+  - [Sourcegraph organization on GitHub](https://github.com/orgs/sourcegraph/people)
+  - [LSIF organization on GitHub](https://github.com/orgs/lsif/people) (optional; recommended for Code Intelligence team members)
   - [Buildkite](https://buildkite.com/organizations/sourcegraph/users/new)
   - Google Cloud Platform ([prod](https://console.cloud.google.com/iam-admin/iam?project=sourcegraph-dev), [test](https://console.cloud.google.com/iam-admin/iam?project=sourcegraph-server))
   - [Opsgenie](https://sourcegraph.app.opsgenie.com/settings/users/)
@@ -28,4 +29,4 @@ Welcome to Sourcegraph! This document will guide you through engineering specifi
 - Make yourself an admin on sourcegraph.com and sgdev.org by updating the database directly (this is not what a normal user would do, but doing it this way will expose you to useful knowledge). Relevant documentation:
   - [Our deployments](deployments.md)
   - [How do I access the Sourcegraph database?](https://docs.sourcegraph.com/admin/faq#how-do-i-access-the-sourcegraph-database)
-- Start working on the started tasks that your manager has assigned you.
+- Start working on the starter tasks that your manager has assigned you.

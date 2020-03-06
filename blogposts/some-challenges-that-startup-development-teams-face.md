@@ -36,7 +36,7 @@ The biggest problem people had with Git (the most widely used version control sy
 
 Keeping all of your projects in the same repository has many downsides, though. We heard horror stories about how long basic Git operations take when Git is operating “at scale” on very large repositories. Facebook uses Mercurial, and they addressed this issue by [modifying it so that it would work on their large code base](https://code.facebook.com/posts/218678814984400/scaling-mercurial-at-facebook/).
 
-Placing your projects in one repository also complicates development on company-sponsored free and open-source projects. There's tension between making development as open possible and integrating an open source project with a company’s internal tools and processes. Some teams keep open-source projects separate and see synching issues as a price they have to pay for a healthy open source community. Alternatively, some companies do open source development internally and push it out to the community, while others take a hybrid approach of the two styles. There are merits to each approach and it’s important to make the decision with the best interests of the company and its free/open source community in mind.
+Placing your projects in one repository also complicates development on company-sponsored free and open source projects. There's tension between making development as open possible and integrating an open source project with a company’s internal tools and processes. Some teams keep open source projects separate and see synching issues as a price they have to pay for a healthy open source community. Alternatively, some companies do open source development internally and push it out to the community, while others take a hybrid approach of the two styles. There are merits to each approach and it’s important to make the decision with the best interests of the company and its free/open source community in mind.
 
 ### 3\. Code review practices are fragmented and tooling is immature.
 
@@ -44,7 +44,7 @@ We discussed different processes for code review and were actually surprised to 
 
 #### Patch- and trunk-based code review
 
-Those of you who work on Go will be familiar with the patch or trunk model, which Gerrit uses. The patch model is where reviewers examine diffs, not branches. The trunk model is where contributors make small, frequent commits to the master branch, and each commit is code reviewed. Together, these work well at large companies like Google or Facebook because the sheer size of the codebase makes merging a nightmare, and is traditional to free and open-source projects like the Linux kernel.
+Those of you who work on Go will be familiar with the patch or trunk model, which Gerrit uses. The patch model is where reviewers examine diffs, not branches. The trunk model is where contributors make small, frequent commits to the master branch, and each commit is code reviewed. Together, these work well at large companies like Google or Facebook because the sheer size of the codebase makes merging a nightmare, and is traditional to free and open source projects like the Linux kernel.
 
 #### Branch-based code review (such as GitHub’s pull requests)
 

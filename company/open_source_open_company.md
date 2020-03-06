@@ -14,7 +14,7 @@ You might not realize it, but the products you use every day are not just open s
 
 This means that principles, strategies, and processes for internal company functions are publicly documented, including for recruiting, marketing, pricing, and sales—not just engineering and product.
 
-Being an open company is important because being an open product isn't enough to gain the trust of developers. You need to do the same for other important parts of the company that affect the product, the open-source project, and the users. See [GitLab's pricing strategy](https://about.gitlab.com/handbook/product/pricing/) in their public handbook for a great example of this.
+Being an open company is important because being an open product isn't enough to gain the trust of developers. You need to do the same for other important parts of the company that affect the product, the open source project, and the users. See [GitLab's pricing strategy](https://about.gitlab.com/handbook/product/pricing/) in their public handbook for a great example of this.
 
 Open company doesn't mean that everything is public; only principles, strategies, and processes related to our internal functions. We're proud to be sharing more about how we run Sourcegraph Inc!
 

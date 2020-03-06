@@ -62,7 +62,7 @@ Juan also discussed a list of use cases for IPFS:
 
 ### Getting involved with IPFS
 
-IPFS is an open-source, MIT-licensed project. You can use the ideas and the implementations for whatever you want. It’s still early, so the implementations are not complete. You should follow [@juanbenet](https://twitter.com/juanbenet) and check out the IPFS spec and open-source implementations. Watch or star these repositories on GitHub to follow along:
+IPFS is an open source, MIT-licensed project. You can use the ideas and the implementations for whatever you want. It’s still early, so the implementations are not complete. You should follow [@juanbenet](https://twitter.com/juanbenet) and check out the IPFS spec and open source implementations. Watch or star these repositories on GitHub to follow along:
 
 *   [ipfs protocol](https://github.com/jbenet/ipfs)
 *   [go-ipfs](https://github.com/jbenet/go-ipfs)

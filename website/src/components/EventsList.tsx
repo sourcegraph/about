@@ -8,7 +8,7 @@ class Conferences extends React.Component {
 				
 				{EventData.Conference.map((eventDetail, index)=> {
 				 return ( 					
-					<div class="card">
+					<div class="card col-sm-3">
 					    <img class="card-img-top img-fluid" src={eventDetail.eventImage} />
 					    <div class="card-body">
 					    	<h5>{eventDetail.eventTitle}</h5>

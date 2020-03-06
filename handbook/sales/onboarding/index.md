@@ -2,6 +2,8 @@
 
 Welcome to Sourcegraph! As a member of the sales team, you represent us and our values to customers, and you bring back dollars and feedback to help us grow.
 
+See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFPCBtcyWQSJtorUz20zI5LJGMTpdmmTomE9ndEM/edit).
+
 ## Week 1
 
 - Get familiar with the internal tools we use
@@ -23,6 +25,8 @@ Welcome to Sourcegraph! As a member of the sales team, you represent us and our 
   - [General onboarding steps](../../people-ops/onboarding/index.md#for-all-new-teammates)
   - [Sourcegraph handbook](../../index.md) intro
   - GitHub account setup and tutorial
+  - HubSpot account setup
+    - Ensure emails are logged in HubSpot
 - [CEO](../../ceo/index.md)
   - Vision
   - [Values](../../../company/values.md)
@@ -36,7 +40,7 @@ Welcome to Sourcegraph! As a member of the sales team, you represent us and our 
 - Read/watch
   - Entire [about.sourcegraph.com](https://about.sourcegraph.com) site
   - Sourcegraph [glossary](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/enterprise/docs/glossary.md)
-  - [Videos of Automation](https://about.sourcegraph.com/product/automation), currently in private beta
+  - [Videos of campaigns](https://about.sourcegraph.com/product/code-change-management), currently in private beta
   - Case studies: [Yelp](https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html), [Quantcast](https://about.sourcegraph.com/case-studies/quantcast/) and [Thorn](https://about.sourcegraph.com/case-studies/we-are-thorn/)
   - Latest Sourcegraph release blog post (on our [blog](https://about.sourcegraph.com/blog))
 
@@ -58,7 +62,7 @@ Welcome to Sourcegraph! As a member of the sales team, you represent us and our 
   - HubSpot overview
   - Current customers and pipeline/goals overview
      - [Q4 model](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=665660264)
-     - [Past quarterly net new ARR](https://docs.google.com/presentation/d/1I2nhK_2uz0o8jiBqajzdTPHcy9Hnl9n1LROo1ZlJW-Q/edit#slide=id.g41cb4d21db_0_0)
+     - [Past quarterly IARR](https://docs.google.com/presentation/d/1I2nhK_2uz0o8jiBqajzdTPHcy9Hnl9n1LROo1ZlJW-Q/edit#slide=id.g41cb4d21db_0_0)
   - Value props and pitches for various [personas](../../product/personas.md)
   - FAQ and common objections
 

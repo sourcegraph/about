@@ -118,7 +118,7 @@ func TestAdd(t *testing.T) {
 }
 ```
 
-The first place Mitchell saw table-driven tests was in the Go standard library. A lot of these patterns come from the standard library or other popular Go open-source libraries.
+The first place Mitchell saw table-driven tests was in the Go standard library. A lot of these patterns come from the standard library or other popular Go open source libraries.
 
 ## Test fixtures
 

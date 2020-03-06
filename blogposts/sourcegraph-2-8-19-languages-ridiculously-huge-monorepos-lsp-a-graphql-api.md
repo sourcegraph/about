@@ -115,7 +115,7 @@ TODO
 - You can hover over the plug icon in the top right to see the code intelligence status for the current file (to see what features are supported, such as hovers, definitions, references, and implementations).
 - Error messages (such as compiler errors) from the language server are displayed in the hover, so you know the reason if something isn't working.
 
-Try the new code view and hover on an [example open-source file](https://sourcegraph.com/github.com/golang/oauth2/-/blob/clientcredentials/clientcredentials.go#L58).
+Try the new code view and hover on an [example open source file](https://sourcegraph.com/github.com/golang/oauth2/-/blob/clientcredentials/clientcredentials.go#L58).
 
 <img src="//images.ctfassets.net/le3mxztn6yoo/48HJWiBrpe0Kkq2y6wumqo/93f5a4061318ebcca9eec6f31af33c34/Screenshot_from_2018-05-21_17-01-43.png" style="max-width:400px;border:solid 1px #ccc"/>
 

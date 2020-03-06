@@ -14,19 +14,19 @@ published: true
 
 Today, we’re announcing a new edition of [Sourcegraph](https://sourcegraph.com) that makes it even faster and easier to answer your everyday programming questions. If you code in Go, [check it out now](https://sourcegraph.com/github.com/golang/go/-/blob/src/net/http/request.go#L690). If you use another language, [sign up for the beta](https://sourcegraph.com/beta) — we’ll have news for you in the next couple of weeks!
 
-If you’re new to Sourcegraph, you can think of it as an online code browser that feels like your favorite IDE. But instead of your local workspace, we’ve already indexed all the Go code in the world. It makes figuring out how to use libraries and understanding existing code a breeze. Here’s what some well-known members of the Go open-source community are saying:
+If you’re new to Sourcegraph, you can think of it as an online code browser that feels like your favorite IDE. But instead of your local workspace, we’ve already indexed all the Go code in the world. It makes figuring out how to use libraries and understanding existing code a breeze. Here’s what some well-known members of the Go open source community are saying:
 
 > “Sourcegraph is so intuitive that you soon forget you have it, but so useful that if you use GitHub without it, it just feels like all your favorite features are missing.” — [**Francesc Campoy**](https://twitter.com/francesc), [developer advocate](https://talks.golang.org/2016/state-of-go.slide#1) on the Go core team
 
 > “I use Sourcegraph to become more familiar and productive with new libraries really fast. It makes reading code a breeze.” — [**Matt Holt**](https://twitter.com/mholt6), author of the popular [Caddy web server](https://caddyserver.com/)
 
-> “Sourcegraph’s Chrome extension has become indispensable for browsing open-source code.” — [**Alan Shreve**](https://twitter.com/inconshreveable), creator of [ngrok](https://ngrok.com/) and [equinox.io](https://equinox.io/)
+> “Sourcegraph’s Chrome extension has become indispensable for browsing open source code.” — [**Alan Shreve**](https://twitter.com/inconshreveable), creator of [ngrok](https://ngrok.com/) and [equinox.io](https://equinox.io/)
 
 And today, it gets even better.
 
 [![](https://cdn-images-1.medium.com/max/1000/1*2z6i2J80rgW2he1LkNECBg.png)](https://sourcegraph.com/github.com/golang/go/-/blob/src/net/http/request.go#L690)The new Sourcegraph looks fast and is fast.
 
-We’ve listened to the feedback of thousands of developers using Sourcegraph for both open-source and private code. Sourcegraph is now smarter, faster, and re-designed from the ground up to address the most common pains of reading and understanding code. How exactly?
+We’ve listened to the feedback of thousands of developers using Sourcegraph for both open source and private code. Sourcegraph is now smarter, faster, and re-designed from the ground up to address the most common pains of reading and understanding code. How exactly?
 
 *   **Fast code browsing**: Jump-to-def, find-refs, and symbol search are now super fast and reliable—still without any configuration required.
 *   **A redesigned UI** targets the most common tasks and puts every function, class, and important variable just a few keystrokes away.
@@ -56,25 +56,25 @@ There's a new quick-launch bar that lets you jump to any symbol or file faster t
 
 Jump to any symbol or file. Activate it with the “/” hotkey.
 
-The same quick-launch bar lets you jump to any repository, so you can quickly hop across different codebases. This is perfect for teams that version microservices in separate repositories or depend on a lot of open-source libraries.
+The same quick-launch bar lets you jump to any repository, so you can quickly hop across different codebases. This is perfect for teams that version microservices in separate repositories or depend on a lot of open source libraries.
 
 ![1*wpxr W1t4Sc9bypF0nr6yg](//images.contentful.com/le3mxztn6yoo/6wM2TW2kRa6SUSmouqgk86/0750c5b9ada72248f3171d40d8fc26a3/1_wpxr_W1t4Sc9bypF0nr6yg.png)
 
 Jump to any repository. Activate it with the “/” hotkey."
 
-You can [sign up and auth your private code](https://sourcegraph.com/join) or try it out on any of these open-source repositories:
+You can [sign up and auth your private code](https://sourcegraph.com/join) or try it out on any of these open source repositories:
 
 *   [Go standard library](https://sourcegraph.com/github.com/golang/go/-/blob/src/fmt/print.go#L189)
-*   [Docker](https://sourcegraph.com/github.com/docker/docker/-/blob/cmd/docker/docker.go#L68): the open-source container engine
+*   [Docker](https://sourcegraph.com/github.com/docker/docker/-/blob/cmd/docker/docker.go#L68): the open source container engine
 *   [Caddy web server](https://sourcegraph.com/github.com/mholt/caddy/-/blob/caddy.go#L773:6): HTTP/2 web server with automatic HTTPS
-*   [Gogs](https://sourcegraph.com/github.com/gogits/gogs/-/blob/models/repo.go#L153:6): open-source Git repository host
+*   [Gogs](https://sourcegraph.com/github.com/gogits/gogs/-/blob/models/repo.go#L153:6): open source Git repository host
 *   [Syncthing](https://sourcegraph.com/github.com/syncthing/syncthing/-/blob/cmd/syncthing/main.go#L283): continuous file synchronization
 *   [Grafana](https://sourcegraph.com/github.com/grafana/grafana/-/blob/pkg/cmd/grafana-cli/main.go): gorgeous metric vizualizations and dashboards
 *   [Hugo](https://sourcegraph.com/github.com/spf13/hugo/-/blob/main.go#L24): fast and flexible static site generator
 *   [etcd](https://sourcegraph.com/github.com/coreos/etcd/-/blob/etcdserver/v3_server.go#L145): distributed, reliable key-value store
 *   [InfluxDB](https://sourcegraph.com/github.com/influxdata/influxdb/-/blob/cmd/influx/main.go#L36): timeseries database
 *   [Cayley](https://sourcegraph.com/github.com/cayleygraph/cayley/-/blob/cmd/cayley/cayley.go#L155): graph database based on Google’s Knowledge Graph
-*   [Drone CI](https://sourcegraph.com/github.com/drone/drone/-/blob/client/client.go#L11): open-source CI platform
+*   [Drone CI](https://sourcegraph.com/github.com/drone/drone/-/blob/client/client.go#L11): open source CI platform
 
 ### Save time, code more
 

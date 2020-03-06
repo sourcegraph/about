@@ -12,11 +12,12 @@ const COLORS = {
 }
 
 export const ContentSection: React.FunctionComponent<{
+    id?: string
     color?: keyof typeof COLORS
     className?: string
     children: React.ReactNode
-}> = ({ color = 'black', className = '', children }) => (
-    <div className={COLORS[color]}>
+}> = ({ id = '', color = 'black', className = '', children }) => (
+    <div id={id} className={COLORS[color]}>
         <section className={`content-section container ${className}`}>{children}</section>
     </div>
 )

@@ -4,7 +4,7 @@ title: Sourcegraph Privacy Policy
 permalink: privacy
 ---
 
-Last modified: September 26, 2019
+Last modified: February 21, 2020
 
 Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**) understands that privacy is important to our online visitors to our Sourcegraph.com website and users of our online services (collectively, for the purposes of this Privacy Policy, our **"Website"**), as well as users of our private or self-hosted Sourcegraph instances (collectively with our Website, our **"Service"** or **"Services"**). This Privacy Policy explains how we collect, use, share and protect your personal information that we collect through our Service. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
@@ -18,7 +18,7 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 The Data Controller for Sourcegraph and our Services is:
 
-Sourcegraph, Inc. <br/>142 Minna Street, 2nd Floor, San Francisco, CA 94105
+Sourcegraph, Inc. <br/>981 Mission St, San Francisco, CA 94103 
 
 <span style="color:#f96216;">
 
@@ -52,7 +52,7 @@ The only personal information collected is the email address of the initial Sour
 
 We and our third-party partners may automatically collect certain types of usage information when you visit or use our Website.
 
-- **Cookies**. For instance, when you visit our Website, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the site. A cookie may also convey information to us about how you use the Website (e.g., the pages you view, the links you click, how frequently you access the Website, and other actions you take on the Website), and allow us to track your usage of the Website over time.
+- **Cookies**. When visiting our website, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the site. A cookie may also convey information to us about how you use the Website (e.g., the pages you view, the links you click, how frequently you access the Website, and other actions you take on the Website), and allow us to track your usage of the Website over time.  
 
 - **Log file information**. We may collect log file information about your browser or mobile device each time you access the Website. Log file information may include anonymous information such as your web request, Internet Protocol ("IP") address, browser type, information about your mobile device, referring / exit pages and URLs, number of clicks and how you interact with links on the Website, domain names, landing pages, pages viewed, and other such information.
 
@@ -70,6 +70,8 @@ We may use the data collected through cookies, log file, device identifiers, loc
 1. monitor aggregate metrics such as total number of visitors, traffic, usage, and demographic patterns on our website and our Service;
 1. diagnose or fix technology problems; and
 1. otherwise to plan for and enhance our service
+
+For more information on what cookies are used, visit our <a href="https://about.sourcegraph.com/privacy/cookie-policy">Cookie Policy</a>.
 
 ### Third-party services and data processors
 

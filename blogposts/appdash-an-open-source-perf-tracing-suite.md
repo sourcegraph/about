@@ -1,5 +1,5 @@
 ---
-title: 'Appdash, an open-source perf tracing suite'
+title: 'Appdash, an open source perf tracing suite'
 author: 'Quinn Slack'
 publishDate: 2016-05-30T00:00-07:00
 tags: [
@@ -16,7 +16,7 @@ Every developer knows they should instrument their app to identify perf bottlene
 
 ![0*jXkIPsoJBjXY80cs](//images.contentful.com/le3mxztn6yoo/2cqIONdy7Ccumacy4eCC8W/bf4a730c417954a3c7a30394cd8ddd51/0_jXkIPsoJBjXY80cs.png)
 
-Today we’re announcing [Appdash, an open-source multi-language distributed performance and tracing suite](https://github.com/sourcegraph/appdash) that makes tracing the performance of web apps a breeze. Appdash is used to monitor [Sourcegraph](https://sourcegraph.com/), which semantically indexes and serves the code of over a million repositories. It is currently usable from applications written in Go and Python. We hope to add support for more languages in the future with help from the community. ([Submit an issue](https://github.com/sourcegraph/appdash/issues) if you’d like to add support for your language of choice!)
+Today we’re announcing [Appdash, an open source multi-language distributed performance and tracing suite](https://github.com/sourcegraph/appdash) that makes tracing the performance of web apps a breeze. Appdash is used to monitor [Sourcegraph](https://sourcegraph.com/), which semantically indexes and serves the code of over a million repositories. It is currently usable from applications written in Go and Python. We hope to add support for more languages in the future with help from the community. ([Submit an issue](https://github.com/sourcegraph/appdash/issues) if you’d like to add support for your language of choice!)
 
 There are two primary parts to Appdash:
 
@@ -94,7 +94,7 @@ Now, a user who is experiencing performance issues with our site can directly gi
 
 ### Start tracing today!
 
-Appdash is completely open-source. You can [view the source here](https://github.com/sourcegraph/appdash), along with the [source of the example web app that uses it](https://sourcegraph.com/github.com/sourcegraph/appdash/-/blob/examples/cmd/webapp/main.go).
+Appdash is completely open source. You can [view the source here](https://github.com/sourcegraph/appdash), along with the [source of the example web app that uses it](https://sourcegraph.com/github.com/sourcegraph/appdash/-/blob/examples/cmd/webapp/main.go).
 
 Appdash is an incredibly versatile and easy-to-deploy performance and debug tracing suite for web applications. It supports Go and Python, and we’d love to add more languages with help from the community. It’s being used today in production applications at Sourcegraph, and we hope you’ll find it useful for your own web app.
 

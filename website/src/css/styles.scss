@@ -201,10 +201,9 @@ img.icon-inline,
 code {
     background-color: #f2f4f8;
     display: inline-block;
-    padding: .1rem .3rem;
+    padding: 0.1rem 0.3rem;
     font-size: 0.9em;
 }
-
 
 pre {
     code {
@@ -225,6 +224,7 @@ pre {
 @import 'components/product/UseCasesTable';
 @import 'components/Header';
 @import 'components/Footer';
+@import 'components/Cookiebot';
 @import 'components/Events';
 @import 'components/Tweets';
 @import 'components/PricingTable';
@@ -239,13 +239,15 @@ pre {
 @import 'pages/content';
 @import 'pages/index';
 @import 'pages/jobs';
+@import 'pages/landing-page';
 @import 'pages/news';
 @import 'pages/plan';
 @import 'pages/pricing';
 @import 'pages/product/code-search-navigation';
-@import 'pages/product/automation';
+@import 'pages/product/code-change-management';
 @import 'pages/sales';
 @import 'pages/uninstall';
+@import 'pages/universal-code-search';
 @import 'components/PricingPlan';
 @import 'components/Vimeo';
 @import 'components/PrismTheme';

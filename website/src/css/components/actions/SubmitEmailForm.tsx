@@ -1,5 +1,4 @@
 import React from 'react'
-import { eventLogger } from '../../../EventLogger'
 
 export const SubmitEmailForm: React.FunctionComponent<{
     formAction: string
@@ -11,9 +10,6 @@ export const SubmitEmailForm: React.FunctionComponent<{
             className={`form form-inline ${className}`}
             action={formAction}
             method="get"
-            onSubmit={() => {
-                eventLogger.trackRequestDemoActionFormSubmitted()
-            }}
         >
             <input
                 className="form-control mr-md-2 mb-2"

@@ -7,6 +7,7 @@
 - [Code reviews](code_reviews.md)
 - [Go style guide](go_style_guide.md)
 - [Testing](testing.md)
+- [Product documentation](product_documentation.md)
 - [Continuous releasability](continuous_releasability.md)
 - [Commit message guidelines](commit_messages.md)
 - [Incidents](incidents.md)
@@ -15,6 +16,9 @@
 - [Deployments](deployments.md)
 - [On-call](on_call/index.md)
 - [Prometheus](prometheus.md)
+- [Adding ping data](adding_ping_data.md)
+- [Adding buildkite secrets](adding_buildkite_secrets.md)
+- [Campaigns](campaigns.md)
 
 ## [Roles and responsibilities](roles.md)
 

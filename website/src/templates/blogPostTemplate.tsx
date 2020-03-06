@@ -3,8 +3,9 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
-import { eventLogger } from '../EventLogger'
 import { BLOGS } from '../pages/blog'
+import { Jumbotron } from '../components/Jumbotron'
+import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 
 // Question: Should these be local to the render function since they are not used elsewhere?
 interface AuthorProps {
@@ -17,35 +18,21 @@ export default class BlogPostTemplate extends React.Component<any, any> {
         super(props)
     }
 
-    private logSelectDockercommand(): void {
-        if (
-            document.getSelection().baseNode &&
-            document.getSelection().baseNode.parentNode &&
-            document.getSelection().baseNode.parentNode.nodeName === 'CODE' &&
-            document.getSelection().baseNode.parentNode.textContent.includes('docker run')
-        ) {
-            eventLogger.trackInstallServerCommandHighlighted('blog')
-        }
-    }
-
     public componentDidMount(): void {
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none')
-            document.addEventListener('mouseup', this.logSelectDockercommand)
         }
     }
-    // Question: Shuold this be a Function Component?
+    // Question: Should this be a Function Component?
     public Author(props: AuthorProps): Element {
         let element: any
 
         if (props.authorUrl) {
             element = (
-                <p>
-                    Written by <a href={props.authorUrl}>{props.author}</a>
-                </p>
+             <span>By <a href={props.authorUrl}>{props.author}</a></span>
             )
         } else {
-            element = <p>Written by {props.author}</p>
+            element = <span>By {props.author}</span>
         }
 
         return element
@@ -54,6 +41,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const md = this.props.data.markdownRemark
         const title = md.frontmatter.title
+        const publishDate = md.frontmatter.publishDate
         let slug = md.slug
         const fileName = md.fileAbsolutePath.split('/').pop()
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
@@ -93,7 +81,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
-                                <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} />
+                                <div className="blog__posts--post-byline">
+				    <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} /> on {publishDate}
+				</div>
                             </section>
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
@@ -119,6 +109,15 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                         </div>
                     </div>
                 </div>
+                <Jumbotron
+                color="purple"
+                className="py-4"
+                logomark={false}
+                title="Try Sourcegraph now"
+                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
+            >
+                <GetSourcegraphNowActions />
+            </Jumbotron>
             </Layout>
         )
     }

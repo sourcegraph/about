@@ -23,7 +23,7 @@ _Update (June 22, 2016): Added support for pull requests and diffs._
 The [Sourcegraph Chrome extension](https://docs.sourcegraph.com/integration/browser_extension) keeps you in flow while coding, with:
 
 1.  **Go-to-definition:** When you’re browsing files or reviewing pull requests on GitHub, you can use the extension to click on anything in your code to jump to its definition, or hover to get documentation tooltips.
-2.  **Find usages:** See examples of how a function or type is used across your company’s code as well as open-source repositories on GitHub.
+2.  **Find usages:** See examples of how a function or type is used across your company’s code as well as open source repositories on GitHub.
 
 ![1*DZhwRJxGyZF7T1G0m--lfA](//images.contentful.com/le3mxztn6yoo/2THS1dp1BeuOcCUu42QqGO/b513955b9070cc33abc348d9de2fd3d3/1_DZhwRJxGyZF7T1G0m--lfA.png)
 

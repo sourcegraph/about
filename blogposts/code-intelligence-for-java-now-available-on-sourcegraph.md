@@ -16,7 +16,7 @@ Today, we announce general availability for Java on Sourcegraph. If you write Ja
 
 *   Explore code without losing your place in your editor
 *   Get IDE-like functionality to your code review tool
-*   Learn from usage examples drawn from across the open-source world
+*   Learn from usage examples drawn from across the open source world
 *   Have more efficient code discussions by linking directly to the code in question
 *   Make every piece of code easily searchable and accessible for every member of your team
 
@@ -63,9 +63,9 @@ Using Sourcegraph, I was easily able to identify the author of a piece of code a
 
 #### Link together your team’s code
 
-Do you rely heavily on open-source libraries? Or does your team have multiple microservices versioned in separate repositories? Sourcegraph lets you trace state changes and control flow logic across repository boundaries:
+Do you rely heavily on open source libraries? Or does your team have multiple microservices versioned in separate repositories? Sourcegraph lets you trace state changes and control flow logic across repository boundaries:
 
-[![](https://cdn-images-1.medium.com/max/1000/1*utBisaCtaS1qtRPtHwtXpw.png)](https://sourcegraph.com/github.com/Sberned/kafka-logback@582266a6ad00fd878315f4f3ff983900f04e7c1f/-/blob/src/test/java/ru/sberned/kafkalogback/KafkaAppenderTest.java#L118:21-118:29)Sourcegraph’s jump-to-definition works even if the definition is in a separate repository or an open-source library. Because it’s all on the web, there's no need to check out code to your local machine.
+[![](https://cdn-images-1.medium.com/max/1000/1*utBisaCtaS1qtRPtHwtXpw.png)](https://sourcegraph.com/github.com/Sberned/kafka-logback@582266a6ad00fd878315f4f3ff983900f04e7c1f/-/blob/src/test/java/ru/sberned/kafkalogback/KafkaAppenderTest.java#L118:21-118:29)Sourcegraph’s jump-to-definition works even if the definition is in a separate repository or an open source library. Because it’s all on the web, there's no need to check out code to your local machine.
 
 #### Supported Java project types
 
@@ -86,7 +86,7 @@ We offer support for additional build systems to enterprise customers. Please em
 
 ### Try it out now
 
-See Sourcegraph in action now on some popular open-source Java projects:
+See Sourcegraph in action now on some popular open source Java projects:
 
 *   [Mockito](https://sourcegraph.com/github.com/mockito/mockito@ccd5e85a0c60e7f3ae10ac86db1e5110966e9d41/-/blob/src/main/java/org/mockito/stubbing/OngoingStubbing.java#L48:24-48:34)
 *   [Butter Knife](https://sourcegraph.com/github.com/JakeWharton/butterknife@acf8957801c66d4aaa75084fc0c5c28ba84d3918/-/blob/butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java#L143:17-143:25)

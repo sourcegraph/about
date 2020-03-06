@@ -46,6 +46,9 @@ export default class NewsPage extends React.Component<any, any> {
                                 <div class="col mt-5 mb-5 ">
                                     <h3>Press releases</h3>
                                      <ul>
+                                        <li><a href="/blog/press-release-sourcegraph-secures-series-b/?ref=news" >Sourcegraph Secures $23 Million Series B Round for Universal Code Search</a> 
+                                        <span class="news__date">March 3, 2020</span>
+                                        </li>                                
                                         <li><a href="/blog/press-release-sourcegraph-announces-new-gitlab-native-integration/?ref=news" >New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum</a> 
                                         <span class="news__date">November 12, 2019</span>
                                         </li>
@@ -60,6 +63,76 @@ export default class NewsPage extends React.Component<any, any> {
                                     <h3>News</h3>
                                     <h5>2020</h5>
                                     <div class="container-fluid">
+                                      <div class="row mb-4">
+                                        <div class="col-sm-4 col-lg-2 text-center">
+                                          <img className="news__image" src="/external-logos/silicon-angle-logo.svg" />
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 align-self-center">
+                                          <p><strong>Silicon Angle</strong> <span class="news__date">March 3, 2020</span><br />
+                                                <a href="https://siliconangle.com/2020/03/03/universal-code-search-startup-sourcegraph-gets-23-million-series-b-funding/" rel="nofollow">Universal code search startup Sourcegraph gets $23 million in funding</a>
+                                            </p>
+                                        </div>
+                                      </div>
+                                      <div class="row mb-4">
+                                        <div class="col-sm-4 col-lg-2 text-center">
+                                          <img className="news__image" src="/external-logos/zdnet-logo.svg" />
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 align-self-center">
+                                          <p><strong>ZDNet</strong> <span class="news__date">March 3, 2020</span><br />
+                                                <a href="https://www.zdnet.com/article/universal-code-search-gets-a-boost-sourcegraph-secures-23-million-series-b-round-funding/" rel="nofollow">Universal Code Search gets a boost: Sourcegraph secures $23 million Series B Round funding</a>
+                                            </p>
+                                        </div>
+                                      </div>
+                                      <div class="row mb-4">
+                                        <div class="col-sm-4 col-lg-2 text-center">
+                                          <img className="news__image" src="/external-logos/venturebeat-logo.svg" />
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 align-self-center">
+                                          <p><strong>VentureBeat</strong> <span class="news__date">March 3, 2020</span><br />
+                                                <a href="https://venturebeat.com/2020/03/03/sourcegraph-raises-23-million-to-bring-universal-code-search-to-all-developers/" rel="nofollow">Sourcegraph raises $23 million to bring universal code search to all developers</a>
+                                            </p>
+                                        </div>
+                                      </div>
+                                      <div class="row mb-4">
+                                        <div class="col-sm-4 col-lg-2 text-center">
+                                          <img className="news__image" src="/external-logos/insidebigdata-logo.svg" />
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 align-self-center">
+                                          <p><strong>InsideBIGData</strong> <span class="news__date">March 3, 2020</span><br />
+                                                <a href="https://insidebigdata.com/2020/03/03/above-the-trend-line-your-industry-rumor-central-for-3-3-2020/" rel="nofollow">Above the Trend Line” – Your Industry Rumor Central for 3/3/2020</a>
+                                            </p>
+                                        </div>
+                                      </div>
+                                      <div class="row mb-4">
+                                        <div class="col-sm-4 col-lg-2 text-center">
+                                          <img className="news__image" src="/external-logos/kmworld-logo.svg" />
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 align-self-center">
+                                          <p><strong>KMWorld</strong> <span class="news__date">March 3, 2020</span><br />
+                                                <a href="https://www.kmworld.com/Articles/News/News/Sourcegraph-receives-%2423-million-in-funding-round-to-expand-139537.aspx" rel="nofollow">Sourcegraph receives $23 million in funding round to expand</a>
+                                            </p>
+                                        </div>
+                                      </div>
+                                      <div class="row mb-4">
+                                        <div class="col-sm-4 col-lg-2 text-center">
+                                          <img className="news__image" src="/external-logos/sd-times-sq-logo.svg" />
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 align-self-center">
+                                          <p><strong>SD Times</strong> <span class="news__date">March 3, 2020</span><br />
+                                                <a href="https://sdtimes.com/n-software/sd-times-news-digest-babylon-js-4-1-datastax-acquires-apache-cassandra-services-company-waymo-announces-first-external-investment-round/" rel="nofollow">SD Times news digest: Babylon.js 4.1, DataStax acquires Apache Cassandra services company, Waymo announces first external investment round</a>
+                                            </p>
+                                        </div>
+                                      </div>
+                                      <div class="row mb-4">
+                                        <div class="col-sm-4 col-lg-2 text-center">
+                                          <img className="news__image" src="/external-logos/finsmes-logo.svg" />
+                                        </div>
+                                        <div class="col-sm-10 col-lg-10 align-self-center">
+                                          <p><strong>FinSMES</strong> <span class="news__date">March 3, 2020</span><br />
+                                                <a href="http://www.finsmes.com/2020/03/sourcegraph-raises-23m-in-series-b-funding-round.html" rel="nofollow">Sourcegraph Raises $23M in Series B Funding Round</a>
+                                            </p>
+                                        </div>
+                                      </div>
                                       <div class="row mb-4">
                                         <div class="col-sm-4 col-lg-2 text-center">
                                           <img className="news__image" src="/external-logos/infoworld-sq-logo.png" />

@@ -12,10 +12,10 @@ published: true
 
 
 
-There are many benefits to contributing to a popular open-source project like Docker:
+There are many benefits to contributing to a popular open source project like Docker:
 
 *   You earn recognition for improving a project used by many people.
-*   You get to collaborate with other amazingly smart people in the open-source community.
+*   You get to collaborate with other amazingly smart people in the open source community.
 *   You become a better programmer yourself through the process of understanding and improving an important system.
 
 But getting started on a new codebase can be daunting. Docker has many, many lines of code. Fixing even the smallest issue can require reading through a lot of that code and understanding how the pieces all fit together.
@@ -76,4 +76,4 @@ And if you feel up for it, take notes along the way, document your experience, a
 
 One of the misconceptions that often prevents people from getting involved in projects is being daunted by the task of jumping into a large, foreign codebase. We often assume, as programmers, that the hard work lies in _writing code_, but often, it’s reading and understanding other people’s code that is the critical first step. Recognizing that and approaching the task in a principled way, armed with good tools for doing so, will help you conquer the psychological barrier of diving into the code.
 
-So make the leap and [check out Docker’s source today](https://sourcegraph.com/github.com/docker/docker). A vibrant open-source community and codebase awaits you!
+So make the leap and [check out Docker’s source today](https://sourcegraph.com/github.com/docker/docker). A vibrant open source community and codebase awaits you!
