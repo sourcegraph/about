@@ -2,25 +2,26 @@
 // stylelint-disable selector-class-pattern
 // stylelint-disable selector-max-id
 .home {
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/bg-home-mountains-TEST.jpg);
-//   background-repeat: no-repeat;
-//   background-size: 100%;
-
+    &__hero {
+        background-image: url(/bg-home-universe.jpg);
+    	background-repeat: no-repeat;
+        background-size: cover;
+        text-shadow: 2px 2px 4px #000000;
+    }
     &__intro {
         @include media-breakpoint-down(sm) {
-            $margin-y: 2.5rem;
-            margin-top: $margin-y;
-            margin-bottom: $margin-y;
+            $padding-y: 2.5rem;
+            padding-top: $padding-y;
         }
         @include media-breakpoint-only(md) {
-            $margin-y: 5rem;
-            margin-top: $margin-y;
-            margin-bottom: $margin-y;
+            $padding-y: 3.5rem;
+            padding-top: $padding-y;
+            padding-bottom: $padding-y;
         }
         @include media-breakpoint-up(lg) {
-            $margin-y: 4rem;
-            margin-top: $margin-y;
-            margin-bottom: $margin-y;
+            $padding-y: 4rem;
+            padding-top: $padding-y;
+            padding-bottom: $padding-y;
         }
 
         &-header {

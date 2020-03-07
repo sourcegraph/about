@@ -139,6 +139,7 @@ export default ((props: any) => (
         </script>
     </Helmet>
         <div className="home">
+            <div className="home__hero">
             <div className="home__intro container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8 mb-6 mb-lg-0">
@@ -178,6 +179,7 @@ export default ((props: any) => (
                         <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
                     </div>
                 </div>
+            </div>
             </div>
             <div className="bg-white text-dark">
                 <CustomerLogosSection className="py-5" />
