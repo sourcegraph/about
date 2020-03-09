@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
-import News from '../components/NewsList'
 import Layout from '../components/Layout'
+import News from '../components/NewsList'
 
 export default class NewsPage extends React.Component < any, any > {
     constructor(props: any) {
