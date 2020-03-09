@@ -32,7 +32,7 @@ export default class NewsPage extends React.Component < any, any > {
             <div className="news bg-white text-dark">
                 <section>
                     <div>
-                        <ContentSection color="primary" className="hero-section text-center py-5">
+                        <ContentSection color="purple" className="hero-section text-center py-5">
                             <h1>Sourcegraph in the news</h1>
                             <p className="news__head-description">
                                 The latest news and press releases.
