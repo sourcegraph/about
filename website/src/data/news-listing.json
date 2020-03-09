@@ -1,6 +1,13 @@
 {
 	"y2020": [
 		{
+			"newsSource": "The New Stack",
+			"newsTitle": "Universal Code Search: A New Search Tech for the Era of Big Code",
+			"newsDate": "March 9, 2020",
+			"newsLink": "https://thenewstack.io/universal-code-search-a-new-search-tech-for-the-era-of-big-code/",
+			"newsImage": "/external-logos/the-new-stack-logo.png"
+		},
+		{
 			"newsSource": "Pulse 2.0",
 			"newsTitle": "Universal Code Search Company Sourcegraph Raises $23 Million",
 			"newsDate": "March 5, 2020",
