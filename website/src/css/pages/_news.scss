@@ -1,4 +1,7 @@
 .news {
+    &__item {
+        border-bottom: 1px solid #ccc;
+    }
     &__image {
         width: 100%;
         max-width: 150px;
