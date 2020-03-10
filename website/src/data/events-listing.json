@@ -6,13 +6,6 @@
 			"eventLocation":"London, England",
 			"eventLink": "https://www.rxjs.live/",
 			"eventImage": "/external-logos/rxjs-live-london-logo.svg"
-		},
-		{
-			"eventTitle":"TSConf EU 2020",
-			"eventDate": "March 31, 2020",
-			"eventLocation":"Linz, Austria",
-			"eventLink": "https://tsconf.eu/",
-			"eventImage": "/external-logos/tsconf-eu-logo.svg"
 		}
 	],
 	"Webinar":[
