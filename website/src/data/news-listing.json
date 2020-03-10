@@ -1,160 +1,160 @@
 {
-	"y2020": [
-		{
-			"newsSource": "The New Stack",
-			"newsTitle": "Universal Code Search: A New Search Tech for the Era of Big Code",
-			"newsDate": "March 9, 2020",
-			"newsLink": "https://thenewstack.io/universal-code-search-a-new-search-tech-for-the-era-of-big-code/",
-			"newsImage": "/external-logos/the-new-stack-sq-logo.svg"
-		},
-		{
-			"newsSource": "Pulse 2.0",
-			"newsTitle": "Universal Code Search Company Sourcegraph Raises $23 Million",
-			"newsDate": "March 5, 2020",
-			"newsLink": "https://pulse2.com/sourcegraph-raises-23-million/",
-			"newsImage": "/external-logos/pulse2.0-logo.png"
-		},
-		{
-			"newsSource": "Silicon Valley Business Journal",
-			"newsTitle": "The Funded: 9 startups raise over $450M at midweek in Bay Area",
-			"newsDate": "March 4, 2020",
-			"newsLink": "https://www.bizjournals.com/sanjose/news/2020/03/04/the-funded-9-startups-raise-over-450m-at-midweek.html",
-			"newsImage": "/external-logos/svbj-logo.png"
-		},
-		{
-			"newsSource": "Fortune",
-			"newsTitle": "Term Sheet",
-			"newsDate": "March 4, 2020",
-			"newsLink": "https://fortune.com/2020/03/04/the-bitter-lesson-founders-can-learn-from-edens-acquisition-of-managed-by-q/",
-			"newsImage": "/external-logos/fortune-2016-logo.png"
-		},
-		{
-			"newsSource": "Vator News",
-			"newsTitle": "Daily funding roundup - March 3rd, 2020",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://vator.tv/news/2020-03-03-daily-funding-roundup-march-3rd-2020",
-			"newsImage": "/external-logos/vatortv.svg"
-		},
-		{
-			"newsSource": "Medium",
-			"newsTitle": "Why We Invested in Sourcegraph",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://medium.com/craft-ventures/why-we-invested-in-sourcegraph-5ace28317e3d",
-			"newsImage": "/external-logos/medium-logo.svg"
-		},
-		{
-			"newsSource": "Silicon Angle",
-			"newsTitle": "Universal code search startup Sourcegraph gets $23 million in funding",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://siliconangle.com/2020/03/03/universal-code-search-startup-sourcegraph-gets-23-million-series-b-funding/",
-			"newsImage": "/external-logos/silicon-angle-logo.svg"
-		},
-		{
-			"newsSource": "ZDNet",
-			"newsTitle": "Universal Code Search gets a boost: Sourcegraph secures $23 million Series B Round funding",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://www.zdnet.com/article/universal-code-search-gets-a-boost-sourcegraph-secures-23-million-series-b-round-funding/",
-			"newsImage": "/external-logos/zdnet-logo.svg"
-		},
-		{
-			"newsSource": "VentureBeat",
-			"newsTitle": "Sourcegraph raises $23 million to bring universal code search to all developers",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://venturebeat.com/2020/03/03/sourcegraph-raises-23-million-to-bring-universal-code-search-to-all-developers/",
-			"newsImage": "/external-logos/venturebeat-logo.svg"
-		},
-		{
-			"newsSource": "InsideBIGData",
-			"newsTitle": "Above the Trend Line” – Your Industry Rumor Central for 3/3/2020",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://insidebigdata.com/2020/03/03/above-the-trend-line-your-industry-rumor-central-for-3-3-2020/",
-			"newsImage": "/external-logos/insidebigdata-logo.svg"
-		},
-		{
-			"newsSource": "KMWorld",
-			"newsTitle": "Sourcegraph receives $23 million in funding round to expand",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://www.kmworld.com/Articles/News/News/Sourcegraph-receives-%2423-million-in-funding-round-to-expand-139537.aspx",
-			"newsImage": "/external-logos/kmworld-logo.svg"
-		},
-		{
-			"newsSource": "SD Times",
-			"newsTitle": "SD Times news digest: Babylon.js 4.1, DataStax acquires Apache Cassandra services company, Waymo announces first external investment round",
-			"newsDate": "March 3, 2020",
-			"newsLink": "https://sdtimes.com/n-software/sd-times-news-digest-babylon-js-4-1-datastax-acquires-apache-cassandra-services-company-waymo-announces-first-external-investment-round/",
-			"newsImage": "/external-logos/sd-times-sq-logo.svg"
-		},
-		{
-			"newsSource": "FinSMES",
-			"newsTitle": "Sourcegraph raises $23 million to bring universal code search to all developers",
-			"newsDate": "March 3, 2020",
-			"newsLink": "http://www.finsmes.com/2020/03/sourcegraph-raises-23m-in-series-b-funding-round.html",
-			"newsImage": "/external-logos/finsmes-logo.svg"
-		},
-		{
-			"newsSource": "InfoWorld",
-			"newsTitle": "Sourcegraph: Universal code search and intelligence",
-			"newsDate": "January 15, 2020",
-			"newsLink": "https://www.infoworld.com/article/3514213/sourcegraph-universal-code-search-and-intelligence.html",
-			"newsImage": "/external-logos/infoworld-sq-logo.png"
-		}
-	],
-	"y2019":[
-		{
-			"newsSource": "Tech Republic",
-			"newsTitle": "Java and JavaScript dominated software development in the 2010s",
-			"newsDate": "December 4, 2019",
-			"newsLink": "https://www.techrepublic.com/article/java-and-javascript-dominated-software-development-in-the-2010s/",
-			"newsImage": "/external-logos/techrepublic-sq-logo.png"
-		},
-		{
-			"newsSource": "Security Boulevard",
-			"newsTitle": "5 Free Developer Tools We’re Grateful For",
-			"newsDate": "November 28, 2019",
-			"newsLink": "https://securityboulevard.com/2019/11/5-free-developer-tools-were-grateful-for/",
-			"newsImage": "/external-logos/security-boulevard-sq-logo.svg"
-		},
-		{
-			"newsSource": "App Developer Magazine",
-			"newsTitle": "Universal source code search engine emerges",
-			"newsDate": "November 28, 2019",
-			"newsLink": "https://appdevelopermagazine.com/universal-source-code-search-engine-emerges/",
-			"newsImage": "/external-logos/app-developer-magazine-sq-logo.svg"
-		},
-		{
-			"newsSource": "DevClass",
-			"newsTitle": "GitLab 12.5 gets multi-cloud rolling",
-			"newsDate": "November 25, 2019",
-			"newsLink": "https://devclass.com/2019/11/25/gitlab-12-5-gets-multi-cloud-rolling/",
-			"newsImage": "/external-logos/devclass-sq-logo.svg"
-		},
-		{
-			"newsSource": "Dataversity",
-			"newsTitle": "Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine",
-			"newsDate": "November 18, 2019",
-			"newsLink": "https://www.dataversity.net/sourcegraph-announces-new-gitlab-native-integration-universal-code-search-engine/",
-			"newsImage": "/external-logos/dataversity-sq-logo.svg"
-		},
-		{
-			"newsSource": "The New Stack",
-			"newsTitle": "This Week in Programming: Dear Tech Conferences, Do Better",
-			"newsDate": "November 15, 2019",
-			"newsLink": "https://thenewstack.io/this-week-in-programming-dear-tech-conferences-do-better/",
-			"newsImage": "/external-logos/the-new-stack-sq-logo.svg"
-		},
-		{
-			"newsSource": "DevClass",
-			"newsTitle": "GitLab gets native with Sourcegraph code review in upcoming release",
-			"newsDate": "November 13, 2019",
-			"newsLink": "https://devclass.com/2019/11/13/gitlab-gets-native-with-sourcegraph-code-review-in-upcoming-release/",
-			"newsImage": "/external-logos/devclass-sq-logo.svg"
-		},
-		{
-			"newsSource": "SD Times",
-			"newsTitle": "SD Times news digest: Codefresh’s CI/CD live debugger, Azure Functions Premium, and SmartBear announces ReadyAPI 3.0",
-			"newsDate": "November 12, 2019",
-			"newsLink": "https://sdtimes.com/softwaredev/sd-times-news-digest-codefreshs-ci-cd-live-debugger-azure-functions-premium-and-smartbear-announces-readyapi-3-0/",
-			"newsImage": "/external-logos/sd-times-sq-logo.svg"
-		}		
-	]
+  "y2020": [
+    {
+      "newsSource": "The New Stack",
+      "newsTitle": "Universal Code Search: A New Search Tech for the Era of Big Code",
+      "newsDate": "March 9, 2020",
+      "newsLink": "https://thenewstack.io/universal-code-search-a-new-search-tech-for-the-era-of-big-code/",
+      "newsImage": "/external-logos/the-new-stack-sq-logo.svg"
+    },
+    {
+      "newsSource": "Pulse 2.0",
+      "newsTitle": "Universal Code Search Company Sourcegraph Raises $23 Million",
+      "newsDate": "March 5, 2020",
+      "newsLink": "https://pulse2.com/sourcegraph-raises-23-million/",
+      "newsImage": "/external-logos/pulse2.0-logo.png"
+    },
+    {
+      "newsSource": "Silicon Valley Business Journal",
+      "newsTitle": "The Funded: 9 startups raise over $450M at midweek in Bay Area",
+      "newsDate": "March 4, 2020",
+      "newsLink": "https://www.bizjournals.com/sanjose/news/2020/03/04/the-funded-9-startups-raise-over-450m-at-midweek.html",
+      "newsImage": "/external-logos/svbj-logo.png"
+    },
+    {
+      "newsSource": "Fortune",
+      "newsTitle": "Term Sheet",
+      "newsDate": "March 4, 2020",
+      "newsLink": "https://fortune.com/2020/03/04/the-bitter-lesson-founders-can-learn-from-edens-acquisition-of-managed-by-q/",
+      "newsImage": "/external-logos/fortune-2016-logo.png"
+    },
+    {
+      "newsSource": "Vator News",
+      "newsTitle": "Daily funding roundup - March 3rd, 2020",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://vator.tv/news/2020-03-03-daily-funding-roundup-march-3rd-2020",
+      "newsImage": "/external-logos/vatortv.svg"
+    },
+    {
+      "newsSource": "Medium",
+      "newsTitle": "Why We Invested in Sourcegraph",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://medium.com/craft-ventures/why-we-invested-in-sourcegraph-5ace28317e3d",
+      "newsImage": "/external-logos/medium-logo.svg"
+    },
+    {
+      "newsSource": "Silicon Angle",
+      "newsTitle": "Universal code search startup Sourcegraph gets $23 million in funding",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://siliconangle.com/2020/03/03/universal-code-search-startup-sourcegraph-gets-23-million-series-b-funding/",
+      "newsImage": "/external-logos/silicon-angle-logo.svg"
+    },
+    {
+      "newsSource": "ZDNet",
+      "newsTitle": "Universal Code Search gets a boost: Sourcegraph secures $23 million Series B Round funding",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://www.zdnet.com/article/universal-code-search-gets-a-boost-sourcegraph-secures-23-million-series-b-round-funding/",
+      "newsImage": "/external-logos/zdnet-logo.svg"
+    },
+    {
+      "newsSource": "VentureBeat",
+      "newsTitle": "Sourcegraph raises $23 million to bring universal code search to all developers",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://venturebeat.com/2020/03/03/sourcegraph-raises-23-million-to-bring-universal-code-search-to-all-developers/",
+      "newsImage": "/external-logos/venturebeat-logo.svg"
+    },
+    {
+      "newsSource": "InsideBIGData",
+      "newsTitle": "Above the Trend Line” – Your Industry Rumor Central for 3/3/2020",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://insidebigdata.com/2020/03/03/above-the-trend-line-your-industry-rumor-central-for-3-3-2020/",
+      "newsImage": "/external-logos/insidebigdata-logo.svg"
+    },
+    {
+      "newsSource": "KMWorld",
+      "newsTitle": "Sourcegraph receives $23 million in funding round to expand",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://www.kmworld.com/Articles/News/News/Sourcegraph-receives-%2423-million-in-funding-round-to-expand-139537.aspx",
+      "newsImage": "/external-logos/kmworld-logo.svg"
+    },
+    {
+      "newsSource": "SD Times",
+      "newsTitle": "SD Times news digest: Babylon.js 4.1, DataStax acquires Apache Cassandra services company, Waymo announces first external investment round",
+      "newsDate": "March 3, 2020",
+      "newsLink": "https://sdtimes.com/n-software/sd-times-news-digest-babylon-js-4-1-datastax-acquires-apache-cassandra-services-company-waymo-announces-first-external-investment-round/",
+      "newsImage": "/external-logos/sd-times-sq-logo.svg"
+    },
+    {
+      "newsSource": "FinSMES",
+      "newsTitle": "Sourcegraph raises $23 million to bring universal code search to all developers",
+      "newsDate": "March 3, 2020",
+      "newsLink": "http://www.finsmes.com/2020/03/sourcegraph-raises-23m-in-series-b-funding-round.html",
+      "newsImage": "/external-logos/finsmes-logo.svg"
+    },
+    {
+      "newsSource": "InfoWorld",
+      "newsTitle": "Sourcegraph: Universal code search and intelligence",
+      "newsDate": "January 15, 2020",
+      "newsLink": "https://www.infoworld.com/article/3514213/sourcegraph-universal-code-search-and-intelligence.html",
+      "newsImage": "/external-logos/infoworld-sq-logo.png"
+    }
+  ],
+  "y2019": [
+    {
+      "newsSource": "Tech Republic",
+      "newsTitle": "Java and JavaScript dominated software development in the 2010s",
+      "newsDate": "December 4, 2019",
+      "newsLink": "https://www.techrepublic.com/article/java-and-javascript-dominated-software-development-in-the-2010s/",
+      "newsImage": "/external-logos/techrepublic-sq-logo.png"
+    },
+    {
+      "newsSource": "Security Boulevard",
+      "newsTitle": "5 Free Developer Tools We’re Grateful For",
+      "newsDate": "November 28, 2019",
+      "newsLink": "https://securityboulevard.com/2019/11/5-free-developer-tools-were-grateful-for/",
+      "newsImage": "/external-logos/security-boulevard-sq-logo.svg"
+    },
+    {
+      "newsSource": "App Developer Magazine",
+      "newsTitle": "Universal source code search engine emerges",
+      "newsDate": "November 28, 2019",
+      "newsLink": "https://appdevelopermagazine.com/universal-source-code-search-engine-emerges/",
+      "newsImage": "/external-logos/app-developer-magazine-sq-logo.svg"
+    },
+    {
+      "newsSource": "DevClass",
+      "newsTitle": "GitLab 12.5 gets multi-cloud rolling",
+      "newsDate": "November 25, 2019",
+      "newsLink": "https://devclass.com/2019/11/25/gitlab-12-5-gets-multi-cloud-rolling/",
+      "newsImage": "/external-logos/devclass-sq-logo.svg"
+    },
+    {
+      "newsSource": "Dataversity",
+      "newsTitle": "Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine",
+      "newsDate": "November 18, 2019",
+      "newsLink": "https://www.dataversity.net/sourcegraph-announces-new-gitlab-native-integration-universal-code-search-engine/",
+      "newsImage": "/external-logos/dataversity-sq-logo.svg"
+    },
+    {
+      "newsSource": "The New Stack",
+      "newsTitle": "This Week in Programming: Dear Tech Conferences, Do Better",
+      "newsDate": "November 15, 2019",
+      "newsLink": "https://thenewstack.io/this-week-in-programming-dear-tech-conferences-do-better/",
+      "newsImage": "/external-logos/the-new-stack-sq-logo.svg"
+    },
+    {
+      "newsSource": "DevClass",
+      "newsTitle": "GitLab gets native with Sourcegraph code review in upcoming release",
+      "newsDate": "November 13, 2019",
+      "newsLink": "https://devclass.com/2019/11/13/gitlab-gets-native-with-sourcegraph-code-review-in-upcoming-release/",
+      "newsImage": "/external-logos/devclass-sq-logo.svg"
+    },
+    {
+      "newsSource": "SD Times",
+      "newsTitle": "SD Times news digest: Codefresh’s CI/CD live debugger, Azure Functions Premium, and SmartBear announces ReadyAPI 3.0",
+      "newsDate": "November 12, 2019",
+      "newsLink": "https://sdtimes.com/softwaredev/sd-times-news-digest-codefreshs-ci-cd-live-debugger-azure-functions-premium-and-smartbear-announces-readyapi-3-0/",
+      "newsImage": "/external-logos/sd-times-sq-logo.svg"
+    }
+  ]
 }
