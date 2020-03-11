@@ -8,7 +8,7 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-Today is a big milestone for Sourcegraph. We've raised $23M in Series B funding, led by David Sacks at Craft Ventures. Our existing investors at Goldcrest, Redpoint, Hanover, and Burst also participated.
+Today is a big milestone for Sourcegraph. We've raised $23M in Series B funding, led by [David Sacks at Craft Ventures](https://medium.com/craft-ventures/why-we-invested-in-sourcegraph-5ace28317e3d). Our existing investors at Goldcrest, Redpoint, Hanover, and Burst also participated.
 
 We're excited to welcome David Sacks of Craft Ventures to our board of directors. David helped build some of the fastest-growing enterprise software businesses–as PayPal COO, Yammer CEO, and Zenefits interim CEO. As Sourcegraph grows, we're thrilled to have help from David and the rest of our board (Dan Friedland and Adam Ross at Goldcrest, and Scott Raney at Redpoint).
 
