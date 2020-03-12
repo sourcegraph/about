@@ -117,3 +117,20 @@
         font-size: 0.9em;
     }
 }
+
+.blog-posts-home {
+    .card {
+        height: 100%;
+    }
+
+    &__thumbnail {
+        width: auto;
+        max-height: 200px;
+    }
+
+    @media (max-width: 819px) {
+        &__post:not(:first-child) {
+            margin-top: 2rem;
+        }
+    }
+}

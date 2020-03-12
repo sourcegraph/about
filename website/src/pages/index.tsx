@@ -18,6 +18,40 @@ import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 import Helmet from 'react-helmet'
 
+export interface BlogPost {
+    title: string
+    description: string
+    thumbnail: string
+    url: string
+}
+
+/**
+ * This list is lovingly hand-crafted for the home page so the title,
+ * description, and image can be customized for better visual layout.
+ *
+ * Would be great to see this data-driven at some point in the future.
+ */
+const featuredBlogPosts:BlogPost[] = [
+    {
+        title: 'Universal Code Search for GitHub',
+        description: 'Connect and configure Sourcegraph Universal Code Search for public and private repositories on GitHub.com and GitHub Enterprise instances.',
+        thumbnail: '/external-logos/github-logo.svg',
+        url: '/blog/universal-code-search-github'
+    },
+    {
+        title: 'Sourcegraph Secures $23 Million Series B Round for Universal Code Search',
+        description: 'We\'ve raised $23M in Series B funding, led by David Sacks at Craft Ventures.',
+        thumbnail: '/sourcegraph-mark.png',
+        url: '/blog/universal-code-search-github'
+    },
+    {
+        title: 'Announcing Sourcegraph 3.13',
+        description: 'Interactive search mode, structural search toggle, and code change management campaigns with custom code execution.',
+        thumbnail: '/sourcegraph-mark.png',
+        url: '/blog/sourcegraph-3.13'
+    }
+]
+
 const testimonials: Testimonial[] = [{
         customer: 'Lyft',
         logo: '/external-logos/lyft-logo.svg',
@@ -194,12 +228,37 @@ export default ((props: any) => (
                             Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
                         </h3>
                     </div>
-                                    <div className="container-fluid">
+                <div className="container-fluid">
                     <Tweets />
                 </div>
             </div>
                 </div>
             <GitLabIntegrationSection />
+             <ContentSection color="white" className="blog-posts-home pt-5 pb-6">
+                <h2 className="text-center font-weight-light mb-4">
+                    Featured blog posts
+                </h2>
+                 <div className="container">
+                     <div className="row text-dark justify-content-center">
+                        {featuredBlogPosts.map(({ title, description, thumbnail, url }, i) => (
+                            <div className="blog-posts-home__post col-md-4 px-2">
+                                <div className="card">
+                                    <div className="text-center">
+                                        <a href={url}>
+                                            <img className="blog-posts-home__thumbnail py-3 px-3" src={thumbnail} />
+                                        </a>
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">{title}</h5>
+                                        <p className="card-text">{description}</p>
+                                        <a href={url} className="btn btn-primary">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                     </div>
+                 </div>
+             </ContentSection>
             <ContentSection color="black">
                 <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
             </ContentSection>
