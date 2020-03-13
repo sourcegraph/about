@@ -5,7 +5,8 @@ const ITEMS: (
           name: string
           url: string
       }
-    | { topN: number; description: string; className: string })[] = [
+    | { topN: number; description: string; className: string }
+)[] = [
     {
         name: 'Cloudflare',
         url: '/external-logos/cloudflare-color-logo.svg',
@@ -94,8 +95,10 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
     trustWhat,
     className = '',
 }) => (
-    <div className={`customer-logos-section ${className}`}>
-        <h3 className="text-center font-weight-light">Engineering teams at these companies use Sourcegraph Universal Code Search</h3>
+    <div id="customers" className={`customer-logos-section ${className}`}>
+        <h3 className="text-center font-weight-light">
+            Engineering teams at these companies use Sourcegraph Universal Code Search
+        </h3>
         <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) =>
                 'name' in logo ? (
@@ -111,9 +114,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
                         className="customer-logos-section__item mx-2 d-flex justify-content-center flex-column"
                     >
                         <div
-                            className={`customer-logos-section__item-logo customer-logos-section__item-logo-synthesized mx-auto border rounded px-3 font-weight-bold d-flex align-items-center ${
-                                logo.className
-                            }`}
+                            className={`customer-logos-section__item-logo customer-logos-section__item-logo-synthesized mx-auto border rounded px-3 font-weight-bold d-flex align-items-center ${logo.className}`}
                         >
                             Top {logo.topN}
                             <br />
