@@ -79,6 +79,7 @@ const testimonials: Testimonial[] = [{
             text: 'Read case study',
             url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
             target: '_blank',
+            rel: 'nofollow'
         },
     },
     {
