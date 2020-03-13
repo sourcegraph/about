@@ -9,7 +9,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Recording lead and customer emails, calls, and notes](records.md)
 - [Creating and maintaining license keys for customers](license_keys.md)
 
-## Pipeline, data and models
+## Pipeline, data, and models
 
 - [All deals (HubSpot)](https://app.hubspot.com/contacts/2762526/deals/board/view/all/)
 - [Deals sheet](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=0)
