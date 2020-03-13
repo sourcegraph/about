@@ -33,6 +33,12 @@ export interface BlogPost {
  */
 const featuredBlogPosts:BlogPost[] = [
     {
+        title: 'Universal Code Search for GitLab',
+        description: 'Connect and configure Sourcegraph Universal Code Search for public and private repositories on GitLab.com and GitLab CE/EE instances.',
+        thumbnail: '/external-logos/gitlab-mark.svg',
+        url: '/blog/universal-code-search-gitlab'
+    },
+    {
         title: 'Universal Code Search for GitHub',
         description: 'Connect and configure Sourcegraph Universal Code Search for public and private repositories on GitHub.com and GitHub Enterprise instances.',
         thumbnail: '/external-logos/github-logo.svg',
@@ -43,12 +49,6 @@ const featuredBlogPosts:BlogPost[] = [
         description: 'We\'ve raised $23M in Series B funding, led by David Sacks at Craft Ventures.',
         thumbnail: '/sourcegraph-mark.png',
         url: '/blog/universal-code-search-github'
-    },
-    {
-        title: 'Announcing Sourcegraph 3.13',
-        description: 'Interactive search mode, structural search toggle, and code change management campaigns with custom code execution.',
-        thumbnail: '/sourcegraph-mark.png',
-        url: '/blog/sourcegraph-3.13'
     }
 ]
 
