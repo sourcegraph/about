@@ -34,13 +34,13 @@ export interface BlogPost {
 const featuredBlogPosts:BlogPost[] = [
     {
         title: 'Universal Code Search for GitLab',
-        description: 'Connect and configure Sourcegraph Universal Code Search for public and private repositories on GitLab.com and GitLab CE/EE instances.',
+        description: 'Learn how to connect and configure Sourcegraph Universal Code Search for public and private repositories on GitLab CE/EE instances.',
         thumbnail: '/external-logos/gitlab-mark.svg',
         url: '/blog/universal-code-search-gitlab'
     },
     {
         title: 'Universal Code Search for GitHub',
-        description: 'Connect and configure Sourcegraph Universal Code Search for public and private repositories on GitHub.com and GitHub Enterprise instances.',
+        description: 'Learn how to connect and configure Sourcegraph Universal Code Search for public and private repositories on GitHub.com and GitHub Enterprise instances.',
         thumbnail: '/external-logos/github-logo.svg',
         url: '/blog/universal-code-search-github'
     },
