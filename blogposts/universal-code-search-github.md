@@ -7,7 +7,7 @@ tags: [
   blog
 ]
 slug: universal-code-search-github
-heroImage: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+heroImage: /external-logos/github-logo.svg
 published: true
 ---
 
