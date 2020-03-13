@@ -1,12 +1,9 @@
 import React from 'react'
 
-const ITEMS: (
-    | {
-          name: string
-          url: string
-      }
-    | { topN: number; description: string; className: string }
-)[] = [
+const ITEMS: {
+    name: string
+    url: string
+}[] = [
     {
         name: 'Cloudflare',
         url: '/external-logos/cloudflare-color-logo.svg',
@@ -30,11 +27,6 @@ const ITEMS: (
     {
         name: 'Yelp',
         url: '/external-logos/yelp.svg',
-    },
-    {
-        topN: 5,
-        description: 'hospitality company',
-        className: 'customer-logos-section__item-logo-synthesized-0',
     },
     {
         name: 'Adidas Running',
@@ -84,11 +76,6 @@ const ITEMS: (
         name: 'GetYourGuide',
         url: '/external-logos/gyg.svg',
     },
-    // {
-    //     topN: 5,
-    //     description: 'media company',
-    //     className: 'customer-logos-section__item-logo-synthesized-1',
-    // },
 ]
 
 export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string; className?: string }> = ({
@@ -101,27 +88,12 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
         </h3>
         <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) =>
-                'name' in logo ? (
-                    <div
-                        key={i}
-                        className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item mx-4`}
-                    >
-                        <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
-                    </div>
-                ) : (
-                    <div
-                        key={i}
-                        className="customer-logos-section__item mx-2 d-flex justify-content-center flex-column"
-                    >
-                        <div
-                            className={`customer-logos-section__item-logo customer-logos-section__item-logo-synthesized mx-auto border rounded px-3 font-weight-bold d-flex align-items-center ${logo.className}`}
-                        >
-                            Top {logo.topN}
-                            <br />
-                            {logo.description}
-                        </div>
-                    </div>
-                )
+                <div
+                    key={i}
+                    className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item mx-4`}
+                >
+                    <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
+                </div>
             )}
         </div>
     </div>

@@ -11,21 +11,6 @@
             height: 70px;
             max-width: $max-width;
             margin-bottom: 0.5rem;
-            &-synthesized {
-                border-width: 2px !important;
-                $custom-color: #e83c3b;
-                font-family: 'Circular' !important;
-                $color: $custom-color;
-                border-color: lighten($color, 30%) !important;
-                background: linear-gradient(
-                    to left,
-                    rgba($color, 0.15) 0%,
-                    transparent 45%,
-                    transparent 55%,
-                    rgba($color, 0.15) 100%
-                );
-                color: $color;
-            }
         }
 
         // Don't allow logos to wrap beyond 1200px wide
