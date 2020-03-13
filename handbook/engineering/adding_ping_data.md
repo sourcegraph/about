@@ -27,7 +27,8 @@ You will be asked the following questions:
     - Ensure a CHANGELOG entry is added, and that the two sources of truth for ping data are updated along with your PR:
       - Pings documentation: https://docs.sourcegraph.com/admin/pings
       - The Site-admin > Pings page, e.g.: https://sourcegraph.com/site-admin/pings
-3. Determine if any transformations/ETL jobs are required, and if so, add them to the [script](https://console.cloud.google.com/storage/browser/_details/sg-analytics-data/dataflow/pipelines/udf/transform.js?project=telligentsourcegraph&authuser=0&angularJsUrl=%2Fstorage%2Fbrowser%2F_details%2Fsg-analytics-data%2Fdataflow%2Fpipelines%2Fudf%2Ftransform.js%3Fproject%3Dtelligentsourcegraph%26authuser%3D1).
+3. Determine if any transformations/ETL jobs are required, and if so, add them to the [script](https://github.com/sourcegraph/analytics/blob/master/BigQuery%20Schemas/transform.js). The script is primarily for edge cases. Primarily,  as long as zeroes or nulls are being sent back instead of `""` in the case where the data point is empty. 
+
 4. Open a PR to change [the schema](https://github.com/sourcegraph/analytics/tree/master/BigQuery%20Schemas) with Business Operations (EricB and Dan) as approvers. Keep in mind:
 	- Check the data types sent in the JSON match up with the BigQuery schema (e.g. a JSON '1' will not match up with a BigQuery integer). 
 	- Every field in the BigQuery schema should not be non-nullable (i.e. `"mode": "NULLABLE"` and `"mode": "REPEATED"` are acceptable). There will be instances on the older Sourcegraph versions that will not be sending new data fields, and this will cause pings to fail.
