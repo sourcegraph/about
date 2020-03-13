@@ -7,6 +7,7 @@ const ITEMS: (
           link?: {
               url: string
               target?: string
+              rel?: string
           }
       }
     | { topN: number; description: string; className: string }
@@ -43,6 +44,7 @@ const ITEMS: (
         link: {
             url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
             target: '_blank',
+            rel: 'nofollow'
         },
     },
     {
@@ -130,7 +132,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ trustWhat?: string;
                         className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item mx-4`}
                     >
                         {logo.link ? (
-                            <a href={logo.link.url} target={logo.link.target}>
+                            <a href={logo.link.url} target={logo.link.target} rel={logo.link.rel}>
                                 <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
                             </a>
                         ) : (
