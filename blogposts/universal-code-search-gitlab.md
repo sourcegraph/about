@@ -13,7 +13,7 @@ published: true
 
 Sourcegraph [Universal Code Search](/universal-code-search) enables developers to explore and better understand all code, faster, with contextual code intelligence.
 
-This screencast (with accompanying audio) shows how to [connect and configure](https://docs.sourcegraph.com/admin/external_service/gitlab) Sourcegraph Universal Code Search for public and private repositories on GitLab.com and GitLab CC/EE instances
+This screencast (with accompanying audio) shows how to [connect and configure](https://docs.sourcegraph.com/admin/external_service/gitlab) Sourcegraph Universal Code Search for public and private repositories on GitLab.com and GitLab CE/EE instances
 
 In addition to connection configuration, it discusses important factors for determining which repositories Sourcegraph will index, such as excluding archived repositories, as well as repositories based on naming patterns such `deploy-`.
 
