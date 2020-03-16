@@ -4,11 +4,11 @@ The role of the product design team is to make validated decisions that enhance 
 
 Here are a few of the things we strive to make true:
 
-- Advocate for our users
+- Advocate for our users by collaborating with them
 - Perform our due diligence when making design decisions, by researching and testing solutions within scope
 - Proactive, with a bias towards action
 - Communicate openly, and solicit feedback frequently
-- To put our egos to one side
+- To be egoless when soliciting responses to our work
 
 ## Internal Resources
 
@@ -26,12 +26,12 @@ As the procut design team is still small and not able to address every problem e
 - Make sure exits are available.
 - Follow platform conventions, search online to check established UX patterns.
 
-If you would like to dig a little deeper, [here is a link to the article](https://www.nngroup.com/articles/ten-usability-heuristics/), each section is accompanied by a short video and/or a more in depth article.
+If you would like to dig a little deeper [here is a link to the article](https://www.nngroup.com/articles/ten-usability-heuristics/), each section is accompanied by a short video and/or a more in depth article.
 
 ## External resources
 
 - [10 General principles for interaction design](https://www.interaction-design.org/literature/article/heuristic-evaluation-how-to-conduct-a-heuristic-evaluation)
-- [UX research cheat cheat](https://www.nngroup.com/articles/ux-research-cheat-sheet/)
+- [UX research cheat sheet](https://www.nngroup.com/articles/ux-research-cheat-sheet/)
 - [usability.gov](https://www.usability.gov/)
 - [Apple's human interface guidelines](https://developer.apple.com/design/human-interface-guidelines/)
 - [Google's material design](https://material.io/design/)
