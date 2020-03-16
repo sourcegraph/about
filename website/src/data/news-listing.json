@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Devops Digest",
+      "newsTitle": "Sourcegraph Secures $23 Million Series B Funding",
+      "newsDate": "March 16, 2020",
+      "newsLink": "https://www.devopsdigest.com/sourcegraph-secures-23-million-series-b-funding/",
+      "newsImage": "/external-logos/devops-digest-logo.png"
+    },
+    {
       "newsSource": "The New Stack",
       "newsTitle": "Universal Code Search: A New Search Tech for the Era of Big Code",
       "newsDate": "March 9, 2020",
