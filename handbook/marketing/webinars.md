@@ -17,11 +17,12 @@ All webinars will require the following details for planning:
 
 Sourcegraph uses these web applications for running a webinar:
 
-- Zoom:
-  *  Manage registration landing page and attendance
+- GotoWebinar:
+  * Manage registration and attendance
+  * Invitation email and reminders with webinar link and details
   * Run and record the webinar
 - Hubspot
-  * Send out email invitations and reminders
+  * Set up landing page for registration
   * Manage invitation lists and store registration/attendance activities
 
 ## Webinar planning tasks
@@ -37,13 +38,33 @@ Sourcegraph uses these web applications for running a webinar:
  30 minutes | Final soundcheck 
  Post webinar | Send out thank you emails with link to recorded webinar 
 
-### Zoom setup
+### GotoWebinar setup
 
 Create the webinar, configuring the following:
 
 - Set the schedule, host and details
 - Registration landing page form
 - Thanks for registering email which includes the webinar link
+
+### Announcement on customer's Sourcegraph instance
+
+Ask the customer:
+
+> Could you add the following configuration to your Sourcegraph instance's global user settings found at https://sourcegraph.example.com/site-admin/global-settings? This will let all the users visiting Sourcegraph know that they can join the webinar via a dismissible notice:
+>
+> ![image](https://user-images.githubusercontent.com/3173176/75200913-423db180-5724-11ea-9ee9-fbea5be2129b.png)
+>
+> ```json
+>  "notices": [
+>    {
+>      "dismissible": true,
+>      "location": "top",
+>      "message": "Join us and the Sourcegraph team for the live Zoom webinar on [Tuesday, Feb 25, 2020 @ 3pm Central](<WEBINAR LINK>) to learn about Universal Code Search and improving your workflow!"
+>      }
+>  ],
+> ```
+
+**IMPORTANT**: Before sending the above email, make sure you update the webinar date and URL!
 
 ### Hubspot setup
 

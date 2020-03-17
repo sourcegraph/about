@@ -58,7 +58,7 @@ published: true
         <ul>
         <li>to make basic code intelligence ubiquitous,</li>
         <li>make code review continuous and intelligent,</li>
-        <li>and increase the amount and quality of open-source code.</li>
+        <li>and increase the amount and quality of open source code.</li>
         </ul>
         While we are excited about our progress and the feedback from developers along the way, we have a lot of work ahead of us.
     </p>

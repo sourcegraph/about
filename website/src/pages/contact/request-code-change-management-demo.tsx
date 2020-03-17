@@ -1,8 +1,7 @@
 import React, { useLayoutEffect } from 'react'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { eventLogger } from '../../EventLogger'
-import { createHubSpotForm } from './sales'
+import { createHubSpotForm } from '../../components/HubSpot'
 
 export default ((props: any) => {
     useLayoutEffect(() => {
@@ -10,7 +9,6 @@ export default ((props: any) => {
             portalId: '2762526',
             formId: 'fd64c0d5-627e-4176-b6f4-289571f9f212',
             targetId: 'hubspotRequestCodeChangeManagementDemoForm',
-            onFormSubmit: () => eventLogger.trackCampaignsDemoFormSubmitted(),
         })
     }, [])
     return (

@@ -6,6 +6,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 - [Strategy](../company/strategy.md)
 - [Handbook usage](usage.md)
+- [Editing the handbook](editing.md)
 - [Communication](communication/index.md)
   - [Style guide](communication/style_guide.md)
 - [Team](../company/team/index.md)
@@ -42,6 +43,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Developer relations](marketing/developer-relations/index.md)
 - [Marketing operations](marketing/marketing_operations.md)
 - [Webinars](marketing/webinars.md)
+- [Editing blog posts](marketing/editing_blog_posts.md)
 
 
 ## Sales

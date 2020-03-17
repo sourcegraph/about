@@ -1,29 +1,8 @@
 import React, { useLayoutEffect } from 'react'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { eventLogger } from '../../EventLogger'
+import { createHubSpotForm } from '../../components/HubSpot'
 
-interface HubSpotForm {
-    portalId: string
-    formId: string
-    targetId: string
-    onFormSubmit?: () => void
-}
-
-export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit }: HubSpotForm): void {
-    const script = document.createElement('script')
-    script.src = '//js.hsforms.net/forms/v2.js'
-    const hubspot = document.getElementById(targetId)
-    hubspot!.appendChild(script)
-    script.addEventListener('load', () => {
-        ;(window as any).hbspt.forms.create({
-            portalId,
-            formId,
-            target: `#${targetId}`,
-            onFormSubmit,
-        })
-    })
-}
 
 export default ((props: any) => {
     useLayoutEffect(() => {
@@ -31,7 +10,6 @@ export default ((props: any) => {
             portalId: '2762526',
             formId: '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9',
             targetId: 'hubspotContactForm',
-            onFormSubmit: () => eventLogger.trackContactUsFormSubmitted(),
         })
     }, [])
     return (

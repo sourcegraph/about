@@ -17,6 +17,7 @@ interface CTA {
     text: string
     url: string
     target?: string
+    rel?: string
 }
 
 export interface Testimonial {
@@ -79,6 +80,7 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
                                         href={cta.url}
                                         className="testimonial-carousel__cta btn btn-primary mt-2"
                                         target={cta.target}
+                                        rel={cta.rel}
                                     >
                                         {cta.text}
                                     </a>

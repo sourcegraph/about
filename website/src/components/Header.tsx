@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { eventLogger } from '../EventLogger'
 import { ProductPopoverButton } from './ProductPopover'
 
 interface HeaderProps {
@@ -64,14 +63,12 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li
                                             className="header__nav-item nav-item"
                                             role="presentation"
-                                            onClick={() => eventLogger.trackProductClicked('header')}
                                         >
                                             <ProductPopoverButton className="header__nav-link nav-link" />
                                         </li>
                                         <li
                                             className="header__nav-item nav-item"
                                             role="presentation"
-                                            onClick={this.pricingClicked}
                                         >
                                             <Link
                                                 className="header__nav-link nav-link"
@@ -84,7 +81,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li
                                             className="header__nav-item nav-item"
                                             role="presentation"
-                                            onClick={this.docsClicked}
                                         >
                                             <a
                                                 className="header__nav-link nav-link"
@@ -96,7 +92,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li
                                             className="header__nav-item nav-item"
                                             role="presentation"
-                                            onClick={this.aboutClicked}
                                         >
                                             <Link
                                                 className="header__nav-link nav-link"
@@ -109,7 +104,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li
                                             className="header__nav-item nav-item"
                                             role="presentation"
-                                            onClick={this.blogClicked}
                                         >
                                             <Link
                                                 className="header__nav-link nav-link"
@@ -145,17 +139,5 @@ export default class Header extends React.Component<HeaderProps, any> {
                 </nav>
             </>
         )
-    }
-    private aboutClicked = () => {
-        eventLogger.trackAboutClicked('header')
-    }
-    private docsClicked = () => {
-        eventLogger.trackDocsClicked('header')
-    }
-    private pricingClicked = () => {
-        eventLogger.trackPricingClicked('header')
-    }
-    private blogClicked = () => {
-        eventLogger.trackBlogClicked('header')
     }
 }

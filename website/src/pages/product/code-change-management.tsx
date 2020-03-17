@@ -16,14 +16,10 @@ import {
     RequestCodeChangeManagementDemoAction,
     RequestCodeChangeManagementDemoActionNow,
 } from '../../css/components/actions/RequestDemoAction'
-import { eventLogger } from '../../EventLogger'
 
 const title = 'Code change management'
 const description =
     'Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt. Compute changes, create branches, and track pull requests across all affected repositories.'
-const seeItInActionClicked = () => {
-    eventLogger.trackCampaignsSeeItInActionButtonClicked()
-}
 
 export const CampaignsTable: React.FunctionComponent<{
     campaigns: string[]
@@ -80,7 +76,6 @@ export default ((props: any) => (
                         <a
                             className="btn btn-outline-primary rounded-lg active mb-5 px-6"
                             href="#see-it-in-action"
-                            onClick={seeItInActionClicked}
                         >
                             See it in action
                         </a>
@@ -216,11 +211,10 @@ export default ((props: any) => (
                 </h2>
                 <div className="row justify-content-md-center">
                     <p className="text-center">
-                        Watch how to use Sourcegraph to the deprecate a JavaScript library across 100+ repositories.
+                        Watch how to use Sourcegraph code change campaigns to upgrade the RxJS library in multiple repositories.
                     </p>
                 </div>
-                <Vimeo id={355392896} muted={false} className="mt-4" />
-                <Vimeo id={355392936} muted={false} className="mt-5" />
+                <Vimeo id={390882141} muted={false} className="mt-4" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
@@ -231,8 +225,8 @@ export default ((props: any) => (
                 color="purple"
                 className="request-campaigns-demo-footer py-4"
                 logomark={false}
-                title="Request a Sourcegraph code change management demo"
-                description="With code change management, large-scale fixes and changes that previously took weeks or months can be completed in hours."
+                title="See how Sourcegraph code change management can help your team"
+                description="With code change campaigns, large-scale fixes and changes that previously took weeks or months can be completed in hours."
             >
                 <RequestCodeChangeManagementDemoActionNow />
             </Jumbotron>

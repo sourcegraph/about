@@ -14,7 +14,7 @@ published: true
 
 Do you use the best tools money can buy? We ask ourselves that a lot at [Sourcegraph](https://sourcegraph.com). It’s one of the questions in [The Joel Test](http://www.joelonsoftware.com/articles/fog0000000043.html), Joel Spolsky’s classic 12-question benchmark of your team’s software engineering practices.
 
-Since he published the test in 2000, the _“best tools money can buy”_ have dramatically improved. Code review, better editors/IDEs, GitHub, etc. But now you also demand more. It’s not crazy to be using 5 programming languages, multiple repositories, 2 package managers, 200 open-source dependencies, several linters, a complex frontend build pipeline, etc.
+Since he published the test in 2000, the _“best tools money can buy”_ have dramatically improved. Code review, better editors/IDEs, GitHub, etc. But now you also demand more. It’s not crazy to be using 5 programming languages, multiple repositories, 2 package managers, 200 open source dependencies, several linters, a complex frontend build pipeline, etc.
 
 So, we made **The Sourcegraph Test** to measure how well your tools help you manage the reality of modern development:
 

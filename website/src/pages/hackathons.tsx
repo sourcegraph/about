@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import { eventLogger } from '../EventLogger'
 
 export default class Pricing extends React.Component<any, any> {
     public componentDidMount(): void {
@@ -14,9 +13,6 @@ export default class Pricing extends React.Component<any, any> {
                 portalId: '2762526',
                 formId: '7d6c55af-3de3-4e57-a5df-a0de341a4814',
                 target: '#hubspotTrialForm',
-                onFormSubmit: (e: Event) => {
-                    eventLogger.trackHackathonFormSubmitted()
-                },
             })
         })
     }

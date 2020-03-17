@@ -18,7 +18,7 @@ Liveblog by Renfred Harper ([@renfredxh](https://twitter.com/renfredxh))
 
 ![DEogyASVoAEn0jj](//images.contentful.com/le3mxztn6yoo/3elFLYsyUouIS0Cci8iyk4/207db7cd751cd19a631e9ad6fa9284e9/DEogyASVoAEn0jj.jpg)
 
-Scott Mansfield ([@sgmansfield](https://twitter.com/sgmansfield)) is a Senior Software Engineer at Netflix. He works on EVCache, a high-performance, low latency persistence system. He is the primary author of Rend, an open-source memcached proxy as a part of EVCache. He talked at [GopherCon 2017](https://gophercon.com/speakers/19) about a custom data serialization format he developed at Netflix.
+Scott Mansfield ([@sgmansfield](https://twitter.com/sgmansfield)) is a Senior Software Engineer at Netflix. He works on EVCache, a high-performance, low latency persistence system. He is the primary author of Rend, an open source memcached proxy as a part of EVCache. He talked at [GopherCon 2017](https://gophercon.com/speakers/19) about a custom data serialization format he developed at Netflix.
 
 *Note: This post was best-effort live-blogged at the conference. Let me know on Twitter ([@renfredxh](https://twitter.com/renfredxh)) if I missed anything!
 

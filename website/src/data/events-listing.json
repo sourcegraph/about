@@ -1,25 +1,23 @@
 {
-"Conference":[
-	{
-		"eventTitle":"TSConf JP 2020",
-		"eventDate": "February 22, 2020",
-		"eventLocation":"Tokyo, Japan",
-		"eventLink": "https://www.tsconf.jp/2020/",
-		"eventImage": "/external-logos/tsconf-js-logo.svg"
-	},
-	{
-		"eventTitle":"RxJS Live",
-		"eventDate": "March 20, 2020",
-		"eventLocation":"London, England",
-		"eventLink": "https://www.rxjs.live/",
-		"eventImage": "/external-logos/rxjs-live-london-logo.svg"
-	},
-	{
-		"eventTitle":"TSConf EU 2020",
-		"eventDate": "March 31, 2020",
-		"eventLocation":"Linz, Austria",
-		"eventLink": "https://tsconf.eu/",
-		"eventImage": "/external-logos/tsconf-eu-logo.svg"
-	}	
-]
+  "Conference": [],
+  "Livestream": [
+    {
+      "eventTitle": "Sourcegraph Office Hours",
+      "eventDate": "Tuesday, March 17, 2020 | 10:00 AM PST",
+      "eventLink": "https://info.sourcegraph.com/office-hours-march-17",
+      "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/office-hours-image-01.jpg"
+    },
+    {
+      "eventTitle": "Sourcegraph Universal Code Search",
+      "eventDate": "Thursday, March 19, 2020 | 10:00 AM PST",
+      "eventLink": "https://info.sourcegraph.com/webinar-sourcegraph-universal-code-search",
+      "eventImage": "/sourcegraph/sourcegraph-mark.svg"
+    },
+    {
+      "eventTitle": "Become a Universal Code Search power user",
+      "eventDate": "April 2, 2020 | 10:00 AM PST",
+      "eventLink": "https://info.sourcegraph.com/webinar-universal-code-search-power-user-apr-02",
+      "eventImage": "/sourcegraph/sourcegraph-mark.svg"
+    }
+  ]
 }
