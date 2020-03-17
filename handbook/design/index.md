@@ -1,6 +1,6 @@
 # Product Design
 
-The role of the product design team is to make validated decisions that enhance users experience of Sourcegraph.
+The role of the product design team is to make validated decisions that enhance the user experience of Sourcegraph.
 
 Here are a few of the things we strive to make true:
 
