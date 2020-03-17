@@ -60,12 +60,12 @@ Every Sunday night or Monday morning, [BizOps scripts](https://github.com/source
 - [All Instances](https://sourcegraph.looker.com/looks/436)<br/>
 - [Specific Instance Overview](https://sourcegraph.looker.com/dashboards/94?Unique%20Server%20ID=&Site%20ID=&filter_config=%7B%22Unique%20Server%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:4%7D%5D,%22Site%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:5%7D%5D%7D) (To select a specific company, fill the Unique Server ID field)<br/>
 
-**Looker dashboards**
+**Looker boards**
 
 - [Go-to-market](https://sourcegraph.looker.com/browse/boards/2)<br/>
-- [Marketing](https://sourcegraph.looker.com/folders/109)<br/>
-- [Sales](https://sourcegraph.looker.com/folders/114)<br/>
 - [Product/engineering](https://sourcegraph.looker.com/browse/boards/5)<br/>
+
+These two boards will contain 99% of what you're looking in Looker. We recommend adding them to your account (this will pop-up on the top of the page if you haven't already added them) to simplify your Looker navigation. If what you're looking for is not on these boards, you can [explore the folders](https://sourcegraph.looker.com/folders/home). 
 
 ### Getting started with Looker
 
