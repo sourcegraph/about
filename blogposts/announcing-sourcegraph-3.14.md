@@ -95,18 +95,18 @@ TODO: Video
 </p>
 -->
 
-The overarching experience of generating diffs, creating and reviewing a campaign, then managing the changes to closure has been improved.
+The overall experience of generating diffs, creating and reviewing a campaign, then managing the changes to closure has been improved.
 
 Using the `src-cli` to generate diffs and create a campaign plan has been improved:
 
-* It is now easier to continue with a campaign plan for successful patches when other patches fail for some repositories.
-* The dependencies on the external diff and unzip tools have been removed.
+* It is now easier to create a campaign plan for successful patches when other patches fail for some repositories.
+* The dependencies on the external diff and unzip tools have been removed, instead git is used to produce diffs.
 * .gitignore files are now respected when creating patches.
 * On macOS src CLI can [now be installed with Homebrew.](https://github.com/sourcegraph/homebrew-src-cli)
 
 Take a look at the [improved documentation](https://docs.sourcegraph.com/user/campaigns) for usage and examples.
 
-When creating your campaign in Sourcegraph, it is now more clear what state the campaign is in and is easier to differentiate between draft patches and a changeset that has been created on the code host. Additionally, you can now filter the changesets to quickly find which ones need follow up.
+When creating your campaign in Sourcegraph, it is now clearer what state the campaign is in and is easier to differentiate between draft patches and changesets that have been created on the code host. Additionally, you can now filter the changesets to quickly find which ones need follow up.
 
 Behind the scenes, campaign changesets are now kept up to date using a heuristic solution that reduces the load placed on the code host. Previously, each changeset was updated during regularly scheduled update processes. The new implementation prioritizes syncing changesets based on when last they changed and is also aware of real-time changes that arrive via webhooks.
 
