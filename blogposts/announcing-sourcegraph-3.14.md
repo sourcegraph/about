@@ -61,7 +61,7 @@ TODO: Video?
 </p>
 -->
 
-The Sourcegraph permissions syncing has gotten more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing any search results, Sourcegraph now syncs these permissions opportunistically, and as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. 
+Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. 
 
 Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` in your site configuration settings. 
 
@@ -142,7 +142,7 @@ Alerts are in place for when:
 * Search 90th and 99th percentile request duration is high.
 * Users are being shown an abnormally large amount of search alert user suggestions and no results.
 * The internal indexed and unindexed search services are returning bad responses.
-* Gitserver may be under heavy load due to many concurrent command executions or under-provisioning.
+* `gitserver` may be under heavy load due to many concurrent command executions or under-provisioning.
 
 ## Estimate required resources for your Sourcegraph instance
 
@@ -160,7 +160,7 @@ Making the setup process better, links to browsing on open source projects. TBD 
 
 ## Aggregated search data added to Sourcegraph pings
 
-Sourcegraph collects a small amount of high-level and aggregate data from each instance. See the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy and rules](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). New usage statistics—specifically, aggregate search latencies, aggregated counts of users and searches for search mode types, and aggregated counts of search filter usage will be sent to Sourcegraph via pings by default. The aggregated event count metrics can be disabled via the site admin flag `disableNonCriticalTelemetry`.
+Sourcegraph collects a small amount of high-level and aggregate data from each instance – you can see the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy and rules](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). New usage statistics –  specifically, aggregate search latencies, aggregated counts of users and searches for search mode types, and aggregated counts of search filter usage – will be sent to Sourcegraph via pings by default. The aggregated event count metrics can be disabled via the site admin flag `disableNonCriticalTelemetry`.
 
 ## Experimental smart search bar
 
@@ -175,7 +175,7 @@ TODO: Video
 </p>
 -->
 
-In Sourcegraph 3.13 we introduced the smart search bar as an experimental feature. Many improvements have been made, though it will stay marked as experimental as we continue to solicit feedback. If you or your team are interested in trying this feature, add the following setting to your user, organization, or global settings on your Sourcegraph instance: `{ "experimentalFeatures": { "smartSearchField": true } }`. Tweet [@srcgraph](https://twitter.com/srcgraph) or email feedback@sourcegraph.com with your thoughts.
+In Sourcegraph 3.13, we introduced the smart search bar as an experimental feature. Many improvements have been made, but it will stay marked as experimental as we continue to solicit feedback. If you or your team are interested in trying this feature, add the following setting to your user, organization, or global settings on your Sourcegraph instance: `{ "experimentalFeatures": { "smartSearchField": true } }`. Tweet [@srcgraph](https://twitter.com/srcgraph) or email feedback@sourcegraph.com with your feedback.
 
 ## Changelog
 
