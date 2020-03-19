@@ -10,15 +10,6 @@ heroImage: https://about.sourcegraph.com/blog/3.14-release-blog-img.jpg
 published: true
 ---
 
-<!--
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p>
--->
-
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
 <div style="padding-left: 2rem">
