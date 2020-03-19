@@ -10,9 +10,7 @@ heroImage: https://about.sourcegraph.com/blog/3.14-release-blog-img.jpg
 published: true
 ---
 
-testing 123
-
-Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
 
 <div style="padding-left: 2rem">
 
@@ -20,7 +18,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 [**🍴 Forks and archived repositories are excluded from search results by default**](#forks-and-archived-repositories-are-excluded-from-search-results-by-default)<br />
 
-[**🐳 Deploy and scale Sourcegraph with docker-compose**](#deploy-and-scale-sourcegraph-with-docker-compose)<br />
+[**🐳 Deploy and scale Sourcegraph with `docker-compose`**](#deploy-and-scale-sourcegraph-with-docker-compose)<br />
 
 [**📣 Improved campaign creation, management, and syncing performance**](#improved-campaign-creation-management-and-syncing-performance)<br />
 
@@ -67,7 +65,7 @@ The Sourcegraph permissions syncing has gotten more sophisticated to better hand
 
 Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` in your site configuration settings. 
 
-Keep your eyes out for improvements to the site admin pages to allow for better insight into when permissions were last updated for users, and the ability to force a refresh of permissions for a user or repository.
+Keep your eyes out for improvements to the site admin pages with better insight into when user permissions were last updated, and the ability to force a refresh of permissions for a user or repository.
 
 ## Forks and archived repositories are excluded from search results by default
 
@@ -78,11 +76,11 @@ Keep your eyes out for improvements to the site admin pages to allow for better 
   <p style="text-align: center"><a href="https://vimeo.com/398759697" target="_blank">View on Vimeo</a></p>
 </p>
 
-The default setting for including forks and archived repositories in your search results has changed from including by default to excluding them by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `forks:yes` filters to show results that include archived and forked repositories.
+The default setting for including forks and archived repositories in your search results is now changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `forks:yes` filters to show results that include archived and forked repositories.
 
-## Deploy and scale Sourcegraph with docker-compose
+## Deploy and scale Sourcegraph with `docker-compose`
 
-Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs.sourcegraph.com/admin/install/docker-compose). This is useful for organizations that want to scale Sourcegraph, but don’t use Kubernetes. For any customers running a single docker container and have experienced instability or issues with scaling, Docker-compose is likely the right solution for you!
+Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs.sourcegraph.com/admin/install/docker-compose). This is useful for organizations that want to scale Sourcegraph, but don’t use Kubernetes. For any customers running a single Docker container and have experienced instability or issues with scaling, Docker Compose is likely the right solution for you!
 
 ## Improved campaign creation, management, and syncing performance
 
@@ -103,16 +101,16 @@ Using the `src-cli` to generate diffs and create a campaign plan has been improv
 
 * It is now easier to create a campaign plan for successful patches when other patches fail for some repositories.
 * The dependencies on the external diff and unzip tools have been removed, instead git is used to produce diffs.
-* .gitignore files are now respected when creating patches.
-* On macOS src CLI can [now be installed with Homebrew.](https://github.com/sourcegraph/homebrew-src-cli)
+* `.gitignore` files are now respected when creating patches.
+* On macOS, `src` CLI can [now be installed with Homebrew.](https://github.com/sourcegraph/homebrew-src-cli)
 
 Take a look at the [improved documentation](https://docs.sourcegraph.com/user/campaigns) for usage and examples.
 
 When creating your campaign in Sourcegraph, it is now clearer what state the campaign is in and is easier to differentiate between draft patches and changesets that have been created on the code host. Additionally, you can now filter the changesets to quickly find which ones need follow up.
 
-Behind the scenes, campaign changesets are now kept up to date using a heuristic solution that reduces the load placed on the code host. Previously, each changeset was updated during regularly scheduled update processes. The new implementation prioritizes syncing changesets based on when last they changed and is also aware of real-time changes that arrive via webhooks.
+Behind the scenes, campaign changesets are now kept up to date using a heuristic solution that reduces the load placed on the code host. Previously, each changeset was updated during regularly scheduled update processes. The new implementation prioritizes syncing changesets based on when they last changed and is also aware of real-time changes that arrive via webhooks.
 
-Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
+Code change campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to code change campaigns for your organization.
 
 ## Required migration for Kubernetes deployments
 
@@ -120,9 +118,9 @@ All admins of existing instances with Kubernetes deployments will need to follow
 
 ## Improved debuggability of Kubernetes deployments
 
-Sourcegraph deployments using docker have had instrumentation available to admins for better monitoring and alerting for several releases. With Sourcegraph 3.14, the Kubernetes cluster deployment now has the same functionality available via the admin page -> Instrumentation or directly at sourcegraph.example.com/-/debug. From there you can trigger pprof profiles, request traces, and more for each server in a Sourcegraph cluster.
+Sourcegraph deployments using Docker have had instrumentation available to admins for better monitoring and alerting for several releases. Now with Sourcegraph 3.14, the Kubernetes cluster deployment has the same functionality available via the admin page -> Instrumentation or directly at sourcegraph.example.com/-/debug. From there you can trigger pprof profiles, request traces, and more for each server in a Sourcegraph cluster.
 
-## Monitoring and alerting added to the Sourcegraph instrumentation
+##  Monitoring and alerting added to Sourcegraph
 
 TODO: Screenshot/video?
 
@@ -135,7 +133,7 @@ TODO: Screenshot/video?
 </p>
 -->
 
-TODO:Intro sentence here. The frontend dashboard now shows in detail how search is behaving overall and at a glance. Additonally, admins can now be proactively notified when critical parts of Sourcegraph are not working as expected.
+TODO:Intro sentence here. The frontend dashboard now shows how search is behaving overall and in detail. Additionally, admins can now be proactively notified when critical parts of Sourcegraph are not working as expected.
 
 Alerts are in place for when:
 
@@ -152,7 +150,7 @@ TODO: screenshot
 
 The new [resource estimator](https://docs.sourcegraph.com/admin/install/resource_estimator) helps admins of new and growing Sourcegraph instances determine the right resources and deployment strategy for their custom scenario. CPU and memory needs are calculated for each service based on the number of repositories, users, large monorepos, and engagement rate of your users.
 
-## Repository management now can exclude GitHub forks/archives 
+## Repository management can now exclude GitHub forks/archives 
 
 Some organizations do not want to include any forks or archived repositories in their Sourcegraph instance. Admins can now exclude GitHub forks and/or archived repositories from the set of repositories being mirrored in Sourcegraph. The GitHub repository management can be updated with `"exclude": [{"forks": true}]` or `"exclude": [{"archived": true}]` to utilize this feature.
 
