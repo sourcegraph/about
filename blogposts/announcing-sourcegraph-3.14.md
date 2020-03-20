@@ -3,7 +3,7 @@ title: "Sourcegraph 3.14: Faster repository permissions, excluding forks and arc
 author: Christina Forney
 publishDate: 2020-03-20T10:00-07:00
 tags: [
-  blog
+  blog, GitLab, Bitbucket, Docker Compose, Kubernetes deployments
 ]
 slug: sourcegraph-3.14
 heroImage: https://about.sourcegraph.com/blog/3.14-release-blog-img.jpg
@@ -22,7 +22,7 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**🐳 Deploy and scale Sourcegraph with Docker Compose**](#deploy-and-scale-sourcegraph-with-docker-compose)<br />
 
-[**📣 Improved campaign creation, management, and syncing performance**](#improved-campaign-creation-management-and-syncing-performance)<br />
+[**📣 Campaigns are easier to create and manage and have reduced the load on code hosts**](#campaigns-are-easier-to-create-and-manage-and-have-reduced-the-load-on-code-hosts)<br />
 
 [**⚠️ Required migration for Kubernetes deployments**](#required-migration-for-kubernetes-deployments)<br />
 Sourcegraph is easier to deploy in environments with strict security requirements.
@@ -85,7 +85,7 @@ It is now easier to sign in with the Sourcegraph browser extension or native int
 
 Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs.sourcegraph.com/admin/install/docker-compose). This is useful for organizations that want to scale Sourcegraph, but don’t use Kubernetes. For any customers running a single Docker container and have experienced instability or issues with scaling, Docker Compose is likely the right solution for you!
 
-## Improved campaign creation, management, and syncing performance
+## Campaigns are easier to create and manage and have reduced the load on code hosts
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -146,10 +146,11 @@ Some organizations do not want to include any forks or archived repositories in 
 
 ## Improved performance and coverage for code intelligence
 
-- Added basic code intelligence for Thrift schema files.
+![Improved Go hover text](/blog/3-14-go-hovertext.png)
+
 - Greatly improved the performance of the Go LSIF indexer (indexing time reduced by 60% for `aws/aws-sdk-go`).
 - The Go LSIF indexer now provides hovertext for packages and external symbols.
-    ![Go symbol hovertext](/blog/3-14-go-hovertext.png)
+- Added basic code intelligence for Thrift schema files.
 
 ## Aggregated search data added to Sourcegraph pings
 
