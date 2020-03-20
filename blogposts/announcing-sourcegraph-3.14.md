@@ -51,7 +51,12 @@ Sourcegraph couldn't be what it is without the community
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-Learn more: [Livestream: Become a Universal Code Search power user - April 2, 10 AM PDT | 1 PM PDT](https://info.sourcegraph.com/webinar-universal-code-search-power-user-apr-02?utm_source=blog)
+<div class="alert alert-info">
+  <p>
+    <strong>LEARN MORE:</strong><br />
+    <a href="https://info.sourcegraph.com/webinar-universal-code-search-power-user-apr-02?utm_source=blog">Livestream: Become a Universal Code Search power user - April 2, 10 AM PDT | 1 PM PDT</a>
+  </p>
+</div>
 
 ## Faster syncing of GitLab and Bitbucket Server repository permissions
 
