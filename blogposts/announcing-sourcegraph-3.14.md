@@ -24,10 +24,10 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**📣 Campaigns are easier to create and manage and have reduced the load on code hosts**](#campaigns-are-easier-to-create-and-manage-and-have-reduced-the-load-on-code-hosts)<br />
 
-[**⚠️ Required migration for Kubernetes deployments**](#required-migration-for-kubernetes-deployments)<br />
+[**⚠️ IMPORTANT: Required migration for Kubernetes and Docker Compose deployments**](#important-required-migration-for-kubernetes-and-docker-compose-deployments)<br />
 Sourcegraph is easier to deploy in environments with strict security requirements.
 
-[**📈 Easier debugging of Kubernetes deployments with profiling and tracing**](#easier-debugging-of-kubernetes-deployments-with-profiling-and-tracing)<br />
+[**📈 Improved debugging of Kubernetes deployments with profiling and tracing**](#improved-debugging-of-kubernetes-deployments-with-profiling-and-tracing)<br />
 
 [**🚨 Search insights and alerts added to admin monitoring**](#search-insights-and-alerts-added-to-admin-monitoring)<br />
 
@@ -111,13 +111,18 @@ When creating your campaign in Sourcegraph, it is now clearer what state the cam
 
 Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
-## Required migration for Kubernetes deployments
+## IMPORTANT: Required migration for Kubernetes and Docker Compose deployments
 
-All admins of existing instances with Kubernetes deployments will need to follow the [migration guide for 3.14](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#314-unreleased). This migration changes the container user from root to non-root for all containers. This change makes Sourcegraph easier to deploy for organizations with strict security requirements. Docker containers and docker-compose deployments are not affected.
+A manual migration is required for Kubernetes and Docker Compose deployments. As is usual, please refer to the documentation for your deployment before upgrading:
 
-## Easier debugging of Kubernetes deployments with profiling and tracing
+- [Kubernetes upgrade documentation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#migrations)
+- [Docker Compose upgrade documentation](https://docs.sourcegraph.com/admin/updates/docker_compose)
 
-Sourcegraph deployments using Docker have had instrumentation available to admins for better monitoring and alerting for several releases. Now with Sourcegraph 3.14, the Kubernetes cluster deployment has the same functionality available via the admin page -> Instrumentation or directly at sourcegraph.example.com/-/debug. From there you can trigger pprof profiles, request traces, and more for each server in a Sourcegraph cluster.
+Single-container `sourcegraph/server` deployments do not require a manual migration for this update.
+
+## Improved debugging of Kubernetes deployments with profiling and tracing
+
+Kubernetes deployments now also have additional debug / instrumentation information available under **Site Admin** → **Instrumentation**. This information will primarily be used in the event that support needs to, for example, request a performance profile for a specific service of Sourcegraph in order to debug an issue you are facing.
 
 ## Search insights and alerts added to admin monitoring
 
