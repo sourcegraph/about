@@ -54,7 +54,7 @@ Sourcegraph couldn't be what it is without the community
 <div class="alert alert-info">
   <p>
     <strong>LEARN MORE:</strong><br />
-    <a href="https://info.sourcegraph.com/online-meetup-march-26?utm_source=blog">Online Meetup: Sourcegraph 3.14 – Thursday, March 26 at 10AM PDT | 1PM PDT</a>
+    <a href="https://info.sourcegraph.com/online-meetup-march-26?utm_source=blog">Online Meetup: Sourcegraph 3.14 – Thursday, March 26 at 10AM PDT | 1PM PDT</a><br />
     <a href="https://info.sourcegraph.com/webinar-universal-code-search-power-user-apr-02?utm_source=blog">Livestream: Become a Universal Code Search power user - Thursday April 2 at 10 AM PDT | 1 PM PDT</a>
   </p>
 </div>
