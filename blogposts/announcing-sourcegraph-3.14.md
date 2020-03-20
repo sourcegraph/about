@@ -127,7 +127,7 @@ Sourcegraph deployments using Docker have had instrumentation available to admin
 
 ![Admin monitoring and alerts](/blog/3-14-monitoring_improvements.gif)
 
-TODO:Intro sentence here. The frontend dashboard now shows how search is behaving overall and in detail. Additionally, admins can now be proactively notified when critical parts of Sourcegraph are not working as expected.
+The frontend dashboard now shows how search is behaving overall and in detail. Additionally, admins can now be proactively notified when critical parts of Sourcegraph are not working as expected.
 
 Alerts are in place for when:
 
