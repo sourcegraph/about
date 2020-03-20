@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.14: Improved permissions syncing, forks and archived repositories excluded by default, and docker-compose deployment"
+title: "Sourcegraph 3.14: Faster repository permissions, excluding forks and archived repositories by default, and Docker Compose deployment"
 author: Christina Forney
 publishDate: 2020-03-20T10:00-07:00
 tags: [
@@ -14,25 +14,26 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 <div style="padding-left: 2rem">
 
-[**🔑 Permissions syncing improvements for GitLab and Bitbucket Server**](#permissions-syncing-improvements-for-gitlab-and-bitbucket-server)<br />
+[**🔑 Faster syncing of GitLab and Bitbucket Server repository permissions**](#faster-syncing-of-gitlab-and-bitbucket-server-repository-permissions)<br />
 
 [**🍴 Forks and archived repositories are excluded from search results by default**](#forks-and-archived-repositories-are-excluded-from-search-results-by-default)<br />
 
-[**🐳 Deploy and scale Sourcegraph with `docker-compose`**](#deploy-and-scale-sourcegraph-with-docker-compose)<br />
+[**🐳 Deploy and scale Sourcegraph with Docker Compose**](#deploy-and-scale-sourcegraph-with-docker-compose)<br />
 
 [**📣 Improved campaign creation, management, and syncing performance**](#improved-campaign-creation-management-and-syncing-performance)<br />
 
 [**⚠️ Required migration for Kubernetes deployments**](#required-migration-for-kubernetes-deployments)<br />
+Sourcegraph is easier to deploy in environments with strict security requirements.
 
-[**📈 Improved debuggability of Kubernetes deployments**](#improved-debuggability-of-kubernetes-deployments)<br />
+[**📈 Easier debugging of Kubernetes deployments with profiling and tracing**](#easier-debugging-of-kubernetes-deployments-with-profiling-and-tracing)<br />
 
-[**🚨 Monitoring and alerting added to the Sourcegraph instrumentation**](#monitoring-and-alerting-added-to-the-sourcegraph-instrumentation)<br />
+[**🚨 Search insights and alerts added to admin monitoring**](#search-insights-and-alerts-added-to-admin-monitoring)<br />
 
 [**🧮 Estimate required resources for your Sourcegraph instance**](#estimate-required-resources-for-your-sourcegraph-instance)<br />
 
-[**🙅‍♀️ Repository management now can exclude GitHub forks/archives**](#repository-management-now-can-exclude-github-forksarchives)<br />
+[**🙅‍♀️ Option to exclude all forks/archives from syncing to Sourcegraph for GitHub**](#option-to-exclude-all-forksarchives-from-syncing-to-sourcegraph-for-github)<br />
 
-[**🧠 LSIF improvements to help advertise?**](#lsif-improvements-to-help-advertise)<br />
+[**🧠 Go LSIF indexer is 3x faster**](#go-lsif-indexer-is-3x-faster)<br />
 
 [**🛎 Aggregated search data added to Sourcegraph pings**](#aggregated-search-data-added-to-sourcegraph-pings)<br />
 
@@ -48,7 +49,7 @@ Sourcegraph couldn't be what it is without the community
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-## Permissions syncing improvements for GitLab and Bitbucket Server
+## Faster syncing of GitLab and Bitbucket Server repository permissions
 
 TODO: Video?
 
@@ -61,11 +62,9 @@ TODO: Video?
 </p>
 -->
 
-Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. 
+Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. See the [documentation for more details](#).
 
-Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` in your site configuration settings. 
-
-Keep your eyes out for improvements to the site admin pages with better insight into when user permissions were last updated, and the ability to force a refresh of permissions for a user or repository.
+Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` in your site configuration settings.
 
 ## Forks and archived repositories are excluded from search results by default
 
@@ -76,9 +75,9 @@ Keep your eyes out for improvements to the site admin pages with better insight 
   <p style="text-align: center"><a href="https://vimeo.com/398759697" target="_blank">View on Vimeo</a></p>
 </p>
 
-The default setting for including forks and archived repositories in your search results is now changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `forks:yes` filters to show results that include archived and forked repositories.
+The default setting for including forks and archived repositories in your search results has changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `forks:yes` filters to show results that include archived and forked repositories.
 
-## Deploy and scale Sourcegraph with `docker-compose`
+## Deploy and scale Sourcegraph with Docker Compose
 
 Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs.sourcegraph.com/admin/install/docker-compose). This is useful for organizations that want to scale Sourcegraph, but don’t use Kubernetes. For any customers running a single Docker container and have experienced instability or issues with scaling, Docker Compose is likely the right solution for you!
 
@@ -93,18 +92,18 @@ Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs
 
 Behind the scenes, campaign changesets are now kept up to date using a heuristic solution that reduces the load placed on the code host. Previously, each changeset was updated during regularly scheduled update processes. The new implementation prioritizes syncing changesets based on when last they changed and is also aware of real-time changes that arrive via webhooks.
 
-The overall experience of generating diffs, creating and reviewing a campaign, then managing the changes to closure has been improved.
+The overall experience of generating diffs, creating and reviewing a campaign, and then managing the changes to closure has been improved.
 
 Using the `src-cli` to generate diffs and create a campaign plan has been improved:
 
 * It is now easier to create a campaign plan for successful patches when other patches fail for some repositories.
-* The dependencies on the external diff and unzip tools have been removed, instead git is used to produce diffs.
+* The dependencies on the external diff and unzip tools have been removed. Instead, git is used to produce diffs.
 * `.gitignore` files are now respected when creating patches.
 * On macOS, `src` CLI can [now be installed with Homebrew.](https://github.com/sourcegraph/homebrew-src-cli)
 
 Take a look at the [improved documentation](https://docs.sourcegraph.com/user/campaigns) for usage and examples.
 
-When creating your campaign in Sourcegraph, it is now clearer what state the campaign is in and is easier to differentiate between draft patches and changesets that have been created on the code host. Additionally, you can now filter the changesets to quickly find which ones need follow up.
+When creating your campaign in Sourcegraph, it is now clearer what state the campaign is in and is easier to differentiate between draft patches and changesets that have been created on the code host. Additionally, you can now filter the changesets to quickly find which ones need follow-up.
 
 Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
@@ -112,22 +111,13 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
 
 All admins of existing instances with Kubernetes deployments will need to follow the [migration guide for 3.14](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#314-unreleased). This migration changes the container user from root to non-root for all containers. This change makes Sourcegraph easier to deploy for organizations with strict security requirements. Docker containers and docker-compose deployments are not affected.
 
-## Improved debuggability of Kubernetes deployments
+## Easier debugging of Kubernetes deployments with profiling and tracing
 
 Sourcegraph deployments using Docker have had instrumentation available to admins for better monitoring and alerting for several releases. Now with Sourcegraph 3.14, the Kubernetes cluster deployment has the same functionality available via the admin page -> Instrumentation or directly at sourcegraph.example.com/-/debug. From there you can trigger pprof profiles, request traces, and more for each server in a Sourcegraph cluster.
 
-##  Monitoring and alerting added to Sourcegraph
+## Search insights and alerts added to admin monitoring
 
-TODO: Screenshot/video?
-
-<!--
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p>
--->
+![Admin monitoring and alerts](/blog/3-14-monitoring_improvements.gif)
 
 TODO:Intro sentence here. The frontend dashboard now shows how search is behaving overall and in detail. Additionally, admins can now be proactively notified when critical parts of Sourcegraph are not working as expected.
 
@@ -142,17 +132,17 @@ Alerts are in place for when:
 
 ## Estimate required resources for your Sourcegraph instance
 
-TODO: screenshot
+![Resource estimator](/blog/3-14-resource-estimator.png)
 
 The new [resource estimator](https://docs.sourcegraph.com/admin/install/resource_estimator) helps admins of new and growing Sourcegraph instances determine the right resources and deployment strategy for their custom scenario. CPU and memory needs are calculated for each service based on the number of repositories, users, large monorepos, and engagement rate of your users.
 
-## Repository management can now exclude GitHub forks/archives 
+## Option to exclude all forks/archives from syncing to Sourcegraph for GitHub
 
 Some organizations do not want to include any forks or archived repositories in their Sourcegraph instance. Admins can now exclude GitHub forks and/or archived repositories from the set of repositories being mirrored in Sourcegraph. The GitHub repository management can be updated with `"exclude": [{"forks": true}]` or `"exclude": [{"archived": true}]` to utilize this feature.
 
-## LSIF improvements to help advertise?
+## Go LSIF indexer is 3x faster
 
-Making the setup process better, links to browsing on open source projects. TBD - waiting on results from this week.
+We have been working on improving performance of LSIF indexers, and as a result, the Go LSIF indexer now runs 3x faster.
 
 ## Aggregated search data added to Sourcegraph pings
 
