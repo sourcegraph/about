@@ -18,6 +18,8 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**🍴 Forks and archived repositories are excluded from search results by default**](#forks-and-archived-repositories-are-excluded-from-search-results-by-default)<br />
 
+[**✍️ Go to definition in PRs and simplified sign in with the browser extension**](#go-to-definition-in-prs-and-simplified-sign-in-with-the-browser-extension)<br />
+
 [**🐳 Deploy and scale Sourcegraph with Docker Compose**](#deploy-and-scale-sourcegraph-with-docker-compose)<br />
 
 [**📣 Improved campaign creation, management, and syncing performance**](#improved-campaign-creation-management-and-syncing-performance)<br />
@@ -76,6 +78,12 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
 </p>
 
 The default setting for including forks and archived repositories in your search results has changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `forks:yes` filters to show results that include archived and forked repositories.
+
+## Go to definition in PRs and simplified sign in with the browser extension
+
+![Sign in without refresh](/blog/3-14-extension-sign-in.gif)
+
+It is now easier to sign in with the Sourcegraph browser extension or native integrations - no need to refresh your code host window! Additionally, we've added support for staying on a pull request when a go to definition is defined within the visible context. For native integration users, these improvements come with an upgrade to Sourcegraph 3.14. Browser extension users can get this by updating to the latest release.
 
 ## Deploy and scale Sourcegraph with Docker Compose
 
