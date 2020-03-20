@@ -64,7 +64,7 @@ TODO: Video?
 </p>
 -->
 
-Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. See the [documentation for more details](#).
+Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. See the [documentation for more details](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing).
 
 Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` in your site configuration settings.
 
