@@ -3,7 +3,7 @@ title: "Sourcegraph 3.14: Faster repository permissions, excluding forks and arc
 author: Christina Forney
 publishDate: 2020-03-20T10:00-07:00
 tags: [
-  blog, GitLab, Bitbucket, Docker Compose, Kubernetes deployments
+  blog, GitLab, Bitbucket, "Docker Compose", "Kubernetes deployments"
 ]
 slug: sourcegraph-3.14
 heroImage: https://about.sourcegraph.com/blog/3.14-release-blog-img.jpg
