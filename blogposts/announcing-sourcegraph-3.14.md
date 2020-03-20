@@ -35,7 +35,7 @@ Sourcegraph is easier to deploy in environments with strict security requirement
 
 [**🙅‍♀️ Option to exclude all forks/archives from syncing to Sourcegraph for GitHub**](#option-to-exclude-all-forksarchives-from-syncing-to-sourcegraph-for-github)<br />
 
-[**🧠 Go LSIF indexer is 3x faster**](#go-lsif-indexer-is-3x-faster)<br />
+[**🧠 Improved performance and coverage for code intelligence**](#improved-performance-and-coverage-for-code-intelligence)<br />
 
 [**🛎 Aggregated search data added to Sourcegraph pings**](#aggregated-search-data-added-to-sourcegraph-pings)<br />
 
@@ -146,9 +146,10 @@ Some organizations do not want to include any forks or archived repositories in 
 
 ## Improved performance and coverage for code intelligence
 
+- Added basic code intelligence for Thrift schema files.
 - Greatly improved the performance of the Go LSIF indexer (indexing time reduced by 60% for `aws/aws-sdk-go`).
 - The Go LSIF indexer now provides hovertext for packages and external symbols.
-- Added basic code intelligence for Thrift schema files.
+    ![Go symbol hovertext](/blog/3-14-go-hovertext.png)
 
 ## Aggregated search data added to Sourcegraph pings
 
