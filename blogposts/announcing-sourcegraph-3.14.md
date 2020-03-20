@@ -24,7 +24,7 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**📣 Campaigns are easier to create and manage and have reduced the load on code hosts**](#campaigns-are-easier-to-create-and-manage-and-have-reduced-the-load-on-code-hosts)<br />
 
-[**⚠️ IMPORTANT: Required migration for Kubernetes and Docker Compose deployments**](#important-required-migration-for-kubernetes-and-docker-compose-deployments)<br />
+[**⚠️ IMPORTANT: Required migration for Kubernetes deployments**](#important-required-migration-for-kubernetes-deployments)<br />
 Sourcegraph is easier to deploy in environments with strict security requirements.
 
 [**📈 Improved debugging of Kubernetes deployments with profiling and tracing**](#improved-debugging-of-kubernetes-deployments-with-profiling-and-tracing)<br />
@@ -112,14 +112,13 @@ When creating your campaign in Sourcegraph, it is now clearer what state the cam
 
 Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
-## IMPORTANT: Required migration for Kubernetes and Docker Compose deployments
+## IMPORTANT: Required migration for Kubernetes deployments
 
-A manual migration is required for Kubernetes and Docker Compose deployments. As is usual, please refer to the documentation for your deployment before upgrading:
+A manual migration is required for Kubernetes deployments. As is usual, please refer to the documentation for your deployment type for upgrading:
 
 - [Kubernetes upgrade documentation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#migrations)
 - [Docker Compose upgrade documentation](https://docs.sourcegraph.com/admin/updates/docker_compose)
-
-Single-container `sourcegraph/server` deployments do not require a manual migration for this update.
+- [Single-container `sourcegraph/server` upgrade documentation](https://docs.sourcegraph.com/admin/updates)
 
 ## Improved debugging of Kubernetes deployments with profiling and tracing
 
