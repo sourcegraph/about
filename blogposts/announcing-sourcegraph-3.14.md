@@ -51,18 +51,9 @@ Sourcegraph couldn't be what it is without the community
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
+Learn more: [Livestream: Become a Universal Code Search power user - April 2, 10 AM PDT | 1 PM PDT](https://info.sourcegraph.com/webinar-universal-code-search-power-user-apr-02?utm_source=blog)
+
 ## Faster syncing of GitLab and Bitbucket Server repository permissions
-
-TODO: Video?
-
-<!--
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p>
--->
 
 Sourcegraph permissions syncing is now more sophisticated to better handle repository permissions at scale. Rather than updating a user’s permissions when they log in and potentially blocking them from seeing search results, Sourcegraph now syncs these permissions opportunistically, as part of a background service. Users are now able to see results from their search queries immediately. Currently, this improvement is supported for GitLab and Bitbucket Server, with GitHub and other code hosts coming soon. See the [documentation for more details](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing).
 
@@ -158,16 +149,12 @@ Sourcegraph collects a small amount of high-level and aggregate data from each i
 
 ## Experimental smart search bar
 
-TODO: Video
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://player.vimeo.com/video/392761379?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
+  <p style="text-align: center"><a href="https://vimeo.com/392761379" target="_blank">View on Vimeo</a></p>
 </p>
--->
 
 In Sourcegraph 3.13, we introduced the smart search bar as an experimental feature. Many improvements have been made, but it will stay marked as experimental as we continue to solicit feedback. If you or your team are interested in trying this feature, add the following setting to your user, organization, or global settings on your Sourcegraph instance: `{ "experimentalFeatures": { "smartSearchField": true } }`. Tweet [@srcgraph](https://twitter.com/srcgraph) or email feedback@sourcegraph.com with your feedback.
 
