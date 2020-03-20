@@ -144,9 +144,11 @@ The new [resource estimator](https://docs.sourcegraph.com/admin/install/resource
 
 Some organizations do not want to include any forks or archived repositories in their Sourcegraph instance. Admins can now exclude GitHub forks and/or archived repositories from the set of repositories being mirrored in Sourcegraph. The GitHub repository management can be updated with `"exclude": [{"forks": true}]` or `"exclude": [{"archived": true}]` to utilize this feature.
 
-## Go LSIF indexer is 3x faster
+## Improved performance and coverage for code intelligence
 
-We have been working on improving performance of LSIF indexers, and as a result, the Go LSIF indexer now runs 3x faster.
+- Greatly improved the performance of the Go LSIF indexer (indexing time reduced by 60% for `aws/aws-sdk-go`).
+- The Go LSIF indexer now provides hovertext for packages and external symbols.
+- Added basic code intelligence for Thrift schema files.
 
 ## Aggregated search data added to Sourcegraph pings
 
