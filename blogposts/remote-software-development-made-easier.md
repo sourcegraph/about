@@ -47,11 +47,17 @@ We built the Sourcegraph browser extension to help you more quickly navigate and
 
 ![Sourcegraph’s go to definition and find references hover tooltip on a code review](/blog/remotework-codereview.png)
 
-> Having Sourcegraph is an improvement for several reasons. It’s an easy way to share pointers to code and searches on code. When working remotely, I can't easily have someone look over my shoulder as I would in person. Screen sharing is possible (but with much higher-friction), and the results are harder to reproduce offline. Links to Sourcegraph are much more useful when trying to add in context for a Slack thread that blew up when I wasn't paying attention.
->
-> Sourcegraph is also a better way to explore unfamiliar code. It costs more to get someone's attention when asking a question (because of timezones, async channels), so when I do need to ask someone for help, I want to respect their time by doing due diligence first. Sourcegraph helps me explore the code more effectively on my own than I could with only local clones and GitHub search.
->
-> --Michael Fromberger, Software Engineer at Sourcegraph
+<div class="blockquote case-studies__quote case-studies__quote--in-content">
+    <p>
+    Having Sourcegraph is an improvement for several reasons. It’s an easy way to share pointers to code and searches on code. When working remotely, I can't easily have someone look over my shoulder as I would in person. Screen sharing is possible (but with much higher-friction), and the results are harder to reproduce offline. Links to Sourcegraph are much more useful when trying to add in context for a Slack thread that blew up when I wasn't paying attention.
+
+    Sourcegraph is also a better way to explore unfamiliar code. It costs more to get someone's attention when asking a question (because of timezones, async channels), so when I do need to ask someone for help, I want to respect their time by doing due diligence first. Sourcegraph helps me explore the code more effectively on my own than I could with only local clones and GitHub search.
+
+  </p>
+  <footer class="blockquote-footer">
+  Michael Fromberger, Software Engineer at Sourcegraph
+  </footer>
+</div>
 
 ## Find the right people
 
@@ -61,17 +67,27 @@ Sourcegraph’s powerful search engine lets you start by searching broadly for w
 
 ![A commit history search with highlighted code authors in Sourcegraph](/blog/remotework-commithistory.png)
 
-> “As a Product Manager, I care about everything--features, bug fixes, improvements--that go into the product. I use a saved search in Sourcegraph to be notified by email every time there is an update to our CHANGELOG. This lets me keep track of what and when features get in and makes sure I know who to talk to about that change if I have any questions. It also removes unnecessary communication cycles between the engineering team and me because rather than needing to interrupt each team member, or require them to reach out to me to find out what is going on, I am proactively informed.”
->
-> -- Christina Forney, Product Manager at Sourcegraph
+<div class="blockquote case-studies__quote case-studies__quote--in-content">
+    <p>
+    As a Product Manager, I care about everything--features, bug fixes, improvements--that go into the product. I use a saved search in Sourcegraph to be notified by email every time there is an update to our CHANGELOG. This lets me keep track of what and when features get in and makes sure I know who to talk to about that change if I have any questions. It also removes unnecessary communication cycles between the engineering team and me because rather than needing to interrupt each team member, or require them to reach out to me to find out what is going on, I am proactively informed.
+    </p>
+  <footer class="blockquote-footer">
+  Christina Forney, Product Manager at Sourcegraph
+  </footer>
+</div>
 
 ## Write better documentation
 
 We’ve found that Sourcegraph helps our engineers write better documentation. Once you have information at your fingertips and see where it’s missing (like when you are hovering over functions), you are more likely to improve the documentation of that code to make understanding it easier at a glance.
 
-> “As we've grown, I've needed to hand off a lot of code ownership and processes to other people. This meant writing a lot of docs (in code and in Markdown files). Having code search makes me more likely and happier to write docs because I believe that people will be more likely to actually discover and read them. ”
->
-> -- Quinn Slack, CEO of Sourcegraph
+<div class="blockquote case-studies__quote case-studies__quote--in-content">
+    <p>
+    As we've grown, I've needed to hand off a lot of code ownership and processes to other people. This meant writing a lot of docs (in code and in Markdown files). Having code search makes me more likely and happier to write docs because I believe that people will be more likely to actually discover and read them. ”
+    </p>
+  <footer class="blockquote-footer">
+  Quinn Slack, CEO of Sourcegraph
+  </footer>
+</div>
 
 Sourcegraph’s search also makes it more likely that you will discover documentation that is stored inside your repositories but outside your code. This increases traffic to documentation and leads to people relying on it more, which in turn causes people to improve it. We have seen this extensively in the [Sourcegraph handbook](https://about.sourcegraph.com/handbook).
 
@@ -79,9 +95,14 @@ Sourcegraph’s search also makes it more likely that you will discover document
 
 You’re staring at some code in your editor, struggling to understand how the code actually works. You decide it’s best to ask your coworker if she knows—but how do you share the code you’re looking at? Walk over to her desk? Navigate through the GitHub user interface to find the right file?
 
-> It’s nice to be able to share links to code with Sourcegraph. It’s important for remote work because your conversation partner often cannot look at your screen.
->
-> -- Uwe Hoffmann, Software Engineer at Sourcegraph
+<div class="blockquote case-studies__quote case-studies__quote--in-content">
+    <p>
+    It’s nice to be able to share links to code with Sourcegraph. It’s important for remote work because your conversation partner often cannot look at your screen.
+    </p>
+  <footer class="blockquote-footer">
+  Uwe Hoffmann, Software Engineer at Sourcegraph
+  </footer>
+</div>
 
 With [Sourcegraph editor extensions](https://docs.sourcegraph.com/integration/editor), you can easily use a shortcut key to open your current selection on Sourcegraph. You can also use our [browser search engine shortcuts](https://docs.sourcegraph.com/integration/browser_search_engine) to quickly search across your entire organization’s code. Both allow you to instantly get a link to that code that you can share with a coworker.
 
@@ -95,9 +116,14 @@ With [Sourcegraph editor extensions](https://docs.sourcegraph.com/integration/ed
 - Showcases code dependencies to ensure informed communication
 - Enables link sharing to code, facilitating remote and asynchronous conversations
 
-> Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool. The alternative is waiting for someone else to tell you the answer, which means you are blocked in the meantime, or you have to task-switch, which is costly.
->
-> --Nick Snyder, VP Engineering at Sourcegraph
+<div class="blockquote case-studies__quote case-studies__quote--in-content">
+    <p>
+    Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool. The alternative is waiting for someone else to tell you the answer, which means you are blocked in the meantime, or you have to task-switch, which is costly.
+    </p>
+  <footer class="blockquote-footer">
+  Nick Snyder, VP Engineering at Sourcegraph
+  </footer>
+</div>
 
 **We’re excited to learn how Sourcegraph has made your remote work experience better and would love to hear from you on [Twitter](https://twitter.com/srcgraph)!**
 
