@@ -1,13 +1,13 @@
 ---
 title: "Remote software development made easier"
+author: Sourcegraph
+authorUrl: https://twitter.com/srcgraph
 publishDate: 2020-03-22T17:59
 tags: [blog]
 slug: remote-software-development-made-easier
 heroImage: https://about.sourcegraph.com/blog/remote-easier.jpg
 published: true
 ---
-
-# Remote software development made easier
 
 Sourcegraph has been remote-friendly from the beginning — our two longest-tenured teammates have worked remotely since 2015 from Arizona and South Africa! We moved to remote-first in May of 2019 and completed our transition to all-remote with the ringing-in of 2020.
 
@@ -51,7 +51,7 @@ We built the Sourcegraph browser extension to help you more quickly navigate and
     <p>
     Having Sourcegraph is an improvement for several reasons. It’s an easy way to share pointers to code and searches on code. When working remotely, I can't easily have someone look over my shoulder as I would in person. Screen sharing is possible (but with much higher-friction), and the results are harder to reproduce offline. Links to Sourcegraph are much more useful when trying to add in context for a Slack thread that blew up when I wasn't paying attention.
 
-    Sourcegraph is also a better way to explore unfamiliar code. It costs more to get someone's attention when asking a question (because of timezones, async channels), so when I do need to ask someone for help, I want to respect their time by doing due diligence first. Sourcegraph helps me explore the code more effectively on my own than I could with only local clones and GitHub search.
+Sourcegraph is also a better way to explore unfamiliar code. It costs more to get someone's attention when asking a question (because of timezones, async channels), so when I do need to ask someone for help, I want to respect their time by doing due diligence first. Sourcegraph helps me explore the code more effectively on my own than I could with only local clones and GitHub search.
 
   </p>
   <footer class="blockquote-footer">
