@@ -17,21 +17,21 @@ We have compiled some excellent tips and tricks from fellow [teammates](https://
 
 ### Home office and desk setup
 
-- Separate work and home: “Try working in a different space to where you relax/sleep.”
-- Ergonomics are crucial: “Consider getting an ergonomically friendly chair and standing desk.”
-- Get a loud keyboard: “You can use a loud keyboard, unlike in an office environment.”
+- **Separate work and home:** “Try working in a different space to where you relax/sleep.”
+- **Ergonomics are crucial:** “Consider getting an ergonomically friendly chair and standing desk.”
+- **Get a loud keyboard:** “You can use a loud keyboard, unlike in an office environment.”
 
 ### Schedule
 
-- Stick to your plan: “When working from home, it’s VERY important to have a set schedule. You’ll also need the discipline to respect it, or you risk blurring the lines between work and life to an unhealthy degree.”
-- Triage: “In the morning, catch up on Slack/GitHub. Stick to triaging (recording in org-mode Slack/issues to get back to), so you can review and respond to the smaller stuff instantly. Then, create a plan for the rest of the day.”
-- Timebox: “Schedule your daily working hours (whether that's 9-5 or a variant) with flexibility to work a little earlier or later. Productivity thrives with timeboxes. 'One hour until lunch' or 'Two hours till the day is over' works much better than 'Let's start working on this and see how long it takes.'’”
+- **Stick to your plan:** “When working from home, it’s VERY important to have a set schedule. You’ll also need the discipline to respect it, or you risk blurring the lines between work and life to an unhealthy degree.”
+- **Triage:** “In the morning, catch up on Slack/GitHub. Stick to triaging (recording in org-mode Slack/issues to get back to), so you can review and respond to the smaller stuff instantly. Then, create a plan for the rest of the day.”
+- **Timebox:** “Schedule your daily working hours (whether that's 9-5 or a variant) with flexibility to work a little earlier or later. Productivity thrives with timeboxes. 'One hour until lunch' or 'Two hours till the day is over' works much better than 'Let's start working on this and see how long it takes.'’”
 
 ### Communication
 
-- Care: “Start by caring about your written communication. Well-written prose looks exactly like well-written clean code: like someone cares. Most importantly, it should be written for others to understand with no obvious typos and grammar mistakes. Always reread and edit what you write. Remember to ensure that what you want to communicate is clear and can be understood by someone who doesn't have all of the context and knowledge you had when writing. Extra points for removing unnecessary sentences and words.”
-- Mind the round trip time: “People work in different time zones and might take a full working day or night for someone to respond to your messages. To avoid a multi-day back-and-forth, keep this round trip time — from you to the receiver and back — in mind. In practical terms: try to provide as much information as necessary for the other person to answer your request without the need for them to ask follow-up questions. Of course, that’s not always possible, but the goal should be to eliminate it as much as possible.”
-- Raise your voice: “When you’re working remotely, your colleagues won’t bump into you on your way to the office kitchen or stop by at your desk to ask you how your day is going. Nobody is going to meet you by accident. You're not visible if you don't raise your voice. Actively communicate your progress, proactively ask for help, clearly document what you know, etc.”
+- **Care:** “Start by caring about your written communication. Well-written prose looks exactly like well-written clean code: like someone cares. Most importantly, it should be written for others to understand with no obvious typos and grammar mistakes. Always reread and edit what you write. Remember to ensure that what you want to communicate is clear and can be understood by someone who doesn't have all of the context and knowledge you had when writing. Extra points for removing unnecessary sentences and words.”
+- **Mind the round trip time:** “People work in different time zones and might take a full working day or night for someone to respond to your messages. To avoid a multi-day back-and-forth, keep this round trip time — from you to the receiver and back — in mind. In practical terms: try to provide as much information as necessary for the other person to answer your request without the need for them to ask follow-up questions. Of course, that’s not always possible, but the goal should be to eliminate it as much as possible.”
+- **Raise your voice:** “When you’re working remotely, your colleagues won’t bump into you on your way to the office kitchen or stop by at your desk to ask you how your day is going. Nobody is going to meet you by accident. You're not visible if you don't raise your voice. Actively communicate your progress, proactively ask for help, clearly document what you know, etc.”
 
 ## Benefits of using Sourcegraph when working remotely
 
@@ -99,6 +99,6 @@ With [Sourcegraph editor extensions](https://docs.sourcegraph.com/integration/ed
 >
 > --Nick Snyder, VP Engineering at Sourcegraph
 
-We’re excited to learn how Sourcegraph has made your remote work experience better and would love to hear from you on [Twitter](https://twitter.com/srcgraph)!
+**We’re excited to learn how Sourcegraph has made your remote work experience better and would love to hear from you on [Twitter](https://twitter.com/srcgraph)!**
 
-Learn more on how Sourcegraph Universal Code Search can improve your productivity and efficiency as a developer from our eBook: https://about.sourcegraph.com/resources/universal-code-search-ebook/
+**Learn more on how Sourcegraph Universal Code Search can improve your productivity and efficiency as a developer from our eBook: https://about.sourcegraph.com/resources/universal-code-search-ebook/**
