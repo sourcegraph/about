@@ -5,7 +5,7 @@ authorUrl: https://twitter.com/srcgraph
 publishDate: 2020-03-22T17:59
 tags: [blog]
 slug: remote-software-development-made-easier
-heroImage: https://about.sourcegraph.com/blog/remote-easier.jpg
+heroImage: /blog/remote-easier.jpg
 published: true
 ---
 
