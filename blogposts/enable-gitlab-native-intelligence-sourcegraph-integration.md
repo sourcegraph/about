@@ -27,9 +27,9 @@ This screencast (with accompanying audio) shows how to enable and configure the 
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/398105925?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube.com/embed/jfF84lYZg2c" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://youtu.be/INfm4Nun1EM" target="_blank">View on YouTube</a></p>
+  <p style="text-align: center"><a href="https://youtu.be/jfF84lYZg2c" target="_blank">View on YouTube</a></p>
 </p>
 
 ## Native code intelligence for GitLab.com
@@ -39,7 +39,7 @@ This screencast (with accompanying audio) shows how to enable code intelligence 
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/399355893?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube.com/embed/qJDbuML5jFU" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://www.youtube.com/watch?v=qJDbuML5jFU" target="_blank">View on YouTube</a></p>
 </p>
