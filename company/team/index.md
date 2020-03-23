@@ -211,4 +211,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - London, UK 🇬🇧
 - [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [@imtommyroberts](https://twitter.com/imtommyroberts), [LinkedIn](https://www.linkedin.com/in/imtommyroberts)
 - Before Sourcegraph Tommy was providing freelance product design services to early stage startups. He's passionate about accessible design, the relationship between design and development, and ethics in tech. Outside of work he likes to explore the food scene in London, criticize his own cooking, read too many articles, and watch too many youtube videos.
+
+## garo brik (they/them)
+
+- software engineer
+- t'karonto, canada 🇨🇦
+- [garo@sourcegraph.com](mailto:garo@sourcegraph.com), [gbrik](https://github.com/gbrik)
+- garo cooks, climbs, dances, reads, and games with their family, and wrestles with compilers in the darkest recesses of their imagination. they work on the code intel team when they can get the many cats in their life off their keyboard. they are slowly trying to convince everyone in their life to move with them somewhere with more mountains & ocean and less snow.
 <!-- Paste *your* section above this line! -->
