@@ -25,21 +25,26 @@ With the [GitLab native code intelligence integration from Sourcegraph](/blog/gi
 
 This screencast (with accompanying audio) shows how to enable and configure the Sourcegraph integration to bring code intelligence to all code views for public, private, and internal repositories on GitLab CE/EE instances.
 
-<p class="container">
+<div class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://www.youtube.com/embed/jfF84lYZg2c" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://youtu.be/jfF84lYZg2c" target="_blank">View on YouTube</a></p>
-</p>
+</div>
 
 ## Native code intelligence for GitLab.com
 
 This screencast (with accompanying audio) shows how to enable code intelligence for public repositories on GitLab.com.
 
-
-<p class="container">
+<div class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://www.youtube.com/embed/qJDbuML5jFU" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://www.youtube.com/watch?v=qJDbuML5jFU" target="_blank">View on YouTube</a></p>
-</p>
+</div>
+
+<br/>
+
+<div class="alert alert-info text-center">
+  See the <a href="https://docs.gitlab.com/ee/integration/sourcegraph.html">GitLab Sourcegraph integration docs</a> for more information.
+</div>
