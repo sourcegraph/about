@@ -9,6 +9,7 @@ import { GitLabIntegrationSection } from '../components/product/GitLabIntegratio
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
+import { FeaturedBlogPosts, BlogPost } from '../components/FeaturedBlogPosts'
 import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { Tweets } from '../components/Tweets'
 import { Vimeo } from '../components/Vimeo'
@@ -18,12 +19,6 @@ import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
 import Helmet from 'react-helmet'
 
-export interface BlogPost {
-    title: string
-    description: string
-    thumbnail: string
-    url: string
-}
 
 /**
  * This list is lovingly hand-crafted for the home page so the title,
@@ -31,24 +26,41 @@ export interface BlogPost {
  *
  * Would be great to see this data-driven at some point in the future.
  */
-const featuredBlogPosts:BlogPost[] = [
+const featuredPosts:BlogPost[] = [
+    {
+        title: 'Announcing Sourcegraph 3.14',
+        description: 'Faster repository permissions syncing, Campaigns workflow and UI improvements, deploy and scale with Docker Compose, forks and archived repositories now excluded from search results by default, and more.',
+        thumbnail: '/blog/3.14-release-blog-img.jpg',
+        url: '/blog/sourcegraph-3.14',
+        active: true
+    },
+    {
+        title: 'Enable native code intelligence for GitLab with the Sourcegraph integration',
+        description: 'Bring native code intelligence with IDE-like features such as hover tooltips and go to definition to every GitLab code view with the Sourcegraph integration.',
+        thumbnail: '/blog/gitlab-integration-preview-dark.png',
+        url: '/blog/enable-native-code-intelligence-gitlab-sourcegraph-integration',
+        active: true
+    },
     {
         title: 'Universal Code Search for GitLab',
         description: 'Learn how to connect and configure Sourcegraph Universal Code Search for public and private repositories on GitLab CE/EE instances.',
         thumbnail: '/external-logos/gitlab-mark.svg',
-        url: '/blog/universal-code-search-gitlab'
+        url: '/blog/universal-code-search-gitlab',
+        active: false
     },
     {
         title: 'Universal Code Search for GitHub',
         description: 'Learn how to connect and configure Sourcegraph Universal Code Search for public and private repositories on GitHub.com and GitHub Enterprise instances.',
         thumbnail: '/external-logos/github-logo.svg',
-        url: '/blog/universal-code-search-github'
+        url: '/blog/universal-code-search-github',
+        active: true
     },
     {
         title: 'Sourcegraph Secures $23 Million Series B Round for Universal Code Search',
         description: 'We\'ve raised $23M in Series B funding, led by David Sacks at Craft Ventures.',
         thumbnail: '/sourcegraph-mark.png',
-        url: '/blog/universal-code-search-github'
+        url: '/blog/universal-code-search-github',
+        active: false
     }
 ]
 
@@ -236,29 +248,8 @@ export default ((props: any) => (
                 </div>
             <GitLabIntegrationSection />
              <ContentSection color="white" className="blog-posts-home pt-5 pb-6">
-                <h2 className="text-center font-weight-light mb-4">
-                    Featured blog posts
-                </h2>
-                 <div className="container">
-                     <div className="row text-dark justify-content-center">
-                        {featuredBlogPosts.map(({ title, description, thumbnail, url }, i) => (
-                            <div className="blog-posts-home__post col-md-4 px-2">
-                                <div className="card">
-                                    <div className="text-center">
-                                        <a href={url}>
-                                            <img className="blog-posts-home__thumbnail py-3 px-3" src={thumbnail} />
-                                        </a>
-                                    </div>
-                                    <div className="card-body">
-                                        <h5 className="card-title">{title}</h5>
-                                        <p className="card-text">{description}</p>
-                                        <a href={url} className="btn btn-primary">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                     </div>
-                 </div>
+                <h2 className="text-center font-weight-light mb-4">Featured blog posts</h2>
+                <FeaturedBlogPosts posts={featuredPosts} />
              </ContentSection>
             <ContentSection color="black">
                 <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
