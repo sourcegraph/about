@@ -15,24 +15,28 @@ Here are all the photos that were contributed to the pull request behind this bl
 
 ## Thorsten Ball, Software Engineer
 
-![Home office setup of Thorsten Ball, software engineer](/images/home-office-setups/thorsten_ball.jpg)
+![Home office setup of Thorsten Ball, software engineer](images/home-office-setups/thorsten_ball.jpg)
 
 ## Ryan Slade, Software Engineer
 
-![Home office setup of Ryan Slade, software engineer](/images/home-office-setups/ryan_slade.jpg)
+![Home office setup of Ryan Slade, software engineer](images/home-office-setups/ryan_slade.jpg)
 
 ## Joe Chen, Software Engineer
 
-![Home office setup of Joe Chen, software engineer](/images/home-office-setups/joe_chen.jpg)
+![Home office setup of Joe Chen, software engineer](images/home-office-setups/joe_chen.jpg)
 
 ## Eric Fritz, Software Engineer
 
-![Home office setup of Eric Fritz, software engineer](/images/home-office-setups/eric_fritz.jpg)
+![Home office setup of Eric Fritz, software engineer](images/home-office-setups/eric_fritz.jpg)
 
 ## Erik Seliger, Software Engineer
 
-![Home office setup of Erik Seliger, software engineer](/images/home-office-setups/erik_seliger.jpg)
+![Home office setup of Erik Seliger, software engineer](images/home-office-setups/erik_seliger.jpg)
 
 ## Michael Fromberger, Software Engineer
 
-![Home office setup of Michael Fromberger, software engineer](/images/home-office-setups/michael_fromberger.jpg)
+![Home office setup of Michael Fromberger, software engineer](images/home-office-setups/michael_fromberger.jpg)
+
+## Nick Snyder, VP Engineering
+
+![Home office setup of Nick Snyder, VP Engineering](images/home-office-setups/nick_snyder.jpg)
