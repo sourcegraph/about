@@ -10,7 +10,7 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
 <div class="p-3" style="background: #f2f4f8; word-wrap: break-word;">
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## Is this the right Terms of Service for me?
 
@@ -30,7 +30,7 @@ Are you interested in terms for...
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 0. Table of contents
 
@@ -55,7 +55,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 |15. [Miscellaneous](#15-miscellaneous)|Miscellaneous topics|
 
 <br/>
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 1. Definitions
 
@@ -83,7 +83,7 @@ As used on this page, the following terms have the following specific meanings:
 
 1.10 **“You”** refers to the individual person, company, or organization that has visited or is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), you represent and warrant that you’re authorized to bind that company or organization to the Agreement and that you've read, understood, and agree to be bound by the Agreement on that company or organization’s behalf.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 2. Account terms
 
@@ -107,7 +107,7 @@ As used on this page, the following terms have the following specific meanings:
 
 2.2  **Required Information**. In order to register for an Account, you must provide all of the information we request during the onboarding process. We may use that information in accordance with our [Privacy Policy](/privacy).
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 3. Proprietary rights and licenses
 
@@ -137,7 +137,7 @@ As used on this page, the following terms have the following specific meanings:
 
 3.5 **Extensions**. As described above, certain features of the Services may allow you to download software packages from the Extension Registry. These packages may be offered by us or by third-party providers. Packages made available by third-party providers are subject to separate terms and conditions and are not governed by these Terms.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 4. Usage data
 
@@ -149,7 +149,7 @@ In the course of your use of the Services, we may collect certain information ab
 
 If we share or publicly disclose any information constituting or derived from Usage Data (e.g., in marketing materials), we will aggregate or anonymize that information to avoid identifying you or any other individual.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 5. Privacy and security
 
@@ -161,7 +161,7 @@ User privacy is important to us. Please read our [Privacy Policy](/privacy) care
 
 We have implemented commercially reasonable technical and organizational measures designed to secure information you provide us from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. You acknowledge that you provide any sensitive information to us at your own risk.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 6. Termination
 
@@ -175,7 +175,7 @@ You agree that any termination of your access to the Services or your Account ma
 
 Any suspected fraudulent, abusive, or illegal activity that may be grounds for termination of your use of the Services may be referred to appropriate law enforcement authorities. These remedies are in addition to any other remedies we may have at law or in equity.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 7. No fees
 
@@ -185,7 +185,7 @@ Any suspected fraudulent, abusive, or illegal activity that may be grounds for t
 
 The Services made available via the Site are provided to you at no charge, subject to the terms and conditions of the Agreement. As a result, we have no obligation to provide any of the Services to you unless we otherwise agreed in writing.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 8. Third party services and software
 
@@ -199,7 +199,7 @@ The Services may contain copyrighted software of our licensors (**“Third Party
 
 If there's ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 9. Copyright infringement and DMCA policy
 
@@ -232,7 +232,7 @@ Please note that this procedure is exclusively for notifying us that your copyri
 
 In accordance with the DMCA and other applicable law, we have adopted a policy of terminating, in appropriate circumstances, users who are deemed to be repeat infringers. We may also at our sole discretion limit access to the Services and/or terminate the Accounts of any users who infringe any intellectual property rights of others, whether or not there is any repeat infringement.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 10. No warranties; disclaimer
 
@@ -244,7 +244,7 @@ THE SERVICES AND PUBLIC CODE DATA, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCT
 
 CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS AS PROVIDED BY LAW.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 11. Limitation of liability
 
@@ -260,7 +260,7 @@ IN NO EVENT WILL OUR (OR OUR AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSOR
 
 You acknowledge and agree that we have offered our products and services, set our prices, and entered into the Agreement in reliance upon the disclaimers of warranty and the limitations of liability set forth herein, that the disclaimers of warranty and the limitations of liability set forth herein reflect a reasonable and fair allocation of risk between the parties (including the risk that a contract remedy may fail of its essential purpose and cause consequential loss), and that the disclaimers of warranty and the limitations of liability set forth herein form an essential basis of the bargain between you and us.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 12. Indemnification
 
@@ -277,7 +277,7 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 5. any claim or damages that arise as a result of your use of the Public Code Data or any Content submitted via your account (including UGC); or
 6. any other party's access and use of the Services with your unique username, password or other appropriate security code. We will have the right to control the defense, settlement, adjustment or compromise of any such claims, actions or proceedings by using counsel selected by us. We will use reasonable efforts to notify you of any such claims, actions, or proceedings upon becoming aware of the same.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 13. Location of the Services; export controls
 
@@ -289,7 +289,7 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 13.2 **Export Controls**. The Services and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Commerce Department's Table of Deny Orders. By downloading or using the Services, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 14. Governing law; arbitration; and class action/jury trial waiver
 
@@ -303,7 +303,7 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 14.3 **Class Action/Jury Trial Waiver**. WITH RESPECT TO ALL PERSONS AND ENTITIES, REGARDLESS OF WHETHER THEY HAVE OBTAINED OR USED THE SERVICES FOR PERSONAL, COMMERCIAL OR OTHER PURPOSES, ALL CLAIMS MUST BE BROUGHT IN THE PARTIES' INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION OR OTHER REPRESENTATIVE PROCEEDING. THIS WAIVER APPLIES TO CLASS ARBITRATION, AND, UNLESS WE AGREE OTHERWISE, THE ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON'S CLAIMS. YOU AGREE THAT, BY ENTERING INTO THE AGREEMENT, WE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION, OR OTHER REPRESENTATIVE PROCEEDING OF ANY KIND.
 
-<span style="color:#f96216;">
+<span style="color:#b200f8;">
 
 ## 15. Miscellaneous
 

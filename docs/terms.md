@@ -6,11 +6,7 @@ permalink: terms
 
 Thank you for using Sourcegraph! Select the appropriate Terms of Service below.
 
-<span style="color:#f96216;">
-
 ## Terms of Service index
-
-</span>
 
 Are you interested in terms for...
 

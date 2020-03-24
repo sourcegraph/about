@@ -73,12 +73,13 @@ const testimonials: Testimonial[] = [{
         author: {
             name: 'Kevin Chen',
             title: 'Software Engineer',
-            image: 'case-studies/kevin-chen-yelp.jpg',
+            image: '/case-studies/kevin-chen-yelp.jpg',
         },
         cta: {
             text: 'Read case study',
             url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
             target: '_blank',
+            rel: 'nofollow'
         },
     },
     {
@@ -106,7 +107,7 @@ const testimonials: Testimonial[] = [{
         },
         cta: {
             text: 'Read case study',
-            url: 'case-studies/quantcast-large-scale-refactoring',
+            url: '/case-studies/quantcast-large-scale-refactoring',
         },
     },
     {
@@ -134,7 +135,7 @@ const testimonials: Testimonial[] = [{
         },
         cta: {
             text: 'Read case study',
-            url: 'case-studies/we-are-thorn',
+            url: '/case-studies/we-are-thorn',
         },
     },
     {
