@@ -1,9 +1,9 @@
 ---
-title: "The home office setups of Sourcegraph"
+title: "The home offices of Sourcegraph"
 author: Thorsten Ball
 publishDate: 2020-03-27T18:00+02:00
 tags: [ blog, remote ]
-slug: home-office-setups-of-sourcegraph
+slug: home-offices-of-sourcegraph
 published: true
 ---
 
