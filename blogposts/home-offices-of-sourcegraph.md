@@ -15,4 +15,4 @@ Here are all the photos that were contributed to the pull request behind this bl
 
 ## Thorsten Ball, Software Engineer
 
-![Home office setup of Thorsten Ball, software engineer](blog/home-office-setups/thorsten_ball.jpg)
+![Home office setup of Thorsten Ball, software engineer](/images/home-office-setups/thorsten_ball.jpg)
