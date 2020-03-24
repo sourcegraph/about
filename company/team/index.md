@@ -151,8 +151,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Dan Adler
 
 - VP Business
+- He/him
 - San Francisco, CA, USA 🇺🇸
-- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/)
+- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/), [GitHub](https://github.com/dadlerj)
 - In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
 
 ## Tomás Senart
