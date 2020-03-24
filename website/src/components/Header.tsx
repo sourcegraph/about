@@ -31,7 +31,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                 <nav className="header navbar navbar-dark navbar-expand-md border-bottom p-3">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
-                            <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph logo" />
+                            <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph" />
                         </Link>
                         {!this.props.minimal && (
                             <>
