@@ -32,3 +32,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Erik Seliger, Software Engineer
 
 ![Home office setup of Erik Seliger, software engineer](/images/home-office-setups/erik_seliger.jpg)
+
+## Michael Fromberger, Software Engineer
+
+![Home office setup of Michael Fromberger, software engineer](/images/home-office-setups/michael_fromberger.jpg)
