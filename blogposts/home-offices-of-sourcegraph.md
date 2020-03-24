@@ -28,3 +28,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Eric Fritz, Software Engineer
 
 ![Home office setup of Eric Fritz, software engineer](/images/home-office-setups/eric_fritz.jpg)
+
+## Erik Seliger, Software Engineer
+
+![Home office setup of Erik Seliger, software engineer](/images/home-office-setups/erik_seliger.jpg)
