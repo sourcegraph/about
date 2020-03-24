@@ -20,3 +20,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Ryan Slade, Software Engineer
 
 ![Home office setup of Ryan Slade, software engineer](/images/home-office-setups/ryan_slade.jpg)
+
+## Joe Chen, Software Engineer
+
+![Home office setup of Joe Chen, software engineer](/images/home-office-setups/joe_chen.jpg)
