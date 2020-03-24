@@ -24,3 +24,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Joe Chen, Software Engineer
 
 ![Home office setup of Joe Chen, software engineer](/images/home-office-setups/joe_chen.jpg)
+
+## Eric Fritz, Software Engineer
+
+![Home office setup of Eric Fritz, software engineer](/images/home-office-setups/eric_fritz.jpg)
