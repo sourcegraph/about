@@ -1,12 +1,8 @@
 <!--
-This template is used for tracking developer relations activities for our monthly major/minor release of Sourcegraph.
+This template is used for tracking product activities for our monthly major/minor release of Sourcegraph.
 -->
 
-# MAJOR.MINOR Release: DevRel tasks
-
-<!-- 
-  Once created, link the blog post pull request, email, and tweet for this release.
--->
+# MAJOR.MINOR Release: Product release tasks
 
 - [ ] [Release blog post](#)
 - [ ] [Release email](#)
@@ -20,7 +16,7 @@ This template is used for tracking developer relations activities for our monthl
 
 - [ ] Create draft tweet
 - [ ] Create draft email
-- [ ] Link to the blog post, email and tweet <!-- empty links are the top of the issue template>
+- [ ] Link to the blog post, email and tweet
 
 ### Create calendar events
 
@@ -32,13 +28,16 @@ Add events to the shared Release Schedule calendar in Google and invite team@sou
 
 ## In the first week
 
-- [ ] Confirm with each team that the planned deliverables are still on track to be announced in the blog post.
 - [ ] Fill out each section based on the deliverables to first draft quality
 - [ ] Think about what media (e.g. screenshot, screencast) will accompany the section content
 
 ## In the second week
 
 - [ ] Remove `motd` previous release promotion from [Sourcegraph.com global settings](https://sourcegraph.com/site-admin/global-settings)
+- [ ] Confirm with each team that the planned deliverables are still on track to be announced in the blog post.
+
+## 10 working days before release
+
 - [ ] Post the blog post draft to #dev-announce: `The blog post draft for <VERSION> is ready, please review your parts are accurate and provide feedback by <DATE>: <link>
 - [ ] Tweet written
 - [ ] Email written
@@ -63,7 +62,7 @@ Add events to the shared Release Schedule calendar in Google and invite team@sou
 - [ ] Publish blog post once the final release is cut, and docs version change is deployed
 - [ ] Publish tweet:
   - [ ] Pin new release tweet
-  - [ ] Confirm with Product if tweet will be promoted
+  - [ ] Confirm with Marketing if tweet will be promoted
 - [ ] Send email in HubSpot
 - [ ] Create new `notice` in [Sourcegraph.com global settings](https://sourcegraph.com/site-admin/global-settings)
    ```
