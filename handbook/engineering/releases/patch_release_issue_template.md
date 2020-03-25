@@ -19,7 +19,7 @@ Arguments:
 
 ## Release sourcegraph/server
 
-- [ ] Push the branch `$MAJOR.$MINOR` with your cherry-picked commit(s) and make sure CI passes.
+- [ ] Push the branch [`$MAJOR.$MINOR`](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR) with your cherry-picked commit(s) and make sure CI passes.
 - [ ] Push a release candidate tag:
     ```
     git checkout '$MAJOR.$MINOR'
