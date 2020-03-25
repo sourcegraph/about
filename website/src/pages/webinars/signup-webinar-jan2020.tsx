@@ -3,7 +3,6 @@ import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { createHubSpotForm } from '../../components/HubSpot'
 
-
 export default ((props: any) => {
     useLayoutEffect(() => {
         createHubSpotForm({

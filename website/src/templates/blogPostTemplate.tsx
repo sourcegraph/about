@@ -29,7 +29,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
 
         if (props.authorUrl) {
             element = (
-             <span>By <a href={props.authorUrl}>{props.author}</a></span>
+                <span>
+                    By <a href={props.authorUrl}>{props.author}</a>
+                </span>
             )
         } else {
             element = <span>By {props.author}</span>
@@ -82,8 +84,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
                                 <div className="blog__posts--post-byline">
-				    <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} /> on {publishDate}
-				</div>
+                                    <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} />{' '}
+                                    on {publishDate}
+                                </div>
                             </section>
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
@@ -110,14 +113,14 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                     </div>
                 </div>
                 <Jumbotron
-                color="purple"
-                className="py-4"
-                logomark={false}
-                title="Try Sourcegraph now"
-                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-            >
-                <GetSourcegraphNowActions />
-            </Jumbotron>
+                    color="purple"
+                    className="py-4"
+                    logomark={false}
+                    title="Try Sourcegraph now"
+                    description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
+                >
+                    <GetSourcegraphNowActions />
+                </Jumbotron>
             </Layout>
         )
     }

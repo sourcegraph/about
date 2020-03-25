@@ -3,7 +3,10 @@ import * as React from 'react'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 
 export const GitLabIntegrationSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <div id="gitlab-integration" className="gitlab-integration-section py-5 container-fluid justify-content-center d-flex">
+    <div
+        id="gitlab-integration"
+        className="gitlab-integration-section py-5 container-fluid justify-content-center d-flex"
+    >
         <div className="row justify-content-center container">
             <h2 className="text-center display-4 mb-2">
                 <div className="gitlab-integration-section__title ml-4">
@@ -30,8 +33,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                     </div>
                 </div>
                 <p className="home__intro-text font-weight-light">
-                    GitLab has partnered with Sourcegraph to provide code navigation natively to GitLab
-                    users
+                    GitLab has partnered with Sourcegraph to provide code navigation natively to GitLab users
                 </p>
                 <a
                     className="mt-3 d-flex align-items-center text-decoration-none"

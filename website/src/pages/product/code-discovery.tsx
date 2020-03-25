@@ -44,7 +44,7 @@ export default ((props: any) => (
         >
             <PageSectionLinks
                 sections={[
-                   { text: 'Features', url: '#features' },
+                    { text: 'Features', url: '#features' },
                     { text: 'Use cases', url: '#use-cases' },
                     { text: 'Integrations', url: '#integrations' },
                     { text: 'Demo screencasts', url: '#demo' },
@@ -55,9 +55,7 @@ export default ((props: any) => (
                 <h2 id="features" className="text-center display-3">
                     Code navigation and exploration
                 </h2>
-                <p className="text-center">
-                    Find answers faster, across any codebase from one centralized place.
-                </p>
+                <p className="text-center">Find answers faster, across any codebase from one centralized place.</p>
             </ContentSection>
             <ContentSection color="white" className="pt-6 pb-2">
                 <div className="row">
@@ -132,7 +130,7 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            
+
             <ContentSection color="purple" className="py-6">
                 <h2 className="text-center display-4 pb-4">See Sourcegraph code discovery in action</h2>
                 <video autoPlay={true} muted={true} loop={true} playsInline={true} className="w-100 h-auto">
@@ -147,16 +145,21 @@ export default ((props: any) => (
                     Demo video playback is not supported on your browser.
                 </video>
             </ContentSection>
-            
+
             <div className="container-fluid bg-white text-dark pt-1 pb-5">
                 <div className="code-search-navigation-page__use-cases">
                     <h2 id="use-cases" className="mt-5 display-4 text-center">
                         How does code search help?
                     </h2>
                     <p className="text-center w-75 mx-auto">
-                        Google developers use code search 5-10 times daily (<em>Table 1</em> in <a
+                        Google developers use code search 5-10 times daily (<em>Table 1</em> in{' '}
+                        <a
                             href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
-                            target="_blank">Google's internal code search research study</a>). Sourcegraph Universal Code Search users report similar use cases and frequency.
+                            target="_blank"
+                        >
+                            Google's internal code search research study
+                        </a>
+                        ). Sourcegraph Universal Code Search users report similar use cases and frequency.
                     </p>
                     <div className="row justify-content-center">
                         <div className="col-md-6 mt-3">
@@ -253,10 +256,8 @@ export default ((props: any) => (
                     </div>
                 </div>
             </div>
-            
-           
-             <ContentSection color="white" className="py-3">
- 
+
+            <ContentSection color="white" className="py-3">
                 <div className="row">
                     <div className="col-md-4">
                         <Blockquote
@@ -282,10 +283,9 @@ export default ((props: any) => (
                         />
                     </div>
                 </div>
-               
             </ContentSection>
-            
-                    <ContentSection color="black" className="py-6">
+
+            <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Use Sourcegraph to find answers in code, faster!
@@ -293,23 +293,22 @@ export default ((props: any) => (
                 <Vimeo id={340491490} className="mb-6" />
                 <Vimeo id={340774081} />
             </ContentSection>
-       
-            
+
             <ContentSection color="white" className="pt-5 pb-3">
-<div id="integrations">
-                <IntegratesWithSection
-                    className="py-6"
-                    showTypes={['codeHost', 'plugin', 'language']}
-                    customTypeLabels={{ codeHost: 'Code hosts' }}
-                />
+                <div id="integrations">
+                    <IntegratesWithSection
+                        className="py-6"
+                        showTypes={['codeHost', 'plugin', 'language']}
+                        customTypeLabels={{ codeHost: 'Code hosts' }}
+                    />
                 </div>
             </ContentSection>
-           
-                        <ContentSection color="white" className="pt-5 pb-3">
+
+            <ContentSection color="white" className="pt-5 pb-3">
                 <hr id="customers" />
                 <CustomerLogosSection trustWhat="code search" />
             </ContentSection>
-         
+
             <ContentSection color="black" className="py-5">
                 <EnterpriseReadySolution />
             </ContentSection>

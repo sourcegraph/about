@@ -1,4 +1,4 @@
-exports.onInitialClientRender = function() {
+exports.onInitialClientRender = function () {
   /**
    * Initialize scripts
    */
@@ -21,7 +21,7 @@ exports.onInitialClientRender = function() {
   }
 }
 
-exports.onRouteUpdate = function({ location }) {
+exports.onRouteUpdate = function ({ location }) {
   // TODO: @attfarhan fix condition to ensure "tracker is configured"
 
   setTimeout(() => {

@@ -57,7 +57,7 @@ export default ((props: any) => (
                 ]}
             />
             <ContentSection color="white" className="py-5">
-                <h2 className="display-4 mb-4" id="why" >
+                <h2 className="display-4 mb-4" id="why">
                     Code review is the most critical process for engineering teams
                 </h2>
                 <IconItem color="brand-orange" icon={FlameIcon} className="py-3">
@@ -127,10 +127,10 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-                                    <ContentSection color="white" className="pt-5 pb-3" id="customers" >
+            <ContentSection color="white" className="pt-5 pb-3" id="customers">
                 <CustomerLogosSection />
             </ContentSection>
-                        <ContentSection color="black" className="py-6">
+            <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Better code reviews with the Sourcegraph browser extension

@@ -6,11 +6,7 @@ export const SubmitEmailForm: React.FunctionComponent<{
     className?: string
 }> = ({ formAction, buttonText, className = '' }) => (
     <div>
-        <form
-            className={`form form-inline ${className}`}
-            action={formAction}
-            method="get"
-        >
+        <form className={`form form-inline ${className}`} action={formAction} method="get">
             <input
                 className="form-control mr-md-2 mb-2"
                 type="email"
