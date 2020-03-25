@@ -1,15 +1,18 @@
 ---
-title: "The home offices of Sourcegraph"
+title: The home offices of Sourcegraph
 author: Thorsten Ball
+authorUrl: https://twitter.com/thorstenball
 publishDate: 2020-03-27T18:00+02:00
 tags: [ blog, remote ]
 slug: home-offices-of-sourcegraph
+heroImage: /blog/home-offices-sourcegraph-thumbnail.jpg
 published: true
 ---
 
-I'm always curious to see other people's desks (who isn't?) to get a glimpse of their setup and after seeing the [home office desks of Basecamp](https://m.signalvnoise.com/remote-working-the-home-office-desks-of-basecamp/) I immediately wanted to have the same collection for Sourcegraph.
 
-Since we're an [all-remote company](https://about.sourcegraph.com/company/remote) we _only_ have home office setups and they range from "spare" to "elaborate", so all the more reason to reach out and start collecting photos.
+I'm always curious to see other people's desks (who isn't?) to get a glimpse of their setup, and after seeing the [home office desks of Basecamp](https://m.signalvnoise.com/remote-working-the-home-office-desks-of-basecamp/), I immediately wanted to have the same collection for Sourcegraph.
+
+Since we're an [all-remote company](https://about.sourcegraph.com/company/remote), we _only_ have home office setups and they range from "spare" to "elaborate", so all the more reason to reach out and start collecting photos.
 
 Here are all the photos that were contributed to the pull request behind this blog post, starting with mine:
 
@@ -40,3 +43,9 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Nick Snyder, VP Engineering
 
 ![Home office setup of Nick Snyder, VP Engineering](images/home-office-setups/nick_snyder.jpg)
+
+## Ryan Blunden, Developer Advocate
+
+<!--I do a lot of screencasts and livestreams, hence the microphone, camera, and light. You might think the light is overkill, but it helps you look a lot more healthy and human when it's 4am Australian time.-->
+
+![Home office setup of Ryan Blunden, Developer Advocate](/images/home-office-setups/ryan_blunden.jpg)
