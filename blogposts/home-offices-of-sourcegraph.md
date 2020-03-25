@@ -53,3 +53,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Christina Forney, Product Manager
 
 ![Home office setup of Christina Forney, Product Manager](/blog/home-office-setups/christina_forney.jpg)
+
+## Aileen Agricola, Senior Digital Marketing Manager
+
+![Home office setup of Aileen Agricola, Senior Digital Marketing Manager](/blog/home-office-setups/aileen_agricola.jpg)
