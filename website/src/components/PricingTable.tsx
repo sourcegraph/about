@@ -326,7 +326,7 @@ export const PricingTable: React.FunctionComponent<{
                 />
             </div>
             <div className="col-8 row">
-                {allPlans.map((plan) => (
+                {allPlans.map(plan => (
                     <div className="col py-3 px-3 border-left border-gray">
                         <h3 className="h4 mb-0 text-center">{plan}</h3>
                     </div>

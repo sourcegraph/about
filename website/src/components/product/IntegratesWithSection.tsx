@@ -164,7 +164,7 @@ export const IntegratesWithSection: React.FunctionComponent<{
                 <IntegrationEntriesRow
                     text={(customTypeLabels && customTypeLabels.codeHost) || 'Code hosting & review'}
                     entries={ENTRIES.filter(
-                        (e) =>
+                        e =>
                             e.type === 'codeHost' &&
                             (!showOnlyCodeHostsWithCodeReviewIntegration || e.codeReviewIntegration)
                     )}
@@ -173,13 +173,13 @@ export const IntegratesWithSection: React.FunctionComponent<{
             {(!showTypes || showTypes.includes('service')) && (
                 <IntegrationEntriesRow
                     text={(customTypeLabels && customTypeLabels.service) || 'Other services in your workflow'}
-                    entries={ENTRIES.filter((e) => e.type === 'service')}
+                    entries={ENTRIES.filter(e => e.type === 'service')}
                 />
             )}
             {(!showTypes || showTypes.includes('plugin')) && (
                 <IntegrationEntriesRow
                     text={(customTypeLabels && customTypeLabels.plugin) || 'Browser & editor integrations'}
-                    entries={ENTRIES.filter((e) => e.type === 'plugin')}
+                    entries={ENTRIES.filter(e => e.type === 'plugin')}
                 />
             )}
             {(!showTypes || showTypes.includes('language')) && (
