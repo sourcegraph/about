@@ -31,6 +31,10 @@ Arguments:
     git tag -a 'v$MAJOR.$MINOR.$PATCH' -m 'v$MAJOR.$MINOR.$PATCH' && git push origin 'v$MAJOR.$MINOR.$PATCH'
     ```
 - [ ] Wait for the final Docker images to be available at https://hub.docker.com/r/sourcegraph/server/tags.
+- [ ] Run the image at least once to make sure it starts:
+    ```
+    IMAGE=sourcegraph/server:$MAJOR.$MINOR.$PATCH ./dev/run-server-image.sh
+    ```
 
 ## Release Kubernetes deployment
 
