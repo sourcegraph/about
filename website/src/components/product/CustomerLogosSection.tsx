@@ -44,7 +44,7 @@ const ITEMS: (
         link: {
             url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
             target: '_blank',
-            rel: 'nofollow'
+            rel: 'nofollow',
         },
     },
     {
