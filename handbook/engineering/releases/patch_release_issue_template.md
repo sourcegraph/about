@@ -14,7 +14,7 @@ Arguments:
 
 - [ ] TODO: Add PR or commit links here.
     ```
-    git log v$MAJOR.$MINOR.$(($PATCH-1))...$MAJOR.$MINOR --pretty=format:'- %H %s'
+    git log v$MAJOR.$MINOR.$(($PATCH-1))...$MAJOR.$MINOR --pretty=format:'- [ ] %H %s'
     ```
 
 ## Release sourcegraph/server
