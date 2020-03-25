@@ -49,3 +49,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 <!--I do a lot of screencasts and livestreams, hence the microphone, camera, and light. You might think the light is overkill, but it helps you look a lot more healthy and human when it's 4am Australian time.-->
 
 ![Home office setup of Ryan Blunden, Developer Advocate](/blog/home-office-setups/ryan_blunden.jpg)
+
+## Christina Forney, Product Manager
+
+![Home office setup of Christina Forney, Product Manager](/blog/home-office-setups/christina_forney.jpg)
