@@ -1,6 +1,6 @@
 # Livestream events (Webinars)
 ## Overview
-The following information describes the planning and execution of a Sourcegraph webinar. 
+The following information describes the planning and execution of a Sourcegraph livestream event. 
 
 ## Livestream information
 
@@ -15,11 +15,11 @@ All livestream events will require the following details for planning:
 - Livestram Link from Zoom or GotoWebinar
 - Audience
 
-Sourcegraph uses these web applications for running a webinar:
+Sourcegraph uses these web applications for running a livestream event:
 
 - GotoWebinar or Zoom:
   * Manage registration and attendance
-  * Invitation email and reminders with webinar link and details
+  * Invitation email and reminders with livestram link and details
   * Run and record the livestream
 - Hubspot
   * Set up landing page for registration
@@ -34,9 +34,9 @@ Sourcegraph uses these web applications for running a webinar:
  2 weeks out | Send out invitation #2 
  1 day - 1 week out | Send out email reminders 
  1-2 weeks out | Perform a rehearsal 
- 1 day out | Test webinar link 
+ 1 day out | Test livestream link 
  30 minutes | Final soundcheck 
- Post livestream | Send out thank you emails with link to recorded webinar 
+ Post livestream | Send out thank you emails with link to recorded livestream
 
 ### Video conference setup
 
@@ -44,7 +44,7 @@ Create the livestream, configuring the following:
 
 - Set the schedule, host and details
 - Registration landing page form
-- Thanks for registering email which includes the webinar link
+- Thanks for registering email which includes the livestream link
 
 Zoom required configuration **IMPORTANT**
 
@@ -58,7 +58,7 @@ Zoom required configuration **IMPORTANT**
 
 Ask the customer:
 
-> Could you add the following configuration to your Sourcegraph instance's global user settings found at https://sourcegraph.example.com/site-admin/global-settings? This will let all the users visiting Sourcegraph know that they can join the webinar via a dismissible notice:
+> Could you add the following configuration to your Sourcegraph instance's global user settings found at https://sourcegraph.example.com/site-admin/global-settings? This will let all the users visiting Sourcegraph know that they can join the livestream via a dismissible notice:
 >
 > ![image](https://user-images.githubusercontent.com/3173176/75200913-423db180-5724-11ea-9ee9-fbea5be2129b.png)
 >
@@ -67,25 +67,25 @@ Ask the customer:
 >    {
 >      "dismissible": true,
 >      "location": "top",
->      "message": "Join us and the Sourcegraph team for the live Zoom webinar on [Tuesday, Feb 25, 2020 @ 3pm Central](<WEBINAR LINK>) to learn about Universal Code Search and improving your workflow!"
+>      "message": "Join us and the Sourcegraph team for the live Zoom livestream on [Tuesday, Feb 25, 2020 @ 3pm Central](<LIVESTREAM LINK>) to learn about Universal Code Search and improving your workflow!"
 >      }
 >  ],
 > ```
 
-**IMPORTANT**: Before sending the above email, make sure you update the webinar date and URL!
+**IMPORTANT**: Before sending the above email, make sure you update the livestream date and URL!
 
 ### Hubspot setup
 
-The following Hubspot emails will be created to promote the webinar:
+The following Hubspot emails will be created to promote the livestream:
 
 - Invitation which includes the link to the Zoom registration landing page 
-- Reminder email T-3 day which includes the Zoom webinar link
-- Reminder email T-1 day which includes the Zoom webinar link
-- Reminder email T-1 hour which includes the Zoom webinar link
+- Reminder email T-3 day which includes the Zoom livestream link
+- Reminder email T-1 day which includes the Zoom livestream link
+- Reminder email T-1 hour which includes the Zoom livestream link
 
-Since this is a [lead-generation activity](marketing_operations.md#maintaining-data-pipelines), we need to track it in our [HubSpot event log](https://docs.google.com/spreadsheets/d/16S3xlcY7DmpcfKZYD-3VHUsaPLiYHyisu8cD_gZpv0Q/edit?usp=drive_web&ouid=117507720010549543900). Add the HubSpot registration list to the `Webinar Registration` list and the attendees list to the `Webinar Attendee` list. Contact BizOps in the #marketing or #analytics channels. NOTE: This has not been implemented yet in HubSpot and Zapier yet.
+Since this is a [lead-generation activity](marketing_operations.md#maintaining-data-pipelines), we need to track it in our [HubSpot event log](https://docs.google.com/spreadsheets/d/16S3xlcY7DmpcfKZYD-3VHUsaPLiYHyisu8cD_gZpv0Q/edit?usp=drive_web&ouid=117507720010549543900). Add the HubSpot registration list to the `Livestream Registration` list and the attendees list to the `Livestream Attendee` list. Contact BizOps in the #marketing or #analytics channels. NOTE: This has not been implemented yet in HubSpot and Zapier yet.
 
-Post webinar, Sourcegraph will send followup emails:
+Post livestream, Sourcegraph will send followup emails:
 
 - Attendee thank you email with link to rewatch
 - Registered, but non-attendee email with link to watch
