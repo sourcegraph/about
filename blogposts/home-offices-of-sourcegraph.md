@@ -74,4 +74,4 @@ Here are all the photos that were contributed to the pull request behind this bl
 
 ## Rijnard van Tonder, Software Engineer
 
-![Home office setup of Rijnard van Tonder, Software Engineer](https://storage.cloud.google.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/rijnard_van_tonder.jpg)
+![Home office setup of Rijnard van Tonder, Software Engineer](/blog/home-office-setups/rijnard_van_tonder.jpg)
