@@ -58,6 +58,7 @@ Each OKR has the following format:
 ```
 
 1. The `Title or team` is the title (e.g., `CEO` or `VP Engineering`) of the person who is directly responsible or the name of the team responsible.
+   - OKRs are nested. If you or your team helps with an existing KR, add your OKR underneath it. See [example GitLab OKRs](https://about.gitlab.com/company/okrs/fy21-q1/) to see what this looks like.
    - The first 2 levels of OKRs all have a directly responsible individual. Deeper levels can have teams. (For functions where we don't yet have a management structure in place, we may violate this.)
 1. The `Objective as 1 sentence.` is a pithy, informal summary of the objective, not an exhaustive and precise definition or description of the implementation. Each objective is indicated in bold, and is nested in line with the key results for it's parent objective. For example:
    - Good: `Automate time-consuming ops and support tasks.`
