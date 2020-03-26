@@ -67,3 +67,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 (apologies for the clutter)
 
 ![Home office setup of Stephen Gutekanst, Senior Software Engineer](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/stephen_gutekanst.gif)
+
+## Farhan Attamimi, Software Engineer
+
+![Home office setup of Farhan Attamimi, Software Engineer](https://storage.cloud.google.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/Farhan_Home_Office.JPG)
