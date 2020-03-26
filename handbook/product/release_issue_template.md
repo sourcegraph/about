@@ -2,7 +2,7 @@
 This template is used for tracking blog post activities for our monthly major/minor release of Sourcegraph.
 -->
 
-# MAJOR.MINOR Release: Product release tasks
+# MAJOR.MINOR Release: Release blog post tasks
 
 - [ ] [Release blog post](#)
 - [ ] [Release email](#)
@@ -13,7 +13,6 @@ This template is used for tracking blog post activities for our monthly major/mi
 - [ ] Create draft blog post Google doc in [Sourcegraph shared](https://drive.google.com/drive/u/0/folders/0B3lEU2lM-l9gUk5sNmRSMVFHVFU)
   - [ ] View each [team's release deliverables](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+milestone%3A{MAJOR}.{MINOR}+label%3Aroadmap) to generate the outline of the blog post
   - [ ] Share link to blog post doc in #dev-chat Slack channel, asking Team leads to review
-
 - [ ] Create draft tweet
 - [ ] Create draft email
 - [ ] Link to the blog post, email and tweet
