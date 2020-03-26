@@ -14,7 +14,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 We're excited to announce Sourcegraph 3.9. This release contains lots of behind-the-scenes work, both foundational and forward-looking.
 
-<div style="padding-left: 2rem">
+<div style="padding-left: 2rem"> 
 
 [**🔎 Search queries are now literal (not regexp) by default**](#search-queries-are-now-literal-not-regexp-by-default)
 
@@ -78,7 +78,7 @@ Code change management campaigns are in private beta. [Watch the code change man
 
 Sourcegraph's built-in monitoring with Grafana and Prometheus has been enhanced with default dashboards and alerts to help you confidently assess the health of your Sourcegraph instance. Sourcegraph is one of the most-used internal tools inside many large customers, and we've incorporated our learnings from these high-scale deployment environments. See [monitoring and tracing documentation](https://docs.sourcegraph.com/admin/monitoring_and_tracing) for more information.
 
-![Grafana dashboard for monitoring Sourcegraph instance health](images/3.9-grafana-dashboard.png "Grafana dashboard for monitoring Sourcegraph instance health")
+![Grafana dashboard for monitoring Sourcegraph instance health](/blog/3.9-grafana-dashboard.png "Grafana dashboard for monitoring Sourcegraph instance health")
 
 
 ## LSIF-based code intelligence for multi-language repositories
@@ -87,7 +87,7 @@ LSIF-based code intelligence now works on repositories with multiple projects an
 
 See the new [lsif.dev](https://lsif.dev/) site for list of languages with LSIF indexers (which means you can get precise, LSIF-based code intelligence on Sourcegraph).
 
-![LSIF code intelligence comparison](images/3.9-lsif-multi-project-code-intel.gif "LSIF-based multi-language code intelligence comparison")
+![LSIF code intelligence comparison](/blog/3.9-lsif-multi-project-code-intel.gif "LSIF-based multi-language code intelligence comparison")
 
 
 ## Faster repository cloning on large instances
