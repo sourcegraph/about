@@ -12,7 +12,7 @@ published: true
 
 I'm always curious to see other people's desks (who isn't?) to get a glimpse of their setup, and after seeing the [home office desks of Basecamp](https://m.signalvnoise.com/remote-working-the-home-office-desks-of-basecamp/), I immediately wanted to have the same collection for Sourcegraph.
 
-Since we're an [all-remote company](https://about.sourcegraph.com/company/remote), we _only_ have home office setups and they range from "spare" to "elaborate", so all the more reason to reach out and start collecting photos.
+As an [all-remote company](https://about.sourcegraph.com/company/remote), we _only_ have home office setups and they range from "sparse" to "elaborate", so all the more reason to create this collection of photos.
 
 Here are all the photos that were contributed to the pull request behind this blog post, starting with mine:
 
