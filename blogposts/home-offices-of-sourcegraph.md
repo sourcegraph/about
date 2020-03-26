@@ -71,3 +71,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Farhan Attamimi, Software Engineer
 
 ![Home office setup of Farhan Attamimi, Software Engineer](https://storage.cloud.google.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/Farhan_Home_Office.JPG)
+
+## Rijnard van Tonder, Software Engineer
+
+![Home office setup of Rijnard van Tonder, Software Engineer](https://storage.cloud.google.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/rijnard_van_tonder.jpg)
