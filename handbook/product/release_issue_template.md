@@ -1,5 +1,5 @@
 <!--
-This template is used for tracking product activities for our monthly major/minor release of Sourcegraph.
+This template is used for tracking blog post activities for our monthly major/minor release of Sourcegraph.
 -->
 
 # MAJOR.MINOR Release: Product release tasks
@@ -12,7 +12,7 @@ This template is used for tracking product activities for our monthly major/mino
 
 - [ ] Create draft blog post Google doc in [Sourcegraph shared](https://drive.google.com/drive/u/0/folders/0B3lEU2lM-l9gUk5sNmRSMVFHVFU)
   - [ ] View each [team's release deliverables](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+milestone%3A{MAJOR}.{MINOR}+label%3Aroadmap) to generate the outline of the blog post
-  - [ ] Share link to blog post doc in #progress Slack channel, asking Team leads to review
+  - [ ] Share link to blog post doc in #dev-chat Slack channel, asking Team leads to review
 
 - [ ] Create draft tweet
 - [ ] Create draft email
@@ -38,11 +38,11 @@ Add events to the shared Release Schedule calendar in Google and invite team@sou
 
 ## 10 working days before release
 
-- [ ] Post the blog post draft to #dev-announce: `The blog post draft for <VERSION> is ready, please review your parts are accurate and provide feedback by <DATE>: <link>
+- [ ] Post the blog post draft to #dev-announce: `The blog post draft for <VERSION> is ready, please review your parts are accurate and provide feedback by <DATE>: <link>`
 - [ ] Tweet written
 - [ ] Email written
 - [ ] Write a warning at the top of the Google doc: `The blog post has been finalized and moved to Markdown, further changes here will not be reflected. Contact @christinaforney for suggestions.`
-- [ ] Export blog post from Google docs to Markdown and create a new branch and draft pull request in [sourcegraph/about](https://github.com/sourcegraph/about/), using the [release blog post template](../../product/release_blog_post_template.md)
+- [ ] Export blog post from Google docs to Markdown and create a new branch and draft pull request in [sourcegraph/about](https://github.com/sourcegraph/about/), using the [release blog post template](./release_blog_post_template.md)
 - [ ] Send blog post, and email to [copy editor](https://docs.google.com/spreadsheets/d/1UUSSWrS8aKsLEg7M3Qdzw9s0GLJCI1eCrSJI06Qofb0/edit#gid=0_)
 
 ## 5 working days before release
