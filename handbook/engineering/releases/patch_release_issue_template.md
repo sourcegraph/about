@@ -33,13 +33,13 @@ Arguments:
 - [ ] Wait for the final Docker images to be available at https://hub.docker.com/r/sourcegraph/server/tags.
 - [ ] Run the old and new images at least three times to make sure it starts:
     ```
-    # 1. Answer NO to delete /tmp/sourcegraph with the old image
+    # 1. Answer YES to delete /tmp/sourcegraph with the old image
     IMAGE=sourcegraph/server:$MAJOR.$MINOR ./dev/run-server-image.sh
     
-    # 2. Answer YES to delete /tmp/sourcegraph with the new image
+    # 2. Answer NO to delete /tmp/sourcegraph with the new image
     IMAGE=sourcegraph/server:$MAJOR.$MINOR.$PATCH ./dev/run-server-image.sh
     
-    # 3. Answer NO to delete /tmp/sourcegraph with the new image
+    # 3. Answer YES to delete /tmp/sourcegraph with the new image
     IMAGE=sourcegraph/server:$MAJOR.$MINOR.$PATCH ./dev/run-server-image.sh
     ```
 
