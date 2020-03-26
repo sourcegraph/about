@@ -62,3 +62,8 @@ Here are all the photos that were contributed to the pull request behind this bl
 
 ![Home office setup of Uwe Hoffmann, Software Engineer](/blog/home-office-setups/uwe_hoffmann.jpg)
 
+## Stephen Gutekanst, Senior Software Engineer
+
+(apologies for the clutter)
+
+![Home office setup of Stephen Gutekanst, Senior Software Engineer](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/stephen_gutekanst.gif)
