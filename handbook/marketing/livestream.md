@@ -46,11 +46,20 @@ Create the livestream, configuring the following:
 - Registration landing page form
 - Thanks for registering email which includes the livestream link
 
-Zoom required configuration **IMPORTANT**
+Zoom required meeting configuration **IMPORTANT**
 
-- Disable "Join Before Host"
-- Enable "Co-Host"
-- Turn off "Screen sharing" and make sure "Host Only" is selected
+- Require meeting password, use US formated date i.e. 032620
+- Enable Video for Host, disable on Participant
+- Allow audio on both telephone and computer
+- Disable "Enable join before host"
+- Enable "Mute participants upon entry"
+- Add Alternative Hosts
+
+Zoom advanced configuration during broadcast, under 'Advanced Sharing Options'
+- Enable "One participant can share at a time"
+- Enable "Only Host" under "Who can share?"
+
+Zoom account management > account settings
 - Disable "File Transfer"
 - Disable "Allow Removed Participants to Rejoin"
 
