@@ -57,3 +57,8 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Aileen Agricola, Senior Digital Marketing Manager
 
 ![Home office setup of Aileen Agricola, Senior Digital Marketing Manager](/blog/home-office-setups/aileen_agricola.jpg)
+
+## Uwe Hoffmann, Software Engineer
+
+![Home office setup of Uwe Hoffmann, Software Engineer](/blog/home-office-setups/uwe_hoffmann.jpg)
+
