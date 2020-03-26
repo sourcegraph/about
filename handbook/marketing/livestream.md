@@ -1,10 +1,10 @@
-# Webinars
+# Livestream events (Webinars)
 ## Overview
 The following information describes the planning and execution of a Sourcegraph webinar. 
 
-## Webinar information
+## Livestream information
 
-All webinars will require the following details for planning:
+All livestream events will require the following details for planning:
 
 - Title
 - Date/Time
@@ -12,39 +12,47 @@ All webinars will require the following details for planning:
 - Speaker Name
 - Speaker Bio
 - Speaker Headshot
-- Webinar Link from Zoom
+- Livestram Link from Zoom or GotoWebinar
 - Audience
 
 Sourcegraph uses these web applications for running a webinar:
 
-- GotoWebinar:
+- GotoWebinar or Zoom:
   * Manage registration and attendance
   * Invitation email and reminders with webinar link and details
-  * Run and record the webinar
+  * Run and record the livestream
 - Hubspot
   * Set up landing page for registration
   * Manage invitation lists and store registration/attendance activities
 
-## Webinar planning tasks
+## Livestream planning tasks
 
- time to webinar | activity  
+ time to livestream | activity  
  --------------- | ---------------    
- 1 - 2 months out | Identify webinar information 
+ 1 - 2 months out | Identify livestream information 
  1 month out | Send out invitations 
  2 weeks out | Send out invitation #2 
  1 day - 1 week out | Send out email reminders 
  1-2 weeks out | Perform a rehearsal 
  1 day out | Test webinar link 
  30 minutes | Final soundcheck 
- Post webinar | Send out thank you emails with link to recorded webinar 
+ Post livestream | Send out thank you emails with link to recorded webinar 
 
-### GotoWebinar setup
+### Video conference setup
 
-Create the webinar, configuring the following:
+Create the livestream, configuring the following:
 
 - Set the schedule, host and details
 - Registration landing page form
 - Thanks for registering email which includes the webinar link
+
+Zoom required configuration **IMPORTANT**
+
+- Disable "Join Before Host"
+- Enable "Co-Host"
+- Turn off "Screen sharing" and make sure "Host Only" is selected
+- Disable "File Transfer"
+- Disable "Allow Removed Participants to Rejoin"
 
 ### Announcement on customer's Sourcegraph instance
 
@@ -82,7 +90,7 @@ Post webinar, Sourcegraph will send followup emails:
 - Attendee thank you email with link to rewatch
 - Registered, but non-attendee email with link to watch
 
-### Hubspot webinar nomenclature
+### Hubspot livestream nomenclature
 
 **Hubspot folder structure**  
 *folder format*:  
