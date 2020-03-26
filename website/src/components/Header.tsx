@@ -31,7 +31,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                 <nav className="header navbar navbar-dark navbar-expand-md border-bottom p-3">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
-                            <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph logo" />
+                            <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph" />
                         </Link>
                         {!this.props.minimal && (
                             <>
@@ -60,16 +60,10 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 What is Universal Code Search?
                                             </Link>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <ProductPopoverButton className="header__nav-link nav-link" />
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
                                                 to="/pricing"
@@ -78,10 +72,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Pricing
                                             </Link>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <a
                                                 className="header__nav-link nav-link"
                                                 href="https://docs.sourcegraph.com"
@@ -89,10 +80,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Docs
                                             </a>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
                                                 to="/about"
@@ -101,10 +89,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Company
                                             </Link>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
                                                 to="/blog"

@@ -73,10 +73,7 @@ export default ((props: any) => (
                 <h2 className="display-3 mb-5">Leading dev teams invest heavily in code&nbsp;change&nbsp;management</h2>
                 <div className="row justify-content-lg-center">
                     <div className="col text-center">
-                        <a
-                            className="btn btn-outline-primary rounded-lg active mb-5 px-6"
-                            href="#see-it-in-action"
-                        >
+                        <a className="btn btn-outline-primary rounded-lg active mb-5 px-6" href="#see-it-in-action">
                             See it in action
                         </a>
                     </div>
@@ -211,7 +208,8 @@ export default ((props: any) => (
                 </h2>
                 <div className="row justify-content-md-center">
                     <p className="text-center">
-                        Watch how to use Sourcegraph code change campaigns to upgrade the RxJS library in multiple repositories.
+                        Watch how to use Sourcegraph code change campaigns to upgrade the RxJS library in multiple
+                        repositories.
                     </p>
                 </div>
                 <Vimeo id={390882141} muted={false} className="mt-4" />

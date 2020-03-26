@@ -31,8 +31,13 @@ export const Vimeo: React.FunctionComponent<{
     <div className={`vimeo-embed embed-responsive embed-responsive-16by9 ${className}`}>
         <iframe
             className="embed-responsive-item"
-            src={`https://player.vimeo.com/video/${id}?color=${color}&title=${title}&byline=${byline}&muted=${muted ? 1 : 0}&controls=${controls ? 1 : 0}&autoplay=${autoplay ? 1 : 0}&autopause=${autopause ? 1 : 0}&loop=${loop ? 1 : 0}&time=${time}&texttrack=${texttrack}`}
-            allowfullscreen="" allow="autoplay; fullscreen"
+            src={`https://player.vimeo.com/video/${id}?color=${color}&title=${title}&byline=${byline}&muted=${
+                muted ? 1 : 0
+            }&controls=${controls ? 1 : 0}&autoplay=${autoplay ? 1 : 0}&autopause=${autopause ? 1 : 0}&loop=${
+                loop ? 1 : 0
+            }&time=${time}&texttrack=${texttrack}`}
+            allowfullscreen=""
+            allow="autoplay; fullscreen"
         />
     </div>
 )

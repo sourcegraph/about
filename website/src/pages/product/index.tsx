@@ -52,34 +52,37 @@ export default ((props: any) => {
                         { text: 'Integrations', url: '#integrations' },
                     ]}
                 />
-                 <ContentSection color="primary" className="py-5">
-                     <span id="ucs" />
-                <h2 className="text-center">Universal across everything </h2>
-                <p className="text-center">
-                    Code hosts and IDEs provide limited search functionality on their platform. Development now is across many repos, languages, file formats, codebases making Universal Code Search essential for enterprises like Uber, Lyft and Yelp.
-                </p>
-                <div className="row mt-5">
-                    <div className="col-md-4 pr-5">
-                        <h5>Code Discovery</h5>
-                        <p>
-                            Search anywhere – across all repos, all languages, all file formats, all code – in one centralized place
-                        </p>
+                <ContentSection color="primary" className="py-5">
+                    <span id="ucs" />
+                    <h2 className="text-center">Universal across everything </h2>
+                    <p className="text-center">
+                        Code hosts and IDEs provide limited search functionality on their platform. Development now is
+                        across many repos, languages, file formats, codebases making Universal Code Search essential for
+                        enterprises like Uber, Lyft and Yelp.
+                    </p>
+                    <div className="row mt-5">
+                        <div className="col-md-4 pr-5">
+                            <h5>Code Discovery</h5>
+                            <p>
+                                Search anywhere – across all repos, all languages, all file formats, all code – in one
+                                centralized place
+                            </p>
+                        </div>
+                        <div className="col-md-4 pr-5">
+                            <h5>Code Intelligence</h5>
+                            <p>
+                                Understand of the structure of and relationships in your codebase, not just the raw text
+                            </p>
+                        </div>
+                        <div className="col-md-4 pr-5">
+                            <h5>Code Change Management</h5>
+                            <p>
+                                Run code change campaigns to remove legacy code, fix critical security issues, and pay
+                                down tech debt
+                            </p>
+                        </div>
                     </div>
-                    <div className="col-md-4 pr-5">
-                        <h5>Code Intelligence</h5>
-                        <p>
-                            Understand of the structure of and relationships in your codebase, not just the raw
-                            text
-                        </p>
-                    </div>
-                    <div className="col-md-4 pr-5">
-                        <h5>Code Change Management</h5>
-                        <p>
-                            Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt
-                        </p>
-                    </div>
-                </div>
-            </ContentSection>
+                </ContentSection>
                 <ContentSection color="white" className="py-6">
                     <span id="features" />
                     <div className="row">

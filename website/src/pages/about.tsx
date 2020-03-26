@@ -242,7 +242,7 @@ export default class About extends React.Component<any, any> {
                                 <div className="row align-items-center">
                                     <div className="col-md-3">
                                         <img src={craft} />
-                                    </div>                                
+                                    </div>
                                     <div className="col-md-3">
                                         <img src={redpoint} />
                                     </div>
@@ -260,10 +260,7 @@ export default class About extends React.Component<any, any> {
                                 </h1>
                                 <ul className="about__founders-board">
                                     <li className="about__founders-board-member">
-                                        <img
-                                            src={sacks}
-                                            alt="David Sacks"
-                                        />
+                                        <img src={sacks} alt="David Sacks" />
                                         <div className="p-2">
                                             <strong>David Sacks</strong>
                                             <br />

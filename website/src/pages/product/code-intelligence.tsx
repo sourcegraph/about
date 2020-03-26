@@ -59,26 +59,26 @@ export default ((props: any) => (
                 ]}
             />
             <ContentSection color="white" className="py-5">
-                <h2 className="display-4 mb-4">
-                    Explore definitions & references, across all projects 
-                </h2>
-                  <IconItem color="brand-orange" icon={FolderSearchOutlineIcon} className="py-3">
+                <h2 className="display-4 mb-4">Explore definitions & references, across all projects</h2>
+                <IconItem color="brand-orange" icon={FolderSearchOutlineIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Find the definition, function calls and anything else in code, across packages, dependencies, and repositories.
+                        Find the definition, function calls and anything else in code, across packages, dependencies,
+                        and repositories.
                     </h5>
-                    </IconItem>
+                </IconItem>
                 <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
                     <h5 className="text-sans-serif">
-                        Explore code in your web browser in any repository on any branch, instantly and without losing local context.
+                        Explore code in your web browser in any repository on any branch, instantly and without losing
+                        local context.
                     </h5>
-                     </IconItem>
+                </IconItem>
                 <IconItem color="brand-orange" icon={CodeBracesIcon} className="py-3">
                     <h5 className="text-sans-serif">
                         Works for <SupportedProgrammingLanguagesLink />.
                     </h5>
-                    </IconItem>
+                </IconItem>
             </ContentSection>
-                        <ContentSection color="black" className="py-6">
+            <ContentSection color="black" className="py-6">
                 <h2 id="demo" className="text-center display-4 pb-4">
                     See Sourcegraph code intelligence in action
                 </h2>
@@ -140,7 +140,7 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <hr id="integrations" />
-                   <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}

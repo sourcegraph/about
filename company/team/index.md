@@ -6,7 +6,7 @@ This page contains brief bios of our team. Teammates may also have a personal do
 
 To add yourself to this page, copy the following template, paste it at the end of this file, and make it about yourself!
 
-## Full Name
+## Full Name (optional pronouns)
 
 - Role(s)
 - City, region, country, country flag emoji
@@ -29,11 +29,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [beyang@sourcegraph.com](mailto:beyang@sourcegraph.com), [@beyang](https://twitter.com/beyang), [LinkedIn](https://www.linkedin.com/in/beyang-liu-07651227)
 - Beyang Liu is CTO and co-founder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.
 
-## Christina Forney
+## Christina Forney (she/her)
 
 - Product Manager
 - Redwood City, CA, USA 🇺🇸
-- [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney)
+- [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney), [GitHub](https://github.com/christinaforney)
 - Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and the lead of a small dev team at Platinum Performance. At Palantir Technologies, she led the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science.
 
 ## Stephen Gutekanst
@@ -99,19 +99,19 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
 - Vanesa loves to travel (45 countries so far), spend time with her daughter and husband, sing and make jewelry. She grew up in the jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics and Political Science before transtitioning to software engineering. Her weakness is sushi.
 
-## Noemi Mercado
+## Noemi Mercado (she/her)
 
 - People Ops
 - San Francisco, CA, USA 🇺🇸
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/)
 - Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. She has two teenage brothers that keep her up to date on the latest trends and lingo. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pug named Pumba.
 
-## Nick Snyder
+## Nick Snyder (he/him)
 
 - VP Engineering
 - Belmont, CA, USA 🇺🇸
-- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [personal docs](nick.md)
-- Nick is a career software engineer turned people manager. He started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a M.S. in Computer Science and a B.S. in Computer Science (major), Math (major), and Economics (minor). Since then, Nick has had the privilege to work at multiple startups (AdMob, Maybe) and big companies (Google, LinkedIn), and he appreciates the perspectives that those experiences have given him. Nick has a wife, a daughter, and a son, and likes to sail on the SF Bay as often as his calendar permits.
+- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [GitHub](https://github.com/nicksnyder), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [personal docs](nick.md)
+- Nick started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a B.S and M.S. in Computer Science. Since then, Nick has spent most of his career as a software engineer working with a variety of technologies at companies large and small, and now enjoys building teams. Nick has a wife, a daughter, and a son, and likes to sail on the San Francisco Bay as often as his calendar permits.
 
 ## Thorsten Ball
 
@@ -148,11 +148,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [ryan@sourcegraph.com](mailto:ryan@sourcegraph.com), [@ryan_blunden](https://twitter.com/ryan_blunden), [LinkedIn](https://www.linkedin.com/in/ryanblunden/)
 - For work, Ryan enjoys writing documentation, creating videos, case studies, blog posts, and presenting. Essentially, sharing with developers everywhere how Sourcegraph can help them save time and ship better code. For fun, he loves hanging out with his daughter Ruby (Python wasn't an option :), [playing drums](https://rynodrums.com/), and riding his motorcycle to explore new places and meet new people. And eating eggs benedict at every opportunity.
 
-## Dan Adler
+## Dan Adler (he/him)
 
 - VP Business
 - San Francisco, CA, USA 🇺🇸
-- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/)
+- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/), [GitHub](https://github.com/dadlerj)
 - In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
 
 ## Tomás Senart
@@ -211,4 +211,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - London, UK 🇬🇧
 - [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [@imtommyroberts](https://twitter.com/imtommyroberts), [LinkedIn](https://www.linkedin.com/in/imtommyroberts)
 - Before Sourcegraph Tommy was providing freelance product design services to early stage startups. He's passionate about accessible design, the relationship between design and development, and ethics in tech. Outside of work he likes to explore the food scene in London, criticize his own cooking, read too many articles, and watch too many youtube videos.
+
+## Garo Brik (they/them)
+
+- Software Engineer
+- T'karonto, Canada 🇨🇦
+- [garo@sourcegraph.com](mailto:garo@sourcegraph.com), [gbrik](https://github.com/gbrik)
+- Garo cooks, climbs, dances, reads, and games with their family, and wrestles with compilers in the darkest recesses of their imagination. They work on the code intel team when they can get the many cats in their life off their keyboard. They are slowly trying to convince everyone in their life to move with them somewhere with more mountains & ocean and less snow.
 <!-- Paste *your* section above this line! -->

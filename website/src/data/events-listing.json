@@ -2,20 +2,14 @@
   "Conference": [],
   "Livestream": [
     {
-      "eventTitle": "Sourcegraph Office Hours",
-      "eventDate": "Tuesday, March 17, 2020 | 10:00 AM PST",
-      "eventLink": "https://info.sourcegraph.com/office-hours-march-17",
-      "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/office-hours-image-01.jpg"
-    },
-    {
-      "eventTitle": "Sourcegraph Universal Code Search",
-      "eventDate": "Thursday, March 19, 2020 | 10:00 AM PST",
-      "eventLink": "https://info.sourcegraph.com/webinar-sourcegraph-universal-code-search",
-      "eventImage": "/sourcegraph/sourcegraph-mark.svg"
+      "eventTitle": "Sourcegraph Online Meetup",
+      "eventDate": "Thursday March 26, 2020 | 10:00 AM PDT",
+      "eventLink": "https://info.sourcegraph.com/online-meetup-march-26",
+      "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-meetup-image.png"
     },
     {
       "eventTitle": "Become a Universal Code Search power user",
-      "eventDate": "April 2, 2020 | 10:00 AM PST",
+      "eventDate": "April 2, 2020 | 10:00 AM PDT",
       "eventLink": "https://info.sourcegraph.com/webinar-universal-code-search-power-user-apr-02",
       "eventImage": "/sourcegraph/sourcegraph-mark.svg"
     }
