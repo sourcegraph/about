@@ -91,3 +91,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Loïc Guychard, Engineering Manger
 
 ![Home office setup of Loïc Guychard, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/Loic_home_office.jpg)
+
+## Tomás Senart, Engineering Manager
+
+![Home office setup of Tomás Senart, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/tomas_senart.jpg)
