@@ -26,6 +26,7 @@ Sourcegraph uses these web applications for running a livestream event:
   * Manage invitation lists and store registration/attendance activities
   
 ## Sourcegraph code of conduct for livestream events
+
 Sourcegraph livestream events are open to the public. We are committed to providing a friendly, safe, and welcoming environment for all.  Please read our [Sourcegraph Community Code of Conduct](https://about.sourcegraph.com/community/code_of_conduct).
 
 ## Livestream planning tasks
