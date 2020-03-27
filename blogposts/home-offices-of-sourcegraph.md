@@ -99,3 +99,8 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Quinn Slack, CEO
 
 ![Home office setup of Quinn Slack, CEO](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/quinn_slack_homeoffice.jpg)
+
+## Eric Brody-Moore, Growth & Business Operations
+
+![Home office setup of Eric Brody-Moore, Growth & Business Operations](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/ericbm_home_office.jpg)
+
