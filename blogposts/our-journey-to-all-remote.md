@@ -75,4 +75,4 @@ We love all-remote, but it doesn't work for everyone (just like working on an op
 
 We are committed to supporting all of our teammates to help them be successful. Check out our [tips for working remotely](https://about.sourcegraph.com/company/remote/tips).
 
-If you have any questions about all-remote teams, join us during our next Developer Meetup  and I will be happy to answer them. [Link here]
+If you have any questions about all-remote teams, join us during our next Developer Meetup and I will be happy to answer them. [Link here]
