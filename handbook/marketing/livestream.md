@@ -38,9 +38,12 @@ Sourcegraph uses these web applications for running a livestream event:
  30 minutes         | Final soundcheck 
  Post livestream    | Send out thank you emails with link to recorded livestream
 
-### Video conference setup
 
-Create the livestream, configuring the following:
+### Creating and configuring a livestream
+
+> IMPORTANT: It's vitally important that only those authorized to contribute during the webinar are given the ability to share audio, video, and their screen, while participants can ask questions via chat only at this stage. These restrictions could be relaxed for events such as internal customer training.
+
+Create the livestream with the following configuration:
 
 - Set the schedule, host and details
 - Registration landing page form
