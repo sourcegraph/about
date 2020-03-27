@@ -104,3 +104,6 @@ Here are all the photos that were contributed to the pull request behind this bl
 
 ![Home office setup of Eric Brody-Moore, Growth & Business Operations](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/ericbm_home_office.jpg)
 
+## Noemi Mercado, Head of PeopleOps
+
+![Home office setup of Noemi Mercado, Head of PeopleOps](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/noemi_mercado.jpg)
