@@ -6,6 +6,7 @@ tags: [
   blog, remote
 ]
 slug: our-journey-to-all-remote
+heroImage: /blog/sf-office-mural.jpg
 published: true
 ---
 
