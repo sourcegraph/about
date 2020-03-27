@@ -1,5 +1,5 @@
 # Livestream events (Webinars)
-## Overview
+
 The following information describes the planning and execution of a Sourcegraph livestream event. 
 
 ## Livestream information
