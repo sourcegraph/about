@@ -49,7 +49,7 @@ Create the livestream with the following configuration:
 - Registration landing page form
 - Thanks for registering email which includes the livestream link
 
-Zoom required meeting configuration **IMPORTANT**
+Zoom required meeting configuration
 
 - Require meeting password, use US formated date i.e. 032620
 - Enable Video for Host, disable on Participant
