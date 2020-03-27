@@ -95,3 +95,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Tomás Senart, Engineering Manager
 
 ![Home office setup of Tomás Senart, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/tomas_senart.jpg)
+
+## Quinn Slack, CEO
+
+![Home office setup of Quinn Slack, CEO](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/quinn_slack_homeoffice.jpg)
