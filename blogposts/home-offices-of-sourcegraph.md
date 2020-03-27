@@ -83,3 +83,7 @@ Here are all the photos that were contributed to the pull request behind this bl
 ## Adam Frankl, VP Marketing
 
 ![Home office setup of Adam Frankl, VP Marketing](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/adam_frankl.jpg)
+
+## Keegan Carruthers-Smith, Software Engineer
+
+![Home office setup of Keegan Carruthers-Smith, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/home-office-setups/keegan_carruthers_smith.jpg)
