@@ -218,4 +218,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - T'karonto, Canada 🇨🇦
 - [garo@sourcegraph.com](mailto:garo@sourcegraph.com), [gbrik](https://github.com/gbrik)
 - Garo cooks, climbs, dances, reads, and games with their family, and wrestles with compilers in the darkest recesses of their imagination. They work on the code intel team when they can get the many cats in their life off their keyboard. They are slowly trying to convince everyone in their life to move with them somewhere with more mountains & ocean and less snow.
-<!-- Paste *your* section above this line! -->
+!-- Paste *your* section above this line! -->
+## Quin Keough
+
+- SDR
+- Phoenix AZ, USA 🇺🇸
+- [quin@sourcegraph.com](mailto:quin@sourcegraph.com), [quinwith1n](https://github.com/qwith1n)
+- Quin has always loved traveling and seeing the world. He lives in Phoenix with his wife and 2 french bulldogs.  Quin also enjoys most sports, especially ping pong, reading, and playing his guitar.  Although his French bulldogs do not enjoy it when he attempts to play the guitar.
