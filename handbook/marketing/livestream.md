@@ -28,15 +28,15 @@ Sourcegraph uses these web applications for running a livestream event:
 ## Livestream planning tasks
 
  time to livestream | activity  
- --------------- | ---------------    
- 1 - 2 months out | Identify livestream information 
- 1 month out | Send out invitations 
- 2 weeks out | Send out invitation #2 
+ ------------------ | ---------------    
+ 1 - 2 months out   | Identify livestream information 
+ 1 month out        | Send out invitations 
+ 2 weeks out        | Send out invitation #2 
  1 day - 1 week out | Send out email reminders 
- 1-2 weeks out | Perform a rehearsal 
- 1 day out | Test livestream link 
- 30 minutes | Final soundcheck 
- Post livestream | Send out thank you emails with link to recorded livestream
+ 1-2 weeks out      | Perform a rehearsal 
+ 1 day out          | Test livestream link 
+ 30 minutes         | Final soundcheck 
+ Post livestream    | Send out thank you emails with link to recorded livestream
 
 ### Video conference setup
 
