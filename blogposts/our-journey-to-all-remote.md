@@ -22,7 +22,7 @@ Since we were open to hiring engineers from all over the world, our engineering 
 
 This experiment had two goals:
 
-1. Give SF teammates dedicated heads downtime to optimize productivity (e.g., fewer interruptions, skip your commute).
+1. Give SF teammates more focus time to optimize productivity (e.g., fewer interruptions, skip your commute).
 2. Generate more empathy for distributed teammates by having SF teammates solely rely on written communication and video chat instead of in-person conversations.
 
 After doing this a few times, we surveyed the team to see what everyone had learned. Here is a summary of the feedback that we collected from the team in early 2019:
