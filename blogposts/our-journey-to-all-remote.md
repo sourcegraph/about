@@ -18,7 +18,7 @@ For most of Sourcegraph's history, we have had an office in San Francisco, but m
 
 ## Distributed days
 
-Since we were open to hiring engineers from all over the world, our engineering team organically grew to be more distributed over time. Continuing to be a remote-friendly place to work was important for us as we grew the team. In late 2018 we started experimenting with scheduled days where SF teammates were encouraged to work from a location other than the office; we called these "distributed days".
+Since we were open to hiring engineers from all over the world, our engineering team organically grew to be more distributed over time. Continuing to be a remote-friendly place to work was important for us as we grew the team. In late 2018, we started experimenting with scheduled days where SF teammates were encouraged to work from a location other than the office; we called these "distributed days".
 
 This experiment had two goals:
 
