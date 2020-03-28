@@ -58,7 +58,7 @@ We did this because:
 
 ## All-remote
 
-Near the end of 2019 we decided to become all-remote and get rid of our SF office entirely. As our team grew, we didn't want to create a growing SF office subculture at the company. We wanted to treat everyone equally and didn’t want our distributed teammates to feel second class. We knew that continuing to have an office as the team grew would be an increased risk to our remote-first culture, so we decided to go all-in.
+Near the end of 2019, we decided to become an all-remote company and get rid of our SF office entirely. As our team grew, we didn't want to create a growing SF office subculture at the company. We wanted to treat everyone equally and didn’t want our distributed teammates to feel second class. We knew that continuing to have an office as the team grew would be an increased risk to our remote-first culture, so we decided to go all-in.
 
 Once this decision was made, there were a few logistical issues that we needed to figure out:
 
