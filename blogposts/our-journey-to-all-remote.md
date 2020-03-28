@@ -14,7 +14,7 @@ On February 20, 2020 we officially moved out of our amazing San Francisco office
 
 ## Remote friendly engineering
 
-For most of Sourcegraph's history we have had an office in San Francisco, but many of our early engineering hires were distributed across the world so we have had remote-friendly practices ingrained in our culture from the very beginning. As a result, we strongly value things like asynchronous written communication, personal responsibility, and autonomy; nothing else works when your teammates are in different timezones.
+For most of Sourcegraph's history, we have had an office in San Francisco, but many of our early engineering hires were distributed across the world so we have had remote-friendly practices ingrained in our culture from the very beginning. As a result, we strongly value things like asynchronous written communication, personal responsibility, and autonomy; nothing else works when your teammates are in different timezones.
 
 ## Distributed days
 
