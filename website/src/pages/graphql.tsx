@@ -24,13 +24,12 @@ export default class GraphQLSummitList extends React.Component<any, any> {
                     description: metaProps.description,
                 }}
             >
+                <section className="content-section container hero-section text-center py-5">
+                    <h1>{metaProps.title}</h1>
+                </section>
+
                 <div className="gray-9 bg-white text-dark">
-                    <div>
-                        <div className="blog blog__head">
-                            <h1>GraphQL Summit 2017 Liveblog</h1>
-                        </div>
-                        <BlogPosts blogType="graphql" posts={graphqlPosts} />
-                    </div>
+                    <BlogPosts blogType="graphql" posts={graphqlPosts} />
                 </div>
             </Layout>
         )

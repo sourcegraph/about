@@ -26,58 +26,50 @@ export default class BlogPosts extends React.Component<any, any> {
 
     public render(): JSX.Element {
         return (
-            <div>
+            <ul className="blog-posts container list-unstyled">
                 {this.props.posts.map(
                     (post: any, i: number) =>
                         postIsComplete(post) && (
-                            <Link
-                                to={`/${this.props.blogType}/${post.node.frontmatter.slug}`}
-                                key={i}
-                                className="text-decoration-none"
-                            >
-                                <div className="blog__posts--container" role="article">
-                                    <div className="blog__posts--post">
-                                        <div className="blog__posts--post-text">
-                                            <h2 className="blog__posts--post-title">{post.node.frontmatter.title}</h2>
-                                            <div className="blog__posts--post-byline">
-                                                by {post.node.frontmatter.author} on {post.node.frontmatter.publishDate}
-                                            </div>
-                                            <div className="blog__posts--post-excerpt">
-                                                <p>
-                                                    {post.node.frontmatter.description
-                                                        ? truncate(post.node.frontmatter.description, { length: 300 })
-                                                        : post.node.excerpt}{' '}
-                                                    <span className="blog__posts--post-readmore">Read more</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="blog__posts--post-image">
-                                            <div
-                                                style={{ position: 'relative', overflow: 'hidden', maxHeight: '250px' }}
-                                            >
-                                                <div style={{ width: '100%', paddingBottom: '93.90070921985814%' }} />
-                                                <img
-                                                    src={post.node.frontmatter.heroImage}
-                                                    style={{
-                                                        position: 'absolute',
-                                                        top: '0px',
-                                                        left: '0px',
-                                                        width: '100%',
-                                                        height: '100%',
-                                                        objectFit: 'contain',
-                                                        objectPosition: 'center center',
-                                                        maxHeight: '250px',
-                                                        borderRadius: '0.25rem',
-                                                    }}
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
+                            <li className="blog-posts__post row pt-2">
+                                <div className="col-sm-12 col-md-3 text-center pt-3 pb-4">
+                                    <Link
+                                        to={`/${this.props.blogType}/${post.node.frontmatter.slug}`}
+                                        key={i}
+                                        className="d-block pt-2 align-self-center"
+                                    >
+                                        <img
+                                            className="blog-posts__post__image"
+                                            src={post.node.frontmatter.heroImage}
+                                        />
+                                    </Link>
                                 </div>
-                            </Link>
+                                <div className="col-sm-12 col-md-9 pt-3 pb-2">
+                                    <h2 className="blog-posts__post__title">
+                                        <Link to={`/${this.props.blogType}/${post.node.frontmatter.slug}`} key={i}>
+                                            {post.node.frontmatter.title}
+                                        </Link>
+                                    </h2>
+                                    <p className="blog-posts__post__byline">
+                                        By {post.node.frontmatter.author} on {post.node.frontmatter.publishDate}
+                                    </p>
+                                    <p className="blog-posts__post__excerpt">
+                                        (
+                                        {post.node.frontmatter.description
+                                            ? truncate(post.node.frontmatter.description, { length: 300 })
+                                            : truncate(post.node.excerpt, { length: 300 })}{' '}
+                                        <Link
+                                            to={`/${this.props.blogType}/${post.node.frontmatter.slug}`}
+                                            key={i}
+                                            className="blog-posts__post__read-more"
+                                        >
+                                            Read more
+                                        </Link>
+                                    </p>
+                                </div>
+                            </li>
                         )
                 )}
-            </div>
+            </ul>
         )
     }
 }

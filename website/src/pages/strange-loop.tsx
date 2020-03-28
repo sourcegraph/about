@@ -4,23 +4,23 @@ import * as React from 'react'
 import BlogPosts from '../components/BlogPosts'
 import Layout from '../components/Layout'
 export default class GoList extends React.Component<any, any> {
-    public componentDidMount(): void {
-        const script = document.createElement('script')
-        script.src = '//js.hsforms.net/forms/v2.js'
-        const hubspot = document.getElementById('strangeLoopForm')
-        hubspot.appendChild(script)
-        script.addEventListener('load', () => {
-            ;(window as any).hbspt.forms.create({
-                portalId: '2762526',
-                formId: 'b4b2b911-0515-4a76-bfc0-2f4ca384bdbc',
-                target: '#strangeLoopForm',
-            })
-        })
-    }
+    // public componentDidMount(): void {
+    //     const script = document.createElement('script')
+    //     script.src = '//js.hsforms.net/forms/v2.js'
+    //     const hubspot = document.getElementById('strangeLoopForm')
+    //     hubspot.appendChild(script)
+    //     script.addEventListener('load', () => {
+    //         ;(window as any).hbspt.forms.create({
+    //             portalId: '2762526',
+    //             formId: 'b4b2b911-0515-4a76-bfc0-2f4ca384bdbc',
+    //             target: '#strangeLoopForm',
+    //         })
+    //     })
+    // }
 
     public render(): JSX.Element | null {
         const metaProps = {
-            title: 'Strange Loop liveblog by Sourcegraph',
+            title: 'Strange Loop liveblog',
             description: 'Check out the official Strange Loop 2019 Liveblog proudly hosted by Sourcegraph.',
             image: 'https://about.sourcegraph.com/blog/strange-loop-banner-landscape.jpg',
         }
@@ -37,7 +37,11 @@ export default class GoList extends React.Component<any, any> {
                     image: metaProps.image,
                 }}
             >
-                <div className="strange-loop-liveblog gray-9 bg-white text-dark">
+                <section className="content-section container hero-section text-center py-5">
+                    <h1>{metaProps.title}</h1>
+                </section>
+
+                {/* <div className="strange-loop-liveblog gray-9 bg-white text-dark">
                     <div>
                         <div className="blog blog__head">
                             <h1 className="pb-4 sr-only">{metaProps.title}</h1>
@@ -65,9 +69,10 @@ export default class GoList extends React.Component<any, any> {
                         </div>
 
                         <hr className="mt-0" />
-
-                        <BlogPosts blogType="strange-loop" posts={strangeLoopPosts} />
                     </div>
+                </div> */}
+                <div className="gray-9 bg-white text-dark">
+                    <BlogPosts blogType="go" posts={strangeLoopPosts} />
                 </div>
             </Layout>
         )
