@@ -72,7 +72,7 @@ Once this decision was made, there were a few logistical issues that we needed t
 
 ## Tradeoffs
 
-We love all-remote, but it doesn't work for everyone (just like working on an open-office plan doesn't work for everyone). Working remotely gives you extra freedom and flexibility, but also requires extra discipline and personal responsibility. Certain things that happen organically in an office environment (e.g., informal conversations at lunch), need to be explicitly planned (e.g., by scheduling small "watercooler" meetings with no agenda, or scheduling 1-1s between random teammates using a tool like donut.com).
+We love all-remote, but it doesn't work for everyone (just like working in an open-office floorplan doesn't work for everyone). Working remotely gives you extra freedom and flexibility, but also requires extra discipline and personal responsibility. Certain things that happen organically in an office environment (e.g., informal conversations at lunch), need to be explicitly planned (e.g., by scheduling small "watercooler" meetings with no agenda, or scheduling 1-1s between random teammates using a tool like donut.com).
 
 We are committed to supporting all of our teammates to help them be successful. Check out our [tips for working remotely](https://about.sourcegraph.com/company/remote/tips).
 
