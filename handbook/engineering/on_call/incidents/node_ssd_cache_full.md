@@ -40,4 +40,4 @@ two sourcegraph-frontend pods, each with cache size more than 160GB (It is unusu
 We killed the two frontend pods to force the scheduler to re-schedule them and one of them landed on a different node.
 We checked that the `pod-tmp-gc` on the affected node started deleting the orphaned cache of the moved frontend pod.
 
-We checked with `df` that dik space is now available and ran the original search query again to double check that it works.
+We checked with `df` that disk space is now available and ran the original search query again to double check that it works.
