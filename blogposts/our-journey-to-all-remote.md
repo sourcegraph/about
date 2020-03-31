@@ -10,6 +10,8 @@ heroImage: /blog/sf-office-mural.jpg
 published: true
 ---
 
+![Sourcegraph San Francisco office mural](/blog/sf-office-mural.jpg)
+
 On February 20, 2020, we officially moved out of our amazing San Francisco office and became an [all-remote](https://about.sourcegraph.com/company/remote) company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision. This blog post documents our journey to all-remote.
 
 ## Remote-friendly engineering
