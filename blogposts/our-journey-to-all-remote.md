@@ -1,7 +1,7 @@
 ---
 title: "Our journey to all-remote"
 author: Nick Snyder
-publishDate: 2020-03-30T10:00-07:00
+publishDate: 2020-03-31T10:00-07:00
 tags: [
   blog, remote
 ]
