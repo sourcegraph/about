@@ -44,7 +44,8 @@ The following places are not sources of truth. Treat documents and conversations
 - When creating the Google Calendar event:
   - Add a [Zoom video call](#video-calls).
   - Enable "Guest permissions: Modify event" so that other people can easily reschedule the meeting if needed.
-- Add a new or ongoing Google Doc link to the event description for taking notes during the meeting.
+- Add a Google Doc link to the event description for taking notes during the meeting.
+  - If the meeting is recurring, use the same Google Doc for all meetings.
 
 #### Structured meetings
 
