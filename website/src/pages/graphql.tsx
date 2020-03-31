@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import * as _ from 'lodash'
+import _ from 'lodash'
 import * as React from 'react'
 import BlogPosts from '../components/BlogPosts'
 import Layout from '../components/Layout'
