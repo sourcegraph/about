@@ -88,7 +88,7 @@ export default ((props: any) => (
                                         href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext"
                                         target="_blank"
                                     >
-                                        Google paper in Communications of the ACM
+                                        Google paper in <i>Communications of the ACM</i>
                                     </a>
                                 }
                             />
@@ -99,7 +99,7 @@ export default ((props: any) => (
                                 quote='… [Google] infrastructure teams must do the work to move their internal users to new versions themselves or do the update in place, in backwards-compatible fashion. This policy, which we&apos;ve called the "Churn Rule," scales better: dependent projects are no longer spending progressively greater effort to just keep up.'
                                 by={
                                     <a href="https://www.amazon.com/gp/product/1492082791/">
-                                        O'Reilly <i>Software Engineering at Google</i>
+                                        O'Reilly book on <i>Software Engineering at Google</i>
                                     </a>
                                 }
                             />
@@ -112,7 +112,7 @@ export default ((props: any) => (
                                         href="https://cacm.acm.org/magazines/2019/8/238344-scaling-static-analyses-at-facebook/fulltext"
                                         target="_blank"
                                     >
-                                        Facebook paper in Communications of the ACM
+                                        Facebook paper in <i>Communications of the ACM</i>
                                     </a>
                                 }
                             />
