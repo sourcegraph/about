@@ -105,6 +105,10 @@
         }
     }
 
+    &__footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
     p > code[class*='language-'],
     a > code[class*='language-'],
     h1 > code[class*='language-'],
