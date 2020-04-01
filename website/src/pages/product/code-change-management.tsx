@@ -96,7 +96,7 @@ export default ((props: any) => (
 
                         <div className="col-md-4">
                             <Blockquote
-                                quote='… [Google] infrastructure teams must do do the work to move their internal users to new versions themselves or do the update in place, in backwards-compatible fashion. This policy, which we&apos;ve called the "Churn Rule," scales better: dependent projects are no longer spending progressively greater effort to just keep up.'
+                                quote='… [Google] infrastructure teams must do the work to move their internal users to new versions themselves or do the update in place, in backwards-compatible fashion. This policy, which we&apos;ve called the "Churn Rule," scales better: dependent projects are no longer spending progressively greater effort to just keep up.'
                                 by={
                                     <a href="https://www.amazon.com/gp/product/1492082791/">
                                         O'Reilly <i>Software Engineering at Google</i>
