@@ -16,7 +16,7 @@ These things become more important as we grow, so we're trying to be more delibe
 
 [**Decisions (Google Sheet)**](https://docs.google.com/spreadsheets/d/1CVdqgSYyukW_eMlfKUDSRZpT9xzYHRDMH5NYbZRVLzQ/edit)
 
-1. This sheet for decisions that are:
+1. This sheet is for decisions that are:
    - high risk (difficult or costly to unwind, or with big/unknown long-term implications); and
    - not able to be reached by consensus within 5 minutes.
 1. When a decision needs to be made, add a row.
