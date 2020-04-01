@@ -6,6 +6,7 @@ When making decisions at Sourcegraph, it's important to:
 1. Decide quickly and precisely.
 1. Communicate the decision and the rationale clearly.
 1. Review the decision with the benefit of hindsight to understand what we got right or wrong.
+1. Ensure clear owners are responsible for following through on the decision with the appropriate context on prioritization and timing.
 
 These things become more important as we grow, so we're trying to be more deliberate about decision-making.
 
