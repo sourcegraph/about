@@ -75,7 +75,7 @@ The following Hubspot emails will be created to promote the webinar:
 - Reminder email T-1 day which includes the Zoom webinar link
 - Reminder email T-1 hour which includes the Zoom webinar link
 
-Since this is a [lead-generation activity](marketing_operations.md#maintaining-data-pipelines), we need to track it in our [HubSpot event log](https://docs.google.com/spreadsheets/d/16S3xlcY7DmpcfKZYD-3VHUsaPLiYHyisu8cD_gZpv0Q/edit?usp=drive_web&ouid=117507720010549543900). Registrations from the `FM OF | Office Hours Registration` and `FM WBR | GoToWebinar Registration` forms are automated and there is nothing to do. If a different form is being used, it must be added to the [Digital List](https://app.hubspot.com/contacts/2762526/lists/485)'s criteria.
+Since this is a [lead-generation activity](marketing_operations.md#maintaining-data-pipelines), we need to track it in our [HubSpot event log](https://docs.google.com/spreadsheets/d/16S3xlcY7DmpcfKZYD-3VHUsaPLiYHyisu8cD_gZpv0Q/edit?usp=drive_web&ouid=117507720010549543900). Registrations from the `FM OM | Online Meetup Registration` and `FM WBR | GoToWebinar Registration` forms are automated and there is nothing to do. If a different form is being used, it must be added to the [Digital List](https://app.hubspot.com/contacts/2762526/lists/485)'s criteria.
 
 Post webinar, Sourcegraph will send followup emails:
 
