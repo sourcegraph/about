@@ -1,5 +1,6 @@
 ---
-title: "Our journey to all-remote"
+title: Our journey to all-remote
+description: On February 20, 2020, we officially moved out of our amazing San Francisco office and became an all-remote company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision.
 author: Nick Snyder
 publishDate: 2020-03-31T10:00-07:00
 tags: [
