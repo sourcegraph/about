@@ -53,7 +53,6 @@ export default class BlogPosts extends React.Component<any, any> {
                                         By {post.node.frontmatter.author} on {post.node.frontmatter.publishDate}
                                     </p>
                                     <p className="blog-posts__post__excerpt">
-                                        (
                                         {post.node.frontmatter.description
                                             ? truncate(post.node.frontmatter.description, { length: 300 })
                                             : truncate(post.node.excerpt, { length: 300 })}{' '}
