@@ -167,6 +167,7 @@ export default ((props: any) => (
         }}
     >
         <Helmet>
+            <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
             <style dangerouslySetInnerHTML={{ __html: `>.async-hide { opacity: 0 !important}` }} />
             <script>
                 {`(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
