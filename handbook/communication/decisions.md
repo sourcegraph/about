@@ -2,7 +2,8 @@
 
 When making decisions at Sourcegraph, it's important to:
 
-1. Gather input from people with relevant knowledge.
+1. Know which pending decisions need to be made soon.
+1. Gather input for decisions from people with relevant knowledge.
 1. Decide quickly and precisely.
 1. Communicate the decision and the rationale clearly.
 1. Review the decision with the benefit of hindsight to understand what we got right or wrong.
