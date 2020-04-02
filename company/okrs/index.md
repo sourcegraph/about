@@ -80,11 +80,14 @@ Do not include any specific financial numbers, customer names, or any other sens
 
 ### Changing OKRs mid-quarter
 
-We don't change OKRs once the quarter starts. Why? It is useful to have a conversation at the end of the quarter about how outcomes diverged from our plan, and why. There might be very good reasons why we changed our plan, and that is ok. If we edit our OKRs it becomes more difficult to have this valuable conversation.
+We don't change OKRs once the quarter starts (with the exceptions below). Why? It is useful to have a conversation at the end of the quarter about how outcomes diverged from our plan, and why. There might be very good reasons why we changed our plan, and that is ok. If we edit our OKRs it becomes more difficult to have this valuable conversation.
 
 If your OKR no longer accurately communicates what's important or what you think is realistically going to get done, then you should immediately update the [outcome](#updating-okr-outcomes) with the expected result and a brief reason why.
 
-You _may_ add a new OKR mid-quarter to reflect new priorities that weren't captured by OKRs written at the beginning of the quarter. Get approval from the CEO and everyone who's affected by the change.
+When *can* you change OKRs mid-quarter? (In these cases, get approval from the CEO and everyone who's affected by the change.)
+
+1. To include new priorities that weren't captured by OKRs written at the beginning of the quarter. 
+1. If the manager of a function or team changes mid-quarter.
 
 ## Updating OKR outcomes
 
