@@ -21,7 +21,7 @@ These announcements will be brief and won't go into details to protect the priva
 - Collect/wipe computer
 - Announce in Monday company meeting
 - Announce in Slack
-- Send final paycheck
+- Physically provide a final paycheck (if required and possible)
 - Submit final expense reimbursement
 - Send Orrick signed separation agreement
 
