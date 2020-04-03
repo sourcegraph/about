@@ -19,7 +19,6 @@ These announcements will be brief and won't go into details to protect the priva
 - Prepare separation agreement (if applicable)
 - Schedule exit interview
 - Collect/wipe computer
-- Announce in Monday company meeting
 - Announce in Slack
 - Physically provide a final paycheck (if required and possible)
 - Submit final expense reimbursement
