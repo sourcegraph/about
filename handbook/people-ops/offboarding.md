@@ -23,7 +23,6 @@ These announcements will be brief and won't go into details to protect the priva
 - Announce in Slack
 - Physically provide a final paycheck (if required and possible)
 - Submit final expense reimbursement
-- Send Orrick signed separation agreement
 
 ## General account offboarding
 - Gmail
