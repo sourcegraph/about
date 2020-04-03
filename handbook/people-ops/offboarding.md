@@ -16,7 +16,7 @@ These announcements will be brief and won't go into details to protect the priva
 - Remove the teammate from the [team page](../../company/team/index.md).
 - Notify Officengine
 - Notify lawyers to end stock option vesting (if applicable)
-- Prepare separation agreement
+- Prepare separation agreement (if applicable)
 - Schedule exit interview
 - Collect/wipe computer
 - Announce in Monday company meeting
