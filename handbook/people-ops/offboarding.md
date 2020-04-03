@@ -15,7 +15,7 @@ These announcements will be brief and won't go into details to protect the priva
 - [Announce the departure](#announcing-departures).
 - Remove the teammate from the [team page](../../company/team/index.md).
 - Notify Officengine
-- Notify Orrick (re: Carta)
+- Notify lawyers to end stock option vesting (if applicable)
 - Prepare separation agreement
 - Schedule exit interview
 - Collect/wipe computer
