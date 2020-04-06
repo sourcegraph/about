@@ -32,28 +32,6 @@ export const WhitePaperJumbotron: React.FunctionComponent<{
     </div>
 )
 
-export const MediaQuote: React.FunctionComponent<{
-    image?: string
-    quote: string
-    author: string
-}> = ({ image, quote, author }) => (
-    <div className="container pt-6">
-        <div className="case-studies__quote row justify-content-center">
-            {image && (
-                <div className="col-12 col-lg-9">
-                    <img className="rounded-circle img-fluid mx-auto d-block pb-3" src={image} alt={author} />
-                </div>
-            )}
-            <div className="col-12 col-lg-9">
-                <blockquote className="blockquote">
-                    <p className="text-light" dangerouslySetInnerHTML={{ __html: quote }} />
-                    <footer className="blockquote-footer text-light mt-1">{author}</footer>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-)
-
 export const WhitePaperPage: React.FunctionComponent<Props> = ({
     title,
     quote,

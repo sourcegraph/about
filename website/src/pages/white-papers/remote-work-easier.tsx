@@ -31,7 +31,7 @@ export default ((props: any) => (
                     'Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool.',
                 author: 'Nick Snyder, VP Engineering at Sourcegraph',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/remote_easier.pdf"
+            pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf"
             bgImage={bg}
         >
             <ContentSection color="white" className="col-md-6 pt-5">
