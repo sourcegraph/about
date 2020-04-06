@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "IEEE Spectrum",
+      "newsTitle": "Q&A: Sourcegraph’s Universal Code Search Tool",
+      "newsDate": "April 3, 2020",
+      "newsLink": "https://spectrum.ieee.org/tech-talk/computing/software/sourcegraph-universal-code-search-tool",
+      "newsImage": "/external-logos/ieee-spectrum-logo.png"
+    },
+    {
       "newsSource": "DEVOPSdigest",
       "newsTitle": "Sourcegraph Secures $23 Million Series B Funding",
       "newsDate": "March 16, 2020",
