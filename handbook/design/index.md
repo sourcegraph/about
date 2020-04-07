@@ -10,6 +10,21 @@ Here are a few of the things we strive to make true:
 - Communicate openly, and solicit feedback frequently
 - To be egoless when soliciting responses to our work
 
+## How to work with design
+
+*This section is WIP*
+
+Advice on how to best work with the design team at Sourcegraph. 
+
+We wanted to document this as design is new to Sourcegraph, and it might not be immediately clear how to get the most out of the design team. 
+
+- If you're in a pinch, the design team is here to help, so don't hesitate to solicit feedback from us. Even if you think your problem might not pertain to design, don't leave it to chance
+- Generally, we favour an asynchronous approach to communication, this gives us some time to validate our responses
+- An example of a time to use immediate communication would be: if you're working from a design file, and you feel that something is missing
+- If you feel that your GitHub issue could use input from design don't hesitate to assign one of us, or add the 'needs-design' tag
+- On GitHub we have a design priorities project, so you can see what we're working on, and add anything you feel we may have missed
+- If you're unsure or unfamiliar with what we're working on, check our the design drive, all of our syncs are will be documented and available
+
 ## Internal Resources
 
 Our internal resources are open, and the design team will welcome any feedback. Hesitating to leave feedback can block discussion, and stretch out time between brainstorming and action.
