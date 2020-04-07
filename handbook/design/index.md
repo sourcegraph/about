@@ -24,6 +24,7 @@ We wanted to document this as design is new to Sourcegraph, and it might not be 
 - If you feel that your GitHub issue could use input from design don't hesitate to assign one of us, or add the 'needs-design' tag
 - On GitHub we have a design priorities project, so you can see what we're working on, and add anything you feel we may have missed
 - If you're unsure or unfamiliar with what we're working on, check our the design drive, all of our syncs are will be documented and available
+- We have a document type, the design execution document, that tracks active design projects. You can find all information about design projects here, and also contribute with feedback
 
 ## Internal Resources
 
