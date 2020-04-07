@@ -59,20 +59,21 @@ Sourcegraph is the one place to find and fix things across all code.
 ## Principles
 
 - Sourcegraph is universal code search, not universal "everything" search. Any additional data types in our search need to be relevant to the software development workflow.
-- We're a mass-market company and must maintain broad appeal. We want every developer, not just a specific niche audience, to use Sourcegraph.
-  - Any given developer will only pick one code search tool to use. Any given company will standardize on a single code search tool. Therefore, to avoid fragmentation, Sourcegraph should be not only *much* better than the alternatives, but also *not worse* in any significant way.
+- We want every developer, not just a specific niche audience, to use Sourcegraph.
   - We won't adopt polarizing public stances that would divide our audience.
 - Our product should strive to be fundamentally privacy-respecting and secure. This means that users don't need to trust us to verify that their data is private and secure.
 - Build on-ramps in our product to turn more people into frequent users, instead of building the product *for* infrequent users (which is a self-fulfilling prophecy).
 - We eventually want to be a platform that ties together all of the tools developers use.
   - Other developer tools are partners, not competitors.
-  - This entails designing more extensibility into our product (and documenting it more thoroughly) than what's needed today, in order to make it easy for other people to build on.
+  - This entails designing for extensibility in our product (and documenting it more thoroughly) as a first-order priority.
 - Sourcegraph provides greater value the larger a software team. We are building not just for individual developers, but for development teams. We believe software development is increasingly a multiplayer game.
 
 ## Assumptions
 
 - Sufficiently good code search will be useful to every developer many times per day (on average). It may take a while to convert any specific person into a frequent code search power user, but it will happen eventually.
 - Code search that is *exclusively* for public/open-source code is not actually that useful because most people spend most of their time working on their organization's internal code.
+- Any given developer will only pick one code search tool to use. Any given company will standardize on a single code search tool.
+  - Therefore, to avoid fragmentation, Sourcegraph should be not only *much* better than the alternatives, but also *not worse* in any significant way.
 
 ## Pricing
 
