@@ -10,6 +10,7 @@ Sourcegraph is an all-remote company, which means:
 
 ## Helpful links
 
+- [Our journey to all-remote](https://about.sourcegraph.com/blog/our-journey-to-all-remote)
 - [Tips for working remotely](tips.md)
 - [GitLab handbook: All-remote](https://about.gitlab.com/company/culture/all-remote)
   - Sourcegraph is [all-remote, asynchronous across time zones](https://about.gitlab.com/company/culture/all-remote/stages/#all-remote-asynchronous-across-time-zones), according to GitLab's taxonomy

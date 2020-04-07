@@ -9,7 +9,7 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title:
-                'How Sourcegraph helped ensure production stability at Lyft during their monolith to microservices decomposition',
+                'Lyft adopts Sourcegraph Universal Code Search to ensure production stability during their monolith to microservices decomposition',
             description:
                 'Learn how Sourcegraph code search helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition',
             // image: "https://about.sourcegraph.com/lyft-sourcegraph-case-study-og-embed.jpg"-pending approval
@@ -17,13 +17,13 @@ export default ((props: any) => (
     >
         <CaseStudyPage
             customer="Lyft"
-            title="How Sourcegraph helped ensure production stability at Lyft during their monolith to microservices decomposition"
+            title="Lyft adopts Sourcegraph Universal Code Search to ensure production stability during their monolith to microservices decomposition"
             logo="/external-logos/lyft-logo.svg"
             quote={{
                 quote:
                     'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition by verifying applications were no longer pointing at the monolith version of a service.',
                 author: justinPhilips,
-                image: '/case-studies/justin-phillips-lyft.jpg'
+                image: '/case-studies/justin-phillips-lyft.jpg',
             }}
             pdf="https://storage.googleapis.com/sourcegraph-assets/Lyft-Sourcegraph-case-study.pdf"
         >
@@ -96,7 +96,7 @@ export default ((props: any) => (
         </CaseStudyPage>
         <CaseStudyRequestDemoForm
             title="Need help with your monolith to microservices migration?"
-            description="Sourcegraph can ensure a safe and efficient deployment plan for migrating you monolith to microservices. Get in touch to schedule a demo."
+            description="Sourcegraph Universal Code Search can ensure a safe and efficient deployment plan for migrating your monolith to microservices. Get in touch to schedule a demo."
         />
     </Layout>
 )) as React.FunctionComponent<any>

@@ -11,6 +11,7 @@ To reach us, mention @ericbm in the most relevant channel (i.e. #marketing for a
 ## Submitting a data request
 
 **Projects:** Proposals to capture and report on new data are in [GitHub issues in the Sourcegraph analytics repository](https://github.com/sourcegraph/analytics/issues). Provide the following data to help us understand and prioritize your request:
+
 - What is the purpose of the visualization?
 - Will it be frequently used, or is it only needed sporadically?
 - How does it support Sourcegraph's company and team OKRs?
@@ -28,11 +29,13 @@ We collect data from the following:
 
 * Google Analytics: Website analytics for Sourcegraph marketing and docs pages (not Sourcegraph.com)
 * HubSpot: Marketing automation and CRM
-* Apollo: Email marketing automation
+* MixMax: Email marketing automation (Apollo is not used in production, but still retains data)
 * Sourcegraph.com Site-admin pages: customer subscriptions and license keys
-* [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information
+* [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information. There are [specific guidelines](../engineering/adding_ping_data.md) that must be followed for teams to add ping data. 
 * [Custom tool to track events](https://github.com/sourcegraph/sourcegraph/issues/5486) on the Sourcegraph.com instance
 * [Prometheus dashboards](https://sourcegraph.com/-/debug/grafana/?orgId=1) show high-level insight into the health of a Sourcegraph instance to admins. Sourcegraph teammates can see the health of Sourcegraph.com. 
+
+We have [written policies about how we handle customer information](customer_data_policy.md). 
 
 ## Data tools
 
@@ -60,16 +63,18 @@ Every Sunday night or Monday morning, [BizOps scripts](https://github.com/source
 - [All Instances](https://sourcegraph.looker.com/looks/436)<br/>
 - [Specific Instance Overview](https://sourcegraph.looker.com/dashboards/94?Unique%20Server%20ID=&Site%20ID=&filter_config=%7B%22Unique%20Server%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:4%7D%5D,%22Site%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:5%7D%5D%7D) (To select a specific company, fill the Unique Server ID field)<br/>
 
-**Folders**
+**Looker boards**
 
 - [Go-to-market](https://sourcegraph.looker.com/browse/boards/2)<br/>
-- [Marketing](https://sourcegraph.looker.com/folders/109)<br/>
-- [Sales](https://sourcegraph.looker.com/folders/114)<br/>
-- [Product Insights](https://sourcegraph.looker.com/folders/113)<br/>
+- [Product/engineering](https://sourcegraph.looker.com/browse/boards/5)<br/>
+
+These two boards will contain 99% of what you're looking in Looker. We recommend adding them to your account (this will pop-up on the top of the page if you haven't already added them) to simplify your Looker navigation. If what you're looking for is not on these boards, you can [explore the folders](https://sourcegraph.looker.com/folders/home). 
 
 ### Getting started with Looker
 
 Looker provides tools for building and exploring custom reports and visualizations using custom fields captured from various Sourcegraph data sources. If you're a new user, here's where to get started.
+
+To simplify navigation within Looker, adding the [go-to-market](https://sourcegraph.looker.com/browse/boards/2) and [product/engineering](https://sourcegraph.looker.com/browse/boards/5) boards to your list (the button under the board title). 
 
 - [Exploring data](http://www.looker.com/docs/exploring-data/exploring-data)
 - [Visualizing data](http://www.looker.com/docs/exploring-data/visualizing-query-results)

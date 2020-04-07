@@ -1,7 +1,6 @@
 import React from 'react'
 import { COLORS } from '../Jumbotron'
 import slugify from 'slugify'
-import { eventLogger } from '../../EventLogger'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ContentPage } from './ContentPage'
 import { ContentSection } from './ContentSection'
@@ -37,15 +36,7 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
         <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
             {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
             {pdf && (
-                <a
-                    href={pdf}
-                    className="btn btn-primary mt-4"
-                    rel="nofollow"
-                    onClick={() => {
-                        eventLogger.trackCaeStudyDownloadPDFClicked(customer)
-                    }}
-                    target="_blank"
-                >
+                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow" target="_blank">
                     <i className="fa fa-file-pdf pr-2" />
                     Download PDF
                 </a>
@@ -116,8 +107,8 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     title?: string
     description?: string
 }> = ({
-    title = 'See the difference Sourcegraph can make with a demo and free enterprise trial',
-    description = "Sourcegraph's code search enables developers find dead code, unused packages, and deprecated references in tens of thousands of repositories within seconds. Let us show you how.",
+    title = 'See how Sourcegraph can help with a demo and free enterprise trial',
+    description = 'Universal Code Search enables developers to explore and better understand all code, everywhere, faster. Let us show you how.',
 }) => (
     <ContentPage
         title={title}

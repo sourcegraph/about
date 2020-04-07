@@ -16,14 +16,10 @@ import {
     RequestCodeChangeManagementDemoAction,
     RequestCodeChangeManagementDemoActionNow,
 } from '../../css/components/actions/RequestDemoAction'
-import { eventLogger } from '../../EventLogger'
 
 const title = 'Code change management'
 const description =
     'Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt. Compute changes, create branches, and track pull requests across all affected repositories.'
-const seeItInActionClicked = () => {
-    eventLogger.trackCampaignsSeeItInActionButtonClicked()
-}
 
 export const CampaignsTable: React.FunctionComponent<{
     campaigns: string[]
@@ -77,43 +73,52 @@ export default ((props: any) => (
                 <h2 className="display-3 mb-5">Leading dev teams invest heavily in code&nbsp;change&nbsp;management</h2>
                 <div className="row justify-content-lg-center">
                     <div className="col text-center">
-                        <a
-                            className="btn btn-outline-primary rounded-lg active mb-5 px-6"
-                            href="#see-it-in-action"
-                            onClick={seeItInActionClicked}
-                        >
+                        <a className="btn btn-outline-primary rounded-lg active mb-5 px-6" href="#see-it-in-action">
                             See it in action
                         </a>
                     </div>
                 </div>
-                <div className="row pb-4">
-                    <div className="col-md-6">
-                        <Blockquote
-                            quote="Google invests significant effort in maintaining code health to address some issues related to codebase complexity and dependency management. For instance, special tooling automatically detects and removes dead code, splits large refactorings, … and marks APIs as deprecated."
-                            by={
-                                <a
-                                    href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext"
-                                    target="_blank"
-                                >
-                                    Google paper in Communications of the ACM
-                                </a>
-                            }
-                        />
+                <ContentSection color="white" className="py-3">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <Blockquote
+                                quote="Google invests significant effort in maintaining code health to address some issues related to codebase complexity and dependency management. For instance, special tooling automatically detects and removes dead code, splits large refactorings, … and marks APIs as deprecated."
+                                by={
+                                    <a
+                                        href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext"
+                                        target="_blank"
+                                    >
+                                        Google paper in <i>Communications of the ACM</i>
+                                    </a>
+                                }
+                            />
+                        </div>
+
+                        <div className="col-md-4">
+                            <Blockquote
+                                quote='… [Google] infrastructure teams must do the work to move their internal users to new versions themselves or do the update in place, in backwards-compatible fashion. This policy, which we&apos;ve called the "Churn Rule," scales better: dependent projects are no longer spending progressively greater effort to just keep up.'
+                                by={
+                                    <a href="https://www.amazon.com/gp/product/1492082791/">
+                                        O'Reilly book on <i>Software Engineering at Google</i>
+                                    </a>
+                                }
+                            />
+                        </div>
+                        <div className="col-md-4">
+                            <Blockquote
+                                quote='[At Facebook], analyzers participate as bots in code review, making automatic comments when an engineer submits a code modification. … [This automation] saw a 70% fix rate, where a more traditional "offline" or "batch" deployment (where bug lists are presented to engineers, outside their workflow) saw a 0% fix rate.'
+                                by={
+                                    <a
+                                        href="https://cacm.acm.org/magazines/2019/8/238344-scaling-static-analyses-at-facebook/fulltext"
+                                        target="_blank"
+                                    >
+                                        Facebook paper in <i>Communications of the ACM</i>
+                                    </a>
+                                }
+                            />
+                        </div>
                     </div>
-                    <div className="col-md-6">
-                        <Blockquote
-                            quote='[At Facebook], analyzers participate as bots in code review, making automatic comments when an engineer submits a code modification. … [This automation] saw a 70% fix rate, where a more traditional "offline" or "batch" deployment (where bug lists are presented to engineers, outside their workflow) saw a 0% fix rate.'
-                            by={
-                                <a
-                                    href="https://cacm.acm.org/magazines/2019/8/238344-scaling-static-analyses-at-facebook/fulltext"
-                                    target="_blank"
-                                >
-                                    Facebook paper in Communications of the ACM
-                                </a>
-                            }
-                        />
-                    </div>
-                </div>
+                </ContentSection>
                 <h2 className="text-center display-4 mb-3 mt-4">
                     How code&nbsp;change&nbsp;campaigns help teams move quickly and safely
                 </h2>
@@ -216,11 +221,11 @@ export default ((props: any) => (
                 </h2>
                 <div className="row justify-content-md-center">
                     <p className="text-center">
-                        Watch how to use Sourcegraph to the deprecate a JavaScript library across 100+ repositories.
+                        Watch how to use Sourcegraph code change campaigns to upgrade the RxJS library in multiple
+                        repositories.
                     </p>
                 </div>
-                <Vimeo id={355392896} muted={false} className="mt-4" />
-                <Vimeo id={355392936} muted={false} className="mt-5" />
+                <Vimeo id={390882141} muted={false} className="mt-4" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
@@ -231,8 +236,8 @@ export default ((props: any) => (
                 color="purple"
                 className="request-campaigns-demo-footer py-4"
                 logomark={false}
-                title="Request a Sourcegraph code change management demo"
-                description="With code change management, large-scale fixes and changes that previously took weeks or months can be completed in hours."
+                title="See how Sourcegraph code change management can help your team"
+                description="With code change campaigns, large-scale fixes and changes that previously took weeks or months can be completed in hours."
             >
                 <RequestCodeChangeManagementDemoActionNow />
             </Jumbotron>

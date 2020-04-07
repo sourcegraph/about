@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { eventLogger } from '../EventLogger'
 import { ProductPopoverButton } from './ProductPopover'
 
 interface HeaderProps {
@@ -32,7 +31,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                 <nav className="header navbar navbar-dark navbar-expand-md border-bottom p-3">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
-                            <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph logo" />
+                            <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph" />
                         </Link>
                         {!this.props.minimal && (
                             <>
@@ -61,18 +60,10 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 What is Universal Code Search?
                                             </Link>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                            onClick={() => eventLogger.trackProductClicked('header')}
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <ProductPopoverButton className="header__nav-link nav-link" />
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                            onClick={this.pricingClicked}
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
                                                 to="/pricing"
@@ -81,11 +72,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Pricing
                                             </Link>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                            onClick={this.docsClicked}
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <a
                                                 className="header__nav-link nav-link"
                                                 href="https://docs.sourcegraph.com"
@@ -93,11 +80,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Docs
                                             </a>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                            onClick={this.aboutClicked}
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
                                                 to="/about"
@@ -106,11 +89,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Company
                                             </Link>
                                         </li>
-                                        <li
-                                            className="header__nav-item nav-item"
-                                            role="presentation"
-                                            onClick={this.blogClicked}
-                                        >
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
                                                 to="/blog"
@@ -124,7 +103,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 className="header__nav-link nav-link"
                                                 href="https://sourcegraph.com/sign-in"
                                                 title="For public code only on Sourcegraph.com"
-                                                onClick={this.signinClicked}
                                             >
                                                 Sign in
                                             </a>
@@ -134,7 +112,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 className="header__nav-link nav-link"
                                                 href="https://sourcegraph.com/sign-up"
                                                 title="For public code only on Sourcegraph.com"
-                                                onClick={this.signupClicked}
                                             >
                                                 Sign up
                                             </a>
@@ -147,23 +124,5 @@ export default class Header extends React.Component<HeaderProps, any> {
                 </nav>
             </>
         )
-    }
-    private aboutClicked = () => {
-        eventLogger.trackAboutClicked('header')
-    }
-    private docsClicked = () => {
-        eventLogger.trackDocsClicked('header')
-    }
-    private pricingClicked = () => {
-        eventLogger.trackPricingClicked('header')
-    }
-    private blogClicked = () => {
-        eventLogger.trackBlogClicked('header')
-    }
-    private signinClicked = () => {
-        eventLogger.trackSigninClicked('header')
-    }
-    private signupClicked = () => {
-        eventLogger.trackSignupClicked('header')
     }
 }

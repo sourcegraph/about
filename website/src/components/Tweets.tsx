@@ -27,12 +27,17 @@ export const Tweets: React.FunctionComponent<any> = props => (
             </blockquote>
         </div>
         <div className="col-md-4">
-            <blockquote className="twitter-tweet" data-lang="en">
+            <blockquote className="twitter-tweet">
                 <p lang="en" dir="ltr">
-                    I prefer sourcegraph&#39;s search and code browsing to native github. Yeah, I said it.
+                    No code search tool I&#39;ve used can hold a candle to{' '}
+                    <a href="https://twitter.com/srcgraph?ref_src=twsrc%5Etfw">@srcgraph</a>. Makes jumping around code
+                    and sharing code references so easy. Blazing fast, even for{' '}
+                    <a href="https://twitter.com/hashtag/Kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#Kubernetes</a>.
                 </p>
-                &mdash; ⚑😀 4A4D42 😀⚑ (@josebiro){' '}
-                <a href="https://twitter.com/josebiro/status/1104430013565136898?ref_src=twsrc%5Etfw">March 9, 2019</a>
+                &mdash; Matt Kelly (@mattkellyeng){' '}
+                <a href="https://twitter.com/mattkellyeng/status/1116684521481691136?ref_src=twsrc%5Etfw">
+                    April 12, 2019
+                </a>
             </blockquote>
         </div>
     </div>

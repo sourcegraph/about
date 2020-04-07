@@ -27,7 +27,7 @@ export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
             title="Code review"
-            description="Start doing code reviews right. Sourcegraph enhances your existing code review tool with inline code intelligence, helping you speed up the review cycle and catch more bugs before they're deployed to production."
+            description="Better code reviews with code intelligence in context. Sourcegraph enhances your existing code review tool with inline code intelligence, helping you speed up the review cycle and catch more bugs before they're deployed to production."
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestDemoAction className="mt-3" />
@@ -57,7 +57,7 @@ export default ((props: any) => (
                 ]}
             />
             <ContentSection color="white" className="py-5">
-                <h2 id="why" className="display-4 mb-4">
+                <h2 className="display-4 mb-4" id="why">
                     Code review is the most critical process for engineering teams
                 </h2>
                 <IconItem color="brand-orange" icon={FlameIcon} className="py-3">
@@ -125,30 +125,27 @@ export default ((props: any) => (
                             </p>
                         </IconItem>
                     </div>
-                    <div className="col-lg-6 mb-4">
-                        <OpenSourcePrivacyFeatureItem />
-                    </div>
                 </div>
             </ContentSection>
+            <ContentSection color="white" className="pt-5 pb-3" id="customers">
+                <CustomerLogosSection />
+            </ContentSection>
+            <ContentSection color="black" className="py-6">
+                {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
+                <h2 id="demo" className="text-center display-4 pb-4">
+                    Better code reviews with the Sourcegraph browser extension
+                </h2>
+                <Vimeo id={340033634} />
+            </ContentSection>
+
             <ContentSection color="white" className="pt-5 pb-3">
-                <hr id="integrations" />
+                <br id="integrations" />
                 <IntegratesWithSection
                     className="py-6"
                     showTypes={['codeHost', 'language']}
                     showOnlyCodeHostsWithCodeReviewIntegration={true}
                     customTypeLabels={{ codeHost: 'Code review tools' }}
                 />
-            </ContentSection>
-            <ContentSection color="black" className="py-6">
-                {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
-                <h2 id="demo" className="text-center display-4 pb-4">
-                    GitHub with the Sourcegraph browser extension
-                </h2>
-                <Vimeo id={340033634} />
-            </ContentSection>
-            <ContentSection color="white" className="pt-5 pb-3">
-                <span id="customers" />
-                <CustomerLogosSection />
             </ContentSection>
             <ContentSection color="black" className="py-5">
                 <EnterpriseReadySolution />
@@ -157,8 +154,8 @@ export default ((props: any) => (
                 color="purple"
                 className="py-4"
                 logomark={false}
-                title="Get Sourcegraph now"
-                description="Start doing code review right with Sourcegraph, used by elite software teams."
+                title="Try Sourcegraph now"
+                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search."
             >
                 <GetSourcegraphNowActions />
                 <a className="btn btn-primary mt-2" href="https://docs.sourcegraph.com/integration/browser_extension">

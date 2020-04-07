@@ -3,8 +3,9 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
-import { eventLogger } from '../EventLogger'
 import { BLOGS } from '../pages/blog'
+import { Jumbotron } from '../components/Jumbotron'
+import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 
 // Question: Should these be local to the render function since they are not used elsewhere?
 interface AuthorProps {
@@ -17,21 +18,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
         super(props)
     }
 
-    private logSelectDockercommand(): void {
-        if (
-            document.getSelection().baseNode &&
-            document.getSelection().baseNode.parentNode &&
-            document.getSelection().baseNode.parentNode.nodeName === 'CODE' &&
-            document.getSelection().baseNode.parentNode.textContent.includes('docker run')
-        ) {
-            eventLogger.trackInstallServerCommandHighlighted('blog')
-        }
-    }
-
     public componentDidMount(): void {
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none')
-            document.addEventListener('mouseup', this.logSelectDockercommand)
         }
     }
     // Question: Should this be a Function Component?
@@ -40,7 +29,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
 
         if (props.authorUrl) {
             element = (
-             <span>By <a href={props.authorUrl}>{props.author}</a></span>
+                <span>
+                    By <a href={props.authorUrl}>{props.author}</a>
+                </span>
             )
         } else {
             element = <span>By {props.author}</span>
@@ -92,34 +83,41 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                         <div className="blog-post__wrapper">
                             <section className="blog-post__title">
                                 <h1>{title}</h1>
-                                <div class="blog__posts--post-byline">
-				    <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} /> on {publishDate}
-				</div>
+                                <div className="blog__posts--post-byline">
+                                    <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} />{' '}
+                                    on {publishDate}
+                                </div>
                             </section>
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
                                 <div dangerouslySetInnerHTML={{ __html: content }} />
-                                <hr />
-                                <div style={{ height: '0.5em' }} />
-                                <Link to={BLOGS.Blog}>
-                                    <button className="btn btn-outline-primary">Read more posts</button>
-                                </Link>
-                                <a
-                                    href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
-                                    className="ml-3"
-                                >
-                                    <button className="btn btn-outline-primary">Edit this post</button>
-                                </a>
-                                <div style={{ height: '1em' }} />
-                                <div>
-                                    <div className="mb-4">
+                                <section className="blog-post__footer mt-4 pt-4">
+                                    <Link to={BLOGS.Blog} className="button btn btn-outline-primary">
+                                        Read more posts
+                                    </Link>
+                                    <a
+                                        href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
+                                        className="btn btn-outline-primary ml-3"
+                                    >
+                                        Edit this post
+                                    </a>
+                                    <div className="pt-4">
                                         <SocialLinks url={`https://about.sourcegraph.com/${slug}`} title={title} />
                                     </div>
-                                </div>
+                                </section>
                             </section>
                         </div>
                     </div>
                 </div>
+                <Jumbotron
+                    color="purple"
+                    className="py-4"
+                    logomark={false}
+                    title="Try Sourcegraph now"
+                    description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
+                >
+                    <GetSourcegraphNowActions />
+                </Jumbotron>
             </Layout>
         )
     }
