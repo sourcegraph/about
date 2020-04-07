@@ -18,3 +18,16 @@ We need a place to communicate ideas asynchronously, that is easier to access th
 
 ## Why is this different to an RFC?:
 An RFC documents planned work, the work is executed here and in Figma. Multiple RFC’s can relate to one design execution document. This document is ongoing work and probably not a source of truth until the work is finished and implemented. 
+
+## Overview
+
+Design execution documents are how we track design projects, it's a place for brainstorming, research, copy, and design artifacts to live. The document is open to everyone inside the company, so you can keep up with what we're working on, and leave feedback as you see fit.
+
+We've chosen to value documenting our progress on projects in an effort to facilitate more feedback, and to create a detailed timeline of design projects to help new additions to the team onboard faster.
+
+Much of the information on this page is informed by our RFC template, you can read more about that here. We've done this to try and keep things consistent, and whilst design execution documents are their own thing, they will be initially informed by RFC's.
+
+## Status
+
+# Design execution documents are sequentially numbered
+
