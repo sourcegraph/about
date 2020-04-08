@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Devops.com",
+      "newsTitle": "Q&A: Sourcegraph’s Universal Code Search Tool",
+      "newsDate": "April 7, 2020",
+      "newsLink": "https://devops.com/universal-code-search-combinations/",
+      "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
       "newsSource": "IEEE Spectrum",
       "newsTitle": "Q&A: Sourcegraph’s Universal Code Search Tool",
       "newsDate": "April 3, 2020",
