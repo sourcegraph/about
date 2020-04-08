@@ -7,6 +7,7 @@ interface IntegrationEntry {
     iconUrl: string
     description: string
     width?: number
+    url?: string
 }
 
 const ENTRIES: IntegrationEntry[] = [
@@ -16,6 +17,7 @@ const ENTRIES: IntegrationEntry[] = [
         iconUrl: '/external-logos/github-horizontal-logo.svg',
         description: 'GitHub.com and GitHub Enterprise Server (code hosting and review)',
         width: 95,
+        url: '/blog/universal-code-intelligence-github-sourcegraph-browser-extension',
     },
     {
         type: 'codeHost',
@@ -136,15 +138,27 @@ const IntegrationEntriesRow: React.FunctionComponent<{
             {children}
             {entries && (
                 <div className="d-flex flex-wrap align-items-center">
-                    {entries.map(({ description, iconUrl, width }, i) => (
-                        <img
-                            key={i}
-                            className="integrates-with-section__logo mx-2"
-                            src={iconUrl}
-                            title={description}
-                            style={width !== undefined ? { width: `${width}px` } : undefined}
-                        />
-                    ))}
+                    {entries.map(({ description, iconUrl, width, url = '' }, i) =>
+                        url ? (
+                            <a href={url}>
+                                <img
+                                    key={i}
+                                    className="integrates-with-section__logo mx-2"
+                                    src={iconUrl}
+                                    title={description}
+                                    style={width !== undefined ? { width: `${width}px` } : undefined}
+                                />
+                            </a>
+                        ) : (
+                            <img
+                                key={i}
+                                className="integrates-with-section__logo mx-2"
+                                src={iconUrl}
+                                title={description}
+                                style={width !== undefined ? { width: `${width}px` } : undefined}
+                            />
+                        )
+                    )}
                 </div>
             )}
         </div>
