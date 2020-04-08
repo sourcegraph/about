@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "InfoQ",
+      "newsTitle": "Code Search Now Available to Browse Google's Open-Source Projects",
+      "newsDate": "April 8, 2020",
+      "newsLink": "https://www.infoq.com/news/2020/04/google-code-search-available/",
+      "newsImage": "/external-logos/infoq-logo.png"
+    },
+    {
       "newsSource": "Devops.com",
       "newsTitle": "Universal Code Search Combinations",
       "newsDate": "April 7, 2020",
