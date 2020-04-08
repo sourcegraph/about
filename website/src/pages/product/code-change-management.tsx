@@ -78,34 +78,47 @@ export default ((props: any) => (
                         </a>
                     </div>
                 </div>
-                <div className="row pb-4">
-                    <div className="col-md-6">
-                        <Blockquote
-                            quote="Google invests significant effort in maintaining code health to address some issues related to codebase complexity and dependency management. For instance, special tooling automatically detects and removes dead code, splits large refactorings, … and marks APIs as deprecated."
-                            by={
-                                <a
-                                    href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext"
-                                    target="_blank"
-                                >
-                                    Google paper in Communications of the ACM
-                                </a>
-                            }
-                        />
+                <ContentSection color="white" className="py-3">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <Blockquote
+                                quote="Google invests significant effort in maintaining code health to address some issues related to codebase complexity and dependency management. For instance, special tooling automatically detects and removes dead code, splits large refactorings, … and marks APIs as deprecated."
+                                by={
+                                    <a
+                                        href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext"
+                                        target="_blank"
+                                    >
+                                        Google paper in <i>Communications of the ACM</i>
+                                    </a>
+                                }
+                            />
+                        </div>
+
+                        <div className="col-md-4">
+                            <Blockquote
+                                quote='… [Google] infrastructure teams must do the work to move their internal users to new versions themselves or do the update in place, in backwards-compatible fashion. This policy, which we&apos;ve called the "Churn Rule," scales better: dependent projects are no longer spending progressively greater effort to just keep up.'
+                                by={
+                                    <a href="https://www.amazon.com/gp/product/1492082791/">
+                                        O'Reilly book on <i>Software Engineering at Google</i>
+                                    </a>
+                                }
+                            />
+                        </div>
+                        <div className="col-md-4">
+                            <Blockquote
+                                quote='[At Facebook], analyzers participate as bots in code review, making automatic comments when an engineer submits a code modification. … [This automation] saw a 70% fix rate, where a more traditional "offline" or "batch" deployment (where bug lists are presented to engineers, outside their workflow) saw a 0% fix rate.'
+                                by={
+                                    <a
+                                        href="https://cacm.acm.org/magazines/2019/8/238344-scaling-static-analyses-at-facebook/fulltext"
+                                        target="_blank"
+                                    >
+                                        Facebook paper in <i>Communications of the ACM</i>
+                                    </a>
+                                }
+                            />
+                        </div>
                     </div>
-                    <div className="col-md-6">
-                        <Blockquote
-                            quote='[At Facebook], analyzers participate as bots in code review, making automatic comments when an engineer submits a code modification. … [This automation] saw a 70% fix rate, where a more traditional "offline" or "batch" deployment (where bug lists are presented to engineers, outside their workflow) saw a 0% fix rate.'
-                            by={
-                                <a
-                                    href="https://cacm.acm.org/magazines/2019/8/238344-scaling-static-analyses-at-facebook/fulltext"
-                                    target="_blank"
-                                >
-                                    Facebook paper in Communications of the ACM
-                                </a>
-                            }
-                        />
-                    </div>
-                </div>
+                </ContentSection>
                 <h2 className="text-center display-4 mb-3 mt-4">
                     How code&nbsp;change&nbsp;campaigns help teams move quickly and safely
                 </h2>

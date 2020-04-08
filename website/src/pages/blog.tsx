@@ -1,5 +1,7 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
+import { ContentPage } from '../components/content/ContentPage'
+import { ContentSection } from '../components/content/ContentSection'
 import BlogHeadLinks from '../components/BlogHeadLinks'
 import BlogPosts from '../components/BlogPosts'
 import Layout from '../components/Layout'
@@ -34,13 +36,20 @@ export default class BlogList extends React.Component<any, any> {
                     description: metaProps.description,
                 }}
             >
-                <div className="blog bg-white text-dark">
-                    <div className="blog blog__head">
-                        <h1>Sourcegraph blog</h1>
-                        <BlogHeadLinks />
-                    </div>
-                    <BlogPosts blogType="blog" posts={markdownBlogPosts} />
-                </div>
+                <ContentPage
+                    title="Sourcegraph blog"
+                    mainActions={
+                        <div className="d-flex flex-column align-items-center">
+                            <BlogHeadLinks />
+                        </div>
+                    }
+                >
+                    <ContentSection color="white">
+                        <div className="pt-4">
+                            <BlogPosts blogType="blog" posts={markdownBlogPosts} />
+                        </div>
+                    </ContentSection>
+                </ContentPage>
             </Layout>
         )
     }

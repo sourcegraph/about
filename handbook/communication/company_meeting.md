@@ -6,14 +6,19 @@
 1. The link to the slides is posted in #general each Thursday before.
 1. We used to call this "team meeting", but now we call it "company meeting" because "team meeting" sounds like it's only for one specific team inside the company.
 
+## Goals
+
+1. Bring the team together regularly so we feel connected despite being located all around the world.
+1. Hold ourselves accountable to our goals.
+1. Convey specific information that helps other team members do their job better.
+1. Recognize individual team members for special contributions and on anniversaries.
+1. Communicate any important announcements.
+
 ## Agenda
 
-1. #thanks (CEO)
-   - Summary and highlights of [#thanks](team_chat.md#thanks) messages since the last company meeting, tied to our [values](../../company/values.md).
 1. Introduce any new team members starting this week
    - The manager of the team member presents a brief (~30-second) intro, stating the new team member's role, why we hired them, what their first project is, and a fun fact about them.
 1. Birthdays/anniversaries
-1. "Developers!"
 1. Inspiration of the week (message @dan to volunteer to present an inspiration)
 1. Sales and marketing
 1. People Ops
