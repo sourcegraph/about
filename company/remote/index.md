@@ -10,7 +10,7 @@ Sourcegraph is an all-remote company, which means:
 
 ## FAQ
 
-### How are you able to maintain team cohesiveness and togetherness while working remotely?
+### How are you able to maintain team cohesion while working remotely?
 
 Having a shared set of values and trust among teammates is the foundation for a cohesive team, regardless of whether the team is all-remote or all in the same office. We have that here at Sourcegraph.
 
