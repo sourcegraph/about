@@ -1,23 +1,18 @@
 # Design execution (DE)
 
-## Planning how to use this document
+*This section is a WIP, we are currently running our first [design execution document](https://docs.google.com/document/d/1xjygvhxjWekkhstlTch5q7x2N3L7uKMIG8Pq9IbWCaI/edit#)*
 
-Doc is for asynchronous communication regarding a design project (in this instance onboarding). Essentially this is where the design lives outside of Figma, and this file works in conjunction with figma (shares a name with the relevant figma project, figma file is the first available link)
+Design execution documents are where design projects live, tracking the process that was laid out in corresponding RFC's. As a company we value tracking work to make asynchronous communication easier, by having a central place for design projects to live, and by using an environment familiar to everyone at Sourcegraph, we can more easily solicit feedback.
 
-Here’s an example of a similar document the marketing team built (category creation: universal code search): https://docs.google.com/document/d/1X8OAzWmsK5MB78lKXDOBFy5dmYJ2MPsQIRw1dpTOvHc/edit#
+A design execution document is a place where design is executed. Research will be organised, and discussion concerning design artifacts can take place and be documented here.
 
-## What will be here: 
-- Our initial assumptions regarding research, additions, changes (brainstorm)
-- Research
-- Brainstorm research
-- Designs (Figma links + documentation on interactions)
-- Copy editing
+The [template](https://docs.google.com/document/d/12qT1U_ogBBY1ED6XlG-3MnbeOzCuYrnvoU7inpUMtPM/edit#) for design execution documents is loose, to accomodate varying design needs, and changes to process. 
 
-## Why do we need this?:
-We need a place to communicate ideas asynchronously, that is easier to access than a slack thread, and easier to comment on than github issues.
+All DE documents should serve 3 goals:
 
-## Why is this different to an RFC?:
-An RFC documents planned work, the work is executed here and in Figma. Multiple RFC’s can relate to one design execution document. This document is ongoing work and probably not a source of truth until the work is finished and implemented. 
+1. A public repository of the design process is a place to receive and solicit feedback from the team
+2. Viewing the design process as a whole helps everyone understand where we are in a project, and highlights problem areas
+3. Finished projects are a timeline that informs future work, and helps new team members onboard
 
 ## Overview
 
@@ -29,5 +24,36 @@ Much of the information on this page is informed by our RFC template, you can re
 
 ## Status
 
-# Design execution documents are sequentially numbered
+Each design execution document has a status that is in the title of the design execution document (e.g. “DE 1 ACTIVE: Title”). The editor is responsible for keeping the status updated.
 
+| Status | Description |
+|-------|-------------|
+| TENTATIVE | A design problem has been identified, and an RFC is being drafted. |
+| ACTIVE | The first related RFC has been approved, and the design process is underway. |
+| ABANDONED | There are no plans to move forward with this design project. The initial RFC may be ABANDONED. The reason is communicated in the metadeta section of the design execution document. |
+| IMPLEMENTED | This design execution document has been implemented. |
+
+## Sequential numbering
+
+## Items that belong in a design execution document 
+
+- Our initial assumptions regarding research, additions, changes (brainstorm)
+- Research
+- Brainstorm research
+- Designs (Figma links + documentation on interactions)
+- Copy editing
+- Project timelines
+
+## Privacy
+
+## Participation
+
+Any member of the team can leave feedback on any element of a design execution document.
+
+## Treating a design execution document post implementation
+
+Once a project has been implemented, the editor will treat the document, keeping a private version in an archived state, and creating a new public version that removes potentially confidential information. This will be reviewed before being made public.
+
+## Resources
+
+- https://medium.com/dali-lab/document-your-design-process-to-367ee88d5d7f
