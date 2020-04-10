@@ -120,7 +120,7 @@ export default ((props: any) => (
                     </div>
                 </ContentSection>
                 <h2 className="text-center display-4 mb-3 mt-4">
-                    How code&nbsp;change&nbsp;campaigns help teams move quickly and safely
+                    Code&nbsp;change&nbsp;campaigns help teams move quickly and safely
                 </h2>
                 <div className="row mt-4">
                     <div className="col-lg-4 mb-4">
