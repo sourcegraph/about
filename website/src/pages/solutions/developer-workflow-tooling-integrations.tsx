@@ -1,11 +1,14 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 
 export default ((props: any) => (
     <Layout location={props.location}>
+        <Helmet>
+            <meta name="robots" content="noindex" />
+        </Helmet>
         <ContentPage
             title="Integrate internal and 3rd-party tools into the developer workflow"
             description="This is awesome"

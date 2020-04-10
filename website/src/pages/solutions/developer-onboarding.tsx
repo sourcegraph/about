@@ -1,5 +1,5 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
@@ -17,6 +17,9 @@ export default ((props: any) => (
                 </>
             }
         >
+            <Helmet>
+                <meta name="robots" content="noindex" />
+            </Helmet>
             <ContentSection>
                 <h2>Powerful, instant code search</h2>
             </ContentSection>

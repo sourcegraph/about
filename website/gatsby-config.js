@@ -63,7 +63,20 @@ module.exports = {
         //dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
-    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: 'gatsby-plugin-advanced-sitemap',
+      options: {
+        exclude: [
+          '404',
+          '404.html',
+          '/dev-404-page',
+          '/solutions/developer-onboarding/',
+          '/solutions/developer-workflow-tooling-integrations/',
+          '/solutions/incident-response/',
+          '/uninstall/',
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
