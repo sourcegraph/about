@@ -10,19 +10,28 @@ Here are a few of the things we strive to make true:
 - Communicate openly, and solicit feedback frequently
 - To be egoless when soliciting responses to our work
 
-## How to work with design
+## Working with design
 
 *This section is WIP*
 
-Design is new to Sourcegraph, so we want to share how to get the most out of the design team. 
+Working with design should feel fluid, you should be able to open an issue or bring up a concern in slack, and receive actionable feedback: either implementable, or a call to explore further.
 
-- The design team is here to help, so don't hesitate to solicit feedback from us on your work.
-- Generally, we favour an asynchronous approach to communication, this gives us some time to validate our responses
-- An example of a time to use immediate communication would be: if you're working from a design file, and you feel that something is missing
-- If you need design help on your issue or pull request in GitHub, assign one of us or add the 'needs-design' tag.
-- On GitHub we have a [design priorities project](https://github.com/orgs/sourcegraph/projects/66) - take a look at what we're working on, and feel free to add anything you think we may have missed.
-- If you'd like more insight into what we're working on, check out [the design folder in Google Drive](https://drive.google.com/open?id=1xBRaw_2Ulccd_2ts0Wcq4Rgs6LuVblLU), all of our meeting notes are documented and available.
-- We use [design execution documents](design-execution.md), to track active design projects. You can find all information about design projects and contribute feedback in the [design execution docs folder](https://drive.google.com/open?id=1z4m1wzi_UWvlMxYN5iqEv0I7MfxciE08).
+You should also not feel limited to words, images (sketches, or references made by editing the broswer DOM) are also encouraged. 
+
+Here are the best places to talk to us:
+
+[Design execution documents](index.design-execution.md)
+- Leaving comments on any part of the document is encouraged
+
+Figma
+- Click 'C' whilst in Figma, or check the navigation bar in the top left hand corner and look for the comment icon; you can drop comments anywhere in a file, and the owner of the page will be notified via email
+
+GitHub
+- Assign one of the team, add the tag 'needs-design', and utilise the [design priorities project](https://github.com/orgs/sourcegraph/projects/66)
+
+Slack
+- Utilise the design channel
+- Tag @design-team or cc one of the team
 
 ## Internal Resources
 
