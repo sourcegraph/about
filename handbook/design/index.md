@@ -20,16 +20,16 @@ You should also not feel limited to words, images (sketches, or references made 
 
 Here are the best places to talk to us:
 
-[Design execution documents](index.design-execution.md)
+**[Design execution documents](index.design-execution.md)**
 - Leaving comments on any part of the document is encouraged
 
-Figma
+**Figma**
 - Click 'C' whilst in Figma, or check the navigation bar in the top left hand corner and look for the comment icon; you can drop comments anywhere in a file, and the owner of the page will be notified via email
 
-GitHub
+**GitHub**
 - Assign one of the team, add the tag 'needs-design', and utilise the [design priorities project](https://github.com/orgs/sourcegraph/projects/66)
 
-Slack
+**Slack**
 - Utilise the design channel
 - Tag @design-team or cc one of the team
 
