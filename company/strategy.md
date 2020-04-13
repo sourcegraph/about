@@ -1,6 +1,6 @@
 # Sourcegraph master plan
 
-Everything we do stems from our [purpose](#purpose), to help *everyone* build software. We'll accomplish that over the next 30 years by following our strategy:
+Everything we do stems from our [purpose](#purpose), to make it so **everyone can code**. We'll accomplish that over the next 30 years by following our strategy:
 
 - 30 years
   - [Purpose](#purpose)
