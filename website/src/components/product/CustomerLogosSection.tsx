@@ -57,6 +57,10 @@ const ITEMS: (
         url: '/external-logos/adidas-running-logo.svg',
     },
     {
+        name: 'Indeed',
+        url: '/external-logos/indeed-logo.svg',
+    },
+    {
         name: 'Quantcast',
         url: '/external-logos/quantcast-logo.svg',
         link: {

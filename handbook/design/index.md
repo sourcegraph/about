@@ -41,6 +41,7 @@ Here are the best places to talk to us:
 
 Our internal resources are open, and the design team will welcome any feedback. Hesitating to leave feedback can block discussion, and stretch out time between brainstorming and action.
 
+- [Design execution documents](design-execution.md)
 - [Figma](https://www.figma.com/files/team/438792081639669302/Sourcegraph)
 
 ## How to make better UX design decisions
