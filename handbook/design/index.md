@@ -20,7 +20,7 @@ You should also not feel limited to words, images (sketches, or references made 
 
 Here are the best places to talk to us:
 
-**[Design execution documents](index.design-execution.md)**
+**[Design execution documents](design-execution.md)**
 
 - Leaving comments on any part of the document is encouraged
 
