@@ -6,7 +6,7 @@ tags: [
   "blog"
 ]
 slug: code-intelligence-on-sourcegraph-com
-heroImage: TBD
+heroImage: /blog/blog-code-intelligence.png
 published: false
 ---
 
