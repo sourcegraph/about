@@ -58,7 +58,7 @@ export default ((props: any) => (
                                     },
                                     { name: 'Single sign-on (SSO)', id: 'admin' },
                                     { name: 'Community support', id: 'support' },
-                                    { name: '10 monthly active user limit', id: 'deployment' },
+                                    { name: '10-user limit', id: 'deployment' },
                                 ]}
                                 buttonLabel="Install now"
                                 buttonHref="https://docs.sourcegraph.com#quickstart-guide"
