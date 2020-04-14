@@ -232,4 +232,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [quin@sourcegraph.com](mailto:quin@sourcegraph.com), [quinwith1n](https://github.com/qwith1n)
 - Quin has always loved traveling and seeing the world. He lives in Phoenix with his wife and 2 french bulldogs.  Quin also enjoys most sports, especially ping pong, reading, and playing his guitar.  Although his French bulldogs do not enjoy it when he attempts to play the guitar.
 
+## Asdine El Hrychy
+
+- Software Engineer
+- Lyon, France 🇫🇷/ Dubai, UAE 🇦🇪
+- [asdine@sourcegraph.com](mailto:asdine@sourcegraph.com), [asdine](https://github.com/asdine)
+- Asdine loves experimenting and building bizarre software while enjoying an entire pot of coffee. Before Sourcegraph, he was writing tools and frameworks for his colleagues at Heetch. He also hates dogs, especially the small ones, essentially because they hate him.
+
 <!-- Paste *your* section above this line! -->
