@@ -7,7 +7,7 @@ tags: [
 ]
 slug: code-intelligence-on-sourcegraph-com
 heroImage: /blog/blog-code-intelligence.png
-published: false
+published: true
 ---
 
 At Sourcegraph we are working toward a long term goal of making code intelligence results both fast and precise. Today, Sourcegraph provides basic code intelligence for many languages [using our search engine](https://docs.sourcegraph.com/user/code_intelligence/basic_code_intelligence). It's fast, requires zero configuration, and covers many use cases, but the results are not guaranteed to be completely accurate.  To get more precise answers we also use language-specific indexers to generate data in Language Server Index Format (LSIF), for important navigation queries like Go-to-Definition and Find References. Indexers already exist for several languages, including C++, Go, TypeScript, and Dart, and more are in-progress (visit https://lsif.dev for a list of indexers).
