@@ -73,3 +73,6 @@
 /product/code-search-navigation /product/code-discovery 301!
 /product/automation /product/code-change-management 301!
 /product/server /product 301!
+/solutions/developer-onboarding /product 301!
+/solutions/developer-workflow-tooling-integrations /product 301!
+/solutions/incident-response /product 301!
