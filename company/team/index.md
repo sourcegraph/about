@@ -178,7 +178,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Adam Herzog
 
-- Product Marketing Manager
+- Product Marketing Manager (he/him)
 - San Francisco, CA, USA 🇺🇸
 - [herzog@sourcegraph.com](mailto:herzog@sourcegraph.com), [@ah3rz](https://twitter.com/ah3rz), [LinkedIn](https://www.linkedin.com/in/herzogadam/)
 - Adam is an experienced developer marketer, now focusing on product marketing at Sourcegraph. He's previously led developer relations, digital demand generation, and other marketing functions at companies like Docker, Humio, and Neo4j. Adam advocates for inclusivity 🌈 within the entire tech industry (and the world!) and probably uses the word "awesome" too much. He is passionate about good food, Hatha yoga, and jean jackets in no particular order.
