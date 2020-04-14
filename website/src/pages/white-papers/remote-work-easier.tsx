@@ -31,7 +31,7 @@ export default ((props: any) => (
                     'Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool.',
                 author: 'Nick Snyder, VP Engineering at Sourcegraph',
             }}
-            pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf"
+            pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf12"
             bgImage={bg}
         >
             <ContentSection color="white" className="col-md-6 pt-5">
@@ -229,8 +229,16 @@ export default ((props: any) => (
                     </div>
                     <div className="col-md-6">
                         <h5>
-                            We’re excited to learn how Sourcegraph has made your remote work experience better and would
-                            love to hear from you on <a href="https://twitter.com/srcgraph"> Twitter</a>!
+                            How has Sourcegraph helped make your remote software development better?{' '}
+                            <a
+                                href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                                className="twitter-share-button"
+                                data-text='Great read on "Remote software development made easier" – @srcgraph has helped me with ...'
+                                data-url="https://about.sourgraph.com/white-papers/remote-work-easier"
+                                data-related="srcgraph"
+                                data-show-count="false"
+                            ></a>{' '}
+                            and let us know!
                         </h5>
                     </div>
                 </div>
