@@ -24,7 +24,6 @@ export default class NewsPage extends React.Component<any, any> {
         const desc = 'The latest Sourcegraph news and press releases.'
         return (
             <Layout location={this.props.location}>
-                >
                 <Helmet>
                     <title>Sourcegraph - News</title>
                     <meta name="twitter:title" content="Sourcegraph in the news" />

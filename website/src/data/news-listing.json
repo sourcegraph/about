@@ -15,6 +15,13 @@
       "newsImage": "/external-logos/anchor-logo.png"
     },
     {
+      "newsSource": "Database Trends and Applications",
+      "newsTitle": "Startups to Watch in 2020: Sourcegraph",
+      "newsDate": "April 8, 2020",
+      "newsLink": "http://www.dbta.com/Editorial/Trends-and-Applications/Startups-to-Watch-in-2020-139682.aspx",
+      "newsImage": "/external-logos/databasetrendsapp-logo.jpg"
+    },
+    {
       "newsSource": "InfoQ",
       "newsTitle": "Code Search Now Available to Browse Google's Open-Source Projects",
       "newsDate": "April 8, 2020",
