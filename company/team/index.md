@@ -209,7 +209,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Account Executive
 - Atlanta, GA, USA 🇺🇸
 - [kai@sourcegraph.com](mailto:kai@sourcegraph.com), [kpsource](https://github.com/kpsource)
-- Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.   
+- Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.
 
 ## Tommy Roberts
 
@@ -217,6 +217,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - London, UK 🇬🇧
 - [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [@imtommyroberts](https://twitter.com/imtommyroberts), [LinkedIn](https://www.linkedin.com/in/imtommyroberts)
 - Before Sourcegraph Tommy was providing freelance product design services to early stage startups. He's passionate about accessible design, the relationship between design and development, and ethics in tech. Outside of work he likes to explore the food scene in London, criticize his own cooking, read too many articles, and watch too many youtube videos.
+
+## Felix Becker
+
+- Software Engineer
+- Bremen, Germany 🇩🇪
+- [felix@sourcegraph.com](mailto:felix@sourcegraph.com), [GitHub](https://github.com/felixfbecker), [Twitter](https://github.com/felixfbecker), [LinkedIn](https://www.linkedin.com/in/felixfbecker/)
+- Felix discovered batch files on Windows 98 in elementary school and one thing led to another. He has the most fun in all things web technology and open source, especially TypeScript. But when that gets boring, he likes to play field hockey and sail the north & baltic seas.
 
 ## Garo Brik (they/them)
 
