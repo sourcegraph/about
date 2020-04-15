@@ -1,10 +1,10 @@
 # Roles on the Engineering team
 
-This page lists the roles on the Engineering team and some of the responsibilites for each of the roles.
+This page lists the roles on the Engineering team and some of the responsibilities for each of the roles.
 
 ## Software Engineer
 
-Sofware Engineers are individual contributors who build software to satisfy the needs of the business.
+Software Engineers are individual contributors who build software to satisfy the needs of the business.
 
 ### Responsibilities
 
@@ -14,6 +14,28 @@ Sofware Engineers are individual contributors who build software to satisfy the 
 - Create and maintain high quality code, tests, and documentation.
 - Help your teammates by empathetically [reviewing code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
 - Interview candidates and suggest improvements to our hiring process.
+
+## Project Lead
+
+Project Leads are Software Engineers that lead a specific project team to achieve its goals. This role is an additional set of responsibilities that any engineer may take on once they demonstrate the necessary skills.
+
+While Project Leads need to have strong technical skills, they are not necessarily the most technically experienced engineer on the team. People and organizational skills are as important as the technical chops, so that Project Leads can effectively coordinate and align with others.
+
+Some teams with more experienced members may need less guidance in certain areas and may even share responsibilities of this role across the team.
+
+### Responsibilities
+
+- Directly contribute code a minimum of roughly 50% of their time.
+- Collaborate with [product](../product/index.md) to maintain a [prioritized roadmap](../../direction/index.md) for the work owned by their team.
+- Plan and commit to a set of work that will be accomplished by the team for each [monthly release](releases/index.md) and capture those commitments in a tracking issue on GitHub.
+- Help keep the team focused on their goals while keeping them aware of the higher level picture.
+- Identify blockers or productivity issues and work with the team to address them.
+- Run weekly team sync meetings.
+- Communicate progress to stakeholders and other parts of the company.
+- Conduct monthly [retrospectives](../../retrospectives/index.md) with their team.
+- Scale themselves out by organizing, delegating and reviewing work of other team mates.
+- Mentor and coach other team mates with timely feedback as appropriate in order to up-hold team values and help them grow.
+- Collaborate with Engineering Managers to ensure team mates have everything they need to succeed and deliver on the goals of the team.
 
 ## Engineering Manager
 
