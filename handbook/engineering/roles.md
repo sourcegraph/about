@@ -19,7 +19,7 @@ Software Engineers are individual contributors who build software to satisfy the
 
 Project Leads are Software Engineers that lead a specific project team to achieve its goals. This role is an additional set of responsibilities that any engineer may take on once they demonstrate the necessary skills.
 
-While Project Leads need to have strong technical skills, they are not necessarily the most technically experienced engineer on the team. People and organizational skills are as important as the technical chops, so that Project Leads can effectively coordinate and align with others.
+While Project Leads need to have strong technical skills, they are not necessarily the most technically experienced engineer on the team. People and organizational skills are as important as technical know-how, so that Project Leads can effectively coordinate and align with others.
 
 Some teams with more experienced members may need less guidance in certain areas and may even share responsibilities of this role across the team.
 
@@ -33,8 +33,8 @@ Some teams with more experienced members may need less guidance in certain areas
 - Run weekly team sync meetings.
 - Communicate progress to stakeholders and other parts of the company.
 - Conduct monthly [retrospectives](../../retrospectives/index.md) with their team.
-- Scale themselves out by organizing, delegating and reviewing work of other team mates.
-- Mentor and coach other team mates with timely feedback as appropriate in order to up-hold team values and help them grow.
+- Scale themselves out by organizing, delegating and reviewing the work of other team mates.
+- Mentor and coach other team mates with timely feedback as appropriate in order to uphold team values and help them grow.
 - Collaborate with Engineering Managers to ensure team mates have everything they need to succeed and deliver on the goals of the team.
 
 ## Engineering Manager
