@@ -4,6 +4,7 @@
 
 Our OKRs are public:
 
+- [FY20-Q2 (upcoming, not yet public)](https://docs.google.com/document/d/1fAB7HMD7rmcyI68f2WuMAvt3uf0UqIruFvKhJUHMCyY/edit)
 - [FY20-Q1 (active)](2020_q1.md)
 - [CY19-Q4](2019_q4.md)
 - [CY19-Q3](2019_q3.md)
@@ -57,6 +58,7 @@ Each OKR has the following format:
 ```
 
 1. The `Title or team` is the title (e.g., `CEO` or `VP Engineering`) of the person who is directly responsible or the name of the team responsible.
+   - OKRs are nested. If you or your team helps with an existing KR, add your OKR underneath it. See [example GitLab OKRs](https://about.gitlab.com/company/okrs/fy21-q1/) to see what this looks like.
    - The first 2 levels of OKRs all have a directly responsible individual. Deeper levels can have teams. (For functions where we don't yet have a management structure in place, we may violate this.)
 1. The `Objective as 1 sentence.` is a pithy, informal summary of the objective, not an exhaustive and precise definition or description of the implementation. Each objective is indicated in bold, and is nested in line with the key results for it's parent objective. For example:
    - Good: `Automate time-consuming ops and support tasks.`
@@ -78,11 +80,14 @@ Do not include any specific financial numbers, customer names, or any other sens
 
 ### Changing OKRs mid-quarter
 
-We don't change OKRs once the quarter starts. Why? It is useful to have a conversation at the end of the quarter about how outcomes diverged from our plan, and why. There might be very good reasons why we changed our plan, and that is ok. If we edit our OKRs it becomes more difficult to have this valuable conversation.
+We don't change OKRs once the quarter starts (with the exceptions below). Why? It is useful to have a conversation at the end of the quarter about how outcomes diverged from our plan, and why. There might be very good reasons why we changed our plan, and that is ok. If we edit our OKRs it becomes more difficult to have this valuable conversation.
 
 If your OKR no longer accurately communicates what's important or what you think is realistically going to get done, then you should immediately update the [outcome](#updating-okr-outcomes) with the expected result and a brief reason why.
 
-You _may_ add a new OKR mid-quarter to reflect new priorities that weren't captured by OKRs written at the beginning of the quarter. Get approval from the CEO and everyone who's affected by the change.
+When *can* you change OKRs mid-quarter? (In these cases, get approval from the CEO and everyone who's affected by the change.)
+
+1. To include new priorities that weren't captured by OKRs written at the beginning of the quarter. 
+1. If the manager of a function or team changes mid-quarter.
 
 ## Updating OKR outcomes
 

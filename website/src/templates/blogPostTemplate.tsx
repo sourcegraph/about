@@ -91,23 +91,20 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                             <hr className="blog-post__title--rule" />
                             <section className="blog-post__body">
                                 <div dangerouslySetInnerHTML={{ __html: content }} />
-                                <hr />
-                                <div style={{ height: '0.5em' }} />
-                                <Link to={BLOGS.Blog}>
-                                    <button className="btn btn-outline-primary">Read more posts</button>
-                                </Link>
-                                <a
-                                    href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
-                                    className="ml-3"
-                                >
-                                    <button className="btn btn-outline-primary">Edit this post</button>
-                                </a>
-                                <div style={{ height: '1em' }} />
-                                <div>
-                                    <div className="mb-4">
+                                <section className="blog-post__footer mt-4 pt-4">
+                                    <Link to={BLOGS.Blog} className="button btn btn-outline-primary">
+                                        Read more posts
+                                    </Link>
+                                    <a
+                                        href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
+                                        className="btn btn-outline-primary ml-3"
+                                    >
+                                        Edit this post
+                                    </a>
+                                    <div className="pt-4">
                                         <SocialLinks url={`https://about.sourcegraph.com/${slug}`} title={title} />
                                     </div>
-                                </div>
+                                </section>
                             </section>
                         </div>
                     </div>

@@ -27,44 +27,26 @@ import Helmet from 'react-helmet'
  */
 const featuredPosts: BlogPost[] = [
     {
-        title: 'Announcing Sourcegraph 3.14',
+        title: 'Universal Code Intelligence for GitHub with the Sourcegraph browser extension',
         description:
-            'Faster repository permissions syncing, Campaigns workflow and UI improvements, deploy and scale with Docker Compose, forks and archived repositories now excluded from search results by default, and more.',
-        thumbnail: '/blog/3.14-release-blog-img.jpg',
-        url: '/blog/sourcegraph-3.14',
-        active: true,
-    },
-    {
-        title: 'Enable native code intelligence for GitLab with the Sourcegraph integration',
-        description:
-            'Bring native code intelligence with IDE-like features such as hover tooltips and go to definition to every GitLab code view with the Sourcegraph integration.',
-        thumbnail: '/blog/gitlab-integration-preview-dark.png',
-        url: '/blog/enable-native-code-intelligence-gitlab-sourcegraph-integration',
-        active: true,
-    },
-    {
-        title: 'Universal Code Search for GitLab',
-        description:
-            'Learn how to connect and configure Sourcegraph Universal Code Search for public and private repositories on GitLab CE/EE instances.',
-        thumbnail: '/external-logos/gitlab-mark.svg',
-        url: '/blog/universal-code-search-gitlab',
-        active: false,
-    },
-    {
-        title: 'Universal Code Search for GitHub',
-        description:
-            'Learn how to connect and configure Sourcegraph Universal Code Search for public and private repositories on GitHub.com and GitHub Enterprise instances.',
+            'Universal Code Intelligence for GitHub means bringing code navigation features such as hover tooltips, go to definition, and find references to every code view and pull request, supporting every popular language, and all public and private repositories.',
         thumbnail: '/external-logos/github-logo.svg',
-        url: '/blog/universal-code-search-github',
-        active: true,
+        url: '/blog/universal-code-intelligence-github-sourcegraph-browser-extension'
     },
     {
-        title: 'Sourcegraph Secures $23 Million Series B Round for Universal Code Search',
-        description: "We've raised $23M in Series B funding, led by David Sacks at Craft Ventures.",
-        thumbnail: '/sourcegraph-mark.png',
-        url: '/blog/universal-code-search-github',
-        active: false,
+        title: 'Our journey to all-remote',
+        description:
+            'On February 20, 2020, we officially moved out of our amazing San Francisco office and became an all-remote company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision.',
+        thumbnail: '/blog/sf-office-mural.jpg',
+        url: '/blog/our-journey-to-all-remote'
     },
+    {
+        title: 'The home offices of Sourcegraph',
+        description:
+            'As an all-remote company, we only have home office setups and they range from "sparse" to "elaborate", so all the more reason to create this collection of photos. Here are all the photos that were contributed to the pull request behind this blog post.',
+            thumbnail: '/blog/home-offices-sourcegraph-thumbnail.jpg',
+            url: '/blog/home-offices-of-sourcegraph'
+    }
 ]
 
 const testimonials: Testimonial[] = [
@@ -185,6 +167,7 @@ export default ((props: any) => (
         }}
     >
         <Helmet>
+            <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
             <style dangerouslySetInnerHTML={{ __html: `>.async-hide { opacity: 0 !important}` }} />
             <script>
                 {`(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;

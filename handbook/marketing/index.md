@@ -6,7 +6,7 @@
 - [Definitions](https://docs.google.com/document/d/1h6xQeGHpMrsUUJ63Q6KupUNzq1iOpZfZSMC6ta3pLiY/edit#heading=h.pt4ztk7qhub0)
 - [Developer relations](developer-relations/index.md)
 - [Marketing operations](marketing_operations.md)
-- [Webinars](webinars.md)
+- [Livstream events](livestream.md)
 - [Looker dashboards](https://sourcegraph.looker.com/browse/boards/2)
 - [Editing blog posts](editing_blog_posts.md)
 
@@ -41,12 +41,8 @@ An inquiry is a person who has requested information from Sourcegraph for the fi
 
 A marketing qualified lead (MQL) is any of:
 
-- A person who fills out a demo request form
-- A person who fills out a free trial form
-- A person who registers for a Sourcegraph event (including online events)
-- A person who fills out a form requesting to speak with a Sourcegraph representative
-- A person who sets up a new Sourcegraph instance
-
+- A person who fills out a demo request form AND self-reports an engineering team of >100 or has a title containing `Director`, `Manager`, `VP`, `Vice President`, `Senior`, `Sr`, 	`Head`, `Lead`, `CTO` or `Chief Technnology Offier`
+- A person who sets up a new Sourcegraph instance with a business email (personal email domains and .edu addresses do not qualify)
 
 ### [SQL](../sales/index.md#lead) (sales-qualified lead)
 

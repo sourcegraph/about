@@ -2,7 +2,7 @@
 
 The Product team strives to make the following true:
 
-- The team is working on the most important things (listed in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit)) to execute on [our strategy](../../company/strategy.md).
+- The team is working on the most important things (listed in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit)) to execute on [our strategy](../../direction/index.md) that is moving us forward on [our vision](../../company/strategy.md).
 - Each teammate has the customer and product context needed (about customer problems, likely future priorities, possible solutions, etc.) to perform their work effectively.
 - The product vision and roadmap are communicated well to teammates and everyone outside Sourcegraph.
 
@@ -11,7 +11,7 @@ The Product team strives to make the following true:
 See job descriptions and responsibilities of roles on the Product team:
 
 - [Product Manager](roles.md#product-manager) ([We're hiring!](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md))
-- [UX Designer](roles.md#product-designer) ([We're hiring!](https://github.com/sourcegraph/careers/blob/master/job-descriptions/ux-designer.md))
+- [Product Designer](roles.md#product-designer) ([We're hiring!](https://github.com/sourcegraph/careers/blob/master/job-descriptions/ux-designer.md))
 
 ## Resources
 
@@ -33,3 +33,8 @@ Each project, no matter how long-running, needs to plan to ship _something_ in e
 The reason for this is to avoid going for too long without customer feedback (from customers trying it) or even technical/product feedback (from performing the diligent work of polishing it to be ready to release). Lacking these critical checks means we will end up building something that doesn't solve people's problems or that is over-built.
 
 When we have relaxed this in the past, the results have been bad and the overwhelming feedback from retrospectives has been to release regularly.
+
+## Templates
+
+- [Release blog post template](./release_blog_post_template.md)
+- [Release blog post tracking issue template](./release_issue_template.md)
