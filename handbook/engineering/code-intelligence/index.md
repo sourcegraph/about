@@ -18,4 +18,5 @@ The Code Intelligence team builds tools and services that provide contextual inf
 
 ## Tech stack
 
-Go, TypeScript, Postgres and many other languages for supporting LSIF and LSP.
+Most of the Code Intelligence tools and infrastructure are implemented in Go and TypeScript. Precise code indexers are written in a variety of languages, as needed.  We use Postgres and SQLite for data storage.
+
