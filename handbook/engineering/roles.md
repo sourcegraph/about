@@ -33,7 +33,7 @@ Some teams with more experienced members may need less guidance in certain areas
 - Run weekly team sync meetings.
 - Communicate progress to stakeholders and other parts of the company.
 - Conduct monthly [retrospectives](../../retrospectives/index.md) with their team.
-- Scale themselves out by organizing, delegating and reviewing the work of other team mates.
+- Scale themselves out by organizing, delegating and reviewing the work of other teammates.
 - Mentor and coach other teammates with timely feedback as appropriate in order to uphold team values and help them grow.
 - Collaborate with Engineering Managers to ensure team mates have everything they need to succeed and deliver on the goals of the team.
 
