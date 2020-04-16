@@ -43,7 +43,7 @@ you walked through Fort Mason Park.
 
 Lazer-Walker went over the agenda for the talk:
 
-1. Site-specfic theatre - Immersive theater, narrative installation, and “joyful, emergent behaviors”
+1. Site-specific theatre - Immersive theater, narrative installation, and “joyful, emergent behaviors”
 2. Actual act of generating art like this
 3. Digital/Physical hybrids
 

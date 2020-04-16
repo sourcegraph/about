@@ -67,7 +67,7 @@ Pixels create color by combining red, green, and blue,against a black background
 There’s a couple more computer colorspaces that come up, including sRGB, which is the standardized RGB created in 1996, hexadecimal which is a way of representing rgb, CYMK which stands for cyan, yellow, magenta black and which is a color-subtractive method of measuring color, and hsl which stands for hue/saturation/light. For the purposes of this talk we’re going to focus on rgb, since it’s based on the physics of the eye, but also reveals a lot of limitations and interesting cliffs on our understanding--say, for example, in comparing the distance in two colors
 
 
-A Euclidian distance formula could theoretically calculate the differences between colors.
+A Euclidean distance formula could theoretically calculate the differences between colors.
 
 ```
 Color 1 = ( R ₁ , G ₁ , B ₁  )
@@ -150,7 +150,7 @@ Most studies agree that the dress phenomenon has something to do with the assump
 ## Q & A
 (Audience) Have you seen research that links color perception and language?
 
-(Ellen) It's been years since I've looked at that research, but if I remember correctly, if people don't have the word for a color they are less likely to percieve it. 
+(Ellen) It's been years since I've looked at that research, but if I remember correctly, if people don't have the word for a color they are less likely to perceive it. 
 
 (Audience) Have you seen any attempts out of Hong Kong to disrupt facial recognition?
 

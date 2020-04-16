@@ -89,13 +89,13 @@ As of 2017, there were zero tenured women faculty members in the Harvard math de
 
 ### Bias Manifested
 
-Unconcious bias manifests in technology in a variety of ways.
+Unconscious bias manifests in technology in a variety of ways.
 
 1. **Wide-spread harassment in computer science and mathematics**: news headlines and movements to speak out openly about the experiences many today still have
 2. **Bias in word embedding**: critical to how Google figures out what you're looking for when you search occupations associated with he and she {photo of _extreme she_ and _extreme he_ occupations}; these are the embeddings that feed the algorithms which increasingly make decisions on our behalf; biases at creation were not noticed because of unconscious bias 
 3. **Bias in tech features and functions**: Environmentally racist soap dispenser ([YouTube video][3]) light skin man can get it to work; dark skin man can't get it to work; white paper towel works just fine; Meredith's take: "_I do not believe the people who made the dispenser tech sat down to make a racist soap dispenser. What I do believe is that the technology was developed by a bunch of people with light skin who said 'oh hey it works!' and then sent it out into the world and now people can't wash their hands._"
 4. **Positive Asymmetry**: concep t of how we as humans like to focus more on what's happy than what iss problematic; it is a group dynamic and we need to recognize this type of behavior happens; while uncomfortable to do so, it is worth pushing past; if we don't push past the discomfort, we end up with Machine Bias
-5. **Algorithms are NOT Neutral**: {photo with article heading with two petty theft arrests and future crime risks score mis-match between a white man and a black woman} unconscious bias is embedded into the "future crime" model through the training data used to create the model; facial recognition algorithms work better for light skin men vs darker skin women and regularly mis-gender/mis-identify women and dark skinned people; book reference: _ALGORITHMS OF OPRESSION_
+5. **Algorithms are NOT Neutral**: {photo with article heading with two petty theft arrests and future crime risks score mis-match between a white man and a black woman} unconscious bias is embedded into the "future crime" model through the training data used to create the model; facial recognition algorithms work better for light skin men vs darker skin women and regularly mis-gender/mis-identify women and dark skinned people; book reference: _ALGORITHMS OF OPPRESSION_
 6. **Bias Magnified**: the unconscious bias in the soap dispenser is magnified in facial recognition; same tech in the soap dispensers and used in facial recognition are in self-driving cars; image recognition algorithms are really, really _fragile_; Are they going to recognize people with darker skin? What about people with disabilities?
 
 ### Better Informed

@@ -91,7 +91,7 @@ Baxter talks about the Rectangle Game and another experiment teaching image cate
 
 ![](/blog/strange-loop-2019/pedagogy.jpg)
 
-We did have some success in transfering some knowledge that was machine knowledge in to humans.
+We did have some success in transferring some knowledge that was machine knowledge in to humans.
 
 The problem with this is that its's is recursive maths and teaching is harder than learning.
 
