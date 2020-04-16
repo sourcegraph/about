@@ -2,18 +2,16 @@
 
 This page contains brief bios of our team. Teammates may also have a personal documentation page in this directory that is named according to their Sourcegraph email address (e.g. you@sourcegraph.com -> you.md).
 
-<!--
-
 To add yourself to this page, copy the following template, paste it at the end of this file, and make it about yourself!
 
 ## Full Name (optional pronouns)
 
+- Name pronunciation: first name phonetic spelling
 - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Bio (hobbies, work experience, family, pets, etc.)
 
--->
 
 ## Quinn Slack
 
