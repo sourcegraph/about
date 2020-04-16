@@ -5,6 +5,14 @@
 # Order is important; the last matching pattern takes the most
 # precedence
 
+/handbook @sqs
+/company @sqs
+/workflow @christinaforney
+/direction @christinaforney
+/blogposts @aileenrose
+/website @aileenrose
+/docs @aileenrose
+
 /handbook/engineering @nicksnyder
 
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
