@@ -26,7 +26,7 @@ Some teams with more experienced members may need less guidance in certain areas
 ### Responsibilities
 
 - Directly contribute through code, RFCs or PR reviews for a minimum of roughly 50% of their time.
-- Collaborate with [product](../product/index.md) to maintain a [prioritized roadmap](../../direction/index.md) for the work owned by their team as well as quarterly [OKRs](../company/okrs/index.md)
+- Collaborate with [product](../product/index.md) to maintain a [prioritized roadmap](../../direction/index.md) for the work owned by their team as well as quarterly [OKRs](../../company/okrs/index.md)
 - Plan and commit to a set of work that will be accomplished by the team for each [monthly release](releases/index.md) and capture those commitments in a tracking issue on GitHub.
 - Help keep the team focused on their goals while keeping them aware of the higher level picture.
 - Identify blockers or productivity issues and work with the team to address them.
