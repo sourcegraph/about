@@ -135,7 +135,7 @@ We’d need a larger training set with annotated data in order to improve this -
 - Q: What did you use for the facial recognition?
 - A: A piece of open source software from (name I missed) that ran in a JuPyter Notebook.
 
-- Q: Are you trying to get puncutation, inflections, etc. into the model?
+- Q: Are you trying to get punctuation, inflections, etc. into the model?
 - A: Yes, I’m trying to. For instance, commas, “...”, question marks, etc. were tokenized in the hopes the system would find them, but it usually didn’t. In part this is because there isn’t a lip movement that corresponds to that particular symbol.
 
 - Q: What’s the current program runtime?

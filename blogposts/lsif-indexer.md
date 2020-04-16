@@ -80,7 +80,7 @@ Tree hierarchy of scopes for Listing 1.
 We need to:
 
 - maintain the scope hierarchy
-- for each identifier occurence
+- for each identifier occurrence
 	- if it is a definition, add it to the active scope
 	- if it is a reference, look in the scope hierarchy for its definition starting at the active scope and going up its parent link
 
@@ -211,9 +211,9 @@ The only additional vertices not described yet are the ones labelled "$event". T
 
 ## Generating
 
-We are finally ready to generate the LSIF data. The code is in [dumper.go](https://github.com/sourcegraph/lsif-jsonnet/blob/master/dumper/dumper.go). We proceed in a top-down fashion. We start with the project and the listener for the main Jsonnet file. We emit the project node and delimiter marker for start of project and then call the method for emiting a document. This, in turn, emits a document node and start of document marker. It then emits declarations which create those subgraphs from above by also iterating through their reference lists. We also recursively call document emit methods for each import passing in the corresponding import listener created from parsing the import file. We finish by returning from these methods, creating stop markers as we unwind.
+We are finally ready to generate the LSIF data. The code is in [dumper.go](https://github.com/sourcegraph/lsif-jsonnet/blob/master/dumper/dumper.go). We proceed in a top-down fashion. We start with the project and the listener for the main Jsonnet file. We emit the project node and delimiter marker for start of project and then call the method for emitting a document. This, in turn, emits a document node and start of document marker. It then emits declarations which create those subgraphs from above by also iterating through their reference lists. We also recursively call document emit methods for each import passing in the corresponding import listener created from parsing the import file. We finish by returning from these methods, creating stop markers as we unwind.
 
-The actual emiting is done by [protocol.go](https://github.com/sourcegraph/lsif-jsonnet/blob/master/protocol/protocol.go), which has utility methods to create the appropriate vertices, edges and JSON lines.
+The actual emitting is done by [protocol.go](https://github.com/sourcegraph/lsif-jsonnet/blob/master/protocol/protocol.go), which has utility methods to create the appropriate vertices, edges and JSON lines.
 
 ## Testing and validating LSIF output
 

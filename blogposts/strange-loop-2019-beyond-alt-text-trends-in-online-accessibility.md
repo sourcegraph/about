@@ -93,7 +93,7 @@ The 11 stands for the 11 characters inbetween "a" and "y" (a***********y)
 
 ### Technical Specifications
 
-  **Accessibile Rich Internet Applications (ARIA)** is a tool at your disposal to meet WCAG standards (aria-hidden and aria-labeledby as examples), however, this should not be your first tool of choice. Using HTML elements to their semantic specifications is what you should be doing first. As an example, don't use "<div class="button"...>" as divs are not focusable by default. A much better method would be to use a button and then apply a style.
+  **Accessible Rich Internet Applications (ARIA)** is a tool at your disposal to meet WCAG standards (aria-hidden and aria-labeledby as examples), however, this should not be your first tool of choice. Using HTML elements to their semantic specifications is what you should be doing first. As an example, don't use "<div class="button"...>" as divs are not focusable by default. A much better method would be to use a button and then apply a style.
 
 ### So why do we care about accessibility, a history lesson
 
@@ -101,9 +101,9 @@ Our physical spaces come with a lot of affordances which exist to help people wi
 
 However, we **all** use and take these for granted. These public affordances didn't always exist. In fact, most of this didn't exist even in the 1960's.
 
-A strong [disability rights movement](https://en.wikipedia.org/wiki/Disability_rights_movement) took place in the 60's and 70's, thanks to [Ed Roberts](https://en.wikipedia.org/wiki/Ed_Roberts_(activist)), that really changed the way we percieve and value people with disabilities.
+A strong [disability rights movement](https://en.wikipedia.org/wiki/Disability_rights_movement) took place in the 60's and 70's, thanks to [Ed Roberts](https://en.wikipedia.org/wiki/Ed_Roberts_(activist)), that really changed the way we perceive and value people with disabilities.
 
-Although this major shift in public opinion occurred several decades ago, we can still see renovations and retrofits occuring to public spaces. The Toronto subway stations are a prime example. The stations were built in the 60's and are today retrofitting elevators, a very slow and expensive process.
+Although this major shift in public opinion occurred several decades ago, we can still see renovations and retrofits occurring to public spaces. The Toronto subway stations are a prime example. The stations were built in the 60's and are today retrofitting elevators, a very slow and expensive process.
 
 ![Presentation slide showing a wheelchair at a curb with a 5 inch drop. No curb cut present.](/blog/strange-loop-2019/beyond-alt-text-1.png)
 This is a standard curb with an approx 5 inch drop for this wheelchair.
@@ -159,7 +159,7 @@ So where do you start with accessibility? Your keyboard.
 
 ### Low Vision
 
-- **Magnification:** Use a relative font unit like rems or ems to accomodate screen magnification.
+- **Magnification:** Use a relative font unit like rems or ems to accommodate screen magnification.
 - **Color Contrast:** Colors should meet [WCAG AA requirements to color contrast](https://webaim.org/resources/contrastchecker/) which benefits all users as another digital curb-cut.
 - **High Contrast Themes:** these themes allow users with low vision to use your site with less difficulty. However, this comes with its own hiccups for CSS implemented background images.
 
@@ -187,7 +187,7 @@ Always test for accessability. Reach out to local accessibility communities for 
 
 ### SHARE YOUR KNOWLEDGE
 
-Document your accessibility improvements as much as possible to ensure accessibility is consistent throughtout all aspects of a project and are clearly understood by all team members.
+Document your accessibility improvements as much as possible to ensure accessibility is consistent throughout all aspects of a project and are clearly understood by all team members.
 
 A great example of this is [eBay's accessibility documentation](http://ebay.github.io/mindpatterns/).
 
