@@ -24,7 +24,7 @@ Most of the Code Intelligence tools and infrastructure are implemented in Go and
 
 Here are some key ways to contact us:
 
-- On GitHub, mention or assign issues to @sourcegraph/code-intel team.
+- On GitHub, mention or assign issues to the [@sourcegraph/code-intel](https://github.com/orgs/sourcegraph/teams/code-intel) team.
 - On Slack, use the [#code-intel](https://app.slack.com/client/T02FSM7DL/CHXHX7XAS) channel.
 - On Google Drive, we use the [Code Intel](https://drive.google.com/drive/folders/1vKcW5EM4RBIuF8ZFvPM0G1FRwl_03RXK) directory.
 
