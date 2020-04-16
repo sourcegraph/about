@@ -76,7 +76,7 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
   <p style="text-align: center"><a href="https://vimeo.com/398759697" target="_blank">View on Vimeo</a></p>
 </p>
 
-The default setting for including forks and archived repositories in your search results has changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `forks:yes` filters to show results that include archived and forked repositories.
+The default setting for including forks and archived repositories in your search results has changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `fork:yes` filters to show results that include archived and forked repositories.
 
 ## Go to definition in PRs and simplified sign in with the browser extension
 
