@@ -26,6 +26,19 @@
           -34.03938697062592
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stephen Gutekanst"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.07908630371094,
+          33.377559143878244
+        ]
+      }
     }
   ]
 }
