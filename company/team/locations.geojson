@@ -78,6 +78,19 @@
           51.467696956223364
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eric Fritz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.88633614778519,
+          43.06033225025297
+        ]
+      }
     }
   ]
 }
