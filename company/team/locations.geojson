@@ -30,6 +30,19 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Keegan Carruthers-Smith"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.465278,
+          -33.980556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Stephen Gutekanst"
       },
       "geometry": {
