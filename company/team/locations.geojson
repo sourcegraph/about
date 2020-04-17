@@ -39,6 +39,19 @@
           33.377559143878244
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loïc Guychard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.486198425292969,
+          48.3904580803747
+        ]
+      }
     }
   ]
 }
