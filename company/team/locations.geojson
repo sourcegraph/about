@@ -104,6 +104,17 @@
           30.290496154756223
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Quinn Slack"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.554292678833,
+          37.89058682789697
+        ]
+      }
     }
   ]
 }
