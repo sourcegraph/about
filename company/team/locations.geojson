@@ -3,12 +3,27 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {"name": "Thorsten Ball"},
+      "properties": {
+        "name": "Thorsten Ball"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           9.153778553009033,
           49.9721739421498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ryan Slade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.45681935548782,
+          -34.03938697062592
         ]
       }
     }
