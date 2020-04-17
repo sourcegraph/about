@@ -115,6 +115,19 @@
           37.89058682789697
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michael Fromberger"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.33379364013672,
+          47.65795185584185
+        ]
+      }
     }
   ]
 }
