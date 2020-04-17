@@ -92,7 +92,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [joe@sourcegraph.com](mailto:joe@sourcegraph.com), [@unknwon](https://github.com/unknwon), [LinkedIn](https://www.linkedin.com/in/jiahua-chen-86218a81/)
 - Joe lives in his little dark room. Prior to Sourcegraph, Joe created the Gogs project, a painless self-hosted Git service. Joe graduated with a MS in Software Development from Boston University.
 
-## Vanesa Ortiz
+## Vanesa Ortiz (she/her)
 
 - Content Engineer
 - San Francisco, CA, USA 🇺🇸
