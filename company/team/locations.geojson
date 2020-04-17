@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "Thorsten Ball"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.153778553009033,
+          49.9721739421498
+        ]
+      }
+    }
+  ]
+}
