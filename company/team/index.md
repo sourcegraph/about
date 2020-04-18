@@ -99,6 +99,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Noemi Mercado (she/her)
 
+- First name is pronounced **no-EH-mee**
 - People Ops
 - San Francisco, CA, USA 🇺🇸
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/)
