@@ -487,8 +487,7 @@ Suggested further reading:
 
 **Allocation efficiency in high-performance Go services**
 Achille Roussel / Rick Branson
-segment.com/blog/allocation-efficiency-in-high-
-performance-go-services/
+segment.com/blog/allocation-efficiency-in-high-performance-go-services/
 
 **Go 1.5 concurrent garbage collector pacing**
 Austin Clements
