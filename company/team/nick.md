@@ -6,12 +6,12 @@ This is how I run [1-1s](../../handbook/leadership/1-1.md) with my direct report
 
 - 1-1s are 25 minutes weekly.
 - 1-1s start 5 minutes after the hour or half hour (e.g. 9:05, 9:35).
-- 5 minutes before the 1-1 starts (e.g. 9:00, 9:30), I will write down a list of the things I want to talk about in the [shared 1-1 notes Google Doc](../../handbook/leadership/1-1.md#google-doc). Direct reports should do the same.
+- Add topics that you want to discuss to our [shared 1-1 notes Google Doc](../../handbook/leadership/1-1.md#google-doc).
 - 1-1 agenda:
   - Say hello and chit-chat about personal lives (~5 minutes).
-  - Talk about agenda items that are on both lists first, then the items on our individual lists.
+  - Talk about agenda items.
   - We will end on time, even if we haven't covered all agenda items, and even if neither of us have a meeting immediately after.
-    - If an agenda item hasn't been discussed, it is the responsibility of the person who added that agenda item to decide what to do with it (e.g. start a Slack conversation, discuss in next 1-1, take no action because it wasn't important)
+    - If an agenda item hasn't been discussed, it is the responsibility of the person who added that agenda item to decide what to do with it (e.g. start a Slack conversation, schedule another meeting, discuss in the next 1-1, take no action because it wasn't important).
 
 The first three 1-1s I have with a direct report are a little different because I want to spend time getting to know you.
 
