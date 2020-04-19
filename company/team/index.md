@@ -168,13 +168,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [julia@sourcegraph.com](mailto:julia@sourcegraph.com), [@JuliaSourceress](https://twitter.com/JuliaSourceress), [LinkedIn](https://www.linkedin.com/in/juliagilinets/), [GitHub](https://github.com/juliasourceress)
 - Julia started out as a Software Engineer supporting the developer community at Palm, which to the generations of today might be thought of as mobile before mobile. She realized she loved forging business partnerships just as much as coding, and after over a decade of leading various customer facing teams has finally landed in the best of all worlds at Sourcegraph. She's passionate about technical innovation, efficiency, the human connection, and sleep. 
 
-## Michael Fromberger
-
-- Software Engineer
-- Seattle, WA, USA 🇺🇸
-- [michael@sourcegraph.com](mailto:michael@sourcegraph.com), [creachadair](https://github.com/creachadair), [@creachadair](https://twitter.com/creachadair), [LinkedIn](https://www.linkedin.com/in/michael-fromberger/)
-- Michael has been programming since about age 7, and has never lost his fascination with the ways code serves, simultaneously, as a language for people and computers. He pursued this fascination via a degree in linguistics and an (unfinished) Ph.D. in computer science. Prior to joining Sourcegraph, he managed the [Kythe](https://kythe.io) team at Google and led the Language Analysis team at source{d}. He lives in Seattle with his wife and two kittens. When not fiddling with computers he loves to read, write, teach, cook, play music, and spin yarn, among other hobbies.
-
 ## Adam Herzog
 
 - Product Marketing Manager (he/him)
