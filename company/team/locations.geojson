@@ -119,13 +119,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Michael Fromberger"
+        "name": "Nick Snyder"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.33375072479248,
-          47.66134818278638
+          -122.27598667144774,
+          37.520363396222756
         ]
       }
     },
