@@ -37,3 +37,5 @@ Prior to the weekly sync meeting, each team member should:
 3. Update the current release tracking issue with a summary of progress for the previous week and plans for the next week.
 
 We track most of our work using [issues on the Sourcegraph main repository](https://github.com/sourcegraph/sourcegraph/issues). If you have an issue that wants our attention, mention [the @sourcegraph/code-intel team](https://github.com/orgs/sourcegraph/teams/code-intel) or tag your issue with the [`team/code-intelligence` label](https://github.com/sourcegraph/sourcegraph/labels/team%2Fcode-intelligence).
+
+test
