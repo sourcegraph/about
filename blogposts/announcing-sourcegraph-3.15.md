@@ -132,9 +132,9 @@ Users and site administrators can now view a log of their actions/events in the 
 
 For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `git clone` now inherit the parent process environment variables. This allows site admins to set HTTPS_PROXY or [git http configurations](https://git-scm.com/docs/git-config/2.26.0#Documentation/git-config.txt-httpproxy) via environment variables. For cluster environments site admins should set this on the gitserver container.
 
-## Experimental deterministic search results
+## Experimental deterministic search results option
 
-A new experimental search scope `stable:true` has been added to provide results with a deterministic search result order. This search scope only applies to file contents and is limited to 5,000 maximum results. You should consider using the paginated search API if you need more than 5,000 results.
+A new experimental search option `stable:true` has been added to provide results with a deterministic search result order. This search scope only applies to file contents and is limited to 5,000 maximum results. You should consider using the paginated search API if you need more than 5,000 results.
 
 ## New visibility filter for scoping searches to public or private repositories
 
