@@ -8,7 +8,7 @@ We rely on automated testing to ensure the quality of our product.
 
 Any addition or change to our codebase should be covered by an appropriate amount of automated tests to ensure that:
 
-1. Our product works the way we intend it to when we ship it to customers.
+1. Our product works as intended when we ship it to customers.
 1. Our product continues to work and doesn't accidentally break as we make changes to our product over time.
 
 Engineers should budget for writing tests when making iteration plans.
