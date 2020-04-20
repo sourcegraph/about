@@ -13,6 +13,15 @@ Any addition or change to our codebase should be covered by an appropriate amoun
 
 Engineers should budget for writing tests when making iteration plans.
 
+## Flaky tests
+
+We do not tolerate flaky tests of any kind. Any engineer that sees a flaky test should immediately:
+
+1. Open a PR to disable the flaky test.
+1. Open an issue to re-enable the flaky test, assign it to the most likely owner, and add it to the current release milestone.
+
+If the build or test infrastructure itself is flaky, then [open an issue](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) and notify the [distribution team](distribution/index.md#contact).
+
 ## Unit tests
 
 Unit tests test individual functions in our codebase and are the most desirable kind of test to write.
@@ -68,6 +77,11 @@ Examples:
 ## Visual testing
 
 We use [Percy](https://percy.io/) to detect visual changes in Sourcegraph features. You may need permissions to update screenshots if your feature introduces visual changes. Post a message in #dev-chat that you need access to Percy, and someone will add you to our organization (you will also receive an invitation via e-mail). Make sure you are logged in with your GitHub credentials.
+
+## Ownership
+
+- [Distribution team](distribution/index.md) owns build and test infrastructure.
+- [Web team](web/index.md) owns any tests that are driven through the browser.
 
 ## Other
 
