@@ -10,7 +10,7 @@ heroImage: /blog/3.15-release-blog-img.jpg
 published: true
 ---
 
-Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
+Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
 
 <div style="padding-left: 2rem">
 
@@ -97,7 +97,7 @@ You can even use them together:
 
 EXAMPLE
 
-Currently, operators only support searching file contents and do not apply to search scopes, you will see an alert if your query is not supported. 
+Currently, operators only support searching file contents and do not apply to search scopes - you will see an alert if your query is not supported. 
 
 Enable this feature by adding `{"experimentalFeatures": {"andOrQuery": "enabled"}}` to your global, organization, or user settings.
 
@@ -107,19 +107,19 @@ We continue to invest heavily in making Sourcegraph easier to monitor and debug 
 
 ### Monitoring
 
-- **Sourcegraph now monitors and has pre-defined alerts for 93 metrics across 14 services.** For now, these new alerts are warning-level alerts and in the future once more confidence in their accuracy has been gained they will be elevated to critical-level alerts.
+- **Sourcegraph now has pre-defined alerts for 93 metrics across 14 services for improved monitoring.** For now, these new alerts are warning-level alerts. In the future, they will be elevated to critical-level alerts when there is more confidence in their accuracy.
 - 8 bug fixes to alerting and dashboards have been made
 - 11 changes to improve the legibility and visibility of dashboards have been made
 
 Additionally:
 
 - All dashboard panels now show an orange/red background when a metric is reaching its warning/critical threshold, making it easy to see which metrics are most interesting.
-- Search error rate and latency is now broken down by type on the Frontend dashboard:
+- Search error rate and latency is now broken down by type on the frontend dashboard:
   - Search at a glance (browser web UI)
   - Search-based code intelligence at a glance
   - Search API usage at a glance
 
-**IMPORTANT:** If you have previously configured alert thresholds on the Frontend dashboard manually (instead of just on the Grafana Home dashboard as is typically reccomended), you will need to reconfigure those alert thresholds again after upgrading.
+**IMPORTANT:** If you have previously configured alert thresholds on the frontend dashboard manually (instead of on the Grafana home dashboard as typically recommended), you will need to reconfigure those alert thresholds again after upgrading.
 
 ![image](https://user-images.githubusercontent.com/3173176/79792360-9e2b4d80-8303-11ea-91e5-cb7e9c972358.png)
 
@@ -131,7 +131,7 @@ TODO: screenshot
 
 To use tracing, please see our [documentation](https://docs.sourcegraph.com/admin/observability/tracing).
 
-Additionally, it is now possible to log all Search and GraphQL requests slower than N milliseconds, using the new site configuration options `observability.logSlowGraphQLRequests` and `observability.logSlowSearches`. These can be useful if Sourcegraph's monitoring or your instances' users inform you that queries are slow, by allowing you to see the exact details of the search or GraphQL request in order to reproduce it.
+Additionally, it is now possible to log all search and GraphQL requests slower than N milliseconds, using the new site configuration options `observability.logSlowGraphQLRequests` and `observability.logSlowSearches`. When Sourcegraph's monitoring (or your instances' users) inform you that queries are slow, this allows you to see the exact details of the search or GraphQL request needed to reproduce it.
 
 ## New visibility filter for scoping searches to public or private repositories
 
@@ -154,7 +154,7 @@ When using Sourcegraph for the first time on a private instance, a getting start
 
 ![user event log](/blog/3-15-user-event-log.png)
 
-Users and site administrators can now view a log of their actions/events in the user settings. This enables site admins to perform rough audits of users and helps users better understand the information Sourcegraph logs.
+Users and site administrators can now view a log of their actions/events in user settings. This enables site admins to perform rough audits of users and also helps users better understand the information Sourcegraph logs.
 
 ## Experimental deterministic search results
 
@@ -166,36 +166,36 @@ Sourcegraph 3.14 removed archived and forked repositories from search results by
 
 ## Deploy Sourcegraph behind a proxy
 
-For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `git clone` now inherit the parent process environment variables. This allows site admins to set HTTPS_PROXY or [git http configurations](https://git-scm.com/docs/git-config/2.26.0#Documentation/git-config.txt-httpproxy) via environment variables. For cluster environments site admins should set this on the gitserver container.
+For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `git clone` now inherit the parent process environment variables. This allows site admins to set HTTPS_PROXY or [git http configurations](https://git-scm.com/docs/git-config/2.26.0#Documentation/git-config.txt-httpproxy) via environment variables. For cluster environments, site admins should set this on the gitserver container.
 
 ## Changelog
 
 ### Added
 
 - Users and site administrators can now view a log of their actions/events in the user settings. [#9141](https://github.com/sourcegraph/sourcegraph/pull/9141)
-- With the new `visibility:` filter search results can now be filtered based on a repository's visibility (possible filter values: `any`, `public` or `private`). [#8344](https://github.com/sourcegraph/sourcegraph/issues/8344)
-- [`sourcegraph/git-extras`](https://sourcegraph.com/extensions/sourcegraph/git-extras) is now enabled by default on new instances [#3501](https://github.com/sourcegraph/sourcegraph/issues/3501)
+- With the new `visibility:` filter, search results can now be filtered based on a repository's visibility (possible filter values: `any`, `public` or `private`). [#8344](https://github.com/sourcegraph/sourcegraph/issues/8344)
+- [`sourcegraph/git-extras`](https://sourcegraph.com/extensions/sourcegraph/git-extras) is now enabled by default on new instances. [#3501](https://github.com/sourcegraph/sourcegraph/issues/3501)
 - The Sourcegraph Docker image will now copy `/etc/sourcegraph/gitconfig` to `$HOME/.gitconfig`. This is a convenience similiar to what we provide for [repositories that need HTTP(S) or SSH authentication](https://docs.sourcegraph.com/admin/repo/auth). [#658](https://github.com/sourcegraph/sourcegraph/issues/658)
 - Permissions background syncing is now supported for GitHub via site configuration `"permissions.backgroundSync": {"enabled": true}`. [#8890](https://github.com/sourcegraph/sourcegraph/issues/8890)
-- Search: Adding `stable:true` to a query ensures a deterministic search result order. This is an experimental parameter. It applies only to file contents, and is limited to at max 5,000 results (consider using [the paginated search API](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) if you need more than that.). [#9681](https://github.com/sourcegraph/sourcegraph/pull/9681).
+- Search: Adding `stable:true` to a query ensures a deterministic search result order. This is an experimental parameter. It applies only to file contents, and is limited to max. 5,000 results (consider using [the paginated search API](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) if you need more than that.). [#9681](https://github.com/sourcegraph/sourcegraph/pull/9681).
 - After completing the Sourcegraph user feedback survey, a button may appear for tweeting this feedback at [@srcgraph](https://twitter.com/srcgraph). [#9728](https://github.com/sourcegraph/sourcegraph/pull/9728)
-- `git fetch` and `git clone` now inherit the parent process environment variables. This allows site admins to set `HTTPS_PROXY` or [git http configurations](https://git-scm.com/docs/git-config/2.26.0#Documentation/git-config.txt-httpproxy) via environment variables. For cluster environments site admins should set this on the gitserver container. [#250](https://github.com/sourcegraph/sourcegraph/issues/250)
-- Experimental: Search for file contents using `and`- and `or`-expressions in queries. Enabled via the global settings value `{"experimentalFeatures": {"andOrQuery": "enabled"}}`. [#8567](https://github.com/sourcegraph/sourcegraph/issues/8567)
+- `git fetch` and `git clone` now inherit the parent process environment variables. This allows site admins to set `HTTPS_PROXY` or [git http configurations](https://git-scm.com/docs/git-config/2.26.0#Documentation/git-config.txt-httpproxy) via environment variables. For cluster environments, site admins should set this on the gitserver container. [#250](https://github.com/sourcegraph/sourcegraph/issues/250)
+- Experimental: Search for file contents using `and`- and `or`-expressions in queries. This is enabled via the global settings value `{"experimentalFeatures": {"andOrQuery": "enabled"}}`. [#8567](https://github.com/sourcegraph/sourcegraph/issues/8567)
 - Always include forks or archived repositories in searches via the global/org/user settings with `"search.includeForks": true` or `"search.includeArchived": true` respectively. [#9927](https://github.com/sourcegraph/sourcegraph/issues/9927)
-- observability (debugging): It is now possible to log all Search and GraphQL requests slower than N milliseconds, using the new site configuration options `observability.logSlowGraphQLRequests` and `observability.logSlowSearches`.
-- observability (monitoring): **More metrics monitored and alerted on, more legible dashboards**
-  - Dashboard panels now show an orange/red background color when the defined warning/critical alert threshold has been met, making it even easier to see on a dashboard what is in a bad state.
-  - Symbols: failing `symbols` -> `frontend-internal` requests are now monitored. [#9732](https://github.com/sourcegraph/sourcegraph/issues/9732)
-  - Frontend dasbhoard: Search error types are now broken into distinct panels for improved visibility/legibility.
+- Observability (debugging): It is now possible to log all search and GraphQL requests slower than N milliseconds, using the new site configuration options `observability.logSlowGraphQLRequests` and `observability.logSlowSearches`.
+- Observability (monitoring): **More metrics monitored and alerted on, more legible dashboards**
+  - Dashboard panels now show an orange/red background color when the defined warning/critical alert threshold has been met, making it even easier to see what is in a bad state on a dashboard.
+  - Symbols: Failing `symbols` -> `frontend-internal` requests are now monitored. [#9732](https://github.com/sourcegraph/sourcegraph/issues/9732)
+  - Frontend dashboard: Search error types are now broken into distinct panels for improved visibility/legibility.
     - **IMPORTANT**: If you have previously configured alerting on any of these panels or on "hard search errors", you will need to reconfigure it after upgrading.
-  - Frontend dasbhoard: Search error and latency are now broken down by type: Browser requests, search-based code intel requests, and API requests.
-- observability (debugging): **Distributed tracing is a powerful tool for investigating performance issues.** The following changes have been made with the goal of making it easier to use distributed tracing with Sourcegraph:
+  - Frontend dashboard: Search error and latency are now broken down by type: Browser requests, search-based code intel requests, and API requests.
+- Observability (debugging): **Distributed tracing is a powerful tool for investigating performance issues.** The following changes have been made with the goal of making it easier to use distributed tracing with Sourcegraph:
 
   - The site configuration field `"observability.tracing": { "sampling": "..." }` allows a site admin to control which requests generate tracing data.
     - `"all"` will trace all requests.
     - `"selective"` (recommended) will trace all requests initiated from an end-user URL with `?trace=1`. Non-end-user-initiated requests can set a HTTP header `X-Sourcegraph-Should-Trace: true`. This is the recommended setting, as `"all"` can generate large amounts of tracing data that may cause network and memory resource contention in the Sourcegraph instance.
     - `"none"` (default) turns off tracing.
-  - Jaeger is now the officially supported distributed tracer. The following is the recommended site configuration to connect Sourcegraph to a Jaeger agent (which must be deployed on the same host and listening on the default ports):
+  - Jaeger is now the officially supported distributed tracing system. The following is the recommended site configuration to connect Sourcegraph to a Jaeger agent (which must be deployed on the same host and listening on the default ports):
 
     ```
     "observability.tracing": {
@@ -203,7 +203,7 @@ For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `
     }
     ```
 
-  - Jaeger is now included in the Sourcegraph deployment configuration by default if you are using Kubernetes, Docker Compose, or the pure Docker cluster deployment model. (It is not yet included in the single Docker container distribution.) It will be included as part of upgrading to 3.15 in these deployment models, unless disabled.
+  - Jaeger is now included in the Sourcegraph deployment configuration by default if you are using Kubernetes, Docker Compose, or the pure Docker cluster deployment model. It is not yet included in the single Docker container distribution. Jaeger will be included as part of upgrading to 3.15 in these deployment models, unless disabled.
   - The site configuration field, `useJaeger`, is deprecated in favor of `observability.tracing`.
   - Support for configuring Lightstep as a distributed tracer is deprecated and will be removed in a subsequent release. Instances that use Lightstep with Sourcegraph are encouraged to migrate to Jaeger (directions for running Jaeger alongside Sourcegraph are included in the installation instructions).
 
@@ -225,27 +225,27 @@ For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `
 - `.*` in the filter pattern were ignored and led to missing search results. [#9152](https://github.com/sourcegraph/sourcegraph/pull/9152)
 - The Phabricator integration no longer makes duplicate requests to Phabricator's API on diff views. [#8849](https://github.com/sourcegraph/sourcegraph/issues/8849)
 - Changesets on repositories that aren't available on the instance anymore are now hidden instead of failing. [#9656](https://github.com/sourcegraph/sourcegraph/pull/9656)
-- observability (monitoring):
+- Observability (monitoring):
   - **Dashboard and alerting bug fixes**
     - Syntect Server dashboard: "Worker timeouts" can no longer appear to go negative. [#9523](https://github.com/sourcegraph/sourcegraph/issues/9523)
     - Symbols dashboard: "Store fetch queue size" can no longer appear to go negative. [#9731](https://github.com/sourcegraph/sourcegraph/issues/9731)
     - Syntect Server dashboard: "Worker timeouts" no longer incorrectly shows multiple values. [#9524](https://github.com/sourcegraph/sourcegraph/issues/9524)
     - Searcher dashboard: "Search errors on unindexed repositories" no longer includes cancelled search requests (which are expected).
     - Fixed an issue where NaN could leak into the `alert_count` metric. [#9832](https://github.com/sourcegraph/sourcegraph/issues/9832)
-    - Gitserver: "resolve_revision_duration_slow" alert is no longer flaky / non-deterministic. [#9751](https://github.com/sourcegraph/sourcegraph/issues/9751)
-    - Git Server dashboard: there is now a panel to show concurrent command executions to match the defined alerts. [#9354](https://github.com/sourcegraph/sourcegraph/issues/9354)
-    - Git Server dashboard: adjusted the critical disk space alert to 15% so it can now fire. [#9351](https://github.com/sourcegraph/sourcegraph/issues/9351)
+    - Gitserver: "resolve_revision_duration_slow" alert is no longer flaky/non-deterministic. [#9751](https://github.com/sourcegraph/sourcegraph/issues/9751)
+    - Git Server dashboard: There is now a panel to show concurrent command executions to match the defined alerts. [#9354](https://github.com/sourcegraph/sourcegraph/issues/9354)
+    - Git Server dashboard: Adjusted the critical disk space alert to 15% so it can now fire. [#9351](https://github.com/sourcegraph/sourcegraph/issues/9351)
   - **Dashboard visiblity and legibility improvements**
-    - all: "frontend internal errors" are now broken down just by route, which makes reading the graph easier. [#9668](https://github.com/sourcegraph/sourcegraph/issues/9668)
-    - Frontend dashboard: panels no longer show misleading duplicate labels. [#9660](https://github.com/sourcegraph/sourcegraph/issues/9660)
-    - Syntect Server dashboard: panels are no longer compacted, for improved visibility. [#9525](https://github.com/sourcegraph/sourcegraph/issues/9525)
-    - Frontend dashboard: panels are no longer compacted, for improved visibility. [#9356](https://github.com/sourcegraph/sourcegraph/issues/9356)
+    - All: "frontend internal errors" are now broken down just by route, which makes reading the graph easier. [#9668](https://github.com/sourcegraph/sourcegraph/issues/9668)
+    - Frontend dashboard: Panels no longer show misleading duplicate labels. [#9660](https://github.com/sourcegraph/sourcegraph/issues/9660)
+    - Syntect Server dashboard: Panels are no longer compacted, for improved visibility. [#9525](https://github.com/sourcegraph/sourcegraph/issues/9525)
+    - Frontend dashboard: Panels are no longer compacted, for improved visibility. [#9356](https://github.com/sourcegraph/sourcegraph/issues/9356)
     - Searcher dashboard: "Search errors on unindexed repositories" is now broken down by code instead of instance for improved readability. [#9670](https://github.com/sourcegraph/sourcegraph/issues/9670)
-    - Symbols dashboard: metrics are now aggregated instead of per-instance, for improved visibility. [#9730](https://github.com/sourcegraph/sourcegraph/issues/9730)
+    - Symbols dashboard: Metrics are now aggregated instead of per-instance, for improved visibility. [#9730](https://github.com/sourcegraph/sourcegraph/issues/9730)
     - Firing alerts are now correctly sorted at the top of dashboards by default. [#9766](https://github.com/sourcegraph/sourcegraph/issues/9766)
-    - Panels at the bottom of the home dashboard no longer appear clipped / cut off. [#9768](https://github.com/sourcegraph/sourcegraph/issues/9768)
-    - Git Server dashboard: disk usage now shown in percentages to match the alerts that can fire. [#9352](https://github.com/sourcegraph/sourcegraph/issues/9352)
-    - Git Server dashboard: the 'echo command duration test' panel now properly displays units in seconds. [#7628](https://github.com/sourcegraph/sourcegraph/issues/7628)
+    - Panels at the bottom of the home dashboard no longer appear clipped/cut off. [#9768](https://github.com/sourcegraph/sourcegraph/issues/9768)
+    - Git Server dashboard: Disk usage now shown in percentages to match the alerts that can fire. [#9352](https://github.com/sourcegraph/sourcegraph/issues/9352)
+    - Git Server dashboard: The 'echo command duration test' panel now properly displays units in seconds. [#7628](https://github.com/sourcegraph/sourcegraph/issues/7628)
     - Dashboard panels showing firing alerts no longer over-count firing alerts due to the number of service replicas. [#9353](https://github.com/sourcegraph/sourcegraph/issues/9353)
 
 The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.15) is available on GitHub.
