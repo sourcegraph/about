@@ -1,9 +1,9 @@
 ---
-title: "Sourcegraph 3.15: Campaigns beta launch, faster GitHub repository permissions, experimental AND/OR operators, and major observability improvements"
+title: "Sourcegraph 3.15: Campaigns beta available, GitHub repository permissions, experimental AND/OR operators, and improved observability"
 author: Christina Forney
 publishDate: 2020-04-20T10:00-07:00
 tags: [
-  blog, Campaigns, GitHub, 
+  blog
 ]
 slug: sourcegraph-3.15
 heroImage: /blog/3.15-release-blog-img.jpg
@@ -20,7 +20,7 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**🔎 Experimental AND/OR operators for search contents**](#experimental-andor-operators-for-search-contents)<br />
 
-[**📈 Observability**](#observability)<br />
+[**📈 Improved observability**](#improved-observability)<br />
 
 [**👀 New visibility filter for scoping searches to public or private repositories**](#new-visibility-filter-for-scoping-searches-to-public-or-private-repositories)<br />
 
@@ -83,39 +83,33 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
 
 Search for file contents using AND and OR expressions in queries. These operators enable more expressive searches in regexp and structural search modes. [The documentation](https://docs.sourcegraph.com/user/search/queries#operators) includes more details about how to these operators and their precedence and grouping.
 
-For example, if you want to find all of the places where two functions are within the same file, you can use the AND operator:
+For example, if you want to find all of the places where two functions are within the same file, you can use the AND operator: `conf.Get( and log15.Error(` &mdash; [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+conf.Get%28+and+log15.Error%28&patternType=regexp).
 
-`conf.Get( and log15.Error(` [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+conf.Get%28+and+log15.Error%28&patternType=regexp)
+Or, if you want to find everywhere two functions are used whether or not the other is present, you would use the OR operator: `conf.Get( or log15.Error(` &mdash; [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+conf.Get%28+or+log15.Error%28&patternType=regexp).
 
-Or, if you want to find everywhere two functions are used whether or not the other is present, you would use the OR operator:
-
-`conf.Get( or log15.Error(` [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+conf.Get%28+or+log15.Error%28&patternType=regexp)
-
-You can even use them together:
-
-`("conf.Get(" or "log15.Error(") and after` [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+%28%22conf.Get%28%22+or+%22log15.Error%28%22%29+and+after&patternType=regexp)
+You can even use them together: `("conf.Get(" or "log15.Error(") and after` &mdash; [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+%28%22conf.Get%28%22+or+%22log15.Error%28%22%29+and+after&patternType=regexp).
 
 Currently, operators only support searching file contents and do not apply to search scopes - you will see an alert if your query is not supported.
 
 Enable this feature by adding `{"experimentalFeatures": {"andOrQuery": "enabled"}}` to your global, organization, or user settings.
 
-## Observability
+## Improved observability
 
 We continue to invest heavily in making Sourcegraph easier to monitor and debug out-of-the-box.
 
 ### Monitoring
 
 - **Sourcegraph now has pre-defined alerts for 93 metrics across 14 services for improved monitoring.** For now, these new alerts are warning-level alerts. In the future, they will be elevated to critical-level alerts when there is more confidence in their accuracy.
-- 8 bug fixes to alerting and dashboards have been made
-- 11 changes to improve the legibility and visibility of dashboards have been made
+- 8 bug fixes to alerting and dashboards.
+- 11 changes to improve the legibility and visibility of dashboards.
 
 Additionally:
 
 - All dashboard panels now show an orange/red background when a metric is reaching its warning/critical threshold, making it easy to see which metrics are most interesting.
 - Search error rate and latency is now broken down by type on the frontend dashboard:
-  - Search at a glance (browser web UI)
-  - Search-based code intelligence at a glance
-  - Search API usage at a glance
+  - Search at a glance (browser web UI).
+  - Search-based code intelligence at a glance.
+  - Search API usage at a glance.
 
 **IMPORTANT:** If you have previously configured alert thresholds on the frontend dashboard manually (instead of on the Grafana home dashboard as typically recommended), you will need to reconfigure those alert thresholds again after upgrading.
 
@@ -124,8 +118,6 @@ Additionally:
 ### Debugging
 
 We've added a new tool to all Sourcegraph deployments by default: Distributed tracing. It is a powerful tool for investigating performance issues. You can enable tracing selectively per-request and capture detailed information about, for example, a search request which can then easily be inspected to find out what the slowest parts were within the inner-workings of Sourcegraph.
-
-TODO: screenshot
 
 To use tracing, please see our [documentation](https://docs.sourcegraph.com/admin/observability/tracing).
 
