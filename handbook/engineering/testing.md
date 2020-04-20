@@ -53,7 +53,7 @@ Tradeoffs:
 Examples:
 
 - Tests that call our search API to test the behavior of our entire search system.
-- Tests that validate the behavior of complex UI flows in the browser while mocking out all network requests so no backend is required.
+- Tests that validate UI behavior in the browser while mocking out all network requests so no backend is required.
 
 ## End-to-end tests (e2e)
 
