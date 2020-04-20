@@ -6,7 +6,7 @@ Want to help us achieve these goals? [We're hiring!](https://github.com/sourcegr
 
 ## 2020 Product strategy
 
-The investments we need to make to reach our [1 year vision](#).
+This is our strategy for realizing our [1-year vision](../company/strategy.md#1-year-vision).
 
 ### Build Sourcegraph into the development workflow
 
