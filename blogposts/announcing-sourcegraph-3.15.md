@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.15: Campaigns beta launch, faster GitHub repository permissions, and  "
+title: "Sourcegraph 3.15: Campaigns beta launch, faster GitHub repository permissions, experimental AND/OR operators, and major observability improvements"
 author: Christina Forney
 publishDate: 2020-04-20T10:00-07:00
 tags: [
