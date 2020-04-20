@@ -107,7 +107,9 @@
     },
     {
       "type": "Feature",
-      "properties": {"name": "Quinn Slack"},
+      "properties": {
+        "name": "Quinn Slack"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -139,6 +141,19 @@
         "coordinates": [
           -122.22341537475585,
           37.498014271137265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Asdine El Hrychy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.13729095458984,
+          25.080312820442302
         ]
       }
     }
