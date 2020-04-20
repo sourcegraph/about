@@ -156,31 +156,35 @@ Sourcegraph 3.14 removed archived and forked repositories from search results by
 
 ## Observability
 
-TODO: Screenshot?
+We continue to invest heavily in making Sourcegraph easier to monitor and debug out-of-the-box.
 
-* observability: Dashboard panels now show an orange/red background color when the defined warning/critical alert threshold has been met, making it even easier to see on a dashboard what is in a bad state.
-* observability: Symbols: Adding an alert and dashboard panel for when Symbols -> frontend-internal requests are failing. #9732
-* observability: Distributed tracing is a powerful tool for investigating performance issues. The following changes have been made with the goal of making it easier to use distributed tracing with Sourcegraph:
-  * The site configuration field "observability.tracing": { "sampling": "..." } allows a site admin to control which requests generate tracing data.
-  * "all" will trace all requests.
-  * "selective" (recommended) will trace all requests initiated from an end-user URL with ?trace=1. Non-end-user-initiated requests can set a HTTP header X-Sourcegraph-Should-Trace: true. This is the recommended setting, as "all" can generate large amounts of tracing data that may cause network and memory resource contention in the Sourcegraph instance.
-  * "none" (default) turns off tracing.
-  * Jaeger is now the officially supported distributed tracer. The following is the recommended site configuration to connect Sourcegraph to a Jaeger agent (which must be deployed on the same host and listening on the default ports):
+### Monitoring
 
-        ```
-        "observability.tracing": {
-          "sampling": "selective"
-        }
-        ```
+- **Sourcegraph now monitors and has pre-defined alerts for 93 metrics across 14 services.** For now, these new alerts are warning-level alerts and in the future once more confidence in their accuracy has been gained they will be elevated to critical-level alerts.
+- 8 bug fixes to alerting and dashboards have been made
+- 11 changes to improve the legibility and visibility of dashboards have been made
 
-  * Jaeger is now included in the Sourcegraph deployment configuration by default if you are using Kubernetes, Docker Compose, or the pure Docker cluster deployment model. (It is not yet included in the single Docker container distribution.) It will be included as part of upgrading to 3.15 in these deployment models, unless disabled.
-  * The site configuration field, useJaeger, is deprecated in favor of observability.tracing.
-  * Support for configuring Lightstep as a distributed tracer is deprecated and will be removed in a subsequent release. Instances that use Lightstep with Sourcegraph are encouraged to migrate to Jaeger (directions for running Jaeger alongside Sourcegraph are included in the installation instructions).
-* Added site configuration options observability.logSlowGraphQLRequests and observability.logSlowSearches, which can be used to identify GraphQL and search queries that take longer than a specified number of milliseconds.
+Additionally:
 
-## Jaeger
+- All dashboard panels now show an orange/red background when a metric is reaching its warning/critical threshold, making it easy to see which metrics are most interesting.
+- Search error rate and latency is now broken down by type on the Frontend dashboard:
+  - Search at a glance (browser web UI)
+  - Search-based code intelligence at a glance
+  - Search API usage at a glance
 
-Focused on improving the experience and want to make it standard with every deployment
+**IMPORTANT:** If you have previously configured alert thresholds on the Frontend dashboard manually (instead of just on the Grafana Home dashboard as is typically reccomended), you will need to reconfigure those alert thresholds again after upgrading.
+
+![image](https://user-images.githubusercontent.com/3173176/79792360-9e2b4d80-8303-11ea-91e5-cb7e9c972358.png)
+
+### Debugging
+
+We've added a new tool to all Sourcegraph deployments by default: Distributed tracing. It is a powerful tool for investigating performance issues. You can enable tracing selectively per-request and capture detailed information about, for example, a search request which can then easily be inspected to find out what the slowest parts were within the inner-workings of Sourcegraph.
+
+TODO: screenshot
+
+To use tracing, please see our [documentation](https://docs.sourcegraph.com/admin/observability/tracing).
+
+Additionally, it is now possible to log all Search and GraphQL requests slower than N milliseconds, using the new site configuration options `observability.logSlowGraphQLRequests` and `observability.logSlowSearches`. These can be useful if Sourcegraph's monitoring or your instances' users inform you that queries are slow, by allowing you to see the exact details of the search or GraphQL request in order to reproduce it.
 
 ## Changelog
 
