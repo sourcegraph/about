@@ -22,7 +22,11 @@ We do not tolerate flaky tests of any kind. Any engineer that sees a flaky test 
 
 If the build or test infrastructure itself is flaky, then [open an issue](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) and notify the [distribution team](distribution/index.md#contact).
 
-## Unit tests
+## Testing pyramid 
+
+![Testing pyramid](testing-pyramid.svg)
+
+### Unit tests
 
 Unit tests test individual functions in our codebase and are the most desirable kind of test to write.
 
@@ -36,7 +40,7 @@ Tradeoffs:
 
 - They don't verify our systems are wired up correctly end-to-end.
 
-## Integration tests
+### Integration tests
 
 Integration tests test the behavior of a subset of our entire system to ensure that subset of our system is wired up correctly.
 
@@ -55,7 +59,7 @@ Examples:
 - Tests that call our search API to test the behavior of our entire search system.
 - Tests that validate UI behavior in the browser while mocking out all network requests so no backend is required.
 
-## End-to-end tests (e2e)
+### End-to-end tests (e2e)
 
 E2e tests test our entire product from the perspective of a user. We try to use them sparingly. Instead, we prefer to get as much confidence as possible from our [unit tests](#unit-tests) and [integration tests](#integration-tests).
 
@@ -74,7 +78,7 @@ Examples:
 - Run our Sourcegraph Docker image and verify that site admins can complete the registration flow.
 - Run our Sourcegraph Docker image and verify that users can sign in and perform a search.
 
-## Visual testing
+### Visual testing
 
 We use [Percy](https://percy.io/) to detect visual changes in Sourcegraph features. You may need permissions to update screenshots if your feature introduces visual changes. Post a message in #dev-chat that you need access to Percy, and someone will add you to our organization (you will also receive an invitation via e-mail). Make sure you are logged in with your GitHub credentials.
 
