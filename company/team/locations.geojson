@@ -56,6 +56,19 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Rijnard van Tonder"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.955205,
+          33.434484 
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Loïc Guychard"
       },
       "geometry": {
