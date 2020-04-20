@@ -74,30 +74,28 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
 
 ## Experimental AND/OR operators for search contents
 
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/ju0XEFU31W0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube.com/embed/PAsZP6wv3Gg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://youtu.be/ju0XEFU31W0" target="_blank">View on YouTube</a></p>
+  <p style="text-align: center"><a href="https://youtu.be/PAsZP6wv3Gg" target="_blank">View on YouTube</a></p>
 </p>
--->
 
-Search for file contents using and- and or-expressions in queries. These operators enable more expressive searches in regexp and structural search modes. [The documentation](https://docs.sourcegraph.com/user/search/queries#operators) includes more details about how to these operators and their precedence and grouping.
+Search for file contents using AND and OR expressions in queries. These operators enable more expressive searches in regexp and structural search modes. [The documentation](https://docs.sourcegraph.com/user/search/queries#operators) includes more details about how to these operators and their precedence and grouping.
 
 For example, if you want to find all of the places where two functions are within the same file, you can use the AND operator:
 
-EXAMPLE
+`conf.Get( and log15.Error(` [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+conf.Get%28+and+log15.Error%28&patternType=regexp)
 
-Or, if you want to find everywhere two functions are used, whether or not the other is present, you would use the OR operator:
+Or, if you want to find everywhere two functions are used whether or not the other is present, you would use the OR operator:
 
-EXAMPLE
+`conf.Get( or log15.Error(` [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+conf.Get%28+or+log15.Error%28&patternType=regexp)
 
 You can even use them together:
 
-EXAMPLE
+`("conf.Get(" or "log15.Error(") and after` [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+%28%22conf.Get%28%22+or+%22log15.Error%28%22%29+and+after&patternType=regexp)
 
-Currently, operators only support searching file contents and do not apply to search scopes - you will see an alert if your query is not supported. 
+Currently, operators only support searching file contents and do not apply to search scopes - you will see an alert if your query is not supported.
 
 Enable this feature by adding `{"experimentalFeatures": {"andOrQuery": "enabled"}}` to your global, organization, or user settings.
 
