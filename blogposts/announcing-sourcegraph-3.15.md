@@ -126,7 +126,7 @@ Reworked action bars
 
 ![user event log](/blog/3-15-user-event-log.png)
 
-Users and site administrators can now view a log of their actions/events in the user settings. This enables site admins to perform rough audits of users and helps users better understand the information Sourcegraph logs.
+Users and site administrators can now view a log of their actions and the events logged in the user settings. This enables site admins to perform audits of user activity, and helps provide users with transparency around the activity that Sourcegraph logs. Note that these logs are only stored locally.
 
 ## Git improvements
 
