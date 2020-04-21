@@ -27,6 +27,13 @@ import Helmet from 'react-helmet'
  */
 const featuredPosts: BlogPost[] = [
     {
+        title: 'Sourcegraph 3.15: Campaigns beta available, experimental AND/OR operators, and improved observability',
+        description:
+            'Read about and watch videos of the features released in Sourcegraph 3.15 on April 20, 2020. Upgrade your Sourcegraph instance today!',
+        thumbnail: '/blog/3.15-release-blog-img.jpg',
+        url: '/blog/sourcegraph-3.15'
+    },
+    {
         title: 'Universal Code Intelligence for GitHub with the Sourcegraph browser extension',
         description:
             'Universal Code Intelligence for GitHub means bringing code navigation features such as hover tooltips, go to definition, and find references to every code view and pull request, supporting every popular language, and all public and private repositories.',
@@ -39,13 +46,6 @@ const featuredPosts: BlogPost[] = [
             'On February 20, 2020, we officially moved out of our amazing San Francisco office and became an all-remote company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision.',
         thumbnail: '/blog/sf-office-mural.jpg',
         url: '/blog/our-journey-to-all-remote'
-    },
-    {
-        title: 'The home offices of Sourcegraph',
-        description:
-            'As an all-remote company, we only have home office setups and they range from "sparse" to "elaborate", so all the more reason to create this collection of photos. Here are all the photos that were contributed to the pull request behind this blog post.',
-            thumbnail: '/blog/home-offices-sourcegraph-thumbnail.jpg',
-            url: '/blog/home-offices-of-sourcegraph'
     }
 ]
 
