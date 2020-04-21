@@ -144,6 +144,8 @@ When using Sourcegraph for the first time on a private instance, a getting start
 
 ## Extension and code intelligence UI improvements
 
+![Extension UI improvements](https://user-images.githubusercontent.com/10532611/79908315-50a20400-841b-11ea-9311-66030a2fd64f.gif)
+
 Even small things can have a large impact on user experience, and we are working on improving how users interact with Sourcegraph. For this release, we cleaned up the design of buttons contributed by [extensions](https://docs.sourcegraph.com/extensions) in the Sourcegraph webapp and on code host [integrations](https://docs.sourcegraph.com/integration). In addition, we reworked our logic for when we display loading indicators in hover tooltips that sometimes caused tooltips to not show up reliably. These changes provide a more consistent experience with visual elements and component interactions.
 
 ## User event logs available in user settings
