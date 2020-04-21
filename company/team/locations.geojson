@@ -62,7 +62,7 @@
         "type": "Point",
         "coordinates": [
           -111.955205,
-          33.434484 
+          33.434484
         ]
       }
     },
@@ -167,6 +167,19 @@
         "coordinates": [
           55.13729095458984,
           25.080312820442302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garo Brik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.38858032226562,
+          43.643032068770395
         ]
       }
     }
