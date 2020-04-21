@@ -18,7 +18,6 @@
 - [Prometheus](prometheus.md)
 - [Adding ping data](adding_ping_data.md)
 - [Adding buildkite secrets](adding_buildkite_secrets.md)
-- [Campaigns](campaigns.md)
 
 ## [Roles and responsibilities](roles.md)
 
