@@ -26,6 +26,8 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**🏁 Getting started prompt contains more context**](#getting-started-prompt-contains-more-context)<br />
 
+[**🧩 Extension and code intelligence UI improvements**](#extension-and-code-intelligence-ui-improvements)<br />
+
 [**⚙️ User event logs available in user settings**](#user-event-logs-available-in-user-settings)<br />
 
 [**🧪 Experimental deterministic search results**](#experimental-deterministic-search-results)<br />
@@ -139,6 +141,10 @@ The new `visibility:` search scope enables filtering based on a repository’s s
 ![Getting started with more context](/blog/3-15-getting-started.png)
 
 When using Sourcegraph for the first time on a private instance, a getting started section is shown to help admins and users make sure their Sourcegraph instance is properly configured, and that they know how to perform a search. The getting started steps now include more context about how to complete each step.
+
+## Extension and code intelligence UI improvements
+
+Even small things can have a large impact on user experience, and we are working on improving how users interact with Sourcegraph. For this release, we cleaned up the design of buttons contributed by [extensions](https://docs.sourcegraph.com/extensions) in the Sourcegraph webapp and on code host [integrations](https://docs.sourcegraph.com/integration). In addition, we reworked our logic for when we display loading indicators in hover tooltips that sometimes caused tooltips to not show up reliably. These changes provide a more consistent experience with visual elements and component interactions.
 
 ## User event logs available in user settings
 
