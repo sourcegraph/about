@@ -91,7 +91,7 @@ You can even use them together: `("conf.Get(" or "log15.Error(") and after` &mda
 
 Currently, operators only support searching file contents and do not apply to search scopes - you will see an alert if your query is not supported.
 
-Enable this feature by adding `{"experimentalFeatures": {"andOrQuery": "enabled"}}` to your global, organization, or user settings.
+Enable this feature by adding `{"experimentalFeatures": {"andOrQuery": "enabled"}}` to site configuration settings.
 
 ## Improved observability
 
