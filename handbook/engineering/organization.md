@@ -11,7 +11,7 @@ This document describes how we organize engineering to ensure that we are making
 
 ## Philosophy
 
-This section describes how we think about our team in its ideal state.
+This section describes how we think about our team in its ideal state. Due to a variety of real-world constraints that change over time (e.g., hiring, product priorities, engineering priorities, skills of our current team), our organization might temporarily exist in a state that is inconsistent with these ideals from time to time. That is ok.
 
 ### Teams
 
