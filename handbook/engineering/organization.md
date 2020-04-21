@@ -29,7 +29,7 @@ Here is how our team is organized:
 
 - [Distribution](distribution/index.md)
 - [Campaigns](campaigns/index.md)
-- [Code intelligence](core-services/index.md)
+- [Code intelligence](code-intelligence/index.md)
 - [Core services](core-services/index.md)
 - [Search](search/index.md)
 - [Web](web/index.md)
