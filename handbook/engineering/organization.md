@@ -15,11 +15,11 @@ This section describes how we think about our team in its ideal state. Due to a 
 
 ### Teams
 
-We have mission based teams. This means that each team is responsible for a particular long term mission, which may be a [product concern](#customer-needs) or an [engineering concern](#engineering-needs). In either case, the team contains the necessary cross-functional skillsets to achieve that mission. Each team is lead by a [Project Lead](../roles.md#project-lead).
+We have mission based teams. This means that each team is responsible for a particular long term mission, which may be a [product concern](#customer-needs) or an [engineering concern](#engineering-needs). In either case, the team contains the necessary cross-functional skillsets to achieve that mission. Each team is lead by a [Project Lead](roles.md#project-lead).
 
 ### Management
 
-[Engineering managers](../roles.md#engineering-manager) are primarly responsible for the career development of the engineers who they manage. To best facilitate this goal, we prefer managers to focus on managing engineers of a particular skillset that the manager is familiar with. Manager are responsible for driving cross-team functional alignment to ensure that we are satisfying our [engineering needs](#engineering-needs) within the function that they manage.
+[Engineering managers](roles.md#engineering-manager) are primarly responsible for the career development of the engineers who they manage. To best facilitate this goal, we prefer managers to focus on managing engineers of a particular skillset that the manager is familiar with. Manager are responsible for driving cross-team functional alignment to ensure that we are satisfying our [engineering needs](#engineering-needs) within the function that they manage.
 
 This means that a manager can manage engineers across multiple teams. Each engineer only ever has one manager.
 
