@@ -1,3 +1,3 @@
- # Search
+# Search
 
- TODO: identify an owner to fill out this page and update CODEOWNERS
+TODO: identify an owner to fill out this page and update CODEOWNERS
