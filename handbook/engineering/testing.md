@@ -8,10 +8,12 @@ We rely on automated testing to ensure the quality of our product.
 
 Any addition or change to our codebase should be covered by an appropriate amount of automated tests to ensure that:
 
-1. Our product works as intended when we ship it to customers.
-1. Our product continues to work and doesn't accidentally break as we make changes to our product over time.
+1. Our product and code works as intended when we ship it to customers.
+1. Our product and code doesn't accidentally break as we make changes over time.
 
-Engineers should budget for writing tests when making iteration plans.
+A good automated test suite increases the velocity of our team because it allows engineers to confidently edit and refactor code, especially code authored by someone else.
+
+Engineers should budget an appropriate amount of time for writing tests when making iteration plans.
 
 ## Flaky tests
 
