@@ -238,4 +238,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [asdine@sourcegraph.com](mailto:asdine@sourcegraph.com), [asdine](https://github.com/asdine)
 - Asdine loves experimenting and building bizarre software while enjoying an entire pot of coffee. Before Sourcegraph, he was writing tools and frameworks for his colleagues at Heetch. He also hates dogs, especially the small ones, essentially because they hate him.
 
+## Dave Try
+
+- Software Engineer
+- Ibague, Colombia 🇨🇴/ Sydney, Australia 🇦🇺
+- [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [GitHub](https://github.com/davejrt)
+- Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start at a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
 <!-- Paste *your* section above this line! -->
