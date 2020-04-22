@@ -15,9 +15,9 @@
 /company @sqs
 /workflow @christinaforney
 /direction @christinaforney
-/blogposts @aileenrose
-/website @aileenrose
-/docs @aileenrose
+/blogposts @sourcegraph/marketing
+/website @sourcegraph/marketing
+/docs @sourcegraph/marketing
 
 /handbook/product @christinaforney
 /handbook/design @imtommyroberts 
@@ -28,3 +28,4 @@
 /handbook/engineering/core-services @sourcegraph/core-services
 /handbook/engineering/distribution @sourcegraph/distribution
 /handbook/engineering/web @sourcegraph/web
+/handbook/marketing @sourcegraph/marketing
