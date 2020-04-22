@@ -44,11 +44,11 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
             <div className="testimonial-carousel col-sm-12 col-md-9 col-lg-7 text-center">
                 <div className="testimonial-carousel__testimonials">
                     <img src="/case-studies/quote.svg" className="testimonial-carousel__quote-icon mb-5" alt="" />
-                    <Carousel controls={false}>
+                    <Carousel controls={true}>
                         {testimonials.map(({ customer, logo, quote, author, cta }, i) => (
                             <div
                                 key={`testimonial-${i}`}
-                                className={`${slugify(customer).toLowerCase()} testimonial-carousel__testimonial`}
+                                className={`${slugify(customer).toLowerCase()} carousel-item testimonial-carousel__testimonial`}
                             >
                                 <img src={logo} className="testimonial-carousel__logo d-inline-block mb-4" />
                                 <blockquote className="testimonial-carousel__blockquote blockquote">
