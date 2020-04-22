@@ -37,7 +37,7 @@ The process for publishing a blog post is:
 1. Create the blog post file
 1. Create a pull request
 1. Confirm via the preview deployment site that everything is looking good (the `deploy/netlify — Deploy preview ready!` link in the checks section)
-1. Get your pull request approved n(preferably by someone on the marketing team)
+1. Get your pull request approved (preferably by someone on the marketing team)
 1. Merge your pull request which will trigger an automatic production build and deploy
 
 > NOTE: This documentation covers only the mechanics of adding a blog post, not considerations such as who needs to approve your post or when it should be published. As a general rule, reach out to the marketing team to give them a heads-up and use a Google doc to refine the content before adding it here.
