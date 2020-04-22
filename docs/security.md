@@ -66,6 +66,23 @@ We use a number of static analysis tools to identify security risks in developme
 
 All development laptops have encrypted hard drives.
 
+## Updates
+
+Sourcegraph follows commonly recognized best practices for updating software dependencies.
+
+- We monitor source-level dependencies for [CVE](https://cve.mitre.org/) patches.
+- We monitor the Alpine Linux release notes to be aware of patches for CVEs and upgrade our base
+  Docker images as necessary.
+- If we are alerted to a vulnerability that exists in a version of Sourcegraph that would compromise
+  the privacy of a customer's code, we will notify the affected customers immediately. Patch
+  releases that fix the vulnerability will be prioritized as a P0, which means work will commence
+  immediately rather than waiting until the next planning phase.
+
+Customers are encouraged to update to the latest release of Sourcegraph every month. This will
+ensure that their Sourcegraph instance has the latest security-related updates. New releases are
+published on the 20th of every month, so customers that wish to stay up-to-date can set monthly
+calendar reminders, or subscribe to the Sourcegraph newsletter.
+
 ## How to report a security vulnerability
 
 If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 1 business day to acknowledge that we received them and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling).
