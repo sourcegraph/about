@@ -18,7 +18,7 @@ import { IntegratesWithSection } from '../../components/product/IntegratesWithSe
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { UseCasesTable } from '../../components/product/UseCasesTable'
-import { Vimeo } from '../../components/Vimeo'
+import { YouTube } from '../../components/YouTube'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
@@ -133,17 +133,7 @@ export default ((props: any) => (
 
             <ContentSection color="purple" className="py-6">
                 <h2 className="text-center display-4 pb-4">See Sourcegraph code discovery in action</h2>
-                <video autoPlay={true} muted={true} loop={true} playsInline={true} className="w-100 h-auto">
-                    <source
-                        src="https://storage.googleapis.com/sourcegraph-assets/video/welcome/video/Welcome-CodeNavigation.mp4"
-                        type="video/mp4"
-                    />
-                    <source
-                        src="https://storage.googleapis.com/sourcegraph-assets/video/welcome/video/Welcome-CodeNavigation.m4v"
-                        type="video/x-m4v"
-                    />
-                    Demo video playback is not supported on your browser.
-                </video>
+                <YouTube id="KSx61-yAMLs" autoplay={true} loop={true} />
             </ContentSection>
 
             <div className="container-fluid bg-white text-dark pt-1 pb-5">
@@ -290,8 +280,8 @@ export default ((props: any) => (
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Use Sourcegraph to find answers in code, faster!
                 </h2>
-                <Vimeo id={340491490} className="mb-6" />
-                <Vimeo id={340774081} />
+                <YouTube id="OGd8wr7XpgU" className="mb-6" />
+                <YouTube id="GuqWw3t6H-k" />
             </ContentSection>
 
             <ContentSection color="white" className="pt-5 pb-3">

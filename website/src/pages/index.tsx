@@ -12,7 +12,7 @@ import { ProductFeaturesAndUseCases } from '../components/product/ProductFeature
 import { FeaturedBlogPosts, BlogPost } from '../components/FeaturedBlogPosts'
 import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { Tweets } from '../components/Tweets'
-import { Vimeo } from '../components/Vimeo'
+import { YouTube } from '../components/YouTube'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
@@ -228,7 +228,7 @@ export default ((props: any) => (
                 <CustomerLogosSection className="py-5" />
             </div>
             <ContentSection id="demo" color="black" className="py-6">
-                <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
+                <YouTube id="GQj5jXdON3A"/>
             </ContentSection>
             <div className="bg-white text-dark py-4">
                 <div className="container">
