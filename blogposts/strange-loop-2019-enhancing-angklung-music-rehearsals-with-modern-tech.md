@@ -37,7 +37,7 @@ Trapsilo comes from Bandung, Indonesia. Bandung is the 3rd largest city in Indon
 
 ![Map of Bandung, Indonesia](/blog/strange-loop-2019/angklung/Bandung-Indonesia_map.png)
 
-Trapsilo has played Angklung for over 10 years and has played in Italy, Greece, Maylasia and Singapore and has also conducted several concerts and performances.
+Trapsilo has played Angklung for over 10 years and has played in Italy, Greece, Malaysia and Singapore and has also conducted several concerts and performances.
 
 He has been programming far longer than he has been playing Angklung. Naturally he thought of programming ways to solve the problems his groups had when doing performances.
 

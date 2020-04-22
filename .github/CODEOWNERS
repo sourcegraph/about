@@ -5,6 +5,22 @@
 # Order is important; the last matching pattern takes the most
 # precedence
 
+# The "nobody" team is an alerting mechanism that indicates when there are files in a PR that are
+# not owned by anyone. This is a signal to the PR author that certain modified files are unowned and
+# they need to (1) track down the owners using git blame and (2) update CODEOWNERS.
+* @sourcegraph/nobody
+
+/.github/CODEOWNERS sqs
+/handbook @sqs
+/company @sqs
+/workflow @christinaforney
+/direction @christinaforney
+/blogposts @aileenrose
+/website @aileenrose
+/docs @aileenrose
+
+/handbook/product @christinaforney
+/handbook/design @imtommyroberts 
 /handbook/engineering @nicksnyder
 
 /handbook/engineering/code-intelligence @sourcegraph/code-intel

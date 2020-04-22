@@ -67,6 +67,7 @@
 /go/sourcegraph-liveblogging-at-gophercon-2018-go /blog/sourcegraph-liveblogging-at-gophercon-2018 301!
 /go/go-in-debian /go/gophercon-2018-go-in-debian/ 301!
 /go/grpc-in-production  /go/grpc-in-production-alan-shreve/ 301!
+/plan /company/strategy 301!
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/code-alerts-automation /product/code-change-management 301!

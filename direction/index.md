@@ -1,42 +1,60 @@
 # Sourcegraph direction
 
-We want Sourcegraph to be:
+Product strategy is the bridge (how we're going to get there) between our [vision](../company/strategy.md) (where we're going) and the [roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing) (what we need to do).
 
-- **For developers:** the best way to answer questions and get unblocked while writing, reviewing, and reading code.
-- **For organizations** (engineering leaders and internal tools teams): the infrastructure for developer tools and data.
+Want to help us achieve these goals? [We're hiring!](https://github.com/sourcegraph/careers)
 
-This is an overview of what’s coming in the next 3-6 months.  More details are in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing). Our high-level vision is outlined in the [Sourcegraph master plan](https://about.sourcegraph.com/plan).
+## 2020 Product strategy
 
-We ship a release on the [20th day of each month](../handbook/engineering/releases/index.md#releases-are-monthly).
+This is our strategy for realizing our [1-year vision](../company/strategy.md#1-year-vision).
 
-Want to help us achieve these goals? [We're hiring!](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer.md)
+### Build Sourcegraph into the development workflow
 
-## Overview
+#### Challenge to overcome
 
-We're continually improving Sourcegraph's core features for developers:
+We measure the value Sourcegraph brings to developers by measuring how often they use Sourcegraph in their daily workflows. We believe the [natural frequency of usage](https://amplitude.com/blog/2016/10/11/product-usage-interval) (how often people use Sourcegraph) as a key part of every developer’s workflow is many times per day. Our current usage metrics are good, but are not as high as they should be to match this natural frequency of usage.
 
-- Code search and navigation (with code intelligence)
-- Integration into code review
-- Code change management campaigns
+#### What we want to achieve
 
-Our current product priorities are:
+Sourcegraph is an essential and frequently used part of the developer’s day to day workflow because it is the place that gives developers all context about their code. Sourcegraph is The One Search Bar to find information you need about your code. Search is easy to do from anywhere, aware of your current context, and integrated deeply into your common workflows; it's not just a list of matches.
 
-- Usability: Sourcegraph is intuitive to use for anyone looking for answers about their code, and easy for admins to configure and maintain.
-- Scalability: Sourcegraph performs reliably at scale for our largest customers.
-- Code change management campaigns: fix and change things across all of your repositories.
+We will measure this by:
 
-## In 3-6 months, Sourcegraph will have:
+- Number of daily active users
+- Number of times Sourcegraph is used per day
 
-### Improved usability
+#### How we're going to do this
 
-Sourcegraph is intuitive to use for a wide range of roles, from developers to PMs, engineering managers, data analysts, and more. It adds value to this wide range of roles by making more information about code available, such as language statistics and dependency graphs. [Search has an improved UI](https://about.sourcegraph.com/blog/sourcegraph-3.10#improved-autocompletion-for-search-query-filters) that makes it more accessible, easier to use, and faster to drill down on what you're looking for.
+- Insert Sourcegraph into more places in the developer workflow, so developers are being prompted to go use Sourcegraph.
+- Give developers more reasons to come back with greater frequency by adding more value for them inside of Sourcegraph (e.g., information about code that doesn't live in the code itself).
 
-Improving upon on our [basic code intelligence](https://docs.sourcegraph.com/user/code_intelligence) that works for every language, Sourcegraph provides precise code intelligence for a subset of common languages including Go, TypeScript, C/C++, Java, and C#.
+### Support a broader set of configurations and workflows
 
-### Enhanced scalablity, reliability, and security
+#### Challenge to overcome
 
-Sourcegraph performs at the scale of our largest customers under a wide variety of configurations and deployment infrastructure. [Code search is fast at large scale](https://docs.google.com/document/d/18w8T_KzYxQye8wg1g01QpMOX4_ERTtbOxMBRYaOEkmk/edit?usp=sharing) (~80k repositories), and the API can support enterprise level usage. Sourcegraph enforces repository permissions using ACLs from Bitbucket Server, GitHub, and GitLab. Admins understand the health of their instances and are alerted proactively if things fail.
+Many organizations have unique code setups and workflows that require workarounds to support, or prevent them from using Sourcegraph entirely.
 
-### Code change management
+#### What we want to achieve
 
-Use Sourcegraph to [run large-scale code change campaigns](https://about.sourcegraph.com/product/code-change-management) to remove legacy code, fix critical security issues, and pay down tech debt. You can create campaigns across thousands of repositories and code owners. Sourcegraph automatically creates and updates all of the branches and pull requests, and you can track progress and activity in one place.
+Sourcegraph is the code search solution for every developer and every organization, regardless of their setup. At any organization, Sourcegraph is how developers are able to work with large and complex development workflows. Sourcegraph sustainably supports configuration of unique infrastructure and code setups.
+
+#### How we're going to do this
+
+- Solve use cases that are present at many large enterprises.
+- Reduce friction in getting Sourcegraph deployed at scale.
+- More integrated support for non-Git version control systems.
+
+### Surface insights into code and development
+
+#### Challenge to overcome
+
+Software development executives have a hard time understanding what is going on with their large teams, the projects they are investing in, and the impact developers and teams have inside of their organization. The insights and information they need is hard to come by and is not solved by other tools or services because it relies on data the development teams produce to be tied to higher order concerns.
+
+#### What we want to achieve
+
+Sourcegraph has access to the low level data needed to build insights that are high quality and meaningful. Sourcegraph feeds the symbiotic relationship between developer produced data and executive insights, creating a cyclical feedback loop of immense value. Engineering leaders turn to Sourcegraph to understand what is going on in their organization.
+
+#### How we're going to do this
+
+- Do research to understand what questions engineering leaders want to answer about their organization's code.
+- Add features to Sourcegraph that provide insights that are valuable to both leaders and developers.

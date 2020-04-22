@@ -2,18 +2,16 @@
 
 This page contains brief bios of our team. Teammates may also have a personal documentation page in this directory that is named according to their Sourcegraph email address (e.g. you@sourcegraph.com -> you.md).
 
-<!--
-
 To add yourself to this page, copy the following template, paste it at the end of this file, and make it about yourself!
 
 ## Full Name (optional pronouns)
 
+- Describe how to pronounce your name
 - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Bio (hobbies, work experience, family, pets, etc.)
 
--->
 
 ## Quinn Slack
 
@@ -92,7 +90,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [joe@sourcegraph.com](mailto:joe@sourcegraph.com), [@unknwon](https://github.com/unknwon), [LinkedIn](https://www.linkedin.com/in/jiahua-chen-86218a81/)
 - Joe lives in his little dark room. Prior to Sourcegraph, Joe created the Gogs project, a painless self-hosted Git service. Joe graduated with a MS in Software Development from Boston University.
 
-## Vanesa Ortiz
+## Vanesa Ortiz (she/her)
 
 - Content Engineer
 - San Francisco, CA, USA 🇺🇸
@@ -101,6 +99,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Noemi Mercado (she/her)
 
+- First name is pronounced **no-EH-mee**
 - People Ops
 - San Francisco, CA, USA 🇺🇸
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/)
@@ -169,13 +168,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [julia@sourcegraph.com](mailto:julia@sourcegraph.com), [@JuliaSourceress](https://twitter.com/JuliaSourceress), [LinkedIn](https://www.linkedin.com/in/juliagilinets/), [GitHub](https://github.com/juliasourceress)
 - Julia started out as a Software Engineer supporting the developer community at Palm, which to the generations of today might be thought of as mobile before mobile. She realized she loved forging business partnerships just as much as coding, and after over a decade of leading various customer facing teams has finally landed in the best of all worlds at Sourcegraph. She's passionate about technical innovation, efficiency, the human connection, and sleep. 
 
-## Michael Fromberger
-
-- Software Engineer
-- Seattle, WA, USA 🇺🇸
-- [michael@sourcegraph.com](mailto:michael@sourcegraph.com), [creachadair](https://github.com/creachadair), [@creachadair](https://twitter.com/creachadair), [LinkedIn](https://www.linkedin.com/in/michael-fromberger/)
-- Michael has been programming since about age 7, and has never lost his fascination with the ways code serves, simultaneously, as a language for people and computers. He pursued this fascination via a degree in linguistics and an (unfinished) Ph.D. in computer science. Prior to joining Sourcegraph, he managed the [Kythe](https://kythe.io) team at Google and led the Language Analysis team at source{d}. He lives in Seattle with his wife and two kittens. When not fiddling with computers he loves to read, write, teach, cook, play music, and spin yarn, among other hobbies.
-
 ## Adam Herzog
 
 - Product Marketing Manager (he/him)
@@ -209,7 +201,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Account Executive
 - Atlanta, GA, USA 🇺🇸
 - [kai@sourcegraph.com](mailto:kai@sourcegraph.com), [kpsource](https://github.com/kpsource)
-- Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.   
+- Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.
 
 ## Tommy Roberts
 
@@ -217,6 +209,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - London, UK 🇬🇧
 - [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [@imtommyroberts](https://twitter.com/imtommyroberts), [LinkedIn](https://www.linkedin.com/in/imtommyroberts)
 - Before Sourcegraph Tommy was providing freelance product design services to early stage startups. He's passionate about accessible design, the relationship between design and development, and ethics in tech. Outside of work he likes to explore the food scene in London, criticize his own cooking, read too many articles, and watch too many youtube videos.
+
+## Felix Becker
+
+- Software Engineer
+- Bremen, Germany 🇩🇪
+- [felix@sourcegraph.com](mailto:felix@sourcegraph.com), [GitHub](https://github.com/felixfbecker), [Twitter](https://github.com/felixfbecker), [LinkedIn](https://www.linkedin.com/in/felixfbecker/)
+- Felix discovered batch files on Windows 98 in elementary school and one thing led to another. He has the most fun in all things web technology and open source, especially TypeScript. But when that gets boring, he likes to play field hockey and sail the north & baltic seas.
 
 ## Garo Brik (they/them)
 
@@ -239,4 +238,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [asdine@sourcegraph.com](mailto:asdine@sourcegraph.com), [asdine](https://github.com/asdine)
 - Asdine loves experimenting and building bizarre software while enjoying an entire pot of coffee. Before Sourcegraph, he was writing tools and frameworks for his colleagues at Heetch. He also hates dogs, especially the small ones, essentially because they hate him.
 
+## Dave Try
+
+- Software Engineer
+- Ibague, Colombia 🇨🇴/ Sydney, Australia 🇦🇺
+- [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [GitHub](https://github.com/davejrt)
+- Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start at a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
 <!-- Paste *your* section above this line! -->

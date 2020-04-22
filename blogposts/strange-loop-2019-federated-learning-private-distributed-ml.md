@@ -39,7 +39,7 @@ issues like privacy. In his view, federated learning combines areas like distrib
 
 ### Machine Learning
 
-ML is the field of algorithms that infer rules connecting data to answers, given data & the right answers. It differs from classical programming by infering the rules instead of explictly being provided with a set of rules.
+ML is the field of algorithms that infer rules connecting data to answers, given data & the right answers. It differs from classical programming by infering the rules instead of explicitly being provided with a set of rules.
 
 The most common machine learning workflow involves moving data from different sources to one location. This gives rise to the issue of privacy. If you use products built by various large tech companies, you invariably end up handing over your private data to them which they use to train their models.
 

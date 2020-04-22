@@ -86,7 +86,7 @@ The National Air and Space museum has a engineering prototype of Voyager that's 
 
 ## Post-Launch
 
-Post-launch there was an issue with the control transmission and the primary reciever on Voyager 1 failed after an automated failover attempt. There's a short in a capacitor on the secondary receiver so it although it works it's somewhat tempermental.
+Post-launch there was an issue with the control transmission and the primary receiver on Voyager 1 failed after an automated failover attempt. There's a short in a capacitor on the secondary receiver so it although it works it's somewhat tempermental.
 They managed to get more funding to get to Uranus and Neptune. They added a data compression algorithm to deal with the transmission rate decreasing due to signal attenuation. They switched the probe to use both processors, one to deal with the compression.
 Power available has been decreasing slowly, the thermocouples are degrading and about half of the Plutonium has been used up. NASA has been turning off and cycling the systems to conserve power. We expect Voyager to last maybe another 5 years. After it ceases operation it'll still continue out into the galaxy, carrying the Voyager golden record. 
 
