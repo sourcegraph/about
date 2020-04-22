@@ -15,12 +15,11 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title: 'What is Universal Code Search',
-            description:
-                'Universal Code Search is the one place to answer questions about code and systems.',
+            description: 'Universal Code Search is the one place to answer questions about code and systems.',
         }}
     >
         <Helmet>
-            <style dangerouslySetInnerHTML={{__html: `>.async-hide { opacity: 0 !important}`}} />
+            <style dangerouslySetInnerHTML={{ __html: `>.async-hide { opacity: 0 !important}` }} />
             <script>
                 {`(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
             h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
@@ -34,18 +33,16 @@ export default ((props: any) => (
                 <div className="row justify-content-md-center">
                     <div className="col-md-10">
                         <h3 className="text-center">
-                            Universal Code Search is the one place to answer any
-                            questions about code and systems.
+                            Universal Code Search is the one place to answer any questions about code and systems.
                         </h3>
                         <p>
-                            Explore and better understand all code, faster, with contextual code intelligence to improve developer productivity and code change management to make large-scale changes.
+                            Explore and better understand all code, faster, with contextual code intelligence to improve
+                            developer productivity and code change management to make large-scale changes.
                         </p>
 
                         <p>
-                            <a href="#used-by">
-                                Uber, Lyft, Yelp, and other enterprises
-                            </a>{' '}
-                            rely on Universal Code Search, not just code hosts.
+                            <a href="#used-by">Uber, Lyft, Yelp, and other enterprises</a> rely on Universal Code
+                            Search, not just code hosts.
                         </p>
                     </div>
                 </div>
@@ -73,7 +70,7 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-                        <ContentSection color="purple" className="py-5">
+            <ContentSection color="purple" className="py-5">
                 <h3 className="text-center">Universal across everything </h3>
                 <p className="text-center">
                     Universal Code Search must have these things. Anything else is just a code search tool.
@@ -82,50 +79,48 @@ export default ((props: any) => (
                     <div className="col-md-4 pr-5">
                         <h5>Code Discovery</h5>
                         <p>
-                           <ul className="pl-3">
-                            <li>Navigate and explore code across any codebase</li>
-                            <li>Access anything stored as code from a centralized place</li>
-                            <li>Improve the speed to understand complex or unfamiliar codebases</li>
-                        </ul>
+                            <ul className="pl-3">
+                                <li>Navigate and explore code across any codebase</li>
+                                <li>Access anything stored as code from a centralized place</li>
+                                <li>Improve the speed to understand complex or unfamiliar codebases</li>
+                            </ul>
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
                         <h5>Code Intelligence</h5>
                         <p>
-                        <ul className="pl-3">
-                            <li>Understand code in context</li>
-                            <li>Find answers faster, without huge amounts of effort</li>
-                            <li>Better code reviews with code intelligence to find defintions or references</li>
-                        </ul>
+                            <ul className="pl-3">
+                                <li>Understand code in context</li>
+                                <li>Find answers faster, without huge amounts of effort</li>
+                                <li>Better code reviews with code intelligence to find defintions or references</li>
+                            </ul>
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
                         <h5>Code Change Management</h5>
                         <p>
                             <ul className="pl-3">
-                            <li>Manage large-scale changes across the entire codebase</li>
-                            <li>Easily run campaigns with a query and track results</li>
-                            <li>Migrate code to new APIs, address deprecations and dependencies, and more</li>
-                        </ul>
+                                <li>Manage large-scale changes across the entire codebase</li>
+                                <li>Easily run campaigns with a query and track results</li>
+                                <li>Migrate code to new APIs, address deprecations and dependencies, and more</li>
+                            </ul>
                         </p>
                     </div>
                 </div>
             </ContentSection>
-                       <ContentSection color="white" className="py-6">
-                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
-            <hr />
-                           </ContentSection>
             <ContentSection color="white" className="py-6">
-                <CustomerLogosSection className="py-5" />
-                            <hr />
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+                <hr />
             </ContentSection>
             <ContentSection color="white" className="py-6">
-                <h2 className="text-center display-5">
-                    Code search is the superpower
-                </h2>
+                <CustomerLogosSection className="py-5" />
+                <hr />
+            </ContentSection>
+            <ContentSection color="white" className="py-6">
+                <h2 className="text-center display-5">Code search is the superpower</h2>
                 <p className="text-center">
-                    Uber, Lyft, Yelp, and other world-class companies rely on Sourcegraph Universal Code Search
-                    (not just a code host) to ship software.
+                    Uber, Lyft, Yelp, and other world-class companies rely on Sourcegraph Universal Code Search (not
+                    just a code host) to ship software.
                 </p>
                 <div className="row mt-5">
                     <div className="col-md-6 col-lg-4 mb-3 pr-5">
@@ -224,7 +219,6 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            
 
             <Jumbotron
                 color="purple"

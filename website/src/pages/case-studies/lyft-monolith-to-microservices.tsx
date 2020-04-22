@@ -23,7 +23,7 @@ export default ((props: any) => (
                 quote:
                     'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition by verifying applications were no longer pointing at the monolith version of a service.',
                 author: justinPhilips,
-                image: '/case-studies/justin-phillips-lyft.jpg'
+                image: '/case-studies/justin-phillips-lyft.jpg',
             }}
             pdf="https://storage.googleapis.com/sourcegraph-assets/Lyft-Sourcegraph-case-study.pdf"
         >

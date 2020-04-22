@@ -10,10 +10,38 @@ Here are a few of the things we strive to make true:
 - Communicate openly, and solicit feedback frequently
 - To be egoless when soliciting responses to our work
 
-## Internal Resources
+## Working with design
+
+*This section is WIP*
+
+Working with design should feel fluid, you should be able to open an issue or bring up a concern in slack, and receive actionable feedback: either implementable, or a call to explore further.
+
+You should also not feel limited to words, images (sketches, or references made by editing the broswer DOM) are also encouraged. 
+
+Here are the best places to talk to us:
+
+**[Design execution documents](design-execution.md)**
+
+- Leaving comments on any part of the document is encouraged
+
+**Figma**
+
+- Click 'C' whilst in Figma, or check the navigation bar in the top left hand corner and look for the comment icon; you can drop comments anywhere in a file, and the owner of the page will be notified via email
+
+**GitHub**
+
+- Assign one of the team, add the tag 'needs-design', and utilise the [design priorities project](https://github.com/orgs/sourcegraph/projects/66)
+
+**Slack**
+
+- Utilise the design channel
+- Tag @design-team or cc one of the team
+
+## Internal resources
 
 Our internal resources are open, and the design team will welcome any feedback. Hesitating to leave feedback can block discussion, and stretch out time between brainstorming and action.
 
+- [Design execution documents](design-execution.md)
 - [Figma](https://www.figma.com/files/team/438792081639669302/Sourcegraph)
 
 ## How to make better UX design decisions

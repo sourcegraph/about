@@ -487,13 +487,12 @@ Suggested further reading:
 
 **Allocation efficiency in high-performance Go services**
 Achille Roussel / Rick Branson
-segment.com/blog/allocation-efficiency-in-high-
-performance-go-services/
+https://segment.com/blog/allocation-efficiency-in-high-performance-go-services/
 
 **Go 1.5 concurrent garbage collector pacing**
 Austin Clements
-golang.org/s/go15gcpacing
+https://golang.org/s/go15gcpacing
 
 **So You Wanna Go Fast**
 Tyler Treat
-bravenewgeek.com/so-you-wanna-go-fast/
+https://bravenewgeek.com/so-you-wanna-go-fast/

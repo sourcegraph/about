@@ -229,7 +229,7 @@ have been actively engaged in other projects.
 
 Photos of new members, happy volunteers. They historically have little to no
 training and are exciting about where they're connecting to and building a
-sence of community.
+sense of community.
 
 
 # Where are we?
@@ -275,7 +275,7 @@ volunteers over time. Interest has spiked since the repeal of net neutrality.
 
 We still have problems, though!  We haven't figured out how to structure
 ourselves as a distributed organization. We're not sure how to secure funding.
-We don't know how we're oging to be able to hire employees, and pay people for
+We don't know how we're going to be able to hire employees, and pay people for
 their work. We're also still really bad at reaching consensus.
 
 We're hoping that once we reach 1000 nodes, we might be able to pay some people

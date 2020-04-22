@@ -36,12 +36,7 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
         <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
             {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
             {pdf && (
-                <a
-                    href={pdf}
-                    className="btn btn-primary mt-4"
-                    rel="nofollow"
-                    target="_blank"
-                >
+                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow" target="_blank">
                     <i className="fa fa-file-pdf pr-2" />
                     Download PDF
                 </a>
@@ -113,7 +108,7 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     description?: string
 }> = ({
     title = 'See how Sourcegraph can help with a demo and free enterprise trial',
-    description = "Universal Code Search enables developers to explore and better understand all code, everywhere, faster. Let us show you how.",
+    description = 'Universal Code Search enables developers to explore and better understand all code, everywhere, faster. Let us show you how.',
 }) => (
     <ContentPage
         title={title}

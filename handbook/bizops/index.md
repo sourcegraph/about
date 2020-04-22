@@ -11,6 +11,7 @@ To reach us, mention @ericbm in the most relevant channel (i.e. #marketing for a
 ## Submitting a data request
 
 **Projects:** Proposals to capture and report on new data are in [GitHub issues in the Sourcegraph analytics repository](https://github.com/sourcegraph/analytics/issues). Provide the following data to help us understand and prioritize your request:
+
 - What is the purpose of the visualization?
 - Will it be frequently used, or is it only needed sporadically?
 - How does it support Sourcegraph's company and team OKRs?
@@ -33,6 +34,8 @@ We collect data from the following:
 * [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information. There are [specific guidelines](../engineering/adding_ping_data.md) that must be followed for teams to add ping data. 
 * [Custom tool to track events](https://github.com/sourcegraph/sourcegraph/issues/5486) on the Sourcegraph.com instance
 * [Prometheus dashboards](https://sourcegraph.com/-/debug/grafana/?orgId=1) show high-level insight into the health of a Sourcegraph instance to admins. Sourcegraph teammates can see the health of Sourcegraph.com. 
+
+We have [written policies about how we handle customer information](customer_data_policy.md). 
 
 ## Data tools
 

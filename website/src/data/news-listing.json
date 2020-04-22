@@ -1,6 +1,34 @@
 {
   "y2020": [
     {
+      "newsSource": "Database Trends and Applications",
+      "newsTitle": "Startups to Watch in 2020: Sourcegraph",
+      "newsDate": "April 8, 2020",
+      "newsLink": "http://www.dbta.com/Editorial/Trends-and-Applications/Startups-to-Watch-in-2020-139682.aspx",
+      "newsImage": "/external-logos/databasetrendsapp-logo.jpg"
+    },
+    {
+      "newsSource": "InfoQ",
+      "newsTitle": "Code Search Now Available to Browse Google's Open-Source Projects",
+      "newsDate": "April 8, 2020",
+      "newsLink": "https://www.infoq.com/news/2020/04/google-code-search-available/",
+      "newsImage": "/external-logos/infoq-logo.png"
+    },
+    {
+      "newsSource": "Devops.com",
+      "newsTitle": "Universal Code Search Combinations",
+      "newsDate": "April 7, 2020",
+      "newsLink": "https://devops.com/universal-code-search-combinations/",
+      "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
+      "newsSource": "IEEE Spectrum",
+      "newsTitle": "Q&A: Sourcegraph’s Universal Code Search Tool",
+      "newsDate": "April 3, 2020",
+      "newsLink": "https://spectrum.ieee.org/tech-talk/computing/software/sourcegraph-universal-code-search-tool",
+      "newsImage": "/external-logos/ieee-spectrum-logo.png"
+    },
+    {
       "newsSource": "DEVOPSdigest",
       "newsTitle": "Sourcegraph Secures $23 Million Series B Funding",
       "newsDate": "March 16, 2020",

@@ -87,6 +87,6 @@ All of this code is available on: [tiny.cc/ml-necklace](tiny.cc/ml-necklace)
 
 Her final hardware challenge was a bit more unexpected. Moving the harness from the manequin to her body, she found bad connections and shorting (soldering is hard!), and the fit wasn't exactly right. She had also hoped to fit all the electronics in a fanny pack, but needed to end up using a larger wearable bag. She also discovered a new user requirement - a way to turn off the lights completely when not in use. She added a long-press button to toggle on/off manually.
 
-All-in-all, Stephanie described this project as a hard build - about 8 months, on and off. It was exhausting. She took several month-long breaks due to burnout, especially becasue of things like power issues.
+All-in-all, Stephanie described this project as a hard build - about 8 months, on and off. It was exhausting. She took several month-long breaks due to burnout, especially because of things like power issues.
 
 But the end result is compelling! Audience members approaching Stephanie after the talk to ask questions served as a fantastic demo of how the neckalce performs in the real world.

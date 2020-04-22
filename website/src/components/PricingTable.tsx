@@ -259,6 +259,11 @@ const DATA: PricingItemCategory[] = [
                 plans: ENTERPRISE_PLAN,
             },
             {
+                name: 'Docker Compose deployment',
+                url: 'https://docs.sourcegraph.com/admin/install/docker-compose',
+                plans: ENTERPRISE_PLAN,
+            },
+            {
                 name: 'High-scale, high-availability cluster deployment',
                 url: 'https://docs.sourcegraph.com/admin/install/cluster',
                 plans: ENTERPRISE_PLAN,

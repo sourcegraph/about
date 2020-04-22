@@ -44,7 +44,7 @@ Majority of the talk focuses on technical mitigations for bias in data and will 
 
 ## 1. The Problem
 
-Joyce tells a story from 1961 about a man called Clyde Ross who tried to buy a home in North Lawndale, Chicago. He was a veteran who after WW II had worked for 14 years before he and his wife tried to buy a house. Unfortunately, he gets into a predatory agreement where he pays his mortgage to his seller, but Ross doesn’t get any equity. And if he misses a single payment, he forfeits the property itself. He tried to leave and get new housing but discovered he could not because of redlining.  Redlining specifically affected people of color. Joyce tells another story from 2018 where Rachelle Faroud tried to but a house in Western Philadlephia again and again and was denied despite improving her social standing.
+Joyce tells a story from 1961 about a man called Clyde Ross who tried to buy a home in North Lawndale, Chicago. He was a veteran who after WW II had worked for 14 years before he and his wife tried to buy a house. Unfortunately, he gets into a predatory agreement where he pays his mortgage to his seller, but Ross doesn’t get any equity. And if he misses a single payment, he forfeits the property itself. He tried to leave and get new housing but discovered he could not because of redlining.  Redlining specifically affected people of color. Joyce tells another story from 2018 where Rachelle Faroud tried to but a house in Western Philadelphia again and again and was denied despite improving her social standing.
 
 In 1968 the Fair Housing Act was passed to protect people from discrimination such as what Clyde Ross went through.
 

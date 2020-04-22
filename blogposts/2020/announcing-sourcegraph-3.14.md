@@ -51,13 +51,15 @@ Sourcegraph couldn't be what it is without the community
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-<div class="alert alert-info">
-  <p>
-    <strong>LEARN MORE:</strong><br />
-    <a href="https://info.sourcegraph.com/online-meetup-march-26?utm_source=blog">Online Meetup: Sourcegraph 3.14 – Thursday, March 26 at 10AM PDT | 1PM PDT</a><br />
-    <a href="https://info.sourcegraph.com/webinar-universal-code-search-power-user-apr-02?utm_source=blog">Livestream: Become a Universal Code Search power user - Thursday April 2 at 10 AM PDT | 1 PM PDT</a>
-  </p>
-</div>
+---
+
+Watch the recording of the 3.14 release livestream with Product Manager Christina Forney.
+
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://www.youtube.com/embed/2tBUzBbiZJ4" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+</p>
 
 ## Faster syncing of GitLab and Bitbucket Server repository permissions
 
@@ -74,7 +76,7 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
   <p style="text-align: center"><a href="https://vimeo.com/398759697" target="_blank">View on Vimeo</a></p>
 </p>
 
-The default setting for including forks and archived repositories in your search results has changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `forks:yes` filters to show results that include archived and forked repositories.
+The default setting for including forks and archived repositories in your search results has changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `fork:yes` filters to show results that include archived and forked repositories.
 
 ## Go to definition in PRs and simplified sign in with the browser extension
 

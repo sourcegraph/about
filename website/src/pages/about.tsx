@@ -56,24 +56,24 @@ export default class About extends React.Component<any, any> {
                                         </h1>
                                         <hr />
                                         <h2>
-                                            We believe code intelligence can help bring the future sooner.
+                                            We want everyone to be able to build software.
                                             <br />
                                         </h2>
                                         <p>
-                                            Our long-term vision is to make it so everyone, in every community, in every
-                                            country, and in every industry can create products using the best
-                                            technology. Here is what we are working on now to help this happen:
+                                            A world where everyone, not just the ~0.2% who can code today, builds
+                                            software will see faster and more broadly beneficial technological progress.
+                                            Here is what we are working on now to help this happen:
                                         </p>
                                         <ul>
-                                            <li>Make basic code intelligence ubiquitous</li>
-                                            <li>Make code review continuous and intelligent</li>
-                                            <li>Increase the amount and quality of open source code</li>
+                                            <li>Ubiquitous code intelligence</li>
+                                            <li>Better code review</li>
+                                            <li>Large-scale code change management</li>
                                         </ul>
-                                        <Link to="/plan">
+                                        <a href="/company/strategy">
                                             <button className="btn btn-primary about__plan-btn">
                                                 Read our master plan
                                             </button>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@ export default class About extends React.Component<any, any> {
                                 <div className="row align-items-center">
                                     <div className="col-md-3">
                                         <img src={craft} />
-                                    </div>                                
+                                    </div>
                                     <div className="col-md-3">
                                         <img src={redpoint} />
                                     </div>
@@ -260,10 +260,7 @@ export default class About extends React.Component<any, any> {
                                 </h1>
                                 <ul className="about__founders-board">
                                     <li className="about__founders-board-member">
-                                        <img
-                                            src={sacks}
-                                            alt="David Sacks"
-                                        />
+                                        <img src={sacks} alt="David Sacks" />
                                         <div className="p-2">
                                             <strong>David Sacks</strong>
                                             <br />

@@ -3,7 +3,6 @@ import Layout from '../../components/Layout'
 import { ContentPage } from '../../components/content/ContentPage'
 import { createHubSpotForm } from '../../components/HubSpot'
 
-
 export default ((props: any) => {
     useLayoutEffect(() => {
         createHubSpotForm({
@@ -19,7 +18,7 @@ export default ((props: any) => {
             meta={{
                 title: 'Sourcegraph: Universal code search and intelligence',
                 description: 'Download the eBook: Universal code search and intelligence',
-                image: 'https://info.sourcegraph.com/hubfs/sourcegraph-universal-code-search-ebook-social.png'
+                image: 'https://info.sourcegraph.com/hubfs/sourcegraph-universal-code-search-ebook-social.png',
             }}
         >
             <ContentPage
@@ -32,8 +31,11 @@ export default ((props: any) => {
                         <div className="row flex-wrap-reverse">
                             <div className="col-md-4">
                                 <p>By Quinn Slack and Beyang Liu</p>
-                                <p>Highly productive engineering organizations make searching across massive codebases, comprehending unfamiliar code, and sharing institutional first-order concerns. To achieve this, engineering teams require a
-                                tool that provides universal code search.</p>
+                                <p>
+                                    Highly productive engineering organizations make searching across massive codebases,
+                                    comprehending unfamiliar code, and sharing institutional first-order concerns. To
+                                    achieve this, engineering teams require a tool that provides universal code search.
+                                </p>
 
                                 <p>With this ebook, you will learn:</p>
                                 <ul>
@@ -44,7 +46,11 @@ export default ((props: any) => {
                                 </ul>
                             </div>
                             <div className="col-md-4">
-                                <img src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg" alt="Download: Universal Code Search and Intelligence" className="landing-page__img" />
+                                <img
+                                    src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
+                                    alt="Download: Universal Code Search and Intelligence"
+                                    className="landing-page__img"
+                                />
                             </div>
                             <div className="col-md-4">
                                 <h3 className="font-weight-light text-sans-serif">Get your free ebook.</h3>
@@ -52,7 +58,6 @@ export default ((props: any) => {
                                     <div id="hubspotContactForm" className="d-flex justify-center" />
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
