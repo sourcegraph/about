@@ -20,7 +20,7 @@ Here is a process that you can follow to disagree with a decision productively.
    1. Listen.
 1. Choose a course of action:
     1. Agree and commit to the decision.
-    1. Disagree and propose an alternate solution. If your proposal is not accepted, choose a different option.
+    1. Disagree and propose an alternative solution. If your proposal is not accepted, choose a different option.
     1. Disagree and commit to the decision. Document in an appropriate location (e.g., comment in the relevant Slack thread or relevant RFC) your disagreement, reasons for disagreeing, and the fact that you are committing to the decision.
     1. Disagree and perform a [clean escalation](clean_escalation.md).
 
