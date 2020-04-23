@@ -16,6 +16,10 @@ published: true
 
 With many family homes now being an office (and perhaps a school as well), we wanted a new and novel approach for embracing the spirit of the United State’s annual "[Take Our Kids to Work](https://www.daughtersandsonstowork.org/)" day.
 
+<div class="video-embed embed-responsive embed-responsive-16by9 ">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6bCO63O4swI?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+ </div>
+
 We love what we’ve come up with and hope you will too—a new digital children’s book titled "[Our ABCs: Always Be Coding](https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf)”—for all children that wonder what their techie parents do all day, night, and some weekends, too!
 
 <p class="text-center">

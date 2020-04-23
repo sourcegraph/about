@@ -1,6 +1,7 @@
 import React from 'react'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
+import { YouTube } from '../../components/YouTube'
 
 export default ((props: any) => (
     <Layout
@@ -30,7 +31,8 @@ export default ((props: any) => (
                         At Sourcegraph, many of us have young children who we’re trying to provide fun new learning
                         experiences for at home.
                     </p>
-                    <p>
+                    <YouTube id="6bCO63O4swI"/>
+                    <p className="mt-3">
                         That's why we created a new digital children’s book titled{' '}
                         <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download">
                             <strong>&quot;Our ABCs: Always Be Coding&quot;</strong>
