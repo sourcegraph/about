@@ -52,6 +52,13 @@ export default class NewsPage extends React.Component<any, any> {
                                     <h3>Press releases</h3>
                                     <ul>
                                         <li>
+                                            <a href="/blog/press-release-our-abcs-childrens-book/?ref=news">
+                                                Sourcegraph Releases Free Digital Children's Book Titled 'Our ABCs:
+                                                Always Be Coding'
+                                            </a>
+                                            <span className="news__date">April 23, 2020</span>
+                                        </li>
+                                        <li>
                                             <a href="/blog/press-release-sourcegraph-secures-series-b/?ref=news">
                                                 Sourcegraph Secures $23 Million Series B Round for Universal Code Search
                                             </a>
