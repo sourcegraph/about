@@ -42,6 +42,7 @@ export default ((props: any) => (
                         <a
                             href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download"
                             className="d-block"
+                            id="abc-dlbook"
                         >
                             <img src="/other/abcs-book/our-abcs.png" className="img-drop-shadow mb-0" width="350px" />
                             <br />
@@ -58,6 +59,7 @@ export default ((props: any) => (
                     <p className="text-center">
                         <a
                             className="button btn btn-primary"
+                            id="abc-dlbook"
                             href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download"
                         >
                             Download your copy
