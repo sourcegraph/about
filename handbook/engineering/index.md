@@ -20,6 +20,12 @@
 - [Adding buildkite secrets](adding_buildkite_secrets.md)
 - [Campaigns](campaigns.md)
 
+## Ownership of technical decisions
+
+The default owner of any technical decision is the person or team that owns the work implied by the decision. 
+
+If ownership is unclear or disputed, then perform a [clean escalation](../communication/clean_escalation.md) to determine an owner.
+
 ## [Roles and responsibilities](roles.md)
 
 - [VP Engineering](roles.md#vp-engineering)
