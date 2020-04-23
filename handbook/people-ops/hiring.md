@@ -56,3 +56,37 @@ If any interviewer is asked by a candidate for interview feedback, they may resp
 ## Respecting time
 
 Interviewing requires time and effort, both for us and for candidates. If we determine that we won't be moving forward in our hiring process before a candidate has completed all interviews, then we will cancel the remaining interviews to be respectful of both the candidate's and interviewers' time.
+
+## Referrals
+
+If there is someone out there that you would be excited to work with everyday– we encourage you to refer them! 
+
+Perhaps they are a friend or maybe they’re a friend of a friend. Perhaps they’re a former classmate or someone you worked with in the past. Maybe you posted our open roles in your social network and they decided to apply when they saw it. 
+
+We welcome referrals in all forms. However, referrals fall into two categories, depending on how actively you were involved in their decision to apply to Sourcegraph:
+
+* **First-hand referral:** A first-hand referral is someone you have personally had significant interactions with. You have met them and chatted with them on more than one occasion, specifically about opportunities at Sourcegraph. Referral bonus is USD $5,000.
+
+* **Second-hand referral:** A second-hand referral is someone that applied after having seen a job post that you made on social media or in a private group. In this case, they directly submitted an application with no additional communication. Referral bonus is USD $2,500.
+
+For both categories above, 50% of the referral bonus is paid out upon the referral’s start date, and the remaining 50% is paid out upon the referral’s 6-month anniversary. If the referral leaves Sourcegraph before that time, the second bonus payment will not be made. 
+
+(This benefit does not apply to managers or recruiters tasked with hiring for a specific role.)
+
+### How to refer someone
+
+#### Step 1: Go to the [Lever referral portal](https://hire.lever.co/referrals/new) and submit the referral form. Make sure your referral's email address matches the email address they will use in their application. (This will ensure you get the credit for the referral.)
+
+#### Step 2: Ask your referral to visit our [careers page](https://github.com/sourcegraph/careers) and submit their application.
+
+#### Step 3: Ping the scheduling coordinator to confirm their application has been marked as your referral. 
+
+#### Step 4: The scheduling coordinator or hiring manager will set up an intro call with them.
+
+### Your referral and the interview process
+
+Please note, if your referral makes it into the interview process, all feedback and information pertaining to their interviews is sensitive information and will not be dislosed to the referrer or anyone outside of the interview panel.
+
+Also, please do not help them with the interview process in any way (e.g. previewing interview questions with them, reviewing any project work), as that would give them an unfair advantage over other candidates.
+
+If you would like to inquire about the stage your referral is in within the process, you may reach out to the scheduling coordinator or hiring manager and they can provide an update on their current stage. 
