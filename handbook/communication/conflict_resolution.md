@@ -8,7 +8,7 @@
 
 Disagreements about decisions are a healthy part of team collaboration. By challenging each other individually, our team collectively discovers the best solution.
 
-When you are challenging a decision, it is important to do so in a constructive way. Failure to do so may lead to [interpersonal-conflict](#interpersonal-conflict).
+When you are challenging a decision, it is important to do so in a constructive way. Failure to do so may lead to [interpersonal conflict](#interpersonal-conflict).
 
 Here is a process that you can follow to disagree with a decision productively.
 
