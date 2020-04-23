@@ -107,6 +107,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Nick Snyder (he/him)
 
+- "Nick" rhymes with "click" and "Snyder" rhymes with "spider".
 - VP Engineering
 - Belmont, CA, USA 🇺🇸
 - [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [GitHub](https://github.com/nicksnyder), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [personal docs](nick.md)
