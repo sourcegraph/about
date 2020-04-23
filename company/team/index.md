@@ -149,6 +149,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Dan Adler (he/him)
 
+- First name is pronounced **dan**
 - VP Business
 - San Francisco, CA, USA 🇺🇸
 - [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/), [GitHub](https://github.com/dadlerj)
