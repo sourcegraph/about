@@ -33,9 +33,7 @@ The A-Z format introduces simple concepts in a fun and easy-to-understand way so
 <p class="text-center">
 <div class="blockquote case-studies__quote case-studies__quote--in-content">
   <p>
-    At Sourcegraph, many of us have young children who we’re trying to provide fun new learning experiences for at home.
-    <br/><br/>
-    We’re passionate about software development, so it’s especially exciting to break down the basics in an easy-to-understand way so that kids can get curious about coding and learn about its fundamental concepts.
+    Dinosaurs, llamas, and dump trucks are cool—but so is coding. At Sourcegraph, many of us, myself included, have young children who now see us working on the computer all day. We love software development and wrote this book as a fun way to share our passion for coding with our kids.
   </p>
   <footer class="blockquote-footer">
     Quinn Slack
