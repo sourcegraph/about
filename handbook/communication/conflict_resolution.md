@@ -28,7 +28,7 @@ Here is a process that you can follow to disagree with a decision productively.
 
 > I don't like working with $NAME because...
 
-Interpersonal conflict is neither productive nor healthy for our team. If you are having difficulties working with a teammate (or suspect a teammate is having difficulties working with you), then you should proactively work to resolve the situation by having a direct conversation with the person you are in conflict with. Nonviolent communication<sup>[1](http://www.citizenshandbook.org/nonviolent_communication.pdf), [2](https://www.nonviolentcommunication.com/pdf_files/4part_nvc_process.pdf)</sup> is a useful tool for having productive conversations.
+Interpersonal conflict is normal and natural; however, if left unresolved, it can be harmful to the health and productivity of our team. If you are having difficulties working with a teammate (or suspect a teammate is having difficulties working with you), then you should proactively work to resolve the situation by having a direct conversation with the person you are in conflict with. Nonviolent communication<sup>[1](http://www.citizenshandbook.org/nonviolent_communication.pdf), [2](https://www.nonviolentcommunication.com/pdf_files/4part_nvc_process.pdf)</sup> is a useful tool for having productive conversations.
 
 If you are unable to resolve the conflict directly with the other person, then perform a [clean escalation](clean_escalation.md).
 
