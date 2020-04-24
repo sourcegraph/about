@@ -198,6 +198,16 @@ img.icon-inline,
     margin-right: auto;
 }
 
+.img-drop-shadow {
+    max-width: calc(100% - 10px);
+    max-height: 100vh;
+    box-shadow: 0 4px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
+    margin: 40px auto;
+    display: block;
+    vertical-align: middle;
+    border-style: none;
+}
+
 code {
     background-color: #f2f4f8;
     display: inline-block;
@@ -276,5 +286,4 @@ table {
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
 @import 'components/PricingPlan';
-@import 'components/Vimeo';
 @import 'components/PrismTheme';
