@@ -1,9 +1,9 @@
 ---
-title: 'Press release: Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum'
+title: 'Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum'
 author: Sourcegraph
 publishDate: 2019-11-12T10:00-07:00
-tags: [blog]
-slug: press-release-sourcegraph-announces-new-gitlab-native-integration
+tags: [press-release]
+slug: sourcegraph-announces-new-gitlab-native-integration
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---

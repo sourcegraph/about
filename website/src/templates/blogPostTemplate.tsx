@@ -66,6 +66,8 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                 break
             case BLOGS.StrangeLoop:
                 slug = `/${BLOGS.StrangeLoop}/${slug}`
+            case BLOGS.PressReleases:
+                slug = `/${BLOGS.PressReleases}/${slug}`
             default:
                 slug = `/${BLOGS.Blog}/${slug}`
         }

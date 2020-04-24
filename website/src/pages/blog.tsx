@@ -12,6 +12,7 @@ export enum BLOGS {
     GraphQLSummit = 'graphql',
     StrangeLoop = 'strange-loop',
     Blog = 'blog',
+    PressReleases = 'press-releases'
 }
 
 export default class BlogList extends React.Component<any, any> {
