@@ -81,7 +81,7 @@ Sourcegraph follows commonly recognized best practices for updating software dep
 Customers are encouraged to update to the latest release of Sourcegraph every month. This will
 ensure that their Sourcegraph instance has the latest security-related updates. New releases are
 (published on the 20th of every month)[https://docs.sourcegraph.com/admin/updates], so customers that wish to stay up-to-date can set monthly
-calendar reminders, or subscribe to the Sourcegraph newsletter.
+calendar reminders, or (subscribe to the Sourcegraph newsletter)[https://about.sourcegraph.com/].
 
 ## How to report a security vulnerability
 
