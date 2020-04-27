@@ -1,5 +1,5 @@
-import * as React from 'react'
 import { Link } from 'gatsby'
+import * as React from 'react'
 import { ContentPage } from '../components/content/ContentPage'
 import Layout from '../components/Layout'
 import News from '../components/NewsList'
@@ -22,15 +22,17 @@ export default class NewsPage extends React.Component<any, any> {
 
     public render(): JSX.Element | null {
         const pressReleases: PressRelease[] = this.props.data.allMarkdownRemark.edges
+            // tslint:disable-next-line: no-any
             .filter((post: any) => post.node.frontmatter.published === true)
-            .map((item: any): PressRelease => {
-                return {
+            .map(
+                // tslint:disable-next-line: no-any
+                (item: any): PressRelease => ({
                     title: item.node.frontmatter.title,
                     image: item.node.frontmatter.heroImage,
                     publishDate: item.node.frontmatter.publishDate,
                     url: `/press-releases/${item.node.frontmatter.slug}`,
-                }
-            })
+                })
+            )
         return (
             <Layout location={this.props.location}>
                 <ContentPage
