@@ -74,3 +74,8 @@
 /product/code-search-navigation /product/code-discovery 301!
 /product/automation /product/code-change-management 301!
 /product/server /product 301!
+/abc /resources/abcs-book
+/resources/our-abcs-childrens-book-download https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf
+/blog/press-release-our-abcs-childrens-book /press-releases/our-abcs-childrens-book 301!
+/blog/press-release-sourcegraph-secures-series-b /press-releases/sourcegraph-secures-series-b 301!
+/blog/press-release-sourcegraph-announces-new-gitlab-native-integration /press-releases/sourcegraph-announces-new-gitlab-native-integration 301!

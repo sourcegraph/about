@@ -10,20 +10,22 @@
 # they need to (1) track down the owners using git blame and (2) update CODEOWNERS.
 * @sourcegraph/nobody
 
-/.github/CODEOWNERS sqs
+/.github/CODEOWNERS @sqs
 /handbook @sqs
 /company @sqs
 /workflow @christinaforney
 /direction @christinaforney
-/blogposts @aileenrose
-/website @aileenrose
-/docs @aileenrose
+/blogposts @sourcegraph/marketing
+/website @sourcegraph/marketing
+/docs @sourcegraph/marketing
 
 /handbook/product @christinaforney
 /handbook/design @imtommyroberts 
 /handbook/engineering @nicksnyder
 
+/handbook/engineering/campaigns @sourcegraph/campaigns
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
 /handbook/engineering/core-services @sourcegraph/core-services
 /handbook/engineering/distribution @sourcegraph/distribution
 /handbook/engineering/web @sourcegraph/web
+/handbook/marketing @sourcegraph/marketing

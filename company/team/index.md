@@ -107,6 +107,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Nick Snyder (he/him)
 
+- "Nick" rhymes with "click" and "Snyder" rhymes with "spider".
 - VP Engineering
 - Belmont, CA, USA 🇺🇸
 - [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [GitHub](https://github.com/nicksnyder), [@nickdsnyder](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [personal docs](nick.md)
@@ -243,5 +244,5 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer
 - Ibague, Colombia 🇨🇴/ Sydney, Australia 🇦🇺
 - [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [GitHub](https://github.com/davejrt)
-- Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start at a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
+- Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start as a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
 <!-- Paste *your* section above this line! -->

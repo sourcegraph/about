@@ -12,7 +12,7 @@ import { ProductFeaturesAndUseCases } from '../components/product/ProductFeature
 import { FeaturedBlogPosts, BlogPost } from '../components/FeaturedBlogPosts'
 import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { Tweets } from '../components/Tweets'
-import { Vimeo } from '../components/Vimeo'
+import { YouTube } from '../components/YouTube'
 import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
@@ -27,6 +27,13 @@ import Helmet from 'react-helmet'
  */
 const featuredPosts: BlogPost[] = [
     {
+        title: 'We made a children\'s book titled "Our "ABCs: Always Be Coding" and it\'s free to download',
+        description:
+            'We\'ve created a new digital children\'s book titled "Our ABCs: Always Be Coding”—for all children at home that wonder what their techie parents do all day, night, and some weekends, too!',
+        thumbnail: '/other/abcs-book/our-abcs.png',
+        url: '/blog/our-abcs-always-be-coding-childrens-book'
+    },
+    {
         title: 'Sourcegraph 3.15: Campaigns beta available, experimental AND/OR operators, and improved observability',
         description:
             'Read about and watch videos of the features released in Sourcegraph 3.15 on April 20, 2020. Upgrade your Sourcegraph instance today!',
@@ -39,13 +46,6 @@ const featuredPosts: BlogPost[] = [
             'Universal Code Intelligence for GitHub means bringing code navigation features such as hover tooltips, go to definition, and find references to every code view and pull request, supporting every popular language, and all public and private repositories.',
         thumbnail: '/external-logos/github-logo.svg',
         url: '/blog/universal-code-intelligence-github-sourcegraph-browser-extension'
-    },
-    {
-        title: 'Our journey to all-remote',
-        description:
-            'On February 20, 2020, we officially moved out of our amazing San Francisco office and became an all-remote company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision.',
-        thumbnail: '/blog/sf-office-mural.jpg',
-        url: '/blog/our-journey-to-all-remote'
     }
 ]
 
@@ -228,7 +228,7 @@ export default ((props: any) => (
                 <CustomerLogosSection className="py-5" />
             </div>
             <ContentSection id="demo" color="black" className="py-6">
-                <Vimeo id={353422112} muted={true} autoplay={true} loop={true} />
+                <YouTube id="GQj5jXdON3A"/>
             </ContentSection>
             <div className="bg-white text-dark py-4">
                 <div className="container">

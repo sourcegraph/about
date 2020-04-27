@@ -17,7 +17,7 @@ import { EnterpriseReadySolution } from '../../components/product/EnterpriseRead
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
-import { Vimeo } from '../../components/Vimeo'
+import { YouTube } from '../../components/YouTube'
 import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
@@ -131,11 +131,10 @@ export default ((props: any) => (
                 <CustomerLogosSection />
             </ContentSection>
             <ContentSection color="black" className="py-6">
-                {/*<ProductDemoVideo title="See how Sourcegraph code review ..." />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Better code reviews with the Sourcegraph browser extension
                 </h2>
-                <Vimeo id={340033634} />
+                <YouTube id="s5TJBLACWeQ" />
             </ContentSection>
 
             <ContentSection color="white" className="pt-5 pb-3">
