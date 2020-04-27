@@ -6,7 +6,7 @@ class Conferences extends React.Component {
         return (
             <div className="card-deck mx-auto">
                 {EventData.Conference.map((eventDetail, index) => (
-                    <div className="card col-sm-3  mx-auto event__item">
+                    <div className="card col-lg-4 event__item">
                         <img className="card-img-top img-fluid" src={eventDetail.eventImage} />
                         <div className="card-body">
                             <h6>CONFERENCE</h6>
@@ -24,7 +24,7 @@ class Conferences extends React.Component {
                     </div>
                 ))}
                 {EventData.Livestream.map((eventDetail, index) => (
-                    <div className="card col-sm-3  mx-auto event__item">
+                    <div className="card col-lg-4 event__item">
                         <img className="card-img-top img-fluid" src={eventDetail.eventImage} />
                         <div className="card-body">
                             <h6>LIVESTREAM</h6>
