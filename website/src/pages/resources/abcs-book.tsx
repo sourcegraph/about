@@ -11,14 +11,14 @@ export default ((props: any) => (
             title: "Our ABCs: Always Be Coding children's book. Made with ❤️ by Sourcegraph.",
             description:
                 'At Sourcegraph, many of us have young children who we’re trying to provide fun new learning experiences for at home. That\'s why we created a new digital children’s book titled "Our ABCs: Always Be Coding"—for all children that wonder what their techie parents do all day, night, and some weekends, too!',
-            image: 'https://about.sourcegraph.com/blog/our-abcs.png',
+            image: 'https://about.sourcegraph.com/other/abcs-book/our-abcs.png',
         }}
     >
         <ContentSection color="white" className="pt-6 pb-5">
             <div className="row justify-content-md-center">
                 <div className="col-small-12">
                     <p className="text-center">
-                        <img src="/blog/our-abcs-hero.png" />
+                        <img src="/other/abcs-book/our-abcs-hero.png" className="w-100 px-2" />
                     </p>
                     <h1 className="text-center">Our ABCs: Always Be Coding children's book</h1>
 
