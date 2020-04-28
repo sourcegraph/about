@@ -82,6 +82,7 @@ The universe of code is exploding, but to any given person, most of that univers
 
 - Sourcegraph understands the reference and dependency graph of the open-source universe and all our customers' private code. We make it easy to walk this graph (subject to the privacy constraints of our customers and users) even if you're not a professional software engineer.
 - You can see which changes to code affect you and how your changes affect others.
+- When a library changes, it's commonplace to include refactoring scripts (to update call sites) along with the change. Sourcegraph automatically propagates the suggested changes to all public and private code that depends on the library.
 - You can discover and more easily use libraries, with data about who uses them and how they're used.
 - Sourcegraph understands how the entire codebase of an organization is evolving and makes this accessible to codebase owners. The health and overall status of the codebase is no longer opaque to engineering leaders.
 
