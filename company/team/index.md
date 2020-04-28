@@ -12,7 +12,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Bio (hobbies, work experience, family, pets, etc.)
 
-
 ## Quinn Slack
 
 - [CEO](../../handbook/ceo/index.md), Co-founder, Board of Directors
@@ -245,4 +244,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Ibague, Colombia 🇨🇴/ Sydney, Australia 🇦🇺
 - [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [GitHub](https://github.com/davejrt)
 - Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start as a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
-<!-- Paste *your* section above this line! -->
+
+<!-- Paste *your* section above this line by following our template below:
+
+## Full Name (optional pronouns)
+
+- Describe how to pronounce your name
+- Role(s)
+- City, region, country, country flag emoji
+- [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
+- Bio (hobbies, work experience, family, pets, etc.)
+
+-->
