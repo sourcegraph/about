@@ -1,6 +1,7 @@
 import React from 'react'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
+import { YouTube } from '../../components/YouTube'
 
 export default ((props: any) => (
     <Layout
@@ -10,14 +11,14 @@ export default ((props: any) => (
             title: "Our ABCs: Always Be Coding children's book. Made with ❤️ by Sourcegraph.",
             description:
                 'At Sourcegraph, many of us have young children who we’re trying to provide fun new learning experiences for at home. That\'s why we created a new digital children’s book titled "Our ABCs: Always Be Coding"—for all children that wonder what their techie parents do all day, night, and some weekends, too!',
-            image: 'https://about.sourcegraph.com/blog/our-abcs.png',
+            image: 'https://about.sourcegraph.com/other/abcs-book/our-abcs.png',
         }}
     >
         <ContentSection color="white" className="pt-6 pb-5">
             <div className="row justify-content-md-center">
                 <div className="col-small-12">
                     <p className="text-center">
-                        <img src="/blog/our-abcs-hero.png" />
+                        <img src="/other/abcs-book/our-abcs-hero.png" className="w-100 px-2" />
                     </p>
                     <h1 className="text-center">Our ABCs: Always Be Coding children's book</h1>
 
@@ -30,7 +31,8 @@ export default ((props: any) => (
                         At Sourcegraph, many of us have young children who we’re trying to provide fun new learning
                         experiences for at home.
                     </p>
-                    <p>
+                    <YouTube id="6bCO63O4swI"/>
+                    <p className="mt-3">
                         That's why we created a new digital children’s book titled{' '}
                         <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download">
                             <strong>&quot;Our ABCs: Always Be Coding&quot;</strong>
@@ -42,6 +44,7 @@ export default ((props: any) => (
                         <a
                             href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download"
                             className="d-block"
+                            id="abc-dlbook"
                         >
                             <img src="/other/abcs-book/our-abcs.png" className="img-drop-shadow mb-0" width="350px" />
                             <br />
@@ -58,6 +61,7 @@ export default ((props: any) => (
                     <p className="text-center">
                         <a
                             className="button btn btn-primary"
+                            id="abc-dlbook"
                             href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download"
                         >
                             Download your copy

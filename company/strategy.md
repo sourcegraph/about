@@ -7,7 +7,12 @@ Everything we do stems from our [purpose](#purpose), to make it so **everyone ca
   - [Mission](#mission)
   - [Values](#values)
   - [Big Code](#big-code)
+- 10 years
+  - [10-year vision: democratize coding](#10-year-vision)
+- 5 years
+  - [5-year vision: democratize code](#5-year-vision)
 - 3 years
+  - [3-year vision: democratize code search](#3-year-vision)
   - [Principles](#principles)
   - [Assumptions](#assumptions)
 - 1 year
@@ -45,7 +50,7 @@ This is a new game. Companies that master this will thrive. Companies that don't
 
 ## Vision
 
-### 1-year vision {#1-year-vision}
+### 1-year vision
 
 > Problem statement: In large and complex codebases ([Big Code](#big-code)), it's hard for developers to discover, understand, and fix code.
 
@@ -55,6 +60,43 @@ Sourcegraph is the one place to find and fix things across all code.
 - It's easy to find and use this information on Sourcegraph itself and in your editor, code host, and code reviews.
 - When you need to find something in or about your code (which happens many times per day), you usually start on Sourcegraph.
 - To spread adoption of a new dev tool/practice or make a large-scale code change, you use Sourcegraph because you trust everyone uses it.
+
+### 3-year vision: democratize code search {#3-year-vision}
+
+We will make universal code search accessible to everyone.
+
+Code search is a powerful tool that becomes indispensable when you work on large, shared codebases or depend heavily on the universe of open-source code outside your organization. It's like fire––powerful and versatile and those who've seen the light can't imagine going back to the darkness. Let's bring code search down from the Mount Olympus of Tech and make it accessible to everyone, not just the 0.1% of developers who work at Google and other tech giants.
+
+- Fast code search that scales to giant codebases and the universe of open-source code.
+- Precise code navigation that makes walking the reference graph as simple as point-and-click.
+- Make large scale refactorings possible (universal search-and-replace).
+- Integrate with code hosts and code review tools to bring these developer superpowers to everywhere SWEs need to understand code.
+- Sourcegraph becomes a natural hub to distribute other dev tools, due to its extensibility and the fact that the average developer using Sourcegraph does so several times per day.
+- Sourcegraph provides analytics about what parts of the code are changing and makes this view accessible to every individual developer.
+
+### 5-year vision: democratize code {#5-year-vision}
+
+We will make the universal code graph accessible to everyone.
+
+The universe of code is exploding, but to any given person, most of that universe remains terra incognita. We will map out that universe and its graph of dependencies, references, and authorship, so that everyone can easily traverse, explore, discover, and make use of it. (Think Google vs. Yahoo.)
+
+- Sourcegraph understands the reference and dependency graph of the open-source universe and all our customers' private code. We make it easy to walk this graph (subject to the privacy constraints of our customers and users) even if you're not a professional software engineer.
+- You can see which changes to code affect you and how your changes affect others.
+- When a library changes, it's commonplace to include refactoring scripts (to update call sites) along with the change. Sourcegraph automatically propagates the suggested changes to all public and private code that depends on the library.
+- You can discover and more easily use libraries, with data about who uses them and how they're used.
+- Sourcegraph understands how the entire codebase of an organization is evolving and makes this accessible to codebase owners. The health and overall status of the codebase is no longer opaque to engineering leaders.
+
+### 10-year-vision: democratize coding {#10-year-vision}
+
+We will make it so coding is a universal skill (just like universal literacy). This requires not only making coding easier but also introducing more widely available economic incentives--letting anyone earn a living coding from anywhere in the world.
+
+As code becomes an essential part of every company and organization, more and more people can make an impact by having access to code. It will start with roles like product management and SRE that are adjacent to software engineering, but we envision a future where code becomes so critical that nearly everyone in an organization will have an interest in understanding it and modifying it. This applies to organizations of all sizes--and even individuals earning a living from libraries they wrote and shared with others who make profitable end-user products on top of them.
+
+Coding itself is a technology, and we anticipate the technology adoption curve will eventually extend to nearly everyone. (Just like everyone has adopted the "technology" of reading and writing--literacy.) Tools like Netscape Navigator and Google Web Search made the internet accessible to all, and Windows and Macintosh made desktop computing accessible to all. We will make coding accessible to all.
+
+- Sourcegraph code search supports high-level queries (e.g., `function to parse URL`, `function to marshal struct into ${INTERNAL_FORMAT}`).
+- Non-technical people can use Sourcegraph to gain an understanding of what a piece of code does and modify it. E.g., a salesperson can look up a function that encodes a piece of automation in the sales process and change it to align with updated sales priorities for the quarter.
+- Sourcegraph provides a discovery and marketplace mechanism for authors of useful shared libraries to distribute and make a living off of novel source code and algorithms.
 
 ## Principles
 
