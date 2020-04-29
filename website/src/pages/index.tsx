@@ -160,7 +160,7 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Sourcegraph',
+            title: 'Sourcegraph: Universal Code Search',
             description:
                 'Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search.',
             image: 'https://info.sourcegraph.com/hubfs/sourcegraph_logo.png',
