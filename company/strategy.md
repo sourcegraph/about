@@ -56,7 +56,7 @@ This is a new game. Companies that master this will thrive. Companies that don't
 
 Sourcegraph is the one place to find and fix things across all code.
 
-- Sourcegraph knows most everything that can be known about your code (code structure, Git metadata, build, code hosts, runtime metrics, code reviews, docs, issues, project management, etc.).
+- Sourcegraph knows almost everything that can be known about your code (code structure, Git metadata, build, code hosts, runtime metrics, code reviews, docs, issues, project management, etc.).
 - It's easy to find and use this information on Sourcegraph itself and in your editor, code host, and code reviews.
 - When you need to find something in or about your code (which happens many times per day), you usually start on Sourcegraph.
 - To spread adoption of a new dev tool/practice or make a large-scale code change, you use Sourcegraph because you trust everyone uses it.
