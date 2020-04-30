@@ -18,6 +18,7 @@
 /blogposts @sourcegraph/marketing
 /website @sourcegraph/marketing
 /docs @sourcegraph/marketing
+/docs/security.md @sourcegraph/security
 
 /handbook/product @christinaforney
 /handbook/design @imtommyroberts 
@@ -27,5 +28,6 @@
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
 /handbook/engineering/core-services @sourcegraph/core-services
 /handbook/engineering/distribution @sourcegraph/distribution
+/handbook/engineering/security @sourcegraph/security
 /handbook/engineering/web @sourcegraph/web
 /handbook/marketing @sourcegraph/marketing
