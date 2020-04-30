@@ -11,6 +11,8 @@ Build and deliver Universal Code Search to all developers.
 
 ## Project Leads
 
+The search team has divided the responsibilities of a [Project Lead](../roles.md#project-lead) between two members.
+
 #### Technical lead: [Keegan](https://github.com/keegancsmith)
 
 The technical lead is responsible for:
