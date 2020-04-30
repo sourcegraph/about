@@ -18,7 +18,6 @@
 /blogposts @sourcegraph/marketing
 /website @sourcegraph/marketing
 /docs @sourcegraph/marketing
-/docs/security.md @sourcegraph/security
 
 /handbook/product @christinaforney
 /handbook/design @imtommyroberts 
