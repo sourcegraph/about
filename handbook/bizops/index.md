@@ -2,6 +2,9 @@
 
 The Business Operations (BizOps) team is responsible for [translating business goals (strategy) into tactical operations (execution)](https://medium.com/business-startup-development-and-more/why-your-startup-also-needs-a-bizops-team-5d2e7d436a0).
 
+- Finance(#finance-and-reporting)
+- [Analytics](#analytics)
+
 # Finance and reporting
 
 ## Sources of truth
