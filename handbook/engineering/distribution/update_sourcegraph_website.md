@@ -8,7 +8,7 @@ The configuration has been moved to git repository to ensure all changes are tra
 
 ### Access the deployment repo for sourcegraph.com
 
-THe first step is to navigate to the deployment [repository](https://github.com/sourcegraph/deploy-sourcegraph-dot-com) for sourcegraph.com. This repo can be edited on github or cloned for local development. *If developing locally create a feature branch before making your edits.
+THe first step is to navigate to the deployment [repository](https://github.com/sourcegraph/deploy-sourcegraph-dot-com) for sourcegraph.com. This repo can be edited on github or cloned for local development. *If developing locally create a feature branch before making your edits.*
 
 The json config can be found in the `sourcegraph-frontend.ConfigMap.yaml` located in `base/frontend/sourcegraph-frontend.ConfigMap.yaml`.
 
