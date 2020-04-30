@@ -16,7 +16,7 @@ Make Sourcegraph secure by design.
 
 ## How we respond to security vulnerability reports
 
-When we receive [a report of a security vulnerability](https://about.sourcegraph.com/security#how-to-report-a-security-vulnerability), a member of the [@sourcegraph/security](https://github.com/orgs/sourcegraph/teams/security) team determines if a reported vulnerability should be investigated by an engineer.
+When we receive [a report of a security vulnerability](https://about.sourcegraph.com/security#how-to-report-a-security-vulnerability), a member of our security team determines if a reported vulnerability should be investigated by an engineer.
 
 - If so, a member of our security team will [file a vulnerability report in sourcegraph/security-issues](https://github.com/sourcegraph/security-issues/issues/new/choose) and follow the checklist in the issue template.
 
