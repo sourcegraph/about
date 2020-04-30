@@ -10,7 +10,7 @@ Make Sourcegraph secure by design.
 - #security channel Slack.
 - [@sourcegraph/security](https://github.com/orgs/sourcegraph/teams/security) on GitHub.
 
-## How to report a security vulnerability to Sourcegraph
+## How to report a security vulnerability to us
 
 [Follow these instructions](https://about.sourcegraph.com/security#how-to-report-a-security-vulnerability).
 
