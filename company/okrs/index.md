@@ -13,8 +13,8 @@ Our OKRs are public:
 
 [Objectives and Key Results (OKRs)](https://en.wikipedia.org/wiki/OKR) is a specific way of setting goals that we use at Sourcegraph.
 
-- For each goal (called an OKR), you state an **objective** (what you're aiming to do) and **key results** (how you'll measure success toward the objective).
-- OKRs form a "tree". We have a few broad company-level OKRs. Each company-level OKR has many sub-OKRs, for teams whose work contributes up to the company-level OKR. This codifies why/how each team's work is important to the company.
+- For each goal (called an OKR), you state an **objective** (what you're aiming to do) and **key results** (how success of the objective is measured).
+- OKRs form a tree structure. We have a few broad company-level OKRs. Each company-level OKR has many sub-OKRs, for teams whose work contributes up to the company-level OKR. This codifies why/how each team's work is important to the company.
 - We are not yet doing personal OKRs company-wide. This document is only about company and team OKRs. (Some people are experimenting with personal OKRs with their manager. If that works well, we may expand it, and this page will be updated.)
 
 Our OKR practices are heavily inspired by [GitLab's OKR practices](https://about.gitlab.com/company/okrs/).
@@ -46,24 +46,26 @@ We set OKRs for each quarter. The (rough) schedule for setting OKRs for an upcom
 
 ### Format
 
-> This is based on the [GitLab OKR format](https://about.gitlab.com/company/okrs/#format).
+> This is based on the [GitLab OKR format](https://about.gitlab.com/company/okrs/#format) (as of 2019).
 
-Each OKR has the following format:
+OKRs have the following format:
 
 ```
 1. **Title or team: Objective as 1 sentence.**
-   1. Title or team KR: Key result. => Outcome.
-   1. Title or team KR: Key result. => Outcome.
-   1. Title or team KR: Key result. => Outcome.
+   KR: Key result. => Outcome.
+   KR: Key result. => Outcome.
+   KR: Key result. => Outcome.
+   1. **Title or team: Objective as 1 sentence.**
+      KR: Key result. => Outcome.
+      KR: Key result. => Outcome.
+      KR: Key result. => Outcome.
 ```
 
 1. The `Title or team` is the title (e.g., `CEO` or `VP Engineering`) of the person who is directly responsible or the name of the team responsible.
-   - OKRs are nested. If you or your team helps with an existing KR, add your OKR underneath it. See [example GitLab OKRs](https://about.gitlab.com/company/okrs/fy21-q1/) to see what this looks like.
-   - The first 2 levels of OKRs all have a directly responsible individual. Deeper levels can have teams. (For functions where we don't yet have a management structure in place, we may violate this.)
-1. The `Objective as 1 sentence.` is a pithy, informal summary of the objective, not an exhaustive and precise definition or description of the implementation. Each objective is indicated in bold, and is nested in line with the key results for it's parent objective. For example:
+1. The bold `Objective as 1 sentence.` is a pithy, informal summary of the objective, not an exhaustive and precise definition or description of the implementation. For example:
    - Good: `Automate time-consuming ops and support tasks.`
    - Bad: `Write scripts for headless browser testing of release grid items and update sourcegraph/sourcegraph and sourcegraph/deploy-sourcegraph CI pipelines to execute these scripts.`
-1. The `Title or team KR: Key result.` is a list of 1-3 key results that have precise definitions.
+1. The `KR: Key result.` is a list of 1-3 key results that are measurable. The objective and key results should be statable in a sentence of the form, "I will \<objective\> as measured by \<key results\>."
    - Quantitative key results are ideal, but if they aren't appropriate for the objective, don't try to force it. Instead, choose a key result that is clear in its reliance on someone's judgment.
    - If a key result has a complex definition (more than a few words), link to a handbook page with the precise definition instead of inlining it in the OKR list.
    - Key results can be links to issues or [RFCs](../../handbook/communication/rfcs/index.md).
@@ -71,8 +73,8 @@ Each OKR has the following format:
      - Good (quantitative): `$M IARR`, `100% of monthly releases ship on time`
      - Good (human judgment): `Support LSIF-based code intel in targeted languages (Go, JavaScript/TypeScript, Python, Java, C#, and C/C++)` because quantitatively defining this has proven to be unproductive
      - Bad: `Create an effective pitch for Fortune 500 prospects` because "effective" is not defined and different people are likely to have a wide variety of opinions about what it means
+1. Objectives form a tree structure, rolling up to top-level CEO OKRs for the entire company. KRs should not partake in the tree structure. For example, do not make an objective a child of another role's key result.
 1. The `=> Outcome.` part is only added/updated after the quarter starts.
-1. Top-level CEO OKRs may just be short phrases (such as `IARR`) instead of listing out key results when those key results would be redundant with the sub-OKRs.
 
 ### Sensitive information
 

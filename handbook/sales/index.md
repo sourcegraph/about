@@ -13,7 +13,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 - [All deals (HubSpot)](https://app.hubspot.com/contacts/2762526/deals/board/view/all/)
 - [Transactions](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=0)
-- [FY20 plan](https://docs.google.com/spreadsheets/d/15FVyPrA9O3LtSwJ6mpbgyr7BWKJjWwUnWnw5lM7CItA/edit#gid=1071026049)
+- [FY20 plan](https://docs.google.com/spreadsheets/d/1EkZ7O69-2jbgtacoFDrY8L6rP73Hlqp_syyVCnmGAFA/edit#gid=1071026049)
 - [Looker dashboard](https://sourcegraph.looker.com/browse/boards/2)
 
 ## How sales works with other Sourcegraph teams
@@ -139,7 +139,7 @@ Different customers and deals have different needs from our sales team. We segme
 
 This page describes how we use HubSpot to maintain high data quality. This allows us to increase the effectiveness of all Sourcegraph teams through accurate insights.
 
-Account Executives are responisble for maintaining HubSpot as a [source of truth](https://about.sourcegraph.com/handbook/communication#sources-of-truth). The data is synced between HubSpot and Looker every weekend so this data must be updated (at least) by end of day Friday.
+Account Executives are responsible for maintaining HubSpot as a [source of truth](https://about.sourcegraph.com/handbook/communication#sources-of-truth). The data is synced between HubSpot and Looker every weekend so this data must be updated (at least) by end of day Friday.
 
 ### Associating contacts to deals
 

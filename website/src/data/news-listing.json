@@ -1,6 +1,27 @@
 {
   "y2020": [
     {
+      "newsSource": "SDxCentral",
+      "newsTitle": "Money Moves: March 2020",
+      "newsDate": "April 12, 2020",
+      "newsLink": "https://www.sdxcentral.com/articles/news/money-moves-march-2020/2020/04/",
+      "newsImage": "/external-logos/sdx-central-logo.svg"
+    },
+    {
+      "newsSource": "Anchor.fm",
+      "newsTitle": "Podcast: Universal code search with Sourcegraph (starts 16:35)",
+      "newsDate": "April 9, 2020",
+      "newsLink": "https://anchor.fm/theweeklysqueak/episodes/Universal-code-search-with-Sourcegraph---Civilization--Lockdowns--and-AmigaOS-eciok5",
+      "newsImage": "/external-logos/anchor-logo.png"
+    },
+    {
+      "newsSource": "Database Trends and Applications",
+      "newsTitle": "Startups to Watch in 2020: Sourcegraph",
+      "newsDate": "April 8, 2020",
+      "newsLink": "http://www.dbta.com/Editorial/Trends-and-Applications/Startups-to-Watch-in-2020-139682.aspx",
+      "newsImage": "/external-logos/databasetrendsapp-logo.jpg"
+    },
+    {
       "newsSource": "InfoQ",
       "newsTitle": "Code Search Now Available to Browse Google's Open-Source Projects",
       "newsDate": "April 8, 2020",

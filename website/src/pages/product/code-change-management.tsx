@@ -11,7 +11,7 @@ import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { Vimeo } from '../../components/Vimeo'
+import { YouTube } from '../../components/YouTube'
 import {
     RequestCodeChangeManagementDemoAction,
     RequestCodeChangeManagementDemoActionNow,
@@ -120,7 +120,7 @@ export default ((props: any) => (
                     </div>
                 </ContentSection>
                 <h2 className="text-center display-4 mb-3 mt-4">
-                    How code&nbsp;change&nbsp;campaigns help teams move quickly and safely
+                    Code&nbsp;change&nbsp;campaigns help teams move quickly and safely
                 </h2>
                 <div className="row mt-4">
                     <div className="col-lg-4 mb-4">
@@ -225,7 +225,7 @@ export default ((props: any) => (
                         repositories.
                     </p>
                 </div>
-                <Vimeo id={390882141} muted={false} className="mt-4" />
+                <YouTube id="g6e9Fdk-T1g" className="mt-4" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />

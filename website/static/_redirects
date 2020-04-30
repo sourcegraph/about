@@ -67,6 +67,7 @@
 /go/sourcegraph-liveblogging-at-gophercon-2018-go /blog/sourcegraph-liveblogging-at-gophercon-2018 301!
 /go/go-in-debian /go/gophercon-2018-go-in-debian/ 301!
 /go/grpc-in-production  /go/grpc-in-production-alan-shreve/ 301!
+/plan /company/strategy 301!
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/code-alerts-automation /product/code-change-management 301!
@@ -76,3 +77,8 @@
 /solutions/developer-onboarding /product 301!
 /solutions/developer-workflow-tooling-integrations /product 301!
 /solutions/incident-response /product 301!
+/abc /resources/abcs-book
+/resources/our-abcs-childrens-book-download https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf
+/blog/press-release-our-abcs-childrens-book /press-releases/our-abcs-childrens-book 301!
+/blog/press-release-sourcegraph-secures-series-b /press-releases/sourcegraph-secures-series-b 301!
+/blog/press-release-sourcegraph-announces-new-gitlab-native-integration /press-releases/sourcegraph-announces-new-gitlab-native-integration 301!

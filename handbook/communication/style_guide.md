@@ -17,6 +17,9 @@ The goal of this style guide is to help us all achieve these goals when writing.
 - Use the most popular US English spelling and phrasing.
 - Prefer the serial comma in lists, except where ambiguity would be introduced by including it.
 - No spaces between two terms separated by a slash ("a/b", not "a / b").
+- Placing a comma after "e.g." and "i.e." is neither required nor forbidden. Both of these are OK:
+  - I like fruit (e.g. apples, bananas, oranges)
+  - I like fruit (e.g., apples, bananas, oranges)
 
 ### Clarity
 
@@ -41,15 +44,15 @@ Assume the reader is a busy non-native English speaker.
 ### Referring to the product and features
 
 - Sourcegraph: main product, prefer using this name unless you need to be more precise
-  - Self-hosted Sourcegraph instance: only if clarification between the Sourcegraph.com instance, managed instances, and on-premises instances is required
-  - Managed Sourcegraph instance: only if clarification between the Sourcegraph.com instance, self-hosted instances, and managed instances is required
-  - Sourcegraph.com: the public instance of Sourcegraph for open source code at https://sourcegraph.com
-  - Sourcegraph integrations: the general term for our integrations
-    - Sourcegraph['s] Phabricator integration
-    - Sourcegraph['s] GitHub integration
-    - Sourcegraph['s] browser extensions
-      - Sourcegraph['s] Chrome extension
-      - Sourcegraph['s] Firefox add-on
+- Self-hosted Sourcegraph instance: only if clarification between the Sourcegraph.com instance, managed instances, and on-premises instances is required
+- Managed Sourcegraph instance: only if clarification between the Sourcegraph.com instance, self-hosted instances, and managed instances is required
+- Sourcegraph.com (note the capital `S`): the public instance of Sourcegraph for open source code at https://sourcegraph.com
+- Sourcegraph integrations: the general term for our integrations
+  - Sourcegraph['s] Phabricator integration
+  - Sourcegraph['s] GitHub integration
+  - Sourcegraph['s] browser extensions
+    - Sourcegraph['s] Chrome extension
+    - Sourcegraph['s] Firefox add-on
 
 When referring to the build result of the open source repository, use the name Sourcegraph OSS.
 

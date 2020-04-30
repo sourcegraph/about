@@ -47,7 +47,8 @@ Arguments:
 
 In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
 
-- [ ] Wait for Renovate to open a PR to update the image tags and merge that PR ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/199) and Renovate could merge it automatically).
+- [ ] Wait for Renovate to open a PR named **"Update Sourcegraph Docker images"** and merge that PR ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/199) and note Renovate may have merged it automatically).
+- [ ] Wait for Renovate to open a PR named **"Update Sourcegraph Prometheus / Grafana Docker images"** and merge that PR (note Renovate may have merged it automatically).
 - [ ] Cherry-pick the image tag update commits from `master` onto `$MAJOR.$MINOR` branch. Then push the release tag:
     ```
     git checkout $MAJOR.$MINOR
@@ -64,5 +65,6 @@ In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
   ```
   yarn run release release:publish $MAJOR.$MINOR.$PATCH
   ```
+- [ ] Cherry pick the release-publishing PR from sourcegraph/sourcegraph@master into the release branch.  
 - [ ] Create a new section for the patch version in the changelog. Verify that all changes that have been cherry picked onto the release branch have been moved to this section of the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) on `master`.
 - [ ] Post a reply in the #dev-announce thread to say that the release is complete.

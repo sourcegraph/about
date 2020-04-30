@@ -159,7 +159,7 @@ Line printers print line by line with a very limited character set.
 Example of a drum of a line printer.
 Really fast and really loud.
 
-These graphcis were made with a language called "ART 1", made by Katherine Nash and Richard Williams at
+These graphics were made with a language called "ART 1", made by Katherine Nash and Richard Williams at
 University of New Mexico. The graphics are made by printing 2 blocks of simple characters on top of each other.
 They were EBCDIC characters, these days we have something similar with ASCII.
 
