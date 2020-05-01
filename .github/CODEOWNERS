@@ -27,5 +27,6 @@
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
 /handbook/engineering/core-services @sourcegraph/core-services
 /handbook/engineering/distribution @sourcegraph/distribution
+/handbook/engineering/security @sourcegraph/security
 /handbook/engineering/web @sourcegraph/web
 /handbook/marketing @sourcegraph/marketing
