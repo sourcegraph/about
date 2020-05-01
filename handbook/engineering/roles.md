@@ -1,10 +1,10 @@
-# Roles on the Engineering team
+# Roles on the engineering team
 
 This page lists the roles on the Engineering team and some of the responsibilities for each of the roles.
 
-## Software Engineer
+## Software engineer
 
-Software Engineers are individual contributors who build software to satisfy the needs of the business.
+Software engineers are individual contributors who build software to satisfy the needs of the business.
 
 ### Responsibilities
 
@@ -15,9 +15,9 @@ Software Engineers are individual contributors who build software to satisfy the
 - Help your teammates by empathetically [reviewing code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
 - Interview candidates and suggest improvements to our hiring process.
 
-## Project Lead
+## Project lead
 
-Project Leads are Software Engineers that lead a specific project team to achieve its goals. They are torch carriers that champion a project. This role is an additional set of responsibilities that any engineer may take on once they demonstrate the necessary skills.
+Project leads are Software Engineers that lead a specific project team to achieve its goals. They are torch carriers that champion a project. This role is an additional set of responsibilities that any engineer may take on once they demonstrate the necessary skills.
 
 While Project Leads need to have strong technical skills, they are not necessarily the most technically experienced engineer on the team. People and organizational skills are as important as technical know-how, so that Project Leads can effectively coordinate and align with others.
 
@@ -37,9 +37,9 @@ Some teams with more experienced members may need less guidance in certain areas
 - Mentor and coach other teammates with timely feedback as appropriate in order to uphold team values and help them grow.
 - Collaborate with Engineering Managers to ensure team mates have everything they need to succeed and deliver on the goals of the team.
 
-## Engineering Manager
+## Engineering manager
 
-Engineering Managers are people managers who build teams of [Software Engineers](#software-engineer) to satisfy the needs of the business.
+Engineering managers are people managers who build teams of [Software Engineers](#software-engineer) to satisfy the needs of the business.
 
 ### Responsibilities
 
@@ -51,7 +51,7 @@ Engineering Managers are people managers who build teams of [Software Engineers]
 - Interview candidates and own making improvements to our hiring process.
 - Review applications and make final hiring decisions for candidates interested in your team.
 
-## VP Engineering
+## VP engineering
 
 ### Responsibilities
 
@@ -70,13 +70,13 @@ Switching between an individual contributor role and a people management role (o
 5. The IC sets up [1-1s](../leadership/1-1.md) with their new reports and the IC's manager continues their 1-1s with these reports (but may reduce the candence).
 6. Throughout the trial period the IC and the IC's manager discuss whether the trial is on track for success (and if not, what corrective actions can be taken).
 7. After the trial period is over the IC's manager decides if the trial was a success.
-  - Questions to consider:
-    - Is the IC happy in the new role?
-    - Are the IC's direct reports happy?
-    - Is the IC's manager happy?
-  - Outcomes:
-    - If the trial was not a success then revert back to the previous state.
-    - If the trial was a success then the IC is now a people manager and we can move forward with adding more direct reports in the future.
+    - Questions to consider:
+      - Is the IC happy in the new role?
+      - Are the IC's direct reports happy?
+      - Is the IC's manager happy?
+    - Outcomes:
+      - If the trial was not a success then revert back to the previous state.
+      - If the trial was a success then the IC is now a people manager and we can move forward with adding more direct reports in the future.
 
 ### People manager to individual contributor
 
