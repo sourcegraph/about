@@ -80,14 +80,26 @@ Sourcegraph follows commonly recognized best practices for updating software dep
 
 Customers are encouraged to update to the latest release of Sourcegraph every month. This will
 ensure that their Sourcegraph instance has the latest security-related updates. New releases are
-(published on the 20th of every month)[https://docs.sourcegraph.com/admin/updates], so customers that wish to stay up-to-date can set monthly
-calendar reminders, or (subscribe to the Sourcegraph newsletter)[https://about.sourcegraph.com/].
+[published on the 20th of every month](https://docs.sourcegraph.com/admin/updates), so customers that wish to stay up-to-date can set monthly calendar reminders, or subscribe to Sourcegraph emails to receive the following updates:
+
+<p class="text-center">
+  <!--[if lte IE 8]>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+    portalId: "2762526",
+    formId: "0ff99031-7caf-433a-8aef-8c9345948288"
+  });
+  </script>
+</p>
 
 ## How to report a security vulnerability
 
 If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 1 business day to acknowledge that we received them and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling).
 
-We provide monetary rewards, up to $10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers<sup>*</sup> impacted, the difficulty of exploiting the vulnerability, and the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit.
+We provide monetary rewards, up to \$10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers<sup>\*</sup> impacted, the difficulty of exploiting the vulnerability, and the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit.
 
 \* A **customer** is defined as a paid user of Sourcegraph. Please note that there are currently no paying customers on sourcegraph.com because sourcegraph.com only hosts public code and is free to use. As such, an issue that impacts all **users** on sourcegraph.com doesn't necessarily impact any **customers**.
 
