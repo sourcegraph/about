@@ -79,4 +79,4 @@ We love all-remote, but it doesn't work for everyone (just like an open-office f
 
 We are committed to supporting all our teammates to help them be successful. Check out our [tips for working remotely](https://about.sourcegraph.com/company/remote/tips).
 
-If you have any questions about all-remote teams, join us during [our Developer Meetup on Tuesday, April 7 2020 at 10:00 AM PDT](https://info.sourcegraph.com/online-meetup-april-7), and I will be happy to answer them.
+If you have any questions about all-remote teams, join us during [our Developer Meetup on Tuesday, May 7 2020 at 10:00 AM PDT](https://info.sourcegraph.com/online-meetup-may-7?utm_source=blog), and I will be happy to answer them.
