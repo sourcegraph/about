@@ -101,8 +101,8 @@ feasible set of work with clear lines of ownership.
   role you take in planning should depend on your read of the team at the start of planning. Common
   pitfalls are being too passive or too dictatorial. Too passive means we aren't necessarily working
   on the right things. Too dictatorial means people aren't bought into what we're working on. Avoid
-  both of these. Keep in mind that no one (not even you) has a monopoly on useful knowledge and
-  context, but also that you are the project lead for a reason.
+  both of these. Keep in mind that no one (including you) has a monopoly on useful knowledge and
+  context, but also that the project lead exists for a reason.
 
 ### Retrospective
 
