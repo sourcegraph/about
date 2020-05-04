@@ -1,6 +1,27 @@
 {
   "y2020": [
     {
+      "newsSource": "The Enterprisers Project",
+      "newsTitle": "How to lead remote development teams: 4 tips",
+      "newsDate": "May 1, 2020",
+      "newsLink": "https://enterprisersproject.com/article/2020/5/how-lead-remote-dev-teams",
+      "newsImage": "/external-logos/enterprisers-project-logo.png"
+    },
+    {
+      "newsSource": "TechStrong TV",
+      "newsTitle": "Podcast: Interview Quinn Slack (starts 1:21:20)",
+      "newsDate": "April 29, 2020",
+      "newsLink": "https://www.youtube.com/watch?v=XEr-_RpmgDI&t=4887",
+      "newsImage": "/external-logos/techstrong-tv-logo.png"
+    },
+    {
+      "newsSource": "The Server Side",
+      "newsTitle": "Consider these developer volunteer opportunities during COVID-19",
+      "newsDate": "April 23, 2020",
+      "newsLink": "https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Consider-these-developer-volunteer-opportunities-during-COVID-19",
+      "newsImage": "/external-logos/serverside-logo.png"
+    },
+    {
       "newsSource": "SDxCentral",
       "newsTitle": "Money Moves: March 2020",
       "newsDate": "April 12, 2020",
