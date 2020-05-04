@@ -80,5 +80,17 @@ Sourcegraph follows commonly recognized best practices for updating software dep
 
 Customers are encouraged to update to the latest release of Sourcegraph every month. This will
 ensure that their Sourcegraph instance has the latest security-related updates. New releases are
-(published on the 20th of every month)[https://docs.sourcegraph.com/admin/updates], so customers that wish to stay up-to-date can set monthly
-calendar reminders, or (subscribe to the Sourcegraph newsletter)[https://about.sourcegraph.com/].
+[published on the 20th of every month](https://docs.sourcegraph.com/admin/updates), so customers that wish to stay up-to-date can set monthly calendar reminders, or subscribe to Sourcegraph emails to receive the following updates:
+
+<p class="text-center">
+  <!--[if lte IE 8]>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+    portalId: "2762526",
+    formId: "0ff99031-7caf-433a-8aef-8c9345948288"
+  });
+  </script>
+</p>
