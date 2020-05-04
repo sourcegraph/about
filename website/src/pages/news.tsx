@@ -1,9 +1,15 @@
+import { Link } from 'gatsby'
 import * as React from 'react'
-import Helmet from 'react-helmet'
-import { ContentSection } from '../components/content/ContentSection'
+import { ContentPage } from '../components/content/ContentPage'
 import Layout from '../components/Layout'
 import News from '../components/NewsList'
 
+interface PressRelease {
+    title: string
+    image: string
+    publishDate: string
+    url: string
+}
 // tslint:disable-next-line: no-any
 export default class NewsPage extends React.Component<any, any> {
     // tslint:disable-next-line: no-any
@@ -14,97 +20,113 @@ export default class NewsPage extends React.Component<any, any> {
         }
     }
 
-    public componentDidMount(): void {
-        if (document) {
-            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none')
-        }
-    }
-
     public render(): JSX.Element | null {
-        const desc = 'The latest Sourcegraph news and press releases.'
+        const pressReleases: PressRelease[] = this.props.data.allMarkdownRemark.edges
+            // tslint:disable-next-line: no-any
+            .filter((post: any) => post.node.frontmatter.published === true)
+            .map(
+                // tslint:disable-next-line: no-any
+                (item: any): PressRelease => ({
+                    title: item.node.frontmatter.title,
+                    image: item.node.frontmatter.heroImage,
+                    publishDate: item.node.frontmatter.publishDate,
+                    url: `/press-releases/${item.node.frontmatter.slug}`,
+                })
+            )
         return (
             <Layout location={this.props.location}>
+                <ContentPage
+                    title="Sourcegraph in the news"
+                    description="The latest Sourcegraph news and press releases"
                 >
-                <Helmet>
-                    <title>Sourcegraph - News</title>
-                    <meta name="twitter:title" content="Sourcegraph in the news" />
-                    <meta property="og:title" content="Sourcegraph in the news" />
-                    <meta name="twitter:site" content="@srcgraph" />
-                    <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
-                    <meta name="twitter:card" content="summary" />
-                    <meta name="twitter:description" content={desc} />
-                    <meta property="og:description" content={desc} />
-                    <meta name="description" content={desc} />
-                </Helmet>
-                <div className="news bg-white text-dark">
-                    <section>
-                        <div>
-                            <ContentSection color="purple" className="hero-section text-center py-5">
-                                <h1>Sourcegraph in the news</h1>
-                                <p className="news__head-description">The latest news and press releases.</p>
-                            </ContentSection>
-                        </div>
-                    </section>
-                    <section>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col mt-5 mb-5 ">
-                                    <h3>Press releases</h3>
-                                    <ul>
-                                        <li>
-                                            <a href="/blog/press-release-our-abcs-childrens-book/?ref=news">
-                                                Sourcegraph Releases Free Digital Children's Book Titled 'Our ABCs:
-                                                Always Be Coding'
-                                            </a>
-                                            <span className="news__date">April 23, 2020</span>
-                                        </li>
-                                        <li>
-                                            <a href="/blog/press-release-sourcegraph-secures-series-b/?ref=news">
-                                                Sourcegraph Secures $23 Million Series B Round for Universal Code Search
-                                            </a>
-                                            <span className="news__date">March 3, 2020</span>
-                                        </li>
-                                        <li>
-                                            <a href="/blog/press-release-sourcegraph-announces-new-gitlab-native-integration/?ref=news">
-                                                New GitLab Native Integration, Universal Code Search Engine, and Amazing
-                                                Company Momentum
-                                            </a>
-                                            <span className="news__date">November 12, 2019</span>
-                                        </li>
-                                    </ul>
+                    <div className="news bg-white text-dark">
+                        <section>
+                            <div className="container">
+                                <div className="row justify-content-start">
+                                    <div className="col-sm-10 col-lg-10">
+                                        <h2 className="py-4">Press releases</h2>
+                                        {pressReleases.map(({ title, image, publishDate, url }, i: number) => (
+                                            <div className="row mb-4 news__item">
+                                                <div className="col-sm-3 col-lg-2 text-center">
+                                                    <img
+                                                        className="news__image"
+                                                        src={image}
+                                                        style={{ maxWidth: '100px' }}
+                                                    />
+                                                </div>
+                                                <div className="col-sm-9 col-lg-10 align-self-center">
+                                                    <p>
+                                                        <Link to={url} rel="nofollow" key={i} className="d-block">
+                                                            {title}
+                                                        </Link>
+                                                        <span className="news__date ml-0">{publishDate}</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="container">
-                            <div className="row justify-content-start">
-                                <div className="col-sm-10 col-lg-10">
-                                    <h3>News</h3>
-                                    <News></News>
+                            <div className="container">
+                                <div className="row justify-content-start">
+                                    <div className="col-sm-10 col-lg-10">
+                                        <h2>News</h2>
+                                        <News></News>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="container">
-                            <div className="row justify-content-md-center">
-                                <div className="col mt-5">
-                                    <h3>Media contact</h3>
-                                    <p>
-                                        Tanya Carlsson
-                                        <br />
-                                        Offleash PR for Sourcegraph
-                                        <br />
-                                        <a href="mailto:tanya@offleashpr.com">tanya@offleashpr.com</a>
-                                        <br />
-                                        <a href="tel:+17075296139">+1 707-529-6139</a>
-                                        <br />
-                                        &nbsp;
-                                    </p>
+                            <div className="container">
+                                <div className="row justify-content-md-center">
+                                    <div className="col mt-5">
+                                        <h3>Media contact</h3>
+                                        <p>
+                                            Tanya Carlsson
+                                            <br />
+                                            Offleash PR for Sourcegraph
+                                            <br />
+                                            <a href="mailto:tanya@offleashpr.com">tanya@offleashpr.com</a>
+                                            <br />
+                                            <a href="tel:+17075296139">+1 707-529-6139</a>
+                                            <br />
+                                            &nbsp;
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </div>
+                        </section>
+                    </div>
+                </ContentPage>
             </Layout>
         )
     }
 }
+
+export const pageQuery = graphql`
+    query PressReleases {
+        allMarkdownRemark(
+            filter: { frontmatter: { tags: { in: "press-release" } } }
+            sort: { fields: [frontmatter___publishDate], order: DESC }
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        heroImage
+                        author
+                        tags
+                        publishDate(formatString: "MMMM D, YYYY")
+                        slug
+                        description
+                        published
+                    }
+                    html
+                    excerpt(pruneLength: 300)
+                    fields {
+                        slug
+                    }
+                }
+            }
+        }
+    }
+`

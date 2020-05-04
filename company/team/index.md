@@ -12,12 +12,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Bio (hobbies, work experience, family, pets, etc.)
 
-
 ## Quinn Slack
 
 - [CEO](../../handbook/ceo/index.md), Co-founder, Board of Directors
 - San Francisco, CA, USA 🇺🇸
-- [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com), [@sqs](https://twitter.com/sqs), [LinkedIn](https://www.linkedin.com/in/quinnslack)
+- [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com), [@sqs](https://twitter.com/sqs), [LinkedIn](https://www.linkedin.com/in/quinnslack), [he](http://pronoun.is/he)
 - Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
 
 ## Beyang Liu
@@ -244,5 +243,16 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer
 - Ibague, Colombia 🇨🇴/ Sydney, Australia 🇦🇺
 - [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [GitHub](https://github.com/davejrt)
-- Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start at a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
-<!-- Paste *your* section above this line! -->
+- Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start as a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
+
+<!-- Paste *your* section above this line by following our template below:
+
+## Full Name (optional pronouns)
+
+- Describe how to pronounce your name
+- Role(s)
+- City, region, country, country flag emoji
+- [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
+- Bio (hobbies, work experience, family, pets, etc.)
+
+-->

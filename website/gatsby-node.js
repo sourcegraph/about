@@ -81,8 +81,10 @@ exports.createPages = ({ actions, graphql }) => {
           if (node.fileAbsolutePath) {
             const slug = node.fields.slug
             const absPath = node.fileAbsolutePath
-            if (absPath.includes('/blogposts') && node.frontmatter.published === true) {
-              // Create blog post pages. Only create pages for blog posts where published === true is set.
+            if (
+              (absPath.includes('/blogposts')) &&
+              node.frontmatter.published === true
+            ) {
               if (node.frontmatter.tags && node.frontmatter.tags.includes('blog')) {
                 createPage({
                   path: `/blog/${slug}`,
@@ -91,7 +93,16 @@ exports.createPages = ({ actions, graphql }) => {
                     fileSlug: slug,
                   },
                 })
-              } else if (
+              } else if (node.frontmatter.tags && node.frontmatter.tags.includes('press-release')) {
+                createPage({
+                  path: `/press-releases/${slug}`,
+                  component: PostTemplate,
+                  context: {
+                    fileSlug: slug,
+                  },
+                })
+              }
+              else if (
                 node.frontmatter.tags &&
                 (node.frontmatter.tags.includes('gophercon') || node.frontmatter.tags.includes('dotGo'))
               ) {

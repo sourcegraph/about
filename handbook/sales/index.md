@@ -13,7 +13,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 - [All deals (HubSpot)](https://app.hubspot.com/contacts/2762526/deals/board/view/all/)
 - [Transactions](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=0)
-- [FY20 plan](https://docs.google.com/spreadsheets/d/15FVyPrA9O3LtSwJ6mpbgyr7BWKJjWwUnWnw5lM7CItA/edit#gid=1071026049)
+- [FY20 plan](https://docs.google.com/spreadsheets/d/1EkZ7O69-2jbgtacoFDrY8L6rP73Hlqp_syyVCnmGAFA/edit#gid=1071026049)
 - [Looker dashboard](https://sourcegraph.looker.com/browse/boards/2)
 
 ## How sales works with other Sourcegraph teams
@@ -41,6 +41,14 @@ New [IARR](#iarr) is IARR from *new customers* (i.e., organizations that were **
 Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations that were already customers at the beginning of the period).
 
 If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
+
+### Booking
+
+A booking is when a customer commits to pay us money. This includes when:
+
+- A new customer just started paying self-service or signed a contract
+- An existing customer (depending on their contract) takes an action that increases the amount of revenue we will earn from them (such as growing usage or using more premium features)
+- An existing customer renews (including when the renewal is for the same ARR as the previous period)
 
 ### Customer
 
