@@ -6,7 +6,7 @@
   - [How we use RFCs](../communication/rfcs/index.md)
 - [Code reviews](code_reviews.md)
 - Programming guides
-  - [Go](languages/go_style_guide.md)
+  - [Go](languages/go.md)
   - [TypeScript](languages/typescript.md)
 - [Testing](testing.md)
 - [Product documentation](product_documentation.md)
