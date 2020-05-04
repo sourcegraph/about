@@ -61,7 +61,7 @@ For the most popular languages, the new language extensions are enabled by defau
 
 [See it in action on Sourcegraph.com:](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
 
-[![Basic code intelligence for all languages](./announcing-sourcegraph-3.0/basic_code_intel.png)](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
+[![Basic code intelligence for all languages](/blog/announcing-sourcegraph-3.0/basic_code_intel.png)](https://sourcegraph.com/github.com/python/cpython@3607ef43c4a1a24d44f39ff54a77fc0af5bfa09a/-/blob/Lib/json/__init__.py#L110:20&tab=references)
 
 ### Search query cheatsheet
 
@@ -71,7 +71,7 @@ But when you're searching more than a couple times daily, learning Sourcegraph's
 
 [Try it out](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller) (click the <kbd>?</kbd> next to the search button):
 
-[![Search query cheatsheet](./announcing-sourcegraph-3.0/search_query_cheatsheet.png)](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
+[![Search query cheatsheet](/blog/announcing-sourcegraph-3.0/search_query_cheatsheet.png)](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller)
 
 ### More Sourcegraph extension APIs
 
@@ -119,11 +119,11 @@ The new [management console](https://docs.sourcegraph.com/admin/management_conso
 
 The [management console](https://docs.sourcegraph.com/admin/management_console) runs on a separate port (2633 by default) and is protected by strong, randomly generated password that is visible only in the site admin area:
 
-![Management console password is shown in site admin](./announcing-sourcegraph-3.0/management_console_password.png)
+![Management console password is shown in site admin](/blog/announcing-sourcegraph-3.0/management_console_password.png)
 
 Use this password to authenticate to `https://sourcegraph.example.com:2633` (using your actual hostname instead). Be sure to use `https` (and note that it uses a self-signed certificate that you will need to trust on first use). Once you're in, you can edit critical configuration (with validation and autocompletion):
 
-![Management console](./announcing-sourcegraph-3.0/management_console.png)
+![Management console](/blog/announcing-sourcegraph-3.0/management_console.png)
 
 ### Deploy to more kinds of clusters
 
@@ -159,7 +159,7 @@ Because this is a [Sourcegraph extension](https://docs.sourcegraph.com/extension
 
 For example, if your code records the time it takes to respond to queries, this extension makes it easy to jump to the query response time statistics from your code:
 
-![Line of code with Datadog metrics link](./announcing-sourcegraph-3.0/datadog_metrics.png)
+![Line of code with Datadog metrics link](/blog/announcing-sourcegraph-3.0/datadog_metrics.png)
 
 ## Documentation
 

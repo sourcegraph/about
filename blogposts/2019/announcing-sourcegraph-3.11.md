@@ -87,11 +87,11 @@ In the rare event that your Sourcegraph instance is misconfigured and causes the
 
 Recent Sourcegraph versions [introduced standardized Prometheus and Grafana monitoring](https://about.sourcegraph.com/blog/sourcegraph-3.8) bundled with Sourcegraph. Sourcegraph 3.11 introduces a new set of dashboards and high-level health metrics that make it easier to understand the health of your Sourcegraph instance at a glance:
 
-![Health monitoring overview screenshot](images/3-11-monitoring-overview.png "Health monitoring overview")
+![Health monitoring overview screenshot](/blog/3-11-monitoring-overview.png "Health monitoring overview")
 
 These dashboards are built using a new set of combinatorial alerting metrics we have introduced for each service. These allow site admins to measure the number of critical and warning-class alerts their Sourcegraph instance is facing:
 
-![Health monitoring alerts screenshot](images/3-11-monitoring-alerts.png "Health monitoring alerts")
+![Health monitoring alerts screenshot](/blog/3-11-monitoring-alerts.png "Health monitoring alerts")
 
 Alerting can be configured easily through these metrics, so admins can get Email, Slack, PagerDuty, ([and many more](https://grafana.com/docs/grafana/latest/alerting/notifications/)) alerts when an instance is unhealthy.
 

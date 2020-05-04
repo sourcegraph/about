@@ -54,7 +54,7 @@ There are two configuration steps:
 
 ## 30% indexed search latency improvement for small and medium instances
 
-![chart showing 30% improvement of search latency](images/3.6-search-latency.png "30% improvement of search latency")
+![chart showing 30% improvement of search latency](/blog/3.6-search-latency.png "30% improvement of search latency")
 
 We have improved our search algorithm's performance and reduced peak memory usage. Our benchmarks show that the **99th percentile latency** of indexed searches in small to medium instances (less than 3000 repositories) **is reduced by up to 30%**. We will be continuing work to further benchmark and optimize Sourcegraph for our customers with 30,000+ repositories.
 
@@ -129,7 +129,7 @@ Now, entire groups of repositories such as those containing secrets, can be excl
 
 Our remote-first team from around the world is coming together at GopherCon next week. We are looking forward to seeing our friends in the Go community, so make sure to find us while you’re there! You can find a Sourcegrapher by spotting someone wearing one of these hoodies:
 
-![Sourcegraph GopherCon hoodie](images/3.6-gophercon-hoodie.jpg "Sourcegraph GopherCon hoodie")
+![Sourcegraph GopherCon hoodie](/blog/3.6-gophercon-hoodie.jpg "Sourcegraph GopherCon hoodie")
 
 ## 3.6 Changelog
 

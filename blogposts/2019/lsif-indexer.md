@@ -33,7 +33,7 @@ Our units of data are locations in input source files. The cursor is at one loca
 
 Why do we need fullfledged parsing to extract this data? Consider the Jsonnet file in Listing 1.
 
-![listingOne](lsif-indexer-files/listingOne.png)
+![listingOne](/blog/lsif-indexer-files/listingOne.png)
 Listing 1.
 
 There are many locations where the string "foo" appears. Even if we separate the input into proper tokens (which eliminates "call\_foo" and "call\_method\_foo" as locations for identifier "foo"), we would still struggle to establish the correct relationships between all the locations where the identifier "foo" appears. 
@@ -57,7 +57,7 @@ local bar = 5;
 
 will result in this AST:
 
-![ast](lsif-indexer-files/ast.png)
+![ast](/blog/lsif-indexer-files/ast.png)
 
 The leaf nodes correspond to tokens, and the non-leaf nodes correspond to rules in the grammar. The text in a non-leaf node in the diagram above shows which rule corresponds to the subtree rooted in that node. For example, the "expr:LocalBind" node corresponds to the LocalBind alternative in the expr rule (line 43 in the [grammar file](https://github.com/sourcegraph/lsif-jsonnet/blob/master/Jsonnet.g4)).
 
@@ -71,10 +71,9 @@ We have to write the [listener](https://github.com/sourcegraph/lsif-jsonnet/blob
 
 So what is the useful information from the parsed abstract syntax tree that we need? To figure this out, let's go back to Listing 1. Each occurrence of the identifier "foo" happens within a scope, a region of the whole program. The figure below shows the scopes of Listing 1. The scopes form a tree, the file scope is the parent scope and certain language constructs activate additional scopes, such as a function parameter scope or an inner object scope. For each reference of "foo" we can find its definition by looking in the tree path of active scopes. If no definition is found in a scope, we look in its parent and so on all the way to the file scope. We are interested in these bindings from reference to definition (the curvy lines in the figure connecting the "foo"'s).
 
-![scopes](lsif-indexer-files/scopes.png)
+![scopes](/blog/lsif-indexer-files/scopes.png)
 
-
-![scope_tree](lsif-indexer-files/scopes_tree.png)
+![scope_tree](/blog/lsif-indexer-files/scopes_tree.png)
 Tree hierarchy of scopes for Listing 1.
 
 We need to:
@@ -157,12 +156,12 @@ _Note: Because of our choice of Jsonnet as the language we are analyzing, our pa
 
 Before we export to LSIF, we should look and understand the LSIF data format. We have seen in the introduction that the units of data are locations in files and the relationships between them. As a whole, these elements form a graph. LSIF captures this graph by listing the nodes and edges in this graph as a sequence of JSON objects. The best way to illustrate this is by working through an example. Consider again the Jsonnet snippet:
 
-![snippet](lsif-indexer-files/snippet.png)
+![snippet](/blog/lsif-indexer-files/snippet.png)
 
 The two locations of interest are (1, 7) where "bar" is defined and (4, 10) where "bar" is used.
 For the definition, we need to generate the following subgraph:
 
-![def-graph](lsif-indexer-files/def-graph.png)
+![def-graph](/blog/lsif-indexer-files/def-graph.png)
 
 The three nodes are:
 
@@ -174,13 +173,13 @@ The _resultSet_ node will be connected to the definition and all the use nodes b
 
 For the reference, we add one more node to this subgraph making it as follows:
 
-![use-graph](lsif-indexer-files/use-graph.png)
+![use-graph](/blog/lsif-indexer-files/use-graph.png)
 
 That is basically it. These subgraphs get created for each definition, and reference, and then connected together by document nodes that, in turn, are connected to a project node.
 
 Since the snippet above is a valid Jsonnet program, we can generate the real LSIF graph:
 
-![lsif-snippet](lsif-indexer-files/lsif-snippet.png)
+![lsif-snippet](/blog/lsif-indexer-files/lsif-snippet.png)
 
 _Note: Locations are zero-based in the real LSIF graph. Also, each node has a unique ID, which allows us to specify the edges connecting them._
 

@@ -67,7 +67,7 @@ Upon upgrading, Sourcegraph will seamlessly & automatically re-index repositorie
 
 ## Search performance, efficiency, and reliability improvements
 
-![search speed comparison](images/3.7-symbol-search-comparison.png "search speed comparison")
+![search speed comparison](/blog/3.7-symbol-search-comparison.png "search speed comparison")
 
 As we continue to make incremental improvements, Sourcegraph search is getting faster, more efficient, and more reliable across the board. In Sourcegraph 3.7:
 
@@ -100,7 +100,7 @@ In Sourcegraph 3.5 [we introduced the ability to do a multi-line search in](http
 
 ## Language extensions get icons
 
-![extension registry](images/3.7-extension-icons.png "extension registry")
+![extension registry](/blog/3.7-extension-icons.png "extension registry")
 
 Icons have been added to the language extensions in the extension registry, and will soon be added to the external service extensions, such as Codecov and Sentry.
 

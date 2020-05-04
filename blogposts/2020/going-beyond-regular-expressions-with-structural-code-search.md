@@ -37,7 +37,7 @@ In practice we use _parsing_ to interpret and convert syntax for nested
 expressions like `{...}` into trees, which encode richer structural properties
 than the textual representation.
 
-![Nested expressions figure](images/structural-search-nested-expressions.png) Figure 1: Nested
+![Nested expressions figure](/blog/structural-search-nested-expressions.png) Figure 1: Nested
 expressions can expand inside code blocks. Parsing converts nested expressions
 into tree data structures.
 
@@ -121,7 +121,7 @@ the code base!
 
 Structural search can also identify patterns to clean up. For example, one [cleanup patch](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1fbc9f46a024535d95c3d5f136901decd86b109e) in the kernel looks like this:
 
-![Linux clean up patch](images/structural-search-linux-cleanup-patch.png)
+![Linux clean up patch](/blog/structural-search-linux-cleanup-patch.png)
 
 Here's a query to easily find more of these patterns:
 

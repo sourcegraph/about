@@ -1,8 +1,48 @@
-const _ = require('lodash')
+/**
+ * This file is responsible for programatically creating pages from data such as markdown files.
+ *
+ * Refer to https://www.gatsbyjs.org/tutorial/part-seven/ for relevant documentation.
+ */
+
 const parseFilePath = require('parse-filepath')
 const path = require('path')
 const slugify = require('slugify')
 
+/** onCreateNode creates Gatsby nodes from markdown files. Nodes are queryable via GraphQL in other parts of the app.*/
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  let slug
+  switch (node.internal.type) {
+    case `MarkdownRemark`:
+      const fileNode = getNode(node.parent)
+      if (fileNode.relativePath) {
+        const parsedFilePath = parseFilePath(fileNode.relativePath)
+        const name = node.frontmatter.title
+        const slugified = slugify(name)
+
+        if (parsedFilePath.name !== `index` && node.frontmatter.slug && !node.frontmatter.permalink) {
+          // For markdown files that don't specify a permalink but have a slug, use the slug.
+          slug = `${node.frontmatter.slug}`
+        } else if (parsedFilePath.name !== `index` && !node.frontmatter.permalink) {
+          // For markdown files that don't specify a slug or permalink, use the slugified file name.
+          slug = `/${slugified}/`
+        } else if (parsedFilePath.name !== `index` && node.frontmatter.permalink) {
+          // For markdown files with a permalink, use the permalink.
+          slug = node.frontmatter.permalink
+        } else {
+          // If there's no permalink, and the file is called index.md, use the directory name as the slug.
+          slug = `/${parsedFilePath.dirname}/`
+        }
+      }
+      break
+  }
+  if (slug) {
+    // Add a field called "slug" to the node.
+    createNodeField({ node, name: `slug`, value: slug })
+  }
+}
+
+/** Generate pages from the markdown nodes we created in onCreateNode. */
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -104,33 +144,4 @@ exports.createPages = ({ actions, graphql }) => {
       })
     )
   })
-}
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  let slug
-  switch (node.internal.type) {
-    case `MarkdownRemark`:
-      const fileNode = getNode(node.parent)
-      if (fileNode.relativePath) {
-        const parsedFilePath = parseFilePath(fileNode.relativePath)
-        const name = node.frontmatter.title
-        const slugified = slugify(name)
-        if (parsedFilePath.name !== `index` && parsedFilePath.dirname !== '' && !node.frontmatter.permalink) {
-          slug = `/${parsedFilePath.dirname}/${slugified}/`
-        } else if (parsedFilePath.name !== `index` && node.frontmatter.slug && !node.frontmatter.permalink) {
-          slug = `${node.frontmatter.slug}`
-        } else if (parsedFilePath.name !== `index` && !node.frontmatter.permalink) {
-          slug = `/${slugified}/`
-        } else if (parsedFilePath.name !== `index`) {
-          slug = node.frontmatter.permalink
-        } else {
-          slug = `/${parsedFilePath.dirname}/`
-        }
-      }
-      break
-  }
-  if (slug) {
-    createNodeField({ node, name: `slug`, value: slug })
-  }
 }
