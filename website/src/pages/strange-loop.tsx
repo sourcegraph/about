@@ -28,7 +28,7 @@ export default class GoList extends React.Component<any, any> {
                     <h1>{metaProps.title}</h1>
                 </section>
                 <div className="gray-9 bg-white text-dark">
-                    <BlogPosts blogType="go" posts={strangeLoopPosts} />
+                    <BlogPosts blogType="strange-loop" posts={strangeLoopPosts} />
                 </div>
             </Layout>
         )
