@@ -20,7 +20,6 @@
 /docs @sourcegraph/marketing
 
 /handbook/product @christinaforney
-/handbook/design @imtommyroberts 
 /handbook/engineering @nicksnyder
 
 /handbook/engineering/campaigns @sourcegraph/campaigns
@@ -29,4 +28,6 @@
 /handbook/engineering/distribution @sourcegraph/distribution
 /handbook/engineering/security @sourcegraph/security
 /handbook/engineering/web @sourcegraph/web
+/handbook/engineering/languages/go.md @sourcegraph/core-services
+/handbook/engineering/languages/typescript.md @sourcegraph/web
 /handbook/marketing @sourcegraph/marketing
