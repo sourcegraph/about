@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
-import { PricingFreeTierPopoverButton } from '../components/PricingFreeTierPopover'
 import { PricingPlan } from '../components/PricingPlan'
 import { PricingTable } from '../components/PricingTable'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
@@ -84,7 +83,7 @@ export default ((props: any) => (
                                 ]}
                                 plusEverythingIn="Free"
                                 buttonLabel="Start a trial"
-                                buttonHref="http://about.sourcegraph.com/contact/request-demo/?form_submission_source=pricing-enterprise"
+                                buttonHref="http://about.sourcegraph.com/contact/request-trial/?form_submission_source=pricing-enterprise"
                             />
                         </div>
                         <div className="col-6 col-md-3 mx-auto mb-4">
@@ -103,7 +102,7 @@ export default ((props: any) => (
                                 ]}
                                 plusEverythingIn="Enterprise"
                                 buttonLabel="Start a trial"
-                                buttonHref="http://about.sourcegraph.com/contact/request-demo/?form_submission_source=pricing-enterprise-plus"
+                                buttonHref="http://about.sourcegraph.com/contact/request-trial/?form_submission_source=pricing-enterprise-plus"
                             />
                         </div>
                         <div className="col-6 col-md-3 mx-auto mb-4">
@@ -148,7 +147,7 @@ export default ((props: any) => (
                 <h2>Try Sourcegraph Enterprise Plus risk-free for 30 days</h2>
                 <Link
                     className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
-                    to="/contact/request-demo/?form_submission_source=pricing-free-trial-banner"
+                    to="/contact/request-trial/?form_submission_source=pricing-free-trial-banner"
                 >
                     Free trial
                 </Link>
