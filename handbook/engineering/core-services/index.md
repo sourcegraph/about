@@ -24,4 +24,4 @@ Go, Postgres, Redis, Docker, Kubernetes.
 
 ## Processes
 
-We do [weekly checkins](../../product/tracking_issues.md#using-a-tracking-issue-for-progress-check-ins) and [planning](../../product/tracking_issues.md#planning-a-milestone-with-a-tracking-issue) with [tracking issues](../../product/tracking_issues.md).
+We do [weekly check-ins](../../product/tracking_issues.md#using-a-tracking-issue-for-progress-check-ins) and [planning](../../product/tracking_issues.md#planning-a-milestone-with-a-tracking-issue) with [tracking issues](../../product/tracking_issues.md).
