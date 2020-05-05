@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import { ContentPage } from '../components/content/ContentPage'
 import Layout from '../components/Layout'
