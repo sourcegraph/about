@@ -34,7 +34,7 @@ There are a number of ways to affect how the workload section of a tracking issu
 
 #### Ordering
 
-The generated work load can be re-ordered manually in the GitHub UI and that ordering will be preserved when the tracking issue is updated.
+The generated workload can be re-ordered manually in the GitHub UI and that ordering will be preserved when the tracking issue is updated.
 
 #### Labels
 
