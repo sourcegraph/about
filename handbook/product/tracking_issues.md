@@ -44,7 +44,7 @@ These are the standard labels you can use to refine how each work item in the tr
 - **customer**: Important issues reported or desired by a customer will be displayed with the 👩 emoji. If the issue body includes a Hubspot link to the customer's profile, then the emoji will be linked to it. If you have the Sourcegraph browser extension installed with *Experimental link previews* enabled and have authorized Hubspot's domain for it, then the customer's name will show up next to the emoji.
 - **spike**: Time boxed investigation tasks meant to facilitate more granular planning will be displayed with the 🕵️ emoji.
 - **bug**: An error, flaw or fault that produces an incorrect or unexpected result, or behavior. These will be displayed with the 🐛 emoji.
-- **debt**: Technical debt issues will be displayed with the 🧶emoji.
+- **debt**: Technical debt issues will be displayed with the 🧶 emoji.
 - **estimate/$Nd**: A rough day level estimate of the task will be displayed alongside the emojis and summed up to a total workload in days that is displayed next to the teammate's GitHub handle.
 
 Apart from these standard labels, you can display any label inline (e.g. `perf`) by explicitly allowing it. This is done by adding a `<!-- LABEL: $YOUR_LABEL_NAME -->` comment to the tracking issue body outside the `<!-- BEGIN WORK-->` and `<-- END WORK -->` section which is reserved for the generated workloads.
