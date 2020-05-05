@@ -17,7 +17,7 @@ You can take a look at [examples of open tracking issues](https://github.com/sou
 
 ## Creating a Tracking issue
 
-1. Create a new GitHub issue with the [Tracking issue template](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=tracking&template=tracking_issue.md&title=%24TEAM%3A+%24MILESTONE+Tracking+issue).
+1. Create a new GitHub issue with the [tracking issue template](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=tracking&template=tracking_issue.md&title=%24TEAM%3A+%24MILESTONE+Tracking+issue).
 1. Give it the **"$THING_BEING_TRACKED: Tracking Issue"** title.
 1. Assign it to the right milestone, creating such milestone if it doesn't yet exist.
 1. Ensure the **tracking** label is set as well as the other labels you want to track. Issues and Pull Requests with those labels will show up in the tracking issue.
