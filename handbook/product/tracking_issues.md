@@ -53,7 +53,7 @@ Apart from these standard labels, you can display any label inline (e.g. `perf`)
 
 Pull requests, if labeled and milestoned correctly, will show up in their author's workload. They can be easily spotted by looking for the <img src="https://github.githubassets.com/images/icons/emoji/shipit.png" height=20 width=20/> emoji. Additionally, if a pull request's body contains the issue number (i.e. #1234) that it relates to, the it will show up under that issue as a nested list item.
 
-## Planning a milestone with a Tracking issue
+## Planning a milestone with a tracking issue
 
 Planning happens in the last week of the previous milestone.
 
