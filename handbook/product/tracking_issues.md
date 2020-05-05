@@ -41,7 +41,7 @@ The generated workload can be re-ordered manually in the GitHub UI and that orde
 These are the standard labels you can use to refine how each work item in the tracking issue looks. You can add any number of these labels to an issue or pull request.
 
 - **roadmap**: Issues related to work planned in our roadmap will be displayed the 🛠 emoji.
-- **customer**: Important issues reported or desired by a customer will be displayed with the 👩 emoji. If the issue body includes a Hubspot link to the customer's profile, then the emoji will be linked to it. If you have the Sourcegraph extension installed with *Experimental link previews* enabled and authorized the Hubspot's domain for it, then the customer's name will show up next to the emoji.
+- **customer**: Important issues reported or desired by a customer will be displayed with the 👩 emoji. If the issue body includes a Hubspot link to the customer's profile, then the emoji will be linked to it. If you have the Sourcegraph browser extension installed with *Experimental link previews* enabled and have authorized Hubspot's domain for it, then the customer's name will show up next to the emoji.
 - **spike**: Time boxed investigation tasks meant to facilitate more granular planning will be displayed with the 🕵️ emoji.
 - **bug**: An error, flaw or fault that produces an incorrect or unexpected result, or behavior. These will be displayed with the 🐛 emoji.
 - **debt**: Technical debt issues will be displayed with the 🧶emoji.
