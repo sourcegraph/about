@@ -63,7 +63,7 @@ Planning a team's milestone happens in the last week of the previous milestone.
 1. Make adjustments to the planned work with the team based on the feedback from the review.
 1. Add the `planned/$MILESTONE` label to all planned issues. This is used to track what work was originally planned, even if it gets deprioritized during the milestone.
 
-All planned work items are meant to be finished in the iteration. If this doesn't happen, it is either due to unknown unknowns or lack of estimating accuracy. While we cannot work on the former, we can on the latter — over time, we aim to estimate better.
+All planned work items are meant to be finished in the iteration. If this doesn't happen, it is either due to unknown unknowns or poor estimating accuracy. While we cannot work on the former, we can improve the latter — over time, we aim to estimate better.
 
 Teammates should be conservative by picking an estimate somewhere in between the median case and worst case scenarios, not best case. The higher someone's level of experience with the issue being estimated as well as estimation itself, the closer the estimate can be to the best case scenario. The opposite is also true.
 
