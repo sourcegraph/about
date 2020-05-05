@@ -145,7 +145,7 @@ export default ((props: any) => (
                                 beforeCampaignsFragment={
                                     <span className="text-muted pl-4 small mt-4">Available add-ons:</span>
                                 }
-                                buttonLabel="Get a demo"
+                                buttonLabel="Contact us"
                                 buttonClassName="btn-outline-primary"
                                 buttonHref="https://about.sourcegraph.com/contact/request-demo/?form_submission_source=pricing-enterprise"
                             />
