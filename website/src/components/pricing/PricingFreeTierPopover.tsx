@@ -1,6 +1,6 @@
 import QuestionMarkCircleOutlineIcon from 'mdi-react/QuestionMarkCircleOutlineIcon'
 import React from 'react'
-import { HoverablePopover } from './HoverablePopover'
+import { HoverablePopover } from '../HoverablePopover'
 
 const PricingFreeTierPopoverBody: React.FunctionComponent<any> = () => (
     <div className="p-3">
