@@ -63,7 +63,13 @@ Use this section to debug ping abnormalities (from top to bottom).
 
 1. BigQuery: Query the [update_checks error records](https://console.cloud.google.com/bigquery?sq=839055276916:62219ea9d95d4a49880e661318f419ba) and/or [check the latest pings received](https://console.cloud.google.com/bigquery?sq=839055276916:3c6a5282e66a4f0fac1b958305d7b197) based on installer email admin. 
 1. Dataflow: Review [Dataflow](https://console.cloud.google.com/dataflow/jobs/us-central1/2020-02-05_10_31_47-13247700157778222556?project=telligentsourcegraph&organizationId=1006954638239): WriteSuccessfulRecords should be full of throughputs and the Failed/Error jobs should be empty of throughputs. 
-1. Stackdriver: [Check the frontend logs](https://console.cloud.google.com/logs/viewer?project=sourcegraph-dev&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fdot-com%2Fnamespace_name%2Fprod%2Fcontainer_name%2Ffrontend), which contain all pings that come through Sourcegraph.com. 
+1. Stackdriver (log viewer): [Check the frontend logs](https://console.cloud.google.com/logs/viewer?project=sourcegraph-dev&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fdot-com%2Fnamespace_name%2Fprod%2Fcontainer_name%2Ffrontend), which contain all pings that come through Sourcegraph.com. 
+
+	resource.type="k8s_container"
+	resource.labels="dot-com"
+	resource.labels.cluster_name="prod"
+	resource.labels.container_name="frontend"
+	"[COMPANY]" AND "updatecheck"
 	
 ## Data tools
 
