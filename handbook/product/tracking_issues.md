@@ -57,7 +57,7 @@ Pull requests, if labeled and milestoned correctly, will show up in their author
 
 Planning happens in the last week of the previous milestone.
 
-1. [Open a new Tracking issue](#creating-a-tracking-issue) with the appropriate `team/$TEAM` label and the right milestone.
+1. [Open a new tracking issue](#creating-a-tracking-issue) with the appropriate `team/$TEAM` label and the right milestone.
 1. Ask all members of the team through appropriate channels to create or assign issues to this milestone. When possible, issues should be estimated with the appropriate `estimate/$DAYS` label.
 1. Once everyone's ready, have the tracking issue reviewed by relevant parties (e.g. product team, VP of Engineering).
 1. Make adjustments to the planned work with the team based on the feedback from the review.
