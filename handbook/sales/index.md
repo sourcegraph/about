@@ -8,6 +8,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Sales interviews](interviews/index.md)
 - [Recording lead and customer emails, calls, and notes](records.md)
 - [Creating and maintaining license keys for customers](license_keys.md)
+- [Contract negotiations](contracts.md)
 
 ## Pipeline, data, and models
 
@@ -21,6 +22,10 @@ The Sales team represents us and our values to customers, bringing back dollars 
 ### [Customer support](../support/index.md)
 
 - [How to request support (for customers)](../support/index.md#how-to-get-support-for-customers)
+
+### Legal
+
+- [Negotiating legal terms in contracts](contracts.md)
 
 ## Definitions
 
