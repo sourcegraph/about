@@ -2,7 +2,7 @@
 
 Sourcegraph is an all-remote company, which means:
 
-- All teammates are encouraged to work remotely. Sourcegraph provides a budget for home offices or office spaces to employees as needed.
+- All teammates are encouraged to work remotely. Sourcegraph provides a budget for home offices or office spaces to teammates as needed.
 - We use our business office address in San Francisco to provide a mailing address, for corporate filings, and on-site workspaces as legally required.
 - We work asynchronously across time zones and continents.
   - Teammates are responsible for setting their own work hours and marking them in Google Calendar.
