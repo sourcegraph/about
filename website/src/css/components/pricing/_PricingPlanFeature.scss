@@ -1,0 +1,18 @@
+.pricing-plan-feature {
+    &__value-true {
+    }
+    &__icon-true {
+        color: var(--success);
+    }
+
+    &__value-false {
+        color: #7e7e7e;
+    }
+    &__icon-false {
+        visibility: hidden;
+    }
+
+    &__help {
+        color: #ccc;
+    }
+}

@@ -21,13 +21,13 @@ export default class TrialPage extends React.Component<any, any> {
         })
     }
     public render(): JSX.Element | null {
-        const desc = 'Get your team started with a free trial of Sourcegraph.'
+        const desc = 'Contact us to learn more about Sourcegraph enterprise.'
         return (
             <Layout location={this.props.location} minimal={true}>
                 <Helmet>
-                    <title>Sourcegraph - Signup for a free trial</title>
-                    <meta name="twitter:title" content="Signup for a free trial of Sourcegraph" />
-                    <meta property="og:title" content="Signup for a free trial of Sourcegraph" />
+                    <title>Sourcegraph - Contact us to learn more about Sourcegraph enterprise.</title>
+                    <meta name="twitter:title" content="Contact us to learn more about Sourcegraph enterprise." />
+                    <meta property="og:title" content="Contact us to learn more about Sourcegraph enterprise." />
                     <meta name="twitter:site" content="@srcgraph" />
                     <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
                     <meta name="twitter:card" content="summary" />
@@ -40,9 +40,10 @@ export default class TrialPage extends React.Component<any, any> {
                     <div className="container-lg py-6 px-5">
                         <div className="row">
                             <div className="col-md-6">
-                                <h1 className="display-4">Signup for a free trial</h1>
+                                <h1 className="display-4">Contact us</h1>
                                 <h3 className="font-weight-light text-sans-serif">
-                                    To start your free Sourcegraph trial, tell us a bit about yourself.
+                                    Meet with a product specialist to learn more about Sourcegraph enterprise or get
+                                    started with a free trial.
                                 </h3>
                                 <div className="form mt-5">
                                     <div id="hubspotRequestTrialForm" className="d-flex justify-center" />

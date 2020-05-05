@@ -38,7 +38,7 @@ Company meeting is an effective way to:
 ## Agenda
 
 1. Introduce any new team members starting this week
-   - The manager of the team member presents a brief (~30-second) intro, stating the new team member's role, why we hired them, what their first project is, and a fun fact about them. The new team member also has a chance to say hello and share a fun fact about themselves.
+   - The manager of the team member presents a brief (~30-second) intro, stating the new team member's role, why we hired them, and what their first project is  (if known). Then the manager should pass it off to the new team member to say hello and share a fun fact about themselves.
 1. Birthdays/anniversaries
 1. Inspiration of the week (message @dan to volunteer to present an inspiration)
 1. [#thanks](team_chat.md#thanks) summary
@@ -56,3 +56,15 @@ Company meeting is an effective way to:
    - Just add a slide and write what you'll say in the speaker notes.
 1. Q&A about anything Sourcegraph-related
    - [Submit a question anonymously](https://docs.google.com/forms/d/e/1FAIpQLSeiyIU67N_0m3xNBV-pONnVAGuBPsKQ_w-ZxtS-g8ZLWX--Ew/viewform?usp=sf_link)
+
+## Recordings
+
+> We haven't automated this process yet. One possible solution would be to automatically copy Zoom recordings to Google Drive.
+
+@sqs will post the company meeting recording in #general after the meeting finishes. If @sqs is not working on a given day or if he forgets, here is the process:
+
+1. Go to https://zoom.us/recording/management (as a Zoom admin)
+1. Next to the correct item (Topic: `Company meeting`), press `Share...`.
+1. In the dialog, select `Share this recording: Publicly` and ensure `Password protection` is on.
+1. Press `Copy sharing information to clipboard`.
+1. Paste in #general on Slack.

@@ -57,6 +57,6 @@ If possible, we provide access to the slides beforehand, making it easier to ext
 
 Our remote-first team from around the world is coming together at GopherCon next week. We are looking forward to seeing our friends in the Go community, so make sure to find us while you're there! You can find a Sourcegrapher by spotting someone wearing one of these hoodies:
 
-![Sourcegraph GopherCon hoodie](images/3.6-gophercon-hoodie.jpg "Sourcegraph GopherCon hoodie")
+![Sourcegraph GopherCon hoodie](/blog/3.6-gophercon-hoodie.jpg "Sourcegraph GopherCon hoodie")
 
 One more thing: Livebloggers will receive one of these awesome hoodies at the end of the conference!

@@ -35,7 +35,7 @@ To make it simple for our customers to stay on the latest Sourcegraph version, w
 
 Many of our customers have high security requirements and don’t feel comfortable uploading their private code to an external cloud software provider. They prefer a solution that can run on their own infrastructure, under their own security terms and authorization mechanisms, with full control over who has access. Since the release of Sourcegraph 2.3 as an on-premises, self-hosted product, we’ve experienced much higher Sourcegraph adoption rates for enterprise usage.
 
-![Weekly Active Users from paying customers since 2017](images/on-prem-customerWAUs.jpg "Weekly Active Users from paying customers since 2017")
+![Weekly Active Users from paying customers since 2017](/blog/on-prem-customerWAUs.jpg "Weekly Active Users from paying customers since 2017")
 
 Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to grant access to the codebase to an external cloud infrastructure provider.
 <br>
@@ -48,11 +48,11 @@ By running on-premises, our DevOps work is exposed to the customer, making them 
 
 Occasionally, things go wrong. One of the challenges of dealing with customer hosted software is that the debugging process requires access to their error logs, alerts, local configuration, deployment environment, and more. To overcome this hurdle, we have improved Sourcegraph’s observability, building [logging and metrics](https://docs.sourcegraph.com/admin/monitoring_and_tracing) into the application to give more information about the root cause of bugs. Fortunately, our customers have been quick to alert us whenever there was an issue.
 
-![Grafana dashboard for monitoring Sourcegraph instance health](images/3.9-grafana-dashboard.png "Grafana dashboard for monitoring Sourcegraph instance health")
+![Grafana dashboard for monitoring Sourcegraph instance health](/blog/3.9-grafana-dashboard.png "Grafana dashboard for monitoring Sourcegraph instance health")
 
 ## Conclusion
 Switching from SaaS to on-premises was essential for Sourcegraph to become the de facto developer platform that all engineers use among top companies like Lyft, Uber, Plaid, Convoy and many more. Our main challenges are maintaining high standards for our code quality to reduce the more tedious debugging process of an on-premises solution and ensuring Sourcegraph runs smoothly in different environments. The majority of our customers run fairly up-to-date Sourcegraph versions. We are able to achieve this by making our upgrade process as simple as possible and communicating our enticing new features to our customers. 
 
-![Current customer versions (as of October 2019)](images/on-prem-customerversions.jpg "Current customer versions (as of October 2019)")
+![Current customer versions (as of October 2019)](/blog/on-prem-customerversions.jpg "Current customer versions (as of October 2019)")
 
 While SaaS may be the right solution for a variety of products, providing on-premises deployment turned out to be the deciding factor for security-conscious companies to adopt Sourcegraph.

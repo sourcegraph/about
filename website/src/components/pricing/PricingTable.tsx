@@ -7,7 +7,7 @@ import Tooltip from 'react-bootstrap/Tooltip'
 import {
     SUPPORTED_PROGRAMMING_LANGUAGES_COUNT,
     SUPPORTED_PROGRAMMING_LANGUAGES_URL,
-} from './product/SupportedProgrammingLanguagesLink'
+} from '../product/SupportedProgrammingLanguagesLink'
 
 enum Plan {
     OpenSource = 'Open source',
