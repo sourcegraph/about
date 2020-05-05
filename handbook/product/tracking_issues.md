@@ -9,7 +9,7 @@
 1. [Using a Tracking issue for progress check-ins](#using-a-tracking-issue-for-progress-check-ins)
 1. [Contributing to the Tracking issue tool](#contributing-to-the-tracking-issue-tool)
 
-## What is a Tracking issue?
+## What is a tracking issue?
 
 A tracking issue is a GitHub issue that captures the planned and on-going work of a team's milestone, project, RFC, OKR or anything else that needs progress tracking. This artifact is a medium used for planning, progress check-ins and stakeholder communication.
 
