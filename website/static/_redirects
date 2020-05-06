@@ -37,7 +37,7 @@
 /docs/config/update-repo-webhook https://docs.sourcegraph.com/user/repo/webhooks 301!
 /docs/datacenter https://github.com/sourcegraph/deploy-sourcegraph 301!
 /docs/datacenter/admin-guide https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/admin-guide.md 301!
-/docs/datacenter/prometheus-metrics https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/prom-metrics.md 301!
+/docs/datacenter/prometheus-metrics https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/admin-guide.md#prometheus 301!
 /docs/datacenter/scaling https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/scale.md 301!
 /docs/datacenter/update https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/update.md 301!
 /docs/deploy/aws https://docs.sourcegraph.com/admin/install/docker/aws 301!
