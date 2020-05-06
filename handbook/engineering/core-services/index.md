@@ -20,8 +20,8 @@ Go, Postgres, Redis, Docker, Kubernetes.
 
 ## Principles
 
-* We consciously invest time in our codebase, tooling, and testing processes.
+- We consciously invest time in our codebase, tooling, and testing processes.
 
 ## Processes
 
-We do [weekly check-ins](../../product/tracking_issues.md#using-a-tracking-issue-for-progress-check-ins) and [planning](../../product/tracking_issues.md#planning-a-milestone-with-a-tracking-issue) with [tracking issues](../../product/tracking_issues.md).
+We do [weekly check-ins](../tracking_issues.md#using-a-tracking-issue-for-progress-check-ins) and [planning](../tracking_issues.md#planning-a-milestone-with-a-tracking-issue) with [tracking issues](../tracking_issues.md).

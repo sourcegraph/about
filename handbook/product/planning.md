@@ -37,9 +37,9 @@ Teams should work on the next thing at the top of the roadmap and should not jum
 
 Generally, items in the roadmap will be big enough they require writing an RFC, though this will not always be the case. When a solution is clear, a well-detailed issue is sufficient to communicate intent, motivation, and solution.
 
-### [Tracking issues](tracking_issues.md)
+### [Tracking issues](../engineering/tracking_issues.md)
 
-See [tracking issues](tracking_issues.md)
+See [tracking issues](../engineering/tracking_issues.md)
 
 ### [Delivery plans](delivery_plans.md)
 
