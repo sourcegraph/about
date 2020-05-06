@@ -145,7 +145,7 @@ export default ((props: any) => (
                                 }
                                 buttonLabel="Contact us"
                                 buttonClassName="btn-outline-primary"
-                                buttonHref="https://about.sourcegraph.com/contact/request-demo/?form_submission_source=pricing-enterprise"
+                                buttonHref="/contact/request-info/?form_submission_source=pricing-enterprise"
                             />
                         </div>
                     </div>
@@ -155,7 +155,7 @@ export default ((props: any) => (
                 <h2>Try Sourcegraph Enterprise for free</h2>
                 <Link
                     className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
-                    to="/contact/request-demo/?form_submission_source=pricing-free-trial-banner"
+                    to="/contact/request-trial/?form_submission_source=pricing-free-trial-banner"
                 >
                     Free trial
                 </Link>

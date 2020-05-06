@@ -195,6 +195,19 @@
           37.555894591230974
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ryan Blunden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.059295654,          
+          -27.451360703
+        ]
+      }
     }
   ]
 }

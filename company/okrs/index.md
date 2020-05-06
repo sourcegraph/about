@@ -4,8 +4,8 @@
 
 Our OKRs are public:
 
-- [FY20-Q2 (upcoming, not yet public)](https://docs.google.com/document/d/1fAB7HMD7rmcyI68f2WuMAvt3uf0UqIruFvKhJUHMCyY/edit)
-- [FY20-Q1 (active)](2020_q1.md)
+- [FY20-Q2 (active)](2020_q2.md)
+- [FY20-Q1](2020_q1.md)
 - [CY19-Q4](2019_q4.md)
 - [CY19-Q3](2019_q3.md)
 

@@ -233,8 +233,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Asdine El Hrychy
 
+- First name is pronounced *as-deen*, last name *el-ree-tchee*
 - Software Engineer
-- Lyon, France 🇫🇷/ Dubai, UAE 🇦🇪
+- Ajaccio, France 🇫🇷/ Dubai, UAE 🇦🇪
 - [asdine@sourcegraph.com](mailto:asdine@sourcegraph.com), [asdine](https://github.com/asdine)
 - Asdine loves experimenting and building bizarre software while enjoying an entire pot of coffee. Before Sourcegraph, he was writing tools and frameworks for his colleagues at Heetch. He also hates dogs, especially the small ones, essentially because they hate him.
 
@@ -244,6 +245,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Ibague, Colombia 🇨🇴/ Sydney, Australia 🇦🇺
 - [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [GitHub](https://github.com/davejrt)
 - Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start as a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
+
+## Dax McDonald (he/him) 
+
+- Software Engineer
+- Phoenix, AZ, USA 🇺🇸
+- [dax@sourcegraph.com](mailto:dax@sourcegraph.com), [Github](https://github.com/daxmc99), [Twitter](https://twitter.com/cloudmarooned)
+- Dax enjoys playing ultimate frisbee 🥏, running 🏃‍♂️ and running K8s on his Raspberry Pi. Before Sourcegraph, he worked on making Kubernetes easier to use with Rio and K3s. He is an avid enthusiast of open-source and open-hardware. He has contributed to several open source projects such as Kubernetes, Linkerd & MetalLB
 
 <!-- Paste *your* section above this line by following our template below:
 
