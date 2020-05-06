@@ -233,8 +233,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Asdine El Hrychy
 
+- First name is pronounced *as-deen*, last name *el-ree-tchee*
 - Software Engineer
-- Lyon, France 🇫🇷/ Dubai, UAE 🇦🇪
+- Ajaccio, France 🇫🇷/ Dubai, UAE 🇦🇪
 - [asdine@sourcegraph.com](mailto:asdine@sourcegraph.com), [asdine](https://github.com/asdine)
 - Asdine loves experimenting and building bizarre software while enjoying an entire pot of coffee. Before Sourcegraph, he was writing tools and frameworks for his colleagues at Heetch. He also hates dogs, especially the small ones, essentially because they hate him.
 
