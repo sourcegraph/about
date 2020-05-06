@@ -3113,7 +3113,7 @@ charenc@~0.0.1:
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
   integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
 
-cheerio@^1.0.0-rc.3:
+cheerio@^1.0.0-rc.1, cheerio@^1.0.0-rc.3:
   version "1.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.3.tgz#094636d425b2e9c0f4eb91a46c05630c9a1a8bf6"
   integrity sha512-0td5ijfUPuubwLUu0OBoe98gZj8C/AA+RW3v67GPlGOrvxWjZmBXiBCRU+I8VEiNyJzjth40POfHiz2RB3gImA==
@@ -5988,11 +5988,12 @@ gatsby-remark-prismjs@^3.2.8:
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-responsive-image@^1.0.0-alpha13-alpha.435e0178:
-  version "1.0.0-alpha13-alpha.435e0178"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-responsive-image/-/gatsby-remark-responsive-image-1.0.0-alpha13-alpha.435e0178.tgz#dc6d2995de371d86ef279a2f444efd46133f70ca"
-  integrity sha1-3G0pld43HYbvJ5ovRE79RhM/cMo=
+gatsby-remark-responsive-image@^1.0.0-beta.5-alpha.fb30fcd6:
+  version "1.0.0-beta.5-alpha.fb30fcd6"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-responsive-image/-/gatsby-remark-responsive-image-1.0.0-beta.5-alpha.fb30fcd6.tgz#4e944a9f849cf577d3d7773e81aff29f12f4aaa0"
+  integrity sha1-TpRKn4Sc9XfT13c+ga/ynxL0qqA=
   dependencies:
+    cheerio "^1.0.0-rc.1"
     image-size "^0.5.1"
     is-relative-url "^2.0.0"
     lodash "^4.17.4"
@@ -8898,7 +8899,7 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-micromatch@^4.0.2:
+micromatch@^4.0.0, micromatch@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
   integrity sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
