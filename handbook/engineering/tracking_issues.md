@@ -32,6 +32,10 @@ This is done automatically by the [tracking-issue tool](#contributing-to-the-tra
 
 There are a number of ways to affect how the workload section of a tracking issue is rendered.
 
+#### Visibility
+
+Issues and pull requests from private repositories will have their title replaced by a link to prevent leaking private information (e.g customer and security-issues repositories).
+
 #### Ordering
 
 The generated work load can be re-ordered manually in the GitHub UI and that ordering will be preserved when the tracking issue is updated.
