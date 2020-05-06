@@ -11,7 +11,7 @@
 
 ## Recreating GKE cluster
 
-1. [Navigate to the `dot-com` cluster pn the Google Cloud console](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-dev) and click `Connect`, run the `gcloud command it gives you.
+1. [Navigate to the `dot-com` cluster pn the Google Cloud console](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-dev) and click `Connect`, run the gcloud command it gives you.
 2. Create the actual GKE cluster (note: the zone must match for disk reattachment):
 ```
 gcloud beta container --project "sourcegraph-dev" clusters create "dot-com" --zone "us-central1-f" --no-enable-basic-auth --cluster-version "1.14.10-gke.27" --machine-type "n1-standard-64" --image-type "COS" --disk-type "pd-ssd" --disk-size "500" --local-ssd-count "1" --metadata disable-legacy-endpoints=true --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --num-nodes "5" --enable-stackdriver-kubernetes --no-enable-ip-alias --network "projects/sourcegraph-dev/global/networks/default" --no-enable-master-authorized-networks --addons HorizontalPodAutoscaling,HttpLoadBalancing --enable-autoupgrade --enable-autorepair --max-surge-upgrade 1 --max-unavailable-upgrade 0
