@@ -1373,7 +1373,7 @@
   resolved "https://registry.yarnpkg.com/@sourcegraph/prettierrc/-/prettierrc-3.0.3.tgz#51bfa9b2588fe35121593fa877143e6373028289"
   integrity sha512-FQ1/Ued4I02R0JkrHHofDN163juVxUnPALzfxPZrDZUHv+c3jHjfZhmTHEz+Wd+g3b7MFk0fkj36nZSnvPyU8A==
 
-"@sourcegraph/stylelint-config@^1.1.2":
+"@sourcegraph/stylelint-config@^1.1.8":
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/@sourcegraph/stylelint-config/-/stylelint-config-1.1.8.tgz#5bb832b83c6239659bd099fc7a040c0289a8259e"
   integrity sha512-aqKZ+InfX7niHAZcn1ivmvq34wEZUu7esPWO3RVW4AZpfgfSXEUEfUpuGP3dqXVQcvuY4HT9dRb5c90XtsHROA==
