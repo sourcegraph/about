@@ -147,7 +147,7 @@ export default ((props: any) => (
                                 }
                                 buttonLabel="Contact us"
                                 buttonClassName="btn-outline-primary"
-                                buttonHref="https://about.sourcegraph.com/contact/request-info/?form_submission_source=pricing-enterprise"
+                                buttonHref="/contact/request-info/?form_submission_source=pricing-enterprise"
                             />
                         </div>
                     </div>
