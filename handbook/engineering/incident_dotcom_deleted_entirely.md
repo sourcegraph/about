@@ -27,7 +27,7 @@ gcloud beta container --project "sourcegraph-dev" clusters create "dot-com" --zo
 6. **From snapshots**, recreate the Kubernetes objects:
   a. Since nothing exists, run `create-new-cluster.sh` and it will recreate everything including disks.
   b. Sourcegraph.com should now be accessible, but with no postgres, redis-store, or precise-code-intel-bundle-manager data present.
-  c. Restore pgsql disks from the latest `pgsql-prod-dot-com` compute snapshot: https://console.cloud.google.com/compute/snapshots?project=sourcegraph-dev
+  c. Restore pgsql disks from the latest `pgsql-prod-dot-com` compute snapshot, `redis-store-prod-dot-com` snapshot, and `bundle-manager-prod-dot-com` snapshot: https://console.cloud.google.com/compute/snapshots?project=sourcegraph-dev
     - TODO: this section should be more explicit about what needs to be done.
   d. Go to **Confirm health of Sourcegraph.com**
 
