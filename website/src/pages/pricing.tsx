@@ -26,7 +26,6 @@ const STARTER_FEATURES: Features = {
     deploymentMetricsAndMonitoring: false,
     backupRestore: false,
     customBranding: false,
-    guestUsers: false,
     onlineTraining: false,
     customContractLegalBillingTerms: false,
 }
@@ -138,7 +137,6 @@ export default ((props: any) => (
                                     deploymentMetricsAndMonitoring: true,
                                     backupRestore: true,
                                     customBranding: true,
-                                    guestUsers: true,
                                     onlineTraining: true,
                                     customContractLegalBillingTerms: true,
                                 }}
@@ -154,7 +152,7 @@ export default ((props: any) => (
                 </div>
             </div>
             <ContentSection color="purple" className="hero-section text-center py-5">
-                <h2>Try Sourcegraph Enterprise free for 30 days</h2>
+                <h2>Try Sourcegraph Enterprise for free</h2>
                 <Link
                     className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
                     to="/contact/request-trial/?form_submission_source=pricing-free-trial-banner"
