@@ -18,13 +18,13 @@ You can take a look at [examples of open tracking issues](https://github.com/sou
 ## Creating a tracking issue
 
 1. Create a new GitHub issue with the [tracking issue template](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=tracking&template=tracking_issue.md&title=%24TEAM%3A+%24MILESTONE+Tracking+issue).
-1. Give it the **"\$THING_BEING_TRACKED: Tracking Issue"** title.
+1. Give it the **"\$THING_BEING_TRACKED: Tracking issue"** title.
 1. Assign it to the right milestone, creating such milestone if it doesn't yet exist.
-1. Ensure the **tracking** label is set as well as the other labels you want to track. Issues and Pull Requests with those labels will show up in the tracking issue.
+1. Ensure the **tracking** label is set as well as the other labels you want to track. Issues and pull requests with those labels will show up in the tracking issue.
 
 ## Populating and maintaining a tracking issue
 
-An open tracking issue is populated and kept up to date with the GitHub issues and pull requests labeled the same as the tracking issue (minus the `tracking` label). Optionally, a milestone can also be set. The tracking issue will be updated as these issues and pull requests are opened, changed, closed, merged, etc.
+An open tracking issue is populated and kept up to date with the GitHub issues and pull requests labeled the same as the tracking issue (minus the `tracking` label) that belong to any repositories of the `sourcegraph` organization. Optionally, a milestone can also be set. The tracking issue will be updated as these issues and pull requests are opened, changed, closed, merged, etc.
 
 This is done automatically by the [tracking-issue tool](#contributing-to-the-tracking-issue-tool) which [runs in response to GitHub issue events](https://github.com/sourcegraph/sourcegraph/blob/master/.github/workflows/tracking-issue.yml#L6) happening in [https://github.com/sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph).
 
@@ -49,7 +49,7 @@ These are the standard labels you can use to refine how each work item in the tr
 
 Apart from these standard labels, you can display any label inline (e.g. `perf`) by explicitly allowing it. This is done by adding a `<!-- LABEL: $YOUR_LABEL_NAME -->` comment to the tracking issue body outside the `<!-- BEGIN WORK-->` and `<-- END WORK -->` section which is reserved for the generated work loads.
 
-#### Pull Requests
+#### Pull requests
 
 Pull requests, if labeled and milestoned correctly, will show up in their author's workload. They can be easily spotted by looking for the <img src="https://github.githubassets.com/images/icons/emoji/shipit.png" height=20 width=20/> emoji. Additionally, if a pull request's body contains the issue number (i.e. #1234) that it relates to, the it will show up under that issue as a nested list item.
 
@@ -79,7 +79,7 @@ Roadmap items may take more than an iteration to implement. As such please link 
 
 A tracking issue can be used as a central communication hub for the progress being done around whatever is being tracked.
 
-To that end, those working on a tracking issue write high level periodic summaries of their progress for interested parties and other stake-holders to follow along without being exposed to too much detail. These summaries are written as comments on the tracking issue.
+To that end, those working on a tracking issue write high level periodic summaries of their progress for interested parties and other stakeholders to follow along without being exposed to too much detail. These summaries are written as comments on the tracking issue.
 
 You can see an example of such a summary [here](https://github.com/sourcegraph/sourcegraph/issues/9910#issuecomment-616405856).
 
