@@ -77,6 +77,6 @@
     "stylelint": "^10.0.1",
     "stylelint-scss": "^3.17.2",
     "tslint": "^5.20.1",
-    "typescript": "^3.4.5"
+    "typescript": "^3.8.3"
   }
 }
