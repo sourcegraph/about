@@ -1387,7 +1387,7 @@
   resolved "https://registry.yarnpkg.com/@sourcegraph/tsconfig/-/tsconfig-4.0.1.tgz#5965ec41771d2ac5b23b6e0d919cee3e70485840"
   integrity sha512-G/xsejsR84G5dj3kHJ7svKBo9E5tWl96rUHKP94Y2UDtA7BzUhAYbieM+b9ZUpIRt66h3+MlYbG5HK4UI2zDzw==
 
-"@sourcegraph/tslint-config@^13.0.0":
+"@sourcegraph/tslint-config@^13.4.0":
   version "13.4.0"
   resolved "https://registry.yarnpkg.com/@sourcegraph/tslint-config/-/tslint-config-13.4.0.tgz#946f82eb464d66190caf6d9dc5e9e473e2de2fe9"
   integrity sha512-Uci+0uZ/6ztsBA4m9nYVNsdbCtcphJatU7xi8a4aLtdqVyceSgl8HicUbesKYUmriBUbcX+XTZB0LJxXYD2fRA==
