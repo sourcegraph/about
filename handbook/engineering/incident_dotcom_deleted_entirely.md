@@ -33,7 +33,7 @@ gcloud beta container --project "sourcegraph-dev" clusters create "dot-com" --zo
 
 ## Recreating Kubernetes objects
 
-1. [Navigate to the `dot-com` cluster pn the Google Cloud console](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-dev) and click `Connect`, run the `gcloud command it gives you.
+1. [Navigate to the `dot-com` cluster on the Google Cloud console](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-dev) and click `Connect`, run the `gcloud command it gives you.
 1. `kubectl -n prod get deployments` should show partial or no Kubernetes deployments, but that you are connected to the right cluster.
 1. In the https://github.com/sourcegraph/deploy-sourcegraph-dot-com repository's latest `release` branch, run `kubectl-apply-all.sh` which will recreate all Kubernetes objects.
   - Sourcegraph.com uses static disk attachments, so the volumes should still be valid and no data should have been lost.
