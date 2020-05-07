@@ -28,7 +28,7 @@
     "gatsby-transformer-remark": "^2.3.10",
     "gatsby-transformer-sharp": "^2.1.18",
     "lodash": "^4.17.15",
-    "mdi-react": "^5.3.0",
+    "mdi-react": "^5.6.0",
     "node-sass": "^4.9.4",
     "parse-filepath": "^1.0.2",
     "prismjs": "^1.14.0",

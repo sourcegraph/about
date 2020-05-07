@@ -8784,7 +8784,7 @@ mdast-util-toc@^5.0:
     unist-util-is "^4.0.0"
     unist-util-visit "^2.0.0"
 
-mdi-react@^5.3.0:
+mdi-react@^5.6.0:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/mdi-react/-/mdi-react-5.6.0.tgz#4e7c55db60ed01b71e681b0a784ab88f2fe0e44d"
   integrity sha512-mes6iLVHCEs0gDg/WNiF/xBZ6ES6EQtd10Aoe186yKU/TeWiYDLgmKaybIyV2UPsplD0bfHpxyhS2B0W9c+pqg==
