@@ -39,7 +39,7 @@ func main() {
 	// (HACK): Generate list of Sourcegraphers to exclude from the list of contributors
 	//
 	// To manually re-generate the `sourcegraphers` map:
-	// Go to https://github.com/orgs/sourcegraph/teams/team/members
+	// Go to https://github.com/orgs/sourcegraph/teams/everyone/members
 	// Run this code in the console
 	//
 	// 		let sourcegraphers = [];
