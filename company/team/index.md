@@ -132,7 +132,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
 - Aileen is a techie at heart with a foundation in IT and databases. Her first startup experience was at Patrol Software where she got the startup buzz to try out multiple roles in customer support, product management, business development and sales.   Most recently, she built the website for [Neo4j](https://neo4j.com) and learned that everything is connected.  In her spare time she keeps active by hiking, running or biking.  She also loves to travel and binges the best in streaming tv.
 
-## Adam Frankl
+## Adam Frankl (he/him)
 
 - Head of Marketing
 - Hillsborough, CA, USA 🇺🇸
