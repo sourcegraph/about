@@ -115,3 +115,10 @@ cd ~/Documents/GitHub/about
 Keep the terminal window open while you're browsing the local preview site.
 
 If it has been a while since you last downloaded the release of docsite, or if you see unexpected errors, follow the steps above again and get a newer version (the `N.N.N` in the filename should be larger).
+
+## FAQ
+
+Do I title the PR? the branch?
+PR description?
+When replying, do I quote reply?
+What are issues for and how to create them?
