@@ -46,7 +46,7 @@ If you enable email notifications for watched repositories then you will want to
 
 You may want to have Slack notify you in real-time when someone comments on your PR.
 
-1. Add the Github App to Slack
+1. Add the GitHub App to Slack
 
 2. Open a direct message with the app and type `/github settings` and follow the prompts to sign into Github.
 
