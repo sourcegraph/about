@@ -48,7 +48,7 @@ You may want to have Slack notify you in real-time when someone comments on your
 
 1. Add the GitHub App to Slack
 
-2. Open a direct message with the app and type `/github settings` and follow the prompts to sign into Github.
+2. Open a direct message with the app and type `/github settings` and follow the prompts to sign into GitHub.
 
 3. Navigate to [https://github.com/settings/reminders/sourcegraph](https://github.com/settings/reminders/sourcegraph)
 ![Real-time Notifications](real-time.png)
