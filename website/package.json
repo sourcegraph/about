@@ -12,7 +12,7 @@
     "gatsby-plugin-advanced-sitemap": "^1.5.4",
     "gatsby-plugin-catch-links": "^2.3.1",
     "gatsby-plugin-feed": "^2.5.1",
-    "gatsby-plugin-google-gtag": "^1.2.1",
+    "gatsby-plugin-google-gtag": "^2.1.1",
     "gatsby-plugin-google-tagmanager": "^2.3.1",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sass": "^2.3.1",
