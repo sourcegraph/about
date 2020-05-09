@@ -252,6 +252,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [dax@sourcegraph.com](mailto:dax@sourcegraph.com), [Github](https://github.com/daxmc99), [Twitter](https://twitter.com/cloudmarooned)
 - Dax enjoys playing ultimate frisbee 🥏, running 🏃‍♂️ and running K8s on his Raspberry Pi. Before Sourcegraph, he worked on making Kubernetes easier to use with Rio and K3s. He is an avid enthusiast of open-source and open-hardware. He has contributed to several open source projects such as Kubernetes, Linkerd & MetalLB
 
+## Simon Korzunov
+
+- Software Engineer
+- Lynnwood, WA, USA 🇺🇸
+- [simon@sourcegraph.com](mailto:simon@sourcegraph.com), [Github](https://github.com/twop), [Twitter](https://twitter.com/twopSK)
+- Simon is interested in programming languages (especially functional ones), type systems, new technologies(WebAssembly) and performance. His top 3 favorite programming languages: Rust, Elm, TypeScript. Outside of work he enjoys exploring gorgeus Pacific Northwest outdoors with his wife and daughter. Interesting fact: he used to be a semiprofessional
+ gamer (Magic: the Gathering) and a game developer at the same time.
+
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
