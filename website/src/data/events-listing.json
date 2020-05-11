@@ -2,12 +2,6 @@
   "Conference": [],
   "Livestream": [
     {
-      "eventTitle": "Online meetup: Going all-remote",
-      "eventDate": "Thursday, May 7, 2020 | 10:00 AM PDT",
-      "eventLink": "https://info.sourcegraph.com/online-meetup-may-7",
-      "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-meetup-allremote.png"
-    },
-    {
       "eventTitle": "Livestream: Introduction to Sourcegraph Universal Code Search",
       "eventDate": "Thursday, May 14, 2020 | 10:00 AM PDT",
       "eventLink": "https://info.sourcegraph.com/training-universal-code-search-may14",
@@ -18,12 +12,6 @@
       "eventDate": "Thursday, May 21, 2020 | 10:00 AM PDT",
       "eventLink": "https://info.sourcegraph.com/online-meetup-may21",
       "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-meetup-generic.png"
-    },
-    {
-      "eventTitle": "Online training: Monitoring and reporting leaked AWS credentials",
-      "eventDate": "Thursday, May 28, 2020 | 10:00 AM PDT",
-      "eventLink": "https://info.sourcegraph.com/aws-credentials-may28",
-      "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-training-aws.png"
     }
   ]
 }
