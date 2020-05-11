@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Podcast.__init__",
+      "newsTitle": "Podcast: Managing Distributed Teams In The Age Of Remote Work",
+      "newsDate": "May 11, 2020",
+      "newsLink": "https://www.pythonpodcast.com/sourcegraph-remote-work-episode-262/",
+      "newsImage": "/external-logos/podcast-init.png"
+    },
+    {
       "newsSource": "The Enterprisers Project",
       "newsTitle": "How to lead remote development teams: 4 tips",
       "newsDate": "May 1, 2020",
