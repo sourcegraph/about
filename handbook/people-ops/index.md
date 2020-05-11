@@ -8,6 +8,7 @@
 - [All-remote work](../../company/remote/index.md)
 - [Hiring](hiring.md)
 - [Onboarding](onboarding/index.md)
+- [Offboarding](offboarding/index.md)
 - [Performance review cycles](review-cycles.md)
 - [Leaving](leaving.md)
 
