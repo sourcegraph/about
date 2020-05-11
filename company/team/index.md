@@ -202,12 +202,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [kai@sourcegraph.com](mailto:kai@sourcegraph.com), [kpsource](https://github.com/kpsource)
 - Kai enjoys time with his family, sailing, and vacationing in Maine (for lobster, sea glass, and amazing sunsets). In terms of work, he focuses on helping customers solve business problems and providing an exceptional customer experience.
 
-## Tommy Roberts
+## Rob Rhyne
 
-- Product Designer
-- London, UK 🇬🇧
-- [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [@imtommyroberts](https://twitter.com/imtommyroberts), [LinkedIn](https://www.linkedin.com/in/imtommyroberts)
-- Before Sourcegraph Tommy was providing freelance product design services to early stage startups. He's passionate about accessible design, the relationship between design and development, and ethics in tech. Outside of work he likes to explore the food scene in London, criticize his own cooking, read too many articles, and watch too many youtube videos.
+- Senior Product Designer
+- Oceanside, CA, USA 🇺🇸
+- [rob@sourcegraph.com](mailto:rob@sourcegraph.com), [@robrhyne](https://twitter.com/robrhyne), [LinkedIn](https://www.linkedin.com/in/rrhyne)
+- Rob is a designer, developer, and accidental salesman with a penchant for solving business problems with usable design and code. When not making products, he is raising two boys with his wife, working on his boat, or fishing offshore for anything that makes good poke.
 
 ## Felix Becker
 
