@@ -206,7 +206,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Rob Rhyne
 
 - Senior Product Designer
-- Oceanside, CA, USA 🇬🇧
+- Oceanside, CA, USA 🇺🇸
 - [rob@sourcegraph.com](mailto:rob@sourcegraph.com), [@robrhyne](https://twitter.com/robrhyne), [LinkedIn](https://www.linkedin.com/in/rrhyne)
 - Rob is a designer, developer, and accidental salesman with a penchant for solving business problems with usable design and code. When not making products, he is raising two boys with his wife, working on his boat, or fishing offshore for anything that makes good poke.
 
