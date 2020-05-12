@@ -42,7 +42,7 @@ The fundamentals of supporting teammates (regardless of their experience level) 
 > Why is there so much activity over the weekend (Github, PRs, Slack)? I felt a little bit of pressure not working.
 
 Some people prefer to work in a really flexible way, which can sometimes mean that they want to hack on something on a Saturday instead of a Friday afternoon, for example. Others prefer a set schedule. Both are valid options.
-There is **no** expectations that people will be responsive over the weekend/vacation/evening/etc.
+There is **no** expectation that people will be responsive over the weekend/vacation/evening/etc except some circumstances do require this, but generally there will be early/predictable notice — e.g., on-call duty.
 
 Tip: [Configure](https://about.sourcegraph.com/handbook/engineering/github-notifications#custom-routing) GitHub notifications to send Sourcegraph related ones to your work email.
 After that it is just a matter of not checking your work email (or Slack) at times that you don’t want to do work. Slack has settings to pause notifications, and you can remove work email from your phone if that would help you not check it during non-work times.
