@@ -1,7 +1,5 @@
 # Offboarding non-U.S. based teammates
 
-Below are the to-do's required for offboarding after a teammate has departed from the team.
-
 ## People Ops checklist
 
 - [ ] Notify Officengine of teammate departure. Confirm their last day, and have them expedite invoice processing for final payment, expenses, and severance (if applicable).
