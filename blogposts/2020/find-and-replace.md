@@ -6,7 +6,7 @@ publishDate: 2020-05-13T10:00-07:00
 tags: [blog]
 slug: a-programmers-guide-to-find-and-replace
 heroImage: /blog/find-replace/vscode.png
-published: false
+published: true
 ---
 
 So much of what we do as programmers boils down to automating the tedium out of our work. We'd like
