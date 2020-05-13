@@ -37,6 +37,17 @@ At Sourcegraph, we support these kinds of interactions in many ways. Here are a 
 
 The fundamentals of supporting teammates (regardless of their experience level) are the same on all-remote teams, it is just that the processes are different. Video chats can be arranged just as easily as stopping by someone's desk to introduce yourself or showing up at someone's office to express informal concerns.
 
+### Is there an expectation to work over the weekends?
+
+> Why is there so much activity over the weekend (GitHub, PRs, Slack)? I felt a little bit of pressure not working.
+
+Some people prefer to work in a really flexible way, which can sometimes mean that they want to hack on something on a Saturday instead of a Friday afternoon, for example. Others prefer a set schedule. Both are valid options. Moreover, due to our global team one person's weekend can be someone else's weekday.
+
+There is **no** expectation that people will be responsive over the weekend/vacation/evening/etc except some circumstances that do require this, but generally there will be early/predictable notice — e.g., on-call duty.
+
+Tip: [Configure](https://about.sourcegraph.com/handbook/engineering/github-notifications#custom-routing) GitHub notifications to send Sourcegraph related ones to your work email.
+After that it is just a matter of not checking your work email (or Slack) at times that you don’t want to do work. Slack has settings to pause notifications, and you can remove work email from your phone if that would help you not check it during non-work times.
+
 ## Helpful links
 
 - [Our journey to all-remote](https://about.sourcegraph.com/blog/our-journey-to-all-remote)
