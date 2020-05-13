@@ -2,6 +2,10 @@
 
 We're an [all-remote](../../company/remote/index.md) company, with teammates from all around the world and (soon) no primary office. To make this work, we need to be deliberate about how we communicate.
 
+## Direct communication
+
+We rely on [Slack](team_chat.md) for all our internal communications and conversations so discussion can happen in public channels. For the most part we only use email for external communications. In the rare occasion of a Slack outage, we communicate by....???
+
 ## Sources of truth
 
 These places are the source of truth for information at Sourcegraph. Information in these places is expected to be accurate and up-to-date:
