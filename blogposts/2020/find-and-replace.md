@@ -196,10 +196,8 @@ using multiselect in VS Code tackling the same HTML-to-JSON transformation:
 
 ![VS Code multiselect](/blog/find-replace/multiselect.gif)
 
-Personally, I prefer keyboard macros to multiselect, as I've found them to be a little more
-powerful. For example, there are certain keyboard operations, like "jump to beginning of the line"
-or "jump to matching delimiter" that appear to stop working when using multiselect in VS Code. With
-keyboard macros, however, anything you can express in keystrokes can be recorded.
+You can do some [pretty cool stuff](https://twitter.com/JoshuaKGoldberg/status/1259159590425542657) with
+multiselect.
 
 Both keyboard macros and multiselect are powerful, but they are only supported in some editors. They
 also work best when the change is relatively simple and is limited to a few files that can be opened
