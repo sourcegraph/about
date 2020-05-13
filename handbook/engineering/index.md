@@ -55,6 +55,7 @@ Sourcegraph has a lot of repositories!
 
 - [Infrastructure repositories](https://github.com/sourcegraph?utf8=%E2%9C%93&q=repo-type-infrastructure&type=&language=)
 - [Customer infrastructure repositories](https://github.com/sourcegraph?utf8=%E2%9C%93&q=repo-type-infrastructure+repo-type-customer&type=&language=)
+- [Merging deploy-sourcegraph into dot-com and dogdood-k8s](merging_dot_com.md)
 
 ## Where Sourcegraph gets extended functionality:
 
