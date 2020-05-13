@@ -4,3 +4,6 @@ yarn.lock
 docs/server/config/site.md
 .idea
 /.bin/
+
+# Local Netlify folder
+.netlify
