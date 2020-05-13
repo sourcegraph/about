@@ -39,7 +39,7 @@ The fundamentals of supporting teammates (regardless of their experience level) 
 
 ### Is there an expectation to work over the weekends?
 
-> Why is there so much activity over the weekend (Github, PRs, Slack)? I felt a little bit of pressure not working.
+> Why is there so much activity over the weekend (GitHub, PRs, Slack)? I felt a little bit of pressure not working.
 
 Some people prefer to work in a really flexible way, which can sometimes mean that they want to hack on something on a Saturday instead of a Friday afternoon, for example. Others prefer a set schedule. Both are valid options. Moreover, due to our global team one person's weekend can be someone else's weekday.
 
