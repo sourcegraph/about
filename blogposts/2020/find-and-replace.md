@@ -2,11 +2,11 @@
 title: "A programmer's guide to find-and-replace"
 author: Beyang Liu
 authorUrl: https://twitter.com/beyang
-publishDate: 2020-05-06T10:00-07:00
+publishDate: 2020-05-13T10:00-07:00
 tags: [blog]
 slug: a-programmers-guide-to-find-and-replace
 heroImage: /blog/find-replace/vscode.png
-published: true
+published: false
 ---
 
 So much of what we do as programmers boils down to automating the tedium out of our work. We'd like
