@@ -221,11 +221,10 @@ export default ((props: any) => (
                 </h2>
                 <div className="row justify-content-md-center">
                     <p className="text-center">
-                        Watch how to use Sourcegraph code change campaigns to upgrade the RxJS library in multiple
-                        repositories.
+                        Watch how to use Sourcegraph code change campaigns to fix code across multiple repositories.
                     </p>
                 </div>
-                <YouTube id="g6e9Fdk-T1g" className="mt-4" />
+                <YouTube id="aqcCrqRB17w" className="mt-4" />
             </ContentSection>
             <ContentSection color="white" className="pt-5 pb-3">
                 <span id="customers" />
