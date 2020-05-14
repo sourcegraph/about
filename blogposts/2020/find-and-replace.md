@@ -41,7 +41,7 @@ the years, divided into three chapters:
    * [Language-specific tools](#language-specific-tools)
    * [Comby](#comby)
 1. [Making large-scale code modifications tractable](#beyond-your-local-machine)
-   * [Sourcegraph Campaigns](#sourcegraph-campaigns)
+   * [Campaigns](#Campaigns)
 
 If you're already familiar with some of these tools, feel free to skip to the sections that you're
 unfamiliar with. If you're new to all this, my hope is that this post will give you a lay of the
@@ -66,7 +66,7 @@ The most commonly used pattern-matching language is Regular Expressions, commonl
 "regex".[^1] Most code editors support regex searching, and it is commonly toggled on using a button
 or icon with the `.*` symbol.
 
-With regexes, you can do things like this:
+With regexes, you can do stuff like this:
 
 | Description                                         | Regex      | Match              | Does not match |
 |-----------------------------------------------------|------------|--------------------|----------------|
@@ -75,8 +75,9 @@ With regexes, you can do things like this:
 | Find all references to fields of a certain variable | `\w+\.\w+` | base.Path          | basePath       |
 
 There are different dialects or flavors of regex. In this post, we'll use [**POSIX Extended Regular
-Expressions**](https://www.gnu.org/software/findutils/manual/html_node/find_html/posix_002dextended-regular-expression-syntax.html#posix_002dextended-regular-expression-syntax). Here's
-a short primer on its syntax:
+Expressions**](https://www.gnu.org/software/findutils/manual/html_node/find_html/posix_002dextended-regular-expression-syntax.html#posix_002dextended-regular-expression-syntax).
+For those who are unfamiliar with it or who need a quick refresher, here's an overview of the
+syntax:
 
 * Alphanumeric characters are generally interpreted literally.
 * `*` means "zero or more of the preceding character".
@@ -92,10 +93,9 @@ a short primer on its syntax:
 * You can also group parts of your regex with `(`...`)`. These groups are treated as single units,
   so `(ABC)+` will match `ABC`, `ABCABC`, and `ABCABCABC`.
 
-By default, regex groups are **capturing groups**. This means that the part of a match that
-submatches a group can be referenced in a replacement pattern. Capturing groups are defined using
-parens: `(<captured-portion-of-regex>)`. For example, here's a regex and replacement pattern that
-will reverse the order of arguments in a function call:
+Regex has a notion of **capturing groups** for find-replace operations. Capturing groups capture
+part of the overall match so it can be referenced in a replacement pattern. For example, here's a
+regex and replacement pattern that will reverse the order of arguments in a function call:
 
 | Input &rarr; Output | `myFunc(foo, bar)` &rarr; `myFunc(bar, foo)` |
 |---------------------|----------------------------------------------|
@@ -449,25 +449,22 @@ various names such as "large-scale refactoring", "large-scale codemods", and "co
 shepherding". These tools are usually specific to the organization that created them and rarely
 released publicly.
 
-### Sourcegraph Campaigns
+### Campaigns
 
-After hearing about many similar challenges from many of our customers, our team at Sourcegraph
-decided to productize a solution that could generally handle the problem of large-scale code
-transformation.
-
-We're calling this feature Sourcegraph Campaigns. If Sourcegraph Code Search is the "find" operation
-over all your code, then Sourcegraph Campaigns is the "replace".
+After hearing the same thing over and over again from countless development teams, we decided to try
+to build a general solution for this hairy problem of large-scale code transformation. We call these
+transformations "campaigns", and this is how you can initiate and execute them in Sourcegraph:
 
 Suppose your organization has decided it wants to standardize error handling across your
 codebase. In particular, you want to use [wrapped errors](https://blog.golang.org/go1.13-errors) in
 Go code. This means you want to ensure that instances of `fmt.Errorf` use the `%w` format verb,
 rather than `%s`.
 
-Without Campaigns, this would involve cloning down all your repositories one-by-one, running a
+Without campaigns, this would involve cloning down all your repositories one-by-one, running a
 find-replace script locally, manually pushing up a branch, and opening a pull request for each
 repository affected by the change. That's probably enough to kill your day, at the very least.
 
-Here's how you'd do that with Campaigns:
+Here's how you'd do that in a campaign:
 
 1. Create a JSON file named `wrapped-errors.action.json` with the following contents:
 
@@ -500,7 +497,7 @@ Here's how you'd do that with Campaigns:
 1. Using the [`src`](https://github.com/sourcegraph/src-cli/#installation) CLI, run `src actions
    exec -f wrapped-errors.action.json -create-patchset`. This will clone down each repository to a
    sandbox, apply the transformation, and upload the patchset to Sourcegraph. It will also print a
-   link you can click to turn the patchset into a Sourcegraph Campaign.
+   link you can click to turn the patchset into a campaign.
 
 1. After clicking the link to create a campaign, enter in the title and description of your
    campaign. Click `Create draft`.
@@ -514,8 +511,8 @@ Here's how you'd do that with Campaigns:
 
 1. From the Sourcegraph GUI, you can monitor the progress of all pull requests in this campaign.
 
-In the example above, we used Comby, because that was the simplest thing to use, but Campaigns
-supports any find-replace tool that can be run as a local command or Docker container. Comby,
+In the example above, we used Comby, because that was the simplest thing to use, but campaigns
+support any find-replace tool that can be run as a local command or Docker container. Comby,
 Codemod, `grep`, `sed`, and any custom script are all fair game.
 
 Campaigns are currently in beta, available in Sourcegraph versions 3.15 and later. Read the
@@ -546,7 +543,7 @@ resources:
   * [Comby interactive playground](https://comby.live/)
 * Campaigns
   * [Campaigns Documentation and Getting Started](https://docs.sourcegraph.com/user/campaigns)
-  * [A video introduction to Campaigns](https://www.youtube.com/watch?v=aqcCrqRB17w)
+  * [A video introduction to campaigns](https://www.youtube.com/watch?v=aqcCrqRB17w)
 
 [^1]: I say "most commonly used", but fluency with regex is by no means ubiquitous. You can graduate
     from a four-year computer science program without writing a single regex. I knew one engineer
