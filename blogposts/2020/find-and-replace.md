@@ -5,7 +5,7 @@ authorUrl: https://twitter.com/beyang
 publishDate: 2020-05-15T10:00-07:00
 tags: [blog]
 slug: a-programmers-guide-to-find-and-replace
-heroImage: /blog/find-replace/vscode.png
+heroImage: /blog/find-replace/find-replace-word.gif
 published: true
 ---
 
