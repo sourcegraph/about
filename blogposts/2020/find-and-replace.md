@@ -49,7 +49,7 @@ table.brain td img {
 <table class="brain">
   <tr>
     <td>
-      <img src="/blog/find-replace/brain1.jpg">
+      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain1.jpg">
     </td>
     <td>
     You start with manual find-replace, maybe with some regex in your editor.
@@ -57,7 +57,7 @@ table.brain td img {
   </tr>
   <tr>
     <td>
-      <img src="/blog/find-replace/brain2.jpg">
+      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain2.jpg">
     </td>
     <td>
     You bite the bullet and finally learn <code class="language-text">grep</code> and <code class="language-text">sed</code>,
@@ -66,7 +66,7 @@ table.brain td img {
   </tr>
   <tr>
     <td>
-      <img src="/blog/find-replace/brain3.jpg">
+      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg">
     </td>
     <td>
     You get annoyed wth <code class="language-text">grep</code> and <code class="language-text">sed</code> and find 
@@ -76,7 +76,7 @@ table.brain td img {
   </tr>
   <tr>
     <td>
-      <img src="/blog/find-replace/brain4.jpg">
+      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg">
     </td>
     <td>
     In your quest for ever greater efficiency, you discover Comby, an awesome new pattern-matching language for code.
@@ -241,7 +241,7 @@ Ctrl-x )                             # finish recording macro
 
 Here's what it looks like in real time:
 
-![Emacs keyboard macros animation](/blog/find-replace/macro.gif)
+![Emacs keyboard macros animation](https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/macro.gif)
 
 A related feature of some editors (e.g., [VS
 Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-cursor-selection),
@@ -250,7 +250,7 @@ Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_multi-curso
 multiselect, which enables the creation of multiple cursors or selections. Here's a short clip of
 using multiselect in VS Code tackling the same HTML-to-JSON transformation:
 
-![VS Code multiselect](/blog/find-replace/multiselect.gif)
+![VS Code multiselect](https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/multiselect.gif)
 
 You can do some [pretty cool stuff](https://twitter.com/JoshuaKGoldberg/status/1259159590425542657) with
 multiselect.
@@ -376,7 +376,7 @@ codemod -m -d . --extensions go 'errorutil.Handler\(([A-Za-z0-9_\.]+)\)' 'erroru
 When you run the command, `codemod` will prompt you to accept, reject, or make further edits to each
 change:
 
-![Codemod interactive interface](./find-replace/codemod.png)
+![Codemod interactive interface](https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/codemod.png)
 
 This interactivity is nice, because it's very difficult to write regexes that work 100% correctly on
 the first try. If you decide you need to refine the regex, you can exit and `codemod` will remember
@@ -568,12 +568,12 @@ Here's how you'd do that in a campaign:
 1. After clicking the link to create a campaign, enter in the title and description of your
    campaign. Click `Create draft`.
 
-   ![Create a new campaign](./find-replace/new-campaign.png)
+   ![Create a new campaign](https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/new-campaign.png)
 
 1. Examine each pull request and click `Publish` after you've verified this proposes the desired
    change in each repository.
 
-   ![Publishing a campaign](./find-replace/campaign-publish.gif)
+   ![Publishing a campaign](https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/campaign-publish.gif)
 
 1. From Sourcegraph, you have a single dashboard where you can monitor the progress of all pull
    requests in this campaign.
