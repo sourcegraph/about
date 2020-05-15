@@ -102,7 +102,7 @@ Here's an overview of this guide:
    * [Codemod](#codemod)
    * [Language-specific tools](#language-specific-tools)
    * [Comby](#comby)
-1. [Making large-scale code modifications tractable](#beyond-your-local-machine)
+1. [Making large-scale code changes tractable](#beyond-your-local-machine)
    * [Campaigns](#campaigns)
 
 ## Find and replace in your editor
@@ -489,45 +489,47 @@ the coming years.
 
 ## Beyond your local machine
 
-Find-and-replace over files on your local machine is one thing, but there are scenarios when you'd
-like to apply a transformation across a universe of code that exists beyond your local
-filesystem. If you're working in enterprise, this might be something like adopting a consistent
-logging standard across all services in your application. If you're working in open source, this
-might be updating all the callers of a now-deprecated library function that has hundreds of
-downstream dependencies. In either case, you may find that the trivial becomes intractable at a
-large enough scale.
+Find-and-replace over files on your local machine is one thing, but there are situations where
+you'll need to apply a transformation across a universe of code that exists beyond your local files.
 
-From many Sourcegraph customers, we've heard that even small changes to a shared API can take months
-or even years to fully propagate across the entire codebase of an organization. This is a big enough
-problem that many dev organizations have created tools to facilitate large-scale changes to code
-that span many files, teams, and repositories. These tools and the associated processes go by
-various names such as "large-scale refactoring", "large-scale codemods", and "code
-shepherding". These tools are usually specific to the organization that created them and rarely
+If you're working in a company, this might be something like adopting a consistent logging standard
+across all services in your application. If you're working in open source, this might be updating
+all the callers of a deprecated library function that has hundreds of downstream dependencies. In
+either case, the trivial becomes intractable at a large enough scale.
+
+This problem is widespread, especially across large software organizations, and will only increase
+in severity in the coming years as the interdependent universe of code continues to expand.
+
+[Google calls it LSC (Large-Scale Changes) and devotes an entire chapter to
+it](https://twitter.com/fatih/status/1259912881186824192) in the "flamingo book", [*Software
+Engineering at
+Google*](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/). Various other
+names we've heard include "large-scale refactoring", "large-scale codemods", "code shepherding", and
+"code change campaigns". Here we call them, simply, "campaigns".
+
+The anecdotes are startling. Inside some organizations, even small campaigns can take months or even
+years to execute. Google has invested millions of dollars to create the internal dev infrastructure
+to enable campaigns to be completed tractably.  Many other development organizations have created
+tools in the same vein, but they typically cannot afford to invest as much into these tools as
+Google can. These tools are usually specific to the organization that created them and rarely
 released publicly.
-
-
->>>
-The very best software organizations have invested tons of resources into tackling this
-problem. [Google calls it LSC (Large-Scale
-Changes)](https://twitter.com/fatih/status/1259912881186824192)
-
-
 
 
 ### Campaigns
 
-After hearing the same thing over and over again from countless development teams, we decided to try
-to build a general solution for this hairy problem of large-scale code transformation. We call these
-transformations "campaigns", and this is how you can initiate and execute them in Sourcegraph:
+After hearing the same thing over and over again from different development teams, we decided to try
+to build a general solution for this hairy problem of large-scale code transformation. Starting in
+Sourcegraph 3.15, you can initiate and execute campaigns in Sourcegraph. Here's an example:
 
 Suppose your organization has decided it wants to standardize error handling across your
 codebase. In particular, you want to use [wrapped errors](https://blog.golang.org/go1.13-errors) in
 Go code. This means you want to ensure that instances of `fmt.Errorf` use the `%w` format verb,
 rather than `%s`.
 
-Without campaigns, this would involve cloning down all your repositories one-by-one, running a
-find-replace script locally, manually pushing up a branch, and opening a pull request for each
-repository affected by the change. That's probably enough to kill your day, at the very least.
+Without a campaign shepherding tool, this would involve cloning down all your repositories
+one-by-one, running a find-replace script locally, manually pushing up a branch, and opening a pull
+request for each repository affected by the change. That's a lot of tedious repetition that can
+occupy multiple days of your time.
 
 Here's how you'd do that in a campaign:
 
@@ -574,7 +576,8 @@ Here's how you'd do that in a campaign:
 
    ![Publishing a campaign](./find-replace/campaign-publish.gif)
 
-1. From the Sourcegraph GUI, you can monitor the progress of all pull requests in this campaign.
+1. From Sourcegraph, you have a single dashboard where you can monitor the progress of all pull
+   requests in this campaign.
 
 In the example above, we used Comby, because that was the simplest thing to use, but campaigns
 support any find-replace tool that can be run as a local command or Docker container. Comby,
