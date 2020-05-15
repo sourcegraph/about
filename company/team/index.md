@@ -267,6 +267,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://github.com/bobheadxi)
 - If it involves moving without *too* much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final year studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
 
+
+## Marek Zaluski
+
+- Software Engineer
+- Ottawa, Canada 🇨🇦
+- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [GitHub](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
+- Marek is a JavaScript and TypeScript developer with an interest in developer tools and tech education. He occasionally teaches programming courses and contributes to coding bootcamps, and he previously ran a software consulting agency. He lives in Canada's capital with his wife and his jack russell terrier 🐕.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
