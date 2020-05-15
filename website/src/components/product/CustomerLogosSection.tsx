@@ -110,10 +110,6 @@ const ITEMS: (
         url: '/external-logos/expanse-logo.svg',
     },
     {
-        name: 'Nubank',
-        url: '/external-logos/nubank-logo.svg',
-    },
-    {
         name: 'Thought Machine',
         url: '/external-logos/thought-machine-logo.svg',
     },
