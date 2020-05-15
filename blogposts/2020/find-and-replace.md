@@ -28,8 +28,29 @@ Doing any of these by hand can be mind-numbing. For assistance, you can turn to 
 find-and-replace tools. But there are so many such tools, with varying degrees of applicability,
 expressivity, ease-of-use, ease-of-learning, and scalability. How do you pick the right one?
 
-This post presents a guide to all the various find-and-replace tools I've encountered and used over
-the years, divided into three chapters:
+
+
+
+
+
+A lot of developers go through a progression like this:
+1. Manual find-replace, maybe some simple regex replacing in your editor
+2. You discover Unix and command-line tools like `grep` and `sed`. Suddenly, you can make much
+   larger refactors unconstrained by the bounds of your editor.
+3. You get annoyed with `grep` and `sed`, and you stumble upon tools like ripgrep and Codemod. Maybe
+   you dive into the rabbit hole of parser-based tools. But now you're spending too much time
+   writing code and reading up about the idiosyncrasies of your language's AST.
+4. You read this blog post and discover Comby, a new pattern-matching language for code, and learn
+   about how the best software organizations execute large-scale code change campaigns.
+
+
+
+
+This post aims to cover all legs of that journey. It is a guide to all the various find-and-replace
+tools you may encounter over the years. If you're new to all this, this is a good jumping off point,
+a post that will make you well-prepared to slay all the find-and-replace monsters you'll encounter
+on your programming odyssey. If you're already a find-and-replace Odysseus, I encourage you to read
+the last two parts of this post, covering Comby and large-scale code change campaigns:
 
 1. [Find and replace in your editor](#find-and-replace-in-your-editor)
    * [Regular expressions](#regular-expressions)
@@ -41,13 +62,7 @@ the years, divided into three chapters:
    * [Language-specific tools](#language-specific-tools)
    * [Comby](#comby)
 1. [Making large-scale code modifications tractable](#beyond-your-local-machine)
-   * [Campaigns](#Campaigns)
-
-If you're already familiar with some of these tools, feel free to skip to the sections that you're
-unfamiliar with. If you're new to all this, my hope is that this post will give you a lay of the
-land and serve as a jumping-off point to learn about a range of powerful tools that will save you a
-lot of time and aggravation over your programming life.
-
+   * [Campaigns](#campaigns)
 
 ## Find and replace in your editor
 
