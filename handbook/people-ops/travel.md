@@ -20,7 +20,7 @@ The first category of travel is company-wide events. Sourcegraph holds two compa
 
 ## Team events
 
-Each team is allocated USD $4K per year per teammate for team events (minimum two members of the team). This is designed to allow each team to hold at least one event every six months (in addition to the company-wide events above). This budget can be used for travel (airfare, trains, etc.), lodging (hotels, rental homes, etc.), events, meals and entertainment, and more. Teams are expected to use discretion about what events are appropriate for team outings, and should contact @sourcegraph/people-ops with any questions.
+Each team is allocated USD $4K per year per teammate for team events (minimum two members of the team). This is designed to allow each team to hold at least one event every six months (in addition to the company-wide events above). This budget can be used for travel (airfare, trains, etc.), lodging (hotels, rental homes, etc.), events, meals and entertainment, and more. Teams are expected to use discretion about what events are appropriate for team outings, and should contact @sourcegraph/people-ops with any questions. Teams should definitely reserve plenty of time for just hanging out, touring around, having fun, etc.--don't make it all about work.
 
 If one individual is a member of multiple teams, they will receive the same amount for each of their teams.
 
