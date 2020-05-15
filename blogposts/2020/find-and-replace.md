@@ -14,43 +14,84 @@ to spend our lives focusing on the design of beautiful abstractions and algorith
 can get to that, we have to do the dirty work—and do it quickly.
 
 Whether you are a newbie or a seasoned engineer, chances are that you struggle with day-to-day tasks
-that seem to take longer than they should. One such task is **find and replace**.
+that seem to take longer than they should. One such recurring challenge is **find and replace**.
 
 Find and replace covers a huge variety of renames, refactors, and transformations that you might
-want to apply in code. Here are a few examples:
+want to apply in code. To name just a few examples:
 
-* You've made a change to a public API and need to update downstream consumers.
-* You've changed a function signature and need to update every call site.
-* You want to convert a bunch of data in one format to another (e.g., XML to JSON).
-* You're identifying and fixing common anti-patterns to improve overall code quality.
+* Making a change to a public API and updating downstream consumers
+* Changing a function signature and updating every call site
+* Converting a bunch of data in one format to another (e.g., XML to JSON)
+* Identifying and fixing common anti-patterns to improve code quality
 
 Doing any of these by hand can be mind-numbing. For assistance, you can turn to a wide variety of
 find-and-replace tools. But there are so many such tools, with varying degrees of applicability,
-expressivity, ease-of-use, ease-of-learning, and scalability. How do you pick the right one?
-
-
-
-
-
+expressivity, ease-of-use, ease-of-learning, and scalability. How do you pick the right one and
+where do you begin?
 
 A lot of developers go through a progression like this:
-1. Manual find-replace, maybe some simple regex replacing in your editor
-2. You discover Unix and command-line tools like `grep` and `sed`. Suddenly, you can make much
-   larger refactors unconstrained by the bounds of your editor.
-3. You get annoyed with `grep` and `sed`, and you stumble upon tools like ripgrep and Codemod. Maybe
-   you dive into the rabbit hole of parser-based tools. But now you're spending too much time
-   writing code and reading up about the idiosyncrasies of your language's AST.
-4. You read this blog post and discover Comby, a new pattern-matching language for code, and learn
-   about how the best software organizations execute large-scale code change campaigns.
 
+<style>
+table.brain {
+    table-layout: fixed;
+    vertical-align: middle;
+    border: 0;
+}
+table.brain td {
+    vertical-align: middle;
+    border: 0;
+}
+table.brain td img {
+    margin: 0;
+    float: right;
+}
+</style>
+<table class="brain">
+  <tr>
+    <td>
+      <img src="/blog/find-replace/brain1.jpg">
+    </td>
+    <td>
+    You start with manual find-replace, maybe with some regex in your editor.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="/blog/find-replace/brain2.jpg">
+    </td>
+    <td>
+    You bite the bullet and finally learn <code class="language-text">grep</code> and <code class="language-text">sed</code>.
+    No longer constrained by the bounds of your editor.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="/blog/find-replace/brain3.jpg">
+    </td>
+    <td>
+    You get annoyed wth <code class="language-text">grep</code> and <code class="language-text">sed</code> and find 
+    tools like ripgrep and Codemod.
+    Maybe you dive down the rabbit hole of parsers. Powerful—but it's a slog reading AST specs and writing tree traversers.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="/blog/find-replace/brain4.jpg">
+    </td>
+    <td>
+    You read this blog post and discover Comby, a new awesome pattern-matching language for code, and learn
+    about how some of the best software organizations make really really large code changes tractable!
+    </td>
+  </tr>
+</table>
 
+This post will cover all legs of this journey. It is a guide to all the various find-and-replace
+tools you may encounter over the years. If you're new to all this, read this as a jumping off point
+that will make you well-prepared to slay many monsters of tedium that you'll encounter on your
+programming odyssey. If you're already a veteran find-and-replace Odysseus, I encourage you to read
+the last two parts of this post, covering Comby and large-scale code change campaigns.
 
-
-This post aims to cover all legs of that journey. It is a guide to all the various find-and-replace
-tools you may encounter over the years. If you're new to all this, this is a good jumping off point,
-a post that will make you well-prepared to slay all the find-and-replace monsters you'll encounter
-on your programming odyssey. If you're already a find-and-replace Odysseus, I encourage you to read
-the last two parts of this post, covering Comby and large-scale code change campaigns:
+Here's an overview of this guide:
 
 1. [Find and replace in your editor](#find-and-replace-in-your-editor)
    * [Regular expressions](#regular-expressions)
@@ -463,6 +504,15 @@ that span many files, teams, and repositories. These tools and the associated pr
 various names such as "large-scale refactoring", "large-scale codemods", and "code
 shepherding". These tools are usually specific to the organization that created them and rarely
 released publicly.
+
+
+>>>
+The very best software organizations have invested tons of resources into tackling this
+problem. [Google calls it LSC (Large-Scale
+Changes)](https://twitter.com/fatih/status/1259912881186824192)
+
+
+
 
 ### Campaigns
 
