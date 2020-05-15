@@ -112,8 +112,8 @@ literal string substitution. This enables you to find instances of `foo` and rep
 
 However, there are many cases where you want to apply a general change pattern, not just replace one
 word with another. Adding arguments to a function, fixing a common anti-pattern, standardizing
-library usage, and transforming data from one format to another—these call for a find-and-replace
-tool that can express patterns of transformation.
+library usage, and transforming data from one format to another—these call for a tool that can
+express patterns of transformation.
 
 ### Regular expressions
 
@@ -129,7 +129,7 @@ With regexes, you can do stuff like this:
 | Find all characters between double quotes           | `"[^"]"`   | "hello&nbsp;world" | hello world'   |
 | Find all references to fields of a certain variable | `\w+\.\w+` | base.Path          | basePath       |
 
-There are different dialects or flavors of regex. In this post, we'll use [**POSIX Extended Regular
+There are different dialects of regex. In this post, we'll use [**POSIX Extended Regular
 Expressions**](https://www.gnu.org/software/findutils/manual/html_node/find_html/posix_002dextended-regular-expression-syntax.html#posix_002dextended-regular-expression-syntax).
 For those who are unfamiliar with it or who need a quick refresher, here's an overview of the
 syntax:
@@ -149,7 +149,7 @@ syntax:
   so `(ABC)+` will match `ABC`, `ABCABC`, and `ABCABCABC`.
 
 Regex has a notion of **capturing groups** for find-replace operations. Capturing groups capture
-part of the overall match so it can be referenced in a replacement pattern. For example, here's a
+part of the overall match so they can be referenced in a replacement pattern. For example, here's a
 regex and replacement pattern that will reverse the order of arguments in a function call:
 
 | Input &rarr; Output | `myFunc(foo, bar)` &rarr; `myFunc(bar, foo)` |
@@ -162,10 +162,10 @@ the parts of the match that correspond to the arguments to the function.
 
 One thing to note about regex is the abundance of special characters. All these characters have
 special meanings: `(`, `)`, `[`, `]`, `.`, `$`, `^`, `+`, `?`, `|`. This means you'll need to escape
-them with `\` if you want to literally match these characters. This wouldn't be too severe a problem
-were it not for the fact that all these characters also occur abundantly in code. This means that
-often, your regex will include many escape sequences. Add grouping into the mix and very soon you'll
-end up with something quite unreadable.
+them with `\` if you want to literally match these characters. This wouldn't be so bad were it not
+for the fact that all these characters also occur abundantly in code. This means that your regex
+will often include many escape sequences. Add grouping into the mix and very soon you'll end up with
+something quite unreadable.
 
 To alleviate this readability issue, there are a number of regex visualizers you can use to
 understand what's going on:
@@ -175,14 +175,15 @@ understand what's going on:
 * [Regexr](https://regexr.com/)
 * [Regviz](http://regviz.org/)
 
-Even with visualization, however, you may find regexes difficult to read and write. It may take
+Even with visualization, however, regexes are often difficult to read and write. It may take
 multiple attempts and a debugging session to arrive at the correct incantation that properly
 expresses the find-and-replace pattern you'd like to apply.
 
 
 ## Keyboard macros and multiselect
 
-Another way to address the readability issues with regexes is simply not to use them.
+One way to address the readability issues with regexes in your editor is to use keyboard macros,
+instead.
 
 Keyboard macros are a feature of some editors (e.g.,
 [Emacs](https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html),
@@ -191,9 +192,9 @@ Keyboard macros are a feature of some editors (e.g.,
 keystrokes and replay them later. If you can describe the change you'd like to make in a set of
 keystrokes, a keyboard macro can be much easier to execute than a regex find-and-replace.
 
-Let's say we want to add an additional parameter to call sites of the function, `errorutil.Handler`,
-in [this
-file](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e6691da7035873fd6394e16cdf32d2f8537fb9e1/-/blob/cmd/frontend/internal/app/app.go). In
+Let's say we want to add an additional parameter to call sites of the function, `errorutil.Handler`
+([defined in this
+file](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e6691da7035873fd6394e16cdf32d2f8537fb9e1/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19:6)). In
 Emacs, I can describe the change I'd like to make in the following keystrokes:
 
 ```
@@ -292,20 +293,19 @@ of luck.
 
 ## Find and replace outside your editor
 
-Thus far, we've focused on find-and-replace features inside the editor. These can be very powerful,
+Thus far, we've focused on find-and-replace inside the editor. These features can be very powerful,
 but they are constrained by what you are able to edit in your editor. There are a number of reasons
 why you'll have to make code modifications outside your editor:
 
 * Your editor doesn't make it easy to apply the type of transformation you want.
 * You might be modifying files in a place where your editor isn't available (e.g., a server).
 * You might be applying a change across more files than you want to open in your editor.
-* You might want to apply a large-scale change across code that doesn't even exist on your local
-  machine.
+* You might want to apply a large-scale change across code that doesn't exist on your local machine.
 
 As a general rule, the larger the universe of code you care about is (whether that universe is a
-proprietary codebase in enterprise or the universe of open source), the more likely it is that
-you'll need to find and replace outside your editor. To do that, we'll need to add some more tools
-to our toolbox.
+large proprietary codebase or the universe of open source), the more likely it is that you'll need
+to find and replace outside your editor. To do that, we'll need to add some more tools to our
+toolbox.
 
 
 ### grep and sed
@@ -422,7 +422,7 @@ that's more suited to code.
 
 [Comby](https://comby.dev/) is a fairly new tool that introduces a simple new syntax for matching
 common patterns in code. It aims to be both more expressive and more user-friendly than regex in
-this domain.
+this domain.[^10]
 
 Here is a Comby one-liner that handles adding an extra argument to `errorutil.Handler`:
 
@@ -644,3 +644,8 @@ resources:
     [`sack`](https://github.com/sampson-chen/sack). `git-grep` is `grep` but only over files known
     to `git` (and for this reason, it's often much faster). Personally, I've found ripgrep to be the
     fastest grep alternative, generally speaking.
+[^10]: It just so happens that Comby was created by a fellow Sourcegrapher, the brilliant [Rijnard
+    van Tonder](https://rijnard.com/), as part of his Ph.D. research. Part of the reason he joined
+    Sourcegraph was to put his research into practice among as many developers as possible. If you
+    also have a fantastic new idea that can improve the productivity of many developers, shoot me a
+    message at [beyang@sourcegraph.com](mailto:beyang@sourcegraph.com)!
