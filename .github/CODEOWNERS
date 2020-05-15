@@ -31,3 +31,5 @@
 /handbook/engineering/languages/go.md @sourcegraph/core-services
 /handbook/engineering/languages/typescript.md @sourcegraph/web
 /handbook/marketing @sourcegraph/marketing
+
+/handbook/engineering/adding_ping_data.md @ebrodymoore @dadlerj
