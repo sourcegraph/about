@@ -1,5 +1,5 @@
 ---
-title: "A programmer's guide to find-and-replace"
+title: "The find-and-replace Odyssey, a programmer's guide"
 author: Beyang Liu
 authorUrl: https://twitter.com/beyang
 publishDate: 2020-05-15T10:00-07:00
@@ -16,20 +16,20 @@ can get to that, we have to do the dirty work—and do it quickly.
 Whether you are a newbie or a seasoned engineer, chances are that you struggle with day-to-day tasks
 that seem to take longer than they should. One such recurring challenge is **find and replace**.
 
-Find and replace covers a huge variety of renames, refactors, and transformations that you might
-want to apply in code. To name just a few examples:
+Find and replace encompasses a huge variety of renames, refactors, and transformations that you
+might want to apply in code. To name just a few examples:
 
 * Making a change to a public API and updating downstream consumers
 * Changing a function signature and updating every call site
 * Converting a bunch of data in one format to another (e.g., XML to JSON)
 * Identifying and fixing common anti-patterns to improve code quality
 
-Doing any of these by hand can be mind-numbing. For assistance, you can turn to a wide variety of
-find-and-replace tools. But there are so many such tools, with varying degrees of applicability,
+Doing any of these by hand would be mind-numbing. For assistance, you can turn to a wide variety of
+find-and-replace tools. But there are so many tools, with varying degrees of applicability,
 expressivity, ease-of-use, ease-of-learning, and scalability. How do you pick the right one and
 where do you begin?
 
-A lot of developers go through a progression like this:
+You may go through a progression like this:
 
 <style>
 table.brain {
@@ -60,8 +60,8 @@ table.brain td img {
       <img src="/blog/find-replace/brain2.jpg">
     </td>
     <td>
-    You bite the bullet and finally learn <code class="language-text">grep</code> and <code class="language-text">sed</code>.
-    No longer constrained by the bounds of your editor.
+    You bite the bullet and finally learn <code class="language-text">grep</code> and <code class="language-text">sed</code>,
+    so you're no longer constrained by the bounds of your editor.
     </td>
   </tr>
   <tr>
@@ -79,19 +79,18 @@ table.brain td img {
       <img src="/blog/find-replace/brain4.jpg">
     </td>
     <td>
-    You read this blog post and discover Comby, a new awesome pattern-matching language for code, and learn
-    about how some of the best software organizations make really really large code changes tractable!
+    In your quest for ever greater efficiency, you discover Comby, an awesome new pattern-matching language for code.
+    You use it to execute really really large crucial changes across your organization's code.
     </td>
   </tr>
 </table>
 
-This post will cover all legs of this journey. It is a guide to all the various find-and-replace
-tools you may encounter over the years. If you're new to all this, read this as a jumping off point
-that will make you well-prepared to slay many monsters of tedium that you'll encounter on your
-programming odyssey. If you're already a veteran find-and-replace Odysseus, I encourage you to read
-the last two parts of this post, covering Comby and large-scale code change campaigns.
+In this post, we'll cover all the legs of this journey. If you're new to all this, you'll get an
+introduction to many tools that you can use to slay monsters of tedium along your programming
+journey. If you're already a veteran Odysseus, feel free to skip to the last two parts of this post,
+covering Comby and large-scale code change campaigns.
 
-Here's an overview of this guide:
+Here's what we'll cover:
 
 1. [Find and replace in your editor](#find-and-replace-in-your-editor)
    * [Regular expressions](#regular-expressions)
