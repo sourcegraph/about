@@ -70,7 +70,7 @@ table.brain td img {
     </td>
     <td>
     You get annoyed wth <code class="language-text">grep</code> and <code class="language-text">sed</code> and find 
-    tools like ripgrep and Codemod.
+    tools like ripgrep (`rg`) and `codemod`.
     Maybe you dive down the rabbit hole of parsers. Powerful—but it's a slog reading AST specs and writing tree traversers.
     </td>
   </tr>
@@ -79,7 +79,7 @@ table.brain td img {
       <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg">
     </td>
     <td>
-    In your quest for ever greater efficiency, you discover Comby, an awesome new pattern-matching language for code.
+    In your quest for ever greater efficiency, you discover `comby`, an awesome new pattern-matching language for code.
     You use it to execute really really large crucial changes across your organization's code.
     </td>
   </tr>
@@ -230,7 +230,7 @@ into a JSON list like this:
 To do that with keyboard macros in Emacs, you can type this:
 ```
 Ctrl-x (                             # begin recording the macro
-Ctrl-s < t d Ctrl-f                  # move curser to 'John'
+Ctrl-s < t d Ctrl-f                  # move cursor to 'John'
 Ctrl-<space> Ctrl-a Ctrl-w           # delete everything on the line prior to 'John'
 " Alt-f "                            # put double quotes around 'John'
 Ctrl-<space> Ctrl-s < t d > Ctrl-w   # delete everything from the end of "John" to '25'
@@ -272,7 +272,7 @@ editors and languages.
 
 You should consult your editor documentation or plugin ecosystem to see if semantic refactoring is
 supported for your language. Semantic refactoring sometimes goes by different names like
-"intellisense", "code intelligence", or "structural search".
+"intellisense", "code intelligence", or "structural search and replace".
 
 The downside to semantic refactoring is that it is very specific to the language. A separate
 integration for each language must be created, which means that frequently the language you're
@@ -478,6 +478,9 @@ Comby's advantages can be summed up in two words: expressivity and ergonomics.
 * Expressivity: You can capture patterns that involve nested delimiters, which are inexpressible with regex.
 * Ergonomics: Unlike regex, Comby has very few special characters, so Comby patterns are generally
   more readable and writable.
+
+Comby also supports an interactive mode (using the `--review` flag) like Codemod, and you can play
+around with it in a live demo at [comby.live](https://comby.live/).
 
 Due to its newness, Comby is not yet as widely adopted as regex-based tools like `grep` and `sed`,
 but it is off to a strong start and I predict it will supplant regex in more and more use cases in
