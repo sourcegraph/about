@@ -46,12 +46,20 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-<div class="alert alert-info">
-  <p>
-    <strong>LEARN MORE:</strong><br />
-    <a href="https://info.sourcegraph.com/online-meetup-april-23?utm_source=blog">Online meetup: Sourcegraph 3.15 - Thursday, April 23 at 10AM PDT</a><br />
-  </p>
-</div>
+---
+
+Go in-depth with the 3.15 release by watching the recorded livestream with Product Manager [Christina Forney](https://twitter.com/christina4nee) and CTO [Beyang Liu](https://twitter.com/beyang).
+
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://www.youtube.com/embed/EJ221hdssDw" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+</p>
+
+**NOTE**: Sourcegraph site admins should definitely check out [Beyang discussing improvements to monitoring, observability, and alerting](https://youtu.be/EJ221hdssDw?t=507).
+
+---
+
 
 ## Campaigns beta available to all site admins
 
