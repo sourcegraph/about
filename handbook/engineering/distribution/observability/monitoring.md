@@ -60,7 +60,8 @@ At Sourcegraph we impose five strict constraints to monitoring which, at first, 
 
 1. Creating dashboards that describe something other than a single Sourcegraph service is forbidden.
 2. Adding a graph/panel that visualizes a metric, without defining an associated alert, is forbidden.
-3. Creating dashboards outside of the monitoring generator, such as with the Grafana WYSIWYG editor, is forbidden. All metrics should be presented in the most plain, mundane, non-fanciful way that every site admin can understand.4. Creating graphs/panels with more than 5 cardinality (labels) is forbidden (in most cases there should only be one.)
+3. Creating dashboards outside of the monitoring generator, such as with the Grafana WYSIWYG editor, is forbidden. All metrics should be presented in the most plain, mundane, non-fanciful way that every site admin can understand.
+4. Creating graphs/panels with more than 5 cardinalities (labels) is forbidden (in most cases there should only be one.)
 5. The most useful information should be presented first, the least useful information should be hidden by default.
 
 To understand why we impose these constraints, see [the five pillars of monitoring](monitoring_pillars.md)
