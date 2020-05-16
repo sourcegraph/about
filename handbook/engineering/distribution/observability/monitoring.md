@@ -125,7 +125,7 @@ It's best if you also add some Markdown documentation with your best guess of wh
 > Tip: In `PossibleSolutions` Markdown, you can use single quotes anywhere you would normally use backticks for code, and indention will automatically be removed for you.
 
 
-One you save the file, `doc/admin/observability/alert_solutions.md` will automatically be regenerated and you can even preview your changes at [http://localhost:5080/admin/observability/alert_solutions](http://localhost:5080/admin/observability/alert_solutions).
+Once you save the file, `doc/admin/observability/alert_solutions.md` will automatically be regenerated and you can even preview your changes at [http://localhost:5080/admin/observability/alert_solutions](http://localhost:5080/admin/observability/alert_solutions).
 
 ## Next steps
 
