@@ -123,11 +123,11 @@ or icon with the `.*` symbol.
 
 With regexes, you can do stuff like this:
 
-| Description                                         | Regex      | Match              | Does not match |
-|-----------------------------------------------------|------------|--------------------|----------------|
-| Find all symbol names starting with "http"          | `foo\w*`   | fooBar             | barFoo         |
-| Find all characters between double quotes           | `"[^"]"`   | "hello&nbsp;world" | hello world'   |
-| Find all references to fields of a certain variable | `\w+\.\w+` | base.Path          | basePath       |
+| Description                                         | Regex       | Match              | Does not match |
+|-----------------------------------------------------|-------------|--------------------|----------------|
+| Find all symbol names starting with "foo"           | `foo\w*`    | fooBar             | barFoo         |
+| Find all characters between double quotes           | `"[^"]"`    | "hello&nbsp;world" | hello world'   |
+| Find all references to fields of a certain variable | `base\.\w+` | base.Path          | basePath       |
 
 There are different dialects of regex. In this post, we'll use [**POSIX Extended Regular
 Expressions**](https://www.gnu.org/software/findutils/manual/html_node/find_html/posix_002dextended-regular-expression-syntax.html#posix_002dextended-regular-expression-syntax).
@@ -342,7 +342,7 @@ they're not super beginner-friendly.[^7] [^8]
 
 [ripgrep (`rg`)](https://github.com/BurntSushi/ripgrep) is a newer alternative to `grep`[^9] that is
 faster and has more user-friendly defaults (e.g., you don't need to remember to set flags like
-`-lRE` to get the behavior you want). Here's the one-liner above rewritten with ripgrep, instead of
+`-RE` to get the behavior you want). Here's the one-liner above rewritten with ripgrep, instead of
 grep:
 
 ```
