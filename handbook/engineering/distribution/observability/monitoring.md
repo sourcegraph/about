@@ -31,7 +31,7 @@ It does not include:
 - Solving a problem end-to-end: after looking at monitoring, admins MUST go elsewhere to solve the problem.
 - Identifying individual problem cases (e.g. the details of why a single request failed).
 
-Monitoring is just one piece of Sourcegraph's observability. See the [observability developer guide](observability.md) for more information.
+Monitoring is just one piece of Sourcegraph's observability. See the [observability developer guide](index.md) for more information.
 
 ### Monitoring technology we use
 
