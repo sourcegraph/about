@@ -43,7 +43,7 @@ We use [Prometheus](https://prometheus.io) for:
 We use [Grafana](https://grafana.com) for:
 
 - Displaying dashboards for our Prometheus metrics.
-- Sending our Prometheus metric alerts to site admins via email, slack, etc.
+- Sending our Prometheus metric alerts to site admins via email, Slack, etc.
 
 We use a custom [declarative Go generator syntax](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/monitoring) for:
 
