@@ -29,28 +29,13 @@ To understand why we impose these constraints, see [the five pillars of monitori
 
 ## Monitoring at Sourcegraph: a brief history
 
-Before the constraints we impose will start to make sense, you need to understand the history of monitoring at Sourcegraph and the (extremely difficult) problem we're trying to solve with it.
+Before the constraints we impose will start to make sense, you need to understand the history of monitoring at Sourcegraph and the (extremely difficult) problem we're trying to solve with it. For the first five years of Sourcegraph:
 
-### For as long as Sourcegraph has existed as an enterprise product, it has had some form of Prometheus and Grafana monitoring
-
-It has progressed over time roughly as follows:
-
-- 2015: Using Prometheus/Grafana internally, customers _can_ use it, but they're on their own to define alerts for the 500+ metrics we expose.
-- 2016: Give select customers a copy of our dashboards "as a starting point", in most cases they are broken.
-- 2017: We give anyone who wants it a copy of our configs, but they're specific to Sourcegraph.com so most things are broken.
-- 2018: Still 100% optional, most customers do not even run Prometheus. We put Sourcegraph.com on the back-burner, a vast majority of our dashboards become broken/useless.
-- mid-2019 (Sourcegraph 3.11): We start shipping Prometheus and Grafana out-of-the-box, but still 30% of dashboards are broken with the rest being heavily outdated or useless.
-- late-2019 (Sourcegraph 3.12): We add new dashboards which work, but don't cover a lot of stuff. Many ad-hoc dashboards like "Gitserver" and "Gitserver 2" or "Debug test" exist.
-- late-2019 (Sourcegraph 3.13): New dashboards start covering more, but ad-hoc dashboards still exist. We begin adding dashboards that are extremely hard for anyone except the original author to interpret.
-- 2020 (Sourcegraph 3.15): New dashboards cover most things, are guaranteed to work in customer deployments AND be legible to anyone because we've impose strict restrictions on how we develop them. A few customers begin to set up alerting.
-
-### For almost as long as Sourcegraph has existed (at the time of writing this)
-
-- Our Prometheus metrics have been too numerous for anyone to reason about on their own (even us ourselves).
-- Our Grafana dashboards have most of the time been completely broken for customers because we do not rely on them.
-- Our Grafana dashboards have in ~70% of cases been so complex that only the author of the dashboard could interpret what it means.
-- We occasionally receive support requests like "is this dashboard showing it is healthy or not?" and we can only respond with "we're.. not sure, are you seeing errors in the app itself?"
-- It has been impossible for site admins to define meaningful alerting for Sourcegraph. 90% of admins that do set up alerting just set up external checks for "does a search query work and is it fast?"
+- Metrics have been too numerous for anyone to reason about on their own
+- Dashboards have been completely broken for customers because we do not rely on them heavily.
+- Dashboards have been so complex that only the author of the dashboard could interpret what it means.
+- We recieved support requests like "is this dashboard showing it is healthy or not?" and it was difficult to answer
+- It has been impossible/painful for site admins to define meaningful alerting for Sourcegraph. Many admins would fall back to poor external checks like "does a search query work and is it fast?"
 - It has been impossible for us to debug customer's instances through monitoring, and often we would just write one-off Prometheus queries for customers to run.
 
 ### The linter of monitoring
