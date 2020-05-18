@@ -8,7 +8,7 @@
 - Keep GIFs 15 seconds or less
 - GIFs are typically great for short "check this out" recordings, where videos are better at "how-to" or promotional style content
 - Keep GIF and images as small as possible with no retina sizes (just 1 x)
-- If doing a full screen recording, 1280x720 (720p) will produce easy to read results at default settings.
+- If doing a full-screen recording, 1280x720 (720p) will produce easy to read results at default settings.
 - If you’re producing visual content regularly, invest in paid apps (you can expense them too).
 - Chose CleanShot if just doing screenshots and GIFs.
 - Add ScreenFlow to your list if you plan on doing videos frequently, as you will appreciate editing and clip speed-up capabilities.
@@ -17,14 +17,14 @@
 
 ### Screenshot apps
 
-Whether you need a dedicated screenshot application or not depends on how often you plan to contribute visual content, and if you need things like annotations. Sourcegraph always encourages you to purchase the software you need to be successful, and this certainly applies for screenshots and screen recordings. Here is a brief overview of screenshooting tools:
+Whether you need a dedicated screenshot application or not depends on how often you plan to contribute visual content, and if you need things like annotations. Sourcegraph always encourages you to purchase the software you need to be successful, and this certainly applies to screenshots and screen recordings. Here is a brief overview of screenshot tools:
 
 - [Native macOS](https://support.apple.com/en-au/HT201361)<br/>
 Great for simple screenshots
 - [Snagit](https://www.techsmith.com/screen-capture.html)<br/>
 Great annotation tools
 - [Cleanshot](https://getcleanshot.com/)<br/>
-Really nice workflow, great screenshot annotations (also does basic GIF and video recordings)
+Nice workflow, great screenshot annotations (also does basic GIF and video recordings)
 
 ### Screenshot tips
 
@@ -33,8 +33,8 @@ Really nice workflow, great screenshot annotations (also does basic GIF and vide
 - Do not use retina sizes as screenshots look fine at 1x
 - If needed, use screenshot annotations to further contextualize visual elements
 - Consider adding a caption below the image for additional context and information
-- Export as a PNG if color palette is limited, else JPEG compression at 70-80% quality
-- Total file size should be less than 100Kb (faster loading time = better UX). If larger, it should be uploaded to [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/docs/images/?project=sourcegraph-de&folder=true&organizationId=true) on Google Cloud storage and linked to
+- Export as a PNG if the color palette is limited, else JPEG compression at 70-80% quality
+- The total file size should be less than 100Kb (faster loading time = better UX). If larger, it should be uploaded to [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/docs/images/?project=sourcegraph-de&folder=true&organizationId=true) on Google Cloud storage and linked to
 
 ## Adding a screen recording (screencast)
 
@@ -42,16 +42,16 @@ A screen recording (screencast) is a great way to see a feature or flow in actio
 
 ### Screen recording apps
 
-The reason to use a paid tool is more settings, export quality controls, and a nicer workflow for producing assets. Basically, if you’re planning on doing this more than once, it’s worth investing in a professional tool.
+The reason to use a paid tool is more settings, export quality controls, and a nicer workflow for producing assets. If you’re planning on doing this more than once, it’s worth investing in a professional tool.
 
 - [Cleanshot](https://getcleanshot.com/)<br/>
-Export screen recordings to GIF or video and nice features such as hiding desktop icons and notifications during recordings automatically. Does not have any editing or annotation tools for screen recordings though.
+Export screen recordings to GIF or video and nice features such as hiding desktop icons and notifications during recordings automatically. It does not have any editing or annotation tools for screen recordings though.
 
 - [Quicktime (videos only)](https://support.apple.com/en-au/guide/quicktime-player/qtp97b08e666/mac)<br/>
 Can capture a window, a selection of, or the entire screen, and in conjunction with the "Split Clip" functionality makes trimming the start and end easy. It’s a great tool that’s free on macOS.
 
 - [ScreenFlow](https://www.telestream.net/screenflow/overview.htm)<br/>
-Simply the best screen recording, editing, and production tool available. Features lend itself to video work (e.g. editing) but can export to GIF.
+Simply the best screen recording, editing, and production tool available. Designed primarily for video work (e.g. editing) but can export to GIF.
 
 ### Screen recording tips
 
@@ -59,10 +59,10 @@ Recording a great screencast is a large topic, but here are some essentials to k
 
 - Ensure it has an easy to demonstrate and clear purpose, e.g. show smart search field autocomplete, syntax highlighting, and error handling
 - Make it as short and simple as possible, but not so short, it’s hard to know what you’re demonstrating
-- Only capture the part of the screen that is necessary. If output is video, then aim for 16:9 ratio for YouTube
-- If the entire screen needs to be captured, then your resolution should be 1280x720 (720p), as that will make on screen elements easy to read
+- Only capture the part of the screen that is necessary. If the output is video, then aim for 16:9 ratio for YouTube
+- If the entire screen needs to be captured, then your resolution should be 1280x720 (720p), as that will make on-screen elements easy to read
 - Decide whether it should be standalone, or if it only makes sense when embedded with content
-- Ideally, GIFs should less than 15-20 seconds in length, otherwise it’s most likely better as a video
+- Ideally, GIFs should less than 15-20 seconds in length, otherwise, it’s most likely better as a video
 - Invest in learning a tool such as ScreenFlow if you need to annotate and/or edit your recordings
 - Does your GIF or video make sense without an accompanying explanation? If not, then a VoiceOver or text annotations can help a lot
 
@@ -70,7 +70,7 @@ Like most things, practice makes perfect, but if you’re wanting to get some ad
 
 ## Embedding GIFs
 
-Using markdown for embedding images is sufficient in most circumstances, but if you need more control, you can embed using the <img /> element which then allows you to apply Bootstrap’s image, element display and spacing utilities.
+Using markdown for embedding images is sufficient in most circumstances, but if you need more control, you can embed using the <img /> element which then allows you to apply Bootstrap’s image, element display, and spacing utilities.
 
 Provided your image is less than 100Kb, it can be added to the same repository to which the content belongs. Larger images and GIFs should be uploaded to the [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) on Google Cloud storage and linked to.
 
@@ -96,7 +96,7 @@ Export your video in 16:9 ratio (should probably be 720p), then [upload your vid
 2. Select your video to begin uploading
 3. Add a title that has key words someone is likely to use in a search
 4. Add a 1-2 sentence description of your video that contains a call-to-action for the user to learn more, activate the feature, or at least, install Sourcegraph. See other Sourcegraph videos that may have description content you can re-use
-5. For thumbnail, either select the best option presented, or generate your own by viewing the video fullscreen, taking a screenshot, then uploading it
+5. For thumbnail, either select the best option presented or generate your own by viewing the video fullscreen, taking a screenshot, then uploading it
 6. Select "No, it's not made for kids"
 7. Expand ‘MORE OPTIONS" to add the tags: "sourcegraph", "codesearch", "universalcodesearch"
 8. Click NEXT, then NEXT again
