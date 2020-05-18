@@ -103,7 +103,7 @@ Export your video in 16:9 ratio (should probably be 720p), then [upload your vid
 9. Under Visibility, select **Unlisted** if the video only makes sense if embedded in content, or **Public**. If you think the video would benefit from approval first, leave set as **Unlisted** or **Draft**.
 10. Click **SAVE**
 
-Then give the marketing team the heads0up that a new video has been published, letting them know what visibility state the video is currently in.
+Then give the marketing team the heads-up that a new video has been published, letting them know what visibility state the video is currently in.
 
 ## Embedding your YouTube video
 
