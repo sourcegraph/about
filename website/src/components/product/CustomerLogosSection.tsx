@@ -17,6 +17,10 @@ const ITEMS: (
         url: '/external-logos/cloudflare-color-logo.svg',
     },
     {
+        name: 'Nutanix',
+        url: '/external-logos/nutanix-logo.svg',
+    },
+    {
         name: 'Uber',
         url: '/external-logos/uber.svg',
     },
@@ -32,10 +36,14 @@ const ITEMS: (
         url: '/external-logos/qualtrics-logo.svg',
     },
     {
-        name: 'Convoy',
-        url: '/external-logos/convoy-logo.svg',
+        name: 'Toast',
+        url: '/external-logos/toast-logo.svg',
+    },
+    {
+        name: 'SoFi',
+        url: '/external-logos/sofi-logo.svg',
         link: {
-            url: '/case-studies/convoy-improved-on-boarding',
+            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
         },
     },
     {
@@ -48,17 +56,16 @@ const ITEMS: (
         },
     },
     {
-        topN: 5,
-        description: 'hospitality company',
-        className: 'customer-logos-section__item-logo-synthesized-0',
-    },
-    {
         name: 'Adidas Running',
         url: '/external-logos/adidas-running-logo.svg',
     },
     {
         name: 'Indeed',
         url: '/external-logos/indeed-logo.svg',
+    },
+    {
+        name: 'F5',
+        url: '/external-logos/f5-logo.svg',
     },
     {
         name: 'Quantcast',
@@ -75,23 +82,24 @@ const ITEMS: (
         },
     },
     {
-        name: 'F5',
-        url: '/external-logos/f5-logo.svg',
-    },
-    {
-        name: 'SoFi',
-        url: '/external-logos/sofi-logo.svg',
-        link: {
-            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
-        },
-    },
-    {
         name: 'Collective Health',
         url: '/external-logos/collective-health-logo.svg',
     },
     {
+        name: 'Convoy',
+        url: '/external-logos/convoy-logo.svg',
+        link: {
+            url: '/case-studies/convoy-improved-on-boarding',
+        },
+    },
+    {
         name: 'Apex Clearing',
         url: '/external-logos/apex-clearing-logo.png',
+    },
+    {
+        topN: 5,
+        description: 'hospitality company',
+        className: 'customer-logos-section__item-logo-synthesized-0',
     },
     {
         name: 'Plaid',
@@ -100,10 +108,6 @@ const ITEMS: (
     {
         name: 'Expanse',
         url: '/external-logos/expanse-logo.svg',
-    },
-    {
-        name: 'Nubank',
-        url: '/external-logos/nubank-logo.svg',
     },
     {
         name: 'Thought Machine',
