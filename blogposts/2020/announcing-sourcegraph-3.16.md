@@ -78,11 +78,11 @@ To take advantage of of this feature, add a `versionContexts` block to the exper
       "revisions": [
         {
           "repo": "github.com/sourcegraph/sourcegraph",
-          "ref": "v3.16.0"
+          "rev": "v3.16.0"
         },
         {
           "repo": "github.com/sourcegraph/zoekt",
-          "ref": "b56036a3b745033badc48807bd67e91cd8d73bdf"
+          "rev": "b56036a3b745033badc48807bd67e91cd8d73bdf"
         }
       ]
     }
