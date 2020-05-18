@@ -64,7 +64,7 @@ Recording a great screencast is a large topic, but here are some essentials to k
 - Decide whether it should be standalone, or if it only makes sense when embedded with content
 - Ideally, GIFs should less than 15-20 seconds in length, otherwise, it’s most likely better as a video
 - Invest in learning a tool such as ScreenFlow if you need to annotate and/or edit your recordings
-- Does your GIF or video make sense without an accompanying explanation? If not, then a VoiceOver or text annotations can help a lot
+- Does your GIF or video make sense without an accompanying explanation? If not, then a voice-over or text annotations can help a lot
 
 Like most things, practice makes perfect, but if you’re wanting to get some advice before taking the plunge, Ryan, Thorsten, and Quinn (sqs), have all created screencasts and can help you get started, so just reach out on Slack.
 
