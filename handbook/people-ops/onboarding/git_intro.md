@@ -13,7 +13,7 @@ To visualize the git flow, there's [an article version](https://guides.github.co
 
 ## Unique to sourcegraph
 
-- For repositories such as `sourcegraph/sourcegraph` you should make pull requests from branches on the main repository instead of forking and making a pull request. This is due to how CI currently only runs on trusted contributors. See [external contributions](handbook/engineering/external_contributions.md)
+- For repositories such as `sourcegraph/sourcegraph` you should make pull requests from branches on the same repository instead of forking and making a pull request from your personal forks. This is because our CI currently only runs automatically for trusted contributors. See [external contributions](handbook/engineering/external_contributions.md) for more details.
 
 ## More information
 
