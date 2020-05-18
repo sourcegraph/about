@@ -1,17 +1,17 @@
 # Adding a screenshot or screen recording (GIF and video)
 
-> Note: This guide presumes macOS
+> Note: This guide presumes macOS.
 
 ## TL;DR
 
 - Favor capturing only the part of the screen that’s required
 - Keep GIFs 15 seconds or less
 - GIFs are typically great for short "check this out" recordings, where videos are better at "how-to" or promotional style content
-- Keep GIF and images as small as possible with no retina sizes (just 1 x)
-- If doing a full-screen recording, 1280x720 (720p) will produce easy to read results at default settings.
-- If you’re producing visual content regularly, invest in paid apps (you can expense them too).
-   - Chose CleanShot if just doing screenshots and GIFs.
-   - Add ScreenFlow to your list if you plan on doing videos frequently, as you will appreciate editing and clip speed-up capabilities.
+- Keep GIF and images as small as possible with no retina sizes (ratio of image size to intended display size is 1:1)
+- If doing a full-screen recording, 1280x720 (720p) will produce easy to read results at default settings
+- If you’re producing visual content regularly, invest in paid apps (you can expense them too):
+  - Chose [Cleanshot](https://getcleanshot.com/) if just doing screenshots and GIFs.
+  - Add ScreenFlow to your list if you plan on doing videos frequently, as you will appreciate editing and clip speed-up capabilities.
 
 ## Adding a screenshot
 
@@ -21,8 +21,10 @@ Whether you need a dedicated screenshot application or not depends on how often 
 
 - [Native macOS](https://support.apple.com/en-au/HT201361)<br/>
 Great for simple screenshots
+
 - [Snagit](https://www.techsmith.com/screen-capture.html)<br/>
 Great annotation tools
+
 - [Cleanshot](https://getcleanshot.com/)<br/>
 Nice workflow, great screenshot annotations (also does basic GIF and video recordings)
 
@@ -30,7 +32,7 @@ Nice workflow, great screenshot annotations (also does basic GIF and video recor
 
 - Only capture the part of the screen that is necessary
 - Maximum width should be 750px
-- Do not use retina sizes as screenshots look fine at 1x
+- Do not use retina sizes as screenshots look fine at 1x (ratio of image size to intended display size is 1:1)
 - If needed, use screenshot annotations to further contextualize visual elements
 - Consider adding a caption below the image for additional context and information
 - Export as a PNG if the color palette is limited, else JPEG compression at 70-80% quality
@@ -71,7 +73,6 @@ Like most things, practice makes perfect, but if you’re wanting to get some ad
 ### Adding audio or voice-overs
 
 TODO
-
 
 ## Adding start/end screens to videos
 
