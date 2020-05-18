@@ -68,6 +68,11 @@ Recording a great screencast is a large topic, but here are some essentials to k
 
 Like most things, practice makes perfect, but if you’re wanting to get some advice before taking the plunge, Ryan, Thorsten, and Quinn (sqs), have all created screencasts and can help you get started, so just reach out on Slack.
 
+
+## Adding start/end screens to videos
+
+TODO
+
 ## Embedding GIFs
 
 Using markdown for embedding images is sufficient in most circumstances, but if you need more control, you can embed using the <img /> element which then allows you to apply Bootstrap’s image, element display, and spacing utilities.
