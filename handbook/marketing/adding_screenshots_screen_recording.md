@@ -58,7 +58,7 @@ Simply the best screen recording, editing, and production tool available. Design
 Recording a great screencast is a large topic, but here are some essentials to keep in mind:
 
 - Ensure it has an easy to demonstrate and clear purpose, e.g. show smart search field autocomplete, syntax highlighting, and error handling
-- Make it as short and simple as possible, but not so short, it’s hard to know what you’re demonstrating
+- Make it as short and simple as possible, but enough to show what you're demonstrating
 - Only capture the part of the screen that is necessary. If the output is video, then aim for 16:9 ratio for YouTube
 - If the entire screen needs to be captured, then your resolution should be 1280x720 (720p), as that will make on-screen elements easy to read
 - Decide whether it should be standalone, or if it only makes sense when embedded with content
