@@ -16,7 +16,7 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**📌 Introducing version contexts to search past releases**](#introducing-version-contexts-to-search-past-releases)<br />
 
-[**📣 Campaigns**](#campaigns)<br />
+[**📣 Smoother getting started experience for campaigns**](#smoother-getting-started-experience-for-campaigns)<br />
 
 [**🎨 Best in class syntax highlighting**](#best-in-class-syntax-highlighting)<br />
 
@@ -90,13 +90,7 @@ To take advantage of of this feature, add a `versionContexts` block to the exper
 ]
 ```
 
-## Campaigns
-
-Besides multiple smaller bug fixes and performance improvements, we aimed to make it easier and more straightforward to start using campaigns on your own Sourcegraph instance by providing clearer instructions in the onboarding process.
-
-We also made it easier to setup the [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started), which we highly recommend to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
-
-The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and now features a video that explains what campaigns can do:
+## Smoother getting started experience for campaigns
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
@@ -105,7 +99,13 @@ The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) h
   <p style="text-align: center"><a href="https://youtu.be/aqcCrqRB17w" target="_blank">View on YouTube</a></p>
 </p>
 
-Campaign changeset usage counts including changesets created, added, and merged will be sent back in pings. [#10591](https://github.com/sourcegraph/sourcegraph/pull/10591)
+Besides multiple smaller bug fixes and performance improvements, we aimed to make it easier and more straightforward to start using campaigns on your own Sourcegraph instance by providing clearer instructions in the onboarding process.
+
+We also made it easier to setup the [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started), which we highly recommend to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
+
+The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and now features a video that explains what campaigns can do and is included above.
+
+Campaign changeset usage counts including changesets created, added, and merged will be sent back in pings.
 
 ## Best in class syntax highlighting
 
