@@ -11,5 +11,5 @@
   - [Opsgenie](https://sourcegraph.app.opsgenie.com/settings/users/)
   - [Docker Hub](https://hub.docker.com/orgs/sourcegraph)
 - Remove recurring 1-1.
-- Schedule time to discuss Sourcegraph's system architecture and tech stack.
+- Remove site admin privileges from Sourcegraph.com
 - Remove from on-call rotation.
