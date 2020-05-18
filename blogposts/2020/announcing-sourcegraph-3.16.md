@@ -92,6 +92,12 @@ To take advantage of of this feature, add a `versionContexts` block to the exper
 
 ## Campaigns
 
+Besides multiple smaller bug fixes and performance improvements, we aimed to make it easier and more straightforward to start using campaigns on your own Sourcegraph instance by providing clearer instructions in the onboarding process.
+
+We also made it easier to setup the [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started), which we highly recommend to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
+
+The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and now features a video that explains what campaigns can do:
+
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
     <iframe src="https://www.youtube.com/embed/aqcCrqRB17w" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
