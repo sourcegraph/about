@@ -72,11 +72,30 @@ Like most things, practice makes perfect, but if you’re wanting to get some ad
 
 ### Adding audio or voice-overs
 
-TODO
+How to add a great voice-over is a huge topic that encompasses things such as:
+
+- Voice technique
+- Creating a compelling script and storytelling
+- Having a pleasant-sounding voice
+- Audio recording quality
+- Mixing voice-overs concerns such as equalization, compression, noise gates, and loudness metering
+
+But to get you started, here are some essential tips:
+
+- Ensure you have a consistently quiet space. There's nothing wrong with going into your closet to record your voice-over if you have to.
+- Speak like you would as if you just met someone in person and wanted to show them something.
+- Smile when you talk. It sounds ridiculous, but it works as it helps you relax.
+- If you don't have a dedicated microphone, favor the one in your laptop over earbuds or headphones as they're built with phone calls in mind.
+- Record your video first, then record your voice-over as you watch your video. But, try to narrate your video when you record it so you know if you need to pause for a few seconds to explain something.
+- Ensure your voice over is loud enough by comparing the audio level in your video against a professionally produced video on YouTube. You can adjust the microphone input level in **System Preferences** > **Sound**.
+- Research what makes a great voice-over and takes notes on videos you think have fantastic voice-overs.
+
+<!-- todo(ryan): Move Podcasting guide to handbook-->
+More tips and recommendations are in our [podcasting guide](https://docs.google.com/document/d/1pHvSvLCjFiVoKZF3l27EBsCLjBNFTY6k_TEMAqSqiZ4) and you can also reach out to Ryan Blunden who would love to chat about all things voice-overs and audio, including who can provide voice-over coaching and mixing services.
 
 ## Adding start/end screens to videos
 
-TODO
+We don't typically use these but that doesn't mean anything should stop you. Reach out in the `#marketing` channel if you need any graphics designed for your video.
 
 ## Embedding GIFs
 
