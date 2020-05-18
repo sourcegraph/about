@@ -10,8 +10,8 @@
 - Keep GIF and images as small as possible with no retina sizes (just 1 x)
 - If doing a full-screen recording, 1280x720 (720p) will produce easy to read results at default settings.
 - If you’re producing visual content regularly, invest in paid apps (you can expense them too).
-- Chose CleanShot if just doing screenshots and GIFs.
-- Add ScreenFlow to your list if you plan on doing videos frequently, as you will appreciate editing and clip speed-up capabilities.
+   - Chose CleanShot if just doing screenshots and GIFs.
+   - Add ScreenFlow to your list if you plan on doing videos frequently, as you will appreciate editing and clip speed-up capabilities.
 
 ## Adding a screenshot
 
