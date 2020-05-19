@@ -167,9 +167,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [julia@sourcegraph.com](mailto:julia@sourcegraph.com), [@JuliaSourceress](https://twitter.com/JuliaSourceress), [LinkedIn](https://www.linkedin.com/in/juliagilinets/), [GitHub](https://github.com/juliasourceress)
 - Julia started out as a Software Engineer supporting the developer community at Palm, which to the generations of today might be thought of as mobile before mobile. She realized she loved forging business partnerships just as much as coding, and after over a decade of leading various customer facing teams has finally landed in the best of all worlds at Sourcegraph. She's passionate about technical innovation, efficiency, the human connection, and sleep. 
 
-## Adam Herzog
+## Adam Herzog (he/him)
 
-- Product Marketing Manager (he/him)
+- Product Marketing Manager 
 - San Francisco, CA, USA 🇺🇸
 - [herzog@sourcegraph.com](mailto:herzog@sourcegraph.com), [@ah3rz](https://twitter.com/ah3rz), [LinkedIn](https://www.linkedin.com/in/herzogadam/)
 - Adam is an experienced developer marketer, now focusing on product marketing at Sourcegraph. He's previously led developer relations, digital demand generation, and other marketing functions at companies like Docker, Humio, and Neo4j. Adam advocates for inclusivity 🌈 within the entire tech industry (and the world!) and probably uses the word "awesome" too much. He is passionate about good food, Hatha yoga, and jean jackets in no particular order.
