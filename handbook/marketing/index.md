@@ -41,8 +41,9 @@ An inquiry is a person who has requested information from Sourcegraph for the fi
 
 A marketing qualified lead (MQL) is any of:
 
-- A representative who submitted a demo or contact form AND has >= 200 engineers 
+- A person who submits a demo or contact form AND has >= 200 engineers
 - A person who sets up a new Sourcegraph instance AND revenue >= $50M
+- A person downloads an eBook or white paper AND has >= 200 engineers and/or >= $50M revenue
 
 [Specific email domains](https://app.hubspot.com/property-settings/2762526/properties?action=edit&property=inbound_scoring_qualification&search=inbou&type=0-1) are excluded.
 
