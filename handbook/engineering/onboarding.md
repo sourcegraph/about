@@ -13,7 +13,7 @@ Welcome to Sourcegraph! This document will guide you through engineering specifi
   - [Opsgenie](https://sourcegraph.app.opsgenie.com/settings/users/)
   - [Docker Hub](https://hub.docker.com/orgs/sourcegraph)
   - [Site24x7](https://www.site24x7.com) (optional; recommended for Distribution team members)
-  - [Sourcegraph CLA spreadsheet](https://docs.google.com/spreadsheets/d/1HOeeYxoDGT8CmP-EOBak-WTnXliYLn7XPpAEfj4Paks/edit#gid=608681547) (add the new teammate's GitHub username to the "GitHub Handle" column.
+  - [Sourcegraph CLA spreadsheet](https://docs.google.com/spreadsheets/d/1HOeeYxoDGT8CmP-EOBak-WTnXliYLn7XPpAEfj4Paks/edit#gid=608681547) (add the new teammate's GitHub username to the "GitHub Handle" column)
 - Schedule a recurring [1-1](../leadership/1-1.md).
 - Schedule time to discuss Sourcegraph's system architecture and tech stack.
 - Schedule a time to discuss on-call rotation.
