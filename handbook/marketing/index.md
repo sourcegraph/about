@@ -44,6 +44,8 @@ A marketing qualified lead (MQL) is any of:
 - A representative who submitted a demo or contact form AND has >= 200 engineers 
 - A person who sets up a new Sourcegraph instance AND revenue >= $50M
 
+[Specific email domains](https://app.hubspot.com/property-settings/2762526/properties?action=edit&property=inbound_scoring_qualification&search=inbou&type=0-1) are excluded.
+
 ### [SQL](../sales/index.md#lead) (sales-qualified lead)
 
 See "[Lead](../sales/index.md#lead)" in the sales team handbook section.
