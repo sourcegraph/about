@@ -195,7 +195,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [erik@sourcegraph.com](mailto:erik@sourcegraph.com), [eseliger](https://github.com/eseliger), [LinkedIn](https://www.linkedin.com/in/erik-seliger/)
 - Erik has a background in Systems Engineering and decided that software is the most interesting field of engineering, which he never quit since first touching Turbo Pascal at age 11.
 
-## Kai Passo
+## Kai Passo (he/him)
 
 - Account Executive
 - Atlanta, GA, USA 🇺🇸
