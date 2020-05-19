@@ -10,6 +10,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
+- Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)
 
 ## Quinn Slack
