@@ -98,11 +98,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Noemi Mercado (she/her)
 
-- First name is pronounced **no-EH-mee**
 - People Ops
 - San Francisco, CA, USA 🇺🇸
-- [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/)
-- Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. She has two teenage brothers that keep her up to date on the latest trends and lingo. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pug named Pumba.
+- [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/), [pronounce my name 🔊](https://www.name-coach.com/noemi-mercado)
+- Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pup named Valencia.
 
 ## Nick Snyder (he/him)
 
