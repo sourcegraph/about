@@ -53,16 +53,9 @@ Sourcegraph couldn't be what it is without the community.
 
 ## Introducing version contexts to search past releases
 
-TODO: video
-
-<!--
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/{VIDEO_ID}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://youtu.be/{VIDEO_ID}" target="_blank">View on YouTube</a></p>
-</p>
--->
+<div class="my-4 video-embed embed-responsive embed-responsive-16by9 ">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S_gj44k97CA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+</div>
 
 Many large organizations have old versions of code running in production and need to search across all the code for that release. Sourcegraph 3.16 introduces the ability to create a context consisting of many repositories with specific revisions to be searched. As you explore search results, you might need to navigate your code. Version contexts are respected by code intelligence hovers (go to definition and find references), and allow you to quickly traverse the specific code revisions you care about.
 
