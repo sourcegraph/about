@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "eWeek",
+      "newsTitle": "Four Trends Shaping the New Era of Big Code",
+      "newsDate": "May 18, 2020",
+      "newsLink": "https://www.eweek.com/development/four-trends-shaping-the-new-era-of-big-code",
+      "newsImage": "/external-logos/eweek-logo.svg"
+    },
+    {
       "newsSource": "Podcast.__init__",
       "newsTitle": "Podcast: Managing Distributed Teams In The Age Of Remote Work",
       "newsDate": "May 11, 2020",
