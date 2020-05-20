@@ -27,7 +27,7 @@ import Helmet from 'react-helmet'
  */
 const featuredPosts: BlogPost[] = [
     {
-        title: 'Sourcegraph 3.16: Version contexts, campaigns, and major syntax highlighting improvements',
+        title: 'Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements',
         description:
             'Read about and watch videos of the features released in Sourcegraph 3.16 on May 20, 2020. Upgrade your Sourcegraph instance today!',
         thumbnail: '/sourcegraph-mark.png',

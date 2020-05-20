@@ -98,7 +98,7 @@ Sourcegraph 3.16 includes multiple smaller bug fixes and performance improvement
 
 We highly recommend configuring [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started) for your Sourcegraph instance to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
 
-The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and now features a video that explains what campaigns can do and is included above.
+The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and includes the video above that explains what campaigns can do.
 
 Campaigns are currently in beta. During the beta period, campaigns are free to use. After the beta period, campaigns will be available as a paid add-on. Please [contact us](mailto:sales@sourcegraph.com) for more information.
 
@@ -127,7 +127,7 @@ We introduced the smart search bar for plain text mode that provides syntax high
 
 ![performance-improvements-code-intel](/blog/3-16-ts-to-go-lsif.png "performance-improvements-code-intel")
 
-Our precise code intelligence backend has been rewritten from TypeScript to Go. This change is part of a larger effort to aggressively optimize conversion and querying of LSIF data, which will start becoming more apparent in upcoming releases. Even with this initial improvement, we’re seeing improvements on precise code intelligence query performance. The following graph shows the five-run average duration of our [integration test](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) before and after the rewrite.
+Our precise code intelligence backend has been rewritten from TypeScript to Go. This change is part of a larger effort to aggressively optimize conversion and querying of LSIF data, which will be more apparent in upcoming releases. Even with this initial improvement, we’re seeing improvements on precise code intelligence query performance. The following graph shows the five-run average duration of our [integration test](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) before and after the rewrite.
 
 ## Discover useful scopes with `repogroup` autocompletion
 
@@ -166,17 +166,17 @@ Additionally, Cobol and Tcl have been added to our growing list of languages sup
   - 228 commits / 1 year of improvements to the syntax highlighter library Sourcegraph uses ([syntect](https://github.com/trishume/syntect)).
   - 432 commits / 1 year of improvements to the base syntax definitions for ~36 languages Sourcegraph uses ([sublimehq/Packages](https://github.com/sublimehq/Packages)).
   - 30 new file extensions/names now detected.
-  - Likely fixes other major instability and language support issues. #9557
+  - Likely fixes other major instability and language support issues. [#9557](https://github.com/sourcegraph/sourcegraph/issues/9557)
   - Added [Smarty](#2885), [Ethereum / Solidity / Vyper)](#2440), [Cuda](#5907), [COBOL](#10154), [vb.NET](#4901), and [ASP.NET](#4262) syntax highlighting.
-  - Fixed OCaml syntax highlighting #3545
+  - Fixed OCaml syntax highlighting [#3545](https://github.com/sourcegraph/sourcegraph/issues/3545)
   - Bazel/Starlark support improved (.star, BUILD, and many more extensions now properly highlighted). #8123
 - New permissions page in both user and repository settings when background permissions syncing is enabled (`"permissions.backgroundSync": {"enabled": true}`). [#10473](https://github.com/sourcegraph/sourcegraph/pull/10473) [#10655](https://github.com/sourcegraph/sourcegraph/pull/10655)
-- A new dropdown for choosing version contexts appears on the left of the query input when version contexts are specified in `experimentalFeatures.versionContext` in site configuration. Version contexts allow you to scope your search to specific sets of repos at revisions.
+- A new dropdown for choosing version contexts appears on the left of the query input when version contexts are specified in `experimentalFeatures.versionContext` in site configuration. Version contexts allow you to scope your search to specific sets of repos at revisions. [#10606](https://github.com/sourcegraph/sourcegraph/pull/10606)
 - Campaign changeset usage counts including changesets created, added and merged will be sent back in pings. [#10591](https://github.com/sourcegraph/sourcegraph/pull/10591)
 - Diff views now feature syntax highlighting and can be properly copy-pasted. [#10437](https://github.com/sourcegraph/sourcegraph/pull/10437)
 - Admins can now download an anonymized usage statistics ZIP archive in the **Site admin > Usage stats**. Opting to share this archive with the Sourcegraph team helps us make the product even better. [#10475](https://github.com/sourcegraph/sourcegraph/pull/10475)
-- Extension API: There is now a field `versionContext` and subscribable `versionContextChanges` in `Workspace` to allow extensions to respect the instance's version context.
-- The smart search field, providing syntax highlighting, hover tooltips, and validation on filters in search queries, is now activated by default. It can be disabled by setting `{ "experimentalFeatures": { "smartSearchField": false } }` in global settings.
+- Extension API: There is now a field `versionContext` and subscribable `versionContextChanges` in `Workspace` to allow extensions to respect the instance's version context. [#10601](https://github.com/sourcegraph/sourcegraph/pull/10601) and [#10606](https://github.com/sourcegraph/sourcegraph/pull/10606)
+- The smart search field, providing syntax highlighting, hover tooltips, and validation on filters in search queries, is now activated by default. It can be disabled by setting `{ "experimentalFeatures": { "smartSearchField": false } }` in global settings. [#10648](https://github.com/sourcegraph/sourcegraph/pull/10648)
 
 ### Changed
 
@@ -217,4 +217,10 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+## Share your feedback
+
+We want to hear what you think about Sourcegraph and the new updates in 3.16. Post on Twitter (remember to include ([@srcgraph](https://twitter.com/srcgraph)) and we'll send you Sourcegraph swag!
+
+Any questions about Sourcegraph? Get in touch on Twitter <a href="https://twitter.com/srcgraph">@srcgraph</a>, file an issue in our{' '}<a href="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</a>, or email{' '}<a href="mailto:feedback@sourcegraph.com">feedback@sourcegraph.com</a>. We look forward to hearing from you!
+
+From the [entire Sourcegraph team](https://about.sourcegraph.com/company/team)), happy coding!
