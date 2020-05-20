@@ -102,13 +102,11 @@ Campaign changeset usage counts including changesets created, added, and merged 
 
 ## Best in class syntax highlighting
 
-TODO: Erik is creating screenshots
+![](https://storage.googleapis.com/sourcegraph-assets/blog/diff.gif?v=2)
 
-We have made major improvements to syntax highlighting throughout Sourcegraph. In addition to general improvements, six new languages are supported (Smarty, Ethereum / Solidity / Vyper, Cuda, COBOL, vb.NET, and ASP.NET), and 30 new file extensions are now detected. 
+We have made major improvements to syntax highlighting throughout Sourcegraph. In addition to general improvements, six new languages are supported (Smarty, Ethereum / Solidity / Vyper, Cuda, COBOL, vb.NET, and ASP.NET), and 30 new file extensions are now detected.
 
-Additionally, this release adds best-in-class syntax highlighting to code diffs. This richer view of diffs can easily be accessed from your pull request (or merge request) using the Sourcegraph browser extension by clicking on the Sourcegraph button in a file header. Alternatively, you can compare revisions directly from Sourcegraph by going to the compare section from a repository page. You can also see this in action on your [campaigns](#campaigns) to make changes across all the repositories at your organization. 
-
-Take a look at the syntax highlighting on a diff that &lt;WHAT IS THIS DIFF ABOUT> in the Sourcegraph repository.
+Additionally, this release adds best-in-class syntax highlighting to code diffs. This richer view of diffs can easily be accessed from your pull request (or merge request) using the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) by clicking on the Sourcegraph button in a file header. Alternatively, you can compare revisions directly from Sourcegraph by going to the compare section from a repository page. You can also see this in action on your [campaigns](#campaigns) to make changes across all the repositories at your organization.
 
 ## Easier to read queries in plain text mode
 
