@@ -50,6 +50,7 @@ func main() {
 	//
 	// TODO: Replace with API call as part of the running of this script
 	sourcegraphers := map[string]string{
+		"adaaaam":         "",
 		"aileenrose":      "",
 		"attfarhan":       "",
 		"beyang":          "",
@@ -57,9 +58,11 @@ func main() {
 		"christinaforney": "",
 		"creachadair":     "",
 		"dadlerj":         "",
+		"ebrodymoore":     "",
 		"efritz":          "",
 		"eseliger":        "",
 		"felixfbecker":    "",
+		"gbrik":           "",
 		"ggilmore":        "",
 		"ijt":             "",
 		"KattMingMing":    "",
@@ -72,6 +75,7 @@ func main() {
 		"nicksnyder":      "",
 		"renovate":        "",
 		"renovate[bot]":   "",
+		"rrhyne":          "",
 		"ryan-blunden":    "",
 		"ryanslade":       "",
 		"rvantonder":      "",
