@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.16: Version contexts, campaigns, and major syntax highlighting improvements"
+title: "Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements"
 author: Christina Forney
 publishDate: 2020-05-20T10:00-07:00
 tags: [
@@ -57,7 +57,7 @@ Sourcegraph couldn't be what it is without the community.
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S_gj44k97CA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-Many large organizations have old versions of code running in production and need to search across all the code for that release. Sourcegraph 3.16 introduces the ability to create a context consisting of many repositories with specific revisions to be searched. As you explore search results, you might need to navigate your code. Version contexts are respected by code intelligence hovers (go to definition and find references), and allow you to quickly traverse the specific code revisions you care about.
+Many organizations have old releases running in production and need to search across all the code for a release. Sourcegraph 3.16 introduces version contexts as an experimental feature. This introduces the ability to create a context consisting of many repositories with specific revisions to be searched. As you explore search results, you might need to navigate your code. Version contexts are respected by code intelligence hovers (go to definition and find references), and allow you to quickly traverse the specific code revisions you care about.
 
 In this release, any non-master branches that are specified in the context will use our non-indexed search. This means that results may be slow for larger deployments. We are working on adding support for indexing additional branches that are specified within the context, and will include this in a future release.
 
@@ -83,6 +83,8 @@ To take advantage of of this feature, add a `versionContexts` block to the exper
 ]
 ```
 
+We are excited to hear your feedback as we continue to work on this feature! Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
+
 ## Smoother getting started experience for campaigns
 
 <p class="container">
@@ -92,19 +94,19 @@ To take advantage of of this feature, add a `versionContexts` block to the exper
   <p style="text-align: center"><a href="https://youtu.be/aqcCrqRB17w" target="_blank">View on YouTube</a></p>
 </p>
 
-Besides multiple smaller bug fixes and performance improvements, we aimed to make it easier and more straightforward to start using campaigns on your own Sourcegraph instance by providing clearer instructions in the onboarding process.
+Sourcegraph 3.16 includes multiple smaller bug fixes and performance improvements to campaigns. In addition, we focused on making it easier and more straightforward to start using campaigns on your Sourcegraph instance. We addressed this in several ways: by providing clearer instructions in the onboarding process, improving the webhooks set up process, and by improving our documentation.
 
-We also made it easier to set up [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started), which we highly recommend to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
+We highly recommend configuring [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started) for your Sourcegraph instance to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
 
 The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and now features a video that explains what campaigns can do and is included above.
 
-Campaigns are currently in beta. During the beta period, campaigns are free to use. After the beta period, campaigns will be available as a paid add-on. Please contact us for more information.
+Campaigns are currently in beta. During the beta period, campaigns are free to use. After the beta period, campaigns will be available as a paid add-on. Please [contact us](mailto:sales@sourcegraph.com) for more information.
 
 ## Best-in-class syntax highlighting
 
 ![syntax_highlighting](https://storage.googleapis.com/sourcegraph-assets/blog/diff.gif?v=2)
 
-We have made major improvements to syntax highlighting throughout Sourcegraph. In addition to general improvements, six new languages are supported (Smarty, Ethereum / Solidity / Vyper, Cuda, COBOL, vb.NET, and ASP.NET), and 30 new file extensions are now detected.
+Sourcegraph 3.16 includes major improvements to syntax highlighting throughout Sourcegraph. In addition to general improvements, six new languages are supported (Smarty, Ethereum / Solidity / Vyper, Cuda, COBOL, vb.NET, and ASP.NET), and 30 new file extensions are now detected.
 
 Additionally, this release adds best-in-class syntax highlighting to code diffs. This richer view of diffs can easily be accessed from your pull request (or merge request) using the Sourcegraph browser extension by clicking on the Sourcegraph button in a file header. Alternatively, you can compare revisions directly from Sourcegraph by going to the compare section from a repository page. You can also see this in action on your [campaigns](#campaigns) to make changes across all the repositories at your organization.
 
@@ -129,7 +131,7 @@ We introduced the smart search bar for plain text mode that provides syntax high
 
 ![performance-improvements-code-intel](/blog/3-16-ts-to-go-lsif.png "performance-improvements-code-intel")
 
-As of Sourcegraph 3.16, our precise code intelligence backend has been rewritten from TypeScript to Go. This effort is part of a larger effort to aggressively optimize conversion and querying of LSIF data, which will start becoming more apparent in upcoming releases. Even with this initial improvement, we’re seeing improvements on precise code intelligence query performance. The following graph shows the five-run average duration of our [integration test](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) before and after the rewrite.
+Our precise code intelligence backend has been rewritten from TypeScript to Go. This change is part of a larger effort to aggressively optimize conversion and querying of LSIF data, which will start becoming more apparent in upcoming releases. Even with this initial improvement, we’re seeing improvements on precise code intelligence query performance. The following graph shows the five-run average duration of our [integration test](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) before and after the rewrite.
 
 ## Discover useful scopes with `repogroup` autocompletion
 
