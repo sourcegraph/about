@@ -18,7 +18,7 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 
 [**📣 Smoother getting started experience for campaigns**](#smoother-getting-started-experience-for-campaigns)<br />
 
-[**🎨 Best in class syntax highlighting**](#best-in-class-syntax-highlighting)<br />
+[**🎨 Best-in-class syntax highlighting**](#best-in-class-syntax-highlighting)<br />
 
 [**👀 Easier to read queries in plain text mode**](#easier-to-read-queries-in-plain-text-mode)<br />
 
@@ -94,19 +94,21 @@ To take advantage of of this feature, add a `versionContexts` block to the exper
 
 Besides multiple smaller bug fixes and performance improvements, we aimed to make it easier and more straightforward to start using campaigns on your own Sourcegraph instance by providing clearer instructions in the onboarding process.
 
-We also made it easier to setup the [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started), which we highly recommend to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
+We also made it easier to set up [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started), which we highly recommend to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
 
 The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and now features a video that explains what campaigns can do and is included above.
 
-Campaign changeset usage counts including changesets created, added, and merged will be sent back in pings.
+Campaigns are currently in beta. During the beta period, campaigns are free to use. After the beta period, campaigns will be available as a paid add-on. Please contact us for more information.
 
-## Best in class syntax highlighting
+## Best-in-class syntax highlighting
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/diff.gif?v=2)
+![syntax_highlighting](https://storage.googleapis.com/sourcegraph-assets/blog/diff.gif?v=2)
 
 We have made major improvements to syntax highlighting throughout Sourcegraph. In addition to general improvements, six new languages are supported (Smarty, Ethereum / Solidity / Vyper, Cuda, COBOL, vb.NET, and ASP.NET), and 30 new file extensions are now detected.
 
-Additionally, this release adds best-in-class syntax highlighting to code diffs. This richer view of diffs can easily be accessed from your pull request (or merge request) using the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) by clicking on the Sourcegraph button in a file header. Alternatively, you can compare revisions directly from Sourcegraph by going to the compare section from a repository page. You can also see this in action on your [campaigns](#campaigns) to make changes across all the repositories at your organization.
+Additionally, this release adds best-in-class syntax highlighting to code diffs. This richer view of diffs can easily be accessed from your pull request (or merge request) using the Sourcegraph browser extension by clicking on the Sourcegraph button in a file header. Alternatively, you can compare revisions directly from Sourcegraph by going to the compare section from a repository page. You can also see this in action on your [campaigns](#campaigns) to make changes across all the repositories at your organization.
+
+For an example of syntax highlighting on a diff, check out [a recent change in the Sourcegraph repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/commit/3fa28d025d615894867f550dfdbf5fb5b6de958f). Make sure to try it out in both dark and light mode!
 
 ## Easier to read queries in plain text mode
 
@@ -132,15 +134,6 @@ As of Sourcegraph 3.16, our precise code intelligence backend has been rewritten
 ## Discover useful scopes with `repogroup` autocompletion
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/repogroup_completion.gif" alt="Repogroup autocompletion">
-
-<!--
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/{VIDEO_ID}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://youtu.be/{VIDEO_ID}" target="_blank">View on YouTube</a></p>
-</p>
--->
 
 The `repogroup` filter is useful for creating collections of repositories to search over within Sourcegraph. However, there wasn’t an easy way for users to learn what `repogroups` were available. Now, Sourcegraph provides autocompletion to help you discover available options. This happens automatically when you start typing, or can be triggered using the ctrl-spacebar keyboard shortcut. Try it out in the new smart search bar for plain text mode or in interactive mode!
 
