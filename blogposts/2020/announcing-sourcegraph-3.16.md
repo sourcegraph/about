@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.16
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: /blog/3.16-release-blog-img.jpg
 published: true
 ---
 
