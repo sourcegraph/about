@@ -131,7 +131,7 @@ Our precise code intelligence backend has been rewritten from TypeScript to Go. 
 
 ## Discover useful scopes with `repogroup` autocompletion
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/repogroup_completion.gif" alt="Repogroup autocompletion">
+![Repogroup-autocompletion](https://storage.googleapis.com/sourcegraph-assets/repogroup_completion.gif)
 
 The `repogroup` filter is useful for creating collections of repositories to search over within Sourcegraph. However, there wasn’t an easy way for users to learn what `repogroups` were available. Now, Sourcegraph provides autocompletion to help you discover available options. This happens automatically when you start typing, or can be triggered using the ctrl-spacebar keyboard shortcut. Try it out in the new smart search bar for plain text mode or in interactive mode!
 
@@ -167,7 +167,7 @@ Additionally, Cobol and Tcl have been added to our growing list of languages sup
   - 432 commits / 1 year of improvements to the base syntax definitions for ~36 languages Sourcegraph uses ([sublimehq/Packages](https://github.com/sublimehq/Packages)).
   - 30 new file extensions/names now detected.
   - Likely fixes other major instability and language support issues. [#9557](https://github.com/sourcegraph/sourcegraph/issues/9557)
-  - Added [Smarty](#2885), [Ethereum / Solidity / Vyper)](#2440), [Cuda](#5907), [COBOL](#10154), [vb.NET](#4901), and [ASP.NET](#4262) syntax highlighting.
+  - Added [Smarty](https://github.com/sourcegraph/sourcegraph/issues/2885), [Ethereum / Solidity / Vyper)](https://github.com/sourcegraph/sourcegraph/issues/2440), [Cuda](https://github.com/sourcegraph/sourcegraph/issues/5907), [COBOL](https://github.com/sourcegraph/sourcegraph/issues/10154), [vb.NET](https://github.com/sourcegraph/sourcegraph/issues/4901), and [ASP.NET](https://github.com/sourcegraph/sourcegraph/issues/4262) syntax highlighting.
   - Fixed OCaml syntax highlighting [#3545](https://github.com/sourcegraph/sourcegraph/issues/3545)
   - Bazel/Starlark support improved (.star, BUILD, and many more extensions now properly highlighted). #8123
 - New permissions page in both user and repository settings when background permissions syncing is enabled (`"permissions.backgroundSync": {"enabled": true}`). [#10473](https://github.com/sourcegraph/sourcegraph/pull/10473) [#10655](https://github.com/sourcegraph/sourcegraph/pull/10655)
@@ -221,6 +221,6 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 We want to hear what you think about Sourcegraph and the new updates in 3.16. Post on Twitter (remember to include ([@srcgraph](https://twitter.com/srcgraph)) and we'll send you Sourcegraph swag!
 
-Any questions about Sourcegraph? Get in touch on Twitter <a href="https://twitter.com/srcgraph">@srcgraph</a>, file an issue in our{' '}<a href="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</a>, or email{' '}<a href="mailto:feedback@sourcegraph.com">feedback@sourcegraph.com</a>. We look forward to hearing from you!
+Any questions about Sourcegraph? Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com). We look forward to hearing from you!
 
-From the [entire Sourcegraph team](https://about.sourcegraph.com/company/team)), happy coding!
+From the [entire Sourcegraph team](https://about.sourcegraph.com/company/team), happy coding!
