@@ -214,6 +214,8 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 - [@marco-c](https://github.com/marco-c)
 - [@jhutchings1](https://github.com/jhutchings1)
 - [@philjones](https://github.com/philjones)
+- [@fedealconada](https://github.com/fedealconada)
+- [@notjrbauer](https://github.com/notjrbauer)
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
