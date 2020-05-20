@@ -94,9 +94,9 @@ We are excited to hear your feedback as we continue to work on this feature! Get
   <p style="text-align: center"><a href="https://youtu.be/aqcCrqRB17w" target="_blank">View on YouTube</a></p>
 </p>
 
-Sourcegraph 3.16 includes multiple smaller bug fixes and performance improvements to campaigns. In addition, we focused on making it easier and more straightforward to start using campaigns on your Sourcegraph instance. We addressed this in several ways: by providing clearer instructions in the onboarding process, improving the webhooks set up process, and by improving our documentation.
+Sourcegraph 3.16 includes multiple smaller bug fixes and performance improvements to campaigns. In addition, we focused on making it easier and more straightforward to start using campaigns on your Sourcegraph instance. We addressed this in several ways: by providing clearer instructions in the onboarding process, improving the webhooks setup process, and by improving our documentation.
 
-We highly recommend configuring [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started) for your Sourcegraph instance to reduce load on the code host and to improve the speed with which campaigns are updated in Sourcegraph.
+We highly recommend configuring [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started) for your Sourcegraph instance to reduce the load on the code host, and to improve the syncing performance of campaigns updated in Sourcegraph with the code host.
 
 The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and includes the video above that explains what campaigns can do.
 
