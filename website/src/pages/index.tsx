@@ -27,18 +27,18 @@ import Helmet from 'react-helmet'
  */
 const featuredPosts: BlogPost[] = [
     {
+        title: 'Sourcegraph 3.16: Version contexts, campaigns, and major syntax highlighting improvements',
+        description:
+            'Read about and watch videos of the features released in Sourcegraph 3.16 on May 20, 2020. Upgrade your Sourcegraph instance today!',
+        thumbnail: '/sourcegraph-mark.png',
+        url: '/blog/sourcegraph-3.16'
+    },
+    {
         title: 'We made a children\'s book titled "Our "ABCs: Always Be Coding" and it\'s free to download',
         description:
             'We\'ve created a new digital children\'s book titled "Our ABCs: Always Be Coding”—for all children at home that wonder what their techie parents do all day, night, and some weekends, too!',
         thumbnail: '/other/abcs-book/our-abcs.png',
         url: '/blog/our-abcs-always-be-coding-childrens-book'
-    },
-    {
-        title: 'Sourcegraph 3.15: Campaigns beta available, experimental AND/OR operators, and improved observability',
-        description:
-            'Read about and watch videos of the features released in Sourcegraph 3.15 on April 20, 2020. Upgrade your Sourcegraph instance today!',
-        thumbnail: '/blog/3.15-release-blog-img.jpg',
-        url: '/blog/sourcegraph-3.15'
     },
     {
         title: 'Universal Code Intelligence for GitHub with the Sourcegraph browser extension',
