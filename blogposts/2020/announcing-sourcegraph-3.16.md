@@ -114,16 +114,12 @@ For an example of syntax highlighting on a diff, check out [a recent change in t
 
 ## Easier to read queries in plain text mode
 
-TODO: video
-
-<!--
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/{VIDEO_ID}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube.com/embed/ZtnqWhIcLeg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://youtu.be/{VIDEO_ID}" target="_blank">View on YouTube</a></p>
+  <p style="text-align: center"><a href="https://youtu.be/ZtnqWhIcLeg" target="_blank">View on YouTube</a></p>
 </p>
--->
 
 We introduced the smart search bar for plain text mode that provides syntax highlighting, hover tooltips, and diagnostics on search queries in [Sourcegraph 3.13](https://about.sourcegraph.com/blog/sourcegraph-3.13#smart-search-field-in-plain-text-mode). This means that Sourcegraph can provide useful hints, such as fixing invalid quotes, to get to search results faster. Sourcegraph 3.16 removes the feature flag and makes this the standard experience for all users in plain text mode.
 
