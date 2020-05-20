@@ -133,7 +133,7 @@ As of Sourcegraph 3.16, our precise code intelligence backend has been rewritten
 
 ## Discover useful scopes with `repogroup` autocompletion
 
-TODO: video
+<img src="https://storage.googleapis.com/sourcegraph-assets/repogroup_completion.gif" alt="Repogroup autocompletion">
 
 <!--
 <p class="container">
