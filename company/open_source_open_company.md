@@ -1,6 +1,6 @@
 # Sourcegraph: open product, open company, open source
 
-As part of making Sourcegraph open source, we now build Sourcegraph ([product direction](../direction/index.md) and [issues](http://github.com/sourcegraph/sourcegraph/issues/)) as an **open product**, and **open company**. Our [website](https://github.com/sourcegraph/about) and [documentation](https://github.com/sourcegraph/sourcegraph/tree/master/doc) is now open source  which holds product- and company-related docs.
+As part of making Sourcegraph open source, we now build Sourcegraph ([product direction](../direction/index.md) and [issues](http://github.com/sourcegraph/sourcegraph/issues/)) as an **open product**, and **open company**. Our [website](https://github.com/sourcegraph/about) and [documentation](https://github.com/sourcegraph/sourcegraph/tree/master/doc) is now open source which holds product- and company-related docs.
 
 Here's how we define these terms:
 
@@ -12,7 +12,7 @@ You might not realize it, but the products you use every day are not just open s
 
 ## Open company
 
-This means that principles, strategies, and processes for internal company functions are publicly documented, including for recruiting, marketing, pricing, and sales—not just engineering and product.
+This means that principles, strategies, and processes for internal company functions are publicly documented in [our handbook](../handbook/index.md), including for recruiting, marketing, pricing, and sales—not just engineering and product.
 
 Being an open company is important because being an open product isn't enough to gain the trust of developers. You need to do the same for other important parts of the company that affect the product, the open source project, and the users. See [GitLab's pricing strategy](https://about.gitlab.com/handbook/product/pricing/) in their public handbook for a great example of this.
 
