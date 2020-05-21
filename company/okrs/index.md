@@ -15,7 +15,6 @@ Our OKRs are public:
 
 - For each goal (called an OKR), you state an **objective** (what you're aiming to do) and **key results** (how success of the objective is measured).
 - OKRs form a tree structure. We have a few broad company-level OKRs. Each company-level OKR has many sub-OKRs, for teams whose work contributes up to the company-level OKR. This codifies why/how each team's work is important to the company.
-- We are not yet doing personal OKRs company-wide. This document is only about company and team OKRs. (Some people are experimenting with personal OKRs with their manager. If that works well, we may expand it, and this page will be updated.)
 
 Our OKR practices are heavily inspired by [GitLab's OKR practices](https://about.gitlab.com/company/okrs/).
 
