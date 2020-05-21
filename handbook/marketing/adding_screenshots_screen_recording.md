@@ -136,7 +136,7 @@ Then give the marketing team the heads-up that a new video has been published, l
 
 ## Embedding your YouTube video
 
-You can use the following template which uses Bootstrap’s responsive embed styling:
+Uses Bootstrap for responsive sizing and adequate whitespace between adjacent elements, and that only Sourcegraph videos are shown on the end screen.
 
 ```html
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">

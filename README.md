@@ -79,6 +79,16 @@ The data between the `---` is called front matter and is used to provide post me
 - JPEG images should be compressed at no larger than 80% quality to reduce file size.
 - The [ImageOptim](https://github.com/ImageOptim/ImageOptim) app and CLI is great for significantly reducing the size of PNG files and JPEG files.
 
+### YouTube video embed code
+
+Uses Bootstrap for responsive sizing and adequate whitespace between adjacent elements, and that only Sourcegraph videos are shown on the end screen.
+
+```html
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+</div>
+```
+
 ### Previewing your blog post
 
 It's recommended to run the development site to preview your blog post locally.
