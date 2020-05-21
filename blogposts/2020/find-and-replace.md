@@ -70,7 +70,7 @@ table.brain td img {
     </td>
     <td>
     You get annoyed wth <code class="language-text">grep</code> and <code class="language-text">sed</code> and find 
-    tools like ripgrep (`rg`) and `codemod`.
+    tools like ripgrep (<code class="language-text">rg</code>) and <code class="language-text">codemod</code>.
     Maybe you dive down the rabbit hole of parsers. Powerful—but it's a slog reading AST specs and writing tree traversers.
     </td>
   </tr>
@@ -79,7 +79,7 @@ table.brain td img {
       <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg">
     </td>
     <td>
-    In your quest for ever greater efficiency, you discover `comby`, an awesome new pattern-matching language for code.
+    In your quest for ever greater efficiency, you discover <code class="language-text">comby</code>, an awesome new pattern-matching language for code.
     You use it to execute really really large crucial changes across your organization's code.
     </td>
   </tr>
