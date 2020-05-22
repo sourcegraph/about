@@ -2,7 +2,7 @@
 
 ## 1. Why can't I edit the page through the site-admin page anymore
 
-The configuration has been moved to git a repository to ensure all changes are tracked in version control. This ensures visibility of all changes to the configuration, as well as allowing easier management across multiple teams.
+The configuration has been moved to a git repository to ensure all changes are tracked in version control. This ensures visibility of all changes to the configuration, as well as allowing easier management across multiple teams.
 
 ## 2. Make changes to the website configuration
 
