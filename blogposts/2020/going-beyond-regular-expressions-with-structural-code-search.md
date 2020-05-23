@@ -176,7 +176,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29.next%28%29%27&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/paritytech/parity-ethereum%24++%27.filter%28:%5B_%5D%29+.next%28%29%27&patternType=structural) (the latter matches across newlines)
+🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24++%27.filter%28:%5B_%5D%29.next%28%29%27&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24++%27.filter%28:%5B_%5D%29+.next%28%29%27&patternType=structural) (the latter matches across newlines)
 
 </div>
 
@@ -245,24 +245,7 @@ string or pattern, consider using Sourcegraph's literal or regexp
 much faster! For a more detailed breakdown, see the short comparison at the [end
 of this post](#structural-search-vs-more-traditional-text-search).
 
-## What's next for structural search?
-
-We have more features and improvements planned. _If you want to see any of these
-features arrive more quickly, please +1 the related issue tracker so that we can
-prioritize our engineering to deliver them sooner!_
-
-- **Structural search enabled for all mirrored repositories.** We want structural
-  search to be available for _your_ repository, and not just the really popular
-  ones. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8164)
-- **Regular expression support in structural holes.** We want to add support for
-  regexp syntax inside holes for refine search, like `\d+` to match only
-  numerical digits. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8165)
-- **Make it faster.** Structural search is typically slower than our regexp
-  search because it does more work. If you find it valuable, we
-  want to make it faster. [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8167)
-- **A richer query language.** There are ways to refine structural search with [rules](https://comby.dev/#advanced-usage) allowing richer queries. To get a taste of rules, have a look at this [CactusCon talk](https://www.youtube.com/watch?v=yOZQsZs35FA) (subtitles recommended if audio is hard to follow). If you have a use case for this and want support sooner, [+1 this feature on GitHub](https://github.com/sourcegraph/sourcegraph/issues/8166).
-
-That's it for this blog post. You'll find some additional resources and
+That's it for now. You'll find some additional resources and
 discussion below if you're interested in reading more. Happy searching!
 
 ---
@@ -311,7 +294,7 @@ Here are some key differences and comparisons to regexp-based text search:
   `foo(:[x], :[x])`. This is similar to, e.g., backreferences in regular
   expressions.
 
-- No explicit support for matching regexp character classes like `\d+` yet (see planned improvements).
+- No explicit support for matching regexp character classes like `\d+` yet.
 
 For a complete overview, refer to [comby.dev](https://comby.dev).
 
