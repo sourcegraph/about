@@ -275,6 +275,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [GitHub](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
 - Marek is a JavaScript and TypeScript developer with an interest in developer tools and tech education. He occasionally teaches programming courses and contributes to coding bootcamps, and he previously ran a software consulting agency. He lives in Canada's capital with his wife and his jack russell terrier 🐕.
 
+## Adam Harvey (he/him/his)
+
+- Software Engineer
+- Vancouver, Canada 🇨🇦
+- [aharvey@sourcegraph.com](mailto:aharvey@sourcegraph.com) [@LGnome](https://twitter.com/LGnome), [GitHub](https://github.com/LawnGnome),
+- Adam plays cricket, yells at hockey teams, and spends an inordinate amount of time convincing his golden retriever to drop things. He started his technology journey with an IBM XT in the 80s, and never looked back once he discovered the GW-BASIC `RENUM` command. Technologically, Adam enjoys programming language design, convincing runtimes to work on hardware they weren't designed to, and deluding himself that abusing CSS animations is exactly what his film degree qualified him to do.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
