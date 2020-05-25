@@ -208,6 +208,19 @@
           -27.451360703
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adam Harvey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.063200,
+          49.279493
+        ]
+      }
     }
   ]
 }
