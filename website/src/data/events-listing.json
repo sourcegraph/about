@@ -2,15 +2,21 @@
   "Conference": [],
   "Livestream": [
     {
-      "eventTitle": "Livestream: Introduction to Sourcegraph Universal Code Search",
-      "eventDate": "Thursday, May 14, 2020 | 10:00 AM PDT",
-      "eventLink": "https://info.sourcegraph.com/training-universal-code-search-may14",
+      "eventTitle": "Hands-on training: Introduction to Sourcegraph",
+      "eventDate": "Thursday, June 11, 2020, 10:00 AM PT | 1:00 AM ET",
+      "eventLink": "https://info.sourcegraph.com/training-intro-to-sourcegraph-june11",
+      "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/online-training-intro-sourcegraph.jpg"
+    },
+    {
+      "eventTitle": "Livestream: Sourcegraph Universal Code Search",
+      "eventDate": "Thursday, June 18, 2020, 10:00 AM PT | 1:00 AM ET",
+      "eventLink": "https://info.sourcegraph.com/training-universal-code-search-june18",
       "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-training-ucs.png"
     },
     {
-      "eventTitle": "Online meetup: Sourcegraph 3.16",
-      "eventDate": "Thursday, May 21, 2020 | 10:00 AM PDT",
-      "eventLink": "https://info.sourcegraph.com/online-meetup-may21",
+      "eventTitle": "Online meetup: Sourcegraph 3.17",
+      "eventDate": "Thursday, June 25, 2020, 10:00 AM PT | 1:00 AM ET",
+      "eventLink": "https://info.sourcegraph.com/online-meetup-june25",
       "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-meetup-generic.png"
     }
   ]
