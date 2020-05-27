@@ -24,6 +24,8 @@
 
 - [ ] Remove from "Not working" calendar.
 
+- [ ] Remove from Zoom org.
+
 - [ ] Remove from recurring team calendar invites (team meeting, Friday get-together).
 
 - [ ] Deactivate Lattice account.
