@@ -199,19 +199,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Ryan Blunden"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          153.059295654,          
-          -27.451360703
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Adam Harvey"
       },
       "geometry": {
