@@ -43,7 +43,7 @@ The A-Z format introduces simple concepts in a fun and easy-to-understand way so
   </footer>
 </div>
 
-We hope you enjoy the book and would love to get your feedback [via Twitter](https://twitter.com/intent/tweet?text=For%20all%20children%20at%20home%20that%20wonder%20what%20their%20techie%20parents%20do%20all%20day%2C%20night%2C%20and%20some%20weekends%2C%20too%2C%20they%20need%20the%20%22Our%20ABCs%3A%20Always%20Be%20Coding%22%20book%20by%20@srcgraph%20-%20https%3A//about.sourcegraph.com/abc%20%23abcsbook%20%23TYCTWD%20%23TODASTW%20%23BringYourKidsToWorkDay) or [email](mailto:hi+abc@sourcegraph.com).
+We hope you enjoy the book and would love to get your feedback [via Twitter](https://twitter.com/intent/tweet?text=For%20all%20children%20at%20home%20that%20wonder%20what%20their%20techie%20parents%20do%20all%20day%2C%20night%2C%20and%20some%20weekends%2C%20too%2C%20they%20need%20the%20%22Our%20ABCs%3A%20Always%20Be%20Coding%22%20book%20by%20@srcgraph%20-%20https%3A//about.sourcegraph.com/abc%20%23ABCsbook) or [email](mailto:hi+abc@sourcegraph.com).
 
 <p class="text-center">
   <a class="button btn btn-primary" href="https://twitter.com/intent/tweet?text=For%20all%20children%20at%20home%20that%20wonder%20what%20their%20techie%20parents%20do%20all%20day%2C%20night%2C%20and%20some%20weekends%2C%20too%2C%20they%20need%20the%20%22Our%20ABCs%3A%20Always%20Be%20Coding%22%20book%20by%20@srcgraph%20-%20https%3A//about.sourcegraph.com/abc%20%23ABCsbook%20%23TYCTWD%20%23TODASTW%20%23BringYourKidsToWorkDay">
