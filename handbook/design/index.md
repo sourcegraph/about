@@ -56,6 +56,17 @@ As the procut design team is still small and not able to address every problem e
 
 If you would like to dig a little deeper [here is a link to the article](https://www.nngroup.com/articles/ten-usability-heuristics/), each section is accompanied by a short video and/or a more in depth article.
 
+### Design consideration checklist
+
+Improvements to the Sourcegraph user experience should be considered the following in every change:
+
+- Has the change’s effect on the CLI been considered? 
+- Does the language in the UI map to the language in the CLI?
+- Are docs sufficiently reflective of the desired user experience?
+- Light mode / Dark mode 
+- Enterprise / Cloud
+- Interactive mode / plain text mode
+
 ## External resources
 
 - [10 General principles for interaction design](https://www.interaction-design.org/literature/article/heuristic-evaluation-how-to-conduct-a-heuristic-evaluation)
