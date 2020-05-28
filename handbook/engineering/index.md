@@ -13,6 +13,7 @@
 - [Product documentation](product_documentation.md)
 - [Continuous releasability](continuous_releasability.md)
 - [Commit message guidelines](commit_messages.md)
+- [Why we avoid committing .gitignore for editor config files](avoid_gitignore_editor_files.md)
 - [Incidents](incidents.md)
 - [Releases](releases/index.md)
   - [Release issue template](releases/release_issue_template.md)
