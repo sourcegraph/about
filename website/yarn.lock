@@ -1464,14 +1464,14 @@
   resolved "https://registry.yarnpkg.com/@sourcegraph/prettierrc/-/prettierrc-3.0.3.tgz#51bfa9b2588fe35121593fa877143e6373028289"
   integrity sha512-FQ1/Ued4I02R0JkrHHofDN163juVxUnPALzfxPZrDZUHv+c3jHjfZhmTHEz+Wd+g3b7MFk0fkj36nZSnvPyU8A==
 
-"@sourcegraph/stylelint-config@^1.1.8":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/stylelint-config/-/stylelint-config-1.1.8.tgz#5bb832b83c6239659bd099fc7a040c0289a8259e"
-  integrity sha512-aqKZ+InfX7niHAZcn1ivmvq34wEZUu7esPWO3RVW4AZpfgfSXEUEfUpuGP3dqXVQcvuY4HT9dRb5c90XtsHROA==
+"@sourcegraph/stylelint-config@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/stylelint-config/-/stylelint-config-1.1.9.tgz#12c7d6476a6074c170a5e945e3bdf43f7b0711cf"
+  integrity sha512-g+NZstXoNO6XT3041gVB9shmaIOD74hgZ67Vr05APcID0vmdQ9eiefvwvNz1OGH1vVV5su9QuYLu0gynUpAaMg==
   dependencies:
     stylelint-config-prettier "^8.0.1"
     stylelint-config-standard "^20.0.0"
-    stylelint-scss "^3.14.2"
+    stylelint-scss "^3.17.2"
 
 "@sourcegraph/tsconfig@^4.0.1":
   version "4.0.1"
@@ -13644,7 +13644,7 @@ stylelint-config-standard@^20.0.0:
   dependencies:
     stylelint-config-recommended "^3.0.0"
 
-stylelint-scss@^3.14.2, stylelint-scss@^3.17.2:
+stylelint-scss@^3.17.2:
   version "3.17.2"
   resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.17.2.tgz#4d849a153f9241834396f5880db2c3c964def4e3"
   integrity sha512-e0dmxqsofy/HZj4urcGSJw4S6yHDJxiQdT20/1ciCsd5lomisa7YM4+Qtt1EG4hsqEG1dbEeF855tec1UyqcSA==
