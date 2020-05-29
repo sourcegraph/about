@@ -14,42 +14,7 @@ GHE instance. Every once in a while new orgs are created and the repos are added
 ghe-feeder -admin milton -token <xxxxxxx> -scratchDir clones -numWorkers 20 -limit 100000 -baseURL https://ghe.sgdev.org/api/v3 dir1 file2 file3 dir4
 ```
 
-```
-ghe-feeder -help
-  -admin string
-        (required) destination GHE admin name
-  -apiCallsPerSec float
-        how many API calls per sec to destination GHE (default 100)
-  -baseURL string
-        (required) base URL of GHE instance to feed
-  -cloneRepoTimeout duration
-        how long to wait for a repo to clone (default 3m0s)
-  -help
-        Show help
-  -limit int
-        limit processing to this many repos (for debugging) (default 9223372036854775807)
-  -logfile string
-        path to a log file (default "feeder.log")
-  -numCloningAttempts int
-        number of cloning attempts before giving up (default 5)
-  -numSimultaneousClones int
-        number of simultaneous github.com clones (default 10)
-  -numSimultaneousPushes int
-        number of simultaneous GHE pushes (default 10)
-  -numWorkers int
-        number of workers (default 20)
-  -progress string
-        path to a sqlite DB recording the progress made in the feeder (created if it doesn't exist) (default "feeder.db")
-  -scratchDir string
-        scratch dir where to temporarily clone repositories
-  -skip int
-        skip this many lines from input
-  -token string
-        (required) GitHub personal access token for the destination GHE instance
-  -uploadURL string
-        upload URL of GHE instance to feed
-
-```
+For flag details do `ghe-feeder -help`.
 
 ## Inputs
 
