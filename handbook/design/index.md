@@ -65,6 +65,8 @@ Improvements to the Sourcegraph user experience should be considered the followi
 - Are docs sufficiently reflective of the desired user experience?
 - Light mode / Dark mode 
 - Enterprise / Cloud
+- Signed in vs. anonymous user
+- User permissions
 - Interactive mode / plain text mode
 
 ## External resources
