@@ -12,7 +12,7 @@ You can ignore these in Git using one of two options:
 There are many editors that produce repository config files, so if we commit them to .gitignore questions arise:
 
 - Do we do this for every editor people at Sourcegraph use?
-- How do we keep this .gitignore in sync with all the other repositories?
+- How do we keep this `.gitignore` in sync with all the other repositories?
 - When creating a new repository, what should go in .gitignore?
 
 Instead of maintaining all that, we keep things simple and do not commit editor configs, nor their exclusions, to `.gitignore` in the repository and configure it as part of our development environments instead.
