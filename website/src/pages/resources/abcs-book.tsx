@@ -51,7 +51,7 @@ export default ((props: any) => (
                     <p>
                         The A-Z format introduces simple concepts in a fun and easy-to-understand way so that kids can
                         get curious about coding and perhaps take the first step in beginning their journey in learning
-                        how to code. Or at least will provide an engaging and educational distraction to give you a
+                        how to code. Or at least it will provide an engaging and educational distraction to give you a
                         break for a few minutes!
                     </p>
                     <p className="text-center">
