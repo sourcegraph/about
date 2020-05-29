@@ -58,11 +58,11 @@ If you would like to dig a little deeper [here is a link to the article](https:/
 
 ### Design consideration checklist
 
-Improvements to the Sourcegraph user experience should be considered the following in every change:
+Improvements to the Sourcegraph user experience should considered the following in every change:
 
 - Has the change’s effect on the CLI been considered? 
-- Does the language in the UI map to the language in the CLI?
-- Are docs sufficiently reflective of the desired user experience?
+  - Does the language in the UI map to the language in the CLI?
+- Does the documentation reflect the change?
 - Light mode / Dark mode 
 - Enterprise / Cloud
 - Signed in vs. anonymous user
