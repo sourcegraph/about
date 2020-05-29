@@ -9,7 +9,7 @@ You can ignore these in Git using one of two options:
 
 ## Why not commit .gitignore editor config files?
 
-There are many editors that produce repository config files, so if we commit them to .gitignore questions arise:
+There are many editors that produce repository config files, so if we commit them to `.gitignore` questions arise:
 
 - Do we do this for every editor people at Sourcegraph use?
 - How do we keep this `.gitignore` in sync with all the other repositories?
