@@ -1,0 +1,58 @@
+.podcast {
+    background-color: black;
+    border-bottom: 3px solid $light-5;
+    a {
+        color: $blue-5;
+    }
+
+    padding-bottom: 5em;
+
+    &__subscribe {
+        text-align: center;
+        border-top: 1px solid $light-5;
+        color: $orange-9;
+        margin: 1em auto 1.5em auto;
+        &-highlight {
+            font-weight: bold;
+        }
+        &-option {
+            margin-left: 1em;
+        }
+    }
+
+    &__episode {
+        margin: auto auto 5em auto;
+        padding-top: 5em;
+        border-top: 1px solid $light-5;
+    }
+
+    &__icon {
+        height: 1em;
+    }
+
+    &__title {
+        font-size: 2.5em;
+        margin: 0.5em auto 0.5em auto;
+        font-weight: 100;
+        color: $orange-9;
+    }
+
+    &__people {
+        text-transform: uppercase;
+        color: $light-1;
+    }
+
+    &__date {
+        color: $dark-5;
+    }
+
+    &__description {
+        color: $light-9;
+        margin-top: 1em;
+
+        &-emphasis {
+            font-weight: bold;
+        }
+    }
+
+}
