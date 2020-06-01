@@ -42,14 +42,15 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-<div class="alert alert-info">
-  <p>
-    <strong>LEARN MORE:</strong><br />
-    <a href="https://info.sourcegraph.com/online-meetup-may21?utm_source=blog">
-      Online meetup: Sourcegraph 3.16 - Thursday, May 21 at 10AM PDT
-    </a>
-  </p>
+---
+
+Go in-depth with the 3.16 release by watching the recorded livestream with Product Manager [Christina Forney](https://twitter.com/christina4nee) and Software Engineers [Thorsten Ball](https://twitter.com/thorstenball), [Loïc Guychard](https://github.com/lguychard), and [Eric Fritz](https://github.com/efritz).
+
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TgbiCEGaFyU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
+
+---
 
 ## Introducing version contexts to search past releases
 
