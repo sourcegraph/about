@@ -8,6 +8,8 @@ The Product team strives to make the following true:
 
 ## [Roles](roles.md)
 
+[Onboarding to the product team](./onboarding/index.md)
+
 See job descriptions and responsibilities of roles on the Product team:
 
 - [Product Manager](roles.md#product-manager) ([We're hiring!](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md))
