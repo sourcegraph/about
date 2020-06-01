@@ -90,6 +90,10 @@ export default class JobsPage extends React.Component<any, any> {
                             <div className="podcast__date">
                                 June 1, 2020
                             </div>
+                            <div className="podcast__player">
+                            <audio className="object-center" src="https://www.buzzsprout.com/1097978/3991271-introducing-the-sourcegraph-podcast.mp3" controls={true} preload="auto">
+                            </audio>
+                            </div>
                             <div className="podcast__description">
                                 <p>
                                 Welcome to the Sourcegraph podcast, a new show about developer tools and their creators. Over the next couple of weeks, we'll be publishing conversations with people we think are some of the best and brightest minds working on tools and infrastructure for developers. Here's a partial lineup:

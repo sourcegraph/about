@@ -46,6 +46,13 @@
         color: $dark-5;
     }
 
+    &__player {
+        margin: 1em auto 1em auto;
+        audio {
+            filter: saturate(100%) invert(90%);
+        }
+    }
+
     &__description {
         color: $light-9;
         margin-top: 1em;
