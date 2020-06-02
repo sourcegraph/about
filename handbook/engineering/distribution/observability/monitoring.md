@@ -127,6 +127,16 @@ It's best if you also add some Markdown documentation with your best guess of wh
 
 Once you save the file, `doc/admin/observability/alert_solutions.md` will automatically be regenerated and you can even preview your changes at [http://localhost:5080/admin/observability/alert_solutions](http://localhost:5080/admin/observability/alert_solutions).
 
+## Connecting Grafana to a remote Prometheus instance
+
+You may wish to connect Grafana to a remote Prometheus instance, like Sourcegraph.com, to show more real data than is available on your dev server. You may do so by getting `kubectl` connected to a Sourcegraph cluster and then port-forwarding via:
+
+```sh
+kubectl port-forward svc/prometheus 30090:30090
+```
+
+Then edit `TODO(robert): plz help` and rerun `./dev/start.sh` or `./enterprise/dev/start.sh`
+
 ## Additional reading
 
 - [How Sourcegraph's high-level alerting metrics work](https://docs.sourcegraph.com/admin/observability/metrics_guide)
