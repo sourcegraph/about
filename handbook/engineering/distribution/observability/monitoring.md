@@ -11,8 +11,10 @@ This document describes how to develop Sourcegraph's monitoring:
   - [Monitoring technology we use](#monitoring-technology-we-use)
 - [The five pillars of monitoring](#the-five-pillars-of-monitoring)
 - [How easy is it to add monitoring?](#how-easy-is-it-to-add-monitoring)
-  - [(optional) configure panel options](#optional-configuring-panel-options)
+  - [(optional) configure panel options](#optional-configure-panel-options)
   - [(optional) add solution documentation](#optional-add-solution-documentation)
+- [Connecting Grafana to a remote Prometheus instance](#connecting-grafana-to-a-remote-prometheus-instance)
+- [Additional reading](#additional-reading)
 - [Next steps](#next-steps)
 
 ## Overview
@@ -135,7 +137,12 @@ You may wish to connect Grafana to a remote Prometheus instance, like Sourcegrap
 kubectl port-forward svc/prometheus 30090:30090
 ```
 
-Then edit `TODO(robert): plz help` and rerun `./dev/start.sh` or `./enterprise/dev/start.sh`
+Then make one of the following changes to the Grafana development datasources:
+
+* `url: http://host.docker.internal:30090` in [`dev/all/prometheus`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/dev/grafana/all/prometheus.yaml) (non-Linux)
+* `url: http://127.0.0.1:9090` in [`dev/linux/prometheus`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/dev/grafana/linux/prometheus.yaml) (Linux)
+
+and rerun `./dev/start.sh` or `./enterprise/dev/start.sh`. If you want to avoid spinning up in the entire Sourcegraph stack and just want to look at Grafana, you can also use `./dev/grafana.sh`.
 
 ## Additional reading
 
