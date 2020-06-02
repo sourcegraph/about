@@ -8,6 +8,13 @@
       "newsImage": "/external-logos/eweek-logo.svg"
     },
     {
+      "newsSource": "Code Review News",
+      "newsTitle": "Code review tools that increase productivity",
+      "newsDate": "May 17, 2020",
+      "newsLink": "https://codereviewnews.com/code-review-tools-that-increase-productivity",
+      "newsImage": "/external-logos/code-review-logo.png"
+    },
+    {
       "newsSource": "Podcast.__init__",
       "newsTitle": "Podcast: Managing Distributed Teams In The Age Of Remote Work",
       "newsDate": "May 11, 2020",
