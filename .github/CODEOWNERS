@@ -18,6 +18,7 @@
 /blogposts @sourcegraph/marketing
 /website @sourcegraph/marketing
 /docs @sourcegraph/marketing
+/podcast @beyang
 
 /handbook/product @christinaforney
 /handbook/engineering @nicksnyder
