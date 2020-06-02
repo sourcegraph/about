@@ -9,7 +9,9 @@ class Conferences extends React.Component {
                     {EventData.Livestream.map((eventDetail, index) => (
                         <div className="col-md-6 col-lg-4 py-2">
                             <div className="card event__item">
-                                <img className="card-img-top img-fluid" src={eventDetail.eventImage} />
+                                <a href={eventDetail.eventLink} rel="nofollow">
+                                    <img className="card-img-top img-fluid" src={eventDetail.eventImage} />
+                                </a>
                                 <div className="card-body">
                                     <h6>LIVESTREAM</h6>
                                     <h5>{eventDetail.eventTitle}</h5>
@@ -27,7 +29,9 @@ class Conferences extends React.Component {
                     {EventData.Video.map((eventDetail, index) => (
                         <div className="col-md-6 col-lg-4 py-2">
                             <div className="card event__item">
-                                <img className="card-img-top img-fluid" src={eventDetail.videoImage} />
+                                <a href={eventDetail.videoLink} rel="nofollow">
+                                    <img className="card-img-top img-fluid" src={eventDetail.videoImage} />
+                                </a>
                                 <div className="card-body">
                                     <h6>VIDEO</h6>
                                     <h5>{eventDetail.videoTitle}</h5>
