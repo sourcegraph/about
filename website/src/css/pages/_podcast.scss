@@ -1,21 +1,30 @@
 .podcast {
     background-color: black;
-    border-bottom: 3px solid $light-5;
+    border-bottom: 3px solid $dark-5;
+
     a {
-        color: $blue-5;
+        color: $blue-3;
     }
 
     padding-bottom: 5em;
 
+    &.podcast-no-bottom-line {
+        border-bottom: 0;
+    }
+
     &__subscribe {
         text-align: center;
-        border-top: 1px solid $light-5;
+        border-top: 1px solid $dark-5;
         color: $orange-9;
-        margin: 1em auto 1.5em auto;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
         &-highlight {
             font-weight: bold;
         }
         &-option {
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
+            display: inline-block;
             margin-left: 0.85em;
         }
         a {
@@ -23,14 +32,45 @@
         }
     }
 
+    &__content-option {
+        margin: 1.5em 0 1.5em 0;
+        color: $grape-7;
+        a {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 1em;
+            padding-left: 1em;
+            color: $grape-7;
+
+            &:first-child {
+                margin-left: -1em;
+            }
+            border: 1px solid transparent;
+            border-radius: 0.5em;
+        }
+        a.podcast__content-option-selected {
+            text-shadow: 0 0 .9px $grape-7, 0 0 .9px $grape-7;
+            border: 1px solid $grape-7;
+            box-sizing: border-box;
+        }
+    }
+
     &__episode {
-        margin: auto auto 5em auto;
+        margin: auto auto 7em auto;
         padding-top: 5em;
-        border-top: 1px solid $light-5;
+        border-top: 1px solid $dark-5;
     }
 
     &__icon {
         height: 1em;
+    }
+
+    &__backtoall {
+        margin-top: -0.5em;
+        margin-bottom: -1em;
+        a {
+            color: $dark-3;
+        }
     }
 
     &__title {
@@ -38,6 +78,13 @@
         margin: 0.5em auto 0.5em auto;
         font-weight: 100;
         color: $orange-9;
+        a {
+            color: $orange-9;
+        }
+        a:hover {
+            text-decoration: none;
+            border-bottom: 2px solid $orange-9;
+        }
     }
 
     &__people {
@@ -46,7 +93,7 @@
     }
 
     &__date {
-        color: $dark-5;
+        color: $dark-3;
     }
 
     &__player {
@@ -57,8 +104,9 @@
     }
 
     &__description {
-        color: $light-9;
+        color: $light-7;
         margin-top: 1em;
+        line-height: 1.5;
 
         &-emphasis {
             font-weight: bold;
