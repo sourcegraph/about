@@ -22,7 +22,8 @@ export default class EventsPage extends React.Component<any, any> {
     }
 
     public render(): JSX.Element | null {
-        const desc = 'Meet Sourcegraph at these conferences and meetups around the world.'
+        const desc =
+            'Meetup with Sourcegraph engineers, learn about Universal Code Search, and get a closer look at the latest updates in Sourcegraph.'
         return (
             <Layout location={this.props.location}>
                 <Helmet>
@@ -40,7 +41,7 @@ export default class EventsPage extends React.Component<any, any> {
                     <section className="events events__head">
                         <div className="events__container">
                             <ContentSection color="primary" className="hero-section text-center py-5">
-                                <h1>Sourcegraph developer events</h1>
+                                <h1>Sourcegraph developer events and videos</h1>
                                 <p className="events__head-description">{desc}</p>
                             </ContentSection>
                         </div>
