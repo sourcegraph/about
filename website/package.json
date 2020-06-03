@@ -5,7 +5,7 @@
   "author": "Farhan Attamimi <farhan@sourcegraph.com>",
   "dependencies": {
     "@types/react-helmet": "5.0.15",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.5.0",
     "catch-links": "^2.0.1",
     "gatsby": "^2.22.17",
     "gatsby-image": "^2.4.6",
@@ -63,7 +63,7 @@
     "@sourcegraph/stylelint-config": "^1.1.9",
     "@sourcegraph/tsconfig": "^4.0.1",
     "@sourcegraph/tslint-config": "^13.4.0",
-    "@types/bootstrap": "4.3.2",
+    "@types/bootstrap": "4.5.0",
     "@types/lodash": "4.14.155",
     "@types/react": "16.9.34",
     "@types/react-dom": "16.9.8",
