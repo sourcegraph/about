@@ -74,13 +74,14 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                 </Helmet>
                 <ContentPage
                     title="The Podcast🎙"
+                    titleClassName="podcast__banner"
                     mainActions={
-                        <div className="d-flex flex-column align-items-center">
+                        <div className="d-flex flex-column align-items-center podcast__subbanner">
                             Conversations, stories, and insights from dev tool creators
                         </div>
                 }>
                     <ContentSection color="black">
-                        <div className="podcast podcast-no-bottom-line">
+                        <div className="podcast">
                             <div className="podcast__subscribe">
                                 Subscribe:
                                 <a target="_blank" href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009" className="podcast__subscribe-option">
@@ -123,7 +124,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                     </ContentSection>
                 </ContentPage>
                 <Jumbotron
-                    color="purple"
+                    color="dark"
                     className="py-4"
                     logomark={false}
                     title="Try Sourcegraph now"

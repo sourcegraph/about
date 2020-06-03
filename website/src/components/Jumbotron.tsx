@@ -33,7 +33,7 @@ export const Jumbotron: React.FunctionComponent<{
                 />
             )}
             <h1 className={titleClassName}>{title}</h1>
-            {description && <p className="mb-4">{description}</p>}
+            {description && <p className="mb-5">{description}</p>}
             {children}
         </div>
     </div>
