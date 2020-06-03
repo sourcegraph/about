@@ -7,6 +7,8 @@ To achieve this purpose, we need to ensure two things:
 1. Each feature or product that we build needs to coherently solve a particular customer problem. {#customer-needs}
 1. We make the necessary technology investments to maximize our velocity over time (e.g., building a standard component library, investing in automated testing). {#engineering-needs}
 
+
+
 This document describes how we organize engineering to ensure that we are making progress on both dimensions.
 
 ## Philosophy
@@ -15,7 +17,7 @@ This section describes how we think about our team in its ideal state. Due to a 
 
 ### Teams
 
-We have mission based teams. This means that each team is responsible for a particular long term mission, which may be a [product concern](#customer-needs) or an [engineering concern](#engineering-needs). In either case, the team contains the necessary cross-functional skillsets to achieve that mission. Each team is lead by a [Project Lead](roles.md#project-lead).
+We have mission based teams. This means that each team is responsible for a particular long term mission, which may be a [product concern](#customer-needs) or an [engineering concern](#engineering-needs). In either case, the team contains the necessary cross-functional skillsets to achieve that mission. 
 
 ### Management
 

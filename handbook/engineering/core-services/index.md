@@ -25,3 +25,20 @@ Go, Postgres, Redis, Docker, Kubernetes.
 ## Processes
 
 We do [weekly check-ins](../tracking_issues.md#using-a-tracking-issue-for-progress-check-ins) and [planning](../tracking_issues.md#planning-a-milestone-with-a-tracking-issue) with [tracking issues](../tracking_issues.md).
+
+## Members
+
+- [Tomás Senart](../../../company/team/index.md#tomás-senart) ([engineering manager](../roles.md#engineering-manager))
+- [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith) 
+- [Joe Chen](../../../company/team/index.md#joe-chen)
+- [Ryan Slade](../../../company/team/index.md#ryan-slade)
+- [S. H.](https://hire.withgoogle.com/t/sourcegraphcom/hiring/candidates/P_AAAAAADAAC5PmuMMFoUSu3/P_AAAAAADAAC5KUwmkNJrovt) starting in July
+
+## Hiring status
+
+_Updated 2020-06-02_
+
+We are hiring for these roles:
+
+- +1 [Software Engineer - Frontend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-frontend.md)
+- +1 [Software Engineer - Security](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-security.md)
