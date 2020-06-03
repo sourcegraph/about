@@ -101,9 +101,9 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                     <a href="/podcast">&lsaquo; All episodes</a>
                                 </div>
                                 <div className="podcast__title">{title}</div>
-                                <div dangerouslySetInnerHTML={{ __html: guestsHTML }} className="podcast__people" />
+                                {guestsHTML && (<div dangerouslySetInnerHTML={{ __html: guestsHTML }} className="podcast__people" />)}
                                 <div className="podcast__date">{publishDate}</div>
-                                <div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />
+                                { audioHTML && (<div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />)}
                                 <div className="podcast__content-option">
                                     {options.map(({ hash, name }) => (
                                         <a key={name} dangerouslySetInnerHTML={{ __html: name }} className={selected === hash ? "podcast__content-option-selected" : ""} href={`#${hash}`} />

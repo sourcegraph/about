@@ -28,23 +28,57 @@ export const rssIcon = <svg aria-hidden="true" data-icon="rss" viewBox="0 0 448 
 </svg>
 
 interface HTMLParts {
-    guestsHTML: string
-    audioHTML: string
+    guestsHTML?: string
+    audioHTML?: string
     summaryHTML?: string
     transcriptHTML?: string
     showNotesHTML?: string
 }
 
 export function getHTMLParts(html: string): HTMLParts {
-    const doc = document.createElement('html')
-    doc.innerHTML = html
-    return {
-        summaryHTML: doc.getElementsByClassName("summary").item(0)?.innerHTML,
-        showNotesHTML: doc.getElementsByClassName("showNotes").item(0)?.innerHTML,
-        transcriptHTML: doc.getElementsByClassName("transcript").item(0)?.innerHTML,
-        guestsHTML: doc.getElementsByClassName("guests").item(0)?.innerHTML || '',
-        audioHTML: doc.getElementsByClassName("audio").item(0)?.innerHTML || '',
+    const partsMeta: {
+        name: keyof(HTMLParts),
+        start: string,
+        end: string
+    }[] = [
+        {
+            name: 'audioHTML',
+            start: '<!-- START AUDIO -->',
+            end: '<!-- END AUDIO -->',
+        },
+        {
+            name: 'guestsHTML',
+            start: '<!-- START GUESTS -->',
+            end: '<!-- END GUESTS -->'
+        },
+        {
+            name: 'summaryHTML',
+            start: '<!-- START SUMMARY -->',
+            end: '<!-- END SUMMARY -->',
+        },
+        {
+            name: 'transcriptHTML',
+            start: '<!-- START TRANSCRIPT -->',
+            end: '<!-- END TRANSCRIPT -->',
+        },
+        {
+            name: 'showNotesHTML',
+            start: '<!-- START SHOWNOTES -->',
+            end: '<!-- END SHOWNOTES -->'
+        }
+    ]
+    const parts: HTMLParts = {}
+    for (const { name, start, end } of partsMeta) {
+        if (html.indexOf(start) < 0) {
+            continue
+        }
+        if (html.indexOf(end) < 0) {
+            console.error(`Did not find ending sentinel ${end} for section ${name}`)
+            continue
+        }
+        parts[name] = html.substring(html.indexOf(start) + start.length, html.indexOf(end))
     }
+    return parts
 }
 
 export default class JobsPage extends React.Component<any, any> {
@@ -106,9 +140,9 @@ export default class JobsPage extends React.Component<any, any> {
                         {publishedEpisodes.map((episode: any) => (
                             <div key={episode.episode.node.frontmatter.slug} className="podcast__episode">
                                 <div className="podcast__title"><a href={`/podcast/${episode.episode.node.frontmatter.slug}`}>{episode.episode.node.frontmatter.title}</a></div>
-                                <div dangerouslySetInnerHTML={{ __html: episode.html.guestsHTML }} className="podcast__people" />
+                                { episode.html.guestsHTML && (<div dangerouslySetInnerHTML={{ __html: episode.html.guestsHTML }} className="podcast__people" />)}
                                 <div className="podcast__date">{ episode.episode.node.frontmatter.publishDate }</div>
-                                <div dangerouslySetInnerHTML={{ __html: episode.html.audioHTML }} className="podcast__player" />
+                                { episode.html.audioHTML && (<div dangerouslySetInnerHTML={{ __html: episode.html.audioHTML }} className="podcast__player" />)}
                                 <div dangerouslySetInnerHTML={{ __html: episode.html.summaryHTML }} className="podcast__description" />
                             </div>
                         ))}
