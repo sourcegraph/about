@@ -1,7 +1,7 @@
 {
   "$comment": "This configures the documentation server used in local development only.",
   "content": ".",
-  "contentExcludePattern": "^/(website|blogposts|docs|README\\.md)(/|$)",
+  "contentExcludePattern": "^/(podcast|website|blogposts|docs|README\\.md)(/|$)",
   "baseURLPath": "/",
   "templates": "_resources/templates",
   "assets": "_resources/assets",

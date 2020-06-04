@@ -22,6 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `podcast`,
+        path: `${__dirname}/../podcast/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
@@ -66,12 +73,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-advanced-sitemap',
       options: {
-        exclude: [
-          '404',
-          '404.html',
-          '/dev-404-page',
-          '/uninstall/',
-        ],
+        exclude: ['404', '404.html', '/dev-404-page', '/uninstall/'],
       },
     },
     `gatsby-plugin-react-helmet`,
