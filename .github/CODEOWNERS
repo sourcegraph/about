@@ -25,11 +25,11 @@
 
 /handbook/engineering/campaigns @sourcegraph/campaigns
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
-/handbook/engineering/core-services @sourcegraph/core-services
+/handbook/engineering/cloud @sourcegraph/cloud
 /handbook/engineering/distribution @sourcegraph/distribution
 /handbook/engineering/security @sourcegraph/security
 /handbook/engineering/web @sourcegraph/web
-/handbook/engineering/languages/go.md @sourcegraph/core-services
+/handbook/engineering/languages/go.md @sourcegraph/cloud
 /handbook/engineering/languages/typescript.md @sourcegraph/web
 /handbook/marketing @sourcegraph/marketing
 
