@@ -287,7 +287,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Sales Development Representative
 - Tampa, FL 🌴 🇺🇸
 - [mark@sourcegraph.com](mailto:mark@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mmuldez/)
-- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and SDR Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, a VC-backed start-up company, where he successfully built a strong and sustainable pipeline for the company. In his spare time, Mark loves to spend time with his wife, his 2-year-old little guy, and their mini Australian shepherd dog. He's either watching the Golden State Warriors, playing his guitar, working out, or do what most Floridians do, go to the beach instead of staying home, only to get bit by mosquitoes. He'd rather go to the beach. He also thinks spicy mayo is life. 🙌🏽
+- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and SDR Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, a VC-backed start-up company, where he successfully built a strong and sustainable pipeline for the company. In his spare time, Mark loves to spend time with his wife, his 2-year-old little guy, and their mini Australian shepherd dog. He's a big Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and go to the beach to avoid getting bit by mosquitoes. He also thinks spicy mayo is life. 🙌🏽
 
 <!-- Paste *your* section above this line by following our template below:
 
