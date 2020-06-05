@@ -320,7 +320,7 @@ In order to mimic the same workflow that we tell our customers to follow:
 1. Watch CI, which will deploy the change automatically.
 1. Check the deployment is healthy afterwards (`kubectl get pods` should show all healthy, searching should work).
 
-### Troubleshooting out of sync updates on with Pulumi
+### Troubleshooting out of sync updates on Pulumi
 
 If out of sync changes occur on the dogfood cluster, or a pod is failing Pulumi can end up in an interrupted state and the `pulumi-refresh.sh` build step will not pass on buildkite. If this occurs, follow these steps to fix edit the deployment directly and remediate the issues that are failing the build step:
 
@@ -360,4 +360,3 @@ pulumi stack import --file stack.json
 5. Trigger the build again from buildkite and ensure all build steps pass.
 
 For more information see the Pulumi [documentation](https://www.pulumi.com/docs/troubleshooting/#editing-your-deployment)
-
