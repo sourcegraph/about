@@ -7,7 +7,7 @@ tags: [
 ]
 slug: dev-productivity-quality
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
-published: false
+published: true
 ---
 
 The way the world creates code has shifted. We’ve entered the era of Big Code.
