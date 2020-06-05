@@ -117,7 +117,7 @@ export default ((props: any) => (
                     <h3 className="text-center">About Sourcegraph</h3>
                     <p>
                         Sourcegraph empowers all developers to explore, navigate and better understand all code, faster, with{' '}
-                        <a href="/universal-code-search">universal code search</a>, intelligence, and automation. Code
+                        <a href="/universal-code-search">Universal Code Search</a>. 
                         intelligence can help bring the future sooner, and Sourcegraph’s mission is to provide tools
                         that let developers from any organization create quality products by leveraging the best
                         technology available.
