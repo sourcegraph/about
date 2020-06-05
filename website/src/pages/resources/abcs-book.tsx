@@ -118,7 +118,7 @@ export default ((props: any) => (
                     <p>
                         Sourcegraph empowers all developers to explore, navigate and better understand all code, faster, with{' '}
                         <a href="/universal-code-search">Universal Code Search</a>. 
-                        intelligence can help bring the future sooner, and Sourcegraph’s mission is to provide tools
+                        Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems.
                         
                         technology available.
                     </p>
