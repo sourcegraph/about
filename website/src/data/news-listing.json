@@ -1,11 +1,25 @@
 {
   "y2020": [
     {
+      "newsSource": "itWeek",
+      "newsTitle": "Four Trends Forming a New Era of Big Code",
+      "newsDate": "June 4, 2020",
+      "newsLink": "https://www.itweek.ru/digitalization/article/detail.php?ID=212823",
+      "newsImage": "/external-logos/itweek-ru-logo.png"
+    },
+    {
       "newsSource": "eWeek",
       "newsTitle": "Four Trends Shaping the New Era of Big Code",
       "newsDate": "May 18, 2020",
       "newsLink": "https://www.eweek.com/development/four-trends-shaping-the-new-era-of-big-code",
       "newsImage": "/external-logos/eweek-logo.svg"
+    },
+    {
+      "newsSource": "Code Review News",
+      "newsTitle": "Code review tools that increase productivity",
+      "newsDate": "May 17, 2020",
+      "newsLink": "https://codereviewnews.com/code-review-tools-that-increase-productivity",
+      "newsImage": "/external-logos/code-review-logo.png"
     },
     {
       "newsSource": "Podcast.__init__",
