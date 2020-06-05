@@ -120,7 +120,7 @@ export default ((props: any) => (
                         <a href="/universal-code-search">Universal Code Search</a>. 
                         Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems.
                         
-                        technology available.
+                      
                     </p>
                     <p>
                         To learn more, get our ebook:{' '}
