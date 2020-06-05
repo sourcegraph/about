@@ -5,7 +5,7 @@ publishDate: 2020-06-12T10:00-07:00
 tags: [
   blog
 ]
-slug: sourcegraph-3.16
+slug: dev-productivity-quality
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: false
 ---
