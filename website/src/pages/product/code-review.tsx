@@ -43,7 +43,7 @@ export default ((props: any) => (
                     { text: 'Demo screencast', url: '#demo' },
                 ]}
             />
-            <ContentSection color="white" className="py-4">
+            <ContentSection color="white" className="py-2">
                 <h2 className="display-4 mb-4 text-center" id="why">
                     Code review is the most critical process for engineering teams
                 </h2>

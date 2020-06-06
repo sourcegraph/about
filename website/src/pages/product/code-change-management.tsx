@@ -10,8 +10,9 @@ import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
-import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { YouTube } from '../../components/YouTube'
+import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import {
     RequestCodeChangeManagementDemoAction,
     RequestCodeChangeManagementDemoActionNow,
@@ -66,18 +67,19 @@ export default ((props: any) => (
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestCodeChangeManagementDemoAction className="mt-3" />
+                    <ContactPresalesSupportAction className="mt-3 text-light" />
                 </div>
             }
         >
-            <ContentSection color="white" className="pt-6 pb-2">
+            <PageSectionLinks
+                sections={[
+                    { text: 'Use cases', url: '#use-cases' },
+                    { text: 'Example campaigns', url: '#example-campaigns' },
+                    { text: 'See it in action', url: '#see-it-in-action' },
+                ]}
+            />
+            <ContentSection color="white" className="py-2">
                 <h2 className="display-3 mb-5">Leading dev teams invest heavily in code&nbsp;change&nbsp;management</h2>
-                <div className="row justify-content-lg-center">
-                    <div className="col text-center">
-                        <a className="btn btn-outline-primary rounded-lg active mb-5 px-6" href="#see-it-in-action">
-                            See it in action
-                        </a>
-                    </div>
-                </div>
                 <ContentSection color="white" className="py-3">
                     <div className="row">
                         <div className="col-md-4">
@@ -119,7 +121,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </ContentSection>
-                <h2 className="text-center display-4 mb-3 mt-4">
+                <h2 className="text-center display-4 mb-3 mt-4" id="use-cases">
                     Code&nbsp;change&nbsp;campaigns help teams move quickly and safely
                 </h2>
                 <div className="row mt-4">
@@ -179,7 +181,7 @@ export default ((props: any) => (
                         </IconItem>
                     </div>
                 </div>
-                <h2 id="easily-define-campaigns-track-progress" className="text-center display-4 mb-3 mt-4">
+                <h2 id="example-campaigns" className="text-center display-4 mb-3 mt-4">
                     Easily run campaigns and track their progress
                 </h2>
                 <div className="container-fluid">
@@ -215,7 +217,7 @@ export default ((props: any) => (
                     </p>
                 </div>
             </ContentSection>
-            <ContentSection color="white" className="py-3">
+            <ContentSection color="black" className="py-6">
                 <h2 id="see-it-in-action" className="text-center display-4 mt-5">
                     See it in action
                 </h2>
@@ -225,11 +227,6 @@ export default ((props: any) => (
                     </p>
                 </div>
                 <YouTube id="aqcCrqRB17w" className="mt-4" />
-            </ContentSection>
-            <ContentSection color="white" className="pt-5 pb-3">
-                <span id="customers" />
-                <hr />
-                <CustomerLogosSection className="mt-6 mb-4" />
             </ContentSection>
             <Jumbotron
                 color="purple"

@@ -44,7 +44,7 @@ export default ((props: any) => (
                     { text: 'Demo screencasts', url: '#demo' },
                 ]}
             />
-            <ContentSection className="py-4" color="white">
+            <ContentSection className="py-2" color="white">
                 <h2 id="features" className="text-center display-3">
                     Code navigation and exploration
                 </h2>
