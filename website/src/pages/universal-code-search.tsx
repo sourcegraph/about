@@ -32,9 +32,9 @@ export default ((props: any) => (
             <ContentSection color="white" className="pt-6 pb-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-10">
-                        <h3 className="text-center">
+                        <h2 className="display-5 mb-4 text-center">
                             Universal Code Search is the one place to answer any questions about code and systems.
-                        </h3>
+                        </h2>
                         <p>
                             Explore and better understand all code, faster, with contextual code intelligence to improve
                             developer productivity and code change management to make large-scale changes.
@@ -71,7 +71,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="purple" className="py-5">
-                <h3 className="text-center">Universal across everything </h3>
+                <h2 className="display-4 text-center">Universal across everything </h2>
                 <p className="text-center">
                     Universal Code Search must have these things. Anything else is just a code search tool.
                 </p>
@@ -108,16 +108,16 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="white" className="py-6">
-                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+            <ContentSection color="white" className="py-2">
+                <IntegratesWithSection className="mt-4 py-2 pb-4" />
                 <hr />
             </ContentSection>
-            <ContentSection color="white" className="py-6">
+            <ContentSection color="white" className="py-2">
                 <CustomerLogosSection className="py-5" />
                 <hr />
             </ContentSection>
-            <ContentSection color="white" className="py-6">
-                <h2 className="text-center display-5">Code search is the superpower</h2>
+            <ContentSection color="white" className="py-4">
+                <h2 className="text-center display-4">Code search is the superpower</h2>
                 <p className="text-center">
                     Uber, Lyft, Yelp, and other world-class companies rely on Sourcegraph Universal Code Search (not
                     just a code host) to ship software.
