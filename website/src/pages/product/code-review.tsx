@@ -17,6 +17,7 @@ import { SupportedProgrammingLanguagesLink } from '../../components/product/Supp
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
+import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -26,6 +27,12 @@ export default ((props: any) => (
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestDemoAction className="mt-3" />
+                    <ViewDeveloperDocumentationAction
+                        className="text-light mt-2"
+                        url="https://docs.sourcegraph.com/#quickstart"
+                    >
+                        Documentation &amp; self-service install
+                    </ViewDeveloperDocumentationAction>
                 </div>
             }
         >
@@ -36,7 +43,7 @@ export default ((props: any) => (
                     { text: 'Demo screencast', url: '#demo' },
                 ]}
             />
-            <ContentSection color="white" className="py-5">
+            <ContentSection color="white" className="py-4">
                 <h2 className="display-4 mb-4 text-center" id="why">
                     Code review is the most critical process for engineering teams
                 </h2>
