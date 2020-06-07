@@ -127,11 +127,11 @@ export default class JobsPage extends React.Component<any, any> {
                             <a target="_blank" href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009" className="podcast__subscribe-option">
                                 {appleIcon}&nbsp;Apple
                             </a>
-                            <a target="_blank" href="#" className="podcast__subscribe-option">
+                            <a target="_blank" href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6" className="podcast__subscribe-option">
                             {spotifyIcon}
                                 &nbsp;Spotify
                             </a>
-                            <a target="_blank" href="#" className="podcast__subscribe-option">
+                            <a target="_blank" href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==" className="podcast__subscribe-option">
                                 {googleIcon}&nbsp;Google
                             </a>
                             <a target="_blank" href="https://feeds.buzzsprout.com/1097978.rss" className="podcast__subscribe-option">
