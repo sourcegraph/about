@@ -111,6 +111,26 @@ export default ((props: any) => (
                     </p>
                 </div>
             </div>
+            <hr />
+            <div className="row justify-content-md-center mt-5">
+                <div className="col-md-10">
+                    <h3 className="text-center">About Sourcegraph</h3>
+                    <p>
+                        Sourcegraph empowers all developers to explore, navigate and better understand all code, faster, with{' '}
+                        <a href="/universal-code-search">Universal Code Search</a>. 
+                        Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems.
+                        
+                      
+                    </p>
+                    <p>
+                        To learn more, get our ebook:{' '}
+                        <a href="/resources/universal-code-search-ebook/?utm_source=abc">
+                            Sourcegraph: Universal code search and intelligence
+                        </a>
+                        .
+                    </p>
+                </div>
+            </div>
         </ContentSection>
     </Layout>
 )) as React.FunctionComponent<any>

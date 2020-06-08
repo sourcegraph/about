@@ -1,4 +1,4 @@
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
@@ -7,7 +7,7 @@ import { Jumbotron } from '../components/Jumbotron'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
-import { appleIcon, spotifyIcon, googleIcon, rssIcon, getHTMLParts } from '../pages/podcast'
+import { getHTMLParts, subscriptionLinks } from '../pages/podcast'
 
 interface Option {
     name: string
@@ -82,21 +82,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                 }>
                     <ContentSection color="black">
                         <div className="podcast">
-                            <div className="podcast__subscribe">
-                                Subscribe:
-                                <a target="_blank" href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009" className="podcast__subscribe-option">
-                                    {appleIcon}&nbsp;Apple
-                                </a>
-                                <a target="_blank" href="#" className="podcast__subscribe-option">
-                                    {spotifyIcon}&nbsp;Spotify
-                                </a>
-                                <a target="_blank" href="#" className="podcast__subscribe-option">
-                                    {googleIcon}&nbsp;Google
-                                </a>
-                                <a target="_blank" href="https://feeds.buzzsprout.com/1097978.rss" className="podcast__subscribe-option">
-                                    {rssIcon}&nbsp;RSS
-                                </a>
-                            </div>
+                            {subscriptionLinks}
                             <div className="podcast__episode">
                                 <div className="podcast__backtoall">
                                     <a href="/podcast">&lsaquo; All episodes</a>
