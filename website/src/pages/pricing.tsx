@@ -149,6 +149,14 @@ export default ((props: any) => (
                             />
                         </div>
                     </div>
+                    <div class="py-3 text-center">
+                        <h3>Education and nonprofit discounts</h3>
+                        <p>
+                            Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
+                            <a href="/contact/sales/?form_submission_source=pricing-nonprofit">contact us</a> about
+                            discounts for your development teams.
+                        </p>
+                    </div>
                 </div>
             </div>
             <ContentSection color="purple" className="hero-section text-center py-5">
