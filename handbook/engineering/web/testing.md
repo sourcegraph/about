@@ -151,8 +151,8 @@ describe('ExampleDetailsComponent', () => {
   describe('view mode', () => {
     it('shows the details of the example', ...)
     describe('user has edit permissions', () => {
-      it('shows an edit button if and user has permissions', ...)
-      it('shows a delete button if and user has permissions', ...)
+      it('shows an edit button if user has permissions', ...)
+      it('shows a delete button if user has permissions', ...)
     })
   })
   describe('edit mode', () => {
