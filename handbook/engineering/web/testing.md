@@ -64,7 +64,7 @@ Even if it results in more code, prefer passing in dependencies as parameters (o
 ### Strive for flat call trees
 
 When writing deeply nested call trees, a test for a unit in the middle of the tree inevitably also tests every layer beneath it.
-This means when a layer below is is changed or breaks, the tests for the layers above it will likely break too.
+This means when a layer below is changed or breaks, the tests for the layers above it will likely break too.
 It also means that the test doesn't just need to pass stubs for the immediate dependencies of the unit, but also for the dependencies of every unit beneath it in the call tree.
 This directly means that if the interface of any unit beneath it changes, the tests of all units above it need to change too, violating goal (4).
 
