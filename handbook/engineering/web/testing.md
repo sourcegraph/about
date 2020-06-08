@@ -8,12 +8,12 @@ This is the implementation of our [company testing philosophy](../testing.md) fo
 
 2. **Our product and code doesn't accidentally break as we make changes over time.**
 
-3. **Failures should be clear about _what_ is not working and give as many hints as possible to _why_ it's not working.**
+3. **Failures are clear about _what_ is not working and give as many hints as possible to _why_ it's not working.**
 
-4. **Tests should not commonly need manual updates when the implementation is changed.**
+4. **Tests do not commonly need manual updates when the implementation is changed.**
    If tests commonly need manual updates, it creates the potential to accidentally change the test so that it doesn't catch a regression introduced in the same change. It also puts more burden on the code reviewers. In addition, updating tests can feel daunting and reduces the motivation to make changes to that part of the codebase.
 
-5. **Tests should be easy to write and maintain.**
+5. **Tests are easy to write and maintain.**
 
 ## Testing UI Code
 
