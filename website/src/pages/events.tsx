@@ -1,7 +1,9 @@
+import GlobeIcon from 'mdi-react/GlobeIcon'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Conferences from '../components/EventsList'
+import { IconItem } from '../components/IconItem'
 import Layout from '../components/Layout'
 import { Tweets } from '../components/Tweets'
 
@@ -22,7 +24,8 @@ export default class EventsPage extends React.Component<any, any> {
     }
 
     public render(): JSX.Element | null {
-        const desc = 'Meet Sourcegraph at these conferences and meetups around the world.'
+        const desc =
+            'Meetup with Sourcegraph engineers, learn about Universal Code Search, and get a closer look at the latest updates in Sourcegraph.'
         return (
             <Layout location={this.props.location}>
                 <Helmet>
@@ -40,16 +43,50 @@ export default class EventsPage extends React.Component<any, any> {
                     <section className="events events__head">
                         <div className="events__container">
                             <ContentSection color="primary" className="hero-section text-center py-5">
-                                <h1>Sourcegraph developer events</h1>
+                                <h1>Sourcegraph developer events and videos</h1>
                                 <p className="events__head-description">{desc}</p>
                             </ContentSection>
                         </div>
                     </section>
                     <section className="events">
-                        <div className="bg-white text-dark py-6">
-                            <div className="container">
-                                <Conferences></Conferences>
+                        <div className="bg-white text-dark text-center mt-5">
+                            <h3 className="font-weight-light py-4">Upcoming Event</h3>
+                        </div>
+                        <div className="row justify-content-center">
+                            <div className="col-md-4 mb-4">
+                                <a href="https://info.sourcegraph.com/online-meetup-june25" rel="nofollow">
+                                    <img
+                                        className="card-img-top img-fluid"
+                                        src="https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-meetup-3.17.jpg"
+                                    />
+                                </a>
                             </div>
+                            <div className="col-md-6 mb-4 px-6">
+                                <IconItem className="position-relative" icon={GlobeIcon} color="green">
+                                    <h4>Online meetup: Sourcegraph 3.17</h4>
+                                </IconItem>
+                                <h5>Thursday, June 25, 2020, 10:00 AM PT | 1:00 AM ET</h5>
+                                <p>
+                                    Meet with our Sourcegraph engineers to learn about the latest updates in Sourcegraph
+                                    release 3.17. Bring your questions or discuss any topic on Sourcegraph and Universal
+                                    Code Search.
+                                </p>
+                                <p>
+                                    <a
+                                        className="button btn btn-primary"
+                                        id="Sign up"
+                                        href="https://info.sourcegraph.com/online-meetup-june25"
+                                    >
+                                        Sign up
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-white text-dark text-center mt-5">
+                            <h3 className="font-weight-light py-4">Videos</h3>
+                        </div>
+                        <div className="container">
+                            <Conferences></Conferences>
                         </div>
                     </section>
 
