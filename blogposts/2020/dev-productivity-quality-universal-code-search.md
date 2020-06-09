@@ -30,15 +30,13 @@ Sub-optimal developer productivity in the era of Big Code is a losing propositio
 
 Companies need to prioritize increasing the efficiency and quality of the core software development process itself.
 
-###### Improving code search is the highest leverage activity for improving developer productivity and quality
+#### Code search is the highest leverage activity for improving developer productivity and quality
 
-#### Code Search is the most common specific activity performed by software developers.
-
-They do it every workday.** They do it several times per day. In fact, the average number of times, according to academics and industry research, is 12 queries per day.[^1] 
+Code Search is the most common specific activity performed by software developers. They do it every workday. They do it several times per day. In fact, the average number of times, according to academics and industry research, is 12 queries per day.[^1] 
 
 Big Code changes how search must be done. Code search must now be universal – across different programming languages, code hosts, repositories, version control systems, services, and APIs – in order to be effective for software developers. 
 
-Existing tools such as Grep, OpenGrok, and GitHub Search are not up to the challenge of Big Code Search. With the variety and volume of code growing hosted in different platforms, individual tool makers do not commit resources to search other tools’ code.
+Existing tools such as Grep, OpenGrok, and GitHub Search are not up to the challenge of searching Big Code . With the variety and volume of code growing hosted in different platforms, individual tool makers do not commit resources to search other tools’ code.
 
 ### Improve developer productivity
 
@@ -46,10 +44,14 @@ The Google study shows that each search activity takes “a few minutes.” Quic
 
 In the era of Big Code, software developers need to be able to search across all the code they care about. Enabling developers to perform more nuanced queries (using [structural code search with Comby](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search)) across more code, programming languages, repositories, and other technologies means finding the right answers faster.
 
-Sourcegraph Universal Code Search reduces the amount of time searching, by retrieving better, faster, and more accurate first-time search results, across all code. This minimizes the need to refine queries, execute the search multiple times, and overcome wrong answers. There is a clear increase in productivity for every developer that uses Sourcegraph.
+<div style="padding-left: 2rem">
+  
+**“Sourcegraph improves my productivity and ability to write clean code by 2-3x."
+— Uber senior engineer**
 
-##### “Sourcegraph improves my productivity and ability to write clean code by 2-3x.”
-##### — Uber senior engineer
+</div>
+
+Sourcegraph Universal Code Search reduces the amount of time searching, by retrieving better, faster, and more accurate first-time search results, across all code. This minimizes the need to refine queries, execute the search multiple times, and overcome wrong answers. There is a clear increase in productivity for every developer that uses Sourcegraph.
 
 
 ### Faster Incident Response
@@ -68,7 +70,12 @@ Developers use Universal Code Search for many use cases: learning a new block of
 
 As documented by industry and academic researchers, search is the most common developer task, ahead of even writing code. By reducing the time on search, and increasing the quality of search results, developers have more time to spend on actually developing new features, maintaining a codebase or fixing bugs. The business value comes not just from saving hours of developer time, but by delivering new releases to customers days or weeks faster. For innovative companies, beating your competitors to market with new features means winning market share.
 
-#### “Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible.” — Lyft engineering manager
+<div style="padding-left: 2rem">
+  
+**“Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible.”
+— Lyft engineering manager** 
+
+</div>
 
 ### Better insight into your codebase
 
