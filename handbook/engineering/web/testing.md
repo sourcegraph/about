@@ -86,6 +86,8 @@ If any of their interfaces change, it will only affect the unit tests of direct 
 
 For React components, this can mean writing components that take **children** instead of hard-coding them, which also makes snapshot tests assert fewer implementation details.
 
+For RxJS code, this can mean implementing logic as _operators_ (functions taking an Observable and returning an Observable).
+
 ## Guidelines for writing tests
 
 ### Use specific assertion functions
