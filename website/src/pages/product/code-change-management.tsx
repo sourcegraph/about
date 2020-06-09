@@ -79,7 +79,7 @@ export default ((props: any) => (
                 ]}
             />
             <ContentSection color="white" className="py-2">
-                <h2 className="display-3 mb-5">Leading dev teams invest heavily in code&nbsp;change&nbsp;management</h2>
+                <h2 className="display-4 mb-5">Leading dev teams invest heavily in code&nbsp;change&nbsp;management</h2>
                 <ContentSection color="white" className="py-3">
                     <div className="row">
                         <div className="col-md-4">

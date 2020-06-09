@@ -74,6 +74,15 @@ export default ((props: any) => (
                         </IconItem>
                     </div>
                 </div>
+                <div className="row justify-content-center py-4">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/uber.svg" width="100px" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>[Sourcegraph] improves my productivity and ability to write clean code by 2-3x.</p>
+                            <footer className="blockquote-footer">Uber senior engineer</footer>
+                        </blockquote>
+                    </div>
+                </div>
             </ContentSection>
             <ContentSection color="black" className="py-6">
                 <h2 id="demo" className="text-center display-4 pb-4">

@@ -72,6 +72,19 @@ export default ((props: any) => (
                         </IconItem>
                     </div>
                 </div>
+                <div className="row justify-content-center py-4">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/lyft-logo.svg" width="100px" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                Sourcegraph [code search] … has made me insanely more productive and efficient at
+                                writing code here. I’m able to understand and deeply dive through all of our
+                                microservices and get my work done really fast.
+                            </p>
+                            <footer className="blockquote-footer">Lyft engineering manager</footer>
+                        </blockquote>
+                    </div>
+                </div>
             </ContentSection>
             <ContentSection color="white" className="pb-2">
                 <h2 id="features" className="display-4 mb-5 text-center">

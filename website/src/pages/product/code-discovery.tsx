@@ -122,6 +122,18 @@ export default ((props: any) => (
                         <OpenSourcePrivacyFeatureItem />
                     </div>
                 </div>
+                <div className="row justify-content-center py-4">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/convoy-logo.svg" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                For our new developers, Sourcegraph has been invaluable to get to know the repository
+                                structure, to track down where code lives, and self-service during their investigations.
+                            </p>
+                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                        </blockquote>
+                    </div>
+                </div>
             </ContentSection>
             <ContentSection color="gray" className="py-6">
                 <EbookUniversalCodeSearch />
@@ -243,29 +255,15 @@ export default ((props: any) => (
             </div>
 
             <ContentSection color="white" className="py-3">
-                <div className="row">
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="Software engineering is more about reading code than writing it, and part of this process is finding the code that you should read."
-                            by={
-                                <a href="https://github.com/google/zoekt/blob/master/doc/faq.md" target="_blank">
-                                    Han-Wen Nienhuys (Google engineer)
-                                </a>
-                            }
-                        />
-                    </div>
-
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="Sourcegraph [code search] … has made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast."
-                            by="Lyft engineering manager"
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
-                            by="Uber senior engineer"
-                        />
+                <div className="row justify-content-center">
+                    <div className="col-lg-10 text-center">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                Software engineering is more about reading code than writing it, and part of this
+                                process is finding the code that you should read.
+                            </p>
+                            <footer className="blockquote-footer">Han-Wen Nienhuys (Google engineer)</footer>
+                        </blockquote>
                     </div>
                 </div>
             </ContentSection>
