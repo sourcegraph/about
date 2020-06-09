@@ -12,6 +12,7 @@ import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../../components/product/ProductDemoVideo'
@@ -22,7 +23,7 @@ import { RequestDemoAction } from '../../css/components/actions/RequestDemoActio
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 export default ((props: any) => {
     const actions = (
-        <div className="d-flex justify-content-center mt-6">
+        <div className="d-flex justify-content-center">
             <div>
                 <RequestDemoAction />
                 <ContactPresalesSupportAction className="mt-3 text-light" />
@@ -83,8 +84,10 @@ export default ((props: any) => {
                         </div>
                     </div>
                 </ContentSection>
-                <ContentSection color="white" className="py-6">
-                    <span id="features" />
+                <ContentSection color="white" className="pt-4">
+                    <h2 id="features" className="display-4 mb-5 text-center">
+                        Sourcegraph features
+                    </h2>
                     <div className="row">
                         <div className="col-md-6 mb-4">
                             <IconItem className="position-relative" icon={SearchIcon} color="brand-cyan">
@@ -99,7 +102,7 @@ export default ((props: any) => {
                                     10,000s of repositories, all branches and commits, all programming languages, any
                                     code host&mdash;all of your code is accessible on Sourcegraph from your web browser.
                                 </p>
-                                <Link to="/product/code-search-navigation" className="stretched-link">
+                                <Link to="/product/code-discovery" className="stretched-link">
                                     Why the best developers use <strong>code discovery</strong>&nbsp;&raquo;
                                 </Link>
                             </IconItem>
@@ -152,52 +155,31 @@ export default ((props: any) => {
                             </IconItem>
                         </div>
                     </div>
+                    <div className="row justify-content-center py-4">
+                        <div className="col-lg-10 text-center">
+                            <img src="/external-logos/lyft-logo.svg" width="100px" />
+                            <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                                <p>
+                                    Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely
+                                    more productive and efficient at writing code here. I’m able to understand and
+                                    deeply dive through all of our microservices and get my work done really fast. This
+                                    is absolutely incredible.
+                                </p>
+                                <footer className="blockquote-footer">Lyft engineering manager</footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </ContentSection>
                 <ContentSection color="primary" className="py-6 d-none">
                     <ProductDemoVideo title="How software development is better with Sourcegraph" />
                     <ProductFeaturesAndUseCases className="mt-6" />
                 </ContentSection>
-                <ContentSection color="gray" className="py-5">
-                    <div className="row justify-content-md-center">
-                        <div className="col-md-3 text-center">
-                            <img
-                                src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
-                                alt="Download: Universal Code Search and Intelligence"
-                                width="170"
-                                className="universal-code-search--glow"
-                            />
-                        </div>
-                        <div className="col-md-6">
-                            <h5>EBOOK</h5>
-                            <h3>Universal code search and intelligence</h3>
-                            <h5>How to increase programming productivity and improve code quality</h5>
-                            <Link
-                                className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal "
-                                to="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=product"
-                            >
-                                Free download
-                            </Link>
-                        </div>
-                    </div>
+                <ContentSection color="gray" className="py-6">
+                    <EbookUniversalCodeSearch />
                 </ContentSection>
                 <ContentSection color="white">
                     <span id="customers" />
                     <CustomerLogosSection className="pt-6 pb-4" />
-                    <div className="row">
-                        <div className="col-md-6">
-                            <Blockquote
-                                quote="Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible."
-                                by="Lyft engineering manager"
-                            />
-                        </div>
-                        <div className="col-md-6">
-                            <Blockquote
-                                quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
-                                by="Uber senior engineer"
-                            />
-                        </div>
-                    </div>
-                    <hr />
                     <span id="integrations" />
                     <IntegratesWithSection className="mt-4 pt-5 pb-6" />
                 </ContentSection>

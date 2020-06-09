@@ -27,26 +27,27 @@ import Helmet from 'react-helmet'
  */
 const featuredPosts: BlogPost[] = [
     {
-        title: 'Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements',
+        title:
+            'Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements',
         description:
             'Read about and watch videos of the features released in Sourcegraph 3.16 on May 20, 2020. Upgrade your Sourcegraph instance today!',
         thumbnail: '/sourcegraph-mark.png',
-        url: '/blog/sourcegraph-3.16'
+        url: '/blog/sourcegraph-3.16',
     },
     {
         title: 'We made a children\'s book titled "Our "ABCs: Always Be Coding" and it\'s free to download',
         description:
-            'We\'ve created a new digital children\'s book titled "Our ABCs: Always Be Coding”—for all children at home that wonder what their techie parents do all day, night, and some weekends, too!',
+            "We've created a new digital children's book titled \"Our ABCs: Always Be Coding”—for all children at home that wonder what their techie parents do all day, night, and some weekends, too!",
         thumbnail: '/other/abcs-book/our-abcs.png',
-        url: '/blog/our-abcs-always-be-coding-childrens-book'
+        url: '/blog/our-abcs-always-be-coding-childrens-book',
     },
     {
         title: 'Universal Code Intelligence for GitHub with the Sourcegraph browser extension',
         description:
             'Universal Code Intelligence for GitHub means bringing code navigation features such as hover tooltips, go to definition, and find references to every code view and pull request, supporting every popular language, and all public and private repositories.',
         thumbnail: '/external-logos/github-logo.svg',
-        url: '/blog/universal-code-intelligence-github-sourcegraph-browser-extension'
-    }
+        url: '/blog/universal-code-intelligence-github-sourcegraph-browser-extension',
+    },
 ]
 
 const testimonials: Testimonial[] = [
@@ -228,7 +229,7 @@ export default ((props: any) => (
                 <CustomerLogosSection className="py-5" />
             </div>
             <ContentSection id="demo" color="black" className="py-6">
-                <YouTube id="GQj5jXdON3A"/>
+                <YouTube id="GQj5jXdON3A" />
             </ContentSection>
             <div className="bg-white text-dark py-4">
                 <div className="container">
@@ -251,7 +252,7 @@ export default ((props: any) => (
                 <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
             </ContentSection>
             <div className="bg-white text-dark">
-                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+                <IntegratesWithSection className="pt-5 pb-4" />
             </div>
             <div className="bg-primary py-6 d-none">
                 <ContentSection>
@@ -264,7 +265,7 @@ export default ((props: any) => (
             </ContentSection>
             <Jumbotron
                 color="purple"
-                className="py-6 mb-0"
+                className="py-4"
                 title="Try Sourcegraph now"
                 description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search."
                 logomark={false}
