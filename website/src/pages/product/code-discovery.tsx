@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import FilesIcon from 'mdi-react/FilesIcon'
 import GlobeIcon from 'mdi-react/GlobeIcon'
 import HistoryIcon from 'mdi-react/HistoryIcon'
@@ -12,14 +11,11 @@ import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
-import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
-import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
+import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { UseCasesTable } from '../../components/product/UseCasesTable'
 import { YouTube } from '../../components/YouTube'
-import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
@@ -32,7 +28,6 @@ export default ((props: any) => (
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestDemoAction className="mt-3" />
-                    <ContactPresalesSupportAction className="mt-3 text-light" />
                     <ViewDeveloperDocumentationAction
                         className="text-light mt-2"
                         url="https://docs.sourcegraph.com/#quickstart"
@@ -46,18 +41,16 @@ export default ((props: any) => (
                 sections={[
                     { text: 'Features', url: '#features' },
                     { text: 'Use cases', url: '#use-cases' },
-                    { text: 'Integrations', url: '#integrations' },
                     { text: 'Demo screencasts', url: '#demo' },
-                    { text: 'Who uses it', url: '#customers' },
                 ]}
             />
-            <ContentSection className="pt-5 pb-4" color="white">
+            <ContentSection className="py-2" color="white">
                 <h2 id="features" className="text-center display-3">
                     Code navigation and exploration
                 </h2>
                 <p className="text-center">Find answers faster, across any codebase from one centralized place.</p>
             </ContentSection>
-            <ContentSection color="white" className="pt-6 pb-2">
+            <ContentSection color="white" className="py-4">
                 <div className="row">
                     <div className="col-md-6 mb-4">
                         <IconItem className="position-relative" icon={SearchIcon} color="brand-cyan">
@@ -129,8 +122,22 @@ export default ((props: any) => (
                         <OpenSourcePrivacyFeatureItem />
                     </div>
                 </div>
+                <div className="row justify-content-center py-4">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/convoy-logo.svg" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                For our new developers, Sourcegraph has been invaluable to get to know the repository
+                                structure, to track down where code lives, and self-service during their investigations.
+                            </p>
+                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                        </blockquote>
+                    </div>
+                </div>
             </ContentSection>
-
+            <ContentSection color="gray" className="py-6">
+                <EbookUniversalCodeSearch />
+            </ContentSection>
             <ContentSection color="purple" className="py-6">
                 <h2 className="text-center display-4 pb-4">See Sourcegraph code discovery in action</h2>
                 <YouTube id="KSx61-yAMLs" autoplay={true} loop={true} />
@@ -248,29 +255,15 @@ export default ((props: any) => (
             </div>
 
             <ContentSection color="white" className="py-3">
-                <div className="row">
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="Software engineering is more about reading code than writing it, and part of this process is finding the code that you should read."
-                            by={
-                                <a href="https://github.com/google/zoekt/blob/master/doc/faq.md" target="_blank">
-                                    Han-Wen Nienhuys (Google engineer)
-                                </a>
-                            }
-                        />
-                    </div>
-
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="Sourcegraph [code search] … has made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast."
-                            by="Lyft engineering manager"
-                        />
-                    </div>
-                    <div className="col-md-4">
-                        <Blockquote
-                            quote="[Sourcegraph] improves my productivity and ability to write clean code by 2-3x."
-                            by="Uber senior engineer"
-                        />
+                <div className="row justify-content-center">
+                    <div className="col-lg-10 text-center">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                Software engineering is more about reading code than writing it, and part of this
+                                process is finding the code that you should read.
+                            </p>
+                            <footer className="blockquote-footer">Han-Wen Nienhuys (Google engineer)</footer>
+                        </blockquote>
                     </div>
                 </div>
             </ContentSection>
@@ -282,25 +275,6 @@ export default ((props: any) => (
                 </h2>
                 <YouTube id="OGd8wr7XpgU" className="mb-6" />
                 <YouTube id="GuqWw3t6H-k" />
-            </ContentSection>
-
-            <ContentSection color="white" className="pt-5 pb-3">
-                <div id="integrations">
-                    <IntegratesWithSection
-                        className="py-6"
-                        showTypes={['codeHost', 'plugin', 'language']}
-                        customTypeLabels={{ codeHost: 'Code hosts' }}
-                    />
-                </div>
-            </ContentSection>
-
-            <ContentSection color="white" className="pt-5 pb-3">
-                <hr id="customers" />
-                <CustomerLogosSection trustWhat="code search" />
-            </ContentSection>
-
-            <ContentSection color="black" className="py-5">
-                <EnterpriseReadySolution />
             </ContentSection>
             <Jumbotron
                 color="purple"

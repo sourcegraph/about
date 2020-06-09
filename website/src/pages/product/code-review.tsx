@@ -12,13 +12,9 @@ import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
-import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
-import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
-import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
+import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { YouTube } from '../../components/YouTube'
-import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
@@ -31,18 +27,11 @@ export default ((props: any) => (
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestDemoAction className="mt-3" />
-                    <a
-                        className="btn btn-outline-primary mt-3"
-                        href="https://docs.sourcegraph.com/integration/browser_extension"
-                    >
-                        Install browser extension
-                    </a>
-                    <ContactPresalesSupportAction className="mt-3 text-light" />
                     <ViewDeveloperDocumentationAction
                         className="text-light mt-2"
-                        url="https://docs.sourcegraph.com/integration"
+                        url="https://docs.sourcegraph.com/#quickstart"
                     >
-                        Code review integrations documentation
+                        Documentation &amp; self-service install
                     </ViewDeveloperDocumentationAction>
                 </div>
             }
@@ -51,32 +40,53 @@ export default ((props: any) => (
                 sections={[
                     { text: 'Why code review is critical', url: '#why' },
                     { text: 'Features', url: '#features' },
-                    { text: 'Integrations', url: '#integrations' },
                     { text: 'Demo screencast', url: '#demo' },
-                    { text: 'Who uses it', url: '#customers' },
                 ]}
             />
-            <ContentSection color="white" className="py-5">
-                <h2 className="display-4 mb-4" id="why">
+            <ContentSection color="white" className="py-2">
+                <h2 className="display-4 mb-4 text-center" id="why">
                     Code review is the most critical process for engineering teams
                 </h2>
-                <IconItem color="brand-orange" icon={FlameIcon} className="py-3">
-                    <h5 className="text-sans-serif">
-                        A mistake that slips past code review becomes ~10x harder to fix.
-                    </h5>
-                </IconItem>
-                <IconItem color="brand-orange" icon={TurtleIcon} className="py-3">
-                    <h5 className="text-sans-serif">
-                        A slow code review process hurts productivity (just like slow compilation or slow tests).
-                    </h5>
-                </IconItem>
-                <IconItem color="brand-orange" icon={QuestionMarkCircleIcon} className="py-3">
-                    <h5 className="text-sans-serif">
-                        An ineffective code review process hinders knowledge transfer and new employee onboarding.
-                    </h5>
-                </IconItem>
+                <div className="row">
+                    <div className="col-md-4 mb-4">
+                        <IconItem color="red" icon={FlameIcon} className="py-3">
+                            <p className="text-sans-serif">
+                                A mistake that slips past code review becomes ~10x harder to fix.
+                            </p>
+                        </IconItem>
+                    </div>
+                    <div className="col-md-4 mb-4">
+                        <IconItem color="red" icon={TurtleIcon} className="py-3">
+                            <p className="text-sans-serif">
+                                A slow code review process hurts productivity (just like slow compilation or slow
+                                tests).
+                            </p>
+                        </IconItem>
+                    </div>
+                    <div className="col-md-4 mb-4">
+                        <IconItem color="red" icon={QuestionMarkCircleIcon} className="py-3">
+                            <p className="text-sans-serif">
+                                An ineffective code review process hinders knowledge transfer and new employee
+                                onboarding.
+                            </p>
+                        </IconItem>
+                    </div>
+                </div>
+                <div className="row justify-content-center py-4">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/lyft-logo.svg" width="100px" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                Sourcegraph [code search] … has made me insanely more productive and efficient at
+                                writing code here. I’m able to understand and deeply dive through all of our
+                                microservices and get my work done really fast.
+                            </p>
+                            <footer className="blockquote-footer">Lyft engineering manager</footer>
+                        </blockquote>
+                    </div>
+                </div>
             </ContentSection>
-            <ContentSection color="white" className="pt-6 pb-2">
+            <ContentSection color="white" className="pb-2">
                 <h2 id="features" className="display-4 mb-5 text-center">
                     How code review is better with Sourcegraph
                 </h2>
@@ -127,27 +137,28 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="white" className="pt-5 pb-3" id="customers">
-                <CustomerLogosSection />
+            <ContentSection color="gray" className="py-6">
+                <EbookUniversalCodeSearch />
             </ContentSection>
             <ContentSection color="black" className="py-6">
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Better code reviews with the Sourcegraph browser extension
                 </h2>
                 <YouTube id="s5TJBLACWeQ" />
-            </ContentSection>
-
-            <ContentSection color="white" className="pt-5 pb-3">
-                <br id="integrations" />
-                <IntegratesWithSection
-                    className="py-6"
-                    showTypes={['codeHost', 'language']}
-                    showOnlyCodeHostsWithCodeReviewIntegration={true}
-                    customTypeLabels={{ codeHost: 'Code review tools' }}
-                />
-            </ContentSection>
-            <ContentSection color="black" className="py-5">
-                <EnterpriseReadySolution />
+                <div className="row justify-content-center">
+                    <div className="col-lg-10 mt-2 py-4 text-center">
+                        <h5>
+                            Install the Sourcegraph browser extension adding code intelligence to your files and diffs
+                            on GitHub, GitHub Enterprise, GitLab, Phabricator, and Bitbucket Server.
+                        </h5>
+                        <a
+                            className="btn btn-primary mt-4"
+                            href="https://docs.sourcegraph.com/integration/browser_extension"
+                        >
+                            Get browser extension
+                        </a>
+                    </div>
+                </div>
             </ContentSection>
             <Jumbotron
                 color="purple"
@@ -157,9 +168,6 @@ export default ((props: any) => (
                 description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search."
             >
                 <GetSourcegraphNowActions />
-                <a className="btn btn-primary mt-2" href="https://docs.sourcegraph.com/integration/browser_extension">
-                    Install browser extension
-                </a>
             </Jumbotron>
         </ContentPage>
     </Layout>

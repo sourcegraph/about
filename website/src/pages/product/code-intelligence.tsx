@@ -1,13 +1,10 @@
 import { Link } from 'gatsby'
+import CodeBracesIcon from 'mdi-react/CodeBracesIcon'
 import DirectionsIcon from 'mdi-react/DirectionsIcon'
-import FlameIcon from 'mdi-react/FlameIcon'
+import FolderSearchOutlineIcon from 'mdi-react/FolderSearchOutlineIcon'
 import MicroscopeIcon from 'mdi-react/MicroscopeIcon'
 import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
-import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
-import TurtleIcon from 'mdi-react/TurtleIcon'
 import TooltipPlusIcon from 'mdi-react/TooltipPlusIcon'
-import FolderSearchOutlineIcon from 'mdi-react/FolderSearchOutlineIcon'
-import CodeBracesIcon from 'mdi-react/CodeBracesIcon'
 import React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -15,13 +12,10 @@ import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
-import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { YouTube } from '../../components/YouTube'
-import { ContactPresalesSupportAction } from '../../css/components/actions/ContactPresalesSupportAction'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
@@ -34,13 +28,6 @@ export default ((props: any) => (
             mainActions={
                 <div className="d-flex flex-column align-items-center">
                     <RequestDemoAction className="mt-3" />
-                    <a
-                        className="btn btn-outline-primary mt-3"
-                        href="https://docs.sourcegraph.com/integration/browser_extension"
-                    >
-                        Install browser extension
-                    </a>
-                    <ContactPresalesSupportAction className="mt-3 text-light" />
                     <ViewDeveloperDocumentationAction
                         className="text-light mt-2"
                         url="https://docs.sourcegraph.com/integration"
@@ -55,36 +42,55 @@ export default ((props: any) => (
                     { text: 'Better code reviews', url: '#codereviews' },
                     { text: 'Integrations', url: '#integrations' },
                     { text: 'Demo screencast', url: '#demo' },
-                    { text: 'Who uses it', url: '#customers' },
                 ]}
             />
-            <ContentSection color="white" className="py-5">
-                <h2 className="display-4 mb-4">Explore definitions & references, across all projects</h2>
-                <IconItem color="brand-orange" icon={FolderSearchOutlineIcon} className="py-3">
-                    <h5 className="text-sans-serif">
-                        Find the definition, function calls and anything else in code, across packages, dependencies,
-                        and repositories.
-                    </h5>
-                </IconItem>
-                <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
-                    <h5 className="text-sans-serif">
-                        Explore code in your web browser in any repository on any branch, instantly and without losing
-                        local context.
-                    </h5>
-                </IconItem>
-                <IconItem color="brand-orange" icon={CodeBracesIcon} className="py-3">
-                    <h5 className="text-sans-serif">
-                        Works for <SupportedProgrammingLanguagesLink />.
-                    </h5>
-                </IconItem>
+            <ContentSection color="white" className="py-2">
+                <h2 className="display-4 mb-4 text-center">
+                    Explore definitions &amp; references, across all projects
+                </h2>
+                <div className="row">
+                    <div className="col-md-4 mb-4">
+                        <IconItem color="brand-orange" icon={FolderSearchOutlineIcon} className="py-3">
+                            <p className="text-sans-serif">
+                                Find the definition, function calls and anything else in code, across packages,
+                                dependencies, and repositories.
+                            </p>
+                        </IconItem>
+                    </div>
+                    <div className="col-md-4 mb-4">
+                        <IconItem color="brand-orange" icon={TooltipPlusIcon} className="py-3">
+                            <p className="text-sans-serif">
+                                Explore code in your web browser in any repository on any branch, instantly and without
+                                losing local context.
+                            </p>
+                        </IconItem>
+                    </div>
+                    <div className="col-md-4 mb-4">
+                        <IconItem color="brand-orange" icon={CodeBracesIcon} className="py-3">
+                            <p className="text-sans-serif">
+                                All programming languages are supported. <SupportedProgrammingLanguagesLink /> have
+                                additional code intelligence support.
+                            </p>
+                        </IconItem>
+                    </div>
+                </div>
+                <div className="row justify-content-center py-4">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/uber.svg" width="100px" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>[Sourcegraph] improves my productivity and ability to write clean code by 2-3x.</p>
+                            <footer className="blockquote-footer">Uber senior engineer</footer>
+                        </blockquote>
+                    </div>
+                </div>
             </ContentSection>
             <ContentSection color="black" className="py-6">
                 <h2 id="demo" className="text-center display-4 pb-4">
                     See Sourcegraph code intelligence in action
                 </h2>
-                <YouTube id="GQj5jXdON3A"/>
+                <YouTube id="GQj5jXdON3A" />
             </ContentSection>
-            <ContentSection color="white" className="pt-6 pb-2">
+            <ContentSection color="white" className="pt-6 pb-3">
                 <h2 id="codereviews" className="display-4 mb-5 text-center">
                     Better code reviews with code intelligence
                 </h2>
@@ -138,7 +144,7 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="white" className="pt-5 pb-3">
+            <ContentSection color="white" className="pt-3">
                 <hr id="integrations" />
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
@@ -149,13 +155,6 @@ export default ((props: any) => (
                 </h2>
                 <YouTube id="s5TJBLACWeQ" />
             </ContentSection>
-            <ContentSection color="white" className="pt-5 pb-3">
-                <span id="customers" />
-                <CustomerLogosSection />
-            </ContentSection>
-            <ContentSection color="black" className="py-5">
-                <EnterpriseReadySolution />
-            </ContentSection>
             <Jumbotron
                 color="purple"
                 className="py-4"
@@ -164,9 +163,6 @@ export default ((props: any) => (
                 description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
             >
                 <GetSourcegraphNowActions />
-                <a className="btn btn-primary mt-2" href="https://docs.sourcegraph.com/integration/browser_extension">
-                    Install browser extension
-                </a>
             </Jumbotron>
         </ContentPage>
     </Layout>
