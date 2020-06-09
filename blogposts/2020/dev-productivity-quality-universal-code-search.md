@@ -46,9 +46,11 @@ In the era of Big Code, software developers need to be able to search across all
 
 <div style="padding-left: 2rem">
   
-**“Sourcegraph improves my productivity and ability to write clean code by 2-3x."
-— Uber senior engineer**
-
+**“Sourcegraph improves my productivity and ability to write clean code by 2-3x."**
+</div>
+<div style="padding-left: 4rem">
+  
+**— Uber senior engineer**
 </div>
 
 Sourcegraph Universal Code Search reduces the amount of time searching, by retrieving better, faster, and more accurate first-time search results, across all code. This minimizes the need to refine queries, execute the search multiple times, and overcome wrong answers. There is a clear increase in productivity for every developer that uses Sourcegraph.
@@ -72,8 +74,11 @@ As documented by industry and academic researchers, search is the most common de
 
 <div style="padding-left: 2rem">
   
-**“Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible.”
-— Lyft engineering manager** 
+**“Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible.”** 
+</div>
+<div style="padding-left: 4rem">
+  
+**— Lyft engineering manager** 
 
 </div>
 
