@@ -61,7 +61,7 @@ Relying on global variables makes dependencies hard to stub for testing (a varia
 It also means figuring out all transitive dependencies that need stubbing for a test is difficult.
 Even if it results in more code, prefer passing in dependencies as parameters (or props for React components), which makes dependencies explicit.
 
-### Strive for flat call trees
+### Favor flat & wide call trees over deep & narrow call trees
 
 When writing deeply nested call trees, a test for a unit in the middle of the tree inevitably also tests every layer beneath it.
 This means when a layer below is changed or breaks, the tests for the layers above it will likely break too.
