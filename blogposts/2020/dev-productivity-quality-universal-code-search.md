@@ -44,13 +44,11 @@ The Google study shows that each search activity takes “a few minutes.” Quic
 
 In the era of Big Code, software developers need to be able to search across all the code they care about. Enabling developers to perform more nuanced queries (using [structural code search with Comby](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search)) across more code, programming languages, repositories, and other technologies means finding the right answers faster.
 
-<div style="padding-left: 2rem">
-  
-**“Sourcegraph improves my productivity and ability to write clean code by 2-3x."**
+<div style="padding-left: 2rem; font-weight: bold">
+  “Sourcegraph improves my productivity and ability to write clean code by 2-3x."
 </div>
-<div style="padding-left: 4rem">
-  
-**— Uber senior engineer**
+<div style="padding-left: 4rem; font-weight: bold">
+  — Uber senior engineer
 </div>
 
 Sourcegraph Universal Code Search reduces the amount of time searching, by retrieving better, faster, and more accurate first-time search results, across all code. This minimizes the need to refine queries, execute the search multiple times, and overcome wrong answers. There is a clear increase in productivity for every developer that uses Sourcegraph.
@@ -72,15 +70,11 @@ Developers use Universal Code Search for many use cases: learning a new block of
 
 As documented by industry and academic researchers, search is the most common developer task, ahead of even writing code. By reducing the time on search, and increasing the quality of search results, developers have more time to spend on actually developing new features, maintaining a codebase or fixing bugs. The business value comes not just from saving hours of developer time, but by delivering new releases to customers days or weeks faster. For innovative companies, beating your competitors to market with new features means winning market share.
 
-<div style="padding-left: 2rem">
-  
-**“Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible.”** 
+<div style="padding-left: 4rem; font-weight: bold">
+  “Seriously, Sourcegraph is the best tool we’ve invested in. It’s made me insanely more productive and efficient at writing code here. I’m able to understand and deeply dive through all of our microservices and get my work done really fast. This is absolutely incredible.” 
 </div>
-<div style="padding-left: 4rem">
-  
-**— Lyft engineering manager** 
-
-</div>
+<div style="padding-left: 4rem; font-weight: bold">
+  — Lyft engineering manager</div>
 
 ### Better insight into your codebase
 
