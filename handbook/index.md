@@ -1,6 +1,6 @@
 # Sourcegraph handbook
 
-The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/open_source_open_company.md#open-company).
+The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because [we value openness and transparency](../company/values.md#open-and-transparent).
 
 ## Company
 

@@ -17,7 +17,7 @@ published: true
 
 *Sourcegraph is an open source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade).*
 
-[Developing Sourcegraph in the open](https://docs.sourcegraph.com/dev/open_source_open_company) with a [public product roadmap](https://docs.sourcegraph.com/dev/roadmap), and having a product used by tons of developers, means we receive a constant stream of feedback. A clear theme emerged:
+[Developing Sourcegraph in the open](https://about.sourcegraph.com/company/values#open-and-transparent) with a [public product roadmap](https://docs.sourcegraph.com/dev/roadmap), and having a product used by tons of developers, means we receive a constant stream of feedback. A clear theme emerged:
 
 <p style="text-align:center;font-style:italic">“Improving x feature would help me more than adding new features.”</p>
 

@@ -4,4 +4,5 @@
 - [Sourcegraph handbook](../handbook/index.md#company)
 - [Objectives and Key Results (OKRS)](okrs/index.md)
 - [All-remote](remote/index.md)
-- [Open source, open company](open_source_open_company.md)
+- [Values](values.md)
+- [Teammate qualitites](teammate_qualities.md)
