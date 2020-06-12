@@ -68,7 +68,7 @@ export default ((props: any) => (
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
                                 The Sourcegraph integration [with GitLab] also adds inline code intelligence when you
-                                review code in merge requests (MRs) which helps you speed up the review cycle and catch
+                                review code in merge requests which helps you speed up the review cycle and catch
                                 more bugs.
                             </p>
                             <footer className="blockquote-footer">Sid Sijbrandij, GitLab CEO</footer>
