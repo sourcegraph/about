@@ -22,7 +22,7 @@ export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
             title="Code review"
-            description="Make your code reviews fast and thorough so you can catch more bugs before they're deployed to production."
+            description="Make code reviews fast and thorough to catch more bugs before they're deployed to production."
             className="pb-2"
         >
             <PageSectionLinks
