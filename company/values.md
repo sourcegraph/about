@@ -31,4 +31,4 @@ Leaders empower everyone at Sourcegraph to be the change that they wish to see.
 
 Decisions and ownership are delegated to the people closest to the problem.
 
-Sourcegraph is a vessel and a playground for our team to do it's best work.
+Sourcegraph is a vessel and a playground for our team to do its best work.
