@@ -13,34 +13,24 @@ import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
+import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
-import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
-import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
             title="Code review"
-            description="Better code reviews with code intelligence in context. Sourcegraph enhances your existing code review tool with inline code intelligence, helping you speed up the review cycle and catch more bugs before they're deployed to production."
-            mainActions={
-                <div className="d-flex flex-column align-items-center">
-                    <RequestDemoAction className="mt-3" />
-                    <ViewDeveloperDocumentationAction
-                        className="text-light mt-2"
-                        url="https://docs.sourcegraph.com/#quickstart"
-                    >
-                        Documentation &amp; self-service install
-                    </ViewDeveloperDocumentationAction>
-                </div>
-            }
+            description="Make your code reviews fast and thorough so you can catch more bugs before they're deployed to production."
+            className="pb-2"
         >
             <PageSectionLinks
                 sections={[
                     { text: 'Why code review is critical', url: '#why' },
                     { text: 'Features', url: '#features' },
-                    { text: 'Demo screencast', url: '#demo' },
+                    { text: 'Demo screencasts', url: '#demo' },
+                    { text: 'Integrations', url: '#integrations' },
                 ]}
             />
             <ContentSection color="white" className="py-2">
@@ -74,14 +64,14 @@ export default ((props: any) => (
                 </div>
                 <div className="row justify-content-center py-4">
                     <div className="col-lg-10 text-center">
-                        <img src="/external-logos/lyft-logo.svg" width="100px" />
+                        <img src="/external-logos/gitlab-logo.svg" width="125px" />
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
-                                Sourcegraph [code search] … has made me insanely more productive and efficient at
-                                writing code here. I’m able to understand and deeply dive through all of our
-                                microservices and get my work done really fast.
+                                The Sourcegraph integration [with GitLab] also adds inline code intelligence when you
+                                review code in merge requests (MRs) which helps you speed up the review cycle and catch
+                                more bugs.
                             </p>
-                            <footer className="blockquote-footer">Lyft engineering manager</footer>
+                            <footer className="blockquote-footer">Sid Sijbrandij, GitLab CEO</footer>
                         </blockquote>
                     </div>
                 </div>
@@ -101,9 +91,9 @@ export default ((props: any) => (
                             <p>
                                 See a call to a function you don't recognize? With Sourcegraph, you can see its
                                 documentation and type signature by hovering over it&mdash;and go to its definition in a
-                                single click. Works for <SupportedProgrammingLanguagesLink />. Even if your IDE supports
-                                this, being able to do it in your web browser instantly without losing context saves
-                                tons of time&mdash;and helps you do more thorough reviews.
+                                single click. Even if your IDE supports this, being able to do it in your web browser
+                                instantly without losing context saves tons of time&mdash;and helps you do more thorough
+                                reviews. Works for <SupportedProgrammingLanguagesLink />.
                             </p>
                         </IconItem>
                     </div>
@@ -140,6 +130,23 @@ export default ((props: any) => (
             <ContentSection color="gray" className="py-6">
                 <EbookUniversalCodeSearch />
             </ContentSection>
+            <ContentSection color="black" className="py-6 text-center">
+                <h2 id="demo" className="display-4">
+                    Sourcegraph and GitLab
+                </h2>
+                <h3 class="pb-4">See code discovery and code review in action</h3>
+                <YouTube id="LgpuH2iaZ3w" />
+                <div className="row justify-content-center">
+                    <div className="col-lg-10 mt-2 py-4">
+                        <h5>
+                            Learn how{' '}
+                            <a href="/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence">
+                                GitLab integrates with Sourcegraph
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+            </ContentSection>
             <ContentSection color="black" className="py-6">
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Better code reviews with the Sourcegraph browser extension
@@ -159,6 +166,10 @@ export default ((props: any) => (
                         </a>
                     </div>
                 </div>
+            </ContentSection>
+            <ContentSection color="white" className="pt-3">
+                <hr id="integrations" />
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <Jumbotron
                 color="purple"
