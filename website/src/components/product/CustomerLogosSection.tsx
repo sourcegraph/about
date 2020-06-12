@@ -105,6 +105,10 @@ const ITEMS: (
         url: '/external-logos/expanse-logo.svg',
     },
     {
+        name: 'Tinder',
+        url: '/external-logos/tinder-logo.svg',
+    },
+    {
         name: 'Thought Machine',
         url: '/external-logos/thought-machine-logo.svg',
     },
