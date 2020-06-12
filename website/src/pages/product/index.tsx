@@ -1,16 +1,14 @@
 import { Link } from 'gatsby'
-import MapIcon from 'mdi-react/MapIcon'
 import AutorenewIcon from 'mdi-react/AutorenewIcon'
+import MapIcon from 'mdi-react/MapIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
 import ToolboxIcon from 'mdi-react/ToolboxIcon'
 import * as React from 'react'
-import { Blockquote } from '../../components/Blockquote'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
 import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
-import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
@@ -45,14 +43,6 @@ export default ((props: any) => {
                 description="Explore, navigate, and understand all code, everywhere, faster"
                 mainActions={actions}
             >
-                <PageSectionLinks
-                    sections={[
-                        { text: 'Why universal', url: '#ucs' },
-                        { text: 'Features', url: '#features' },
-                        { text: 'Who uses it', url: '#customers' },
-                        { text: 'Integrations', url: '#integrations' },
-                    ]}
-                />
                 <ContentSection color="primary" className="py-5">
                     <span id="ucs" />
                     <h2 className="text-center">Universal across everything </h2>

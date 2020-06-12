@@ -17,25 +17,12 @@ import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourc
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
-import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
-import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
             title="Code intelligence"
             description="Find answers faster, with inline contextual information around code."
-            mainActions={
-                <div className="d-flex flex-column align-items-center">
-                    <RequestDemoAction className="mt-3" />
-                    <ViewDeveloperDocumentationAction
-                        className="text-light mt-2"
-                        url="https://docs.sourcegraph.com/integration"
-                    >
-                        Code review integrations documentation
-                    </ViewDeveloperDocumentationAction>
-                </div>
-            }
         >
             <PageSectionLinks
                 sections={[
@@ -105,9 +92,9 @@ export default ((props: any) => (
                             <p>
                                 See a call to a function you don't recognize? With Sourcegraph, you can see its
                                 documentation and type signature by hovering over it&mdash;and go to its definition in a
-                                single click. Works for <SupportedProgrammingLanguagesLink />. Even if your IDE supports
-                                this, being able to do it in your web browser instantly without losing context saves
-                                tons of time&mdash;and helps you do more thorough reviews.
+                                single click. Even if your IDE supports this, being able to do it in your web browser
+                                instantly without losing context saves tons of time&mdash;and helps you do more thorough
+                                reviews. Works for <SupportedProgrammingLanguagesLink />.
                             </p>
                         </IconItem>
                     </div>

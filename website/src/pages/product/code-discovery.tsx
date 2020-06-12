@@ -4,7 +4,6 @@ import HistoryIcon from 'mdi-react/HistoryIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
 import StopwatchIcon from 'mdi-react/StopwatchIcon'
 import React from 'react'
-import { Blockquote } from '../../components/Blockquote'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
@@ -12,36 +11,25 @@ import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
+import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { OpenSourcePrivacyFeatureItem } from '../../components/product/OpenSourcePrivacyFeatureItem'
 import { SupportedProgrammingLanguagesLink } from '../../components/product/SupportedProgrammingLanguagesLink'
 import { UseCasesTable } from '../../components/product/UseCasesTable'
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
-import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
-import { ViewDeveloperDocumentationAction } from '../../css/components/actions/ViewDeveloperDocumentationAction'
 
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
             title="Code discovery"
             description="Navigate, explore, and understand the code you are looking for, even if you didn’t know it existed."
-            mainActions={
-                <div className="d-flex flex-column align-items-center">
-                    <RequestDemoAction className="mt-3" />
-                    <ViewDeveloperDocumentationAction
-                        className="text-light mt-2"
-                        url="https://docs.sourcegraph.com/#quickstart"
-                    >
-                        Documentation &amp; self-service install
-                    </ViewDeveloperDocumentationAction>
-                </div>
-            }
         >
             <PageSectionLinks
                 sections={[
                     { text: 'Features', url: '#features' },
                     { text: 'Use cases', url: '#use-cases' },
                     { text: 'Demo screencasts', url: '#demo' },
+                    { text: 'Integrations', url: '#integrations' },
                 ]}
             />
             <ContentSection className="py-2" color="white">
@@ -253,7 +241,6 @@ export default ((props: any) => (
                     </div>
                 </div>
             </div>
-
             <ContentSection color="white" className="py-3">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
@@ -267,7 +254,6 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-
             <ContentSection color="black" className="py-6">
                 {/*<ProductDemoVideo title="See how Sourcegraph code search makes you a faster and better developer" />*/}
                 <h2 id="demo" className="text-center display-4 pb-4">
@@ -275,6 +261,10 @@ export default ((props: any) => (
                 </h2>
                 <YouTube id="OGd8wr7XpgU" className="mb-6" />
                 <YouTube id="GuqWw3t6H-k" />
+            </ContentSection>
+            <ContentSection color="white" className="pt-3">
+                <hr id="integrations" />
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <Jumbotron
                 color="purple"
