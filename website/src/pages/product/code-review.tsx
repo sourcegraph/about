@@ -29,7 +29,7 @@ export default ((props: any) => (
                 sections={[
                     { text: 'Why code review is critical', url: '#why' },
                     { text: 'Features', url: '#features' },
-                    { text: 'Demo screencasts', url: '#demo' },
+                    { text: 'Demo screencast', url: '#demo' },
                     { text: 'Integrations', url: '#integrations' },
                 ]}
             />
@@ -68,8 +68,8 @@ export default ((props: any) => (
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
                                 The Sourcegraph integration [with GitLab] also adds inline code intelligence when you
-                                review code in merge requests which helps you speed up the review cycle and catch
-                                more bugs.
+                                review code in merge requests which helps you speed up the review cycle and catch more
+                                bugs.
                             </p>
                             <footer className="blockquote-footer">Sid Sijbrandij, GitLab CEO</footer>
                         </blockquote>
@@ -147,6 +147,10 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
+            <ContentSection color="white" className="pt-3">
+                <hr id="integrations" />
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+            </ContentSection>
             <ContentSection color="black" className="py-6">
                 <h2 id="demo" className="text-center display-4 pb-4">
                     Better code reviews with the Sourcegraph browser extension
@@ -166,10 +170,6 @@ export default ((props: any) => (
                         </a>
                     </div>
                 </div>
-            </ContentSection>
-            <ContentSection color="white" className="pt-3">
-                <hr id="integrations" />
-                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <Jumbotron
                 color="purple"
