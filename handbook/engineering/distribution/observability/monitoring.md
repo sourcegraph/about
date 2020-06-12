@@ -166,6 +166,7 @@ When upgrading our version of Grafana (declared in the [`sourcegraph/grafana` Do
   * [disk format for provisioning alerts](https://grafana.com/docs/grafana/v6.7/administration/provisioning/#alert-notification-channels) - these fields map to what should be allowable in the JSON schema
   * [what each field accepts](https://grafana.com/docs/grafana/v6.7/alerting/notifications) - this documents the datatype of each field and what they do
 * Update [all links to Grafana documentation](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/*+grafana.com/docs/grafana&patternType=literal) to point to the correct version of Grafana
+* Run `dev/start.sh` and verify that all generated Grafana dashboards still render correctly
 
 ## Additional reading
 
