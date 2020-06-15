@@ -55,18 +55,13 @@ For any members of a hiring team, please see [this folder](https://drive.google.
 
 See [interview process](interview_process.md).
 
-## Sharing interview feedback
+## Exchanging feedback
 
-We don't share specific reasons or feedback if we [decide](#decision-making-process) not to move forward in our hiring process with a candidate.
+We value transparency and like to exchange feedback with candidates.
 
-It would be nice if we could give feedback like this, but we don't do this today. Why?
+If you are a hiring manager who has decided to not move forward with a candidate at any stage in our hiring process, you are encourage to be as transparent as possible with the candidate when communicating the rejection. Use your judgement and ask for help crafting a message if you are unsure.
 
-- The written feedback that we collect during our interview process is intended for an internal audience. We don't ask our interviewers to spend time and effort packaging their feedback in a way that can be delivered directly to candidates.
-- Adequately summarizing all interview feedback for a candidate is challenging and time consuming. We choose to spend our time focusing on delivering developmental feedback to our existing teammates.
-
-If any interviewer is asked by a candidate for interview feedback, they may respond with the following message:
-
-> I understand the desire to receive feedback from our interview process, but unfortunately we are not in a position to give it. Here is some public documentation to that effect: https://about.sourcegraph.com/handbook/people-ops/hiring#sharing-interview-feedback.
+If you are a candidate, we would love to know how you think we can make our hiring process better.
 
 ## Respecting time
 
