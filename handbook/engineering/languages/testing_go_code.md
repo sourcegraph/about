@@ -91,7 +91,7 @@ func TestSprocket(t *testing.T) {
 
 #### Asserting expected complex values
 
-Expected values that are not simple scalars (really, anything not comparable with `==`) should use [go-cmp](github.com/google/go-cmp/cmp) to create a highly-readable diff string.
+Expected values that are not simple scalars (really, anything not comparable with `==`) should use [go-cmp](https://github.com/google/go-cmp/cmp) to create a highly-readable diff string.
 
 ```go
 import "github.com/google/go-cmp/cmp"
