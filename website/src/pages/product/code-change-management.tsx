@@ -122,7 +122,7 @@ export default ((props: any) => (
                     </div>
                 </ContentSection>
                 <h2 className="text-center display-4 mb-3 mt-4" id="use-cases">
-                    Code&nbsp;change&nbsp;campaigns help teams move quickly and safely
+                    Sourcegraph's code&nbsp;change&nbsp;campaigns help teams move quickly and safely
                 </h2>
                 <div className="row mt-4">
                     <div className="col-lg-4 mb-4">
@@ -147,9 +147,9 @@ export default ((props: any) => (
                     </div>
                     <div className="col-lg-4 mb-4">
                         <IconItem className="position-relative" icon={NotificationsActiveIcon} color="green">
-                            <h4>Keep dependencies up-to-date</h4>
+                            <h4>Keep dependencies up todate</h4>
                             <p>
-                                Keep your library dependencies <i>and how you use those libraries</i> up-to-date and
+                                Keep your library dependencies <i>and how you use those libraries</i> up to date and
                                 consistent across all of your organization's code, to avoid old bugs or security
                                 problems in old dependencies, and problems arising from inconsistent dependency version
                                 use across your codebase.
@@ -174,7 +174,7 @@ export default ((props: any) => (
                         <IconItem className="position-relative" icon={BuildIcon} color="blue">
                             <h4>Standardize build and deploy configuration</h4>
                             <p>
-                                Keep the build and deployment configurations up-to-date and consistent across all of
+                                Keep the build and deployment configurations up to date and consistent across all of
                                 your organization's code, so that you can iterate and deploy continuously and reliably
                                 with DevOps self-sufficiency.
                             </p>
@@ -211,7 +211,7 @@ export default ((props: any) => (
                 <div className="row mt-5 justify-content-md-center">
                     <p className="col-lg-10">
                         When you create a campaign, Sourcegraph creates branches and pull requests as needed with the
-                        correct reviewers and context—and keeps them up-to-date. You can track the progress of the
+                        correct reviewers and context—and keeps them up to date. You can track the progress of the
                         campaign with the burndown chart and see all related activity across all repositories. All this
                         makes completing the campaign as fast and painless as possible.
                     </p>

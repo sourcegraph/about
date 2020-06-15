@@ -21,13 +21,13 @@ import { GetSourcegraphNowActions } from '../../css/components/actions/GetSource
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
-            title="Code review"
-            description="Make code reviews fast and thorough to catch more bugs before they're deployed to production."
+            title="Better code reviews"
+            description="Sourcegraph Universal Code Search makes code reviews fast and thorough to catch more bugs before they're deployed to production."
             className="pb-2"
         >
             <PageSectionLinks
                 sections={[
-                    { text: 'Why code review is critical', url: '#why' },
+                    { text: 'Why code reviews are critical', url: '#why' },
                     { text: 'Features', url: '#features' },
                     { text: 'Demo screencast', url: '#demo' },
                     { text: 'Integrations', url: '#integrations' },
@@ -35,7 +35,7 @@ export default ((props: any) => (
             />
             <ContentSection color="white" className="py-2">
                 <h2 className="display-4 mb-4 text-center" id="why">
-                    Code review is the most critical process for engineering teams
+                    Code reviews are a critical process for engineering teams
                 </h2>
                 <div className="row">
                     <div className="col-md-4 mb-4">
@@ -78,11 +78,12 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="white" className="pb-2">
                 <h2 id="features" className="display-4 mb-5 text-center">
-                    How code review is better with Sourcegraph
+                    How code reviews are better with Sourcegraph
                 </h2>
                 <p className="text-center mb-5">
-                    Sourcegraph <Link to="#integrations">integrates</Link> with your existing code review tool and lets
-                    you:
+                    Sourcegraph <a href="/universal-code-search">Universal Code Search</a> lets you review, search, and
+                    modify your code no matter where it's stored. Sourcegraph <Link to="#integrations">integrates</Link>{' '}
+                    with your existing code review tool and lets you:
                 </p>
                 <div className="row">
                     <div className="col-lg-6 mb-4">
@@ -127,9 +128,6 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="gray" className="py-6">
-                <EbookUniversalCodeSearch />
-            </ContentSection>
             <ContentSection color="black" className="py-6 text-center">
                 <h2 id="demo" className="display-4">
                     Sourcegraph and GitLab
@@ -148,7 +146,6 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="pt-3">
-                <hr id="integrations" />
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <ContentSection color="black" className="py-6">
@@ -170,6 +167,9 @@ export default ((props: any) => (
                         </a>
                     </div>
                 </div>
+            </ContentSection>
+            <ContentSection color="gray" className="py-6">
+                <EbookUniversalCodeSearch />
             </ContentSection>
             <Jumbotron
                 color="purple"

@@ -22,7 +22,7 @@ export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
             title="Code intelligence"
-            description="Find answers faster, with inline contextual information around code."
+            description="Use Sourcegraph to find answers faster, with inline contextual information around code."
         >
             <PageSectionLinks
                 sections={[
@@ -79,7 +79,7 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="white" className="pt-6 pb-3">
                 <h2 id="codereviews" className="display-4 mb-5 text-center">
-                    Better code reviews with code intelligence
+                    Better code reviews with Sourcegraph's code intelligence
                 </h2>
                 <p className="text-center mb-5">
                     Sourcegraph <Link to="#integrations">integrates</Link> with your existing code review tool and lets
@@ -111,7 +111,7 @@ export default ((props: any) => (
                     </div>
                     <div className="col-lg-6 mb-4">
                         <IconItem className="position-relative" icon={MicroscopeIcon} color="green">
-                            <h4>See test coverage and runtime logs, traces, &amp; errors</h4>
+                            <h4>See test coverage and runtime logs, traces, and errors</h4>
                             <p>
                                 When changing code that's performance-sensitive or causing errors, it helps to see live
                                 information from runtime to ensure the fix is correct. When using{' '}

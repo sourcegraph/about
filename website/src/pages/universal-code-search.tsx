@@ -16,7 +16,7 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title: 'What is Universal Code Search',
-            description: 'Universal Code Search is the one place to answer questions about code and systems.',
+            description: 'Universal Code Search is the best way to answer any questions about code and systems.',
         }}
     >
         <Helmet>
@@ -34,11 +34,13 @@ export default ((props: any) => (
                 <div className="row justify-content-md-center mb-4">
                     <div className="col-md-10">
                         <h2 className="display-5 mb-4 text-center">
-                            Universal Code Search is the one place to answer any questions about code and systems.
+                            Universal Code Search is the best way to answer any questions about code and systems.
                         </h2>
                         <p>
-                            Explore and better understand all code, faster, with contextual code intelligence to improve
-                            developer productivity and code change management to make large-scale changes.
+                            Sourcegraph Universal Code Search lets you review, search, and modify your code no matter
+                            where it's stored. Explore and better understand all code, faster, with Sourcegraph's
+                            contextual code intelligence to improve developer productivity and code change management to
+                            make large-scale changes.
                         </p>
 
                         <p>
@@ -60,9 +62,6 @@ export default ((props: any) => (
                         </blockquote>
                     </div>
                 </div>
-            </ContentSection>
-            <ContentSection color="gray" className="py-6">
-                <EbookUniversalCodeSearch />
             </ContentSection>
             <ContentSection color="purple" className="py-5">
                 <h2 className="display-4 text-center">Universal across everything </h2>
@@ -211,6 +210,9 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="white" className="py-2">
                 <CustomerLogosSection className="py-5" />
+            </ContentSection>
+            <ContentSection color="gray" className="py-6">
+                <EbookUniversalCodeSearch />
             </ContentSection>
             <Jumbotron
                 color="purple"
