@@ -150,7 +150,7 @@ These meetings are recorded (posted automatically to the #distributioneers Slack
 
 ### Bi-weekly async updates
 
-#### Wed update
+#### Wednesday update
 
 Wed, before EOD (local time): distribution members are expected to post an update in Slack communicating:
 
