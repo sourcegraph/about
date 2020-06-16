@@ -77,7 +77,7 @@ Fabio Rapposelli
   realising you can't use it due to the license.
 * Fabio created a tool called: WWHRD - What would Henry Rollins Do. \m/
 * https://github.com/frapposelli/wwhrd
-* For use in CI, and compares against your whitelist of licenses. So your CI
+* For use in CI, and compares against your list of allowed licenses. So your CI
   will fail before you can merge the dependency into master.
 
 
