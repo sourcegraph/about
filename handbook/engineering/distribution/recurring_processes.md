@@ -144,7 +144,7 @@ team sync](https://docs.google.com/document/d/1otP6F8qfm2yNOW1hjTszkkuiYF1MGp31s
 - Act as an opportunity / space for anyone to call out concerns, questions, etc. that they may have or suggest things we could be doing better, etc.
 - Serve as a space for others outside our team that work closely with us (e.g. people working on Cloud infrastructure) to interact with us face-to-face.
 
-On the Mon. following the 20th (release day), this meeting is used to kick-off asynchronous project planning for the next release.
+On the Mon. following the [20th (release day)](https://about.sourcegraph.com/handbook/engineering/releases), this meeting is used to kick-off asynchronous project planning for the next release.
 
 These meetings are recorded (posted automatically to the #distributioneers Slack channel) so that anyone whose timezone does not permit can participate after the fact.
 
