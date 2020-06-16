@@ -57,7 +57,7 @@ const ITEMS: (
     },
     {
         name: 'Adidas Running',
-        url: '/external-logos/adidas-running-logo.svg',
+        url: '/external-logos/adidas-runtastic-sq-logo.svg',
     },
     {
         name: 'Indeed',
