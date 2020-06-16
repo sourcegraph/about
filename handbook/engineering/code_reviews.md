@@ -132,29 +132,3 @@ A draft PR signals that the change is not ready for reviewed. This is useful, fo
 ## Security
 
 Special care should be taken when reviewing a diff that contains, or is adjacent to, comments that contain the following string: `🚨 SECURITY`. These comments indicate security-sensitive code, the correctness of which is necessary to ensure that no private data is accessed by unauthorized actors. The code owner of any modified security-sensitive code must approve the changeset before it is merged.
-
-## Third-Party Licenses
-
-We use the [`license_finder`](https://github.com/pivotal/LicenseFinder) to check dependencies for their licenses. It runs as a [GitHub Action on pull requests](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3A%22Licenses+Check%22), which will fail if one of the following occur:
-
-- If the license for a dependency cannot be inferred. To resolve:
-  - Use `license_finder licenses add <dep> <license>` to set the license manually
-- If the license for a new or updated dependency is not on the list of approved licenses. To resolve, either:
-  - Remove the dependency
-  - Use `license_finder ignored_dependencies add <dep> --why="Some reason"` to ignore it
-  - Use `license_finder permitted_licenses add <license> --why="Some reason"` to allow the offending license
-
-The `license_finder` tool can be installed using `gem install license_finder`. You can run the script locally using:
-
-```sh
-# updates ThirdPartyLicenses.csv
-./dev/licenses.sh
-
-# runs the same check as the one used in CI, returning status 1
-# if there are any unapproved dependencies ('action items')
-LICENSE_CHECK=true ./dev/licenses.sh
-```
-
-The `./dev/licenses.sh` will also output some `license_finder` configuration for debugging purposes - this configuration is based on the `doc/dependency_decisions.yml` file, which tracks decisions made about licenses and dependencies.
-
-For more details, refer to the [`license_finder` documentation](https://github.com/pivotal/LicenseFinder#usage).
