@@ -59,7 +59,7 @@ See [interview process](interview_process.md).
 
 We value transparency and like to exchange feedback with candidates.
 
-If you are a hiring manager who has decided to not move forward with a candidate at any stage in our hiring process, you are encourage to be as transparent as possible with the candidate when communicating the rejection. Use your judgement and ask for help crafting a message if you are unsure.
+If you are a hiring manager who has decided to not move forward with a candidate at any stage in our hiring process, you are encouraged to be as transparent as possible with the candidate when communicating the rejection. Use your judgement and ask for help crafting a message if you are unsure.
 
 If you are a candidate, we would love to know how you think we can make our hiring process better.
 
