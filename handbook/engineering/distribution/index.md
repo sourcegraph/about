@@ -46,7 +46,7 @@ Distribution team members may also be involved in other areas of Sourcegraph not
         - Primarily in maintenance mode
         - Pushing admins to upgrade to Docker Compose
         - Communicating the limitations of single-container deployments
-        - **Primary owners**: @dax (any @distribution team member in the interim)
+        - **Primary owners**: @stephen
         - **Related code**: [cmd/server in main repo](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:cmd/server/&patternType=regexp)
     - **Scalability**
         - Documenting when to upgrade from one deploy type to another
