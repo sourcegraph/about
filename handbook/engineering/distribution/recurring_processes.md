@@ -1,5 +1,16 @@
 # Recurring processes
 
+- [Quarterly](#quarterly)
+  - [OKRs](#okrs)
+- [Monthly](#monthly)
+  - [Milestone planning](#milestone-planning)
+  - [Retrospective](#retrospective)
+- [Weekly](#weekly)
+  - [Company meeting](#company-meeting)
+  - [Weekly Distribution team sync](#weekly-distribution-team-sync)
+  - [Bi-weekly async updates](#bi-weekly-async-updates)
+  - [Distribution management sync](#distribution-management-sync)
+
 ## Quarterly
 
 ### OKRs
