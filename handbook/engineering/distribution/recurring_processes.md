@@ -131,7 +131,7 @@ come prepared to talk about the following:
 
 ### Company meeting
 
-As with everyone at Sourcegraph, we join the weekly company meeting on Mondays @ 10:30am PST (when timezone permits, watching the recording otherwise).
+As with everyone at Sourcegraph, we join the [weekly company meeting](https://about.sourcegraph.com/handbook/communication/company_meeting) on Mondays @ 10:30am PST (when timezone permits, watching the recording otherwise).
 
 ### Weekly Distribution team sync
 
