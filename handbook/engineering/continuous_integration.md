@@ -9,7 +9,7 @@ We have a variety of tooling on [Buildkite](https://buildkite.com/sourcegraph/so
 
 ### Third-Party Licenses
 
-We use the [`license_finder`](https://github.com/pivotal/LicenseFinder) to check third-party dependencies for their licenses. It runs as a [GitHub Action on pull requests](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3A%22Licenses+Check%22), which will fail if one of the following occur:
+We use the [`license_finder`](https://github.com/pivotal/LicenseFinder) tool to check third-party dependencies for their licenses. It runs as a [GitHub Action on pull requests](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3A%22Licenses+Check%22), which will fail if one of the following occur:
 
 - If the license for a dependency cannot be inferred. To resolve:
   - Use `license_finder licenses add <dep> <license>` to set the license manually
