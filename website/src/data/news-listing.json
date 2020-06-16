@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Security Boulevard",
+      "newsTitle": "Breaking the Solidity Compiler with a Fuzzer",
+      "newsDate": "June 5, 2020",
+      "newsLink": "https://securityboulevard.com/2020/06/breaking-the-solidity-compiler-with-a-fuzzer/",
+      "newsImage": "/external-logos/security-boulevard-logo.png"
+    },
+    {
       "newsSource": "itWeek",
       "newsTitle": "Four Trends Forming a New Era of Big Code",
       "newsDate": "June 4, 2020",
@@ -210,7 +217,7 @@
       "newsTitle": "5 Free Developer Tools We’re Grateful For",
       "newsDate": "November 28, 2019",
       "newsLink": "https://securityboulevard.com/2019/11/5-free-developer-tools-were-grateful-for/",
-      "newsImage": "/external-logos/security-boulevard-sq-logo.svg"
+      "newsImage": "/external-logos/security-boulevard-logo.png"
     },
     {
       "newsSource": "App Developer Magazine",

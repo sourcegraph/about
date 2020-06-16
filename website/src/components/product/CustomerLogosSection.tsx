@@ -105,6 +105,10 @@ const ITEMS: (
         url: '/external-logos/expanse-logo.svg',
     },
     {
+        name: 'Button',
+        url: '/external-logos/use-button-logo.svg',
+    },
+    {
         name: 'Tinder',
         url: '/external-logos/tinder-logo.svg',
     },
