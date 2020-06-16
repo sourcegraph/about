@@ -16,7 +16,7 @@ export const OpenSourcePrivacyFeatureItem: React.FunctionComponent<{}> = () => (
                 open source
             </a>{' '}
             (Apache 2.0), so you can verify this. (If you prefer not to self-manage your instance, we offer{' '}
-            <Link to="/pricing">cloud-managed deployment</Link>, too.)
+            <Link to="/pricing">cloud-managed deployment</Link> too.)
         </p>
     </IconItem>
 )

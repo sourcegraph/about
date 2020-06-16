@@ -27,16 +27,15 @@ export default ((props: any) => (
             <PageSectionLinks
                 sections={[
                     { text: 'Features', url: '#features' },
-                    { text: 'Use cases', url: '#use-cases' },
+                    { text: 'Why code search', url: '#use-cases' },
                     { text: 'Demo screencasts', url: '#demo' },
                     { text: 'Integrations', url: '#integrations' },
                 ]}
             />
             <ContentSection className="py-2" color="white">
                 <h2 id="features" className="text-center display-3">
-                    Code navigation and exploration
+                    Find answers faster with Sourcegraph's code navigation and exploration
                 </h2>
-                <p className="text-center">Find answers faster, across any codebase from one centralized place.</p>
             </ContentSection>
             <ContentSection color="white" className="py-4">
                 <div className="row">
@@ -64,7 +63,7 @@ export default ((props: any) => (
                                 <a href="https://docs.sourcegraph.com/user/search/queries" target="_blank">
                                     refine your search
                                 </a>{' '}
-                                using suggested filters, to narrow down results by repository, language, directory, or{' '}
+                                using suggested filters to narrow down results by repository, language, directory, or{' '}
                                 <a href="https://docs.sourcegraph.com/user/search/scopes" target="_blank">
                                     custom scopes
                                 </a>
@@ -97,11 +96,11 @@ export default ((props: any) => (
                     </div>
                     <div className="col-md-6 mb-4">
                         <IconItem className="position-relative" icon={FilesIcon} color="brand-orange">
-                            <h4>All branches &amp; commits, always up-to-date</h4>
+                            <h4>All branches &amp; commits, always up to date</h4>
                             <p>
                                 Other code search tools limit you to searching a single branch and often have stale
                                 results from hours ago. With Sourcegraph's hybrid search (combining indexed and
-                                on-the-fly), you can search any branch and any commit. The code is always up-to-date,
+                                on-the-fly), you can search any branch and any commit. The code is always up to date,
                                 and you never need to wait for indexing.
                             </p>
                         </IconItem>
@@ -123,9 +122,6 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="gray" className="py-6">
-                <EbookUniversalCodeSearch />
-            </ContentSection>
             <ContentSection color="purple" className="py-6">
                 <h2 className="text-center display-4 pb-4">See Sourcegraph code discovery in action</h2>
                 <YouTube id="KSx61-yAMLs" autoplay={true} loop={true} />
@@ -134,10 +130,10 @@ export default ((props: any) => (
             <div className="container-fluid bg-white text-dark pt-1 pb-5">
                 <div className="code-search-navigation-page__use-cases">
                     <h2 id="use-cases" className="mt-5 display-4 text-center">
-                        How does code search help?
+                        Why code search is essential for developers
                     </h2>
                     <p className="text-center w-75 mx-auto">
-                        Google developers use code search 5-10 times daily (<em>Table 1</em> in{' '}
+                        Google developers use code search 5-10 times daily (see <em>Table 1</em> in{' '}
                         <a
                             href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf"
                             target="_blank"
@@ -263,8 +259,10 @@ export default ((props: any) => (
                 <YouTube id="GuqWw3t6H-k" />
             </ContentSection>
             <ContentSection color="white" className="pt-3">
-                <hr id="integrations" />
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+            </ContentSection>
+            <ContentSection color="gray" className="py-6">
+                <EbookUniversalCodeSearch />
             </ContentSection>
             <Jumbotron
                 color="purple"
