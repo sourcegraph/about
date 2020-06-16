@@ -147,7 +147,7 @@ export default ((props: any) => (
                     </div>
                     <div className="col-lg-4 mb-4">
                         <IconItem className="position-relative" icon={NotificationsActiveIcon} color="green">
-                            <h4>Keep dependencies up todate</h4>
+                            <h4>Keep dependencies up to date</h4>
                             <p>
                                 Keep your library dependencies <i>and how you use those libraries</i> up to date and
                                 consistent across all of your organization's code, to avoid old bugs or security
