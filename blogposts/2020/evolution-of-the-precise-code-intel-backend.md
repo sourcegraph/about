@@ -63,7 +63,7 @@ After this change, raw LSIF uploads were processed immediately into a SQLite fil
 
 **PR**: [LSIF: Split server and worker (#5525)](https://github.com/sourcegraph/sourcegraph/pull/5525)
 
-After the previous change, raw LSIF data was no longer parsed in the query path but at upload time. However, the upload is still an HTTP request that is subject to the properties, rules, and whims of [OSI layer 5](https://en.wikipedia.org/wiki/OSI_model) and below. The conversion process itself is heavy and hasn't received much love in terms of optimization -- processing large files would take longer than some client, server, and/or proxy timeouts, and would end up disconnecting upload requests for even moderately sized payloads.
+After the previous change, raw LSIF data was no longer parsed in the query path but at upload time. However, the upload is still an HTTP request that is subject to the properties, rules, and whims of [OSI layer 5](https://en.wikipedia.org/wiki/OSI_model) and below. The conversion process itself is heavy and hasn't received much love in terms of optimization - processing large files would take longer than some client, server, and/or proxy timeouts, and would end up disconnecting upload requests for even moderately sized payloads.
 
 It was still very easy to crash the entire process by uploading a large file, which it still had to read into memory during conversion. Because conversion happens within an HTTP handler, it was also easy to crash the lsif-server by uploading multiple small files, the sum of which exceed the memory resources allotted to the lsif-server.
 
