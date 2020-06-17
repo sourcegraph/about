@@ -153,7 +153,7 @@ In an effort to unify the precise code intel backends with the rest of the appli
 
 But actions don't always occur as they're planned.
 
-Turns out it's pretty easy to write the same system in a language you know well after banging out all the bugs in a different language, and I just rewrote all three services in a single pass. The resulting code wasn't particularly idiomatic as it really was meant to be a fast, behaviorally-equivalent translation into the target language. Constant, small refactorings have been occurring since the rewrite in order to shape the code into something more appropriate for the new environment.
+Turns out it's pretty easy to write the same system in a language you know well after fixing all the bugs in a different language, and I just rewrote all three services in a single pass. The resulting code wasn't particularly idiomatic as it really was meant to be a fast, behaviorally-equivalent translation into the target language. Constant, small refactorings have been occurring since the rewrite in order to shape the code into something more appropriate for the new environment.
 
 This has unlocked a large number of performance improvement opportunities, the results of which are are detailed in the [3.17 release announcement](/blog/sourcegraph-3.17#fast-precise-code-intelligence) technical details of which are detailed in a blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel).
 
