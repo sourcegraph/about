@@ -61,7 +61,7 @@ This section describes a handful of changes that were made to split work so that
 - [codeintel: Refactor lsif input parsing (#10935)](https://github.com/sourcegraph/sourcegraph/pull/10935)
 - [codeintel: LSIF line reader (#10990)](https://github.com/sourcegraph/sourcegraph/pull/10990)
 
-Even after decreasing the CPU time and allocation pressure due to JSON parsing, it remained the bottleneck. The lines fed into the correlator process were consumed almost immediately, making this an issue of a fast-producer/slow-consumer (which is much more manageable problem than a slow consumer).
+Even after decreasing the CPU time and allocation pressure due to JSON parsing, it remained the bottleneck. The lines fed into the correlator process were consumed almost immediately, making this an issue of a slow-producer/fast-consumer (which is much more manageable problem than a slow consumer).
 
 In order to increase read throughput, we need to parallelize parsing of JSON lines while keeping the order the same (which matters to the correlator). Using channels as bounded queues allows us to break the problem into several parts, as illustrated below.
 
