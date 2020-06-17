@@ -129,6 +129,8 @@ Invocations can be inspected by querying the `History` of a method, which stores
 
 ## Testing time
 
+Testing code that interfaces with wall time is [difficult](https://github.com/sourcegraph/sourcegraph/pull/11426#issuecomment-642428217).
+
 If you have code that requires use of the `"time"` package, your first action should be to refactor the code, if possible, so that the parts that deal with time and the parts that deal with the other testable logic are cleanly separable. If your function calls `time.Now`, see if it is possible to pass the current time as a parameter. If your function sleeps or requires a ticker, see if you can extract the time-irrelevant code into a function that can be tested separately.
 
 If all else fails, you can make use of [efritz/glock](https://github.com/efritz/glock) to mock the behavior of the time package. This requires that the code under test uses a `glock.Clock` value rather than the time package directly (see the [section above](#organizing-code-and-refactoring-for-testability) for tips on refactoring your code). This package provides a _real_ clock implementation, which is a light wrapper over the time package, and a _mock_ clock implementation that allows the clock (and underlying tickers) to be advanced arbitrarily during the test.
