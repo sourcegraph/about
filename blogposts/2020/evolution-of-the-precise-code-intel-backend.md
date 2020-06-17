@@ -1,16 +1,20 @@
 ---
 title: "Evolution of the precise code intel backend"
+description: This post reflects on the high-level technical changes as the precise code intel services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. 
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 publishDate: 2020-06-17T10:00-07:00
 tags: [blog]
 slug: evolution-of-the-precise-code-intel-backend
+heroImage: /blog/big-brain.png
 published: true
 ---
 
 On July 12, Sourcegraph's LSIF-based precise code intelligence will have received its first commit a year ago.
 
-**🎉 Happy 🎉 Almost 🎉 Birthday 🎉**
+<div class="text-center">
+    <strong>🎉 Happy 🎉 Almost 🎉 Birthday 🎉</strong>
+</div>
 
 This post reflects on the high-level technical changes as the services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k line of code over 527 commits.
 
