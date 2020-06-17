@@ -140,7 +140,14 @@ Open the alert UI to click on the check URL that was failing and verify it's now
 
 ### Making updates to stateful sets 
 
-Statefulsets are different to a deployment in that all pods must be in a healthy state before changes can be made. In order to push an update to a failing statefulset take the following action:
+Statefulsets are different to a deployment in that all pods must be in a healthy state before changes can be made.
+
+Currently sourcegraph uses statefulsets for the following services:
+  * gitserver
+  * grafana  
+  * indexed-search
+
+In order to push an update to a failing statefulset take the following action:
 
 #### 1. Update the statefulset `yaml` with the appropriate change and apply using:
 
