@@ -10,6 +10,6 @@ Then, select _Choose a charity_ and _Search for charity_ to open a dialog box.
 
 ![](https://storage.googleapis.com/sourcegraph-assets/gusto-giving-modal.png)
 
-It is recommended to search for a charity through [Charity Navigator](https://www.charitynavigator.org) to find its federal Employer Identification Number (EIN). For example, the BLM Foundation page can be found [here](https://www.charitynavigator.org/index.cfm?bay=search.profile&ein=474143254).
+It is recommended to search for a charity through [Charity Navigator](https://www.charitynavigator.org) to find its federal Employer Identification Number (EIN). For example, the ACLU page can be found [here](https://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=3247).
 
 *Not all charities are created equal*. In order to provide the most benefit for your donation, you should research how your chosen charity uses its funds, hopefully from multiple unbiased sources. Websites such as [Charity Watch](https://www.charitywatch.org/top-rated-charities) provide ratings of individual charities based on financial reporting factors such as overhead cost and amount spent to raise contributions.
