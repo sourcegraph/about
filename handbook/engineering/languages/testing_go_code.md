@@ -110,6 +110,7 @@ func TestCoolPlanets(t *testing.T) {
 	if diff := cmp.Diff(expectedPlanets, planets); diff != "" {
 		t.Errorf("unexpected planets (-want +got):\n%s", diff)
 	}
+}
 ```
 
 *Caveat*: go-cmp uses reflection therefore all comparable fields must be exported.
