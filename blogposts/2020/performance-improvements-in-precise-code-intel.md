@@ -10,26 +10,28 @@ heroImage: /blog/flying-brain.png
 published: true
 ---
 
-In [Sourcegraph 3.16](https://about.sourcegraph.com/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we mentioned a rewrite of the services composing the precise-code-intel backend from TypeScript to Go. There were many reasons for this rewrite, but there's one particular reason that I'd like to explore here: _I know how to improve Go code - I'm not sure how to do the same for TypeScript_.
+In [Sourcegraph 3.16](https://about.sourcegraph.com/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we mentioned a rewrite of the services composing the precise-code-intel backend from TypeScript to Go. There were many reasons for this rewrite, but there's one particular reason that I'd like to explore here: _We as a team know how to improve Go code that operates on large-scale data and we have less experience doing the same for TypeScript on the server side_.
 
-This is **not** to say anything negative about TypeScript -- the language is a surprising joy to work in, I'll admit after nearly a year. This is **not** to say that it's impossible to write code that performs well in a Node.js environment -- V8 is a true beast of engineering. This is **not** to say that there is a lack of tools in order to help developers profile and improve their code.
+This is **not** to say anything negative about TypeScript - the language is a surprising joy to work in, I'll admit after nearly a year. This is **not** to say that it's impossible to write code that performs well in a Node.js environment - V8 is a true beast of engineering. This is **not** to say that there is a lack of tools in order to help developers profile and improve their code.
 
 This **is** to say that I think it was good move to perform the rewrite to allow the backend team to play to our strengths. Rewriting this code in a language for which we have a better mental model of semantics and performance, a better grasp of the ecosystem, and actual _actual_ experience writing high-performance code allows us to move with enough velocity in the future that the time spent rewriting will be paid off in short order. Opened the code up to all other backend developers at Sourcegraph where Go is a core competency is obviously a move in the correct direction.
 
-This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk. We outline some general performance improvement numbers in the release of [Sourcegraph 3.17](https://about.sourcegraph.com/blog/sourcegraph-3.17#TODO-update-me), reflected again below.
+This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk. We outline some general performance improvement numbers in the release of [Sourcegraph 3.17](https://about.sourcegraph.com/blog/sourcegraph-3.17), reflected again below.
 
 <div class="text-center benchmark-results">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-processing-latency-317.png">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png" width="70%">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-processing-latency-317.png" width="50%">
 </div>
 
 <style>
-  .blog-post__body .benchmark-results img { box-shadow: none; display: inline; width: 70%; }
+  .blog-post__body .benchmark-results img { box-shadow: none }
 </style>
 
 Hopefully this post can be used as a source of performance improvement inspiration for non-Sourcegraphers, and can serve as a historic commit document for current and future Sourcegraphers which is more useful than my usual commit patterns:
 
 ![eric's general commit message quality](https://storage.googleapis.com/sourcegraph-assets/efritz-commit-log.png)
+
+Let's get into it.
 
 ## Fiddle with the architecture
 
@@ -136,7 +138,7 @@ If you can estimate the number of elements that will be inserted into the struct
 rangePairs := make([]interface{}, 0, len(d.Ranges))
 ```
 
-This did not make a _huge_ impact, but did make _some_ and it's very low-hanging fruit to consider (with the added benefit of providing additional hints to the reader about what the purpose of the collection is -- something that should always be welcomed by your fellow developers).
+This did not make a _huge_ impact, but did make _some_ and it's very low-hanging fruit to consider (with the added benefit of providing additional hints to the reader about what the purpose of the collection is - something that should always be welcomed by your fellow developers).
 
 #### The sweeter fruit
 

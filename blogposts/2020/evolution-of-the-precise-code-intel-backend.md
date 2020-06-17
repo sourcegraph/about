@@ -16,7 +16,9 @@ On July 12, Sourcegraph's LSIF-based precise code intelligence will have receive
     <strong>🎉 Happy 🎉 Almost 🎉 Birthday 🎉</strong>
 </div>
 
-This post reflects on the high-level technical changes as the services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k line of code over 527 commits.
+Sourcegraph's [precise code intelligence features](https://docs.sourcegraph.com/user/code_intelligence/lsif) are driven by user-uploaded LSIF indexes created in their own build and continuous integration systems. When browsing code that has been indexed, all hover tooltips, definition, and reference results are _precise_ rather than heuristic (based off of search results, which is the no-configuration default).
+
+This post reflects on the high-level technical changes as the precise code intel services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k line of code over 527 commits.
 
 I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, it's actively used, not a legacy codebase, the primary author is still here to talk about it, and it isn't completely undocumented). It may be more accurate to call it an [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are cooler than books so welcome to the dig site.
 
@@ -32,13 +34,13 @@ The choice of TypeScript was a natural one at the time: the (then called) codena
 
 This code, and the manner in which it was written, was absolutely the golden standard of an MVP. It did exactly what it needed to in order to solicit feedback from users and find its place in the universe of possible features. As all such minimum implementations should be, it lacked attention to scalability, performance, and robustness (because you do **not** spent that energy on a feature that is immediately scrapped).
 
-I would begin my journey at Sourcegraph as a member of the codenav team ten days after this PR was opened. Around this time, Sourcegraph had made the decision to de-prioritize the work on language servers in support of building out an infrastructure to enable precise code intelligence supported by LSIF indexes. This allowed us to budget the effort into improving scalability, performance, and robustness of the service while extending its feature set to eventually subsume what language servers were currently providing.
+I would begin my journey at Sourcegraph as a member of the codenav team ten days after this PR was opened. Around this time, Sourcegraph had made the decision to de-prioritize the work on language servers in support of building out an infrastructure to enable precise code intelligence supported by LSIF indexes. The [LSIF announcement blog post](/blog/code-intelligence-with-lsif) outlines some of the reasons we choose to shift our focus. This allowed us to budget the effort into improving scalability, performance, and robustness of the service while extending its feature set to eventually subsume what language servers were currently providing.
 
 ## Commit to a storage format
 
 **PR**: [SQLite backend (#5332)](https://github.com/sourcegraph/sourcegraph/pull/5332)
 
-The first issue to tackle was choosing how to represent LSIF data within the service. The MVP simply kept the raw LSIF input on disk, parsing it into memory on demand. Not every query would parse the LSIF input from scratch -- there was an LRU cache that would allow multiple requests to hit the same LSIF index without re-parsing. However, LSIF indexes can be **very** large. The time to read these indexes into memory in the first place was non-negligible, and storing even a few large indexes in memory was likely to cause an OOM crash.
+The first issue to tackle was choosing how to represent LSIF data within the service. The MVP simply kept the raw LSIF input on disk, parsing it into memory on demand. Not every query would parse the LSIF input from scratch - there was an LRU cache that would allow multiple requests to hit the same LSIF index without re-parsing. However, LSIF indexes can be **very** large. The time to read these indexes into memory in the first place was non-negligible, and storing even a few large indexes in memory was likely to cause an OOM crash.
 
 We needed to find a way to query only the portion of the index we need to answer a query, and we needed to find a way to do it efficiently. We decided to convert the raw LSIF data into an internal protocol-oblivious format on upload, giving us complete control over the storage format. Having control of the storage format allows it to be designed efficiently for the proposed access patterns:
 
@@ -61,7 +63,7 @@ After this change, raw LSIF uploads are processed immediately into a SQLite file
 
 **PR**: [LSIF: Split server and worker (#5525)](https://github.com/sourcegraph/sourcegraph/pull/5525)
 
-After the previous change, raw LSIF data is no longer parsed in the query path but at upload time. However, the upload is still an HTTP request that is subject to the properties, rules, and whims of [OSI layer 5](https://en.wikipedia.org/wiki/OSI_model) and below. The conversion process itself is heavy and hasn't received much love in terms of optimization -- processing large files would take longer than some client, server, and/or proxy timeouts, and would end up disconnecting upload requests for even moderately sized payloads.
+After the previous change, raw LSIF data is no longer parsed in the query path but at upload time. However, the upload is still an HTTP request that is subject to the properties, rules, and whims of [OSI layer 5](https://en.wikipedia.org/wiki/OSI_model) and below. The conversion process itself is heavy and hasn't received much love in terms of optimization - processing large files would take longer than some client, server, and/or proxy timeouts, and would end up disconnecting upload requests for even moderately sized payloads.
 
 It was still very easy to crash the entire process by uploading a large file, which it still had to read into memory during conversion. Because conversion happens within an HTTP handler, it was also easy to crash the lsif-server by upload multiple small files, the sum of which exceed the memory resources allotted to the lsif-server.
 
@@ -81,7 +83,7 @@ So far, we had one instance of the lsif-server and one instance of the lsif-work
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-3.png)
 
-However, the unknown scale of additional writes concerned us. Would it cause operational issues or affect the performance of unrelated parts of the application? To be safe, we kept the table spaces disjoint (prefixed table names, no foreign keys to existing tables) and planned to support migrating this database into a second Postgres instance. This required us doing some nasty trickery with [db_link](https://github.com/sourcegraph/sourcegraph/blob/d1cffed06e58a90082243601d936279214547e30/migrations/1528395594_create_lsif_database.up.sql) in order to run migrations, which we found quite painful and [eventually reverted](https://github.com/sourcegraph/sourcegraph/pull/5935). Some back-of-the-envelope calculations showed that the load wouldn't overwhelm Postgres (which is difficult to do anyway -- Postgres is quite the beast). Thankfully, these calculations turned out to be correct.
+However, the unknown scale of additional writes concerned us. Would it cause operational issues or affect the performance of unrelated parts of the application? To be safe, we kept the table spaces disjoint (prefixed table names, no foreign keys to existing tables) and planned to support migrating this database into a second Postgres instance. This required us doing some nasty trickery with [db_link](https://github.com/sourcegraph/sourcegraph/blob/d1cffed06e58a90082243601d936279214547e30/migrations/1528395594_create_lsif_database.up.sql) in order to run migrations, which we found quite painful and [eventually reverted](https://github.com/sourcegraph/sourcegraph/pull/5935). Some back-of-the-envelope calculations showed that the load wouldn't overwhelm Postgres (which is difficult to do anyway - Postgres is quite the beast). Thankfully, these calculations turned out to be correct.
 
 ## Choose a new queueing library
 
@@ -175,5 +177,7 @@ After rewriting the services in Go, the lsif-server process maintained no local 
 This change is discussed in more detail in a blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel/#collapse-network-boundaries).
 
 <style>
-  .blog-post__body img { box-shadow: none; }
+  /* Images in this post have natural borders
+     Make <p><img></p> snuggle up nice and close to the surrounding text */
+  .blog-post__body img { box-shadow: none; margin: -16px auto; }
 </style>
