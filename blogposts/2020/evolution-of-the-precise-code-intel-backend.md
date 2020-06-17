@@ -24,7 +24,7 @@ Christ Wendt wrote the initial draft of the service as a simple TypeScript expre
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-1.png)
 
-The choice of TypeScript was a natural one at the time: the (then called) codenav team consists of what would later become the web and the code intelligence teams. TypeScript was a major core competency of the team, and there was an additional benefit of being able to reuse code from the [server](https://github.com/microsoft/vscode-lsif-extension/tree/d9d4f25ffcd735d6a45bdfe0f3c811cf4bb376e0/server/src) package in an unpublished Visual Studio Code [extension](https://github.com/microsoft/vscode-lsif-extension) to head-start the service with a functional consumer of the LSIF protocol (which was only 0.4.0 at this point in time).
+The choice of TypeScript was a natural one at the time: the (then called) codenav team consists of what would later become the web and the code intelligence teams. TypeScript was a major core competency of the team, and there was an additional benefit of being able to reuse code from the [server](https://github.com/microsoft/vscode-lsif-extension/tree/d9d4f25ffcd735d6a45bdfe0f3c811cf4bb376e0/server/src) package in an unpublished Visual Studio Code [extension](https://github.com/microsoft/vscode-lsif-extension) to jump start the service with a functional consumer of the LSIF protocol (which was only 0.4.0 at this point in time).
 
 This code, and the manner in which it was written, was absolutely the golden standard of an MVP. It did exactly what it needed to in order to solicit feedback from users and find its place in the universe of possible features. As all such minimum implementations should be, it lacked attention to scalability, performance, and robustness (because you do **not** spent that energy on a feature that is immediately scrapped).
 
@@ -77,7 +77,7 @@ So far, we had one instance of the lsif-server and one instance of the lsif-work
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-3.png)
 
-However, the unknown scale of additional writes concerned us. Would it cause operational issues or affect the performance of unrelated parts of the application? To be safe, we kept the table spaces disjoint (prefixed table names, no foreign keys to existing tables) and planned to support migrating this database into a second Postgres instance. This required us doing some nasty trickery with [db_link](https://github.com/sourcegraph/sourcegraph/blob/d1cffed06e58a90082243601d936279214547e30/migrations/1528395594_create_lsif_database.up.sql) in order to run migrations, which we found quite painful and [eventually reverted](https://github.com/sourcegraph/sourcegraph/pull/5935).
+However, the unknown scale of additional writes concerned us. Would it cause operational issues or affect the performance of unrelated parts of the application? To be safe, we kept the table spaces disjoint (prefixed table names, no foreign keys to existing tables) and planned to support migrating this database into a second Postgres instance. This required us doing some nasty trickery with [db_link](https://github.com/sourcegraph/sourcegraph/blob/d1cffed06e58a90082243601d936279214547e30/migrations/1528395594_create_lsif_database.up.sql) in order to run migrations, which we found quite painful and [eventually reverted](https://github.com/sourcegraph/sourcegraph/pull/5935). Some back-of-the-envelope calculations showed that the load wouldn't overwhelm Postgres (which is difficult to do anyway -- Postgres is quite the beast). Thankfully, these calculations turned out to be correct.
 
 ## Choose a new queueing library
 
@@ -120,7 +120,7 @@ This data is much more useful than simply powering jump-to-def and is wasted beh
 
 At this point, the lsif-server and lsif-worker were bundled within the [same container](https://github.com/sourcegraph/sourcegraph/blob/7443d5f7bcbe0ec038a2f2602aec34558f79284c/cmd/lsif-server/Dockerfile). We decided to [preforks](https://www.cs.ait.ac.th/~on/O/oreilly/perl/cookbook/ch17_13.htm) the number of worker processes running in the container, increasing the number of uploads that can be processed at one time.
 
-This is a poor man's way to scale horizontally as the resources are still limited to the physical nodes and there is no isolation between workers: if one worker is processing a particular large upload, it can cause the other processes to run out of memory. All of the workers will crash at once and take the lsif-server process down with it.
+This is a rudimentary way to scale horizontally as the resources are still limited to the physical nodes and there is no isolation between workers: if one worker is processing a particular large upload, it can cause the other processes to run out of memory. All of the workers will crash at once and take the lsif-server process down with it.
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-6.png)
 
@@ -134,7 +134,7 @@ The plan, all along, was to scale the lsif-server and lsif-worker instances hori
 
 Well, shoot.
 
-Our path forward was to add [another level of indirection](https://en.wikipedia.org/wiki/Indirection), which is honestly the solution _most_ problems. This change introduces a new lsif-dump-manager, known today as the precise-code-intel-bundle-manager, service that owns the persistent disk. 
+Our path forward was to add [another level of indirection](https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering), which is honestly the solution _most_ problems. This change introduces a new lsif-dump-manager, known today as the precise-code-intel-bundle-manager, service that owns the persistent disk. 
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-7.png)
 
@@ -147,9 +147,9 @@ This frees any responsibility of reading or writing to the disk from the lsif-se
 - [Rewrite precise-code-intel-bundle-manager in Go (#9586)](https://github.com/sourcegraph/sourcegraph/pull/9586/)
 - [Rewrite precise-code-intel-worker in Go (#10105)](https://github.com/sourcegraph/sourcegraph/pull/10105)
 
-At this point, the code nav team had been split into the web and code intel for some time now. After a few changes in the code intel team's membership, we no longer had the same core competencies: we lost one fan of TypeScript and gained two fans of Go.
+At this point, the code nav team had been split into the web and code intel for some time now. After a few changes in the code intel team's membership, we gained a _lot_ of Go talent and lost a bit of TypeScript talent. We no longer had the same core competencies, and it made sense from both an organizational and architectural standpoint to rewrite the existing TypeScript backend code in order to unify it with the greater Sourcegraph codebase.
 
-In an effort to unify the precise code intel backends with the rest of the application, we decided to rewrite the services, slowly, into Go. Our high-level plan was to first extract the CPU-bound work done by the lsif-server into a high-performance Go process which could be called by the existing worker code (this is similar to the [strangler fig](https://martinfowler.com/bliki/StranglerFigApplication.html) pattern of refactoring). This part of the stack seemed to benefit the most from a rewrite, and allowed us to use existing knowledge to aggressively optimize Go rather than having to learn low-level optimization techniques for Node.js environments. Eventually, more and more of the worker would fall into the Go code's event horizon, and eventually the entire worker would be replaced.
+We decided to _slowly_ rewrite each of the services into Go. Our high-level plan was to first extract the CPU-bound work done by the lsif-server into a high-performance Go process which could be called by the existing worker code (this is similar to the [strangler fig](https://martinfowler.com/bliki/StranglerFigApplication.html) pattern of refactoring). This part of the stack seemed to benefit the most from a rewrite, and allowed us to use existing knowledge to aggressively optimize Go rather than having to learn low-level optimization techniques for Node.js environments. Eventually, more and more of the worker would fall into the Go code's event horizon, and eventually the entire worker would be replaced.
 
 But actions don't always occur as they're planned.
 

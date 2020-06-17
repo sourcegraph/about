@@ -12,7 +12,7 @@ In [Sourcegraph 3.16](https://about.sourcegraph.com/blog/sourcegraph-3.16#perfor
 
 This is **not** to say anything negative about TypeScript -- the language is a surprising joy to work in, I'll admit after nearly a year. This is **not** to say that it's impossible to write code that performs well in a Node.js environment -- V8 is a true beast of engineering. This is **not** to say that there is a lack of tools in order to help developers profile and improve their code.
 
-This **is** to say that I think it was good move to perform the rewrite to allow myself to play to my strengths. Rewriting this code in a language for which I have a better mental model of semantics and performance, a better grasp of the ecosystem, and years of _actual_ experience writing high-performance code allows me to move with enough velocity in the future that the time spent rewriting will be paid off in short order. As an added benefit, the rewrite also opened the code up to all other backend developers at Sourcegraph where Go is a core competency.
+This **is** to say that I think it was good move to perform the rewrite to allow the backend team to play to our strengths. Rewriting this code in a language for which we have a better mental model of semantics and performance, a better grasp of the ecosystem, and actual _actual_ experience writing high-performance code allows us to move with enough velocity in the future that the time spent rewriting will be paid off in short order. Opened the code up to all other backend developers at Sourcegraph where Go is a core competency is obviously a move in the correct direction.
 
 This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk. We outline some general performance improvement numbers in the release of [Sourcegraph 3.17](https://about.sourcegraph.com/blog/sourcegraph-3.17#TODO-update-me), reflected again below.
 
@@ -116,7 +116,7 @@ This change replaces the gzipped JSON-encoded bundle payloads with gzipped [gob-
 
 **PR**: [codeintel: Reduce allocations in serializer (#10997)](https://github.com/sourcegraph/sourcegraph/pull/10997)
 
-When you create trash, _someone_ is going to have to clean that up. Go uses a non-generational [tri-color mark-and-sweep](https://en.wikipedia.org/wiki/Tracing_garbage_collection#Tri-color_marking) collector, which means that the sweep phase takes time proportional to the entire heap. The more allocations you make, the more than needs to get swept.
+When you create trash, _someone_ is going to have to clean that up. Go uses a non-generational [tri-color mark-and-sweep](https://en.wikipedia.org/wiki/Tracing_garbage_collection#Tri-color_marking) collector, which means that the sweep phase takes time proportional to the entire heap. The more allocations you make, the more that needs to get swept.
 
 #### The low-hanging fruit
 
