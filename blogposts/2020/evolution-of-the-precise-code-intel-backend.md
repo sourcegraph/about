@@ -20,7 +20,7 @@ I may not _strictly_ be able to call this post a work of [software archaeology](
 
 **PR**: [Add LSIF support (#4799)](https://github.com/sourcegraph/sourcegraph/pull/4799)
 
-Christ Wendt wrote the initial draft of the service as a simple TypeScript express server proxied by the frontend service's HTTP API. This kept the number of public services low and kept request authenticate flow to a single code path. The express server would accept raw LSIF input and store it on disk, unchanged. Queries to the lsif-server via a proof of concept LSIF-specific [extension](https://docs.sourcegraph.com/extensions) would read the raw LSIF data for that repository, parse it into memory, and walk the graph to construct the appropriate response.
+Chris Wendt wrote the initial draft of the service as a simple TypeScript express server proxied by the frontend service's HTTP API. This kept the number of public services low and kept request authenticate flow to a single code path. The express server would accept raw LSIF input and store it on disk, unchanged. Queries to the lsif-server via a proof of concept LSIF-specific [extension](https://docs.sourcegraph.com/extensions) would read the raw LSIF data for that repository, parse it into memory, and walk the graph to construct the appropriate response.
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-1.png)
 
