@@ -1,6 +1,8 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
+import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
+import { BlogPost, FeaturedBlogPosts } from '../components/FeaturedBlogPosts'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
@@ -9,7 +11,6 @@ import { GitLabIntegrationSection } from '../components/product/GitLabIntegratio
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
 import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
-import { FeaturedBlogPosts, BlogPost } from '../components/FeaturedBlogPosts'
 import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { Tweets } from '../components/Tweets'
 import { YouTube } from '../components/YouTube'
@@ -17,7 +18,6 @@ import { ContactPresalesSupportAction } from '../css/components/actions/ContactP
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
-import Helmet from 'react-helmet'
 
 /**
  * This list is lovingly hand-crafted for the home page so the title,

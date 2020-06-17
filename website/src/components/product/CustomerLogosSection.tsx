@@ -113,6 +113,10 @@ const ITEMS: (
         url: '/external-logos/tinder-logo.svg',
     },
     {
+        name: 'AppLovin',
+        url: '/external-logos/applovin-logo.svg',
+    },
+    {
         name: 'Thought Machine',
         url: '/external-logos/thought-machine-logo.svg',
     },
