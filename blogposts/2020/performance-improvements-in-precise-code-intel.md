@@ -2,7 +2,7 @@
 title: "Performance improvements in precise code intel"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-publishDate: 2020-06-16T10:00-07:00
+publishDate: 2020-06-17T10:00-07:00
 tags: [blog]
 slug: performance-improvements-in-precise-code-intel
 published: true
@@ -16,12 +16,18 @@ This **is** to say that I think it was good move to perform the rewrite to allow
 
 This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk. We outline some general performance improvement numbers in the release of [Sourcegraph 3.17](https://about.sourcegraph.com/blog/sourcegraph-3.17#TODO-update-me), reflected again below.
 
-![precise code intel query latency](query-latency.png)
-![precise code intel index processing latency](processing-latency.png)
+<div class="text-center benchmark-results">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-processing-latency-317.png">
+</div>
+
+<style>
+  .blog-post__body .benchmark-results img { box-shadow: none; display: inline; width: 70%; }
+</style>
 
 Hopefully this post can be used as a source of performance improvement inspiration for non-Sourcegraphers, and can serve as a historic commit document for current and future Sourcegraphers which is more useful than my usual commit patterns:
 
-![eric's general commit message quality](efritz-commit-log.png)
+![eric's general commit message quality](https://storage.googleapis.com/sourcegraph-assets/efritz-commit-log.png)
 
 ## Fiddle with the architecture
 
@@ -29,7 +35,9 @@ This section describes changes that were made at the architectural level, which 
 
 ### Collapse network boundaries
 
-**PRs**: [codeintel: Call handleEnqueue from lsifserver proxy (#10871)](https://github.com/sourcegraph/sourcegraph/pull/10871), and [codeintel: Call query methods from from lsifserver client (#10872)](https://github.com/sourcegraph/sourcegraph/pull/10872)
+**PRs**:
+- [codeintel: Call handleEnqueue from lsifserver proxy (#10871)](https://github.com/sourcegraph/sourcegraph/pull/10871)
+- [codeintel: Call query methods from from lsifserver client (#10872)](https://github.com/sourcegraph/sourcegraph/pull/10872)
 
 Before the port to Go, there were three services written in TypeScript composing the precise code intel backend:
 
@@ -49,13 +57,15 @@ This section describes a handful of changes that were made to split work so that
 
 ### Efficient input streaming
 
-**PRs**: [codeintel: Refactor lsif input parsing (#10935)](https://github.com/sourcegraph/sourcegraph/pull/10935) and [codeintel: LSIF line reader (#10990)](https://github.com/sourcegraph/sourcegraph/pull/10990)
+**PRs**:
+- [codeintel: Refactor lsif input parsing (#10935)](https://github.com/sourcegraph/sourcegraph/pull/10935)
+- [codeintel: LSIF line reader (#10990)](https://github.com/sourcegraph/sourcegraph/pull/10990)
 
 Even after decreasing the CPU time and allocation pressure due to JSON parsing, it remained the bottleneck. The lines fed into the correlator process were consumed almost immediately, making this an issue of a fast-producer/slow-consumer (which is much more manageable problem than a slow consumer).
 
 In order to increase read throughput, we need to parallelize parsing of JSON lines while keeping the order the same (which matters to the correlator). Using channels as bounded queues allows us to break the problem into several parts, as illustrated below.
 
-![concurrency diagram](lsif-reader-parallelism.png)
+![concurrency diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-reader-parallelism.png)
 
 We continue to raw data line-by-line as fast as the input allows and as fast as the consumer can take input. Using a channel here acts as a read-ahead buffer. A number of unmarshaller routines read lines from the channel, parse it, and place the result onto an output channel. A batcher process consumes the items from the element channel in batches, reordering them by the input id (not order it was sent to the channel) so that the order is consistent with the raw LSIF input. After the batch receives the expected number of values from the channel, a signal is sent to the unmarshallers freeing them to resume work. This signaling procedure ensures that one unmarshaller is not looking for work past the the batching window. Each completed batch is free to be passed to the correlator.
 
@@ -72,11 +82,11 @@ The data persisted in a precise code intel bundle falls into four categories:
 
 Prior to this change, the worker process would start four goroutines, one for each category, and would sequentially [write batches](https://github.com/sourcegraph/sourcegraph/blob/master/internal/sqliteutil/batch_inserter.go) of data into the target table. The SQLite batcher inserter utility is about as fast as it can be: it sets the correct pragmas, uses a single transaction, and minimizes the number of commands by squeezing as many rows in each insert statement as possible.
 
-![concurrency diagram (before)](lsif-writer-concurrency-before.png)
+![concurrency diagram (before)](https://storage.googleapis.com/sourcegraph-assets/lsif-writer-concurrency-before.png)
 
 To increase write throughput, we moved the parallelism into the writer layer so that it could be more closely controlled. After this change, document data, result chunk data, definition data, and reference data would be written to the bundle in sequence, but each write operation would send data to _n_ batches in parallel. This increases the parallelism of writes proportionally to the number of cores.
 
-![concurrency diagram (after)](lsif-writer-concurrency-after.png)
+![concurrency diagram (after)](https://storage.googleapis.com/sourcegraph-assets/lsif-writer-concurrency-after.png)
 
 This structure also has a similar benefit to the the [efficient input streaming](#efficient-input-streaming) change detailed above. Before writing a row to a batch it has to be serialized into the correct data format. Prior to the change, each document row was serialized in sequence in a single goroutine. After the change, _n_ rows could be serialized in parallel and sent to distinct batches.
 
@@ -133,6 +143,7 @@ The larger payoff was due to a small change in the data passed to [`json.Marshal
 ```go
 func (*defaultSerializer) MarshalDocumentData(d types.DocumentData) ([]byte, error) {
     // ...
+
     encoded, err := json.Marshal(map[string]interface{}{
         "ranges":             map[string]interface{}{"type": "map", "value": rangePairs},
         "hoverResults":       map[string]interface{}{"type": "map", "value": hoverResultPairs},
@@ -170,7 +181,7 @@ func (*jsonSerializer) MarshalDocumentData(d types.DocumentData) ([]byte, error)
 
 ### Reduce data movement
 
-[codeintel: Refactor resolvers package (#11450)](https://github.com/sourcegraph/sourcegraph/pull/11450)
+**PR**: [codeintel: Refactor resolvers package (#11450)](https://github.com/sourcegraph/sourcegraph/pull/11450)
 
 Hidden in this PR (which completely **obliterates** the old code intel-related GraphQL code) is a series of changes that _add up **fast**_. The GraphQL resolvers deal with a lot of data, and naturally contain a lot of loops - many of them with a shape similar to the following.
 
