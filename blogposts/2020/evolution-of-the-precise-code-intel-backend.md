@@ -14,7 +14,7 @@ On July 12, Sourcegraph's LSIF-based precise code intelligence will have receive
 
 This post reflects on the high-level technical changes as the services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k line of code over 527 commits.
 
-I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, its actively used, not a legacy codebase, the primary author is still here to talk about it, and isn't completely undocumented). It may be more accurate to call it an [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are are cooler than books so welcome to the dig site.
+I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, it's actively used, not a legacy codebase, the primary author is still here to talk about it, and it isn't completely undocumented). It may be more accurate to call it an [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are cooler than books so welcome to the dig site.
 
 ## Provenance
 
