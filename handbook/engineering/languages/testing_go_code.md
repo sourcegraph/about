@@ -70,6 +70,8 @@ External HTTP APIs should be tested with the `"httptest"` package.
 
 For an example usage, see the [bundle manager client tests](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@0cb60598806d68e4c4edace9ed2a801e3f8495bf/-/blob/enterprise/internal/codeintel/bundles/client/bundle_client_test.go#L13), that mock the internal bundle manager service with canned responses. Request values are asserted in the test HTTP handler itself, comparing the requested HTTP method, path, and query args against the expected values.
 
+If you need to test interactions with an external HTTP API, take a look at the `"httptestutil"` package. The `NewRecorder` function can be used to create an HTTP client that records and replays HTTP requests. See [`bitbucketcloud.NewTestClient`](https://github.com/sourcegraph/sourcegraph/blob/f2e55799acad8b6b28cb3b6fd47cc55993d36dc4/internal/extsvc/bitbucketcloud/testing.go#L22-L47) for an example. Or take a look at [other usages of `httptestutil.NewRecorder`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/enterprise/internal/campaigns/resolvers/main_test.go#L37:27&tab=references).
+
 ## Assertions
 
 We use the Go's stdlib `"testing"` package to drive unit tests and assertions. Here are some tips when writing tests:
@@ -108,6 +110,7 @@ func TestCoolPlanets(t *testing.T) {
 	if diff := cmp.Diff(expectedPlanets, planets); diff != "" {
 		t.Errorf("unexpected planets (-want +got):\n%s", diff)
 	}
+}
 ```
 
 *Caveat*: go-cmp uses reflection therefore all comparable fields must be exported.
