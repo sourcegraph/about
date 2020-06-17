@@ -303,6 +303,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [laureen@sourcegraph.com](mailto:laureen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/laureenhudson/), [GitHub](https://github.com/LaureenH)
 - Laureen is a technical and developmental editor; also a storyteller, writer, publisher, enthusiastic geek enabler, autodidact, activist, and instigator. She lives aboard a 47' catamaran with her family, and if she’s not online, it’s probably because she’s crossing an ocean. 
 
+## Christine Lovett (she/her)
+
+- Customer Engineer 
+- New York, NY, USA 🇺🇸
+- [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [GitHub](https://github.com/christinelovett)
+- Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT. 
 
 <!-- Paste *your* section above this line by following our template below:
 
