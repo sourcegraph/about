@@ -18,13 +18,13 @@ On July 12, Sourcegraph's LSIF-based precise code intelligence will have receive
 
 This post reflects on the high-level technical changes as the services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k line of code over 527 commits.
 
-I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, its actively used, not a legacy codebase, the primary author is still here to talk about it, and isn't completely undocumented). It may be more accurate to call it an [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are are cooler than books so welcome to the dig site.
+I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, it's actively used, not a legacy codebase, the primary author is still here to talk about it, and it isn't completely undocumented). It may be more accurate to call it an [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are cooler than books so welcome to the dig site.
 
 ## Provenance
 
 **PR**: [Add LSIF support (#4799)](https://github.com/sourcegraph/sourcegraph/pull/4799)
 
-Christ Wendt wrote the initial draft of the service as a simple TypeScript express server proxied by the frontend service's HTTP API. This kept the number of public services low and kept request authenticate flow to a single code path. The express server would accept raw LSIF input and store it on disk, unchanged. Queries to the lsif-server via a proof of concept LSIF-specific [extension](https://docs.sourcegraph.com/extensions) would read the raw LSIF data for that repository, parse it into memory, and walk the graph to construct the appropriate response.
+Chris Wendt wrote the initial draft of the service as a simple TypeScript express server proxied by the frontend service's HTTP API. This kept the number of public services low and kept request authenticate flow to a single code path. The express server would accept raw LSIF input and store it on disk, unchanged. Queries to the lsif-server via a proof of concept LSIF-specific [extension](https://docs.sourcegraph.com/extensions) would read the raw LSIF data for that repository, parse it into memory, and walk the graph to construct the appropriate response.
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-1.png)
 
@@ -157,7 +157,7 @@ We decided to _slowly_ rewrite each of the services into Go. Our high-level plan
 
 But actions don't always occur as they're planned.
 
-Turns out it's pretty easy to write the same system in a language you know well after banging out all the bugs in a different language, and I just rewrote all three services in a single pass. The resulting code wasn't particularly idiomatic as it really was meant to be a fast, behaviorally-equivalent translation into the target language. Constant, small refactorings have been occurring since the rewrite in order to shape the code into something more appropriate for the new environment.
+Turns out it's pretty easy to write the same system in a language you know well after fixing all the bugs in a different language, and I just rewrote all three services in a single pass. The resulting code wasn't particularly idiomatic as it really was meant to be a fast, behaviorally-equivalent translation into the target language. Constant, small refactorings have been occurring since the rewrite in order to shape the code into something more appropriate for the new environment.
 
 This has unlocked a large number of performance improvement opportunities, the results of which are are detailed in the [3.17 release announcement](/blog/sourcegraph-3.17#fast-precise-code-intelligence) technical details of which are detailed in a blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel).
 
