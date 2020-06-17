@@ -296,6 +296,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [pooja@sourcegraph.com](mailto:pooja@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/poojajn/), [GitHub](https://github.com/poojaj-tech), [Twitter](https://twitter.com/pooja___j)
 - Pooja enjoys going to (cold) beaches in San Francisco and thinking about productivity hacks in her free time. Prior to Sourcegraph, Pooja worked at a design agency to deliver software-enabled design services at several top startups. Before that, she spent 5 years at Facebook building core product features for 500M+ users on FB Groups and FB Events, launching a new Movie ticket purchase product and developing an onboarding process for online learning in classrooms. Pooja graduated with a BS and MS in Computer science from UIUC with a specialization in user interface design and machine learning.
 
+## Laureen Hudson (she/her)
+
+- Developer Communications
+- Annapolis, Maryland, USA 🇺🇸
+- [laureen@sourcegraph.com](mailto:laureen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/laureenhudson/), [GitHub](https://github.com/LaureenH)
+- Laureen is a technical and developmental editor; also a storyteller, writer, publisher, enthusiastic geek enabler, autodidact, activist, and instigator. She lives aboard a 47' catamaran with her family, and if she’s not online, it’s probably because she’s crossing an ocean. 
+
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
