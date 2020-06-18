@@ -55,7 +55,7 @@ After several round-trip design discussions, we reduced our backend choices betw
 
 In order to prove or disprove the performance of one storage format over the other, we built two versions of the backend (the Dgraph backend implementation can be found [here](https://github.com/sourcegraph/sourcegraph/pull/5333)). Benchmarks showed that the (upload) performance of the SQLite backend scaled linearly (a factor of 2.2x and 2.8x), where the Dgraph backend scaled linearly (with a factor of 25x) with input size. There were likely multiplying factors that increased this performance discrepancy, including lack of experience with graph databases, no operational experience with Dgraph, and a bad choice of graph schema.
 
-We choose to run with SQLite due to its higher initial performance, familiarity, and easy operational properties. SQLite is still the on-disk format for code intelligence bundles in Sourcegraph.
+We chose to run with SQLite due to its higher initial performance, familiarity, and easy operational properties. SQLite is still the on-disk format for code intelligence bundles in Sourcegraph.
 
 After this change, raw LSIF uploads were processed immediately into a SQLite file which is stored on disk, and queries need only to access the documents containing the target source range. Standard SQL design and tricks apply here.
 
