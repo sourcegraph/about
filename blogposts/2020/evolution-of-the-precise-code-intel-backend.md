@@ -118,7 +118,7 @@ At this point, the lsif-server was accessible only by an undocumented proxy in t
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-5.png)
 
-This data is much more useful than simply powering jump-to-def and is wasted behind an undocumented API. This change made the same data visible outside of the extension through the GraphQL API. This not only opened up queries to be used by other Sourcegraph features (such as [Campaigns](https://docs.sourcegraph.com/user/campaigns) and the currently in-progress Code Insights), but to Sourcegraph-external extension authors and to any user that wants to run ad-hoc queries. As the data we gather through LSIF indexes continues to grow (we've recently added support for [diagnostics](https://github.com/sourcegraph/sourcegraph/pull/11233)), so does the universe of possible uses. We're excited to discover what uses of this data lies ahead.
+This data is much more useful than simply powering jump-to-def and is wasted behind an undocumented API. The change made the same data visible outside of the extension through the GraphQL API. This not only opened up queries to be used by other Sourcegraph features (such as [Campaigns](https://docs.sourcegraph.com/user/campaigns) and the currently in-progress Code Insights), but to Sourcegraph-external extension authors and to any user that wants to run ad-hoc queries. As the data we gather through LSIF indexes continues to grow (we've recently added support for [diagnostics](https://github.com/sourcegraph/sourcegraph/pull/11233)), so does the universe of possible uses. We're excited to discover what uses of this data lies ahead.
 
 ## "Just add threads"
 
