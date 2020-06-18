@@ -3,7 +3,7 @@ title: "Performance improvements in precise code intel"
 description: This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk.
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-publishDate: 2020-06-17T10:00-07:00
+publishDate: 2020-06-17T10:00-08:00
 tags: [blog]
 slug: performance-improvements-in-precise-code-intel
 heroImage: /blog/flying-brain.png
