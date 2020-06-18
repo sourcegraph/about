@@ -176,6 +176,16 @@ After rewriting the services in Go, the lsif-server process maintained no local 
 
 This change is discussed in more detail in the above mentioned  blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel/#collapse-network-boundaries).
 
+---
+
+The journey is not stopping here. We plan to continue to add features, and adjust the service so that we can support massive scale. Concerns on our horizon include (but are not limited to):
+
+- Automatic indexing of repositories
+- Support for monorepos (large code scale, high commit frequency)
+- The creation of a large-scale public index (to support jumping from private code to OSS)
+
+Keep an eye out for updates!
+
 <style>
   /* Images in this post have natural borders
      Make <p><img></p> snuggle up nice and close to the surrounding text */
