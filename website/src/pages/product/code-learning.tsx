@@ -1,16 +1,16 @@
 import { Link } from 'gatsby'
 import DirectionsIcon from 'mdi-react/DirectionsIcon'
-import FlameIcon from 'mdi-react/FlameIcon'
-import MicroscopeIcon from 'mdi-react/MicroscopeIcon'
-import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
-import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
-import TurtleIcon from 'mdi-react/TurtleIcon'
 import HelpIcon from 'mdi-react/FileQuestionIcon'
 import FileSearchOutlineIcon from 'mdi-react/FileSearchOutlineIcon'
+import FlameIcon from 'mdi-react/FlameIcon'
 import GlobeIcon from 'mdi-react/GlobeIcon'
-import PlaylistAddCheckIcon from 'mdi-react/PlaylistAddCheckIcon'
-import Stopwatch from 'mdi-react/Stopwatch'
 import HeadSnowflakeIcon from 'mdi-react/HeadSnowflakeIcon'
+import MicroscopeIcon from 'mdi-react/MicroscopeIcon'
+import PlaylistAddCheckIcon from 'mdi-react/PlaylistAddCheckIcon'
+import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
+import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
+import StopwatchIcon from 'mdi-react/StopwatchIcon'
+import TurtleIcon from 'mdi-react/TurtleIcon'
 import React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -47,26 +47,29 @@ export default ((props: any) => (
                     <div className="col-md-4 mb-4">
                         <IconItem color="red" icon={HeadSnowflakeIcon} className="py-3">
                             <p className="text-sans-serif">
-                                Without contextual code intelligence, it’s difficult to find answers to code questions – for both new hires and existing team members. 
+                                Without contextual code intelligence, it’s difficult to find answers to code questions –
+                                for both new hires and existing team members.
                             </p>
                         </IconItem>
                     </div>
                     <div className="col-md-4 mb-4">
                         <IconItem color="red" icon={FileSearchOutlineIcon} className="py-3">
                             <p className="text-sans-serif">
-                               It’s challenging to easily explore and understand the content and structure of new and unfamiliar codebases. 
+                                It’s challenging to easily explore and understand the content and structure of new and
+                                unfamiliar codebases.
                             </p>
                         </IconItem>
                     </div>
                     <div className="col-md-4 mb-4">
                         <IconItem color="red" icon={HelpIcon} className="py-3">
                             <p className="text-sans-serif">
-                                New engineering hires don’t know where to look for specific code in large and distributed libraries and repositories.
+                                New engineering hires don’t know where to look for specific code in large and
+                                distributed libraries and repositories.
                             </p>
                         </IconItem>
                     </div>
                 </div>
-                                <div className="row justify-content-center py-4">
+                <div className="row justify-content-center py-4">
                     <div className="col-lg-10 text-center">
                         <img src="/external-logos/convoy-logo.svg" />
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
@@ -100,23 +103,28 @@ export default ((props: any) => (
                     <div className="col-lg-6 mb-4">
                         <IconItem className="position-relative" icon={GlobeIcon} color="green">
                             <h4>Find definitions and explore references, even across projects</h4>
-                            <p>See a call to a function you don't recognize? With Sourcegraph, you can see its
-                                documentation and type signature by hovering over it &mdash; and go to its definition in a
-                                single click, across package, dependency, and repository boundaries. Even if your IDE can do  
-                                this, Sourcegraph lets you explore code intelligently in your web browser in any repository on 
-                                any branch, instantly and without losing your local context to massively save time. Works for 
-                                {' '}<SupportedProgrammingLanguagesLink />.
+                            <p>
+                                See a call to a function you don't recognize? With Sourcegraph, you can see its
+                                documentation and type signature by hovering over it &mdash; and go to its definition in
+                                a single click, across package, dependency, and repository boundaries. Even if your IDE
+                                can do this, Sourcegraph lets you explore code intelligently in your web browser in any
+                                repository on any branch, instantly and without losing your local context to massively
+                                save time. Works for <SupportedProgrammingLanguagesLink />.
                             </p>
                         </IconItem>
                     </div>
                     <div className="col-lg-6 mb-4">
                         <IconItem className="position-relative" icon={PlaylistAddCheckIcon} color="brand-cyan">
-                            <h4>Facilitate easier onboarding, with rapidly growing and distributed teams and codebases</h4>
-                            <p>New hires often spend the majority of their time jumping around unfamiliar parts of the        
-                            codebase to build a mental model of the organization’s code. Sourcegraph accelerates this learning 
-                            path with {' '}<a href="https://about.sourcegraph.com/universal-code-search">universal code
-                            search</a>{' '} across programming languages, code hosts, repositories, version
-                            control systems, services, and APIs.
+                            <h4>
+                                Facilitate easier onboarding, with rapidly growing and distributed teams and codebases
+                            </h4>
+                            <p>
+                                New hires often spend the majority of their time jumping around unfamiliar parts of the
+                                codebase to build a mental model of the organization’s code. Sourcegraph accelerates
+                                this learning path with{' '}
+                                <a href="https://about.sourcegraph.com/universal-code-search">universal code search</a>{' '}
+                                across programming languages, code hosts, repositories, version control systems,
+                                services, and APIs.
                             </p>
                         </IconItem>
                     </div>
@@ -125,24 +133,23 @@ export default ((props: any) => (
                             <h4>Reduce the time to first commit</h4>
                             <p>
                                 Sourcegraph enables faster comprehension of existing code with universal code search and
-                                navigation so new engineers can explore the entire codebase with minimal context-switching.
-                                The ability to share links with their peers and manager means questions get answered faster
-                                and with significantly less effort.{' '}
+                                navigation so new engineers can explore the entire codebase with minimal
+                                context-switching. The ability to share links with their peers and manager means
+                                questions get answered faster and with significantly less effort.{' '}
                             </p>
                         </IconItem>
                     </div>
                 </div>
             </ContentSection>
             <ContentSection color="white" className="pb-2">
-                                   <div className="row justify-content-center py-4">
+                <div className="row justify-content-center py-4">
                     <div className="col-lg-10 text-center">
                         <img src="/external-logos/yelp-logo.svg" />
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
-                                When making large changes, Sourcegraph is the way to discover how
-                                your code is being called throughout the rest of the code base.
-                                Sourcegraph has also been helpful for onboarding new
-                                hires and introducing them to the code base.
+                                When making large changes, Sourcegraph is the way to discover how your code is being
+                                called throughout the rest of the code base. Sourcegraph has also been helpful for
+                                onboarding new hires and introducing them to the code base.
                             </p>
                             <footer className="blockquote-footer">Kevin Chen, Software Engineer, Yelp</footer>
                         </blockquote>
@@ -156,8 +163,8 @@ export default ((props: any) => (
                         </h5>
                     </div>
                 </div>
-                </ContentSection>
-                
+            </ContentSection>
+
             <ContentSection color="black" className="py-6 text-center">
                 <h2 id="demo" className="display-4">
                     See Sourcegraph in action
@@ -178,7 +185,7 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-                        <ContentSection color="white" className="pt-3">
+            <ContentSection color="white" className="pt-3">
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <ContentSection color="gray" className="py-6">
