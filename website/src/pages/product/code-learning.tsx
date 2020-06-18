@@ -45,7 +45,7 @@ export default ((props: any) => (
                 </h2>
                 <div className="row">
                     <div className="col-md-4 mb-4">
-                        <IconItem color="red" icon={HeadSnowflake} className="py-3">
+                        <IconItem color="red" icon={HeadSnowflakeIcon} className="py-3">
                             <p className="text-sans-serif">
                                 Without contextual code intelligence, it’s difficult to find answers to code questions – for both new hires and existing team members. 
                             </p>
