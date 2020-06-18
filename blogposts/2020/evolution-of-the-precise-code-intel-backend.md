@@ -174,7 +174,7 @@ After rewriting the services in Go, the lsif-server process maintained no local 
 
 ![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-8.png)
 
-This change is discussed in more detail in a blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel/#collapse-network-boundaries).
+This change is discussed in more detail in the above mentioned  blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel/#collapse-network-boundaries).
 
 <style>
   /* Images in this post have natural borders
