@@ -5,7 +5,6 @@ import MicroscopeIcon from 'mdi-react/MicroscopeIcon'
 import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
 import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
 import TurtleIcon from 'mdi-react/TurtleIcon'
-import HeadSnowflakeIcon from 'mdi-react/HeadSnowflakeIcon'
 import HelpIcon from 'mdi-react/FileQuestionIcon'
 import FileSearchOutlineIcon from 'mdi-react/FileSearchOutlineIcon'
 import GlobeIcon from 'mdi-react/GlobeIcon'
@@ -45,7 +44,7 @@ export default ((props: any) => (
                 </h2>
                 <div className="row">
                     <div className="col-md-4 mb-4">
-                        <IconItem color="red" icon={HeadSnowflakeIcon} className="py-3">
+                        <IconItem color="red" icon={HelpIcon} className="py-3">
                             <p className="text-sans-serif">
                                 Without contextual code intelligence, it’s difficult to find answers to code questions – for both new hires and existing team members. 
                             </p>
