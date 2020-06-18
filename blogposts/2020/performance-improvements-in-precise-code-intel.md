@@ -278,6 +278,6 @@ We can reduce I/O by simply passing the HTTP response reader back to the worker 
 
 ----
 
-We plan to continue on this path of performance improvements, and the next release will focus specifically on processing multiple bundles concurrently in order to multiply the benefit of this release’s raw latency gains.
+We plan to continue on this path of performance improvements, and the next release will focus specifically on processing multiple bundles concurrently in order to multiply the benefit of these recent performance gains.
 
 If you found the material in this article interesting, come help us squeeze even more performance of the precise code intel services! [We're hiring](https://jobs.lever.co/sourcegraph/91ee5178-6daf-4a84-be02-048cd8aa2aa0/apply).
