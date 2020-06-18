@@ -1,6 +1,6 @@
 ---
 title: "Evolution of the precise code intel backend"
-description: This post reflects on the high-level technical changes as the precise code intel services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. 
+description: This post reflects on the high-level technical changes as the precise code intel services matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. 
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 publishDate: 2020-06-17T10:00-07:00
@@ -18,7 +18,7 @@ On July 12, Sourcegraph's LSIF-based precise code intelligence will have receive
 
 Sourcegraph's [precise code intelligence features](https://docs.sourcegraph.com/user/code_intelligence/lsif) are driven by user-uploaded LSIF indexes created in their own build and continuous integration systems. When browsing code that has been indexed, all hover tooltips, definitions, and reference results are _precise_ rather than heuristic (based off of search results, which is the no-configuration default).
 
-This post reflects on the high-level technical changes as the precise code intel services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k lines of code over 527 commits.
+This post reflects on the high-level technical changes as the precise code intel services matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k lines of code over 527 commits.
 
 I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, it's actively used, not a legacy codebase, the primary author is still here to talk about it, and it isn't completely undocumented). It may be more accurate to call it a [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are cooler than books so welcome to the dig site.
 
