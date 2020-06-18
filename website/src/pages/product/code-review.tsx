@@ -139,8 +139,8 @@ export default ((props: any) => (
                         <h5>
                             Learn how{' '}
                             <a href="/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence">
-                                GitLab integrates with Sourcegraph.
-                            </a>
+                                GitLab integrates with Sourcegraph
+                            </a>.
                         </h5>
                     </div>
                 </div>
