@@ -9,7 +9,7 @@ import HelpIcon from 'mdi-react/FileQuestionIcon'
 import FileSearchOutlineIcon from 'mdi-react/FileSearchOutlineIcon'
 import GlobeIcon from 'mdi-react/GlobeIcon'
 import PlaylistAddCheckIcon from 'mdi-react/PlaylistAddCheckIcon'
-import StopwatchIcon from 'mdi-react/StopwatchIcon'
+import Stopwatch from 'mdi-react/Stopwatch'
 import HeadSnowflakeIcon from 'mdi-react/HeadSnowflakeIcon'
 import React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
@@ -45,7 +45,7 @@ export default ((props: any) => (
                 </h2>
                 <div className="row">
                     <div className="col-md-4 mb-4">
-                        <IconItem color="red" icon={HeadSnowflakeIcon} className="py-3">
+                        <IconItem color="red" icon={HeadSnowflake} className="py-3">
                             <p className="text-sans-serif">
                                 Without contextual code intelligence, it’s difficult to find answers to code questions – for both new hires and existing team members. 
                             </p>
@@ -77,7 +77,7 @@ export default ((props: any) => (
                             <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
                         </blockquote>
                     </div>
-                    <div className="col-lg-10 mt-2 py-4">
+                    <div className="col-lg-10 mt-2 py-4 text-center">
                         <h5>
                             Learn more about how{' '}
                             <a href="/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence">
@@ -162,7 +162,6 @@ export default ((props: any) => (
                 <h2 id="demo" className="display-4">
                     See Sourcegraph in action
                 </h2>
-                <h3 class="pb-4">See Sourcegraph in action</h3>
                 <YouTube id="KSx61-yAMLs" />
                 <div className="row justify-content-center">
                     <div className="col-lg-10 mt-2 py-4 text-center">
