@@ -72,7 +72,7 @@ live (the <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius:
 
 <div style="padding-left: 2rem">
 
-🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bargs%5D%29%22&patternType=structural)
+🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28:%5Bargs%5D%29&patternType=structural)
 
 </div>
 
@@ -109,7 +109,7 @@ above, using subtraction and `sizeof`:
 <div style="padding-left: 2rem">
 
 🔎 [copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
-:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+%22copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29%22&patternType=structural)
+:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29&patternType=structural)
 
 </div>
 
@@ -127,7 +127,7 @@ Here's a query to easily find more of these patterns:
 
 <div style="padding-left: 2rem">
 
-🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24++%27list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29%27&patternType=structural)
+🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29&patternType=structural)
 
 </div>
 
@@ -160,7 +160,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [try {:[\_]} catch (:[\_]) { } finally {:[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24++%22try+%7B:%5B_%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5B_%5D%7D%22+lang:java&patternType=structural)
+🔎 [try {:[\_]} catch (:[\_]) { } finally {:[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24+try+%7B:%5B_%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5B_%5D%7D+lang:java&patternType=structural)
 
 </div>
 
@@ -168,7 +168,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [print(":[string]" % :[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+%27print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29%27+lang:python&patternType=structural)
+🔎 [print(":[string]" % :[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29+lang:python&patternType=structural)
 
 </div>
 
@@ -176,7 +176,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24++%27.filter%28:%5B_%5D%29.next%28%29%27&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24++%27.filter%28:%5B_%5D%29+.next%28%29%27&patternType=structural) (the latter matches across newlines)
+🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24++.filter%28:%5B_%5D%29.next%28%29&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24+.filter%28:%5B_%5D%29+.next%28%29&patternType=structural) (the latter matches across newlines)
 
 </div>
 
@@ -184,7 +184,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/withspectrum/spectrum%24++%27:%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+:%5Bfn%5D%28%29%7D%27&patternType=structural)
+🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/withspectrum/spectrum%24+:%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+:%5Bfn%5D%28%29%7D&patternType=structural)
 
 </div>
 
@@ -192,7 +192,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [switch :[[v]] := :[x].(type) {:[\_] case nil: :[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24+%27switch+:%5B%5Bv%5D%5D+:%3D+:%5Bx%5D.%28type%29+%7B:%5B_%5D+case+nil:+:%5B_%5D%7D%27+lang:go+&patternType=structural)
+🔎 [switch :[[v]] := :[x].(type) {:[\_] case nil: :[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24+switch+:%5B%5Bv%5D%5D+:%3D+:%5Bx%5D.%28type%29+%7B:%5B_%5D+case+nil:+:%5B_%5D%7D+lang:go+&patternType=structural)
 
 </div>
 
@@ -200,7 +200,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [(cond :[\_] :else nil)](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/LightTable/LightTable%24+%22%28cond+:%5B_%5D+:else+nil%29%22+lang:clojure&patternType=structural)
+🔎 [(cond :[\_] :else nil)](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/LightTable/LightTable%24+%28cond+:%5B_%5D+:else+nil%29+lang:clojure&patternType=structural)
 
 </div>
 
@@ -208,7 +208,7 @@ a short list that gives just a taste of some patterns you can try out:
 
 <div style="padding-left: 2rem">
 
-🔎 [Image.asset(:[\_] width: 100, :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24++%22Image.asset%28:%5B_%5D+width:+100%2C+:%5B_%5D%29%22+lang:dart&patternType=structural)
+🔎 [Image.asset(:[\_] width: 100, :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24+Image.asset%28:%5B_%5D+width:+100%2C+:%5B_%5D%29+lang:dart&patternType=structural)
 
 </div>
 
