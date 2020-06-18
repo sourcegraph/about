@@ -275,3 +275,9 @@ The bundle manager is the keeper of all things persistent in the precise code in
 Prior to this change, the bundle manager client would request the data via an HTTP request, write it to disk, then pass the filename to the worker process. The worker would open and read the file for processing.
 
 We can reduce I/O by simply passing the HTTP response reader back to the worker instead of requiring that it hit disk. This also saves us the time required to wait for the entire transfer to complete and flush to disk before beginning to process the data. As raw LSIF indexes can be quite large (multi-gigabyte), this provides a non-negligible boost in many cases.
+
+----
+
+We plan to continue on this path of performance improvements, and the next release will focus specifically on processing multiple bundles concurrently in order to multiply the benefit of this release’s raw latency gains.
+
+If you found the material in this article interesting, come help us squeeze even more performance of the precise code intel services! [We're hiring](https://jobs.lever.co/sourcegraph/91ee5178-6daf-4a84-be02-048cd8aa2aa0/apply).
