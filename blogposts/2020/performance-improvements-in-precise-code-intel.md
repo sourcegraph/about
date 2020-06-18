@@ -12,9 +12,9 @@ published: true
 
 In [Sourcegraph 3.16](/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we mentioned a rewrite of the services composing the precise-code-intel backend from TypeScript to Go. There were many reasons for this rewrite, but there's one particular reason that I'd like to explore here: _We as a team know how to improve Go code that operates on large-scale data and we have less experience doing the same for TypeScript on the server side_.
 
-This is **not** to say anything negative about TypeScript - the language is a surprising joy to work in, I'll admit after nearly a year. This is **not** to say that it's impossible to write code that performs well in a Node.js environment - V8 is a true beast of engineering. This is **not** to say that there is a lack of tools to help developers profile and improve their code.
+This is not to say anything negative about TypeScript as a language. It's honestly a joy to work in, and I'll pop into the web code once in a while to scratch that itch. This is not to say that it's impossible to write code that performs well in a Node.js environment. V8 is a world-class JIT and a true beast of engineering. This is not to say that there is a lack of tools to help developers profile and improve their code.
 
-This **is** to say that I think it was good move to perform the rewrite to allow the backend team to play to our strengths. Rewriting this code in a language for which we have a better mental model of semantics and performance, a better grasp of the ecosystem, and _actual_ experience writing high-performance code allows us to move with enough velocity in the future that the time spent rewriting will be paid off in short order. Opening the code up to all other backend developers at Sourcegraph where Go is a core competency is obviously a move in the correct direction.
+This **is** to say that I think it was good move to perform the rewrite to allow the backend team to play to our strengths. Rewriting this code in a language for which we have a better mental model of semantics and performance, a better grasp of the ecosystem, and _actual_ experience writing high-performance code allows us to move with enough velocity in the future that the time spent rewriting will be paid off in short order.
 
 ---
 

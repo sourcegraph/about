@@ -22,6 +22,8 @@ This post reflects on the high-level technical changes as the precise code intel
 
 I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, it's actively used, not a legacy codebase, the primary author is still here to talk about it, and it isn't completely undocumented). It may be more accurate to call it a [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are cooler than books so welcome to the dig site.
 
+---
+
 ## Provenance
 
 **PR**: [Add LSIF support (#4799)](https://github.com/sourcegraph/sourcegraph/pull/4799)
@@ -44,9 +46,9 @@ The first issue to tackle was choosing how to represent LSIF data within the ser
 
 We needed to find a way to query only the portion of the index we needed to answer a query, and we needed to find a way to do it efficiently. We decided to convert the raw LSIF data into an internal protocol-oblivious format on upload, giving us complete control over the storage format. Having control of the storage format allowed it to be designed efficiently for the proposed access patterns:
 
-- get definitions for a source range
-- get references for a source range
-- get the hover text for a source range
+- get definitions for an identifier at a given source position
+- get references for an identifier at a given source position
+- get the hover text for an identifier at a given source position
 
 After several round-trip design discussions, we reduced our backend choices between:
 
