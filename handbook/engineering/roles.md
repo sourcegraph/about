@@ -1,19 +1,20 @@
 # Roles on the Engineering team
 
-This page lists the roles on the Engineering team and some of the responsibilities for each of the roles.
+This page lists the roles on our engineering team.
 
 ## Software Engineer
 
-Software Engineers are individual contributors who build software to satisfy the needs of the business.
+Software engineers build our product and infrastructure.
 
 ### Responsibilities
 
-- Collaborate with your direct manager to identify projects that align your skills and interests with the needs of the business.
-- Write [RFCs](../communication/rfcs/index.md) to recommend solutions to product and engineering problems.
 - Commit to a reasonable amount of work that you are going to get done for each [monthly release](releases/index.md), and then reliably get it done.
+- Post weekly updates about your progress on the [monthly release tracking issue](tracking_issues.md) for your team.
+- Ensure that your work is directly contributing to [our OKRs](../../company/okrs/index.md).
+- Write [RFCs](../communication/rfcs/index.md) to recommend solutions to product and engineering problems.
 - Create and maintain high quality code, tests, and documentation.
-- Help the teammates by empathetically [reviewing code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
-- Interview candidates and suggest improvements to our hiring process.
+- Support your teammates by reviewing their [code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
+- Help us build a great team by referring people who you would like to work with again, interviewing candidates, and suggesting improvements to our hiring process.
 
 ## Project Lead
 
