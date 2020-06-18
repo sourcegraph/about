@@ -56,7 +56,7 @@ Hopefully this post can be used as a source of performance improvement inspirati
 
 ## Fiddle with the architecture
 
-This section describes changes that were made at the architectural level, which alters which services communicate with what, what data is owned by what service, and what responsibilities services have.
+This section describes changes that were made at the architectural level, altering which services communicate with what, what data is owned by what service, and what responsibilities services have.
 
 ### Collapse network boundaries
 
