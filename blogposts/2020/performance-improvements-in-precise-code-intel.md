@@ -16,22 +16,43 @@ This is **not** to say anything negative about TypeScript - the language is a su
 
 This **is** to say that I think it was good move to perform the rewrite to allow the backend team to play to our strengths. Rewriting this code in a language for which we have a better mental model of semantics and performance, a better grasp of the ecosystem, and actual _actual_ experience writing high-performance code allows us to move with enough velocity in the future that the time spent rewriting will be paid off in short order. Opened the code up to all other backend developers at Sourcegraph where Go is a core competency is obviously a move in the correct direction.
 
-This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk. We plan to outline some general performance improvement numbers in the release of Sourcegraph 3.17, reflected again below.
+---
+
+This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk.
+
+The following graph shows the decrease in query latency while running our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) compared to the previous two Sourcegraph releases. This test suite querying cross-repo definitions and references over three commits from [etcd-io/etcd](https://github.com/etcd-io/etcd), [pingcap/tidb](https://github.com/pingcap/tidb), and [distributedio/titan](https://github.com/distributedio/titan), and two commits from [uber-go/zap](https://github.com/uber-go/zap).
 
 <div class="text-center benchmark-results">
   <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png" width="70%">
+</div>
+
+This next graph shows the time required to upload and process the indexes.
+
+<div class="text-center benchmark-results">
   <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-processing-latency-317.png" width="50%">
 </div>
 
+These last graphs show the size of the converted bundle on disk after conversion.
+
+<div class="text-center benchmark-results">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/tidb-bundle-size.png" width="48%">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/etcd-bundle-size.png" width="48%">
+  <br />
+  <img src="https://storage.googleapis.com/sourcegraph-assets/titan-bundle-size.png" width="48%">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/zap-bundle-size.png" width="48%">
+</div>
+
 <style>
-  .blog-post__body .benchmark-results img { box-shadow: none }
+  .blog-post__body .benchmark-results img { box-shadow: none; display: inline; margin: 10px auto; }
 </style>
+
+With all the changes discussed in this post combined, the latency for queries and upload processing was cut by a factor of two, as was the size of bundles on disk, compared to Sourcegraph 3.15.
 
 Hopefully this post can be used as a source of performance improvement inspiration for non-Sourcegraphers, and can serve as a historic commit document for current and future Sourcegraphers which is more useful than my usual commit patterns:
 
 ![eric's general commit message quality](https://storage.googleapis.com/sourcegraph-assets/efritz-commit-log.png)
 
-Let's get into it.
+--- 
 
 ## Fiddle with the architecture
 
