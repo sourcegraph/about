@@ -16,7 +16,7 @@ On July 12, Sourcegraph's LSIF-based precise code intelligence will have receive
     <strong>🎉 Happy 🎉 Almost 🎉 Birthday 🎉</strong>
 </div>
 
-Sourcegraph's [precise code intelligence features](https://docs.sourcegraph.com/user/code_intelligence/lsif) are driven by user-uploaded LSIF indexes created in their own build and continuous integration systems. When browsing code that has been indexed, all hover tooltips, definition, and reference results are _precise_ rather than heuristic (based off of search results, which is the no-configuration default).
+Sourcegraph's [precise code intelligence features](https://docs.sourcegraph.com/user/code_intelligence/lsif) are driven by user-uploaded LSIF indexes created in their own build and continuous integration systems. When browsing code that has been indexed, all hover tooltips, definitions, and reference results are _precise_ rather than heuristic (based off of search results, which is the no-configuration default).
 
 This post reflects on the high-level technical changes as the precise code intel services providing the feature matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k lines of code over 527 commits.
 
