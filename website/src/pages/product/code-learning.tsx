@@ -26,13 +26,13 @@ import { GetSourcegraphNowActions } from '../../css/components/actions/GetSource
 export default ((props: any) => (
     <Layout location={props.location}>
         <ContentPage
-            title="Code learning"
+            title="Learn code faster"
             description="Quickly understand new code and accelerate developer onboarding with Sourcegraph."
             className="pb-2"
         >
             <PageSectionLinks
                 sections={[
-                    { text: 'Why code reviews are critical', url: '#why' },
+                    { text: 'Learning code is essential', url: '#why' },
                     { text: 'Features', url: '#features' },
                     { text: 'Demo screencast', url: '#demo' },
                     { text: 'Integrations', url: '#integrations' },
@@ -40,7 +40,7 @@ export default ((props: any) => (
             />
             <ContentSection color="white" className="py-2">
                 <h2 className="display-4 mb-4 text-center" id="why">
-                    Learning code is difficult for both new hires and those assigned to new codebases
+                    Learning code is essential for both new hires and those assigned to new codebases
                 </h2>
                 <div className="row">
                     <div className="col-md-4 mb-4">
@@ -88,7 +88,7 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="white" className="pb-2">
                 <h2 id="features" className="display-4 mb-5 text-center">
-                    Why learning code is better with Sourcegraph
+                    Why learning code is faster with Sourcegraph
                 </h2>
                 <p className="text-center mb-5">
                     Sourcegraph <a href="/universal-code-search">Universal Code Search</a> lets you review, search, and
@@ -98,13 +98,13 @@ export default ((props: any) => (
                 <div className="row">
                     <div className="col-lg-6 mb-4">
                         <IconItem className="position-relative" icon={GlobeIcon} color="green">
-                            <h4>Learn definitions and explore references, even across projects</h4>
+                            <h4>Find definitions and explore references, even across projects</h4>
                             <p>See a call to a function you don't recognize? With Sourcegraph, you can see its
                                 documentation and type signature by hovering over it &mdash; and go to its definition in a
                                 single click, across package, dependency, and repository boundaries. Even if your IDE can do  
                                 this, Sourcegraph lets you explore code intelligently in your web browser in any repository on 
                                 any branch, instantly and without losing your local context to massively save time. Works for 
-                                <SupportedProgrammingLanguagesLink />.
+                                {' '}<SupportedProgrammingLanguagesLink />.
                             </p>
                         </IconItem>
                     </div>
@@ -132,32 +132,34 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
+            <ContentSection color="white" className="pb-2">
                                    <div className="row justify-content-center py-4">
                     <div className="col-lg-10 text-center">
                         <img src="/external-logos/yelp-logo.svg" />
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
-                                When making large changes, Sourcegraph is the way to discover how your code is being called
-                                throughout the rest of the code base. Sourcegraph has also been helpful for onboarding new
+                                When making large changes, Sourcegraph is the way to discover how
+                                your code is being called throughout the rest of the code base.
+                                Sourcegraph has also been helpful for onboarding new
                                 hires and introducing them to the code base.
                             </p>
                             <footer className="blockquote-footer">Kevin Chen, Software Engineer, Yelp</footer>
                         </blockquote>
                     </div>
-                    <div className="col-lg-10 mt-2 py-4">
+                    <div className="col-lg-10 mt-2 py-4 text-center">
                         <h5>
                             Read why{' '}
                             <a href="https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html">
-                                Yelp uses Sourcegraph to to ship code faster and more reliably.
+                                Yelp uses Sourcegraph to ship code faster and more reliably.
                             </a>
                         </h5>
                     </div>
                 </div>
-               
+                </ContentSection>
                 
             <ContentSection color="black" className="py-6 text-center">
                 <h2 id="demo" className="display-4">
-                    Sourcegraph and GitLab
+                    See Sourcegraph in action
                 </h2>
                 <h3 class="pb-4">See Sourcegraph in action</h3>
                 <YouTube id="KSx61-yAMLs" />
@@ -175,6 +177,9 @@ export default ((props: any) => (
                         </a>
                     </div>
                 </div>
+            </ContentSection>
+                        <ContentSection color="white" className="pt-3">
+                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <ContentSection color="gray" className="py-6">
                 <EbookUniversalCodeSearch />
