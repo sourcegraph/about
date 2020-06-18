@@ -12,7 +12,7 @@ Software Engineers are individual contributors who build software to satisfy the
 - Write [RFCs](../communication/rfcs/index.md) to recommend solutions to product and engineering problems.
 - Commit to a reasonable amount of work that you are going to get done for each [monthly release](releases/index.md), and then reliably get it done.
 - Create and maintain high quality code, tests, and documentation.
-- Help your teammates by empathetically [reviewing code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
+- Help the teammates by empathetically [reviewing code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
 - Interview candidates and suggest improvements to our hiring process.
 
 ## Project Lead
@@ -26,27 +26,8 @@ Some teams with more experienced members may need less guidance in certain areas
 ### Responsibilities
 
 - Directly contribute through code, RFCs or PR reviews for a minimum of roughly 50% of their time.
-- Collaborate with [product](../product/index.md) to maintain a [prioritized roadmap](../../direction/index.md) for the work owned by their team as well as quarterly [OKRs](../../company/okrs/index.md)
-- Plan and commit to a set of work that will be accomplished by the team for each [monthly release](releases/index.md) and capture those commitments in a [tracking issue](tracking_issues.md) on GitHub.
-- Help keep the team focused on their goals while keeping them aware of the higher level picture.
-- Identify blockers or productivity issues and work with the team to address them.
-- Run weekly team sync meetings.
-- Communicate progress to stakeholders and other parts of the company (e.g. at company meeting).
-- Conduct monthly [retrospectives](../../retrospectives/index.md) with their team.
-- Scale themselves out by organizing and delegating work to other teammates.
-- Mentor and coach other teammates with timely feedback as appropriate in order to uphold team values and help them grow.
-- Collaborate with Engineering Managers to ensure team mates have everything they need to succeed and deliver on the goals of the team.
-
-## Engineering Manager
-
-Engineering managers lead, grow, and develop teams of software engineers.
-
-### Responsibilities
-
-Build an exceptional team that achieves results.
-
-- Ensure that your team has a roadmap that documents how it is going to achieve its [OKRs](../../company/okrs/index.md).
-- Ensure the your team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md).
+- Ensure that the team has a roadmap that documents how it is going to achieve its [OKRs](../../company/okrs/index.md).
+- Ensure the the team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md).
 - Post a weekly update by EOD Monday on the tracking issue that answers the following questions:
   1. What work did the team do last week?
     - This is a summary not details. The details should exist in each teammate's individual update and shouldn't be repeated.
@@ -59,9 +40,40 @@ Build an exceptional team that achieves results.
       - What did we learn from this failure to achieve our goals?
   1. What did the team work on last week that wasn’t originally planned? Why?
   1. What pain is the team experiencing?
-- Conduct monthly [retrospectives](../../retrospectives/index.md) with your team.
+- Help keep the team focused on their goals while keeping them aware of the higher level picture.
+- Identify blockers or productivity issues and work with the team to address them.
+- Run weekly team sync meetings.
+- Communicate progress to stakeholders and other parts of the company (e.g. at company meeting).
+- Conduct monthly [retrospectives](../../retrospectives/index.md) with their team.
+- Scale themselves out by organizing and delegating work to other teammates.
+- Mentor and coach other teammates with timely feedback as appropriate in order to uphold team values and help them grow.
+- Collaborate with engineering managers to ensure teammates have everything they need to succeed and deliver on the goals of the team.
+
+## Engineering Manager
+
+Engineering managers lead, grow, and develop teams of software engineers.
+
+### Responsibilities
+
+Build an exceptional team that achieves results.
+
+- Ensure that the team has a roadmap that documents how it is going to achieve its [OKRs](../../company/okrs/index.md).
+- Ensure the the team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md).
+- Post a weekly update by EOD Monday on the tracking issue that answers the following questions:
+  1. What work did the team do last week?
+    - This is a summary not details. The details should exist in each teammate's individual update and shouldn't be repeated.
+  1. How does that work connect back to the team’s OKRs and roadmap?
+  1. For each OKR and roadmap item, is the team on track? The answer should be of the form:
+    - We expect to reach this goal.
+    - We are at risk of not reaching this goal because A, B, C.
+      - What can we change to get this back on track?
+    - We are not going to reach this goal because A, B, C.
+      - What did we learn from this failure to achieve our goals?
+  1. What did the team work on last week that wasn’t originally planned? Why?
+  1. What pain is the team experiencing?
+- Conduct monthly [retrospectives](../../retrospectives/index.md) with the team.
 - Conduct regular [1-1s](../leadership/1-1.md).
-- Own the end-to-end hiring process for your team and grow the team according to the hiring plan.
+- Own the end-to-end hiring process for the team and grow the team according to the hiring plan.
 - Make [compensation](../people-ops/compensation.md) decisions for direct reports and candidate offers to ensure that everyone is appropriately compensated at all times.
 - Hold teammates accountable for fulfilling their responsibilities.
 
