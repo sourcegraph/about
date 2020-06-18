@@ -86,7 +86,6 @@ export default ((props: any) => (
                         </h5>
                     </div>
                 </div>
-                </div>
             </ContentSection>
             <ContentSection color="white" className="pb-2">
                 <h2 id="features" className="display-4 mb-5 text-center">
