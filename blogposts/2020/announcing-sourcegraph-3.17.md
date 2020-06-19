@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.17: Faster and automatic precise code intelligence, preview of code insights, and AND/OR queries for all search modes"
+title: "Sourcegraph 3.17: Faster and automatic precise code intelligence, preview of code insights, and AND/OR queries for searching file contents"
 author: Adam Herzog
 publishDate: 2020-06-20T10:00-07:00
 tags: [
@@ -255,4 +255,3 @@ We want to hear what you think about Sourcegraph and the new updates in 3.16. Po
 Any questions about Sourcegraph? Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com). We look forward to hearing from you!
 
 From the [entire Sourcegraph team](https://about.sourcegraph.com/company/team), happy coding!
-
