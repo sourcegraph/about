@@ -13,6 +13,7 @@ export const PRODUCT_FEATURES: ProductFeatureOrUseCase[] = [
     { text: 'Code intelligence', to: '/product/code-intelligence' },
     { text: 'Code change management', to: '/product/code-change-management' },
     { text: 'Code review', to: '/product/code-review' },
+    { text: 'Code learning', to: '/product/code-learning' },
 ]
 
 export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [
