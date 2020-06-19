@@ -7,7 +7,7 @@ tags: [
 ]
 slug: sourcegraph-3.17
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
-published: false
+published: true
 ---
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Yelp, Nutanix, Tinder, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
