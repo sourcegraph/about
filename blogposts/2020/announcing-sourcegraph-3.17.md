@@ -141,7 +141,6 @@ TODO: Example config
 
 ```
 
-<br />
 ### Improved debugging experience
 
 A unified set of container metrics, compatible across both Kubernetes and Docker Compose deployment types,  provides the following information about containers through Grafana dashboards and alerting in both deployment types:
