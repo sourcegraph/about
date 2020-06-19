@@ -21,7 +21,7 @@ Precise code intelligence is now 35% faster than in 3.16. Automatic code intelli
 Help developers be more productive and do their jobs better by aggregating data in Sourcegraph.
 
 [**💻 Sourcegraph developer features**](#sourcegraph-developer-features)<br />
-Expanding AND/OR queries to all search modes, updating the Gitolite exclude pattern, and improving debugging.
+Introducing AND/OR queries for searching file contents, updating the Gitolite exclude pattern, and improving debugging.
 
 [**🛠 Sourcegraph admin features**](#sourcegraph-admin-features)<br />
 Easier alerting configuration, repository permission syncing on by default, and notifications when Sourcegraph is out-of-date.
@@ -118,13 +118,15 @@ We want to understand the bigger questions you have about your code base, and wo
 ## Sourcegraph developer features
 
 
-### AND/OR query improvements
+### Introducing AND/OR operators for code search
 
-TODO: Rijnard is making a video
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+</div>
 
-In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced AND and OR queries for file content for regexp and structural search modes as an experimental option. Sourcegraph 3.17 now introduces AND and OR queries for all modes (including the newly added literal search mode) and is on by default for all instances (no longer considered experimental).
+In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced AND and OR queries for file content for regexp and structural search modes as an experimental option. Sourcegraph 3.17 now introduces AND/OR queries for all modes (including the newly added literal search mode) and is on by default for all instances (no longer considered experimental).
 
-The AND/OR query improvements in this release only work for file content, but hierarchical AND/OR queries that include filters are on our product roadmap.
+Initial support for query operators is for searching file contents. Operators for filters like `repo:` and `file:` will be supported in upcoming releases.
 
 
 ### Gitolite exclude pattern
