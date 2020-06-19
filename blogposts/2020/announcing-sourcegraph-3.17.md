@@ -101,19 +101,14 @@ Currently, a repository will need 50 navigation events (hovers, jump to definiti
 
 TODO: Felix will make a video
 
-  * Show off prototype with some use cases (but not how to use/configure)
-  * Show links
-  * Ask for feedback
-  * Something to also send to customers to get feedback, not just blog post
-
 The Sourcegraph developer team is prototyping code insights, which will help you answer questions you have about your code, including: 
 
-    * [Code smells]([https://martinfowler.com/bliki/CodeSmell.html](https://martinfowler.com/bliki/CodeSmell.html)) over time
-    * Languages used at the organization
-    * Library adoption
-    * Test coverage over time
-    * Tracking a migration
-    * Security anti-patterns
+   * [Code smells]([https://martinfowler.com/bliki/CodeSmell.html](https://martinfowler.com/bliki/CodeSmell.html)) over time
+   * Languages used at the organization
+   * Library adoption
+   * Test coverage over time
+   * Tracking a migration
+   * Security anti-patterns
 
 Code insights helps developers be more productive and do their jobs better, and brings the data we have in Sourcegraph together.
 
@@ -144,7 +139,7 @@ TODO: Example config
 
 ```
 
-
+<br />&nbsp;
 ### Improved debugging experience
 
 A unified set of container metrics, compatible across both Kubernetes and Docker Compose deployment types,  provides the following information about containers through Grafana dashboards and alerting in both deployment types:
@@ -195,12 +190,12 @@ These notifications start out as subtle informational alerts, and at 6+ months o
 
 SCREENSHOT
 
-
-**Are you seeing 10x more code in your organization than 5 years ago?**
+<br />&nbsp;
+#### Seeing 10x more code in your organization than 5 years ago?
 
 Are you dealing with more distributed teams and repositories, and different programming languages, services, and APIs?
 
-We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To get a copy, you will need to [fill this out](https://www.surveygizmo.com/s3/5628315/SG), but we promise it will only take between 5-10 min.
+We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To get a copy, you will need to [fill this out](https://www.surveygizmo.com/s3/5628315/SG), but we promise it will only take between 5-10 min to complete!
 
 
 ## Changelog
