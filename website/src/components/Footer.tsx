@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
-import GitHubCircleIcon from 'mdi-react/GithubCircleIcon'
-import LinkedinIcon from 'mdi-react/LinkedinBoxIcon'
+import GitHubCircleIcon from 'mdi-react/GithubIcon'
+import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
 import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from './ProductPopover'
