@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.17: Faster and automatic precise code intelligence, product preview of code insights, and AND/OR queries for all search modes"
+title: "Sourcegraph 3.17: Faster and automatic precise code intelligence, preview of code insights, and AND/OR queries for all search modes"
 author: Adam Herzog
 publishDate: 2020-06-20T10:00-07:00
 tags: [
@@ -57,7 +57,7 @@ Precise code intelligence queries are now faster. The following chart shows the 
   <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png" width="70%">
 </div>
 
-In [Sourcegraph 3.16]([https://about.sourcegraph.com/blog/sourcegraph-3.16/](https://about.sourcegraph.com/blog/sourcegraph-3.16/)), our precise code intelligence backend was rewritten from TypeScript to Go. This was part of a larger effort to aggressively optimize conversion and querying of LSIF data. That effort is now well underway!
+In [Sourcegraph 3.16](https://about.sourcegraph.com/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), our precise code intelligence backend was rewritten from TypeScript to Go. This was part of a larger effort to aggressively optimize conversion and querying of LSIF data. That effort is now well underway!
 
 The task of uploading and processing precise code intelligence bundles, which has previously been a sticking point on private instances with large repositories, has also been improved (around 45% faster than Sourcegraph 3.16 and 48% faster than Sourcegraph 3.15). The following chart shows the time required to upload the indexes for our integration test suite. This includes three commits from [etcd-io/etcd](https://github.com/etcd-io/etcd), [pingcap/tidb](https://github.com/pingcap/tidb), and [distributedio/titan](https://github.com/distributedio/titan), and two commits from [uber-go/zap](https://github.com/uber-go/zap).
 
@@ -90,7 +90,7 @@ For detailed technical information about recent performance boosts, [read the bl
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-An experimental feature on [sourcegraph.com/search]([https://sourcegraph.com/search](https://sourcegraph.com/search)) will automatically create an [LSIF index]([https://docs.sourcegraph.com/user/code_intelligence/lsif](https://docs.sourcegraph.com/user/code_intelligence/lsif)) for eligible repositories based on their popularity, so that repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that does not require additional build steps and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
+An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/user/code_intelligence/lsif) for eligible repositories based on their popularity, so that repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that does not require additional build steps and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
 
 To see this experiment in action, pick a Go repository hosted on GitHub that has yet to be discovered. Possibly something useful with a passionate cult-following. Then, visit that repository in sourcegraph.com/search. After navigating through the code base after a while, you should see the hover tooltips and definition results become more accurate.
 
@@ -103,7 +103,7 @@ TODO: Felix will make a video
 
 The Sourcegraph developer team is prototyping code insights, which will help you answer questions you have about your code, including: 
 
-   * [Code smells]([https://martinfowler.com/bliki/CodeSmell.html](https://martinfowler.com/bliki/CodeSmell.html)) over time
+   * [Code smells](https://martinfowler.com/bliki/CodeSmell.html) over time
    * Languages used at the organization
    * Library adoption
    * Test coverage over time
@@ -139,7 +139,7 @@ TODO: Example config
 
 ```
 
-<br />&nbsp;
+<br />
 ### Improved debugging experience
 
 A unified set of container metrics, compatible across both Kubernetes and Docker Compose deployment types,  provides the following information about containers through Grafana dashboards and alerting in both deployment types:
