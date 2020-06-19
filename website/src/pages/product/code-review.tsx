@@ -140,12 +140,13 @@ export default ((props: any) => (
                             Learn how{' '}
                             <a href="/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence">
                                 GitLab integrates with Sourcegraph
-                            </a>.
+                            </a>
+                            .
                         </h5>
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="white" className="pt-3">
+            <ContentSection id="integrations" color="white" className="pt-3">
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <ContentSection color="black" className="py-6">

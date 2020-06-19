@@ -258,7 +258,7 @@ export default ((props: any) => (
                 <YouTube id="OGd8wr7XpgU" className="mb-6" />
                 <YouTube id="GuqWw3t6H-k" />
             </ContentSection>
-            <ContentSection color="white" className="pt-3">
+            <ContentSection id="integrations" color="white" className="pt-3">
                 <IntegratesWithSection className="mt-4 pt-5 pb-6" />
             </ContentSection>
             <ContentSection color="gray" className="py-6">
