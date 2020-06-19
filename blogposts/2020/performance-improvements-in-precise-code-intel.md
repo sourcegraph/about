@@ -20,19 +20,19 @@ This **is** to say that I think it was good move to perform the rewrite to allow
 
 This post outlines many of the higher-level changes that were made in a direct effort to increase the performance of precise code intel queries, increase the performance of raw LSIF upload processing, and decrease the size of precise code intel bundles on disk.
 
-The following graph shows the decrease in query latency while running our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) compared to the previous two Sourcegraph releases. The test suite is querying cross-repo definitions and references over three commits from [etcd-io/etcd](https://github.com/etcd-io/etcd), [pingcap/tidb](https://github.com/pingcap/tidb), and [distributedio/titan](https://github.com/distributedio/titan), and two commits from [uber-go/zap](https://github.com/uber-go/zap).
+The following chart shows the decrease in query latency while running our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) compared to the previous two Sourcegraph releases. The test suite is querying cross-repo definitions and references over three commits from [etcd-io/etcd](https://github.com/etcd-io/etcd), [pingcap/tidb](https://github.com/pingcap/tidb), and [distributedio/titan](https://github.com/distributedio/titan), and two commits from [uber-go/zap](https://github.com/uber-go/zap).
 
 <div class="text-center benchmark-results">
   <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png" width="70%">
 </div>
 
-This next graph shows the time required to upload and process the indexes.
+This next chart shows the time required to upload and process the indexes.
 
 <div class="text-center benchmark-results">
   <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-processing-latency-317.png" width="50%">
 </div>
 
-These last graphs show the size of the converted bundle on disk after conversion.
+These last charts show the size of the converted bundle on disk after conversion.
 
 <div class="text-center benchmark-results">
   <img src="https://storage.googleapis.com/sourcegraph-assets/tidb-bundle-size.png" width="48%">
