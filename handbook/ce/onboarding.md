@@ -31,17 +31,17 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
 
 ### General onboarding during weeks 1 and 2
 
-- Go through general onboarding [People Ops](../../people-ops/index.md)
-  - [General onboarding steps](../../people-ops/onboarding/index.md#for-all-new-teammates)
-  - [Sourcegraph handbook](../../index.md) intro
-- [CEO](../../ceo/index.md)
+- Go through general onboarding [People Ops](../people-ops/index.md)
+  - [General onboarding steps](../people-ops/onboarding/index.md#for-all-new-teammates)
+  - [Sourcegraph handbook](../index.md) intro
+- [CEO](../ceo/index.md)
   - Vision
-  - [Values](../../../company/values.md)
+  - [Values](../../company/values.md)
   - Company pitch
-  - [OKRs](../../../company/okrs/index.md)
+  - [OKRs](../../company/okrs/index.md)
   - Last board deck or video
-- [Product](../../product/index.md)
-  - [Personas](../../product/personas.md)
+- [Product](../product/index.md)
+  - [Personas](../product/personas.md)
   - [Products](https://about.sourcegraph.com/product)
 - Read/watch
   - Entire [about.sourcegraph.com](https://about.sourcegraph.com) site
