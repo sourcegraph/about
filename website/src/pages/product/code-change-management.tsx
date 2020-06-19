@@ -4,6 +4,7 @@ import NotificationsActiveIcon from 'mdi-react/NotificationsActiveIcon'
 import PlaylistAddCheckIcon from 'mdi-react/PlaylistAddCheckIcon'
 import SecurityIcon from 'mdi-react/SecurityIcon'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { Blockquote } from '../../components/Blockquote'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -18,7 +19,7 @@ import {
     RequestCodeChangeManagementDemoActionNow,
 } from '../../css/components/actions/RequestDemoAction'
 
-const title = 'Code change management'
+const pagetitle = 'Sourcegraph - Code change management'
 const description =
     'Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt. Compute changes, create branches, and track pull requests across all affected repositories.'
 
@@ -52,15 +53,20 @@ export const CampaignsTable: React.FunctionComponent<{
 )
 
 export default ((props: any) => (
-    <Layout
-        meta={{
-            title,
-            description,
-        }}
-        location={props.location}
-    >
+    <Layout location={props.location}>
+        <Helmet>
+            <title>{pagetitle}</title>
+            <meta name="twitter:title" content={pagetitle} />
+            <meta property="og:title" content={pagetitle} />
+            <meta name="twitter:site" content="@srcgraph" />
+            <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta name="description" content={description} />
+        </Helmet>
         <ContentPage
-            title={title}
+            title="Code change management"
             className="code-change-management"
             titleClassName="code-change-management display-3"
             description={description}

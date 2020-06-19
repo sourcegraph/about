@@ -5,6 +5,7 @@ import HeadSnowflakeIcon from 'mdi-react/HeadSnowflakeIcon'
 import PlaylistAddCheckIcon from 'mdi-react/PlaylistAddCheckIcon'
 import StopwatchIcon from 'mdi-react/StopwatchIcon'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
@@ -17,13 +18,23 @@ import { SupportedProgrammingLanguagesLink } from '../../components/product/Supp
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 
+const pagetitle = 'Sourcegraph - Code learning'
+const description = 'Quickly understand new code and accelerate developer onboarding with Sourcegraph.'
+
 export default ((props: any) => (
     <Layout location={props.location}>
-        <ContentPage
-            title="Learn code faster"
-            description="Quickly understand new code and accelerate developer onboarding with Sourcegraph."
-            className="pb-2"
-        >
+        <Helmet>
+            <title>{pagetitle}</title>
+            <meta name="twitter:title" content={pagetitle} />
+            <meta property="og:title" content={pagetitle} />
+            <meta name="twitter:site" content="@srcgraph" />
+            <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta name="description" content={description} />
+        </Helmet>
+        <ContentPage title="Learn code faster" description={description} className="pb-2">
             <PageSectionLinks
                 sections={[
                     { text: 'Learning code is essential', url: '#why' },

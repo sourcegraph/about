@@ -4,6 +4,7 @@ import HistoryIcon from 'mdi-react/HistoryIcon'
 import SearchIcon from 'mdi-react/SearchIcon'
 import StopwatchIcon from 'mdi-react/StopwatchIcon'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
@@ -18,12 +19,24 @@ import { UseCasesTable } from '../../components/product/UseCasesTable'
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 
+const pagetitle = 'Sourcegraph - Code discovery'
+const description =
+    'Navigate, explore, and understand the code you are looking for, even if you didn’t know it existed.'
+
 export default ((props: any) => (
     <Layout location={props.location}>
-        <ContentPage
-            title="Code discovery"
-            description="Navigate, explore, and understand the code you are looking for, even if you didn’t know it existed."
-        >
+        <Helmet>
+            <title>{pagetitle}</title>
+            <meta name="twitter:title" content={pagetitle} />
+            <meta property="og:title" content={pagetitle} />
+            <meta name="twitter:site" content="@srcgraph" />
+            <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta name="description" content={description} />
+        </Helmet>
+        <ContentPage title="Code discovery" description={description}>
             <PageSectionLinks
                 sections={[
                     { text: 'Features', url: '#features' },
@@ -33,7 +46,7 @@ export default ((props: any) => (
                 ]}
             />
             <ContentSection className="py-2" color="white">
-                <h2 id="features" className="text-center display-3">
+                <h2 id="features" className="text-center display-4">
                     Find answers faster with Sourcegraph's code navigation and exploration
                 </h2>
             </ContentSection>

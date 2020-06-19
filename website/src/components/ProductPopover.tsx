@@ -12,8 +12,8 @@ export const PRODUCT_FEATURES: ProductFeatureOrUseCase[] = [
     { text: 'Code discovery', to: '/product/code-discovery' },
     { text: 'Code intelligence', to: '/product/code-intelligence' },
     { text: 'Code change management', to: '/product/code-change-management' },
-    { text: 'Code review', to: '/product/code-review' },
     { text: 'Code learning', to: '/product/code-learning' },
+    { text: 'Code review', to: '/product/code-review' },
 ]
 
 export const PRODUCT_USE_CASES: ProductFeatureOrUseCase[] = [

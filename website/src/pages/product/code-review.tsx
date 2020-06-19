@@ -6,6 +6,7 @@ import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
 import QuestionMarkCircleIcon from 'mdi-react/QuestionMarkCircleIcon'
 import TurtleIcon from 'mdi-react/TurtleIcon'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
@@ -18,13 +19,24 @@ import { SupportedProgrammingLanguagesLink } from '../../components/product/Supp
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 
+const pagetitle = 'Sourcegraph - Code review'
+const description =
+    "Sourcegraph Universal Code Search makes code reviews fast and thorough to catch more bugs before they're deployed to production."
+
 export default ((props: any) => (
     <Layout location={props.location}>
-        <ContentPage
-            title="Better code reviews"
-            description="Sourcegraph Universal Code Search makes code reviews fast and thorough to catch more bugs before they're deployed to production."
-            className="pb-2"
-        >
+        <Helmet>
+            <title>{pagetitle}</title>
+            <meta name="twitter:title" content={pagetitle} />
+            <meta property="og:title" content={pagetitle} />
+            <meta name="twitter:site" content="@srcgraph" />
+            <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta name="description" content={description} />
+        </Helmet>
+        <ContentPage title="Better code reviews" description={description} className="pb-2">
             <PageSectionLinks
                 sections={[
                     { text: 'Why code reviews are critical', url: '#why' },

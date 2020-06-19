@@ -6,6 +6,7 @@ import MicroscopeIcon from 'mdi-react/MicroscopeIcon'
 import PowerPlugIcon from 'mdi-react/PowerPlugIcon'
 import TooltipPlusIcon from 'mdi-react/TooltipPlusIcon'
 import React from 'react'
+import Helmet from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
@@ -18,12 +19,23 @@ import { SupportedProgrammingLanguagesLink } from '../../components/product/Supp
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 
+const pagetitle = 'Sourcegraph - Code intelligence'
+const description = 'Use Sourcegraph to find answers faster, with inline contextual information around code.'
+
 export default ((props: any) => (
     <Layout location={props.location}>
-        <ContentPage
-            title="Code intelligence"
-            description="Use Sourcegraph to find answers faster, with inline contextual information around code."
-        >
+        <Helmet>
+            <title>{pagetitle}</title>
+            <meta name="twitter:title" content={pagetitle} />
+            <meta property="og:title" content={pagetitle} />
+            <meta name="twitter:site" content="@srcgraph" />
+            <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta name="description" content={description} />
+        </Helmet>
+        <ContentPage title="Code intelligence" description={description}>
             <PageSectionLinks
                 sections={[
                     { text: 'Better code reviews', url: '#codereviews' },
