@@ -95,7 +95,7 @@ export default ((props: any) => (
                     Why learning code is faster with Sourcegraph
                 </h2>
                 <p className="text-center mb-5">
-                    Sourcegraph <a href="/universal-code-search">Universal Code Search</a> lets you explore across both your code and public codebases with contextual code intelligence to accelerate understanding.
+                    Sourcegraph <a href="/universal-code-search">Universal Code Search</a> lets you explore across your code and public codebases with contextual code intelligence to accelerate understanding code when onboarding new developers and reviewing unfamiliar code.
                 </p>
                 <div className="row">
                     <div className="col-lg-6 mb-4">
@@ -156,8 +156,7 @@ export default ((props: any) => (
                         <h5>
                             Read why{' '}
                             <a href="https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html">
-                                Yelp uses Sourcegraph to ship code faster and more reliably.
-                            </a>
+                                Yelp uses Sourcegraph to ship code faster and more reliably</a>.
                         </h5>
                     </div>
                 </div>
