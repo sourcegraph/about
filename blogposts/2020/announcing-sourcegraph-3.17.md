@@ -15,7 +15,7 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 <div style="padding-left: 2rem">
 
 [**🧠 Faster and automatic precise code intelligence**](#faster-and-automatic-precise-code-intelligence)<br />
-Precise code intelligence is now 35% faster than in 3.16. Automatic code intelligence (🧪 experimental feature) will bring precise results to more repositories faster.
+Precise code intelligence is now 35% faster than in 3.16. Automatic precise code intelligence (🧪 experimental feature) will bring precise results to more repositories faster.
 
 [**📊 Product preview: Code insights**](#product-preview-code-insights)<br />
 Help developers be more productive and do their jobs better by aggregating data in Sourcegraph.
