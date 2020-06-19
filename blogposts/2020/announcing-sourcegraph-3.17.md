@@ -51,7 +51,7 @@ Sourcegraph couldn't be what it is without the community.
 
 ### 35% faster than in 3.16, 50% faster than in 3.15
 
-Precise code intelligence queries are now faster. The following chart shows the relative performance of our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) over the newly released Sourcegraph 3.17 instances, Sourcegraph 3.16 (around 35% faster in 3.17), and Sourcegraph 3.15 (around 50% faster in 3.17).
+Precise code intelligence queries are now faster. The following chart shows the relative performance of our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) over Sourcegraph 3.15 (around 50% faster in 3.17), Sourcegraph 3.16 (around 35% faster in 3.17), and the newly released Sourcegraph 3.17 instances.
 
 <div class="text-center benchmark-results">
   <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png" width="70%">
