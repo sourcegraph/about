@@ -6,7 +6,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.17
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: /blog/3.17-release-blog-img.jpg
 published: true
 ---
 
@@ -43,6 +43,7 @@ Sourcegraph couldn't be what it is without the community.
       Online meetup: Sourcegraph 3.17 - Thursday, June 21 at 10AM PDT
     </a>
   </p>
+  </div>
 
 ---
 
@@ -119,7 +120,7 @@ Code insights helps developers be more productive and do their jobs better, and 
 We want to understand the bigger questions you have about your code base, and would love to hear from you! Please reach out at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) to talk to us.
 
 
-## Developer Features
+## Sourcegraph developer features
 
 
 ### AND/OR query improvements
