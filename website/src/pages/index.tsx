@@ -396,7 +396,7 @@ export default ((props: any) => (
                         </ul>
                     </div>
                     <div className="col-lg-6">
-                        <h3 className="h5 font-weight-bold pt-3">Your tools</h3>
+                        <h3 className="h5 font-weight-bold pt-3">All your tools</h3>
                         <ul className="list-inline d-inline-flex flex-wrap">
                             <li className="list-inline-item text-nowrap">
                                 <code className="border rounded px-1">Chrome</code>
@@ -445,7 +445,7 @@ export default ((props: any) => (
                             </li>
                             <li className="d-block">
                                 <a href="#" className="small text-muted">
-                                    See all integrations
+                                    See all integrations or build your own
                                 </a>
                             </li>
                         </ul>
@@ -474,6 +474,86 @@ export default ((props: any) => (
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="py-6 border-top mb-6">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h2>Onboard to a new codebase.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
+                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
+                            sagittis sem, eu maximus libero.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="py-6 border-top mb-6">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h2>TODO(sqs): make large-scale code changes.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
+                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
+                            sagittis sem, eu maximus libero.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="py-6 border-top mb-6">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h2>Fix critical security problems in code. In hours, not weeks.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
+                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
+                            sagittis sem, eu maximus libero.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="py-6 border-top mb-6">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h2>Find the root cause of an incident in 30% less time.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
+                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
+                            sagittis sem, eu maximus libero.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
             </ContentSection>
