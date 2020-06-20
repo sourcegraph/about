@@ -140,7 +140,7 @@ TODO: Example config
 
 A unified set of container metrics, compatible across both Kubernetes and Docker Compose deployment types,  provides the following information about containers through Grafana dashboards and alerting in both deployment types:
 
-ADD SCREENSHOTS - POSSIBLE TO STACK VERTICALLY TO IMPROVE READABILITY?
+![admin-notifications](/blogposts/admin_notifications_sourcegraph.png "admin-notifications")
 
 Recent alerts history is now included when filing a bug report from the report-a-bug-page (for example, [https://sourcegraph.example.com/site-admin/report-bug](https://sourcegraph.example.com/site-admin/report-bug)) to better enable us to diagnose issues.
 
@@ -179,7 +179,7 @@ Sourcegraph now shows update notifications to site admins (at 1 month out-of-dat
 
 These notifications start out as subtle informational alerts, and at 6+ months out-of-date, they will appear as red dismissible banners:
 
-SCREENSHOT
+![container-monitoring](/blogposts/container_monitoring_sourcegraph.png "container-monitoring")
 
 #### Seeing 10x more code in your organization than 5 years ago?
 
