@@ -77,9 +77,9 @@ $body-color: #222233;
 
 $border-color: $gray-400;
 
-$display1-size: 3.5rem;
-$display2-size: 2.5rem;
-$display3-size: 2rem;
+$display1-size: 4rem;
+$display2-size: 3.25rem;
+$display3-size: 2.5rem;
 $display4-size: 1.75rem;
 
 $navbar-nav-link-padding-x: $spacer * 0.75;
@@ -201,9 +201,7 @@ img.icon-inline,
 
 code {
     background-color: #f2f4f8;
-    display: inline-block;
-    padding: 0.1rem 0.3rem;
-    font-size: 0.9em;
+    font-size: 80%;
 }
 
 pre {

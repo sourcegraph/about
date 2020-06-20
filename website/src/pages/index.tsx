@@ -206,6 +206,32 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <CustomerLogosSection className="py-5" />
+            <ContentSection className="py-6 mt-3 border-top border-bottom">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h2 className="display-3 font-weight-bold">Search your code. All of it.</h2>
+                        <p>
+                            Just point Sourcegraph at your repositories and code hosts&mdash;then start searching. Stay
+                            in flow and find your answer quickly with with smart filters such as{' '}
+                            <code className="border rounded px-1">Non-test files</code>,{' '}
+                            <code className="border rounded px-1">lang:java</code>,{' '}
+                            <code className="border rounded px-1">repo:frontend</code>, and more. Stop
+                            <code className="border rounded px-1">grep</code>'ing your stale local clones and fighting
+                            with your code host's search to match &ldquo;special&rdquo; characters like{' '}
+                            <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                                Learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                {/* TODO(sqs) */}
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    </div>
+                </div>
+            </ContentSection>
             <IntegratesWithSection className="pt-5 pb-4" />
             <Jumbotron
                 color="purple"
