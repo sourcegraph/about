@@ -40,7 +40,7 @@ Sourcegraph couldn't be what it is without the community.
   <p>
     <strong>LEARN MORE:</strong><br />
     <a href="https://info.sourcegraph.com/online-meetup-june25?utm_source=blog">
-      Online meetup: Sourcegraph 3.17 - Thursday, June 21 at 10AM PDT
+      Online meetup: Sourcegraph 3.17 - Thursday, June 25 at 10AM PDT
     </a>
   </p>
   </div>
@@ -83,7 +83,6 @@ We plan to continue on this path of performance improvements, and the next relea
 
 For detailed technical information about recent performance boosts, [read the blog post](https://about.sourcegraph.com/blog/performance-improvements-in-precise-code-intel) on performance improvements for precise code intelligence.
 
-
 ### Automatic precise code intelligence
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
@@ -95,7 +94,6 @@ An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/sear
 To see this experiment in action, pick a Go repository hosted on GitHub that has yet to be discovered. Possibly something useful with a passionate cult-following. Then, visit that repository in sourcegraph.com/search. After navigating through the code base after a while, you should see the hover tooltips and definition results become more accurate.
 
 Currently, a repository will need 50 navigation events (hovers, jump to definition, find references) to trigger the auto-indexing procedure. We are continually tuning these heuristics to bring precise results to more repositories faster.
-
 
 ## Product preview: code insights
 
@@ -114,9 +112,7 @@ Code insights helps developers be more productive and do their jobs better, and 
 
 We want to understand the bigger questions you have about your code base, and would love to hear from you! Please reach out at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) to talk to us.
 
-
 ## Sourcegraph developer features
-
 
 ### Introducing AND/OR operators for code search
 
@@ -128,14 +124,13 @@ In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experi
 
 Initial support for query operators is for searching file contents. Operators for filters like `repo:` and `file:` will be supported in upcoming releases.
 
-
 ### Gitolite exclude pattern
 
 The Gitolite `exclude` setting in the [Gitolite external service configuration](https://docs.sourcegraph.com/admin/external_service/gitolite#configuration) now supports a regular expression through the pattern field. Adding this regex support improves Gitolite’s pattern matching abilities.
 
-This is consistent with how we exclude in other external services, and is a replacement for the deprecated configuration. [#11403](https://github.com/sourcegraph/sourcegraph/pull/11403) 
+This is consistent with how we exclude in other external services, and is a replacement for the deprecated configuration.
 
-```
+```json
 
 TODO: Example config
 
@@ -151,16 +146,13 @@ Recent alerts history is now included when filing a bug report from the report-a
 
 We have added experimental support for detecting if your instance is over or under-provisioned through a set of new dashboards and warning-level alerts.
 
-
 ## Sourcegraph admin features
-
 
 ### Easier alerting configuration
 
 Easily configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
 
-```
-
+```json
 "observability.alerts": {
 
   "id": "my-alert",
@@ -170,11 +162,9 @@ Easily configure Sourcegraph to send alerts about its health to [notifiers like 
   "notifier": { "type": "slack", /* ... */ }
 
 }
-
 ```
 
 For more information, see [https://docs.sourcegraph.com/admin/observability/alerting](https://docs.sourcegraph.com/admin/observability/alerting).
-
 
 ### Repository permission syncing on by default
 
@@ -191,13 +181,11 @@ These notifications start out as subtle informational alerts, and at 6+ months o
 
 SCREENSHOT
 
-<br />&nbsp;
 #### Seeing 10x more code in your organization than 5 years ago?
 
 Are you dealing with more distributed teams and repositories, and different programming languages, services, and APIs?
 
 We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To get a copy, you will need to [fill this out](https://www.surveygizmo.com/s3/5628315/SG), but we promise it will only take between 5-10 min to complete!
-
 
 ## Changelog
 
@@ -241,11 +229,29 @@ The [changelog for this and previous releases](https://github.com/sourcegraph/so
 
 A big thank you to everyone who contributed to Sourcegraph since the last release!
 
-<!--
-  Generate the list of people who contributed to this release (created issues) by copying the output from bin/generate_contributors.go:
-
-  Usage: GO111MODULE=on go run bin/generate_contributors.go
--->
+- [@zahassanyum](https://github.com/zahassanyum)
+- [@smaifullerton-wk](https://github.com/smaifullerton-wk)
+- [@tbodt](https://github.com/tbodt)
+- [@PostPollux](https://github.com/PostPollux)
+- [@svrx](https://github.com/svrx)
+- [@yaohui-wyh](https://github.com/yaohui-wyh)
+- [@gerbal](https://github.com/gerbal)
+- [@abeyerpath](https://github.com/abeyerpath)
+- [@dependabot[bot]](https://github.com/apps/dependabot)
+- [@danielpops](https://github.com/danielpops)
+- [@imba-tjd](https://github.com/imba-tjd)
+- [@jjlin](https://github.com/jjlin)
+- [@saurabh-hirani](https://github.com/saurabh-hirani)
+- [@yg](https://github.com/yg)
+- [@Bobloblaw74329479279](https://github.com/Bobloblaw74329479279)
+- [@philippe-granet](https://github.com/philippe-granet)
+- [@DolceTriade](https://github.com/DolceTriade)
+- [@terinjokes](https://github.com/terinjokes)
+- [@ceecurvin](https://github.com/ceecurvin)
+- [@caarlos0](https://github.com/caarlos0)
+- [@mholt](https://github.com/mholt)
+- [@aisbaa](https://github.com/aisbaa)
+- [@chunliu](https://github.com/chunliu)
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
