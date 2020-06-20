@@ -20,8 +20,7 @@ Precise code intelligence is now 35% faster than in 3.16. Automatic precise code
 [**📊 Product preview: Code insights**](#product-preview-code-insights)<br />
 Answer high-level questions about your codebase and track changes over time by aggregating data in Sourcegraph.
 
-[**💻 Sourcegraph developer features**](#sourcegraph-developer-features)<br />
-Introducing AND/OR queries for searching file contents.
+[**🔎 Introducing AND/OR operators for code search**](#introducing-andor-operators-for-code-search)<br />
 
 [**🛠 Sourcegraph admin features**](#sourcegraph-admin-features)<br />
 Easier alerting configuration, repository permission syncing on by default, updating the Gitolite exclude pattern, improved debugging, and notifications when Sourcegraph is out-of-date.
@@ -112,17 +111,15 @@ The Sourcegraph team is prototyping code insights to help you answer high-level 
 
 We would love to learn the big questions you have about your code base! Share them with us in this [quick code insights survey](https://forms.gle/yipcyJezGxwmFSZc9) or email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
-## Sourcegraph developer features
-
-### Introducing AND/OR operators for code search
+## Introducing AND/OR operators for code search
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced AND/OR queries for file content in regexp and structural search modes as an experimental option. Sourcegraph 3.17 now introduces AND/OR queries for all modes (including the recently added literal search mode) and is on by default for all instances (no longer considered experimental).
+In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced experimental AND/OR queries for file content in regexp and structural search modes. Sourcegraph 3.17 adds AND/OR queries to the recently added literal search mode, and is enabled for all users (no longer considered experimental).
 
-Initial support for query operators is for searching file contents. Operators for filters like `repo:` and `file:` will be supported in upcoming releases.
+Initial support of AND/OR operators is for searching file contents. Operators for filters like `repo:` and `file:` will be supported in upcoming releases.
 
 ## Sourcegraph admin features
 
@@ -138,13 +135,11 @@ Easily configure Sourcegraph to send alerts about its health to [notifiers like 
 }
 ```
 
-For more information, see [https://docs.sourcegraph.com/admin/observability/alerting](https://docs.sourcegraph.com/admin/observability/alerting).
+For more information, see the [Sourcegraph alerting documentation](https://docs.sourcegraph.com/admin/observability/alerting).
 
 ### Repository permission syncing on by default
 
-Permission syncing are now on by default for GitHub, Bitbucket Server, and GitLab for any integration that is using permissions. Documentation: [https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing)
-
-Background permissions syncing becomes the default method to sync permissions from code hosts. Please [read our documentation for things to keep in mind before upgrading](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing). [#10972](https://github.com/sourcegraph/sourcegraph/pull/10972)
+[Sourcegraph 3.14](https://about.sourcegraph.com/blog/sourcegraph-3.14#faster-syncing-of-gitlab-and-bitbucket-server-repository-permissions) and [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#faster-syncing-of-github-repository-permissions) introduced a faster and more scalable permissions syncing solution that could be enabled for your code host integrations. This background permissions syncing is now on by default for GitHub, Bitbucket Server, and GitLab for any integration with repository permissions configured. Please [read our documentation for more details](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing).
 
 ### Gitolite exclude pattern
 
@@ -169,7 +164,7 @@ This is consistent with how we exclude in other external services, and is a repl
 
 ### Improved debugging experience
 
-A unified set of container metrics, compatible across both Kubernetes and Docker Compose deployment types,  provides the following information about containers through Grafana dashboards and alerting in both deployment types:
+A unified set of container metrics, compatible across both Kubernetes and Docker Compose deployment types, provides the following information about containers through Grafana dashboards and alerting in both deployment types:
 
 ![admin-notifications](/blogposts/admin_notifications_sourcegraph.png "admin-notifications")
 
@@ -179,13 +174,13 @@ We have added experimental support for detecting if your instance is over or und
 
 ### Notifications when Sourcegraph is out of date
 
-Sourcegraph now shows update notifications to site admins (at 1 month out-of-date), and then to users (at 4 months out-of-date). This will help keep your Sourcegraph instance current with the latest bug fixes and security updates, as well as new features and functionalities. This will also ensure that you don’t run into issues due to running on a stale version.
+Sourcegraph now shows update notifications to site admins (at 1 month out-of-date), and to users (at 4 months out-of-date). This will help encourage admins to keep their Sourcegraph instance current with the latest bug fixes, security updates, and new features and functionalities. Keeping Sourcegraph current ensures that you don’t run into issues due to running on a stale version.
 
 These notifications start out as subtle informational alerts, and at 6+ months out-of-date, they will appear as red dismissible banners:
 
 ![container-monitoring](/blogposts/container_monitoring_sourcegraph.png "container-monitoring")
 
-## Seeing 10x more code in your organization than 5 years ago?
+### Seeing 10x more code in your organization than 5 years ago?
 
 Are you dealing with more distributed teams and repositories, and different programming languages, services, and APIs?
 
