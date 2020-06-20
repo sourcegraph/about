@@ -237,7 +237,6 @@ A big thank you to everyone who contributed to Sourcegraph since the last releas
 - [@yaohui-wyh](https://github.com/yaohui-wyh)
 - [@gerbal](https://github.com/gerbal)
 - [@abeyerpath](https://github.com/abeyerpath)
-- [@dependabot[bot]](https://github.com/apps/dependabot)
 - [@danielpops](https://github.com/danielpops)
 - [@imba-tjd](https://github.com/imba-tjd)
 - [@jjlin](https://github.com/jjlin)
