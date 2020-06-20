@@ -18,7 +18,7 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 Precise code intelligence is now 35% faster than in 3.16. Automatic precise code intelligence (🧪 experimental feature) will bring precise results to more repositories faster.
 
 [**📊 Product preview: Code insights**](#product-preview-code-insights)<br />
-Help developers be more productive and do their jobs better by aggregating data in Sourcegraph.
+Understand high-level patterns of your code, and track code changes over time by aggregating data in Sourcegraph.
 
 [**💻 Sourcegraph developer features**](#sourcegraph-developer-features)<br />
 Introducing AND/OR queries for searching file contents, updating the Gitolite exclude pattern, and improving debugging.
