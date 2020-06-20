@@ -51,7 +51,7 @@ Sourcegraph couldn't be what it is without the community.
 
 ### 35% faster than in 3.16, 50% faster than in 3.15
 
-Precise code intelligence queries are now faster. The following chart shows the relative performance of our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) over Sourcegraph 3.15 (around 50% faster in 3.17), Sourcegraph 3.16 (around 35% faster in 3.17), and the newly released Sourcegraph 3.17 instances.
+Precise code intelligence queries are now faster. The following chart shows the decrease in query latency while running our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) compared to the previous two Sourcegraph releases. Sourcegraph 3.17 is 50% faster than in Sourcegraph 3.15, and 35% faster than in Sourcegraph 3.16.
 
 <div class="text-center benchmark-results">
   <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png" width="70%">
@@ -97,7 +97,11 @@ Currently, a repository will need 50 navigation events (hovers, jump to definiti
 
 ## Product preview: code insights
 
-The Sourcegraph developer team is prototyping code insights, which will help you answer questions you have about your code, including:
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+</div>
+
+The Sourcegraph developer team is prototyping code insights to help you answer questions about your code. Code insights uses Sourcegraph search results to understand changes to your codebase over time, or to understand current utilization of an API, language, and more. Example insights include:
 
    * [Code smells](https://martinfowler.com/bliki/CodeSmell.html) over time
    * Languages used at the organization
@@ -106,9 +110,7 @@ The Sourcegraph developer team is prototyping code insights, which will help you
    * Tracking a migration
    * Security anti-patterns
 
-Code insights helps developers be more productive, do their jobs better, and utilize the data we have in Sourcegraph to better understand their code.
-
-We want to understand the bigger questions you have about your code base, and would love to hear from you! Please reach out at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) to talk to us.
+We are excited to hear about the big questions you have about your code base! Share them with us in this [code insights survey](https://forms.gle/yipcyJezGxwmFSZc9) or email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
 ## Sourcegraph developer features
 
