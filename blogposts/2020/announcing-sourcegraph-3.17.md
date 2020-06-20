@@ -101,16 +101,16 @@ Currently, a repository will need 50 navigation events (hovers, jump to definiti
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-The Sourcegraph developer team is prototyping code insights to help you answer questions about your code. Code insights uses Sourcegraph search results to understand changes to your codebase over time, or to understand current utilization of an API, language, and more. Example insights include:
+The Sourcegraph team is prototyping code insights to help you answer high-level questions about your code. Code insights can use Sourcegraph search, code intelligence or even external services to give you the information **you** care about. Example insights include:
 
    * [Code smells](https://martinfowler.com/bliki/CodeSmell.html) over time
-   * Languages used at the organization
+   * Languages and technologies used at your organization
    * Library adoption
    * Test coverage over time
    * Tracking a migration
    * Security anti-patterns
 
-We are excited to hear about the big questions you have about your code base! Share them with us in this [code insights survey](https://forms.gle/yipcyJezGxwmFSZc9) or email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
+We would love to learn the big questions you have about your code base! Share them with us in this [quick code insights survey](https://forms.gle/yipcyJezGxwmFSZc9) or email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
 ## Sourcegraph developer features
 
