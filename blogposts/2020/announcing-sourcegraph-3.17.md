@@ -97,7 +97,6 @@ Currently, a repository will need 50 navigation events (hovers, jump to definiti
 
 ## Product preview: code insights
 
-
 The Sourcegraph developer team is prototyping code insights, which will help you answer questions you have about your code, including: 
 
    * [Code smells](https://martinfowler.com/bliki/CodeSmell.html) over time
