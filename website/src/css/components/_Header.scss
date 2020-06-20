@@ -1,7 +1,13 @@
 // stylelint-disable declaration-property-unit-whitelist
 .header {
+    &__logo {
+        &-image {
+            height: 26px;
+            margin-bottom: 0.125rem;
+        }
+    }
+
     &__nav-link {
-        font-size: 0.9rem;
-        font-weight: 600;
+        color: $dark;
     }
 }

@@ -3,7 +3,6 @@ import GitHubCircleIcon from 'mdi-react/GithubCircleIcon'
 import LinkedinIcon from 'mdi-react/LinkedinBoxIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
-import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from './ProductPopover'
 import HubspotSubscribe from './Subscribe'
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
@@ -24,21 +23,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 <li className="nav-item">
                                     <Link to="/pricing">Pricing</Link>
                                 </li>
-                            </ul>
-                        </div>
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
-                            <h3 className="footer__nav-header">Features &amp; use cases</h3>
-                            <ul className="nav flex-column">
-                                {PRODUCT_FEATURES.map(({ text, to }, i) => (
-                                    <li key={i} className="nav-item">
-                                        <Link to={to}>{text}</Link>
-                                    </li>
-                                ))}
-                                {PRODUCT_USE_CASES.map(({ text, to }, i) => (
-                                    <li key={i} className="nav-item">
-                                        <Link to={to}>{text}</Link>
-                                    </li>
-                                ))}
                             </ul>
                         </div>
                         <div className="col-sm-6 col-md-3 col-lg-2 mb-3">

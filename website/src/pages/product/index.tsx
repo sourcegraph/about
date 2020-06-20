@@ -14,8 +14,6 @@ import { CustomerLogosSection } from '../../components/product/CustomerLogosSect
 import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
-import { ProductDemoVideo } from '../../components/product/ProductDemoVideo'
-import { ProductFeaturesAndUseCases } from '../../components/product/ProductFeaturesAndUseCases'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 
 export default ((props: any) => (
@@ -41,7 +39,7 @@ export default ((props: any) => (
             />
             <ContentSection color="primary" className="py-5">
                 <span id="ucs" />
-                <h2 className="text-center">Universal across everything </h2>
+                <h2 className="text-center">Universal across everything</h2>
                 <p className="text-center">
                     Code hosts and IDEs provide limited search functionality on their platforms. Development now spans
                     many repos, languages, file formats, and codebases making Universal Code Search essential for
@@ -150,10 +148,6 @@ export default ((props: any) => (
                         </blockquote>
                     </div>
                 </div>
-            </ContentSection>
-            <ContentSection color="primary" className="py-6 d-none">
-                <ProductDemoVideo title="How software development is better with Sourcegraph" />
-                <ProductFeaturesAndUseCases className="mt-6" />
             </ContentSection>
             <ContentSection color="gray" className="py-6">
                 <EbookUniversalCodeSearch />

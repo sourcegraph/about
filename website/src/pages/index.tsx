@@ -9,8 +9,6 @@ import { CustomerLogosSection } from '../components/product/CustomerLogosSection
 import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySolution'
 import { GitLabIntegrationSection } from '../components/product/GitLabIntegrationSection'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
-import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
-import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
 import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
 import { Tweets } from '../components/Tweets'
 import { YouTube } from '../components/YouTube'
@@ -18,6 +16,8 @@ import { ContactPresalesSupportAction } from '../css/components/actions/ContactP
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
+import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 /**
  * This list is lovingly hand-crafted for the home page so the title,
@@ -162,8 +162,7 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title: 'Sourcegraph: Universal Code Search',
-            description:
-                'Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search.',
+            description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
             image: 'https://info.sourcegraph.com/hubfs/sourcegraph_logo.png',
         }}
     >
@@ -181,88 +180,33 @@ export default ((props: any) => (
         <div className="home">
             <div className="home__hero">
                 <div className="home__intro container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8 mb-6 mb-lg-0">
-                            <h1 className="home__intro-header display-3">Universal Code Search</h1>
-                            <p className="home__intro-text mt-3 font-weight-light">
-                                Explore, navigate, and better understand all code, everywhere, faster.{' '}
+                    <div className="row">
+                        <div className="col mt-6 mb-6 mb-lg-0">
+                            <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
+                            <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
+                            <p className="home__intro-text my-5 font-weight-light">
+                                Find and fix things across all of your code much faster. Sourcegraph helps you onboard
+                                to a new codebase, make large-scale refactors, root-cause and fix bugs, find insecure
+                                code, and more.
                             </p>
-                            <p className="home__intro-text mt-4 font-weight-light">
-                                <img
-                                    style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
-                                    src="/sourcegraph/sourcegraph-mark.svg"
-                                />{' '}
-                                <strong>Sourcegraph Universal Code Search</strong> provides{' '}
-                                <Link
-                                    className="home__intro-text-link home__intro-text-link-1"
-                                    to="/product/code-discovery"
-                                >
-                                    code&nbsp;discovery
-                                </Link>
-                                ,{' '}
-                                <Link
-                                    className="home__intro-text-link home__intro-text-link-2"
-                                    to="/product/code-intelligence"
-                                >
-                                    code&nbsp;intelligence
-                                </Link>
-                                , and{' '}
-                                <Link
-                                    className="home__intro-text-link home__intro-text-link-3"
-                                    to="/product/code-change-management"
-                                >
-                                    code&nbsp;change&nbsp;management
-                                </Link>
-                                .
-                            </p>
-                            <RequestDemoAction className="mt-5" />
-                            <ContactPresalesSupportAction className="text-light mt-3" />
-                            <ViewDeveloperDocumentationAction className="text-light mt-2" />
-                        </div>
-                        <div className="col-lg-6 d-none">
-                            <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
+                            <div className="pt-1">
+                                <button className="btn btn-primary">
+                                    Try Sourcegraph now <ArrowRightIcon className="ml-1" />
+                                    {/* TODO(sqs) */}
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-white text-dark">
-                <CustomerLogosSection className="py-5" />
-            </div>
-            <ContentSection id="demo" color="black" className="py-6">
-                <YouTube id="GQj5jXdON3A" />
-            </ContentSection>
-            <div className="bg-white text-dark py-4">
-                <div className="container">
-                    <div className="text-center mt-5">
-                        <h3 className="font-weight-light">
-                            Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
-                        </h3>
-                    </div>
-                    <div className="container-fluid">
-                        <Tweets />
-                    </div>
+            <ContentSection className="py-6 mt-3">
+                <div className="home__nested-screenshots">
+                    <img src="/screenshots/code-page-0.png" className="home__screenshot home__screenshot--main" />
+                    <img src="/screenshots/search-page-0.png" className="home__screenshot home__screenshot--nested" />
                 </div>
-            </div>
-            <GitLabIntegrationSection />
-            <ContentSection color="white" className="blog-posts-home pt-5 pb-6">
-                <h2 className="text-center font-weight-light mb-4">Featured blog posts</h2>
-                <FeaturedBlogPosts posts={featuredPosts} />
             </ContentSection>
-            <ContentSection color="black">
-                <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
-            </ContentSection>
-            <div className="bg-white text-dark">
-                <IntegratesWithSection className="pt-5 pb-4" />
-            </div>
-            <div className="bg-primary py-6 d-none">
-                <ContentSection>
-                    <ProductDemoVideo />
-                    <ProductFeaturesAndUseCases />
-                </ContentSection>
-            </div>
-            <ContentSection className="my-5">
-                <EnterpriseReadySolution className="pt-2" />
-            </ContentSection>
+            <CustomerLogosSection className="py-5" />
+            <IntegratesWithSection className="pt-5 pb-4" />
             <Jumbotron
                 color="purple"
                 className="py-4"
