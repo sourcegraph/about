@@ -199,18 +199,9 @@ img.icon-inline,
     border-style: none;
 }
 
-code {
+code.border {
     background-color: #f2f4f8;
     font-size: 80%;
-}
-
-pre {
-    code {
-        color: #f2f4f8;
-        background: #444;
-        width: 100%;
-        padding: 1rem;
-    }
 }
 
 table {
@@ -278,4 +269,8 @@ table {
 
 body {
     background: url('/page-bg.svg') repeat;
+}
+
+.virtual-br::before {
+    content: '\A';
 }

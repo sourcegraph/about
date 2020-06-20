@@ -19,37 +19,6 @@ import { ViewDeveloperDocumentationAction } from '../css/components/actions/View
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
-/**
- * This list is lovingly hand-crafted for the home page so the title,
- * description, and image can be customized for better visual layout.
- *
- * Would be great to see this data-driven at some point in the future.
- */
-const featuredPosts: BlogPost[] = [
-    {
-        title:
-            'Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements',
-        description:
-            'Read about and watch videos of the features released in Sourcegraph 3.16 on May 20, 2020. Upgrade your Sourcegraph instance today!',
-        thumbnail: '/sourcegraph-mark.png',
-        url: '/blog/sourcegraph-3.16',
-    },
-    {
-        title: 'We made a children\'s book titled "Our "ABCs: Always Be Coding" and it\'s free to download',
-        description:
-            "We've created a new digital children's book titled \"Our ABCs: Always Be Coding”—for all children at home that wonder what their techie parents do all day, night, and some weekends, too!",
-        thumbnail: '/other/abcs-book/our-abcs.png',
-        url: '/blog/our-abcs-always-be-coding-childrens-book',
-    },
-    {
-        title: 'Universal Code Intelligence for GitHub with the Sourcegraph browser extension',
-        description:
-            'Universal Code Intelligence for GitHub means bringing code navigation features such as hover tooltips, go to definition, and find references to every code view and pull request, supporting every popular language, and all public and private repositories.',
-        thumbnail: '/external-logos/github-logo.svg',
-        url: '/blog/universal-code-intelligence-github-sourcegraph-browser-extension',
-    },
-]
-
 const testimonials: Testimonial[] = [
     {
         customer: 'Lyft',
@@ -190,10 +159,10 @@ export default ((props: any) => (
                                 incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <button className="btn btn-primary">
+                                <Link className="btn btn-primary" to="/get-started">
                                     Try Sourcegraph now <ArrowRightIcon className="ml-1" />
                                     {/* TODO(sqs) */}
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -480,12 +449,8 @@ export default ((props: any) => (
             <ContentSection className="py-6 border-top mb-6">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h2>Onboard to a new codebase.</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
-                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
-                            sagittis sem, eu maximus libero.
-                        </p>
+                        <h2>Onboard to a new codebase faster.</h2>
+                        <p>Code is complex.</p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="TODO(sqs)">
                                 TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />

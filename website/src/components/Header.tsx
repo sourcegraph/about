@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
+import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 
 interface HeaderProps {
     isHome?: boolean
@@ -72,7 +73,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 className="header__nav-link nav-link"
                                                 href="https://docs.sourcegraph.com"
                                             >
-                                                Docs
+                                                Docs <ExternalLinkIcon className="icon-inline small ml-1" />
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
@@ -95,13 +96,13 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a
+                                            <Link
                                                 className="header__nav-link nav-link btn btn-outline-primary"
-                                                href="https://sourcegraph.com/sign-up"
+                                                to="/get-started"
                                                 title="For public code only on Sourcegraph.com"
                                             >
                                                 Get started
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
