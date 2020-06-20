@@ -38,8 +38,7 @@ func main() {
 	)
 	tc := oauth2.NewClient(ctx, ts)
 	client := github.NewClient(tc)
-	// repos := [...]string{"deploy-sourcegraph", "lang-typescript", "sourcegraph", "about", "go-langserver", "lang-go", "lang-python", "sourcegraph-basic-code-intel", "python-language-server"}
-	repos := [...]string{"lang-typescript", "sourcegraph", "about"}
+	repos := [...]string{"deploy-sourcegraph", "lang-typescript", "sourcegraph", "about", "go-langserver", "lang-go", "lang-python", "sourcegraph-basic-code-intel", "python-language-server"}
 
 	// Date of last release
 	fmt.Print("Last release date (yyyy-mm-dd): ")
@@ -117,8 +116,6 @@ func main() {
 				if _, ok := sourcegraphers[*pr.User.Login]; ok {
 					continue
 				}
-
-				fmt.Println(pr.CreatedAt)
 
 				contributors[*pr.User.Login] = IssueAuthorDetails{handle: *pr.User.Login, url: *pr.User.HTMLURL}
 			}
