@@ -18,13 +18,13 @@ Explore, navigate, and better understand all code, everywhere, faster with Sourc
 Precise code intelligence is now 35% faster than in 3.16. Automatic precise code intelligence (🧪 experimental feature) will bring precise results to more repositories faster.
 
 [**📊 Product preview: Code insights**](#product-preview-code-insights)<br />
-Understand high-level patterns of your code, and track code changes over time by aggregating data in Sourcegraph.
+Understand high-level patterns of your code and track code changes over time by aggregating data in Sourcegraph.
 
 [**💻 Sourcegraph developer features**](#sourcegraph-developer-features)<br />
-Introducing AND/OR queries for searching file contents, updating the Gitolite exclude pattern, and improving debugging.
+Introducing AND/OR queries for searching file contents.
 
 [**🛠 Sourcegraph admin features**](#sourcegraph-admin-features)<br />
-Easier alerting configuration, repository permission syncing on by default, and notifications when Sourcegraph is out-of-date.
+Easier alerting configuration, repository permission syncing on by default, updating the Gitolite exclude pattern, improved debugging, and notifications when Sourcegraph is out-of-date.
 
 [**📝 Changelog**](#changelog)<br />
 Every detail that changed in this release
@@ -89,15 +89,15 @@ For detailed technical information about recent performance boosts, [read the bl
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/user/code_intelligence/lsif) for eligible repositories based on their popularity, so that repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that does not require additional build steps and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
+An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/user/code_intelligence/lsif) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
 
-To see this experiment in action, pick a Go repository hosted on GitHub that has yet to be discovered. Possibly something useful with a passionate cult-following. Then, visit that repository in sourcegraph.com/search. After navigating through the code base after a while, you should see the hover tooltips and definition results become more accurate.
+To see this experiment in action, find a Go repository hosted on GitHub that has not been picked up by Sourcegraph. Then, visit that repository on sourcegraph.com/search. After navigating through the code base for a while, you should see the hover tooltips and definition results become more accurate.
 
 Currently, a repository will need 50 navigation events (hovers, jump to definition, find references) to trigger the auto-indexing procedure. We are continually tuning these heuristics to bring precise results to more repositories faster.
 
 ## Product preview: code insights
 
-The Sourcegraph developer team is prototyping code insights, which will help you answer questions you have about your code, including: 
+The Sourcegraph developer team is prototyping code insights, which will help you answer questions you have about your code, including:
 
    * [Code smells](https://martinfowler.com/bliki/CodeSmell.html) over time
    * Languages used at the organization
@@ -106,7 +106,7 @@ The Sourcegraph developer team is prototyping code insights, which will help you
    * Tracking a migration
    * Security anti-patterns
 
-Code insights helps developers be more productive and do their jobs better, and brings the data we have in Sourcegraph together.
+Code insights helps developers be more productive, do their jobs better, and utilize the data we have in Sourcegraph to better understand their code.
 
 We want to understand the bigger questions you have about your code base, and would love to hear from you! Please reach out at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) to talk to us.
 
@@ -118,9 +118,31 @@ We want to understand the bigger questions you have about your code base, and wo
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced AND and OR queries for file content for regexp and structural search modes as an experimental option. Sourcegraph 3.17 now introduces AND/OR queries for all modes (including the newly added literal search mode) and is on by default for all instances (no longer considered experimental).
+In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced AND/OR queries for file content in regexp and structural search modes as an experimental option. Sourcegraph 3.17 now introduces AND/OR queries for all modes (including the recently added literal search mode) and is on by default for all instances (no longer considered experimental).
 
 Initial support for query operators is for searching file contents. Operators for filters like `repo:` and `file:` will be supported in upcoming releases.
+
+## Sourcegraph admin features
+
+### Easier alerting configuration
+
+Easily configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
+
+```json
+"observability.alerts": {
+  "id": "my-alert",
+  "level": "critical",
+  "notifier": { "type": "slack", /* ... */ }
+}
+```
+
+For more information, see [https://docs.sourcegraph.com/admin/observability/alerting](https://docs.sourcegraph.com/admin/observability/alerting).
+
+### Repository permission syncing on by default
+
+Permission syncing are now on by default for GitHub, Bitbucket Server, and GitLab for any integration that is using permissions. Documentation: [https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing)
+
+Background permissions syncing becomes the default method to sync permissions from code hosts. Please [read our documentation for things to keep in mind before upgrading](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing). [#10972](https://github.com/sourcegraph/sourcegraph/pull/10972)
 
 ### Gitolite exclude pattern
 
@@ -129,9 +151,18 @@ The Gitolite `exclude` setting in the [Gitolite external service configuration](
 This is consistent with how we exclude in other external services, and is a replacement for the deprecated configuration.
 
 ```json
-
-TODO: Example config
-
+{
+   "exclude": [
+     // Exclude a single repository by name
+     {
+       "name": "github.com/my-team/repository-with-all-our-secrets"
+     },
+     // Exclude all repositories matching a regexp
+     {
+       "pattern": ".*/security-team/.*"
+     }
+   ]
+}
 ```
 
 ### Improved debugging experience
@@ -144,33 +175,6 @@ Recent alerts history is now included when filing a bug report from the report-a
 
 We have added experimental support for detecting if your instance is over or under-provisioned through a set of new dashboards and warning-level alerts.
 
-## Sourcegraph admin features
-
-### Easier alerting configuration
-
-Easily configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
-
-```json
-"observability.alerts": {
-
-  "id": "my-alert",
-
-  "level": "critical",
-
-  "notifier": { "type": "slack", /* ... */ }
-
-}
-```
-
-For more information, see [https://docs.sourcegraph.com/admin/observability/alerting](https://docs.sourcegraph.com/admin/observability/alerting).
-
-### Repository permission syncing on by default
-
-Permission syncing are now on by default for GitHub, Bitbucket Server, and GitLab for any integration that is using permissions. Documentation: [https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing)
-
-Background permissions syncing becomes the default method to sync permissions from code hosts. Please [read our documentation for things to keep in mind before upgrading](https://docs.sourcegraph.com/admin/repo/permissions#background-permissions-syncing). [#10972](https://github.com/sourcegraph/sourcegraph/pull/10972)
-
-
 ### Notifications when Sourcegraph is out of date
 
 Sourcegraph now shows update notifications to site admins (at 1 month out-of-date), and then to users (at 4 months out-of-date). This will help keep your Sourcegraph instance current with the latest bug fixes and security updates, as well as new features and functionalities. This will also ensure that you don’t run into issues due to running on a stale version.
@@ -179,11 +183,11 @@ These notifications start out as subtle informational alerts, and at 6+ months o
 
 ![container-monitoring](/blogposts/container_monitoring_sourcegraph.png "container-monitoring")
 
-#### Seeing 10x more code in your organization than 5 years ago?
+## Seeing 10x more code in your organization than 5 years ago?
 
 Are you dealing with more distributed teams and repositories, and different programming languages, services, and APIs?
 
-We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To get a copy, you will need to [fill this out](https://www.surveygizmo.com/s3/5628315/SG), but we promise it will only take between 5-10 min to complete!
+We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To recieve a copy of the results, you will need to [fill out this short survey](https://www.surveygizmo.com/s3/5628315/SG). We promise it will only take between 5-10 min to complete!
 
 ## Changelog
 
