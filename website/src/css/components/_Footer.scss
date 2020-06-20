@@ -1,14 +1,10 @@
 // stylelint-disable declaration-property-unit-whitelist
 .footer {
-    &__container {
-        max-width: var(--breakpoint-lg) !important;
-        padding-left: $navbar-nav-link-padding-x;
-        padding-right: $navbar-nav-link-padding-x;
-    }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(198, 198, 215, 0.8) 100%);
 
     &__nav-sections {
         .nav-item > a {
-            color: $white;
+            color: $dark;
             font-size: 0.9rem;
             padding: 0.25rem 0;
             display: inline-block;

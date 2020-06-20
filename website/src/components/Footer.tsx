@@ -3,7 +3,6 @@ import GitHubCircleIcon from 'mdi-react/GithubCircleIcon'
 import LinkedinIcon from 'mdi-react/LinkedinBoxIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
-import HubspotSubscribe from './Subscribe'
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
     <footer className="footer pt-6 pb-2">
@@ -11,7 +10,29 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
             {!minimal && (
                 <React.Fragment>
                     <div className="row footer__nav-sections">
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <div className="col-12 col-lg-3 mb-5">
+                            <Link to="/">
+                                <img className="mb-3" src="/sourcegraph-logo.svg" height="35" />
+                            </Link>
+                            <ul className="nav footer__social mt-1">
+                                <li className="nav-item">
+                                    <a href="https://github.com/sourcegraph" target="_blank">
+                                        <GitHubCircleIcon />
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="https://twitter.com/srcgraph" target="_blank">
+                                        <TwitterIcon />
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="https://www.linkedin.com/company/4803356/" target="_blank">
+                                        <LinkedinIcon />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3">
                             <h3 className="footer__nav-header">Why Sourcegraph?</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
@@ -25,7 +46,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3">
                             <h3 className="footer__nav-header">Resources</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
@@ -47,7 +68,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3">
                             <h3 className="footer__nav-header">Company</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
@@ -69,29 +90,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/jobs">Careers</Link>
                                 </li>
                             </ul>
-                        </div>
-                        <div className="col-12 col-lg-3 mb-5">
-                            <Link to="/">
-                                <img className="footer__logo" src="/sourcegraph/logo--light.svg" />
-                            </Link>
-                            <ul className="nav footer__social mt-1">
-                                <li className="nav-item">
-                                    <a href="https://github.com/sourcegraph" target="_blank">
-                                        <GitHubCircleIcon />
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://twitter.com/srcgraph" target="_blank">
-                                        <TwitterIcon />
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://www.linkedin.com/company/4803356/" target="_blank">
-                                        <LinkedinIcon />
-                                    </a>
-                                </li>
-                            </ul>
-                            <HubspotSubscribe></HubspotSubscribe>
                         </div>
                     </div>
                 </React.Fragment>

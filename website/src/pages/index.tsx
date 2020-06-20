@@ -205,43 +205,114 @@ export default ((props: any) => (
                     <img src="/screenshots/search-page-0.png" className="home__screenshot home__screenshot--nested" />
                 </div>
             </ContentSection>
-            <CustomerLogosSection className="py-5" />
-            <ContentSection className="py-6 mt-3 border-top border-bottom">
+            <CustomerLogosSection className="pt-5 pb-6 mb-2" />
+            <ContentSection className="py-4 border-top border-bottom">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-5">
                         <h2 className="display-3 font-weight-bold">Search your code. All of it.</h2>
                         <p>
                             Just point Sourcegraph at your repositories and code hosts&mdash;then start searching. Stay
                             in flow and find your answer quickly with with smart filters such as{' '}
                             <code className="border rounded px-1">Non-test files</code>,{' '}
                             <code className="border rounded px-1">lang:java</code>,{' '}
-                            <code className="border rounded px-1">repo:frontend</code>, and more. Stop
+                            <code className="border rounded px-1">repo:frontend</code>, and more. Stop{' '}
                             <code className="border rounded px-1">grep</code>'ing your stale local clones and fighting
                             with your code host's search to match &ldquo;special&rdquo; characters like{' '}
                             <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
                         </p>
+                        <div className="d-flex">
+                            Supports:{' '}
+                            <ul className="list-inline d-inline-flex ml-2 flex-wrap">
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">GitHub</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">GitHub Enterprise</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">GitLab</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Bitbucket Server</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Bitbucket Cloud</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Phabricator</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">AWS CodeCommit</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Azure DevOps</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Perforce</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Mercurial</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Subversion</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">CVS</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">TFS</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Gitea</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Gerrit</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">cgit</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Ridiculously big monorepos</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">500,000+ repositories</code>
+                                </li>
+                                <li className="list-inline-item text-nowrap">
+                                    <code className="border rounded px-1">Any combo of these</code>
+                                </li>
+                                <li className="d-block">
+                                    <a href="#" className="small text-muted">
+                                        Have a repository not covered here?
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="TODO(sqs)">
                                 Learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
-                                {/* TODO(sqs) */}
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-5">
                         <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
             </ContentSection>
-            <IntegratesWithSection className="pt-5 pb-4" />
-            <Jumbotron
-                color="purple"
-                className="py-4"
-                title="Try Sourcegraph now"
-                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search."
-                logomark={false}
-            >
-                <GetSourcegraphNowActions />
-            </Jumbotron>
+            <div className="container">
+                <IntegratesWithSection className="pt-5 pb-4" />
+            </div>
+            <ContentSection className="py-6 border-top mb-6">
+                <div className="row">
+                    <div className="col-md-6 mt-4 pr-5">
+                        <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today.</h3>
+                        <p>You'll be searching your own code in 10 minutes (self-hosted if you want).</p>
+                    </div>
+                    <div className="col-mb-6 mt-4 pt-3">
+                        <button className="btn btn-outline-secondary mr-2">Schedule a demo</button>
+                        <button className="btn btn-primary">Try Sourcegraph now</button>
+                    </div>
+                </div>
+            </ContentSection>
         </div>
     </Layout>
 )) as React.FunctionComponent<any>
