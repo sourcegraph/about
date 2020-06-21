@@ -1,7 +1,10 @@
 .home {
+    &__semiwide-paragraph {
+        max-width: 40rem;
+    }
+
     &__intro {
         &-text {
-            max-width: 36rem;
             font-weight: $font-weight-light;
             strong {
                 font-weight: $font-weight-base;

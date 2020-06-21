@@ -20,114 +20,7 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 
-const testimonials: Testimonial[] = [
-    {
-        customer: 'Lyft',
-        logo: '/external-logos/lyft-logo.svg',
-        quote:
-            'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition.',
-        author: {
-            name: 'Justin Phillips',
-            title: 'Software Engineer',
-            image: '/case-studies/justin-phillips-lyft.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/lyft-monolith-to-microservices',
-        },
-    },
-    {
-        customer: 'Yelp',
-        logo: '/external-logos/yelp.svg',
-        quote: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
-        author: {
-            name: 'Kevin Chen',
-            title: 'Software Engineer',
-            image: '/case-studies/kevin-chen-yelp.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
-            target: '_blank',
-            rel: 'nofollow',
-        },
-    },
-    {
-        customer: 'SoFi',
-        logo: '/external-logos/sofi-logo-white.png',
-        quote:
-            'With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
-        author: {
-            name: 'Ursula Robertson',
-            title: 'Engineering Manager',
-            image: '/case-studies/ursula-robertson-sofi.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
-        },
-    },
-    {
-        customer: 'Quantcast',
-        logo: '/external-logos/quantcast-logo-white.svg',
-        quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
-        author: {
-            name: 'Simon Law',
-            title: 'Staff Software Engineer',
-            image: '/case-studies/simon-law-quantcast.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/quantcast-large-scale-refactoring',
-        },
-    },
-    {
-        customer: 'Convoy',
-        logo: '/external-logos/convoy-logo-white.svg',
-        quote:
-            'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
-        author: {
-            name: 'Brandon Bloom',
-            title: 'Senior Software Engineer',
-            image: '/case-studies/brandon-bloom-convoy.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/convoy-improved-on-boarding',
-        },
-    },
-    {
-        customer: 'Thorn',
-        logo: '/case-studies/thorn-logo.png',
-        quote:
-            'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
-        author: {
-            name: 'Jacob Gillespie',
-            title: 'Software Engineer',
-            image: '/case-studies/jacob-gillespie-thorn-square.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/we-are-thorn',
-        },
-    },
-    {
-        customer: 'Convoy',
-        logo: '/external-logos/convoy-logo-white.svg',
-        quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
-        author: {
-            name: 'Owen Kim',
-            title: 'Senior Software Engineer',
-            image: '/case-studies/owen-kim-convoy.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/convoy-software-engineers-and-data-scientists-work-better-together',
-        },
-    },
-]
-
-export default ((props: any) => (
+const Index: React.FunctionComponent = (props: any) => (
     <Layout
         location={props.location}
         meta={{
@@ -154,7 +47,7 @@ export default ((props: any) => (
                         <div className="col mt-6 mb-6 mb-lg-0">
                             <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
                             <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
-                            <p className="home__intro-text my-5 font-weight-light">
+                            <p className="home__semiwide-paragraph my-5">
                                 Find and fix things across all of your code much faster. Sourcegraph helps you onboard
                                 to a new codebase, make large-scale refactors, find and fix insecure code, root-cause
                                 incidents, and more.
@@ -211,27 +104,12 @@ export default ((props: any) => (
             </div>
 
             <div className="container">
-                <h2 className="display-3 font-weight-bold">Search is</h2>
+                <h2 className="display-3 font-weight-bold">Solve big problems for your team with Sourcegraph.</h2>
+                <p className="home__semiwide-paragraph my-5">
+                    Developers say they <a href="#TODO(sqs)">&ldquo;can't live without Sourcegraph&rdquo;</a>,
+                </p>
             </div>
 
-            <ContentSection className="mb-6">
-                <h2></h2>
-                <div className="row">
-                    <div className="col-lg-5 mt-5">
-                        <h3>Onboard to a new codebase faster.</h3>
-                        <p>Code is complex.</p>
-                        <div className="pt-1">
-                            <Link className="d-flex align-items-center" to="TODO(sqs)">
-                                How Convoy's developers onboard faster with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
-                    </div>
-                </div>
-            </ContentSection>
             <ContentSection className="py-6 border-top mb-6">
                 <div className="row">
                     <div className="col-lg-6">
@@ -306,4 +184,6 @@ export default ((props: any) => (
             </ContentSection>
         </div>
     </Layout>
-)) as React.FunctionComponent<any>
+)
+
+export default Index

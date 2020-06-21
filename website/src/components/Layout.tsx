@@ -16,6 +16,12 @@ interface LayoutProps {
     }
     children: React.ReactNode
     minimal?: boolean
+
+    hero?: React.ReactFragment
+    heroAndHeaderClassName?: string
+
+    darkBackground?: boolean
+    className?: string
 }
 
 export default class Layout extends React.PureComponent<LayoutProps> {
@@ -34,7 +40,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         const metaProps = { ...defaultMetaProps, ...this.props.meta }
 
         return (
-            <div className="flex flex-column fill-height">
+            <div className={`flex flex-column fill-height ${this.props.className || ''}`}>
                 <Helmet>
                     <title>{metaProps.title}</title>
                     <meta name="twitter:title" content={metaProps.title} />
@@ -59,13 +65,16 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                         rel="stylesheet"
                     />
                 </Helmet>
-                <Header
-                    isHome={isHome}
-                    isBlog={isBlog}
-                    isProductPage={isProductPage}
-                    minimal={this.props.minimal}
-                    className="mt-4"
-                />
+                <div className={this.props.heroAndHeaderClassName}>
+                    <Header
+                        isHome={isHome}
+                        isBlog={isBlog}
+                        isProductPage={isProductPage}
+                        minimal={this.props.minimal}
+                        className="pt-4"
+                    />
+                    {this.props.hero}
+                </div>
                 <section className="d-flex flex-column fill-height">{this.props.children}</section>
                 <Footer minimal={this.props.minimal} />
             </div>

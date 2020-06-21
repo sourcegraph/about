@@ -53,7 +53,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
-                                                to="/universal-code-search"
+                                                to="/customers"
                                                 activeClassName="header__nav-link-active"
                                             >
                                                 Customers
@@ -62,7 +62,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
-                                                to="/pricing"
+                                                to="/integrations"
                                                 activeClassName="header__nav-link-active"
                                             >
                                                 Integrations
@@ -79,7 +79,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
-                                                to="/about"
+                                                to="/pricing"
                                                 activeClassName="header__nav-link-active"
                                             >
                                                 Pricing
