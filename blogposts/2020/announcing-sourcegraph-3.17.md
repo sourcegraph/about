@@ -166,7 +166,7 @@ This is consistent with how we exclude in other external services, and is a repl
 
 A unified set of container metrics, compatible across both Kubernetes and Docker Compose deployment types, provides the following information about containers through Grafana dashboards and alerting in both deployment types:
 
-![admin-notifications](/blog/3-17-admin_notifications_sourcegraph.png "admin-notifications")
+![container-monitoring](/blog/3-17-container_monitoring_sourcegraph.png "container-monitoring")
 
 Recent alerts history is now included when filing a bug report from the report-a-bug-page (for example, [https://sourcegraph.example.com/site-admin/report-bug](https://sourcegraph.example.com/site-admin/report-bug)) to better enable us to diagnose issues.
 
@@ -178,7 +178,7 @@ Sourcegraph now shows update notifications to site admins (at 1 month out-of-dat
 
 These notifications start out as subtle informational alerts, and at 6+ months out-of-date, they will appear as red dismissible banners:
 
-![container-monitoring](/blog/3-17-container_monitoring_sourcegraph.png "container-monitoring")
+![admin-notifications](/blog/3-17-admin_notifications_sourcegraph.png "admin-notifications")
 
 ### Seeing 10x more code in your organization than 5 years ago?
 
