@@ -32,10 +32,10 @@ export default ((props: any) => (
         <div className="container mt-5">
             <div className="row">
                 <div className="col-lg-6">
-                    <h1 className="display-1 font-weight-bold">Get started</h1>
+                    <h1 className="display-1 font-weight-bold">Get started with Sourcegraph</h1>
 
-                    <h2 className="display-4 font-weight-bold">Quickstart (self-hosted)</h2>
-                    <p>Run this to launch Sourcegraph on your local machine. All of your code stays local.</p>
+                    <h2 className="h5 mt-4">Quickstart</h2>
+                    <p>Run this to launch Sourcegraph on your local machine:</p>
                     <pre
                         className="code border bg-light p-2 mb-0"
                         style={{ whiteSpace: 'pre-wrap', fontSize: '0.8rem' }}
@@ -49,19 +49,23 @@ export default ((props: any) => (
                         </code>
                     </pre>
 
-                    <h2 className="h5 mt-4">All deployment options</h2>
+                    <h2 className="h5 mt-4">Deploy to a server or cluster</h2>
                     <p>
-                        <a href="https://docs.sourcegraph.com" className="d-flex align-items-center py-1 mt-1">
-                            Documentation <ExternalLinkIcon className="icon-inline ml-1 small" />
-                        </a>
+                        See{' '}
+                        <a href="https://docs.sourcegraph.com" className="d-inline-flex align-items-center py-1 mt-1">
+                            deployment documentation
+                        </a>{' '}
+                        for information about Docker deployments, Kubernetes clusters, and other clusters.
                     </p>
 
                     <h2 className="h5 mt-4">Want help?</h2>
                     <div className="pt-1">
-                        <button className="btn btn-sm btn-outline-secondary">
+                        <button className="btn btn-sm btn-outline-primary">
                             Schedule time with a Sourcegraph engineer
                         </button>
-                        <br />
+                        <a href="https://docs.sourcegraph.com" className="d-flex align-items-center py-1 mt-1">
+                            Docs <ExternalLinkIcon className="icon-inline ml-1 small" />
+                        </a>
                     </div>
 
                     <hr className="my-5" />
