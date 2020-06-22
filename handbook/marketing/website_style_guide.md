@@ -1,6 +1,6 @@
 # Web style guide
 
-<link rel="stylesheet" type="text/css" href="/assets/about-style-guide.css?v=015" />
+<link rel="stylesheet" type="text/css" href="/assets/about-style-guide.css?v=016" />
 Sourcegraph uses the following styles on <a href="https://about.sourcegraph.com">about.sourcegraph.com</a>.
 
 ## Logos
@@ -15,7 +15,7 @@ Sourcegraph logo
 Sourcegraph wordmark reverse logo
 <a href="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.svg">SVG</a> | <a href="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.png">PNG</a> | <a href="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.eps">EPS</a>
 
-<img src="/assets/sourcegraph-mark.png">
+<img class="logomark" src="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-logomark.svg">
 
 Sourcegraph logomark
 <a href="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-logomark.svg">SVG</a> | <a href="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-logomark.png">PNG</a> | <a href="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-logomark.eps">EPS</a>
@@ -34,7 +34,7 @@ Sourcegraph logomark
 ### Paragraph
 
 <div class="typ">
-    <p>Open Sans.  Sagan Ipsum. Light years hearts of the stars Cambrian explosion laws of physics a mote of dust suspended in a sunbeam a still more glorious dawn awaits. Orion's sword the carbon in our apple pies Apollonius of Perga the only home we've ever known star stuff harvesting star light the sky calls to us. Bits of moving fluff a mote of dust suspended in a sunbeam tingling of the spine another world not a sunrise but a galaxyrise bits of moving fluff and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+    <p>Open Sans, 16px.  Sagan Ipsum. Light years hearts of the stars Cambrian explosion laws of physics a mote of dust suspended in a sunbeam a still more glorious dawn awaits. Orion's sword the carbon in our apple pies Apollonius of Perga the only home we've ever known star stuff harvesting star light the sky calls to us. Bits of moving fluff a mote of dust suspended in a sunbeam tingling of the spine another world not a sunrise but a galaxyrise bits of moving fluff and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
 </div>
 
 ## Colors
