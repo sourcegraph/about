@@ -32,6 +32,10 @@ const ITEMS: (
         },
     },
     {
+        name: 'Amazon',
+        url: '/external-logos/amazon-logo.svg',
+    },
+    {
         name: 'Qualtrics',
         url: '/external-logos/qualtrics-logo.svg',
     },
