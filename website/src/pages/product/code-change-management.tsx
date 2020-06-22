@@ -19,7 +19,7 @@ import {
     RequestCodeChangeManagementDemoActionNow,
 } from '../../css/components/actions/RequestDemoAction'
 
-const pagetitle = 'Sourcegraph - Code change management'
+const pageTitle = 'Sourcegraph - Code change management'
 const description =
     'Run code change campaigns to remove legacy code, fix critical security issues, and pay down tech debt. Compute changes, create branches, and track pull requests across all affected repositories.'
 
@@ -55,9 +55,9 @@ export const CampaignsTable: React.FunctionComponent<{
 export default ((props: any) => (
     <Layout location={props.location}>
         <Helmet>
-            <title>{pagetitle}</title>
-            <meta name="twitter:title" content={pagetitle} />
-            <meta property="og:title" content={pagetitle} />
+            <title>{pageTitle}</title>
+            <meta name="twitter:title" content={pageTitle} />
+            <meta property="og:title" content={pageTitle} />
             <meta name="twitter:site" content="@srcgraph" />
             <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
             <meta name="twitter:card" content="summary" />

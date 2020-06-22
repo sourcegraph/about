@@ -19,15 +19,15 @@ import { SupportedProgrammingLanguagesLink } from '../../components/product/Supp
 import { YouTube } from '../../components/YouTube'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
 
-const pagetitle = 'Sourcegraph - Code intelligence'
+const pageTitle = 'Sourcegraph - Code intelligence'
 const description = 'Use Sourcegraph to find answers faster, with inline contextual information around code.'
 
 export default ((props: any) => (
     <Layout location={props.location}>
         <Helmet>
-            <title>{pagetitle}</title>
-            <meta name="twitter:title" content={pagetitle} />
-            <meta property="og:title" content={pagetitle} />
+            <title>{pageTitle}</title>
+            <meta name="twitter:title" content={pageTitle} />
+            <meta property="og:title" content={pageTitle} />
             <meta name="twitter:site" content="@srcgraph" />
             <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
             <meta name="twitter:card" content="summary" />
