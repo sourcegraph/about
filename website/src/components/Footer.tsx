@@ -56,9 +56,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/blog">Blog</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/events">Events</Link>
-                                </li>
-                                <li className="nav-item">
                                     <Link to="/podcast">Podcast</Link>
                                 </li>
                             </ul>
