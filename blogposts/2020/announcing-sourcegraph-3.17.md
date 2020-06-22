@@ -35,15 +35,6 @@ Sourcegraph couldn't be what it is without the community.
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-<div class="alert alert-info">
-  <p>
-    <strong>LEARN MORE:</strong><br />
-    <a href="https://info.sourcegraph.com/online-meetup-june25?utm_source=blog">
-      Online meetup: Sourcegraph 3.17 - Thursday, June 25 at 10AM PDT
-    </a>
-  </p>
-  </div>
-
 ---
 
 ## Faster and automatic precise code intelligence
