@@ -184,7 +184,7 @@ These notifications start out as subtle informational alerts, and at 6+ months o
 
 Are you dealing with more distributed teams and repositories, and different programming languages, services, and APIs?
 
-We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To recieve a copy of the results, you will need to [fill out this short survey](https://www.surveygizmo.com/s3/5628315/SG). We promise it will only take between 5-10 min to complete!
+We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To receive a copy of the results, you will need to [fill out this short survey](https://www.surveygizmo.com/s3/5628315/SG). We promise it will only take between 5-10 min to complete!
 
 ## Changelog
 
