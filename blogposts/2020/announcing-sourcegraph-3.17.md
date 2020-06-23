@@ -10,30 +10,31 @@ heroImage: /blog/3.17-release-blog-img.jpg
 published: true
 ---
 
-Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Yelp, Nutanix, Tinder, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
+Explore, navigate, and understand all code, everywhere, faster with Sourcegraph Universal Code Search.
 
 <div style="padding-left: 2rem">
 
 [**🧠 Faster and automatic precise code intelligence**](#faster-and-automatic-precise-code-intelligence)<br />
-Precise code intelligence is now 35% faster than in 3.16. Automatic precise code intelligence (🧪 experimental feature) will bring precise results to more repositories faster.
+Precise code intelligence is now 35% faster than in 3.16. The experimental feature of automatic precise code intelligence will bring precise results to more repositories faster.
 
 [**📊 Product preview: Code insights**](#product-preview-code-insights)<br />
 Answer high-level questions about your codebase and track changes over time by aggregating data in Sourcegraph.
 
 [**🔎 Introducing AND/OR operators for code search**](#introducing-andor-operators-for-code-search)<br />
+AND/OR queries are included in the recently added literal search mode, and enabled for all users (no longer considered experimental).
 
 [**🛠 Sourcegraph admin features**](#sourcegraph-admin-features)<br />
-Easier alerting configuration, repository permission syncing on by default, updating the Gitolite exclude pattern, improved debugging, and notifications when Sourcegraph is out-of-date.
+Easier alerting configuration, default repository permission syncing, updated Gitolite exclude pattern, improved debugging, and out-of-date notifications.
 
 [**📝 Changelog**](#changelog)<br />
-Every detail that changed in this release
+Includes every detail that changed in this release.
 
 [**🎖️ Thank you**](#thank-you)<br />
-Sourcegraph couldn't be what it is without the community.
+Sourcegraph couldn't be what it is without our contributors.
 
 </div>
 
-[**Install Sourcegraph 3.17**](https://docs.sourcegraph.com/admin/install) or [upgrade to Sourcegraph 3.17](https://docs.sourcegraph.com/admin/updates).
+[**Install Sourcegraph 3.17**](https://docs.sourcegraph.com/admin/install) or [update to Sourcegraph 3.17](https://docs.sourcegraph.com/admin/updates).
 
 ---
 
@@ -81,7 +82,7 @@ For detailed technical information about recent performance boosts, [read the bl
 
 An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/user/code_intelligence/lsif) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
 
-To see this experiment in action, find a Go repository hosted on GitHub that has not been picked up by Sourcegraph. Then, visit that repository on sourcegraph.com/search. After navigating through the code base for a while, you should see the hover tooltips and definition results become more accurate.
+To see this experiment in action, find a Go repository hosted on GitHub that has not been picked up by Sourcegraph. Then, visit that repository on [sourcegraph.com/search](https://sourcegraph.com/search). After navigating through the codebase for a while, you should see the hover tooltips and definition results become more accurate.
 
 Currently, a repository will need 50 navigation events (hovers, jump to definition, find references) to trigger the auto-indexing procedure. We are continually tuning these heuristics to bring precise results to more repositories faster.
 
@@ -91,7 +92,7 @@ Currently, a repository will need 50 navigation events (hovers, jump to definiti
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-The Sourcegraph team is prototyping code insights to help you answer high-level questions about your code. Code insights can use Sourcegraph search, code intelligence or even external services to give you the information **you** care about. Example insights include:
+The Sourcegraph team is developing code insight functionality to help you answer high-level questions about your code. Code insights can use Sourcegraph code search, code intelligence, or even external services to give you the information **you** care about. Example insights include:
 
    * [Code smells](https://martinfowler.com/bliki/CodeSmell.html) over time
    * Languages and technologies used at your organization
@@ -100,7 +101,7 @@ The Sourcegraph team is prototyping code insights to help you answer high-level 
    * Tracking a migration
    * Security anti-patterns
 
-We would love to learn the big questions you have about your code base! Share them with us in this [quick code insights survey](https://forms.gle/yipcyJezGxwmFSZc9) or email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
+We would love to learn the big questions you have about your codebase! Share them with us in this [quick code insights survey](https://forms.gle/yipcyJezGxwmFSZc9) or email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
 ## Introducing AND/OR operators for code search
 
@@ -108,15 +109,15 @@ We would love to learn the big questions you have about your code base! Share th
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced experimental AND/OR queries for file content in regexp and structural search modes. Sourcegraph 3.17 adds AND/OR queries to the recently added literal search mode, and is enabled for all users (no longer considered experimental).
+In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced experimental AND/OR queries for file content in regular expressions and structural search modes. Now in Sourcegraph 3.17, AND/OR queries are included in the recently added literal search mode, and enabled for all users (no longer considered experimental).
 
-Initial support of AND/OR operators is for searching file contents. Operators for filters like `repo:` and `file:` will be supported in upcoming releases.
+Initially, AND/OR operators support searching file contents. Operators for filters like `repo:` and `file:` will be supported in upcoming releases.
 
 ## Sourcegraph admin features
 
 ### Easier alerting configuration
 
-Easily configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
+Configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
 
 ```json
 "observability.alerts": {
@@ -242,7 +243,7 @@ A big thank you to everyone who contributed to Sourcegraph since the last releas
 - [@aisbaa](https://github.com/aisbaa)
 - [@chunliu](https://github.com/chunliu)
 
-[**Install Sourcegraph 3.17**](https://docs.sourcegraph.com/admin/install) or [upgrade to Sourcegraph 3.17](https://docs.sourcegraph.com/admin/updates).
+[**Install Sourcegraph 3.17**](https://docs.sourcegraph.com/admin/install) or [update to Sourcegraph 3.17](https://docs.sourcegraph.com/admin/updates).
 
 ## Share your feedback
 
