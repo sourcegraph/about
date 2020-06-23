@@ -242,11 +242,11 @@ A big thank you to everyone who contributed to Sourcegraph since the last releas
 - [@aisbaa](https://github.com/aisbaa)
 - [@chunliu](https://github.com/chunliu)
 
-**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
+[**Install Sourcegraph 3.17**](https://docs.sourcegraph.com/admin/install) or [upgrade to Sourcegraph 3.17](https://docs.sourcegraph.com/admin/updates).
 
 ## Share your feedback
 
-We want to hear what you think about Sourcegraph and the new updates in 3.16. Post on Twitter (remember to include ([@srcgraph](https://twitter.com/srcgraph)) and we'll send you Sourcegraph swag!
+We want to hear what you think about Sourcegraph and the new updates in 3.17. Post on Twitter (remember to include ([@srcgraph](https://twitter.com/srcgraph)) and we'll send you Sourcegraph swag!
 
 Any questions about Sourcegraph? Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com). We look forward to hearing from you!
 
