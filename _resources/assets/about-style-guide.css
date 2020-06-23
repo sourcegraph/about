@@ -1,0 +1,56 @@
+.typ h2,
+.typ h3,
+.typ h4,
+.typ p {
+  font-family: Open Sans;
+  border: none;
+}
+.typ h1 {
+  font-size: 54px;
+  border: none;
+}
+.typ h2 {
+  font-size: 32px;
+}
+.typ h3 {
+  font-size: 28px;
+}
+.typ h4 {
+  font-size: 24px;
+}
+.mark,
+.mark-rev {
+  width: 300px;
+}
+.logomark {
+  width: 200px;
+}
+.mark-rev {
+  background-color: #000 !important;
+  padding: 5px 5px;
+}
+.square {
+  width: 15%;
+  padding-bottom: 5%;
+  position: relative;
+}
+.blue {
+  background-color: #0fb6f2;
+}
+.purple {
+  background-color: #b114f7;
+}
+.orange {
+  background-color: #f86012;
+}
+button {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #0a65ea;
+  border-color: #0a65ea;
+  padding: 0.55rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.125rem;
+}
