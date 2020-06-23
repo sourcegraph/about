@@ -104,16 +104,33 @@ const Index: React.FunctionComponent = (props: any) => (
             </div>
 
             <div className="container">
-                <h2 className="display-3 font-weight-bold">Solve big problems for your team with Sourcegraph.</h2>
-                <p className="home__semiwide-paragraph my-5">
-                    Developers say they <a href="#TODO(sqs)">&ldquo;can't live without Sourcegraph&rdquo;</a>,
-                </p>
+                <h2 className="display-2 font-weight-bold">How developers use Sourcegraph</h2>
+                <div className="row">
+                    <div className="col-lg-6 mt-lg-0">
+                        <p className="my-5">
+                            Sourcegraph is built by developers, for developers. Naturally, we get a lot of feedback from
+                            developers and software teams who use Sourcegraph many times per day. Here's how they're
+                            using it.
+                        </p>
+                    </div>
+                    <div className="col-lg-6 mt-2 mt-lg-4">
+                        <div className="card pt-0" style={{ background: "url('/customers-page-bg.svg') no-repeat" }}>
+                            <strong className="card-header border-0 pb-0">Want to use Sourcegraph at work?</strong>
+                            <p className="card-body mb-0 pt-1">
+                                <Link to="/get-started">Use it free</Link> for up to 10 developers. To get your company
+                                to upgrade to a <Link to="/pricing">paid plan</Link>, see the{' '}
+                                <Link to="/customers">customers page</Link> (to make the case). Or{' '}
+                                <a href="#">schedule time with us</a> for help.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <ContentSection className="py-6 border-top mb-6">
+            <ContentSection className="my-6">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h2>TODO(sqs): make large-scale code changes.</h2>
+                        <h2>TODO code search</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
                             dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
@@ -130,10 +147,13 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="py-6 border-top mb-6">
+            <ContentSection className="my-6">
                 <div className="row">
-                    <div className="col-lg-6">
-                        <h2>Fix critical security problems in code. In hours, not weeks.</h2>
+                    <div className="col-lg-7">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    </div>
+                    <div className="col-lg-5">
+                        <h2>TODO code navigation</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
                             dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
@@ -145,15 +165,12 @@ const Index: React.FunctionComponent = (props: any) => (
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
-                    </div>
                 </div>
             </ContentSection>
-            <ContentSection className="py-6 border-top mb-6">
+            <ContentSection className="py-6 mb-6">
                 <div className="row">
-                    <div className="col-lg-6">
-                        <h2>Find the root cause of an incident in 30% less time.</h2>
+                    <div className="col-lg-5">
+                        <h2>TODO code review and code host integrations</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
                             dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
@@ -165,18 +182,62 @@ const Index: React.FunctionComponent = (props: any) => (
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-7">
                         <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="py-6 border-top mb-6">
+            <ContentSection className="my-6">
+                <div className="row">
+                    <div className="col-lg-7">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    </div>
+                    <div className="col-lg-5">
+                        <h2>TODO campaigns</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
+                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
+                            sagittis sem, eu maximus libero.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+            <ContentSection className="py-6 mb-6">
+                <div className="row">
+                    <div className="col-lg-5">
+                        <h2>TODO code insights</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
+                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
+                            sagittis sem, eu maximus libero.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-7">
+                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    </div>
+                </div>
+            </ContentSection>
+
+            <ContentSection className="py-6 mb-6">
                 <div className="row">
                     <div className="col-md-6 mt-4 pr-5">
                         <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today.</h3>
-                        <p>You'll be searching your own code in 10 minutes (self-hosted if you want).</p>
+                        <p>
+                            You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your
+                            code stays local and secure).
+                        </p>
                     </div>
-                    <div className="col-mb-6 mt-4 pt-3">
+                    <div className="col-md-6 mt-4 pt-3 text-right">
                         <button className="btn btn-outline-secondary mr-2">Schedule a demo</button>
                         <button className="btn btn-primary">Try Sourcegraph now</button>
                     </div>
