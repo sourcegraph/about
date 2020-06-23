@@ -33,7 +33,7 @@ Sourcegraph couldn't be what it is without the community.
 
 </div>
 
-**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
+[**Install Sourcegraph 3.17**](https://docs.sourcegraph.com/admin/install) or [upgrade to Sourcegraph 3.17](https://docs.sourcegraph.com/admin/updates).
 
 ---
 
