@@ -10,7 +10,7 @@ heroImage: /blog/3.17-release-blog-img.jpg
 published: true
 ---
 
-Explore, navigate, and understand all code, everywhere, faster with Sourcegraph Universal Code Search.
+We've shipped Sourcegraph 3.17 with many improvements to help you explore, navigate, and understand your code with universal code search:
 
 <div style="padding-left: 2rem">
 
@@ -18,9 +18,9 @@ Explore, navigate, and understand all code, everywhere, faster with Sourcegraph 
 Precise code intelligence is now 35% faster than in 3.16. The experimental feature of automatic precise code intelligence will bring precise results to more repositories faster.
 
 [**📊 Product preview: Code insights**](#product-preview-code-insights)<br />
-Answer high-level questions about your codebase and track changes over time by aggregating data in Sourcegraph.
+Answer high-level questions about your codebase and track changes over time by aggregating data in Sourcegraph (experimental).
 
-[**🔎 Introducing AND/OR operators for code search**](#introducing-andor-operators-for-code-search)<br />
+[**🔎 AND/OR operators for code search**](#introducing-andor-operators-for-code-search)<br />
 AND/OR queries are included in the recently added literal search mode, and enabled for all users (no longer considered experimental).
 
 [**🛠 Sourcegraph admin features**](#sourcegraph-admin-features)<br />
@@ -86,7 +86,7 @@ To see this experiment in action, find a Go repository hosted on GitHub that has
 
 Currently, a repository will need 50 navigation events (hovers, jump to definition, find references) to trigger the auto-indexing procedure. We are continually tuning these heuristics to bring precise results to more repositories faster.
 
-## Product preview: code insights
+## Product preview: Code insights
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
@@ -103,7 +103,7 @@ The Sourcegraph team is developing code insight functionality to help you answer
 
 We would love to learn the big questions you have about your codebase! Share them with us in this [quick code insights survey](https://forms.gle/yipcyJezGxwmFSZc9) or email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
-## Introducing AND/OR operators for code search
+## AND/OR operators for code search
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
@@ -174,9 +174,7 @@ These notifications start out as subtle informational alerts, and at 6+ months o
 
 ### Seeing 10x more code in your organization than 5 years ago?
 
-Are you dealing with more distributed teams and repositories, and different programming languages, services, and APIs?
-
-We call this the Big Code problem. We’re conducting a survey of Sourcegraph users to understand how big of a problem this is for your organization. To receive a copy of the results, you will need to [fill out this short survey](https://www.surveygizmo.com/s3/5628315/SG). We promise it will only take between 5-10 min to complete!
+We are running a [survey](https://www.surveygizmo.com/s3/5628315/SG) to understand how companies are dealing with massive amounts of code (aka Big Code).
 
 ## Changelog
 
