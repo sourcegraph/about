@@ -72,8 +72,6 @@ We’ve also poured some love into the on-disk format of precise code intel bund
 
 We plan to continue on this path of performance improvements, and the next release will focus on processing multiple bundles concurrently in order to multiply the benefit of this release’s raw latency gains.
 
-For detailed technical information about recent performance boosts, [read the blog post](https://about.sourcegraph.com/blog/performance-improvements-in-precise-code-intel) on performance improvements for precise code intelligence.
-
 ### Automatic precise code intelligence
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
