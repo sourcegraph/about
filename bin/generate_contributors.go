@@ -58,8 +58,6 @@ func main() {
 
 	// First print via repo
 	for _, repo := range repos {
-		page = 0
-
 		// Get all issue contributors
 		findIssues: for {
 			opts := &github.IssueListByRepoOptions{Since: issueDate, ListOptions: github.ListOptions{PerPage: 100, Page: page}}
