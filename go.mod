@@ -4,6 +4,7 @@ go 1.13
 
 require (
 	github.com/google/go-github v17.0.0+incompatible
+	github.com/google/go-github/v31 v31.0.0
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/sourcegraph/docsite v1.4.0 // indirect
 	golang.org/x/net v0.0.0-20191119073136-fc4aabc6c914 // indirect
