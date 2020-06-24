@@ -17,18 +17,9 @@ import (
 	"golang.org/x/oauth2"
 )
 
-type IssueAuthorDetails struct {
+type ContributorDetails struct {
 	handle string
 	url    string
-}
-
-func MapUsers(vs []*github.User, f func(*github.User) string) map[string]string {
-    vsm := make(map[string]string)
-    for _, v := range vs {
-		u := f(v)
-		vsm[u] = ""
-    }
-    return vsm
 }
 
 func main() {
@@ -53,23 +44,24 @@ func main() {
 
 	// Get members of our team
 	teamOpt := &github.TeamListTeamMembersOptions{Role: "all", ListOptions: github.ListOptions{PerPage: 100, Page: 1}}
-	sourcegraphTeam, _, err := client.Teams.ListTeamMembersBySlug(ctx, "sourcegraph", "everyone", teamOpt)
+	sourcegraphTeamMembers, _, err := client.Teams.ListTeamMembersBySlug(ctx, "sourcegraph", "everyone", teamOpt)
 
-	getUsername := func(m *github.User) string {
-		return *m.Login
+	// Extract teammate usernames
+	sourcegraphUsernames := make(map[string]struct{}, len(sourcegraphTeamMembers))
+
+	for _, m := range sourcegraphTeamMembers {
+		sourcegraphUsernames[*m.Login] = struct{}{}
 	}
 
-	sourcegraphers := MapUsers(sourcegraphTeam, getUsername)
-	contributors := make(map[string]IssueAuthorDetails)
+	contributors := make(map[string]ContributorDetails)
 	page := 0
-	prRangeOk := true
 
 	// First print via repo
 	for _, repo := range repos {
 		page = 0
 
 		// Get all issue contributors
-		for page < 15 {
+		findIssues: for {
 			opts := &github.IssueListByRepoOptions{Since: issueDate, ListOptions: github.ListOptions{PerPage: 100, Page: page}}
 			issues, _, err := client.Issues.ListByRepo(ctx, "sourcegraph", repo, opts)
 			if err != nil {
@@ -78,24 +70,23 @@ func main() {
 			}
 
 			if len(issues) == 0 {
-				break
+				break findIssues
 			}
 
 			for _, issue := range issues {
-				if _, ok := sourcegraphers[*issue.User.Login]; ok {
+				if _, ok := sourcegraphUsernames[*issue.User.Login]; ok {
 					continue
 				}
 
-				contributors[*issue.User.Login] = IssueAuthorDetails{handle: *issue.User.Login, url: *issue.User.HTMLURL}
+				contributors[*issue.User.Login] = ContributorDetails{handle: *issue.User.Login, url: *issue.User.HTMLURL}
 			}
 			page++
 		}
 
 		// Get all created PR contributors
-		prRangeOk = true
 		page = 0
 
-		for page < 15 && prRangeOk{
+		findPrs: for {
 			repoOpts := &github.PullRequestListOptions{State: "all", ListOptions: github.ListOptions{PerPage: 100, Page: page}}
 			prs, _, err := client.PullRequests.List(ctx, "sourcegraph", repo, repoOpts)
 			if err != nil {
@@ -104,20 +95,19 @@ func main() {
 			}
 
 			if len(prs) == 0 {
-				break
+				break findPrs
 			}
 
 			for _, pr := range prs {
 				
 				if pr.CreatedAt.Before(issueDate) {
-					prRangeOk = false
-					break
+					break findPrs
 				}
-				if _, ok := sourcegraphers[*pr.User.Login]; ok {
+				if _, ok := sourcegraphUsernames[*pr.User.Login]; ok {
 					continue
 				}
 
-				contributors[*pr.User.Login] = IssueAuthorDetails{handle: *pr.User.Login, url: *pr.User.HTMLURL}
+				contributors[*pr.User.Login] = ContributorDetails{handle: *pr.User.Login, url: *pr.User.HTMLURL}
 			}
 			page++
 		}
