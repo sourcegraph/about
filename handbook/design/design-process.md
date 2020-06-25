@@ -54,7 +54,7 @@ While asynchronous communication is a core attribute of remote work, key moments
     *   Tools
         *   Google Docs
         *   Google Forms for polls
-        *   Usertesting.com
+        *   UserTesting.com
 *   Wireframes
     *   Wireframes should utilize the Sourcegraph Figma component system
     *   Wireframes should generally utilize realistic data and text for each element. In cases where many elements are required, ‘lorem epsum’ placeholder text will suffice if the initial or prominent elements are real data.
