@@ -20,7 +20,7 @@ While asynchronous communication is a core attribute of remote work, key moments
 
 *   Ideation
     *   This is generally represented by a kickoff meeting with interested parties. Kickoff meetings should generally include representatives of the following parties:
-        *   The project manager
+        *   The product manager
         *   Developers working on the project
         *   Designers
         *   Sales, ops and customer engineering staff who have insight into how this affects users
