@@ -62,7 +62,7 @@ While asynchronous communication is a core attribute of remote work, key moments
             *   TBD - how do we replicate pull request reviewers? 
         *   Wireframes are produced in Figma
         *   Wireframes are announced in Slack and linked in the GitHub issue well before they are complete for review
-        *   WIreframes are hallway tested with internal users and product managers
+        *   Wireframes are hallway tested with internal users and product managers
         *   Schedule and conduct a presentation meeting
         *   Stakeholders will approve the GitHub issue indicating the designs are ready for the next phase
     *   Checklist
