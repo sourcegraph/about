@@ -46,7 +46,7 @@ While asynchronous communication is a core attribute of remote work, key moments
         *   A GitHub issue should be created to track the work
         *   Research is conducted according to requirements
         *   Publish research to Google Drive
-        *   Announce research in slack
+        *   Announce research in Slack
         *   Schedule and conduct a presentation meeting with stakeholders
         *   Stakeholders will approve the GitHub issue indicating the designs are ready for the next phase
     *   Tools
