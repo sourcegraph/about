@@ -3,7 +3,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import { PricingPlan, Features } from '../components/pricing/PricingPlan'
+import { Features, PricingPlan } from '../components/pricing/PricingPlan'
 import { PricingPlanProperty } from '../components/pricing/PricingPlanProperty'
 
 const DESCRIPTION =
@@ -47,6 +47,7 @@ export default ((props: any) => (
             </Helmet>
             <div className="pricing-page">
                 <ContentSection color="primary" className="hero-section text-center py-5">
+                    <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
                     <h2>Universal Code Search scales with your team</h2>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">

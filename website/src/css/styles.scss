@@ -281,5 +281,5 @@ body {
     content: '\A';
 }
 .bg-gradient-primary {
-    background-image: radial-gradient(circle at 50% 0px, darken($blue, 9%), $dark-12);
+    background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
 }
