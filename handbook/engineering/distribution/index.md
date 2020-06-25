@@ -8,6 +8,16 @@ The distribution team is responsible for making Sourcegraph easy to deploy, scal
 - File issues: [team/distribution](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) label
 - What we're currently working on: [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+distribution), [roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit#heading=h.mi8zg2ql2uc6)
 
+## Why the "Distribution" team, not the "SRE" team, "infrastructure" team, etc?
+
+The Distribution team, like most teams at Sourcegraph, is a goal-oriented team. Our ownership areas _include_ site reliability and infrastructure because those assist in achieving our true goals:
+
+1. Make deploying, upgrading, and managing Sourcegraph as easy as possible.
+2. Support the rapid distribution of software at Sourcegraph to our users.
+3. Advocate strongly on behalf of our users unique infrastructure requirements.
+
+This is an important distinction because it means our goals of site reliability and maintaining infrastructure are not inherently opposed to the rest of the engineering organization's goals to ship code changes frequently and iteratively, instead we are _in direct support of it_.
+
 ## Ownership areas
 
 The following is a breakdown of the areas of Sourcegraph that the Distribution team owns. It aims to be 100% comprehensive, but the owners are merely aspirational goal posts, not mandates. At the end of the day, whoever has most context will own the area.
