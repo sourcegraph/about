@@ -37,7 +37,7 @@ While asynchronous communication is a core attribute of remote work, key moments
     *   Placholder: 
         *   Additional research methods
     *   Customer requests and support tickets
-        *   Our users are passionate and provide excellent feedback. Each project should utilize our collections of this feedback in productboard.com 
+        *   Our users are passionate and provide excellent feedback. Each project should utilize our collections of this feedback in [Productboard](https://sourcegraph.productboard.com/)
     *   Analogous designs
     *   Competitive designs
     *   Findings publishing and review
