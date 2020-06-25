@@ -312,7 +312,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Gonzalo Peci (he/him)
 
 - [Distribution](../../handbook/engineering/distribution/index.md) - Engineering Manager
-- Palma de Mallorca, Balearic Islands, Spain, :es:
+- Palma de Mallorca, Balearic Islands, Spain, 🇪🇸
 - [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [LinkedIn](https://linkedin.com/in/pecig), [GitHub](https://github.com/pecigonzalo), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enojoys playing video games, traveling and reading. Recentrly he started playing the bass :guitar: and has a Metal/Punk garage band. He has an infrastructure background and has
   gone down the tech rabbithole so he started learning programming and other tools :nerd_face:.
