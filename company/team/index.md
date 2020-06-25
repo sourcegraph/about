@@ -315,7 +315,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Full Name (optional pronouns)
 
 - Describe how to pronounce your name
-- Role(s)
+- Team - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Bio (hobbies, work experience, family, pets, etc.)
