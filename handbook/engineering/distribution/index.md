@@ -99,7 +99,7 @@ Distribution team members may also be involved in other areas of Sourcegraph not
 - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
 - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
 - [Dave Try](../../../company/team/index.md#dave-try)
-- [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
+- [Robert Lin](../../../company/team/index.md#robert-lin) (internship)
 
 ## Hiring status
 
