@@ -84,15 +84,16 @@ Roadmap items may take more than an iteration to implement. As such please link 
 
 Each engineer is responsible for posting a weekly update on Friday to tracking issues where they have assigned work (most engineers only have work on a single tracking issue associated with the team they are one). The update should communicate progress made, pain points, a forecast for the next week, and whether the remaining planned work is on track to be completed on time.
 
-    - Good: "Last week I made progress on implementing RFC 123, but was blocked by X. X was due to Y. This week I'll continue to and hopefully implement RFC 123 completely, plan to be ready for review by Thurs. I am on track to finish my planned work this iteration."
-    - Not good: "PRs: #123, #456, #789"
+- Good: "Last week I made progress on implementing RFC 123, but was blocked by X. X was due to Y. This week I'll continue to and hopefully implement RFC 123 completely, plan to be ready for review by Thurs. I am on track to finish my planned work this iteration."
+- Not good: "PRs: #123, #456, #789"
 
 Each engineering manager (or project lead for projects that don't have a dedicated manager) is responsible for posting a weekly update on Monday.
-    - Give an update on how the team is tracking toward their work plan and their OKRs.
-    - Highlight any important things that got done done (as in "shipped").
-    - Call out work that has been added or removed from the plan and explain why.
-    - Call out things that aren't on track and what is being done to get them on track.
-    - Call out things that are slowing the team down.
+
+- Give an update on how the team is tracking toward their work plan and their OKRs.
+- Highlight any important things that got done done (as in "shipped").
+- Call out work that has been added or removed from the plan and explain why.
+- Call out things that aren't on track and what is being done to get them on track.
+- Call out things that are slowing the team down.
 
 ## Contributing to the tracking issue tool
 
