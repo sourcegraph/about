@@ -271,6 +271,9 @@ table {
 body {
     background: url('/page-bg.svg') repeat;
 }
+.minimal {
+    background-color: #fff;
+}
 
 .virtual-br::before {
     content: '\A';

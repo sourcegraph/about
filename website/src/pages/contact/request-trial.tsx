@@ -23,7 +23,7 @@ export default class TrialPage extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const desc = 'Get your team started with a free trial of Sourcegraph.'
         return (
-            <Layout location={this.props.location} minimal={true}>
+            <Layout className="minimal" location={this.props.location} minimal={true}>
                 <Helmet>
                     <title>Sourcegraph - Sign up for a free trial</title>
                     <meta name="twitter:title" content="Sign up for a free trial of Sourcegraph" />
@@ -37,11 +37,11 @@ export default class TrialPage extends React.Component<any, any> {
                 </Helmet>
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
                 <div className="bg-white text-dark">
-                    <div className="container-lg py-6 px-5">
+                    <div className="container-xl pt-5 px-5">
                         <div className="row">
                             <div className="col-md-6">
-                                <h1 className="display-4">Sign up for a free trial</h1>
-                                <h3 className="font-weight-light text-sans-serif">
+                                <h1 className="display-3 font-weight-bold">Sign up for a free trial</h1>
+                                <h3 className="font-weight-light">
                                     To start your free Sourcegraph trial, tell us a bit about yourself.
                                 </h3>
                                 <div className="form mt-5">
@@ -49,7 +49,7 @@ export default class TrialPage extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <CustomerLogosSection className="py-5" />
+                                <CustomerLogosSection className="full-color py-5" />
                             </div>
                         </div>
                     </div>

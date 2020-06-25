@@ -132,7 +132,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
             {ITEMS.map((logo, i) => (
                 <div
                     key={i}
-                    className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item mx-4`}
+                    className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item mx-4 mb-2`}
                 >
                     {logo.link ? (
                         <a href={logo.link.url} target={logo.link.target} rel={logo.link.rel}>
