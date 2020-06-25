@@ -84,13 +84,16 @@ Distribution team members may also be involved in other areas of Sourcegraph not
 - [Recurring processes](./recurring_processes.md)
 - [Internal infrastructure](./internal_infrastructure.md)
 - [Tools](./tools/index.md)
-- Tutorials
-  - [Observability developer guide](observability/index.md)
-  - [How to set up a separate website maintained by Sourcegraph](separate_website.md)
-  - [How to replay a metrics dump from a customer](use_metrics_dump.md)
-  - [How to simulate k8s admin security restrictions](k8s_admin_custom_policy.md)
-  - [How to test the Gitlab native integration locally](gitlab_native_local.md)
-  - [How to make updates to global settings and configuration on sourcegraph.com](update_sourcegraph_website.md)
+- Guides
+  - General
+    - [Updating Sourcegraph.com site / global / external service configuration](update_sourcegraph_website.md)
+  - Development
+    - [Observability developer guide](observability/index.md)
+    - [Setting up a separate website maintained by Sourcegraph](separate_website.md)
+    - [Simulating Kubernetes admin security restrictions](k8s_admin_custom_policy.md)
+    - [Testing the GitLab native integration locally](gitlab_native_local.md)
+  - Debugging
+    - [Replaying metrics dumps from a customer](use_metrics_dump.md)
 
 ## Members
 
