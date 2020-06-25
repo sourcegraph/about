@@ -5,4 +5,4 @@ If a candidate has an existing visa, we will accept a visa transfer from the for
 
 
 ## New visas
-We will agree to sponsor new visas assuming the visa being applied for is compatible with an all-remote work setting and if the candidate is willing to stay on and work remotely if the visa is unable to be obtained.
+We will agree to sponsor new visas assuming the visa being applied for is compatible with an all-remote work setting and if the candidate is willing to stay on and work from a non-U.S. country if the visa is unable to be obtained.
