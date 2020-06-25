@@ -1,12 +1,12 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import Layout from '../components/Layout'
-import SocialLinks from '../components/SocialLinks'
-import { Jumbotron } from '../components/Jumbotron'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
+import { Jumbotron } from '../components/Jumbotron'
+import Layout from '../components/Layout'
+import SocialLinks from '../components/SocialLinks'
+import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { getHTMLParts, subscriptionLinks } from '../pages/podcast'
 
 interface Option {
@@ -22,7 +22,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
 
     public componentDidMount(): void {
         if (document) {
-            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none')
+            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
         }
     }
 
@@ -62,10 +62,11 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
         ].filter(option => option.html)
 
         const hash = this.props.location.hash
-        let selected: 'showNotes' | 'summary' | 'transcript' = (hash === '#showNotes' && 'showNotes') || (hash === '#transcript' && 'transcript') || 'summary'
+        let selected: 'showNotes' | 'summary' | 'transcript' =
+            (hash === '#showNotes' && 'showNotes') || (hash === '#transcript' && 'transcript') || 'summary'
 
         return (
-            <Layout location={this.props.location} meta={meta}>
+            <Layout location={this.props.location} meta={meta} className="darkBackground">
                 <Helmet>
                     <link
                         rel="stylesheet"
@@ -79,7 +80,8 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                         <div className="d-flex flex-column align-items-center podcast__subbanner">
                             Conversations, stories, and insights from dev tool creators
                         </div>
-                }>
+                    }
+                >
                     <ContentSection color="black">
                         <div className="podcast">
                             {subscriptionLinks}
@@ -88,17 +90,32 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                     <a href="/podcast">&lsaquo; All episodes</a>
                                 </div>
                                 <div className="podcast__title">{title}</div>
-                                {guestsHTML && (<div dangerouslySetInnerHTML={{ __html: guestsHTML }} className="podcast__people" />)}
+                                {guestsHTML && (
+                                    <div dangerouslySetInnerHTML={{ __html: guestsHTML }} className="podcast__people" />
+                                )}
                                 <div className="podcast__date">{publishDate}</div>
-                                { audioHTML && (<div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />)}
+                                {audioHTML && (
+                                    <div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />
+                                )}
                                 <div className="podcast__content-option">
                                     {options.map(({ hash, name }) => (
-                                        <a key={name} dangerouslySetInnerHTML={{ __html: name }} className={selected === hash ? "podcast__content-option-selected" : ""} href={`#${hash}`} />
+                                        <a
+                                            key={name}
+                                            dangerouslySetInnerHTML={{ __html: name }}
+                                            className={selected === hash ? 'podcast__content-option-selected' : ''}
+                                            href={`#${hash}`}
+                                        />
                                     ))}
                                 </div>
-                                {options.filter(op => op.hash === selected).map(({ name, html }) => (
-                                    <div key={name} className="podcast__description" dangerouslySetInnerHTML={{ __html: html || '' }} />
-                                ))}
+                                {options
+                                    .filter(op => op.hash === selected)
+                                    .map(({ name, html }) => (
+                                        <div
+                                            key={name}
+                                            className="podcast__description"
+                                            dangerouslySetInnerHTML={{ __html: html || '' }}
+                                        />
+                                    ))}
                             </div>
 
                             <section className="blog-post__footer mt-4 pt-4">

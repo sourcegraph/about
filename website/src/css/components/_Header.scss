@@ -1,6 +1,11 @@
 // stylelint-disable declaration-property-unit-whitelist
 .header {
     &__logo {
+        background: url(/sourcegraph-logo.svg) no-repeat;
+        background-size: 150px;
+        width: 150px;
+        height: 26px;
+
         &-image {
             height: 26px;
             margin-bottom: 0.125rem;
@@ -13,5 +18,22 @@
     }
     &__nav-link {
         color: $dark;
+    }
+}
+
+.darkBackground {
+    .header {
+        &__logo {
+            background: url(/sourcegraph-reverse-logo.svg) no-repeat;
+            background-size: 150px;
+            width: 150px;
+            height: 26px;
+        }
+        &__nav-link {
+            color: $light;
+        }
+        &__nav-link:hover {
+            color: $light-6;
+        }
     }
 }

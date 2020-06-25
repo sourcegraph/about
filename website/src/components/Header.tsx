@@ -32,7 +32,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                 <nav className={`header navbar navbar-expand-md ${this.props.className || ''}`}>
                     <div className="container d-flex">
                         <Link className="navbar-brand header__logo" to="/">
-                            <img src="/sourcegraph-logo.svg" alt="Sourcegraph" className="header__logo-image" />
+                            <span role="img" aria-label="Sourcegraph - Universal code search">
+                                {' '}
+                            </span>
                         </Link>
                         {!this.props.minimal && (
                             <>

@@ -20,7 +20,6 @@ interface LayoutProps {
     hero?: React.ReactFragment
     heroAndHeaderClassName?: string
 
-    darkBackground?: boolean
     className?: string
 }
 
@@ -71,12 +70,12 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                         isBlog={isBlog}
                         isProductPage={isProductPage}
                         minimal={this.props.minimal}
-                        className="pt-4"
+                        className={`pt-4 ${this.props.className || ''}`}
                     />
                     {this.props.hero}
                 </div>
                 <section className="d-flex flex-column fill-height">{this.props.children}</section>
-                <Footer minimal={this.props.minimal} />
+                <Footer className={`pt-4 ${this.props.className || ''}`} minimal={this.props.minimal} />
             </div>
         )
     }

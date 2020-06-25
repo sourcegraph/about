@@ -16,7 +16,11 @@
         font-size: 0.8rem;
         font-weight: bolder;
     }
-
+    &__logo {
+        background: url(/sourcegraph-logo.svg) no-repeat;
+        background-size: 200px;
+        height: 40px;
+    }
     &__social,
     &__postscript {
         .nav-item > a {
@@ -118,5 +122,22 @@
     .hs-button:hover {
         background-color: #0855c5;
         border-color: #0850b9;
+    }
+}
+
+.darkBackground {
+    .footer {
+        background: none;
+        &__logo {
+            background: url(/sourcegraph-reverse-logo.svg) no-repeat;
+        }
+        &__nav-header,
+        &__nav-sections .nav-item > a {
+            color: $light;
+        }
+        &__nav-header,
+        &__nav-sections .nav-item > a:hover {
+            color: $light-6;
+        }
     }
 }
