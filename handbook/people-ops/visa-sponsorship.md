@@ -1,4 +1,4 @@
-# Visa sponsorship policy
+# United States visa sponsorship policy
 
 ## Existing visas
 If a candidate has an existing visa, we will accept a visa transfer from the former employer and sponsor the existing visa for the candidate so long as the visa is compatible with an all-remote work setting.
