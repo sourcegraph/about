@@ -89,10 +89,15 @@ While asynchronous communication is a core attribute of remote work, key moments
     *   Visual design should utilize the Sourcegraph’s Figma based component system
     *   Dark compositions will be created for each major design
     *   If new components are required, components will be created in the file itself, not the component system
-    *   Design checklist
-        *   Does the documentation reflect the change?
-        *   Light mode / dark mode
-        *   TBD - add a standard visual design checklist
+    *   Improvements to the Sourcegraph user experience should consider the following in every change:
+        * Has the change’s effect on the CLI been considered?
+        * Does the language in the UI map to the language in the CLI?
+        * Does the documentation reflect the change?
+        * Light mode / Dark mode 
+        * Enterprise / Cloud
+        * Signed in vs. anonymous user
+        * User permissions
+        * Interactive mode / plain text mode
     *   Process
         *   A GitHub issue should be created to track the work
         *   Wireframes are produced in Figma
