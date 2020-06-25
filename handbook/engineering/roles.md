@@ -28,19 +28,7 @@ Some teams with more experienced members may need less guidance in certain areas
 
 - Directly contribute through code, RFCs or PR reviews for a minimum of roughly 50% of their time.
 - Ensure that the team has a roadmap that documents how it is going to achieve its [OKRs](../../company/okrs/index.md).
-- Ensure the the team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md).
-- Post a weekly update by EOD Monday on the tracking issue that answers the following questions:
-  1. What work did the team do last week?
-    - This is a summary not details. The details should exist in each teammate's individual update and shouldn't be repeated.
-  1. How does that work connect back to the team’s OKRs and roadmap?
-  1. For each OKR and roadmap item, is the team on track? The answer should be of the form:
-    - We expect to reach this goal.
-    - We are at risk of not reaching this goal because A, B, C.
-      - What can we change to get this back on track?
-    - We are not going to reach this goal because A, B, C.
-      - What did we learn from this failure to achieve our goals?
-  1. What did the team work on last week that wasn’t originally planned? Why?
-  1. What pain is the team experiencing?
+- Ensure the the team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md) and post a [weekly progress update](tracking_issues.md#progress-updates).
 - Help keep the team focused on their goals while keeping them aware of the higher level picture.
 - Identify blockers or productivity issues and work with the team to address them.
 - Run weekly team sync meetings.
@@ -59,19 +47,7 @@ Engineering managers lead, grow, and develop teams of software engineers.
 Build an exceptional team that achieves results.
 
 - Ensure that the team has a roadmap that documents how it is going to achieve its [OKRs](../../company/okrs/index.md).
-- Ensure the the team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md).
-- Post a weekly update by EOD Monday on the tracking issue that answers the following questions:
-  1. What work did the team do last week?
-    - This is a summary not details. The details should exist in each teammate's individual update and shouldn't be repeated.
-  1. How does that work connect back to the team’s OKRs and roadmap?
-  1. For each OKR and roadmap item, is the team on track? The answer should be of the form:
-    - We expect to reach this goal.
-    - We are at risk of not reaching this goal because A, B, C.
-      - What can we change to get this back on track?
-    - We are not going to reach this goal because A, B, C.
-      - What did we learn from this failure to achieve our goals?
-  1. What did the team work on last week that wasn’t originally planned? Why?
-  1. What pain is the team experiencing?
+- Ensure the the team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md) and post a [weekly progress update](tracking_issues.md#progress-updates).
 - Conduct monthly [retrospectives](../../retrospectives/index.md) with the team.
 - Conduct regular [1-1s](../leadership/1-1.md).
 - Own the end-to-end hiring process for the team and grow the team according to the hiring plan.
