@@ -7,8 +7,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Full Name (optional pronouns)
 
 - Describe how to pronounce your name
-- Team
-- Role(s)
+- Team - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
@@ -131,7 +130,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Senior Digital Marketing Manager
 - San Carlos, CA and Bainbridge Island, WA USA 🇺🇸
 - [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
-- Aileen is a techie at heart with a foundation in IT and databases. Her first startup experience was at Patrol Software where she got the startup buzz to try out multiple roles in customer support, product management, business development and sales.   Most recently, she built the website for [Neo4j](https://neo4j.com) and learned that everything is connected.  In her spare time she keeps active by hiking, running or biking.  She also loves to travel and binges the best in streaming tv.
+- Aileen is a techie at heart with a foundation in IT and databases. Her first startup experience was at Patrol Software where she got the startup buzz to try out multiple roles in customer support, product management, business development and sales. Most recently, she built the website for [Neo4j](https://neo4j.com) and learned that everything is connected. In her spare time she keeps active by hiking, running or biking. She also loves to travel and binges the best in streaming tv.
 
 ## Adam Frankl (he/him)
 
@@ -222,11 +221,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - SDR
 - Phoenix AZ, USA 🇺🇸
 - [quin@sourcegraph.com](mailto:quin@sourcegraph.com), [quinwith1n](https://github.com/qwith1n)
-- Quin has always loved traveling and seeing the world. He lives in Phoenix with his wife and 2 french bulldogs.  Quin also enjoys most sports, especially ping pong, reading, and playing his guitar.  Although his French bulldogs do not enjoy it when he attempts to play the guitar.
+- Quin has always loved traveling and seeing the world. He lives in Phoenix with his wife and 2 french bulldogs. Quin also enjoys most sports, especially ping pong, reading, and playing his guitar. Although his French bulldogs do not enjoy it when he attempts to play the guitar.
 
 ## Asdine El Hrychy
 
-- First name is pronounced *as-deen*, last name *el-ree-tchee*
+- First name is pronounced _as-deen_, last name _el-ree-tchee_
 - Software Engineer
 - Ajaccio, France 🇫🇷/ Dubai, UAE 🇦🇪
 - [asdine@sourcegraph.com](mailto:asdine@sourcegraph.com), [asdine](https://github.com/asdine)
@@ -252,15 +251,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Lynnwood, WA, USA 🇺🇸
 - [simon@sourcegraph.com](mailto:simon@sourcegraph.com), [Github](https://github.com/twop), [Twitter](https://twitter.com/twopSK)
 - Simon is interested in programming languages (especially functional ones), type systems, new technologies(WebAssembly) and performance. His top 3 favorite programming languages: Rust, Elm, TypeScript. Outside of work he enjoys exploring gorgeus Pacific Northwest outdoors with his wife and daughter. Interesting fact: he used to be a semiprofessional
- gamer (Magic: the Gathering) and a game developer at the same time.
+  gamer (Magic: the Gathering) and a game developer at the same time.
 
 ## Robert Lin
 
 - Software Engineer Intern
 - Vancouver, BC, Canada 🇨🇦
 - [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://github.com/bobheadxi)
-- If it involves moving without *too* much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final year studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
-
+- If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final year studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
 
 ## Marek Zaluski
 
@@ -281,7 +279,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Enterprise Account Executive
 - Orange County, CA 🇺🇸
 - [nick.kunszt@sourcegraph.com](mailto:nick.kunszt@sourcegraph.com), [GitHub](https://github.com/Nick-Kunszt)
-- Nick enjoys playing music, soaking in the California sun, and spending QT with friends and family. Before joining Sourcegraph, Nick spent the last 7 years at Google formalizing digital marketing and analytics solutions to companies ranging from start-ups to Fortune 500's.  He is passionate about forming long term relationships, solving business challenges by providing exceptional customer experience, and delivering data-driven results.
+- Nick enjoys playing music, soaking in the California sun, and spending QT with friends and family. Before joining Sourcegraph, Nick spent the last 7 years at Google formalizing digital marketing and analytics solutions to companies ranging from start-ups to Fortune 500's. He is passionate about forming long term relationships, solving business challenges by providing exceptional customer experience, and delivering data-driven results.
 
 ## Mark Muldez (he/him)
 
@@ -317,8 +315,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Palma de Mallorca, Balearic Islands, Spain, :es:
 - [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [LinkedIn](https://linkedin.com/in/pecig), [GitHub](https://github.com/pecigonzalo), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enojoys playing video games, traveling and reading. Recentrly he started playing the bass :guitar: and has a Metal/Punk garage band. He has an infrastructure background and has
-gone down the tech rabbithole so he started learning programming and other tools :nerd_face:.
-
+  gone down the tech rabbithole so he started learning programming and other tools :nerd_face:.
 
 <!-- Paste *your* section above this line by following our template below:
 
