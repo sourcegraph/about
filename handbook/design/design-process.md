@@ -31,7 +31,7 @@ While asynchronous communication is a core attribute of remote work, key moments
     *   Interview internal users 
         *   As our users are developers, Sourcegraph developers make great interview subjects. However, we need to acknowledge that they do have biases about features and this research must be augmented 
     *   Interview external users
-        *   While our internal users are a valuable resource for research, they are also have learned biases about the tool that external users do not. Where the project and time permits, conduct research with these users to inform your designs
+        *   Where the project requires and time permits, conduct research with these users to inform your designs
     *   Placholder: 
         *   Additional research methods
     *   Customer requests and support tickets
