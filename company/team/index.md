@@ -7,6 +7,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Full Name (optional pronouns)
 
 - Describe how to pronounce your name
+- Team
 - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
@@ -309,6 +310,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - New York, NY, USA 🇺🇸
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [GitHub](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
+
+## Gonzalo Peci (he/him)
+
+- [Distribution](../../handbook/engineering/distribution/index.md) - Engineering Manager
+- Palma de Mallorca, Balearic Islands, Spain, :es:
+- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [LinkedIn](https://linkedin.com/in/pecig), [GitHub](https://github.com/pecigonzalo), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
+- Gonzalo is originally from Argentina but has been moving around the world since 2012. He enojoys playing video games, traveling and reading. Recentrly he started playing the bass :guitar: and has a Metal/Punk garage band. He has an infrastructure background and has
+gone down the tech rabbithole so he started learning programming and other tools :nerd_face:.
+
 
 <!-- Paste *your* section above this line by following our template below:
 
