@@ -53,7 +53,7 @@ While asynchronous communication is a core attribute of remote work, key moments
         *   Stakeholders will approve the GitHub issue indicating the designs are ready for the next phase
     *   Tools
         *   Google Docs
-        *   Google forms for polls
+        *   Google Forms for polls
         *   Usertesting.com
 *   Wireframes
     *   Wireframes should utilize the Sourcegraph Figma component system
