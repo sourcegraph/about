@@ -280,3 +280,6 @@ body {
 .virtual-br::before {
     content: '\A';
 }
+.bg-gradient-primary {
+    background-image: radial-gradient(circle at 50% 0px, darken($blue, 9%), $dark-12);
+}

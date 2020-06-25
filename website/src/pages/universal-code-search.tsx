@@ -29,8 +29,12 @@ export default ((props: any) => (
             {'GTM-TB4NLS7':true});`}
             </script>
         </Helmet>
-        <ContentPage title="What is Universal Code Search?">
-            <ContentSection color="white" className="pt-6 pb-4">
+        <ContentPage
+            title="What is Universal Code Search?"
+            className="bg-gradient-primary"
+            titleClassName="display-2 font-weight-bold"
+        >
+            <ContentSection color="white" className="pt-6 pb-2">
                 <div className="row justify-content-md-center mb-4">
                     <div className="col-md-10">
                         <h2 className="display-5 mb-4 text-center">
@@ -64,13 +68,13 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="purple" className="py-5">
-                <h2 className="display-4 text-center">Universal across everything </h2>
+                <h2 className="display-5 mt-3 text-center">Universal across everything </h2>
                 <p className="text-center">
                     Universal Code Search must have these things. Anything else is just a code search tool.
                 </p>
                 <div className="row mt-5">
                     <div className="col-md-4 pr-5">
-                        <h5>Code Discovery</h5>
+                        <h4>Code Discovery</h4>
                         <p>
                             <ul className="pl-3">
                                 <li>Navigate and explore code across any codebase</li>
@@ -80,7 +84,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
-                        <h5>Code Intelligence</h5>
+                        <h4>Code Intelligence</h4>
                         <p>
                             <ul className="pl-3">
                                 <li>Understand code in context</li>
@@ -90,7 +94,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
-                        <h5>Code Change Management</h5>
+                        <h4>Code Change Management</h4>
                         <p>
                             <ul className="pl-3">
                                 <li>Manage large-scale changes across the entire codebase</li>
@@ -102,7 +106,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-4">
-                <h2 className="text-center display-4">Code search is the superpower</h2>
+                <h2 className="display-5 mt-3 text-center">Code search is the superpower</h2>
                 <p className="text-center">
                     Uber, Lyft, Yelp, and other world-class companies rely on Sourcegraph Universal Code Search (not
                     just a code host) to ship software.
@@ -181,10 +185,14 @@ export default ((props: any) => (
                         />
                     </div>
                     <div className="col-md-12 col-lg-4 mb-3 pr-5">
-                        <h4>
-                            <img style={{ width: '17px', height: '17px' }} src="/sourcegraph/sourcegraph-mark.svg" />{' '}
+                        <h2>
+                            <img
+                                className="mb-2"
+                                style={{ width: '25px', height: '25px' }}
+                                src="/sourcegraph/sourcegraph-mark.svg"
+                            />{' '}
                             Sourcegraph
-                        </h4>
+                        </h2>
                         <h5>Used by Uber, Lyft, Yelp, and more</h5>
                         <ul className="pl-3">
                             <li>Every developer at these organizations uses Sourcegraph</li>

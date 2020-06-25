@@ -28,6 +28,8 @@ export default ((props: any) => (
         <ContentPage
             title="Sourcegraph Universal Code Search"
             description="Explore, navigate, and understand all code, everywhere, faster"
+            className="bg-gradient-primary"
+            titleClassName="display-2 font-weight-bold"
         >
             <PageSectionLinks
                 sections={[
@@ -37,7 +39,7 @@ export default ((props: any) => (
                     { text: 'Integrations', url: '#integrations' },
                 ]}
             />
-            <ContentSection color="primary" className="py-5">
+            <ContentSection color="white" className="py-5">
                 <span id="ucs" />
                 <h2 className="text-center">Universal across everything</h2>
                 <p className="text-center">
@@ -67,8 +69,9 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="pt-4">
-                <h2 id="features" className="display-4 mb-5 text-center">
-                    Sourcegraph lets you review, search, and modify your code no matter where it's stored
+                <h2 id="features" className="mb-5 text-center">
+                    Sourcegraph lets you review, search, and modify your code
+                    <br /> no matter where it's stored
                 </h2>
                 <div className="row">
                     <div className="col-md-6 mb-4">
