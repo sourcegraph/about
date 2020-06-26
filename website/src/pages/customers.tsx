@@ -135,7 +135,6 @@ export default ((props: any) => (
             description: 'TODO(sqs)',
             image: 'TODO(sqs)',
         }}
-        darkBackground={true}
         heroAndHeaderClassName="customers-page__header-and-hero"
         hero={
             <div className="customers-page customers-page__hero container">

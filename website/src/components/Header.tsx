@@ -17,7 +17,20 @@ export default class Header extends React.Component<HeaderProps, any> {
         this.toggle = this.toggle.bind(this)
         this.state = {
             isOpen: false,
+            isTop: true,
         }
+        this.onScroll = this.onScroll.bind(this)
+    }
+    public componentDidMount(): void {
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 30
+            if (isTop !== this.state.isTop) {
+                this.onScroll(isTop)
+            }
+        })
+    }
+    public onScroll(isTop: string): void {
+        this.setState({ isTop })
     }
 
     public toggle(): void {
@@ -29,7 +42,11 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                <nav className={`header navbar navbar-expand-md ${this.props.className || ''}`}>
+                <nav
+                    className={`${this.state.isTop ? '' : 'bg-white'} header navbar navbar-expand-md fixed-top ${
+                        this.props.className || ''
+                    }`}
+                >
                     <div className="container d-flex">
                         <Link className="navbar-brand header__logo" to="/">
                             <span role="img" aria-label="Sourcegraph - Universal code search">
