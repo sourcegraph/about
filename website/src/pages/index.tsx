@@ -81,7 +81,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                     <div className="col-lg-7 mt-5 pl-lg-4">
-                        <img src="/search-illustrated.svg" className="home__diagram bg-white w-150" />
+                        <img src="/code-search-illustrated.svg" className="home__diagram w-150" />
                     </div>
                 </div>
             </ContentSection>
