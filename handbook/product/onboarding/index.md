@@ -40,7 +40,7 @@ You'll find we have a strong base to work from, but we are in the early stages o
        - [Lorem Ipsum](https://www.figma.com/community/plugin/736000994034548392/Lorem-ipsum) - simple text generator
        - Suggest plugins to help make us more efficent!
      - Install the font SF PRO, which can be found in the [drive type folder](https://drive.google.com/drive/folders/15NibaPYH4F0L_isvKHsYTFpwquv6DnRs)
-     - Review the [component library](https://www.figma.com/file/BkY8Ak997QauG0Iu2EqArv/Sourcegraph-Components?node-id=0%3A1&viewport=-3247%2C-206%2C1)
+     - Review the [component library](https://www.figma.com/file/BkY8Ak997QauG0Iu2EqArv/Sourcegraph-Components?node-id=0%3A1&viewport=4848%2C895%2C0.5811631679534912)
      - Review the [style guide](https://www.figma.com/file/Y4JDvoFnCmY1JIQIWdiOJh/styleguide__components?node-id=0%3A1&viewport=153%2C791%2C0.0701417475938797) which we are transitioning to the component library
     - Take a moment to add some inspiring design to a Figma styleboard
    - UserTesting.com
@@ -54,4 +54,4 @@ You'll find we have a strong base to work from, but we are in the early stages o
     - From the root of your local environment run storybook: `yarn storybook` to see how our designs transformed into React components
 - Explore and favorite the [Google Drive design folder](https://drive.google.com/drive/folders/1xBRaw_2Ulccd_2ts0Wcq4Rgs6LuVblLU?usp=sharing)
 - Review the [Potential UX projects document](https://docs.google.com/document/d/1LemO13R3f0Ku88WK8tFr7_Qo4teDA0Bebs8Y2TGkS3U/edit)
-  - Use this document to record issues you'd like to work on as you discover them during your your onboarding
+  - Use this document to record issues you'd like to work on as you discover them during your onboarding
