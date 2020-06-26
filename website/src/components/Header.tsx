@@ -8,6 +8,8 @@ interface HeaderProps {
     isProductPage?: boolean
     minimal?: boolean
     className?: string
+    fixPodcastHeader?: 'TODO(aa)'
+    fixHamburgerMenu?: 'TODO(aa)'
 }
 
 export default class Header extends React.Component<HeaderProps, any> {
