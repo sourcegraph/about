@@ -1,24 +1,12 @@
 import { Link } from 'gatsby'
+import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
-import { BlogPost, FeaturedBlogPosts } from '../components/FeaturedBlogPosts'
-import { Jumbotron } from '../components/Jumbotron'
+import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySolution'
-import { GitLabIntegrationSection } from '../components/product/GitLabIntegrationSection'
-import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
-import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
-import { Tweets } from '../components/Tweets'
-import { YouTube } from '../components/YouTube'
-import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
-import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
-import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
-import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import { IntegrationsSection } from '../components/IntegrationsSection'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout
@@ -92,8 +80,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    <div className="col-lg-7 mt-5 pl-lg-4">
+                        <img src="/search-illustrated.svg" className="home__diagram bg-white w-150" />
                     </div>
                 </div>
             </ContentSection>
