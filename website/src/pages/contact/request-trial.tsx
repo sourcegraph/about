@@ -19,11 +19,14 @@ export default class TrialPage extends React.Component<any, any> {
             formId: '202906aa-b46d-4657-86c4-30fbfda2413f',
             targetId: 'hubspotRequestTrialForm',
         })
+        if (document) {
+            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
+        }
     }
     public render(): JSX.Element | null {
         const desc = 'Get your team started with a free trial of Sourcegraph.'
         return (
-            <Layout className="minimal" location={this.props.location} minimal={true}>
+            <Layout location={this.props.location} minimal={true}>
                 <Helmet>
                     <title>Sourcegraph - Sign up for a free trial</title>
                     <meta name="twitter:title" content="Sign up for a free trial of Sourcegraph" />

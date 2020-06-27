@@ -7,7 +7,6 @@ import { ContentSection } from '../components/content/ContentSection'
 import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { EbookUniversalCodeSearch } from '../components/product/EbookUniversalCodeSearch'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 
@@ -218,9 +217,6 @@ export default ((props: any) => (
             </ContentSection>
             <ContentSection color="white" className="py-2">
                 <CustomerLogosSection className="py-5" />
-            </ContentSection>
-            <ContentSection color="gray" className="py-6">
-                <EbookUniversalCodeSearch />
             </ContentSection>
             <Jumbotron
                 color="purple"

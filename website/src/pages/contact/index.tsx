@@ -11,8 +11,13 @@ import Layout from '../../components/Layout'
 
 export default ((props: any) => (
     <Layout location={props.location}>
-        <ContentPage title="Contact Sourcegraph" description="Contact a real human being on our team.">
-            <ContentSection color="white" className="py-6">
+        <ContentPage
+            title="Contact Sourcegraph"
+            description="Contact a real human being on our team."
+            className="bg-gradient-primary"
+            titleClassName="display-2 font-weight-bold"
+        >
+            <ContentSection color="white" className="pt-6 pb-2">
                 <div className="row">
                     <div className="col-md-6 mb-4 pb-1">
                         <div className="card">

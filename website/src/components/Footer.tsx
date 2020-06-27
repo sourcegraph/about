@@ -5,7 +5,7 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
-    <footer className="footer pt-6 pb-2">
+    <footer className={`${minimal ? '' : 'pt-6 pb-2'}`}>
         <div className="footer__container container">
             {!minimal && (
                 <React.Fragment>

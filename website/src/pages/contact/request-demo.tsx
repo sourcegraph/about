@@ -5,7 +5,7 @@ import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 
 // tslint:disable-next-line: no-any
-export default class TrialPage extends React.Component<any, any> {
+export default class DemoPage extends React.Component<any, any> {
     // tslint:disable-next-line: no-any
     constructor(props: any) {
         super(props)
@@ -19,12 +19,15 @@ export default class TrialPage extends React.Component<any, any> {
             formId: '310000a0-2b6b-4da2-89e9-2be930a8a298',
             targetId: 'hubspotRequestDemoForm',
         })
+        if (document) {
+            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
+        }
     }
     public render(): JSX.Element | null {
         const title = 'Sourcegraph - Schedule a Sourcegraph demo.'
         const desc = 'Schedule a Sourcegraph demo.'
         return (
-            <Layout className="minimal" location={this.props.location} minimal={true}>
+            <Layout location={this.props.location} minimal={true}>
                 <Helmet>
                     <title>{title}</title>
                     <meta name="twitter:title" content={title} />

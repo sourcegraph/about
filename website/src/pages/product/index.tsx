@@ -11,7 +11,6 @@ import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
@@ -151,9 +150,6 @@ export default ((props: any) => (
                         </blockquote>
                     </div>
                 </div>
-            </ContentSection>
-            <ContentSection color="gray" className="py-6">
-                <EbookUniversalCodeSearch />
             </ContentSection>
             <ContentSection color="white">
                 <span id="customers" />
