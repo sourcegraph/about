@@ -70,7 +70,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                         isBlog={isBlog}
                         isProductPage={isProductPage}
                         minimal={this.props.minimal}
-                        className={`pt-4 ${this.props.className || ''}`}
+                        className={`${this.props.className || ''}`}
                     />
                     {this.props.hero}
                 </div>

@@ -23,6 +23,8 @@
 
 .darkBackground {
     .header {
+        background-color: #07090d !important;
+        border-bottom: 1px solid #212529 !important;
         &__logo {
             background: url(/sourcegraph-reverse-logo.svg) no-repeat;
             background-size: 150px;
@@ -35,5 +37,15 @@
         &__nav-link:hover {
             color: $light-6;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-light {
+        background-color: #fff;
+    }
+    .darkBackground .navbar-nav .btn,
+    .navbar-light .navbar-nav .btn {
+        padding: 0.25rem 0.75rem;
     }
 }

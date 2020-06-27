@@ -270,13 +270,10 @@ table {
 
 body {
     background: url('/page-bg.svg') repeat;
-    padding-top: 74px;
+    padding-top: 70px;
 }
 .minimal {
     background-color: #fff;
-}
-.darkBackground {
-    background-color: #000;
 }
 .virtual-br::before {
     content: '\A';

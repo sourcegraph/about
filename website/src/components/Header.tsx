@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
-import * as React from 'react'
 import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
+import * as React from 'react'
 
 interface HeaderProps {
     isHome?: boolean
@@ -8,8 +8,6 @@ interface HeaderProps {
     isProductPage?: boolean
     minimal?: boolean
     className?: string
-    fixPodcastHeader?: 'TODO(aa)'
-    fixHamburgerMenu?: 'TODO(aa)'
 }
 
 export default class Header extends React.Component<HeaderProps, any> {
@@ -45,11 +43,11 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <>
                 <nav
-                    className={`${this.state.isTop ? '' : 'bg-white'} header navbar navbar-expand-md fixed-top ${
-                        this.props.className || ''
+                    className={`${this.state.isTop ? '' : 'bg-white'}  header navbar navbar-expand-md fixed-top pt-4 ${
+                        this.props.className || 'navbar-light'
                     }`}
                 >
-                    <div className="container d-flex">
+                    <div className="container-fluid">
                         <Link className="navbar-brand header__logo" to="/">
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}
@@ -67,7 +65,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <span className="navbar-toggler-icon" />
                                 </button>
                                 <div
-                                    className={`flex-1 collapse navbar-collapse ${this.state.isOpen ? 'show' : ''}`}
+                                    className={`collapse navbar-collapse justify-content-end ${
+                                        this.state.isOpen ? 'show' : ''
+                                    }`}
                                     id="navcol-1"
                                 >
                                     <ul className="nav navbar-nav d-flex w-100">
