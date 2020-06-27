@@ -71,3 +71,16 @@ If any interviewer is asked by a candidate for interview feedback, they may resp
 ## Respecting time
 
 Interviewing requires time and effort, both for us and for candidates. The hiring manager is responsible for monitoring feedback during the interview phase, and if it becomes obvious that we won't be moving forward with a candidate, then the hiring manager should cancel any remaining interviews to be respectful of both the candidate's and interviewers' time.
+
+## Sharing company financials
+
+Choosing to join a company is a significant commitment. We want people to have an accurate view of Sourcegraph's financial and business position before they join. (Every Sourcegraph team member after they join has regular access to this information by viewing the board slides or asking the CEO directly.)
+
+Here are some related questions candidates have asked in the [CEO interview](../ceo/index.md#interviews-with-me) or after receiving an offer. We don't make all this information public in the handbook, but candidates are encouraged to ask the CEO. (Note from the CEO: I love when candidates ask these questions!)
+
+1. What percentage of the company does my option grant represent?
+1. What is the total number of fully diluted shares?
+1. Other details about options: These are covered in the employment paperwork you will receive.
+1. What is the current runway and the monthly burn rate? How much cash does the company have in the bank?
+
+Hiring managers: Until we have a standardized process for all hiring managers to answer these questions with the latest numbers, please pass these questions from candidates to the CEO instead of answering them yourself (except for questions answered inline above).
