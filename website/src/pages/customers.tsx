@@ -1,24 +1,12 @@
 import { Link } from 'gatsby'
+import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
-import { BlogPost, FeaturedBlogPosts } from '../components/FeaturedBlogPosts'
-import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySolution'
-import { GitLabIntegrationSection } from '../components/product/GitLabIntegrationSection'
-import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
-import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
-import { Tweets } from '../components/Tweets'
-import { YouTube } from '../components/YouTube'
-import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
-import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
-import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
-import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import { IntegrationsSection } from '../components/IntegrationsSection'
+import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const testimonials: Testimonial[] = [
     {
@@ -127,6 +115,10 @@ const testimonials: Testimonial[] = [
     },
 ]
 
+const title = 'Sourcegraph - Customers'
+const desc =
+    'Sourcegraph helps companies of all sizes in all industries to move fast, fix things, and address security risks when building software.'
+
 export default ((props: any) => (
     <Layout
         location={props.location}
@@ -137,7 +129,7 @@ export default ((props: any) => (
         }}
         heroAndHeaderClassName="customers-page__header-and-hero"
         hero={
-            <div className="customers-page customers-page__hero container">
+            <div className="customers-page customers-page__hero container mt-2">
                 <div className="row">
                     <div className="col-lg-7 mt-6 mb-6">
                         <h1 className="display-1 font-weight-bold mb-0">
@@ -174,6 +166,15 @@ export default ((props: any) => (
             </div>
         }
     >
+        <Helmet>
+            <title>{title}</title>
+            <meta name="twitter:title" content={title} />
+            <meta property="og:title" content={title} />
+            <meta name="twitter:description" content={desc} />
+            <meta property="og:description" content={desc} />
+            <meta name="description" content={desc} />
+            <link rel="icon" type="image/png" href="/favicon.png" />
+        </Helmet>
         <div className="customers-page">
             <CustomerLogosSection className="my-6" />
             <hr className="my-6" />
@@ -266,7 +267,12 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            TODO(sqs): try link
+            <ContentSection className="mb-6">
+                <div className="container">
+                    <hr className="my-6" />
+                </div>
+                <TrySourcegraph />
+            </ContentSection>
         </div>
     </Layout>
 )) as React.FunctionComponent<any>

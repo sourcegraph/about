@@ -19,6 +19,9 @@
     &__nav-link {
         color: $dark;
     }
+    &__nav-link:hover {
+        color: $light !important;
+    }
 }
 
 .darkBackground {

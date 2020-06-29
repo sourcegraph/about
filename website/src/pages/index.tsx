@@ -7,6 +7,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
+import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout
@@ -215,21 +216,11 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-
-            <ContentSection className="py-6 mb-6">
-                <div className="row">
-                    <div className="col-md-6 mt-4 pr-5">
-                        <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today.</h3>
-                        <p>
-                            You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your
-                            code stays local and secure).
-                        </p>
-                    </div>
-                    <div className="col-md-6 mt-4 pt-3 text-right">
-                        <button className="btn btn-outline-secondary mr-2">Schedule a demo</button>
-                        <button className="btn btn-primary">Try Sourcegraph now</button>
-                    </div>
+            <ContentSection className="mb-6">
+                <div className="container">
+                    <hr className="my-6" />
                 </div>
+                <TrySourcegraph />
             </ContentSection>
         </div>
     </Layout>

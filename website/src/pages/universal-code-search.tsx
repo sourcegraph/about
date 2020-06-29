@@ -4,11 +4,10 @@ import Helmet from 'react-helmet'
 import { Blockquote } from '../components/Blockquote'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
-import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
+import { TrySourcegraph } from '../components/TrySourcegraph'
 
 export default ((props: any) => (
     <Layout
@@ -30,7 +29,7 @@ export default ((props: any) => (
         </Helmet>
         <ContentPage
             title="What is Universal Code Search?"
-            className="bg-gradient-primary"
+            className="bg-gradient-primary mt-2"
             titleClassName="display-2 font-weight-bold"
         >
             <ContentSection color="white" className="pt-6 pb-2">
@@ -218,15 +217,9 @@ export default ((props: any) => (
             <ContentSection color="white" className="py-2">
                 <CustomerLogosSection className="py-5" />
             </ContentSection>
-            <Jumbotron
-                color="purple"
-                className="py-4"
-                logomark={false}
-                title="Try Sourcegraph now"
-                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-            >
-                <GetSourcegraphNowActions />
-            </Jumbotron>
+            <ContentSection color="white" className="py-6">
+                <TrySourcegraph />
+            </ContentSection>
         </ContentPage>
     </Layout>
 )) as React.FunctionComponent<any>

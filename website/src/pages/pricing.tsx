@@ -45,7 +45,7 @@ export default ((props: any) => (
                 <meta name="description" content={DESCRIPTION} />
                 <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>
-            <div className="pricing-page">
+            <div className="pricing-page mt-2">
                 <ContentSection color="primary" className="hero-section text-center py-5">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
                     <h2>Universal Code Search scales with your team</h2>

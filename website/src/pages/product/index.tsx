@@ -7,13 +7,12 @@ import * as React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
-import { Jumbotron } from '../../components/Jumbotron'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
 import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
-import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
+import { TrySourcegraph } from '../../components/TrySourcegraph'
 
 export default ((props: any) => (
     <Layout
@@ -27,7 +26,7 @@ export default ((props: any) => (
         <ContentPage
             title="Sourcegraph Universal Code Search"
             description="Explore, navigate, and understand all code, everywhere, faster"
-            className="bg-gradient-primary"
+            className="bg-gradient-primary mt-2"
             titleClassName="display-2 font-weight-bold"
         >
             <PageSectionLinks
@@ -160,15 +159,9 @@ export default ((props: any) => (
             <ContentSection color="black" className="py-6">
                 <EnterpriseReadySolution />
             </ContentSection>
-            <Jumbotron
-                color="purple"
-                className="pt-4 pb-6"
-                logomark={false}
-                title="Try Sourcegraph now"
-                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-            >
-                <GetSourcegraphNowActions />
-            </Jumbotron>
+            <ContentSection color="white" className="py-6">
+                <TrySourcegraph />
+            </ContentSection>
         </ContentPage>
     </Layout>
 )) as React.FunctionComponent<any>
