@@ -13,7 +13,7 @@ Make Sourcegraph secure by design.
 ## Responsibilities
 
 - Proactively improve the security of our application and infrastructure.
-- Implement automated security scanning of our codebase and resolve issues.
+- Implement automated security scanning of our codebase and infrastructrure, and resolve issues.
     - https://github.com/sourcegraph/sourcegraph/security/code-scanning
 - [Respond to security vulnerability reports](#how-we-respond-to-security-vulnerability-reports)
 
