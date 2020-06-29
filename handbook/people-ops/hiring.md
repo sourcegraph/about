@@ -74,7 +74,7 @@ Interviewing requires time and effort, both for us and for candidates. The hirin
 
 ## Sharing company financials
 
-Choosing to join a company is a significant commitment. We want people to have an accurate view of Sourcegraph's financial and business position before they join. (Every Sourcegraph team member after they join has regular access to this information by viewing the board slides or asking the CEO directly.)
+Choosing to join a company is a significant commitment. We want people to have an accurate view of Sourcegraph's financial and business position before they join. (Every Sourcegraph team member after they join has regular access to this information on our Google Drive, and they can ask the CEO directly if they have any other questions.)
 
 Here are some related questions candidates have asked in the [CEO interview](../ceo/index.md#interviews-with-me) or after receiving an offer. We don't make all this information public in the handbook, but candidates are encouraged to ask the CEO. (Note from the CEO: I love when candidates ask these questions!)
 
@@ -83,4 +83,4 @@ Here are some related questions candidates have asked in the [CEO interview](../
 1. Other details about options: These are covered in the employment paperwork you will receive.
 1. What is the current runway and the monthly burn rate? How much cash does the company have in the bank?
 
-Hiring managers: Until we have a standardized process for all hiring managers to answer these questions with the latest numbers, please pass these questions from candidates to the CEO instead of answering them yourself (except for questions answered inline above).
+Hiring managers: Until we have a standardized process for all hiring managers to answer these questions with the latest numbers, please pass these questions from candidates to the CEO or VP Business instead of answering them yourself (except for questions answered inline above).
