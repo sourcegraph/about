@@ -37,4 +37,4 @@ The search team has divided the responsibilities of a [Project Lead](../roles.md
 
 _Updated 2020-06-25_
 
-- +1 [Software Engineer - Backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md
+- +1 [Software Engineer - Backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md)
