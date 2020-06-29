@@ -20,7 +20,7 @@ Each iteration, the web team splits its focus as follows:
 - ~30-40% quick wins: these are small but impactful tasks. They may come from product, design, analytics, customer engineering, or be technical debt / engineering investment tasks.
 - ~60-70% focused goal: we'll agree on a single, focused goal that we can work on as a team. Depending on priorities, this may be a product goal, or an engineering investment.
 
-The web team's current focus is documented in its tracking issue for the milestone.
+The web team's current focus is documented in the tracking issue for the current milestone.
 
 ## Contact
 
