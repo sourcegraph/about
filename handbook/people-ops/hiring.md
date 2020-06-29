@@ -76,11 +76,15 @@ Interviewing requires time and effort, both for us and for candidates. The hirin
 
 Choosing to join a company is a significant commitment. We want people to have an accurate view of Sourcegraph's financial and business position before they join. (Every Sourcegraph team member after they join has regular access to this information on our Google Drive, and they can ask the CEO directly if they have any other questions.)
 
-Here are some related questions candidates have asked in the [CEO interview](../ceo/index.md#interviews-with-me) or after receiving an offer. We don't make all this information public in the handbook, but candidates are encouraged to ask the CEO. (Note from the CEO: I love when candidates ask these questions!)
+> Hiring managers: If you're asked a question like this and you aren't 100% confident about the answer, please pass the question to the CEO or VP Business.
 
-1. What percentage of the company does my option grant represent?
-1. What is the total number of fully diluted shares?
-1. Other details about options: These are covered in the employment paperwork you will receive.
-1. What is the current runway and the monthly burn rate? How much cash does the company have in the bank?
+1. What is the company's latest valuation? (We share this when we give you the offer.)
+1. What percentage of the company does my option grant represent? (We share this when we give you the offer.)
+1. What is the total number of fully diluted shares? (You can calculate this from the number of options in your grant and the percentage that represents, but we're also happy to share this number.)
+1. Other details about options. (These are covered in the employment paperwork you will receive.)
 
-Hiring managers: Until we have a standardized process for all hiring managers to answer these questions with the latest numbers, please pass these questions from candidates to the CEO or VP Business instead of answering them yourself (except for questions answered inline above).
+Here are some other questions that candidates have asked (e.g., in the [CEO interview](../ceo/index.md#interviews-with-me)):
+
+1. What is the current runway and the monthly burn rate?
+1. How much cash does the company have in the bank?
+1. Other [questions about Sourcegraph's internal financial metrics](../ceo/index.md#questions-about-sourcegraph).
