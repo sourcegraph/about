@@ -89,13 +89,12 @@ Each engineer is responsible for posting a weekly update on Friday to tracking i
     - https://github.com/sourcegraph/sourcegraph/issues/11494
 - Not as good: "Worked on #111, #444, and RFC 123"
 
-Each engineering manager (or project lead for projects that don't have a dedicated manager) is responsible for posting a weekly update on Monday.
+Each engineering manager (or project lead for projects that don't have a dedicated manager) is responsible for posting a weekly update on Monday. This update should be in prose, just like updates from engineers. You can use this update to:
 
-- Give an update on how the team is tracking toward their work plan and their OKRs.
-- Highlight any important things that got done done (as in "shipped").
+- Highlight important decisions and outcomes.
+- Communicate how the team is tracking toward their work plan and their OKRs. If things aren't on track, explain why and what is being done about it.
 - Call out work that has been added or removed from the plan and explain why.
-- Call out things that aren't on track and what is being done to get them on track.
-- Call out things that are slowing the team down.
+- Document pain points that the team is experiencing.
 
 ## Contributing to the tracking issue tool
 
