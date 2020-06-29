@@ -310,6 +310,16 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [GitHub](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT. 
 
+
+## Chayim Kirshen (he/him)
+
+- Kh-ay-eem (or Hayeem)
+- Security Engineer
+- Toronto, ON, Canada, 🇨🇦
+- [chayim@sourcegraph.com](mailto:chayim@sourcegraph.com)
+- Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a peace of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics.  Plus za'atar - he covers everything he can in za'atar.
+
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
