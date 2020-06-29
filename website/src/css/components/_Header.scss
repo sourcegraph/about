@@ -19,7 +19,7 @@
     &__nav-link {
         color: $dark;
     }
-    &__nav-link:hover {
+    &__nav-link.btn:hover {
         color: $light !important;
     }
 }
