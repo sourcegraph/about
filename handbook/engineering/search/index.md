@@ -28,13 +28,13 @@ The search team has divided the responsibilities of a [Project Lead](../roles.md
 
 ## Members
 
-- [Loïc Guychard](../../../company/team/index.md#loic-guychard) (will transition to [engineering manager](../roles.md#engineering-manager) by 2020-07-01)
 - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith) (dividing his time between this team and [cloud](../cloud/index.md))
 - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
 - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
+- [Loïc Guychard](../../../company/team/index.md#loic-guychard) is interested in being the [engineering manager](../roles.md#engineering-manager) for this team but is currently focusing his efforts on the [../web/index.md](web team). [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) will be more involved in the meantime.
 
 ## Hiring status
 
 _Updated 2020-06-25_
 
-- +1 [Software Engineer - Backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md)
+- +1 [Software Engineer - Backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md
