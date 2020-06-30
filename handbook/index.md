@@ -5,6 +5,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## Company
 
 - [Strategy](../company/strategy.md)
+- [Direction (2020 product strategy)](../direction/index.md)
 - [Handbook usage](usage.md)
 - [Editing the handbook](editing.md)
 - [Communication](communication/index.md)
@@ -22,13 +23,19 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 ### [Product](product/index.md)
 
-- [Direction (2020 product strategy)](../direction/index.md)
-- [Product](product/index.md)
-- [Design](product/design/index.md)
+- [Product Management](product/product_management/index.md)
+- [Product Design](product/design/index.md)
 
-### Engineering
+### [Engineering](engineering/index.md)
 
 - [Engineering](engineering/index.md)
+  - [Distribution](engineering/distribution/index.md)
+  - [Campaigns](engineering/campaigns/index.md)
+  - [Cloud](engineering/cloud/index.md)
+  - [Code intelligence](engineering/code-intelligence/index.md)
+  - [Search](engineering/search/index.md)
+  - [Security](engineering/security/index.md)
+  - [Web](engineering/web/index.md)
 
 ### Customer Engineering
 
