@@ -10,11 +10,13 @@ heroImage: /blog/flying-brain.png
 published: true
 ---
 
+TODO: anywhere where "index(ing)" refers to conversion/index processing needs to be updated. "indexing" specifically refers to an indexer running over source code to produce an index. Conversion/processing converts a raw LSIF index into a bundle file which we use to answer queries.
+
 When it comes to developer tools, speed is a critical feature. The difference between a 100ms, 1s, and 10s delay fundamentally alters user psychology—it's the difference between coding at the speed of thought vs. losing focus as your mind wanders while waiting for the UI to respond.
 
 One of Sourcegraph's magic powers is its ability to provide compiler-accurate code navigation in completely web-based interfaces: Sourcegraph.com, private Sourcegraph instances, [GitHub PRs, GitLab MRs, and Bitbucket PRs](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack).
 
-[TODO: link to or show a screenshot of an evocative demo here showing how lightning fast things are]
+![Cross-repository jump to definition](https://storage.googleapis.com/sourcegraph-assets/precise-xrepo-j2d.gif)
 
 While compiler-level accuracy is great, one painpoint has been performance on larger codebases. The desire for speed motivated our switch from language servers to use of the Language Server Index Format (LSIF). Indexing vastly improves query latency by precomputing the data needed to serve doc tooltips, go-to-definition, and find-references requests—without sacrificing accuracy. Since adding support for LSIF, we've continued to optimize our indexing backend. In [Sourcegraph 3.16](/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we rewrote our indexing backend from TypeScript to Go with the aim of optimizing performance. In [3.17](/blog/sourcegraph-3.17), we made good on these plans.
 
@@ -26,13 +28,13 @@ With the guidance of the Go memory and CPU profiler, we implemented optimization
 
 ## Identifying bottlenecks
 
-Premature optimization is the root of all evil, so we initiated our optimization efforts by using a CPU and memory profiler to identify performance bottlenecks in our existing system.
-
-[TODO(efritz): embed CPU and heap profiles]
+Premature optimization is the root of all evil, so we initiated our optimization efforts by using a CPU and memory profiler to identify performance bottlenecks in our existing system. To get a sense of the dominating code paths (and what we ended up with after only one month of engineering effort), check out the [3.16](https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-cpu.svg) and [3.17](https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-cpu.svg) CPU sample profiles, as well as the [3.16](https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-allocs.svg) and [3.17](https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-allocs.svg) allocation sample profiles.
 
 These profiles revealed a number of hotspots in the code, and we combined these results with a high-level understanding of the system architecture to come up with a list of changes that would have a substantial impact on both indexing and query performance.
 
-[TODO(efritz): link to and embed architecture diagram in docs here]
+<p class="text-center">
+  <img src="https://raw.githubusercontent.com/sourcegraph/sourcegraph/07cc078e9f506fe8a60a205eba67c54f4eb6db18/doc/dev/architecture/precise-code-intel.svg" title="architecture diagram" />
+</p>
 
 These efforts yielded a 2x speedup in query latency, a 2x speedup in indexing latency, and a nearly 50% reduction in memory and disk load, which we'll evaluate in more detail later in this post.
 
@@ -52,40 +54,49 @@ The way we did this was a bit of a kludge, which we might revisit and clean up l
 
 ## Parallelization
 
-Parsing and I/O occupied a large amount of time spent in the indexing process. Parallelization provided a way to speed up both of these sections of the indexing pipeline:
+Overall, the entire process of converting an LSIF index into a bundle file is a simple, linear pipeline.
 
-![concurrency diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-reader-parallelism.png)
+![concurrency diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-pipeline.png)
 
-[TODO(efritz): description of the pipeline. In particular, wth is the correlator?]
+1. The line reader reads raw LSIF input line-by-line and passes data to the correlator.
+2. The correlator builds an in-memory representation of the LSIF data and passes it to the canonicalizer.
+3. The canonicalizer deduplicates and denormalizes the in-memory representation.
+4. The pruner removes data that is not viewable within Sourcegraph (e.g., index data for uncommitted files)
+5. The grouper converts the in-memory representation to the format that will be stored on disk.
+6. The writer serializes this data to disk.
+
+We identified that the reading and writing steps (marshalling, unmarshalling, and I/O) occupied the majority of time spent, which is where we focused our efforts.
 
 ### Parallel parsing
 
-<!-- **PRs**: -->
-<!-- - [codeintel: Refactor lsif input parsing (#10935)](https://github.com/sourcegraph/sourcegraph/pull/10935) -->
-<!-- - [codeintel: LSIF line reader (#10990)](https://github.com/sourcegraph/sourcegraph/pull/10990) -->
-
 LSIF data is uploaded as JSON, and we can split this JSON into different chunks that can be parsed in parallel. At the end, we assemble the parsed results in their original order.
 
-Parallelization increases throughput, but of course any speedup is pointless if the subsequent step in the pipeline cannot consume the output fast enough. So we dug deeper into the behavior of the code by [TODO(efritz): how did we do this?]. This indicated that this was indeed a slow-produce/fast-consumer situation and that increasing the throughput of the JSON parsing phase would decrease the latency of the overall indexing process.
+Parallelization increases throughput, but of course any speedup is pointless if the subsequent step in the pipeline cannot consume the output fast enough. The [correlator](https://github.com/sourcegraph/sourcegraph/blob/1b35af0dea24a1de748d5c87ccdff148a7391638/cmd/precise-code-intel-worker/internal/correlation/correlate.go#L221) code, which receives each line of the raw LSIF input line-by-line, does basically nothing. It simply asserts the type of the payload based on a vertex or edge label and inserts some identifiers into a map. Watching the top of the heap and allocation profile of the running process showed that the majority of work was happening inside of the `"encoding/json"` package. To ensure that this was really the dominating factor, we removed the calls to the correlator and had the worker simply stream the input into a black hole. The runtime did not change for this portion of the process. This indicated that this was indeed a slow-produce/fast-consumer situation and that increasing the throughput of the JSON parsing phase would decrease the latency of the overall indexing process.
 
 In the implementation, we used channels as bounded queues to break up the parsing into separate jobs that can be processed in parallel. The channel acts as a read-ahead buffer:
-* The unmarshaller goroutines read lines from an input channel, parse it, and place the result into an output element channel. [TODO(efritz): link to section in code here].
-* A batcher process then consumes the items from the element channel in batches, reordering them by input ID to be consistent with the original order in the LSIF data [TODO(efritz): link to code]
-* After the batch receives the expected number of values from the channel, it sends a signal to the unmarshallers to free them to resume work. This signalling procedure ensures that no unmarshaller looks for work past the current batching window (which would be pointless and wasteful). [TODO(efritz): link to code]
-* Each completed batch is then passed to the correlator [TODO(efritz): link to code]
+
+![concurrency diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-reader-parallelism.png)
+
+* The [unmarshaller goroutines](https://github.com/sourcegraph/sourcegraph/blob/0eda838ebbe02021dd1739e3f92bc2fcd9577672/cmd/precise-code-intel-worker/internal/correlation/lsif/lines/reader.go#L65-L72) read lines from an input channel, parse it, and place the result into an output element channel.
+* A [batcher process](https://github.com/sourcegraph/sourcegraph/blob/0eda838ebbe02021dd1739e3f92bc2fcd9577672/cmd/precise-code-intel-worker/internal/correlation/lsif/lines/reader.go#L75-L109) then consumes the items from the element channel in batches, reordering them by input ID to be consistent with the original order in the LSIF data.
+* After the batch receives the expected number of values from the channel, it [sends a signal](https://github.com/sourcegraph/sourcegraph/blob/0eda838ebbe02021dd1739e3f92bc2fcd9577672/cmd/precise-code-intel-worker/internal/correlation/lsif/lines/reader.go#L95-L97) to the unmarshallers to free them to resume work. This signalling procedure ensures that no unmarshaller looks for work past the current batching window (which would be pointless and wasteful).
+* Each completed batch is then [passed](https://github.com/sourcegraph/sourcegraph/blob/0eda838ebbe02021dd1739e3f92bc2fcd9577672/cmd/precise-code-intel-worker/internal/correlation/lsif/lines/reader.go#L104) to the correlator for processing.
+
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/1e83fa635ade825e39b41031b5bd5809cecc2a69#diff-d8ead48c93da52682080c1e083e3157fR1"><pre>1e83fa6</pre></a> reduced conversion time by 31%.
+</div>
 
 ### Writing to SQLite in parallel
 
-<!-- **PR**: [codeintel: SQLite batch write (#11240)](https://github.com/sourcegraph/sourcegraph/pull/11240) -->
-
 The output of the indexing system is a SQLite bundle, which contains 4 categories of data:
 
-* **Document data:** specific to a source range within a particular file
-* **Eesult chunk:** shared between documents sharded by a hashed identifier
-* **Definition data:** acts as a lookup table for ranges by their export monikers
-* **Reference data:** acts as a lookup table for ranges by their import monikers
+* **document data** specific to a particular path within a repository,
+* **result chunk** data shared between documents sharded by a hashed identifier,
+* **definition data** which acts as a lookup table for symbols by their export monikers, and
+* **reference data** which acts as a lookup table for symbols by their import monikers.
 
-[TODO(efritz): The reader has no idea what the significance of these 4 categories of data is. Explain]
+Document data stores a set of ranges (start and end positions), their hover text, and pointers to other (definition and reference) range identifiers
+(which are stored in a result chunk payload). To look up definitions or references for a symbol under a given cursor position, we load the document data for that path, find the range closing the cursor, then look up the associated set of definition identifier. This identifier references another range inside of a particular result chunk. To lookup the set of definitions or references for a particular moniker (which we know the name of, but not where it is defined or referenced), we look up the set of ranges keyed by that moniker in the definition or reference data.
 
 Prior to this change, the worker process would start four goroutines, one for each category, and
 would sequentially [write batches](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/internal/sqliteutil/batch_inserter.go)
@@ -93,16 +104,15 @@ of data into the target table. The SQLite batcher inserter utility is about as f
 sets the correct pragmas, uses a single transaction, and minimizes the number of commands by
 squeezing as many rows into each insert statement as possible.
 
-
 ![concurrency diagram (before)](https://storage.googleapis.com/sourcegraph-assets/lsif-writer-concurrency-before.png)
 
 To increase write throughput, we moved the parallelism into the writer layer. After this change, document data, result chunk data, definition data, and reference data could be written to the bundle in sequence, but each write operation would send data to _n_ batches in parallel. This more evenly distributes the serialize-and-write load across the available number of cores.
 
 ![concurrency diagram (after)](https://storage.googleapis.com/sourcegraph-assets/lsif-writer-concurrency-after.png)
 
-[TODO(efritz): can we show data showing what improved after every optimization?]
-
-
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/7c99cd982e1c3a8e77f2a065f7ae6640a08ba5bb#diff-86711fd26a316ad73cedd5eb066b4c21R1"><pre>7c99cd9</pre></a> reduced conversion time by 10.43%.
+</div>
 
 ## Other code changes: doing _fewer_ things
 
@@ -110,35 +120,39 @@ In addition to simplifying the architecture and parallelizing critical tasks, we
 
 ### Collapse rows in SQLite
 
-<!-- **PR**: [codeintel: Change representation of moniker lookups in bundle files (#11112)](https://github.com/sourcegraph/sourcegraph/pull/11112) -->
-
 Prior to Sourcegraph 3.17, each definition and reference mapped to its own row in the SQLite table. Each such row consisted of the following:
 * An auto-generated numerical UUID
-* LSIF moniker (scheme and identifier) [TODO(efritz): give example]
+* LSIF moniker (scheme and identifier; e.g. `gomod` and `go.etcd.io/etcd/v3/raft:Ready`)
 * A source location (file path, file offset range)
 
 In total, this was 8 columns (1 for the UUID, 2 for the moniker, 5 for the location). An index on the schema and identifier columns enabled fast lookup by moniker. In a given codebase, there can be many millions of such rows.
 
-Because there can be many references to a single definition, there will be many rows with duplicate values for the moniker, which means a lot of redundancy in the SQLite table. Since we are looking up by moniker anyway, it makes sense to group the data by moniker. In 3.17, we did just that, serializing all of the source locations associated with a particular moniker into a single compressed data blob. This reduced the number of rows by several orders of magnitude [TODO(efritz): can we be a bit more precise?].
+Because there can be many references to a single definition, there will be many rows with duplicate values for the moniker, which means a lot of redundancy in the SQLite table. Since we are looking up by moniker anyway, it makes sense to group the data by moniker. In 3.17, we did just that, serializing all of the source locations associated with a particular moniker into a single compressed data blob. This greatly reduced the number of rows written to the database (and to column indexes).
 
-We applied the same principle for document data and result chunk data. This reduced overall SQLite bundle size by around 50%.
+The table below shows the number of definition and reference rows in each bundle file before and after this change in the set of repositories we used for integration testing. The decrease in the number of definition rows written grew proportionally with code size (giving a larger savings the larger the project) and the number of reference rows written decreased by an order of magnitude in all cases.
+
+| repository | definition rows (before) | definition rows (after) | reference rows (before) | reference rows (after) |
+| --- | --- | --- | --- | --- |
+| [pingcap/tidb](https://github.com/pingcap/tidb) | 17,888 | 15,236 (-15%) | 32,2972 | 19,046 (-94%) |
+| [etcd-io/etcd](https://github.com/etcd-io/etcd) | 9,862 | 9,279 (-6%) | 85,718 | 9,990 (-88%) |
+| [distributedio/titan](https://github.com/distributedio/titan) | 1,082 | 1,016 (-6%) | 11,821 | 1,236 (-90%) |
+| [uber-go/zap](https://github.com/uber-go/zap) | 967 | 902 (-7%) | 6,732 | 951 (-86%) |
 
 Due to the reduced size of data, we are also able to insert more definition and references per SQL update query, further decreasing the overall time it takes to write a bundle. (SQLite imposes a hard insertion limit, [SQLITE\_MAX\_VARIABLE\_NUMBER](https://www.sqlite.org/limits.html).)
 
-
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/69bf52c2e3ef2655eb94ba6ed091f439c6c236b4#diff-87794b8e6825323e89453e637c6c6116R117"><pre>69bf52c</pre></a> reduced bundle sizes by 50%.
+</div>
 
 ### Faster, smaller serialization
 
-<!-- **PR**: [codeintel: Gob serialization (#11230)](https://github.com/sourcegraph/sourcegraph/pull/11230) -->
+We replaced the gzipped JSON-encoded bundle payloads with gzipped [gob-encoded](https://golang.org/pkg/encoding/gob/) structures. This reduced heap allocations, reduced overall bundle size, and yielded small improvements in overall indexing time. Most importantly, this allowed us to remove some tech debt caused by data structures that had evolved to become more complex over time. In particular, we used custom [replacers](https://github.com/sourcegraph/sourcegraph/blob/a5232c14d15f1e18f6d20ae6d15e5c1fe68bb244/lsif/src/encoding.ts#L99) to enable the serialization of TypeScript maps and sets, which we had to [replicate](https://github.com/sourcegraph/sourcegraph/blob/f1644db9bbb75683fcc14e64ead9746338b38669/internal/codeintel/bundles/serializer/default_serializer.go#L355) in the Go rewrite in order to continue reading previously generated bundle files.
 
-We replaced the gzipped JSON-encoded bundle payloads with gzipped [gob-encoded](https://golang.org/pkg/encoding/gob/) structures. This reduced heap allocations, reduced overall bundle size, and yielded small improvements in overall indexing time. Most importantly, however, this allowed us to remove some tech debt caused by data structures that had evolved to become more complex over time.
-
-[TODO(efritz): can we give an example of what we mean by "tech debt caused by data shape degraded over time"? Not exactly sure what that means.]
-
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/d17750ffd9aecafdc68fdeb9a6dbc7e62e876c5c#diff-baa2de1a12d5be3e15c550035933d4e5R1"><pre>d17750f</pre></a> reduced bundle sizes by 10%.
+</div>
 
 ### Empty slice allocations
-
-<!-- **PR**: [codeintel: Reduce allocations in serializer (#10997)](https://github.com/sourcegraph/sourcegraph/pull/10997) -->
 
 After porting the LSIF indexing system from TypeScript to Go, our code was littered with empty slice allocations like this one:
 
@@ -157,6 +171,10 @@ rangePairs := make([]interface{}, 0, len(d.Ranges))
 ```
 
 In our case, rewriting empty slice allocations to have non-zero capacities did not make a huge impact on overall performance, but it was easy to do and yielded better readability by making the purpose of new empty slices clearer.
+
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/8a905acbbfeadd09d45174742bc94df7b5d42057#diff-8b8dfca408b173d88fdef9e4637735abR19"><pre>8a905ac</pre></a> reduced conversion time by 9.35%.
+</div>
 
 ### Maps vs. structs
 
@@ -203,9 +221,11 @@ func (*jsonSerializer) MarshalDocumentData(d types.DocumentData) ([]byte, error)
 
 In Go, map values are allocated on the heap, while non-pointer struct instances are allocated on the stack. The switch from heap allocation to stack allocation for this data yielded substantial improvements in performance.
 
-### Reducing data movement
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/8a905acbbfeadd09d45174742bc94df7b5d42057#diff-8b8dfca408b173d88fdef9e4637735abR25"><pre>8a905ac</pre></a> reduced conversion time by 9.35%.
+</div>
 
-<!-- **PR**: [codeintel: Refactor resolvers package (#11450)](https://github.com/sourcegraph/sourcegraph/pull/11450) -->
+### Reducing data movement
 
 The conventional wisdom holds that stack allocation is often more efficient than heap allocation, but this is not always the case. For example, there are cases where naive stack allocation will result in unnecessary copying. Consider the following for-loop, which is representative of a pattern that was quite common in our code:
 
@@ -247,21 +267,23 @@ for i := range locations {
 }
 ```
 
-At runtime, this eliminates the need to copy the 216 bytes of each slice element into an intermediate `location` variable before copying it again into the activation record of the `resolveLocation` function call. This yielded a surprising impact on overall query latency [TODO(efritz): can we specify how much?].
+At runtime, this eliminates the need to copy the 216 bytes of each slice element into an intermediate `location` variable before copying it again into the activation record of the `resolveLocation` function call.
+
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/d1f8cafdf952d8eeabadfd38f4ebae0050c06a11"><pre>d1f8caf</pre></a> reduced conversion time by 26.18%.
+</div>
 
 ### Efficient JSON parsing
-
-<!-- **PR**: [codeintel: Replace encoding/json with json-iterator/go for reading LSIF (#10992)](https://github.com/sourcegraph/sourcegraph/pull/10992) -->
 
 The Go standard library's JSON parser is reliable and has an easy-to-use API. However, it is not hyper-optimized for performance. Profiling showed that the most CPU time in the correlation phase of indexing was spent in the `"encoding/json"` package, due to its heavy use of reflection.
 
 We looked at several other options for JSON parsing in Go ([easyjson](https://github.com/mailru/easyjson), [fastjson](https://github.com/valyala/fastjson), [ffjson](https://github.com/pquerna/ffjson)) before finally settling on json-iterator/go, a high-performance drop-in replacement for the standard library's `encoding/json` package. The low switching cost and the efficiency of decoding small structures (which are common in LSIF vertex and edge definitions) were the key considerations that motivated our choice.
 
-[TODO(efritz): what perf impact did this have?]
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/6b12b267574d1870664389e8840255af04a30b6d#diff-ab549083ae1ef9af86ec1fcc8dd1a8c8R15"><pre>6b12b26</pre></a> reduced conversion time by 19.02%.
+</div>
 
 ### Avoid unnecessary disk writes
-
-<!-- **PR**: [codeintel: GetUpload should return reader, not file (#11042)](https://github.com/sourcegraph/sourcegraph/pull/11042) -->
 
 The bundle manager acts as a sort of hub in the code navigation indexing system, fetching LSIF data and serving it to workers, which then convert it into SQLite bundles that are then passed back to the bundle to write to disk.
 
@@ -271,6 +293,9 @@ This disk-write turned out to be unnecessary, as we could simply pass the HTTP r
 
 This yielded a performance boost that became more significant the larger the codebase and corresponding LSIF data.
 
+<div class="alert alert-success">
+  Commit <a href="https://github.com/sourcegraph/sourcegraph/commit/2eae464dcd21a4573cdafef167eabee99af773f1#diff-2978e84d13764ae85636a117d5e3e9d4R188"><pre>2eae464</pre></a> reduced conversion time by 20.13%.
+</div>
 
 ## Reviewing results
 
@@ -297,7 +322,8 @@ These last charts show the size of the converted bundle on disk after conversion
 </div>
 
 <style>
-  .blog-post__body .benchmark-results img { box-shadow: none; display: inline; margin: 10px auto; }
+  .blog-post__body img { box-shadow: none; display: inline; margin: 10px auto; }
+  .blog-post__body .alert pre { display: inline; }
 </style>
 
 With all the changes discussed in this post combined, the latency for queries and upload processing has been cut by a factor of two, as has the size of bundles on disk, compared to Sourcegraph 3.15.
