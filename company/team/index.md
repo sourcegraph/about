@@ -320,6 +320,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a peace of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics.  Plus za'atar - he covers everything he can in za'atar.
 
 
+## Alicja Suska (she/her)
+
+- /aˈlʲit͡s.ja/
+- Product Designer
+- Poznań, Poland 🇵🇱
+- [alicja@sourcegraph.com](mailto:alicja@sourcegraph.com), [LinkedIn](https://pl.linkedin.com/in/alicja-suska-1a5384a9), [GitHub](https://github.com/AlicjaSuska)
+- Alicja is a designer who loves painting furniture and creating isometric illustrations. She lives in Poznań with her Samoyed dog, Edward. Prior to Sourcegraph, Alicja was working at Toggl, the company that provides time tracking and work management tools. She comes from the artistic background - she earned a BA in Interior Design and a MS in Graphics.
+
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
