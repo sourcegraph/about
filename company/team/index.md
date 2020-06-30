@@ -7,7 +7,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Full Name (optional pronouns)
 
 - Describe how to pronounce your name
-- Team - Role(s)
+- Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
@@ -311,7 +311,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Gonzalo Peci (he/him)
 
-- [Distribution](../../handbook/engineering/distribution/index.md) - Engineering Manager
+- Engineering Manager
 - Palma de Mallorca, Balearic Islands, Spain, 🇪🇸
 - [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [LinkedIn](https://linkedin.com/in/pecig), [GitHub](https://github.com/pecigonzalo), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
@@ -322,7 +322,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Full Name (optional pronouns)
 
 - Describe how to pronounce your name
-- Team - Role(s)
+- Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Bio (hobbies, work experience, family, pets, etc.)
