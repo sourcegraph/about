@@ -7,7 +7,7 @@ publishDate: 2020-06-17T10:00-08:00
 tags: [blog]
 slug: performance-improvements-in-precise-code-intel
 heroImage: /blog/flying-brain.png
-published: false
+published: true
 ---
 
 In [Sourcegraph 3.16](/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we mentioned a rewrite of the services composing the precise-code-intel backend from TypeScript to Go. There were many reasons for this rewrite, but there's one particular reason that I'd like to explore here: _We as a team know how to improve Go code that operates on large-scale data and we have less experience doing the same for TypeScript on the server side_.
