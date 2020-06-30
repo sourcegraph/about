@@ -123,8 +123,8 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Customers',
-            description: 'TODO(sqs)',
+            title: 'Sourcegraph - Customers',
+            description: 'See how our customers use Sourcegraph to solve big problems',
             image: 'TODO(sqs)',
         }}
         heroAndHeaderClassName="customers-page__header-and-hero"
@@ -133,32 +133,41 @@ export default ((props: any) => (
                 <div className="row">
                     <div className="col-lg-7 mt-6 mb-6">
                         <h1 className="display-1 font-weight-bold mb-0">
-                            Solving&nbsp;big&nbsp;problems for software&nbsp;teams
+                            Our customers use Sourcegraph to solve big problems
                         </h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
-                            Sourcegraph helps companies of all sizes in all industries move fast and stay secure when
-                            building software.
+                            Sourcegraph helps companies of all sizes in all industries to move fast, find and fix
+                            things, and address security risks when building software.
                         </p>
                     </div>
                     <div className="col-lg-5 mt-6 pt-4 mb-6">
                         <h5 className="font-weight-normal">See how customers use Sourcegraph to:</h5>
                         <div className="list-group">
-                            <Link to="#" className="list-group-item list-group-item-action">
-                                Onboard developers faster <ArrowRightIcon className="icon-inline ml-1" />
+                            <Link to="#code-search" className="list-group-item list-group-item-action">
+                                Find the needle in the codebase haystack <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#" className="list-group-item list-group-item-action">
-                                Fix critical security problems in hours, not days{' '}
+                            <Link to="#code-reviews" className="list-group-item list-group-item-action">
+                                Catch more bugs with better code reviews
                                 <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#" className="list-group-item list-group-item-action">
-                                Catch more bugs in code review <ArrowRightIcon className="icon-inline ml-1" />
+                            <Link to="#onboard" className="list-group-item list-group-item-action">
+                                Onboard faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#" className="list-group-item list-group-item-action">
-                                Make coding delightful and more productive{' '}
+                            <Link to="#security" className="list-group-item list-group-item-action">
+                                Find critical security problems in hours, not days
                                 <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#" className="list-group-item list-group-item-action">
-                                Find incident root causes faster <ArrowRightIcon className="icon-inline ml-1" />
+                            <Link to="#browser" className="list-group-item list-group-item-action">
+                                Make coding more efficient <ArrowRightIcon className="icon-inline ml-1" />
+                            </Link>
+                            <Link to="#campaigns" className="list-group-item list-group-item-action">
+                                Automated code changes > manual <ArrowRightIcon className="icon-inline ml-1" />
+                            </Link>
+                            <Link to="#knowledge" className="list-group-item list-group-item-action">
+                                Encourage knowledge sharing across teams <ArrowRightIcon className="icon-inline ml-1" />
+                            </Link>
+                            <Link to="#root-causes" className="list-group-item list-group-item-action">
+                                Identify root causes with confidence <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
                     </div>
@@ -177,93 +186,314 @@ export default ((props: any) => (
         </Helmet>
         <div className="customers-page">
             <CustomerLogosSection className="my-6" />
-            <hr className="my-6" />
-            <ContentSection className="my-6">
-                <h2 className="display-3 font-weight-bold">Onboard developers faster.</h2>
+            <ContentSection className="my-6" id="code-search">
+                <hr className="my-6" />
                 <div className="row">
                     <div className="col-lg-5 mt-5">
-                        <p>Code is complex.</p>
-                        <div className="pt-1">
-                            <Link className="d-flex align-items-center" to="TODO(sqs)">
-                                How Convoy's developers onboard faster with Sourcegraph{' '}
+                        <h2 className="display-3 font-weight-bold">Find the needle in the codebase haystack</h2>
+                        <p>
+                            Search repositories from any code host, with support for regular expressions, punctuation,
+                            symbols, and advanced syntax-aware pattern matching. Narrow results with powerful search
+                            filters for file, language, path, custom repository groups and other attributes, and across
+                            version contexts, merge diffs, and commit messages. Sourcegraph’s visual and interactive
+                            query builder constructs complex queries to find and filter code in ways IDEs and code hosts
+                            can’t.
+                        </p>
+                    </div>
+                    <div className="col-lg-7 mt-5 pl-lg-6">
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/ZtnqWhIcLeg?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center pt-4">
+                        <div className="col-lg-10 text-center">
+                            <img src="/external-logos/yelp.svg" width="130px" />
+                            <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                                <p>
+                                    Sourcegraph empowers developers at Yelp to ship code faster and more reliably than
+                                    ever before. Code intelligence features such as Go-to-Definition and Find References
+                                    are heavily-used features that enable developers to understand the plethora of
+                                    microservices and libraries in our code base.
+                                </p>
+                                <footer className="blockquote-footer">Kevin Chen, Software Engineer, Yelp</footer>
+                            </blockquote>
+                            <Link to="https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html">
+                                Yelp Engineering Blog: Winning the Hackathon with Sourcegraph
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
+                    </div>
+                </div>
+                <hr className="my-6" />
+            </ContentSection>
+            <ContentSection className="my-6" id="code-reviews">
+                <div className="row">
+                    <div className="col-lg-5 mt-5">
+                        <h2 className="display-3 font-weight-bold">Catch more bugs with better code reviews</h2>
+                        <p>
+                            Make code reviews fast, thorough, and less painful—no more tl;dr. Mistakes that slip past
+                            code review are 10x harder to fix. Slow code reviews hurt productivity and morale.
+                            Sourcegraph provides contextual code insights and pulls live data from external services so
+                            code reviews are done right.
+                        </p>
+                    </div>{' '}
+                    <div className="col-lg-7 mt-5 pl-lg-6">
+                        <h5>Sourcegraph and GitLab: See code discovery and code review in action</h5>
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/LgpuH2iaZ3w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center pt-4">
+                        <div className="col-lg-10 text-center">
+                            <img src="/external-logos/workiva-vector-logo.svg" width="150px" />
+                            <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                                <p>
+                                    In a code review, you're given a very truncated view of the code, from dozens of
+                                    different places, different repos, or different libraries. It can be difficult,
+                                    particularly if you're not an expert in that codebase, to grok all of that stuff
+                                    instantly. Being able to get contextual information on code reviews, particularly
+                                    across repos, is really useful
+                                </p>
+                                <footer className="blockquote-footer">
+                                    Trent Grover, Director of Architecture at Workiva
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <hr className="my-6" />
+            </ContentSection>
+            <ContentSection className="my-6" id="onboard">
+                <div className="row">
+                    <div className="col-lg-5 mt-5">
+                        <h2 className="display-3 font-weight-bold" id="onboard">
+                            Onboard faster
+                        </h2>
+                        <p>
+                            Reduce the time to first commit. Explore code in production and understand new and
+                            unfamiliar codebases, with minimal context-switching. Sourcegraph enables link sharing to
+                            specific code with peers and managers, so questions get answered faster and with less
+                            effort.
+                        </p>
                     </div>
                     <div className="col-lg-7 mt-5 pl-lg-6">
                         <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
-            </ContentSection>
-            <hr className="my-6" />
-            <ContentSection className="my-6">
-                <h2 className="display-3 font-weight-bold">Fix critical security problems in hours, not days.</h2>
-                <div className="row">
-                    <div className="col-lg-5 mt-5">
-                        <p>Code is complex.</p>
-                        <div className="pt-1">
-                            <Link className="d-flex align-items-center" to="TODO(sqs)">
-                                How Convoy's developers onboard faster with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                <div className="row justify-content-center pt-6">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/convoy-logo.svg" width="150px" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                For our new developers, Sourcegraph has been invaluable to get to know the repository
+                                structure, to track down where code lives, and self-service during their investigations.
+                            </p>
+                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                        </blockquote>{' '}
+                        <Link to="/case-studies/convoy-improved-on-boarding">
+                            How Convoy's developers onboard faster with Sourcegraph{' '}
+                            <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </Link>{' '}
                     </div>
                 </div>
+                <hr className="my-6" />
             </ContentSection>
-            <hr className="my-6" />
-            <ContentSection className="my-6">
-                <h2 className="display-3 font-weight-bold">Catch more bugs in code review.</h2>
+
+            <ContentSection className="my-6" id="security">
                 <div className="row">
                     <div className="col-lg-5 mt-5">
-                        <p>Code is complex.</p>
-                        <div className="pt-1">
-                            <Link className="d-flex align-items-center" to="TODO(sqs)">
-                                How Convoy's developers onboard faster with Sourcegraph{' '}
+                        <h2 className="display-3 font-weight-bold">
+                            Find critical security problems in hours, not days
+                        </h2>
+                        <p>
+                            Mitigate tech security and compliance risks with saved searches to alert for known
+                            vulnerabilities and risky code changes. Find every identified pattern, package, or API, with
+                            queries returning all matching search results. Campaigns then automate the process of
+                            fixing, merging, and deploying the necessary changes across codebases.
+                        </p>
+                    </div>
+                    <div className="col-lg-7 mt-5 pl-lg-6">
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/OGd8wr7XpgU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center pt-6">
+                        <div className="col-lg-10 text-center">
+                            <img src="/external-logos/quantcast-logo.svg" width="150px" />
+                            <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                                <p>
+                                    Sourcegraph’s search gave us confidence because we knew we wouldn't overlook
+                                    anything. Sourcegraph returns all search results, it doesn’t drop or elide them.
+                                </p>
+                                <footer className="blockquote-footer">
+                                    Simon Law, Staff Software Engineer, Quantcast
+                                </footer>
+                            </blockquote>
+                            <Link to="/case-studies/quantcast-large-scale-refactoring/">
+                                Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring{' '}
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
-                    </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
+                <hr className="my-6" />
             </ContentSection>
-            <hr className="my-6" />
-            <ContentSection className="my-6">
-                <h2 className="display-3 font-weight-bold">Make coding delightful and more productive.</h2>
+            <ContentSection className="my-6" id="browser">
                 <div className="row">
                     <div className="col-lg-5 mt-5">
-                        <p>Code is complex.</p>
-                        <div className="pt-1">
-                            <Link className="d-flex align-items-center" to="TODO(sqs)">
-                                How Convoy's developers onboard faster with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>
-                        </div>
+                        <h2 className="display-3 font-weight-bold">Make coding more efficient</h2>
+                        <p>
+                            {' '}
+                            Stay in flow and find answers quickly. Minimize the impact of context switches to streamline
+                            day-to-day tasks. Sourcegraph’s browser-based interface lets developers maintain their
+                            editor state while exploring other parts of the code, greatly improving productivity.
+                        </p>
                     </div>
                     <div className="col-lg-7 mt-5 pl-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                        <img src="/screenshots/code-page-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
+                <div className="row justify-content-center pt-6">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/sofi-logo.svg" width="100px" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our
+                                engineers can understand all of the repercussions of committing a change to a service
+                                that is exposed to other services.
+                            </p>
+                            <footer className="blockquote-footer">Ursula Robertson, Engineering Manager, SoFi</footer>
+                        </blockquote>
+                        <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
+                            SoFi adopts Sourcegraph Universal Code Search to manage hundreds of microservices
+                            <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </Link>
+                    </div>
+                </div>
+                <hr className="my-6" />
             </ContentSection>
-            <hr className="my-6" />
-            <ContentSection className="my-6">
-                <h2 className="display-3 font-weight-bold">Find incident root causes faster.</h2>
+            <ContentSection className="my-6" id="campaigns">
                 <div className="row">
                     <div className="col-lg-5 mt-5">
-                        <p>Code is complex.</p>
-                        <div className="pt-1">
-                            <Link className="d-flex align-items-center" to="TODO(sqs)">
-                                How Convoy's developers onboard faster with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>
-                        </div>
+                        <h2 className="display-3 font-weight-bold">Automated code changes > manual</h2>
+                        <p>
+                            Move quickly and safely when removing legacy code, fixing critical security issues, and
+                            paying down tech debt. Identify which call sites might be affected by changes, and run
+                            campaigns to compute diffs and create branches and pull requests across multiple
+                            repositories. Large-scale code changes and refactors can be painless, more accurate, and
+                            faster, when done automatically with Sourcegraph
+                        </p>
                     </div>
                     <div className="col-lg-7 mt-5 pl-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center pt-4">
+                        <div className="col-lg-10 text-center">
+                            <img src="/external-logos/lyft-logo.svg" width="100px" />
+                            <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                                <p>
+                                    Sourcegraph gives us the ability to search for and refactor references to deprecated
+                                    services, libraries, URL patterns, and more across our 2000+ repositories, and the
+                                    confidence that we're not leaving anyone behind.
+                                </p>
+                                <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <hr className="my-6" />
+            </ContentSection>
+            <ContentSection className="my-6" id="knowledge">
+                <div className="row">
+                    <div className="col-lg-5 mt-5">
+                        <h2 className="display-3 font-weight-bold">Encourage knowledge sharing across teams</h2>
+                        <p>Stay in flow and find answers quickly. </p>
+                        <p>
+                            Collaborate more effectively with developers, data scientists, and other teams. Share
+                            hyperlinks to specific code in a web interface so the recipient can immediately explore and
+                            understand the code. For remote and distributed engineering teams using Sourcegraph, these
+                            code links become essential conduits of knowledge, shared hundreds of times per day over
+                            chat, on issue trackers, and in docs.
+                        </p>
+                    </div>
+                    <div className="col-lg-7 mt-5 pl-lg-6">
+                        <img src="/white-papers/remotework_codelinksharing.png" className="home__screenshot w-100" />
+                    </div>
+                </div>
+                <div className="row justify-content-center pt-6">
+                    <div className="col-lg-10 text-center">
+                        <img src="/external-logos/convoy-logo.svg" width="150px" />
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                Sourcegraph helps you find out who is using what, making it much easier to deprecate,
+                                update or iterate on it. To be able to answer this question in code is extremely
+                                powerful and people call it out all the time.
+                            </p>
+                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                        </blockquote>
+                        <Link to="/case-studies/convoy-software-engineers-and-data-scientists-work-better-together/">
+                            Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists
+                            work better together
+                            <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </Link>
+                    </div>
+                </div>
+                <hr className="my-6" />
+            </ContentSection>
+            <ContentSection className="my-6" id="root-causes">
+                <div className="row">
+                    <div className="col-lg-12 mt-5">
+                        <h2 className="display-3 font-weight-bold">Identify incident root causes with confidence </h2>
+                        <p>
+                            Find incident root causes faster and reduce the time to recovery. Identify breaking changes
+                            with diff and commit search returning recent changes related to a specific function or error
+                            message. SREs and DevOps teams need Sourcegraph when responding to incidents where the
+                            application producing an error message is unknown.
+                        </p>
+                        <div className="row justify-content-center py-4">
+                            <div className="col-lg-10 text-center">
+                                <img src="/external-logos/quantcast-logo.svg" width="150px" />
+                                <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                                    <p>
+                                        Saved searches allow us to constantly monitor code that manages personal data,
+                                        organization wide, before changes land in production.
+                                    </p>
+                                    <footer className="blockquote-footer">
+                                        Simon Law, Staff Software Engineer, Quantcast
+                                    </footer>
+                                </blockquote>
+                                <Link to="/case-studies/quantcast-large-scale-refactoring/">
+                                    Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring{' '}
+                                    <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ContentSection>

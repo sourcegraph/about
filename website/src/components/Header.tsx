@@ -74,15 +74,6 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
-                                                to="/universal-code-search"
-                                                activeClassName="header__nav-link-active"
-                                            >
-                                                What is Universal Code Search?
-                                            </Link>
-                                        </li>
-                                        <li className="header__nav-item nav-item" role="presentation">
-                                            <Link
-                                                className="header__nav-link nav-link"
                                                 to="/customers"
                                                 activeClassName="header__nav-link-active"
                                             >
