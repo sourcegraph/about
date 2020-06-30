@@ -5,7 +5,6 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## Company
 
 - [Strategy](../company/strategy.md)
-- [Direction (2020 product strategy)](../direction/index.md)
 - [Handbook usage](usage.md)
 - [Editing the handbook](editing.md)
 - [Communication](communication/index.md)
@@ -23,8 +22,10 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 ### [Product](product/index.md)
 
-- [Product Management](product/product_management/index.md)
-- [Product Design](product/design/index.md)
+- [Direction (2020 product strategy)](../direction/index.md)
+- [Product](product/index.md)
+  - [Product Management](product/product_management/index.md)
+  - [Product Design](product/design/index.md)
 
 ### [Engineering](engineering/index.md)
 
