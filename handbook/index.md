@@ -12,28 +12,30 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Team](../company/team/index.md)
 - [CEO](ceo/index.md)
 
-## People Ops
+## Teams
+
+### People Ops
 
 - [People Ops](people-ops/index.md)
   - [Leadership](leadership/index.md)
   - [1-1](leadership/1-1.md)
 
-## Product
+### [Product](product/index.md)
 
 - [Direction (2020 product strategy)](../direction/index.md)
 - [Product](product/index.md)
 - [Design](product/design/index.md)
 
-## Engineering
+### Engineering
 
 - [Engineering](engineering/index.md)
 
-## Customer Engineering
+### Customer Engineering
 
 - [Customer engineering](ce/index.md)
   - [Support](ce/support.md)
 
-## Marketing
+### Marketing
 
 - [Marketing](marketing/index.md)
   - [Messaging](marketing/messaging.md)
@@ -46,10 +48,10 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Online content](marketing/content.md)
   - [Website style guide](marketing/website_style_guide.md)
 
-## Sales
+### Sales
 
 - [Sales](sales/index.md)
 
-## Business Operations
+### Business Operations
 
 - [Business Operations](bizops/index.md)
