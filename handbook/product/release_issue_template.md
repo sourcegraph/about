@@ -39,7 +39,9 @@ This template is used for tracking blog post activities for our monthly major/mi
   - Engineering - post to #dev-announce tagging engineers involved creating features: The blog post draft for <VERSION> is ready. @DEV1, @DEV2 and @DEV3, please review your parts are accurate and provide feedback by <DATE>: <link>
   - Executive - post to #leadership-chat 
 - 10th of the month
-  - [ ] Marketing has sign off from Product, Engineering, and Executive
+  - [ ] Marketing receives feedback from Product, Engineering, and Executive
+  - [ ] Marketing makes edits and drafts as .md file in GitHub in about/blogposts/2020/ folder
+  - Write a warning at the top of the Google doc: The blog post has been finalized and moved to Markdown, further changes here will not be reflected. Contact @MARKETING for suggestions.
 - Branch cut (5 business days before 20th)
   - [ ] Blog post finalized
   - [ ] Transposed into email and social media
