@@ -12,11 +12,11 @@ export const TrySourcegraph: React.FunctionComponent<{ className?: string }> = (
                     local and secure).
                 </p>
             </div>
-            <div className="col-md-6 mt-4 pt-3 text-right">
-                <Link className="btn btn-outline-secondary mr-2" to="/contact/request-demo" title="Request a demo">
+            <div className="col-md-6 mt-4 pt-3 align-self-center text-center">
+                <Link className="btn btn-outline-secondary mx-2 mb-3" to="/contact/request-demo" title="Request a demo">
                     Schedule a demo
                 </Link>
-                <Link className="btn btn-primary" to="/get-started" title="Try Sourcegraph now">
+                <Link className="btn btn-primary mx-2 mb-3" to="/get-started" title="Try Sourcegraph now">
                     Try Sourcegraph now
                 </Link>
             </div>
