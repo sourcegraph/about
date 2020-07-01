@@ -45,7 +45,10 @@ This template is used for tracking blog post activities for our monthly major/mi
 - Branch cut (5 business days before 20th)
   - [ ] Blog post finalized
   - [ ] Transposed into email and social media
+- 18th of the month
+  - [ ] Marketing: confirm with Product and Engineering for any last minute release changes that might affect the blog post, e.g. last minute feature removal
 - Release day (20th of the month) at 10 AM PST
+  - [ ] Marketing: Publish blog post
   - [ ] Publish blog post
 - Announcement day (either release day or 1st business day after) at 10 AM PST
   - [ ] Send email
