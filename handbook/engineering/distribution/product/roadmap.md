@@ -4,12 +4,6 @@ This living document is the product roadmap for the Distribution team.
 
 It is longer-term than our quarterly OKRs, and higher-level than our GitHub issues. Additionally, it documents dependencies of roadmap items and current owners.
 
-## IMPORTANT: This is a WIP!
-
-At least this much is missing:
-
-- Monitoring federation
-
 ## Ordered & prioritized roadmap
 
 1. (Q1 2020) [Support customers in deploying Sourcegraph with 500k+ repositories](support-customers-in-deploying-sourcegraph-with-500k-repositories)
@@ -23,6 +17,7 @@ At least this much is missing:
 1. (TBD) [All site admins should have alerting set up to be notified when Sourcegraph is unhealthy](#all-site-admins-should-have-alerting-set-up-to-be-notified-when-sourcegraph-is-unhealthy)
 1. (TBD) [Push site admins to use Docker Compose or Kubernetes for production deployments](#push-site-admins-to-use-docker-compose-or-kubernetes-for-production-deployments)
 1. (TBD) [Add monitoring for common critical issues](#add-monitoring-for-common-critical-issues)
+1. (TBD) [Monitoring federation](#monitoring-federation)
 1. (TBD) [GitOps for all internal infrastructure](#gitops-for-all-internal-infrastructure)
 
 ## Details (unordered)
@@ -131,7 +126,23 @@ Engineers at Sourcegraph are not as connected to our customers as they could be,
 
 ### All site admins should have alerting set up to be notified when Sourcegraph is unhealthy
 
-TODO(slimsag): spec this section out
+TODO(slimsag): explain this
+
+- Owner: Robert
+- Status: in progress
+- [Tracking issue](https://github.com/orgs/sourcegraph/projects/68?card_filter_query=label%3Amonitoring-for-all)
+- Discussions: TODO
+- Dependencies: none
+
+### Monitoring federation
+
+TODO(slimsag): explain this
+
+- Owner: none
+- Status: not planned
+- Tracking issue: TODO
+- Discussions: TODO
+- Dependencies: none
 
 ### Prevent admins from missing manual migrations
 
@@ -139,7 +150,7 @@ Sourcegraph occasionally requires manual migrations when upgrading. These [are d
 
 - Owner: none
 - Status: not planned
-- Tracking issue: N/A
+- Tracking issue: TODO
 - Discussions: [RFC 81](https://docs.google.com/document/d/1cDrQuLly_QZ_XoDDR41hgF3qCUGojvSXItI-knaBDY4/edit)
 - Dependencies:
 
