@@ -76,7 +76,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
                                 Learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -132,8 +132,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             thousands of repositories.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
+                                Read the documentation to learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -156,8 +156,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             local context.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/code_intelligence">
+                                Read the documentation to learn more about code intelligence <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -166,15 +166,15 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="py-6 mb-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2>TODO code review and code host integrations</h2>
+                        <h2>Make large-scale code changes</h2>
                         <p>
                             Remove legacy code, fix critical security issues, and pay down tech debt. Run campaigns
                             to compute diffs and create breaches and pull/merge requests across multiple repositories.
                             With Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/campaigns">
+                                Read the documentation to learn more about campaigns <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -196,8 +196,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             like proposing an automated refactor to fix a problem detected through this static analysis.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="mailto:feedback@sourcegraph.com">
+                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
