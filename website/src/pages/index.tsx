@@ -38,8 +38,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
                             <p className="home__semiwide-paragraph my-5">
                                 Find and fix things across all of your code faster with Sourcegraph. Onboard
-                                to a new codebase, make large-scale refactors, address security risks, root-cause
-                                incidents, and more.
+                                to a new codebase, make large-scale refactors, increase efficiency, address security risks,
+                                root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
                                 <Link className="btn btn-primary" to="/get-started">
@@ -101,7 +101,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             on Rails – a nonstarter for modern development teams. Code search must be universal to be effective.
                         </p>
                         <p className="my-5">    
-                            Universal code search enables you to navigate and understand interdependent codebases — repositories,
+                            Universal code search enables you to navigate and understand interdependent codebases — across repositories,
                             programming languages, code hosts, version control systems, services, and APIs — to find the code and
                             other information you need to do your job. 
                         </p>
@@ -133,7 +133,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
-                                Read the documentation to learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Read the documentation on code search <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/code_intelligence">
-                                Read the documentation to learn more about code intelligence <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Read the documentation on code intelligence <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -169,12 +169,12 @@ const Index: React.FunctionComponent = (props: any) => (
                         <h2>Make large-scale code changes</h2>
                         <p>
                             Remove legacy code, fix critical security issues, and pay down tech debt. Run campaigns
-                            to compute diffs and create breaches and pull/merge requests across multiple repositories.
+                            to compute diffs and create breaches and pull or merge requests across multiple repositories.
                             With Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/campaigns">
-                                Read the documentation to learn more about campaigns <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Read the documentation on campaigns <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
