@@ -53,5 +53,6 @@ This template is used for tracking blog post activities for our monthly major/mi
 - Announcement day (either release day or 1st business day after) at 10 AM PST
   - [ ] Marketing: Send email
   - [ ] Send tweet
-  - [ ] Post to other social media
+  - [ ] Marketing: Post to other social media (Facebook, LinkedIn)
+  - [ ] Marketing: Share links to blog posts, tweet, and other social in #dev-announce Slack channel  
   - [ ] Engineers post their promotions about their work
