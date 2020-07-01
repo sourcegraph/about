@@ -34,14 +34,15 @@ This template is used for tracking blog post activities for our monthly major/mi
   - [ ] Marketing: Craft off a narrative for the release
 - 5th of the month
   - [ ] Marketing: Share blog post for review as a Google doc
-    - Marketing team - post to #marketing
-  - Product – post to #product and tag @christina and @pooja
-  - Engineering - post to #dev-announce tagging engineers involved creating features: The blog post draft for <VERSION> is ready. @DEV1, @DEV2 and @DEV3, please review your parts are accurate and provide feedback by <DATE>: <link>
-  - Executive - post to #leadership-chat 
+   - Marketing team - post to #marketing
+   - Product – post to #product and tag @christina and @pooja
+   - Engineering - post to #dev-announce tagging engineers involved creating features: The blog post draft for VERSION is ready. @DEV1, @DEV2 and @DEV3, please review your parts are accurate and provide feedback by DATE: link
+   - Executive - post to #leadership-chat
+  [ ] Remove `motd` previous release promotion from [Sourcegraph.com global settings](https://sourcegraph.com/site-admin/global-settings)
 - 10th of the month
   - [ ] Marketing receives feedback from Product, Engineering, and Executive
-  - [ ] Marketing makes edits and drafts as .md file in GitHub in about/blogposts/2020/ folder
-  - Write a warning at the top of the Google doc: The blog post has been finalized and moved to Markdown, further changes here will not be reflected. Contact @MARKETING for suggestions.
+  - [ ] Marketing makes edits and drafts as .md file in GitHub in [about/blogposts/2020/](https://github.com/sourcegraph/about/tree/master/blogposts/2020) folder
+   - Write a warning at the top of the Google doc: The blog post has been finalized and moved to Markdown, further changes here will not be reflected. Contact @MARKETING for suggestions.
 - Branch cut (5 business days before 20th)
   - [ ] Marketing receives sign off for copy from Product, Engineering, and Executive
   - [ ] Marketing: Blog post finalized
@@ -49,7 +50,6 @@ This template is used for tracking blog post activities for our monthly major/mi
 - 18th of the month
   - [ ] Marketing: confirm with Product and Engineering for any last minute release changes that might affect the blog post, e.g. last minute feature removal
 - Release day (20th of the month) at 10 AM PST
-  - [ ] Marketing: Publish blog post
   - [ ] Marketing: Publish blog post
 - Announcement day (either release day or 1st business day after) at 10 AM PST
   - [ ] Marketing: Send email
