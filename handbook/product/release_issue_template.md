@@ -51,7 +51,7 @@ This template is used for tracking blog post activities for our monthly major/mi
   - [ ] Marketing: Publish blog post
   - [ ] Publish blog post
 - Announcement day (either release day or 1st business day after) at 10 AM PST
-  - [ ] Send email
+  - [ ] Marketing: Send email
   - [ ] Send tweet
   - [ ] Post to other social media
   - [ ] Engineers post their promotions about their work
