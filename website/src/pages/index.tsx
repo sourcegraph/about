@@ -37,7 +37,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
                             <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
                             <p className="home__semiwide-paragraph my-5">
-                                Find and fix things across all of your code much faster with Sourcegraph. Onboard
+                                Find and fix things across all of your code faster with Sourcegraph. Onboard
                                 to a new codebase, make large-scale refactors, address security risks, root-cause
                                 incidents, and more.
                             </p>
@@ -99,11 +99,11 @@ const Index: React.FunctionComponent = (props: any) => (
                         <p className="my-5">
                             Search limited to only Python files is like Google only indexing websites built with Ruby
                             on Rails – a nonstarter for modern development teams. Code search must be universal to be effective.
-                            
+                        </p>
+                        <p className="my-5">    
                             Universal code search enables you to navigate and understand interdependent codebases — repositories,
                             programming languages, code hosts, version control systems, services, and APIs — to find the code and
                             other information you need to do your job. 
-
                         </p>
                     </div>
                     <div className="col-lg-6 mt-2 mt-lg-4">
@@ -125,9 +125,9 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-6">
                         <h2>Search across repositories</h2>
                         <p>
-                            Write queries with regular expressions, punctuation, symbols, and advanced syntax-aware
+                            Write queries with regex, punctuation, symbols, and advanced syntax-aware
                             pattern matching. Filter by file, language, path, and custom repository groups, and across
-                            programming languages, developer tools, version contexts, merge diffs, and commit messages.
+                            programming languages, developer tools, search scopes, merge diffs, and commit messages.
                             Sourcegraph’s universal code search engine returns results in milliseconds, even across
                             thousands of repositories.
                         </p>
@@ -148,7 +148,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                     <div className="col-lg-5">
-                        <h2>Understand code in context, stay in flow</h2>
+                        <h2>Understand code in context to stay in flow</h2>
                         <p>
                             Find definitions, function callers, and anything else stored in code, across package,
                             dependency, and repository boundaries. Sourcegraph lets you explore code intelligently
