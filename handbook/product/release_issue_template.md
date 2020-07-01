@@ -15,7 +15,7 @@ This template is used for tracking blog post activities for our monthly major/mi
   - Introduce yourself as the person who built the feature, and why you were excited to work on it
   - Use cover image to video with title, release number, your name, team, and your avatar
   - The marketing and product team are here to help you! They can review your script, do a test run, whatever you need 🤩
-- (optional) Auxiliary blog post
+  - (optional) Auxiliary blog posts are great if you want to share more details about your work than a few paragraphs.
 - After the release: Promote your work (where you feel comfortable). For example:
   - Twitter
   - HN
