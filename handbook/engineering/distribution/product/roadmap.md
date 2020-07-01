@@ -12,46 +12,44 @@ At least this much is missing:
 
 ## Ordered & prioritized roadmap
 
-1. [Support customers in deploying Sourcegraph with 500k+ repositories](support-customers-in-deploying-sourcegraph-with-500k-repositories) (in progress)
-1. [Kubernetes upgrades should have less merge conflicts](#kubernetes-upgrades-should-have-less-merge-conflicts) (in progress)
-1. [Docker-compose is not released on time (on the 20th)](#docker-compose-is-not-released-on-time-on-the-20th) (delayed, overdue)
-1. [Releasing Sourcegraph should be automated](#releasing-sourcegraph-should-be-automated) (delayed)
-1. [Automatic e2e testing](#automatic-e2e-testing) (delayed)
-1. [Automatic Docker image testing](#automatic-docker-image-testing)
-1. [Upgrades across multiple Sourcegraph versions should be easier](#upgrades-across-multiple-sourcegraph-versions-should-be-easier)
-1. [Sourcegraph should be released daily](#sourcegraph-should-be-released-daily)
-1. [All site admins should have alerting set up to be notified when Sourcegraph is unhealthy](#all-site-admins-should-have-alerting-set-up-to-be-notified-when-sourcegraph-is-unhealthy)
-1. [Push site admins to use Docker Compose or Kubernetes for production deployments](#push-site-admins-to-use-docker-compose-or-kubernetes-for-production-deployments)
-1. [Add monitoring for common critical issues](#add-monitoring-for-common-critical-issues)
-1. [GitOps for all internal infrastructure](#gitops-for-all-internal-infrastructure)
+1. (Q1 2020) [Support customers in deploying Sourcegraph with 500k+ repositories](support-customers-in-deploying-sourcegraph-with-500k-repositories)
+1. (Q1 2020) [Kubernetes upgrades should have less merge conflicts](#kubernetes-upgrades-should-have-less-merge-conflicts)
+1. (Q1 2020) [Docker-compose is not released on time (on the 20th)](#docker-compose-is-not-released-on-time-on-the-20th)
+1. (Q1 2020) [Releasing Sourcegraph should be automated](#releasing-sourcegraph-should-be-automated)
+1. (Q1 2020) [Automatic e2e testing](#automatic-e2e-testing)
+1. (TBD) [Automatic Docker image testing](#automatic-docker-image-testing)
+1. (TBD) [Upgrades across multiple Sourcegraph versions should be easier](#upgrades-across-multiple-sourcegraph-versions-should-be-easier)
+1. (TBD) [Sourcegraph should be released daily](#sourcegraph-should-be-released-daily)
+1. (TBD) [All site admins should have alerting set up to be notified when Sourcegraph is unhealthy](#all-site-admins-should-have-alerting-set-up-to-be-notified-when-sourcegraph-is-unhealthy)
+1. (TBD) [Push site admins to use Docker Compose or Kubernetes for production deployments](#push-site-admins-to-use-docker-compose-or-kubernetes-for-production-deployments)
+1. (TBD) [Add monitoring for common critical issues](#add-monitoring-for-common-critical-issues)
+1. (TBD) [GitOps for all internal infrastructure](#gitops-for-all-internal-infrastructure)
 
 ## Details (unordered)
 
 ### Support customers in deploying Sourcegraph with 500k+ repositories
 
-We want to support a number of customers deploying Sourcegraph at large-scales with ~500k+ repositories.
+We have had customers interested in deploying Sourcegraph at large-scale with ~500k+ repositories and will need to dedicate time to supporting them and making their trials go smoothly.
 
 - Owner: Uwe and Dave
-- In progress: yes
+- Status: unplanned -> added unexpectedly to Q1 -> in-progress
+- [Tracking issue](https://github.com/sourcegraph/customer/issues/57)
+- Discussions: [Initial planning issue](https://github.com/sourcegraph/customer/issues/57), [discussion about costs at this scale](https://github.com/sourcegraph/customer/issues/20)
 - Dependencies: none
-- [Project board](https://github.com/orgs/sourcegraph/projects/69)
-- RFCs: [Initial planning issue](https://github.com/sourcegraph/customer/issues/57), [discussion about costs at this scale](https://github.com/sourcegraph/customer/issues/20)
 
 ### Kubernetes upgrades should have less merge conflicts
 
-Kubernetes upgrades involve a large number of merge conflicts which are extremely time consuming and tedious for customers to resolve.
+Kubernetes upgrades involve a large number of merge conflicts today which are extremely time consuming and tedious for customers to resolve, preventing them from upgrading as frequently as they should be and creating a large and painful support burden for us.
 
 - Owner: Geoffrey
 - Status: planned for Q1 -> in-progress
-- [Tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+RFC+141+label%3ARFC-141)
+- [Tracking issue](https://github.com/orgs/sourcegraph/projects/68?card_filter_query=label%3Arfc-141)
 - Discussions: none
 - Dependencies: none
 
 ### CI infrastructure that can run Docker containers in a reliable way
 
-For automating the release Sourcegraph, e2e testing, and Docker image testing - we need CI infrastructure that can run Docker containers (and possibly VMs) in a reliable way.
-
-Today, we have a [side-car DIND container in our CI pipeline](https://sourcegraph.sgdev.org/search?q=repo:%5Esourcegraph/infrastructure%24+dind&patternType=literal) but it is flaky, unreliable, and a regular source of issues which has led to us removing automated testing (see [Automatic e2e testing](#automatic-e2e-testing))
+Today we cannot release of Sourcegraph, run e2e tests, or perform Docker image tests in an automated fashion because our CI infrastructure does not support running Docker containers (or VMs/Vagrant) in a reliable way. Today we have a [side-car DIND container in our CI pipeline](https://sourcegraph.sgdev.org/search?q=repo:%5Esourcegraph/infrastructure%24+dind&patternType=literal) but it is flaky, unreliable, and a regular source of issues which has led to us removing automated testing (see [Automatic e2e testing](#automatic-e2e-testing)).
 
 - Owner: Stephen
 - Status: planning soon
@@ -61,7 +59,7 @@ Today, we have a [side-car DIND container in our CI pipeline](https://sourcegrap
 
 ### Releasing Sourcegraph should be automated
 
-A monthly release takes ~2 days of a developers time, a patch release requires ~3 hours. We want to reduce that substantially.
+A monthly release takes ~2 days of a developers' time, a patch release requires ~3 hours. We want to reduce that substantially both in order to reduce the time we must invest each month, and to increase the release cadence of Sourcegraph substantially.
 
 - Owner: Stephen
 - Status: planned for Q1 -> delayed
@@ -72,7 +70,7 @@ A monthly release takes ~2 days of a developers time, a patch release requires ~
 
 ### Automatic e2e testing
 
-[RFC 137](https://docs.google.com/document/d/14f7lwfToeT6t_vxnGsCuXqf3QcB5GRZ2Zoy6kYqBAIQ/edit#heading=h.trqab8y0kufp) saw us remove our e2e tests from CI entirely because it was unreliable. Now e2e tests are ran as part of our monthly release process, and are heavily broken/outdated. Fixing them often takes ~1.5d of work. Per the RFC, we want a way to run e2e tests on CI reliably.
+[RFC 137](https://docs.google.com/document/d/14f7lwfToeT6t_vxnGsCuXqf3QcB5GRZ2Zoy6kYqBAIQ/edit#heading=h.trqab8y0kufp) saw us remove our e2e tests from CI entirely because it was unreliable. Now e2e tests are ran as part of our monthly release process completely manually, and are heavily broken/outdated each time we attempt to do it. Fixing them often takes ~1.5d of work from a developer on the team. Per the RFC, we want to run these e2e tests on CI in an automated and reliable fashion.
 
 - [Tracking issue](https://github.com/sourcegraph/sourcegraph/issues/10646)
 - Discussions: [RFC 137](https://docs.google.com/document/d/14f7lwfToeT6t_vxnGsCuXqf3QcB5GRZ2Zoy6kYqBAIQ/edit#heading=h.trqab8y0kufp)
@@ -83,14 +81,14 @@ A monthly release takes ~2 days of a developers time, a patch release requires ~
 
 ### Automatic Docker image testing
 
-Today we have a number of aspects about our Docker images that are not tested automatically:
+Customers rely on several important nuanced details about our Docker images:
 
 - Do upgrades and downgrades work as expected / per our documented policies?
 - Is the docker-compose.yml valid and does each service come up healthy?
 - Are UID/GIDs properly assigned and static?
 - Are all images versioned alongside Sourcegraph properly (and are the image tags correct)?
 
-These aspects should all be tested automatically in our CI pipelines.
+Testing these cases manually as we do today means it is easy to get things wrong and customer upgrades will go poorly, increasing our support burden substantially. Additionally, testing and accounting for these factors manually today slows down the release process and our ability to iterate quickly. We want to automate testing of all these factors.
 
 - Owner: Stephen
 - Status: not planned
@@ -101,7 +99,7 @@ These aspects should all be tested automatically in our CI pipelines.
 
 ### Docker-compose is not released on time (on the 20th)
 
-Docker-compose deployments were never properly integrated into our release process, and as such it has been released late (~1 week) after the 20th when we announce the new version of Sourcegraph the past ~4 releases.
+Docker-compose deployments were never properly integrated into our release process, and as such it has been released late by about one week after the official release date of 20th when the blog post announcement goes live. This has happened for the past ~4 releases. This has been a recurring problem for customers ("I can't upgrade it doesn't seem to be released"), which has increased support load, and has been a recurring worry from the CE team and others ("can I tell this customer to upgrade to fix their issue yet?").
 
 - Owner: Stephen
 - Status: planned for Q1 -> delayed -> overdue
@@ -111,7 +109,7 @@ Docker-compose deployments were never properly integrated into our release proce
 
 ### Upgrades across multiple Sourcegraph versions should be easier
 
-Upgrading from 3.13 -> 3.17 requires you perform 4 individual upgrades today which is extremely painful and time consuming for site admins.
+Upgrading from 3.13 -> 3.17 requires you perform 4 individual upgrades today (3.14 -> 3.15 -> 3.16 -> 3.17) which is extremely painful and time consuming for site admins, especially when one must also address the merge conflicts that occur on each upgrade. We would like to make upgrades across multiple Sourcegraph versions easier.
 
 - Owner: none
 - Status: not planned
@@ -121,7 +119,7 @@ Upgrading from 3.13 -> 3.17 requires you perform 4 individual upgrades today whi
 
 ### Sourcegraph should be released daily
 
-We release Sourcegraph monthly on the 20th, but want to get to daily releases so that `master` is always just as stable and reliable as our official monthly releases. We expect most customers will still only upgrade monthly, and we'll only advertise changes monthly. The goal is to make engineering more connected with customers so changes for customers do not sit in an unreleased state for a month.
+Engineers at Sourcegraph are not as connected to our customers as they could be, with some changes sitting idle for a while and engineers having to gauge the importance of a customer issue ("do I need to ask Distribution to create a release for this change, or can it wait until our next scheduled release on the 20th?") which harms the feedback cycle of the engineering organization as a whole and makes the CE teams' support work harder. We should get to a point where `master` is always in a polished releasable state and releases are created daily instead of only monthly on the 20th.
 
 - Owner: none
 - Status: not planned
@@ -133,17 +131,17 @@ We release Sourcegraph monthly on the 20th, but want to get to daily releases so
 
 ### All site admins should have alerting set up to be notified when Sourcegraph is unhealthy
 
+TODO(slimsag): spec this section out
+
 ### Prevent admins from missing manual migrations
 
-Today, Sourcegraph occasionally requires manual migrations. These are documented with the expectation that site admins review our documentation before attempting an upgrade. Missing a manual migration usually means some sort of downtime, sometimes not easily noticed. We would like to prevent this by making site admins explicitly acknowledge such manual migrations.
+Sourcegraph occasionally requires manual migrations when upgrading. These [are documented](https://docs.sourcegraph.com/admin/updates) with the expectation that site admins review our documentation before attempting an upgrade. Missing a manual migration usually means some sort of downtime, sometimes not easily noticed or easily fixed without the help of Sourcegraph. We would like to prevent this by making site admins explicitly acknowledge such manual migrations.
 
 - Owner: none
 - Status: not planned
 - Tracking issue: N/A
 - Discussions: [RFC 81](https://docs.google.com/document/d/1cDrQuLly_QZ_XoDDR41hgF3qCUGojvSXItI-knaBDY4/edit)
 - Dependencies:
-  - [Releasing Sourcegraph should be automated](#releasing-sourcegraph-should-be-automated)
-  - [5) Docker-compose is not released on time (on the 20th)](#5-docker-compose-is-not-released-on-time-on-the-20th)
 
 ### Add monitoring for common critical issues
 
@@ -151,17 +149,17 @@ While Sourcegraph does have built-in monitoring that is well-defined and works g
 
 - Owner: none
 - Status: not planned
-- [Tracking issue](https://github.com/sourcegraph/sourcegraph/labels/monitoring)
+- [Tracking issue](https://github.com/orgs/sourcegraph/projects/68?card_filter_query=label%3Amonitoring)
 - Discussions: none
 - Dependencies: none
 
 ### GitOps for all internal infrastructure
 
-We want to move to a world where all of Sourcegraphs' internal infrastructure is managed by GitOps, nobody has write access to GCP/GKE, and all changes have enforced review using a Git workflow.
+Today everyone has `kubectl` and direct access to our production clusters, and it is common to require manual changes or interaction with the cluster to perform ops duties. We want to move to a world where all Sourcegraph internal infrastructure (CI pipelines, Sourcegraph.com, etc.) is managed by Git Ops, nobody has write access to GCP/GKE, and all changes have enforced review using a Git workflow.
 
 - Owner: none
 - Status: not planned
-- [Tracking issue](https://github.com/sourcegraph/sourcegraph/issues/10465) (related: [sourcegraph.com terraform configuration](https://github.com/sourcegraph/sourcegraph/issues/10455))
+- [Tracking issue](https://github.com/orgs/sourcegraph/projects/68?card_filter_query=label%3Agit-ops)
 - Discussions: none
 - Dependencies: none
 
