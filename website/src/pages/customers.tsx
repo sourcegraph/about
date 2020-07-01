@@ -146,7 +146,7 @@ export default ((props: any) => (
                             <Link to="#code-search" className="list-group-item list-group-item-action">
                                 Find answers to code questions <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#browser" className="list-group-item list-group-item-action">
+                            <Link to="#productivity" className="list-group-item list-group-item-action">
                                 Make coding more efficient <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#security" className="list-group-item list-group-item-action">
@@ -226,7 +226,7 @@ export default ((props: any) => (
                 </div>
                 <hr className="my-6" />
             </ContentSection>
-            <ContentSection className="my-6" id="browser">
+            <ContentSection className="my-6" id="productivity">
                 <div className="row">
                     <div className="col-lg-5 mt-5">
                         <h2 className="display-3 font-weight-bold">Make coding more efficient</h2>
@@ -319,7 +319,7 @@ export default ((props: any) => (
                         </p>
                     </div>{' '}
                     <div className="col-lg-7 mt-5 pl-lg-6">
-                        <h5>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</h5>
+                        <h5>Watch below to see how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</h5>
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
@@ -420,11 +420,14 @@ export default ((props: any) => (
                                     confidence that we're not leaving anyone behind.
                                 </p>
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
-                            </blockquote>
+                        </blockquote>{' '}
+                        <Link to="/case-studies/lyft-monolith-to-microservices">
+                            How Convoy's developers onboard faster with Sourcegraph{' '}
+                            <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </Link>{' '}
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" />
             </ContentSection>
             <ContentSection className="mb-6">
                 <div className="container">
