@@ -33,7 +33,11 @@ This template is used for tracking blog post activities for our monthly major/mi
   - [ ] Product: Hand off content to Marketing
   - [ ] Marketing: Craft off a narrative for the release
 - 5th of the month
-  - [ ] Marketing: Share blog post for review
+  - [ ] Marketing: Share blog post for review as a Google doc
+    - Marketing team - post to #marketing
+  - Product – post to #product and tag @christina and @pooja
+  - Engineering - post to #dev-announce tagging engineers involved creating features: The blog post draft for <VERSION> is ready. @DEV1, @DEV2 and @DEV3, please review your parts are accurate and provide feedback by <DATE>: <link>
+  - Executive - post to #leadership-chat 
 - 10th of the month
   - [ ] Marketing has sign off from Product, Engineering, and Executive
 - Branch cut (5 business days before 20th)
