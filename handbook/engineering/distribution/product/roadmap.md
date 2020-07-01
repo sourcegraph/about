@@ -9,8 +9,6 @@ It is longer-term than our quarterly OKRs, and higher-level than our GitHub issu
 At least this much is missing:
 
 - Monitoring federation
-- Improved GitOps internal Sourcegraph infrastructure
-- Likely many other important things
 
 ## Ordered & prioritized roadmap
 
@@ -23,6 +21,7 @@ At least this much is missing:
 1. [Upgrades across multiple Sourcegraph versions should be easier](#upgrades-across-multiple-sourcegraph-versions-should-be-easier)
 1. [Sourcegraph should be released daily](#sourcegraph-should-be-released-daily)
 1. [All site admins should have alerting set up to be notified when Sourcegraph is unhealthy](#all-site-admins-should-have-alerting-set-up-to-be-notified-when-sourcegraph-is-unhealthy)
+1. [Push site admins to use Docker Compose or Kubernetes for production deployments](#push-site-admins-to-use-docker-compose-or-kubernetes-for-production-deployments)
 1. [Add monitoring for common critical issues](#add-monitoring-for-common-critical-issues)
 1. [GitOps for all internal infrastructure](#gitops-for-all-internal-infrastructure)
 
@@ -163,6 +162,16 @@ We want to move to a world where all of Sourcegraphs' internal infrastructure is
 - Owner: none
 - Status: not planned
 - [Tracking issue](https://github.com/sourcegraph/sourcegraph/issues/10465) (related: [sourcegraph.com terraform configuration](https://github.com/sourcegraph/sourcegraph/issues/10455))
+- Discussions: none
+- Dependencies: none
+
+### Push site admins to use Docker Compose or Kubernetes for production deployments
+
+Many customers of Sourcegraph today are still running a single-container `sourcegraph/server` deployment in production. We recently began advising all new deployments that this deployment option is _not_ for production use because it has no proper resource isolation and as such when it falls over it is impossible to debug, leading to painstakingly urgent migrations to better deployment types and frustrated/angry customers. We would like to get to a world where all production instances of Sourcegraph are Docker Compose or Kubernetes only.
+
+- Owner: none
+- Status: not planned
+- [Tracking issue](https://github.com/sourcegraph/sourcegraph/issues/11828)
 - Discussions: none
 - Dependencies: none
 
