@@ -12,7 +12,9 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Team](../company/team/index.md)
 - [CEO](ceo/index.md)
 
-## Teams
+## Handbook sections
+
+The below headers are roughly the teams at Sourcegraph. Everyone should feel empowered to contribute to all pages and sections in the Sourcegraph handbook.
 
 ### People Ops
 
@@ -28,6 +30,8 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
   - [Product Design](product/design/index.md)
 
 ### [Engineering](engineering/index.md)
+
+<!-- When updating the engineering team list below, please also update in engineering/index.md -->
 
 - [Engineering](engineering/index.md)
   - [Distribution](engineering/distribution/index.md)

@@ -43,6 +43,8 @@ If there is a dispute about ownership, then perform a [clean escalation](../comm
 
 Our engineering organization is divided into mission based teams that contain the necessary cross-functional skillsets to achieve the desired mission.
 
+<!-- When updating the engineering team list below, please also update on the handbook root handbook/index.md -->
+
 - [Distribution](distribution/index.md)
 - [Campaigns](campaigns/index.md)
 - [Cloud](cloud/index.md)
