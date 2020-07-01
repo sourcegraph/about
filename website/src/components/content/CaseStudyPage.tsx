@@ -1,6 +1,6 @@
 import React from 'react'
-import { COLORS } from '../Jumbotron'
 import slugify from 'slugify'
+import { COLORS } from '../Jumbotron'
 import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
 import { ContentPage } from './ContentPage'
 import { ContentSection } from './ContentSection'
@@ -107,8 +107,8 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     title?: string
     description?: string
 }> = ({
-    title = 'See how Sourcegraph can help with a demo and free enterprise trial',
-    description = 'Universal Code Search enables developers to explore and better understand all code, everywhere, faster. Let us show you how.',
+    title = 'Get started today.',
+    description = 'See how Sourcegraph Universal Code Search enables developers to explore, navigate, and better understand all code, everywhere, faster. ',
 }) => (
     <ContentPage
         title={title}
