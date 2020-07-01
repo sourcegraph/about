@@ -43,7 +43,8 @@ This template is used for tracking blog post activities for our monthly major/mi
   - [ ] Marketing makes edits and drafts as .md file in GitHub in about/blogposts/2020/ folder
   - Write a warning at the top of the Google doc: The blog post has been finalized and moved to Markdown, further changes here will not be reflected. Contact @MARKETING for suggestions.
 - Branch cut (5 business days before 20th)
-  - [ ] Blog post finalized
+  - [ ] Marketing receives sign off for copy from Product, Engineering, and Executive
+  - [ ] Marketing: Blog post finalized
   - [ ] Transposed into email and social media
 - 18th of the month
   - [ ] Marketing: confirm with Product and Engineering for any last minute release changes that might affect the blog post, e.g. last minute feature removal
