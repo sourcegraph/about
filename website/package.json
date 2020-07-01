@@ -73,7 +73,7 @@
     "gatsby-plugin-tslint": "^0.0.2",
     "prettier": "^2.0.5",
     "sharp": "^0.25.3",
-    "slugify": "^1.4.0",
+    "slugify": "^1.4.4",
     "stylelint": "^13.6.0",
     "stylelint-scss": "^3.17.2",
     "tslint": "^5.20.1",
