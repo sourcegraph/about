@@ -55,4 +55,4 @@ This template is used for tracking blog post activities for our monthly major/mi
   - [ ] Send tweet
   - [ ] Marketing: Post to other social media (Facebook, LinkedIn)
   - [ ] Marketing: Share links to blog posts, tweet, and other social in #dev-announce Slack channel  
-  - [ ] Engineers post their promotions about their work
+  - [ ] Marketing: Engineers post their promotions about their work
