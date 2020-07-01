@@ -319,7 +319,7 @@ export default ((props: any) => (
                         </p>
                     </div>{' '}
                     <div className="col-lg-7 mt-5 pl-lg-6">
-                        <h5>Watch below to see how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</h5>
+                        <h5>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</h5>
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
