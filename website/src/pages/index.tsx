@@ -37,9 +37,9 @@ const Index: React.FunctionComponent = (props: any) => (
                             <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
                             <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
                             <p className="home__semiwide-paragraph my-5">
-                                Find and fix things across all of your code much faster. Sourcegraph helps you onboard
-                                to a new codebase, make large-scale refactors, find and fix insecure code, root-cause
-                                incidents, and more.
+                                Find and fix things across all of your code faster with Sourcegraph. Onboard
+                                to a new codebase, make large-scale refactors, increase efficiency, address security risks,
+                                root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
                                 <Link className="btn btn-primary" to="/get-started">
@@ -66,7 +66,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5 mt-5">
                         <h2 className="display-3 font-weight-bold">Search&nbsp;your&nbsp;code. All&nbsp;of&nbsp;it.</h2>
                         <p>
-                            Just point Sourcegraph at your repositories and code hosts&mdash;then start searching. Stay
+                            Point Sourcegraph at the repositories you work with, stored in any code host &mdash; then start searching. Stay
                             in flow and find your answer quickly with smart filters such as{' '}
                             <code className="border rounded px-1">Non-test files</code>,{' '}
                             <code className="border rounded px-1">lang:java</code>,{' '}
@@ -76,7 +76,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
                                 Learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -93,13 +93,17 @@ const Index: React.FunctionComponent = (props: any) => (
             </div>
 
             <div className="container">
-                <h2 className="display-2 font-weight-bold">How developers use Sourcegraph</h2>
+                <h2 className="display-2 font-weight-bold">Why universal code search?</h2>
                 <div className="row">
                     <div className="col-lg-6 mt-lg-0">
                         <p className="my-5">
-                            Sourcegraph is built by developers, for developers. Naturally, we get a lot of feedback from
-                            developers and software teams who use Sourcegraph many times per day. Here's how they're
-                            using it.
+                            Search limited to only Python files is like Google only indexing websites built with Ruby
+                            on Rails – a nonstarter for modern development teams. Code search must be universal to be effective.
+                        </p>
+                        <p className="my-5">    
+                            Universal code search enables you to navigate and understand interdependent codebases — across repositories,
+                            programming languages, code hosts, version control systems, services, and APIs — to find the code and
+                            other information you need to do your job. 
                         </p>
                     </div>
                     <div className="col-lg-6 mt-2 mt-lg-4">
@@ -119,15 +123,17 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="my-6">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h2>TODO code search</h2>
+                        <h2>Search across repositories</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
-                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
-                            sagittis sem, eu maximus libero.
+                            Write queries with regex, punctuation, symbols, and advanced syntax-aware
+                            pattern matching. Filter by file, language, path, and custom repository groups, and across
+                            programming languages, developer tools, search scopes, merge diffs, and commit messages.
+                            Sourcegraph’s universal code search engine returns results in milliseconds, even across
+                            thousands of repositories.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
+                                Read the documentation on code search <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -142,15 +148,16 @@ const Index: React.FunctionComponent = (props: any) => (
                         <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                     <div className="col-lg-5">
-                        <h2>TODO code navigation</h2>
+                        <h2>Understand code in context to stay in flow</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
-                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
-                            sagittis sem, eu maximus libero.
+                            Find definitions, function callers, and anything else stored in code, across package,
+                            dependency, and repository boundaries. Sourcegraph lets you explore code intelligently
+                            in your web browser in any repository on any branch, instantly and without losing your
+                            local context.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/code_intelligence">
+                                Read the documentation on code intelligence <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -159,15 +166,15 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="py-6 mb-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2>TODO code review and code host integrations</h2>
+                        <h2>Make large-scale code changes</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
-                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
-                            sagittis sem, eu maximus libero.
+                            Remove legacy code, fix critical security issues, and pay down tech debt. Run campaigns
+                            to compute diffs and create breaches and pull or merge requests across multiple repositories.
+                            With Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/campaigns">
+                                Read the documentation on campaigns <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -182,37 +189,17 @@ const Index: React.FunctionComponent = (props: any) => (
                         <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                     <div className="col-lg-5">
-                        <h2>TODO campaigns</h2>
+                        <h2>Generate code insights</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
-                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
-                            sagittis sem, eu maximus libero.
+                            Aggregate data from connected external services, and enhance with code intelligence to get
+                            the metadata information you care about. Take direct actions on these insights with campaigns,
+                            like proposing an automated refactor to fix a problem detected through this static analysis.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="mailto:feedback@sourcegraph.com">
+                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
-                    </div>
-                </div>
-            </ContentSection>
-            <ContentSection className="py-6 mb-6">
-                <div className="row">
-                    <div className="col-lg-5">
-                        <h2>TODO code insights</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in lectus id enim pretium
-                            dignissim. Curabitur in purus vitae dui porttitor pulvinar sit amet non turpis. Ut eu
-                            sagittis sem, eu maximus libero.
-                        </p>
-                        <div className="pt-1">
-                            <a className="d-flex align-items-center" href="TODO(sqs)">
-                                TODO(sqs) <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-lg-7">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
             </ContentSection>
