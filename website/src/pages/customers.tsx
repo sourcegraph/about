@@ -236,6 +236,7 @@ export default ((props: any) => (
                             editor state while exploring other parts of the code, greatly improving productivity.
                         </p>
                     </div>
+                        <div className="col-lg-7 pl-lg-6">
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
@@ -245,7 +246,7 @@ export default ((props: any) => (
                                 frameborder="0"
                             ></iframe>
                         </div>
-                </div>
+                    </div>
                 <div className="row justify-content-center pt-6">
                     <div className="col-lg-10 text-center">
                         <img src="/external-logos/sofi-logo.svg" width="100px" />
@@ -258,7 +259,7 @@ export default ((props: any) => (
                             <footer className="blockquote-footer">Ursula Robertson, Engineering Manager, SoFi</footer>
                         </blockquote>
                         <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
-                            SoFi adopts Sourcegraph Universal Code Search to manage hundreds of microservices
+                            SoFi adopts Sourcegraph universal code search to manage hundreds of microservices
                             <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -302,7 +303,7 @@ export default ((props: any) => (
                                 </footer>
                             </blockquote>
                             <Link to="/case-studies/quantcast-large-scale-refactoring/">
-                                Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring{' '}
+                                Quantcast adopts Sourcegraph Universal Code Search for large-scale refactoring{' '}
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
@@ -373,7 +374,7 @@ export default ((props: any) => (
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
@@ -392,7 +393,7 @@ export default ((props: any) => (
                             <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
                         </blockquote>{' '}
                         <Link to="/case-studies/convoy-improved-on-boarding">
-                            How Convoy's developers onboard faster with Sourcegraph{' '}
+                            Developers at Convoy onboard faster with Sourcegraph{' '}
                             <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>{' '}
                     </div>
@@ -434,7 +435,7 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
                             </blockquote>{' '}
                             <Link to="/case-studies/lyft-monolith-to-microservices">
-                                How Convoy's developers onboard faster with Sourcegraph{' '}
+                                Lyft uses Sourcegraph universal code search to ensure production stability{' '}
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </Link>{' '}
                         </div>
