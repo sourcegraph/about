@@ -133,11 +133,10 @@ export default ((props: any) => (
                 <div className="row">
                     <div className="col-lg-7 mt-6 mb-6">
                         <h1 className="display-1 font-weight-bold mb-0">
-                            Our customers use Sourcegraph to solve big problems
+                            Customers move fast with Sourcegraph
                         </h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
-                            Sourcegraph helps companies of all sizes in all industries to move fast, find and fix
-                            things, and address security risks when building software.
+                            Sourcegraph helps solve big code problems with universal code search for companies of all sizes in all industries.
                         </p>
                     </div>
                     <div className="col-lg-5 mt-6 pt-4 mb-6">
