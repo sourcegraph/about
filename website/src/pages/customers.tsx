@@ -198,7 +198,7 @@ export default ((props: any) => (
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/ZtnqWhIcLeg?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/GQj5jXdON3A?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
@@ -237,9 +237,15 @@ export default ((props: any) => (
                             editor state while exploring other parts of the code, greatly improving productivity.
                         </p>
                     </div>
-                    <div className="col-lg-7 pl-lg-6">
-                        <img src="/screenshots/code-page-0.png" className="home__screenshot w-100" />
-                    </div>
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
                 </div>
                 <div className="row justify-content-center pt-6">
                     <div className="col-lg-10 text-center">
@@ -365,7 +371,15 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
                 <div className="row justify-content-center pt-6">
