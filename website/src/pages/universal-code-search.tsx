@@ -4,9 +4,9 @@ import Helmet from 'react-helmet'
 import { Blockquote } from '../components/Blockquote'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
+import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
 import { TrySourcegraph } from '../components/TrySourcegraph'
 
 export default ((props: any) => (
@@ -35,7 +35,7 @@ export default ((props: any) => (
             <ContentSection color="white" className="pt-6 pb-2">
                 <div className="row justify-content-md-center mb-4">
                     <div className="col-md-10">
-                        <h2 className="display-5 mb-4 text-center">
+                        <h2 className="display-3 font-weight-bold mb-4">
                             Universal Code Search is the best way to answer any questions about code and systems.
                         </h2>
                         <p>
@@ -66,7 +66,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="purple" className="py-5">
-                <h2 className="display-5 mt-3 text-center">Universal across everything </h2>
+                <h2 className="display-3 font-weight-bold mt-3 text-center">Universal across everything </h2>
                 <p className="text-center">
                     Universal Code Search must have these things. Anything else is just a code search tool.
                 </p>
@@ -104,8 +104,8 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-4">
-                <h2 className="display-5 mt-3 text-center">Code search is the superpower</h2>
-                <p className="text-center">
+                <h2 className="display-3 font-weight-bold mt-3">Code search is the superpower</h2>
+                <p>
                     Uber, Lyft, Yelp, and other world-class companies rely on Sourcegraph Universal Code Search (not
                     just a code host) to ship software.
                 </p>
@@ -210,12 +210,11 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
+            <IntegrationsSection className="py-4" />
             <ContentSection color="white" className="py-2">
-                <IntegratesWithSection className="pt-5 pb-4" />
                 <hr />
-            </ContentSection>
-            <ContentSection color="white" className="py-2">
                 <CustomerLogosSection className="py-5" />
+                <hr />
             </ContentSection>
             <ContentSection color="white" className="py-6">
                 <TrySourcegraph />

@@ -7,11 +7,11 @@ import * as React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
+import { IntegrationsSection } from '../../components/IntegrationsSection'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
-import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
 import { TrySourcegraph } from '../../components/TrySourcegraph'
 
 export default ((props: any) => (
@@ -33,14 +33,14 @@ export default ((props: any) => (
                 sections={[
                     { text: 'Why universal', url: '#ucs' },
                     { text: 'Features', url: '#features' },
-                    { text: 'Who uses it', url: '#customers' },
                     { text: 'Integrations', url: '#integrations' },
+                    { text: 'Who uses it', url: '#customers' },
                 ]}
             />
             <ContentSection color="white" className="py-5">
                 <span id="ucs" />
-                <h2 className="text-center">Universal across everything</h2>
-                <p className="text-center">
+                <h2 className="display-3 font-weight-bold">Universal across everything</h2>
+                <p>
                     Code hosts and IDEs provide limited search functionality on their platforms. Development now spans
                     many repos, languages, file formats, and codebases making Universal Code Search essential for
                     enterprises like Uber, Lyft, and Yelp.
@@ -67,9 +67,8 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="pt-4">
-                <h2 id="features" className="mb-5 text-center">
-                    Sourcegraph lets you review, search, and modify your code
-                    <br /> no matter where it's stored
+                <h2 id="features" className="mb-5 display-3 font-weight-bold">
+                    Sourcegraph lets you review, search, and modify your code no matter where it's stored
                 </h2>
                 <div className="row">
                     <div className="col-md-6 mb-4">
@@ -150,11 +149,12 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="white">
-                <span id="customers" />
-                <CustomerLogosSection className="pt-6 pb-4" />
-                <span id="integrations" />
-                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+            <span id="integrations" />
+            <IntegrationsSection className="py-4" />
+            <span id="customers" />
+            <ContentSection color="white" className="py-2">
+                <hr />
+                <CustomerLogosSection className="py-5" />
             </ContentSection>
             <ContentSection color="black" className="py-6">
                 <EnterpriseReadySolution />

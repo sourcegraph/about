@@ -2,7 +2,7 @@ import React from 'react'
 import { ContentSection } from './content/ContentSection'
 
 export const IntegrationsSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <ContentSection className={className}>
+    <ContentSection color="white" className={className}>
         <h2 className="display-3 font-weight-bold">Works with your code, infrastructure, and tools.</h2>
         <div className="row">
             <div className="col-lg-6">
@@ -232,11 +232,15 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         Where? <code className="border rounded px-1">AWS</code>{' '}
                         <code className="border rounded px-1">Google Cloud</code>{' '}
                         <code className="border rounded px-1">Azure</code>{' '}
+                    </li>
+                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Other infra</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         What? <code className="border rounded px-1">Docker container</code>{' '}
                         <code className="border rounded px-1">Kubernetes cluster</code>{' '}
+                    </li>
+                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Custom cluster</code>
                     </li>
                     <li className="d-block">
