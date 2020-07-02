@@ -11,7 +11,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                 <React.Fragment>
                     <div className="row footer__nav-sections">
                         <div className="col-12 col-lg-3 mb-5">
-                            <Link className="row footer__logo" to="/">
+                            <Link className="row footer__logo ml-1" to="/">
                                 <span role="img" aria-label="Sourcegraph - Universal code search">
                                     {' '}
                                 </span>

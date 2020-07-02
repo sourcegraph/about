@@ -180,21 +180,21 @@ export default ((props: any) => (
         </Helmet>
         <div className="customers-page">
             <CustomerLogosSection className="my-6" />
-            <ContentSection className="my-6" id="code-search">
+            <ContentSection className="mt-6" id="code-search">
                 <hr className="my-6" />
                 <div className="row">
-                    <div className="col-lg-5 mt-5">
+                    <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Find answers to code questions</h2>
                         <p>
-                            Search repositories from any code host, with support for regular expressions,
-                            punctuation, symbols, and advanced syntax-aware pattern matching. Narrow results
-                            with powerful search filters for file, language, path, custom repository groups and
-                            other attributes, and across version contexts, merge diffs, and commit messages.
-                            Sourcegraph’s visual and interactive query builder constructs complex queries to
-                            find and filter code in ways IDEs and code hosts can’t.
+                            Search repositories from any code host, with support for regular expressions, punctuation,
+                            symbols, and advanced syntax-aware pattern matching. Narrow results with powerful search
+                            filters for file, language, path, custom repository groups and other attributes, and across
+                            version contexts, merge diffs, and commit messages. Sourcegraph’s visual and interactive
+                            query builder constructs complex queries to find and filter code in ways IDEs and code hosts
+                            can’t.
                         </p>
                     </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
+                    <div className="col-lg-7 pl-lg-6">
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
@@ -224,21 +224,20 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" />
+                <hr className="my-6" id="productivity" />
             </ContentSection>
-            <ContentSection className="my-6" id="productivity">
+            <ContentSection className="mt-6">
                 <div className="row">
-                    <div className="col-lg-5 mt-5">
+                    <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Make coding more efficient</h2>
                         <p>
                             {' '}
-                            Stay in flow and find answers quickly. Minimize the impact of context switches to
-                            streamline day-to-day tasks. Sourcegraph’s browser-based interface lets developers
-                            maintain their editor state while exploring other parts of the code, greatly
-                            improving productivity.
+                            Stay in flow and find answers quickly. Minimize the impact of context switches to streamline
+                            day-to-day tasks. Sourcegraph’s browser-based interface lets developers maintain their
+                            editor state while exploring other parts of the code, greatly improving productivity.
                         </p>
                     </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
+                    <div className="col-lg-7 pl-lg-6">
                         <img src="/screenshots/code-page-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
@@ -259,24 +258,22 @@ export default ((props: any) => (
                         </Link>
                     </div>
                 </div>
-                <hr className="my-6" />
+                <hr className="my-6" id="security" />
             </ContentSection>
-            <ContentSection className="my-6" id="security">
+            <ContentSection className="mt-6">
                 <div className="row">
-                    <div className="col-lg-5 mt-5">
-                        <h2 className="display-3 font-weight-bold">
-                            Find security problems in hours, not days
-                        </h2>
+                    <div className="col-lg-5">
+                        <h2 className="display-3 font-weight-bold">Find security problems in hours, not days</h2>
                         <p>
-                            Identify incident root causes with confidence, improve production stability, and
-                            reduce the time to recovery. Find breaking changes, with diff and commit search
-                            returning all matching search results to identify everywhere a pattern, package,
-                            or API is used. Mitigate tech security and compliance risks with saved searches
-                            to alert for known vulnerabilities and risky code changes. Campaigns then automate
-                            the process of fixing, merging, and deploying the necessary changes across codebases.
+                            Identify incident root causes with confidence, improve production stability, and reduce the
+                            time to recovery. Find breaking changes, with diff and commit search returning all matching
+                            search results to identify everywhere a pattern, package, or API is used. Mitigate tech
+                            security and compliance risks with saved searches to alert for known vulnerabilities and
+                            risky code changes. Campaigns then automate the process of fixing, merging, and deploying
+                            the necessary changes across codebases.
                         </p>
                     </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
+                    <div className="col-lg-7 pl-lg-6">
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
@@ -306,20 +303,23 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" />
+                <hr className="my-6" id="code-reviews" />
             </ContentSection>
-            <ContentSection className="my-6" id="code-reviews">
+            <ContentSection className="mt-6">
                 <div className="row">
-                    <div className="col-lg-5 mt-5">
+                    <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Catch more bugs with better code reviews</h2>
                         <p>
                             Mistakes that slip past code review are 10x harder to fix. Make code reviews fast, thorough,
-                            and less painful — no more tl;dr – and catch bugs before build. Sourcegraph’s code intelligence
-                            paired with live data pulled from external services means code reviews are done right.
+                            and less painful — no more tl;dr – and catch bugs before build. Sourcegraph’s code
+                            intelligence paired with live data pulled from external services means code reviews are done
+                            right.
                         </p>
                     </div>{' '}
-                    <div className="col-lg-7 mt-5 pl-lg-6">
-                        <h5>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</h5>
+                    <div className="col-lg-7 pl-lg-6">
+                        <h5>
+                            Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.
+                        </h5>
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
@@ -348,24 +348,23 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" />
+                <hr className="mb-6" id="onboard" />
             </ContentSection>
-            <ContentSection className="my-6" id="onboard">
+            <ContentSection className="mt-6">
                 <div className="row">
-                    <div className="col-lg-5 mt-5">
-                        <h2 className="display-3 font-weight-bold" id="onboard">
-                            Onboard everyone faster
-                        </h2>
+                    <div className="col-lg-5">
+                        <h2 className="display-3 font-weight-bold">Onboard everyone faster</h2>
                         <p>
-                            Reduce the time to first commit. Minimize context-switching when exploring code in production
-                            and in new and unfamiliar codebases, with contextual code intelligence. Sourcegraph enables link
-                            sharing to specific code with peers and managers in a web interface, so questions get answered
-                            faster and with less effort. For remote and distributed engineering teams using Sourcegraph, 
-                            these code links become essential conduits of knowledge, shared hundreds of times per day over chat,
-                            on issue trackers, and in documentation. 
+                            Reduce the time to first commit. Minimize context-switching when exploring code in
+                            production and in new and unfamiliar codebases, with contextual code intelligence.
+                            Sourcegraph enables link sharing to specific code with peers and managers in a web
+                            interface, so questions get answered faster and with less effort. For remote and distributed
+                            engineering teams using Sourcegraph, these code links become essential conduits of
+                            knowledge, shared hundreds of times per day over chat, on issue trackers, and in
+                            documentation.
                         </p>
                     </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
+                    <div className="col-lg-7 pl-lg-6">
                         <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
                     </div>
                 </div>
@@ -385,21 +384,21 @@ export default ((props: any) => (
                         </Link>{' '}
                     </div>
                 </div>
-                <hr className="my-6" />
+                <hr className="my-6" id="campaigns" />
             </ContentSection>
-            <ContentSection className="my-6" id="campaigns">
+            <ContentSection className="mt-6">
                 <div className="row">
-                    <div className="col-lg-5 mt-5">
+                    <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Automate code changes</h2>
                         <p>
-                            Move quickly and safely when removing legacy code, fixing critical security issues,
-                            and paying down tech debt. Identify which call sites might be affected by changes,
-                            and run campaigns to compute diffs and create branches and pull requests across
-                            multiple repositories. Large-scale code changes and refactors can be painless,
-                            more accurate, and faster, when done automatically with Sourcegraph.
+                            Move quickly and safely when removing legacy code, fixing critical security issues, and
+                            paying down tech debt. Identify which call sites might be affected by changes, and run
+                            campaigns to compute diffs and create branches and pull requests across multiple
+                            repositories. Large-scale code changes and refactors can be painless, more accurate, and
+                            faster, when done automatically with Sourcegraph.
                         </p>
                     </div>
-                    <div className="col-lg-7 mt-5 pl-lg-6">
+                    <div className="col-lg-7 pl-lg-6">
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
@@ -420,19 +419,17 @@ export default ((props: any) => (
                                     confidence that we're not leaving anyone behind.
                                 </p>
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
-                        </blockquote>{' '}
-                        <Link to="/case-studies/lyft-monolith-to-microservices">
-                            How Convoy's developers onboard faster with Sourcegraph{' '}
-                            <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>{' '}
+                            </blockquote>{' '}
+                            <Link to="/case-studies/lyft-monolith-to-microservices">
+                                How Convoy's developers onboard faster with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </Link>{' '}
                         </div>
                     </div>
                 </div>
+                <hr className="my-6" />
             </ContentSection>
-            <ContentSection className="mb-6">
-                <div className="container">
-                    <hr className="my-6" />
-                </div>
+            <ContentSection>
                 <TrySourcegraph />
             </ContentSection>
         </div>
