@@ -264,6 +264,7 @@ export default ((props: any) => (
                         </Link>
                     </div>
                 </div>
+                </div>
                 <hr className="my-6" id="security" />
             </ContentSection>
             <ContentSection className="mt-6">
