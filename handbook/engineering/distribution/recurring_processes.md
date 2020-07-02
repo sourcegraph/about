@@ -153,7 +153,7 @@ As with everyone at Sourcegraph, we join the [weekly company meeting](https://ab
 ### Weekly Distribution team sync
 
 Mon @ 11am PST we hold an [internal
-team sync](https://docs.google.com/document/d/1otP6F8qfm2yNOW1hjTszkkuiYF1MGp31s5ATeA76ij4/edit) via Zoom. It usually does not involve product managers or higher ups. The goal is to:
+team sync](https://docs.google.com/document/d/1otP6F8qfm2yNOW1hjTszkkuiYF1MGp31s5ATeA76ij4/edit) via Zoom. The goal is to:
 
 - Think about the problems we're solving by briefly going over what everyone is working on
 - Revisit our quarterly OKRs and think about how we are tracking towards them when useful
@@ -221,9 +221,3 @@ We use a bi-weekly update frequency because:
 - Bi-weekly updates encourage posting updates and gathering feedback regularly, while still focusing on just the high-level key points of interest.
 
 We want to respect autonomy and view updates as a tool to help remind team members to collaborate together, ask for help, and perform self-reflection about whether your current focus is right or not.
-
-### Distribution management sync
-
-The [distribution management sync](https://docs.google.com/document/d/1g9gb_i-Q6QXifISiS1urZ2gcfO2Pz-VHYqurW_94My4/edit) is a quick sync for the Distribution manager and project lead to communicate the team's overall status to the VP of engineering and Product. These are usually high-level progress updates re-hashing what has already been discussed in prior updates, etc. and answering questions/concerns or priority/planning changes between Distribution and the broader Engineering / Product organization.
-
-These are usually brief and just a re-hash of what has already been discussed elsewhere, so most Distribution team members do not join this meeting. That said, for transparency all members are invited and anyone is free to join and participate or just listen in if they like.
