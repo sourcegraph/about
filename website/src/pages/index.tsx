@@ -131,7 +131,7 @@ const Index: React.FunctionComponent = (props: any) => (
 
             <ContentSection className="my-6">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-5">
                         <h2>Search across repositories</h2>
                         <p>
                             Write queries with regex, punctuation, symbols, and advanced syntax-aware pattern matching.
