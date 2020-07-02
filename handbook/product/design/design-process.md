@@ -45,7 +45,6 @@ While asynchronous communication is a core attribute of remote work, key moments
         - Findings should be detailed in a google doc and announced in the corresponding team channel or #product on Slack
         - Findings should contain a clear summary, links to resources and supporting data
         - Conduct a syncronous review meeting with key stakeholders based on side of project or importance of findings
-      - Announce research in Slack
       - Schedule and conduct a presentation meeting with stakeholders where necessary
   - Tools
       - Google Docs
