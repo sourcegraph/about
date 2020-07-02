@@ -2,7 +2,7 @@ import React from 'react'
 import { ContentSection } from './content/ContentSection'
 
 export const IntegrationsSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <ContentSection color="white" className={className}>
+    <ContentSection className={className}>
         <h2 className="display-3 font-weight-bold">Works with your code, infrastructure, and tools.</h2>
         <div className="row">
             <div className="col-lg-6">

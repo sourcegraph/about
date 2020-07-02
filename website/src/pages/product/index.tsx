@@ -150,7 +150,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <span id="integrations" />
-            <IntegrationsSection className="py-4" />
+            <IntegrationsSection className="bg-white py-4" />
             <span id="customers" />
             <ContentSection color="white" className="py-2">
                 <hr />
