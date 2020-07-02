@@ -5,6 +5,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { Features, PricingPlan } from '../components/pricing/PricingPlan'
 import { PricingPlanProperty } from '../components/pricing/PricingPlanProperty'
+import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const DESCRIPTION =
     'Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan.'
@@ -51,7 +52,7 @@ export default ((props: any) => (
                     <h2>Universal Code Search scales with your team</h2>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
-                    <div className="row pt-3">
+                    <div className="row pt-4">
                         <div className="col-6 col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
@@ -159,24 +160,10 @@ export default ((props: any) => (
                         </p>
                     </div>
                 </div>
+                <hr className="my-4" />
             </div>
-            <ContentSection color="purple" className="hero-section text-center py-5">
-                <h2>Try Sourcegraph Enterprise for free</h2>
-                <Link
-                    className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
-                    to="/contact/request-trial/?form_submission_source=pricing-free-trial-banner"
-                >
-                    Free trial
-                </Link>
-            </ContentSection>
-            <ContentSection color="primary" className="hero-section text-center py-5">
-                <h2>More questions?</h2>
-                <Link
-                    className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
-                    to="/contact/sales/?form_submission_source=pricing-contact-sales-banner"
-                >
-                    Contact sales
-                </Link>
+            <ContentSection>
+                <TrySourcegraph className="my-6" />
             </ContentSection>
         </div>
     </Layout>

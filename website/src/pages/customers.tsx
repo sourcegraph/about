@@ -1,6 +1,7 @@
 import { Link } from 'gatsby'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
@@ -132,11 +133,10 @@ export default ((props: any) => (
             <div className="customers-page customers-page__hero container mt-2">
                 <div className="row">
                     <div className="col-lg-7 mt-6 mb-6">
-                        <h1 className="display-1 font-weight-bold mb-0">
-                            Our customers move faster with Sourcegraph
-                        </h1>
+                        <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
-                            Companies of all sizes and in all industries use Sourcegraph universal code search to solve big code problems.
+                            Companies of all sizes and in all industries use Sourcegraph universal code search to solve
+                            big code problems.
                         </p>
                     </div>
                     <div className="col-lg-5 mt-6 pt-4 mb-6">
@@ -197,7 +197,7 @@ export default ((props: any) => (
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/GQj5jXdON3A?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/GQj5jXdON3A?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
@@ -215,11 +215,11 @@ export default ((props: any) => (
                                     microservices and libraries in our code base.
                                 </p>
                                 <footer className="blockquote-footer">Kevin Chen, Software Engineer, Yelp</footer>
+                                <Link to="https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html">
+                                    Yelp Engineering Blog: Winning the Hackathon with Sourcegraph{' '}
+                                    <ExternalLinkIcon className="icon-inline ml-1" />
+                                </Link>
                             </blockquote>
-                            <Link to="https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html">
-                                Yelp Engineering Blog: Winning the Hackathon with Sourcegraph
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>
                         </div>
                     </div>
                 </div>
@@ -236,34 +236,36 @@ export default ((props: any) => (
                             editor state while exploring other parts of the code, greatly improving productivity.
                         </p>
                     </div>
-                        <div className="col-lg-7 pl-lg-6">
+                    <div className="col-lg-7 pl-lg-6">
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
                             ></iframe>
                         </div>
                     </div>
-                <div className="row justify-content-center pt-6">
-                    <div className="col-lg-10 text-center">
-                        <img src="/external-logos/sofi-logo.svg" width="100px" />
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-                            <p>
-                                Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our
-                                engineers can understand all of the repercussions of committing a change to a service
-                                that is exposed to other services.
-                            </p>
-                            <footer className="blockquote-footer">Ursula Robertson, Engineering Manager, SoFi</footer>
-                        </blockquote>
-                        <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
-                            SoFi adopts Sourcegraph to manage hundreds of microservices
-                            <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                    <div className="row justify-content-center pt-6">
+                        <div className="col-lg-10 text-center">
+                            <img src="/external-logos/sofi-logo.svg" width="100px" />
+                            <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                                <p>
+                                    Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our
+                                    engineers can understand all of the repercussions of committing a change to a
+                                    service that is exposed to other services.
+                                </p>
+                                <footer className="blockquote-footer">
+                                    Ursula Robertson, Engineering Manager, SoFi
+                                </footer>
+                                <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
+                                    SoFi adopts Sourcegraph to manage hundreds of microservices{' '}
+                                    <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                </Link>
+                            </blockquote>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <hr className="my-6" id="security" />
             </ContentSection>
@@ -284,7 +286,7 @@ export default ((props: any) => (
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/OGd8wr7XpgU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/OGd8wr7XpgU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
@@ -302,11 +304,11 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Simon Law, Staff Software Engineer, Quantcast
                                 </footer>
+                                <Link to="/case-studies/quantcast-large-scale-refactoring/">
+                                    Quantcast adopts Sourcegraph for large-scale refactoring{' '}
+                                    <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                </Link>
                             </blockquote>
-                            <Link to="/case-studies/quantcast-large-scale-refactoring/">
-                                Quantcast adopts Sourcegraph for large-scale refactoring{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>
                         </div>
                     </div>
                 </div>
@@ -324,18 +326,16 @@ export default ((props: any) => (
                         </p>
                     </div>{' '}
                     <div className="col-lg-7 pl-lg-6">
-                        <h5>
-                            Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.
-                        </h5>
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/LgpuH2iaZ3w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/LgpuH2iaZ3w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
                             ></iframe>
                         </div>
+                        <p>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</p>
                     </div>
                     <div className="row justify-content-center pt-4">
                         <div className="col-lg-10 text-center">
@@ -375,7 +375,7 @@ export default ((props: any) => (
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
@@ -392,11 +392,11 @@ export default ((props: any) => (
                                 structure, to track down where code lives, and self-service during their investigations.
                             </p>
                             <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
-                        </blockquote>{' '}
-                        <Link to="/case-studies/convoy-improved-on-boarding">
-                            Developers at Convoy onboard faster with Sourcegraph{' '}
-                            <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>{' '}
+                            <Link to="/case-studies/convoy-improved-on-boarding">
+                                Developers at Convoy onboard faster with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </Link>
+                        </blockquote>
                     </div>
                 </div>
                 <hr className="my-6" id="campaigns" />
@@ -417,7 +417,7 @@ export default ((props: any) => (
                         <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
@@ -434,11 +434,11 @@ export default ((props: any) => (
                                     confidence that we're not leaving anyone behind.
                                 </p>
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
-                            </blockquote>{' '}
-                            <Link to="/case-studies/lyft-monolith-to-microservices">
-                                Lyft uses Sourcegraph to ensure production stability{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>{' '}
+                                <Link to="/case-studies/lyft-monolith-to-microservices">
+                                    Lyft uses Sourcegraph to ensure production stability{' '}
+                                    <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                </Link>
+                            </blockquote>
                         </div>
                     </div>
                 </div>

@@ -61,7 +61,7 @@ export default class GetStarted extends React.Component<any, any> {
                             <h2 className="h5 mt-4">Want help?</h2>
                             <div className="pt-1">
                                 <button className="btn btn-sm btn-outline-primary">
-                                    Schedule time with a Sourcegraph engineer
+                                    Request time with a Sourcegraph engineer
                                 </button>
                                 <a href="https://docs.sourcegraph.com" className="d-flex align-items-center py-1 mt-1">
                                     Docs <ExternalLinkIcon className="icon-inline ml-1 small" />

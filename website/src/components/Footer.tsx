@@ -38,10 +38,10 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <h3 className="footer__nav-header">Why Sourcegraph?</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <Link to="/product">Product</Link>
+                                    <Link to="/customers">Customers</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/universal-code-search">What is Universal Code Search?</Link>
+                                    <Link to="/#universal-code-search">Why universal code search?</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/pricing">Pricing</Link>
