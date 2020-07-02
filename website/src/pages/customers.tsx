@@ -259,7 +259,7 @@ export default ((props: any) => (
                             <footer className="blockquote-footer">Ursula Robertson, Engineering Manager, SoFi</footer>
                         </blockquote>
                         <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
-                            SoFi adopts Sourcegraph universal code search to manage hundreds of microservices
+                            SoFi adopts Sourcegraph to manage hundreds of microservices
                             <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -304,7 +304,7 @@ export default ((props: any) => (
                                 </footer>
                             </blockquote>
                             <Link to="/case-studies/quantcast-large-scale-refactoring/">
-                                Quantcast adopts Sourcegraph Universal Code Search for large-scale refactoring{' '}
+                                Quantcast adopts Sourcegraph for large-scale refactoring{' '}
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
@@ -436,7 +436,7 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
                             </blockquote>{' '}
                             <Link to="/case-studies/lyft-monolith-to-microservices">
-                                Lyft uses Sourcegraph universal code search to ensure production stability{' '}
+                                Lyft uses Sourcegraph to ensure production stability{' '}
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </Link>{' '}
                         </div>
