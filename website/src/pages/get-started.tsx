@@ -1,3 +1,5 @@
+import { Link } from 'gatsby'
+import ClipboardArrowLeftOutlineIcon from 'mdi-react/ClipboardArrowLeftOutlineIcon'
 import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import * as React from 'react'
 import Layout from '../components/Layout'
@@ -43,9 +45,12 @@ export default class GetStarted extends React.Component<any, any> {
                                     sourcegraph/server:3.17.0
                                     "
                             />
-                            <button onClick={() => this.copyDockerInstall()} className="btn btn-sm btn-outline-primary">
-                                Copy text and run in terminal window
-                            </button>
+                            <a href="#">
+                                <ClipboardArrowLeftOutlineIcon
+                                    onClick={() => this.copyDockerInstall()}
+                                    className="copytext icon-inline ml-1 medium"
+                                />
+                            </a>
                             <h2 className="h5 mt-4">Deploy to a server or cluster</h2>
                             <p>
                                 See{' '}
@@ -60,9 +65,9 @@ export default class GetStarted extends React.Component<any, any> {
 
                             <h2 className="h5 mt-4">Want help?</h2>
                             <div className="pt-1">
-                                <button className="btn btn-sm btn-outline-primary">
+                                <Link className="btn btn-sm btn-outline-primary" to="/contact/request-info">
                                     Request time with a Sourcegraph engineer
-                                </button>
+                                </Link>
                                 <a href="https://docs.sourcegraph.com" className="d-flex align-items-center py-1 mt-1">
                                     Docs <ExternalLinkIcon className="icon-inline ml-1 small" />
                                 </a>

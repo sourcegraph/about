@@ -194,7 +194,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
-                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/GQj5jXdON3A?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -237,7 +237,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
-                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -283,7 +283,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
-                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/OGd8wr7XpgU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -326,7 +326,7 @@ export default ((props: any) => (
                         </p>
                     </div>{' '}
                     <div className="col-lg-7 pl-lg-6">
-                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/LgpuH2iaZ3w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -372,7 +372,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
-                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -414,9 +414,9 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
-                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
