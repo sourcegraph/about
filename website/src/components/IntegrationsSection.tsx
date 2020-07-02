@@ -66,7 +66,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Any combo of these</code>
                     </li>
                     <li className="d-block">
-                        <a href="#" className="small text-muted">
+                        <a href="mailto:feedback@sourcegraph.com" className="small text-muted">
                             Have a repository not covered here?
                         </a>
                     </li>
@@ -160,7 +160,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">JSON</code>
                     </li>
                     <li className="d-block">
-                        <a href="#" className="small text-muted">
+                        <a href="mailto:feedback@sourcegraph.com" className="small text-muted">
                             Need a different language?
                         </a>
                     </li>
@@ -215,7 +215,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">npm</code>
                     </li>
                     <li className="d-block">
-                        <a href="#" className="small text-muted">
+                        <a href="https://docs.sourcegraph.com/integration" className="small text-muted">
                             See all integrations or build your own
                         </a>
                     </li>
@@ -244,7 +244,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Custom cluster</code>
                     </li>
                     <li className="d-block">
-                        <a href="#" className="small text-muted">
+                        <a href="https://docs.sourcegraph.com/admin/install" className="small text-muted">
                             Learn about deploying Sourcegraph
                         </a>
                     </li>

@@ -123,7 +123,7 @@ const Index: React.FunctionComponent = (props: any) => (
 
             <ContentSection className="my-6">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-5">
                         <h2>Search across repositories</h2>
                         <p>
                             Write queries with regex, punctuation, symbols, and advanced syntax-aware pattern matching.
@@ -138,15 +138,31 @@ const Index: React.FunctionComponent = (props: any) => (
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    <div className="col-lg-7 pl-lg-6">
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </ContentSection>
             <ContentSection className="my-6">
                 <div className="row">
-                    <div className="col-lg-7">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    <div className="col-lg-7 pl-lg-6">
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
                     </div>
                     <div className="col-lg-5">
                         <h2>Understand code in context to stay in flow</h2>
@@ -183,15 +199,31 @@ const Index: React.FunctionComponent = (props: any) => (
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-7">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    <div className="col-lg-7 pl-lg-6">
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
             </ContentSection>
             <ContentSection className="my-6">
                 <div className="row">
-                    <div className="col-lg-7">
-                        <img src="/screenshots/search-page-small-0.png" className="home__screenshot w-100" />
+                    <div className="col-lg-7 pl-lg-6">
+                        <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
                     </div>
                     <div className="col-lg-5">
                         <h2>Generate code insights</h2>
