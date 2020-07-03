@@ -12,17 +12,17 @@ published: true
 
 When it comes to developer tools, speed is a critical feature. The difference between a 100ms, 1s, and 10s delay fundamentally alters user psychology—it's the difference between coding at the speed of thought vs. losing focus as your mind wanders while waiting for the UI to respond.
 
-One of Sourcegraph's magic powers is its ability to provide compiler-accurate code navigation in completely web-based interfaces: Sourcegraph.com, private Sourcegraph instances, [GitHub PRs, GitLab MRs, and Bitbucket PRs](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack).
+One of Sourcegraph's magic powers is its ability to provide compiler-accurate code navigation in completely web-based interfaces: [Sourcegraph.com](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@95b315285814aded55089da22aba944cf19410c9/-/blob/cmd/frontend/internal/cli/serve_cmd.go?subtree=true#L115:6), [private Sourcegraph instances](https://docs.sourcegraph.com/#quickstart-guide), and on GitHub, GitLab, Bitbucket, and Phabricator via the [Sourcegraph browser extension](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack).
 
 ![Cross-repository jump to definition](https://storage.googleapis.com/sourcegraph-assets/precise-xrepo-j2d.gif)
 
-While compiler-level accuracy is great, one painpoint has been performance on larger codebases. The desire for speed motivated our switch from language servers to use of the Language Server Index Format (LSIF). Indexing vastly improves query latency by precomputing the data needed to serve doc tooltips, go-to-definition, and find-references requests—without sacrificing accuracy. Since adding support for LSIF, we've continued to optimize our code navigation backend. In [Sourcegraph 3.16](/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we rewrote the LSIF processing backend from TypeScript to Go with the aim of optimizing performance. In [3.17](/blog/sourcegraph-3.17), we made good on these plans.
+While compiler-level accuracy is great, one painpoint has been performance on larger codebases. The desire for speed motivated our switch from language servers to use of the Language Server Index Format (LSIF). Indexing vastly improves query latency by precomputing the data needed to serve doc tooltips, go-to-definition, and find-references requests, without sacrificing accuracy. Since adding support for LSIF, we've continued to optimize our code navigation backend. In [Sourcegraph 3.16](/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we rewrote the LSIF processing backend from TypeScript to Go with the aim of optimizing performance. In [3.17](/blog/sourcegraph-3.17), we made good on these plans.
 
 With the guidance of the Go memory and CPU profiler, we implemented optimizations that fell into three areas:
 
-* Eliminating unnecessary layers of abstraction
+* Architecture changes
 * Parallelization
-* Doing less stuff: reducing I/O, CPU usage, and memory allocations
+* Doing less stuff (where "stuff" is I/O, CPU usage, and memory allocations)
 
 ## Identifying bottlenecks
 
@@ -55,19 +55,19 @@ Premature optimization is the root of all evil, so we initiated our optimization
 
 These profiles revealed a number of hotspots in the code, and we combined these results with a high-level understanding of the system architecture to come up with a list of changes that would have a substantial impact on both upload and query performance.
 
-These efforts yielded a 2x speedup in query latency, a 2x speedup in processing latency, and a nearly 50% reduction in memory and disk load, which we'll evaluate in more detail later in this post.
+These efforts yielded a 2x speedup in query latency, a 2x speedup in processing latency, and a nearly 50% reduction in memory and disk load. In this post, we'll highlight what impact each optimization had, and we'll dive into a detailed summary of overall improvements at the end.
 
-## Eliminating unnecessary abstraction layers
+## Architecture changes
 
 The CPU profiling revealed a substantial amount of time was being spent in the API server. This service receives the LSIF upload from the API user and writes it to disk. A separate background worker service later converts the on-disk LSIF data into a SQLite bundle. On a user query, the API server receives the requests, queries the bundle manager server, which in turn uses the SQLite bundle to respond to the API server, which then forwards that response to the user.
 
-[TODO(efritz): can you update this paragraph and picture to be in sync with one another?]
+<!-- [TODO(efritz): can you update this paragraph and picture to be in sync with one another?] -->
 
 <p class="text-center">
   <img src="https://raw.githubusercontent.com/sourcegraph/sourcegraph/07cc078e9f506fe8a60a205eba67c54f4eb6db18/doc/dev/architecture/precise-code-intel.svg" title="architecture diagram" />
 </p>
 
-The "middleman" nature of the API server when serving user requests was an artifact of the initial architecture of the indexed precise code system. After porting this system to go in 3.16, it became apparent that the API server was a *very* thin wrapper around the bundle manager API, so in 3.17, we decided to remove it altogether.
+The "middleman" nature of the API server when serving user requests was an artifact of the initial architecture of the indexed precise code system. After porting this system to Go in 3.16, it became apparent that the API server was a *very* thin wrapper around the bundle manager API, so in 3.17, we decided to remove it altogether.
 
 The way we did this was a bit of a kludge, which we might revisit and clean up later. In essence, we wanted to eliminate an unnecessary network call between the precise code navigation API server client (the Sourcegraph frontend service) and the API server. However, we didn't want to have to write a bunch of new code to define an API service and client for the bundle manager directly, so what we did was we kept the existing API server and client as-is, but replaced the actual network calls with function calls to the HTTP handler functions directly.
 
@@ -362,6 +362,8 @@ These last charts show the size of the converted bundle on disk after conversion
 </style>
 
 With all the changes discussed in this post combined, the latency for queries and upload processing has been cut by a factor of two, as has the size of bundles on disk, compared to Sourcegraph 3.15.
+
+Finally, here are the before and after profiles of CPU, memory allocations, and heap of the LSIF processing system. Note that most of the original red spots have been eliminated. New ones have naturally emerged, but overall the system is much faster:
 
 <table>
 <tr>
