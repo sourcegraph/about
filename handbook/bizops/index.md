@@ -80,3 +80,7 @@ Every underlying data source (not chart!) is assumed to always be up-to-date unl
 
 [Looker](https://sourcegraph.looker.com/) is a self-service tool with many pre-built reports and visualizations. The [onboarding doc](https://sourcegraph.looker.com/projects/sourcegraph_events/files/1_home.md) is located in Looker. Reach out in the #analytics Slack channel if you have any questions, we're happy to help!
 
+### Quick links
+* [Go-to-market board](https://sourcegraph.looker.com/browse/boards/2)
+* [Product/engineering board](https://sourcegraph.looker.com/browse/boards/5)
+* [All instances](https://sourcegraph.looker.com/looks/436)
