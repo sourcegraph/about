@@ -19,8 +19,8 @@ export default class GetStarted extends React.Component<any, any> {
             <Layout
                 location={this.props.location}
                 meta={{
-                    title: 'Get started with Sourcegraph TODO(sqs)',
-                    description: 'TODO(sqs)',
+                    title: 'Get started with Sourcegraph',
+                    description: 'Get started with Sourcegraph',
                     image: 'TODO(sqs)',
                 }}
                 minimal={true}

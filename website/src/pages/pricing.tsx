@@ -35,7 +35,7 @@ const TEAM_FEATURES: Features = { ...STARTER_FEATURES, userAndAdminRoles: true }
 
 export default ((props: any) => (
     <Layout location={props.location}>
-        <div className="bg-white text-dark">
+        <div className="text-dark">
             <Helmet>
                 <title>Sourcegraph - Pricing</title>
                 <meta name="twitter:title" content="Sourcegraph - Pricing" />
@@ -46,7 +46,7 @@ export default ((props: any) => (
                 <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>
             <div className="pricing-page mt-2">
-                <ContentSection color="primary" className="hero-section text-center py-5">
+                <ContentSection className="hero-section text-center py-5">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
                     <h2>Universal Code Search scales with your team</h2>
                 </ContentSection>
@@ -158,8 +158,8 @@ export default ((props: any) => (
                             discounts for your development teams.
                         </p>
                     </div>
+                    <hr className="my-4" />
                 </div>
-                <hr className="my-4" />
             </div>
             <ContentSection>
                 <TrySourcegraph className="my-6" />

@@ -114,7 +114,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 <Link to="/get-started">Use it free</Link> for up to 10 developers. To get your company
                                 to upgrade to a <Link to="/pricing">paid plan</Link>, see the{' '}
                                 <Link to="/customers">customers page</Link> (to make the case). Or{' '}
-                                <a href="#">schedule time with us</a> for help.
+                                <a href="/contact/request-info">schedule time with us</a> for help.
                             </p>
                         </div>
                     </div>
@@ -138,8 +138,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-7 pl-lg-6">
-                        <div class="container video-embed embed-responsive embed-responsive-16by9 ">
+                    <div className="col-lg-7 pl-lg-6 mt-3">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -152,9 +152,9 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </ContentSection>
             <ContentSection className="pt-4 mb-6">
-                <div className="row">
-                    <div className="col-lg-7 pr-lg-6">
-                        <div class="container video-embed embed-responsive embed-responsive-16by9 ">
+                <div className="row flex-wrap-reverse">
+                    <div className="col-lg-7 pr-lg-6 mt-3">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -199,8 +199,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             </a>
                         </div>
                     </div>
-                    <div className="col-lg-7 pl-lg-6">
-                        <div class="container video-embed embed-responsive embed-responsive-16by9 ">
+                    <div className="col-lg-7 pl-lg-6 mt-3">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -213,8 +213,8 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </ContentSection>
             <ContentSection className="pt-4 mb-6">
-                <div className="row">
-                    <div className="col-lg-7 pr-lg-6">
+                <div className="row flex-wrap-reverse">
+                    <div className="col-lg-7 pr-lg-6 mt-3">
                         <div class="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
@@ -234,14 +234,14 @@ const Index: React.FunctionComponent = (props: any) => (
                             static analysis.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="mailto:feedback@sourcegraph.com">
+                            <a className="d-flex align-items-center" href="/contact/request-demo">
                                 Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="mb-6">
+            <ContentSection className="mb-4">
                 <div className="container">
                     <hr className="my-6" />
                 </div>

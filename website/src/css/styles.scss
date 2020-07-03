@@ -271,6 +271,12 @@ table {
 
 body {
     background: url('/page-bg.svg') repeat;
+}
+.home,
+.content-page,
+.customers-page,
+.pricing-page,
+.case-study {
     padding-top: 70px;
 }
 .virtual-br::before {

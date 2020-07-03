@@ -45,8 +45,7 @@ export default class TrialPage extends React.Component<any, any> {
                             <div className="col-md-6">
                                 <h1 className="display-3 font-weight-bold">Contact us</h1>
                                 <h3 className="font-weight-light">
-                                    Talk with a product specialist or engineer to get started with Sourcegraph
-                                    enterprise.
+                                    Talk with a product specialist or engineer to learn more about Sourcegraph.
                                 </h3>
                                 <div className="form mt-5">
                                     <div id="hubspotRequestTrialForm" className="d-flex justify-center" />

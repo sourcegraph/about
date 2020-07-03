@@ -43,11 +43,11 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <>
                 <nav
-                    className={`${this.state.isTop ? '' : 'bg-white'}  header navbar navbar-expand-md fixed-top pt-4 ${
-                        this.props.className || 'navbar-light'
-                    }`}
+                    className={`${
+                        this.state.isTop ? '' : 'bg-white navborder'
+                    } header navbar navbar-expand-md fixed-top pt-4 ${this.props.className || 'navbar-light'}`}
                 >
-                    <div className="container-fluid">
+                    <div className="container">
                         <Link className="navbar-brand header__logo" to="/">
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}

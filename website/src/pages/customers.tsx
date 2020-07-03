@@ -206,7 +206,6 @@ export default ((props: any) => (
                     </div>
                     <div className="row justify-content-center pt-4">
                         <div className="col-lg-10 text-center">
-                            <img src="/external-logos/yelp.svg" width="130px" />
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     Sourcegraph empowers developers at Yelp to ship code faster and more reliably than
@@ -215,6 +214,9 @@ export default ((props: any) => (
                                     microservices and libraries in our code base.
                                 </p>
                                 <footer className="blockquote-footer">Kevin Chen, Software Engineer, Yelp</footer>
+                                <div className="d-flex justify-content-center my-2">
+                                    <img src="/external-logos/yelp.svg" width="100px" />
+                                </div>
                                 <Link to="https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html">
                                     Yelp Engineering Blog: Winning the Hackathon with Sourcegraph{' '}
                                     <ExternalLinkIcon className="icon-inline ml-1" />
@@ -249,7 +251,6 @@ export default ((props: any) => (
                     </div>
                     <div className="row justify-content-center pt-6">
                         <div className="col-lg-10 text-center">
-                            <img src="/external-logos/sofi-logo.svg" width="100px" />
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our
@@ -259,6 +260,9 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Ursula Robertson, Engineering Manager, SoFi
                                 </footer>
+                                <div className="d-flex justify-content-center my-3">
+                                    <img src="/external-logos/sofi-logo.svg" width="90px" />
+                                </div>
                                 <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
                                     SoFi adopts Sourcegraph to manage hundreds of microservices{' '}
                                     <ArrowRightBoxIcon className="icon-inline ml-1" />
@@ -295,7 +299,6 @@ export default ((props: any) => (
                     </div>
                     <div className="row justify-content-center pt-6">
                         <div className="col-lg-10 text-center">
-                            <img src="/external-logos/quantcast-logo.svg" width="150px" />
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     Sourcegraph’s search gave us confidence because we knew we wouldn't overlook
@@ -304,6 +307,9 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Simon Law, Staff Software Engineer, Quantcast
                                 </footer>
+                                <div className="d-flex justify-content-center my-4">
+                                    <img src="/external-logos/quantcast-logo.svg" width="120px" />
+                                </div>
                                 <Link to="/case-studies/quantcast-large-scale-refactoring/">
                                     Quantcast adopts Sourcegraph for large-scale refactoring{' '}
                                     <ArrowRightBoxIcon className="icon-inline ml-1" />
@@ -339,7 +345,6 @@ export default ((props: any) => (
                     </div>
                     <div className="row justify-content-center pt-4">
                         <div className="col-lg-10 text-center">
-                            <img src="/external-logos/workiva-vector-logo.svg" width="150px" />
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     In a code review, you're given a very truncated view of the code, from dozens of
@@ -351,6 +356,7 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Trent Grover, Director of Architecture at Workiva
                                 </footer>
+                                <img src="/external-logos/workiva-vector-logo.svg" width="120px" className="my-2" />
                             </blockquote>
                         </div>
                     </div>
@@ -385,13 +391,15 @@ export default ((props: any) => (
                 </div>
                 <div className="row justify-content-center pt-6">
                     <div className="col-lg-10 text-center">
-                        <img src="/external-logos/convoy-logo.svg" width="150px" />
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
                                 For our new developers, Sourcegraph has been invaluable to get to know the repository
                                 structure, to track down where code lives, and self-service during their investigations.
                             </p>
                             <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                            <div className="d-flex justify-content-center my-4">
+                                <img src="/external-logos/convoy-logo.svg" width="110px" />
+                            </div>
                             <Link to="/case-studies/convoy-improved-on-boarding">
                                 Developers at Convoy onboard faster with Sourcegraph{' '}
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
@@ -426,7 +434,6 @@ export default ((props: any) => (
                     </div>
                     <div className="row justify-content-center pt-4">
                         <div className="col-lg-10 text-center">
-                            <img src="/external-logos/lyft-logo.svg" width="100px" />
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     Sourcegraph gives us the ability to search for and refactor references to deprecated
@@ -434,6 +441,9 @@ export default ((props: any) => (
                                     confidence that we're not leaving anyone behind.
                                 </p>
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
+                                <div className="d-flex justify-content-center my-3">
+                                    <img src="/external-logos/lyft-logo.svg" width="60px" />
+                                </div>
                                 <Link to="/case-studies/lyft-monolith-to-microservices">
                                     Lyft uses Sourcegraph to ensure production stability{' '}
                                     <ArrowRightBoxIcon className="icon-inline ml-1" />
