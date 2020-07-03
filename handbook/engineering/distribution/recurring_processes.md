@@ -119,7 +119,7 @@ feasible set of work with clear lines of ownership.
 The [engineering manager](../roles.md#engineering-manager) drives the retrospective. Ask everyone to review the
 previous milestone tracking issue, the planned work assigned to you, what got done, what didn't. To facility this meeting, we will use the Start/Stop/Continue format, although its possible to other formats as required.
 
-Please add items in advanced whenever possible, following [structured meetings](https://about.sourcegraph.com/handbook/communication#structured-meetings) recommendations.
+Please add items in advance whenever possible, following [structured meetings](https://about.sourcegraph.com/handbook/communication#structured-meetings) recommendations.
 
 #### Start
 _Ideas that the team should be doing but are not doing, new ideas worth discussing to address current problems._
