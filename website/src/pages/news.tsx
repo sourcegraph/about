@@ -38,10 +38,10 @@ export default class NewsPage extends React.Component<any, any> {
                 <ContentPage
                     title="Sourcegraph in the news"
                     description="The latest Sourcegraph news and press releases"
-                    className="bg-gradient-primary"
+                    className="text-dark"
                     titleClassName="display-2 font-weight-bold"
                 >
-                    <div className="news bg-white text-dark">
+                    <div className="news">
                         <section>
                             <div className="container">
                                 <div className="row justify-content-start">
