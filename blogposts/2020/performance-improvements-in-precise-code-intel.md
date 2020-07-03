@@ -59,23 +59,21 @@ These efforts yielded a 2x speedup in query latency, a 2x speedup in processing 
 
 ## Architecture changes
 
-The CPU profiling revealed a substantial amount of time was being spent in the API server. This service receives the LSIF upload from the API user and writes it to disk. A separate background worker service later converts the on-disk LSIF data into a SQLite bundle. On a user query, the API server receives the requests, queries the bundle manager server, which in turn uses the SQLite bundle to respond to the API server, which then forwards that response to the user.
-
-<!-- [TODO(efritz): can you update this paragraph and picture to be in sync with one another?] -->
+The CPU profiling revealed a substantial amount of time was being spent in the API server. This service receives the LSIF upload from the API user and passes it to the bundle manager server which writes it to disk. A separate background worker service later converts the on-disk LSIF data into a SQLite bundle. On a user query, the API server receives the requests, queries the bundle manager server, which in turn uses the SQLite bundle to respond to the API server, which then forwards that response to the user.
 
 <p class="text-center">
-  <img src="https://raw.githubusercontent.com/sourcegraph/sourcegraph/07cc078e9f506fe8a60a205eba67c54f4eb6db18/doc/dev/architecture/precise-code-intel.svg" title="architecture diagram" />
+  <img src="https://storage.googleapis.com/sourcegraph-assets/precise-code-intel-arch-before-rewrite.svg" title="architecture diagram (before)" />
 </p>
 
 The "middleman" nature of the API server when serving user requests was an artifact of the initial architecture of the indexed precise code system. After porting this system to Go in 3.16, it became apparent that the API server was a *very* thin wrapper around the bundle manager API, so in 3.17, we decided to remove it altogether.
 
-The way we did this was a bit of a kludge, which we might revisit and clean up later. In essence, we wanted to eliminate an unnecessary network call between the precise code navigation API server client (the Sourcegraph frontend service) and the API server. However, we didn't want to have to write a bunch of new code to define an API service and client for the bundle manager directly, so what we did was we kept the existing API server and client as-is, but replaced the actual network calls with function calls to the HTTP handler functions directly.
+<p class="text-center">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/precise-code-intel-arch-after-rewrite.svg" title="architecture diagram (after)" />
+</p>
 
-[In the code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@bc072662500da3ce0bc7b5820bf0f63fb59182fb/-/blob/internal/codeintel/lsifserver/client/proxy.go#L40-46), we use the `httptest.NewRecorder` function to record the handler response, and then return this request to the caller as if it came from an actual over-the-network HTTP client call. Not the cleanest code in the world, but this addressed the immediate performance bottleneck and we were eager to move onto the others. We plan to revisit this abstraction boundary in the future to clean it up.
+The way we did this was a bit of a kludge. In essence, we wanted to eliminate an unnecessary network call between the precise code API server client (in the Sourcegraph frontend service) and the API server. However, we didn't want to have to write a bunch of new code to define an API service and client for the bundle manager directly, so what we did was we kept the existing API server and client as-is, but replaced the actual network calls with function calls to the HTTP handler functions directly.
 
-<!-- **PRs**: -->
-<!-- - [codeintel: Call handleEnqueue from lsifserver proxy (#10871)](https://github.com/sourcegraph/sourcegraph/pull/10871) -->
-<!-- - [codeintel: Call query methods from from lsifserver client (#10872)](https://github.com/sourcegraph/sourcegraph/pull/10872) -->
+[In the code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@bc072662500da3ce0bc7b5820bf0f63fb59182fb/-/blob/internal/codeintel/lsifserver/client/proxy.go#L40-46), we use the `httptest.NewRecorder` function to record the handler response, and then return this request to the caller as if it came from an actual over-the-network HTTP client call. Not the cleanest code in the world, but this addressed the immediate performance bottleneck and we were eager to move onto the others. In a separate pass, we were able to even further collapse this boundary and replace the fake HTTP server shim with direct function calls.
 
 ## Parallelization
 
