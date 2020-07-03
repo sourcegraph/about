@@ -6,7 +6,7 @@ authorUrl: https://eric-fritz.com
 publishDate: 2020-06-17T10:00-08:00
 tags: [blog]
 slug: performance-improvements-in-precise-code-intel
-heroImage: /blog/flying-brain.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/hero.png
 published: true
 ---
 
