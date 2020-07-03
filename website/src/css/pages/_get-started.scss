@@ -6,3 +6,11 @@ textarea {
     resize: none;
     background-color: $light-11;
 }
+.installtext {
+    position: relative;
+}
+.copytext {
+    position: absolute;
+    right: 0;
+    margin: 2px;
+}

@@ -32,25 +32,28 @@ export default class GetStarted extends React.Component<any, any> {
 
                             <h2 className="h5 mt-4">Quickstart</h2>
                             <p>Run this to launch Sourcegraph on your local machine:</p>
-                            <textarea
-                                className="border p-2"
-                                spellcheck="false"
-                                rows="5"
-                                ref={textarea => (this.textArea = textarea)}
-                                value="
+                            <div className="installtext">
+                                <textarea
+                                    className="border p-2"
+                                    spellcheck="false"
+                                    rows="5"
+                                    onClick={() => this.copyDockerInstall()}
+                                    ref={textarea => (this.textArea = textarea)}
+                                    value="
                                     docker run &#13;
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm &#13;
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph &#13;
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph &#13;
                                     sourcegraph/server:3.17.0
                                     "
-                            />
-                            <a href="#">
-                                <ClipboardArrowLeftOutlineIcon
-                                    onClick={() => this.copyDockerInstall()}
-                                    className="copytext icon-inline ml-1 medium"
                                 />
-                            </a>
+                                <a className="copytext" href="#">
+                                    <ClipboardArrowLeftOutlineIcon
+                                        onClick={() => this.copyDockerInstall()}
+                                        className="copytext icon-inline ml-1 medium"
+                                    />
+                                </a>
+                            </div>
                             <h2 className="h5 mt-4">Deploy to a server or cluster</h2>
                             <p>
                                 See{' '}
