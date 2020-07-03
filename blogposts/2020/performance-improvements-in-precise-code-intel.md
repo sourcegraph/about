@@ -65,7 +65,7 @@ The CPU profiling revealed a substantial amount of time was being spent in the A
   <img src="https://storage.googleapis.com/sourcegraph-assets/precise-code-intel-arch-before-rewrite.svg" title="architecture diagram (before)" />
 </p>
 
-The "middleman" nature of the API server when serving user requests was an artifact of the initial architecture of the indexed precise code system. After porting this system to Go in 3.16, it became apparent that the API server was a *very* thin wrapper around the bundle manager API, so in 3.17, we decided to remove it altogether.
+The "middleman" nature of the API server when serving user requests was an artifact of the initial architecture of the indexed precise code navigation system. After porting this system to Go in 3.16, it became apparent that the API server was a *very* thin wrapper around the bundle manager API, so in 3.17, we decided to remove it altogether.
 
 <p class="text-center">
   <img src="https://storage.googleapis.com/sourcegraph-assets/precise-code-intel-arch-after-rewrite.svg" title="architecture diagram (after)" />
@@ -88,7 +88,7 @@ Overall, the entire process of converting an LSIF index into a bundle file is a 
 5. The grouper converts the in-memory representation to the format that will be stored on disk.
 6. The writer serializes this data to disk.
 
-We identified that the reading and writing steps (marshalling, unmarshalling, and I/O) occupied the majority of time spent, which is where we focused our efforts.
+We identified that the reading and writing steps (marshalling, unmarshalling, and I/O) occupied the majority of time spent, which is where we focused our parallelization efforts.
 
 ### Parallel JSON parsing
 
