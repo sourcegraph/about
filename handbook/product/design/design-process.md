@@ -103,7 +103,7 @@ While asynchronous communication is a core attribute of remote work, key moments
       - A GitHub issue should be created to track the work
       - Designs are produced in Figma
       - Designs will be announced in Slack and linked in the GitHub issue well before they are complete for review
-      - Visual design checklist:
+      - Ensure designs meet the visual design checklist:
         - Ensure spacing is consistent and matches the 8pt grid system
         - Ensure colors match existing styles
           - If new styles are introduced, label them clearly
