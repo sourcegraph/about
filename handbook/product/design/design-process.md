@@ -66,7 +66,7 @@ While asynchronous communication is a core attribute of remote work, key moments
       - Schedule and conduct a presentation meeting
       - Stakeholders will approve the GitHub issue indicating the designs are ready for the next phase
   - Checklist
-      - Ensure designs meet the Jacob Nielsen's [ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
+      - Ensure designs meet Jacob Nielsen's [ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
       - Has the change’s effect on the CLI been considered?
           - Does the language in the UI map to the language in the CLI?
       - Enterprise / Cloud
