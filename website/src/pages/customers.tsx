@@ -213,14 +213,14 @@ export default ((props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Onboard everyone faster</h2>
                         <p>
-                            In big codebases, every developer is constantly onboarding, because the amount of new and
-                            unfamiliar code grows <i>every day</i>.
+                            It's not just new developers who need to onboard faster. Every developer is constantly
+                            onboarding, because the amount of new and unfamiliar code grows <i>every day</i>.
                         </p>
-                        <p>Sourcegraph’s web interface minimizes context switching when exploring code and enables link
-                            sharing to specific code, so questions get answered faster and with less effort. For remote
-                            and distributed engineering teams, code links become essential conduits of knowledge, shared
-                            hundreds of times per day over chat, on issue trackers, and in documentation. This improves
-                            everyone’s efficiency, and reduces the time to commit for new hires. 
+                        <p>Sourcegraph’s web interface enables sharing links to specific code, so questions
+                            get answered faster and with less effort. For remote and distributed teams, code links
+                            become essential conduits of knowledge, shared hundreds of times per day over chat, on
+                            issue trackers, and in documentation. This improves everyone’s efficiency, and reduces
+                            the time to commit for new hires. 
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
@@ -397,8 +397,8 @@ export default ((props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Move faster (and safely) with large-scale changes</h2>
                         <p>
-                            Quickly and securely make large-scale code changes and refactors to remove legacy code,
-                            address critical security issues, and pay down tech debt: 
+                            Teams run campaigns to quickly and securely remove legacy code, fix critical security issues,
+                            pay down tech debt, and make large-scale code changes and refactors across the entire codebase: 
                             <ul><li>Remove deprecated code (like a Java artifact or package.json dependency) and change
                                 the APIs used across the entire organization</li>
                                 <li>Identify everywhere a vulnerable package or API is used, and open issues or pull
@@ -407,8 +407,7 @@ export default ((props: any) => (
                                     consistent across your entire codebase</li></ul>
                         </p>
                         <p>
-                            Teams run campaigns in Sourcegraph to make find-replace code changes across the entire codebase,
-                            quickly and securely. 
+                             
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
