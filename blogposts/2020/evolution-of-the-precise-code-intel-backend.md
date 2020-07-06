@@ -32,7 +32,7 @@ Language servers served our users well for a number of years, but eventually, as
 
 Fast forward to early 2019, when our largest customer began regularly reporting language server outages related to high usage volume and large codebase size. We began looking for ways to improve performance at scale, and started thinking about how to combine the richness of the LSP ecosystem with the performance of an indexing-based approach like srclib.
 
-In February 2019, to our surprise and delight, Dirk Bäumer, one of the creators of LSP, announced the Language Server Index Format (LSIF), an code intelligence indexing format "similar in spirit to LSP".
+In February 2019, to our surprise and delight, Dirk Bäumer, one of the creators of LSP, announced the Language Server Index Format (LSIF), a code intelligence indexing format "similar in spirit to LSP".
 
 ## What is LSIF?
 
