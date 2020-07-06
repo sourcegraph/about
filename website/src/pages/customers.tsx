@@ -188,9 +188,9 @@ export default ((props: any) => (
                             effective.
                         </p>
                         <p className="my-5">
-                            Universal code search enables you to navigate and understand interdependent codebases —
+                            Universal code search enables developers to navigate and understand interdependent codebases —
                             across repositories, programming languages, code hosts, version control systems, services,
-                            and APIs — to find the code and other information you need to do your job.
+                            and APIs — to find the code and other information they need to do their job.
                         </p>
                     </div>
                 </div>
@@ -391,11 +391,9 @@ export default ((props: any) => (
                             <ul><li>Remove deprecated code (like a Java artifact or package.json dependency) and change
                                 the APIs used across the entire organization</li>
                                 <li>Identify everywhere a vulnerable package or API is used, and open issues or pull
-                                    requests on all affected projects to triage and follow-through on critical
-                                    security issues</li>
+                                    requests on all affected projects</li>
                                 <li>Keep your library dependencies (and how you use those libraries) up-to-date and
-                                    consistent across all of your organization's codebase to avoid old bugs, security
-                                    vulnerabilities, and other problems from inconsistent dependency version use</li>
+                                    consistent across your entire codebase</li>
                                 <li>Standardize build and deploy configuration by keeping configurations up to date
                                     and consistent across all of your organization's code</li></ul>
                         </p>
