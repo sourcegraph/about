@@ -181,7 +181,7 @@ export default ((props: any) => (
                 <div className="container">
                 <h2 className="display-2 font-weight-bold">Why universal code search?</h2>
                 <div className="row">
-                    <div className="col-lg-6 mt-lg-0">
+                    <div className="col-lg-5"">
                         <p className="my-5">
                             Search limited to only Python files is like Google only indexing websites built with Ruby on
                             Rails – a nonstarter for modern development teams. Code search must be universal to be
@@ -193,6 +193,17 @@ export default ((props: any) => (
                             and APIs — to find the code and other information they need to do their job.
                         </p>
                     </div>
+                    <div className="col-lg-7 pl-lg-6">
+                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
                 </div>
                 </div>
                 <hr className="mb-6" id="onboard" />
@@ -202,8 +213,8 @@ export default ((props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Onboard everyone faster</h2>
                         <p>
-                            It's not just new developers who need to onboard faster. In big codebases, every developer
-                            is constantly onboarding, because the amount of new and unfamiliar code grows <i>every day</i>.
+                            In big codebases, every developer is constantly onboarding, because the amount of new and
+                            unfamiliar code grows <i>every day</i>.
                         </p>
                         <p>Sourcegraph’s web interface minimizes context switching when exploring code and enables link
                             sharing to specific code, so questions get answered faster and with less effort. For remote
@@ -386,21 +397,18 @@ export default ((props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Move faster (and safely) with large-scale changes</h2>
                         <p>
-                            Find and fix things quickly and securely when removing legacy code, addressing critical
-                            security issues, and paying down tech debt: 
+                            Quickly and securely make large-scale code changes and refactors to remove legacy code,
+                            address critical security issues, and pay down tech debt: 
                             <ul><li>Remove deprecated code (like a Java artifact or package.json dependency) and change
                                 the APIs used across the entire organization</li>
                                 <li>Identify everywhere a vulnerable package or API is used, and open issues or pull
                                     requests on all affected projects</li>
                                 <li>Keep your library dependencies (and how you use those libraries) up-to-date and
-                                    consistent across your entire codebase</li>
-                                <li>Standardize build and deploy configuration by keeping configurations up to date
-                                    and consistent across all of your organization's code</li></ul>
+                                    consistent across your entire codebase</li></ul>
                         </p>
                         <p>
-                            With Sourcegraph, teams run campaigns to find-replace across entire codebases, compute diffs,
-                            and create branches and pull requests across multiple repositories. This makes large-scale
-                            code changes and refactors painless, more accurate, and faster, when done with Sourcegraph.
+                            Teams run campaigns in Sourcegraph to make find-replace code changes across the entire codebase,
+                            quickly and securely. 
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
