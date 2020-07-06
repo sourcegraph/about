@@ -178,10 +178,9 @@ export default ((props: any) => (
             <CustomerLogosSection className="my-6" />
             <ContentSection className="mt-6" id="code-search">
                 <hr className="my-6" />
-                <div className="container">
-                <h2 className="display-2 font-weight-bold">Why universal code search?</h2>
                 <div className="row">
                     <div className="col-lg-5"">
+                    <h2 className="display-2 font-weight-bold">Why universal code search?</h2>
                         <p className="my-5">
                             Search limited to only Python files is like Google only indexing websites built with Ruby on
                             Rails – a nonstarter for modern development teams. Code search must be universal to be
@@ -204,7 +203,6 @@ export default ((props: any) => (
                             ></iframe>
                         </div>
                     </div>
-                </div>
                 </div>
                 <hr className="mb-6" id="onboard" />
             </ContentSection>
