@@ -42,7 +42,7 @@ While asynchronous communication is a core attribute of remote work, key moments
       - A GitHub issue should be created to track the work
       - Research is conducted according to requirements
       - Findings publishing and review
-        - Findings should be detailed in a google doc and announced in the corresponding team channel or #product on Slack
+        - Findings should be detailed in a Google doc and announced in the corresponding team channel or #product on Slack
         - Findings should contain a clear summary, links to resources and supporting data
         - Conduct a syncronous review meeting with key stakeholders based on side of project or importance of findings
       - Schedule and conduct a presentation meeting with stakeholders where necessary
