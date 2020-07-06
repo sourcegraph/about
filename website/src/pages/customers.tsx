@@ -193,8 +193,19 @@ export default ((props: any) => (
                             and APIs — to find the code and other information they need to do their job.
                         </p>
                     </div>
+                    <div className="col-lg-6 mt-2 mt-lg-4">
+                        <div className="card pt-0" style={{ background: "url('/customers-page-bg.svg') no-repeat" }}>
+                            <strong className="card-header border-0 pb-0">Want to use Sourcegraph at work?</strong>
+                            <p className="card-body mb-0 pt-1">
+                                <Link to="/get-started">Use it free</Link> for up to 10 developers. Upgrade to
+                                a <Link to="/pricing">paid plan</Link> or{' '}
+                                <a href="/contact/request-info">schedule time with us</a> for help.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>
+                
                 <hr className="mb-6" id="onboard" />
             </ContentSection>
             <ContentSection className="mt-6">
