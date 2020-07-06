@@ -25,7 +25,7 @@ export default class GetStarted extends React.Component<any, any> {
                 }}
                 minimal={true}
             >
-                <div className="container mt-5">
+                <div className="form-page container mt-5">
                     <div className="row">
                         <div className="col-lg-6">
                             <h1 className="display-1 font-weight-bold">Get started with Sourcegraph</h1>

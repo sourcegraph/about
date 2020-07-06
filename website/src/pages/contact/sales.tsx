@@ -24,7 +24,7 @@ export default class SalesPage extends React.Component<any, any> {
         return (
             <Layout className="pt-0" location={this.props.location} minimal={true}>
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
-                <div className="bg-white text-dark">
+                <div className="form-page bg-white text-dark">
                     <div className="container-xl pt-5 px-5">
                         <div className="row flex-wrap-reverse">
                             <div className="col-md-6">

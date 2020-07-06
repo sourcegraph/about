@@ -40,7 +40,7 @@ export default class DemoPage extends React.Component<any, any> {
                     <meta name="description" content={desc} />
                 </Helmet>
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
-                <div className="bg-white text-dark">
+                <div className="form-page bg-white text-dark">
                     <div className="container-xl pt-5 px-5">
                         <div className="row">
                             <div className="col-md-6">
