@@ -176,38 +176,7 @@ export default ((props: any) => (
         </Helmet>
         <div className="customers-page">
             <CustomerLogosSection className="my-6" />
-            <ContentSection className="mt-6" id="code-search">
-                <hr className="my-6" />
-                <div className="container">
-                <h2 className="display-2 font-weight-bold">Why universal code search?</h2>
-                <div className="row">
-                    <div className="col-lg-6 mt-lg-0">
-                        <p className="my-5">
-                            Search limited to only Python files is like Google only indexing websites built with Ruby on
-                            Rails – a nonstarter for modern development teams. Code search must be universal to be
-                            effective.
-                        </p>
-                        <p className="my-5">
-                            Universal code search enables developers to navigate and understand interdependent codebases —
-                            across repositories, programming languages, code hosts, version control systems, services,
-                            and APIs — to find the code and other information they need to do their job.
-                        </p>
-                    </div>
-                    <div className="col-lg-6 mt-2 mt-lg-4">
-                        <div className="card pt-0" style={{ background: "url('/customers-page-bg.svg') no-repeat" }}>
-                            <strong className="card-header border-0 pb-0">Want to use Sourcegraph at work?</strong>
-                            <p className="card-body mb-0 pt-1">
-                                <Link to="/get-started">Use it free</Link> for up to 10 developers. Upgrade to
-                                a <Link to="/pricing">paid plan</Link> or{' '}
-                                <a href="/contact/request-info">schedule time with us</a> for help.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                
                 <hr className="mb-6" id="onboard" />
-            </ContentSection>
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
