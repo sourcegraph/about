@@ -15,11 +15,11 @@ We want to mimimize the bias in our hiring process, so we will try to avoid sche
 
 ## Scheduling
 
-We are flexible when it comes to scheduling interviews because we are all-remote and we don't need to schedule all interviews back-to-back (unlike typical onsite interviews at other companies).
+We are flexible when it comes to scheduling interviews because we are all-remote and we don't need to schedule all interviews back-to-back (unlike typical onsite interviews at other companies). Some candiates like spreading interviews out over multiple days and others prefer to batch them as much as possible to get it over with. *Ask the candidate what their preferences are and then try to accomidate those preferences as much as possible (given interviewer availability)*.
 
-- We try to schedule interviews as soon as possible given the availability of the candidate and our interviewers.
-- We try to avoid more than 2 hours of consecutive interviews for a candidate.
-- If interviews are spread over multiple days and it is clear from the initial feedback that we won't be moving forward, we will cancel the remaining scheduled interviews to save ourselves and the candidate time.
+Even if candidates prefer to batch all their interviews together, it might not be possible due to the timezones of available interviewers.
+
+If interviews are spread over multiple days and it is clear from the initial feedback that we won't be moving forward, we will cancel the remaining scheduled interviews to save ourselves and the candidate time.
 
 ## Writing feedback
 
