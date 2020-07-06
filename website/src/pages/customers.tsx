@@ -403,8 +403,8 @@ export default ((props: any) => (
                                 the APIs used across the entire organization</li>
                                 <li>Identify everywhere a vulnerable package or API is used, and open issues or pull
                                     requests on all affected projects</li>
-                                <li>Keep your library dependencies (and how you use those libraries) up-to-date and
-                                    consistent across your entire codebase</li></ul>
+                                <li>Keep library dependencies (and how to use those libraries) up-to-date and
+                                    consistent across the entire codebase</li></ul>
                         </p>
                         <p>
                              
