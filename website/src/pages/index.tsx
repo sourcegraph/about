@@ -93,18 +93,12 @@ const Index: React.FunctionComponent = (props: any) => (
             </div>
 
             <div className="container">
-                <h2 className="display-2 font-weight-bold">Why universal code search?</h2>
+                <h2 className="display-2 font-weight-bold">How developers use Sourcegraph</h2>
                 <div className="row">
                     <div className="col-lg-6 mt-lg-0">
                         <p className="my-5">
-                            Search limited to only Python files is like Google only indexing websites built with Ruby on
-                            Rails – a nonstarter for modern development teams. Code search must be universal to be
-                            effective.
-                        </p>
-                        <p className="my-5">
-                            Universal code search enables you to navigate and understand interdependent codebases —
-                            across repositories, programming languages, code hosts, version control systems, services,
-                            and APIs — to find the code and other information you need to do your job.
+                            Sourcegraph is built by developers, for developers. We hear from developers who use
+                            Sourcegraph many times per day. Here's how they're using it.
                         </p>
                     </div>
                     <div className="col-lg-6 mt-2 mt-lg-4">
@@ -124,17 +118,25 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="my-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2>Search across repositories</h2>
+                        <h2>Find anything in code, fast</h2>
+                        <p>
+                            Sourcegraph returns results in milliseconds, even across thousands of repositories, like:
+                            <ul><li>Examples of{' '}<a href="https://sourcegraph.com/search?
+                                q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">
+                                installing packages in a Dockerfile</a></li>
+                                <li>Places where a specific error is returned</li>
+                                <li>Recent TypeScript changes mentioning `auth`</li>
+                                <li>Definitions of a specific function</li></ul>
+
+                        </p>
                         <p>
                             Write queries with regex, punctuation, symbols, and advanced syntax-aware pattern matching.
-                            Filter by file, language, path, and custom repository groups, and across programming
-                            languages, developer tools, search scopes, merge diffs, and commit messages. Sourcegraph’s
-                            universal code search engine returns results in milliseconds, even across thousands of
-                            repositories.
+                            Sourcegraph’s visual and interactive query builder constructs complex queries to find and
+                            filter code in ways IDEs and code hosts can’t.
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
-                                Read the documentation on code search <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -165,19 +167,18 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                     <div className="col-lg-5">
-                        <h2>Understand code in context to stay in flow</h2>
+                        <h2>Navigate code, with definitions and references</h2>
                         <p>
-                            Find definitions, function callers, and anything else stored in code, across package,
-                            dependency, and repository boundaries. Sourcegraph lets you explore code intelligently in
-                            your web browser in any repository on any branch, instantly and without losing your local
-                            context.
+                            Find definitions, references, usage examples, and anything else in code, across package,
+                            dependency, and repository boundaries. You can navigate code in your web browser in any
+                            repository on any branch, instantly and without losing your local context.
                         </p>
                         <div className="pt-1">
                             <a
                                 className="d-flex align-items-center"
                                 href="https://docs.sourcegraph.com/user/code_intelligence"
                             >
-                                Read the documentation on code intelligence{' '}
+                                Code intelligence documentation{' '}
                                 <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -189,13 +190,13 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <h2>Make large-scale code changes</h2>
                         <p>
-                            Remove legacy code, fix critical security issues, and pay down tech debt. Run campaigns to
-                            compute diffs and create breaches and pull or merge requests across multiple repositories.
-                            With Sourcegraph, teams move fast and fix things, safely.
+                            Remove legacy code, fix critical security issues, and pay down tech debt. Run
+                            campaigns to compute diffs and create branches and pull requests across multiple
+                            repositories. With Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/campaigns">
-                                Read the documentation on campaigns <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Campaigns documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -226,7 +227,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                     <div className="col-lg-5">
-                        <h2>Generate code insights</h2>
+                        <h2>Generate code insights [preview]</h2>
                         <p>
                             Aggregate data from connected external services, and enhance with code intelligence to get
                             the metadata information you care about. Take direct actions on these insights with
