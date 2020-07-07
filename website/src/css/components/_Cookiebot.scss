@@ -4,42 +4,42 @@
 #CybotCookiebotDialogBodyContentControls,
 #CybotCookiebotDialogBodyContentTitle,
 #CybotCookiebotDialogBodyButtons a {
-    font-family: Circular!important;
 }
 #CybotCookiebotDialog {
-    opacity: .90 !important;
+    color: map-get($theme-colors, 'dark');
+    opacity: 0.95;
 }
 #CybotCookiebotDialogBodyContent,
 #CybotCookiebotDialogBodyContentTitle {
-    font-weight:300!important;
+    font-weight: 300 !important;
 }
 #CybotCookiebotDialogBody {
-    max-width: 1000px!important;
+    max-width: 1000px !important;
 }
 #CybotCookiebotDialogBodyContentText {
     font-size: 0.9rem !important;
 }
 #CybotCookiebotDialogBodyButtonDetails {
-    display: none!important;
-}	
+    display: none !important;
+}
 a#CookiePolicyLink {
-  color: #0a65ea!important;
-  text-decoration: none!important;
+    color: #0a65ea !important;
+    text-decoration: none !important;
 }
 #CybotCookiebotDialogBodyButtonDecline {
-   background-color:transparent!important;
-   border: none!important;
-   color: #0a65ea!important;
-   font-weight: 300;
+    background-color: transparent !important;
+    border: none !important;
+    color: #0a65ea !important;
+    font-weight: 300;
 }
 a:hover#CybotCookieDialogBodyButtonDecline,
 a:hover#CookiePolicyLink {
-   color: #0745a1!important;
-   text-decoration: underline!important;
+    color: #0745a1 !important;
+    text-decoration: underline !important;
 }
 #CybotCookiebotDialogBodyButtonAccept {
-   color: #fff!important;
+    color: #fff !important;
 }
 #CybotCookiebotDialogBodyButtonAccept {
-   float: left;
+    float: left;
 }
