@@ -157,7 +157,7 @@ export default ((props: any) => (
                                 <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#campaigns" className="list-group-item list-group-item-action">
-                                Fix things swiftly and safely <ArrowRightIcon className="icon-inline ml-1" />
+                                Fix things quickly and safely <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
                     </div>
@@ -364,9 +364,9 @@ export default ((props: any) => (
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2 className="display-3 font-weight-bold">Fix things swiftly and safely</h2>
+                        <h2 className="display-3 font-weight-bold">Fix things quickly and safely</h2>
                         <p>
-                            Teams run campaigns to quickly and securely remove legacy code, fix critical security issues,
+                            Teams run campaigns to swiftly and securely remove legacy code, fix critical security issues,
                             pay down tech debt, and make large-scale code changes and refactors across the entire codebase: 
                             <ul><li>Remove deprecated code (like a Java artifact or package.json dependency) and change
                                 the APIs used across the entire organization</li>
