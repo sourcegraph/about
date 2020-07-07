@@ -66,6 +66,17 @@ If you use Google Chrome, you can add a Sourcegraph handbook search shortcut to 
    - URL with %s in place of query: https://about.sourcegraph.com/search?q=%s
 1. Press the **Add** button.
 
+### Firefox 
+
+If you use Firefox, you can add a Sourcegraph handbook search shortcut to the address bar
+
+#### Setup 
+
+1. Right click the search bar on https://about.sourcegraph.com/handbook 
+2. Choose "Add a keyword for this Search"
+3. Enter a keyword that you would like to use (e.g. `sg`)
+4. Type `sg terraform` to search for our Terraform style guide
+
 #### Usage
 
 1. Focus in Chrome’s address bar (by clicking, tapping, or pressing <kbd>⌘L</kbd> on macOS or <kbd>Ctrl+L</kbd> on Linux).
