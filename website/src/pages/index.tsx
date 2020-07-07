@@ -15,7 +15,7 @@ const Index: React.FunctionComponent = (props: any) => (
         meta={{
             title: 'Sourcegraph: Universal Code Search',
             description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
-            image: 'https://info.sourcegraph.com/hubfs/sourcegraph_logo.png',
+            image: '/sourcegraph-logo-og.png',
         }}
     >
         <Helmet>
@@ -97,8 +97,8 @@ const Index: React.FunctionComponent = (props: any) => (
                 <div className="row">
                     <div className="col-lg-6 mt-lg-0">
                         <p className="my-5">
-                            Sourcegraph is built by developers for developers, to help them solve the
-                            big code problems they face, all day every day. Here's how they're doing it.
+                            Sourcegraph is built by developers for developers, to help them solve the big code problems
+                            they face, all day every day. Here's how they're doing it.
                         </p>
                     </div>
                     <div className="col-lg-6 mt-2 mt-lg-4">
@@ -121,12 +121,20 @@ const Index: React.FunctionComponent = (props: any) => (
                         <h2>Find anything in code, fast</h2>
                         <p>
                             Sourcegraph returns results in milliseconds, even across thousands of repositories, like:
-                            <ul><li>Examples of{' '}<a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">
-                                installing packages in a Dockerfile</a></li>
+                            <ul>
+                                <li>
+                                    Examples of{' '}
+                                    <a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">
+                                        installing packages in a Dockerfile
+                                    </a>
+                                </li>
                                 <li>Places where a specific error is returned</li>
-                                <li>Recent TypeScript changes mentioning <code className="border rounded px-1">auth</code></li>
-                                <li>Definitions of a specific function</li></ul>
-
+                                <li>
+                                    Recent TypeScript changes mentioning{' '}
+                                    <code className="border rounded px-1">auth</code>
+                                </li>
+                                <li>Definitions of a specific function</li>
+                            </ul>
                         </p>
                         <p>
                             Write queries with regex, punctuation, symbols, and advanced syntax-aware pattern matching.
@@ -177,8 +185,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 className="d-flex align-items-center"
                                 href="https://docs.sourcegraph.com/user/code_intelligence"
                             >
-                                Code intelligence documentation{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Code intelligence documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -189,9 +196,9 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <h2>Make large-scale code changes</h2>
                         <p>
-                            Remove legacy code, fix critical security issues, and pay down tech debt. Run
-                            campaigns to compute diffs and create branches and pull requests across multiple
-                            repositories. With Sourcegraph, teams move fast and fix things, safely.
+                            Remove legacy code, fix critical security issues, and pay down tech debt. Run campaigns to
+                            compute diffs and create branches and pull requests across multiple repositories. With
+                            Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/campaigns">
