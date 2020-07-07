@@ -335,6 +335,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [alicja@sourcegraph.com](mailto:alicja@sourcegraph.com), [LinkedIn](https://pl.linkedin.com/in/alicja-suska-1a5384a9), [GitHub](https://github.com/AlicjaSuska)
 - Alicja is a designer who loves painting furniture and creating isometric illustrations. She lives in Poznań with her Samoyed dog, Edward. Prior to Sourcegraph, Alicja was working at Toggl, the company that provides time tracking and work management tools. She comes from the artistic background - she earned a BA in Interior Design and a MS in Graphics.
 
+## Stefan Hengl (he/him)
+
+- Software Engineer
+- Berlin, Germany 🇩🇪
+- [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [GitHub](https://github.com/stefanhengl)
+- Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
 <!-- Paste *your* section above this line by following our template below:
 
