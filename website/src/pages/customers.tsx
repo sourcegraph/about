@@ -1,7 +1,6 @@
 import { Link } from 'gatsby'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
@@ -130,7 +129,7 @@ export default ((props: any) => (
         }}
         heroAndHeaderClassName="customers-page__header-and-hero"
         hero={
-            <div className="customers-page customers-page__hero container mt-2">
+            <div className="customers-page customers-page__hero container">
                 <div className="row">
                     <div className="col-lg-7 mt-6 mb-6">
                         <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
@@ -176,7 +175,7 @@ export default ((props: any) => (
         </Helmet>
         <div className="customers-page">
             <CustomerLogosSection className="my-6" />
-                <hr className="mb-6" id="onboard" />
+            <hr className="mb-6" id="onboard" />
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
@@ -231,9 +230,9 @@ export default ((props: any) => (
                         <p>
                             {' '}
                             Improve productivity by enabling developers to stay in flow and find answers quickly.
-                            Sourcegraph’s browser-based interface minimizes the impact of context switches to
-                            streamline day-to-day tasks. This lets developers maintain their editor state while
-                            exploring other parts of the code, greatly improving programming productivity.
+                            Sourcegraph’s browser-based interface minimizes the impact of context switches to streamline
+                            day-to-day tasks. This lets developers maintain their editor state while exploring other
+                            parts of the code, greatly improving programming productivity.
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
@@ -366,18 +365,25 @@ export default ((props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Fix things quickly and safely</h2>
                         <p>
-                            Teams run campaigns to swiftly and securely remove legacy code, fix critical security issues,
-                            pay down tech debt, and make large-scale code changes and refactors across the entire codebase: 
-                            <ul><li>Remove deprecated code (like a Java artifact or package.json dependency) and change
-                                the APIs used across the entire organization</li>
-                                <li>Identify everywhere a vulnerable package or API is used, and open issues or pull
-                                    requests on all affected projects</li>
-                                <li>Keep library dependencies (and how to use those libraries) up to date and
-                                    consistent across the entire codebase</li></ul>
+                            Teams run campaigns to swiftly and securely remove legacy code, fix critical security
+                            issues, pay down tech debt, and make large-scale code changes and refactors across the
+                            entire codebase:
+                            <ul>
+                                <li>
+                                    Remove deprecated code (like a Java artifact or package.json dependency) and change
+                                    the APIs used across the entire organization
+                                </li>
+                                <li>
+                                    Identify everywhere a vulnerable package or API is used, and open issues or pull
+                                    requests on all affected projects
+                                </li>
+                                <li>
+                                    Keep library dependencies (and how to use those libraries) up to date and consistent
+                                    across the entire codebase
+                                </li>
+                            </ul>
                         </p>
-                        <p>
-                             
-                        </p>
+                        <p></p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
