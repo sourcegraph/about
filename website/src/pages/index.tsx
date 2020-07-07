@@ -97,8 +97,8 @@ const Index: React.FunctionComponent = (props: any) => (
                 <div className="row">
                     <div className="col-lg-6 mt-lg-0">
                         <p className="my-5">
-                            Sourcegraph is built by developers, for developers. We hear from developers who use
-                            Sourcegraph many times per day. Here's how they're using it.
+                            Sourcegraph is built by developers for developers, to help them solve the
+                            big code problems they face, all day every day. Here's how they're doing it.
                         </p>
                     </div>
                     <div className="col-lg-6 mt-2 mt-lg-4">
