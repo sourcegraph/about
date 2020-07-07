@@ -140,7 +140,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-5 mt-6 pt-4 mb-6">
-                        <h5 className="font-weight-normal">See how customers use Sourcegraph to:</h5>
+                        <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
                         <div className="list-group">
                             <Link to="#onboard" className="list-group-item list-group-item-action">
                                 Onboard everyone faster <ArrowRightIcon className="icon-inline ml-1" />
@@ -189,7 +189,7 @@ export default ((props: any) => (
                             get answered faster and with less effort. For remote and distributed teams, code links
                             become essential conduits of knowledge, shared hundreds of times per day over chat, on
                             issue trackers, and in documentation. This improves everyone’s efficiency, and reduces
-                            the time to commit for new hires. 
+                            the time to first commit for new hires. 
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
