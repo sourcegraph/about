@@ -15,7 +15,7 @@ We want to mimimize the bias in our hiring process, so we will try to avoid sche
 
 ## Scheduling
 
-We are flexible when it comes to scheduling interviews because we are all-remote and we don't need to schedule all interviews back-to-back (unlike typical onsite interviews at other companies). Some candiates like spreading interviews out over multiple days and others prefer to batch them as much as possible to get it over with. *Ask the candidate what their preferences are and then try to accommodate those preferences as much as possible (given interviewer availability)*.
+We are flexible when it comes to scheduling interviews because we are all-remote and we don't need to schedule all interviews back-to-back (unlike typical onsite interviews at other companies). Some candidates like spreading interviews out (e.g., across multiple days and/or having breaks between interviews on the same day) and others prefer to batch them as much as possible to get it over with. *Ask the candidate what their ideal interview schedule looks like and then try to accommodate those preferences as much as possible (given interviewer availability)*.
 
 Even if candidates prefer to batch all their interviews together, it might not be possible due to the timezones of available interviewers.
 
