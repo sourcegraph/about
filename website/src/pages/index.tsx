@@ -77,7 +77,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
-                                Learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -121,8 +121,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <h2>Find anything in code, fast</h2>
                         <p>
                             Sourcegraph returns results in milliseconds, even across thousands of repositories, like:
-                            <ul><li>Examples of{' '}<a href="https://sourcegraph.com/search?
-                                q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">
+                            <ul><li>Examples of{' '}<a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">
                                 installing packages in a Dockerfile</a></li>
                                 <li>Places where a specific error is returned</li>
                                 <li>Recent TypeScript changes mentioning `auth`</li>
