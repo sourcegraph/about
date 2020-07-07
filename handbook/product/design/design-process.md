@@ -110,7 +110,7 @@ While asynchronous communication is a core attribute of remote work, key moments
           - If adding new styles, ensure that they meet the accessibility standards and add them to the design system 
         - Review designs for accessability:
           - Color blind check
-          - Contrast check
+          - Contrast check should meet AA standard for small text
       - Schedule and conduct a design presentation meeting if the size of the project requires
       - Receive signoff from stakeholders
       - If components were created in the visual design process, when the designs are signed off on, those components will be moved to the Sourcegraph component system
