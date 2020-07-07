@@ -13,7 +13,7 @@ const Index: React.FunctionComponent = (props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Sourcegraph: Universal Code Search',
+            title: 'Sourcegraph - Universal Code Search',
             description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
             image: '/sourcegraph-logo-og.png',
         }}

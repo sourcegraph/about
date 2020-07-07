@@ -21,7 +21,7 @@ export default class GetStarted extends React.Component<any, any> {
                 meta={{
                     title: 'Get started with Sourcegraph',
                     description: 'Get started with Sourcegraph',
-                    image: 'TODO(sqs)',
+                    image: '/favicon.png',
                 }}
                 minimal={true}
             >

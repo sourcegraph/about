@@ -125,7 +125,7 @@ export default ((props: any) => (
         meta={{
             title: 'Sourcegraph - Customers',
             description: 'See how our customers use Sourcegraph to solve big problems',
-            image: 'TODO(sqs)',
+            image: '/favicon.png',
         }}
         heroAndHeaderClassName="customers-page__header-and-hero"
         hero={
@@ -184,11 +184,12 @@ export default ((props: any) => (
                             It's not just new developers who need to onboard faster. Every developer is constantly
                             onboarding, because the amount of new and unfamiliar code grows <i>every day</i>.
                         </p>
-                        <p>Sourcegraph’s web interface enables sharing links to specific code, so questions
-                            get answered faster and with less effort. For remote and distributed teams, code links
-                            become essential conduits of knowledge, shared hundreds of times per day over chat, on
-                            issue trackers, and in documentation. This improves everyone’s efficiency, and reduces
-                            the time to first commit for new hires. 
+                        <p>
+                            Sourcegraph’s web interface enables sharing links to specific code, so questions get
+                            answered faster and with less effort. For remote and distributed teams, code links become
+                            essential conduits of knowledge, shared hundreds of times per day over chat, on issue
+                            trackers, and in documentation. This improves everyone’s efficiency, and reduces the time to
+                            first commit for new hires.
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
