@@ -142,8 +142,8 @@ export default ((props: any) => (
                     <div className="col-lg-5 mt-6 pt-4 mb-6">
                         <h5 className="font-weight-normal">See how customers use Sourcegraph to:</h5>
                         <div className="list-group">
-                            <Link to="#code-search" className="list-group-item list-group-item-action">
-                                Find answers to code questions <ArrowRightIcon className="icon-inline ml-1" />
+                            <Link to="#onboard" className="list-group-item list-group-item-action">
+                                Onboard everyone faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#productivity" className="list-group-item list-group-item-action">
                                 Make coding more efficient <ArrowRightIcon className="icon-inline ml-1" />
@@ -155,9 +155,6 @@ export default ((props: any) => (
                             <Link to="#code-reviews" className="list-group-item list-group-item-action">
                                 Catch more bugs with better code reviews
                                 <ArrowRightIcon className="icon-inline ml-1" />
-                            </Link>
-                            <Link to="#onboard" className="list-group-item list-group-item-action">
-                                Onboard everyone faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#campaigns" className="list-group-item list-group-item-action">
                                 Automate code changes <ArrowRightIcon className="icon-inline ml-1" />
@@ -179,50 +176,50 @@ export default ((props: any) => (
         </Helmet>
         <div className="customers-page">
             <CustomerLogosSection className="my-6" />
-            <ContentSection className="mt-6" id="code-search">
-                <hr className="my-6" />
+                <hr className="mb-6" id="onboard" />
+            <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2 className="display-3 font-weight-bold">Find answers to code questions</h2>
+                        <h2 className="display-3 font-weight-bold">Onboard everyone faster</h2>
                         <p>
-                            Search repositories from any code host, with support for regular expressions, punctuation,
-                            symbols, and advanced syntax-aware pattern matching. Narrow results with powerful search
-                            filters for file, language, path, custom repository groups and other attributes, and across
-                            version contexts, merge diffs, and commit messages. Sourcegraph’s visual and interactive
-                            query builder constructs complex queries to find and filter code in ways IDEs and code hosts
-                            can’t.
+                            It's not just new developers who need to onboard faster. Every developer is constantly
+                            onboarding, because the amount of new and unfamiliar code grows <i>every day</i>.
+                        </p>
+                        <p>Sourcegraph’s web interface enables sharing links to specific code, so questions
+                            get answered faster and with less effort. For remote and distributed teams, code links
+                            become essential conduits of knowledge, shared hundreds of times per day over chat, on
+                            issue trackers, and in documentation. This improves everyone’s efficiency, and reduces
+                            the time to commit for new hires. 
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/GQj5jXdON3A?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                src="https://www.youtube.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
                             ></iframe>
                         </div>
                     </div>
-                    <div className="row justify-content-center pt-4">
-                        <div className="col-lg-10 text-center">
-                            <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-                                <p>
-                                    Sourcegraph empowers developers at Yelp to ship code faster and more reliably than
-                                    ever before. Code intelligence features such as Go-to-Definition and Find References
-                                    are heavily-used features that enable developers to understand the plethora of
-                                    microservices and libraries in our code base.
-                                </p>
-                                <footer className="blockquote-footer">Kevin Chen, Software Engineer, Yelp</footer>
-                                <div className="d-flex justify-content-center my-2">
-                                    <img src="/external-logos/yelp.svg" width="100px" />
-                                </div>
-                                <Link to="https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html">
-                                    Yelp Engineering Blog: Winning the Hackathon with Sourcegraph{' '}
-                                    <ExternalLinkIcon className="icon-inline ml-1" />
-                                </Link>
-                            </blockquote>
-                        </div>
+                </div>
+                <div className="row justify-content-center pt-6">
+                    <div className="col-lg-10 text-center">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                For our new developers, Sourcegraph has been invaluable to get to know the repository
+                                structure, to track down where code lives, and self-service during their investigations.
+                            </p>
+                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                            <div className="d-flex justify-content-center my-4">
+                                <img src="/external-logos/convoy-logo.svg" width="110px" />
+                            </div>
+                            <Link to="/case-studies/convoy-improved-on-boarding">
+                                Developers at Convoy onboard faster with Sourcegraph{' '}
+                                <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </Link>
+                        </blockquote>
                     </div>
                 </div>
                 <hr className="my-6" id="productivity" />
@@ -230,12 +227,13 @@ export default ((props: any) => (
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2 className="display-3 font-weight-bold">Make coding more efficient</h2>
+                        <h2 className="display-3 font-weight-bold">Enhance developer efficiency</h2>
                         <p>
                             {' '}
-                            Stay in flow and find answers quickly. Minimize the impact of context switches to streamline
-                            day-to-day tasks. Sourcegraph’s browser-based interface lets developers maintain their
-                            editor state while exploring other parts of the code, greatly improving productivity.
+                            Improve productivity by enabling developers to stay in flow and find answers quickly.
+                            Sourcegraph’s browser-based interface minimizes the impact of context switches to
+                            streamline day-to-day tasks. This lets developers maintain their editor state while
+                            exploring other parts of the code, greatly improving programming productivity.
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
@@ -361,64 +359,24 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="mb-6" id="onboard" />
-            </ContentSection>
-            <ContentSection className="mt-6">
-                <div className="row">
-                    <div className="col-lg-5">
-                        <h2 className="display-3 font-weight-bold">Onboard everyone faster</h2>
-                        <p>
-                            Reduce the time to first commit. Minimize context-switching when exploring code in
-                            production and in new and unfamiliar codebases, with contextual code intelligence.
-                            Sourcegraph enables link sharing to specific code with peers and managers in a web
-                            interface, so questions get answered faster and with less effort. For remote and distributed
-                            engineering teams using Sourcegraph, these code links become essential conduits of
-                            knowledge, shared hundreds of times per day over chat, on issue trackers, and in
-                            documentation.
-                        </p>
-                    </div>
-                    <div className="col-lg-7 pl-lg-6">
-                        <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-                            <iframe
-                                class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div className="row justify-content-center pt-6">
-                    <div className="col-lg-10 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-                            <p>
-                                For our new developers, Sourcegraph has been invaluable to get to know the repository
-                                structure, to track down where code lives, and self-service during their investigations.
-                            </p>
-                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/convoy-logo.svg" width="110px" />
-                            </div>
-                            <Link to="/case-studies/convoy-improved-on-boarding">
-                                Developers at Convoy onboard faster with Sourcegraph{' '}
-                                <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </Link>
-                        </blockquote>
-                    </div>
-                </div>
                 <hr className="my-6" id="campaigns" />
             </ContentSection>
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2 className="display-3 font-weight-bold">Automate code changes</h2>
+                        <h2 className="display-3 font-weight-bold">Move faster (and safely) with large-scale changes</h2>
                         <p>
-                            Move quickly and safely when removing legacy code, fixing critical security issues, and
-                            paying down tech debt. Identify which call sites might be affected by changes, and run
-                            campaigns to compute diffs and create branches and pull requests across multiple
-                            repositories. Large-scale code changes and refactors can be painless, more accurate, and
-                            faster, when done automatically with Sourcegraph.
+                            Teams run campaigns to quickly and securely remove legacy code, fix critical security issues,
+                            pay down tech debt, and make large-scale code changes and refactors across the entire codebase: 
+                            <ul><li>Remove deprecated code (like a Java artifact or package.json dependency) and change
+                                the APIs used across the entire organization</li>
+                                <li>Identify everywhere a vulnerable package or API is used, and open issues or pull
+                                    requests on all affected projects</li>
+                                <li>Keep library dependencies (and how to use those libraries) up-to-date and
+                                    consistent across the entire codebase</li></ul>
+                        </p>
+                        <p>
+                             
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
