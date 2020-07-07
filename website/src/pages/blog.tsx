@@ -44,8 +44,8 @@ export default class BlogList extends React.Component<any, any> {
                             <BlogHeadLinks />
                         </div>
                     }
-                    className="bg-gradient-primary"
-                    titleClassName="display-2 font-weight-bold"
+                    className="text-dark"
+                    titleClassName="display-2 text-dark font-weight-bold"
                 >
                     <ContentSection color="white">
                         <div className="pt-4">
