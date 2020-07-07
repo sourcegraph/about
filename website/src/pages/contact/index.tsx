@@ -14,10 +14,10 @@ export default ((props: any) => (
         <ContentPage
             title="Contact Sourcegraph"
             description="Contact a real human being on our team."
-            className="bg-gradient-primary"
+            className="text-dark"
             titleClassName="display-2 font-weight-bold"
         >
-            <ContentSection color="white" className="pt-6 pb-2">
+            <ContentSection className="pt-6 pb-2">
                 <div className="row">
                     <div className="col-md-6 mb-4 pb-1">
                         <div className="card">

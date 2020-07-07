@@ -11,13 +11,10 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                 <React.Fragment>
                     <div className="row footer__nav-sections">
                         <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-2">
-                            <h3 className="footer__nav-header">Why Sourcegraph?</h3>
+                            <h3 className="footer__nav-header">About Sourcegraph</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link to="/customers">Customers</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link to="/#universal-code-search">Why universal code search?</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/pricing">Pricing</Link>
@@ -28,7 +25,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <h3 className="footer__nav-header">Resources</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <a href="https://docs.sourcegraph.com">Documentation</a>
+                                    <Link to="/blog">Blog</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
@@ -36,7 +33,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/blog">Blog</Link>
+                                    <a href="https://docs.sourcegraph.com">Documentation</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/podcast">Podcast</Link>
@@ -47,22 +44,22 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <h3 className="footer__nav-header">Company</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <a href="/company/strategy">Master plan</a>
-                                </li>
-                                <li className="nav-item">
                                     <Link to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/news">News</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="/handbook">Handbook</a>
+                                    <Link to="/jobs">Careers</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/contact">Contact</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/jobs">Careers</Link>
+                                    <a href="/handbook">Handbook</a>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/news">News</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="/company/strategy">Sourcegraph strategy</a>
                                 </li>
                             </ul>
                         </div>
