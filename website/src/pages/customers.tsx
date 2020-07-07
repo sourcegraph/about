@@ -146,7 +146,7 @@ export default ((props: any) => (
                                 Onboard everyone faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#productivity" className="list-group-item list-group-item-action">
-                                Make coding more efficient <ArrowRightIcon className="icon-inline ml-1" />
+                                Enhance developer efficiency <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#security" className="list-group-item list-group-item-action">
                                 Find security problems in hours, not days
@@ -157,7 +157,7 @@ export default ((props: any) => (
                                 <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#campaigns" className="list-group-item list-group-item-action">
-                                Automate code changes <ArrowRightIcon className="icon-inline ml-1" />
+                                Fix things swiftly and safely <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
                     </div>
@@ -352,7 +352,7 @@ export default ((props: any) => (
                                     across repos, is really useful.
                                 </p>
                                 <footer className="blockquote-footer">
-                                    Trent Grover, Director of Architecture at Workiva
+                                    Trent Grover, Director of Architecture, Workiva
                                 </footer>
                                 <img src="/external-logos/workiva-vector-logo.svg" width="120px" className="my-2" />
                             </blockquote>
@@ -364,7 +364,7 @@ export default ((props: any) => (
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <h2 className="display-3 font-weight-bold">Move faster (and safely) with large-scale changes</h2>
+                        <h2 className="display-3 font-weight-bold">Fix things swiftly and safely</h2>
                         <p>
                             Teams run campaigns to quickly and securely remove legacy code, fix critical security issues,
                             pay down tech debt, and make large-scale code changes and refactors across the entire codebase: 
@@ -372,7 +372,7 @@ export default ((props: any) => (
                                 the APIs used across the entire organization</li>
                                 <li>Identify everywhere a vulnerable package or API is used, and open issues or pull
                                     requests on all affected projects</li>
-                                <li>Keep library dependencies (and how to use those libraries) up-to-date and
+                                <li>Keep library dependencies (and how to use those libraries) up to date and
                                     consistent across the entire codebase</li></ul>
                         </p>
                         <p>
