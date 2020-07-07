@@ -124,7 +124,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <ul><li>Examples of{' '}<a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">
                                 installing packages in a Dockerfile</a></li>
                                 <li>Places where a specific error is returned</li>
-                                <li>Recent TypeScript changes mentioning `auth`</li>
+                                <li>Recent TypeScript changes mentioning <code className="border rounded px-1">auth</code></li>
                                 <li>Definitions of a specific function</li></ul>
 
                         </p>
