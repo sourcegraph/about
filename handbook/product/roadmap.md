@@ -1,52 +1,39 @@
-<script src="https://unpkg.com/mermaid@8.0.0-alpha.6/dist/mermaid.min.js"></script>
-<script>
-    var config = {
-        startOnLoad:true,
-        flowchart:{
-            useMaxWidth:false,
-            htmlLabels:true
-        }
-    };
-    mermaid.initialize(config);
-    window.mermaid.init(undefined, document.querySelectorAll('pre[lang=mermaid] > code'));
-</script>
-
 # Product roadmap
 
-```mermaid
-    gantt
-        title In progress work
-        dateFormat YYYY-MM-DD
+<pre class="mermaid" data-rendered-width="150%" data-scroll-right="50%">
+gantt
+    title In progress work
+    dateFormat YYYY-MM-DD
 
-        section Milestones
-        3.18 :active, release-3.18, 2020-06-21, 2020-07-20
-        3.19 :release-3.19, 2020-07-21, 2020-08-20
+section Milestones
+    3.18 :active, release-3.18, 2020-06-21, 2020-07-20
+    3.19 :release-3.19, 2020-07-21, 2020-08-20
 
-        section Campaigns
-        Add GitLab support :active, 2020-06-21, 12d
-        Frontend - New campaigns flow :active, 2020-06-21, 12d
-        Backend - New campaigns flow :active, 2020-06-21, 12d
+section Campaigns
+    Add GitLab support :active, 2020-06-21, 12d
+    Frontend - New campaigns flow :active, 2020-06-21, 12d
+    Backend - New campaigns flow :active, 2020-06-21, 12d
 
-        section Cloud
-        Index non-master branches :2020-05-01, 60d
-        Storing secrets securely :2020-06-29, 30d
-        RFC 174 - HA postgres for Sourcegraph Cloud :2020-07-23, 10d
-        Scaling repo-updater :2020-06-22, 30d
-        Enforce license tiers :2020-06-22, 10d
+section Cloud
+    Index non-master branches :2020-05-01, 60d
+    Storing secrets securely :2020-06-29, 30d
+    RFC 174 - HA postgres for Sourcegraph Cloud :2020-07-23, 10d
+    Scaling repo-updater :2020-06-22, 30d
+    Enforce license tiers :2020-06-22, 10d
 
-        section Code intel
-        Clangd LSIF indexer :active, 2020-06-19, 20d
-        Configure LSIF auto-indexing in Sourcegraph :active, 2020-06-20, 0d
-        Incremental indexing, scalable find-nearest queries :active, 2020-06-20, 0d
-        Improve hover tooltips to include more info on state/source of code intel :active, 2020-06-30, 0d
+section Code intel
+    Clangd LSIF indexer :active, 2020-06-19, 20d
+    Configure LSIF auto-indexing in Sourcegraph :active, 2020-06-20, 0d
+    Incremental indexing, scalable find-nearest queries :active, 2020-06-20, 0d
+    Improve hover tooltips to include more info on state/source of code intel :active, 2020-06-30, 0d
 
-        section Web
-        Improve confidence in shipping releases by building integration test infrastructure, :2020-06-21, 30d
+section Web
+    Improve confidence in shipping releases by building integration test infrastructure, :2020-06-21, 30d
 
-        section Search
-        RFC 159 - interesting collections of code and languages :2020-06-01, 30d
-        Enable full hierarchical search with AND/OR queries :2020-06-20, 30d
-```
+section Search
+    RFC 159 - interesting collections of code and languages :2020-06-01, 30d
+    Enable full hierarchical search with AND/OR queries :2020-06-20, 30d
+</pre>
 
 ## Campaigns
 
