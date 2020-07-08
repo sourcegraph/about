@@ -1,12 +1,11 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
+import { CaseStudyRequestDemoForm } from '../components/content/CaseStudyPage'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
-import { Jumbotron } from '../components/Jumbotron'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 import { getHTMLParts, subscriptionLinks } from '../pages/podcast'
 
 interface Option {
@@ -126,15 +125,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                         </div>
                     </ContentSection>
                 </ContentPage>
-                <Jumbotron
-                    color="dark"
-                    className="py-4"
-                    logomark={false}
-                    title="Try Sourcegraph now"
-                    description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-                >
-                    <GetSourcegraphNowActions />
-                </Jumbotron>
+                <CaseStudyRequestDemoForm />
             </Layout>
         )
     }
