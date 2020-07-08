@@ -1,4 +1,4 @@
-# Metrics dumps
+# Collecting and inspecting metrics dumps
 
 ## What is a metrics dump?
 
