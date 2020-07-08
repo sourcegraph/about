@@ -110,11 +110,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                             </section>
                         </div>
                     </div>
-                </div>
-                <ContentSection>
                     <hr className="mb-6" />
-                    <TrySourcegraph />
-                </ContentSection>
+                </div>
+                <TrySourcegraph />
             </Layout>
         )
     }

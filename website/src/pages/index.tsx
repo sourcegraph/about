@@ -247,13 +247,9 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                 </div>
+                <hr className="my-6" />
             </ContentSection>
-            <ContentSection className="mb-4">
-                <div className="container">
-                    <hr className="my-6" />
-                </div>
-                <TrySourcegraph />
-            </ContentSection>
+            <TrySourcegraph />
         </div>
     </Layout>
 )

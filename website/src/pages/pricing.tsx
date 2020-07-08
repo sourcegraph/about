@@ -161,9 +161,7 @@ export default ((props: any) => (
                     <hr className="my-4" />
                 </div>
             </div>
-            <ContentSection>
-                <TrySourcegraph className="my-6" />
-            </ContentSection>
+            <TrySourcegraph className="my-6" />
         </div>
     </Layout>
 )) as React.FunctionComponent<any>

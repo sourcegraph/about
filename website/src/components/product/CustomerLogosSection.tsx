@@ -128,7 +128,7 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
         <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
             Our customers use Sourcegraph every day to build the software that you use.
         </h3>
-        <div className="container text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
+        <div className="text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) => (
                 <div
                     key={i}

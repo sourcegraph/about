@@ -5,7 +5,7 @@ import { ContentSection } from './content/ContentSection'
 export const TrySourcegraph: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <ContentSection className={className}>
         <div className="row">
-            <div className="col-md-6 pr-5">
+            <div className="col-md-6 pr-md-5">
                 <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today</h3>
                 <p>
                     You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays
