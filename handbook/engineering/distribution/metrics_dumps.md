@@ -14,7 +14,7 @@ To ask a site admin for a metrics dump, create a shared Google Drive folder wher
 
 Simply extract the dump file to the location of Prometheus's `--storage.tsdb.path` flag in any Sourcegraph deployment of the same version.
 
-For example, if the snapshot was created using 3.17.1 and is located in `~/Downloads/sourcegraph-metrics-dump.tgz` then extract it to `~/.sourcegraph/data/prometheus` by firs wiping out that directory:
+For example, if the snapshot was created using 3.17.1 and is located in `~/Downloads/sourcegraph-metrics-dump.tgz` then extract it to `~/.sourcegraph/data/prometheus` by first wiping out that directory:
 
 ```sh
 rm -rf $HOME/.sourcegraph
