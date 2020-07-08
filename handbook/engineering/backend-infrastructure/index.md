@@ -1,6 +1,6 @@
 # Backend infrastructure team
 
-**The backend infrastructure team does not yet exist**. It is a team we want to create & grow. Responsibilities of the backend infrastructure team are currently owned by the [cloud team](../cloud/index.md) in some form although not entirely.
+**The backend infrastructure team does not yet exist**. It is a team we want to create & grow. The responsibilities of the backend infrastructure team are currently owned by the [cloud team](../cloud/index.md).
 
 ## Vision
 
