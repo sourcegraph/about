@@ -131,14 +131,14 @@ export default ((props: any) => (
         hero={
             <div className="customers-page customers-page__hero container">
                 <div className="row">
-                    <div className="col-lg-7 mt-6 mb-md-6">
+                    <div className="col-lg-7 mb-lg-6 mt-6">
                         <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
                             Companies of all sizes and in all industries use Sourcegraph universal code search to solve
                             big code problems.
                         </p>
                     </div>
-                    <div className="col-lg-5 mt-md-6 pt-4 mb-6">
+                    <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
                         <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
                         <div className="list-group">
                             <Link to="#onboard" className="list-group-item list-group-item-action">
@@ -305,7 +305,7 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Simon Law, Staff Software Engineer, Quantcast
                                 </footer>
-                                <div className="d-flex justify-content-center my-4">
+                                <div className="d-flex justify-content-center my-2">
                                     <img src="/external-logos/quantcast-logo.svg" width="120px" />
                                 </div>
                                 <Link to="/case-studies/quantcast-large-scale-refactoring/">

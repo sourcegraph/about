@@ -65,6 +65,10 @@ const ITEMS: {
         url: '/external-logos/indeed-logo.svg',
     },
     {
+        name: 'Prezi',
+        url: '/external-logos/prezi-logo.svg',
+    },
+    {
         name: 'F5',
         url: '/external-logos/f5-logo.svg',
     },
@@ -76,11 +80,8 @@ const ITEMS: {
         },
     },
     {
-        name: 'Thorn',
-        url: '/external-logos/thorn-logo.svg',
-        link: {
-            url: '/case-studies/we-are-thorn',
-        },
+        name: 'Criteo',
+        url: '/external-logos/criteo-logo.svg',
     },
     {
         name: 'Collective Health',
@@ -116,6 +117,13 @@ const ITEMS: {
     {
         name: 'AppLovin',
         url: '/external-logos/applovin-logo.svg',
+    },
+    {
+        name: 'Thorn',
+        url: '/external-logos/thorn-logo.svg',
+        link: {
+            url: '/case-studies/we-are-thorn',
+        },
     },
     {
         name: 'Thought Machine',
