@@ -1,4 +1,5 @@
 /abc /resources/abcs-book
+/blog/performance-improvements-in-precise-code-intel /blog/making-code-nav-twice-as-fast 301!
 /blog/gitlab-adds-code-navigation-and-code-intelligence-by-sourcegraph /blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence 301!
 /blog/github-universe-liveblog-innersource-and-reaping-the-benefits-of-open-source-behind-your-firewall /blog/github-universe-liveblog-innersource 301!
 /blog/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go /blog/google-i-o-talk-building-sourcegraph 301!
@@ -74,6 +75,7 @@
 /go/sourcegraph-liveblogging-at-gophercon-2018-go /blog/sourcegraph-liveblogging-at-gophercon-2018 301!
 /go/go-in-debian /go/gophercon-2018-go-in-debian/ 301!
 /go/grpc-in-production  /go/grpc-in-production-alan-shreve/ 301!
+/events /blog 301!
 /plan /company/strategy 301!
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!

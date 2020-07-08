@@ -46,7 +46,7 @@ Distribution team members may also be involved in other areas of Sourcegraph not
         - Primarily in maintenance mode
         - Pushing admins to upgrade to Docker Compose
         - Communicating the limitations of single-container deployments
-        - **Primary owners**: @dax (any @distribution team member in the interim)
+        - **Primary owners**: @stephen
         - **Related code**: [cmd/server in main repo](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:cmd/server/&patternType=regexp)
     - **Scalability**
         - Documenting when to upgrade from one deploy type to another
@@ -66,7 +66,7 @@ Distribution team members may also be involved in other areas of Sourcegraph not
     - Making the debugging process for common problems seamless and straightforward
     - Making reporting issues with all needed information easy
     - Ensuring logs/tracing are not overly verbose, identify most useful information for solving problems
-    - **Primary owners**: @dax (@beyang and @stephen in the interim)
+    - **Primary owners**: @stephen
     - **Related code**: [Jaeger Docker images and code](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:jaeger&patternType=literal), [opentracing code (broadly)](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+opentracing&patternType=literal), Jaeger [k8s](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/deploy-sourcegraph%24+jaeger&patternType=literal), [docker-compose/pure-docker](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/deploy-sourcegraph-docker%24+jaeger&patternType=literal), and [single-container](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:cmd/server+jaeger&patternType=literal) deployments & [associated docs](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:doc/admin/observability+jaeger%7Ctracing&patternType=regexp)
 
 ## Tech stack
@@ -88,7 +88,7 @@ Go, Docker, Kubernetes
 
 ## Members
 
-- [G. P.](https://hire.lever.co/search/5f3b284f-04ce-4bdc-86ba-f9eed6a0ae9e) ([engineering manager](../roles.md#engineering-manager)) estimated start date in June.
+- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([engineering manager](../roles.md#engineering-manager)).
 - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) ([project lead](../roles.md#project-lead))
 - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
 - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)

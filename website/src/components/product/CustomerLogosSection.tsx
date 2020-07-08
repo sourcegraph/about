@@ -29,6 +29,10 @@ const ITEMS: {
         },
     },
     {
+        name: 'Amazon',
+        url: '/external-logos/amazon-logo.svg',
+    },
+    {
         name: 'Qualtrics',
         url: '/external-logos/qualtrics-logo.svg',
     },
@@ -124,7 +128,7 @@ const ITEMS: {
 ]
 
 export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <div id="customers" className={`customer-logos-section ${className}`}>
+    <div id="customers" className={`container customer-logos-section ${className}`}>
         <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
             Our customers use Sourcegraph every day to build the software that you use.
         </h3>

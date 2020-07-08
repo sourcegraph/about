@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby'
 import * as React from 'react'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
@@ -151,6 +152,7 @@ export const rssIcon = (
         ></path>
     </svg>
 )
+export const youtubeIcon = <span>&#9654;</span>
 
 interface HTMLParts {
     guestsHTML?: string
@@ -208,7 +210,7 @@ export function getHTMLParts(html: string): HTMLParts {
 
 export const subscriptionLinks = (
     <div className="podcast__subscribe">
-        Subscribe:
+        <strong>Subscribe:</strong>
         <a
             target="_blank"
             href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
@@ -230,6 +232,13 @@ export const subscriptionLinks = (
             className="podcast__subscribe-option"
         >
             {googleIcon}&nbsp;Google
+        </a>
+        <a
+            target="_blank"
+            href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
+            className="podcast__subscribe-option"
+        >
+            {youtubeIcon}&nbsp;YouTube
         </a>
         <a target="_blank" href="https://feeds.buzzsprout.com/1097978.rss" className="podcast__subscribe-option">
             {rssIcon}&nbsp;RSS
@@ -284,7 +293,7 @@ export default class JobsPage extends React.Component<any, any> {
                 >
                     <ContentSection color="black">
                         <div className="podcast">
-                            {subscriptionLinks}
+                            <div className="podcast__subscribe-top">{subscriptionLinks}</div>
                             {publishedEpisodes.map((episode: any) => (
                                 <div key={episode.episode.node.frontmatter.slug} className="podcast__episode">
                                     <div className="podcast__title">

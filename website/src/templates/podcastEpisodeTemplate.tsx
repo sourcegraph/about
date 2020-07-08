@@ -84,12 +84,12 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                 >
                     <ContentSection color="black">
                         <div className="podcast">
-                            {subscriptionLinks}
                             <div className="podcast__episode">
+                                <div className="podcast__title">{title}</div>
+                                <div className="podcast__subscribe-episode">{subscriptionLinks}</div>
                                 <div className="podcast__backtoall">
                                     <a href="/podcast">&lsaquo; All episodes</a>
                                 </div>
-                                <div className="podcast__title">{title}</div>
                                 {guestsHTML && (
                                     <div dangerouslySetInnerHTML={{ __html: guestsHTML }} className="podcast__people" />
                                 )}

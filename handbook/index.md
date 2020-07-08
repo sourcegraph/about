@@ -10,6 +10,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Communication](communication/index.md)
   - [Style guide](communication/style_guide.md)
 - [Team](../company/team/index.md)
+- [OKRs](../company/okrs/index.md)
 - [CEO](ceo/index.md)
 
 ## People Ops
@@ -20,22 +21,18 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 ## Product
 
+- [Direction (2020 product strategy)](../direction/index.md)
 - [Product](product/index.md)
-  - [Sourcegraph workflow](../workflow/index.md)
-  - [Direction](../direction/index.md)
-  - [Personas](product/personas.md)
-
-## Design
-
-- [Design](design/index.md)
+- [Design](product/design/index.md)
 
 ## Engineering
 
 - [Engineering](engineering/index.md)
 
-## Support
+## Customer Engineering
 
-- [Support](support/index.md)
+- [Customer engineering](ce/index.md)
+  - [Support](ce/support.md)
 
 ## Marketing
 
@@ -47,9 +44,8 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Developer relations](marketing/developer-relations/index.md)
 - [Marketing operations](marketing/marketing_operations.md)
 - [Livestream events](marketing/livestream.md)
-- [Editing blog posts](marketing/editing_blog_posts.md)
-- [Adding screenshots and screen recordings (GIFs and videos)](marketing/adding_screenshots_screen_recording.md)
-
+- [Online content](marketing/content.md)
+  - [Website style guide](marketing/website_style_guide.md)
 
 ## Sales
 
@@ -58,3 +54,6 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 ## Business Operations
 
 - [Business Operations](bizops/index.md)
+  - [Finance](bizops/index.md#finance-and-reporting)
+  - [Analytics](bizops/index.md#analytics)
+  - [Adding, changing and debugging pings](engineering/adding_ping_data.md)
