@@ -59,11 +59,11 @@ const Index: React.FunctionComponent = (props: any) => (
             </ContentSection>
             <CustomerLogosSection className="pt-5" />
             <div className="container">
-                <hr className="my-6" />
+                <hr className="my-md-6" />
             </div>
-            <ContentSection className="my-6">
+            <ContentSection className="mt-5 mb-6">
                 <div className="row">
-                    <div className="col-lg-5 mt-5">
+                    <div className="col-lg-5 mt-md-5">
                         <h2 className="display-3 font-weight-bold">Search&nbsp;your&nbsp;code. All&nbsp;of&nbsp;it.</h2>
                         <p>
                             Point Sourcegraph at the repositories you work with, stored in any code host &mdash; then
@@ -89,7 +89,7 @@ const Index: React.FunctionComponent = (props: any) => (
             <IntegrationsSection />
 
             <div className="container">
-                <hr className="my-6" />
+                <hr className="my-md-6" />
             </div>
 
             <div className="container">
@@ -115,7 +115,7 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </div>
 
-            <ContentSection className="my-6">
+            <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2>Find anything in code, fast</h2>
@@ -160,7 +160,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="pt-4 mb-6">
+            <ContentSection className="mt-6">
                 <div className="row flex-wrap-reverse">
                     <div className="col-lg-7 pr-lg-6 mt-3">
                         <div className="container video-embed embed-responsive embed-responsive-16by9 ">
@@ -191,7 +191,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="pt-4 mb-6">
+            <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2>Make large-scale code changes</h2>
@@ -219,7 +219,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection className="pt-4 mb-6">
+            <ContentSection className="mt-6">
                 <div className="row flex-wrap-reverse">
                     <div className="col-lg-7 pr-lg-6 mt-3">
                         <div class="container video-embed embed-responsive embed-responsive-16by9 ">
@@ -247,9 +247,9 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" />
+                <hr className="my-md-6" />
             </ContentSection>
-            <TrySourcegraph />
+            <TrySourcegraph className="mt-sm-5" />
         </div>
     </Layout>
 )

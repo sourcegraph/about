@@ -131,14 +131,14 @@ export default ((props: any) => (
         hero={
             <div className="customers-page customers-page__hero container">
                 <div className="row">
-                    <div className="col-lg-7 mt-6 mb-6">
+                    <div className="col-lg-7 mt-6 mb-md-6">
                         <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
                             Companies of all sizes and in all industries use Sourcegraph universal code search to solve
                             big code problems.
                         </p>
                     </div>
-                    <div className="col-lg-5 mt-6 pt-4 mb-6">
+                    <div className="col-lg-5 mt-md-6 pt-4 mb-6">
                         <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
                         <div className="list-group">
                             <Link to="#onboard" className="list-group-item list-group-item-action">
@@ -174,9 +174,9 @@ export default ((props: any) => (
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
         <div className="customers-page">
-            <CustomerLogosSection className="my-6" />
+            <CustomerLogosSection className="mb-6" />
             <hr className="mb-6" id="onboard" />
-            <ContentSection className="mt-6">
+            <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Onboard everyone faster</h2>
@@ -204,7 +204,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <div className="row justify-content-center pt-6">
+                <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-10 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
@@ -222,9 +222,9 @@ export default ((props: any) => (
                         </blockquote>
                     </div>
                 </div>
-                <hr className="my-6" id="productivity" />
+                <hr className="my-md-6" id="productivity" />
             </ContentSection>
-            <ContentSection className="mt-6">
+            <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Enhance developer efficiency</h2>
@@ -247,7 +247,7 @@ export default ((props: any) => (
                             ></iframe>
                         </div>
                     </div>
-                    <div className="row justify-content-center pt-6">
+                    <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10 text-center">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
@@ -269,9 +269,9 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" id="security" />
+                <hr className="my-md-6" id="security" />
             </ContentSection>
-            <ContentSection className="mt-6">
+            <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Find security problems in hours, not days</h2>
@@ -295,7 +295,7 @@ export default ((props: any) => (
                             ></iframe>
                         </div>
                     </div>
-                    <div className="row justify-content-center pt-6">
+                    <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10 text-center">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
@@ -316,9 +316,9 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" id="code-reviews" />
+                <hr className="my-md-6" id="code-reviews" />
             </ContentSection>
-            <ContentSection className="mt-6">
+            <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Catch more bugs with better code reviews</h2>
@@ -341,7 +341,7 @@ export default ((props: any) => (
                         </div>
                         <p>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</p>
                     </div>
-                    <div className="row justify-content-center pt-4">
+                    <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10 text-center">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
@@ -359,9 +359,9 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" id="campaigns" />
+                <hr className="my-md-6" id="campaigns" />
             </ContentSection>
-            <ContentSection className="mt-6">
+            <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Fix things quickly and safely</h2>
@@ -397,7 +397,7 @@ export default ((props: any) => (
                             ></iframe>
                         </div>
                     </div>
-                    <div className="row justify-content-center pt-4">
+                    <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10 text-center">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
@@ -417,7 +417,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-6" />
+                <hr className="my-md-6" />
             </ContentSection>
             <TrySourcegraph />
         </div>
