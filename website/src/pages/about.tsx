@@ -51,7 +51,7 @@ export default class About extends React.Component<any, any> {
                                 <div className="row">
                                     <div className="col-md-12">
                                         <h1 className="mb-0">
-                                            Master plan
+                                            Sourcegraph strategy
                                             <br />
                                         </h1>
                                         <hr />
@@ -71,7 +71,7 @@ export default class About extends React.Component<any, any> {
                                         </ul>
                                         <a href="/company/strategy">
                                             <button className="btn btn-primary about__plan-btn">
-                                                Read our master plan
+                                                Read our strategy
                                             </button>
                                         </a>
                                     </div>
