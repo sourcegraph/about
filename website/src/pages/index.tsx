@@ -14,12 +14,16 @@ const image = '/favicon.png'
 const title = 'Sourcegraph - Universal Code Search'
 
 const Index: React.FunctionComponent = (props: any) => (
-    <Layout location={props.location}>
+    <Layout
+        location={props.location}
+        meta={{
+            image: '/favicon.png',
+        }}
+    >
         <Helmet>
             <meta name="twitter:title" content={title} />
             <meta property="og:title" content={title} />
             <meta name="twitter:site" content="@srcgraph" />
-            <meta name="twitter:image" content={image} />
             <meta property="og:image" content="/sourcegraph-logo-og.png" />
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:description" content={description} />
