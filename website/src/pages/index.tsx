@@ -9,16 +9,22 @@ import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { TrySourcegraph } from '../components/TrySourcegraph'
 
+const description = 'Find and fix things across all of your code with Sourcegraph universal code search.'
+const image = '/favicon.png'
+const title = 'Sourcegraph - Universal Code Search'
+
 const Index: React.FunctionComponent = (props: any) => (
-    <Layout
-        location={props.location}
-        meta={{
-            title: 'Sourcegraph - Universal Code Search',
-            description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
-            image: '/sourcegraph-logo-og.png',
-        }}
-    >
+    <Layout location={props.location}>
         <Helmet>
+            <meta name="twitter:title" content={title} />
+            <meta property="og:title" content={title} />
+            <meta name="twitter:site" content="@srcgraph" />
+            <meta name="twitter:image" content={image} />
+            <meta property="og:image" content="/sourcegraph-logo-og.png" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta name="description" content={description} />
             <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
             <style dangerouslySetInnerHTML={{ __html: `>.async-hide { opacity: 0 !important}` }} />
             <script>
