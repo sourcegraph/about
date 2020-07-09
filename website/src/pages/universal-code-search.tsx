@@ -4,12 +4,10 @@ import Helmet from 'react-helmet'
 import { Blockquote } from '../components/Blockquote'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
-import { Jumbotron } from '../components/Jumbotron'
+import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { EbookUniversalCodeSearch } from '../components/product/EbookUniversalCodeSearch'
-import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
+import { TrySourcegraph } from '../components/TrySourcegraph'
 
 export default ((props: any) => (
     <Layout
@@ -29,11 +27,15 @@ export default ((props: any) => (
             {'GTM-TB4NLS7':true});`}
             </script>
         </Helmet>
-        <ContentPage title="What is Universal Code Search?">
-            <ContentSection color="white" className="pt-6 pb-4">
+        <ContentPage
+            title="What is Universal Code Search?"
+            className="bg-gradient-primary mt-2"
+            titleClassName="display-2 font-weight-bold"
+        >
+            <ContentSection color="white" className="pt-6 pb-2">
                 <div className="row justify-content-md-center mb-4">
                     <div className="col-md-10">
-                        <h2 className="display-5 mb-4 text-center">
+                        <h2 className="display-3 font-weight-bold mb-4">
                             Universal Code Search is the best way to answer any questions about code and systems.
                         </h2>
                         <p>
@@ -64,13 +66,13 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="purple" className="py-5">
-                <h2 className="display-4 text-center">Universal across everything </h2>
+                <h2 className="display-3 font-weight-bold mt-3 text-center">Universal across everything </h2>
                 <p className="text-center">
                     Universal Code Search must have these things. Anything else is just a code search tool.
                 </p>
                 <div className="row mt-5">
                     <div className="col-md-4 pr-5">
-                        <h5>Code Discovery</h5>
+                        <h4>Code Discovery</h4>
                         <p>
                             <ul className="pl-3">
                                 <li>Navigate and explore code across any codebase</li>
@@ -80,7 +82,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
-                        <h5>Code Intelligence</h5>
+                        <h4>Code Intelligence</h4>
                         <p>
                             <ul className="pl-3">
                                 <li>Understand code in context</li>
@@ -90,7 +92,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-md-4 pr-5">
-                        <h5>Code Change Management</h5>
+                        <h4>Code Change Management</h4>
                         <p>
                             <ul className="pl-3">
                                 <li>Manage large-scale changes across the entire codebase</li>
@@ -102,8 +104,8 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="py-4">
-                <h2 className="text-center display-4">Code search is the superpower</h2>
-                <p className="text-center">
+                <h2 className="display-3 font-weight-bold mt-3">Code search is the superpower</h2>
+                <p>
                     Uber, Lyft, Yelp, and other world-class companies rely on Sourcegraph Universal Code Search (not
                     just a code host) to ship software.
                 </p>
@@ -181,10 +183,14 @@ export default ((props: any) => (
                         />
                     </div>
                     <div className="col-md-12 col-lg-4 mb-3 pr-5">
-                        <h4>
-                            <img style={{ width: '17px', height: '17px' }} src="/sourcegraph/sourcegraph-mark.svg" />{' '}
+                        <h2>
+                            <img
+                                className="mb-2"
+                                style={{ width: '25px', height: '25px' }}
+                                src="/sourcegraph/sourcegraph-mark.svg"
+                            />{' '}
                             Sourcegraph
-                        </h4>
+                        </h2>
                         <h5>Used by Uber, Lyft, Yelp, and more</h5>
                         <ul className="pl-3">
                             <li>Every developer at these organizations uses Sourcegraph</li>
@@ -204,25 +210,15 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
+            <IntegrationsSection className="bg-white py-4" />
             <ContentSection color="white" className="py-2">
-                <IntegratesWithSection className="pt-5 pb-4" />
+                <hr />
+                <CustomerLogosSection className="py-5" />
                 <hr />
             </ContentSection>
-            <ContentSection color="white" className="py-2">
-                <CustomerLogosSection className="py-5" />
+            <ContentSection color="white" className="py-6">
+                <TrySourcegraph />
             </ContentSection>
-            <ContentSection color="gray" className="py-6">
-                <EbookUniversalCodeSearch />
-            </ContentSection>
-            <Jumbotron
-                color="purple"
-                className="py-4"
-                logomark={false}
-                title="Try Sourcegraph now"
-                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-            >
-                <GetSourcegraphNowActions />
-            </Jumbotron>
         </ContentPage>
     </Layout>
 )) as React.FunctionComponent<any>

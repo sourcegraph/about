@@ -6,7 +6,7 @@ export const EnterpriseReadySolution: React.FunctionComponent<{ className?: stri
         <div className="row justify-content-center">
             <div className="col-md-10">
                 <CityIcon className="d-block mx-auto" style={{ width: '80px', height: '80px' }} />
-                <h2 className="mt-4 display-4 text-center">The only enterprise solution</h2>
+                <h2 className="mt-4 display-4 text-center">Enterprise-ready</h2>
                 <p className="text-center">
                     Sourcegraph is built for companies of all sizes, from startups that need a solid foundation for
                     growth, all the way to the largest enterprises with complex security, scaling, and deployment needs.

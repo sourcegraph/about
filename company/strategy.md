@@ -1,4 +1,4 @@
-# Sourcegraph master plan
+# Sourcegraph strategy
 
 Everything we do stems from our [purpose](#purpose), to make it so **everyone can code**. We'll accomplish that over the next 30 years by following our strategy:
 
@@ -104,7 +104,7 @@ Coding itself is a technology, and we anticipate the technology adoption curve w
 - We want every developer, not just a specific niche audience, to use Sourcegraph.
   - We won't adopt polarizing public stances that would divide our audience.
 - Our product should strive to be fundamentally privacy-respecting and secure. This means that users don't need to trust us to verify that their data is private and secure.
-- Build on-ramps in our product to turn more people into frequent users, instead of building the product *for* infrequent users (which is a self-fulfilling prophecy).
+- Build on-ramps in our product to turn more people into frequent users, instead of building the product _for_ infrequent users (which is a self-fulfilling prophecy).
 - We eventually want to be a platform that ties together all of the tools developers use.
   - Other developer tools are partners, not competitors.
   - This entails designing for extensibility in our product (and documenting it more thoroughly) as a first-order priority.
@@ -113,9 +113,9 @@ Coding itself is a technology, and we anticipate the technology adoption curve w
 ## Assumptions
 
 - Sufficiently good code search will be useful to every developer many times per day (on average). It may take a while to convert any specific person into a frequent code search power user, but it will happen eventually.
-- Code search that is *exclusively* for public/open-source code is not actually that useful because most people spend most of their time working on their organization's internal code.
+- Code search that is _exclusively_ for public/open-source code is not actually that useful because most people spend most of their time working on their organization's internal code.
 - Any given developer will only pick one code search tool to use. Any given company will standardize on a single code search tool.
-  - Therefore, to avoid fragmentation, Sourcegraph should be not only *much* better than the alternatives, but also *not worse* in any significant way.
+  - Therefore, to avoid fragmentation, Sourcegraph should be not only _much_ better than the alternatives, but also _not worse_ in any significant way.
 
 ## Pricing
 

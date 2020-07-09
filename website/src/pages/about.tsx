@@ -15,7 +15,7 @@ export default class About extends React.Component<any, any> {
     public render(): JSX.Element | null {
         return (
             <Layout location={this.props.location}>
-                <div className="about bg-white text-dark">
+                <div className="about content-page bg-white text-dark">
                     <Helmet>
                         <title>Sourcegraph - About</title>
                         <meta name="twitter:title" content="Sourcegraph - About" />
