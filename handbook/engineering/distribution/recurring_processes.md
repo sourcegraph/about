@@ -166,8 +166,6 @@ On the Mon. following the [20th (release day)](https://about.sourcegraph.com/han
 
 These meetings are recorded (posted automatically to the #distributioneers Slack channel) so that anyone whose timezone does not permit can participate after the fact.
 
-### Bi-weekly async updates
-
 #### Wednesday update
 
 Wed, before EOD (local time): distribution members are expected to post an update in Slack communicating:
@@ -207,17 +205,16 @@ Fri, before EOD (local time): distribution members are expected to post an updat
 
 The goal of this update is to communicate to _the broader Sourcegraph team_ what we're working on, what progress we've made, and anything that is at risk at a high-level.
 
-#### Why bi-weekly & asynchronous updates?
+#### Why weekly & asynchronous updates?
 
 We use asynchronous updates via Slack and GitHub instead of face-to-face video call stand-ups because it allows:
 
 - You to write your update and consume other's updates at your own pace.
 - Others to opt-out of conversations they may not have stake in easily (topics worth discussing with the entire team can be brought up at the weekly team sync.)
 
-We use a bi-weekly update frequency because:
+We use a weekly update frequency because:
 
 - Daily updates are too frequent, tedious to write out, tedious to consume, and give the impression that someone wants an hour-by-hour account of work (we do not).
-- Weekly updates make it easy to forget what you did at the start of the week, forget to ask for help, and make it hard for others to offer help in a timely fashion.
-- Bi-weekly updates encourage posting updates and gathering feedback regularly, while still focusing on just the high-level key points of interest.
+- Weekly updates encourage posting updates and gathering feedback regularly, while still focusing on just the high-level key points of interest.
 
 We want to respect autonomy and view updates as a tool to help remind team members to collaborate together, ask for help, and perform self-reflection about whether your current focus is right or not.
