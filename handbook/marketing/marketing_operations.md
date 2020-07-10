@@ -34,7 +34,7 @@ The parameters that our HubSpot workflows support are `utm_campaign`, `utm_sourc
 
 There are many contacts in HubSpot that have not opted into marketing emails. For example, if an email to a prospect's procurement department is logged in HubSpot, we should not be sending Sourcegraph communications to them. All email lists need to be built from the "ground up". What does this look like in practice?
 
-**Good**: List = Instance admins + demo requesters + NPS responders
+**Good**: List = Instance admins + demo requesters + NPS responders<br/>
 **Bad**: List = All contacts - outbounded contacts - unsubscribed contacts - instance admins
 
 Let BizOps know in #marketing if you'd like a second set of eyes on any email lists. 
