@@ -1,6 +1,8 @@
 # Rollout Process
 
-The rollout process consists of *Pre-Launch* phase and *Deployment* phase.
+The rollout process consists of *Pre-Launch* phase and *Deployment* phase. We can push changes to Sourcegraph.com when we
+want as we own the deployment process. For enterprise instances of Sourcegraph.com, we push a new release monthly and our
+clients decode to upgrade to the latest release when they want.
 
 ### Sourcegraph.com
 
