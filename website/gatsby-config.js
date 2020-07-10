@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sourcegraph`,
-    description: `Sourcegraph is a free, self-hosted code search and intelligence server that integrates with your code host and supports multi-repository, regexp, and diff searches.`,
+    description: `Find and fix things across all of your code with Sourcegraph universal code search.`,
     siteUrl: `https://about.sourcegraph.com`,
   },
   plugins: [
@@ -77,6 +77,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      options: {
+        noTrailingSlash: true,
+        siteUrl: `https:/about.sourcegraph.com`,
+      },
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
