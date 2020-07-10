@@ -13,7 +13,8 @@ clients decide to upgrade to the latest release when they want.
 time left before planned launch date to receive and address all the feedback received. 
 2. Design Checklist
 - Test the feature for both themes, Light and Dark. Check for icon consistency across themes.
-- Test on small, medium, large and extra-large screen sizes.
+* Test on small, medium, large and extra-large screen sizes.
+  * Small screens are important to consider as window resizing and side-by-side mode is common.
 3. Analytics Checklist
 - Add and test logging for critical flows.
 4. Approvals
