@@ -23,8 +23,8 @@ time left before planned launch date to receive and address all the feedback rec
 - Track all lower priority bugs that have to be fixed soon.
 
 #### Deployment
-1. Follow this [document](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website) to enable your feature in global settings and push it to Sourcegraph.com
-- In PR that pushes changes live, add everyone who gave appproval as reviewers.
+1. Follow this [document](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website) to enable your feature in global settings and to push it to all users on Sourcegraph.com.
+- In the PR that pushes changes live, add everyone who gave appproval for launch as reviewers.
 2. Share analytics for monitoring the feature shipped. Track metrics for regressions. 
 
 
