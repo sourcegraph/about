@@ -1,29 +1,24 @@
 # Rollout Process
 
-The rollout process for a new feature consists of the *Pre-Launch* and *Deployment* phase.
+The rollout process consists of *Pre-Launch* phase and *Deployment* phase.
 
-# Sourcegraph.com
+### Sourcegraph.com
 
-## Pre-Launch
-1. User testing 
-- Open the feature to internal users by turning it on for the Sourcegraph organization.
-1. Design Checklist 
-- Test the feature for all themes (Light and Dark)
--
-1. Approvals 
-- Approval from engineering, design and product owners should be received before launch
-
-3. QA Checklist
+#### Pre-Launch
+1. User testing - Open the feature to internal users by turning it on for the Sourcegraph organization.
+1. Design Checklist
+- Test the feature for both themes, Light and Dark.
+1. Approvals
+- Receive approval from engineering, design, product and other stakeholders before launch.
+1. QA Checklist
 - Track and ensure high priority bugs in GitHub issues. Ensure they are closed before launch.
 - Track all lower priority bugs that have to be fixed soon.
 
-## Deployment
-1. Announce in appropriate channel (#general, #dev-announce) before launching.
+#### Deployment
 1. Follow this [document] (https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website
-) to enable your feature in global settings and push it to Sourcegraph.com.
+) to enable your feature in global settings and push it to Sourcegraph.com)
+2. Understand and share analytics for tracking feature shipped.
 
 
-# TODO: Enterprise instances of Sourcegraph.com
-
-
+## TODO: Enterprise instances of Sourcegraph.com
 
