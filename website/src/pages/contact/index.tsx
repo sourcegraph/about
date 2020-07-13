@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import EmailIcon from 'mdi-react/EmailIcon'
 import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
-import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon'
+import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import MapMarkerIcon from 'mdi-react/MapMarkerIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import React from 'react'
@@ -95,7 +95,7 @@ export default ((props: any) => (
                                     target="_blank"
                                     href="https://www.linkedin.com/company/sourcegraph"
                                 >
-                                    <LinkedinBoxIcon /> Sourcegraph on LinkedIn
+                                    <LinkedinIcon /> Sourcegraph on LinkedIn
                                 </a>
                                 <div className="list-group-item d-flex p-relative">
                                     <MapMarkerIcon className="mr-1" />
