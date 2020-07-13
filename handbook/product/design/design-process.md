@@ -32,27 +32,25 @@ While asynchronous communication is a core attribute of remote work, key moments
       - As our users are developers, Sourcegraph developers make great interview subjects. However, we need to acknowledge that they do have biases about features and this research must be augmented
   - Interview external users
       - Where the project requires and time permits, conduct research with these users to inform your designs
-  - Placeholder:
-      - Additional research methods
   - Customer requests and support tickets
       - Our users are passionate and provide excellent feedback. Each project should utilize our collections of this feedback in [Productboard](https://sourcegraph.productboard.com/)
   - Analogous designs
   - Competitive designs
-  - Findings publishing and review
-      - Findings should be recorded in google docs and announced in the corresponding team channel or #product on Slack
-          - Research documents should contain a clear summary of findings and charts of supporting data are helpful.
-      - If the size of the project requires, a review meeting should be held to discuss key findings.
+  - Usability tests
+    - When updating existing product features, first conduct usability tests to inform redesign decisions
   - Process
       - A GitHub issue should be created to track the work
       - Research is conducted according to requirements
-      - Publish research to Google Drive
-      - Announce research in Slack
-      - Schedule and conduct a presentation meeting with stakeholders
-      - Stakeholders will approve the GitHub issue indicating the designs are ready for the next phase
+      - Findings publishing and review
+        - Findings should be detailed in a Google doc and announced in the corresponding team channel or #product on Slack
+        - Findings should contain a clear summary, links to resources and supporting data
+        - Conduct a synchronous review meeting with key stakeholders based on the size of project or importance of findings
+      - Schedule and conduct a presentation meeting with stakeholders where necessary
   - Tools
       - Google Docs
       - Google Forms for polls
       - UserTesting.com
+      - Maze.design
 - Wireframes
   - Wireframes should utilize the Sourcegraph Figma component system
   - Wireframes should generally utilize realistic data and text for each element. In cases where many elements are required, ‘lorem epsum’ placeholder text will suffice if the initial or prominent elements are real data.
@@ -66,6 +64,7 @@ While asynchronous communication is a core attribute of remote work, key moments
       - Schedule and conduct a presentation meeting
       - Stakeholders will approve the GitHub issue indicating the designs are ready for the next phase
   - Checklist
+      - Ensure designs meet Jacob Nielsen's [ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
       - Has the change’s effect on the CLI been considered?
           - Does the language in the UI map to the language in the CLI?
       - Enterprise / Cloud
@@ -100,15 +99,25 @@ While asynchronous communication is a core attribute of remote work, key moments
         - Interactive mode / plain text mode
   - Process
       - A GitHub issue should be created to track the work
-      - Wireframes are produced in Figma
-      - Wireframes will be announced in Slack and linked in the GitHub issue well before they are complete for review
-      - Schedule and conduct a research presentation meeting
+      - Designs are produced in Figma
+      - Designs will be announced in Slack and linked in the GitHub issue well before they are complete for review
+      - Ensure designs meet the visual design checklist:
+        - Ensure spacing is consistent and matches the 8pt grid system
+        - Ensure text, colors and other sytles match existing styles, if possible. 
+          - Introduce new text styles only if really necessary.
+          - If adding new styles, ensure that they meet the accessibility standards and add them to the design system 
+        - Review designs for accessability:
+          - Color blind check
+          - Contrast check should meet AA standard for small text
+      - Schedule and conduct a design presentation meeting if the size of the project requires
       - Receive signoff from stakeholders
       - If components were created in the visual design process, when the designs are signed off on, those components will be moved to the Sourcegraph component system
-      - Prepare redlines or an Interaction delivery writeup for the engineers. Consider the following:
+      - Prepare redlines or an interaction delivery writeup for the engineers. Consider the following:
           - Margin and padding
           - Animation
           - Links and hover states
+      - Describe expected behavior of layout for tablet and moble screensizes
+        - Due to the low number of mobile and table visitors (< 3%) design comps for these sizes are generally not required 
       - Schedule a meeting with engineers to discuss the interaction
   - Tools
       - Figma
@@ -122,3 +131,5 @@ While asynchronous communication is a core attribute of remote work, key moments
 - Refinement
   - Designers will review metrics and determine if their designs are meeting objectives set for them.
   - If areas for improvement are found, tickets will be created to document the change required to improve the issue
+ 
+

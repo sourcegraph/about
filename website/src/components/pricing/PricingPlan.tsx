@@ -181,7 +181,6 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
                 <div className="mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
                 {planProperties}
             </div>
-            <hr className="mx-3 px-1" />
             <ol className="list-group list-group-flush py-3">
                 {FEATURE_ORDER.map(feature => (
                     <>

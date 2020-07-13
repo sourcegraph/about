@@ -1,14 +1,10 @@
 // stylelint-disable declaration-property-unit-whitelist
 .footer {
-    &__container {
-        max-width: var(--breakpoint-lg) !important;
-        padding-left: $navbar-nav-link-padding-x;
-        padding-right: $navbar-nav-link-padding-x;
-    }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(198, 198, 215, 0.8) 100%);
 
     &__nav-sections {
         .nav-item > a {
-            color: $white;
+            color: $dark;
             font-size: 0.9rem;
             padding: 0.25rem 0;
             display: inline-block;
@@ -20,7 +16,11 @@
         font-size: 0.8rem;
         font-weight: bolder;
     }
-
+    &__logo {
+        background: url(/sourcegraph-logo.svg) no-repeat;
+        background-size: 200px;
+        height: 40px;
+    }
     &__social,
     &__postscript {
         .nav-item > a {
@@ -122,5 +122,22 @@
     .hs-button:hover {
         background-color: #0855c5;
         border-color: #0850b9;
+    }
+}
+
+.darkBackground {
+    .footer {
+        background: none;
+        &__logo {
+            background: url(/sourcegraph-reverse-logo.svg) no-repeat;
+        }
+        &__nav-header,
+        &__nav-sections .nav-item > a {
+            color: $light;
+        }
+        &__nav-header,
+        &__nav-sections .nav-item > a:hover {
+            color: $light-6;
+        }
     }
 }
