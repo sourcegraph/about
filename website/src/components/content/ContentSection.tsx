@@ -1,6 +1,7 @@
 import React from 'react'
 
 const COLORS = {
+    none: '',
     white: 'bg-white text-dark',
     black: 'bg-black text-light',
     gray: 'bg-dark text-light',
@@ -16,7 +17,7 @@ export const ContentSection: React.FunctionComponent<{
     color?: keyof typeof COLORS
     className?: string
     children: React.ReactNode
-}> = ({ id = '', color = 'black', className = '', children }) => (
+}> = ({ id = '', color = 'none', className = '', children }) => (
     <div id={id} className={COLORS[color]}>
         <section className={`content-section container ${className}`}>{children}</section>
     </div>
