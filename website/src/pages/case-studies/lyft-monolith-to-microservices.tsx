@@ -14,6 +14,7 @@ export default ((props: any) => (
                 'Learn how Sourcegraph code search helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition',
             // image: "https://about.sourcegraph.com/lyft-sourcegraph-case-study-og-embed.jpg"-pending approval
         }}
+        className="darkBackground navbar-dark"
     >
         <CaseStudyPage
             customer="Lyft"

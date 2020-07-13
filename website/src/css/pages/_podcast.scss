@@ -65,7 +65,7 @@
             border-radius: 0.5em;
         }
         a.podcast__content-option-selected {
-            text-shadow: 0 0 .9px $blue-3, 0 0 .9px $blue-3;
+            text-shadow: 0 0 0.9px $blue-3, 0 0 0.9px $blue-3;
             border: 1px solid $blue-3;
             box-sizing: border-box;
         }
@@ -126,5 +126,7 @@
             font-weight: bold;
         }
     }
-
+}
+.darkBackground {
+    background-color: #000 !important;
 }

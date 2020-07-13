@@ -15,11 +15,11 @@ We want to mimimize the bias in our hiring process, so we will try to avoid sche
 
 ## Scheduling
 
-We are flexible when it comes to scheduling interviews because we are all-remote and we don't need to schedule all interviews back-to-back (unlike typical onsite interviews at other companies).
+We are flexible when it comes to scheduling interviews because we are all-remote and we don't need to schedule all interviews back-to-back (unlike typical onsite interviews at other companies). Some candidates like spreading interviews out (e.g., across multiple days and/or having breaks between interviews on the same day) and others prefer to batch them as much as possible to get it over with. *Ask the candidate what their ideal interview schedule looks like and then try to accommodate those preferences as much as possible (given interviewer availability)*.
 
-- We try to schedule interviews as soon as possible given the availability of the candidate and our interviewers.
-- We try to avoid more than 2 hours of consecutive interviews for a candidate.
-- If interviews are spread over multiple days and it is clear from the initial feedback that we won't be moving forward, we will cancel the remaining scheduled interviews to save ourselves and the candidate time.
+Even if candidates prefer to batch all their interviews together, it might not be possible due to the timezones of available interviewers.
+
+If interviews are spread over multiple days and it is clear from the initial feedback that we won't be moving forward, we will cancel the remaining scheduled interviews to save ourselves and the candidate time.
 
 ## Writing feedback
 
@@ -45,13 +45,15 @@ All positive feedback with no strongly positive feedback is usually not sufficie
 
 We conduct debriefs after a candidate finishes interviews. The debrief should be added to the calendar at the same time we invite the candidate to interviews.
 
+Should the hiring manager decide to not utilize the debrief (e.g. the feedback was overwhelmingly positive or negative), the hiring manager should post to the candidate's Lever profile stating the reason and/or context for the decision. This provides a sense of closure for those who interviewed the candidate.
+
 ### Canceling
 
 Once interviews are over, the hiring manager may choose to cancel a debrief if the submitted feedback makes it obvious that we won't be moving forward with an offer AND if the outcome doesn't raise any questions from the hiring manager about the interview panels or hiring process (e.g., was there misalignment about the role the candidate was interviewing for, was there conflicting feedback worth discussing, could we have filtered out this candidate earlier in the process).  
 
 ### Format
 
-The hiring manager runs the debrief. The group spends the first 5 minutes of the debrief reading the written feedback from everyone else. The hiring manager should then drive the debrief discussion by asking specific questions that they prepared in advance (e.g, "I see you flagged a concern about X. Did reading feedback from other interviewers address your concern?").
+The debrief calendar invite will include a link to a Google Doc that contains all the feedback (due to a limitation in Lever permissions). Everyone should pre-read all of the feedback before the debrief begins. The hiring manager drives the debrief discussion by asking specific questions that they prepared in advance (e.g, "I see you flagged a concern about X. Did reading feedback from other interviewers address your concern?").
 
 ### Outcome
 
