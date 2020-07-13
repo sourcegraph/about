@@ -131,3 +131,5 @@ While asynchronous communication is a core attribute of remote work, key moments
 - Refinement
   - Designers will review metrics and determine if their designs are meeting objectives set for them.
   - If areas for improvement are found, tickets will be created to document the change required to improve the issue
+ 
+
