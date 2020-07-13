@@ -49,3 +49,4 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 - [Felix Becker](../../../company/team/index.md#felix-becker)
 - [Simon Korzunov](../../../company/team/index.md#simon-korzunov)
 - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
+- [T. K.](https://hire.lever.co/search/942fc37c-fe58-4e41-99a0-d9753338a805) starting 2020-07-20.
