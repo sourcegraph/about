@@ -74,7 +74,7 @@
     "prettier": "^2.0.5",
     "sharp": "^0.25.4",
     "slugify": "^1.4.0",
-    "stylelint": "^13.6.0",
+    "stylelint": "^13.6.1",
     "stylelint-scss": "^3.17.2",
     "tslint": "^5.20.1",
     "typescript": "^3.8.3"
