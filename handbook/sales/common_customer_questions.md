@@ -55,7 +55,7 @@ Here's a comprehensive answer that you can trim down based on the prospective cu
 
 > You can [set up Sourcegraph](https://docs.sourcegraph.com/#quickstart) and see value in 5 minutes. Most of our customers tell us Sourcegraph is one of the easiest applications to maintain, but we're happy to give a more precise estimate of the burden if you help us understand the environment in which you intend to deploy Sourcegraph. As a specific data point, one of our large customers reported that maintaining Sourcegraph for 1,000+ daily users takes ~5% of a single person's time.
 
-## Is Sourcegraph a platform, tool, or application?
+## Is Sourcegraph a platform, tool, or application? TODO
 
 Usually this question means the person has the following concerns:
 
