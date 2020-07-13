@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import EmailIcon from 'mdi-react/EmailIcon'
-import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
-import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon'
+import GithubIcon from 'mdi-react/GithubIcon'
+import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import MapMarkerIcon from 'mdi-react/MapMarkerIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import React from 'react'
@@ -31,7 +31,7 @@ export default ((props: any) => (
                                     href="https://github.com/sourcegraph/sourcegraph/issues"
                                     target="_blank"
                                 >
-                                    <GithubCircleIcon /> File a public issue
+                                    <GithubIcon /> File a public issue
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -88,14 +88,14 @@ export default ((props: any) => (
                                     target="_blank"
                                     href="https://github.com/sourcegraph"
                                 >
-                                    <GithubCircleIcon /> github.com/sourcegraph
+                                    <GithubIcon /> github.com/sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
                                     target="_blank"
                                     href="https://www.linkedin.com/company/sourcegraph"
                                 >
-                                    <LinkedinBoxIcon /> Sourcegraph on LinkedIn
+                                    <LinkedinIcon /> Sourcegraph on LinkedIn
                                 </a>
                                 <div className="list-group-item d-flex p-relative">
                                     <MapMarkerIcon className="mr-1" />
