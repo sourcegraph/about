@@ -21,7 +21,7 @@ export default class JobsPage extends React.Component<any, any> {
             'Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology.'
         return (
             <Layout location={this.props.location}>
-                <div className="jobs bg-white text-dark">
+                <div className="jobs content-page bg-white text-dark">
                     <Helmet>
                         <title>Careers at Sourcegraph</title>
                         <meta name="twitter:title" content="Careers at Sourcegraph" />

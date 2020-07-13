@@ -80,15 +80,15 @@ Go, Docker, Kubernetes
 * [Tools](./tools/index.md)
 * Tutorials
   * [Observability developer guide](observability/index.md)
+  * [Collecting and inspecting metrics dumps](metrics_dumps.md)
   * [How to set up a separate website maintained by Sourcegraph](separate_website.md)
-  * [How to replay a metrics dump from a customer](use_metrics_dump.md)
   * [How to simulate k8s admin security restrictions](k8s_admin_custom_policy.md)
   * [How to test the Gitlab native integration locally](gitlab_native_local.md)
   * [How to make updates to global settings and configuration on sourcegraph.com](update_sourcegraph_website.md)
 
 ## Members
 
-- [G. P.](https://hire.lever.co/search/5f3b284f-04ce-4bdc-86ba-f9eed6a0ae9e) ([engineering manager](../roles.md#engineering-manager)) estimated start date in June.
+- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([engineering manager](../roles.md#engineering-manager)).
 - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) ([project lead](../roles.md#project-lead))
 - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
 - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
