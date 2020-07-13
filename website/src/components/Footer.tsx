@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
-import GitHubCircleIcon from 'mdi-react/GithubCircleIcon'
-import LinkedinIcon from 'mdi-react/LinkedinBoxIcon'
+import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
+import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import * as React from 'react'
 
@@ -72,7 +72,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <ul className="nav footer__social mt-1">
                                 <li className="nav-item">
                                     <a href="https://github.com/sourcegraph" target="_blank">
-                                        <GitHubCircleIcon />
+                                        <GithubCircleIcon />
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -82,7 +82,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://www.linkedin.com/company/4803356/" target="_blank">
-                                        <LinkedinIcon />
+                                        <LinkedinBoxIcon />
                                     </a>
                                 </li>
                             </ul>
