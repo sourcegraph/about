@@ -16,13 +16,11 @@ const PricingFreeTierPopoverBody: React.FunctionComponent<any> = () => (
     </div>
 )
 
-interface ProductPopoverButtonProps {
+interface Props {
     className?: string
 }
 
-export const PricingFreeTierPopoverButton: React.FunctionComponent<ProductPopoverButtonProps> = ({
-    className = '',
-}) => (
+export const PricingFreeTierPopoverButton: React.FunctionComponent<Props> = ({ className = '' }) => (
     <HoverablePopover placement="bottom" delay={{ show: 0, hide: 500 }} component={<PricingFreeTierPopoverBody />}>
         <a className={`pricing-free-tier-popover-body outline-0 ${className}`} href="https://docs.sourcegraph.com">
             <span className="text-muted ml-1 mr-1">

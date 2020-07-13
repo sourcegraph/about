@@ -18,7 +18,7 @@ export const Jumbotron: React.FunctionComponent<{
     color = 'dark',
     logomark = true,
     title,
-    titleClassName = 'display-3',
+    titleClassName = 'display-3 font-weight-bold',
     description,
     children,
 }) => (

@@ -7,16 +7,12 @@ import * as React from 'react'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import { IconItem } from '../../components/IconItem'
-import { Jumbotron } from '../../components/Jumbotron'
+import { IntegrationsSection } from '../../components/IntegrationsSection'
 import Layout from '../../components/Layout'
 import { PageSectionLinks } from '../../components/PageSectionLinks'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
-import { EbookUniversalCodeSearch } from '../../components/product/EbookUniversalCodeSearch'
 import { EnterpriseReadySolution } from '../../components/product/EnterpriseReadySolution'
-import { IntegratesWithSection } from '../../components/product/IntegratesWithSection'
-import { ProductDemoVideo } from '../../components/product/ProductDemoVideo'
-import { ProductFeaturesAndUseCases } from '../../components/product/ProductFeaturesAndUseCases'
-import { GetSourcegraphNowActions } from '../../css/components/actions/GetSourcegraphNowActions'
+import { TrySourcegraph } from '../../components/TrySourcegraph'
 
 export default ((props: any) => (
     <Layout
@@ -30,19 +26,21 @@ export default ((props: any) => (
         <ContentPage
             title="Sourcegraph Universal Code Search"
             description="Explore, navigate, and understand all code, everywhere, faster"
+            className="bg-gradient-primary mt-2"
+            titleClassName="display-2 font-weight-bold"
         >
             <PageSectionLinks
                 sections={[
                     { text: 'Why universal', url: '#ucs' },
                     { text: 'Features', url: '#features' },
-                    { text: 'Who uses it', url: '#customers' },
                     { text: 'Integrations', url: '#integrations' },
+                    { text: 'Who uses it', url: '#customers' },
                 ]}
             />
-            <ContentSection color="primary" className="py-5">
+            <ContentSection color="white" className="py-5">
                 <span id="ucs" />
-                <h2 className="text-center">Universal across everything </h2>
-                <p className="text-center">
+                <h2 className="display-3 font-weight-bold">Universal across everything</h2>
+                <p>
                     Code hosts and IDEs provide limited search functionality on their platforms. Development now spans
                     many repos, languages, file formats, and codebases making Universal Code Search essential for
                     enterprises like Uber, Lyft, and Yelp.
@@ -69,7 +67,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
             <ContentSection color="white" className="pt-4">
-                <h2 id="features" className="display-4 mb-5 text-center">
+                <h2 id="features" className="mb-5 display-3 font-weight-bold">
                     Sourcegraph lets you review, search, and modify your code no matter where it's stored
                 </h2>
                 <div className="row">
@@ -151,31 +149,19 @@ export default ((props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <ContentSection color="primary" className="py-6 d-none">
-                <ProductDemoVideo title="How software development is better with Sourcegraph" />
-                <ProductFeaturesAndUseCases className="mt-6" />
-            </ContentSection>
-            <ContentSection color="gray" className="py-6">
-                <EbookUniversalCodeSearch />
-            </ContentSection>
-            <ContentSection color="white">
-                <span id="customers" />
-                <CustomerLogosSection className="pt-6 pb-4" />
-                <span id="integrations" />
-                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
+            <span id="integrations" />
+            <IntegrationsSection className="bg-white py-4" />
+            <span id="customers" />
+            <ContentSection color="white" className="py-2">
+                <hr />
+                <CustomerLogosSection className="py-5" />
             </ContentSection>
             <ContentSection color="black" className="py-6">
                 <EnterpriseReadySolution />
             </ContentSection>
-            <Jumbotron
-                color="purple"
-                className="pt-4 pb-6"
-                logomark={false}
-                title="Try Sourcegraph now"
-                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-            >
-                <GetSourcegraphNowActions />
-            </Jumbotron>
+            <ContentSection color="white" className="py-6">
+                <TrySourcegraph />
+            </ContentSection>
         </ContentPage>
     </Layout>
 )) as React.FunctionComponent<any>

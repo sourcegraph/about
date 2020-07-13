@@ -12,6 +12,7 @@ export default ((props: any) => (
                 'With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
             image: '/case-studies/sofi-sourcegraph-case-study-og-embed.png',
         }}
+        className="darkBackground navbar-dark"
     >
         <CaseStudyPage
             customer="SoFi"

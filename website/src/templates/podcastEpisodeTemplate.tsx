@@ -1,12 +1,11 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import Layout from '../components/Layout'
-import SocialLinks from '../components/SocialLinks'
-import { Jumbotron } from '../components/Jumbotron'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
+import { CaseStudyRequestDemoForm } from '../components/content/CaseStudyPage'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
+import Layout from '../components/Layout'
+import SocialLinks from '../components/SocialLinks'
 import { getHTMLParts, subscriptionLinks } from '../pages/podcast'
 
 interface Option {
@@ -22,7 +21,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
 
     public componentDidMount(): void {
         if (document) {
-            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none')
+            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
         }
     }
 
@@ -62,10 +61,11 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
         ].filter(option => option.html)
 
         const hash = this.props.location.hash
-        let selected: 'showNotes' | 'summary' | 'transcript' = (hash === '#showNotes' && 'showNotes') || (hash === '#transcript' && 'transcript') || 'summary'
+        let selected: 'showNotes' | 'summary' | 'transcript' =
+            (hash === '#showNotes' && 'showNotes') || (hash === '#transcript' && 'transcript') || 'summary'
 
         return (
-            <Layout location={this.props.location} meta={meta}>
+            <Layout location={this.props.location} meta={meta} className="darkBackground">
                 <Helmet>
                     <link
                         rel="stylesheet"
@@ -79,28 +79,42 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                         <div className="d-flex flex-column align-items-center podcast__subbanner">
                             Conversations, stories, and insights from dev tool creators
                         </div>
-                }>
+                    }
+                >
                     <ContentSection color="black">
                         <div className="podcast">
                             <div className="podcast__episode">
                                 <div className="podcast__title">{title}</div>
-                                <div className="podcast__subscribe-episode">
-                                    {subscriptionLinks}
-                                </div>
+                                <div className="podcast__subscribe-episode">{subscriptionLinks}</div>
                                 <div className="podcast__backtoall">
                                     <a href="/podcast">&lsaquo; All episodes</a>
                                 </div>
-                                {guestsHTML && (<div dangerouslySetInnerHTML={{ __html: guestsHTML }} className="podcast__people" />)}
+                                {guestsHTML && (
+                                    <div dangerouslySetInnerHTML={{ __html: guestsHTML }} className="podcast__people" />
+                                )}
                                 <div className="podcast__date">{publishDate}</div>
-                                { audioHTML && (<div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />)}
+                                {audioHTML && (
+                                    <div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />
+                                )}
                                 <div className="podcast__content-option">
                                     {options.map(({ hash, name }) => (
-                                        <a key={name} dangerouslySetInnerHTML={{ __html: name }} className={selected === hash ? "podcast__content-option-selected" : ""} href={`#${hash}`} />
+                                        <a
+                                            key={name}
+                                            dangerouslySetInnerHTML={{ __html: name }}
+                                            className={selected === hash ? 'podcast__content-option-selected' : ''}
+                                            href={`#${hash}`}
+                                        />
                                     ))}
                                 </div>
-                                {options.filter(op => op.hash === selected).map(({ name, html }) => (
-                                    <div key={name} className="podcast__description" dangerouslySetInnerHTML={{ __html: html || '' }} />
-                                ))}
+                                {options
+                                    .filter(op => op.hash === selected)
+                                    .map(({ name, html }) => (
+                                        <div
+                                            key={name}
+                                            className="podcast__description"
+                                            dangerouslySetInnerHTML={{ __html: html || '' }}
+                                        />
+                                    ))}
                             </div>
 
                             <section className="blog-post__footer mt-4 pt-4">
@@ -111,15 +125,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                         </div>
                     </ContentSection>
                 </ContentPage>
-                <Jumbotron
-                    color="dark"
-                    className="py-4"
-                    logomark={false}
-                    title="Try Sourcegraph now"
-                    description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-                >
-                    <GetSourcegraphNowActions />
-                </Jumbotron>
+                <CaseStudyRequestDemoForm />
             </Layout>
         )
     }
