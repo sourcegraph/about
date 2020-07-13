@@ -22,7 +22,7 @@ Every quarter, we set OKRs to set our focus and align our goals with those of th
 **Output:** OKRs and issues filed and assigned to Backlog milestone for each thing that is covered by
 the OKRs.
 
-**Process:** The [project lead](../roles.md#project-lead) drives OKR planning, and follows these steps:
+**Process:** The [engineering manager](../roles.md#engineering-manager) drives OKR planning, and follows these steps:
 
 1. Gather context:
    1. Last quarter's OKRs
@@ -51,10 +51,9 @@ our quarterly OKRs.
 
 **Input:** Existing issues and new proposals in line with our OKRs.
 
-**Output:** A [tracking issue](../tracking_issues.md) that lists all engineering items of work we plan to accomplish this
-iteration.
+**Output:** A [tracking issue](../tracking_issues.md) that lists all engineering items of work we plan to accomplish this iteration.
 
-**Process:** The [project lead](../roles.md#project-lead) drives iteration planning, and follows
+**Process:** The [engineering manager](../roles.md#engineering-manager) drives iteration planning, and follows
 these steps:
 
 **Proposal phase (day 1):** The idea here is to identify a superset of issues to be prioritized for
@@ -117,15 +116,33 @@ feasible set of work with clear lines of ownership.
 
 ### Retrospective
 
-This can be done in the internal sync at the start of a new iteration.
+The [engineering manager](../roles.md#engineering-manager) drives the retrospective. Ask everyone to review the
+previous milestone tracking issue, the planned work assigned to you, what got done, what didn't. To facility this meeting, we will use the Start/Stop/Continue format, although its possible to other formats as required.
 
-The [project lead](../roles.md#project-lead) drives the retrospective. Ask everyone to review the
-previous milestone tracking issue, the planned work assigned to you, what got done, what didn't, and
-come prepared to talk about the following:
+Please add items in advance whenever possible, following [structured meetings](https://about.sourcegraph.com/handbook/communication#structured-meetings) recommendations.
 
+#### Start
+_Ideas that the team should be doing but are not doing, new ideas worth discussing to address current problems._
+
+* A new person has joined team. What project would you suggest he should work on?
+* The deadline for project X was removed. What extra features would you add to project X?
+* What went well? What did you like?
+* What do you wish you had done differently?
+
+#### Stop
+_Ideas that are not delivering results or task which require a lot of time for little return._
+
+* What would you cut from your workday if you had to leave early for vacation?
+* Have you ever noticed an area of your job that consistently gets bumped to the next day or even next month? What is that and why is it so easy to defer until a later date?
+* Someone has left our team. What would we have to lose to still meet deadlines?
 * What was painful about the milestone? How can we address that pain moving forward?
-* What should we stop doing?
-* What should we start doing?
+
+#### Continue
+_Ideas that are creating value or we should continue to explore as they are showing positive results._
+
+* What ideas or projects seems to be going in the right direction but need more time?
+* Which responsibilities do you personally find most fulfilling?
+* What is something that our customer loves us doing?
 
 ## Weekly
 
@@ -135,8 +152,8 @@ As with everyone at Sourcegraph, we join the [weekly company meeting](https://ab
 
 ### Weekly Distribution team sync
 
-Mon @ 2pm PST we hold an [internal
-team sync](https://docs.google.com/document/d/1otP6F8qfm2yNOW1hjTszkkuiYF1MGp31s5ATeA76ij4/edit) via Zoom. It usually does not involve product managers or higher ups. The goal is to:
+Mon @ 11am PST we hold an [internal
+team sync](https://docs.google.com/document/d/1otP6F8qfm2yNOW1hjTszkkuiYF1MGp31s5ATeA76ij4/edit) via Zoom. The goal is to:
 
 - Think about the problems we're solving by briefly going over what everyone is working on
 - Revisit our quarterly OKRs and think about how we are tracking towards them when useful
@@ -144,13 +161,14 @@ team sync](https://docs.google.com/document/d/1otP6F8qfm2yNOW1hjTszkkuiYF1MGp31s
 - Act as an opportunity / space for anyone to call out concerns, questions, etc. that they may have or suggest things we could be doing better, etc.
 - Serve as a space for others outside our team that work closely with us (e.g. people working on Cloud infrastructure) to interact with us face-to-face.
 
-On the Mon. following the [20th (release day)](https://about.sourcegraph.com/handbook/engineering/releases), this meeting is used to kick-off asynchronous project planning for the next release.
+
+On the Mon. following the [20th (release day)](https://about.sourcegraph.com/handbook/engineering/releases), this meeting is used to finalize planning the current release and kick-off asynchronous planning for the next release.
 
 These meetings are recorded (posted automatically to the #distributioneers Slack channel) so that anyone whose timezone does not permit can participate after the fact.
 
-### Bi-weekly async updates
+### Weekly updates
 
-#### Wednesday update
+#### Wednesday Slack update
 
 Wed, before EOD (local time): distribution members are expected to post an update in Slack communicating:
 
@@ -170,7 +188,7 @@ Wed, before EOD (local time): distribution members are expected to post an updat
 
 The goal of this update is to ensure we're discussing things as a team, asking for help when appropriate, reflecting on our progress, and giving others the opportunity to provide help and guidance.
 
-#### Friday update
+#### Friday GitHub update
 
 Fri, before EOD (local time): distribution members are expected to post an update with the following to [our monthly tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+Distribution):
 
@@ -189,23 +207,17 @@ Fri, before EOD (local time): distribution members are expected to post an updat
 
 The goal of this update is to communicate to _the broader Sourcegraph team_ what we're working on, what progress we've made, and anything that is at risk at a high-level.
 
-#### Why bi-weekly & asynchronous updates?
+#### Why weekly & asynchronous updates?
 
 We use asynchronous updates via Slack and GitHub instead of face-to-face video call stand-ups because it allows:
 
 - You to write your update and consume other's updates at your own pace.
 - Others to opt-out of conversations they may not have stake in easily (topics worth discussing with the entire team can be brought up at the weekly team sync.)
 
-We use a bi-weekly update frequency because:
+We send updates twice a week because:
 
 - Daily updates are too frequent, tedious to write out, tedious to consume, and give the impression that someone wants an hour-by-hour account of work (we do not).
-- Weekly updates make it easy to forget what you did at the start of the week, forget to ask for help, and make it hard for others to offer help in a timely fashion.
-- Bi-weekly updates encourage posting updates and gathering feedback regularly, while still focusing on just the high-level key points of interest.
+- A single weekly update make it easy to forget what you did at the start of the week, forget to ask for help, and make it hard for others to offer help in a timely fashion.
+- Two updates a week encourage posting updates and gathering feedback regularly, while still focusing on just the high-level key points of interest.
 
 We want to respect autonomy and view updates as a tool to help remind team members to collaborate together, ask for help, and perform self-reflection about whether your current focus is right or not.
-
-### Distribution management sync
-
-The [distribution management sync](https://docs.google.com/document/d/1g9gb_i-Q6QXifISiS1urZ2gcfO2Pz-VHYqurW_94My4/edit) is a quick sync for the Distribution manager and project lead to communicate the team's overall status to the VP of engineering and Product. These are usually high-level progress updates re-hashing what has already been discussed in prior updates, etc. and answering questions/concerns or priority/planning changes between Distribution and the broader Engineering / Product organization.
-
-These are usually brief and just a re-hash of what has already been discussed elsewhere, so most Distribution team members do not join this meeting. That said, for transparency all members are invited and anyone is free to join and participate or just listen in if they like.

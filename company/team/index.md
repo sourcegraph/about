@@ -286,7 +286,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Sales Development Representative
 - Tampa, FL 🌴 🇺🇸
 - [mark@sourcegraph.com](mailto:mark@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mmuldez/)
-- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, a VC-backed start-up company, where he successfully built a strong and sustainable pipeline for the company. In his spare time, Mark loves to spend time with his wife, his 2-year-old little guy, and their mini Australian shepherd dog. He's a big Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and go to the beach to avoid getting bit by mosquitoes. He also thinks spicy mayo is life. 🙌🏽
+- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, where he successfully built a strong and sustainable pipeline for the company. In his spare time, Mark loves to spend time with his wife, his 2-year-old little guy, and their mini Australian shepherd dog. He's a big Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and goes to the beach to avoid getting bit by mosquitoes. He also thinks spicy mayo is life. 🙌🏽
 
 ## Pooja Jain (she/her)
 
@@ -322,9 +322,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Kh-ay-eem (or Hayeem)
 - Security Engineer
-- Toronto, ON, Canada, 🇨🇦
+- Toronto, Canada, 🇨🇦
 - [chayim@sourcegraph.com](mailto:chayim@sourcegraph.com)
-- Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a peace of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics.  Plus za'atar - he covers everything he can in za'atar.
+- Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a piece of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics.  Plus za'atar - he covers everything he can in za'atar.
 
 
 ## Alicja Suska (she/her)
@@ -335,6 +335,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [alicja@sourcegraph.com](mailto:alicja@sourcegraph.com), [LinkedIn](https://pl.linkedin.com/in/alicja-suska-1a5384a9), [GitHub](https://github.com/AlicjaSuska)
 - Alicja is a designer who loves painting furniture and creating isometric illustrations. She lives in Poznań with her Samoyed dog, Edward. Prior to Sourcegraph, Alicja was working at Toggl, the company that provides time tracking and work management tools. She comes from the artistic background - she earned a BA in Interior Design and a MS in Graphics.
 
+## Stefan Hengl (he/him)
+
+- Software Engineer
+- Berlin, Germany 🇩🇪
+- [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [GitHub](https://github.com/stefanhengl)
+- Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
 <!-- Paste *your* section above this line by following our template below:
 

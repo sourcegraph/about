@@ -1,40 +1,57 @@
 // stylelint-disable declaration-property-unit-whitelist
 .header {
+    &__logo {
+        background: url(/sourcegraph-logo.svg) no-repeat;
+        background-size: 150px;
+        width: 150px;
+        height: 26px;
+
+        &-image {
+            height: 26px;
+            margin-bottom: 0.125rem;
+        }
+    }
+
+    &__nav-item {
+        display: flex;
+        align-items: center;
+    }
     &__nav-link {
-        font-size: 0.9rem;
-        font-weight: 600;
+        color: $dark;
+    }
+    &__nav-link.btn:hover {
+        color: $light !important;
     }
 }
 
-.gophercon {
-    position: static;
-    display: flex;
-    align-items: center;
-    flex-grow: inherit;
-    z-index: 1;
-    left: 0;
-    max-height: 500px;
-    right: 0;
-    width: 100%;
-    background-color: #e0ebf5;
-    text-align: center;
-    justify-content: center;
-    a {
-        padding-top: 4px;
-        padding-bottom: 4px;
+.darkBackground {
+    .header {
+        background-color: #07090d !important;
+        border-bottom: 1px solid #212529 !important;
+        &__logo {
+            background: url(/sourcegraph-reverse-logo.svg) no-repeat;
+            background-size: 150px;
+            width: 150px;
+            height: 26px;
+        }
+        &__nav-link {
+            color: $light;
+        }
+        &__nav-link:hover {
+            color: $light-6;
+        }
     }
+}
+.navbar-light {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
-    .go-gopher {
-        width: 1.2rem;
-        height: 1.2rem;
-        background: url('/go-gopher.png');
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: contain;
-        margin-right: 0.5rem;
-        display: inline-block;
-        padding-top: 1px;
-        position: relative;
-        top: 3px;
+@media only screen and (max-width: 768px) {
+    .navbar-light {
+        background-color: #fff;
+    }
+    .darkBackground .navbar-nav .btn,
+    .navbar-light .navbar-nav .btn {
+        padding: 0.25rem 0.75rem;
     }
 }

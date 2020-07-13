@@ -1,4 +1,5 @@
 /abc /resources/abcs-book
+/blog/performance-improvements-in-precise-code-intel /blog/making-code-nav-twice-as-fast 301!
 /blog/gitlab-adds-code-navigation-and-code-intelligence-by-sourcegraph /blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence 301!
 /blog/github-universe-liveblog-innersource-and-reaping-the-benefits-of-open-source-behind-your-firewall /blog/github-universe-liveblog-innersource 301!
 /blog/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go /blog/google-i-o-talk-building-sourcegraph 301!
@@ -78,11 +79,18 @@
 /plan /company/strategy 301!
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!
-/product/code-alerts-automation /product/code-change-management 301!
-/product/code-search-navigation /product/code-discovery 301!
-/product/automation /product/code-change-management 301!
-/product/server /product 301!
+/product/code-alerts-automation / 301!
+/product/code-search-navigation / 301!
+/product/automation / 301!
+/product/server / 301!
 /resources/our-abcs-childrens-book-download https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf
 /solutions/developer-onboarding /product 301!
 /solutions/developer-workflow-tooling-integrations /product 301!
-/solutions/incident-response /product 301!
+/solutions/incident-response / 301!
+/universal-code-search / 301!
+/product / 301!
+/product/code-change-management / 301!
+/product/code-discovery / 301!
+/product/code-intelligence / 301!
+/product/code-review / 301!
+/contact/request-trial/ /contact/request-info 301!
