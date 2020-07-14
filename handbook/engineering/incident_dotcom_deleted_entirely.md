@@ -15,7 +15,7 @@ We use Terraform to manage our deployments
 
 1. [Navigate to the `cloud` repo on the ](https://github.com/sourcegraph/infrastructure/tree/master/cloud)
 
-2. Follow the instructions there to run `terraform plan` to see if the infrastructure has drifted from what is specified there. 
+2. Follow the instructions there to run `terraform plan` to see if the infrastructure has drifted from what is specified there.
 
 3. **With existing disks**, recreate the Kubernetes objects:
   a. Do NOT run `create-new-cluster.sh` as it will try to recreate the statically-named disks.
@@ -26,7 +26,7 @@ We use Terraform to manage our deployments
 4. **From snapshots**, recreate the Kubernetes objects:
   a. Since nothing exists, run `create-new-cluster.sh` and it will recreate everything including disks.
   b. Sourcegraph.com should now be accessible, but with no postgres, redis-store, or precise-code-intel-bundle-manager data present.
-  c. Restore pgsql disks from the latest `pgsql-prod-dot-com` compute snapshot, `redis-store-prod-dot-com` snapshot, and `bundle-manager-prod-dot-com` snapshot: https://console.cloud.google.com/compute/snapshots?project=sourcegraph-dev
+  c. Restore pgsql disks from the latest `pgsql-prod---cloud` compute snapshot, `redis-store---cloud` snapshot, and `bundle-manager---cloud` snapshot: https://console.cloud.google.com/compute/snapshots?project=sourcegraph-dev
     - TODO: this section should be more explicit about what needs to be done.
   d. Go to **Confirm health of Sourcegraph.com**
 
