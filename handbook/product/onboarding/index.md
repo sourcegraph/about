@@ -10,7 +10,7 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
   - Figma
   - Productboard
   - UserTesting.com
-- Schedule a recurring [1-1](../../leadership/1-1).
+- Schedule a recurring [1-1](../../leadership/1-1.md).
 
 ## Product team member checklist
 
