@@ -1,6 +1,20 @@
 {
   "y2020": [
     {
+      "newsSource": "Business Insider",
+      "newsTitle": "Code collaboration startup Sourcegraph has raised $28 million",
+      "newsDate": "July 14, 2020",
+      "newsLink": "https://www.businessinsider.com/sourcegraph-adds-to-funding-doubles-headcount-and-lands-new-customers-2020-7",
+      "newsImage": "/external-logos/business-insider-logo.png"
+    },
+    {
+      "newsSource": "InfoQ",
+      "newsTitle": "Podcast: Quinn Slack of Sourcegraph on Moving to Fully Remote and Zoomcations",
+      "newsDate": "July 6, 2020",
+      "newsLink": "https://www.infoq.com/podcasts/zoomcations-fully-remote/",
+      "newsImage": "/external-logos/infoq-logo.png"
+    },
+    {
       "newsSource": "Security Boulevard",
       "newsTitle": "Breaking the Solidity Compiler with a Fuzzer",
       "newsDate": "June 5, 2020",
