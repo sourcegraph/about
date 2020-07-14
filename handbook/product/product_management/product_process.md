@@ -12,14 +12,9 @@
 
 <dl>
     <dt>Product priorities</dt>
-    <dd>An ordered list of priorities that product has evidence is important</dt>
+    <dd>An ordered list of problem statements or outcomes that product has evidence is important</dt>
     <dt>Roadmap</dt>
-    <dd>What and when tasks will be worked on</dt>
+    <dd>The tasks and timeline for when each will be worked on</dt>
     <dt>Backlog</dt>
-    <dd>The ordered list of items to be tackled</dt>
+    <dd>The ordered list of items to be tackled after items on the roadmap are complete.</dt>
 </dl>
-
-## Monthly release templates
-
-- [Release blog post template](./release_blog_post_template.md)
-- [Release blog post tracking issue template](./release_issue_template.md)

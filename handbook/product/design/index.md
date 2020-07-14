@@ -44,11 +44,11 @@ Working with design should feel fluid, you should be able to open an issue or br
 
 You should also not feel limited to words, images (sketches, or references made by editing the broswer DOM) are also encouraged.
 
-**Figma**
+### Figma
 
 - Click 'C' whilst in Figma, or check the navigation bar in the top left hand corner and look for the comment icon; you can drop comments anywhere in a file, and the owner of the page will be notified via email
 
-**GitHub**
+### GitHub
 
 - Assign one of the team, add the tag 'needs-design', and utilize the [design priorities project](https://github.com/orgs/sourcegraph/projects/66)
 

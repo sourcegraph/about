@@ -11,7 +11,7 @@ The product team is newly growing, and consists of all product managers and prod
 
 ## [Product management](product_management/index.md)
 
-- [Product process](product/product_process.md)
+- [Product process](product_management/product_process.md)
 
 ## [Design](design/index.md)
 

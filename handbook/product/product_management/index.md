@@ -32,3 +32,8 @@ See [2021 Organizational plan](../../engineering/2021_org.md) for more details o
 ## Product process
 
 See [product process](product_process.md)
+
+## Monthly release templates
+
+- [Release blog post template](./release_blog_post_template.md)
+- [Release blog post tracking issue template](./release_issue_template.md)
