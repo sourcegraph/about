@@ -347,7 +347,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Developer Communications
 - Berwyn, PA
-- [kimberly@sourcegraph.com](mailto:kimberly@sourcegraph.com), other social media links (if any)
+- [kimberly@sourcegraph.com](mailto:kimberly@sourcegraph.com)
 - Kimberly is just a government name; Sourcegraph insiders call her by her nickname. The former journalist accidentally fell into the world of technical writing via her gaming hobby, and she's been dedicated to writing insightful documentation ever since. In her spare time, she engages in a balanced mixture of geeky and athletic pursuits, such as anime, coffee making, swimming, reading, aerial fitness, pc building, and sport shooting.
 
 <!-- Paste *your* section above this line by following our template below:
