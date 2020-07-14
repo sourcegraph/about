@@ -52,7 +52,7 @@ export default ((props: any) => (
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
                     <div className="row pt-4">
-                        <div className="col-6 col-md-4 mx-auto mb-4">
+                        <div className="col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Free"
@@ -79,7 +79,7 @@ export default ((props: any) => (
                                 buttonHref="https://docs.sourcegraph.com#quickstart-guide"
                             />
                         </div>
-                        <div className="col-6 col-md-4 mx-auto mb-4">
+                        <div className="col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Team"
@@ -105,7 +105,7 @@ export default ((props: any) => (
                                 buttonHref="https://sourcegraph.com/subscriptions/new"
                             />
                         </div>
-                        <div className="col-6 col-md-4 mx-auto mb-4">
+                        <div className="col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Enterprise"
