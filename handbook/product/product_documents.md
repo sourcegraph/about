@@ -22,7 +22,7 @@ Each PD has a status that is in the title of the PD (e.g. "PD 1 WIP: Title"). Th
 | Status | Description |
 |-------|-------------|
 | WIP | The author is still drafting the PD and it is not ready for review. |
-| REVIEW | The PD is ready to be reviewed. The PD explicitly lists whose approvals are required and a requested timeline for those approvals. |
+| REVIEW | The PD is ready to be reviewed. The PD explicitly lists whose reviews are requested and deadline for receiving those reviews. |
 | DEFINED | The problem statement defined and agreed upon, and is locked to changes. This is to ensure that anyone involved in solving the problem statement defined within the PD does not need to worry about changing scope. A change to the problem statement likely requires a new PD to be created to define the new problem statement. If the update is minor enough, all interested parties should be notified. |
 | ABANDONED | There are no plans to move forward with solving the problem statement defined in the PD. The particular reason is communicated in the metadata section of the PD. For example, the PD may have failed to get the necessary approvals, it may be been superseded by another PD, priorities may have changed, or we may not have resources to work on this PD in the foreseeable future. |
 | SOLVED | The problem statement defined in the PD has been solved. |
@@ -36,7 +36,7 @@ _For convenience, there is a [Google Docs Template](https://docs.google.com/docu
 - Title that includes the PD number.
   - The title is inlined in the Google Doc so that it is more visible and will not disappear if exported to a different format.
 - Metadata about the state of the PD. Including but not limited to:
-  - **Editor:** The person responsible for iterating on the content of the RFC.
+  - **Editor:** The person responsible for iterating on the content of the PD.
   - **Status:** A description of the current state or outcome of the PD.
   - **Requested approvers:** The list of people that the PD author is requesting a review from and a requested deadline for those reviews.
   - **Approved by:** A list of people who approve the problem statement defined in the PD.
