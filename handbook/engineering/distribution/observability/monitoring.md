@@ -181,6 +181,7 @@ The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker
 
 * Handles starting up Prometheus and Alertmanager
 * Applies updates to site configuration by [generating a diff and applying changes](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+type:symbol+Change+OR+Diff&patternType=literal)
+  * Most notably, this includes [configuring notifiers and silences](https://docs.sourcegraph.com/admin/observability/alerting) for Sourcegraph alerts
 * [Exposes endpoints for configuration issues, alerts summary statuses, and reverse-proxies Prometheus and Alertmanager](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+PathPrefix%28:%5Bpath%5D%29.Handler%28:%5Bhandler%5D%29&patternType=structural)
 
 ### Upgrading Prometheus or Alertmanager
