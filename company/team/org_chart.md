@@ -9,7 +9,7 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 </div>
 
 <!-- When updating the engineering team list below, please also update on the handbook root handbook/index.md -->
-## [Engineering: Distribution team](../../handbook/engineering/code-intelligence/index.md#members)
+## [Engineering: Distribution team](../../handbook/engineering/distribution/index.md#members)
 ## [Engineering: Campaigns team](../../handbook/engineering/campaigns/index.md#members)
 ## [Engineering: Cloud team](../../handbook/engineering/cloud/index.md#members)
 ## [Engineering: Code intelligence team](../../handbook/engineering/code-intelligence/index.md#members)
