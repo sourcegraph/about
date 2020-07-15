@@ -18,8 +18,7 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 ### [Engineering: Security team](../../handbook/engineering/security/index.md#members)
 ### [Engineering: Web team](../../handbook/engineering/web/index.md#members)
 
-## Customer Engineering
-### [Customer Engineering](../../handbook/ce/index.md#members)
+## [Customer Engineering](../../handbook/ce/index.md#members)
 
 ## Other teams: TODO
 
