@@ -77,9 +77,15 @@ Promise.all(
 ).then(sections => {
 	const loading = document.getElementById('org-chart-loading')
 	loading.innerHTML = '' // clear
-
+	
 	for (const {header, content} of sections) {
 		header.parentNode.insertBefore(content, header.nextSibling)
+		
+		// Make header link to top of page, not the members section.
+		const headerLink = header.querySelector('a[href]:not([aria-hidden])')
+		const headerLinkUrl = new URL(headerLink.href)
+		headerLinkUrl.hash = ''
+		headerLink.href = headerLinkUrl.toString()
 	}
 })
 </script>
