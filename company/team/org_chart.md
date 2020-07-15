@@ -9,13 +9,14 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 </div>
 
 <!-- When updating the engineering team list below, please also update on the handbook root handbook/index.md -->
-## [Engineering: Distribution team](../../handbook/engineering/distribution/index.md#members)
-## [Engineering: Campaigns team](../../handbook/engineering/campaigns/index.md#members)
-## [Engineering: Cloud team](../../handbook/engineering/cloud/index.md#members)
-## [Engineering: Code intelligence team](../../handbook/engineering/code-intelligence/index.md#members)
-## [Engineering: Search team](../../handbook/engineering/search/index.md#members)
-## [Engineering: Security team](../../handbook/engineering/security/index.md#members)
-## [Engineering: Web team](../../handbook/engineering/web/index.md#members)
+## Engineering
+### [Engineering: Distribution team](../../handbook/engineering/distribution/index.md#members)
+### [Engineering: Campaigns team](../../handbook/engineering/campaigns/index.md#members)
+### [Engineering: Cloud team](../../handbook/engineering/cloud/index.md#members)
+### [Engineering: Code intelligence team](../../handbook/engineering/code-intelligence/index.md#members)
+### [Engineering: Search team](../../handbook/engineering/search/index.md#members)
+### [Engineering: Security team](../../handbook/engineering/security/index.md#members)
+### [Engineering: Web team](../../handbook/engineering/web/index.md#members)
 
 ## Other teams: TODO
 
@@ -66,7 +67,7 @@ async function getPageOrgChart(pageUrl) {
 	return wrapper
 }
 
-const sectionHeaders = Array.from(document.querySelectorAll('h2')).filter(section => Boolean(section.querySelector('a[href]:not([aria-hidden])')))
+const sectionHeaders = Array.from(document.querySelectorAll('h3')).filter(section => Boolean(section.querySelector('a[href]:not([aria-hidden])')))
 Promise.all(
 	sectionHeaders.map(async sectionHeader => ({
 		header: sectionHeader,
