@@ -15,15 +15,14 @@ published: true
 With this momentum and the extra investment, we're accelerating some big things to improve Sourcegraph and get universal code search to every developer:
 
 - Building cloud-hosted universal code search (right now, you need to [self-host Sourcegraph](https://docs.sourcegraph.com/#quickstart) to use it on private code)
-- Making virtually all public code searchable on [Sourcegraph.com](https://sourcegraph.com/search) by anyone (right now, it only has popular open-source projects)
-- TODO: customer engineering team
-- TODO: Student/university outreach
+- Making virtually all public code searchable on [Sourcegraph Cloud](https://sourcegraph.com/search) by anyone (right now, it only has popular open-source projects)
+- TODO: Customer Engineering team to help people spread Sourcegraph to the rest of their company
+- TODO: Working with open-source projects to get really good project search
+- TODO: Student/university outreach (what Mimi is doing)
 
 We're hiring for many roles (and we're a permanently [all-remote company](TODO)):
 
 - TODO
 - And more (TODO link to careers repo)
 
-You can help us by [trying Sourcegraph](/) (if you haven't already) or by joining our team. 
-
-... TODO ...
+TODO conclusion
