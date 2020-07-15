@@ -28,8 +28,9 @@ Not all teams are listed here yet.
 
 This org chart is generated automatically based on the contents of other handbook pages.
 
-1. To add a team, [edit this page](https://github.com/sourcegraph/about/edit/master/company/team/org_chart.md) and add a link to the section of the team's page that lists the members (such as `## [My team](../../handbook/myteam/index.md#members)`).
+1. To add a team, [edit this page](https://github.com/sourcegraph/about/edit/master/company/team/org_chart.md) and add a link to the section of the team's page that lists the members (such as `### [My team](../../handbook/myteam/index.md#members)`).
 1. To edit a team, edit the linked section on the team's page. In the example above, you'd edit the `Members` section of `../../handbook/myteam/index.md`. Everything in that section until the next heading is displayed on this page.
+1. To add any other text or structure to this page, just insert it as you would normally. Only 3rd-level heading links (lines that start with `###` and that have a link) are treated specially; all other content is preserved.
 
 <script>
 // This script injects the org chart content into each section of this page that links to a team page.
