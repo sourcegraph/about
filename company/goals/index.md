@@ -34,7 +34,8 @@ A goal's format is:
 > **Goal title** \
 > Description of the goal and how to evaluate whether we met the goal (with a link to an automatically updated metrics dashboard, if appropriate).
 
-1. Each goal has a single person (not multiple people) who's responsible for it.
+1. Each goal has a single person (not multiple people) who's ultimately responsible for it.
+   - Many people can be working toward a goal, but there must be one person who's ultimately responsible.
 1. No person can have more than 5 goals at once. (This number is arbitrary, but it feels right.) Usually fewer is better.
 1. Pick goals where failure would be painful.
 1. Pick goals where you can influence the outcome. Avoid using a lagging indicator as a goal.
