@@ -60,9 +60,11 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
             },
         ].filter(option => option.html)
 
+        console.log('Location', this.props.location)
         const tab = new URLSearchParams(this.props.location.search).get('show')
         let selected: 'notes' | 'summary' | 'transcript' =
             (tab === 'notes' && 'notes') || (tab === 'transcript' && 'transcript') || 'summary'
+        console.log('Selected tab', tab)
 
         return (
             <Layout location={this.props.location} meta={meta} className="darkBackground">
