@@ -64,7 +64,8 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
         const tab = new URLSearchParams(this.props.location.search).get('show')
         let selected: 'notes' | 'summary' | 'transcript' =
             (tab === 'notes' && 'notes') || (tab === 'transcript' && 'transcript') || 'summary'
-        console.log('Selected tab', tab)
+        console.log('tab', tab)
+        console.log('selected', selected)
 
         return (
             <Layout location={this.props.location} meta={meta} className="darkBackground">
@@ -99,17 +100,23 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                     <div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />
                                 )}
                                 <div className="podcast__content-option">
-                                    {options.map(({ tab, name }) => (
-                                        <a
-                                            key={name}
-                                            dangerouslySetInnerHTML={{ __html: name }}
-                                            className={selected === tab ? 'podcast__content-option-selected' : ''}
-                                            href={`?show=${tab}`}
-                                        />
-                                    ))}
+                                    {options.map(({ tab, name }) => {
+                                        console.log('# podcast__content-option', tab, name, selected)
+                                        return (
+                                            <a
+                                                key={name}
+                                                dangerouslySetInnerHTML={{ __html: name }}
+                                                className={selected === tab ? 'podcast__content-option-selected' : ''}
+                                                href={`?show=${tab}`}
+                                            />
+                                        )
+                                    })}
                                 </div>
                                 {options
-                                    .filter(op => op.tab === selected)
+                                    .filter(op => {
+                                        console.log('# op.tab, selected', op.tab, selected)
+                                        return op.tab === selected
+                                    })
                                     .map(({ name, html }) => (
                                         <div
                                             key={name}
