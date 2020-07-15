@@ -1,6 +1,34 @@
 {
   "y2020": [
     {
+      "newsSource": "Devops.com",
+      "newsTitle": "Hiring world-class talent to build Sourcegraph Cloud",
+      "newsDate": "July 15, 2020",
+      "newsLink": "https://devops.com/hiring-world-class-talent-to-build-sourcegraph-cloud/",
+      "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
+      "newsSource": "WSJ Pro",
+      "newsTitle": "Venture Capital Newsletter",
+      "newsDate": "July 15, 2020",
+      "newsLink": "https://venturecapital.createsend1.com/t/ViewEmail/d/8B15B1AD8CDBDF882540EF23F30FEDED",
+      "newsImage": "/external-logos/wsjpro-logo.png"
+    },
+    {
+      "newsSource": "FinSMES",
+      "newsTitle": "Sourcegraph Raises Additional $5M in Series B Funding",
+      "newsDate": "July 15, 2020",
+      "newsLink": "http://www.finsmes.com/2020/07/sourcegraph-raises-additional-5m-in-series-b-funding.html",
+      "newsImage": "/external-logos/finsmes-logo.svg"
+    },
+    {
+      "newsSource": "Fortune",
+      "newsTitle": "Newsletter|Term Sheet Venture Deals",
+      "newsDate": "July 15, 2020",
+      "newsLink": "https://fortune.com/2020/07/15/the-needle-has-barely-moved-on-racism-in-investing-but-this-investor-thinks-this-time-is-different/",
+      "newsImage": "/external-logos/fortune-logo.svg"
+    },
+    {
       "newsSource": "Business Insider",
       "newsTitle": "Code collaboration startup Sourcegraph has raised $28 million",
       "newsDate": "July 14, 2020",
