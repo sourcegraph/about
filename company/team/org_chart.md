@@ -8,8 +8,8 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 	<small>If the org chart does not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
 
-<!-- When updating the engineering team list below, please also update on the handbook root handbook/index.md -->
 ## Engineering
+<!-- When updating the engineering team list below, please also update handbook/index.md. -->
 ### [Engineering: Distribution team](../../handbook/engineering/distribution/index.md#members)
 ### [Engineering: Campaigns team](../../handbook/engineering/campaigns/index.md#members)
 ### [Engineering: Cloud team](../../handbook/engineering/cloud/index.md#members)
