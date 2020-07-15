@@ -68,7 +68,7 @@ async function getPageOrgChart(pageUrl) {
 	return wrapper
 }
 
-const sectionHeaders = Array.from(document.querySelectorAll('h3')).filter(section => Boolean(section.querySelector('a[href]:not([aria-hidden])')))
+const sectionHeaders = Array.from(document.querySelectorAll('h2,h3')).filter(section => Boolean(section.querySelector('a[href]:not([aria-hidden])')))
 Promise.all(
 	sectionHeaders.map(async sectionHeader => ({
 		header: sectionHeader,
