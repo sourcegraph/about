@@ -84,8 +84,8 @@ const ITEMS: {
         url: '/external-logos/criteo-logo.svg',
     },
     {
-        name: 'Collective Health',
-        url: '/external-logos/collective-health-logo.svg',
+        name: 'Paypal',
+        url: '/external-logos/paypal-logo.svg',
     },
     {
         name: 'Convoy',
@@ -95,8 +95,8 @@ const ITEMS: {
         },
     },
     {
-        name: 'Apex Clearing',
-        url: '/external-logos/apex-clearing-logo.png',
+        name: 'Outreach',
+        url: '/external-logos/outreach-logo.svg',
     },
     {
         name: 'Plaid',
@@ -107,8 +107,16 @@ const ITEMS: {
         url: '/external-logos/expanse-logo.svg',
     },
     {
+        name: 'Collective Health',
+        url: '/external-logos/collective-health-logo.svg',
+    },
+    {
         name: 'Button',
         url: '/external-logos/use-button-logo.svg',
+    },
+    {
+        name: 'Apex Clearing',
+        url: '/external-logos/apex-clearing-logo.png',
     },
     {
         name: 'Tinder',
