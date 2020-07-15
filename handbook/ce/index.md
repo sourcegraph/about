@@ -10,6 +10,6 @@ The Customer Engineering team is responsible for ensuring that all of Sourcegrap
 
 # Members
 
-- [Dan Adler](../../company/team#dan-adler-he-him) (CE team manager)
-- [Christine Lovett](../../company/team#christine-lovett-she-her)
+- [Dan Adler](../../company/team/index.md#dan-adler-he-him) (CE team manager)
+- [Christine Lovett](../../company/team/index.md#christine-lovett-she-her)
 - A. H. starting 2020-07-27
