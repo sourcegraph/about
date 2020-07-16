@@ -10,7 +10,7 @@ clients decide to upgrade to the latest release when they want.
 **User Testing** 
 - Hallway test with internal users.
 - Open the feature to internal users by turning it on for the Sourcegraph organization. Make sure it's opened with enough
-time left before planned launch date to receive and address all the feedback received.  Follow this [document](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website) to enable your feature in site settings and turn it on only for internal users in the Sourcegraph organization. TODO: Update doc linked above to add a bit more content for new teammates
+time left before planned launch date to receive and address all the feedback received.  Go to [our Sourcegraph organization settings](https://sourcegraph.com/organizations/sourcegraph/settings) to enable your feature only for internal users in the Sourcegraph organization.
 
 **Design** 
 (skip if it doesn't apply)
@@ -44,4 +44,3 @@ time left before planned launch date to receive and address all the feedback rec
 - Share update with marketing.
 
 ## TODO: Enterprise instances of Sourcegraph.com
-
