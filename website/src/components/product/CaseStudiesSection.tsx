@@ -1,11 +1,13 @@
-import React from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
+import React from 'react'
 
 const CASESTUDIES: {
     name: string
     logo: string
     title: string
     url: string
+    external?: boolean
 }[] = [
     {
         name: 'Convoy',
@@ -32,6 +34,14 @@ const CASESTUDIES: {
         url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
     },
     {
+        name: 'Yelp',
+        logo: '/external-logos/yelp.svg',
+        title: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
+        url:
+            'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html#shipping-code-faster-with-sourcegraph',
+        external: true,
+    },
+    {
         name: 'Thorn',
         logo: '/external-logos/thorn-logo.svg',
         title: 'Thorn deprecates legacy code safely',
@@ -45,17 +55,20 @@ export const CaseStudiesSection: React.FunctionComponent<{ className?: string }>
             {CASESTUDIES.map((study, i) => (
                 <div className="col-lg-4 mb-6">
                     <div key={i} className={`${study.name.replace(' ', '-').toLowerCase()} card`}>
-                        <a href={study.url} className="card-link">
-                            <div className="card-body">
-                                <img
-                                    className="case-studies-section__item-logo "
-                                    src={study.logo}
-                                    alt="Card image cap"
-                                />
-                                <p className="card-text">{study.title}</p>
-                                <ArrowRightIcon className="icon-inline ml-1" />
-                            </div>
-                        </a>
+                        <div className="card-body">
+                            <img className="case-studies-section__item-logo " src={study.logo} alt="Card image cap" />
+                            {study.external ? (
+                                <a href={study.url} className="card-link" target="_blank" rel="nofollow noopener">
+                                    <p className="card-text">{study.title}</p>
+                                    <ExternalLinkIcon className="icon-inline ml-1" />
+                                </a>
+                            ) : (
+                                <a href={study.url} className="card-link">
+                                    <p className="card-text">{study.title}</p>
+                                    <ArrowRightIcon className="icon-inline ml-1" />
+                                </a>
+                            )}
+                        </div>
                     </div>
                 </div>
             ))}
