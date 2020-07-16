@@ -6,7 +6,7 @@ Planning is a continuous process of negotiation between product and engineering.
 
 Planning requires several artifacts for communicating. This section clarifies how each artifact is used in the planning process.
 
-### OKGoals
+### Goals
 
 [Goals](../../company/goals/index.md) align teams with the company's goals. They should be used to make prioritization decisions and help to maintain team direction and focus.
 
