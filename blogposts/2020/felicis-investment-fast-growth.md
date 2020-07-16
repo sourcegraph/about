@@ -10,7 +10,7 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-[Felicis Ventures](https://www.felicis.com/) has invested an additional $5M in Sourcegraph, bringing our total raised to over $46M, including our $23M [Series B](https://about.sourcegraph.com/blog/series-b-universal-code-search) in March 2020. We're seeing rapid growth in the number of companies and developers using Sourcegraph, especially as the pandemic causes dev teams to become temporarily or permanently remote. If you can't tap your colleague on the shoulder to fix or explain something, or absorb context at the watercooler or whiteboard, universal code search becomes even more important.
+[Felicis Ventures](https://www.felicis.com/) has invested an additional $5M in Sourcegraph, bringing our total raised to over $46M, including our $23M [Series B](https://about.sourcegraph.com/blog/series-b-universal-code-search) in March 2020 led by Craft Ventures. We're seeing rapid growth in the number of companies and developers using Sourcegraph, especially as the pandemic causes dev teams to become temporarily or permanently remote. If you can't tap your colleague on the shoulder to fix or explain something, or absorb context at the watercooler or whiteboard, universal code search becomes even more important.
 
 With this momentum and the investment, we're improving Sourcegraph to provide universal code search to every developer:
 
