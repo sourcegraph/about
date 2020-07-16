@@ -59,6 +59,10 @@ In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
     git push origin v$MAJOR.$MINOR.$PATCH
     ```
 
+## Release Docker Compose
+
+- [ ] Release Docker Compose by following [these instructions](https://github.com/sourcegraph/deploy-sourcegraph-docker/blob/master/RELEASING.md)
+
 ## Update the docs
 
 - [ ] Open and merge PRs that publish the release (the PRs created by this command must be merged manually):
