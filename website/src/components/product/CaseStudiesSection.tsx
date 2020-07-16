@@ -10,39 +10,31 @@ const CASESTUDIES: {
     {
         name: 'Convoy',
         logo: '/external-logos/convoy-logo.svg',
-        title: 'Convoy adopts Sourcegraph Universal Code Search to improve developer onboarding',
+        title: 'Convoy improves developer onboarding',
         url: '/case-studies/convoy-improved-on-boarding',
-    },
-    {
-        name: 'Convoy',
-        logo: '/external-logos/convoy-logo.svg',
-        title:
-            'Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together ',
-        url: '/case-studies/convoy-software-engineers-and-data-scientists-work-better-together',
     },
     {
         name: 'Lyft',
         logo: '/external-logos/lyft-logo.svg',
-        title:
-            'Lyft adopts Sourcegraph Universal Code Search to ensure production stability during their monolith to microservices decomposition',
+        title: 'Lyft ensures production stability during monolith to microservices transition',
         url: '/case-studies/lyft-monolith-to-microservices',
     },
     {
         name: 'Quantcast',
         logo: '/external-logos/quantcast-logo.svg',
-        title: 'Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring',
+        title: 'Quantcast accelerates large scale refactoring',
         url: '/case-studies/quantcast-large-scale-refactoring',
     },
     {
         name: 'Sofi',
         logo: '/external-logos/sofi-logo.svg',
-        title: 'SoFi adopts Sourcegraph Universal Code Search to manage hundreds of microservice',
+        title: 'SoFi manages hundreds of microservices',
         url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
     },
     {
         name: 'Thorn',
         logo: '/external-logos/thorn-logo.svg',
-        title: 'Thorn adopts Sourcegraph Universal Code Search to sunset legacy applications safe',
+        title: 'Thorn deprecates legacy code safely',
         url: '/case-studies/we-are-thorn',
     },
 ]
