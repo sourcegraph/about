@@ -148,7 +148,7 @@ RFC or GitHub issue number + RCF or GitHub issue title + stage (Draft, Open to r
 #### Project Tools
 Use [Project Tools](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/Project-Tools?node-id=0%3A1) to provide more information about the project directly in the Figma file. It will help all the visitors connect files to the related RFC or GitHub issue and understand better all the details about the design.
 
-- Project Card - displays basic information about project ex. reviewers, RFC and GitHub issue links, deadlines etc. It should be created for every file.
+- Project Card - displays basic information about the project. For example, reviewers, RFC and GitHub issue links, and deadlines. It should be created for every file.
 
 - Project Introduction - necessary when sharing your prototype with the Team. It should contain details about the target audience and project goals, to provide good context before starting the review.
 
