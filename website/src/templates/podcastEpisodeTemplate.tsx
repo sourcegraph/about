@@ -20,6 +20,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
     }
 
     public componentDidMount(): void {
+        console.log("# existing body", document.getElementsByTagName('body')[0].innerHTML)
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
         }
@@ -101,7 +102,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                 )}
                                 <div className="podcast__content-option">
                                     {options.map(({ tab, name }) => {
-                                        console.log('# podcast__content-option', tab, name, selected)
+                                        console.log('# podcast__content-option', tab, name, selected, selected === tab)
                                         return (
                                             <a
                                                 key={name}
@@ -114,7 +115,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                 </div>
                                 {options
                                     .filter(op => {
-                                        console.log('# op.tab, selected', op.tab, selected)
+                                        console.log('# op.tab, selected', op.tab, selected, op.tab === selected)
                                         return op.tab === selected
                                     })
                                     .map(({ name, html }) => (
