@@ -99,6 +99,7 @@ Cut a new release candidate daily if necessary:
         ```
         VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
         ```
+- [ ] Release Docker Compose by following [these instructions](https://github.com/sourcegraph/deploy-sourcegraph-docker/blob/master/RELEASING.md)
 - [ ] Open (but do not merge) PRs that publish the new release:
   ```
   # Run this in the main sourcegraph repository in the `dev/release` directory on `master` branch:
