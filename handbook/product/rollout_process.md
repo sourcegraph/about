@@ -33,7 +33,7 @@ time left before planned launch date to receive and address all the feedback rec
 
 ### Deployment
 **Push to Sourcegraph.com**
-- Follow this [document](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website) to enable your feature in global settings and to push it to all users on Sourcegraph.com.
+- Follow the steps in this [document](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website) to enable your feature in global settings and to push it to all users on Sourcegraph.com.
 - In the PR that pushes changes live, add everyone who gave appproval for launch as reviewers.
 
 **Metrics**
