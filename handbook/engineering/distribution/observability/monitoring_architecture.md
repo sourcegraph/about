@@ -6,4 +6,6 @@
 
 This document describes the architecture of Sourcegraph's monitoring stack, and the technical decisions we have made to date and why.
 
+![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/monitoring-architecture.png)
+
 TODO: robert
