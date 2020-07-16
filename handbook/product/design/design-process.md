@@ -135,7 +135,7 @@ While asynchronous communication is a core attribute of remote work, key moments
 ## Working with design files
 To provide consistency in design files handling, follow the rules listed below.
 
-#### File location
+### File location
 All files should be created under the Sourcegraph organization in Figma. It is important to not work on Sourcegraph projects in the private files as designs should be accessible to all Team Members.
 
 #### Naming convention
