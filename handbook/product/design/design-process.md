@@ -16,7 +16,7 @@ While asynchronous communication is a core attribute of remote work, key moments
 
 ## Process segments
 
-- **Ideation**
+### Ideation
   - This is generally represented by a kickoff meeting with interested parties. Kickoff meetings should generally include representatives of the following parties:
       - The product manager
       - Developers working on the project
@@ -157,4 +157,3 @@ Use [Project Tools](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/Project-To
 #### File structure
 Pages are a great way to divide the content into smaller chunks and lower the complexity of your design files. You can use them to group work from different stages of the project or categorize deliverables. Try to place your latest designs on the Pages at the top of the list.
  
-
