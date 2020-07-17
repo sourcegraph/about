@@ -156,5 +156,14 @@ Use [Project Tools](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/Project-To
 - Final Page - placed at the end of the prototype. It shows additional notes on the solution, points out the most important pages in the prototype and describes what feedback the designer is looking for. It also instructs reviewers on how to leave comments.
 
 #### File structure
-Pages are a great way to divide the content into smaller chunks and lower the complexity of your design files. You can use them to group work from different stages of the project or categorize deliverables. Try to place your latest designs on the Pages at the top of the list.
- 
+Pages are a great way to divide the content into smaller chunks and lower the complexity of your design files. Use the following file structure to help teammates quickly orient in your designs.
+
+Divide work into the following pages:
+
+- Research
+- Flowcharts
+- Wireframes
+- Visual Design
+- Archives
+
+Use only pages that are necessary for your file. Tasks within the linked issue should be updated with links to each of the corresponding pages.
