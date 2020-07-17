@@ -346,7 +346,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer Intern
 - Pittsburgh, PA, USA 🇺🇸
-- [mimi@sourcegraph.com](mailto:mimi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mimi-st-johns-1208521b1/), [Github](https://github.com/RedHeadedStranger99)
+- [mimi@sourcegraph.com](mailto:mimi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mimi-st-johns-1208521b1/), [GitHub](https://github.com/RedHeadedStranger99)
 - Mimi recently finished her first year at Stanford; she is studying computer science. In her free time, she enjoys playing the guitar, writing, chess, and Magic: The Gathering.  
 
 <!-- Paste *your* section above this line by following our template below:
