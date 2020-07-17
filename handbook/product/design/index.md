@@ -14,18 +14,6 @@ Here are a few of the things we strive to make true:
 
 - #design channel or @design-team on Slack
 
-## Members
-
-- [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
-- [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
-- [Q. K.](../../../company/team/index.md#todo)
-
-## Hiring status
-
-_Updated 2020-07-13_
-
-We are not actively hiring for additional designers at this time.
-
 ## Lean UX design and velocity
 
 Sourcegraph ships. It has achieved product-market fit by hiring customer-focused employees, being truly agile in how it designs and develops features and by putting product in user’s hands and collecting feedback and usage metrics.

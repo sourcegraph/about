@@ -31,32 +31,23 @@ Each PD has a status that is in the title of the PD (e.g. "PD 1 WIP: Title"). Th
 
 Effective PDs contain the following information. The below might feel like a heavy structure, this is intentional to help ensure all important considerations and context has been written down. Many sub-sections are very short, and some can be omitted if not relevant to the specific PD.
 
-_For convenience, there is a [Google Docs Template](https://docs.google.com/document/d/1MBZxnRlDG69Fyvzpai5rBqxizvX5zVeZiUe6z7VZrjk/edit?usp=sharing) that can be used when creating new PDs. The template format should help clarify the below structure._
+The [Google Docs Template](https://docs.google.com/document/d/1MBZxnRlDG69Fyvzpai5rBqxizvX5zVeZiUe6z7VZrjk/edit?usp=sharing) is the source of truth and defines each section that should be included in a product document and should be used when creating new PDs. This is maintained within the template to avoid duplication.
 
-- Title that includes the PD number.
+At a high level, this is why the following sections are important:
+
+- **Title** that includes the PD number.
   - The title is inlined in the Google Doc so that it is more visible and will not disappear if exported to a different format.
-- Metadata about the state of the PD. Including but not limited to:
+- **Metadata** about the state of the PD. Including but not limited to:
   - **Editor:** The person responsible for iterating on the content of the PD.
+  - **Owners:** The single owner from each of Product, Engineering, and Design who is accountable for this PD.
   - **Status:** A description of the current state or outcome of the PD.
   - **Requested approvers:** The list of people that the PD author is requesting a review from and a requested deadline for those reviews.
-  - **Approved by:** A list of people who approve the problem statement defined in the PD.
-- **Purpose:** All of the information needed to communicate why this problem statement is important.
-  - **Background:** Background or historical information that is relevant and helpful for understanding the problem context.
-  - **Target audience:** Who cares about this problem, what customers are impacted, what persona is this solution for?
-  - **Problem to solve:** Describe the problem that needs to be solved. This is the central section to the entire document, everything else is written in support of this problem statement.
-  - **Business and user value:** Why is solving this problem important to the business? Why do we need to solve it now? How does solving this problem help the user?
-  - **Outcomes:** What will the outcome of the solution be? What metric(s) will you track to validate these outcomes?
-- **Scope:** What are the different ways in which we are scoping down this problem?
-  - **Assumptions:** What assumptions are being made, and how will we validate those assumptions? What hypotheses do we need to validate?
-  - **Constraints:** Are there any constraints this problem needs to be solved within? Are there constraints that can be put in place to help reduce scope?
-  - **Dependencies:** Are there any other projects or dependencies for this project?
-  - **Timing/appetite:** When does this need to be delivered by? What is the urgency? Are there any hard deadlines? What is our appetite for implementation?
-- **Discovery:** What are the many solutions to this problem? How can we quickly validate the solutions we think are best? The goal should be to fail fast and iterate until a viable solution is found. Be cautious not to get stuck in a single solution. How do we validate the solution is viable?
-  - List of Analogous experiences
-  - List of ideas to explore
-  - Links to RFCs
-- **Design:** Describe the interaction and user experience of the feature.
-- **Analytics:** What data point are we looking to move the needle on? What will constitute success for this metric? Describe or create a mock chart or table you’d like to look at to evaluate this. Is this being tracked currently or will additional tracking need to be included in the development?
+  - **Approved by:** A list of people who agree that the problem statement as defined in the PD is valid, and that there is enough context to begin solving the problem (note that they do not _actually_ need to start work).
+- **Purpose:** Where the who, what, when, why are defined for the product document. This is the foundation for all other sections.
+- **Scope:** To help reduce the complexity of a problem, or to make sure particular constraints are fulfilled, we define the scope and appetite we have for solving this problem.
+- **Discovery:** We want to quickly iterate and ideate about this problem. This is where we keep track of all of those ideas in addition to the particular solutions we have implemented or are currently implementing.
+- **Design:** Links to design work and user research, as well as user experience notes to consider.
+- **Analytics:** How we are going to validate that this problem has been solved and that it is adding value to users.
 
 ## How are PDs different from RFCs?
 

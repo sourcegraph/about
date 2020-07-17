@@ -12,21 +12,6 @@ The Product team strives to make the following true:
 
 - #product channel or @product-team on Slack
 
-## Members
-
-- [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-- [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
-  
-## Hiring status
-
-_Updated 2020-07-13_
-
-We are hiring for these roles:
-
-- +4 [Product Manager](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
-
-See [2021 Organizational plan](../../engineering/2021_org.md) for more details on areas of ownership.
-
 ## Product process
 
 See [product process](product_process.md)
