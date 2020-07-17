@@ -149,7 +149,8 @@ While asynchronous communication is a core attribute of remote work, key moments
 
 ### Final review of implementation
 
-- Test the feature for both themes, Light and Dark. Check for icon consistency across themes.
+- Test the feature for both themes, Light and Dark. 
+- Review icon consistency and contrast across themes.
 - Test on small, medium, large and extra-large screen sizes.
   - Small screens are important to consider for a good experience when the window is resized or in side-by-side mode.
 - Code examples in design
