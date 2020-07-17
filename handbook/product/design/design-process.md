@@ -139,11 +139,12 @@ To provide consistency in design files handling, follow the rules listed below.
 All files should be created under the Sourcegraph organization in Figma. It is important to not work on Sourcegraph projects in the private files as designs should be accessible to all Team Members.
 
 #### Naming convention
-- All the files containing current project work must follow this naming structure:
 
-RFC or GitHub issue number + RCF or GitHub issue title + stage (Draft, Open to review, Final review or Approved).
+All the files containing current project work must follow this naming structure:
 
-- Keep the stage updated as you progress with your work. 
+> RFC or GitHub issue number + RFC or GitHub issue title + stage (Draft, Open to review, Final review or Approved).
+
+Keep the stage updated as you progress with your work. 
 
 #### Project Tools
 Use [Project Tools](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/Project-Tools?node-id=0%3A1) to provide more information about the project directly in the Figma file. It will help all the visitors connect files to the related RFC or GitHub issue and understand better all the details about the design.
