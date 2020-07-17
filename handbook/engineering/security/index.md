@@ -18,6 +18,10 @@ Make Sourcegraph secure by design.
 - [Respond to security vulnerability reports](#how-we-respond-to-security-vulnerability-reports)
 - Investigate, respond to, and resolve vulnerabilities.
     - https://github.com/sourcegraph/security-issues
+    
+## Roadmap
+
+Please see [this document](https://docs.google.com/document/d/1HhYfnkC17yCPqqw91H1QAF7q8toOOiNtoOOw06hqrNQ/)
 
 ## How to report a security vulnerability
 
@@ -48,3 +52,8 @@ When we receive [a report of a security vulnerability](#how-to-report-a-security
   > Thank you for your report. Could you please provide us with $INFOX, $INFOY, and $INFOZ so we can investigate this further? 
 
   > Thank you for your report. We will not be taking further action on this report because $REASONS.
+
+## Members
+
+- [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([engineering manager](../roles.md#engineering-manager)).
+- [E. S.](../../../company/team/index.md#todo) starting 2020-07-20.
