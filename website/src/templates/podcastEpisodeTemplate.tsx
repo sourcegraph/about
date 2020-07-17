@@ -20,7 +20,6 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
     }
 
     public componentDidMount(): void {
-        console.log("# existing body", document.getElementsByTagName('body')[0].innerHTML)
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
         }
@@ -61,12 +60,17 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
             },
         ].filter(option => option.html)
 
-        console.log('Location', this.props.location)
-        const tab = new URLSearchParams(this.props.location.search).get('show')
-        let selected: 'notes' | 'summary' | 'transcript' =
-            (tab === 'notes' && 'notes') || (tab === 'transcript' && 'transcript') || 'summary'
-        console.log('tab', tab)
-        console.log('selected', selected)
+
+        // In order to work with Gatsby React rehydration, these URLs need to be distinct paths and map to the ones defined in gatsby-node.js
+        let selected: 'notes' | 'summary' | 'transcript' = this.props.pageContext?.showTab || 'summary'
+        const path = this.props.location.pathname
+        if (path) {
+            if (path.endsWith('/notes')) {
+                selected = 'notes'
+            } else if (path.endsWith('/transcript')) {
+                selected = 'transcript'
+            }
+        }
 
         return (
             <Layout location={this.props.location} meta={meta} className="darkBackground">
@@ -102,22 +106,19 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                 )}
                                 <div className="podcast__content-option">
                                     {options.map(({ tab, name }) => {
-                                        console.log('# podcast__content-option', tab, name, selected, selected === tab)
+                                        const url = tab === 'summary' ? `/podcast/${slug}` : `/podcast/${slug}/${tab}`
                                         return (
                                             <a
                                                 key={name}
                                                 dangerouslySetInnerHTML={{ __html: name }}
                                                 className={selected === tab ? 'podcast__content-option-selected' : ''}
-                                                href={`?show=${tab}`}
+                                                href={url}
                                             />
                                         )
                                     })}
                                 </div>
                                 {options
-                                    .filter(op => {
-                                        console.log('# op.tab, selected', op.tab, selected, op.tab === selected)
-                                        return op.tab === selected
-                                    })
+                                    .filter(op => op.tab === selected)
                                     .map(({ name, html }) => (
                                         <div
                                             key={name}
