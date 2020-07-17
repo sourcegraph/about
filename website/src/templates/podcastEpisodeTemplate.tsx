@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { CaseStudyRequestDemoForm } from '../components/content/CaseStudyPage'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
@@ -10,7 +10,7 @@ import { getHTMLParts, subscriptionLinks } from '../pages/podcast'
 
 interface Option {
     name: string
-    hash: string
+    tab: string
     html?: string
 }
 
@@ -20,6 +20,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
     }
 
     public componentDidMount(): void {
+        console.log("# existing body", document.getElementsByTagName('body')[0].innerHTML)
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
         }
@@ -45,24 +46,27 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
         const options: Option[] = [
             {
                 name: 'Summary',
-                hash: 'summary',
+                tab: 'summary',
                 html: summaryHTML,
             },
             {
                 name: 'Show&nbsp;notes',
-                hash: 'showNotes',
+                tab: 'notes',
                 html: showNotesHTML,
             },
             {
                 name: 'Transcript',
-                hash: 'transcript',
+                tab: 'transcript',
                 html: transcriptHTML,
             },
         ].filter(option => option.html)
 
-        const hash = this.props.location.hash
-        let selected: 'showNotes' | 'summary' | 'transcript' =
-            (hash === '#showNotes' && 'showNotes') || (hash === '#transcript' && 'transcript') || 'summary'
+        console.log('Location', this.props.location)
+        const tab = new URLSearchParams(this.props.location.search).get('show')
+        let selected: 'notes' | 'summary' | 'transcript' =
+            (tab === 'notes' && 'notes') || (tab === 'transcript' && 'transcript') || 'summary'
+        console.log('tab', tab)
+        console.log('selected', selected)
 
         return (
             <Layout location={this.props.location} meta={meta} className="darkBackground">
@@ -97,17 +101,23 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                     <div dangerouslySetInnerHTML={{ __html: audioHTML }} className="podcast__player" />
                                 )}
                                 <div className="podcast__content-option">
-                                    {options.map(({ hash, name }) => (
-                                        <a
-                                            key={name}
-                                            dangerouslySetInnerHTML={{ __html: name }}
-                                            className={selected === hash ? 'podcast__content-option-selected' : ''}
-                                            href={`#${hash}`}
-                                        />
-                                    ))}
+                                    {options.map(({ tab, name }) => {
+                                        console.log('# podcast__content-option', tab, name, selected, selected === tab)
+                                        return (
+                                            <a
+                                                key={name}
+                                                dangerouslySetInnerHTML={{ __html: name }}
+                                                className={selected === tab ? 'podcast__content-option-selected' : ''}
+                                                href={`?show=${tab}`}
+                                            />
+                                        )
+                                    })}
                                 </div>
                                 {options
-                                    .filter(op => op.hash === selected)
+                                    .filter(op => {
+                                        console.log('# op.tab, selected', op.tab, selected, op.tab === selected)
+                                        return op.tab === selected
+                                    })
                                     .map(({ name, html }) => (
                                         <div
                                             key={name}

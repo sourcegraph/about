@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import '../css/styles.scss'
 import { Footer } from './Footer'
 import Header from './Header'
@@ -26,9 +26,8 @@ interface LayoutProps {
 export default class Layout extends React.PureComponent<LayoutProps> {
     public render(): JSX.Element | null {
         const defaultMetaProps: LayoutProps['meta'] = {
-            title: 'Sourcegraph - Code search and intelligence',
-            description:
-                'Sourcegraph is a free, self-hosted code search and intelligence server that helps developers find, review, understand, and debug code. Use it with any Git code host for teams from 1 to 10,000+.',
+            title: 'Sourcegraph - Universal Code Search',
+            description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
             image: 'https://about.sourcegraph.com/sourcegraph-mark.png',
             icon: 'https://about.sourcegraph.com/favicon.png',
         }

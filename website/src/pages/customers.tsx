@@ -2,118 +2,11 @@ import { Link } from 'gatsby'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
 import { TrySourcegraph } from '../components/TrySourcegraph'
-
-const testimonials: Testimonial[] = [
-    {
-        customer: 'Lyft',
-        logo: '/external-logos/lyft-logo.svg',
-        quote:
-            'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition.',
-        author: {
-            name: 'Justin Phillips',
-            title: 'Software Engineer',
-            image: '/case-studies/justin-phillips-lyft.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/lyft-monolith-to-microservices',
-        },
-    },
-    {
-        customer: 'Yelp',
-        logo: '/external-logos/yelp.svg',
-        quote: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
-        author: {
-            name: 'Kevin Chen',
-            title: 'Software Engineer',
-            image: '/case-studies/kevin-chen-yelp.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
-            target: '_blank',
-            rel: 'nofollow',
-        },
-    },
-    {
-        customer: 'SoFi',
-        logo: '/external-logos/sofi-logo-white.png',
-        quote:
-            'With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
-        author: {
-            name: 'Ursula Robertson',
-            title: 'Engineering Manager',
-            image: '/case-studies/ursula-robertson-sofi.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
-        },
-    },
-    {
-        customer: 'Quantcast',
-        logo: '/external-logos/quantcast-logo-white.svg',
-        quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
-        author: {
-            name: 'Simon Law',
-            title: 'Staff Software Engineer',
-            image: '/case-studies/simon-law-quantcast.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/quantcast-large-scale-refactoring',
-        },
-    },
-    {
-        customer: 'Convoy',
-        logo: '/external-logos/convoy-logo-white.svg',
-        quote:
-            'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
-        author: {
-            name: 'Brandon Bloom',
-            title: 'Senior Software Engineer',
-            image: '/case-studies/brandon-bloom-convoy.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/convoy-improved-on-boarding',
-        },
-    },
-    {
-        customer: 'Thorn',
-        logo: '/case-studies/thorn-logo.png',
-        quote:
-            'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
-        author: {
-            name: 'Jacob Gillespie',
-            title: 'Software Engineer',
-            image: '/case-studies/jacob-gillespie-thorn-square.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/we-are-thorn',
-        },
-    },
-    {
-        customer: 'Convoy',
-        logo: '/external-logos/convoy-logo-white.svg',
-        quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
-        author: {
-            name: 'Owen Kim',
-            title: 'Senior Software Engineer',
-            image: '/case-studies/owen-kim-convoy.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/convoy-software-engineers-and-data-scientists-work-better-together',
-        },
-    },
-]
 
 const title = 'Sourcegraph - Customers'
 const desc =

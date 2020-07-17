@@ -29,6 +29,12 @@ Here's the process for getting a change published to the handbook. For detailed 
 
 ## Reviewing and approving another person's proposal
 
+Frequently used links:
+
+- [All proposed (and not yet merged) handbook changes](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
+- [Proposed handbook changes waiting on review by you](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+review-requested%3A%40me)
+- [Proposed handbook changes submitted by you](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+author%3A%40me)
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Q8tUXKU66Sk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Edit a single file
@@ -94,7 +100,11 @@ Optional:
 1. Press the **Create Pull Request** button.
 1. On the pull request page in your web browser, select reviewers and wait for reviews/approvals, then merge to make the changes live.
 
-#### Running a local preview handbook site
+## Uploading large files
+
+If you want to upload a large file (such as a large image, video, or audio recording) and make it available in the handbook, upload the file to Google Drive and then get a shareable link to the file on Google Drive. Add that link to the handbook. Don't add large files to the handbook repository itself (because Git is not a good way to store large non-text files).
+
+## Running a local preview handbook site
 
 > NOTE: This is optional.
 

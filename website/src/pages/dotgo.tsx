@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 
 export default class Pricing extends React.Component<any, any> {

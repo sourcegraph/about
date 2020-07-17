@@ -2,26 +2,35 @@
 
 Welcome to Sourcegraph! As a member of the product team, it is your job to be the voice of the user, and to balance that with the goals of the company.
 
-## Checklist
+## Manager checklist
 
-- [ ] Get to know our team and learn about Sourcegraph (company and product)
-- [ ] Finish [general onboarding tasks](../../people-ops/onboarding/index.md#for-all-new-teammates)
-  - [ ] Set up your email filters, especially for GitHub and feedback
+- Grant access to necessary services.
+  - [Sourcegraph organization on GitHub](https://github.com/orgs/sourcegraph/people)
+  - Invite to GitHub teams, including [@sourcegraph/everyone](https://github.com/orgs/sourcegraph/teams/everyone)
+  - Figma
+  - Productboard
+  - UserTesting.com
+- Schedule a recurring [1-1](../../leadership/1-1.md).
+
+## Product team member checklist
+
+- Get to know our team and learn about Sourcegraph (company and product)
+- Finish [general onboarding tasks](../../people-ops/onboarding/index.md#for-all-new-teammates)
+  - Set up your email filters, especially for GitHub and feedback
 - Get to know the product
-  - [ ] Complete of the [Engineering onboarding tasks](../../engineering/onboarding/index.md). Almost all of these are relevant to you.
+  - Complete of the [Engineering onboarding tasks](../../engineering/onboarding/index.md). Almost all of these are relevant to you.
     - You will need to run Sourcegraph locally to test/validate work that engineering is doing, to provide early/often feedback.
-  - [ ] Review [product resources](../index.md#resources)
-  - [ ] [Products](https://about.sourcegraph.com/product)
+  - Review [product resources](../index.md#resources)
+  - [Products](https://about.sourcegraph.com/product)
 - Get to know our customers
-  - [ ] Reach out to the Sales/CE teams and ask to be added to as many customer calls as you can this week.
+  - Reach out to the Sales/CE teams and ask to be added to as many customer calls as you can this week.
   - Feedback
-    - [ ] [HubSpot](https://app.hubspot.com/forms/2762526/a86bbac5-576d-4ca0-86c1-0c60837c3eab/submissions)
-    - [ ] [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)
+    - [HubSpot](https://app.hubspot.com/forms/2762526/a86bbac5-576d-4ca0-86c1-0c60837c3eab/submissions)
+    - [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)
 - Understand our goals
-  - [ ] [Sourcegraph master plan](../../../company/strategy.md)
-  - [ ] [Sourcegraph direction (1 year plan)](../../../direction/index.md)
-  - [ ] [OKRs](../../../company/okrs/index.md)
-
+  - [Sourcegraph master plan](../../../company/strategy.md)
+  - [Sourcegraph direction (1 year plan)](../../../direction/index.md)
+  - [OKRs](../../../company/okrs/index.md)
 
 ## Product designer onboarding
 
@@ -34,20 +43,22 @@ You'll find we have a strong base to work from, but we are in the early stages o
     - Download [Figma](https://www.figma.com)
     - Set nudge to 8px in preferences > nudge amount
     - Install Figma plugins:
-      - [Data lab](https://www.figma.com/community/plugin/740286071386014712/Data-Lab) - populates layers with data. This helps us provide more accurate designs and avoid tedious text generation
-          - [Data for design](https://drive.google.com/drive/folders/1Xw7t1rIWRTg3cJ1_v-A40FGKCLE9m9Pg?usp=sharing)
+       - [Data lab](https://www.figma.com/community/plugin/740286071386014712/Data-Lab) - populates layers with data. This helps us provide more accurate designs and avoid tedious text generation
+       - [Data for design](https://drive.google.com/drive/folders/1Xw7t1rIWRTg3cJ1_v-A40FGKCLE9m9Pg?usp=sharing)
        - [Lorem Ipsum](https://www.figma.com/community/plugin/736000994034548392/Lorem-ipsum) - simple text generator
+       - [A11y - Color Contrast Checker](https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker) - handy tool to check if your designs meet accessibility standards
        - Suggest plugins to help make us more efficent!
      - Install the font SF PRO, which can be found in the [drive type folder](https://drive.google.com/drive/folders/15NibaPYH4F0L_isvKHsYTFpwquv6DnRs)
      - Review the [component library](https://www.figma.com/file/BkY8Ak997QauG0Iu2EqArv/Sourcegraph-Components?node-id=0%3A1&viewport=4848%2C895%2C0.5811631679534912)
      - Review the [style guide](https://www.figma.com/file/Y4JDvoFnCmY1JIQIWdiOJh/styleguide__components?node-id=0%3A1&viewport=153%2C791%2C0.0701417475938797) which we are transitioning to the component library
+    - Review the [Project Tools](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/Project-Tools?node-id=0%3A1)
     - Take a moment to add some inspiring design to a Figma styleboard
    - UserTesting.com
      - Get a tour of UserTesting.com
       - Review a few [usability studies](https://drive.google.com/drive/folders/1qZEWiKSXIvtF8oEp5jGeUQdFcjd2KtVy?usp=sharing) to get an idea of how you will use the product
       - As you learn the product, create a GitHub issue proposiing a usability study you would like to conduct and tag it with 'UX'
     - Suggest a tool you love on Slack in #design!
-- Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies) 
+- Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies)
   - You'll use this environment to review the UX of builds and to gain access to unreleased features 
   - Storybook houses our React component library
     - From the root of your local environment run storybook: `yarn storybook` to see how our designs transformed into React components

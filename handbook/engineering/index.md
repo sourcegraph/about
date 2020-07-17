@@ -26,7 +26,6 @@
 - [Adding and debugging ping data](adding_ping_data.md)
 - [Adding buildkite secrets](adding_buildkite_secrets.md)
 - [External contributions](external_contributions.md)
-- [2021 Organizational Plan](2021_org.md)
 
 ## Ownership of technical decisions
 
@@ -54,19 +53,11 @@ In any case, you should report the results of your work in [progress updates](tr
 
 ## Teams
 
-Our engineering organization is divided into mission based teams that contain the necessary cross-functional skillsets to achieve the desired mission.
+[**List of engineering teams**](../../company/team/org_chart.md#engineering)
 
-<!-- When updating the engineering team list below, please also update on the handbook root handbook/index.md -->
+Our engineering organization is divided into mission based teams that contain the necessary cross-functional skillsets to achieve the desired mission. The leader of each team is responsible for ensuring appropriate cross-team collaboration happens when shared infrastructure needs to change.
 
-- [Distribution](distribution/index.md)
-- [Campaigns](campaigns/index.md)
-- [Cloud](cloud/index.md)
-- [Code intelligence](code-intelligence/index.md)
-- [Search](search/index.md)
-- [Security](security/index.md)
-- [Web](web/index.md)
-
-The leader of each team is responsible for ensuring appropriate cross-team collaboration happens when shared infrastructure needs to change.
+[2021 Organizational Plan](2021_org.md)
 
 ### Transferring teams
 
