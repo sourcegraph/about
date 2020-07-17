@@ -31,4 +31,4 @@ Here is a rough outline that we will be iterating on, and we can customize per c
 
 ## Software engineers
 
-https://github.com/sourcegraph/interviews/tree/master/engineering/software-engineer
+[Private documentation](https://github.com/sourcegraph/interviews/tree/master/engineering/software-engineer).
