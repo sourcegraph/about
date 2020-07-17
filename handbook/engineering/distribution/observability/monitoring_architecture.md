@@ -95,6 +95,10 @@ The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker
   * Most notably, this includes [configuring notifiers and silences](https://docs.sourcegraph.com/admin/observability/alerting) for Sourcegraph alerts
 * Exposes [endpoints for configuration issues, alerts summary statuses, and reverse-proxies Prometheus and Alertmanager](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+PathPrefix%28:%5Bpath%5D%29.Handler%28:%5Bhandler%5D%29&patternType=structural)
 
+## Custom additions
+
+TODO: how we handle out-of-band metrics, alerts (things we don't ship to customers)
+
 ## Sourcegraph Cloud
 
 This section describes how our monitoring stack is used in Sourcegraph Cloud and what customizations we have made.
@@ -104,10 +108,6 @@ This section describes how our monitoring stack is used in Sourcegraph Cloud and
 Notifiers for alerts are configured via the [`deploy-sourcegraph-dot-com` frontend ConfigMap for `site.json`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/base/frontend/sourcegraph-frontend.ConfigMap.yaml#L5188-L5274).
 
 Alerts go to the [`#alerts`](https://sourcegraph.slack.com/archives/CSCFMFXS5)channel, with critical alerts going to [OpsGenie](https://about.sourcegraph.com/handbook/engineering/on_call).
-
-### Custom additions
-
-TODO: how we handle custom metrics, alerts (things we don't ship to customers)
 
 ### Blackbox exporter
 
