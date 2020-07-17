@@ -86,13 +86,13 @@ Alertmanager is bundled in `sourcegraph/prometheus`, and notifications are confi
 
 *Rationale for silencing in site configuration*: Similar to the [Grafana admin reverse-proxy](#admin-reverse-proxy), silencing using the Alertmanager UI would require port-forwarding, something we [want to avoid](monitoring_pillars.md#long-term-vision).
 
-##### prom-wrapper
+#### prom-wrapper
 
 The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/prometheus/cmd/prom-wrapper) is the entrypoint program for `sourcegraph/prometheus` and it:
 
 * Handles starting up Prometheus and Alertmanager
 * Applies updates to site configuration by [generating a diff and applying changes](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+type:symbol+Change+OR+Diff&patternType=literal)
-  * Most notably, this includes [configuring notifiers and silences](https://docs.sourcegraph.com/admin/observability/alerting) for Sourcegraph alerts
+  * Most notably, this includes [configuring notifiers and silences](#alert-notifications) for Sourcegraph alerts
 * Exposes [endpoints for configuration issues, alerts summary statuses, and reverse-proxies Prometheus and Alertmanager](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+PathPrefix%28:%5Bpath%5D%29.Handler%28:%5Bhandler%5D%29&patternType=structural)
 
 ## Custom additions
