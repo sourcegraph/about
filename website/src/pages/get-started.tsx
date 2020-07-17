@@ -75,7 +75,7 @@ export default class GetStarted extends React.Component<any, any> {
                                     Docs <ExternalLinkIcon className="icon-inline ml-1 small" />{' '}
                                 </Link>{' '}
                                 <Link className="btn btn-sm btn-outline-primary mb-2" to="/contact/request-info">
-                                    Request time with a Sourcegraph engineer
+                                    Schedule time with a Sourcegraph engineer
                                 </Link>
                             </div>
                         </div>
