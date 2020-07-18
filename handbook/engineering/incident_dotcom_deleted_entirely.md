@@ -7,13 +7,13 @@
     - Do the disks for the now-deleted cluster nodes still exist? Check by navigating to [Compute -> Disks](https://console.cloud.google.com/compute/disks?project=sourcegraph-dev) and searching for `pgsql-prod---cloud` (
       - Yes, the disks still exist: Go to **Recreating GKE cluster** and follow the **with existing disks** steps.
       - No, the disks are gone: Go to **Recreating GKE cluster** and follow the **from snapshots** steps.
-  - Yes, the dot-com cluster exists: Go to **Recreating Kubernetes objects**
+  - Yes, the cloud cluster exists: Go to **Recreating Kubernetes objects**
 
 ## Recreating GKE cluster
 
 We use Terraform to manage our deployments
 
-1. [Navigate to the `cloud` repo on the ](https://github.com/sourcegraph/infrastructure/tree/master/cloud)
+1. [Navigate to the `cloud` repo](https://github.com/sourcegraph/infrastructure/tree/master/cloud)
 
 2. Follow the instructions there to run `terraform plan` to see if the infrastructure has drifted from what is specified there.
 
