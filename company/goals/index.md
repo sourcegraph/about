@@ -36,13 +36,12 @@ A goal's format is:
 
 1. Each goal has a single person (not multiple people) who's ultimately responsible for it.
    - Many people can be working toward a goal, but there must be one person who's ultimately responsible.
-1. No person can have more than 7 goals at once. (This number is arbitrary, but it feels right.) Fewer is better.
+1. No person can have more than 5 goals at once. (This number is arbitrary, but it feels right.) Fewer is better.
 1. Pick goals where failure would be painful.
 1. Pick goals where you can influence the outcome. Avoid using a lagging indicator as a goal.
 1. For a new project, it can be hard to define the right goal and measurement. Do your best. Then refine the goal as you learn more.
 1. Set goals to be ambitious but achievable, so that they convey your aims and what you could achieve if things go well.
-   - In (rough) numeric terms, if you achieve less than 70% of your goal, it was probably not achievable. If you regularly achieve 100%+ of your goals, they are probably not ambitious enough.
-   - Your goals are **not** the 99.99% likelihood outcome or the 1% moonshot outcome.
+   - Goals are **not** the 99.99% likelihood outcome or the 1% moonshot outcome.
 1. Goals are for communication and alignment (everyone knowing what's important, why, and how it'll get done), **not** for estimation, scheduling, or promising/committing.
    - Setting a goal for _X_ is not the same as _committing_ to shipping _X_ to customers. We are much more conservative in setting expectations with customers about firm ship dates than we are in setting goals.
    - Write your goals so they communicate effectively to an audience who understands that goals aren't promises. Don't write goals so cautiously that they are hard to understand. (For example, "Improve code intelligence support for Java" is a good goal, especially with well defined outcomes. But "Investigate feasibility of improvements to Java code intelligence" is probably bad.)
