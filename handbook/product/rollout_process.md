@@ -1,8 +1,6 @@
 # Feature rollout process
 
-The rollout process consists of *Pre-Launch* phase and *Deployment* phase. We can push changes to Sourcegraph.com when we
-want as we own the deployment process. For enterprise instances of Sourcegraph.com, we push a new release monthly and our
-clients decide to upgrade to the latest release when they want.
+Features come in many different sizes and shapes, and the process for introducing new functionality ranges with these differences. For large or significantly impactful changes or changes that simply need a bit more time to bake, it is encouraged that the following rollout process is followed.
 
 ## Sourcegraph Cloud
 
