@@ -1,5 +1,5 @@
 ---
-title: "How we made code navigation twice as fast in Sourcegraph 3.17"
+title: "A technical deep dive into how we made code navigation twice as fast"
 description: Read about how we used a memory and CPU profiler, creative thinking, and a lot of developer elbow grease to optimize our semantic code indexing system to give users twice-as-fast tooltips, go-to-definition, and references.
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
