@@ -25,13 +25,13 @@ Sourcegraph Cloud is continuously deployed with all new updates to master. We ma
    - Track and ensure high priority bugs in GitHub issues. Ensure they are closed before launch.
    - Track all lower priority bugs that have to be fixed soon.
 
-### Deployment
-**Push to Sourcegraph.com**
-- Follow the steps in this [document](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website) to enable your feature in global settings and to push it to all users on Sourcegraph.com.
-- In the PR that pushes changes live, add everyone who gave appproval for launch as reviewers.
+### Launch
 
-**Metrics**
-- Share analytics for monitoring the feature shipped. Track metrics for regressions. 
+1. **Enable for all to Sourcegraph Cloud users**
+   - Follow the steps in this [document](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website) to enable your feature in global settings and to push it to all users on Sourcegraph.com.
+   - In the PR that pushes changes live, add everyone who gave appproval for launch as reviewers.
+1. **Metrics**
+   - Share analytics for monitoring the feature shipped. Track metrics for regressions. 
 
 ### Post-Launch
 
