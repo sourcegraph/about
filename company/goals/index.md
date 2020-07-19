@@ -39,7 +39,7 @@ A goal's format is:
 1. No person can have more than 5 goals at once. (This number is arbitrary, but it feels right.) Fewer is better.
 1. Pick goals where failure would be painful.
 1. Pick goals where you can influence the outcome. Avoid using a lagging indicator as a goal.
-1. For a new project, it can be hard to define the right goal and measurement. Do your best. Then refine the goal as you learn more.
+1. For a new project, it can be hard to define the right goal and measurement. Do your best. (You can just list some metrics to track if you don't know what numeric target to set yet.) Then refine the goal as you learn more.
 1. Set goals to be ambitious but achievable, so that they convey your aims and what you could achieve if things go well.
    - Goals are **not** the 99.99% likelihood outcome or the 1% moonshot outcome.
 1. Goals are for communication and alignment (everyone knowing what's important, why, and how it'll get done), **not** for estimation, scheduling, or promising/committing.
