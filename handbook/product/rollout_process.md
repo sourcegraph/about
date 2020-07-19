@@ -8,30 +8,22 @@ clients decide to upgrade to the latest release when they want.
 
 Sourcegraph Cloud is continuously deployed with all new updates to master. We maintain a [releasability contract](../engineering/continuous_releasability.md) and require all new features to be released behind a feature flag to ensure that functionality can be turned off if a problem arises.
 
-### Pre-Launch
-**User Testing** 
-- Hallway test with internal users.
-- Open the feature to internal users by turning it on for the Sourcegraph organization. Make sure it's opened with enough
-time left before planned launch date to receive and address all the feedback received.  Go to [our Sourcegraph organization settings](https://sourcegraph.com/organizations/sourcegraph/settings) to enable your feature only for internal users in the Sourcegraph organization.
+### Before merge
 
-**Design** 
-(skip if it doesn't apply)
-- Test the feature for both themes, Light and Dark. Check for icon consistency across themes.
-* Test on small, medium, large and extra-large screen sizes.
-  * Small screens are important to consider for a good experience when the window is resized or in side-by-side mode.
-* Code examples in design
-  * Font should be "code font" or monospace.
-  * Easy to copy and paste (no fancy quotes).
+- Run hallway tests with internal users
+- Complete a final [design review](design/design_process.md#final-review)
+- Review documentation
+- Review analytics and ensure desired metrics have been added to the feature
+- Confirm feature flag functionality
 
-**Analytics** 
-- Add and test logging for critical flows.
+### After merge, before launch
 
-**Approvals**
-- Receive approval from engineering, design, data, product and other stakeholders before launch. 
-
-**Bug Tracking**
-- Track and ensure high priority bugs in GitHub issues. Ensure they are closed before launch.
-- Track all lower priority bugs that have to be fixed soon.
+1. **Gather internal feedback:** Enable the feature flag in the [Sourcegraph organization settings](https://sourcegraph.com/organizations/sourcegraph/settings) to enable your feature for all Sourcegraph team members. Be sure to leave enough time for folks to experience the feature in their workflows and provide feedback.
+1. **Analytics:** Validate logging is working for critical flows
+1. **Approvals:** Recieve approval from key stakeholders.
+1. **Bug Tracking:** Keep track of all feedback.
+   - Track and ensure high priority bugs in GitHub issues. Ensure they are closed before launch.
+   - Track all lower priority bugs that have to be fixed soon.
 
 ### Deployment
 **Push to Sourcegraph.com**
