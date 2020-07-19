@@ -34,7 +34,9 @@ Sourcegraph Cloud is continuously deployed with all new updates to master. We ma
 - Share analytics for monitoring the feature shipped. Track metrics for regressions. 
 
 ### Post-Launch
-**Marketing**
-- Share update with marketing.
+
+1. **Marketing:** Share update with marketing.
+1. **Metrics:** continue to track metrics to ensure expected outcomes are achieved.
+1. **Enable by default:** Once a feature has been validated on Sourcegraph Cloud it can be enabled by default to be included in the next release. The feature flag should be left in place for at least one release cycle so that customers can disable the feature if problems arise.
 
 ## TODO: Enterprise instances of Sourcegraph.com
