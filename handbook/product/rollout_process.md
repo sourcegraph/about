@@ -4,7 +4,9 @@ The rollout process consists of *Pre-Launch* phase and *Deployment* phase. We ca
 want as we own the deployment process. For enterprise instances of Sourcegraph.com, we push a new release monthly and our
 clients decide to upgrade to the latest release when they want.
 
-## Sourcegraph.com
+## Sourcegraph Cloud
+
+Sourcegraph Cloud is continuously deployed with all new updates to master. We maintain a [releasability contract](../engineering/continuous_releasability.md) and require all new features to be released behind a feature flag to ensure that functionality can be turned off if a problem arises.
 
 ### Pre-Launch
 **User Testing** 
