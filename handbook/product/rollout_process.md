@@ -39,4 +39,8 @@ Sourcegraph Cloud is continuously deployed with all new updates to master. We ma
 1. **Metrics:** continue to track metrics to ensure expected outcomes are achieved.
 1. **Enable by default:** Once a feature has been validated on Sourcegraph Cloud it can be enabled by default to be included in the next release. The feature flag should be left in place for at least one release cycle so that customers can disable the feature if problems arise.
 
-## TODO: Enterprise instances of Sourcegraph.com
+## Sourcegraph Server
+
+New versions of Sourcegraph are [released monthly](../engineering/releases.md#releases-are-monthly) to bundle changes for customers running Sourcegraph Server for their organizations. It is important that any new functionality has been thoroughly tested before including a feature on by default as part of a release. 
+
+By following the above rollout process on Sourcegraph Cloud, we ensure that features included in a release are ready for use by customers.
