@@ -95,6 +95,8 @@ The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker
   * Most notably, this includes [configuring notifiers and silences](#alert-notifications) for Sourcegraph alerts
 * Exposes [endpoints for configuration issues, alerts summary statuses, and reverse-proxies Prometheus and Alertmanager](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+PathPrefix%28:%5Bpath%5D%29.Handler%28:%5Bhandler%5D%29&patternType=structural)
 
+*Rationale for an all-in-one Prometheus image with prom-wrapper*: This allows us to avoid adding a new separate service (which must be handled in all our deployment types), thus simplifying the deployment story for our monitoring stack, while also improving the alert debugging workflow (for example, simply port-forward `svc/prometheus` to get access to the entire alerting stack), with minimal disadvantages (for example, high-availability Prometheus and Alertmanager can still be configured via `PROMETHEUS_ADDITIONAL_FLAGS` and `ALERTMANAGER_ADDITIONAL_FLAGS`, and Alertmanager can be disabled via `DISABLE_ALERTMANAGER`).
+
 ## Custom additions
 
 TODO: how we handle out-of-band metrics, alerts (things we don't ship to customers)
