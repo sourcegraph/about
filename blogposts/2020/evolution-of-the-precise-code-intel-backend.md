@@ -191,7 +191,7 @@ However, things don't always go according to plan.
 
 I knew the ins and outs of the TypeScript code, so I simply rewrote all three services in Go in a single pass. The resulting code wasn't particularly idiomatic, since I wanted to focus on bringing the new system to life as quickly as possible, so we could sunset the old one. Continuing refactors have made the code more idiomatic over time.
 
-The rewrite has unlocked a large number of performance improvement opportunities, the results of which are described in [How we made code navigation twice as fast in Sourcegraph 3.17](/blog/making-code-nav-twice-as-fast).
+The rewrite has unlocked a large number of performance improvement opportunities, the results of which are described in [Optimizing a code intelligence backend](/blog/making-code-nav-twice-as-fast).
 
 
 ## Removing lsif-server
