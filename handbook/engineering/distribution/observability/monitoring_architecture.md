@@ -113,6 +113,8 @@ Notifiers for alerts are configured via the [`deploy-sourcegraph-dot-com` fronte
 
 Alerts go to the [`#alerts`](https://sourcegraph.slack.com/archives/CSCFMFXS5)channel, with critical alerts going to [OpsGenie](https://about.sourcegraph.com/handbook/engineering/on_call).
 
+Support for alert ownership and per-team alerts is a work in progress - see [RFC 189](https://docs.google.com/document/d/1noZf86g2QwTbFNt3XSSbMg36D-_HCptP1thMzZsgt2Q/edit) and [#12010](https://github.com/sourcegraph/sourcegraph/issues/12010).
+
 ### Blackbox exporter
 
 TODO
