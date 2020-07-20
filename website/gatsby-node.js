@@ -134,6 +134,23 @@ exports.createPages = ({ actions, graphql }) => {
                 component: PodcastEpisodeTemplate,
                 context: {
                   fileSlug: slug,
+                  showTab: 'summary',
+                },
+              })
+              createPage({
+                path: `/podcast/${slug}/notes`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'notes',
+                },
+              })
+              createPage({
+                path: `/podcast/${slug}/transcript`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'transcript',
                 },
               })
             } else {
