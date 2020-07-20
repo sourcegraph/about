@@ -21,7 +21,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </li>
                                 <li className="nav-item">
                                     <a
-                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-big-code-one-pager.pdf"
+                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
                                         target="_blank"
                                         rel="noopener"
                                         className="bigCode"
