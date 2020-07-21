@@ -1,6 +1,6 @@
 # Styling UI
 
-Sourcegraph has many UI components. A unique constraint for these is that they need to run withing different _environments_.
+Sourcegraph has many UI components. A unique constraint for these is that they need to run within different _environments_.
 Wherever a component is running, it should look native to its environment and consistent with the design of that environment.
 For example, our hover overlay needs to work and _behave_ the same in the Sourcegraph webapp and in the browser extension, where it is injected into a variety of code hosts, but _look_ native to the environment.
 Components need to be able to adapt styles from CSS stylesheets already loaded on the page (no matter how those were architected).
