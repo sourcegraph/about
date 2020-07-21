@@ -121,6 +121,14 @@ While asynchronous communication is a core attribute of remote work, key moments
       - Schedule a meeting with engineers to discuss the interaction
   - Tools
       - Figma
+- **Design to engineering handoff**
+    - Design preperation
+        - Ensure colors utilize the named color styles vs. the color palette where possible 
+            - This adds our color style variable name to the code palette 
+        - Redline any colors, styles, margins and paddings unique to the designs (not provided by a component)
+        - If introducing new colors, type, or other design elements, ask for review by an engineer focused on styles and React components
+        - Ensure any illustrations work in both light and dark mode 
+        - TODO: Determine method of illustration/image exports
 - **Metrics collection**
   - In the RFC process, the definition of success will include items which can be measured and evaluated
   - Involve the business operations team in determining what metrics to track and how they are tracked
