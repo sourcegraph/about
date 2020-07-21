@@ -17,21 +17,18 @@ have pages created specifically for them (e.g. Kubernetes).
 Examples include:
 
 * Kubernetes
-![K8s search page](./images/k8s-search-page.png "K8s search page")
+> ![K8s search page](./images/k8s-search-page.png "K8s search page")
 
 * Python 2 to Python 3 migration examples
-![Python search page](./images/python-search-page.png "Python search page")
+> ![Python search page](./images/python-search-page.png "Python search page")
 
 * Golang
-![Golang search page](./images/golang-search-page.png "Golang search page")
+> ![Golang search page](./images/golang-search-page.png "Golang search page")
 
 * React Hooks
-![React search page](./images/react-search-page.png "React search page")
+> ![React search page](./images/react-search-page.png "React search page")
 
 * Android
-![Android search page](./images/android-search-page.png "Android search page")
-
-![Add repository flow](./images/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
-
+> ![Android search page](./images/android-search-page.png "Android search page")
 
 ...and more to come. If you have suggestions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose).
