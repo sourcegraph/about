@@ -115,6 +115,15 @@ Alerts go to the [`#alerts`](https://sourcegraph.slack.com/archives/CSCFMFXS5)ch
 
 Support for alert ownership and per-team alerts is a work in progress - see [RFC 189](https://docs.google.com/document/d/1noZf86g2QwTbFNt3XSSbMg36D-_HCptP1thMzZsgt2Q/edit) and [#12010](https://github.com/sourcegraph/sourcegraph/issues/12010).
 
-### Blackbox exporter
+### Blackbox Exporter
 
-TODO
+We use [Blackbox Exporter](https://github.com/prometheus/blackbox_exporter) for: 
+
+- Monitoring external and internal http endpoints
+- Configuring alerts based on http response codes to notify teams when sourcegraph is unreachable via an external URL as well as `sourcegraph-frontend-internal` to assist in diagnosing the root cause of sourcegraph being unavailable.
+
+Prometheus scrapes Blackbox Exporter every 30s, which will send a request to endpoints configured via the [`deploy-sourcegraph-dotcom` prometheus ConfigMap for `prometheus.yaml`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/d3b76f0623ca19457d7555e97ee397fc0db555e4/base/prometheus/prometheus.ConfigMap.yaml#L214-L260).
+
+Alerts are configured separately via the [`deploy-sourcegraph-dotcom` prometheus ConfigMap for `sourcegraph_dotcom_rules.yml`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/base/prometheus/prometheus.ConfigMap.yaml#L511)
+
+*Rationale for Blackbox Exporter*: Site24x7 has been a source of flaky alerts, outlined in [#10742](https://github.com/sourcegraph/sourcegraph/issues/10742) and more broadly in [#11966](https://github.com/sourcegraph/sourcegraph/issues/11966). In an effort increase reliablity and broaden the scope of our monitoring, Blackbox Exporter was selected as it integrates well into our existing Prometheus and Alertmanager stack.
