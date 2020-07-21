@@ -342,6 +342,27 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [GitHub](https://github.com/stefanhengl)
 - Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
+## Mimi St Johns
+
+- Software Engineer Intern
+- Pittsburgh, PA, USA 🇺🇸
+- [mimi@sourcegraph.com](mailto:mimi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mimi-st-johns-1208521b1/), [GitHub](https://github.com/RedHeadedStranger99)
+- Mimi recently finished her first year at Stanford; she is studying computer science. In her free time, she enjoys playing the guitar, writing, chess, and Magic: The Gathering.  
+
+## Kimberly Hopson (she/her)
+
+- Developer Communications
+- Berwyn, PA
+- [kimberly@sourcegraph.com](mailto:kimberly@sourcegraph.com)
+- Kimberly is just a government name; Sourcegraph insiders call her by her nickname. The former journalist accidentally fell into the world of technical writing via her gaming hobby, and she's been dedicated to writing insightful documentation ever since. In her spare time, she engages in a balanced mixture of geeky and athletic pursuits, such as anime, coffee making, swimming, reading, aerial fitness, pc building, and sport shooting.
+
+## Aida DeWitt (she/her)
+
+- Engineering Manager
+- San Francisco, CA, USA 🇺🇸
+- [aida@sourcegraph.com](mailto:aida@sourcegraph.com), [Twitter](https://twitter.com/aidaeology), [LinkedIn](https://www.linkedin.com/in/aidadewitt/), [pronounce my name 🔊](https://www.name-coach.com/aida-dewitt)
+- Aida is a Canadian expat living in the San Francisco bay area with her husband and cat. Aida started her fascination with 01s when she first learned about logic gates while building parallel and series circuits for a school project. In her spare time she enjoys spending time outdoors and creating a sustainable garden. Prior to Sourcegraph she was at Contentful and is passionate about system architecture and design. Aida graduated with a B.S. in Computer Science from Ryerson University in Toronto.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)

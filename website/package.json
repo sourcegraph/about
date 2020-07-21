@@ -15,6 +15,7 @@
     "gatsby-plugin-google-gtag": "^2.1.10",
     "gatsby-plugin-google-tagmanager": "^2.3.11",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.19",
     "gatsby-plugin-typescript": "^2.4.14",
