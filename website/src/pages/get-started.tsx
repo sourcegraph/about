@@ -47,7 +47,7 @@ export default class GetStarted extends React.Component<any, any> {
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm &#13;
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph &#13;
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph &#13;
-                                    sourcegraph/server:3.17.3
+                                    sourcegraph/server:3.18.0
                                     "
                                 />
                                 <a className="get-started-page__copytext" href="#">
