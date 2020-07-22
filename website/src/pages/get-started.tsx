@@ -85,9 +85,12 @@ export default class GetStarted extends React.Component<any, any> {
                             <div className="get-started-page__action">
                                 Sourcegraph Cloud searches top repositories from GitHub and Gitlab and will index any
                                 public repository you specify.
-                                <Link className="btn btn-sm btn-primary mt-3" to="/search">
+                                <a
+                                    className="btn btn-sm btn-primary text-light mt-3"
+                                    href="https://sourcegraph.com/search"
+                                >
                                     Try Sourcegraph Cloud now <ArrowRightIcon className="ml-1" />
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
