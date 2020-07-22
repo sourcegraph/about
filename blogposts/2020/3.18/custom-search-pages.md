@@ -6,9 +6,11 @@ slug: custom-search-pages
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
-# Custom search pages on Sourcegraph Cloud (#[11526](https://github.com/sourcegraph/sourcegraph/issues/11526))
+# Custom search pages on Sourcegraph Cloud
 
-Developer: [Farhan](https://github.com/attfarhan)
+GitHub issue: (#[11526](https://github.com/sourcegraph/sourcegraph/issues/11526))
+
+Developer: [Farhan Attamimi](https://github.com/attfarhan)
 
 Sourcegraph 3.18 has added new search pages that scope searches to a collection of repositories. This helps new users coming to Sourcegraph search over
 code that is more relevant to them, and introduces them to interesting queries in the process. Many communities will be excited to pick this up and

@@ -8,7 +8,9 @@ published: true
 
 # Getting notified about the health of Sourcegraph is even easier
 
-Developer: [Robert](https://github.com/bobheadxi)
+GitHub issue: (#[11452](https://github.com/sourcegraph/sourcegraph/issues/11452))
+
+Developer: [Robert Lin](https://github.com/bobheadxi)
 
 We continue to make great strides in Sourcegraph’s out-of-the-box monitoring. It is easier than ever before to get notified about critical
 issues affecting your Sourcegraph instance. With this, you can quickly set up critical alerts for Sourcegraph’s health to go to Slack,
