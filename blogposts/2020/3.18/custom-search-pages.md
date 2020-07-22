@@ -1,6 +1,6 @@
 ---
 title: "Custom search pages on Sourcegraph Cloud"
-author: 'Farhan'
+author: 'Farhan Attamimi'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
 slug: custom-search-pages
@@ -20,22 +20,22 @@ Examples include:
 
 - Kubernetes
 
-  > ![K8s search page](./images/k8s-search-page.png "K8s search page")
+  > ![K8s search page](https://storage.cloud.google.com/sourcegraph-assets/blog/k8s-search-page.png "K8s search page")
 
 - Python 2 to Python 3 migration examples
 
-  > ![Python search page](./images/python-search-page.png "Python search page")
+  > ![Python search page](https://storage.cloud.google.com/sourcegraph-assets/blog/python-search-page.png "Python search page")
 
 - Golang
 
-  > ![Golang search page](./images/golang-search-page.png "Golang search page")
+  > ![Golang search page](https://storage.cloud.google.com/sourcegraph-assets/blog/golang-search-page.png "Golang search page")
 
 - React Hooks
 
-  > ![React search page](./images/react-search-page.png "React search page")
+  > ![React search page](https://storage.cloud.google.com/sourcegraph-assets/blog/react-search-page.png "React search page")
 
 - Android
 
-  > ![Android search page](./images/android-search-page.png "Android search page")
+  > ![Android search page](https://storage.cloud.google.com/sourcegraph-assets/blog/android-search-page.png "Android search page")
 
 ...and more to come. If you have suggestions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose).
