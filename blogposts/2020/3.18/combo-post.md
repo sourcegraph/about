@@ -1,5 +1,5 @@
 ---
-title: 'Small but mighty new features'
+title: "Small but mighty new features"
 author: 'Loïc Guychard, Adam Harvey, Eric Fritz'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]

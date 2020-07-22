@@ -1,4 +1,4 @@
-title: 'Custom search pages on Sourcegraph Cloud'
+title: "Custom search pages on Sourcegraph Cloud"
 author: 'Farhan'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]

@@ -1,4 +1,4 @@
-title: 'Getting notified about the health of Sourcegraph is even easier'
+title: "Getting notified about the health of Sourcegraph is even easier"
 author: 'Robert'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
