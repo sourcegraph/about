@@ -6,7 +6,7 @@ slug: custom-search-pages
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
-## Custom search pages on Sourcegraph Cloud (#[11526](https://github.com/sourcegraph/sourcegraph/issues/11526))
+# Custom search pages on Sourcegraph Cloud (#[11526](https://github.com/sourcegraph/sourcegraph/issues/11526))
 
 Developer: [Farhan](https://github.com/attfarhan)
 

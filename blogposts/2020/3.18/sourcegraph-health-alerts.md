@@ -6,7 +6,7 @@ slug: sourcegraph-health-notification
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 
-## Getting notified about the health of Sourcegraph is even easier
+# Getting notified about the health of Sourcegraph is even easier
 
 Developer: [Robert](https://github.com/bobheadxi)
 
