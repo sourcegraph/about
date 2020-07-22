@@ -1,14 +1,13 @@
+
 ---
 title: 'New C++ precise code intelligence solution'
 author: 'Garo Brik'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
 slug: indexed-non-master-branches
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
-published: true
----
-# New C++ precise code intelligence solution (#[10175](https://github.com/sourcegraph/sourcegraph/issues/10175))
 
+---
+## New C++ precise code intelligence solution (#[10175](https://github.com/sourcegraph/sourcegraph/issues/10175))
 
 Developer: [Garo Brik](https://github.com/gbrik)
 
