@@ -7,7 +7,7 @@ slug: small-and-mighty-features
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
-## Improved add / update repository flow for users trying private versions of Sourcegraph (#[11044](https://github.com/sourcegraph/sourcegraph/issues/11044))
+# Improved add / update repository flow for users trying private versions of Sourcegraph (#[11044](https://github.com/sourcegraph/sourcegraph/issues/11044))
 
 Developer: [Loïc Guychard](https://github.com/lguychard)
 
