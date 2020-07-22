@@ -3,15 +3,14 @@ title: 'Search across multiple revisions of the same repository'
 author: 'Keegan Carruthers-Smith'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
-slug: indexed-non-master-branches
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+slug: search-multiple-revisions
+heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
 
-# Search across multiple revisions of the same repository  (#[11668](https://github.com/sourcegraph/sourcegraph/issues/11668))
+GitHub issue: [#11668](https://github.com/sourcegraph/sourcegraph/issues/11668)
 
-
-Developer: [Keegan](https://github.com/keegancsmith)
+Developer: [Keegan Carruthers-Smith](https://github.com/keegancsmith)
 
 Often, you need to understand the differences between code at different branches (especially for release branches that have diverged).
 
@@ -21,10 +20,8 @@ For example, a search over Sourcegraph versions 3.16 & 3.17 would look something
 
 ![search over Sourcegraph versions 3.16 and 3.17](images/searchacrossrev1.png)
 
-
 A search over all branches, using [@*refs/heads/](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24%40*refs/heads/+CONTAINER_ID&patternType=literal&case=yes) would look like this
 
 ![search over all branches using @*refs/heads/](images/searchacrossrev2.png)
-
 
 Be aware that searching over all branches may be slow. The cost of searching a branch is the same cost as searching a repository. To speed this up, ensure that branches are indexed with our experimental [Indexed non-master branches” feature](add link).
