@@ -4,10 +4,11 @@ author: 'Keegan Carruthers-Smith'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
 slug: indexed-non-master-branches
-
+heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+published: true
 ---
 
-### Search across multiple revisions of the same repository  (#[11668](https://github.com/sourcegraph/sourcegraph/issues/11668))
+# Search across multiple revisions of the same repository  (#[11668](https://github.com/sourcegraph/sourcegraph/issues/11668))
 
 Developer: [Keegan](https://github.com/keegancsmith)
 
