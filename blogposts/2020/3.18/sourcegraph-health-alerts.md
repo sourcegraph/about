@@ -1,14 +1,14 @@
+---
 title: "Getting notified about the health of Sourcegraph is even easier"
 author: 'Robert'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
 slug: sourcegraph-health-notification
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: /blog/3.18-release-blog-img.jpg
 published: true
+---
 
-# Getting notified about the health of Sourcegraph is even easier
-
-GitHub issue: (#[11452](https://github.com/sourcegraph/sourcegraph/issues/11452))
+GitHub issue: [#11452](https://github.com/sourcegraph/sourcegraph/issues/11452)
 
 Developer: [Robert Lin](https://github.com/bobheadxi)
 
@@ -23,5 +23,4 @@ Alerts are now delivered with detailed information and include links to potentia
 Additionally, we now monitor container health and over/under provisioning in all deployment modes - so you will even get alerts if Sourcegraph
 needs more resources or could do with less!
 
-To get started with alerting, refer to [our documentation](https://docs.sourcegraph.com/admin/observability/alerting). If you run into any issues
- or questions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose)!
+To get started with alerting, refer to [our documentation](https://docs.sourcegraph.com/admin/observability/alerting). If you run into any issues or questions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose)!

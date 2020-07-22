@@ -1,14 +1,14 @@
+---
 title: "Custom search pages on Sourcegraph Cloud"
 author: 'Farhan'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
 slug: custom-search-pages
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
-# Custom search pages on Sourcegraph Cloud
 
-GitHub issue: (#[11526](https://github.com/sourcegraph/sourcegraph/issues/11526))
+GitHub issue: [#11526](https://github.com/sourcegraph/sourcegraph/issues/11526)
 
 Developer: [Farhan Attamimi](https://github.com/attfarhan)
 
@@ -18,19 +18,24 @@ have pages created specifically for them (e.g. Kubernetes).
 
 Examples include:
 
-* Kubernetes
-> ![K8s search page](./images/k8s-search-page.png "K8s search page")
+- Kubernetes
 
-* Python 2 to Python 3 migration examples
-> ![Python search page](./images/python-search-page.png "Python search page")
+  > ![K8s search page](./images/k8s-search-page.png "K8s search page")
 
-* Golang
-> ![Golang search page](./images/golang-search-page.png "Golang search page")
+- Python 2 to Python 3 migration examples
 
-* React Hooks
-> ![React search page](./images/react-search-page.png "React search page")
+  > ![Python search page](./images/python-search-page.png "Python search page")
 
-* Android
-> ![Android search page](./images/android-search-page.png "Android search page")
+- Golang
+
+  > ![Golang search page](./images/golang-search-page.png "Golang search page")
+
+- React Hooks
+
+  > ![React search page](./images/react-search-page.png "React search page")
+
+- Android
+
+  > ![Android search page](./images/android-search-page.png "Android search page")
 
 ...and more to come. If you have suggestions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose).
