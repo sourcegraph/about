@@ -1,9 +1,9 @@
 ---
 title: "New C++ precise code intelligence solution"
-author: 'Garo Brik'
+author: Garo Brik
 publishDate: 2020-07-20T00:00-07:00
-tags: ["blog"]
-slug: 'c-plus-plus-code-intel'
+tags: [blog]
+slug: c-plus-plus-code-intel
 heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---

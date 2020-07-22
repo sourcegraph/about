@@ -1,8 +1,8 @@
 ---
-title: 'Search across multiple revisions of the same repository'
-author: 'Keegan Carruthers-Smith'
+title: "Search across multiple revisions of the same repository"
+author: Keegan Carruthers-Smith
 publishDate: 2020-07-20T00:00-07:00
-tags: ["blog"]
+tags: [blog]
 slug: search-multiple-revisions
 heroImage: /blog/3.18-release-blog-img.jpg
 published: true
@@ -20,7 +20,7 @@ For example, a search over Sourcegraph versions 3.16 & 3.17 would look something
 
 ![search over Sourcegraph versions 3.16 and 3.17](images/searchacrossrev1.png)
 
-A search over all branches, using [@*refs/heads/](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24%40*refs/heads/+CONTAINER_ID&patternType=literal&case=yes) would look like this
+A search over all branches, using [@\*refs/heads/](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24%40*refs/heads/+CONTAINER_ID&patternType=literal&case=yes) would look like this
 
 ![search over all branches using @*refs/heads/](images/searchacrossrev2.png)
 

@@ -1,8 +1,8 @@
 ---
 title: "Small but mighty new features"
-author: 'Loïc Guychard, Adam Harvey, Eric Fritz'
+author: Loïc Guychard, Adam Harvey, Eric Fritz
 publishDate: 2020-07-20T00:00-07:00
-tags: ["blog"]
+tags: [blog]
 slug: small-and-mighty-features
 heroImage: /blog/3.18-release-blog-img.jpg
 published: true
