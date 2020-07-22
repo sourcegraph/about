@@ -23,7 +23,12 @@ Developer: [Adam Harvey](https://github.com/LawnGnome)
 You asked, we implemented. We’ve received a lot of feedback from developers using GitLab as their code hosts that campaign capabilities would be useful, so we added
 them in the Sourcegraph 3.18 release. This makes campaigns available to more organizations and helps make Sourcegraph more universal. See Adam’s introductory video below:
 
-[![Campaigns for Gitlab](https://img.youtube.com/vi/KatiVJ4D3H4/maxresdefault.jpg)](https://youtu.be/KatiVJ4D3H4)
+<p class="container">
+  <div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://www.youtube.com/embed/KatiVJ4D3H4" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <p style="text-align: center"><a href="https://youtu.be/KatiVJ4D3H4" target="_blank">View on YouTube</a></p>
+</p>
 
 Campaigns allow you to make large-scale code changes across many repositories and different code hosts, and monitor their progress. For more information on campaign, see the
 [Sourcegraph documentation](https://docs.sourcegraph.com/user/campaigns).
