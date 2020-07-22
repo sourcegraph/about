@@ -6,7 +6,7 @@ authorUrl: https://eric-fritz.com
 publishDate: 2020-06-17T10:00-08:00
 tags: [blog]
 slug: optimizing-a-code-intel-backend
-heroImage: https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/hero.png
+heroImage: https://sourcegraphstatic.com/codeintel-profiles/hero.png
 published: true
 ---
 
@@ -14,7 +14,7 @@ When it comes to developer tools, speed is a critical feature. The difference be
 
 One of Sourcegraph's magic powers is its ability to provide compiler-accurate code navigation in completely web-based interfaces: [Sourcegraph.com](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@95b315285814aded55089da22aba944cf19410c9/-/blob/cmd/frontend/internal/cli/serve_cmd.go?subtree=true#L115:6), [private Sourcegraph instances](https://docs.sourcegraph.com/#quickstart-guide), and on GitHub, GitLab, Bitbucket, and Phabricator via the [Sourcegraph browser extension](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack).
 
-![Cross-repository jump to definition](https://storage.googleapis.com/sourcegraph-assets/precise-xrepo-j2d.gif)
+![Cross-repository jump to definition](https://sourcegraphstatic.com/precise-xrepo-j2d.gif)
 
 While compiler-level accuracy is great, one painpoint has been performance on larger codebases. The desire for speed motivated our switch from language servers to use of the Language Server Index Format (LSIF). Indexing vastly improves query latency by precomputing the data needed to serve doc tooltips, go-to-definition, and find-references requests, without sacrificing accuracy. Since adding support for LSIF, we've continued to optimize our code navigation backend. In [Sourcegraph 3.16](/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), we rewrote the LSIF processing backend from TypeScript to Go with the aim of optimizing performance. In [3.17](/blog/sourcegraph-3.17), we made good on these plans.
 
@@ -36,18 +36,18 @@ Premature optimization is the root of all evil, so we initiated our optimization
 </tr>
 <tr>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-cpu.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-cpu.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"/>
         </a>
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-allocs.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-allocs.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png"/>
         </a>
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-heap.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-heap.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png"/>
         </a>
     </td>
 </tr>
@@ -62,13 +62,13 @@ These efforts yielded a 2x speedup in query latency, a 2x speedup in processing 
 The CPU profiling revealed a substantial amount of time was being spent in the API server. This service receives the LSIF upload from the API user and passes it to the bundle manager server which writes it to disk. A separate background worker service later converts the on-disk LSIF data into a SQLite bundle. On a user query, the API server receives the requests, queries the bundle manager server, which in turn uses the SQLite bundle to respond to the API server, which then forwards that response to the user.
 
 <p class="text-center">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/precise-code-intel-arch-before-rewrite.svg" title="architecture diagram (before)" />
+  <img src="https://sourcegraphstatic.com/precise-code-intel-arch-before-rewrite.svg" title="architecture diagram (before)" />
 </p>
 
 The "middleman" nature of the API server when serving user requests was an artifact of the initial architecture of the indexed precise code navigation system. After porting this system to Go in 3.16, it became apparent that the API server was a *very* thin wrapper around the bundle manager API, so in 3.17, we decided to remove it altogether.
 
 <p class="text-center">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/precise-code-intel-arch-after-rewrite.svg" title="architecture diagram (after)" />
+  <img src="https://sourcegraphstatic.com/precise-code-intel-arch-after-rewrite.svg" title="architecture diagram (after)" />
 </p>
 
 The way we did this was a bit of a kludge. In essence, we wanted to eliminate an unnecessary network call between the precise code API server client (in the Sourcegraph frontend service) and the API server. However, we didn't want to have to write a bunch of new code to define an API service and client for the bundle manager directly, so what we did was we kept the existing API server and client as-is, but replaced the actual network calls with function calls to the HTTP handler functions directly.
@@ -79,7 +79,7 @@ The way we did this was a bit of a kludge. In essence, we wanted to eliminate an
 
 Overall, the entire process of converting an LSIF index into a bundle file is a simple, linear pipeline.
 
-![concurrency diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-pipeline.png)
+![concurrency diagram](https://sourcegraphstatic.com/lsif-pipeline.png)
 
 1. The line reader reads raw LSIF input line-by-line and passes data to the correlator.
 2. The correlator builds an in-memory representation of the LSIF data and passes it to the canonicalizer.
@@ -105,7 +105,7 @@ During upload, the reader reads this data and parses it into JSON. We can split 
 
 In the implementation, we used channels as bounded queues to break up the parsing into separate jobs that can be processed in parallel. The channel acts as a read-ahead buffer:
 
-![concurrency diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-reader-parallelism.png)
+![concurrency diagram](https://sourcegraphstatic.com/lsif-reader-parallelism.png)
 
 * The [unmarshaller goroutines](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@0eda838ebbe02021dd1739e3f92bc2fcd9577672/-/blob/cmd/precise-code-intel-worker/internal/correlation/lsif/lines/reader.go#L65-72) read lines from an input channel, parse it, and place the result into an output element channel.
 * A [batcher goroutine](https://github.com/sourcegraph/sourcegraph/blob/0eda838ebbe02021dd1739e3f92bc2fcd9577672/cmd/precise-code-intel-worker/internal/correlation/lsif/lines/reader.go#L75-L109) then consumes the items from the element channel in batches, reordering them by input ID to be consistent with the original order in the LSIF data.
@@ -135,11 +135,11 @@ of data into the target table. The SQLite batcher inserter utility is about as f
 sets the correct pragmas, uses a single transaction, and minimizes the number of commands by
 squeezing as many rows into each insert statement as possible.
 
-![concurrency diagram (before)](https://storage.googleapis.com/sourcegraph-assets/lsif-writer-concurrency-before.png)
+![concurrency diagram (before)](https://sourcegraphstatic.com/lsif-writer-concurrency-before.png)
 
 To increase write throughput, we moved the parallelism into the writer layer. After this change, document data, result chunk data, definition data, and reference data could be written to the bundle in sequence, but each write operation would send data to _n_ batches in parallel. This more evenly distributes the serialize-and-write load across the available number of cores.
 
-![concurrency diagram (after)](https://storage.googleapis.com/sourcegraph-assets/lsif-writer-concurrency-after.png)
+![concurrency diagram (after)](https://sourcegraphstatic.com/lsif-writer-concurrency-after.png)
 
 <div class="alert alert-success">
   This update, implemented in <a href="https://github.com/sourcegraph/sourcegraph/commit/7c99cd982e1c3a8e77f2a065f7ae6640a08ba5bb#diff-86711fd26a316ad73cedd5eb066b4c21R1"><pre>7c99cd9</pre></a>, reduced conversion time by 10.43%.
@@ -335,23 +335,23 @@ This yielded a performance boost that became more significant the larger the cod
 The following chart shows the decrease in query latency while running our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) compared to the previous two Sourcegraph releases. The test suite is querying cross-repo definitions and references over three commits from [etcd-io/etcd](https://github.com/etcd-io/etcd), [pingcap/tidb](https://github.com/pingcap/tidb), and [distributedio/titan](https://github.com/distributedio/titan), and two commits from [uber-go/zap](https://github.com/uber-go/zap).
 
 <div class="text-center benchmark-results">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-query-latency-317.png" width="70%">
+  <img src="https://sourcegraphstatic.com/lsif-query-latency-317.png" width="70%">
 </div>
 
 This next chart shows the time required to upload and process the indexes.
 
 <div class="text-center benchmark-results">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/lsif-processing-latency-317.png" width="50%">
+  <img src="https://sourcegraphstatic.com/lsif-processing-latency-317.png" width="50%">
 </div>
 
 These last charts show the size of the converted bundle on disk after conversion.
 
 <div class="text-center benchmark-results">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/tidb-bundle-size.png" width="48%">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/etcd-bundle-size.png" width="48%">
+  <img src="https://sourcegraphstatic.com/tidb-bundle-size.png" width="48%">
+  <img src="https://sourcegraphstatic.com/etcd-bundle-size.png" width="48%">
   <br />
-  <img src="https://storage.googleapis.com/sourcegraph-assets/titan-bundle-size.png" width="48%">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/zap-bundle-size.png" width="48%">
+  <img src="https://sourcegraphstatic.com/titan-bundle-size.png" width="48%">
+  <img src="https://sourcegraphstatic.com/zap-bundle-size.png" width="48%">
 </div>
 
 <style>
@@ -375,18 +375,18 @@ Finally, here are the before and after profiles of CPU, memory allocations, and 
         3.16
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-cpu.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-cpu.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"/>
         </a>
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-allocs.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-allocs.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png"/>
         </a>
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-heap.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.16-heap.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png"/>
         </a>
     </td>
 </tr>
@@ -395,18 +395,18 @@ Finally, here are the before and after profiles of CPU, memory allocations, and 
         3.17
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-cpu.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-cpu.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.png"/>
         </a>
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-allocs.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-allocs.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.png"/>
         </a>
     </td>
     <td>
-        <a target="_blank" href="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-heap.svg">
-            <img src="https://storage.googleapis.com/sourcegraph-assets/codeintel-profiles/3.17-heap.png"/>
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.svg">
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.png"/>
         </a>
     </td>
 </tr>
