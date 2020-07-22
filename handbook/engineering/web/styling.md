@@ -23,6 +23,7 @@ Components need to be able to adapt styles from CSS stylesheets already loaded o
 
 Components that need to run in different environments (any UI shared between our browser extension and the webapp) adopt styles from their environments through configurable CSS class names (as opposed to trying to replicate the styling with copied CSS).
 A component may accept multiple class names for different elements of the component.
+An example of this is `<HoverOverlay/>`: see how [the different props it accepts](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@4047521a92904054e782d341001d08d61945c86f/-/blob/shared/src/hover/HoverOverlay.tsx?subtree=true#L27-39) for its child components' class names are pased in the [webapp](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@4047521a92904054e782d341001d08d61945c86f/-/blob/web/src/components/shared.tsx?subtree=true#L35-44) and in [code host integrations](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@4047521a92904054e782d341001d08d61945c86f/-/blob/browser/src/shared/code-hosts/shared/codeHost.tsx?subtree=true#L443:1).
 
 ### Host-specific UI
 
