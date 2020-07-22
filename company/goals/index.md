@@ -36,6 +36,7 @@ A goal's format is:
 
 1. Each goal has a single person (not multiple people) who's ultimately responsible for it.
    - Many people can be working toward a goal, but there must be one person who's ultimately responsible.
+   - It's OK for a team to own a goal. That means the manager is ultimately responsible for it. A team should not have more than 1 or 2 goals (to make sure it's not becoming a workgroup with too many disparate goals).
 1. No person can have more than 5 goals at once. (This number is arbitrary, but it feels right.) Fewer is better.
 1. Pick goals where failure would be painful.
 1. Pick goals where you can influence the outcome. Avoid using a lagging indicator as a goal.

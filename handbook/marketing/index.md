@@ -13,6 +13,14 @@
   - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
   - [Website style guide](website_style_guide.md)
 
+##  Members
+
+- [Adam Frankl](../../company/team/index.md#adam-frankl-he-him)
+- [Aileen Agricola](../../company/team/index.md#aileen-agricola)
+- [Adam Herzog](../../company/team/index.md#adam-herzog-he-him)
+- [Laureen Hudson](../../company/team/index.md#laureen-hudson-she-her)
+- [Kimberly Hopson](../../company/team/index.md#kimberly-hopson)
+
 ## Team communication
 
 The marketing team holds a weekly meeting to review the topics below. [Internal notes](https://docs.google.com/document/d/1vX3vF6t8HP-7-K9giM85UKEoAhmhy-ifAvbbFDvmKwo/edit#) for each meeting should be maintained by the group (while adhering to the [company-wide communication guidelines](../communication/index.md))

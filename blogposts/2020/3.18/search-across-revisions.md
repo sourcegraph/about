@@ -10,6 +10,7 @@ published: true
 
 # Search across multiple revisions of the same repository  (#[11668](https://github.com/sourcegraph/sourcegraph/issues/11668))
 
+
 Developer: [Keegan](https://github.com/keegancsmith)
 
 Often, you need to understand the differences between code at different branches (especially for release branches that have diverged).

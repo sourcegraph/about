@@ -9,6 +9,7 @@ published: true
 ---
 # New C++ precise code intelligence solution (#[10175](https://github.com/sourcegraph/sourcegraph/issues/10175))
 
+
 Developer: [Garo Brik](https://github.com/gbrik)
 
 As part of our ongoing effort to extend precise code intelligence to as many languages as possible, we’ve developed [lsif-clang](https://github.com/sourcegraph/lsif-clang), a new LSIF indexer based on the [clangd language server](https://clangd.llvm.org/). This means that customers using C and C++ now have access to precise code intelligence. This improves on the work we did with [lsif-cpp](https://github.com/sourcegraph/lsif-cpp) in several ways:

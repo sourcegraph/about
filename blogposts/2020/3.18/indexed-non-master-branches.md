@@ -28,7 +28,6 @@ Version Contexts:
 
 ![Example configuration for version contexts](images/expfeatures2.png "Example configuration for branches")
 
-
 Any repo@revision mentioned in a version context or in `search.index.branches` will be indexed by the periodic indexing process (you may need to wait a few minutes). As an admin you can view what is indexed for a repository through the repository setting page (indexed section).
 
 The same periodic process that cleans up old indexes and deleted repositories will also clean up deleted branches, so this gets cleaned up automatically.

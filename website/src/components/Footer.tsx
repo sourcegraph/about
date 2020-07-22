@@ -19,6 +19,16 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 <li className="nav-item">
                                     <Link to="/pricing">Pricing</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <a
+                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
+                                        target="_blank"
+                                        rel="noopener"
+                                        className="bigCode"
+                                    >
+                                        Not a developer?
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-3">
