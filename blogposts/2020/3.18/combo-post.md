@@ -1,6 +1,6 @@
 ---
 title: 'Small but mighty new features'
-author: 'Loic Guychard, Adam Harvey, Eric Fritz'
+author: 'Loïc Guychard, Adam Harvey, Eric Fritz'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
 slug: small-and-mighty-features
@@ -23,7 +23,7 @@ Developer: [Adam Harvey](https://github.com/LawnGnome)
 You asked, we implemented. We’ve received a lot of feedback from developers using GitLab as their code hosts that campaign capabilities would be useful, so we added
 them in the Sourcegraph 3.18 release. This makes campaigns available to more organizations and helps make Sourcegraph more universal. See Adam’s introductory video below:
 
-![Campaigns support Gitlab](./videos and gifs/campaigns-intro.mp4 "Intro to campaigns")
+[![Campaigns for Gitlab](https://img.youtube.com/vi/KatiVJ4D3H4/maxresdefault.jpg)](https://youtu.be/KatiVJ4D3H4)
 
 Campaigns allow you to make large-scale code changes across many repositories and different code hosts, and monitor their progress. For more information on campaign, see the
 [Sourcegraph documentation](https://docs.sourcegraph.com/user/campaigns).
@@ -31,6 +31,9 @@ Campaigns allow you to make large-scale code changes across many repositories an
 ## Highlight all elements on hover (#[10868](https://github.com/sourcegraph/sourcegraph/issues/10868))
 Developer: [Eric Fritz](https://github.com/efritz)
 
-![Highlight all elements](./videos and gifs/highlight-all-elements.gif "Highlight all elements on hover")
+<div class="text-center benchmark-results">
+  <img src="./videos and gifs/highlight-all-elements.gif" width="70%">
+</div>
+
 When a token is hovered or selected in a file, we now highlight all visible instances of that token. This makes it easy to see all references of a variable at-a-glance.
 Many developers have had to use the browser search (cmd-f) functionality to work around the lack of support of this feature — this makes it first class!
