@@ -17,7 +17,7 @@ Sourcegraph 3.18 that clarifies what information we access within the Sourcegrap
 
 ![Add repository flow](./images/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
 
-## Campaigns now support GitLab (#[11586](https://github.com/sourcegraph/sourcegraph/issues/11586))
+# Campaigns now support GitLab (#[11586](https://github.com/sourcegraph/sourcegraph/issues/11586))
 Developer: [Adam Harvey](https://github.com/LawnGnome)
 
 You asked, we implemented. We’ve received a lot of feedback from developers using GitLab as their code hosts that campaign capabilities would be useful, so we added
@@ -33,7 +33,7 @@ them in the Sourcegraph 3.18 release. This makes campaigns available to more org
 Campaigns allow you to make large-scale code changes across many repositories and different code hosts, and monitor their progress. For more information on campaign, see the
 [Sourcegraph documentation](https://docs.sourcegraph.com/user/campaigns).
 
-## Highlight all elements on hover (#[10868](https://github.com/sourcegraph/sourcegraph/issues/10868))
+# Highlight all elements on hover (#[10868](https://github.com/sourcegraph/sourcegraph/issues/10868))
 Developer: [Eric Fritz](https://github.com/efritz)
 
 <div class="text-center benchmark-results">
