@@ -1,14 +1,14 @@
+
 ---
 title: 'Indexed non-master branches'
 author: 'Keegan Carruthers-Smith'
 publishDate: 2020-07-20T00:00-07:00
 tags: ["blog"]
 slug: indexed-non-master-branches
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
-published: true
+
 ---
 
-# Indexed non-master branches (#[6728](https://github.com/sourcegraph/sourcegraph/issues/6728))
+## Indexed non-master branches (#[6728](https://github.com/sourcegraph/sourcegraph/issues/6728))
 
 Developer: [Keegan](https://github.com/keegancsmith)
 
@@ -21,12 +21,13 @@ Developers often want to search code that isn’t their default branch, like lon
 
 Branches:
 
-![Example configuration for branches](images/expfeatures1.png "Example configuration for branches")
+![alt_text](images/expfeatures1.png "image_tooltip")
 
 
 Version Contexts:
 
-![Example configuration for version contexts](images/expfeatures2.png "Example configuration for branches")
+![alt_text](images/expfeatures2.png "image_tooltip")
+
 
 Any repo@revision mentioned in a version context or in `search.index.branches` will be indexed by the periodic indexing process (you may need to wait a few minutes). As an admin you can view what is indexed for a repository through the repository setting page (indexed section).
 
