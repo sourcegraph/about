@@ -18,7 +18,7 @@ When you’re getting started setting up a Sourcegraph instance, it can be confu
 will protect the privacy of your data because there is no communication about how the software will interact with your repositories. We’ve added a new language in
 Sourcegraph 3.18 that clarifies what information we access within the Sourcegraph UI so you can move forward with confidence.
 
-![Add repository flow](https://storage.cloud.google.com/sourcegraph-assets/blog/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
+![Add repository flow](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
 
 ## Campaigns now support GitLab
 
@@ -45,7 +45,7 @@ GitHub issue: [#10868](https://github.com/sourcegraph/sourcegraph/issues/10868)
 
 Developer: [Eric Fritz](https://github.com/efritz)
 
-![Highlight all elements](https://storage.cloud.google.com/sourcegraph-assets/blog/highlight-all-elements.gif "highlight all elements")
+![Highlight all elements](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/healthy-sourcegraph.png "highlight all elements")
 
 When a token is hovered or selected in a file, we now highlight all visible instances of that token. This makes it easy to see all references of a variable at-a-glance.
 Many developers have had to use the browser search (cmd-f) functionality to work around the lack of support of this feature — this makes it first class!

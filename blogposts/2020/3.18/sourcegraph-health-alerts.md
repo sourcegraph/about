@@ -18,7 +18,7 @@ PagerDuty, Email, OpsGenie, and Webhook notifications.
 
 Alerts are now delivered with detailed information and include links to potential solutions:
 
-![Sourcegraph health alerts](https://storage.cloud.google.com/sourcegraph-assets/blog/healthy-sourcegraph.png "Sourcegraph health alerts")
+![Sourcegraph health alerts](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/healthy-sourcegraph.png "Sourcegraph health alerts")
 
 Additionally, we now monitor container health and over/under provisioning in all deployment modes - so you will even get alerts if Sourcegraph
 needs more resources or could do with less!

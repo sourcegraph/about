@@ -24,7 +24,7 @@ Examples include:
 
 - Python 2 to Python 3 migration examples
 
-  > ![Python search page](https://storage.cloud.google.com/sourcegraph-assets/blog/python-search-page.png "Python search page")
+  > ![Python search page](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/resize-python-search-page.png "Python search page")
 
 - Golang
 
@@ -36,6 +36,6 @@ Examples include:
 
 - Android
 
-  > ![Android search page](https://storage.cloud.google.com/sourcegraph-assets/blog/android-search-page.png "Android search page")
+  > ![Android search page](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/resize-android-search-page.png "Android search page")
 
 ...and more to come. If you have suggestions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose).
