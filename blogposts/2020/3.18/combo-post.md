@@ -28,7 +28,7 @@ them in the Sourcegraph 3.18 release. This makes campaigns available to more org
 Campaigns allow you to make large-scale code changes across many repositories and different code hosts, and monitor their progress. For more information on campaign, see the
 [Sourcegraph documentation](https://docs.sourcegraph.com/user/campaigns).
 
-## Highlight all elements on hover (#10868)
+## Highlight all elements on hover (#[10868](https://github.com/sourcegraph/sourcegraph/issues/10868))
 Developer: [Eric Fritz](https://github.com/efritz)
 
 ![Highlight all elements](./videos and gifs/highlight-all-elements.gif "Highlight all elements on hover")
