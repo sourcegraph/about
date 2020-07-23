@@ -92,7 +92,7 @@ Creating a new managed instance involves following the steps below.
 1. Open and edit `infrastructure.tf` according to the comments within and commit the result.
 1. In `deploy-sourcegraph-managed/$COMPANY` run `terraform init && terraform plan && terraform apply`
 1. Access the instance over SSH and confirm all containers are healthy (instructions below).
-1. In the infrastructure repository, [create a DNS entry](https://github.com/sourcegraph/infrastructure/blob/master/dns/sourcegraph-managed.tf) that points `$COMPANY.sourcegraph.com` to the `prod-global-address` IP following "Finding the external load balancer IP" below.
+1. In the infrastructure repository, [create a DNS entry](https://github.com/sourcegraph/infrastructure/blob/master/dns/sourcegraph-managed.tf) that points `$COMPANY.sourcegraph.com` to the `default-global-address` IP following "Finding the external load balancer IP" below.
 1. In the GCP web UI under **Network services** > **Load balancers** > select the load balancer > watch the SSL certificate status. It may take some time for it to become active.
 1. Confirm all containers come up healthy (`docker ps` should report them as such)
 1. Create a PR for review.
@@ -107,30 +107,46 @@ Creating a new managed instance involves following the steps below.
 
 ## Operation access
 
-#### SSH access
+#### Red/black deployment model
+
+At any point in time only one deployment is the active production instance, this is noted in `deploy-sourcegraph-managed/$CUSTOMER/terraform.tfvars`, and except during upgrades only one is running. You can see this via:
 
 ```sh
-gcloud beta compute ssh --zone "us-central1-f" "prod" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY"
+$ gcloud compute instances list --project=sourcegraph-managed-$COMPANY
+NAME                  ZONE           MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP  STATUS
+default-red-instance  us-central1-f  n1-standard-8               10.2.0.2                  RUNNING
+```
+
+During an upgrade, both `default-red-instance` and `default-black-instance` would be present. One being production, the other being the "new" upgraded production instance. When the upgrade is complete, the old one is turned off (red/black swap).
+
+#### SSH access
+
+Locate the GCP instance you'd like to access (usually either `default-red-instance` or `default-black-instance`), and then:
+
+```sh
+gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY" default-red-instance
 ```
 
 #### Port-forwarding (direct access to Caddy, Jaeger, and Grafana)
 
-This will port-forward `localhost:4444` to port `80` on the VM instance:
+Locate the GCP instance you'd like to access (usually either `default-red-instance` or `default-black-instance`), and then:
 
 ```sh
-gcloud compute start-iap-tunnel prod 80 --local-host-port=localhost:4444 --zone "us-central1-f" --project "sourcegraph-managed-$COMPANY"
+gcloud compute start-iap-tunnel 80 --local-host-port=localhost:4444 --zone "us-central1-f" --project "sourcegraph-managed-$COMPANY" default-red-instance
 ```
 
-Replace `80` with `3370` for Grafana, or `16686` for Jaeger. Note that other ports are prevented by the `prod-allow-iap-tcp-ingress` firewall.
+This will port-forward `localhost:4444` to port `80` on the VM instance:
+
+Replace `80` with `3370` for Grafana, or `16686` for Jaeger. Note that other ports are prevented by the `allow-iap-tcp-ingress` firewall rule.
 
 #### Access through the GCP load balancer as a user would
 
 Users access Sourcegraph through GCP Load Balancer/HTTPS -> the Caddy load balancer/HTTP -> the actual sourcegraph-frontend/HTTP. If you suspect that an issue is being introduced by the GCP load balancer itself, e.g. perhaps a request is timing out there due to some misconfiguration, then you will need to access through the GCP load balancer itself. If the managed instance is protected by the load balancer firewall / not publicly accessible on the internet, then it is not possible for you to access `$COMPANY.sourcegraph.com` as a normal user would.
 
-You can workaround this by proxying your internet traffic through the instance itself - which is allowed to reach and go through the public internet -> the GCP load balancer -> back to the instance itself. To do this, create a SOCKS5 proxy tunnel over SSH:
+You can workaround this by proxying your internet traffic through the instance itself - which is allowed to reach and go through the public internet -> the GCP load balancer -> back to the instance itself. To do this, create a SOCKS5 proxy tunnel over SSH (replace `default-red-instance`, if needed):
 
 ```ssh
-bash -c '(gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY" prod -- -N -p 22 -D localhost:5000) & sleep 600; kill $!'
+bash -c '(gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY" default-red-instance -- -N -p 22 -D localhost:5000) & sleep 600; kill $!'
 ```
 
 Then test you can access it using `curl`:
@@ -300,7 +316,7 @@ None of this is to say that we will not consider switching said managed instance
 If `terraform apply` is giving you:
 
 ```
-Error: Error when reading or editing NetworkEndpointGroup: googleapi: Error 400: The network_endpoint_group resource 'projects/sourcegraph-managed-$COMPANY/zones/us-central1-f/networkEndpointGroups/prod-neg' is already being used by 'projects/sourcegraph-managed-$COMPANY/global/backendServices/prod-backend-service', resourceInUseByAnotherResource
+Error: Error when reading or editing NetworkEndpointGroup: googleapi: Error 400: The network_endpoint_group resource 'projects/sourcegraph-managed-$COMPANY/zones/us-central1-f/networkEndpointGroups/default-neg' is already being used by 'projects/sourcegraph-managed-$COMPANY/global/backendServices/default-backend-service', resourceInUseByAnotherResource
 ```
 
 Or similar - this indicates a bug in Terraform where GCP requires an associated resource to be deleted first and Terraform is trying to delete (or create) that resource in the wrong order.
