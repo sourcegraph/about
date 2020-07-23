@@ -12,7 +12,7 @@ Make Sourcegraph secure by design.
 
 ## Philosophy
 
-At Sourcegraph we think that security is an enabler for the business. Sourcegraph is committed to proactive security, addressing vulnerabilities in a timely manner. We approach security with a can-do philosophy, and look to achieve product goals while maintaining a positive posture, and increasing our security stance over time.
+At Sourcegraph we think that security is an enabler for the business. Sourcegraph is committed to proactive security, and addressing vulnerabilities in a timely manner. We approach security with a can-do philosophy, and look to achieve product goals while maintaining a positive posture, and increasing our security stance over time.
 
 ## Responsibilities
 
