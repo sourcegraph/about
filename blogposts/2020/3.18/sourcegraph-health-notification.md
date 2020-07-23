@@ -1,8 +1,8 @@
 ---
 title: "Getting notified about the health of Sourcegraph is even easier"
-author: 'Robert Lin'
+author: Robert Lin
 publishDate: 2020-07-20T00:00-07:00
-tags: ["blog"]
+tags: [blog]
 slug: sourcegraph-health-notification
 heroImage: /blog/3.18-release-blog-img.jpg
 published: true
