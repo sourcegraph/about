@@ -28,7 +28,7 @@ We’re improving Sourcegraph universal code search continuously, to help you so
 
 -   [Getting notified about the health of Sourcegraph is even easier](https://about.sourcegraph.com/blog/sourcegraph-health-notification)
 
-    Alerts are now delivered with detailed information, including links to potential solutions. Additionally, we now monitor container health and over/under-provisioning in all deployment modes -- so you will even get alerts if Sourcegraph needs more resources or could do with less!
+    Alerts are now delivered with detailed information, including links to potential solutions. Additionally, we now monitor container health and over/under-provisioning in all deployment modes – so you will even get alerts if Sourcegraph needs more resources or could do with less!
 
 -   [Custom search pages on Sourcegraph Cloud](https://about.sourcegraph.com/blog/custom-search-pages)
 
@@ -65,9 +65,9 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 ## Share your feedback
 
 Whether you use Sourcegraph 20 times per day or are new to it, we'd love to hear what you think!
--     get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph),
--     file an issue on [GitHub](https://github.com/sourcegraph/sourcegraph/issues), or
--     email us [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
+-     Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph),
+-     File an issue on [GitHub](https://github.com/sourcegraph/sourcegraph/issues), or
+-     Email us [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
 We look forward to hearing from you!
 
