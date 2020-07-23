@@ -102,7 +102,7 @@ Campaigns are currently in beta. During the beta period, campaigns are free to u
 
 ## Best-in-class syntax highlighting
 
-![syntax_highlighting](https://storage.googleapis.com/sourcegraph-assets/blog/diff.gif?v=2)
+![syntax_highlighting](https://sourcegraphstatic.com/blog/diff.gif?v=2)
 
 Sourcegraph 3.16 includes major improvements to syntax highlighting throughout Sourcegraph. In addition to general improvements, six new languages are supported (Smarty, Ethereum / Solidity / Vyper, Cuda, COBOL, vb.NET, and ASP.NET), and 30 new file extensions are now detected.
 
@@ -126,7 +126,7 @@ Our precise code intelligence backend has been rewritten from TypeScript to Go. 
 
 ## Discover useful scopes with `repogroup` autocompletion
 
-![Repogroup-autocompletion](https://storage.googleapis.com/sourcegraph-assets/repogroup_completion.gif)
+![Repogroup-autocompletion](https://sourcegraphstatic.com/repogroup_completion.gif)
 
 The `repogroup` filter is useful for creating collections of repositories to search over within Sourcegraph. However, there wasn’t an easy way for users to learn what `repogroups` were available. Now, Sourcegraph provides autocompletion to help you discover available options. This happens automatically when you start typing, or can be triggered using the ctrl-spacebar keyboard shortcut. Try it out in the new smart search bar for plain text mode or in interactive mode!
 

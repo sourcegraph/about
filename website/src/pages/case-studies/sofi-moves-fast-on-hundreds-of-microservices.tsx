@@ -24,7 +24,7 @@ export default ((props: any) => (
                 author: 'Ursula Robertson, Engineering Manager, SoFi',
                 image: '/case-studies/ursula-robertson-sofi.jpg',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/sofi_case_study.pdf"
+            pdf="https://sourcegraphstatic.com/sofi_case_study.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
