@@ -1,6 +1,20 @@
 {
   "y2020": [
     {
+      "newsSource": "Wall Street Journal",
+      "newsTitle": "Tech Startup Funding Declines as Pandemic Drags On",
+      "newsDate": "July 23, 2020",
+      "newsLink": "https://www.wsj.com/articles/tech-startup-funding-declines-as-pandemic-drags-on-11595494800",
+      "newsImage": "/external-logos/wsj-logo.png"
+    },
+    {
+      "newsSource": "Software Engineering Daily",
+      "newsTitle": "Podcast: Sourcegraph: Code Search and Intelligence with Beyang Liu",
+      "newsDate": "July 22, 2020",
+      "newsLink": "https://softwareengineeringdaily.com/2020/07/22/sourcegraph-code-search-and-intelligence-with-beyang-liu/",
+      "newsImage": "/external-logos/software-engineering-daily-logo.png"
+    },
+    {
       "newsSource": "KMWorld",
       "newsTitle": "Sourcegraph new funding to innovate with Sourcegraph Cloud and Universal Code Search",
       "newsDate": "July 16, 2020",
@@ -48,6 +62,13 @@
       "newsDate": "July 14, 2020",
       "newsLink": "https://www.businessinsider.com/sourcegraph-adds-to-funding-doubles-headcount-and-lands-new-customers-2020-7",
       "newsImage": "/external-logos/business-insider-logo.png"
+    },
+    {
+      "newsSource": "Digital Anarchist",
+      "newsTitle": "Podcast: Quinn Slack – TechStrong TV",
+      "newsDate": "July 13, 2020",
+      "newsLink": "https://digitalanarchist.com/videos/featured-guests/quinn-slack-techstrong-tv-2",
+      "newsImage": "/external-logos/digital-anarchist-logo.png"
     },
     {
       "newsSource": "InfoQ",
