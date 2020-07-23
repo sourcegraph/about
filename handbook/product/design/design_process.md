@@ -137,7 +137,7 @@ While asynchronous communication is a core attribute of remote work, key moments
 
 - Design preperation
     - Ensure colors utilize the named color styles vs. the color palette where possible 
-        - This adds our color style variable name to the code palette 
+        - Doing so adds our color style variable name to the code palette so developers do not have to translate hex to scss variables
     - Redline any colors, styles, margins and paddings unique to the designs (not provided by a component)
     - If introducing new colors, type, or other design elements, ask for review by an engineer focused on styles and React components
     - Ensure any illustrations work in both light and dark mode 
