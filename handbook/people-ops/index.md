@@ -23,6 +23,7 @@
 - [Vacation/FTO](https://github.com/sourcegraph/Graphbook/blob/master/Holidays,%20FTO,%20and%20leaves%20of%20absence/Vacation%20and%20FTO.md)
 - [Holidays](holidays.md)
 - [Donations](donations.md)
+- [Invoices](invoices.md)
 
 ## [Roles](roles.md)
 
