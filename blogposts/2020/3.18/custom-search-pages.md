@@ -12,9 +12,7 @@ GitHub issue: [#11526](https://github.com/sourcegraph/sourcegraph/issues/11526)
 
 Developer: [Farhan Attamimi](https://github.com/attfarhan)
 
-Sourcegraph 3.18 has added new search pages that scope searches to a collection of repositories. This helps new users coming to Sourcegraph search over
-code that is more relevant to them, and introduces them to interesting queries in the process. Many communities will be excited to pick this up and
-have pages created specifically for them (e.g. Kubernetes).
+Sourcegraph 3.18 has added new search pages that scope searches to a collection of repositories. This helps new users coming to Sourcegraph search over code that is more relevant to them, and introduces them to interesting queries in the process. Many communities will be excited to pick this up and have pages created specifically for them (e.g., Kubernetes).
 
 Examples include:
 
@@ -22,7 +20,7 @@ Examples include:
 
   > ![K8s search page](https://sourcegraphstatic.com/blog/3.18/k8s-search-page.png "K8s search page")
 
-- Python 2 to Python 3 migration examples
+- Python 2 to Python 3 migration
 
   > ![Python search page](https://sourcegraphstatic.com/blog/3.18/resize-python-search-page.png "Python search page")
 
