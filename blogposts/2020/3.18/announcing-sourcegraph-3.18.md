@@ -16,15 +16,15 @@ We’re improving Sourcegraph universal code search continuously, to help you so
 
 -   [Search across multiple revisions](https://about.sourcegraph.com/blog/search-multiple-revisions)
 
-    You can now search across multiple revisions of the same repository by listing multiple branch names (or other revision specifications) separated by `:` in your query. This helps you understand the differences between code at different branches (especially for release branches that have diverged).
+    You can now search across multiple revisions of the same repository by listing multiple branch names (or other revision specifications). For example, to search across multiple specific branches, you’d use something like `repo:myrepo@branch1:branch2:branch2` in your query. This helps you see all release branches that contain a particular bug so you can be sure to fix it in all the right places.
 
 -   [Small but mighty new features](https://about.sourcegraph.com/blog/small-and-mighty-features)
 
-    Based on lots of feedback, we added support for campaigns in GitLab. We’ve also improved privacy feedback when adding repositories, and created custom search pages for Sourcegraph Cloud.
+    Based on lots of feedback, we've added support for campaigns in GitLab. We’ve also improved privacy feedback when adding repositories.
 
 -   [New C++ precise code intelligence solution](https://about.sourcegraph.com/blog/c-plus-plus-code-intel)
 
-    We wrote a new LSIF indexer based on clangd. This means that developers using C and C++ now have access to precise code intelligence. Developers using the original C++ LSIF indexer based on DXP will see noticeable improvements with this new implementation; faster than before, and now with hovers.
+    We wrote a new LSIF indexer based on clangd. This means that developers using C and C++ now have access to precise code intelligence. Developers using the original C++ LSIF indexer based on DXR will see noticeable improvements with this new implementation: it's faster now, and has hovers.
 
 -   [Getting notified about the health of Sourcegraph is even easier](https://about.sourcegraph.com/blog/sourcegraph-health-notification)
 
@@ -32,11 +32,11 @@ We’re improving Sourcegraph universal code search continuously, to help you so
 
 -   [Custom search pages on Sourcegraph Cloud](https://about.sourcegraph.com/blog/custom-search-pages)
 
-    This helps you search over code that is more relevant to you, and introduces you to interesting queries in the process. Additionally, communities can pick this up and have pages created specifically for them (for example, Kubernetes).
+    You can now search all of the code for several popular open-source projects, such as Kubernetes and React, on project-specific search pages. We know many core team members of these projects use Sourcegraph, and this will help them spread the joy of code search to more contributors.
 
 -   [Changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/CHANGELOG.md)
 
-    All the details for what changed and why, can be found here.
+    Here's where you'll find all the details for what changed and why.
 
 
 ## Thank you!
