@@ -8,7 +8,7 @@ heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
 
-We’re improving Sourcegraph universal code search continuously, to help you solve the Big Code problems you face, all day every day. Here's how we're doing it.
+We’re improving Sourcegraph universal code search continuously, to help you solve the Big Code problems you face, all day every day. Here's what's new in Sourcegraph 3.18:
 
 -   [Indexed non-master branches](https://about.sourcegraph.com/blog/indexed-non-master-branches)
 
