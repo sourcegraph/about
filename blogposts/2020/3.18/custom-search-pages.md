@@ -20,22 +20,22 @@ Examples include:
 
 - Kubernetes
 
-  > ![K8s search page](https://storage.cloud.google.com/sourcegraph-assets/blog/k8s-search-page.png "K8s search page")
+  > ![K8s search page](https://sourcegraphstatic.com/blog/3.18/k8s-search-page.png "K8s search page")
 
 - Python 2 to Python 3 migration examples
 
-  > ![Python search page](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/resize-python-search-page.png "Python search page")
+  > ![Python search page](https://sourcegraphstatic.com/blog/3.18/resize-python-search-page.png "Python search page")
 
 - Golang
 
-  > ![Golang search page](https://storage.cloud.google.com/sourcegraph-assets/blog/golang-search-page.png "Golang search page")
+  > ![Golang search page](https://sourcegraphstatic.com/blog/3.18/golang-search-page.png "Golang search page")
 
 - React Hooks
 
-  > ![React search page](https://storage.cloud.google.com/sourcegraph-assets/blog/react-search-page.png "React search page")
+  > ![React search page](https://sourcegraphstatic.com/blog/3.18/react-search-page.png "React search page")
 
 - Android
 
-  > ![Android search page](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/resize-android-search-page.png "Android search page")
+  > ![Android search page](https://sourcegraphstatic.com/blog/3.18/resize-android-search-page.png "Android search page")
 
 ...and more to come. If you have suggestions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose).
