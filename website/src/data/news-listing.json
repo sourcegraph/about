@@ -1,6 +1,20 @@
 {
   "y2020": [
     {
+      "newsSource": "KMWorld",
+      "newsTitle": "Sourcegraph new funding to innovate with Sourcegraph Cloud and Universal Code Search",
+      "newsDate": "July 16, 2020",
+      "newsLink": "https://www.kmworld.com/Articles/News/News/Sourcegraph-new-funding-to-innovate-with-Sourcegraph-Cloud-and-Universal-Code-Search-141852.aspx",
+      "newsImage": "/external-logos/kmworld-logo.svg"
+    },
+    {
+      "newsSource": "Silicon Valley Business Journal",
+      "newsTitle": "The Funded: 10 Bay Area startups score more than $270M at midweek",
+      "newsDate": "July 15, 2020",
+      "newsLink": "https://www.bizjournals.com/sanjose/news/2020/07/15/10-bay-area-startups-score-more-than-270-million.html",
+      "newsImage": "/external-logos/svbj-logo.png"
+    },
+    {
       "newsSource": "Devops.com",
       "newsTitle": "Hiring world-class talent to build Sourcegraph Cloud",
       "newsDate": "July 15, 2020",

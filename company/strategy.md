@@ -18,7 +18,7 @@ Everything we do stems from our [purpose](#purpose), to make it so **everyone ca
 - 1 year
   - [1-year vision](#1-year-vision)
   - [Product direction](#product-direction)
-  - [OKRs](#okrs)
+  - [Goals](#goals)
 
 ## Purpose
 
@@ -127,6 +127,6 @@ Coding itself is a technology, and we anticipate the technology adoption curve w
 
 Our [product direction](../direction/index.md) describes what we plan to build to make this vision real.
 
-## [OKRs (goals)](okrs/index.md) {#okrs}
+## [Goals](goals/index.md)
 
-Our [OKRs (goals)](okrs/index.md) describe what each of us is doing this quarter to work toward our mission.
+Our [goals](goals/index.md) describe what each of us is working toward now (so that we succeed in our long-term mission).

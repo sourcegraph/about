@@ -26,7 +26,7 @@ export default ((props: any) => (
                 author: justinPhilips,
                 image: '/case-studies/justin-phillips-lyft.jpg',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/Lyft-Sourcegraph-case-study.pdf"
+            pdf="https://sourcegraphstatic.com/Lyft-Sourcegraph-case-study.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">

@@ -24,7 +24,7 @@ export default ((props: any) => (
                 author: 'Thorn Software Engineer Jacob Gillespie',
                 image: '/case-studies/jacob-gillespie-thorn-square.jpg',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
+            pdf="https://sourcegraphstatic.com/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">

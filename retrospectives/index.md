@@ -30,13 +30,13 @@ What feedback or thoughts would you like to share with the team? Here are some t
 Add your feedback by editing this document directly.
 ```
 
-Send a Slack message and a calendar invite for the retrospective meeting that includes a link to this document.
+Send a Slack message and a calendar invite for the retrospective meeting that includes a link to this document. See [engineering milestone retrospectives](#engineering-milestone-retrospectives) for more on the feedback to collect for retrospectives of that nature.
 
 If it is getting close to or past the 24 hour feedback deadline, privately remind anyone who has not submitted feedback.
 
 ### Retrospective meeting
 
-You responsible for the agenda and flow of the retrospective meeting.
+The organizer is responsible for the agenda and flow of the retrospective meeting.
 
 Share your screen which has the retrospective document open and a [timer](https://www.google.com/search?q=timer) to keep the meeting on track.
 
@@ -76,3 +76,33 @@ Based on the vote distribution, choose which topics are going to be discussed an
 Ensure you ask everyone what their thoughts on each topic are. Everyone is different; some people are loud and very outspoken. Some are quiet and observe more. It's important to capture everyone's opinions.
 
 For each topic, if necessary, ensure there's a written down actionable commitment with an agreed upon owner who will pursue its resolution. Additionally, capture important discussion points for each topic in the shared document.
+
+## Engineering milestone retrospectives
+
+For an engineering milestone retrospective, the organizer (often the [engineering manager](../handbook/engineering/roles.md#engineering-manager)) asks everyone to review the previous milestone tracking issue, the planned work assigned to you, what got done, what didn’t. To facilitate this meeting, use the Start/Stop/Continue format, although its possible to other formats as required.
+
+### Start
+
+_Ideas that the team should be doing but are not doing, new ideas worth discussing to address current problems._
+
+- A new person has joined team. What project would you suggest he should work on?
+- The deadline for project X was removed. What extra features would you add to project X?
+- What went well? What did you like?
+- What do you wish you had done differently?
+
+### Stop
+
+_Ideas that are not delivering results or task which require a lot of time for little return._
+
+- What would you cut from your workday if you had to leave early for vacation?
+- Have you ever noticed an area of your job that consistently gets bumped to the next day or even next month? What is that and why is it so easy to defer until a later date?
+- Someone has left our team. What would we have to lose to still meet deadlines?
+- What was painful about the milestone? How can we address that pain moving forward?
+
+### Continue
+
+_Ideas that are creating value or we should continue to explore as they are showing positive results._
+
+- What ideas or projects seems to be going in the right direction but need more time?
+- Which responsibilities do you personally find most fulfilling?
+- What is something that our customer loves us doing?
