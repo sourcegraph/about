@@ -101,7 +101,9 @@ The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker
 
 ## Custom additions
 
-TODO: how we handle out-of-band metrics, alerts (things we don't ship to customers)
+There is currently no process defining how custom additions should be made to our monitoring stack (for example, to accomodate Cloud-specific needs).
+
+[RFC TODO](https://docs.google.com/document/d/1ub1xsrKTdjA5n-4MAk4AZXtInmgJlMwJ0pI1opkq5mo/) is an ongoing discussion on what custom additions might look like.
 
 ## Sourcegraph Cloud
 
