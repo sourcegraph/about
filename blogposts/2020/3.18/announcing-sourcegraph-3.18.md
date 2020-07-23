@@ -4,8 +4,8 @@ author: Laureen Hudson
 publishDate: 2020-MM-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.18
-heroImage: /blog/3.18-release-blog-img.jpg
-published: true
+heroImage: https://github.com/sourcegraph/about/blob/master/website/static/blog/3.18-release-blog-img.jpg
+published: false
 ---
 
 We’re improving Sourcegraph universal code search continuously, to help you solve the Big Code problems you face, all day every day. Here's how we're doing it.
