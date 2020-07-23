@@ -5,7 +5,7 @@ publishDate: 2020-07-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.18
 heroImage: https://github.com/sourcegraph/about/blob/master/website/static/blog/3.18-release-blog-img.jpg
-published: false
+published: true
 ---
 
 We’re improving Sourcegraph universal code search continuously, to help you solve the Big Code problems you face, all day every day. Here's what's new in Sourcegraph 3.18:
