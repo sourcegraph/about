@@ -1,14 +1,14 @@
 ---
 title: "Sourcegraph 3.18: Search across multiple revisions and non-master branches, custom search pages, campaigns now support GitLab, new C++ precise code intelligence"
 author: Laureen Hudson
-publishDate: 2020-MM-20T10:00-07:00
+publishDate: 2020-07-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.18
 heroImage: https://github.com/sourcegraph/about/blob/master/website/static/blog/3.18-release-blog-img.jpg
 published: false
 ---
 
-We’re improving Sourcegraph universal code search continuously, to help you solve the Big Code problems you face, all day every day. Here's how we're doing it.
+We’re improving Sourcegraph universal code search continuously, to help you solve the Big Code problems you face, all day every day. Here's what's new in Sourcegraph 3.18:
 
 -   [Indexed non-master branches](https://about.sourcegraph.com/blog/indexed-non-master-branches)
 
