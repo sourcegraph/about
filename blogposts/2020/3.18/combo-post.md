@@ -45,7 +45,7 @@ GitHub issue: [#10868](https://github.com/sourcegraph/sourcegraph/issues/10868)
 
 Developer: [Eric Fritz](https://github.com/efritz)
 
-![Highlight all elements](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/healthy-sourcegraph.png "highlight all elements")
+![Highlight all elements](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/highlight-all-elements.png "highlight all elements")
 
 When a token is hovered or selected in a file, we now highlight all visible instances of that token. This makes it easy to see all references of a variable at-a-glance.
 Many developers have had to use the browser search (cmd-f) functionality to work around the lack of support of this feature — this makes it first class!
