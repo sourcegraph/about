@@ -5,7 +5,7 @@ publishDate: 2020-07-20T00:00-07:00
 tags: [blog]
 slug: small-and-mighty-features
 heroImage: /blog/3.18-release-blog-img.jpg
-published: true
+published: false
 ---
 
 ## Improved add / update repository flow for users trying private versions of Sourcegraph
