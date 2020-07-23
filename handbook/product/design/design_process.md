@@ -142,7 +142,7 @@ While asynchronous communication is a core attribute of remote work, key moments
     - If introducing new colors, type, or other design elements, ask for review by an engineer focused on styles and React components
     - Ensure any illustrations work in both light and dark mode 
     - TODO: Determine method of illustration/image exports
-
+    - TODO: design-engineering review process (probably using Chromatic)
 ### Metrics collection
 
 - In the RFC process, the definition of success will include items which can be measured and evaluated
