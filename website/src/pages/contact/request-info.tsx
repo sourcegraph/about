@@ -13,10 +13,31 @@ export default class TrialPage extends React.Component<any, any> {
             events: [],
         }
     }
+
+    public handleOnFormSubmit = event => {
+        if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+            const formData = event.data.data
+            const numEng = formData.find(({ name }) => name === 'number_of_eng')
+            if (numEng.value !== '11-200') {
+                setTimeout(() => {
+                    window.location.assign('https://info.sourcegraph.com/request-info-scheduling-enterprise')
+                }, 100)
+            }
+            console.log(formData)
+        }
+    }
+
+    public componentWillUnmount(): void {
+        window.removeEventListener('message', this.handleOnFormSubmit)
+    }
+
     public componentDidMount(): void {
+        window.addEventListener('message', this.handleOnFormSubmit)
+
+        const selectedEngCount = ''
         createHubSpotForm({
             portalId: '2762526',
-            formId: '202906aa-b46d-4657-86c4-30fbfda2413f',
+            formId: 'ee4e19f9-29e1-4a89-8db5-f7efdcdb240b',
             targetId: 'hubspotRequestTrialForm',
         })
         if (document) {
