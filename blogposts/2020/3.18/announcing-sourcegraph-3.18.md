@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.18: Search across multiple revisions and non-master branches, custom search pages, campaigns now support GitLab, new C++ precise code intelligence"
 author: Laureen Hudson
-publishDate: 2020-MM-20T10:00-07:00
+publishDate: 2020-07-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.18
 heroImage: /blog/3.18-release-blog-img.jpg
