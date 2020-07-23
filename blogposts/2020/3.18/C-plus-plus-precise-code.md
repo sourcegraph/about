@@ -5,7 +5,7 @@ publishDate: 2020-07-20T00:00-07:00
 tags: [blog]
 slug: c-plus-plus-code-intel
 heroImage: /blog/3.18-release-blog-img.jpg
-published: true
+published: false
 ---
 
 GitHub issue: [#10175](https://github.com/sourcegraph/sourcegraph/issues/10175)
