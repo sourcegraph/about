@@ -32,7 +32,7 @@ You'll have to get some basics set up in your first few days:
 
 ### Starter tasks
 
-Your manager will assign to you three starter tasks that you should aim to complete in your first two weeks. These tasks are small, atomic, and intended to expose you to different parts of our codebase and product: it's important that you build the flexibility to fix any problem you'll be faced with at Sourcegraph, and don't narrow down your comfort zone to a narrow part of our codebase and product.
+Your manager will assign to you three starter tasks that you should aim to complete in your first three weeks. These tasks are small, atomic, and intended to expose you to different parts of our codebase and product: it's important that you build the flexibility to fix any problem you'll be faced with at Sourcegraph, and don't narrow down your comfort zone to a certain part of our codebase or product.
 
 As you're working on these tasks:
 - Aim to be as incremental as possible:
@@ -51,8 +51,8 @@ Reach out to every member of your direct team, and set up a two-hour pairing ses
 Take the first 20-30 minutes of the session to have an unstructured, introductory chat. Then, start hacking! Your teammate will set up a [live share](https://visualstudio.microsoft.com/services/live-share/) and walk you through what they're currently working on. Ask as many questions as possible, to try to understand:
 - What problem is your teammate trying to solve?
 - Why is that problem important? What team goal does it fit under?
-- Was are relevant [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs), [PDs](https://about.sourcegraph.com/handbook/product/product_documents), GitHub issues or documentation pages?
-- What parts of our codebase are involved in solving the problem?
+- What are relevant [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs), [PDs](https://about.sourcegraph.com/handbook/product/product_documents), GitHub issues or documentation pages?
+- What parts of our codebase need to be changed to solve this problem?
 - How will the code being changed be tested?
 - Will there be future work needed after solving this problem? How could you contribute?
 
@@ -76,7 +76,7 @@ By now, you'll have shipped multiple improvements, paired with all members of yo
 - Prepare a proposal for how you'll work with the team solving that problem in the following three weeks. Your work may include:
     - Working on previously identified GitHub issues
     - Doing spikes to solve unknowns and learn more about the problem
-    - Writing RFCs to propose solutions, and planning development work resulting from that RFC
+    - Writing RFCs to propose solutions, and planning resulting development work
 - Discuss your plan with the team and your manager.
 - Get hacking!
 
