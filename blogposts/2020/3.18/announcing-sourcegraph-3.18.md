@@ -1,32 +1,28 @@
 ---
-title: "Sourcegraph 3.18: Search across multiple revisions and non-master branches, custom search pages, campaigns now support GitLab, new C++ precise code intelligence"
+title: "Sourcegraph 3.18: Multi-revision search, custom search pages, Campaigns for GitLab, better C++, and more"
 author: Laureen Hudson
 publishDate: 2020-07-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.18
-heroImage: /blog/3.18-release-blog-img.png
+heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
 
-We’re improving Sourcegraph universal code search continuously, to help you solve the Big Code problems you face, all day every day. Here's what's new in Sourcegraph 3.18:
-
-- [Indexed non-master branches](/blog/indexed-non-master-branches)
-
-  Often, you need to search code that isn’t in your default branch, like long-lived release branches or important tags. You can now index multiple branches (not just the default branch) to make these kinds of searches much faster.
+Our team has been hard at work. Here's what's new in Sourcegraph 3.18!
 
 - [Search across multiple revisions](/blog/search-multiple-revisions)
 
-  You can now search across multiple revisions of the same repository by listing multiple branch names (or other revision specifications). For example, to search across multiple specific branches, you’d use something like `repo:myrepo@branch1:branch2:branch2` in your query. This helps you see all release branches that contain a particular bug so you can be sure to fix it in all the right places.
+  You can now search across multiple revisions of the same repository by listing multiple branch names (or other revision specifiers). For example, to search across multiple branches, you could use something like `repo:myrepo@branch1:branch2:branch2` in your query. This can come in handy in situations like searching all release branches for a particular bug so you can fix it for all releases of your application.
 
-- [Small but mighty new features](/blog/small-and-mighty-features)
+- [Indexed non-master branches](/blog/indexed-non-master-branches)
 
-  Based on lots of feedback, we've added support for campaigns in GitLab. We’ve also improved privacy feedback when adding repositories.
+  Search is great, but indexing makes it fast. Just as you can now search over multiple revisions simultaneously, you can also have Sourcegraph index multiple non-default revisions. Many users have long-lived release branches they'd like to search as frequently as their default branch, and this means that search will be lightning fast for every important revision in your codebase.
 
-- [New C++ precise code intelligence solution](/blog/c-plus-plus-code-intel)
+- [Better C++ precise code intelligence](/blog/c-plus-plus-code-intel)
 
-  We wrote a new LSIF indexer based on clangd. This means that developers using C and C++ now have access to precise code intelligence. Developers using the original C++ LSIF indexer based on DXR will see noticeable improvements with this new implementation: it's faster now, and has hovers.
+  We wrote a new LSIF indexer for C and C++ based on [clangd](https://clangd.llvm.org). This means that developers using C and C++ now have access to precise code intelligence. Developers using the original C++ LSIF indexer based on DXR will see noticeable improvements with this new implementation: it's faster now and supports hover tooltips.
 
-- [Getting notified about the health of Sourcegraph is even easier](/blog/sourcegraph-health-notification)
+- [Getting notified about the health of Sourcegraph is easier](/blog/sourcegraph-health-notification)
 
   Alerts are now delivered with detailed information, including links to potential solutions. Additionally, we now monitor container health and over/under-provisioning in all deployment modes, so you will be alerted if Sourcegraph needs more resources or could do with less.
 
@@ -34,11 +30,13 @@ We’re improving Sourcegraph universal code search continuously, to help you so
 
   You can now search all of the code for several popular open-source projects, such as Kubernetes and React, on project-specific search pages. We know many core team members of these projects use Sourcegraph, and this will help them spread the joy of code search to more contributors.
 
-- [Changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/CHANGELOG.md)
+- [Small but useful improvements](/blog/small-but-useful-improvements)
 
-  Here's where you'll find all the details for what changed and why.
+  By popular demand, we've added support for Campaigns in GitLab. We’ve also improved in-product documentation for adding code hosts and repositories to Sourcegraph.
 
-## Thank you!
+Check out the [changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/CHANGELOG.md) for all the details of what changed and why.
+
+## Thank you
 
 Thank you to the many people who contributed to Sourcegraph since the last release!
 
@@ -65,9 +63,9 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 Whether you use Sourcegraph 20 times per day or are new to it, we'd love to hear what you think!
 
--     Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph),
+-     Get in touch on Twitter :[@srcgraph](https://twitter.com/srcgraph),
 -     File an issue on [GitHub](https://github.com/sourcegraph/sourcegraph/issues), or
--     Email us [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
+-     Email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
 We look forward to hearing from you!
 

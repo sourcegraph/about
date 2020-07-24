@@ -3,7 +3,7 @@ title: "Small but useful improvements"
 author: Loïc Guychard, Adam Harvey, Eric Fritz
 publishDate: 2020-07-20T00:00-07:00
 tags: [blog]
-slug: small-but-useful-features
+slug: small-but-useful-improvements
 heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
