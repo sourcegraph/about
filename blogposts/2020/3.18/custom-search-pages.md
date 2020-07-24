@@ -4,8 +4,8 @@ author: Farhan Attamimi
 publishDate: 2020-07-20T00:00-07:00
 tags: [blog]
 slug: custom-search-pages
-heroImage: /blog/3.18-release-blog-img.jpg
-published: false
+heroImage: /blog/3.18-custom-search-pages.png
+published: true
 ---
 
 GitHub issue: [#11526](https://github.com/sourcegraph/sourcegraph/issues/11526)

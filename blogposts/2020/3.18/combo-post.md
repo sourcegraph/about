@@ -4,8 +4,8 @@ author: Loïc Guychard, Adam Harvey, Eric Fritz
 publishDate: 2020-07-20T00:00-07:00
 tags: [blog]
 slug: small-and-mighty-features
-heroImage: /blog/3.18-release-blog-img.jpg
-published: false
+heroImage: /blog/3.18-small-and-mighty-features.png
+published: true
 ---
 
 ## Improved add / update repository flow for users trying private versions of Sourcegraph
@@ -16,7 +16,7 @@ Developer: [Loïc Guychard](https://github.com/lguychard)
 
 When you’re getting started setting up a Sourcegraph instance, it can be confusing to start the process of adding a code host. You may not be sure that Sourcegraph will protect the privacy of your data because there is no communication about how the software will interact with your repositories. We’ve added new language in Sourcegraph 3.18 that clarifies what information we access within the Sourcegraph UI so you can move forward with confidence.
 
-![Add repository flow](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
+![Add repository flow](https://sourcegraphstatic.com/blog/3.18/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
 
 ## Campaigns now support GitLab
 
@@ -41,6 +41,6 @@ GitHub issue: [#10868](https://github.com/sourcegraph/sourcegraph/issues/10868)
 
 Developer: [Eric Fritz](https://github.com/efritz)
 
-![Highlight all elements](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/highlight-all-elements.png "Highlight all elements")
+![Highlight all elements](https://sourcegraphstatic.com/blog/3.18/highlight-all-elements.gif "Highlight all elements")
 
 When a token is hovered or selected in a file, we now highlight all visible instances of that token. This makes it easy to see all references of a variable at-a-glance. Many developers have had to use the browser search (cmd-f) functionality to work around the lack of support of this feature – this makes it first class!
