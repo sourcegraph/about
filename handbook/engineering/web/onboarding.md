@@ -1,6 +1,6 @@
 # Onboarding
 
-Welcome to the web team! We're excited to welcome you onto the team. This document oultines the structure of your first few weeks at Sourcegraph.
+Welcome to the web team! We're excited to have you join the team. This document outlines the structure of your first few weeks at Sourcegraph.
 
 ## Status of this document
 
