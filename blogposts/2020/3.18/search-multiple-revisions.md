@@ -24,4 +24,4 @@ A search over all branches using [@\*refs/heads/](https://sourcegraph.com/search
 
 ![Search over all branches using @*refs/heads/](/blog/3.18-search-all-branches.png)
 
-Be aware that searching over all branches may be slow. The cost of searching a branch is the same cost as searching a repository. To speed this up, ensure that branches are indexed with our experimental [indexed non-master branches” feature](https://about.sourcegraph.com/blog/indexed-non-master-branches).
+Be aware that searching over all branches may be slow. The cost of searching a branch is the same cost as searching a repository. To speed this up, ensure that branches are indexed with our experimental [indexed non-master branches feature](/blog/indexed-non-master-branches).
