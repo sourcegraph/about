@@ -4,7 +4,7 @@ author: Loïc Guychard, Adam Harvey, Eric Fritz
 publishDate: 2020-07-20T04:00-07:00
 tags: [blog]
 slug: small-but-useful-improvements
-heroImage: /blog/3.18-release-blog-img.jpg
+heroImage: /blog/3.18-small-and-mighty-features.png
 published: true
 ---
 
@@ -14,7 +14,7 @@ We've improved in-product documentation to clarify how Sourcegraph fetches data 
 
 ## Campaigns now support GitLab
 
-[Campaigns](https://docs.sourcegraph.com/user/campaigns) enable you to initiate and manage large-scale code changes across your codebase, across multiple repositories *and even* multiple code hosts. Initially, only GitHub and Bitbucket Server were supported, and a lot of users cried out for GitLab support. We heard you, and [here it is](https://github.com/sourcegraph/sourcegraph/issues/11586), courtesy of the wonderful [Adam Harvey](https://github.com/LawnGnome):
+[Campaigns](https://docs.sourcegraph.com/user/campaigns) enable you to initiate and manage large-scale code changes across your codebase, across multiple repositories _and even_ multiple code hosts. Initially, only GitHub and Bitbucket Server were supported, and a lot of users cried out for GitLab support. We heard you, and [here it is](https://github.com/sourcegraph/sourcegraph/issues/11586), courtesy of the wonderful [Adam Harvey](https://github.com/LawnGnome):
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
