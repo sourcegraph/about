@@ -14,7 +14,7 @@ Futhermore, alerts are now delivered with detailed information and include links
 
 ![Sourcegraph health alerts](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/healthy-sourcegraph.png "Sourcegraph health alerts")
 
-Additionally, we now monitor container health and over/under provisioning in all deployment modes, so you will get alerts if Sourcegraph needs more resources or could do with less.
+Additionally, we now monitor container health and over/under-provisioning in all deployment modes, so you will get alerts if Sourcegraph needs more resources or could do with less.
 
 To get started with alerting, refer to [our documentation](https://docs.sourcegraph.com/admin/observability/alerting). If you run into any issues or questions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose)!
 
