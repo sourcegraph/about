@@ -8,13 +8,13 @@ heroImage: /blog/3.18-sourcegraph-health-notification.png
 published: true
 ---
 
-We continue to make improvements to Sourcegraph’s out-of-the-box instrumentation and monitoring. You can now configure critical alerts to go to Slack, PagerDuty, OpsGenie, webhooks, or email, so it's easier than ever before to get notified about critical issues.
+We continue to make improvements to Sourcegraph’s out-of-the-box instrumentation and monitoring. You can now configure critical alerts to go to Slack, PagerDuty, Opsgenie, webhooks, or email, so it's easier than ever before to get notified about critical issues.
 
 Futhermore, alerts are now delivered with detailed information and include links to potential solutions:
 
 ![Sourcegraph health alerts](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/healthy-sourcegraph.png "Sourcegraph health alerts")
 
-Additionally, we now monitor container health and over/under provisioning in all deployment modes, so you will get alerts if Sourcegraph needs more resources or could do with less.
+Additionally, we now monitor container health and over/under-provisioning in all deployment modes, so you will get alerts if Sourcegraph needs more resources or could do with less.
 
 To get started with alerting, refer to [our documentation](https://docs.sourcegraph.com/admin/observability/alerting). If you run into any issues or questions, please [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose)!
 
