@@ -14,7 +14,7 @@ GitHub issue: [#11044](https://github.com/sourcegraph/sourcegraph/issues/11044)
 
 Developer: [Loïc Guychard](https://github.com/lguychard)
 
-When you’re getting started setting up a Sourcegraph instance, it can be confusing to start the process of adding a code host. You may not be sure that Sourcegraph will protect the privacy of your data because there is no communication about how the software will interact with your repositories. We’ve added new language in Sourcegraph 3.18 that clarifies what information we access within the Sourcegraph UI so you can move forward with confidence.
+We've added in-product documentation that clarifies what data Sourcegraph accesses from your code host to address confusion that first-time users had when adding their first repositories to Sourcegraph. Sourcegraph takes data privacy seriously and only uses authentication tokens to access the data it needs to index your repositories.
 
 ![Add repository flow](https://sourcegraphstatic.com/blog/3.18/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
 
