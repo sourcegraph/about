@@ -4,8 +4,8 @@ author: Keegan Carruthers-Smith
 publishDate: 2020-07-20T00:00-07:00
 tags: [blog]
 slug: indexed-non-master-branches
-heroImage: /blog/3.18-release-blog-img.jpg
-published: false
+heroImage: /blog/3.18-indexed-non-master-branches.png
+published: true
 ---
 
 GitHub issue: [#6728](https://github.com/sourcegraph/sourcegraph/issues/6728)
