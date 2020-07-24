@@ -1,14 +1,12 @@
 ---
 title: "Indexed non-default branches"
 author: Keegan Carruthers-Smith
-publishDate: 2020-07-20T00:00-07:00
+publishDate: 2020-07-20T08:00-07:00
 tags: [blog]
 slug: indexed-non-default-branches
 heroImage: /blog/3.18-indexed-non-master-branches.png
 published: true
 ---
-
-GitHub issue: [#6728](https://github.com/sourcegraph/sourcegraph/issues/6728)
 
 Developers on some teams frequently search multiple revisions, such as long-lived release branches or important tags. We added [version contexts](/blog/sourcegraph-3.16#introducing-version-contexts-to-search-past-releases) in Sourcegraph 3.16 to make it easier for developers to search a collection of repositories at specified revisions. However, Sourcegraph still only *indexed* your default branch (whichever branch `HEAD` points to in Git, conventionally the branch called `master`). This meant that when searching a non-default branch for the first time, Sourcegraph would not consult an index, leading to long, multi-second waits for search results or in some cases, timeouts.
 
@@ -59,3 +57,5 @@ Any `repo@revision` mentioned in a version context or in `search.index.branches`
 The same periodic process that cleans up old indexes and deleted repositories will also clean up deleted branches, so this gets cleaned up automatically.
 
 This scales with the number of _unique_ documents at a path. For example, if you index a branch A which only has one file different from your default branch, the index will only grow in size by one document. So in practice most indexes won’t grow much by adding a branch. There is a limit of 64 indexed branches per repository.
+
+GitHub issue: [#6728](https://github.com/sourcegraph/sourcegraph/issues/6728)

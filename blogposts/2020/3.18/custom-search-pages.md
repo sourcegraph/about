@@ -1,14 +1,12 @@
 ---
 title: "Custom search pages on Sourcegraph Cloud"
 author: Farhan Attamimi
-publishDate: 2020-07-20T00:00-07:00
+publishDate: 2020-07-20T05:00-07:00
 tags: [blog]
 slug: custom-search-pages
 heroImage: /blog/3.18-custom-search-pages.png
 published: true
 ---
-
-GitHub issue: [#11526](https://github.com/sourcegraph/sourcegraph/issues/11526)
 
 [Sourcegraph.com](https://sourcegraph.com/search) now has custom search pages for major open-source communities. These pages provide targeted documentation with suggested queries specifically for users and contributors in each community, and searches are scoped by default to repositories relevant to that community.
 
@@ -62,3 +60,5 @@ Here are the communities currently supported:
 </a>
 
 ...and more to come. If you are a member of another community that you think would benefit from having a custom Sourcegraph search page, [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose)!
+
+GitHub issue: [#11526](https://github.com/sourcegraph/sourcegraph/issues/11526)

@@ -1,22 +1,20 @@
 ---
 title: "Small but useful improvements"
 author: Loïc Guychard, Adam Harvey, Eric Fritz
-publishDate: 2020-07-20T00:00-07:00
+publishDate: 2020-07-20T05:00-07:00
 tags: [blog]
 slug: small-but-useful-improvements
 heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
 
-## Improved add / update repository flow for users trying private versions of Sourcegraph
-
-We've improved in-product documentation to clarify how Sourcegraph fetches data from code hosts. We heard from some first-time users that they were uncertain about how Sourcegraph would use code host authorization tokens and how much additional load Sourcegraph would put on code host servers. The new docs make it clear that we use code host tokens only to fetch the data necessary to index repositories on Sourcegraph and enforce permissions.
+We've improved in-product documentation to clarify how Sourcegraph fetches data from code hosts. We heard from some first-time users that they were uncertain about how Sourcegraph would use code host auth tokens and how much additional load Sourcegraph would put on code host servers. The new docs make it clear that we use code host tokens only to fetch the data necessary to index repositories on Sourcegraph and enforce permissions.
 
 ![Add repository flow](https://storage.cloud.google.com/sourcegraph-assets/blog/3.18/add-repository-flow.png "Privacy feedback in Sourcegraph UI")
 
 ## Campaigns now support GitLab
 
-[Sourcegraph Campaigns](https://docs.sourcegraph.com/user/campaigns) enable you to initiate and manage large-scale code changes across your codebase—including across multiple repositories and even code hosts. Initially, only GitHub was supported, and a lot of users cried out for GitLab support. We heard you, and [here it is](https://github.com/sourcegraph/sourcegraph/issues/11586), courtesy of the wonderful [Adam Harvey](https://github.com/LawnGnome):
+[Sourcegraph Campaigns](https://docs.sourcegraph.com/user/campaigns) enable you to initiate and manage large-scale code changes across your codebase, across multiple repositories *and even* multiple code hosts. Initially, only GitHub and Bitbucket Server were supported, and a lot of users cried out for GitLab support. We heard you, and [here it is](https://github.com/sourcegraph/sourcegraph/issues/11586), courtesy of the wonderful [Adam Harvey](https://github.com/LawnGnome):
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">

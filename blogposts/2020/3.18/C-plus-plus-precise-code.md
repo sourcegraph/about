@@ -1,14 +1,12 @@
 ---
 title: "Better C++ precise code intelligence"
 author: Garo Brik
-publishDate: 2020-07-20T00:00-07:00
+publishDate: 2020-07-20T07:00-07:00
 tags: [blog]
 slug: c-plus-plus-code-intel
 heroImage: /blog/3.18-c-plus-plus-code-intel.png
 published: true
 ---
-
-GitHub issue: [#10175](https://github.com/sourcegraph/sourcegraph/issues/10175)
 
 As part of our ongoing effort to extend precise code intelligence to as many languages as possible, we’ve developed [lsif-clang](https://github.com/sourcegraph/lsif-clang), a new LSIF indexer based on the [clangd language server](https://clangd.llvm.org/). This means that customers using C and C++ now have access to precise code intelligence. This improves on the work we did with [lsif-cpp](https://github.com/sourcegraph/lsif-cpp) in several ways:
 
@@ -20,3 +18,5 @@ As part of our ongoing effort to extend precise code intelligence to as many lan
 lsif-clang is a fork of [clangd](https://clangd.llvm.org/), and leverages the huge body of work that has already gone into efficient indexing of C++ projects. All the credit goes to the contributors who wrote clangd; we’ve simply added LSIF as an output format.
 
 This project is still quite young, and we’re going to iterate on it quickly in the next little while. There will inevitably be some kinks with platform compatibility to iron out. It’s not guaranteed that lsif-clang will be a better fit than lsif-cpp for every project, since the C++ build ecosystem is so fragmented, so lsif-cpp will still be available indefinitely.
+
+GitHub issue: [#10175](https://github.com/sourcegraph/sourcegraph/issues/10175)

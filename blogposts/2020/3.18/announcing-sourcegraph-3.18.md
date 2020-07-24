@@ -8,7 +8,7 @@ heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
 
-Our team has been hard at work. Here's what's new in Sourcegraph 3.18!
+Our team has been hard at work continuing to improve Sourcegraph, so you can spend more time coding and less time trying to make sense of things. Sourcegraph 3.18 brings a solid lineup of new features and enhancements, including searching across multiple revisions at a time, GitLab support in Campaigns, and better C++ support:
 
 - [Search across multiple revisions](/blog/search-multiple-revisions)
 
