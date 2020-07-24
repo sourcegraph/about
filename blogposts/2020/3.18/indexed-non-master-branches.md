@@ -54,8 +54,8 @@ And here's how you can enable version contexts to search multiple repositories a
 }
 ```
 
-Any `repo@revision` mentioned in a version context or in `search.index.branches` will be indexed by the periodic indexing process (you may need to wait a few minutes). As an admin you can view what is indexed for a repository through the repository setting page (indexed section).
+Any `repo@revision` mentioned in a version context or in `search.index.branches` will be indexed by the periodic indexing process (you may need to wait a few minutes for indexing to occur). As an admin you can view what is indexed for a repository through the repository setting page ("Indexing" section).
 
 The same periodic process that cleans up old indexes and deleted repositories will also clean up deleted branches, so this gets cleaned up automatically.
 
-This scales with the number of _unique_ documents at a path. For example, if you index a branch A which only has one file different from your default branch, the index will only grow in size by one document. So in practice most indexes won’t grow much by adding a branch. We have a limit of 64 indexed branches per repository.
+This scales with the number of _unique_ documents at a path. For example, if you index a branch A which only has one file different from your default branch, the index will only grow in size by one document. So in practice most indexes won’t grow much by adding a branch. There is a limit of 64 indexed branches per repository.
