@@ -14,7 +14,7 @@ Our team has been hard at work. Here's what's new in Sourcegraph 3.18!
 
   You can now search across multiple revisions of the same repository by listing multiple branch names (or other revision specifiers). For example, to search across multiple branches, you could use something like `repo:myrepo@branch1:branch2:branch2` in your query. This can come in handy in situations like searching all release branches for a particular bug so you can fix it for all releases of your application.
 
-- [Indexed non-master branches](/blog/indexed-non-master-branches)
+- [Indexed non-default branches](/blog/indexed-non-default-branches)
 
   Search is great, but indexing makes it fast. Just as you can now search over multiple revisions simultaneously, you can also have Sourcegraph index multiple non-default revisions. Many users have long-lived release branches they'd like to search as frequently as their default branch, and this means that search will be lightning fast for every important revision in your codebase.
 
