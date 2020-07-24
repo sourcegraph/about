@@ -24,6 +24,6 @@ A search over all branches using [@\*refs/heads/](https://sourcegraph.com/search
 <img alt="Search over all branches using @*refs/heads/" src="/blog/3.18-search-all-branches.png">
 </a>
 
-Be aware that searching over all branches may be slower than searching over a single branch. The cost of searching a branch is the same cost as searching a repository. To speed this up, ensure that branches are indexed with our experimental [indexed non-default branches feature](/blog/indexed-non-master-branches).
+Be aware that searching over all branches may be slower than searching over a single branch. The cost of searching a branch is the same cost as searching a repository. To speed this up, ensure that branches are indexed with our experimental [indexed non-default branches feature](/blog/indexed-non-default-branches).
 
 GitHub issue: [#11668](https://github.com/sourcegraph/sourcegraph/issues/11668)

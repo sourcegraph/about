@@ -10,7 +10,7 @@ published: true
 
 Developers on some teams frequently search multiple revisions, such as long-lived release branches or important tags. We added [version contexts](/blog/sourcegraph-3.16#introducing-version-contexts-to-search-past-releases) in Sourcegraph 3.16 to make it easier for developers to search a collection of repositories at specified revisions. However, Sourcegraph still only *indexed* your default branch (whichever branch `HEAD` points to in Git, conventionally the branch called `master`). This meant that when searching a non-default branch for the first time, Sourcegraph would not consult an index, leading to long, multi-second waits for search results or in some cases, timeouts.
 
-In Sourcegraph 3.18, we now have added the ability to index branches other than the default branch, so that most search latencies are below one second.
+In Sourcegraph 3.18, we have added the ability to index branches other than the default branch, which should keep most searches under one second.
 
 ## Example configuration
 

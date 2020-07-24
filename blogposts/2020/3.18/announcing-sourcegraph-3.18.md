@@ -1,5 +1,5 @@
 ---
-title: "Sourcegraph 3.18: Multi-revision search, custom search pages, Campaigns for GitLab, better C++, and more"
+title: "Sourcegraph 3.18: Multi-revision search, custom search pages, campaigns for GitLab, better C++, and more"
 author: Laureen Hudson
 publishDate: 2020-07-20T10:00-07:00
 tags: [blog]
@@ -8,7 +8,7 @@ heroImage: /blog/3.18-release-blog-img.jpg
 published: true
 ---
 
-Our team has been hard at work continuing to improve Sourcegraph, so you can spend more time coding and less time trying to make sense of things. Sourcegraph 3.18 brings a solid lineup of new features and enhancements, including searching across multiple revisions at a time, GitLab support in Campaigns, and better C++ support:
+Our team has been hard at work continuing to improve Sourcegraph, so you can spend more time coding and less time trying to make sense of things. Sourcegraph 3.18 brings a solid lineup of new features and enhancements, including searching across multiple revisions at a time, GitLab support in campaigns, and better C++ support:
 
 - [Search across multiple revisions](/blog/search-multiple-revisions)
 
@@ -32,7 +32,7 @@ Our team has been hard at work continuing to improve Sourcegraph, so you can spe
 
 - [Small but useful improvements](/blog/small-but-useful-improvements)
 
-  By popular demand, we've added support for Campaigns in GitLab. We’ve also improved in-product documentation for adding code hosts and repositories to Sourcegraph.
+  By popular demand, we've added support for campaigns in GitLab. We’ve also improved in-product documentation for adding code hosts and repositories to Sourcegraph.
 
 Check out the [changelog](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@master/-/blob/CHANGELOG.md) for all the details of what changed and why.
 
@@ -63,7 +63,7 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 Whether you use Sourcegraph 20 times per day or are new to it, we'd love to hear what you think!
 
--     Get in touch on Twitter :[@srcgraph](https://twitter.com/srcgraph),
+-     Get in touch on Twitter ([@srcgraph](https://twitter.com/srcgraph)),
 -     File an issue on [GitHub](https://github.com/sourcegraph/sourcegraph/issues), or
 -     Email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
