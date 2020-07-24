@@ -39,7 +39,7 @@ Frequently used links:
 
 ## Edit a single file
 
-If you just need to edit a single page, you can do it entirely on the web.
+If you just need to edit a single page, you can do it entirely on the web on GitHub.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MsIGvw0IEzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -66,11 +66,15 @@ If you just need to edit a single page, you can do it entirely on the web.
 
 ## Edit multiple files or add a new file
 
-To make edits to multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when [editing a single file](#edit-a-single-file). This also is required for adding new files. 
+To make edits to multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when [editing a single file](#edit-a-single-file). This also is required for adding new files.
 
-> NOTE: These steps are not exhaustively documented. Please [ask for help](#how-to-get-help) as many times as you need to until you feel comfortable with this process.
+### GitPod (recommended, web-based)
+
+TODO(sqs): investigate using https://gitpod.io for this
 
 ### macOS
+
+> NOTE: These steps are not exhaustively documented. Please [ask for help](#how-to-get-help) as many times as you need to until you feel comfortable with this process.
 
 Here's a screen recording of the steps (written out below) for macOS:
 
