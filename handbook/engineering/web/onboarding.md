@@ -10,13 +10,13 @@ This document is an **experimental new onboarding flow** for web team members. T
 
 ### There are no stupid questions
 
-Joining a new company can be overwhelming -- there's a lot to learn! As you navigate your first few weeks at Sourcegraph, we want you to know that everyone on the team is here to help, and that there are **no stupid questions**.
+Joining a new company can be overwhelming — there's a lot to learn! As you navigate your first few weeks at Sourcegraph, we want you to know that everyone on the team is here to help, and that there are **no stupid questions**.
 
-Every time you're curious or confused about something -- just ask! When you do so, use [public discussion channels](../../communication/team_chat.md#avoid_private_messages) as much as possible.
+Every time you're curious or confused about something — just ask! When you do so, use [public discussion channels](../../communication/team_chat.md#avoid_private_messages) as much as possible.
 
 ### Think and act like an owner
 
-At Sourcegraph, we don't think of engineers as resources -- we think of them as owners of their work, who constantly reevaluate how to use their talents to be as impactful as possible. We value your opinions and ideas. You should always feel empowered to identify potential improvements and act upon them, whether they be improvements to this onboarding process, our handbook and general documentation, our codebase and tooling, or our product.
+At Sourcegraph, we don't think of engineers as resources — we think of them as owners of their work, who constantly reevaluate how to use their talents to be as impactful as possible. We value your opinions and ideas. You should always feel empowered to identify potential improvements and act upon them, whether they be improvements to this onboarding process, our handbook and general documentation, our codebase and tooling, or our product.
 
 Never assume that a problem is somebody else's to fix!
 
@@ -36,11 +36,11 @@ Your manager will assign to you three starter tasks that you should aim to compl
 
 As you're working on these tasks:
 - Aim to be as incremental as possible:
-    - Open a pull request as soon as you feel like you're ready for feedback or input on your code -- you can make it a draft pull request if your code is still a work in progress.  
-    - Favour splitting up your work in multiple pull requests every time it makes sense -- shipping frequently is important.
+    - Open a pull request as soon as you feel like you're ready for feedback or input on your code — you can make it a draft pull request if your code is still a work in progress.  
+    - Favour splitting up your work in multiple pull requests every time it makes sense — shipping frequently is important.
     - Ask yourself what tests are appropriate for the change you're tackling, and add them!
 - Communicate on your progress with the team through our [daily Slack updates](../index.md#daily_slack_updates).
-- If you need help, remember that there are [no stupid questions](#there_are_no_stupid_questions) -- ask for help in your team's channel (or any appropriate channel), and add the answer to our docs or the handbook if you feel like it can help future teammates.
+- If you need help, remember that there are [no stupid questions](#there_are_no_stupid_questions) — ask for help in your team's channel (or any appropriate channel), and add the answer to our docs or the handbook if you feel like it can help future teammates.
 
 As you complete these tasks, share your accomplishments in #progress 🙂
 
@@ -80,10 +80,10 @@ By now, you'll have shipped multiple improvements, paired with all members of yo
 - Discuss your plan with the team and your manager.
 - Get hacking!
 
-At Sourcegraph, you'll be expected to own the problems your team is solving, and work with the team to define solutions and plan your work -- we think it's important that you start doing this early on!
+At Sourcegraph, you'll be expected to own the problems your team is solving, and work with the team to define solutions and plan your work — we think it's important that you start doing this early on!
 
 ### Give feedback on your onboarding
 
-At the end of week 6 at Sourcegraph, your manager will send you a survey to learn more about what worked and what didn't during your onboarding. Take your time to answer this thoughtfully -- your answers will be very important to make sure our onboarding process is even better for future hires!
+At the end of week 6 at Sourcegraph, your manager will send you a survey to learn more about what worked and what didn't during your onboarding. Take your time to answer this thoughtfully — your answers will be very important to make sure our onboarding process is even better for future hires!
 
 TODO @lguychard: prepare this
