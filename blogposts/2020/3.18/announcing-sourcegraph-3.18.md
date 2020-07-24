@@ -4,7 +4,7 @@ author: Laureen Hudson
 publishDate: 2020-07-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.18
-heroImage: /blog/3.18-release-blog-img.jpg
+heroImage: /blog/3.18-release-blog-img.png
 published: true
 ---
 
@@ -28,7 +28,7 @@ We’re improving Sourcegraph universal code search continuously, to help you so
 
 - [Getting notified about the health of Sourcegraph is even easier](https://about.sourcegraph.com/blog/sourcegraph-health-notification)
 
-  Alerts are now delivered with detailed information, including links to potential solutions. Additionally, we now monitor container health and over/under-provisioning in all deployment modes – so you will even get alerts if Sourcegraph needs more resources or could do with less!
+  Alerts are now delivered with detailed information, including links to potential solutions. Additionally, we now monitor container health and over/under-provisioning in all deployment modes, so you will be alerted if Sourcegraph needs more resources or could do with less.
 
 - [Custom search pages on Sourcegraph Cloud](https://about.sourcegraph.com/blog/custom-search-pages)
 
