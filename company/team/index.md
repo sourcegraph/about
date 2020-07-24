@@ -363,6 +363,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [aida@sourcegraph.com](mailto:aida@sourcegraph.com), [Twitter](https://twitter.com/aidaeology), [LinkedIn](https://www.linkedin.com/in/aidadewitt/), [pronounce my name 🔊](https://www.name-coach.com/aida-dewitt)
 - Aida is a Canadian expat living in the San Francisco bay area with her husband and cat. Aida started her fascination with 01s when she first learned about logic gates while building parallel and series circuits for a school project. In her spare time she enjoys spending time outdoors and creating a sustainable garden. Prior to Sourcegraph she was at Contentful and is passionate about system architecture and design. Aida graduated with a B.S. in Computer Science from Ryerson University in Toronto.
 
+
+## Elizabeth Stirling (she/her)
+
+- Security Software Engineer
+- Seattle, WA, USA 🇺🇸
+- [elizabeth@sourcegraph.com](mailto:elizabeth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/elizabeth-stirling-753b2779/)
+- Elizabeth is a Seattle area native who loves exploring the city. She has been interested in security ever since reading [Neal Stephenson's novel Reamde](https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497) when she was a kid. Her spare time is spent hiking around the forests of the Pacific Northwest and working on whatever side project catches her fancy. She has spent far too much money on keyboards and pretty rocks - sometimes even forging her own Bismuth crystals. Elizabeth graduated with a B.S. in Computer Science from the University of Washington in Seattle. 
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
