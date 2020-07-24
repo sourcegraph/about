@@ -51,7 +51,7 @@ Reach out to every member of your direct team, and set up a two-hour pairing ses
 Take the first 20-30 minutes of the session to have an unstructured, introductory chat. Then, start hacking! Your teammate will set up a [live share](https://visualstudio.microsoft.com/services/live-share/) and walk you through what they're currently working on. Ask as many questions as possible, to try to understand:
 - What problem is your teammate trying to solve?
 - Why is that problem important? What team goal does it fit under?
-- Was are relevant RFCs, PDs, GitHub issues or documentation pages?
+- Was are relevant [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs), [PDs](https://about.sourcegraph.com/handbook/product/product_documents), GitHub issues or documentation pages?
 - What parts of our codebase are involved in solving the problem?
 - How will the code being changed be tested?
 - Will there be future work needed after solving this problem? How could you contribute?
