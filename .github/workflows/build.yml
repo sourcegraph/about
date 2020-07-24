@@ -1,0 +1,27 @@
+name: Build
+on:
+  - push
+  - pull_request
+jobs:
+  docsite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+      - run: |
+          go install github.com/sourcegraph/docsite/cmd/docsite
+          docsite check
+  yarn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      # set up correct version of node
+      - id: nvmrc
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+      - uses: actions/setup-node@v1
+        with: { node-version: '${{ steps.nvmrc.outputs.NODE_VERSION }}' }
+
+      - run: |
+          yarn install
+          yarn run build
