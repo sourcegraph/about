@@ -4,7 +4,7 @@ author: Quinn Slack
 publishDate: 2019-12-09T10:00-08:00
 tags: [blog]
 slug: code-navigation-in-github-pull-requests
-heroImage: https://storage.googleapis.com/sourcegraph-assets/code-navigation-in-github-pull-requests-typescript-hover-hero.png
+heroImage: https://sourcegraphstatic.com/code-navigation-in-github-pull-requests-typescript-hover-hero.png
 published: true
 ---
 
@@ -16,7 +16,7 @@ Code navigation helps you review code in GitHub pull requests more quickly and e
 
 Here's what it looks like:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/code-navigation-in-github-pull-requests-typescript-hover.png" />
+<img src="https://sourcegraphstatic.com/code-navigation-in-github-pull-requests-typescript-hover.png" />
 
 How does it help? Suppose you're reviewing a pull request that calls a function you don't recognize. You'll be able to quickly answer:
 

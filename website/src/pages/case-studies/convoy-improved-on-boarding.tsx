@@ -24,7 +24,7 @@ export default ((props: any) => (
                 author: 'Brandon Bloom, Senior Software Engineer, Convoy',
                 image: '/case-studies/brandon-bloom-convoy.jpg',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/convoy_improved_on_boarding.pdf"
+            pdf="https://sourcegraphstatic.com/convoy_improved_on_boarding.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">

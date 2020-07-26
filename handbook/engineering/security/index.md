@@ -1,8 +1,6 @@
 # Security team
 
-## Vision
-
-Make Sourcegraph secure by design.
+At Sourcegraph we think that security is an enabler for the business. Sourcegraph is committed to proactive security, and addressing vulnerabilities in a timely manner. We approach security with a can-do philosophy, and look to achieve product goals while maintaining a positive posture, and increasing our security stance over time.
 
 ## Contact
 
@@ -56,4 +54,4 @@ When we receive [a report of a security vulnerability](#how-to-report-a-security
 ## Members
 
 - [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([engineering manager](../roles.md#engineering-manager)).
-- [E. S.](../../../company/team/index.md#todo) starting 2020-07-20.
+- [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
