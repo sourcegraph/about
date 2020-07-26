@@ -103,7 +103,7 @@ The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker
 
 There is currently no process defining how custom additions should be made to our monitoring stack (for example, to accomodate Cloud-specific needs).
 
-[RFC TODO](https://docs.google.com/document/d/1ub1xsrKTdjA5n-4MAk4AZXtInmgJlMwJ0pI1opkq5mo/) is an ongoing discussion on what custom additions might look like.
+[RFC 208](https://docs.google.com/document/d/1ub1xsrKTdjA5n-4MAk4AZXtInmgJlMwJ0pI1opkq5mo/) is an ongoing discussion on what custom additions might look like.
 
 ## Sourcegraph Cloud
 
