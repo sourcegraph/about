@@ -15,7 +15,7 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
 ## Product team member checklist
 
 - Get to know our team and learn about Sourcegraph (company and product)
-  - schedule 30-min 1:1s with your manager for the first three days at Sourcegraph to keep up with your onboarding and ask all the questions you might have
+  - Schedule 30-min 1:1s with your manager for the first three days at Sourcegraph to keep up with your onboarding and ask all the questions you might have
 - Finish [general onboarding tasks](../../people-ops/onboarding/index.md#for-all-new-teammates)
   - Set up your email filters, especially for GitHub and feedback
 - Get to know the product
