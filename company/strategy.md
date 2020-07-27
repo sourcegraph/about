@@ -48,6 +48,8 @@ Tools and practices that were conceived before the era of Big Code will break do
 
 This is a new game. Companies that master this will thrive. Companies that don't will fail.
 
+> For people as users of technology, Big Code is great. It means there's more software out there, it's more personalized, it's faster, it's on their desktop and phone and watch, it's localized, and so on. But for developers, it's way harder and takes way more work to build software than it did 10 years ago.
+
 ## Vision
 
 ### 1-year vision
