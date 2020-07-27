@@ -8,22 +8,30 @@ Please first read [the customer-facing managed instance documentation](https://d
   - [Deployment type and scaling](#deployment-type-and-scaling)
   - [Known limitations of managed instances](#known-limitations-of-managed-instances)
   - [Security](#security)
-- [Creating a new managed instance](#creating-a-new-managed-instance)
-- [Operation access](#operation-access)
-  - [SSH access](#ssh-access)
-  - [Port-forwarding (direct access to Caddy, Jaeger, and Grafana)](#port-forwarding-direct-access-to-caddy-jaeger-and-grafana)
-  - [Access through the GCP load balancer as a user would](#access-through-the-gcp-load-balancer-as-a-user-would)
-  - [Accessing the Docker containers](#accessing-the-docker-containers)
-  - [Finding the external IPs](#finding-the-external-ips)
-  - [Impact of recreating the instance via Terraform](#impact-of-recreating-the-instance-via-terraform)
-  - []
-- [Upgrade process](#upgrade-process) 
-  - [1) Add a banner indicating scheduled maintenance is in progress](#1-add-a-banner-indicating-scheduled-maintenance-is-in-progress)
-  - [2) Mark the database as ready-only](#2-mark-the-database-as-ready-only)
-  - TODO(slimsag)
-- [Startup scripts](#startup-scripts)
-  - [Instance is recreated when startup script changes](#instance-is-recreated-when-startup-script-changes)
-  - [Debugging startup scripts](#debugging-startup-scripts)
+- [Cost estimation](cost_estimation.md)
+- [Creating a managed instance](creation_process.md)
+- [Operations](operations.md)
+    - [Red/black deployment model](operations.md#red-black-deployment-model)
+    - [SSH access](operations.md#ssh-access)
+    - [Port-forwarding (direct access to Caddy, Jaeger, and Grafana)](operations.md#port-forwarding-direct-access-to-caddy-jaeger-and-grafana)
+    - [Access through the GCP load balancer as a user would](operations.md#access-through-the-gcp-load-balancer-as-a-user-would)
+    - [Accessing the Docker containers](operations.md#accessing-the-docker-containers)
+    - [Finding the external IPs](operations.md#finding-the-external-ips)
+    - [Impact of recreating the instance via Terraform](operations.md#impact-of-recreating-the-instance-via-terraform)
+    - [Instance is recreated when startup script changes](operations.md#instance-is-recreated-when-startup-script-changed)
+    - [Debugging startup scripts](operations.md#debugging-startup-scripts)
+- [Upgrading a managed instance](upgrade_process.md)
+    - [1) Add a banner indicating scheduled maintenance is in progress](upgrade_process.md#1-add-a-banner-indicating-scheduled-maintenance-is-in-progress)
+    - [2) Mark the database as ready-only](upgrade_process.md#2-mark-the-database-as-ready-only)
+    - [3) Create a snapshot of the current deployment](upgrade_process.md#3-create-a-snapshot-of-the-current-deployment)
+    - [4) Initialize the new production deployment](upgrade_process.md#4-initialize-the-new-production-deployment)
+    - [5) Make the database on the new deployment writable](upgrade_process.md#5-make-the-database-on-the-new-deployment-writable)
+    - [6) Upgrade the new deployment](upgrade_process.md#6-upgrade-the-new-deployment)
+    - [7) Recreate the deployment](upgrade_process.md#7-recreate-the-deployment)
+    - [8) Confirm instance health](upgrade_process.md#8-confirm-instance-health)
+    - [9) Switch the load balancer target](upgrade_process.md#9-switch-the-load-balancer-target)
+    - [10) Remove the banner indicating scheduled maintenance is in progress](upgrade_process.md#10-remove-the-banner-indicating-scheduled-maintenance-is-in-progress)
+    - [11) Take down the old deployment](upgrade_process.md#11-take-down-the-old-deployment)
 - [FAQ](#faq)
   - [FAQ: Why did we choose Docker Compose over Kubernetes deployments?](#faq-why-did-we-choose-docker-compose-over-kubernetes-deployments)
 
@@ -62,220 +70,6 @@ See also: [Dev FAQ: Why did we choose Docker Compose over Kubernetes deployments
 Terraform is used to maintain all managed instances. You can find this configuration here: https://github.com/sourcegraph/deploy-sourcegraph-managed
 
 All customer credentials, secrets, site configuration, app and user configuration - is stored in Postgres only (i.e. on the encrypted GCP disk). This allows customers to enter their access tokens, secrets, etc. directly into the app through the web UI without transferring them to us elsewhere.
-
-## Creating a new managed instance
-
-Creating a new managed instance involves following the steps below.
-
-1. Ask @stephen or @beyang to create a new GCP project `sourcegraph-managed-$COMPANY` and grant you IAM **Editor** role access.
-1. Ask @beyang to enable billing in the GCP project.
-1. Create GCP service account credentials:
-    - From console.cloud.google.com select the project > **APIs & Services** > **Credentials** > **Create credentials** > **Service account**
-    - Service account name: `deploy`
-    - Service account description: blank
-    - On the **Service account permissions (optional)** page add the **Compute Admin**, **Storage admin**.
-    - **Done** > ignore **Grant users access to this service account (optional)** and choose **Done**
-    - Select **Edit** (pencil) on the service account we just created
-    - **Add key** > **Create new key** > **JSON** > **Create**
-1. Upload the service account key and create admin credentials in 1password:
-    - Open the 1password [Managed instances vault](https://my.1password.com/vaults/l35e5xtcfsk5suuj4vfj76hqpy/allitems) (ask @stephen, @gonza, or @beyang to grant you access)
-    - **Add** > **Document** > enter **$COMPANY service account** as the title > Upload the service account JSON  file previously downloaded > **Save**
-    - **Add** > **Password** > enter **$COMPANY sourcegraph-admin** as the title > Change **length** to 40 and turn on symbols and digits >> **Save**
-1. In GCP, enable the **Compute Engine API**:
-   - Under **APIs & Services** > **Library** search for "Compute"
-   - Select **Compute Engine API** and choose **Enable**
-1. `export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/sourcegraph-managed-company-220df65550d4.json`
-1. Clone and `cd deploy-sourcegraph-managed/`
-1. `VERSION=v3.17.2 ./create-deployment.sh $COMPANY/` and **commit the result.**
-1. Open and edit `deploy-sourcegraph-managed/$COMPANY/gcp-tfstate/gcp-tfstate.tf` according to the comments within, commit the result.
-1. In `gcp-tfstate` run `terraform init && terraform apply && git add . && git commit -m 'initialize GCP tfstate bucket'`
-1. Open and edit `infrastructure.tf` according to the comments within and commit the result.
-1. In `deploy-sourcegraph-managed/$COMPANY` run `terraform init && terraform plan && terraform apply`
-1. Access the instance over SSH and confirm all containers are healthy (instructions below).
-1. In the infrastructure repository, [create a DNS entry](https://github.com/sourcegraph/infrastructure/blob/master/dns/sourcegraph-managed.tf) that points `$COMPANY.sourcegraph.com` to the `default-global-address` IP following "Finding the external load balancer IP" below.
-1. In the GCP web UI under **Network services** > **Load balancers** > select the load balancer > watch the SSL certificate status. It may take some time for it to become active.
-1. Confirm all containers come up healthy (`docker ps` should report them as such)
-1. Create a PR for review.
-1. Access the Sourcegraph web UI (instructions for port-forwarding below)
-1. Navigate to Grafana and confirm the instance looks healthy.
-1. Set up the initial admin account (for use by the Sourcegraph team only)
-   - Email: `managed+$COMPANY@sourcegraph.com` (note `+` sign not `-`)
-   - Username: `sourcegraph-admin`
-   - Password: Use the password previously created and stored in 1password.
-1. Configure `externalURL` in the site configuration.
-1. In the global user settings, set `"alerts.showPatchUpdates": false`
-
-## Operation access
-
-#### Red/black deployment model
-
-At any point in time only one deployment is the active production instance, this is noted in `deploy-sourcegraph-managed/$CUSTOMER/terraform.tfvars`, and except during upgrades only one is running. You can see this via:
-
-```sh
-$ gcloud compute instances list --project=sourcegraph-managed-$COMPANY
-NAME                  ZONE           MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP  STATUS
-default-red-instance  us-central1-f  n1-standard-8               10.2.0.2                  RUNNING
-```
-
-During an upgrade, both `default-red-instance` and `default-black-instance` would be present. One being production, the other being the "new" upgraded production instance. When the upgrade is complete, the old one is turned off (red/black swap).
-
-#### SSH access
-
-Locate the GCP instance you'd like to access (usually either `default-red-instance` or `default-black-instance`), and then:
-
-```sh
-gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY" default-red-instance
-```
-
-#### Port-forwarding (direct access to Caddy, Jaeger, and Grafana)
-
-Locate the GCP instance you'd like to access (usually either `default-red-instance` or `default-black-instance`), and then:
-
-```sh
-gcloud compute start-iap-tunnel 80 --local-host-port=localhost:4444 --zone "us-central1-f" --project "sourcegraph-managed-$COMPANY" default-red-instance
-```
-
-This will port-forward `localhost:4444` to port `80` on the VM instance:
-
-Replace `80` with `3370` for Grafana, or `16686` for Jaeger. Note that other ports are prevented by the `allow-iap-tcp-ingress` firewall rule.
-
-#### Access through the GCP load balancer as a user would
-
-Users access Sourcegraph through GCP Load Balancer/HTTPS -> the Caddy load balancer/HTTP -> the actual sourcegraph-frontend/HTTP. If you suspect that an issue is being introduced by the GCP load balancer itself, e.g. perhaps a request is timing out there due to some misconfiguration, then you will need to access through the GCP load balancer itself. If the managed instance is protected by the load balancer firewall / not publicly accessible on the internet, then it is not possible for you to access `$COMPANY.sourcegraph.com` as a normal user would.
-
-You can workaround this by proxying your internet traffic through the instance itself - which is allowed to reach and go through the public internet -> the GCP load balancer -> back to the instance itself. To do this, create a SOCKS5 proxy tunnel over SSH (replace `default-red-instance`, if needed):
-
-```ssh
-bash -c '(gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY" default-red-instance -- -N -p 22 -D localhost:5000) & sleep 600; kill $!'
-```
-
-Then test you can access it using `curl`:
-
-```
-$ curl --proxy socks5://localhost:5000 https://$COMPANY.sourcegraph.com
-<a href="/sign-in?returnTo=%2F">Found</a>.
-```
-
-You can now reproduce the request using `curl`, or configure your OS or browser to use `socks5://localhost:5000`:
-
-* Windows: Follow the “using the SOCKS proxy” section in [this article](https://www.ocf.berkeley.edu/~xuanluo/sshproxywin.html) [[mirror]](https://web.archive.org/web/20160609073255/https://www.ocf.berkeley.edu/~xuanluo/sshproxywin.html) to enable it on Internet Explorer, Edge and Firefox.
-* macOS: System Preferences → Network → Advanced → Proxies → check “SOCKS proxy” and enter the host and the port.
-* Linux: Most browsers have proxy settings in their Settings/Preferences.
-* Command-line apps: Many CLIs accept http_proxy or https_proxy environment variables or arguments you can set the proxy. Consult the help or the manpage of the program.
-
-**IMPORTANT**: Once you are finished, terminate the original `gcloud beta compute ssh` command so your machine's traffic is no longer going over the instance. The command above will automatically terminate after 10 minutes, to prevent this.
-
-### Accessing the Docker containers
-
-Access the deployment over SSH (instructions above) and then:
-
-```sh
-sudo su
-docker ps
-```
-
-You can then use regular Docker commands (e.g. `docker exec -it $CONTAINER sh`) to interact with the containers.
-
-### Finding the external IPs
-
-```sh
-$ gcloud compute addresses list --project=sourcegraph-managed-$COMPANY
-NAME                     ADDRESS/RANGE   TYPE      PURPOSE  NETWORK  REGION       SUBNET  STATUS
-default-global-address   $GLOBAL_IP      EXTERNAL                                         IN_USE
-default-nat-manual-ip-0  $NAT_IP_ONE     EXTERNAL                    us-central1          IN_USE
-default-nat-manual-ip-1  $NAT_IP_TWO     EXTERNAL                    us-central1          IN_USE
-```
-
-- `$GLOBAL_IP` is the IP address that `$COMPANY.sourcegraph.com` should point to, it is the address of the GCP Load Balancer.
-- `$NAT_IP_ONE` and `$NAT_IP_TWO` are the external IPs from which egress traffic from the deployment will originate from. These are the addresses from which Sourcegraph will access the customer's code host, and as such the customer will need to allow them access to e.g. their internal code host.
-
-### Impact of recreating the instance via Terraform
-
-All configuration about the instance itself is stored in Terraform, so recreating the instance is a non-destructive action. A brand new VM will be provisioned by Terraform, the startup script will initialize it and mount the existing data disk back into the VM, and the Sourcegraph Docker containers will start up.
-
-This typically involves around 8m40s of downtime: 6m destroying the network endpoint group, and 2m creating the new instance / installing software / launching Docker services.
-
-## Startup scripts
-
-**Startup scripts are run _once_ when the instance is first created (not on each boot).**
-
-### Instance is recreated when startup script changes
-
-Any time a startup script is changed, Terraform will plan to delete the old VM instance and recreate it such that the script runs again.
-
-This is a non-destructive action, aside from the fact that it involves downtime for the deployment.
-
-### Debugging startup scripts
-
-View startup script logs
-
-```
-cat /var/log/syslog | grep startup-script
-```
-
-Run startup script and debug:
-
-```
-sudo google_metadata_script_runner --script-type startup --debug
-```
-
-WARNING: Running our startup script twice is a potentially harmful action, as it is usually only ran once.
-
-More details: https://cloud.google.com/compute/docs/startupscript
-
-## Upgrade process
-
-### 1) Add a banner indicating scheduled maintenance is in progress
-
-Add to the global user settings:
-
-```jsonc
-  "notices": [
-    {
-      "dismissible": false,
-      "location": "top",
-      "message": "🚀 Sourcegraph is undergoing a scheduled upgrade ([what's changed?](https://about.sourcegraph.com/blog/)). You may be unable to perform some write actions during this time, such as updating your user settings."
-    }
-  ]
-```
-
-### 2) Mark the database as ready-only
-
-Mark the database as read-only:
-
-```sh
-docker exec -it pgsql psql -U sg -c 'ALTER DATABASE sg SET default_transaction_read_only = true;'
-```
-
-During this time searching will still work, but the site will refuse all database writes, e.g. this will show up in the web UI as:
-
-> [...]: pq: cannot execute INSERT in a read-only transaction
-
-During this time:
-
-- Repositories will not update
-- Authentication permissions will not synchronize
-- LSIF precise code intel cannot be uploaded
-- User settings and site configuration cannot be updated
-- Extensions cannot be installed
-
-### ...
-
-TODO(slimsag) make this section public
-
-### 3) Make the database writable again
-
-```sh
-docker exec -it pgsql psql -U sg -c 'set transaction read write; ALTER DATABASE sg SET default_transaction_read_only = false;'
-```
-
-### 4) Remove the banner indicating scheduled maintenance is in progress
-
-Remove the notice previously added to the global user settings.
-
-### ...
-
-TODO(slimsag) make this section public
 
 ## FAQ
 
