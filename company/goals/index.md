@@ -19,6 +19,7 @@ We believe:
 - Discarding a goal that turns out to be wrong is better than following through on the wrong goal. People know this intellectually but disregard it in practice.
 - Each problem we're solving has a different (and often unknown/unknowable) timeline and rate of progress.
 - Only people with skin in the game can set useful goals.
+- A goal is good if people think about it regularly and it helps them make decisions.
 
 ## Goals are continuous, not quarterly
 
