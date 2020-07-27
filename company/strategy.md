@@ -38,7 +38,7 @@ To make it so [everyone can code](#purpose), we will create tools, networks, and
 
 ## [Values](values.md)
 
-Our [values](values.md) are the principles we want to uphold as we work toward our mission.
+Our [values](values.md) are the principles and beliefs that help us achieve our [goals](goals/index.md) and [vision](#vision).
 
 ## Big Code
 
