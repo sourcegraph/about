@@ -26,7 +26,13 @@ Or, more succinctly:
 | +$1/GB storage | **For any additional storage above 250GB required.**                     |
 | +$1.54/GB      | **For each GB of network traffic to/from the instance.**                 |
 
-
 Thus, the smallest managed instance supporting around ~300 repositories and ~100 users costs around $726/mo.
 
 **IMPORTANT:** This is a _rough estimate_ to the best of our ability, infrastructure pricing estimates are not trivial to do extremely accurately and actual costs are always subject to change. The goal of this is to give you a rough estimate of costs, not an exact amount.
+
+### Cost savings
+
+The above does not take into account:
+
+- Potential committed use discounts, which are handled transparently on Sourcegraphs' side through [cross-project committed use discount sharing](https://cloud.google.com/compute/docs/instances/signing-up-committed-use-discounts#sharing_committed_use_discounts_across_projects) and passed onto you automatically.
+- Cost reduction based on proactive monitoring of services based on your actual usage - resource requirements of Sourcegraph vary widely depending on how your usage looks. This is handled automatically by Sourcegraph as part of monthly upgrades.
