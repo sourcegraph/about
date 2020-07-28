@@ -9,7 +9,8 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-version: '1.14.6'
-      - run: |
+      - name: docsite check 
+        run: |
           go install github.com/sourcegraph/docsite/cmd/docsite
           docsite check
   yarn:
@@ -23,7 +24,8 @@ jobs:
       - uses: actions/setup-node@v1
         with: { node-version: '${{ steps.nvmrc.outputs.NODE_VERSION }}' }
 
-      - run: |
+      - name: yarn build
+        run: |
           cd website
           yarn install
           yarn run build
