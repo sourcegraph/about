@@ -291,9 +291,9 @@ body {
 .bg-gradient-green-blue {
     background: linear-gradient(
             90deg,
-            rgba(108, 255, 212, 0.67) 4.89%,
-            rgba(105, 255, 211, 0.1) 49.92%,
+            rgba(108, 255, 212, 0.4) 10%,
+            rgba(105, 255, 211, 0.1) 50%,
             rgba(255, 255, 255, 0) 100%
         ),
-        linear-gradient(180deg, rgba(0, 155, 242, 0.29) 0%, rgba(156, 229, 254, 0.3) 100%);
+        linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
 }

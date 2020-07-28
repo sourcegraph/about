@@ -12,12 +12,12 @@ class GetStarted extends React.Component {
     }
     public render(): JSX.Element | null {
         return (
-            <div className="get-started bg-gradient-green-blue mt-6">
+            <div className="get-started bg-gradient-green-blue mt-6" id="get-started">
                 <div className="container">
                     <h1 className="display-2 font-weight-bold mb-5">Get started with Sourcegraph for free</h1>
                     <div className="row">
                         <div className="col-lg-6 get-started__local">
-                            <h3>Search your own code</h3>
+                            <h2 className="get-started__search-headings">Search your own code</h2>
                             <p>
                                 <span className="h5">Quickstart:</span> Run this to launch Sourcegraph locally:
                             </p>
@@ -36,12 +36,12 @@ class GetStarted extends React.Component {
                                     sourcegraph/server:3.18.0
                                     "
                                 />
-                                <a className="get-started__copytext" href="#">
+                                <span className="get-started__copytext">
                                     <ClipboardArrowLeftOutlineIcon
                                         onClick={() => this.copyDockerInstall()}
                                         className="copytext icon-inline ml-1 medium"
                                     />
-                                </a>
+                                </span>
                             </div>
                             <h2 className="h5 mt-4">Deploy to a server or cluster</h2>
                             <p>
@@ -66,7 +66,7 @@ class GetStarted extends React.Component {
                             </div>
                         </div>
                         <div className="col-lg-6 get-started__search">
-                            <h3>Search public code</h3>
+                            <h2 className="get-started__search-headings">Search public code</h2>
                             <p>Search public code or your own public repositories now.</p>
                             <div className="get-started__action boxshadow">
                                 Sourcegraph Cloud searches top repositories from GitHub and Gitlab and will index any
