@@ -16,7 +16,7 @@ We're excited to announce Sourcegraph 3.12. In addition to the usual updates, th
 
 <div style="padding-left: 2rem">
 
-[**⌨️ Search bar match case toggle**](#search-bar-match-case-toggle)<br />
+
 
 [**🤖 Create draft campaigns**](#create-draft-campaigns)<br />
 
