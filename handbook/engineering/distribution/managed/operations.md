@@ -27,8 +27,24 @@ During an upgrade, both `default-red-instance` and `default-black-instance` woul
 Locate the GCP instance you'd like to access (usually either `default-red-instance` or `default-black-instance`), and then:
 
 ```sh
-gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY" default-red-instance
+$ gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-$COMPANY" default-red-instance
 ```
+
+If you get an error:
+
+```sh
+ERROR: (gcloud.beta.compute.start-iap-tunnel) Error while connecting [4003: u'failed to connect to backend'].
+ssh_exchange_identification: Connection closed by remote host
+ERROR: (gcloud.beta.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+```
+
+This may be indicating that the VM is currently not running - check:
+
+```sh
+$ gcloud beta compute instances list --project=sourcegraph-managed-$COMPANY
+```
+
+And start the instance if needed (e.g. through the web UI.)
 
 ## Port-forwarding (direct access to Caddy, Jaeger, and Grafana)
 
