@@ -2,14 +2,9 @@ import { Link } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ClipboardArrowLeftOutlineIcon from 'mdi-react/ClipboardArrowLeftOutlineIcon'
 import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
-import * as React from 'react'
-import Layout from '../components/Layout'
-import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
+import React from 'react'
 
-export default class GetStarted extends React.Component<any, any> {
-    constructor(props: any) {
-        super(props)
-    }
+class GetStarted extends React.Component {
     public copyDockerInstall = () => {
         const el = this.textArea
         el.select()
@@ -17,26 +12,18 @@ export default class GetStarted extends React.Component<any, any> {
     }
     public render(): JSX.Element | null {
         return (
-            <Layout
-                location={this.props.location}
-                meta={{
-                    title: 'Get started with Sourcegraph',
-                    description: 'Get started with Sourcegraph',
-                    image: '/favicon.png',
-                }}
-                minimal={true}
-            >
-                <div className="get-started-page form-page container mt-5">
+            <div className="get-started bg-gradient-green-blue mt-6">
+                <div className="container">
                     <h1 className="display-2 font-weight-bold mb-5">Get started with Sourcegraph for free</h1>
                     <div className="row">
-                        <div className="col-lg-6 get-started-page__local">
+                        <div className="col-lg-6 get-started__local">
                             <h3>Search your own code</h3>
                             <p>
                                 <span className="h5">Quickstart:</span> Run this to launch Sourcegraph locally:
                             </p>
-                            <div className="get-started-page__installtext">
+                            <div className="get-started__installtext">
                                 <textarea
-                                    className="border"
+                                    className="border boxshadow"
                                     spellcheck="false"
                                     rows="5"
                                     onClick={() => this.copyDockerInstall()}
@@ -49,7 +36,7 @@ export default class GetStarted extends React.Component<any, any> {
                                     sourcegraph/server:3.18.0
                                     "
                                 />
-                                <a className="get-started-page__copytext" href="#">
+                                <a className="get-started__copytext" href="#">
                                     <ClipboardArrowLeftOutlineIcon
                                         onClick={() => this.copyDockerInstall()}
                                         className="copytext icon-inline ml-1 medium"
@@ -78,10 +65,10 @@ export default class GetStarted extends React.Component<any, any> {
                                 </Link>
                             </div>
                         </div>
-                        <div className="col-lg-6 get-started-page__search">
+                        <div className="col-lg-6 get-started__search">
                             <h3>Search public code</h3>
                             <p>Search public code or your own public repositories now.</p>
-                            <div className="get-started-page__action">
+                            <div className="get-started__action boxshadow">
                                 Sourcegraph Cloud searches top repositories from GitHub and Gitlab and will index any
                                 public repository you specify.
                                 <a
@@ -93,11 +80,10 @@ export default class GetStarted extends React.Component<any, any> {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-12 pt-5">
-                        <CustomerLogosSection className="pt-5 pb-6 mb-2" />
-                    </div>
                 </div>
-            </Layout>
+            </div>
         )
     }
 }
+
+export default GetStarted
