@@ -208,6 +208,19 @@
           49.279493
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Felix Becker"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8017,
+          53.0793
+        ]
+      }
     }
   ]
 }
