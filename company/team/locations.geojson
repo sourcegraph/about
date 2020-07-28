@@ -82,19 +82,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Tommy Roberts"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.05767822265625,
-          51.467696956223364
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Eric Fritz"
       },
       "geometry": {
