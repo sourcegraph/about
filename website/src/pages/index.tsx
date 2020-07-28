@@ -4,6 +4,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
+import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
@@ -240,9 +241,8 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-md-6" />
             </ContentSection>
-            <TrySourcegraph className="mt-sm-5" />
+            <GetStarted />
         </div>
     </Layout>
 )
