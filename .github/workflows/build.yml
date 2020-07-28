@@ -22,7 +22,8 @@ jobs:
       - id: nvmrc
         run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
       - uses: actions/setup-node@v1
-        with: { node-version: '${{ steps.nvmrc.outputs.NODE_VERSION }}' }
+        with:
+          node-version: '${{ steps.nvmrc.outputs.NODE_VERSION }}'
 
       - name: yarn build
         run: |
