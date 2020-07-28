@@ -24,6 +24,6 @@ We've improved in-product documentation to clarify how Sourcegraph fetches data 
 
 ## Highlight all elements on hover
 
-[Eric Fritz](https://github.com/efritz) has implemented [#10868](https://github.com/sourcegraph/sourcegraph/issues/10868), which means when a token is hovered or selected in a file, we now highlight all visible instances of that token. This makes it easy to see all references of a variable at-a-glance. Many developers have had to use the browser search (cmd-f) to work around the lack of this feature—this makes it first class!
+[Eric Fritz](https://github.com/efritz) has implemented [#10868](https://github.com/sourcegraph/sourcegraph/issues/10868), which means when a token is hovered or selected in a file, we now highlight all visible instances of that token. This makes it easy to see all references of a variable at-a-glance. Many developers have had to use the browser search (`cmd-f`) to work around the lack of this feature — this makes it first class!
 
 ![Highlight all elements](https://sourcegraphstatic.com/blog/3.18/highlight-all-elements.gif "Highlight all elements")
