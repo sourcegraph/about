@@ -28,7 +28,7 @@ Our team has been hard at work continuing to improve Sourcegraph, so you can spe
 
 - [Custom search pages on Sourcegraph Cloud](/blog/custom-search-pages)
 
-  You can now search all of the code for several popular open-source projects, such as Kubernetes and React, on project-specific search pages. We know many core team members of these projects use Sourcegraph, and this will help them spread the joy of code search to more contributors.
+  You can now search all of the code for several popular open source projects, such as Kubernetes and React, on project-specific search pages. We know many core team members of these projects use Sourcegraph, and this will help them spread the joy of code search to more contributors.
 
 - [Small but useful improvements](/blog/small-but-useful-improvements)
 
