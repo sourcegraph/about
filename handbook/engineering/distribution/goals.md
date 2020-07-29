@@ -1,5 +1,7 @@
 # Goals
 
+Goals are continuously updated and reviewed. If you find these goals do not reflect our current priorities or are out of date, please update them as soon as possible or add it as a topic to our [weekly sync](recurring_processes#weekly-distribution-team-sync).
+
 ## Medium-term goals
 
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single command
