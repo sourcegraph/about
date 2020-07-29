@@ -27,7 +27,8 @@ We will start by looking at our Kubernetes deployment and working on an easier u
   - Upgrading a deployment configuration requires less than 2 hours of work
 
 ### Improve the debugging and troubleshooting process
-As we deploy Sourcegraph to multiple different environments, we need to provide a consistent and straightforward process. We will initially focus on reducing the time it takes to collect troubleshooting information.
+As we deploy Sourcegraph to multiple different environments, we need to provide a consistent and straightforward process to debug issues. We are currently lacking tools to collect debugging information (configuration, type, size, diff from upstream, etc) consistently and a process to capture the output of debugging sessions to feed back into our priorities and documentation.
+We will initially focus on reducing the time it takes to collect troubleshooting information.
 
 - **Owner**: TBD
 - **Status**: Not started
