@@ -19,7 +19,7 @@ Never assume that a problem is somebody else's to fix!
 ## Getting set up
 
 You'll have to get some basics set up in your first few days:
-- Complete [general onboarding](../people-ops/from-graphbook/onboarding.md#for-all-new-teammates)
+- Complete [general onboarding](../people-ops/onboarding/index.md#for-all-new-teammates)
 - [Configure your GitHub notifications.](./github-notifications/index.md)
 - Join #dev-announce, #dev-chat, and your team's channel on Slack, as well as any other channels you find interesting. [Team chat documentation](../communication/team_chat.md#engineering)
 - Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next engineer that we hire doesn't run into the same problem).
