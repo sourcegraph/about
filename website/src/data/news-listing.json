@@ -127,6 +127,13 @@
       "newsImage": "/external-logos/techstrong-tv-logo.png"
     },
     {
+      "newsSource": "Sourcegraph",
+      "newsTitle": "Press Release: Sourcegraph Releases Free Digital Children's Book Titled 'Our ABCs: Always Be Coding'",
+      "newsDate": "April 23, 2020",
+      "newsLink": "/press-releases/our-abcs-childrens-book",
+      "newsImage": "https://info.sourcegraph.com/hubfs/CTA%20images/abc-book-cover.png"
+    },
+    {
       "newsSource": "The Server Side",
       "newsTitle": "Consider these developer volunteer opportunities during COVID-19",
       "newsDate": "April 23, 2020",
@@ -209,6 +216,13 @@
       "newsDate": "March 4, 2020",
       "newsLink": "https://fortune.com/2020/03/04/the-bitter-lesson-founders-can-learn-from-edens-acquisition-of-managed-by-q/",
       "newsImage": "/external-logos/fortune-2016-logo.png"
+    },
+    {
+      "newsSource": "Sourcegraph",
+      "newsTitle": "Press Release: Sourcegraph Secures $23 Million Series B Round for Universal Code Search",
+      "newsDate": "March 3, 2020",
+      "newsLink": "/press-releases/sourcegraph-secures-series-b",
+      "newsImage": "/sourcegraph-mark.png"
     },
     {
       "newsSource": "Vator News",
@@ -330,6 +344,13 @@
       "newsDate": "November 13, 2019",
       "newsLink": "https://devclass.com/2019/11/13/gitlab-gets-native-with-sourcegraph-code-review-in-upcoming-release/",
       "newsImage": "/external-logos/devclass-sq-logo.svg"
+    },
+    {
+      "newsSource": "Sourcegraph",
+      "newsTitle": "Press Release: Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum",
+      "newsDate": "November 12, 2019",
+      "newsLink": "/press-releases/sourcegraph-announces-new-gitlab-native-integration",
+      "newsImage": "/sourcegraph-mark.png"
     },
     {
       "newsSource": "SD Times",
