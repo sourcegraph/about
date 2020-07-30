@@ -8,7 +8,7 @@ heroImage: /blog/3.18-custom-search-pages.png
 published: true
 ---
 
-[Sourcegraph.com](https://sourcegraph.com/search) now has custom search pages for major open-source communities. These pages provide targeted documentation with suggested queries specifically for users and contributors in each community, and searches are scoped by default to repositories relevant to that community.
+[Sourcegraph.com](https://sourcegraph.com/search) now has custom search pages for major open source communities. These pages provide targeted documentation with suggested queries specifically for users and contributors in each community, and searches are scoped by default to repositories relevant to that community.
 
 This is a great resource that we hope will make these communities accessible to more developers, both experienced maintainers and newbies from all backgrounds.
 

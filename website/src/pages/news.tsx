@@ -4,13 +4,6 @@ import { ContentPage } from '../components/content/ContentPage'
 import Layout from '../components/Layout'
 import News from '../components/NewsList'
 
-interface PressRelease {
-    title: string
-    image: string
-    publishDate: string
-    url: string
-}
-// tslint:disable-next-line: no-any
 export default class NewsPage extends React.Component<any, any> {
     // tslint:disable-next-line: no-any
     constructor(props: any) {
@@ -21,18 +14,6 @@ export default class NewsPage extends React.Component<any, any> {
     }
 
     public render(): JSX.Element | null {
-        const pressReleases: PressRelease[] = this.props.data.allMarkdownRemark.edges
-            // tslint:disable-next-line: no-any
-            .filter((post: any) => post.node.frontmatter.published === true)
-            .map(
-                // tslint:disable-next-line: no-any
-                (item: any): PressRelease => ({
-                    title: item.node.frontmatter.title,
-                    image: item.node.frontmatter.heroImage,
-                    publishDate: item.node.frontmatter.publishDate,
-                    url: `/press-releases/${item.node.frontmatter.slug}`,
-                })
-            )
         return (
             <Layout location={this.props.location}>
                 <ContentPage
@@ -43,32 +24,6 @@ export default class NewsPage extends React.Component<any, any> {
                 >
                     <div className="news">
                         <section>
-                            <div className="container">
-                                <div className="row justify-content-start">
-                                    <div className="col-sm-10 col-lg-10">
-                                        <h2 className="py-4">Press releases</h2>
-                                        {pressReleases.map(({ title, image, publishDate, url }, i: number) => (
-                                            <div className="row mb-4 news__item">
-                                                <div className="col-sm-3 col-lg-2 text-center">
-                                                    <img
-                                                        className="news__image"
-                                                        src={image}
-                                                        style={{ maxWidth: '100px' }}
-                                                    />
-                                                </div>
-                                                <div className="col-sm-9 col-lg-10 align-self-center">
-                                                    <p>
-                                                        <Link to={url} rel="nofollow" key={i} className="d-block">
-                                                            {title}
-                                                        </Link>
-                                                        <span className="news__date ml-0">{publishDate}</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
                             <div className="container">
                                 <div className="row justify-content-start">
                                     <div className="col-sm-10 col-lg-10">
@@ -103,32 +58,3 @@ export default class NewsPage extends React.Component<any, any> {
         )
     }
 }
-
-export const pageQuery = graphql`
-    query PressReleases {
-        allMarkdownRemark(
-            filter: { frontmatter: { tags: { in: "press-release" } } }
-            sort: { fields: [frontmatter___publishDate], order: DESC }
-        ) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        heroImage
-                        author
-                        tags
-                        publishDate(formatString: "MMMM D, YYYY")
-                        slug
-                        description
-                        published
-                    }
-                    html
-                    excerpt(pruneLength: 300)
-                    fields {
-                        slug
-                    }
-                }
-            }
-        }
-    }
-`

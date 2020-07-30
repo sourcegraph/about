@@ -17,6 +17,10 @@ TypeScript, React, RxJS, GraphQL, Go.
 
 ## Processes
 
+### Onboarding
+
+The web team's onboarding process for new teammates is documented [here](./onboarding.md).
+
 ### Planning
 
 We do [planning](../tracking_issues.md#planning-a-milestone-with-a-tracking-issue) with [tracking issues](../tracking_issues.md).
@@ -75,9 +79,8 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 
 - [Loïc Guychard](../../../company/team/index.md#loic-guychard) ([engineering manager](../roles.md#engineering-manager))
 - [Felix Becker](../../../company/team/index.md#felix-becker)
-- [Simon Korzunov](../../../company/team/index.md#simon-korzunov)
 - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
-- [T. K.](../../../company/team/index.md#todo) starting 2020-07-27.
+- [TJ Kandala](../../../company/team/index.md#todo).
 - [J. P.](../../../company/team/index.md#todo) starting 2020-08-03.
 
 ## Growth plan

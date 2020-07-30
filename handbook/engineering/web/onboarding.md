@@ -24,7 +24,7 @@ Never assume that a problem is somebody else's to fix!
 
 You'll have to get some basics set up in your first few days:
 - [Configure your GitHub notifications.](../github-notifications/index.md)
-- Join #dev-announce, #dev-chat, and your team's channel on Slack. [Team chat documentation](../communication/team_chat.md#engineering)
+- Join #dev-announce, #dev-chat, and your team's channel on Slack. [Team chat documentation](../../communication/team_chat.md#engineering)
 - Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next engineer that we hire doesn't run into the same problem).
 - Read through your team's [handbook page](../index.md), to learn about the team and its internal processes.
 
@@ -64,7 +64,7 @@ There will be plenty for you to read and learn about when you're not working on 
 - Read through our [architecture overview](https://docs.sourcegraph.com/dev/architecture).
 - Read through the rest of the engineering handbook to learn more about how we operate.
 - Read how we choose and continually update our [goals](../../../company/goals/index.md).
-- Read how we plan and keep each other up to date with [tracking issues](tracking_issues.md).
+- Read how we plan and keep each other up to date with [tracking issues](../tracking_issues.md).
 
 ## Weeks 4-6
 

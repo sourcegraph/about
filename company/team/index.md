@@ -370,6 +370,20 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [elizabeth@sourcegraph.com](mailto:elizabeth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/elizabeth-stirling-753b2779/)
 - Elizabeth is a Seattle area native who loves exploring the city. She has been interested in security ever since reading [Neal Stephenson's novel Reamde](https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497) when she was a kid. Her spare time is spent hiking around the forests of the Pacific Northwest and working on whatever side project catches her fancy. She has spent far too much money on keyboards and pretty rocks - sometimes even forging her own Bismuth crystals. Elizabeth graduated with a B.S. in Computer Science from the University of Washington in Seattle. 
 
+## Austin Harshberger (he/him)
+
+- Customer Engineer
+- San Francisco, CA, USA, 🇺🇸
+- [austin@sourcegraph.com](mailto:austin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aharshbe/), [GitHub](https://github.com/aharshbe), [Click here + 🔊 to have Google pronounce my name](https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=Austin%20Harshberger)
+- Austin is a San Francisco transplant originally from the suburbs of San Bernadino (30 miles from LA). He enjoys programming and watching Netflix during his free time, is an avid ⌚ collector, gamer, and a novice gemologist 💎 Also, you might be able to steal a laugh if you find Austin at an indoor bouldering gym trying not to fall 🧗‍♂️ -- he often does. Before joining Sourcegraph, Austin worked at Coinbase where he helped to prevent employees from getting pwned by deploying numerous automation techniques to relentlessly but effectively patch endpoints. Before that, Austin worked at GitHub where he helped large enterprise customers to improve their development workflows by providing training as well as custom integrations of GitHub Enterprise appliances. He is friendly, inquisitive, very high energy and loves meeting new people so don't hesitate to say "hi" 👋
+
+## Tion Thomas (he/him)
+
+- Customer Engineer
+- Frederick, MD, USA, us
+- [tion@sourcegraph.com](mailto:tion@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tion-thomas-30562017), [GitHub](https://github.com/tistru), [YouTube](https://www.youtube.com/channel/UC9l1NGH1xciYs9z1LQ6CtqA)
+- Tion is a native New Yorker who has spent time all over the US including Boston, Florida, Indiana, Oregon, and currently Maryland. He has a B.S and M.S in computer science from Tufts University and Purdue University respectively. Prior to joining Sourcegraph, Tion has worked  in a variety of domains including systems engineering, software validation, strategic planning, UX, application engineering, programming, developer relations, and technical production spread over Lockheed Martin, Electronic Arts, Intel, Razer, and Magic Leap. His passion is in gaming and he continues to be an active member on many gaming forums and blogs while playing some of the latest games in his spare time. He also enjoys sports, music, and is an AV enthusiast (home theater and audio/video technologies). Tion is a proud father of 2 beautiful kids and a husband of 7 years! He loves working with customers and helping to enable amazing technology that is readily accessible to everyone. 
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
