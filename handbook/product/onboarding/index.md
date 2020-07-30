@@ -15,7 +15,7 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
 ## Product team member checklist
 
 - Get to know our team and learn about Sourcegraph (company and product)
-  - Schedule 30-min 1:1s with your manager for the first three days at Sourcegraph to keep up with your onboarding and ask all the questions you might have
+  - Schedule daily check-ins for the first week at Sourcegraph to keep up with your onboarding and to create space for answering any questions that might come up.
 - Finish [general onboarding tasks](../../people-ops/onboarding/index.md#for-all-new-teammates)
   - Set up your email filters, especially for GitHub and feedback
 - Get to know the product
@@ -23,9 +23,9 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
     - You will need to run Sourcegraph locally to test/validate work that engineering is doing, to provide early/often feedback.
   - Review [product resources](../index.md#resources)
   - [Products](https://about.sourcegraph.com/product)
-  - Watch this [demo video](https://drive.google.com/file/d/1idbCnce5MIvtAV0GOOwgB68zQJB2WmZ9/view)
-  - Read about [search queries](https://docs.sourcegraph.com/user/search) and perform your first searches
-  - Answer all the questions from the [Sales Onboarding Quiz](https://about.sourcegraph.com/handbook/sales/onboarding/quiz) and discuss the answers with your manager
+  - Learn how the Customer Engineering team gives demos and talks about the product in the [product demo recording](https://drive.google.com/file/d/1idbCnce5MIvtAV0GOOwgB68zQJB2WmZ9/view).
+  - Read about [search queries](https://docs.sourcegraph.com/user/search) and perform your first searches.
+  - Work through the questions from the [Sales Onboarding Quiz](../sales/onboarding/quiz.md) to make sure you understand key concepts. Discuss any questions you have or knowledge gaps with your manager.
 - Get to know our customers
   - Reach out to the Sales/CE teams and ask to be added to as many customer calls as you can this week.
   - Feedback
