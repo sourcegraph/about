@@ -12,7 +12,7 @@ At Sourcegraph we think that security is an enabler for the business. Sourcegrap
 
 - Proactively improve the security of our application and infrastructure.
     - Identify what our security needs are and develop a roadmap to improve and ensure the security of our product.
-- Directly contribute to our codebase (i.e., Go, TypeScript, Kubernetes, Docker, Google Cloud Platform), and help other engineers on our team make the necessary changes.
+- Directly contribute to our codebase (i.e., Go, TypeScript, Kubernetes, Docker, Google Cloud Platform) to secure our application and deployments, and help other engineers on our team make the necessary changes.
 - [Respond to security vulnerability reports](#how-we-respond-to-security-vulnerability-reports)
     - https://github.com/sourcegraph/security-issues
 - Increase our security posture by running traditional security tools such as vulnerability scanners, SAST, and DAST tools.
