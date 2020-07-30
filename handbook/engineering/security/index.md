@@ -11,7 +11,7 @@ At Sourcegraph we think that security is an enabler for the business. Sourcegrap
 ## Responsibilities
 
 - Proactively improve the security of our application and infrastructure.
-    - Identify what our security needs are and develop a roadmap to improve and ensure the security of our product.
+- Define, plan, and prioritize security work that needs to be done (and then go do that work).
 - Directly contribute to our codebase (i.e., Go, TypeScript, Kubernetes, Docker, Google Cloud Platform) to secure our application and deployments, and help other engineers on our team make the necessary changes.
 - [Respond to security vulnerability reports](#how-we-respond-to-security-vulnerability-reports)
     - https://github.com/sourcegraph/security-issues
