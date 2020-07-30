@@ -11,11 +11,11 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
   - Productboard
   - UserTesting.com
 - Schedule a recurring [1-1](../../leadership/1-1.md).
+- Schedule daily check-ins for the first week at Sourcegraph to keep up with your onboarding and to create space for answering any questions that might come up.
 
 ## Product team member checklist
 
 - Get to know our team and learn about Sourcegraph (company and product)
-  - Schedule daily check-ins for the first week at Sourcegraph to keep up with your onboarding and to create space for answering any questions that might come up.
 - Finish [general onboarding tasks](../../people-ops/onboarding/index.md#for-all-new-teammates)
   - Set up your email filters, especially for GitHub and feedback
 - Get to know the product
