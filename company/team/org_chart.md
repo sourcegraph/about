@@ -40,6 +40,7 @@ This org chart is generated automatically based on the contents of other handboo
 
 <script>
 // This script injects the org chart content into each section of this page that links to a team page.
+// It is similar to the script used to compile the goals in ../goals/index.md.
 
 async function getPageOrgChart(pageUrl) {
 	const sectionId = pageUrl.replace(/^.*#/, '')
@@ -83,10 +84,10 @@ Promise.all(
 ).then(sections => {
 	const loading = document.getElementById('org-chart-loading')
 	loading.innerHTML = '' // clear
-	
+
 	for (const {header, content} of sections) {
 		header.parentNode.insertBefore(content, header.nextSibling)
-		
+
 		// Make header link to top of page, not the members section.
 		const headerLink = header.querySelector('a[href]:not([aria-hidden])')
 		const headerLinkUrl = new URL(headerLink.href)
