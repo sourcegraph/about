@@ -48,6 +48,7 @@ Your manager should complete the following steps when you join:
 Your manager will assign to you three starter tasks that you should aim to complete in your first three weeks. These tasks are small, atomic, and intended to expose you to different parts of our codebase and product: it's important that you build the flexibility to fix any problem you'll be faced with at Sourcegraph, and don't narrow down your comfort zone to a certain part of our codebase or product.
 
 As you're working on these tasks:
+- Optimize for learning: your priority is to soak up as much context as possible, not to ship something as fast as possible.
 - Aim to be as incremental as possible:
     - Open a pull request as soon as you feel like you're ready for feedback or input on your code — you can make it a draft pull request if your code is still a work in progress.  
     - Favour splitting up your work in multiple pull requests every time it makes sense — shipping frequently is important.
