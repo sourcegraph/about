@@ -160,7 +160,7 @@ useEffect(() => {
 
 ### Fetching data in componentDidMount
 
-A lot of components will fetch initial data using observables, calling `setState()` in the `susbcribe()` callback. See [this example from `SiteUsageExploreSection`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@9997438a8ba2fdc54920f1f6ad22dd08d4a37215/-/blob/web/src/usageStatistics/explore/SiteUsageExploreSection.tsx?subtree=true#L32-38):
+A lot of components will fetch initial data using observables, calling `setState()` in the `subscribe()` callback. See [this example from `SiteUsageExploreSection`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@9997438a8ba2fdc54920f1f6ad22dd08d4a37215/-/blob/web/src/usageStatistics/explore/SiteUsageExploreSection.tsx?subtree=true#L32-38):
 
 ```typescript
     public componentDidMount(): void {
