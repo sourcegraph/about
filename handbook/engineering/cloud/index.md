@@ -89,4 +89,4 @@ _Updated 2020-07-03_
 
 We are hiring for these roles:
 
-- +1 Software Engineer - Full Stack (Job req TBD)
+- +1 [Software Engineer - Backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md)
