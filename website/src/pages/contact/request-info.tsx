@@ -15,15 +15,13 @@ export default class TrialPage extends React.Component<any, any> {
     }
 
     public handleOnFormSubmit = event => {
+        const numEngineers = ['1-10', '11-250']
         if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
             const formData = event.data.data
             const numEng = formData.find(({ name }) => name === 'number_of_eng')
-            if (numEng.value !== '11-200') {
-                setTimeout(() => {
-                    window.location.assign('https://info.sourcegraph.com/request-info-scheduling-enterprise')
-                }, 100)
+            if (numEngineers.indexOf(numEng.value) === -1) {
+                window.location.assign('https://info.sourcegraph.com/request-info-scheduling-enterprise')
             }
-            console.log(formData)
         }
     }
 
@@ -34,10 +32,9 @@ export default class TrialPage extends React.Component<any, any> {
     public componentDidMount(): void {
         window.addEventListener('message', this.handleOnFormSubmit)
 
-        const selectedEngCount = ''
         createHubSpotForm({
             portalId: '2762526',
-            formId: 'ee4e19f9-29e1-4a89-8db5-f7efdcdb240b',
+            formId: '202906aa-b46d-4657-86c4-30fbfda2413f',
             targetId: 'hubspotRequestTrialForm',
         })
         if (document) {
