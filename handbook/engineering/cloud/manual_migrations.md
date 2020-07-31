@@ -19,7 +19,11 @@ Exact SQL:
 TODO(efritz,chayim)
 ```
 
+**Impact if this migration is undone:** Sourcegraph personnel would need to use the write-only `sg` user, does not impact product or performance behavior.
+
 ## July 27th, 2020 - index addition
+
+https://gist.github.com/rvantonder/7745c2360cfced6f12c922588bfbef79
 
 https://twitter.com/beyang/status/1287826896281989120
 
@@ -30,3 +34,5 @@ Exact SQL:
 ```sql
 CREATE INDEX CONCURRENTLY repo_name_idx ON public.repo USING btree (lower(name::text) COLLATE pg_catalog."C");
 ```
+
+**Impact if this migration is undone:** Degraded performance when searching a lot of repos with a common prefix, no impact otherwise.
