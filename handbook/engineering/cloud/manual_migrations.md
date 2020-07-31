@@ -28,5 +28,5 @@ https://github.com/sourcegraph/sourcegraph/pull/12591
 Exact SQL:
 
 ```sql
-TODO(beyang,rijnard)
+CREATE INDEX CONCURRENTLY repo_name_idx ON public.repo USING btree (lower(name::text) COLLATE pg_catalog."C");
 ```
