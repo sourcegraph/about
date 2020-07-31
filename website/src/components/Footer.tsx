@@ -1,9 +1,3 @@
-import { Link } from 'gatsby'
-import GithubIcon from 'mdi-react/GithubIcon'
-import LinkedinIcon from 'mdi-react/LinkedinIcon'
-import TwitterIcon from 'mdi-react/TwitterIcon'
-import * as React from 'react'
-
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) =>
             <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
                 <ul className="nav">
