@@ -39,13 +39,13 @@
     &__action {
         background-color: $light-11;
         border: 1px solid #dee2e6 !important;
-        padding: 0.75rem;
         padding: 1.5rem;
         min-height: 150px;
+        resize: none;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1023.98px) {
         &__local {
-            border-right: none;
+            border-right: none !important;
             padding-right: 15px;
         }
         &__search {
@@ -54,9 +54,22 @@
             padding-top: 1.5rem;
             padding-left: 1rem;
         }
+    }
+    @media (max-width: 465px) {
         textarea {
             padding: 0.75rem;
             min-height: 180px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023.98px) {
+        textarea {
+            min-height: 150px;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1199.98px) {
+        textarea {
+            padding: 0.75rem 0.5rem;
+            min-height: 170px;
         }
     }
 }
