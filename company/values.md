@@ -27,8 +27,3 @@ We prefer to [build teams, not workgroups](https://dzone.com/articles/workgroups
 
 As a team's size and scope grows, it (unintentionally) tends to become a workgroup. Resist this by aggressively focusing, or by splitting it into smaller teams.
 
-## If it's not used, it's useless
-
-The only way to measure the value of your work is whether it's used by our users, customers, or team. If you do something and it gets ignored, never ships, or never gains meaningful adoption, then it's useless---even if it took a lot of time. Even if it was hard. Even if you had a beautiful solution. Even if someone else told you to do it. Even if it was someone else's responsibility to deliver it to the customer and grow usage after you built it (which is usually a red flag). If you're working on something, always follow through to make sure it gets used. And if you find something that’s not being used, remove it.
-
-It's completely OK to try things that end up not being useful! That is how we learn.
