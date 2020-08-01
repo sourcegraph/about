@@ -933,14 +933,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
-  version "7.10.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.4.tgz#a6724f1a6b8d2f6ea5236dbfe58c7d7ea9c5eb99"
-  integrity sha512-UpTN5yUJr9b4EX2CnGNWIvER7Ab83ibv0pcvvHc4UOdrBI5jb8bj+32cCwPX6xu0mt2daFNjYhoi+X7beH0RSw==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.3.1":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.10.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
   integrity sha512-otddXKhdNn7d0ptoFRHtMLa8LqDxLYwTjB4nYgM1yy5N6gU/MUf8zqyyLltCH3yAVitBzmwK4us+DD0l/MauAg==
@@ -12036,10 +12029,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-rehype-react@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/rehype-react/-/rehype-react-6.0.0.tgz#275b5fa32d5a296fc0bacac8e3c003b2fa32f916"
-  integrity sha512-66Z85/Sp/Aa2fjIQbVxIkcXgWsPDZ89e0uKiGvyCc4eSQCVj8kzHWDa8c0coxUZsGLkyzYvPF6F5txbFhRpFCQ==
+rehype-react@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/rehype-react/-/rehype-react-6.1.0.tgz#95f8c936eea2159f92adfbf58e5e90be86a97cbf"
+  integrity sha512-hQ4DSGOJKA1a87Ei4fJtSHzopbfgoHkwjWMCFpLrcVR5+AIyCOtHy4oQcpGF11kTZOU6oKmJ9UKzO/JpI/XZWA==
   dependencies:
     "@mapbox/hast-util-table-cell-style" "^0.1.3"
     hast-to-hyperscript "^9.0.0"
