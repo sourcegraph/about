@@ -245,14 +245,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [dax@sourcegraph.com](mailto:dax@sourcegraph.com), [Github](https://github.com/daxmc99), [Twitter](https://twitter.com/cloudmarooned)
 - Dax enjoys playing ultimate frisbee 🥏, running 🏃‍♂️ and running K8s on his Raspberry Pi. Before Sourcegraph, he worked on making Kubernetes easier to use with Rio and K3s. He is an avid enthusiast of open-source and open-hardware. He has contributed to several open source projects such as Kubernetes, Linkerd & MetalLB
 
-## Simon Korzunov
-
-- Software Engineer
-- Lynnwood, WA, USA 🇺🇸
-- [simon@sourcegraph.com](mailto:simon@sourcegraph.com), [Github](https://github.com/twop), [Twitter](https://twitter.com/twopSK)
-- Simon is interested in programming languages (especially functional ones), type systems, new technologies(WebAssembly) and performance. His top 3 favorite programming languages: Rust, Elm, TypeScript. Outside of work he enjoys exploring gorgeus Pacific Northwest outdoors with his wife and daughter. Interesting fact: he used to be a semiprofessional
-  gamer (Magic: the Gathering) and a game developer at the same time.
-
 ## Robert Lin
 
 - Software Engineer Intern
@@ -273,13 +265,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Vancouver, Canada 🇨🇦
 - [aharvey@sourcegraph.com](mailto:aharvey@sourcegraph.com), [@LGnome](https://twitter.com/LGnome), [GitHub](https://github.com/LawnGnome)
 - Adam plays cricket, yells at hockey teams, and spends an inordinate amount of time convincing his golden retriever to drop things. He started his technology journey with an IBM XT in the 80s, and never looked back once he discovered the GW-BASIC `RENUM` command. Technologically, Adam enjoys programming language design, convincing runtimes to work on hardware they weren't designed to, and deluding himself that abusing CSS animations is exactly what his film degree qualified him to do.
-
-## Nicholas Kunszt (he/him)
-
-- Enterprise Account Executive
-- Orange County, CA 🇺🇸
-- [nick.kunszt@sourcegraph.com](mailto:nick.kunszt@sourcegraph.com), [GitHub](https://github.com/Nick-Kunszt)
-- Nick enjoys playing music, soaking in the California sun, and spending QT with friends and family. Before joining Sourcegraph, Nick spent the last 7 years at Google formalizing digital marketing and analytics solutions to companies ranging from start-ups to Fortune 500's. He is passionate about forming long term relationships, solving business challenges by providing exceptional customer experience, and delivering data-driven results.
 
 ## Mark Muldez (he/him)
 
