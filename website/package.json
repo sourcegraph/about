@@ -65,7 +65,7 @@
     "@sourcegraph/tsconfig": "^4.0.1",
     "@sourcegraph/tslint-config": "^13.4.0",
     "@types/bootstrap": "4.5.0",
-    "@types/lodash": "4.14.157",
+    "@types/lodash": "4.14.158",
     "@types/react": "16.9.42",
     "@types/react-dom": "16.9.8",
     "@types/react-router-dom": "5.1.5",
