@@ -137,7 +137,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Head of Marketing
 - Hillsborough, CA, USA 🇺🇸
 - [adam@sourcegraph.com](mailto:adam@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/adamfrankl)
-- Adam has spent most of his career marketing technology to developers. He has co-founded or led marketing at 16 VC-backed startups, raning from developer tools to game technology to developer tools. He is a US Army veteran, and has been practising yoga for over 20 years.
+- Adam has spent most of his career marketing technology to developers. He has co-founded or led marketing at 16 VC-backed startups, ranging from developer tools to game technology to developer tools. He is a US Army veteran, and has been practising yoga for over 20 years.
 
 ## Dan Adler (he/him)
 
