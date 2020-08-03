@@ -125,8 +125,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [loic@sourcegraph.com](mailto:loic@sourcegraph.com), [lguychard](https://github.com/lguychard), [LinkedIn](https://www.linkedin.com/in/lo%C3%AFc-guychard-749b8152/)
 - Loïc loves oceanside living and long bike rides. He started his career as a linguist, before transitioning to software engineering while working at Dashlane.
 
-## Aileen Agricola
+## Aileen Agricola (she/her)
 
+- First name pronounced eye-LEAN
 - Senior Digital Marketing Manager
 - San Carlos, CA and Bainbridge Island, WA USA 🇺🇸
 - [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
