@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 import { CaseStudiesSection } from '../../components/product/CaseStudiesSection'
+import { TrySourcegraph } from '../../components/TrySourcegraph'
 
 const DESCRIPTION = 'Learn how engineering teams use Sourcegraph Universal Code Search.'
 
@@ -25,6 +26,7 @@ export default ((props: any) => (
             <ContentSection>
                 <CaseStudiesSection />
             </ContentSection>
+            <TrySourcegraph className="my-6" />
         </div>
     </Layout>
 )) as React.FunctionComponent<any>
