@@ -38,7 +38,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Distribution / Software Engineer
 - Phoenix, AZ, USA 🇺🇸
 - [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com), [@slimsag](https://twitter.com/slimsag), [LinkedIn](https://www.linkedin.com/in/slimsag), [pronounce my name 🔊](https://www.name-coach.com/stephen-gutekanst)
-- Stephen enjoys spending time with his numerous kittos in his Phoenix home-turned-shelter while solving some of the most critical and technically challenging issues he can get his hands on. Over the past 5 years he has been working directly with some of our largest customers and relentlessly advocating for users. Prior to Sourcegraph, he worked 3 years full-time on a game engine in Go while attending college.
+- Stephen enjoys spending time with his numerous [kittos](https://raw.githubusercontent.com/slimsag/slimsag/master/kingdom_final.jpg) while solving some of the most critical and technically challenging issues he can get his hands on. Over the past 5 years he has been working directly with some of our largest customers and relentlessly advocating for users. Prior to Sourcegraph, he worked 3 years full-time on a game engine in Go while attending college.
 
 ## Ryan Slade (he/him)
 
