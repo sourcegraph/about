@@ -14,6 +14,9 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             <h3 className="footer__nav-header">About Sourcegraph</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
+                                    <Link to="/case-studies">Case studies</Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link to="/customers">Customers</Link>
                                 </li>
                                 <li className="nav-item">

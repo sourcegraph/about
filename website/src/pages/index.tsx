@@ -8,7 +8,6 @@ import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -242,7 +241,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <GetStarted />
+            <GetStarted className="bg-gradient-green-blue" />
         </div>
     </Layout>
 )
