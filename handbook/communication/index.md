@@ -28,6 +28,7 @@ The following places are not sources of truth. Treat documents and conversations
 - [RFCs](rfcs/index.md)
 - Email
 - Zoom recordings
+- Meeting notes
 - All other Google Docs/Sheets/Slides
 
 ## Meetings
@@ -47,6 +48,7 @@ The following places are not sources of truth. Treat documents and conversations
   - Enable "Guest permissions: Modify event" so that other people can easily reschedule the meeting if needed.
 - Add a Google Doc link to the event description for taking notes during the meeting.
   - If the meeting is recurring, use the same Google Doc for all meetings.
+- Remind people of your role in cross-functional meetings (including company meeting) or any other meeting that has team members you haven't met yet. We're growing, and it's hard to remember everyone's role! (The [org chart](../../company/team/org_chart.md) helps.)
 
 #### Structured meetings
 
@@ -61,6 +63,8 @@ This assumes that currently the meeting has a Google Doc with notes that people 
 1. Everyone writes down their items by a certain time before the meeting (e.g., 12 hours before). Everyone reviews what other people wrote before the meeting starts. Only people who have commented on an item can make further comments on the topic during the discussion.
 
 > This idea is from [The Great CEO Within](https://www.amazon.com/Great-CEO-Within-Tactical-Building-ebook/dp/B07ZLGQZYC) (Chapter 12) by [@mattmochary](https://twitter.com/mattmochary).
+
+Structured meetings are great, but it's important to have casual, unscheduled, free-flowing time to chat with people as well. That helps build personal bonds and surface topics or ideas that might not come up in structured meetings.
 
 ### External meetings
 

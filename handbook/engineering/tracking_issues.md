@@ -11,7 +11,7 @@
 
 ## What is a tracking issue?
 
-A tracking issue is a GitHub issue that captures the planned and on-going work of a team's milestone, project, RFC, OKR or anything else of the sort. This artifact is a medium used for planning, progress check-ins and stakeholder communication.
+A tracking issue is a GitHub issue that captures the planned and on-going work of a team's milestone, project, RFC, goal or anything else of the sort. This artifact is a medium used for planning, progress check-ins and stakeholder communication.
 
 You can take a look at [examples of open tracking issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking) to get a sense of what they look like.
 
@@ -89,7 +89,7 @@ Each engineer is responsible for posting a weekly update on Friday to tracking i
     - https://github.com/sourcegraph/sourcegraph/issues/11494
 - Not as good: `Worked on #111, #444, and RFC 123`
 
-Each engineering manager (or project lead for projects that don't have a dedicated manager) is responsible for posting a weekly update on Monday. This update should be in prose, and should capture your individual progress as well as any team context that isn't obvious from the individual updates from others on the team (e.g., important team decisions, implementation milestones, pain points, changes to planned work, unexpected work that took time away from planned work). You should assume that anyone who reads your update will have read the previous individual updates, so no need to repeat anything.
+Each engineering manager is responsible for posting a weekly update on Monday. This update should be in prose, and should capture your individual progress as well as any team context that isn't obvious from the individual updates from others on the team (e.g., important team decisions, implementation milestones, pain points, changes to planned work, unexpected work that took time away from planned work). You should assume that anyone who reads your update will have read the previous individual updates, so no need to repeat anything.
 
 ## Contributing to the tracking issue tool
 

@@ -2,6 +2,8 @@
 
 The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/open_source_open_company.md#open-company).
 
+The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. [How to edit the handbook](https://about.sourcegraph.com/handbook/editing).
+
 ## Company
 
 - [Strategy](../company/strategy.md)
@@ -10,7 +12,8 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Communication](communication/index.md)
   - [Style guide](communication/style_guide.md)
 - [Team](../company/team/index.md)
-- [OKRs](../company/okrs/index.md)
+  - [Org chart](../company/team/org_chart.md)
+- [Goals](../company/goals/index.md)
 - [CEO](ceo/index.md)
 
 ## Handbook sections
@@ -32,7 +35,7 @@ The below headers are roughly the teams at Sourcegraph. Everyone should feel emp
 
 ### [Engineering](engineering/index.md)
 
-<!-- When updating the engineering team list below, please also update in engineering/index.md -->
+<!-- When updating the engineering team list below, please also update company/team/org_chart.md. -->
 
 - [Engineering](engineering/index.md)
   - [Distribution](engineering/distribution/index.md)

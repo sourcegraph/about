@@ -13,11 +13,19 @@
   - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
   - [Website style guide](website_style_guide.md)
 
+##  Members
+
+- [Adam Frankl](../../company/team/index.md#adam-frankl-he-him)
+- [Aileen Agricola](../../company/team/index.md#aileen-agricola)
+- [Adam Herzog](../../company/team/index.md#adam-herzog-he-him)
+- [Laureen Hudson](../../company/team/index.md#laureen-hudson-she-her)
+- [Kimberly Hopson](../../company/team/index.md#kimberly-hopson-she-her)
+
 ## Team communication
 
 The marketing team holds a weekly meeting to review the topics below. [Internal notes](https://docs.google.com/document/d/1vX3vF6t8HP-7-K9giM85UKEoAhmhy-ifAvbbFDvmKwo/edit#) for each meeting should be maintained by the group (while adhering to the [company-wide communication guidelines](../communication/index.md))
 
-1. Metrics and performance against team quarterly [OKRs](../../company/okrs/index.md).
+1. Metrics and performance against team goals.
 1. Review of the prior week's initiatives.
 1. Plan for the coming week, and an update on monthly/quarterly initiatives.
 
@@ -53,7 +61,10 @@ Web traffic is measured by analyzing two metrics: [all users](https://www.lovesd
 
 ### Inquiry
 
-An inquiry is a person who has requested information from Sourcegraph for the first time and has provided Sourcegraph with at least an email address. This may be online via a web form, or in person, for example, at a conference. Someone may become an inquiry and a [MQL](#mql) at the same time, or may take years between converting from an inquiry to a [MQL](#mql).
+An inquiry is a person who has requested information from Sourcegraph for the first time and has provided Sourcegraph with at least an email address. This may be online via a web form, or in person, for example, at a conference. Someone may become an inquiry and a [MQL](#mql) at the same time, or may take months between converting from an inquiry to a [MQL](#mql).
+
+### Interesting inquiry
+Any inquiry that works for a company with > $10M in revenue, or specifies that there are 200+ software engineers at their company will be highlighted as 'interesting'.
 
 ### MQL
 
