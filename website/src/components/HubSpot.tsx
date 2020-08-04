@@ -2,10 +2,11 @@ export interface HubSpotForm {
     portalId: string
     formId: string
     targetId: string
-    onFormSubmit?: () => void
+    onFormSubmit?: (obj: { data: { name: string; value: string }[] }) => void
+    //  onFormSubmitted?: () => void
 }
 
-export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit }: HubSpotForm): void {
+export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, onFormSubmitted }: HubSpotForm): void {
     const script = document.createElement('script')
     script.src = '//js.hsforms.net/forms/v2.js'
     const hubspot = document.getElementById(targetId)

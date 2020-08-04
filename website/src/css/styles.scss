@@ -234,6 +234,7 @@ table {
 @import 'components/content/ContentPage';
 @import 'components/content/ContentSection';
 @import 'components/pricing/index';
+@import 'components/product/CaseStudiesSection';
 @import 'components/product/CustomerLogosSection';
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
@@ -242,6 +243,7 @@ table {
 @import 'components/Footer';
 @import 'components/Cookiebot';
 @import 'components/Events';
+@import 'components/GetStarted';
 @import 'components/Tweets';
 @import 'components/IconItem';
 @import 'components/TestimonialCarousel';
@@ -286,4 +288,13 @@ body {
 }
 .bg-gradient-primary {
     background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
+}
+.bg-gradient-green-blue {
+    background: linear-gradient(
+            90deg,
+            rgba(108, 255, 212, 0.4) 10%,
+            rgba(105, 255, 211, 0.1) 50%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
 }

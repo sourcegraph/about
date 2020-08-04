@@ -1,6 +1,6 @@
 import { graphql, Link } from 'gatsby'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
@@ -45,12 +45,10 @@ export default class BlogPostTemplate extends React.Component<any, any> {
         const title = md.frontmatter.title
         const publishDate = md.frontmatter.publishDate
         let slug = md.slug
-        const fileName = md.fileAbsolutePath.split('/').pop()
+        const fileName = md.fileAbsolutePath.split('blogposts/').pop()
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
         const content = md.html
-        const image = md.frontmatter.heroImage
-            ? `${md.frontmatter.heroImage}`
-            : 'https://about.sourcegraph.com/sourcegraph-mark.png'
+        const image = 'https://about.sourcegraph.com/sourcegraph-mark.png'
         const meta = {
             title,
             image,
@@ -94,7 +92,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                             <section className="blog-post__body">
                                 <div dangerouslySetInnerHTML={{ __html: content }} />
                                 <section className="blog-post__footer mt-4 pt-4">
-                                    <Link to={BLOGS.Blog} className="button btn btn-outline-primary">
+                                    <Link to="/blog" className="button btn btn-outline-primary">
                                         Read more posts
                                     </Link>
                                     <a

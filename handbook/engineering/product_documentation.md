@@ -12,6 +12,19 @@ It's the [responsibility of the Product Manager](../../handbook/product/roles.md
 
 We use the [monthly release blog post](https://about.sourcegraph.com/blog) as a changelog checklist to ensure everything is documented.
 
+## Local development of documentation only
+
+For local development of documentation, clone the main [sourcegraph repository](https://github.com/sourcegraph/sourcegraph/tree/master/).  The development environment for Sourcegraph, detailed in [Getting started with developing Sourcegraph](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md), is not required.
+
+After saving any changes or updates, documentation can be previewed locally with the follow commands:
+
+```
+cd sourcegraph
+./dev/docsite.sh -config doc/docsite.json serve -http=localhost:5080
+```
+
+Navigate the browser to [https://localhost:5080](https://localhost:5080) to view the documentation.
+
 ## Naming and linking documentation pages
 
 1. Every page in a directory should be linked to from its parent page (index.md in that directory), unless the document is designed to be [standalone](#standalone-documents).
@@ -21,7 +34,7 @@ We use the [monthly release blog post](https://about.sourcegraph.com/blog) as a 
 1. Always cross-link to `.md` files, including the file extension, so that the docs are browseable as-is (e.g., in GitHub's file browser).
 1. When you create a new directory, always start with an `index.md` file. Don't use another file name and don't create `README.md` files.
 1. Don't use special chars and spaces, or capital letters in file names, directory names, branch names, and anything that generates a path.
-1. For large images and other binary assets, upload them to the `sourcegraph-assets` Google Cloud Storage bucket instead with `gsutil cp -a public-read local/path/to/myasset.png gs://sourcegraph-assets/` (and refer to them as `https://storage.googleapis.com/sourcegraph-assets/myasset.png`).
+1. For large images and other binary assets, upload them to the `sourcegraph-assets` Google Cloud Storage bucket instead with `gsutil cp -a public-read local/path/to/myasset.png gs://sourcegraph-assets/` (and refer to them as `https://sourcegraphstatic.com/myasset.png`).
 1. When creating a new document and it has more than one word in its name, use underscores instead of spaces or dashes (`-`). For example, a proper name would be `import_projects_from_github.md`.
 1. Start a new directory with an `index.md` file.
 

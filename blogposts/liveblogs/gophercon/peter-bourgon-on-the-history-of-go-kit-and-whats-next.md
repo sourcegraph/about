@@ -34,7 +34,7 @@ Initial commit: 3 Feb 2015.
 ### June 2016
 
 - 62 contributors
-- Open tracing stuff (zipkin, lightstep)
+- Open tracing stuff (zipkin, [lightstep](https://github.com/lightstep))
 - First tagged version
 - go-kit log
 

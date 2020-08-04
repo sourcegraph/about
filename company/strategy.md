@@ -18,7 +18,7 @@ Everything we do stems from our [purpose](#purpose), to make it so **everyone ca
 - 1 year
   - [1-year vision](#1-year-vision)
   - [Product direction](#product-direction)
-  - [OKRs](#okrs)
+  - [Goals](#goals)
 
 ## Purpose
 
@@ -38,7 +38,7 @@ To make it so [everyone can code](#purpose), we will create tools, networks, and
 
 ## [Values](values.md)
 
-Our [values](values.md) are the principles we want to uphold as we work toward our mission.
+Our [values](values.md) are the principles and beliefs that help us achieve our [goals](goals/index.md) and [vision](#vision).
 
 ## Big Code
 
@@ -47,6 +47,8 @@ We're living in [the era of Big Code](https://thenewstack.io/universal-code-sear
 Tools and practices that were conceived before the era of Big Code will break down, leaving codebases that are huge but complex and brittle. Any change might shatter the whole thing. Developers become hesitant about making changes. Productivity slows, communication bottlenecks grow, deadlines are missed, and quality declines.
 
 This is a new game. Companies that master this will thrive. Companies that don't will fail.
+
+> For people as users of technology, Big Code is great. It means there's more software out there, it's more personalized, it's faster, it's on their desktop and phone and watch, it's localized, and so on. But for developers, it's way harder and takes way more work to build software than it did 10 years ago.
 
 ## Vision
 
@@ -127,6 +129,6 @@ Coding itself is a technology, and we anticipate the technology adoption curve w
 
 Our [product direction](../direction/index.md) describes what we plan to build to make this vision real.
 
-## [OKRs (goals)](okrs/index.md) {#okrs}
+## [Goals](goals/index.md)
 
-Our [OKRs (goals)](okrs/index.md) describe what each of us is doing this quarter to work toward our mission.
+Our [goals](goals/index.md) describe what each of us is working toward now (so that we succeed in our long-term mission).
