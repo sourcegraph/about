@@ -383,6 +383,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [GitHub](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage), [pronounce my name 🔊](https://www.name-coach.com/julip)
 - Juliana is originally from Cali, Colombia 🇨🇴 and went to college in Mexico City 🇲🇽 before moving to the Seattle area. She loves building powerful and beautiful web applications that improve people's lives. Before Sourcegraph, Juliana worked at Microsoft building successful startup projects, and is now very excited to be working in a real startup company. Outside of work, Juliana loves cyling, collecting Lego, playing video games, and traveling.
 
+## Tharuntej Kandala (he/him)
+
+- Software Engineer
+- Jacksonville, FL, USA 🇺🇸
+- [tj@sourcegraph.com](mailto:tj@sourcegraph.com), [GitHub](https://github.com/tjkandala)
+- Call him "TJ"
+- TJ was born in India before he was brought to the swamp. He strives to bridge the gap between Developer Experience and User Experience in modern web applications. Outside of work, he loves to code and dunk basketballs by the ocean.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
