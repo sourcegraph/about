@@ -44,7 +44,7 @@ We track most of our work using [issues on the Sourcegraph main repository](http
 ## Members
 
 - [Aida DeWitt](../../../company/team/index.md#aida-dewitt-she-her) ([engineering manager](../roles.md#engineering-manager))
-- [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him) ([project lead](../roles.md#project-lead))
+- [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him) 
 - [Garo Brik](../../../company/team/index.md#garo-brik-they-them)
 - [N. S-C.](../../../company/team/index.md#todo) starting 2020-08-17
 
