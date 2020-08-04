@@ -10,7 +10,7 @@
     }
 
     &__label {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         font-size: 1rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -26,7 +26,6 @@
         padding: 0 2.5rem;
 
         img {
-            width: 100%;
             max-width: 150px;
         }
 
@@ -51,11 +50,12 @@
                 font-size: 1.9rem;
             }
         }
-
+        a {
+            font-size: 1rem;
+        }
         footer {
-            font-size: 1.4rem;
+            font-size: 1rem;
             font-weight: 400;
-            opacity: 0.6;
         }
 
         &--in-content {
@@ -63,10 +63,10 @@
 
             p {
                 padding-left: 1rem;
-                border-left: 3px solid #00b4f2;
+                border-left: 3px solid #f86012;
                 font-weight: 600;
                 font-size: 1.2rem;
-                line-height: 1.3;
+                line-height: 1.5;
             }
         }
     }

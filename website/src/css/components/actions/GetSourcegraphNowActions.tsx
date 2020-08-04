@@ -4,7 +4,7 @@ import { RequestDemoAction } from './RequestDemoAction'
 import { ViewDeveloperDocumentationAction } from './ViewDeveloperDocumentationAction'
 
 export const GetSourcegraphNowActions: React.FunctionComponent<any> = () => (
-    <div className="d-flex justify-content-center w-100 pt-2 mb-3">
+    <div className="d-flex justify-content-center w-100 pt-2 my-3">
         <div
             className="flex-0 rounded rounded-lg py-4 px-6"
             style={{

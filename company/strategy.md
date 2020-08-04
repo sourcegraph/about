@@ -1,4 +1,4 @@
-# Sourcegraph master plan
+# Sourcegraph strategy
 
 Everything we do stems from our [purpose](#purpose), to make it so **everyone can code**. We'll accomplish that over the next 30 years by following our strategy:
 
@@ -18,7 +18,7 @@ Everything we do stems from our [purpose](#purpose), to make it so **everyone ca
 - 1 year
   - [1-year vision](#1-year-vision)
   - [Product direction](#product-direction)
-  - [OKRs](#okrs)
+  - [Goals](#goals)
 
 ## Purpose
 
@@ -38,7 +38,7 @@ To make it so [everyone can code](#purpose), we will create tools, networks, and
 
 ## [Values](values.md)
 
-Our [values](values.md) are the principles we want to uphold as we work toward our mission.
+Our [values](values.md) are the principles and beliefs that help us achieve our [goals](goals/index.md) and [vision](#vision).
 
 ## Big Code
 
@@ -47,6 +47,8 @@ We're living in [the era of Big Code](https://thenewstack.io/universal-code-sear
 Tools and practices that were conceived before the era of Big Code will break down, leaving codebases that are huge but complex and brittle. Any change might shatter the whole thing. Developers become hesitant about making changes. Productivity slows, communication bottlenecks grow, deadlines are missed, and quality declines.
 
 This is a new game. Companies that master this will thrive. Companies that don't will fail.
+
+> For people as users of technology, Big Code is great. It means there's more software out there, it's more personalized, it's faster, it's on their desktop and phone and watch, it's localized, and so on. But for developers, it's way harder and takes way more work to build software than it did 10 years ago.
 
 ## Vision
 
@@ -104,7 +106,7 @@ Coding itself is a technology, and we anticipate the technology adoption curve w
 - We want every developer, not just a specific niche audience, to use Sourcegraph.
   - We won't adopt polarizing public stances that would divide our audience.
 - Our product should strive to be fundamentally privacy-respecting and secure. This means that users don't need to trust us to verify that their data is private and secure.
-- Build on-ramps in our product to turn more people into frequent users, instead of building the product *for* infrequent users (which is a self-fulfilling prophecy).
+- Build on-ramps in our product to turn more people into frequent users, instead of building the product _for_ infrequent users (which is a self-fulfilling prophecy).
 - We eventually want to be a platform that ties together all of the tools developers use.
   - Other developer tools are partners, not competitors.
   - This entails designing for extensibility in our product (and documenting it more thoroughly) as a first-order priority.
@@ -113,9 +115,9 @@ Coding itself is a technology, and we anticipate the technology adoption curve w
 ## Assumptions
 
 - Sufficiently good code search will be useful to every developer many times per day (on average). It may take a while to convert any specific person into a frequent code search power user, but it will happen eventually.
-- Code search that is *exclusively* for public/open-source code is not actually that useful because most people spend most of their time working on their organization's internal code.
+- Code search that is _exclusively_ for public/open-source code is not actually that useful because most people spend most of their time working on their organization's internal code.
 - Any given developer will only pick one code search tool to use. Any given company will standardize on a single code search tool.
-  - Therefore, to avoid fragmentation, Sourcegraph should be not only *much* better than the alternatives, but also *not worse* in any significant way.
+  - Therefore, to avoid fragmentation, Sourcegraph should be not only _much_ better than the alternatives, but also _not worse_ in any significant way.
 
 ## Pricing
 
@@ -127,6 +129,6 @@ Coding itself is a technology, and we anticipate the technology adoption curve w
 
 Our [product direction](../direction/index.md) describes what we plan to build to make this vision real.
 
-## [OKRs (goals)](okrs/index.md) {#okrs}
+## [Goals](goals/index.md)
 
-Our [OKRs (goals)](okrs/index.md) describe what each of us is doing this quarter to work toward our mission.
+Our [goals](goals/index.md) describe what each of us is working toward now (so that we succeed in our long-term mission).

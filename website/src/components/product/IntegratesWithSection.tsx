@@ -172,8 +172,10 @@ export const IntegratesWithSection: React.FunctionComponent<{
     customTypeLabels?: Partial<Record<IntegrationEntry['type'], string>>
 }> = ({ className = '', showTypes, showOnlyCodeHostsWithCodeReviewIntegration, customTypeLabels }) => (
     <div className={`integrates-with-section ${className} mx-auto px-4`}>
-        <h4 className="text-center font-weight-light">Integrates with your existing tools and workflow</h4>
-        <div className="mt-6 mb-2">
+        <h3 className="text-center font-weight-light">
+            TODO(sqs): revamp this section - Sourcegraph integrates with your existing tools and workflow
+        </h3>
+        <div className="mt-4 mb-2">
             {(!showTypes || showTypes.includes('codeHost')) && (
                 <IntegrationEntriesRow
                     text={(customTypeLabels && customTypeLabels.codeHost) || 'Code hosting & review'}

@@ -13,11 +13,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/google/go-github/github" // with go modules enabled (GO111MODULE=on or outside GOPATH)
+	"github.com/google/go-github/v31/github" // with go modules enabled (GO111MODULE=on or outside GOPATH)
 	"golang.org/x/oauth2"
 )
 
-type IssueAuthorDetails struct {
+type ContributorDetails struct {
 	handle string
 	url    string
 }
@@ -36,83 +36,76 @@ func main() {
 	dateInput, _ := bufio.NewReader(os.Stdin).ReadString('\n')
 	lastReleaseDate := fmt.Sprintf("%s%s", dateInput[:len(dateInput)-1], "T12:00:00.000Z")
 
-	// (HACK): Generate list of Sourcegraphers to exclude from the list of contributors
-	//
-	// To manually re-generate the `sourcegraphers` map:
-	// Go to https://github.com/orgs/sourcegraph/teams/team/members
-	// Run this code in the console
-	//
-	// 		let sourcegraphers = [];
-	// 		window.document.querySelectorAll('li.table-list-item').forEach(
-	//   		el => sourcegraphers.push(`"${el.dataset.bulkActionsId.trim()}": "",`)
-	// 		)
-	// 		copy(`sourcegraphers := map[string]string{\n${sourcegraphers.join('\n  ')}\n}`)
-	//
-	// TODO: Replace with API call as part of the running of this script
-	sourcegraphers := map[string]string{
-		"aileenrose":      "",
-		"attfarhan":       "",
-		"beyang":          "",
-		"bot":             "",
-		"christinaforney": "",
-		"creachadair":     "",
-		"dadlerj":         "",
-		"efritz":          "",
-		"eseliger":        "",
-		"felixfbecker":    "",
-		"ggilmore":        "",
-		"ijt":             "",
-		"KattMingMing":    "",
-		"keegancsmith":    "",
-		"kevinchen94":     "",
-		"kevinzliu":       "",
-		"kzh":             "",
-		"lguychard":       "",
-		"mrnugget":        "",
-		"nicksnyder":      "",
-		"renovate":        "",
-		"renovate[bot]":   "",
-		"ryan-blunden":    "",
-		"ryanslade":       "",
-		"rvantonder":      "",
-		"slimsag":         "",
-		"sqs":             "",
-		"todo":            "",
-		"tsenart":         "",
-		"unknwon":         "",
-		"uwedeportivo":    "",
-		"vanesa":          "",
-	}
-
 	issueDate, err := time.Parse(time.RFC3339, lastReleaseDate)
 	if err != nil {
 		log.Fatal("error parsing date", err)
 		return
 	}
-	contributors := make(map[string]IssueAuthorDetails)
+
+	// Get members of our team
+	teamOpt := &github.TeamListTeamMembersOptions{Role: "all", ListOptions: github.ListOptions{PerPage: 100, Page: 1}}
+	sourcegraphTeamMembers, _, err := client.Teams.ListTeamMembersBySlug(ctx, "sourcegraph", "everyone", teamOpt)
+
+	// Extract teammate usernames
+	sourcegraphUsernames := make(map[string]struct{}, len(sourcegraphTeamMembers))
+
+	for _, m := range sourcegraphTeamMembers {
+		sourcegraphUsernames[*m.Login] = struct{}{}
+	}
+
+	contributors := make(map[string]ContributorDetails)
 	page := 0
 
 	// First print via repo
 	for _, repo := range repos {
-
-		for page < 15 {
+		// Get all issue contributors
+		findIssues: for {
 			opts := &github.IssueListByRepoOptions{Since: issueDate, ListOptions: github.ListOptions{PerPage: 100, Page: page}}
 			issues, _, err := client.Issues.ListByRepo(ctx, "sourcegraph", repo, opts)
 			if err != nil {
-				log.Fatal("error fetching repo", err)
+				log.Fatal("error fetching issues", err)
 				return
 			}
 
 			if len(issues) == 0 {
-				break
+				break findIssues
 			}
 
 			for _, issue := range issues {
-				if _, ok := sourcegraphers[*issue.User.Login]; ok {
+				if _, ok := sourcegraphUsernames[*issue.User.Login]; ok {
 					continue
 				}
 
-				contributors[*issue.User.Login] = IssueAuthorDetails{handle: *issue.User.Login, url: *issue.User.HTMLURL}
+				contributors[*issue.User.Login] = ContributorDetails{handle: *issue.User.Login, url: *issue.User.HTMLURL}
+			}
+			page++
+		}
+
+		// Get all created PR contributors
+		page = 0
+
+		findPrs: for {
+			repoOpts := &github.PullRequestListOptions{State: "all", ListOptions: github.ListOptions{PerPage: 100, Page: page}}
+			prs, _, err := client.PullRequests.List(ctx, "sourcegraph", repo, repoOpts)
+			if err != nil {
+				log.Fatal("error fetching pull requests", err)
+				return
+			}
+
+			if len(prs) == 0 {
+				break findPrs
+			}
+
+			for _, pr := range prs {
+				
+				if pr.CreatedAt.Before(issueDate) {
+					break findPrs
+				}
+				if _, ok := sourcegraphUsernames[*pr.User.Login]; ok {
+					continue
+				}
+
+				contributors[*pr.User.Login] = ContributorDetails{handle: *pr.User.Login, url: *pr.User.HTMLURL}
 			}
 			page++
 		}

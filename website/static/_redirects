@@ -1,7 +1,16 @@
+/abc /resources/abcs-book
+/blog/making-code-nav-twice-as-fast /blog/optimizing-a-code-intel-backend 301!
+/blog/performance-improvements-in-precise-code-intel /blog/optimizing-a-code-intel-backend 301!
 /blog/gitlab-adds-code-navigation-and-code-intelligence-by-sourcegraph /blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence 301!
 /blog/github-universe-liveblog-innersource-and-reaping-the-benefits-of-open-source-behind-your-firewall /blog/github-universe-liveblog-innersource 301!
 /blog/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go /blog/google-i-o-talk-building-sourcegraph 301!
+/blog/go /go 301!
+/blog/graphql /graphql 301!
+/blog/press-release-our-abcs-childrens-book /press-releases/our-abcs-childrens-book 301!
+/blog/press-release-sourcegraph-secures-series-b /press-releases/sourcegraph-secures-series-b 301!
+/blog/press-release-sourcegraph-announces-new-gitlab-native-integration /press-releases/sourcegraph-announces-new-gitlab-native-integration 301!
 /blog/sourecgraph-liveblogging-at-gophercon-2018 /blog/sourcegraph-liveblogging-at-gophercon-2018 301!
+/blog/strange-loop  /strange-loop 301!
 /careers /jobs 301!
 /case-studies/quantcast /case-studies/quantcast-large-scale-refactoring 301!
 /changelog https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md 301!
@@ -37,7 +46,7 @@
 /docs/config/update-repo-webhook https://docs.sourcegraph.com/user/repo/webhooks 301!
 /docs/datacenter https://github.com/sourcegraph/deploy-sourcegraph 301!
 /docs/datacenter/admin-guide https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/admin-guide.md 301!
-/docs/datacenter/prometheus-metrics https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/prom-metrics.md 301!
+/docs/datacenter/prometheus-metrics https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/admin-guide.md#prometheus 301!
 /docs/datacenter/scaling https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/scale.md 301!
 /docs/datacenter/update https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/update.md 301!
 /docs/deploy/aws https://docs.sourcegraph.com/admin/install/docker/aws 301!
@@ -67,18 +76,23 @@
 /go/sourcegraph-liveblogging-at-gophercon-2018-go /blog/sourcegraph-liveblogging-at-gophercon-2018 301!
 /go/go-in-debian /go/gophercon-2018-go-in-debian/ 301!
 /go/grpc-in-production  /go/grpc-in-production-alan-shreve/ 301!
+/events /blog 301!
 /plan /company/strategy 301!
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!
-/product/code-alerts-automation /product/code-change-management 301!
-/product/code-search-navigation /product/code-discovery 301!
-/product/automation /product/code-change-management 301!
-/product/server /product 301!
+/product/code-alerts-automation / 301!
+/product/code-search-navigation / 301!
+/product/automation / 301!
+/product/server / 301!
+/resources/our-abcs-childrens-book-download https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf
 /solutions/developer-onboarding /product 301!
 /solutions/developer-workflow-tooling-integrations /product 301!
-/solutions/incident-response /product 301!
-/abc /resources/abcs-book
-/resources/our-abcs-childrens-book-download https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf
-/blog/press-release-our-abcs-childrens-book /press-releases/our-abcs-childrens-book 301!
-/blog/press-release-sourcegraph-secures-series-b /press-releases/sourcegraph-secures-series-b 301!
-/blog/press-release-sourcegraph-announces-new-gitlab-native-integration /press-releases/sourcegraph-announces-new-gitlab-native-integration 301!
+/solutions/incident-response / 301!
+/universal-code-search / 301!
+/product / 301!
+/product/code-change-management / 301!
+/product/code-discovery / 301!
+/product/code-intelligence / 301!
+/product/code-review / 301!
+/contact/request-trial/ /contact/request-info 301!
+/blog/hiring-cloud /blog/felicis-investment-fast-growth

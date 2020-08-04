@@ -4,7 +4,7 @@ title: Terms of Service for Private and Self-hosted Sourcegraph Instances
 permalink: terms-private
 ---
 
-Last modified: February 21, 2020
+Last modified: May 7, 2020
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of software, products, and services we make available at Sourcegraph.com.
 
@@ -46,7 +46,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 |6. [Confidentiality](#6-confidentiality)|Our mutual responsibilities to protect confidential data|
 |7. [Term; termination](#7-term-termination)|When and how your account can be terminated|
 |8. [Fees](#8-fees)|Rules for payment for paid and Enterprise features|
-|9. [Third party services and software](#8-third-party-services-and-software)|Our use of third party services and software|
+|9. [Third party services and software](#9-third-party-services-and-software)|Our use of third party services and software|
 |10. [No warranties; disclaimer](#10-no-warranties-disclaimer)|We make no warranties about Sourcegraph|
 |11. [Limitation of liability](#11-limitation-of-liability)|Our liabilities are limited|
 |12. [Indemnification](#12-indemnification)|Your usage of Sourcegraph is at your own risk|
@@ -305,12 +305,14 @@ The Software and the underlying information and technology may not be downloaded
 
 15.6 **Assignment**. The Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by us without restriction.
 
-15.7 **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration.
+15.7 **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration. 
 
 15.8 **Headings**. The heading references herein are for convenience only, do not constitute a part of the Agreement, and will not be deemed to limit or affect any of the provisions hereof.
 
-15.9 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
+15.9. **Marketing and Publicity**. We may freely refer to your Organization and your relationship with us in connection with publicizing and marketing our products and services, including the Software. For example, we may use your Organization’s name, logo, and other brand indicia to identify your Organization as a current or former customer, we may use product testimonials and quotes your Organization’s representatives may provide to us, and we may do any of the foregoing on our website, in social media, in media communications, and otherwise in advertising our products and services and in our marketing and promotional materials.
 
-15.10 **Claims**. To the extent permissible under applicable law, you and we agree that any cause of action you may have arising out of or related to the Software must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
+15.10 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
 
-15.11 **Disclosures**. The Software is offered by Sourcegraph, Inc., located at 981 Mission St, San Francisco, CA 94103, and can be reached via email at support@sourcegraph.com or telephone at (650) 318-3480. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
+15.11 **Claims**. To the extent permissible under applicable law, you and we agree that any cause of action you may have arising out of or related to the Software must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
+
+15.12 **Disclosures**. The Software is offered by Sourcegraph, Inc., located at 981 Mission St, San Francisco, CA 94103, and can be reached via email at support@sourcegraph.com or telephone at (650) 318-3480. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.

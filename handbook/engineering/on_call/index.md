@@ -138,6 +138,36 @@ watch -n1 kubectl get all -n prod -l app=gitserver -o wide
 
 Open the alert UI to click on the check URL that was failing and verify it's now working again.
 
+### Making updates to stateful sets 
+
+Statefulsets are different to a deployment in that all pods must be in a healthy state before changes can be made.
+
+Currently sourcegraph uses statefulsets for the following services:
+  * gitserver
+  * grafana  
+  * indexed-search
+
+In order to push an update to a failing statefulset take the following action:
+
+#### 1. Update the statefulset `yaml` with the appropriate change and apply using:
+
+```console
+`kubectl apply -f <service.StatefulSet.yaml>`
+```
+#### 2. Delete the pods in the stateful set:
+
+```console
+REPLICAS=`kubectl get sts -n prod <statefulset> -o jsonpath={.spec.replicas}`; for i in `seq 0 $[REPLICAS-1]`; do POD=<statefulset>-$i;   echo "Deleting POD $POD";   kubectl delete pod -n prod $POD ; done
+```
+#### 3. The statesfulset controller will now restart the pods. Verify the pods are starting successfully. 
+
+```console
+watch -n1 kubectl get all -n prod -l app=gitserver -o wide
+```
+
+#### 4. Verify service is restored
+Open the alert UI to click on the check URL that was failing and verify it's now working again.
+
 ### Useful dashboards
 
 Check out the [kubectl cheatsheet](../deployments.md#kubectl-cheatsheet) for how to get access to Jaeger locally.
@@ -163,6 +193,18 @@ These commands assume you're on a local machine, and trying to access the live s
 ```bash
 alias dbpod='kubectl get pods --namespace=prod | grep pgsql | cut -d " " -f 1'
 alias proddb='kubectl exec -it --namespace=prod $(dbpod) -- psql -U sg -P pager=off';
+```
+
+##### Reauthenticate kubectl
+
+If you see the following when running `kubectl` commands:
+
+> Unable to connect to the server: x509: certificate signed by unknown authority
+
+Run:
+
+```
+gcloud container clusters get-credentials dot-com --zone us-central1-f --project sourcegraph-dev
 ```
 
 ##### Check load average

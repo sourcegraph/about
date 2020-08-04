@@ -4,18 +4,18 @@ import AccountMultipleIcon from 'mdi-react/AccountMultipleIcon'
 import MapIcon from 'mdi-react/MapIcon'
 import NavigationIcon from 'mdi-react/NavigationIcon'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
-import * as goldcrest from '../images/about/sg-goldcrest.png'
-import * as craft from '../images/about/sg-craftventures.png'
-import * as redpoint from '../images/about/sg-redpoint.png'
 import * as sacks from '../images/about/david-sacks.jpg'
+import * as craft from '../images/about/sg-craftventures.png'
+import * as goldcrest from '../images/about/sg-goldcrest.png'
+import * as redpoint from '../images/about/sg-redpoint.png'
 
 export default class About extends React.Component<any, any> {
     public render(): JSX.Element | null {
         return (
             <Layout location={this.props.location}>
-                <div className="about bg-white text-dark">
+                <div className="about content-page bg-white text-dark">
                     <Helmet>
                         <title>Sourcegraph - About</title>
                         <meta name="twitter:title" content="Sourcegraph - About" />
@@ -51,7 +51,7 @@ export default class About extends React.Component<any, any> {
                                 <div className="row">
                                     <div className="col-md-12">
                                         <h1 className="mb-0">
-                                            Master plan
+                                            Sourcegraph strategy
                                             <br />
                                         </h1>
                                         <hr />
@@ -71,7 +71,7 @@ export default class About extends React.Component<any, any> {
                                         </ul>
                                         <a href="/company/strategy">
                                             <button className="btn btn-primary about__plan-btn">
-                                                Read our master plan
+                                                Read our strategy
                                             </button>
                                         </a>
                                     </div>

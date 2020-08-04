@@ -11,6 +11,12 @@
         max-width: 740px; // Copied from medium.com
     }
 
+    @media (max-width: 768px) {
+        &__wrapper {
+            width: 85%;
+        }
+    }
+
     &__title {
         &--rule {
             margin: 25px 0;

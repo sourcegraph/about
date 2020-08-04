@@ -32,14 +32,15 @@ export default ((props: any) => {
                             <div className="col-md-4">
                                 <p>By Quinn Slack and Beyang Liu</p>
                                 <p>
-                                    Highly productive engineering organizations make searching across massive codebases,
-                                    comprehending unfamiliar code, and sharing institutional first-order concerns. To
-                                    achieve this, engineering teams require a tool that provides universal code search.
+                                    We have entered the era of Big Code: rapidly growing codebases and repositories,
+                                    multiple languages and file formats, and a wide variety of developer tools. To
+                                    grapple with this increasing complexity, engineering teams need a tool that provides
+                                    Universal Code Search.
                                 </p>
 
                                 <p>With this ebook, you will learn:</p>
                                 <ul>
-                                    <li>What is universal code search</li>
+                                    <li>What is Universal Code Search</li>
                                     <li>Top reasons developers rely on Sourcegraph</li>
                                     <li>How to improve code reviews with code navigation</li>
                                     <li>Why engineering leaders need code search and intelligence for their teams</li>

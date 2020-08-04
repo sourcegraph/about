@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 export class NotFoundPage extends React.Component<any, {}> {
     public render(): JSX.Element {
         return (
-            <Layout location={this.props.location}>
+            <Layout location={this.props.location} className="bg-white">
                 <div className="error-page text-dark">
                     <div className="error-page__circle rounded-circle">
                         <div className="error-page__icon">

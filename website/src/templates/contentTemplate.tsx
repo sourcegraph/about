@@ -30,7 +30,7 @@ export default class ContentTemplate extends React.Component<any, any> {
         const title = md.frontmatter.title
         return (
             <Layout location={this.props.location}>
-                <div className="bg-white text-dark">
+                <div className="content-page bg-white text-dark">
                     <Helmet>
                         <title>{title}</title>
                         <meta property="og:title" content={title} />

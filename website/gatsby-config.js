@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sourcegraph`,
-    description: `Sourcegraph is a free, self-hosted code search and intelligence server that integrates with your code host and supports multi-repository, regexp, and diff searches.`,
+    description: `Find and fix things across all of your code with Sourcegraph universal code search.`,
     siteUrl: `https://about.sourcegraph.com`,
   },
   plugins: [
@@ -17,6 +17,13 @@ module.exports = {
       options: {
         name: `blogposts`,
         path: `${__dirname}/../blogposts/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `podcast`,
+        path: `${__dirname}/../podcast/`,
       },
     },
     {
@@ -66,15 +73,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-advanced-sitemap',
       options: {
-        exclude: [
-          '404',
-          '404.html',
-          '/dev-404-page',
-          '/uninstall/',
-        ],
+        exclude: ['404', '404.html', '/dev-404-page', '/uninstall/'],
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      options: {
+        noTrailingSlash: true,
+        siteUrl: `https:/about.sourcegraph.com`,
+      },
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

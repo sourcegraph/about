@@ -10,6 +10,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 - Any engineer at Sourcegraph can help. (The *code* that engineers write at Sourcegraph also consists of files in a Git repository, so engineers are very familiar with making these kinds of edits.)
 - [Teammates who have already made a handbook change](https://sourcegraph.com/github.com/sourcegraph/about/-/stats/contributors?path=handbook%2F) can help.
+- **Handbook heroes**: Ask @eric, @aileen, or @aharvey for handbook help on Slack (DM or #handbook). They volunteered to help anyone with anything handbook-related!
 - Ask in #handbook: `Who can screen-share with me to help me make an edit to the handbook?`
 - Don't be afraid of breaking anything! It is very easy for any engineer on the team to roll back to the previous version of the handbook if you make a mistake.
 
@@ -27,6 +28,12 @@ Here's the process for getting a change published to the handbook. For detailed 
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
 
 ## Reviewing and approving another person's proposal
+
+Frequently used links:
+
+- [All proposed (and not yet merged) handbook changes](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
+- [Proposed handbook changes waiting on review by you](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+review-requested%3A%40me)
+- [Proposed handbook changes submitted by you](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+author%3A%40me)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Q8tUXKU66Sk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -57,9 +64,9 @@ If you just need to edit a single page, you can do it entirely on the web.
 1. When you're ready to publish the change and make it live, press the **Squash and merge** button, then press **Confirm squash and merge**.
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
 
-## Edit multiple files
+## Edit multiple files or add a new file
 
-To make edits multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when [editing a single file](#edit-a-single-file).
+To make edits to multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when [editing a single file](#edit-a-single-file). This also is required for adding new files. 
 
 > NOTE: These steps are not exhaustively documented. Please [ask for help](#how-to-get-help) as many times as you need to until you feel comfortable with this process.
 
@@ -93,24 +100,12 @@ Optional:
 1. Press the **Create Pull Request** button.
 1. On the pull request page in your web browser, select reviewers and wait for reviews/approvals, then merge to make the changes live.
 
-#### Running a local preview handbook site
+## Uploading large files
+
+If you want to upload a large file (such as a large image, video, or audio recording) and make it available in the handbook, upload the file to Google Drive and then get a shareable link to the file on Google Drive. Add that link to the handbook. Don't add large files to the handbook repository itself (because Git is not a good way to store large non-text files).
+
+## Running a local preview handbook site
 
 > NOTE: This is optional.
 
-We use a program called [docsite](https://github.com/sourcegraph/docsite) to turn the `.md` files into the [handbook website](https://about.sourcegraph.com/handbook). These steps walk you through running that tool locally to preview exactly how the handbook will look on the web with your changes.
-
-1. On [docsite releases](https://github.com/sourcegraph/docsite/releases), download the latest release's `docsite_vN.N.N_darwin_amd64` file (not `.tgz` or any other file extension).
-1. When the download is complete, open the terminal and run the following commands. (Replace `N.N.N` with the actual version number in the filename you downloaded in all of the commands below.)
-
-    <pre>
-chmod +x ~/Downloads/docsite_vN.N.N_darwin_amd64
-cd ~/Documents/GitHub/about
-~/Downloads/docsite_vN.N.N_darwin_amd64 serve</pre>	
-    
-	The last command will print: `# Doc site is available at http://0.0.0.0:5080`.
-	  - To check your changes for common errors (such as broken links), you can run the same commands above but replace `serve` with `check` in the last command. It will print a list of problems (if any).
-1. Visit http://0.0.0.0:5080/handbook in your web browser.
-
-Keep the terminal window open while you're browsing the local preview site.
-
-If it has been a while since you last downloaded the release of docsite, or if you see unexpected errors, follow the steps above again and get a newer version (the `N.N.N` in the filename should be larger).
+See the [handbook section](https://github.com/sourcegraph/about#handbook) in the repository README.

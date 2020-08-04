@@ -7,7 +7,6 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Sales team onboarding](onboarding/index.md)
 - [Sales interviews](interviews/index.md)
 - [Recording lead and customer emails, calls, and notes](records.md)
-- [Creating and maintaining license keys for customers](license_keys.md)
 
 ## Pipeline, data, and models
 
@@ -18,9 +17,11 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 ## How sales works with other Sourcegraph teams
 
-### [Customer support](../support/index.md)
+### [Customer engineering](../ce/support.md) (for customer support)
 
-- [How to request support (for customers)](../support/index.md#how-to-get-support-for-customers)
+- [Sales-to-CE new customer handover process](sales_to_ce_handover.md)
+- [How to request support (for customers)](../ce/support.md#how-to-get-support-for-customers)
+- [Creating and maintaining license keys for customers](../ce/license_keys.md)
 
 ## Definitions
 
@@ -171,7 +172,7 @@ If a deal comes through a referral or introduction, tell [BizOps](../bizops/inde
 
 ### When a deal is lost
 1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../bizops/index.md) about adding one
-1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](https://about.sourcegraph.com/company/okrs/2019_q4) to identify the top 3 reasons potential customers don't sign.
+1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](../../company/goals/2019_q4.md) to identify the top 3 reasons potential customers don't sign.
 
 ### Recording outbound activity
 

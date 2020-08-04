@@ -6,7 +6,7 @@ This document describes how we operationalize written planning through our RFC p
 
 This process is designed to be lightweight so that it can be used for many purposes (e.g. product specs, policy decisions, technical discussion), and it is optimized for facilitating collaboration and feedback. In contrast, GitHub issues are best for tracking concrete bug reports or work that has already been scoped and planned (i.e. there isn't much remaining to discuss).
 
-_All RFCs are in a [public Google Drive folder](https://drive.google.com/drive/folders/1bip_pMeWePyNNdCEETRzoyMdLtntcNKR)._
+<i>All RFCs are in a [public Google Drive folder](https://drive.google.com/drive/folders/1bip_pMeWePyNNdCEETRzoyMdLtntcNKR).</i>
 
 ## Status
 
@@ -83,6 +83,7 @@ Effective RFCs contain the following information:
   - **Required approvers:** The list of people that the RFC author is requesting a review from and a requested deadline for those reviews (e.g. "Required approvers: Alice and Bob can you please review by 10am PST on 2020-10-21"). The author is responsible for ensuring that the reviewers aware of the review request (e.g. by sending them a Slack message or tagging them in a comment on the Google Doc).
   - **Approvals:** A list of people who approve of this RFC. Anyone can express approval for an RFC, even if they are not in the "Required approvers" list; however, a RFC is not APPROVED until the RFC author receives approval from the people on the "Required approvers" list.
   - (optional) Links to any GitHub issues that capture work being done to implement this RFC.
+  - A good way to notify reviewers is to comment on their name and then assign them in the comment. This will send them an email and allow them to resolve the comment after their review.
 - **Background:** A sufficient, but minimal, amount of context necessary to frame the rest of the RFC. The content should be indisputable facts, not opinions or arguments. The facts should support the chosen definition of the problem and the constraints in the next section.
 - **Problem:** A description of the problem that this RFC is trying to address, the constraints that this RFC trying to satisfy, and why this problem is worth solving now.
 - **Proposed solution (optional):** A description of HOW to solve the problem. It is ok to omit this section if you just want to define a problem. This can be useful if you want help thinking of solutions or want to handoff ownership of this problem to someone else.

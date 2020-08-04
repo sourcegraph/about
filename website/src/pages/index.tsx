@@ -1,171 +1,16 @@
 import { Link } from 'gatsby'
+import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
-import { Jumbotron } from '../components/Jumbotron'
+import GetStarted from '../components/GetStarted'
+import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { EnterpriseReadySolution } from '../components/product/EnterpriseReadySolution'
-import { GitLabIntegrationSection } from '../components/product/GitLabIntegrationSection'
-import { IntegratesWithSection } from '../components/product/IntegratesWithSection'
-import { ProductDemoVideo } from '../components/product/ProductDemoVideo'
-import { ProductFeaturesAndUseCases } from '../components/product/ProductFeaturesAndUseCases'
-import { FeaturedBlogPosts, BlogPost } from '../components/FeaturedBlogPosts'
-import { CarouselColors, Testimonial, TestimonialCarousel } from '../components/TestimonialCarousel'
-import { Tweets } from '../components/Tweets'
-import { YouTube } from '../components/YouTube'
-import { ContactPresalesSupportAction } from '../css/components/actions/ContactPresalesSupportAction'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
-import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
-import { ViewDeveloperDocumentationAction } from '../css/components/actions/ViewDeveloperDocumentationAction'
-import Helmet from 'react-helmet'
 
-/**
- * This list is lovingly hand-crafted for the home page so the title,
- * description, and image can be customized for better visual layout.
- *
- * Would be great to see this data-driven at some point in the future.
- */
-const featuredPosts: BlogPost[] = [
-    {
-        title: 'We made a children\'s book titled "Our "ABCs: Always Be Coding" and it\'s free to download',
-        description:
-            'We\'ve created a new digital children\'s book titled "Our ABCs: Always Be Coding”—for all children at home that wonder what their techie parents do all day, night, and some weekends, too!',
-        thumbnail: '/other/abcs-book/our-abcs.png',
-        url: '/blog/our-abcs-always-be-coding-childrens-book'
-    },
-    {
-        title: 'Sourcegraph 3.15: Campaigns beta available, experimental AND/OR operators, and improved observability',
-        description:
-            'Read about and watch videos of the features released in Sourcegraph 3.15 on April 20, 2020. Upgrade your Sourcegraph instance today!',
-        thumbnail: '/blog/3.15-release-blog-img.jpg',
-        url: '/blog/sourcegraph-3.15'
-    },
-    {
-        title: 'Universal Code Intelligence for GitHub with the Sourcegraph browser extension',
-        description:
-            'Universal Code Intelligence for GitHub means bringing code navigation features such as hover tooltips, go to definition, and find references to every code view and pull request, supporting every popular language, and all public and private repositories.',
-        thumbnail: '/external-logos/github-logo.svg',
-        url: '/blog/universal-code-intelligence-github-sourcegraph-browser-extension'
-    }
-]
-
-const testimonials: Testimonial[] = [
-    {
-        customer: 'Lyft',
-        logo: '/external-logos/lyft-logo.svg',
-        quote:
-            'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition.',
-        author: {
-            name: 'Justin Phillips',
-            title: 'Software Engineer',
-            image: '/case-studies/justin-phillips-lyft.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/lyft-monolith-to-microservices',
-        },
-    },
-    {
-        customer: 'Yelp',
-        logo: '/external-logos/yelp.svg',
-        quote: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
-        author: {
-            name: 'Kevin Chen',
-            title: 'Software Engineer',
-            image: '/case-studies/kevin-chen-yelp.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
-            target: '_blank',
-            rel: 'nofollow',
-        },
-    },
-    {
-        customer: 'SoFi',
-        logo: '/external-logos/sofi-logo-white.png',
-        quote:
-            'With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
-        author: {
-            name: 'Ursula Robertson',
-            title: 'Engineering Manager',
-            image: '/case-studies/ursula-robertson-sofi.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
-        },
-    },
-    {
-        customer: 'Quantcast',
-        logo: '/external-logos/quantcast-logo-white.svg',
-        quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
-        author: {
-            name: 'Simon Law',
-            title: 'Staff Software Engineer',
-            image: '/case-studies/simon-law-quantcast.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/quantcast-large-scale-refactoring',
-        },
-    },
-    {
-        customer: 'Convoy',
-        logo: '/external-logos/convoy-logo-white.svg',
-        quote:
-            'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
-        author: {
-            name: 'Brandon Bloom',
-            title: 'Senior Software Engineer',
-            image: '/case-studies/brandon-bloom-convoy.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/convoy-improved-on-boarding',
-        },
-    },
-    {
-        customer: 'Thorn',
-        logo: '/case-studies/thorn-logo.png',
-        quote:
-            'In pull requests, team members include links to Sourcegraph code search to prove all references to a deprecated system have been removed.',
-        author: {
-            name: 'Jacob Gillespie',
-            title: 'Software Engineer',
-            image: '/case-studies/jacob-gillespie-thorn-square.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/we-are-thorn',
-        },
-    },
-    {
-        customer: 'Convoy',
-        logo: '/external-logos/convoy-logo-white.svg',
-        quote: 'Now that we are using Sourcegraph, we don’t need to worry about data being out of date.',
-        author: {
-            name: 'Owen Kim',
-            title: 'Senior Software Engineer',
-            image: '/case-studies/owen-kim-convoy.jpg',
-        },
-        cta: {
-            text: 'Read case study',
-            url: '/case-studies/convoy-software-engineers-and-data-scientists-work-better-together',
-        },
-    },
-]
-
-export default ((props: any) => (
-    <Layout
-        location={props.location}
-        meta={{
-            title: 'Sourcegraph',
-            description:
-                'Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search.',
-            image: 'https://info.sourcegraph.com/hubfs/sourcegraph_logo.png',
-        }}
-    >
+const Index: React.FunctionComponent = (props: any) => (
+    <Layout location={props.location}>
         <Helmet>
             <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
             <style dangerouslySetInnerHTML={{ __html: `>.async-hide { opacity: 0 !important}` }} />
@@ -180,97 +25,225 @@ export default ((props: any) => (
         <div className="home">
             <div className="home__hero">
                 <div className="home__intro container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8 mb-6 mb-lg-0">
-                            <h1 className="home__intro-header display-3">Universal Code Search</h1>
-                            <p className="home__intro-text mt-3 font-weight-light">
-                                Explore, navigate, and better understand all code, everywhere, faster.{' '}
+                    <div className="row">
+                        <div className="col mt-6 mb-6 mb-lg-0">
+                            <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
+                            <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
+                            <p className="home__semiwide-paragraph my-5">
+                                Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
+                                codebase, make large-scale refactors, increase efficiency, address security risks,
+                                root-cause incidents, and more.
                             </p>
-                            <p className="home__intro-text mt-4 font-weight-light">
-                                <img
-                                    style={{ width: '19px', height: '19px', verticalAlign: '-3px' }}
-                                    src="/sourcegraph/sourcegraph-mark.svg"
-                                />{' '}
-                                <strong>Sourcegraph Universal Code Search</strong> provides{' '}
-                                <Link
-                                    className="home__intro-text-link home__intro-text-link-1"
-                                    to="/product/code-discovery"
-                                >
-                                    code&nbsp;discovery
+                            <div className="pt-1">
+                                <Link className="btn btn-primary" to="/get-started">
+                                    Try Sourcegraph now <ArrowRightIcon className="ml-1" />
+                                    {/* TODO(sqs) */}
                                 </Link>
-                                ,{' '}
-                                <Link
-                                    className="home__intro-text-link home__intro-text-link-2"
-                                    to="/product/code-intelligence"
-                                >
-                                    code&nbsp;intelligence
-                                </Link>
-                                , and{' '}
-                                <Link
-                                    className="home__intro-text-link home__intro-text-link-3"
-                                    to="/product/code-change-management"
-                                >
-                                    code&nbsp;change&nbsp;management
-                                </Link>
-                                .
-                            </p>
-                            <RequestDemoAction className="mt-5" />
-                            <ContactPresalesSupportAction className="text-light mt-3" />
-                            <ViewDeveloperDocumentationAction className="text-light mt-2" />
-                        </div>
-                        <div className="col-lg-6 d-none">
-                            <img src="/product-diagram-0.svg" style={{ width: 'inherit' }} />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-white text-dark">
-                <CustomerLogosSection className="py-5" />
-            </div>
-            <ContentSection id="demo" color="black" className="py-6">
-                <YouTube id="GQj5jXdON3A"/>
+            <ContentSection className="py-6 mt-3 d-none d-sm-block">
+                <div className="home__nested-screenshots">
+                    <img src="/screenshots/code-page-0.png" className="home__screenshot home__screenshot--main" />
+                    <img src="/screenshots/search-page-0.png" className="home__screenshot home__screenshot--nested" />
+                </div>
             </ContentSection>
-            <div className="bg-white text-dark py-4">
-                <div className="container">
-                    <div className="text-center mt-5">
-                        <h3 className="font-weight-light">
-                            Developers, DevOps teams, SREs, and engineering leaders love Sourcegraph
-                        </h3>
+            <CustomerLogosSection className="pt-5" />
+            <div className="container">
+                <hr className="my-md-6" />
+            </div>
+            <ContentSection className="mt-5 mb-6">
+                <div className="row">
+                    <div className="col-lg-5 mt-md-5">
+                        <h2 className="display-3 font-weight-bold">Search&nbsp;your&nbsp;code. All&nbsp;of&nbsp;it.</h2>
+                        <p>
+                            Point Sourcegraph at the repositories you work with, stored in any code host &mdash; then
+                            start searching. Stay in flow and find your answer quickly with smart filters such as{' '}
+                            <code className="border rounded px-1">Non-test files</code>,{' '}
+                            <code className="border rounded px-1">lang:java</code>,{' '}
+                            <code className="border rounded px-1">repo:frontend</code>, and more. Stop{' '}
+                            <code className="border rounded px-1">grep</code>'ing your stale local clones and fighting
+                            with your code host's search to match &ldquo;special&rdquo; characters like{' '}
+                            <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
+                                Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
                     </div>
-                    <div className="container-fluid">
-                        <Tweets />
+                    <div className="col-lg-7 mt-5 pl-lg-4">
+                        <img src="/code-search-illustrated.svg" className="home__diagram w-150" />
+                    </div>
+                </div>
+            </ContentSection>
+            <IntegrationsSection />
+
+            <div className="container">
+                <hr className="my-md-6" />
+            </div>
+
+            <div className="container">
+                <h2 className="display-2 font-weight-bold">How developers use Sourcegraph</h2>
+                <div className="row">
+                    <div className="col-lg-6 mt-lg-0">
+                        <p className="my-5">
+                            Sourcegraph is built by developers for developers, to help them solve the big code problems
+                            they face, all day every day. Here's how they're doing it.
+                        </p>
+                    </div>
+                    <div className="col-lg-6 mt-2 mt-lg-4">
+                        <div className="card pt-0" style={{ background: "url('/customers-page-bg.svg') no-repeat" }}>
+                            <strong className="card-header border-0 pb-0">Want to use Sourcegraph at work?</strong>
+                            <p className="card-body mb-0 pt-1">
+                                <Link to="/get-started">Use it free</Link> for up to 10 developers. To get your company
+                                to upgrade to a <Link to="/pricing">paid plan</Link>, see the{' '}
+                                <Link to="/customers">customers page</Link> (to make the case). Or{' '}
+                                <a href="/contact/request-info">schedule time with us</a> for help.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <GitLabIntegrationSection />
-            <ContentSection color="white" className="blog-posts-home pt-5 pb-6">
-                <h2 className="text-center font-weight-light mb-4">Featured blog posts</h2>
-                <FeaturedBlogPosts posts={featuredPosts} />
+
+            <ContentSection className="mt-6">
+                <div className="row">
+                    <div className="col-lg-5">
+                        <h2>Find anything in code, fast</h2>
+                        <p>
+                            Sourcegraph returns results in milliseconds, even across thousands of repositories, like:
+                            <ul>
+                                <li>
+                                    Examples of{' '}
+                                    <a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">
+                                        installing packages in a Dockerfile
+                                    </a>
+                                </li>
+                                <li>Places where a specific error is returned</li>
+                                <li>
+                                    Recent TypeScript changes mentioning{' '}
+                                    <code className="border rounded px-1">auth</code>
+                                </li>
+                                <li>Definitions of a specific function</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Write queries with regex, punctuation, symbols, and advanced syntax-aware pattern matching.
+                            Sourcegraph’s visual and interactive query builder constructs complex queries to find and
+                            filter code in ways IDEs and code hosts can’t.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
+                                Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-7 pl-lg-6 mt-3">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
             </ContentSection>
-            <ContentSection color="black">
-                <TestimonialCarousel testimonials={testimonials} color={CarouselColors.dark} />
+            <ContentSection className="mt-6">
+                <div className="row flex-wrap-reverse">
+                    <div className="col-lg-7 pr-lg-6 mt-3">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="col-lg-5">
+                        <h2>Navigate code, with definitions and references</h2>
+                        <p>
+                            Find definitions, references, usage examples, and anything else in code, across package,
+                            dependency, and repository boundaries. You can navigate code in your web browser in any
+                            repository on any branch, instantly and without losing your local context.
+                        </p>
+                        <div className="pt-1">
+                            <a
+                                className="d-flex align-items-center"
+                                href="https://docs.sourcegraph.com/user/code_intelligence"
+                            >
+                                Code intelligence documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </ContentSection>
-            <div className="bg-white text-dark">
-                <IntegratesWithSection className="mt-4 pt-5 pb-6" />
-            </div>
-            <div className="bg-primary py-6 d-none">
-                <ContentSection>
-                    <ProductDemoVideo />
-                    <ProductFeaturesAndUseCases />
-                </ContentSection>
-            </div>
-            <ContentSection className="my-5">
-                <EnterpriseReadySolution className="pt-2" />
+            <ContentSection className="mt-6">
+                <div className="row">
+                    <div className="col-lg-5">
+                        <h2>Make large-scale code changes</h2>
+                        <p>
+                            Remove legacy code, fix critical security issues, and pay down tech debt. Run campaigns to
+                            compute diffs and create branches and pull requests across multiple repositories. With
+                            Sourcegraph, teams move fast and fix things, safely.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/campaigns">
+                                Campaigns documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-lg-7 pl-lg-6 mt-3">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
             </ContentSection>
-            <Jumbotron
-                color="purple"
-                className="py-6 mb-0"
-                title="Try Sourcegraph now"
-                description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search."
-                logomark={false}
-            >
-                <GetSourcegraphNowActions />
-            </Jumbotron>
+            <ContentSection className="mt-6">
+                <div className="row flex-wrap-reverse">
+                    <div className="col-lg-7 pr-lg-6 mt-3">
+                        <div class="container video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowfullscreen=""
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="col-lg-5">
+                        <h2>Generate code insights [preview]</h2>
+                        <p>
+                            Aggregate data from connected external services, and enhance with code intelligence to get
+                            the metadata information you care about. Take direct actions on these insights with
+                            campaigns, like proposing an automated refactor to fix a problem detected through this
+                            static analysis.
+                        </p>
+                        <div className="pt-1">
+                            <a className="d-flex align-items-center" href="/contact/request-demo">
+                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+            <GetStarted className="bg-gradient-green-blue" />
         </div>
     </Layout>
-)) as React.FunctionComponent<any>
+)
+
+export default Index

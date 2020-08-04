@@ -1,11 +1,11 @@
 import { graphql, Link } from 'gatsby'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
+import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import SocialLinks from '../components/SocialLinks'
+import { TrySourcegraph } from '../components/TrySourcegraph'
 import { BLOGS } from '../pages/blog'
-import { Jumbotron } from '../components/Jumbotron'
-import { GetSourcegraphNowActions } from '../css/components/actions/GetSourcegraphNowActions'
 
 // Question: Should these be local to the render function since they are not used elsewhere?
 interface AuthorProps {
@@ -45,12 +45,10 @@ export default class BlogPostTemplate extends React.Component<any, any> {
         const title = md.frontmatter.title
         const publishDate = md.frontmatter.publishDate
         let slug = md.slug
-        const fileName = md.fileAbsolutePath.split('/').pop()
+        const fileName = md.fileAbsolutePath.split('blogposts/').pop()
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
         const content = md.html
-        const image = md.frontmatter.heroImage
-            ? `${md.frontmatter.heroImage}`
-            : 'https://about.sourcegraph.com/sourcegraph-mark.png'
+        const image = 'https://about.sourcegraph.com/sourcegraph-mark.png'
         const meta = {
             title,
             image,
@@ -83,7 +81,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                 <div className="bg-white text-dark">
                     <div className="blog-post">
                         <div className="blog-post__wrapper">
-                            <section className="blog-post__title">
+                            <section className="blog-post__title pt-4">
                                 <h1>{title}</h1>
                                 <div className="blog__posts--post-byline">
                                     <this.Author author={md.frontmatter.author} authorUrl={md.frontmatter.authorUrl} />{' '}
@@ -94,7 +92,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                             <section className="blog-post__body">
                                 <div dangerouslySetInnerHTML={{ __html: content }} />
                                 <section className="blog-post__footer mt-4 pt-4">
-                                    <Link to={BLOGS.Blog} className="button btn btn-outline-primary">
+                                    <Link to="/blog" className="button btn btn-outline-primary">
                                         Read more posts
                                     </Link>
                                     <a
@@ -110,16 +108,9 @@ export default class BlogPostTemplate extends React.Component<any, any> {
                             </section>
                         </div>
                     </div>
+                    <hr className="mb-6" />
                 </div>
-                <Jumbotron
-                    color="purple"
-                    className="py-4"
-                    logomark={false}
-                    title="Try Sourcegraph now"
-                    description="Explore, navigate, and better understand all code, everywhere, faster, with Universal Code Search"
-                >
-                    <GetSourcegraphNowActions />
-                </Jumbotron>
+                <TrySourcegraph />
             </Layout>
         )
     }

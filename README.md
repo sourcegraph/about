@@ -73,11 +73,21 @@ The data between the `---` is called front matter and is used to provide post me
 ### Adding images
 
 - Small images can be placed in the `website/static/blog` directory and have the url of `/blog/example-image.jpg` in your markdown.
-- Large images, GIFs, and other binary assets should be uploaded to the `sourcegraph-assets` Google Cloud Storage bucket with `gsutil cp -a public-read local/path/to/myasset.png gs://sourcegraph-assets/`, with the image `src` being `https://storage.googleapis.com/sourcegraph-assets/myasset.png`.
+- Large images, GIFs, and other binary assets should be uploaded to the `sourcegraph-assets` Google Cloud Storage bucket with `gsutil cp -a public-read local/path/to/myasset.png gs://sourcegraph-assets/`, with the image `src` being `https://sourcegraphstatic.com/myasset.png`.
 - Make images as small as possible (aim for less than 200Kb).
 - Images should be no larger than 1600px wide (if you want @2x retina quality) but often, this isn't needed and 800px is fine.
 - JPEG images should be compressed at no larger than 80% quality to reduce file size.
 - The [ImageOptim](https://github.com/ImageOptim/ImageOptim) app and CLI is great for significantly reducing the size of PNG files and JPEG files.
+
+### YouTube video embed code
+
+Uses Bootstrap for responsive sizing and adequate whitespace between adjacent elements, and that only Sourcegraph videos are shown on the end screen.
+
+```html
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+</div>
+```
 
 ### Previewing your blog post
 

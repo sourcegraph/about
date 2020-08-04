@@ -1,11 +1,25 @@
 {
-  "Conference": [],
-  "Livestream": [
+  "Livestream": [],
+  "Video": [
     {
-      "eventTitle": "Online meetup: Going all-remote",
-      "eventDate": "Thursday, May 7, 2020 | 10:00 AM PDT",
-      "eventLink": "https://info.sourcegraph.com/online-meetup-may-7",
-      "eventImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/online-meetup-allremote.png"
+      "videoTitle": "Introduction to Sourcegraph Universal Code Search",
+      "videoLink": "https://info.sourcegraph.com/universal-code-search-livesteam-ondemand",
+      "videoImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/video-intro-universal-code-search.jpg"
+    },
+    {
+      "videoTitle": "Sourcegraph Campaigns in Sourcegraph 3.16",
+      "videoLink": "https://info.sourcegraph.com/sourcegraph-3.16-watch",
+      "videoImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/video-3.16-campaigns.jpg"
+    },
+    {
+      "videoTitle": "Sourcegraph version context search",
+      "videoLink": "https://info.sourcegraph.com/version-context-watch",
+      "videoImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/video-version-context-3.16.jpg"
+    },
+    {
+      "videoTitle": "Sourcegraph structural code search",
+      "videoLink": "https://info.sourcegraph.com/structural-search-watch",
+      "videoImage": "https://cdn2.hubspot.net/hubfs/2762526/CTA%20images/video-structural-search.jpg"
     }
   ]
 }

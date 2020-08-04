@@ -13,6 +13,7 @@ export default ((props: any) => (
                 'At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
             image: 'https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
         }}
+        className="darkBackground navbar-dark"
     >
         <CaseStudyPage
             customer="Convoy"
@@ -23,7 +24,7 @@ export default ((props: any) => (
                 author: 'Owen Kim, Senior Software Engineer, Convoy',
                 image: '/case-studies/owen-kim-convoy.jpg',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/convoy_software_engineers_and_data_scientists_work_better_together.pdf"
+            pdf="https://sourcegraphstatic.com/convoy_software_engineers_and_data_scientists_work_better_together.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">

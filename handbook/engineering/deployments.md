@@ -2,19 +2,19 @@
 
 We maintain multiple deployments of Sourcegraph:
 
-- sourcegraph.com is our production deployment for open source code.
-  - [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dot-com?project=sourcegraph-dev)
+- [sourcegraph.com](https://sourcegraph.com) is our production deployment for open source code.
+  - [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/cloud?project=sourcegraph-dev)
     ```
-    gcloud container clusters get-credentials dot-com --zone us-central1-f --project sourcegraph-dev
+    gcloud container clusters get-credentials cloud --zone us-central1-f --project sourcegraph-dev
     ```
   - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
-- sourcegraph.sgdev.org is our private deployment of Sourcegraph that contains our private code.
+- [sourcegraph.sgdev.org](https://sourcegraph.sgdev.org) is our private deployment of Sourcegraph that contains our private code.
   - [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
     ```
     gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
     ```
   - [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/master/kubernetes/dogfood)
-- k8s.sgdev.org is a dogfood deployment that replicates the scale of our largest customers.
+- [k8s.sgdev.org](https://k8s.sgdev.org) is a dogfood deployment that replicates the scale of our largest customers.
   - [dogfood-full-k8s cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood-full-k8s?project=sourcegraph-dev)
     ```
     gcloud container clusters get-credentials dogfood-full-k8s --zone us-central1-a --project sourcegraph-dev
@@ -52,6 +52,7 @@ git push origin release
 [Buildkite](https://buildkite.com/sourcegraph/deploy-sourcegraph-dot-com/) will deploy the working commit to sourcegraph.com.
 
 🚨You also need to disable auto-deploys to prevent Renovate from automatically merging in image digest updates so that the site doesn't roll-forward.
+
   1. Go to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) and remove the `"extends:["default:automergeDigest"]` entry for the "Sourcegraph Docker images" group ([example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/commit/0eb16fd9e3ddfcf3a3c75ccdda0e7eddabf19c7a)).
   1. Once you have fixed the issue in the `master` branch of [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph), re-enable auto-deploys by reverting your change to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) from step 1.
 
@@ -203,7 +204,7 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 <tr>
   <td>Get access to Jaeger locally.</td>
   <td>
-	<code>kubectl port-forward svc/jaeger-query 16686</code>
+	<code>kubectl port-forward --namespace=prod svc/jaeger-query 16686</code>
   </td>
 </tr>
 
@@ -233,6 +234,7 @@ based on the branch `my_fix`.
 ```
 git push origin my_fix:docker-images-patch-notest/frontend
 git push origin my_fix:docker-images-patch-notest/gitserver
+git push origin my_fix:docker-images-patch-notest/$(Docker_image_to_build)
 ```
 
 This will trigger two builds on Buildkite for these branches:
@@ -241,3 +243,140 @@ This will trigger two builds on Buildkite for these branches:
 * https://buildkite.com/sourcegraph/sourcegraph/builds?branch=docker-images-patch-notest%2Fgitserver
 
 And the end of the build you can find the name of the newly built Docker image.
+
+## Merging changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
+
+We have two Sourcegraph Kubernetes cluster installations that we manage ourselves:
+ 
+* [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
+* [deploy-sourcegraph-dogfood-k8s](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
+
+This section describes how to merge changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
+(referred to as upstream) into these two installations.
+
+The process is similar to the [process](https://docs.sourcegraph.com/admin/install/kubernetes/configure#fork-this-repository) 
+we recommend our customers use to merge changes from upstream. The differences in process originate from the dual purpose
+of these two installations: they are genuine installations used by us and outside users (in the case of dot-com) and in addition
+to that they are test installations for new changes in code and in deployment. For that reason they are not pinned down to a version
+and the docker images are automatically updated to the latest builds.
+
+> Note: What is said about `deploy-sourcegraph-dot-com` also applies to `deploy-sourcegraph-dogfood-k8s` unless otherwise specified.
+
+### Relationship between the repositories
+
+1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master strictly tracks the upstream https://github.com/sourcegraph/deploy-sourcegraph/tree/master. 
+
+1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release _only_ contains the customizations required to deploy/document sourcegraph.com from the base deployment of Sourcegraph. 
+
+1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release is the default branch for this repository, since all customizations to sourcegraph.com should be merged into this branch (like we tell our customers to).
+
+These steps ensure that the diff between https://github.com/sourcegraph/deploy-sourcegraph-dot-com and https://github.com/sourcegraph/deploy-sourcegraph is as small as possible so that the changes are easy to review.  
+
+In order to mimic the same workflow that we tell our customers to follow:
+
+- Customizations / documentation changes that **apply to all customers (not just sourcegraph.com)** should be:
+    1. Merged into https://github.com/sourcegraph/deploy-sourcegraph/tree/master
+    1. Pulled into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master:
+          ```shell
+          git checkout master
+          git fetch upstream
+          git merge upstream/master
+          ```
+    1. Merged into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release by merging https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release
+          ```shell
+          git checkout release
+          git fetch origin
+          git merge origin/master
+          ```
+
+- Customizations / documentation changes that **apply to only sourcegraph.com** can be simply merged into the https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release branch. 
+
+### Merging upstream `deploy-sourcegraph` into `deploy-sourcegraph-dot-com`
+
+1. Clone this repository and `cd` into it.
+1. If you have not already, `git remote add upstream https://github.com/sourcegraph/deploy-sourcegraph`
+1. `git checkout master && git pull upstream/master`
+    - `master` of this repository strictly tracks `master` of `deploy-sourcegraph`, so there should be no merge conflicts.
+    - If there are any merge conflicts in this step, you may `git checkout master && git rev-parse HEAD && git reset --hard upstream/master && git push -f origin master` which should always be 100% safe to do.
+1. `git checkout release && git checkout -B merge_upstream` to create a branch where you will perform the merge.
+1. `git merge upstream/master` to merge `deploy-sourcegraph@master` into `merge_upstream`
+    - This will give you conflicts which you should address manually:
+      - On docker image tags conflicts (`image:`), choose the `insiders` tag to allow renovate to deploy new builds.
+      - On script conflicts (`create-new-cluster.sh`, `kubectl-apply-all.sh`, etc.), look for comments like `This is a custom script for dot-com` that indicate you should choose the current state over incoming changes.
+    - If new services have been added (these generally show up as created files in `base/`), make sure that:
+      - `namespace: prod` is applied to all new resource metadata.
+    - Use `kubectl apply --dry-run --validate --recursive -f base/` to validate your work.
+    - **Before you commit**, ensure the commit message indicates which files had conflicts for reviewers to look at.
+      - Using the default merge commit message, you can copy or uncomment the lines following `Conflicts`.
+1. Send a PR to this repository for merging `merge_upstream` into `release`.
+1. Reviewers should review:
+    - The conflicting files.
+    - If there are any risks associated with merging that should be watched out for / addressed, 
+      such as [documented manual migrations](https://docs.sourcegraph.com/admin/updates/kubernetes)
+      that will need to be performed as part of merging the PR.
+1. If there are any manual migrations needed, coordinate with the distribution team and apply those first. 
+    - For example, new services that require elevated permissions might not be deployed by Buildkite - this must be done manually.
+1. Once approved, **squash merge your PR so it can be easily reverted if needed**.
+    - In general, it might be a good idea to avoid doing this at the end of a PDT workday - if something goes wrong, it is easier to get help if other people are around.
+1. Watch CI, which will deploy the change automatically.
+1. Check the deployment is healthy afterwards (`kubectl get pods` should show all healthy, searching should work).
+
+## Troubleshooting out of sync updates on Pulumi
+
+If out of sync changes occur on the dogfood cluster or a pod is failing, Pulumi can end up in an interrupted state and the `pulumi-refresh.sh` build step will not pass on buildkite. If this occurs, follow these steps to fix edit the deployment directly and remediate the issues that are failing the build step:
+
+1. From your local clone of the dogfood repo, run:
+```
+pulumi stack export > stack.json
+```
+
+2. In the file search for the `pending_operations` block and verify the pending operation is the same as that failing in the buildkite logs. 
+
+buildkite.log
+```bash
+error: the current deployment has 1 resource(s) with pending operations:
+  * urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus, interrupted while updating
+```
+
+stack.json
+```bash
+"pending_operations": [
+  {
+      "resource": {
+          "urn": "urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus",
+      ...
+      },
+      "type": "updating"
+  }
+]
+```
+
+3. Edit the `stack.json` file and remove the resource in question.
+
+4. Import the stack by running:
+```
+pulumi stack import --file stack.json
+```
+
+5. Trigger the build again from buildkite and ensure all build steps pass.
+
+For more information see the Pulumi [documentation](https://www.pulumi.com/docs/troubleshooting/#editing-your-deployment)
+
+## Scaling Kubernetes Clusters
+
+To scale the number of nodes in a cluster run the following command:
+```bash
+gcloud container clusters resize $CLUSTER_NAME --zone $ZONE --num-nodes $NUM_NODES
+```
+
+For example, you may have a cluster not being actively used but want to preserve it for later use. You can scale the cluster to zero by running:
+```bash
+gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 0
+```
+
+When the cluster is ready for use again, simply run the same command with the number of nodes required:
+```bash
+gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 3
+```
+
+For more informatino see the [GKE documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/resizing-a-cluster).

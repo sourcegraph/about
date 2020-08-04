@@ -1,5 +1,5 @@
 
-# Adding or changing pings
+# Adding, changing and debugging pings
 This page outlines the process for adding or changing the data collected from Sourcegraph instances through pings.
 
 ## Ping philosophy
@@ -22,17 +22,18 @@ Treat adding new data to pings as having a very high bar. Would you be willing t
     - What specific product or engineering decisions will be made by having this data?
     - Will this data be needed from every single installation, or only from a select few? Will it be needed forever, or only for a short time?
     - Have you considered alternatives? E.g., collecting this data from Sourcegraph.com, or adding a report for admins that we can request from some number of friendly customers?
+    - What code or database changes are needed to gather the new data?
 2. When the RFC is approved, use the [life of a ping documentation](https://docs.sourcegraph.com/dev/architecture/life-of-a-ping) with help of [an example PR](https://github.com/sourcegraph/sourcegraph/pull/8374) to implement the change. At least one member of the Business Operations team must approve the resulting PR before it can be merged. DO NOT merge your PR yet. Steps 3, 4, and 5 must be completed before merging.
     - Ensure a CHANGELOG entry is added, and that the two sources of truth for ping data are updated along with your PR:
       - Pings documentation: https://docs.sourcegraph.com/admin/pings
       - The Site-admin > Pings page, e.g.: https://sourcegraph.com/site-admin/pings
 3. Determine if any transformations/ETL jobs are required, and if so, add them to the [script](https://github.com/sourcegraph/analytics/blob/master/BigQuery%20Schemas/transform.js). The script is primarily for edge cases. Primarily,  as long as zeroes or nulls are being sent back instead of `""` in the case where the data point is empty.
-4. Open a PR to change [the schema](https://github.com/sourcegraph/analytics/tree/master/BigQuery%20Schemas) with Business Operations (EricB and Dan) as approvers. Keep in mind:
+4. Open a PR to change [the schema](https://github.com/sourcegraph/analytics/tree/master/BigQuery%20Schemas) with Business Operations (EricBM and Dan) as approvers. Keep in mind:
 	- Check the data types sent in the JSON match up with the BigQuery schema (e.g. a JSON '1' will not match up with a BigQuery integer).
 	- Every field in the BigQuery schema should not be non-nullable (i.e. `"mode": "NULLABLE"` and `"mode": "REPEATED"` are acceptable). There will be instances on the older Sourcegraph versions that will not be sending new data fields, and this will cause pings to fail.
-5. Once the schema change PR is merged, test the new schema. Schedule a meeting with @EricBM for this part.
+5. Once the schema change PR is merged, test the new schema. Contact @EricBM for this part.
   - Delete the [test table](https://bigquery.cloud.google.com/table/telligentsourcegraph:sourcegraph_analytics.update_checks_test?pli=1) (`$DATASET.$TABLE_test`), create a new table with the same name (`update_checks_test`), and then upload the schema with the newest version (see "Changing the BigQuery schema" for commands). This is done to wipe the data in the table and any legacy configurations that could trigger a false positive test, but keep the connection with Pub/Sub.
-	- [Publish a message](https://console.cloud.google.com/cloudpubsub/topic/detail/server-update-checks-test?project=telligentsourcegraph) to Pub/Sub, which will go through [Dataflow](https://console.cloud.google.com/dataflow/jobs/us-central1/2020-02-28_09_44_54-15810172927534693373?project=telligentsourcegraph&organizationId=1006954638239) to the BigQuery test table. The message can use [this example](https://github.com/sourcegraph/analytics/blob/master/BigQuery%20Schemas/pubsub_message) as a baseline, and add sample data for the new ping data points.
+	- Update and publish [a message](https://github.com/sourcegraph/analytics/blob/bfe437c92456f5ddb3c0e765e14133e1e1604bfb/BigQuery%20Schemas/pubsub_message.json) to [Pub/Sub](https://console.cloud.google.com/cloudpubsub/topic/detail/server-update-checks-test?project=telligentsourcegraph), which will go through [Dataflow](https://console.cloud.google.com/dataflow/jobs/us-central1/2020-02-28_09_44_54-15810172927534693373?project=telligentsourcegraph&organizationId=1006954638239) to the BigQuery test table. The message can use [this example](https://github.com/sourcegraph/analytics/blob/master/BigQuery%20Schemas/pubsub_message) as a baseline, and add sample data for the new ping data points.
   - To see if it worked, go to the [`update_checks_test`](https://bigquery.cloud.google.com/table/telligentsourcegraph:sourcegraph_analytics.update_checks_test?pli=1) table, and run a query against it checking for the new data points. Messages that fail to publish are added to the [error records table](https://bigquery.cloud.google.com/table/telligentsourcegraph:sourcegraph_analytics.update_checks_test_error_records?pli=1).
 
 6. Once the test is successful, merge your PR from step 2.
@@ -49,5 +50,24 @@ To update the schema:
 
 ## Changing the BigQuery scheduled queries
 
-Part 1: Add the fields you'd like to bring into BigQuery/Looker to the [instances scheduled queries 1 and 2](https://bigquery.cloud.google.com/scheduledqueries/telligentsourcegraph). 
-Part 2: If day-over-day (or similar) data is necessary, create a new table/scheduled query. For example, daily active users needs a [separate table](https://bigquery.cloud.google.com/table/telligentsourcegraph:sourcegraph_analytics.server_daily_usage) and [scheduled query](https://bigquery.cloud.google.com/scheduledqueries/telligentsourcegraph/location/us/runs/5c51773a-0000-2fc8-bf1f-089e08266748).
+1. Add the fields you'd like to bring into BigQuery/Looker to the [instances scheduled queries 1 and 2](https://bigquery.cloud.google.com/scheduledqueries/telligentsourcegraph). 
+2. If day-over-day (or similar) data is necessary, create a new table/scheduled query. For example, daily active users needs a [separate table](https://bigquery.cloud.google.com/table/telligentsourcegraph:sourcegraph_analytics.server_daily_usage) and [scheduled query](https://bigquery.cloud.google.com/scheduledqueries/telligentsourcegraph/location/us/runs/5c51773a-0000-2fc8-bf1f-089e08266748).
+
+## Debugging pings
+
+Options for debugging ping abnormalities. Refer to [life of a ping](https://docs.sourcegraph.com/dev/architecture/life-of-a-ping) for the steps in the ping process.
+
+1. BigQuery: Query the [update_checks error records](https://console.cloud.google.com/bigquery?sq=839055276916:62219ea9d95d4a49880e661318f419ba) and/or [check the latest pings received](https://console.cloud.google.com/bigquery?sq=839055276916:3c6a5282e66a4f0fac1b958305d7b197) based on installer email admin. 
+1. Dataflow: Review [Dataflow](https://console.cloud.google.com/dataflow/jobs/us-central1/2020-02-05_10_31_47-13247700157778222556?project=telligentsourcegraph&organizationId=1006954638239): WriteSuccessfulRecords should be full of throughputs and the Failed/Error jobs should be empty of throughputs. 
+1. Stackdriver (log viewer): [Check the frontend logs](https://console.cloud.google.com/logs/viewer?project=sourcegraph-dev&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Fdot-com%2Fnamespace_name%2Fprod%2Fcontainer_name%2Ffrontend), which contain all pings that come through Sourcegraph.com. Use the following the advanced filters to find the pings you're interested in.
+1. Test on a Sourcegraph dev instance to make sure the pings are being sent properly
+
+```
+resource.type="k8s_container"
+resource.labels="dot-com"
+resource.labels.cluster_name="prod"
+resource.labels.container_name="frontend"
+"[COMPANY]" AND "updatecheck"
+```
+
+

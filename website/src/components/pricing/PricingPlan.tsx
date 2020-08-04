@@ -22,7 +22,6 @@ export interface Features {
     deploymentMetricsAndMonitoring: boolean
     backupRestore: boolean
     customBranding: boolean
-    guestUsers: boolean
     onlineTraining: boolean
     customContractLegalBillingTerms: boolean
 }
@@ -100,10 +99,6 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         label: 'Custom branding',
         description: 'Show your logo, icon, and other branding in the Sourcegraph UI',
     },
-    guestUsers: {
-        label: 'Guest users',
-        description: 'Allow unauthenticated visitors to access your Sourcegraph instance (if desired)',
-    },
     onlineTraining: {
         label: 'Live training sessions',
         description: 'Personalized online training sessions for your organization with our Customer Engineering team',
@@ -130,7 +125,6 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'deploymentMetricsAndMonitoring',
     'backupRestore',
     'customBranding',
-    'guestUsers',
     'onlineTraining',
     'customContractLegalBillingTerms',
 ]
@@ -187,7 +181,6 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
                 <div className="mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
                 {planProperties}
             </div>
-            <hr className="mx-3 px-1" />
             <ol className="list-group list-group-flush py-3">
                 {FEATURE_ORDER.map(feature => (
                     <>

@@ -36,6 +36,8 @@ Once a change is ready for review it may go through a few review cycles, in gene
 1. Author addresses feedback, ensuring they have marked each comment as resolved. This can be relaxed if a comment was just a suggestion or a small nit. The goal is to communicate to the reviewer what has changed since they last reviewed.
 1. Author leaves a comment letting the reviewers know it is ready for another pass. Back to step 1.
 
+Use your best judgement when deciding if another review cycle is needed. If your PR has been approved and the only changes you've made are ones that the approver would expect: accepting a suggestion around a name, or fleshing out some documentation, or something else that is low risk and you're comfortable with, you may choose to avoid another cycle and merge. However, you can always ask for more feedback if you're not totally comfortable.
+
 ## When is a code review not required?
 
 We do not technically prevent PRs from being merged before being explicitly approved because there exist PRs that are appropriate to merge without waiting for a review.
@@ -74,7 +76,7 @@ Do:
   - Include a screenshot, GIF, or video if you are making user facing changes.
   - Discuss alternative implementations that you considered but didn't pursue (and why).
   - Describe any remaining open questions that you are seeking feedback on.
-- Make it clear who's review(s) you are waiting for.
+- Make it clear whose review(s) you are waiting for.
 - Politely remind your reviewer that you are waiting for a review if they haven't responded after one business day.
 - If you need to work on your PR after a first round of reviews, try not to force push commits that erase the latest reviewed commit or any commit prior to that. This makes it easy for reviewers to pick up where they left off in the previous round.
 
@@ -120,6 +122,8 @@ You should get a code review from the person who's approval will give you the mo
 If your change touches multiple parts of our codebase (e.g. Go, TypeScript), then you will need to get approval from multiple peers (e.g. a Go reviewer and a TypeScript reviewer).
 
 GitHub will automatically assign reviewers if there is a matching entry in the [CODEOWNERS](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/.github/CODEOWNERS) file, but that doesn't necessarily mean that you need to wait for an approval from everyone. For example, if you are making a change to the search backend then you only need approval from one person on that team, not all of them.
+
+For small changes across few files assign to the team and request a review.
 
 Use your best judgement and ask if you are uncertain.
 

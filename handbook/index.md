@@ -2,6 +2,8 @@
 
 The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/open_source_open_company.md#open-company).
 
+The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. [How to edit the handbook](https://about.sourcegraph.com/handbook/editing).
+
 ## Company
 
 - [Strategy](../company/strategy.md)
@@ -10,34 +12,46 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Communication](communication/index.md)
   - [Style guide](communication/style_guide.md)
 - [Team](../company/team/index.md)
+  - [Org chart](../company/team/org_chart.md)
+- [Goals](../company/goals/index.md)
 - [CEO](ceo/index.md)
 
-## People Ops
+## Handbook sections
+
+The below headers are roughly the teams at Sourcegraph. Everyone should feel empowered to contribute to all pages and sections in the Sourcegraph handbook.
+
+### People Ops
 
 - [People Ops](people-ops/index.md)
   - [Leadership](leadership/index.md)
   - [1-1](leadership/1-1.md)
 
-## Product
+### [Product](product/index.md)
 
+- [Direction (2020 product strategy)](../direction/index.md)
 - [Product](product/index.md)
-  - [Sourcegraph workflow](../workflow/index.md)
-  - [Direction](../direction/index.md)
-  - [Personas](product/personas.md)
+  - [Product Management](product/product_management/index.md)
+  - [Product Design](product/design/index.md)
 
-## Design
+### [Engineering](engineering/index.md)
 
-- [Design](design/index.md)
-
-## Engineering
+<!-- When updating the engineering team list below, please also update company/team/org_chart.md. -->
 
 - [Engineering](engineering/index.md)
+  - [Distribution](engineering/distribution/index.md)
+  - [Campaigns](engineering/campaigns/index.md)
+  - [Cloud](engineering/cloud/index.md)
+  - [Code intelligence](engineering/code-intelligence/index.md)
+  - [Search](engineering/search/index.md)
+  - [Security](engineering/security/index.md)
+  - [Web](engineering/web/index.md)
 
-## Support
+### Customer Engineering
 
-- [Support](support/index.md)
+- [Customer engineering](ce/index.md)
+  - [Support](ce/support.md)
 
-## Marketing
+### Marketing
 
 - [Marketing](marketing/index.md)
   - [Messaging](marketing/messaging.md)
@@ -47,13 +61,16 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 - [Developer relations](marketing/developer-relations/index.md)
 - [Marketing operations](marketing/marketing_operations.md)
 - [Livestream events](marketing/livestream.md)
-- [Editing blog posts](marketing/editing_blog_posts.md)
+- [Online content](marketing/content.md)
+  - [Website style guide](marketing/website_style_guide.md)
 
-
-## Sales
+### Sales
 
 - [Sales](sales/index.md)
 
-## Business Operations
+### Business Operations
 
 - [Business Operations](bizops/index.md)
+  - [Finance](bizops/index.md#finance-and-reporting)
+  - [Analytics](bizops/index.md#analytics)
+  - [Adding, changing and debugging pings](engineering/adding_ping_data.md)

@@ -1,27 +1,25 @@
 # Search team
 
-## Vision
+We own the end-to-end Sourcegraph search experience.
 
-Build and deliver Universal Code Search to all developers.
+## Goals
+
+Our current goals are documented in the [search team's current tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fsearch).
 
 ## Contact
 
 - #search channel or @searchers on Slack.
 - [@sourcegraph/search](https://github.com/orgs/sourcegraph/teams/search) team or [team/search label](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fsearch+) on GitHub.
 
-## Project Leads
+## Members
 
-The search team has divided the responsibilities of a [Project Lead](../roles.md#project-lead) between two members.
+- [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
+- [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
+- [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
+- [Loïc Guychard](../../../company/team/index.md#loic-guychard) is interested in being the [engineering manager](../roles.md#engineering-manager) for this team but is currently focusing his efforts on the [web team](../web/index.md). [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) will be more involved in the meantime.
 
-[Keegan](https://github.com/keegancsmith) owns technical responsibilities:
+## Growth plan
 
-- Planing and committing to a set of work that will be accomplished by the team for each monthly release and capture those commitments in a [tracking issue](../tracking_issues.md) on GitHub.
-- Collaborating with product to maintain a prioritized roadmap for the work owned by their team as well as quarterly OKRs.
-- Identifying blockers or productivity issues and work with the team to address them.
+_Updated 2020-07-22_
 
-[Farhan](https://github.com/attfarhan) owns organizational responsibilities:
-
-- Running weekly team sync meetings.
-- Preparing and delegating delivery of the team slide for weekly meetings.
-- Conducting monthly retrospectives with the team.
-- Communicating progress to stakeholders and other parts of the company.
+We would like to grow this team to ~6-8 engineers and we expect the right split of skills to be roughly 50%/50% between [frontend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-frontend.md) and [backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md). This growth is contingent upon having a dedicated engineering manager for this team.

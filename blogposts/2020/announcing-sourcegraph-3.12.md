@@ -89,7 +89,7 @@ Quickly download files from Sourcegraph using the new download icon in the file 
   <p style="text-align: center"><a href="https://vimeo.com/385925276" target="_blank">View on Vimeo</a></p>
 </p>
 
-Organizations using GitHub for authentication can now whitelist access to different GitHub organizations for enhanced security and configuration. In the site configuration `auth.providers`, find the GitHub section (or add it using the ‘Add GitHub sign-in’ quick config button). Add the new `allowOrgs` setting, and list the organizations whose members should have access to your Sourcegraph instance.
+Organizations using GitHub for authentication can now limit access to a list of GitHub organizations for enhanced security and configuration. In the site configuration `auth.providers`, find the GitHub section (or add it using the ‘Add GitHub sign-in’ quick config button). Add the new `allowOrgs` setting, and list the organizations whose members should have access to your Sourcegraph instance.
 
 ## Search-based code intelligence indicator
 

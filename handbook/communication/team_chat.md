@@ -9,6 +9,7 @@ Slack is not a [source of truth](index.md#sources-of-truth) which means it shoul
 Exceptions:
 
 - #distributioneers retains messages indefinitely because a lot of customer context ends up in Slack threads and it is not currently practical to move that to another system of record.
+- #customer-updates similarly retains messages for two years because a lot of customer context ends up in Slack threads and it is not currently practical to move that to another system of record.
 - #feedback retains messages indefinitely because it provides a good source of user testimonials.
 
 [Historical archive of Slack messages prior to 2019-11-09](https://drive.google.com/file/d/1FUbOEsMM4fWRpxymgNHZCAssOPEFDelJ/view?usp=sharing): unzip and open `sourcegraph-slack-archive-to-20191109/index.html` to view. If you consult this, please be sure to add whatever information you learn to a source of truth so we reduce our reliance on this archive.
@@ -26,6 +27,14 @@ Exceptions:
 
 If you are a new member of the engineering team, you'll most likely want to join all of the channels in the engineering section below.
 
+## Send (and read) messages any time
+
+Because Sourcegraph is a global, [all-remote company](../../company/remote/index.md) with [flexible work hours](../../company/remote/index.md#is-there-an-expectation-to-work-over-the-weekends), teammates should feel free to send messages to others at any time, rather than trying to guess what a convenient time would be for the other party (or parties) involved.
+
+However, a corollary to this is that they are free to read your message whenever is convenient for them. There is no expectation that people will be responsive over the [weekend/vacation/evening/etc.](../../company/remote/index.md#is-there-an-expectation-to-work-over-the-weekends).
+
+Make sure to set up Slack to only send you notifications when you want to see them!
+
 ## Channels
 
 We have many Slack channels. You don't have to join them all, but here is a good breakdown of the most active ones by category.
@@ -33,7 +42,8 @@ We have many Slack channels. You don't have to join them all, but here is a good
 ### General
 
 - #general - Anything about Sourcegraph in general (that doesn't fit a more specific channel below).
-- #random - Cool things you're doing in life, cat photos, jokes, vacation photos, etc.
+- #random - Cool things you're doing in life, random blog posts, jokes, vacation photos, etc.
+- #floof - Dogs, horses, cats, cows, and other floof empires.
 - #progress - Share cool/interesting progress with the team
 - #thanks - Appreciate someone's work? You can thank them here! :) {#thanks}
 - #handbook - Updates to and discussion of [this handbook](../index.md)
@@ -58,16 +68,6 @@ We have many Slack channels. You don't have to join them all, but here is a good
 
 ### Engineering
 
-#### Engineering teams
-
-- #campaigns - All things related to code change management campaigns.
-- #code-intel - All things code intelligence.
-- #core-services - Repository management, authentication, stability -- you name it.
-- #distribution - Everything from how Sourcegraph is packaged and delivered to customers, to ensuring it works well for them).
-- #web - The webapp and browser extension, search UI/UX.
-
-#### Engineering general
-
 All engineers should join the following channels (feel free to adjust your notification preferences for each as you see fit, though):
 
 - #dev-announce - Things that affect a majority of the dev team in some way (e.g. site or buildkite is down, we will have expected downtime, etc.). *You should read every message in here, and messages you post to it should have a high signal-noise ratio.*
@@ -75,3 +75,5 @@ All engineers should join the following channels (feel free to adjust your notif
 - #dev-ops - discussing incidents and any other ops-related work
 - #buildkite - see notifications about Buildkite / CI failures.
 - #opsgenie - where pager notifications get sent to Slack
+
+You should also join channels mentioned in [your team's documentation](../engineering/index.md#teams)

@@ -49,6 +49,7 @@ exports.createPages = ({ actions, graphql }) => {
   return new Promise((resolve, reject) => {
     const PostTemplate = path.resolve(`src/templates/blogPostTemplate.tsx`)
     const ContentTemplate = path.resolve(`src/templates/contentTemplate.tsx`)
+    const PodcastEpisodeTemplate = path.resolve(`src/templates/podcastEpisodeTemplate.tsx`)
 
     resolve(
       graphql(
@@ -81,10 +82,8 @@ exports.createPages = ({ actions, graphql }) => {
           if (node.fileAbsolutePath) {
             const slug = node.fields.slug
             const absPath = node.fileAbsolutePath
-            if (
-              (absPath.includes('/blogposts')) &&
-              node.frontmatter.published === true
-            ) {
+
+            if (absPath.includes('/blogposts') && node.frontmatter.published === true) {
               if (node.frontmatter.tags && node.frontmatter.tags.includes('blog')) {
                 createPage({
                   path: `/blog/${slug}`,
@@ -101,8 +100,7 @@ exports.createPages = ({ actions, graphql }) => {
                     fileSlug: slug,
                   },
                 })
-              }
-              else if (
+              } else if (
                 node.frontmatter.tags &&
                 (node.frontmatter.tags.includes('gophercon') || node.frontmatter.tags.includes('dotGo'))
               ) {
@@ -130,6 +128,31 @@ exports.createPages = ({ actions, graphql }) => {
                   },
                 })
               }
+            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('podcast')) {
+              createPage({
+                path: `/podcast/${slug}`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'summary',
+                },
+              })
+              createPage({
+                path: `/podcast/${slug}/notes`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'notes',
+                },
+              })
+              createPage({
+                path: `/podcast/${slug}/transcript`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'transcript',
+                },
+              })
             } else {
               createPage({
                 path: slug,

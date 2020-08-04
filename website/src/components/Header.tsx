@@ -1,12 +1,13 @@
 import { Link } from 'gatsby'
+import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import * as React from 'react'
-import { ProductPopoverButton } from './ProductPopover'
 
 interface HeaderProps {
     isHome?: boolean
     isBlog?: boolean
     isProductPage?: boolean
     minimal?: boolean
+    className?: string
 }
 
 export default class Header extends React.Component<HeaderProps, any> {
@@ -16,7 +17,20 @@ export default class Header extends React.Component<HeaderProps, any> {
         this.toggle = this.toggle.bind(this)
         this.state = {
             isOpen: false,
+            isTop: true,
         }
+        this.onScroll = this.onScroll.bind(this)
+    }
+    public componentDidMount(): void {
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 30
+            if (isTop !== this.state.isTop) {
+                this.onScroll(isTop)
+            }
+        })
+    }
+    public onScroll(isTop: string): void {
+        this.setState({ isTop })
     }
 
     public toggle(): void {
@@ -28,10 +42,16 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                <nav className="header navbar navbar-dark navbar-expand-md border-bottom p-3">
-                    <div className="container-fluid">
-                        <Link className="navbar-brand" to="/">
-                            <img src="/sourcegraph/logo--light.svg" alt="Sourcegraph" />
+                <nav
+                    className={`${
+                        this.state.isTop ? '' : 'bg-white navborder'
+                    } header navbar navbar-expand-md fixed-top pt-4 ${this.props.className || 'navbar-light'}`}
+                >
+                    <div className="container">
+                        <Link className="navbar-brand header__logo" to="/">
+                            <span role="img" aria-label="Sourcegraph - Universal code search">
+                                {' '}
+                            </span>
                         </Link>
                         {!this.props.minimal && (
                             <>
@@ -50,18 +70,23 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     }`}
                                     id="navcol-1"
                                 >
-                                    <ul className="nav navbar-nav">
-                                        <li className="header__nav-item nav-item d-none d-lg-block" role="presentation">
+                                    <ul className="nav navbar-nav d-flex w-100">
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <Link
                                                 className="header__nav-link nav-link"
-                                                to="/universal-code-search"
+                                                to="/customers"
                                                 activeClassName="header__nav-link-active"
                                             >
-                                                What is Universal Code Search?
+                                                Customers
                                             </Link>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <ProductPopoverButton className="header__nav-link nav-link" />
+                                            <a
+                                                className="header__nav-link nav-link"
+                                                href="https://docs.sourcegraph.com"
+                                            >
+                                                Docs <ExternalLinkIcon className="icon-inline small ml-1" />
+                                            </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <Link
@@ -72,32 +97,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Pricing
                                             </Link>
                                         </li>
-                                        <li className="header__nav-item nav-item" role="presentation">
-                                            <a
-                                                className="header__nav-link nav-link"
-                                                href="https://docs.sourcegraph.com"
-                                            >
-                                                Docs
-                                            </a>
-                                        </li>
-                                        <li className="header__nav-item nav-item" role="presentation">
-                                            <Link
-                                                className="header__nav-link nav-link"
-                                                to="/about"
-                                                activeClassName="header__nav-link-active"
-                                            >
-                                                Company
-                                            </Link>
-                                        </li>
-                                        <li className="header__nav-item nav-item" role="presentation">
-                                            <Link
-                                                className="header__nav-link nav-link"
-                                                to="/blog"
-                                                activeClassName="header__nav-link-active"
-                                            >
-                                                Blog
-                                            </Link>
-                                        </li>
+                                        <li className="flex-1">&nbsp;</li>
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <a
                                                 className="header__nav-link nav-link"
@@ -108,13 +108,13 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a
-                                                className="header__nav-link nav-link btn btn-primary"
-                                                href="https://sourcegraph.com/sign-up"
+                                            <Link
+                                                className="header__nav-link nav-link btn btn-outline-primary"
+                                                to="/get-started"
                                                 title="For public code only on Sourcegraph.com"
                                             >
-                                                Sign up
-                                            </a>
+                                                Get started
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>

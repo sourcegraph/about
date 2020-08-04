@@ -18,12 +18,12 @@ export const Jumbotron: React.FunctionComponent<{
     color = 'dark',
     logomark = true,
     title,
-    titleClassName = 'display-3',
+    titleClassName = 'display-3 font-weight-bold',
     description,
     children,
 }) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
-        <div className="container text-center pt-6 pb-5">
+        <div className="container text-center pt-4 pb-5">
             {logomark && (
                 <img
                     className="jumbotron__logo mb-1"
@@ -33,7 +33,7 @@ export const Jumbotron: React.FunctionComponent<{
                 />
             )}
             <h1 className={titleClassName}>{title}</h1>
-            {description && <p className="mb-4">{description}</p>}
+            {description && <p>{description}</p>}
             {children}
         </div>
     </div>

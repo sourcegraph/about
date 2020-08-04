@@ -6,9 +6,10 @@
 
 @import 'colors';
 
-$font-family-sans-serif: 'Open Sans';
-$font-family-base: 'Open Sans';
-$headings-font-family: 'Circular';
+$font-family-sans-serif: 'IBM Plex Sans';
+$font-family-base: 'IBM Plex Sans';
+$font-family-monospace: 'IBM Plex Mono';
+$headings-font-family: 'PT Sans';
 
 $blue: #2c7ef6;
 $red: #dc3545;
@@ -35,26 +36,15 @@ $theme-colors: (
 
 $brand-primary: $brand-purple;
 
-$grid-gutter-width: 25px;
-$grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 820px,
-    lg: 1192px,
-);
-$container-max-widths: (
-    sm: 540px,
-    md: 800px,
-    lg: 1160px,
-);
-
 $border-radius: 0.125rem;
 $border-radius-lg: 0.25rem;
 $border-radius-sm: 0.1rem;
 
 $font-weight-semibold: 600;
-$font-weight-bold: $font-weight-semibold; // uses Open Sans SemiBold
-$font-weight-bolder: 700; // uses Open Sans Bold
+$font-weight-bold: $font-weight-semibold; // uses IBM Plex Sans Semi-bold
+$font-weight-bolder: 700; // uses IBM Plex Sans Bold
+
+$headings-font-weight: 700; // PT Sans Bold
 
 $input-btn-padding-y: 0.55rem;
 
@@ -82,20 +72,17 @@ $spacers: (
     ),
 );
 
-$body-bg: $black;
-$body-color: $white;
+$body-bg: #f9f9f9;
+$body-color: #222233;
 
-$border-color: $gray-900;
+$border-color: $gray-300;
 
-$display1-size: 5rem;
-$display2-size: 4.5rem;
-$display3-size: 3.5rem;
-$display4-size: 2.9rem;
+$display1-size: 4rem;
+$display2-size: 3.25rem;
+$display3-size: 2.5rem;
+$display4-size: 1.75rem;
 
-$navbar-nav-link-padding-x: 1.25rem;
-$navbar-dark-color: $body-color;
-$navbar-dark-hover-color: rgba($body-color, 0.75);
-$navbar-dark-active-color: rgba($body-color, 0.875);
+$navbar-nav-link-padding-x: $spacer * 0.75;
 
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
@@ -140,6 +127,10 @@ body,
 #___gatsby {
     height: 100%;
     -webkit-overflow-scrolling: touch;
+}
+
+.flex-1 {
+    flex: 1;
 }
 
 body {
@@ -208,20 +199,9 @@ img.icon-inline,
     border-style: none;
 }
 
-code {
+code.border {
     background-color: #f2f4f8;
-    display: inline-block;
-    padding: 0.1rem 0.3rem;
-    font-size: 0.9em;
-}
-
-pre {
-    code {
-        color: #f2f4f8;
-        background: #444;
-        width: 100%;
-        padding: 1rem;
-    }
+    font-size: 80%;
 }
 
 table {
@@ -251,10 +231,10 @@ table {
 }
 
 @import 'circular-font';
-@import 'components/ProductPopover';
 @import 'components/content/ContentPage';
 @import 'components/content/ContentSection';
 @import 'components/pricing/index';
+@import 'components/product/CaseStudiesSection';
 @import 'components/product/CustomerLogosSection';
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
@@ -263,6 +243,7 @@ table {
 @import 'components/Footer';
 @import 'components/Cookiebot';
 @import 'components/Events';
+@import 'components/GetStarted';
 @import 'components/Tweets';
 @import 'components/IconItem';
 @import 'components/TestimonialCarousel';
@@ -271,14 +252,17 @@ table {
 @import 'pages/browser';
 @import 'pages/blog';
 @import 'pages/blog-post';
+@import 'pages/customers';
 @import 'pages/_case_studies';
 @import 'pages/_white_papers';
 @import 'pages/content';
 @import 'pages/events';
+@import 'pages/get-started';
 @import 'pages/index';
 @import 'pages/jobs';
 @import 'pages/landing-page';
 @import 'pages/news';
+@import 'pages/podcast';
 @import 'pages/pricing';
 @import 'pages/product/code-search-navigation';
 @import 'pages/product/code-change-management';
@@ -286,3 +270,31 @@ table {
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
 @import 'components/PrismTheme';
+
+body {
+    background: url('/page-bg.svg') repeat;
+}
+.home,
+.content-page,
+.customers-page,
+.pricing-page,
+.case-study,
+.form-page,
+.blog-post {
+    padding-top: 70px;
+}
+.virtual-br::before {
+    content: '\A';
+}
+.bg-gradient-primary {
+    background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
+}
+.bg-gradient-green-blue {
+    background: linear-gradient(
+            90deg,
+            rgba(108, 255, 212, 0.4) 10%,
+            rgba(105, 255, 211, 0.1) 50%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
+}

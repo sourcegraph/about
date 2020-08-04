@@ -12,6 +12,7 @@ export default ((props: any) => (
                 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
             image: 'https://about.sourcegraph.com/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg',
         }}
+        className="darkBackground navbar-dark"
     >
         <CaseStudyPage
             customer="Quantcast"
@@ -22,7 +23,7 @@ export default ((props: any) => (
                 author: 'Simon Law, Staff Software Engineer, Quantcast',
                 image: '/case-studies/simon-law-quantcast.jpg',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/Quantcast-Sourcegraph-case-study.pdf"
+            pdf="https://sourcegraphstatic.com/Quantcast-Sourcegraph-case-study.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">

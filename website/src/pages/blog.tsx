@@ -1,9 +1,9 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import { ContentPage } from '../components/content/ContentPage'
-import { ContentSection } from '../components/content/ContentSection'
 import BlogHeadLinks from '../components/BlogHeadLinks'
 import BlogPosts from '../components/BlogPosts'
+import { ContentPage } from '../components/content/ContentPage'
+import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 
 export enum BLOGS {
@@ -12,7 +12,7 @@ export enum BLOGS {
     GraphQLSummit = 'graphql',
     StrangeLoop = 'strange-loop',
     Blog = 'blog',
-    PressReleases = 'press-releases'
+    PressReleases = 'press-releases',
 }
 
 export default class BlogList extends React.Component<any, any> {
@@ -44,6 +44,8 @@ export default class BlogList extends React.Component<any, any> {
                             <BlogHeadLinks />
                         </div>
                     }
+                    className="text-dark"
+                    titleClassName="display-2 text-dark font-weight-bold"
                 >
                     <ContentSection color="white">
                         <div className="pt-4">

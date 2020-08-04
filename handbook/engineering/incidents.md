@@ -16,8 +16,8 @@ An incident is anything that requires a time sensitive response. Here are some e
 Incidents can be reported by anyone (e.g. customers, Sourcegraph teammates) by any means (e.g. Twitter, GitHub, Slack). The first Sourcegraph teammate (regardless of their role) that becomes aware of an incident is responsible for taking a few actions:
 
 1. If the incident was reported by someone outside of Sourcegraph, acknowledge that the incident is being handled.
-2. Start an internal communication thread about this incident in the #incidents channel in Slack.
-    - All subsequent communication about this issue should happen in that Slack _thread_ (not in the top level #incidents channel).
+2. Start an internal communication thread about this incident in the #dev-ops channel in Slack.
+    - All subsequent communication about this issue should happen in that Slack _thread_ (not in the top level #dev-ops channel).
 3. Identify an engineer to triage the incident.
     - If you are an engineer and available for 30 minutes, then you should [triage the incident](#triage).
     - If you are not an engineer or are not available to triage the incident, then ask the on-call engineer to triage the incident.
@@ -36,6 +36,7 @@ The goal of triage is to either quickly resolve the incident using basic procedu
         - Tag the owner of the reverted commit as a reviewer of the PR.
         - Merge the PR as soon as CI passes (don't block on review).
     - [Fix failed database migration on sourcegraph.com](https://github.com/sourcegraph/sourcegraph/tree/master/migrations#dirty-db-schema)
+    - [How to resolve "Sourcegraph.com is deleted entirely"](incident_dotcom_deleted_entirely.md)
 3. If rolling back and or reverting commits doesn't resolve the incident, then identify the most logical [resolution owner](#ownership) given what you know (this may be yourself) and have that person **acknowledge ownership** in the Slack thread (i.e. "I'm on it").
     - The person who has made recent changes to the affected product/code/system.
     - The person who owns the affected product/code/system.

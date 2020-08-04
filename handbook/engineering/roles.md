@@ -1,55 +1,36 @@
 # Roles on the Engineering team
 
-This page lists the roles on the Engineering team and some of the responsibilities for each of the roles.
+This page lists the roles on our engineering team.
 
 ## Software Engineer
 
-Software Engineers are individual contributors who build software to satisfy the needs of the business.
+Software engineers build our product and infrastructure.
 
 ### Responsibilities
 
-- Collaborate with your direct manager to identify projects that align your skills and interests with the needs of the business.
-- Write [RFCs](../communication/rfcs/index.md) to recommend solutions to product and engineering problems.
 - Commit to a reasonable amount of work that you are going to get done for each [monthly release](releases/index.md), and then reliably get it done.
+- Post weekly updates about your progress on the [monthly release tracking issue](tracking_issues.md) for your team.
+- Ensure that your work is directly contributing to [our goals](../../company/goals/index.md).
+- Write [RFCs](../communication/rfcs/index.md) to recommend solutions to product and engineering problems.
 - Create and maintain high quality code, tests, and documentation.
-- Help your teammates by empathetically [reviewing code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
-- Interview candidates and suggest improvements to our hiring process.
-
-## Project Lead
-
-Project Leads are Software Engineers that lead a specific project team to achieve its goals. They are torch carriers that champion a project. This role is an additional set of responsibilities that any engineer may take on once they demonstrate the necessary skills.
-
-While Project Leads need to have strong technical skills, they are not necessarily the most technically experienced engineer on the team. People and organizational skills are as important as technical know-how, so that Project Leads can effectively coordinate and align with others.
-
-Some teams with more experienced members may need less guidance in certain areas and may even share responsibilities of this role across the team.
-
-### Responsibilities
-
-- Directly contribute through code, RFCs or PR reviews for a minimum of roughly 50% of their time.
-- Collaborate with [product](../product/index.md) to maintain a [prioritized roadmap](../../direction/index.md) for the work owned by their team as well as quarterly [OKRs](../../company/okrs/index.md)
-- Plan and commit to a set of work that will be accomplished by the team for each [monthly release](releases/index.md) and capture those commitments in a [tracking issue](tracking_issues.md) on GitHub.
-- Help keep the team focused on their goals while keeping them aware of the higher level picture.
-- Identify blockers or productivity issues and work with the team to address them.
-- Run weekly team sync meetings.
-- Communicate progress to stakeholders and other parts of the company (e.g. at company meeting).
-- Conduct monthly [retrospectives](../../retrospectives/index.md) with their team.
-- Scale themselves out by organizing and delegating work to other teammates.
-- Mentor and coach other teammates with timely feedback as appropriate in order to uphold team values and help them grow.
-- Collaborate with Engineering Managers to ensure team mates have everything they need to succeed and deliver on the goals of the team.
+- Support your teammates by reviewing their [code](code_reviews.md) and [RFCs](../communication/rfcs/index.md).
+- Help us build a great team by referring people who you would like to work with again, interviewing candidates, and suggesting improvements to our hiring process.
 
 ## Engineering Manager
 
-Engineering Managers are people managers who build teams of [Software Engineers](#software-engineer) to satisfy the needs of the business.
+Engineering managers lead, grow, and develop teams of software engineers.
 
 ### Responsibilities
 
-- Collaborate with [product](../product/index.md) to maintain a [prioritized roadmap](../../direction/index.md) for the work owned by your team.
-- Commit to a set of work that will be accomplished by the team for each [monthly release](releases/index.md) and capture those commitments in a [tracking issue](tracking_issues.md) on GitHub.
-- Conduct monthly [retrospectives](../../retrospectives/index.md) with your team.
-- Mentor and coach engineers through regular [1-1s](../leadership/1-1.md) to grow their careers.
-- [Review the performance](../people-ops/review-cycles.md) of your direct reports to determine compensation.
-- Interview candidates and own making improvements to our hiring process.
-- Review applications and make final hiring decisions for candidates interested in your team.
+Build an exceptional team that achieves results.
+
+- Ensure that the team has a roadmap that documents how it is going to achieve its [goals](../../company/goals/index.md).
+- Ensure the the team's [tracking issue](tracking_issues.md) captures the work that each teammate has committed to for each [monthly release](releases/index.md) and post a [weekly progress update](tracking_issues.md#progress-updates).
+- Conduct monthly [retrospectives](../../retrospectives/index.md) with the team.
+- Conduct regular [1-1s](../leadership/1-1.md).
+- Own the end-to-end hiring process for the team and grow the team according to the hiring plan.
+- Make [compensation](../people-ops/compensation.md) decisions for direct reports and candidate offers to ensure that everyone is appropriately compensated at all times.
+- Hold teammates accountable for fulfilling their responsibilities.
 
 ## VP Engineering
 
