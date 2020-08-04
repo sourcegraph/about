@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { createHubSpotForm } from '../../components/HubSpot'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
@@ -13,7 +13,25 @@ export default class TrialPage extends React.Component<any, any> {
             events: [],
         }
     }
+
+    public handleOnFormSubmit = event => {
+        const numEngineers = ['1-10', '11-250']
+        if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+            const formData = event.data.data
+            const numEng = formData.find(({ name }) => name === 'number_of_eng')
+            if (numEngineers.indexOf(numEng.value) === -1) {
+                window.location.assign('https://info.sourcegraph.com/request-info-scheduling-enterprise')
+            }
+        }
+    }
+
+    public componentWillUnmount(): void {
+        window.removeEventListener('message', this.handleOnFormSubmit)
+    }
+
     public componentDidMount(): void {
+        window.addEventListener('message', this.handleOnFormSubmit)
+
         createHubSpotForm({
             portalId: '2762526',
             formId: '202906aa-b46d-4657-86c4-30fbfda2413f',
