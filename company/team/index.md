@@ -372,7 +372,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Redmond, WA, USA 🇺🇸
-- [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [GitHub](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage)
+- [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [GitHub](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage), [pronounce my name 🔊](https://www.name-coach.com/julip)
 - Juliana is originally from Cali, Colombia 🇨🇴 and went to college in Mexico City 🇲🇽 before moving to the Seattle area. She loves building powerful and beautiful web applications that improve people's lives. Before Sourcegraph, Juliana worked at Microsoft building successful startup projects, and is now very excited to be working in a real startup company. Outside of work, Juliana loves cyling, collecting Lego, playing video games, and traveling.
 
 <!-- Paste *your* section above this line by following our template below:
