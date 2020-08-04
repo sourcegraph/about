@@ -375,6 +375,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [GitHub](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage)
 - Juliana is originally from Cali, Colombia 🇨🇴 and went to college in Mexico City 🇲🇽 before moving to the Seattle area. She loves building powerful and beautiful web applications that improve people's lives. Before Sourcegraph, Juliana worked at Microsoft building successful startup projects, and is now very excited to be working in a real startup company. Outside of work, Juliana loves cyling, collecting Lego, playing video games, and traveling.
 
+## David Li (he/him)
+
+- Technical Recruiter
+- San Francisco, CA, USA 🇺🇸
+- [david@sourcegraph.com](mailto:david@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/withdavidli/)
+- David is originally from the Northeast US and has been in the San Francisco Bay Area since 2013. Prior to Sourcegraph he was at Facebook and Cruise (self-driving cars), where he helped build new teams and scaled recruiting efforts through analytics and operations. He is interested in tennis and has recently started attending music festivals (you'll see him in the front!). 
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
