@@ -208,6 +208,19 @@
           53.0793
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TJ Kandala"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6557,
+          30.3322
+        ]
+      }
     }
   ]
 }
