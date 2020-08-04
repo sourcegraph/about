@@ -4,12 +4,12 @@ import AccountMultipleIcon from 'mdi-react/AccountMultipleIcon'
 import MapIcon from 'mdi-react/MapIcon'
 import NavigationIcon from 'mdi-react/NavigationIcon'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
-import * as goldcrest from '../images/about/sg-goldcrest.png'
-import * as craft from '../images/about/sg-craftventures.png'
-import * as redpoint from '../images/about/sg-redpoint.png'
 import * as sacks from '../images/about/david-sacks.jpg'
+import * as craft from '../images/about/sg-craftventures.png'
+import * as goldcrest from '../images/about/sg-goldcrest.png'
+import * as redpoint from '../images/about/sg-redpoint.png'
 
 export default class About extends React.Component<any, any> {
     public render(): JSX.Element | null {

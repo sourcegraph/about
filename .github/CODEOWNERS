@@ -31,6 +31,7 @@
 /handbook/engineering/web @sourcegraph/web
 /handbook/engineering/languages/go.md @sourcegraph/cloud
 /handbook/engineering/languages/typescript.md @sourcegraph/web
+/handbook/engineering/languages/terraform.md @sourcegraph/distribution
 /handbook/marketing @sourcegraph/marketing
 
 /handbook/engineering/adding_ping_data.md @ebrodymoore @dadlerj

@@ -8,6 +8,10 @@ The distribution team is responsible for making Sourcegraph easy to deploy, scal
 - File issues: [team/distribution](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) label
 - What we're currently working on: [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+distribution), [roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit#heading=h.mi8zg2ql2uc6)
 
+## [Goals](goals.md)
+
+See [Goals](goals.md)
+
 ## Ownership areas
 
 The following is a breakdown of the areas of Sourcegraph that the Distribution team owns. It aims to be 100% comprehensive, but the owners are merely aspirational goal posts, not mandates. At the end of the day, whoever has most context will own the area.
@@ -80,11 +84,13 @@ Go, Docker, Kubernetes
 * [Tools](./tools/index.md)
 * Tutorials
   * [Observability developer guide](observability/index.md)
+  * [Managed instances](managed/index.md)
   * [Collecting and inspecting metrics dumps](metrics_dumps.md)
   * [How to set up a separate website maintained by Sourcegraph](separate_website.md)
   * [How to simulate k8s admin security restrictions](k8s_admin_custom_policy.md)
   * [How to test the Gitlab native integration locally](gitlab_native_local.md)
   * [How to make updates to global settings and configuration on sourcegraph.com](update_sourcegraph_website.md)
+  * [Create GCP commitments](gcp.md#committed-use-discounts)
 
 ## Members
 

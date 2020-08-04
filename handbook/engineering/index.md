@@ -11,6 +11,7 @@
   - [TypeScript](languages/typescript.md)
   - [Terraform](languages/terraform.md)
 - [Testing](testing.md)
+- [Styling UI](./web/styling.md)
 - [Continuous integration](continuous_integration.md)
 - [Product documentation](product_documentation.md)
 - [Continuous releasability](continuous_releasability.md)
@@ -26,7 +27,6 @@
 - [Adding and debugging ping data](adding_ping_data.md)
 - [Adding buildkite secrets](adding_buildkite_secrets.md)
 - [External contributions](external_contributions.md)
-- [2021 Organizational Plan](2021_org.md)
 
 ## Ownership of technical decisions
 
@@ -43,7 +43,7 @@ If there is a dispute about ownership, then perform a [clean escalation](../comm
 
 ## Innovation time
 
-We love it when engineers have ideas for things they want to improve, even if they don't align with our existing iteration plans or [OKRs](../../company/okrs/index.md). We want to create time and space for engineers to work on these ideas without negatively impacting our team goals and planned work.
+We love it when engineers have ideas for things they want to improve, even if they don't align with our existing iteration plans or [goals](../../company/goals/index.md). We want to create time and space for engineers to work on these ideas without negatively impacting our team goals and planned work.
 
 If you have an idea for something you want to work on, then you have a few options:
 
@@ -54,19 +54,11 @@ In any case, you should report the results of your work in [progress updates](tr
 
 ## Teams
 
-Our engineering organization is divided into mission based teams that contain the necessary cross-functional skillsets to achieve the desired mission.
+[**List of engineering teams**](../../company/team/org_chart.md#engineering)
 
-<!-- When updating the engineering team list below, please also update on the handbook root handbook/index.md -->
+Our engineering organization is divided into mission based teams that contain the necessary cross-functional skillsets to achieve the desired mission. The leader of each team is responsible for ensuring appropriate cross-team collaboration happens when shared infrastructure needs to change.
 
-- [Distribution](distribution/index.md)
-- [Campaigns](campaigns/index.md)
-- [Cloud](cloud/index.md)
-- [Code intelligence](code-intelligence/index.md)
-- [Search](search/index.md)
-- [Security](security/index.md)
-- [Web](web/index.md)
-
-The leader of each team is responsible for ensuring appropriate cross-team collaboration happens when shared infrastructure needs to change.
+[2021 Organizational Plan](2021_org.md)
 
 ### Transferring teams
 
