@@ -397,7 +397,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Engineering Manager, Campaigns
 - Portland, OR, USA 🇺🇸
 - [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [GitHub](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
-- Name pronunciation: /kɹɪs paɪn/
+- Name pronunciation: /[kɹɪs paɪn](http://ipa-reader.xyz/?text=k%C9%B9%C9%AAs%20pa%C9%AAn&voice=Joanna)/
 - Chris started his career making games, working on Civilization III and Alpha Centauri. Chris also spent several years working at Opera Software in Norway, mainly on Opera's Ecmascript engine. Somewhere in there, Chris accidentally wrote a book, [Learn to Program](https://pragprog.com/titles/ltp2/). At New Relic, Chris moved into management, and (much to his surprise) loved it! Chris lives with his spouse (Katy), their three kids (C, Ruby, and Apl), two rats (Coffee and Bean), and an ancient grey cat (Wobbly). Hobbies include the boardgame Go, failing to play the guitar, and spiritual inquiry (mostly Tao, Zen, and Alan Watts). Chris really (like really) loves parentheses.
 
 <!-- Paste *your* section above this line by following our template below:
