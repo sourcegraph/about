@@ -264,7 +264,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer
 - Vancouver, Canada 🇨🇦
 - [aharvey@sourcegraph.com](mailto:aharvey@sourcegraph.com), [@LGnome](https://twitter.com/LGnome), [GitHub](https://github.com/LawnGnome)
-- Name pronunciation: /ˈadəm hˈɑːvi/, or [click here + 🔊 to have Google pronounce my name](https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=Adam%20Harvey)
+- Name pronunciation: [/ˈadəm hˈɑːvi/](http://ipa-reader.xyz/?text=%CB%88ad%C9%99m%20h%CB%88%C9%91%CB%90vi&voice=Brian)
 - Adam plays cricket, yells at hockey teams, and spends an inordinate amount of time convincing his golden retriever to drop things. He started his technology journey with an IBM XT in the 80s, and never looked back once he discovered the GW-BASIC `RENUM` command. Technologically, Adam enjoys programming language design, convincing runtimes to work on hardware they weren't designed to, and deluding himself that abusing CSS animations is exactly what his film degree qualified him to do.
 
 ## Mark Muldez (he/him)
