@@ -58,7 +58,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Milwaukee, WI, USA 🇺🇸
-- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [@efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
+- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [@efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/), [pronounce my name 🔊](https://www.name-coach.com/eric-fritz)
 - Eric received a PhD in Computer Science from the University of Wisconsin - Milwaukee where he published research on compiler construction and taught courses in compilers and software engineering. Prior to Sourcegraph, Eric built infrastructure for UCaaS products. While not programming, Eric enjoys cooking while muttering Gordon Ramsay deep cuts to himself.
 
 ## Eric Brody-Moore
