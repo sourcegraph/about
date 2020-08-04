@@ -48,9 +48,7 @@ export default class BlogPostTemplate extends React.Component<any, any> {
         const fileName = md.fileAbsolutePath.split('blogposts/').pop()
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
         const content = md.html
-        const image = md.frontmatter.heroImage
-            ? `${md.frontmatter.heroImage}`
-            : 'https://about.sourcegraph.com/sourcegraph-mark.png'
+        const image = 'https://about.sourcegraph.com/sourcegraph-mark.png'
         const meta = {
             title,
             image,

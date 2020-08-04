@@ -4,7 +4,11 @@ import ClipboardArrowLeftOutlineIcon from 'mdi-react/ClipboardArrowLeftOutlineIc
 import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import React from 'react'
 
-class GetStarted extends React.Component {
+interface GetStartedProps {
+    className?: string
+}
+
+export default class GetStarted extends React.PureComponent<GetStartedProps> {
     public copyDockerInstall = () => {
         const el = this.textArea
         el.select()
@@ -12,7 +16,7 @@ class GetStarted extends React.Component {
     }
     public render(): JSX.Element | null {
         return (
-            <div className="get-started bg-gradient-green-blue mt-6" id="get-started">
+            <div className={`get-started mt-6 ${this.props.className || ''}`} id="get-started">
                 <div className="container">
                     <h1 className="display-2 font-weight-bold mb-5">Get started with Sourcegraph for free</h1>
                     <div className="row">
@@ -46,10 +50,7 @@ class GetStarted extends React.Component {
                             <h2 className="h5 mt-4">Deploy to a server or cluster</h2>
                             <p>
                                 See{' '}
-                                <a
-                                    href="https://docs.sourcegraph.com"
-                                    className="d-inline-flex align-items-center py-1 mt-1"
-                                >
+                                <a href="https://docs.sourcegraph.com" className="d-inline-flex align-items-center">
                                     deployment documentation
                                 </a>{' '}
                                 for information about Docker deployments, Kubernetes clusters, and other clusters.
@@ -71,6 +72,7 @@ class GetStarted extends React.Component {
                             <div className="get-started__action boxshadow">
                                 Sourcegraph Cloud searches top repositories from GitHub and Gitlab and will index any
                                 public repository you specify.
+                                <br />
                                 <a
                                     className="btn btn-sm btn-primary text-light mt-3"
                                     href="https://sourcegraph.com/search"
@@ -85,5 +87,3 @@ class GetStarted extends React.Component {
         )
     }
 }
-
-export default GetStarted

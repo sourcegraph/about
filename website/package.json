@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Farhan Attamimi <farhan@sourcegraph.com>",
   "dependencies": {
-    "@types/react-helmet": "6.0.0",
+    "@types/react-helmet": "6.1.0",
     "bootstrap": "^4.5.0",
     "catch-links": "^2.0.1",
     "gatsby": "^2.24.2",
