@@ -369,6 +369,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [tion@sourcegraph.com](mailto:tion@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tion-thomas-30562017), [GitHub](https://github.com/tistru), [YouTube](https://www.youtube.com/channel/UC9l1NGH1xciYs9z1LQ6CtqA)
 - Tion is a native New Yorker who has spent time all over the US including Boston, Florida, Indiana, Oregon, and currently Maryland. He has a B.S and M.S in computer science from Tufts University and Purdue University respectively. Prior to joining Sourcegraph, Tion has worked  in a variety of domains including systems engineering, software validation, strategic planning, UX, application engineering, programming, developer relations, and technical production spread over Lockheed Martin, Electronic Arts, Intel, Razer, and Magic Leap. His passion is in gaming and he continues to be an active member on many gaming forums and blogs while playing some of the latest games in his spare time. He also enjoys sports, music, and is an AV enthusiast (home theater and audio/video technologies). Tion is a proud father of 2 beautiful kids and a husband of 7 years! He loves working with customers and helping to enable amazing technology that is readily accessible to everyone. 
 
+## Quinn Keast (he/him)
+
+- Product Designer
+- Berlin, Germany 🇩🇪
+- [qkeast@sourcegraph.com](mailto:qkeast@sourcegraph.com), [@quinnkeast](https://twitter.com/quinnkeast), [LinkedIn](https://www.linkedin.com/in/quinn-keast/), [GitHub](https://github.com/quinnkeast), [quinnkeast.com](https://quinnkeast.com)
+- Quinn is a Canadian product & UX designer living in Berlin. His background is in design, and prior to Sourcegraph, he has a broad range of experience including working with a branding and advertising agency, a major non-profit environmental conservancy, and a global meal kit company. He also co-founded a UX consultancy that worked with growing product teams and organizations across Canada. Outside of work, Quinn is passionate about Ultimate frisbee, writing, speaking, and tinkering around. Learn more about Quinn's guiding values and how he works as a human at his personal [Quinn.README](https://quinnkeast.com/readme)!
+
 ## Juliana Peña (she/her)
 
 - Software Engineer
