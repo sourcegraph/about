@@ -58,7 +58,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Milwaukee, WI, USA 🇺🇸
-- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [@efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/), [pronounce my name 🔊](https://www.name-coach.com/eric-fritz)
+- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [@efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
 - Eric received a PhD in Computer Science from the University of Wisconsin - Milwaukee where he published research on compiler construction and taught courses in compilers and software engineering. Prior to Sourcegraph, Eric built infrastructure for UCaaS products. While not programming, Eric enjoys cooking while muttering Gordon Ramsay deep cuts to himself.
 
 ## Eric Brody-Moore
@@ -390,6 +390,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [tj@sourcegraph.com](mailto:tj@sourcegraph.com), [GitHub](https://github.com/tjkandala)
 - Call him "TJ"
 - TJ was born in India before he was brought to the swamp. He strives to bridge the gap between Developer Experience and User Experience in modern web applications. Outside of work, he loves to code and dunk basketballs by the ocean.
+
+
+## Chris Pine (he/she/they/Chris)
+
+- Engineering Manager, Campaigns
+- Portland, OR, USA 🇺🇸
+- [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [GitHub](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
+- Name pronunciation: /kɹɪs paɪn/
+- Chris started his career making games, working on Civilization III and Alpha Centauri. Chris also spent several years working at Opera Software in Norway, mainly on Opera's Ecmascript engine. Somewhere in there, Chris accidentally wrote a book, [Learn to Program](https://pragprog.com/titles/ltp2/). At New Relic, Chris moved into management, and (much to his surprise) loved it! Chris lives with his spouse (Katy), their three kids (C, Ruby, and Apl), two rats (Coffee and Bean), and an ancient grey cat (Wobbly). Hobbies include the boardgame Go, failing to play the guitar, and spiritual inquiry (mostly Tao, Zen, and Alan Watts). Chris really (like really) loves parentheses.
 
 <!-- Paste *your* section above this line by following our template below:
 
