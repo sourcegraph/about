@@ -17,7 +17,7 @@ class News extends React.Component {
                                     <strong>{newsDetail.newsSource}</strong>{' '}
                                     <span className="news__date">{newsDetail.newsDate}</span>
                                     <br />
-                                    <a href={newsDetail.newsLink} rel="nofollow">
+                                    <a href={newsDetail.newsLink} target="_blank" rel="nofollow noopener">
                                         {newsDetail.newsTitle}
                                     </a>
                                 </p>
@@ -37,7 +37,7 @@ class News extends React.Component {
                                     <strong>{newsDetail.newsSource}</strong>{' '}
                                     <span className="news__date">{newsDetail.newsDate}</span>
                                     <br />
-                                    <a href={newsDetail.newsLink} rel="nofollow">
+                                    <a href={newsDetail.newsLink} target="_blank" rel="nofollow noopener">
                                         {newsDetail.newsTitle}
                                     </a>
                                 </p>

@@ -2,37 +2,16 @@ import { Link } from 'gatsby'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
+import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { TrySourcegraph } from '../components/TrySourcegraph'
-
-const title = 'Sourcegraph - Universal Code Search'
-const description = 'Find and fix things across all of your code with Sourcegraph universal code search.'
-const image = 'https://about.sourcegraph.com/favicon.png'
-const url = 'https://about.sourcegraph.com'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
         <Helmet>
-            <title>{title}</title>
-            <meta name="description" content={description} />
-            <meta name="image" content={image} />
-            <link rel="canonical" href={url} />
-
-            <meta property="og:url" content={url} />
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={description} />
-            <meta property="og:image" content="https://about.sourcegraph.com/favicon.png" />
-
-            <meta name="twitter:card" content="summary" />
-            <meta name="twitter:creator" content="@srcgraph" />
-            <meta name="twitter:title" content={title} />
-            <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={image} />
-
             <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
             <style dangerouslySetInnerHTML={{ __html: `>.async-hide { opacity: 0 !important}` }} />
             <script>
@@ -261,9 +240,8 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-md-6" />
             </ContentSection>
-            <TrySourcegraph className="mt-sm-5" />
+            <GetStarted className="bg-gradient-green-blue" />
         </div>
     </Layout>
 )

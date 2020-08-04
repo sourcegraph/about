@@ -1,8 +1,6 @@
 # Security team
 
-## Vision
-
-Make Sourcegraph secure by design.
+At Sourcegraph we think that security is an enabler for the business. Sourcegraph is committed to proactive security, and addressing vulnerabilities in a timely manner. We approach security with a can-do philosophy, and look to achieve product goals while maintaining a positive posture, and increasing our security stance over time.
 
 ## Contact
 
@@ -13,13 +11,20 @@ Make Sourcegraph secure by design.
 ## Responsibilities
 
 - Proactively improve the security of our application and infrastructure.
-- Implement automated security scanning of our codebase and infrastructrure, and resolve issues.
-    - https://github.com/sourcegraph/sourcegraph/security/code-scanning
+- Define, plan, and prioritize security work that needs to be done (and then go do that work).
+- Directly contribute to our codebase (i.e., Go, TypeScript, Kubernetes, Docker, Google Cloud Platform) to secure our application and deployments, and help other engineers on our team make the necessary changes.
 - [Respond to security vulnerability reports](#how-we-respond-to-security-vulnerability-reports)
-- Investigate, respond to, and resolve vulnerabilities.
     - https://github.com/sourcegraph/security-issues
+- Increase our security posture by running traditional security tools such as vulnerability scanners, SAST, and DAST tools.
+    - https://github.com/sourcegraph/sourcegraph/security/code-scanning
+- Create a culture of security at Sourcegraph that empowers all of our engineers to write secure code.
 
-## How to report a security vulnerability
+    
+## Roadmap
+
+Please see [this document](https://docs.google.com/document/d/1HhYfnkC17yCPqqw91H1QAF7q8toOOiNtoOOw06hqrNQ/)
+
+## Reporting a Vulnerability
 
 If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 1 business day to acknowledge that we received them and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling).
 
@@ -48,3 +53,12 @@ When we receive [a report of a security vulnerability](#how-to-report-a-security
   > Thank you for your report. Could you please provide us with $INFOX, $INFOY, and $INFOZ so we can investigate this further? 
 
   > Thank you for your report. We will not be taking further action on this report because $REASONS.
+  
+## Members
+
+- [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([engineering manager](../roles.md#engineering-manager)).
+- [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
+
+## Open Positions
+
+[Software Security Engineer](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)

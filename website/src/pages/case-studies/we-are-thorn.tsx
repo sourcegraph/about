@@ -7,7 +7,7 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Thorn adopts Sourcegraph Universal Code Search to sunset legacy applications safely',
+            title: 'Thorn deprecates legacy code safely',
             description:
                 'Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process.',
             image: 'https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study-og-embed.jpg',
@@ -16,7 +16,7 @@ export default ((props: any) => (
     >
         <CaseStudyPage
             customer="We are Thorn"
-            title="Thorn adopts Sourcegraph Universal Code Search to sunset legacy applications safely"
+            title="Thorn deprecates legacy code safely"
             logo="/case-studies/thorn-logo.png"
             quote={{
                 quote:
@@ -24,7 +24,7 @@ export default ((props: any) => (
                 author: 'Thorn Software Engineer Jacob Gillespie',
                 image: '/case-studies/jacob-gillespie-thorn-square.jpg',
             }}
-            pdf="https://storage.googleapis.com/sourcegraph-assets/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
+            pdf="https://sourcegraphstatic.com/Thorn%20Sourcegraph%20case%20study%20v2.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">

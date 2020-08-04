@@ -6,7 +6,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Full Name (optional pronouns)
 
-- Describe how to pronounce your name
 - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
@@ -38,8 +37,8 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Distribution / Software Engineer
 - Phoenix, AZ, USA 🇺🇸
-- [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com), [@slimsag](https://twitter.com/slimsag), [LinkedIn](https://www.linkedin.com/in/slimsag)
-- Stephen enjoys spending time with his numerous kittos in his Phoenix home while solving some of the most critical and technically challenging issues he can get his hands on. Rapid iteration, working directly with some of our biggest customers, and relentlessly advocating for users to find solutions is what he thrives on. Prior to Sourcegraph, he worked 3 years full-time on an open source game engine in Go.
+- [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com), [@slimsag](https://twitter.com/slimsag), [LinkedIn](https://www.linkedin.com/in/slimsag), [pronounce my name 🔊](https://www.name-coach.com/stephen-gutekanst)
+- Stephen enjoys spending time with his numerous [kittos](https://raw.githubusercontent.com/slimsag/slimsag/master/kingdom_final.jpg) while solving some of the most critical and technically challenging issues he can get his hands on. Over the past 5 years he has been working directly with some of our largest customers and relentlessly advocating for users. Prior to Sourcegraph, he worked 3 years full-time on a game engine in Go while attending college.
 
 ## Ryan Slade (he/him)
 
@@ -125,8 +124,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [loic@sourcegraph.com](mailto:loic@sourcegraph.com), [lguychard](https://github.com/lguychard), [LinkedIn](https://www.linkedin.com/in/lo%C3%AFc-guychard-749b8152/)
 - Loïc loves oceanside living and long bike rides. He started his career as a linguist, before transitioning to software engineering while working at Dashlane.
 
-## Aileen Agricola
+## Aileen Agricola (she/her)
 
+- First name pronounced eye-LEAN
 - Senior Digital Marketing Manager
 - San Carlos, CA and Bainbridge Island, WA USA 🇺🇸
 - [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
@@ -137,11 +137,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Head of Marketing
 - Hillsborough, CA, USA 🇺🇸
 - [adam@sourcegraph.com](mailto:adam@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/adamfrankl)
-- Adam has spent most of his career marketing technology to developers. He has co-founded or led marketing at 16 VC-backed startups, raning from developer tools to game technology to developer tools. He is a US Army veteran, and has been practising yoga for over 20 years.
+- Adam has spent most of his career marketing technology to developers. He has co-founded or led marketing at 16 VC-backed startups, ranging from developer tools to game technology to developer tools. He is a US Army veteran, and has been practising yoga for over 20 years.
 
 ## Dan Adler (he/him)
 
-- VP Business
+- VP Operations
 - San Francisco, CA, USA 🇺🇸
 - [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/), [GitHub](https://github.com/dadlerj)
 - In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
@@ -245,14 +245,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [dax@sourcegraph.com](mailto:dax@sourcegraph.com), [Github](https://github.com/daxmc99), [Twitter](https://twitter.com/cloudmarooned)
 - Dax enjoys playing ultimate frisbee 🥏, running 🏃‍♂️ and running K8s on his Raspberry Pi. Before Sourcegraph, he worked on making Kubernetes easier to use with Rio and K3s. He is an avid enthusiast of open-source and open-hardware. He has contributed to several open source projects such as Kubernetes, Linkerd & MetalLB
 
-## Simon Korzunov
-
-- Software Engineer
-- Lynnwood, WA, USA 🇺🇸
-- [simon@sourcegraph.com](mailto:simon@sourcegraph.com), [Github](https://github.com/twop), [Twitter](https://twitter.com/twopSK)
-- Simon is interested in programming languages (especially functional ones), type systems, new technologies(WebAssembly) and performance. His top 3 favorite programming languages: Rust, Elm, TypeScript. Outside of work he enjoys exploring gorgeus Pacific Northwest outdoors with his wife and daughter. Interesting fact: he used to be a semiprofessional
-  gamer (Magic: the Gathering) and a game developer at the same time.
-
 ## Robert Lin
 
 - Software Engineer Intern
@@ -273,13 +265,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Vancouver, Canada 🇨🇦
 - [aharvey@sourcegraph.com](mailto:aharvey@sourcegraph.com), [@LGnome](https://twitter.com/LGnome), [GitHub](https://github.com/LawnGnome)
 - Adam plays cricket, yells at hockey teams, and spends an inordinate amount of time convincing his golden retriever to drop things. He started his technology journey with an IBM XT in the 80s, and never looked back once he discovered the GW-BASIC `RENUM` command. Technologically, Adam enjoys programming language design, convincing runtimes to work on hardware they weren't designed to, and deluding himself that abusing CSS animations is exactly what his film degree qualified him to do.
-
-## Nicholas Kunszt (he/him)
-
-- Enterprise Account Executive
-- Orange County, CA 🇺🇸
-- [nick.kunszt@sourcegraph.com](mailto:nick.kunszt@sourcegraph.com), [GitHub](https://github.com/Nick-Kunszt)
-- Nick enjoys playing music, soaking in the California sun, and spending QT with friends and family. Before joining Sourcegraph, Nick spent the last 7 years at Google formalizing digital marketing and analytics solutions to companies ranging from start-ups to Fortune 500's. He is passionate about forming long term relationships, solving business challenges by providing exceptional customer experience, and delivering data-driven results.
 
 ## Mark Muldez (he/him)
 
@@ -342,14 +327,78 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [GitHub](https://github.com/stefanhengl)
 - Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
+## Mimi St Johns
+
+- Software Engineer Intern
+- Pittsburgh, PA, USA 🇺🇸
+- [mimi@sourcegraph.com](mailto:mimi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mimi-st-johns-1208521b1/), [GitHub](https://github.com/RedHeadedStranger99)
+- Mimi recently finished her first year at Stanford; she is studying computer science. In her free time, she enjoys playing the guitar, writing, chess, and Magic: The Gathering.  
+
+## Kimberly Hopson (she/her)
+
+- Developer Communications
+- Berwyn, PA
+- [kimberly@sourcegraph.com](mailto:kimberly@sourcegraph.com)
+- Kimberly is just a government name; Sourcegraph insiders call her by her nickname. The former journalist accidentally fell into the world of technical writing via her gaming hobby, and she's been dedicated to writing insightful documentation ever since. In her spare time, she engages in a balanced mixture of geeky and athletic pursuits, such as anime, coffee making, swimming, reading, aerial fitness, pc building, and sport shooting.
+
+## Aida DeWitt (she/her)
+
+- Engineering Manager
+- San Francisco, CA, USA 🇺🇸
+- [aida@sourcegraph.com](mailto:aida@sourcegraph.com), [Twitter](https://twitter.com/aidaeology), [LinkedIn](https://www.linkedin.com/in/aidadewitt/), [pronounce my name 🔊](https://www.name-coach.com/aida-dewitt)
+- Aida is a Canadian expat living in the San Francisco bay area with her husband and cat. Aida started her fascination with 01s when she first learned about logic gates while building parallel and series circuits for a school project. In her spare time she enjoys spending time outdoors and creating a sustainable garden. Prior to Sourcegraph she was at Contentful and is passionate about system architecture and design. Aida graduated with a B.S. in Computer Science from Ryerson University in Toronto.
+
+## Elizabeth Stirling (she/her)
+
+- Security Software Engineer
+- Seattle, WA, USA 🇺🇸
+- [elizabeth@sourcegraph.com](mailto:elizabeth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/elizabeth-stirling-753b2779/)
+- Elizabeth is a Seattle area native who loves exploring the city. She has been interested in security ever since reading [Neal Stephenson's novel Reamde](https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497) when she was a kid. Her spare time is spent hiking around the forests of the Pacific Northwest and working on whatever side project catches her fancy. She has spent far too much money on keyboards and pretty rocks - sometimes even forging her own Bismuth crystals. Elizabeth graduated with a B.S. in Computer Science from the University of Washington in Seattle. 
+
+## Austin Harshberger (he/him)
+
+- Customer Engineer
+- San Francisco, CA, USA, 🇺🇸
+- [austin@sourcegraph.com](mailto:austin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aharshbe/), [GitHub](https://github.com/aharshbe), [Click here + 🔊 to have Google pronounce my name](https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=Austin%20Harshberger)
+- Austin is a San Francisco transplant originally from the suburbs of San Bernadino (30 miles from LA). He enjoys programming and watching Netflix during his free time, is an avid ⌚ collector, gamer, and a novice gemologist 💎 Also, you might be able to steal a laugh if you find Austin at an indoor bouldering gym trying not to fall 🧗‍♂️ -- he often does. Before joining Sourcegraph, Austin worked at Coinbase where he helped to prevent employees from getting pwned by deploying numerous automation techniques to relentlessly but effectively patch endpoints. Before that, Austin worked at GitHub where he helped large enterprise customers to improve their development workflows by providing training as well as custom integrations of GitHub Enterprise appliances. He is friendly, inquisitive, very high energy and loves meeting new people so don't hesitate to say "hi" 👋
+
+## Tion Thomas (he/him)
+
+- Customer Engineer
+- Frederick, MD, USA, us
+- [tion@sourcegraph.com](mailto:tion@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tion-thomas-30562017), [GitHub](https://github.com/tistru), [YouTube](https://www.youtube.com/channel/UC9l1NGH1xciYs9z1LQ6CtqA)
+- Tion is a native New Yorker who has spent time all over the US including Boston, Florida, Indiana, Oregon, and currently Maryland. He has a B.S and M.S in computer science from Tufts University and Purdue University respectively. Prior to joining Sourcegraph, Tion has worked  in a variety of domains including systems engineering, software validation, strategic planning, UX, application engineering, programming, developer relations, and technical production spread over Lockheed Martin, Electronic Arts, Intel, Razer, and Magic Leap. His passion is in gaming and he continues to be an active member on many gaming forums and blogs while playing some of the latest games in his spare time. He also enjoys sports, music, and is an AV enthusiast (home theater and audio/video technologies). Tion is a proud father of 2 beautiful kids and a husband of 7 years! He loves working with customers and helping to enable amazing technology that is readily accessible to everyone. 
+
+## Quinn Keast (he/him)
+
+- Product Designer
+- Berlin, Germany 🇩🇪
+- [qkeast@sourcegraph.com](mailto:qkeast@sourcegraph.com), [@quinnkeast](https://twitter.com/quinnkeast), [LinkedIn](https://www.linkedin.com/in/quinn-keast/), [GitHub](https://github.com/quinnkeast), [quinnkeast.com](https://quinnkeast.com)
+- Quinn is a Canadian product & UX designer living in Berlin. His background is in design, and prior to Sourcegraph, he has a broad range of experience including working with a branding and advertising agency, a major non-profit environmental conservancy, and a global meal kit company. He also co-founded a UX consultancy that worked with growing product teams and organizations across Canada. Outside of work, Quinn is passionate about Ultimate frisbee, writing, speaking, and tinkering around. Learn more about Quinn's guiding values and how he works as a human at his personal [Quinn.README](https://quinnkeast.com/readme)!
+
+## Juliana Peña (she/her)
+
+- Software Engineer
+- Redmond, WA, USA 🇺🇸
+- [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [GitHub](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage), [pronounce my name 🔊](https://www.name-coach.com/julip)
+- Juliana is originally from Cali, Colombia 🇨🇴 and went to college in Mexico City 🇲🇽 before moving to the Seattle area. She loves building powerful and beautiful web applications that improve people's lives. Before Sourcegraph, Juliana worked at Microsoft building successful startup projects, and is now very excited to be working in a real startup company. Outside of work, Juliana loves cyling, collecting Lego, playing video games, and traveling.
+
+## Tharuntej Kandala (he/him)
+
+- Software Engineer
+- Jacksonville, FL, USA 🇺🇸
+- [tj@sourcegraph.com](mailto:tj@sourcegraph.com), [GitHub](https://github.com/tjkandala)
+- Call him "TJ"
+- TJ was born in India before he was brought to the swamp. He strives to bridge the gap between Developer Experience and User Experience in modern web applications. Outside of work, he loves to code and dunk basketballs by the ocean.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
 
-- Describe how to pronounce your name
 - Role(s)
 - City, region, country, country flag emoji
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
+- Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)
 
 -->

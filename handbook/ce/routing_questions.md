@@ -36,9 +36,15 @@ Note that this section applies to backend connections with code hosts, such as r
 
 ## Repository permissions
 
-**Keywords**: `permissions`, `ACLs`, `access`
+**Keywords**: `permissions`, `ACLs`, `access`, `authorization`, `authz`
 
 Any questions about repository permissions should be routed to the [Cloud team](../engineering/cloud/index.md).
+
+## User authentication (SSO)
+
+**Keywords**: `authentication`, `authn`, `SSO`, `SAML`, `OAuth`, `auth proxy`, `OpenIDConnect`, `OIDC`
+
+Any questions about user authentication should be routed to the [Cloud team](../engineering/cloud/index.md).
 
 ## Code intelligence
 
@@ -57,12 +63,6 @@ Any questions about search should be routed to the [Search team](../engineering/
 **Keywords**: `browser extension`, `native integration`, `chrome`, `firefox`, `safari`, `Phabricator`, `Bitbucket`, `GitHub`, `GitLab`
 
 Any questions about the browser extension or code host native integrations should be routed to the [Web team](../engineering/web/index.md).
-
-## Sourcegraph extensions
-
-**Keywords**: `extensions`, `plugins`, `blame`, `git-extras`, `Codecov`
-
-Any questions about Sourcegraph extensions should be routed to the [Web team](../engineering/web/index.md).
 
 ## Sourcegraph extensions
 

@@ -3,9 +3,9 @@
 We maintain multiple deployments of Sourcegraph:
 
 - [sourcegraph.com](https://sourcegraph.com) is our production deployment for open source code.
-  - [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dot-com?project=sourcegraph-dev)
+  - [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/cloud?project=sourcegraph-dev)
     ```
-    gcloud container clusters get-credentials dot-com --zone us-central1-f --project sourcegraph-dev
+    gcloud container clusters get-credentials cloud --zone us-central1-f --project sourcegraph-dev
     ```
   - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
 - [sourcegraph.sgdev.org](https://sourcegraph.sgdev.org) is our private deployment of Sourcegraph that contains our private code.
@@ -52,6 +52,7 @@ git push origin release
 [Buildkite](https://buildkite.com/sourcegraph/deploy-sourcegraph-dot-com/) will deploy the working commit to sourcegraph.com.
 
 🚨You also need to disable auto-deploys to prevent Renovate from automatically merging in image digest updates so that the site doesn't roll-forward.
+
   1. Go to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) and remove the `"extends:["default:automergeDigest"]` entry for the "Sourcegraph Docker images" group ([example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/commit/0eb16fd9e3ddfcf3a3c75ccdda0e7eddabf19c7a)).
   1. Once you have fixed the issue in the `master` branch of [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph), re-enable auto-deploys by reverting your change to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) from step 1.
 
@@ -203,7 +204,7 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 <tr>
   <td>Get access to Jaeger locally.</td>
   <td>
-	<code>kubectl port-forward svc/jaeger-query 16686</code>
+	<code>kubectl port-forward --namespace=prod svc/jaeger-query 16686</code>
   </td>
 </tr>
 
