@@ -12,6 +12,18 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ## [Top company goals](../../handbook/ceo/index.md#goals)
 
+## [Sales](../../handbook/sales/index.md#goals)
+
+## [Customer Engineering](../../handbook/ce/index.md#goals)
+
+## [Marketing](../../handbook/marketing/index.md#goals)
+
+## [Operations](../../handbook/ops/index.md#goals)
+
+## [People Operations](../../handbook/people-ops/index.md#goals)
+
+## [Business Operations](../../handbook/bizops/index.md#goals)
+
 ## Engineering
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 ### [Cloud](../../handbook/engineering/cloud/index.md#goals)
