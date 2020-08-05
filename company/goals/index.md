@@ -14,9 +14,9 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ## Engineering
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [Cloud team](../../handbook/engineering/cloud/index.md#goals)
-### [Distribution team](../../handbook/engineering/distribution/goals.md)
-### [Search team](../../handbook/engineering/search/index.md#goals)
+### [Cloud](../../handbook/engineering/cloud/index.md#goals)
+### [Distribution](../../handbook/engineering/distribution/goals.md)
+### [Search](../../handbook/engineering/search/index.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
 
