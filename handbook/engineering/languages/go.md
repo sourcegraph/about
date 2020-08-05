@@ -8,7 +8,7 @@ and [Effective Go](http://golang.org/doc/effective_go.html).
 
 We also have subsections here
 - [Testing Go Code](#Testing)
-- [Exposing Go Services](#exposing-services)
+- [Exposing Services](#exposing-services)
 
 ## Panics
 
