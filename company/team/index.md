@@ -132,13 +132,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
 - Aileen is a techie at heart with a foundation in IT and databases. Her first startup experience was at Patrol Software where she got the startup buzz to try out multiple roles in customer support, product management, business development and sales. Most recently, she built the website for [Neo4j](https://neo4j.com) and learned that everything is connected. In her spare time she keeps active by hiking, running or biking. She also loves to travel and binges the best in streaming tv.
 
-## Adam Frankl (he/him)
-
-- Head of Marketing
-- Hillsborough, CA, USA 🇺🇸
-- [adam@sourcegraph.com](mailto:adam@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/adamfrankl)
-- Adam has spent most of his career marketing technology to developers. He has co-founded or led marketing at 16 VC-backed startups, ranging from developer tools to game technology to developer tools. He is a US Army veteran, and has been practising yoga for over 20 years.
-
 ## Dan Adler (he/him)
 
 - VP Operations
@@ -159,13 +152,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Nashville, Tennessee, USA 🇺🇸
 - [julia@sourcegraph.com](mailto:julia@sourcegraph.com), [@JuliaSourceress](https://twitter.com/JuliaSourceress), [LinkedIn](https://www.linkedin.com/in/juliagilinets/), [GitHub](https://github.com/juliasourceress)
 - Julia started out as a Software Engineer supporting the developer community at Palm, which to the generations of today might be thought of as mobile before mobile. She realized she loved forging business partnerships just as much as coding, and after over a decade of leading various customer facing teams has finally landed in the best of all worlds at Sourcegraph. She's passionate about technical innovation, efficiency, the human connection, and sleep.
-
-## Adam Herzog (he/him)
-
-- Product Marketing Manager
-- San Francisco, CA, USA 🇺🇸
-- [herzog@sourcegraph.com](mailto:herzog@sourcegraph.com), [@ah3rz](https://twitter.com/ah3rz), [LinkedIn](https://www.linkedin.com/in/herzogadam/)
-- Adam is an experienced developer marketer, now focusing on product marketing at Sourcegraph. He's previously led developer relations, digital demand generation, and other marketing functions at companies like Docker, Humio, and Neo4j. Adam advocates for inclusivity 🌈 within the entire tech industry (and the world!) and probably uses the word "awesome" too much. He is passionate about good food, Hatha yoga, and jean jackets in no particular order.
 
 ## Geoffrey Gilmore
 
@@ -280,13 +266,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - San Francisco, CA, USA 🇺🇸
 - [pooja@sourcegraph.com](mailto:pooja@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/poojajn/), [GitHub](https://github.com/poojaj-tech), [Twitter](https://twitter.com/pooja___j)
 - Pooja enjoys going to (cold) beaches in San Francisco and thinking about productivity hacks in her free time. Prior to Sourcegraph, Pooja worked at a design agency to deliver software-enabled design services at several top startups. Before that, she spent 5 years at Facebook building core product features for 500M+ users on FB Groups and FB Events, launching a new Movie ticket purchase product and developing an onboarding process for online learning in classrooms. Pooja graduated with a BS and MS in Computer science from UIUC with a specialization in user interface design and machine learning.
-
-## Laureen Hudson (she/her)
-
-- Developer Communications
-- Annapolis, Maryland, USA 🇺🇸
-- [laureen@sourcegraph.com](mailto:laureen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/laureenhudson/), [GitHub](https://github.com/LaureenH)
-- Laureen is a technical and developmental editor; also a storyteller, writer, publisher, enthusiastic geek enabler, autodidact, activist, and instigator. She lives aboard a 47' catamaran with her family, and if she’s not online, it’s probably because she’s crossing an ocean.
 
 ## Christine Lovett (she/her)
 
