@@ -159,6 +159,7 @@ interface HTMLParts {
     audioHTML?: string
     summaryHTML?: string
     transcriptHTML?: string
+    conversationHTML?: string
     showNotesHTML?: string
 }
 
@@ -192,6 +193,11 @@ export function getHTMLParts(html: string): HTMLParts {
             name: 'showNotesHTML',
             start: '<!-- START SHOWNOTES -->',
             end: '<!-- END SHOWNOTES -->',
+        },
+        {
+            name: 'conversationHTML',
+            start: '<!-- START CONVERSATION -->',
+            end: '<!-- END CONVERSATION -->',
         },
     ]
     const parts: HTMLParts = {}

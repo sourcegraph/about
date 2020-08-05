@@ -41,7 +41,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
             description,
         }
 
-        const { guestsHTML, audioHTML, summaryHTML, transcriptHTML, showNotesHTML } = getHTMLParts(content)
+        const { guestsHTML, audioHTML, summaryHTML, transcriptHTML, conversationHTML, showNotesHTML } = getHTMLParts(content)
         const options: Option[] = [
             {
                 name: 'Summary',
@@ -58,17 +58,24 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                 tab: 'transcript',
                 html: transcriptHTML,
             },
+            {
+                name: 'Conversation',
+                tab: 'conversation',
+                html: conversationHTML,
+            }
         ].filter(option => option.html)
 
 
         // In order to work with Gatsby React rehydration, these URLs need to be distinct paths and map to the ones defined in gatsby-node.js
-        let selected: 'notes' | 'summary' | 'transcript' = this.props.pageContext?.showTab || 'summary'
+        let selected: 'notes' | 'summary' | 'transcript' | 'conversation' = this.props.pageContext?.showTab || 'summary'
         const path = this.props.location.pathname
         if (path) {
             if (path.endsWith('/notes')) {
                 selected = 'notes'
             } else if (path.endsWith('/transcript')) {
                 selected = 'transcript'
+            } else if (path.endsWith('/conversation')) {
+                selected = 'conversation'
             }
         }
 
