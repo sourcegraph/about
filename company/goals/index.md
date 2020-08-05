@@ -26,9 +26,13 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ## Engineering
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
+### [Campaigns](../../handbook/engineering/campaigns/index.md#goals)
 ### [Cloud](../../handbook/engineering/cloud/index.md#goals)
+### [Code intelligence](../../handbook/engineering/code-intelligence/index.md#goals)
 ### [Distribution](../../handbook/engineering/distribution/goals.md)
 ### [Search](../../handbook/engineering/search/index.md#goals)
+### [Security](../../handbook/engineering/security/index.md#goals)
+### [Web](../../handbook/engineering/web/index.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
 
