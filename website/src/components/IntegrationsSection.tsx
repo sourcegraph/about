@@ -194,9 +194,6 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Sublime Text</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">Chrome</code>
-                    </li>
-                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Datadog</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
