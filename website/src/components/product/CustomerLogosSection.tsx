@@ -119,10 +119,6 @@ const ITEMS: {
         url: '/external-logos/apex-clearing-logo.png',
     },
     {
-        name: 'Tinder',
-        url: '/external-logos/tinder-logo.svg',
-    },
-    {
         name: 'AppLovin',
         url: '/external-logos/applovin-logo.svg',
     },
