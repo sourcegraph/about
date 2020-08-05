@@ -179,7 +179,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">VS Code</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">JetBrains $EDITOR</code>
+                        <code className="border rounded px-1">JetBrains</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Vim</code>
