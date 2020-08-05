@@ -16,11 +16,11 @@
     - Hiring managers are encouraged to experiment to learn how to improve their hiring process.
     - The handbook is kept up-to-date with our learnings and current norms.
 
-## Open positions
+## All open roles
 
-The source-of-truth for our open positions is [our careers repository](https://github.com/sourcegraph/careers).
+The list of roles we're hiring is in [our careers repository](https://github.com/sourcegraph/careers).
 
-We cross-post our open positions to the following locations:
+We cross-post to the following locations:
 
 - [LinkedIn](https://www.linkedin.com/jobs/search/?keywords=sourcegraph)
 - ["Ask HN: Who is Hiring" monthly thread](hacker-news-who-is-hiring.md)
@@ -28,31 +28,26 @@ We cross-post our open positions to the following locations:
 
 We welcome suggestions for more places that we can post!
 
-## Job descriptions
+## Requirements for all open roles
+
+> NOTE: We're in the process of standardizing how we do this. This section describes the ideal we're working toward. If you need to open or significantly change a role in the meantime, the [People Ops team](index.md#members) can help fill in the gaps in this process.
+
+If you want to interview and hire for a role (aka "open a new job req"), here's what you (as the hiring manager) need to do.
+
+1. Write a [job description](#job-descriptions).
+1. Define the [interview process](interview_process.md) for the role.
+1. Decide on the compensation (usually using [OptionImpact](https://www.optionimpact.com)).
+1. Get approval from @noemi and @sqs.
+
+When approved, you can add the job description to all the [places we post open roles](#all-open-roles).
+
+### Job descriptions
 
 Each job description lists qualifications (requirements) and nice-to-haves. If you are unsure if you meet our qualifications, please apply.
 
 We prefer to avoid listing "years of experience" as a qualification because time is only an indirect measure of what we really care about: skills and maturity.
 
 Our team contains highly motivated and productive members who've joined immediately after high school/university or after 10+ years of working at some of the best companies.
-
-## Decision making process
-
-We review each candidate at each stage of our hiring pipeline (e.g. application, phone screen, interviews, references) to determine if we want to move the candidate to the next stage. Here are some things that we consider:
-
-- Applications
-    - Does this candidate meet all qualifications for the role they are applying for?
-    - Does this candidate's resume and application effectively communicate their skills, accomplishments, and a genuine interest in Sourcegraph?
-    - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
-    - What makes this candidate's application stand out and excite us about moving forward with interviews?
-- Interviews
-    - Does this candidate have the skills and experience that we are looking for?
-    - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
-    - What makes us excited about hiring this candidate?
-
-## Hiring flow
-
-For any members of a hiring team, please see [this folder](https://drive.google.com/drive/u/0/folders/1tJAroT8Z1sPnWkETSbe2mFFaD5_g7Q_E) for a breakdown of each team's hiring process. The documents will outline responsibilities by role (Hiring Manager, Scheduling Coordinator, and People Ops) for each team.
 
 ## [Interview process](interview_process.md)
 

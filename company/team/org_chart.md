@@ -24,6 +24,8 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 
 ## [Marketing team](../../handbook/marketing/index.md#members)
 
+## [People Ops team](../../handbook/people-ops/index.md#members)
+
 ## Other teams: TODO
 
 Not all teams are listed here yet.
