@@ -2,11 +2,14 @@
 
 Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
+
 ## Requirements
 
 Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) for installing packages.
 
 ## Developing locally
+
+[Click here to develop the handbook locally](#Handbook)
 
 In a terminal, change into the `website` directory, and run:
 
