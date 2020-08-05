@@ -85,10 +85,12 @@ Other:
 
 - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith) will not be isolating his work to a single team. Instead, he will serially choose tasks that he thinks are important to work on and he will post updates to the most relevant tracking issue on GitHub. This is an experiment for the next month and we will evaluate the outcome on 2020-08-17. Tomás will continue to be his manager during this experiment.
 
-## Hiring status
+## Growth plan
 
-_Updated 2020-07-03_
+We've validated that while having a team focus on Cloud is very important, there continues to be a need for work to happen on other areas of our backend infrastructure. To that end, we'll split this team into two, Cloud and [Backend Infrastructure](../backend-infrastructure/index.md), as soon as we hired enough that each of those teams could have a minimum of 3 engineers, but for the time being, the Cloud team will have to handle any emerging high priority backend infrastructure goals that aren't directly related to the ultimate goal of the team.
 
-We are hiring for these roles:
+Each of these teams should not grow larger than 8 engineers. In the mean-time, Tomás will be the manager of both teams, but we're looking to hire Engineering Managers for both down the line.
 
-- +1 [Software Engineer - Backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md)
+### Hiring
+
+We are growing the Cloud team by hiring both [Full stack Engineers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-full-stack.md) and [Backend Engineers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md).
