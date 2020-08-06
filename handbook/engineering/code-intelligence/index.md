@@ -52,7 +52,7 @@ Build a code intelligence platform that understands code in all languages and pr
   1. Create and send a survey to customers to gather information on monorepos use cases and stats.
   1. Identify the common challenges our customers are experiencing when operating Sourcegraph in monorepos by working directly with 3 customers to index a monorepos, gather feedback and identity problems we need to address.
   1. Update lsif-* tools to enable indexing subsets of a project.
-  1. Integrate with monorepos build systems: 
+  1. Integrate with monorepos build systems: Bazel and stretch goal is one of: Buck, Pants, OAO
 - Successful Outcome: Users are able to process monorepos with the same TTI as any other type of repository. Our tools provide configuration options that accomodate for complex use cases (cross repository and sub-project code intel).
 
 **Provide clarity on capabilities of code intel tools at each release state**
