@@ -8,7 +8,13 @@ Customer support tickets should be translated to GitHub issues. In such cases, [
 new issue for the request](https://github.com/sourcegraph/customer/issues/new).
 
 Provide the appropriate context and add a label with the affected customer as `customer/$name`. Once its created, sharing it with the required [team](routing_questions.md).
-If necessary, link to the appropriate JIRA Service Desk ticket or HubSpot notes.
+If necessary, link to the appropriate JIRA Service Desk ticket or [HubSpot](#find-the-unique-company-url) notes.
+
+### General issues
+
+General issues are those that affect more users than those of a particular deployment. In such cases, create a [new issue for the request](https://github.com/sourcegraph/sourcegraph/issues/new/choose) describing it. If there was a previous [customer issue](##create-a-customer-issue), please link the issue in its description.
+
+Remove any potentially private information (e.g. individual people's names, company names, self-hosted Sourcegraph URLs, repo names, screenshots, etc.)
 
 ## Find the unique company URL
 
