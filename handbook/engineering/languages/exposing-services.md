@@ -13,7 +13,6 @@ Binding to `localhost:port` or `127.0.0.1:port` is binding to a local-only inter
 
 This may be preferred in a sidecar pattern where you do not want a container accessible outside a Pod or when you don't want expose your laptop to the cofeeshop wifi but generally, code should not be merged that binds to `localhost` or `127.0.0.1`.
 
-
 ### How can I port-forward a local only service?
 
 Due to the way that kube-proxy works when you port-forward a pod or a service kube-proxy opens a tunnel to that pod (or a pod that backs that service). This can make debugging why a service is accessible in the pod but not outside of the pod hard to [understand](https://github.com/sourcegraph/zoekt/pull/46/files).
