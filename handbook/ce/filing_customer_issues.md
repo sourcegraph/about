@@ -2,11 +2,15 @@
 
 Read [the support overview](index.md) before filing an issue.
 
-## 1. Begin to create an issue
+## Create a customer issue
 
-Customer support tickets should be translated to GitHub issues. In such cases, [create a new issue for the request](https://github.com/sourcegraph/customer/issues/new).
+Customer support tickets should be translated to GitHub issues. In such cases, [create a
+new issue for the request](https://github.com/sourcegraph/customer/issues/new).
 
-## 2. Find the unique company URL
+Provide the appropriate context and add a label with the affected customer as `customer/$name`. Once its created, sharing it with the required [team](routing_questions.md).
+If necessary, link to the appropriate JIRA Service Desk ticket or HubSpot notes.
+
+## Find the unique company URL
 
 Find the unique company URL by [searching for the company in HubSpot](https://app.hubspot.com/contacts/2762526/companies/list/view/all/?query=).
 
@@ -20,8 +24,3 @@ It is encouraged to add a browser search shortcut for this to make it quick and 
   - **Search Engine**: HubSpot search
   - **Keyword**: `hs`
   - **URL**: https://app.hubspot.com/contacts/2762526/companies/list/view/all/?query=%s
-
-## 3. Post the issue
-
-Finalize the issue by providing the appropriate context and labeling with the affected customer name as `customer/$name`. Once its created, sharing it with the required [team](routing_questions.md).
-If necessary, link to the appropriate JIRA Service Desk ticket or HubSpot notes.
