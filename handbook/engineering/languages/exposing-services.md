@@ -22,8 +22,6 @@ You can also use `kubectl port-forward --address 0.0.0.0` if you need to expose 
 
 ### References
 
-https://stackoverflow.com/questions/20778771/what-is-the-difference-between-0-0-0-0-127-0-0-1-and-localhost
-
-https://serverfault.com/questions/21657/semantics-of-and-0-0-0-0-in-dual-stack-oses/39561#39561
-
-https://stackoverflow.com/questions/49067160/what-is-the-difference-in-listening-on-0-0-0-080-and-80
+- https://stackoverflow.com/questions/20778771/what-is-the-difference-between-0-0-0-0-127-0-0-1-and-localhost
+- https://serverfault.com/questions/21657/semantics-of-and-0-0-0-0-in-dual-stack-oses/39561#39561
+- https://stackoverflow.com/questions/49067160/what-is-the-difference-in-listening-on-0-0-0-080-and-80
