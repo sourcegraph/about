@@ -23,7 +23,7 @@ Build a code intelligence platform that understands code in all languages and pr
   - Language coverage (%)
 - Required Tasks:
   1. Resolve outstanding issues for lsif-clang, ship to 3 customers.
-  1. Resolve outstanding issues for lsif-java, prepare ship to 3 customers. 
+  1. Resolve outstanding issues for lsif-java, ship to 3 customers. 
   1. Resolve outstanding issues for lsif-go, ship to 3 customers. 
   1. Provide best effort auto-indexing for supported languages [RFC-199](https://docs.google.com/document/d/1rCduWqaLAbMu2s43RwJTBbRlhL6qS3oqq4iawiGdoVE/edit), [RFC-201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit).
 - Success Outcome: We have accurate and comprehensive precise code intel for C++, Go, and Java. We will work to ship each indexer to at least 3 customers and gather feedback for future iteration.
@@ -36,8 +36,8 @@ Build a code intelligence platform that understands code in all languages and pr
   - Max size of project (N2)
   - Max commit rate of repository (N3)
 - Required Tasks:
-  1. Gather current values for metrics: Request Latency, System Throughput and create benchmarks for existing system.
-  1. Source and track values for: Max number of repositories (N1), Max size of project (N2), Max commit rate of repo (N3).
+  1. Gather current values for metrics Request Latency and System Throughput, create benchmarks for existing system.
+  1. Source and track performance for: Number of repositories (N1), Size of project (N2), Commit rate of repos (N3).
   1. Determine the upper boundary limits of the code intel backend across dimensions: N1, N2, N3.
   1. Create a mechanism that can instantiate a configurable environment and instance for performance testing. 
   1. Develop a prototype for incremental indexing, [RFC-170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit).
