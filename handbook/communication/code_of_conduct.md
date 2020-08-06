@@ -21,7 +21,7 @@ Our mission is to enable everyone to unlock the value of code. For us, that mean
 We live these values within our own organization: We welcome people from a diverse set of backgrounds, and we want every teammate to grow and flourish at Sourcegraph. We believe that a team with a diverse set of viewpoints and experiences united by our common cause will give us the best chance of realizing our mission.
 
 
-## **Our standards**
+## Our standards
 
 We encourage you to:
 
