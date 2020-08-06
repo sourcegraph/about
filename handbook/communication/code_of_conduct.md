@@ -2,7 +2,6 @@
 
 [TOC]
 
-
 ## Our pledge
 
 We pledge to make participation in our company, our projects, and our community an open, welcoming, and harassment-free experience for everyone, regardless of ability, age, body size, skin color, culture, education, ethnicity, gender identity and expression, immigration status, level of experience, mental and physical ability, nationality, personal appearance, political beliefs, race, relationship or family status, religion, sex, sexual identity and orientation, or socio-economic status.
