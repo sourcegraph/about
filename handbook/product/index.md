@@ -17,9 +17,11 @@ The product team is newly growing, and consists of all product managers and prod
 - [Developer communications](roles.md#developer-communications)
   - [Kimberly Hopson](../../company/team/index.md#kimberly-hopson-she-her)
 
-### [Roles and responsibilites](roles.md)
+### Roles
 
-See [Roles and responsibilites](roles.md)
+- [Product Manager](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
+- [Product Designer](roles/product_designer.md)
+- [Technical Writer](roles/technical_writer.md)
 
 ### Hiring status
 
