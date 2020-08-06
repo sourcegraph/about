@@ -87,7 +87,11 @@ Other:
 
 ## Growth plan
 
-We've validated that while having a team focus on Cloud is very important, there continues to be a need for work to happen on other areas of our backend infrastructure. To that end, we'll split this team into two, Cloud and [Backend Infrastructure](../backend-infrastructure/index.md), as soon as we hired enough that each of those teams could have a minimum of 3 engineers, but for the time being, the Cloud team will have to handle any emerging high priority backend infrastructure goals that aren't directly related to the ultimate goal of the team.
+_Updated 2020-08-05_
+
+We are growing the Cloud team by hiring both [Full stack Engineers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-full-stack.md) and [Backend Engineers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md).
+
+There continues to be a need for work to happen on other areas of our backend infrastructure and the Cloud team is the best team to own that kind of work today. When this Cloud team reaches 6 engineers, we plan to split the team in half to form a new [Backend Infrastructure team](../backend-infrastructure/index.md). When this happens, Tomás will be the manager of both teams and will look to identify new managers so we are able to continue growing both teams.
 
 Each of these teams should not grow larger than 8 engineers. In the mean-time, Tomás will be the manager of both teams, but we're looking to hire Engineering Managers for both down the line.
 
