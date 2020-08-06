@@ -13,9 +13,6 @@ We care about the safety and comfort of everyone in our community, including col
 ## Team member philosophy
 
 If you work at Sourcegraph or participate in our projects and community, you are important to us. If for any reason you don't feel that,
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "please let us know"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 [please let us know](#heading=h.8o2hfb3bhng).
 
 Your ultimate success with Sourcegraph will be a function of your personal agency and the environment we create as a team. We want that environment to set you up for success and enable you to thrive while realizing your professional goals and dreams.
