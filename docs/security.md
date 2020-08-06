@@ -26,11 +26,14 @@ Learn more in our [pings documentation](https://docs.sourcegraph.com/admin/pings
 
 [Sourcegraph can be configured to enforce repository permissions from code hosts.](https://docs.sourcegraph.com/admin/repo/permissions). Unit and integration tests protect the correctness of these permissions checks.
 
-## Customer data
+## Data access
 
+When you run Sourcegraph on your own infrastructure, all application and user access logs are stored locally only. Sourcegraph employees and contractors never have access to your Sourcegraph or the code, user data, or application data stored in it (excluding any manual intervention, such as e-mailing logs for support purposes).
+
+We maintain the following policies for sourcegraph.com data and any data provided via email or other support channels:
 - Access to all internal systems is protected by multi-factor authentication. Access is restricted to those who require it to perform their job, and is regularly reviewed and revoked upon termination or when no longer needed.
-- All application and user access logs are stored centrally and monitored.
-- Company policy prevents customer data from being downloaded to portable devices, such as laptops.
+- All sourcegraph.com application and user access logs for Sourcegraph.com are stored centrally and monitored.
+- Company policy prevents customer data from being downloaded to portable devices, such as phones, that don't have device management software in place.
 - Device management is in place for remote wiping of all devices.
 - Development laptops have encrypted hard drives.
 
