@@ -1,6 +1,6 @@
 # Exposing services
 
-In Go, that looks like this
+In Go, that looks like this:
 ```
 http.ListenAndServe(":80", nil)
 ```
