@@ -141,7 +141,7 @@ You have a shared understanding with another person if:
 
 
 1. They can describe your point of view accurately.
-2. You can describe their point of view accurately.
+1. You can describe their point of view accurately.
 
 A shared understanding only requires that you _understand_ the other person’s point of view. You do not need to _agree_ with the other person’s point of view.
 
