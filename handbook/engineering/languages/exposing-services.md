@@ -1,4 +1,3 @@
-
 ### Exposing services
 
 In Go, that looks like this
