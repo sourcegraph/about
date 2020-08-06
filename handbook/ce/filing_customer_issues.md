@@ -23,5 +23,5 @@ It is encouraged to add a browser search shortcut for this to make it quick and 
 
 ## 3. Post the issue
 
-Finalize the issue by providing the appropriate context and labeling with the affected companies. Once its created, sharing it with the required [team](routing_questions.md).
+Finalize the issue by providing the appropriate context and labeling with the affected customer name as `customer/$name`. Once its created, sharing it with the required [team](routing_questions.md).
 If necessary, link to the appropriate JIRA Service Desk ticket or HubSpot notes.
