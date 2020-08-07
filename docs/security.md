@@ -18,7 +18,7 @@ Sourcegraph instances that host private code are typically deployed on-premise a
 
 Self-hosted Sourcegraph instances do not send any customer code to other servers.
 
-Additionally, other than the email address of the initial installer (for customer support, security, and product notification purposes), Sourcegraph never sends any private user data, such as usernames or email addresses, or other specific data to any other servers.
+Additionally, other than the email address of the initial installer (for customer support, security, and product notification purposes), Sourcegraph never sends any private user data, such as usernames or email addresses, or other specific data to any other servers, including to sourcegraph.com.
 
 Learn more in our [pings documentation](https://docs.sourcegraph.com/admin/pings).
 
@@ -31,6 +31,7 @@ Learn more in our [pings documentation](https://docs.sourcegraph.com/admin/pings
 When running Sourcegraph on your own infrastructure, all application logs are stored locally, and never shared with Sourcegraph. Sourcegraph employees and contractors never have access to your Sourcegraph instance, or any of its data, unless explicitly shared for troubleshooting purposes.
 
 We maintain the following policies for sourcegraph.com data and any data provided via email or other support channels:
+
 - Access to all internal systems is protected by multi-factor authentication. Access is restricted to those who require it to perform their job, and is regularly reviewed and revoked upon termination or when no longer needed.
 - Service, application, and access logs for sourcegraph.com are stored centrally by Sourcegraph and monitored.
 - Company policy prevents customer data from being downloaded to portable devices, such as phones, that don't have device management software in place.
@@ -39,7 +40,9 @@ We maintain the following policies for sourcegraph.com data and any data provide
 
 ## Network security
 
-When running Sourcegraph on your own infrastructure, you are protected by the network security policies enforced by your infrastructure environment. On sourcegraph.com, we maintain the following policies:
+When running Sourcegraph on your own infrastructure, you are protected by the network security policies enforced by your infrastructure environment. 
+
+On sourcegraph.com, we maintain the following policies:
 
 - All production systems are hosted on Google Cloud Platform (https://cloud.google.com/security/), where all storage volumes are encrypted at rest, and data is encrypted in-cloud during transport.
 - All external network communication between production services occurs over TLS.
@@ -50,7 +53,9 @@ When running Sourcegraph on your own infrastructure, you are protected by the ne
 
 ## Site security
 
-Sourcegraph supports HTTPS encryption when deployed on-premises.
+Sourcegraph supports HTTPS encryption when deployed you your own infrastructure.
+
+On sourcegraph.com, we maintain the following policies:
 
 - All traffic to sourcegraph.com is transmitted over HTTPS.
 - Our operations team monitors service availability 24x7x365. They investigate alerts and potential attacks 24x7x365, triaging and responding if necessary.
