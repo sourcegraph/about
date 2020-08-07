@@ -4,7 +4,7 @@ Read [the support overview](index.md) before filing an issue.
 
 ## Create a customer issue
 
-Customer support tickets should be translated to GitHub issues. In such cases, [create a
+Customer support tickets should be translated to GitHub issues when they require an engineering team to be involved. In such cases, [create a
 new issue for the request](https://github.com/sourcegraph/customer/issues/new).
 
 Provide the appropriate context and add a label with the affected customer as `customer/$name`. Once its created, sharing it with the required [team](routing_questions.md).
