@@ -14,7 +14,7 @@ If necessary, link to the appropriate JIRA Service Desk ticket or [HubSpot](#fin
 
 General issues are those that affect more users than those of a particular deployment. In such cases, create a [new issue for the request](https://github.com/sourcegraph/sourcegraph/issues/new/choose) describing it. If there was a previous [customer issue](##create-a-customer-issue), please link the issue in its description.
 
-Remove any potentially private information (e.g. individual people's names, company names, self-hosted Sourcegraph URLs, repo names, screenshots, etc.)
+Remove any potentially private information from this new issue (e.g. individual people's names, company names, self-hosted Sourcegraph URLs, repo names, screenshots, etc.)
 
 ## Find the unique company URL
 
