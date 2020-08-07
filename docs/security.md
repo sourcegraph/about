@@ -4,7 +4,7 @@ title: Security is core to everything we do
 permalink: security
 ---
 
-## We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We've detailed our strict production security guidelines for customers below
+## We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We've detailed our strict production security guidelines for customers below.
 
 We don't stop at keeping your code safe. When your team's developers use Sourcegraph, they can discover and use your own security best practices much more easily in your own code. Your team can also more easily enforce security standards during code review.
 
@@ -18,21 +18,21 @@ Sourcegraph instances that host private code are typically deployed on-premise a
 
 Self-hosted Sourcegraph instances do not send any customer code to other servers.
 
-Additionally, other than the email address of the initial installer (for customer support, security, and product notification purposes) Sourcegraph never sends any private user data, such as usernames or email addresses, or other specific data to any other servers.
+Additionally, other than the email address of the initial installer (for customer support, security, and product notification purposes), Sourcegraph never sends any private user data, such as usernames or email addresses, or other specific data to any other servers.
 
 Learn more in our [pings documentation](https://docs.sourcegraph.com/admin/pings).
 
 ## Code host ACLs
 
-[Sourcegraph can be configured to enforce repository permissions from code hosts.](https://docs.sourcegraph.com/admin/repo/permissions). Unit and integration tests protect the correctness of these permissions checks.
+[Sourcegraph can be configured to enforce repository permissions from code hosts](https://docs.sourcegraph.com/admin/repo/permissions). Unit and integration tests protect the correctness of these permissions checks.
 
 ## Data access
 
 When running Sourcegraph on your own infrastructure, all application logs are stored locally, and never shared with Sourcegraph. Sourcegraph employees and contractors never have access to your Sourcegraph instance, or any of its data, unless explicitly shared for troubleshooting purposes.
 
-We maintain the following policies for sourcegraph.com data and any data provided via e-mail or other support channels:
+We maintain the following policies for sourcegraph.com data and any data provided via email or other support channels:
 - Access to all internal systems is protected by multi-factor authentication. Access is restricted to those who require it to perform their job, and is regularly reviewed and revoked upon termination or when no longer needed.
-- Service, application, and access logs for sourcegraph.com are stored centrally, by Sourcegraph and monitored.
+- Service, application, and access logs for sourcegraph.com are stored centrally by Sourcegraph and monitored.
 - Company policy prevents customer data from being downloaded to portable devices, such as phones, that don't have device management software in place.
 - Sourcegraph deploys Mobile Device management (MDM) for centralized management of remote devices.
 - Laptops have encrypted hard drives.
@@ -64,7 +64,7 @@ We use a number of static analysis tools to identify security risks in developme
 - Language-specific linters
 - Notifications and alerts for risky code patterns using Sourcegraph saved searches
 - Code coverage tools to ensure unit test coverage
-- End to end tests to validate authentication workflows
+- End-to-end tests to validate authentication workflows
 - Tools such as Dependabot and GitHub security advisories to identify security vulnerabilities in our code and in dependencies
 
 ## Updates
