@@ -53,7 +53,7 @@ On sourcegraph.com, we maintain the following policies:
 
 ## Site security
 
-Sourcegraph supports HTTPS encryption when deployed you your own infrastructure.
+Sourcegraph supports HTTPS encryption when deployed on your own infrastructure.
 
 On sourcegraph.com, we maintain the following policies:
 
