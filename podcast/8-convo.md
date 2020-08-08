@@ -1,31 +1,31 @@
 <!-- START CONVERSATION -->
-**Beyang Liu:** I'm here with Rijnard van Tonder, an engineer at Sourcegraph who created the Comby pattern matching syntax, an alternative to regular expressions that's easier to use and designed and optimized for use in a code. Welcome, Rijnard.
+**Beyang Liu:** I'm here with Rijnard van Tonder, the creator of the Comby pattern matching syntax, an alternative to regular expressions that's easier to use and designed and optimized for use in a code. Welcome, Rijnard.
 
 **Rijnard van Tonder:** Thanks for having me, Beyang.
 
 **Beyang:**  Before we get into the technical details, I thought it would be nice to tell the story of how we met.
 
-**Rijnard:** Yeah, so I think you might have to fill in some gaps here. I remember my side of things. Basically, I was in grad school, at CMU and working on various research problems, taking classes, but at the same time curious to explore other things, as you do in grad school.
+**Rijnard:** Yeah, that was back when I was in grad school, at CMU and working on various research problems and very curious to explore new things, as you do in grad school.
 
-At one point, Sourcegraph came up on my radar and I started playing with it. I thought, you know, code search–this is cool. But I was also poking at security holes, trying to see if I could find them. There weren't any serious issues, but at one point I did find an information leak for the names of some private repositories, and so I reached out, and you were the one who replied to my email.
+At one point, Sourcegraph came up on my radar and I started playing with it. I thought, "Code search–that's cool." But I was also poking at security holes, trying to see if I could find them. There weren't any serious issues, but at one point I did find an information leak for the names of some private repositories, and so I reached out, and you were the one who replied to my email.
 
 **Beyang:** Yeah, I remember you sent it to security@sourcegraph.com, and I was the one who replied.
 
-**Rijnard:** So that kicked off a conversation about various things, like "Do you want to talk about what Sourcegraph does?", "Do you have any feedback about the product?", and so on. And I remember hopping on a call with a few members of the team. And I thought Sourcegraph was really interesting, you were working on hard problems, and addressing a pretty big gap by creating code search that just worked ubiquitously.
+**Rijnard:** So that kicked off a conversation about various things, like "Do you want to talk about what Sourcegraph does?", "Do you have any feedback about the product?", and so on. And I remember hopping on a call with a few members of the team. I thought Sourcegraph was really interesting, you were working on hard problems, and addressing a pretty big gap by creating code search that just worked, ubiquitously.
 
-**Beyang:** Yeah, I remember that. I remember looking you up when you reported the bug, and I found that you were doing research into software engineering, developer tools, and static analysis. Afterward, we were email buddies for awhile. And then at some point, you came out to California to do an internship at Facebook, and you dropped by the office.
+**Beyang:** I remember looking you up when you reported the bug, and I found that you were doing research into software engineering, developer tools, and static analysis. Afterward, we were email buddies for awhile. And then at some point, you came out to California to do an internship at Facebook, and you dropped by the office.
 
-**Rijnard:** Yeah, that's right. At that time, I remember Sourcegraph was doing a lot of things with LSP (the Language Server Protocol). And that tied into some of the things that I ended up working on at Facebook, working with Python, specifically on code intelligence and navigation in the editor.
+**Rijnard:** Yeah, that's right. At that time, Sourcegraph was doing a lot of things with LSP (the Language Server Protocol). And that tied into some of the things that I ended up working on at Facebook, working with Python, specifically on code intelligence and navigation in the editor.
 
-**Beyang:** From my point of view, it was all very serendipitous. I knew very early on that I would love to work with you someday. And I'm really glad to be working with you now—you've brought some fantastic insights into what's on the research frontier to what we're doing at Sourcegraph. I suspect we'll get into some of that later in the conversation.
+**Beyang:** It was all very serendipitous. I knew very early on that I would love to work with you someday. And I'm really glad to be working with you now—you've brought some fantastic insights into what's on the research frontier to what we're doing at Sourcegraph. I suspect we'll get into some of that later in the conversation.
 
-**Rijnard:** Yeah, thinking back, what I remember as well was that everybody I talked to was very keen to get feedback right not just the product, but also the underlying idea of what would be possible if you had code search and code intelligence ubiquitously, everywhere you interacted with code. So there was never a dead end to the conversation I had with anyone at Sourcegraph.
+**Rijnard:** Yeah, thinking back, what I remember as well was that everybody I talked to at Sourcegraph was very keen to get feedback right—not just on the product, but also on the underlying idea of what would be possible if you had code search and code intelligence ubiquitously, everywhere you interacted with code. So there was never a dead end to the conversation I had with anyone at Sourcegraph.
 
 I saw a deep desire to go after those goals of code search everywhere, code intelligence everywhere—every editor, every place you touch code. And so there was strong mutual interest and commitment to those ideas. So that's why I ended up here.
 
 **Beyang:** Before we get into Comby and the other research you've done, can you share how you got into programming originally?
 
-**Rijnard:** My first real programming experience was during high school. My final two years in high school, I learned to code in Java. I still remember my first programming experience was looking at this programming textbook, and I copied the program character for character into my editor. And then I ran it, and of course, I got all these syntax errors.
+**Rijnard:** My first real programming experience was during high school. My final two years in high school, I learned to code in Java. I still remember my first programming experience was looking at this programming textbook, and I copied the program character for character into my editor. And then I ran it, and I got all these syntax errors.
 
 I was like, "What? How did I make so many mistakes?"
 
@@ -33,43 +33,33 @@ And from there, I became more and more interested in understanding the theory be
 
 **Beyang:** Where along the line of your studies did you decide to pursue a PhD?
 
-**Rijnard:** I think my story is similar to a lot of other grad students. I think I did a couple of Google interviews and it didn't work out, so I was like, well, I'm going to grad school now. And I got accepted into a few PhD programs, and so it all worked out.
+**Rijnard:** Oh, I think my story is similar to a lot of other grad students. I did a couple of Google interviews and it didn't work out, so I was like, well, I'm going to grad school now. And I got accepted into a few PhD programs, and so it all worked out.
 
-**Beyang:** Yeah, I got rejected from Facebook myself, so I can definitely sympathize with getting rejected from those big tech companies. How did you pick your research area?
+**Beyang:** Yeah, I got rejected from Facebook myself. How did you pick your research area?
 
-**Rijnard:** The reasoning in my mind was, I'm only interested in doing research if it's a topic that I really care about. The kind of stuff that stood out to me back then was software security research and automated program analysis for finding bugs. Bugs—and security bugs specifically—are super interesting because they have such severe consequences. The central question for me was: how far can we push automated techniques to find really complex, really interesting bugs. From there, it evolved and eventually changed a bit of direction, but that was the underlying interest.
+**Rijnard:** I was only interested in doing research if it was a topic that I really care about. The kind of stuff that stood out to me back then was software security research and automated program analysis for finding bugs. Bugs—and security bugs specifically—are super interesting because they have such severe consequences. The central question for me was: how far can we push automated techniques to find really complex, really interesting bugs. From there, it evolved and eventually changed a bit of direction, but that was the underlying interest.
 
-**Beyang:** One of the things that you covered in your PhD research was a new pattern matching syntax called [Comby](https://comby.dev/). What is Comby and what were your motivations creating it??
+**Beyang:** One of the things that you covered in your PhD research was a new pattern matching syntax called [Comby](https://comby.dev/). What is Comby and what were your motivations creating it?
 
 **Rijnard:** Comby is a tool I wrote that solved a problem I encountered in my research at the time. I needed a code transformation tool that could change bits of program syntax without having to compile the whole program and was robust to things like malformed syntax in the rest of the file.
 
-For example, I just wanted to be able to change the structure of an if-statement by, say, adding a clause to the conditional, or maybe adjust the halting condition in a for-loop. To make it concrete, consider doing this in Java. There are existing tools like FindBugs that detect common errors and anti-patterns and suggest changes. My research was in identifying new types of errors and to close the loop, I wanted to enable the user to have a one-click way of applying the suggested change.
+For example, I just wanted to be able to change the structure of an if-statement by, say, adding a clause to the conditional, or maybe adjust the halting condition in a for-loop. To make it concrete, consider doing this in Java. There are existing tools like FindBugs that detect common errors and anti-patterns and suggest changes. My research was in identifying new types of errors and, in order to close the loop, I wanted to enable the user to have a one-click way of applying the suggested changes.
 
-Regex is not powerful enough to describe these transformations precisely in a way that generalizes across all instances. There are tools that *can* express the transformation 100% precisely in terms of the Java AST. I initially tried to use one of these parser-based tools. But what I soon realized is, if I wanted to change a particular statement, I couldn't do it without parsing the whole program. I couldn't even parse just a single file.
+Regex is not powerful enough to describe these transformations precisely in a way that generalizes across all situations. There are tools that *can* express the transformation 100% precisely in terms of the Java AST. I initially tried to use one of these parser-based tools. But what I soon realized is, if I wanted to change a particular statement, I couldn't do it without parsing the whole program. I couldn't even parse just a single file.
 
-I remember going into the community Slack channel for this tool and I asked them how could change this one small thing without doing anything super complex, and the response was something like "Well why would you want to do that?"
+I remember going into the community Slack channel for this tool, and I asked them how could change this one small thing without doing anything super complex, and the response was something like "Well why would you want to do that?"
 
-And that's fine, because these tools are made for particular reasons, and the reason I wanted to use it wasn't aligned with the reasons for which the creators had created it.
+And that's fine, because these tools are made for particular reasons, and the reason I wanted to use it wasn't aligned with the reasons for which the creators had created it.'
 
-So I was left thinking about how I could parse these code fragments I wanted to transform. And the thinking was, how can I transform these fragments into a general parse tree that preserves some of the syntactical tree structure of the language and understands things like balanced braces and parens. And you also have to take into account thins like comments and string literals, because you need to treat those cases differently.
+So I was left thinking about how I could parse these code fragments I wanted to transform. And the thinking was, how can I transform these fragments into a general parse tree that preserves some of the syntactical tree structure of the language and understands things like balanced braces and parens. And you also have to take into account things like comments and string literals, because you need to treat those cases differently.
 
 If we can approximate the tree structure of the program in some way that's easy to manipulate, then we would have something expressive enough to apply all the transformations I wanted to make but also general enough to work across many languages *and* easy-to-use for the end user who may not want to run a whole compilation pipeline to apply these transformations.
 
-There are existing tools that do something like this. [Tree-sitter](https://github.com/tree-sitter/tree-sitter) takes something similar to this approach.
+There are a few tools that take more of a language-agnostic approach—[Tree-sitter](https://tree-sitter.github.io/tree-sitter/) is an example—but I wanted something even lighterweight to use and understand.
 
+**Beyang:** Let's lay out the spectrum of pattern matching and replacement tools. On the far end of the spectrum, you have the full-on compiler-based or static-analysis-based tools, such as the Java tool you mentioned. With these tools, you express your transformation in terms of changes to the compiled AST. And then on the other end of the spectrum, you have things like regular expressions and tools like `grep` that use regular expressions. Is that an accurate book-ending of the spectrum?
 
-
-
-
-
-Um, so. So, if we can kind of approximate that in some way, then, then it's easy to manipulate. Now, there are tons of tools out there, right. That, that,  go along this thinking. And, you know, I can name a lot off the top of my head nowadays, you know, there's like tree sitter, there's all various kinds of, you know.
-Yeah. Um, And so the way I see it is, you know, there's a lot of, uh, there's a lot of tooling in this space that, that addresses. Parts of the problems and parts of it, the kind of design space of, of co transformation. And so it's a, it's a matter of picking, picking the right tool for the job. And if that tool that doesn't exist, you kind of have to engineer it.
-So call me is my response to engineering. So, um, for this like purpose fit role of. You know, manipulating syntax, uh, uh, at, uh, at, uh, smallish scale at the, at the scale of, you know, simple link checks or, or linear transformations, auto fixes, this sort of thing. And at the end of the day, I needed that to do, uh, you know, to integrate with a more, more sophisticated approach of, of, uh, Program repair or what others might call, uh, automated program texting or automated bug fixing.
-So that's the context.
-
-**Beyang:** That makes sense. So just to lay out kind of the spectrum of, um, like pattern matching and replacement, um, like tools and syntaxes, I guess, on, on the far end of the spectrum, there's like the full on compiler based, uh, static analysis based tools. Like, you know, that Java library that you were mentioning that actually hook into, you know, Java C or whatever the compiler is, and they compile the code, they build up the AST and then this probably like.
-I in order to express your transformation, you probably have to express it in terms of like programmatic changes to the AST or something like that. Right. Or maybe the, so that's like one end of the spectrum. And then on the other end of the spectrum, I would say like, probably things like regular expressions or  tools that make use of regular expressions.
-Do you think that's kind of like an accurate, um, book-ending of, of the spectrum?
+>>> HERE
 
 **Rijnard:** I think that's a good way to look at it. There's to my mind, there are multiple kind of spectrum, let's say. Um, I think, I think you can actually, you know, uh, Th th the way I think of tooling, uh, you know, to categorize the vast tooling landscape of things that match and change code, it's more of a, kind of like a, uh, a two D landscape.
 Um, where are you at various, uh, axes. Right? And so along these axes, you have data points. So, um, the one that you point out, is a very good one to think about in terms of expressivity, right? What, what is the set of transformations that I can express? So regular expressions is, is on one end of this. And you can map some of the, this notion of expressivity to a more formal way of thinking in terms of, you know, Chomsky's hierarchy and that.
