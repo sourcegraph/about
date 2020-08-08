@@ -1,123 +1,43 @@
----
-title: "Episode 8: Rijnard van Tonder, creator of Comby"
-publishDate: 2020-08-04T10:01-07:00
-tags: [podcast]
-slug: rijnard-van-tonder
-published: true
----
+<!-- START CONVERSATION -->
+**Beyang Liu:** I'm here with Rijnard van Tonder, an engineer at Sourcegraph who created the Comby pattern matching syntax, an alternative to regular expressions that's easier to use and designed and optimized for use in a code. Welcome, Rijnard.
 
-<!-- START AUDIO -->
-<audio className="object-center" src="https://www.buzzsprout.com/1097978/4755524-rijnard-van-tonder-creator-of-comby.mp3" controls={true} preload="none"></audio>
-<!-- END AUDIO -->
+**Rijnard van Tonder:** Thanks for having me, Beyang.
 
-<!-- START GUESTS -->
-<span>
-Rijnard van Tonder, Beyang Liu
-</span>
-<!-- END GUESTS -->
+**Beyang:**  Before we get into the technical details, I thought it would be nice to tell the story of how we met.
 
-<!-- START SUMMARY -->
-[Rijnard van Tonder](https://twitter.com/rvtond) is the creator of [Comby](https://comby.dev/), a pattern-matching syntax and command-line tool that offers a more expressive and more user-friendly alternative to regular expressions for many common patterns in code.
+**Rijnard:** Yeah, so I think you might have to fill in some gaps here. I remember my side of things. Basically, I was in grad school, at CMU and working on various research problems, taking classes, but at the same time curious to explore other things, as you do in grad school.
 
-Rijnard earned his PhD from Carnegie Mellon University in 2019. In this podcast, we chat about the state of the art in static analysis and automated bug-fixing, new tools made in industry like Pyre and SapFix, and what place machine learning has in the world of developer tools.
-<!-- END SUMMARY -->
+At one point, Sourcegraph came up on my radar and I started playing with it. I thought, you know, code search–this is cool. But I was also poking at security holes, trying to see if I could find them. There weren't any serious issues, but at one point I did find an information leak for the names of some private repositories, and so I reached out, and you were the one who replied to my email.
 
-<!-- START SHOWNOTES -->
-Rijnard van Tonder: https://twitter.com/rvtond, https://rijnard.com
+**Beyang:** Yeah, I remember you sent it to security@sourcegraph.com, and I was the one who replied.
 
-Comby pattern matching syntax: https://comby.dev
+**Rijnard:** So that kicked off a conversation about various things, like "Do you want to talk about what Sourcegraph does?", "Do you have any feedback about the product?", and so on. And I remember hopping on a call with a few members of the team. And I thought Sourcegraph was really interesting, you were working on hard problems, and addressing a pretty big gap by creating code search that just worked ubiquitously.
 
-Comby Gitter channel: https://gitter.im/comby-tools/community
+**Beyang:** Yeah, I remember that. I remember looking you up when you reported the bug, and I found that you were doing research into software engineering, developer tools, and static analysis. Afterward, we were email buddies for awhile. And then at some point, you came out to California to do an internship at Facebook, and you dropped by the office.
 
-Program synthesis: https://en.wikipedia.org/wiki/Program_synthesis
+**Rijnard:** Yeah, that's right. At that time, I remember Sourcegraph was doing a lot of things with LSP (the Language Server Protocol). And that tied into some of the things that I ended up working on at Facebook, working with Python, specifically on code intelligence and navigation in the editor.
 
-Tree sitter: https://github.com/tree-sitter/tree-sitter
+**Beyang:** From my point of view, it was all very serendipitous. I knew very early on that I would love to work with you someday. And I'm really glad to be working with you now—you've brought some fantastic insights into what's on the research frontier to what we're doing at Sourcegraph. I suspect we'll get into some of that later in the conversation.
 
-Codemod, from Facebook: https://github.com/facebook/codemod
+**Rijnard:** Yeah, thinking back, what I remember as well was that everybody I talked to was very keen to get feedback right not just the product, but also the underlying idea of what would be possible if you had code search and code intelligence ubiquitously, everywhere you interacted with code. So there was never a dead end to the conversation I had with anyone at Sourcegraph.
 
-Automated bug fixing and program repair: https://en.wikipedia.org/wiki/Automatic_bug_fixing
+I saw a deep desire to go after those goals of code search everywhere, code intelligence everywhere—every editor, every place you touch code. And so there was strong mutual interest and commitment to those ideas. So that's why I ended up here.
 
-Chomsky's hierarchy (regular, context-free, and Turing-complete languages): https://en.wikipedia.org/wiki/Chomsky_hierarchy
+**Beyang:** Before we get into Comby and the other research you've done, can you share how you got into programming originally?
 
-Regular expressions, or regex (pronounced "REG-ex" or "REJ-ex"): https://en.wikipedia.org/wiki/Regular_expression
+**Rijnard:** My first real programming experience was during high school. My final two years in high school, I learned to code in Java. I still remember my first programming experience was looking at this programming textbook, and I copied the program character for character into my editor. And then I ran it, and of course, I got all these syntax errors.
 
-Holes in Comby (https://comby.dev/docs/syntax-reference) vs. named capturing groups in regular expressions (https://www.regular-expressions.info/named.html)
+I was like, "What? How did I make so many mistakes?"
 
-Rascal: https://www.rascal-mpl.org
+And from there, I became more and more interested in understanding the theory behind those compiler errors, and general theory like algorithms, data structures—that sort of thing. And in university, I studied computer science. There, I was exposed to Linux for the first time, and with it, the power of the command line.
 
-Spoofax Language Workbench: http://www.metaborg.org/en/latest
+**Beyang:** Where along the line of your studies did you decide to pursue a PhD?
 
-Infer static analyzer, from Facebook: https://fbinfer.com
+**Rijnard:** I think my story is similar to a lot of other grad students. I think I did a couple of Google interviews and it didn't work out, so I was like, well, I'm going to grad school now. And I got accepted into a few PhD programs, and so it all worked out.
 
-Rice's theorem: https://en.wikipedia.org/wiki/Rice%27s_theorem
+**Beyang:** Yeah, I got rejected from Facebook myself, so I can definitely sympathize with getting rejected from those big tech companies. How did you pick your research area?
 
-SapFix, Sapienz, Mark Harman from Facebook (note: in the recording, we mixed up Sapienz with SapFix. SapFix is the end-user tool, Sapienz is an underlying technology which can be used to surface issues to SapFix): https://engineering.fb.com/developer-tools/finding-and-fixing-software-bugs-automatically-with-sapfix-and-sapienz/, https://engineering.fb.com/developer-tools/sapienz-intelligent-automated-software-testing-at-scale, https://research.fb.com/blog/2019/05/spotlight-session-with-mark-harman
-
-Pyre, from Facebook: https://pyre-check.org
-<!-- END SHOWNOTES -->
-
-<!-- START TRANSCRIPT -->
-*This transcript was generated using auto-transcription software.*
-
-**Beyang Liu:** Alright. I'm here with Rijnard van Tonder, an engineer at Sourcegraph who created the Comby pattern matching syntax, which is kind of an alternative to regular expressions, but much easier to use and designed and optimized for use in a code. Rijnard, welcome to the show.
-
-**Rijnard van Tonder:** Hi Beyang. Yeah. Thanks for, uh, thanks for having me on.
-
-**Beyang:**  So I guess before we dive into, you know, all the technical stuff, uh, if that'd be interesting to go over kind of like the backstory of, of how we met each other, uh, do you, do you remember how, how we first met.
-
-**Rijnard:** Yeah. So I think you might have to fill in some gaps here. I remember my side of things. Um, basically, you know, I was, I was in grad school, um, at CMU and working on in our research problems, taking classes, but at the same time, you know, curious to kind of explore other things, uh, as, as you do in grad school.
-So, um, at one point I, I, uh, Sourcegraph came up on my radar and I kind of, uh, Uh, I started playing with it. I thought, you know, code search, this is cool. Um, but also is kind of poking at security holes, um, trying to try to find some fun things. Uh, th there wasn't, there wasn't much, I think, uh, you know, the basic stuff, uh, was covered.
-Uh, but, but at some point I found like, uh, you know, you can have like an information leak, uh, for, for public and private repos. And that's when I reached out. And I think you were the person who replied to that email. I think.
-
-**Beyang:** Yeah, I think he said it to security ad Sourcegraph, uh, which is our kind of a catch all for any sort of security bug report. And yeah, I did reply to that.
-
-**Rijnard:** Yeah. Uh, and I think, uh, I think that that kicked off like, Oh, you know, do you want to talk about, you know, what Sourcegraph does? Do you have any feedback about the product and, and so on? And I, I remember hopping on a call with, uh, with a couple of folks back then. Um, And, uh, and I thought it was interesting, you know, you're talking about kind of a hard problem that, uh, uh, there's a bit of a gap, right?
-Um, the reason I came across, so Scott is kind of, well, you know, cut search that, that works, you know, a little bit more ubiquitous ubiquitously than, than anything else out there. So
-
-**Beyang:** Yeah. Yeah. I remember that. Cause uh, I remember looking you up when you reported the bug. Cause it was, uh, it was a very nice, uh, bug report. Uh, it was for, you know, like an issue that was indeed, uh, an issue and it was like, well kind of described and uh, Uh, it was a good report. And so I looked you up and saw that you did, uh, research into  software engineering, uh,  developer tools, static analysis, like that kind of general area.
-And, uh, afterwards we kind of struck up a, an E we were kinda like email, um, uh, buddies for a while. And then I think at some point you came out to California cause you were doing an internship at Facebook or something like that and you dropped by the office.
-
-**Rijnard:** Yeah, that's right. Uh, that was a, that was a couple of years after I think that was at least two years, two years after we had the like email exchange. Um, and, uh, yeah, I was just there, you know, and I was like, Oh, I remember that company. Uh, so our scraps, so I'm going to go pay a visit. Um, and, uh, yeah, at the time, uh, I think subscriber  was doing a lot of things in the LSP space, right?
-So mine were server protocol stuff and, uh, And, uh, I was, I was also like becoming more aware of, of those efforts. And so that kind of tied into some of the things that, that I ended up, uh, working on during a Facebook internship there, um, uh, working on, uh, like Python and kind of surfacing, you know, Python related  code intelligence, or  code editor, uh, uh, functionality.
-So, yeah.
-
-**Beyang:** Yeah, it was it's all, at least from my point of view, it was all very serendipitous. And, uh, I knew very early on that I would love to work with you someday. And just so happy that you ended up joining the team and, uh, bringing all your Thoughts and insights into, what's on the research frontier to what we're doing at Sourcegraph.
-Cause I think, uh, there's a lot of, uh, interesting, uh, kind of product features and capabilities, uh, that can be built on top of that, which, you know, I suspect we'll get into, uh, over the course of this conversation.
-
-**Rijnard:** Yeah. So thinking about it now, right? Um, What I remember as well. Like everybody I talked to , we're very keen to get feedback right on like, No, not just the product or, you know, the, the, the ideas that, that social graph was kind of working on. But, but also just like, you know, what are your thoughts of, you know, having, for example, code search or code intelligence, that's kind of ubiquitous and on these sorts of things.
-And so it was always, there was never a dead end to the conversation to anyone I've had at search graph. Uh, you know, when an initially talk it's always like, what do you think of this? What do you think? And that stood out to me. Um, I think the. Yeah. Basically identified like a deep desire to kind of, you know, go after those goals go after kind of the things that the company is setting out to do, which is, you know, uh, this idea of, you know, code search, everywhere, code intelligence, everywhere, every editor, every, you know, in our face.
-Um, and, uh, I think, you know, it was also a question of, you know, I guess, mutual interest and, and, and really commitment to this idea. So, um, that's, that's why I ended up here.
-
-**Beyang:** Awesome. Well, I guess, you know, before we get into , uh,   research that you've done, um, and Coney in particular, uh, I was like to kick off the show by asking people how they got into programming, uh, originally. Uh, so you know, what was kind of your backstory.
-
-**Rijnard:** I think I got into, uh, my, my first real kind of programming experience during high school. So, uh, my, my final two years in high school learned to cut in Java. Um, I still remember, I think. My first programming experience was looking at a textbook and there was this program in the textbook. I mean, it's like, copy this right character for character into your editor.
-And I like type it out. I'm like, I can do this. Right. And we're going to run this thing and I'm like copying. And then. Now after I think I've copied the whole, the whole thing in the book I click run or compiler was compiled. Right. And so, uh, this thing just tells me like, all these syntax errors happening everywhere.
-I'm like, what? Like how, how did I make this mistake? I looked very carefully at what the book was telling me to do. And it's like, you know, you missed this. I mean, Colani minister, a brace or something. And I was so surprised back then because I was like, wow, it's so easy to make a mistake during this.
-Right. Um, so, so that's one of the first recollect trends I had, uh, during programming and, uh, uh, from there it became, you know, became more interested kind of in, in, uh, understanding, you know, the whole, the whole kind of theory around it, computer theory, but I just no ideas like, you know, algorithms, data, structures, that sort of thing.
-Um, and then, you know, and university kind of focused in, uh, And learning more of computer science. I think I was only a university that I kind of got exposed to, you know, Lennox for the first time and, and like, uh, becoming like a command line, power user and all that sort of thing happened having over the course of my varsity years.
-Um, and I can go into more detail, but that's basically the, the early beginning, um, for me.
-
-**Beyang:** I think that, that makes sense. Like it's, I think a little bit similar to how I got into programming. Like I, my first programming language was also Java in that high school environment.
-
-**Rijnard:** yeah, my condolences.
-
-**Beyang:** I mean, there are, I think, worst, first experiences.
-
-**Rijnard:** true. Yeah. I'm just poking fun.
-
-**Beyang:** Yeah. Um, what, when, where along the, uh, line of your studies, did you decide to, that you wanted to get a PhD or was that something that you always felt that you wanted to do?
-
-**Rijnard:** Um, definitely not something that, that I had my heart set on doing. Um, I. I think my, my story aligns with a lot of kind of other, uh, graduate students or people who end up in academia, at least for computer sciences, you know, you try and shoot for a technical job, maybe Israel, too many technical interviews.
-And you're like, okay, well, I'm going to go to grad school now. Um, I definitely have a couple of data points. Um, you know, of people who shared that. That experience and I, and to some extent I am one of them, I, I think I did a couple of Google interviews and it didn't work out. So I was like, well, I'm not, well, let's try this other Avenue.
-Right? Like you send out applications for, for various things. So I'm like, I'm open to this, to this whole PhD idea. Um, and, uh, I mean, that ended up working out. So, uh, I went for it.
-
-**Beyang:** Yeah, I got rejected from Facebook myself, so I can definitely sympathize with getting rejected from those big tech companies. Um, cool. How did you pick a, your research area? Was that something that kind of developed over the course of your, like an undergraduate, uh, career or, um, was there some other influence or inspiration.
-
-**Rijnard:** I decided to focus, essentially. I went for, uh, the reasoning to my mind was. I'm only interested in going through a whole like research experience or doing academic research. If it's, if it's a topic that I really care about. Right. Um, um, because I mean, all the, all the kind of advice out there is, you know, and they do this.
-If you really are committed to the idea or you're really, uh, interested or passionate, if you will. Um, I don't think that's a prerequisite. Um, For, you know, going into research and my perspective on that has changed a bit afterwards, but, um, certainly going in, it was a question of like, I know that I want to focus on these areas.
-This is interesting to me. I'm not going to kind of put myself through a lot of pain to learn things that I'm not interested in. So, um, the, the, the kind of stuff that stood out to me back then was, uh, you know, software security research, but, but also just, you know, automated. Um, techniques, automated program analysis for, um, finding bugs.
-For example, that was, that was the biggest kind of, uh, uh, piece of attraction. Right. Was. Um, can we use tools to automatically find bugs? Um, uh, bugs and security bugs specifically are, are super interesting because, you know, they have such severe consequences and, uh, you know, it's amazing what, what, what, what ends up happening if you exploit, you know, one of these super severe bugs and an important system.
-Um, and so for me, it was a question of, well, you know, how far can we kind of push like automated techniques to find these really complex. Really interesting books. Um, and from there it kind of, uh, it changed a bit of direction, but, but that kind of interest has always been there.
+**Rijnard:** The reasoning in my mind was, I'm only interested in doing research if it's a topic that I really care about. The kind of stuff that stood out to me back then was software security research and automated program analysis for finding bugs. Bugs—and security bugs specifically—are super interesting because they have such severe consequences. The central question for me was: how far can we push automated techniques to find really complex, really interesting bugs. From there, it evolved and eventually changed a bit of direction, but that was the underlying interest.
 
 **Beyang:** One of the things that you covered in your PhD research was a new pattern matching syntax called [Comby](https://comby.dev/). What is Comby and what were your motivations creating it??
 
@@ -136,6 +56,11 @@ So I was left thinking about how I could parse these code fragments I wanted to 
 If we can approximate the tree structure of the program in some way that's easy to manipulate, then we would have something expressive enough to apply all the transformations I wanted to make but also general enough to work across many languages *and* easy-to-use for the end user who may not want to run a whole compilation pipeline to apply these transformations.
 
 There are existing tools that do something like this. [Tree-sitter](https://github.com/tree-sitter/tree-sitter) takes something similar to this approach.
+
+
+
+
+
 
 Um, so. So, if we can kind of approximate that in some way, then, then it's easy to manipulate. Now, there are tons of tools out there, right. That, that,  go along this thinking. And, you know, I can name a lot off the top of my head nowadays, you know, there's like tree sitter, there's all various kinds of, you know.
 Yeah. Um, And so the way I see it is, you know, there's a lot of, uh, there's a lot of tooling in this space that, that addresses. Parts of the problems and parts of it, the kind of design space of, of co transformation. And so it's a, it's a matter of picking, picking the right tool for the job. And if that tool that doesn't exist, you kind of have to engineer it.
@@ -327,4 +252,4 @@ And if you're a company that. That isn't aware of that yet. Right? It's a bit of
 **Beyang:** My guest today has been Rijnard van Tonder. Rijnard, thanks for being on the show.
 
 **Rijnard:** Thanks Beyang.
-<!-- END TRANSCRIPT -->
+<!-- END CONVERSATION -->
