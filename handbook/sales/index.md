@@ -47,6 +47,10 @@ Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations t
 
 If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
 
+### Churned IARR
+
+The amount of [IARR](#iarr) that is lost when a customer discontinues using Sourcegraph.
+
 ### Booking
 
 A booking is when a customer commits to pay us money. This includes when:
