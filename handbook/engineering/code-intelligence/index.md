@@ -21,12 +21,13 @@ Build a code intelligence platform that understands code in all languages and pr
 **Provide precise code intel for the primary programming languages that combined cover > 50% of usage across GitHub.com repositories or across customer projects (greater of the two).**
 - Metrics:
   - Language coverage (%)
+  - Precision level (%)
 - Required Tasks:
   1. Resolve outstanding issues for lsif-clang, ship to 3 customers.
   1. Resolve outstanding issues for lsif-java, ship to 3 customers. 
   1. Resolve outstanding issues for lsif-go, ship to 3 customers. 
   1. Provide best effort auto-indexing for supported languages [RFC-199](https://docs.google.com/document/d/1rCduWqaLAbMu2s43RwJTBbRlhL6qS3oqq4iawiGdoVE/edit), [RFC-201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit).
-- Success Outcome: We have accurate and comprehensive precise code intel for C++, Go, and Java. We will work to ship each indexer to at least 3 customers and gather feedback for future iteration.
+- Success Outcome: We have accurate and comprehensive precise code intel for C++, Go, and Java. We will work to ship each indexer to at least 3 customers and gather feedback for future iteration. The precision level for each indexer tool is > 80%.
 
 **Create a backend that can perform and scale across organizations of various sizes up to the upper boundaries of our system.**
 - Metrics:
