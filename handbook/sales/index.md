@@ -188,6 +188,10 @@ If a deal comes through a referral or introduction, tell [BizOps](../bizops/inde
 1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../bizops/index.md) about adding one
 1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](../../company/goals/2019_q4.md) to identify the top 3 reasons potential customers don't sign.
 
+### When a customer churns
+1. Notify the [marketing team](../marketing/index.md#members) in #marketing if they customer had logo and case study rights that will need to be removed. 
+1. Notify the [Business Operations team](../bizops/index.md) in #finance of the decision so it can be recorded. 
+
 ### Recording outbound activity
 
 TBD on connecting Zoominfo and HubSpot
