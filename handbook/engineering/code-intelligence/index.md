@@ -38,9 +38,9 @@ Build a code intelligence platform that understands code in all languages and pr
   - Max commit rate of repository (N3)
 - Required Tasks:
   1. Gather current values for metrics Request Latency and System Throughput, create benchmarks for existing system.
-  1. Source and track performance for: Number of repositories (N1), Size of project (N2), Commit rate of repos (N3).
-  1. Determine the upper boundary limits of the code intel backend across dimensions: N1, N2, N3.
-  1. Create a mechanism that can instantiate a configurable environment and instance for performance testing. 
+  1. Source and track current performance of tools across following dimensions: Number of repositories (N1), Size of project (N2), Commit rate of repos (N3).
+  1. Determine the upper boundary of the code intel backend across scale dimensions: max of N1, N2, N3.
+  1. Create a testbed environment that allows the team to instantiate & execute instances against various use cases in a controlled method for automation of stress and voume testing.
   1. Develop a prototype for incremental indexing, [RFC-170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit).
   1. Shard bundle manager, [RFC-200](https://docs.google.com/document/d/1IfkY9a6odfQmkjGtgJBFtPOUFuTwWryawFfVGRi8hO4/).
 - Success Outcome: We understand the upper boundaries N1-N3. Code intel backend can achieve latency and throughput targets when operating within upper bounds of inputs N1-N3.
