@@ -149,8 +149,6 @@ Here is a script you can use to build a shared understanding:
 1. Bob either says “Yes” (and then the conversation repeats with the roles swapped), or he clarifies his point of view (and then Alice continues the conversation by repeating steps 3 and 4).
 
 If, after establishing a shared understanding, both parties are still unable to move forward, then they should start a clean escalation.
-
-
 ## Clean escalation
 
 Clean escalation is a process that can be used when there is a disagreement on the team about how to best pursue the organizational mission.
