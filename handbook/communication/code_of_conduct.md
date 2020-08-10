@@ -44,14 +44,14 @@ We encourage you to:
 
 Keep the following things in mind:
 
--   When representing Sourcegraph, be mindful that your words are a reflection on Sourcegraph and the many individuals who make up the team.
-    -   Those in management roles should be especially mindful of their personal beliefs and biases when acting on behalf of the company.
--   Appreciate uniqueness and do not treat individual opinions as representative of the opinion of the larger group.
--   Engage others to ensure their voices are heard. Constructive dissent should be addressed directly.
--   Public polls and private ballots often do not yield the same result. Keep this in mind when gauging consensus.
--   Handle interpersonal conflict with professionalism and integrity. If there is strong disagreement, feedback should be given directly and clearly, without heat, or implicit denigration.
--   You will work with others who have personal opinions or beliefs that differ from your own. Strive to overcome these differences and find common cause.
--   Be aware of power differentials. If you have the ability to threaten someone’s job, your criticism may be taken more harshly than you intend.
+- When representing Sourcegraph, be mindful that your words are a reflection on Sourcegraph and the many individuals who make up the team.
+    - Those in management roles should be especially mindful of their personal beliefs and biases when acting on behalf of the company.
+- Appreciate uniqueness and do not treat individual opinions as representative of the opinion of the larger group.
+- Engage others to ensure their voices are heard. Constructive dissent should be addressed directly.
+-  Public polls and private ballots often do not yield the same result. Keep this in mind when gauging consensus.
+- Handle interpersonal conflict with professionalism and integrity. If there is strong disagreement, feedback should be given directly and clearly, without heat, or implicit denigration.
+- You will work with others who have personal opinions or beliefs that differ from your own. Strive to overcome these differences and find common cause.
+- Be aware of power differentials. If you have the ability to threaten someone’s job, your criticism may be taken more harshly than you intend.
 
 This code is not exhaustive or complete. It serves to capture our common understanding of a productive, collaborative environment. We expect the code to be followed in spirit as much as in the letter.
 
