@@ -101,7 +101,7 @@ While asynchronous communication is a core attribute of remote work, key moments
 - If new components are required, the following process should be followed
     - Design component in the Figma file which requires it
     - @ mention a frontend engineer requesting an addition or change to the component system
-        - Engineering approve, requests changes or request the designer uses an existing component
+        - Engineering approves, requests changes, or requests the designer uses an existing component
     - @ mention a designer and request a review
     - If the new component was approved by engineering and a designer, add it to the Figma component system and publish with a fitting commit message
 - Improvements to the Sourcegraph user experience should consider the following in every change:
