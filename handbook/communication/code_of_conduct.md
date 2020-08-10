@@ -14,8 +14,6 @@ Your ultimate success with Sourcegraph will be a function of your personal agenc
 Our mission is to enable everyone to unlock the value of code. For us, that means first helping those who code for a living understand the world of code in which they work. Ultimately, it means making the universe of code accessible to billions of people, most of whom currently cannot partake in the code economy. We believe the ability to make a living from code should be available to all.
 
 We live these values within our own organization: We welcome people from a diverse set of backgrounds, and we want every teammate to grow and flourish at Sourcegraph. We believe that a team with a diverse set of viewpoints and experiences united by our common cause will give us the best chance of realizing our mission.
-
-
 ## Our standards
 
 We encourage you to:
