@@ -164,8 +164,6 @@ The mechanics are simple.
     - If so, the manager(s) can engage in a conversation to help resolve the conflict.
     - If not, the manager(s) do not get involved in the conflict, and instead ask the involved parties to follow this documented clean escalation process.
 1. If the manager(s) are not able to resolve the conflict, they can cleanly escalate to the next level of management. This process continues until the issue is resolved.
-
-
 # References
 
 This Code of Conduct has taken inspiration from the:
