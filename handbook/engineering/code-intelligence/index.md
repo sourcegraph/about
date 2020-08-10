@@ -22,7 +22,7 @@ Build a code intelligence platform that understands code in all languages and pr
 - Metrics:
   - Language coverage (%)
   - Precision level (%)
-- Required Tasks:
+- Planned work:
   1. Resolve outstanding issues for lsif-clang, ship to 3 customers.
   1. Resolve outstanding issues for lsif-java, ship to 3 customers. 
   1. Resolve outstanding issues for lsif-go, ship to 3 customers. 
@@ -36,7 +36,7 @@ Build a code intelligence platform that understands code in all languages and pr
   - Max number of repositories (N1)
   - Max size of project (N2)
   - Max commit rate of repository (N3)
-- Required Tasks:
+- Planned work:
   1. Gather current values for metrics Request Latency and System Throughput, create benchmarks for existing system.
   1. Source and track current performance of tools across following dimensions: Number of repositories (N1), Size of project (N2), Commit rate of repos (N3).
   1. Determine the upper boundary of the code intel backend across scale dimensions: max of N1, N2, N3.
@@ -48,7 +48,7 @@ Build a code intelligence platform that understands code in all languages and pr
 **LSIF indexers can operate in monorepos architecture.**
 - Metrics:
   - Time to Intelligence (TTI)
-- Required Tasks
+- Planned work:
   1. Create definition for Time to Intelligence metric and determine how this metric is measured and tracked.
   1. Create and send a survey to customers to gather information on monorepos use cases and stats.
   1. Identify the common challenges our customers are experiencing when operating Sourcegraph in monorepos by working directly with 3 customers to index a monorepos, gather feedback and identity problems we need to address.
@@ -57,7 +57,7 @@ Build a code intelligence platform that understands code in all languages and pr
 - Successful Outcome: Users are able to process monorepos with the same TTI as any other type of repository. Our tools provide configuration options that accomodate for complex use cases (cross repository and sub-project code intel).
 
 **Provide clarity on capabilities of code intel tools at each release state**
-- Required Tasks:
+- Planned work:
   1. Define release states and their respective criteria. 
   1. Assess each code intel tool against criteria and determine release state.
   1. Communicate changes by updating documentation on lsif.dev and /sourcegraph/lsif-* repos.
