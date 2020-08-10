@@ -7,8 +7,7 @@ We pledge to make participation in our company, our projects, and our community 
 We care about the safety and comfort of everyone in our community, including colleagues, contributors, and users.
 ## Team member philosophy
 
-If you work at Sourcegraph or participate in our projects and community, you are important to us. If for any reason you don't feel that,
-[please let us know](#Enforcement).
+If you work at Sourcegraph or participate in our projects and community, you are important to us. If for any reason you don't feel that, [please let us know](#enforcement).
 
 Your ultimate success with Sourcegraph will be a function of your personal agency and the environment we create as a team. We want that environment to set you up for success and enable you to thrive while realizing your professional goals and dreams.
 
