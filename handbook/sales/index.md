@@ -35,7 +35,12 @@ Annual Recurring Revenue (ARR) is the dollar value of contracted recurring reven
 
 ### IARR
 
-Incremental [ARR](#arr) (IARR) is the change in ARR from one period to another.
+Incremental [ARR](#arr) (IARR) is the change in ARR from one period to another. Types of IARR include:
+
+- [New](#new-iarr)
+- [Expansion](#expansion-iarr)
+- [Contraction](#contraction-iarr)
+- [Cancelled](#cancelled-iarr)
 
 ### New IARR
 
@@ -47,9 +52,13 @@ Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations t
 
 If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
 
-### Churned IARR
+### Contraction IARR
 
-The amount of [IARR](#iarr) that is lost when a customer discontinues using Sourcegraph.
+Contraction [IARR](#iarr) is a loss in IARR when a customer's annual contract value goes down from one period to the next. 
+
+### Cancelled IARR
+
+Cancelled [IARR](#iarr) is a loss in IARR when a customer decides to not renew their account. 
 
 ### Booking
 
@@ -188,8 +197,8 @@ If a deal comes through a referral or introduction, tell [BizOps](../bizops/inde
 1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../bizops/index.md) about adding one
 1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](../../company/goals/2019_q4.md) to identify the top 3 reasons potential customers don't sign.
 
-### When a customer churns
-1. Notify the [marketing team](../marketing/index.md#members) in #marketing if they customer had logo and case study rights that will need to be removed. 
+### When a customer decides not to renew
+1. Notify the [marketing team](../marketing/index.md#members) in #marketing if the customer had logo and case study rights that will need to be removed (this may not be the case). 
 1. Notify the [Business Operations team](../bizops/index.md) in #finance of the decision so it can be recorded. 
 
 ### Recording outbound activity
