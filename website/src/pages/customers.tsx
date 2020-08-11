@@ -93,6 +93,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Universal code search using regex with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -137,6 +138,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Exploring code with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -185,6 +187,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Searching for security vulnerabilities company-wide with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -230,6 +233,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Sourcegraph and GitLab: Code reviews and code discovery in action"
                             ></iframe>
                         </div>
                         <p>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</p>
@@ -292,6 +296,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Campaigns for large-scale code changes in Sourcegraph 3.16"
                             ></iframe>
                         </div>
                     </div>

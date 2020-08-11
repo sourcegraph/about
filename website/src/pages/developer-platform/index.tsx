@@ -230,6 +230,7 @@ export default ((props: any) => (
                         allow="encrypted-media"
                         allowFullScreen={true}
                         className="m-2"
+                        title="Dev Tools @Scale - Searching through code at scale, Jeroen Vaelen"
                     />
                     <iframe
                         width="560"
@@ -239,6 +240,7 @@ export default ((props: any) => (
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen={true}
                         className="m-2"
+                        title="Stanford Seminar - Google's Steve Yegge on GROK"
                     />
                     <iframe
                         width="560"
@@ -248,6 +250,7 @@ export default ((props: any) => (
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen={true}
                         className="m-2"
+                        title="Project Grok - Steve Yegge - Emacs Conference 2013"
                     />
                 </div>
             </div>
