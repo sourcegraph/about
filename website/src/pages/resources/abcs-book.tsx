@@ -35,7 +35,7 @@ export default ((props: any) => (
             </div>
             <div className="row justify-content-md-center mt-3">
                 <div className="col-md-8">
-                    <YouTube id="6bCO63O4swI" />
+                    <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
                     <p className="mt-5">
                         At Sourcegraph, many of us have young children who we’re trying to provide fun new learning
                         experiences for at home.
