@@ -148,6 +148,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="AND/OR operators for universal code search"
                             ></iframe>
                         </div>
                     </div>
@@ -163,6 +164,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Exploring code with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -207,6 +209,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Campaigns for large-scale code changes in Sourcegraph 3.16"
                             ></iframe>
                         </div>
                     </div>
@@ -222,6 +225,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Product preview: code insights"
                             ></iframe>
                         </div>
                     </div>
