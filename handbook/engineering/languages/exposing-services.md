@@ -19,6 +19,10 @@ Due to the way that kube-proxy works when you port-forward a pod or a service ku
 
 You can also use `kubectl port-forward --address 0.0.0.0` if you need to expose a port-forwarded service outside of your local machine (it defaults to `127.0.0.1`). [link](https://github.com/kubernetes/kubernetes/issues/40053) :exploding_head:
 
+###  CI
+
+We also have CI test for this [here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@main/-/blob/dev/check/no-localhost-guard.sh)
+
 ### References
 
 - https://stackoverflow.com/questions/20778771/what-is-the-difference-between-0-0-0-0-127-0-0-1-and-localhost
