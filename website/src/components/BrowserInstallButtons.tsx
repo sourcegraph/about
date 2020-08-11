@@ -16,13 +16,13 @@ export class BrowserInstallButtons extends React.PureComponent<{}, {}> {
                         className="mr-2"
                     >
                         <button type="button" className="btn btn-primary align-items-center">
-                            <img height={25} className="pr-2" src="/integrations/chrome.svg" />
+                            <img height={25} className="pr-2" src="/integrations/chrome.svg" alt="Chrome" />
                             Chrome
                         </button>
                     </a>
                     <a onClick={this.trackInstallBrowserExtension} target="_blank" href={FIREFOX_STORE_URL}>
                         <button type="button" className="btn btn-primary align-items-center">
-                            <img height={25} className="pr-2" src="/integrations/firefox.svg" />
+                            <img height={25} className="pr-2" src="/integrations/firefox.svg" alt="Firefox" />
                             Firefox
                         </button>
                     </a>

@@ -145,6 +145,7 @@ const IntegrationEntriesRow: React.FunctionComponent<{
                                     key={i}
                                     className="integrates-with-section__logo mx-2"
                                     src={iconUrl}
+                                    alt={description}
                                     title={description}
                                     style={width !== undefined ? { width: `${width}px` } : undefined}
                                 />
@@ -154,6 +155,7 @@ const IntegrationEntriesRow: React.FunctionComponent<{
                                 key={i}
                                 className="integrates-with-section__logo mx-2"
                                 src={iconUrl}
+                                alt={description}
                                 title={description}
                                 style={width !== undefined ? { width: `${width}px` } : undefined}
                             />

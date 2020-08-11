@@ -18,7 +18,11 @@ export const FeaturedBlogPosts: React.FunctionComponent<Props> = ({ posts }) => 
                     <div className="card">
                         <div className="text-center">
                             <a href={url}>
-                                <img className="blog-posts-home__thumbnail py-3 px-3" src={thumbnail} />
+                                <img
+                                    className="blog-posts-home__thumbnail py-3 px-3"
+                                    src={thumbnail}
+                                    aria-hidden="true"
+                                />
                             </a>
                         </div>
                         <div className="card-body">
