@@ -32,7 +32,9 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
+                        <h2 className="font-weight-normal customers-page__see-how">
+                            See how customers use Sourcegraph to
+                        </h2>
                         <div className="list-group">
                             <Link to="#onboard" className="list-group-item list-group-item-action">
                                 Onboard everyone faster <ArrowRightIcon className="icon-inline ml-1" />
