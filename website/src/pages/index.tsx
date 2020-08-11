@@ -46,8 +46,16 @@ const Index: React.FunctionComponent = (props: any) => (
             </div>
             <ContentSection className="py-6 mt-3 d-none d-sm-block">
                 <div className="home__nested-screenshots">
-                    <img src="/screenshots/code-page-0.png" className="home__screenshot home__screenshot--main" />
-                    <img src="/screenshots/search-page-0.png" className="home__screenshot home__screenshot--nested" />
+                    <img
+                        src="/screenshots/code-page-0.png"
+                        className="home__screenshot home__screenshot--main"
+                        alt="Searching for code in the Sourcegraph search bar"
+                    />
+                    <img
+                        src="/screenshots/search-page-0.png"
+                        className="home__screenshot home__screenshot--nested"
+                        alt="Code results from a code search, including code coverage states"
+                    />
                 </div>
             </ContentSection>
             <CustomerLogosSection className="pt-5" />
@@ -75,7 +83,11 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                     <div className="col-lg-7 mt-5 pl-lg-4">
-                        <img src="/code-search-illustrated.svg" className="home__diagram w-150" />
+                        <img
+                            src="/code-search-illustrated.svg"
+                            className="home__diagram w-150"
+                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure"
+                        />
                     </div>
                 </div>
             </ContentSection>
