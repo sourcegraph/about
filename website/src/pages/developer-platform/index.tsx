@@ -187,7 +187,11 @@ export default ((props: any) => (
                     </div>
                     <div className="col-md-12 col-lg-4 mb-3">
                         <h4>
-                            <img style={{ width: '17px', height: '17px' }} src="/sourcegraph/sourcegraph-mark.svg" />{' '}
+                            <img
+                                style={{ width: '17px', height: '17px' }}
+                                src="/sourcegraph/sourcegraph-mark.svg"
+                                aria-hidden="true"
+                            />{' '}
                             Sourcegraph
                             <br />
                             Used by Uber, Lyft, Yelp, and more

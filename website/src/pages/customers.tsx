@@ -106,7 +106,7 @@ export default ((props: any) => (
                             </p>
                             <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
                             <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/convoy-logo.svg" width="110px" />
+                                <img src="/external-logos/convoy-logo.svg" width="110px" alt="Convoy" />
                             </div>
                             <Link to="/case-studies/convoy-improved-on-boarding">
                                 Developers at Convoy onboard faster with Sourcegraph{' '}
@@ -152,7 +152,7 @@ export default ((props: any) => (
                                     Ursula Robertson, Engineering Manager, SoFi
                                 </footer>
                                 <div className="d-flex justify-content-center my-3">
-                                    <img src="/external-logos/sofi-logo.svg" width="90px" />
+                                    <img src="/external-logos/sofi-logo.svg" width="90px" alt="SoFi" />
                                 </div>
                                 <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
                                     SoFi adopts Sourcegraph to manage hundreds of microservices{' '}
@@ -199,7 +199,7 @@ export default ((props: any) => (
                                     Simon Law, Staff Software Engineer, Quantcast
                                 </footer>
                                 <div className="d-flex justify-content-center my-2">
-                                    <img src="/external-logos/quantcast-logo.svg" width="120px" />
+                                    <img src="/external-logos/quantcast-logo.svg" width="120px" alt="Quantcast" />
                                 </div>
                                 <Link to="/case-studies/quantcast-large-scale-refactoring/">
                                     Quantcast adopts Sourcegraph for large-scale refactoring{' '}
@@ -247,7 +247,12 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Trent Grover, Director of Architecture, Workiva
                                 </footer>
-                                <img src="/external-logos/workiva-vector-logo.svg" width="120px" className="my-2" />
+                                <img
+                                    src="/external-logos/workiva-vector-logo.svg"
+                                    width="120px"
+                                    className="my-2"
+                                    alt="Workiva"
+                                />
                             </blockquote>
                         </div>
                     </div>
@@ -300,7 +305,7 @@ export default ((props: any) => (
                                 </p>
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
                                 <div className="d-flex justify-content-center my-3">
-                                    <img src="/external-logos/lyft-logo.svg" width="60px" />
+                                    <img src="/external-logos/lyft-logo.svg" width="60px" alt="Lyft" />
                                 </div>
                                 <Link to="/case-studies/lyft-monolith-to-microservices">
                                     Lyft uses Sourcegraph to ensure production stability{' '}

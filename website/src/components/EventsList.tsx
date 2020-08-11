@@ -10,7 +10,11 @@ class Conferences extends React.Component {
                         <div className="col-md-6 col-lg-4 py-2">
                             <div className="card event__item">
                                 <a href={eventDetail.eventLink} rel="nofollow">
-                                    <img className="card-img-top img-fluid" src={eventDetail.eventImage} />
+                                    <img
+                                        className="card-img-top img-fluid"
+                                        src={eventDetail.eventImage}
+                                        alt={eventDetail.videoTitle}
+                                    />
                                 </a>
                                 <div className="card-body">
                                     <h6>LIVESTREAM</h6>
@@ -30,7 +34,11 @@ class Conferences extends React.Component {
                         <div className="col-md-6 col-lg-4 py-2">
                             <div className="card event__item">
                                 <a href={eventDetail.videoLink} rel="nofollow">
-                                    <img className="card-img-top img-fluid" src={eventDetail.videoImage} />
+                                    <img
+                                        className="card-img-top img-fluid"
+                                        src={eventDetail.videoImage}
+                                        alt={eventDetail.videoTitle}
+                                    />
                                 </a>
                                 <div className="card-body">
                                     <h6>VIDEO</h6>
