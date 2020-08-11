@@ -85,12 +85,22 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             </Link>
                             <ul className="nav footer__social mt-1">
                                 <li className="nav-item">
-                                    <a href="https://github.com/sourcegraph" target="_blank" rel="nofollow noopener">
+                                    <a
+                                        href="https://github.com/sourcegraph"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="GitHub"
+                                    >
                                         <GithubIcon />
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://twitter.com/srcgraph" target="_blank" rel="nofollow noopener">
+                                    <a
+                                        href="https://twitter.com/srcgraph"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="Twitter"
+                                    >
                                         <TwitterIcon />
                                     </a>
                                 </li>
@@ -99,6 +109,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         href="https://www.linkedin.com/company/4803356/"
                                         target="_blank"
                                         rel="nofollow noopener"
+                                        aria-label="LinkedIn"
                                     >
                                         <LinkedinIcon />
                                     </a>
@@ -108,6 +119,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         href="https://www.youtube.com/c/Sourcegraph/featured"
                                         target="_blank"
                                         rel="nofollow noopener"
+                                        aria-label="YouTube"
                                     >
                                         <YouTubeIcon />
                                     </a>
