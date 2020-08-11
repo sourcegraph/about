@@ -131,13 +131,22 @@
         &__logo {
             background: url(/sourcegraph-reverse-logo.svg) no-repeat;
         }
+        &__nav-header {
+            opacity: 0.6;
+        }
         &__nav-header,
         &__nav-sections .nav-item > a {
             color: $light;
         }
-        &__nav-header,
-        &__nav-sections .nav-item > a:hover {
-            color: $light-6;
+        &__social,
+        &__postscript {
+            .nav-item > a {
+                color: rgba($light, 0.6);
+                &:hover { color: rgba($light, 0.8); }
+            }
+            .text-muted {
+                color: rgba($light, 0.6) !important;
+            }
         }
     }
 }
