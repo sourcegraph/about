@@ -6,31 +6,24 @@ The product team is newly growing, and consists of all product managers and prod
 
 ### Members
 
-- [Product managers](roles.md#product-manager)
+- [Product managers](roles/product_manager.md)
   - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
   - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
   - [M.A.C](../../../company/team/index.md#todo) starting 2020-08-24
-- [Product designers](roles.md#product-designer)
+- [Product designers](roles/product_designer.md)
   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
   - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
   - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
 - [Technical Writers](roles/technical_writer.md)
   - [Kimberly Hopson](../../../company/team/index.md#kimberly-hopson-she-her)
 
-### Roles
-
-- [Product Manager](roles/product-manager.md)
-  - [Open job description](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
-- [Product Designer](roles/product_designer.md)
-- [Technical Writer](roles/technical_writer.md)
-
-### Hiring status
+### [Roles](roles/index.md)
 
 _Updated 2020-08-12_
 
-We are hiring for these roles:
-
-- +3 [Product Managers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
+- [Product Manager](roles/product_manager.md) - hiring +3
+- [Product Designer](roles/product_designer.md) - closed to applications
+- [Technical Writer](roles/technical_writer.md) - hiring +1
 
 See [2021 Organizational plan](../engineering/2021_org.md) for more details on areas of ownership.
 
