@@ -21,12 +21,11 @@ Build a code intelligence platform that understands code in all languages and pr
 **Provide precise code intel for the primary programming languages that combined cover > 50% of usage across GitHub.com repositories or across customer projects (greater of the two).**
 - Metrics:
   - Language coverage (%)
-  - Precision level (%)
 - Planned work:
   1. Resolve outstanding issues for lsif-clang, ship to 3 customers.
   1. Resolve outstanding issues for lsif-java, ship to 3 customers. 
   1. Resolve outstanding issues for lsif-go, ship to 3 customers. 
-  1. Provide best effort auto-indexing for supported languages [RFC-199](https://docs.google.com/document/d/1rCduWqaLAbMu2s43RwJTBbRlhL6qS3oqq4iawiGdoVE/edit), [RFC-201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit).
+  1. Provide best effort auto-indexing for supported languages, [RFC-199](https://docs.google.com/document/d/1rCduWqaLAbMu2s43RwJTBbRlhL6qS3oqq4iawiGdoVE/edit), [RFC-201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit).
 - Success Outcome: We have accurate and comprehensive precise code intel for C++, Go, and Java. We will work to ship each indexer to at least 3 customers and gather feedback for future iteration. The precision level for each indexer tool is > 80%.
 
 **Create a backend that can perform and scale across organizations of various sizes up to the upper boundaries of our system.**
@@ -40,7 +39,7 @@ Build a code intelligence platform that understands code in all languages and pr
   1. Gather current values for metrics Request Latency and System Throughput, create benchmarks for existing system.
   1. Source and track current performance of tools across following dimensions: Number of repositories (N1), Size of project (N2), Commit rate of repos (N3).
   1. Determine the upper boundary of the code intel backend across scale dimensions: max of N1, N2, N3.
-  1. Create a testbed environment that allows the team to instantiate & execute instances against various use cases in a controlled method for automation of stress and voume testing.
+  1. Create a testbed environment that allows the team to instantiate & execute instances against various use cases in a controlled method for automation of stress and volume testing, [RFC 218](https://docs.google.com/document/d/1UitCAKefZLCewzDqxN787EsKDdepZ9Dqz1zXpdPFjgU/view).
   1. Develop a prototype for incremental indexing, [RFC-170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit).
   1. Shard bundle manager, [RFC-200](https://docs.google.com/document/d/1IfkY9a6odfQmkjGtgJBFtPOUFuTwWryawFfVGRi8hO4/).
 - Success Outcome: We understand the upper boundaries N1-N3. Code intel backend can achieve latency and throughput targets when operating within upper bounds of inputs N1-N3.
