@@ -120,5 +120,5 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 
 ## Handling conflict
 
-- [Conflict resolution](./code_of_conduct#conflict-resolution)
-- [Clean escalation](./code_of_conduct#clean-escalation)
+- [Conflict resolution](./code_of_conduct.md#conflict-resolution)
+- [Clean escalation](./code_of_conduct.md#clean-escalation)
