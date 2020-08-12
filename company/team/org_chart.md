@@ -10,19 +10,19 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 
 ## Engineering
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [Engineering: Distribution team](../../handbook/engineering/distribution/index.md#members)
-### [Engineering: Campaigns team](../../handbook/engineering/campaigns/index.md#members)
-### [Engineering: Cloud team](../../handbook/engineering/cloud/index.md#members)
-### [Engineering: Code intelligence team](../../handbook/engineering/code-intelligence/index.md#members)
-### [Engineering: Search team](../../handbook/engineering/search/index.md#members)
-### [Engineering: Security team](../../handbook/engineering/security/index.md#members)
-### [Engineering: Web team](../../handbook/engineering/web/index.md#members)
+### [Campaigns](../../handbook/engineering/campaigns/index.md#members)
+### [Cloud](../../handbook/engineering/cloud/index.md#members)
+### [Code intelligence](../../handbook/engineering/code-intelligence/index.md#members)
+### [Distribution](../../handbook/engineering/distribution/index.md#members)
+### [Search](../../handbook/engineering/search/index.md#members)
+### [Security](../../handbook/engineering/security/index.md#members)
+### [Web](../../handbook/engineering/web/index.md#members)
 
 ## [Customer Engineering](../../handbook/ce/index.md#members)
 
-## [Product team](../../handbook/product/index.md#members)
+## [Product](../../handbook/product/index.md#members)
 
-## [Marketing team](../../handbook/marketing/index.md#members)
+## [Marketing](../../handbook/marketing/index.md#members)
 
 ## Other teams: TODO
 

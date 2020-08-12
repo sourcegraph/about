@@ -8,6 +8,8 @@ Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) 
 
 ## Developing locally
 
+[Click here to develop the handbook locally](#Handbook)
+
 In a terminal, change into the `website` directory, and run:
 
 ```shell

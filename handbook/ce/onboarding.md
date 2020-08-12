@@ -16,18 +16,17 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
     - Updates to be provided in order of priority 
 - Look at AE/CE calendars and join as many customer calls as possible 
   - Collect questions along the way (unfamiliar terms, use cases, etc.)
-- Watch [Dan's recorded demo](https://drive.google.com/file/d/1idbCnce5MIvtAV0GOOwgB68zQJB2WmZ9/view?usp=sharing) 
+- Watch [Dan's recorded demo](https://drive.google.com/file/d/1VUZ0rnZQpNgjtGDI0tMC-h-OtL0Czz8H/view?usp=sharing) 
 - Schedule a demo from the most recent CE hire before you
 - [Install Sourcegraph](https://docs.sourcegraph.com/admin/install/) using each of the three deployment options
   - Ask for any help needed along the way in the #dev-chat channel
   - Update our docs where necessary
-- Participate in (or be scheduled for) the following training sessions:
+- Participate in (or be scheduled for) the following training sessions. Please ask your manager or People Ops to help you find the right training sessions to join or the right training videos to watch.
   - Goals (@dan, 30 minutes)
-  - CE systems and processes (@dan, 30 minutes)
+  - CE systems and processes (@dan, 1 hour)
   - Product introduction (@christina, 1 hour)
     - Optionally request access to [Figma](https://www.figma.com/) in the #product channel on Slack
   - Sourcegraph demo (@dan, 30 minutes)
-  - Product architecture (@nick, 1 hour)
   - Product deployment (@stephen, 30 minutes)
   - Sourcegraph data (@ericbm, 30 minutes)
 - Set up introductory calls with Distribution, Sales, Product, and Marketing team members
