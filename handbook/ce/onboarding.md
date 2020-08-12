@@ -32,6 +32,9 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
 - Set up introductory calls with Distribution, Sales, Product, and Marketing team members
 - Read our [CE handbook pages](index.md)
   - [Support](support.md)
+- Setup a Sourcegraph.com site-admin account and familiarize yourself with the site-admin page (used to manage customer accounts, license keys etc)
+- Obtain access to the Sourcegraph Dropbox Team folder
+  - Get access to the "customer contracts" folder as well
 
 ### General onboarding during weeks 1 and 2
 
