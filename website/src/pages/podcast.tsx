@@ -320,12 +320,14 @@ export default class JobsPage extends React.Component<any, any> {
                                     />
                                 </div>
                             ))}
-			    <div className="acknowledgements">
-			         <h3>Acknowledgements</h3>
-				 <p>
-				   The voices in the intro segment of the show are (in order of appearance): Edsger Dijkstra, Dennis Ritchie, Grace Hopper, Steve Jobs, Jamie Zawinski, and Steve Ballmer.
-				 </p>
-			    </div>
+                            <div className="podcast__acknowledgements">
+                                <h2>Acknowledgements</h2>
+                                <p>
+                                    The voices in the intro segment of the show are (in order of appearance): Edsger
+                                    Dijkstra, Dennis Ritchie, Grace Hopper, Steve Jobs, Jamie Zawinski, and Steve
+                                    Ballmer.
+                                </p>
+                            </div>
                         </div>
                     </ContentSection>
                 </ContentPage>

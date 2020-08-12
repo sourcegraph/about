@@ -241,13 +241,13 @@ export default class About extends React.Component<any, any> {
                                 </h1>
                                 <div className="row align-items-center">
                                     <div className="col-md-3">
-                                        <img src={craft} />
+                                        <img src={craft} alt="Craft" />
                                     </div>
                                     <div className="col-md-3">
-                                        <img src={redpoint} />
+                                        <img src={redpoint} alt="Redpoint" />
                                     </div>
                                     <div className="col-md-3">
-                                        <img src={goldcrest} />
+                                        <img src={goldcrest} alt="Goldcrest Capital" />
                                     </div>
                                 </div>
                             </div>

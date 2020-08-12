@@ -18,7 +18,7 @@ export default ((props: any) => (
             <div className="row justify-content-md-center">
                 <div className="col-small-12">
                     <p className="text-center">
-                        <img src="/other/abcs-book/our-abcs-hero.png" className="w-100 px-2 mb-3" />
+                        <img src="/other/abcs-book/our-abcs-hero.png" className="w-100 px-2 mb-3" role="presentation" />
                     </p>
                     <h1 className="text-center">Our ABCs: Always Be Coding children's book</h1>
                     <p className="text-center my-5">
@@ -35,7 +35,7 @@ export default ((props: any) => (
             </div>
             <div className="row justify-content-md-center mt-3">
                 <div className="col-md-8">
-                    <YouTube id="6bCO63O4swI" />
+                    <YouTube id="6bCO63O4swI" title="Our ABCs: Always Be Coding children's book by Sourcegraph" />
                     <p className="mt-5">
                         At Sourcegraph, many of us have young children who we’re trying to provide fun new learning
                         experiences for at home.
@@ -60,7 +60,12 @@ export default ((props: any) => (
                             className="d-block"
                             id="abc-dlbook"
                         >
-                            <img src="/other/abcs-book/our-abcs.png" className="img-drop-shadow mb-0" width="350px" />
+                            <img
+                                src="/other/abcs-book/our-abcs.png"
+                                className="img-drop-shadow mb-0"
+                                width="350px"
+                                alt="Book cover: Our ABCs"
+                            />
                         </a>
                     </p>
                     <p className="text-center my-5">

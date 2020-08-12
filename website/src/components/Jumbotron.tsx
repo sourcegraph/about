@@ -30,6 +30,7 @@ export const Jumbotron: React.FunctionComponent<{
                     // tslint:disable-next-line: jsx-ban-props
                     style={{ width: '2rem', height: '2rem' }}
                     src="/sourcegraph/sourcegraph-mark.svg"
+                    aria-hidden="true"
                 />
             )}
             <h1 className={titleClassName}>{title}</h1>

@@ -53,7 +53,11 @@ export default class JobsPage extends React.Component<any, any> {
                             <h1>Benefits</h1>
                             <div className="jobs__benefits-list">
                                 <div className="jobs__benefits-list-item">
-                                    <img className="jobs__benefits-list-item-icon" src="/jobs/medical.svg" />
+                                    <img
+                                        className="jobs__benefits-list-item-icon"
+                                        src="/jobs/medical.svg"
+                                        role="presentation"
+                                    />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Medical</h3>
                                         <p className="jobs__benefits-list-item-description">
@@ -63,7 +67,11 @@ export default class JobsPage extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="jobs__benefits-list-item">
-                                    <img className="jobs__benefits-list-item-icon" src="/jobs/wellness.svg" />
+                                    <img
+                                        className="jobs__benefits-list-item-icon"
+                                        src="/jobs/wellness.svg"
+                                        role="presentation"
+                                    />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Wellness</h3>
                                         <p className="jobs__benefits-list-item-description">
@@ -74,7 +82,11 @@ export default class JobsPage extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="jobs__benefits-list-item">
-                                    <img className="jobs__benefits-list-item-icon" src="/jobs/vacation.svg" />
+                                    <img
+                                        className="jobs__benefits-list-item-icon"
+                                        src="/jobs/vacation.svg"
+                                        role="presentation"
+                                    />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Vacation</h3>
                                         <p className="jobs__benefits-list-item-description">
@@ -84,7 +96,11 @@ export default class JobsPage extends React.Component<any, any> {
                                     </div>
                                 </div>
                                 <div className="jobs__benefits-list-item">
-                                    <img className="jobs__benefits-list-item-icon" src="/jobs/family.svg" />
+                                    <img
+                                        className="jobs__benefits-list-item-icon"
+                                        src="/jobs/family.svg"
+                                        role="presentation"
+                                    />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Family friendly</h3>
                                         <p className="jobs__benefits-list-item-description">

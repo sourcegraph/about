@@ -29,6 +29,7 @@ export const GitLabIntegrationSection: React.FunctionComponent<{ className?: str
                             webkiallowfullscreen="true"
                             mozallowfullscreen="true"
                             allowFullScreen={true}
+                            title="Sourcegraph's new GitLab native integration"
                         />
                     </div>
                 </div>

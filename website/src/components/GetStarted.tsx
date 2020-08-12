@@ -39,6 +39,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph &#13;
                                     sourcegraph/server:3.18.0
                                     "
+                                    aria-label="A Docker run command to start a local Sourcegraph instance"
                                 />
                                 <span className="get-started__copytext">
                                     <ClipboardArrowLeftOutlineIcon
