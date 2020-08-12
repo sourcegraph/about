@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "DevOps Digest",
+      "newsTitle": "Sourcegraph Raises Additional $5 Million in Series B Funding",
+      "newsDate": "August 3, 2020",
+      "newsLink": "https://www.devopsdigest.com/sourcegraph-raises-additional-5-million-in-series-b-funding",
+      "newsImage": "/external-logos/devops-digest-logo.png"
+    },
+    {
       "newsSource": "Wall Street Journal",
       "newsTitle": "Tech Startup Funding Declines as Pandemic Drags On",
       "newsDate": "July 23, 2020",
