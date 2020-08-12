@@ -14,22 +14,23 @@ The product team is newly growing, and consists of all product managers and prod
   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
   - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
   - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
-- [Developer communications](roles.md#developer-communications)
-  - [Kimberly Hopson](../../company/team/index.md#kimberly-hopson-she-her)
+- [Technical Writers](roles/technical_writer.md)
+  - [Kimberly Hopson](../../../company/team/index.md#kimberly-hopson-she-her)
 
 ### Roles
 
-- [Product Manager](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
+- [Product Manager](roles/product-manager.md)
+  - [Open job description](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
 - [Product Designer](roles/product_designer.md)
 - [Technical Writer](roles/technical_writer.md)
 
 ### Hiring status
 
-_Updated 2020-07-16_
+_Updated 2020-08-12_
 
 We are hiring for these roles:
 
-- +4 [Product Manager](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
+- +3 [Product Managers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
 
 See [2021 Organizational plan](../engineering/2021_org.md) for more details on areas of ownership.
 
