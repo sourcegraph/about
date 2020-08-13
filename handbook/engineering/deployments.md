@@ -299,9 +299,9 @@ Example: you want to build a new Docker image for `frontend` and `gitserver`
 based on the branch `my_fix`.
 
 ```
-git push origin my_fix:docker-images-patch-notest/frontend
-git push origin my_fix:docker-images-patch-notest/gitserver
-git push origin my_fix:docker-images-patch-notest/$(Docker_image_to_build)
+git push -f origin my_fix:docker-images-patch-notest/frontend
+git push - origin my_fix:docker-images-patch-notest/gitserver
+git push -f origin my_fix:docker-images-patch-notest/$(Docker_image_to_build)
 ```
 
 This will trigger two builds on Buildkite for these branches:
