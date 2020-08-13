@@ -10,7 +10,7 @@ The product team is newly growing, and consists of all product managers and prod
   - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
   - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
   - [M.A.C](../../../company/team/index.md#todo) starting 2020-08-24
-- [Product design](product_design/index.md)
+- [Product design](design/index.md)
   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
   - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
   - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
