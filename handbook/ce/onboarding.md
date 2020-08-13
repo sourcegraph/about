@@ -34,7 +34,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - [Support](support.md)
 - Set up a Sourcegraph.com account and request access to become a site-admin in the #people-ops channel. Once you have access, familiarize yourself with the site-admin page (used to manage customer accounts, license keys, etc.).
 - Obtain access to the Sourcegraph Dropbox team folder. You can request this in the #people-ops Slack channel.
-  - Get access to the "customer contracts" folder as well
+  - Get access to the "Customer contracts" folder as well.
 
 ### General onboarding during weeks 1 and 2
 
