@@ -283,15 +283,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
   gone down the tech rabbit hole and learned programming languages 🤓.
 
-
 ## Chayim Kirshen (he/him)
 
 - Kh-ay-eem (or Hayeem)
 - Security Engineer
 - Toronto, Canada, 🇨🇦
 - [chayim@sourcegraph.com](mailto:chayim@sourcegraph.com)
-- Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a piece of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics.  Plus za'atar - he covers everything he can in za'atar.
-
+- Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a piece of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics. Plus za'atar - he covers everything he can in za'atar.
 
 ## Alicja Suska (she/her)
 
@@ -313,7 +311,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer Intern
 - Pittsburgh, PA, USA 🇺🇸
 - [mimi@sourcegraph.com](mailto:mimi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mimi-st-johns-1208521b1/), [GitHub](https://github.com/RedHeadedStranger99)
-- Mimi recently finished her first year at Stanford; she is studying computer science. In her free time, she enjoys playing the guitar, writing, chess, and Magic: The Gathering.  
+- Mimi recently finished her first year at Stanford; she is studying computer science. In her free time, she enjoys playing the guitar, writing, chess, and Magic: The Gathering.
 
 ## Kimberly Hopson (she/her)
 
@@ -334,7 +332,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Security Software Engineer
 - Seattle, WA, USA 🇺🇸
 - [elizabeth@sourcegraph.com](mailto:elizabeth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/elizabeth-stirling-753b2779/)
-- Elizabeth is a Seattle area native who loves exploring the city. She has been interested in security ever since reading [Neal Stephenson's novel Reamde](https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497) when she was a kid. Her spare time is spent hiking around the forests of the Pacific Northwest and working on whatever side project catches her fancy. She has spent far too much money on keyboards and pretty rocks - sometimes even forging her own Bismuth crystals. Elizabeth graduated with a B.S. in Computer Science from the University of Washington in Seattle. 
+- Elizabeth is a Seattle area native who loves exploring the city. She has been interested in security ever since reading [Neal Stephenson's novel Reamde](https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497) when she was a kid. Her spare time is spent hiking around the forests of the Pacific Northwest and working on whatever side project catches her fancy. She has spent far too much money on keyboards and pretty rocks - sometimes even forging her own Bismuth crystals. Elizabeth graduated with a B.S. in Computer Science from the University of Washington in Seattle.
 
 ## Austin Harshberger (he/him)
 
@@ -348,7 +346,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Customer Engineer
 - Frederick, MD, USA, us
 - [tion@sourcegraph.com](mailto:tion@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tion-thomas-30562017), [GitHub](https://github.com/tistru), [YouTube](https://www.youtube.com/channel/UC9l1NGH1xciYs9z1LQ6CtqA)
-- Tion is a native New Yorker who has spent time all over the US including Boston, Florida, Indiana, Oregon, and currently Maryland. He has a B.S and M.S in computer science from Tufts University and Purdue University respectively. Prior to joining Sourcegraph, Tion has worked  in a variety of domains including systems engineering, software validation, strategic planning, UX, application engineering, programming, developer relations, and technical production spread over Lockheed Martin, Electronic Arts, Intel, Razer, and Magic Leap. His passion is in gaming and he continues to be an active member on many gaming forums and blogs while playing some of the latest games in his spare time. He also enjoys sports, music, and is an AV enthusiast (home theater and audio/video technologies). Tion is a proud father of 2 beautiful kids and a husband of 7 years! He loves working with customers and helping to enable amazing technology that is readily accessible to everyone. 
+- Tion is a native New Yorker who has spent time all over the US including Boston, Florida, Indiana, Oregon, and currently Maryland. He has a B.S and M.S in computer science from Tufts University and Purdue University respectively. Prior to joining Sourcegraph, Tion has worked in a variety of domains including systems engineering, software validation, strategic planning, UX, application engineering, programming, developer relations, and technical production spread over Lockheed Martin, Electronic Arts, Intel, Razer, and Magic Leap. His passion is in gaming and he continues to be an active member on many gaming forums and blogs while playing some of the latest games in his spare time. He also enjoys sports, music, and is an AV enthusiast (home theater and audio/video technologies). Tion is a proud father of 2 beautiful kids and a husband of 7 years! He loves working with customers and helping to enable amazing technology that is readily accessible to everyone.
 
 ## Quinn Keast (he/him)
 
@@ -364,6 +362,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [GitHub](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage), [pronounce my name 🔊](https://www.name-coach.com/julip)
 - Juliana is originally from Cali, Colombia 🇨🇴 and went to college in Mexico City 🇲🇽 before moving to the Seattle area. She loves building powerful and beautiful web applications that improve people's lives. Before Sourcegraph, Juliana worked at Microsoft building successful startup projects, and is now very excited to be working in a real startup company. Outside of work, Juliana loves cyling, collecting Lego, playing video games, and traveling.
 
+## David Li (he/him)
+
+- Technical Recruiter
+- San Francisco, CA, USA 🇺🇸
+- [david@sourcegraph.com](mailto:david@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/withdavidli/)
+- David is originally from the Northeast US and has been in the San Francisco Bay Area since 2013. Prior to Sourcegraph he was at Facebook and Cruise (self-driving cars), where he helped build new teams and scaled recruiting efforts through analytics and operations. He is interested in tennis and has recently started attending music festivals (you'll see him in the front!).
+
 ## Tharuntej Kandala (he/him)
 
 - Software Engineer
@@ -371,7 +376,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [tj@sourcegraph.com](mailto:tj@sourcegraph.com), [GitHub](https://github.com/tjkandala)
 - Call him "TJ"
 - TJ was born in India before he was brought to the swamp. He strives to bridge the gap between Developer Experience and User Experience in modern web applications. Outside of work, he loves to code and dunk basketballs by the ocean.
-
 
 ## Chris Pine (he/she/they/Chris)
 
