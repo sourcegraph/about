@@ -6,15 +6,15 @@ The product team is newly growing, and consists of all product managers and prod
 
 ### Members
 
-- [Product managers](roles/product_manager.md)
+- [Product management](product_management/index.md)
   - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
   - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
   - [M.A.C](../../../company/team/index.md#todo) starting 2020-08-24
-- [Product designers](roles/product_designer.md)
+- [Product design](product_design/index.md)
   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
   - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
   - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
-- [Technical Writers](roles/technical_writer.md)
+- [Technical writing](technical_writing/index.md)
   - [Kimberly Hopson](../../../company/team/index.md#kimberly-hopson-she-her)
 
 ### [Roles](roles/index.md)
@@ -30,14 +30,6 @@ See [2021 Organizational plan](../engineering/2021_org.md) for more details on a
 ## [Goals](goals.md)
 
 See [Goals](goals.md)
-
-## [Product management](product_management/index.md)
-
-- [Product process](product_management/product_process.md)
-
-## [Design](design/index.md)
-
-- [Design process](design/design_process.md)
 
 ## Resources
 
