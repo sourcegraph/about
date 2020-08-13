@@ -60,7 +60,7 @@ Creating a new managed instance involves following the steps below.
 			}
 		],
 	```
-1. Contact #ce and ask they generate / provide the relevant license key for the customer's instance, then set it in the site config.
+1. Contact #ce and ask that they generate / provide the relevant license key for the customer's instance, then set it in the site config.
 
 ## Giving the customer access
 
