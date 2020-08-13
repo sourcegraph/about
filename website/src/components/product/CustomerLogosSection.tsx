@@ -119,10 +119,6 @@ const ITEMS: {
         url: '/external-logos/apex-clearing-logo.png',
     },
     {
-        name: 'Tinder',
-        url: '/external-logos/tinder-logo.svg',
-    },
-    {
         name: 'AppLovin',
         url: '/external-logos/applovin-logo.svg',
     },
@@ -156,10 +152,18 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
                 >
                     {logo.link ? (
                         <a href={logo.link.url} target={logo.link.target} rel={logo.link.rel}>
-                            <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
+                            <img
+                                className="customer-logos-section__item-logo d-block mx-auto"
+                                src={logo.url}
+                                alt={logo.name}
+                            />
                         </a>
                     ) : (
-                        <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
+                        <img
+                            className="customer-logos-section__item-logo d-block mx-auto"
+                            src={logo.url}
+                            alt={logo.name}
+                        />
                     )}
                 </div>
             ))}

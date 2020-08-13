@@ -16,6 +16,11 @@ We're working on a new flow and a new way for people to create campaigns based o
 
 **Find code that needs to be changed and change it by running code**.
 
+## Contact
+
+- #campaigns channel or @campaigns-team on Slack.
+- [@sourcegraph/campaigns](https://github.com/orgs/sourcegraph/teams/campaigns) team or [team/campaigns label](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fcampaigns+) on GitHub.
+
 ## Mission
 
 Users can focus on changing their code because campaigns provides the plumbing:
@@ -34,6 +39,10 @@ Users provide the code to make the change, we provide the plumbing to turn it in
 * We don't try to come up with fancy and seemingly magic ways of changing code (i.e. high-level tools to refactor code) before we get the fundamentals right (running users' code in thousands of repositories and turning that into thousands of pull requests).
 * We don't interfere with the code that produces a change. We provide the infrastructure to run it across all of your repositories and turn it into a large-scale code change.
 
+## Goals
+
+TODO
+
 ## Analogies
 
 Netlify and AWS Lambda solve difficult, repeatable problems for developers, removing overhead and enabling them to focus on the problems they are solving. In that regard, campaigns are to large-scale code changes what Netlify is to static site generation and AWS Lambda is to handling HTTP requests.
@@ -46,8 +55,8 @@ When I create a campaign to make large-scale code changes I want to _focus on th
 
 ## Members
 
-- [C. P.](../../../company/team/index.md#todo) ([engineering manager](../roles.md#engineering-manager)) starting 2020-08-03.
-- [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him) ([project lead](../roles.md#project-lead))
+- [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([engineering manager](../roles.md#engineering-manager))
+- [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him) 
 - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
 - [Erik Seliger](../../../company/team/index.md#erik-seliger)
 

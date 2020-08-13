@@ -43,7 +43,11 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
         <div className="row justify-content-center pt-5">
             <div className="testimonial-carousel col-sm-12 col-md-9 col-lg-7 text-center">
                 <div className="testimonial-carousel__testimonials">
-                    <img src="/case-studies/quote.svg" className="testimonial-carousel__quote-icon mb-5" alt="" />
+                    <img
+                        src="/case-studies/quote.svg"
+                        className="testimonial-carousel__quote-icon mb-5"
+                        aria-hidden="true"
+                    />
                     <Carousel controls={true}>
                         {testimonials.map(({ customer, logo, quote, author, cta }, i) => (
                             <div
@@ -52,7 +56,11 @@ export const TestimonialCarousel: React.FunctionComponent<Props> = ({
                                     customer
                                 ).toLowerCase()} carousel-item testimonial-carousel__testimonial`}
                             >
-                                <img src={logo} className="testimonial-carousel__logo d-inline-block mb-4" />
+                                <img
+                                    src={logo}
+                                    className="testimonial-carousel__logo d-inline-block mb-4"
+                                    alt={customer}
+                                />
                                 <blockquote className="testimonial-carousel__blockquote blockquote">
                                     <p className="mb-5">{quote}</p>
                                     {author && (

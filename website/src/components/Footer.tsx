@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
+import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import * as React from 'react'
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
@@ -13,6 +14,9 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                         <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-2">
                             <h3 className="footer__nav-header">About Sourcegraph</h3>
                             <ul className="nav flex-column">
+                                <li className="nav-item">
+                                    <Link to="/case-studies">Case studies</Link>
+                                </li>
                                 <li className="nav-item">
                                     <Link to="/customers">Customers</Link>
                                 </li>
@@ -81,18 +85,43 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                             </Link>
                             <ul className="nav footer__social mt-1">
                                 <li className="nav-item">
-                                    <a href="https://github.com/sourcegraph" target="_blank">
+                                    <a
+                                        href="https://github.com/sourcegraph"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="GitHub"
+                                    >
                                         <GithubIcon />
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://twitter.com/srcgraph" target="_blank">
+                                    <a
+                                        href="https://twitter.com/srcgraph"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="Twitter"
+                                    >
                                         <TwitterIcon />
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://www.linkedin.com/company/4803356/" target="_blank">
+                                    <a
+                                        href="https://www.linkedin.com/company/4803356/"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="LinkedIn"
+                                    >
                                         <LinkedinIcon />
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a
+                                        href="https://www.youtube.com/c/Sourcegraph/featured"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="YouTube"
+                                    >
+                                        <YouTubeIcon />
                                     </a>
                                 </li>
                             </ul>

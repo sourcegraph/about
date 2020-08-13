@@ -20,6 +20,10 @@
 /docs @sourcegraph/marketing
 /podcast @beyang
 
+# @sqs: I feel weird reviewing people's own biographies, so I'm intentionally marking this file as
+# having no owner (and therefore no automatically assigned reviewer).
+/company/team/index.md @sourcegraph/nobody
+
 /handbook/product @christinaforney
 /handbook/engineering @nicksnyder
 

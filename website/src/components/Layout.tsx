@@ -55,7 +55,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                     <meta name="description" content={metaProps.description} />
                     <link rel="icon" type="image/png" href={metaProps.icon} />
                     <link rel="icon" type="image/png" href={metaProps.image} />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
                     <link

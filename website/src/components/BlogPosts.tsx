@@ -40,6 +40,7 @@ export default class BlogPosts extends React.Component<any, any> {
                                         <img
                                             className="blog-posts__post__image"
                                             src={post.node.frontmatter.heroImage}
+                                            alt={post.node.frontmatter.title}
                                         />
                                     </Link>
                                 </div>

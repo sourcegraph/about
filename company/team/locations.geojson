@@ -173,19 +173,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Adam Frankl"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.35349781811236,
-          37.555894591230974
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Adam Harvey"
       },
       "geometry": {
@@ -206,6 +193,19 @@
         "coordinates": [
           8.8017,
           53.0793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TJ Kandala"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6557,
+          30.3322
         ]
       }
     }

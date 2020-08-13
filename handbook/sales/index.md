@@ -5,7 +5,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Pricing](https://about.sourcegraph.com/pricing)
 - [Common questions from prospective customers](common_customer_questions.md)
 - [Sales team onboarding](onboarding/index.md)
-- [Sales interviews](interviews/index.md)
+- [Sales interview process](interviews/index.md)
 - [Recording lead and customer emails, calls, and notes](records.md)
 
 ## Pipeline, data, and models
@@ -14,6 +14,10 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Transactions](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=0)
 - [FY20 plan](https://docs.google.com/spreadsheets/d/1EkZ7O69-2jbgtacoFDrY8L6rP73Hlqp_syyVCnmGAFA/edit#gid=1071026049)
 - [Looker dashboard](https://sourcegraph.looker.com/browse/boards/2)
+
+## Goals
+
+TODO
 
 ## How sales works with other Sourcegraph teams
 
@@ -95,9 +99,15 @@ The **Lead** stage is for leads that are sales qualified (i.e., SQLs), which mea
       - If they don’t meet this criteria, we could discuss internally on whether Sourcegraph would benefit from having this company as a customer (e.g., reputable logo, we want to support a non-profit org’s mission, we can partner with them in multiple ways, etc.).
 1. We *have* reached out to them requesting a call/meeting to introduce Sourcegraph’s offering, but the call/meeting has *not* occurred yet (i.e. it is still upcoming on the calendar, or they have not yet responded with agreement for the call/meeting).
 
+### Interest
+
+> ~20% probability of winning
+
+The **Interest** stage is under construction
+
 ### Qualification
 
-> ~25% probability of winning
+> ~40% probability of winning
 
 The **Qualification** stage is for leads where **ALL** of the following are true:
 
@@ -116,7 +126,7 @@ Other notes:
 
 ### Evaluation
 
-> ~50% probability of winning
+> ~60% probability of winning
 
 The **Evaluation** stage is for opportunities where **ALL** of the following are true:
 
