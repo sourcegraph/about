@@ -6,6 +6,26 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
 
 1. Any user or organization can use Sourcegraph Cloud with both the private and public code that they care about in a secure way.
 
+## Milestones
+
+1. Any user can add public code
+2. Organizations can use Sourcegraph with up to 50 repos or 100k LoC of private repositories for free
+    - We need to build a scalable and reliable service to count lines of code and integrate that with the rest of our systems (to enforce limits). This would align with how we’re thinking about billing by LoC, not number of repositories.
+    - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
+    - All private repository contents need to be encrypted at rest.
+        - Gitserver.
+        - Searcher and code intel caches.
+        - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
+3. Sign-up and on-boarding of new users is fast, obvious and painless
+    - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
+    - Permissions and repo syncing progress is clear to the user and doesn’t take too long.
+    - Progress on repo indexing is clear to the user and doesn’t take too long.
+4. Any user or organisation can use Sourcegraph with more than 100k LoC and pay for it.
+    - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
+    - Scalable syncing of permissions, repos, changesets.
+    - High availability, SLOs, etc.
+    - Billing and subscriptions.
+
 ## Contact
 
 - #cloud channel or @cloud-team in Slack
