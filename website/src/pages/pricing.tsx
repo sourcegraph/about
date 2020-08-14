@@ -140,6 +140,7 @@ export default ((props: any) => (
                                     customBranding: true,
                                     onlineTraining: true,
                                     customContractLegalBillingTerms: true,
+                                    unlimitedCode: true,
                                 }}
                                 beforeCampaignsFragment={
                                     <span className="text-muted pl-4 small mt-4">Available add-ons:</span>
