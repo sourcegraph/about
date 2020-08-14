@@ -110,7 +110,8 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     },
     unlimitedCode: {
         label: 'Unlimited code scale',
-        description: 'Free and Team tiers impose limits on the total amount of searchable code',
+        description:
+            'Free and Team tiers limit the total amount of searchable code. Enterprise offers options that scale to any size codebase.',
     },
 }
 
