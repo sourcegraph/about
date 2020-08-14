@@ -150,7 +150,7 @@ export default ((props: any) => (
                             />
                         </div>
                     </div>
-                    <div class="py-3 text-center">
+                    <div className="py-3 text-center">
                         <h3>Education and nonprofit discounts</h3>
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
