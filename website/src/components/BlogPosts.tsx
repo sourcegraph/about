@@ -30,7 +30,7 @@ export default class BlogPosts extends React.Component<any, any> {
                 {this.props.posts.map(
                     (post: any, i: number) =>
                         postIsComplete(post) && (
-                            <li className="blog-posts__post row pt-2">
+                            <li className="blog-posts__post row pt-2" key={post.node.frontmatter.slug}>
                                 <div className="col-sm-12 col-md-3 text-center pt-3 pb-4">
                                     <Link
                                         to={`/${this.props.blogType}/${post.node.frontmatter.slug}`}
