@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * This file is responsible for programatically creating pages from data such as markdown files.
  *
