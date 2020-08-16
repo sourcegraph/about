@@ -16,9 +16,6 @@
         display: flex;
         align-items: center;
     }
-    &__nav-link {
-        color: $dark;
-    }
     &__nav-link.btn:hover {
         color: $light !important;
     }
@@ -33,9 +30,6 @@
             background-size: 150px;
             width: 150px;
             height: 26px;
-        }
-        &__nav-link {
-            color: $light;
         }
         &__nav-link:hover {
             color: $light-6;
