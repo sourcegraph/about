@@ -26,7 +26,8 @@ export default class BlogList extends React.Component<any, any> {
         )
         const metaProps = {
             title: 'Sourcegraph blog',
-            description: 'Plain text - the official Sourcegraph blog.',
+            description:
+                "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
         }
 
         return (
