@@ -23,8 +23,6 @@
 
 .darkBackground {
     .header {
-        background-color: #07090d !important;
-        border-bottom: 1px solid #212529 !important;
         &__logo {
             background: url(/sourcegraph-reverse-logo.svg) no-repeat;
             background-size: 150px;
@@ -35,9 +33,9 @@
             color: $light-6;
         }
     }
-}
-.navbar-light {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    &.border-bottom {
+        border-bottom-color: #212529 !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
