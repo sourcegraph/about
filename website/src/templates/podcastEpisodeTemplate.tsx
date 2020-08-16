@@ -60,7 +60,6 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
             },
         ].filter(option => option.html)
 
-
         // In order to work with Gatsby React rehydration, these URLs need to be distinct paths and map to the ones defined in gatsby-node.js
         let selected: 'notes' | 'summary' | 'transcript' = this.props.pageContext?.showTab || 'summary'
         const path = this.props.location.pathname
@@ -73,7 +72,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
         }
 
         return (
-            <Layout location={this.props.location} meta={meta} className="darkBackground">
+            <Layout location={this.props.location} meta={meta} className="navbar-dark bg-black">
                 <Helmet>
                     <link
                         rel="stylesheet"

@@ -12,7 +12,7 @@ export default ((props: any) => (
                 'Since 2015, Convoy has quickly grown to over 500 employees. Sourcegraph helps them improve their developer on-boarding process.',
             image: 'https://about.sourcegraph.com/case-studies/convoy1-sourcegraph-case-study-og-embed.jpg',
         }}
-        className="darkBackground navbar-dark"
+        className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="Convoy"

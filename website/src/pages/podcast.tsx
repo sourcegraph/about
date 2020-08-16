@@ -280,7 +280,7 @@ export default class JobsPage extends React.Component<any, any> {
                     title: metaProps.title,
                     description: metaProps.description,
                 }}
-                className="darkBackground navbar-dark"
+                className="navbar-dark bg-black"
             >
                 <ContentPage
                     title="The Podcast🎙"

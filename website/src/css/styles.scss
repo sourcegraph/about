@@ -84,9 +84,9 @@ $display4-size: 1.75rem;
 
 $navbar-nav-link-padding-x: $spacer * 0.75;
 $navbar-light-color: $dark;
-$navbar-light-hover-color: $dark;
+$navbar-light-hover-color: $blue;
 $navbar-dark-color: $light;
-$navbar-dark-hover-color: $light;
+$navbar-dark-hover-color: $blue;
 
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
@@ -292,4 +292,7 @@ body {
             rgba(255, 255, 255, 0) 100%
         ),
         linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
+}
+.bg-black {
+    background-color: #000;
 }

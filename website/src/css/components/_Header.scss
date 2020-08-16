@@ -19,27 +19,19 @@
     &__nav-link.btn:hover {
         color: $light !important;
     }
-}
 
-.darkBackground {
-    .header {
+    &.navbar-dark .header {
         &__logo {
             background: url(/sourcegraph-reverse-logo.svg) no-repeat;
             background-size: 150px;
             width: 150px;
             height: 26px;
         }
-        &__nav-link:hover {
-            color: $light-6;
-        }
-    }
-    &.border-bottom {
-        border-bottom-color: #333 !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .darkBackground .navbar-nav .btn,
+    .navbar-dark .navbar-nav .btn,
     .navbar-light .navbar-nav .btn {
         padding: 0.25rem 0.75rem;
     }
