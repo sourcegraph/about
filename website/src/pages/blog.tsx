@@ -39,11 +39,6 @@ export default class BlogList extends React.Component<any, any> {
             >
                 <ContentPage
                     title="Sourcegraph blog"
-                    mainActions={
-                        <div className="d-flex flex-column align-items-center">
-                            <BlogHeadLinks />
-                        </div>
-                    }
                     className="text-dark"
                     titleClassName="display-2 text-dark font-weight-bold"
                 >
@@ -52,6 +47,9 @@ export default class BlogList extends React.Component<any, any> {
                             <BlogPosts blogType="blog" posts={markdownBlogPosts} />
                         </div>
                     </ContentSection>
+                    <div className="d-flex flex-column align-items-center">
+                        <BlogHeadLinks />
+                    </div>
                 </ContentPage>
             </Layout>
         )
