@@ -17,22 +17,8 @@ export default class Header extends React.Component<HeaderProps, any> {
         this.toggle = this.toggle.bind(this)
         this.state = {
             isOpen: false,
-            isTop: true,
         }
-        this.onScroll = this.onScroll.bind(this)
     }
-    public componentDidMount(): void {
-        document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 30
-            if (isTop !== this.state.isTop) {
-                this.onScroll(isTop)
-            }
-        })
-    }
-    public onScroll(isTop: string): void {
-        this.setState({ isTop })
-    }
-
     public toggle(): void {
         this.setState({
             isOpen: !this.state.isOpen,
@@ -42,11 +28,7 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                <nav
-                    className={`${
-                        this.state.isTop ? '' : 'bg-white border-bottom'
-                    } header navbar navbar-expand-md fixed-top py-3 ${this.props.className || 'navbar-light'}`}
-                >
+                <nav className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container">
                         <Link className="navbar-brand header__logo" to="/">
                             <span role="img" aria-label="Sourcegraph - Universal code search">
