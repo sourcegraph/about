@@ -9,10 +9,11 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
 ## Milestones
 
 1. Any user can add public code
-2. Organizations can use Sourcegraph with up to 50 repos or 100k LoC of private repositories for free
-    - We need to build a scalable and reliable service to count lines of code and integrate that with the rest of our systems (to enforce limits). This would align with how we’re thinking about billing by LoC, not number of repositories.
+    - Code is indexed.
+    - It's easy to search over only their code (vs all public code).
+2. Any user or organization can use Sourcegraph Cloud for free before it's GA
     - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
-    - All private repository contents need to be encrypted at rest.
+    - All private repository content are only decryptable by Sourcegraph services.
         - Gitserver.
         - Searcher and code intel caches.
         - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
@@ -20,11 +21,12 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
     - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
     - Permissions and repo syncing progress is clear to the user and doesn’t take too long.
     - Progress on repo indexing is clear to the user and doesn’t take too long.
-4. Any user or organisation can use Sourcegraph with more than 100k LoC and pay for it.
+4. Sourcegraph Cloud is Generally Available (GA)
     - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
     - Scalable syncing of permissions, repos, changesets.
     - High availability, SLOs, etc.
     - Billing and subscriptions.
+        - Based on size (i.e. GB) of all repositories and selected feature set.
 
 ## Contact
 
