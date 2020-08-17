@@ -68,8 +68,8 @@ export default ((props: any) => (
             <meta name="description" content={desc} />
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
-        <div className="customers-page">
-            <CustomerLogosSection className="mb-6" />
+        <div>
+            <CustomerLogosSection className="my-6" />
             <hr className="mb-6" id="onboard" />
             <ContentSection className="mt-5">
                 <div className="row">
