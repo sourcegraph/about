@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "LWN.net",
+      "newsTitle": "Searching code with Sourcegraph (subscriber content)",
+      "newsDate": "August 17, 2020",
+      "newsLink": "https://lwn.net/SubscriberLink/828748/9bd97e8761546ed4/",
+      "newsImage": "/external-logos/lwn-net-logo.png"
+    },
+    {
       "newsSource": "The Twenty Minute VC",
       "newsTitle": "Podcast: Interview with Apurva Mehta, managing partner at Summit Peak Investments (starts 35:45)",
       "newsDate": "August 17, 2020",
