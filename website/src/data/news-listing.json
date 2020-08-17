@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "The Twenty Minute VC",
+      "newsTitle": "Podcast: Interview with Apurva Mehta, managing partner at Summit Peak Investments (starts 35:45)",
+      "newsDate": "August 17, 2020",
+      "newsLink": "https://thetwentyminutevc.com/apurvamehta/",
+      "newsImage": "/external-logos/twenty-minute-vc-logo.png"
+    },
+    {
       "newsSource": "ITPro Today",
       "newsTitle": "Code Challenges: Coping in the Era of 'Big Code'",
       "newsDate": "August 10, 2020",
