@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "ITPro Today",
+      "newsTitle": "Code Challenges: Coping in the Era of 'Big Code'",
+      "newsDate": "August 10, 2020",
+      "newsLink": "https://www.itprotoday.com/devops-and-software-development/code-challenges-coping-era-big-code",
+      "newsImage": "/external-logos/itpro-today-logo.png"
+    },
+    {
       "newsSource": "DevOps Digest",
       "newsTitle": "Sourcegraph Raises Additional $5 Million in Series B Funding",
       "newsDate": "August 3, 2020",
