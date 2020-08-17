@@ -98,12 +98,26 @@ While asynchronous communication is a core attribute of remote work, key moments
 
 - Visual design should utilize the Sourcegraph’s Figma based component system
 - Dark compositions will be created for each major design
-- If new components are required, the following process should be followed
+- If new components are required, the following process should be followed:
     - Design component in the Figma file which requires it
+        - If creating a component make sure it is prefaced by '_' so that it is not used while in review
+    - Create a proposal frame with the following items:
+        - Proposal name and description
+        - If changing a component, provide an example screenshot of the existing component
+        - Link to a Sourcegraph search showing affected areas of the product
+        - Screenshots of current product usage   
+        - A design that represents the suggested change
+        - A clear verbal discrpiption of the suggested changes
     - @ mention a frontend engineer requesting an addition or change to the component system
-        - Engineering approves, requests changes, or requests the designer uses an existing component
+        - Engineering will approve, requests changes, or request that the designer uses an existing component
     - @ mention a designer and request a review
-    - If the new component was approved by engineering and a designer, add it to the Figma component system and publish with a fitting commit message
+    - Create a GitHub issue for the component
+    - When the GitHub issue is complete:
+        - Remove the '_' from the component name
+        - Add the component to the Figma component system 
+        - Publish changes with a fitting commit message
+    
+
 - Improvements to the Sourcegraph user experience should consider the following in every change:
     - Has the change’s effect on the CLI been considered?
     - Does the language in the UI map to the language in the CLI?
