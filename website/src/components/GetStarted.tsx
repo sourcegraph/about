@@ -16,7 +16,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
     }
     public render(): JSX.Element | null {
         return (
-            <div className={`get-started mt-6 ${this.props.className || ''}`} id="get-started">
+            <div className={`get-started ${this.props.className || ''}`} id="get-started">
                 <div className="container">
                     <h1 className="display-2 font-weight-bold mb-5">Get started with Sourcegraph for free</h1>
                     <div className="row">
