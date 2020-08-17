@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from 'react'
-import Layout from '../../components/Layout'
 import { ContentPage } from '../../components/content/ContentPage'
 import { createHubSpotForm } from '../../components/HubSpot'
+import Layout from '../../components/Layout'
 
 export default ((props: any) => {
     useLayoutEffect(() => {
@@ -24,6 +24,8 @@ export default ((props: any) => {
             <ContentPage
                 title="Universal Code Search"
                 description="Ship better software faster with Sourcegraph Universal Code Search with enhanced code search, review, and code change management."
+                className="text-dark"
+                titleClassName="display-2 font-weight-bold"
             >
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
                 <div className="landing-page bg-white text-dark">
