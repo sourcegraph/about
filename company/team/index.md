@@ -398,7 +398,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Wexford, Ireland 🇮🇪
 - Name pronunciation: /[noʊə santʃi kuːnɪ](http://ipa-reader.xyz/?text=no%CA%8A%C9%99%20sant%CA%83i%20ku%CB%90n%C9%AA&voice=Amy)/
 - [noah@sourcegraph.com](mailto:noah@sourcegraph.com), [GitHub](https://github.com/strum355), [LinkedIn](https://linkedin.com/in/strum355), [Twitter](https://twitter.com/strum355)
-- Noah is a half Swiss 🇨🇭 half Irish 🇮🇪 UCC CS graduate who spends his time envangelising the Actor model, containers (not of the shipping variety), his favourite programming languages and complaining about subpar editor experiences. Sometime in the past, the last point drove him over the edge and into the world of language servers. Previously he was Performance Engineering Intern at Teamwork, Frontend/DevOps at CloudCIX and Head Systems Administrator at UCC Netsoc, the college tech/gaming society.
+- Noah is a half Swiss 🇨🇭 half Irish 🇮🇪 UCC CS graduate who spends his time evangelising the Actor model, containers (not of the shipping variety), his favourite programming languages and complaining about subpar editor experiences. Sometime in the past, the last point drove him over the edge and into the world of language servers. Previously he was Performance Engineering Intern at Teamwork, Frontend/DevOps at CloudCIX and Head Systems Administrator at UCC Netsoc, the college tech/gaming society.
 
 <!-- Paste *your* section above this line by following our template below:
 
