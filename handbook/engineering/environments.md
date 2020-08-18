@@ -7,7 +7,7 @@ This page describes our different cloud environments.
 We utilize multiple Google Cloud projects and folders to organize our workloads and manage access control.
 
 
-### Projects
+### Root Projects
 
 - **Sourcegraph**: Services for sourcegraph.com.
 - **sourcegraph-code-intel**: Services for Code Intel code execution.
@@ -16,7 +16,11 @@ We utilize multiple Google Cloud projects and folders to organize our workloads 
 - **Sourcegraph Auxiliary**: Testing clusters and deployments.
 - **Universities**: Sourcegraph instances for universities. (Deprecated)
 - **sourcegraph-interviews**: Shared project for interviews
-- **Engineers Projects (Folder)**: Contains multiple engineers project. All projects must be prefixed with `$name-`.
+
+### Folders
+Dynamic or temporary projects are created in the generic folders listed below.
+
+- **Engineers Projects**: Contains multiple engineers project. All projects must be prefixed with `$name-`.
 
 ---
 
