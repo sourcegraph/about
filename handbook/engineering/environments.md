@@ -18,7 +18,7 @@ We utilize multiple Google Cloud projects and folders to organize our workloads 
 - **sourcegraph-interviews**: Shared project for interviews
 
 ### Folders
-Dynamic or temporary projects are created in the generic folders listed below.
+Dynamic or temporary projects are created in the folders listed below.
 
 - **Engineers Projects**: Contains multiple engineers project. All projects must be prefixed with `$name-`.
 
