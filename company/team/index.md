@@ -58,7 +58,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Milwaukee, WI, USA 🇺🇸
-- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [@efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/)
+- [eric@sourcegraph.com](mailto:eric@sourcegraph.com), [@efritz](https://github.com/efritz), [LinkedIn](https://www.linkedin.com/in/eric-fritz-414a9411/), [pronounce my name 🔊](https://www.name-coach.com/eric-fritz)
 - Eric received a PhD in Computer Science from the University of Wisconsin - Milwaukee where he published research on compiler construction and taught courses in compilers and software engineering. Prior to Sourcegraph, Eric built infrastructure for UCaaS products. While not programming, Eric enjoys cooking while muttering Gordon Ramsay deep cuts to himself.
 
 ## Eric Brody-Moore
@@ -391,6 +391,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - San Francisco, CA
 - [gregg@sourcegraph.com](mailto:gregg@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/stonegregg)
 - Gregg lives in San Francisco with his wife Heather and two kids Liv & Gavin. He moved to San Francisco 13 years ago. He started his sales career at Salesforce, before moving on to several startup tech companies. He enjoys spending time with his family, golfing, hiking, swimming, and skiing. He grew up in NC and graduated from NC State with a degree in Finance.
+
+## Noah Santschi-Cooney (he/him)
+
+- Software Engineer
+- Wexford, Ireland 🇮🇪
+- Name pronunciation: /[noʊə santʃi kuːnɪ](http://ipa-reader.xyz/?text=no%CA%8A%C9%99%20sant%CA%83i%20ku%CB%90n%C9%AA&voice=Amy)/
+- [noah@sourcegraph.com](mailto:noah@sourcegraph.com), [GitHub](https://github.com/strum355), [LinkedIn](https://linkedin.com/in/strum355), [Twitter](https://twitter.com/strum355)
+- Noah is a half Swiss 🇨🇭 half Irish 🇮🇪 UCC CS graduate who spends his time evangelising the Actor model, containers (not of the shipping variety), his favourite programming languages and complaining about subpar editor experiences. Sometime in the past, the last point drove him over the edge and into the world of language servers. Previously he was Performance Engineering Intern at Teamwork, Frontend/DevOps at CloudCIX and Head Systems Administrator at UCC Netsoc, the college tech/gaming society.
 
 <!-- Paste *your* section above this line by following our template below:
 

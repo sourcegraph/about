@@ -208,6 +208,19 @@
           30.3322
         ]
       }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+          "name": "Noah Santschi-Cooney"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -6.382739,
+            52.183102
+          ]
+        }
     }
   ]
 }
