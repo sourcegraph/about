@@ -108,6 +108,14 @@ $popover-arrow-color: transparent;
 $popover-arrow-outer-color: transparent;
 $popover-max-width: 400px;
 
+$card-spacer-y: 1.25 * $spacer;
+$card-spacer-x: 1.25 * $spacer;
+
+:root {
+    --body-color: #{$body-color};
+    --border-color: #{$border-color};
+}
+
 @import 'node_modules/bootstrap/scss/root';
 @import 'node_modules/bootstrap/scss/reboot';
 @import 'node_modules/bootstrap/scss/type';
@@ -125,6 +133,7 @@ $popover-max-width: 400px;
 @import 'node_modules/bootstrap/scss/carousel';
 @import 'node_modules/bootstrap/scss/utilities';
 @import 'node_modules/bootstrap/scss/alert';
+@import 'node_modules/bootstrap/scss/badge';
 
 html,
 body,
@@ -235,6 +244,8 @@ table {
 }
 
 @import 'circular-font';
+@import 'components/blog/BlogPostSummary';
+@import 'components/blog/ReleasePost';
 @import 'components/content/ContentPage';
 @import 'components/content/ContentSection';
 @import 'components/pricing/index';

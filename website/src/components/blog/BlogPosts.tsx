@@ -1,43 +1,39 @@
 import * as React from 'react'
 import { BlogPostSummary } from './BlogPostSummary'
+import { ReleasePostSummary } from './ReleasePostSummary'
 
-interface BlogPostsProps {
+export interface BlogPostSummaryProps {
+    blogType: string
+    className?: string
+    headerClassName?: string
+    titleClassName?: string
+    tag?: 'li'
+}
+
+interface Props {
     posts: any[]
     blogType: string
 }
 
-function postIsComplete(post: any): boolean {
-    return (
-        post.node &&
-        post.node.frontmatter.title &&
-        post.node.frontmatter.author &&
-        post.node.frontmatter.publishDate &&
-        post.node.frontmatter.slug &&
-        post.node.frontmatter.heroImage &&
-        post.node.html &&
-        post.node.excerpt
-    )
-}
-export default class BlogPosts extends React.Component<any, any> {
-    constructor(props: BlogPostsProps) {
-        super(props)
-    }
+const postType = (post: any): 'blog' | 'release' =>
+    post.node.frontmatter.tags?.includes('release') ? 'release' : 'blog'
 
-    public render(): JSX.Element {
-        return (
-            <ul className="blog-posts container list-unstyled">
-                {this.props.posts.map(
-                    (post: any) =>
-                        postIsComplete(post) && (
-                            <BlogPostSummary
-                                post={post}
-                                key={post.node.frontmatter.slug}
-                                blogType={this.props.blogType}
-                                className="blog-posts__post pt-2"
-                            />
-                        )
-                )}
-            </ul>
-        )
+export const BlogPosts: React.FunctionComponent<Props> = ({ posts, blogType }) => {
+    const blogPostSummaryProps: BlogPostSummaryProps = {
+        blogType,
+        className: 'blog-posts__post card',
+        headerClassName: 'card-header bg-white border-bottom-0 text-center',
+        titleClassName: 'blog-posts__post-title',
     }
+    return (
+        <ul className="blog-posts container list-unstyled">
+            {posts.map((post: any) =>
+                postType(post) === 'blog' ? (
+                    <BlogPostSummary post={post} key={post.node.frontmatter.slug} {...blogPostSummaryProps} />
+                ) : (
+                    <ReleasePostSummary post={post} key={post.node.frontmatter.slug} {...blogPostSummaryProps} />
+                )
+            )}
+        </ul>
+    )
 }

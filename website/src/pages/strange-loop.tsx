@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import _ from 'lodash'
 import * as React from 'react'
-import BlogPosts from '../components/blog/BlogPosts'
+import { BlogPosts } from '../components/blog/BlogPosts'
 import Layout from '../components/Layout'
 
 export default class GoList extends React.Component<any, any> {
