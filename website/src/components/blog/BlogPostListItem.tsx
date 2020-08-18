@@ -1,16 +1,14 @@
 import { Link } from 'gatsby'
 import truncate from 'lodash/truncate'
 import * as React from 'react'
-import { BlogPostSummaryProps } from './BlogPosts'
+import { PostListItemProps } from './postTypes'
 
-interface Props extends BlogPostSummaryProps {
-    post: any
-}
+interface Props extends PostListItemProps {}
 
 /**
  * A summary for this blog post, shown in a list of posts.
  */
-export const BlogPostSummary: React.FunctionComponent<Props> = ({
+export const BlogPostListItem: React.FunctionComponent<Props> = ({
     post,
     blogType,
     className = '',
@@ -20,24 +18,24 @@ export const BlogPostSummary: React.FunctionComponent<Props> = ({
 }) => {
     const excerpt = (
         <>
-            <p className="blog-post-summary__excerpt">
+            <p className="blog-post-list-item__excerpt">
                 {post.node.frontmatter.description
                     ? truncate(post.node.frontmatter.description, { length: 300 })
                     : truncate(post.node.excerpt, { length: 300 })}{' '}
             </p>
-            <Link to={`/${blogType}/${post.node.frontmatter.slug}`} className="blog-post-summary__read-more">
+            <Link to={`/${blogType}/${post.node.frontmatter.slug}`} className="blog-post-list-item__read-more">
                 Read more
             </Link>
         </>
     )
 
     return (
-        <Tag className={`blog-post-summary ${className}`}>
+        <Tag className={`blog-post-list-item ${className}`}>
             <header className={headerClassName}>
                 <h2 className={titleClassName}>
                     <Link to={`/${blogType}/${post.node.frontmatter.slug}`}>{post.node.frontmatter.title}</Link>
                 </h2>
-                <p className="blog-post-summary__byline mb-0">
+                <p className="blog-post-list-item__byline mb-0">
                     {post.node.frontmatter.author} on {post.node.frontmatter.publishDate}
                 </p>
             </header>
@@ -50,7 +48,7 @@ export const BlogPostSummary: React.FunctionComponent<Props> = ({
                             className="d-block pt-2 align-self-center"
                         >
                             <img
-                                className="blog-post-summary__image"
+                                className="blog-post-list-item__image"
                                 src={post.node.frontmatter.heroImage}
                                 alt={post.node.frontmatter.title}
                             />

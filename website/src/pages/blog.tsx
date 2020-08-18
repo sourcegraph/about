@@ -1,7 +1,7 @@
 import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
 import BlogHeadLinks from '../components/blog/BlogHeadLinks'
-import { BlogPosts } from '../components/blog/BlogPosts'
+import { PostsList } from '../components/blog/PostsList'
 import { ContentPage } from '../components/content/ContentPage'
 import Layout from '../components/Layout'
 
@@ -35,7 +35,7 @@ export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: an
         >
             <ContentPage title="Sourcegraph blog" className="bg-light" titleClassName="display-4">
                 <div className="pt-4">
-                    <BlogPosts blogType="blog" posts={markdownBlogPosts} />
+                    <PostsList blogType="blog" posts={markdownBlogPosts} />
                 </div>
                 <div className="d-flex flex-column align-items-center">
                     <BlogHeadLinks />

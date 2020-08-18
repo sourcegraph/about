@@ -243,7 +243,8 @@ table {
     background-color: #fff;
 }
 
-@import 'components/blog/BlogPostSummary';
+@import 'components/blog/BlogPost';
+@import 'components/blog/PostsList';
 @import 'components/blog/ReleasePost';
 @import 'components/content/ContentPage';
 @import 'components/content/ContentSection';
@@ -264,7 +265,6 @@ table {
 @import 'pages/404';
 @import 'pages/about';
 @import 'pages/browser';
-@import 'pages/blog';
 @import 'pages/blog-post';
 @import 'pages/customers';
 @import 'pages/_case_studies';

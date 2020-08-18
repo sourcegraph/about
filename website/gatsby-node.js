@@ -50,7 +50,6 @@ exports.createPages = ({ actions, graphql }) => {
 
   return new Promise((resolve, reject) => {
     const PostTemplate = path.resolve(`src/templates/blogPostTemplate.tsx`)
-    const ReleasePostTemplate = path.resolve(`src/templates/ReleasePostTemplate.tsx`)
     const ContentTemplate = path.resolve(`src/templates/contentTemplate.tsx`)
     const PodcastEpisodeTemplate = path.resolve(`src/templates/podcastEpisodeTemplate.tsx`)
 
@@ -88,23 +87,13 @@ exports.createPages = ({ actions, graphql }) => {
 
             if (absPath.includes('/blogposts') && node.frontmatter.published === true) {
               if (node.frontmatter.tags && node.frontmatter.tags.includes('blog')) {
-                if (node.frontmatter.tags.includes('release')) {
-                  createPage({
-                    path: `/blog/release/${slug}`,
-                    component: ReleasePostTemplate,
-                    context: {
-                      fileSlug: slug,
-                    },
-                  })
-                } else {
-                  createPage({
-                    path: `/blog/${slug}`,
-                    component: PostTemplate,
-                    context: {
-                      fileSlug: slug,
-                    },
-                  })
-                }
+                createPage({
+                  path: `/blog/${slug}`,
+                  component: PostTemplate,
+                  context: {
+                    fileSlug: slug,
+                  },
+                })
               } else if (node.frontmatter.tags && node.frontmatter.tags.includes('press-release')) {
                 createPage({
                   path: `/press-releases/${slug}`,

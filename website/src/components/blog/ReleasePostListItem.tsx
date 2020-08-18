@@ -2,34 +2,14 @@ import { Link } from 'gatsby'
 import * as React from 'react'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
-import { BlogPostSummaryProps } from './BlogPosts'
-import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
+import { PostListItemProps } from './postTypes'
 
-interface Props extends BlogPostSummaryProps {
-    post: {
-        node: {
-            frontmatter: {
-                title: string
-                description: string
-                slug: string
-                publishDate: string
-                changelogItems?: ReleasePostFrontmatterChangelogItem[]
-            }
-            html: string
-        }
-    }
-}
-
-interface ReleasePostFrontmatterChangelogItem {
-    url: string
-    category: string
-    description: string
-}
+interface Props extends PostListItemProps {}
 
 /**
  * A summary for this release post, shown in a list of blog posts.
  */
-export const ReleasePostSummary: React.FunctionComponent<Props> = ({
+export const ReleasePostListItem: React.FunctionComponent<Props> = ({
     post,
     blogType,
     className = '',
@@ -75,7 +55,10 @@ export const ReleasePostSummary: React.FunctionComponent<Props> = ({
             </li>
         </ul>
         {post.node.html && (
-            <div className="card-body release-post__body" dangerouslySetInnerHTML={{ __html: post.node.html }} />
+            <div
+                className="card-body border-top release-post__body"
+                dangerouslySetInnerHTML={{ __html: post.node.html }}
+            />
         )}
     </Tag>
 )

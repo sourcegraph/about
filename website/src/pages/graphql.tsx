@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import _ from 'lodash'
 import * as React from 'react'
-import { BlogPosts } from '../components/blog/BlogPosts'
+import { PostsList } from '../components/blog/PostsList'
 import Layout from '../components/Layout'
 
 export default class GraphQLSummitList extends React.Component<any, any> {
@@ -29,7 +29,7 @@ export default class GraphQLSummitList extends React.Component<any, any> {
                 </section>
 
                 <div className="gray-9 bg-white text-dark">
-                    <BlogPosts blogType="graphql" posts={graphqlPosts} />
+                    <PostsList blogType="graphql" posts={graphqlPosts} />
                 </div>
             </Layout>
         )
