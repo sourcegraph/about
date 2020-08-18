@@ -6,6 +6,9 @@ This page describes our different cloud environments.
 
 We utilize multiple Google Cloud projects and folders to organize our workloads and manage access control.
 
+
+### Projects
+
 - **Sourcegraph**: Services for sourcegraph.com.
 - **sourcegraph-code-intel**: Services for Code Intel code execution.
 - **sourcegraph-managed-**: There are multiple `-managed` projects, one for each our managed deployments.
