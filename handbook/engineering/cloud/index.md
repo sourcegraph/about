@@ -20,7 +20,7 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
 
 ## On-call
 
-- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerCloud%2C+:%5B_%5D%7D&patternType=structural)
+- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+ObservableOwnerCloud&patternType=literal)
 - [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/01b8adfc-9b85-462b-a841-945791c17e9e/main)
 
 ### Planning

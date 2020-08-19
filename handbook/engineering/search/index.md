@@ -21,7 +21,7 @@ Our current goals are documented in the [search team's current tracking issue](h
 
 ## On-call
 
-- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerSearch%2C+:%5B_%5D%7D&patternType=structural)
+- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+ObservableOwnerSearch&patternType=literal)
 - [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/f482ef3e-f5dc-4bef-b7c4-307e0ad30d6a)
 
 ## Growth plan
