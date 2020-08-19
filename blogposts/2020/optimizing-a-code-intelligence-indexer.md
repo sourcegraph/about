@@ -9,7 +9,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-i
 published: true
 ---
 
-As part of the Sourcegraph 3.19 release, we [announced](/blog/todo) some impressive speed improvements to our [Go LSIF indexer](https://github.com/sourcegraph/lsif-go). This is another entry in the growing list of optimizing the time between committing code and having useful navigation of that code available on your Sourcegraph instance. We call this duration _time to intelligence_, and getting this as close to zero ensures that developers won't be stuck reviewing pull requests without accurate data to help them navigate unfamiliar code.
+As part of the Sourcegraph 3.19 release, we [announced](/blog/faster-go-precise-code-intelligence) some impressive speed improvements to our [Go LSIF indexer](https://github.com/sourcegraph/lsif-go). This is another entry in the growing list of optimizing the time between committing code and having useful navigation of that code available on your Sourcegraph instance. We call this duration _time to intelligence_, and getting this as close to zero ensures that developers won't be stuck reviewing pull requests without accurate data to help them navigate unfamiliar code.
 
 Between lsif-go v0.9.0 and lsif-go v1.0.0, we applied a series of optimizations that reduced the time required to index source code by 4x. **Twice**. The result is an indexer that runs in about [5% of the original time](https://github.com/sourcegraph/lsif-go/tree/master/benchmark.md).
 
