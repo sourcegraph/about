@@ -5,7 +5,7 @@ authorUrl: https://eric-fritz.com
 publishDate: 2020-08-17T08:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-indexer
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-improvements.png
+heroImage: https://sourcegraphstatic.com/blog/3.19/lsif-go-improvements.png
 published: true
 ---
 
@@ -35,13 +35,13 @@ Shlemiel and lsif-go v0.9.0 both spent a lot of time needlessly re-executing the
 
 lsif-go v0.9.0's walk to the paint can was actually a [traversal of an abstract syntax tree](https://github.com/sourcegraph/lsif-go/blob/1ac006466179176711e61e89dbf136d49e9fab34/internal/index/helper.go#L241).
 
-This particular line of code looks fairly innocuous, but only without considering the context from which the enclosing function is called: `findComments` is called on **every** identifier being indexed. This function is called for every type definition, every field, every function, every parameter, every local variable, and every type. Every identifier causes another traversal of the tree. Again and again, lsif-go v0.9.0 would trace the same set of edges only find itself at a node on a _slightly_ path from a previous traversal.
+This particular line of code looks fairly innocuous, but only without considering the context from which the enclosing function is called: `findComments` is called on **every** identifier being indexed. This function is called for every type definition, every field, every function, every parameter, every local variable, and every type. Every identifier causes another traversal of the tree. Again and again, lsif-go v0.9.0 would trace the same set of edges only find itself at a node on a path only _slightly_ different from a previous traversal.
 
 The following shows a _very_ reduced Go AST for the EKS API from the Go AWS SDK (click to enlarge). Here we're going to concentrate on the definition of the struct [`CreateClusterInput`](https://sourcegraph.com/github.com/aws/aws-sdk-go@a3411680ac767bb37ff50c73e58c53e2426fd80a/-/blob/service/eks/api.go#L2769:6).
 
 <div class="no-shadow">
-  <a href="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-ast.svg" target="_blank">
-    <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-ast.svg" alt="Go AST">
+  <a href="https://sourcegraphstatic.com/blog/3.19/lsif-go-ast.svg" target="_blank">
+    <img src="https://sourcegraphstatic.com/blog/3.19/lsif-go-ast.svg" alt="Go AST">
   </a>
 </div>
 
@@ -144,7 +144,7 @@ You can't throw work into a parallel executor and guarantee that your program ru
 The cost of indexing an entire package is high enough that there is obvious, tangible benefit of indexing multiple packages in different cores. This benefit far outweighs the any of the setup and queueing overhead.
 
 <div class="no-shadow">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-parallel.svg" alt="Parallelism diagram">
+  <img src="https://sourcegraphstatic.com/blog/3.19/lsif-go-parallel.svg" alt="Parallelism diagram">
 </div>
 
 In lsif-go v1.0.0, all writes to the file are synchronized by a single goroutine controlling the output buffer. This ensures that for any single goroutine emitting elements, the order of the elements they emit will hit disk in the same order. This is important as LSIF requires that edges refer only to a vertex that has already been indexed.r
@@ -156,14 +156,14 @@ Each non-trivial task is broken into package-level work, queued into a channel, 
 The following charts show the comparison between the last three versions of the indexer: v0.9.0, v0.10.0, and v1.0.0.
 
 <div class="no-shadow">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-perf-3.png" alt="performance comparison">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-perf-2.png" alt="performance comparison">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-perf-1.png" alt="performance comparison">
+  <img src="https://sourcegraphstatic.com/blog/3.19/lsif-go-perf-3.png" alt="performance comparison">
+  <img src="https://sourcegraphstatic.com/blog/3.19/lsif-go-perf-2.png" alt="performance comparison">
+  <img src="https://sourcegraphstatic.com/blog/3.19/lsif-go-perf-1.png" alt="performance comparison">
 </div>
 
 We plan to continue on this path of performance improvements. This is just the latest chapter in our continuing effort to bring fast, precise code navigation to every language, every codebase, and every programmer. If you thought this post was interesting or valuable, we'd appreciate it if you'd share it with others!
 
-To read another optimization story similar to this one, see our previous discussion about optimizing the [code intelligence backend](http://localhost:8000/blog/optimizing-a-code-intel-backend/), which concentrates on reducing the latency of the other half of the system that contributes to delays in code intelligence.
+To read another optimization story similar to this one, see our previous discussion about optimizing the [code intelligence backend](/blog/optimizing-a-code-intel-backend/), which concentrates on reducing the latency of the other half of the system that contributes to delays in code intelligence.
 
 <style>
   .blog-post__body .no-shadow img { box-shadow: none; }

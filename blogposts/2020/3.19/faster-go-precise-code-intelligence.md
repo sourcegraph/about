@@ -5,7 +5,7 @@ authorUrl: https://eric-fritz.com
 publishDate: 2020-08-17T08:00-07:00
 tags: [blog]
 slug: faster-go-precise-code-intelligence
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-improvements.png
+heroImage: https://sourcegraphstatic.com/blog/3.19/lsif-go-improvements.png
 published: true
 ---
 
@@ -31,7 +31,7 @@ Our goal is to _efficiently_ bring code intelligence to the massive engineering 
 So how do we perform at scale?
 
 <div class="no-shadow">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-perf-3.png" alt="performance comparison">
+  <img src="https://sourcegraphstatic.com/blog/3.19/lsif-go-perf-3.png" alt="performance comparison">
 </div>
 
 Much better now, thanks for asking.
