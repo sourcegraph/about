@@ -18,6 +18,11 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
 
 ## Processes
 
+## On-call
+
+- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerCloud%2C+:%5B_%5D%7D&patternType=structural)
+- [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/01b8adfc-9b85-462b-a841-945791c17e9e/main)
+
 ### Planning
 
 We meet every month for a planning session as the current iteration approaches its ends. In this meeting we collaborate on what our few and focused goals for the iteration should be, what their scope is and which teammates work on what.
