@@ -400,6 +400,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [noah@sourcegraph.com](mailto:noah@sourcegraph.com), [GitHub](https://github.com/strum355), [LinkedIn](https://linkedin.com/in/strum355), [Twitter](https://twitter.com/strum355)
 - Noah is a half Swiss 🇨🇭 half Irish 🇮🇪 UCC CS graduate who spends his time evangelising the Actor model, containers (not of the shipping variety), his favourite programming languages and complaining about subpar editor experiences. Sometime in the past, the last point drove him over the edge and into the world of language servers. Previously he was Performance Engineering Intern at Teamwork, Frontend/DevOps at CloudCIX and Head Systems Administrator at UCC Netsoc, the college tech/gaming society.
 
+## Bill Kolman
+
+- Account Executive
+- New York, New York
+- [Bill@sourcegraph.com](mailto:Bill@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/william-kolman/)
+- Bill lives in Long Island City, Queens with his wife, daughter, and dog. He has been in tech related sales since 2008. Most recently he has been working in early stage startups, building businesses from the ground up in the eastern US. Bill is an avid bicyclist, so when he's not evangelizing Sourcegraph or studying the newest trends in technology, he is probably exploring the 5 boroughs on his bike.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
