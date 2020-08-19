@@ -8,7 +8,7 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
 
 ## Milestones
 
-1. Any user can add public code
+1. Any user can add public code from github.com, gitlab.com and bitbucket.org
     - Code is indexed.
     - It's easy to search over only their code (vs all public code).
 2. Any user or organization can use Sourcegraph Cloud for free before it's GA
