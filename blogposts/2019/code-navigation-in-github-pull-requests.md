@@ -26,7 +26,7 @@ How does it help? Suppose you're reviewing a pull request that calls a function 
 
 ## Set it up
 
-You'll need to use Sourcegraph because [GitHub's code navigation](https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github) doesn't work in pull requests. GitHub has no public plans to add support, but if it does, switching should be easy because Sourcegraph's underlying [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) for [20+ languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) is open source, uses open standards (including Microsoft's LSP and [LSIF](https://docs.sourcegraph.com/user/code_intelligence/lsif)), and is [vendor neutral](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/).
+You'll need to use Sourcegraph because [GitHub's code navigation](https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github) doesn't work in pull requests. GitHub has no public plans to add support, but if it does, switching should be easy because Sourcegraph's underlying [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) for [20+ languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) is open source, uses open standards (including Microsoft's LSP and [LSIF](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence)), and is [vendor neutral](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/).
 
 #### First: try it on a public repository (~1min)
 
