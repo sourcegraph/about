@@ -12,7 +12,7 @@ published: true
 
 <div class="alert alert-info">
 
-Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/user/code_intelligence/lsif)".
+Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence)".
 
 </div>
 
@@ -223,7 +223,7 @@ with [dot](https://graphviz.gitlab.io/download/).
 - Validate: `lsif-util validate data.lsif`
 - Visualize: `lsif-util visualize data.lsif --distance 2 | dot -Tpng -o image.png`
 
-Of course, since we're Sourcegraph, we would be happy if you try out LSIF with a Sourcegraph instance by following these [instructions](https://docs.sourcegraph.com/user/code_intelligence/lsif).
+Of course, since we're Sourcegraph, we would be happy if you try out LSIF with a Sourcegraph instance by following these [instructions](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence).
 
 Check out [LSIF.dev](https://lsif.dev) for a curated list of LSIF indexers. If you are interested in adding your LSIF indexer to the list, create a pull request [here](https://github.com/lsif/lsif.github.io).
 

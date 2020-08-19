@@ -83,7 +83,7 @@ Sourcegraph's built-in monitoring with Grafana and Prometheus has been enhanced 
 
 ## LSIF-based code intelligence for multi-language repositories
 
-LSIF-based code intelligence now works on repositories with multiple projects and languages. Languages currently supported for LSIF include Go, TypeScript, Python, and C/C++, with support for Java currently in development. [Enable LSIF-powered code intelligence](https://docs.sourcegraph.com/user/code_intelligence/lsif) for your repositories by adding a simple step to your CI build process.
+LSIF-based code intelligence now works on repositories with multiple projects and languages. Languages currently supported for LSIF include Go, TypeScript, Python, and C/C++, with support for Java currently in development. [Enable LSIF-powered code intelligence](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence) for your repositories by adding a simple step to your CI build process.
 
 See the new [lsif.dev](https://lsif.dev/) site for list of languages with LSIF indexers (which means you can get precise, LSIF-based code intelligence on Sourcegraph).
 

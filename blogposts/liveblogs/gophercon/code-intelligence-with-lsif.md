@@ -12,7 +12,7 @@ published: true
 
 <div class="alert alert-info">
 
-Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/user/code_intelligence/lsif)".
+Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence)".
 
 </div>
 
