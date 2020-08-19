@@ -13,13 +13,10 @@ The release of Sourcegraph 3.19 happens to coincide with the [one-point-oh relea
 
 The code intelligence is hard at work trying to bring the _time to intelligence_ - the time between a commit and useful navigation of that code in your Sourcegraph instance - as close to zero as possible. We want your code to always have up-to-date precise code intelligence on the newest commits to help aid users browsing unfamiliar code and help aid code reviewers trying to understand new code in pull requests. Indexing speed is a _huge_ part of this, and we've made a great leap here.
 
-As an illustrative example, checkout the visual difference between indexing our [main repository](https://github.com/sourcegraph/sourcegraph) with lsif-go v0.9 (left) and indexing it with lsif-go v1.0 (right).
+As an illustrative example, checkout the visual difference between indexing our [main repository](https://github.com/sourcegraph/sourcegraph) with lsif-go v0.9 (above) and indexing it with lsif-go v1.0 (below).
 
-<div class="inline-images">
-  <!-- TODO - need to ensure these load/start at the same time -->
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-term-0.9.gif" alt="lsif-go v0.9">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.19/lsif-go-term-1.0.gif" alt="lsif-go v1.0">
-</div>
+[![asciicast](https://asciinema.org/a/pKTby2O4N1KC9RqXBkOO7JgBw.svg)](https://asciinema.org/a/pKTby2O4N1KC9RqXBkOO7JgBw)
+[![asciicast](https://asciinema.org/a/eEmncpfVa40yqhoB2ta0C8leR.svg)](https://asciinema.org/a/eEmncpfVa40yqhoB2ta0C8leR)
 
 ### Performance comparison
 
