@@ -1,4 +1,6 @@
-.blog-post-list-item {
+.blog-post {
+    overflow: hidden;
+
     &__image {
         max-width: 100%;
         max-height: 250px;
@@ -12,5 +14,16 @@
     &__read-more {
         color: $blue-7;
         font-weight: bold;
+    }
+
+    &__html {
+        img {
+            max-width: calc(100% - 10px);
+            max-height: 100vh;
+            box-shadow: 0 2px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
+            margin: 40px auto;
+            display: block;
+            border-style: none;
+        }
     }
 }

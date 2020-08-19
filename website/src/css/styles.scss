@@ -264,7 +264,6 @@ table {
 @import 'components/TestimonialCarousel';
 @import 'pages/404';
 @import 'pages/about';
-@import 'pages/blog-post';
 @import 'pages/customers';
 @import 'pages/_case_studies';
 @import 'pages/_white_papers';
@@ -282,6 +281,7 @@ table {
 @import 'pages/sales';
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
+@import 'templates/PostTemplate';
 @import 'components/PrismTheme';
 
 body {

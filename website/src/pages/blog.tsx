@@ -5,6 +5,7 @@ import { PostsList } from '../components/blog/PostsList'
 import { ContentPage } from '../components/content/ContentPage'
 import Layout from '../components/Layout'
 
+// TODO(sqs)
 export enum BLOGS {
     GopherCon = 'go',
     DotGo = 'go',
@@ -58,6 +59,7 @@ export const pageQuery = graphql`
                         description
                         heroImage
                         author
+                        authorUrl
                         tags
                         publishDate(formatString: "MMMM D, YYYY")
                         slug
@@ -73,6 +75,7 @@ export const pageQuery = graphql`
                     fields {
                         slug
                     }
+                    fileAbsolutePath
                 }
             }
         }

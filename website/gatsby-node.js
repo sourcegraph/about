@@ -44,12 +44,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-/** Generate pages from the markdown nodes we created in onCreateNode. */
+/**
+ * Generate pages from the markdown nodes we created in onCreateNode.
+ *
+ * @type {(args: import('gatsby').CreatePagesArgs) => Promise<any>}
+ */
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const PostTemplate = path.resolve(`src/templates/blogPostTemplate.tsx`)
+    const PostTemplate = path.resolve(`src/templates/PostTemplate.tsx`)
     const ContentTemplate = path.resolve(`src/templates/contentTemplate.tsx`)
     const PodcastEpisodeTemplate = path.resolve(`src/templates/podcastEpisodeTemplate.tsx`)
 

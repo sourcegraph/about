@@ -2,25 +2,30 @@ import { Link } from 'gatsby'
 import * as React from 'react'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
-import { PostListItemProps } from './postTypes'
+import { PostComponentProps } from './postTypes'
 
-interface Props extends PostListItemProps {}
+interface Props extends PostComponentProps {}
 
 /**
- * A summary for this release post, shown in a list of blog posts.
+ * A release post, shown by itself on a page.
+ *
+ * TODO(sqs): fix blogType
  */
-export const ReleasePostListItem: React.FunctionComponent<Props> = ({
+export const ReleasePost: React.FunctionComponent<Props> = ({
     post,
-    blogType,
     className = '',
     headerClassName = '',
     titleClassName = '',
-    tag: Tag = 'li',
+    titleLinkClassName = '',
+    tag: Tag = 'div',
 }) => (
     <Tag className={`release-post ${className}`}>
         <header className={`release-post__header ${headerClassName}`}>
             <h2 className={titleClassName}>
-                <Link to={`/${blogType}/${post.node.frontmatter.slug}`}>{post.node.frontmatter.title}</Link>
+                {/* TODO(sqs): blogType not /blog/ */}
+                <Link to={`/blog/${post.node.frontmatter.slug}`} className={`d-block ${titleLinkClassName}`}>
+                    {post.node.frontmatter.title}
+                </Link>
             </h2>
             <p className="text-muted mb-0">{post.node.frontmatter.publishDate}</p>
         </header>

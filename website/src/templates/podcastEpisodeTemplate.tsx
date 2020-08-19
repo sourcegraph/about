@@ -126,12 +126,6 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                         />
                                     ))}
                             </div>
-
-                            <section className="blog-post__footer mt-4 pt-4">
-                                <div className="pt-4">
-                                    <SocialLinks url={`https://about.sourcegraph.com/podcast/${slug}`} title={title} />
-                                </div>
-                            </section>
                         </div>
                     </ContentSection>
                 </ContentPage>

@@ -4,9 +4,8 @@
 
         &-title {
             font-size: $h5-font-size;
-            a {
+            &-link {
                 color: $body-color;
-                display: block;
             }
         }
     }
