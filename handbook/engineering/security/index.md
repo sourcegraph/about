@@ -6,6 +6,8 @@ At Sourcegraph we think that security is an enabler for the business. Sourcegrap
 
 Customers know they can confidently and securely use Sourcegraph with their private code.
 
+[This (internal) document](https://docs.google.com/document/d/1HhYfnkC17yCPqqw91H1QAF7q8toOOiNtoOOw06hqrNQ/) details our plan.
+
 ## Contact
 
 - [security@sourcegraph.com](mailto:security@sourcegraph.com)
@@ -22,14 +24,6 @@ Customers know they can confidently and securely use Sourcegraph with their priv
 - Increase our security posture by running traditional security tools such as vulnerability scanners, SAST, and DAST tools.
     - https://github.com/sourcegraph/sourcegraph/security/code-scanning
 - Create a culture of security at Sourcegraph that empowers all of our engineers to write secure code.
-
-## Goals
-
-TODO
-    
-## Roadmap
-
-Please see [this document](https://docs.google.com/document/d/1HhYfnkC17yCPqqw91H1QAF7q8toOOiNtoOOw06hqrNQ/)
 
 ## Reporting a Vulnerability
 
@@ -68,4 +62,4 @@ When we receive [a report of a security vulnerability](#how-to-report-a-security
 
 ## Open Positions
 
-[Software Security Engineer](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+[Software Engineer - Security](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-security.md)
