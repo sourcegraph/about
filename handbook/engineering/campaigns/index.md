@@ -48,7 +48,7 @@ The short-term goal and primary focus of the team is to *deliver campaigns to al
 1. Reach out to one customer, summarizing the changes in the new Campaigns workflow, to give them a heads-up.
    - Hypothesis: they will reply within 3 days
    - Hypothesis: they will engage within 5 days
-1. Reach out to two other customers, as in previous step.
+1. After we hear from that customer, we reach out to two other customers, as in previous step.
 1. After responding to feedback, we declare the state of Campaigns to be Good and Stable.
 1. Reach out to a small set of customers using Campaigns.
    - Hypothesis: each one will reply within 3 days
