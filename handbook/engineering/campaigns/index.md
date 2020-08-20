@@ -49,7 +49,7 @@ The short-term goal and primary focus of the team is to *deliver campaigns to al
    - Hypothesis: they will reply within 3 days
    - Hypothesis: they will engage within 5 days
 1. After we hear from that customer, we reach out to two other customers, as in previous step.
-1. After responding to feedback, we declare the state of Campaigns to be Good and Stable.
+1. After responding to feedback from at least 3 customers, we declare the state of Campaigns to be Good and Stable.
 1. Reach out to a small set of customers using Campaigns.
    - Hypothesis: each one will reply within 3 days
    - Hypothesis: majority will create at least one new campaign with the new workflow
