@@ -46,14 +46,14 @@ The short-term goal and primary focus of the team is to *deliver campaigns to al
 1. Someone on the Campaigns team makes one meaningful change to at least two repositories.
 1. A Sourcegraph engineer (not on this team) makes one meaningful change to at least two repositories.
 1. Reach out to one customer, summarizing the changes in the new Campaigns workflow, to give them a heads-up.
-  - Hypothesis: they will reply within 3 days
-  - Hypothesis: they will engage within 5 days
+   - Hypothesis: they will reply within 3 days
+   - Hypothesis: they will engage within 5 days
 1. Reach out to two other customers, as in previous step.
 1. After responding to feedback, we declare the state of Campaigns to be Good and Stable.
 1. Reach out to a small set of customers using Campaigns.
-  - Hypothesis: each one will reply within 3 days
-  - Hypothesis: majority will create at least one new campaign with the new workflow
-  - Hypothesis: majority will send us feedback about Campaigns
+   - Hypothesis: each one will reply within 3 days
+   - Hypothesis: majority will create at least one new campaign with the new workflow
+   - Hypothesis: majority will send us feedback about Campaigns
 
 [WIP longer term goals (internal only)](https://docs.google.com/document/d/1ADmpfJuVhprHl8Eimuj4fMiVr1kCRVLZpt98HLr9618/edit)
 
