@@ -125,7 +125,7 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 
 ## Brown bags
 
-Brown bags are our internal knowledge sharing sessions. These meetings can be formal presentations or  informal discussions and are open to anyone in the company. Subjects of talks are completely free and are not limited to tech. Here are a few examples:
+Brown bags are our internal knowledge sharing sessions. These meetings can be formal presentations or informal discussions and are open to anyone in the company. Subjects of talks are completely free and are not limited to tech discussions. Here are a few examples:
 
 - sharing internal team knowledge to the rest of the company
 - presenting a useful tool
