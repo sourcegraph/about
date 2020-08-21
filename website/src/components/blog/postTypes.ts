@@ -68,6 +68,7 @@ export enum BlogType {
     GraphQLSummit = 'graphql',
     StrangeLoop = 'strange-loop',
     GitHubUniverse = 'github-universe',
+    Podcast = 'podcast',
     Blog = 'blog',
 }
 
@@ -121,6 +122,19 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
             description: 'We liveblogged the 2016 GitHub Universe event.',
         },
     },
+    podcast: {
+        title: 'The Sourcegraph Podcast',
+        baseUrl: '/podcast',
+        meta: {
+            title: 'The Sourcegraph Podcast',
+            description: 'Conversations, stories, and insights from dev tool creators',
+        },
+    },
 }
 
-export const urlToPost = (post: Post, blog: BlogTypeInfo): string => `${blog.baseUrl}/${post.frontmatter.slug}`
+export const urlToPost = (post: Post, blog: BlogTypeInfo): string => {
+    const baseUrl = post.frontmatter.tags?.includes('podcast')
+        ? BLOG_TYPE_TO_INFO[BlogType.Podcast].baseUrl
+        : blog.baseUrl
+    return `${baseUrl}/${post.frontmatter.slug}`
+}

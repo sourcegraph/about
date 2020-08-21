@@ -27,9 +27,10 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
                     </Link>
                 </h2>
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
+                {guestsHTML && <p className="text-muted mb-0" dangerouslySetInnerHTML={{ __html: guestsHTML }}></p>}
             </header>
             {summaryHTML && (
-                <div className="card-body podcast-post__body" dangerouslySetInnerHTML={{ __html: summaryHTML }} />
+                <div className="card-body podcast-post__body pt-0" dangerouslySetInnerHTML={{ __html: summaryHTML }} />
             )}
             <div className="card-body border-top d-flex flex-wrap align-items-center">
                 {audioHTML && (
