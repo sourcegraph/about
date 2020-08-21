@@ -2,17 +2,11 @@ import { graphql, PageProps } from 'gatsby'
 import _ from 'lodash'
 import * as React from 'react'
 import { PostsListPage } from '../components/blog/PostsListPage'
-import { BLOGS } from '../components/blog/postTypes'
+import { BLOG_TYPE_TO_INFO } from '../components/blog/postTypes'
 
 export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
-        title="GopherCon and dotGo liveblogs"
-        meta={{
-            title: 'GopherCon and dotGo liveblogs',
-            description: 'Check out the official GopherCon 2019 Liveblog proudly hosted by Sourcegraph.',
-            image: 'https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png',
-        }}
-        blogType={BLOGS.GopherCon}
+        blogInfo={BLOG_TYPE_TO_INFO['go']}
         posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
         location={props.location}
     ></PostsListPage>

@@ -3,7 +3,7 @@ title: 'InnerSource and reaping the benefits of open source behind your firewall
 author: 'Beyang Liu'
 publishDate: 2016-09-14T22:22-07:00
 tags: [
-  "blog"
+  "github-universe"
 ]
 slug: github-universe-liveblog-innersource
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/3fg8DZm2jCgma0GoK8M6kM/fcb7325505954579a80ae76b1f5d5798/1_OIAqPdJH9_SsxxfzTDu0SA.jpeg

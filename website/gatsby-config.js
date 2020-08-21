@@ -1,4 +1,5 @@
 // @ts-check
+const path = require('path')
 
 module.exports = {
   siteMetadata: {
@@ -19,7 +20,7 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/../blogposts/`,
-        ignore: ['liveblog/**/*'],
+        ignore: [`${__dirname}/../blogposts/liveblogs/**/*`],
       },
     },
     {

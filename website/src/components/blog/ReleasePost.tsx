@@ -8,11 +8,10 @@ interface Props extends PostComponentProps {}
 
 /**
  * A release post, shown by itself on a page.
- *
- * TODO(sqs): fix blogType
  */
 export const ReleasePost: React.FunctionComponent<Props> = ({
     post,
+    url,
     className = '',
     headerClassName = '',
     titleClassName = '',
@@ -22,8 +21,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
     <Tag className={`release-post ${className}`}>
         <header className={`release-post__header ${headerClassName}`}>
             <h2 className={titleClassName}>
-                {/* TODO(sqs): blogType not /blog/ */}
-                <Link to={`/blog/${post.frontmatter.slug}`} className={`d-block ${titleLinkClassName}`}>
+                <Link to={url} className={`d-block ${titleLinkClassName}`}>
                     {post.frontmatter.title}
                 </Link>
             </h2>

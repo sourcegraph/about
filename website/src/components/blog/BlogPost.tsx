@@ -7,6 +7,7 @@ interface Props extends PostComponentProps {}
 
 export const BlogPost: React.FunctionComponent<Props> = ({
     post,
+    url,
     full,
     className = '',
     headerClassName = '',
@@ -23,8 +24,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                     ? truncate(post.frontmatter.description, { length: 300 })
                     : truncate(post.excerpt, { length: 300 })}{' '}
             </p>
-            {/* TODO(sqs): blogType, dont hardcode /blog/ */}
-            <Link to={`/blog/${post.frontmatter.slug}`} className="blog-post__read-more">
+            <Link to={url} className="blog-post__read-more">
                 Read more
             </Link>
         </>
@@ -34,8 +34,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
                 <h2 className={titleClassName}>
-                    {/* TODO(sqs): blogType, dont hardcode /blog/ */}
-                    <Link to={`/blog/${post.frontmatter.slug}`} className={`d-block ${titleLinkClassName}`}>
+                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
                         {post.frontmatter.title}
                     </Link>
                 </h2>
@@ -46,8 +45,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
             {!full && post.frontmatter.heroImage ? (
                 <div className="card-body pt-0 d-flex">
                     <div className="flex-1">{body}</div>
-                    {/* TODO(sqs): blogType, dont hardcode /blog/ */}
-                    <Link to={`/blog/${post.frontmatter.slug}`} className="pl-3">
+                    <Link to={url} className="pl-3">
                         <img
                             className="blog-post__image"
                             src={post.frontmatter.heroImage}

@@ -2,15 +2,11 @@ import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
 import BlogHeadLinks from '../components/blog/BlogHeadLinks'
 import { PostsListPage } from '../components/blog/PostsListPage'
+import { BLOG_TYPE_TO_INFO, BlogType } from '../components/blog/postTypes'
 
 export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
-        title="Blog"
-        meta={{
-            title: 'Sourcegraph blog',
-            description:
-                "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
-        }}
+        blogInfo={BLOG_TYPE_TO_INFO[BlogType.Blog]}
         posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
         location={props.location}
     >

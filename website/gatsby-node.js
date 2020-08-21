@@ -76,7 +76,7 @@ exports.createPages = ({ actions, graphql }) => {
                   fileAbsolutePath
                   parent {
                     ... on File {
-                      relativePath
+                      relativeDirectory
                       sourceInstanceName
                     }
                   }
@@ -100,6 +100,7 @@ exports.createPages = ({ actions, graphql }) => {
                 component: PostTemplate,
                 context: {
                   fileSlug: slug,
+                  blogType: 'blog',
                 },
               })
               break
@@ -107,20 +108,24 @@ exports.createPages = ({ actions, graphql }) => {
 
             case 'liveblog': {
               const MAP = {
-                'liveblogs/gophercon': 'go',
-                'liveblogs/dotgo': 'go',
-                'liveblogs/graphql-summit': 'graphql',
-                'liveblogs/strange-loop': 'strange-loop',
+                gophercon: 'go',
+                dotgo: 'go',
+                'graphql-summit': 'graphql',
+                'strange-loop': 'strange-loop',
+                'github-universe': 'github-universe',
               }
               const pathPrefix = MAP[node.parent.relativeDirectory]
               if (!pathPrefix) {
-                throw new Error(`no pathPrefix for ${node.fileAbsolutePath}`)
+                throw new Error(
+                  `no pathPrefix for ${node.fileAbsolutePath}, relativeDirectory is ${node.parent.relativeDirectory}`
+                )
               }
               createPage({
                 path: `/${pathPrefix}/${slug}`,
                 component: PostTemplate,
                 context: {
                   fileSlug: slug,
+                  blogType: MAP[node.parent.relativeDirectory],
                 },
               })
               break
