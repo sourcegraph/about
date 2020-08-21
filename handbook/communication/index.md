@@ -73,8 +73,6 @@ Structured meetings are great, but it's important to have casual, unscheduled, f
 - Be patient for external folks who are running late to our meetings.
   - For customers, prospects, and users, wait on the line for at least 10 minutes (and send them a friendly reminder after 3-5 minutes).
 
-### Brown bags
-
 ## [1-1 meetings](../leadership/1-1.md)
 
 See "[1-1 meetings](../leadership/1-1.md)".
