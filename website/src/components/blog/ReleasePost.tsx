@@ -23,17 +23,17 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
         <header className={`release-post__header ${headerClassName}`}>
             <h2 className={titleClassName}>
                 {/* TODO(sqs): blogType not /blog/ */}
-                <Link to={`/blog/${post.node.frontmatter.slug}`} className={`d-block ${titleLinkClassName}`}>
-                    {post.node.frontmatter.title}
+                <Link to={`/blog/${post.frontmatter.slug}`} className={`d-block ${titleLinkClassName}`}>
+                    {post.frontmatter.title}
                 </Link>
             </h2>
-            <p className="text-muted mb-0">{post.node.frontmatter.publishDate}</p>
+            <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
         </header>
         <h3 className="card-body pb-2 pt-0 m-0 release-post__changelog-header">Changelog</h3>
         <div className="release-post__items list-group list-group-flush">
-            {post.node.frontmatter.changelogItems?.map(({ url, category, description }, i) => (
-                <a href={url} className="release-post__item list-group-item list-group-item-action" key={i}>
-                    <span className="release-post__item-category">
+            {post.frontmatter.changelogItems?.map(({ url, category, description }, i) => (
+                <a href={url} className="release-post__item d-md-flex list-group-item list-group-item-action" key={i}>
+                    <span className="release-post__item-category mb-2 mb-md-0">
                         <span className="release-post__item-category-badge">{category}</span>
                     </span>
                     <span
@@ -47,7 +47,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
         </div>
         <ul className="card-body list-unstyled d-flex flex-wrap mb-0">
             <li className="release-post__help-item">
-                <a href="https://docs.sourcegraph.com/admin/install/">How to install</a>
+                <a href="https://docs.sourcegraph.com/admin/install">How to install</a>
             </li>
             <li className="release-post__help-item">
                 <a href="https://docs.sourcegraph.com/admin/updates">How to upgrade</a>
@@ -59,11 +59,8 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 </a>
             </li>
         </ul>
-        {post.node.html && (
-            <div
-                className="card-body border-top release-post__body"
-                dangerouslySetInnerHTML={{ __html: post.node.html }}
-            />
+        {post.html && (
+            <div className="card-body border-top release-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
         )}
     </Tag>
 )

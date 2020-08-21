@@ -1,19 +1,7 @@
 .post-template {
-    margin: 0 auto;
-    @include media-breakpoint-up(md) {
-        max-width: map-get($container-max-widths, md);
-    }
-    @include media-breakpoint-up(lg) {
-        max-width: 0.9 * map-get($container-max-widths, lg);
-    }
-
-    @include media-breakpoint-down(sm) {
-        &__post {
-            border: 0 !important;
-        }
-    }
-
     &__post {
+        min-height: 60vh;
+
         &-title {
             &-link {
                 color: $body-color;

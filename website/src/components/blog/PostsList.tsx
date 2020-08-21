@@ -17,7 +17,7 @@ export const PostsList: React.FunctionComponent<Props> = ({ posts, blogType }) =
         tag: 'li',
     }
     return (
-        <ul className="posts-list container list-unstyled">
+        <ul className="posts-list list-unstyled">
             {posts.map(post => {
                 const C = POST_TYPE_TO_COMPONENT[postType(post.node)]
                 return <C post={post.node} key={post.node.frontmatter.slug} {...postProps} />

@@ -29,7 +29,7 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <>
                 <nav className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}>
-                    <div className="container">
+                    <div className="container-lg px-0 px-lg-3">
                         <Link className="navbar-brand header__logo" to="/">
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}

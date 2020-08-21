@@ -1,40 +1,22 @@
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import _ from 'lodash'
 import * as React from 'react'
-import { PostsList } from '../components/blog/PostsList'
-import Layout from '../components/Layout'
+import { BLOGS } from './blog'
+import { PostsListPage } from '../components/blog/PostsListPage'
 
-export default class GraphQLSummitList extends React.Component<any, any> {
-    constructor(props: any) {
-        super(props)
-    }
-
-    public render(): JSX.Element | null {
-        const metaProps = {
+export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
+    <PostsListPage
+        meta={{
             title: 'GraphQL Summit 2017 Liveblog',
             description: 'Check out the official GraphQL Summit 2017 Liveblog proudly hosted by Sourcegraph.',
-        }
-        const graphqlPosts = this.props.data.allMarkdownRemark.edges
+        }}
+        blogType={BLOGS.GraphQLSummit}
+        posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
+        location={props.location}
+    ></PostsListPage>
+)
 
-        return (
-            <Layout
-                location={this.props.location}
-                meta={{
-                    title: metaProps.title,
-                    description: metaProps.description,
-                }}
-            >
-                <section className="content-section container hero-section text-center py-5">
-                    <h1>{metaProps.title}</h1>
-                </section>
-
-                <div className="gray-9 bg-white text-dark">
-                    <PostsList blogType="graphql" posts={graphqlPosts} />
-                </div>
-            </Layout>
-        )
-    }
-}
+export default Page
 
 export const pageQuery = graphql`
     query GraphQLPosts {

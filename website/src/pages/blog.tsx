@@ -1,13 +1,11 @@
 import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
 import BlogHeadLinks from '../components/blog/BlogHeadLinks'
-import { PostsList } from '../components/blog/PostsList'
-import { ContentPage } from '../components/content/ContentPage'
-import Layout from '../components/Layout'
+import { PostsListPage } from '../components/blog/PostsListPage'
 
 // TODO(sqs)
 export enum BLOGS {
-    GopherCon = 'go',
+    GopherCon = 'go', // TODO(sqs): combine with DotGo
     DotGo = 'go',
     GraphQLSummit = 'graphql',
     StrangeLoop = 'strange-loop',
@@ -15,36 +13,21 @@ export enum BLOGS {
     PressReleases = 'press-releases',
 }
 
-export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => {
-    const markdownBlogPosts = props.data.allMarkdownRemark.edges.filter(
-        (post: any) => post.node.frontmatter.published === true
-    )
-    const metaProps = {
-        title: 'Sourcegraph blog',
-        description:
-            "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
-    }
-
-    return (
-        <Layout
-            location={props.location}
-            meta={{
-                title: metaProps.title,
-                description: metaProps.description,
-            }}
-            className="bg-light navbar-light"
-        >
-            <ContentPage title="Sourcegraph blog" className="bg-light" titleClassName="display-4">
-                <div className="pt-4">
-                    <PostsList blogType="blog" posts={markdownBlogPosts} />
-                </div>
-                <div className="d-flex flex-column align-items-center">
-                    <BlogHeadLinks />
-                </div>
-            </ContentPage>
-        </Layout>
-    )
-}
+export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
+    <PostsListPage
+        meta={{
+            title: 'Sourcegraph blog',
+            description:
+                "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
+        }}
+        posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
+        location={props.location}
+    >
+        <div className="d-flex flex-column align-items-center">
+            <BlogHeadLinks />
+        </div>
+    </PostsListPage>
+)
 
 export const pageQuery = graphql`
     query BlogPosts {

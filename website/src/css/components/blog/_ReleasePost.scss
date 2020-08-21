@@ -17,10 +17,11 @@
     }
 
     &__item {
-        display: flex;
-
         &-category {
+            display: inline-block;
             flex: 0 0 20%;
+            max-width: 10rem;
+            padding-right: map-get($spacers, 3);
             &-badge {
                 @extend .badge;
                 border: solid 1px var(--primary);
@@ -31,6 +32,7 @@
 
         &-description {
             flex: 1;
+            min-width: 20rem;
             color: var(--body-color);
             p:last-child {
                 margin-bottom: 0;
@@ -51,16 +53,25 @@
     }
 
     &__help {
-        &-item a {
-            color: $secondary;
-            padding: map-get($spacers, 1) map-get($spacers, 2);
-            margin-right: map-get($spacers, 2);
+        &-item {
+            margin: 0 calc(-1 *#{map-get($spacers, 2)});
 
-            display: flex;
-            align-items: center;
-            svg {
-                margin-left: map-get($spacers, 1);
-                font-size: 0.8 * $font-size-sm;
+            a {
+                color: $secondary;
+                padding: map-get($spacers, 1) map-get($spacers, 2);
+
+                display: flex;
+                align-items: center;
+                svg {
+                    margin-left: map-get($spacers, 1);
+                    font-size: 0.8 * $font-size-sm;
+                }
+            }
+
+            &:not(:last-child) {
+                a {
+                    margin-right: map-get($spacers, 4);
+                }
             }
         }
     }

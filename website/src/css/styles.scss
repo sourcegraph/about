@@ -52,6 +52,7 @@ $input-btn-padding-y: 0.55rem;
 
 // Set variables that rely on Bootstrap variables.
 
+$spacer: 1rem;
 $spacers: (
     0: 0,
     1: (
@@ -110,6 +111,8 @@ $popover-max-width: 400px;
 
 $card-spacer-y: 1.25 * $spacer;
 $card-spacer-x: 1.25 * $spacer;
+
+$grid-gutter-width: 2rem;
 
 :root {
     --body-color: #{$body-color};
@@ -196,11 +199,7 @@ img.icon-inline,
     fill: currentColor;
 }
 
-.container-lg {
-    max-width: var(--breakpoint-lg);
-    margin-left: auto;
-    margin-right: auto;
-}
+// TODO(sqs): removed .container-lg, check request-code-change-management and universal-code-search-ebook pages
 
 .img-drop-shadow {
     max-width: calc(100% - 10px);
@@ -304,4 +303,7 @@ body {
 }
 .bg-black {
     background-color: #000;
+}
+.bg-light-transparent {
+    background-color: transparentize($light-11, 0.3);
 }

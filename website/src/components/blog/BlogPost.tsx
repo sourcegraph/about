@@ -50,8 +50,6 @@ export const BlogPost: React.FunctionComponent<Props> = ({
         </>
     )
 
-    const fileName = post.fileAbsolutePath.split('blogposts/').pop()
-
     return (
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
@@ -66,31 +64,20 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                 </p>
             </header>
             {!full && post.frontmatter.heroImage ? (
-                <div className="card-body row">
-                    <div className="col-sm-12 col-md-9">{body}</div>
-                    <div className="col-sm-12 col-md-3 text-center">
-                        {/* TODO(sqs): blogType, dont hardcode /blog/ */}
-                        <Link to={`/blog/${post.frontmatter.slug}`} className="d-block pt-2 align-self-center">
-                            <img
-                                className="blog-post__image"
-                                src={post.frontmatter.heroImage}
-                                alt={post.frontmatter.title}
-                            />
-                        </Link>
-                    </div>
+                <div className="card-body pt-0 d-flex">
+                    <div className="flex-1">{body}</div>
+                    {/* TODO(sqs): blogType, dont hardcode /blog/ */}
+                    <Link to={`/blog/${post.frontmatter.slug}`} className="pl-3">
+                        <img
+                            className="blog-post__image"
+                            src={post.frontmatter.heroImage}
+                            alt={post.frontmatter.title}
+                        />
+                    </Link>
                 </div>
             ) : (
                 <div className="card-body">{body}</div>
             )}
-            <div className="card-footer">
-                {/* TODO(sqs): full vs summary */}
-                <a
-                    href={`https://github.com/sourcegraph/about/edit/master/blogposts/${fileName}`}
-                    className="btn btn-link text-muted ml-3"
-                >
-                    Edit this post
-                </a>
-            </div>
         </Tag>
     )
 }

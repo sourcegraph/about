@@ -7,8 +7,9 @@ export default class BlogHeadLinks extends React.Component<any, any> {
         return (
             <p>
                 <span className="font-weight-bold pr-2">Past liveblogs:</span>
-                <Link to={BLOGS.StrangeLoop}>Strange Loop</Link> • <Link to={BLOGS.GopherCon}>GopherCon and dotGo</Link>{' '}
-                • <Link to={BLOGS.GraphQLSummit}>GraphQL Summit</Link>
+                <Link to={`/${BLOGS.StrangeLoop}`}>Strange Loop</Link> •{' '}
+                <Link to={`/${BLOGS.GopherCon}`}>GopherCon and dotGo</Link> •{' '}
+                <Link to={`/${BLOGS.GraphQLSummit}`}>GraphQL Summit</Link>
             </p>
         )
     }
