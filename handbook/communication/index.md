@@ -73,6 +73,8 @@ Structured meetings are great, but it's important to have casual, unscheduled, f
 - Be patient for external folks who are running late to our meetings.
   - For customers, prospects, and users, wait on the line for at least 10 minutes (and send them a friendly reminder after 3-5 minutes).
 
+### Brown bags
+
 ## [1-1 meetings](../leadership/1-1.md)
 
 See "[1-1 meetings](../leadership/1-1.md)".
@@ -122,3 +124,28 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 
 - [Conflict resolution](./code_of_conduct.md#conflict-resolution)
 - [Clean escalation](./code_of_conduct.md#clean-escalation)
+
+## Brown bags
+
+Brown bags are our internal knowledge sharing sessions. These meetings can be formal presentations or  informal discussions and are open to anyone in the company. Subjects of talks are completely free and are not limited to tech. Here are a few examples:
+
+- sharing internal team knowledge to the rest of the company
+- presenting a useful tool
+- presenting a personal project
+- hands on session / workshops
+- brainstorming session about an experimental subject
+- preparing an external talk
+
+Brown bags sessions take place every other friday and, to accomodate timezone differences, are split in two separate sessions:
+
+- EMEA Friendly Session Time: 7:00AM PST
+- NA Friendly Session Time: 2:00PM PST
+
+Each session is 1-hour long, however the session is only as long as the group needs to present and wants to keep the discussion going. They will both be recorded and published on Slack.
+
+Presentations can use one of two formats:
+
+- Lightning Talks: Around 5 to 7 minutes long
+- Presentation: Around 10 to 14 minutes long
+
+To sign-up, use this [Google Sheet](https://docs.google.com/spreadsheets/d/1HLVFH9JUxchPNH4FoIQAThorbpdvmTl0ndmZzmpjsuU/edit?usp=sharing). The talk will be added to the Google Calendar invitation which will be sent to everyone.
