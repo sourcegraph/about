@@ -3,7 +3,6 @@ import truncate from 'lodash/truncate'
 import * as React from 'react'
 import { PostComponentProps } from './postTypes'
 import { BLOGS } from '../../pages/blog'
-import SocialLinks from '../SocialLinks'
 
 interface Props extends PostComponentProps {}
 
