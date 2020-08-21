@@ -5,6 +5,7 @@ import { PostsListPage } from '../components/blog/PostsListPage'
 
 export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
+        title="Blog"
         meta={{
             title: 'Sourcegraph blog',
             description:

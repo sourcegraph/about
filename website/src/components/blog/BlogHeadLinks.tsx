@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { BLOGS } from '../../pages/blog'
+import { BLOGS } from './postTypes'
 
 export default class BlogHeadLinks extends React.Component<any, any> {
     public render(): JSX.Element {

@@ -1,13 +1,13 @@
 import { graphql, PageProps } from 'gatsby'
-import _ from 'lodash'
 import * as React from 'react'
-import { BLOGS } from './blog'
 import { PostsListPage } from '../components/blog/PostsListPage'
+import { BLOGS } from '../components/blog/postTypes'
 
 export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
+        title="GraphQL Summit 2017 liveblog"
         meta={{
-            title: 'GraphQL Summit 2017 Liveblog',
+            title: 'GraphQL Summit 2017 liveblog',
             description: 'Check out the official GraphQL Summit 2017 Liveblog proudly hosted by Sourcegraph.',
         }}
         blogType={BLOGS.GraphQLSummit}
@@ -28,12 +28,12 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
-                        description
                         heroImage
                         author
                         tags
                         publishDate(formatString: "MMMM D, YYYY")
                         slug
+                        published
                         description
                     }
                     html

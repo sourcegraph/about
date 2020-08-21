@@ -2,7 +2,6 @@ import { Link } from 'gatsby'
 import truncate from 'lodash/truncate'
 import * as React from 'react'
 import { PostComponentProps } from './postTypes'
-import { BLOGS } from '../../pages/blog'
 
 interface Props extends PostComponentProps {}
 
@@ -15,22 +14,6 @@ export const BlogPost: React.FunctionComponent<Props> = ({
     titleLinkClassName = '',
     tag: Tag = 'div',
 }) => {
-    let slug = post.frontmatter.slug
-    switch (slug) {
-        case BLOGS.GopherCon:
-            slug = `/${BLOGS.GopherCon}/${slug}`
-            break
-        case BLOGS.GraphQLSummit:
-            slug = `/${BLOGS.GraphQLSummit}/${slug}`
-            break
-        case BLOGS.StrangeLoop:
-            slug = `/${BLOGS.StrangeLoop}/${slug}`
-            break
-        default:
-            slug = `/${BLOGS.Blog}/${slug}`
-            break
-    }
-
     const body = full ? (
         <div className="blog-post__html" dangerouslySetInnerHTML={{ __html: post.html }} />
     ) : (

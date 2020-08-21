@@ -1,11 +1,12 @@
 import { graphql, PageProps } from 'gatsby'
 import _ from 'lodash'
 import * as React from 'react'
-import { BLOGS } from './blog'
 import { PostsListPage } from '../components/blog/PostsListPage'
+import { BLOGS } from '../components/blog/postTypes'
 
 export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
+        title="Strange Loop liveblog"
         meta={{
             title: 'Strange Loop liveblog',
             description: 'Check out the official Strange Loop 2019 Liveblog proudly hosted by Sourcegraph.',

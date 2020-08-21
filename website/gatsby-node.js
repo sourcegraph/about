@@ -93,8 +93,8 @@ exports.createPages = ({ actions, graphql }) => {
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           const slug = node.fields.slug
 
-          if (absPath.includes('/blogposts') && node.frontmatter.published === true) {
-            if (node.frontmatter.tags && node.frontmatter.tags.includes('blog')) {
+          switch (node.parent.sourceInstanceName) {
+            case 'blog': {
               createPage({
                 path: `/blog/${slug}`,
                 component: PostTemplate,
@@ -102,75 +102,68 @@ exports.createPages = ({ actions, graphql }) => {
                   fileSlug: slug,
                 },
               })
-            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('press-release')) {
-              createPage({
-                path: `/press-releases/${slug}`,
-                component: PostTemplate,
-                context: {
-                  fileSlug: slug,
-                },
-              })
-            } else if (
-              node.frontmatter.tags &&
-              (node.frontmatter.tags.includes('gophercon') || node.frontmatter.tags.includes('dotGo'))
-            ) {
-              createPage({
-                path: `/go/${slug}`,
-                component: PostTemplate,
-                context: {
-                  fileSlug: slug,
-                },
-              })
-            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('graphql')) {
-              createPage({
-                path: `/graphql/${slug}`,
-                component: PostTemplate,
-                context: {
-                  fileSlug: slug,
-                },
-              })
-            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('strange-loop')) {
-              createPage({
-                path: `/strange-loop/${slug}`,
-                component: PostTemplate,
-                context: {
-                  fileSlug: slug,
-                },
-              })
+              break
             }
-          } else if (node.frontmatter.tags && node.frontmatter.tags.includes('podcast')) {
-            createPage({
-              path: `/podcast/${slug}`,
-              component: PodcastEpisodeTemplate,
-              context: {
-                fileSlug: slug,
-                showTab: 'summary',
-              },
-            })
-            createPage({
-              path: `/podcast/${slug}/notes`,
-              component: PodcastEpisodeTemplate,
-              context: {
-                fileSlug: slug,
-                showTab: 'notes',
-              },
-            })
-            createPage({
-              path: `/podcast/${slug}/transcript`,
-              component: PodcastEpisodeTemplate,
-              context: {
-                fileSlug: slug,
-                showTab: 'transcript',
-              },
-            })
-          } else {
-            createPage({
-              path: slug,
-              component: ContentTemplate,
-              context: {
-                fileSlug: slug,
-              },
-            })
+
+            case 'liveblog': {
+              const MAP = {
+                'liveblogs/gophercon': 'go',
+                'liveblogs/dotgo': 'go',
+                'liveblogs/graphql-summit': 'graphql',
+                'liveblogs/strange-loop': 'strange-loop',
+              }
+              const pathPrefix = MAP[node.parent.relativeDirectory]
+              if (!pathPrefix) {
+                throw new Error(`no pathPrefix for ${node.fileAbsolutePath}`)
+              }
+              createPage({
+                path: `/${pathPrefix}/${slug}`,
+                component: PostTemplate,
+                context: {
+                  fileSlug: slug,
+                },
+              })
+              break
+            }
+
+            case 'podcast': {
+              createPage({
+                path: `/podcast/${slug}`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'summary',
+                },
+              })
+              createPage({
+                path: `/podcast/${slug}/notes`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'notes',
+                },
+              })
+              createPage({
+                path: `/podcast/${slug}/transcript`,
+                component: PodcastEpisodeTemplate,
+                context: {
+                  fileSlug: slug,
+                  showTab: 'transcript',
+                },
+              })
+              break
+            }
+
+            default: {
+              createPage({
+                path: slug,
+                component: ContentTemplate,
+                context: {
+                  fileSlug: slug,
+                },
+              })
+              break
+            }
           }
         })
       })
