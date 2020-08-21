@@ -5,6 +5,9 @@ import { PostComponentProps } from './postTypes'
 
 interface Props extends PostComponentProps {}
 
+/**
+ * A blog post.
+ */
 export const BlogPost: React.FunctionComponent<Props> = ({
     post,
     url,

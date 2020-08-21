@@ -7,7 +7,7 @@ import { PostComponentProps } from './postTypes'
 interface Props extends PostComponentProps {}
 
 /**
- * A release post, shown by itself on a page.
+ * A post about a release.
  */
 export const ReleasePost: React.FunctionComponent<Props> = ({
     post,

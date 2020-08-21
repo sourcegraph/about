@@ -73,17 +73,11 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
 
         return (
             <Layout location={this.props.location} meta={meta} className="navbar-dark bg-black">
-                <Helmet>
-                    <link
-                        rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-                    />
-                </Helmet>
                 <ContentPage
                     title="The Podcast🎙"
-                    titleClassName="podcast__banner"
+                    titleClassName="podcast__banner text-white"
                     mainActions={
-                        <div className="d-flex flex-column align-items-center podcast__subbanner">
+                        <div className="d-flex flex-column align-items-center podcast__subbanner text-white">
                             Conversations, stories, and insights from dev tool creators
                         </div>
                     }

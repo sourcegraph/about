@@ -284,9 +284,9 @@ export default class JobsPage extends React.Component<any, any> {
             >
                 <ContentPage
                     title="The Podcast🎙"
-                    titleClassName="podcast__banner"
+                    titleClassName="podcast__banner text-white"
                     mainActions={
-                        <div className="d-flex flex-column align-items-center podcast__subbanner">
+                        <div className="d-flex flex-column align-items-center podcast__subbanner text-white">
                             Conversations, stories, and insights from dev tool creators
                         </div>
                     }

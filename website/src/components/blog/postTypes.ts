@@ -1,10 +1,12 @@
 import React from 'react'
 import { BlogPost } from './BlogPost'
 import { ReleasePost } from './ReleasePost'
+import { PodcastPost } from './PodcastPost'
 
 export enum PostType {
     BlogPost,
     ReleasePost,
+    PodcastPost,
 }
 
 export interface Post {
@@ -50,10 +52,15 @@ export interface PostComponentProps {
 export const POST_TYPE_TO_COMPONENT: Record<PostType, React.FunctionComponent<PostComponentProps>> = {
     [PostType.BlogPost]: BlogPost,
     [PostType.ReleasePost]: ReleasePost,
+    [PostType.PodcastPost]: PodcastPost,
 }
 
 export const postType = (post: Post): PostType =>
-    post.frontmatter.tags?.includes('release') ? PostType.ReleasePost : PostType.BlogPost
+    post.frontmatter.tags?.includes('release')
+        ? PostType.ReleasePost
+        : post.frontmatter.tags?.includes('podcast')
+        ? PostType.PodcastPost
+        : PostType.BlogPost
 
 export enum BlogType {
     GopherCon = 'go',
