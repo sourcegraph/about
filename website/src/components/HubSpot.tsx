@@ -6,17 +6,16 @@ export interface HubSpotForm {
     //  onFormSubmitted?: () => void
 }
 
-export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, onFormSubmitted }: HubSpotForm): void {
+export function createHubSpotForm({ portalId, formId, targetId }: HubSpotForm): void {
     const script = document.createElement('script')
     script.src = '//js.hsforms.net/forms/v2.js'
     const hubspot = document.getElementById(targetId)
     hubspot!.appendChild(script)
     script.addEventListener('load', () => {
-        ;(window as any).hbspt.forms.create({
+        ; (window as any).hbspt.forms.create({
             portalId,
             formId,
             target: `#${targetId}`,
-            onFormSubmit,
         })
     })
 }
