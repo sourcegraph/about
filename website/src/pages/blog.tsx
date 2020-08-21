@@ -3,16 +3,6 @@ import * as React from 'react'
 import BlogHeadLinks from '../components/blog/BlogHeadLinks'
 import { PostsListPage } from '../components/blog/PostsListPage'
 
-// TODO(sqs)
-export enum BLOGS {
-    GopherCon = 'go', // TODO(sqs): combine with DotGo
-    DotGo = 'go',
-    GraphQLSummit = 'graphql',
-    StrangeLoop = 'strange-loop',
-    Blog = 'blog',
-    PressReleases = 'press-releases',
-}
-
 export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
         meta={{

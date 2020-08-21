@@ -74,6 +74,12 @@ exports.createPages = ({ actions, graphql }) => {
                     slug
                   }
                   fileAbsolutePath
+                  parent {
+                    ... on File {
+                      relativePath
+                      sourceInstanceName
+                    }
+                  }
                 }
               }
             }
@@ -85,89 +91,86 @@ exports.createPages = ({ actions, graphql }) => {
         }
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          if (node.fileAbsolutePath) {
-            const slug = node.fields.slug
-            const absPath = node.fileAbsolutePath
+          const slug = node.fields.slug
 
-            if (absPath.includes('/blogposts') && node.frontmatter.published === true) {
-              if (node.frontmatter.tags && node.frontmatter.tags.includes('blog')) {
-                createPage({
-                  path: `/blog/${slug}`,
-                  component: PostTemplate,
-                  context: {
-                    fileSlug: slug,
-                  },
-                })
-              } else if (node.frontmatter.tags && node.frontmatter.tags.includes('press-release')) {
-                createPage({
-                  path: `/press-releases/${slug}`,
-                  component: PostTemplate,
-                  context: {
-                    fileSlug: slug,
-                  },
-                })
-              } else if (
-                node.frontmatter.tags &&
-                (node.frontmatter.tags.includes('gophercon') || node.frontmatter.tags.includes('dotGo'))
-              ) {
-                createPage({
-                  path: `/go/${slug}`,
-                  component: PostTemplate,
-                  context: {
-                    fileSlug: slug,
-                  },
-                })
-              } else if (node.frontmatter.tags && node.frontmatter.tags.includes('graphql')) {
-                createPage({
-                  path: `/graphql/${slug}`,
-                  component: PostTemplate,
-                  context: {
-                    fileSlug: slug,
-                  },
-                })
-              } else if (node.frontmatter.tags && node.frontmatter.tags.includes('strange-loop')) {
-                createPage({
-                  path: `/strange-loop/${slug}`,
-                  component: PostTemplate,
-                  context: {
-                    fileSlug: slug,
-                  },
-                })
-              }
-            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('podcast')) {
+          if (absPath.includes('/blogposts') && node.frontmatter.published === true) {
+            if (node.frontmatter.tags && node.frontmatter.tags.includes('blog')) {
               createPage({
-                path: `/podcast/${slug}`,
-                component: PodcastEpisodeTemplate,
+                path: `/blog/${slug}`,
+                component: PostTemplate,
                 context: {
                   fileSlug: slug,
-                  showTab: 'summary',
                 },
               })
+            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('press-release')) {
               createPage({
-                path: `/podcast/${slug}/notes`,
-                component: PodcastEpisodeTemplate,
+                path: `/press-releases/${slug}`,
+                component: PostTemplate,
                 context: {
                   fileSlug: slug,
-                  showTab: 'notes',
                 },
               })
+            } else if (
+              node.frontmatter.tags &&
+              (node.frontmatter.tags.includes('gophercon') || node.frontmatter.tags.includes('dotGo'))
+            ) {
               createPage({
-                path: `/podcast/${slug}/transcript`,
-                component: PodcastEpisodeTemplate,
+                path: `/go/${slug}`,
+                component: PostTemplate,
                 context: {
                   fileSlug: slug,
-                  showTab: 'transcript',
                 },
               })
-            } else {
+            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('graphql')) {
               createPage({
-                path: slug,
-                component: ContentTemplate,
+                path: `/graphql/${slug}`,
+                component: PostTemplate,
+                context: {
+                  fileSlug: slug,
+                },
+              })
+            } else if (node.frontmatter.tags && node.frontmatter.tags.includes('strange-loop')) {
+              createPage({
+                path: `/strange-loop/${slug}`,
+                component: PostTemplate,
                 context: {
                   fileSlug: slug,
                 },
               })
             }
+          } else if (node.frontmatter.tags && node.frontmatter.tags.includes('podcast')) {
+            createPage({
+              path: `/podcast/${slug}`,
+              component: PodcastEpisodeTemplate,
+              context: {
+                fileSlug: slug,
+                showTab: 'summary',
+              },
+            })
+            createPage({
+              path: `/podcast/${slug}/notes`,
+              component: PodcastEpisodeTemplate,
+              context: {
+                fileSlug: slug,
+                showTab: 'notes',
+              },
+            })
+            createPage({
+              path: `/podcast/${slug}/transcript`,
+              component: PodcastEpisodeTemplate,
+              context: {
+                fileSlug: slug,
+                showTab: 'transcript',
+              },
+            })
+          } else {
+            createPage({
+              path: slug,
+              component: ContentTemplate,
+              context: {
+                fileSlug: slug,
+              },
+            })
           }
         })
       })

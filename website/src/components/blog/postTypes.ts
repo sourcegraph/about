@@ -49,5 +49,19 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, React.FunctionComponent<Po
     [PostType.ReleasePost]: ReleasePost,
 }
 
-export const postType = (post: Post['node']): PostType =>
+export const postType = (post: Post): PostType =>
     post.frontmatter.tags?.includes('release') ? PostType.ReleasePost : PostType.BlogPost
+
+export enum BLOGS {
+    GopherCon = 'go',
+    DotGo = 'go',
+    GraphQLSummit = 'graphql',
+    StrangeLoop = 'strange-loop',
+    Blog = 'blog',
+}
+
+const TAG_TO_BLOG: Record<string>
+
+export const postUrl = (post: Post): string => {
+    post.frontmatter.tags?.includes
+}

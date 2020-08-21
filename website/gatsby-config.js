@@ -17,8 +17,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blogposts`,
+        name: `blog`,
         path: `${__dirname}/../blogposts/`,
+        ignore: ['liveblog/**/*'],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `liveblog`,
+        path: `${__dirname}/../blogposts/liveblog`,
       },
     },
     {

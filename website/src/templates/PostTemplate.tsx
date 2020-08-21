@@ -1,6 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import { POST_TYPE_TO_COMPONENT, postType } from '../components/blog/postTypes'
 import { BlogHeader } from '../components/blog/BlogHeader'

@@ -26,9 +26,6 @@ export const BlogPost: React.FunctionComponent<Props> = ({
         case BLOGS.StrangeLoop:
             slug = `/${BLOGS.StrangeLoop}/${slug}`
             break
-        case BLOGS.PressReleases:
-            slug = `/${BLOGS.PressReleases}/${slug}`
-            break
         default:
             slug = `/${BLOGS.Blog}/${slug}`
             break
