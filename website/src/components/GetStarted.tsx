@@ -37,7 +37,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm &#13;
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph &#13;
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph &#13;
-                                    sourcegraph/server:3.18.0
+                                    sourcegraph/server:3.19.1
                                     "
                                     aria-label="A Docker run command to start a local Sourcegraph instance"
                                 />
