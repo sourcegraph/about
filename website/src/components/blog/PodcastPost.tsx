@@ -10,6 +10,7 @@ interface Props extends PostComponentProps {}
  */
 export const PodcastPost: React.FunctionComponent<Props> = ({
     post,
+    full,
     url,
     className = '',
     headerClassName = '',
@@ -17,7 +18,7 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
     titleLinkClassName = '',
     tag: Tag = 'div',
 }) => {
-    const { guestsHTML, audioHTML, summaryHTML } = getHTMLParts(post.html)
+    const { guestsHTML, summaryHTML, audioHTML, showNotesHTML, transcriptHTML } = getHTMLParts(post.html)
     return (
         <Tag className={`podcast-post ${className}`}>
             <header className={`podcast-post__header ${headerClassName}`}>
@@ -36,19 +37,42 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
                 {audioHTML && (
                     <div className="podcast-post__body mr-3" dangerouslySetInnerHTML={{ __html: audioHTML }} />
                 )}
+
                 <div className="flex-1" />
-                <div>
-                    <Link className="text-muted mr-4" to={`/podcast/${post.frontmatter.slug}/notes`}>
-                        Notes
-                    </Link>
-                    <Link className="text-muted mr-4" to={`/podcast/${post.frontmatter.slug}/transcript`}>
-                        Transcript
-                    </Link>
-                    <Link className="text-muted" to="/podcast">
-                        Subscribe to podcast
-                    </Link>
-                </div>
+                {!full && (
+                    <div>
+                        <Link className="text-muted mr-4" to={post.fields.permalink}>
+                            Permalink
+                        </Link>
+                        <Link className="text-muted mr-4" to={`${post.fields.permalink}#notes`}>
+                            Show notes
+                        </Link>
+                        <Link className="text-muted mr-4" to={`${post.fields.permalink}#transcript`}>
+                            Transcript
+                        </Link>
+                    </div>
+                )}
             </div>
+            {full && (
+                <>
+                    {showNotesHTML && (
+                        <div className="card-body border-top">
+                            <h3 className="h4 mb-3">
+                                <a id="notes" /> Show notes
+                            </h3>
+                            <div className="podcast-post__body" dangerouslySetInnerHTML={{ __html: showNotesHTML }} />
+                        </div>
+                    )}
+                    {transcriptHTML && (
+                        <div className="card-body border-top">
+                            <h3 className="h4 mb-3">
+                                <a id="transcript" /> Transcript
+                            </h3>
+                            <div className="podcast-post__body" dangerouslySetInnerHTML={{ __html: transcriptHTML }} />
+                        </div>
+                    )}
+                </>
+            )}
         </Tag>
     )
 }

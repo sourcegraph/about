@@ -91,7 +91,6 @@ exports.createPages = ({ actions, graphql }) => {
   return new Promise((resolve, reject) => {
     const PostTemplate = path.resolve(`src/templates/PostTemplate.tsx`)
     const ContentTemplate = path.resolve(`src/templates/ContentTemplate.tsx`)
-    const PodcastEpisodeTemplate = path.resolve(`src/templates/PodcastEpisodeTemplate.tsx`)
 
     resolve(
       graphql(
@@ -142,24 +141,8 @@ exports.createPages = ({ actions, graphql }) => {
             case 'podcast':
               createPage({
                 path: node.fields.permalink,
-                component: PodcastEpisodeTemplate,
-                context: {
-                  showTab: 'summary',
-                },
-              })
-              createPage({
-                path: `${node.fields.permalink}/notes`,
-                component: PodcastEpisodeTemplate,
-                context: {
-                  showTab: 'notes',
-                },
-              })
-              createPage({
-                path: `${node.fields.permalink}/transcript`,
-                component: PodcastEpisodeTemplate,
-                context: {
-                  showTab: 'transcript',
-                },
+                component: PostTemplate,
+                context: {},
               })
               break
 

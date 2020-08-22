@@ -8,7 +8,7 @@ export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>
         blogInfo={BLOG_TYPE_TO_INFO[BlogType.GraphQLSummit]}
         posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
         location={props.location}
-    ></PostsListPage>
+    />
 )
 
 export default Page

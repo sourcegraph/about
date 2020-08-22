@@ -7,7 +7,7 @@ interface Props {
 
 export const PodcastSubscribeLinks: React.FunctionComponent<Props> = ({ className = '', linkClassName = '' }) => (
     <div className={className}>
-        <strong>Subscribe:</strong>
+        <span>Subscribe:</span>{' '}
         <a
             target="_blank"
             href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"

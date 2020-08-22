@@ -4,6 +4,8 @@ import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { PodcastSubscribeLinks } from '../components/podcast/PodcastSubscribeLinks'
+import { PostsListPage } from '../components/blog/PostsListPage'
+import { BLOG_TYPE_TO_INFO, BlogType } from '../components/blog/postTypes'
 
 interface HTMLParts {
     guestsHTML?: string
@@ -60,6 +62,15 @@ export function getHTMLParts(html: string): HTMLParts {
 }
 
 export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = ({ data, location }) => (
+    <PostsListPage
+        blogInfo={BLOG_TYPE_TO_INFO[BlogType.Podcast]}
+        posts={data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
+        location={location}
+    >
+        <div className="d-flex flex-column align-items-center">asdf</div>
+    </PostsListPage>
+)
+const a = () => (
     <Layout
         location={location}
         meta={{

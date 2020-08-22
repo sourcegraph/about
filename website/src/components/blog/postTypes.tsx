@@ -2,6 +2,7 @@ import React from 'react'
 import { BlogPost } from './BlogPost'
 import { ReleasePost } from './ReleasePost'
 import { PodcastPost } from './PodcastPost'
+import { PodcastSubscribeLinks } from '../podcast/PodcastSubscribeLinks'
 
 export enum PostType {
     BlogPost,
@@ -79,6 +80,7 @@ export enum BlogType {
 
 export interface BlogTypeInfo {
     title: string
+    belowTitle?: React.ReactFragment
     baseUrl: string
     meta: { title: string; description: string; image?: string }
 }
@@ -128,10 +130,16 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         },
     },
     podcast: {
-        title: 'The Sourcegraph Podcast',
+        title: 'Sourcegraph Podcast',
+        belowTitle: (
+            <>
+                <p className="mb-1">Conversations, stories, and insights from dev tool creators</p>
+                <PodcastSubscribeLinks className="text-muted" linkClassName="mx-1" />
+            </>
+        ),
         baseUrl: '/podcast',
         meta: {
-            title: 'The Sourcegraph Podcast',
+            title: 'Sourcegraph Podcast',
             description: 'Conversations, stories, and insights from dev tool creators',
         },
     },
