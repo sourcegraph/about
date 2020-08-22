@@ -11,7 +11,7 @@ interface Props extends Pick<PageProps, 'location'> {
 }
 
 export const PostsListPage: React.FunctionComponent<Props> = ({ blogInfo, posts, location, children }) => (
-    <Layout location={location} meta={blogInfo.meta} className="bg-light-transparent navbar-light">
+    <Layout location={location} meta={blogInfo.meta} className="bg-light navbar-light">
         <div className="container-lg">
             <BlogHeader {...blogInfo} />
             <div className="pt-4">

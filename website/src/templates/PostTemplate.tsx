@@ -21,7 +21,7 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
     const blogInfo = BLOG_TYPE_TO_INFO[post.fields.blogType]
 
     return (
-        <Layout location={location} meta={meta} className="bg-light-transparent navbar-light">
+        <Layout location={location} meta={meta} className="bg-light navbar-light">
             <div className="">
                 <div className="container-lg">
                     <BlogHeader {...blogInfo} />
