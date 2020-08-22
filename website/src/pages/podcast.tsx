@@ -339,7 +339,7 @@ export default class JobsPage extends React.Component<any, any> {
 export const pageQuery = graphql`
     query PodcastEpisodes {
         allMarkdownRemark(
-            filter: { frontmatter: { tags: { in: "podcast" } } }
+            filter: { fields: { blogType: { eq: "podcast" } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {
@@ -355,6 +355,8 @@ export const pageQuery = graphql`
                     excerpt(pruneLength: 300)
                     fields {
                         slug
+                        permalink
+                        blogType
                     }
                 }
             }

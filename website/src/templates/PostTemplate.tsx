@@ -1,12 +1,12 @@
 import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
 import Layout from '../components/Layout'
-import { POST_TYPE_TO_COMPONENT, postType, BLOG_TYPE_TO_INFO, BlogType, urlToPost } from '../components/blog/postTypes'
+import { POST_TYPE_TO_COMPONENT, postType, BLOG_TYPE_TO_INFO, urlToPost, Post } from '../components/blog/postTypes'
 import { BlogHeader } from '../components/blog/BlogHeader'
 
-interface Props extends PageProps<{ markdownRemark: any }, { blogType: string }> {}
+interface Props extends PageProps<{ markdownRemark: Post }> {}
 
-export const PostTemplate: React.FunctionComponent<Props> = ({ data, location, pageContext: { blogType } }) => {
+export const PostTemplate: React.FunctionComponent<Props> = ({ data, location }) => {
     const post = data.markdownRemark
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
@@ -18,7 +18,7 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location, p
     }
 
     const C = POST_TYPE_TO_COMPONENT[postType(post)]
-    const blogInfo = BLOG_TYPE_TO_INFO[blogType as BlogType]
+    const blogInfo = BLOG_TYPE_TO_INFO[post.fields.blogType]
 
     return (
         <Layout location={location} meta={meta} className="bg-light-transparent navbar-light">
@@ -47,8 +47,8 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location, p
 export default PostTemplate
 
 export const pageQuery = graphql`
-    query blogPostTemplate($fileSlug: String) {
-        markdownRemark(fields: { slug: { eq: $fileSlug } }) {
+    query PostTemplate($path: String) {
+        markdownRemark(fields: { permalink: { eq: $path } }) {
             frontmatter {
                 title
                 description
@@ -68,6 +68,8 @@ export const pageQuery = graphql`
             excerpt
             fields {
                 slug
+                permalink
+                blogType
             }
             fileAbsolutePath
         }

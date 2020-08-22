@@ -17,7 +17,7 @@ export default Page
 export const pageQuery = graphql`
     query strangeLoopPosts {
         allMarkdownRemark(
-            filter: { frontmatter: { tags: { in: "strange-loop" } } }
+            filter: { fields: { blogType: { eq: "strange-loop" } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {
@@ -36,6 +36,8 @@ export const pageQuery = graphql`
                     excerpt(pruneLength: 300)
                     fields {
                         slug
+                        permalink
+                        blogType
                     }
                 }
             }

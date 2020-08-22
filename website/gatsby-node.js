@@ -1,51 +1,87 @@
 // @ts-check
 
 /**
- * This file is responsible for programatically creating pages from data such as markdown files.
+ * This file is responsible for programatically creating pages from data such as Markdown files.
  *
  * Refer to https://www.gatsbyjs.org/tutorial/part-seven/ for relevant documentation.
  */
 
-const parseFilePath = require('parse-filepath')
 const path = require('path')
 const slugify = require('slugify')
+const { createFilePath } = require('gatsby-source-filesystem')
 
-/** onCreateNode creates Gatsby nodes from markdown files. Nodes are queryable via GraphQL in other parts of the app.*/
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  let slug
-  switch (node.internal.type) {
-    case `MarkdownRemark`:
-      const fileNode = getNode(node.parent)
-      if (fileNode.relativePath) {
-        const parsedFilePath = parseFilePath(fileNode.relativePath)
-        const name = node.frontmatter.title
-        const slugified = slugify(name)
+/**
+ * onCreateNode creates Gatsby nodes from Markdown files. Nodes are queryable via GraphQL in other
+ * parts of the app.
+ *
+ * @type {(args: import('gatsby').CreateNodeArgs<{}>) => void}
+ */
+exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
+  if (node.internal.type === 'MarkdownRemark') {
+    /** @type {import('gatsby').Node & {frontmatter: {slug?: string}}} */
+    const markdownNode = node
 
-        if (parsedFilePath.name !== `index` && node.frontmatter.slug && !node.frontmatter.permalink) {
-          // For markdown files that don't specify a permalink but have a slug, use the slug.
-          slug = `${node.frontmatter.slug}`
-        } else if (parsedFilePath.name !== `index` && !node.frontmatter.permalink) {
-          // For markdown files that don't specify a slug or permalink, use the slugified file name.
-          slug = `/${slugified}/`
-        } else if (parsedFilePath.name !== `index` && node.frontmatter.permalink) {
-          // For markdown files with a permalink, use the permalink.
-          slug = node.frontmatter.permalink
-        } else {
-          // If there's no permalink, and the file is called index.md, use the directory name as the slug.
-          slug = `/${parsedFilePath.dirname}/`
+    /** @type {import('gatsby-source-filesystem').FileSystemNode} */
+    const fileNode = getNode(node.parent)
+
+    // The slug is the right-most part of the URL path that is determined by the node. For example,
+    // in /blog/foo, the slug is "foo".
+    const slug =
+      markdownNode.frontmatter.slug ||
+      createFilePath({ node, getNode, basePath: fileNode.id, trailingSlash: false }).replace(/^\//, '')
+
+    // The permalink is the full URL path to the node. For example, in /blog/foo, the permalink is
+    // "/blog/foo".
+    /** @type {string} */
+    let permalink
+    /** @type {string | undefined} */
+    let blogType
+    switch (fileNode.sourceInstanceName) {
+      case 'blog':
+        permalink = `/blog/${slug}`
+        blogType = 'blog'
+        break
+
+      case 'podcast':
+        permalink = `/podcast/${slug}`
+        blogType = 'podcast'
+        break
+
+      case 'liveblog':
+        const liveblogDirToBlogType = {
+          gophercon: 'go',
+          dotgo: 'go',
+          'graphql-summit': 'graphql',
+          'strange-loop': 'strange-loop',
+          'github-universe': 'github-universe',
         }
-      }
-      break
-  }
-  if (slug) {
-    // Add a field called "slug" to the node.
-    createNodeField({ node, name: `slug`, value: slug })
+        blogType = liveblogDirToBlogType[fileNode.relativeDirectory]
+        if (!blogType) {
+          throw new Error(
+            `no blogType for ${fileNode.relativePath}, relativeDirectory is ${fileNode.relativeDirectory}`
+          )
+        }
+        permalink = `/${blogType}/${slug}`
+        break
+
+      case 'data':
+        permalink = `/${slug}`
+        break
+
+      default:
+        throw new Error(`unhandled file ${fileNode.relativePath}`)
+    }
+
+    createNodeField({ node, name: 'slug', value: slug })
+    createNodeField({ node, name: 'permalink', value: permalink })
+    if (blogType) {
+      createNodeField({ node, name: 'blogType', value: blogType })
+    }
   }
 }
 
 /**
- * Generate pages from the markdown nodes we created in onCreateNode.
+ * Generate pages from the Markdown nodes we created in onCreateNode.
  *
  * @type {(args: import('gatsby').CreatePagesArgs) => Promise<any>}
  */
@@ -54,8 +90,8 @@ exports.createPages = ({ actions, graphql }) => {
 
   return new Promise((resolve, reject) => {
     const PostTemplate = path.resolve(`src/templates/PostTemplate.tsx`)
-    const ContentTemplate = path.resolve(`src/templates/contentTemplate.tsx`)
-    const PodcastEpisodeTemplate = path.resolve(`src/templates/podcastEpisodeTemplate.tsx`)
+    const ContentTemplate = path.resolve(`src/templates/ContentTemplate.tsx`)
+    const PodcastEpisodeTemplate = path.resolve(`src/templates/PodcastEpisodeTemplate.tsx`)
 
     resolve(
       graphql(
@@ -64,19 +100,14 @@ exports.createPages = ({ actions, graphql }) => {
             allMarkdownRemark {
               edges {
                 node {
-                  frontmatter {
-                    title
-                    permalink
-                    published
-                    tags
-                  }
                   fields {
                     slug
+                    permalink
+                    blogType
                   }
                   fileAbsolutePath
                   parent {
                     ... on File {
-                      relativeDirectory
                       sourceInstanceName
                     }
                   }
@@ -91,84 +122,57 @@ exports.createPages = ({ actions, graphql }) => {
         }
 
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          const slug = node.fields.slug
-
           switch (node.parent.sourceInstanceName) {
-            case 'blog': {
+            case 'blog':
               createPage({
-                path: `/blog/${slug}`,
+                path: node.fields.permalink,
                 component: PostTemplate,
-                context: {
-                  fileSlug: slug,
-                  blogType: 'blog',
-                },
+                context: {},
               })
               break
-            }
 
-            case 'liveblog': {
-              const MAP = {
-                gophercon: 'go',
-                dotgo: 'go',
-                'graphql-summit': 'graphql',
-                'strange-loop': 'strange-loop',
-                'github-universe': 'github-universe',
-              }
-              const pathPrefix = MAP[node.parent.relativeDirectory]
-              if (!pathPrefix) {
-                throw new Error(
-                  `no pathPrefix for ${node.fileAbsolutePath}, relativeDirectory is ${node.parent.relativeDirectory}`
-                )
-              }
+            case 'liveblog':
               createPage({
-                path: `/${pathPrefix}/${slug}`,
+                path: node.fields.permalink,
                 component: PostTemplate,
-                context: {
-                  fileSlug: slug,
-                  blogType: MAP[node.parent.relativeDirectory],
-                },
+                context: {},
               })
               break
-            }
 
-            case 'podcast': {
+            case 'podcast':
               createPage({
-                path: `/podcast/${slug}`,
+                path: node.fields.permalink,
                 component: PodcastEpisodeTemplate,
                 context: {
-                  fileSlug: slug,
                   showTab: 'summary',
                 },
               })
               createPage({
-                path: `/podcast/${slug}/notes`,
+                path: `${node.fields.permalink}/notes`,
                 component: PodcastEpisodeTemplate,
                 context: {
-                  fileSlug: slug,
                   showTab: 'notes',
                 },
               })
               createPage({
-                path: `/podcast/${slug}/transcript`,
+                path: `${node.fields.permalink}/transcript`,
                 component: PodcastEpisodeTemplate,
                 context: {
-                  fileSlug: slug,
                   showTab: 'transcript',
                 },
               })
               break
-            }
 
-            default: {
+            case 'data':
               createPage({
-                path: slug,
+                path: node.fields.permalink,
                 component: ContentTemplate,
-                context: {
-                  fileSlug: slug,
-                },
+                context: {},
               })
               break
-            }
+
+            default:
+              throw new Error(`unhandled node ${node.relativePath}`)
           }
         })
       })

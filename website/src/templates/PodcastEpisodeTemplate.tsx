@@ -1,11 +1,9 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import { CaseStudyRequestDemoForm } from '../components/content/CaseStudyPage'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import SocialLinks from '../components/SocialLinks'
 import { getHTMLParts, subscriptionLinks } from '../pages/podcast'
 
 interface Option {
@@ -130,8 +128,8 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
 }
 
 export const pageQuery = graphql`
-    query podcastEpisodeTemplate($fileSlug: String) {
-        markdownRemark(fields: { slug: { eq: $fileSlug } }) {
+    query podcastEpisodeTemplate($path: String) {
+        markdownRemark(fields: { permalink: { eq: $path } }) {
             frontmatter {
                 title
                 tags

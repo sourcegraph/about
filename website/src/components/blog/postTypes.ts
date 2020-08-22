@@ -28,6 +28,11 @@ export interface Post {
     html: string
     excerpt: string
     fileAbsolutePath: string
+    fields: {
+        slug: string
+        permalink: string
+        blogType: BlogType
+    }
 }
 
 export interface PostComponentProps {
@@ -132,9 +137,4 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
     },
 }
 
-export const urlToPost = (post: Post, blog: BlogTypeInfo): string => {
-    const baseUrl = post.frontmatter.tags?.includes('podcast')
-        ? BLOG_TYPE_TO_INFO[BlogType.Podcast].baseUrl
-        : blog.baseUrl
-    return `${baseUrl}/${post.frontmatter.slug}`
-}
+export const urlToPost = (post: Post, blog: BlogTypeInfo): string => post.fields.permalink

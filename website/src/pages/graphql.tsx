@@ -16,7 +16,7 @@ export default Page
 export const pageQuery = graphql`
     query GraphQLPosts {
         allMarkdownRemark(
-            filter: { frontmatter: { tags: { in: "graphql" } } }
+            filter: { fields: { blogType: { eq: "graphql" } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {
@@ -35,6 +35,8 @@ export const pageQuery = graphql`
                     excerpt(pruneLength: 300)
                     fields {
                         slug
+                        permalink
+                        blogType
                     }
                 }
             }

@@ -19,7 +19,7 @@ export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: an
 export const pageQuery = graphql`
     query BlogPosts {
         allMarkdownRemark(
-            filter: { frontmatter: { tags: { in: ["blog", "podcast"] } } }
+            filter: { fields: { blogType: { in: ["blog", "podcast"] } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {
@@ -44,6 +44,8 @@ export const pageQuery = graphql`
                     excerpt(pruneLength: 300)
                     fields {
                         slug
+                        permalink
+                        blogType
                     }
                     fileAbsolutePath
                 }

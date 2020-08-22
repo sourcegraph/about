@@ -52,8 +52,8 @@ export default class ContentTemplate extends React.Component<any, any> {
 }
 
 export const pageQuery = graphql`
-    query contentTemplate($fileSlug: String) {
-        markdownRemark(fields: { slug: { eq: $fileSlug } }) {
+    query contentTemplate($path: String) {
+        markdownRemark(fields: { permalink: { eq: $path } }) {
             frontmatter {
                 title
             }

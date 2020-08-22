@@ -17,7 +17,7 @@ export default Page
 export const pageQuery = graphql`
     query GoPosts {
         allMarkdownRemark(
-            filter: { frontmatter: { tags: { regex: "/gophercon|dotGo/" } } }
+            filter: { fields: { blogType: { eq: "go" } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {
@@ -36,6 +36,8 @@ export const pageQuery = graphql`
                     excerpt(pruneLength: 300)
                     fields {
                         slug
+                        permalink
+                        blogType
                     }
                 }
             }
