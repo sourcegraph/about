@@ -4,7 +4,7 @@ import BlogHeadLinks from '../components/blog/BlogHeadLinks'
 import { PostsListPage } from '../components/blog/PostsListPage'
 import { BLOG_TYPE_TO_INFO, BlogType } from '../components/blog/postTypes'
 
-export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
+export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
         blogInfo={BLOG_TYPE_TO_INFO[BlogType.Blog]}
         posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
@@ -15,6 +15,8 @@ export const BlogList: React.FunctionComponent<PageProps<{ allMarkdownRemark: an
         </div>
     </PostsListPage>
 )
+
+export default Page
 
 export const pageQuery = graphql`
     query BlogPosts {
@@ -53,5 +55,3 @@ export const pageQuery = graphql`
         }
     }
 `
-
-export default BlogList

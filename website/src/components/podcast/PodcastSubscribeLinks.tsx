@@ -1,0 +1,39 @@
+import React from 'react'
+
+interface Props {
+    className?: string
+    linkClassName?: string
+}
+
+export const PodcastSubscribeLinks: React.FunctionComponent<Props> = ({ className = '', linkClassName = '' }) => (
+    <div className={className}>
+        <strong>Subscribe:</strong>
+        <a
+            target="_blank"
+            href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
+            className={linkClassName}
+        >
+            Apple
+        </a>
+        <a target="_blank" href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6" className={linkClassName}>
+            Spotify
+        </a>
+        <a
+            target="_blank"
+            href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw=="
+            className={linkClassName}
+        >
+            Google
+        </a>
+        <a
+            target="_blank"
+            href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
+            className={linkClassName}
+        >
+            YouTube
+        </a>
+        <a target="_blank" href="https://feeds.buzzsprout.com/1097978.rss" className={linkClassName}>
+            RSS
+        </a>
+    </div>
+)
