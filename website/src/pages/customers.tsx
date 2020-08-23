@@ -69,7 +69,7 @@ export default ((props: any) => (
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
         <div className="customers-page">
-            <CustomerLogosSection className="mb-6" />
+            <CustomerLogosSection className="my-6" />
             <hr className="mb-6" id="onboard" />
             <ContentSection className="mt-5">
                 <div className="row">

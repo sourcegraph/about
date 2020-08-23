@@ -125,7 +125,7 @@
     }
 }
 
-.darkBackground {
+.bg-black {
     .footer {
         background: none;
         &__logo {
@@ -142,7 +142,9 @@
         &__postscript {
             .nav-item > a {
                 color: rgba($light, 0.6);
-                &:hover { color: rgba($light, 0.8); }
+                &:hover {
+                    color: rgba($light, 0.8);
+                }
             }
             .text-muted {
                 color: rgba($light, 0.6) !important;

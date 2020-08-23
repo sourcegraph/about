@@ -12,7 +12,7 @@ export default ((props: any) => (
                 'Learn how Sourcegraph code search enabled Thorn to systematically sunset legacy systems safely, removing huge amounts of tech debt in the process.',
             image: 'https://about.sourcegraph.com/case-studies/thorn-sourcegraph-case-study-og-embed.jpg',
         }}
-        className="darkBackground navbar-dark"
+        className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="We are Thorn"

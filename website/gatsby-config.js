@@ -1,3 +1,6 @@
+// @ts-check
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `Sourcegraph`,
@@ -15,8 +18,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blogposts`,
+        name: `blog`,
         path: `${__dirname}/../blogposts/`,
+        ignore: [`${__dirname}/../blogposts/liveblogs/**/*`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `liveblog`,
+        path: `${__dirname}/../blogposts/liveblogs`,
       },
     },
     {

@@ -59,9 +59,9 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
 
                             <h2 className="h5 mt-4">Want help?</h2>
                             <div className="pt-1">
-                                <Link className="btn btn-sm btn-outline-primary mb-2" to="https://docs.sourcegraph.com">
+                                <a className="btn btn-sm btn-outline-primary mb-2" href="https://docs.sourcegraph.com">
                                     Docs <ExternalLinkIcon className="icon-inline ml-1 small" />{' '}
-                                </Link>{' '}
+                                </a>{' '}
                                 <Link className="btn btn-sm btn-outline-primary mb-2" to="/contact/request-info">
                                     Schedule time with a Sourcegraph engineer
                                 </Link>
@@ -71,7 +71,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                             <h2 className="get-started__search-headings">Search public code</h2>
                             <p>Search public code or your own public repositories now.</p>
                             <div className="get-started__action boxshadow">
-                                Sourcegraph Cloud searches top repositories from GitHub and Gitlab and will index any
+                                Sourcegraph Cloud searches top repositories from GitHub and GitLab and will index any
                                 public repository you specify.
                                 <br />
                                 <a

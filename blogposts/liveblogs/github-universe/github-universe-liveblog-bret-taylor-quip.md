@@ -3,7 +3,7 @@ title: 'A conversation with Bret Taylor, CEO of Quip, at GitHub Universe'
 author: 'Beyang Liu'
 publishDate: 2016-09-14T00:00-07:00
 tags: [
-  "blog"
+  "github-universe"
 ]
 slug: github-universe-liveblog-bret-taylor-quip
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/fRzqBIhmOkMWQakgKMcUM/6410e64b54f0002874c9f153dda056b6/1_v90JbRraqWznmWkkDKmLzg.jpeg

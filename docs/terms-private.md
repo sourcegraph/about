@@ -1,7 +1,6 @@
 ---
 layout: markdown
 title: Terms of Service for Private and Self-hosted Sourcegraph Instances
-permalink: terms-private
 ---
 
 Last modified: May 7, 2020
@@ -305,7 +304,7 @@ The Software and the underlying information and technology may not be downloaded
 
 15.6 **Assignment**. The Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by us without restriction.
 
-15.7 **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration. 
+15.7 **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration.
 
 15.8 **Headings**. The heading references herein are for convenience only, do not constitute a part of the Agreement, and will not be deemed to limit or affect any of the provisions hereof.
 

@@ -37,7 +37,6 @@ const Index: React.FunctionComponent = (props: any) => (
                             <div className="pt-1">
                                 <Link className="btn btn-primary" to="/get-started">
                                     Try Sourcegraph now <ArrowRightIcon className="ml-1" />
-                                    {/* TODO(sqs) */}
                                 </Link>
                             </div>
                         </div>
