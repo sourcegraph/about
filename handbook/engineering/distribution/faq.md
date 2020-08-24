@@ -14,3 +14,5 @@ To ensure there is no confusion when updating from a `sourcegraph/server` deploy
 In the medium to long-term, we also plan on elimating `sourcegraph/server` usage in production deployments which will further eliminate the possibility that we could just handle this for that deployment type. With that said, our plans here are not yet clearly defined so we do not advise suggesting this to users/customers to avoid confusion.
 
 Although we would advise against automatically updating the image tags currently due to potential for missing manual migrations as mentioned, there are some other options here including using an external service like [Renovate](https://docs.renovatebot.com/docker/) to automatically update Docker image tags to latest, or using the `insiders` tag (nightly builds of Sourcegraph, which we aim to have as stable as our monthly releases, but in practice may sometimes be a bit less stable.)
+
+Requests for this should be documented in https://github.com/sourcegraph/sourcegraph/issues/12524
