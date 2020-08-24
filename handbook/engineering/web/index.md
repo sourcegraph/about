@@ -24,7 +24,7 @@ The web team's current focus is documented in [the tracking issue for the curren
 To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans.
 We will gradually transition our focus through these goals in the order they are defined here.
 
-1. Make the products extensions are build on (web app, code host integrations) more consistent and improve discoverability.
+1. Make the products that extensions are build on (web app, code host integrations) more consistent and improve discoverability.
 2. Bring the extensions platform into shape.
 3. Build out compelling use cases with the extensions platform.
 
