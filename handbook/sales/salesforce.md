@@ -47,7 +47,7 @@ TBD
 All HubSpot contacts are synced to Salesforce, usually within 15 minutes. The [complete settings are in HubSpot](https://app.hubspot.com/integrations-settings/2762526/installed/salesforce/contacts), but the most important of the synced fields are:
 - Basic contact info (name, email)
 - Their lead source based on First Page Seen
-- Most Zoominfo enriched fields
+- Most ZoomInfo enriched fields
 - MQL date and checkbox
 - NPS survey results attached to the contact
 
