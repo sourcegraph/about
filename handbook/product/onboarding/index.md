@@ -77,8 +77,9 @@ Remember:
    - [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)
    - Twitter
    - Slack #feedback channel
-   
+
 ### Know our tools
+
 - Figma
   - Watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn how we use the application
   - Read [Figma developers guide](https://www.smashingmagazine.com/2020/09/figma-developers-guide/)
@@ -122,7 +123,6 @@ You'll find we have a strong base to work from, but we are in the early stages o
    1. from the root of your local development environment run storybook: `yarn storybook`.
 - Explore and favorite the [Google Drive design folder](https://drive.google.com/drive/folders/1xBRaw_2Ulccd_2ts0Wcq4Rgs6LuVblLU?usp=sharing)
 - Review the [Potential UX projects document](https://docs.google.com/document/d/1LemO13R3f0Ku88WK8tFr7_Qo4teDA0Bebs8Y2TGkS3U/edit)
-   - Use this document to record issues you'd like to work on as you discover them during your onboarding
 
 ## Week 2-3 - initial projects
 
@@ -133,3 +133,6 @@ You'll find we have a strong base to work from, but we are in the early stages o
 ## Week 4 - start a larger project
 
 - Let’s talk about your strengths, interests, areas you’re excited about, as well as what will help drive the team and company goals!
+  - Use this document to record issues you'd like to work on as you discover them during your onboarding
+
+## [Technical Writer onboarding](tech-writer-onboarding.md)
