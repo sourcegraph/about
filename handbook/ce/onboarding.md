@@ -37,6 +37,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - Get access to the "Customer contracts" folder as well.
 - Ask for a license to LinkedIn Sales Navigator tool in #sales channel
 
+
 ### General onboarding during weeks 1 and 2
 
 - Go through general onboarding [People Ops](../people-ops/index.md)
