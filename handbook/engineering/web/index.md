@@ -1,8 +1,8 @@
 # Web team
 
-The web team owns all work related to our web application and browser extensions that isn't already owned by one of the other mission based teams.
+The web team owns the maintenance and expansion of our web application and code host integrations as vehicles to deliver the value of [extensions](https://docs.sourcegraph.com/extensions) to our users.
 
-This is a large ownership area, so the team creates a focused plan each iteration, by agreeing on an appropriately small set of [goals](../../../company/goals/index.md). Each goal should have more than one teammate working on it.
+This is a large ownership area, so the team creates a focused plan each iteration, by agreeing on an appropriately small set of [iteration goals](../../../company/goals/index.md). Each goal should have more than one teammate working on it.
 
 The web team's current focus is documented in [the tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+label%3Atracking+label%3Ateam%2Fweb+is%3Aopen).
 
@@ -13,7 +13,20 @@ The web team's current focus is documented in [the tracking issue for the curren
 
 ## Goals
 
-TODO
+### Long term
+
+***Deliver our users the full, unique value of [extensions](https://docs.sourcegraph.com/extensions).***
+
+**Outcome**: Our webapp, browser extensions and native integrations are great platforms to provide our users unique value through extensions. These platforms are well-maintained, consistent, easy to setup, well-documented, well-tested, performant, and show their power through convincing extensions built on top of them. The extensions platform and API provide powerful capabilities to extension developers and a great developer experience.
+
+### Medium term
+
+To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans.
+We will gradually transition our focus through these goals in the order they are defined here.
+
+1. Make the products extensions are build on (web app, code host integrations) more consistent and improve discoverability.
+2. Bring the extensions platform into shape.
+3. Build out compelling use cases with the extensions platform.
 
 ## Tech stack
 
