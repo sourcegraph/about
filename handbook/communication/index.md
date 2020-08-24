@@ -125,7 +125,7 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 
 ## Brain Food
 
-Brown Food meetings are our internal knowledge sharing sessions. These meetings can be formal presentations or informal discussions and are open to anyone in the company. Subjects of talks are completely free and are not limited to tech discussions. Here are a few examples:
+Brain Food meetings are our internal knowledge sharing sessions. These meetings can be formal presentations or informal discussions and are open to anyone in the company. Subjects of talks are completely free and are not limited to tech discussions. Here are a few examples:
 
 - sharing internal team knowledge to the rest of the company
 - presenting a useful tool
@@ -134,12 +134,12 @@ Brown Food meetings are our internal knowledge sharing sessions. These meetings 
 - brainstorming session about an experimental subject
 - preparing an external talk
 
-Brown bags sessions take place every other friday and, to accomodate timezone differences, are split in two separate sessions:
+Brain Food sessions take place every other friday and, to accomodate timezone differences, are split in two separate sessions:
 
 - EMEA friendly session time: 16:00 CET
 - NA friendly session time: 2:00PM PST
 
-Each session is 1-hour long, however the session is only as long as the group needs to present and wants to keep the discussion going. They will both be recorded and published on Slack.
+Each session is 1-hour long, however the session is only as long as the group needs to present and wants to keep the discussion going. They will both be recorded and published on Slack. Speakers can sign-up for either one of them depending on their own timezone.
 
 Presentations can use one of two formats:
 
