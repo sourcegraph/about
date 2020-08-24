@@ -21,12 +21,3 @@ We utilize multiple Google Cloud projects and folders to organize our workloads 
 Dynamic or temporary projects are created in the folders listed below.
 
 - **Engineers Projects**: Contains projects used by individual engineers. All projects must be prefixed with `$name-` (the name of the owner).
-
----
-
-- **sourcegraph-testing**: Testing clusters and deployments. (Delete or not?)
-- **sourcegraph-calend**: ???
-- **sourcegraph-orgtool**: ???
-- **Quickstart**: ???
-- **Gmail**: ???
-- **Release**: ???
