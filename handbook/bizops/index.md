@@ -54,7 +54,7 @@ We collect data from the following:
 
 * Google Analytics: Website analytics for Sourcegraph marketing and docs pages (not Sourcegraph.com)
 * HubSpot: Marketing automation
-* Salesforce: Customer Management Relationship system (CRM)
+* Salesforce: Customer Relationship Management system (CRM)
 * MixMax: Email marketing automation (Apollo is not used in production, but still retains data)
 * ZoomInfo:  Data enrichment of account and contact information
 * Sourcegraph.com Site-admin pages: customer subscriptions and license keys
