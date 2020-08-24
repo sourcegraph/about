@@ -407,6 +407,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [Bill@sourcegraph.com](mailto:Bill@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/william-kolman/)
 - Bill lives in Long Island City, Queens with his wife, daughter, and dog. He has been in tech related sales since 2008. Most recently he has been working in early stage startups, building businesses from the ground up in the eastern US. Bill is an avid bicyclist, so when he's not evangelizing Sourcegraph or studying the newest trends in technology, he is probably exploring the 5 boroughs on his bike.
 
+## Owen Brennan (he/him)
+
+- Account Executive
+- Boise, Idaho, USA
+- [owen@sourcegraph.com](mailto:owen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/owenbrennan/)
+- Owen has worked in early-stage technology sales for almost his entire career. He's passionate about helping customers resolve their unique business challenges, and fostering a long-term impact for them. Outside of work, Owen can be found with his family exploring his home State of Idaho: hiking, fly fishing, rafting and snowboarding.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
