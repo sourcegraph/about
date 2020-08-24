@@ -136,8 +136,8 @@ Brown bags are our internal knowledge sharing sessions. These meetings can be fo
 
 Brown bags sessions take place every other friday and, to accomodate timezone differences, are split in two separate sessions:
 
-- EMEA Friendly Session Time: 7:00AM PST
-- NA Friendly Session Time: 2:00PM PST
+- EMEA friendly session time: 16:00 CET
+- NA friendly session time: 2:00PM PST
 
 Each session is 1-hour long, however the session is only as long as the group needs to present and wants to keep the discussion going. They will both be recorded and published on Slack.
 
