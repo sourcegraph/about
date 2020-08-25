@@ -101,9 +101,9 @@ Check your version using **Windows key** > **Settings** > **About**
 1. Download WSL (Windows Subsystem for Linux) from the [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab)
 1. Follow the instructions in the [Microsoft documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install WSL, update to WSL 2, and install a Linux distribution. 
 
-   **NOTE**
-    Choose a stable version, not necessarily the most recent. At the time of this writing, that is 18.04
-
+   | 📝        | Choose a stable version, not necessarily the most recent. At the time of this writing, that is 18.04      |
+|---------------|:------------------------|
+    
 1. Run through the process to [enable systemd](https://github.com/DamionGans/ubuntu-wsl2-systemd-script#ubuntu-wsl2-systemd-script) support on WSL 2:
     - Open WSL
     - Install git using `sudo apt install git`
@@ -123,6 +123,7 @@ Check your version using **Windows key** > **Settings** > **About**
 
 1. Run through the handbook process to [install dependencies](https://docs.sourcegraph.com/dev/local_development#ubuntu) for Ubuntu:
     - Add package repositories:
+
         ```
         # Go
         sudo add-apt-repository ppa:longsleep/golang-backports
@@ -134,10 +135,12 @@ Check your version using **Windows key** > **Settings** > **About**
         echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
         ```
     - Update repositories
+
         ```
         sudo apt-get update
         ```
     - Install dependencies
+
         ```
         sudo apt install -y make git-all postgresql postgresql-contrib redis-server nginx libpcre3-dev libsqlite3-dev pkg-config golang-go musl-tools docker-ce docker-ce-cli containerd.io yarn jq
         # install golang-migrate (you must rename the extracted binary to `golang-migrate` and move the binary into your $PATH)
@@ -160,6 +163,7 @@ Check your version using **Windows key** > **Settings** > **About**
         nvm install
         ```
     - Configure startup services
+    
         ```
         sudo systemctl enable postgresql
         sudo systemctl enable redis-server.service
