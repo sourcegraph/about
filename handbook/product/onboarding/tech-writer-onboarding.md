@@ -38,7 +38,7 @@ We have an “all-in” total budget of $1,500 for desk setup, which includes al
     - [Add your working hours to Google Calendar](https://calendar.google.com/calendar/r/settings) so your teammates know when it is safe to add meetings to your calendar
     - Watch the [new team member intro from the CEO](https://www.youtube.com/watch?v=EVHUGZe5uts)
 - **Set up accounts**: In addition to the accounts listed in Noemi’s email, you’ll need access to set up the following accounts: 
-    - <span style="text-decoration:underline;">Google Cloud Storage</span>: Ask **#dev-chat** (or **@sqs **specifically) for the following Google Cloud Storage permissions for publishing graphics:
+    - <span style="text-decoration:underline;">Google Cloud Storage</span>: Ask **#dev-chat** (or **@sqs** specifically) for the following Google Cloud Storage permissions for publishing graphics:
         - ['storage.objects.delete'] 
         - ['resourcemanager.projects.get'] 
         - ['storage.buckets.list']
