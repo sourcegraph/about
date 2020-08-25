@@ -220,7 +220,7 @@ If you’re doing something that’s just part of the normal rhythm of your job,
 1. Type `cd about/website` to get into the website directory
 1. Run `yarn start` **or** `yarn serve` 
 1. Navigate to [localhost 8000](http://localhost:8000/) - don’t forget to bookmark!
-- If you use `yarn serve`, navigate to [localhost 9000](http://localhost:9000/) 
+ - If you use `yarn serve`, navigate to [localhost 9000](http://localhost:9000/) 
 
 | 📝        | You have to restart the server every time you update the markdown; it won’t just refresh. Use `Ctrl-C`       |
 |---------------|:------------------------|
