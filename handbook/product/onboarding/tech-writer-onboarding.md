@@ -227,19 +227,18 @@ Navigate to [localhost 9000](http://localhost:9000/) if you use `yarn serve`
 
 # Troubleshooting {#troubleshooting}
 
-**When in doubt, search Slack for help. Did someone else ask this question?**
+## When in doubt, search Slack for help. Did someone else ask this question?
 
 If not, ask in **#ask-anything** or another department-specific chat.
 
-**Wait, what repo is stuff located in?**
+## Wait, what repo is stuff located in?
 - sourcegraph/about = handbook and marketing blog posts
 - sourcegraph/sourcegraph = docs
 - sourcegraph/docsite = headers, footers, and other website stuff
 
 **Pro Tip**: You can also figure out where files are by searching [Sourcegraph Cloud](https://sourcegraph.com/search?_ga=2.255544652.598392341.1597668981-492280637.1594509875&_gac=1.216337826.1596634709.EAIaIQobChMI7dKf35eE6wIVh47ICh2VyAa2EAAYASAAEgJ6KvD_BwE)
 
-
-**I can’t see my changes in local preview! What’s wrong?**
+## I can’t see my changes in local preview! What’s wrong?
 
 Your terminal may not always been in sync with what you do in GitHub desktop. You may not be on the right be in the right branch, or maybe you haven’t pulled the latest changes.
 
