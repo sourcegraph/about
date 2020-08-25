@@ -101,7 +101,7 @@ Check your version using **Windows key** > **Settings** > **About**
 1. Download WSL (Windows Subsystem for Linux) from the [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab)
 1. Follow the instructions in the [Microsoft documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install WSL, update to WSL 2, and install a Linux distribution. 
 
-   | 📝        | Choose a stable version, not necessarily the most recent. At the time of this writing, that is 18.04      |
+| 📝        | Choose a stable version, not necessarily the most recent. At the time of this writing, that is 18.04      |
 |---------------|:------------------------|
     
 1. Run through the process to [enable systemd](https://github.com/DamionGans/ubuntu-wsl2-systemd-script#ubuntu-wsl2-systemd-script) support on WSL 2:
@@ -163,7 +163,7 @@ Check your version using **Windows key** > **Settings** > **About**
         nvm install
         ```
     - Configure startup services
-    
+
         ```
         sudo systemctl enable postgresql
         sudo systemctl enable redis-server.service
