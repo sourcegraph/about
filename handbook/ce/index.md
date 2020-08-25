@@ -16,7 +16,8 @@ The Customer Engineering team is responsible for ensuring that all of Sourcegrap
 
 ## Goals
 
-TODO
+1. Scale support effort/org sublinearly with number of customers.
+1. Increase % of customer reports that CE can resolve without involving the engineering team.
 
 # Members
 
