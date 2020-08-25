@@ -104,7 +104,7 @@ Check your version using **Windows key** > **Settings** > **About**
 | 📝        | Choose a stable version, not necessarily the most recent. At the time of this writing, that is 18.04      |
 |---------------|:------------------------|
     
-1. Run through the process to [enable systemd](https://github.com/DamionGans/ubuntu-wsl2-systemd-script#ubuntu-wsl2-systemd-script) support on WSL 2:
+5. Run through the process to [enable systemd](https://github.com/DamionGans/ubuntu-wsl2-systemd-script#ubuntu-wsl2-systemd-script) support on WSL 2:
     - Open WSL
     - Install git using `sudo apt install git`
     - Run the following script and then restart WSL
@@ -121,7 +121,7 @@ Check your version using **Windows key** > **Settings** > **About**
         ```
     - If you don’t see an error or see a list of units, setup was successful
 
-1. Run through the handbook process to [install dependencies](https://docs.sourcegraph.com/dev/local_development#ubuntu) for Ubuntu:
+6. Run through the handbook process to [install dependencies](https://docs.sourcegraph.com/dev/local_development#ubuntu) for Ubuntu:
     - Add package repositories:
 
         ```
