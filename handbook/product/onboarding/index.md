@@ -70,7 +70,5 @@ You'll find we have a strong base to work from, but we are in the early stages o
 - Explore and favorite the [Google Drive design folder](https://drive.google.com/drive/folders/1xBRaw_2Ulccd_2ts0Wcq4Rgs6LuVblLU?usp=sharing)
 - Review the [Potential UX projects document](https://docs.google.com/document/d/1LemO13R3f0Ku88WK8tFr7_Qo4teDA0Bebs8Y2TGkS3U/edit)
   - Use this document to record issues you'd like to work on as you discover them during your onboarding
-  
-## Technical Writer onboarding
 
-Because of the variety of duties this position entails, we created a separate guide that goes into more detail about set up specifics. See the [Technical Writer onboarding](tech-writer-onboarding.md) guide for more information. 
+## Technical Writer onboarding (#tech-writer-onboarding.md)
