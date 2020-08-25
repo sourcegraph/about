@@ -144,6 +144,6 @@ Each session is 1-hour long, however the session is only as long as the group ne
 Presentations can use one of two formats:
 
 - Lightning Talks: Maximum 7 minutes long
-- Presentation: Around 10 to 14 minutes long
+- Presentation: Maximum 15 minutes long
 
 To sign-up, use this [Google Sheet](https://docs.google.com/spreadsheets/d/1HLVFH9JUxchPNH4FoIQAThorbpdvmTl0ndmZzmpjsuU/edit?usp=sharing). The talk will be added to the Google Calendar invitation which will be sent to everyone.
