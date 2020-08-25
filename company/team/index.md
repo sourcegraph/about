@@ -407,6 +407,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [Bill@sourcegraph.com](mailto:Bill@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/william-kolman/)
 - Bill lives in Long Island City, Queens with his wife, daughter, and dog. He has been in tech related sales since 2008. Most recently he has been working in early stage startups, building businesses from the ground up in the eastern US. Bill is an avid bicyclist, so when he's not evangelizing Sourcegraph or studying the newest trends in technology, he is probably exploring the 5 boroughs on his bike.
 
+## María Craig (she/her)
+
+- Product Manager
+- Barcelona, Spain 🇪🇸 / Buenos Aires, Argentina 🇦🇷
+- [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [GitHub](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
+- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
