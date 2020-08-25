@@ -127,12 +127,12 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 
 Brain Food meetings are our internal knowledge sharing sessions. These meetings can be formal presentations or informal discussions and are open to anyone in the company. Subjects of talks are completely free and are not limited to tech discussions. Here are a few examples:
 
-- sharing internal team knowledge to the rest of the company
-- presenting a useful tool
-- presenting a personal project
-- hands on session / workshops
-- brainstorming session about an experimental subject
-- preparing an external talk
+- Sharing internal team knowledge to the rest of the company
+- Presenting a useful tool
+- Presenting a personal project
+- Hands on session / workshops
+- Brainstorming session about an experimental subject
+- Preparing an external talk
 
 Brain Food sessions take place every other friday and, to accomodate timezone differences, are split in two separate sessions:
 
