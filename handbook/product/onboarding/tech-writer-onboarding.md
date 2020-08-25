@@ -192,7 +192,7 @@ If you’re doing something that’s just part of the normal rhythm of your job,
 1. Run  `make serve`
 1. Navigate to [localhost 5082](http://localhost:5082/) - don’t forget to bookmark!
 
-| 📝        | The Handbook automatically refreshes when you make changes-- neither the about nor docs sites do. You have to manually rebuild each time you make a change to preview your changes.       |
+| 📝        | You have to restart the server every time you update the markdown; it won’t just refresh. Use `Ctrl-C`       |
 |---------------|:------------------------|
       
 ### Documentation changes {#documentation-changes}
