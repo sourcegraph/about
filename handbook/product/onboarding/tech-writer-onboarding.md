@@ -9,7 +9,7 @@
 
 We have an “all-in” total budget of $1,500 for desk setup, which includes all the items in the following section. You won’t need everything in this section, but get what you need.  
 
-| :memo:        | Laptops/laptop insurance are fully reimbursable outside of the $1,500 all-in budget. If you spend more than $1,000 on any given physical item, it will be considered property of the company       |
+| 📝        | Laptops/laptop insurance are fully reimbursable outside of the $1,500 all-in budget. If you spend more than $1,000 on any given physical item, it will be considered property of the company       |
 |---------------|:------------------------|
  
 
@@ -27,7 +27,7 @@ We have an “all-in” total budget of $1,500 for desk setup, which includes al
 ### Computer guidelines {#computer-guidelines}
 
 - [16” MacBook Pro, 2.4 GHz (5 GHz turbo) 8‑core (upgrade), 64 GB (upgrade), 1 TB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-gray-2.3ghz-8-core-processor-1tb#)
-- Any other laptop that is of equal or lesser value than the pre-approved laptop. If you’re not in the Mac camp, talk to **@bunny** for suggestions 💁
+- Any other laptop that is of equal or lesser value than the pre-approved laptop. If you’re not in the Mac camp, talk to **@bunny** for suggestions
 
 ## Onboarding {#onboarding}
 
@@ -192,9 +192,9 @@ If you’re doing something that’s just part of the normal rhythm of your job,
 1. Run  `make serve`
 1. Navigate to [localhost 5082](http://localhost:5082/) - don’t forget to bookmark!
 
-    **NOTE**
-     The Handbook automatically refreshes -- neither the about nor docs sites do. You have to manually rebuild each time you make a change to preview your changes. 
-
+| 📝        | The Handbook automatically refreshes when you make changes-- neither the about nor docs sites do. You have to manually rebuild each time you make a change to preview your changes.       |
+|---------------|:------------------------|
+      
 ### Documentation changes {#documentation-changes}
 #### Mac and Windows {#mac-and-windows}
 
@@ -206,8 +206,8 @@ If you’re doing something that’s just part of the normal rhythm of your job,
     ```
 1. Navigate to [localhost 5080](http://localhost:5080/)  - don’t forget to bookmark!
 
-    **NOTE**
-    You have to restart the server every time you update the markdown; it won’t just refresh. Use `Ctrl-C`
+| 📝        | You have to restart the server every time you update the markdown; it won’t just refresh. Use `Ctrl-C`       |
+|---------------|:------------------------|
 
 ### Website changes {#website-changes}
 #### Mac and Windows {#mac-and-windows}
@@ -218,8 +218,8 @@ If you’re doing something that’s just part of the normal rhythm of your job,
 1. Navigate to [localhost 8000](http://localhost:8000/) - don’t forget to bookmark!
 Navigate to [localhost 9000](http://localhost:9000/) if you use `yarn serve`
 
-**NOTE**
-You have to restart the server every time you update the markdown; it won’t just refresh. Use `Ctrl-C`
+| 📝        | You have to restart the server every time you update the markdown; it won’t just refresh. Use `Ctrl-C`       |
+|---------------|:------------------------|
 
 # Troubleshooting {#troubleshooting}
 
