@@ -9,8 +9,9 @@
 
 We have an “all-in” total budget of $1,500 for desk setup, which includes all the items in the following section. You won’t need everything in this section, but get what you need.  
 
-**NOTE**
- Laptops/laptop insurance are fully reimbursable outside of the $1,500 all-in budget. If you spend more than $1,000 on any given physical item, it will be considered property of the company
+| :memo:        | Laptops/laptop insurance are fully reimbursable outside of the $1,500 all-in budget. If you spend more than $1,000 on any given physical item, it will be considered property of the company       |
+|---------------|:------------------------|
+ 
 
 - Monitor
 - Headphones
