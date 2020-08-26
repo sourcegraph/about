@@ -235,9 +235,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Robert Lin
 
 - Software Engineer Intern
-- Vancouver, BC, Canada 🇨🇦
-- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://github.com/bobheadxi)
-- If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final year studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
+- Taipei, Taiwan 🇹🇼 (GMT+8) 
+- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
+- If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final semester remotely studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
 
 ## Marek Zaluski
 
