@@ -74,7 +74,7 @@ For each iteration (currently one month long), we follow this process:
 * Before the iteration begins, each team member prepares for the iteration planning meeting by considering what they would like to see in the next iteration, and by looking over [our backlog](https://github.com/sourcegraph/sourcegraph/labels/team%2Fcampaigns) and setting the Milestone for issues we'd like to include.
 * We then have our planning meeting to determine our common goals for the iteration. We create a [tracking issue](https://about.sourcegraph.com/handbook/engineering/tracking_issues) for the iteration which will hold our goals and plans, in addition to tracking the issues we intend to address.
 * Each Monday, the team meets with stakeholders to stay in sync, and to set our personal goals for the week. We record these goals, and the previous week's progress, as status update comments on the tracking issue. The engineering manager then compiles these into a summary which is sent to the team and stakeholders.
-* Each day, Slack reminds us to do our stand-up, which consists of a *short* message in the reminder's thread. As we are a globally distributed team, this can be a statement of intent for the day, or a recap of what we have finished that day.
+* Each day, Slack reminds us to do our stand-up, which consists of a *short* message (it shouldn't take longer than 30s to write) in the reminder's thread. As we are a globally distributed team, this can be a statement of intent for the day, or a recap of what we have finished that day.
 * After the release branch has been cut for the iteration, the team has a retro to discuss how the iteration went, and what changes we might want to our working agreements.
 
 ## Working Agreements
