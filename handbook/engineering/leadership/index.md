@@ -66,7 +66,7 @@ Our long term vision is to build an organization that attracts and retains the b
   - It forces us to think of better interview questions that are [unhackable](http://www.paulgraham.com/lesson.html).
   - It makes our interview process more accessible to candidates who would be disadvantaged in a live interview (for example, people with hearing or speech disabilities) because it would be easy to accept written answers to our documented questions.
 - Owner: TBD.
-- Status: Not started.
+- Status: Not started. Needs more discussion.
 
 ## Book recommendations
 
