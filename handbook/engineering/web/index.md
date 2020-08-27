@@ -77,10 +77,10 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 
 ## Members
 
-- [Loïc Guychard](../../../company/team/index.md#loic-guychard) ([engineering manager](../roles.md#engineering-manager))
-- [Felix Becker](../../../company/team/index.md#felix-becker)
-- [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
-- [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
+- [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
+  - [Felix Becker](../../../company/team/index.md#felix-becker)
+  - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
+  - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
 
 ## Growth plan
 
