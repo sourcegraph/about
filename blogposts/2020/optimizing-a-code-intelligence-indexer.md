@@ -11,9 +11,9 @@ published: true
 
 As part of the Sourcegraph 3.19 release, we [announced](/blog/faster-go-precise-code-intelligence) some impressive speed improvements to our [Go LSIF indexer](https://github.com/sourcegraph/lsif-go). This is another entry in the growing list of optimizing the time between committing code and having useful navigation of that code available on your Sourcegraph instance. We call this duration _time to intelligence_, and getting this as close to zero ensures that developers won't be stuck reviewing pull requests without accurate data to help them navigate unfamiliar code.
 
-Between lsif-go v0.9.0 and lsif-go v1.0.0, we applied a series of optimizations that reduced the time required to index source code by 4x. **Twice**. The result is an indexer that runs in about [5% of the original time](https://github.com/sourcegraph/lsif-go/tree/master/benchmark.md).
+Between lsif-go v0.9.0 and lsif-go v1.0.0, we applied a series of optimizations that sped up the index process by 4x. **Twice**. The result is an indexer that runs in about [5% of the original time](https://github.com/sourcegraph/lsif-go/tree/master/benchmark.md).
 
-Our customers seem like the kind of folks that love a good optimization story - so here we go.
+Fans of Sourcegraph also seem like the kind of folks that love a good optimization story - so here we go.
 
 ## Where was v0.9.0 spending all its time?
 
@@ -95,7 +95,7 @@ The implementation of the indexer has historically been single-threaded for simp
 
 This design decision has recently become a heavier weight on our shoulders ever since we noticed one of our enterprise customers give their engineers [m5.24xlarge EC2 instances](https://aws.amazon.com/ec2/instance-types/).
 
-There's no way we're going to miss seeing all 96 cores light up the next time we chat. So we made everything that can run at the same time [run at the same time](https://github.com/sourcegraph/lsif-go/pull/91). Unfortunately, parallelizing workloads in general is not a trivial task.
+There's no way we're going to miss the opportunity to see all 96 of those cores light up the next time we chat. So we made everything that can run at the same time [run at the same time](https://github.com/sourcegraph/lsif-go/pull/91). Unfortunately, parallelizing workloads in general is not a trivial task.
 
 #### You have to protect shared state
 
