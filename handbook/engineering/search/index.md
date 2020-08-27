@@ -6,6 +6,8 @@ We own the end-to-end Sourcegraph search experience.
 
 Our current goals are documented in the [search team's current tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fsearch).
 
+[WIP longer term goals](https://docs.google.com/document/d/1ibKiSTSxrRiY_3f3Rx3kGzLgTMO5Uz2XzTsdEZuh4UU/edit)
+
 ## Contact
 
 - #search channel or @searchers on Slack.
