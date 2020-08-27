@@ -60,8 +60,8 @@ A booking is when a customer commits to pay us money. This includes when:
 A customer is an organization with a Sourcegraph subscription contract that has not ended.
 
 1. We can only publicly mention the names of customers who have explicitly agreed to be referenceable.
-  - Customers mentioned on [about.sourcegraph.com](https://about.sourcegraph.com/) (by logo and/or case study) are referenceable.
-  - If in doubt about whether another customer is referenceable by name, ask in #sales.
+    - Customers mentioned on [about.sourcegraph.com](https://about.sourcegraph.com/) (by logo and/or case study) are referenceable.
+    - If in doubt about whether another customer is referenceable by name, ask in #sales.
 1. If an organization's contract will start in the future, they are still considered a customer. (This can happen when we agree to have a contract start on the next 1st of the month because that makes life easier for a customer, for example.)
 
 ### Sales Accepted Opportunity (SAO):
