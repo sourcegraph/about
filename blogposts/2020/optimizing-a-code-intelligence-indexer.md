@@ -11,7 +11,7 @@ published: true
 
 We've finally tagged the [one-point-oh release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go), boasting impressive speed improvements that bring intelligence to your Go code faster than ever before.
 
-The code intelligence is hard at work trying to bring the _time to intelligence_ - the time between a commit and useful navigation of that code in your Sourcegraph instance - as close to zero as possible. We want your code to always have up-to-date precise code intelligence on the newest commits to help aid you when browsing and reviewing unfamiliar code. Indexing speed is a _huge_ part of this, and we've made a great leap here.
+The code intelligence team is hard at work trying to bring the _time to intelligence_ (the time between pushing your code to upstream and when you can precisely navigate that code on Sourcegraph) as close to zero as possible. We want your code to always have precise and up-to-date code intelligence when you're browsing and reviewing unfamiliar code. Indexing speed is a huge part of this, and we've made a great leap here.
 
 As an illustrative example, checkout the visual difference between indexing our [main repository](https://github.com/sourcegraph/sourcegraph) with lsif-go v0.9 (above) and indexing it with lsif-go v1.0 (below).
 
