@@ -1,4 +1,4 @@
-# Adding to Team Map
+# Update yourself to Team Map
 
 Add yourself to the team map by editing [locations.geojson](https://github.com/sourcegraph/about/blob/master/company/team/locations.geojson):
 
