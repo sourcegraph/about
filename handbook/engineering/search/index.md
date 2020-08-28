@@ -2,16 +2,16 @@
 
 We own the end-to-end Sourcegraph search experience.
 
-The search team's current focus is documented in the [tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fsearch).
+Our current focus is documented in the [tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fsearch).
 
 ## Vision
 
 Sourcegraph search is:
-- Fast: Performance of showing results is fast, I can get to what I’m looking for quickly
-- Expressive: It is possible to construct a search query to find exactly the results I’m looking for. The tools, syntax, filters, are provided to construct the queries I want to write.
+- **Fast:** Performance of showing results is fast, I can get to what I’m looking for quickly
+- **Expressive:** It is possible to construct a search query to find exactly the results I’m looking for. The tools, syntax, filters, are provided to construct the queries I want to write.
 The answer to “Can I do ‘X’ with Sourcegraph?” will always be yes.
-- Easy to use: Users can figure out how to find what they are looking for, the syntax is clear, new users understand what options they have for searching.
-- Sharable: Sourcegraph search creates network effects that provide compounding value with scale. 
+- **Easy to use:** Users can figure out how to find what they are looking for, the syntax is clear, new users understand what options they have for searching.
+- **Sharable:** Sourcegraph search creates network effects that provide compounding value with scale. 
 
 ## Goals
 _Updated 2020-08-27_
@@ -28,57 +28,57 @@ In the next 6 months we want to be halfway to the long term goal. To achieve thi
 
 ## Short term (1-3 months)
 
-- Fast
-  - Streaming search
-    - Problem: We want to make significant improvements to search that are blocked by not having the infrastructure needed.
-    - Owner: Keegan
-    - Status: In progress
-- Expressive
-  - Expressive search syntax
-    - Hierarchical search (AND/OR/NOT)
-        - Problem: We have customers who want to migrate from OpenGrok and other search tools, and they want to be able to do searches that are available in those tools.
-        - Outcomes: Users can run complex searches on Sourcegraph.
-        - Owner: Rijnard
-        - Status: In progress
-    - Improve syntax for existing filters like `repohasfile`
-        - Problem: Creating a custom filter name for every permutation of search use does not scale (existing filter examples: `repohasfile`, `hascommitafter`).
-        - Outcomes: We have an expressive syntax that scales and effectively leverages existing filters to achieve searches that previously would have required a custom/new filter.
-        - Owner: Rijnard/Stefan
-        - Status: Not started
-    - Revision search
-        - Problem: Users want to search across branches with the same ease as searching across repositories, and are currently unable to do so.
-        - Owner: Stefan
-        - Status: In progress
-- Easy to use
-  - Get to files and repositories more quickly
-    - Problem: Finding files and repositories often takes multiple tries to get the syntax correct or creative solutions to get the result users are looking for.
-    - Outcomes: Users leverage file and repo filters to quickly get to the code they are searching for.
-    - Owner: Stefan
-    - Status: In progress
-  - Improve search experience
-    - Problem: 
+**Fast**
+  - **Streaming search**
+    - **Problem:** We want to make significant improvements to search that are blocked by not having the infrastructure needed.
+    - **Owner:** Keegan
+    - **Status:** In progress
+- **Expressive**
+  - **Expressive search syntax**
+    - **Hierarchical search (AND/OR/NOT)**
+        - **Problem:** We have customers who want to migrate from OpenGrok and other search tools, and they want to be able to do searches that are available in those tools.
+        - **Outcomes:** Users can run complex searches on Sourcegraph.
+        - **Owner:** Rijnard
+        - **Status:** In progress
+    - **Improve syntax for existing filters like `repohasfile`**
+        - **Problem:** Creating a custom filter name for every permutation of search use does not scale (existing filter examples: `repohasfile`, `hascommitafter`).
+        - **Outcomes:** We have an expressive syntax that scales and effectively leverages existing filters to achieve searches that previously would have required a custom/new filter.
+        - **Owner:** Rijnard/Stefan
+        - **Status:** Not started
+    - **Revision search**
+        - **Problem:** Users want to search across branches with the same ease as searching across repositories, and are currently unable to do so.
+        - **Owner:** Stefan
+        - **Status:** In progress
+- **Easy to use**
+  - **Get to files and repositories more quickly**
+    - **Problem:** Finding files and repositories often takes multiple tries to get the syntax correct or creative solutions to get the result users are looking for.
+    - **Outcomes:** Users leverage file and repo filters to quickly get to the code they are searching for.
+    - **Owner:** Stefan
+    - **Status:** In progress
+  - **Improve search experience**
+    - **Problem:** 
       - New users who are trying Sourcegraph for the first time have trouble learning the syntax and breadth of Sourcegraph features.
-        - Owner: Farhan
-        - Status: In progress
+        - **Owner:** Farhan
+        - **Status:** In progress
       - It is hard for users to quickly get to code they care about.
-        - Owner: Farhan, Juliana
-        - Status: In progress
-    - Outcomes: 
+        - **Owner:** Farhan, Juliana
+        - **Status:** In progress
+    - **Outcomes:** 
         - New users are introduced to Sourcegraph and are able to more quickly see the value and run searches more quickly.
         - Users can run searches over code they care about more quickly.
         - Sourcegraph surfaces code and searches users care about.
-- Sharable
-  - Code monitoring ([RFC 227](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit))
-    - Problem: Users want to be notified about important things going on in their code.
-    - Outcome: Notifications create a shared understanding and raise awareness of what’s going on in the code.
-    - Plan
+- **Sharable**
+  - **Code monitoring** ([RFC 227](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit))
+    - **Problem:** Users want to be notified about important things going on in their code.
+    - **Outcome:** Notifications create a shared understanding and raise awareness of what’s going on in the code.
+    - **Plan**
         - Improved diff search performance
         - Webhooks on search results
           - Slack integration
           - Zapier integration
           - Email
-    - Owner: TBD
-    - Status: Not started
+    - **Owner:** TBD
+    - **Status:** Not started
 
 
 
