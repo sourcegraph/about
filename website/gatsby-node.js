@@ -38,12 +38,12 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
     let blogType
     switch (fileNode.sourceInstanceName) {
       case 'blog':
-        permalink = `/blog/${slug}`
+        permalink = `/blog/${slug}/`
         blogType = 'blog'
         break
 
       case 'podcast':
-        permalink = `/podcast/${slug}`
+        permalink = `/podcast/${slug}/`
         blogType = 'podcast'
         break
 
@@ -61,11 +61,11 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
             `no blogType for ${fileNode.relativePath}, relativeDirectory is ${fileNode.relativeDirectory}`
           )
         }
-        permalink = `/${blogType}/${slug}`
+        permalink = `/${blogType}/${slug}/`
         break
 
       case 'data':
-        permalink = `/${slug}`
+        permalink = `/${slug}/`
         break
 
       default:

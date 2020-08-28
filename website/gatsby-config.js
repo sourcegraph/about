@@ -90,7 +90,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       options: {
-        noTrailingSlash: true,
+        noTrailingSlash: false,
         siteUrl: `https://about.sourcegraph.com`,
       },
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
