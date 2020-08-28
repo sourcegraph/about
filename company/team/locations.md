@@ -11,5 +11,5 @@ To add your own location:
 
 1. Copy the contents of [`locations.geojson`](https://raw.githubusercontent.com/sourcegraph/about/master/company/team/locations.geojson)
 2. Drop it in https://geojson.io
-3. Add a marker with your location and the property `"name": "<yourname>"`
+3. Add a marker with your location and the property `"name": "<yourname>"`, see node example in [README](https://github.com/sourcegraph/about/blob/aileenrose-patch-1/company/team/README.md)
 4. Send a pull request to update the file!
