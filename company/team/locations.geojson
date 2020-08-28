@@ -298,7 +298,19 @@
           -111.90299391746521,
           33.71319364933552
         ]
-
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aida DeWitt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26993560791016,
+          37.86943313301452
+        ]
       }
     }
   ]
