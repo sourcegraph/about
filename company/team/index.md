@@ -7,7 +7,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Full Name (optional pronouns)
 
 - Role(s)
-- City, region, country, country flag emoji
+- City, region, country, country flag emoji (optional: add yourself to [the team locations map](locations.md)!)
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)

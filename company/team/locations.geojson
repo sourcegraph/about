@@ -178,7 +178,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.063200,
+          -123.0632,
           49.279493
         ]
       }
@@ -210,17 +210,30 @@
       }
     },
     {
-        "type": "Feature",
-        "properties": {
-          "name": "Noah Santschi-Cooney"
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -6.382739,
-            52.183102
-          ]
-        }
+      "type": "Feature",
+      "properties": {
+        "name": "Noah Santschi-Cooney"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.382739,
+          52.183102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Robert Lin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57470703125,
+          25.075648445630527
+        ]
+      }
     }
   ]
 }
