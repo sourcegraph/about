@@ -31,7 +31,7 @@ Sourcegraph Cloud projects.
 
 ### Other Projects
 
-Misc Projects with per-project permissions.
+Misc Projects with permissions set at the project level.
 
 - **sourcegraph-calend**: Owned by @sqs
 - **sourcegraph-orgtool**: Owned by @sqs
