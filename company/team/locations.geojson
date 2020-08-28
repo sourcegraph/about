@@ -247,6 +247,19 @@
           39.59917423931615
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "María Craig"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9600296020507812,
+          41.266581901105305
+        ]
+      }
     }
   ]
 }
