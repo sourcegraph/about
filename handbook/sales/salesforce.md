@@ -42,9 +42,11 @@ TBD
 
 ### Associating NPS submissions with opportunities
 
-SDRs are responsible for associating new NPS submissions to their corresponding opportunities. 
-- Find the lead on SFDC using the email address used in submitting the survey. 
+SDRs are responsible for associating new NPS submissions to their corresponding Account and Contact Records. 
+- Find the Account and Contact using the email address used in submitting the survey. 
 - Convert it into a contact with the existing opportunity and account. 
+
+If the account and contact don't exist, convert the lead to create a new account/contact. If they do exist, make sure to merge the lead into the existing account/contact upon conversion. 
 
 
 ## HubSpot and Salesforce
