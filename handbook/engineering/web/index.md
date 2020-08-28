@@ -77,6 +77,7 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 
 ## Members
 
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
 - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
   - [Felix Becker](../../../company/team/index.md#felix-becker)
   - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)

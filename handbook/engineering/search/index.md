@@ -15,6 +15,7 @@ Our current goals are documented in the [search team's current tracking issue](h
 
 ## Members
 
+- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md)) is focused on search, [Christina Forney](../../../company/team/index.md#) is supporting.
 - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
 - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
 - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)

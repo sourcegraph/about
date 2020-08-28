@@ -95,6 +95,7 @@ Go, Docker, Kubernetes
 
 ## Members
 
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. The engineering team is owning PM responsibilities in the meantime.
 - [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
     - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
     - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
