@@ -241,6 +241,7 @@ table {
 }
 
 @import 'components/blog/BlogPost';
+@import 'components/blog/LinkPost';
 @import 'components/blog/PodcastPost';
 @import 'components/blog/PostsList';
 @import 'components/blog/ReleasePost';
@@ -305,4 +306,13 @@ body {
 }
 .bg-light-transparent {
     background-color: transparentize($light-11, 0.3);
+}
+.bg-unset {
+    background-color: unset;
+}
+.font-size-base {
+    font-size: $font-size-base !important;
+}
+.font-family-base {
+    font-family: $font-family-base !important;
 }

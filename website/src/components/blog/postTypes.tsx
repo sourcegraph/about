@@ -3,9 +3,11 @@ import { BlogPost } from './BlogPost'
 import { ReleasePost } from './ReleasePost'
 import { PodcastPost } from './PodcastPost'
 import { PodcastSubscribeLinks } from '../podcast/PodcastSubscribeLinks'
+import { LinkPost } from './LinkPost'
 
 export enum PostType {
     BlogPost,
+    LinkPost,
     ReleasePost,
     PodcastPost,
 }
@@ -57,6 +59,7 @@ export interface PostComponentProps {
 
 export const POST_TYPE_TO_COMPONENT: Record<PostType, React.FunctionComponent<PostComponentProps>> = {
     [PostType.BlogPost]: BlogPost,
+    [PostType.LinkPost]: LinkPost,
     [PostType.ReleasePost]: ReleasePost,
     [PostType.PodcastPost]: PodcastPost,
 }
@@ -66,6 +69,8 @@ export const postType = (post: Post): PostType =>
         ? PostType.ReleasePost
         : post.frontmatter.tags?.includes('podcast')
         ? PostType.PodcastPost
+        : post.frontmatter.style === 'short-inline-title'
+        ? PostType.LinkPost
         : PostType.BlogPost
 
 export enum BlogType {
