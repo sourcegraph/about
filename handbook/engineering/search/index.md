@@ -2,8 +2,6 @@
 
 We own the end-to-end Sourcegraph search experience.
 
-Our current focus is documented in the [tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fsearch).
-
 ## Vision
 
 Sourcegraph search is:
@@ -31,6 +29,8 @@ In the next 6 months we want to be halfway to the long term goal. To achieve thi
 - Scale fast search to 500k repositories.
 
 ## Short term (1-3 months)
+
+Our current focus is documented in the [tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fsearch).
 
 ### Fast
 
