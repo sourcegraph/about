@@ -7,6 +7,7 @@ This page describes our different cloud environments.
 We utilize multiple Google Cloud projects and folders to organize our workloads and manage access control for our engineers, as well as limit the scope of roles and service accounts across projects.
 
 ### Root Projects
+
 These projects contain per-project permissions.
 
 - **TelligentSourcegraph**: Data pipeline and storage for pings and Cloud event logging
