@@ -8,7 +8,7 @@ Our current focus is documented in the [tracking issue for the current milestone
 
 Sourcegraph search is:
 
-- **Fast:** Performance of showing results is fast, I can get to what I’m looking for quickly
+- **Fast:** Performance of showing results is fast and I can get to what I’m looking for quickly.
 - **Expressive:** It is possible to construct a search query to find exactly the results I’m looking for. The tools, syntax, filters, are provided to construct the queries I want to write.
 The answer to “Can I do ‘X’ with Sourcegraph?” will always be yes.
 - **Easy to use:** Users can figure out how to find what they are looking for, the syntax is clear, new users understand what options they have for searching.
