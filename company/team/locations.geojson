@@ -225,6 +225,19 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Chris Pine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.62304440140723,
+          45.519298927923565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Robert Lin"
       },
       "geometry": {
