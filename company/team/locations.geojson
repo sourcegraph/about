@@ -260,6 +260,19 @@
           41.266581901105305
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quinn Keast"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.392333984375,
+          52.517892228382834
+        ]
+      }
     }
   ]
 }
