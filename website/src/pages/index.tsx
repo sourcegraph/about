@@ -256,7 +256,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <GetStarted className="bg-gradient-green-blue" />
+            <GetStarted className="bg-gradient-green-blue mt-6" />
         </div>
     </Layout>
 )
