@@ -15,7 +15,7 @@ The web team's current focus is documented in [the tracking issue for the curren
 
 ### Long term
 
-***Deliver our users the full, unique value of [extensions](https://docs.sourcegraph.com/extensions).***
+***Deliver the full, unique value of [extensions](https://docs.sourcegraph.com/extensions) to our users.***
 
 **Outcome**: Our webapp, browser extensions and native integrations are great platforms to provide our users unique value through extensions. These platforms are well-maintained, consistent, easy to setup, well-documented, well-tested, performant, and show their power through convincing extensions built on top of them. The extensions platform and API provide powerful capabilities to extension developers and a great developer experience.
 
