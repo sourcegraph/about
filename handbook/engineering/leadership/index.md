@@ -1,9 +1,10 @@
 # Engineering leadership team
 
-This page documents the engineering leadership team that reports to the VP of Engineering.
+This page documents the engineering leadership team.
 
 ## Members
 
+- [Beyang Liu](../../../company/team/index.md#beyang-liu), CTO
 - [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](../roles.md#vp-engineering)
   - [Tomás Senart](../../../company/team/index.md#tomás-senart), [Engineering Manager](../roles.md#engineering-manager), [Cloud](../cloud/index.md)
   - [Loïc Guychard](../../../company/team/index.md#loïc-guychard), [Engineering Manager](../roles.md#engineering-manager), [Web](../campaigns/index.md)
