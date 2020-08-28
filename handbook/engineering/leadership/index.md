@@ -79,6 +79,8 @@ Engineering managers send an update to engineering-leadership-status@sourcegraph
 - What are the plans for this week?
 - What issues should my peer-team/manager be aware of?
 
+If you have sensitive information to communicate, please send a separate email directly to the relevant people.
+
 ## Book recommendations
 
 Here are some books that multiple people on the team have read and recommend. If you haven't read these, [use your education budget](../../people-ops/travel.md#professional-development-and-education) and read them!
