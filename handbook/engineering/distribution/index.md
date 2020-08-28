@@ -90,15 +90,24 @@ Go, Docker, Kubernetes
   * [How to test the Gitlab native integration locally](gitlab_native_local.md)
   * [How to make updates to global settings and configuration on sourcegraph.com](update_sourcegraph_website.md)
   * [Create GCP commitments](gcp.md#committed-use-discounts)
+* FAQ
+  * [Why is there not a "stable" or "latest" Docker image tag?](faq.md#why-is-there-not-a-stable-or-latest-docker-image-tag)
 
 ## Members
 
-- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([engineering manager](../roles.md#engineering-manager))
-- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
-- [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
-- [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
-- [Dave Try](../../../company/team/index.md#dave-try)
-- [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. The engineering team is owning PM responsibilities in the meantime.
+- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
+    - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
+    - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
+    - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
+    - [Dave Try](../../../company/team/index.md#dave-try)
+    - [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
+
+## On-call
+
+- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerDistribution%2C+:%5B_%5D%7D+OR+%28:%5B_%5D%2C+ObservableOwnerDistribution%29+count:1000&patternType=structural)
+- [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/aa59eba4-9b34-45ea-9515-c4dab4cbdac9/main)
+
 
 ## Hiring status
 

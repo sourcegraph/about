@@ -7,7 +7,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Full Name (optional pronouns)
 
 - Role(s)
-- City, region, country, country flag emoji
+- City, region, country, country flag emoji (optional: add yourself to [the team locations map](locations.md)!)
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)
@@ -235,9 +235,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Robert Lin
 
 - Software Engineer Intern
-- Vancouver, BC, Canada 🇨🇦
-- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://github.com/bobheadxi)
-- If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final year studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
+- Taipei, Taiwan 🇹🇼 (GMT+8) 
+- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
+- If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final semester remotely studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
 
 ## Marek Zaluski
 
@@ -287,7 +287,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Kh-ay-eem (or Hayeem)
 - Security Engineer
-- Toronto, Canada, 🇨🇦
+- Kiryat Hasharon, Israel, 🇮🇱
 - [chayim@sourcegraph.com](mailto:chayim@sourcegraph.com)
 - Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a piece of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics. Plus za'atar - he covers everything he can in za'atar.
 
@@ -406,6 +406,21 @@ To add yourself to this page, copy the following template, paste it at the end o
 - New York, New York
 - [Bill@sourcegraph.com](mailto:Bill@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/william-kolman/)
 - Bill lives in Long Island City, Queens with his wife, daughter, and dog. He has been in tech related sales since 2008. Most recently he has been working in early stage startups, building businesses from the ground up in the eastern US. Bill is an avid bicyclist, so when he's not evangelizing Sourcegraph or studying the newest trends in technology, he is probably exploring the 5 boroughs on his bike.
+
+## Owen Brennan (he/him)
+
+- Account Executive
+- Boise, Idaho, USA
+- [owen@sourcegraph.com](mailto:owen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/owenbrennan/)
+- Owen has worked in early-stage technology sales for almost his entire career. He's passionate about helping customers resolve their unique business challenges, and fostering a long-term impact for them. Outside of work, Owen can be found with his family exploring his home State of Idaho: hiking, fly fishing, rafting and snowboarding.
+
+## María Craig (she/her)
+
+- Product Manager
+- Barcelona, Spain 🇪🇸 / Buenos Aires, Argentina 🇦🇷
+- [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [GitHub](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
+- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
+
 
 <!-- Paste *your* section above this line by following our template below:
 

@@ -87,11 +87,7 @@ export default ((props: any) => (
                                 planProperties={
                                     <>
                                         <PricingPlanProperty
-                                            description={
-                                                <>
-                                                    Add up to 200 users. Packs start at $325/mo for 25 additional users.
-                                                </>
-                                            }
+                                            description={<>Add $325/mo for 25 additional users. 50 users max.</>}
                                         >
                                             25 users included
                                         </PricingPlanProperty>

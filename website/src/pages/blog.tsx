@@ -41,6 +41,7 @@ export const pageQuery = graphql`
                             category
                             description
                         }
+                        style
                     }
                     html
                     excerpt(pruneLength: 300)
