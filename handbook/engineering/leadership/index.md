@@ -41,7 +41,7 @@ Our long term vision is to build an organization that attracts and retains the b
 
 #### Engineering manager onboarding
 
-- Problem: We recently hired and onboarded our first group of engineering managers and onboarded each of them in an ad hoc way. We will be hiring at least one more engineering manager in the near future (for the web team) and we want to 
+- Problem: We recently hired and onboarded our first group of engineering managers and onboarded each of them in an ad hoc way. We will be hiring at least one more engineering manager in the near future (for the web team) and we want to document what we have learned so they have an even better onboarding experience.
 - Owner: Nick
 - Plan: Document the onboarding process for engineering managers in our handbook before the EM for the web team starts.
 - Status: Not started.
