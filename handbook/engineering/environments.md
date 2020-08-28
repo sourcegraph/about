@@ -26,7 +26,7 @@ Sourcegraph Cloud projects.
 
 - **Sourcegraph**: Services for sourcegraph.com.
 - **Sourcegraph Auxiliary**: Testing clusters, deployments and VMs.
-- **sourcegraph-code-intel**: Services for Code Intel code execution.
+- **sourcegraph-code-intel**: Services for Code Intel code execution that are separated from our production project for extra isolation.
 - **Sourcegraph CI**: Services for our CI cluster and temporary CI resources.
 
 ### Other Projects
