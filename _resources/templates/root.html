@@ -16,7 +16,7 @@
 					<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" /></a>
 					<nav>
 						<form id="search-form" method="get" action="/search">
-							<input type="text" id="search" name="q" value="{{block "query" .}}{{end}}" placeholder="Search handbook..." spellcheck="false" />
+							<input type="text" id="search-input" name="q" value="{{block "query" .}}{{end}}" placeholder="Search handbook..." spellcheck="false" />
 							<button id="search-button" type="submit">Search</button>
 						</form>
 						<a href="https://about.sourcegraph.com">About</a>
