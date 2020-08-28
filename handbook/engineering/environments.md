@@ -31,6 +31,7 @@ Sourcegraph Cloud projects.
 - **sourcegraph-code-intel**: Services for Code Intel code execution
 - **Sourcegraph CI**: Services for our CI cluster and temporary CI resources
 
+
 ### Other Projects
 Misc Projects with per-project permissions.
 
