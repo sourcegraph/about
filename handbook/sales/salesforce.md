@@ -40,6 +40,13 @@ Opportunities begin at the [interest](index.md#interest) stage.
 
 TBD
 
+### Associating NPS submissions with opportunities
+
+SDRs are responsible for associating new NPS submissions to their corresponding opportunities. 
+- Find the lead on SFDC using the email address used in submitting the survey. 
+- Convert it into a contact with the existing opportunity and account. 
+
+
 ## HubSpot and Salesforce
 
 ### HubSpot to Salesforce sync
