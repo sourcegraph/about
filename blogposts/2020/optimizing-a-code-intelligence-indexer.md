@@ -26,7 +26,7 @@ Unfortunately, indexing our own code isn't so worthy of celebration. It's a medi
 
 What we need to do is go **big**.
 
-Our goal is to _efficiently_ bring code intelligence to the massive engineering teams with a mind-boggling amount of code and a breathtaking frequency of updates to that code. Our goal is to help humans effectively navigate code bases with a constantly changing topology so they can be sure of their footing and concentrate on the task at hand.
+Our goal is to bring code intelligence to the massive engineering teams with a mind-boggling amount of code and a breathtaking frequency of updates to that code. Our goal is to help humans effectively navigate code bases with a constantly changing topology so they can be sure of their footing and concentrate on the task at hand.
 
 So how do we perform at scale? In v0.9, it took around 7 1/2 minutes to index the [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go); in v1.0, it takes 24 seconds. In v0.9, it took nearly 7 hours to index 56 million lines of code; in v1.0, it takes under 20 minutes. See [below](#reviewing-results) for a graphical comparison between the last three versions of the indexer.
 
