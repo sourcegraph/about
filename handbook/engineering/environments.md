@@ -10,9 +10,9 @@ We utilize multiple Google Cloud projects and folders to organize our workloads 
 
 These projects contain per-project permissions.
 
-- **TelligentSourcegraph**: Data pipeline and storage for pings and Cloud event logging
-- **Universities**: Sourcegraph instances for universities
-- **sourcegraph-interviews**: Shared project for interviews
+- **TelligentSourcegraph**: Data pipeline and storage for pings and Cloud event logging.
+- **Universities**: Sourcegraph instances for universities.
+- **sourcegraph-interviews**: Shared project for interviews.
 
 ### Folders
 
@@ -24,17 +24,17 @@ Contains projects used by individual engineers. Engineers are expected to remove
 
 Sourcegraph Cloud projects.
 
-- **Sourcegraph**: Services for sourcegraph.com
-- **Sourcegraph Auxiliary**: Testing clusters, deployments and VMs
-- **sourcegraph-code-intel**: Services for Code Intel code execution
-- **Sourcegraph CI**: Services for our CI cluster and temporary CI resources
+- **Sourcegraph**: Services for sourcegraph.com.
+- **Sourcegraph Auxiliary**: Testing clusters, deployments and VMs.
+- **sourcegraph-code-intel**: Services for Code Intel code execution.
+- **Sourcegraph CI**: Services for our CI cluster and temporary CI resources.
 
 ### Other Projects
 
 Misc Projects with permissions set at the project level.
 
-- **sourcegraph-calend**: Owned by @sqs
-- **sourcegraph-orgtool**: Owned by @sqs
+- **sourcegraph-calend**: Owned by @sqs.
+- **sourcegraph-orgtool**: Owned by @sqs.
 
 ### Managed Instances
 
