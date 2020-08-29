@@ -67,7 +67,6 @@ export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>
         posts={data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
         location={location}
     >
-        <div className="d-flex flex-column align-items-center">asdf</div>
     </PostsListPage>
 )
 const a = () => (
