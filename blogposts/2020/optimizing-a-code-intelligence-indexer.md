@@ -120,9 +120,7 @@ The implementation of the indexer has historically been single-threaded for simp
 
 ![All my idle cores](https://i.imgflip.com/4bwccv.jpg)
 
-This design decision has recently become a heavier weight on our shoulders ever since we noticed one of our enterprise customers give their engineers [m5.24xlarge EC2 instances](https://aws.amazon.com/ec2/instance-types/).
-
-There's no way we're going to miss the opportunity to see all 96 of those cores light up the next time we chat. So we made everything that can run at the same time [run at the same time](https://github.com/sourcegraph/lsif-go/pull/91). Unfortunately, parallelizing workloads in general is not a trivial task.
+Sourcegraph is often deployed onto nodes with many CPUs, but our indexer was only able to use one at a time. We've realized what a waste the single-threaded design was after one of our enterprise customers showed us lsif-go consuming 100% of one core, and 0% of the other 95 cores. There's no way we're going to miss the opportunity to see all 96 of those cores light up the next time we chat. So we made everything that is able to run at the same time [run at the same time](https://github.com/sourcegraph/lsif-go/pull/91). Unfortunately, parallelizing workloads in general is not a trivial task.
 
 ##### You have to protect shared state
 
