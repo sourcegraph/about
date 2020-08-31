@@ -1,6 +1,6 @@
 # Security team
 
-At Sourcegraph we think that security is an enabler for the business. Sourcegraph is committed to proactive security, and addressing vulnerabilities in a timely manner. We approach security with a can-do philosophy, and look to achieve product goals while maintaining a positive posture, and increasing our security stance over time.
+We think that security is an enabler for the business. Sourcegraph is committed to proactive security, and addressing vulnerabilities in a timely manner. We approach security with a can-do philosophy, and look to achieve product goals while maintaining a positive posture, and increasing our security stance over time.
 
 ## Goals
 
@@ -61,19 +61,20 @@ When we receive [a report of a security vulnerability](#how-to-report-a-security
 
 On the security team, we work by planning, tracking, and reviewing - creating a feedback mechansim targeting our own continuous improvement based on the things we learn.
 
-### Positions
+### Principles
 
-1. Goals are something we strive for, we will track and communicate progress towards them.
+1. [Goals](https://about.sourcegraph.com/company/goals/guidelines) are something we strive for, whilst tracking and communicating progress.
 2. A work item is a piece of work (e.g., writing code, hiring a new teammate) that makes progress toward achieving a goal.
-3. Releases may be made up of N workitems, that may impact Y goals.  Whilst this is true, Sourcegraph needs to communicate both internally and externally progress towards those goals.
-4. Security by its various nature has public work items (main repo) and private workitems (security repo). Over time workitems should move from the private repository to the public repository once they can be made public.  The ideal goal state is the lack of a private security repository.
+3. Releases may be made up of N workitems, that may impact Y goals.  Whilst this is true, we communicate both internally and externally progress towards those goals.
+4. Security by its various nature has public work items ([main repo](https://github.com/sourcegraph/sourcegraph) and private workitems ([security repo](https://github.com/sourcegraph/security-issues/)). Over time workitems should move from the private repository to the public repository once they can be made public.  The ideal goal state is the lack of a private security repository.
 
 ### Planning
 
 1. We plan iterations and features prior to their execution, in a team planning session.
-2. We right RFCs and solicit feedback *prior* to the start of an interation.
-3. We hold weekly team syncs and [track them here](https://docs.google.com/document/d/1l-JyN-hol2G6YXNqPsJsIgN2z3aZEzOW4-Julu4xthI).
-4. We report on our status and progress weekly in [tracking issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Atracking+label%3Ateam%2Fsecurity), and radiate communication.
+2. We set one or more goals for the interation.
+3. We write RFCs and solicit feedback ideally, prior to the start of an iteration, but especially with forethought in mind.
+4. We hold weekly team syncs and [track them here](https://docs.google.com/document/d/1l-JyN-hol2G6YXNqPsJsIgN2z3aZEzOW4-Julu4xthI).
+5. We report on our status and progress weekly in [tracking issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Atracking+label%3Ateam%2Fsecurity), and radiate communication.
 
 ### Tracking
 
@@ -88,7 +89,7 @@ On the security team, we work by planning, tracking, and reviewing - creating a 
    
 ### Learning
 
-After the each release, we hold a retrospective. We try to understand the degree to which we achieved the goals we communicaed at the beginning of the iteration.  We idenitfy what went well and what our opportunities for imporvement.  We actively choose one of the things we've learned, and target its improvement.
+After the each release, we hold a [retrospective](https://about.sourcegraph.com/retrospectives). We try to understand the degree to which we achieved the goals we communicaed at the beginning of the iteration.  We idenitfy what went well and what our opportunities for imporvement.  We actively choose one of the things we've learned, and target its improvement.
 
 ## Members
 
