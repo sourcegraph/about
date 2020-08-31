@@ -16,9 +16,8 @@ On the [code intelligence team](https://about.sourcegraph.com/handbook/engineeri
 We call our key (internal) metric **time to intelligence** (TTI), which covers the time it takes to:
 
 1. Push a new commit to a branch on your repository
-1. Trigger a CI job to run on that commit to:
-    1. Index the code of that commit
-    1. Upload the resulting index to your Sourcegraph instance
+1. Trigger a CI job to index the code of that commit
+1. Upload the resulting index to your Sourcegraph instance
 1. Process the uploaded index
 1. Use the processed index to provide up-to-date code intelligence
 
