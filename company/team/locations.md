@@ -10,6 +10,21 @@ The [Sourcegraph team](index.md) is distributed around the world!
 To add your own location:
 
 1. Copy the contents of [`locations.geojson`](https://raw.githubusercontent.com/sourcegraph/about/master/company/team/locations.geojson)
-2. Drop it in https://geojson.io
-3. Add a marker with your location and the property `"name": "<yourname>"`, see node example in [README](README.md)
-4. Send a pull request to update the file!
+1. Drop it in [geojson.io](https://geojson.io)
+1. Add a marker with your location and the property `"name": "<yourname>"`, for example:
+    ```json
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "<YOUR NAME>"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                <LONGITUDE>,
+                <LATITUDE>
+            ]
+        }
+    }
+    ```
+1. Send a pull request to update the file!
