@@ -76,7 +76,7 @@ Our current focus is documented in the [tracking issue for the current milestone
       - Users can run searches over code they care about more quickly.
       - Sourcegraph surfaces code and searches users care about.
 
-### Sharable
+### Shareable
 
 - **Code monitoring** ([RFC 227](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit))
   - **Problem:** Users want to be notified about important things going on in their code.
