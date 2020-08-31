@@ -43,17 +43,15 @@ Here's how we did it.
 
 We think the major inefficiency of the previous version of lsif-go is best illustrated by a likely familiar, but incredibly relevant, story by [Joel Spolsky](https://www.joelonsoftware.com/2001/12/11/back-to-basics/) about a simple worker named Shlemiel.
 
-<div class="quote-container">
-  <blockquote>
-    Shlemiel gets a job as a street painter, painting the dotted lines down the middle of the road. On the first day he takes a can of paint out to the road and finishes 300 yards of the road. "That’s pretty good!" says his boss, "you’re a fast worker!" and pays him a kopeck.
-    <br /><br />
-    The next day Shlemiel only gets 150 yards done. "Well, that’s not nearly as good as yesterday, but you’re still a fast worker. 150 yards is respectable," and pays him a kopeck.
-    <br /> <br />
-    The next day Shlemiel paints 30 yards of the road. "Only 30!" shouts his boss. "That’s unacceptable! On the first day you did ten times that much work! What’s going on?"
-    <br /><br />
-    "I can’t help it," says Shlemiel. "Every day I get farther and farther away from the paint can!"
-  </blockquote>
-</div>
+<blockquote>
+  Shlemiel gets a job as a street painter, painting the dotted lines down the middle of the road. On the first day he takes a can of paint out to the road and finishes 300 yards of the road. "That’s pretty good!" says his boss, "you’re a fast worker!" and pays him a kopeck.
+  <br /><br />
+  The next day Shlemiel only gets 150 yards done. "Well, that’s not nearly as good as yesterday, but you’re still a fast worker. 150 yards is respectable," and pays him a kopeck.
+  <br /> <br />
+  The next day Shlemiel paints 30 yards of the road. "Only 30!" shouts his boss. "That’s unacceptable! On the first day you did ten times that much work! What’s going on?"
+  <br /><br />
+  "I can’t help it," says Shlemiel. "Every day I get farther and farther away from the paint can!"
+</blockquote>
 
 Shlemiel and lsif-go both spent a lot of time needlessly re-executing the same operations in a way that did not help progress the task. Because an operation of non-constant cost was snuck into the lower levels of the process - into a method that was itself called a non-constant number of times - they both found themselves in a process that is [accidentally quadratic](https://accidentallyquadratic.tumblr.com/).
 
@@ -176,8 +174,7 @@ We plan to continue on this path of performance improvements. This is just the l
 To read another optimization story similar to this one, see our previous discussion about optimizing the [code intelligence backend](/blog/optimizing-a-code-intel-backend/), which concentrates on reducing the latency of the part of the code intelligence indexing system that receives the data emitted by LSIF indexers like lsif-go.
 
 <style>
-  .blog-post__body .no-shadow img { box-shadow: none; }
-  .blog-post__body .inline-images img { margin-left: 0; margin-right: 0; padding: 0; border: 0; display: inline; width: 49.5% }
-  .quote-container { width: 100%; }
-  blockquote { margin: 20px 0px; padding-top: 20px; padding-left: 20px; padding-bottom: 20px; margin-left: 20px; font-style: italic; }
+  .blog-post__html .no-shadow img { box-shadow: none; }
+  .blog-post__html .inline-images img { margin-left: 0; margin-right: 0; padding: 0; border: 0; display: inline; width: 49.5% }
+  blockquote { margin: 10px 0; padding: 0 5rem; font-style: italic; text-align: justify; }
 </style>

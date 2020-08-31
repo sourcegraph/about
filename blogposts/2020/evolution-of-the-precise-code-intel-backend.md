@@ -224,7 +224,7 @@ Keep an eye out for updates!
 <style>
   /* Images in this post have natural borders
      Make <p><img></p> snuggle up nice and close to the surrounding text */
-  .blog-post__body img { box-shadow: none; margin: -16px auto; }
+  .blog-post__html img { box-shadow: none; margin: -16px auto; }
 </style>
 
 
