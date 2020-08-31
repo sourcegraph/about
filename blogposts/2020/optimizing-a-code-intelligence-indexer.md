@@ -160,7 +160,7 @@ Each shared datastructure has its own mutex so that contention from one resource
 
 ##### You have to be sure that there are no hidden data dependencies
 
-When we index references, we assume that our map of definitions is already populated. Our solution is to parallelize the workload in distinct steps (first index all definitions, then index all references), where each step can rely on data calculated by hte previous step which was parallelized individually.
+When we index references, we assume that our map of definitions is already populated. Our solution is to parallelize the workload in distinct steps (first index all definitions, then index all references), where each step can rely on data calculated by the previous step which was parallelized individually.
 
 Alternative solutions here require pushing back tasks whose dependencies have not yet been met, pre-determining a dependency graph, or recursively submitting duplicate work to the queue. Each of these solutions have a down side and decrease code clarity.
 
