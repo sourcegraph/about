@@ -4,8 +4,6 @@ The web team owns the maintenance and expansion of our web application and code 
 
 This is a large ownership area, so the team creates a focused plan each iteration, by agreeing on an appropriately small set of [iteration goals](../../../company/goals/index.md). Each goal should have more than one teammate working on it.
 
-The web team's current focus is documented in [the tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+label%3Atracking+label%3Ateam%2Fweb+is%3Aopen).
-
 ## Contact
 
 - #web channel or @web-team in Slack.
@@ -38,6 +36,10 @@ We will tackle these medium-term goals in order, though expect to have some work
    This includes writing more extensions ourselves, but also extending the extension API with more capabilities to enable more use cases.
    We have a long list of ideas and use cases customers shared with us that we can solve and/or enable customers to solve with extensions.
    Some of these integrate Sourcegraph with more external services to suit the setups of more customers, others provide completely new value no other product provides.
+
+### Short term
+
+The web team's short-term goals are documented in [the tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+label%3Atracking+label%3Ateam%2Fweb+is%3Aopen).
 
 ## Tech stack
 
