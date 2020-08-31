@@ -72,7 +72,7 @@ module.exports = {
 
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
-        // Defaults to null
+        // Defaults to null.
         defaultDataLayer: { platform: 'gatsby' },
 
         // Specify optional GTM environment details.
@@ -90,7 +90,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       options: {
-        noTrailingSlash: true,
+        noTrailingSlash: false,
         siteUrl: `https://about.sourcegraph.com`,
       },
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
