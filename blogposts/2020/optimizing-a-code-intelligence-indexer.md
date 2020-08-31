@@ -104,7 +104,7 @@ It is [much more efficient](https://github.com/sourcegraph/lsif-go/pull/84) to i
 
 An LSIF indexer is a tool that spits out an index file. The index file is generally larger than input source code due to making the implicit definition and reference relationships explicit. It stands to reason that the performance of the indexer will eventually be dependent on the performance of formatting the output and writing to disk.
 
-The LSIF index file is formatted as sequence of newline-separated JSON elements. These elements are generally pretty small with the exception of hover content vertexes and contains edges adjacent to large documents. From a dump of 14 million lines, the median line contained only 91 characters (a line with 48 characters being the smallest).
+The LSIF index file is formatted as sequence of newline-separated JSON elements. These elements are generally pretty small with the exception of hover content vertices and contains edges adjacent to large documents. From a dump of 14 million lines, the median line contained only 91 characters (a line with 48 characters being the smallest).
 
 Unfortunately, we were writing each line to an unbuffered file. Without a buffer, writing each element requires a [syscsall](https://man7.org/linux/man-pages/man2/write.2.html) to commit a small amount of data to the target file. With a [buffer](https://hashrocket.com/blog/posts/go-performance-observations#buffered-io), the writes are batched so that 4096 characters are written to disk at a time. This reduces the number of syscalls, and therefore number of userland/kernel context switches, by 98%.
 
