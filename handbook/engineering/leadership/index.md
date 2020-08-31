@@ -77,7 +77,7 @@ Engineering managers send an update to engineering-leadership-status@sourcegraph
 
 - What important things happened last week?
 - What are the plans for this week?
-- What issues should my peer-team/manager be aware of?
+- What should my peer-team/manager be aware of?
 
 If you have sensitive information to communicate, please send a separate email directly to the relevant people.
 
