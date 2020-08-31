@@ -9,6 +9,8 @@ heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
 published: true
 ---
 
+Sourcegraph is used by companies all over the repository number and size spectrum. Some companies employ a microservice approach. For us, that's easy mode. Small repositories are easy and generally fast _enough_ to index even with an LSIF indexer that performs poorly as code size grows. Other companies employ a monorepo approach. This is where the challenge lies for us - but we've made great strides with the recent [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go).
+
 On the [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence) at Sourcegraph, we want you to always have precise and up-to-date hovers, definitions, and references when you're browsing and reviewing unfamiliar code, even on very large monorepos.
 
 ![Cross-repository jump to definition](https://sourcegraphstatic.com/precise-xrepo-j2d.gif)
@@ -21,9 +23,7 @@ To track indexing performance, we use an important internal key metric called **
 1. Process the uploaded index
 1. Use the processed index to provide up-to-date code intelligence
 
-Sourcegraph is used by companies all over the repository number and size spectrum. Some companies employ a microservice approach. For us, that's easy mode. Small repositories are easy and generally fast _enough_ to index even with an indexer that becomes slow as code size grows. Other companies employ a monorepo approach. This is where the challenge lies for us - but we've made great strides with the recent [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go).
-
-Now, how well do we index Go at scale?
+So how well do we index Go code at scale?
 
 * Previously, it took nearly **8 minutes** to index the [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go); it now takes only **24 seconds**.
 * Previously, it took nearly **7 hours** to index 56 million lines of code; it now takes under **20 minutes**.
