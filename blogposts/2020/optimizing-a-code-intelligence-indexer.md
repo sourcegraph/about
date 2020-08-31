@@ -162,7 +162,7 @@ Alternative solutions here require pushing back tasks whose dependencies have no
 
 ##### You have to choose the right level of work to parallelize
 
-You can't throw work into a parallel executor and guarantee that your program runs faster. In fact, the first few attempts at parallelizing lsif-go wasn't fruitful because we tried to index each _file_ in parallel rather than each _package_. The cost of indexing a single file was low enough that the overhead of setting up the goroutines and queueing the work negated any benefit of executing the work in multiple cores.
+You can't throw work into a parallel executor and guarantee that your program runs faster. In fact, the first few attempts at parallelizing lsif-go weren't fruitful because we tried to index each _file_ in parallel rather than each _package_. The cost of indexing a single file was low enough that the overhead of setting up the goroutines and queueing the work negated any benefit of executing the work in multiple cores.
 
 The cost of indexing an entire package is high enough that there is obvious, tangible benefit of indexing multiple packages in different cores. This benefit far outweighs the any of the setup and queueing overhead.
 
