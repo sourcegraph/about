@@ -177,7 +177,7 @@ The cost of indexing an entire package is high enough that there is obvious, tan
 
 In lsif-go v1.0.0, all writes to the file are synchronized by a single goroutine controlling the output buffer. This ensures that for any single goroutine emitting elements, the order of the elements they emit will hit disk in the same order. This is important as LSIF requires that edges refer only to a vertex that has already been indexed.r
 
-Each non-trivial task is broken into package-level work, queued into a channel, and then distributed over a number of goroutines (that scales depending on the number of physical cores on the indexing machine). A task finishes once the entire input channel has been consumed and each worker goroutines has exited. Each task makes a fresh set of goroutines.
+Each non-trivial task is broken into package-level work, queued into a channel, and then distributed over a number of goroutines (that scales depending on the number of physical cores on the indexing machine). A task finishes once the entire input channel has been consumed and each worker goroutine has exited. Each task makes a fresh set of goroutines.
 
 ## Reviewing results
 
