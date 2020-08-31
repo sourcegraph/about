@@ -76,16 +76,6 @@ This struct contains 9 fields, meaning that there are 18 identifiers within the 
 
 The [solution](https://github.com/sourcegraph/lsif-go/pull/66) we implemented instead performs a single walk of the AST of each file and caches the comments attached to each identifier node along the way. Then each node can simply look up its own comment in a shared, pre-populated cache during the relevant indexing step. This was the only major change between v0.9.0 and v0.10.0, and it cut indexing time of the Go AWS SDK by 4x.
 
-### Where was v0.10.0 spending all its time?
-
-After such a large leap in performance we hang up our hat proudly and call it a day, right?
-
-**No!** We keep going to find out how fast this thing can get.
-
-![Wanna see me do it again?](https://i.imgflip.com/4bw5m9.jpg)
-
-#### Stop making the same mistakes
-
 It turns out that lsif-go v0.10.0 was _still_ traversing syntax trees multiple times in order to generate a unique moniker identifier for symbols. For example, keeping the spirit of the examples above:
 
 <p class="text-center">
