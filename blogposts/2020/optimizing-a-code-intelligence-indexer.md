@@ -96,7 +96,7 @@ These AST traversals were also [easy enough to optimize](https://github.com/sour
 
 #### Stop looking at the stuff that doesn't matter
 
-We've greatly reduced the number of AST traversals that we perform, but that doesn't mean that the traversals we're still doing are efficient. When we traverse an AST to gather comments and construct monikers, we do so only for nodes that define a symbol (symbols that are not a definition will use the hover text and moniker of the symbol they reference).
+We've greatly reduced the number of AST traversals that we perform, but that doesn't mean that the traversals we're still doing are efficient. When we traverse an AST, we only store the comments and monikers for nodes that we think define a symbol. Symbols that are not a definition will use the hover text and moniker of the symbol they reference. However, when looking at each node to determine if we cared about its hover text or moniker, we were looking at _too much_ information.
 
 One of the inputs of the traversal is an ordered list of token positions for each definition in the file. When a node is visited, we check to see if the node encloses a position in the list. If it doesn't, the subtree can be skipped. If it does, then the node's children should be visited as the node's subtree contains a definition. If a node's position _equals_ a position in the list, then the node itself is a definition and a hover text and moniker entry should be set for that node.
 
