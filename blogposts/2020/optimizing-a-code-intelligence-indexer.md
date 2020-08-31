@@ -41,7 +41,6 @@ Indexing speed is _so_ important for code bases undergoing constant change. Stal
 
 ## The optimization story
 
-Fans of Sourcegraph also seem like the kind of folks that love a good optimization story - so here we go.
 
 ### Where was v0.9.0 spending all its time?
 
