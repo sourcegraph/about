@@ -41,11 +41,10 @@ Indexing speed is _so_ important for code bases undergoing constant change. Stal
 
 ## The optimization story
 
-Fans of Sourcegraph also seem like the kind of folks that love a good optimization story - so here we go.
 
 ### Where was v0.9.0 spending all its time?
 
-I think describing the inefficiencies of lsif-go v0.9.0 is best illustrated by a likely familiar but incredibly relevant story by [Joel Spolsky](https://www.joelonsoftware.com/2001/12/11/back-to-basics/) about a simple worker named Shlemiel.
+We think describing the inefficiencies of lsif-go v0.9.0 is best illustrated by a likely familiar, but incredibly relevant, story by [Joel Spolsky](https://www.joelonsoftware.com/2001/12/11/back-to-basics/) about a simple worker named Shlemiel.
 
 <div class="quote-container">
   <blockquote>
@@ -107,7 +106,7 @@ It is [much more efficient](https://github.com/sourcegraph/lsif-go/pull/84) to i
 
 #### Don't do lots of little work; do little lots of work
 
-An LSIF indexer is a tool that spits out an index file. The index file is generally larger than input source code due to making the implicit definition and reference relationships explicit. It stands to reason that the performance of the indexer will eventually be dependent on the performance of formatting the output and writing to disk.
+An LSIF indexer is a tool that spits out an index file. The index file is generally larger than the input source code due to making the implicit definition and reference relationships explicit. It stands to reason that the performance of the indexer will eventually be dependent on the performance of formatting the output and writing to disk.
 
 The LSIF index file is formatted as sequence of newline-separated JSON elements. These elements are generally pretty small with the exception of hover content vertices and contains edges adjacent to large documents. From a dump of 14 million lines, the median line contained only 91 characters (a line with 48 characters being the smallest).
 
@@ -161,7 +160,7 @@ Each shared datastructure has its own mutex so that contention from one resource
 
 ##### You have to be sure that there are no hidden data dependencies
 
-When we index references, we assume that our map of definitions is already populated. Our solution is to parallelize the workload in distinct steps (first index all definitions, then index all references), where each step can rely on data calculated by hte previous step which was parallelized individually.
+When we index references, we assume that our map of definitions is already populated. Our solution is to parallelize the workload in distinct steps (first index all definitions, then index all references), where each step can rely on data calculated by the previous step which was parallelized individually.
 
 Alternative solutions here require pushing back tasks whose dependencies have not yet been met, pre-determining a dependency graph, or recursively submitting duplicate work to the queue. Each of these solutions have a down side and decrease code clarity.
 
@@ -175,9 +174,9 @@ The cost of indexing an entire package is high enough that there is obvious, tan
   <img src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-parallel.svg" alt="Parallelism diagram">
 </div>
 
-In lsif-go v1.0.0, all writes to the file are synchronized by a single goroutine controlling the output buffer. This ensures that for any single goroutine emitting elements, the order of the elements they emit will hit disk in the same order. This is important as LSIF requires that edges refer only to a vertex that has already been indexed.r
+In lsif-go v1.0.0, all writes to the file are synchronized by a single goroutine controlling the output buffer. This ensures that for any single goroutine emitting elements, the order of the elements they emit will hit disk in the same order. This is important as LSIF requires that edges refer only to a vertex that has already been indexed.
 
-Each non-trivial task is broken into package-level work, queued into a channel, and then distributed over a number of goroutines (that scales depending on the number of physical cores on the indexing machine). A task finishes once the entire input channel has been consumed and each worker goroutines has exited. Each task makes a fresh set of goroutines.
+Each non-trivial task is broken into package-level work, queued into a channel, and then distributed over a number of goroutines (that scales depending on the number of physical cores on the indexing machine). A task finishes once the entire input channel has been consumed and each worker goroutine has exited. Each task makes a fresh set of goroutines.
 
 ## Reviewing results
 
