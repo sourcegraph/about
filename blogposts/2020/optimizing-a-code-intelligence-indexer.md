@@ -106,7 +106,7 @@ It is [much more efficient](https://github.com/sourcegraph/lsif-go/pull/84) to i
 
 #### Don't do lots of little work; do little lots of work
 
-An LSIF indexer is a tool that spits out an index file. The index file is generally larger than input source code due to making the implicit definition and reference relationships explicit. It stands to reason that the performance of the indexer will eventually be dependent on the performance of formatting the output and writing to disk.
+An LSIF indexer is a tool that spits out an index file. The index file is generally larger than the input source code due to making the implicit definition and reference relationships explicit. It stands to reason that the performance of the indexer will eventually be dependent on the performance of formatting the output and writing to disk.
 
 The LSIF index file is formatted as sequence of newline-separated JSON elements. These elements are generally pretty small with the exception of hover content vertices and contains edges adjacent to large documents. From a dump of 14 million lines, the median line contained only 91 characters (a line with 48 characters being the smallest).
 
