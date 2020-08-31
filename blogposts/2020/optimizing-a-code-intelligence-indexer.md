@@ -191,7 +191,7 @@ The following charts show the comparison between the last three versions of the 
 
 We plan to continue on this path of performance improvements. This is just the latest chapter in our continuing effort to bring fast, precise code navigation to every language, every codebase, and every programmer. If you thought this post was interesting or valuable, we'd appreciate it if you'd share it with others!
 
-To read another optimization story similar to this one, see our previous discussion about optimizing the [code intelligence backend](/blog/optimizing-a-code-intel-backend/), which concentrates on reducing the latency of the other half of the system that contributes to delays in code intelligence.
+To read another optimization story similar to this one, see our previous discussion about optimizing the [code intelligence backend](/blog/optimizing-a-code-intel-backend/), which concentrates on reducing the latency of the part of the code intelligence indexing system that receives the data emitted by LSIF emitters like lsif-go.
 
 <style>
   .blog-post__body .no-shadow img { box-shadow: none; }
