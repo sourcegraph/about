@@ -34,7 +34,7 @@ Indexing speed is _so_ important for code bases undergoing constant change. Stal
 
 ## The optimization story
 
-An LSIF indexer is conceptually simple. It reads source code, constructs an in-memory representation of the program structure, resolves symbol names, then outputs a JSON-encoded graph representation of those symbols. Go provides [tooling](https://pkg.go.dev/golang.org/x/tools/go/packages?tab=doc) to parse and analyze Go source code in the standard library, leaving only the last stage for us to optimize.
+A language indexer tool is conceptually simple. It reads source code, constructs an in-memory representation of the program structure, resolves symbol names, then generates a JSON-encoded graph representation of those symbols according to the [LSIF](https://microsoft.github.io/language-server-protocol/specifications/lsif/0.4.0/specification/) specification. Go provides [tooling](https://pkg.go.dev/golang.org/x/tools/go/packages?tab=doc) to parse and analyze Go source code in the standard library, leaving only the last stage for us to optimize.
 
 Here's how we did it.
 
