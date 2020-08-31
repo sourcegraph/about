@@ -35,7 +35,7 @@ So how do we perform at scale?
 
 See [below](#reviewing-results) for a graphical comparison between the last three versions of the indexer.
 
-**[The indexer takes only 5% of the time it used to.](https://github.com/sourcegraph/lsif-go/tree/master/benchmark.md)**
+**[The indexer takes only 5% of the time it used to.](https://github.com/sourcegraph/lsif-go/blob/master/BENCHMARK.md)**
 
 Indexing speed is _so_ important for code bases undergoing constant change. Stale, hours-old code intelligence on a monorepo at scale is about as useful as using a map of Pangea to find your way home. This is why the code intelligence team is dedicated to [increasing the efficiency of every part of the stack](https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend) to make sure your maps are always accurate.
 
