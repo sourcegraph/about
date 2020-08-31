@@ -30,7 +30,7 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
       markdownNode.frontmatter.slug ||
       createFilePath({ node, getNode, basePath: fileNode.id, trailingSlash: false }).replace(/^\//, '')
 
-    // The permalink is the full URL path to the node. For example, in /blog/foo, the permalink is
+    // The permalink is the full URL path to the node. For example, in /blog/foo, the permalink is.
     // "/blog/foo".
     /** @type {string} */
     let permalink
