@@ -43,7 +43,7 @@ Our current focus is documented in the [tracking issue for the current milestone
 
 - **Hierarchical search (AND/OR/NOT)**
   - **Problem:** We have customers who want to migrate from OpenGrok and other search tools, and they want to be able to do searches that are available in those tools.
-  - **Outcomes:** Users can run complex searches on Sourcegraph.
+  - **Outcomes:** OpenGrok users eagerly migrate to Sourcegraph, and can run complex searches on Sourcegraph.
   - **Owner:** Rijnard
   - **Status:** In progress
 - **Improve syntax for existing filters like `repohasfile`**
