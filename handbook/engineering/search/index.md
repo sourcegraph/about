@@ -41,7 +41,7 @@ Our current focus is documented in the [tracking issue for the current milestone
 
 ### Expressive
 
-- **Hierarchical search (AND/OR/NOT)**
+- **Search Expressions (AND/OR/NOT)** ([term explanation](https://github.com/sourcegraph/sourcegraph/issues/13126), [term RFC](https://docs.google.com/document/d/1SHky6nodPs1w_zRXz24jB2nq5LbMCJl1u7hcLTGHDL8/edit#))
   - **Problem:** We have customers who want to migrate from OpenGrok and other search tools, and they want to be able to do searches that are available in those tools.
   - **Outcomes:** OpenGrok users eagerly migrate to Sourcegraph, and can run complex searches on Sourcegraph.
   - **Owner:** Rijnard
