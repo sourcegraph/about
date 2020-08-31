@@ -13,7 +13,7 @@ On the [code intelligence team](https://about.sourcegraph.com/handbook/engineeri
 
 ![Cross-repository jump to definition](https://sourcegraphstatic.com/precise-xrepo-j2d.gif)
 
-We call our key (internal) metric **time to intelligence** (TTI), which covers the time it takes to:
+To track indexing performance, we use an important internal key metric called **Time To Intelligence** (TTI), which covers the time it takes to:
 
 1. Push a new commit to a branch on your repository
 1. Trigger a CI job to index the code of that commit
