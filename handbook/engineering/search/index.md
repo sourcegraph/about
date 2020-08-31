@@ -72,7 +72,7 @@ Our current focus is documented in the [tracking issue for the current milestone
           - **Owner:** Farhan, Juliana
           - **Status:** In progress
     - **Outcomes:**
-      - New users are introduced to Sourcegraph and are able to more quickly see the value and run searches more quickly.
+      - New users introduced to Sourcegraph are able to more run searches and see the value of Sourcegraph more quickly.
       - Users can run searches over code they care about more quickly.
       - Sourcegraph surfaces code and searches users care about.
 
