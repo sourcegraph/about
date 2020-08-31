@@ -45,7 +45,7 @@ Fans of Sourcegraph also seem like the kind of folks that love a good optimizati
 
 ### Where was v0.9.0 spending all its time?
 
-I think describing the inefficiencies of lsif-go v0.9.0 is best illustrated by a likely familiar but incredibly relevant story by [Joel Spolsky](https://www.joelonsoftware.com/2001/12/11/back-to-basics/) about a simple worker named Shlemiel.
+We think describing the inefficiencies of lsif-go v0.9.0 is best illustrated by a likely familiar, but incredibly relevant, story by [Joel Spolsky](https://www.joelonsoftware.com/2001/12/11/back-to-basics/) about a simple worker named Shlemiel.
 
 <div class="quote-container">
   <blockquote>
