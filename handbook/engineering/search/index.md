@@ -7,10 +7,9 @@ We own the end-to-end Sourcegraph search experience.
 Sourcegraph search is:
 
 - **Fast:** Performance of showing results is fast and I can get to what I’m looking for quickly.
-- **Expressive:** It is possible to construct a search query to find exactly the results I’m looking for. The tools, syntax, filters, are provided to construct the queries I want to write.
-The answer to “Can I do ‘X’ with Sourcegraph?” will always be yes.
-- **Easy to use:** Users can figure out how to find what they are looking for, the syntax is clear, new users understand what options they have for searching.
-- **Shareable:** Sourcegraph search creates network effects that provide compounding value with scale. 
+- **Expressive:** It is possible to construct a search query to find exactly the results I’m looking for. The tools, syntax, filters, are provided to construct the queries I want to write. We strive for a search experience where the answer to “Can I do ‘X’ with Sourcegraph?” will always be yes.
+- **Easy to use:** Users can quickly understand how to find what they are looking for and what options are available for searching. The search syntax is clear and intuitive.
+- **Shareable:** Sourcegraph searches can be easily shared, and provide team and organization wide value. This in turn creates network effects that compound the value Sourcegraph provides with scale.
 
 ## Goals
 
