@@ -18,6 +18,11 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
 
 ## Processes
 
+## On-call
+
+- [Alerts owned by this team](https://sourcegraph.com/search?q=repo%3A%5Egithub.com%2Fsourcegraph%2Fsourcegraph%24+file%3Amonitoring%2F.*+%7B%3A%5B_%5D%2C+Owner%3A+ObservableOwnerCloud%2C+%3A%5B_%5D%7D+OR+%28%3A%5B_%5D%2C+ObservableOwnerCloud%29+count%3A1000&patternType=structural)
+- [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/01b8adfc-9b85-462b-a841-945791c17e9e/main)
+
 ### Planning
 
 We meet every month for a planning session as the current iteration approaches its ends. In this meeting we collaborate on what our few and focused goals for the iteration should be, what their scope is and which teammates work on what.
@@ -75,11 +80,12 @@ By default, members of the team will provide a brief update about the goals they
 
 ## Members
 
-- [Tomás Senart](../../../company/team/index.md#tomás-senart) ([engineering manager](../roles.md#engineering-manager))
-- [Joe Chen](../../../company/team/index.md#joe-chen)
-- [Ryan Slade](../../../company/team/index.md#ryan-slade)
-- [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
-- [Asdine El Hrychy](../../../company/team/index.md#asdine-el-hrychy)
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
+- [Tomás Senart](../../../company/team/index.md#tomás-senart) ([Engineering Manager](../roles.md#engineering-manager))
+    - [Joe Chen](../../../company/team/index.md#joe-chen)
+    - [Ryan Slade](../../../company/team/index.md#ryan-slade)
+    - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
+    - [Asdine El Hrychy](../../../company/team/index.md#asdine-el-hrychy)
 
 Other:
 

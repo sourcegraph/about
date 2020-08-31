@@ -31,21 +31,22 @@ We are looking for a Technical Writer to plan, create, revise, and maintain deve
 
 - Have a Bachelor’s or Master’s Degree, preferably in Composition and Rhetoric, English, or Communication
 - Have 5 or more years in a training, instructional design, or technical writing related role
+- Experience working within the docs-as-code approach
 - Is a self-starter; motivated by results and challenging yet attainable goals
 - Is passionate about all things writing and willing to wear multiple hats to get the job done
 - Is enthusiastic about mentoring and coaching others
-- Have experience working with Git, GitHub, HTML, CSS, JavaScript,, etc.
+- Experience working with Git, GitHub, Markdown, HTML, CSS, JavaScript, etc.
 - Have a voracious appetite for learning, technology, and teaching
 - Not afraid to ask questions
 - Take ownership!
 
 ## Learn more about us
 
-To create a product that serves the needs of all developers, we are building a diverse [all-remote team](https://about.sourcegraph.com/company/remote) that is [distributed across the world](https://about.sourcegraph.com/company/team). Sourcegraph is an equal opportunity workplace; we welcome people from all backgrounds and communities.
+To create a product that serves the needs of all developers, we are building a diverse [all-remote team](../../../company/remote/index.md) that is [distributed across the world](../../../company/team/index.md). Sourcegraph is an equal opportunity workplace; we welcome people from all backgrounds and communities.
 
-We provide [competitive compensation](https://about.sourcegraph.com/handbook/people-ops/compensation) and [practical benefits](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks) to keep you happy and healthy so that you can do your best work.
+We provide [competitive compensation](../../people-ops/compensation.md) and [practical benefits](../../people-ops/benefits-and-perks.md) to keep you happy and healthy so that you can do your best work.
 
-Learn more about what it is like to work at Sourcegraph by reading [our handbook](https://about.sourcegraph.com/handbook/).
+Learn more about what it is like to work at Sourcegraph by reading [our handbook](../../index.md).
 
 ## Interview process
 

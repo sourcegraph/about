@@ -19,9 +19,18 @@
     }
     &__installtext {
         position: relative;
+        font-family: 'IBM Plex Mono';
+        font-size: 0.8rem;
+        width: 100%;
+        outline: none;
+        resize: none;
+        background-color: $light-12;
+        min-height: 150px;
+        padding: 1.5rem;
     }
     &__copytext {
         position: absolute;
+        top: 0;
         right: 0;
         margin: 2px;
         color: #0a65ea;
@@ -88,5 +97,10 @@
     }
     .btn-outline-primary:hover {
         background-color: #0745a1;
+    }
+    @media (max-width: 1023.98px) {
+        .get-started__local {
+            border-right: none!important;
+        }
     }
 }

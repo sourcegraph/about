@@ -107,7 +107,7 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
 
 ![Sourcegraph basic code intelligence languages](/blog/3-13-language-extensions.png)
 
-With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, and VHDL, Sourcegraph basic code intelligence now supports 32 languages. Every Sourcegraph instance comes enabled with basic code intelligence provided by search based heuristics. For fast and precise code intelligence see our [LSIF documentation](https://docs.sourcegraph.com/user/code_intelligence/lsif).
+With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, and VHDL, Sourcegraph basic code intelligence now supports 32 languages. Every Sourcegraph instance comes enabled with basic code intelligence provided by search based heuristics. For fast and precise code intelligence see our [LSIF documentation](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence).
 
 ## LSIF-based precise code intelligence for Dart
 

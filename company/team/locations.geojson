@@ -178,7 +178,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -123.063200,
+          -123.0632,
           49.279493
         ]
       }
@@ -206,6 +206,123 @@
         "coordinates": [
           -81.6557,
           30.3322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Noah Santschi-Cooney"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.382739,
+          52.183102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Robert Lin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57470703125,
+          25.075648445630527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gonzalo Peci"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.640044689178467,
+          39.59917423931615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "María Craig"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9600296020507812,
+          41.266581901105305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quinn Keast"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.392333984375,
+          52.517892228382834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chris Pine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.62304440140723,
+          45.519298927923565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+         "name": "Dave Try"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.23351669311523,
+          4.441403314860008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dax McDonald"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.90299391746521,
+          33.71319364933552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aida DeWitt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26993560791016,
+          37.86943313301452
         ]
       }
     }

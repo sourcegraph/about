@@ -27,6 +27,15 @@
 /handbook/product @christinaforney
 /handbook/engineering @nicksnyder
 
+/handbook/engineering/hiring/engineering-manager-web.md @nicksnyder @lguychard @withdavidli
+/handbook/engineering/hiring/software-engineer-backend.md @nicksnyder @tsenart @withdavidli
+/handbook/engineering/hiring/software-engineer-coding-exercise.md @nicksnyder
+/handbook/engineering/hiring/software-engineer-code-intelligence.md @nicksnyder @aidaeology @withdavidli
+/handbook/engineering/hiring/software-engineer-frontend.md @nicksnyder @lguychard @withdavidli
+/handbook/engineering/hiring/software-engineer-distribution.md @nicksnyder @pecigonzalo @withdavidli
+/handbook/engineering/hiring/software-engineer-security.md @nicksnyder @chayim @withdavidli
+
+/handbook/engineering/leadership @sourcegraph/engineering-leadership
 /handbook/engineering/campaigns @sourcegraph/campaigns
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
 /handbook/engineering/cloud @sourcegraph/cloud

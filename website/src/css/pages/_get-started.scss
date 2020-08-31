@@ -11,6 +11,14 @@
     }
     &__installtext {
         position: relative;
+        font-family: 'IBM Plex Mono';
+        font-size: 0.8rem;
+        width: 100%;
+        outline: none;
+        resize: none;
+        background-color: $light-11;
+        min-height: 150px;
+        padding: 1.5rem;
     }
     &__copytext {
         position: absolute;

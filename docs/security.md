@@ -1,7 +1,6 @@
 ---
 layout: markdown
 title: Security is core to everything we do
-permalink: security
 ---
 
 ## We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We've detailed our strict production security guidelines for customers below.
@@ -40,7 +39,7 @@ We maintain the following policies for sourcegraph.com data and any data provide
 
 ## Network security
 
-When running Sourcegraph on your own infrastructure, you are protected by the network security policies enforced by your infrastructure environment. 
+When running Sourcegraph on your own infrastructure, you are protected by the network security policies enforced by your infrastructure environment.
 
 On sourcegraph.com, we maintain the following policies:
 

@@ -15,7 +15,7 @@
 /case-studies/quantcast /case-studies/quantcast-large-scale-refactoring 301!
 /changelog https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md 301!
 /contact/request-automation-demo /contact/request-code-change-management-demo 301!
-/developer-platform /universal-code-search 301!
+/developer-platform / 301!
 /docs https://docs.sourcegraph.com/ 301!
 /docs/code-intelligence https://docs.sourcegraph.com/extensions/language_servers 301!
 /docs/code-intelligence/install https://docs.sourcegraph.com/extensions/language_servers/install 301!

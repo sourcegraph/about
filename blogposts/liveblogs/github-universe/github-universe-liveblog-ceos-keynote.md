@@ -3,7 +3,7 @@ title: 'GitHub Universe liveblog: CEO’s keynote'
 author: 'Beyang Liu'
 publishDate: 2016-09-14T00:00-07:00
 tags: [
-  "blog"
+  "github-universe"
 ]
 slug: github-universe-liveblog-ceos-keynote
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/3SV1PYaaXY4ouIKIqs2mSi/ede744c450d239a0d39c281a6005b65c/1_osXoxusdlabxfnY6dlKzIQ.jpeg

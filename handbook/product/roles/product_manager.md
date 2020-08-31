@@ -19,7 +19,7 @@ You will **own an area of the product**\* and:
 - Communicate product ideas clearly by focusing on the problems that are being solved, the outcomes, and how we will measure success.
 - Be transparent in your internal and external communication. Sourcegraph is open source, so most discussions are public or in channels where you communicate directly with our customers.
 
-\* Product ownership areas: Search, campaigns, extensions and code insights, code intelligence.
+\* Product ownership areas (current teams): [Campaigns](../../engineering/campaigns/index.md), [Web](../../engineering/web/index.md), [Cloud](../../engineering/cloud/index.md), [Distribution](../../engineering/distribution/index.md)
 
 ## Qualifications
 
@@ -42,11 +42,11 @@ As a result, we expect:
 
 ## Learn more about us
 
-To create a product that serves the needs of all developers, we are building a diverse [all-remote team](https://about.sourcegraph.com/company/remote) that is [distributed across the world](https://about.sourcegraph.com/company/team). Sourcegraph is an equal opportunity workplace; we welcome people from all backgrounds and communities.
+To create a product that serves the needs of all developers, we are building a diverse [all-remote team](../../../company/remote/index.md) that is [distributed across the world](../../../company/team/index.md). Sourcegraph is an equal opportunity workplace; we welcome people from all backgrounds and communities.
 
-We provide [competitive compensation](https://about.sourcegraph.com/handbook/people-ops/compensation) and [practical benefits](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks) to keep you happy and healthy so that you can do your best work.
+We provide [competitive compensation](../../people-ops/compensation.md) and [practical benefits](../../people-ops/benefits-and-perks.md) to keep you happy and healthy so that you can do your best work.
 
-Learn more about what it is like to work at Sourcegraph by reading [our handbook](https://about.sourcegraph.com/handbook/).
+Learn more about what it is like to work at Sourcegraph by reading [our handbook](../../index.md).
 
 ## Interview process
 

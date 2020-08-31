@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const COLORS = {
+    white: '',
     dark: 'bg-black text-light',
     purple: 'bg-purple text-light',
 }
@@ -15,7 +16,7 @@ export const Jumbotron: React.FunctionComponent<{
     children: React.ReactNode
 }> = ({
     className = '',
-    color = 'dark',
+    color = 'white',
     logomark = true,
     title,
     titleClassName = 'display-3 font-weight-bold',

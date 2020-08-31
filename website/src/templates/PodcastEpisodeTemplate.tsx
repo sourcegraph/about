@@ -1,11 +1,9 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import { CaseStudyRequestDemoForm } from '../components/content/CaseStudyPage'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import SocialLinks from '../components/SocialLinks'
 import { getHTMLParts, subscriptionLinks } from '../pages/podcast'
 
 interface Option {
@@ -60,7 +58,6 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
             },
         ].filter(option => option.html)
 
-
         // In order to work with Gatsby React rehydration, these URLs need to be distinct paths and map to the ones defined in gatsby-node.js
         let selected: 'notes' | 'summary' | 'transcript' = this.props.pageContext?.showTab || 'summary'
         const path = this.props.location.pathname
@@ -73,18 +70,12 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
         }
 
         return (
-            <Layout location={this.props.location} meta={meta} className="darkBackground">
-                <Helmet>
-                    <link
-                        rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-                    />
-                </Helmet>
+            <Layout location={this.props.location} meta={meta} className="navbar-dark bg-black">
                 <ContentPage
                     title="The Podcast🎙"
-                    titleClassName="podcast__banner"
+                    titleClassName="podcast__banner text-white"
                     mainActions={
-                        <div className="d-flex flex-column align-items-center podcast__subbanner">
+                        <div className="d-flex flex-column align-items-center podcast__subbanner text-white">
                             Conversations, stories, and insights from dev tool creators
                         </div>
                     }
@@ -127,12 +118,6 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
                                         />
                                     ))}
                             </div>
-
-                            <section className="blog-post__footer mt-4 pt-4">
-                                <div className="pt-4">
-                                    <SocialLinks url={`https://about.sourcegraph.com/podcast/${slug}`} title={title} />
-                                </div>
-                            </section>
                         </div>
                     </ContentSection>
                 </ContentPage>
@@ -143,8 +128,8 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
 }
 
 export const pageQuery = graphql`
-    query podcastEpisodeTemplate($fileSlug: String) {
-        markdownRemark(fields: { slug: { eq: $fileSlug } }) {
+    query podcastEpisodeTemplate($path: String) {
+        markdownRemark(fields: { permalink: { eq: $path } }) {
             frontmatter {
                 title
                 tags
