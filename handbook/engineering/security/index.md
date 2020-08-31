@@ -64,7 +64,7 @@ On the security team, we work by planning, tracking, and reviewing - creating a 
 ### Positions
 
 1. Goals are something we strive for, we will track and communicate progress towards them.
-2. Work items towards a goal may be a feature, but should include non-work items (i.e grow the team) that also need to be communicated.  A work item should be viewed as something worth tracking that progresses to a goal.
+2. A work item is a piece of work (e.g., writing code, hiring a new teammate) that makes progress toward achieving a goal.
 3. Releases may be made up of N workitems, that may impact Y goals.  Whilst this is true, Sourcegraph needs to communicate both internally and externally progress towards those goals.
 4. Security by its various nature has public work items (main repo) and private workitems (security repo). Over time workitems should move from the private repository to the public repository once they can be made public.  The ideal goal state is the lack of a private security repository.
 
