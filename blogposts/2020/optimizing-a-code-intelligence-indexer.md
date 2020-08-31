@@ -9,31 +9,25 @@ heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
 published: true
 ---
 
-We've finally tagged the [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go), boasting impressive speed improvements that bring intelligence to your Go code faster than ever before.
+On the [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence) at Sourcegraph, we want you to always have precise and up-to-date hovers, definitions, and references when you're browsing and reviewing unfamiliar code, even on very large monorepos.
 
-The code intelligence team is hard at work trying to bring the _time to intelligence_ (the time between pushing your code to upstream and when you can precisely navigate that code on Sourcegraph) as close to zero as possible. We want your code to always have precise and up-to-date code intelligence when you're browsing and reviewing unfamiliar code. Indexing speed is a huge part of this, and we've made a great leap here.
+![Cross-repository jump to definition](https://sourcegraphstatic.com/precise-xrepo-j2d.gif)
 
-As an illustrative example of the recent speed improvements, check out the visual difference between indexing our [main repository](https://github.com/sourcegraph/sourcegraph) with lsif-go v0.9.0 (the previous release, above) and lsif-go v1.0.0 (below).
+We call our key (internal) metric **time to intelligence** (TTI), which covers the time it takes to:
 
-[![asciicast](https://asciinema.org/a/pKTby2O4N1KC9RqXBkOO7JgBw.svg)](https://asciinema.org/a/pKTby2O4N1KC9RqXBkOO7JgBw)
-[![asciicast](https://asciinema.org/a/eEmncpfVa40yqhoB2ta0C8leR.svg)](https://asciinema.org/a/eEmncpfVa40yqhoB2ta0C8leR)
+1. Push a new commit to a branch on your repository
+1. Trigger a CI job to run on that commit to:
+    1. Index the code of that commit
+    1. Upload the resulting index to your Sourcegraph instance
+1. Process the uploaded index
+1. Use the processed index to provide up-to-date code intelligence
 
-### Performance comparison
+Sourcegraph is used by companies all over the repository number and size spectrum. Some companies employ a microservice approach. For us, that's easy mode. Small repositories are easy and generally fast _enough_ to index even with an indexer that becomes slow as code size grows. Other companies employ a monorepo approach. This is where the challenge lies for us - but we've made great strides with the recent [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go).
 
-Unfortunately, indexing our own code isn't so worthy of celebration. It's a medium-sized repository home to 258k lines of Go code. The old version of the indexer did a fine job at this small scale, even with its many inefficiencies.
+Now, how well do we index Go at scale?
 
-![a repo for ants?](https://i.imgflip.com/4bs5q7.jpg)
-
-What we need to do is go **big**.
-
-Our goal is to bring code intelligence to the massive engineering teams with a mind-boggling amount of code and a breathtaking frequency of updates to that code. Our goal is to help humans effectively navigate code bases with a constantly changing topology so they can be sure of their footing and concentrate on the task at hand.
-
-So how do we perform at scale?
-
-* Previously, it took around **7 1/2 minutes** to index the [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go); it now takes **24 seconds**.
+* Previously, it took nearly **8 minutes** to index the [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go); it now takes only **24 seconds**.
 * Previously, it took nearly **7 hours** to index 56 million lines of code; it now takes under **20 minutes**.
-
-See [below](#reviewing-results) for a graphical comparison between the last three versions of the indexer.
 
 **[The indexer takes only 5% of the time it used to.](https://github.com/sourcegraph/lsif-go/blob/master/BENCHMARK.md)**
 
