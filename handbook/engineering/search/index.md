@@ -9,7 +9,7 @@ Sourcegraph search is:
 - **Fast:** Performance of showing results is fast and I can get to what I’m looking for quickly.
 - **Expressive:** It is possible to construct a search query to find exactly the results I’m looking for. The tools, syntax, filters, are provided to construct the queries I want to write. We strive for a search experience where the answer to “Can I do ‘X’ with Sourcegraph?” will always be yes.
 - **Easy to use:** Users can quickly understand how to find what they are looking for and what options are available for searching. The search syntax is clear and intuitive.
-- **Shareable:** Sourcegraph searches can be easily shared, and provide team and organization wide value. This in turn creates network effects that compound the value Sourcegraph provides with scale.
+- **Shareable:** Sourcegraph searches are easy to share, and provide team and organization wide value. This in turn creates network effects that compound the value Sourcegraph provides with scale.
 
 ## Goals
 
@@ -24,7 +24,7 @@ Sourcegraph search is far and away the best code search solution, search results
 In the next 6 months we want to be halfway to the long term goal. To achieve this, we need to accomplish the following outcomes:
 
 - Getting to search results faster through a better search experience.
-- What do we need to do to get to the speed of grep.app?
+- Users perceive search results to be as fast-loading and responsive as [grep.app](https://grep.app/)
 - Scale fast search to 500k repositories.
 
 ## Short term (1-3 months)
@@ -33,8 +33,9 @@ Our current focus is documented in the [tracking issue for the current milestone
 
 ### Fast
 
-- **Streaming search**
+- **Unblock the ability to improve user perceived performance**
   - **Problem:** We want to make significant improvements to search that are blocked by not having the infrastructure needed.
+  - **Plan:** Streaming search
   - **Owner:** Keegan
   - **Status:** In progress
 
@@ -59,15 +60,18 @@ Our current focus is documented in the [tracking issue for the current milestone
 
 - **Get to files and repositories more quickly**
   - **Problem:** Finding files and repositories often takes multiple tries to get the syntax correct or creative solutions to get the result users are looking for.
+  - **Plan:** Wildcard syntax
   - **Outcomes:** Users leverage file and repo filters to quickly get to the code they are searching for.
   - **Owner:** Stefan
   - **Status:** In progress
 - **Improve search experience**
   - **Problem:**
       - New users who are trying Sourcegraph for the first time have trouble learning the syntax and breadth of Sourcegraph features.
+          - **Plan:** Search onboarding tour
           - **Owner:** Farhan
           - **Status:** In progress
       - It is hard for users to quickly get to code they care about.
+          - **Plan:** Enterprise homepage
           - **Owner:** Farhan, Juliana
           - **Status:** In progress
     - **Outcomes:**
