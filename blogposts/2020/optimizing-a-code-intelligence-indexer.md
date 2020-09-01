@@ -9,7 +9,7 @@ heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
 published: true
 ---
 
-Sourcegraph is used by companies all over the repository number and size spectrum. Some companies employ a microservice approach. For us, that's easy mode. Small repositories are easy and generally fast _enough_ to index even with an LSIF indexer that performs poorly as code size grows. Other companies employ a monorepo approach. This is where the challenge lies for us - but we've made great strides with the recent [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go).
+Sourcegraph is used by companies all over the repository number and size spectrum. Some companies organize their code over many small repositories. For us, that's easy mode. Small repositories are easy and generally fast _enough_ to index even with an LSIF indexer that performs poorly as code size grows. Other companies organize their code into a handful of very large repositories. For us, this presents a performance challenge - but we've made great strides with the recent [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go).
 
 On the [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence) at Sourcegraph, we want you to always have precise and up-to-date hovers, definitions, and references when you're browsing and reviewing unfamiliar code, even on very large monorepos.
 
