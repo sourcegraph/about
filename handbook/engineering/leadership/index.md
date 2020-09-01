@@ -73,7 +73,7 @@ Our long term vision is to build an organization that attracts and retains the b
 
 We have a 1hr sync with product and engineering every Tuesday at 9am PT ([meeting notes](https://docs.google.com/document/d/10fEh3Cw0ENKjFYDP-4OoLZbOZTVAtMpifc2WM_1mGVU/edit)).
 
-Engineering managers send an update to engineering-leadership-status@sourcegraph.com by 10am PT every Monday (sending it earlier, like EOD Friday is ok too). The purpose of the update is to keep interested parties (including the VP of Engineering, and peer managers) informed of what is going on in each part of our organization. The format of this update is at the discretion of the sender, but it should be prose that generally answers the following questions:
+Engineering managers send an update to engineering-leadership-status@sourcegraph.com by 12pm (noon) PT every Monday (sending it earlier, like EOD Friday is ok too). The purpose of the update is to keep interested parties (including the VP of Engineering, and peer managers) informed of what is going on in each part of our organization. The format of this update is at the discretion of the sender, but it should be prose that generally answers the following questions:
 
 - What important things happened last week?
 - What are the plans for this week?
