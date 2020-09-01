@@ -33,8 +33,11 @@ Our current focus is documented in the [tracking issue for the current milestone
 
 ### Fast
 
-- **Unblock the ability to improve user perceived performance**
+- **Unblock improving user perceived performance**
   - **Problem:** We want to make significant improvements to search that are blocked by not having the infrastructure needed.
+  - **Outcome:** 
+      - Unblock the ability to add responsive and fast-loading search results 
+      - Return results faster for large result sets, e.g. indexed repositories in very large codebases
   - **Plan:** Streaming search
   - **Owner:** Keegan
   - **Status:** In progress
