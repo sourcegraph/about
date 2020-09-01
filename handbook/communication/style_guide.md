@@ -71,7 +71,7 @@ Latinisms (_e.g., i.e., v., etc., via_) are not used in simplified English. Say 
   -   Parentheses go outside if it's a complete sentence inside the parentheses (see [Grammar Girl's explanation](https://www.quickanddirtytips.com/education/grammar/periods-and-parentheses).)
   -   Footnotes go outside, because they're not part of the sentence.
 
-    _Note Bene_: if Sourcegraph ever chooses to localize outside of American English, these rules all change.
+  > NOTE: If Sourcegraph chooses to localize outside of American English, these rules all change.
 - Punctuation goes outside of links ("Hello, [world](#dummy)." not "Hello, [world.](#dummy)").
 - Use the most popular US English spelling and phrasing.
 - Prefer the serial comma in lists, except where ambiguity would be introduced by including it.
@@ -82,16 +82,16 @@ Latinisms (_e.g., i.e., v., etc., via_) are not used in simplified English. Say 
 ## Referring to the product and features
 
 - Sourcegraph: main product, prefer using this name unless you need to be more precise.
-
-- Self-hosted Sourcegraph instance: only if clarification between the Sourcegraph.com instance, managed instances, and on-premises instances is required
-- Managed Sourcegraph instance: only if clarification between the Sourcegraph.com instance, self-hosted instances, and managed instances is required
-- Sourcegraph.com (note the capital `S`): the public instance of Sourcegraph for open source code at https://sourcegraph.com
-- Sourcegraph integrations: the general term for our integrations
+- Self-hosted Sourcegraph instance: only if clarification between the Sourcegraph Cloud instance, managed instances, and on-premises instances is required
+- Managed Sourcegraph instance: only if clarification between the Sourcegraph Cloud instance, self-hosted instances, and managed instances is required
+- Sourcegraph Cloud: (note the capital `S`): the free, public instance of Sourcegraph for open source code at https://sourcegraph.com/search
+- Sourcegraph integrations: the general term for the following integrations
   - Sourcegraph['s] Phabricator integration
   - Sourcegraph['s] GitHub integration
   - Sourcegraph['s] browser extensions
-    - Sourcegraph['s] Chrome extension
-    - Sourcegraph['s] Firefox add-on
+      - Sourcegraph['s] Chrome extension
+      - Sourcegraph['s] Firefox add-on
+
 
 When referring to the build result of the open source repository, use the name Sourcegraph OSS.
 
@@ -103,7 +103,7 @@ You don't need to use the full name of the product each time you refer to it, bu
 - Bad: "Use the Phabricator Integration to..." (the capital "I" makes it into a proper noun, which implies it's a separate product from "Sourcegraph Phabricator integration")
 - Bad: "Want to use this in your code review tool? Use [Sourcegraph for Phabricator](#_) or [Sourcegraph for GitHub](#_)." (This implies that "Sourcegraph for Phabricator" and "Sourcegraph for GitHub" are official product names.)
 
-Only use _we_ and _our_ (as in "our GitHub integration") in informal documents. In documentation or marketing material, depending on the context, just avoid it, or use "the" or "Sourcegraph". {#our}
+Only use _we_ and _our_ (as in "our GitHub integration") in informal documents. In general, avoid using _we/our_ in the documentation or marketing material and use "the" or "Sourcegraph" unless the contexts calls for it. 
 
 #### Features
 
