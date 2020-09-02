@@ -46,7 +46,7 @@ Technology and intentions shape the artwork.
 The IBM 7090 Data Processing System was introduced in 1959.
 It cost a measly $ 3,000,000.
 
-![IBM 7090 Data Processing System](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/ibm/IBM-7090.jpg)
+![IBM 7090 Data Processing System](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/ibm/IBM-7090.jpg)
 
 Computers were mostly restricted to research facilities, big corporations and the military,
 thus limiting the number of people who had access to them.
@@ -66,7 +66,7 @@ Program outputs could be output on a printer.
 Common were line printers, which use a drum with a restricted character set.
 They were fast and loud.
 
-![IBM 1403 line printer](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/ibm/IBM-1403-printer.jpg)
+![IBM 1403 line printer](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/ibm/IBM-1403-printer.jpg)
 
 *IBM 1403 line printer (Source: The Computer in Art, Jasia Reichdart, 1971)*
 
@@ -77,14 +77,14 @@ Another output device was the cathode ray tube display.
 *An example of its use can be found in [Experiments in Motion Graphics by John Whitney, 1968](https://archive.org/details/experimentsinmotiongraphics)*
 
 
-![Stromberg Carlson 4020 microfilm recorder](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/bell-labs/sc4020.jpg)
+![Stromberg Carlson 4020 microfilm recorder](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/bell-labs/sc4020.jpg)
 
 *Stromberg Carlson 4020 microfilm recorder (source: [chilton-computing.org.uk](http://www.chilton-computing.org.uk/acl/technology/sc4020/overview.htm)*
 
 Electronic/microfilm plotters are used to print characters to microfilm.
 They are usually not made to plots graphics or geometric forms.
 
-![CalComp 565](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/calcomp/calcomp-565.jpg)
+![CalComp 565](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/calcomp/calcomp-565.jpg)
 
 *CalComp 565, early drum plotter introduced in 1959 (source: Wikimedia Commons)*
 
@@ -97,7 +97,7 @@ Computers were mainly used for scientific and mathematical applications.
 Boeing was a real pioneer in computer graphics (and actually coined the term).
 The company used computers to simulate the position of pilots in the cockpit to determine the layout of the control console.
 
-![Human limb simulation](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/boeing/boeing.jpg)
+![Human limb simulation](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/boeing/boeing.jpg)
 
 *Source: The Computer in Art by Jasia Reichdart, 1971*
 
@@ -121,7 +121,7 @@ The editors of Computers and Automation were the very first people who ran a com
 Due to the available technology, a lot of it was line based, geometric, black and white.
 The magazine ran an annual august art issue, directed by Grace C. Hertlein.
 
-![Computer and Graphics in Art](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/cg-mag/article.png)
+![Computer and Graphics in Art](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/cg-mag/article.png)
 
 *Source: [recodeproject.com](http://recodeproject.com/)*
 
@@ -149,7 +149,7 @@ This raises an interesting question: How do programming languages influence the 
 
 ### ART 1 - Language for making graphics
 
-![Equal Tea Talk](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/frederick-hammersley/equal-tea-talk.jpg)
+![Equal Tea Talk](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/frederick-hammersley/equal-tea-talk.jpg)
 
 *Equal Tea Talk by Frederick Hammersley, 1969 ([source](http://hammersleyfoundation.org/index.php/artwork/computer-drawings))*
 
@@ -169,7 +169,7 @@ What was it like working with the language? It is really hard to find documentat
 Luckily, there are a few lines of information about the language in the book "The Computer in Art" by Jasia Reichdart, 1971,
 which documents the zeitgeist of computer graphics back then.
 
-![ART 1 language](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/art1/art1-arrays.jpg)
+![ART 1 language](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/art1/art1-arrays.jpg)
 
 *The ART 1 Language - The Computer in Art, Jasia Reichdart, 1971*
 
@@ -190,7 +190,7 @@ which was easier route than writing an actual interpreter.
 
 **Solution**: Make the most of the available character set, and use diacritical marks to achieve overlapping.
 
-![Emojis](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/my-art/art1-batik-detail.png)
+![Emojis](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/my-art/art1-batik-detail.png)
 
 *The best thing is that you can use emojis!*
 
@@ -233,7 +233,7 @@ const { init, rect, print } = require("../src/art1");
 
 ### How to draw lines
 
-![Step of Bresenham algorithm](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/bresenhem-line/step7.png)
+![Step of Bresenham algorithm](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/bresenhem-line/step7.png)
 
 *One step of the Bresenham line algorithm*
 
@@ -253,7 +253,7 @@ The algorithm accumulates the error and makes the decision to print the pixel wi
 Kenneth Knowlton at AT&T Bell Labs made a silent video about how to make movies with computers,
 in which he describes a language called BEFLIX (Bell flicks), based on FORTRAN macros. 
 
-![BEFLIX](http://piratefsh.github.io/presentations/strangeloop-prog-languages/img/beflix/beflix-diagram.png)
+![BEFLIX](https://piratefsh.github.io/presentations/strangeloop-prog-languages/img/beflix/beflix-diagram.png)
 
 *Source: Computer-Generated Movies, Designs and Diagrams by Ken Knowlton, Design Quarterly, No. 66/67*
 
