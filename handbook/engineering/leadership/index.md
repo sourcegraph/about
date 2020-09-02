@@ -73,7 +73,7 @@ Our long term vision is to build an organization that attracts and retains the b
 
 ### Slack
 
-- #leadership-chat is a public channel to discuss and share information that may be of general interest and is not sensitive.
+- #leadership-chat is a public channel (not specific to this team or engineering) where anyone can discuss and share information of general interest to leadership at Sourcegraph.
 - #eng-leadership-team is a private channel for members of this team to discuss sensitive topics, or topics that would be noise to people outside of the team. For anything else, prefer to use #leadership-chat.
 
 ### Meetings
