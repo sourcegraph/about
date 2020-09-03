@@ -10,7 +10,7 @@ export default ((props: any) => (
         meta={{
             title: 'Lyft ensures production stability during monolith to microservices transition',
             description:
-                'Learn how Sourcegraph code search helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition',
+                'Sourcegraph case study: Learn how Sourcegraph helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition',
             // image: "https://about.sourcegraph.com/lyft-sourcegraph-case-study-og-embed.jpg"-pending approval
         }}
         className="navbar-dark bg-black"

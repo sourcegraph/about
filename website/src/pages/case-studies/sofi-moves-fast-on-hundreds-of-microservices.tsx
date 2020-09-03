@@ -9,7 +9,7 @@ export default ((props: any) => (
         meta={{
             title: 'SoFi manages hundreds of microservices',
             description:
-                'With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
+                'Sourcegraph case study: With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
             image: '/case-studies/sofi-sourcegraph-case-study-og-embed.png',
         }}
         className="navbar-dark bg-black"

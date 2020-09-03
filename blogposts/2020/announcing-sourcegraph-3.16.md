@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.16
 heroImage: /blog/3.16-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements"
 ---
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
