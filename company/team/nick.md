@@ -25,6 +25,6 @@ If you would like to have a skip level 1-1 with me:
 
 ## Feeback
 
-If you have any feedback, questions, concerns, or anything else that you want me to know about, please don't hesitate to contact me directly via email or Slack.
+If you have any feedback, questions, concerns, or anything else that you want me to know about, please don't hesitate to contact me directly by sending me a message via email or Slack, or by scheduling a time for us to video chat.
 
 If you wish to remain anonymous, you may use the following form: https://docs.google.com/forms/d/e/1FAIpQLSe1C9uqc5SvLU2zxml71IFGHDS6UEsuh0xYiELg6PbPj4KFew/viewform?usp=sf_link
