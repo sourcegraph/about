@@ -27,3 +27,10 @@ We prefer to [build teams, not workgroups](https://dzone.com/articles/workgroups
 
 As a team's size and scope grows, it (unintentionally) tends to become a workgroup. Resist this by aggressively focusing, or by splitting it into smaller teams.
 
+## Open and transparent
+
+We are an [open company](open_source_open_company.md).
+
+Being open and transparent builds trust with our customers and within our team. It makes it easy for us to partner and collaborate with our customers so we make Sourcegraph the best that it can be. It enables our teammates to work autonomously to solve tough problems while maintaining alignment.
+
+Transparency is hard. It requires extra effort and excellent communication. It means it is possible to observe things that are inconsistent or incomplete. We think this is good because it gives everyone visibility into the process, not just the outcome, and an opportunity to contribute to that process at any point in time.
