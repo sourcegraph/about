@@ -39,7 +39,7 @@ Most of us don't question the assumptions we make about color and how we impleme
 Ellen Wondra is a web developer based in Tacoma, WA, and a graduate of the inaugural class of Ada Developers Academy, a software engineering training program for women and gender diverse people in Seattle. Before she was a developer, Ellen's first introduction to algorithms was through crafting and knitting, when visiting the clearance section on Michaels. She mostly dabbles in fiber arts. A few years ago, Ellen created the Stitchify Ruby gem, which converts an image into a crossstich pattern made with the available colors. This was more difficult than she thought it would be, and she needed to learn a lot about color in order to complete this project.
 
 ![Ellen's cross stitch designs](/blog/strange-loop-2019/cross-stitch-designs1.jpg)
-![Ellen's cross stitch designs](/blog/strange-loop-2019/cross-stitch designs2.jpg)
+![Ellen's cross stitch designs](/blog/strange-loop-2019/cross-stitch-designs2.jpg)
 ## What is Color?
 
 Color starts out as white light. when it hits an object, some of the waves bounce off and others are absorbed. The colors that bounce back are the colors we perceive. Off-screen, color is *subtractive*. 

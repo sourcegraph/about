@@ -115,7 +115,7 @@ Initially, AND/OR operators support searching file contents. Operators for filte
 
 ### Easier alerting configuration
 
-Configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
+Configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
 
 ```json
 "observability.alerts": {

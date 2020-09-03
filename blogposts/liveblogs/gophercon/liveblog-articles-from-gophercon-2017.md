@@ -13,7 +13,7 @@ published: true
 
 (See an overview of all GopherCon talks with links in this post).
 
-![GopherCon banner](/blog-images/Selection_012.bmp)
+![GopherCon banner](https://images.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp?h=250)
 
 We’re excited to be the official live-blogging partner for GopherCon 2017!
 

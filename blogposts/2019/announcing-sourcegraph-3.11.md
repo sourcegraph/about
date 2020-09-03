@@ -133,7 +133,7 @@ Language analysis is computationally expensive, so this feature is currently beh
 
 This month we published a [new case study](https://about.sourcegraph.com/case-studies/lyft-monolith-to-microservices) showing how Sourcegraph code search helped ensure production stability at Lyft during their monolith to microservices decomposition.
 
-![Lyft case study preview](/images/3-11-lyft.png "Lyft case study preview")
+![Lyft case study preview](/blog/3-11-lyft.png "Lyft case study preview")
 
 ### See you at GitLab Commit 2020 in San Francisco
 

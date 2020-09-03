@@ -314,8 +314,7 @@ toolbox.
 regular expression. `sed`[^4] is a tool that matches and transforms text using regular
 expressions. Both are extremely versatile and useful tools to have in your programmer's toolbox.
 
-Suppose again you're adding an additional parameter to the [`errorutil.Handler`
-function]([source](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@11fe76d8682e32957e7dadcecd6ef4ce364c39d0/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19))
+Suppose again you're adding an additional parameter to the `errorutil.Handler` [function](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@11fe76d8682e32957e7dadcecd6ef4ce364c39d0/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19)
 and now need to update all call sites of that function to pass some default value for the extra
 argument. You can do that[^5] in a one-liner with `grep` and `sed`:
 

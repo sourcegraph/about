@@ -55,7 +55,7 @@ Code change management campaigns are in private beta. [Watch the code change man
 
 ## Beta release of fast and precise LSIF-based code intelligence
 
-![LSIF code intelligence comparison](images/3.8-lsif.png "LSIF code intelligence comparison")
+![LSIF code intelligence comparison](/blog/3.8-lsif.png "LSIF code intelligence comparison")
 
 Each Sourcegraph instance ships with basic code intelligence that provides jump to definition and find references for every language. Basic code intelligence works well for many of our customers, but some customers have been asking for more precise code intelligence. Language servers provide precise code intelligence, but they are complex to configure, require separate deployment, and are slow to initialize, so we have added support for LSIF based code intelligence.
 
@@ -89,7 +89,7 @@ Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins 
 
 Over the last few releases we have worked on improving Sourcegraph’s performance at scale for customers with 30k+ repositories, and we continue to do so. With each major improvement we make to search, we’re now running even more extensive end-to-end load tests to verify our improvements. These load tests enable us to quickly gather and analyze approximately one million search API requests, and automatically generate reports we can interpret and learn from:
 
-![search performance benchmarks](images/3.8-benchmarks.png "search performance benchmarks")
+![search performance benchmarks](/blog/3.8-benchmarks.png "search performance benchmarks")
 
 We now have greater confidence rolling out search performance improvements. For example, in just the past two Sourcegraph releases we’ve used this same methodology to validate and roll out changes that have resulted in:
 
