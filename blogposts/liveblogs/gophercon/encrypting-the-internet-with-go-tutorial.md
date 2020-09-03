@@ -29,11 +29,11 @@ Filippo commented that the Go crypto/tls package is so good that cryptographers 
 
 Filippo goes over some Go code and shares some graphics to demonstrate the normal flow of data inside TLS:
 
-![](/blog-images/initial.png)
+![](https://images.ctfassets.net/le3mxztn6yoo/2L81KoLRHye0Ok0W2WkSkI/86fed303c33da315f2e5e2984a0c3918/initial.png?h=250)
 
-![](/blog-images/late.png)
+![](https://images.ctfassets.net/le3mxztn6yoo/1lMehT7PAYMWcem2WYeyKK/0b3c66d8daaf13efb1cad6b5a36899fd/late.png?h=250)
 
-![](/blog-images/complete.png)
+![](https://images.ctfassets.net/le3mxztn6yoo/gEslkpketMIM2cKoWsGMe/1562101a97adaf03f2c94a9db133992f/complete.png?h=250)
 
 ### Enter Cloudflare's 0-RTT
 He then goes on to highlight aspects of Cloudflare's 0-RTT and how it differs from the normal TLS flow. Of note: 0-RTT data is disabled by default.

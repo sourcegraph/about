@@ -135,7 +135,7 @@ Sher Minn thus went onto a little rabbit hole to figure out how they were made, 
 
 ![Tessellations](https://pbs.twimg.com/media/DmOUnt_W4AAho8Z?format=jpg&name=small)
 
-*Tesselation variations of the Four Bugs Problem pattern ([twitter.com/piratefsh]((https://t.co/sJmO4ekCFN))*
+*Tesselation variations of the Four Bugs Problem pattern ([twitter.com/piratefsh](https://t.co/sJmO4ekCFN))*
 
 ### Challenges
 
