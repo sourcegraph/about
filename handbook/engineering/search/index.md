@@ -16,13 +16,7 @@ Sourcegraph search is:
 
 _Updated 2020-08-27_
 
-## Long term (~1 year)
-
-Sourcegraph search is far and away the best code search solution, search results are fast, and I can find what I’m looking for quickly.
-
 ## Medium term (3-6 months)
-
-In the next 6 months we want to be halfway to the long term goal. To achieve this, we need to accomplish the following outcomes:
 
 - Getting to search results faster through a better search experience.
 - Users perceive search results to be as fast-loading and responsive as [grep.app](https://grep.app/)
