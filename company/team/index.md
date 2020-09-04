@@ -28,10 +28,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Christina Forney (she/her)
 
-- Product Manager
-- Redwood City, CA, USA 🇺🇸
+- VP Product
+- Woodside, CA, USA 🇺🇸
+- Name pronunciation: [krɪsˈtiːnə ˈfɔrnɪ](http://ipa-reader.xyz/?text=kr%C9%AAs%CB%88ti%CB%90n%C9%99%20%CB%88f%C9%94rn%C9%AA&voice=Kendra)
 - [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney), [GitHub](https://github.com/christinaforney)
-- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, Christina was the head of product development and the lead of a small dev team at Platinum Performance. At Palantir Technologies, she led the Internal Tools team that was responsible for the code hosts, build systems, and artifact management systems at Palantir. Christina attended Cal Poly, San Luis Obispo where she earned a BS in Animal Science and a MS in Computer Science.
+- Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, she merged her love of horses and software development by running product and engineering at an equine nutrition company. At Sourcegraph, she has returned to her roots and passion for developer productivity tools.
 
 ## Stephen Gutekanst
 
