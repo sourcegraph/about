@@ -8,7 +8,7 @@ When a prospect or customer files a new support ticket or raises a new issue, CE
 
 **Engineering should only feel a responsibility to get involved if tagged in by CE.**
 
-**However, once someone is "assigned" to a ticket (whether formally, or they informally take over the conversation), it is up to them to either (1) see the issue through to resolution or (2) assign a new owner.**
+**However, once someone [takes ownership](support.md#support-owners) of a ticket (whether formally, or informally by taking over the conversation), it is their responsibility to see it through, either by (1) see the issue through to resolution or (2) assign a new owner.**
 
 Exceptions to the principles above:
 
