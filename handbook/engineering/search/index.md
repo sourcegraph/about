@@ -61,12 +61,6 @@ Our current focus is documented in the [tracking issue for the current milestone
 
 ### Easy to use
 
-- **Get to files and repositories more quickly**
-  - **Problem:** Finding files and repositories often takes multiple tries to get the syntax correct or creative solutions to get the result users are looking for.
-  - **Plan:** Wildcard syntax
-  - **Outcomes:** Users leverage file and repo filters to quickly get to the code they are searching for.
-  - **Owner:** Stefan
-  - **Status:** In progress
 - **Improve search experience**
   - **Problem:**
       - New users who are trying Sourcegraph for the first time have trouble learning the syntax and breadth of Sourcegraph features.
