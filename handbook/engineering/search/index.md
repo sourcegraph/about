@@ -29,7 +29,7 @@ Our current focus is documented in the [tracking issue for the current milestone
 ### Fast
 
 - **Unblock improving user perceived performance**
-  - **Problem:** We want to make significant improvements to search that are blocked by not having the infrastructure needed.
+  - **Problem:** Our current search infrastructure relies on on-shot requests with aggressive timeouts, but it is hard to tune those timeouts for large codebases. If we make the timeouts too small, then search may not return results for needle-in-the-haystack queries (because the search timed out). If we make the timeouts too large, then search becomes slower across the board and users spend time waiting for more results when we could have returned useful results to them sooner. Detecting and handling these timeouts across multiple service boundaries is also error prone and has led to bugs.
   - **Outcome:** 
       - Unblock the ability to add responsive and fast-loading search results. 
       - Return results faster for large result sets, e.g. indexed repositories in very large codebases.
