@@ -63,4 +63,4 @@ We document our goals and plans publicly so we can engage with customers to buil
 
 > I am working on improving the security of our product, but I feel uncomfortable clearly documenting what I am doing (e.g., in public status updates, issues, PR descriptions, the changelog) because I am worried that it will make Sourcegraph look bad.
 
-Our code is public and we do our development in the public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
+Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
