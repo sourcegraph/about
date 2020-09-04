@@ -3,7 +3,7 @@
 We maintain multiple deployments of Sourcegraph:
 
 - [sourcegraph.com](#sourcegraphcom) is our production deployment for open source code.
-- [sourcegraph.sgdev.org](#sourcegraphsgdevcom) is our private deployment of Sourcegraph that contains our private code.
+- [sourcegraph.sgdev.org](#sourcegraphsgdevorg) is our private deployment of Sourcegraph that contains our private code.
 - [k8s.sgdev.org](#k8ssgdevorg) is a dogfood deployment that replicates the scale of our largest customers.
 
 ## Deployment basics
@@ -62,7 +62,9 @@ git push origin release
   1. Once you have fixed the issue in the `master` branch of [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph), re-enable auto-deploys by reverting your change to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) from step 1.
 
 
-## sourcegraph.sgdev.com
+## sourcegraph.sgdev.org
+
+🚨 This deployment contains private code - do not use it for demos!
 
 - [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
  ```
