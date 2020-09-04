@@ -47,14 +47,16 @@ Arguments:
 
 In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
 
-- [ ] Wait for Renovate to open a PR named **"Update Sourcegraph Docker images"** and merge that PR ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/199) and note Renovate may have merged it automatically).
-- [ ] Wait for Renovate to open a PR named **"Update Sourcegraph Prometheus / Grafana Docker images"** and merge that PR (note Renovate may have merged it automatically).
-- [ ] Cherry-pick the image tag update commits from `master` onto `$MAJOR.$MINOR` branch. Then push the release tag:
+- [ ] Cherry-pick relevant `deploy-sourcegraph` configuration changes from `master` onto the relevant release branch.
     ```
     git checkout $MAJOR.$MINOR
     git pull
     git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
     git push $MAJOR.$MINOR
+    ```
+- [ ] Wait for Renovate to open a PR named ["Update Sourcegraph Docker release images"](https://github.com/sourcegraph/deploy-sourcegraph/pulls?q=is%3Apr+in%3Atitle+%22Update+Sourcegraph+Docker+images%22+is%3Aopen+). Click "edit" on the pull request, and change the `base` branch to the relevant release branch. Merge the pull request after doing so.
+- [ ] Push the release tag on the commit:
+    ```
     git tag v$MAJOR.$MINOR.$PATCH
     git push origin v$MAJOR.$MINOR.$PATCH
     ```
