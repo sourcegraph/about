@@ -8,7 +8,7 @@ tags: [
 slug: sourcegraph-3.9
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
-decription: "Sourcegraph 3.9: Literal search by default, multi-project LSIF code intelligence, Grafana dashboards, and configuration"
+description: "Sourcegraph 3.9: Literal search by default, multi-project LSIF code intelligence, Grafana dashboards, and configuration"
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
