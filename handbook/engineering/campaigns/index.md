@@ -46,7 +46,7 @@ The short-term goal and primary focus of the team is to *deliver campaigns to al
 1. Someone on the Campaigns team makes one meaningful change to at least two repositories.
 1. A Sourcegraph engineer (not on this team) makes one meaningful change to at least two repositories.
 1. ~~Reach out to one customer, summarizing the changes in the new Campaigns workflow, to give them a heads-up.~~ **Done!**
-1. ~~After we hear from that customer, we reach out to two other customers, as in previous step.~~ **DONE!**
+1. ~~After we hear from that customer, we reach out to two other customers, as in previous step.~~ **Done!**
    - We are still waiting for feedback from these customers.
 1. Work with Design to validate what we have with user testing.
 1. After responding to feedback from at least 3 customers, we declare the state of Campaigns to be Good and Stable.
