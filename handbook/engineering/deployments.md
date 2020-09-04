@@ -10,6 +10,7 @@ Also on this page:
 
 - [Kubernetes](#kubernetes)
 - [Testing](#testing)
+- [deploy-sourcegraph](#deploy-sourcegraph)
 
 ## Deployment basics
 
@@ -21,7 +22,7 @@ For pushing custom images, refer to [building Docker images for specific branche
 
 ### Renovate
 
-Renovate is a tool for updating dependencies. [`deploy-sourcegraph-*`](#merging-changes-from-deploy-sourcegraph) repositories with Renovate configured check for updated Docker images about every hour. If it finds new Docker images then it opens and merges a PR ([Sourcegraph.com example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate)) to update the image tags in the deployment configuration. This is usually accompanied by a CI job that deploys the updated images to the appropriate deployment.
+Renovate is a tool for updating dependencies. [`deploy-sourcegraph-*`](#deploy-sourcegraph) repositories with Renovate configured check for updated Docker images about every hour. If it finds new Docker images then it opens and merges a PR ([Sourcegraph.com example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate)) to update the image tags in the deployment configuration. This is usually accompanied by a CI job that deploys the updated images to the appropriate deployment.
 
 ## sourcegraph.com
 
@@ -407,7 +408,11 @@ This will trigger two builds on Buildkite for these branches:
 
 And the end of the build you can find the name of the newly built Docker image.
 
-## Merging changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
+## deploy-sourcegraph
+
+Sourcegraph Kubernetes deployments typically start off as [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) forks. Learn more about how we advise customers to deploy Sourcegraph in Kubernetes in our [admin installation documentation](https://docs.sourcegraph.com/admin/install/kubernetes).
+
+### Merging changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
 
 We have two Sourcegraph Kubernetes cluster installations that we manage ourselves:
  
