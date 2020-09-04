@@ -1,10 +1,15 @@
 # Deployments
 
-We maintain multiple deployments of Sourcegraph:
+We maintain multiple [deployments](#deployment-basics) of Sourcegraph:
 
 - [sourcegraph.com](#sourcegraphcom) is our production deployment for open source code.
 - [sourcegraph.sgdev.org](#sourcegraphsgdevorg) is our private deployment of Sourcegraph that contains our private code.
 - [k8s.sgdev.org](#k8ssgdevorg) is a dogfood deployment that replicates the scale of our largest customers.
+
+Also on this page:
+
+- [Kubernetes](#kubernetes)
+- [Testing](#testing)
 
 ## Deployment basics
 
@@ -16,7 +21,7 @@ For pushing custom images, refer to [building Docker images for specific branche
 
 ### Renovate
 
-Renovate is a tool for updating dependencies. `deploy-sourcegraph-*` repositories with Renovate configured check for updated Docker images about every hour. If it finds new Docker images then it opens and merges a PR ([Sourcegraph.com example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate)) to update the image tags in the deployment configuration. This is usually accompanied by a CI job that deploys the updated images to the appropriate deployment.
+Renovate is a tool for updating dependencies. [`deploy-sourcegraph-*`](#merging-changes-from-deploy-sourcegraph) repositories with Renovate configured check for updated Docker images about every hour. If it finds new Docker images then it opens and merges a PR ([Sourcegraph.com example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate)) to update the image tags in the deployment configuration. This is usually accompanied by a CI job that deploys the updated images to the appropriate deployment.
 
 ## sourcegraph.com
 
@@ -61,7 +66,6 @@ git push origin release
   1. Go to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) and remove the `"extends:["default:automergeDigest"]` entry for the "Sourcegraph Docker images" group ([example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/commit/0eb16fd9e3ddfcf3a3c75ccdda0e7eddabf19c7a)).
   1. Once you have fixed the issue in the `master` branch of [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph), re-enable auto-deploys by reverting your change to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) from step 1.
 
-
 ## sourcegraph.sgdev.org
 
 🚨 This deployment contains private code - do not use it for demos!
@@ -74,17 +78,60 @@ git push origin release
 
 ## k8s.sgdev.org
 
+🚨 This deployment is currently rarely updated and does not have a conventional update flow - there is [ongoing work on refreshing the deployment](https://github.com/orgs/sourcegraph/projects/83).
+
 - [dogfood-full-k8s cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood-full-k8s?project=sourcegraph-dev)
   ```
   gcloud container clusters get-credentials dogfood-full-k8s --zone us-central1-a --project sourcegraph-dev
   ```
 - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
 
-## Deploying and rolling back other clusters
+### Troubleshooting out of sync updates on Pulumi
 
-The other clusters are deployed and rolled back in the same way as sourcegraph.com. Use the links at the top of this page to see where the Kubernetes configurations for each cluster is stored.
+This deployment currently uses Pulumi for deployment.
 
-## How to setup access to Kubernetes
+If out of sync changes occur on the dogfood cluster or a pod is failing, Pulumi can end up in an interrupted state and the `pulumi-refresh.sh` build step will not pass on buildkite. If this occurs, follow these steps to fix edit the deployment directly and remediate the issues that are failing the build step:
+
+1. From your local clone of the dogfood repo, run:
+```
+pulumi stack export > stack.json
+```
+
+2. In the file search for the `pending_operations` block and verify the pending operation is the same as that failing in the buildkite logs. 
+
+buildkite.log
+```bash
+error: the current deployment has 1 resource(s) with pending operations:
+  * urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus, interrupted while updating
+```
+
+stack.json
+```bash
+"pending_operations": [
+  {
+      "resource": {
+          "urn": "urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus",
+      ...
+      },
+      "type": "updating"
+  }
+]
+```
+
+3. Edit the `stack.json` file and remove the resource in question.
+
+4. Import the stack by running:
+```
+pulumi stack import --file stack.json
+```
+
+5. Trigger the build again from buildkite and ensure all build steps pass.
+
+For more information see the Pulumi [documentation](https://www.pulumi.com/docs/troubleshooting/#editing-your-deployment)
+
+## Kubernetes
+
+### How to set up access to Kubernetes
 
 1. Make sure that you have been granted access to our Google Cloud project: https://console.developers.google.com/project/sourcegraph-dev?authuser=0. You may need to change `authuser` to the index of your sourcegraph.com Google account.
 
@@ -113,132 +160,8 @@ The other clusters are deployed and rolled back in the same way as sourcegraph.c
 	```
 	kubectl get pods --all-namespaces
 	```
- 
-## How to manually start a test cluster in our "Sourcegraph Auxiliary' project on GCP
- 
-- Go to [Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server)
-- Click create a cluster.
-- Give it a name (a good convention is to prefix with your username).
-- Keep the defaults zonal and us-central1.
-- Set the default pool to 3 nodes.
-- Change machine type to n1-standard-16.
-- Click "Create Cluster".
-- When cluster is ready, click connect and copy/paste the command and execute it (it looks something 
-  like `gcloud container clusters get-credentials ....`). Now kubectl is acting on this cluster.
-- Give yourself admin superpowers by executing: 
 
-```shell
-kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
-```
-
-- Add a storage class by saving these contents
-
-```yaml
-kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
-  name: sourcegraph
-  labels:
-    deploy: sourcegraph-storage
-provisioner: kubernetes.io/gce-pd
-parameters:
-  type: pd-ssd # This configures SSDs (recommended).
-```
-
-into a file 'sourcegraph.Storageclass.yaml' and executing
-
-```shell
-kubectl apply -f sourcegraph.Storageclass.yaml
-```
-
-- cd to your clone of [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) and follow the remaining
-steps of the [installation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md).
-
-```shell
-./kubectl-apply-all.sh
-```
-
-> Recommendation: [k9s](https://github.com/derailed/k9s) is a nice command-line GUI tool for common kubectl operations.
-> It shows the state of your cluster and offers keyboard short-cuts for all the common kubectl commands.
-
-- Once all the pods are running you can port-forward the frontend (or any other services you are interested in)
-
-```shell
-kubectl port-forward svc/sourcegraph-frontend 3080:30080 
-```
-
-Please delete your test cluster when you are done testing by going to
-[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
-appropriate delete button.
-
-## How to start a test cluster in our "Sourcegraph Auxiliary' project on GCP with a script
-
-The following script executes the same steps that were described in the previous section. Place the script in the root
-directory of your [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) clone
-(also add it to your `.git/info/exclude`). 
-Execute it from the repo root directory. It will spin up a test cluster in the namespace `ns-sourcegraph`.
-
-```shell script
-#!/usr/bin/env bash
-
-set -ex
-
-if [  -d "generated-cluster" ]
-then
-    echo "Directory generated-cluster already exists. This script would override its contents. Please move it away."
-    exit 1
-fi
-
-USER=$(whoami)
-
-mkdir generated-cluster
-
-./overlay-generate-cluster.sh namespaced generated-cluster
-
-gcloud container clusters create "${USER}"-testing --zone us-central1-a --num-nodes 3 --machine-type n1-standard-16 --disk-type pd-ssd --project sourcegraph-server
-gcloud container clusters get-credentials "${USER}"-testing --zone us-central1-a --project sourcegraph-server
-
-kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
-
-kubectl apply -f base/sourcegraph.StorageClass.yaml
-
-kubectl create namespace ns-sourcegraph
-
-kubectl apply -n ns-sourcegraph --prune -l deploy=sourcegraph -f generated-cluster --recursive
-
-timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/indexed-search
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/precise-code-intel-bundle-manager
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/prometheus
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-cache
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-store
-timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/gitserver
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/sourcegraph-frontend
-
-kubectl -n ns-sourcegraph expose deployment sourcegraph-frontend --type=NodePort --name sourcegraph --type=LoadBalancer --port=3080 --target-port=3080
-
-kubectl -n ns-sourcegraph describe service/sourcegraph
-```
-
-This script creates a load balancer and describes the exposed service. Look for the `LoadBalancer Ingress` IP and copy
-its value (if the IP hasn't been assigned yet, wait a little and execute
- `kubectl -n ns-sourcegraph describe service/sourcegraph` until it appears).
- 
-You can paste the IP value into the following Caddyfile to have your new test cluster available at `https://sourcegraph.test:3443`
-
-```text
-sourcegraph.test:3443
-tls internal
-reverse_proxy http://<INSERT LOAD BALANCER IP HERE>:3080
-```
-
-Again, please delete your test cluster when you are done testing by going to
-[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
-appropriate delete button.
-
-> Recommendation: [infra.app](https://infra.app/) is a nice Kubernetes management app.
-> It has some overlap with `k9s` but also complements it in some areas.
-
-## kubectl cheatsheet
+### kubectl cheatsheet
 
 These example commands are for the `dot-com` cluster where the Sourcegraph application is deployed to the `prod` namespace.
 
@@ -308,11 +231,160 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 
 </table>
 
-## Backups
+### Scaling Kubernetes clusters
+
+To scale the number of nodes in a cluster run the following command:
+```bash
+gcloud container clusters resize $CLUSTER_NAME --zone $ZONE --num-nodes $NUM_NODES
+```
+
+For example, you may have a cluster not being actively used but want to preserve it for later use. You can scale the cluster to zero by running:
+```bash
+gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 0
+```
+
+When the cluster is ready for use again, simply run the same command with the number of nodes required:
+```bash
+gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 3
+```
+
+For more informatino see the [GKE documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/resizing-a-cluster).
+
+### Kubernetes backups
 
 Snapshots of all Kubernetes resources are taken periodically and pushed to https://github.com/sourcegraph/kube-backup/.
+ 
+## Testing
 
-## Building Docker images for a specific branch
+This section documents testing clusters and deployments.
+
+### Test clusters
+
+#### How to manually start a test cluster in our "Sourcegraph Auxiliary' project on GCP
+ 
+- Go to [Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server)
+- Click create a cluster.
+- Give it a name (a good convention is to prefix with your username).
+- Keep the defaults zonal and us-central1.
+- Set the default pool to 3 nodes.
+- Change machine type to n1-standard-16.
+- Click "Create Cluster".
+- When cluster is ready, click connect and copy/paste the command and execute it (it looks something 
+  like `gcloud container clusters get-credentials ....`). Now kubectl is acting on this cluster.
+- Give yourself admin superpowers by executing: 
+
+```shell
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
+```
+
+- Add a storage class by saving these contents
+
+```yaml
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: sourcegraph
+  labels:
+    deploy: sourcegraph-storage
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-ssd # This configures SSDs (recommended).
+```
+
+into a file 'sourcegraph.Storageclass.yaml' and executing
+
+```shell
+kubectl apply -f sourcegraph.Storageclass.yaml
+```
+
+- cd to your clone of [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) and follow the remaining
+steps of the [installation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md).
+
+```shell
+./kubectl-apply-all.sh
+```
+
+> Recommendation: [k9s](https://github.com/derailed/k9s) is a nice command-line GUI tool for common kubectl operations.
+> It shows the state of your cluster and offers keyboard short-cuts for all the common kubectl commands.
+
+- Once all the pods are running you can port-forward the frontend (or any other services you are interested in)
+
+```shell
+kubectl port-forward svc/sourcegraph-frontend 3080:30080 
+```
+
+Please delete your test cluster when you are done testing by going to
+[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
+appropriate delete button.
+
+#### How to start a test cluster in our "Sourcegraph Auxiliary' project on GCP with a script
+
+The following script executes the same steps that were described in the previous section. Place the script in the root
+directory of your [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) clone
+(also add it to your `.git/info/exclude`). 
+Execute it from the repo root directory. It will spin up a test cluster in the namespace `ns-sourcegraph`.
+
+```shell script
+#!/usr/bin/env bash
+
+set -ex
+
+if [  -d "generated-cluster" ]
+then
+    echo "Directory generated-cluster already exists. This script would override its contents. Please move it away."
+    exit 1
+fi
+
+USER=$(whoami)
+
+mkdir generated-cluster
+
+./overlay-generate-cluster.sh namespaced generated-cluster
+
+gcloud container clusters create "${USER}"-testing --zone us-central1-a --num-nodes 3 --machine-type n1-standard-16 --disk-type pd-ssd --project sourcegraph-server
+gcloud container clusters get-credentials "${USER}"-testing --zone us-central1-a --project sourcegraph-server
+
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
+
+kubectl apply -f base/sourcegraph.StorageClass.yaml
+
+kubectl create namespace ns-sourcegraph
+
+kubectl apply -n ns-sourcegraph --prune -l deploy=sourcegraph -f generated-cluster --recursive
+
+timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/indexed-search
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/precise-code-intel-bundle-manager
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/prometheus
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-cache
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-store
+timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/gitserver
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/sourcegraph-frontend
+
+kubectl -n ns-sourcegraph expose deployment sourcegraph-frontend --type=NodePort --name sourcegraph --type=LoadBalancer --port=3080 --target-port=3080
+
+kubectl -n ns-sourcegraph describe service/sourcegraph
+```
+
+This script creates a load balancer and describes the exposed service. Look for the `LoadBalancer Ingress` IP and copy
+its value (if the IP hasn't been assigned yet, wait a little and execute
+ `kubectl -n ns-sourcegraph describe service/sourcegraph` until it appears).
+ 
+You can paste the IP value into the following Caddyfile to have your new test cluster available at `https://sourcegraph.test:3443`
+
+```text
+sourcegraph.test:3443
+tls internal
+reverse_proxy http://<INSERT LOAD BALANCER IP HERE>:3080
+```
+
+Again, please delete your test cluster when you are done testing by going to
+[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
+appropriate delete button.
+
+> Recommendation: [infra.app](https://infra.app/) is a nice Kubernetes management app.
+> It has some overlap with `k9s` but also complements it in some areas.
+
+### Building Docker images for a specific branch
 
 If you need to build Docker images on Buildkite for testing purposes, e.g. you
 have a PR with a fix and want to deploy that fix to a test instance, you can
@@ -412,62 +484,3 @@ In order to mimic the same workflow that we tell our customers to follow:
 1. Watch CI, which will deploy the change automatically.
 1. Check the deployment is healthy afterwards (`kubectl get pods` should show all healthy, searching should work).
 
-## Troubleshooting out of sync updates on Pulumi
-
-If out of sync changes occur on the dogfood cluster or a pod is failing, Pulumi can end up in an interrupted state and the `pulumi-refresh.sh` build step will not pass on buildkite. If this occurs, follow these steps to fix edit the deployment directly and remediate the issues that are failing the build step:
-
-1. From your local clone of the dogfood repo, run:
-```
-pulumi stack export > stack.json
-```
-
-2. In the file search for the `pending_operations` block and verify the pending operation is the same as that failing in the buildkite logs. 
-
-buildkite.log
-```bash
-error: the current deployment has 1 resource(s) with pending operations:
-  * urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus, interrupted while updating
-```
-
-stack.json
-```bash
-"pending_operations": [
-  {
-      "resource": {
-          "urn": "urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus",
-      ...
-      },
-      "type": "updating"
-  }
-]
-```
-
-3. Edit the `stack.json` file and remove the resource in question.
-
-4. Import the stack by running:
-```
-pulumi stack import --file stack.json
-```
-
-5. Trigger the build again from buildkite and ensure all build steps pass.
-
-For more information see the Pulumi [documentation](https://www.pulumi.com/docs/troubleshooting/#editing-your-deployment)
-
-## Scaling Kubernetes Clusters
-
-To scale the number of nodes in a cluster run the following command:
-```bash
-gcloud container clusters resize $CLUSTER_NAME --zone $ZONE --num-nodes $NUM_NODES
-```
-
-For example, you may have a cluster not being actively used but want to preserve it for later use. You can scale the cluster to zero by running:
-```bash
-gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 0
-```
-
-When the cluster is ready for use again, simply run the same command with the number of nodes required:
-```bash
-gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 3
-```
-
-For more informatino see the [GKE documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/resizing-a-cluster).
