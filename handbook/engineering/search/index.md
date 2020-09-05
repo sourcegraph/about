@@ -18,9 +18,13 @@ _Updated 2020-08-27_
 
 ## Medium term (3-6 months)
 
-- Getting to search results faster through a better search experience.
-- Users perceive search results to be as fast-loading and responsive as [grep.app](https://grep.app/)
-- Scale fast search to 500k repositories.
+### Scale indexed search to 500k repositories
+
+- **Problem:** We have customers who need Sourcegraph to scale to 500k repositories. Some parts of Sourcegraph don't work well at that scale.
+- **Owners:** TBD
+- **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
+- **Success criteria:** Sourcegraph can search 500k repositories in less than 300ms. This is on par with [grep.app](https://grep.app).
+- **Status:** Sourcegraph.com currently has about 100k repositories.
 
 ## Short term (1-3 months)
 
