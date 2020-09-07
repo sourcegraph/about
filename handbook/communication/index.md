@@ -35,7 +35,7 @@ The following places are not sources of truth. Treat documents and conversations
 ## Meetings
 
 - [Company meeting](company_meeting.md) (Mondays 10:30-11:00am PST/PDT)
-- [Social meetings](../../company/remote/calendar.md)
+- [Social calendar](../../company/remote/calendar.md) meetings
 
 ### Internal meetings
 
