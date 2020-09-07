@@ -2,18 +2,31 @@
 title: "Optimizing a code intelligence indexer"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-publishDate: 2020-08-17T08:00-07:00
+publishDate: 2020-09-06T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-indexer
 heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
 published: true
 ---
 
-Sourcegraph is used by companies all over the repository number and size spectrum. Some companies organize their code over many small repositories. For us, that's easy mode. Small repositories are easy and generally fast _enough_ to index even with an LSIF indexer that performs poorly as code size grows. Other companies organize their code into a handful of very large repositories. For us, this presents a performance challenge - but we've made great strides with the recent [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go).
+We (Sourcegraph's [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence)) recently made Go [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) faster, especially on very large repositories. For example, we cut the indexing time by 95% for the Go AWS SDK (a big monorepo), from 8 minutes to 24 seconds. Here's how we did it.
 
-On the [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence) at Sourcegraph, we want you to always have precise and up-to-date hovers, definitions, and references when you're browsing and reviewing unfamiliar code, even on very large monorepos.
+## Background: what is code intelligence?
 
-![Cross-repository jump to definition](https://sourcegraphstatic.com/precise-xrepo-j2d.gif)
+Developers use [Sourcegraph](https://about.sourcegraph.com) for code search and navigation. When you're navigating code on Sourcegraph, you get hovers, definitions, and references to help you along the way. They're fast and cross-repository, can work on any branch or commit, and can be precise (with [LSIF](https://lsif.dev) set up in CI).
+
+[![Cross-repository jump to definition](https://sourcegraphstatic.com/precise-xrepo-j2d.gif)](https://sourcegraph.com/github.com/gorilla/mux/-/blob/route.go)
+
+## The problem: really big monorepos
+
+Sourcegraph is used by organizations all over the "manyrepo"-vs.-monorepo spectrum:
+
+- Some organizations have many small- or medium-sized repositories ("manyrepos"). For us, that's easy. Small repositories are fast to index, even with an [LSIF](https://lsif.dev) indexer that performs poorly as code size grows.
+- Other organizations have a few very large repositories (monorepos with 10+ GB checkouts). That's harder, but we've made great strides with the recent [1.0 release](https://github.com/sourcegraph/lsif-go/releases/tag/v1.0.0) of [lsif-go](https://github.com/sourcegraph/lsif-go).
+
+Our recent optimizations focused on the very large monorepos.
+
+## Time to Intelligence (TTI)
 
 To track indexing performance, we use an important internal key metric called **Time To Intelligence** (TTI), which covers the time it takes to:
 
@@ -23,16 +36,14 @@ To track indexing performance, we use an important internal key metric called **
 1. Process the uploaded index
 1. Use the processed index to provide up-to-date code intelligence
 
-So how well do we index Go code at scale?
+So, after the improvements discussed here, how well do we index Go code at scale? **[We cut the time to index by 95%.](https://github.com/sourcegraph/lsif-go/blob/master/BENCHMARK.md)**
 
 * Previously, it took nearly **8 minutes** to index the [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go); it now takes only **24 seconds**.
 * Previously, it took nearly **7 hours** to index 56 million lines of code; it now takes under **20 minutes**.
 
-**[The indexer takes only 5% of the time it used to.](https://github.com/sourcegraph/lsif-go/blob/master/BENCHMARK.md)**
-
 Indexing speed is _so_ important for code bases undergoing constant change. Stale, hours-old code intelligence on a monorepo at scale is about as useful as using a map of Pangea to find your way home. This is why the code intelligence team is dedicated to [increasing the efficiency of every part of the stack](https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend) to make sure your map of the code is always accurate.
 
-## The optimization story
+## How we optimized it
 
 A language indexer tool is conceptually simple. It reads source code, constructs an in-memory representation of the program structure, resolves symbol names, then generates a JSON-encoded graph representation of those symbols according to the [LSIF](https://microsoft.github.io/language-server-protocol/specifications/lsif/0.4.0/specification/) specification. Go provides [tooling](https://pkg.go.dev/golang.org/x/tools/go/packages?tab=doc) to parse and analyze Go source code in the standard library, leaving only the last stage for us to optimize.
 
@@ -168,7 +179,7 @@ Dropping the un-optimized v0.9.0 release from our data set, we get the following
   <img src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-perf-2.png" alt="performance comparison">
 </div>
 
-We plan to continue on this path of performance improvements. This is just the latest chapter in our continuing effort to bring fast, precise code navigation to every language, every codebase, and every programmer. If you thought this post was interesting or valuable, we'd appreciate it if you'd share it with others!
+We're still working on improving performance so every language, every codebase, and every programmer gets fast, precise code intelligence. If you thought this post was interesting or valuable, we'd appreciate it if you'd share it with others!
 
 To read another optimization story similar to this one, see our previous discussion about optimizing the [code intelligence backend](/blog/optimizing-a-code-intel-backend/), which concentrates on reducing the latency of the part of the code intelligence indexing system that receives the data emitted by LSIF indexers like lsif-go.
 
