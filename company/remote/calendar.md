@@ -16,6 +16,6 @@ If you add yourself to an event, make sure you can attend, some events might dep
 
 ### Creating an event
 
-To propose an event, simply add it to the Sourcegraph Social calendar and invite yourself to it. Always add a brief description so other people can join and any requirements like the minimum number of participants or owning a video game.
+To propose an event, simply add it to the Sourcegraph Social calendar and invite yourself to it, always add a brief description so other people can join, and list any event requirements like the minimum number of participants or owning a video game. Feel free to share the even in our Slack so others can join in!
 
 When adding an event, you become the organizer and should communicate with its guest about important updates. For example, if you have to delete the event because it did not reach the minimum number of attendees.
