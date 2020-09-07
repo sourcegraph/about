@@ -10,7 +10,7 @@ The first ~~rule~~step of the social calendar, [add the calendar](https://calend
 
 ### Joining an event
 
-Joining an event is easy, just edit the event you would like to attend to and add yourself as a guest and select "send an update" when saving, this will ensure the host is notified. Some events might be recurring, only add yourself to the dates that will attend.
+Joining an event is easy, just edit the event you would like to attend to, add yourself as a guest and select "send an update" when saving, this will ensure the host is notified. Some events might be recurring, so only add yourself to the dates that you will attend.
 
 If you add yourself to an event, make sure you can attend, some events might depend on the number of participants which will be counting on your attendance.
 
