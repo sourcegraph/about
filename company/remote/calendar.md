@@ -1,4 +1,4 @@
-# Social Calendar
+# Social calendar
 
 Working in the same office creates a lot of opportunities for socializing and casual interactions, but how do we maintain these social events when working remotely?
 
