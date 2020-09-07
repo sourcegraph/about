@@ -9,7 +9,7 @@ heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
 published: true
 ---
 
-We (Sourcegraph's [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence)) recently made Go [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) faster, especially on very large repositories. For example, we cut the indexing time by 95% for the huge Go AWS SDK repository, from 8 minutes to 24 seconds. Here's how we did it.
+We (Sourcegraph's [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence)) recently made Go [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) faster, especially on very large repositories. For example, we cut the indexing time by 95% for the huge [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go) repository, from 8 minutes to 24 seconds. Here's how we did it.
 
 ## Background: what is code intelligence?
 
@@ -38,7 +38,7 @@ To track indexing performance, we use an important internal key metric called **
 
 So, after the improvements discussed here, how well do we index Go code at scale? **[We cut the time to index by 95%.](https://github.com/sourcegraph/lsif-go/blob/master/BENCHMARK.md)**
 
-* Previously, it took nearly **8 minutes** to index the [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go); it now takes only **24 seconds**.
+* Previously, it took nearly **8 minutes** to index the Go AWS SDK; it now takes only **24 seconds**.
 * Previously, it took nearly **7 hours** to index 56 million lines of code; it now takes under **20 minutes**.
 
 Indexing speed is _so_ important for code bases undergoing constant change. Stale, hours-old code intelligence on a monorepo at scale is about as useful as using a map of Pangea to find your way home. This is why the code intelligence team is dedicated to [increasing the efficiency of every part of the stack](https://about.sourcegraph.com/blog/optimizing-a-code-intel-backend) to make sure your map of the code is always accurate.
