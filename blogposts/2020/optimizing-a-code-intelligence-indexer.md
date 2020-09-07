@@ -9,7 +9,7 @@ heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
 published: true
 ---
 
-We (Sourcegraph's [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence)) recently made Go [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) faster, especially on very large repositories. For example, we cut the indexing time by 95% for the Go AWS SDK (a big monorepo), from 8 minutes to 24 seconds. Here's how we did it.
+We (Sourcegraph's [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence)) recently made Go [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) faster, especially on very large repositories. For example, we cut the indexing time by 95% for the huge Go AWS SDK repository, from 8 minutes to 24 seconds. Here's how we did it.
 
 ## Background: what is code intelligence?
 
