@@ -150,7 +150,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Julia Gilinets (she/her)
 
-- VP Enterprise Sales
+- VP Customer Engineering
 - Nashville, Tennessee, USA 🇺🇸
 - [julia@sourcegraph.com](mailto:julia@sourcegraph.com), [@JuliaSourceress](https://twitter.com/JuliaSourceress), [LinkedIn](https://www.linkedin.com/in/juliagilinets/), [GitHub](https://github.com/juliasourceress)
 - Julia started out as a Software Engineer supporting the developer community at Palm, which to the generations of today might be thought of as mobile before mobile. She realized she loved forging business partnerships just as much as coding, and after over a decade of leading various customer facing teams has finally landed in the best of all worlds at Sourcegraph. She's passionate about technical innovation, efficiency, the human connection, and sleep.
