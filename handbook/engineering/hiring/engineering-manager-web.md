@@ -59,7 +59,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - 30m [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
    - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
 
-1. If we want to move forward, setup 30-minute calls to meet members of the team that this person will be managing. These calls are informal and no script.
+1. If we want to move forward, we will setup 30-minute calls to meet any members of the web team that weren't already an interviewer. These calls are informal and no script.
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
