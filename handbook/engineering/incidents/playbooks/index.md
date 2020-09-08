@@ -1,8 +1,8 @@
 # Playbooks
 
-## [Sourcegraph.com is deleted entirely](playbooks/dotcom_deleted_entirely.md)
+## [Sourcegraph.com is deleted entirely](dotcom_deleted_entirely.md)
 
-This playbook has a dedicated [page](playbooks/dotcom_deleted_entirely.md)
+This playbook has a dedicated [page](dotcom_deleted_entirely.md)
 
 ## Free gitserver disk space on sourcegraph.com
 
@@ -101,7 +101,7 @@ Open the alert UI to click on the check URL that was failing and verify it's now
 
 ## Useful dashboards
 
-Check out the [kubectl cheatsheet](../deployments.md#kubectl-cheatsheet) for how to get access to Jaeger locally.
+Check out the [kubectl cheatsheet](../../deployments.md#kubectl-cheatsheet) for how to get access to Jaeger locally.
 
 ## Access pod logs in GCP console
 
