@@ -1,4 +1,8 @@
-# Playbook
+# Playbooks
+
+## [Sourcegraph.com is deleted entirely](playbooks/dotcom_deleted_entirely.md)
+
+This playbook has a dedicated [page](playbooks/dotcom_deleted_entirely.md)
 
 ## Free gitserver disk space on sourcegraph.com
 

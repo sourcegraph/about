@@ -63,7 +63,7 @@ Note: Most of our internally hosted services (\*.sgdev.org) use SSO with your
 Sourcegraph Google account. We also have a document storing [shared] passwords
 for external services.
 
-- [Playbook](playbook.md)
+- [Playbook](playbooks/index.md)
 - [Opsgenie](https://app.opsgenie.com/alert) - Paging account
 - [Prometheus](https://prometheus.sgdev.org/) - Service-level instrumentation/metrics. Also consumes other metrics since Kubernetes exports Prometheus metrics from cAdvisor and Kubernetes services.
 - [Grafana](https://grafana.sgdev.org/) - dashboard for graphing metrics
