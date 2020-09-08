@@ -2,7 +2,7 @@
 
 We have an editorial style to help us keep our copy clear and consistent, and specific guidelines to write and structure content to make it easy for users to understand and act on.
 
-Remember, we strive for [effectiveness over correctness](../content_guidelines/#effectiveness-over-correctness). Use these guidelines as a reference, not an authority, and always prioritize what's most effective for our target users.
+Remember, we strive for [effectiveness over correctness](../content_guidelines.md#effectiveness-over-correctness). Use these guidelines as a reference, not an authority, and always prioritize what's most effective for our target users.
 
 ## Spelling
 
@@ -124,6 +124,8 @@ Use present tense to describe the result of actions.
 We use different forms of capitalization depending on the context.
 
 All-caps should be used sparingly and only for specific purposes (all-caps copy is less accessible and harder to read). Never use all-caps within a sentence.
+
+Render proper nouns as their creators/trademarks prefer: Docker, Bitbucket, GitLab, GitHub, React, Git, JavaScript, TypeScript.
 
 ## Contractions
 
