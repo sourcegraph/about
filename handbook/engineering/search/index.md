@@ -18,8 +18,7 @@ _Updated 2020-09-05_
 
 ## [WIP] Medium term (3-6 months)
 
-### Scalable
-  - **Scale indexed search to 500k repositories**
+### Scale indexed search to 500k repositories
     - **Problem:** We have customers who need Sourcegraph to scale to 500k repositories. Some parts of Sourcegraph don't work well at that scale.
     - **Outcome:** Sourcegraph can search 500k repositories in less than 300ms. This is on par with [grep.app](https://grep.app).
     - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
