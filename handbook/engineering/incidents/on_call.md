@@ -45,7 +45,7 @@ If that person is unavailable, feel free to ping the entire team `@cloud`, `@dis
 The authoritative schedule is in OpsGenie:
 https://app.opsgenie.com/schedule#/190e2873-1e3b-4350-b67b-2e681d542970
 
-I recommend importing the schedule into your calendar.
+It is recommended to import the schedule into your calendar.
 
 - You can subscribe to only your on-call weeks here: https://app.opsgenie.com/user/profile#/onCallSchedule/
 - You can subscribe to the entire on-call schedule here: https://app.opsgenie.com/schedule#/190e2873-1e3b-4350-b67b-2e681d542970
