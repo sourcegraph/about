@@ -29,7 +29,7 @@ As a team's size and scope grows, it (unintentionally) tends to become a workgro
 
 ## Open and transparent
 
-We are an [open company](open_source_open_company.md).
+We are an [open company](company/index.md#open-company).
 
 Being open and transparent builds trust with our customers and within our team. It makes it easy for us to partner and collaborate with our customers so we make Sourcegraph the best that it can be. It enables our teammates to work autonomously to solve tough problems while maintaining alignment.
 
