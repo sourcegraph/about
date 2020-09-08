@@ -28,7 +28,7 @@ You'll want to be in #dev-ops, #buildkite, and #opsgenie on [Slack](../../commun
 
 ## Getting help
 
-In some cases you may not know how to resolve an incident on your own, or the incident may be due to something you are not familiar with. In such cases, it is your responsbility to pull in more people or teams as needed to resolve the incident.
+In some cases you may not know how to resolve an incident on your own, or the incident may be due to something you are not familiar with. In such cases, it is your responsibility to pull in more people or teams as needed to resolve the incident.
 
 If the incident is not urgent (use your best judgement) and can be handled asynchronously over the course of a few days, file a GitHub issue and pull in teams that way by cc'ing them with e.g. `@sourcegraph/cloud` `@sourcegraph/distribution`.
 
