@@ -2,7 +2,7 @@
 
 The content in our products and messages shape how our users perceive and use our product to get things done. Our writing must help our users understand and take action.
 
-## Heading and subheadings
+## Headings and subheadings
 
 Headings and subheadings in our interfaces have three goals:
 
@@ -16,37 +16,39 @@ Some specific guidelines for writing headings and subheadings:
 - **Write in sentence case.** Sentence case makes it feel less stiff and formal.
 - **Don’t use punctuation** like periods or semicolons.
 
-**Yes**
-
-- Your next read
-
-**No**
-
-- Your Next Read.
-
-### Conversational headings
-
-When we’re talking, we connect words with articles like “the,” “for,” “these,” and “an.” If we remove these from our writing, it makes our copy feel stiff and complicated. For conversational headings, use articles and write full sentences.
-
-**Yes**
-
-- Read these next
-
-**No**
-
-- Read next
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Get started with campaigns</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Get Started with Campaigns.</li>
+</ul>
+</div>
+</div>
 
 ### Microcopy
 
-For labels and microcopy, prioritize short and actionable content by removing articles like “the” and “an.”
+For labels and microcopy, prioritize short and actionable content by removing articles like “the,” “this,” and “an.”
 
-**Yes**
-
-- Add book
-
-**No**
-
-- Add this book
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Install now</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Install this extension</li>
+</ul>
+</div>
+</div>
 
 ## Sentences
 
@@ -58,37 +60,58 @@ Some specific guidelines for writing sentences:
 
 Start sentences with strong verbs that help users understand what they will do. Include what the outcome of the action will be.
 
-**Yes**
-
-- Add a book to your favourites. 
-
-**No**
-
-- Books appear in your favourites after you add them.
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Add repositories from your code host.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Repositories from your code host will appear here after you add them.</li>
+</ul>
+</div>
+</div>
 
 ### Use verbs instead of verb-noun phrases
 
 Look for combinations of verbs and nouns that can be replaced by a single verb.
 
-**Yes**
-
-- We will **refund** your subscription.
-
-**No**
-
-- We will **provide a refund** for your subscription.
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li><strong>Search</strong> for your repo to get started.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li><strong>Make a search</strong> for your repo to get started.</li>
+</ul>
+</div>
+</div>
 
 ### Don’t use permissive language
 
 Give users confidence about what they should do.
 
-**Yes**
-
-- Update your favourite list and get tailored recommendations for your next read.
-
-**No**
-
-- Update your favourite list and you can get the recommendations for books you’ll love most.
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Add your repos from your code host and start searching code.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Add your repos from your code host and you can start searching code.</li>
+</ul>
+</div>
+</div>
 
 ## Buttons
 
@@ -96,39 +119,60 @@ Buttons are one of the most important elements in our digital platforms. Most ac
 
 Always write button labels in sentence case.
 
-**Yes**
-
-- Send suggestion
-
-**No**
-
-- Send Suggestion
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Create new campaign</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Create New Campaign</li>
+</ul>
+</div>
+</div>
 
 ### Buttons for action
 
 When buttons enable user actions, the formula is `verb` + `noun`.
 
-**Yes**
-
-- Add book
-- Explore recommendations
-
-**No**
-
-- Add
-- Explore
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Add repo</li>
+<li>Explore extensions</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Add</li>
+<li>Explore</li>
+</ul>
+</div>
+</div>
 
 ### Buttons in confirmations
 
 When buttons are used as calls to action in confirmations, the formula `verb` + `noun` doesn’t have to be followed. Instead, use a verb to clearly convey outcomes, by connecting action to outcome.
 
-**Yes**
-
-- Dicard changes? **Cancel / Discard**
-
-**No**
-
-- Discard changes? **No / Yes**
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Discard changes? <strong>Cancel / Discard</strong></li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Discard changes? <strong>No / Yes</strong></li>
+</ul>
+</div>
+</div>
 
 ### Buttons for conversion
 
@@ -138,13 +182,20 @@ Instead of writing about what the user does (the action), write about what the u
 
 The length of a button label when the button’s purpose is conversion isn’t usually a problem.
 
-**Yes**
-
-- Send a friend a free book
-
-**No**
-
-- Send gift
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Start searching code now</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Try now</li>
+</ul>
+</div>
+</div>
 
 **Further reading:**
 
@@ -154,11 +205,20 @@ The length of a button label when the button’s purpose is conversion isn’t u
 
 Buttons can also be an opportunity to use microcopy to create a more positive experience (particularly in negative situations) by making the interface more human. If it’s appropriate, break the rules and explore ways to match the user’s feelings without assigning emotion.
 
-**Yes**
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>I tried, I’m stuck, I need help</li>
+</ul>
 
-- I tried, I’m stuck, I need help
-**Instead of
-- Get help
+Instead of
+
+<ul>
+<li>Get help</li>
+</ul>
+</div>
+</div>
 
 **Further reading:**
 
@@ -168,41 +228,61 @@ Buttons can also be an opportunity to use microcopy to create a more positive ex
 
 Links should provide information about what to expect about the associated actions or destination. Users should be able to predict what will happen as a result of clicking a link.
 
-**Yes**
-
-- See [how to add repositories](#_).
-
-**No**
-
-- Want to add repositories? [Click here](#_).
-- See [this page](#_) for how to add repositories.
-- See [documentation](#_) for how to add repositories.
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>See <a href="#_" aria-disabled="true">how to add repositories</a>.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Want to add repositories? <a href="#_" aria-disabled="true">Click here</a>.</li>
+<li>See <a href="#_" aria-disabled="true">this page</a> for how to add repositories.</li>
+<li>See <a href="#_" aria-disabled="true">documentation</a> for how to add repositories.</li>
+</ul>
+</div>
+</div>
 
 ### In sentences
 
 Links in full sentences shouldn’t link the whole sentence, but instead only the text that describes the outcome of clicking the link.
 
-**Yes**
-
-- Create your [favourites list](#_).
-
-**No**
-
-- [Create your favourites list](#_).
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Learn how to <a href="#_" aria-disabled="true">create your first campaign</a>.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li><a href="#_" aria-disabled="true">Learn how to create your first campaign</a>.</li>
+</ul>
+</div>
+</div>
 
 ### Outside of sentences
 
 Links that aren’t in full sentences should be treated similarly to buttons, and use the `verb` + `noun` pattern. Don’t punctuate, except with questions marks.
 
-**Yes**
-
-- [Remove from list](#_)
-- [Don’t have an account?](#_)
-
-**No**
-
-- [Remove from list.](#_).
-- [Don’t have an account](#_)
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li><a href="#_" aria-disabled="true">View all search options</a></li>
+<li><a href="#_" aria-disabled="true">Forgot password?</a></li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li><a href="#_" aria-disabled="true">View all search options.</a>.</li>
+</ul>
+</div>
+</div>
 
 ## Error messages
 
@@ -218,25 +298,39 @@ Some specific things to keep in mind when writing error messages:
 
 Keep it conversational. Adjusting the tone of voice to be more formal rather than casual is appropriate, but use restraint.
 
-**Yes**
-
-- Postal code should have 6 digits
-
-**No**
-
-- Postal code is invalid
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Password must contain at least 12 characters</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Password format is invalid (minimum 12 characters)</li>
+</ul>
+</div>
+</div>
 
 ### Write without using the words error or failure
 
 Again, keep it conversational. We’d never say “error!” in conversation if we didn’t understand something.
 
-**Yes**
-
-- Sorry, we couldn’t save your changes. Try again?
-
-**No**
-
-- Failed to save changes.
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Sorry, we couldn’t save your changes. Try again?</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Failed to save changes.</li>
+</ul>
+</div>
+</div>
 
 ## Confirmation messages
 
@@ -256,13 +350,20 @@ Confirmation message **titles** should:
 - Write in sentence case. Sentence case makes it feel less stiff and formal.
 - Don’t use punctuation like periods or semicolons, other than a question mark.
 
-**Yes**
-
-- Discard unsaved changes?
-
-**No**
-
-- Discard?
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Discard unsaved changes?</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Discard?</li>
+</ul>
+</div>
+</div>
 
 ### Confirmation message body content
 
@@ -270,36 +371,40 @@ Confirmation message **body content** should:
 
 - Use plain language to explain action is irreversible or difficult to undo.
 
-**Yes**
-
-- This can’t be undone
-
-**No**
-
-- If you discard changes, your list will remain unchanged.
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>This can’t be undone</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>If you discard changes, your list will remain unchanged.</li>
+</ul>
+</div>
+</div>
 
 Confirmation message **calls to action** should:
 
 - Clearly convey outcomes, by connection action to outcome.
 
-**Yes**
-
-- Discard changes? **Cancel** / **Discard**
-
-**No**
-
-- Discard changes? **No** / **Yes**
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Discard changes? <strong>Cancel / Discard</strong></li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Discard changes? <strong>No / Yes</strong></li>
+</ul>
+</div>
+</div>
   
-Special case: in the context of canceling accounts, use “Never mind” instead of “cancel” to prevent confusion.
-
-**Yes**
-
-- Never mind / Cancel account
-
-**No**
-
-- Cancel / Cancel account
-
 ## Success messages
 
 Success messages are shown to users in response to an action they performed, when it succeeds.
@@ -318,27 +423,20 @@ While it’s important to provide certainty that what the user wanted to do actu
 
 Imagine if we let people share a book recommendation. When the recommendation is sent, we need to show a success message so they can be confident the recommendation was delivered.
 
-**Yes**
-
-- Recommendation sent! Sharing is caring.
-
-**No**
-
-- Recommendation successfully sent.
-
-### If possible, provide a deeper and meaningful aspect of the action taken
-
-Use success messages to reinforce the value that our users get from taking a given action.
-
-If a user adds a book to their favourites list, treat the success message as an opportunity to reinforce that choice.
-
-**Yes**
-
-- Added to your favourites! Now others will be able to give you even better recommendations.
-
-**No**
-
-- Book added to your favourites list.
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Your new code monitor is now watching for events.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Code monitor successfully created.</li>
+</ul>
+</div>
+</div>
 
 ## Empty states
 
@@ -352,25 +450,39 @@ Some specific guidelines to keep in mind when writing content for empty states:
 
 Avoid using negative words or phrases. Empty states are transitional and reveal potential. Say what’s supposed to be here, or what can be done here, and how it will help them.
 
-**Yes**
-
-- Your favourite books will appear here!
-
-**No**
-
-- Oh no, there’re no books in your favourites list
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Your saved searches will appear here</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Oops, you have no saved searches</li>
+</ul>
+</div>
+</div>
 
 ### Provide a next step
 
 If relevant, tell users exactly how to start using a feature and provide an action they can take.
 
-**Yes**
-
-- New recommendations from other users will appear here. [Ask for your first recommendation!](#_)
-
-**No**
-
-- No recommendations
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Your saved searches will appear here. <a href="#_" aria-disabled="true">Create your first saved search!</a></li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>No saved searches</li>
+</ul>
+</div>
+</div>
 
 ## Placeholders
 
@@ -388,29 +500,31 @@ Placeholders appear in form inputs before the user enters text. As a general rul
 
 We use a few different approaches to placeholders.
 
-### Questions
-
-When we really want users to complete a field, we can use placeholders to prompt a question for users to respond to. This should be direct and in the second person, and should have a simple, short answer.
-
-**Yes**
-
-- What’s your favourite book?
-
 ### Categories
 
 When the response to an input field might be from a wide range of options, placeholders can be used to reduce the number of choices and provide guidelines for how to respond to the field.
 
-**Yes**
-
-- Filter books by author, genre
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Search by language, repo, or organization</li>
+</ul>
+</div>
+</div>
 
 ### Examples
 
-Sometimes, an example will make it easier for users to understand how to answer a field.
+Sometimes, an example will make it easier for users to understand how to answer a field. Avoid this if you can, but if the field is new or unfamiliar it can be a useful tool.
 
-**Yes**
-
-- Such as “‘Harry Potter’ mixed with ‘A Gentleman in Moscow’”
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Such as “repo:sourcegraph/sourcegraph”</li>
+</ul>
+</div>
+</div>
 
 ## Helper messages
 
@@ -426,13 +540,20 @@ Before adding helper messages, ask whether users actually need help. The more me
 
 This is particularly important for helper messages on input fields.
 
-**Yes**
-
-- 8–12 characters
-
-**No**
-
-- Password must be between 8–12 characters
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>8–12 characters</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Password must be between 8–12 characters</li>
+</ul>
+</div>
+</div>
 
 ## Instructions, references, and citations
 

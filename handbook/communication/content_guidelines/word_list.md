@@ -20,24 +20,38 @@ We describe ourselves with a few different names depending on context, and we sh
 
 You don't need to use the full name of the product each time you refer to it, but don't use a shortened name that could be confused with an official name.
 
-**Yes**
-
-- Use the Phabricator integration to get Sourcegraph features in code review.
-
-**No**
-
-- Use the Sourcegraph Phabricator integration to get Sourcegraph features in code review (_sounds repetitive and stilted_).
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Use the Phabricator integration to get Sourcegraph features in code review.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Use the Sourcegraph Phabricator integration to get Sourcegraph features in code review. <em>(sounds repetitive and stilted)</em></li>
+</ul>
+</div>
+</div>
 
 Always title case our name. Don’t abbreviate or add a space to our name.
 
-**Yes**
-
-- Sourcegraph
-
-**No**
-
-- SG
-- Source Graph
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Sourcegraph</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>SG</li>
+<li>Source Graph</li>
+</ul>
+</div>
+</div>
 
 Only use _we_ and _our_ (as in “our GitHub integration”) in informal documents. In documentation or marketing material, depending on the context, just avoid it, or use “the” or “Sourcegraph”. 
 

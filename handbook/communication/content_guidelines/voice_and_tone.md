@@ -12,9 +12,9 @@ Our brand has a distinct voice and character. This voice and character is the ba
 
 When we write in our shared voice, we are always:
 
-### Todo
+### (This section is todo)
 
-- Todo
+- (This section is todo)
     
 ## Using tone
 
@@ -38,37 +38,58 @@ Vary these dimensions to meet the user’s emotional and situational context at 
 
 ### Positive situations
 
-**Do**
-
-- Be encouraging and positive
-- Express interest
-
-**Don’t**
-
-- Don’t take credit for their success
-- Don’t assume it was easy
+<div class="usage">
+<div class="item yes">
+<h5>Do</h5>
+<ul>
+<li>Be encouraging and positive</li>
+<li>Express interest</li>
+</ul>
+</div>
+<div class="item no">
+<h5>Don’t</h5>
+<ul>
+<li>Don’t take credit for their success</li>
+<li>Don’t assume it was easy</li>
+</ul>
+</div>
+</div>
 
 ### Neutral situations
 
-**Do**
-
-- Express confidence 
-- Connect value to action
-
-**Don’t**
-
-- Don’t create uncertainty 
-- Don’t tell people “what to do”
+<div class="usage">
+<div class="item yes">
+<h5>Do</h5>
+<ul>
+<li>Express confidence</li>
+<li>Connect value to action</li>
+</ul>
+</div>
+<div class="item no">
+<h5>Don’t</h5>
+<ul>
+<li>Don’t create uncertainty</li>
+<li>Don’t tell people “what to do”</li>
+</ul>
+</div>
+</div>
 
 ### Negative situations
 
-**Do**
-
-- Be honest and direct about problems and provide next steps
-- Use conversational but straightforward language
-
-**Don’t**
-
-- Don’t minimize the problem
-- Don’t use negative or technical words
-- Don’t assign emotion
+<div class="usage">
+<div class="item yes">
+<h5>Do</h5>
+<ul>
+<li>Be honest and direct about problems and provide next steps</li>
+<li>Use conversational but straightforward language</li>
+</ul>
+</div>
+<div class="item no">
+<h5>Don’t</h5>
+<ul>
+<li>Don’t minimize the problem</li>
+<li>Don’t use negative or technical words</li>
+<li>Don’t assign emotion</li>
+</ul>
+</div>
+</div>

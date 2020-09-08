@@ -6,12 +6,10 @@ The goal of these content guidelines is to help us to:
 - **Empower our team** to make easier for anyone to write clear, effective, and useful content.
 - **Drive positive change** in language standards to create compassionate, inclusive, and respectful products.
 
-## The guidelines
-
-- [Voice and tone](./voice_and_tone.md)
-- [Actionable language](./actionable_language.md)
-- [Style & mechanics](./style_and_mechanics.md)
-- [Word list](./word_list.md)
+### [Voice and tone](./voice_and_tone.md)
+### [Actionable language](./actionable_language.md)
+### [Style & mechanics](./style_and_mechanics.md)
+### [Word list](./word_list.md)
 
 ## Effectiveness over correctness
 
