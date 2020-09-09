@@ -4,6 +4,13 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 ## Medium-term goals
 
+### Create Sourcegraph demo instance
+
+- **Problem:** Customer engineering needs to demo Sourcegraph to customers. Many things can be demoed on Sourcegraph.com, but some things can't. For those things, CE has been using our dogfood instance sourcegraph.sgdev.org. Engineers need to use our dogfood instance for testing, which either puts demos at risk, or delays testing when demos happen.
+- **Plan:** Create demo.sourcegraph.com that CE uses for demos. This can be a small instance with a limited number of repos that is specifically designed for demo paths. sourcegraph.sgdev.org will continue to be our large scale dogfood instance for engineering testing.
+- **Owners:** TBD
+- **Status:** Not started
+
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single command
 
 Creating a new release for our deployments is currently a semi-automated process, which requires several manual steps and synchronizing our versioned artifacts (Sourcegraph, Kubernetes manifests, docker-compose manifests, etc). We want to enable any engineer to perform a release as often as needed, to enable this we want to make releasing Sourcegraph a simple, automated process.
