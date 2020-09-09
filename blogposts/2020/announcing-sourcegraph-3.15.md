@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.15
 heroImage: /blog/3.15-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.15: Campaigns beta available, GitHub repository permissions, experimental AND/OR operators, and improved observability"
 ---
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.

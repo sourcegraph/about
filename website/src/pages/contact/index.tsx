@@ -5,15 +5,28 @@ import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import MapMarkerIcon from 'mdi-react/MapMarkerIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 
+const title = 'Sourcegraph - Contact Sourcegraph'
+const desc = 'Contact a real human being on our team.'
+
 export default ((props: any) => (
     <Layout location={props.location}>
+        <Helmet>
+            <title>{title}</title>
+            <meta name="twitter:title" content={title} />
+            <meta property="og:title" content={title} />
+            <meta name="twitter:description" content={desc} />
+            <meta property="og:description" content={desc} />
+            <meta name="description" content={desc} />
+            <link rel="icon" type="image/png" href="/favicon.png" />
+        </Helmet>
         <ContentPage
-            title="Contact Sourcegraph"
-            description="Contact a real human being on our team."
+            title={title}
+            description={desc}
             className="text-dark"
             titleClassName="display-2 font-weight-bold"
         >

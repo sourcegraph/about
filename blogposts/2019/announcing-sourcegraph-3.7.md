@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.7
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.7: Improved performance, efficiency, accuracy, and reliability'
 ---
  
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.

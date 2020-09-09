@@ -52,7 +52,7 @@ Sourcegraph 3.4 fixes a problem where the browser extension didn't work if you u
 
 ## Code host sync improvements for AWS CodeCommit and Gitolite
 
-Sourcegraph 3.3 saw the introduction of [config-based repository selection](https://about.sourcegraph.com/blog/sourcegraph-3.3#config-based-repository-selection) (for [GitHub](https://docs.sourcegraph.com/admin/external_service/github), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server)). Now, Sourcegraph 3.4 brings the same model to [AWS CodeCommit](al_service/aws_codecommit), and [Gitolite](https://docs.sourcegraph.com/admin/external_service/gitolite).
+Sourcegraph 3.3 saw the introduction of [config-based repository selection](https://about.sourcegraph.com/blog/sourcegraph-3.3#config-based-repository-selection) (for [GitHub](https://docs.sourcegraph.com/admin/external_service/github), [GitLab](https://docs.sourcegraph.com/admin/external_service/gitlab) and [Bitbucket Server](https://docs.sourcegraph.com/admin/external_service/bitbucket_server)). Now, Sourcegraph 3.4 brings the same model to [AWS CodeCommit](https://docs.sourcegraph.com/integration/aws_codecommit), and [Gitolite](https://docs.sourcegraph.com/admin/external_service/gitolite).
 
 As a result, AWS CodeCommit and Gitolite get a new `exclude` field, plus AWS CodeCommit now supports the `gitCredentials` option for using a static username and password tied to an IAM user.
 

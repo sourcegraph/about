@@ -12,19 +12,17 @@ published: true
 
 We are building [the best code search and browsing tool for your team](/) to help you write, review, and ship code better. Our mission is to [bring the future sooner](/company/strategy) by bringing the best tools to developers everywhere.
 
-Our announcement this month that [Sourcegraph is now open source](/blog/sourcegraph-is-now-open source/) is one way we will get there even faster.
+Our announcement this month that [Sourcegraph is now open source](/community/faq) is one way we will get there even faster.
 
 Here’s new, what’s changed, and what’s fixed in Sourcegraph 2.12.
 
-- [Build and publish your own Sourcegraph extensions](/blog/extension-authoring) (like the [Codecov Sourcegraph extension](https://twitter.com/srcgraph/status/1038200208138502144))
+- [Build and publish your own Sourcegraph extensions](https://docs.sourcegraph.com/extensions/authoring) (like the [Codecov Sourcegraph extension](https://twitter.com/srcgraph/status/1038200208138502144))
 
-- [Sourcegraph for GitLab](/blog/sourcegraph-for-gitlab)
+- [Sourcegraph for GitLab](https://docs.sourcegraph.com/integration/gitlab)
 
-- [Discuss code and docs in repositories](/blog/discuss-code-and-docs-in-repositories)
+- [Discussions code and docs in repositories (*deprecated 3.16*)](https://github.com/sourcegraph/sourcegraph/issues/9649)
 
-- [Product subscriptions, self-service checkout, and easy upgrades to Enterprise](/blog/product-subscriptions-and-license-keys)
-
-- [New product packaging and pricing](/blog/pricing-and-package-changes)
+- [Product subscriptions, self-service checkout, and easy upgrades to Enterprise](/pricing)
 
 Ready to install or upgrade? [Get Sourcegraph 2.12.](https://docs.sourcegraph.com/#quickstart)
 

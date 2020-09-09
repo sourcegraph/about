@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.5
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.5: Powerful new search filters, improved configuration, and Bitbucket Server repository permissions'
 ---
 
 <p class="text-center">

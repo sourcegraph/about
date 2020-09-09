@@ -9,6 +9,7 @@ tags: [
 slug: universal-code-search-github
 heroImage: /external-logos/github-logo.svg
 published: true
+description: 'Universal Code Search for GitHub'
 ---
 
 Sourcegraph [Universal Code Search](/universal-code-search) enables developers to explore and better understand all code, faster, with contextual code intelligence.
