@@ -45,10 +45,10 @@ The short-term goal and primary focus of the team is to *deliver campaigns to al
 
 1. Someone on the Campaigns team makes one meaningful change to at least two repositories.
 1. A Sourcegraph engineer (not on this team) makes one meaningful change to at least two repositories.
-1. Reach out to one customer, summarizing the changes in the new Campaigns workflow, to give them a heads-up.
-   - Hypothesis: they will reply within 3 days
-   - Hypothesis: they will engage within 5 days
-1. After we hear from that customer, we reach out to two other customers, as in previous step.
+1. ~~Reach out to one customer, summarizing the changes in the new Campaigns workflow, to give them a heads-up.~~ **Done!**
+1. ~~After we hear from that customer, we reach out to two other customers, as in previous step.~~ **Done!**
+   - We are still waiting for feedback from these customers.
+1. Work with Design to validate what we have with user testing.
 1. After responding to feedback from at least 3 customers, we declare the state of Campaigns to be Good and Stable.
 1. Reach out to a small set of customers using Campaigns.
    - Hypothesis: each one will reply within 3 days
@@ -81,6 +81,12 @@ For each iteration (currently one month long), we follow this process:
 
 * To avoid siloing of knowledge and to keep teammates happy, we make sure that everyone gets a chance to work in different areas of the codebase. In particular, we don't want tasks in area X to always default to person P.
 * If a process isn't serving us, we are quick to shut it down.
+
+## Team Communication
+
+Our team has two Slack channels, one public (#campaigns-chat) and one private (#campaigns-team). _Our default is to use the public channel._
+
+The private channel is for communications that would be of no interest to someone not on the team. Things like (re-)scheduling of team meetings, vacation scheduling, reminders about tasks that need completing, etc. Keeping these out of the public channel raises the signal-to-noise ratio for folks interested in Campaigns, but not interested in who will be 10 minutes late to our sync meeting today due to the fact that their cat knocked over a jar of pickles and now there's glass everywhere and everything smells like vinegar and now you wish you hadn't read this sentence to the end.
 
 ## Members
 

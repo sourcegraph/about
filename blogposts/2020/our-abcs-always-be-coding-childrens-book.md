@@ -16,7 +16,7 @@ With many family homes now being an office (and perhaps a school as well), we wa
 We love what we’ve come up with and hope you will too—a new digital children’s book titled "[Our ABCs: Always Be Coding](https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf)”—for all children that wonder what their techie parents do all day, night, and some weekends too!
 
 <div class="text-center">
-    <h2 class="h5 pb-3">Our ABCS: Always Be Coding</h2>
+    <h2 class="h5 pb-3">Our ABCs: Always Be Coding</h2>
     <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download" class="d-block" id="abc-dlbook" target="new">
         <img src="/blog/our-abcs-hero.png" class="my-1"/>
     </a>
