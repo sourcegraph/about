@@ -62,6 +62,37 @@ For any members of a hiring team, please see [this folder](https://drive.google.
 
 See [interview process](interview_process.md).
 
+## Stages in our application tracking system
+
+| Stage name  |  Why a candidate is in this stage |
+|---|---|
+|  New lead |  This is the first stage for a sourced candidate. | 
+|  Reached out | When we have contacted a sourced candidate.  | 
+|  New applicant | This is the first stage for a candidate that applied to the role directly or referred to the role. | 
+|  Application review |  Candidates that the hiring manager should review and decide on next steps.  | 
+|  Recruiter screen | Candidates that the recruiter has scheduled to screen. | 
+|  Initial screen |  First call with the hiring team. | 
+|  Assignment |  Candidates that we have scheduled to complete an assignment, or waiting for a decision after they have completed the assignment.  | 
+|  Interview |  Candidates that are in rounds of interviews after the “initial screen” and “assignment” stages.| 
+|  Debrief |  Candidates that have completed the “interview stage” and interview panel need to discuss whether we should extend an offer to the candidate. | 
+|  Reference check |  Candidates that we have decided to make an offer to. | 
+|  Offer |  Candidates that we are preparing an offer, or have extended an offer to. | 
+|  Offer accepted |  Candidates that have accepted our offer.| 
+|  Hired | Candidate has started at the company.| 
+
+#### When should I move a candidate to the next stage? 
+
+Candidates should be moved to the next stage once you have decided the candidate has passed the round they are currently in. 
+
+Examples:
+   - A candidate is in the “new applicant” stage. You have reviewed their profile and want to conduct an initial screen. You should move the candidate to the “initial screen stage” at this time. Do not wait until the initial screen is scheduled to update the candidate’s stage. 
+
+   - A debrief has finished and we decided to extend an offer. Move the candidate from the “debrief” stage to the “offer” stage. Do not wait until the offer is extended to update the candidate’s stage. 
+
+#### Importance of having candidate in correct stage
+
+Candidate stages and when they are moved into those stages are tracked in our application tracking system. This data is used our hiring pipeline (examples: funnel reports and number offers we made in a given period of time).
+
 ## Sharing interview feedback
 
 We don't share specific reasons or feedback if we [decide](#decision-making-process) not to move forward in our hiring process with a candidate.
