@@ -5,6 +5,7 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
 ## Manager checklist
 
 - Create onboarding Google doc and copy in this page to customize week 2-4 tasks and have a personal checklist for the new teammate.
+- Update onboarding doc Week 2-4 with initial projects.
 - Grant access to necessary services.
   - [Sourcegraph organization on GitHub](https://github.com/orgs/sourcegraph/people)
   - Invite to GitHub teams, including [@sourcegraph/everyone](https://github.com/orgs/sourcegraph/teams/everyone)
