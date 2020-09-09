@@ -1,4 +1,20 @@
-<span class="timestamp-wrapper"><span class="timestamp">[2020-09-09 Wed 09:24]</span></span>
+[2020-09-09 Wed 11:30]
+
+The queries below sound good. We will investigate the data and create groups for each kind of query. Then we will regularly run the queries and record response times. Those response times will guide our work and show improvements.
+
+Tentative plan for Stefan and Keegan:
+
+- Keegan and Stefan will work very closely together.
+- Keegan finishes up Streaming work. Stefan may also help.
+- Stefan will create a service which measures search performance for our target queries (prometheus + raw data of performance persisted).
+- We will investigate our search data to create target queries we will measure soon.
+- We will use this document as a living document + log of our work on this project. It will both communicate high level goals/progress as well as contain details over time. This is an experiment.
+
+Next:
+
+- Infrastructure/tools which allow us to easily experiment with zoekt and measure performance (a canary like system which also receives production traffic). We want this as early as possible since it will be so useful to experiments we try (there are lots of ideas we could tackle).
+
+[2020-09-09 Wed 09:24]
 
 First thing to accomplish is establishing a baseline of performance we want to monitor and improve. I think picking a small number of queries which we regularly run against sourcegraph.com and record the time it takes. We want to measure things that are important, here is a list of ideas to seed the discussion.
 
@@ -21,3 +37,4 @@ Some links to discussions around zoekt performance:
 -   [The first notes on search being a product in Sourcegraph · Cloud · Sourcegraph](https://github.com/orgs/sourcegraph/teams/cloud/discussions/2)
 -   sourcegraph.com search performance regularly poor [#9359](https://github.com/sourcegraph/sourcegraph/issues/9359)
 -   searching for rare strings with count:x qualifier in large installation (xxx k repos) times out [#11395](https://github.com/sourcegraph/sourcegraph/issues/11395)
+-   RFC 30: Zoekt Horizontal Scaling [RFC 30](https://docs.google.com/document/d/18w8T_KzYxQye8wg1g01QpMOX4_ERTtbOxMBRYaOEkmk)
