@@ -1,4 +1,4 @@
-# Word list
+# Terminology guidelines
 
 We use certain words in a special way. This word list defines our terminology to make sure we all use the same words for the same things.
 
