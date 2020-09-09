@@ -32,7 +32,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
     - 45m [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) (VP Engineering)
     - 45m [Loïc Guychard](../../../company/team/index.md#loïc-guychard) (Previous web team eng manager)
 1. Interviews.
-   - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md).
+   - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md). We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
      - Pick two:
        - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
        - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
@@ -47,7 +47,8 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
          - [Loïc Guychard](../../../company/team/index.md#loïc-guychard)
          - [Aida DeWitt](../../../company/team/index.md#aida-dewitt)
          - Can backfill with any [engineering manager](../leadership/index.md#members).
-   - 1h [Technical experience](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md)
+   - 1h [Technical experience](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md). We ask you about your past work and accomplishments.
+
      - Pick at least one (ideally both) of:
        - [Felix Becker](../../../company/team/index.md#felix-becker)
        - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
