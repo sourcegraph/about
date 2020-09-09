@@ -49,7 +49,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
          - [Loïc Guychard](../../../company/team/index.md#loïc-guychard)
          - [Aida DeWitt](../../../company/team/index.md#aida-dewitt)
          - Can backfill with any [engineering manager](../leadership/index.md#members).
-   - 1h Technical experience - We ask you about your past work and accomplishments.
+   - 1h Technical experience - We ask you about your past work and accomplishments. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md).
      - Will idealy interview with both of the following:
        - [Felix Becker](../../../company/team/index.md#felix-becker)
        - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
