@@ -2,7 +2,7 @@
 
 - [**about.sourcegraph.com**](https://about.sourcegraph.com) for information about Sourcegraph (the product and the company)
   - [Careers](https://about.sourcegraph.com/jobs)
-  - [News](httsp://about.sourcegraph.com/news)
+  - [News](https://about.sourcegraph.com/news)
 - [Sourcegraph handbook](../handbook/index.md#company)
 - [All-remote](remote/index.md)
 - [Goals](goals/index.md)
