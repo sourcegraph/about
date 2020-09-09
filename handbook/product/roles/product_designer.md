@@ -52,33 +52,33 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 **Note: (role currently closed to applications)**
 
 1. You apply.
-1. [Intro calls](https://github.com/sourcegraph/interviews/blob/master/product/intro-call.md).
+1. Intro calls. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/intro-call.md).
    - 30 min Recruiter call
    - 30 min [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
-1. 1 hr [Portfolio review](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/portfolio-review.md).
+1. 1 hr Portfolio review: you to present your past work. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/portfolio-review.md).
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
    - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
-1. 2 hrs [Design exercise](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/design-exercise.md): We give you a problem statement and you walk us through your design process in a 2 hour block.
+1. 2 hrs Design exercise: We give you a problem statement and you walk us through your design process in a 2 hour block. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/design-exercise.md)
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
    - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
 1. Interviews
-   - 1 hr [Designing with customers and data](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/customers-and-data.md)
+   - 1 hr Designing with customers and data: The biz ops and customer engineering teams talk with you about how you work with customers to gather feedback. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/customers-and-data.md)
       - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
       - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
-   - 1 hr [Engineering collaboration](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/engineering-collaboration.md)
-      - One engineering manager of:
+   - 1 hr Engineering collaboration: We ask you about how you work and communicate in a team setting, and how you handle tricky situations. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/engineering-collaboration.md)
+      - Will interview with one of the following engineering managers:
          - [Tomás Senart](../../../company/team/index.md#tomás-senart)
          - [Loïc Guychard](../../../company/team/index.md#loïc-guychard)
          - [Aida DeWitt](../../../company/team/index.md#aida-dewitt)
          - Can backfill with any [engineering manager](../../engineering/leadership/index.md#members).
-      - One engineer of:
+      - Will interview with one of the following engineers:
          - [Felix Becker](../../../company/team/index.md#felix-becker)
          - [Erik Seliger](../../../company/team/index.md#erik-seliger)
          - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
          - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
          - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-   - 30m [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
-   - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
+   - 30 min [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
+   - 30 min [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
 1. We make you a job offer.
 1. We check your references during your first week to find out what motivates you and how best to work with you.
 

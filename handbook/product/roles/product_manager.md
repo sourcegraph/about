@@ -51,34 +51,34 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 ## Interview process
 
 1. You [apply here](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296/apply).
-1. [Intro calls](https://github.com/sourcegraph/interviews/blob/master/product/intro-call.md).
+1. Intro calls: We chat with you about Sourcegraph and to find out what you are looking for in your next role. [Internal interviewer documentation](https://github.com/sourcegraph/interviews/blob/master/product/intro-call.md).
    - 30 min recruiter call
    - 30 min [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
-1. ~1-2 hrs async [Writing project](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/rfc-project.md)
+1. ~1-2 hrs async writing project: a writing project to see how you communicate and think about product problems. [Internal interviewer documentation](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/rfc-project.md)
    - Reviewers:
       - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-      - One of:
+      - Plus one of the following:
          - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
          - [María Craig](../../../company/team/index.md#maría-craig-she-her)
    - When the RFC is recieved:
       - Make a copy of the RFC there is a Sourcegraph owned version of it.
       - Set the sharing permissions to "Anyone at Sourcegraph with the link".
       - Add the Google Doc link as a note on the candidate's Lever profile so anyone on the team can easily find it.
-1. 1 hr [Product interview](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/product.md): We review your writing project and dive deep on how you work as a product manager.
-   - Christina
-   - One of:
+1. 1 hr product interview: We review your writing project and dive deep on how you work as a product manager. [Internal interviewer documentation](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/product.md)
+   - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
+   - Plus one of the following:
       - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
       - [María Craig](../../../company/team/index.md#maría-craig-she-her)
 1. HM action: Add a note to the candidate's Lever profile with a short summary of the candidate and possible ownership areas and why that would be a good fit.
 1. Interviews
-   - 1 hr [Working with customers and data](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/customers-and-data.md): The biz ops and customer engineering teams talk with you about how you work with customers to gather feedback.
+   - 1 hr working with customers and data: The biz ops and customer engineering teams talk with you about how you work with customers to gather feedback. [Internal interviewer documentation](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/customers-and-data.md)
       - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
-      - One of:
+      - Plus one of the following:
          - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
          - [Christine Lovett](../../../company/team/index.md#christine-lovett-she-her)
-   - 1 hr [Design and Engineering collaboration](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/design-engineering-collaboration.md): The design and engineering teams talk with you about how you collaborate and work within a team.
+   - 1 hr Design and Engineering collaboration: The design and engineering teams talk with you about how you collaborate and work within a team. [Internal interviewer documentation](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/design-engineering-collaboration.md)
       - The engineering manager for the team this person is most likely to work with. See [engineering managers](../../engineering/leadership/index.md#members) and note from HM on candidate's Lever profile.
-      - One of (Product designer):
+      - Plus one of the following product designers:
          - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
          - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
          - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)

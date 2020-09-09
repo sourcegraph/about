@@ -53,7 +53,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 **Note: Closed to new applications, currently reviewing applicant pool.**
 
 1. You apply.
-1. [Intro calls](https://github.com/sourcegraph/interviews/blob/master/product/intro-call.md).
+1. Intro calls - [internal interviewer documenation](https://github.com/sourcegraph/interviews/blob/master/product/intro-call.md).
    - 30 min recruiter call
    - 30 min [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
 1. 1 hr writing portfolio review: We go over your experience and samples in-depth.
