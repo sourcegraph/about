@@ -29,7 +29,7 @@ Remember:
 Onboarding buddy: TBD
 
 - Complete [general onboarding](../../people-ops/onboarding/index.md#for-all-new-teammates)
-- Review and internalize the [guiding principles](../../engineering/onboarding#guiding-principles) from the engineering onboarding page - these are principles to live by at Sourcegraph!
+- Review and internalize the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the engineering onboarding page - these are principles to live by at Sourcegraph!
 - Write your 30-60-90 day objectives in your 1:1 doc with Christina
 
 ### Get to know the team
@@ -44,7 +44,7 @@ Onboarding buddy: TBD
 
 ### Set up the basics
 
-- [Configure your GitHub notifications.](./github-notifications/index.md)
+- [Configure your GitHub notifications.](../../engineering/github-notifications/index.md)
 - Familiarize yourself with our [team chat](../../communication/team_chat.md) and join team channels on Slack, as well as any other channels you find interesting. [Product team chat documentation](../../communication/team_chat.md#product).
 - Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next person that we hire doesn't run into the same problem).
    - You will need to run Sourcegraph locally to test and validate work that engineering is doing, to provide early feedback, or to review the UX of recently implemented work.
