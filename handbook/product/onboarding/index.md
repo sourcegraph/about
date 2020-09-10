@@ -87,19 +87,20 @@ You'll find we have a strong base to work from, but we are in the early stages o
       - [Data for design](https://drive.google.com/drive/folders/1Xw7t1rIWRTg3cJ1_v-A40FGKCLE9m9Pg?usp=sharing)
       - [Lorem Ipsum](https://www.figma.com/community/plugin/736000994034548392/Lorem-ipsum) - simple text generator
       - [A11y - Color Contrast Checker](https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker) - handy tool to check if your designs meet accessibility standards
-      - [Iconify](https://www.figma.com/community/plugin/735098390272716381/Iconify) - We use the matrial design icons which can be searched and included with this plugin
+      - [Iconify](https://www.figma.com/community/plugin/735098390272716381/Iconify) - We use the material design icons which can be searched and included with this plugin
       - Suggest plugins to help make us more efficent!
    - Install the font SF PRO, which can be found in the [drive type folder](https://drive.google.com/drive/folders/15NibaPYH4F0L_isvKHsYTFpwquv6DnRs)
-   - Review the [component library](https://www.figma.com/file/BkY8Ak997QauG0Iu2EqArv/Sourcegraph-Components?node-id=0%3A1&viewport=4848%2C895%2C0.5811631679534912)
-   - Review the [style guide](https://www.figma.com/file/Y4JDvoFnCmY1JIQIWdiOJh/styleguide__components?node-id=0%3A1&viewport=153%2C791%2C0.0701417475938797) which we are transitioning to the component library
+   - Review the [component library](https://www.figma.com/files/project/14326173/%F0%9F%93%9ADesign-system)
    - Review the [Project Tools](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/Project-Tools?node-id=0%3A1)
-   - Take a moment to add some inspiring design to a Figma styleboard
+   - Take a moment to add some inspiring design to the Figma [styleboards](https://www.figma.com/files/project/10712517/Styleboards)
 - UserTesting.com
    - Get a tour of UserTesting.com from another designer on the team.
    - Review a few [usability studies](https://drive.google.com/drive/folders/1qZEWiKSXIvtF8oEp5jGeUQdFcjd2KtVy?usp=sharing) to get an idea of how you will use the product
    - As you learn the product, create a GitHub issue proposiing a usability study you would like to conduct and tag it with 'UX'
 - Suggest a tool you love to the team in the #design channel on Slack!
-- Storybook houses our React component library. From the root of your local development environment run storybook: `yarn storybook` to see how our designs transformed into React components.
+- Storybook houses our React component library. We use [Chromatic](https://www.chromatic.com/library?appId=5f0f381c0e50750022dc6bf7) to easily access and collaborate on the components. You can access the React components library in two ways: 
+   1. Log in to Chromatic with your GitHub account and open Sourcegraph library
+   1. from the root of your local development environment run storybook: `yarn storybook`.
 - Explore and favorite the [Google Drive design folder](https://drive.google.com/drive/folders/1xBRaw_2Ulccd_2ts0Wcq4Rgs6LuVblLU?usp=sharing)
 - Review the [Potential UX projects document](https://docs.google.com/document/d/1LemO13R3f0Ku88WK8tFr7_Qo4teDA0Bebs8Y2TGkS3U/edit)
    - Use this document to record issues you'd like to work on as you discover them during your onboarding
