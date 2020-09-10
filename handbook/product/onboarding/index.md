@@ -81,7 +81,7 @@ You'll find we have a strong base to work from, but we are in the early stages o
 
 - Set up Figma
    - Download [Figma](https://www.figma.com)
-   - Set nudge to 8px in preferences > nudge amount
+   - (Optional) Set nudge to 8px in preferences > nudge amount
    - Install Figma plugins:
       - [Data lab](https://www.figma.com/community/plugin/740286071386014712/Data-Lab) - populates layers with data. This helps us provide more accurate designs and avoid tedious text generation
       - [Data for design](https://drive.google.com/drive/folders/1Xw7t1rIWRTg3cJ1_v-A40FGKCLE9m9Pg?usp=sharing)
@@ -95,8 +95,8 @@ You'll find we have a strong base to work from, but we are in the early stages o
    - Take a moment to add some inspiring design to the Figma [styleboards](https://www.figma.com/files/project/10712517/Styleboards)
 - UserTesting.com
    - Get a tour of UserTesting.com from another designer on the team.
-   - Review a few [usability studies](https://drive.google.com/drive/folders/1qZEWiKSXIvtF8oEp5jGeUQdFcjd2KtVy?usp=sharing) to get an idea of how you will use the product
-   - As you learn the product, create a GitHub issue proposiing a usability study you would like to conduct and tag it with 'UX'
+   - Review a few [usability studies](https://drive.google.com/drive/folders/1qZEWiKSXIvtF8oEp5jGeUQdFcjd2KtVy?usp=sharing) to get an idea of how you will use the product.
+- As you learn the product, if you come across a quick win for better usability based on general heuritics, create a GitHub issue identifying the problem and proposing a quick solution, and tag it with 'UX'.
 - Suggest a tool you love to the team in the #design channel on Slack!
 - Storybook houses our React component library. We use [Chromatic](https://www.chromatic.com/library?appId=5f0f381c0e50750022dc6bf7) to easily access and collaborate on the components. You can access the React components library in two ways: 
    1. Log in to Chromatic with your GitHub account and open Sourcegraph library
