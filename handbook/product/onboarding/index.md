@@ -26,7 +26,7 @@ Remember:
    - If you see a "request permission" page for some doc or other resource, it is a mistake. Just ask to be granted access to it (and mention it to Noemi so the next person starting is granted access to that system).
 - Unlike at many companies, it is OK (and important) to call out when we did something poorly or when something doesn't go well (e.g., a sales pitch falls flat). That helps us be real and do it better in the future.
 
-Onboarding buddy: TBD
+[Onboarding buddy](https://about.sourcegraph.com/handbook/people-ops/buddy-program): You will be paired up with an “onboarding buddy” in order to become better acquainted with Sourcegraph team and culture. A buddy will be your go-to person for questions (in addition to your manager and the People Ops team).
 
 - Complete [general onboarding](../../people-ops/onboarding/index.md#for-all-new-teammates)
 - Review and internalize the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the engineering onboarding page - these are principles to live by at Sourcegraph!
