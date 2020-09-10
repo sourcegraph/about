@@ -53,17 +53,17 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 **Note: Closed to new applications, currently reviewing applicant pool.**
 
 1. You apply.
-1. Intro calls - [internal interviewer documenation](https://github.com/sourcegraph/interviews/blob/master/product/intro-call.md).
-   - 30 min recruiter call
-   - 30 min [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
-1. 1 hr writing portfolio review: We go over your experience and samples in-depth.
+1. **Intro calls**: We chat with you about Sourcegraph and to find out what you are looking for in your next role.
+   - [30 min] recruiter call
+   - [30 min] [HM intro call](./interviews/hm_intro_call.md) with [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
+1. [1 hr] **Writing portfolio review**: We go over your experience and samples in-depth.
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
    - [Kimberly Hopson](../../../company/team/index.md#kimberly-hopson-she-her)
 1. Interviews
-   - 1 hr collaboration exercise: We simulate a real-life issue with a member of our engineering team to see how you collaborate on writing projects.
+   - [1 hr] **Collaboration exercise**: We simulate a real-life issue with a member of our engineering team to see how you collaborate on writing projects.
       - TBD
-   - 30m [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
-   - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
+   - [30 min] [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
+   - [30 min] [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
 1. We make you a job offer.
 1. We check your references during your first week to find out what motivates you and how best to work with you.
 
