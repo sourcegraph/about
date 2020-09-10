@@ -1,7 +1,10 @@
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 import { ContentPage } from '../components/content/ContentPage'
 import Layout from '../components/Layout'
 import News from '../components/NewsList'
+
+const description = 'The latest Sourcegraph news and press releases.'
 
 export default class NewsPage extends React.Component<any, any> {
     // tslint:disable-next-line: no-any
@@ -21,6 +24,15 @@ export default class NewsPage extends React.Component<any, any> {
                     className="text-dark"
                     titleClassName="display-2 font-weight-bold"
                 >
+                    <Helmet>
+                        <title>Sourcegraph - News</title>
+                        <meta name="twitter:title" content="Sourcegraph - News" />
+                        <meta property="og:title" content="Sourcegraph - News" />
+                        <meta name="twitter:description" content={description} />
+                        <meta property="og:description" content={description} />
+                        <meta name="description" content={description} />
+                        <link rel="icon" type="image/png" href="/favicon.png" />
+                    </Helmet>
                     <div className="news">
                         <section>
                             <div className="container">
