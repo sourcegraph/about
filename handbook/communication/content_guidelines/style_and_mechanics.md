@@ -121,7 +121,17 @@ Use present tense to describe the result of actions.
 
 ## Capitalization
 
-We use different forms of capitalization depending on the context.
+Use _Sentence case_, not _Title Case_, everywhere. This includes:
+
+- [Headings and subheadings](./actionable_language.md#headings-and-subheadings)
+- [UI copy](./actionable_language#sentences)
+- [Buttons](./actionable_language.md#buttons)
+- [Links](./actionable_language#links)
+- [Error messages](./actionable_language.md#error-messages)
+- [Confirmation messages](./actionable_language.md#confirmation-messages)
+- [Success messages](./actionable_language.md#success-messages)
+- [Placeholders](./actionable_language.md#placeholders)
+- [Input labels](./actionable_language.md#)
 
 All-caps should be used sparingly and only for specific purposes (all-caps copy is less accessible and harder to read). Never use all-caps within a sentence.
 
@@ -907,3 +917,89 @@ In most languages, idioms are commonly-known phrases packed with meaning. Howeve
 </ul>
 </div>
 </div>
+
+## Instructions, references, and citations
+
+Use bold when referring to buttons in documentation.
+
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Click <strong>Add user</strong>.</li>
+</ul>
+</div>
+</div>
+
+In documentation, use bold and a symbol, such as a bracket (`>`), to display menu option selections or sequences of user interface clicks.
+
+<div class="usage">
+<div class="item yes">
+<h5>Example</h5>
+<ul>
+<li><strong>File > Print</strong> indicates that a user selects the Print option from the File menu</li>
+</ul>
+</div>
+</div>
+
+Never highlight a sentence in boldface font.
+
+Never directly reference the item (button, menu), just reference the label.
+
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Click <strong>Add user</strong>.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Click the <strong>Add user</strong> button.</li>
+</ul>
+</div>
+</div>
+
+Match the actual case of the UI text in other products even if it violates our style guide.
+
+<div class="usage">
+<div class="item yes">
+<h5>Example</h5>
+<ul>
+<li>In the <strong>Single Sign On Url</strong> field, ...</li>
+</ul>
+</div>
+</div>
+
+Refer to and cite other documents by quoting and linking their title. The quotation marks are not linked, and the period goes outside the quotes.
+
+<div class="usage">
+<div class="item yes">
+<h5>Example</h5>
+<ul>
+<li>For more information, see “<a href="#_" aria-disabled="true">Monitoring and tracing</a>”.</li>
+</ul>
+</div>
+</div>
+
+### Using examples
+
+Don’t use examples to compensate for poor documentation. Avoid “cutesy” examples.
+
+For consistency, all examples should use the following names (as appropriate).
+
+- **People:** Alice, Bob, Carol, David, Elizabeth (alphabetical first names)
+- **Usernames:** `alice`, `bob`
+- **Hostnames:** example.com and subdomains of example.com (avoid using real names such as `mycompany.com`)
+- **Email addresses:** alice@example.com, bob@example.com
+- **URLs:** https://sourcegraph.example.com (assume HTTPS)
+- **Organizations:** ABC Organization (`abc-org`)
+
+### Technical writing
+
+Treat all supported platforms equally. For example, don’t give instructions for Chrome or GitHub in a way that implies they are the default.
+
+Wherever possible, link to a 3rd-party tool’s existing documentation over explaining it in our own documentation, because our explanation can easily become outdated.
+
+Prefer the `https` URL scheme (`https://example.com` not `http://example.com`). The only exception is if the site actually doesn’t support HTTPS.

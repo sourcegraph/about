@@ -9,7 +9,7 @@ The goal of these content guidelines is to help us to:
 ### [Voice and tone](./voice_and_tone.md)
 ### [Actionable language](./actionable_language.md)
 ### [Style & mechanics](./style_and_mechanics.md)
-### [Word list](./word_list.md)
+### [Terminology guidelines](./terminology_guidelines.md)
 
 ## Effectiveness over correctness
 
