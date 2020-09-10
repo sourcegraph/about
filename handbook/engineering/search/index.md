@@ -50,6 +50,7 @@ Our current focus is documented in the [tracking issue for the current milestone
 - **Improve syntax for existing filters like `repohasfile`**
   - **Problem:** Creating a custom filter name for every permutation of search use does not scale (existing filter examples: `repohasfile`, `hascommitafter`).
   - **Outcomes:** We have an expressive syntax that scales and effectively leverages existing filters to achieve searches that previously would have required a custom/new filter.
+  - **Tentative Plan:** Implement a query language extension to express relations (i.e., rules) on code, files, repositories, and commits
   - **Owner:** Rijnard/Stefan
   - **Status:** Not started
 - **Revision search**
@@ -69,10 +70,10 @@ Our current focus is documented in the [tracking issue for the current milestone
           - **Plan:** Enterprise homepage
           - **Owner:** Farhan, Juliana
           - **Status:** In progress
-    - **Outcomes:**
-      - New users introduced to Sourcegraph are able to quickly run searches that show them the value of Sourcegraph.
-      - Users can run searches over code they care about more quickly.
-      - Sourcegraph surfaces code and searches users care about.
+  - **Outcomes:**
+     - New users introduced to Sourcegraph are able to quickly run searches that show them the value of Sourcegraph.
+     - Users can run searches over code they care about more quickly.
+     - Sourcegraph surfaces code and searches users care about.
 
 ### Shareable
 
