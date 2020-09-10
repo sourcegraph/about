@@ -55,7 +55,7 @@ Always title case our name. Don’t abbreviate or add a space to our name.
 
 Only use _we_ and _our_ (as in “our GitHub integration”) in informal documents. In documentation or marketing material, depending on the context, just avoid it, or use “the” or “Sourcegraph”. 
 
-## Specific term usage
+## Term usage
 
 | Use this       | Not this  | Why?        |
 |-----------------|------------------|--------------|

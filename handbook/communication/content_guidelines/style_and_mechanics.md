@@ -10,30 +10,7 @@ Use the most popular US English spelling and phrasing.
 
 ## Abbreviations & acronyms
 
-Avoid abbreviations and acronyms when possible.
-
-<div class="usage">
-<div class="item yes">
-<h5>Yes</h5>
-<ul>
-<li>for example</li>
-</ul>
-</div>
-<div class="item no">
-<h5>No</h5>
-<ul>
-<li>e.g.</li>
-</ul>
-</div>
-</div>
-
-**Further reading:**
-
-- "[Acronyms Seriously Suck](https://gist.github.com/klaaspieter/12cd68f54bb71a3940eae5cdd4ea1764)" from Elon Musk.
-
-### Latinisms
-
-Avoid using Latinisms. Use complete English words for clarity.
+Avoid abbreviations, acronyms, and latinisms when possible. Use complete English words for clarity.
 
 <div class="usage">
 <div class="item yes">
@@ -55,6 +32,10 @@ Avoid using Latinisms. Use complete English words for clarity.
 </ul>
 </div>
 </div>
+
+**Further reading:**
+
+- "[Acronyms Seriously Suck](https://gist.github.com/klaaspieter/12cd68f54bb71a3940eae5cdd4ea1764)" from Elon Musk.
 
 ## Adverbs and adjectives
 
