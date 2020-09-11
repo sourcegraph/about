@@ -23,13 +23,13 @@ Remember:
 
 - Sourcegraph is an [open company](../../../company/open_source_open_company.md). Everything here at Sourcegraph is public unless there is a very good reason for it to be private.
    - Good reasons for things to be private: sensitive customer information, sensitive personal information
-   - If you see a "request permission" page for some doc or other resource, it is a mistake. Just ask to be granted access to it (and mention it to Noemi so the next person starting is granted access to that system).
+   - If you see a "request permission" page for some doc or other resource, it is a mistake. Just ask to be granted access to it (and make a PR to update the handbook so the next person starting is granted access to that system).
 - Unlike at many companies, it is OK (and important) to call out when we did something poorly or when something doesn't go well (e.g., a sales pitch falls flat). That helps us be real and do it better in the future.
 
-[Onboarding buddy](https://about.sourcegraph.com/handbook/people-ops/buddy-program): You will be paired up with an “onboarding buddy” in order to become better acquainted with Sourcegraph team and culture. A buddy will be your go-to person for questions (in addition to your manager and the People Ops team).
+**[Onboarding buddy](https://about.sourcegraph.com/handbook/people-ops/buddy-program)**: You will be paired up with an “onboarding buddy” in order to become better acquainted with Sourcegraph team and culture. A buddy will be your go-to person for questions (in addition to your manager and the People Ops team).
 
 - Complete [general onboarding](../../people-ops/onboarding/index.md#for-all-new-teammates)
-- Review and internalize the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the engineering onboarding page - these are principles to live by at Sourcegraph!
+   - Keep the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
 - Write your 30-60-90 day objectives in your 1:1 doc with Christina
 
 ### Get to know the team
