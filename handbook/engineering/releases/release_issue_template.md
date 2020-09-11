@@ -94,7 +94,7 @@ Cut a new release candidate daily if necessary:
         ```
         VERSION='$MAJOR.$MINOR' bash -c 'git fetch origin && git checkout origin/main && git branch $VERSION && git checkout $VERSION && git push -u origin $VERSION'
         ```
-    - [ ] Wait for Renovate to open a PR named ["Update Sourcegraph Docker release images"](https://github.com/sourcegraph/deploy-sourcegraph/pulls?q=is%3Apr+in%3Atitle+%22Update+Sourcegraph+Docker+images%22+is%3Aopen+). Click "edit" on the pull request, and change the `base` branch to the release branch you just cut. Merge the pull request after doing so.
+    - [ ] Trigger an upgrade using the [Update tags workflow](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Update+tags%22) - set `version` to a semver contraint that will apply the version you want (e.g. `~$MAJOR.$MINOR`) and set the branch to the branch you want to upgrade (i.e. `$MAJOR.$MINOR`). Merge the pull request that gets created ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/863)).
     - [ ] Tag the `v$MAJOR.$MINOR.0` release at this commit.
         ```
         VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'

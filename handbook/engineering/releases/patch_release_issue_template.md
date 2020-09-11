@@ -54,7 +54,7 @@ In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
     git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
     git push $MAJOR.$MINOR
     ```
-- [ ] Wait for Renovate to open a PR named ["Update Sourcegraph Docker release images"](https://github.com/sourcegraph/deploy-sourcegraph/pulls?q=is%3Apr+in%3Atitle+%22Update+Sourcegraph+Docker+images%22+is%3Aopen+). Click "edit" on the pull request, and change the `base` branch to the relevant release branch. Merge the pull request after doing so.
+- [ ] Trigger an upgrade using the [Update tags workflow](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Update+tags%22) - set `version` to a semver contraint that will apply the version you want (e.g. `~$MAJOR.$MINOR`) and set the branch to the branch you want to upgrade (i.e. `$MAJOR.$MINOR`). Merge the pull request that gets created ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/863)).
 - [ ] Push the release tag on the commit:
     ```
     git tag v$MAJOR.$MINOR.$PATCH
