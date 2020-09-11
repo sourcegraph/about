@@ -14,7 +14,7 @@
 
 Joining a new company can be overwhelming — there's a lot to learn! As you navigate your first few weeks at Sourcegraph, we want you to know that everyone on the team is here to help and will gladly drop anything to answer any question you have.
 
-Every time you're curious or confused about something — just ask! When you do so, use [public discussion channels](../communication/team_chat.md#avoid_private_messages) as much as possible.
+Every time you're curious or confused about something — just ask! When you do so, use [public discussion channels](../../communication/team_chat.md#avoid_private_messages) as much as possible.
 
 ### Think and act like an owner
 
