@@ -11,11 +11,15 @@ Creating a new release for our deployments is currently a semi-automated process
 - **Owner**: Distribution Team
 - **Status**: In Progress
 - **Outcomes**:
-  - Releases can be triggered by a single manual step
-  - All supported deployment types are released at the same time with the same command
-  - Support documentation enables any engineer to perform a release with confidence
+  - Releases can be triggered by a single manual step.
+  - All supported deployment types are released at the same time with the same command.
+  - Support documentation enables any engineer to perform a release with confidence.
 - **Milestones**:
-  - Increase e2e test frequency
+  - ~~Enable running e2e test on an environment matching its test (docker-compose in a VM).~~
+  - Enable continuos e2e tests on `main`.
+  - Ensure relevant engineers are notified of broken builds.
+  - Releases can be done in a single day.
+  - Releases can be done automatically with a single `/` command via Slack.
 
 ### Upgrades between releases are easy to perform
 
@@ -25,13 +29,13 @@ We will start by looking at our Kubernetes deployment and working on an easier u
 - **Owner**: Distribution Team
 - **Status**: In Progress
 - **Outcomes**:
-  - Upgrades to deployments do not require resolving diff conflicts from upstream
-  - Upgrading a deployment configuration requires less than 2 hours of work
+  - Upgrades to deployments do not require resolving diff conflicts from upstream.
+  - Upgrading a deployment configuration requires less than 2 hours of work.
 - **Milestones**:
   - ~~Research and evaluate possible tools.~~
-    - ~~Cue~~
-    - ~~Bash/JQ~~
-    - ~~Dhall~~
+    - ~~Cue.~~
+    - ~~Bash/JQ.~~
+    - ~~Dhall.~~
   - Design Dhall Architecture.
   - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback.
   - Use Dhall to generate public Kubernetes manifests.
@@ -48,8 +52,8 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 - **Owner**: TBD
 - **Status**: Not started
 - **Outcomes**:
-  - We can categorize and capture the amount of effort spent on different incident types
-  - We can provide a straightforward set of tools to collect initial debugging and deployment information
+  - We can categorize and capture the amount of effort spent on different incident types.
+  - We can provide a straightforward set of tools to collect initial debugging and deployment information.
   - TBD
 - **Milestones**: TBD
 
@@ -58,16 +62,16 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 - **Owner**: TBD
 - **Status**: On-hold
 - **Outcomes**:
-  - We have a clear guideline on when to split resources to new projects
-  - We report the cost of each project
-  - We can set spending limits for dynamic environments
+  - We have a clear guideline on when to split resources to new projects.
+  - We report the cost of each project.
+  - We can set spending limits for dynamic environments.
 - **Milestones**:
-  - ~~Create initial GCP structure~~
-  - ~~Move non-production projects to folders~~
-  - Move non-production deployments to separate projects
-  - Move CI to a new GCP project
-  - Create code to bootstrap new projects
-  - Document project and folder usage guidelines
+  - ~~Create initial GCP structure.~~
+  - ~~Move non-production projects to folders.~~
+  - Move non-production deployments to separate projects.
+  - Move CI to a new GCP project.
+  - Create code to bootstrap new projects.
+  - Document project and folder usage guidelines.
 
 ## Short-term goals
 
