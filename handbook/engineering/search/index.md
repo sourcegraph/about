@@ -89,8 +89,6 @@ Our current focus is documented in the [tracking issue for the current milestone
   - **Owner:** TBD
   - **Status:** Not started
 
-[WIP longer term goals](https://docs.google.com/document/d/1ibKiSTSxrRiY_3f3Rx3kGzLgTMO5Uz2XzTsdEZuh4UU/edit)
-
 ## Contact
 
 - #search channel or @searchers on Slack.
