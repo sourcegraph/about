@@ -2,18 +2,27 @@
 
 Welcome to Sourcegraph! As a member of the product team, it is your job to be the voice of the user, and to balance that with the goals of the company. For all [roles on the product team](../roles/index.md), you will have a very similar first week. Weeks 2-4 will vary depending on your role and areas of focus, but the high level goals for each week will be the same. 
 
+**[Onboarding buddy](../../people-ops/buddy-program.md)**: You will be paired up with an “onboarding buddy” in order to become better acquainted with Sourcegraph team and culture. A buddy will be your go-to person for questions (in addition to your manager and the People Ops team).
+
 ## Manager checklist
 
 - Create onboarding Google doc and copy in this page to customize week 2-4 tasks and have a personal checklist for the new teammate.
 - Update onboarding doc Week 2-4 with initial projects.
 - Grant access to necessary services.
-  - [Sourcegraph organization on GitHub](https://github.com/orgs/sourcegraph/people)
-  - Invite to GitHub teams, including [@sourcegraph/everyone](https://github.com/orgs/sourcegraph/teams/everyone)
-  - Figma
-  - Productboard
-  - UserTesting.com
+   - [Sourcegraph organization on GitHub](https://github.com/orgs/sourcegraph/people)
+   - Invite to GitHub teams, including [@sourcegraph/everyone](https://github.com/orgs/sourcegraph/teams/everyone)
+   - Figma
+   - Productboard
+   - UserTesting.com
 - Schedule a recurring [1-1](../../leadership/1-1.md).
 - Schedule daily check-ins for the first week at Sourcegraph to keep up with onboarding and to create space for answering any questions that might come up.
+- Create a 1-1 doc and add initial discussion items
+   - Onboarding doc - YAYYYYYYY WELCOME!!!!! 🎉
+      - Your onboarding doc is to help outline the projects and tasks you have over your first 30 days.
+      - This 1:1 doc will be where we take notes on discussions, set goals, and make sure you’re on track.
+   - Weekly 1:1 - do you have a preference of time/day of the week?
+   - 1-1 meetings - what format do you like? What is most helpful to you for these meetings?
+   - How do you like to receive feedback?
 
 ## Week 1 - Getting started
 
@@ -26,7 +35,7 @@ Remember:
    - If you see a "request permission" page for some doc or other resource, it is a mistake. Just ask to be granted access to it (and make a PR to update the handbook so the next person starting is granted access to that system).
 - Unlike at many companies, it is OK (and important) to call out when we did something poorly or when something doesn't go well (e.g., a sales pitch falls flat). That helps us be real and do it better in the future.
 
-**[Onboarding buddy](https://about.sourcegraph.com/handbook/people-ops/buddy-program)**: You will be paired up with an “onboarding buddy” in order to become better acquainted with Sourcegraph team and culture. A buddy will be your go-to person for questions (in addition to your manager and the People Ops team).
+### Day 1
 
 - Complete [general onboarding](../../people-ops/onboarding/index.md#for-all-new-teammates)
    - Keep the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
