@@ -2,11 +2,10 @@
 title: "What happens when a successful product gets its first design team..."
 author: Alicja Suska
 authorUrl: https://alicjasuska.com
-publishDate:
+publishDate: 2020-09-11T18:00-07:00
 tags: [blog]
-slug: what-happens-when-a-successful-product-gets-its-first-design-team.md
-heroImage: TBD
-published: false
+slug: what-happens-when-a-successful-product-gets-its-first-design-team
+published: true
 ---
 
 We are happy to announce that the Sourcegraph design team has grown from 0 to 3! 🎉
@@ -15,17 +14,14 @@ The early stages of a new team are full of changes and unexpected challenges. I 
 
 ## First 90 days
 
-From the very beginning, we knew that to set our team up for success, we need to carefully plan the next 3 months. There was a lot to focus on: processes, design debt, new initiatives, etc. We had to choose which areas to take care of first and where we can have the biggest impact. \
- \
+From the very beginning, we knew that to set our team up for success, we need to carefully plan the next 3 months. There was a lot to focus on: processes, design debt, new initiatives, etc. We had to choose which areas to take care of first and where we can have the biggest impact.
+
 Here are our key initiatives:
 
-
-
-*   Validate and document the product-design-engineering process
-*   Update and develop our design system
-*   Improve the overall consistency of our product
-*   Increase the visibility and discoverability of core features
-
+- Validate and document the product-design-engineering process
+- Update and develop our design system
+- Improve the overall consistency of our product
+- Increase the visibility and discoverability of core features
 
 You can visit our [handbook](https://about.sourcegraph.com/handbook/product/goals) to see all these goals documented in more detail.
 
@@ -33,14 +29,11 @@ You can visit our [handbook](https://about.sourcegraph.com/handbook/product/goal
 
 It is also a good time to think about long term efforts. As Sourcegraph was growing really fast, thanks to the constant innovation and lean approach to development, some areas of the product lost their initial design coherence. It is a natural process for startups to generate some design debt over time. Our new design team is planning to focus on improving the consistency and reducing the design debt over the course of the next 6-8 months.
 
-
-
 <div class="no-shadow">
   <a href="https://drive.google.com/file/d/1o-h9LE5WNh2P9sw3v0CVqoMHP_hVltQk/view?usp=sharing">
     <img src="https://drive.google.com/file/d/1o-h9LE5WNh2P9sw3v0CVqoMHP_hVltQk/view?usp=sharing" alt="Design debt illustration">
   </a>
 </div>
-
 
 ## Why is it important?
 
@@ -54,19 +47,15 @@ In the next few paragraphs, I will walk you through the changes that we have int
 
 We started by mapping the current information architecture of Sourcegraph. It gave us the perspective that we needed - a 10,000-feet view of the experience. From here, we could start identifying improvements.
 
-
-
 <div class="no-shadow">
   <a href="...">
     <img src="..." alt="Information Architecture Diagram illustration">
   </a>
 </div>
 
-
 Not all changes should be made within one iteration. It is important to identify the most impactful ones and target elements that are the most visible for the users first. Navigation patterns were a great candidate - they have an impact on all our users and influence the structure of many pages.
 
 We have introduced **new headers** that maintain consistent structure on all the pages. In addition, we have added **breadcrumbs** for better context and easier navigation.
-
 
 <div class="no-shadow">
   <a href="...">
@@ -74,30 +63,25 @@ We have introduced **new headers** that maintain consistent structure on all the
   </a>
 </div>
 
-
 ## Build and start using the component system
 
 Over the course of the last couple of months, we have also realized that, in order to produce the desired outcome at a satisfying pace and scale, we need to improve our design system. We have decided to apply the DRY (Don’t Repeat Yourself) code development principle to all our efforts. We have managed to achieve the following:
 
+### Align our design files with Storybook
 
+Using design components that represent the actual implementation is life-changing for both designers and developers. It reduces inconsistencies, makes communication easier, and the handoff process faster.
 
-*   **Align our design files with Storybook**
-
-Using design components that represent the actual implementation is life-changing for both designers and developers. It reduces inconsistencies, makes communication easier, and the handoff process faster. \
- \
 In the beginning, our Figma library was not consistent with the implementation. Some components were outdated, some were incomplete, some were created as examples for the future. In effect, every design project had to start with manually comparing design files to what is actually built on our platform. It was very ineffective.
 
 In order to change it, we started by listing all the components that needed to be corrected or created. We decided to hire a contractor who helped us manually build out all the missing items in Figma. In general, Storybook was the base for our work. We went back and forth between those two tools to effectively align all the styles and variants.
 
 We have also introduced some improvements to our flow to help us keep the consistency we have achieved so far. We have added the [Figma add-on](https://www.figma.com/resources/extensions-and-apis/storybook-figma-addon/) to our Storybook. This way, both design, and implementation are visible next to each other and are easy to compare.
 
-
 <div class="no-shadow">
   <a href="...">
     <img src="..." alt="Figma design in Storybook">
   </a>
 </div>
-
 
 In addition, we started using [Chromatic](https://www.chromatic.com/). This tool helps us gather feedback about changes to Storybook and makes the review process easier. From now on, a Chromatic PR review is an integral process of approving all Storybook-oriented PRs.
 
@@ -107,7 +91,7 @@ In addition, we started using [Chromatic](https://www.chromatic.com/). This tool
   </a>
 </div>
 
-*   **Make design components more flexible**
+### Make design components more flexible
 
 To work more efficiently, we needed to create reusable components that provide a high level of flexibility. Our effort already started paying off. It takes us less time to build the interfaces and designers have more energy to spend on key activities.
 
@@ -115,23 +99,18 @@ Headers described earlier, are a great example of an editable component we have 
 
 [[Recording](https://drive.google.com/file/d/1ReO11lBBFe81nSUIy5p_7pAW1Ka4-_Ko/view?usp=sharing) showcasing the editable header component]
 
-
 See this design in [Figma](https://www.figma.com/file/iQIlSvEBuVz1jXTGjRVNeE/Header-editable-component-example-Sourcegraph?node-id=0%3A1)
 
-
-
-*   **Define a process of requesting changes to components**
+### Define a process of requesting changes to components
 
 To keep our design system up-to-date we have set up a review and [approval process](https://github.com/sourcegraph/about/pull/1381) for improving and adding the components. First, the designer prepares a proposal with visual examples of Storybook, in-product usage, and suggested change. We perform a Sourcegraph search to identify all the affected areas. After getting approval from other designers and developers, a GitHub issue is being created and changes to our design system can be implemented.
 
 A most recent example of the change that was proposed using this process is an update of our outline buttons and button groups. See the [proposal](https://www.figma.com/file/iQIlSvEBuVz1jXTGjRVNeE/Header-example-article-Alicja?node-id=6%3A65) and the [pull request](https://github.com/sourcegraph/sourcegraph/issues/12982) for more details.
 
-
 <div class="no-shadow">
   <a href="...">Brand new design system illustration">
   </a>
 </div>
-
 
 ## What’s next?
 
