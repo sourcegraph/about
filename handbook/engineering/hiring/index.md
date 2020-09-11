@@ -6,6 +6,6 @@ Most of our process is documented in a private repository, but our goal is to mo
 
 ## Open positions
 
-See our [careers page](../../../company/careers.md) for open positions and more info.
+See our [careers page](../../../company/careers.md#engineering) for open positions and more info.
 
 [Private interview documentation](https://github.com/sourcegraph/interviews/tree/master/engineering/software-engineer).
