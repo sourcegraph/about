@@ -50,7 +50,7 @@ Never assume that a problem is somebody else's to fix!
 - Read Sourcegraph's [information security policy](https://about.sourcegraph.com/security) and acknowledge your acceptance: https://forms.gle/LUK1YtwAMJLhtRPi6.
 - Watch Dan's [Sourcegraph Demo](https://drive.google.com/file/d/1VUZ0rnZQpNgjtGDI0tMC-h-OtL0Czz8H/view)
 
-## Team specific onbaording
+## Team specific onboarding
 
 - [Engineers](../../engineering/onboarding.md)
 - [Customer Engineers](../../ce/onboarding.md)
