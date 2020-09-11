@@ -1,4 +1,4 @@
-# Onboarding
+# People Ops onboarding
 
 - [Teammates(US-based)](../from-graphbook/onboarding_remote_us.md)
 - [Teammates (based outside US)](../from-graphbook/onboarding_remote_non_us.md)
