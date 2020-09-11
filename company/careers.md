@@ -19,7 +19,6 @@ We're hiring! Check out our open positions:
 ### Product
 
 - [Product Manager](../handbook/product/roles/product_manager.md)
-- [Technical Writer](../handbook/product/roles/product_manager.md)
 
 ### Sales
 
