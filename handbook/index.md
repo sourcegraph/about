@@ -4,17 +4,17 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. [How to edit the handbook](https://about.sourcegraph.com/handbook/editing).
 
-## Company
-
+## [Company](../company/index.md)
+- [All-remote](../company/remote/index.md)
 - [Strategy](../company/strategy.md)
-- [Handbook usage](usage.md)
-- [Editing the handbook](editing.md)
-- [Communication](communication/index.md)
-  - [Style guide](communication/style_guide.md)
+- [Goals](../company/goals/index.md)
 - [Team](../company/team/index.md)
   - [Org chart](../company/team/org_chart.md)
-- [Goals](../company/goals/index.md)
 - [CEO](ceo/index.md)
+- [Communication](communication/index.md)
+  - [Style guide](communication/style_guide.md)
+- [Handbook usage](usage.md)
+- [Editing the handbook](editing.md)
 
 ## Handbook sections
 
