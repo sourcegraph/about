@@ -23,7 +23,7 @@ Many things have changed in the last year to make it possible to improve languag
 - There's a new [Swift language server (apple/sourcekit-lsp)](https://github.com/apple/sourcekit-lsp)
 - There's a new [Python language server (Microsoft/python-language-server)](https://github.com/Microsoft/python-language-server)
 - We’ve learned that it’s fairly easy to patch existing language servers (Go, TypeScript, and Python) to support zip archive fetching and WebSockets. This results in a more maintainable and "pure" language server than wrapping a language server with lsp-adapter.
-- We’ve learned that shipping experimental language servers is not an effective way to attract community/contractor help or useful feedback. (We [deactivated experimental language servers](https://about.sourcegraph.com/blog/java-php-experimental-language-servers-temporarily-unavailable).)
+- We’ve learned that shipping experimental language servers is not an effective way to attract community/contractor help or useful feedback. (We [deactivated experimental language servers](https://about.sourcegraph.com/blog/java-php-experimental_language_servers-temporarily-unavailable).)
 
 Based on these learnings, the following principles will guide future improvements:
 

@@ -23,6 +23,10 @@ The Business Operations (BizOps) team is responsible for [translating business g
 
 Each month, [expansion and MAU amounts are calculated](https://docs.google.com/spreadsheets/d/1tRcz3bNOho1TyWvrYSv37RIYcQs7I0i05-5eKwLq8TI/edit#gid=0) and sent as invoices through Xero. 
 
+## Goals
+
+TODO
+
 # Analytics
 
 This page describes Sourcegraph's analytics function, our data sources, and how to use our data tools.
@@ -49,7 +53,8 @@ If you need clarification or are not sure about any of the above, ask a question
 We collect data from the following:
 
 * Google Analytics: Website analytics for Sourcegraph marketing and docs pages (not Sourcegraph.com)
-* HubSpot: Marketing automation and CRM
+* HubSpot: Marketing automation
+* Salesforce: Customer Relationship Management system (CRM)
 * MixMax: Email marketing automation (Apollo is not used in production, but still retains data)
 * ZoomInfo:  Data enrichment of account and contact information
 * Sourcegraph.com Site-admin pages: customer subscriptions and license keys

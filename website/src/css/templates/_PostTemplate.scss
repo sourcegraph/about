@@ -1,0 +1,14 @@
+.post-template {
+    &__post {
+        h1 {
+            font-size: 2rem;
+        }
+        min-height: 60vh;
+
+        &-title {
+            &-link {
+                color: $body-color;
+            }
+        }
+    }
+}

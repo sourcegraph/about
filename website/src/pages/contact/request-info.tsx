@@ -13,6 +13,7 @@ export default class TrialPage extends React.Component<any, any> {
             events: [],
         }
     }
+
     public componentDidMount(): void {
         createHubSpotForm({
             portalId: '2762526',

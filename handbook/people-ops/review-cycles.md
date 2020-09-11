@@ -18,8 +18,8 @@ Review cycles take place in February and August. They begin the first week of ea
 
 ### Peer selection (1 day)
 
-**Managers:** You will be selecting peer reviewers for each of your direct reports via a spreadsheet that People Ops will create. (This is to ensure that all reviewers have a managable review load).
-**People Ops:**: Once all selections have been confirmed, People Ops will enter all peer selections in [Lattice](https://sourcegraph.latticehq.com/) and kick start the review cycle.
+**Managers:** You will be selecting peer reviewers for each of your direct reports via a spreadsheet that People Ops will create. (This is to ensure that all reviewers have a managable review load). \
+**People Ops:** Once all selections have been confirmed, People Ops will enter all peer selections in [Lattice](https://sourcegraph.latticehq.com/) and kick start the review cycle.
 
 ### 360 feedback (4 days)
 
@@ -46,13 +46,13 @@ Once the reviews are complete for each of your direct reports, you’ll be able 
 
 - What has your manager done in the past 6 months that has made you feel valued and supported?
 - What could your manager do differently to better support you and/or the team?
-- Is there anything that you would like to mention directly to this person’s manager?
+- Is there anything that you would like to mention directly to this person’s manager? (optional)
 
 **Peer review**
 
 - What are this person’s strengths?
 - Overall, what could most help this person grow in their career?
-- Is there anything that you would like to mention directly to this person’s manager?
+- Is there anything that you would like to mention directly to this person’s manager? (optional)
 
 **Manager review of direct report**
 

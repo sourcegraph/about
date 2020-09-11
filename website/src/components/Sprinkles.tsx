@@ -6,7 +6,7 @@ const durationTime = 3200
 export default class Sprinkles extends React.Component<any, any> {
     public render(): JSX.Element | null {
         return (
-            <div>
+            <div aria-hidden="true">
                 <Plx
                     className="absolute sprink-1 w4 h4"
                     parallaxData={[

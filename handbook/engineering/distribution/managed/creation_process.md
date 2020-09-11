@@ -40,24 +40,38 @@ Creating a new managed instance involves following the steps below.
 1. In the global user settings, set `"alerts.showPatchUpdates": false`
 1. In the GCP web UI under **Network services** > **Load balancers** > select the load balancer > watch the SSL certificate status. It may take some time for it to become active (~1h41m) / for Google to see the DNS change from Cloudflare. Confirm it is active by following ["Access through the GCP load balancer as a user would"](#access-through-the-gcp-load-balancer-as-a-user-would).
 1. In the site configuration, configure alerting to go to our `#alerts-managed-instances` Slack channel, for example (replace `$COMPANY` with the actual company name, and `$WEBHOOK_URL` with the actual webhook URL from 1password **Managed instances** > `#alerts-managed-instances Slack webhook URL`):
+	```
+		"observability.alerts": [
+			{
+				"level": "critical",
+				"notifier": {
+					"type": "slack",
+					"username": "$COMPANY",
+					"url": "$WEBHOOK_URL"
+				}
+			},
+			{
+				"level": "warning",
+				"notifier": {
+					"type": "slack",
+					"username": "$COMPANY",
+					"url": "$WEBHOOK_URL"
+				}
+			}
+		],
+	```
+1. Contact #ce and ask that they generate / provide the relevant license key for the customer's instance, then set it in the site config.
 
-```
-	"observability.alerts": [
-		{
-			"level": "critical",
-			"notifier": {
-				"type": "slack",
-				"username": "$COMPANY",
-				"url": "$WEBHOOK_URL"
-			}
-		},
-		{
-			"level": "warning",
-			"notifier": {
-				"type": "slack",
-				"username": "$COMPANY",
-				"url": "$WEBHOOK_URL"
-			}
-		}
-	],
-```
+## Giving the customer access
+
+To provide the customer access to the instance:
+
+1. Work with #ce to ask the customer:
+   a. If their instance should be protected by SSO only, or SSO + IP-restricted access. If the latter, what IP addresses / CIDR ranges should be allowed (e.g. the source IPs of their corporate VPN, usually their infrastructure or IT teams can provide this).
+   b. Who should be the recipient of the initial site admin account creation link? This will let them configure the admin password, which they will need to store somewhere securely, and is used for them to set up SSO as well as for them to get access if at any point SSO is not working. They can create more password or SSO-based admin accounts later as desired.
+2. Create and apply the Terraform change that grants their IP/CIDR ranges access to the instance, or makes it public/SSO-only, by following the [operations guide](operations.md).
+3. Work with #ce to provide the initial site admin account creation link to the relevant person (do this securely in a private channel with only that one person).  Confirm that they are able to access the instance and sign in OK.
+
+## Configuring SSO and repositories
+
+Distribution usually hands off to CE at this point, they will schedule a call with the customer (including a distribution member, if needed) to walk the site admin on the customer's side through performing initial setup of the product including adding repos, configuring SSO, and inviting users.

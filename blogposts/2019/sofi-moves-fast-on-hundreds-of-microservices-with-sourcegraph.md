@@ -8,7 +8,7 @@ tags: [
 slug: sofi-moves-fast-on-hundreds-of-microservices-with-sourcegraph
 heroImage: https://about.sourcegraph.com/case-studies/sofi-sourcegraph-case-study.png
 published: true
-description: "With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices."
+description: "Sourcegraph enables SoFi to innovate and move quickly while ensuring production stability for hundreds of microservices."
 ---
 
 <p style="text-align: center">

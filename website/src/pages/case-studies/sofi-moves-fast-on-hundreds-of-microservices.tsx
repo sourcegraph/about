@@ -7,16 +7,16 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'SoFi adopts Sourcegraph Universal Code Search to manage hundreds of microservices',
+            title: 'SoFi manages hundreds of microservices',
             description:
-                'With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
+                'Sourcegraph case study: With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
             image: '/case-studies/sofi-sourcegraph-case-study-og-embed.png',
         }}
-        className="darkBackground navbar-dark"
+        className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="SoFi"
-            title="SoFi adopts Sourcegraph Universal Code Search to manage hundreds of microservices"
+            title="SoFi manages hundreds of microservices"
             logo="/external-logos/sofi-logo-white.png"
             quote={{
                 quote:

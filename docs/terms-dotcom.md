@@ -1,7 +1,6 @@
 ---
 layout: markdown
 title: Terms of Service for Sourcegraph.com
-permalink: terms-dotcom
 ---
 
 Last modified: February 21, 2020
@@ -219,9 +218,9 @@ If you believe that your copyrighted work has been copied in a way that constitu
 The above information must be submitted to the following DMCA Agent:
 
 ```
-Attn: 	    DMCA Notice
+Attn:		DMCA Notice
             Sourcegraph Inc.
-Address:    981 Mission St, San Francisco, CA 94103  	
+Address:    981 Mission St, San Francisco, CA 94103
 Tel.        (650) 318-3480
 Email:      legal@sourcegraph.com
 ```

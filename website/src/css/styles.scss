@@ -52,6 +52,7 @@ $input-btn-padding-y: 0.55rem;
 
 // Set variables that rely on Bootstrap variables.
 
+$spacer: 1rem;
 $spacers: (
     0: 0,
     1: (
@@ -83,6 +84,10 @@ $display3-size: 2.5rem;
 $display4-size: 1.75rem;
 
 $navbar-nav-link-padding-x: $spacer * 0.75;
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $blue;
+$navbar-dark-color: $light;
+$navbar-dark-hover-color: $blue;
 
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
@@ -104,6 +109,16 @@ $popover-arrow-color: transparent;
 $popover-arrow-outer-color: transparent;
 $popover-max-width: 400px;
 
+$card-spacer-y: 1.25 * $spacer;
+$card-spacer-x: 1.25 * $spacer;
+
+$grid-gutter-width: 2rem;
+
+:root {
+    --body-color: #{$body-color};
+    --border-color: #{$border-color};
+}
+
 @import 'node_modules/bootstrap/scss/root';
 @import 'node_modules/bootstrap/scss/reboot';
 @import 'node_modules/bootstrap/scss/type';
@@ -121,6 +136,7 @@ $popover-max-width: 400px;
 @import 'node_modules/bootstrap/scss/carousel';
 @import 'node_modules/bootstrap/scss/utilities';
 @import 'node_modules/bootstrap/scss/alert';
+@import 'node_modules/bootstrap/scss/badge';
 
 html,
 body,
@@ -183,12 +199,6 @@ img.icon-inline,
     fill: currentColor;
 }
 
-.container-lg {
-    max-width: var(--breakpoint-lg);
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .img-drop-shadow {
     max-width: calc(100% - 10px);
     max-height: 100vh;
@@ -230,10 +240,15 @@ table {
     background-color: #fff;
 }
 
-@import 'circular-font';
+@import 'components/blog/BlogPost';
+@import 'components/blog/LinkPost';
+@import 'components/blog/PodcastPost';
+@import 'components/blog/PostsList';
+@import 'components/blog/ReleasePost';
 @import 'components/content/ContentPage';
 @import 'components/content/ContentSection';
 @import 'components/pricing/index';
+@import 'components/product/CaseStudiesSection';
 @import 'components/product/CustomerLogosSection';
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
@@ -248,9 +263,6 @@ table {
 @import 'components/TestimonialCarousel';
 @import 'pages/404';
 @import 'pages/about';
-@import 'pages/browser';
-@import 'pages/blog';
-@import 'pages/blog-post';
 @import 'pages/customers';
 @import 'pages/_case_studies';
 @import 'pages/_white_papers';
@@ -268,19 +280,11 @@ table {
 @import 'pages/sales';
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
+@import 'templates/PostTemplate';
 @import 'components/PrismTheme';
 
 body {
     background: url('/page-bg.svg') repeat;
-}
-.home,
-.content-page,
-.customers-page,
-.pricing-page,
-.case-study,
-.form-page,
-.blog-post {
-    padding-top: 70px;
 }
 .virtual-br::before {
     content: '\A';
@@ -296,4 +300,19 @@ body {
             rgba(255, 255, 255, 0) 100%
         ),
         linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
+}
+.bg-black {
+    background-color: #000;
+}
+.bg-light-transparent {
+    background-color: transparentize($light-11, 0.3);
+}
+.bg-unset {
+    background-color: unset;
+}
+.font-size-base {
+    font-size: $font-size-base !important;
+}
+.font-family-base {
+    font-family: $font-family-base !important;
 }

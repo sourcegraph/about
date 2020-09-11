@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.1
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.1 released'
 ---
 
 Sourcegraph 3.1 is now out! This release includes stability and documentation improvements, plus an easy query builder for searching your code (with useful query examples). Also, mark your calendars: our new fixed release schedule means you get a new Sourcegraph release on the 20th of each month.

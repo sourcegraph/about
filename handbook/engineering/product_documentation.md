@@ -8,9 +8,22 @@ Whenever a feature is changed, updated, introduced, or deprecated, the pull requ
 
 The developer who made the code change is also [responsible](../../handbook/engineering/roles.md#software-engineer) for writing the initial documentation for new features and updating the documentation for changes to existing features. At the pace Sourcegraph evolves, this is the only way to keep the docs up to date.
 
-It's the [responsibility of the Product Manager](../../handbook/product/roles.md#product-manager) to ensure all features are shipped with documentation (i.e., that nothing slips through), whether is a small or big change.
+It's the [responsibility of the Product Manager](../../handbook/product/roles/product_manager.md) to ensure all features are shipped with documentation (i.e., that nothing slips through), whether is a small or big change.
 
 We use the [monthly release blog post](https://about.sourcegraph.com/blog) as a changelog checklist to ensure everything is documented.
+
+## Local development of documentation only
+
+For local development of documentation, clone the main [sourcegraph repository](https://github.com/sourcegraph/sourcegraph/tree/master/).  The development environment for Sourcegraph, detailed in [Getting started with developing Sourcegraph](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md), is not required.
+
+After saving any changes or updates, documentation can be previewed locally with the follow commands:
+
+```
+cd sourcegraph
+./dev/docsite.sh -config doc/docsite.json serve -http=localhost:5080
+```
+
+Navigate the browser to [https://localhost:5080](https://localhost:5080) to view the documentation.
 
 ## Naming and linking documentation pages
 

@@ -24,6 +24,7 @@ export interface Features {
     customBranding: boolean
     onlineTraining: boolean
     customContractLegalBillingTerms: boolean
+    unlimitedCode: boolean
 }
 
 export interface FeatureInfo {
@@ -107,6 +108,11 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         label: 'Custom contracts/billing',
         description: "Need us to use your organization's legal contracts or purchasing system?",
     },
+    unlimitedCode: {
+        label: 'Unlimited code scale',
+        description:
+            'Free and Team tiers limit the total amount of searchable code. Enterprise offers options that scale to any size codebase.',
+    },
 }
 
 const FEATURE_ORDER: (keyof Features)[] = [
@@ -127,6 +133,7 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'customBranding',
     'onlineTraining',
     'customContractLegalBillingTerms',
+    'unlimitedCode',
 ]
 
 interface Props {

@@ -25,6 +25,7 @@ Company meeting is an effective way to:
      - Example: "On campaigns, we heard from Acme Corp that..." vs. "Campaigns let you make large-scale fixes across all of your code. Acme Corp told us that..."
 	 - Example: "Marketing update: our new lead sources..." vs. "Marketing is about getting enterprise developers to know about and want to try Sourcegraph. Our new lead sources..."
    - Remember that other team members are new to the company and/or busy on their own projects.
+1. When speaking, remind people of your role. For example: `I'm Alice Zhao, a developer on the security team` or `I'm Bob Schmidt, and I run the website on our marketing team`.
 1. Don't make announcements or share other specific information that you expect everyone to remember.
   - You can't assume everyone is attending company meeting and is paying attention.
   - Use company meeting to give a reminder, but make sure the announcement is in [Slack](team_chat.md), in email, and/or on the calendar.
@@ -38,16 +39,11 @@ Company meeting is an effective way to:
 ## Agenda
 
 1. Introduce any new team members starting this week
-   - The manager of the team member (or, if someone else knows them better, then that person if appropriate) presents a brief (~30-second) intro, stating the new team member's role, why we hired them, and what their first project is (if known). Then the person should pass it off to the new team member to say hello and share a fun fact about themselves.
+   - The manager of the team member (or, if someone else knows them better, then that person if appropriate) presents a brief (~30-second) intro, stating the new team member's role, why we hired them, and what their first project is (if known). Then the person should pass it off to the new team member to say hello and share a fun fact about themselves. {#new-team-member-intro}
 1. Birthdays/anniversaries
 1. Inspiration of the week (message @dan to volunteer to present an inspiration)
 1. [#thanks](team_chat.md#thanks) summary
 1. Progress on our [goals](../../company/goals/index.md)
-1. **Possible focuses** (note: these are guidelines only, and @sqs will decide what each company meeting is in advance and will tag people with at least 2 working days' notice)
-   1. CEO: company pitch, vision, "are we on track?", open Q&A
-   1. Marketing, sales, customer engineering: what's working, what's not, biggest customer pains/wins
-   1. Product release (usually the closest meeting to the [20th](../engineering/releases/index.md#releases-are-monthly)): what will ship in the release
-   1. Product preview (usually the meeting after the [20th](../engineering/releases/index.md#releases-are-monthly)): what we're planning to build and ship in the next release
 1. All customer [bookings](../sales/index.md#booking) and churn since the previous company meeting
 1. New and expansion pipeline: include full table, discuss only significant changes since the previous company meeting
 1. Hiring: Open roles we're hiring for, offers extended/accepted/rejected

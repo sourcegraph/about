@@ -127,7 +127,10 @@
             font-weight: bold;
         }
     }
-}
-.darkBackground {
-    background-color: #000 !important;
+
+    &__acknowledgements {
+        h2 {
+            font-size: 1.75rem;
+        }
+    }
 }

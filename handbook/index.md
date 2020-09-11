@@ -1,6 +1,8 @@
 # Sourcegraph handbook
 
-The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/open_source_open_company.md#open-company).
+The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/index.md#open-company).
+
+The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. [How to edit the handbook](https://about.sourcegraph.com/handbook/editing).
 
 ## Company
 
@@ -16,7 +18,7 @@ The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's pub
 
 ## Handbook sections
 
-The below headers are roughly the teams at Sourcegraph. Everyone should feel empowered to contribute to all pages and sections in the Sourcegraph handbook.
+The sections below roughly correspond to the teams at Sourcegraph.
 
 ### People Ops
 
@@ -36,10 +38,10 @@ The below headers are roughly the teams at Sourcegraph. Everyone should feel emp
 <!-- When updating the engineering team list below, please also update company/team/org_chart.md. -->
 
 - [Engineering](engineering/index.md)
-  - [Distribution](engineering/distribution/index.md)
   - [Campaigns](engineering/campaigns/index.md)
   - [Cloud](engineering/cloud/index.md)
   - [Code intelligence](engineering/code-intelligence/index.md)
+  - [Distribution](engineering/distribution/index.md)
   - [Search](engineering/search/index.md)
   - [Security](engineering/security/index.md)
   - [Web](engineering/web/index.md)
@@ -49,22 +51,9 @@ The below headers are roughly the teams at Sourcegraph. Everyone should feel emp
 - [Customer engineering](ce/index.md)
   - [Support](ce/support.md)
 
-### Marketing
+### [Marketing](marketing/index.md)
 
-- [Marketing](marketing/index.md)
-  - [Messaging](marketing/messaging.md)
-    - [What is Sourcegraph?](marketing/messaging.md#sourcegraph-value-proposition)
-    - [What problems does Sourcegraph solve?](marketing/messaging.md#what-problems-does-sourcegraph-solve)
-- [Definitions](https://docs.google.com/document/d/1h6xQeGHpMrsUUJ63Q6KupUNzq1iOpZfZSMC6ta3pLiY/edit#heading=h.pt4ztk7qhub0)
-- [Developer relations](marketing/developer-relations/index.md)
-- [Marketing operations](marketing/marketing_operations.md)
-- [Livestream events](marketing/livestream.md)
-- [Online content](marketing/content.md)
-  - [Website style guide](marketing/website_style_guide.md)
-
-### Sales
-
-- [Sales](sales/index.md)
+### [Sales](sales/index.md)
 
 ### Business Operations
 

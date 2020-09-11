@@ -65,7 +65,7 @@ an audio experience through Central Park. This talk has already convinced me I n
 Now as to how things are made, Em talks about Char-RNN and very briefly about recurrent neural networks,
 referencing [an article](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) and how they can be superior to Markov chains
 for generative text. She also mentioned other useful tools: [tracery.io](http://tracery.io), 
-[cheapbotsdonequick.com](cheapbotsdonequick.com), and referenced Kate Compton's [So you want to build a generator](https://
+[cheapbotsdonequick.com](https://cheapbotsdonequick.com), and referenced Kate Compton's [So you want to build a generator](https://
 galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator) article. She also mentioned (although not used in 
 the project) [gpt-2](https://github.com/openai/gpt-2) as something useful and interesting to look into for training
 a model quickly.

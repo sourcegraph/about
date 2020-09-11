@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.9
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.9: Literal search by default, multi-project LSIF code intelligence, Grafana dashboards, and configuration"
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -83,7 +84,7 @@ Sourcegraph's built-in monitoring with Grafana and Prometheus has been enhanced 
 
 ## LSIF-based code intelligence for multi-language repositories
 
-LSIF-based code intelligence now works on repositories with multiple projects and languages. Languages currently supported for LSIF include Go, TypeScript, Python, and C/C++, with support for Java currently in development. [Enable LSIF-powered code intelligence](https://docs.sourcegraph.com/user/code_intelligence/lsif) for your repositories by adding a simple step to your CI build process.
+LSIF-based code intelligence now works on repositories with multiple projects and languages. Languages currently supported for LSIF include Go, TypeScript, Python, and C/C++, with support for Java currently in development. [Enable LSIF-powered code intelligence](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence) for your repositories by adding a simple step to your CI build process.
 
 See the new [lsif.dev](https://lsif.dev/) site for list of languages with LSIF indexers (which means you can get precise, LSIF-based code intelligence on Sourcegraph).
 

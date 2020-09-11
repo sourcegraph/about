@@ -6,46 +6,32 @@ The product team is newly growing, and consists of all product managers and prod
 
 ### Members
 
-- [Product managers](roles.md#product-manager)
-  - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-  - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
-- [Product designers](roles.md#product-designer)
+- [Christina Forney](../../../company/team/index.md#christina-forney-she-her), VP Product
+- [Product management](product_management/index.md)
+  - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her) - ([Search](../engineering/search/index.md))
+  - [María Craig](../../../company/team/index.md#maría-craig-she-her) - ([Code intel](../engineering/code-intelligence/index.md))
+  - [J.K.](../../../company/team/index.md#todo) starting 2020-09-14 - ([Web](../engineering/web/index.md))
+- [Product design](design/index.md)
   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
   - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
-  - [Q. K.](../../../company/team/index.md#todo)
+  - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
+- [Technical writing](technical_writing/index.md)
+  - [Kimberly Hopson](../../../company/team/index.md#kimberly-hopson-she-her)
 
-### [Roles and responsibilites](roles.md)
+### [Roles](roles/index.md)
 
-See [Roles and responsibilites](roles.md)
-
-### Hiring status
-
-_Updated 2020-07-16_
-
-We are hiring for these roles:
-
-- +4 [Product Manager](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md)
-
-See [2021 Organizational plan](../engineering/2021_org.md) for more details on areas of ownership.
+See [Roles](roles/index.md) for open positions and hiring targets.
 
 ## [Goals](goals.md)
 
 See [Goals](goals.md)
-
-## [Product management](product_management/index.md)
-
-- [Product process](product_management/product_process.md)
-
-## [Design](design/index.md)
-
-- [Design process](design/design_process.md)
 
 ## Resources
 
 ### References
 
 - [Onboarding to the product team](./onboarding/index.md)
-- [Personas](personas.md)
+- [Personas](../marketing/personas.md)
 - The [Sourcegraph workflow](../../workflow/index.md) describes how our product fits into the developer workflow.
 - Product documents (PDs)
   - [All PDs](https://drive.google.com/drive/folders/1Wd-Xx2wNbFtSzeJwbZqMOxdbFDUFxlyR) (Google Drive)

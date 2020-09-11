@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.16
 heroImage: /blog/3.16-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements"
 ---
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
@@ -148,7 +149,7 @@ We want to better understand the activity of users on a Sourcegraph instance whi
 
 The out-of-the-box search-based code intelligence was broken on indexed commits for Haskell, JSONNet, Kotlin, Scala, Swift, Thrift, and TypeScript for several releases. Our symbol indexer did not know how to extract symbols for these languages, even though our unindexed symbol service did. This has been fixed and users with code in these languages should expect to see code intelligence hovers for their code once again!
 
-Additionally, Cobol and Tcl have been added to our growing list of languages supported via Sourcegraph’s basic code intelligence. Every Sourcegraph instance comes enabled with basic code intelligence provided by search-based heuristics. For fast and precise code intelligence, see our [LSIF documentation](https://docs.sourcegraph.com/user/code_intelligence/lsif).
+Additionally, Cobol and Tcl have been added to our growing list of languages supported via Sourcegraph’s basic code intelligence. Every Sourcegraph instance comes enabled with basic code intelligence provided by search-based heuristics. For fast and precise code intelligence, see our [LSIF documentation](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence).
 
 ## Changelog
 

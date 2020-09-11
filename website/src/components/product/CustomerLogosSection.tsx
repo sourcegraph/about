@@ -119,10 +119,6 @@ const ITEMS: {
         url: '/external-logos/apex-clearing-logo.png',
     },
     {
-        name: 'Tinder',
-        url: '/external-logos/tinder-logo.svg',
-    },
-    {
         name: 'AppLovin',
         url: '/external-logos/applovin-logo.svg',
     },
@@ -146,7 +142,7 @@ const ITEMS: {
 export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="customers" className={`container customer-logos-section ${className}`}>
         <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
-            Our customers use Sourcegraph every day to build the software that you use.
+            Our customers use Sourcegraph every day to build software you rely on.
         </h3>
         <div className="text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">
             {ITEMS.map((logo, i) => (
@@ -156,10 +152,18 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
                 >
                     {logo.link ? (
                         <a href={logo.link.url} target={logo.link.target} rel={logo.link.rel}>
-                            <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
+                            <img
+                                className="customer-logos-section__item-logo d-block mx-auto"
+                                src={logo.url}
+                                alt={logo.name}
+                            />
                         </a>
                     ) : (
-                        <img className="customer-logos-section__item-logo d-block mx-auto" src={logo.url} />
+                        <img
+                            className="customer-logos-section__item-logo d-block mx-auto"
+                            src={logo.url}
+                            alt={logo.name}
+                        />
                     )}
                 </div>
             ))}

@@ -20,15 +20,29 @@
 /docs @sourcegraph/marketing
 /podcast @beyang
 
+# @sqs: I feel weird reviewing people's own biographies, so I'm intentionally marking this file as
+# having no owner (and therefore no automatically assigned reviewer).
+/company/team/index.md @sourcegraph/nobody
+
 /handbook/product @christinaforney
 /handbook/engineering @nicksnyder
 
+/handbook/engineering/hiring/engineering-manager-web.md @nicksnyder @lguychard @withdavidli
+/handbook/engineering/hiring/software-engineer-backend.md @nicksnyder @tsenart @withdavidli
+/handbook/engineering/hiring/software-engineer-coding-exercise.md @nicksnyder
+/handbook/engineering/hiring/software-engineer-code-intelligence.md @nicksnyder @aidaeology @withdavidli
+/handbook/engineering/hiring/software-engineer-frontend.md @nicksnyder @lguychard @withdavidli
+/handbook/engineering/hiring/software-engineer-distribution.md @nicksnyder @pecigonzalo @withdavidli
+/handbook/engineering/hiring/software-engineer-security.md @nicksnyder @chayim @withdavidli
+
+/handbook/engineering/leadership @sourcegraph/engineering-leadership
 /handbook/engineering/campaigns @sourcegraph/campaigns
 /handbook/engineering/code-intelligence @sourcegraph/code-intel
 /handbook/engineering/cloud @sourcegraph/cloud
 /handbook/engineering/distribution @sourcegraph/distribution
 /handbook/engineering/security @sourcegraph/security
 /handbook/engineering/web @sourcegraph/web
+/handbook/engineering/search @sourcegraph/search
 /handbook/engineering/languages/go.md @sourcegraph/cloud
 /handbook/engineering/languages/typescript.md @sourcegraph/web
 /handbook/engineering/languages/terraform.md @sourcegraph/distribution

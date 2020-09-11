@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.2
 heroImage: https://user-images.githubusercontent.com/133014/54649997-a2829880-4a69-11e9-862a-cfa84df3d9de.png
 published: true
+description: 'Sourcegraph 3.2: (Mostly) no new features - Improved stability, setup, and documentation'
 ---
 
 <p style="text-align: center">

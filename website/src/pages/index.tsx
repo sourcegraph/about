@@ -8,7 +8,6 @@ import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
-import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -38,7 +37,6 @@ const Index: React.FunctionComponent = (props: any) => (
                             <div className="pt-1">
                                 <Link className="btn btn-primary" to="/get-started">
                                     Try Sourcegraph now <ArrowRightIcon className="ml-1" />
-                                    {/* TODO(sqs) */}
                                 </Link>
                             </div>
                         </div>
@@ -47,8 +45,16 @@ const Index: React.FunctionComponent = (props: any) => (
             </div>
             <ContentSection className="py-6 mt-3 d-none d-sm-block">
                 <div className="home__nested-screenshots">
-                    <img src="/screenshots/code-page-0.png" className="home__screenshot home__screenshot--main" />
-                    <img src="/screenshots/search-page-0.png" className="home__screenshot home__screenshot--nested" />
+                    <img
+                        src="/screenshots/code-page-0.png"
+                        className="home__screenshot home__screenshot--main"
+                        alt="Searching for code in the Sourcegraph search bar"
+                    />
+                    <img
+                        src="/screenshots/search-page-0.png"
+                        className="home__screenshot home__screenshot--nested"
+                        alt="Code results from a code search, including code coverage states"
+                    />
                 </div>
             </ContentSection>
             <CustomerLogosSection className="pt-5" />
@@ -76,7 +82,11 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                     <div className="col-lg-7 mt-5 pl-lg-4">
-                        <img src="/code-search-illustrated.svg" className="home__diagram w-150" />
+                        <img
+                            src="/code-search-illustrated.svg"
+                            className="home__diagram w-150"
+                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure"
+                        />
                     </div>
                 </div>
             </ContentSection>
@@ -149,6 +159,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="AND/OR operators for universal code search"
                             ></iframe>
                         </div>
                     </div>
@@ -164,6 +175,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Exploring code with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -208,6 +220,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Campaigns for large-scale code changes in Sourcegraph 3.16"
                             ></iframe>
                         </div>
                     </div>
@@ -223,6 +236,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Product preview: code insights"
                             ></iframe>
                         </div>
                     </div>
@@ -242,7 +256,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-            <GetStarted />
+            <GetStarted className="bg-gradient-green-blue mt-6" />
         </div>
     </Layout>
 )

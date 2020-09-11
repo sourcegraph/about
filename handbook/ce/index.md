@@ -12,11 +12,14 @@ The Customer Engineering team is responsible for ensuring that all of Sourcegrap
   - [Sourcegraph office hours](training.md#sourcegraph-office-hours)
 - [Support](support.md)
   - [How to route questions from customers](routing_questions.md)
-  - [Filing customer issues](filing_customer_issues.md)
+  - [Filing customer issues](customer_issues.md)
+
+## Goals
+
+TODO
 
 # Members
 
 - [Dan Adler](../../company/team/index.md#dan-adler-he-him) (CE team manager)
 - [Christine Lovett](../../company/team/index.md#christine-lovett-she-her)
-- [Austin Harshberger](../../company/team/index.md#austin-harshberger-he-him)
 - [Tion Thomas](../../company/team/index.md#tion-thomas-he-him)

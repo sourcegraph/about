@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.17
 heroImage: /blog/3.17-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.17: Faster and automatic precise code intelligence, preview of code insights, and AND/OR queries for searching file contents"
 ---
 
 We've shipped Sourcegraph 3.17 with many improvements to help you explore, navigate, and understand your code with universal code search:
@@ -78,7 +79,7 @@ We plan to continue on this path of performance improvements, and the next relea
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/user/code_intelligence/lsif) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
+An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
 
 To see this experiment in action, find a Go repository hosted on GitHub that has not been picked up by Sourcegraph. Then, visit that repository on [sourcegraph.com/search](https://sourcegraph.com/search). After navigating through the codebase for a while, you should see the hover tooltips and definition results become more accurate.
 
@@ -115,7 +116,7 @@ Initially, AND/OR operators support searching file contents. Operators for filte
 
 ### Easier alerting configuration
 
-Configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
+Configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
 
 ```json
 "observability.alerts": {

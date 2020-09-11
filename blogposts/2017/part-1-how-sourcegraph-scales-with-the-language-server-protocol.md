@@ -69,7 +69,7 @@ M x N
 
 LSP defines a communication protocol that sits between editor plugins and the underlying analysis libraries. You build one language server for each language and one plugin for each editor. Each editor plugin that speaks LSP will now have support for every single language server. you've reduced the M x N problem to an M + N problem.
 
-![](/blog-images/1*ws2LYhzfuHpEimlb9-knWQ.png)
+![](//images.contentful.com/le3mxztn6yoo/5fAE4L5xKEM2wOE6WGsMyY/18126663e1f38d946fcfae2b06c2cd88/1_ws2LYhzfuHpEimlb9-knWQ.png)
 
 M + N
 

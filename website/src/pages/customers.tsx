@@ -32,7 +32,9 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
+                        <h2 className="font-weight-normal customers-page__see-how">
+                            See how customers use Sourcegraph to
+                        </h2>
                         <div className="list-group">
                             <Link to="#onboard" className="list-group-item list-group-item-action">
                                 Onboard everyone faster <ArrowRightIcon className="icon-inline ml-1" />
@@ -67,7 +69,7 @@ export default ((props: any) => (
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
         <div className="customers-page">
-            <CustomerLogosSection className="mb-6" />
+            <CustomerLogosSection className="my-6" />
             <hr className="mb-6" id="onboard" />
             <ContentSection className="mt-5">
                 <div className="row">
@@ -93,6 +95,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Universal code search using regex with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -106,7 +109,7 @@ export default ((props: any) => (
                             </p>
                             <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
                             <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/convoy-logo.svg" width="110px" />
+                                <img src="/external-logos/convoy-logo.svg" width="110px" alt="Convoy" />
                             </div>
                             <Link to="/case-studies/convoy-improved-on-boarding">
                                 Developers at Convoy onboard faster with Sourcegraph{' '}
@@ -137,6 +140,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Exploring code with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -152,7 +156,7 @@ export default ((props: any) => (
                                     Ursula Robertson, Engineering Manager, SoFi
                                 </footer>
                                 <div className="d-flex justify-content-center my-3">
-                                    <img src="/external-logos/sofi-logo.svg" width="90px" />
+                                    <img src="/external-logos/sofi-logo.svg" width="90px" alt="SoFi" />
                                 </div>
                                 <Link to="/case-studies/sofi-moves-fast-on-hundreds-of-microservices/">
                                     SoFi adopts Sourcegraph to manage hundreds of microservices{' '}
@@ -185,6 +189,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Searching for security vulnerabilities company-wide with Sourcegraph"
                             ></iframe>
                         </div>
                     </div>
@@ -199,7 +204,7 @@ export default ((props: any) => (
                                     Simon Law, Staff Software Engineer, Quantcast
                                 </footer>
                                 <div className="d-flex justify-content-center my-2">
-                                    <img src="/external-logos/quantcast-logo.svg" width="120px" />
+                                    <img src="/external-logos/quantcast-logo.svg" width="120px" alt="Quantcast" />
                                 </div>
                                 <Link to="/case-studies/quantcast-large-scale-refactoring/">
                                     Quantcast adopts Sourcegraph for large-scale refactoring{' '}
@@ -230,6 +235,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Sourcegraph and GitLab: Code reviews and code discovery in action"
                             ></iframe>
                         </div>
                         <p>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</p>
@@ -247,7 +253,12 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Trent Grover, Director of Architecture, Workiva
                                 </footer>
-                                <img src="/external-logos/workiva-vector-logo.svg" width="120px" className="my-2" />
+                                <img
+                                    src="/external-logos/workiva-vector-logo.svg"
+                                    width="120px"
+                                    className="my-2"
+                                    alt="Workiva"
+                                />
                             </blockquote>
                         </div>
                     </div>
@@ -287,6 +298,7 @@ export default ((props: any) => (
                                 allowfullscreen=""
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameborder="0"
+                                title="Campaigns for large-scale code changes in Sourcegraph 3.16"
                             ></iframe>
                         </div>
                     </div>
@@ -300,7 +312,7 @@ export default ((props: any) => (
                                 </p>
                                 <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
                                 <div className="d-flex justify-content-center my-3">
-                                    <img src="/external-logos/lyft-logo.svg" width="60px" />
+                                    <img src="/external-logos/lyft-logo.svg" width="60px" alt="Lyft" />
                                 </div>
                                 <Link to="/case-studies/lyft-monolith-to-microservices">
                                     Lyft uses Sourcegraph to ensure production stability{' '}

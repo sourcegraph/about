@@ -1,3 +1,6 @@
+// @ts-check
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `Sourcegraph`,
@@ -15,8 +18,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blogposts`,
+        name: `blog`,
         path: `${__dirname}/../blogposts/`,
+        ignore: [`${__dirname}/../blogposts/liveblogs/**/*`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `liveblog`,
+        path: `${__dirname}/../blogposts/liveblogs`,
       },
     },
     {
@@ -61,7 +72,7 @@ module.exports = {
 
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
-        // Defaults to null
+        // Defaults to null.
         defaultDataLayer: { platform: 'gatsby' },
 
         // Specify optional GTM environment details.
@@ -79,8 +90,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       options: {
-        noTrailingSlash: true,
-        siteUrl: `https:/about.sourcegraph.com`,
+        noTrailingSlash: false,
+        siteUrl: `https://about.sourcegraph.com`,
       },
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
     },

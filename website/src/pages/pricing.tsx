@@ -87,11 +87,7 @@ export default ((props: any) => (
                                 planProperties={
                                     <>
                                         <PricingPlanProperty
-                                            description={
-                                                <>
-                                                    Add up to 200 users. Packs start at $325/mo for 25 additional users.
-                                                </>
-                                            }
+                                            description={<>Add $325/mo for 25 additional users. 50 users max.</>}
                                         >
                                             25 users included
                                         </PricingPlanProperty>
@@ -140,6 +136,7 @@ export default ((props: any) => (
                                     customBranding: true,
                                     onlineTraining: true,
                                     customContractLegalBillingTerms: true,
+                                    unlimitedCode: true,
                                 }}
                                 beforeCampaignsFragment={
                                     <span className="text-muted pl-4 small mt-4">Available add-ons:</span>
@@ -150,7 +147,7 @@ export default ((props: any) => (
                             />
                         </div>
                     </div>
-                    <div class="py-3 text-center">
+                    <div className="py-3 text-center">
                         <h3>Education and nonprofit discounts</h3>
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}

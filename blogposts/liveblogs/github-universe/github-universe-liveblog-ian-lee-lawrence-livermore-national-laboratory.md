@@ -3,7 +3,7 @@ title: 'GitHub Universe liveblog: “Open source for National Security”'
 author: 'Beyang Liu'
 publishDate: 2016-09-15T00:00-07:00
 tags: [
-  "blog"
+  "github-universe"
 ]
 slug: github-universe-liveblog-ian-lee-lawrence-livermore-national-laboratory
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/20fvPueXZGqOYSq2Oo68M0/a3434fc1cac1aaa96f9f4c3f913c8722/1_8LeAkNACLvgEnCXP-1qUBw.jpeg

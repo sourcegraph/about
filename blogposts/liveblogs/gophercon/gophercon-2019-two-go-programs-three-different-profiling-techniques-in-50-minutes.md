@@ -122,7 +122,7 @@ func main() {
 
 run this program.
 
-![CPU Profiling](/images/gophercon2019-profiling-01.jpg "CPU Profiling")
+![CPU Profiling](/blog/gophercon2019-profiling-01.jpg "CPU Profiling")
 
 pprof - with pprof the program runs a bit slower, but the benefit is that we have now a profile
 
@@ -274,7 +274,7 @@ We have 1000 goroutines but we have 1000 time more work to do.
 
 The time to compute the image is 200 ms and the time to write the image is also 200ms which is good!
 
-![Tracing](/images/gophercon2019-tracing-01.jpg "Tracing")
+![Tracing](/blog/gophercon2019-tracing-01.jpg "Tracing")
 
 
 ### Using workers
@@ -292,12 +292,12 @@ Depending on the use case. 2 strategies but they deliver pretty much the same re
 
 Boost the performance of the code - nearly 4 times!
 
-![Tracing](/images/gophercon2019-tracing-02.jpg "Tracing")
+![Tracing](/blog/gophercon2019-tracing-02.jpg "Tracing")
 
 
 ## Conclusion
 
-![Amdahl's law](/images/gophercon2019-amdahls-law.jpg "Amdahl's law")
+![Amdahl's law](/blog/gophercon2019-amdahls-law.jpg "Amdahl's law")
 
 For this algorithm - more CPU's - better! If we have 1000 cores we can solve each row at the same. If we have  1000000 cores - we can compute every pixel in parallel.
 But we spend 50% of writing the image. But that's a sequential operation.
@@ -308,10 +308,3 @@ Think about your own programs!
 How much of the work can be done in parallel?
 
 The key is to make effectively all of the work in parallel. 
-
-
-
-
-
-
-

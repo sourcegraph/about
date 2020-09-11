@@ -10,19 +10,19 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 
 ## Engineering
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [Engineering: Distribution team](../../handbook/engineering/distribution/index.md#members)
-### [Engineering: Campaigns team](../../handbook/engineering/campaigns/index.md#members)
-### [Engineering: Cloud team](../../handbook/engineering/cloud/index.md#members)
-### [Engineering: Code intelligence team](../../handbook/engineering/code-intelligence/index.md#members)
-### [Engineering: Search team](../../handbook/engineering/search/index.md#members)
-### [Engineering: Security team](../../handbook/engineering/security/index.md#members)
-### [Engineering: Web team](../../handbook/engineering/web/index.md#members)
+### [Campaigns](../../handbook/engineering/campaigns/index.md#members)
+### [Cloud](../../handbook/engineering/cloud/index.md#members)
+### [Code intelligence](../../handbook/engineering/code-intelligence/index.md#members)
+### [Distribution](../../handbook/engineering/distribution/index.md#members)
+### [Search](../../handbook/engineering/search/index.md#members)
+### [Security](../../handbook/engineering/security/index.md#members)
+### [Web](../../handbook/engineering/web/index.md#members)
 
 ## [Customer Engineering](../../handbook/ce/index.md#members)
 
-## [Product team](../../handbook/product/index.md#members)
+## [Product](../../handbook/product/index.md#members)
 
-## [Marketing team](../../handbook/marketing/index.md#members)
+## [Marketing](../../handbook/marketing/index.md#members)
 
 ## Other teams: TODO
 
@@ -40,6 +40,7 @@ This org chart is generated automatically based on the contents of other handboo
 
 <script>
 // This script injects the org chart content into each section of this page that links to a team page.
+// It is similar to the script used to compile the goals in ../goals/index.md.
 
 async function getPageOrgChart(pageUrl) {
 	const sectionId = pageUrl.replace(/^.*#/, '')
@@ -83,10 +84,10 @@ Promise.all(
 ).then(sections => {
 	const loading = document.getElementById('org-chart-loading')
 	loading.innerHTML = '' // clear
-	
+
 	for (const {header, content} of sections) {
 		header.parentNode.insertBefore(content, header.nextSibling)
-		
+
 		// Make header link to top of page, not the members section.
 		const headerLink = header.querySelector('a[href]:not([aria-hidden])')
 		const headerLinkUrl = new URL(headerLink.href)

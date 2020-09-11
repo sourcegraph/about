@@ -18,12 +18,15 @@
 - [Commit message guidelines](commit_messages.md)
 - [Ignoring editor config files in Git](ignoring_editor_config_files.md)
 - [Configuring Zoom to send recordings to Slack automatically](configuring_zoom_recordings_to_slack_automatically.md)
-- [Incidents](incidents.md)
+- [Customer Issues](../ce/customer_issues.md)
+- [Incidents](incidents/index.md)
 - [Releases](releases/index.md)
   - [Release issue template](releases/release_issue_template.md)
+- [Cloud environments](environments.md)
 - [Deployments](deployments.md)
-- [On-call](on_call/index.md)
-- [Prometheus](prometheus.md)
+- [On-call](incidents/on_call.md)
+- [Prometheus](observability/prometheus.md)
+- [Honeycomb](honeycomb.md)
 - [Adding and debugging ping data](adding_ping_data.md)
 - [Adding buildkite secrets](adding_buildkite_secrets.md)
 - [External contributions](external_contributions.md)
@@ -34,23 +37,12 @@ The default owner of any technical decision is the person or team that owns the 
 
 If ownership is unclear, ask "Do we have a designated owner for X?" in an appropriate Slack channel and @mention appropriate managers.
 
-If there is a dispute about ownership, then perform a [clean escalation](../communication/clean_escalation.md) to determine an owner.
+If there is a dispute about ownership, then perform a [clean escalation](../communication/code_of_conduct.md#clean-escalation) to determine an owner.
 
 ## [Roles and responsibilities](roles.md)
 
 - [VP Engineering](roles.md#vp-engineering)
 - [Software Engineer](roles.md#software-engineer)
-
-## Innovation time
-
-We love it when engineers have ideas for things they want to improve, even if they don't align with our existing iteration plans or [goals](../../company/goals/index.md). We want to create time and space for engineers to work on these ideas without negatively impacting our team goals and planned work.
-
-If you have an idea for something you want to work on, then you have a few options:
-
-1. **Just do it** if you can timebox the effort (e.g., 1-2 days) such that it won't impact your ability to deliver on existing plans.
-2. If working on your idea would require a non-trivial amount of time or would impact your ability to deliver on existing plans, then have a discussion with your manager to come up with a feasible plan (e.g., explicitly schedule time to work on your idea during the next iteration).
-
-In any case, you should report the results of your work in [progress updates](tracking_issues.md#progress-updates) just like any other work.
 
 ## Teams
 
@@ -63,6 +55,21 @@ Our engineering organization is divided into mission based teams that contain th
 ### Transferring teams
 
 Start a discussion with your manager if you are interested to switch teams. Your manager will chat with you to understand what you want and then propose next steps. Team transfers need to be approved by the [VP of Engineering](roles.md#vp-engineering).
+
+## Open positions
+
+[Open positions](hiring/index.md#open-positions)
+
+## Innovation time
+
+We love it when engineers have ideas for things they want to do, even if they don't align with our existing iteration plans or [goals](../../company/goals/index.md). We want to create time and space for engineers to work on these ideas without negatively impacting our team goals and planned work.
+
+If you have an idea for something you want to work on, then you have a few options:
+
+1. **Just do it** if you can timebox the effort (e.g., 1-2 days) such that it won't impact your ability to deliver on existing plans.
+2. If working on your idea would require a non-trivial amount of time or would impact your ability to deliver on existing plans, then have a discussion with your manager to come up with a feasible plan (e.g., explicitly schedule time to work on your idea during the next iteration).
+
+In any case, you should report the results of your work in [progress updates](tracking_issues.md#progress-updates) just like any other work.
 
 ## Repositories
 

@@ -1,44 +1,23 @@
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import _ from 'lodash'
 import * as React from 'react'
-import BlogPosts from '../components/BlogPosts'
-import Layout from '../components/Layout'
-export default class GoList extends React.Component<any, any> {
-    public render(): JSX.Element | null {
-        const metaProps = {
-            title: 'GopherCon and dotGo liveblogs',
-            description: 'Check out the official GopherCon 2019 Liveblog proudly hosted by Sourcegraph.',
-            image: 'https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png',
-        }
-        const goPosts = this.props.data.allMarkdownRemark.edges.filter(
-            (post: any) => post.node.frontmatter.published === true
-        )
+import { PostsListPage } from '../components/blog/PostsListPage'
+import { BLOG_TYPE_TO_INFO } from '../components/blog/postTypes'
 
-        return (
-            <Layout
-                location={this.props.location}
-                meta={{
-                    title: metaProps.title,
-                    description: metaProps.description,
-                    image: metaProps.image,
-                }}
-            >
-                <section className="content-section container hero-section text-center py-5">
-                    <h1>{metaProps.title}</h1>
-                </section>
+export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
+    <PostsListPage
+        blogInfo={BLOG_TYPE_TO_INFO['go']}
+        posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
+        location={props.location}
+    />
+)
 
-                <div className="gray-9 bg-white text-dark">
-                    <BlogPosts blogType="go" posts={goPosts} />
-                </div>
-            </Layout>
-        )
-    }
-}
+export default Page
 
 export const pageQuery = graphql`
     query GoPosts {
         allMarkdownRemark(
-            filter: { frontmatter: { tags: { regex: "/gophercon|dotGo/" } } }
+            filter: { fields: { blogType: { eq: "go" } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {
@@ -57,6 +36,8 @@ export const pageQuery = graphql`
                     excerpt(pruneLength: 300)
                     fields {
                         slug
+                        permalink
+                        blogType
                     }
                 }
             }
