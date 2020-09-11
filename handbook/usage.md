@@ -95,6 +95,10 @@ We chose Markdown files in a Git repository for the handbook because it allows g
 
 Sourcegraph is an [open product, an open company, and open source](../company/index.md#sourcegraph-open-product-open-company-open-source). Our company principles, strategies, and processes are all publicly documented.
 
+## What information belongs in the handbook (vs. elsewhere)?
+
+TODO
+
 ## Acknowledgements
 
 Portions of this documentation are derived from [GitLab's handbook](https://docs.gitlab.com) (see [license](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/LICENCE)).
