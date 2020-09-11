@@ -2,7 +2,7 @@
 
 Goals are continuously updated and reviewed. If you find these goals do not reflect our current priorities or are out of date, please update them as soon as possible or add it as a topic to our [weekly sync](recurring_processes.md#weekly-distribution-team-sync).
 
-## Medium-term goals
+## Medium-term goals (~3-6 Months)
 
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single command
 
@@ -14,6 +14,8 @@ Creating a new release for our deployments is currently a semi-automated process
   - Releases can be triggered by a single manual step
   - All supported deployment types are released at the same time with the same command
   - Support documentation enables any engineer to perform a release with confidence
+- **Milestones**:
+  - Increase e2e test frequency
 
 ### Upgrades between releases are easy to perform
 
@@ -25,6 +27,19 @@ We will start by looking at our Kubernetes deployment and working on an easier u
 - **Outcomes**:
   - Upgrades to deployments do not require resolving diff conflicts from upstream
   - Upgrading a deployment configuration requires less than 2 hours of work
+- **Milestones**:
+  - ~~Research and evaluate possible tools.~~
+    - ~~Cue~~
+    - ~~Bash/JQ~~
+    - ~~Dhall~~
+  - Design Dhall Architecture.
+  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback.
+  - Use Dhall to generate public Kubernetes manifests.
+  - Create customer facing migration path and how-to documentation.
+  - Migrate a highly technical customer to Dhall and collect usage feedback.
+  - Design customization worklfow.
+    - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
+
 
 ### Improve the debugging and troubleshooting process
 As we deploy Sourcegraph to multiple different environments, we need to provide a consistent and straightforward process to debug issues. We are currently lacking tools to collect debugging information (configuration, type, size, diff from upstream, etc) consistently and a process to capture the output of debugging sessions to feed back into our priorities and documentation.
@@ -36,6 +51,23 @@ We will initially focus on reducing the time it takes to collect troubleshooting
   - We can categorize and capture the amount of effort spent on different incident types
   - We can provide a straightforward set of tools to collect initial debugging and deployment information
   - TBD
+- **Milestones**: TBD
+
+### Split Cloud infrastructure into separate GCP projects
+
+- **Owner**: TBD
+- **Status**: On-hold
+- **Outcomes**:
+  - We have a clear guideline on when to split resources to new projects
+  - We report the cost of each project
+  - We can set spending limits for dynamic environments
+- **Milestones**:
+  - ~~Create initial GCP structure~~
+  - ~~Move non-production projects to folders~~
+  - Move non-production deployments to separate projects
+  - Move CI to a new GCP project
+  - Create code to bootstrap new projects
+  - Document project and folder usage guidelines
 
 ## Short-term goals
 
