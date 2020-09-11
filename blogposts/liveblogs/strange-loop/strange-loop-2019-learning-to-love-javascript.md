@@ -156,7 +156,7 @@ Tara would like to argue no!
 ### Project Highlights
 
 * [spider-man-pics-4-cash](https://glitch.com/~spider-man-pics-4-cash)
-* [fix-posture.glitch.me](fix-posture.glitch.me)
+* [fix-posture.glitch.me](https://fix-posture.glitch.me)
 * [soul-patch-upside-down.glitch.me](http://soul-patch-upside-down.glitch.me/)
 * [wikipedia-game.glitch.me](http://wikipedia-game.glitch.me/)
 

@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.17
 heroImage: /blog/3.17-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.17: Faster and automatic precise code intelligence, preview of code insights, and AND/OR queries for searching file contents"
 ---
 
 We've shipped Sourcegraph 3.17 with many improvements to help you explore, navigate, and understand your code with universal code search:

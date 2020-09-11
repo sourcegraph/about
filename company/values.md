@@ -29,8 +29,38 @@ As a team's size and scope grows, it (unintentionally) tends to become a workgro
 
 ## Open and transparent
 
-We are an [open company](open_source_open_company.md).
+We are an [open company](index.md#open-company).
 
 Being open and transparent builds trust with our customers and within our team. It makes it easy for us to partner and collaborate with our customers so we make Sourcegraph the best that it can be. It enables our teammates to work autonomously to solve tough problems while maintaining alignment.
 
-Transparency is hard. It requires extra effort and excellent communication. It means it is possible to observe things that are inconsistent or incomplete. We think this is good because it gives everyone visibility into the process, not just the outcome, and an opportunity to contribute to that process at any point in time.
+We favor transparency by default. There are multiple levels of transparency, and we always strive to be the most transparent that we can be for a given piece of information.
+
+| Level of transparency | Description | Channels | Examples |
+|-|-|-|-|
+| Public | Anyone outside of Sourcegraph can access this information. **This is the default level of transparency.** | [Handbook](../handbook/index.md), [code](https://github.com/sourcegraph/sourcegraph), [issues](https://github.com/sourcegraph/sourcegraph/issues), public Google Docs | Goals, plans, all code, product docs, dev docs, company docs |
+| Internal to Sourcegraph | Information that is not public for specific reasons, but is shared with Sourcegraph teammates. | Public Slack channels, Google Docs accessible to everyone at Sourcegraph, internal [Google Groups](https://groups.google.com/all-groups) | Board slides, company financial info, customer information, open security investigations |
+| Private | Information that is neither public nor internal to Sourcegraph for specific reasons, but is shared only with a specific set of people. | Private Slack channels or DMs, private Google Docs, private emails | Candidate feedback, teammate feedback, compensation |
+
+Being transparent by default is hard.
+
+The level of transparency we are comfortable with as an organization can be initially uncomfortable to new teammates who are not used to being transparent by default.
+
+We are eagerly transparent (not eventually transparent). This means it is possible to observe things that are inconsistent or incomplete (e.g., work-in-progress code, docs, goals, plans), which can be confusing to someone who is used to only seeing things that are "done". We think being eagerly transparent by default is worth the challenges because it gives everyone visibility into the process, not just the outcome, and an opportunity to contribute to that process at any point in time.
+
+Examples:
+
+> I want to keep my document private and share it with a limited set of people until I am ready to get feedback from a broader audience.
+
+It is totally legitimate to want to create "breathing room" for a new thought or idea to develop before exposing it to wider critique. We want to create a culture where it is possible to do this while still being transparent.
+
+1. Make your document accessible to everyone at Sourcegraph.
+1. At the top, write down the state of the document and the kind of feedback you are (or are not) looking for (e.g. "I am not finished drafting this so please hold off on any feedback. Just sharing for transparency so others know what I am working on.", or "This is a first draft that is ready for feedback").
+1. Share your document in an appropriate channel with the same context that you added at the top of the document.
+
+> My team has goals and plans for the future, but I am hesitant to put this in the handbook because I don't want to promise anything to our customers and I don't want competitors copying us.
+
+We document our goals and plans publicly so we can engage with customers to build the best product possible. [Documenting a goal is not the same thing as committing to a customer](goals/guidelines.md#choosing-goals). If our competitors are closely following what we are doing, then we are clearly doing a good job and we should keep doing what we are doing!
+
+> I am working on improving the security of our product, but I feel uncomfortable clearly documenting what I am doing (e.g., in public status updates, issues, PR descriptions, the changelog) because I am worried that it will make Sourcegraph look bad.
+
+Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.

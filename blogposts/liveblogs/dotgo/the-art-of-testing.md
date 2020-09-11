@@ -8,6 +8,7 @@ tags: [
 slug: the-art-of-testing
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/2w5ubsfTaMYQY24kCOeeKi/6bed02d745c1586984ad128466df2cbb/IMG_0020.jpg
 published: true
+description: 'dotGo 2017: The Art of Testing'
 ---
 
 Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@srcgraph](https://twitter.com/srcgraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.

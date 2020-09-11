@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.6
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.6: Bitbucket Server plugin, search performance improvements, and quick links'
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.

@@ -12,7 +12,7 @@ published: true
 
 Presenter: [Hunter Loftis](https://twitter.com/hunterloftis)
 
-Liveblogger: [Farhan Attamimi](twitter.com/attfarhan)
+Liveblogger: [Farhan Attamimi](https://twitter.com/attfarhan)
 
 ## Summary
 

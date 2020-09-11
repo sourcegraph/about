@@ -8,6 +8,7 @@ tags: [
 slug: simulating-a-real-world-system-in-go
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/2iQSOyqGIYUKm0Yw86GS2G/8f18e74e47d841b8b6a1d49b80aa6bef/DN8NAHZW4AA_HZr.jpg
 published: true
+description: 'dotGo 2017: Simulating a Real-World System in Go'
 ---
 
 Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@srcgraph](https://twitter.com/srcgraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.

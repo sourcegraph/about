@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.8
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.8: Search UI improvements, monitoring tools, code change campaigns, and LSIF-based code intelligence"
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -59,7 +60,7 @@ Code change management campaigns are in private beta. [Watch the code change man
 
 Each Sourcegraph instance ships with basic code intelligence that provides jump to definition and find references for every language. Basic code intelligence works well for many of our customers, but some customers have been asking for more precise code intelligence. Language servers provide precise code intelligence, but they are complex to configure, require separate deployment, and are slow to initialize, so we have added support for LSIF based code intelligence.
 
-Our solution to fast and precise code intelligence is with LSIF. We first wrote about LSIF (Language Server Index Format) in [code intelligence using LSIF](https://about.sourcegraph.com/blog/code-intelligence-with-lsif). This blogpost gives an overview of what LSIF is, and why we are working to support it.
+Our solution to fast and precise code intelligence is with LSIF. We first wrote about LSIF (Language Server Index Format) in [code intelligence using LSIF](/go/code-intelligence-with-lsif/). This blogpost gives an overview of what LSIF is, and why we are working to support it.
 
 In Sourcegraph 3.8, LSIF-backed code intelligence is available for beta testing by early adopters. The currently supported languages (ones with LSIF indexers) are [TypeScript](https://github.com/microsoft/lsif-node), [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp). Check out the documentation for [details on how to try it out on your code](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence).
 
@@ -132,12 +133,12 @@ You can now toggle the browser extension on and off without having to fully disa
 
 #### Added
 
-- A [migration guide for Sourcegraph v3.7+](doc/admin/migration/3_7.md).
+- A [migration guide for Sourcegraph v3.7+](https://docs.sourcegraph.com/@3.18/admin/migration/3_7).
 
 #### Fixed
 
 - Fixed an issue where some repositories with very long symbol names would fail to index after v3.7.
-- We now retain one prior search index version after an upgrade, meaning upgrading AND downgrading from v3.6.2 <-> v3.7.2 is now 100% seamless and involves no downtime or negated search performance while repositories reindex. Please refer to the [v3.7+ migration guide](doc/admin/migration/3_7.md) for details.
+- We now retain one prior search index version after an upgrade, meaning upgrading AND downgrading from v3.6.2 <-> v3.7.2 is now 100% seamless and involves no downtime or negated search performance while repositories reindex. Please refer to the [v3.7+ migration guide](https://docs.sourcegraph.com/@3.18/admin/migration/3_7) for details.
 
 ### 3.7.1
 

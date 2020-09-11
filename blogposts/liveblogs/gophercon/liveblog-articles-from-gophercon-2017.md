@@ -25,7 +25,7 @@ Talks:
 
 **WEDNESDAY 7/12**
 Mile High Gopher Meetup
-* [JP Robinson - Go kit, Gizmo, and Marvin](https://about.sourcegraph.com/go/jp-robinson-of-nytimes-on-go-kit-gizmo-and-marvin)
+* [JP Robinson - Go kit, Gizmo, and Marvin](/blog/jp-robinson-of-nytimes-on-go-kit-gizmo-and-marvin)
 * [Peter Bourgon - History of Go kit and what's next](https://about.sourcegraph.com/go/peter-bourgon-on-the-history-of-go-kit-and-whats-next)
 
 **THURSDAY 7/13**
@@ -52,8 +52,8 @@ Mile High Gopher Meetup
 * [Peter Bourgon - Evolutionary Optimisation in Go](https://about.sourcegraph.com/go/evolutionary-optimization-peter-bourgon)
 * [Aaron Schlesinger - Functional programming in Go](https://about.sourcegraph.com/go/functional-programming-in-go)
 * [Will Hawkins - Go at the DARPA Cyber grand challenge](https://about.sourcegraph.com/go/go-at-the-darpa-cyber-grand-challenge-will-hawkins)
-* [Marty Schoch - Building a high performance Key/Value store](https://about.sourcegraph.com/go/building-a-high-performance-key-value-store)
+* [Marty Schoch - Building a high performance Key/Value store](/blog/building-a-high-performance-key-value-store)
 * [Michael Hausenblas - Fallacies of distributed Gomputing](https://about.sourcegraph.com/go/fallacies-of-distributed-gomputing)
 * Waldemar Quevedo - Design and implementation of the NATS client
-* [Alan Shreve - grpc in production](https://about.sourcegraph.com/go/grpc-in-production-alan-shreve)
+* [Alan Shreve - grpc in production](/blog/grpc-in-production-alan-shreve)
 * [Sam Boyer - The new era of Go package management](https://about.sourcegraph.com/go/the-new-era-of-go-package-management)

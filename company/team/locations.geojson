@@ -139,8 +139,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.22341537475585,
-          37.498014271137265
+          -122.24607467651367,
+          37.39493120891107
         ]
       }
     },
@@ -336,6 +336,19 @@
         "coordinates": [
           34.8532,
           32.3215
+        ]
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "name": "Elizabeth Stirling"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3493,
+          47.6205
         ]
       }
     }

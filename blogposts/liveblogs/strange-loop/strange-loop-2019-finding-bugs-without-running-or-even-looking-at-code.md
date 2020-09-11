@@ -170,9 +170,9 @@ is a tool called Alloy.
 
 ## Resources
 
-- [The Book](alloytools.org/book.html)
-- [www.aosabook.org/en/500L/the-same-origin-policy.html](www.aosabook.org/en/500L/the-same-origin-policy.html)
-- [www.hillelwayne.com (Alloy and TLA+)](www.hillelwayne.co)
-- [lamport.azurewebsites.net/tla/learning.html (TLA+)](lamport.azurewebsites.net/tla/learning.html )
+- [The Book](https://alloytools.org/book.html)
+- [www.aosabook.org/en/500L/the-same-origin-policy.html](https://www.aosabook.org/en/500L/the-same-origin-policy.html)
+- [www.hillelwayne.com (Alloy and TLA+)](https://www.hillelwayne.com)
+- [lamport.azurewebsites.net/tla/learning.html (TLA+)](https://lamport.azurewebsites.net/tla/learning.html)
     - TLA+ is another modeling language
-- [learntla.com (TLA+)](learntla.com)
+- [learntla.com (TLA+)](https://learntla.com)

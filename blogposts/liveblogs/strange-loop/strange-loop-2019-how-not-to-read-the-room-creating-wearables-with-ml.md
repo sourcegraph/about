@@ -50,11 +50,11 @@ When she wore it for the first time, people loved it, which she says gave her a 
 
 ![ML Necklace](/blog/strange-loop-2019/how-not-to-read-the-room-creating-wearables-with-ml-1.jpg)
 
-The first interactive piece she built was [tiny.cc/haute-codeture](tiny.cc/haute-codeture) in NodeJS, with a React web app that allows anyone to change the colors. However, she learned that a webapp-based outfit had some drawbacks. It required tethering to her phone, which could be intermittent, and it was centered on other people, not her.
+The first interactive piece she built was [tiny.cc/haute-codeture](https://tiny.cc/haute-codeture) in NodeJS, with a React web app that allows anyone to change the colors. However, she learned that a webapp-based outfit had some drawbacks. It required tethering to her phone, which could be intermittent, and it was centered on other people, not her.
 
 ![Speech to image demo](https://github.com/traumverloren/speech-to-image-necklace/raw/master/demo.gif)
 
-Next, Stephanie built a speech-to-image necklace. [tiny.cc/speech-to-image](tiny.cc/speech-to-image) - a Raspberry Pi with a touchscreen and a microphone, with a Node server that sends speech to [Google Cloud Speech-to-Text API](https://cloud.google.com/speech-to-text/) for speech-to-text and Google Image Search. This allows anyone in rannge of the microphone to say, for example, "I like turtles," and the necklace would play the [Turtle Kid meme](https://www.youtube.com/watch?v=CMNry4PE93Y). However, this still required Wi-Fi, which made it less practical for street festivals and other outdoor. Although she says she didn't realize it at the time, this was Stephanie's first foray into machine learning via the Google Speech-to-Text API.
+Next, Stephanie built a speech-to-image necklace. [tiny.cc/speech-to-image](https://tiny.cc/speech-to-image) - a Raspberry Pi with a touchscreen and a microphone, with a Node server that sends speech to [Google Cloud Speech-to-Text API](https://cloud.google.com/speech-to-text/) for speech-to-text and Google Image Search. This allows anyone in rannge of the microphone to say, for example, "I like turtles," and the necklace would play the [Turtle Kid meme](https://www.youtube.com/watch?v=CMNry4PE93Y). However, this still required Wi-Fi, which made it less practical for street festivals and other outdoor. Although she says she didn't realize it at the time, this was Stephanie's first foray into machine learning via the Google Speech-to-Text API.
 
 ![LED Umbrella](/blog/strange-loop-2019/how-not-to-read-the-room-creating-wearables-with-ml-2.jpg)
 
@@ -73,9 +73,9 @@ Building the ML Necklace required a few tasks.
 4. Send data between Pi and Arduino-connected lights (without bluetooth or wifi.)
 5. Program lights in C++ on Arduino
 
-Using Tensorflow.js and [tiny-yolo (You Only Look Once)](https://pjreddie.com/darknet/yolo/), Stephanie built fast in-browser image detection - 800ms object detection - limited to people detection, but already trained an deployable. However, YOLO is intended for the browser, so the second task was to convert the model to be able to run on NodeJS on a Raspberry Pi, translating the library from browser-based Javascript to Node: [tfjs-node](https://github.com/tensorflow/tfjs-node), storing model files locally and runninger inference on the Pi. [tiny.cc/yolo-pi](tiny.cc/yolo-pi) However, these changes to tfjs to enable it to target the Pi locked her into an older tf (classic hardware problem!). YOLO-Pi was one of the first projects ever running Tensorflow on a Pi.
+Using Tensorflow.js and [tiny-yolo (You Only Look Once)](https://pjreddie.com/darknet/yolo/), Stephanie built fast in-browser image detection - 800ms object detection - limited to people detection, but already trained an deployable. However, YOLO is intended for the browser, so the second task was to convert the model to be able to run on NodeJS on a Raspberry Pi, translating the library from browser-based Javascript to Node: [tfjs-node](https://github.com/tensorflow/tfjs-node), storing model files locally and runninger inference on the Pi. [tiny.cc/yolo-pi](https://tiny.cc/yolo-pi) However, these changes to tfjs to enable it to target the Pi locked her into an older tf (classic hardware problem!). YOLO-Pi was one of the first projects ever running Tensorflow on a Pi.
 
-Next came the hardware build. As a maker, Stephanie is constantly buying random things. She already had a [BlinkyTile Kit](https://blinkinlabs.com/blinkytile/), but needed to use her own microcontroller in order to ship her custom code. An OSS project by Jason Coon helped control the Blinky LEDs through the FastLED library for Arduino. [github.com/jasoncoon/BlinkyTileFastLED](github.com/jasoncoon/BlinkyTileFastLED). Stephanie began soldering the wearable LEDs on a manequin to make sure the fit worked well.
+Next came the hardware build. As a maker, Stephanie is constantly buying random things. She already had a [BlinkyTile Kit](https://blinkinlabs.com/blinkytile/), but needed to use her own microcontroller in order to ship her custom code. An OSS project by Jason Coon helped control the Blinky LEDs through the FastLED library for Arduino. [github.com/jasoncoon/BlinkyTileFastLED](https://github.com/jasoncoon/BlinkyTileFastLED). Stephanie began soldering the wearable LEDs on a manequin to make sure the fit worked well.
 
 However, communicating with serial ports between Pi and Arduino was harder than she expected.
 
@@ -83,7 +83,7 @@ She ran into "some really bad bugs." For example: power issues made the necklace
 
 Another fun bug she discovered - the microcontroller was crashing due to a memory leak. About every an hour, memory and swap got full. Through some running process debugging, she discovered her old text-speech necklace code was still on the Pi, running at boot, and had a previously undiscovered memory leak!
 
-All of this code is available on: [tiny.cc/ml-necklace](tiny.cc/ml-necklace)
+All of this code is available on: [tiny.cc/ml-necklace](https://tiny.cc/ml-necklace)
 
 Her final hardware challenge was a bit more unexpected. Moving the harness from the manequin to her body, she found bad connections and shorting (soldering is hard!), and the fit wasn't exactly right. She had also hoped to fit all the electronics in a fanny pack, but needed to end up using a larger wearable bag. She also discovered a new user requirement - a way to turn off the lights completely when not in use. She added a long-press button to toggle on/off manually.
 
