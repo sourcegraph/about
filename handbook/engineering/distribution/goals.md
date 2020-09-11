@@ -36,6 +36,7 @@ We will start by looking at our Kubernetes deployment and working on an easier u
     - ~~Cue.~~
     - ~~Bash/JQ.~~
     - ~~Dhall.~~
+  - ~~Create a Kubernetes deployment PoC~~
   - Design Dhall Architecture.
   - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback.
   - Use Dhall to generate public Kubernetes manifests.
