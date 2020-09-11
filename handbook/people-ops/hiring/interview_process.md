@@ -7,7 +7,7 @@ The documentation for each interview should:
 1. Define what the interviewer should be trying to measure and what "good" looks like.
 2. Provide questions that the interviewer can ask to get a good signal on the things that they need to measure.
 
-[Here is a good example](../engineering/hiring/engineering-leadership.md).
+[Here is a good example](../../engineering/hiring/engineering-leadership.md).
 
 Interviewers are not required to linearly ask every single question in the interview documentation; it is not a script.
 
@@ -18,7 +18,7 @@ The best kind of interview is one where the candidate feels like it was an organ
 
 We would like to move as much information as possbile about our interviews to our public handbook, including the interview questions themselves. This will allow motivated candidates to prepare their best answers to our questions. This work will be done by, and at the discretion of, individual hiring managers for the processes that they own.
 
-- [Engineering hiring documentation](../engineering/hiring/index.md).
+- [Engineering hiring documentation](../../engineering/hiring/index.md).
 - [Private hiring documentation](https://github.com/sourcegraph/interviews).
 
 ## Interviewers
