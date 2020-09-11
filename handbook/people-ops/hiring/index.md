@@ -36,6 +36,8 @@ We prefer to avoid listing "years of experience" as a qualification because time
 
 Our team contains highly motivated and productive members who've joined immediately after high school/university or after 10+ years of working at some of the best companies.
 
+See the [job descriptions guidelines](./job_description_guidelines.md) when creating a new role.
+
 ## Decision making process
 
 We review each candidate at each stage of our hiring pipeline (e.g. application, phone screen, interviews, references) to determine if we want to move the candidate to the next stage. Here are some things that we consider:
@@ -61,6 +63,7 @@ For any members of a hiring team, please see [this folder](https://drive.google.
 ## [Interview process](interview_process.md)
 
 See [interview process](interview_process.md).
+We perform reference checks for all new hires, see [reference check questions](reference_check_questions.md) for more details.
 
 ## Sharing interview feedback
 
