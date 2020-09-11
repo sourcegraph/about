@@ -23,7 +23,7 @@ We're hiring! Check out our open positions:
 ### Sales
 
 - [Account Executive](../handbook/sales/roles/account_executive.md)
-- [Sales Strategy & Operations Analyst or Manager](../handbook/sales/roles/gtm_sales_operations.md)
+- [Sales Strategy & Operations Analyst or Manager](../handbook/bizops/roles/gtm_sales_operations.md)
 
 ### Customer engineering
 
@@ -32,7 +32,7 @@ We're hiring! Check out our open positions:
 ### Operations, finance, and legal
 
 - [Internal Tools](../handbook/bizops/roles/internal_tools.md)
-- [Sales Strategy & Operations Analyst or Manager](../handbook/sales/roles/gtm_sales_operations.md)
+- [Sales Strategy & Operations Analyst or Manager](../handbook/bizops/roles/gtm_sales_operations.md)
 - [Financial Planning & Analysis Analyst](../handbook/bizops/roles/financial_planning_analysis.md)
 - [Senior Commercial Counsel](../handbook/bizops/roles/senior_commercial_counsel.md)
 

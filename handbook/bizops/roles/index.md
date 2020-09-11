@@ -1,7 +1,7 @@
 # Business operations roles
 
 - [Internal Tools](./internal_tools.md)
-- [Sales Strategy & Operations Analyst or Manager](../../sales/roles/gtm_sales_operations.md)
+- [Sales Strategy & Operations Analyst or Manager](./gtm_sales_operations.md)
 - [Financial Planning & Analysis Analyst](./financial_planning_analysis.md)
 - [Senior Commercial Counsel](./senior_commercial_counsel.md)
 
