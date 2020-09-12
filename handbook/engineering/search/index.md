@@ -35,8 +35,8 @@ _Updated 2020-09-11_
 
 - **Unblock improving user perceived performance**
   - **Problem:** Our current search infrastructure relies on on-shot requests with aggressive timeouts, but it is hard to tune those timeouts for large codebases. If we make the timeouts too small, then search may not return results for needle-in-the-haystack queries (because the search timed out). If we make the timeouts too large, then search becomes slower across the board and users spend time waiting for more results when we could have returned useful results to them sooner. Detecting and handling these timeouts across multiple service boundaries is also error prone and has led to bugs.
-  - **Outcome:** 
-      - Unblock the ability to add responsive and fast-loading search results. 
+  - **Outcome:**
+      - Unblock the ability to add responsive and fast-loading search results.
       - Return results faster for large result sets, e.g. indexed repositories in very large codebases.
   - **Plan:** Streaming search
   - **Owner:** Keegan
@@ -45,25 +45,19 @@ _Updated 2020-09-11_
 
 ### Expressive
 
-- **Search Expressions (AND/OR/NOT)** ([term explanation](https://github.com/sourcegraph/sourcegraph/issues/13126), [term RFC](https://docs.google.com/document/d/1SHky6nodPs1w_zRXz24jB2nq5LbMCJl1u7hcLTGHDL8/edit#))
-  - **Problem:** We have customers who want to migrate from OpenGrok and other search tools, and they want to be able to do searches that are available in those tools.
-  - **Outcomes:** OpenGrok users eagerly migrate to Sourcegraph, and can run complex searches on Sourcegraph.
+- **Extend Search Query Language**
+  - **Problem:** It is imperative that users can find and filter the code, files, repositories, and commits they care about in extremely large codebases.
+  - **Outcomes:** Users can express relations on code, files, repositories, and commits in search queries to more effectively filter the data they need. Sourcegraph is the exclusive industrial-strength search solution that provides these capabilities.
   - **Owner:** Rijnard
   - **Status:** In progress
-  - **Estimated completion:** TODO
-- **Improve syntax for existing filters like `repohasfile`**
-  - **Problem:** Creating a custom filter name for every permutation of search use does not scale (existing filter examples: `repohasfile`, `hascommitafter`).
-  - **Outcomes:** We have an expressive syntax that scales and effectively leverages existing filters to achieve searches that previously would have required a custom/new filter.
-  - **Tentative Plan:** Implement a query language extension to express relations (i.e., rules) on code, files, repositories, and commits
+  - **Plan**
+      - Implement a query language extension to express relations (i.e., rules) on code, files, repositories, and commits. This replaces awkward one-off filters like `repohasfile`, `repohascommitafter` that do not generalize.
+      - Prototype semantic search functionality that combines text search and LSIF data
+      - Implement quality-of-life features for search: syntax highlighting, multiline queries, improve structural search performance
   - **Owner:** Rijnard/Stefan
   - **Status:** Not started
-  - **Estimated start:** TODO
-  - **Estimated effort:** TODO
-- **Revision search**
-  - **Problem:** Users want to search across branches with the same ease as searching across repositories, and are currently unable to do so.
-  - **Owner:** Stefan
-  - **Status:** In progress
-  - **Estimated completion**: TODO
+  - **Estimated start:** 3.21
+  - **Estimated effort:** 4 months
 
 ### Easy to use
 
