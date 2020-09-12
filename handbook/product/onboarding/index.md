@@ -33,6 +33,7 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
     - [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)
 - Know our tools
   - Watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn how we use the application
+  - Read [Figma developers guide](https://www.smashingmagazine.com/2020/09/figma-developers-guide/)
 - Understand our goals
   - [Sourcegraph master plan](../../../company/strategy.md)
   - [Sourcegraph direction (1 year plan)](../../../direction/index.md)
