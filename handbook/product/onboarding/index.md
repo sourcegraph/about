@@ -31,6 +31,8 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
   - Feedback
     - [HubSpot](https://app.hubspot.com/forms/2762526/a86bbac5-576d-4ca0-86c1-0c60837c3eab/submissions)
     - [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)
+- Know our tools
+  - Watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn how we use the application
 - Understand our goals
   - [Sourcegraph master plan](../../../company/strategy.md)
   - [Sourcegraph direction (1 year plan)](../../../direction/index.md)
