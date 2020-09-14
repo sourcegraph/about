@@ -29,7 +29,7 @@ _Updated 2020-09-11_
    - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
    - **Owners:** Keegan/Stefan
    - **Status:** Sourcegraph.com currently has about 100k repositories.
-   - **Estimated completion**: TODO
+   - **Estimated completion**: 3.23 (End of December 2020)
 
 ### Fast
 
