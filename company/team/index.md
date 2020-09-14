@@ -420,3 +420,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Bio (hobbies, work experience, family, pets, etc.)
 
 -->
+
+## Chris Surdi
+
+- Account Executive 
+- San Francisco, Ca, USA, 🇺🇸 
+- [chris.surdi@sourcegraph.com](mailto:chris.surdi@sourcegraph.com)
+- I’m a serial entrepreneur and angel employee with a passion for disruptive technology and sales. I live north of San Francisco with my wife Meliza and three kids - Truson, Kaison and Crimson. I'm originally from back East and moved out to the West Coast in 2003 to be involved in startups, technology, and innovation. I'm grateful to say I'm doing everything I've set myself out to achieve at this point. 
+
