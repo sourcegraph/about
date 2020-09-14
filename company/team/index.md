@@ -408,6 +408,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [GitHub](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
 - María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
 
+## Chris Surdi
+
+- Account Executive 
+- San Francisco, Ca, USA, 🇺🇸 
+- [chris.surdi@sourcegraph.com](mailto:chris.surdi@sourcegraph.com)
+- I’m a serial entrepreneur and angel employee with a passion for disruptive technology and sales. I live north of San Francisco with my wife Meliza and three kids - Truson, Kaison and Crimson. I'm originally from back East and moved out to the West Coast in 2003 to be involved in startups, technology, and innovation. I'm grateful to say I'm doing everything I've set myself out to achieve at this point. 
 
 <!-- Paste *your* section above this line by following our template below:
 
@@ -421,10 +427,4 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 -->
 
-## Chris Surdi
-
-- Account Executive 
-- San Francisco, Ca, USA, 🇺🇸 
-- [chris.surdi@sourcegraph.com](mailto:chris.surdi@sourcegraph.com)
-- I’m a serial entrepreneur and angel employee with a passion for disruptive technology and sales. I live north of San Francisco with my wife Meliza and three kids - Truson, Kaison and Crimson. I'm originally from back East and moved out to the West Coast in 2003 to be involved in startups, technology, and innovation. I'm grateful to say I'm doing everything I've set myself out to achieve at this point. 
 
