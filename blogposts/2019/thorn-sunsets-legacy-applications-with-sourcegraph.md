@@ -12,7 +12,7 @@ description: "Thorn builds technology to defend children from sexual abuse, help
 ---
 
 <p style="text-align: center">
-  <img src="/case-studies/thorn-sourcegraph-case-study-og-embed.jpg" alt="Thorn and sourcegraph case study"/>
+  <img src="/case-studies/thorn-sourcegraph-case-study-og-embed.jpg" alt="Sourcegraph helped Thorn deprecate legacy code safely"/>
 </p>
 
 [Thorn](https://www.thorn.org/) builds technology to defend children from sexual abuse, helping law enforcement reduce investigation times by 60%, ensuring that more children are found, faster.
