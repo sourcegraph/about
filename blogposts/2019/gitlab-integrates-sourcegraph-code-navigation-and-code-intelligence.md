@@ -9,7 +9,7 @@ published: true
 ---
 
 <p style="text-align: center">
-  <img src="/blog/gitlab-integration-banner-dark.png" alt="GitLab plus sourcegraph logo"/>
+  <img src="/blog/gitlab-integration-banner-dark.png" alt="GitLab plus Sourcegraph logo"/>
 </p>
 
 <div class="blockquote case-studies__quote case-studies__quote--in-content">
