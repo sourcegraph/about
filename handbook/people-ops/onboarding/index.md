@@ -24,7 +24,7 @@ Never assume that a problem is somebody else's to fix!
 - Account setup
   - **[G Suite/Gmail](https://www.google.com/gmail/)**: Access all G Suite apps in our org (Gmail, Google Docs, Google Sheets, Google Calendar, G Hire).
   - **[Slack](https://slack.com/)**: Access our team communication tool.
-  - **[GitHub](https://github.com/sourcegraph/Graphbook)**: Access the handbook.
+  - **[GitHub](https://github.com/sourcegraph/)**: Access our code and our handbook.
   - **[Lattice](https://sourcegraph.latticehq.com/)**: Access our [teammate feedback cycles](../review-cycles.md) (takes place every quarter– Noemi will send out details).
   - **[1Password](https://1password.com/)**: Access shared team passwords and store your own passwords.
   - **[Expensify](https://www.expensify.com/signin):** Submit receipts for any work related expenses for reimbursement. Expensify will be linked to your Sourcegraph email.
