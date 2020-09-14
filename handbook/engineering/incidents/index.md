@@ -19,10 +19,10 @@ Incidents can be reported by anyone (e.g. customers, Sourcegraph teammates) by a
 2. Start an internal communication thread about this incident in the #dev-ops channel in Slack.
     - All subsequent communication about this issue should happen in that Slack _thread_ (not in the top level #dev-ops channel).
 3. Identify an engineer to triage the incident.
-    1. If the initial alert came from our alerting infrastructure, then the alert should be routed to the responsible [team](https://sourcegraph.com/search?q=repo:github.com/sourcegraph/sourcegraph+file:monitoring/frontend.go+ObservableOwner&patternType=literal)
+    - If the initial alert came from our alerting infrastructure, then the alert should be routed to the responsible [team](https://sourcegraph.com/search?q=repo:github.com/sourcegraph/sourcegraph+file:monitoring/frontend.go+ObservableOwner&patternType=literal)
 
-    1. If you are an engineer and available for 30 minutes, then you should [triage the incident](#triage).
-    1. If you are not an engineer or are not available to triage the incident, then ask the on-call engineer to triage the incident.
+    - If you are an engineer and available for 30 minutes, then you should [triage the incident](#triage).
+    - If you are not an engineer or are not available to triage the incident, then ask the on-call engineer to triage the incident.
         - You can find out who is on-call by typing `/genie whoisoncall` in Slack.
         - If you are not able to immediately get in contact with the on-call engineer, then manually create a new OpsGenie alert by typing `/genie <description of incident and link to Slack thread> with ops_team`.
 
