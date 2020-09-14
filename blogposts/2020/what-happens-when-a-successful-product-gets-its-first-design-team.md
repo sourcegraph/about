@@ -100,7 +100,7 @@ To keep our design system up-to-date we have set up a review and [approval proce
 A most recent example of the change that was proposed using this process is an update of our outline buttons and button groups. See the [proposal](https://www.figma.com/file/iQIlSvEBuVz1jXTGjRVNeE/Header-example-article-Alicja?node-id=6%3A65) and the [pull request](https://github.com/sourcegraph/sourcegraph/issues/12982) for more details.
 
 <div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/design-component-system.png" width="70%" alt="Brand new design system illustration">
+  <img src="https://sourcegraphstatic.com/design-component-system.png" width="70%" alt="Brand new component system illustration">
 </div>
 
 ## What’s next?
