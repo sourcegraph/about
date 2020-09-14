@@ -41,7 +41,7 @@ _Updated 2020-09-11_
   - **Plan:** Streaming search
   - **Owner:** Keegan
   - **Status:** In progress
-  - **Estimated completion:** TODO
+  - **Estimated completion:** 3.21
 
 ### Expressive
 
