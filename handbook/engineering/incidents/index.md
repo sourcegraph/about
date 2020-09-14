@@ -19,10 +19,13 @@ Incidents can be reported by anyone (e.g. customers, Sourcegraph teammates) by a
 2. Start an internal communication thread about this incident in the #dev-ops channel in Slack.
     - All subsequent communication about this issue should happen in that Slack _thread_ (not in the top level #dev-ops channel).
 3. Identify an engineer to triage the incident.
-    - If you are an engineer and available for 30 minutes, then you should [triage the incident](#triage).
-    - If you are not an engineer or are not available to triage the incident, then ask the on-call engineer to triage the incident.
+    1. If the initial alert came from our alerting infrastructure, then the alert should be routed to the responsible [team](https://sourcegraph.com/search?q=repo:github.com/sourcegraph/sourcegraph+file:monitoring/frontend.go+ObservableOwner&patternType=literal)
+
+    1. If you are an engineer and available for 30 minutes, then you should [triage the incident](#triage).
+    1. If you are not an engineer or are not available to triage the incident, then ask the on-call engineer to triage the incident.
         - You can find out who is on-call by typing `/genie whoisoncall` in Slack.
         - If you are not able to immediately get in contact with the on-call engineer, then manually create a new OpsGenie alert by typing `/genie <description of incident and link to Slack thread> with ops_team`.
+
 
 ## Triage
 
@@ -60,6 +63,24 @@ The resolution owner is responsible for resolving the incident as quickly and sa
 The owner of the incident may delegate tasks to other available/working engineers if necessary but should make a best effort to minimize the number of other engineers who get interrupted by the incident. This delegated work preempts work unrelated to operational incidents.
 
 If the issue can not be quickly resolved (via rollback or other means) and if it is a severe problem with sourcegraph.com, then create an issue on sourcegraph/sourcegraph and tweet from the Sourcegraph account (e.g. https://twitter.com/srcgraph/status/1101603205203484672, https://twitter.com/srcgraph/status/1101606401753792512, https://twitter.com/srcgraph/status/1101621105620529153).
+
+
+## Escalation Policy
+
+When the resolution owner believes an incident requires more team members' attention, they may escalate the alert. By default, if an alert from our alerting infrastructure remains unacknowledged by the on-call engineer responsible for that alert for 10 minutes, then the entire mission team will be notified. The resolution owner may also trigger this manually within our alerting infrastructure. The resolution owner should make a best effort to contain an escalation to the team responsible for a service.
+
+Escalation Hierarchy:
+
+1. First one to discover issue / on-call engineer
+2. Mission team responsible for this service
+
+_most escalation should stop here_
+
+3. VP of Engineering
+   1. (Optional) If this a security incident then the security-team should be notified as well here
+4. CTO
+5. CEO
+
 
 ## Post-mortem
 
