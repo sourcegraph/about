@@ -17,7 +17,7 @@ For example, **repo:foo** will restrict your query to repositories whose name co
 Search scopes make it easier to quickly search only among the code you care about, such as all JavaScript files or only non-vendored code.
 
 <div>
-    <img class="pa1 ba b--light-7" src="//images.contentful.com/le3mxztn6yoo/Fko76K31Ic6q0KC8IKEue/7e0dff2bb462e5cc4d60d1e5a3a3505d/search-demo.gif" alt="Search scopes demo, a more powerful code search on sourcegraph"/>
+    <img class="pa1 ba b--light-7" src="//images.contentful.com/le3mxztn6yoo/Fko76K31Ic6q0KC8IKEue/7e0dff2bb462e5cc4d60d1e5a3a3505d/search-demo.gif" alt="Search scopes demo, a more powerful code search on Sourcegraph"/>
 </div>
 
 Try it out at [sourcegraph.com/search](https://sourcegraph.com/search) or on a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#quickstart) now.
