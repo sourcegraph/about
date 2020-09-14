@@ -8,25 +8,26 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 Creating a new release for our deployments is currently a semi-automated process, which requires several manual steps and synchronizing our versioned artifacts (Sourcegraph, Kubernetes manifests, docker-compose manifests, etc). We want to enable any engineer to perform a release as often as needed, to enable this we want to make releasing Sourcegraph a simple, automated process.
 
-- **Owner**: Distribution Team
+- **Owner**: Stephen, Dave, Robert
 - **Status**: In Progress
 - **Outcomes**:
   - Releases can be triggered by a single manual step.
   - All supported deployment types are released at the same time with the same command.
   - Support documentation enables any engineer to perform a release with confidence.
 - **Milestones**:
-  - ~~Enable running e2e test on an environment matching its test (docker-compose in a VM).~~
-  - Enable continuous e2e tests on `main`.
-  - Ensure relevant engineers are notified of broken builds.
+  - ~~[Enable running e2e test on an environment matching its test (docker-compose in a VM)](https://github.com/orgs/sourcegraph/projects/72).~~
+  - [Automatically update the dogfood cluster](https://github.com/orgs/sourcegraph/projects/83).
+  - [Enable continuous e2e tests on `main`](https://github.com/orgs/sourcegraph/projects/72).
+  - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/72).
   - Releases can be done in a single day.
   - Releases can be done automatically with a single `/` command via Slack.
 
-### Upgrades between releases are easy to perform
+### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
 
 Performing upgrades to deployments is currently a complicated process that requires keeping a fork of our configuration and resolving diff conflicts when performing upgrades which are often complicated as the configuration might contain environment-specific customization. This process creates a bad experience for our customers because of the unknown amount of effort of the upgrade process.
 We will start by looking at our Kubernetes deployment and working on an easier update process.
 
-- **Owner**: Distribution Team
+- **Owner**: Geoffrey, Uwe
 - **Status**: In Progress
 - **Outcomes**:
   - Upgrades to deployments do not require resolving diff conflicts from upstream.
@@ -36,13 +37,13 @@ We will start by looking at our Kubernetes deployment and working on an easier u
     - ~~Cue.~~
     - ~~Bash/JQ.~~
     - ~~Dhall.~~
-  - ~~Create a Kubernetes deployment PoC~~
+  - ~~Create a Kubernetes deployment PoC.~~
   - Design Dhall Architecture.
   - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback.
   - Use Dhall to generate public Kubernetes manifests.
   - Create customer facing migration path and how-to documentation.
   - Migrate a highly technical customer to Dhall and collect usage feedback.
-  - Design customization worklfow.
+  - Design customization workflow.
     - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
 
 
