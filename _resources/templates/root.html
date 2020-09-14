@@ -13,7 +13,7 @@
 		<body>
 			<header id="header">
 				<div class="container">
-					<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" /></a>
+					<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" alt="Sourcegraph logo" /></a>
 					<nav>
 						<form id="search-form" method="get" action="/search">
 							<input type="text" id="search-input" name="q" value="{{block "query" .}}{{end}}" placeholder="Search handbook..." spellcheck="false" />

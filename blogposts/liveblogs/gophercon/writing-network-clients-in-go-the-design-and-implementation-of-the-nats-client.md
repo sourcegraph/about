@@ -82,7 +82,7 @@ Waldemar emphasizes that this mode of guarantee may sound like a limitation, but
 > What the application wants to know is whether or not the target host acted on the message…
 
 
-![](/blog-images/blog-images/alien.png)
+![Alien](/blog-images/blog-images/alien.png)
 
 References:
 

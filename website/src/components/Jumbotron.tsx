@@ -32,6 +32,7 @@ export const Jumbotron: React.FunctionComponent<{
                     style={{ width: '2rem', height: '2rem' }}
                     src="/sourcegraph/sourcegraph-mark.svg"
                     aria-hidden="true"
+                    alt="Sourcegraph mark"
                 />
             )}
             <h1 className={titleClassName}>{title}</h1>
