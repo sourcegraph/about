@@ -16,7 +16,7 @@ Creating a new release for our deployments is currently a semi-automated process
   - Support documentation enables any engineer to perform a release with confidence.
 - **Milestones**:
   - ~~Enable running e2e test on an environment matching its test (docker-compose in a VM).~~
-  - Enable continuos e2e tests on `main`.
+  - Enable continuous e2e tests on `main`.
   - Ensure relevant engineers are notified of broken builds.
   - Releases can be done in a single day.
   - Releases can be done automatically with a single `/` command via Slack.
