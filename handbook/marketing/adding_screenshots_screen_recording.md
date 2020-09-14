@@ -120,7 +120,7 @@ Once you’ve been added as an owner, switch to the Sourcegraph user account.
 <br/>
 
 <div class="text-center">
-  <img src="https://sourcegraphstatic.com/handbook/youtube-switch-account.gif"class="drop-shadow" alt="switch to sourcegraph user account"/>
+  <img src="https://sourcegraphstatic.com/handbook/youtube-switch-account.gif"class="drop-shadow" alt="switch to Sourcegraph user account"/>
 </div>
 
 Export your video in 16:9 ratio (should probably be 720p), then [upload your video to YouTube](https://studio.youtube.com/channel/UCOy2N25-AHqE43XupT9mwZQ):
