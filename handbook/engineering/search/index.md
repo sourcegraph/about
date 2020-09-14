@@ -72,7 +72,7 @@ _Updated 2020-09-11_
           - **Plan:** Enterprise homepage
           - **Owner:** Farhan, Juliana
           - **Status:** In progress
-         - **Estimated completion**: 3.21 release
+         - **Estimated completion**: 3.21
   - **Outcomes:**
      - New users introduced to Sourcegraph are able to quickly run searches that show them the value of Sourcegraph.
      - Users can run searches over code they care about more quickly.
