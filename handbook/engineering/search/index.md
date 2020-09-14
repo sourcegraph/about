@@ -67,7 +67,7 @@ _Updated 2020-09-11_
           - **Plan:** Search onboarding tour
           - **Owner:** Farhan
           - **Status:** In progress
-          - **Estimated completion**: TODO
+          - **Estimated completion**: 3.20
       - It is hard for users to quickly get to code they care about.
           - **Plan:** Enterprise homepage
           - **Owner:** Farhan, Juliana
