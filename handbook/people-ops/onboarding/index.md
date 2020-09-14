@@ -21,13 +21,11 @@ Never assume that a problem is somebody else's to fix!
 ## General onboarding checklist
 
 - Watch the [new team member intro from the CEO](https://www.youtube.com/watch?v=EVHUGZe5uts)
-  - [Sourcegraph values](../../../company/values.md)
-  - [Sourcegraph strategy](../../../company/strategy.md)
 - Account setup
   - **[G Suite/Gmail](https://www.google.com/gmail/)**: Access all G Suite apps in our org (Gmail, Google Docs, Google Sheets, Google Calendar, G Hire).
   - **[Slack](https://slack.com/)**: Access our team communication tool.
   - **[GitHub](https://github.com/sourcegraph/Graphbook)**: Access the handbook.
-  - **[Lattice](https://sourcegraph.latticehq.com/)**: Access our teammate feedback cycles (takes place every quarter– Noemi will send out details).
+  - **[Lattice](https://sourcegraph.latticehq.com/)**: Access our [teammate feedback cycles](../review-cycles.md) (takes place every quarter– Noemi will send out details).
   - **[1Password](https://1password.com/)**: Access shared team passwords and store your own passwords.
   - **[Expensify](https://www.expensify.com/signin):** Submit receipts for any work related expenses for reimbursement. Expensify will be linked to your Sourcegraph email.
   - **[Jamf Now](https://sourcegraph.jamfcloud.com)**: Enroll your device in our MDM (ask Noemi for your access code).
@@ -50,7 +48,8 @@ Never assume that a problem is somebody else's to fix!
      - Add a link to your team page bio to your Slack profile
   - Read Sourcegraph's [information security policy](https://about.sourcegraph.com/security) and acknowledge your acceptance: https://forms.gle/LUK1YtwAMJLhtRPi6.
 - Learn about Sourcegraph
-  - 
+  - Read the [Sourcegraph values](../../../company/values.md).
+  - Read the [Sourcegraph strategy](../../../company/strategy.md).
   - Read the first page of [Sourcegraph's user documentation](https://docs.sourcegraph.com/user).
   - Go through the [analytics onboarding](https://sourcegraph.looker.com/projects/sourcegraph_events/files/1_home.md). This onboarding is within Looker, so if you don't have an account you can ask for access in #analytics.
   - Watch Dan's [Sourcegraph Demo](https://drive.google.com/file/d/1VUZ0rnZQpNgjtGDI0tMC-h-OtL0Czz8H/view)
