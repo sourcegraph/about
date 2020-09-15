@@ -28,8 +28,7 @@ Performing upgrades to deployments is currently a complicated process that requi
 We will start by looking at our Kubernetes deployment and working on an easier update process.
 
 - **Owner**: Geoffrey, Uwe
-- **Status**: In Progress
-- **Length**: ~4 months
+- **Status**: In progress. Estimated completion FY20-Q4.
 - **Outcomes**:
   - Upgrades to deployments do not require resolving diff conflicts from upstream.
   - Upgrading a deployment configuration requires less than 2 hours of work.
