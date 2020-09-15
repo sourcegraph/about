@@ -9,8 +9,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 Creating a new release for our deployments is currently a semi-automated process, which requires several manual steps and synchronizing our versioned artifacts (Sourcegraph, Kubernetes manifests, docker-compose manifests, etc). We want to enable any engineer to perform a release as often as needed, to enable this we want to make releasing Sourcegraph a simple, automated process.
 
 - **Owner**: Stephen, Dave, Robert
-- **Status**: In Progress
-- **Length**: ~3 months
+- **Status**: In progress. Estimated completion by end of 2020.
 - **Outcomes**:
   - Releases can be triggered by a single manual step.
   - All supported deployment types are released at the same time with the same command.
