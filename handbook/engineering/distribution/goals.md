@@ -15,11 +15,11 @@ Creating a new release for our deployments is currently a semi-automated process
   - All supported deployment types are released at the same time with the same command.
   - Support documentation enables any engineer to perform a release with confidence.
 - **Milestones**:
-  - ~~[Enable running e2e test on an environment matching its test (docker-compose in a VM)](https://github.com/orgs/sourcegraph/projects/72).~~
-  - [Automatically update the dogfood cluster](https://github.com/orgs/sourcegraph/projects/83).
-  - [Enable continuous e2e tests on `main`](https://github.com/orgs/sourcegraph/projects/72).
-  - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/72).
-  - Releases can be done in a single day.
+  - ~~[Enable running e2e test on an environment matching its test (docker-compose in a VM)](https://github.com/orgs/sourcegraph/projects/72).~~ Done: 3.20
+  - [Automatically update the dogfood cluster](https://github.com/orgs/sourcegraph/projects/83). _Estimated completion: 3.20_
+  - [Enable continuous e2e tests on `main`](https://github.com/orgs/sourcegraph/projects/72). _Estimated completion: 3.20_
+  - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/72). _Estimated completion: 3.21_
+  - Releases can be done in a single day. _Estimated completion: 3.21_
   - Releases can be done automatically with a single `/` command via Slack.
 
 ### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
@@ -33,12 +33,12 @@ We will start by looking at our Kubernetes deployment and working on an easier u
   - Upgrades to deployments do not require resolving diff conflicts from upstream.
   - Upgrading a deployment configuration requires less than 2 hours of work.
 - **Milestones**:
-  - ~~Research and evaluate possible tools.~~
-    - ~~Cue.~~
+  - ~~Research and evaluate possible tools.~~ Done: 3.19
     - ~~Bash/JQ.~~
-    - ~~Dhall.~~
-  - ~~Create a Kubernetes deployment PoC.~~
-  - Design Dhall Architecture.
+    - ~~Cue.~~ Done: 3.17
+    - ~~Dhall.~~ Done: 3.18
+  - ~~Create a Kubernetes deployment PoC.~~ Done: 3.19
+  - Design Dhall Architecture. _Estimated completion: 3.20_
   - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback.
   - Use Dhall to generate public Kubernetes manifests.
   - Create customer facing migration path and how-to documentation.
@@ -61,15 +61,15 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 
 ### Split Cloud infrastructure into separate GCP projects
 
-- **Owner**: TBD
+- **Owner**: Gonza
 - **Status**: On-hold
 - **Outcomes**:
   - We have a clear guideline on when to split resources to new projects.
   - We report the cost of each project.
   - We can set spending limits for dynamic environments.
 - **Milestones**:
-  - ~~Create initial GCP structure.~~
-  - ~~Move non-production projects to folders.~~
+  - ~~Create initial GCP structure.~~ Done: 3.19
+  - ~~Move non-production projects to folders.~~ Done: 3.20
   - Move non-production deployments to separate projects.
   - Move CI to a new GCP project.
   - Create code to bootstrap new projects.
