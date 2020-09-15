@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Tracxn",
+      "newsTitle": "Emerging Startups 2020: Top Application Development Tools",
+      "newsDate": "August 28, 2020",
+      "newsLink": "https://tracxn.com/d/emerging-startups/application-development-tools-startups-2020",
+      "newsImage": "/external-logos/tracxn-logo.png"
+    },
+    {
       "newsSource": "LWN.net",
       "newsTitle": "Searching code with Sourcegraph (subscriber content)",
       "newsDate": "August 17, 2020",

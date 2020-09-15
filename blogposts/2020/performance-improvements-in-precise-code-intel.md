@@ -355,8 +355,8 @@ These last charts show the size of the converted bundle on disk after conversion
 </div>
 
 <style>
-  .blog-post__body img { box-shadow: none; display: inline; margin: 10px auto; }
-  .blog-post__body .alert pre { display: inline; }
+  .blog-post__html img { box-shadow: none; display: inline; margin: 10px auto; }
+  .blog-post__html .alert pre { display: inline; }
 </style>
 
 With all the changes discussed in this post combined, the latency for queries and upload processing has been cut by a factor of two, as has the size of bundles on disk, compared to Sourcegraph 3.15.

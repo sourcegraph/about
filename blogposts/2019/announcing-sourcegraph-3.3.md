@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.3
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.3: Improving the user experience for site admins'
 ---
 
 We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navigation tool (self-hosted, open source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!

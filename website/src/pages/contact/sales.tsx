@@ -1,7 +1,12 @@
+
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 import { createHubSpotForm } from '../../components/HubSpot'
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+
+const title = 'Sourcegraph - Talk to a product specialist'
+const desc = 'Talk to a Sourcegraph product specialist. Let us know how we can help.'
 
 export default class SalesPage extends React.Component<any, any> {
     constructor(props: any) {
@@ -23,6 +28,15 @@ export default class SalesPage extends React.Component<any, any> {
     public render(): JSX.Element | null {
         return (
             <Layout className="pt-0" location={this.props.location} minimal={true}>
+                <Helmet>
+                    <title>{title}</title>
+                    <meta name="twitter:title" content={title} />
+                    <meta property="og:title" content={title} />
+                    <meta name="twitter:description" content={desc} />
+                    <meta property="og:description" content={desc} />
+                    <meta name="description" content={desc} />
+                    <link rel="icon" type="image/png" href="/favicon.png" />
+                </Helmet>
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
                 <div className="form-page bg-white text-dark">
                     <div className="container-xl pt-5 px-5">

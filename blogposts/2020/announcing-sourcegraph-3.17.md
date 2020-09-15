@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.17
 heroImage: /blog/3.17-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.17: Faster and automatic precise code intelligence, preview of code insights, and AND/OR queries for searching file contents"
 ---
 
 We've shipped Sourcegraph 3.17 with many improvements to help you explore, navigate, and understand your code with universal code search:
@@ -115,7 +116,7 @@ Initially, AND/OR operators support searching file contents. Operators for filte
 
 ### Easier alerting configuration
 
-Configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks]([https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting)). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
+Configure Sourcegraph to send alerts about its health to [notifiers like Slack, PagerDuty, and webhooks](https://docs.sourcegraph.com/admin/observability/alerting#setting-up-alerting). Set `observability.alerts` in your Sourcegraph configuration to automatically have alerts set up and subscribed to relevant notifiers in Grafana:
 
 ```json
 "observability.alerts": {

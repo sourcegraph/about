@@ -2,6 +2,11 @@
 
 Sourcegraph is seeking an engineer that thrives on owning big problems across domains and different levels of the stack — you grok how the ultimate measure of your work is how users experience the work you do, and that means you wear any hat necessary to that end, from product, to developer, and everything in between. You are a polyglot, quick learner and fearless into diving into unknown areas of the systems you work with. You believe that communicating clearly and empathetically and your relationships with others is critical to our success.
 
+The following engineering teams are currently hiring for this role:
+
+1. [Code Intelligence](../code-intelligence/index.md)
+2. [Cloud](../cloud/index.md)
+
 ## Qualifications
 
 We are looking for a full stack engineer who has strong fundamentals in good software development techniques, design patterns and best practices. In your career you have worked with and refactored existing code bases. You are both productive and pragmatic because you believe software is only useful if it is used. Collaborating with small high performing teams, you have built and deployed production-ready software that delivers value to customers.
@@ -34,7 +39,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-<!-- 1. You [apply here](TODO). -->
+1. You [apply here](https://jobs.lever.co/sourcegraph/cea553ce-ace7-4b44-8828-8d421e5e7e9c/apply).
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. We set up a 60-minute call with the hiring manager to discuss your technical experience including past work and accomplishments.
 1. We evaluate relevant technical skills that you have via an asynchronous coding exercise.
@@ -50,4 +55,4 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-<!-- **[Click here to apply](TODO)** -->
+**[Click here to apply](https://jobs.lever.co/sourcegraph/cea553ce-ace7-4b44-8828-8d421e5e7e9c/apply)**

@@ -1,4 +1,4 @@
-# Onboarding
+# Customer Engineering onboarding
 
 Welcome to Sourcegraph! This document will guide you through customer engineering-specific onboarding.
 
@@ -50,7 +50,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - [Goals](../../company/goals/index.md)
   - Last board deck or video
 - [Product](../product/index.md)
-  - [Personas](../product/personas.md)
+  - [Personas](../marketing/personas.md)
   - [Products](https://about.sourcegraph.com/product)
 - Read/watch
   - Entire [about.sourcegraph.com](https://about.sourcegraph.com) site
@@ -60,6 +60,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - Latest Sourcegraph release blog post (on our [blog](https://about.sourcegraph.com/blog))
 - Set up 1-on-1s over the next month with all members of the [Distribution team](../engineering/distribution/index.md). This is the engineering team that CEs traditionally work with most often, as they own customer deployment, monitoring, and upgrades.
 - Set up 1-on-1s over the next month with all members of the [Sales team](../sales/index.md).
+- Confirm with Noemi you can access the "Sourcegraph shared" folder on Google Drive
 
 ### Checkpoint
 

@@ -136,7 +136,7 @@ Ian then reviews last years contracts design and highlights the fact that some s
 
 ![Ordered Contract](/gophercon-2019/generics-ordered-contract.png)
 
-On the slides is a link to actual implementations using the current draft [golang.org/cl/187317](golang.org/cl/187317) [rec: 22:24]
+On the slides is a link to actual implementations using the current draft [golang.org/cl/187317](https://golang.org/cl/187317) [rec: 22:24]
 
 ## Parting note during talk:
 

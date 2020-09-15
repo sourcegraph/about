@@ -1,41 +1,53 @@
 {{define "root"}}
-	<html>
-		<head>
-			<title>{{block "title" .}}Home{{end}} - Sourcegraph</title>
-			<link rel="icon" type="image/png" href="{{asset "sourcegraph-mark.png"}}" />
-			<link rel="stylesheet" type="text/css" href="{{asset "layout.css"}}" />
-			<link rel="stylesheet" type="text/css" href="{{asset "document.css"}}" />
-			<link rel="stylesheet" type="text/css" href="{{asset "search.css"}}" />
-			<link rel="stylesheet" type="text/css" href="{{asset "content.css"}}" />
-			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-			{{block "head" .}}{{end}}
-		</head>
-		<body>
-			<header id="header">
-				<div class="container">
-					<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" alt="Sourcegraph logo" /></a>
-					<nav>
-						<form id="search-form" method="get" action="/search">
-							<input type="text" id="search-input" name="q" value="{{block "query" .}}{{end}}" placeholder="Search handbook..." spellcheck="false" />
-							<button id="search-button" type="submit">Search</button>
-						</form>
-						<a href="https://about.sourcegraph.com">About</a>
-						<a href="https://sourcegraph.com">Sourcegraph.com</a>
-					</nav>
-				</div>
-			</header>
-			<div id="page">
-				<div class="container">
-					{{block "content" .}}{{end}}
-				</div>
-			</div>
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40540747-17"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());	
-				gtag('config', 'UA-40540747-17');
-			</script>
-		</body>
-	</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>{{block "title" .}}Home{{end}} - Sourcegraph</title>
+	<link rel="icon" type="image/png" href="{{asset "sourcegraph-mark.png"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "layout.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "document.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "search.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "content.css"}}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TB4NLS7');</script>
+	<!-- End Google Tag Manager -->
+	{{block "head" .}}{{end}}
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB4NLS7" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<header id="header">
+		<div class="container">
+			<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" alt="Sourcegraph logo" /></a>
+			<nav>
+				<form id="search-form" method="get" action="/search">
+					<input type="text" id="search-input" name="q" value="{{block "query" .}}{{end}}"
+						placeholder="Search handbook..." spellcheck="false" />
+					<button id="search-button" type="submit">Search</button>
+				</form>
+				<a href="https://about.sourcegraph.com">About</a>
+				<a href="https://sourcegraph.com">Sourcegraph.com</a>
+			</nav>
+		</div>
+	</header>
+	<div id="page">
+		<div class="container">
+			{{block "content" .}}{{end}}
+		</div>
+	</div>
+</body>
+
+</html>
 {{end}}

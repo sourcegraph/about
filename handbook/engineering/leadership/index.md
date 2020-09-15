@@ -7,7 +7,7 @@ This page documents the engineering leadership team.
 - [Beyang Liu](../../../company/team/index.md#beyang-liu), CTO
 - [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](../roles.md#vp-engineering)
   - [Tomás Senart](../../../company/team/index.md#tomás-senart), [Engineering Manager](../roles.md#engineering-manager), [Cloud](../cloud/index.md)
-  - [Loïc Guychard](../../../company/team/index.md#loïc-guychard), [Engineering Manager](../roles.md#engineering-manager), [Web](../campaigns/index.md)
+  - [Loïc Guychard](../../../company/team/index.md#loïc-guychard), [Engineering Manager](../roles.md#engineering-manager), [Search](../search/index.md)
   - [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim), [Engineering Manager](../roles.md#engineering-manager), [Distribution](../distribution/index.md)
   - [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him), [Engineering Manager](../roles.md#engineering-manager), [Security](../security/index.md)
   - [Aida DeWitt](../../../company/team/index.md#aida-dewitt-she-her), [Engineering Manager](../roles.md#engineering-manager), [Code Intelligence](../code-intelligence/index.md)
@@ -51,7 +51,7 @@ Our long term vision is to build an organization that attracts and retains the b
 
 #### Publicly documented compensation bands
 
-- Problem: When we were smaller, it was easy to contain consistent compensation across the entire team because there were fewer people to coordinate with. Now that we are bigger and have more engineering managers making offers and compensation decisions, we need to have clearly documented compensation bands so we can maintain consistency while federating decision making. We want to make this public because it will help candidates understand what they can expect before they even apply. This is a better candidate experience and it avoid rare but real situations where a candidate goes through our interview process only to discover that their compensation expectations don't fit into our bands.
+- Problem: When we were smaller, it was easy to contain consistent compensation across the entire team because there were fewer people to coordinate with. Now that we are bigger and have more engineering managers making offers and compensation decisions, we need to have clearly documented compensation bands so we can maintain consistency while federating decision making. We want to make this public because it will help candidates understand what they can expect before they even apply. This is a better candidate experience and it avoids rare but real situations where a candidate goes through our interview process only to discover that their compensation expectations don't fit into our bands.
 - Owner: Nick
 - Plan:
   1. Update our benchmark data and set bands to be shared with engineering managers internally to help them make offers and review/adjust compensation for their teams.
@@ -61,13 +61,34 @@ Our long term vision is to build an organization that attracts and retains the b
 #### Publicly documented interview modules
 
 - Problem: Any candidate who has interviewed at multiple companies knows that interview processes are hit or miss. We have spent time and effort to ensure that we have a great interview process, and candidates regularly tell us that we do after going through it. Right now, candidates don't know what to expect out of our interview process beyond the title of each interview module and a brief description.
-- Plan: We want candidates to know up front as much as possible about each interview, including exact questions that we will be asking them as and how we will be evaluating their answers (as much as possible). Sharing this information would have many benefits:
+- Plan: We want candidates to know up front as much as possible about each interview, including exact questions that we will be asking them and how we will be evaluating their answers (as much as possible). Sharing this information would have many benefits:
   - It shows candidates that our process is reasonable, fair, and challenging.
   - It allows candidates to prepare and present their best selves.
   - It forces us to think of better interview questions that are [unhackable](http://www.paulgraham.com/lesson.html).
   - It makes our interview process more accessible to candidates who would be disadvantaged in a live interview (for example, people with hearing or speech disabilities) because it would be easy to accept written answers to our documented questions.
 - Owner: TBD.
 - Status: Not started. Needs more discussion.
+
+## Communication
+
+### Slack
+
+- #leadership-chat is a public channel (not specific to this team or engineering) where anyone can discuss and share information of general interest to leadership at Sourcegraph.
+- #eng-leadership-team is a private channel for members of this team to discuss sensitive topics, or topics that would be noise to people outside of the team. For anything else, prefer to use #leadership-chat.
+
+### Meetings
+
+We have a 1hr sync with product and engineering every Tuesday at 9am PT ([meeting notes](https://docs.google.com/document/d/10fEh3Cw0ENKjFYDP-4OoLZbOZTVAtMpifc2WM_1mGVU/edit)).
+
+### Weekly updates
+
+Engineering managers send an update to [engineering-leadership-status@sourcegraph.com](https://groups.google.com/a/sourcegraph.com/g/engineering-leadership-status) by 12pm (noon) PT every Monday (sending it earlier, like EOD Friday is ok too). Anyone at the company can join the group to subscribe to these updates. The purpose of the update is to keep interested parties (including the VP of Engineering, and peer managers) informed of what is going on in each part of our organization. The format of this update is at the discretion of the sender, but it should be prose that generally answers the following questions:
+
+- What important things happened last week?
+- What are the plans for this week?
+- What should my peer-team/manager be aware of?
+
+If you have sensitive information to communicate, please send a separate email directly to the relevant people.
 
 ## Book recommendations
 

@@ -139,8 +139,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.22341537475585,
-          37.498014271137265
+          -122.24607467651367,
+          37.39493120891107
         ]
       }
     },
@@ -277,6 +277,19 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Chris Pine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.62304440140723,
+          45.519298927923565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
          "name": "Dave Try"
       },
       "geometry": {
@@ -310,6 +323,32 @@
         "coordinates": [
           -122.26993560791016,
           37.86943313301452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chayim Kirshen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8532,
+          32.3215
+        ]
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "name": "Elizabeth Stirling"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3493,
+          47.6205
         ]
       }
     }

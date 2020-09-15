@@ -109,7 +109,7 @@ Netflix operates at massive scale. For this reason their query syntax is not onl
 
 Below is a diagram that depicts the anatomy of the resulting byte-array that a JSON array is serialized into, including a type field, the header information mentioned above, followed by the data itself.
 
-![Formatting example](/blog-images/Screen%20Shot%202017-07-13%20at%202.18.13%20PM.png)
+Formatting example - *image no longer available*
 
 For map types, keys are stored as interned strings. This means that each string-represented key is assigned an integer which prevents the issue of storing duplicate copies of potentially long string keys. For example, if there's a key named "Orange Is the New Black", this would be assigned an ID such as "1", and each subsequent reference to that key is stored as "1" in the database and translated back into the original string during deserialization.
 

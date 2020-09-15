@@ -22,7 +22,7 @@ Many other popular dependency managers, like NPM, prefer to install the _latest_
 
 ## Background
 
-Sourcegraph recently [open sourced our browser extensions](/blog/sourcegraph-browser-extensions-are-now-open source/), but before we could, I needed to remove a transitive dependency on our private icons NPM package that contains licensed assets.
+Sourcegraph recently [open sourced our browser extensions](/blog/sourcegraph-browser-extensions-are-now-open-source), but before we could, I needed to remove a transitive dependency on our private icons NPM package that contains licensed assets.
 
 Before:
 

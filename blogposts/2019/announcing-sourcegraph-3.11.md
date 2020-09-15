@@ -6,6 +6,7 @@ tags: [blog]
 slug: sourcegraph-3.11
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.11: Structural search, removed management console, language statistics, and NPM credentials campaign"
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -133,7 +134,7 @@ Language analysis is computationally expensive, so this feature is currently beh
 
 This month we published a [new case study](https://about.sourcegraph.com/case-studies/lyft-monolith-to-microservices) showing how Sourcegraph code search helped ensure production stability at Lyft during their monolith to microservices decomposition.
 
-![Lyft case study preview](/images/3-11-lyft.png "Lyft case study preview")
+![Lyft case study preview](/blog/3-11-lyft.png "Lyft case study preview")
 
 ### See you at GitLab Commit 2020 in San Francisco
 
@@ -181,7 +182,7 @@ Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit
 
 ### Removed
 
-- The management console has been removed. All critical configuration previously stored in the management console will be automatically migrated to your site configuration. For more information about this change, or if you use `SITE_CONFIG_FILE` / `CRITICAL_CONFIG_FILE`, please see the [migration notes for Sourcegraph v3.11+](doc/admin/migration/3_11.md).
+- The management console has been removed. All critical configuration previously stored in the management console will be automatically migrated to your site configuration. For more information about this change, or if you use `SITE_CONFIG_FILE` / `CRITICAL_CONFIG_FILE`, please see the [migration notes for Sourcegraph v3.11+](https://docs.sourcegraph.com/@3.11/admin/migration/3_11).
 
 The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.11) is available on GitHub.
 

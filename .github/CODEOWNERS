@@ -42,6 +42,7 @@
 /handbook/engineering/distribution @sourcegraph/distribution
 /handbook/engineering/security @sourcegraph/security
 /handbook/engineering/web @sourcegraph/web
+/handbook/engineering/search @sourcegraph/search
 /handbook/engineering/languages/go.md @sourcegraph/cloud
 /handbook/engineering/languages/typescript.md @sourcegraph/web
 /handbook/engineering/languages/terraform.md @sourcegraph/distribution

@@ -23,7 +23,6 @@ export default class HTML extends React.Component<HtmlProps> {
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
-                    {head.title.toComponent()}
                     {head.meta.toComponent()}
                     {head.link.toComponent()}
                     {/* {css} */}

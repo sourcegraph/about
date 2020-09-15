@@ -11,9 +11,21 @@
   - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
   - [Website style guide](website_style_guide.md)
 
+## Mission
+
+Influential developers discover, use, and love Sourcegraph.
+
+How we'll achieve this:
+
+- Focus on influential devs. Not all devs, enterprise devs, etc.
+- Tap networks of existing users. Many devs worked at companies where everyone uses Sourcegraph, then quit and joined a new company, and brought Sourcegraph in.
+- Drive product usage. Code search is a "must use it to believe it" kind of thing. Instead of becoming really good at communicating the theoretical value of code search, we want to build more ways for devs to just start using code search and to share it naturally.
+
 ## Goals
 
-### Build the infrastructure so we can reach more devs
+### Near-term
+
+#### Build the infrastructure so we can reach more devs
 
 Eventually we want to be publishing tons of compelling stuff for developers and other similar audiences. For now, we're building the infrastructure so we can do this well and track the results, and we'll publish a small number of very compelling things.
 
@@ -28,7 +40,7 @@ Outcomes:
 - A developer (who is not @sqs or @beyang) publishes a blog post using the documented workflow and standards, and it passes the [secret test of whether it's really, really compelling to developers](https://docs.google.com/document/d/1IgS9bq-wmCDKrGpydcJV1k_dzxulviyNAbaj7LLV-RY/edit). (That doc is only visible to the marketing team. It's secret so people don't try to game it.) (@sqs)
 - We can determine how many and which leads came from which content we published. (@aileen + @lori)
 
-### Help other teams that need marketing support
+#### Help other teams that need marketing support
 
 Timeline: ongoing
 
@@ -38,11 +50,23 @@ Tasks:
 - Manage and tweak Google ads to drive engagement with our product (@lori)
 - Respond to public and private messages on social media (@sqs)
 
+### 12-month plan
+
+(Not in chronological order.)
+
+- Instrument product and about site for attribution
+- Publish blog posts that (for example) top Hacker News
+- Highlight customer value/stories
+- Engage existing influential users live
+- Spread Sourcegraph.com in open-source communities with existing traction
+- Hire VP Marketing and grow team
+
 ## Members
 
 - [Aileen Agricola](../../company/team/index.md#aileen-agricola)
 - [Vanesa Ortiz](../../company/team/index.md#vanesa-ortiz-she-her)
 - [Quinn Slack](../../company/team/index.md#quinn-slack) (manager)
+- Lori Heyman
 
 ## Weekly marketing meeting
 
@@ -50,9 +74,17 @@ The marketing team will have a weekly meeting (schedule TBD), with notes written
 
 ## Definitions
 
+### [Influential developer](personas.md#influential-developer)
+
+See the "[Influential developer](personas.md#influential-developer)" persona.
+
+### [Personas](personas.md)
+
+See "[Personas](personas.md)" for the full list of personas we're targeting.
+
 ### Web traffic
 
-Web traffic is measured by analyzing two metrics: [all users](https://www.lovesdata.com/blog/google-analytics-glossary#user) and [organic users](https://theupperranks.com/blog/organic-search/). Unless otherwise noted, web traffic refers to web visitors from the United States and Canada. If the web traffic is labeled `geo7` or similar, it refers to the web traffic from the US, Canada, Australia, United Kingdom, Germany, France and Sweden. Also note, that web traffic currently includes the following sites: about.sourcegraph.com and info.sourcegraph.com.
+Web traffic is measured by analyzing [all users](https://www.lovesdata.com/blog/google-analytics-glossary#user) and [new user](https://www.lovesdata.com/blog/google-analytics-glossary#new-user) with traffic sources: [organic](https://theupperranks.com/blog/organic-search/) and [paid/cpc](https://www.lovesdata.com/blog/google-analytics-glossary#cpc). Unless otherwise noted, web traffic refers to web visitors from the United States and Canada. If the web traffic is labeled `geo7` or similar, it refers to the web traffic from the US, Canada, Australia, United Kingdom, Germany, France and Sweden. Also note, that web traffic currently includes the following sites: about.sourcegraph.com, sourcegraph.com, docs.sourcegraph.com, and info.sourcegraph.com.
 
 ### Inquiry
 
@@ -60,18 +92,24 @@ An inquiry is a person who has requested information from Sourcegraph for the fi
 
 ### Interesting inquiry
 
-Any inquiry that works for a company with > $10M in revenue, or specifies that there are 200+ software engineers at their company will be highlighted as 'interesting'.
+Any inquiry that works for a company with > $50M in revenue, or specifies that there are 250+ software engineers at their company will be highlighted as 'interesting'.
 
 ### MQL
 
 A marketing qualified lead (MQL) is any of:
 
-- A person who submits a demo or contact form AND has >= 200 engineers
-- A person who sets up a new Sourcegraph instance AND >= 2,000 employees
-- A person downloads an eBook or white paper AND has >= 500 engineers and/or >= 2,000 employees
+- A person who submits a demo or contact form AND whose company has >= 250 engineers
+- A person who sets up a new Sourcegraph instance AND whose company has >= 2,000 employees
+- A person downloads an eBook or white paper AND whose company has >= 500 engineers and/or >= 2,000 employees
 
 [Specific email domains](https://app.hubspot.com/property-settings/2762526/properties?action=edit&property=inbound_scoring_qualification&search=inbou&type=0-1) are excluded.
 
 ### [SQL](../sales/index.md#lead) (sales-qualified lead)
 
 See "[Lead](../sales/index.md#lead)" in the sales team handbook section.
+
+## Open roles
+
+### VP Marketing
+
+We're hiring for a VP Marketing. Full job description to come. To summarize, we want the VP Marketing to be someone who can help us achieve the mission and goals of marketing on their own---and who can hire and lead a team to do so at greater scale.

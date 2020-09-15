@@ -469,7 +469,6 @@ Here's an assist that ran for 4.4ms:
 Other assists are slower:
 
 ![Selection 057](//images.contentful.com/le3mxztn6yoo/44NQsrYsusUuqaKUUgKGuI/cffe74043c0a6a67fdb2bc79636cd231/Selection_057.png)
-![undefined](/Selection_057.png)
 
 ...but that goroutine probably allocated 10MB of memory, so it deserved what it got.
 
