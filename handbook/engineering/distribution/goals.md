@@ -64,8 +64,7 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 ### [Split Cloud infrastructure into separate GCP projects](https://github.com/orgs/sourcegraph/projects/92)
 
 - **Owner**: Gonza
-- **Status**: On-hold
-- **Length**: ~3 months
+- **Status**: In progress. Estimated complete by end of 2020.
 - **Outcomes**:
   - We have a clear guideline on when to split resources to new projects.
   - We report the cost of each project.
