@@ -17,10 +17,10 @@ Creating a new release for our deployments is currently a semi-automated process
   - Support documentation enables any engineer to perform a release with confidence.
 - **Milestones**:
   - ~~[Enable running e2e test on an environment matching its test (docker-compose in a VM)](https://github.com/orgs/sourcegraph/projects/72).~~ Done: 3.20
-  - [Automatically update the dogfood cluster](https://github.com/orgs/sourcegraph/projects/83). _Estimated completion: 3.20_
-  - [Enable continuous e2e tests on `main`](https://github.com/orgs/sourcegraph/projects/72). _Estimated completion: 3.20_
-  - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/72). _Estimated completion: 3.21_
-  - Releases can be done in a single day. _Estimated completion: 3.21_
+  - [Automatically update the dogfood cluster](https://github.com/orgs/sourcegraph/projects/83). **In progress**
+  - [Enable continuous e2e tests on `main`](https://github.com/orgs/sourcegraph/projects/72). **In progress**
+  - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/72). _Estimated: 3.21_
+  - Releases can be done in a single day. _Estimated: 3.21_
   - Releases can be done automatically with a single `/` command via Slack.
 
 ### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
@@ -40,10 +40,10 @@ We will start by looking at our Kubernetes deployment and working on an easier u
     - ~~Cue.~~ Done: 3.17
     - ~~Dhall.~~ Done: 3.18
   - ~~Create a Kubernetes deployment PoC.~~ Done: 3.19
-  - Design Dhall Architecture. _Estimated completion: 3.20_
-  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback. _Estimated completion: 3.21/3.22_
+  - Design Dhall Architecture. **In progress**
+  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback. _Estimated: 3.21/3.22_
+  - Create customer facing migration path and how-to documentation. _Estimated: 3.21/3.22_
   - Use Dhall to generate public Kubernetes manifests.
-  - Create customer facing migration path and how-to documentation.
   - Migrate a highly technical customer to Dhall and collect usage feedback.
   - Design customization workflow.
     - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
@@ -74,8 +74,8 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 - **Milestones**:
   - ~~Create initial GCP structure.~~ Done: 3.19
   - ~~Move non-production projects to folders.~~ Done: 3.20
-  - Move non-production deployments to separate projects. _Estimated completion: 3.21_
-  - Move CI to a new GCP project. _Estimated completion: 3.21_
+  - Move non-production deployments to separate projects. _Estimated: 3.21_
+  - Move CI to a new GCP project. _Estimated: 3.21_
   - Create code to bootstrap new projects.
   - Document project and folder usage guidelines.
 
