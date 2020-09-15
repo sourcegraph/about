@@ -20,7 +20,7 @@ Creating a new release for our deployments is currently a semi-automated process
   - [Enable continuous e2e tests on `main`](https://github.com/orgs/sourcegraph/projects/72). **In progress**
   - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/72). _Estimated: 3.21_
   - Releases can be done in a single day. _Estimated: 3.21_
-  - Releases can be done automatically with a single `/` command via Slack.
+  - Releases can be done automatically with a single `/` command via Slack. _Estimated: 2020_
 
 ### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
 
