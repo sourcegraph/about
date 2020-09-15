@@ -1,5 +1,6 @@
 .blog-post {
     overflow: hidden;
+    padding-bottom: 2rem;
 
     &__image {
         max-width: 100%;
@@ -21,9 +22,29 @@
             max-width: calc(100% - 10px);
             max-height: 100vh;
             box-shadow: 0 2px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
-            margin: 40px auto;
+            margin: 3rem auto;
             display: block;
             border-style: none;
+        }
+
+        .gatsby-highlight {
+            margin: 3rem auto;
+        }
+
+        table,
+        video-embed,
+        .gatsby-highlight {
+            margin: 3rem auto;
+        }
+
+        blockquote {
+            max-width: 100%;
+            width: 40rem;
+            line-height: 1.8;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 2rem;
+            padding-right: 0;
         }
     }
 }
