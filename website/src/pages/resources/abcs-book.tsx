@@ -18,7 +18,7 @@ export default ((props: any) => (
             <div className="row justify-content-md-center">
                 <div className="col-small-12">
                     <p className="text-center">
-                        <img src="/other/abcs-book/our-abcs-hero.png" className="w-100 px-2 mb-3" role="presentation" />
+                        <img src="/other/abcs-book/our-abcs-hero.png" className="w-100 px-2 mb-3" role="presentation" alt="Our ABCs: Always Be Coding book" />
                     </p>
                     <h1 className="text-center">Our ABCs: Always Be Coding children's book</h1>
                     <p className="text-center my-5">

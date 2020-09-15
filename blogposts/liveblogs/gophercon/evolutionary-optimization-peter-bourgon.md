@@ -51,11 +51,11 @@ commonly used disk operations into methods. The fs package is at https://github.
 Metrics in his opinion are more superior than logs.
 Instrumenting using principles USE and RED --> Update dashboard --> Inspect to see what's missing -->
 
-![](https://user-images.githubusercontent.com/4898263/28233377-959f3162-68b3-11e7-910d-1cc4938a5d60.png)
+![USE RED](https://user-images.githubusercontent.com/4898263/28233377-959f3162-68b3-11e7-910d-1cc4938a5d60.png)
 
 Basic instrumentation helps figure out exactly what actually needs to be optimized.
 
-![](https://user-images.githubusercontent.com/4898263/28233366-841c0dc0-68b3-11e7-943e-a2b8226370a7.png)
+![instrumentation helps figure out exactly what actually needs to be optimized](https://user-images.githubusercontent.com/4898263/28233366-841c0dc0-68b3-11e7-943e-a2b8226370a7.png)
 
 
 #### Problems noticed through instrumentation:
@@ -110,7 +110,7 @@ id[i] = record[i][:ulid.EncodedSize]
 ```
 which cut down time spent in the offending function from  31.10 seconds to 2.49 seconds.
 
-![](https://user-images.githubusercontent.com/4898263/28233404-ded12c82-68b3-11e7-895f-6436a14558f6.png)
+![cut down time spent in the offending function from 31.10 seconds to 2.49 seconds](https://user-images.githubusercontent.com/4898263/28233404-ded12c82-68b3-11e7-895f-6436a14558f6.png)
 
 
 Another profile taken from a higher level provided information to remove and optimize more code related to queries, as you'll see below.
@@ -118,30 +118,30 @@ Another profile taken from a higher level provided information to remove and opt
 #### Optimizing queries:
 The target was to optimize querying corpra at a target rate of mean = 1m10s ==> ~299Mbps given:
 
-![](https://user-images.githubusercontent.com/4898263/28233433-11adadc4-68b4-11e7-8444-cda7ee34f16a.png)
+![Optimizing queries](https://user-images.githubusercontent.com/4898263/28233433-11adadc4-68b4-11e7-8444-cda7ee34f16a.png)
 
 
 ##### Review of how each segment is stored on disk:
 When a query comes in, it's always bounded by a time range e.g T1 to T6. One can select a bunch of segments, merge them
 into memory and then filter on them.
 
-![](https://user-images.githubusercontent.com/4898263/28233320-34751410-68b3-11e7-8825-a357bd4bf5ba.png)
+![Review of how each segment is stored on disk](https://user-images.githubusercontent.com/4898263/28233320-34751410-68b3-11e7-8825-a357bd4bf5ba.png)
 
 The program also has a compactor always running, which has the ability to merge segments into one.
 For non overlap segments, we do a careful merge --> fast merge and then filter.
 
-![](https://user-images.githubusercontent.com/4898263/28233347-62755640-68b3-11e7-8008-0414f61b10dd.png)
+![Careful Merge](https://user-images.githubusercontent.com/4898263/28233347-62755640-68b3-11e7-8008-0414f61b10dd.png)
 
 
 They then noticed that time was wasted merging records that will never be returned to anyone.
 Therefore the solution was to implement filtering before the fast merge to gut out a lot of the work.
 
-![](https://user-images.githubusercontent.com/4898263/28233339-51a1ebf8-68b3-11e7-9709-117a837321ab.png)
+![Filtering merge](https://user-images.githubusercontent.com/4898263/28233339-51a1ebf8-68b3-11e7-9709-117a837321ab.png)
 
 They then made regex usage opt-in, otherwise use a simple bytes.Contains/bytes.Index as the default checker. Even better, bytes.Index has a very fast assembly implementation in Go thus
 getting a new mean of 25.81s which translates to a throughput of ~821MBps.
 
-![](https://user-images.githubusercontent.com/4898263/28233569-ed21b40e-68b4-11e7-9207-7996e513a5e3.png)
+![Index has a very fast assembly implementation in Go](https://user-images.githubusercontent.com/4898263/28233569-ed21b40e-68b4-11e7-9207-7996e513a5e3.png)
 
 
 ### Conclusions:

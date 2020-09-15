@@ -99,11 +99,11 @@ We're tightening up the Sourcegraph UI to remove unnecessary whitespace so you c
 
 File search results (before and after):
 
-![](/blog/3.4-density-2.png)
+![3.4 density 2](/blog/3.4-density-2.png)
 
 Text search results (before and after):
 
-![](/blog/3.4-density-1.png)
+![3.4 density 1](/blog/3.4-density-1.png)
 
 ## 3.4 changelog
 

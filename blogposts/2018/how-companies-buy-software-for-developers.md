@@ -10,7 +10,7 @@ heroImage: https://about.sourcegraph.com/blog/xkcd-is_it_worth_the_time_2x.png
 published: true
 ---
 
-<img src="/blog/xkcd-is_it_worth_the_time_2x.png">
+<img src="/blog/xkcd-is_it_worth_the_time_2x.png" alt="How long can you work on making a routine task more efficient before you are spending more time than you save chart">
 
 Source: https://xkcd.com/1205/
 
@@ -22,7 +22,7 @@ This same analysis serves as a convenient way to evaluate the tradeoffs of pursu
 
 ## Value of Sourcegraph per developer, per month
 
-<img src="/blog/sensitivity-Sourcegraph-value-add.png">
+<img src="/blog/sensitivity-Sourcegraph-value-add.png" alt="Value of Sourcegraph per developer, per month chart">
 
 A user can find their internal numbers or estimates on the two axes, and see how much value they get from Sourcegraph. If that number is <span style="color:red">red</span>, then they have little reason to purchase our [Enterprise Starter](/pricing) tier (which costs $4/user/month). Similarly, if it is <span style="color:green">green</span>, they can easily justify deploying our high-availability [Enterprise](/pricing) tier (at $19/user/month).
 
