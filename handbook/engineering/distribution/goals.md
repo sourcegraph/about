@@ -10,6 +10,7 @@ Creating a new release for our deployments is currently a semi-automated process
 
 - **Owner**: Stephen, Dave, Robert
 - **Status**: In Progress
+- **Length**: ~3 months
 - **Outcomes**:
   - Releases can be triggered by a single manual step.
   - All supported deployment types are released at the same time with the same command.
@@ -29,6 +30,7 @@ We will start by looking at our Kubernetes deployment and working on an easier u
 
 - **Owner**: Geoffrey, Uwe
 - **Status**: In Progress
+- **Length**: ~4 months
 - **Outcomes**:
   - Upgrades to deployments do not require resolving diff conflicts from upstream.
   - Upgrading a deployment configuration requires less than 2 hours of work.
@@ -39,7 +41,7 @@ We will start by looking at our Kubernetes deployment and working on an easier u
     - ~~Dhall.~~ Done: 3.18
   - ~~Create a Kubernetes deployment PoC.~~ Done: 3.19
   - Design Dhall Architecture. _Estimated completion: 3.20_
-  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback.
+  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback. _Estimated completion: 3.21/3.22_
   - Use Dhall to generate public Kubernetes manifests.
   - Create customer facing migration path and how-to documentation.
   - Migrate a highly technical customer to Dhall and collect usage feedback.
@@ -53,6 +55,7 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 
 - **Owner**: TBD
 - **Status**: Not started
+- **Length**: TBD
 - **Outcomes**:
   - We can categorize and capture the amount of effort spent on different incident types.
   - We can provide a straightforward set of tools to collect initial debugging and deployment information.
@@ -63,6 +66,7 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 
 - **Owner**: Gonza
 - **Status**: On-hold
+- **Length**: ~3 months
 - **Outcomes**:
   - We have a clear guideline on when to split resources to new projects.
   - We report the cost of each project.
@@ -70,8 +74,8 @@ We will initially focus on reducing the time it takes to collect troubleshooting
 - **Milestones**:
   - ~~Create initial GCP structure.~~ Done: 3.19
   - ~~Move non-production projects to folders.~~ Done: 3.20
-  - Move non-production deployments to separate projects.
-  - Move CI to a new GCP project.
+  - Move non-production deployments to separate projects. _Estimated completion: 3.21_
+  - Move CI to a new GCP project. _Estimated completion: 3.21_
   - Create code to bootstrap new projects.
   - Document project and folder usage guidelines.
 
