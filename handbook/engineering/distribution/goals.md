@@ -53,8 +53,7 @@ As we deploy Sourcegraph to multiple different environments, we need to provide 
 We will initially focus on reducing the time it takes to collect troubleshooting information.
 
 - **Owner**: TBD
-- **Status**: Not started
-- **Length**: TBD
+- **Status**: Not started. Unknown amount of work.
 - **Outcomes**:
   - We can categorize and capture the amount of effort spent on different incident types.
   - We can provide a straightforward set of tools to collect initial debugging and deployment information.
