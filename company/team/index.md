@@ -415,6 +415,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [chris.surdi@sourcegraph.com](mailto:chris.surdi@sourcegraph.com)
 - I’m a serial entrepreneur and angel employee with a passion for disruptive technology and sales. I live north of San Francisco with my wife Meliza and three kids - Truson, Kaison and Crimson. I'm originally from back East and moved out to the West Coast in 2003 to be involved in startups, technology, and innovation. I'm grateful to say I'm doing everything I've set myself out to achieve at this point. 
 
+## Joel Kwartler (he/him)
+
+- Product Manager
+- Los Angeles, CA, USA 🇺🇸
+- Name pronunciation: [ʤoʊl kwɔrtlɜr](http://ipa-reader.xyz/?text=%CA%A4o%CA%8Al%20kw%C9%94rtl%C9%9Cr&voice=Joey)
+- [joel@sourcegraph.com](mailto:joel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joelkwartler), [Github](https://github.com/Joelkw)
+- Joel is a west coast fanboy who grew up in Oregon and has since lived in Seattle, SF, and LA. He's bounced around the startup + design world at places like Figma and IDEO, and got a bachelor's in C.S. at Harvard. After hours, you might find him doing stand up, pretending he knows piano, or waking up way too early to take photographs. He's made the _Forbes 30 Under 30 List of Best Joel Kwartlers_ for 5 of the past 8 years.
+
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
