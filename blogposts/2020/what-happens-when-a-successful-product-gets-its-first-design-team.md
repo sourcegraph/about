@@ -10,7 +10,7 @@ published: true
 
 We are happy to announce that the Sourcegraph design team has grown from 0 to 3! 🎉
 
-The early stages of a new team are full of changes and unexpected challenges. I would like to share with you how our first months of working together look like, what we have accomplished, and what are our plans for the future.
+The early stages of a new team are full of changes and unexpected challenges. I would like to show you what our first months of working together looked like, what we have accomplished, and our plans for the future.
 
 ## First 90 days
 
