@@ -11,6 +11,7 @@ We are looking for an engineer who will proactively improve the security of our 
 - You are [high agency](https://twitter.com/shreyas/status/1276956836856393728)
 - You communicate effectively in writing and documentation
 - You are able to directly contribute to our codebase and infrastructure (Go, TypeScript, Kubernetes, GCP)
+- You have at least 3 hours of overlap with [IDT](http://time.is/IDT) per week
 
 ## Learn more about us
 
