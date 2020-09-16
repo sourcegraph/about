@@ -16,11 +16,11 @@ Also on this page:
 
 Changes to `sourcegraph/sourcegraph` are automatically built as [images](#images), which are then:
 
-* Automatically updated in [`deploy-sourcegraph`](#deploy-sourcegraph), which runs deployment checks on the new images and merges the changes.
+* Automatically updated in [`deploy-sourcegraph`](#deploy-sourcegraph) via [Renovate](#renovate), which runs deployment checks on the new images and merges the changes.
   * `sourcegraph-bot` will mention your pull request in the `deploy-sourcegraph` change - you will be able to find a link in your pull request.
-* `deploy-sourcegraph` changes are automatically deployed in [k8s.sgdev.org](#k8ssgdevorg), our full dogfooding environment.
+* `deploy-sourcegraph` changes are [automatically deployed in k8s.sgdev.org](#k8ssgdevorg), our Kubernetes dogfooding environment.
   * `sourcegraph-bot` will mention the relevant `deploy-sourcegraph` pull request in the `deploy-sourcegraph-dogfood-k8s-2` change.
-* [Sourcegraph Cloud](#sourcegraphcom) will eventually pick up the same changes on a schedule.
+* [Sourcegraph Cloud](#sourcegraphcom) will eventually pick up the same changes on a schedule via [Renovate](#renovate)
 
 ### Images
 
