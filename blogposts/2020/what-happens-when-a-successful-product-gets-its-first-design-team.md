@@ -14,7 +14,7 @@ The early stages of a new team are full of changes and unexpected challenges. I 
 
 ## First 90 days
 
-From the very beginning, we knew that to set our team up for success, we need to carefully plan the next 3 months. There was a lot to focus on: processes, design debt, new initiatives, etc. We had to choose which areas to take care of first and where we can have the biggest impact.
+From the very beginning, we knew that we needed to carefully plan the next 3 months to set our team up for success. There was a lot to focus on: processes, design debt, new initiatives, etc. We had to choose which areas to take care of first and where we could have the biggest impact.
 
 Here are our key initiatives:
 
