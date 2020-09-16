@@ -391,7 +391,7 @@ And the end of the build you can find the name of the newly built Docker image.
 
 ## deploy-sourcegraph
 
-![Renovate downstream](https://github.com/sourcegraph/sourcegraph/workflows/Renovate%20downstream/badge.svg) ![Dispatch update](https://github.com/sourcegraph/deploy-sourcegraph/workflows/Dispatch%20update/badge.svg)
+![Renovate downstream](https://github.com/sourcegraph/sourcegraph/workflows/Renovate%20downstream/badge.svg) [![master build status](https://badge.buildkite.com/018ed23ed79d7297e7dd109b745597c58d875323fb06e81786.svg?branch=master)](https://buildkite.com/sourcegraph/deploy-sourcegraph) ![Dispatch update](https://github.com/sourcegraph/deploy-sourcegraph/workflows/Dispatch%20update/badge.svg)
 
 Sourcegraph Kubernetes deployments typically start off as [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) forks. Learn more about how we advise customers to deploy Sourcegraph in Kubernetes in our [admin installation documentation](https://docs.sourcegraph.com/admin/install/kubernetes).
 
@@ -399,6 +399,8 @@ There is automation in place to drive automatic updates for certain deployments 
 
 * the ["Renovate downstream"](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3A%22Renovate+downstream%22) workflow performs a manual [Renovate run](#renovate) on `deploy-sourcegraph` as soon as [Sourcegraph images are published](#images).
 * the ["Dispatch Update"](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Dispatch+update%22) workflow notifies deployments like [k8s.sgdev.org](#k8ssgdevorg) to perform a merge from `deploy-sourcegraph`.
+
+For documentation about developing `deploy-sourcegraph` and cutting releases, refer to the [repository's `README.dev.md`](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/README.dev.md).
 
 ### Merging changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
 
