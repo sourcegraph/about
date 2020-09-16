@@ -34,7 +34,7 @@ Renovate is a tool for updating dependencies. [`deploy-sourcegraph-*`](#deploy-s
 
 ### Infrastructure
 
-The cloud resources (including clusters, DNS configuration, etc.) on which are deployments run should be configured in the [infrastructure repository](https://github.com/sourcegraph/infrastructure), even though Kubernetes deployments are managed by various `deploy-sourcegraph-*` repositories.
+The cloud resources (including clusters, DNS configuration, etc.) on which are deployments run should be configured in the [infrastructure repository](https://github.com/sourcegraph/infrastructure), even though Kubernetes deployments are managed by various `deploy-sourcegraph-*` repositories. For information about how our infrastructure is organized, refer to [Environments](./environments.md).
 
 ## sourcegraph.com
 
