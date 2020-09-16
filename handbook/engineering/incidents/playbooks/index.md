@@ -292,6 +292,8 @@ Using this information, you can determine whether a table exists, what columns i
 
 Several of our static sites are hosted by Netlify at `about.sourcegraph.com`. You can check the service status at https://www.netlifystatus.com/ as well as notifications to the #alerts-external channel.
 
+If you discover an issue with Netlify but their status page is not displaying it, open a support request using the credentials in 1Password.
+
 Sites:
 - `about.sourcegraph.com`
 - `sourcegraph.com/about` -307-> `about.sourcegraph.com/about`
