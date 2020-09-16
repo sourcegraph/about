@@ -14,6 +14,14 @@ Also on this page:
 
 ## Deployment basics
 
+Changes to `sourcegraph/sourcegraph` are automatically built as [images](#images), which are then:
+
+* Automatically updated in [`deploy-sourcegraph`](#deploy-sourcegraph), which runs deployment checks on the new images and merges the changes.
+  * `sourcegraph-bot` will mention your pull request in the `deploy-sourcegraph` change - you will be able to find a link in your pull request.
+* `deploy-sourcegraph` changes are automatically deployed in [k8s.sgdev.org](#k8ssgdevorg), our full dogfooding environment.
+  * `sourcegraph-bot` will mention the relevant `deploy-sourcegraph` pull request in the `deploy-sourcegraph-dogfood-k8s-2` change.
+* [Sourcegraph Cloud](#sourcegraphcom) will eventually pick up the same changes on a schedule.
+
 ### Images
 
 Each Sourcegraph service is provided as a Docker image. Every commit to `master` in [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) pushes updated Docker images for all of our services to [Docker Hub](https://hub.docker.com/u/sourcegraph/) as part of our [CI pipeline](https://buildkite.com/sourcegraph/sourcegraph) (i.e. if CI is green, then Docker images have been pushed).
@@ -22,9 +30,11 @@ For pushing custom images, refer to [building Docker images for specific branche
 
 ### Renovate
 
-Renovate is a tool for updating dependencies. [`deploy-sourcegraph-*`](#deploy-sourcegraph) repositories with Renovate configured check for updated Docker images about every hour. If it finds new Docker images then it opens and merges a PR ([Sourcegraph.com example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate)) to update the image tags in the deployment configuration. This is usually accompanied by a CI job that deploys the updated images to the appropriate deployment.
+Renovate is a tool for updating dependencies. [`deploy-sourcegraph-*`](#deploy-sourcegraph) repositories with Renovate configured check for updated Docker images about every hour. If it finds new Docker images then it opens and merges a PR ([Sourcegraph.com example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate)) to update the image tags in the deployment configuration. This is usually accompanied by a CI job that deploys the updated images to the appropriate deployment.'
 
 ## sourcegraph.com
+
+[![Build status](https://badge.buildkite.com/ef1289610fdd05b606bf1e57a034af2365c7b09c95ac6121f9.svg)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dot-com)
 
 This deployment is also colloquially referred to as "Sourcegraph Cloud", "Cloud", and "dot-com".
 
@@ -69,6 +79,10 @@ git push origin release
 
 ## sourcegraph.sgdev.org
 
+[![Build status](https://badge.buildkite.com/aea3b210380714ff4e0c5429beae87bb318e7fd53603acdecf.svg)](https://buildkite.com/sourcegraph/infrastructure)
+
+This deployment runs the single-image version of Sourcegraph. It is deployed by the [infrastructure repository](https://github.com/sourcegraph/infrastructure).
+
 🚨 This deployment contains private code - do not use it for demos!
 
 - [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
@@ -79,58 +93,21 @@ git push origin release
 
 ## k8s.sgdev.org
 
-🚨 This deployment is currently rarely updated and does not have a conventional update flow - there is [ongoing work on refreshing the deployment](https://github.com/orgs/sourcegraph/projects/83).
+[![Build status](https://badge.buildkite.com/65c9b6f836db6d041ea29b05e7310ebb81fa36741c78f207ce.svg?branch=release)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
 
-- [dogfood-full-k8s cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood-full-k8s?project=sourcegraph-dev)
+This deployment dogfoods the latest changes in [`deploy-sourcegraph`](https://github.com/sourcegraph/deploy-sourcegraph), and by extension, `sourcegraph/sourcegraph`, via automated updates - learn more in [deployment basics](#deployment-basics).
+
+- [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dogfood?project=sourcegraph-dogfood)
   ```
-  gcloud container clusters get-credentials dogfood-full-k8s --zone us-central1-a --project sourcegraph-dev
+  gcloud container clusters get-credentials dogfood --zone us-central1-f --project sourcegraph-dogfood
   ```
-- [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
+- [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
 
-### Troubleshooting out of sync updates on Pulumi
-
-This deployment currently uses Pulumi for deployment.
-
-If out of sync changes occur on the dogfood cluster or a pod is failing, Pulumi can end up in an interrupted state and the `pulumi-refresh.sh` build step will not pass on buildkite. If this occurs, follow these steps to fix edit the deployment directly and remediate the issues that are failing the build step:
-
-1. From your local clone of the dogfood repo, run:
-```
-pulumi stack export > stack.json
-```
-
-2. In the file search for the `pending_operations` block and verify the pending operation is the same as that failing in the buildkite logs. 
-
-buildkite.log
-```bash
-error: the current deployment has 1 resource(s) with pending operations:
-  * urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus, interrupted while updating
-```
-
-stack.json
-```bash
-"pending_operations": [
-  {
-      "resource": {
-          "urn": "urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus",
-      ...
-      },
-      "type": "updating"
-  }
-]
-```
-
-3. Edit the `stack.json` file and remove the resource in question.
-
-4. Import the stack by running:
-```
-pulumi stack import --file stack.json
-```
-
-5. Trigger the build again from buildkite and ensure all build steps pass.
-
-For more information see the Pulumi [documentation](https://www.pulumi.com/docs/troubleshooting/#editing-your-deployment)
+Updates from `deploy-sourcegraph` are performed upon [notification from upstream](#deploy-sourcegraph) by the ["Update from deploy-sourcegraph"](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2/actions?query=workflow%3A%22Update+from+deploy-sourcegraph%22) workflow.
 
 ## Kubernetes
+
+This section contains tips and advice for interacting with our Kubernetes deployments (most notably [sourcegraph.com](#sourcegraphcom) and [k8s.sgdev.org](#k8ssgdevorg)).
 
 ### How to set up access to Kubernetes
 
@@ -410,17 +387,24 @@ And the end of the build you can find the name of the newly built Docker image.
 
 ## deploy-sourcegraph
 
+![Renovate downstream](https://github.com/sourcegraph/sourcegraph/workflows/Renovate%20downstream/badge.svg) ![Dispatch update](https://github.com/sourcegraph/deploy-sourcegraph/workflows/Dispatch%20update/badge.svg)
+
 Sourcegraph Kubernetes deployments typically start off as [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) forks. Learn more about how we advise customers to deploy Sourcegraph in Kubernetes in our [admin installation documentation](https://docs.sourcegraph.com/admin/install/kubernetes).
+
+There is automation in place to drive automatic updates for certain deployments from `deploy-sourcegraph`:
+
+* the ["Renovate downstream"](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3A%22Renovate+downstream%22) workflow performs a manual [Renovate run](#renovate) on `deploy-sourcegraph` as soon as [Sourcegraph images are published](#images).
+* the ["Dispatch Update"](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Dispatch+update%22) workflow notifies deployments like [k8s.sgdev.org](#k8ssgdevorg) to perform a merge from `deploy-sourcegraph`.
 
 ### Merging changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
 
 We have two Sourcegraph Kubernetes cluster installations that we manage ourselves:
  
 * [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
-* [deploy-sourcegraph-dogfood-k8s](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
+* [deploy-sourcegraph-dogfood-k8s-2](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
 
 This section describes how to merge changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
-(referred to as upstream) into these two installations.
+(referred to as upstream) into `deploy-sourceegraph-dot-com`. The `deploy-sourcegraph-dogfood-k8s-2` configuration is [automatically updated with the latest `deploy-sourcegraph` changes](#k8ssgdevorg).
 
 The process is similar to the [process](https://docs.sourcegraph.com/admin/install/kubernetes/configure#fork-this-repository) 
 we recommend our customers use to merge changes from upstream. The differences in process originate from the dual purpose
@@ -432,32 +416,24 @@ and the docker images are automatically updated to the latest builds.
 
 ### Relationship between the repositories
 
-1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master strictly tracks the upstream https://github.com/sourcegraph/deploy-sourcegraph/tree/master. 
-
-1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release _only_ contains the customizations required to deploy/document sourcegraph.com from the base deployment of Sourcegraph. 
-
-1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release is the default branch for this repository, since all customizations to sourcegraph.com should be merged into this branch (like we tell our customers to).
+1. [`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master) strictly tracks the upstream https://github.com/sourcegraph/deploy-sourcegraph/tree/master. 
+1. [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) _only_ contains the customizations required to deploy/document sourcegraph.com from the base deployment of Sourcegraph. 
+   - This is the default branch for this repository, since all customizations to sourcegraph.com should be merged into this branch (like we tell our customers to).
 
 These steps ensure that the diff between https://github.com/sourcegraph/deploy-sourcegraph-dot-com and https://github.com/sourcegraph/deploy-sourcegraph is as small as possible so that the changes are easy to review.  
 
 In order to mimic the same workflow that we tell our customers to follow:
 
 - Customizations / documentation changes that **apply to all customers (not just sourcegraph.com)** should be:
-    1. Merged into https://github.com/sourcegraph/deploy-sourcegraph/tree/master
-    1. Pulled into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master:
+    1. Merged into [`deploy-sourcegraph@master`](https://github.com/sourcegraph/deploy-sourcegraph/tree/master) (note that this will also [automatically update k8s.sgdev.org](#k8ssgdevorg))
+    1. Pulled into [`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master):
           ```shell
           git checkout master
           git fetch upstream
           git merge upstream/master
           ```
-    1. Merged into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release by merging https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release
-          ```shell
-          git checkout release
-          git fetch origin
-          git merge origin/master
-          ```
-
-- Customizations / documentation changes that **apply to only sourcegraph.com** can be simply merged into the https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release branch. 
+    1. Merged into [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) by merging from[`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master) - see [merging upstream](#merging-upstream-deploy-sourcegraph-into-deploy-sourcegraph-dot-com) for more details.
+- Customizations / documentation changes that **apply to only sourcegraph.com** can be simply merged into the [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) branch. 
 
 ### Merging upstream `deploy-sourcegraph` into `deploy-sourcegraph-dot-com`
 
