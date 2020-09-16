@@ -104,9 +104,9 @@ This deployment runs the single-image version of Sourcegraph. It does not have a
 🚨 This deployment contains private code - do not use it for demos!
 
 - [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
- ```
- gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
- ```
+  ```
+  gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
+  ```
 - [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/master/kubernetes/dogfood)
 
 ## Kubernetes
