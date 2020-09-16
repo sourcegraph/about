@@ -2,9 +2,9 @@
 
 We maintain multiple [deployments](#deployment-basics) of Sourcegraph:
 
-- [sourcegraph.com](#sourcegraphcom) is our production deployment for open source code.
-- [sourcegraph.sgdev.org](#sourcegraphsgdevorg) is our private deployment of Sourcegraph that contains our private code.
-- [k8s.sgdev.org](#k8ssgdevorg) is a dogfood deployment that replicates the scale of our largest customers.
+- [sourcegraph.com](#sourcegraph-com) is our production deployment for open source code.
+- [sourcegraph.sgdev.org](#sourcegraph-sgdev-org) is our private deployment of Sourcegraph that contains our private code.
+- [k8s.sgdev.org](#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers.
 
 Also on this page:
 
@@ -18,9 +18,9 @@ Changes to `sourcegraph/sourcegraph` are automatically built as [images](#images
 
 * Automatically updated in [`deploy-sourcegraph`](#deploy-sourcegraph) via [Renovate](#renovate), which runs deployment checks on the new images and merges the changes.
   * `sourcegraph-bot` will mention your pull request in the `deploy-sourcegraph` change - you will be able to find a link in your pull request.
-* `deploy-sourcegraph` changes are [automatically deployed in k8s.sgdev.org](#k8ssgdevorg), our Kubernetes dogfooding environment.
+* `deploy-sourcegraph` changes are [automatically deployed in k8s.sgdev.org](#k8s-sgdev-org), our Kubernetes dogfooding environment.
   * `sourcegraph-bot` will mention the relevant `deploy-sourcegraph` pull request in the `deploy-sourcegraph-dogfood-k8s-2` change.
-* [Sourcegraph Cloud](#sourcegraphcom) will eventually pick up the same changes on a schedule via [Renovate](#renovate)
+* [Sourcegraph Cloud](#sourcegraph-com) will eventually pick up the same changes on a schedule via [Renovate](#renovate)
 
 ### Images
 
@@ -111,7 +111,7 @@ This deployment runs the single-image version of Sourcegraph. It does not have a
 
 ## Kubernetes
 
-This section contains tips and advice for interacting with our Kubernetes deployments (most notably [sourcegraph.com](#sourcegraphcom) and [k8s.sgdev.org](#k8ssgdevorg)).
+This section contains tips and advice for interacting with our Kubernetes deployments (most notably [sourcegraph.com](#sourcegraph-com) and [k8s.sgdev.org](#k8s-sgdev-org)).
 
 ### How to set up access to Kubernetes
 
@@ -398,7 +398,7 @@ Sourcegraph Kubernetes deployments typically start off as [deploy-sourcegraph](h
 There is automation in place to drive automatic updates for certain deployments from `deploy-sourcegraph`:
 
 * the ["Renovate downstream"](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3A%22Renovate+downstream%22) workflow performs a manual [Renovate run](#renovate) on `deploy-sourcegraph` as soon as [Sourcegraph images are published](#images).
-* the ["Dispatch Update"](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Dispatch+update%22) workflow notifies deployments like [k8s.sgdev.org](#k8ssgdevorg) to perform a merge from `deploy-sourcegraph`.
+* the ["Dispatch Update"](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Dispatch+update%22) workflow notifies deployments like [k8s.sgdev.org](#k8s-sgdev-org) to perform a merge from `deploy-sourcegraph`.
 
 For documentation about developing `deploy-sourcegraph` and cutting releases, refer to the [repository's `README.dev.md`](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/README.dev.md).
 
@@ -410,7 +410,7 @@ We have two Sourcegraph Kubernetes cluster installations that we manage ourselve
 * [deploy-sourcegraph-dogfood-k8s-2](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
 
 This section describes how to merge changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
-(referred to as upstream) into `deploy-sourceegraph-dot-com`. The `deploy-sourcegraph-dogfood-k8s-2` configuration is [automatically updated with the latest `deploy-sourcegraph` changes](#k8ssgdevorg).
+(referred to as upstream) into `deploy-sourceegraph-dot-com`. The `deploy-sourcegraph-dogfood-k8s-2` configuration is [automatically updated with the latest `deploy-sourcegraph` changes](#k8s-sgdev-org).
 
 The process is similar to the [process](https://docs.sourcegraph.com/admin/install/kubernetes/configure#fork-this-repository) 
 we recommend our customers use to merge changes from upstream. The differences in process originate from the dual purpose
@@ -431,7 +431,7 @@ These steps ensure that the diff between [deploy-sourcegraph-dot-com](https://gi
 In order to mimic the same workflow that we tell our customers to follow:
 
 - Customizations / documentation changes that **apply to all customers (not just sourcegraph.com)** should be:
-    1. Merged into [`deploy-sourcegraph@master`](https://github.com/sourcegraph/deploy-sourcegraph/tree/master) (note that this will also [automatically update k8s.sgdev.org](#k8ssgdevorg))
+    1. Merged into [`deploy-sourcegraph@master`](https://github.com/sourcegraph/deploy-sourcegraph/tree/master) (note that this will also [automatically update k8s.sgdev.org](#k8s-sgdev-org))
     1. Pulled into [`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master):
           ```shell
           git checkout master
