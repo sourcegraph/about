@@ -2,31 +2,52 @@
 
 The cloud team owns all work that is necessary to build, secure, scale, and operate our multi-tenant hosted version of Sourcegraph for customers that do not want to deploy Sourcegraph on-premise.
 
+The cloud team is also responsible for all [backend-infrastructure areas of ownership](../backend-infrastructure/index.md). A lot of the work for Sourcegraph Cloud is in direct support of scaling and performance of backend-infrastructure. Work will be balanced as needed to support both efforts.
+
+## Areas of ownership
+
+- Authorization and authentication
+- Repository management (gitserver, repo-updater, src-expose)
+- Data storage and access libraries
+- GraphQL API
+- src-cli
+- License generation and enforcement
+- Admin and user settings
+- Analytics
+
 ## Goals
+
+### Sourcegraph Cloud
 
 1. Any user or organization can use Sourcegraph Cloud with both the private and public code that they care about in a secure way.
 
-## Milestones
+#### Milestones
 
 1. Any user can add public code from github.com, gitlab.com and bitbucket.org
     - Code is indexed.
     - It's easy to search over only their code (vs all public code).
-2. Any user or organization can use Sourcegraph Cloud for free before it's GA
+1. Any user or organization can use Sourcegraph Cloud for free before it's GA
     - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
     - All private repository content are only decryptable by Sourcegraph services.
         - Gitserver.
         - Searcher and code intel caches.
         - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
-3. Sign-up and on-boarding of new users is fast, obvious and painless
+1. Sign-up and on-boarding of new users is fast, obvious and painless
     - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
     - Permissions and repo syncing progress is clear to the user and doesn’t take too long.
     - Progress on repo indexing is clear to the user and doesn’t take too long.
-4. Sourcegraph Cloud is Generally Available (GA)
+1. Sourcegraph Cloud is Generally Available (GA)
     - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
     - Scalable syncing of permissions, repos, changesets.
     - High availability, SLOs, etc.
     - Billing and subscriptions.
         - Based on size (i.e. GB) of all repositories and selected feature set.
+
+### Backend infrastructure
+
+1. Product tier enforcement
+1. Trial sign-up flow/license keys
+1. Non-Git VCS
 
 ## Contact
 
