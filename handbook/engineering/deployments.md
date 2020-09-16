@@ -47,6 +47,7 @@ This deployment is also colloquially referred to as "Sourcegraph Cloud", "Cloud"
   gcloud container clusters get-credentials cloud --zone us-central1-f --project sourcegraph-dev
   ```
 - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
+- [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/master/cloud)
 
 ### Deploying to sourcegraph.com
 
@@ -108,6 +109,7 @@ This deployment runs the single-image version of Sourcegraph. It does not have a
   gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
   ```
 - [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/master/kubernetes/dogfood)
+- [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/master/dogfood)
 
 ## Kubernetes
 
