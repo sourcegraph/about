@@ -50,6 +50,6 @@ Features that are specific to Sourcegraph Server and can't be tested on Sourcegr
 1. **Test on Sourcegraph dogfood instance:** follow the [before launch](#after-merge-before-launch) steps above on [k8s.sgdev.org](../engineering/deployments.md#k8s-sgdev-org). 
 1. **Release feature with flag off:** for the next release, the feature flag is disabled by default. 
 1. **Run external user tests:** Reach out to select customers to turn on the feature flag for a specific time period, usually those with expressed interest in testing the feature. 
-1. **Announce to customers they can enable the feature flag**: Let customers know that they can turn on the feature. 
+1. **Announce to customers they can enable the feature flag:** Let customers know that they can turn on the feature. 
 1. **Enable the feature flag:** We turn on the flag by default. 
 1. **Remove the feature flag:** Follow the [post-launch](#post-launch) process. 
