@@ -16,9 +16,7 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Communication](communication/index.md)
   - [Style guide](communication/style_guide.md)
 
-## Handbook sections
-
-The sections below roughly correspond to the teams at Sourcegraph.
+## Teams at Sourcegraph
 
 ### People Ops
 
