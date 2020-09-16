@@ -230,7 +230,7 @@ For more informatino see the [GKE documentation](https://cloud.google.com/kubern
 
 ### Kubernetes backups
 
-Snapshots of all Kubernetes resources are taken periodically and pushed to https://github.com/sourcegraph/kube-backup/.
+Snapshots of all Kubernetes resources are taken periodically and pushed to [kube-backup](https://github.com/sourcegraph/kube-backup).
  
 ## Testing
 
@@ -420,7 +420,7 @@ and the docker images are automatically updated to the latest builds.
 1. [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) _only_ contains the customizations required to deploy/document sourcegraph.com from the base deployment of Sourcegraph. 
    - This is the default branch for this repository, since all customizations to sourcegraph.com should be merged into this branch (like we tell our customers to).
 
-These steps ensure that the diff between https://github.com/sourcegraph/deploy-sourcegraph-dot-com and https://github.com/sourcegraph/deploy-sourcegraph is as small as possible so that the changes are easy to review.  
+These steps ensure that the diff between [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com) and [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) is as small as possible so that the changes are easy to review.  
 
 In order to mimic the same workflow that we tell our customers to follow:
 
