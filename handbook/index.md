@@ -2,7 +2,9 @@
 
 The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/index.md#open-company).
 
-The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. [How to edit the handbook](https://about.sourcegraph.com/handbook/editing).
+The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. 
+- [Editing the handbook](editing.md)
+- [Handbook usage](usage.md)
 
 ## [Company](../company/index.md)
 - [All-remote](../company/remote/index.md)
@@ -13,8 +15,6 @@ The handbook is a living document and we expect every teammate to propose improv
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
   - [Style guide](communication/style_guide.md)
-- [Handbook usage](usage.md)
-- [Editing the handbook](editing.md)
 
 ## Handbook sections
 
