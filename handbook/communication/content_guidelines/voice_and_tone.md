@@ -16,7 +16,7 @@ When we write in our shared voice, we are always:
 
 - Be clear and concise
 - Avoid jargon, acronyms, and filler words
-- Use consistent terminology
+- Be precise and consistent with terminology so that our meaning is always clear
 
 ### Empathetic
 
