@@ -105,9 +105,9 @@ Use present tense to describe the result of actions.
 Use _Sentence case_, not _Title Case_, everywhere. This includes:
 
 - [Headings and subheadings](./actionable_language.md#headings-and-subheadings)
-- [UI copy](./actionable_language#sentences)
+- [UI copy](./actionable_language.md#sentences)
 - [Buttons](./actionable_language.md#buttons)
-- [Links](./actionable_language#links)
+- [Links](./actionable_language.md#links)
 - [Error messages](./actionable_language.md#error-messages)
 - [Confirmation messages](./actionable_language.md#confirmation-messages)
 - [Success messages](./actionable_language.md#success-messages)
