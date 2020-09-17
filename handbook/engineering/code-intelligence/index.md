@@ -1,5 +1,9 @@
 # Code intelligence team
 
+<div style="text-align: center; margin-bottom: 1rem">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/exploding-brain.jpg" width="50%" alt="This is your brain on code">
+</div>
+
 The Code Intelligence team builds tools and services that provide contextual information around code, taking into account its lexical, syntactic, and semantic structure. This includes:
 
 - An API to provide fast, comprehensive, and accurate answers to important code navigation queries such as Go to Definition and Find References
@@ -117,7 +121,7 @@ Our team is growing and to help our new teammates have the best onboarding exper
 
 **First Tasks**: The team has marked issues we believe are good first issues in [Github](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+label%3A%22good+first+issue%22++label%3A%22team%2Fcode-intelligence%22), following the [starter task process](../onboarding.md#starter-tasks) work with the code intel engineering manager to select three issues that you think are good ones for you to work on in your first 4 weeks.
 
-**Technical Design Docs & Diagrams**: We know that a picture is worth a thousand words and we will create visual diagrams to supplement our written documentation for the most critical or complex components and processes. This material is great for async learning and can provide a better understanding of the parts that make up the big picture. Browse through available documentation and diagrams in the [code intel developer documentation](https://docs.sourcegraph.com/dev/codeintel/) and [code intel Google drive](https://drive.google.com/drive/folders/1vKcW5EM4RBIuF8ZFvPM0G1FRwl_03RXK) and learn how the Bundle Manager works or view Inter-service request diagrams.
+**Technical Design Docs & Diagrams**: We know that a picture is worth a thousand words and we will create visual diagrams to supplement our written documentation for the most critical or complex components and processes. This material is great for async learning and can provide a better understanding of the parts that make up the big picture. Check [code intel user documentation](https://docs.sourcegraph.com/user/code_intelligence) and [our journey with LSIF post](https://about.sourcegraph.com/blog/evolution-of-the-precise-code-intel-backend/) to understand the overall view. Browse through available documentation and diagrams in the [code intel developer documentation](https://docs.sourcegraph.com/dev/codeintel/) and [code intel Google drive](https://drive.google.com/drive/folders/1vKcW5EM4RBIuF8ZFvPM0G1FRwl_03RXK) and learn how the Bundle Manager works or view Inter-service request diagrams.
 
 ### Second Month
 
@@ -168,4 +172,4 @@ _Updated 2020-08-01_
 
 We are hiring for these roles:
 
-- +1 [Software Engineer - Code intelligence](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-code-intelligence.md)
+- +1 [Software Engineer - Code intelligence](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-code-intelligence)

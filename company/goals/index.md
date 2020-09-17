@@ -1,4 +1,4 @@
-# Goals
+# Company goals
 
 Our company goals are public.
 

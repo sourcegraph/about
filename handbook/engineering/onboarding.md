@@ -1,20 +1,6 @@
-# Onboarding
+# Engineering onboarding
 
 Welcome! We're excited to have you join the team. This document outlines the structure of your first few weeks at Sourcegraph.
-
-## Guiding principles
-
-### There are no stupid questions
-
-Joining a new company can be overwhelming — there's a lot to learn! As you navigate your first few weeks at Sourcegraph, we want you to know that everyone on the team is here to help, and that there are **no stupid questions**.
-
-Every time you're curious or confused about something — just ask! When you do so, use [public discussion channels](../communication/team_chat.md#avoid_private_messages) as much as possible.
-
-### Think and act like an owner
-
-At Sourcegraph, we don't think of teammates as resources — we think of them as owners of their work, who constantly reevaluate how to use their talents to be as impactful as possible. We value your opinions and ideas. You should always feel empowered to identify potential improvements and act upon them, whether they be improvements to processes (like onboarding), our handbook and general documentation, our codebase and tooling, or our product.
-
-Never assume that a problem is somebody else's to fix!
 
 ## Getting set up
 
@@ -44,6 +30,7 @@ Your manager should complete the following steps when you join:
   - [Site24x7](https://www.site24x7.com) (optional; recommended for Distribution team members)
   - [HoneyComb.io](https://www.honeycomb.io/)
   - Ask Christina to send an invite to [Productboard](https://sourcegraph.productboard.com)
+  - Ask a member of the Design team to invite as "Viewer" to [Figma](https://figma.com)
 
 ## Weeks 1-3
 
@@ -58,7 +45,7 @@ As you're working on these tasks:
     - Open a pull request as soon as you feel like you're ready for feedback or input on your code — you can make it a draft pull request if your code is still a work in progress.  
     - Favour splitting up your work in multiple pull requests every time it makes sense — shipping frequently is important.
     - Ask yourself what tests are appropriate for the change you're tackling, and add them!
-- If you need help, remember that there are [no stupid questions](#there_are_no_stupid_questions) — ask for help in your team's channel (or any appropriate channel), and add the answer to our docs or the handbook if you feel like it can help future teammates.
+- If you need help, remember everyone is here to [answer any question](../people-ops/onboarding/index.md#everyone-is-here-to-support-you-as-you-onboard) — ask for help in your team's channel (or any appropriate channel), and add the answer to our docs or the handbook if you feel like it can help future teammates.
 
 As you complete these tasks, share your accomplishments in #progress 🙂
 

@@ -19,7 +19,7 @@ published: true
         </p>
     </div>
     <div class="bg-white">
-        <img class="pv3 pa4-ns self-center" src="https://images.contentful.com/le3mxztn6yoo/1cJw4YdMMI6iEiwOUU60mq/c49bb4902883e42a31630dba874012bb/blog-chart.png">
+        <img class="pv3 pa4-ns self-center" src="https://images.contentful.com/le3mxztn6yoo/1cJw4YdMMI6iEiwOUU60mq/c49bb4902883e42a31630dba874012bb/blog-chart.png" alt="Worldwide population, internet users and programmers">
     </div>
 </div>
 
@@ -41,8 +41,8 @@ published: true
         </p>
     </div>
     <div class="flex-grow-1">
-        <img class="ph5 pv4 self-center" src="https://images.contentful.com/le3mxztn6yoo/6Kr0fizYHKieW28s2skyeC/3c5a1e1343000da565cd02803b850eb2/redpoint-logo.png">
-        <img class="ph5 pv4 self-center" src="https://images.contentful.com/le3mxztn6yoo/3vaNarg4zKe8mUMsEIcyke/0f1c8ecce6bca30364d1588421f4490a/goldcrest-logo.png">
+        <img class="ph5 pv4 self-center" src="https://images.contentful.com/le3mxztn6yoo/6Kr0fizYHKieW28s2skyeC/3c5a1e1343000da565cd02803b850eb2/redpoint-logo.png" alt="Redpoint company logo">
+        <img class="ph5 pv4 self-center" src="https://images.contentful.com/le3mxztn6yoo/3vaNarg4zKe8mUMsEIcyke/0f1c8ecce6bca30364d1588421f4490a/goldcrest-logo.png" alt="Goldcrest company logo">
     </div>
 </div>
 

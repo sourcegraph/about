@@ -10,7 +10,7 @@ The product team is newly growing, and consists of all product managers and prod
 - [Product management](product_management/index.md)
   - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her) - ([Search](../engineering/search/index.md))
   - [María Craig](../../../company/team/index.md#maría-craig-she-her) - ([Code intel](../engineering/code-intelligence/index.md))
-  - [J.K.](../../../company/team/index.md#todo) starting 2020-09-14 - ([Web](../engineering/web/index.md))
+  - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) - ([Web](../engineering/web/index.md))
 - [Product design](design/index.md)
   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
   - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
@@ -20,13 +20,7 @@ The product team is newly growing, and consists of all product managers and prod
 
 ### [Roles](roles/index.md)
 
-_Updated 2020-08-12_
-
-- [Product Manager](roles/product_manager.md) - hiring +3
-- [Product Designer](roles/product_designer.md) - closed to applications
-- [Technical Writer](roles/technical_writer.md) - hiring +1
-
-See [2021 Organizational plan](../engineering/2021_org.md) for more details on areas of ownership.
+See [Roles](roles/index.md) for open positions and hiring targets.
 
 ## [Goals](goals.md)
 
