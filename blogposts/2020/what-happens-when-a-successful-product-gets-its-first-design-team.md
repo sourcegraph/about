@@ -2,9 +2,10 @@
 title: "What happens when a successful product gets its first design team..."
 author: Alicja Suska
 authorUrl: https://alicjasuska.com
-publishDate: 2020-09-11T18:00-07:00
+publishDate: 2020-09-17
 tags: [blog]
 slug: what-happens-when-a-successful-product-gets-its-first-design-team
+heroImage: https://sourcegraphstatic.com/design-component-system.png
 published: true
 ---
 
