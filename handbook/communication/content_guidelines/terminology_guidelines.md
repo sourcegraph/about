@@ -84,7 +84,7 @@ Only use _we_ and _our_ (as in “our GitHub integration”) in informal documen
 |notifier   |   |Sourcegraph sends an alert to a notifier that sends a notification to the user. If we're talking about what the product does, it's alerting. If we're talking about what the user experiences, it's notifier/notifying.    |
 |**O**   |   |   |
 |OpenID Connect   |OIDC   |   |
-|[organization](../sales/index.md#organization)   |"company" or "team" or "org"   |   |
+|organization   |"company" or "team" or "org"   |   |
 |open source   |"open-source", "Open Source"   |[Favoring common usage](https://github.com/sourcegraph/about/issues/508#issuecomment-588600005)   |
 |**P**   |   |   |
 |parameter|   |Parameter describes a key:value pair to filter behavior or change search behavior.   |
