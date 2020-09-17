@@ -16,7 +16,7 @@ This document contains the goals and work log for the search team's [2-week iter
 
 ### Scale indexed search to 500k repositories
 
-- **Owner(s):** Stefan
+- **Owner(s):** Stefan, Keegan
 - **Outcomes:**
     - $DESIRED_OUTCOME
 - **Work log:**
@@ -24,7 +24,7 @@ This document contains the goals and work log for the search team's [2-week iter
 
 ### Streaming search
 
-- **Owner(s):** Keegan
+- **Owner(s):** Keegan, TODO frontend engineer
 - **Outcomes:**
     - $DESIRED_OUTCOME
 - **Work log:**
@@ -32,7 +32,7 @@ This document contains the goals and work log for the search team's [2-week iter
 
 ### Enterprise homepage
 
-- **Owner(s):** Juliana
+- **Owner(s):** Juliana, Farhan
 - **Outcomes:**
     - $DESIRED_OUTCOME
 - **Work log:**
