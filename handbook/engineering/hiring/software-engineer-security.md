@@ -29,7 +29,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We schedule remote interviews over video chat across multiple days.
    - 1h **Security architecture:** We give you an open problem statement and you walk us through how you would solve the problem.
       - Will interview with 2 of the following:
-         - At least one member of the [security team](/handbook/engineering/security/index.md#members)
+         - At least one member of the [security team](../security/index.md#members)
          - Any engineer mentioned in this document.
    - 1h **Technical experience:** We ask you about your past work and accomplishments.
       - Will interview with 2 of the following:
@@ -47,7 +47,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
          - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
          - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
          - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
-         - If we have at least one of the above, the second interviewer can be [any engineer on the security team](/handbook/engineering/security/index.md#members)
+         - If we have at least one of the above, the second interviewer can be [any engineer on the security team](../security/index.md#members)
             or any engineer mentioned in this document.
    - 30m **VP Engineering**
    - 30m **CTO**
