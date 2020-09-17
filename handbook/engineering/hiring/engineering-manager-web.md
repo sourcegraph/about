@@ -1,7 +1,5 @@
 # Engineering Manager - Web
 
-**[Apply here.](https://jobs.lever.co/sourcegraph/13286143-746e-4381-8049-94cf9911c2ab)**
-
 We are looking for an experienced engineering leader for our [web team](https://about.sourcegraph.com/handbook/engineering/web). This person will facilitate all web development for Sourcegraph and be responsible driving the team towards intended growth mentioned in the handbook (grow the team until it's large enough to split into two teams, web infrastructure, and extensions and integrations).
 
 ## Qualifications
