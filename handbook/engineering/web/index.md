@@ -103,7 +103,7 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 
 ## Members
 
-- [Joel Kwartler](../../../company/team/index.md#todo) ([Product Manager](../../product/roles/product_manager.md)) is focused on web, [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is supporting.
+- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/product_manager.md)) is focused on code insights, [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is supporting.
 - We are hiring an [Engineering Manager for this team](../hiring/engineering-manager-web.md). In the meantime, [Felix Becker](../../../company/team/index.md#felix-becker) will run team syncs, goal setting, iteration planning, retrospectives and team status updates.
   - [Felix Becker](../../../company/team/index.md#felix-becker)
   - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
