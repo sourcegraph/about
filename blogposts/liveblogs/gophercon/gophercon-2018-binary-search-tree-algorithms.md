@@ -95,12 +95,12 @@ Binary search trees make the above operations fast––that's why they are so p
 
 ## Search
 
-![](https://cl.ly/dd19a7225c09/Screen%252520Recording%2525202018-08-29%252520at%25252009.03%252520PM.gif)
+![Searching for number 39](https://cl.ly/dd19a7225c09/Screen%252520Recording%2525202018-08-29%252520at%25252009.03%252520PM.gif)
 
 The above GIF is an example of searching for the number `39` in the
 tree.
 
-![](https://cl.ly/908ecf0f3854/Image%2525202018-08-29%252520at%2525209.31.02%252520PM.png)
+![Less than and greater than](https://cl.ly/908ecf0f3854/Image%2525202018-08-29%252520at%2525209.31.02%252520PM.png)
 
 An important point to note is that every node to the right of the node
 that you are currently looking at is going to be _greater_ than the
@@ -108,7 +108,7 @@ value of the current node. The nodes to the right of the
 green line are greater than `57`. All the nodes to the left are
 smaller than `57`.
 
-![](https://cl.ly/61dfb3a92722/Image%2525202018-08-29%252520at%2525209.33.32%252520PM.png)
+![Rules of Binary Search Tree](https://cl.ly/61dfb3a92722/Image%2525202018-08-29%252520at%2525209.33.32%252520PM.png)
 
 This property is true for every node in the tree, not just the root
 node. In the above picture, all the numbers to the right of the green
@@ -192,7 +192,7 @@ func (n *Node) Search(key int) bool {
 
 ## Insert
 
-![](https://cl.ly/aaa1f718d537/Screen%252520Recording%2525202018-08-29%252520at%25252010.17%252520PM.gif)
+![Insert into binary tree](https://cl.ly/aaa1f718d537/Screen%252520Recording%2525202018-08-29%252520at%25252010.17%252520PM.gif)
 
 The above GIF is an example of inserting `81` into the tree. Insert is very similar to search. We want to find where `81` should go inside the tree, so we walk the tree using the same rules that we used in `search`, and insert `81` once we find an empty spot.
 
@@ -219,7 +219,7 @@ func (n *Node) Insert(key int) {
 
 ## Delete
 
-![](https://cl.ly/e261dd30e743/Screen%252520Recording%2525202018-08-29%252520at%25252010.33%252520PM.gif)
+![Delete from tree](https://cl.ly/e261dd30e743/Screen%252520Recording%2525202018-08-29%252520at%25252010.33%252520PM.gif)
 
 The above GIF is an example of deleting `78` from the tree. We search for `78` like we've done before, and in this case, we're able to just "snip" `78` from the tree by directly connecting `85` as the right child of `57`.
 
@@ -257,7 +257,7 @@ func (n *Node) Delete(key int) *Node {
 
 ## Min value
 
-![](https://cl.ly/9f703767f7c9/Image%2525202018-08-29%252520at%25252011.20.37%252520PM.png)
+![Min value in tree](https://cl.ly/9f703767f7c9/Image%2525202018-08-29%252520at%25252011.20.37%252520PM.png)
 
 If you move to the left over and over, you get the smallest number (`24` in this case).
 
@@ -272,7 +272,7 @@ func (n *Node) Min() int {
 
 ## Max value
 
-![](https://cl.ly/6e4021ed62d9/Image%2525202018-08-29%252520at%25252011.22.20%252520PM.png)
+![Max value in tree](https://cl.ly/6e4021ed62d9/Image%2525202018-08-29%252520at%25252011.22.20%252520PM.png)
 
 ```go
 func (n *Node) Max() int {
@@ -384,7 +384,7 @@ The last thing that we're going to take a look at is some binary search tree ter
 
 **Tree height**: Number of edges on the longest path from the root to the base. This determines the speed of your algorithm.
 
-![](https://cl.ly/705355d982d4/Image%2525202018-08-30%252520at%25252012.05.11%252520AM.png)
+![Tree height](https://cl.ly/705355d982d4/Image%2525202018-08-30%252520at%25252012.05.11%252520AM.png)
 
 This tree has a height of `5`.
 
@@ -392,25 +392,25 @@ This tree has a height of `5`.
 
 `48` is `2` edges away from the root.
 
-![](https://cl.ly/a0058d294af0/Image%2525202018-08-30%252520at%25252012.08.04%252520AM.png)
+![Node depth](https://cl.ly/a0058d294af0/Image%2525202018-08-30%252520at%25252012.08.04%252520AM.png)
 
 **Full binary tree**: Each node has exactly 0 or 2 children
 
-![](https://cl.ly/3bd94a056d8d/Image%2525202018-08-30%252520at%25252012.10.53%252520AM.png)
+![Full binary tree](https://cl.ly/3bd94a056d8d/Image%2525202018-08-30%252520at%25252012.10.53%252520AM.png)
 
 **Complete binary tree**: The tree is entirely filled, except for the bottom row, which can be filled from left to right
 
-![](https://cl.ly/d78de1699704/Image%2525202018-08-30%252520at%25252012.12.03%252520AM.png)
+![Complete binary tree](https://cl.ly/d78de1699704/Image%2525202018-08-30%252520at%25252012.12.03%252520AM.png)
 
 **An unbalanced tree**
 
-![](https://cl.ly/1669851131fe/Screen%252520Recording%2525202018-08-30%252520at%25252012.14%252520AM.gif)
+![An unbalanced tree](https://cl.ly/1669851131fe/Screen%252520Recording%2525202018-08-30%252520at%25252012.14%252520AM.gif)
 
 Imagine that you're searching for `47` in this tree. Do you see how that takes `7` steps while searching for `24` only takes three? This problem becomes more exacerbated the more "unbalanced" the tree is. The way to fix it is to "balance" the tree:
 
 **A balanced tree**:
 
-![](https://cl.ly/8ba095d064c8/Image%2525202018-08-30%252520at%25252012.20.17%252520AM.png)
+![A balanced tree](https://cl.ly/8ba095d064c8/Image%2525202018-08-30%252520at%25252012.20.17%252520AM.png)
 
 This tree contains the same nodes as the unbalanced tree, but searches on balanced trees are faster (on average) than on unbalanced trees.
 

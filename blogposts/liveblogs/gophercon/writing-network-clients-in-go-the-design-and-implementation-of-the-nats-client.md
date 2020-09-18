@@ -82,7 +82,8 @@ Waldemar emphasizes that this mode of guarantee may sound like a limitation, but
 > What the application wants to know is whether or not the target host acted on the message…
 
 
-![](https://images.ctfassets.net/le3mxztn6yoo/30a7Kq972ogM0skiyuAcwG/2fda4f8195d05dc8d1bf274b02951d69/alien.png?h=250)
+
+![Alien](https://images.ctfassets.net/le3mxztn6yoo/30a7Kq972ogM0skiyuAcwG/2fda4f8195d05dc8d1bf274b02951d69/alien.png?h=250)
 
 References:
 
