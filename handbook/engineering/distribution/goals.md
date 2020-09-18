@@ -18,8 +18,9 @@ Creating a new release for our deployments is currently a semi-automated process
   - ~~[Enable running e2e test on an environment matching its test (docker-compose in a VM)](https://github.com/orgs/sourcegraph/projects/72).~~ Done: 3.20
   - [Automatically update the dogfood cluster](https://github.com/orgs/sourcegraph/projects/83). **In progress**
   - [Enable continuous e2e tests on `main`](https://github.com/orgs/sourcegraph/projects/72). **In progress**
+  - [Enable continuous regression tests on `main`](https://github.com/orgs/sourcegraph/projects/72). _Estimated: 3.21_
   - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/72). _Estimated: 3.21_
-  - Releases can be done in a single day. _Estimated: 3.21_
+  - [Releases can be done in a single day](https://github.com/orgs/sourcegraph/projects/90). _Estimated: 3.21/3.22_
   - Releases can be done automatically with a single `/` command via Slack. _Estimated: 2020_
 
 ### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
