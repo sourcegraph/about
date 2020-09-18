@@ -45,19 +45,19 @@ Instead, look for opportunities to capture the same meaning through other forms.
 
 ## Active voice vs. passive voice
 
-Use active voice and avoid passive voice. In active voice, the subject of the sentence does the action. In passive voice, the subject of the sentence has the action done to it.
+Generally, use active voice and avoid passive voice. In active voice, the subject of the sentence does the action. In passive voice, the subject of the sentence has the action done to it.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Settings saved.</li>
+<li>Added repository.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>Your settings were saved.</li>
+<li>Repository was added.</li>
 </ul>
 </div>
 </div>
@@ -68,7 +68,7 @@ Use passive voice when you don’t want to assign responsibility for an action. 
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Email address was incorrect.</li>
+<li>Email address does not exist.</li>
 </ul>
 </div>
 <div class="item no">
