@@ -64,3 +64,20 @@ We document our goals and plans publicly so we can engage with customers to buil
 > I am working on improving the security of our product, but I feel uncomfortable clearly documenting what I am doing (e.g., in public status updates, issues, PR descriptions, the changelog) because I am worried that it will make Sourcegraph look bad.
 
 Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
+
+## High Agency
+
+Every person at Sourcegraph has both the power and the responsibility to help make Sourcegraph a better place.
+
+> “Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. And you can change it, you can influence it… Once you learn that, you'll never be the same again.” - Steve Jobs
+
+- As a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, all of us are free to discuss and implement changes to any aspect of our business.
+- Engineers feel empowered to do what they feel needs to be done through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
+- [TODO: Talk about how other teams are encouraged to exercise their agency].
+
+This power of agency also comes with the responsibility of integrity. If you feel that something is important, then fight for it! We want a workplace where nobody feels like they're using the wrong tools for the job or doing the wrong thing. If they do, they're responsible for quickly voicing that concern, then proposing and executing upon solutions. Their teammates, then, are responsible for engaging in discussion around the topic, and working together to make the best choice for everyone.
+
+This doesn't mean that everything must constantly be in flux. Rather, it means that, when you believe something should happen, you either make it happen, or find a better solution.
+
+This also doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. There no shame in having your idea shot down or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!
+
