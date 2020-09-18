@@ -18,7 +18,7 @@ We love what we’ve come up with and hope you will too—a new digital children
 <div class="text-center">
     <h2 class="h5 pb-3">Our ABCs: Always Be Coding</h2>
     <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download" class="d-block" id="abc-dlbook" target="new">
-        <img src="/blog/our-abcs-hero.png" class="my-1"/>
+        <img src="/blog/our-abcs-hero.png" class="my-1" alt="Our ABCs: Always Be Coding book"/>
     </a>
     <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download" class="button btn btn-primary mt-4 mb-2" id="abc-dlbook" target="new">Download your book</a>
 </div>

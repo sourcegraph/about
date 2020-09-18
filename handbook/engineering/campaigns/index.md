@@ -1,5 +1,7 @@
 # Campaigns team
 
+<img src="https://storage.googleapis.com/sourcegraph-assets/campaigneros.png"  align=right alt="Campaigñeros Logo">
+
 User-facing documentation: https://docs.sourcegraph.com/user/campaigns
 
 Developer documentation: https://docs.sourcegraph.com/dev/campaigns_development
@@ -43,7 +45,9 @@ Users provide the code to make the change, we provide the plumbing to turn it in
 
 The short-term goal and primary focus of the team is to *deliver campaigns to all users*. Our milestones toward that goal:
 
-1. Someone on the Campaigns team makes one meaningful change to at least two repositories.
+1. ~~Someone on the Campaigns team makes one meaningful change to at least two repositories.~~ **Done!**
+   - First change: https://github.com/sourcegraph/sourcegraph/pull/13811
+   - Second change: https://github.com/sourcegraph/src-cli/pull/311
 1. A Sourcegraph engineer (not on this team) makes one meaningful change to at least two repositories.
 1. ~~Reach out to one customer, summarizing the changes in the new Campaigns workflow, to give them a heads-up.~~ **Done!**
 1. ~~After we hear from that customer, we reach out to two other customers, as in previous step.~~ **Done!**

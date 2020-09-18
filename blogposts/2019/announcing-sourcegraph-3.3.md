@@ -112,7 +112,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 <div style="text-align: center">
 
-  ![](/blog/sourcegraph-browser-extension-enable-prompt.png)
+  ![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
 
 </div>
 
@@ -120,7 +120,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 Definitions are now filtered using `import` / `require` statements to reduce false matches and improve accuracy.
 
-![](/blog/filtered-imports.png)
+![Filtered imports](/blog/filtered-imports.png)
 
 ## Swift code navigation
 
@@ -137,7 +137,7 @@ See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googlep
 
 The symbols sidebar is now scoped to the current file/directory you’re viewing.
 
-![](/blog/file-scoped-symbols.png)
+![File scoped symbols](/blog/file-scoped-symbols.png)
 
 <!--
 TODO(ryan): Show once 3.3 is available on DigitalOcean

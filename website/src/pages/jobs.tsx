@@ -57,6 +57,7 @@ export default class JobsPage extends React.Component<any, any> {
                                         className="jobs__benefits-list-item-icon"
                                         src="/jobs/medical.svg"
                                         role="presentation"
+                                        alt="Medical"
                                     />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Medical</h3>
@@ -71,6 +72,7 @@ export default class JobsPage extends React.Component<any, any> {
                                         className="jobs__benefits-list-item-icon"
                                         src="/jobs/wellness.svg"
                                         role="presentation"
+                                        alt="Wellness"
                                     />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Wellness</h3>
@@ -86,6 +88,7 @@ export default class JobsPage extends React.Component<any, any> {
                                         className="jobs__benefits-list-item-icon"
                                         src="/jobs/vacation.svg"
                                         role="presentation"
+                                        alt="Vacation"
                                     />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Vacation</h3>
@@ -100,6 +103,7 @@ export default class JobsPage extends React.Component<any, any> {
                                         className="jobs__benefits-list-item-icon"
                                         src="/jobs/family.svg"
                                         role="presentation"
+                                        alt="Family"
                                     />
                                     <div>
                                         <h3 className="jobs__benefits-list-item-title">Family friendly</h3>

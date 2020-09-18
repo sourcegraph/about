@@ -215,12 +215,12 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-7 pl-lg-6 mt-3">
                         <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
-                                src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                className="embed-responsive-item"
+                                src="https://www.youtube.com/embed/EfKwKFzOs3E?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
-                                title="Campaigns for large-scale code changes in Sourcegraph 3.16"
+                                frameBorder={0}
+                                title="Sourcegraph Campaigns"
                             ></iframe>
                         </div>
                     </div>
@@ -229,13 +229,13 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="mt-6">
                 <div className="row flex-wrap-reverse">
                     <div className="col-lg-7 pr-lg-6 mt-3">
-                        <div class="container video-embed embed-responsive embed-responsive-16by9 ">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
+                                frameBorder={0}
                                 title="Product preview: code insights"
                             ></iframe>
                         </div>
