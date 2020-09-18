@@ -75,7 +75,7 @@ Every person at Sourcegraph has both the power and the responsibility to help ma
 - Engineers feel empowered to do what they feel needs to be done through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
 - [TODO: Talk about how other teams are encouraged to exercise their agency].
 
-This power of agency also comes with the responsibility of integrity and initiative. If you feel that something is important, then fight for it! We want a workplace where nobody feels like they're using the wrong tools for the job or doing the wrong thing. If they do, they're responsible for quickly voicing that concern, then proposing and executing upon solutions. Their teammates, then, are responsible for engaging in discussion around the topic and working together to make the best choice for everyone.
+This power of agency also comes with the responsibility of integrity and initiative. If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team.
 
 This doesn't mean that everything must constantly be in flux. Rather, it means that, when you believe something should happen, you either make it happen, or find a better solution.
 
