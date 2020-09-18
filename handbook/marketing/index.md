@@ -7,6 +7,7 @@
 - [Livestream events](livestream.md)
 - [Looker dashboards](https://sourcegraph.looker.com/browse/boards/2)
 - [Online content](content.md)
+  - [Editing the website About.sourcegraph.com](editing_website.md)
   - [Editing blog posts](editing_blog_posts.md)
   - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
   - [Website style guide](website_style_guide.md)
