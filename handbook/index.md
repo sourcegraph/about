@@ -14,7 +14,6 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Team](../company/team/index.md)
   - [Org chart](../company/team/org_chart.md)
   - [Careers](../company/careers.md)
-- [Goals](../company/goals/index.md)
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
   - [Style guide](communication/style_guide.md)
