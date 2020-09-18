@@ -42,7 +42,9 @@ This document contains the goals and work log for the search team's [2-week iter
 
 - **Owner(s):** Farhan
 - **Outcomes:**
-    - $DESIRED_OUTCOME
+    - The [feedback from the first round of user testing](https://github.com/sourcegraph/sourcegraph/issues/13944) has been implemented.
+    - The design team is able to run subsequent rounds of user testing for feedback.
+    - If user testing is completed, and feedback is addressed, the tour is turned on for all Sourcegraph.com new users by default.
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
