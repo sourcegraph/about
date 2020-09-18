@@ -57,10 +57,10 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - [30 min] [HM intro call](./interviews/hm_intro_call.md) with [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
 1. [1 hr] **[Portfolio review](./interviews/pd_portfolio_review.md)**: you to present your past work.
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+   - one of Product Designers [Rob Rhyne](../../../company/team/index.md#rob-rhyne), [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) or [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
 1. [2 hrs] **[Design exercise](./interviews/pd_design_exercise.md)**: We give you a problem statement and you walk us through your design process in a 2 hour block.
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+   - two Product Designers [Rob Rhyne](../../../company/team/index.md#rob-rhyne), [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) or [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
 1. Interviews
    - [1 hr] **Designing with customers and data**: The biz ops and customer engineering teams talk with you about how you work with customers to gather feedback. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/customers-and-data.md)
       - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
