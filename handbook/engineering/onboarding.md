@@ -32,6 +32,7 @@ Your manager should complete the following steps when you join:
   - Ask Christina to send an invite to [Productboard](https://sourcegraph.productboard.com)
   - Ask a member of the Design team to invite as "Viewer" to [Figma](https://figma.com)
   - Ask a frontend engineer to invite you to [Percy](https://percy.io/) (optional; recommended for frontend engineers)
+  - Ask a frontend engineer to invite you to [Chromatic](https://www.chromatic.com/) (optional; recommended for frontend engineers)
 
 ## Weeks 1-3
 
