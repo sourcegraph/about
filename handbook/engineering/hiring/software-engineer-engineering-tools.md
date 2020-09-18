@@ -1,6 +1,6 @@
 # Software Engineer - Developer tools
 
-We are looking for software engineers that are passionate about productivity and helping other be more productive.
+We are looking for software engineers that are passionate about productivity and improving development experience. You will work with our internal customers, Sourcegraph developers, to build tools and systems that make us more efficient.
 
 ## Qualifications
 
