@@ -1,20 +1,18 @@
-# Software Engineer - Distribution
+# Software Engineer - Developer tools
 
-We are looking for software engineers who are passionate about and skilled at making software easy to build, deploy, configure, monitor, and debug. You will have ownership to solve challenging problems that our customers face when they deploy and scale Sourcegraph on-premise in a variety of environments, and that we face when we deploy and scale [Sourcegraph.com](https://sourcegraph.com/search) (the largest Sourcegraph installation in the world). Read the [distribution team handbook documentation](../distribution/index.md) to learn more.
+We are looking for software engineers that are passionate about productivity and helping other be more productive.
 
 ## Qualifications
 
-- Solid understanding of how to use Docker and Kubernetes to deploy non-trivial applications to cloud platform providers (e.g., GCP, AWS).
-- Skilled at debugging distributed systems followed by designing and implementing solutions to those problems.
+- Experience with multiple programming languages, dependency management systems, and build systems.
+- You have experience with Docker and Kubernetes software development pipelines.
 - Ability to communicate clearly and empathetically, especially in writing and documentation.
 - Practiced at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g., cut scope) to ship quickly and iterate when necessary.
-- Comfortable using Terraform (or similar infrastructure-as-code).
-- to build tooling and automation for deployments, CI, and internal dev tools.
+
 
 ## Nice-to-haves
 
 - Proficiency in Go.
-- Published blog posts and/or tech talks about your work.
 - Experience working on small high-performing teams, preferably tech startups.
 
 ## Learn more about us
