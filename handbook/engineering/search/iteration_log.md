@@ -18,7 +18,8 @@ This document contains the goals and work log for the search team's [2-week iter
 
 - **Owner(s):** Stefan, Keegan
 - **Outcomes:**
-    - $DESIRED_OUTCOME
+    - Zoekt is called before we resolve repositories in global search. The outcome of this is a faster global search.
+    - Improved tracing for indexed search.
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
