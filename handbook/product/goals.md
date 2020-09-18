@@ -16,7 +16,7 @@ _Updated 2020-09-18_
   - Increase Sourcegraph extension usage by x%
   - Increase WAUs (weekly active users) by x% though ______
 
-  ### Improve documentation
+### Improve documentation
 
 - **Owner:** Product team (Technical Writer + Design)
 - **Timeline:** ~6-12 months
