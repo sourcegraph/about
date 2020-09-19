@@ -93,6 +93,7 @@ This deployment is also colloquially referred to as "dogfood", "dogfood-k8s", or
   gcloud container clusters get-credentials dogfood --zone us-central1-f --project sourcegraph-dogfood
   ```
 - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
+- [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/master/dogfood)
 
 Updates from `deploy-sourcegraph` are performed upon [notification from upstream](#deploy-sourcegraph) by the ["Update from deploy-sourcegraph"](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2/actions?query=workflow%3A%22Update+from+deploy-sourcegraph%22) workflow.
 
@@ -109,7 +110,6 @@ This deployment runs the single-image version of Sourcegraph. It does not have a
   gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
   ```
 - [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/master/kubernetes/dogfood)
-- [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/master/dogfood)
 
 ## Kubernetes
 
