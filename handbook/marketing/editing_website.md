@@ -6,9 +6,9 @@ This guide explains how to make website updates which consists of typescript(.ts
 
 See the following guides for editing these specific content:
 
-- [Editing blog posts](/handbook/marketing/editing_blog_posts.md)
-- [Editing the handbook](/handbook/editing.md)
-- [Local development of documentation only](/handbook/engineering/product_documentation.md#local-development-of-documentation-only)
+- [Editing blog posts](editing_blog_posts.md)
+- [Editing the handbook](../editing.md)
+- [Local development of documentation only](../engineering/product_documentation.md#local-development-of-documentation-only)
 
 #### Prerequisites
 
