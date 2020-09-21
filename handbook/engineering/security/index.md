@@ -6,7 +6,7 @@ We think that security is an enabler for the business. Sourcegraph is committed 
 
 ### Long term
 
-Every organization, is confident they can trust Sourcegraph with the security of their Source code.
+Every organization is confident they can trust Sourcegraph cloud to securely store and manage their source code.
 
 ### Medium term
 
