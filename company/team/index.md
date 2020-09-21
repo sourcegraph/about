@@ -417,7 +417,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Joel Kwartler (he/him)
 
-- Product Manager
+- Product Manager ([Current Goals](https://docs.google.com/document/d/1W9XAQ7eEu4GcuDgFFqhAhmbq8VmkATh4gzfS_dBxoyc))
 - Los Angeles, CA, USA 🇺🇸
 - Name pronunciation: [ʤoʊl kwɔrtlɜr](http://ipa-reader.xyz/?text=%CA%A4o%CA%8Al%20kw%C9%94rtl%C9%9Cr&voice=Joey)
 - [joel@sourcegraph.com](mailto:joel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joelkwartler), [Github](https://github.com/Joelkw)
