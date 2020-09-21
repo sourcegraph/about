@@ -131,7 +131,7 @@ On the security team, we work by planning, tracking, and reviewing - creating a 
    
 ### Learning
 
-After the each iteration, we hold a [retrospective](https://about.sourcegraph.com/retrospectives). We try to understand the degree to which we achieved the goals we communicaed at the beginning.  We idenitfy what went well and what our opportunities for imporvemen, and actively choose one of the things we've learned, and improve it.
+After the each iteration, we hold a [retrospective](https://about.sourcegraph.com/retrospectives). We try to understand the degree to which we achieved the goals we communicated at the beginning.  We identify what went well and what our opportunities for improvement are, then actively choose one of the things we've learned to integrate into our team's ethos.
 
 ## Members
 
