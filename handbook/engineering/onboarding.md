@@ -24,8 +24,7 @@ Your manager should complete the following steps when you join:
   - [Sourcegraph organization on Sourcegraph.com](https://sourcegraph.com/organizations/sourcegraph/members)
   - [LSIF organization on GitHub](https://github.com/orgs/lsif/people) (optional; recommended for Code Intelligence team members)
   - [Buildkite](https://buildkite.com/organizations/sourcegraph/users/new)
-  - [Google Cloud Platform](./environments.md).
-    - Add the user to the `gcp-engineering` [group](https://console.cloud.google.com/iam-admin/groups?orgonly=true&project=&folder=&organizationId=1006954638239&supportedpurview=organizationId).
+  - Add the user to the `gcp-engineering` [group](https://console.cloud.google.com/iam-admin/groups?orgonly=true&project=&folder=&organizationId=1006954638239&supportedpurview=organizationId) so they have access to our [Google Cloud Platform](./environments.md).
   - [Opsgenie](https://sourcegraph.app.opsgenie.com/settings/users/)
   - [Docker Hub](https://hub.docker.com/orgs/sourcegraph)
   - [Site24x7](https://www.site24x7.com) (optional; recommended for Distribution team members)
