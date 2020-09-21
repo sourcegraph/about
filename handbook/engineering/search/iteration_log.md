@@ -38,6 +38,8 @@ This document contains the goals and work log for the search team's [2-week iter
     - The feedback resulting from [design QA](https://www.figma.com/file/sPRyyv3nt5h0284nqEuAXE/%2312192-Sourcegraph-server-page-v1?node-id=2274%3A21539) has been implemented.
     - The feature has been QA'd internally.
     - If all feedback resulting from internal QA can be integrated during the iteration, the feature flag is turned on by default so that server users see it in 3.21.
+    - Metrics collection will be reviewed
+    - Survey is sent to internal users to gauge the response
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
