@@ -339,7 +339,7 @@
         ]
       }
     },
-        {
+    {
       "type": "Feature",
       "properties": {
         "name": "Elizabeth Stirling"
@@ -349,6 +349,19 @@
         "coordinates": [
           -122.3493,
           47.6205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juliana Peña"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.12539672851561,
+          47.67278567576541
         ]
       }
     }
