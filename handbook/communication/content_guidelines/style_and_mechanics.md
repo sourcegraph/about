@@ -8,9 +8,9 @@ Remember, we strive for [effectiveness over correctness](../content_guidelines.m
 
 Use the most popular US English spelling and phrasing.
 
-## Abbreviations & acronyms
+## Abbreviations, acronyms, latinisms, jargon
 
-Avoid abbreviations, acronyms, and latinisms when possible. Use complete English words for clarity.
+Avoid abbreviations, acronyms, latinisms, and jargon when possible. Use complete English words for clarity.
 
 <div class="usage">
 <div class="item yes">
@@ -20,6 +20,7 @@ Avoid abbreviations, acronyms, and latinisms when possible. Use complete English
 <li>that is</li>
 <li>as opposed to</li>
 <li>through</li>
+<li>Salesforce</li>
 </ul>
 </div>
 <div class="item no">
@@ -29,6 +30,7 @@ Avoid abbreviations, acronyms, and latinisms when possible. Use complete English
 <li>i.e.</li>
 <li>v.</li>
 <li>via</li>
+<li>SF</li>
 </ul>
 </div>
 </div>
