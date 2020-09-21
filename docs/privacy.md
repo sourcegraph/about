@@ -1,7 +1,6 @@
 ---
 layout: markdown
 title: Sourcegraph Privacy Policy
-permalink: privacy
 ---
 
 Last modified: February 21, 2020
@@ -18,7 +17,7 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 The Data Controller for Sourcegraph and our Services is:
 
-Sourcegraph, Inc. <br/>981 Mission St, San Francisco, CA 94103 
+Sourcegraph, Inc. <br/>981 Mission St, San Francisco, CA 94103
 
 <span style="color:#b200f8;">
 
@@ -52,7 +51,7 @@ The only personal information collected is the email address of the initial Sour
 
 We and our third-party partners may automatically collect certain types of usage information when you visit or use our Website.
 
-- **Cookies**. When visiting our website, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the site. A cookie may also convey information to us about how you use the Website (e.g., the pages you view, the links you click, how frequently you access the Website, and other actions you take on the Website), and allow us to track your usage of the Website over time.  
+- **Cookies**. When visiting our website, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the site. A cookie may also convey information to us about how you use the Website (e.g., the pages you view, the links you click, how frequently you access the Website, and other actions you take on the Website), and allow us to track your usage of the Website over time.
 
 - **Log file information**. We may collect log file information about your browser or mobile device each time you access the Website. Log file information may include anonymous information such as your web request, Internet Protocol ("IP") address, browser type, information about your mobile device, referring / exit pages and URLs, number of clicks and how you interact with links on the Website, domain names, landing pages, pages viewed, and other such information.
 

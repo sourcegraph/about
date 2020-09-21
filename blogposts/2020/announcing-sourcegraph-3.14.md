@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.14
 heroImage: https://about.sourcegraph.com/blog/3.14-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.14: Faster repository permissions, excluding forks and archived repositories by default, and Docker Compose deployment"
 ---
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.

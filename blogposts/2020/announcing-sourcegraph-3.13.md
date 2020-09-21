@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.13
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.13: Interactive search mode, structural search toggle, and campaigns with custom code execution"
 ---
 
 Quickly explore and better understand all the code everywhere with Sourcegraph Universal Code Search. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.

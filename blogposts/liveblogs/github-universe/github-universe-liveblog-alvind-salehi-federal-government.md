@@ -3,7 +3,7 @@ title: 'GitHub Universe liveblog: Alvind Salehi, Federal Government'
 author: 'Beyang Liu'
 publishDate: 2016-09-14T00:00-07:00
 tags: [
-  "blog"
+  "github-universe"
 ]
 slug: github-universe-liveblog-alvind-salehi-federal-government
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/vklRiLNSLukWa6cgoaY6y/7199c801db5f5f98ea43b4dda6b5c1a0/1_J2Mnd3ypIFewnjJG7OKp8g.jpeg

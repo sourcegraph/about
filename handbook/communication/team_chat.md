@@ -11,7 +11,8 @@ Exceptions:
 - #distributioneers retains messages indefinitely because a lot of customer context ends up in Slack threads and it is not currently practical to move that to another system of record.
 - #customer-updates similarly retains messages for two years because a lot of customer context ends up in Slack threads and it is not currently practical to move that to another system of record.
 - #feedback retains messages indefinitely because it provides a good source of user testimonials.
-- #engaging-external-engineers indefinitely because team chat is the easiest way to solicit advice from our broader team, and the questions are usually one-off, so it wouldn't make sense to try to make this more organized.
+- #engaging-external-engineers retains indefinitely because team chat is the easiest way to solicit advice from our broader team, and the questions are usually one-off, so it wouldn't make sense to try to make this more organized.
+- All channels that we share with customers or prospects (typically containing the prefixes #trial- or #support-) retain messages indefinitely to preserve context for support or audit-related purposes.
 
 [Historical archive of Slack messages prior to 2019-11-09](https://drive.google.com/file/d/1FUbOEsMM4fWRpxymgNHZCAssOPEFDelJ/view?usp=sharing): unzip and open `sourcegraph-slack-archive-to-20191109/index.html` to view. If you consult this, please be sure to add whatever information you learn to a source of truth so we reduce our reliance on this archive.
 
@@ -54,7 +55,7 @@ We have many Slack channels. You don't have to join them all, but here is a good
 - #design - How Sourcegraph looks visually
 - #feedback - Feedback directly from our users & customers
 - #product - Product questions, ideas and thoughts
-- #metrics - User metrics, analytics, etc.
+- #analytics - User metrics, analytics, etc.
 
 ### Business
 
@@ -72,9 +73,13 @@ We have many Slack channels. You don't have to join them all, but here is a good
 All engineers should join the following channels (feel free to adjust your notification preferences for each as you see fit, though):
 
 - #dev-announce - Things that affect a majority of the dev team in some way (e.g. site or buildkite is down, we will have expected downtime, etc.). *You should read every message in here, and messages you post to it should have a high signal-noise ratio.*
-- #dev-chat - anything related to Sourcegraph development :)
-- #dev-ops - discussing incidents and any other ops-related work
-- #buildkite - see notifications about Buildkite / CI failures.
-- #opsgenie - where pager notifications get sent to Slack
+- #dev-chat - Anything related to Sourcegraph development :).
+- #dev-ops - Discussing incidents and any other ops-related work.
+- #buildkite - Notifications about Buildkite / CI failures.
+- #opsgenie - Pager notifications get sent to Slack.
+- #alerts-cloud - Alertmanager alerts and warnings for our Cloud deployment.
+- #alerts-dogfood-k8s - Alertmanager alerts and warnings for our Dogfood deployment.
+- #bots-production - Kubernetes bot notifications.
+- #alerts-external - External system notifications which might impact our deployments.
 
 You should also join channels mentioned in [your team's documentation](../engineering/index.md#teams)

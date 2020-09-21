@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.3
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.3: Improving the user experience for site admins'
 ---
 
 We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navigation tool (self-hosted, open source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
@@ -111,7 +112,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 <div style="text-align: center">
 
-  ![](/blog/sourcegraph-browser-extension-enable-prompt.png)
+  ![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
 
 </div>
 
@@ -119,7 +120,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 Definitions are now filtered using `import` / `require` statements to reduce false matches and improve accuracy.
 
-![](/blog/filtered-imports.png)
+![Filtered imports](/blog/filtered-imports.png)
 
 ## Swift code navigation
 
@@ -136,7 +137,7 @@ See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googlep
 
 The symbols sidebar is now scoped to the current file/directory you’re viewing.
 
-![](/blog/file-scoped-symbols.png)
+![File scoped symbols](/blog/file-scoped-symbols.png)
 
 <!--
 TODO(ryan): Show once 3.3 is available on DigitalOcean

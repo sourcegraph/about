@@ -98,10 +98,8 @@ And finally, a field is resolved.
 - Context is widely used to store things like user identification, but it's not part of the spec
 
 # Resources
-- A list of GraphQL code and resources: [https://github.com/chentsulin/awesome-gra
-phql](https://github.com/chentsulin/awesome-gra
-phql)
-- The GraphQL Spec: https://facebook.github.io/graphql[](https://facebook.github.io/graphql)
+- A list of GraphQL code and resources: [https://github.com/chentsulin/awesome-graphql](https://github.com/chentsulin/awesome-graphql)
+- The GraphQL Spec: [https://facebook.github.io/graphql](https://facebook.github.io/graphql)
 - An excellent interactive tutorial: [https://www.howtographql.com/](https://www.howtographql.com/)
 - GraphQL Demo Code: [https://github.com/baer/graphql-demo](https://github.com/baer/graphql-demo)
 - GraphQL Demo Code in Launchpad: [https://launchpad.graphql.com/nnnwvmq07](https://launchpad.graphql.com/nnnwvmq07)

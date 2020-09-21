@@ -12,7 +12,7 @@ description: "At Convoy, Sourcegraph is transforming how engineers and data scie
 ---
 
 <p style="text-align: center">
-  <img src="https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg" />
+  <img src="https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg" alt="Convoy adopts Sourcegraph to improve collaboration between data scientists and software engineers"/>
 </p>
 
 [Convoy](https://www.convoy.com) is developing software that is transforming the freight industry. Their technology provides tools, services, and insights to trucking companies and ensures a more efficient and sustainable way to move millions of truckloads across America.

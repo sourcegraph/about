@@ -41,23 +41,47 @@ We will encourage and support you to:
 
 ## Learn more about us
 
-To create a product that serves the needs of all developers, we are building a diverse [all-remote team](https://about.sourcegraph.com/company/remote) that is [distributed across the world](https://about.sourcegraph.com/company/team). Sourcegraph is an equal opportunity workplace; we welcome people from all backgrounds and communities.
+To create a product that serves the needs of all developers, we are building a diverse [all-remote team](../../../company/remote/index.md) that is [distributed across the world](../../../company/team/index.md). Sourcegraph is an equal opportunity workplace; we welcome people from all backgrounds and communities.
 
-We provide [competitive compensation](https://about.sourcegraph.com/handbook/people-ops/compensation) and [practical benefits](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks) to keep you happy and healthy so that you can do your best work.
+We provide [competitive compensation](../../people-ops/compensation.md) and [practical benefits](../../people-ops/benefits-and-perks.md) to keep you happy and healthy so that you can do your best work.
 
-Learn more about what it is like to work at Sourcegraph by reading [our handbook](https://about.sourcegraph.com/handbook/).
+Learn more about what it is like to work at Sourcegraph by reading [our handbook](../../index.md).
 
-## Interview process (role currently closed to applications)
+## Interview process
+
+**Note: (role currently closed to applications)**
 
 1. You apply.
-1. We set up a 30-minute call to chat with you about Sourcegraph to find out what you are looking for in your next role.
-1. We schedule a 1 hour portfolio review for you to present your past work.
-1. **Design exercise:** We give you a problem statement and you walk us through your design process in a 2 hour block.
-1. We schedule 5 hours of remote interviews over video chat across multiple days.
-   - **Design strategy:** We ask you about your past work and accomplishments and how you will apply that to your role at Sourcegraph.
-   - **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
-   - **CEO/CTO:** We ask you about what motivates you to do your best work, and we tell you more about the vision for the company.
-1. We check your references.
+1. **Intro calls**: We chat with you about Sourcegraph and to find out what you are looking for in your next role.
+   - [30 min] Recruiter call
+   - [30 min] [HM intro call](./interviews/hm_intro_call.md) with [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
+1. [1 hr] **[Portfolio review](./interviews/pd_portfolio_review.md)**: you to present your past work.
+   - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
+   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+1. [2 hrs] **[Design exercise](./interviews/pd_design_exercise.md)**: We give you a problem statement and you walk us through your design process in a 2 hour block.
+   - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
+   - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+1. Interviews
+   - [1 hr] **Designing with customers and data**: The biz ops and customer engineering teams talk with you about how you work with customers to gather feedback. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/customers-and-data.md)
+      - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
+      - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
+   - [1 hr] **Engineering collaboration**: We ask you about how you work and communicate in a team setting, and how you handle tricky situations. [Internal documentation for interviewers](https://github.com/sourcegraph/interviews/blob/master/product/product-designer/engineering-collaboration.md)
+      - Will interview with one of the following engineering managers:
+         - [Tomás Senart](../../../company/team/index.md#tomás-senart)
+         - [Loïc Guychard](../../../company/team/index.md#loïc-guychard)
+         - [Aida DeWitt](../../../company/team/index.md#aida-dewitt)
+         - Can backfill with any [engineering manager](../../engineering/leadership/index.md#members).
+      - Will interview with one of the following engineers:
+         - [Felix Becker](../../../company/team/index.md#felix-becker)
+         - [Erik Seliger](../../../company/team/index.md#erik-seliger)
+         - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
+         - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
+         - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
+   - [30 min] [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
+   - [30 min] [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
 1. We make you a job offer.
+1. We check your references during your first week to find out what motivates you and how best to work with you.
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
+
+Go back to the [careers page](../../../company/careers.md) for all open positions.

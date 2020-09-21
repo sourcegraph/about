@@ -69,7 +69,7 @@ export default ((props: any) => (
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
         <div className="customers-page">
-            <CustomerLogosSection className="mb-6" />
+            <CustomerLogosSection className="my-6" />
             <hr className="mb-6" id="onboard" />
             <ContentSection className="mt-5">
                 <div className="row">
@@ -294,11 +294,11 @@ export default ((props: any) => (
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 className="embed-responsive-item"
-                                src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                src="https://www.youtube.com/embed/EfKwKFzOs3E?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
-                                title="Campaigns for large-scale code changes in Sourcegraph 3.16"
+                                frameBorder={0}
+                                title="Sourcegraph Campaigns"
                             ></iframe>
                         </div>
                     </div>

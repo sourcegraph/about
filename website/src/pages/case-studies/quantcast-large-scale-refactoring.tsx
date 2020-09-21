@@ -12,7 +12,7 @@ export default ((props: any) => (
                 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
             image: 'https://about.sourcegraph.com/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg',
         }}
-        className="darkBackground navbar-dark"
+        className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="Quantcast"

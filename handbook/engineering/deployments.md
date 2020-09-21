@@ -1,37 +1,63 @@
 # Deployments
 
-We maintain multiple deployments of Sourcegraph:
+We maintain multiple [deployments](#deployment-basics) of Sourcegraph:
 
-- [sourcegraph.com](https://sourcegraph.com) is our production deployment for open source code.
-  - [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/cloud?project=sourcegraph-dev)
-    ```
-    gcloud container clusters get-credentials cloud --zone us-central1-f --project sourcegraph-dev
-    ```
-  - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
-- [sourcegraph.sgdev.org](https://sourcegraph.sgdev.org) is our private deployment of Sourcegraph that contains our private code.
-  - [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
-    ```
-    gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
-    ```
-  - [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/master/kubernetes/dogfood)
-- [k8s.sgdev.org](https://k8s.sgdev.org) is a dogfood deployment that replicates the scale of our largest customers.
-  - [dogfood-full-k8s cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood-full-k8s?project=sourcegraph-dev)
-    ```
-    gcloud container clusters get-credentials dogfood-full-k8s --zone us-central1-a --project sourcegraph-dev
-    ```
-  - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
+- [sourcegraph.com](#sourcegraph-com) is our production deployment for open source code.
+- [sourcegraph.sgdev.org](#sourcegraph-sgdev-org) is our private deployment of Sourcegraph that contains our private code.
+- [k8s.sgdev.org](#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers.
 
-## Deploying to sourcegraph.com
+Also on this page:
 
-Every commit to `master` in [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) pushes updated Docker images for all of our services to [Docker Hub](https://hub.docker.com/u/sourcegraph/) as part of our [CI pipeline](https://buildkite.com/sourcegraph/sourcegraph) (i.e. if CI is green, then Docker images have been pushed).
+- [Kubernetes](#kubernetes)
+- [Testing](#testing)
+- [deploy-sourcegraph](#deploy-sourcegraph)
 
-Renovate checks for updated Docker images about every hour. If it finds new Docker images then it [opens and merges a PR](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate) to update the image tags in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com). The [Renovate dashboard](https://app.renovatebot.com/dashboard#github/sourcegraph/deploy-sourcegraph-dot-com) shows logs for previous runs and allows you to predict when the next run will happen.
+## Deployment basics
+
+Changes to `sourcegraph/sourcegraph` are automatically built as [images](#images), which are then:
+
+* Automatically updated in [`deploy-sourcegraph`](#deploy-sourcegraph) via [Renovate](#renovate), which runs deployment checks on the new images and merges the changes.
+  * `sourcegraph-bot` will mention your pull request in the `deploy-sourcegraph` change - you will be able to find a link in your pull request.
+* `deploy-sourcegraph` changes are [automatically deployed in k8s.sgdev.org](#k8s-sgdev-org), our Kubernetes dogfooding environment.
+  * `sourcegraph-bot` will mention the relevant `deploy-sourcegraph` pull request in the `deploy-sourcegraph-dogfood-k8s-2` change.
+* [Sourcegraph Cloud](#sourcegraph-com) will eventually pick up the same changes on a schedule via [Renovate](#renovate)
+
+### Images
+
+Each Sourcegraph service is provided as a Docker image. Every commit to `master` in [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph) pushes updated Docker images for all of our services to [Docker Hub](https://hub.docker.com/u/sourcegraph/) as part of our [CI pipeline](https://buildkite.com/sourcegraph/sourcegraph) (i.e. if CI is green, then Docker images have been pushed).
+
+For pushing custom images, refer to [building Docker images for specific branches](#building-docker-images-for-a-specific-branch).
+
+### Renovate
+
+Renovate is a tool for updating dependencies. [`deploy-sourcegraph-*`](#deploy-sourcegraph) repositories with Renovate configured check for updated Docker images about every hour. If it finds new Docker images then it opens and merges a PR ([Sourcegraph.com example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aapp%2Frenovate)) to update the image tags in the deployment configuration. This is usually accompanied by a CI job that deploys the updated images to the appropriate deployment.
+
+### Infrastructure
+
+The cloud resources (including clusters, DNS configuration, etc.) on which are deployments run should be configured in the [infrastructure repository](https://github.com/sourcegraph/infrastructure), even though Kubernetes deployments are managed by various `deploy-sourcegraph-*` repositories. For information about how our infrastructure is organized, refer to [Environments](./environments.md).
+
+## sourcegraph.com
+
+[![Build status](https://badge.buildkite.com/ef1289610fdd05b606bf1e57a034af2365c7b09c95ac6121f9.svg)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dot-com)
+
+This deployment is also colloquially referred to as "Sourcegraph Cloud", "Cloud", and "dot-com". It is the public deployment available to the public at [sourcegraph.com/search](https://sourcegraph.com/search).
+
+- [dot-com cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/cloud?project=sourcegraph-dev)
+  ```
+  gcloud container clusters get-credentials cloud --zone us-central1-f --project sourcegraph-dev
+  ```
+- [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
+- [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/master/cloud)
+
+### Deploying to sourcegraph.com
 
 Every commit to the `release` branch (the default branch) on [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com) deploys the Kubernetes YAML in this repository to our dot-com cluster [in CI](https://buildkite.com/sourcegraph/deploy-sourcegraph-dot-com/builds?branch=release) (i.e. if CI is green then the latest config in the `release` branch is deployed).
 
+Deploys on sourcegraph.com are currently [handled by Renovate](#renovate). The [Renovate dashboard](https://app.renovatebot.com/dashboard#github/sourcegraph/deploy-sourcegraph-dot-com) shows logs for previous runs and allows you to predict when the next run will happen.
+
 If you want to expedite a deploy, you can manually create and merge a PR that updates the Docker image tags in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com). You can find the desired Docker image tags by looking at the output of the Docker build step in [CI on sourcegraph/sourcegraph `master` branch](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=master) or by looking at [Docker Hub](https://hub.docker.com/u/sourcegraph/).
 
-## Rolling back sourcegraph.com
+### Rolling back sourcegraph.com
 
 To roll back soucegraph.com, push a new commit to the `release` branch in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com) that reverts the image tags and configuration to the desired state.
 
@@ -51,16 +77,51 @@ git push origin release
 
 [Buildkite](https://buildkite.com/sourcegraph/deploy-sourcegraph-dot-com/) will deploy the working commit to sourcegraph.com.
 
-🚨You also need to disable auto-deploys to prevent Renovate from automatically merging in image digest updates so that the site doesn't roll-forward.
+🚨 You also need to disable auto-deploys to prevent Renovate from automatically merging in image digest updates so that the site doesn't roll-forward.
 
   1. Go to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) and remove the `"extends:["default:automergeDigest"]` entry for the "Sourcegraph Docker images" group ([example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/commit/0eb16fd9e3ddfcf3a3c75ccdda0e7eddabf19c7a)).
   1. Once you have fixed the issue in the `master` branch of [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph), re-enable auto-deploys by reverting your change to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) from step 1.
 
-## Deploying and rolling back other clusters
+## k8s.sgdev.org
 
-The other clusters are deployed and rolled back in the same way as sourcegraph.com. Use the links at the top of this page to see where the Kubernetes configurations for each cluster is stored.
+[![Build status](https://badge.buildkite.com/65c9b6f836db6d041ea29b05e7310ebb81fa36741c78f207ce.svg?branch=release)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
 
-## How to setup access to Kubernetes
+This deployment is also colloquially referred to as "dogfood", "dogfood-k8s", or just "k8s". It deploys the latest changes in [`deploy-sourcegraph`](https://github.com/sourcegraph/deploy-sourcegraph), and by extension, `sourcegraph/sourcegraph`, via automated updates - learn more in [deployment basics](#deployment-basics).
+
+- [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dogfood?project=sourcegraph-dogfood)
+  ```
+  gcloud container clusters get-credentials dogfood --zone us-central1-f --project sourcegraph-dogfood
+  ```
+- [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
+- [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/master/dogfood)
+
+Updates from `deploy-sourcegraph` are performed upon [notification from upstream](#deploy-sourcegraph) by the ["Update from deploy-sourcegraph"](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2/actions?query=workflow%3A%22Update+from+deploy-sourcegraph%22) workflow.
+
+### Users in k8s.sgdev.org
+
+To create an account on [k8s.sgdev.org](https://k8s.sgdev.org), log in with your Sourcegraph Google account via OpenID Connect.
+
+To promote a user to site admin (required to make configuration changes), use the admin user credentials available in 1password (titled `k8s.sgdev.org admin user`) to log in to [k8s.sgdev.org](https://k8s.sgdev.org), and go to the [users page](https://k8s.sgdev.org/site-admin/users) to promote the desired user.
+
+## sourcegraph.sgdev.org
+
+[![Build status](https://badge.buildkite.com/aea3b210380714ff4e0c5429beae87bb318e7fd53603acdecf.svg)](https://buildkite.com/sourcegraph/infrastructure)
+
+This deployment runs the single-image version of Sourcegraph. It does not have a separate deployment configuration repository, and is deployed by the [infrastructure repository](https://github.com/sourcegraph/infrastructure).
+
+🚨 This deployment contains private code - do not use it for demos!
+
+- [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
+  ```
+  gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
+  ```
+- [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/master/kubernetes/dogfood)
+
+## Kubernetes
+
+This section contains tips and advice for interacting with our Kubernetes deployments (most notably [sourcegraph.com](#sourcegraph-com) and [k8s.sgdev.org](#k8s-sgdev-org)).
+
+### How to set up access to Kubernetes
 
 1. Make sure that you have been granted access to our Google Cloud project: https://console.developers.google.com/project/sourcegraph-dev?authuser=0. You may need to change `authuser` to the index of your sourcegraph.com Google account.
 
@@ -89,132 +150,8 @@ The other clusters are deployed and rolled back in the same way as sourcegraph.c
 	```
 	kubectl get pods --all-namespaces
 	```
- 
-## How to manually start a test cluster in our "Sourcegraph Auxiliary' project on GCP
- 
-- Go to [Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server)
-- Click create a cluster.
-- Give it a name (a good convention is to prefix with your username).
-- Keep the defaults zonal and us-central1.
-- Set the default pool to 3 nodes.
-- Change machine type to n1-standard-16.
-- Click "Create Cluster".
-- When cluster is ready, click connect and copy/paste the command and execute it (it looks something 
-  like `gcloud container clusters get-credentials ....`). Now kubectl is acting on this cluster.
-- Give yourself admin superpowers by executing: 
 
-```shell
-kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
-```
-
-- Add a storage class by saving these contents
-
-```yaml
-kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
-  name: sourcegraph
-  labels:
-    deploy: sourcegraph-storage
-provisioner: kubernetes.io/gce-pd
-parameters:
-  type: pd-ssd # This configures SSDs (recommended).
-```
-
-into a file 'sourcegraph.Storageclass.yaml' and executing
-
-```shell
-kubectl apply -f sourcegraph.Storageclass.yaml
-```
-
-- cd to your clone of [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) and follow the remaining
-steps of the [installation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md).
-
-```shell
-./kubectl-apply-all.sh
-```
-
-> Recommendation: [k9s](https://github.com/derailed/k9s) is a nice command-line GUI tool for common kubectl operations.
-> It shows the state of your cluster and offers keyboard short-cuts for all the common kubectl commands.
-
-- Once all the pods are running you can port-forward the frontend (or any other services you are interested in)
-
-```shell
-kubectl port-forward svc/sourcegraph-frontend 3080:30080 
-```
-
-Please delete your test cluster when you are done testing by going to
-[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
-appropriate delete button.
-
-## How to start a test cluster in our "Sourcegraph Auxiliary' project on GCP with a script
-
-The following script executes the same steps that were described in the previous section. Place the script in the root
-directory of your [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) clone
-(also add it to your `.git/info/exclude`). 
-Execute it from the repo root directory. It will spin up a test cluster in the namespace `ns-sourcegraph`.
-
-```shell script
-#!/usr/bin/env bash
-
-set -ex
-
-if [  -d "generated-cluster" ]
-then
-    echo "Directory generated-cluster already exists. This script would override its contents. Please move it away."
-    exit 1
-fi
-
-USER=$(whoami)
-
-mkdir generated-cluster
-
-./overlay-generate-cluster.sh namespaced generated-cluster
-
-gcloud container clusters create "${USER}"-testing --zone us-central1-a --num-nodes 3 --machine-type n1-standard-16 --disk-type pd-ssd --project sourcegraph-server
-gcloud container clusters get-credentials "${USER}"-testing --zone us-central1-a --project sourcegraph-server
-
-kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
-
-kubectl apply -f base/sourcegraph.StorageClass.yaml
-
-kubectl create namespace ns-sourcegraph
-
-kubectl apply -n ns-sourcegraph --prune -l deploy=sourcegraph -f generated-cluster --recursive
-
-timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/indexed-search
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/precise-code-intel-bundle-manager
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/prometheus
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-cache
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-store
-timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/gitserver
-timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/sourcegraph-frontend
-
-kubectl -n ns-sourcegraph expose deployment sourcegraph-frontend --type=NodePort --name sourcegraph --type=LoadBalancer --port=3080 --target-port=3080
-
-kubectl -n ns-sourcegraph describe service/sourcegraph
-```
-
-This script creates a load balancer and describes the exposed service. Look for the `LoadBalancer Ingress` IP and copy
-its value (if the IP hasn't been assigned yet, wait a little and execute
- `kubectl -n ns-sourcegraph describe service/sourcegraph` until it appears).
- 
-You can paste the IP value into the following Caddyfile to have your new test cluster available at `https://sourcegraph.test:3443`
-
-```text
-sourcegraph.test:3443
-tls internal
-reverse_proxy http://<INSERT LOAD BALANCER IP HERE>:3080
-```
-
-Again, please delete your test cluster when you are done testing by going to
-[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
-appropriate delete button.
-
-> Recommendation: [infra.app](https://infra.app/) is a nice Kubernetes management app.
-> It has some overlap with `k9s` but also complements it in some areas.
-
-## kubectl cheatsheet
+### kubectl cheatsheet
 
 These example commands are for the `dot-com` cluster where the Sourcegraph application is deployed to the `prod` namespace.
 
@@ -284,11 +221,160 @@ These example commands are for the `dot-com` cluster where the Sourcegraph appli
 
 </table>
 
-## Backups
+### Scaling Kubernetes clusters
 
-Snapshots of all Kubernetes resources are taken periodically and pushed to https://github.com/sourcegraph/kube-backup/.
+To scale the number of nodes in a cluster run the following command:
+```bash
+gcloud container clusters resize $CLUSTER_NAME --zone $ZONE --num-nodes $NUM_NODES
+```
 
-## Building Docker images for a specific branch
+For example, you may have a cluster not being actively used but want to preserve it for later use. You can scale the cluster to zero by running:
+```bash
+gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 0
+```
+
+When the cluster is ready for use again, simply run the same command with the number of nodes required:
+```bash
+gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 3
+```
+
+For more informatino see the [GKE documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/resizing-a-cluster).
+
+### Kubernetes backups
+
+Snapshots of all Kubernetes resources are taken periodically and pushed to [kube-backup](https://github.com/sourcegraph/kube-backup).
+ 
+## Testing
+
+This section documents testing clusters and deployments.
+
+### Test clusters
+
+#### How to manually start a test cluster in our "Sourcegraph Auxiliary' project on GCP
+ 
+- Go to [Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server)
+- Click create a cluster.
+- Give it a name (a good convention is to prefix with your username).
+- Keep the defaults zonal and us-central1.
+- Set the default pool to 3 nodes.
+- Change machine type to n1-standard-16.
+- Click "Create Cluster".
+- When cluster is ready, click connect and copy/paste the command and execute it (it looks something 
+  like `gcloud container clusters get-credentials ....`). Now kubectl is acting on this cluster.
+- Give yourself admin superpowers by executing: 
+
+```shell
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
+```
+
+- Add a storage class by saving these contents
+
+```yaml
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: sourcegraph
+  labels:
+    deploy: sourcegraph-storage
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-ssd # This configures SSDs (recommended).
+```
+
+into a file 'sourcegraph.Storageclass.yaml' and executing
+
+```shell
+kubectl apply -f sourcegraph.Storageclass.yaml
+```
+
+- cd to your clone of [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) and follow the remaining
+steps of the [installation](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/install.md).
+
+```shell
+./kubectl-apply-all.sh
+```
+
+> Recommendation: [k9s](https://github.com/derailed/k9s) is a nice command-line GUI tool for common kubectl operations.
+> It shows the state of your cluster and offers keyboard short-cuts for all the common kubectl commands.
+
+- Once all the pods are running you can port-forward the frontend (or any other services you are interested in)
+
+```shell
+kubectl port-forward svc/sourcegraph-frontend 3080:30080 
+```
+
+Please delete your test cluster when you are done testing by going to
+[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
+appropriate delete button.
+
+#### How to start a test cluster in our "Sourcegraph Auxiliary' project on GCP with a script
+
+The following script executes the same steps that were described in the previous section. Place the script in the root
+directory of your [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) clone
+(also add it to your `.git/info/exclude`). 
+Execute it from the repo root directory. It will spin up a test cluster in the namespace `ns-sourcegraph`.
+
+```shell script
+#!/usr/bin/env bash
+
+set -ex
+
+if [  -d "generated-cluster" ]
+then
+    echo "Directory generated-cluster already exists. This script would override its contents. Please move it away."
+    exit 1
+fi
+
+USER=$(whoami)
+
+mkdir generated-cluster
+
+./overlay-generate-cluster.sh namespaced generated-cluster
+
+gcloud container clusters create "${USER}"-testing --zone us-central1-a --num-nodes 3 --machine-type n1-standard-16 --disk-type pd-ssd --project sourcegraph-server
+gcloud container clusters get-credentials "${USER}"-testing --zone us-central1-a --project sourcegraph-server
+
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
+
+kubectl apply -f base/sourcegraph.StorageClass.yaml
+
+kubectl create namespace ns-sourcegraph
+
+kubectl apply -n ns-sourcegraph --prune -l deploy=sourcegraph -f generated-cluster --recursive
+
+timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/indexed-search
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/precise-code-intel-bundle-manager
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/prometheus
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-cache
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/redis-store
+timeout 5m kubectl -n ns-sourcegraph rollout status -w statefulset/gitserver
+timeout 5m kubectl -n ns-sourcegraph rollout status -w deployment/sourcegraph-frontend
+
+kubectl -n ns-sourcegraph expose deployment sourcegraph-frontend --type=NodePort --name sourcegraph --type=LoadBalancer --port=3080 --target-port=3080
+
+kubectl -n ns-sourcegraph describe service/sourcegraph
+```
+
+This script creates a load balancer and describes the exposed service. Look for the `LoadBalancer Ingress` IP and copy
+its value (if the IP hasn't been assigned yet, wait a little and execute
+ `kubectl -n ns-sourcegraph describe service/sourcegraph` until it appears).
+ 
+You can paste the IP value into the following Caddyfile to have your new test cluster available at `https://sourcegraph.test:3443`
+
+```text
+sourcegraph.test:3443
+tls internal
+reverse_proxy http://<INSERT LOAD BALANCER IP HERE>:3080
+```
+
+Again, please delete your test cluster when you are done testing by going to
+[Sourcegraph Auxiliary](https://console.cloud.google.com/kubernetes/list?project=sourcegraph-server) and pressing the
+appropriate delete button.
+
+> Recommendation: [infra.app](https://infra.app/) is a nice Kubernetes management app.
+> It has some overlap with `k9s` but also complements it in some areas.
+
+### Building Docker images for a specific branch
 
 If you need to build Docker images on Buildkite for testing purposes, e.g. you
 have a PR with a fix and want to deploy that fix to a test instance, you can
@@ -311,15 +397,28 @@ This will trigger two builds on Buildkite for these branches:
 
 And the end of the build you can find the name of the newly built Docker image.
 
-## Merging changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
+## deploy-sourcegraph
+
+![Renovate downstream](https://github.com/sourcegraph/sourcegraph/workflows/Renovate%20downstream/badge.svg) [![master build status](https://badge.buildkite.com/018ed23ed79d7297e7dd109b745597c58d875323fb06e81786.svg?branch=master)](https://buildkite.com/sourcegraph/deploy-sourcegraph) ![Dispatch update](https://github.com/sourcegraph/deploy-sourcegraph/workflows/Dispatch%20update/badge.svg)
+
+Sourcegraph Kubernetes deployments typically start off as [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) forks. Learn more about how we advise customers to deploy Sourcegraph in Kubernetes in our [admin installation documentation](https://docs.sourcegraph.com/admin/install/kubernetes).
+
+There is automation in place to drive automatic updates for certain deployments from `deploy-sourcegraph`:
+
+* the ["Renovate downstream"](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3A%22Renovate+downstream%22) workflow performs a manual [Renovate run](#renovate) on `deploy-sourcegraph` as soon as [Sourcegraph images are published](#images).
+* the ["Dispatch Update"](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Dispatch+update%22) workflow notifies deployments like [k8s.sgdev.org](#k8s-sgdev-org) to perform a merge from `deploy-sourcegraph`.
+
+For documentation about developing `deploy-sourcegraph` and cutting releases, refer to the [repository's `README.dev.md`](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/README.dev.md).
+
+### Merging changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
 
 We have two Sourcegraph Kubernetes cluster installations that we manage ourselves:
  
 * [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
-* [deploy-sourcegraph-dogfood-k8s](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s)
+* [deploy-sourcegraph-dogfood-k8s-2](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
 
 This section describes how to merge changes from [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) 
-(referred to as upstream) into these two installations.
+(referred to as upstream) into `deploy-sourceegraph-dot-com`. The `deploy-sourcegraph-dogfood-k8s-2` configuration is [automatically updated with the latest `deploy-sourcegraph` changes](#k8s-sgdev-org).
 
 The process is similar to the [process](https://docs.sourcegraph.com/admin/install/kubernetes/configure#fork-this-repository) 
 we recommend our customers use to merge changes from upstream. The differences in process originate from the dual purpose
@@ -331,32 +430,24 @@ and the docker images are automatically updated to the latest builds.
 
 ### Relationship between the repositories
 
-1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master strictly tracks the upstream https://github.com/sourcegraph/deploy-sourcegraph/tree/master. 
+1. [`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master) strictly tracks the upstream https://github.com/sourcegraph/deploy-sourcegraph/tree/master. 
+1. [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) _only_ contains the customizations required to deploy/document sourcegraph.com from the base deployment of Sourcegraph. 
+   - This is the default branch for this repository, since all customizations to sourcegraph.com should be merged into this branch (like we tell our customers to).
 
-1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release _only_ contains the customizations required to deploy/document sourcegraph.com from the base deployment of Sourcegraph. 
-
-1. https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release is the default branch for this repository, since all customizations to sourcegraph.com should be merged into this branch (like we tell our customers to).
-
-These steps ensure that the diff between https://github.com/sourcegraph/deploy-sourcegraph-dot-com and https://github.com/sourcegraph/deploy-sourcegraph is as small as possible so that the changes are easy to review.  
+These steps ensure that the diff between [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com) and [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) is as small as possible so that the changes are easy to review.  
 
 In order to mimic the same workflow that we tell our customers to follow:
 
 - Customizations / documentation changes that **apply to all customers (not just sourcegraph.com)** should be:
-    1. Merged into https://github.com/sourcegraph/deploy-sourcegraph/tree/master
-    1. Pulled into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master:
+    1. Merged into [`deploy-sourcegraph@master`](https://github.com/sourcegraph/deploy-sourcegraph/tree/master) (note that this will also [automatically update k8s.sgdev.org](#k8s-sgdev-org))
+    1. Pulled into [`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master):
           ```shell
           git checkout master
           git fetch upstream
           git merge upstream/master
           ```
-    1. Merged into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release by merging https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master into https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release
-          ```shell
-          git checkout release
-          git fetch origin
-          git merge origin/master
-          ```
-
-- Customizations / documentation changes that **apply to only sourcegraph.com** can be simply merged into the https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release branch. 
+    1. Merged into [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) by merging from[`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master) - see [merging upstream](#merging-upstream-deploy-sourcegraph-into-deploy-sourcegraph-dot-com) for more details.
+- Customizations / documentation changes that **apply to only sourcegraph.com** can be simply merged into the [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) branch. 
 
 ### Merging upstream `deploy-sourcegraph` into `deploy-sourcegraph-dot-com`
 
@@ -388,62 +479,3 @@ In order to mimic the same workflow that we tell our customers to follow:
 1. Watch CI, which will deploy the change automatically.
 1. Check the deployment is healthy afterwards (`kubectl get pods` should show all healthy, searching should work).
 
-## Troubleshooting out of sync updates on Pulumi
-
-If out of sync changes occur on the dogfood cluster or a pod is failing, Pulumi can end up in an interrupted state and the `pulumi-refresh.sh` build step will not pass on buildkite. If this occurs, follow these steps to fix edit the deployment directly and remediate the issues that are failing the build step:
-
-1. From your local clone of the dogfood repo, run:
-```
-pulumi stack export > stack.json
-```
-
-2. In the file search for the `pending_operations` block and verify the pending operation is the same as that failing in the buildkite logs. 
-
-buildkite.log
-```bash
-error: the current deployment has 1 resource(s) with pending operations:
-  * urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus, interrupted while updating
-```
-
-stack.json
-```bash
-"pending_operations": [
-  {
-      "resource": {
-          "urn": "urn:pulumi:ds-dog-k8s-dev::sg-deploy-k8s-helper::kubernetes:yaml:ConfigGroup$kubernetes:yaml:ConfigFile$kubernetes:apps/v1:Deployment::prometheus",
-      ...
-      },
-      "type": "updating"
-  }
-]
-```
-
-3. Edit the `stack.json` file and remove the resource in question.
-
-4. Import the stack by running:
-```
-pulumi stack import --file stack.json
-```
-
-5. Trigger the build again from buildkite and ensure all build steps pass.
-
-For more information see the Pulumi [documentation](https://www.pulumi.com/docs/troubleshooting/#editing-your-deployment)
-
-## Scaling Kubernetes Clusters
-
-To scale the number of nodes in a cluster run the following command:
-```bash
-gcloud container clusters resize $CLUSTER_NAME --zone $ZONE --num-nodes $NUM_NODES
-```
-
-For example, you may have a cluster not being actively used but want to preserve it for later use. You can scale the cluster to zero by running:
-```bash
-gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 0
-```
-
-When the cluster is ready for use again, simply run the same command with the number of nodes required:
-```bash
-gcloud container cluster resize dev-cluster --zone us-central1-f --num-nodes 3
-```
-
-For more informatino see the [GKE documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/resizing-a-cluster).

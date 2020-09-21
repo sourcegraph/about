@@ -35,7 +35,7 @@ Secrets are a key pillar of Kubernetes, but anyone with access to etcd can all t
 *If there's one thing I should take away from this talk, it's that SuperMarioKartItemBoxes on your screen are good. SuperMarioKartItemBoxes represent encrypted binary content dumped on your terminal! (Seth is such a funny speaker!)*
 
 <center>
-  <img src="https://i.stack.imgur.com/SYxut.png" />
+  <img src="https://i.stack.imgur.com/SYxut.png" alt="Syxut" />
   <br/>
   <i>From https://unix.stackexchange.com/questions/79684/fix-terminal-after-displaying-a-binary-file</i>
 </center>

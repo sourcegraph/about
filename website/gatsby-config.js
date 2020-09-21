@@ -1,3 +1,6 @@
+// @ts-check
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `Sourcegraph`,
@@ -5,6 +8,13 @@ module.exports = {
     siteUrl: `https://about.sourcegraph.com`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        sitemap: 'https://about.sourcegraph.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,8 +25,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blogposts`,
+        name: `blog`,
         path: `${__dirname}/../blogposts/`,
+        ignore: [`${__dirname}/../blogposts/liveblogs/**/*`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `liveblog`,
+        path: `${__dirname}/../blogposts/liveblogs`,
       },
     },
     {
@@ -40,6 +58,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -61,7 +80,7 @@ module.exports = {
 
         // datalayer to be set before GTM is loaded
         // should be an object or a function that is executed in the browser
-        // Defaults to null
+        // Defaults to null.
         defaultDataLayer: { platform: 'gatsby' },
 
         // Specify optional GTM environment details.
@@ -79,8 +98,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     {
       options: {
-        noTrailingSlash: true,
-        siteUrl: `https:/about.sourcegraph.com`,
+        noTrailingSlash: false,
+        siteUrl: `https://about.sourcegraph.com`,
       },
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
     },

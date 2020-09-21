@@ -9,10 +9,10 @@ export default ((props: any) => (
         meta={{
             title: 'Convoy improves developer onboarding',
             description:
-                'Since 2015, Convoy has quickly grown to over 500 employees. Sourcegraph helps them improve their developer on-boarding process.',
+                'Sourcegraph case study: At Convoy, Sourcegraph helps improves the developer on-boarding process.',
             image: 'https://about.sourcegraph.com/case-studies/convoy1-sourcegraph-case-study-og-embed.jpg',
         }}
-        className="darkBackground navbar-dark"
+        className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="Convoy"

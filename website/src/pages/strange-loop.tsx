@@ -1,44 +1,23 @@
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import _ from 'lodash'
 import * as React from 'react'
-import BlogPosts from '../components/BlogPosts'
-import Layout from '../components/Layout'
+import { PostsListPage } from '../components/blog/PostsListPage'
+import { BlogType, BLOG_TYPE_TO_INFO } from '../components/blog/postTypes'
 
-export default class GoList extends React.Component<any, any> {
-    public render(): JSX.Element | null {
-        const metaProps = {
-            title: 'Strange Loop liveblog',
-            description: 'Check out the official Strange Loop 2019 Liveblog proudly hosted by Sourcegraph.',
-            image: 'https://about.sourcegraph.com/blog/strange-loop-banner-landscape.jpg',
-        }
-        const strangeLoopPosts = this.props.data.allMarkdownRemark.edges.filter(
-            (post: any) => post.node.frontmatter.published === true
-        )
+export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
+    <PostsListPage
+        blogInfo={BLOG_TYPE_TO_INFO[BlogType.StrangeLoop]}
+        posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
+        location={props.location}
+    />
+)
 
-        return (
-            <Layout
-                location={this.props.location}
-                meta={{
-                    title: metaProps.title,
-                    description: metaProps.description,
-                    image: metaProps.image,
-                }}
-            >
-                <section className="content-section container hero-section text-center py-5">
-                    <h1>{metaProps.title}</h1>
-                </section>
-                <div className="gray-9 bg-white text-dark">
-                    <BlogPosts blogType="strange-loop" posts={strangeLoopPosts} />
-                </div>
-            </Layout>
-        )
-    }
-}
+export default Page
 
 export const pageQuery = graphql`
     query strangeLoopPosts {
         allMarkdownRemark(
-            filter: { frontmatter: { tags: { in: "strange-loop" } } }
+            filter: { fields: { blogType: { eq: "strange-loop" } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {
@@ -57,6 +36,8 @@ export const pageQuery = graphql`
                     excerpt(pruneLength: 300)
                     fields {
                         slug
+                        permalink
+                        blogType
                     }
                 }
             }

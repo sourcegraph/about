@@ -1,6 +1,8 @@
 # Distribution team
 
-The distribution team is responsible for making Sourcegraph easy to deploy, scale, monitor, and debug. We solve challenging problems that our customers face when they deploy and scale Sourcegraph on-premise in a variety of environments, and that we face when we deploy and scale [Sourcegraph.com](https://sourcegraph.com/search) (the largest Sourcegraph installation in the world).
+<img align="right" src="https://user-images.githubusercontent.com/3173176/92966535-955f2380-f42c-11ea-8723-2aa60c55b2db.png" height="500px"></img>
+
+The distribution team is responsible for making Sourcegraph easy to deploy, scale, monitor, and debug. We solve the most challenging problems our customers face deploying Sourcegraph on-premise in a variety of environments, and on [Sourcegraph.com](https://sourcegraph.com/search) - the largest Sourcegraph instance in the world.
 
 ## Contact
 
@@ -82,7 +84,7 @@ Go, Docker, Kubernetes
 * [Internal infrastructure](./internal_infrastructure.md)
 * [Tools](./tools/index.md)
 * Tutorials
-  * [Observability developer guide](observability/index.md)
+  * [Observability developer guide](../observability/index.md)
   * [Managed instances](managed/index.md)
   * [Collecting and inspecting metrics dumps](metrics_dumps.md)
   * [How to set up a separate website maintained by Sourcegraph](separate_website.md)
@@ -90,15 +92,24 @@ Go, Docker, Kubernetes
   * [How to test the Gitlab native integration locally](gitlab_native_local.md)
   * [How to make updates to global settings and configuration on sourcegraph.com](update_sourcegraph_website.md)
   * [Create GCP commitments](gcp.md#committed-use-discounts)
+* FAQ
+  * [Why is there not a "stable" or "latest" Docker image tag?](faq.md#why-is-there-not-a-stable-or-latest-docker-image-tag)
 
 ## Members
 
-- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([engineering manager](../roles.md#engineering-manager))
-- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
-- [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
-- [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
-- [Dave Try](../../../company/team/index.md#dave-try)
-- [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. The engineering team is owning PM responsibilities in the meantime.
+- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
+    - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
+    - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
+    - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
+    - [Dave Try](../../../company/team/index.md#dave-try)
+    - [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
+
+## On-call
+
+- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerDistribution%2C+:%5B_%5D%7D+OR+%28:%5B_%5D%2C+ObservableOwnerDistribution%29+count:1000&patternType=structural)
+- [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/aa59eba4-9b34-45ea-9515-c4dab4cbdac9/main)
+
 
 ## Hiring status
 

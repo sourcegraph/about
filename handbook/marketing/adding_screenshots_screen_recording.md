@@ -13,6 +13,19 @@
   - Chose [Cleanshot](https://getcleanshot.com/) if just doing screenshots and GIFs.
   - Add ScreenFlow to your list if you plan on doing videos frequently, as you will appreciate editing and clip speed-up capabilities.
 
+## Don't add title slides to videos
+
+We almost never use title slides. Title slides are slides at the start of your video that have a Sourcegraph logo, a background, a title (like "Campaigns demo"), and maybe a nice visual effect.
+
+Why do we not use title slides?
+
+1. They make the video seem less authentic, which makes it less compelling. Developers already love watching videos of other developers showing things off.
+1. It takes a lot of work, and involves other people, to get it right. This means wasted time (since we don't perceive a benefit to a title slide) and, on the margin, it means that our videos will be older, more stale, and more mediocre (more cooks in the kitchen).
+1. Title slides delay the "time to a wow moment".
+1. It likely leads to inconsistencies. All title slides that we're currently showing on our site should be the same, if we are showing title slides. So, they'd all need to have the same layout, tone/voice of copy, timing, etc. It adds a large burden of maintenance that we don't want to take on.
+
+If you *really* think your video needs one, ask for help in the `#marketing` channel (and cite this handbook section and explain why you need one).
+
 ## Adding a screenshot
 
 ### Screenshot apps
@@ -68,7 +81,7 @@ Recording a great screencast is a large topic, but here are some essentials to k
 - Invest in learning a tool such as ScreenFlow if you need to annotate and/or edit your recordings
 - Does your GIF or video make sense without an accompanying explanation? If not, then a voice-over or text annotations can help a lot
 
-Like most things, practice makes perfect, but if you’re wanting to get some advice before taking the plunge, Ryan, Thorsten, and Quinn (sqs), have all created screencasts and can help you get started, so just reach out on Slack.
+Like most things, practice makes perfect, but if you’re wanting to get some advice before taking the plunge, Thorsten, and Quinn (sqs), have all created screencasts and can help you get started, so just reach out on Slack.
 
 ### Adding audio or voice-overs
 
@@ -90,17 +103,12 @@ But to get you started, here are some essential tips:
 - Ensure your voice over is loud enough by comparing the audio level in your video against a professionally produced video on YouTube. You can adjust the microphone input level in **System Preferences** > **Sound**.
 - Research what makes a great voice-over and takes notes on videos you think have fantastic voice-overs.
 
-<!-- todo(ryan): Move Podcasting guide to handbook-->
-More tips and recommendations are in our [podcasting guide](https://docs.google.com/document/d/1pHvSvLCjFiVoKZF3l27EBsCLjBNFTY6k_TEMAqSqiZ4) and you can also reach out to Ryan Blunden who would love to chat about all things voice-overs and audio, including who can provide voice-over coaching and mixing services.
+More tips and recommendations are in our [podcasting guide](https://docs.google.com/document/d/1pHvSvLCjFiVoKZF3l27EBsCLjBNFTY6k_TEMAqSqiZ4).
 
 ### Recording your voiceover
 
 - If using ScreenFlow 9, you can record audio using the narration feature which can be accessed from the menu bar: **Insert** > **Narration**
 - Use your phone to record your voice-over, then import the audio file into ScreenFlow (produces a better sounding result than using your laptop microphone)
-
-## Adding start/end screens to videos
-
-We don't typically use these but that doesn't mean anything should stop you. Reach out in the `#marketing` channel if you need any graphics designed for your video.
 
 ## Embedding GIFs
 
@@ -113,7 +121,7 @@ Provided your image is less than 100Kb, it can be added to the same repository t
 Before you go to upload your video, ensure someone from the marketing team has added you as an owner for the Sourcegraph brand account (shown below) as we want all Sourcegraph videos to be owned by the brand account.
 
 <div class="text-center">
-  <img src="https://sourcegraphstatic.com/handbook/make-sourcegraph-brand-owner.gif" class="drop-shadow"/>
+  <img src="https://sourcegraphstatic.com/handbook/make-sourcegraph-brand-owner.gif" class="drop-shadow" alt="uploading your videos to youtube"/>
 </div>
 
 <br/>
@@ -121,7 +129,7 @@ Once you’ve been added as an owner, switch to the Sourcegraph user account.
 <br/>
 
 <div class="text-center">
-  <img src="https://sourcegraphstatic.com/handbook/youtube-switch-account.gif"class="drop-shadow"/>
+  <img src="https://sourcegraphstatic.com/handbook/youtube-switch-account.gif"class="drop-shadow" alt="switch to Sourcegraph user account"/>
 </div>
 
 Export your video in 16:9 ratio (should probably be 720p), then [upload your video to YouTube](https://studio.youtube.com/channel/UCOy2N25-AHqE43XupT9mwZQ):

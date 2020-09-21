@@ -10,10 +10,10 @@ export default ((props: any) => (
             title:
                 'Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together',
             description:
-                'At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
+                'Sourcegraph case study: At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
             image: 'https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
         }}
-        className="darkBackground navbar-dark"
+        className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="Convoy"

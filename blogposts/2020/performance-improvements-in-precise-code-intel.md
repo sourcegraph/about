@@ -37,17 +37,17 @@ Premature optimization is the root of all evil, so we initiated our optimization
 <tr>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu"/>
         </a>
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs"/>
         </a>
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap"/>
         </a>
     </td>
 </tr>
@@ -62,13 +62,13 @@ These efforts yielded a 2x speedup in query latency, a 2x speedup in processing 
 The CPU profiling revealed a substantial amount of time was being spent in the API server. This service receives the LSIF upload from the API user and passes it to the bundle manager server which writes it to disk. A separate background worker service later converts the on-disk LSIF data into a SQLite bundle. On a user query, the API server receives the requests, queries the bundle manager server, which in turn uses the SQLite bundle to respond to the API server, which then forwards that response to the user.
 
 <p class="text-center">
-  <img src="https://sourcegraphstatic.com/precise-code-intel-arch-before-rewrite.svg" title="architecture diagram (before)" />
+  <img src="https://sourcegraphstatic.com/precise-code-intel-arch-before-rewrite.svg" title="architecture diagram (before)" alt="architecture diagram (before)" />
 </p>
 
 The "middleman" nature of the API server when serving user requests was an artifact of the initial architecture of the indexed precise code navigation system. After porting this system to Go in 3.16, it became apparent that the API server was a *very* thin wrapper around the bundle manager API, so in 3.17, we decided to remove it altogether.
 
 <p class="text-center">
-  <img src="https://sourcegraphstatic.com/precise-code-intel-arch-after-rewrite.svg" title="architecture diagram (after)" />
+  <img src="https://sourcegraphstatic.com/precise-code-intel-arch-after-rewrite.svg" title="architecture diagram (after)" alt="architecture diagram (after)" />
 </p>
 
 The way we did this was a bit of a kludge. In essence, we wanted to eliminate an unnecessary network call between the precise code API server client (in the Sourcegraph frontend service) and the API server. However, we didn't want to have to write a bunch of new code to define an API service and client for the bundle manager directly, so what we did was we kept the existing API server and client as-is, but replaced the actual network calls with function calls to the HTTP handler functions directly.
@@ -335,28 +335,28 @@ This yielded a performance boost that became more significant the larger the cod
 The following chart shows the decrease in query latency while running our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) compared to the previous two Sourcegraph releases. The test suite is querying cross-repo definitions and references over three commits from [etcd-io/etcd](https://github.com/etcd-io/etcd), [pingcap/tidb](https://github.com/pingcap/tidb), and [distributedio/titan](https://github.com/distributedio/titan), and two commits from [uber-go/zap](https://github.com/uber-go/zap).
 
 <div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/lsif-query-latency-317.png" width="70%">
+  <img src="https://sourcegraphstatic.com/lsif-query-latency-317.png" width="70%" alt="Precise code intel query latency chart">
 </div>
 
 This next chart shows the time required to upload and process the indexes.
 
 <div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/lsif-processing-latency-317.png" width="50%">
+  <img src="https://sourcegraphstatic.com/lsif-processing-latency-317.png" width="50%" alt="Precise code intel index processing latency chart">
 </div>
 
 These last charts show the size of the converted bundle on disk after conversion.
 
 <div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/tidb-bundle-size.png" width="48%">
-  <img src="https://sourcegraphstatic.com/etcd-bundle-size.png" width="48%">
+  <img src="https://sourcegraphstatic.com/tidb-bundle-size.png" width="48%" alt="tidb bundle process code intel bundle (processed index) size on disk chart">
+  <img src="https://sourcegraphstatic.com/etcd-bundle-size.png" width="48%" alt="etcd bundle process code intel bundle (processed index) size on disk chart">
   <br />
-  <img src="https://sourcegraphstatic.com/titan-bundle-size.png" width="48%">
-  <img src="https://sourcegraphstatic.com/zap-bundle-size.png" width="48%">
+  <img src="https://sourcegraphstatic.com/titan-bundle-size.png" width="48%" alt="titan bundle process code intel bundle (processed index) size on disk chart">
+  <img src="https://sourcegraphstatic.com/zap-bundle-size.png" width="48%" alt="zap bundle process code intel bundle (processed index) size on disk chart">
 </div>
 
 <style>
-  .blog-post__body img { box-shadow: none; display: inline; margin: 10px auto; }
-  .blog-post__body .alert pre { display: inline; }
+  .blog-post__html img { box-shadow: none; display: inline; margin: 10px auto; }
+  .blog-post__html .alert pre { display: inline; }
 </style>
 
 With all the changes discussed in this post combined, the latency for queries and upload processing has been cut by a factor of two, as has the size of bundles on disk, compared to Sourcegraph 3.15.
@@ -376,17 +376,17 @@ Finally, here are the before and after profiles of CPU, memory allocations, and 
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu"/>
         </a>
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs"/>
         </a>
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap"/>
         </a>
     </td>
 </tr>
@@ -396,17 +396,17 @@ Finally, here are the before and after profiles of CPU, memory allocations, and 
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.png" alt="3.17 cpu"/>
         </a>
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.png" alt="3.17 allocs"/>
         </a>
     </td>
     <td>
         <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.svg">
-            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.png"/>
+            <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.png" alt="3.17 heap"/>
         </a>
     </td>
 </tr>

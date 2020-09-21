@@ -116,7 +116,7 @@ Open this file, then type the following command to execute the context menu func
 
 This command opens up a context menu showing you all of the different functionalities provided by the language server. To execute an action, type the number listed by the item and press enter.
 
-![](https://images.ctfassets.net/le3mxztn6yoo/c999K2j8NqqCAMAwwuySM/a95eb91f8b0e481d32f28b1e8466e436/sourcegraph-vim-golang-code-intelligence.gif)
+![Sourcegraph vim and golang code intelligence](https://images.ctfassets.net/le3mxztn6yoo/c999K2j8NqqCAMAwwuySM/a95eb91f8b0e481d32f28b1e8466e436/sourcegraph-vim-golang-code-intelligence.gif)
 
 
 While this is pretty cool, it’s still a bit clunky to use. Let’s set up some shortcuts. Add each of the following to your `.vimrc`:

@@ -8,6 +8,7 @@ tags: [
 slug: code-intelligence-with-lsif
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Code intelligence with LSIF'
 ---
 
 <div class="alert alert-info">

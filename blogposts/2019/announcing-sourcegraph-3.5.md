@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.5
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.5: Powerful new search filters, improved configuration, and Bitbucket Server repository permissions'
 ---
 
 <p class="text-center">
@@ -153,11 +154,11 @@ If filtering the list of repositories is required, e.g. `archived:no  forked:no`
 
 Here is an example of the configuration to sync all repositories for the Gorilla organization:
 
-![](/blog/3.5-org-settings.png)
+![3.5 org settings](/blog/3.5-org-settings.png)
 
 This is the resulting set of repositories from the above configuration:
 
-![](/blog/3.5-org-repos.png)
+![3.5 org repos](/blog/3.5-org-repos.png)
 
 ## Repository syncing status for site admins
 

@@ -6,6 +6,28 @@ The cloud team owns all work that is necessary to build, secure, scale, and oper
 
 1. Any user or organization can use Sourcegraph Cloud with both the private and public code that they care about in a secure way.
 
+## Milestones
+
+1. Any user can add public code from github.com, gitlab.com and bitbucket.org
+    - Code is indexed.
+    - It's easy to search over only their code (vs all public code).
+2. Any user or organization can use Sourcegraph Cloud for free before it's GA
+    - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
+    - All private repository content are only decryptable by Sourcegraph services.
+        - Gitserver.
+        - Searcher and code intel caches.
+        - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
+3. Sign-up and on-boarding of new users is fast, obvious and painless
+    - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
+    - Permissions and repo syncing progress is clear to the user and doesn’t take too long.
+    - Progress on repo indexing is clear to the user and doesn’t take too long.
+4. Sourcegraph Cloud is Generally Available (GA)
+    - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
+    - Scalable syncing of permissions, repos, changesets.
+    - High availability, SLOs, etc.
+    - Billing and subscriptions.
+        - Based on size (i.e. GB) of all repositories and selected feature set.
+
 ## Contact
 
 - #cloud channel or @cloud-team in Slack
@@ -80,11 +102,12 @@ By default, members of the team will provide a brief update about the goals they
 
 ## Members
 
-- [Tomás Senart](../../../company/team/index.md#tomás-senart) ([engineering manager](../roles.md#engineering-manager))
-- [Joe Chen](../../../company/team/index.md#joe-chen)
-- [Ryan Slade](../../../company/team/index.md#ryan-slade)
-- [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
-- [Asdine El Hrychy](../../../company/team/index.md#asdine-el-hrychy)
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
+- [Tomás Senart](../../../company/team/index.md#tomás-senart) ([Engineering Manager](../roles.md#engineering-manager))
+    - [Joe Chen](../../../company/team/index.md#joe-chen)
+    - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
+    - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
+    - [Asdine El Hrychy](../../../company/team/index.md#asdine-el-hrychy)
 
 Other:
 
