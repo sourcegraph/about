@@ -40,6 +40,10 @@ Issues and pull requests from private repositories will have their title replace
 
 The generated work load can be re-ordered manually in the GitHub UI and that ordering will be preserved when the tracking issue is updated.
 
+#### Nesting
+
+Tracking issues can be nested within one another. This is helpful when tracking the implementation work of an RFC or a multiple-milestone goal.
+
 #### Labels
 
 These are the standard labels you can use to refine how each work item in the tracking issue looks. You can add any number of these labels to an issue or pull request.
