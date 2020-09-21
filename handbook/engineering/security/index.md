@@ -20,7 +20,7 @@ The goals below lie on the path to our long-term goals, and represent the next 3
     - Deploy centralized security logging
     - Ship container logs to the logging destination
     - Begin documenting policies
-  - Definition of success: Frequent container vulnerability scans are being run, and stored for future a audit. Fixes to the containers or their underlying service configurations have made it into the product release cycle.  Logs of new container deployments are available for search in a centralized logging tool.
+  - Definition of success: Frequent container vulnerability scans are being run, and stored for a future audit. Fixes to the containers or their underlying service configurations have made it into the product release cycle.  Logs of new container deployments are available for search in a centralized logging tool.
 
 **We share a private repository containing encrypted secrets**
 
