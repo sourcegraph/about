@@ -10,7 +10,7 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Handbook usage](usage.md)
 - [Editing the handbook](editing.md)
 - [Communication](communication/index.md)
-  - [Style guide](communication/style_guide.md)
+  - [Content guidelines](communication/content_guidelines.md)
 - [Team](../company/team/index.md)
   - [Org chart](../company/team/org_chart.md)
 - [Goals](../company/goals/index.md)
