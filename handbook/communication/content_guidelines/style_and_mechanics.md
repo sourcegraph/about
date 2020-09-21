@@ -68,13 +68,13 @@ Use passive voice when you don’t want to assign responsibility for an action. 
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Email address does not exist.</li>
+<li>Your access token was invalid.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>Wrong email address provided.</li>
+<li>Invalid access token.</li>
 </ul>
 </div>
 </div>
