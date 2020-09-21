@@ -78,6 +78,9 @@
 /go/grpc-in-production  /go/grpc-in-production-alan-shreve/ 301!
 /events /blog 301!
 /plan /company/strategy 301!
+/press-releases/our-abcs-childrens-book /press-release/our-abcs-childrens-book 301!
+/press-releases/sourcegraph-announces-new-gitlab-native-integration /press-release/sourcegraph-announces-new-gitlab-native-integration 301!
+/press-releases/sourcegraph-secures-series-b/ /press-release/sourcegraph-secures-series-b/ 301!
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/code-alerts-automation / 301!
