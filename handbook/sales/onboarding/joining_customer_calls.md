@@ -8,7 +8,7 @@ While calendar events won't have one of these exact lables, knowing the types of
 
 1. **New prospect:** the first call with a prospect, who may not know much about Sourcegraph. Often named "Intro Call."
 1. **Installation:** to walk through setting up Sourcegraph with a technical point of contact.  
-1. **Trial check-in:** to discuss how things are going during a trial.
+1. **Trial check-in:** to discuss how things are going during a trial. These are often recurring weekly, and can be quite informal. These can be useful for getting a snapshot of a deal process, or to hear mid-flight product or process feedback.
 1. **Training session:** a demo walkthrough of common use cases, an advanced tutorial, or a Q&A, all a customer's end users. Often have names like "Sourcegraph 101," "Webinar,"" "Demo," "Q&A.""
 1. **Existing customer check-in:** to hear how things might be improved or learn about exciting ways a customer is using Sourcegraph. 
 
