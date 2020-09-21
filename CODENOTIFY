@@ -2,11 +2,3 @@
 
 **/CODENOTIFY @nicksnyder
 **/CODEOWNERS @nicksnyder
-
-company/    @sqs
-workflow/   @christinaforney
-direction/  @christinaforney
-blogposts/  @sourcegraph/marketing
-website/    @sourcegraph/marketing
-docs/       @sourcegraph/marketing
-podcast/    @beyang
