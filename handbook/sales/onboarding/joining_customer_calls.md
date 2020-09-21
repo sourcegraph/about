@@ -1,15 +1,15 @@
-# Joining customer calls
+# Joining customer and prospect calls
 
-Joining customer calls is a valuable part of any new team member's onboarding or ongoing work. It helps you quickly learn what customers are directly interested in, and how we communicate the product to them.
+Joining customer and prospect calls is a valuable part of any new team member's onboarding or ongoing work. It helps you quickly learn what customers or prospects are directly interested in, and how we communicate the product to them.
 
 ## Types of calls
 
 While calendar events won't have one of these exact lables, knowing the types of calls will help you categorize calls so you can join the ones you'll find most helpful. 
 
 1. **New prospect:** the first call with a prospect, who may not know much about Sourcegraph. Often named "Intro Call." These can be useful for understanding how we communicate the value of Sourcegraph to buyers and admins.
-1. **Installations or technical check-ins:** to walk through setting up Sourcegraph with a technical point of contact. These can be useful for learning what types of technical blockers users and admins encounter, and how we help solve them.
+1. **Installation or technical check-in:** to walk through setting up Sourcegraph with a technical point of contact. These can be useful for learning what types of technical blockers users and admins encounter, and how we help solve them.
 1. **Trial check-in:** to discuss how things are going during a trial. These are often recurring weekly, and can be quite informal. These can be useful for getting a snapshot of a deal process, or to hear mid-flight product or process feedback.
-1. **Training session:** a demo walkthrough of common use cases, an advanced tutorial, or a Q&A, all a customer's end users. Often have names like "Sourcegraph 101," "Webinar,"" "Demo," "Q&A." These can be useful for understanding how we help new end users understand Sourcegraph's value, and what sorts of questions new users ask."
+1. **Training session:** a demo walkthrough of common use cases, an advanced tutorial, or a Q&A, all with a customer's end users. Often have names like "Sourcegraph 101," "Webinar,"" "Demo," "Q&A." These can be useful for understanding how we help new end users understand Sourcegraph's value, and what sorts of questions new users ask.
 1. **Existing customer check-in:** to hear how things might be improved or learn about exciting ways a customer is using Sourcegraph. These can vary significantly, so it can be worthwhile to check in with the team to understand context in advance.
 
 ## How to join calls to listen
@@ -22,4 +22,4 @@ You should feel comfortable asking to join any call – the call organizer will 
 
 ## How to join calls to speak
 
-If you want to speak directly with customers, you should first post in the #CE and #Sales channels what you'd like to talk about and with what (types of) customers. Then you'll work with the CE and Sales team members directly to set up new calls or join existing ones. 
+If you want to speak directly with customers or prospects, you should first post in the #CE and #Sales channels what you'd like to talk about and with what (types of) customers or prospects. Then you'll work with the CE and Sales team members directly to set up new calls or join existing ones. 
