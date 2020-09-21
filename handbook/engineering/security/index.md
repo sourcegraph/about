@@ -12,7 +12,7 @@ Every organization is confident they can trust Sourcegraph cloud to securely sto
 
 The goals below lie on the path to our long-term goals, and represent the next 3-6 months of work.  These goals will be delivered serially, but may be worked on in parallel.
 
-**We share our private [infrastructure repository](http://github.com/sourcegraph/infrastructure) on Sourcegraph cloud**
+**We host our private [infrastructure repository](http://github.com/sourcegraph/infrastructure) on Sourcegraph cloud**
 
   - Problem and rationale: While Sourcegraph cloud is in an good, and improvine security state, we currently do not have the right level of visibility. By starting with a private repository that contains no secrets, we can build and deploy the visibility technologies and processes that allow us to build a holistic view of the environment.  This serves as a proxy for small company repository use.
   - Planned work:
@@ -22,7 +22,7 @@ The goals below lie on the path to our long-term goals, and represent the next 3
     - Begin documenting policies
   - Definition of success: Frequent container vulnerability scans are being run, and stored for a future audit. Fixes to the containers or their underlying service configurations have made it into the product release cycle.  Logs of new container deployments are available for search in a centralized logging tool.
 
-**We share a private repository containing encrypted secrets**
+**We host a private repository containing encrypted secrets**
 
   - Problem and rationale: Customers repositories can contain encrypted secrets, such as an [ansible vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) or gpg encrypted files. Trusting these repositories to external systems requires the added degree of care and concern, expected in security conscious small and medium enterprise (SME). To support those needs, not only is enhanced visibility into our own systems required on our side, it will be contractually obligated, or at a minimum part of security questionnaires.
   - Planned work:
