@@ -6,7 +6,7 @@ Joining customer calls is a valuable part of any new team member's onboarding or
 
 While calendar events won't have one of these exact lables, knowing the types of calls will help you categorize calls so you can join the ones you'll find most helpful. 
 
-1. **New prospect:** the first call with a prospect, who may not know much about Sourcegraph. Often named "Intro Call."
+1. **New prospect:** the first call with a prospect, who may not know much about Sourcegraph. Often named "Intro Call." These can be useful for understanding how we communicate the value of Sourcegraph to buyers and admins.
 1. **Installation:** to walk through setting up Sourcegraph with a technical point of contact.  
 1. **Trial check-in:** to discuss how things are going during a trial. These are often recurring weekly, and can be quite informal. These can be useful for getting a snapshot of a deal process, or to hear mid-flight product or process feedback.
 1. **Training session:** a demo walkthrough of common use cases, an advanced tutorial, or a Q&A, all a customer's end users. Often have names like "Sourcegraph 101," "Webinar,"" "Demo," "Q&A.""
