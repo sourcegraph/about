@@ -47,7 +47,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
     - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
 1. Interviews.
    - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md). We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
-     - The interviewers will be [María Craig](../../../company/team#maría-craig-she-her) (PM for Code intelligence) and one of the following:
+     - The interviewers will be [María Craig](../../../company/team/index.md#maría-craig-she-her) (PM for Code intelligence) and one of the following:
          - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
          - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
          - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
