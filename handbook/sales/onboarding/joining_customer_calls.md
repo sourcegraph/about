@@ -10,7 +10,7 @@ While calendar events won't have one of these exact lables, knowing the types of
 1. **Installations or technical check-ins:** to walk through setting up Sourcegraph with a technical point of contact. These can be useful for learning what types of technical blockers users and admins encounter, and how we help solve them.
 1. **Trial check-in:** to discuss how things are going during a trial. These are often recurring weekly, and can be quite informal. These can be useful for getting a snapshot of a deal process, or to hear mid-flight product or process feedback.
 1. **Training session:** a demo walkthrough of common use cases, an advanced tutorial, or a Q&A, all a customer's end users. Often have names like "Sourcegraph 101," "Webinar,"" "Demo," "Q&A." These can be useful for understanding how we help new end users understand Sourcegraph's value, and what sorts of questions new users ask."
-1. **Existing customer check-in:** to hear how things might be improved or learn about exciting ways a customer is using Sourcegraph. 
+1. **Existing customer check-in:** to hear how things might be improved or learn about exciting ways a customer is using Sourcegraph. These can vary significantly, so it can be worthwhile to check in with the team to understand context in advance.
 
 ## How to join calls to listen
 
