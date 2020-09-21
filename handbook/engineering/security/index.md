@@ -24,7 +24,7 @@ The goals below lie on the path to our long-term goals, and represent the next 3
 
 **We share a private repository containing encrypted secrets**
 
-  - Problem and rationale: Customers will have repositories containing encrypted secrets, using an [ansible vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) or gpg encrypted files. Trusting these repositories to external systems requires the added degree of care and concern, expected in security conscious small and medium enterprise (SME). To support those needs, not only is enhanced visibility into our own systems required on our side, it will be contractually obligated, or at a minimum part of security questionnaires.
+  - Problem and rationale: Customers repositories can contain encrypted secrets, such as an [ansible vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) or gpg encrypted files. Trusting these repositories to external systems requires the added degree of care and concern, expected in security conscious small and medium enterprise (SME). To support those needs, not only is enhanced visibility into our own systems required on our side, it will be contractually obligated, or at a minimum part of security questionnaires.
   - Planned work:
     - Run ongoing vulnerability scans of underlying workloads including vulnerability remediation
     - Deploy host-based intrusion detection (HIDS)
@@ -37,7 +37,7 @@ The goals below lie on the path to our long-term goals, and represent the next 3
 
 **Host a capture the flag for Sourcegraph.com**
 
-  - Problem and rationale: Running a world class service capable of hosting private repositories is about more than application security. As examples, we need visibility into data loss, processes around incident response need documentation, and defensive measures for the internal actor need to be expanded upon. The proxy enhances the addressed security concerns that a medium enterprise would require.
+  - Problem and rationale: Running a world class service capable of hosting private repositories is about more than application security. As examples, we need visibility into data loss, documentation for processes such as incident response, in addition to expanded defensive measures for both internal and external threat actors. These proxy for enhanced security concerns that a medium enterprise would require.
   - Planned work:
     - Encrypt stored repositories at rest
     - Enhance policy documentation, and specific procedures such as incident response
