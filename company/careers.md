@@ -12,7 +12,6 @@ We're hiring! Check out our open positions:
 - [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
-- [Software Engineer - Code Intelligence](../handbook/engineering/hiring/software-engineer-code-intelligence.md)
 - [Software Engineer - Security](../handbook/engineering/hiring/software-engineer-security.md)
 - [Software Engineer - Full stack](../handbook/engineering/hiring/software-engineer-full-stack.md)
 
