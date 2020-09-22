@@ -1,4 +1,8 @@
-// Load and render Mermaid diagrams.
+// Load and render Mermaid diagrams:
+// - Load only on pages where Mermaid is used.
+// - Allow customization of:
+//    - `data-rendered-width`: specify fixed width vs chart scrolling
+//    - `data-scroll-right`: don't scroll all the way to the beginning of time in the chart
 window.addEventListener("load", () => {
     if (document.querySelector('pre.mermaid')) {
         const element = document.createElement('script')
