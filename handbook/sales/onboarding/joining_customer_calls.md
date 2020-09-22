@@ -22,4 +22,4 @@ You should feel comfortable asking to join any call – the call organizer will 
 
 ## How to join calls to speak
 
-If you want to speak directly with customers or prospects, you should first post in the #CE and #Sales channels what you'd like to talk about and with what (types of) customers or prospects. Then you'll work with the CE and Sales team members directly to set up new calls or join existing ones. 
+If you want to speak directly with customers or prospects, you should prepare a document with a list of questions, the account profile types you'd be interested in speaking with, and the purpose of the call. Share this document with the Sales and CE teams via Slack and work with them directly to set up or join calls. 
