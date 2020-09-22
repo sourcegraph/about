@@ -37,6 +37,7 @@ export const PressReleasePost: React.FunctionComponent<Props> = ({
                         {post.frontmatter.title}
                     </Link>
                 </h1>
+                <p className="blog-post__byline mb-0">{post.frontmatter.publishDate}</p>
             </header>
             {!full && post.frontmatter.heroImage ? (
                 <div className="card-body pt-0 d-flex">
