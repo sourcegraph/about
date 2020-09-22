@@ -36,16 +36,16 @@ See [roadmap at a glance](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaW
 
 ## Cloud
 
+TO DO
+
+Two known backend infrastructure requests:
+
 1. [RFC 167: Product license tiers](https://docs.google.com/document/d/1XozQ4JINJqirdaG-XqGtboT2-PlIXPyBn6EwV7Q3pWI/edit?ts=5f0811cf#heading=h.trqab8y0kufp)
 1. [Non-Git VCS](https://docs.google.com/document/d/1Y2xYbckAz5jlBePER_BarypeDfP3mjjX9bBOZm3ALqY/edit#heading=h.m60esa7uysvx)
 
 ## Code intel
 
-1. Precise code intelligence (Go, TypeScript) works for customer scale and deployment requirements
-1. Precise code intelligence for C++
-1. Precise code intelligence for Java
-1. Use precise intelligence to supplement ranked search results
-1. Provide the dependency graph for a repository
+TO DO
 
 ## Distribution
 
@@ -56,6 +56,8 @@ See [Distribution roadmap](https://github.com/sourcegraph/about/pull/1104).
 TO DO
 
 ## Web
+
+TO DO: below are rough items from a previous web team planning discussion.
 
 1. Webapp consistency
 1. The extension registry is confusing and does not communicate it's value
