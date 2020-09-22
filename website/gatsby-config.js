@@ -41,7 +41,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `press`,
-        path: `${__dirname}/../blogposts/press-releases`,
+        path: `${__dirname}/../press-releases/`,
       },
     },
     {

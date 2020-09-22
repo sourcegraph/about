@@ -12,6 +12,7 @@ export const PressReleasePost: React.FunctionComponent<Props> = ({
     className = '',
     headerClassName = '',
     titleClassName = '',
+    titleLinkClassName = '',
     tag: Tag = 'div',
 }) => {
     const body = full ? (
@@ -32,7 +33,9 @@ export const PressReleasePost: React.FunctionComponent<Props> = ({
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
                 <h1 className={titleClassName}>
-                    {post.frontmatter.title}
+                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
+                        {post.frontmatter.title}
+                    </Link>
                 </h1>
             </header>
             {!full && post.frontmatter.heroImage ? (
