@@ -13,7 +13,7 @@
 
 - [ ] Add yourself to the [team page](../../../company/team/index.md).
   - [ ] Once you've created a team page entry, add the link to your bio in your Slack profile 
-- [ ] Add your geo location to the [team map](../../../company/team/locations.geojson).
+- [ ] Add your geo location to the [team map](https://github.com/sourcegraph/about/blob/master/company/team/locations.geojson).
 - [ ] [Add your working hours to Google Calendar](https://calendar.google.com/calendar/r/settings) so your teammates know when it is safe to add meetings to your calendar.
 - [ ] Watch the [new team member intro from the CEO](https://www.youtube.com/watch?v=EVHUGZe5uts)
 - [ ] Set up a recurring weekly 25-minute [1-1 meeting](../../leadership/1-1.md) with your manager (e.g., `1-1 $YOURNAME-$MANAGERNAME`).
