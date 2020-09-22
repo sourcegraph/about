@@ -41,7 +41,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-1. You **[apply here.](#TODO)**
+1. You **[apply here.](https://jobs.lever.co/sourcegraph/0f6f93c7-7468-442b-b088-fea19f20e7a1)**
 1. Intro calls
     - 45m [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) (VP Engineering)
     - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
@@ -65,6 +65,6 @@ If we want to move forward after these sets of interviews, we will setup 30-minu
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-**[Apply here.](#TODO)**
+**[Apply here.](https://jobs.lever.co/sourcegraph/0f6f93c7-7468-442b-b088-fea19f20e7a1)**
 
 Go back to the [careers page](../../../company/careers.md) for all open positions.
