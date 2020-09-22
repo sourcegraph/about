@@ -14,7 +14,7 @@ The Code Intelligence team builds tools and services that provide contextual inf
 
 ## History
 
-The origin of this team is the core of Sourcegraph, the first iteration was [srclib](https://github.com/sourcegraph/srclib) a code analysis tool developed by our co-founders [Beyang](https://github.com/beyang) and [Quinn](https://github.com/sqs) in 2015.
+The origin of our work is the core of Sourcegraph, first implemented as [srclib](https://github.com/sourcegraph/srclib) a code analysis tool developed by our co-founders [Beyang](https://github.com/beyang) and [Quinn](https://github.com/sqs) in 2015.
 
 2016 - We evolved our strategy to utilize LSP (Language Server Protocol) to power the new Sourcegraph code search engine. LSP is a user oriented protocol and requires an implementation of a language server for each programming language.
 
