@@ -110,6 +110,8 @@ kubectl rollout restart deployment/$SERVICE
 
 Note the use of `deployment/` - you cannot restart services (`svc/`). Note that [stateful sets have a different process](#making-updates-to-stateful-sets).
 
+You can also bounce pods by manually finding them via `kubectl get pods` and `kubectl delete pod $POD_ID`. Once a pod is deleted, it will automatically be recreated.
+
 ## Useful dashboards
 
 ### Metrics
