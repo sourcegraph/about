@@ -12,6 +12,20 @@ The Code Intelligence team builds tools and services that provide contextual inf
 
 - Robust, extensible, and scalable infrastructure to index code across all languages, keep those indexes up-to-date, and efficiently resolve code intelligence queries against all indexed code.
 
+## History
+
+The origin of this team is the core of Sourcegraph, the first iteration was [srclib](https://github.com/sourcegraph/srclib) a code analysis tool developed by our co-founders [Beyang](https://github.com/beyang) and [Quinn](https://github.com/sqs) in 2015.
+
+2016 - We evolved our strategy to utilize LSP (Language Server Protocol) to power the new Sourcegraph code search engine. LSP is a user oriented protocol and requires an implementation of a language server for each programming language.
+
+2017 - Over time we started to experience some issues with LSPs; they can be difficult to deploy, slow at runtime, slow community adoption, and slow to develop!
+
+2018 - We added a new basic code intelligence that is built on search-based heuristics to allow us to provide quick and good enough i.e. "imprecise" support for the [most popular programming languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22). 
+
+2019 - While looking for more effecient alternatives to LSPs we found LSIF (Language Server Index Format) and realized we could bring back good parts of srclib with pre-indexing and pre-computed answers to queries.
+
+2020 and beyond - Code Intelligence is the platform for all features at Sourcegraph! This team is responsible for how sourcegraph understands code and for providing data to power search, campaigns and code insights. Our API is the point of discovery for the knowledge graph for all source code.
+
 ## Vision
 
 To be the point of discovery for the knowledge graph for all source code.
