@@ -37,8 +37,13 @@ export default class NewsPage extends React.Component<any, any> {
                         <section>
                             <div className="container">
                                 <div className="row justify-content-start">
+                                    <div className="col-sm-10 col-lg-2">
+                                        <ul>
+                                            <li><a href="#news2020">2020</a></li>
+                                            <li><a href="#news2019">2019</a></li>
+                                        </ul>
+                                    </div>
                                     <div className="col-sm-10 col-lg-10">
-                                        <h2>News</h2>
                                         <News></News>
                                     </div>
                                 </div>

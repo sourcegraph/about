@@ -5,6 +5,7 @@ publishDate: 2019-11-12T10:00-07:00
 tags: ['press']
 slug: sourcegraph-announces-new-gitlab-native-integration
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+description: 'GitLab collaboration emphasizes importance of code vavigation and entelligence in the developer workflow, plus Universal Code Search solution makes elite development accessible for all; company momentum fueled by increasing demand for universal developer tools.'
 published: true
 ---
 
