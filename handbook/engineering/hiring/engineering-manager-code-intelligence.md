@@ -6,27 +6,27 @@ We are looking for an engineering manager to lead our team that is building the 
 
 - You know how to authentically inspire, challenge, and grow individuals and teams.
 - You are motivated to work on ambitious long term goals to solve complex technical challenges.
-- You are skilled at breaking up large problems (high complexity, high risk), into smaller achievable milestones (lower complexity, lower risk) that the team can iterate on.
-- You have experience working with multiple programming languages and their ecosystems (e.g., tooling, communities), and are interested and curious to engage with languages that you aren't yet familiar with.
 - You are [high agency](https://twitter.com/shreyas/status/1276956836856393728).
 
 ## Your responsibilities
 
 - You will facilitate a cohesive team environment where everyone is happy, motivated, and productive.
-- You will ensure that the team has [well defined goals that are aligned with the business](https://about.sourcegraph.com/handbook/engineering/code-intelligence#goals), and that the team is making continuous iterative progress towards those goals every week.
+- You will ensure that the team has [well defined goals that are aligned with the business](https://about.sourcegraph.com/handbook/engineering/code-intelligence#goals) that are effectively communicated to all levels of the company, and that the team is making continuous iterative progress towards those goals every week.
 - You will help engineers grow in their careers.
 - You will hire exceptional engineers to grow the team (from 3 to ~6-8 engineers) in a sustainable way so that the team can accomplish more over time.
 
 ## Qualifications
 
-- You have excellent written and verbal communication.
 - You have 2+ years of experience directly managing at least 3 full-time software engineers. We expect you already know how to lead a team.
 - You have done some amount of coding in the past 2 years (at work, on a personal project) to keep your skills up-to-date. We expect that you are able to review and provide valuable feedback on code, architecture, and designs.
+- You are able to clearly communicate your past accomplishments verbally (example: in an interview) and in writing (examples: in your resume, in your answers to our application questions).
 - You have lead a team that has successfully shipped a product to (ideally enterprise) customers.
+- You have experience working with multiple programming languages and their ecosystems (e.g., tooling, communities), and are interested and curious to engage with languages that you aren't yet familiar with.
+- You have experience breaking up complex technical problems into smaller achievable milestones that the team can iterate on.
 
 ## Nice to haves
 
-- You have experience designing, architecting, scaling, and optimizing the performance of full stack systems (e.g., frontend, backend, CLI).
+- You have experience designing, architecting, scaling, and optimizing systems that span multiple layers of a tech stack (example: frontend, backend, CLI).
 - You have grown at least one junior engineer to a senior+ level.
 - You have designed a software engineer interview process from first principles.
 - You have built and delivered an application that works on multiple platforms (examples: different operating systems, cloud versus on-premise)
