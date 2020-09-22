@@ -2,7 +2,7 @@
 
 We strive for an outcome-based roadmap: each roadamp item should describe the problem we want to solve or outcome we want to achieve.
 
-<!-- Gantt chart syntax documentation: https://mermaid-js.github.io/mermaid/#/gantt -->
+<!-- Gantt chart syntax documentation: https://mermaid-js.github.io/mermaid/diagrams-and-syntax-and-examples/gantt.html -->
 
 <pre class="mermaid" data-rendered-width="150%" data-scroll-right="50%">
 gantt
