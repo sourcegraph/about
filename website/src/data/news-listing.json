@@ -165,7 +165,7 @@
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Sourcegraph Releases Free Digital Children's Book Titled 'Our ABCs: Always Be Coding'",
       "newsDate": "April 23, 2020",
-      "newsLink": "/press-releases/our-abcs-childrens-book",
+      "newsLink": "/press-release/our-abcs-childrens-book",
       "newsImage": "https://info.sourcegraph.com/hubfs/CTA%20images/abc-book-cover.png"
     },
     {
@@ -256,7 +256,7 @@
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Sourcegraph Secures $23 Million Series B Round for Universal Code Search",
       "newsDate": "March 3, 2020",
-      "newsLink": "/press-releases/sourcegraph-secures-series-b",
+      "newsLink": "/press-release/sourcegraph-secures-series-b",
       "newsImage": "/sourcegraph-mark.png"
     },
     {
@@ -384,7 +384,7 @@
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum",
       "newsDate": "November 12, 2019",
-      "newsLink": "/press-releases/sourcegraph-announces-new-gitlab-native-integration",
+      "newsLink": "/press-release/sourcegraph-announces-new-gitlab-native-integration",
       "newsImage": "/sourcegraph-mark.png"
     },
     {
