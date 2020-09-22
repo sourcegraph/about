@@ -172,4 +172,4 @@ _Updated 2020-08-01_
 
 We are hiring for these roles:
 
-- +1 [Software Engineer - Code intelligence](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-code-intelligence)
+- +1 [Software Engineer - Full Stack](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-full-stack)
