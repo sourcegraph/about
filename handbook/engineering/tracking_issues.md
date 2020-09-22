@@ -42,7 +42,17 @@ The generated work load can be re-ordered manually in the GitHub UI and that ord
 
 #### Nesting
 
-Tracking issues can be nested within one another. This is helpful when tracking the implementation work of an RFC or a multiple-milestone goal.
+A tracking issue can also track other tracking issues. This is helpful when tracking the implementation work of an RFC or a multiple-milestone goal. As an example, we will refer to the [tracking issue for the code intelligence team's 3.21 milestone](https://github.com/sourcegraph/sourcegraph/issues/13987) (shown below), and the [tracking issue for RFC 235](https://github.com/sourcegraph/sourcegraph/issues/13882).
+
+<div class="text-center">
+  <a href="https://sourcegraphstatic.com/efritz-tracking-issue.png" target="_blank">
+    <img src="https://sourcegraphstatic.com/efritz-tracking-issue.png" alt="Nested tracking issues" style="width: 50%">
+  </a>
+</div>
+
+The 3.21 milestone tracking issue will track all issues and pull requests with the `team/code-intelligence` label in milestone 3.21. The RFC tracking issue will track all issues and pull requests with both the `team/code-intelligence` label and the `RFC-235` label. Because the RFC tracking issue and its children have a _superset_ of labels tracked by the milestone tracking issue, the latter will include all of the issues referenced in the former.
+
+If a tracking issue includes other tracking issues, then all issues and PRs will be nested under the _most specific_ tracking issue that includes it (the tracking issue with the most label overlap). This allows arbitrarily deep nesting of tracking issues, which can span over multiple assignees and milestones.
 
 #### Labels
 
