@@ -56,7 +56,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - 1h [Technical experience](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md) - We ask you about your past work and accomplishments.
      - The interviewers will be two of the following:
          - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
-         - [Garo Brik](../../../company/team/index.md#garo-brik-they-them)
+         - [Garo Brik](../../../company/team/index.md#garo-brik-they-them) or [Noah Santschi-Cooney](../../../company/team/index.md#noah-santschi-cooney-he-him)
          - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
          - Any other [engineering manager](../leadership/index.md#members).
    - 30m [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
