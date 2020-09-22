@@ -23,20 +23,22 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 
 #### Milestones
 
-1. Any user can add public code from github.com, gitlab.com and bitbucket.org
+1. The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
     - Code is indexed.
     - It's easy to search over only their code (vs all public code).
-1. Any user or organization can use Sourcegraph Cloud for free before it's GA
+1. Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
+    - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
+    - Repo syncing progress is clear to the user and doesn’t take too long.
+    - Progress on repo indexing is clear to the user and doesn’t take too long.
+1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
     - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
     - All private repository content are only decryptable by Sourcegraph services.
         - Gitserver.
         - Searcher and code intel caches.
         - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
-1. Sign-up and on-boarding of new users is fast, obvious and painless
-    - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
-    - Permissions and repo syncing progress is clear to the user and doesn’t take too long.
-    - Progress on repo indexing is clear to the user and doesn’t take too long.
-1. Sourcegraph Cloud is Generally Available (GA)
+1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
+    - Authorization from code hosts is enforced (e.g., organizations, teams).
+1. Sourcegraph Cloud is Generally Available (GA).
     - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
     - Scalable syncing of permissions, repos, changesets.
     - High availability, SLOs, etc.
@@ -45,9 +47,7 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 
 ### Backend infrastructure
 
-1. Product tier enforcement
-1. Trial sign-up flow/license keys
-1. Non-Git VCS
+Backend infrastructure goals are ad hoc as requests come up from customers or other teams. The Cloud team is responsible for scheduling and prioritizing these requests as they come up.
 
 ## Contact
 
