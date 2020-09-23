@@ -9,9 +9,6 @@ changelogItems:
   - description: "Site admins can now force a specific user to re-authenticate on their next request or visit."
     url: https://github.com/sourcegraph/sourcegraph/pull/13647
     category: Admin
-  - description: "Sourcegraph now watches its [configuration files](https://docs.sourcegraph.com/admin/config/advanced_config_file) (when using external files) and automatically applies the changes to Sourcegraph's configuration when they change. For example, this allows Sourcegraph to detect when a Kubernetes ConfigMap changes."
-    url: https://github.com/sourcegraph/sourcegraph/pull/13646
-    category: Admin
   - description: "To define repository groups (`search.repositoryGroups` in global, org, or user settings), you can now specify regular expressions in addition to single repository names."
     url: https://github.com/sourcegraph/sourcegraph/pull/13730
     category: Search
@@ -33,4 +30,7 @@ changelogItems:
   - description: "`rev:` is available as alternative syntax of `@` for searching revisions instead of the default branch"
     url: https://github.com/sourcegraph/sourcegraph/pull/13133
     category: Search
+  - description: "Sourcegraph now watches its configuration files (when using external files) and automatically applies the changes to Sourcegraph's configuration when they change. For example, this allows Sourcegraph to detect when a Kubernetes ConfigMap changes."
+    url: https://docs.sourcegraph.com/admin/config/advanced_config_file
+    category: Admin
 ---
