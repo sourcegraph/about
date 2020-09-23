@@ -264,20 +264,21 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
                 Our customers use Sourcegraph every day to build software you rely on.
             </h3>
-
-            <div className={'testcontainer'}>
-                <div>Toggle layout: {toggle ? 'random layout' : 'normal layout'}</div>
-                <input
-                    type="checkbox"
-                    onChange={changeToggle}
-                    checked={toggle}
-                />
-                <div>Scroll Speed in Seconds</div>
-                <input
-                    type="number"
-                    onChange={changeNumber}
-                />
-            </div>
+            {(windowWidth > minDeviceWidth) &&
+                <div className={'testcontainer'}>
+                    <div>Toggle layout: {toggle ? 'random layout' : 'normal layout'}</div>
+                    <input
+                        type="checkbox"
+                        onChange={changeToggle}
+                        checked={toggle}
+                    />
+                    <div>Scroll Speed in Seconds</div>
+                    <input
+                        type="number"
+                        onChange={changeNumber}
+                    />
+                </div>
+            }
             <div className="customer-container-outer">
             {windowWidth > minDeviceWidth &&
                 <div
