@@ -182,6 +182,20 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         setWindowWidth(window.innerWidth);
     };
 
+    function changeChevronIcons() {
+        const scrollEnd = innerContainerRef.current?.scrollWidth! - innerContainerRef.current?.offsetWidth!;
+        if (innerContainerRef.current?.scrollLeft! < scrollEnd) {
+            setChevronRightScale({chevronRightScale: 1});
+        } else {
+            setChevronRightScale({chevronRightScale: 0});
+        };
+        if (innerContainerRef.current?.scrollLeft! > 0) {
+            setChevronLeftScale({chevronLeftScale: 1});
+        } else {
+            setChevronLeftScale({chevronLeftScale: 0});
+        };
+    }
+
     function handleMouseEnterRight() {
         //This is calculating how fast it should scroll based on the position the scroll is starting from
         const scrollEnd = innerContainerRef.current?.scrollWidth! - innerContainerRef.current?.offsetWidth!;
@@ -193,6 +207,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
 
     function handleMouseLeaveRight() {
         setScrollTo(innerContainerRef.current?.scrollLeft!);
+        changeChevronIcons();
     };
 
     function handleMouseEnterLeft() {
@@ -205,11 +220,11 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
 
     function handleMouseLeaveLeft() {
         setScrollTo(innerContainerRef.current?.scrollLeft!);
+        changeChevronIcons();
     };
 
     function handleMouseMove(e) {
         const containerRec = innerContainerRef.current?.getBoundingClientRect();
-        const scrollEnd = innerContainerRef.current?.scrollWidth! - innerContainerRef.current?.offsetWidth!;
         if (
             e.clientX - containerRec?.left! > 150 && 
             e.clientY - containerRec?.top! > 60 && 
@@ -227,16 +242,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             x: (e.clientX - containerRec?.left!) + innerContainerRef.current?.scrollLeft!, 
             y: e.clientY - containerRec?.top!
         });
-        if (innerContainerRef.current?.scrollLeft! < scrollEnd) {
-            setChevronRightScale({chevronRightScale: 1});
-        } else {
-            setChevronRightScale({chevronRightScale: 0});
-        };
-        if (innerContainerRef.current?.scrollLeft! > 0) {
-            setChevronLeftScale({chevronLeftScale: 1});
-        } else {
-            setChevronLeftScale({chevronLeftScale: 0});
-        };
+        changeChevronIcons();
     };
 
     function handleMouseLeaveInnerArea() {
