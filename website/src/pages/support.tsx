@@ -27,7 +27,7 @@ export default ((props: any) => (
             <div className="pricing-page mt-2">
                 <ContentSection className="hero-section text-center py-5">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Support</h1>
-                    <p>Learn more about these tiers on <Link to="/pricing">Pricing page</Link>.</p>
+                    <p>See <Link to="/pricing">Pricing</Link> to learn more about these tiers.</p>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
                     <div className="row pt-4">
