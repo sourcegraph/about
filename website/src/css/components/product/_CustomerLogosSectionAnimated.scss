@@ -59,6 +59,11 @@
   display: none;  /* Safari and Chrome */
 }
 
+.customer-container-inner {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .sourcegraph-cta-button {
   background: #e6f0fd;
   color: #5c99f1 !important;
