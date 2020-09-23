@@ -42,10 +42,10 @@ export default ((props: any) => (
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Email support</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Support during working hours (Pacific Time)</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />48 hour reponse time* to critical issues</li>
-                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime* (managed instances only)</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime (managed instances only)</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Initial implementation support on architecture, deployment, configuration, and rollout</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Shared Slack channel for feedback and communication (available)</li>
-                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Dedicated support engineer assigned to you (available) <br />&nbsp;</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Dedicated customer engineer assigned to you (available) <br />&nbsp;</li>
                                 </ol>
                             </div>
                         </div>
@@ -60,10 +60,10 @@ export default ((props: any) => (
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Email support</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Support during working hours (Pacific Time)</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> 48 hour reponse time* to critical issues</li>
-                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime* (managed instances only)</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime (managed instances only)</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Initial implementation support on architecture, deployment, configuration, and rollout</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Shared Slack channel for feedback and communication (available)</li>
-                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Dedicated support engineer assigned to you (available) <br />&nbsp;</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Dedicated customer engineer assigned to you (available) <br />&nbsp;</li>
                                 </ol>
                             </div>
                         </div>
@@ -78,10 +78,10 @@ export default ((props: any) => (
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Email support</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Support during working hours (Pacific Time)</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> 24 hour reponse time* to critical issues</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 99.5% uptime* (managed instances only)</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 99.5% uptime (managed instances only)</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Initial implementation support on architecture, deployment, configuration, and rollout</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Shared Slack channel for feedback and communication (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Dedicated support engineer assigned to you (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Dedicated customer engineer assigned to you (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
                                 </ol>
                             </div>
                         </div>
