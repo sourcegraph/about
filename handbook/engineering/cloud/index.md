@@ -15,6 +15,14 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 - Admin and user settings
 - Analytics
 
+## Goals guiding principles
+
+1. **Make it work**: Build the backend blocking work, and expose it (even in a roughly usable way) to the Sourcegraph team. We will be able to quickly surface any glaring issues and will have more thoughts around usability. Take shortcuts where possible (this is currently due to the team having fewer frontend resources).
+   - Where possible, making it work and usable should be combined (avoid duplicate efforts), but if it's possible to separate the two in order to move things forward, we should!
+1. **Make it usable**: The experience has been designed and thought through. We feel good about putting this in front of users, and they will find it valuable!
+1. **Make it fast**: Now that users can try it, make sure the experience is fast for them (but it's better to have a slow working feature than a fast not-working one).
+1. **Make it scale**: Make it work at large scale. Up until now we have been starting to grow awareness of the feature, so the number of users is starting to matter. It is better to have high demand and need to surge on scalability than to make an infinitely scalable unused feature.
+
 ## Goals
 
 ### Sourcegraph Cloud
@@ -24,30 +32,41 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 #### Milestones
 
 1. The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-    - Code is indexed.
-    - It's easy to search over only their code (vs all public code).
+    - Make it work:
+        - Code is indexed.
+        - It's possible to search over only their code (vs all public code).
 1. Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-    - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
-    - Repo syncing progress is clear to the user and doesn’t take too long.
-    - Progress on repo indexing is clear to the user and doesn’t take too long.
+    - Make is usable:
+        - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
+        - Repo syncing progress is clear to the user and doesn’t take too long.
+        - Progress on repo indexing is clear to the user and doesn’t take too long.
+        - UX problems to solve (WIP):
+            - How do users know they are searching over their code vs. all Cloud code?
+            - How do we communicate status to users?
+    - Make it fast: TODO
+    - Make it scale: TODO
 1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
-    - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
-    - All private repository content are only decryptable by Sourcegraph services.
-        - Gitserver.
-        - Searcher and code intel caches.
-        - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
+    - Make it work:
+        - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
+        - All private repository content are only decryptable by Sourcegraph services.
+            - Gitserver.
+            - Searcher and code intel caches.
+            - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
 1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
-    - Authorization from code hosts is enforced (e.g., organizations, teams).
+    - Make it usable:
+        - Authorization from code hosts is enforced (e.g., organizations, teams).
+        - TODO
+    - Make it fast: TODO
 1. Sourcegraph Cloud is Generally Available (GA).
-    - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
-    - Scalable syncing of permissions, repos, changesets.
-    - High availability, SLOs, etc.
-    - Billing and subscriptions.
-        - Based on size (i.e. GB) of all repositories and selected feature set.
+    - Make it scale:
+        - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
+        - Scalable syncing of permissions, repos, changesets.
+        - High availability, SLOs, etc.
+        - Billing and subscriptions.
 
 ### Backend infrastructure
 
-Backend infrastructure goals are ad hoc as requests come up from customers or other teams. The Cloud team is responsible for scheduling and prioritizing these requests as they come up.
+Backend infrastructure goals are ad hoc as requests come up from customers or other teams. The Cloud team is responsible for scheduling and prioritizing these requests as they come up. See the [roadmap](../../product/roadmap.md#cloud) for planned items.
 
 ## Contact
 
