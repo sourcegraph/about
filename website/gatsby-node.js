@@ -42,6 +42,11 @@ exports.onCreateNode = ({ node, actions: { createNodeField }, getNode }) => {
         blogType = 'blog'
         break
 
+      case 'press':
+        permalink = `/press-release/${slug}/`
+        blogType = 'press'
+        break
+
       case 'podcast':
         permalink = `/podcast/${slug}/`
         blogType = 'podcast'
@@ -123,6 +128,14 @@ exports.createPages = ({ actions, graphql }) => {
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           switch (node.parent.sourceInstanceName) {
             case 'blog':
+              createPage({
+                path: node.fields.permalink,
+                component: PostTemplate,
+                context: {},
+              })
+              break
+
+            case 'press':
               createPage({
                 path: node.fields.permalink,
                 component: PostTemplate,

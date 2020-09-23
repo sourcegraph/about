@@ -2,9 +2,10 @@
 title: "Sourcegraph Releases Free Digital Children's Book Titled 'Our ABCs: Always Be Coding'"
 author: Sourcegraph
 publishDate: 2020-04-23T00:00
-tags: [press-release]
+tags: ['press']
 slug: our-abcs-childrens-book
 heroImage: https://info.sourcegraph.com/hubfs/CTA%20images/abc-book-cover.png
+description: "Just in time for national Take Our Daughters and Sons to Work Day, 'Our ABCs: Always Be Coding' introduces kids to basic concepts of software development in a way that is fun and educational."
 published: true
 ---
 

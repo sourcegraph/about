@@ -1,6 +1,7 @@
 import React from 'react'
 import { BlogPost } from './BlogPost'
 import { ReleasePost } from './ReleasePost'
+import { PressReleasePost } from './PressReleasePost'
 import { PodcastPost } from './PodcastPost'
 import { PodcastSubscribeLinks } from '../podcast/PodcastSubscribeLinks'
 import { LinkPost } from './LinkPost'
@@ -8,6 +9,7 @@ import { LinkPost } from './LinkPost'
 export enum PostType {
     BlogPost,
     LinkPost,
+    PressReleasePost,
     ReleasePost,
     PodcastPost,
 }
@@ -61,17 +63,19 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, React.FunctionComponent<Po
     [PostType.BlogPost]: BlogPost,
     [PostType.LinkPost]: LinkPost,
     [PostType.ReleasePost]: ReleasePost,
+    [PostType.PressReleasePost]: PressReleasePost,
     [PostType.PodcastPost]: PodcastPost,
 }
 
 export const postType = (post: Post): PostType =>
-    post.frontmatter.tags?.includes('release')
-        ? PostType.ReleasePost
-        : post.frontmatter.tags?.includes('podcast')
-        ? PostType.PodcastPost
-        : post.frontmatter.style === 'short-inline-title'
-        ? PostType.LinkPost
-        : PostType.BlogPost
+    post.frontmatter.tags?.includes('release') ? PostType.ReleasePost
+        : post.frontmatter.tags?.includes('press')
+            ? PostType.PressReleasePost
+            : post.frontmatter.tags?.includes('podcast')
+                ? PostType.PodcastPost
+                : post.frontmatter.style === 'short-inline-title'
+                    ? PostType.LinkPost
+                    : PostType.BlogPost
 
 export enum BlogType {
     GopherCon = 'go',
@@ -79,6 +83,7 @@ export enum BlogType {
     GraphQLSummit = 'graphql',
     StrangeLoop = 'strange-loop',
     GitHubUniverse = 'github-universe',
+    PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
 }
@@ -98,6 +103,15 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
             title: 'Sourcegraph blog',
             description:
                 "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
+        },
+    },
+    press: {
+        title: 'Press release',
+        baseUrl: '/press-release',
+        meta: {
+            title: 'Sourcegraph press release',
+            description:
+                'Press release from Sourcegraph',
         },
     },
     graphql: {
