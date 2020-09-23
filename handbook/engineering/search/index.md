@@ -69,7 +69,9 @@ _Updated 2020-09-11_
   - **Plan:** Streaming search
   - **Owners:** Keegan, Juliana
   - **Status:** In progress
-  - **Estimated completion:** 3.22
+  - **Estimated completion:**
+    - ~~3.21~~ 2020-09-23 update: We revised this estimate after discussing needed work on the design & frontend side.
+    - 3.22
 
 ### Expressive
 
