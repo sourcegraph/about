@@ -18,7 +18,7 @@ The origin of our work is the core of Sourcegraph, first implemented as [srclib]
 
 2016 - We evolved our strategy to utilize LSP (Language Server Protocol) to power the new Sourcegraph code search engine. LSP is a user oriented protocol and requires an implementation of a language server for each programming language.
 
-2017 - Over time we started to experience some issues with LSPs; they can be difficult to deploy, slow at runtime, slow community adoption, and slow to develop!
+2017 - Over time we started to experience some issues with language servers. They can be difficult to deploy, slow at runtime, slow to adopt by members of their respective language communities, and slow to develop.
 
 2018 - We added a new basic code intelligence that is built on search-based heuristics to allow us to provide quick and good enough i.e. "imprecise" support for the [most popular programming languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22). 
 
