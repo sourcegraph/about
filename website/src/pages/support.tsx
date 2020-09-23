@@ -16,7 +16,7 @@ export default ((props: any) => (
     <Layout location={props.location}>
         <div className="text-dark">
             <Helmet>
-                <title>={title}</title>
+                <title>{title}</title>
                 <meta name="twitter:title" content={title} />
                 <meta property="og:title" content={title} />
                 <meta name="twitter:description" content={description} />
