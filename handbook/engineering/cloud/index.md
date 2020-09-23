@@ -37,12 +37,12 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
         - It's possible to search over only their code (vs all public code).
 1. Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
     - Make is usable:
-        - Adding your repos with a nice UI flow that leverages the OAuth tokens from signing up with the code host, where you can select repositories easily.
-        - Repo syncing progress is clear to the user and doesn’t take too long.
-        - Progress on repo indexing is clear to the user and doesn’t take too long.
-        - UX problems to solve (WIP):
-            - How do users know they are searching over their code vs. all Cloud code?
-            - How do we communicate status to users?
+        - Connecting their first code host and adding their own public repos is intuitive and easy for new users.
+        - Connecting with code hosts and and adding public repos is intuitive and easy for current users.
+        - System activity and progress is easy to understand and doesn’t take too long.
+          - Repo syncing
+          - Repo indexing
+        - Searching their own versus searching all Cloud code is intuitive.
     - Make it fast: TODO
     - Make it scale: TODO
 1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
@@ -55,6 +55,8 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
     - Make it usable:
         - Authorization from code hosts is enforced (e.g., organizations, teams).
+        - Repository visibility and permissions on Sourcegraph is intuitive.
+        - Adding private repositories is part of the same flows as adding public repositories.
         - TODO
     - Make it fast: TODO
 1. Sourcegraph Cloud is Generally Available (GA).
