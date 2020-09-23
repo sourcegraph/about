@@ -1,7 +1,7 @@
 import React, {useRef, useState, useEffect} from 'react';
 import { useSpring, animated } from 'react-spring';
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon'
-import ChevronLeftIcon from 'mdi-react/ChevronLeftIcon'
+import ChevronRightIcon from 'mdi-react/ChevronRightIcon';
+import ChevronLeftIcon from 'mdi-react/ChevronLeftIcon';
 
 const ITEMS: {
     name: string
@@ -153,7 +153,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
     const [scrollTo, setScrollTo] = useState(0);
     const [toggle, setToggle] = useState(true);
     const [buttonClass, setButtonClass] = useState('');
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(0);
     const [duration, setDuration] = useState(scrollTimeInSeconds * 1000);
     const innerContainerRef = useRef<HTMLDivElement>(null);
     const [number, setNumber] = useState(null);
@@ -171,10 +171,11 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
     const [{chevronLeftScale}, setChevronLeftScale] = useSpring(() => ({chevronLeftScale: 0}));
 
     useEffect(() => {
-        window.addEventListener('resize', adjustWindowWidth)
+        setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', adjustWindowWidth);
         return () => {
-            window.removeEventListener('resize', adjustWindowWidth)
-        }
+            window.removeEventListener('resize', adjustWindowWidth);
+        };
     }, []);
 
     function adjustWindowWidth() {
