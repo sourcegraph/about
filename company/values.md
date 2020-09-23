@@ -29,14 +29,14 @@ As a team's size and scope grows, it (unintentionally) tends to become a workgro
 
 ## Open and transparent
 
-We are an [open company](open_source_open_company.md).
+We are an [open company](index.md#open-company).
 
 Being open and transparent builds trust with our customers and within our team. It makes it easy for us to partner and collaborate with our customers so we make Sourcegraph the best that it can be. It enables our teammates to work autonomously to solve tough problems while maintaining alignment.
 
 We favor transparency by default. There are multiple levels of transparency, and we always strive to be the most transparent that we can be for a given piece of information.
 
 | Level of transparency | Description | Channels | Examples |
-|-|-|-|-|
+|---|---|---|---|
 | Public | Anyone outside of Sourcegraph can access this information. **This is the default level of transparency.** | [Handbook](../handbook/index.md), [code](https://github.com/sourcegraph/sourcegraph), [issues](https://github.com/sourcegraph/sourcegraph/issues), public Google Docs | Goals, plans, all code, product docs, dev docs, company docs |
 | Internal to Sourcegraph | Information that is not public for specific reasons, but is shared with Sourcegraph teammates. | Public Slack channels, Google Docs accessible to everyone at Sourcegraph, internal [Google Groups](https://groups.google.com/all-groups) | Board slides, company financial info, customer information, open security investigations |
 | Private | Information that is neither public nor internal to Sourcegraph for specific reasons, but is shared only with a specific set of people. | Private Slack channels or DMs, private Google Docs, private emails | Candidate feedback, teammate feedback, compensation |

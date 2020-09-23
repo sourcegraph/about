@@ -18,9 +18,13 @@ The Customer Engineering team is responsible for ensuring that all of Sourcegrap
 
 TODO
 
-# Members
+## Members
 
 - [Julia Gilinets](../../company/team/index.md#julia-gilinets-sheher) (VP of CE)
 - [Dan Adler](../../company/team/index.md#dan-adler-hehim) (Sourcegraph's first ever CE and previous CE team manager)
 - [Christine Lovett](../../company/team/index.md#christine-lovett-sheher)
 - [Tion Thomas](../../company/team/index.md#tion-thomas-hehim)
+
+## Roles
+
+See [roles](./roles/index.md) page.

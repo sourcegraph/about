@@ -43,8 +43,8 @@ For tasks in Biotech, Public Health, Agriculture and Defense/Intelligence , the 
 
 Baxter gave recent examples from Uber's self driving car and IBM Watson
 
-![](/blog/strange-loop-2019/uber.jpg)
-![](/blog/strange-loop-2019/ibm.jpg)
+![Uber halts self driving tests after pedestrian killed in Arizona](/blog/strange-loop-2019/uber.jpg)
+![IBM watson supercomputer recommended unsafe and incorrect cancer treatments](/blog/strange-loop-2019/ibm.jpg)
 
 
 
@@ -52,8 +52,8 @@ How do we make Ai safe when safety matters?
 
 One possible way is Explainable AI (XAI)
 
-![](/blog/strange-loop-2019/xai.jpg)
-![](/blog/strange-loop-2019/darpa.jpg)
+![Xai](/blog/strange-loop-2019/xai.jpg)
+![Darpa](/blog/strange-loop-2019/darpa.jpg)
 
 There are questions we need to be ask the Ai.
 
@@ -61,20 +61,20 @@ So we need an Explanation Interface
 
 Explainable AI has been around long before it became a buzz word. Baxter shows a Nomogram image from years before. Another example are Expert systems. They became popular starting from the 80s.
 
-![](/blog/strange-loop-2019/nomogram.jpg)
-![](/blog/strange-loop-2019/expert.jpg)
+![Nomogram](/blog/strange-loop-2019/nomogram.jpg)
+![Expert systems](/blog/strange-loop-2019/expert.jpg)
 
 **Recent examples of explainable AI**:  Most of the work has been in deep learning focused on image classification. Baxter discussed examples from recent papers. There are also approaches using heat maps. We can also do the same thing with text
 
-![](/blog/strange-loop-2019/deep.jpg)
+![Deep](/blog/strange-loop-2019/deep.jpg)
 
 
 XAI work is mostly focused on explanation but there are problems with explanation.
 
 1. XAI is (mostly) built for computer scientists by computer scientists . Most explanation is written by computer scientists
-![](/blog/strange-loop-2019/inmates.jpg)
+![inmates](/blog/strange-loop-2019/inmates.jpg)
 
-![](/blog/strange-loop-2019/miller.jpg)
+![miller](/blog/strange-loop-2019/miller.jpg)
 
 1. Explanation does not actually solve the problem. Explanations don’t prevent problems, they offer excuses as to why they happen
 1. Explanation is not really knowledge.
@@ -89,7 +89,7 @@ How do we do this? Teach!
 
 Baxter talks about the Rectangle Game and another experiment teaching image categories
 
-![](/blog/strange-loop-2019/pedagogy.jpg)
+![pedagogy](/blog/strange-loop-2019/pedagogy.jpg)
 
 We did have some success in transferring some knowledge that was machine knowledge in to humans.
 

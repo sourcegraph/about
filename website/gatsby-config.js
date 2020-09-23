@@ -9,6 +9,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        sitemap: 'https://about.sourcegraph.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
@@ -33,6 +40,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `press`,
+        path: `${__dirname}/../press-releases/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `podcast`,
         path: `${__dirname}/../podcast/`,
       },
@@ -51,6 +65,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { PostComponentProps } from './postTypes'
 import { getHTMLParts } from '../../pages/podcast'
 
-interface Props extends PostComponentProps {}
+interface Props extends PostComponentProps { }
 
 /**
  * A podcast episode post.
@@ -22,20 +22,20 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
     return (
         <Tag className={`podcast-post ${className}`}>
             <header className={`podcast-post__header ${headerClassName}`}>
-                <h2 className={titleClassName}>
+                <h1 className={titleClassName}>
                     <Link to={url} className={`d-block ${titleLinkClassName}`}>
                         {post.frontmatter.title}
                     </Link>
-                </h2>
+                </h1>
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
                 {guestsHTML && <p className="text-muted mb-0" dangerouslySetInnerHTML={{ __html: guestsHTML }}></p>}
             </header>
             {summaryHTML && (
-                <div className="card-body podcast-post__body pt-0" dangerouslySetInnerHTML={{ __html: summaryHTML }} />
+                <div className="card-body podcast-post__body pt-0 pb-0" dangerouslySetInnerHTML={{ __html: summaryHTML }} />
             )}
-            <div className="card-body border-top d-flex flex-wrap align-items-center">
+            <div className="card-body">
                 {audioHTML && (
-                    <div className="podcast-post__body mr-3" dangerouslySetInnerHTML={{ __html: audioHTML }} />
+                    <div className="podcast-post__body audio-container" dangerouslySetInnerHTML={{ __html: audioHTML }} />
                 )}
 
                 <div className="flex-1" />

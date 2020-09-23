@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset "document.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "search.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "content.css"}}" />
+	<script type="text/javascript" src="{{asset "scripts.js"}}"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<!-- Google Tag Manager -->
 	<script>(function (w, d, s, l, i) {
@@ -30,7 +31,7 @@
 	<!-- End Google Tag Manager (noscript) -->
 	<header id="header">
 		<div class="container">
-			<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" /></a>
+			<a href="/" id="logo"><img src="{{asset "sourcegraph-logo.svg"}}" alt="Sourcegraph logo" /></a>
 			<nav>
 				<form id="search-form" method="get" action="/search">
 					<input type="text" id="search-input" name="q" value="{{block "query" .}}{{end}}"

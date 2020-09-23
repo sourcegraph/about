@@ -50,9 +50,9 @@ In 1968 the Fair Housing Act was passed to protect people from discrimination su
 
 In 1961, people made decisions, in the 2000's computers started making those decisions and in 2018, computers running some form of ML make these decisions.
 
-![](/blog/strange-loop-2019/4-1961-to-2012.jpg)
+![1961 to 2012](/blog/strange-loop-2019/4-1961-to-2012.jpg)
 
-![](/blog/strange-loop-2019/5-1961-to-2018.jpg)
+![1961 to 2018](/blog/strange-loop-2019/5-1961-to-2018.jpg)
 
 Research shows that POC are more likely to be denied mortgage loans even after controlling for income, loan amount and neighborhood.
 
@@ -62,8 +62,8 @@ We have algorothmic redlining.
 
 Joyce cites an article that about a proposed housing rule makes it difficult to prevent disparate bias.
 
-![](/blog/strange-loop-2019/7-hud.jpg)
-![](/blog/strange-loop-2019/8-hud.jpg)
+![7 Hud](/blog/strange-loop-2019/7-hud.jpg)
+![8 Hud](/blog/strange-loop-2019/8-hud.jpg)
 
 ## 2. The Solutions
 
@@ -74,18 +74,18 @@ Knowing that the data is biased, how can we build algorithms that combat this bi
 Joyce does a quick recap session on ML. In adversarial learning, let's build a model that predicts the label and the protected attribute.
 If we can successfully predict what we want but cannot predict this protected attribute, then I have not mistakenly encoded something that reveals the protected attribute. Predict both label and protected attribute (eg race/gender) then send back some negative signal along with the positive if it’s also the protected class.
 
-![](/blog/strange-loop-2019/9-ad.jpg)
-![](/blog/strange-loop-2019/10-ad.jpg)
-![](/blog/strange-loop-2019/11-ad.jpg)
-![](/blog/strange-loop-2019/12-ad.jpg)
-![](/blog/strange-loop-2019/13-ad.jpg)
+![9 Ad](/blog/strange-loop-2019/9-ad.jpg)
+![10 Ad](/blog/strange-loop-2019/10-ad.jpg)
+![11 Ad](/blog/strange-loop-2019/11-ad.jpg)
+![12 Ad](/blog/strange-loop-2019/12-ad.jpg)
+![13 Ad](/blog/strange-loop-2019/13-ad.jpg)
 
 In code, this ends up looking something like this:
 
-![](/blog/strange-loop-2019/14-ad.jpg)
-![](/blog/strange-loop-2019/15-ad.jpg)
-![](/blog/strange-loop-2019/16-ad.jpg)
-![](/blog/strange-loop-2019/17-ad.jpg)
+![14 ad](/blog/strange-loop-2019/14-ad.jpg)
+![15 ad](/blog/strange-loop-2019/15-ad.jpg)
+![16 ad](/blog/strange-loop-2019/16-ad.jpg)
+![17 ad](/blog/strange-loop-2019/17-ad.jpg)
 
 The way you make sure the update you are making is maximally useful to classifier without helping the adversary in any way. The thing about AD is you can choose whether you add that separate head. However, you have to specify ahead of time what your protected attribute is. However we may not always know what this attribute is.
 
@@ -96,43 +96,43 @@ What if you do not know exactly what attribute you want to protect before time?
 This method variational auto-encoder
 
 An auto-encoder takes in a representation of input and tries to find more useful representation of input in latent space.
-![](/blog/strange-loop-2019/18-dud.jpg)
+![18 dud](/blog/strange-loop-2019/18-dud.jpg)
 
 The problem is that sometimes your neural network generates different latent representation of similar inputs. The variational auto-encoder corrects this. We try to make similar inputs are densely clustered in normal Gaussian distributions
-![](/blog/strange-loop-2019/19-dud.jpg)
+![19 dud](/blog/strange-loop-2019/19-dud.jpg)
 
 You don’t need to know the exact bias; make sure you see equal representation of different kinds of inputs so it’s well represented (eg detecting women and POC faces)
 
-![](/blog/strange-loop-2019/20-dud.jpg)
+![20 dud](/blog/strange-loop-2019/20-dud.jpg)
 
 We are trying to have  maximize the probability of being able to reconstruct the input from the latent representation. We want to see equal representation of different kinds of inputs so it’s well represented (e.g. detecting women and POC faces)
-![](/blog/strange-loop-2019/21-dud.jpg)
-![](/blog/strange-loop-2019/22-dud.jpg)
+![21 dud](/blog/strange-loop-2019/21-dud.jpg)
+![22 dud](/blog/strange-loop-2019/22-dud.jpg)
 
 We genarate a histogram of our latent variables.
-![](/blog/strange-loop-2019/23-dud.jpg)
+![23 dud](/blog/strange-loop-2019/23-dud.jpg)
 
 We can upsample data that is unrepresented using the histograms generated for the latent representation
 
 In Code:
-![](/blog/strange-loop-2019/24-dud.jpg)
-![](/blog/strange-loop-2019/25-dud.jpg)
-![](/blog/strange-loop-2019/26-dud.jpg)
+![24 dud](/blog/strange-loop-2019/24-dud.jpg)
+![25 dud](/blog/strange-loop-2019/25-dud.jpg)
+![26 dud](/blog/strange-loop-2019/26-dud.jpg)
 
-![](/blog/strange-loop-2019/27-dud.jpg)
+![27 dud](/blog/strange-loop-2019/27-dud.jpg)
 
 Example from paper using method:
 
-![](/blog/strange-loop-2019/28-dud.jpg)
+![28 dud](/blog/strange-loop-2019/28-dud.jpg)
 
 ### 2.3 Distributionally robust optimization
 
 Your model can over time become more biased towards a minority. This is becauseos your model improves with respect to your average which is a representation of your majority.  You train looking at samples that have high loss not samples that have low loss. Optimize for the worse off groups.
 
-![](/blog/strange-loop-2019/29-dro.jpg)
-![](/blog/strange-loop-2019/30-dro.jpg)
-![](/blog/strange-loop-2019/31-dro.jpg)
-![](/blog/strange-loop-2019/32-dro.jpg)
+![29 dro](/blog/strange-loop-2019/29-dro.jpg)
+![30 dro](/blog/strange-loop-2019/30-dro.jpg)
+![31 dro](/blog/strange-loop-2019/31-dro.jpg)
+![32 dro](/blog/strange-loop-2019/32-dro.jpg)
 
 ## 3. The Caveat
 In conclusion, Joyce emphasizes:

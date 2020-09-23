@@ -6,9 +6,9 @@
 /blog/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go /blog/google-i-o-talk-building-sourcegraph 301!
 /blog/go /go 301!
 /blog/graphql /graphql 301!
-/blog/press-release-our-abcs-childrens-book /press-releases/our-abcs-childrens-book 301!
-/blog/press-release-sourcegraph-secures-series-b /press-releases/sourcegraph-secures-series-b 301!
-/blog/press-release-sourcegraph-announces-new-gitlab-native-integration /press-releases/sourcegraph-announces-new-gitlab-native-integration 301!
+/blog/press-release-our-abcs-childrens-book /press-release/our-abcs-childrens-book 301!
+/blog/press-release-sourcegraph-secures-series-b /press-release/sourcegraph-secures-series-b 301!
+/blog/press-release-sourcegraph-announces-new-gitlab-native-integration /press-release/sourcegraph-announces-new-gitlab-native-integration 301!
 /blog/sourecgraph-liveblogging-at-gophercon-2018 /blog/sourcegraph-liveblogging-at-gophercon-2018 301!
 /blog/strange-loop  /strange-loop 301!
 /careers /jobs 301!
@@ -78,6 +78,9 @@
 /go/grpc-in-production  /go/grpc-in-production-alan-shreve/ 301!
 /events /blog 301!
 /plan /company/strategy 301!
+/press-releases/our-abcs-childrens-book /press-release/our-abcs-childrens-book 301!
+/press-releases/sourcegraph-announces-new-gitlab-native-integration /press-release/sourcegraph-announces-new-gitlab-native-integration 301!
+/press-releases/sourcegraph-secures-series-b/ /press-release/sourcegraph-secures-series-b/ 301!
 /product/browser https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!
 /product/code-alerts-automation / 301!

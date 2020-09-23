@@ -5,7 +5,7 @@ class News extends React.Component {
     public render(): JSX.Element {
         return (
             <div>
-                <h3>2020</h3>
+                <h3 id="news2020">2020</h3>
                 <div className="container-fluid">
                     {NewsData.y2020.map((newsDetail, index) => (
                         <div className="row mb-4 news__item">
@@ -25,7 +25,7 @@ class News extends React.Component {
                         </div>
                     ))}
                 </div>
-                <h3>2019</h3>
+                <h3 id="news2019">2019</h3>
                 <div className="container-fluid">
                     {NewsData.y2019.map((newsDetail, index) => (
                         <div className="row mb-4 news__item">

@@ -307,13 +307,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [GitHub](https://github.com/stefanhengl)
 - Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
-## Mimi St Johns
-
-- Software Engineer Intern
-- Pittsburgh, PA, USA 🇺🇸
-- [mimi@sourcegraph.com](mailto:mimi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mimi-st-johns-1208521b1/), [GitHub](https://github.com/RedHeadedStranger99)
-- Mimi recently finished her first year at Stanford; she is studying computer science. In her free time, she enjoys playing the guitar, writing, chess, and Magic: The Gathering.
-
 ## Kimberly Hopson (she/her)
 
 - Developer Communications
@@ -415,6 +408,27 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [GitHub](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
 - María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
 
+## Chris Surdi
+
+- Account Executive 
+- San Francisco, Ca, USA, 🇺🇸 
+- [chris.surdi@sourcegraph.com](mailto:chris.surdi@sourcegraph.com)
+- I’m a serial entrepreneur and angel employee with a passion for disruptive technology and sales. I live north of San Francisco with my wife Meliza and three kids - Truson, Kaison and Crimson. I'm originally from back East and moved out to the West Coast in 2003 to be involved in startups, technology, and innovation. I'm grateful to say I'm doing everything I've set myself out to achieve at this point. 
+
+## Joel Kwartler (he/him)
+
+- Product Manager ([Current Goals](https://docs.google.com/document/d/1W9XAQ7eEu4GcuDgFFqhAhmbq8VmkATh4gzfS_dBxoyc))
+- Los Angeles, CA, USA 🇺🇸
+- Name pronunciation: [ʤoʊl kwɔrtlɜr](http://ipa-reader.xyz/?text=%CA%A4o%CA%8Al%20kw%C9%94rtl%C9%9Cr&voice=Joey)
+- [joel@sourcegraph.com](mailto:joel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joelkwartler), [Github](https://github.com/Joelkw)
+- Joel is a west coast fanboy who grew up in Oregon and has since lived in Seattle, SF, and LA. He's bounced around the startup + design world at places like Figma and IDEO, and got a bachelor's in C.S. at Harvard. After hours, you might find him doing stand up, pretending he knows piano, or waking up way too early to take photographs. He's made the _Forbes 30 Under 30 List of Best Joel Kwartlers_ for 5 of the past 8 years.
+
+## Alan Harris (he/him)
+
+- Software Engineer
+- Arlington, VA, USA 🇺🇸
+- [alan@sourcegraph.com](mailto:alan@sourcegraph.com), [GitHub](https://github.com/flying-robot)
+- Alan lives in the DC metro area with his wife, cat and somewhat excessive collection of books. When not illuminated by the gentle glow of a monitor, you'll probably find him toiling away behind a drum kit or watching yet another horror movie from the 1980s (seriously, they're fantastic). Just a regular dude, and totally not three chipmunks in a trench coat.
 
 <!-- Paste *your* section above this line by following our template below:
 
@@ -427,3 +441,5 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Bio (hobbies, work experience, family, pets, etc.)
 
 -->
+
+

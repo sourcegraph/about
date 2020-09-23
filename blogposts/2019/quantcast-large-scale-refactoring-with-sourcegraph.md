@@ -12,7 +12,7 @@ description: "Founded in 2006, Quantcast's engineering team had amassed thousand
 ---
 
 <p style="text-align: center">
-  <img src="/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg" />
+  <img src="/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg" alt="Case study: Quantcast adopts Sourcegraph Universal Code Search"/>
 </p>
 
 [Quantcast](https://www.quantcast.com) uses machine-learning-driven, real-time audience insights to radically simplify advertising for brands and customers such as BuzzFeed, Dell, and Fiat Chrysler.

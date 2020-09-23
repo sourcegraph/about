@@ -19,6 +19,10 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 TODO
 
+## Roles
+
+See [roles](./roles/index.md) page.
+
 ## How sales works with other Sourcegraph teams
 
 ### [Customer engineering](../ce/support.md) (for customer support)
@@ -64,9 +68,10 @@ A customer is an organization with a Sourcegraph subscription contract that has 
     - If in doubt about whether another customer is referenceable by name, ask in #sales.
 1. If an organization's contract will start in the future, they are still considered a customer. (This can happen when we agree to have a contract start on the next 1st of the month because that makes life easier for a customer, for example.)
 
-### Sales Accepted Opportunity (SAO):
+### Sales Accepted Opportunity (SAO)
 
 Sales Accepted Opportunities are where ALL of the following are true:
+
 - We have completed an intro call/meeting with the company/contact
 - Company/contact has expressed some form of interest/need in Sourcegraph
 - Contact can be a potential champion or coach
@@ -145,14 +150,6 @@ Note that this is a stage we may add in the future to indicate we are almost at 
 ### Closed Won
 
 Deal signed!
-
-## Segmentation
-
-Different customers and deals have different needs from our sales team. We segment customers and deals based on their actual or projected ARR:
-
-- **Tier 1** = $100k+ ARR
-- **Tier 2** = $42k+ ARR
-- **Tier 3** = $22k+ ARR
 
 ### Maintaining customer spreadsheets
 
