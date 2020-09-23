@@ -32,39 +32,30 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 #### Milestones
 
 1. The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-    - Make it work:
-        - Code is indexed.
-        - It's possible to search over only their code (vs all public code).
+    - Code is indexed.
+    - It's possible to search over only their code (vs all public code).
 1. Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-    - Make is usable:
-        - Connecting their first code host and adding their own public repos is intuitive and easy for new users.
-        - Connecting with code hosts and and adding public repos is intuitive and easy for current users.
-        - System activity and progress is easy to understand and doesn’t take too long.
-          - Repo syncing
-          - Repo indexing
-        - Searching their own versus searching all Cloud code is intuitive.
-    - Make it fast: TODO
-    - Make it scale: TODO
+    - Connecting their first code host and adding their own public repos is intuitive and easy for new users.
+    - Connecting with code hosts and and adding public repos is intuitive and easy for current users.
+    - System activity and progress is easy to understand and doesn’t take too long.
+        - Repo syncing
+        - Repo indexing
+    - Searching their own versus searching all Cloud code is intuitive.
 1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
-    - Make it work:
-        - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
-        - All private repository content are only decryptable by Sourcegraph services.
-            - Gitserver.
-            - Searcher and code intel caches.
-            - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
+    - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
+    - All private repository content are only decryptable by Sourcegraph services.
+        - Gitserver.
+        - Searcher and code intel caches.
+        - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
 1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
-    - Make it usable:
-        - Authorization from code hosts is enforced (e.g., organizations, teams).
-        - Repository visibility and permissions on Sourcegraph is intuitive.
-        - Adding private repositories is part of the same flows as adding public repositories.
-        - TODO
-    - Make it fast: TODO
+    - Authorization from code hosts is enforced (e.g., organizations, teams).
+    - Repository visibility and permissions on Sourcegraph is intuitive.
+    - Adding private repositories is part of the same flows as adding public repositories.
 1. Sourcegraph Cloud is Generally Available (GA).
-    - Make it scale:
-        - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
-        - Scalable syncing of permissions, repos, changesets.
-        - High availability, SLOs, etc.
-        - Billing and subscriptions.
+    - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
+    - Scalable syncing of permissions, repos, changesets.
+    - High availability, SLOs, etc.
+    - Billing and subscriptions.
 
 ### Backend infrastructure
 
