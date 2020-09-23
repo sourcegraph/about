@@ -2,6 +2,9 @@
     &__icon-true {
         color: var(--success);
     }
+    &__icon-false {
+        visibility: hidden;
+    }
 }
 .support-plan {
     &__title {

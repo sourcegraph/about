@@ -10,6 +10,7 @@ const title = 'Sourcegraph - Support'
 const description = 'Sourcegraph support details for each pricing tier.'
 const liClassName = 'list-group-item bg-transparent border-0'
 const checkClassName = 'icon-inline support-plan-feature__icon-true'
+const nocheckClassName = 'icon-inline support-plan-feature__icon-false'
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -38,13 +39,13 @@ export default ((props: any) => (
                                 </div>
                                 <ol className="list-group support-plan-feature list-group-flush py-3">
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Community support on our <Link to="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</Link></li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Email support</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Support during working hours (Pacific Time)</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />48 hour reponse time* to critical issues</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime* (managed instances only)</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Initial implementation support on architecture, deployment, configuration, and rollout</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Shared Slack channel for feedback and communication (available)</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Dedicated support engineer assigned to you (available) <br />&nbsp;</li>
                                 </ol>
                             </div>
                         </div>
@@ -57,12 +58,12 @@ export default ((props: any) => (
                                 <ol className="list-group support-plan-feature list-group-flush py-3">
                                     <li className="list-group-item bg-transparent border-0"><CheckIcon className={checkClassName} /> Community support on our <Link to="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</Link></li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Email support</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Support during working hours</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 24 hour reponse time* to critical issues</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
-                                    <li className={`text-center ${liClassName} `}>-</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Support during working hours (Pacific Time)</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 48 hour reponse time* to critical issues</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime* (managed instances only)</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Initial implementation support on architecture, deployment, configuration, and rollout</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Shared Slack channel for feedback and communication (available)</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Dedicated support engineer assigned to you (available) <br />&nbsp;</li>
                                 </ol>
                             </div>
                         </div>
@@ -75,12 +76,12 @@ export default ((props: any) => (
                                 <ol className="list-group support-plan-feature list-group-flush py-3">
                                     <li className="list-group-item bg-transparent border-0"><CheckIcon className={checkClassName} /> Community support on our <Link to="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</Link></li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Email support</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 24/7 support (excluding holidays)</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 8 hour response time* to critical issues</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 7 day response time* to non-critical issues</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Support during working hours (Pacific Time)</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 24 hour reponse time* to critical issues</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> 99.5% uptime* (managed instances only)</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Custom SLA (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Dedicated support (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Initial implementation support on architecture, deployment, configuration, and rollout</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Shared Slack channel for feedback and communication (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> Dedicated support engineer assigned to you (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
                                 </ol>
                             </div>
                         </div>
