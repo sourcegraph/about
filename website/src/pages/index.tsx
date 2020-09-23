@@ -7,7 +7,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
-import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
+import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated';
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -57,7 +57,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     />
                 </div>
             </ContentSection>
-            <CustomerLogosSection className="pt-5" />
+            <CustomerLogosSectionAnimated scrollTimeInSeconds={2} showButton={true} className="pt-5"/>
             <div className="container">
                 <hr className="my-md-6" />
             </div>
