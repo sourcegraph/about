@@ -19,13 +19,12 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 ## [Marketing](../../handbook/marketing/index.md#goals)
 
 ## [Operations](../../handbook/ops/index.md#goals)
-
-## [Operations](../../handbook/ops/index.md#goals)
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [People Operations](../../handbook/people-ops/index.md#goals)
-### [Business & Product Operations](../../handbook/ops/bizops/index.md#goals)
-### [Sales Strategy & Operations](../../handbook/ops/sales-ops/index.md#goals)
-### [Finance & Accounting](../../handbook/ops/finance/index.md#goals)
+### [People ops](../../handbook/people-ops/index.md#goals)
+### [Business & product operations](../../handbook/ops/bizops/index.md#goals)
+### [Sales strategy & operations](../../handbook/ops/sales-ops/index.md#goals)
+### [Finance & accounting](../../handbook/ops/finance/index.md#goals)
+### [Legal](../../handbook/ops/legal/index.md#goals)
 
 ## Engineering
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
