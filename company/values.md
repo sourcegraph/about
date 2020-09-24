@@ -65,9 +65,9 @@ We document our goals and plans publicly so we can engage with customers to buil
 
 Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
 
-## High Agency
+## High agency
 
-Every person at Sourcegraph has both the power and the responsibility to help make Sourcegraph a better place and a better product.
+Everyone at Sourcegraph has the power and the responsibility to improve Sourcegraph as a company and as a product.
 
 > “Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. Once you learn that, you'll never be the same again.” - Steve Jobs
 
