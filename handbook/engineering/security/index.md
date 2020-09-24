@@ -101,7 +101,7 @@ Small changes, defined as less than 1 day of effort are communicated in a GitHub
 
 **Medium changes**
 
-Medium changes operate on the same principle as small changes, with the exception of the team not submitting code changes. These changes also include a documented test plan for validation of the security change. 
+Medium changes operate on the same principle as small changes, except that the code owner is always the one driving it. These changes also include a documented test plan for validation of the security change. 
 
 **Large changes**
 
