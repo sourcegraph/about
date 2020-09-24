@@ -101,11 +101,11 @@ Small changes, defined as less than 1 day of effort are communicated in a GitHub
 
 **Medium changes**
 
-Medium changes operate on the same principle as small changes, except that the code owner is always the one driving it. These changes also include a documented test plan for validation of the security change. 
+Medium changes operate on the same principle as small changes, except that the code owner is always the one driving it. These changes also include a documented test plan for validation of the security change. These changes are usually take no more than one week.
 
 **Large changes**
 
-Large changes are communicated through [RFCs](../../communication/rfcs/index.md).  The RFC provides as much context as possible about the issue, the reason for the change, and its relative importance and urgency.  We collaborate on the RFC as a team, sharing the RFC with the Engineering Manager(s) for the impacted team for both feedback and [prioritizing](../../product/prioritizing.md).  Upon approval, we create GitHub issues, labeling them with a new label, for the RFC (i.e RFC-214), sharing with the Engineering Manager.  When possible, a member of the security team attends the planning session, to help provide input should more be needed.
+Changes that are cross-cutting or requiring greater than one week of effort are large, and communicated through [RFCs](../../communication/rfcs/index.md). The RFC provides as much context as possible about the issue, the reason for the change, and its relative importance and urgency.  We collaborate on the RFC as a team, sharing the RFC with the Engineering Manager(s) for the impacted team for both feedback and [prioritizing](../../product/prioritizing.md).  Upon approval, we create GitHub issues, labeling them with a new label, for the RFC (i.e RFC-214), sharing with the Engineering Manager.  When possible, a member of the security team attends the planning session, to help provide input should more be needed.
 
 **Providing input**
 
@@ -113,7 +113,7 @@ Teams planning and executing changes should ask for Pull Request reviews from th
 
 ## Members
 
-- [Shim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([Engineering Manager](../roles.md#engineering-manager)).
+- [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([Engineering Manager](../roles.md#engineering-manager)).
 - [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
 
 ## Open Positions
