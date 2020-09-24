@@ -10,7 +10,8 @@ const ITEMS: {
         url: string
         target?: string
         rel?: string
-    }
+    },
+    overRideCss?: string // If you want to choose the css for a specific logo instead of random
 }[] = [
     {
         name: 'Cloudflare',
@@ -81,6 +82,7 @@ const ITEMS: {
         link: {
             url: '/case-studies/quantcast-large-scale-refactoring',
         },
+        overRideCss: 'ml-1 mr-4 mt-4 mb-2'
     },
     {
         name: 'Criteo',
@@ -329,7 +331,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
                     return (
                         <div
                             key={i}
-                            className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item ${toggle ? margin : "mx-4 my-2"}`}
+                            className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item ${logo.overRideCss ? logo.overRideCss : margin}`}
                         >
                             {logo.link ? (
                                 <a href={logo.link.url} target={logo.link.target} rel={logo.link.rel}>
