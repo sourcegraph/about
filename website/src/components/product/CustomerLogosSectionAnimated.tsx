@@ -249,14 +249,14 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         set({scale: 0});
     };
 
-    function changeToggle() {
-        setToggle(prevState => !prevState);
-    }
+    // function changeToggle() {
+    //     setToggle(prevState => !prevState);
+    // }
 
-    function changeNumber(e) {
-        // console.log(parseInt(e.target.value), e.target.value)
-        setNumber(parseFloat(e.target.value))
-    }
+    // function changeNumber(e) {
+    //     // console.log(parseInt(e.target.value), e.target.value)
+    //     setNumber(parseFloat(e.target.value))
+    // }
 
     let logoArray;
     if (windowWidth < minDeviceWidth) {
@@ -270,7 +270,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
                 Our customers use Sourcegraph every day to build software you rely on.
             </h3>
-            {(windowWidth > minDeviceWidth) &&
+            {/* {(windowWidth > minDeviceWidth) &&
                 <div className={'testcontainer'}>
                     <div>Toggle layout: {toggle ? 'random layout' : 'normal layout'}</div>
                     <input
@@ -284,7 +284,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
                         onChange={changeNumber}
                     />
                 </div>
-            }
+            } */}
             <div className="customer-container-outer">
             {windowWidth > minDeviceWidth &&
                 <div
