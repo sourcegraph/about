@@ -109,7 +109,7 @@ Large changes are communicated through [RFCs](../../communication/rfcs/index.md)
 
 **Providing input**
 
-When input is needed from the team on a change the team is added to a pull request.  We also respond to RFCs when assigned.
+Teams planning and executing changes should ask for Pull Request reviews from the Security Team as needed to gain confidence in the implementation. Teams should also feel free to ask for a security review of any RFC they're working on that aren't directly created from the Security Goals.
 
 ## Members
 
