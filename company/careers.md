@@ -22,7 +22,6 @@ We're hiring! Check out our open positions:
 ### Sales
 
 - [Account Executive](../handbook/sales/roles/account_executive.md)
-- [Sales Strategy & Operations Analyst or Manager](../handbook/ops/roles/gtm_sales_operations.md)
 
 ### Customer engineering
 
