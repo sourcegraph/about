@@ -105,7 +105,7 @@ Medium changes operate on the same principle as small changes, except that the c
 
 **Large changes**
 
-Large changes are communicated through [RFCs](../../communication/rfcs/index.md).  The RFC provide as much context as possible about the issue, the reason for the change, and its relative importance and urgency.  We collaborate on the RFC as a team, sharing the RFC with the Engineering Manager(s) for the impacted team for both feedback and [prioritizing](../../product/prioritizing.md).  Upon approval, we create GitHub issues, labeling them with a new label, for the RFC (i.e rfc214), sharing with the Engineering manager.  When possible, a member of the security team attends the planning session, to help provide input should more be needed.
+Large changes are communicated through [RFCs](../../communication/rfcs/index.md).  The RFC provides as much context as possible about the issue, the reason for the change, and its relative importance and urgency.  We collaborate on the RFC as a team, sharing the RFC with the Engineering Manager(s) for the impacted team for both feedback and [prioritizing](../../product/prioritizing.md).  Upon approval, we create GitHub issues, labeling them with a new label, for the RFC (i.e RFC-214), sharing with the Engineering Manager.  When possible, a member of the security team attends the planning session, to help provide input should more be needed.
 
 **Providing input**
 
