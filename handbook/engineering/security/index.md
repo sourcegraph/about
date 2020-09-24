@@ -98,6 +98,24 @@ When we receive [a report of a security vulnerability](#how-to-report-a-security
 
 --------------------------
 
+## How we pay out bounties
+
+When a reported vulnerability is fixed, the security team will decide upon an appropriate bounty, and follow up with the reporter. A simple template response is
+
+> We have fixed the vulnerability you reported in the following PR: $PRLINK
+>This fix is included in the following versions of Sourcegraph: $SGVERSION
+
+>A bounty of $BOUNTYVAL will be awarded. To pay the bounty, we require the following information:
+>1. Email or full mobile phone number
+>2. Full name (first and last)
+>3. Country/region of residence
+
+>You [may/may not] disclose details of this vulnerability publicly 
+
+Note that in accordance with our goals of transparency, we should always try to allow public disclosure whenever possible.
+
+When the reporter gives us this information, we currently [forward this to finance](https://about.sourcegraph.com/handbook/ops/finance#getting-invoices-paid) to pay the bounty. If volume increases to more than a few bounties per month, we will pay the bounty by way of a PayPal account controlled by the security team manager, linked to their brex card.
+
 ## How we Work
 
 On the security team, we work by planning, tracking, and reviewing - creating a feedback mechansim targeting our own continuous improvement based on the things we learn.
