@@ -1,5 +1,8 @@
 # Marketing
 
+
+<img align="right" src="https://sourcegraphstatic.com/marketing-logo.gif" style="max-height:100%" />
+
 - [Messaging](messaging.md)
   - [What is Sourcegraph?](messaging.md#sourcegraph-value-proposition)
   - [What problems does Sourcegraph solve?](messaging.md#what-problems-does-sourcegraph-solve)
