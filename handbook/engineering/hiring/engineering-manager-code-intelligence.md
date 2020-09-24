@@ -46,14 +46,14 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
     - 45m [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) (VP Engineering)
     - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
 1. Interviews.
-   - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md). We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
+   - 1h Team collaboration. We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
      - The interviewers will be [María Craig](../../../company/team/index.md#maría-craig-she-her) (PM for Code intelligence) and one of the following:
          - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
          - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
          - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-   - 1h [Engineering leadership](engineering-leadership.md).
+   - 1h Engineering leadership.
      - The interviewers will be [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) and another [engineering manager](../leadership/index.md#members).
-   - 1h [Technical experience](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md) - We ask you about your past work and accomplishments.
+   - 1h Technical experience - We ask you about your past work and accomplishments.
      - The interviewers will be two of the following:
          - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
          - [Garo Brik](../../../company/team/index.md#garo-brik-they-them) or [Noah Santschi-Cooney](../../../company/team/index.md#noah-santschi-cooney-he-him)
