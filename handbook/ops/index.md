@@ -1,5 +1,9 @@
 # Operations
 
+- Operations RFCs (requests for comment)
+  - [All RFC documents](https://drive.google.com/drive/folders/1Llct8MGmc1OvGQP6iWQwgfEDUJEuQZ7D) (Google Drive)
+  - [How we use operations RFCs](ops-rfcs.md)
+
 ## Mission
 
 The operations team is responsible for ensuring that Sourcegraph always runs intelligently, efficiently, responsibly, and ethically as we grow. 
