@@ -69,7 +69,7 @@ export default ((props: any) => (
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
         <div className="customers-page">
-            <CustomerLogosSectionAnimated scrollTimeInSeconds={2} showButton={false} className="pt-5"/>
+            <CustomerLogosSectionAnimated scrollTimeInSeconds={1} showButton={false} className="pt-5"/>
             <hr className="mb-6" id="onboard" />
             <ContentSection className="mt-5">
                 <div className="row">

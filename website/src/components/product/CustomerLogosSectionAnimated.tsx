@@ -1,5 +1,6 @@
 import React, {useRef, useState, useEffect} from 'react';
 import { useSpring, animated } from 'react-spring';
+import * as easings from 'd3-ease';
 import ChevronRightIcon from 'mdi-react/ChevronRightIcon';
 import ChevronLeftIcon from 'mdi-react/ChevronLeftIcon';
 
@@ -165,7 +166,8 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         scroll: scrollTo,
         from: { scroll: 0 },
         config: {
-            duration: duration
+            duration: duration,
+            easing: easings.easeSinInOut
         }
     });
     const [{x, y, scale}, set] = useSpring(() => ({x: 0, y: 0, scale: 0 }));
