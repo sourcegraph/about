@@ -94,7 +94,7 @@ At the beginning of each iteration, the engineering manager will:
 - Schedule the retrospective meeting
 - Set up a Slack reminder three days before the retrospective meeting, asking teammates to write their discussion topics [in our retrospectives document](https://docs.google.com/document/d/1YW45Dksk0vIn7drhatwLyo6YbMMkS-naHcuShUi1OOw/edit#heading=h.dxt1jy5hsf1d)
 
-We do regular backlog triages together, where we go through the issues in our backlog.
+We do regular backlog triages together, where we go through [the issues in our backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fweb).
 This helps us resurface older issues, create shared awareness for existing deficiencies among everyone on our team and ensures no-longer-applicable issues are closed.
 To manage the load for these triages, a triage may have a specific theme, like "debt" or "performance".
 
