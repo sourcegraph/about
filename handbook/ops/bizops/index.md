@@ -23,7 +23,7 @@ To reach us, mention @business-team in the most relevant channel (i.e. #marketin
 
 ## Active product analytics dashboards
 
-Dashboards are structured by focus area or goal instead of team. As we have more and more projects being worked on and tracked concurrently, this makes it easier for the product, engineering and business teams to track, link to, and simplify the lifecycle of dashboards. For example, we don't need to think about when it's time to deprecate a look from the code intel dashboard. When the goal is removed, the dashboard is archived.
+Dashboards are structured by goal instead of team. As we have more and more projects being worked on and tracked concurrently, this makes it easier for the product, engineering and business teams to track, link to, and simplify the lifecycle of dashboards. For example, we don't need to think about when it's time to deprecate a look from the code intel dashboard. When the goal is removed, the dashboard is archived.
 
 WIP
 - LSIF adoption
