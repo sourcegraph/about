@@ -53,7 +53,7 @@ Never assume that a problem is somebody else's to fix!
   - Read the first page of [Sourcegraph's user documentation](https://docs.sourcegraph.com/user).
   - Go through the [analytics onboarding](https://sourcegraph.looker.com/projects/sourcegraph_events/files/1_home.md). This onboarding is within Looker, so if you don't have an account you can ask for access in #analytics.
   - Watch Dan's [Sourcegraph Demo](https://drive.google.com/file/d/1VUZ0rnZQpNgjtGDI0tMC-h-OtL0Czz8H/view)
-  - Learn how we can (and cannot) [reference our customers externally](../../sales#customer)
+  - Learn how we can (and cannot) [reference our customers externally](../../sales/index.md#customer)
 
 ## Team specific onboarding
 
