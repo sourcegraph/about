@@ -10,7 +10,7 @@ _All Ops RFCs are in a [public Google Drive folder](https://drive.google.com/dri
 
 ## Ops RFCs are RFCs
 
-Ops RFCs are [RFCs](../engineer/rfcs/index.md). While Ops RFCs live in a different folder and have a slightly different template, the underlying principles are the same, and Ops RFCs may be referred to simply as RFCs (though on this page, they are referred to as "Ops RFCs" specifically to draw a distinction).
+Ops RFCs are [RFCs](../communication/rfcs/index.md). While Ops RFCs live in a different folder and have a slightly different template, the underlying principles are the same, and Ops RFCs may be referred to simply as RFCs (though on this page, they are referred to as "Ops RFCs" specifically to draw a distinction).
 
 They:
 
