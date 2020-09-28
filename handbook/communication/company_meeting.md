@@ -1,6 +1,6 @@
 # Company meeting
 
-1. Schedule: every Monday 10:30-11:00am PST/PDT (link in the calendar event)
+1. Schedule: every Monday 8:00-8:30am PST/PDT (link in the calendar event)
    - If Monday is a holiday, the meeting is held on the next non-holiday day.
    - There is no company meeting held between December 25 and December 31. The first company meeting of the year is held on the first non-holiday Monday of the year.
 1. The link to the slides is posted in #general each Thursday before.
