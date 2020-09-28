@@ -112,7 +112,7 @@ To promote a user to site admin (required to make configuration changes), use th
 
 [![Build status](https://badge.buildkite.com/135a00d4fba76ec97944bfb2fc28015d1565e0525853b4de06.svg)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dogfood-server)
 
-This deployment runs the single-image version of Sourcegraph. Its deployed by the [infrastructure repository](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-server) and uses the shared `dogfood` cluster.
+This deployment runs the single-image version of Sourcegraph. It is deployed by the [infrastructure repository](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-server) and uses the shared `dogfood` cluster (also used by [k8s.sgdev.org](#k8s-sgdev-org)).
 
 🚨 This deployment contains private code - do not use it for demos!
 
