@@ -4,7 +4,7 @@
 
 ## Vision
 
-Create tools, systems and workflows that empower Sourcegraph engineers to work more efficiently and build quality products.
+We want to make developing at Sourcegraph a seamless experience and create tools, systems and workflows that empower Sourcegraph engineers to work more efficiently and build quality products.
 
 ## Goals
 
@@ -12,4 +12,4 @@ Create tools, systems and workflows that empower Sourcegraph engineers to work m
 
 ### Promote the utilization of best practices
 
-### Create and champion development workflows
+### Create and champion common development workflows

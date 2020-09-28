@@ -1,14 +1,14 @@
 # Software Engineer - Developer tools
 
-We are looking for software engineers that are passionate about productivity and improving development experience. You will work with our internal customers, Sourcegraph developers, to build tools and systems that make us more efficient.
+We are looking for software engineers that are passionate about productivity and improving development experience. You will be working with other engineering teams to build tools, systems and workflows that empower Sourcegraph engineers to work more efficiently and build quality products.
 
 ## Qualifications
 
-- Experience with multiple programming languages, dependency management systems, and build systems.
+- Experience building tooling and automation for deployments, CI, and internal dev tools.
 - You have experience with Docker and Kubernetes software development pipelines.
+- Experience with multiple programming languages, dependency management systems, and build systems.
 - Ability to communicate clearly and empathetically, especially in writing and documentation.
 - Practiced at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g., cut scope) to ship quickly and iterate when necessary.
-
 
 ## Nice-to-haves
 
@@ -25,7 +25,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-1. You [apply here](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b/apply).
+1. You [apply here]().
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. We evaluate relevant technical skills that you have via an asynchronous coding exercise.
    - We will give you an overview of the exercise in advance.
@@ -41,6 +41,6 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-**[Click here to apply](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b/apply)**
+**[Click here to apply]()**
 
 Go back to the [careers page](../../../company/careers.md) for all open positions.

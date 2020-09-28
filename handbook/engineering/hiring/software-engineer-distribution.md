@@ -9,7 +9,7 @@ We are looking for software engineers who are passionate about and skilled at ma
 - Ability to communicate clearly and empathetically, especially in writing and documentation.
 - Practiced at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g., cut scope) to ship quickly and iterate when necessary.
 - Comfortable using Terraform (or similar infrastructure-as-code).
-- to build tooling and automation for deployments, CI, and internal dev tools.
+- Experience building tooling and automation for deployments, CI, and internal dev tools.
 
 ## Nice-to-haves
 
