@@ -1,4 +1,8 @@
 .customer-logos-section {
+  max-width: unset !important;
+  width: 100% !important;
+  padding-left: 0px;
+  padding-right: 0px;
   &__header {
       font-size: $font-size-base;
       padding: 0 15px;
@@ -9,6 +13,7 @@
       max-width: $max-width;
       margin-bottom: 0;
       line-height: 1.15;
+      margin:0 30px;
       &-logo {
           // stylelint-disable-next-line declaration-property-unit-whitelist
           height: 50px;
@@ -43,16 +48,18 @@
 }
 
 .customer-container-outer {
-  height: 330px;
+  height: 280px;
   position: relative;
+  display: flex;
+  overflow: hidden;
 }
 
 .customer-container-inner {
-  flex-direction: column;
-  height: 330px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  height: 280px;
+  // overflow-x: scroll;
+  // overflow-y: hidden;
   position: relative;
+  flex-shrink: 0;
 }
 
 .customer-container-inner::-webkit-scrollbar { 
@@ -79,6 +86,8 @@
   cursor: pointer;
   text-decoration: none !important;
   z-index: 1;
+  box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.25);
+  font-size: 17px;
 }
 
 .sourcegraph-cta-button-edge {
@@ -178,7 +187,7 @@
   opacity: .5;
 }
 
-.customer-container-inner:hover .customer-logos-section__item-logo-animation {
+.customer-container-outer:hover .customer-logos-section__item-logo-animation {
   opacity: 0.5;
   transform: scale(0.9);
 }

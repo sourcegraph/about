@@ -12,7 +12,7 @@ const ITEMS: {
         target?: string
         rel?: string
     },
-    overRideCss?: string // If you want to choose the css for a specific logo instead of random
+    overrideCss?: string // If you want to choose the css for a specific logo instead of random
 }[] = [
     {
         name: 'Cloudflare',
@@ -83,7 +83,7 @@ const ITEMS: {
         link: {
             url: '/case-studies/quantcast-large-scale-refactoring',
         },
-        overRideCss: 'ml-1 mr-4 mt-4 mb-2'
+        overrideCss: 'ml-1 mr-4 mt-4 mb-2'
     },
     {
         name: 'Criteo',
@@ -143,6 +143,19 @@ const ITEMS: {
         name: 'GetYourGuide',
         url: '/external-logos/gyg.svg',
     },
+    //
+    {
+        name: 'Thought Machine',
+        url: '/external-logos/thought-machine-logo.svg',
+    },
+    {
+        name: 'Button',
+        url: '/external-logos/use-button-logo.svg',
+    },
+    {
+        name: 'Button',
+        url: '/external-logos/use-button-logo.svg',
+    },
 ]
 
 interface Props {
@@ -153,26 +166,35 @@ interface Props {
 
 export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSeconds, showButton, className}) => {
 
-    const [scrollTo, setScrollTo] = useState(0);
-    const [toggle, setToggle] = useState(true);
+    // const [scrollTo, setScrollTo] = useState(0);
+    // const [toggle, setToggle] = useState(true);
     const [buttonClass, setButtonClass] = useState('');
     const [windowWidth, setWindowWidth] = useState(0);
-    const [duration, setDuration] = useState(scrollTimeInSeconds * 1000);
+    // const [duration, setDuration] = useState(scrollTimeInSeconds * 1000);
+    const [imagesWidth, setImagesWidth] = useState(0);
+    const [scrollAnimation, setScrollAnimation] = useState(false);
+
     const innerContainerRef = useRef<HTMLDivElement>(null);
     const [number, setNumber] = useState(null);
     const durationInMilliSeconds = number ? (number! * 1000) : scrollTimeInSeconds * 1000;
     const minDeviceWidth = 991;
-    const scrollProps = useSpring({
-        scroll: scrollTo,
-        from: { scroll: 0 },
-        config: {
-            duration: duration,
-            easing: easings.easeSinInOut
-        }
-    });
+    // const scrollProps = useSpring({
+    //     scroll: scrollTo,
+    //     from: { scroll: 0 },
+    //     config: {
+    //         duration: duration,
+    //         easing: easings.easeSinInOut
+    //     }
+    // });
+    // const [{moveX}, setMoveX] = useSpring(() => ({moveX: 0}));
     const [{x, y, scale}, set] = useSpring(() => ({x: 0, y: 0, scale: 0 }));
-    const [{chevronRightScale}, setChevronRightScale] = useSpring(() => ({chevronRightScale: 1}));
-    const [{chevronLeftScale}, setChevronLeftScale] = useSpring(() => ({chevronLeftScale: 0}));
+    // const [{chevronRightScale}, setChevronRightScale] = useSpring(() => ({chevronRightScale: 1}));
+    // const [{chevronLeftScale}, setChevronLeftScale] = useSpring(() => ({chevronLeftScale: 0}));
+
+    let extraSpace = 0;
+    if (ITEMS.length % 3 !== 0) {
+        extraSpace = 135;
+    };
 
     useEffect(() => {
         setWindowWidth(window.innerWidth);
@@ -181,6 +203,64 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             window.removeEventListener('resize', adjustWindowWidth);
         };
     }, []);
+
+    useEffect(() => {
+        let promises = ITEMS.map((image) => {
+            return new Promise((resolve, reject) => {
+                const imageRef = new Image();
+                imageRef.onload = function() {
+                    // this.height and this.width
+                    let calculatedWidth = (this.width / this.height) * 50;
+                    if (calculatedWidth > 135) calculatedWidth = 135;
+                    setImagesWidth(prevState => prevState += (calculatedWidth + 60)); //Total width of all images
+                    resolve();
+                };
+                imageRef.src = image.url;
+            })
+        });
+        Promise.all(promises).then(() => {
+            const logoElement = document.getElementById('logo-container-reference')!;
+            const newLogoElement = logoElement.cloneNode(true);
+            newLogoElement.id = 'new-logo-element';
+            logoElement?.parentNode?.insertBefore(newLogoElement, logoElement.nextSibling);
+            setScrollAnimation(true);
+        });
+    },[]);
+
+    useEffect(() => {
+        if (scrollAnimation) {
+
+            console.log(scrollAnimation)
+            
+            let logoElement = document.getElementById('logo-container-reference')!;
+            let newLogoElement = document.getElementById('new-logo-element')!;
+            let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
+
+            logoElement.addEventListener('transitionend', transitionEnd);
+
+            function transitionStart() {
+                logoElement.style.transition = '15s linear';
+                newLogoElement.style.transition = '15s linear';
+                logoElement.style.transform = `translateX(${-totalWidth}px)`;
+                newLogoElement.style.transform = `translateX(${-totalWidth}px)`;
+            };
+
+            function transitionEnd(e) {               
+                if (e.target.id !== 'logo-container-reference') return;
+                logoElement.style.transition = 'none';
+                newLogoElement.style.transition = 'none';
+                logoElement.style.transform = `translateX(0px)`;
+                newLogoElement.style.transform = `translateX(0px)`;
+                setTimeout(() => {
+                    transitionStart()
+                },0);
+            };
+
+            setTimeout(() => {
+                transitionStart()
+            }, 500);
+        };
+    }, [scrollAnimation])
 
     function adjustWindowWidth() {
         setWindowWidth(window.innerWidth);
@@ -205,6 +285,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         const scrollEnd = innerContainerRef.current?.scrollWidth! - innerContainerRef.current?.offsetWidth!;
         const currentPostion = innerContainerRef.current?.scrollLeft!;
         const scrollSpeed = durationInMilliSeconds / scrollEnd;
+        console.log(scrollEnd)
         setDuration(durationInMilliSeconds - (currentPostion * scrollSpeed));
         setScrollTo(scrollEnd);
     };
@@ -246,7 +327,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             x: (e.clientX - containerRec?.left!) + innerContainerRef.current?.scrollLeft!, 
             y: e.clientY - containerRec?.top!
         });
-        changeChevronIcons();
+        // changeChevronIcons();
     };
 
     function handleMouseLeaveInnerArea() {
@@ -269,6 +350,21 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         logoArray = ITEMS;
     };
 
+
+    // const elementsRef = useRef(data.map(() => createRef()));
+
+    // useEffect(() => {
+    //     const nextHeights = elementsRef.current.map(
+    //       ref => ref.current.getBoundingClientRect().height
+    //     );
+    //     setHeights(nextHeights);
+    //   }, []);
+
+    // console.log(imagesWidth)
+    // console.log('Divided', imagesWidth / 3)
+    // console.log(imagesHeight)
+
+
     return (
         <div id="customers" className={`container customer-logos-section ${className}`}>
             <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
@@ -289,51 +385,42 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
                     />
                 </div>
             } */}
-            <div className="customer-container-outer">
-            {windowWidth > minDeviceWidth &&
-                <div
-                    className="hoverAreaLeft"
-                    onMouseEnter={handleMouseEnterLeft}
-                    onMouseLeave={handleMouseLeaveLeft}
-                    >
-                    <animated.div className={'icon-left-container-centered'} style={{ transform: chevronLeftScale.interpolate(s => `scale(${s})` )}}> 
-                        <ChevronLeftIcon className={'icon-left'}/>
-                    </animated.div>
-                </div>
-            }
-            <animated.div
+            <div
+                className="customer-container-outer"
                 ref={innerContainerRef} 
-                scrollLeft={scrollProps.scroll}
-                className="text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal customer-container-inner"
                 onMouseMove={windowWidth > minDeviceWidth ? handleMouseMove : undefined}
                 onMouseLeave={windowWidth > minDeviceWidth ? handleMouseLeaveInnerArea : undefined}
-                >
-                {(windowWidth > minDeviceWidth) && showButton &&
-                    <a href="/customers">
-                        <animated.div className={"sourcegraph-cta-button " + buttonClass} style={{ left: x, top: y, transform: scale.interpolate(s => `scale(${s}) translate(-50%, -50%)`) }}>
-                            Learn how customers <br/> use Sourcegraph
-                        </animated.div>
-                    </a>
-                }
+            >
+            {(windowWidth > minDeviceWidth) && showButton &&
+                <a href="/customers">
+                    <animated.div className={"sourcegraph-cta-button " + buttonClass} style={{ left: x, top: y, transform: scale.interpolate(s => `scale(${s}) translate(-50%, -50%)`) }}>
+                        Learn how customers <br/> use Sourcegraph
+                    </animated.div>
+                </a>
+            }
+            <div
+                id="logo-container-reference"
+                style={{width: (imagesWidth / 3) + 30 + extraSpace}}
+                className="text-center mt-4 d-flex flex-wrap justify-content-between align-items-center line-height-normal customer-container-inner">
                 {logoArray.map((logo, i) => {
-                    let margin = '';
-                    let index = i + 1;
-                    if (index % 5 === 0) {
-                        margin = 'ml-2 mr-3 mt-3 mb-4';
-                    } else if (index % 4 === 0) {
-                        margin = 'ml-3 mr-1 mt-5 mb-3';
-                    } else if (index % 3 === 0) {
-                        margin = 'ml-4 mr-2 mt-2 mb-1';
-                    } else if (index % 2 === 0) {
-                        margin = 'ml-3 mr-1 mt-4 mb-2';
-                    } else {
-                        margin = 'ml-1 mr-5 mt-1 mb-4';
-                    };
+                    // let margin = '';
+                    // let index = i + 1;
+                    // if (index % 5 === 0) {
+                    //     margin = 'ml-2 mr-3 mt-3 mb-4';
+                    // } else if (index % 4 === 0) {
+                    //     margin = 'ml-3 mr-1 mt-5 mb-3';
+                    // } else if (index % 3 === 0) {
+                    //     margin = 'ml-4 mr-2 mt-2 mb-1';
+                    // } else if (index % 2 === 0) {
+                    //     margin = 'ml-3 mr-1 mt-4 mb-2';
+                    // } else {
+                    //     margin = 'ml-1 mr-5 mt-1 mb-4';
+                    // };
                     // orginal marging mx-4 my-2
                     return (
                         <div
                             key={i}
-                            className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item ${logo.overRideCss ? logo.overRideCss : margin}`}
+                            className={`${logo.name.replace(' ', '-').toLowerCase()} customer-logos-section__item`}
                         >
                             {logo.link ? (
                                 <a href={logo.link.url} target={logo.link.target} rel={logo.link.rel}>
@@ -353,18 +440,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
                         </div>
                     )
                 })}
-            </animated.div>
-            {(windowWidth > minDeviceWidth) &&
-                <div                         
-                    className="hoverAreaRight"
-                    onMouseEnter={handleMouseEnterRight}
-                    onMouseLeave={handleMouseLeaveRight}
-                    >
-                    <animated.div className={'icon-right-container-centered'} style={{ transform: chevronRightScale.interpolate(s => `scale(${s})` )}}> 
-                        <ChevronRightIcon className={'icon-right'}/>
-                    </animated.div>
-                </div>
-            }
+            </div>
             </div>
             {(windowWidth < minDeviceWidth) && showButton &&
                 <div className={"sourcegraph-cta-bottom-container"}>
@@ -376,3 +452,28 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         </div>
     );
 }
+
+
+// {windowWidth > minDeviceWidth &&
+//     <div
+//         className="hoverAreaLeft"
+//         onMouseEnter={handleMouseEnterLeft}
+//         onMouseLeave={handleMouseLeaveLeft}
+//         >
+//         <animated.div className={'icon-left-container-centered'} style={{ transform: chevronLeftScale.interpolate(s => `scale(${s})` )}}> 
+//             <ChevronLeftIcon className={'icon-left'}/>
+//         </animated.div>
+//     </div>
+// }
+
+// {(windowWidth > minDeviceWidth) &&
+//     <div                         
+//         className="hoverAreaRight"
+//         onMouseEnter={handleMouseEnterRight}
+//         onMouseLeave={handleMouseLeaveRight}
+//         >
+//         <animated.div className={'icon-right-container-centered'} style={{ transform: chevronRightScale.interpolate(s => `scale(${s})` )}}> 
+//             <ChevronRightIcon className={'icon-right'}/>
+//         </animated.div>
+//     </div>
+// }
