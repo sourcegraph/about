@@ -196,6 +196,12 @@
   .customer-container-outer {
     height: 320px;
   }
+
+  .customer-container-outer:hover .customer-logos-section__item-logo-animation {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
   
   // .customer-container-inner {
   //   flex-direction: row;
