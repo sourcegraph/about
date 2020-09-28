@@ -6,7 +6,7 @@
 
 We want to make developing at Sourcegraph a seamless experience and create tools, systems and workflows that empower Sourcegraph engineers to work more efficiently and build quality products.
 
-## Goals
+## High level goals
 
 ### Automate tasks that slow down development
 
