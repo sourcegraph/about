@@ -100,17 +100,19 @@ When we receive [a report of a security vulnerability](#how-to-report-a-security
 
 ## How we pay out bounties
 
-When a reported vulnerability is fixed, the security team will decide upon an appropriate bounty, and follow up with the reporter. A simple template response is
+When a reported vulnerability is fixed, the security team will decide upon an appropriate bounty, and follow up with the reporter. Here is a template you can use:
 
+> Thank you again for your report!
+>
 > We have fixed the vulnerability you reported in the following PR: $PRLINK
->This fix is included in the following versions of Sourcegraph: $SGVERSION
-
->A bounty of $BOUNTYVAL will be awarded. To pay the bounty, we require the following information:
->1. Email or full mobile phone number
->2. Full name (first and last)
->3. Country/region of residence
-
->You [may/may not] disclose details of this vulnerability publicly 
+> This fix is included in the following versions of Sourcegraph: $SGVERSION
+>
+> We are happy to award you a bounty of $BOUNTYVAL for reporting this. Please provide the following information so we can send your payment:
+> 1. Email or full mobile phone number that is associated with your [PayPal](https://www.paypal.com/) account.
+> 2. Full name (first and last)
+> 3. Country/region of residence
+>
+> You [may/may not] disclose details of this vulnerability publicly [until YYYY-MM-DD].
 
 Note that in accordance with our goals of transparency, we should always try to allow public disclosure whenever possible.
 
