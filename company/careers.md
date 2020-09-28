@@ -8,11 +8,10 @@ We're hiring! Check out our open positions:
 
 ### Engineering
 
-- [Engineering Manager - Web](../handbook/engineering/hiring/engineering-manager-web.md)
+- [Engineering Manager - Code Intelligence](../handbook/engineering/hiring/engineering-manager-code-intelligence.md)
 - [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
-- [Software Engineer - Code Intelligence](../handbook/engineering/hiring/software-engineer-code-intelligence.md)
 - [Software Engineer - Security](../handbook/engineering/hiring/software-engineer-security.md)
 - [Software Engineer - Full stack](../handbook/engineering/hiring/software-engineer-full-stack.md)
 
@@ -23,7 +22,6 @@ We're hiring! Check out our open positions:
 ### Sales
 
 - [Account Executive](../handbook/sales/roles/account_executive.md)
-- [Sales Strategy & Operations Analyst or Manager](../handbook/bizops/roles/gtm_sales_operations.md)
 
 ### Customer engineering
 
@@ -31,10 +29,9 @@ We're hiring! Check out our open positions:
 
 ### Operations, finance, and legal
 
-- [Internal Tools](../handbook/bizops/roles/internal_tools.md)
-- [Sales Strategy & Operations Analyst or Manager](../handbook/bizops/roles/gtm_sales_operations.md)
-- [Financial Planning & Analysis Analyst](../handbook/bizops/roles/financial_planning_analysis.md)
-- [Senior Commercial Counsel](../handbook/bizops/roles/senior_commercial_counsel.md)
+- [Internal Tools](../handbook/ops/roles/internal_tools.md)
+- [Financial Planning & Analysis Analyst](../handbook/ops/roles/financial_planning_analysis.md)
+- [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 
 Apply by following the directions in the job description.
 

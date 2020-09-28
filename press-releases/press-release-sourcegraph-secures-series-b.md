@@ -2,9 +2,10 @@
 title: 'Sourcegraph Secures $23 Million Series B Round for Universal Code Search'
 author: Sourcegraph
 publishDate: 2020-03-03T00:00
-tags: [press-release]
+tags: ['press']
 slug: sourcegraph-secures-series-b
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+description: 'David Sacks’ Craft Ventures leads round, plus rapid uptake among developers and marquee customers Uber, Lyft, Yelp, Convoy, SoFi confirm the market need for universal code search.'
 published: true
 ---
 

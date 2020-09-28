@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import { POST_TYPE_TO_COMPONENT, postType, BLOG_TYPE_TO_INFO, urlToPost, Post } from '../components/blog/postTypes'
 import { BlogHeader } from '../components/blog/BlogHeader'
 
-interface Props extends PageProps<{ markdownRemark: Post }> {}
+interface Props extends PageProps<{ markdownRemark: Post }> { }
 
 export const PostTemplate: React.FunctionComponent<Props> = ({ data, location }) => {
     const post = data.markdownRemark

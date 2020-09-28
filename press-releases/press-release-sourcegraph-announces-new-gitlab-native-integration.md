@@ -2,15 +2,16 @@
 title: 'Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum'
 author: Sourcegraph
 publishDate: 2019-11-12T10:00-07:00
-tags: [press-release]
+tags: ['press']
 slug: sourcegraph-announces-new-gitlab-native-integration
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+description: 'GitLab collaboration emphasizes importance of code vavigation and entelligence in the developer workflow, plus Universal Code Search solution makes elite development accessible for all; company momentum fueled by increasing demand for universal developer tools.'
 published: true
 ---
 
 **GitLab Collaboration Emphasizes Importance of Code Navigation and Intelligence in the Developer Workflow; Universal Code Search Solution Makes Elite Development Accessible for All; Company Momentum Fueled by Increasing Demand for Universal Developer Tools** 
 <p style="text-align: center">
-  <img src="/blog/gitlab-integration-banner-dark.png" alt="GitLab plus Sourcegraph logo" />
+  <img src="https://about.sourcegraph.com/blog/gitlab-integration-banner-dark.png" alt="GitLab plus Sourcegraph logo" />
 </p>
 
 **SAN FRANCISCO, Nov. 12, 2019 (GLOBE NEWSWIRE)** -- [Sourcegraph](https://about.sourcegraph.com/), the leader in universal code search, today announced a new collaboration with GitLab, along with the world’s first universal source code search engine. The company has experienced exponential growth fueled by its expanding community of over 10,000 paid developers and tens of thousands of free open source developers who actively use its platform.

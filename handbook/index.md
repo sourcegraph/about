@@ -16,7 +16,7 @@ The handbook is a living document and we expect every teammate to propose improv
   - [Careers](../company/careers.md)
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
-  - [Style guide](communication/style_guide.md)
+  - [Content guidelines](communication/content_guidelines.md)
 
 ## Teams at Sourcegraph
 
@@ -55,9 +55,10 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Sales](sales/index.md)
 
-### Business Operations
+### [Operations](ops/index.md)
 
-- [Business Operations](bizops/index.md)
-  - [Finance](bizops/index.md#finance-and-reporting)
-  - [Analytics](bizops/index.md#analytics)
-  - [Adding, changing and debugging pings](engineering/adding_ping_data.md)
+- [Business & product operations](ops/bizops/index.md)
+- [Sales strategy & operations](ops/sales-ops/index.md)
+- [Finance & accounting](ops/finance/index.md)
+- [Legal](ops/legal/index.md)
+- [Internal tools](ops/internal-tools/index.md)

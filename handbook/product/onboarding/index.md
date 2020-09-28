@@ -44,13 +44,14 @@ Remember:
 
 ### Get to know the team
 
-- Schedule 1-1s with each person on the [Product team](../index.md#members)
-- Schedule 1-1s with each person on the engineering team you'll be working most closely with (ask Christina if you're not sure who this is)
+- Schedule individual meetings with each person on the [Product team](../index.md#members)
+- Schedule individual meetings with each person on the engineering team you'll be working most closely with (ask Christina if you're not sure who this is)
 - Get up to speed on what your team is working on
    - Team handbook page(s), to learn about the team and its internal processes
    - Sourcegraph user docs
    - Team sync docs - review recent meeting notes for context
    - Current tracking issue(s)
+   - Join the Engineering Manager weekly updates [Google Group](https://groups.google.com/a/sourcegraph.com/g/engineering-leadership-status) ([handbook description](../../engineering/leadership.md#weekly-updates)).
 
 ### Set up the basics
 
@@ -69,12 +70,17 @@ Remember:
 
 ### Get to know our customers
 
-- Reach out to the Sales/CE teams and ask to be added to as many customer calls as you can in your first few weeks.
+- [Join as many customer calls as you can](../../sales/onboarding/joining_customer_calls.md) in your first few weeks.
 - Familiarize yourself with customer feedback channels
    - [HubSpot](https://app.hubspot.com/forms/2762526/a86bbac5-576d-4ca0-86c1-0c60837c3eab/submissions) surveys
    - [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)
    - Twitter
    - Slack #feedback channel
+   
+### Know our tools
+- Figma
+  - Watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn how we use the application
+  - Read [Figma developers guide](https://www.smashingmagazine.com/2020/09/figma-developers-guide/)
 
 ### Understand company and team goals
 

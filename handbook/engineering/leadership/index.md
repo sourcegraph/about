@@ -17,6 +17,8 @@ This page documents the engineering leadership team.
 
 Our long term vision is to build an organization that attracts and retains the best teammates from around the world, and that consistently delivers a high quality product to our customers.
 
+When a goal is "done", move it to our [work log](worklog.md)
+
 ### Short term (~1-2 months)
 
 #### Engineering team goals
@@ -32,13 +34,6 @@ Our long term vision is to build an organization that attracts and retains the b
 - Plan: Write a blog post that illustrates possible career paths.
 - Owner: Chris
 - Status: [In progress](https://docs.google.com/document/d/1ARfJ9Pg8Z9ZbAj9VsN8VLfaR2b4_akDn9k2NMy4NmLM/edit).
-
-#### Fullstack engineer role
-
-- Problem: Cloud and Code Intelligence teams have a mix of frontend and backend work, but current workload is skewed toward the latter. It doesn't make sense to hire a single frontend dev because they would end up working alone and there might not be enough work to sustain a full time frontend dev.
-- Plan: We are defining a new fullstack role and interview process to help us find engineers who can do the necessary frontend work, but also contribute to our backend systems. We think this role could be valuable for other teams, like Search and Campaigns, in the future. 
-- Owners: Tomás, Aida
-- Status: [In progress](https://github.com/sourcegraph/interviews/pull/136).
 
 #### Engineering manager onboarding
 
@@ -85,7 +80,9 @@ We have a 1hr sync with product and engineering every Tuesday at 9am PT ([meetin
 Engineering managers send an update to [engineering-leadership-status@sourcegraph.com](https://groups.google.com/a/sourcegraph.com/g/engineering-leadership-status) by 12pm (noon) PT every Monday (sending it earlier, like EOD Friday is ok too). Anyone at the company can join the group to subscribe to these updates. The purpose of the update is to keep interested parties (including the VP of Engineering, and peer managers) informed of what is going on in each part of our organization. The format of this update is at the discretion of the sender, but it should be prose that generally answers the following questions:
 
 - What important things happened last week?
+  - Include contact with customers (feedback collected, things shipped).
 - What are the plans for this week?
+  - Include contact with customers (feedback collected, things shipped).
 - What should my peer-team/manager be aware of?
 
 If you have sensitive information to communicate, please send a separate email directly to the relevant people.

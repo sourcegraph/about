@@ -1,6 +1,6 @@
 # Coding exercise
 
-We ask candidates to complete a 2-hour asynchronous coding exercise so we can evaluate you on certain skills that we think are relevant to being successful at Sourcegraph.
+We ask candidates to complete a time bound asynchronous coding exercise so we can evaluate you on certain skills that we think are relevant to being successful at Sourcegraph.
 
 Why? Read the [FAQ](#FAQ).
 
@@ -31,6 +31,18 @@ We designed this exercise to measure your understanding of HTTP requests, concur
 
 If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
 
+## Full stack coding exercise
+
+This exercise is designed to give you an opportunity to demonstrate your skills building a web application end-to-end.
+
+- You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time that works for you; there are no scheduling constraints.
+- At your chosen date and time, we will send you detailed instructions. We provide you with an easy to run Postgres database pre-loaded with data. Your goal is to build a few features on top of it.
+- You should have docker-compose installed on your computer.
+- You can look up documentation on the internet while you are coding.
+- After three hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
+
+If we decide to move forward, we will schedule a Technical Discussion interview to go over your solution and how you'd extend it with some additional requirements in mind.
+
 ## FAQ
 
 ### Why do you do a coding exercise?
@@ -45,11 +57,11 @@ An asynchronous coding exercise provides the most realistic environment for meas
 
 Candidates who have completed our coding exercise regularly tell us that they enjoyed it and/or learned something.
 
-### Why a 2-hour limit?
+### Why a time limit?
 
 We choose to enforce a finite limit so that we get a consistent signal across all candidates. It wouldn't be fair if candidates could spend as much time as they wanted, because some candidates have more time than others.
 
-2 hours is long enough that we can ask non-trivial questions that test for relevant skills while also being short enough that it shouldn't be an unreasonable burden for anyone.
+The allocated time for each exercise should be long enough that we can ask non-trivial questions that test for relevant skills while also being short enough that it shouldn't be an unreasonable burden for anyone.
 
 ### Do I still need to do the coding exercise if I have significant open-source contributions?
 

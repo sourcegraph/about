@@ -1,4 +1,4 @@
-# Software Engineer - Code intelligence
+# Software Engineer - Code Intelligence
 
 We are looking for software engineers who are passionate about language analysis and who want to work in many language ecosystems. You will design and implement ways to extract semantic information from code so that we can support fast precise code intelligence (e.g., go to definition, find references) for every language in a way that scales to the largest codebases in the world. Read the [code intelligence team handbook documentation](../code-intelligence/index.md) to learn more.
 
@@ -28,6 +28,8 @@ We provide [competitive compensation](../../people-ops/compensation.md) and [pra
 Learn more about what it is like to work at Sourcegraph by reading [our handbook](../../index.md)
 
 ## Interview process
+
+**We have temporarily paused processing applications for this role as we [hire for other roles on this team](../code-intelligence/index.md#growth-plan).**
 
 1. You [apply here](https://jobs.lever.co/sourcegraph/91ee5178-6daf-4a84-be02-048cd8aa2aa0/apply).
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
