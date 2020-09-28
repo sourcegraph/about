@@ -11,7 +11,7 @@ While [the operations team](index.md) is made of up multiple distinct teams, the
 Your objective is to get to know the team and learn as much about Sourcegraph (the company) as possible. It is your responsibility to be proactive in your onboarding, and it is the team's #1 priority to support you and help set you up for success. Everyone will drop what they're doing to help you. We are so excited to have you on the team and can't wait to get to know you better!
 
 - Complete [general onboarding](../people-ops/onboarding/index.md#general-onboarding-checklist)
-- Schedule individual meetings with each person on the [operations team](../../company/team/org_chart#operations)
+- Schedule individual meetings with each person on the [operations team](../../company/team/org_chart.md#operations)
 - If your team will be working closely with another part of the company (e.g. Sales Ops with Sales, Product Ops with Product, etc.), schedule individual meetings with each person on that team as well (ask Dan if you're not sure who this is)
 
 ### Understand company and team goals
@@ -21,7 +21,7 @@ Your objective is to get to know the team and learn as much about Sourcegraph (t
 - [Sourcegraph direction (1 year plan)](../../direction/index.md)
 - [Company goals](../../company/goals/index.md)
 - [Operations team handbook](index.md)
-- [Operations team goals](goals.md)
+- Operations team goals (TODO)
 
 ### Complete your team-specific week 1 onboarding
 
