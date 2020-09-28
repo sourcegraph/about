@@ -194,12 +194,12 @@
 
 @media screen and (max-width: 991px) {
   .customer-container-outer {
-    height: unset;
+    height: 320px;
   }
   
-  .customer-container-inner {
-    flex-direction: row;
-    height: unset;
-    overflow: show;
-  }
+  // .customer-container-inner {
+  //   flex-direction: row;
+  //   height: unset;
+  //   overflow: show;
+  // }
 }

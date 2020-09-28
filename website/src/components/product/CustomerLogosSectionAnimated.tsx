@@ -143,19 +143,6 @@ const ITEMS: {
         name: 'GetYourGuide',
         url: '/external-logos/gyg.svg',
     },
-    //
-    {
-        name: 'Thought Machine',
-        url: '/external-logos/thought-machine-logo.svg',
-    },
-    {
-        name: 'Button',
-        url: '/external-logos/use-button-logo.svg',
-    },
-    {
-        name: 'Button',
-        url: '/external-logos/use-button-logo.svg',
-    },
 ]
 
 interface Props {
@@ -221,19 +208,21 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         Promise.all(promises).then(() => {
             const logoElement = document.getElementById('logo-container-reference')!;
             const newLogoElement = logoElement.cloneNode(true);
+            const newLogoElement2 = logoElement.cloneNode(true);
             newLogoElement.id = 'new-logo-element';
+            newLogoElement2.id = 'new-logo-element2';
             logoElement?.parentNode?.insertBefore(newLogoElement, logoElement.nextSibling);
+            logoElement?.parentNode?.insertBefore(newLogoElement2, logoElement.nextSibling);
             setScrollAnimation(true);
         });
     },[]);
 
     useEffect(() => {
         if (scrollAnimation) {
-
-            console.log(scrollAnimation)
             
             let logoElement = document.getElementById('logo-container-reference')!;
             let newLogoElement = document.getElementById('new-logo-element')!;
+            let newLogoElement2 = document.getElementById('new-logo-element2')!;
             let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
 
             logoElement.addEventListener('transitionend', transitionEnd);
@@ -241,16 +230,20 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             function transitionStart() {
                 logoElement.style.transition = '15s linear';
                 newLogoElement.style.transition = '15s linear';
+                newLogoElement2.style.transition = '15s linear';
                 logoElement.style.transform = `translateX(${-totalWidth}px)`;
                 newLogoElement.style.transform = `translateX(${-totalWidth}px)`;
+                newLogoElement2.style.transform = `translateX(${-totalWidth}px)`;
             };
 
             function transitionEnd(e) {               
                 if (e.target.id !== 'logo-container-reference') return;
                 logoElement.style.transition = 'none';
                 newLogoElement.style.transition = 'none';
+                newLogoElement2.style.transition = 'none';
                 logoElement.style.transform = `translateX(0px)`;
                 newLogoElement.style.transform = `translateX(0px)`;
+                newLogoElement2.style.transform = `translateX(0px)`;
                 setTimeout(() => {
                     transitionStart()
                 },0);
@@ -343,12 +336,12 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
     //     setNumber(parseFloat(e.target.value))
     // }
 
-    let logoArray;
-    if (windowWidth < minDeviceWidth) {
-        logoArray = [...ITEMS].splice(0, 20);
-    } else {
-        logoArray = ITEMS;
-    };
+    let logoArray = ITEMS;
+    // if (windowWidth < minDeviceWidth) {
+    //     logoArray = [...ITEMS].splice(0, 20);
+    // } else {
+    //     logoArray = ITEMS;
+    // };
 
 
     // const elementsRef = useRef(data.map(() => createRef()));
