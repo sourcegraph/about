@@ -88,7 +88,7 @@ _Updated 2020-09-18_
    
 ### Create baseline for public (and eventually private) code on Sourcegraph Cloud
 
-- **Owner:** Quinn
+- **Owner:** Quinn K.
 - **Timeline:** ~2 months
 - **Status:** In progress
 - **Outcome:** Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud. Support accomplishing [Cloud milestones 1 and 2](https://about.sourcegraph.com/handbook/engineering/cloud#milestones).
