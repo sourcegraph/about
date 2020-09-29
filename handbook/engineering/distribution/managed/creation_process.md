@@ -20,7 +20,7 @@ Creating a new managed instance involves following the steps below.
    - Select **Compute Engine API** and choose **Enable**
 1. `export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/sourcegraph-managed-company-220df65550d4.json`
 1. Clone and `cd deploy-sourcegraph-managed/`
-1. `VERSION=v3.17.2 ./create-deployment.sh $COMPANY/` and **commit the result.**
+1. `VERSION=vMAJOR.MINOR.PATH ./create-deployment.sh $COMPANY/` and **commit the result**. Make sure that the version exists in [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker/tags).
 1. Open and edit `deploy-sourcegraph-managed/$COMPANY/gcp-tfstate/gcp-tfstate.tf` according to the comments within, commit the result.
 1. In `gcp-tfstate` run `terraform init && terraform apply && git add . && git commit -m 'initialize GCP tfstate bucket'`
 1. Open and edit `infrastructure.tf` according to the comments within and commit the result.
