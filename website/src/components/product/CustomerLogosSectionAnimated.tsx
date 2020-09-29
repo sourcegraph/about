@@ -1,8 +1,5 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
-import * as easings from 'd3-ease';
-import ChevronRightIcon from 'mdi-react/ChevronRightIcon';
-import ChevronLeftIcon from 'mdi-react/ChevronLeftIcon';
 
 const ITEMS: {
     name: string
@@ -11,8 +8,7 @@ const ITEMS: {
         url: string
         target?: string
         rel?: string
-    },
-    overrideCss?: string // If you want to choose the css for a specific logo instead of random
+    }
 }[] = [
     {
         name: 'Cloudflare',
@@ -29,9 +25,9 @@ const ITEMS: {
     {
         name: 'Lyft',
         url: '/external-logos/lyft-logo.svg',
-        link: {
-            url: '/case-studies/lyft-monolith-to-microservices',
-        },
+        // link: {
+        //     url: '/case-studies/lyft-monolith-to-microservices',
+        // },
     },
     {
         name: 'Amazon',
@@ -48,18 +44,18 @@ const ITEMS: {
     {
         name: 'SoFi',
         url: '/external-logos/sofi-logo.svg',
-        link: {
-            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
-        },
+        // link: {
+        //     url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
+        // },
     },
     {
         name: 'Yelp',
         url: '/external-logos/yelp.svg',
-        link: {
-            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
-            target: '_blank',
-            rel: 'nofollow',
-        },
+        // link: {
+        //     url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
+        //     target: '_blank',
+        //     rel: 'nofollow',
+        // },
     },
     {
         name: 'Adidas Running',
@@ -80,10 +76,9 @@ const ITEMS: {
     {
         name: 'Quantcast',
         url: '/external-logos/quantcast-logo.svg',
-        link: {
-            url: '/case-studies/quantcast-large-scale-refactoring',
-        },
-        overrideCss: 'ml-1 mr-4 mt-4 mb-2'
+        // link: {
+        //     url: '/case-studies/quantcast-large-scale-refactoring',
+        // }
     },
     {
         name: 'Criteo',
@@ -96,9 +91,9 @@ const ITEMS: {
     {
         name: 'Convoy',
         url: '/external-logos/convoy-logo.svg',
-        link: {
-            url: '/case-studies/convoy-improved-on-boarding',
-        },
+        // link: {
+        //     url: '/case-studies/convoy-improved-on-boarding',
+        // },
     },
     {
         name: 'Outreach',
@@ -131,9 +126,9 @@ const ITEMS: {
     {
         name: 'Thorn',
         url: '/external-logos/thorn-logo.svg',
-        link: {
-            url: '/case-studies/we-are-thorn',
-        },
+        // link: {
+        //     url: '/case-studies/we-are-thorn',
+        // },
     },
     {
         name: 'Thought Machine',
@@ -146,38 +141,29 @@ const ITEMS: {
 ]
 
 interface Props {
-    scrollTimeInSeconds: number,
     showButton: boolean,
     className: String
 }
 
-export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSeconds, showButton, className}) => {
+export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, className}) => {
 
-    // const [scrollTo, setScrollTo] = useState(0);
-    // const [toggle, setToggle] = useState(true);
     const [buttonClass, setButtonClass] = useState('');
     const [windowWidth, setWindowWidth] = useState(0);
-    // const [duration, setDuration] = useState(scrollTimeInSeconds * 1000);
     const [imagesWidth, setImagesWidth] = useState(0);
     const [scrollAnimation, setScrollAnimation] = useState(false);
+    const [newxPosition, _setNewXposition] = useState(0);
 
     const innerContainerRef = useRef<HTMLDivElement>(null);
-    const [number, setNumber] = useState(null);
-    const durationInMilliSeconds = number ? (number! * 1000) : scrollTimeInSeconds * 1000;
-    const minDeviceWidth = 991;
-    // const scrollProps = useSpring({
-    //     scroll: scrollTo,
-    //     from: { scroll: 0 },
-    //     config: {
-    //         duration: duration,
-    //         easing: easings.easeSinInOut
-    //     }
-    // });
-    // const [{moveX}, setMoveX] = useSpring(() => ({moveX: 0}));
+    const firstLogoContainerRef = useRef(null);
+    const secondLogoContainerRefClone = useRef(null);
+    const thirdLogoContainerRefClone = useRef(null);
+    const mysetNewXpositionRef = useRef(newxPosition);
     const [{x, y, scale}, set] = useSpring(() => ({x: 0, y: 0, scale: 0 }));
-    // const [{chevronRightScale}, setChevronRightScale] = useSpring(() => ({chevronRightScale: 1}));
-    // const [{chevronLeftScale}, setChevronLeftScale] = useSpring(() => ({chevronLeftScale: 0}));
-
+    const setNewXposition = data => {
+        mysetNewXpositionRef.current = data;
+        _setNewXposition(data);
+    };
+    const minDeviceWidth = 991;
     let extraSpace = 0;
     if (ITEMS.length % 3 !== 0) {
         extraSpace = 135;
@@ -193,10 +179,9 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
 
     useEffect(() => {
         let promises = ITEMS.map((image) => {
-            return new Promise((resolve, reject) => {
+            return new Promise((resolve, _) => {
                 const imageRef = new Image();
                 imageRef.onload = function() {
-                    // this.height and this.width
                     let calculatedWidth = (this.width / this.height) * 50;
                     if (calculatedWidth > 135) calculatedWidth = 135;
                     setImagesWidth(prevState => prevState += (calculatedWidth + 60)); //Total width of all images
@@ -207,101 +192,110 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
         });
         Promise.all(promises).then(() => {
             const logoElement = document.getElementById('logo-container-reference')!;
-            const newLogoElement = logoElement.cloneNode(true);
-            const newLogoElement2 = logoElement.cloneNode(true);
-            newLogoElement.id = 'new-logo-element';
-            newLogoElement2.id = 'new-logo-element2';
-            logoElement?.parentNode?.insertBefore(newLogoElement, logoElement.nextSibling);
-            logoElement?.parentNode?.insertBefore(newLogoElement2, logoElement.nextSibling);
+            const secondLogoContainerClone = logoElement.cloneNode(true);
+            const thirdLogoContainerClone = logoElement.cloneNode(true);
+            secondLogoContainerClone.id = 'new-logo-element';
+            thirdLogoContainerClone.id = 'new-logo-element2';
+            logoElement?.parentNode?.insertBefore(secondLogoContainerClone, logoElement.nextSibling);
+            logoElement?.parentNode?.insertBefore(thirdLogoContainerClone, logoElement.nextSibling);
+            secondLogoContainerRefClone.current = secondLogoContainerClone;
+            thirdLogoContainerRefClone.current = thirdLogoContainerClone;
             setScrollAnimation(true);
         });
     },[]);
 
     useEffect(() => {
         if (scrollAnimation) {
-            
             let logoElement = document.getElementById('logo-container-reference')!;
-            let newLogoElement = document.getElementById('new-logo-element')!;
-            let newLogoElement2 = document.getElementById('new-logo-element2')!;
-            let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
-
             logoElement.addEventListener('transitionend', transitionEnd);
-
-            function transitionStart() {
-                logoElement.style.transition = '15s linear';
-                newLogoElement.style.transition = '15s linear';
-                newLogoElement2.style.transition = '15s linear';
-                logoElement.style.transform = `translateX(${-totalWidth}px)`;
-                newLogoElement.style.transform = `translateX(${-totalWidth}px)`;
-                newLogoElement2.style.transform = `translateX(${-totalWidth}px)`;
-            };
-
-            function transitionEnd(e) {               
-                if (e.target.id !== 'logo-container-reference') return;
-                logoElement.style.transition = 'none';
-                newLogoElement.style.transition = 'none';
-                newLogoElement2.style.transition = 'none';
-                logoElement.style.transform = `translateX(0px)`;
-                newLogoElement.style.transform = `translateX(0px)`;
-                newLogoElement2.style.transform = `translateX(0px)`;
-                setTimeout(() => {
-                    transitionStart()
-                },0);
-            };
-
             setTimeout(() => {
                 transitionStart()
             }, 500);
         };
-    }, [scrollAnimation])
+    }, [scrollAnimation]);
+    
+    useEffect(() => {
+        if (firstLogoContainerRef.current && secondLogoContainerRefClone.current && thirdLogoContainerRefClone.current) {
+            if (windowWidth > minDeviceWidth) {
+                innerContainerRef.current!.addEventListener('mouseenter', handleMouseEnter);
+                innerContainerRef.current!.addEventListener('mousemove', handleMouseMove);
+                innerContainerRef.current!.addEventListener('mouseleave', handleMouseLeaveInnerArea);
+            };
+        };
+    }, [firstLogoContainerRef.current, secondLogoContainerRefClone.current, thirdLogoContainerRefClone.current])
 
     function adjustWindowWidth() {
         setWindowWidth(window.innerWidth);
     };
 
-    function changeChevronIcons() {
-        const scrollEnd = innerContainerRef.current?.scrollWidth! - innerContainerRef.current?.offsetWidth!;
-        if (innerContainerRef.current?.scrollLeft! < scrollEnd) {
-            setChevronRightScale({chevronRightScale: 1});
-        } else {
-            setChevronRightScale({chevronRightScale: 0});
-        };
-        if (innerContainerRef.current?.scrollLeft! > 0) {
-            setChevronLeftScale({chevronLeftScale: 1});
-        } else {
-            setChevronLeftScale({chevronLeftScale: 0});
-        };
-    }
-
-    function handleMouseEnterRight() {
-        //This is calculating how fast it should scroll based on the position the scroll is starting from
-        const scrollEnd = innerContainerRef.current?.scrollWidth! - innerContainerRef.current?.offsetWidth!;
-        const currentPostion = innerContainerRef.current?.scrollLeft!;
-        const scrollSpeed = durationInMilliSeconds / scrollEnd;
-        console.log(scrollEnd)
-        setDuration(durationInMilliSeconds - (currentPostion * scrollSpeed));
-        setScrollTo(scrollEnd);
+    function transitionStart() {
+        const logoContainerOne = firstLogoContainerRef.current!;
+        const logoContainerTwo = secondLogoContainerRefClone.current!;
+        const logoContainerThree = thirdLogoContainerRefClone.current!;
+        let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
+        logoContainerOne.style.transition = '15s linear';
+        logoContainerTwo.style.transition = '15s linear';
+        logoContainerThree.style.transition = '15s linear';
+        logoContainerOne.style.transform = `translateX(${-totalWidth + mysetNewXpositionRef.current}px)`;
+        logoContainerTwo.style.transform = `translateX(${-totalWidth + mysetNewXpositionRef.current}px)`;
+        logoContainerThree.style.transform = `translateX(${-totalWidth + mysetNewXpositionRef.current}px)`;
     };
 
-    function handleMouseLeaveRight() {
-        setScrollTo(innerContainerRef.current?.scrollLeft!);
-        changeChevronIcons();
+    function transitionEnd(e) { 
+        if (e.target.id !== 'logo-container-reference') return;
+        const logoContainerOne = firstLogoContainerRef.current!;
+        const logoContainerTwo = secondLogoContainerRefClone.current!;
+        const logoContainerThree = thirdLogoContainerRefClone.current!;
+        logoContainerOne.style.transition = 'none';
+        logoContainerTwo.style.transition = 'none';
+        logoContainerThree.style.transition = 'none';
+        logoContainerOne.style.transform = `translateX(${mysetNewXpositionRef.current}px)`;
+        logoContainerTwo.style.transform = `translateX(${mysetNewXpositionRef.current}px)`;
+        logoContainerThree.style.transform = `translateX(${mysetNewXpositionRef.current}px)`;
+        setTimeout(() => {
+            transitionStart()
+        },0);
     };
 
-    function handleMouseEnterLeft() {
-        const scrollEnd = innerContainerRef.current?.scrollWidth! - innerContainerRef.current?.offsetWidth!;
-        const currentPostion = innerContainerRef.current?.scrollLeft!;
-        const scrollSpeed = durationInMilliSeconds / scrollEnd;
-        setDuration((currentPostion * scrollSpeed));
-        setScrollTo(0);
+    function pauseAnimation() {
+        const logoContainerOne = firstLogoContainerRef.current!;
+        const logoContainerTwo = secondLogoContainerRefClone.current!;
+        const logoContainerThree = thirdLogoContainerRefClone.current!;
+        let transformOne = window.getComputedStyle(logoContainerOne).transform;
+        let transformTwo = window.getComputedStyle(logoContainerTwo).transform;
+        let transformThree = window.getComputedStyle(logoContainerThree).transform;
+
+        logoContainerOne.style.transform = transformOne;
+        logoContainerTwo.style.transform = transformTwo;
+        logoContainerThree.style.transform = transformThree;
+
+        logoContainerOne.style.transition = 'none';
+        logoContainerTwo.style.transition = 'none';
+        logoContainerThree.style.transition = 'none';
     };
 
-    function handleMouseLeaveLeft() {
-        setScrollTo(innerContainerRef.current?.scrollLeft!);
-        changeChevronIcons();
+    function continueAnimationFromCurrentPosition() {
+        const logoContainerOne = firstLogoContainerRef.current!;
+        const logoContainerTwo = secondLogoContainerRefClone.current!;
+        const logoContainerThree = thirdLogoContainerRefClone.current!;
+        let transformOne = window.getComputedStyle(logoContainerOne).transform;
+        let matrixValueXOne = transformOne.match(/matrix.*\((.+)\)/)[1].split(', ')[4];
+        let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
+        let xPosition = parseInt(matrixValueXOne);
+        let newPosition = -totalWidth + xPosition;
+
+        logoContainerOne.style.transition = '15s linear';
+        logoContainerTwo.style.transition = '15s linear';
+        logoContainerThree.style.transition = '15s linear';
+
+        logoContainerOne.style.transform = `translateX(${newPosition}px)`;
+        logoContainerTwo.style.transform = `translateX(${newPosition}px)`;
+        logoContainerThree.style.transform = `translateX(${newPosition}px)`;
+
+        setNewXposition(xPosition);
     };
 
-    function handleMouseMove(e) {
+    function buttonFollowsMouse(e) {
         const containerRec = innerContainerRef.current?.getBoundingClientRect();
         if (
             e.clientX - containerRec?.left! > 150 && 
@@ -320,69 +314,32 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             x: (e.clientX - containerRec?.left!) + innerContainerRef.current?.scrollLeft!, 
             y: e.clientY - containerRec?.top!
         });
-        // changeChevronIcons();
+    };
+
+    function handleMouseEnter() {
+        if (!showButton) pauseAnimation();
+    };
+
+    function handleMouseMove(e) {
+        if (showButton) buttonFollowsMouse(e);
     };
 
     function handleMouseLeaveInnerArea() {
-        set({scale: 0});
+        if (showButton) {
+            set({scale: 0});
+        } else {
+            continueAnimationFromCurrentPosition();
+        };
     };
-
-    // function changeToggle() {
-    //     setToggle(prevState => !prevState);
-    // }
-
-    // function changeNumber(e) {
-    //     // console.log(parseInt(e.target.value), e.target.value)
-    //     setNumber(parseFloat(e.target.value))
-    // }
-
-    let logoArray = ITEMS;
-    // if (windowWidth < minDeviceWidth) {
-    //     logoArray = [...ITEMS].splice(0, 20);
-    // } else {
-    //     logoArray = ITEMS;
-    // };
-
-
-    // const elementsRef = useRef(data.map(() => createRef()));
-
-    // useEffect(() => {
-    //     const nextHeights = elementsRef.current.map(
-    //       ref => ref.current.getBoundingClientRect().height
-    //     );
-    //     setHeights(nextHeights);
-    //   }, []);
-
-    // console.log(imagesWidth)
-    // console.log('Divided', imagesWidth / 3)
-    // console.log(imagesHeight)
-
 
     return (
         <div id="customers" className={`container customer-logos-section ${className}`}>
             <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
                 Our customers use Sourcegraph every day to build software you rely on.
             </h3>
-            {/* {(windowWidth > minDeviceWidth) &&
-                <div className={'testcontainer'}>
-                    <div>Toggle layout: {toggle ? 'random layout' : 'normal layout'}</div>
-                    <input
-                        type="checkbox"
-                        onChange={changeToggle}
-                        checked={toggle}
-                    />
-                    <div>Scroll Speed in Seconds</div>
-                    <input
-                        type="number"
-                        onChange={changeNumber}
-                    />
-                </div>
-            } */}
             <div
                 className="customer-container-outer"
-                ref={innerContainerRef} 
-                onMouseMove={windowWidth > minDeviceWidth ? handleMouseMove : undefined}
-                onMouseLeave={windowWidth > minDeviceWidth ? handleMouseLeaveInnerArea : undefined}
+                ref={innerContainerRef}
             >
             {(windowWidth > minDeviceWidth) && showButton &&
                 <a href="/customers">
@@ -393,23 +350,10 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             }
             <div
                 id="logo-container-reference"
+                ref={firstLogoContainerRef}
                 style={{width: (imagesWidth / 3) + 30 + extraSpace}}
                 className="text-center mt-4 d-flex flex-wrap justify-content-between align-items-center line-height-normal customer-container-inner">
-                {logoArray.map((logo, i) => {
-                    // let margin = '';
-                    // let index = i + 1;
-                    // if (index % 5 === 0) {
-                    //     margin = 'ml-2 mr-3 mt-3 mb-4';
-                    // } else if (index % 4 === 0) {
-                    //     margin = 'ml-3 mr-1 mt-5 mb-3';
-                    // } else if (index % 3 === 0) {
-                    //     margin = 'ml-4 mr-2 mt-2 mb-1';
-                    // } else if (index % 2 === 0) {
-                    //     margin = 'ml-3 mr-1 mt-4 mb-2';
-                    // } else {
-                    //     margin = 'ml-1 mr-5 mt-1 mb-4';
-                    // };
-                    // orginal marging mx-4 my-2
+                {ITEMS.map((logo, i) => {
                     return (
                         <div
                             key={i}
@@ -444,29 +388,4 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({scrollTimeInSecon
             }
         </div>
     );
-}
-
-
-// {windowWidth > minDeviceWidth &&
-//     <div
-//         className="hoverAreaLeft"
-//         onMouseEnter={handleMouseEnterLeft}
-//         onMouseLeave={handleMouseLeaveLeft}
-//         >
-//         <animated.div className={'icon-left-container-centered'} style={{ transform: chevronLeftScale.interpolate(s => `scale(${s})` )}}> 
-//             <ChevronLeftIcon className={'icon-left'}/>
-//         </animated.div>
-//     </div>
-// }
-
-// {(windowWidth > minDeviceWidth) &&
-//     <div                         
-//         className="hoverAreaRight"
-//         onMouseEnter={handleMouseEnterRight}
-//         onMouseLeave={handleMouseLeaveRight}
-//         >
-//         <animated.div className={'icon-right-container-centered'} style={{ transform: chevronRightScale.interpolate(s => `scale(${s})` )}}> 
-//             <ChevronRightIcon className={'icon-right'}/>
-//         </animated.div>
-//     </div>
-// }
+};

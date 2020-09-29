@@ -36,17 +36,6 @@
     transition: 300ms ease all;
 }
 
-.testcontainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.testcontainer > input {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 .customer-container-outer {
   height: 280px;
   position: relative;
@@ -56,19 +45,8 @@
 
 .customer-container-inner {
   height: 280px;
-  // overflow-x: scroll;
-  // overflow-y: hidden;
   position: relative;
   flex-shrink: 0;
-}
-
-.customer-container-inner::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
-}
-
-.customer-container-inner {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
 }
 
 .sourcegraph-cta-button {
@@ -127,64 +105,6 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
-}
-
-.icon-right-container {
-  position: absolute;
-  right: -35px;
-}
-
-.icon-right-container-centered {
-  color: #5c99f1;
-}
-
-.icon-right {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.icon-left-container {
-  position: absolute;
-  left: -35px;
-}
-
-.icon-left-container-centered {
-  color: #5c99f1;
-
-}
-
-.icon-left {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.hoverAreaLeft {
-  z-index: 999;
-  width: 100px;
-  height: 100%;
-  position: absolute;
-  left: -100px;
-  top: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.hoverAreaRight {
-  z-index: 999;
-  width: 100px;
-  height: 100%;
-  position: absolute;
-  right: -100px;
-  top: 0;
-  display: flex;
-  align-items: center;
-}
-
-.hoverAreaRight:hover, .link-hover:hover {
-  opacity: .5;
 }
 
 .customer-container-outer:hover .customer-logos-section__item-logo-animation {

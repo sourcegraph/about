@@ -57,7 +57,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     />
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated scrollTimeInSeconds={1} showButton={true} className="pt-5"/>
+            <CustomerLogosSectionAnimated showButton={true} className="pt-5"/>
             <div className="container">
                 <hr className="my-md-6" />
             </div>
