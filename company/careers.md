@@ -18,6 +18,7 @@ We're hiring! Check out our open positions:
 ### Product
 
 - [Product Manager](../handbook/product/roles/product_manager.md)
+- [Product Designer](../handbook/product/roles/product_designer.md)
 
 ### Sales
 
