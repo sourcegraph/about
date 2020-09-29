@@ -2,8 +2,7 @@
 
 Creating a new managed instance involves following the steps below.
 
-1. Ask @stephen or @beyang to create a new GCP project `sourcegraph-managed-$COMPANY` and grant you IAM **Editor** role access.
-1. Ask @beyang to enable billing in the GCP project.
+1. Create a new GCP project `sourcegraph-managed-$COMPANY` under the "Managed instances" folder in the Sourcegraph GCP organization and grant yourself IAM **Editor** role access.
 1. Create GCP service account credentials:
     - From console.cloud.google.com select the project > **APIs & Services** > **Credentials** > **Create credentials** > **Service account**
     - Service account name: `deploy`
