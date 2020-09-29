@@ -91,7 +91,7 @@ _Updated 2020-09-18_
 - **Owner:** Quinn
 - **Timeline:** ~2 months
 - **Status:** In progress
-- **Outcome:** Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.[*N<sub>9</sub>*][N9]
+- **Outcome:** Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud. Support accomplishing [Cloud milestones 1 and 2](https://about.sourcegraph.com/handbook/engineering/cloud#milestones).
 - **Metrics:**
    - To be determined
 
