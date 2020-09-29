@@ -32,7 +32,7 @@ Arguments:
 
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE (4 work days before release): Branch cut
 
-- [ ] Run the ["Release(changelog)" workflow](TODO) to generate a pull request updating the changelog and merge it.
+- [ ] Run the ["Release(changelog)" workflow](https://github.com/sourcegraph/sourcegraph/actions?query=workflow%3ARelease%28changelog%29+) to generate a pull request updating the changelog and merge it.
 - [ ] Create the `$MAJOR.$MINOR` branch off the CHANGELOG commit in the previous step: `git branch $MAJOR.$MINOR && git push origin $MAJOR.$MINOR`.
 - [ ] Tag and announce the first release candidate:
   ```
