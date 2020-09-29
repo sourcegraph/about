@@ -53,7 +53,7 @@ _Updated 2020-09-18_
 
 - **Owner:** Product managers
 - **Timeline:** FY20-Q3
-- **Status:** Not started.
+- **Status:** In progress.
 - **Outcome:** We are even more closely tapped into the customer experience, feedback, and voices. We are categorizing and surfacing insights weekly. We have increased the quality, frequency, and quantity of feedback from customers. This applies to both asynchronous and synchronous forms of feedback.
 
 ## Short term
@@ -85,6 +85,15 @@ _Updated 2020-09-18_
 - **Metrics:**
    - Increase visits
    - Increase creation of and usage of extensions
+   
+### Create baseline for public (and eventually private) code on Sourcegraph Cloud
+
+- **Owner:** Quinn
+- **Timeline:** ~2 months
+- **Status:** In progress
+- **Outcome:** Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.[*N<sub>9</sub>*][N9]
+- **Metrics:**
+   - To be determined
 
 [N1]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.pbee6s39npxe
 [N2]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.u8usndilekr3
@@ -94,3 +103,4 @@ _Updated 2020-09-18_
 [N6]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.g6oo5rramvpb
 [N7]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.87kmhwjskbfr
 [N8]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.cbcufz4r1f61
+[N9]: https://about.sourcegraph.com/handbook/engineering/cloud#milestones
