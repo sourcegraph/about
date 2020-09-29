@@ -103,4 +103,3 @@ _Updated 2020-09-18_
 [N6]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.g6oo5rramvpb
 [N7]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.87kmhwjskbfr
 [N8]: https://docs.google.com/document/d/1l6waCjzVlisYJ1PziNjO9QWF0ExmBMxWg5jWMpt4YW0/edit#bookmark=id.cbcufz4r1f61
-[N9]: https://about.sourcegraph.com/handbook/engineering/cloud#milestones
