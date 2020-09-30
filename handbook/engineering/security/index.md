@@ -20,7 +20,7 @@ Our current work is documented in our [tracking issue](https://github.com/source
    - What is this? Is this just taking all our existing logs and shipping them to one place? Are there new kinds of logs we will want to add to our application? If so, what/where? We are already using LogDNA, is that a solution to this?
 1. Centralize workload and cloud (i.e. GCE) logs.
    - Needs to be explained more.
-1. Normalize log format across services so it is easier to correlate and search, and this is a precursor to creating automated alerts from the logs.
+1. Normalize log format across services so that it is easier to correlate and search; this is a precursor to creating automated alerts from the logs.
 1. Add support for audit and access logging (e.g., visibility into both intentional and unintentional logins). This is both useful from a security visibility point of view, as a requirement for various auditing frameworks (though not currently a target).
 1. Create alerts and dashboards to automate the process of investigating events of interest (e.g., detect and alert on a spike of failed login attempts to a single account, or across Sourcegraph Cloud as a whole).
 
