@@ -12,7 +12,7 @@ Our current work is documented in our [tracking issue](https://github.com/source
 
 **Milestones:**
 
-1. All Docker images are continuously scanned for known security vulnerabilities and the security team is alerted any time one is found.
+1. All Docker images are continuously scanned for known security vulnerabilities and the security team is alerted as vulnerabilities are found.
 1. All compute nodes are continuously scanned for known security vulnerabilities and the security team is alerted any time one is found.
    - GCP doesn't handle this?
 1. Vulnerabilities with a high severity, or a CVSS score of at least 4.0 are resolved.
