@@ -33,7 +33,7 @@ Our current work is documented in our [tracking issue](https://github.com/source
    - I suspect we don't need to block on everything in that goal. Maybe we just need milestones 1-3? Let's discuss.
 1. We connect our [test security repository](https://github.com/sourcegraph/security-test/blob/main/README.md) to Sourcegraph Cloud and only [members who can access that repository on GitHub](https://github.com/sourcegraph/security-test/settings/access) can access that repository on Sourcegraph Cloud (i.e., [Sourcegraph organization owners](https://github.com/orgs/sourcegraph/people?query=role%3Aowner) and [@sourcegraph/security](https://github.com/orgs/sourcegraph/teams/security) members).
 1. We advertise a bounty for each unique vulnerability that allows an unauthorized person to gain access to our [test security repository](https://github.com/sourcegraph/security-test/blob/main/README.md) on Sourcegraph Cloud.
-1. We run a time-bound capture the flag event where there is a single large bounty (e.g., \$10,000) for the first person who reports a vulnerability that allows them to gain access to our [test security repository](https://github.com/sourcegraph/security-test/blob/main/README.md) on Sourcegraph Cloud.
+1. We run a time-bound capture the flag event where there are larger bounties for being able to gain access to our [test security repository](https://github.com/sourcegraph/security-test/blob/main/README.md) on Sourcegraph Cloud.
 1. We host our private [infrastructure repository](http://github.com/sourcegraph/infrastructure) on Sourcegraph Cloud.
 1. We allow paying customers to host their private code on Sourcegraph Cloud.
 
