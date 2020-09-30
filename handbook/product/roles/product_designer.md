@@ -59,7 +59,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - [30 min] [HM intro call](./interviews/hm_intro_call.md) with [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
 1. [1 hr] **[Portfolio review](./interviews/pd_portfolio_review.md)**: you to present your past work.
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-   - one of Product Designers [Rob Rhyne](../../../company/team/index.md#rob-rhyne), [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) or [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
+   - one of our Product Designers: [Rob Rhyne](../../../company/team/index.md#rob-rhyne), [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) or [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
 1. [2 hrs] **[Design exercise](./interviews/pd_design_exercise.md)**: We give you a problem statement and you walk us through your design process in a 2 hour block.
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
    - two Product Designers [Rob Rhyne](../../../company/team/index.md#rob-rhyne), [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) or [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
