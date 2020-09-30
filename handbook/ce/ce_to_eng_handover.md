@@ -31,5 +31,5 @@ Otherwise, if an engineer sees a new question or issue come in and they are inte
 
 ## Engineering responsibilities
 
-1. If an Engineer agrees to take on an issue or a ticket, they must be willing to follow-through on the problem until it is addressed. If they are not willing or able to do so, they must notify the CE as soon as possible so someone else can be assigned.
+1. If an Engineer agrees to take on an issue or a ticket, they must be willing to follow-through on the problem until it is addressed. If they are not willing or able to do so, they must find a replacement or notify the CE as soon as possible so someone else can be assigned.
 1. If an Engineer is unsure of how to respond, they should reach out to CE in the #ce channel for feedback and support.
