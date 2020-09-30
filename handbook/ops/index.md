@@ -23,4 +23,4 @@ See the [operations roles](roles/index.md) page.
 
 ## Goals
 
-TODO
+See the [operations team goals](goals.md) page.
