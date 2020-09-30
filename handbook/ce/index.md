@@ -4,7 +4,9 @@ The Customer Engineering team is responsible for ensuring that all of Sourcegrap
 
 - [Onboarding](onboarding.md)
 - [Team members](#members)
-- [Sales-to-CE new customer handover process](../sales/sales_to_ce_handover.md)
+- Collaboration
+  - [Sales-to-CE new customer handover process](../sales/sales_to_ce_handover.md)
+  - [CE-to-Engineering issue handover process](ce_to_eng_handover.md)
 - [Creating and maintaining license keys for customers](license_keys.md)
 - [Training session and demo flows](training.md)
   - [Sourcegraph 101](training.md#sourcegraph-101-standard-demo-flow)
@@ -20,9 +22,10 @@ TODO
 
 ## Members
 
-- [Dan Adler](../../company/team/index.md#dan-adler-he-him) (CE team manager)
-- [Christine Lovett](../../company/team/index.md#christine-lovett-she-her)
-- [Tion Thomas](../../company/team/index.md#tion-thomas-he-him)
+- [Julia Gilinets](../../company/team/index.md#julia-gilinets-sheher) (VP of CE)
+- [Dan Adler](../../company/team/index.md#dan-adler-hehim) (interim CE member, former CE manager)
+- [Christine Lovett](../../company/team/index.md#christine-lovett-sheher)
+- [Tion Thomas](../../company/team/index.md#tion-thomas-hehim)
 
 ## Roles
 

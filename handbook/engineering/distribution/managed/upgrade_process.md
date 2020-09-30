@@ -1,5 +1,6 @@
 # Upgrading a managed instance
 
+- [Walkthrough video](#walkthrough-video)
 - [1) Add a banner indicating scheduled maintenance is in progress](#1-add-a-banner-indicating-scheduled-maintenance-is-in-progress)
 - [2) Mark the database as ready-only](#2-mark-the-database-as-ready-only)
 - [3) Create a snapshot of the current deployment](#3-create-a-snapshot-of-the-current-deployment)
@@ -11,6 +12,17 @@
 - [9) Switch the load balancer target](#9-switch-the-load-balancer-target)
 - [10) Remove the banner indicating scheduled maintenance is in progress](#10-remove-the-banner-indicating-scheduled-maintenance-is-in-progress)
 - [11) Take down the old deployment](#11-take-down-the-old-deployment)
+
+## Walkthrough video
+
+This ~1h two-part screencast by @slimsag walks through this whole upgrade process end-to-end, talks about some of the intricacies, future improvements to this process, and more. It is rough / on-the-spot so please disregard the brief and occassional 🐱 meows and crashing noises in the background.
+
+- Part 1: https://drive.google.com/file/d/12ya1CrBZyjbjTIW-nd-TbjC9W95mVFUU/view?usp=sharing
+- Part 2: https://drive.google.com/file/d/1G-w0JvUEwlU6MfOBjV9KnahUm2mLhzEg/view?usp=sharing
+
+These videos reference some customer names, and as such can only be shared with the Sourcegraph team at this time.
+
+**Note:** You do not need to watch the above videos to perform this process, these are for educational purposes only. The steps below may be more up-to-date and accurate than the videos above.
 
 ## 1) Add a banner indicating scheduled maintenance is in progress
 

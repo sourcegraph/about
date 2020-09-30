@@ -59,7 +59,8 @@ The short-term goal and primary focus of the team is to *deliver campaigns to al
    - Hypothesis: majority will create at least one new campaign with the new workflow
    - Hypothesis: majority will send us feedback about Campaigns
 
-[WIP longer term goals (internal only)](https://docs.google.com/document/d/1ADmpfJuVhprHl8Eimuj4fMiVr1kCRVLZpt98HLr9618/edit)
+- [Looker dashboard with usage metrics (internal only)](https://sourcegraph.looker.com/dashboards/136)
+- [WIP longer term goals (internal only)](https://docs.google.com/document/d/1ADmpfJuVhprHl8Eimuj4fMiVr1kCRVLZpt98HLr9618/edit)
 
 ## Analogies
 
@@ -92,6 +93,10 @@ For each iteration (currently one month long), we follow this process:
 Our team has two Slack channels, one public (#campaigns-chat) and one private (#campaigns-team). _Our default is to use the public channel._
 
 The private channel is for communications that would be of no interest to someone not on the team. Things like (re-)scheduling of team meetings, vacation scheduling, reminders about tasks that need completing, etc. Keeping these out of the public channel raises the signal-to-noise ratio for folks interested in Campaigns, but not interested in who will be 10 minutes late to our sync meeting today due to the fact that their cat knocked over a jar of pickles and now there's glass everywhere and everything smells like vinegar and now you wish you hadn't read this sentence to the end.
+
+## Stewardship of src-cli
+
+The Campaigns team is the current owner of [src-cli](https://github.com/sourcegraph/src-cli), due to the fact that most of the src-cli work in recent months has been related to Campaigns. We do not expect to be the permanent owners of src-cli; when another team becomes the main contributor, we will transfer ownership to them.
 
 ## Members
 
