@@ -11,12 +11,12 @@ const ITEMS: {
     }
 }[] = [
     {
-        name: 'Cloudflare',
-        url: '/external-logos/cloudflare-color-logo.svg',
+        name: 'Collective Health',
+        url: '/external-logos/collective-health-logo.svg',
     },
     {
-        name: 'Nutanix',
-        url: '/external-logos/nutanix-logo.svg',
+        name: 'F5',
+        url: '/external-logos/f5-logo.svg',
     },
     {
         name: 'Uber',
@@ -58,20 +58,20 @@ const ITEMS: {
         // },
     },
     {
-        name: 'Adidas Running',
-        url: '/external-logos/adidas-runtastic-sq-logo.svg',
-    },
-    {
-        name: 'Indeed',
-        url: '/external-logos/indeed-logo.svg',
-    },
-    {
         name: 'Prezi',
         url: '/external-logos/prezi-logo.svg',
     },
     {
-        name: 'F5',
-        url: '/external-logos/f5-logo.svg',
+        name: 'Thought Machine',
+        url: '/external-logos/thought-machine-logo.svg',
+    },
+    {
+        name: 'Adidas Running',
+        url: '/external-logos/adidas-runtastic-sq-logo.svg',
+    },
+    {
+        name: 'Nutanix',
+        url: '/external-logos/nutanix-logo.svg',
     },
     {
         name: 'Quantcast',
@@ -100,16 +100,16 @@ const ITEMS: {
         url: '/external-logos/outreach-logo.svg',
     },
     {
-        name: 'Plaid',
-        url: '/external-logos/plaid-logo.svg',
+        name: 'GetYourGuide',
+        url: '/external-logos/gyg.svg',
     },
     {
         name: 'Expanse',
         url: '/external-logos/expanse-logo.svg',
     },
     {
-        name: 'Collective Health',
-        url: '/external-logos/collective-health-logo.svg',
+        name: 'Cloudflare',
+        url: '/external-logos/cloudflare-color-logo.svg',
     },
     {
         name: 'Button',
@@ -131,12 +131,12 @@ const ITEMS: {
         // },
     },
     {
-        name: 'Thought Machine',
-        url: '/external-logos/thought-machine-logo.svg',
+        name: 'Plaid',
+        url: '/external-logos/plaid-logo.svg',
     },
     {
-        name: 'GetYourGuide',
-        url: '/external-logos/gyg.svg',
+        name: 'Indeed',
+        url: '/external-logos/indeed-logo.svg',
     },
 ]
 
@@ -151,18 +151,12 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
     const [windowWidth, setWindowWidth] = useState(0);
     const [imagesWidth, setImagesWidth] = useState(0);
     const [scrollAnimation, setScrollAnimation] = useState(false);
-    const [newxPosition, _setNewXposition] = useState(0);
 
     const innerContainerRef = useRef<HTMLDivElement>(null);
     const firstLogoContainerRef = useRef(null);
     const secondLogoContainerRefClone = useRef(null);
     const thirdLogoContainerRefClone = useRef(null);
-    const mysetNewXpositionRef = useRef(newxPosition);
     const [{x, y, scale}, set] = useSpring(() => ({x: 0, y: 0, scale: 0 }));
-    const setNewXposition = data => {
-        mysetNewXpositionRef.current = data;
-        _setNewXposition(data);
-    };
     const minDeviceWidth = 991;
     let extraSpace = 0;
     if (ITEMS.length % 3 !== 0) {
@@ -182,9 +176,13 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
             return new Promise((resolve, _) => {
                 const imageRef = new Image();
                 imageRef.onload = function() {
-                    let calculatedWidth = (this.width / this.height) * 50;
-                    if (calculatedWidth > 135) calculatedWidth = 135;
-                    setImagesWidth(prevState => prevState += (calculatedWidth + 60)); //Total width of all images
+                    if (this.height && this.width) {
+                        let calculatedWidth = (this.width / this.height) * 50;
+                        if (calculatedWidth > 135) calculatedWidth = 135;
+                        setImagesWidth(prevState => prevState += (calculatedWidth + 70)); //Total width of all images
+                    } else {
+                        setImagesWidth(prevState => prevState += (135 + 70))
+                    };
                     resolve();
                 };
                 imageRef.src = image.url;
@@ -213,16 +211,6 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
             }, 500);
         };
     }, [scrollAnimation]);
-    
-    useEffect(() => {
-        if (firstLogoContainerRef.current && secondLogoContainerRefClone.current && thirdLogoContainerRefClone.current) {
-            if (windowWidth > minDeviceWidth) {
-                innerContainerRef.current!.addEventListener('mouseenter', handleMouseEnter);
-                innerContainerRef.current!.addEventListener('mousemove', handleMouseMove);
-                innerContainerRef.current!.addEventListener('mouseleave', handleMouseLeaveInnerArea);
-            };
-        };
-    }, [firstLogoContainerRef.current, secondLogoContainerRefClone.current, thirdLogoContainerRefClone.current])
 
     function adjustWindowWidth() {
         setWindowWidth(window.innerWidth);
@@ -236,9 +224,9 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         logoContainerOne.style.transition = '15s linear';
         logoContainerTwo.style.transition = '15s linear';
         logoContainerThree.style.transition = '15s linear';
-        logoContainerOne.style.transform = `translateX(${-totalWidth + mysetNewXpositionRef.current}px)`;
-        logoContainerTwo.style.transform = `translateX(${-totalWidth + mysetNewXpositionRef.current}px)`;
-        logoContainerThree.style.transform = `translateX(${-totalWidth + mysetNewXpositionRef.current}px)`;
+        logoContainerOne.style.transform = `translateX(${-totalWidth}px)`; //+ mysetNewXpositionRef.current
+        logoContainerTwo.style.transform = `translateX(${-totalWidth}px)`; //+ mysetNewXpositionRef.current
+        logoContainerThree.style.transform = `translateX(${-totalWidth}px)`; //+ mysetNewXpositionRef.current
     };
 
     function transitionEnd(e) { 
@@ -249,50 +237,12 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         logoContainerOne.style.transition = 'none';
         logoContainerTwo.style.transition = 'none';
         logoContainerThree.style.transition = 'none';
-        logoContainerOne.style.transform = `translateX(${mysetNewXpositionRef.current}px)`;
-        logoContainerTwo.style.transform = `translateX(${mysetNewXpositionRef.current}px)`;
-        logoContainerThree.style.transform = `translateX(${mysetNewXpositionRef.current}px)`;
+        logoContainerOne.style.transform = `translateX(0px)`;
+        logoContainerTwo.style.transform = `translateX(0px)`;
+        logoContainerThree.style.transform = `translateX(0px)`;
         setTimeout(() => {
             transitionStart()
         },0);
-    };
-
-    function pauseAnimation() {
-        const logoContainerOne = firstLogoContainerRef.current!;
-        const logoContainerTwo = secondLogoContainerRefClone.current!;
-        const logoContainerThree = thirdLogoContainerRefClone.current!;
-        let transformOne = window.getComputedStyle(logoContainerOne).transform;
-        let transformTwo = window.getComputedStyle(logoContainerTwo).transform;
-        let transformThree = window.getComputedStyle(logoContainerThree).transform;
-
-        logoContainerOne.style.transform = transformOne;
-        logoContainerTwo.style.transform = transformTwo;
-        logoContainerThree.style.transform = transformThree;
-
-        logoContainerOne.style.transition = 'none';
-        logoContainerTwo.style.transition = 'none';
-        logoContainerThree.style.transition = 'none';
-    };
-
-    function continueAnimationFromCurrentPosition() {
-        const logoContainerOne = firstLogoContainerRef.current!;
-        const logoContainerTwo = secondLogoContainerRefClone.current!;
-        const logoContainerThree = thirdLogoContainerRefClone.current!;
-        let transformOne = window.getComputedStyle(logoContainerOne).transform;
-        let matrixValueXOne = transformOne.match(/matrix.*\((.+)\)/)[1].split(', ')[4];
-        let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
-        let xPosition = parseInt(matrixValueXOne);
-        let newPosition = -totalWidth + xPosition;
-
-        logoContainerOne.style.transition = '15s linear';
-        logoContainerTwo.style.transition = '15s linear';
-        logoContainerThree.style.transition = '15s linear';
-
-        logoContainerOne.style.transform = `translateX(${newPosition}px)`;
-        logoContainerTwo.style.transform = `translateX(${newPosition}px)`;
-        logoContainerThree.style.transform = `translateX(${newPosition}px)`;
-
-        setNewXposition(xPosition);
     };
 
     function buttonFollowsMouse(e) {
@@ -316,20 +266,12 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         });
     };
 
-    function handleMouseEnter() {
-        if (!showButton) pauseAnimation();
-    };
-
     function handleMouseMove(e) {
         if (showButton) buttonFollowsMouse(e);
     };
 
     function handleMouseLeaveInnerArea() {
-        if (showButton) {
-            set({scale: 0});
-        } else {
-            continueAnimationFromCurrentPosition();
-        };
+        if (showButton) set({scale: 0});
     };
 
     return (
@@ -338,8 +280,10 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
                 Our customers use Sourcegraph every day to build software you rely on.
             </h3>
             <div
-                className="customer-container-outer"
                 ref={innerContainerRef}
+                className="customer-container-outer"
+                onMouseMove={windowWidth > minDeviceWidth ? handleMouseMove : null}
+                onMouseLeave={windowWidth > minDeviceWidth ? handleMouseLeaveInnerArea : null}
             >
             {(windowWidth > minDeviceWidth) && showButton &&
                 <a href="/customers">
