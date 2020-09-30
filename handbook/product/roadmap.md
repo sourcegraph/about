@@ -32,7 +32,7 @@ section Search
 
 ## Campaigns
 
-1. Gradually publish changesets (RFC 228 changesetTemplate.published boolean)
+1. Gradually publish changesets ([RFC 228](https://docs.google.com/document/d/1A-5cbYGz1p1UB1eAFsIgpK5XDkvS7ZNAVKMdtBm_WY0/edit?ts=5f48b4b2#heading=h.trqab8y0kufp) changesetTemplate.published boolean)
 1. Improved src-cli UX: better errors, debugging support, src-cli command to create skeleton spec
 1. User credentials (RFC 242), which will allow non-site-admins to create campaigns
 1. Allow multiple users to edit the same campaign
