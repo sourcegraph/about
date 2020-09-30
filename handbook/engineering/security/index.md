@@ -14,7 +14,6 @@ Our current work is documented in our [tracking issue](https://github.com/source
 
 1. All Docker images are continuously scanned for known security vulnerabilities and the security team is alerted as vulnerabilities are found.
 1. All compute nodes are continuously scanned for known security vulnerabilities and the security team is alerted as vulnerabilities are found.
-   - GCP doesn't handle this?
 1. Vulnerabilities with a high severity, or a CVSS score of at least 4.0 are resolved.
 1. Implement centralized security logging.
    - What is this? Is this just taking all our existing logs and shipping them to one place? Are there new kinds of logs we will want to add to our application? If so, what/where? We are already using LogDNA, is that a solution to this?
