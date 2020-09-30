@@ -190,6 +190,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         });
         Promise.all(promises).then(() => {
             const logoElement = document.getElementById('logo-container-reference')!;
+            logoElement.classList.remove('hidden');
             const secondLogoContainerClone = logoElement.cloneNode(true);
             const thirdLogoContainerClone = logoElement.cloneNode(true);
             secondLogoContainerClone.id = 'new-logo-element';
@@ -224,9 +225,9 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         logoContainerOne.style.transition = '15s linear';
         logoContainerTwo.style.transition = '15s linear';
         logoContainerThree.style.transition = '15s linear';
-        logoContainerOne.style.transform = `translateX(${-totalWidth}px)`; //+ mysetNewXpositionRef.current
-        logoContainerTwo.style.transform = `translateX(${-totalWidth}px)`; //+ mysetNewXpositionRef.current
-        logoContainerThree.style.transform = `translateX(${-totalWidth}px)`; //+ mysetNewXpositionRef.current
+        logoContainerOne.style.transform = `translateX(${-totalWidth}px)`;
+        logoContainerTwo.style.transform = `translateX(${-totalWidth}px)`;
+        logoContainerThree.style.transform = `translateX(${-totalWidth}px)`;
     };
 
     function transitionEnd(e) { 
@@ -296,7 +297,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
                 id="logo-container-reference"
                 ref={firstLogoContainerRef}
                 style={{width: (imagesWidth / 3) + 30 + extraSpace}}
-                className="text-center mt-4 d-flex flex-wrap justify-content-between align-items-center line-height-normal customer-container-inner">
+                className="text-center mt-4 d-flex flex-wrap justify-content-between align-items-center line-height-normal customer-container-inner hidden">
                 {ITEMS.map((logo, i) => {
                     return (
                         <div
