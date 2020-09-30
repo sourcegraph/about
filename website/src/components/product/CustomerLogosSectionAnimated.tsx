@@ -191,10 +191,6 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         Promise.all(promises).then(() => {
             const logoElement = document.getElementById('logo-container-reference')!;
             logoElement.classList.remove('hidden');
-            if (showButton) {
-                const button = document.getElementById('sourcegraphhoverbutton');
-                button.style.display = 'flex';
-            };
             const secondLogoContainerClone = logoElement.cloneNode(true);
             const thirdLogoContainerClone = logoElement.cloneNode(true);
             secondLogoContainerClone.id = 'new-logo-element';
@@ -292,7 +288,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
             >
             {(windowWidth > minDeviceWidth) && showButton &&
                 <a href="/customers">
-                    <animated.div id="sourcegraphhoverbutton" className={"sourcegraph-cta-button " + buttonClass} style={{ left: x, top: y, transform: scale.interpolate(s => `scale(${s}) translate(-50%, -50%)`) }}>
+                    <animated.div className={"sourcegraph-cta-button " + buttonClass} style={{ left: x, top: y, transform: scale.interpolate(s => `scale(${s}) translate(-50%, -50%)`) }}>
                         Learn how customers <br/> use Sourcegraph
                     </animated.div>
                 </a>
