@@ -5,6 +5,7 @@ This document describes how the sales team using Salesforce.
 Note: Please refer to it as Salesforce (instead of SF or SFDC) in accordance with our [content guidelines](../communication/content_guidelines/style_and_mechanics.md#abbreviations-acronyms-latinisms-jargon). 
 
 Jump to:
+
 - [Updating information in Salesforce](#updating-information-in-salesforce)
 - [HubSpot and Salesforce connection](#hubspot-and-salesforce)
 - [Salesforce automation](#salesforce-automation)
@@ -14,6 +15,10 @@ Jump to:
 1. If it's not in Salesforce, it doesn't exist. Salesforce data will be used to resolve any territory/ownership disputes
 1. All Salesforce Users are responsible for keeping Salesforce up-to-date as a [source of truth](../communication/index.md#sources-of-truth). If you come across incomplete or inaccurate data, take a moment to update it. This will help us keep the system usable and prevent many issues as we scale.
 1. All Sales Users will work out of Accounts, Contacts, Opportunites, but the Leads Object should only be used for SDRs
+
+## Salesforce access
+
+Sales, marketing and finance teams have access to Salesforce. Access for those on other teams can be reviewed on a case-by-case basis, usually dependent on how frequently one needs to view customer communcation. To request access, tag @business-team in #sales. 
 
 ## About Salesforce objects
 
