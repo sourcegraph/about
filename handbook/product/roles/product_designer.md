@@ -36,7 +36,7 @@ We will encourage and support you to:
 
 - Experience designing developer tools.
 - Experience working in cross-functional teams on multiple projects in tandem.
-- Experience building or contributing to the design of consumer or enterprise applications.
+- Experience designing for of B2B or B2D (developer) applications.
 - Experience working with distributed or remote teams.
 - Experience building and implementing complex design systems.
 - Experience working on or leading big product redesign.
