@@ -70,7 +70,7 @@ export default ((props: any) => (
         </Helmet>
         <div className="customers-page">
             <CustomerLogosSectionAnimated showButton={false} className="pt-5"/>
-            <hr className="mb-6" id="onboard" />
+            <hr className="my-md-6" id="onboard" />
             <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
