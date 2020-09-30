@@ -6,8 +6,8 @@ Read [the support overview](support.md) before filing an issue.
 
 We maintain two issue trackers:
 
-1. [sourcegraph/sourcegraph](github.com/sourcegraph/sourcegraph/issues) for public issues (where any private prospect or customer information must be redacted)
-1. [sourcegraph/customer](github.com/sourcegraph/customer/issues) for private issues that only Sourcegraph teammates can see
+1. [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph/issues) for public issues (where any private prospect or customer information must be redacted)
+1. [sourcegraph/customer](https://github.com/sourcegraph/customer/issues) for private issues that only Sourcegraph teammates can see
 
 Support tickets should be translated to GitHub issues when they require an Engineering team to be involved. See the [CE to engineering issue handover documentation](ce_to_eng_handover.md) for more.
 
