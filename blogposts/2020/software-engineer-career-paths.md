@@ -1,5 +1,5 @@
 ---
-title: "Software Engineer Career Paths"
+title: "Software engineer career paths"
 author: Chris Pine
 publishDate: 2020-09-30
 tags: [blog]
