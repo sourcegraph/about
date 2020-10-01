@@ -33,7 +33,12 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
   - Analytical and research support is available to any team at Sourcegraph that needs it (whether from a full-time support team, or from a special project team).
   - Product, engineering, sales, CE, and marketing teams are never forced to make material decisions wanting a metric that isn't available.
 
+### Sourcegraph's culture thrives and evolves in an all-remote world
 
+- Owners: Dan, Noemi
+- Status: In progress
+- Outcomes:
+  - TBD
 
 ## Medium term (3-6 months)
 
