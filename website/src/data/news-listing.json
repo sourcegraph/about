@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Sourcegraph",
+      "newsTitle": "Press Release: Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries",
+      "newsDate": "October 1, 2020",
+      "newsLink": "/press-release/big-code-survey-2020",
+      "newsImage": "/sourcegraph-mark.png"
+    },
+    {
       "newsSource": "Tracxn",
       "newsTitle": "Emerging Startups 2020: Top Application Development Tools",
       "newsDate": "August 28, 2020",
