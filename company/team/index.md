@@ -8,6 +8,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Role(s)
 - City, region, country, country flag emoji (optional: add yourself to [the team locations map](locations.md)!)
+- GitHub username
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)
@@ -307,13 +308,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [stefanhengl](https://github.com/stefanhengl)
 - Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
-## Kimberly Hopson (she/her)
-
-- Developer Communications
-- Berwyn, PA
-- [kimberly@sourcegraph.com](mailto:kimberly@sourcegraph.com)
-- Kimberly is just a government name; Sourcegraph insiders call her by her nickname. The former journalist accidentally fell into the world of technical writing via her gaming hobby, and she's been dedicated to writing insightful documentation ever since. In her spare time, she engages in a balanced mixture of geeky and athletic pursuits, such as anime, coffee making, swimming, reading, aerial fitness, pc building, and sport shooting.
-
 ## Aida DeWitt (she/her)
 
 - Engineering Manager
@@ -436,6 +430,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Role(s)
 - City, region, country, country flag emoji
+- GitHub username
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)
