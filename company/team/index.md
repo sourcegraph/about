@@ -8,7 +8,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Role(s)
 - City, region, country, country flag emoji (optional: add yourself to [the team locations map](locations.md)!)
-- GitHub username
+- GitHub: username
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)
@@ -102,6 +102,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - People Ops
 - San Francisco, CA, USA 🇺🇸
+- GitHub: [mercadon](https://github.com/mercadon)
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/), [pronounce my name 🔊](https://www.name-coach.com/noemi-mercado)
 - Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pup named Valencia.
 
@@ -430,7 +431,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Role(s)
 - City, region, country, country flag emoji
-- GitHub username
+- GitHub: username
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
 - Bio (hobbies, work experience, family, pets, etc.)
