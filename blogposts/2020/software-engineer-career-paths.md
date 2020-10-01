@@ -32,7 +32,7 @@ Every career is unique; there’s no one right way to do this. The trick is to f
   <img src="https://sourcegraphstatic.com/blog/career/Maria.jpg" width="70%" alt="Maria illustration">
 </div>
 
-## Maria, Engineer (Technical Breadth)
+## Maria, Engineer (technical breadth)
 
 Maria moved into tech after first working in another industry, but deciding it wasn’t for her. Her superpower was fearlessly asking questions: she never left a meeting or conversation without knowing everything that was going on. She built her knowledge and skill-set rapidly, first in depth and then in breadth. Her personal performance increased.
 
@@ -42,7 +42,7 @@ Maria’s curiosity uncovered technical needs that were not being met, things th
 
 In one particular instance, Maria started poking at a feature that was unreliable and impractical to use. It was poorly designed and hadn’t scaled well, but changing it would require the coordination of at least a dozen teams (and their roadmaps!). Many others had run into this broken feature before, but never fixed it because “you just can’t push a change through that many teams.”
 
-Maria showed them how. She led the effort to phase it out and replace it with something much better, something that didn’t feel like it was made for the web of 2010, something customers would use and love. A year later, Maria was providing technical guidance and proofs-of-concept for multiple stages of the project to some 60 engineers, working closely with numerous PMs and EMs.
+Maria showed them how. She led the effort to phase it out and replace it with something much better, something that didn’t feel like it was made for the web of 2010, something customers would use and love. A year later, Maria was providing technical guidance and proofs-of-concept for multiple stages of the project to some 60 engineers, working closely with numerous product managers and engineering managers.
 
 Maria’s initiatives prepared the company for a major industry shift, and delivered the revamped feature well before their competitors could catch up. For her outstanding work, Maria was eventually promoted to the title of… but that’s not really the point, is it?
 
@@ -50,11 +50,11 @@ Maria’s initiatives prepared the company for a major industry shift, and deliv
   <img src="https://sourcegraphstatic.com/blog/career/Theo.jpg" width="70%" alt="Theo illustration">
 </div>
 
-## Theo, Engineer (Technical Depth)
+## Theo, Engineer (technical depth)
 
 Theo loved taking things apart and understanding how they worked. His superpower was an ability to understand the inner workings of complex systems, especially software/hardware systems.
 
-In addition to a standard CS curriculum, Theo studied real-world software construction and maintenance, and had a special talent for taking a “performance optimized” system and making it significantly faster. In any complex system, in the many layers of abstraction, from hardware to firmware to drivers to operating systems to libraries to applications, there’s always something somewhere that is going much slower than it should. He would find what others missed.
+In addition to a standard computer science curriculum, Theo studied real-world software construction and maintenance, and had a special talent for taking a “performance optimized” system and making it significantly faster. In any complex system, in the many layers of abstraction, from hardware to firmware to drivers to operating systems to libraries to applications, there’s always something somewhere that is going much slower than it should. He would find what others missed.
 
 As Theo’s reputation grew, he was given larger and more interesting opportunities. Eventually, he was tasked with building a system that would power the future of the company. It would need to ingest millions of complex, multi-dimensional data points per second. It would need to allow queries over all of the data, and a query must return in milliseconds. Going forward, it would need to scale not at the rate of their customers, but of their customers’ customers.
 
@@ -66,7 +66,7 @@ After that, he had the pick of projects to work on. He was given the freedom to 
   <img src="https://sourcegraphstatic.com/blog/career/Jan.jpg" width="70%" alt="Jan illustration">
 </div>
 
-## Jan, Engineering Manager (Growing Engineers)
+## Jan, Engineering Manager (growing engineers)
 
 Jan began their career as a software engineer. Their superpower was empathy: they cared deeply about the success and well-being of their teammates. This naturally led to an interest in career mentorship and whole-team success.
 
@@ -76,9 +76,9 @@ As they progressed in their career, Jan began to pay increased attention to non-
 
 It was made clear that moving into management was not a promotion: it was starting a new career at the bottom of another career track. But just as clear was that this was a move toward having a broader impact in the organization, and in the careers of everyone on the team. Jan eagerly accepted this new challenge.
 
-As an engineering manager, Jan had the influence and authority to enhance the day-to-day experiences of engineers on and off their team. They also collaborated with other EMs to improve hiring practices. As a result, their company gained a reputation for being an excellent place to work, and they were better able to hire and retain top talent.
+As an engineering manager, Jan had the influence and authority to enhance the day-to-day experiences of engineers on and off their team. They also collaborated with other engineering managers to improve hiring practices. As a result, their company gained a reputation for being an excellent place to work, and they were better able to hire and retain top talent.
 
-## You, Gentle Reader
+## You, gentle reader
 
 Maria, Theo, and Jan followed different paths in their careers. But they all succeeded by increasing the magnitude and scope of their impact.
 
