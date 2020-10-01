@@ -12,6 +12,8 @@
 ## Definitions
 
 <dl>
+    <dt>Goals</dt>
+    <dd>Sourcegraph does not do OKRs, we do Goals instead.</dd>
     <dt>Product priorities</dt>
     <dd>An ordered list of problem statements or outcomes that product has evidence is important.</dt>
     <dt>Roadmap</dt>
@@ -58,6 +60,7 @@ This is the rough lifecycle of an idea at Sourcegraph.
 - PM is accountable for identifying user problems, product outcomes, driving alignment towards product vision
 - Engineering team surfaces customer/user problems that they are aware of.
 - Engineering is responsible for identifying engineering investments that need to be made (e.g., architecture improvements, paying down tech debt, productivity investments).
+- How will we know that this problem is solved? What do we need to measure?
 
 ### 2. Prioritization and goal alignment
 
@@ -94,3 +97,8 @@ Who is accountable in each of the phases?
 
 - Once a solution has been validated, implementaiton begins.
 - Engineering team is accountable for the quality of what we implement and deliver to customers (i.e., code, architecture, UX).
+
+### 5. Metrics analysis
+
+- Did the implementation solve the original problem as validated by metrics and usage (defined in step 1).
+
