@@ -21,7 +21,9 @@ export default ((props: any) => (
             </Helmet>
             <ContentSection className="hero-section text-center py-5">
                 <h1 className="display-2 font-weight-bold">Sourcegraph News</h1>
-                <p>The lastest Sourcegraph news and <Link to="/press-release">press releases</Link></p>
+                <p>
+                    The latest Sourcegraph news and <Link to="/press-release">press releases</Link>
+                </p>
             </ContentSection>
             <div className="news">
                 <section>

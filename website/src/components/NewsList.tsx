@@ -12,8 +12,15 @@ class News extends React.Component {
                     <div className="col-lg-10 container-fluid">
                         {NewsData.y2020.map((newsDetail, index) => (
                             <div className="row mb-4 news__item">
-                                <div className="col-sm-4 col-lg-2 text-center">
-                                    <img className="news__image" src={newsDetail.newsImage} alt={newsDetail.newsTitle} />
+                                <div
+                                    className="col-sm-4 col-lg-2 text-center d-flex align-items-center"
+                                    style={{ minHeight: '120px' }}
+                                >
+                                    <img
+                                        className="news__image"
+                                        src={newsDetail.newsImage}
+                                        alt={newsDetail.newsTitle}
+                                    />
                                 </div>
                                 <div className="col-sm-10 col-lg-10 align-self-center">
                                     <p>
@@ -37,7 +44,11 @@ class News extends React.Component {
                         {NewsData.y2019.map((newsDetail, index) => (
                             <div className="row mb-4 news__item">
                                 <div className="col-sm-4 col-lg-2 text-center">
-                                    <img className="news__image" src={newsDetail.newsImage} alt={newsDetail.newsTitle} />
+                                    <img
+                                        className="news__image"
+                                        src={newsDetail.newsImage}
+                                        alt={newsDetail.newsTitle}
+                                    />
                                 </div>
                                 <div className="col-sm-10 col-lg-10 align-self-center">
                                     <p>
