@@ -31,7 +31,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - VP Product
 - Woodside, CA, USA 🇺🇸
 - Name pronunciation: [krɪsˈtiːnə ˈfɔrnɪ](http://ipa-reader.xyz/?text=kr%C9%AAs%CB%88ti%CB%90n%C9%99%20%CB%88f%C9%94rn%C9%AA&voice=Kendra)
-- [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney), [GitHub](https://github.com/christinaforney)
+- [christina@sourcegraph.com](mailto:christina@sourcegraph.com), [@christina4nee](https://twitter.com/christina4nee), [LinkedIn](https://www.linkedin.com/in/christinaforney), [christinaforney](https://github.com/christinaforney)
 - Christina loves riding and spending time with her two horses, Comet and Bentley. Prior to Sourcegraph, she merged her love of horses and software development by running product and engineering at an equine nutrition company. At Sourcegraph, she has returned to her roots and passion for developer productivity tools.
 
 ## Stephen Gutekanst
@@ -108,14 +108,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - VP Engineering
 - Belmont, CA, USA 🇺🇸
-- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [GitHub](https://github.com/nicksnyder), [Twitter](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [manager docs](nick.md), [pronounce my name 🔊](https://name-coach.com/nickdsnyder)
+- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [nicksnyder](https://github.com/nicksnyder), [Twitter](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [manager docs](nick.md), [pronounce my name 🔊](https://name-coach.com/nickdsnyder)
 - Nick started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a B.S and M.S. in Computer Science. Since then, Nick has spent most of his career as a software engineer working with a variety of technologies at companies large and small, and now enjoys building teams. Nick has a wife, a daughter, and a son, and likes to sail on the San Francisco Bay as often as his calendar permits.
 
 ## Thorsten Ball (he/him)
 
 - Software Engineer
 - Aschaffenburg, Bavaria, Germany 🇩🇪
-- [thorsten@sourcegraph.com](mailto:thorsten@sourcegraph.com), [@thorstenball](https://twitter.com/thorstenball), [LinkedIn](https://www.linkedin.com/in/thorsten-ball-3142b652), [thorstenball.com](https://thorstenball.com)
+- [thorsten@sourcegraph.com](mailto:thorsten@sourcegraph.com), [mrnugget](https://github.com/mrnugget), [@thorstenball](https://twitter.com/thorstenball), [LinkedIn](https://www.linkedin.com/in/thorsten-ball-3142b652), [thorstenball.com](https://thorstenball.com)
 - Thorsten started his career as a software engineer after dropping out of college where he studied philosophy. Since then he's mainly worked for startups (flinc, ioki) in the mobility space before starting at Sourcegraph. In his spare time, he's also a writer and wrote and self-published [two](https://interpreterbook.com) [books](https://compilerbook.com) about his favorite pet topics: interpreters & compilers. He lives together with his wife and daughter in a small-ish city in Germany. He met his wife, who happened to hail from the same small town in Germany, in Australia while he was working at a shipyard.
 
 ## Loïc Guychard
@@ -137,7 +137,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - VP Operations
 - San Francisco, CA, USA 🇺🇸
-- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/), [GitHub](https://github.com/dadlerj)
+- [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/), [dadlerj](https://github.com/dadlerj)
 - In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
 
 ## Tomás Senart
@@ -152,7 +152,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - VP Customer Engineering
 - Nashville, Tennessee, USA 🇺🇸
-- [julia@sourcegraph.com](mailto:julia@sourcegraph.com), [@JuliaSourceress](https://twitter.com/JuliaSourceress), [LinkedIn](https://www.linkedin.com/in/juliagilinets/), [GitHub](https://github.com/juliasourceress)
+- [julia@sourcegraph.com](mailto:julia@sourcegraph.com), [@JuliaSourceress](https://twitter.com/JuliaSourceress), [LinkedIn](https://www.linkedin.com/in/juliagilinets/), [juliasourceress](https://github.com/juliasourceress)
 - Julia started out as a Software Engineer supporting the developer community at Palm, which to the generations of today might be thought of as mobile before mobile. She realized she loved forging business partnerships just as much as coding, and after over a decade of leading various customer facing teams has finally landed in the best of all worlds at Sourcegraph. She's passionate about technical innovation, efficiency, the human connection, and sleep.
 
 ## Geoffrey Gilmore
@@ -194,7 +194,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Bremen, Germany 🇩🇪
-- [felix@sourcegraph.com](mailto:felix@sourcegraph.com), [GitHub](https://github.com/felixfbecker), [Twitter](https://github.com/felixfbecker), [LinkedIn](https://www.linkedin.com/in/felixfbecker/)
+- [felix@sourcegraph.com](mailto:felix@sourcegraph.com), [felixfbecker](https://github.com/felixfbecker), [Twitter](https://github.com/felixfbecker), [LinkedIn](https://www.linkedin.com/in/felixfbecker/)
 - Felix discovered batch files on Windows 98 in elementary school and one thing led to another. He has the most fun in all things web technology and open source, especially TypeScript. But when that gets boring, he likes to play field hockey and sail the north & baltic seas.
 
 ## Garo Brik (they/them)
@@ -223,7 +223,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Ibague, Colombia 🇨🇴/ Sydney, Australia 🇦🇺
-- [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [GitHub](https://github.com/davejrt)
+- [dave@sourcegraph.com](mailto:dave@sourcegraph.com), [davejrt](https://github.com/davejrt)
 - Dave likes riding his bike up hill, drinking coffee and travelling. After graduating University and getting his start as a Unix system administrator, he still has a soft spot for Solaris and enjoys solving problems on large scale infrastructure.
 
 ## Dax McDonald (he/him)
@@ -237,21 +237,21 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer Intern
 - Taipei, Taiwan 🇹🇼 (GMT+8) 
-- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
+- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [bobheadxi](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
 - If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final semester remotely studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
 
 ## Marek Zaluski
 
 - Software Engineer
 - Ottawa, Canada 🇨🇦
-- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [GitHub](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
+- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [marekweb](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
 - Marek is a JavaScript and TypeScript developer with an interest in developer tools and tech education. He occasionally teaches programming courses and contributes to coding bootcamps, and he previously ran a software consulting agency. He lives in Canada's capital with his wife and his jack russell terrier 🐕.
 
 ## Adam Harvey (he/him)
 
 - Software Engineer
 - Vancouver, Canada 🇨🇦
-- [aharvey@sourcegraph.com](mailto:aharvey@sourcegraph.com), [@LGnome](https://twitter.com/LGnome), [GitHub](https://github.com/LawnGnome)
+- [aharvey@sourcegraph.com](mailto:aharvey@sourcegraph.com), [@LGnome](https://twitter.com/LGnome), [LawnGnome](https://github.com/LawnGnome)
 - Name pronunciation: [/ˈadəm hˈɑːvi/](http://ipa-reader.xyz/?text=%CB%88ad%C9%99m%20h%CB%88%C9%91%CB%90vi&voice=Brian)
 - Adam plays cricket, yells at hockey teams, and spends an inordinate amount of time convincing his golden retriever to drop things. He started his technology journey with an IBM XT in the 80s, and never looked back once he discovered the GW-BASIC `RENUM` command. Technologically, Adam enjoys programming language design, convincing runtimes to work on hardware they weren't designed to, and deluding himself that abusing CSS animations is exactly what his film degree qualified him to do.
 
@@ -266,21 +266,21 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Product Manager
 - San Francisco, CA, USA 🇺🇸
-- [pooja@sourcegraph.com](mailto:pooja@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/poojajn/), [GitHub](https://github.com/poojaj-tech), [Twitter](https://twitter.com/pooja___j)
+- [pooja@sourcegraph.com](mailto:pooja@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/poojajn/), [poojaj-tech](https://github.com/poojaj-tech), [Twitter](https://twitter.com/pooja___j)
 - Pooja enjoys going to (cold) beaches in San Francisco and thinking about productivity hacks in her free time. Prior to Sourcegraph, Pooja worked at a design agency to deliver software-enabled design services at several top startups. Before that, she spent 5 years at Facebook building core product features for 500M+ users on FB Groups and FB Events, launching a new Movie ticket purchase product and developing an onboarding process for online learning in classrooms. Pooja graduated with a BS and MS in Computer science from UIUC with a specialization in user interface design and machine learning.
 
 ## Christine Lovett (she/her)
 
 - Customer Engineer
 - New York, NY, USA 🇺🇸
-- [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [GitHub](https://github.com/christinelovett)
+- [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [christinelovett](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
 
 ## Gonzalo Peci (he/him)
 
 - Engineering Manager
 - Palma de Mallorca, Balearic Islands, Spain, 🇪🇸
-- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [LinkedIn](https://linkedin.com/in/pecig), [GitHub](https://github.com/pecigonzalo), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
+- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [LinkedIn](https://linkedin.com/in/pecig), [pecigonzalo](https://github.com/pecigonzalo), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
   gone down the tech rabbit hole and learned programming languages 🤓.
 
@@ -297,14 +297,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - /aˈlʲit͡s.ja/
 - Product Designer
 - Poznań, Poland 🇵🇱
-- [alicja@sourcegraph.com](mailto:alicja@sourcegraph.com), [LinkedIn](https://pl.linkedin.com/in/alicja-suska-1a5384a9), [GitHub](https://github.com/AlicjaSuska)
+- [alicja@sourcegraph.com](mailto:alicja@sourcegraph.com), [LinkedIn](https://pl.linkedin.com/in/alicja-suska-1a5384a9), [AlicjaSuska](https://github.com/AlicjaSuska)
 - Alicja is a designer who loves painting furniture and creating isometric illustrations. She lives in Poznań with her Samoyed dog, Edward. Prior to Sourcegraph, Alicja was working at Toggl, the company that provides time tracking and work management tools. She comes from the artistic background - she earned a BA in Interior Design and a MS in Graphics.
 
 ## Stefan Hengl (he/him)
 
 - Software Engineer
 - Berlin, Germany 🇩🇪
-- [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [GitHub](https://github.com/stefanhengl)
+- [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [stefanhengl](https://github.com/stefanhengl)
 - Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
 ## Kimberly Hopson (she/her)
@@ -332,21 +332,21 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Customer Engineer
 - Frederick, MD, USA, us
-- [tion@sourcegraph.com](mailto:tion@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tion-thomas-30562017), [GitHub](https://github.com/tistru), [YouTube](https://www.youtube.com/channel/UC9l1NGH1xciYs9z1LQ6CtqA)
+- [tion@sourcegraph.com](mailto:tion@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tion-thomas-30562017), [tistru](https://github.com/tistru), [YouTube](https://www.youtube.com/channel/UC9l1NGH1xciYs9z1LQ6CtqA)
 - Tion is a native New Yorker who has spent time all over the US including Boston, Florida, Indiana, Oregon, and currently Maryland. He has a B.S and M.S in computer science from Tufts University and Purdue University respectively. Prior to joining Sourcegraph, Tion has worked in a variety of domains including systems engineering, software validation, strategic planning, UX, application engineering, programming, developer relations, and technical production spread over Lockheed Martin, Electronic Arts, Intel, Razer, and Magic Leap. His passion is in gaming and he continues to be an active member on many gaming forums and blogs while playing some of the latest games in his spare time. He also enjoys sports, music, and is an AV enthusiast (home theater and audio/video technologies). Tion is a proud father of 2 beautiful kids and a husband of 7 years! He loves working with customers and helping to enable amazing technology that is readily accessible to everyone.
 
 ## Quinn Keast (he/him)
 
 - Product Designer
 - Berlin, Germany 🇩🇪
-- [qkeast@sourcegraph.com](mailto:qkeast@sourcegraph.com), [@quinnkeast](https://twitter.com/quinnkeast), [LinkedIn](https://www.linkedin.com/in/quinn-keast/), [GitHub](https://github.com/quinnkeast), [quinnkeast.com](https://quinnkeast.com)
+- [qkeast@sourcegraph.com](mailto:qkeast@sourcegraph.com), [@quinnkeast](https://twitter.com/quinnkeast), [LinkedIn](https://www.linkedin.com/in/quinn-keast/), [quinnkeast](https://github.com/quinnkeast), [quinnkeast.com](https://quinnkeast.com)
 - Quinn is a Canadian product & UX designer living in Berlin. His background is in design, and prior to Sourcegraph, he has a broad range of experience including working with a branding and advertising agency, a major non-profit environmental conservancy, and a global meal kit company. He also co-founded a UX consultancy that worked with growing product teams and organizations across Canada. Outside of work, Quinn is passionate about Ultimate frisbee, writing, speaking, and tinkering around. Learn more about Quinn's guiding values and how he works as a human at his personal [Quinn.README](https://quinnkeast.com/readme)!
 
 ## Juliana Peña (she/her)
 
 - Software Engineer
 - Redmond, WA, USA 🇺🇸
-- [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [GitHub](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage), [pronounce my name 🔊](https://www.name-coach.com/julip)
+- [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [limitedmage](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage), [pronounce my name 🔊](https://www.name-coach.com/julip)
 - Juliana is originally from Cali, Colombia 🇨🇴 and went to college in Mexico City 🇲🇽 before moving to the Seattle area. She loves building powerful and beautiful web applications that improve people's lives. Before Sourcegraph, Juliana worked at Microsoft building successful startup projects, and is now very excited to be working in a real startup company. Outside of work, Juliana loves cyling, collecting Lego, playing video games, and traveling.
 
 ## David Li (he/him)
@@ -360,7 +360,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Jacksonville, FL, USA 🇺🇸
-- [tj@sourcegraph.com](mailto:tj@sourcegraph.com), [GitHub](https://github.com/tjkandala)
+- [tj@sourcegraph.com](mailto:tj@sourcegraph.com), [tjkandala](https://github.com/tjkandala)
 - Call him "TJ"
 - TJ was born in India before he was brought to the swamp. He strives to bridge the gap between Developer Experience and User Experience in modern web applications. Outside of work, he loves to code and dunk basketballs by the ocean.
 
@@ -368,7 +368,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Engineering Manager, Campaigns
 - Portland, OR, USA 🇺🇸
-- [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [GitHub](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
+- [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [chrispine](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
 - Name pronunciation: /[kɹɪs paɪn](http://ipa-reader.xyz/?text=k%C9%B9%C9%AAs%20pa%C9%AAn&voice=Joanna)/
 - Chris started his career making games, working on Civilization III and Alpha Centauri. Chris also spent several years working at Opera Software in Norway, mainly on Opera's Ecmascript engine. Somewhere in there, Chris accidentally wrote a book, [Learn to Program](https://pragprog.com/titles/ltp2/). At New Relic, Chris moved into management, and (much to his surprise) loved it! Chris lives with his spouse (Katy), their three kids (C, Ruby, and Apl), two rats (Coffee and Bean), and an ancient grey cat (Wobbly). Hobbies include the boardgame Go, failing to play the guitar, and spiritual inquiry (mostly Tao, Zen, and Alan Watts). Chris really (like really) loves parentheses.
 
@@ -384,7 +384,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer
 - Wexford, Ireland 🇮🇪
 - Name pronunciation: /[noʊə santʃi kuːnɪ](http://ipa-reader.xyz/?text=no%CA%8A%C9%99%20sant%CA%83i%20ku%CB%90n%C9%AA&voice=Amy)/
-- [noah@sourcegraph.com](mailto:noah@sourcegraph.com), [GitHub](https://github.com/strum355), [LinkedIn](https://linkedin.com/in/strum355), [Twitter](https://twitter.com/strum355)
+- [noah@sourcegraph.com](mailto:noah@sourcegraph.com), [strum355](https://github.com/strum355), [LinkedIn](https://linkedin.com/in/strum355), [Twitter](https://twitter.com/strum355)
 - Noah is a half Swiss 🇨🇭 half Irish 🇮🇪 UCC CS graduate who spends his time evangelising the Actor model, containers (not of the shipping variety), his favourite programming languages and complaining about subpar editor experiences. Sometime in the past, the last point drove him over the edge and into the world of language servers. Previously he was Performance Engineering Intern at Teamwork, Frontend/DevOps at CloudCIX and Head Systems Administrator at UCC Netsoc, the college tech/gaming society.
 
 ## Bill Kolman
@@ -405,7 +405,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Product Manager
 - Barcelona, Spain 🇪🇸 / Buenos Aires, Argentina 🇦🇷
-- [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [GitHub](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
+- [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [macraig](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
 - María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
 
 ## Chris Surdi
@@ -427,7 +427,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Software Engineer
 - Arlington, VA, USA 🇺🇸
-- [alan@sourcegraph.com](mailto:alan@sourcegraph.com), [GitHub](https://github.com/flying-robot)
+- [alan@sourcegraph.com](mailto:alan@sourcegraph.com), [robot](https://github.com/flying-robot)
 - Alan lives in the DC metro area with his wife, cat and somewhat excessive collection of books. When not illuminated by the gentle glow of a monitor, you'll probably find him toiling away behind a drum kit or watching yet another horror movie from the 1980s (seriously, they're fantastic). Just a regular dude, and totally not three chipmunks in a trench coat.
 
 <!-- Paste *your* section above this line by following our template below:
