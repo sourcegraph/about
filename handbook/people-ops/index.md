@@ -2,7 +2,7 @@
 
 ## Team
 - [Teammate philosophy](teammate_philosophy.md)
-- [List of team members](../../company/team/index.md)
+- [Team members](../../company/team/index.md)
 
 ## Teammate experience
 - [All-remote work](../../company/remote/index.md)
