@@ -36,14 +36,11 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 
 1. The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
    - Code is indexed.
-   - It's possible to search over only their code (vs all public code).
 1. Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-   - Connecting their first code host and adding their own public repos is intuitive and easy for new users.
-   - Connecting with code hosts and and adding public repos is intuitive and easy for current users.
+   - Connecting their first code host and adding their own public repos is intuitive and easy for new and existing users.
    - System activity and progress is easy to understand and doesn’t take too long.
      - Repo syncing
      - Repo indexing
-   - Searching their own versus searching all Cloud code is intuitive.
 
 ### Private code on Sourcegraph Cloud
 
@@ -58,6 +55,7 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
      - Gitserver.
      - Searcher and code intel caches.
      - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
+   - Searching the user's or organization's private code versus searching all Cloud code is intuitive.
 1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
    - Authorization from code hosts is enforced (e.g., organizations, teams).
    - Repository visibility and permissions on Sourcegraph is intuitive.
