@@ -48,7 +48,6 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
 
 **Milestones:**
 
-1. [User configured public code on Sourcegraph Cloud](#user-configured-public-code-on-sourcegraph-cloud).
 1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
    - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
    - All private repository content are only decryptable by Sourcegraph services.
@@ -56,11 +55,12 @@ The cloud team is also responsible for all [backend-infrastructure areas of owne
      - Searcher and code intel caches.
      - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
    - Searching the user's or organization's private code versus searching all Cloud code is intuitive.
+   - **DEPENDENCY:** We first need to finish [user configured public code on Sourcegraph Cloud](#user-configured-public-code-on-sourcegraph-cloud).
 1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
    - Authorization from code hosts is enforced (e.g., organizations, teams).
    - Repository visibility and permissions on Sourcegraph is intuitive.
    - Adding private repositories is part of the same flows as adding public repositories.
-   - [Visibility into our attack surface](../security/index.md#visibility-into-sourcegraph-clouds-attack-surface).
+   - **DEPENDENCY**: We need to have [visibility into our attack surface](../security/index.md#visibility-into-sourcegraph-clouds-attack-surface).
 1. Sourcegraph Cloud is Generally Available (GA).
    - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
    - Scalable syncing of permissions, repos, changesets.

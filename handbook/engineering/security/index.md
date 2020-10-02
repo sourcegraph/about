@@ -15,12 +15,9 @@ Our current work is documented in our [tracking issue](https://github.com/source
 1. All Docker images are continuously scanned for known security vulnerabilities and the security team is alerted as vulnerabilities are found.
 1. All compute nodes are continuously scanned for known security vulnerabilities and the security team is alerted as vulnerabilities are found.
 1. Vulnerabilities with a high severity, or a CVSS score of at least 4.0 are resolved.
-1. Implement centralized security logging.
-   - What is this? Is this just taking all our existing logs and shipping them to one place? Are there new kinds of logs we will want to add to our application? If so, what/where? We are already using LogDNA, is that a solution to this?
-1. Centralize workload and cloud (i.e. GCE) logs.
-   - Needs to be explained more.
-1. Normalize log format across services so that it is easier to correlate and search; this is a precursor to creating automated alerts from the logs.
-1. Add support for audit and access logging (e.g., visibility into both intentional and unintentional logins). This is both useful from a security visibility point of view, as a requirement for various auditing frameworks (though not currently a target).
+1. Implement centralized storage of all of our existing logs (e.g., application logs, compute infrastructure logs).
+1. Start collecting audit and access logs (e.g., visibility into both intentional and unintentional logins). This is useful from both a security visibility point of view, as also a requirement for various auditing frameworks (though not currently a target).
+1. Normalize log format in our centralized log storage so that it is easier to correlate and search. This is a prerequisite for creating automated alerts from the logs.
 1. Create alerts and dashboards to automate the process of investigating events of interest (e.g., detect and alert on a spike of failed login attempts to a single account, or across Sourcegraph Cloud as a whole).
 
 ### Confidence in our security model
@@ -29,10 +26,10 @@ Our current work is documented in our [tracking issue](https://github.com/source
 
 **Milestones:**
 
-1. [Visibility into Sourcegraph Cloud's attack surface](#visibility-into-sourcegraph-clouds-attack-surface).
-   - I suspect we don't need to block on everything in that goal. Maybe we just need milestones 1-3? Let's discuss.
 1. We connect our [test security repository](https://github.com/sourcegraph/security-test/blob/main/README.md) to Sourcegraph Cloud and only [members who can access that repository on GitHub](https://github.com/sourcegraph/security-test/settings/access) can access that repository on Sourcegraph Cloud (i.e., [Sourcegraph organization owners](https://github.com/orgs/sourcegraph/people?query=role%3Aowner) and [@sourcegraph/security](https://github.com/orgs/sourcegraph/teams/security) members).
+   - **DEPENDENCY:** We can't do this until we can have [private code on Sourcegraph Cloud](../cloud/index.md#private-code-on-sourcegraph-cloud)
 1. We advertise a bounty for each unique vulnerability that allows an unauthorized person to gain access to our [test security repository](https://github.com/sourcegraph/security-test/blob/main/README.md) on Sourcegraph Cloud.
+   - **DEPENDENCY:** This milestone depends on milestone 3 of [Visibility into Sourcegraph Cloud's attack surface](#visibility-into-sourcegraph-clouds-attack-surface). We should detect and fix the obvious issues ourselves before we start to invite others to attack us with large bounties.
 1. We run a time-bound capture the flag event where there are larger bounties for being able to gain access to our [test security repository](https://github.com/sourcegraph/security-test/blob/main/README.md) on Sourcegraph Cloud.
 1. We host our private [infrastructure repository](http://github.com/sourcegraph/infrastructure) on Sourcegraph Cloud.
 1. We allow paying customers to host their private code on Sourcegraph Cloud.
