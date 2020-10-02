@@ -100,7 +100,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         title: 'Blog',
         baseUrl: '/blog',
         meta: {
-            title: 'Sourcegraph blog',
+            title: 'Sourcegraph Blog',
             description:
                 "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
         },
@@ -109,7 +109,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         title: 'Press release',
         baseUrl: '/press-release',
         meta: {
-            title: 'Sourcegraph press release',
+            title: 'Sourcegraph - Press release',
             description:
                 'Press release from Sourcegraph',
         },
@@ -123,7 +123,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         },
     },
     go: {
-        title: 'GopherCon and dotGo liveblogs',
+        title: 'GopherCon and dotGo 2019 liveblogs',
         baseUrl: '/go',
         meta: {
             title: 'GopherCon and dotGo liveblogs',
@@ -132,10 +132,10 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         },
     },
     'strange-loop': {
-        title: 'Strange Loop liveblog',
+        title: 'Strange Loop 2019 liveblog',
         baseUrl: '/strange-loop',
         meta: {
-            title: 'Strange Loop liveblog',
+            title: 'Strange Loop 2019 liveblog',
             description: 'Check out the official Strange Loop 2019 Liveblog proudly hosted by Sourcegraph.',
             image: 'https://about.sourcegraph.com/blog/strange-loop-banner-landscape.jpg',
         },
