@@ -66,7 +66,7 @@ Neither CODEOWNERS nor OWNERs were designed with all these requirements in mind,
 
 As the name implies, Codenotify is designed around the concept of notifications, not about establishing "ownership" of code or mandating "reviewers". Codenotify works on the command line and is codehost agnostic at its core, but it is also packaged as a GitHub Action so it is easy for repositories on GitHub, like ours, to adopt. The GitHub Action sends notifications to subscribers by mentioning them in a comment instead of adding them to the official "reviewers" or "assignees" lists on GitHub.
 
-Notification rules are stored in [CODENOTFY files](https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md#codenotify-files) in any directory. This makes rules more maintainable and less brittle to moving code because the CODENOTIFY files are adjacent to the files they have rules for.
+Notification rules are stored in [CODENOTIFY files](https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md#codenotify-files) in any directory. This makes rules more maintainable and less brittle to moving code because the CODENOTIFY files are adjacent to the files they have rules for.
 
 Codenotify rules and files are familiar in syntax to CODEOWNERS, but simpler to understand because each rule is additive, not hierarchical. This means that you can understand how a single rule behaves without needing to consider any other rules (unlike OWNERS or CODEOWNERS).
 
