@@ -68,7 +68,7 @@ As the name implies, Codenotify is designed around the concept of notifications,
 
 Notification rules are stored in [CODENOTFY files](https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md#codenotify-files) in any directory. This makes rules more maintainable and less brittle to moving code because the CODENOTIFY files are adjacent to the files they have rules for.
 
-Codenotify rules and files are familiar in syntax to CODEOWNERs, but simpler to understand because each rule is additive, not hierarchical. This means that you can understand how a single rule behaves without needing to consider any other rules (unlike OWNERS or CODEOWNERS).
+Codenotify rules and files are familiar in syntax to CODEOWNERS, but simpler to understand because each rule is additive, not hierarchical. This means that you can understand how a single rule behaves without needing to consider any other rules (unlike OWNERS or CODEOWNERS).
 
 ## Starting our experiment
 
