@@ -69,7 +69,7 @@ Once your contract is signed, you will need to purchase and expense your Sourceg
 
 **Moving (moving, packing, shipping, etc.):** $1000/year
 
-**Wellness:** $85/month
+**Wellness:** $85/month. If you spend more than $85 in a month (for example, prepaying for a year of gym membership), you can carry it forward. It will be broken it down into monthly reimbursements of $85 until you reach the total. Accounting will be tracking these via spreadsheet, so if you have a wellness expense exceeding $85, please reach out to noemi@sourcegraph.com via email with proof of the purchase or membership and we will add it to the spreadsheet for monthly tracking.
 
 ## Other expenses:
 
