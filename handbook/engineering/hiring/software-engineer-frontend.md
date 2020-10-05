@@ -15,7 +15,7 @@ We are looking for frontend engineers who know how to build intuitive user exper
 ## Qualifications
 
 - Experience in writing [SPAs](https://en.wikipedia.org/wiki/Single-page_application) using React or similar component-based frontend frameworks.
-- Familiarity TypeScript or a different typed programming language.
+- Familiarity with TypeScript or a different typed programming language.
 - Knowledge of CSS.
 - Knowledge of semantic HTML.
 - Experience in using backend APIs from the frontend.
