@@ -70,9 +70,9 @@ Notification rules are stored in [CODENOTIFY files](https://sourcegraph.com/gith
 
 Codenotify rules and files are familiar in syntax to CODEOWNERS, but simpler to understand because each rule is additive, not hierarchical. This means that you can understand how a single rule behaves without needing to consider any other rules (unlike OWNERS or CODEOWNERS).
 
-<div style="padding: 1em 2em; background-color: lightblue;">
-If you want to learn more about Codenotify or try it out for yourself, then the project's [readme](https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md) has everything you need to know!
-</div>
+<p style="padding: 1em 2em; background-color: lightblue;">
+If you want to learn more about Codenotify or try it out for yourself, then the project's <a href="https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md">README</a> has everything you need to know!
+</p>
 
 ## Starting our experiment
 
