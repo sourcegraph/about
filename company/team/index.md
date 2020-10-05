@@ -110,7 +110,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - VP Engineering
 - Belmont, CA, USA 🇺🇸
-- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [nicksnyder](https://github.com/nicksnyder), [Twitter](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [manager docs](nick.md), [pronounce my name 🔊](https://name-coach.com/nickdsnyder)
+- [nick@sourcegraph.com](mailto:nick@sourcegraph.com), [GitHub](https://github.com/nicksnyder), [Twitter](https://twitter.com/nickdsnyder), [LinkedIn](https://www.linkedin.com/in/nickdsnyder/), [manager docs](nick.md), [pronounce my name 🔊](https://name-coach.com/nickdsnyder)
 - Nick started writing code in CS 101 at Vanderbilt and loved it so much that he graduated 4 years later with a B.S and M.S. in Computer Science. Since then, Nick has spent most of his career as a software engineer working with a variety of technologies at companies large and small, and now enjoys building teams. Nick has a wife, a daughter, and a son, and likes to sail on the San Francisco Bay as often as his calendar permits.
 
 ## Thorsten Ball (he/him)
