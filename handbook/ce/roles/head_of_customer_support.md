@@ -12,7 +12,7 @@ We are looking for a senior hire to lead our support efforts in our Customer Eng
 ### In the first 90 days you will…
 * Take full ownership of our support process.
 * Run an evaluation of our support tools, integrations, SLA, and processes and propose recommendations for improvement.
-* Begin actioning the approved improvement plan.
+* Begin implementing the approved improvement plan.
 
 ### In the first year you will…
 * Be able to point to product and documentation improvements which were implemented due to metrics the support process provided.
