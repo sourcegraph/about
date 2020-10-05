@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "InfoWorld",
+      "newsTitle": "The best open source software of 2020",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.infoworld.com/article/3575858/the-best-open-source-software-of-2020.html#slide24",
+      "newsImage": "/external-logos/infoworld-bossie-awards-2020.png"
+    },
+    {
       "newsSource": "Ars Technica",
       "newsTitle": "Emerging Startups 2020: Top Application Development Tools",
       "newsDate": "October 1, 2020",
