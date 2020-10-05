@@ -425,6 +425,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [alan@sourcegraph.com](mailto:alan@sourcegraph.com), [robot](https://github.com/flying-robot)
 - Alan lives in the DC metro area with his wife, cat and somewhat excessive collection of books. When not illuminated by the gentle glow of a monitor, you'll probably find him toiling away behind a drum kit or watching yet another horror movie from the 1980s (seriously, they're fantastic). Just a regular dude, and totally not three chipmunks in a trench coat.
 
+## Joe Kirscher (he/him)
+
+- Strategy & Operations Manager
+- Mountain View, CA
+- [joe.kirscher@sourcegraph.com](mailto:joe.kirscher@sourcegraph.com)
+- Joe grew up in Nebraska before coming out to California for college. He has grown to love the mild weather and wine country around the Bay Area, which is fortunate, because he doesn't play football so they won't let him back into Nebraska.  After a couple years of consulting, he then spent a total of 10 years working in Sales Operations at Yahoo and FireEye and is now excited to help Sourcegraph scale up!
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
