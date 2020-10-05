@@ -36,6 +36,13 @@
       "newsImage": "/external-logos/bestgamingpro-logo.png"
     },
     {
+      "newsSource": "Developpez",
+      "newsTitle": "Les développeurs gèrent un volume de code 100",
+      "newsDate": "October 1, 2020",
+      "newsLink": "https://www.developpez.com/actu/309305/Les-developpeurs-gerent-un-volume-de-code-100-fois-plus-important-maintenant-qu-en-2010-dans-plus-de-langages-pour-plus-de-plateformes-que-jamais-Une-complexite-qui-a-un-impact-personnel-sur-eux/",
+      "newsImage": "/external-logos/developpez-logo.png"
+    },
+    {
       "newsSource": "Ars Technica",
       "newsTitle": "Emerging Startups 2020: Top Application Development Tools",
       "newsDate": "October 1, 2020",
