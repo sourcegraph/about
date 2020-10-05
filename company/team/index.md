@@ -238,7 +238,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Robert Lin
 
 - Software Engineer Intern
-- Taipei, Taiwan 🇹🇼 (GMT+8) 
+- Taipei, Taiwan 🇹🇼 (GMT+8)
 - [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [bobheadxi](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
 - If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final semester remotely studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
 
@@ -308,13 +308,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Berlin, Germany 🇩🇪
 - [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [stefanhengl](https://github.com/stefanhengl)
 - Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
-
-## Aida DeWitt (she/her)
-
-- Engineering Manager
-- San Francisco, CA, USA 🇺🇸
-- [aida@sourcegraph.com](mailto:aida@sourcegraph.com), [Twitter](https://twitter.com/aidaeology), [LinkedIn](https://www.linkedin.com/in/aidadewitt/), [pronounce my name 🔊](https://www.name-coach.com/aida-dewitt)
-- Aida is a Canadian expat living in the San Francisco bay area with her husband and cat. Aida started her fascination with 01s when she first learned about logic gates while building parallel and series circuits for a school project. In her spare time she enjoys spending time outdoors and creating a sustainable garden. Prior to Sourcegraph she was at Contentful and is passionate about system architecture and design. Aida graduated with a B.S. in Computer Science from Ryerson University in Toronto.
 
 ## Elizabeth Stirling (she/her)
 
@@ -405,10 +398,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Chris Surdi
 
-- Account Executive 
-- San Francisco, Ca, USA, 🇺🇸 
+- Account Executive
+- San Francisco, Ca, USA, 🇺🇸
 - [chris.surdi@sourcegraph.com](mailto:chris.surdi@sourcegraph.com)
-- I’m a serial entrepreneur and angel employee with a passion for disruptive technology and sales. I live north of San Francisco with my wife Meliza and three kids - Truson, Kaison and Crimson. I'm originally from back East and moved out to the West Coast in 2003 to be involved in startups, technology, and innovation. I'm grateful to say I'm doing everything I've set myself out to achieve at this point. 
+- I’m a serial entrepreneur and angel employee with a passion for disruptive technology and sales. I live north of San Francisco with my wife Meliza and three kids - Truson, Kaison and Crimson. I'm originally from back East and moved out to the West Coast in 2003 to be involved in startups, technology, and innovation. I'm grateful to say I'm doing everything I've set myself out to achieve at this point.
 
 ## Joel Kwartler (he/him)
 
@@ -430,7 +423,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Strategy & Operations Manager
 - Mountain View, CA, USA 🇺🇸
 - [joe.kirscher@sourcegraph.com](mailto:joe.kirscher@sourcegraph.com)
-- Joe grew up in Nebraska before coming out to California for college. He has grown to love the mild weather and wine country around the Bay Area, which is fortunate, because he doesn't play football so they won't let him back into Nebraska.  After a couple years of consulting, he then spent a total of 10 years working in Sales Operations at Yahoo and FireEye and is now excited to help Sourcegraph scale up!
+- Joe grew up in Nebraska before coming out to California for college. He has grown to love the mild weather and wine country around the Bay Area, which is fortunate, because he doesn't play football so they won't let him back into Nebraska. After a couple years of consulting, he then spent a total of 10 years working in Sales Operations at Yahoo and FireEye and is now excited to help Sourcegraph scale up!
 
 <!-- Paste *your* section above this line by following our template below:
 
@@ -444,5 +437,3 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Bio (hobbies, work experience, family, pets, etc.)
 
 -->
-
-

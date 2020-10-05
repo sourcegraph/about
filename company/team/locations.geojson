@@ -316,19 +316,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Aida DeWitt"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.26993560791016,
-          37.86943313301452
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Chayim Kirshen"
       },
       "geometry": {
