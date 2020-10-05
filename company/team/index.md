@@ -431,6 +431,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Mountain View, CA, USA 🇺🇸
 - [joe.kirscher@sourcegraph.com](mailto:joe.kirscher@sourcegraph.com)
 - Joe grew up in Nebraska before coming out to California for college. He has grown to love the mild weather and wine country around the Bay Area, which is fortunate, because he doesn't play football so they won't let him back into Nebraska.  After a couple years of consulting, he then spent a total of 10 years working in Sales Operations at Yahoo and FireEye and is now excited to help Sourcegraph scale up!
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
