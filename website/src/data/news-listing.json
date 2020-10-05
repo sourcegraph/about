@@ -1,6 +1,48 @@
 {
   "y2020": [
     {
+      "newsSource": "InfoWorld",
+      "newsTitle": "The best open source software of 2020",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.infoworld.com/article/3575858/the-best-open-source-software-of-2020.html#slide24",
+      "newsImage": "/external-logos/infoworld-bossie-awards-2020.png"
+    },
+    {
+      "newsSource": "Developer Tech",
+      "newsTitle": "51% of devs say they’re dealing with 100x more code than 10 years ago",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://developer-tech.com/news/2020/oct/05/51-percent-devs-100-times-more-code-10-years-ago/",
+      "newsImage": "/external-logos/developer-tech-logo.png"
+    },
+    {
+      "newsSource": "Fudzilla",
+      "newsTitle": "Developers dealing with more code than before",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.fudzilla.com/news/51645-developers-dealing-with-more-code-than-before",
+      "newsImage": "/external-logos/fudzilla-logo.png"
+    },
+    {
+      "newsSource": "Slashdot",
+      "newsTitle": "51% of Developers Say They're Managing 100 Times More Code Than a Decade Ago",
+      "newsDate": "October 4, 2020",
+      "newsLink": "https://developers.slashdot.org/story/20/10/04/0157214/51-of-developers-say-theyre-managing-100-times-more-code-than-a-decade-ago",
+      "newsImage": "/external-logos/slashdot-logo.png"
+    },
+    {
+      "newsSource": "Best Gaming Pro",
+      "newsTitle": "Sourcegraph: Devs are managing 100x more code now than they did in 2010",
+      "newsDate": "October 2, 2020",
+      "newsLink": "https://bestgamingpro.com/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/",
+      "newsImage": "/external-logos/bestgamingpro-logo.png"
+    },
+    {
+      "newsSource": "Developpez",
+      "newsTitle": "Les développeurs gèrent un volume de code 100",
+      "newsDate": "October 1, 2020",
+      "newsLink": "https://www.developpez.com/actu/309305/Les-developpeurs-gerent-un-volume-de-code-100-fois-plus-important-maintenant-qu-en-2010-dans-plus-de-langages-pour-plus-de-plateformes-que-jamais-Une-complexite-qui-a-un-impact-personnel-sur-eux/",
+      "newsImage": "/external-logos/developpez-logo.png"
+    },
+    {
       "newsSource": "Ars Technica",
       "newsTitle": "Sourcegraph: Devs are managing 100x more code now than they did in 2010",
       "newsDate": "October 1, 2020",
@@ -9,9 +51,9 @@
     },
     {
       "newsSource": "Sourcegraph",
-      "newsTitle": "Press Release: Big Code Presents Challenges For Development Teams Across All Industries",
+      "newsTitle": "Press Release: Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries",
       "newsDate": "October 1, 2020",
-      "newsLink": "http://www.globenewswire.com/news-release/2020/10/01/2102418/0/en/Survey-Findings-Reveal-Big-Code-Presents-Challenges-For-Development-Teams-Across-All-Industries.html",
+      "newsLink": "/press-release/big-code-survey-2020",
       "newsImage": "/sourcegraph-mark.png"
     },
     {
