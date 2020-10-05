@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Ars Technica",
+      "newsTitle": "Emerging Startups 2020: Top Application Development Tools",
+      "newsDate": "October 1, 2020",
+      "newsLink": "https://arstechnica.com/gadgets/2020/10/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/",
+      "newsImage": "/external-logos/ars-technica-logo.png"
+    },
+    {
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries",
       "newsDate": "October 1, 2020",
