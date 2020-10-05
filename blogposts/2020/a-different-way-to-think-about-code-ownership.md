@@ -70,6 +70,8 @@ Notification rules are stored in [CODENOTIFY files](https://sourcegraph.com/gith
 
 Codenotify rules and files are familiar in syntax to CODEOWNERS, but simpler to understand because each rule is additive, not hierarchical. This means that you can understand how a single rule behaves without needing to consider any other rules (unlike OWNERS or CODEOWNERS).
 
+> If you want to learn more about Codenotify or try it out for yourself, then the project's [readme](https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md) has everything you need to know!
+
 ## Starting our experiment
 
 After I had a working prototype of Codenotify, it was time to actually experiment. Experimentation is a great way to discover unforeseen costs and benefits, and learn whether hypothetical problems are problems in practice.
