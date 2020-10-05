@@ -8,6 +8,34 @@
       "newsImage": "/external-logos/infoworld-bossie-awards-2020.png"
     },
     {
+      "newsSource": "Developer Tech",
+      "newsTitle": "51% of devs say they’re dealing with 100x more code than 10 years ago",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://developer-tech.com/news/2020/oct/05/51-percent-devs-100-times-more-code-10-years-ago/",
+      "newsImage": "/external-logos/developer-tech-logo.png"
+    },
+    {
+      "newsSource": "Fudzilla",
+      "newsTitle": "Developers dealing with more code than before",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.fudzilla.com/news/51645-developers-dealing-with-more-code-than-before",
+      "newsImage": "/external-logos/fudzilla-logo.png"
+    },
+    {
+      "newsSource": "Slashdot",
+      "newsTitle": "51% of Developers Say They're Managing 100 Times More Code Than a Decade Ago",
+      "newsDate": "October 4, 2020",
+      "newsLink": "https://developers.slashdot.org/story/20/10/04/0157214/51-of-developers-say-theyre-managing-100-times-more-code-than-a-decade-ago",
+      "newsImage": "/external-logos/slashdot-logo.png"
+    },
+    {
+      "newsSource": "Best Gaming Pro",
+      "newsTitle": "Sourcegraph: Devs are managing 100x more code now than they did in 2010",
+      "newsDate": "October 2, 2020",
+      "newsLink": "https://bestgamingpro.com/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/",
+      "newsImage": "/external-logos/bestgamingpro-logo.png"
+    },
+    {
       "newsSource": "Ars Technica",
       "newsTitle": "Emerging Startups 2020: Top Application Development Tools",
       "newsDate": "October 1, 2020",
