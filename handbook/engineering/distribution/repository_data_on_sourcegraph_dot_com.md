@@ -12,7 +12,7 @@ To force indexing a repository that is not indexed, do the following:
   - First get the ID of the database pod:
 
 ```
-$ get pods --all-namespaces | grep "prod.*pgsql"
+$ kubectl get pods --all-namespaces | grep "prod.*pgsql"
 prod            pgsql-XXXXXXXXXX-XXXXXX      2/2     Running     0          19d
 ```
   - `kubectl -n prod exec -it pgsql-XXXXXXXXXX-XXXXXX /bin/sh` - connect to the machine
