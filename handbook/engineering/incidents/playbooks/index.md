@@ -346,7 +346,7 @@ To change disk region or type, we need to first create a snapshot and then resto
 Snapshot:
 
 ```
-gcloud compute disks snapshot ${SOURCE_DISK_NAME} --project=${TARGET_PROJECT} --zone=${TARGET_ZONE} --snapshot-names ${SNAPSHOT_NAME}
+gcloud compute disks snapshot ${SOURCE_DISK_NAME} --project=${PROJECT} --zone=${SOURCE_ZONE} --snapshot-names ${SNAPSHOT_NAME}
 ```
 
 At this point, you can optionally delete the source disk.
@@ -354,7 +354,7 @@ At this point, you can optionally delete the source disk.
 Restore:
 
 ```
-gcloud compute disks create ${TARGET_DISK_NAME} --size ${TARGET_DISK_SIZE}--source-snapshot ${SNAPSHOT_NAME} --zone=${TARGET_ZONE} --type ${TARGET_DISK_TYPE}
+gcloud compute disks create ${TARGET_DISK_NAME} --project=${PROJECT} --size ${TARGET_DISK_SIZE} --source-snapshot ${SNAPSHOT_NAME} --zone=${TARGET_ZONE} --type ${TARGET_DISK_TYPE}
 ```
 
 _TARGET_DISK_SIZE has to be equal or larger than the original source disk._
