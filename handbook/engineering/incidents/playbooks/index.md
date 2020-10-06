@@ -329,7 +329,7 @@ For a full list of sites redirected from `sourcegraph.com/$KEY` reference the [r
 Moving a disk between projects requires multiple steps to ensure the disk is detached from its original source.
 
 - The initial disk can only be created using the same type. To change its type, you will have to snapshot the disk and restore as a new type.
-- The initial disks can only be moved to the same region as in their source project.
+- The initial disks can only be moved to the same region as their source project.
 
 Create a new disk in your target project from the old disk:
 
