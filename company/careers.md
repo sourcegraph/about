@@ -18,6 +18,7 @@ We're hiring! Check out our open positions:
 ### Product
 
 - [Product Manager](../handbook/product/roles/product_manager.md)
+- [Product Designer](../handbook/product/roles/product_designer.md)
 
 ### Sales
 
@@ -26,6 +27,7 @@ We're hiring! Check out our open positions:
 ### Customer engineering
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
+- [Head of Customer Support](../handbook/ce/roles/head_of_customer_support.md)
 
 ### Operations, finance, and legal
 

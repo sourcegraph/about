@@ -26,19 +26,14 @@ Arguments:
 
   All changes that will be part of `$MAJOR.$MINOR` (and all associated CHANGELOG updates) should be in `main` by tomorrow. Otherwise, they will not be included in the release.
   ```
-- [ ] Use `./dev/release-ping.sh` to ping teammates who have open issues or PRs in the milestone to
-  ask them to triage those that won't make it into the release.
 - [ ] Verify by posting in #product that there is a draft of the release blog post.
 
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE (4 work days before release): Branch cut
 
-- [ ] Verify for each CHANGELOG item the following (if any item does not have these, disable it,
-  notify the owner, and remove it from the CHANGELOG):
-  - It has an owner attached to it
-  - It has undergone manual QA (and the QA was done on k8s.sgdev.org or at scale if the feature requires it).
-  - It is covered by the regression test suite
-- [ ] Add a new section `## $MAJOR.MINOR` to [CHANGELOG.md](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#unreleased) immediately under `## Unreleased changes`. Add new empty sections under `## Unreleased changes` ([example](https://github.com/sourcegraph/sourcegraph/pull/2323)).
-- [ ] Commit this CHANGELOG edit to `main` using a PR. 
+- [ ] Update the changelog and merge the generated pull request:
+  ```
+  yarn run release changelog:cut $MAJOR.$MINOR.0
+  ```
 - [ ] Create the `$MAJOR.$MINOR` branch off the CHANGELOG commit in the previous step: `git branch $MAJOR.$MINOR && git push origin $MAJOR.$MINOR`.
 - [ ] Tag and announce the first release candidate:
   ```

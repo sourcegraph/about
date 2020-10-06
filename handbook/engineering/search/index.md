@@ -123,8 +123,8 @@ _Updated 2020-09-11_
           - Email
   - **Owner:** TBD
   - **Status:** Not started
-  - **Estimated start:** TODO
-  - **Estimated effort:** TODO
+  - **Estimated start:** 2020-11-02
+  - **Estimated effort:** 4 weeks
 
 ## Contact
 
@@ -133,12 +133,13 @@ _Updated 2020-09-11_
 
 ## Members
 
-- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md)) is focused on search, [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is supporting.
+- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md))
 - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
   - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
   - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
   - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
   - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
+  - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
 
 ## On-call
 

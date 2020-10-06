@@ -9,7 +9,7 @@ We maintain multiple instances of Sourcegraph:
 
 Learn more about how these work in [deployment basics](#deployment-basics). Also on this page:
 
-- [Kubernetes](#kubernetes): setting up access, tips, and more 
+- [Kubernetes](#kubernetes): setting up access, tips, and more
 - [Testing](#testing): deploying test instances of Sourcegraph
 - [deploy-sourcegraph](#deploy-sourcegraph): configuration for Kubernetes Sourcegraph deployments
 
@@ -86,6 +86,18 @@ git push origin release
 1. Go to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) and remove the `"extends:["default:automergeDigest"]` entry for the "Sourcegraph Docker images" group ([example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/commit/0eb16fd9e3ddfcf3a3c75ccdda0e7eddabf19c7a)).
 1. Once you have fixed the issue in the `main` branch of [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph), re-enable auto-deploys by reverting your change to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) from step 1.
 
+### Accessing sourcegraph.com database
+
+Sourcegraph.com utilizes an external HA database. You will need to connect to it directly. The easiest way to do this is through the `gcloud` cli.
+
+To connect to the production database:
+
+```
+  gcloud beta sql connect sg-cloud-732a936743 --user=sg -d sg --project sourcegraph-dev
+```
+
+The password is in our shared 1Password under [Google Cloud SQL](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/svfiw4vcbxhhbobpl442olyebu/)
+
 ### k8s.sgdev.org
 
 [![Build status](https://badge.buildkite.com/65c9b6f836db6d041ea29b05e7310ebb81fa36741c78f207ce.svg?branch=release)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
@@ -110,17 +122,18 @@ To promote a user to site admin (required to make configuration changes), use th
 
 ### sourcegraph.sgdev.org
 
-[![Build status](https://badge.buildkite.com/aea3b210380714ff4e0c5429beae87bb318e7fd53603acdecf.svg)](https://buildkite.com/sourcegraph/infrastructure)
+[![Build status](https://badge.buildkite.com/135a00d4fba76ec97944bfb2fc28015d1565e0525853b4de06.svg)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dogfood-server)
 
-This deployment runs the single-image version of Sourcegraph. It does not have a separate deployment configuration repository, and is deployed by the [infrastructure repository](https://github.com/sourcegraph/infrastructure).
+This deployment runs the single-image version of Sourcegraph. It is deployed by the [infrastructure repository](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-server) and uses the shared `dogfood` cluster (also used by [k8s.sgdev.org](#k8s-sgdev-org)).
 
 🚨 This deployment contains private code - do not use it for demos!
 
-- [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-a/dogfood?project=sourcegraph-dev)
+- [dogfood cluster on GCP](https://console.cloud.google.com/kubernetes/clusters/details/us-central1-f/dogfood?project=sourcegraph-dogfood)
   ```
-  gcloud container clusters get-credentials dogfood --zone us-central1-a --project sourcegraph-dev
+  gcloud container clusters get-credentials dogfood --zone us-central1-f --project sourcegraph-dogfood
   ```
-- [Kubernetes configuration](https://github.com/sourcegraph/infrastructure/tree/main/kubernetes/dogfood)
+- [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dogfood-server)
+- [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/main/dogfood)
 
 ## Kubernetes
 
@@ -447,14 +460,17 @@ These steps ensure that the diff between [deploy-sourcegraph-dot-com](https://gi
 In order to mimic the same workflow that we tell our customers to follow:
 
 - Customizations / documentation changes that **apply to all customers (not just sourcegraph.com)** should be:
+
   1. Merged into [`deploy-sourcegraph@master`](https://github.com/sourcegraph/deploy-sourcegraph/tree/master) (note that this will also [automatically update k8s.sgdev.org](#k8s-sgdev-org))
   1. Pulled into [`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master):
-     ```shell
-     git checkout master
-     git fetch upstream
-     git merge upstream/master
-     ```
-  1. Merged into [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) by merging from[`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master) - see [merging upstream](#merging-upstream-deploy-sourcegraph-into-deploy-sourcegraph-dot-com) for more details.
+  <pre>
+  git checkout master
+  git fetch upstream
+  git merge upstream/master
+  </pre>
+
+  1. Merged into [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) by merging from[`deploy-sourcegraph-dot-com@master`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/master)—see [merging upstream](#merging-upstream-deploy-sourcegraph-into-deploy-sourcegraph-dot-com) for more details.
+
 - Customizations / documentation changes that **apply to only sourcegraph.com** can be simply merged into the [`deploy-sourcegraph-dot-com@release`](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/release) branch.
 
 ### Merging upstream `deploy-sourcegraph` into `deploy-sourcegraph-dot-com`
