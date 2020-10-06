@@ -22,6 +22,13 @@
       "newsImage": "/external-logos/fudzilla-logo.png"
     },
     {
+      "newsSource": "Golem.de",
+      "newsTitle": "100-mal mehr Code als vor zehn Jahren",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.golem.de/news/softwareentwickler-100-mal-mehr-code-als-vor-zehn-jahren-2010-151298.html",
+      "newsImage": "/external-logos/golem.de-logo.png"
+    },
+    {
       "newsSource": "Slashdot",
       "newsTitle": "51% of Developers Say They're Managing 100 Times More Code Than a Decade Ago",
       "newsDate": "October 4, 2020",
@@ -90,6 +97,13 @@
       "newsDate": "August 3, 2020",
       "newsLink": "https://www.devopsdigest.com/sourcegraph-raises-additional-5-million-in-series-b-funding",
       "newsImage": "/external-logos/devops-digest-logo.png"
+    },
+    {
+      "newsSource": "SaaS Product Chat",
+      "newsTitle": "Podcast: Empresas API-céntricas y API como producto (starts 16:43)",
+      "newsDate": "July 23, 2020",
+      "newsLink": "https://saasproductchat.com/episodes/api",
+      "newsImage": "/external-logos/saas-product-chat-logo.png"
     },
     {
       "newsSource": "Wall Street Journal",
