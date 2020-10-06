@@ -99,6 +99,13 @@
       "newsImage": "/external-logos/devops-digest-logo.png"
     },
     {
+      "newsSource": "SaaS Product Chat",
+      "newsTitle": "Podcast: Empresas API-céntricas y API como producto (starts 16:43)",
+      "newsDate": "July 23, 2020",
+      "newsLink": "https://saasproductchat.com/episodes/api",
+      "newsImage": "/external-logos/saas-product-chat-logo.png"
+    },
+    {
       "newsSource": "Wall Street Journal",
       "newsTitle": "Tech Startup Funding Declines as Pandemic Drags On",
       "newsDate": "July 23, 2020",
