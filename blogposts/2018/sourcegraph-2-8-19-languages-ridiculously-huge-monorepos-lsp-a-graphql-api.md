@@ -80,12 +80,12 @@ Code intelligence is most powerful when it's available in your code review tool.
 
 ## User authentication providers: easier, more configurable ways for users to sign into Sourcegraph
 
-We've improved Sourcegraph's support for user authentication providers, which allow users to sign into Sourcegraph using their existing accounts in your organization's SSO/directory service. Support is included for SAML, OpenID Connect (including G Suite for Google accounts), and HTTP authentication proxies.
+We've improved Sourcegraph's support for user authentication providers, which allow users to sign into Sourcegraph using their existing accounts in your organization's SSO/directory service. Support is included for SAML, OpenID Connect (including Google Workspace for Google accounts), and HTTP authentication proxies.
 
 - The new site configuration property `auth.providers` defines the list of authentication providers in one place (instead of having authentication configuration scattered among `auth.provider` and other `auth.*` properties). Backcompat for the old (now-deprecated) `auth.provider` configuration is maintained.
 - All authentication provider configuration changes are reflected immediately (in Sourcegraph) without the need for a restart.
 - Error messages describing authentication configuration problems are much better, both for end users and for site admins.
-- Improved user authentication provider documentation with clear steps for multiple commonly used services (Okta, OneLogin, G Suite, etc.).
+- Improved user authentication provider documentation with clear steps for multiple commonly used services (Okta, OneLogin, Google Workspace, etc.).
 - Single-logout and token revocation are supported for OpenID Connect and SAML, so users can sign out of both Sourcegraph and the authentication provider.
 - Site admins can see who has signed into Sourcegraph via an authentication provider and inspect auth/account details for troubleshooting.
 

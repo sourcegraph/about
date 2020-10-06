@@ -55,7 +55,7 @@
 /docs/extensions https://docs.sourcegraph.com/extensions 301!
 /docs/features/api https://docs.sourcegraph.com/api/graphql 301!
 /docs/features/browser-extension https://docs.sourcegraph.com/integration/browser_extension 301!
-/docs/features/browser-extension/g-suite-installation https://docs.sourcegraph.com/integration/google_gsuite 301!
+/docs/features/browser-extension/g-suite-installation https://docs.sourcegraph.com/integration/google_workspace 301!
 /docs/features/search-shortcuts https://docs.sourcegraph.com/integration/browser_search_engine 301!
 /docs/integrations https://docs.sourcegraph.com/integration 301!
 /docs/integrations/editor-plugins https://docs.sourcegraph.com/integration/editor 301!
