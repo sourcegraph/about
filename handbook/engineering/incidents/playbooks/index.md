@@ -496,3 +496,17 @@ spec:
 ```
 
 ## Export/Import a Cloud SQL database
+
+Exporting/Importing a database to Cloud SQL using `gcloud` requires the export to existing in a Google Storage bucket and it can be performed across GCP projects.
+
+Export:
+
+```
+gcloud --project=${SOURCE_PROJECT} sql export sql ${SOURCE_SERVER_NAME} 'gs://some-bucket/Cloud_SQL_Export_${SQL_SERVER_NAME}_${DB_NAME}' --database=${SOURCE_DB_NAME}
+```
+
+Import:
+
+```
+gcloud --project=${TARGET_PROJECT} sql import sql ${TARGET_SERVER_NAME} 'gs://some-bucket/Cloud_SQL_Export_${SOURCE_SERVER_NAME}_${SOURCE_DB_NAME}' --database=${TARGET_DB_NAME}
+```
