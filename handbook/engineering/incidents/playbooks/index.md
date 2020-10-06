@@ -74,9 +74,10 @@ Open the alert UI to click on the check URL that was failing and verify it's now
 Statefulsets are different to a deployment in that all pods must be in a healthy state before changes can be made.
 
 Currently sourcegraph uses statefulsets for the following services:
-  * gitserver
-  * grafana
-  * indexed-search
+
+- gitserver
+- grafana
+- indexed-search
 
 In order to push an update to a failing statefulset take the following action:
 
@@ -85,11 +86,13 @@ In order to push an update to a failing statefulset take the following action:
 ```console
 `kubectl apply -f <service.StatefulSet.yaml>`
 ```
+
 ### 2. Delete the pods in the stateful set:
 
 ```console
 REPLICAS=`kubectl get sts -n prod <statefulset> -o jsonpath={.spec.replicas}`; for i in `seq 0 $[REPLICAS-1]`; do POD=<statefulset>-$i;   echo "Deleting POD $POD";   kubectl delete pod -n prod $POD ; done
 ```
+
 ### 3. The statesfulset controller will now restart the pods. Verify the pods are starting successfully.
 
 ```console
@@ -314,8 +317,50 @@ Several of our static sites are hosted by Netlify at `about.sourcegraph.com`. Yo
 If you discover an issue with Netlify but their status page is not displaying it, open a support request using the credentials in 1Password.
 
 Sites:
+
 - `about.sourcegraph.com`
 - `sourcegraph.com/about` -307-> `about.sourcegraph.com/about`
 - `sourcegraph.com/pricing` -307-> `about.sourcegraph.com/pricing`
 
 For a full list of sites redirected from `sourcegraph.com/$KEY` reference the [router code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/internal/app/ui/router.go#L86) in our frontend.
+
+## Moving a GCE disk between projects
+
+Moving a disk between projects requires multiple steps to ensure the disk is detached from its original source.
+
+- The initial disk can only be created using the same type. To change its type, you will have to snapshot the disk and restore as a new type.
+- The initial disks can only be moved to the same region as in their source project.
+
+Create a new disk in your target project from the old disk:
+
+```
+gcloud compute disks create ${TARGET_DISK_NAME} --source-disk=https://www.googleapis.com/compute/v1/projects/${SOURCE_PROJECT}/zones/${SOURCE_ZONE}/disks/${PVC_NAME} --project=${TARGET_PROJECT} --zone=${TARGET_ZONE} --type ${SOURCE_TYPE}
+```
+
+We now have to snapshot and restore the disk, to ensure the disk is unlinked from its source disk. This process is the same as its used to [change a disk zone or type](#changing-a-gce-disk-zone-or-type), please follow that playbook.
+
+## Changing a GCE disk zone or type
+
+To change disk region or type, we need to first create a snapshot and then restore it to the new region or type.
+
+Snapshot:
+
+```
+gcloud compute disks snapshot ${SOURCE_DISK_NAME} --project=${TARGET_PROJECT} --zone=${TARGET_ZONE} --snapshot-names ${SNAPSHOT_NAME}
+```
+
+At this point, you can optionally delete the source disk.
+
+Restore:
+
+```
+gcloud compute disks create ${TARGET_DISK_NAME} --size ${TARGET_DISK_SIZE}--source-snapshot ${SNAPSHOT_NAME} --zone=${TARGET_ZONE} --type ${TARGET_DISK_TYPE}
+```
+
+_TARGET_DISK_SIZE has to be equal or larger than the original source disk._
+
+There is an [alias command](https://cloud.google.com/sdk/gcloud/reference/compute/disks/move) that performs the `snapshot -> restore` operation automatically to switch regions, but it fails on big disks.
+
+## Linking a PV/PVC to a GCE disk
+
+## Export/Import a Cloud SQL database
