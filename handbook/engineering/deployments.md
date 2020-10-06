@@ -106,7 +106,7 @@ You can also query the production database via BigQuery as an external data sour
 
 See an [example query](https://console.cloud.google.com/bigquery?sq=527047051561:bfa7c7e57f884d209f261d15e4610229) to get started.
 
-**Note**:This method only permits read-only access
+**Note**: This method only permits read-only access
 
 ### k8s.sgdev.org
 
