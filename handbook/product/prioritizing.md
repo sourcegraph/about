@@ -58,7 +58,7 @@ However, extenuating circumstances exist that would encourage us to break this r
 
 - A bug that is significantly impacting Sourcegraph Cloud.
 - A bug that is significantly impacting a managed or on-premise instance.
-- A bug that is significantly impacting a prospective customer (less important).
+- A bug that is significantly impacting a prospective customer.
 - Critical, time-sensitive opportunities.
 
 Important questions to ask while re-prioritizing and proposing solutions for critical, short-term work:
