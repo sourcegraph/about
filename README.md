@@ -34,7 +34,7 @@ yarn start
 
 We want and encourage everyone at Sourcegraph to contribute to the blog and publishing a blog post is as simple as merging an approved pull request with your blog content.
 
-Learn how to [create and publish a blog post](https://about.sourcegraph.com/handbook/marketing/creating_blog_posts.md).
+Learn how to [create and publish a blog post](https://about.sourcegraph.com/handbook/marketing/creating_blog_posts).
 
 ## Handbook
 
