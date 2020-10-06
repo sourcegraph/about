@@ -363,7 +363,7 @@ There is an [alias command](https://cloud.google.com/sdk/gcloud/reference/comput
 
 ## Linking a PV/PVC to a GCE disk
 
-When restoring a disks from a snapshot, or if for other reasons we need to re-link a disk to a PersistentVolume and its associated PersistentVolumeClaim, we will need to adapt the Kubernetes resource definitions to link the existing GCE disk to GKE.
+When we need to re-link a disk to a PersistentVolume and its associated PersistentVolumeClaim because we are restoring a disks from a snapshot or for some other reasons, we will need to adapt the Kubernetes resource definitions to link the existing GCE disk to GKE.
 
 Example PVC:
 
