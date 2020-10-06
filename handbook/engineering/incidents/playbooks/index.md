@@ -363,4 +363,136 @@ There is an [alias command](https://cloud.google.com/sdk/gcloud/reference/comput
 
 ## Linking a PV/PVC to a GCE disk
 
+When restoring a disks from a snapshot, or if for other reasons we need to re-link a disk to a PersistentVolume and its associated PersistentVolumeClaim, we will need to adapt the Kubernetes resource definitions to link the existing GCE disk to GKE.
+
+Example PVC:
+
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: MyDisk
+  namespace: SomeNamespace
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+
+We will first ensure that the Claim is directly linked to an fixed Persistent Volume by setting the `claimRef` to the desired PVC. You also need to ensure that the `accessModes`, `capacity` and all other settings match between the claim and the volume.
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: MyDisk
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    name: MyDisk
+    namespace: SomeNamespace
+  storageClassName: SomeStorageClass
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: MyDisk
+  namespace: SomeNamespace
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+
+Lastly, we need to link the volume to a GCE disk by setting `gcePersistentDisk`. We must ensure that `gcePersistentDisk.pdName` matches the disk name in GCE.
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: MyDisk
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    name: MyDisk
+    namespace: SomeNamespace
+  gcePersistentDisk:
+    fsType: ext4
+    pdName: SomeGCEDisk
+  storageClassName: SomeStorageClass
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: MyDisk
+  namespace: SomeNamespace
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+
+### StatefulSets
+
+There are some additional steps when dealing with an `StatefulSet` as claims are not statically defined and we need to ensure the generated `PersistentVolumeClaim`s match the static `PersistentVolume`s.
+
+First, discard the `PersistentVolumeClaim` sections from the previous step, and inspect the `volumeClaimTemplates` section of the `StatefulSet`.
+
+```
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: MySet
+  namespace: SomeNamespace
+[...]
+spec:
+  [...]
+  replicas: 1
+  volumeClaimTemplates:
+    - metadata:
+        name: DataDisk
+      spec:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: SomeStorageClass
+```
+
+Kubernetes will generate the `PersistentVolumeClaim` name using the `metadata.name` and `spec.volumeClaimTemplates.metadata.name` using the following format `${spec.volumeClaimTemplates.metadata.name}-${metadata.name}-${replica-index}` and will set the `claimRef.namespace` using `metadata.name`.
+
+Example `PersistentVolume` using the previous `volumeClaimTemplates`:
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: DataDisk-0
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    name: DataDisk-MySet-0
+    namespace: SomeNamespace
+  gcePersistentDisk:
+    fsType: ext4
+    pdName: SomeGCEDisk
+  storageClassName: SomeStorageClass
+```
+
 ## Export/Import a Cloud SQL database
