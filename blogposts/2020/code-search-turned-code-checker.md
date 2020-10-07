@@ -37,7 +37,7 @@ published: true
   }
 </style>
 
-I find static code checkers most valuable when they help teach me better ways to
+I find static code checkers most valuable when they teach me better ways to
 code in a language or framework. For example, the Go
 [staticcheck](https://staticcheck.io/docs/checks#SA6005) tool finds expensive
 string comparisons like:
@@ -56,9 +56,9 @@ if strings.EqualFold(string1, string2) {
 }
 ```
 
-I find these short-and-sweet replacements are a great way to learn framework
-idioms or library functions, like `strings.EqualFold` in Go.<sup>1</sup> As a
-codebase grows, these small inefficiences, inconsistencies, and missed
+These short-and-sweet replacements are a great way to learn framework
+idioms or library functions, like `strings.EqualFold` in Go.<sup>1</sup> And as a
+codebase grows, small inefficiences like this one, and inconsistencies
 opportunities compound. Code patterns creep in that affect readability and
 performance—[and it matters](https://www.digitalocean.com/blog/how-to-efficiently-compare-strings-in-go/?).
 
@@ -70,16 +70,16 @@ Others, like lint checks, typically integrate with editors. These workflows need
 some upfront configuration, the code checks are fixed in place, and productivity
 ensues (🤞).
 
-A code search can also find code snippets to replace with functions like
+Searching code can also find code snippets to replace with functions like
 `EqualFold`. In practice though, search engines generally treat code as
 plaintext, and can't offer the fidelity of dedicated code checkers. Code
 checkers do more work to gather static information of programs, e.g., parsing
 syntax into trees and using build outputs like types and dependency graphs. It
-takes time to gather this info, it takes knowledge to write checks that use this
-info, and it takes time to hook it into your workflow. These constraints take away the
+takes time to gather this information, it takes knowledge to write checks that use it,
+info, and it takes time to hook these checks into your workflow. These constraints take away the
 flexibility and speed of search workflows when you're simply looking for changes
 to your favorite
-`BananaNutChocolateCake Provider`[↗](https://sourcegraph.com/search?q=BananaNutChocolateCake&patternType=literal).
+`ChocolateCake`[↗](https://sourcegraph.com/search?q=ChocolateCake&patternType=literal)
 
 And yet, I can't shake the idea that there's a middle ground between crude
 plaintext search and dedicated code checkers. What if the `EqualFold` check I
@@ -92,12 +92,12 @@ the ease of a flexible, push-button search workflow.
 ## Pushing code search toward static code checking
 
 Earlier this year Sourcegraph introduced [structural search](blog/going-beyond-regular-expressions-with-structural-code-search/)
-to search over code syntax. Structural search uses [comby](https://comby.dev) to implement
-a basic building block in traditional code checkers: it interprets programs as
-concrete syntax trees, not just plaintext. Sourcegraph search queries now also support patterns with
-`or` clauses to search for multiple patterns. Add some file filters, and
-it's becomes possible to write configurable code checks as self-contained search queries.
-Let's explore this idea!
+to search over code syntax. Structural search uses [comby](https://comby.dev) to
+implement a basic building block in traditional code checkers: it interprets
+programs as concrete syntax trees, not just plaintext. Combine that with new
+support for `or` clauses to search for multiple patterns and add some file
+filters, and it becomes possible to write configurable code checks as
+self-contained search queries. Let's explore this idea!
 
 Here's a search query inspired by
 [a check](https://staticcheck.io/docs/checks#S1003) where `strings.Index`
@@ -105,8 +105,8 @@ comparisons can be replaced with `strings.Contains`:
 
 ```python
 language:go
--file:test
--file:vendor
+not file:test
+not file:vendor
 
 strings.Index(..., ...) > -1
 
@@ -138,8 +138,7 @@ the query. Have a look at some of the results:
 The query finds matches in some of the most popular Go projects in a
 couple of seconds. An exhaustive search shows that there are at least 14 matches
 at the time of writing. For this flavor of syntactic change, I have a good sense
-that these are real hits of code that can be improved (we'll explore
-proposing changes to projects later in this blog.)
+that these are real hits of code that can be improved.
 
 ## Adding more code checks
 
@@ -184,7 +183,7 @@ patterns only from documentation.
 ### Results
 
 Without making any claims about completeness, I was able to implement
-at least one variant for 19 out of 34 checks checks that I feel confident
+at least one variant for 19 out of 34 checks that I feel confident
 about. I relied only on patterns in `staticcheck`'s test data to discover syntactic
 variants for checks, so I don't know if I covered all the patterns that
 `staticcheck` implements in its code.
@@ -216,8 +215,8 @@ downloading the 100 Go repositories to disk, and running `staticcheck` on them
 to see how the same patterns are found. For `staticcheck` to be effective, the
 project typically needs to be built first (my experience was that running
 `staticcheck` on individual files can be hit-and-miss, and understandably so). I
-didn't like the idea of doing all that work, so I punted. It does nicely motivate
-why less precise, but quicker code check workflows appeal.<sup>5</sup>
+didn't like the idea of doing all that work, so I punted. It does highlight the
+appeal of quicker, but less precise code check workflows.<sup>5</sup>
 
 ### Takeaway
 
@@ -235,7 +234,7 @@ everything at once:
 
 [🔘 Run all the code checks on popular Go projects ↗](https://sourcegraph.com/search/console?q=repogroup:go-gh-100%0Alang:go%0A-file:test%0A-file:vendor%0A-file:Godeps%0Apatterntype:structural%0A%0Astrings.ToLower(...)%20==%20strings.ToLower(...)%20or%0Astrings.IndexRune(...,%20...)%20%3E%20-1%20or%0Astrings.IndexRune(...,%20...)%20%3E=%200%20or%0Astrings.IndexRune(...,%20...)%20!=%20-1%20or%0Astrings.IndexRune(...,%20...)%20==%20-1%20or%0Astrings.IndexRune(...,%20...)%20%3C%200%20or%0Astrings.IndexAny(...,%20...)%20%3E%20-1%20or%0Astrings.IndexAny(...,%20...)%20%3E=%200%20or%0Astrings.IndexAny(...,%20...)%20!=%20-1%20or%0Astrings.IndexAny(...,%20...)%20==%20-1%20or%0Astrings.IndexAny(...,%20...)%20%3C%200%20or%0Astrings.Index(...,%20...)%20%3E%20-1%20or%0Astrings.Index(...,%20...)%20%3E=%200%20or%0Astrings.Index(...,%20...)%20!=%20-1%20or%0Astrings.Index(...,%20...)%20==%20-1%20or%0Astrings.Index(...,%20...)%20%3C%200%20or%0A%0Abytes.Compare(...,%20...)%20==%200%20or%0Abytes.Compare(...,%20...)%20!=%200%20or%0A%0Afor%20:%5B~_%5D,%20:%5B~_%5D%20=%20range%20or%0A%0Afor%20true%20%7B...%7D%20or%0A%0A:%5Bs.%5D%5B:len(:%5Bs%5D)%5D%20or%0A%0Atime.Now().Sub(...)%20or%0A%0Aif%20strings.HasPrefix(:%5Bstr.%5D,%20:%5Bprefix.%5D)%20%7B%0A%20%20:%5Bstr.%5D%20=%20:%5Bstr.%5D%5Blen(:%5Bprefix%5D):%5D%0A%7D%0A%0Aor%0A%0Afor%20:%5Bi.%5D%20:=%200;%20:%5Bi.%5D%20%3C%20:%5Bn.%5D;%20:%5Bi.%5D%20%20%20%7B%0A%20%20:%5Bbs.%5D%5B:%5Bi%5D%5D%20=%20:%5Bbs.%5D%5B:%5Boffset.%5D%20:%5Bi.%5D%5D%0A%7D%0A%0Aor%0A%0Amake(...,%20:%5Bx%5D,%20:%5Bx%5D)%20or%20%0Amake(map%5B:%5B%5Bw%5D%5D%5D:%5B%5Bw%5D%5D,%200)%20or%0Amake(chan%20int,%200)%0A%0Aor%0A%0Afunc%20:%5Bfn.%5D(...)%20%7B%0A%20%20...return%0A%7D%20%0A%0Aor%20%0A%0Afunc()%20%7B%0A%20%20...return%0A%7D%0A%0Aor%0A%0A.Sub(time.Now())%0A%0Aor%0A%0Afmt.Println(%22%25s%22,%20%22...%22)%0A%0Aor%0A%0Aerrors.New(fmt.Sprintf(...))%0A%0Aor%0A%0Afor%20:%5B~_%5D,%20:%5B_.%5D%20:=%20range%20%5B%5Drune(...)%0A%0Aor%0A%0Asort.Sort(sort.IntSlice(...))%20or%0Asort.Sort(sort.StringSlice(...))%20or%0Asort.Sort(sort.StringSlice(...))%20%0A%0Aor%0A%0Aif%20:%5B~_%5D,%20ok%20:=%20:%5Bm.%5D%5B:%5Bk%5D%5D;%20ok%20%7B%0A%09:%5Bm.%5D%5B:%5Bk%5D%5D%20=%20append(:%5Bm.%5D%5B:%5Bk%5D%5D,%20%22:%5Bv1%5D%22,%20%22:%5Bv2%5D%22)%0A%7D%20else%20%7B%0A%09:%5Bm.%5D%5B:%5Bk%5D%5D%20=%20%5B%5Dstring%7B%22:%5Bv1%5D%22,%20%22:%5Bv2%5D%22%7D%0A%7D%0A%0Aor%0A%0Aif%20:%5B~_%5D,%20ok%20:=%20:%5Bm.%5D%5B:%5Bk%5D%5D;%20ok%20%7B%0A%09:%5Bm.%5D%5B:%5Bk%5D%5D%20=%20append(:%5Bm.%5D%5B:%5Bk%5D%5D,%20%22:%5Bv1%5D%22)%0A%7D%20else%20%7B%0A%09:%5Bm.%5D%5B:%5Bk%5D%5D%20=%20%5B%5Dstring%7B%22:%5Bv1%5D%22%7D%0A%7D%0A%0Aor%0A%0Aselect%20%7B%0A%09case%20%3C-time.After(0):%0A%7D%0A%0Aor%0A%0Afmt.Print(fmt.Sprintf(%22...%22,%20...))%20or%0Afmt.Println(fmt.Sprintf(%22...%22,%20...))%20or%0Afmt.Fprint(nil,%20fmt.Sprintf(%22...%22,%20...))%20or%0Afmt.Fprintln(nil,%20fmt.Sprintf(%22...%22,%20...))%20or%0Afmt.Sprint(fmt.Sprintf(%22...%22,%20...))%20or%0Afmt.Sprintln(fmt.Sprintf(%22...%22,%20...))%0A%0Aor%20%0A%0Afmt.Sprintf(%22%25s%22,%20%22...%22))
 <br />
-<sup>Side note: patterns run in order and results return early after finding "enough" matches.</sup>
+<sup>Side note: patterns run in order and results return early after finding at least 30 matches.</sup>
 
 The great thing about code checks as queries is that it's easy to simply
 delete patterns that we may not find as valuable. When I explored some
