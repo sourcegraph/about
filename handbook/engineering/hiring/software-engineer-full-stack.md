@@ -41,16 +41,15 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 ## Interview process
 
 1. You [apply here](https://jobs.lever.co/sourcegraph/cea553ce-ace7-4b44-8828-8d421e5e7e9c/apply).
-1. We review your application.
-1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
+1. We schedule a 1 hour interview with the hiring manager of one of the teams you expressed preference for. You'll talk about your past work and accomplishments in depth, how you worked with others, decisions you made and what you'd do differently today.
+   - Read through [our handbook](https://github.com/sourcegraph/about) to learn more about how we operate and to find answers to common questions that you might have. We leave 10 minutes at the end of this interview for you to ask any additional questions.
 1. You complete a 3-hour [coding exercise](software-engineer-coding-exercise.md#full-stack-coding-exercise) that we designed for you to be able to demonstrate your skills in building a small web application end-to-end.
    - Will be reviewed by 2 engineers chosen by the hiring manager of the team you expressed preference for.
-1. We schedule a 1 hour interview with the hiring manager of one of the teams you expressed preference for. You'll talk about your past work and accomplishments.
 1. We schedule additional interviews across multiple days.
    - 1h **Technical discussion:** We discuss your solution to the coding exercise, give you additional requirements and ask how you'd solve for those. We'll dive deeper into your technical knowledge.
      - Will interview with the same 2 engineers that reviewed your code exercise.
    - 1h **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
-     - Will interview with 2 of the following:
+     - Will interview with the Product Manager of the team you expressed preference for and 1 other of:
        - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
        - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
        - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
