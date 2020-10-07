@@ -1,5 +1,9 @@
 # Internal infrastructure
 
+## Sourcegraph deployments
+
+Internal deployments are documented in the [deployments](../deployments.md).
+
 ## Code host testing instances
 
 We maintain a collection of code hosts for testing purposes defined in our [infrastructure/dogfood](https://github.com/sourcegraph/infrastructure/tree/main/dogfood/kubernetes/tooling) cluster.
