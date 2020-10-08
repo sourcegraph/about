@@ -31,6 +31,7 @@ We will encourage and support you to:
 - The ability to proactively give maintenance to the design system when thinking about how new concepts impact the whole product.
 - A knack for giving and receiving feedback, and explaining the reasoning behind your designs.
 - A deep understanding of developers, and a strong understanding of Git and Git workflows.
+- Strong UI design skills
 
 ## Nice-to-haves
 
@@ -39,7 +40,7 @@ We will encourage and support you to:
 - Experience designing for of B2B or B2D (developer) applications.
 - Experience working with distributed or remote teams.
 - Experience building and implementing complex design systems.
-- Experience working on or leading big product redesign.
+- Experience working on or leading a product redesign.
 
 ## Learn more about us
 
@@ -57,7 +58,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. **Intro calls**: We chat with you about Sourcegraph and to find out what you are looking for in your next role.
    - [30 min] Recruiter call
    - [30 min] [HM intro call](./interviews/hm_intro_call.md) with [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
-1. [1 hr] **[Portfolio review](./interviews/pd_portfolio_review.md)**: You share a case study demonstrating your past work.
+1. [1 hr] **[Portfolio review](./interviews/pd_portfolio_review.md)**: You share a case study detailing demonstrating a specific project that you see as the most meaninguful and impactlful in your portfolio.
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
    - one of our Product Designers: [Rob Rhyne](../../../company/team/index.md#rob-rhyne), [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) or [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
 1. [2 hrs] **[Design exercise](./interviews/pd_design_exercise.md)**: We give you a problem statement and you walk us through your design process in a 2 hour block.
