@@ -1,8 +1,43 @@
 # Playbooks
 
+Many of these tips require kubectl usage - you can refer to the [deployment page's Kubernetes section](https://about.sourcegraph.com/handbook/engineering/deployments#kubernetes) to help you get set up and started with basic commands.
+
 ## [Sourcegraph.com is deleted entirely](dotcom_deleted_entirely.md)
 
 This playbook has a dedicated [page](dotcom_deleted_entirely.md)
+
+## Figure out why a pod is in CrashLoopBackoff
+
+`CrashLoopBackoff` indicates that a service is repeatedly failing to start. Instead of using Google Cloud Console to check the logs, the best way to figure out why a pod is in this state is to use the following commands:
+
+```sh
+kubectl get pods -o=wide --namespace=prod   # find the pod you are interested in
+kubectl describe --namespace=prod pod $POD_NAME
+```
+
+In the output, you'll find logs and a snippet like the following that can give more information about why a service has not started:
+
+```
+    State:         Waiting
+      Reason:      CrashLoopBackOff
+    Last State:    Terminated
+      Reason:      OOMKilled
+      Message:     690
+```
+
+Certain states like `Terminated` is not very clearly indicated in Google Cloud Console, and will usually not be properly indicated in logs either.
+
+## Restarting pods
+
+This action is also referred to as "bouncing pods" or to "bounce a pod". Follow the steps to [authenticate kubectl](../../deployments.md) and perform a restart using kubectl to restart the desired deployment:
+
+```sh
+kubectl rollout restart deployment/$SERVICE
+```
+
+Note the use of `deployment/` - you cannot restart services (`svc/`). Note that [stateful sets have a different process](#making-updates-to-stateful-sets).
+
+You can also bounce pods by manually finding them via `kubectl get pods` and `kubectl delete pod $POD_ID`. Once a pod is deleted, it will automatically be recreated.
 
 ## Free gitserver disk space on sourcegraph.com
 
@@ -102,18 +137,6 @@ watch -n1 kubectl get all -n prod -l app=gitserver -o wide
 ### 4. Verify service is restored
 
 Open the alert UI to click on the check URL that was failing and verify it's now working again.
-
-## Restarting pods
-
-This action is also referred to as "bouncing pods" or to "bounce a pod". Follow the steps to [authenticate kubectl](../../deployments.md) and perform a restart using kubectl to restart the desired deployment:
-
-```sh
-kubectl rollout restart deployment/$SERVICE
-```
-
-Note the use of `deployment/` - you cannot restart services (`svc/`). Note that [stateful sets have a different process](#making-updates-to-stateful-sets).
-
-You can also bounce pods by manually finding them via `kubectl get pods` and `kubectl delete pod $POD_ID`. Once a pod is deleted, it will automatically be recreated.
 
 ## Useful dashboards
 
