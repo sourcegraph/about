@@ -151,6 +151,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
     const [windowWidth, setWindowWidth] = useState(0);
     const [imagesWidth, setImagesWidth] = useState(0);
     const [scrollAnimation, setScrollAnimation] = useState(false);
+    const [readyToScroll, setReadyToScroll] = useState(false);
 
     const innerContainerRef = useRef<HTMLDivElement>(null);
     const firstLogoContainerRef = useRef(null);
@@ -199,17 +200,16 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
             logoElement?.parentNode?.insertBefore(thirdLogoContainerClone, logoElement.nextSibling);
             secondLogoContainerRefClone.current = secondLogoContainerClone;
             thirdLogoContainerRefClone.current = thirdLogoContainerClone;
-            setScrollAnimation(true);
+            setReadyToScroll(true);
         });
     },[]);
 
     useEffect(() => {
         if (scrollAnimation) {
+            console.log('ran')
             let logoElement = document.getElementById('logo-container-reference')!;
             logoElement.addEventListener('transitionend', transitionEnd);
-            setTimeout(() => {
-                transitionStart()
-            }, 500);
+            transitionStart();
         };
     }, [scrollAnimation]);
 
@@ -222,9 +222,9 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         const logoContainerTwo = secondLogoContainerRefClone.current!;
         const logoContainerThree = thirdLogoContainerRefClone.current!;
         let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
-        logoContainerOne.style.transition = '15s linear';
-        logoContainerTwo.style.transition = '15s linear';
-        logoContainerThree.style.transition = '15s linear';
+        logoContainerOne.style.transition = '20s linear';
+        logoContainerTwo.style.transition = '20s linear';
+        logoContainerThree.style.transition = '20s linear';
         logoContainerOne.style.transform = `translateX(${-totalWidth}px)`;
         logoContainerTwo.style.transform = `translateX(${-totalWidth}px)`;
         logoContainerThree.style.transform = `translateX(${-totalWidth}px)`;
@@ -242,7 +242,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         logoContainerTwo.style.transform = `translateX(0px)`;
         logoContainerThree.style.transform = `translateX(0px)`;
         setTimeout(() => {
-            transitionStart()
+            transitionStart();
         },0);
     };
 
@@ -267,6 +267,12 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         });
     };
 
+    function handleMouseEnter() {
+        if (readyToScroll) {
+            setScrollAnimation(true); //Start scroll
+        };
+    };
+
     function handleMouseMove(e) {
         if (showButton) buttonFollowsMouse(e);
     };
@@ -283,6 +289,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
             <div
                 ref={innerContainerRef}
                 className="customer-container-outer"
+                onMouseEnter={windowWidth > minDeviceWidth ? handleMouseEnter : null}
                 onMouseMove={windowWidth > minDeviceWidth ? handleMouseMove : null}
                 onMouseLeave={windowWidth > minDeviceWidth ? handleMouseLeaveInnerArea : null}
             >
