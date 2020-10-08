@@ -217,10 +217,13 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         if (scrollAnimation) {
             let logoElement = document.getElementById('logo-container-reference')!;
             logoElement.addEventListener('transitionend', transitionEnd);
-            setTimeout(() => {
+            if (windowWidth < minDeviceWidth) {
+                setTimeout(() => {
+                    transitionStart();
+                }, 500)
+            } else {
                 transitionStart();
-            }, 500)
-
+            };
         };
     }, [scrollAnimation]);
 
