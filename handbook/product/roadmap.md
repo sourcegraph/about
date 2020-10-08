@@ -28,7 +28,14 @@ section Cloud
 %% section Code intel
 %%     TO DO :active, after release-3.21, 30d
 
-%% section Web
+section Web
+    Existing Sourcegraph extensions discoverability           :done,    2020-09-14, 2020-09-28
+    Browser extension discoverability improvements            :active, 2020-09-28, 14d
+    Breadcrumbs unified                                       :         2020-10-12, 7d
+    Build new and improved extensions                         :         2020-10-12, 14d
+    Improve extensions development experience                 :         2020-10-26, 14d
+    Sourcegraph web app navigation updates                    :         2020-11-09, 7d
+    Code insights prototyping                                 :         2020-11-16, 14d
 %%     TO DO :active, after release-3.21, 30d
 
 %% section Search
@@ -82,14 +89,11 @@ TO DO
 
 ## Web
 
-TO DO: below are rough items from a previous web team planning discussion.
+1. ✅ Existing sourcegraph extensions are more discoverable [(RFC 209)](https://docs.google.com/document/d/1I5BMEGp3QuB81AjSzLCQwq_XJV1sXevlU0lpB4O1pj8/edit#)
+1. 🔄 The Sourcegraph browser extension is more discoverable and easy to congifure [(RFC 221)](https://docs.google.com/document/d/19f4xleYBU1zZZdqMmXlLmFxeR-fwEpOwTOgViOFOnyo/edit)
+1. Page title breadcrumbs are unified and useful 
+1. Build new and improved Sourcegraph extensions communicate the value and opportunity of extensions
+1. Building a sourcegraph extension is simpler and better documented
+1. Sourcegraph web app navigation is clearer and intentionally designed
+1. Code insights prototypes exist to help us answer questions and validate use cases 
 
-1. Webapp consistency
-1. The extension registry is confusing and does not communicate it's value
-1. Many developers do not realize Sourcegraph has a browser extension
-1. The Sourcegraph extension development experience is confusing and there aren't any good examples
-1. A few high quality non-language intelligence extension would help communicate the value and opportunity of Sourcegraph extensions
-1. Code insights
-1. Add support for more code hosts with the browser extension (e.g., Gerrit, Bitbucket Cloud).
-1. Provide search capabilities from the code host
-1. IDE integrations
