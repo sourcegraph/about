@@ -1,6 +1,6 @@
 # Playbooks
 
-Many of these tips require kubectl usage - you can refer to the [deployment page's Kubernetes section](/handbook/engineering/deployments#kubernetes) to help you get set up and started with basic commands.
+Many of these tips require kubectl usage - you can refer to the [deployment page's Kubernetes section](../../deployments.md#kubernetes) to help you get set up and started with basic commands.
 
 ## Figure out why a pod is in CrashLoopBackoff
 
@@ -77,7 +77,7 @@ Dashboards for Prometheus metrics are available at `/-/debug/grafana` (for examp
 
 ### Tracing
 
-Check out the [kubectl cheatsheet](../../deployments.md#kubectl-cheatsheet) for how to get access to Jaeger locally.
+Jaeger is available at `/-/debug/jaeger` (for example, [sourcegraph.com/-/debug/jaeger](https://sourcegraph.com/-/debug/jaeger)).
 
 ### Prod logs
 
@@ -158,7 +158,7 @@ There's also a web interface for checking on common things, `https://pgsql-inspe
 
 ### Shell commands
 
-These commands assume you're on a local machine, and trying to access the live systems. Also refer to the [deployment page's Kubernetes section](/handbook/engineering/deployments#kubernetes) for kubectl tips.
+These commands assume you're on a local machine, and trying to access the live systems. Also refer to the [deployment page's Kubernetes section](../../deployments.md#kubernetes) for kubectl tips.
 
 #### Helpful aliases
 
