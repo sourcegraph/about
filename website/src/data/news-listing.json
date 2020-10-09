@@ -1,6 +1,20 @@
 {
   "y2020": [
     {
+      "newsSource": "Devops.com",
+      "newsTitle": "New Survey Highlights Codebase Size Problems",
+      "newsDate": "October 9, 2020",
+      "newsLink": "https://devops.com/new-survey-highlights-codebase-size-problems/",
+      "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
+      "newsSource": "Gigazine",
+      "newsTitle": "The amount and complexity of code handled by developers has increased more than 100 times in the last decade.",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://gigazine.net/news/20201005-100x-more-code-in-10-years/",
+      "newsImage": "/external-logos/gigazine-logo.png"
+    },
+    {
       "newsSource": "ZDNet",
       "newsTitle": "Low and no-code are wonderful, but a 'big code' world lurks underneath",
       "newsDate": "October 7, 2020",
