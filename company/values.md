@@ -1,10 +1,44 @@
 # Sourcegraph values
 
-These values are some of the beliefs and principles that help us achieve our [goals](goals/index.md) and [vision](strategy.md#vision).
+These values are the beliefs and principles that help us achieve our [goals](goals/index.md) and [vision](strategy.md#vision).
 
-This list isn't intended to cover everything we care about; instead, it lists the values that we frequently find useful and refer to. We'll keep this list up to date with the frequently used beliefs and principles (adding, editing, and removing entries as needed). Our hope is that this makes this list more accurate and useful than if it were a list of stale, vague, aspirational, or obvious values.
+- [**Be customer driven**](#be-customer-driven): You proactively work on the right things by continuously orienting your goals around delivering value to your customer.
+- [**Work as a team**](#work-as-a-team): You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
+- [**High agency**](#high-agency): You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
+- [**Be iterative**](#be-iterative): You divide large problems into small low-risk, tractable problems that can be solved iteratively.
+- [**Open and transparent**](#open-and-transparent): You proactively communicate in an open and transparent way.
+- [**Get better**](#get-better): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
+- [**Be human**](#be-human): You are kind, empathetic, authentic, humble.
 
-## High quality
+-------------
+
+## Values in detail
+
+### Be customer driven
+
+TO DO
+
+### Work as a team
+
+We prefer to [build teams, not workgroups](https://dzone.com/articles/workgroups-vs-teams). A team has a small number of shared goals that team members work on together. This yields collaboration and focus, which helps us do higher-quality things faster. In contrast, a workgroup is a group of people who are each working on their own things.
+
+- If it is not clear to you what your team’s goals are, it's your responsibility to get clarity.
+- If you feel like you or your team have too many goals, it's your responsibility to reduce the number of goals so that you have focus.
+- If you feel like you are working alone, or your team doesn’t feel like a team, it's your responsibility to take action to fix that.
+
+As a team's size and scope grows, it (unintentionally) tends to become a workgroup. Resist this by aggressively focusing, or by splitting it into smaller teams.
+
+### High agency
+
+Everyone at Sourcegraph has the power and the responsibility to improve Sourcegraph as a company and as a product.
+
+> “Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. Once you learn that, you'll never be the same again.” - Steve Jobs
+
+A few examples of how we encourage high agency are by being a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, which allows anyone to change how the business operates, and by empowering engineers to spend time on projects they believe in through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
+
+With agency comes responsibility; employees are expected to take initiative and engage in collaboration when exercising their agency.  If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!
+
+### Be iterative
 
 Every person on our team is individually responsible for knowing what high-quality work looks like and producing high-quality work.
 
@@ -17,17 +51,7 @@ If we discover that we've produced something that does not meet our quality bar,
 
 High-quality isn't the opposite of iterative. You can keep quality high while still being iterative by narrowing the scope (for example, by solving a smaller problem at first, or by solving it only for certain customers initially).
 
-## We not I
-
-We prefer to [build teams, not workgroups](https://dzone.com/articles/workgroups-vs-teams). A team has a small number of shared goals that team members work on together. This yields collaboration and focus, which helps us do higher-quality things faster. In contrast, a workgroup is a group of people who are each working on their own things.
-
-- If it is not clear to you what your team’s goals are, it's your responsibility to get clarity.
-- If you feel like you or your team have too many goals, it's your responsibility to reduce the number of goals so that you have focus.
-- If you feel like you are working alone, or your team doesn’t feel like a team, it's your responsibility to take action to fix that.
-
-As a team's size and scope grows, it (unintentionally) tends to become a workgroup. Resist this by aggressively focusing, or by splitting it into smaller teams.
-
-## Open and transparent
+### Open and transparent
 
 We are an [open company](index.md#open-company).
 
@@ -65,12 +89,10 @@ We document our goals and plans publicly so we can engage with customers to buil
 
 Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
 
-## High agency
+### Get better
 
-Everyone at Sourcegraph has the power and the responsibility to improve Sourcegraph as a company and as a product.
+TO DO
 
-> “Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. Once you learn that, you'll never be the same again.” - Steve Jobs
+### Be human
 
-A few examples of how we encourage high agency are by being a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, which allows anyone to change how the business operates, and by empowering engineers to spend time on projects they believe in through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
-
-With agency comes responsibility; employees are expected to take initiative and engage in collaboration when exercising their agency.  If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!
+TO DO
