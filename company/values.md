@@ -16,7 +16,7 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 
 ### Be customer driven
 
-TO DO
+You proactively work on the right things by continuously orienting your goals around delivering value to your customer.
 
 ### Work as a team
 
@@ -91,8 +91,8 @@ Our code and PRs are public, so lack of transparency is only obfuscation, not se
 
 ### Continuously grow
 
-TO DO
+You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
 
 ### Be human
 
-TO DO
+You are kind, empathetic, authentic, humble.
