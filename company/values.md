@@ -89,7 +89,7 @@ We document our goals and plans publicly so we can engage with customers to buil
 
 Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
 
-### Get better
+### Continuously grow
 
 TO DO
 
