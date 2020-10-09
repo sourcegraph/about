@@ -7,7 +7,7 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 - [**High agency**](#high-agency): You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
 - [**Be iterative**](#be-iterative): You divide large problems into small low-risk, tractable problems that can be solved iteratively.
 - [**Open and transparent**](#open-and-transparent): You proactively communicate in an open and transparent way.
-- [**Get better**](#get-better): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
+- [**Continuously grow**](#continuously-grow): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
 - [**Be human**](#be-human): You are kind, empathetic, authentic, humble.
 
 -------------
