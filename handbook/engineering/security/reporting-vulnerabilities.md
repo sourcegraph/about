@@ -12,10 +12,10 @@ We will send payment to a valid PayPal account. We will ask you for the name and
 
 | Type of Response       | Time to Response     |
 | :------------- | :----------: |
-| First Response| 2 days |
-| Time to Triage | 10 days |
+| First response| 2 days |
+| Time to triage | 10 days |
 | Time to bounty determination | 20 days |
-| Time to Resolution | depends on severity and complexity |
+| Time to resolution | depends on severity and complexity |
 | Time to payment | 90 days from the original report, or after confirmation of fix, whichever is first|
 
 ### Eligibility
