@@ -1,6 +1,6 @@
 # Reporting a vulnerability
 
-If you think that you have found a security or privacy vulnerability, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 2 US business days to acknowledge that we received them, and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling). We welcome reports from everyone, including security researchers, developers, and customers. 
+If you think that you have found a security or privacy vulnerability, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 2 US business days to acknowledge that we received them, and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling). We welcome reports from everyone, including security researchers, developers, and customers.
 
 ### Bounties
 
@@ -10,10 +10,12 @@ We will send payment to a valid PayPal account. We will ask you for the name and
 
 **Timelines**
 
-| Type of Response       | Time to Response     |
+All timelines below reflect US busines days.
+
+| Type of response       | Time to response     |
 | :------------- | :----------: |
 | First response| 2 days |
-| Time to triage | 10 days |
+| Time to initial investigation and assessment | 10 days |
 | Time to bounty determination | 20 days |
 | Time to resolution | depends on severity and complexity |
 | Time to payment | 90 days from the original report, or after confirmation of fix, whichever is first|
@@ -48,7 +50,7 @@ For all submissions, please include:
 
 ## How we respond to security vulnerability reports
 
-When we receive [a report of a security vulnerability](#how-to-report-a-security-vulnerability), a member of our security team determines if a reported vulnerability should be investigated by an engineer.
+When we receive [a report of a security vulnerability](#submission-requirements), a member of our security team determines if a reported vulnerability should be investigated by an engineer.
 
 - If so, a member of our security team will [file a vulnerability report in sourcegraph/security-issues](https://github.com/sourcegraph/security-issues/issues/new/choose) and follow the checklist in the issue template.
 
