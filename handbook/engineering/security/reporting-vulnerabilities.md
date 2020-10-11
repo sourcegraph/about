@@ -1,4 +1,4 @@
-# Reporting a Vulnerability
+# Reporting a vulnerability
 
 If you think that you have found a security or privacy vulnerability, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 2 US business days to acknowledge that we received them, and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling). We welcome reports from everyone, including security researchers, developers, and customers. 
 
