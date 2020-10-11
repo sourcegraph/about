@@ -159,6 +159,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
     const thirdLogoContainerRefClone = useRef(null);
     const [{x, y, scale}, set] = useSpring(() => ({x: 0, y: 0, scale: 0 }));
     const minDeviceWidth = 991;
+    const animationTimeInSeconds = 25;
     let extraSpace = 0;
     if (ITEMS.length % 3 !== 0) {
         extraSpace = 135;
@@ -171,15 +172,6 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
             window.removeEventListener('resize', adjustWindowWidth);
         };
     }, []);
-
-    useEffect(() => {
-        if (windowWidth !== 0) {
-            if ((windowWidth < minDeviceWidth) && readyToScroll) {
-                //Auto scroll on mobile
-                setScrollAnimation(true);
-            };
-        };
-    }, [windowWidth, readyToScroll]);
 
     useEffect(() => {
         let promises = ITEMS.map((image) => {
@@ -203,8 +195,6 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
             logoElement.classList.remove('hidden');
             const secondLogoContainerClone = logoElement.cloneNode(true);
             const thirdLogoContainerClone = logoElement.cloneNode(true);
-            secondLogoContainerClone.id = 'new-logo-element';
-            thirdLogoContainerClone.id = 'new-logo-element2';
             logoElement?.parentNode?.insertBefore(secondLogoContainerClone, logoElement.nextSibling);
             logoElement?.parentNode?.insertBefore(thirdLogoContainerClone, logoElement.nextSibling);
             secondLogoContainerRefClone.current = secondLogoContainerClone;
@@ -215,20 +205,36 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
 
     useEffect(() => {
         if (scrollAnimation) {
-            let logoElement = document.getElementById('logo-container-reference')!;
-            logoElement.addEventListener('transitionend', transitionEnd);
-            if (windowWidth < minDeviceWidth) {
-                setTimeout(() => {
-                    transitionStart();
-                }, 500)
-            } else {
-                transitionStart();
-            };
+            startAnimation();
         };
     }, [scrollAnimation]);
 
+    useEffect(() => {
+        if (readyToScroll && (windowWidth < minDeviceWidth)) {
+            setTimeout(() => {
+                startAnimation();
+            }, 500)
+        };
+    }, [readyToScroll])
+    
+    useEffect(() => {
+        if (firstLogoContainerRef.current && secondLogoContainerRefClone.current && thirdLogoContainerRefClone.current) {
+            if (windowWidth > minDeviceWidth) {
+                innerContainerRef.current!.addEventListener('mouseenter', handleMouseEnter);
+                innerContainerRef.current!.addEventListener('mousemove', handleMouseMove);
+                innerContainerRef.current!.addEventListener('mouseleave', handleMouseLeaveInnerArea);
+            };
+        };
+    }, [firstLogoContainerRef.current, secondLogoContainerRefClone.current, thirdLogoContainerRefClone.current, scrollAnimation])
+
     function adjustWindowWidth() {
         setWindowWidth(window.innerWidth);
+    };
+
+    function startAnimation() {
+        let logoElement = document.getElementById('logo-container-reference')!;
+        logoElement.addEventListener('transitionend', transitionEnd);
+        transitionStart();
     };
 
     function transitionStart() {
@@ -236,9 +242,10 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         const logoContainerTwo = secondLogoContainerRefClone.current!;
         const logoContainerThree = thirdLogoContainerRefClone.current!;
         let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
-        logoContainerOne.style.transition = '25s linear';
-        logoContainerTwo.style.transition = '25s linear';
-        logoContainerThree.style.transition = '25s linear';
+
+        logoContainerOne.style.transition = `${animationTimeInSeconds}s linear`;
+        logoContainerTwo.style.transition = `${animationTimeInSeconds}s linear`;
+        logoContainerThree.style.transition = `${animationTimeInSeconds}s linear`;
         logoContainerOne.style.transform = `translateX(${-totalWidth}px)`;
         logoContainerTwo.style.transform = `translateX(${-totalWidth}px)`;
         logoContainerThree.style.transform = `translateX(${-totalWidth}px)`;
@@ -258,6 +265,46 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
         setTimeout(() => {
             transitionStart();
         },0);
+    };
+
+    function pauseAnimation() {
+        const logoContainerOne = firstLogoContainerRef.current!;
+        const logoContainerTwo = secondLogoContainerRefClone.current!;
+        const logoContainerThree = thirdLogoContainerRefClone.current!;
+        let transformOne = window.getComputedStyle(logoContainerOne).transform;
+        let transformTwo = window.getComputedStyle(logoContainerTwo).transform;
+        let transformThree = window.getComputedStyle(logoContainerThree).transform;
+
+        logoContainerOne.style.transform = transformOne;
+        logoContainerTwo.style.transform = transformTwo;
+        logoContainerThree.style.transform = transformThree;
+
+        logoContainerOne.style.transition = 'none';
+        logoContainerTwo.style.transition = 'none';
+        logoContainerThree.style.transition = 'none';
+    };
+
+    function continueAnimationFromCurrentPosition() {
+        const logoContainerOne = firstLogoContainerRef.current!;
+        const logoContainerTwo = secondLogoContainerRefClone.current!;
+        const logoContainerThree = thirdLogoContainerRefClone.current!;
+
+        let transformOne = window.getComputedStyle(logoContainerOne).transform;
+        let matrixValueXOne = transformOne.match(/matrix.*\((.+)\)/)[1].split(', ')[4];
+        let totalWidth = (imagesWidth / 3) + 30 + extraSpace;
+        let xPosition = parseInt(matrixValueXOne);
+        let newPosition = -totalWidth - xPosition;
+
+        const pixelsPersecond = Math.abs(totalWidth) / animationTimeInSeconds;
+        const newpositiontime = (Math.abs(newPosition) / pixelsPersecond).toString();
+        
+        logoContainerOne.style.transition = `${newpositiontime}s linear`;
+        logoContainerTwo.style.transition = `${newpositiontime}s linear`;
+        logoContainerThree.style.transition = `${newpositiontime}s linear`;
+
+        logoContainerOne.style.transform = `translateX(${-totalWidth}px)`;
+        logoContainerTwo.style.transform = `translateX(${-totalWidth}px)`;
+        logoContainerThree.style.transform = `translateX(${-totalWidth}px)`;
     };
 
     function buttonFollowsMouse(e) {
@@ -283,16 +330,23 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
 
     function handleMouseEnter() {
         if (readyToScroll) {
-            setScrollAnimation(true); //Start scroll
+            if (!scrollAnimation) {
+                setScrollAnimation(true);
+            } else {
+                continueAnimationFromCurrentPosition();
+            };
         };
     };
 
     function handleMouseMove(e) {
-        if (showButton) buttonFollowsMouse(e);
+        if (showButton && readyToScroll) buttonFollowsMouse(e);
     };
 
     function handleMouseLeaveInnerArea() {
-        if (showButton) set({scale: 0});
+        if (readyToScroll) {
+            pauseAnimation();
+            if (showButton) set({scale: 0});
+        };
     };
 
     return (
@@ -301,11 +355,8 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({showButton, class
                 Our customers use Sourcegraph every day to build software you rely on.
             </h3>
             <div
-                ref={innerContainerRef}
                 className="customer-container-outer"
-                onMouseEnter={windowWidth > minDeviceWidth ? handleMouseEnter : null}
-                onMouseMove={windowWidth > minDeviceWidth ? handleMouseMove : null}
-                onMouseLeave={windowWidth > minDeviceWidth ? handleMouseLeaveInnerArea : null}
+                ref={innerContainerRef}
             >
             {(windowWidth > minDeviceWidth) && showButton &&
                 <a href="/customers">
