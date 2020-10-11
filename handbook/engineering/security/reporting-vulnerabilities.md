@@ -36,7 +36,7 @@ We may choose to not issue a reward if any of the following apply:
 
 For all submissions, please include:
 
-1. A full description of the vulnerability being reported.  This includes the exploitability and impact
+1. A full description of the vulnerability being reported.  This includes the exploitability and impact.
 1. An explanation of all steps required to reproduce the vulnerability. This may include any or all of the following:
     1. Exploit code
     1. Screenshots
