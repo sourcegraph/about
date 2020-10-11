@@ -32,7 +32,7 @@ We may choose to not issue a reward if any of the following apply:
 1. You are in violation of any national, state, or local law or regulation;
 1. You are less than 14 years of age. If you are at least 14 years old, but are considered a minor in your place of residence, you must get your parent’s or legal guardian’s permission prior to participating in the program.
 
-### Submission Requirements
+### Submission requirements
 
 For all submissions, please include:
 
