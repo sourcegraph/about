@@ -44,19 +44,19 @@ Sourcegraph logomark
 
 <div class="square blue">
 </div>
-#0fb6f2<br />
-R15 G182 B242
+#00B4F2<br />
+R0 G180 B242
 
 <div class="square purple">
 </div>
-#b114f7<br />
-R177 G20 B247
+#B200F8<br />
+R178 G0 B248
 
 <div class="square orange">
 </div>
-#f86012<br />
-R248 G96 B18
+#F96216<br />
+R249 G98 B22
 
 ## Buttons
 
-<button type="submit" role="button" class="btn btn-primary mb-2">Request a demo</button>
+<button type="submit" role="button" class="btn btn-primary mb-2"><span style="font-weight:600;font-size:16px;font-family:'IBM Plex Sans';">Request a demo</span></button>
