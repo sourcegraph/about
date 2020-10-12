@@ -17,7 +17,7 @@ export default ((props: any) => (
         <CaseStudyPage
             customer="F5"
             title="F5 streamlines collaboration for global and distributed software teams"
-            logo="/external-logos/f5-logo.svg"
+            logo="/external-logos/f5-logo-white.svg"
             quote={{
                 quote:
                     'Sourcegraph is our answer for sharing information and facilitating easy collaboration across teams, despite the boundaries of distance and time.',
