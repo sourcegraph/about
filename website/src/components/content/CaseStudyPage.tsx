@@ -31,37 +31,37 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
     pdf,
     children,
 }) => (
-    <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
-        <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
-            {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
-            {pdf && (
-                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow" target="_blank">
-                    <i className="fa fa-file-pdf pr-2" />
-                    Download PDF
+        <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
+            <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
+                {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
+                {pdf && (
+                    <a href={pdf} className="btn btn-primary mt-3" rel="nofollow" target="_blank">
+                        <i className="fa fa-file-pdf pr-2" />
+                        Download PDF
                 </a>
-            )}
-        </CaseStudyJumbotron>
+                )}
+            </CaseStudyJumbotron>
 
-        <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
-            <div className="container pt-6 pb-4">
-                <h1 className={`${titleClassName}`}>{title}</h1>
-            </div>
-        </ContentSection>
+            <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
+                <div className="container pt-6 pb-4">
+                    <h1 className={`${titleClassName}`}>{title}</h1>
+                </div>
+            </ContentSection>
 
-        {children}
-    </div>
-)
+            {children}
+        </div>
+    )
 
 export const MediaQuote: React.FunctionComponent<{
     image?: string
     quote: string
     author: string
 }> = ({ image, quote, author }) => (
-    <div className="container pt-6">
+    <div className="container pt-3">
         <div className="case-studies__quote row justify-content-center">
             {image && (
                 <div className="col-12 col-lg-9">
-                    <img className="rounded-circle img-fluid mx-auto d-block pb-3" src={image} alt={author} />
+                    <img className="rounded-circle img-fluid mx-auto d-block mb-3" src={image} alt={author} />
                 </div>
             )}
             <div className="col-12 col-lg-9">
@@ -109,13 +109,13 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     title = 'See Sourcegraph in action.',
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
 }) => (
-    <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
-        <div className="container text-center pt-6">
-            <h3 className="display-3 font-weight-bold">{title}</h3>
-            <p>{description}</p>
-            <Link className="btn btn-primary mx-2 mb-3" to="/contact/request-demo" title="Request a demo">
-                Schedule a demo
+            <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
+                <div className="container text-center pt-6">
+                    <h3 className="display-3 font-weight-bold">{title}</h3>
+                    <p>{description}</p>
+                    <Link className="btn btn-primary mx-2 mb-3" to="/contact/request-demo" title="Request a demo">
+                        Schedule a demo
             </Link>
-        </div>
-    </ContentSection>
-)
+                </div>
+            </ContentSection>
+        )

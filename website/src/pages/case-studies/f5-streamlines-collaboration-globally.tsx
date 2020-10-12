@@ -22,7 +22,7 @@ export default ((props: any) => (
                 quote:
                     'Sourcegraph is our answer for sharing information and facilitating easy collaboration across teams, despite the boundaries of distance and time.',
                 author: 'Satish Surapaneni, Senior Manager, Engineering, F5',
-                image: '',
+                image: '/case-studies/satish-surapaneni-f5.jpg',
             }}
         >
             <ContentSection color="white" className="col-md-6 pb-5">
