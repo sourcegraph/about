@@ -35,7 +35,7 @@ First, the company's Sourcegraph administrator must create a Sourcegraph.com use
      - `campaigns`: Whether campaigns on this Sourcegraph instance has been purchased.
      - `monitoring`: Whether monitoring on this Sourcegraph instance has been purchased.
      - `backup-and-restore`: Whether builtin backup and restore on this Sourcegraph instance has been purchased.
-  - If no `plan:*` tag is supplied, the license will be treated as free tier.
+  - If no `plan:*` tag is supplied, the license will be treated as legacy enterprise tier which has unlimited access to all features.
   - And the company's name (with dashes instead of spaces), to make it easy to search for a given license key in the future.
 - Set the licensed number of users (note that if you added the `true-up` tag above, the company will be able to exceed this count, but administrators will see a warning) and the number of days that the license should be valid, and click **Generate license**.
 - Finally, click on the **View as user** link, and share the resulting URL with the company.
