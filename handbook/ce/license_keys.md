@@ -25,8 +25,8 @@ First, the company's Sourcegraph administrator must create a Sourcegraph.com use
   - `true-up` to allow the company to go over the user limit on the license.
   - `mau` to indicate that the company is on a monthly usage-based billing model.
   - `trial` to show an indicate in Sourcegraph that the company is on a trial.
-  - `plan:team-<version>` to indicate that the company is on team tier, on the given version, e.g. `plan:team-0`.
-  - `plan:enterprise-<version>` to indicate that the company is on enterprise tier, on the given version, e.g. `plan:enterprise-0`.
+  - `plan:team-<version>` to indicate that the company is on team tier, on the given version, e.g. `plan:team-0` (please consult with Sales for the version).
+  - `plan:enterprise-<version>` to indicate that the company is on enterprise tier, on the given version, e.g. `plan:enterprise-0` (please consult with Sales for the version).
   - Within the enterprise tier, every feature needs to be included explicitly with a tag, including:
      - `acls`: Whether ACLs may be used, such as GitHub, GitLab or Bitbucket Server repository permissions and integration with GitHub, GitLab or Bitbucket Server for user authentication.
      - `private-extension-registry`: Whether publishing extensions to this Sourcegraph instance has been purchased. If not, then extensions must be published to Sourcegraph.com. All instances may use extensions published to Sourcegraph.com.
