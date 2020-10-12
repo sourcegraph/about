@@ -29,9 +29,9 @@ section Cloud
 %%     TO DO :active, after release-3.21, 30d
 
 section Web
-    Browser extension discoverability                         :active, 2020-09-28, 14d
-    Build new and improved extensions                         :         2020-10-12, 14d
-    Improve extensions development + docs                   :         2020-10-26, 14d
+    Browser extension discoverability                         :done,    2020-09-28, 14d
+    Build new and improved extensions                         :active,   2020-10-12, 14d
+    Improve extensions development + docs                     :         2020-10-26, 14d
     Code insights TBD                                         :         2020-11-09, 14d
     Web nav updates                                           :         2020-11-09, 7d
     Breadcrumbs                                               :         2020-11-16, 7d
