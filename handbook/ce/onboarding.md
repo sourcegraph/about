@@ -27,7 +27,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - Product introduction (@christina, 1 hour)
     - Optionally request access to [Figma](https://www.figma.com/) in the #product channel on Slack
   - Sourcegraph demo (@dan, 30 minutes)
-  - Product deployment (@stephen, 30 minutes)
+  - Product deployment (@gonza, 30 minutes)
   - Sourcegraph data (@ericbm, 30 minutes)
 - Set up introductory calls with Distribution, Sales, Product, and Marketing team members
 - Read our [CE handbook pages](index.md)
