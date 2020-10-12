@@ -1818,10 +1818,10 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@sourcegraph/eslint-config@^0.20.9":
-  version "0.20.9"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.20.9.tgz#d0081b315c6f95797b0b29cc2028ef2794e4a5e4"
-  integrity sha512-HrhB/cz1dgmLiUbeH901LoymdidJatyQ9XRUg1RTN4dOHRf3Dl9Z8zvxamjKZXQNxM/Jsrj/4Lhml4wNj1Drdg==
+"@sourcegraph/eslint-config@^0.20.10":
+  version "0.20.10"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.20.10.tgz#49f67ee0b77c813ac55e458dead18a3843c6d8e9"
+  integrity sha512-zVnt9Z7PrDSd0XH9C9FXPc9ge3FhFpxvbKcEcLj87BzFuFypyOyfTOKhaBQZ5cuWu+NDId5ozhydXGVWmRTgHg==
   dependencies:
     "@sourcegraph/prettierrc" "^3.0.3"
     "@typescript-eslint/eslint-plugin" "^4.4.0"
