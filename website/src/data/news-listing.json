@@ -8,6 +8,13 @@
       "newsImage": "/external-logos/devops-com-logo.png"
     },
     {
+      "newsSource": "Devchat.tv",
+      "newsTitle": "Podcast: Caddy 2 Web Server with Matthew Holt (starts 1:10:22)",
+      "newsDate": "October 6, 2020",
+      "newsLink": "https://devchat.tv/js-jabber/jsj-452-caddy-2-web-server-with-matthew-holt/",
+      "newsImage": "/external-logos/devchat-tv-logo.png"
+    },
+    {
       "newsSource": "Gigazine",
       "newsTitle": "The amount and complexity of code handled by developers has increased more than 100 times in the last decade.",
       "newsDate": "October 5, 2020",
