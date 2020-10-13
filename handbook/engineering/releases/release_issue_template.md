@@ -94,11 +94,11 @@ Cut a new release candidate daily if necessary:
 
 - [ ] Merge the release-publishing PRs created previously.
   - For [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), also:
+    - [ ] Merge the PR to update the [Kubernetes CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/doc/admin/updates/kubernetes.md)
     - [ ] Tag the `v$MAJOR.$MINOR.0` release at this commit.
         ```
         VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
         ```
-    - [ ] Merge the PR to update the [Kubernetes CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/doc/admin/updates/kubernetes.md)
   - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
     - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
 - [ ] Ask the product team to merge the blog post ([example](https://github.com/sourcegraph/about/pull/83)).
