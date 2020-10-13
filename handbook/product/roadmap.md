@@ -79,7 +79,7 @@ See [Distribution roadmap](https://github.com/sourcegraph/about/pull/1104).
 1. 🔄 Search expressions
 1. 🔄 Scaling indexed text search to 500k repositories
 1. 🔄 Streaming search
-1. Code monitoring (private code monitors, no sharing)
+1. Code monitoring (private code monitors, no sharing, emails + webhooks)
 1. Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
 1. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
 1. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
