@@ -18,6 +18,19 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 
 You proactively work on the right things by continuously orienting your goals around delivering value to your customers.
 
+### High quality
+
+You are responsible for finding out what high-quality work looks like and delivering that high-quality work iteratively.
+
+- If you don’t know what high quality looks like, it's your responsibility to find out (for example, by asking teammates and stakeholders).
+- If you don’t have the time to produce high-quality work, then it's your responsibility to take more time or cut scope (and communicate this), so that you can produce high-quality work.
+- If you don’t have the skills to produce high-quality work, then it's your responsibility to acquire those skills (for example: learn them yourself, make use of [Sourcegraph's education budget](../handbook/people-ops/travel.md#professional-development-and-education), delegate to an existing teammate with the necessary skills, or hire a new teammate with those skills).
+- If you need help producing high-quality work, it is your responsibility to get that help.
+
+If we discover that we've produced something that does not meet our quality bar, we'll roll it back (for example, revert a commit, roll back a deployment, or unpublish content) until we can make it high quality. If that's not possible, we'll prioritize improving it.
+
+High-quality isn't the opposite of iterative. You can keep quality high while still being iterative by narrowing the scope (for example, by solving a smaller problem at first, or by solving it only for certain customers initially).
+
 ### Work as a team
 
 We prefer to [build teams, not workgroups](https://dzone.com/articles/workgroups-vs-teams). A team has a small number of shared goals that team members work on together. This yields collaboration and focus, which helps us do higher-quality things faster. In contrast, a workgroup is a group of people who are each working on their own things.
@@ -36,20 +49,7 @@ Everyone at Sourcegraph has the power and the responsibility to improve Sourcegr
 
 A few examples of how we encourage high agency are by being a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, which allows anyone to change how the business operates, and by empowering engineers to spend time on projects they believe in through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
 
-With agency comes responsibility; teammates are expected to take initiative and engage in collaboration when exercising their agency.  If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!
-
-### High quality
-
-You are responsible for finding out what high-quality work looks like and delivering that high-quality work iteratively.
-
-- If you don’t know what high quality looks like, it's your responsibility to find out (for example, by asking teammates and stakeholders).
-- If you don’t have the time to produce high-quality work, then it's your responsibility to take more time or cut scope (and communicate this), so that you can produce high-quality work.
-- If you don’t have the skills to produce high-quality work, then it's your responsibility to acquire those skills (for example: learn them yourself, make use of [Sourcegraph's education budget](../handbook/people-ops/travel.md#professional-development-and-education), delegate to an existing teammate with the necessary skills, or hire a new teammate with those skills).
-- If you need help producing high-quality work, it is your responsibility to get that help.
-
-If we discover that we've produced something that does not meet our quality bar, we'll roll it back (for example, revert a commit, roll back a deployment, or unpublish content) until we can make it high quality. If that's not possible, we'll prioritize improving it.
-
-High-quality isn't the opposite of iterative. You can keep quality high while still being iterative by narrowing the scope (for example, by solving a smaller problem at first, or by solving it only for certain customers initially).
+With agency comes responsibility; teammates are expected to take initiative and engage in collaboration when exercising their agency. If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!
 
 ### Open and transparent
 
