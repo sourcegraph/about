@@ -1,4 +1,4 @@
-# Sourcegraph about.sourcegraph.com website
+# Stest
 
 Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
