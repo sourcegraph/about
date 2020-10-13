@@ -18,22 +18,22 @@ We're hiring! Check out our open positions:
 ### Product
 
 - [Product Manager](../handbook/product/roles/product_manager.md)
+- [Product Designer](../handbook/product/roles/product_designer.md)
 
 ### Sales
 
 - [Account Executive](../handbook/sales/roles/account_executive.md)
-- [Sales Strategy & Operations Analyst or Manager](../handbook/bizops/roles/gtm_sales_operations.md)
 
 ### Customer engineering
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
+- [Head of Customer Support](../handbook/ce/roles/head_of_customer_support.md)
 
 ### Operations, finance, and legal
 
-- [Internal Tools](../handbook/bizops/roles/internal_tools.md)
-- [Sales Strategy & Operations Analyst or Manager](../handbook/bizops/roles/gtm_sales_operations.md)
-- [Financial Planning & Analysis Analyst](../handbook/bizops/roles/financial_planning_analysis.md)
-- [Senior Commercial Counsel](../handbook/bizops/roles/senior_commercial_counsel.md)
+- [Internal Tools](../handbook/ops/roles/internal_tools.md)
+- [Financial Planning & Analysis Analyst](../handbook/ops/roles/financial_planning_analysis.md)
+- [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 
 Apply by following the directions in the job description.
 

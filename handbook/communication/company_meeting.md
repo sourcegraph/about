@@ -1,7 +1,7 @@
 # Company meeting
 
-1. Schedule: every Monday 10:30-11:00am PST/PDT (link in the calendar event)
-   - If Monday is a holiday, the meeting is held on the next non-holiday day.
+1. Schedule: every Monday 8:00-8:30am PST/PDT (link in the calendar event)
+   - If Monday is a [holiday](../people-ops/holidays.md), the meeting is held on the next non-holiday day.
    - There is no company meeting held between December 25 and December 31. The first company meeting of the year is held on the first non-holiday Monday of the year.
 1. The link to the slides is posted in #general each Thursday before.
 1. We used to call this "team meeting", but now we call it "company meeting" because "team meeting" sounds like it's only for one specific team inside the company.
@@ -40,14 +40,15 @@ Company meeting is an effective way to:
 
 1. Introduce any new team members starting this week
    - The manager of the team member (or, if someone else knows them better, then that person if appropriate) presents a brief (~30-second) intro, stating the new team member's role, why we hired them, and what their first project is (if known). Then the person should pass it off to the new team member to say hello and share a fun fact about themselves. {#new-team-member-intro}
-1. Birthdays/anniversaries
-1. Inspiration of the week (message @dan to volunteer to present an inspiration)
-1. [#thanks](team_chat.md#thanks) summary
-1. Progress on our [goals](../../company/goals/index.md)
-1. All customer [bookings](../sales/index.md#booking) and churn since the previous company meeting
-1. New and expansion pipeline: include full table, discuss only significant changes since the previous company meeting
-1. Hiring: Open roles we're hiring for, offers extended/accepted/rejected
-1. What's new in the [handbook](../index.md)
+1. Birthdays/anniversaries (owner: @sqs)
+1. Inspiration of the week (message @sqs to volunteer to present an inspiration)
+1. Chaneglog from last week (owner: @christina)
+1. Progress on our [company goals](../../company/goals/index.md) (owner: @sqs)
+1. Product metrics update (owner: @ericbm)
+1. All customer [bookings](../sales/index.md#booking) and churn since the previous company meeting (owner: @ericbm)
+1. New and expansion pipeline: include full table, discuss only significant changes since the previous company meeting (owner: @joe kirscher)
+1. Hiring: Open roles we're hiring for, offers extended/accepted/rejected (owner: @david
+1. What's new in the [handbook](../index.md) (owner: @sqs)
 1. Anything else that team members need to communicate
    - Just add a slide (awesome, useful, and quick) and write what you'll say in the speaker notes. Get @sqs's approval 72 hours before company meeting.
 1. Q&A about anything Sourcegraph-related

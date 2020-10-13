@@ -18,32 +18,22 @@ Arguments:
 
 ## $FIVE_WORKING_DAYS_BEFORE_RELEASE (5 work days before release): Prep for branch cut
 
-- [ ] Post to [#dev-announce](https://app.slack.com/client/T02FSM7DL/C0EPTDE9L) the following message:
+- [ ] Post a release status update to Slack:
   ```
-  :captain: *Release captain announcement:*
-
-  Branch cut will be at the start of the next working day ($FOUR_WORKING_DAYS_BEFORE_RELEASE).
-
-  All changes that will be part of `$MAJOR.$MINOR` (and all associated CHANGELOG updates) should be in `main` by tomorrow. Otherwise, they will not be included in the release.
-  ```
-- [ ] Use `./dev/release-ping.sh` to ping teammates who have open issues or PRs in the milestone to
-  ask them to triage those that won't make it into the release.
-- [ ] Verify by posting in #product that there is a draft of the release blog post.
+  yarn run release release:status $MAJOR.$MINOR.0
+  ``` 
+  - [ ] Review [all release-blocking issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+label%3Arelease-blocker). Add them as checklist items here. Ensure someone is resolving each.
 
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE (4 work days before release): Branch cut
 
-- [ ] Verify for each CHANGELOG item the following (if any item does not have these, disable it,
-  notify the owner, and remove it from the CHANGELOG):
-  - It has an owner attached to it
-  - It has undergone manual QA (and the QA was done on k8s.sgdev.org or at scale if the feature requires it).
-  - It is covered by the regression test suite
-- [ ] Add a new section `## $MAJOR.MINOR` to [CHANGELOG.md](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#unreleased) immediately under `## Unreleased changes`. Add new empty sections under `## Unreleased changes` ([example](https://github.com/sourcegraph/sourcegraph/pull/2323)).
-- [ ] Commit this CHANGELOG edit to `main` using a PR. 
-- [ ] Create the `$MAJOR.$MINOR` branch off the CHANGELOG commit in the previous step: `git branch $MAJOR.$MINOR && git push origin $MAJOR.$MINOR`.
-- [ ] Tag and announce the first release candidate:
+- [ ] Update the changelog and merge the generated pull request:
   ```
-  yarn run release release-candidate:create $MAJOR.$MINOR.0-rc.1
-  yarn run release release-candidate:dev-announce $MAJOR.$MINOR.0-rc.1
+  yarn run release changelog:cut $MAJOR.$MINOR.0
+  ```
+- [ ] Create the `$MAJOR.$MINOR` branch off the CHANGELOG commit in the previous step: `git branch $MAJOR.$MINOR && git push origin $MAJOR.$MINOR`.
+- [ ] Tag the first release candidate:
+  ```
+  yarn run release release:create-candidate $MAJOR.$MINOR.0-rc.1
   ```
 - [ ] Run regression tests:
   - [ ] Follow [README.md](https://github.com/sourcegraph/sourcegraph/blob/main/web/src/regression/README.md) to set up your e2e environment. 
@@ -62,17 +52,20 @@ Arguments:
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE to $ONE_WORKING_DAY_BEFORE_RELEASE: Cut new release candidates
 
 As necessary, `git cherry-pick` bugfix (not feature!) commits from `main` into the release branch.
-Aggressively revert or disable features that may cause delays:
+Aggressively revert or disable features that may cause delays.
 
-- [ ] Review [all release-blocking issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+label%3Arelease-blocker). Add them as checklist items here. Ensure someone is resolving each.
-- [ ] Review [all other open issues in the milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+-label%3Arelease-blocker+milestone%3A$MAJOR.$MINOR) and ask assignees to triage them to a different milestone (preferring Backlog).
+- [ ] Post a release status update to Slack:
+  ```
+  yarn run release release:status $MAJOR.$MINOR.0
+  ``` 
+  - [ ] Review [all release-blocking issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+archived%3Afalse+org%3Asourcegraph+label%3Arelease-blocker). Add them as checklist items here. Ensure someone is resolving each.
+  - [ ] Review [all other open issues in the milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+-label%3Arelease-blocker+milestone%3A$MAJOR.$MINOR) and ask assignees to triage them to a different milestone (preferring Backlog).
 
 Cut a new release candidate daily if necessary:
 
-- [ ] Cut and announce release candidate:
+- [ ] Cut release candidate:
   ```
-  N=<release-candidate-number> yarn run release release-candidate:create $MAJOR.$MINOR.0-rc.$N
-  N=<release-candidate-number> yarn run release release-candidate:dev-announce $MAJOR.$MINOR.0-rc.$N
+  N=<release-candidate-number> yarn run release release:create-candidate $MAJOR.$MINOR.0-rc.$N
   ```
 - [ ] Re-run the automated test suite against the new release candidate, file any regressions as
   `release-blocker` issues.
@@ -80,26 +73,14 @@ Cut a new release candidate daily if necessary:
 
 ## $ONE_WORKING_DAY_BEFORE_RELEASE (1 work day before release) Tag final release
 
-- [ ] Tag and announce on Slack the final release:
+- [ ] Tag the final release:
   ```
   yarn run release release-candidate:create $MAJOR.$MINOR.0
-  yarn run release release-candidate:dev-announce $MAJOR.$MINOR.0
   ```
 - [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) on
   `main` is accurate (no items should have been added since branch cut, but some items may need to
   be removed).
-- [ ] Wait for the release Docker images to be available at https://hub.docker.com/r/sourcegraph/server/tags.
-- [ ] Cut the Kubernetes cluster release in [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
-    - [ ] Create the `$MAJOR.$MINOR` release branch from `master`.
-        ```
-        VERSION='$MAJOR.$MINOR' bash -c 'git fetch origin && git checkout origin/main && git branch $VERSION && git checkout $VERSION && git push -u origin $VERSION'
-        ```
-    - [ ] Trigger an upgrade using the [Update tags workflow](https://github.com/sourcegraph/deploy-sourcegraph/actions?query=workflow%3A%22Update+tags%22) - set `version` to a semver contraint that will apply the version you want (e.g. `~$MAJOR.$MINOR`) and set the branch to the branch you want to upgrade (i.e. `$MAJOR.$MINOR`). Merge the pull request that gets created ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/863)).
-    - [ ] Tag the `v$MAJOR.$MINOR.0` release at this commit.
-        ```
-        VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
-        ```
-    - [ ] Add a new section to the [Kubernetes CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/doc/admin/updates/kubernetes.md)   
+- [ ] Wait for the release Docker images to be available in [Docker Hub](https://hub.docker.com/r/sourcegraph/server/tags).
 - [ ] Release Docker Compose by following [these instructions](https://github.com/sourcegraph/deploy-sourcegraph-docker/blob/master/RELEASING.md)
 - [ ] Open (but do not merge) PRs that publish the new release:
   ```
@@ -108,12 +89,18 @@ Cut a new release candidate daily if necessary:
   ```
 - [ ] Create (but do not merge) a PR to update https://docs.sourcegraph.com/admin/updates/kubernetes indicating the steps required to upgrade.
 - [ ] Review [all issues in the release milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+milestone%3A$MAJOR.$MINOR). Backlog things that didn't make it into the release and ping issues that still need to be done for the release (e.g. Tweets, marketing).
-- [ ] Post in #product and verify the blog post is ready to be merged.
 
 ## $RELEASE_DATE by 10am: Release
 
 - [ ] Merge the release-publishing PRs created previously.
-- [ ] Cherry pick the release-publishing PR from sourcegraph/sourcegraph@main into the release branch.
+  - For [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), also:
+    - [ ] Merge the PR to update the [Kubernetes CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/doc/admin/updates/kubernetes.md)
+    - [ ] Tag the `v$MAJOR.$MINOR.0` release at this commit.
+        ```
+        VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
+        ```
+  - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
+    - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
 - [ ] Ask the product team to merge the blog post ([example](https://github.com/sourcegraph/about/pull/83)).
 
 ### Post-release
@@ -126,13 +113,10 @@ Cut a new release candidate daily if necessary:
 - [ ] Create release calendar events, tracking issue, and announcement for next release:
   ```
   # Add calendar events and reminders for key dates in the release cycle
-  yarn run release add-timeline-to-calendar
+  yarn run release tracking:release-timeline
 
   # Create the release tracking issue (i.e., this issue)
-  yarn run release tracking-issue:create
-
-  # Post link to tracking to #dev-announce
-  yarn run release tracking-issue:announce
+  yarn run release tracking:release-issue
   ```
 - [ ] Close this issue.
 - [ ] Close the milestone.

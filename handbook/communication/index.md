@@ -34,7 +34,7 @@ The following places are not sources of truth. Treat documents and conversations
 
 ## Meetings
 
-- [Company meeting](company_meeting.md) (Mondays 10:30-11:00am PST/PDT)
+- [Company meeting](company_meeting.md) (Mondays 8:00-8:30am PST/PDT)
 - [Social calendar](../../company/remote/social_calendar.md) meetings
 
 ### Internal meetings
@@ -86,7 +86,7 @@ See "[1-1 meetings](../leadership/1-1.md)".
    - Collaborative editing of ephemeral documents
 1. The [Sourcegraph shared](https://drive.google.com/drive/u/0/folders/0B3lEU2lM-l9gUk5sNmRSMVFHVFU) folder on Google Drive is visible and editable by all Sourcegraph team members.
    - To share a doc with team members, move it to this folder.
-1. The [Decisions](decisions.md) Google Sheet.
+   - Don't worry about putting your doc in the right folder. If you want to use folders, you can. But we've given up on trying to impose a folder structure company-wide on our Google Docs, and we just rely on links and search to find Google Docs.
 
 ### Deprecating a Google Doc
 

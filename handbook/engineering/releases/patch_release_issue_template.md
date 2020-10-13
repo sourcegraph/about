@@ -1,5 +1,5 @@
 <!--
-DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn run release patch:issue <version>` from the
+DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn run release tracking:patch-issue <version>` from the
 `dev/release` directory in the main repository to create a patch release issue, instead.
 
 Arguments:
@@ -72,6 +72,6 @@ In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
   yarn run release release:publish $MAJOR.$MINOR.$PATCH
   ```
 - [ ] Add an entry to https://docs.sourcegraph.com/admin/updates/kubernetes indicating the steps required to upgrade.
-- [ ] Cherry pick the release-publishing PR from sourcegraph/sourcegraph@master into the release branch.  
-- [ ] Create a new section for the patch version in the changelog. Verify that all changes that have been cherry picked onto the release branch have been moved to this section of the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) on `master`.
+- [ ] Cherry pick the release-publishing PR from sourcegraph/sourcegraph@master into the release branch.
+- [ ] Create a new section for the patch version in the changelog. Verify that all changes that have been cherry picked onto the release branch have been moved to this section of the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) on `main`.
 - [ ] Post a reply in the #dev-announce thread to say that the release is complete.

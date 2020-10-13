@@ -38,7 +38,7 @@ Remember:
 
 ### Day 1
 
-- Complete [general onboarding](../../people-ops/onboarding/index.md#for-all-new-teammates)
+- Complete [general onboarding](../../people-ops/onboarding/index.md#general-onboarding-checklist)
    - Keep the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
 - Write your 30-60-90 day objectives in your 1:1 doc with Christina
 
@@ -67,10 +67,11 @@ Remember:
 - Learn how the Customer Engineering team gives demos and talks about the product in the [product demo recording](https://drive.google.com/file/d/1idbCnce5MIvtAV0GOOwgB68zQJB2WmZ9/view).
 - Read about [search queries](https://docs.sourcegraph.com/user/search) and perform your first searches.
 - Work through the questions from the [Sales Onboarding Quiz](../../sales/onboarding/quiz.md) to make sure you understand key concepts. Feel free to skip any obvious answers and discuss any questions you have or knowledge gaps with your manager.
+- Record yourself completing the Sales [10 Step Demo Certification](https://docs.google.com/document/d/1P6nzAGfpTNysIi2FIcFY7mHX__q0qZ8955NDnWylF4I/edit#).
 
 ### Get to know our customers
 
-- Reach out to the Sales/CE teams and ask to be added to as many customer calls as you can in your first few weeks.
+- [Join as many customer calls as you can](../../sales/onboarding/joining_customer_calls.md) in your first few weeks.
 - Familiarize yourself with customer feedback channels
    - [HubSpot](https://app.hubspot.com/forms/2762526/a86bbac5-576d-4ca0-86c1-0c60837c3eab/submissions) surveys
    - [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)

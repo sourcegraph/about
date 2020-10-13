@@ -159,6 +159,45 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">JSON</code>
                     </li>
+                       <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Jsonnet</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">R</code>
+                    </li>
+                     <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">PHP</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Elixir</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Haskell</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">PowerShell</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">OCaml</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">CUDA</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Pascal</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Verilog</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">VHDL</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Groovy</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Tcl</code>
+                    </li>
                     <li className="d-block">
                         <a href="mailto:feedback@sourcegraph.com" className="small text-muted">
                             Need a different language?

@@ -7,8 +7,7 @@ See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFP
 ## Week 1
 
 - Get familiar with the internal tools we use
-- Join all customer calls during this period that you can
-  - Watch the calendars of other sales team members and ask if you can add yourself (or be added) to each customer call
+- [Join all customer calls](joining_customer_calls.md) during this period that you can
 - Checkpoints
   - Pass a [quiz](quiz.md)
   - Deliver compelling 30-second pitches for the following [personas](../../marketing/personas.md):
@@ -22,7 +21,7 @@ See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFP
 [Recording on 2019-11-01](https://zoom.us/recording/play/m6olRsgG3vWpZ6ZJYg1FJr1RKeAPoUnsE4lvelSrs64_N-7AZ1QTSJ0eb8WXXSXk)
 
 - [People Ops](../../people-ops/index.md)
-  - [General onboarding steps](../../people-ops/onboarding/index.md#for-all-new-teammates)
+  - [General onboarding steps](../../people-ops/onboarding/index.md#general-onboarding-checklist)
   - [Sourcegraph handbook](../../index.md) intro
   - GitHub account setup and tutorial
   - HubSpot account setup

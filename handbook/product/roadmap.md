@@ -12,36 +12,57 @@ gantt
 
 section Milestones
     3.21 :active, release-3.21, 2020-09-21, 2020-10-20
-    3.22 :active, release-3.22, 2020-10-21, 2020-11-20
+    3.22 :        release-3.22, 2020-10-21, 2020-11-20
 
-section Campaigns
-    TO DO :active, after release-3.21, 30d
+%% section Campaigns
+%%     TO DO :active, after release-3.21, 30d
 
 section Cloud
-    TO DO :active, after release-3.21, 30d
+    User added code is indexed and searchable                 :done,   2020-09-23, 2020-10-07
+    RFC 167 - Product license tiers                           :active, 2020-10-07, 14d
+    Syncing repos is more scalable                            :active, 2020-10-07, 14d
+    Metrics/monitoring in place                               :active, 2020-10-07, 14d
+    GitHub app to simplify access to repositories (spike)     :        2020-10-21, 2d
+    Webhooks to receive repo permissions and metadata (spike) :        2020-10-21, 2d
 
-section Code intel
-    TO DO :active, after release-3.21, 30d
+%% section Code intel
+%%     TO DO :active, after release-3.21, 30d
 
-section Web
-    TO DO :active, after release-3.21, 30d
+%% section Web
+%%     TO DO :active, after release-3.21, 30d
 
-section Search
-    TO DO :active, after release-3.21, 30d
+%% section Search
+%%     TO DO :active, after release-3.21, 30d
 </pre>
 
 ## Campaigns
 
-See [roadmap at a glance](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaWgLk1dBvQVKDg-J7pwjGg8tpps/edit#).
+1. Gradually publish changesets ([RFC 228](https://docs.google.com/document/d/1A-5cbYGz1p1UB1eAFsIgpK5XDkvS7ZNAVKMdtBm_WY0/edit?ts=5f48b4b2#heading=h.trqab8y0kufp) changesetTemplate.published boolean)
+1. Improved src-cli UX: better errors, debugging support, src-cli command to create skeleton spec
+1. User credentials ([RFC 242](https://docs.google.com/document/d/1SqoWWm1xs82QibrWwYsXmpmgweN6EpcKt1qXrRBjjlU/edit)), which will allow non-site-admins to create campaigns
+1. Allow multiple users to edit the same campaign
+1. Versioning/releasing of src-cli with respect to sg/sg
+1. Publish changesets as GitHub draft PRs (and same for other code hosts)
+
+See [roadmap at a glance](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaWgLk1dBvQVKDg-J7pwjGg8tpps/edit#) for more.
 
 ## Cloud
 
-TO DO
+1. ✅ User added code is indexed
+1. ✅ Users do not need to take any steps for a repository they add to be searchable
+1. 🔄 [RFC 167: Product license tiers](https://docs.google.com/document/d/1XozQ4JINJqirdaG-XqGtboT2-PlIXPyBn6EwV7Q3pWI/edit?ts=5f0811cf#heading=h.trqab8y0kufp)
+1. 🔄 Syncing repos is more scalable
+1. 🔄 Metrics/monitoring in place to ensure a good experience
+1. GitHub app to have users sign in with GitHub and select the repos/organizations that have access.
+1. Use webhooks to receive updates on anything that is relevant to this user’s connection to GitHub
+1. Equivalent things to GitLab and Bitbucket Cloud
+1. User understands state and progress of their configured repositories and associated metadata
+1. [UX TBD: New sign up/auth flow]
+1. [UX TBD: Communicate state]
 
-Two known backend infrastructure requests:
+Unplanned:
 
-1. [RFC 167: Product license tiers](https://docs.google.com/document/d/1XozQ4JINJqirdaG-XqGtboT2-PlIXPyBn6EwV7Q3pWI/edit?ts=5f0811cf#heading=h.trqab8y0kufp)
-1. [Non-Git VCS](https://docs.google.com/document/d/1Y2xYbckAz5jlBePER_BarypeDfP3mjjX9bBOZm3ALqY/edit#heading=h.m60esa7uysvx)
+- [Non-Git VCS](https://docs.google.com/document/d/1Y2xYbckAz5jlBePER_BarypeDfP3mjjX9bBOZm3ALqY/edit#heading=h.m60esa7uysvx)
 
 ## Code intel
 
@@ -52,6 +73,10 @@ TO DO
 See [Distribution roadmap](https://github.com/sourcegraph/about/pull/1104).
 
 ## Search
+
+TO DO
+
+## Security
 
 TO DO
 
