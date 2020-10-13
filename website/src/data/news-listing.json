@@ -1,6 +1,41 @@
 {
   "y2020": [
     {
+      "newsSource": "Devops.com",
+      "newsTitle": "New Survey Highlights Codebase Size Problems",
+      "newsDate": "October 9, 2020",
+      "newsLink": "https://devops.com/new-survey-highlights-codebase-size-problems/",
+      "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
+      "newsSource": "Gigazine",
+      "newsTitle": "The amount and complexity of code handled by developers has increased more than 100 times in the last decade.",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://gigazine.net/news/20201005-100x-more-code-in-10-years/",
+      "newsImage": "/external-logos/gigazine-logo.png"
+    },
+    {
+      "newsSource": "ZDNet",
+      "newsTitle": "Low and no-code are wonderful, but a 'big code' world lurks underneath",
+      "newsDate": "October 7, 2020",
+      "newsLink": "https://www.zdnet.com/article/low-and-no-code-are-wonderful-but-a-big-code-world-lurks-underneath/",
+      "newsImage": "/external-logos/zdnet-logo.svg"
+    },
+    {
+      "newsSource": "ZDNet",
+      "newsTitle": "Oui, le low code et le no code c'est cool, mais le 'Big Code' les guettent (c'est quoi ?)",
+      "newsDate": "October 7, 2020",
+      "newsLink": "https://www.zdnet.fr/actualites/oui-le-low-code-et-le-no-code-c-est-cool-mais-le-big-code-les-guettent-c-est-quoi-39910867.htm",
+      "newsImage": "/external-logos/zdnet-logo.svg"
+    },
+    {
+      "newsSource": "Le Monde Informatique",
+      "newsTitle": "Les développeurs gèrent 100 fois plus de code qu'il y a 10 ans",
+      "newsDate": "October 6, 2020",
+      "newsLink": "https://www.lemondeinformatique.fr/actualites/lire-les-developpeurs-gerent-100-fois-plus-de-code-qu-il-y-a-10-ans-80597.html",
+      "newsImage": "/external-logos/le-monde-informatique-logo.png"
+    },
+    {
       "newsSource": "InfoWorld",
       "newsTitle": "The best open source software of 2020",
       "newsDate": "October 5, 2020",
