@@ -8,7 +8,7 @@ We provide monetary rewards, from $50 to $10,000 USD, for security vulnerability
 
 When a monetary bounty is presented, eligible reports will be based on the severity, as determined by [CVSS v3.1](https://www.first.org/cvss/calculator/3.1). We will send payment to a valid PayPal account. We will ask you for the name and country associated with your PayPal account.
 
-### Bounty Categories
+**Categories**
 
 |Attack Outcome| Maximum Payout|
 |:------------- | :----------: |
