@@ -9,45 +9,51 @@ const CASESTUDIES: {
     url: string
     external?: boolean
 }[] = [
-    {
-        name: 'Convoy',
-        logo: '/external-logos/convoy-logo.svg',
-        title: 'Convoy improves developer onboarding',
-        url: '/case-studies/convoy-improved-on-boarding',
-    },
-    {
-        name: 'Lyft',
-        logo: '/external-logos/lyft-logo.svg',
-        title: 'Lyft ensures production stability during monolith to microservices transition',
-        url: '/case-studies/lyft-monolith-to-microservices',
-    },
-    {
-        name: 'Quantcast',
-        logo: '/external-logos/quantcast-logo.svg',
-        title: 'Quantcast accelerates large scale refactoring',
-        url: '/case-studies/quantcast-large-scale-refactoring',
-    },
-    {
-        name: 'Sofi',
-        logo: '/external-logos/sofi-logo.svg',
-        title: 'SoFi manages hundreds of microservices',
-        url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
-    },
-    {
-        name: 'Yelp',
-        logo: '/external-logos/yelp.svg',
-        title: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
-        url:
-            'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html#shipping-code-faster-with-sourcegraph',
-        external: true,
-    },
-    {
-        name: 'Thorn',
-        logo: '/external-logos/thorn-logo.svg',
-        title: 'Thorn deprecates legacy code safely',
-        url: '/case-studies/we-are-thorn',
-    },
-]
+        {
+            name: 'F5',
+            logo: '/external-logos/f5-logo.svg',
+            title: 'F5 streamlines collaboration for global and distributed software teams',
+            url: '/case-studies/f5-streamlines-collaboration-globally',
+        },
+        {
+            name: 'Convoy',
+            logo: '/external-logos/convoy-logo.svg',
+            title: 'Convoy improves developer onboarding',
+            url: '/case-studies/convoy-improved-on-boarding',
+        },
+        {
+            name: 'Lyft',
+            logo: '/external-logos/lyft-logo.svg',
+            title: 'Lyft ensures production stability during monolith to microservices transition',
+            url: '/case-studies/lyft-monolith-to-microservices',
+        },
+        {
+            name: 'Quantcast',
+            logo: '/external-logos/quantcast-logo.svg',
+            title: 'Quantcast accelerates large scale refactoring',
+            url: '/case-studies/quantcast-large-scale-refactoring',
+        },
+        {
+            name: 'Sofi',
+            logo: '/external-logos/sofi-logo.svg',
+            title: 'SoFi manages hundreds of microservices',
+            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
+        },
+        {
+            name: 'Yelp',
+            logo: '/external-logos/yelp.svg',
+            title: 'Sourcegraph empowers developers at Yelp to ship code faster and more reliably than ever before.',
+            url:
+                'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html#shipping-code-faster-with-sourcegraph',
+            external: true,
+        },
+        {
+            name: 'Thorn',
+            logo: '/external-logos/thorn-logo.svg',
+            title: 'Thorn deprecates legacy code safely',
+            url: '/case-studies/we-are-thorn',
+        },
+    ]
 
 export const CaseStudiesSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="customers" className={`case-studies-section container-fluid ${className}`}>
@@ -63,11 +69,11 @@ export const CaseStudiesSection: React.FunctionComponent<{ className?: string }>
                                     <ExternalLinkIcon className="icon-inline ml-1" />
                                 </a>
                             ) : (
-                                <a href={study.url} className="card-link">
-                                    <p className="card-text">{study.title}</p>
-                                    <ArrowRightIcon className="icon-inline ml-1" />
-                                </a>
-                            )}
+                                    <a href={study.url} className="card-link">
+                                        <p className="card-text">{study.title}</p>
+                                        <ArrowRightIcon className="icon-inline ml-1" />
+                                    </a>
+                                )}
                         </div>
                     </div>
                 </div>
