@@ -1,16 +1,16 @@
 # Sourcegraph values
 
-These values are the beliefs and principles that help us achieve our [goals](goals/index.md) and [vision](strategy.md#vision).
+These values are the beliefs and principles that help us achieve our [goals](goals/index.md) and [vision](strategy.md#vision). These apply at every level of our organization—"you" refers to individuals, teams, and Sourcegraph as a whole.
 
 - [**Be customer driven**](#be-customer-driven): You proactively work on the right things by continuously orienting your goals around delivering value to your customers.
 - [**Work as a team**](#work-as-a-team): You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
 - [**High agency**](#high-agency): You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
-- [**High quality**](#high-quality): Every person on our team is individually responsible for finding out what high-quality work looks like and producing that high-quality work.
+- [**High quality**](#high-quality): You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.
 - [**Open and transparent**](#open-and-transparent): You proactively communicate in an open and transparent way.
 - [**Continuously grow**](#continuously-grow): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
 - [**Be human**](#be-human): You are kind, empathetic, authentic, humble.
 
--------------
+---
 
 ## Values in detail
 
@@ -40,7 +40,7 @@ With agency comes responsibility; teammates are expected to take initiative and 
 
 ### High quality
 
-Every person on our team is individually responsible for finding out what high-quality work looks like and producing that high-quality work. We divide large problems into small low-risk, tractable problems that can be solved iteratively.
+You are responsible for finding out what high-quality work looks like and delivering that high-quality work iteratively.
 
 - If you don’t know what high quality looks like, it's your responsibility to find out (for example, by asking teammates and stakeholders).
 - If you don’t have the time to produce high-quality work, then it's your responsibility to take more time or cut scope (and communicate this), so that you can produce high-quality work.
