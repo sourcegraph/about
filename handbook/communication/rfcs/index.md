@@ -26,6 +26,10 @@ A prose description of the status appears in the [metadata](#RFC-structure) of a
 
 Each RFC is assigned a unique sequential number that appears in the title (e.g. "RFC 27: Standardizing RFCs"). This makes it easier to quickly reference specific RFCs in informal conversation (e.g. Slack, GitHub issues) and easier for readers to quickly find that document in a shared location (e.g. Google Drive). The sequential numbers also provide valuable information about the order in which RFCs were created.
 
+When you are referring to an RFC with a group of people who might not be familiar with the contents of the RFC (e.g., a [weekly update](../../engineering/leadership/index.md#weekly-updates)), be descriptive of what the RFC does (if you have done a good job choosing a title for the RFC, then this is the title) instead of merely using the RFC number.
+
+_"We finished standardizing the RFC process ([RFC 27](https://docs.google.com/document/d/1ym5c8G5JcrFf5s0QXJqQKBcZRziVAZZsxWdcUJ7Ukfw/edit))"_ is better than saying/writing _"RFC 27 is done"__.
+
 ## RFCs are Google Docs
 
 It is valuable to standardize on a single system for publishing RFCs.
@@ -37,7 +41,7 @@ It is valuable to standardize on a single system for publishing RFCs.
 
 We have standardized on using Google Docs for RFCs.
 
-- We use G Suite at Sourcegraph so everyone already has access to all RFCs by default.
+- We use Google Workspace at Sourcegraph so everyone already has access to all RFCs by default.
 - Google Docs is a common tool that many people (both current and future teammates) are already familiar with.
 - It provides a commenting experience that is better than the evaluated alternatives.
 
@@ -82,6 +86,10 @@ Effective RFCs contain the following information:
     - "This RFC has been implemented."
   - **Requested reviewers:** The list of people that the RFC author is requesting a review from and a requested deadline for those reviews (e.g. "Requested reviewers: Alice and Bob can you please review by 10am PST on 2020-10-21"). The author is responsible for ensuring that the reviewers aware of the review request (e.g. by sending them a Slack message or tagging them in a comment on the Google Doc). If an RFC reader thinks someone is missing from this list, they should make a Google Docs suggestion to add that person to this list.
   - **Approvals:** A list of people who approve of this RFC. Anyone can express approval for an RFC, even if they are not in the "Requested reviewers" list; however, a RFC is not APPROVED until the RFC author receives approval from the people on the "Requested reviewers" list.
+  - **Team(s):** The team(s) that would be involved in implementing the RFC. You can still request review from people not on a listed team. Writing the team allows us to search RFCs by team using Google Docs's exact match string search. 
+     - Everyone must use the same (case-insensitive) team name so a Google Docs search can find all of and only a team's RFCs. We use the team names listed on our [org chart](../../../company/team/org_chart.md).
+     - Example: "Team: Web"
+     - Multi-team example: "Team: Web, Team: Customer Engineering". It's important to write "Team: " in front of each team when there are multiple teams so that a search for an exact match (using quotes) on "Team: [Team Name]" always returns. 
   - (optional) Links to any GitHub issues that capture work being done to implement this RFC.
   - A good way to notify reviewers is to comment on their name and then assign them in the comment. This will send them an email and allow them to resolve the comment after their review.
 - **Background:** A sufficient, but minimal, amount of context necessary to frame the rest of the RFC. The content should be indisputable facts, not opinions or arguments. The facts should support the chosen definition of the problem and the constraints in the next section.

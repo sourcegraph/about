@@ -1,8 +1,89 @@
 # Playbooks
 
-## [Sourcegraph.com is deleted entirely](dotcom_deleted_entirely.md)
+Many of these tips require kubectl usage - you can refer to the [deployment page's Kubernetes section](../../deployments.md#kubernetes) to help you get set up and started with basic commands.
 
-This playbook has a dedicated [page](dotcom_deleted_entirely.md)
+## Figure out why a pod is in CrashLoopBackoff
+
+`CrashLoopBackoff` indicates that a service is repeatedly failing to start. Instead of using Google Cloud Console to check the logs, the best way to figure out why a pod is in this state is to use the following commands:
+
+```sh
+kubectl get pods -o=wide --namespace=prod   # find the pod you are interested in
+kubectl describe --namespace=prod pod $POD_NAME
+```
+
+In the output, you'll find logs and a snippet like the following that can give more information about why a service has not started:
+
+```
+    State:         Waiting
+      Reason:      CrashLoopBackOff
+    Last State:    Terminated
+      Reason:      OOMKilled
+      Message:     690
+```
+
+Certain states like `Terminated` is not very clearly indicated in Google Cloud Console, and will usually not be properly indicated in logs either.
+
+## Restarting pods
+
+This action is also referred to as "bouncing pods" or to "bounce a pod". Follow the steps to [authenticate kubectl](../../deployments.md) and perform a restart using kubectl to restart the desired deployment:
+
+```sh
+kubectl rollout restart deployment/$SERVICE
+```
+
+Note the use of `deployment/` - you cannot restart services (`svc/`). Note that [stateful sets have a different process](#making-updates-to-stateful-sets).
+
+You can also bounce pods by manually finding them via `kubectl get pods` and `kubectl delete pod $POD_ID`. Once a pod is deleted, it will automatically be recreated.
+
+## Making updates to stateful sets
+
+Statefulsets are different to a deployment in that all pods must be in a healthy state before changes can be made.
+
+Currently sourcegraph uses statefulsets for the following services:
+
+- gitserver
+- grafana
+- indexed-search
+
+In order to push an update to a failing statefulset take the following action:
+
+### 1. Update the statefulset `yaml` with the appropriate change and apply using:
+
+```console
+`kubectl apply -f <service.StatefulSet.yaml>`
+```
+
+### 2. Delete the pods in the stateful set:
+
+```console
+REPLICAS=`kubectl get sts -n prod <statefulset> -o jsonpath={.spec.replicas}`; for i in `seq 0 $[REPLICAS-1]`; do POD=<statefulset>-$i;   echo "Deleting POD $POD";   kubectl delete pod -n prod $POD ; done
+```
+
+### 3. The statesfulset controller will now restart the pods. Verify the pods are starting successfully.
+
+```console
+watch -n1 kubectl get all -n prod -l app=gitserver -o wide
+```
+
+### 4. Verify service is restored
+
+Open the alert UI to click on the check URL that was failing and verify it's now working again.
+
+## Useful dashboards
+
+### Metrics
+
+Dashboards for Prometheus metrics are available at `/-/debug/grafana` (for example, [sourcegraph.com/-/debug/grafana](https://sourcegraph.com/-/debug/grafana)).
+
+### Tracing
+
+Jaeger is available at `/-/debug/jaeger` (for example, [sourcegraph.com/-/debug/jaeger](https://sourcegraph.com/-/debug/jaeger)).
+
+### Prod logs
+
+1. Go to **Kubernetes Engine > Workloads**, then search and click on the pod you're interested, e.g. `sourcegraph-frontend`.
+2. In the **Deployment details** page, there is a row called **Logs**, which has both **Container logs** and **Audit logs**.
+3. Click on the **Container logs**, then you should be redirected to the **Logs Viewer** page.
 
 ## Free gitserver disk space on sourcegraph.com
 
@@ -69,46 +150,6 @@ watch -n1 kubectl get all -n prod -l app=gitserver -o wide
 
 Open the alert UI to click on the check URL that was failing and verify it's now working again.
 
-## Making updates to stateful sets
-
-Statefulsets are different to a deployment in that all pods must be in a healthy state before changes can be made.
-
-Currently sourcegraph uses statefulsets for the following services:
-  * gitserver
-  * grafana
-  * indexed-search
-
-In order to push an update to a failing statefulset take the following action:
-
-### 1. Update the statefulset `yaml` with the appropriate change and apply using:
-
-```console
-`kubectl apply -f <service.StatefulSet.yaml>`
-```
-### 2. Delete the pods in the stateful set:
-
-```console
-REPLICAS=`kubectl get sts -n prod <statefulset> -o jsonpath={.spec.replicas}`; for i in `seq 0 $[REPLICAS-1]`; do POD=<statefulset>-$i;   echo "Deleting POD $POD";   kubectl delete pod -n prod $POD ; done
-```
-### 3. The statesfulset controller will now restart the pods. Verify the pods are starting successfully.
-
-```console
-watch -n1 kubectl get all -n prod -l app=gitserver -o wide
-```
-
-### 4. Verify service is restored
-Open the alert UI to click on the check URL that was failing and verify it's now working again.
-
-## Useful dashboards
-
-Check out the [kubectl cheatsheet](../../deployments.md#kubectl-cheatsheet) for how to get access to Jaeger locally.
-
-## Access pod logs in GCP console
-
-1. Go to **Kubernetes Engine > Workloads**, then search and click on the pod you're interested, e.g. `sourcegraph-frontend`.
-2. In the **Deployment details** page, there is a row called **Logs**, which has both **Container logs** and **Audit logs**.
-3. Click on the **Container logs**, then you should be redirected to the **Logs Viewer** page.
-
 ## PostgreSQL database problems
 
 We provide two sets of instructions here, shell commands and PostgreSQL commands to be run inside a `psql` instance. PostgreSQL commands are denoted by the prompt `sg=#` in this documentation; the actual prompt corresponds to the postgres user name.
@@ -117,25 +158,13 @@ There's also a web interface for checking on common things, `https://pgsql-inspe
 
 ### Shell commands
 
-These commands assume you're on a local machine, and trying to access the live systems.
+These commands assume you're on a local machine, and trying to access the live systems. Also refer to the [deployment page's Kubernetes section](../../deployments.md#kubernetes) for kubectl tips.
 
 #### Helpful aliases
 
 ```bash
 alias dbpod='kubectl get pods --namespace=prod | grep pgsql | cut -d " " -f 1'
 alias proddb='kubectl exec -it --namespace=prod $(dbpod) -- psql -U sg -P pager=off';
-```
-
-#### Reauthenticate kubectl
-
-If you see the following when running `kubectl` commands:
-
-> Unable to connect to the server: x509: certificate signed by unknown authority
-
-Run:
-
-```
-gcloud container clusters get-credentials dot-com --zone us-central1-f --project sourcegraph-dev
 ```
 
 #### Check load average
@@ -266,6 +295,27 @@ Foreign-key constraints:
 
 Using this information, you can determine whether a table exists, what columns it contains, and what indexes on it exist. This allows you to determine whether a given command ran successfully. For instance, if one of the commands in a migration was `CREATE INDEX global_dep_idx_package [...]`, and you got the above output from `\d`, that would indicate that the index was successfully created. If the index wasn't present, that would indicate that the `CREATE INDEX` had not been executed, and you would need to run that statement before clearing the `dirty` flag in `schema_migrations`.
 
+### Redis interactions
+
+### Connecting to the Redis databases in production
+
+Find the Redis pods:
+
+```sh
+$ kubectl -n prod get pods | grep redis
+redis-cache-8475866c76-swxlz                         2/2     Running     0          22d
+redis-store-7c5fb8dd89-jzx44                         2/2     Running     0          22d
+```
+
+Get a `redis-cli` prompt:
+
+```sh
+$ kubectl -n prod exec -it redis-store-7c5fb8dd89-jzx44 -- redis-cli
+Defaulting container name to redis-store.
+Use 'kubectl describe pod/redis-store-7c5fb8dd89-jzx44 -n prod' to see all of the containers in this pod.
+127.0.0.1:6379> 
+```
+
 ## DNS/SSL settings on Cloudflare
 
 - Visit https://dash.cloudflare.com/login (get the credentials from 1Password)
@@ -295,8 +345,200 @@ Several of our static sites are hosted by Netlify at `about.sourcegraph.com`. Yo
 If you discover an issue with Netlify but their status page is not displaying it, open a support request using the credentials in 1Password.
 
 Sites:
+
 - `about.sourcegraph.com`
 - `sourcegraph.com/about` -307-> `about.sourcegraph.com/about`
 - `sourcegraph.com/pricing` -307-> `about.sourcegraph.com/pricing`
 
 For a full list of sites redirected from `sourcegraph.com/$KEY` reference the [router code](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/internal/app/ui/router.go#L86) in our frontend.
+
+## Moving a GCE disk between projects
+
+Moving a disk between projects requires multiple steps to ensure the disk is detached from its original source.
+
+- The initial disk can only be created using the same type. To change its type, you will have to snapshot the disk and restore as a new type.
+- The initial disks can only be moved to the same region as their source project.
+
+Create a new disk in your target project from the old disk:
+
+```
+gcloud compute disks create ${TARGET_DISK_NAME} --source-disk=https://www.googleapis.com/compute/v1/projects/${SOURCE_PROJECT}/zones/${SOURCE_ZONE}/disks/${PVC_NAME} --project=${TARGET_PROJECT} --zone=${TARGET_ZONE} --type ${SOURCE_TYPE}
+```
+
+We now have to snapshot and restore the disk, to ensure the disk is unlinked from its source disk. This process is the same as its used to [change a disk zone or type](#changing-a-gce-disk-zone-or-type), please follow that playbook.
+
+## Changing a GCE disk zone or type
+
+To change disk region or type, we need to first create a snapshot and then restore it to the new region or type.
+
+Snapshot:
+
+```
+gcloud compute disks snapshot ${SOURCE_DISK_NAME} --project=${PROJECT} --zone=${SOURCE_ZONE} --snapshot-names ${SNAPSHOT_NAME}
+```
+
+At this point, you can optionally delete the source disk.
+
+Restore:
+
+```
+gcloud compute disks create ${TARGET_DISK_NAME} --project=${PROJECT} --size ${TARGET_DISK_SIZE} --source-snapshot ${SNAPSHOT_NAME} --zone=${TARGET_ZONE} --type ${TARGET_DISK_TYPE}
+```
+
+_TARGET_DISK_SIZE has to be equal or larger than the original source disk._
+
+There is an [alias command](https://cloud.google.com/sdk/gcloud/reference/compute/disks/move) that performs the `snapshot -> restore` operation automatically to switch regions, but it fails on big disks.
+
+## Linking a PV/PVC to a GCE disk
+
+When we need to re-link a disk to a PersistentVolume and its associated PersistentVolumeClaim because we are restoring a disks from a snapshot or for some other reasons, we will need to adapt the Kubernetes resource definitions to link the existing GCE disk to GKE.
+
+Example PVC:
+
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: MyDisk
+  namespace: SomeNamespace
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+
+We will first ensure that the Claim is directly linked to an fixed Persistent Volume by setting the `claimRef` to the desired PVC. You also need to ensure that the `accessModes`, `capacity` and all other settings match between the claim and the volume.
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: MyDisk
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    name: MyDisk
+    namespace: SomeNamespace
+  storageClassName: SomeStorageClass
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: MyDisk
+  namespace: SomeNamespace
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+
+Lastly, we need to link the volume to a GCE disk by setting `gcePersistentDisk`. We must ensure that `gcePersistentDisk.pdName` matches the disk name in GCE.
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: MyDisk
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    name: MyDisk
+    namespace: SomeNamespace
+  gcePersistentDisk:
+    fsType: ext4
+    pdName: SomeGCEDisk
+  storageClassName: SomeStorageClass
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: MyDisk
+  namespace: SomeNamespace
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+
+### StatefulSets
+
+There are some additional steps when dealing with an `StatefulSet` as claims are not statically defined and we need to ensure the generated `PersistentVolumeClaim`s match the static `PersistentVolume`s.
+
+First, discard the `PersistentVolumeClaim` sections from the previous step, and inspect the `volumeClaimTemplates` section of the `StatefulSet`.
+
+```
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: MySet
+  namespace: SomeNamespace
+[...]
+spec:
+  [...]
+  replicas: 1
+  volumeClaimTemplates:
+    - metadata:
+        name: DataDisk
+      spec:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: SomeStorageClass
+```
+
+Kubernetes will generate the `PersistentVolumeClaim` name using the `metadata.name` and `spec.volumeClaimTemplates.metadata.name` using the following format `${spec.volumeClaimTemplates.metadata.name}-${metadata.name}-${replica-index}` and will set the `claimRef.namespace` using `metadata.name`.
+
+Example `PersistentVolume` using the previous `volumeClaimTemplates`:
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: DataDisk-0
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    name: DataDisk-MySet-0
+    namespace: SomeNamespace
+  gcePersistentDisk:
+    fsType: ext4
+    pdName: SomeGCEDisk
+  storageClassName: SomeStorageClass
+```
+
+## Export/Import a Cloud SQL database
+
+Exporting/Importing a database to Cloud SQL using `gcloud` requires the export to existing in a Google Storage bucket and it can be performed across GCP projects.
+
+Export:
+
+```
+gcloud --project=${SOURCE_PROJECT} sql export sql ${SOURCE_SERVER_NAME} 'gs://some-bucket/Cloud_SQL_Export_${SQL_SERVER_NAME}_${DB_NAME}' --database=${SOURCE_DB_NAME}
+```
+
+Import:
+
+```
+gcloud --project=${TARGET_PROJECT} sql import sql ${TARGET_SERVER_NAME} 'gs://some-bucket/Cloud_SQL_Export_${SOURCE_SERVER_NAME}_${SOURCE_DB_NAME}' --database=${TARGET_DB_NAME}
+```
+
+## [Sourcegraph.com is deleted entirely](dotcom_deleted_entirely.md)
+
+This playbook has a dedicated [page](dotcom_deleted_entirely.md)

@@ -36,7 +36,7 @@ Being open and transparent builds trust with our customers and within our team. 
 We favor transparency by default. There are multiple levels of transparency, and we always strive to be the most transparent that we can be for a given piece of information.
 
 | Level of transparency | Description | Channels | Examples |
-|-|-|-|-|
+|---|---|---|---|
 | Public | Anyone outside of Sourcegraph can access this information. **This is the default level of transparency.** | [Handbook](../handbook/index.md), [code](https://github.com/sourcegraph/sourcegraph), [issues](https://github.com/sourcegraph/sourcegraph/issues), public Google Docs | Goals, plans, all code, product docs, dev docs, company docs |
 | Internal to Sourcegraph | Information that is not public for specific reasons, but is shared with Sourcegraph teammates. | Public Slack channels, Google Docs accessible to everyone at Sourcegraph, internal [Google Groups](https://groups.google.com/all-groups) | Board slides, company financial info, customer information, open security investigations |
 | Private | Information that is neither public nor internal to Sourcegraph for specific reasons, but is shared only with a specific set of people. | Private Slack channels or DMs, private Google Docs, private emails | Candidate feedback, teammate feedback, compensation |
@@ -64,3 +64,13 @@ We document our goals and plans publicly so we can engage with customers to buil
 > I am working on improving the security of our product, but I feel uncomfortable clearly documenting what I am doing (e.g., in public status updates, issues, PR descriptions, the changelog) because I am worried that it will make Sourcegraph look bad.
 
 Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
+
+## High agency
+
+Everyone at Sourcegraph has the power and the responsibility to improve Sourcegraph as a company and as a product.
+
+> “Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. Once you learn that, you'll never be the same again.” - Steve Jobs
+
+A few examples of how we encourage high agency are by being a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, which allows anyone to change how the business operates, and by empowering engineers to spend time on projects they believe in through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
+
+With agency comes responsibility; employees are expected to take initiative and engage in collaboration when exercising their agency.  If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!

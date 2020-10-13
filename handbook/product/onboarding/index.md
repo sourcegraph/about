@@ -38,25 +38,26 @@ Remember:
 
 ### Day 1
 
-- Complete [general onboarding](../../people-ops/onboarding/index.md#for-all-new-teammates)
+- Complete [general onboarding](../../people-ops/onboarding/index.md#general-onboarding-checklist)
    - Keep the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
 - Write your 30-60-90 day objectives in your 1:1 doc with Christina
 
 ### Get to know the team
 
-- Schedule 1-1s with each person on the [Product team](../index.md#members)
-- Schedule 1-1s with each person on the engineering team you'll be working most closely with (ask Christina if you're not sure who this is)
+- Schedule individual meetings with each person on the [Product team](../index.md#members)
+- Schedule individual meetings with each person on the engineering team you'll be working most closely with (ask Christina if you're not sure who this is)
 - Get up to speed on what your team is working on
    - Team handbook page(s), to learn about the team and its internal processes
    - Sourcegraph user docs
    - Team sync docs - review recent meeting notes for context
    - Current tracking issue(s)
+   - Join the Engineering Manager weekly updates [Google Group](https://groups.google.com/a/sourcegraph.com/g/engineering-leadership-status) ([handbook description](../../engineering/leadership.md#weekly-updates)).
 
 ### Set up the basics
 
 - [Configure your GitHub notifications.](../../engineering/github-notifications/index.md)
 - Familiarize yourself with our [team chat](../../communication/team_chat.md) and join team channels on Slack, as well as any other channels you find interesting. [Product team chat documentation](../../communication/team_chat.md#product).
-- Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next person that we hire doesn't run into the same problem).
+- Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/main/doc/dev/getting-started/index.md). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next person that we hire doesn't run into the same problem).
    - You will need to run Sourcegraph locally to test and validate work that engineering is doing, to provide early feedback, or to review the UX of recently implemented work.
 - [Add Sourcegraph as a browser search engine](https://docs.sourcegraph.com/integration/browser_search_engine). Add another entry for our internal instance: `https://sourcegraph.sgdev.org/search?q=%s`. This also ensures you have access to our internal instance.
 
@@ -66,15 +67,21 @@ Remember:
 - Learn how the Customer Engineering team gives demos and talks about the product in the [product demo recording](https://drive.google.com/file/d/1idbCnce5MIvtAV0GOOwgB68zQJB2WmZ9/view).
 - Read about [search queries](https://docs.sourcegraph.com/user/search) and perform your first searches.
 - Work through the questions from the [Sales Onboarding Quiz](../../sales/onboarding/quiz.md) to make sure you understand key concepts. Feel free to skip any obvious answers and discuss any questions you have or knowledge gaps with your manager.
+- Record yourself completing the Sales [10 Step Demo Certification](https://docs.google.com/document/d/1P6nzAGfpTNysIi2FIcFY7mHX__q0qZ8955NDnWylF4I/edit#).
 
 ### Get to know our customers
 
-- Reach out to the Sales/CE teams and ask to be added to as many customer calls as you can in your first few weeks.
+- [Join as many customer calls as you can](../../sales/onboarding/joining_customer_calls.md) in your first few weeks.
 - Familiarize yourself with customer feedback channels
    - [HubSpot](https://app.hubspot.com/forms/2762526/a86bbac5-576d-4ca0-86c1-0c60837c3eab/submissions) surveys
    - [Productboard](https://sourcegraph.productboard.com/insights/shared-inbox)
    - Twitter
    - Slack #feedback channel
+   
+### Know our tools
+- Figma
+  - Watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn how we use the application
+  - Read [Figma developers guide](https://www.smashingmagazine.com/2020/09/figma-developers-guide/)
 
 ### Understand company and team goals
 

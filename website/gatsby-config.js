@@ -40,6 +40,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `press`,
+        path: `${__dirname}/../press-releases/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `podcast`,
         path: `${__dirname}/../podcast/`,
       },

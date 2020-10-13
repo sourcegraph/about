@@ -1,6 +1,104 @@
 {
   "y2020": [
     {
+      "newsSource": "Devops.com",
+      "newsTitle": "New Survey Highlights Codebase Size Problems",
+      "newsDate": "October 9, 2020",
+      "newsLink": "https://devops.com/new-survey-highlights-codebase-size-problems/",
+      "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
+      "newsSource": "Gigazine",
+      "newsTitle": "The amount and complexity of code handled by developers has increased more than 100 times in the last decade.",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://gigazine.net/news/20201005-100x-more-code-in-10-years/",
+      "newsImage": "/external-logos/gigazine-logo.png"
+    },
+    {
+      "newsSource": "ZDNet",
+      "newsTitle": "Low and no-code are wonderful, but a 'big code' world lurks underneath",
+      "newsDate": "October 7, 2020",
+      "newsLink": "https://www.zdnet.com/article/low-and-no-code-are-wonderful-but-a-big-code-world-lurks-underneath/",
+      "newsImage": "/external-logos/zdnet-logo.svg"
+    },
+    {
+      "newsSource": "ZDNet",
+      "newsTitle": "Oui, le low code et le no code c'est cool, mais le 'Big Code' les guettent (c'est quoi ?)",
+      "newsDate": "October 7, 2020",
+      "newsLink": "https://www.zdnet.fr/actualites/oui-le-low-code-et-le-no-code-c-est-cool-mais-le-big-code-les-guettent-c-est-quoi-39910867.htm",
+      "newsImage": "/external-logos/zdnet-logo.svg"
+    },
+    {
+      "newsSource": "Le Monde Informatique",
+      "newsTitle": "Les développeurs gèrent 100 fois plus de code qu'il y a 10 ans",
+      "newsDate": "October 6, 2020",
+      "newsLink": "https://www.lemondeinformatique.fr/actualites/lire-les-developpeurs-gerent-100-fois-plus-de-code-qu-il-y-a-10-ans-80597.html",
+      "newsImage": "/external-logos/le-monde-informatique-logo.png"
+    },
+    {
+      "newsSource": "InfoWorld",
+      "newsTitle": "The best open source software of 2020",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.infoworld.com/article/3575858/the-best-open-source-software-of-2020.html#slide24",
+      "newsImage": "/external-logos/infoworld-bossie-awards-2020.png"
+    },
+    {
+      "newsSource": "Developer Tech",
+      "newsTitle": "51% of devs say they’re dealing with 100x more code than 10 years ago",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://developer-tech.com/news/2020/oct/05/51-percent-devs-100-times-more-code-10-years-ago/",
+      "newsImage": "/external-logos/developer-tech-logo.png"
+    },
+    {
+      "newsSource": "Fudzilla",
+      "newsTitle": "Developers dealing with more code than before",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.fudzilla.com/news/51645-developers-dealing-with-more-code-than-before",
+      "newsImage": "/external-logos/fudzilla-logo.png"
+    },
+    {
+      "newsSource": "Golem.de",
+      "newsTitle": "100-mal mehr Code als vor zehn Jahren",
+      "newsDate": "October 5, 2020",
+      "newsLink": "https://www.golem.de/news/softwareentwickler-100-mal-mehr-code-als-vor-zehn-jahren-2010-151298.html",
+      "newsImage": "/external-logos/golem.de-logo.png"
+    },
+    {
+      "newsSource": "Slashdot",
+      "newsTitle": "51% of Developers Say They're Managing 100 Times More Code Than a Decade Ago",
+      "newsDate": "October 4, 2020",
+      "newsLink": "https://developers.slashdot.org/story/20/10/04/0157214/51-of-developers-say-theyre-managing-100-times-more-code-than-a-decade-ago",
+      "newsImage": "/external-logos/slashdot-logo.png"
+    },
+    {
+      "newsSource": "Best Gaming Pro",
+      "newsTitle": "Sourcegraph: Devs are managing 100x more code now than they did in 2010",
+      "newsDate": "October 2, 2020",
+      "newsLink": "https://bestgamingpro.com/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/",
+      "newsImage": "/external-logos/bestgamingpro-logo.png"
+    },
+    {
+      "newsSource": "Developpez",
+      "newsTitle": "Les développeurs gèrent un volume de code 100",
+      "newsDate": "October 1, 2020",
+      "newsLink": "https://www.developpez.com/actu/309305/Les-developpeurs-gerent-un-volume-de-code-100-fois-plus-important-maintenant-qu-en-2010-dans-plus-de-langages-pour-plus-de-plateformes-que-jamais-Une-complexite-qui-a-un-impact-personnel-sur-eux/",
+      "newsImage": "/external-logos/developpez-logo.png"
+    },
+    {
+      "newsSource": "Ars Technica",
+      "newsTitle": "Sourcegraph: Devs are managing 100x more code now than they did in 2010",
+      "newsDate": "October 1, 2020",
+      "newsLink": "https://arstechnica.com/gadgets/2020/10/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/",
+      "newsImage": "/external-logos/ars-technica-logo.png"
+    },
+    {
+      "newsSource": "Sourcegraph",
+      "newsTitle": "Press Release: Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries",
+      "newsDate": "October 1, 2020",
+      "newsLink": "/press-release/big-code-survey-2020",
+      "newsImage": "/sourcegraph-mark.png"
+    },
+    {
       "newsSource": "Tracxn",
       "newsTitle": "Emerging Startups 2020: Top Application Development Tools",
       "newsDate": "August 28, 2020",
@@ -34,6 +132,13 @@
       "newsDate": "August 3, 2020",
       "newsLink": "https://www.devopsdigest.com/sourcegraph-raises-additional-5-million-in-series-b-funding",
       "newsImage": "/external-logos/devops-digest-logo.png"
+    },
+    {
+      "newsSource": "SaaS Product Chat",
+      "newsTitle": "Podcast: Empresas API-céntricas y API como producto (starts 16:43)",
+      "newsDate": "July 23, 2020",
+      "newsLink": "https://saasproductchat.com/episodes/api",
+      "newsImage": "/external-logos/saas-product-chat-logo.png"
     },
     {
       "newsSource": "Wall Street Journal",
@@ -165,7 +270,7 @@
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Sourcegraph Releases Free Digital Children's Book Titled 'Our ABCs: Always Be Coding'",
       "newsDate": "April 23, 2020",
-      "newsLink": "/press-releases/our-abcs-childrens-book",
+      "newsLink": "/press-release/our-abcs-childrens-book",
       "newsImage": "https://info.sourcegraph.com/hubfs/CTA%20images/abc-book-cover.png"
     },
     {
@@ -256,7 +361,7 @@
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Sourcegraph Secures $23 Million Series B Round for Universal Code Search",
       "newsDate": "March 3, 2020",
-      "newsLink": "/press-releases/sourcegraph-secures-series-b",
+      "newsLink": "/press-release/sourcegraph-secures-series-b",
       "newsImage": "/sourcegraph-mark.png"
     },
     {
@@ -384,7 +489,7 @@
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum",
       "newsDate": "November 12, 2019",
-      "newsLink": "/press-releases/sourcegraph-announces-new-gitlab-native-integration",
+      "newsLink": "/press-release/sourcegraph-announces-new-gitlab-native-integration",
       "newsImage": "/sourcegraph-mark.png"
     },
     {

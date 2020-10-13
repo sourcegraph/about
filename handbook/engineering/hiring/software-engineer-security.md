@@ -27,9 +27,25 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - Read through [our handbook](https://github.com/sourcegraph/about) to learn more about how we operate and to find answers to common questions that you might have.
 1. You write a short security assessment, taking less than **1hr** of your time, explaining a security vulnerability [sample problem](https://docs.google.com/document/d/1oXhjU_3y2uhpmWJ2hD0NTaqSanUAOlKDFFmjazAU3Rg/).
 1. We schedule remote interviews over video chat across multiple days.
-   - 1h **Security architecture:** We give you an open problem statement and you walk us through how you would solve the problem.
+   - 1h **Security concepts:** We give you an open problem statement and you walk us through how you would solve the problem.
+      - Will interview with 2 of the following:
+         - At least one member of the [security team](../security/index.md#members)
+         - Any engineer mentioned in this document.
    - 1h **Technical experience:** We ask you about your past work and accomplishments.
+      - Will interview with 2 of the following:
+          - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
+          - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
+          - [Asdine El Hrychy](../../../company/team/index.md#asdine-el-hrychy)
+          - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
+          - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
    - 1h **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
+      - Will interview with 2 of the following:
+         - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
+         - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+         - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
+         - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
+         - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
+         - If we have at least one of the above, the second interviewer can be [any engineer on the security team](../security/index.md#members) or any engineer mentioned in this document.
    - 30m **VP Engineering**
    - 30m **CTO**
    - 30m **CEO**
@@ -39,3 +55,5 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
 **[Click here to apply](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22/apply)**
+
+Go back to the [careers page](../../../company/careers.md) for all open positions.

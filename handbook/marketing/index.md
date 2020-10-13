@@ -1,5 +1,8 @@
 # Marketing
 
+
+<img align="right" src="https://sourcegraphstatic.com/marketing-logo.gif" style="max-height:100%" />
+
 - [Messaging](messaging.md)
   - [What is Sourcegraph?](messaging.md#sourcegraph-value-proposition)
   - [What problems does Sourcegraph solve?](messaging.md#what-problems-does-sourcegraph-solve)
@@ -8,6 +11,7 @@
 - [Looker dashboards](https://sourcegraph.looker.com/browse/boards/2)
 - [Online content](content.md)
   - [Editing blog posts](editing_blog_posts.md)
+  - [Creating blog posts](creating_blog_posts.md)
   - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
   - [Website style guide](website_style_guide.md)
 
@@ -108,8 +112,3 @@ A marketing qualified lead (MQL) is any of:
 
 See "[Lead](../sales/index.md#lead)" in the sales team handbook section.
 
-## Open roles
-
-### VP Marketing
-
-We're hiring for a VP Marketing. Full job description to come. To summarize, we want the VP Marketing to be someone who can help us achieve the mission and goals of marketing on their own---and who can hire and lead a team to do so at greater scale.

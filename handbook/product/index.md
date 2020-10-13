@@ -16,15 +16,15 @@ The product team is newly growing, and consists of all product managers and prod
   - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
   - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
 - [Technical writing](technical_writing/index.md)
-  - [Kimberly Hopson](../../../company/team/index.md#kimberly-hopson-she-her)
 
 ### [Roles](roles/index.md)
 
 See [Roles](roles/index.md) for open positions and hiring targets.
 
-## [Goals](goals.md)
+## Planning
 
-See [Goals](goals.md)
+- [Product team goals](goals.md)
+- [Roadmap](roadmap.md)
 
 ## Resources
 

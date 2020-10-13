@@ -1,4 +1,4 @@
-# People Ops onboarding
+# Onboarding
 
 Welcome to Sourcegraph! We are so excited to have you on the team. This page outlines what you'll need to do to get started.
 
@@ -22,13 +22,14 @@ Never assume that a problem is somebody else's to fix!
 
 - Watch the [new team member intro from the CEO](https://www.youtube.com/watch?v=EVHUGZe5uts)
 - Account setup
-  - **[G Suite/Gmail](https://www.google.com/gmail/)**: Access all G Suite apps in our org (Gmail, Google Docs, Google Sheets, Google Calendar, G Hire).
+  - **[Google Workspace/Gmail](https://www.google.com/gmail/)**: Access all Google Workspace apps in our org (Gmail, Google Docs, Google Sheets, Google Calendar, G Hire).
   - **[Slack](https://slack.com/)**: Access our team communication tool.
   - **[GitHub](https://github.com/sourcegraph/)**: Access our code and our handbook.
   - **[Lattice](https://sourcegraph.latticehq.com/)**: Access our [teammate feedback cycles](../review-cycles.md) (takes place every quarter– Noemi will send out details).
   - **[1Password](https://1password.com/)**: Access shared team passwords and store your own passwords.
   - **[Expensify](https://www.expensify.com/signin):** Submit receipts for any work related expenses for reimbursement. Expensify will be linked to your Sourcegraph email.
-  - **[Jamf Now](https://sourcegraph.jamfcloud.com)**: Enroll your device in our MDM (ask Noemi for your access code).
+  - **[Zoom](https://zoom.us/signin):** Set up your Zoom account and [recommended settings](../../communication.md#video-calls). 
+  - **[Jamf Now](https://sourcegraph.jamfcloud.md.com)**: Enroll your device in our MDM (ask Noemi for your access code).
   - It might not be immediately necessary, but if you ever need to click a HubSpot link just ask for access in #sales.
   - U.S. based teammates
      - **[Gusto](https://gusto.com/)**: Select your health plans, set up payment information, enter your I-9 information. Gusto will be linked to your personal email.
@@ -40,6 +41,7 @@ Never assume that a problem is somebody else's to fix!
   - Add any local [holidays](../holidays.md) you observe to your calendar so people know you're not working.
   - Make it so any attendees can edit meetings you create: `Default guest permissions: Modify event` (this makes it easy for teammates to reschedule when necessary).
   - Set up a recurring weekly 25-minute [1-1 meeting](../../leadership/1-1.md) with your manager (e.g., `1-1 $YOURNAME-$MANAGERNAME`).
+  - Join the Sourcegraph events calendar by copying `sourcegraph.com_9cd67o8p3gs0rtpj73bt326psk@group.calendar.google.com` into your [add calendar field](https://calendar.google.com/calendar/u/0/r/settings/addcalendar?) and also join the [social calendar](../../../company/remote/social_calendar.md)
 - Make sure you know how to contribute to the handbook
   - [Create an account on GitHub.com](https://github.com/join) if you don't already have one.
      - Share your username with your manager so they can add you to the Sourcegraph GitHub account and appropriate teams.

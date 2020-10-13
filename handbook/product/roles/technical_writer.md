@@ -50,15 +50,13 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-**Note: Closed to new applications, currently reviewing applicant pool.**
-
-1. You apply.
+1. You [apply here](https://jobs.lever.co/sourcegraph/933f214e-338b-422b-b5d9-0b01057576d3/apply).
 1. **Intro calls**: We chat with you about Sourcegraph and to find out what you are looking for in your next role.
    - [30 min] recruiter call
    - [30 min] [HM intro call](./interviews/hm_intro_call.md) with [Christina Forney](../../../company/team/index.md#christina-forney-she-her) (VP Product)
 1. [1 hr] **Writing portfolio review**: We go over your experience and samples in-depth.
    - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-   - [Kimberly Hopson](../../../company/team/index.md#kimberly-hopson-she-her)
+   - One other member of the [product team](../index.md#members)
 1. Interviews
    - [1 hr] **Collaboration exercise**: We simulate a real-life issue with a member of our engineering team to see how you collaborate on writing projects.
       - TBD
@@ -68,3 +66,5 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We check your references during your first week to find out what motivates you and how best to work with you.
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
+
+Go back to the [careers page](../../../company/careers.md) for all open positions.

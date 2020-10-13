@@ -6,13 +6,19 @@
 
 ## Team
 
-- [List of team members](../../company/team/index.md)
+- [List of all Sourcegraph team members](../../company/team/index.md)
+
+### People Ops team members
+
+- [Noemi Mercado](../../../company/team/index.md#noemi-mercado-she-her), Head of People Ops
+  - [David Li](../../../company/team/index.md#david-li-he-him), Technical Recruiter
+  - Cecily Black, Recruiting Coordinator
 
 ## Teammate experience
 
 - [All-remote work](../../company/remote/index.md)
-- [Interview process](interview_process.md)
-- [Hiring](hiring.md)
+- [Interview process](hiring/interview_process.md)
+- [Hiring](hiring/index.md)
 - [Onboarding](onboarding/index.md)
 - [Performance review cycles](review-cycles.md)
 - [United States visa sponsorship](visa-sponsorship.md)
@@ -38,8 +44,8 @@ See job descriptions and responsibilities of roles on the People Ops team:
 - TODO
 
 ## [Code of conduct](../communication/code_of_conduct.md)
-- [Personal Pronouns](personal-pronouns.md)
 
+- [Personal Pronouns](personal-pronouns.md)
 - [Anti-corruption/anti-bribery](anti-corruption.md)
 
 ## General office information

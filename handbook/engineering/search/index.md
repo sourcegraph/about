@@ -12,9 +12,37 @@ Sourcegraph search is:
 - **Easy to use:** Users can quickly understand how to find what they are looking for and what options are available for searching. The search syntax is clear and intuitive.
 - **Shareable:** Sourcegraph searches are easy to share, and provide team and organization wide value. This in turn creates network effects that compound the value Sourcegraph provides with scale.
 
-## Current focus
+## Iterations
 
-Our current focus is documented in the [tracking issue for the current milestone](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fsearch).
+The search team plans its work in **2-week iterations**.
+
+The goals and updates for current and past iterations can be found in the [iteration log](./iteration_log.md).
+
+The planned work items for the current iteration are tracked in the [Search iterations GitHub project](https://github.com/orgs/sourcegraph/projects/93).
+
+### Planning an iteration
+
+Iterations start **every other Monday**.
+
+**On the last Friday of an iteration:**
+
+- Teammates add the themes they're planning to work on, and the desired outcomes, to the [iteration log](./iteration_log.md).
+- Teammates add relevant GitHub issues or cards to the **Planned** column of the [Search iterations GitHub project](https://github.com/orgs/sourcegraph/projects/93).
+- Teammates add any topics they would like to discuss during the retrospective to the [Search team retrospectives](https://docs.google.com/document/d/1YyPhH-OVrFddLhlerlfrqmnqe633I09wp9D9mSI4Za8/edit) document.
+
+**On the first Monday of an iteration:**
+
+- The team holds its [retrospective](https://docs.google.com/document/d/1YyPhH-OVrFddLhlerlfrqmnqe633I09wp9D9mSI4Za8/edit) for the previous iteration.
+- The team reviews the iteration plan during the team sync, and kicks off the iteration.
+
+**Work log updates:**
+
+- Teammates should update the [work log](./iteration_log.md) for the themes they're working on.
+- PR approvals are not required for work log updates.
+- Updates should be in prose and communicate progress made and pain points.
+- Updates should happen at least twice (in the middle and at the end of the iteration), but may be more frequent if desired.
+    - The mid-iteration update should contain a forecast for the next week, and whether the remaining planned work is on track to be completed on time.
+    - The end-of-iteration update should mention whether the planned outcomes were reached or not, and if not, why.
 
 
 ## Goals
@@ -28,7 +56,7 @@ _Updated 2020-09-11_
    - **Outcome:** Sourcegraph can search 500k repositories in less than 300ms. This is on par with [grep.app](https://grep.app).
    - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
    - **Owners:** Keegan/Stefan
-   - **Status:** Sourcegraph.com currently has about 100k repositories.
+   - **Status:** [In progress](perf.md)
    - **Estimated completion**: 3.23 (End of December 2020)
 
 ### Fast
@@ -39,9 +67,11 @@ _Updated 2020-09-11_
       - Unblock the ability to add responsive and fast-loading search results.
       - Return results faster for large result sets, e.g. indexed repositories in very large codebases.
   - **Plan:** Streaming search
-  - **Owner:** Keegan
+  - **Owners:** Keegan, Juliana
   - **Status:** In progress
-  - **Estimated completion:** 3.21
+  - **Estimated completion:**
+    - ~~3.21~~ 2020-09-23 update: We revised this estimate after discussing needed work on the design & frontend side.
+    - 3.22
 
 ### Expressive
 
@@ -67,7 +97,9 @@ _Updated 2020-09-11_
           - **Plan:** Search onboarding tour
           - **Owner:** Farhan
           - **Status:** In progress
-          - **Estimated completion**: 3.20
+          - **Estimated completion**:
+              - ~~3.20~~ 2020-09-22 update: not all bugs found during the initial round of user testing were fixed in 3.20
+              - 3.21
       - It is hard for users to quickly get to code they care about.
           - **Plan:** Enterprise homepage
           - **Owner:** Farhan, Juliana
@@ -91,8 +123,8 @@ _Updated 2020-09-11_
           - Email
   - **Owner:** TBD
   - **Status:** Not started
-  - **Estimated start:** TODO
-  - **Estimated effort:** TODO
+  - **Estimated start:** 2020-11-02
+  - **Estimated effort:** 4 weeks
 
 ## Contact
 
@@ -101,12 +133,13 @@ _Updated 2020-09-11_
 
 ## Members
 
-- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md)) is focused on search, [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is supporting.
+- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md))
 - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
   - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
   - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
   - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
   - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
+  - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
 
 ## On-call
 
@@ -115,6 +148,8 @@ _Updated 2020-09-11_
 
 ## Growth plan
 
-_Updated 2020-07-22_
+_Updated 2020-10-07_
 
-We would like to grow this team to ~6-8 engineers and we expect the right split of skills to be roughly 50%/50% between [frontend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-frontend.md) and [backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md). This growth is contingent upon having a dedicated engineering manager for this team.
+We are looking to hire:
+- A [full-stack software engineer](../hiring/software-engineer-full-stack.md)
+- A [backend software engineer](../hiring/software-engineer-backend.md)

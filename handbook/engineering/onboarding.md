@@ -6,10 +6,10 @@ Welcome! We're excited to have you join the team. This document outlines the str
 
 You'll have to get some basics set up in your first few days:
 
-- Complete [general onboarding](../people-ops/onboarding/index.md#for-all-new-teammates)
+- Complete [general onboarding](../people-ops/onboarding/index.md#general-onboarding-checklist)
 - [Configure your GitHub notifications.](./github-notifications/index.md)
 - Join #dev-announce, #dev-chat, and your team's channel on Slack, as well as any other channels you find interesting. [Team chat documentation](../communication/team_chat.md#engineering)
-- Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md#step-1-install-dependencies). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next engineer that we hire doesn't run into the same problem).
+- Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/main/doc/dev/getting-started/index.md). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next engineer that we hire doesn't run into the same problem).
 - [Add Sourcegraph as a browser search engine](https://docs.sourcegraph.com/integration/browser_search_engine). Add another entry for our internal instance: `https://sourcegraph.sgdev.org/search?q=%s`. This also ensures you have access to our internal instance.
 - Read through your team's handbook page, to learn about the team and its internal processes.
 
@@ -24,13 +24,14 @@ Your manager should complete the following steps when you join:
   - [Sourcegraph organization on Sourcegraph.com](https://sourcegraph.com/organizations/sourcegraph/members)
   - [LSIF organization on GitHub](https://github.com/orgs/lsif/people) (optional; recommended for Code Intelligence team members)
   - [Buildkite](https://buildkite.com/organizations/sourcegraph/users/new)
-  - Google Cloud Platform ([prod](https://console.cloud.google.com/iam-admin/iam?project=sourcegraph-dev), [test](https://console.cloud.google.com/iam-admin/iam?project=sourcegraph-server))
+  - Add the user to the `gcp-engineering` [group](https://console.cloud.google.com/iam-admin/groups?orgonly=true&project=&folder=&organizationId=1006954638239&supportedpurview=organizationId) so they have access to our [Google Cloud Platform](./environments.md).
   - [Opsgenie](https://sourcegraph.app.opsgenie.com/settings/users/)
   - [Docker Hub](https://hub.docker.com/orgs/sourcegraph)
   - [Site24x7](https://www.site24x7.com) (optional; recommended for Distribution team members)
   - [HoneyComb.io](https://www.honeycomb.io/)
   - Ask Christina to send an invite to [Productboard](https://sourcegraph.productboard.com)
   - Ask a member of the Design team to invite as "Viewer" to [Figma](https://figma.com)
+  - Ask on `dev-chat` for access to [Percy](https://percy.io/) which we use for visual testing.
 
 ## Weeks 1-3
 
@@ -42,7 +43,7 @@ As you're working on these tasks:
 
 - Optimize for learning: your priority is to soak up as much context as possible, not to ship something as fast as possible.
 - Aim to be as incremental as possible:
-    - Open a pull request as soon as you feel like you're ready for feedback or input on your code — you can make it a draft pull request if your code is still a work in progress.  
+    - Open a pull request as soon as you feel like you're ready for feedback or input on your code — you can make it a draft pull request if your code is still a work in progress.
     - Favour splitting up your work in multiple pull requests every time it makes sense — shipping frequently is important.
     - Ask yourself what tests are appropriate for the change you're tackling, and add them!
 - If you need help, remember everyone is here to [answer any question](../people-ops/onboarding/index.md#everyone-is-here-to-support-you-as-you-onboard) — ask for help in your team's channel (or any appropriate channel), and add the answer to our docs or the handbook if you feel like it can help future teammates.
@@ -72,6 +73,7 @@ There will be plenty for you to read and learn about when you're not working on 
 - Read through the rest of the engineering handbook to learn more about how we operate.
 - Read how we choose and continually update our [goals](../../company/goals/index.md).
 - Read how we plan and keep each other up to date with [tracking issues](./tracking_issues.md).
+- Frontend engineers should watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn about how design and engineering work together
 
 ## Weeks 4-6
 

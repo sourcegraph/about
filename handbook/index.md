@@ -3,6 +3,7 @@
 The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/index.md#open-company).
 
 The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. 
+
 - [Editing the handbook](editing.md)
 - [Handbook usage](usage.md)
 
@@ -12,9 +13,10 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Goals](../company/goals/index.md)
 - [Team](../company/team/index.md)
   - [Org chart](../company/team/org_chart.md)
+  - [Careers](../company/careers.md)
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
-  - [Style guide](communication/style_guide.md)
+  - [Content guidelines](communication/content_guidelines.md)
 
 ## Teams at Sourcegraph
 
@@ -53,9 +55,10 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Sales](sales/index.md)
 
-### Business Operations
+### [Operations](ops/index.md)
 
-- [Business Operations](bizops/index.md)
-  - [Finance](bizops/index.md#finance-and-reporting)
-  - [Analytics](bizops/index.md#analytics)
-  - [Adding, changing and debugging pings](engineering/adding_ping_data.md)
+- [Business & product operations](ops/bizops/index.md)
+- [Sales strategy & operations](ops/sales-ops/index.md)
+- [Finance & accounting](ops/finance/index.md)
+- [Legal](ops/legal/index.md)
+- [Internal tools](ops/internal-tools/index.md)

@@ -12,6 +12,20 @@ The Code Intelligence team builds tools and services that provide contextual inf
 
 - Robust, extensible, and scalable infrastructure to index code across all languages, keep those indexes up-to-date, and efficiently resolve code intelligence queries against all indexed code.
 
+## History
+
+The origin of our work is the core of Sourcegraph, first implemented as [srclib](https://github.com/sourcegraph/srclib) a code analysis tool developed by our co-founders [Beyang](https://github.com/beyang) and [Quinn](https://github.com/sqs) in 2015.
+
+2016 - We evolved our strategy to utilize LSP (Language Server Protocol) to power the new Sourcegraph code search engine. LSP is a user oriented protocol and requires an implementation of a language server for each programming language.
+
+2017 - Over time we started to experience some issues with language servers. They can be difficult to deploy, slow at runtime, slow to adopt by members of their respective language communities, and slow to develop.
+
+2018 - We added a new basic code intelligence that is built on search-based heuristics to allow us to provide quick and good enough i.e. "imprecise" support for the [most popular programming languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22). 
+
+2019 - While looking for more efficient alternatives to language servers we found LSIF (Language Server Index Format) which provided an index-based implementation of precise code navigation (similar to srclib) with the advantage of being able to build on top of the work done in the LSP community (LSIF and LSP are sister protocols).
+
+2020 and beyond - The Code Intelligence team is responsible for how Sourcegraph understands code and for providing data that powers semantic search, campaigns and code insights. Our API is the point of discovery for the knowledge graph for all source code.
+
 ## Vision
 
 To be the point of discovery for the knowledge graph for all source code.
@@ -34,6 +48,7 @@ This list will be updated regularly with links to the technical implementation d
   1. Resolve outstanding issues for lsif-go, ship to 3 customers, [tracking issue 13015](https://github.com/sourcegraph/sourcegraph/issues/13015).
   1. Provide best effort auto-indexing for supported languages, [RFC-199](https://docs.google.com/document/d/1rCduWqaLAbMu2s43RwJTBbRlhL6qS3oqq4iawiGdoVE/edit), [RFC-201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit).
 - Success Outcome: We have accurate and comprehensive precise code intel for C++, Go, and Java. We will work to ship each indexer to at least 3 customers and gather feedback for future iteration. The precision level for each indexer tool is > 80%.
+- Progress: See the [Code Intel Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
 ### Create a backend that can perform and scale across organizations of various sizes up to the upper boundaries of our system.
 
@@ -131,11 +146,20 @@ Our team is growing and to help our new teammates have the best onboarding exper
 
 ## Members
 
-- [María Craig](../../../company/team.md#mar%c3%ada-craig-she-her) ([Product Manager](../../product/roles/product_manager.md))
-- [Aida DeWitt](../../../company/team/index.md#aida-dewitt-she-her) ([Engineering Manager](../roles.md#engineering-manager))
+- [María Craig](../../../company/team/index.md#maría-craig-she-her) ([Product Manager](../../product/roles/product_manager.md))
+- We are hiring an [Engineering Manager for this team](../hiring/engineering-manager-code-intelligence.md).
   - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
   - [Garo Brik](../../../company/team/index.md#garo-brik-they-them)
   - [Noah Santschi-Cooney](../../../company/team/index.md#noah-santschi-cooney-he-him)
+
+Temporary responsibilities while we search for an engineering manager:
+
+- María
+  - Send [weekly update](../leadership/index.md#weekly-updates)
+  - Run retrospectives
+  - Drive milestone planning (invite Nick to help facilitate)
+- Eric
+  - Organize and run code intel team meetings
 
 ## Ownership
 
@@ -166,10 +190,10 @@ Our team is growing and to help our new teammates have the best onboarding exper
 - [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerCodeIntel%2C+:%5B_%5D%7D+OR+%28:%5B_%5D%2C+ObservableOwnerCodeIntel%29+count:1000&patternType=structural)
 - [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/d0c10593-3edd-4d7e-8d1b-2ad29afeaa71)
 
-## Hiring status
+## Growth plan
 
-_Updated 2020-08-01_
+_Updated 2020-09-22_
 
-We are hiring for these roles:
+We are hiring an [Engineering Manager](../hiring/engineering-manager-code-intelligence.md) to lead and grow this team.
 
-- +1 [Software Engineer - Code intelligence](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-code-intelligence)
+We are also interested to hire an engineer who is capable of working on our web application as well as our backend systems. Apply here: [Software Engineer - Full Stack](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-full-stack)

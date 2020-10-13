@@ -2,6 +2,7 @@
 
 The Sales team represents us and our values to customers, bringing back dollars and feedback to help us grow.
 
+- [Account Tiers](https://docs.google.com/document/d/14420oruJWMLKj67ObZiDzRK5GpHmRWXDjlDbH7L6T00/edit?ts=5f7e4023#heading=h.qdguquy7dt7i)
 - [Pricing](https://about.sourcegraph.com/pricing)
 - [Common questions from prospective customers](common_customer_questions.md)
 - [Sales team onboarding](onboarding/index.md)
@@ -19,6 +20,10 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 TODO
 
+## Roles
+
+See [roles](./roles/index.md) page.
+
 ## How sales works with other Sourcegraph teams
 
 ### [Customer engineering](../ce/support.md) (for customer support)
@@ -26,6 +31,8 @@ TODO
 - [Sales-to-CE new customer handover process](sales_to_ce_handover.md)
 - [How to request support (for customers)](../ce/support.md#how-to-get-support-for-customers)
 - [Creating and maintaining license keys for customers](../ce/license_keys.md)
+
+### [Team members who want to join calls](onboarding/joining_customer_calls.md)
 
 ## Definitions
 
@@ -64,9 +71,10 @@ A customer is an organization with a Sourcegraph subscription contract that has 
     - If in doubt about whether another customer is referenceable by name, ask in #sales.
 1. If an organization's contract will start in the future, they are still considered a customer. (This can happen when we agree to have a contract start on the next 1st of the month because that makes life easier for a customer, for example.)
 
-### Sales Accepted Opportunity (SAO):
+### Sales Accepted Opportunity (SAO)
 
 Sales Accepted Opportunities are where ALL of the following are true:
+
 - We have completed an intro call/meeting with the company/contact
 - Company/contact has expressed some form of interest/need in Sourcegraph
 - Contact can be a potential champion or coach
@@ -145,14 +153,6 @@ Note that this is a stage we may add in the future to indicate we are almost at 
 ### Closed Won
 
 Deal signed!
-
-## Segmentation
-
-Different customers and deals have different needs from our sales team. We segment customers and deals based on their actual or projected ARR:
-
-- **Tier 1** = $100k+ ARR
-- **Tier 2** = $42k+ ARR
-- **Tier 3** = $22k+ ARR
 
 ### Maintaining customer spreadsheets
 
