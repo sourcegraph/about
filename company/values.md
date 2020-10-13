@@ -40,7 +40,7 @@ With agency comes responsibility; teammates are expected to take initiative and 
 
 ### High quality
 
-Every person on our team is individually responsible for knowing what high-quality work looks like and producing high-quality work. You divide large problems into small low-risk, tractable problems that can be solved iteratively.
+Every person on our team is individually responsible for knowing what high-quality work looks like and producing high-quality work. We divide large problems into small low-risk, tractable problems that can be solved iteratively.
 
 - If you don’t know what high quality looks like, it's your responsibility to find out (for example, by asking teammates and stakeholders).
 - If you don’t have the time to produce high-quality work, then it's your responsibility to take more time or cut scope (and communicate this), so that you can produce high-quality work.
