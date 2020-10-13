@@ -35,8 +35,6 @@ section Web
     Code insights TBD                                         :         2020-11-09, 14d
     Web nav updates                                           :         2020-11-09, 7d
     Breadcrumbs                                               :         2020-11-16, 7d
-    Code insights TBD                                         :         2020-11-23, 14d
-%%     TO DO :active, after release-3.21, 30d
 
 %% section Search
 %%     TO DO :active, after release-3.21, 30d
