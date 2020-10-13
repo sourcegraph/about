@@ -120,7 +120,7 @@ export default ((props: any) => (
                                             Custom user pricing
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            SLA, 24/7, and dedicated support
+                                            SLA with dedicated support
                                         </PricingPlanProperty>
                                     </>
                                 }

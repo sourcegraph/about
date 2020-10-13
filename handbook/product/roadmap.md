@@ -28,8 +28,13 @@ section Cloud
 %% section Code intel
 %%     TO DO :active, after release-3.21, 30d
 
-%% section Web
-%%     TO DO :active, after release-3.21, 30d
+section Web
+    Browser extension discoverability                         :done,    2020-09-28, 14d
+    Build new and improved extensions                         :active,   2020-10-12, 14d
+    Improve extensions development + docs                     :         2020-10-26, 14d
+    Code insights TBD                                         :         2020-11-09, 14d
+    Web nav updates                                           :         2020-11-09, 7d
+    Breadcrumbs                                               :         2020-11-16, 7d
 
 %% section Search
 %%     TO DO :active, after release-3.21, 30d
@@ -66,7 +71,18 @@ Unplanned:
 
 ## Code intel
 
-TO DO
+1. 🔄 Simplify database structure and improve performance by migrating SQLite data to Postgres.
+1. 🔄 Rebuild lsif-java indexer using com.sun.source
+1. 🔄 Resolve outstanding issues for lsif-clang
+1. 🔄 Provide best effort auto-indexing for supported languages
+1. 🔄 Ship to lsif-go to 3 customers
+1. 🔄 Ship to lsif-clang to 3 customers
+1. Add native Gradle support for lsif-java
+1. Ship to lsif-java to 3 customers
+1. Integrate with Bazel for monorepo support
+
+See [Code Intel roadmap](https://docs.google.com/document/d/1JPNelxg_8xwZKz8TT2BnpCccShOgxJrLubf2RNGye50/edit#) for more.
+
 
 ## Distribution
 
@@ -74,7 +90,28 @@ See [Distribution roadmap](https://github.com/sourcegraph/about/pull/1104).
 
 ## Search
 
-TO DO
+1. 🔄 Enterprise homepage
+1. 🔄 Search tour
+1. 🔄 Search expressions
+1. 🔄 Scaling indexed text search to 500k repositories
+1. 🔄 Streaming search
+1. Code monitoring (private code monitors, no sharing, emails + webhooks)
+1. Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
+1. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
+1. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
+1. Search language rules engine
+1. Saved searches without monitoring
+1. Search results redesign
+1. Diff/commit search performance
+1. Search input redesign
+1. Structural search performance
+1. As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed (better version contexts 2/2)
+1. Code monitoring (shareable)
+1. Semantic search: prototype validation
+1. External search result providers
+1. Semantic search: implementation
+
+See [search roadmap prioritization](https://docs.google.com/document/d/1sUoaF8otA25NMapVcM5yHfP82kFie0NUd3_kL5Rg2Ns/edit) for more details on individual items.
 
 ## Security
 
@@ -82,14 +119,12 @@ TO DO
 
 ## Web
 
-TO DO: below are rough items from a previous web team planning discussion.
+1. ✅ Existing sourcegraph extensions are more discoverable ([RFC 209](https://docs.google.com/document/d/1I5BMEGp3QuB81AjSzLCQwq_XJV1sXevlU0lpB4O1pj8/edit#))
+1. ✅ The Sourcegraph browser extension is more discoverable and easy to congifure ([RFC 221](https://docs.google.com/document/d/19f4xleYBU1zZZdqMmXlLmFxeR-fwEpOwTOgViOFOnyo/edit))
+1. 🔄 Build new and improved Sourcegraph extensions to showcase the value and opportunity of extensions ([RFC 246](https://docs.google.com/document/d/1HngEeLNAe7_QzVJr6UPi0Si4ZALqTzb7uonOxUiJP6g/edit))
+1. Improve the Sourcegraph extensions (internal) development experience ([RFC 155](https://docs.google.com/document/d/1ikrUNVe3YVbR-JpegxhjrFdmRkTGzTLcOMkKHnOyjuE/edit)) and (external) documentation
+1. Code insights TBD
+1. Sourcegraph web app navigation is clearer and intentionally designed ([RFC 248](https://docs.google.com/document/d/1AEeCuXuYGlu2kU9HfTuh5rMuoL2ASxy-G4LFje_ySFE/edit?usp=drive_web&ouid=110069214620879702746))
+1. Page title breadcrumbs are unified and useful 
+1. Later-stage code insights work 
 
-1. Webapp consistency
-1. The extension registry is confusing and does not communicate it's value
-1. Many developers do not realize Sourcegraph has a browser extension
-1. The Sourcegraph extension development experience is confusing and there aren't any good examples
-1. A few high quality non-language intelligence extension would help communicate the value and opportunity of Sourcegraph extensions
-1. Code insights
-1. Add support for more code hosts with the browser extension (e.g., Gerrit, Bitbucket Cloud).
-1. Provide search capabilities from the code host
-1. IDE integrations
