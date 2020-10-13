@@ -35,7 +35,7 @@ section Web
     Code insights TBD                                         :         2020-11-09, 14d
     Web nav updates                                           :         2020-11-09, 7d
     Breadcrumbs                                               :         2020-11-16, 7d
-    Code insights prototyping                                 :         2020-11-23, 14d
+    Code insights TBD                                         :         2020-11-23, 14d
 %%     TO DO :active, after release-3.21, 30d
 
 %% section Search
@@ -93,7 +93,7 @@ TO DO
 1. ✅ The Sourcegraph browser extension is more discoverable and easy to congifure ([RFC 221](https://docs.google.com/document/d/19f4xleYBU1zZZdqMmXlLmFxeR-fwEpOwTOgViOFOnyo/edit))
 1. 🔄 Build new and improved Sourcegraph extensions to showcase the value and opportunity of extensions ([RFC 246](https://docs.google.com/document/d/1HngEeLNAe7_QzVJr6UPi0Si4ZALqTzb7uonOxUiJP6g/edit))
 1. Improve the Sourcegraph extensions (internal) development experience ([RFC 155](https://docs.google.com/document/d/1ikrUNVe3YVbR-JpegxhjrFdmRkTGzTLcOMkKHnOyjuE/edit)) and (external) documentation
-1. Code insights prototyping (TBD)
+1. Code insights TBD
 1. Sourcegraph web app navigation is clearer and intentionally designed ([RFC 248](https://docs.google.com/document/d/1AEeCuXuYGlu2kU9HfTuh5rMuoL2ASxy-G4LFje_ySFE/edit?usp=drive_web&ouid=110069214620879702746))
 1. Page title breadcrumbs are unified and useful 
 1. Later-stage code insights work 
