@@ -5,7 +5,7 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 - [**Be customer driven**](#be-customer-driven): You proactively work on the right things by continuously orienting your goals around delivering value to your customers.
 - [**Work as a team**](#work-as-a-team): You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
 - [**High agency**](#high-agency): You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
-- [**High quality**](#high-quality): Every person on our team is individually responsible for knowing what high-quality work looks like and producing high-quality work.
+- [**High quality**](#high-quality): Every person on our team is individually responsible for finding out what high-quality work looks like and producing that high-quality work.
 - [**Open and transparent**](#open-and-transparent): You proactively communicate in an open and transparent way.
 - [**Continuously grow**](#continuously-grow): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
 - [**Be human**](#be-human): You are kind, empathetic, authentic, humble.
