@@ -6,11 +6,21 @@ If you think that you have found a security or privacy vulnerability, please ema
 
 We provide monetary rewards, from \$50 to \$10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers impacted, the difficulty of exploiting the vulnerability, and the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit.
 
-We will send payment to a valid PayPal account. We will ask you for the name and country associated with your PayPal account.
+When a monetary bounty is presented, eligible reports will be based on the severity, as determined by [CVSS v3.1](https://www.first.org/cvss/calculator/3.1). We will send payment to a valid PayPal account. We will ask you for the name and country associated with your PayPal account.
+
+### Bounty Categories
+
+|Attack Outcome| Maximum Payout|
+|:------------- | :----------: |
+| You read or write to another user's code | \$10,000 |
+| You take over another user's account  | \$5000 |
+| You gain access to the internal Sourcegraph cloud network | $2500 |
+| You gain access to another user's configurations | $2000 |
+| You find a misconfiguration that can lead to an exploit | \$500 |
 
 **Timelines**
 
-All timelines below reflect US busines days.
+All timelines below reflect US business days.
 
 | Type of response       | Time to response     |
 | :------------- | :----------: |
