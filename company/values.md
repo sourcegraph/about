@@ -2,7 +2,7 @@
 
 These values are the beliefs and principles that help us achieve our [goals](goals/index.md) and [vision](strategy.md#vision).
 
-- [**Be customer driven**](#be-customer-driven): You proactively work on the right things by continuously orienting your goals around delivering value to your customer.
+- [**Be customer driven**](#be-customer-driven): You proactively work on the right things by continuously orienting your goals around delivering value to your customers.
 - [**Work as a team**](#work-as-a-team): You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
 - [**High agency**](#high-agency): You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
 - [**High quality**](#high-quality): Every person on our team is individually responsible for knowing what high-quality work looks like and producing high-quality work.
@@ -16,7 +16,7 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 
 ### Be customer driven
 
-You proactively work on the right things by continuously orienting your goals around delivering value to your customer.
+You proactively work on the right things by continuously orienting your goals around delivering value to your customers.
 
 ### Work as a team
 
