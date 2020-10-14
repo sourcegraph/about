@@ -49,7 +49,7 @@ You are responsible for finding out what high-quality work looks like and delive
 
 If we discover that we've produced something that does not meet our quality bar, we'll roll it back (for example, revert a commit, roll back a deployment, or unpublish content) until we can make it high quality. If that's not possible, we'll prioritize improving it.
 
-High-quality isn't the opposite of iterative. You can keep quality high while still being iterative by narrowing the scope (for example, by solving a smaller problem at first, or by solving it only for certain customers initially).
+High-quality doesn't mean perfect or fully complete. High-quality isn't the opposite of iterative. You can keep quality high while still being iterative by narrowing the scope (for example, by solving a smaller problem at first, or by solving it only for certain customers initially).
 
 ### Open and transparent
 
@@ -88,6 +88,8 @@ We document our goals and plans publicly so we can engage with customers to buil
 > I am working on improving the security of our product, but I feel uncomfortable clearly documenting what I am doing (e.g., in public status updates, issues, PR descriptions, the changelog) because I am worried that it will make Sourcegraph look bad.
 
 Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
+
+Being open and transparent also means sharing your work frequently. You should keep others informed on what you're working on, your progress, and plans. It is helpful in getting more diverse feedback and spotting dependencies between the teams and the solutions. It's your responsibility to make everyone feel welcomed to share their point of view.
 
 ### Continuously grow
 
