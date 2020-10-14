@@ -431,6 +431,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Sea Ranch, CA, USA 🇺🇸
 - [kacie@sourcegraph.com](mailto:kacie@sourcegraph.com), [@mskaciej](https://twitter.com/mskaciej), [LinkedIn](https://www.linkedin.com/in/kaciejenkins)
 - Kacie lives on the northern California coast with her partner Brooks and their feisty little pup, Beatrix (Bebe). Prior to Sourcegraph, Kacie led global marketing at Ace Hotel Group, where she launched the first AI-generated hotel lobby soundscape in partnership with Bjork and Microsoft. As VP of Marketing at Fastly, she helped grow Fastly from a 25-person startup into a global, publicly-traded company. She has memorized the Joy of Cooking chocolate chip cookie recipe, and always has a song playing in her head.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
