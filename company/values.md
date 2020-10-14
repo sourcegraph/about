@@ -41,16 +41,6 @@ We prefer to [build teams, not workgroups](https://dzone.com/articles/workgroups
 
 As a team's size and scope grows, it (unintentionally) tends to become a workgroup. Resist this by aggressively focusing, or by splitting it into smaller teams.
 
-### High agency
-
-Everyone at Sourcegraph has the power and the responsibility to improve Sourcegraph as a company and as a product.
-
-> “Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. Once you learn that, you'll never be the same again.” - Steve Jobs
-
-A few examples of how we encourage high agency are by being a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, which allows anyone to change how the business operates, and by empowering engineers to spend time on projects they believe in through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
-
-With agency comes responsibility; teammates are expected to take initiative and engage in collaboration when exercising their agency. If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!
-
 ### Open and transparent
 
 We are an [open company](index.md#open-company).
@@ -88,6 +78,16 @@ We document our goals and plans publicly so we can engage with customers to buil
 > I am working on improving the security of our product, but I feel uncomfortable clearly documenting what I am doing (e.g., in public status updates, issues, PR descriptions, the changelog) because I am worried that it will make Sourcegraph look bad.
 
 Our code and PRs are public, so lack of transparency is only obfuscation, not security. Unless something is immediately exploitable and would put customer data at risk, you should be completely transparent about it, just like any other non-security improvement.
+
+### High agency
+
+Everyone at Sourcegraph has the power and the responsibility to improve Sourcegraph as a company and as a product.
+
+> “Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use. Once you learn that, you'll never be the same again.” - Steve Jobs
+
+A few examples of how we encourage high agency are by being a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, which allows anyone to change how the business operates, and by empowering engineers to spend time on projects they believe in through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
+
+With agency comes responsibility; teammates are expected to take initiative and engage in collaboration when exercising their agency. If you feel that something is important, then advocate for it! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one!
 
 ### Continuously grow
 
