@@ -104,7 +104,7 @@ However, if you want to use any other SQL client, you'll have to run the [`cloud
   cloud_sql_proxy -instances=sourcegraph-dev:us-central1:sg-cloud-732a936743=tcp:5555
 ```
 
-Once the proxy connect successfully, you can use any client to connect to the local `5555` port (you can choose any other port you want).
+Once the proxy connects successfully, you can use any client to connect to the local `5555` port (you can choose any other port you want).
 
 
 The password of the sg user is in our shared 1Password under [Google Cloud SQL](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/svfiw4vcbxhhbobpl442olyebu)
