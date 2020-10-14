@@ -98,7 +98,7 @@ To connect to the production database:
   gcloud beta sql connect sg-cloud-732a936743 --user=sg -d sg --project sourcegraph-dev
 ```
 
-The password is in our shared 1Password under [Google Cloud SQL](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/svfiw4vcbxhhbobpl442olyebu/)
+The password is in our shared 1Password under [Google Cloud SQL](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/svfiw4vcbxhhbobpl442olyebu)
 
 #### Via BigQuery (for read-only operations)
 
