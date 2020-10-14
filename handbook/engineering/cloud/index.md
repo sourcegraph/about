@@ -160,20 +160,16 @@ By default, members of the team will provide a brief update about the goals they
 - [Tomás Senart](../../../company/team/index.md#tomás-senart) ([Engineering Manager](../roles.md#engineering-manager))
   - [Joe Chen](../../../company/team/index.md#joe-chen)
   - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
-  - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
   - [Asdine El Hrychy](../../../company/team/index.md#asdine-el-hrychy)
   - [Alan Harris](../../../company/team/index.md#alan-harris-he-him)
   - [A. RS](../../../company/team/index.md#todo) starts on the 2nd of November.
-
-Other:
-
-- [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith) will not be isolating his work to a single team. Instead, he will serially choose tasks that he thinks are important to work on and he will post updates to the most relevant tracking issue on GitHub. This is an experiment for the next month and we will evaluate the outcome on 2020-08-17. Tomás will continue to be his manager during this experiment.
+  - [A. R](../../../company/team/index.md#todo) starts in October 26th.
 
 ## Growth plan
 
 _Updated 2020-08-05_
 
-We are growing the Cloud team by hiring both [Full stack Engineers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-full-stack.md) and [Backend Engineers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md).
+We are growing the Cloud team by hiring both [Full stack Engineers](../hiring/software-engineer-full-stack.md) and [Backend Engineers](../hiring/software-engineer-backend.md).
 
 There continues to be a need for work to happen on other areas of our backend infrastructure and the Cloud team is the best team to own that kind of work today. When this Cloud team reaches 6 engineers, we plan to split the team in half to form a new [Backend Infrastructure team](../backend-infrastructure/index.md). When this happens, Tomás will be the manager of both teams and will look to identify new managers so we are able to continue growing both teams.
 

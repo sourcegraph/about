@@ -37,13 +37,13 @@
 
             &::before {
                 text-indent: -0.4em;
-                content: '"';
+                content: '“';
                 position: absolute;
                 margin-left: -2px;
             }
 
             &::after {
-                content: '"';
+                content: '”';
             }
 
             @include media-breakpoint-up(lg) {

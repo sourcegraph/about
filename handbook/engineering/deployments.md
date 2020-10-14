@@ -3,8 +3,8 @@
 We maintain multiple instances of Sourcegraph:
 
 - [sourcegraph.com](#sourcegraph-com) is our production deployment for open source code.
-- [sourcegraph.sgdev.org](#sourcegraph-sgdev-org) is our private deployment of Sourcegraph that contains our private code.
-- [k8s.sgdev.org](#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers.
+- [sourcegraph.sgdev.org](#sourcegraph-sgdev-org) is our private deployment of Sourcegraph that contains some of our private code.
+- [k8s.sgdev.org](#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers. Note that this also contains all of our private code.
 - [Managed instances](./distribution/managed/index.md) are deployments of Sourcegraph we manage for customers.
 
 Learn more about how these work in [deployment basics](#deployment-basics). Also on this page:
@@ -88,6 +88,8 @@ git push origin release
 
 ### Accessing sourcegraph.com database
 
+#### Via the CLI
+
 Sourcegraph.com utilizes an external HA database. You will need to connect to it directly. The easiest way to do this is through the `gcloud` cli.
 
 To connect to the production database:
@@ -96,11 +98,30 @@ To connect to the production database:
   gcloud beta sql connect sg-cloud-732a936743 --user=sg -d sg --project sourcegraph-dev
 ```
 
-The password is in our shared 1Password under [Google Cloud SQL](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/svfiw4vcbxhhbobpl442olyebu/)
+However, if you want to use any other SQL client, you'll have to run the [`cloud_sql_proxy`](https://cloud.google.com/sql/docs/postgres/connect-admin-proxy#install) utility, which authenticates with you local `gcloud` credentials automatically.
+
+```
+  cloud_sql_proxy -instances=sourcegraph-dev:us-central1:sg-cloud-732a936743=tcp:5555
+```
+
+Once the proxy connects successfully, you can use any client to connect to the local `5555` port (you can choose any other port you want).
+
+
+The password of the sg user is in our shared 1Password under [Google Cloud SQL](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/svfiw4vcbxhhbobpl442olyebu)
+
+#### Via BigQuery (for read-only operations)
+
+You can also query the production database via BigQuery as an external data source.
+
+See an [example query](https://console.cloud.google.com/bigquery?sq=527047051561:bfa7c7e57f884d209f261d15e4610229) to get started.
+
+**Note**: This method only permits read-only access
 
 ### k8s.sgdev.org
 
 [![Build status](https://badge.buildkite.com/65c9b6f836db6d041ea29b05e7310ebb81fa36741c78f207ce.svg?branch=release)](https://buildkite.com/sourcegraph/deploy-sourcegraph-dogfood-k8s-2)
+
+🚨 This deployment contains private code - do not use it for demos!
 
 This deployment is also colloquially referred to as "dogfood", "dogfood-k8s", or just "k8s". It deploys the latest changes in [`deploy-sourcegraph`](https://github.com/sourcegraph/deploy-sourcegraph), and by extension, `sourcegraph/sourcegraph`, via automated updates - learn more in [deployment basics](#deployment-basics).
 
@@ -144,30 +165,31 @@ This section contains tips and advice for interacting with our Kubernetes deploy
 1. Make sure that you have been granted access to our Google Cloud project: https://console.developers.google.com/project/sourcegraph-dev?authuser=0. You may need to change `authuser` to the index of your sourcegraph.com Google account.
 
 1. Install the `gcloud` command (CLI for interacting with the Google Cloud):
-
    ```
    curl https://sdk.cloud.google.com | bash
    ```
-
 1. Get authorization for your `gcloud` command:
-
    ```
    gcloud auth login
    ```
-
 1. Install the `kubectl` command (CLI for interacting with Kubernetes):
-
    ```
    gcloud components install kubectl
    ```
-
-1. Configure `kubectl` to point to the desired cluster using the appropriate `gcloud container clusters get-credentials` command listed at the top of this document.
-
+1. Configure `kubectl` to point to the desired cluster using the appropriate `gcloud container clusters get-credentials` command listed at the [top of this document](#deployments).
 1. Verify that you have access to kubernetes:
 
    ```
    kubectl get pods --all-namespaces
    ```
+
+#### Reauthenticate kubectl
+
+If you see the following when running `kubectl` commands:
+
+> Unable to connect to the server: x509: certificate signed by unknown authority
+
+Just run the appropriate `gcloud container clusters get-credentials` command listed at the [top of this document](#deployments) again to reauthenticate.
 
 ### kubectl cheatsheet
 

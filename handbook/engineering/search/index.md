@@ -123,8 +123,8 @@ _Updated 2020-09-11_
           - Email
   - **Owner:** TBD
   - **Status:** Not started
-  - **Estimated start:** TODO
-  - **Estimated effort:** TODO
+  - **Estimated start:** 2020-11-02
+  - **Estimated effort:** 4 weeks
 
 ## Contact
 
@@ -133,12 +133,13 @@ _Updated 2020-09-11_
 
 ## Members
 
-- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md)) is focused on search, [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is supporting.
+- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md))
 - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
   - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
   - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
   - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
   - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
+  - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
 
 ## On-call
 
@@ -147,6 +148,8 @@ _Updated 2020-09-11_
 
 ## Growth plan
 
-_Updated 2020-07-22_
+_Updated 2020-10-07_
 
-We would like to grow this team to ~6-8 engineers and we expect the right split of skills to be roughly 50%/50% between [frontend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-frontend.md) and [backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md). This growth is contingent upon having a dedicated engineering manager for this team.
+We are looking to hire:
+- A [full-stack software engineer](../hiring/software-engineer-full-stack.md)
+- A [backend software engineer](../hiring/software-engineer-backend.md)
