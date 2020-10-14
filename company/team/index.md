@@ -425,6 +425,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [joe.kirscher@sourcegraph.com](mailto:joe.kirscher@sourcegraph.com)
 - Joe grew up in Nebraska before coming out to California for college. He has grown to love the mild weather and wine country around the Bay Area, which is fortunate, because he doesn't play football so they won't let him back into Nebraska. After a couple years of consulting, he then spent a total of 10 years working in Sales Operations at Yahoo and FireEye and is now excited to help Sourcegraph scale up!
 
+## Kacie Jenkins (she/her)
+
+- VP of Marketing
+- Sea Ranch, CA, USA 🇺🇸
+- [kacie@sourcegraph.com](mailto:kacie@sourcegraph.com), [@mskaciej](https://twitter.com/mskaciej), [LinkedIn](https://www.linkedin.com/in/kaciejenkins)
+- Kacie lives on the northern California coast with her partner Brooks and their feisty little pup, Beatrix (Bebe). Prior to Sourcegraph, Kacie led global marketing at Ace Hotel Group, where she launched the first AI-generated hotel lobby soundscape in partnership with Bjork and Microsoft. As VP of Marketing at Fastly, she helped grow Fastly from a 25-person startup into a global, publicly-traded company. She has memorized the Joy of Cooking chocolate chip cookie recipe, and always has a song playing in her head.
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
