@@ -4,7 +4,7 @@ If you think that you have found a security or privacy vulnerability, please ema
 
 ### Bounties
 
-We provide monetary rewards, from $50 to $10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers impacted, the difficulty of exploiting the vulnerability, and the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit.
+We provide monetary rewards, from $50 to $10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers impacted, the difficulty of exploiting the vulnerability, the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit, and the quality of the security report.
 
 When a monetary bounty is presented, eligible reports will be based on the severity, as determined by [CVSS v3.1](https://www.first.org/cvss/calculator/3.1). We will send payment to a valid PayPal account. We will ask you for the name and country associated with your PayPal account.
 
