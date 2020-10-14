@@ -52,7 +52,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - You are free in how you chose to implement it and can change the existing code in any way you'd like.
    - You can use your own development environment and lookup documentation on the internet.
    - After the assignment, we schedule a follow-up call to talk through your implementation.
-1. We schedule 4 hours of remote interviews over video chat across multiple days.
+1. We schedule 3 hours of remote interviews over video chat across multiple days.
    - **Technical experience:** We ask you about your past work and accomplishments.
    - **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
    - **CEO/CTO:** We ask you about what motivates you to do your best work, and we tell you more about the vision for the company.
