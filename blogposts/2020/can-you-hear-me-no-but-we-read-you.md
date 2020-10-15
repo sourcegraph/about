@@ -11,7 +11,7 @@ published: true
 
 At Sourcegraph, we’re all-remote. That means we write a lot—in emails, Google Docs, Github, and Slack. We work hard to cultivate a written-first culture.
 
-And that works beautifully for me—because, you see, I have a hearing problem. Or as I like to say, I’m deaf as a post.
+And that works beautifully for me. Because, you see, I have a hearing problem. Or as I like to say, I’m deaf as a post.
 
 While I can hear sound, [I can’t turn that sound into words](https://quinnkeast.com/readme#errata), and rely on lip reading for day-to-day conversations.
 
