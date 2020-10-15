@@ -17,7 +17,7 @@ While I can hear sound, [I can’t turn that sound into words](https://quinnkeas
 
 For me, a product designer, this approach to work is amazing. Long stretches of focus time and being able to decide when and how to best do my work. And for someone with hearing loss, this almost inherently creates a more inclusive environment.
 
-Still, from time to time, we rely on synchronous methods of communication: team syncs to catch up on a more personal level and bring teams together, moderated user research, and facilitated collaborative activities and workshops. More often than not, this means a video call.
+Still, from time to time, we rely on synchronous methods of communication: team syncs to catch up on a more personal level and bring teams together, moderated user research, and facilitated collaborative activities and workshops. And more often than not, synchronous means video call.
 
 Video calls have always been a challenge for me. Lip reading doesn’t work well over video, because lip reading relies on a whole lot more visual information than just the lips, and video calls don’t carry the full visual and _emotional_ bandwidth needed to read lips easily. So instead, I use a series of hacks or built-in tools to help me out by providing real-time speech-to-text.
 
