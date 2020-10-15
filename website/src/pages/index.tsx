@@ -243,10 +243,10 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <h2>Generate code insights [preview]</h2>
                         <p>
-                            Aggregate data from connected external services, and enhance with code intelligence to get
-                            the metadata information you care about. Take direct actions on these insights with
-                            campaigns, like proposing an automated refactor to fix a problem detected through this
-                            static analysis.
+                            Aggregate data from connected external services, and enhance it with code intelligence
+                            to give you the information you care about. Take direct actions on these insights with&nbsp;
+                            <Link to="https://docs.sourcegraph.com/user/campaigns">campaigns</Link>, like proposing
+                            an automated refactor to fix a problem detected through static analysis.
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="/contact/request-demo">
