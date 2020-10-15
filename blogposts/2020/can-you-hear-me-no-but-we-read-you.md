@@ -21,7 +21,7 @@ Still, from time to time, we rely on synchronous methods of communication: team 
 
 Video calls have always been a challenge for me. Lip reading doesn’t work well over video, because lip reading relies on a whole lot more visual information than just the lips, and video calls don’t carry the full visual and _emotional_ bandwidth needed to read lips easily. So instead, I use a series of hacks or built-in tools to help me out by providing real-time speech-to-text.
 
-These hacks and tools work well until things go wrong. Sometimes they’ll cut out. Sometimes they’ll lag and fall behind. When things go wrong, it can be challenging. Simple things like someone asking for my thoughts on something can create awkward moments of silence before I realize that someone said my name, because I was relying on a transcript that was five seconds behind.
+These hacks and tools work well, but sometimes they’ll cut out or they’ll lag and fall behind. And then simple things like someone asking for my thoughts on something can create awkward moments of silence before I realize that someone said my name, because I was relying on a transcript that was five seconds behind.
 
 Thankfully, I have a wonderful, supportive team, and this has never been a problem in my day-to-day work.
 
