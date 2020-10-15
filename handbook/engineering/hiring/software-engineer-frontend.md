@@ -2,7 +2,13 @@
 
 We are looking for frontend engineers who know how to build intuitive user experiences to make the power of [Universal Code Search](https://about.sourcegraph.com/product) accessible to everyone. You will have a lot of ownership to solve tough technical and UX problems in key areas of our web application and browser extensions (e.g. code search, code navigation, campaigns).
 
-## What you will do
+## About you
+
+- You have practice at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g. cut scope) to ship quickly and iterate when necessary.
+- You communicate clearly and empathetically, especially in writing and documentation.
+- You are [high agency](../../../company/values.md#High_agency).
+
+## Your responsibilities
 
 - Work closely with a dedicated designer and PM to implement high-quality UIs.
 - Actively participate in the planning of the features we're going to build, e.g. by writing and reviewing RFCs.
@@ -18,10 +24,7 @@ We are looking for frontend engineers who know how to build intuitive user exper
 - Familiarity with TypeScript or a different typed programming language.
 - Skilled at writing clean, reusable CSS and semantic HTML to implement visual designs.
 - Experience in using backend APIs from the frontend.
-- Skilled at building and testing (e.g., unit testing, automated end-to-end testing) UIs.
-- Ability to communicate clearly and empathetically, especially in writing and documentation.
-- Practice at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g. cut scope) to ship quickly and iterate when necessary.
-- [High agency](../../../company/values.md#High_agency).
+- Skilled at building and testing (e.g. unit testing, automated end-to-end testing) UIs.
 
 ## Nice-to-haves
 
