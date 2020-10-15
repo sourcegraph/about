@@ -55,7 +55,7 @@ But fundamentally, it _worked_. Everyone was able to participate in the call, an
 
 The call was a startlingly effective team bonding experience. Everyone enjoyed and learned a lot from the experience of approaching the call with a different perceptual and technological context.
 
-For me, it was fascinating to see how the way we interacted changed over the course of the call. Everyone became more expressive in physical space. The rhythm of conversation changed, from tentative, short sentences, to longer, well-thought-through blocks of thought. We discovered how difficult it was to go back and forth between speakers without the benefit of sound, and how important it was to give each other conversational space to join in. We discovered how hard it is to be heard.
+For me, it was fascinating to see how our interactions changed over the course of the call. Everyone became more expressive in physical space. The rhythm of conversation changed, from tentative, short sentences, to longer, well-thought-through blocks of thought. We discovered how difficult it was to go back and forth between speakers without the benefit of sound, and how important it was to give each other conversational space to join in. We discovered how hard it is to be heard.
 
 We also realized that some of the things we planned to discuss could be better covered asynchronously in a written-first format. This helped us focus the sync on the topics that actually called for synchronous conversation.
 
