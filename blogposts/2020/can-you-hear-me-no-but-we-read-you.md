@@ -6,7 +6,7 @@ publishDate: 2020-10-15
 tags: [blog]
 slug: can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls
 heroImage: /blog/silent-team-call.png
-published: true
+published: false
 ---
 
 At Sourcegraph, we’re all-remote. We work asynchronously around the world. We work hard to cultivate a written-first culture, and prioritize openness, transparency, and individual agency among our core values.
