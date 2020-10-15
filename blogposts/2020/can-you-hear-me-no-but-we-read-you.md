@@ -85,7 +85,7 @@ While my own hearing loss is permanent, someone dealing with situational challen
 
 Our team is working on universal code search for developers. Universal code search, to us, means creating inclusive experiences from the beginning, and always working to improve our baseline for accessibility.
 
-<p style="padding: .75rem 1.25rem; margin-top: 2rem; background-color: #f2f4f8; border-radius: 8px; line-height: 1.5;"><strong>If we can do more to support how you   use Sourcegraph, <a href="https://airtable.com/shrqVVodqnNUGlbHj?prefill_Source=Blog+post+about+silent+team+call" target="_blank">please get in touch</a>!</strong> We’d love to talk with you to learn how we can do better.</p>
+<p style="padding: .75rem 1.25rem; margin-top: 2rem; background-color: #f2f4f8; border-radius: 8px; line-height: 1.5;"><strong>If we can do more to support how you   use Sourcegraph, <a href="https://airtable.com/shr2JxrSfqFcySukF?prefill_Source=Blog+post+about+silent+team+call" target="_blank">please get in touch</a>!</strong> We’d love to talk with you to learn how we can do better.</p>
 
 <p class="text-center" style="color: #00B4F2; margin-top: 3rem; margin-bottom: 1.5rem;" aria-hidden="true">• • •</p>
 
