@@ -47,13 +47,8 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 1. You [apply here](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7/apply).
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
-1. You complete a 3-hour [exercise project](software-engineer-coding-exercise.md#typescript-coding-exercise) that we designed to test the technical qualifications listed above.
-   - We send you the details at a time of your choosing and you have 3 hours to submit a solution.
-   - The exercise asks you to implement a UI in a demo React app.
-   - We provide you with the code for the demo app, a working GraphQL API and a Figma design for the UI.
-   - You are free in how you chose to implement it and can change the existing code in any way you'd like.
-   - You can use your own development environment and lookup documentation on the internet.
-   - After the assignment, we schedule a follow-up call to talk through your implementation.
+1. You complete a 3-hour [exercise project](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test the technical qualifications listed above.
+1. We review your submission and schedule a **1 hour follow-up call** to discuss it.
 1. We schedule 3 hours of remote interviews over video chat across multiple days.
    - **Technical experience:** We ask you about your past work and accomplishments.
    - **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
