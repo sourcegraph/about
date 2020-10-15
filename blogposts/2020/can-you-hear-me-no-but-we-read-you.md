@@ -6,18 +6,16 @@ publishDate: 2020-10-15
 tags: [blog]
 slug: can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls
 heroImage: /blog/silent-team-call.png
-published: false
+published: true
 ---
 
-At Sourcegraph, we’re all-remote. We work asynchronously around the world. We work hard to cultivate a written-first culture, and prioritize openness, transparency, and individual agency among our core values.
+At Sourcegraph, we’re all-remote. That means we write a lot—in emails, Google Docs, Github, and Slack. We work hard to cultivate a written-first culture.
 
-And it works beautifully for me, because I have a hearing problem.
-
-Or as I like to say, I’m deaf as a post.
+And that works beautifully for me—because, you see, I have a hearing problem. Or as I like to say, I’m deaf as a post.
 
 While I can hear sound, [I can’t turn that sound into words](https://quinnkeast.com/readme#errata), and rely on lip reading for day-to-day conversations.
 
-As a product designer, our written-first, asynchronous approach to work at Sourcegraph is amazing. It naturally results in long stretches of focus time and the agency to decide when and how to best approach my work. And best of all, it almost inherently creates a more inclusive environment for every member of the team.
+For me, a product designer, this approach to working is amazing. Long stretches of focus time and being able to decide when and how to best do my work. And for someone with hearing loss, this almost inherently creates a more inclusive environment.
 
 Still, from time to time, we rely on synchronous methods of communication: team syncs to catch up on a more personal level and bring teams together, moderated user research, and facilitated collaborative activities and workshops. More often than not, this means a video call.
 
