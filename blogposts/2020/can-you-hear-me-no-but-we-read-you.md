@@ -15,7 +15,7 @@ And that works beautifully for me. Because, you see, I have a hearing problem. O
 
 While I can hear sound, [I can’t turn that sound into words](https://quinnkeast.com/readme#errata), and rely on lip reading for day-to-day conversations.
 
-For me, a product designer, this approach to working is amazing. Long stretches of focus time and being able to decide when and how to best do my work. And for someone with hearing loss, this almost inherently creates a more inclusive environment.
+For me, a product designer, this approach to work is amazing. Long stretches of focus time and being able to decide when and how to best do my work. And for someone with hearing loss, this almost inherently creates a more inclusive environment.
 
 Still, from time to time, we rely on synchronous methods of communication: team syncs to catch up on a more personal level and bring teams together, moderated user research, and facilitated collaborative activities and workshops. More often than not, this means a video call.
 
