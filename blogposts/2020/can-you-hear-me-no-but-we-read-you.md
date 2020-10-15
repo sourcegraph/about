@@ -1,10 +1,10 @@
 ---
-title: "Silent meeting placeholder title"
+title: "Can you hear me? No, but we read you—an experiment with video calls"
 author: Quinn Keast
 authorUrl: https://twitter.com/quinnkeast
 publishDate: 2020-10-15
 tags: [blog]
-slug: silent-meeting-placeholder-title
+slug: can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls
 heroImage: /blog/silent-team-call.png
 published: true
 ---
@@ -23,8 +23,6 @@ Still, from time to time, we rely on synchronous methods of communication: team 
 
 Video calls have always been a challenge for me. Lip reading doesn’t work well over video, because lip reading relies on a whole lot more visual information than just the lips, and video calls don’t carry the full visual and _emotional_ bandwidth needed to read lips easily. So instead, I use a series of hacks or built-in tools to help me out by providing real-time speech-to-text.
 
-<img src="/blog/silent-team-call.png" alt="The hacks and tools I use at my desk" />
-
 These hacks and tools work well until things go wrong. Sometimes they’ll cut out. Sometimes they’ll lag and fall behind. When things go wrong, it can be challenging. Simple things like someone asking for my thoughts on something can create awkward moments of silence before I realize that someone said my name, because I was relying on a transcript that was five seconds behind.
 
 Thankfully, I have a wonderful, supportive team, and this has never been a problem in my day-to-day work.
@@ -34,7 +32,7 @@ Our team has been growing quickly, expanding from just a single product manager 
 When we held our next product team sync, the whole team joined sans audio. We would all depend only on captions to follow the conversation.
 
 <blockquote style="border-left: 2px solid #F96216;">
-<h3>A quick caution</h3>
+<p><strong>A quick caution</strong></p>
 <p>Most exercises to simulate the experience of living with a disability aren’t effective—or even a good idea—because they can never truly simulate what it’s like to live day-by-day, and can leave folks with a mistaken idea of the experience.</p>
 <p>But this idea was compelling because the unique nature of the hacky setup I’m using means that it’s not about <em>ability</em>, it’s about <em>technology</em>. It wasn’t about learning what it’s like to do video calls with a hearing problem: it was about learning what it’s like to rely on captions for video calls.</p>
 </blockquote>
@@ -51,9 +49,9 @@ This worked well until it didn’t. Within five minutes, the transcript lagged a
 
 The team immediately spotted the tradeoffs: while Meet’s captions were built in, there’s no history, meaning each person had to dedicate their attention to the captions to make sure they didn’t miss anything. And there’s a few UI issues that create friction or interrupt the captions.
 
-<img src="/blog/silent-team-call.png" alt="The team on the video call" />
-
 But fundamentally, it _worked_. Everyone was able to participate in the call, and we had our sync.
+
+<img src="/blog/silent-team-call.png" alt="The team on the video call" />
 
 ## How it went
 
@@ -89,9 +87,9 @@ While my own hearing loss is permanent, someone dealing with situational challen
 
 Our team is working on universal code search for developers. Universal code search, to us, means creating inclusive experiences from the beginning, and always working to improve our baseline for accessibility.
 
-<p style="padding: .75rem 1.25rem; margin-top: 2rem; background-color: #f2f4f8; border-radius: 6px; line-height: 1.5;"><strong>If we can do more to support how you use Sourcegraph, <a href="https://airtable.com/shrqVVodqnNUGlbHj?prefill_Source=Blog+post+about+silent+team+call" target="_blank">please get in touch</a>!</strong> We’d love to talk with you to learn how we can do better.</p>
+<p style="padding: .75rem 1.25rem; margin-top: 2rem; background-color: #f2f4f8; border-radius: 8px; line-height: 1.5;"><strong>If we can do more to support how you   use Sourcegraph, <a href="https://airtable.com/shrqVVodqnNUGlbHj?prefill_Source=Blog+post+about+silent+team+call" target="_blank">please get in touch</a>!</strong> We’d love to talk with you to learn how we can do better.</p>
 
-<p class="text-center" style="color: #999; margin-top: 3rem; margin-bottom: 1.5rem;" aria-hidden="true">• • •</p>
+<p class="text-center" style="color: #00B4F2; margin-top: 3rem; margin-bottom: 1.5rem;" aria-hidden="true">• • •</p>
 
 **Bonus panel**
 
