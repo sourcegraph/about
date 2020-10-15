@@ -244,8 +244,8 @@ const Index: React.FunctionComponent = (props: any) => (
                         <h2>Generate code insights [preview]</h2>
                         <p>
                             Aggregate data from connected external services, and enhance it with code intelligence
-                            to give you the information you care about. Take direct actions on these insights with
-                             <Link to="https://docs.sourcegraph.com/user/campaigns">campaigns</Link>, like proposing
+                            to give you the information you care about. Take direct actions on these insights with&nbsp;
+                            <Link to="https://docs.sourcegraph.com/user/campaigns">campaigns</Link>, like proposing
                             an automated refactor to fix a problem detected through static analysis.
                         </p>
                         <div className="pt-1">
