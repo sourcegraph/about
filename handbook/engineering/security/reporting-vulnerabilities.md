@@ -10,7 +10,7 @@ When a monetary bounty is presented, eligible reports will be based on the sever
 
 **Categories**
 
-|Attack Outcome| Maximum Payout|
+| Attack Outcome | Maximum Payout |
 |:------------- | :----------: |
 | You read or write to another user's code | $10,000 |
 | You take over another user's account  | $5,000 |
