@@ -43,7 +43,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-1. You [apply here](https://jobs.lever.co/sourcegraph/8b57b6f4-4eb7-4bcd-8143-8b147867522a/apply).
+1. You [apply here](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7/apply).
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. You complete a 3-hour [exercise project](software-engineer-coding-exercise.md#typescript-coding-exercise) that we designed to test the technical qualifications listed above.
    - We send you the details at a time of your choosing and you have 3 hours to submit a solution.
