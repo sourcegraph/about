@@ -51,7 +51,7 @@ But fundamentally, it _worked_. Everyone was able to participate in the call, an
 
 <img src="/blog/silent-team-call.png" alt="The team on the video call" />
 
-## How it went
+## Takeaways
 
 The call was a startlingly effective team bonding experience. Everyone enjoyed and learned a lot from the experience of approaching the call with a different perceptual and technological context.
 
