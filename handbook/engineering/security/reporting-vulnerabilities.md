@@ -13,9 +13,9 @@ When a monetary bounty is presented, eligible reports will be based on the sever
 |Attack Outcome| Maximum Payout|
 |:------------- | :----------: |
 | You read or write to another user's code | $10,000 |
-| You take over another user's account  | $5000 |
-| You gain access to the internal Sourcegraph cloud network | $2500 |
-| You gain access to another user's configurations | $2000 |
+| You take over another user's account  | $5,000 |
+| You gain access to the internal Sourcegraph cloud network | $2,500 |
+| You gain access to another user's configurations | $2,000 |
 | You find a misconfiguration that can lead to an exploit | $500 |
 
 **Timelines**
