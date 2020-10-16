@@ -5,7 +5,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
+import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
 import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const title = 'Sourcegraph - Customers'
@@ -69,8 +69,8 @@ export default ((props: any) => (
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
         <div className="customers-page">
-            <CustomerLogosSection className="my-6" />
-            <hr className="mb-6" id="onboard" />
+            <CustomerLogosSectionAnimated showButton={false} className="pt-5"/>
+            <hr className="my-md-6" id="onboard" />
             <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
