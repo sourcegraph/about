@@ -56,6 +56,24 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
+### Search Tour
+- **Owner(s):** @farhan
+- **Outcomes:**
+    - Search field is no longer focused by default for users who haven't searched yet [#14783](https://github.com/sourcegraph/sourcegraph/issues/14783).
+    - Search tour is re-enabled by default for enterprise customers.
+    - Search tour usage is tracked in pings [#14781](https://github.com/sourcegraph/sourcegraph/issues/14781).
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Improve tracking of search onboarding on enterprise instances
+- **Owner(s):** @farhan
+- **Outcomes:**
+    - Total number of unique searchers is tracked in pings [#14575](https://github.com/sourcegraph/sourcegraph/issues/14575).
+    - Weekly retention is tracked in pings [#13636](https://github.com/sourcegraph/sourcegraph/issues/13636).
+    - SMTP is tracked in pings [#14115](https://github.com/sourcegraph/sourcegraph/issues/14115).
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
 ## 2020-10-5 to 2020-10-16
 
 ### Enterprise homepage
