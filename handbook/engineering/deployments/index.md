@@ -2,16 +2,17 @@
 
 We maintain multiple [instances](instances.md) of Sourcegraph:
 
-- [sourcegraph.com](instances.md#sourcegraph-com) is our production deployment for open source code.
-- [sourcegraph.sgdev.org](instances.md#sourcegraph-sgdev-org) is our private deployment of Sourcegraph that contains some of our private code.
-- [k8s.sgdev.org](instances.md#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers. Note that this also contains all of our private code.
+- [Instances](./instances.md): information about our different instances
+  - [sourcegraph.com](instances.md#sourcegraph-com) is our production deployment for open source code.
+  - [sourcegraph.sgdev.org](instances.md#sourcegraph-sgdev-org) is our private deployment of Sourcegraph that contains some of our private code.
+  - [k8s.sgdev.org](instances.md#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers. Note that this also contains all of our private code.
 - [Managed instances](./distribution/managed/index.md) are deployments of Sourcegraph we manage for customers.
 
 Learn more about how these work in:
 
 - [Deployment basics](#deployment-basics)
-- [Instances](./instances.md): detailed information about our different instances
 - [Kubernetes](./kubernetes.md): setting up access, tips, and more
+- [Security](./security.md): TLS configuration,
 - [Testing](./testing.md): deploying test instances of Sourcegraph
 - [Playbooks](./playbooks.md): how-to guides for common tasks
 - [deploy-sourcegraph](#deploy-sourcegraph): base configuration for Kubernetes Sourcegraph deployments
