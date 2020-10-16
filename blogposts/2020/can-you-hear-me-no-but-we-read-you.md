@@ -5,7 +5,7 @@ authorUrl: https://twitter.com/quinnkeast
 publishDate: 2020-10-15
 tags: [blog]
 slug: can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls
-heroImage: /blog/silent-team-call.png
+heroImage: /blog/silent-team-call.jpg
 published: true
 ---
 
@@ -49,7 +49,7 @@ The team immediately spotted the tradeoffs: while Meet’s captions were built i
 
 But fundamentally, it _worked_. Everyone was able to participate in the call, and we had our sync.
 
-<img src="/blog/silent-team-call.png" alt="The team on the video call" />
+<img src="/blog/silent-team-call.jpg" alt="The team on the video call" />
 
 ## Takeaways
 
