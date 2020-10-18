@@ -87,9 +87,9 @@ code, my organization's code, or even all of open source code?
 Earlier this year Sourcegraph introduced [structural search](blog/going-beyond-regular-expressions-with-structural-code-search/)
 to search over code syntax. Structural search uses [comby](https://comby.dev) to
 implement a basic building block in traditional code checkers: it interprets
-programs as concrete syntax trees, not just plaintext. Combine that with new
-support for `or` clauses to search for multiple patterns and add some file
-filters, and it becomes possible to write configurable code checks as
+programs as concrete syntax trees, not just plaintext.
+Using file filters and our new support for `or` clauses,
+it's possible to write configurable code checks as
 self-contained search queries. Let's explore this idea!
 
 Here's a search query inspired by
@@ -233,7 +233,7 @@ This one isn't available in `staticcheck`, but I could immediately implement the
 
 [🔘 Find appends of three or more bytes↗](https://sourcegraph.com/search?q=repogroup:go-gh-100+lang:go+append%28...%2C+%27...%27%2C+%27...%27%2C+%27...%27%29&patternType=structural)
 
-With code checks as queries there's also the notion of project-specific checks
+There's also the notion of project-specific checks
 that will never make it into a general tool like `staticcheck`. For example, in
 our Sourcegraph code we've mostly moved away from testing values with `!=` and
 instead use [`cmp.Diff`](https://godoc.org/github.com/google/go-cmp/cmp#Diff).
