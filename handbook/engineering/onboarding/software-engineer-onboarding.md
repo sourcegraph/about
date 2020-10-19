@@ -13,7 +13,7 @@ As you're working on these tasks:
   - Open a pull request as soon as you feel like you're ready for feedback or input on your code — you can make it a draft pull request if your code is still a work in progress.
   - Favour splitting up your work in multiple pull requests every time it makes sense — shipping frequently is important.
   - Ask yourself what tests are appropriate for the change you're tackling, and add them!
-- If you need help, remember everyone is here to [answer any question](../people-ops/onboarding/index.md#everyone-is-here-to-support-you-as-you-onboard) — ask for help in your team's channel (or any appropriate channel), and add the answer to our docs or the handbook if you feel like it can help future teammates.
+- If you need help, remember everyone is here to [answer any question](../../people-ops/onboarding/index.md#everyone-is-here-to-support-you-as-you-onboard) — ask for help in your team's channel (or any appropriate channel), and add the answer to our docs or the handbook if you feel like it can help future teammates.
 
 As you complete these tasks, share your accomplishments in #progress 🙂
 
@@ -38,8 +38,8 @@ There will be plenty for you to read and learn about when you're not working on 
 
 - Read through our [architecture overview](https://docs.sourcegraph.com/dev/architecture).
 - Read through the rest of the engineering handbook to learn more about how we operate.
-- Read how we choose and continually update our [goals](../../company/goals/index.md).
-- Read how we plan and keep each other up to date with [tracking issues](./tracking_issues.md).
+- Read how we choose and continually update our [goals](../../../company/goals/index.md).
+- Read how we plan and keep each other up to date with [tracking issues](../tracking_issues.md).
 - Frontend engineers should watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn about how design and engineering work together
 
 ## Weeks 4-6
