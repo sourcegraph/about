@@ -10,7 +10,7 @@ This deployment is also colloquially referred to as "Sourcegraph Cloud", "Cloud"
   ```
 - [Kubernetes configuration](https://github.com/sourcegraph/deploy-sourcegraph-dot-com)
 - [Infrastructure configuration](https://github.com/sourcegraph/infrastructure/tree/main/cloud)
-- Alerts: `#alerts-cloud` and [OpsGenie](./incidents/on_call.md)
+- Alerts: `#alerts-cloud` and [OpsGenie](../incidents/on_call.md)
 
 # k8s.sgdev.org
 
