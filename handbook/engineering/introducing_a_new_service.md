@@ -37,7 +37,7 @@ When introducing a new service/container we pay the cost of:
 - [Updating deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) - including testing that it works, documenting which other services it speaks to, and notifying the customers relying on this deployment documentation to deploy this service on their own.
   - Note: We must advise these customers **exactly** which new container has been added, how to deploy it and with what configuration, describe what it does, why we've added it, and assist with that process. Remember, these users are not just running the scripts in our repository -- they are effectively deploying these containers arbitrarily on their own infrastructure with our guidance.
  - Updating the [resource estimator](https://docs.sourcegraph.com/admin/install/resource_estimator) to provide details on resource requirements at different scales.
- - Training new and existing Sourcegraph team members how to interact with and debug the service, as well as customers and our Customer Engineering team.
+ - Training new and existing Sourcegraph team members how to interact with and debug the service, as well as customers and our Customer Engineering team (this needs to happen for the feature/change regardless, but as a new service there are some additional aspects.)
 
 Do not introduce a new service/container just for sake of code seperation. Instead, look for alternatives that allow you to achieve the same logical code seperation within the right existing service/container (goroutines, multiple processes in a container, etc. are all valid options.)
 
