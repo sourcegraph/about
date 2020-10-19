@@ -4,7 +4,7 @@ Before reading this document be sure to first check out our [architecture overvi
 
 ## Terminology
 
-When we say "service" here we are referring to code that runs _within a Docker container_. This may be one or more processes, servers, goroutines, threads, etc. operating in a single Docker container.
+When we say "service" here we are referring to code that runs _within a Docker container_. This may be one or more processes, goroutines, threads, etc. operating in a single Docker container.
 
 ## When does introducing a new service make sense?
 
