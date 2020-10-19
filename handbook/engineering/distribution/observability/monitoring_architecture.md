@@ -45,9 +45,11 @@ The [`sourcegraph/grafana`](https://github.com/sourcegraph/sourcegraph/tree/mast
 
 For convenience, Grafana is served on `/-/debug/grafana` on all Sourcegraph deployments via a reverse-proxy restricted to admins.
 
-Services served via reverse-proxy in this manner could be vulnerable to [cross-site request forgery (CSRF)](https://owasp.org/www-community/attacks/csrf), which is complicated to resolve ([#6075](https://github.com/sourcegraph/sourcegraph/issues/6075)). In addition, the [monitoring generator](#monitoring-generator) creates provisioned dashboards that, once loaded, cannot be edited in Grafana at all.
+Edits through the web UI are prohibited, for two reasons:
 
-This means that at the moment, making changes to Grafana using the Grafana UI is not possible without setting up a port-forward or creating custom dashboards, something [we want to avoid asking customers to do](monitoring_pillars.md#long-term-vision). 
+1. We do not want customers, or ourselves, to introduce dashboards or modifications through the Grafana web UI (see [monitoring pillars: long-term-vision](monitoring_pillars.md#long-term-vision))
+1. Services served via reverse-proxy in this manner could be vulnerable to [cross-site request forgery (CSRF)](https://owasp.org/www-community/attacks/csrf), which is complicated to resolve ([#6075](https://github.com/sourcegraph/sourcegraph/issues/6075)) without just forbidding all POST requests.
+2. The [monitoring generator](#monitoring-generator) creates provisioned dashboards that, once loaded, cannot be edited in Grafana (technical limitation in Grafana.)
 
 ### Sourcegraph Prometheus
 
@@ -71,7 +73,7 @@ The [`sourcegraph/prometheus`](https://github.com/sourcegraph/sourcegraph/tree/m
 
 Learn more about the `alert_count` metrics in the [metrics guide](https://docs.sourcegraph.com/admin/observability/metrics_guide#alert-count).
 
-*Rationale for `alert_count`*: TODO(@slimsag)
+*Rationale for `alert_count`*: Why did we introduce `alert_count` metrics? At the time, [a customer](https://app.hubspot.com/contacts/2762526/company/407948923/) needed the ability to monitor their Sourcegraph instances' health and we did not have any Prometheus metrics, alert definitions, or dashboards that they could consume. We knew that we would need to over time solidify our entire monitoring stack, which created a situation where in the interim we needed something that they could pipe to their own internal custom metrics and alerting system to monitor Sourcegraph health - without being tied to our exact Prometheus metrics, etc. such that we could continue to improve and refine them over the coming versions of Sourcegraph. To solve this, we introduced this `alert_count` metric which made it possible for them to query the firing alerts in Sourcegraph [via the Prometheus API](https://docs.sourcegraph.com/admin/observability/alerting_custom_consumption) (we did not have alertmanager at the time either.) There is some evidence that we may be able to use `ALERTS` instead of `alert_count` ([tracking issue](https://github.com/sourcegraph/sourcegraph/issues/12396)), but one problem there is that `ALERTS` does not show non-firing alerts and that has proven very useful both for this customer and to have in Grafana in general to instill some confidence that we are in fact monitoring a pretty substantial number of things. We believe `alert_count` can probably be replaced with `ALERTS`, but more discussion / a plan is needed.
 
 #### Alert notifications
 
@@ -103,7 +105,7 @@ The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker
 
 There is currently no process defining how custom additions should be made to our monitoring stack (for example, to accomodate Cloud-specific needs).
 
-[RFC 208](https://docs.google.com/document/d/1ub1xsrKTdjA5n-4MAk4AZXtInmgJlMwJ0pI1opkq5mo/) is an ongoing discussion on what custom additions might look like.
+[RFC 208](https://docs.google.com/document/d/1ub1xsrKTdjA5n-4MAk4AZXtInmgJlMwJ0pI1opkq5mo/) / https://github.com/sourcegraph/sourcegraph/issues/12396 is an ongoing discussion on what custom additions might look like.
 
 ## Sourcegraph Cloud
 
