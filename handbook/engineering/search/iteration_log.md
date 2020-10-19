@@ -32,9 +32,10 @@ This document contains the goals and work log for the search team's [2-week iter
 
 ### Code monitoring
 
-- **Owner(s):** Stefan, Juliana
+- **Owner(s):** Stefan, Juliana, Farhan
 - **Outcomes:**
     - We have a GraphQL schema for code monitoring, with a stubbed out implementation on the backend, allowing us to decouple backend and frontend development.
+    - SMTP is tracked in pings [#14115](https://github.com/sourcegraph/sourcegraph/issues/14115).
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
@@ -70,7 +71,6 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Outcomes:**
     - Total number of unique searchers is tracked in pings [#14575](https://github.com/sourcegraph/sourcegraph/issues/14575).
     - Weekly retention is tracked in pings [#13636](https://github.com/sourcegraph/sourcegraph/issues/13636).
-    - SMTP is tracked in pings [#14115](https://github.com/sourcegraph/sourcegraph/issues/14115).
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
