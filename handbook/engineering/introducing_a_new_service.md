@@ -14,7 +14,7 @@ When thinking of adding a new service, it is important to think through the foll
 
 1. Does the code belong in an existing service?
 2. Instead of introducing a new service, could the process/etc reasonably live inside another service (the frontend, etc.) as a background worker, goroutine, etc.?
-3. Does the code rely very heavily on APIs that exist (or will need to be introduced) in another service? If so, have you considered putting it in that service instead?
+3. Is the code heavily coupled to an existing service logic? ie. Changes to the other service will likely require changes to this service. If so, have you considered putting it in that service instead?
 4. If you make the change within an existing service, instead of a new one, would it substantially increase the complexity of the task at hand?
     - For example, the service you are writing _must_ be written in language X and it is impossible/very difficult to integrate language X into one of our existing Go services.
 5. Does it need its own resource constraints and scaling?
