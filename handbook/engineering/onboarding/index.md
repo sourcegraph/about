@@ -20,14 +20,14 @@ You'll have to get some basics set up in your first few days:
 
 Your manager should complete the following steps when you join:
 
-- Schedule a recurring [1-1](../leadership/1-1.md).
+- Schedule a recurring [1-1](../../leadership/1-1.md).
 - Grant access to necessary services.
   - [Sourcegraph organization on GitHub](https://github.com/orgs/sourcegraph/people)
     - Invite to relevant GitHub teams, including [@sourcegraph/everyone](https://github.com/orgs/sourcegraph/teams/everyone).
   - [Sourcegraph organization on Sourcegraph.com](https://sourcegraph.com/organizations/sourcegraph/members)
   - [LSIF organization on GitHub](https://github.com/orgs/lsif/people) (optional; recommended for Code Intelligence team members)
   - [Buildkite](https://buildkite.com/organizations/sourcegraph/users/new)
-  - Add the user to the `gcp-engineering` [group](https://console.cloud.google.com/iam-admin/groups?orgonly=true&project=&folder=&organizationId=1006954638239&supportedpurview=organizationId) so they have access to our [Google Cloud Platform](./environments.md).
+  - Add the user to the `gcp-engineering` [group](https://console.cloud.google.com/iam-admin/groups?orgonly=true&project=&folder=&organizationId=1006954638239&supportedpurview=organizationId) so they have access to our [Google Cloud Platform](../environments.md).
   - [Opsgenie](https://sourcegraph.app.opsgenie.com/settings/users/)
   - [Docker Hub](https://hub.docker.com/orgs/sourcegraph)
   - [Site24x7](https://www.site24x7.com) (optional; recommended for Distribution team members)
