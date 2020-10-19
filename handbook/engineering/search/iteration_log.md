@@ -41,7 +41,16 @@ This document contains the goals and work log for the search team's [2-week iter
 ### Scale indexed search to 500k repositories
 - **Owner(s):** Stefan, Keegan
 - **Outcomes:**
-    - We have a similar performance for simple regex searches and their literal equivalents (EG `config overall`) on indexed repositories. 
+    - We have a similar performance for simple regex searches and their literal equivalents (EG `config overall`) on indexed repositories.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Streaming search
+
+- **Owner(s):** Keegan, Juliana, Rob
+- **Outcomes:**
+    - We have high-fidelity designs for streaming search.
+    - High-fidelity designs are implemented (TODO: assess viability of this outcome when Juliana is back).
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
