@@ -24,7 +24,7 @@ If after asking the above questions to yourself you still believe introducing a 
 
 ### Services have additional overhead for us and users that is easy to forget
 
-Introducing a new service means additional complexity and overhead for us and users. While they may provide a good way to isolate code, services are very much not free.
+Introducing a new service means additional complexity and overhead for us and users. While they may provide a good way to isolate code, services are very much not free. Of course, a monolith is not free or necessarily cheaper either. The pros and cons _in our situation, not based on preference_ must be weighed.
 
 When introducing a new service/container we pay the cost of:
 
