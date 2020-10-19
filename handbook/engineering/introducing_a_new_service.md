@@ -41,4 +41,4 @@ When introducing a new service/container we pay the cost of:
 
 Do not introduce a new service/container just for sake of code seperation. Instead, look for alternatives that allow you to achieve the same logical code seperation within the right existing service/container (goroutines, multiple processes in a container, etc. are all valid options.)
 
-Introducing a new service/container can make sense in some circumstances, but it is very important to weigh the pros and cons and consider if the value gained is worth it.
+Introducing a new service/container can make sense in some circumstances, it is very important to weigh the pros and cons of each based on the circumstance and consider if the value gained is worth it or not.
