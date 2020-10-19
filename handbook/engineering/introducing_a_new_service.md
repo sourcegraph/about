@@ -13,7 +13,7 @@ Sourcegraph is composed of several smaller services (gitserver, searcher, symbol
 When thinking of adding a new service, it is important to think through the following questions carefully:
 
 1. Does the code belong in an existing service?
-2. Instead of introducing a new service, could the process/etc reasonably live inside the frontend monolith as a singleton background worker, goroutine, etc.?
+2. Instead of introducing a new service, could the process/etc reasonably live inside another service (the frontend, etc.) as a background worker, goroutine, etc.?
 3. Does the code rely very heavily on APIs that exist (or will need to be introduced) in another service? If so, have you considered putting it in that service instead?
 4. If you make the change within an existing service, instead of a new one, would it substantially increase the complexity of the task at hand?
     - For example, the service you are writing _must_ be written in language X and it is impossible/very difficult to integrate language X into one of our existing Go services.
@@ -42,4 +42,3 @@ When introducing a new service/container we pay the cost of:
 Do not introduce a new service/container just for sake of code seperation. Instead, look for alternatives that allow you to achieve the same logical code seperation within the right existing service/container (goroutines, multiple processes in a container, etc. are all valid options.)
 
 Introducing a new service/container can make sense in some circumstances, but it is very important to weigh the pros and cons and consider if the value gained is worth it.
-
