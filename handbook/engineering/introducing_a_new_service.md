@@ -33,7 +33,7 @@ When introducing a new service/container we pay the cost of:
 - Integrating it as a raw process in [the single-container `sourcegraph/server` deployment mode](https://github.com/sourcegraph/sourcegraph/tree/master/cmd/server).
 - Documenting clearly [how it scales](https://docs.sourcegraph.com/admin/install/kubernetes/scale) alongside other services for cluster deployments.
 - Updating our [architecture diagram](https://docs.sourcegraph.com/dev/background-information/architecture).
-- Documenting the service itself in general and how site admins should manage and debug it.
+- Documenting the service itself in general and how site admins should manage and debug it (these needs to be done regardless of it being a new service, but if it is a new service there are additional aspects to consider.)
 - [Updating deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) - including testing that it works, documenting which other services it speaks to, and notifying the customers relying on this deployment documentation to deploy this service on their own.
   - Note: We must advise these customers **exactly** which new container has been added, how to deploy it and with what configuration, describe what it does, why we've added it, and assist with that process. Remember, these users are not just running the scripts in our repository -- they are effectively deploying these containers arbitrarily on their own infrastructure with our guidance.
  - Updating the [resource estimator](https://docs.sourcegraph.com/admin/install/resource_estimator) to provide details on resource requirements at different scales.
