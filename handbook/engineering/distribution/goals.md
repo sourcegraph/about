@@ -9,7 +9,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 - **Owner**: TBD
 - **Status**: Not started. Unknown amount of work.
 - **Outcomes**:
-  - Its simple to identify if a commit has been deployed to an environment
+  - It is simple to identify when a commit has been deployed to an environment
   - We can trigger a deployment via a `/` command in Slack
   - Stretch: Branches can trigger a parallel `sourcegraph-frontend` deployment
 - **Milestones**: TBD
