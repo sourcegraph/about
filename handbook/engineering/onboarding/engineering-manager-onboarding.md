@@ -10,7 +10,7 @@ We expect our engineering managers to drive outcomes, so here are the outcomes w
 
 ## Month 1
 
-- You are able to describe the team's high level goals, answer questions about them, and defend them if they are challenged.
+- You have confidence in the team's high level goals, and can explain them if they are challenged.
 - You are able to describe the individual work that each person on your team is doing, answer questions about that work, and explain why that work is important for the team's stated goals.
 - You are able to describe the career aspirations of each teammate, where they are struggling, and where they are thriving.
 - Your manager, your peer managers, and your teammates report that they are happy and relieved to have you on the team because you have already had a positive impact.
