@@ -22,6 +22,6 @@ We expect our engineering managers to drive outcomes, so here are the outcomes w
 - You have a written forecast (e.g., in the handbook) of the work the team is going to do over the next 3 months to make progress toward their goals.
 - You are accountable for your teams hiring process.
   - You understand what the team's hiring needs are (for example: skills, values).
-  - You have confidence that our hiring process is calibrated to measure what we are looking for in an efficient and unbiased way.
+  - You have confidence that our hiring process is calibrated to measure what we are looking for in an efficient and unbiased way (if not, you have proposed improvements).
   - You conduct the hiring manager screen calls for candidates who would be joining your team.
     - You can pitch Sourcegraph as a whole, the part of product your team works on, and the team itself.
