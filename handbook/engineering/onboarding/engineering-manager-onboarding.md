@@ -4,7 +4,7 @@ We expect our engineering managers to drive outcomes, so here are the outcomes w
 
 ## Week 1
 
-- You have completed [general setup](index.md#getting-set-up).
+- You have completed the [engineering setup](index.md#getting-set-up).
 - You have scheduled recurring 1-1s with your team and ensured that you are invited to (and made the calendar owner of) all of your team's recurring meetings.
 - You have made 1 commit or PR to our codebase (for example: adding yourself to our handbook, onboarding or product docs improvement).
 
