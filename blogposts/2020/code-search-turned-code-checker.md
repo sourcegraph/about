@@ -16,11 +16,16 @@ published: true
     margin-left: auto;
     margin-right: auto;
   }
+  @media screen and (min-width: 800px) {
+    table {
+      width: 40rem;
+      border: none;
+    }
+  }
   table {
-    width: 40rem;
     border: none;
   }
-    table th {
+  table th {
     border: none;
   }
   table td {
@@ -28,10 +33,10 @@ published: true
     border: none;
   }
   table td:nth-child(2n) {
-      text-align: right;
+    text-align: right;
   }
-    table th:nth-child(2n) {
-      text-align: right;
+  table th:nth-child(2n) {
+    text-align: right;
   }
   table tr:nth-child(2n) {
     background-color: transparent;
