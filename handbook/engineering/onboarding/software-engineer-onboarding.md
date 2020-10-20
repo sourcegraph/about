@@ -27,7 +27,7 @@ Take the first 20-30 minutes of the session to have an unstructured, introductor
 - Why is that problem important? What team goal does it fit under?
 - What are relevant [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs), [PDs](https://about.sourcegraph.com/handbook/product/product_documents), GitHub issues or documentation pages?
 - What parts of our codebase need to be changed to solve this problem?
-- How will the code being changed be tested?
+- How will we test the code being changed?
 - Will there be future work needed after solving this problem? How could you contribute?
 
 **Teammates** should prepare these pairing sessions so that they bring you the most value, and allow you to quickly ramp up on what the team is working on and why.
