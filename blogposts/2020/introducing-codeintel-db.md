@@ -28,19 +28,22 @@ A bit over a year ago, the code intelligence backend started as a single node pr
 
 Using SQLite for this data has become an operational and feature burden for the code intelligence team.
 
-1. We need to maintain a periodic process to reconcile the data on disk with the metadata we store in Postgres.
-2. We have good instructions and tips for backup and recovery of our Postgres data store, but have never officially recommended backing up other persistent volumes.
-3. We locked ourselves into a node topology which is not easily scalable. We essentially have a singleton service over a persistent volume. In order to scale this service horizontally (which would become necessary once either the amount of data or the frequency of queries increased), we would need to shard the data across multiple volumes. This throws a lot of wrenches into our plans: we need to be able to automatically move data on increase or decrease of shard counts; we need to be able to route requests to the correct node with that data; we need to ensure that reconciliation between the data on disk and the metadata we store in Postgres is aware that there are multiple nodes where data _could_ reside.
-4. There is no efficient way to implement certain data access patterns we may need in the future. For example, looking for data matching a certain identifier _name_ would require us to open every SQLite database on disk (and, no, _batching it_ is not a solution).
+- We need to maintain a periodic process to reconcile the data on disk with the metadata we store in Postgres.
+- We have good instructions and tips for backup and recovery of our Postgres data store, but have never officially recommended backing up other persistent volumes.
+- We locked ourselves into a node topology which is not easily scalable. We essentially have a singleton service over a persistent volume. In order to scale this service horizontally (which would become necessary once either the amount of data or the frequency of queries increased), we would need to shard the data across multiple volumes. This throws a lot of wrenches into our plans: we need to be able to automatically move data on increase or decrease of shard counts; we need to be able to route requests to the correct node with that data; we need to ensure that reconciliation between the data on disk and the metadata we store in Postgres is aware that there are multiple nodes where data _could_ reside.
+- There is no efficient way to implement certain data access patterns we may need in the future. For example, looking for data matching a certain identifier _name_ would require us to open every SQLite database on disk (and, no, _batching it_ is not a solution).
 
 Instead of forging ahead and tackling the complexity we've made for ourselves, we decided to take a step back and re-evaluate whether or not our previous architecture choices were meeting our current needs. And it seems like they did not.
 
-Moving this data into Postgres seems like an obvious choice that will (eventually) be able to reduce or completely remove all of the burdens listed above.
+Moving this data into Postgres was an obvious choice that greatly reduced the burdens listed above.
 
-1. Reconciling pieces of data in the same datastore is trivial compared to reconciling pieces of data in two different datastores, especially if it should be done transactionally. Even though we're not in the same _physical_ database instance, having all of our data in _some_ Postgres-compatible store opens up the possibility of transactions spanning multiple physical Postgres instances via [postgres_fdw](https://www.postgresql.org/docs/12/postgres-fdw.html#id-1.11.7.42.12).
-2. Moving data to an existing technology allows us to re-use the same advice and documentation for backup and disaster recovery strategies. Removing the number of knobs that must be turned by site-admins is always going to be a win across the board.
-3. Moving from an embedded database to a server-client database removes the nasty singleton property on the service. Now that multiple servers can interact with the same data concurrently without risk of corruption, we can scale the services horizontally without requiring additional effort into implementing sticky sessions or complex request routing rules.
-4. Moving data into a single relational store allows us to create additional indexed views into the data. We can now query over dimensions that were not possible before without opening tends of thousands of relatively small database files.
+- Moving data to an existing technology allows us to re-use the same advice and documentation for backup and disaster recovery strategies. Removing the number of knobs that must be turned by site-admins is always going to be a win across the board.
+- Moving from an embedded database to a server-client database removes the nasty singleton property on the service. Now that multiple servers can interact with the same data concurrently without risk of corruption, we can scale the services horizontally without requiring additional effort into implementing sticky sessions or complex request routing rules.
+
+This change also opened up possibilities for future expansion.
+
+- Moving data into a single relational store allows us to create additional indexed views into the data. We can now query over dimensions that were not possible before without opening tends of thousands of relatively small database files.
+- Reconciling pieces of data in the same datastore is trivial compared to reconciling pieces of data in two different datastores, especially if it should be done transactionally. Even though we're not in the same _physical_ database instance, having all of our data in _some_ Postgres-compatible store opens up the possibility of transactions spanning multiple physical Postgres instances via [postgres_fdw](https://www.postgresql.org/docs/12/postgres-fdw.html#id-1.11.7.42.12). We can also use the same technique for (semi-)automatically sharding the database once we hit an efficiency or cost limit when scaling a single node vertically.
 
 ## Notes for site admins
 
