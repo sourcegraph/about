@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Software.com",
+      "newsTitle": "Big Code—How ‘More Code, Faster’ Creates Problems",
+      "newsDate": "October 15, 2020",
+      "newsLink": "https://www.software.com/src/big-code-how-more-code-faster-creates-problems",
+      "newsImage": "/external-logos/software-com-src-logo.png"
+    },
+    {
       "newsSource": "Devops.com",
       "newsTitle": "New Survey Highlights Codebase Size Problems",
       "newsDate": "October 9, 2020",
