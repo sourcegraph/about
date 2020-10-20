@@ -9,12 +9,23 @@ See [the monitoring developer guide](monitoring.md) for information on how to de
 - [Long-term vision](#long-term-vision)
 - [The five pillars of monitoring](#the-five-pillars-of-monitoring)
 - [Monitoring at Sourcegraph: a brief history](#monitoring-at-sourcegraph-a-brief-history)
+  - [The linter of monitoring](#the-linter-of-monitoring)
 - [Frequently asked questions](#frequently-asked-questions)
-  - [Why can't I create an ad-hoc dashboard (e.g. an "HTTP" dashboard)?](#faq-why-cant-i-create-an-ad-hoc-dashboard-e-g-an-http-dashboard)
-  - [I have a purely information metric, I don't want to define an alert for it. How do I do that?](#faq-i-have-a-purely-information-metric-i-dont-want-to-define-an-alert-for-it-how-do-i-do-that)
-  - [Why can't I create a dashboard in the WYSIWYG Grafana editor?](#faq-why-cant-i-create-a-dashboard-in-the-wysiwyg-grafana-editor)
-  - [Why can't I create a graph/panel with more than 5 cardinality (labels)?](#faq-why-cant-i-create-a-graph-panel-with-more-than-5-cardinality-labels)
-  - [Why can't I have all information expanded by default on the dashboard?](#faq-why-cant-i-have-all-information-expanded-by-default-on-the-dashboard)
+  - [FAQ: Why can't I create an ad-hoc dashboard (e.g. an "HTTP" dashboard)?](#faq-why-cant-i-create-an-ad-hoc-dashboard-eg-an-http-dashboard)
+    - [Why this is bad](#why-this-is-bad)
+    - [What you should do instead](#what-you-should-do-instead)
+  - [FAQ: I have a purely information metric, I don't want to define an alert for it. How do I do that?](#faq-i-have-a-purely-information-metric-i-dont-want-to-define-an-alert-for-it-how-do-i-do-that)
+    - [Why this is bad](#why-this-is-bad-1)
+    - [What you should do instead](#what-you-should-do-instead-1)
+  - [FAQ: Why can't I create a dashboard in the WYSIWYG Grafana editor?](#faq-why-cant-i-create-a-dashboard-in-the-wysiwyg-grafana-editor)
+    - [Why this is bad](#why-this-is-bad-2)
+    - [What you should do instead](#what-you-should-do-instead-2)
+  - [FAQ: Why can't I create a graph/panel with more than 5 cardinality (labels)?](#faq-why-cant-i-create-a-graphpanel-with-more-than-5-cardinality-labels)
+    - [Why this is bad](#why-this-is-bad-3)
+    - [What you should do instead](#what-you-should-do-instead-3)
+  - [FAQ: Why can't I have all information expanded by default on the dashboard?](#faq-why-cant-i-have-all-information-expanded-by-default-on-the-dashboard)
+    - [Why this is bad](#why-this-is-bad-4)
+    - [What you should do instead](#what-you-should-do-instead-4)
 - [Next steps](#next-steps)
 
 ## Long-term vision
@@ -137,7 +148,7 @@ You might be thinking:
 
 In truth, we are only using Go as a nice type-checked declarative syntax. It's as simple to use as a configuration file, and the constraints we impose in monitoring means that we do not allow doing any fanciful dashboards intentionally -- which means you are basically _just_ writing a Prometheus query, and barely any layout or styling.
 
-See: [How easy is it to add monitoring?](monitoring.md#how-easy-is-it-to-add-monitoring)
+See: [adding monitoring](monitoring.md#adding-monitoring)
 
 ### FAQ: Why can't I create a graph/panel with more than 5 cardinality (labels)?
 

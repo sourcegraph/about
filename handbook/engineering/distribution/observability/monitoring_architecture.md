@@ -1,8 +1,8 @@
 # Sourcegraph monitoring architecture
 
-**Note:** Looking for _how to monitor Sourcegraph?_ See the [observability documentation](https://docs.sourcegraph.com/admin/observability).
+> **Note:** Looking for _how to monitor Sourcegraph?_ See the [observability documentation](https://docs.sourcegraph.com/admin/observability).
 
-**Note:** Looking for _how to develop Sourcegraph monitoring?_ See the [monitoring developer guide](monitoring.md).
+> **Note:** Looking for _how to develop Sourcegraph monitoring?_ See the [monitoring developer guide](monitoring.md).
 
 This document describes the architecture of Sourcegraph's monitoring stack, and the technical decisions we have made to date and why.
 
@@ -25,7 +25,7 @@ We use a custom [declarative Go generator syntax](https://sourcegraph.com/github
 
 This allows us to assert constraints and principles that we want to hold ourselves to, as described in [our monitoring pillars](monitoring_pillars.md).
 
-To learn more about adding monitoring using the generator, see ["How easy is it to add monitoring?"](monitoring.md#how-easy-is-it-to-add-monitoring)
+To learn more about adding monitoring using the generator, see: [adding monitoring](monitoring.md#adding-monitoring)
 
 ## Sourcegraph deployment
 
