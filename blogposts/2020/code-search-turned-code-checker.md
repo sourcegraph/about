@@ -213,7 +213,7 @@ You can see and run the final query here:
 <sup>Side note: patterns run in order and search stops after finding at least 30 matches. Feel free to delete some patterns to see others in action.</sup>
 
 It was tempting to compare more directly by downloading the
-100 Go repositories to disk, and running `staticcheck`, and comparing matches.
+100 Go repositories to disk, running `staticcheck`, and comparing matches.
 For `staticcheck` to be effective, the project typically needs to be built first
 (my experience was that running `staticcheck` on individual files can be
 hit-and-miss, and understandably so). I didn't like the idea of doing all that
