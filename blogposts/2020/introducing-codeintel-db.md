@@ -44,7 +44,7 @@ Moving this data into Postgres seems like an obvious choice that will (eventuall
 
 ## Notes for site admins
 
-If you are an active user of LSIF, there are a few changes that may subtly affect the behavior of the code intelligence backend. Our enterprise users operate at incredibly different scales and is difficult to ensure that a change has zero impact on all existing customers.
+If you are an active user of LSIF, there are a few changes that may subtly affect the behavior of the code intelligence backend. Our enterprise users operate at incredibly different scales so it is difficult to ensure that a change has zero impact on all existing customers.
 
 #### Connecting to an external database
 
