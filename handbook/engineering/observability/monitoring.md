@@ -128,7 +128,7 @@ In [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph
 
 ## Grafana
 
-Sourcegraph uses a custom Grafana image, [`sourcegraph/grafana`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/grafana), which contains minor changes from the vanilla Grafana image.
+Sourcegraph uses a custom Grafana image, [`sourcegraph/grafana`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/grafana), which contains minor changes from the vanilla Grafana image. Learn more about its role in our overall monitoring architecture [here](./monitoring_architecture.md#sourcegraph-grafana).
 
 ### Connecting Grafana to a remote Prometheus instance
 
