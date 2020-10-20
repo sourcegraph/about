@@ -38,10 +38,10 @@ published: true
   }
 </style>
 
-I find static code checkers most valuable when they teach me better ways to
-code in a language or framework. For example, the Go
-[staticcheck](https://staticcheck.io/docs/checks#SA6005) tool finds expensive
-string comparisons like:
+I find code checkers like linters and lightweight static analyzers most
+valuable when they teach me better ways to code in a language or framework. For
+example, the Go [staticcheck](https://staticcheck.io/docs/checks#SA6005) tool
+finds expensive string comparisons like:
 
 ```go
 if strings.ToLower(string1) == strings.ToLower(string2) {
