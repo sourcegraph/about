@@ -44,7 +44,7 @@ To learn more about our monitoring goals and principles, refer to: [monitoring p
 
 ### Monitoring architecture
 
-To learn more about our monitoring stack and architecture, refer to: [monitoring architecture](../distribution/observability/monitoring_architecture.md).
+To learn more about our monitoring stack and architecture, refer to: [monitoring architecture](./monitoring_architecture.md).
 
 ## Adding monitoring
 

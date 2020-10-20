@@ -40,7 +40,7 @@ To achieve this, our monitoring architecture is designed with the goal of provid
 * **Make alert notifications painless to configure** - we want minimize the number of Sourcegraph instances without any alerting set up. Alerts directly indicate issues that might impact user experience, and we want to ensure that deployment admins are equipped with the signals to help them provide their users with the best experience. This includes not requiring steps like port-forwarding or custom ConfigMaps for configuration.
 * **Dogfooding our own monitoring stack as much as possible** - in the past, monitoring components have been difficult to use or completely broken since we do not rely on them heavily.
 
-To see the decisions made to support these goals, refer to the [Sourcegraph monitoring architecture](../distribution/observability/monitoring_architecture.md#metrics).
+To see the decisions made to support these goals, refer to the [Sourcegraph monitoring architecture](./monitoring_architecture.md#metrics).
 
 ## The five pillars of monitoring
 
