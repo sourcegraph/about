@@ -59,7 +59,7 @@ if strings.EqualFold(string1, string2) {
 
 These short-and-sweet replacements are a great way to learn framework
 idioms or library functions, like `strings.EqualFold` in Go.<sup>1</sup> And as a
-codebase grows, small inefficiences like this one, and inconsistencies
+codebase grows, small inefficiencies like this one, and inconsistencies
 opportunities compound. Code patterns creep in that affect readability and
 performance—and [it matters](https://www.digitalocean.com/blog/how-to-efficiently-compare-strings-in-go/?).
 
@@ -217,7 +217,7 @@ work that we're exploring.
 
 ### Code checks beyond dedicated tools
 
-The direct comparison to `staticcheck` is interesting, but the ease of a
+The direct comparison to `staticcheck` is interesting, but the ease of
 a search workflow means there are also different benefits over dedicated tools. For
 example, in just the last couple of weeks I learned about a more elegant way to
 write code for [appending bytes in Go](https://golang.org/ref/spec#Appending_and_copying_slices).
