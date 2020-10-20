@@ -12,7 +12,7 @@ published: true
 
 With the release of 3.21, Sourcegraph will ship with a _second_ Postgres database instance, named `codeintel-db`, which we use to store the data that powers [precise code intelligence](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
-We've [written previously](https://about.sourcegraph.com/blog/evolution-of-the-precise-code-intel-backend/) about the architectural changes we've made to the code intelligence backend. This post is yet another submission in the archaeological trail of how the code intelligence team's effort shaped Sourcegraph on a technical level, and will explain why we chose to swap out our persistence layer - a very non-trivial difference in our architecture.
+We've [written previously](https://about.sourcegraph.com/blog/evolution-of-the-precise-code-intel-backend/) about the architectural changes we have made to the code intelligence backend. This post is yet another submission in the archaeological trail of how the code intelligence team shapes Sourcegraph on a technical level. The post explains why we chose to swap out our persistence layer - a very non-trivial difference in our architecture.
 
 **TL;DR 1**: If you are a customer currently using precise code intelligence, [skip to the notes below](#notes-for-site-admins) to see how this could affect your instance.
 
