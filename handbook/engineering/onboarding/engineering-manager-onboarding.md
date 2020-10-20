@@ -14,6 +14,7 @@ We expect our engineering managers to drive outcomes, so here are the outcomes w
 - You are able to describe the individual work that each person on your team is doing, answer questions about that work, and explain why that work is important for the team's stated goals.
 - You are able to describe the career aspirations of each teammate, where they are struggling, and where they are thriving.
 - Your manager, your peer managers, and your teammates report that they are happy and relieved to have you on the team because you have already had a positive impact.
+- You understand who are your stakeholders and have meet with them to understand their priorities.
 
 ## Month 2
 
