@@ -201,18 +201,19 @@ Also, one working variant for a check may not require type info, but another
 variant for the same check may. I.e., the values overlap and do not sum to
 Total.</sup>
 
-Extending search queries to access static properties like type information is a
-natural extension for writing better code checks, and an area of [code intelligence](https://docs.sourcegraph.com/user/code_intelligence)
-work that we're exploring.
-
-It was tempting to compare more directly with `staticcheck` by downloading the
-100 Go repositories to disk, and running `staticcheck`, and comparing output.
+It was tempting to compare more directly by downloading the
+100 Go repositories to disk, and running `staticcheck`, and comparing matches.
 For `staticcheck` to be effective, the project typically needs to be built first
 (my experience was that running `staticcheck` on individual files can be
 hit-and-miss, and understandably so). I didn't like the idea of doing all that
-work, so I punted. I think that's a salient point: it's great to have a cheap
-workflow for checking code over a lot of repositories (even if it doesn't cover
-as much ground as a dedicated tool).<sup>5</sup>
+work, so I punted. That's really the takeaway of these results: many useful checks can fit into
+a lightweight search workflow that scales and generalizes to a lot of projects, without
+ad-hoc setup for project builds and dedicated tools.<sup>5</sup>
+
+Extending search queries to access static properties like type information is a also
+natural extension for writing better code checks, and an area of [code intelligence](https://docs.sourcegraph.com/user/code_intelligence)
+work that we're exploring.
+
 
 ### Code checks beyond dedicated tools
 
