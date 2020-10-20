@@ -18,7 +18,7 @@ We expect our engineering managers to drive outcomes, so here are the outcomes w
 ## Month 2
 
 - You are the credible voice and point of contact for the team. You are directly responsible for the team's success.
-- You are able to describe the vision for team's that everyone is bought in to and the handbook communicates a forecast for what the team will accomplish in the next 3 months.
+- You are able to describe the vision for the team that everyone is bought in to and the handbook communicates a forecast for what the team will accomplish in the next 3 months.
 - You conduct the hiring manager screen calls for candidates who would be joining your team.
   - You can pitch Sourcegraph as a whole, the part of product your team works on, and the team itself.
   - You understand what our hiring needs are for the team (what skills, values we are looking for).
