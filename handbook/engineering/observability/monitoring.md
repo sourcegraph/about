@@ -113,14 +113,14 @@ This step is optional, but highly recommended.
 
 ### Tracking a new service
 
-Metrics are available over HTTP, and Prometheus scrapes them. By default it is under the path `/metrics`. For example, run your local Sourcegraph dev server and visit <http://localhost:6060/metrics>.
+Metrics should be made available over HTTP for [Prometheus](./monitoring_architecture.md#sourcegraph-prometheus) to scrape. By default, Prometheus expects metrics to be exported on `$SERVICEPORT/metrics` - for example, run your local Sourcegraph dev server and metrics should be available on `http://localhost:$SERVICEPORT/metrics`.
 
 In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), Prometheus uses the Kubernetes API to discover endpoints to scrape. Just add the following annotations to your service definition:
 
 ```yaml
 metadata:
   annotations:
-    prometheus.io/port: "6060" # replace with the port your service runs on 
+    prometheus.io/port: "$SERVICEPORT" # replace with the port your service runs on 
     sourcegraph.prometheus/scrape: "true"
 ```
 
@@ -160,7 +160,7 @@ To upgrade Grafana, make the appropriate version change to the [`sourcegraph/gra
 
 ## Prometheus and Alertmanager
 
-Sourcegraph uses a custom Prometheus image, [`sourcegraph/prometheus`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/prometheus), that bundles Alertmanager and a wrapper program for managing configuration changes.
+Sourcegraph uses a custom Prometheus image, [`sourcegraph/prometheus`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/prometheus), that bundles Alertmanager and a wrapper program for managing configuration changes. Learn more about its role in our overall monitoring architecture [here](./monitoring_architecture.md#sourcegraph-prometheus).
 
 ### Find available metrics
 
