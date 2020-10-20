@@ -19,7 +19,7 @@ We expect our engineering managers to drive outcomes, so here are the outcomes w
 ## Month 2
 
 - You are the credible voice and point of contact for the team. You are directly responsible for the team's success.
-- You are able to describe the vision for the team that everyone is bought in to and the handbook communicates a forecast for what the team will accomplish in the next 3 months.
+- You have a written forecast (e.g., in the handbook) of the work the team is going to do over the next 3 months to make progress toward their goals.
 - You are accountable for your teams hiring process.
   - You understand what the team's hiring needs are (for example: skills, values).
   - You have confidence that our hiring process is calibrated to measure what we are looking for in an efficient and unbiased way.
