@@ -114,3 +114,7 @@ Here are some other questions that candidates have asked (e.g., in the [CEO inte
 Once the decision is made to [extend an offer](interview_process.md#outcome) to a candidate, the hiring manager and a representative from the People Ops team will schedule a call to walk through a summary of the offer. This summary will include an overview of cash compensation (including any commission or bonus plans), benefits, and any equity-based compensation (including a simple calculator for potential future values).
 
 With the candidate's approval, Sourcegraph will then conduct three reference check interviews with former peers and at least one former manager. If we are happy with the results, the Sourcegraph legal team will send the official DocuSign with the appropriate contracting or employment agreement(s) for the candidate's role, status, and location. Templates for employees and contractors can be found in the shared [HR/Employees/Contractors Dropbox folder](https://www.dropbox.com/home/Legal/HR%3AEmployees%3AContractors).
+
+## Cool test
+
+Every page must have a link pointing to it, or the build fails (because nobody would be able to find that page you so caringly added!). So let's [link to the new index file we added](test_folder/index.md), which itself has a link to the other test file in that folder, so that there is a link path to all the files now.
