@@ -60,6 +60,8 @@ Remember:
 - Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/main/doc/dev/getting-started/index.md). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next person that we hire doesn't run into the same problem).
    - You will need to run Sourcegraph locally to test and validate work that engineering is doing, to provide early feedback, or to review the UX of recently implemented work.
 - [Add Sourcegraph as a browser search engine](https://docs.sourcegraph.com/integration/browser_search_engine). Add another entry for our internal instance: `https://sourcegraph.sgdev.org/search?q=%s`. This also ensures you have access to our internal instance.
+- [Docs to Markdown add-on for Google Docs](https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607)
+- Install a text editor of your choice. A lot of the team uses [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Get to know the product
 
@@ -68,6 +70,7 @@ Remember:
 - Read about [search queries](https://docs.sourcegraph.com/code-search) and perform your first searches.
 - Work through the questions from the [Sales Onboarding Quiz](../../sales/onboarding/quiz.md) to make sure you understand key concepts. Feel free to skip any obvious answers and discuss any questions you have or knowledge gaps with your manager.
 - Record yourself completing the Sales [10 Step Demo Certification](https://docs.google.com/document/d/1P6nzAGfpTNysIi2FIcFY7mHX__q0qZ8955NDnWylF4I/edit#).
+- [How to make configuration changes to sourcegraph.com](https://about.sourcegraph.com/handbook/engineering/distribution/update_sourcegraph_website)
 
 ### Get to know our customers
 
@@ -124,6 +127,18 @@ You'll find we have a strong base to work from, but we are in the early stages o
 - Explore and favorite the [Google Drive design folder](https://drive.google.com/drive/folders/1xBRaw_2Ulccd_2ts0Wcq4Rgs6LuVblLU?usp=sharing)
 - Review the [Potential UX projects document](https://docs.google.com/document/d/1LemO13R3f0Ku88WK8tFr7_Qo4teDA0Bebs8Y2TGkS3U/edit)
 
+### Get ready to contribute to the docs
+
+- Read the [content guidelines](../../communication/content_guidelines.md) for contributing to the handbook, product docs, and product copy
+- Google Cloud Storage: Ask in **#dev-chat** for the following Google Cloud Storage permissions for publishing graphics:
+   - `storage.objects.delete`
+   - `resourcemanager.projects.get`
+   - `storage.buckets.list`
+- **Screenshot/GIF making software**: See the [handbook](https://about.sourcegraph.com/handbook/marketing/adding_screenshots_screen_recording) for guidelines about software. Expense the program that works for you when you need it.
+- [Product documentation guidelines](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/dev/documentation.md)
+
+### [Technical Writer onboarding](tech-writer-onboarding.md)
+
 ## Week 2-3 - initial projects
 
 - The goal is to give you a handful of projects that will help you familiarize yourself with the product, and get some quick wins in your first weeks.
@@ -134,5 +149,3 @@ You'll find we have a strong base to work from, but we are in the early stages o
 
 - Let’s talk about your strengths, interests, areas you’re excited about, as well as what will help drive the team and company goals!
   - Use this document to record issues you'd like to work on as you discover them during your onboarding
-
-## [Technical Writer onboarding](tech-writer-onboarding.md)
