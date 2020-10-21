@@ -25,11 +25,12 @@ This is the perfect opportunity for you if you’re excited by strategic and han
 - Strong ability to communicate effectively in 1-1 settings, group settings, and asynchronous (written) communication. 
 - Strong ability to adapt and thrive in a fast paced environment while managing multiple priorities and projects simultaneously.
 
-Apply [here](https://jobs.lever.co/sourcegraph/700949a2-09ce-4de7-b3bd-a5af5032a4a9/apply)!
 
 ## Nice-to-haves
 - In depth knowledge of HR policies and functions and compliance for US employees and non-US contractors.
 - Experience working with a globally distributed workforce.
+
+Apply to this role [here](https://jobs.lever.co/sourcegraph/700949a2-09ce-4de7-b3bd-a5af5032a4a9/apply)!
 
 ## Learn more about us
 
