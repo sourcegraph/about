@@ -35,6 +35,12 @@ We're hiring! Check out our open positions:
 - [Financial Planning & Analysis Analyst](../handbook/ops/roles/financial_planning_analysis.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 
+### People Ops
+
+- [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
+
+## Apply
+
 Apply by following the directions in the job description.
 
 If you're interested in Sourcegraph but aren't yet ready to apply, we are still happy to connect and answer any questions that you might have: [DM us on Twitter](https://twitter.com/srcgraph) or email hiring@sourcegraph.com.
