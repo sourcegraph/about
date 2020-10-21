@@ -50,9 +50,7 @@ Fundamentally, agency isn't just good for the company, it's good for your career
 
 TODO:
 
-​	Wait for approval from Nick, Chris to quote them
-
-​	Wait for confirmation from Noemi that we don't do job titles, and link to where we document that
+​	Wait for approval from Nick to quote him
 
 ### High quality
 
