@@ -29,6 +29,11 @@ We're hiring! Check out our open positions:
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
 - [Head of Customer Support](../handbook/ce/roles/head_of_customer_support.md)
 
+### Marketing
+
+- [Director of Community](../handbook/marketing/roles/director_of_community.md)
+- [Editor in Chief](../handbook/marketing/roles/editor_in_chief.md)
+
 ### Operations, finance, and legal
 
 - [Internal Tools](../handbook/ops/roles/internal_tools.md)
