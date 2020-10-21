@@ -68,7 +68,7 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
 
 ## Exclude archived Bitbucket Server repositories in queries
 
-You can now exclude archived repositories from Bitbucket Server using the `archived:no` [query syntax](https://docs.sourcegraph.com/user/search/queries). Archived repositories are designated with the label `archived` in Bitbucket Server. This is helpful when searching for repositories with specific characteristics such as all repositories in my organization with Gradle build files that are not archived (i.e. `archived:no repohasfile:build.gradle`).
+You can now exclude archived repositories from Bitbucket Server using the `archived:no` [query syntax](https://docs.sourcegraph.com/code-search/reference/queries). Archived repositories are designated with the label `archived` in Bitbucket Server. This is helpful when searching for repositories with specific characteristics such as all repositories in my organization with Gradle build files that are not archived (i.e. `archived:no repohasfile:build.gradle`).
 
 ## Download files from code views
 
@@ -133,7 +133,7 @@ Previously, fetching ACL data from Bitbucket Server was limited by API constrain
 
 ### Added
 
-- Bitbucket Server repositories with the label `archived` can be excluded from search with `archived:no` [syntax](https://docs.sourcegraph.com/user/search/queries). [#5494](https://github.com/sourcegraph/sourcegraph/issues/5494)
+- Bitbucket Server repositories with the label `archived` can be excluded from search with `archived:no` [syntax](https://docs.sourcegraph.com/code-search/reference/queries). [#5494](https://github.com/sourcegraph/sourcegraph/issues/5494)
 - Add button to download file in code view. [#5478](https://github.com/sourcegraph/sourcegraph/issues/5478)
 - The new `allowOrgs` site config setting in GitHub `auth.providers` enables admins to restrict GitHub logins to members of specific GitHub organizations. [#4195](https://github.com/sourcegraph/sourcegraph/issues/4195)
 - Support case field in repository search. [#7671](https://github.com/sourcegraph/sourcegraph/issues/7671)
