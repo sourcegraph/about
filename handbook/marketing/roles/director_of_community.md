@@ -4,7 +4,7 @@ At Sourcegraph, our customers and community are developers, and we equate develo
 
 ## Responsibilities
 ### In the first 30 days you will…
-#### Create a comprehensive commnity relations strategy
+#### Create a comprehensive community relations strategy
 
 * Create a comprehensive community relations strategy to engage the developer community, including partner, customer, and open source advocates, across GitHub, Twitter, Stack Overflow, Slack, Discord, Reddit, Hacker News, and other relevant channels.
     * Collect feedback from external sources, customers and internal teams to help inform efforts across the channels developers trust and frequent.
