@@ -107,7 +107,7 @@ Note that secrets and tokens are not automatically redacted. Please review the f
 
 ## Experimental paginated search API
 
-To enable better programmatic consumption of search results, Sourcegraph 3.9 introduces the ability to consume an entire search result set via multiple paginated search requests. The results will be returned with a stable order. This [new paginated search API](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) is experimental and is not yet ready for production use, but we are eager to hear feedback from early adopters as we work to further improve it. (If you're interested, see the [paginated search documentation](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) and [architecture design document](https://docs.sourcegraph.com/dev/architecture/search-pagination))
+To enable better programmatic consumption of search results, Sourcegraph 3.9 introduces the ability to consume an entire search result set via multiple paginated search requests. The results will be returned with a stable order. This [new paginated search API](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) is experimental and is not yet ready for production use, but we are eager to hear feedback from early adopters as we work to further improve it. (If you're interested, see the [paginated search documentation](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) and [architecture design document](https://docs.sourcegraph.com/dev/background-information/architecture/search-pagination))
 
 
 ## Kubernetes: migration to using StatefulSets
