@@ -189,7 +189,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="pt-1">
                             <a
                                 className="d-flex align-items-center"
-                                href="https://docs.sourcegraph.com/user/code_intelligence"
+                                href="https://docs.sourcegraph.com/code_intelligence"
                             >
                                 Code intelligence documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>

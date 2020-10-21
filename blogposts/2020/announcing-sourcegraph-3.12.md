@@ -96,7 +96,7 @@ Organizations using GitHub for authentication can now limit access to a list of 
 
 ![Code intel indicator](/blog/3-12-code-intel-indicator.png "Code intel indicator")
 
-Hover tooltips and find reference results now display a badge to indicate when a [result is search-based](https://docs.sourcegraph.com/user/code_intelligence/basic_code_intelligence). These indicators can be disabled by adding `{ "experimentalFeatures": { "showBadgeAttachments": false } }` to your user, organization, or global settings.
+Hover tooltips and find reference results now display a badge to indicate when a [result is search-based](https://docs.sourcegraph.com/code_intelligence/explanations/basic_code_intelligence). These indicators can be disabled by adding `{ "experimentalFeatures": { "showBadgeAttachments": false } }` to your user, organization, or global settings.
 
 ## Experimental features
 

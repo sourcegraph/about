@@ -54,7 +54,7 @@ By popular request, we've added a light color theme in addition to our current d
 ## Organizations
 You can now create and join organizations (also known as “orgs”). Organizations are named groups of users with an associated JSON settings file. These settings take effect for all users who are members of the organization. What kinds of settings, you might ask? This release includes custom search scopes and saved queries, and more features that rely on configuration will be rolling out soon.
 
-Server admins can [create organizations that new users automatically join](https://docs.sourcegraph.com/user/organizations), and any user can create organizations and invite new members from the settings page.
+Server admins can [create organizations that new users automatically join](https://docs.sourcegraph.com/admin/organizations), and any user can create organizations and invite new members from the settings page.
 <div style="padding-bottom:78.8%;height:0;position:relative;">
   <img alt="SS2.3 orgs" src="//images.contentful.com/le3mxztn6yoo/3xHwIft9qUqwqcYiYGamAu/c4dbe46cf2d8698472ce3e63aef0a7c2/Screen_Shot_2017-12-05_at_12.17.13_PM.png" />
 </div>

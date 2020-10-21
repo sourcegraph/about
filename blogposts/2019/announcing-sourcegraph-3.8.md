@@ -62,7 +62,7 @@ Each Sourcegraph instance ships with basic code intelligence that provides jump 
 
 Our solution to fast and precise code intelligence is with LSIF. We first wrote about LSIF (Language Server Index Format) in [code intelligence using LSIF](/go/code-intelligence-with-lsif/). This blogpost gives an overview of what LSIF is, and why we are working to support it.
 
-In Sourcegraph 3.8, LSIF-backed code intelligence is available for beta testing by early adopters. The currently supported languages (ones with LSIF indexers) are [TypeScript](https://github.com/microsoft/lsif-node), [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp). Check out the documentation for [details on how to try it out on your code](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence).
+In Sourcegraph 3.8, LSIF-backed code intelligence is available for beta testing by early adopters. The currently supported languages (ones with LSIF indexers) are [TypeScript](https://github.com/microsoft/lsif-node), [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp). Check out the documentation for [details on how to try it out on your code](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
 ## Search result tabs for improved result type discoverability
 
