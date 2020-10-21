@@ -22,9 +22,9 @@ Working with design should feel fluid, you should be able to open an issue or br
 
 You should also not feel limited to words, images (sketches, or references made by editing the broswer DOM) are also encouraged. 
 
-### GitHub Design Priorities project
+### Tracking design priorities
 
-Design Team uses this board for managing current and future work, design debt and work requests.
+The Design Team uses a [GitHub project board](https://github.com/orgs/sourcegraph/projects/66) for managing current and future work, design debt, and work requests.
 
 Columns:
 
@@ -32,29 +32,28 @@ Columns:
 - **Backlog** - issues that need design work but don't have any development resources allocated and haven't been scheduled yet
 - **Coming soon** - no designer assigned yet, development resources have been allocated. Add **design deadline** to the issue, if possible
 - **Up next** - designer assigned, design work scheduled
-- In progress - ongoing design work
+- In progress - design work actively being worked on
 - QA - design work done, designer is assisting the implementation
-- Measure success - design shipped, designer is working with the bizops team to analyse the impact 
-- Done - success measured, all work done
+- Measure success - design shipped, designer is working with the BizOps team to analyze the impact 
+- Done - success measured, all work completed to scope
 
 ### GitHub design labels
 
-- **needs-design** - for design work requests - add to 'design priorities' project, add a deadline, if possible..
-- **design** - for design-oriented issues. This label should be mostly used by designers
-- **design-debt** - for issues connected to the design debt.
+- **`needs-design`**: design work requests. Add to [Design priorities project](https://github.com/orgs/sourcegraph/projects/66) and if possible add a deadline.
+- **`design`**: design-oriented issues. This label should be mostly used by designers
+- **`design-debt`**: issues connected to design debt.
 
 ### Requesting design work
 
 If you need some design help:
 
-- add the tag **needs-design** to your GitHub issue
-- you can assign one of the designers, if you already know who will take care of the issue
-- add your issue to the **[design priorities project]**(https://github.com/orgs/sourcegraph/projects/66)
-- assign your issues to one of the columns - (see the 'GitHub Design Priorities project' section above for details)
+- Add the **`needs-design`** tag to your GitHub issue
+- Assign one of the designers if you know who will take care of the issue
+- Add your issue to the [design priorities project](https://github.com/orgs/sourcegraph/projects/66)
 
-Please, make it clear how urgent the issue is (adding the deadline is encouraged) and if development resources have been allocated. It is important to focus design team's attention on the work that can be implemented soon. 
+Please clarify the urgency of the issue (adding a known deadline is encouraged) and if development resources have been allocated. It is important to focus the design team's attention on the work that can be implemented soon. 
 
-Use #design Slack channel for any urgent matters or questions.
+Use the #design Slack channel for any urgent matters or questions.
 
 ## Lean UX design and velocity
 
@@ -68,7 +67,7 @@ While design does adds time at the beginning of a project, it improves velocity 
 
 Our design process is documented here: **[Design process](design_process.md)**
 
-### Figma
+## Figma
 
 - Click 'C' whilst in Figma, or check the navigation bar in the top left hand corner and look for the comment icon; you can drop comments anywhere in a file, and the owner of the page will be notified via email
 
