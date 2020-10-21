@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import * as sacks from '../images/about/david-sacks.jpg'
 import * as craft from '../images/about/sg-craftventures.png'
+import * as felicis from '../images/about/sg-felicis.png'
 import * as goldcrest from '../images/about/sg-goldcrest.png'
 import * as redpoint from '../images/about/sg-redpoint.png'
 
@@ -249,6 +250,9 @@ export default class About extends React.Component<any, any> {
                                     <div className="col-md-3">
                                         <img src={goldcrest} alt="Goldcrest Capital" />
                                     </div>
+                                    <div className="col-md-3">
+                                        <img src={felicis} alt="Felicis Ventures" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -385,7 +389,7 @@ export default class About extends React.Component<any, any> {
                         </div>
                     </div>
                 </div>
-            </Layout>
+            </Layout >
         )
     }
 }
