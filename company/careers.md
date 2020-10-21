@@ -37,7 +37,7 @@ We're hiring! Check out our open positions:
 
 ### People Ops
 
-- [Onboarding & Teammate Success Manager](onboarding_teammate_success_manager.md)
+- [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
 
 ## Apply
 
