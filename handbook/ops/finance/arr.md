@@ -6,11 +6,11 @@ See [definitions of ARR, IARR, new IARR, expansion IARR, and bookings](../../sal
 
 ## Monthly closing process
 
-Every month the finance team closes the books and reports the latest ARR to the team. This process will be completed within 5 business days of the end of the month.
+Every month the finance team closes the books and reports the latest ARR to the team based on calculations in the ARR source of truth, the [ARR tracker spreadsheet](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit). This process will be completed within 5 business days of the end of the month.
 
 ### New IARR
 
-1. Throughout the month, finance will take any announced sales and add them to the ARR tracker spreadsheet on the Deals tab. Whenever a sale is announced in the #sales Slack channel, finance will respond with the following values, and sales must confirm in writing that each of these values is correct:
+1. Throughout the month, finance will take any announced sales and add them to the ARR tracker spreadsheet on the Deals tab. Whenever a sale is announced in the #sales Slack channel, before adding it to the ARR tracker spreadsheet, finance will respond to the AE with their assumptions for the following values, and sales must confirm in writing that each of these is correct:
   - Customer name
   - Close date
   - IARR amount

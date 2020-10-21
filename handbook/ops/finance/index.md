@@ -2,15 +2,15 @@
 
 The finance & accounting team is responsible for helping Sourcegraph acquire and allocate resources optimally, plan for the future, track progress and execution, and measure results.
 
+- [Sources of truth](#sources-of-truth)
+- [ARR tracking and the monthly closing process](arr.md)
+- [Paying bills](payables.md)
+
 ## Team
 
 We are hiring for the finance & accounting team! See all [open positions](../roles/index.md).
 
 Until the team grows, the [BizOps team](../bizops/index.md) will provide financial support.
-
-- [Sources of truth](#sources-of-truth)
-- [ARR tracking and the monthly closing process](arr.md)
-- [Paying bills](payables.md)
 
 ### Members
 
