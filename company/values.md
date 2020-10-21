@@ -8,7 +8,7 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 - [**High quality**](#high-quality): You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.
 - [**Open and transparent**](#open-and-transparent): You proactively communicate in an open and transparent way.
 - [**Continuously grow**](#continuously-grow): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
-- [**Be human**](#be-human): You are kind, empathetic, authentic, humble.
+- [**Be a good human**](#be-a-good-human): You are kind, empathetic, authentic, humble.
 
 ---
 
@@ -95,6 +95,6 @@ Being open and transparent also means sharing your work frequently. You should k
 
 You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
 
-### Be human
+### Be a good human
 
 You are kind, empathetic, authentic, humble.
