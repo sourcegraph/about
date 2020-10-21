@@ -10,4 +10,4 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-**Update:** See "[Repository badges](https://docs.sourcegraph.com/user/repository/badges)" in Sourcegraph documentation for the latest information about this feature.
+**Update:** See "[Repository badges](https://docs.sourcegraph.com/getting-started/personalization/badges)" in Sourcegraph documentation for the latest information about this feature.

@@ -222,7 +222,7 @@ a lightweight search workflow that scales and generalizes to a lot of projects, 
 ad-hoc setup for project builds and dedicated tools.<sup>5</sup>
 
 Extending search queries to access static properties like type information is a also
-natural extension for writing better code checks, and an area of [code intelligence](https://docs.sourcegraph.com/user/code_intelligence)
+natural extension for writing better code checks, and an area of [code intelligence](https://docs.sourcegraph.com/code_intelligence)
 work that we're exploring.
 
 
