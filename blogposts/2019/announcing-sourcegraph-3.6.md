@@ -68,7 +68,7 @@ We have improved our search algorithm's performance and reduced peak memory usag
   <p style="text-align: center"><a href="https://vimeo.com/349147319" target="_blank">View on Vimeo</a></p>
 </p>
 
-[Quick links](https://docs.sourcegraph.com/user/quick_links) can now be added below the search bar on the home and search results pages. They can be used for quickly accessing frequently used URLs such as a code search, main repository, or external resources like your CI system or team documentation.
+[Quick links](https://docs.sourcegraph.com/getting-started/personalization/quick_links) can now be added below the search bar on the home and search results pages. They can be used for quickly accessing frequently used URLs such as a code search, main repository, or external resources like your CI system or team documentation.
 
 Quick links can be defined at the global, organization, and user level using the `quicklinks` field:
 
@@ -137,7 +137,7 @@ Our remote-first team from around the world is coming together at GopherCon next
 ### Added
 
 - The `github.exclude` setting in [GitHub external service config](https://docs.sourcegraph.com/admin/external_service/github#configuration) additionally allows you to specify regular expressions with `{"pattern": "regex"}`.
-- A new [`quicklinks` setting](https://docs.sourcegraph.com/user/quick_links) allows adding links to be displayed on the homepage and search page for all users (or users in an organization).
+- A new [`quicklinks` setting](https://docs.sourcegraph.com/getting-started/personalization/quick_links) allows adding links to be displayed on the homepage and search page for all users (or users in an organization).
 - Compatibility with the [Sourcegraph for Bitbucket Server](https://github.com/sourcegraph/bitbucket-server-plugin) plugin.
 - Support for [Bitbucket Cloud](https://bitbucket.org) as an external service.
 

@@ -160,7 +160,7 @@ Terraform plans for Google Cloud and Azure are being scheduled for upcoming rele
 
 ## Handle common search queries containing (unintended) invalid regexp
 
-Using [regexps in search queries](https://docs.sourcegraph.com/user/search/queries) is powerful, but sometimes you forget and just want to find matches for `open(`. Previously, this was treated as a regexp error, but now Sourcegraph does The Right Thing™ and looks for the literal match when there is no ambiguity.
+Using [regexps in search queries](https://docs.sourcegraph.com/code-search/reference/queries) is powerful, but sometimes you forget and just want to find matches for `open(`. Previously, this was treated as a regexp error, but now Sourcegraph does The Right Thing™ and looks for the literal match when there is no ambiguity.
 
 ## Making Sourcegraph a part of your dev tools stack
 
@@ -178,7 +178,7 @@ Give Sourcegraph the best chance of gaining traction by using our step-by-step g
 [**2. How to compare your existing code search tool to Sourcegraph**](https://docs.sourcegraph.com/adopt/comp)<br />
 If a code search tool already exists such as Hound or OpenGrok, our code search comparison guide highlights the strengths and weaknesses of your current code search tool in comparison with Sourcegraph
 
-[**3. See how our customers use Sourcegraph**](https://docs.sourcegraph.com/user/tour)<br />
+[**3. See how our customers use Sourcegraph**](https://docs.sourcegraph.com/getting-started/tour)<br />
 See examples of how developers at companies such as Uber, Lyft, and Yelp depend on Sourcegraph every day.
 
 ## Jump to Sentry issue from your code

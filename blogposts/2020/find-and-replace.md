@@ -585,7 +585,7 @@ support any find-replace tool that can be run as a local command or Docker conta
 Codemod, `grep`, `sed`, and any custom script are all fair game.
 
 Campaigns are currently in beta, available in Sourcegraph versions 3.15 and later. Read the
-[Campaigns documentation](https://docs.sourcegraph.com/user/campaigns) to learn more.
+[Campaigns documentation](https://docs.sourcegraph.com/campaigns) to learn more.
 
 
 ## Further reading
@@ -611,7 +611,7 @@ resources:
   * [Comby documentation and reference site](https://comby.dev/)
   * [Comby interactive playground](https://comby.live/)
 * Campaigns
-  * [Campaigns Documentation and Getting Started](https://docs.sourcegraph.com/user/campaigns)
+  * [Campaigns Documentation and Getting Started](https://docs.sourcegraph.com/campaigns)
   * [A video introduction to campaigns](https://www.youtube.com/watch?v=aqcCrqRB17w)
 
 [^1]: I say "most commonly used", but fluency with regex is by no means ubiquitous. You can graduate

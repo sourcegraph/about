@@ -16,7 +16,7 @@ Sourcegraph 2.13 ships today, with several improvements:
 
 - [Indexed search](https://docs.sourcegraph.com/admin/search#indexed-search) option for single-node Docker container deployment to speed up searches (previously Enterprise-only, now free and open source)
 - [More ways to specify which GitHub and GitHub Enterprise repositories to sync](https://docs.sourcegraph.com/admin/site_config/all#repositoryquery-array)
-- [In-product documentation at `/help`](https://docs.sourcegraph.com/dev/documentation#sourcegraph-help)
+- [In-product documentation at `/help`](https://docs.sourcegraph.com/dev/how-to/documentation_implementation)
 - [Per-user repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) for GitLab, with more code hosts coming soon [Enterprise]
 - [Support for multiple authentication providers](https://docs.sourcegraph.com/admin/auth) [Enterprise]
 
@@ -55,6 +55,6 @@ Thank you to the [open source contributors](https://github.com/sourcegraph/sourc
 
 ## Next up: Sourcegraph 3.0
 
-We're hard at work on the next major release, Sourcegraph 3.0. It will significantly improve language support for code intelligence, simplify deployment and site configuration, improve debuggability of code host integrations, and allow much more extensibility (including searching other types of things, such as GitHub issues and PR comments, rendered documentation, and log data). See the next couple months on the [Sourcegraph product roadmap](https://docs.sourcegraph.com/dev/roadmap) for more details. Work has already begun on [sourcegraph/sourcegraph@`master`](https://github.com/sourcegraph/sourcegraph).
+We're hard at work on the next major release, Sourcegraph 3.0. It will significantly improve language support for code intelligence, simplify deployment and site configuration, improve debuggability of code host integrations, and allow much more extensibility (including searching other types of things, such as GitHub issues and PR comments, rendered documentation, and log data). See the next couple months on the [Sourcegraph product roadmap](https://about.sourcegraph.com/direction) for more details. Work has already begun on [sourcegraph/sourcegraph@`master`](https://github.com/sourcegraph/sourcegraph).
 
 If you're on Sourcegraph 2.x, you should update to 2.13 now and can upgrade to 3.0 when it is released.

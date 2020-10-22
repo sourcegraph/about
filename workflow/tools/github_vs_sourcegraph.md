@@ -12,7 +12,7 @@ GitHub offers [code search](https://help.github.com/en/articles/searching-code),
 
 GitHub offers limited [code navigation](https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github) features for certain languages and repositories.
 
-[Sourcegraph code intelligence](https://docs.sourcegraph.com/user/code_intelligence) integrates seamlessly with GitHub and offers the following benefits over what GitHub provides:
+[Sourcegraph code intelligence](https://docs.sourcegraph.com/code_intelligence) integrates seamlessly with GitHub and offers the following benefits over what GitHub provides:
 
 - Support for many more languages
 - Cross-repository definitions and references
