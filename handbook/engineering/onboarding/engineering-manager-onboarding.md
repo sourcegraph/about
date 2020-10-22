@@ -26,3 +26,4 @@ We expect our engineering managers to drive outcomes, so here are the outcomes w
   - You have confidence that our hiring process is calibrated to measure what we are looking for in an efficient and unbiased way (if not, you have proposed improvements).
   - You conduct the hiring manager screen calls for candidates who would be joining your team.
     - You can pitch Sourcegraph as a whole, the part of product your team works on, and the team itself.
+- You have read both [Turn the Ship Around and Orbiting the Giant Hairball](https://about.sourcegraph.com/handbook/engineering/leadership#book-recommendations) and shared your thoughts with your peer managers during a team sync.
