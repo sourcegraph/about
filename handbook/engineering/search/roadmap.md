@@ -1,6 +1,6 @@
 # Roadmap
 
-This document contains the search team's current roadmap. Items are described in more detail below. Work that's in progress has an owner(s), plan and timeline associated with it. 
+This document contains the search team's current roadmap. The items on the roadmap are described in detail below. Items have an owner(s), plan and timeline associated with it.
 
 1. 🔄 [Enterprise homepage](1-enterprise-homepage)
 1. 🔄 Search tour(2-search-tour)
@@ -30,32 +30,35 @@ This document contains the search team's current roadmap. Items are described in
 
 
 
-#### 1. 🔄 Enterprise homepage
+#### 1. Enterprise homepage
 - **Owner:** Farhan, Juliana
+- **Status:** Completed
 - **Estimated completion**: 3.21
          
-#### 2. 🔄 Search tour
+#### 2. Search tour
 - **Owner:** Farhan
+- **Status:** Completed
 - **Estimated completion**:
        - ~~3.20~~ 2020-09-22 update: not all bugs found during the initial round of user testing were fixed in 3.20
        - 3.21
        
-#### 3. 🔄 Search expressions
+#### 3. Search expressions
  - **Owner:** Rijnard
  - **Status:** In progress
 
-#### 4. 🔄 Scaling indexed text search to 500k repositories
+#### 4. Scaling indexed text search to 500k repositories
    - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
    - **Owners:** Keegan/Stefan
-   - **Status:** (perf.md)
+    - **Status:** [In progress](perf.md)
    - Planned work
     -- code monitoring -- description
     -- diff/commit search --- 
    - **Estimated completion**: 3.23 (End of December 2020)
 
-#### 5. 🔄 Streaming search 
+#### 5. Streaming search 
   - **Plan:** Streaming search
   - **Owners:** Keegan, Juliana
+  - **Status:** In progress
   - **Estimated completion:**
     - ~~3.21~~ 2020-09-23 update: We revised this estimate after discussing needed work on the design & frontend side.
     - 3.22
