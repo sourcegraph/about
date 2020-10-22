@@ -50,9 +50,6 @@ This document contains the search team's current roadmap. The items on the roadm
    - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
    - **Owners:** Keegan/Stefan
     - **Status:** [In progress](perf.md)
-   - Planned work
-    -- code monitoring -- description
-    -- diff/commit search --- 
    - **Estimated completion**: 3.23 (End of December 2020)
 
 #### 5. Streaming search 
@@ -78,7 +75,7 @@ This document contains the search team's current roadmap. The items on the roadm
 
 #### 8. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
   - Consolidate the overlapping features for this experience - repogroups and search scope pages.
-  - Scoping your search to multiple repositories is intuitive and easy [issue](https://github.com/sourcegraph/sourcegraph/issues/10621
+  - Scoping your search to multiple repositories is intuitive and easy [issue](https://github.com/sourcegraph/sourcegraph/issues/10621)
 
 #### 9. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
   - Creating version context scopes manually is time consuming. Improve this user experience. [issue](https://github.com/sourcegraph/sourcegraph/issues/11569)
@@ -98,7 +95,7 @@ This document contains the search team's current roadmap. The items on the roadm
   
 #### 11. Saved searches without monitoring
   - Save or bookmark a search query you want to run again.
-  - Save a "composable query" or a query that can added on to the existing search query entered (i.e., improve (search scopes)[https://docs.sourcegraph.com/code_search/how-to/scopes]).
+  - Save a "composable query" or a query that can added on to the existing search query entered (i.e., improve [search scopes](https://docs.sourcegraph.com/code_search/how-to/scopes)).
   
 #### 12. Search results redesign
   - Search Tabs. Streaming search allows us to improve the search experience for each of these tabs.
@@ -107,7 +104,7 @@ This document contains the search team's current roadmap. The items on the roadm
   - more. scope TBD
   
 #### 13. Diff/commit search performance
-  - Diff/commit search performance works beyond the 50 repository limit (issue)[https://github.com/sourcegraph/sourcegraph/issues/6826].
+  - Diff/commit search performance works beyond the 50 repository limit [issue](https://github.com/sourcegraph/sourcegraph/issues/6826).
   - Support security use cases which require searching over code history, specifically commits and diffs.
   
 #### 14. Search input redesign
