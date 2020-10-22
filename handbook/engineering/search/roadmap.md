@@ -49,7 +49,7 @@ This document contains the search team's current roadmap. The items on the roadm
 #### 4. Scaling indexed text search to 500k repositories
    - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
    - **Owners:** Keegan/Stefan
-    - **Status:** [In progress](perf.md)
+   - **Status:** [In progress](perf.md)
    - **Estimated completion**: 3.23 (End of December 2020)
 
 #### 5. Streaming search 
