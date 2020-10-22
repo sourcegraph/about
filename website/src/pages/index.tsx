@@ -57,7 +57,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     />
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} className="pt-5"/>
+            <CustomerLogosSectionAnimated showButton={true} className="pt-5" />
             <div className="container">
                 <hr className="my-md-6" />
             </div>
@@ -76,7 +76,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code-search">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code_search">
                                 Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -146,7 +146,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             filter code in ways IDEs and code hosts can’t.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code-search">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code_search">
                                 Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>

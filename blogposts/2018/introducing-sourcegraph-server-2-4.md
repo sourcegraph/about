@@ -83,7 +83,7 @@ You can now search over commit diffs using the `type:diff` operator in search qu
 
 But that's not all! For the intrepid, you can search within commit diffs on multiple branches by specifying them in a `repo:` field after the `@` sign. [See non-master-branch commits containing `const`](https://sourcegraph.com/search?q=r:Microsoft/vscode%24%40*refs/heads/:%5Erefs/heads/master+type:diff+const+after:%221+week+ago%22&sq=) in a public repository on Sourcegraph.com, for example. After the `@`, separate Git refs with `:`, specify Git ref globs by prefixing them with `*`, and exclude commits reachable from a ref by prefixing it with `^`. We'll improve documentation as this feature nears release.
 
-See the [documentation](https://docs.sourcegraph.com/code-search/explanations/features#diff-search) for more information.
+See the [documentation](https://docs.sourcegraph.com/code_search/explanations/features#diff-search) for more information.
 
 ### Commit message search
 Like diff search above, but use `type:commit` to search inside commit *messages*. [See all commits mentioning “bug” or “fix”](https://sourcegraph.com/search?q=r:golang/go%24+type:commit+after:%221+month+ago%22+bug%7Cfix&sq=) in a public repository on Sourcegraph.com, for example.
@@ -94,7 +94,7 @@ Like diff search above, but use `type:commit` to search inside commit *messages*
 
 </div>
 
-See the [documentation](https://docs.sourcegraph.com/code-search/explanations/features#commit-search) for more information.
+See the [documentation](https://docs.sourcegraph.com/code_search/explanations/features#commit-search) for more information.
 
 ### New search filters: author, committer, before, after, and commit message
 
@@ -105,7 +105,7 @@ To go along with diff and commit search, we've added new search filters.
 * `after:"3 weeks ago"`, `before:"june 25, 2017"`, `before:"last thursday"`, etc., to filter by commit date ([example](https://sourcegraph.com/search?q=repo:golang/go%24+type:diff+/package+%5Cw%2B_test/+after:%222+months+ago%22+before:%221+month+ago%22&sq=))
 * `message:"hello"` to show only commits or diffs whose commit message (including the full message body) contains "hello" ([example](https://sourcegraph.com/search?q=repo:Microsoft/TypeScript%24+type:commit+after:%222+weeks+ago%22+file:%5C.ts%24+message:%22fix%28es%29%3F+%23%22&sq=))
 
-See the [search documentation](https://docs.sourcegraph.com/code-search/explanations/features#query) for all filters and query tokens
+See the [search documentation](https://docs.sourcegraph.com/code_search/explanations/features#query) for all filters and query tokens
 
 ## Changelog
 
