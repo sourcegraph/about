@@ -1,4 +1,4 @@
-# Roadmap
+# Iteration log
 
 This document contains the goals and work log for the search team's [2-week iterations](./index.md#iterations).
 
