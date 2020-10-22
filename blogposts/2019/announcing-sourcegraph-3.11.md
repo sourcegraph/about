@@ -47,7 +47,7 @@ Sourcegraph couldn't be what it is without the community.
   <p style="text-align: center"><a href="https://vimeo.com/380662673" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph 3.11 introduces [structural search](https://docs.sourcegraph.com/code-search/reference/structural), a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
+Sourcegraph 3.11 introduces [structural search](https://docs.sourcegraph.com/code_search/reference/structural), a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
 
 It can be awkward or difficult to match code blocks or nested expressions with regexp. To meet this challenge we’ve introduced a new and easier way to search code that operates more closely on the parse tree of the input using [Comby syntax](https://comby.dev/) for structural matching.
 
@@ -69,7 +69,7 @@ Known limitations:
 
 - Only indexed repositories will show results for structural search. On [Sourcegraph](https://sourcegraph.com/search), we index approximately 10,000 of the most popular repositories on GitHub.
 - To use this query syntax you must include `patterntype:structural` to activate the search type.
-- See [additional functionality and limitations](https://docs.sourcegraph.com/code-search/reference/structural#current-functionality-and-restrictions)
+- See [additional functionality and limitations](https://docs.sourcegraph.com/code_search/reference/structural#current-functionality-and-restrictions)
 
 ## Management console removed to simplify configuration
 
@@ -124,7 +124,7 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
   <p style="text-align: center"><a href="https://vimeo.com/380662321" target="_blank">View on Vimeo</a></p>
 </p>
 
-A new experimental feature has been added to show [language statistics about your search query](https://docs.sourcegraph.com/code-search/explanations/features#statistics). Search result pages now have a **Stats** link to a visual breakdown of the languages that comprise the results for the query. This data is also available through our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
+A new experimental feature has been added to show [language statistics about your search query](https://docs.sourcegraph.com/code_search/explanations/features#statistics). Search result pages now have a **Stats** link to a visual breakdown of the languages that comprise the results for the query. This data is also available through our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
 
 Language analysis is computationally expensive, so this feature is currently behind a feature flag. To enable, update your global, organization, or user settings to include `{ “experimentalFeatures”: { “searchStats”: true } }`.
 
@@ -151,13 +151,13 @@ Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit
 ### Added
 
 - Language statistics by commit are available via the API. [#6737](https://github.com/sourcegraph/sourcegraph/pull/6737)
-- Added a new page that shows [language statistics for the results of a search query](https://docs.sourcegraph.com/code-search/explanations/features#statistics).
+- Added a new page that shows [language statistics for the results of a search query](https://docs.sourcegraph.com/code_search/explanations/features#statistics).
 - Global settings can be configured from a local file using the environment variable `GLOBAL_SETTINGS_FILE`.
 - High-level health metrics and dashboards have been added to Sourcegraph's monitoring (found under the **Site admin** -> **Monitoring** area). [#7216](https://github.com/sourcegraph/sourcegraph/pull/7216)
 - Logging for GraphQL API requests not issued by Sourcegraph is now much more verbose, allowing for easier debugging of problematic queries and where they originate from. [#5706](https://github.com/sourcegraph/sourcegraph/issues/5706)
 - A new campaign type finds and removes leaked NPM credentials. [#6893](https://github.com/sourcegraph/sourcegraph/pull/6893)
 - Campaigns can now be retried to create failed changesets due to ephemeral errors (e.g. network problems when creating a pull request on GitHub). [#6718](https://github.com/sourcegraph/sourcegraph/issues/6718)
-- The initial release of [structural code search](https://docs.sourcegraph.com/code-search/reference/structural).
+- The initial release of [structural code search](https://docs.sourcegraph.com/code_search/reference/structural).
 
 ### Changed
 

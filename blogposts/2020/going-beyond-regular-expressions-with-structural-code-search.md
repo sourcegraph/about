@@ -81,7 +81,7 @@ balanced parentheses. The `args` part is just a descriptive identifier. We
 support [comby syntax](https://comby.dev/#match-syntax), which is currently the
 underlying engine behind structural search. You can find out more about the
 match syntax in our [usage
-docs](https://docs.sourcegraph.com/code-search/reference/structural), but for now it's
+docs](https://docs.sourcegraph.com/code_search/reference/structural), but for now it's
 enough to just follow along this blog post!
 
 Of course, we _could_ have run a simpler regex search for the prefix with
@@ -231,7 +231,7 @@ your query times out, give the page a refresh because we're probably warming up
 the cache for you.
 
 - See our [usage
-  documentation](https://docs.sourcegraph.com/code-search/reference/structural) for more
+  documentation](https://docs.sourcegraph.com/code_search/reference/structural) for more
   help and the [comby FAQ](https://comby.dev/#faq) for more details and known
   limitations of the matching engine.
 

@@ -60,7 +60,7 @@ lang:python ^\s*@.*\n\s*def
 
 ## Restrict search results to repositories with recent activity
 
-When you’re searching over 10,000+ repositories in an enterprise setting, it’s common to get results from old repositories with no active maintainers. You can now exclude repositories with no recent commits (to their default branch) with the beta `repohascommitafter` [search filter](https://docs.sourcegraph.com/code-search/reference/queries).
+When you’re searching over 10,000+ repositories in an enterprise setting, it’s common to get results from old repositories with no active maintainers. You can now exclude repositories with no recent commits (to their default branch) with the beta `repohascommitafter` [search filter](https://docs.sourcegraph.com/code_search/reference/queries).
 
 Examples:
 
@@ -80,7 +80,7 @@ Examples:
 
 ## Restrict search to repositories with or without a specific filename
 
-Sometimes, you want to search repositories based on the existence or absence of a file. This is now possible with the new `repohasfile` [search filter](https://docs.sourcegraph.com/code-search/reference/queries) which comes in two forms, `repohasfile` and `-repohasfile`.
+Sometimes, you want to search repositories based on the existence or absence of a file. This is now possible with the new `repohasfile` [search filter](https://docs.sourcegraph.com/code_search/reference/queries) which comes in two forms, `repohasfile` and `-repohasfile`.
 
 Examples:
 
@@ -134,7 +134,7 @@ Line decorations enhance code views with Sourcegraph extensions such as [Codecov
 
 User-level and organization-level saved searches are now separate. You can view and manage saved searches in the user and organization profile areas, respectively.
 
-[Saved searches](https://docs.sourcegraph.com/code-search/how-to/saved_searches) can be used to bookmark your frequently used searches. Additionally, you can monitor critical parts of your code by turning on saved search email notifications.
+[Saved searches](https://docs.sourcegraph.com/code_search/how-to/saved_searches) can be used to bookmark your frequently used searches. Additionally, you can monitor critical parts of your code by turning on saved search email notifications.
 
 ## New `orgs` field to optimize repository syncing for GitHub organizations
 
