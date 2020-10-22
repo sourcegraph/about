@@ -1,6 +1,6 @@
 # Playbooks
 
-Many of these tips require kubectl usage - you can refer to the [deployment page's Kubernetes section](../../deployments.md#kubernetes) to help you get set up and started with basic commands.
+Many of these tips require kubectl usage - you can refer to the [deployment page's Kubernetes section](../../deployments/kubernetes.md) to help you get set up and started with basic commands.
 
 ## Figure out why a pod is in CrashLoopBackoff
 
@@ -313,7 +313,7 @@ Get a `redis-cli` prompt:
 $ kubectl -n prod exec -it redis-store-7c5fb8dd89-jzx44 -- redis-cli
 Defaulting container name to redis-store.
 Use 'kubectl describe pod/redis-store-7c5fb8dd89-jzx44 -n prod' to see all of the containers in this pod.
-127.0.0.1:6379> 
+127.0.0.1:6379>
 ```
 
 ## DNS/SSL settings on Cloudflare
