@@ -154,7 +154,6 @@ Open the alert UI to click on the check URL that was failing and verify it's now
 
 We provide two sets of instructions here, shell commands and PostgreSQL commands to be run inside a `psql` instance. PostgreSQL commands are denoted by the prompt `sg=#` in this documentation; the actual prompt corresponds to the postgres user name.
 
-There's also a web interface for checking on common things, `https://pgsql-inspector.sgdev.org/`. As of this writing, it appears to have an SSL certificate for the wrong host.
 
 ### Shell commands
 
@@ -162,6 +161,7 @@ These commands assume you're on a local machine, and trying to access the live s
 
 #### Helpful aliases
 
+> Note: For the sourcegraph.com database you should refer to the instructions [here](../../deployments/playbooks.md#accessing-sourcegraph.com-database)
 ```bash
 alias dbpod='kubectl get pods --namespace=prod | grep pgsql | cut -d " " -f 1'
 alias proddb='kubectl exec -it --namespace=prod $(dbpod) -- psql -U sg -P pager=off';
