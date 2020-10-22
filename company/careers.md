@@ -29,11 +29,22 @@ We're hiring! Check out our open positions:
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
 - [Head of Customer Support](../handbook/ce/roles/head_of_customer_support.md)
 
+### Marketing
+
+- [Director of Community](../handbook/marketing/roles/director_of_community.md)
+- [Editor in Chief](../handbook/marketing/roles/editor_in_chief.md)
+
 ### Operations, finance, and legal
 
 - [Internal Tools](../handbook/ops/roles/internal_tools.md)
 - [Financial Planning & Analysis Analyst](../handbook/ops/roles/financial_planning_analysis.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
+
+### People Ops
+
+- [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
+
+## Apply
 
 Apply by following the directions in the job description.
 

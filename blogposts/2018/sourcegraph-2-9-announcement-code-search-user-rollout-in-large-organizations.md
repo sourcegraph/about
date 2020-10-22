@@ -31,7 +31,7 @@ Sourcegraph is a self-hosted code search and intelligence tool that helps your t
 
 Sourcegraph runs securely in your own network, takes 5 minutes to install, scales to 1,000s of developers and 10,000s of repositories, and is free to use (with paid upgrades starting at [$5/user/month](/pricing)). It pretty quickly becomes one of the most-used tools in an organization, as we hear from teams of 10s–1,000s of developers using Sourcegraph.
 
-See "[Sourcegraph overview](https://docs.sourcegraph.com/user)" and "[Sourcegraph tour](https://docs.sourcegraph.com/user/tour)" for more information, and watch it in action:
+See "[Sourcegraph overview](https://docs.sourcegraph.com/getting-started)" and "[Sourcegraph tour](https://docs.sourcegraph.com/getting-started/tour)" for more information, and watch it in action:
 
 ![2018-05-29 14.12.03](//images.ctfassets.net/le3mxztn6yoo/30ts8Zdk0gkoYquOyyOQsu/bdad165ebb471034c45b91777dd59bdb/2018-05-29_14.12.03.gif)
 

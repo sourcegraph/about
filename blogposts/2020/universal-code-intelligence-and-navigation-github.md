@@ -38,6 +38,6 @@ This screencast takes you step-by-step (with accompanying voiceover) through how
 
 ## Talk to us about bringing Universal Code Intelligence to your GitHub hosted repositories
 
-Let us guide you, as we have with dozens of other enterprise organizations in bringing code intelligence to every repository for every developer internally with an [in-depth demonstration of code intelligence](/contact/request-demo?utm_source=guides), including how to get [precise code intelligence (using LSIF)](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence).
+Let us guide you, as we have with dozens of other enterprise organizations in bringing code intelligence to every repository for every developer internally with an [in-depth demonstration of code intelligence](/contact/request-demo?utm_source=guides), including how to get [precise code intelligence (using LSIF)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
 <p class="text-center"><a href="/contact/request-demo?utm_source=guides" class="btn btn-primary mt-4">Request your code intelligence demo</a></p>

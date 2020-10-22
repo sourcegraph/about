@@ -25,8 +25,19 @@ section Cloud
     GitHub app to simplify access to repositories (spike)     :        2020-10-21, 2d
     Webhooks to receive repo permissions and metadata (spike) :        2020-10-21, 2d
 
-%% section Code intel
-%%     TO DO :active, after release-3.21, 30d
+section Code intel
+    SQLite data to Postgres migration                       :done,   2020-10-01, 2020-10-20
+    Auto-indexing for supported languages (RFC 201)         :active, 2020-10-10, 40d
+    Rebuild lsif-java indexer using com.sun.source          :active, 2020-10-10, 40d
+    Add native Gradle support for lsif-java                 :active, 2020-10-21, 14d
+    Add native Maven support for lsif-java                  :active, 2020-11-05, 14d
+    Resolve outstanding issues for lsif-clang delivery      :active, 2020-09-21, 50d
+    Ship lsif-clang to 3 organizations                      :active, 2020-11-01, 20d
+    Review and fill documentation gaps to ease adoption     :active, 2020-10-21, 15d
+    Ship lsif-go to 2 organizations                         :active, 2020-11-01, 20d
+    Add incremental indexing for monorepo support (RFC 170) :active, 2020-11-10, 5d
+    Ship lsif-java to 3 organizations                       :        2020-11-20, 20d
+    Integrate with Bazel for monorepo support               :        2020-11-21, 7d
 
 section Web
     Browser extension discoverability                         :done,    2020-09-28, 14d
@@ -42,12 +53,11 @@ section Web
 
 ## Campaigns
 
-1. Gradually publish changesets ([RFC 228](https://docs.google.com/document/d/1A-5cbYGz1p1UB1eAFsIgpK5XDkvS7ZNAVKMdtBm_WY0/edit?ts=5f48b4b2#heading=h.trqab8y0kufp) changesetTemplate.published boolean)
-1. Improved src-cli UX: better errors, debugging support, src-cli command to create skeleton spec
+1. **Customer outreach to improve adoption of campaigns**
 1. User credentials ([RFC 242](https://docs.google.com/document/d/1SqoWWm1xs82QibrWwYsXmpmgweN6EpcKt1qXrRBjjlU/edit)), which will allow non-site-admins to create campaigns
-1. Allow multiple users to edit the same campaign
 1. Versioning/releasing of src-cli with respect to sg/sg
-1. Publish changesets as GitHub draft PRs (and same for other code hosts)
+1. Respect GitHub GraphQL rate limits
+1. Improved documentation of src-cli login process
 
 See [roadmap at a glance](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaWgLk1dBvQVKDg-J7pwjGg8tpps/edit#) for more.
 
@@ -71,13 +81,16 @@ Unplanned:
 
 ## Code intel
 
-1. 🔄 Simplify database structure and improve performance by migrating SQLite data to Postgres.
+1. ✅ Simplify database structure and improve performance by migrating SQLite data to Postgres
+1. 🔄 Provide best effort auto-indexing for supported languages [RFC 201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit)
 1. 🔄 Rebuild lsif-java indexer using com.sun.source
-1. 🔄 Resolve outstanding issues for lsif-clang
-1. 🔄 Provide best effort auto-indexing for supported languages
-1. 🔄 Ship lsif-go to 3 organizations
+1. 🔄 Add native Gradle support for lsif-java
+1. 🔄 Add native Maven support for lsif-java
+1. 🔄 Resolve outstanding issues for lsif-clang delivery
 1. 🔄 Ship lsif-clang to 3 organizations
-1. Add native Gradle support for lsif-java
+1. 🔄 Review and fill documentation gaps to ease adoption
+1. 🔄 Ship lsif-go to 2 organizations
+1. 🔄 Add incremental indexing for monorepo support [RFC 170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit#)
 1. Ship lsif-java to 3 organizations
 1. Integrate with Bazel for monorepo support
 

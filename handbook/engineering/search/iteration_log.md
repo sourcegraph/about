@@ -14,11 +14,63 @@ This document contains the goals and work log for the search team's [2-week iter
     
 ## 2020-10-19 to 2020-10-30
 
-### $GOAL_OR_THEME
+### Featureful frontend query parser
 
-- **Owner(s):** $OWNER
+- **Owner(s):** Rijnard
 - **Outcomes:**
-    - $DESIRED_OUTCOME
+    - We need a proper frontend query parser for syntax highlighting, hover hints, and consistent UI state (toggle activation) of search expressions and future query syntax extensions. See [14016](https://github.com/sourcegraph/sourcegraph/issues/14016).
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+    
+### Quality-of-life search code improvements
+
+- **Owner(s):** Rijnard
+- **Outcomes:**
+    - We have a huge debt in parts of our search code and the state is unhealthy. I have been tracking a backlog of issues to refactor and fix re: deleting old parser code, fixing commit search issues. I will be selectively tackling [bug](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+author%3Arvantonder+label%3Ateam%2Fsearch+label%3Abug) and [refactor](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+author%3Arvantonder+label%3Ateam%2Fsearch+label%3Arefactor) issues to make things more sane.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Code monitoring
+
+- **Owner(s):** Stefan, Juliana, Farhan
+- **Outcomes:**
+    - We have a GraphQL schema for code monitoring, with a stubbed out implementation on the backend, allowing us to decouple backend and frontend development.
+    - SMTP is tracked in pings [#14115](https://github.com/sourcegraph/sourcegraph/issues/14115).
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Scale indexed search to 500k repositories
+- **Owner(s):** Stefan, Keegan
+- **Outcomes:**
+    - We have a similar performance for simple regex searches and their literal equivalents (EG `config overall`) on indexed repositories.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Streaming search
+
+- **Owner(s):** Keegan, Juliana, Rob
+- **Outcomes:**
+    - We have high-fidelity designs for streaming search.
+    - High-fidelity designs are implemented (TODO: assess viability of this outcome when Juliana is back).
+    - API: statistics for designs.
+    - Backend: true streaming for text search with stats.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Search Tour
+- **Owner(s):** @farhan
+- **Outcomes:**
+    - Search field is no longer focused by default for users who haven't searched yet [#14783](https://github.com/sourcegraph/sourcegraph/issues/14783).
+    - Search tour is re-enabled by default for enterprise customers.
+    - Search tour usage is tracked in pings [#14781](https://github.com/sourcegraph/sourcegraph/issues/14781).
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Improve tracking of search onboarding on enterprise instances
+- **Owner(s):** @farhan
+- **Outcomes:**
+    - Total number of unique searchers is tracked in pings [#14575](https://github.com/sourcegraph/sourcegraph/issues/14575).
+    - Weekly retention is tracked in pings [#13636](https://github.com/sourcegraph/sourcegraph/issues/13636).
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
@@ -58,6 +110,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - (1) Make search expressions available under feature flag (merge WIP PR) & (2) Raise visibility on the topic/capability of code search as lightweight analysis. Inform relevant customer contacts about these capabilities.
 - **Work log:**
     - 2020-10-07: I did some prep work to get search expressions ready ([related to how queries are evaluated](https://github.com/sourcegraph/sourcegraph/pull/14461)). Added functionality where search expressions merge repo results, and added integration tests. The PR is now [up for review](https://github.com/sourcegraph/sourcegraph/pull/13907). For the blog post, I added C-style comments and a cmd+enter shortcut for the search console page. I came up with some compelling examples that address blog post feedback, and will put up the blog post for review and publish it next week.
+    - 2020-10-15: Search expressions are merged in [#13907](https://github.com/sourcegraph/sourcegraph/pull/13907). We need to do follow up work in the UI + document to advertise the new features. The blog post is ready to ship, but depends on [#14816](https://github.com/sourcegraph/sourcegraph/pull/14816) for performant queries that was introduced by search expressions.
     
 
 ### Streaming search
@@ -68,7 +121,8 @@ This document contains the goals and work log for the search team's [2-week iter
     - Backend: true streaming for text search with stats.
     - Webapp: TODO
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2020-10-16: API is fully functional except for statistics. The nuts and bolts of that need some input. Will be working with Loic 2020-10-20 to help define that.
+    - 2020-10-09: (Keegan) Low productivity Mon-Wed, didn't feel well. Thu/Fri worked on a customer P0 related to Zoekt creating too many HTTP connections and exhausting socket limits. https://github.com/sourcegraph/customer/issues/111
 
 ## 2020-09-21 to 2020-10-02
 

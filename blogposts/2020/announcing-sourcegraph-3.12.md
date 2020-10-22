@@ -68,7 +68,7 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
 
 ## Exclude archived Bitbucket Server repositories in queries
 
-You can now exclude archived repositories from Bitbucket Server using the `archived:no` [query syntax](https://docs.sourcegraph.com/user/search/queries). Archived repositories are designated with the label `archived` in Bitbucket Server. This is helpful when searching for repositories with specific characteristics such as all repositories in my organization with Gradle build files that are not archived (i.e. `archived:no repohasfile:build.gradle`).
+You can now exclude archived repositories from Bitbucket Server using the `archived:no` [query syntax](https://docs.sourcegraph.com/code-search/reference/queries). Archived repositories are designated with the label `archived` in Bitbucket Server. This is helpful when searching for repositories with specific characteristics such as all repositories in my organization with Gradle build files that are not archived (i.e. `archived:no repohasfile:build.gradle`).
 
 ## Download files from code views
 
@@ -96,7 +96,7 @@ Organizations using GitHub for authentication can now limit access to a list of 
 
 ![Code intel indicator](/blog/3-12-code-intel-indicator.png "Code intel indicator")
 
-Hover tooltips and find reference results now display a badge to indicate when a [result is search-based](https://docs.sourcegraph.com/user/code_intelligence/basic_code_intelligence). These indicators can be disabled by adding `{ "experimentalFeatures": { "showBadgeAttachments": false } }` to your user, organization, or global settings.
+Hover tooltips and find reference results now display a badge to indicate when a [result is search-based](https://docs.sourcegraph.com/code_intelligence/explanations/basic_code_intelligence). These indicators can be disabled by adding `{ "experimentalFeatures": { "showBadgeAttachments": false } }` to your user, organization, or global settings.
 
 ## Experimental features
 
@@ -133,7 +133,7 @@ Previously, fetching ACL data from Bitbucket Server was limited by API constrain
 
 ### Added
 
-- Bitbucket Server repositories with the label `archived` can be excluded from search with `archived:no` [syntax](https://docs.sourcegraph.com/user/search/queries). [#5494](https://github.com/sourcegraph/sourcegraph/issues/5494)
+- Bitbucket Server repositories with the label `archived` can be excluded from search with `archived:no` [syntax](https://docs.sourcegraph.com/code-search/reference/queries). [#5494](https://github.com/sourcegraph/sourcegraph/issues/5494)
 - Add button to download file in code view. [#5478](https://github.com/sourcegraph/sourcegraph/issues/5478)
 - The new `allowOrgs` site config setting in GitHub `auth.providers` enables admins to restrict GitHub logins to members of specific GitHub organizations. [#4195](https://github.com/sourcegraph/sourcegraph/issues/4195)
 - Support case field in repository search. [#7671](https://github.com/sourcegraph/sourcegraph/issues/7671)

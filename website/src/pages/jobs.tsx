@@ -120,7 +120,7 @@ export default class JobsPage extends React.Component<any, any> {
                             <h1>Our work</h1>
                             <p>
                                 Sourcegraph is an{' '}
-                                <a href="https://docs.sourcegraph.com/dev/open_source_open_company">open company</a>.
+                                <a href="https://about.sourcegraph.com/company#open-company">open company</a>.
                                 You can get a sense about what it is like to work here by looking at{' '}
                                 <a href="https://github.com/sourcegraph/sourcegraph">our code</a> and reading about{' '}
                                 <a href="https://docs.sourcegraph.com/dev">how we build Sourcegraph</a>.

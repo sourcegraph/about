@@ -7,7 +7,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
-import { CustomerLogosSection } from '../components/product/CustomerLogosSection'
+import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated';
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -57,7 +57,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     />
                 </div>
             </ContentSection>
-            <CustomerLogosSection className="pt-5" />
+            <CustomerLogosSectionAnimated showButton={true} className="pt-5"/>
             <div className="container">
                 <hr className="my-md-6" />
             </div>
@@ -76,7 +76,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code-search">
                                 Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -146,7 +146,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             filter code in ways IDEs and code hosts can’t.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/search">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code-search">
                                 Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -189,7 +189,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="pt-1">
                             <a
                                 className="d-flex align-items-center"
-                                href="https://docs.sourcegraph.com/user/code_intelligence"
+                                href="https://docs.sourcegraph.com/code_intelligence"
                             >
                                 Code intelligence documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
@@ -207,7 +207,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/user/campaigns">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/campaigns">
                                 Campaigns documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -245,7 +245,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <p>
                             Aggregate data from connected external services, and enhance it with code intelligence
                             to give you the information you care about. Take direct actions on these insights with&nbsp;
-                            <Link to="https://docs.sourcegraph.com/user/campaigns">campaigns</Link>, like proposing
+                            <Link to="https://docs.sourcegraph.com/campaigns">campaigns</Link>, like proposing
                             an automated refactor to fix a problem detected through static analysis.
                         </p>
                         <div className="pt-1">
