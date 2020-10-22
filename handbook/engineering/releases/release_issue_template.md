@@ -40,7 +40,7 @@ Upon branch cut, cut and test the first release candidate:
   yarn run release release:create-candidate $MAJOR.$MINOR.0-rc.1
   ```
 - [ ] Run regression tests:
-  - [ ] Follow [README.md](https://github.com/sourcegraph/sourcegraph/blob/main/web/src/regression/README.md) to set up your e2e environment. 
+  - [ ] Follow the [Regression tests guide](https://github.com/sourcegraph/sourcegraph/blob/main/client/web/src/regression/README.md) to set up your e2e environment. 
         Run the tests from the `web` directory. A more complete set of env vars can be found in this
         [1password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/gm5dfflq6sfclmotneuayfdj5q) entry.
   - [ ] New Sourcegraph Docker container:
