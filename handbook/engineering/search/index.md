@@ -12,9 +12,11 @@ Sourcegraph search is:
 - **Easy to use:** Users can quickly understand how to find what they are looking for and what options are available for searching. The search syntax is clear and intuitive.
 - **Shareable:** Sourcegraph searches are easy to share, and provide team and organization wide value. This in turn creates network effects that compound the value Sourcegraph provides with scale.
 
-## Search Roadmap
+## Roadmap
 
-The search team's current roadmap can be found in [roadmap](./index.md#roadmap).
+The search roadmap is driven by the team's [goals](#goals) and upcoming work is planned in [iterations](#iterations).
+
+The items on search roadmap can be found in [roadmap](./roadmap.md). 
 
 ## Iterations
 
