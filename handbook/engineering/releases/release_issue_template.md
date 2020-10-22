@@ -18,11 +18,10 @@ Arguments:
 
 ## $FIVE_WORKING_DAYS_BEFORE_RELEASE (5 work days before release): Prep for branch cut
 
-- [ ] Post a release status update to Slack:
+- [ ] Post a release status update to Slack - review all release-blocking issues, and ensure someone is resolving each.
   ```
   yarn run release release:status $MAJOR.$MINOR.0
   ``` 
-  - [ ] Review [all release-blocking issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+label%3Arelease-blocker). Add them as checklist items here. Ensure someone is resolving each.
 
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE (4 work days before release): Branch cut
 
@@ -31,6 +30,11 @@ Arguments:
   yarn run release changelog:cut $MAJOR.$MINOR.0
   ```
 - [ ] Create the `$MAJOR.$MINOR` branch off the CHANGELOG commit in the previous step: `git branch $MAJOR.$MINOR && git push origin $MAJOR.$MINOR`.
+
+## Release candidates
+
+Upon branch cut, cut and test the first release candidate:
+
 - [ ] Tag the first release candidate:
   ```
   yarn run release release:create-candidate $MAJOR.$MINOR.0-rc.1
@@ -48,30 +52,25 @@ Arguments:
   - [ ] New Sourcegraph Kubernetes cluster:
     - Run the initializer on a new Sourcegraph Kubernetes cluster.
     - Run the regression test suite.
+- [ ] File any regressions as `release-blocker` issues.
 
-## $FOUR_WORKING_DAYS_BEFORE_RELEASE to $ONE_WORKING_DAY_BEFORE_RELEASE: Cut new release candidates
+Aggressively revert or disable features that may cause delays. As necessary, `git cherry-pick` bugfix (not feature!) commits from `main` into the release branch. Continue to cut new release candidates daily as necessary, until no more `release-blocker` issues remain:
 
-As necessary, `git cherry-pick` bugfix (not feature!) commits from `main` into the release branch.
-Aggressively revert or disable features that may cause delays.
-
-- [ ] Post a release status update to Slack:
-  ```
-  yarn run release release:status $MAJOR.$MINOR.0
-  ``` 
-  - [ ] Review [all release-blocking issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+archived%3Afalse+org%3Asourcegraph+label%3Arelease-blocker). Add them as checklist items here. Ensure someone is resolving each.
-  - [ ] Review [all other open issues in the milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+-label%3Arelease-blocker+milestone%3A$MAJOR.$MINOR) and ask assignees to triage them to a different milestone (preferring Backlog).
-
-Cut a new release candidate daily if necessary:
-
-- [ ] Cut release candidate:
+- [ ] Cut the Nth release candidate:
   ```
   N=<release-candidate-number> yarn run release release:create-candidate $MAJOR.$MINOR.0-rc.$N
   ```
 - [ ] Re-run the automated test suite against the new release candidate, file any regressions as
   `release-blocker` issues.
-- [ ] If necessary, manually test features or workflows affected by the cherry-pick.
+  - [ ] If necessary, manually test features or workflows affected by the cherry-pick.
+- [ ] Post a release status update to Slack - review all release-blocking issues, and ensure someone is resolving each. If there are no more release-blocking issues, proceed to the next section.
+  ```
+  yarn run release release:status $MAJOR.$MINOR.0
+  ``` 
 
-## $ONE_WORKING_DAY_BEFORE_RELEASE (1 work day before release) Tag final release
+## Tag final release
+
+Once there are no more release-blocking issues (as reported by the `release:status` command) proceed with creating the final release:
 
 - [ ] Tag the final release:
   ```
@@ -88,7 +87,6 @@ Cut a new release candidate daily if necessary:
   yarn run release release:publish $MAJOR.$MINOR.0
   ```
 - [ ] Create (but do not merge) a PR to update https://docs.sourcegraph.com/admin/updates/kubernetes indicating the steps required to upgrade.
-- [ ] Review [all issues in the release milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+milestone%3A$MAJOR.$MINOR). Backlog things that didn't make it into the release and ping issues that still need to be done for the release (e.g. Tweets, marketing).
 
 ## $RELEASE_DATE by 10am: Release
 
