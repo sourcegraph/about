@@ -2,33 +2,31 @@
 
 This document contains the search team's current roadmap. 
 
-1. 🔄 Enterprise homepage
-       - **Owner:** Farhan, Juliana
-          - **Status:** In progress
-         - **Estimated completion**: 3.21
-1. 🔄 Search tour
-    - **Owner:** Farhan
-          - **Status:** In progress
-          - **Estimated completion**:
-              - ~~3.20~~ 2020-09-22 update: not all bugs found during the initial round of user testing were fixed in 3.20
-              - 3.21
-1. 🔄 Search expressions
-1. 🔄 Scaling indexed text search to 500k repositories
+#### 1. 🔄 Enterprise homepage
+- **Owner:** Farhan, Juliana
+- **Estimated completion**: 3.21
+         
+#### 2. 🔄 Search tour
+- **Owner:** Farhan
+- **Estimated completion**:
+       - ~~3.20~~ 2020-09-22 update: not all bugs found during the initial round of user testing were fixed in 3.20
+       - 3.21
+#### 3. 🔄 Search expressions
+#### 4. 🔄 Scaling indexed text search to 500k repositories
    - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
    - **Owners:** Keegan/Stefan
-   - **Status:** [In progress](perf.md)
+   - **Status:** (perf.md)
    - Planned work
     -- code monitoring -- description
     -- diff/commit search --- 
    - **Estimated completion**: 3.23 (End of December 2020)
-1. 🔄 Streaming search 
+#### 5. 🔄 Streaming search 
  - **Plan:** Streaming search
   - **Owners:** Keegan, Juliana
-  - **Status:** In progress
   - **Estimated completion:**
     - ~~3.21~~ 2020-09-23 update: We revised this estimate after discussing needed work on the design & frontend side.
     - 3.22
-1. Code monitoring v1
+#### 6. Code monitoring v1
       - **Plan**
           - Private / Individual code monitors
           - Email and Webhooks Support
@@ -36,10 +34,10 @@ This document contains the search team's current roadmap.
       - **Status:** Not started
       - **Estimated start:** 2020-11-02
       - **Estimated effort:** 4 weeks
-1. Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
-1. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
-1. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
-1. Search language rules engine
+#### 7. Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
+#### 8. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
+#### 9. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
+#### 10. Search language rules engine
   - **Owner:** Rijnard
   - **Status:** In progress
   - **Plan**
@@ -50,18 +48,26 @@ This document contains the search team's current roadmap.
   - **Status:** Not started
   - **Estimated start:** 3.21
   - **Estimated effort:** 4 months
-1. Saved searches without monitoring
-1. Search results redesign
-1. Diff/commit search performance
-1. Search input redesign
-1. Structural search performance
-1. As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed (better version contexts 2/2)
-1. Code monitoring v2
-       - Learn from user testing private monitors
-       - Diff/commit search performance, 
-       - Sharing monitors in organization, 
-       - Improve notification message 
-1. Semantic search: prototype validation
-1. External search result providers
-1. Semantic search: implementation
+#### 11. Saved searches without monitoring
+#### 12. Search results redesign
+      - 
+#### 13. Diff/commit search performance
+      - requested by customers -  issue
+      - important for code monitors
+      - security use case search over code history / commits
+#### 14. Search input redesign
+
+#### 15. Structural search performance
+
+#### 16. As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed (better version contexts 2/2)
+#### 17. Code monitoring v2
+       - Update based on learnings gained from user testing v1
+       - Sharing monitors within an organization 
+#### 18. Semantic search: prototype validation
+       - Reference precise code intelligence data in search
+#### 19. External search result providers
+       - Ability to search over issue trackers, internal tools, etc.
+       - First set of providers is likely extensions 
+#### 20. Semantic search: implementation
+       - Reference precise code intelligence data in search
 
