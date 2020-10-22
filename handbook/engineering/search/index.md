@@ -14,9 +14,9 @@ Sourcegraph search is:
 
 ## Roadmap
 
-The search roadmap is driven by the team's [goals](#goals) and upcoming work is planned in [iterations](#iterations).
+The search roadmap is driven by the team's [goals](#goals) and the upcoming work is planned in [iterations](#iterations).
 
-The items on search roadmap can be found in [roadmap](./roadmap.md). 
+The roadmap items can be found in the [search roadmap](./roadmap.md). 
 
 ## Iterations
 
