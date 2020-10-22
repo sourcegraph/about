@@ -4,7 +4,7 @@
 
 ### Shell commands
 
-These commands assume you're on a local machine, and trying to access the live systems. Also refer to the [deployment page's Kubernetes section](../../deployments.md#kubernetes) for kubectl tips.
+These commands assume you're on a local machine, and trying to access the live systems. Also refer to the [deployment page's Kubernetes section](./kubernetes.md) for kubectl tips.
 
 ### Sourcegraph.com specific
 
