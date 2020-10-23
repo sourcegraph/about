@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "SD Times",
+      "newsTitle": "Report: The emergence of Big Code comes with big problems",
+      "newsDate": "October 23, 2020",
+      "newsLink": "https://sdtimes.com/softwaredev/report-the-emergence-of-big-code-comes-with-big-problems/",
+      "newsImage": "/external-logos/sd-times-sq-logo.svg"
+    },
+    {
       "newsSource": "Software.com",
       "newsTitle": "Big Code—How ‘More Code, Faster’ Creates Problems",
       "newsDate": "October 15, 2020",
@@ -83,6 +90,13 @@
       "newsDate": "October 4, 2020",
       "newsLink": "https://developers.slashdot.org/story/20/10/04/0157214/51-of-developers-say-theyre-managing-100-times-more-code-than-a-decade-ago",
       "newsImage": "/external-logos/slashdot-logo.png"
+    },
+    {
+      "newsSource": "Techzine",
+      "newsTitle": "Ontwikkelaars beheren 100 keer meer code dan 10 jaar geleden",
+      "newsDate": "October 2, 2020",
+      "newsLink": "https://www.techzine.be/nieuws/devops/61168/ontwikkelaars-beheren-100-keer-meer-code-dan-10-jaar-geleden/",
+      "newsImage": "/external-logos/techzine-logo.png"
     },
     {
       "newsSource": "Best Gaming Pro",
