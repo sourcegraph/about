@@ -27,6 +27,7 @@ export default class HTML extends React.Component<HtmlProps> {
                     {head.link.toComponent()}
                     {/* {css} */}
                     <link rel="icon" type="image/png" href="/favicon.png" />
+                    <link rel="alternate" type="application/rss+xml" title="Sourcegraph Blog" href="/rss.xml" />
                     <link
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
