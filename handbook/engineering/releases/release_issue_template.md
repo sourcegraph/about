@@ -54,7 +54,7 @@ Upon branch cut, cut and test the first release candidate:
     - Run the regression test suite.
 - [ ] File any regressions as `release-blocker` issues.
 
-Aggressively revert or disable features that may cause delays. As necessary, `git cherry-pick` bugfix (not feature!) commits from `main` into the release branch. Continue to cut new release candidates daily as necessary, until no more `release-blocker` issues remain:
+Revert or disable features that may cause delays. As necessary, `git cherry-pick` bugfix (not feature!) commits from `main` into the release branch. Continue to cut new release candidates daily as necessary, until no more `release-blocker` issues remain:
 
 - [ ] Cut the Nth release candidate:
   ```
