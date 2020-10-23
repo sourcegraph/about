@@ -1,10 +1,10 @@
 # Roadmap
 
-This document contains the search team's current roadmap. The items on the roadmap are described in detail below. Items have an owner(s), plan and timeline associated with it.
+This document contains the search team's current roadmap. 
 
 1. 🔄 [Enterprise homepage](#1-enterprise-homepage)
 1. 🔄 [Search tour](#2-search-tour)
-1. 🔄 Search expressions
+1. 🔄 [Search expressions](#3-search-expressions)
 1. 🔄 Scaling indexed text search to 500k repositories
 1. 🔄 Streaming search
 1. Code monitoring (private code monitors, no sharing, emails + webhooks)
@@ -75,10 +75,10 @@ This document contains the search team's current roadmap. The items on the roadm
 
 #### 8. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
   - Consolidate the overlapping features for this experience - repogroups and search scope pages.
-  - Scoping your search to multiple repositories is intuitive and easy [issue](https://github.com/sourcegraph/sourcegraph/issues/10621)
+  - Scoping your search to multiple repositories is intuitive and easy ([issue](https://github.com/sourcegraph/sourcegraph/issues/10621))
 
 #### 9. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
-  - Creating version context scopes manually is time consuming. Improve this user experience. [issue](https://github.com/sourcegraph/sourcegraph/issues/11569)
+  - Creating version context scopes manually is time consuming. Improve this user experience ([issue](https://github.com/sourcegraph/sourcegraph/issues/11569))
   - ToDo: consolidate user requests for a better search experience with version contexts set
 
 #### 10. Search language rules engine
@@ -98,19 +98,19 @@ This document contains the search team's current roadmap. The items on the roadm
   - Save a "composable query" or a query that can added on to the existing search query entered (i.e., improve [search scopes](https://docs.sourcegraph.com/code_search/how-to/scopes)).
   
 #### 12. Search results redesign
-  - Search Tabs. Streaming search allows us to improve the search experience for each of these tabs.
+  - Search Tabs 
   - Search results with sidebar
-  - Design refresh includes ability to copy the search result content and more.
-  - more. scope TBD
+  - Design refresh
+  - and more. scope TBD
   
 #### 13. Diff/commit search performance
-  - Diff/commit search performance works beyond the 50 repository limit [issue](https://github.com/sourcegraph/sourcegraph/issues/6826).
+  - Diff/commit search performance works beyond the 50 repository limit ([issue](https://github.com/sourcegraph/sourcegraph/issues/6826)).
   - Support security use cases which require searching over code history, specifically commits and diffs.
   
 #### 14. Search input redesign
-  - Reduce business in the search bar.
-  - Search Expressions work as expected
-  - more. scope TBD
+  - Reduce business in the search bar
+  - Search Expressions are supported
+  - and more. scope TBD
 
 #### 15. Structural search performance
   - Structural search is a good experience for larger-scale code bases and cloud users.
@@ -124,7 +124,6 @@ This document contains the search team's current roadmap. The items on the roadm
   - Plan below should be updated based on learnings from user testing code monitoring version 1.
   - **Plan**
     - Organization level code monitors
-    - More information (e.g. search result content) is exposed in the notification message 
                 
 #### 18. Semantic search: prototype validation
   - Referencing precise code intelligence (e.g. usages, definition) in search
