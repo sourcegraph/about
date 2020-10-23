@@ -2,8 +2,8 @@
 
 This document contains the search team's current roadmap. The items on the roadmap are described in detail below. Items have an owner(s), plan and timeline associated with it.
 
-1. 🔄 Enterprise homepage
-1. 🔄 Search tour
+1. 🔄 [Enterprise homepage](#1-enterprise-homepage)
+1. 🔄 [Search tour](#2-search-tour)
 1. 🔄 Search expressions
 1. 🔄 Scaling indexed text search to 500k repositories
 1. 🔄 Streaming search
