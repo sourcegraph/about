@@ -75,7 +75,7 @@ _Updated 2020-09-11_
 - **Extend Search Query Language**
   - **Problem:** It is imperative that users can find and filter the code, files, repositories, and commits they care about in extremely large codebases.
   - **Outcomes:** Users can express relations on code, files, repositories, and commits in search queries to more effectively filter the data they need. Sourcegraph is the exclusive industrial-strength search solution that provides these capabilities.
-  - **Planned work** Search language rules engine
+  - **Planned work:** Search language rules engine
 
 ### Easy to use
 
@@ -95,6 +95,7 @@ _Updated 2020-09-11_
 - **Code monitoring** ([RFC 227](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit))
   - **Problem:** Users want to be notified about important things going on in their code.
   - **Outcome:** Notifications create a shared understanding and raise awareness of what’s going on in the code.
+  - **Planned work:** Code monitoring version 1
 
 
 ## Contact
