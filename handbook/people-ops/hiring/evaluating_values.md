@@ -6,13 +6,12 @@ It is the responsibility of every interviewer to think about these values when i
 
 ## Rubric
 
-Scored out of 5:
-
-- 1 - Exhibited behavior that is contrary to this value
-- 2 - I did not have any evidence towards or against this value (neutral)
-- 3 - Gave the impression they have this value, but lacking evidence
-- 4 - Demonstrated this value with evidence
-- 5 - Exceptionally demonstrated this value, with abundent evidence
+| Score | Description |
+| --- | --- |
+| -1 | Exhibited behavior that is contrary to this value. |
+| 0 | No evidence towards or against this value (neutral). |
+| 1 | Demonstrated this value with evidence. |
+| 2 | Exceptionally demonstrated this value, with abundant evidence. |
 
 ## Values to copy into feedback
 
