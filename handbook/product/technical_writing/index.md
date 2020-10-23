@@ -45,7 +45,3 @@ Run `make docsite-check` to verify your changes and catch any broken links.
 1. Go into the `website` sub-directory
 1. Run `yarn start`
 1. Preview at [localhost 8000](http://localhost:8000/)
-
-## Using windows for development
-
-See [Windows development docs](windows_development.md) for more details.
