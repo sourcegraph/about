@@ -10,6 +10,12 @@ const CASESTUDIES: {
     external?: boolean
 }[] = [
         {
+            name: 'Criteo',
+            logo: '/external-logos/criteo-logo.svg',
+            title: 'Criteo uses Sourcegraph universal code search to tackle Big Code',
+            url: '/case-studies/criteo-tackles-big-code',
+        },
+        {
             name: 'F5',
             logo: '/external-logos/f5-logo.svg',
             title: 'F5 streamlines collaboration for global and distributed software teams',
