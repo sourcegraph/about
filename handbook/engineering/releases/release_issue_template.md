@@ -87,7 +87,7 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   ```
 - [ ] Create (but do not merge) a PR to update https://docs.sourcegraph.com/admin/updates/kubernetes indicating the steps required to upgrade.
 
-## $RELEASE_DATE by 10am: Release
+## $RELEASE_DATE: Release
 
 - [ ] Merge the release-publishing PRs created previously.
   - For [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), also:
