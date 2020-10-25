@@ -31,9 +31,8 @@ Arguments:
   ```
 - [ ] Create the `$MAJOR.$MINOR` branch off the CHANGELOG commit in the previous step: `git branch $MAJOR.$MINOR && git push origin $MAJOR.$MINOR`.
 
-## Release candidates
 
-Upon branch cut, cut and test the first release candidate:
+Upon branch cut, create and test the first release candidate:
 
 - [ ] Tag the first release candidate:
   ```
@@ -52,9 +51,9 @@ Upon branch cut, cut and test the first release candidate:
   - [ ] New Sourcegraph Kubernetes cluster:
     - Run the initializer on a new Sourcegraph Kubernetes cluster.
     - Run the regression test suite.
-- [ ] File any regressions as `release-blocker` issues.
+- [ ] File any regressions as `release-blocker` issues and assign the appropriate teams.
 
-Revert or disable features that may cause delays. As necessary, `git cherry-pick` bugfix (not feature!) commits from `main` into the release branch. Continue to cut new release candidates daily as necessary, until no more `release-blocker` issues remain:
+Revert or disable features that may cause delays. As necessary, `git cherry-pick` bugfix (not feature!) commits from `main` into the release branch. Continue to create new release candidates daily or as necessary, until no more `release-blocker` issues remain:
 
 - [ ] Cut the Nth release candidate:
   ```
@@ -63,7 +62,7 @@ Revert or disable features that may cause delays. As necessary, `git cherry-pick
 - [ ] Re-run the automated test suite against the new release candidate, file any regressions as
   `release-blocker` issues.
   - [ ] If necessary, manually test features or workflows affected by the cherry-pick.
-- [ ] Post a release status update to Slack - review all release-blocking issues, and ensure someone is resolving each. If there are no more release-blocking issues, proceed to the next section.
+- [ ] Post a release status update by running the command below. Ensure someone is resolving each release-blocking issue. If there are no more release-blocking issues, proceed to tag the final release in the next section.
   ```
   yarn run release release:status $MAJOR.$MINOR.0
   ``` 
