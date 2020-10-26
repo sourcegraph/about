@@ -1,12 +1,15 @@
+import * as francois from '../../../static/case-studies/francois-jehl-criteo.jpg'
+import * as loic from '../../../static/case-studies/loic-teikiteetini-vaysse-criteo.jpg'
 import * as React from 'react'
 import {
     CaseStudyPage,
     CaseStudyRequestDemoForm,
-    InContentBlockquote
+    InContentBlockquote,
+    InContentImage
 } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
-import * as loic from '../../../static/case-studies/loic-teikiteetini-vaysse-criteo.jpg'
+
 
 export default ((props: any) => (
     <Layout
@@ -22,27 +25,38 @@ export default ((props: any) => (
         <CaseStudyPage
             customer="Criteo"
             title="Criteo uses Sourcegraph universal code search to tackle Big Code"
-            logo="/external-logos/criteo-logo.svg"
+            logo="/external-logos/criteo-white-logo.svg"
             quote={{
                 quote:
                     'Sourcegraph pays for itself many times over—it’s a game changer.',
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
-                image: '/case-studies/francois-jehl-criteo.jpg',
             }}
         >
             <ContentSection color="white" className="col-md-6 pb-5">
                 <div className="container">
                     <p>Founded in France in 2005, Criteo partners with retailers to recommend products to potential customers through ad retargeting. The company has massive volumes of data stored in its on-premise servers, along with millions of lines of code that developers work on in both Paris and the U.S.</p>
                     <p>Criteo has a heterogeneous ecosystem with thousands of repositories. When working on a single repository, developers use their IDE for code search. But for teams that are cross-functional or work in multiple repositories, this small-scale search strategy isn’t sufficient and can be a major time sink.</p>
-                    <img
-                        src={loic}
-                        alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
-                        className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
-                        width="150px"
-                    />
+                    <div className="row justify-content-md-center pt-3">
+                        <div className="col-md-4">
+                            <InContentImage
+                                src={francois}
+                                alt="François Jehl, Senior Engineering Manager, Criteo"
+                                caption="François Jehl, Senior Engineering Manager, Criteo"
+                                className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
+                            />
+                        </div>
+                        <div className="col-md-4">
+                            <InContentImage
+                                src={loic}
+                                alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
+                                caption="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
+                                className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
+                            />
+                        </div>
+                    </div>
                     <InContentBlockquote
                         quote="Before Sourcegraph, we were struggling to search code in an accurate and timely manner. The legacy text-based search we relied on had security issues, and its performance was poor in terms of the quality of searches and response times."
-                        author="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
+                        author="Loic Teikiteetini-Vaysse"
                     />
                     <InContentBlockquote
                         quote="When looking for alternatives, the general consensus was ‘If you’re a giant like Google, you can simply build your own code search engine. If that’s not you, then buy Sourcegraph."
