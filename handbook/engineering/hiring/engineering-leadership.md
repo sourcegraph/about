@@ -30,7 +30,7 @@ Measure:
 
 Questions:
 
-- What is something your peers or manager have told you that you are good at?
+- What development feedback have you received from your peers and managers?
 - What is something you have struggled with as an engineering manager?
 - What are some things you have done in the last year to become a better engineering manager?
 
