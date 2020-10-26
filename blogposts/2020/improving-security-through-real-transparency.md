@@ -1,7 +1,7 @@
 ---
 title: "Improving security through real transparency"
 author: Chayim Kirshen
-publishDate: 2020-10-15
+publishDate: 2020-10-20
 tags: [blog]
 slug: improving-security-through-transparency
 heroImage: https://sourcegraphstatic.com/blog/transparent-security-tomorrow.png
