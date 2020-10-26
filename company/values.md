@@ -40,10 +40,6 @@ With agency comes responsibility; teammates are expected to take initiative and 
 
 This doesn't mean that you should make unilateral decisions. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one! We're a startup, and if we take the safe path, we will most likely fail.
 
-Fundamentally, agency isn't just good for the company, it's good for your career too. While it's easy to assume that getting better at your current responsibilities is how to get promoted and move up in your career, the real source of career growth is increasing impact. The way to have this impact is to take agency and make things happen. After all, responsibility is taken, not given. This is one of the reasons we don't have job titles at Sourcegraph. We think that career is measured by your impact, and how you take responsibility, not what prefix you add to your role.
-
-> "What I ultimately came to realize was that *the real measure of my career growth was in having an ever-increasing impact*." [Chris Pine](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
-
 ### High quality
 
 You are responsible for finding out what high-quality work looks like and delivering that high-quality work iteratively.
