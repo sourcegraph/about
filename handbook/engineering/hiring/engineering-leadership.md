@@ -30,8 +30,8 @@ Measure:
 
 Questions:
 
-- What development feedback have you received from your peers and managers?
-- What is something you have struggled with as an engineering manager?
+- What development feedback have you received from your peers and managers in the last year?
+- What is something you have struggled with as an engineering manager in the last year?
 - What are some things you have done in the last year to become a better engineering manager?
 
 ## Prioritization
