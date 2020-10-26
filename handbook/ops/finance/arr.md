@@ -23,7 +23,7 @@ Every month the finance team closes the books and reports the latest ARR to the 
 ### Final internal reports
 
 1. When the finance team member who is updating the tracker feels confident in the results, they should ask @dan and @gregg to review each change, as well as the aggregate metrics in a draft of the public message below, and provide a final approval.
-1. The finance team member who completed the process should post an update to the #finance channel containing the following. If the month being closed is a quarter-end, they should also cross-post this to the #general channel.
+1. The finance team member who completed the process should post an update to the #finance channel containing the following, as well as cross-post this to the #general channel.
 
 >**<month> close**
 >
