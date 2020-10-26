@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Fast Company",
+      "newsTitle": "I’m deaf, and this is what happens when I get on a Zoom call",
+      "newsDate": "October 26, 2020",
+      "newsLink": "https://www.fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call",
+      "newsImage": "/external-logos/fast-company-logo.png"
+    },
+    {
       "newsSource": "SD Times",
       "newsTitle": "Report: The emergence of Big Code comes with big problems",
       "newsDate": "October 23, 2020",
