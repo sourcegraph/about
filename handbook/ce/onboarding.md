@@ -9,6 +9,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
 - Get familiar with our systems and processes, including:
   - GitHub
   - [HubSpot](https://app.hubspot.com/contacts/2762526/deals/board/view/all/)
+    - Note: We have officially transitioned to Salesforce as our CRM, but HubSpot still has some historical context. Please get access to both.
   - Set up [email logging](https://about.sourcegraph.com/handbook/sales/records)
   - [JIRA Service Desk](https://sourcegraph.atlassian.net/jira/servicedesk/projects/SG/queues/custom/1)
   - [Looker](https://sourcegraph.looker.com/dashboards/94?Unique%20Server%20ID=&Site%20ID=&filter_config=%7B%22Unique%20Server%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:2%7D%5D,%22Site%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:3%7D%5D%7D)
@@ -21,14 +22,18 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
 - [Install Sourcegraph](https://docs.sourcegraph.com/admin/install/) using each of the three deployment options
   - Ask for any help needed along the way in the #dev-chat channel
   - Update our docs where necessary
-- Participate in (or be scheduled for) the following training sessions. Please ask your manager or People Ops to help you find the right training sessions to join or the right training videos to watch.
-  - Goals (@dan, 30 minutes)
-  - CE systems and processes (@dan, 1 hour)
-  - Product introduction (@christina, 1 hour)
+- Participate in (or watch the recording of) the following training sessions. Please ask your manager or People Ops to help you find the right training sessions to join if you cannot find the right training videos to watch.
+  - CE Goals
+  - CE systems and processes 
+  - Product introduction 
     - Optionally request access to [Figma](https://www.figma.com/) in the #product channel on Slack
-  - Sourcegraph demo (@dan, 30 minutes)
-  - Product deployment (@stephen, 30 minutes)
-  - Sourcegraph data (@ericbm, 30 minutes)
+  - Sourcegraph demo 
+  - Product deployment 
+  - Sourcegraph data 
+- Go through [Product](https://about.sourcegraph.com/handbook/product/onboarding) and [Engineering](https://about.sourcegraph.com/handbook/engineering/onboarding) onboarding, specifically to gain understanding of:
+  - How our product is architected, how it works together, etc. [Sourcegraph architecture](https://docs.sourcegraph.com/dev/background-information/architecture), and all the resources on that page, are a very helpful read-through (as well as a bookmark to come back to later).
+  - How product is developed here.
+  - Other ways other team members are onboarded.
 - Set up introductory calls with Distribution, Sales, Product, and Marketing team members
 - Read our [CE handbook pages](index.md)
   - [Support](support.md)
