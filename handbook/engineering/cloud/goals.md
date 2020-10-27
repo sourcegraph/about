@@ -29,26 +29,6 @@ Backend infrastructure goals are ad hoc as requests come up from customers or ot
 
 ## Roadmap
 
-<!-- Gantt chart syntax documentation: https://mermaid-js.github.io/mermaid/diagrams-and-syntax-and-examples/gantt.html -->
-
-<pre class="mermaid" data-rendered-width="150%" data-scroll-right="50%">
-gantt
-    title In progress work
-    dateFormat YYYY-MM-DD
-    axisFormat %b %d
-
-section Milestones
-    3.21 :active, release-3.21, 2020-09-21, 2020-10-20
-    3.22 :        release-3.22, 2020-10-21, 2020-11-20
-
-section Cloud
-    User added code is indexed and searchable                 :done,   2020-09-23, 2020-10-07
-    RFC 167 - Product license tiers                           :active, 2020-10-07, 14d
-    Syncing repos is more scalable                            :active, 2020-10-07, 14d
-    Metrics/monitoring in place                               :active, 2020-10-07, 14d
-    GitHub app to simplify access to repositories (spike)     :        2020-10-21, 2d
-    Webhooks to receive repo permissions and metadata (spike) :        2020-10-21, 2d
-
 1. ✅ User added code is indexed
 1. ✅ Users do not need to take any steps for a repository they add to be searchable
 1. 🔄 [RFC 167: Product license tiers](https://docs.google.com/document/d/1XozQ4JINJqirdaG-XqGtboT2-PlIXPyBn6EwV7Q3pWI/edit?ts=5f0811cf#heading=h.trqab8y0kufp)
