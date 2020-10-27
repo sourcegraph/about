@@ -82,7 +82,6 @@ See [cloud roadmap](../engineering/cloud/goals.md#roadmap)
 
 See [Code Intel roadmap](https://docs.google.com/document/d/1JPNelxg_8xwZKz8TT2BnpCccShOgxJrLubf2RNGye50/edit#) for more.
 
-
 ## Distribution
 
 See [Distribution roadmap](https://github.com/sourcegraph/about/pull/1104).

@@ -19,7 +19,7 @@
 1. ✅ The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
 1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
 1. 🔄 Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-1. Organization admins can manage membership.
+1. Organization admins can manage membership (wording WIP).
 1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
 1. Sourcegraph Cloud is Generally Available (GA).
 
@@ -45,7 +45,7 @@ Unplanned:
 
 - [Non-Git VCS](https://docs.google.com/document/d/1Y2xYbckAz5jlBePER_BarypeDfP3mjjX9bBOZm3ALqY/edit#heading=h.m60esa7uysvx)
 
-### Old notes:
+### Old notes
 
 - Connecting their first code host and adding their own public repos is intuitive and easy for new and existing users.
    - System activity and progress is easy to understand and doesn’t take too long.
