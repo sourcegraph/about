@@ -34,14 +34,14 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - How our product is architected, how it works together, etc. [Sourcegraph architecture](https://docs.sourcegraph.com/dev/background-information/architecture), and all the resources on that page, are a very helpful read-through (as well as a bookmark to come back to later).
   - How product is developed here.
   - Other ways other team members are onboarded.
-- Set up introductory calls with Distribution, Sales, Product, and Marketing team members
+- Set up introductory calls with each Engineering team manager (use https://about.sourcegraph.com/company/team to help you find who that would include), Sales, Product, and Marketing team members
 - Read our [CE handbook pages](index.md)
   - [Support](support.md)
 - Set up a Sourcegraph.com account and request access to become a site-admin in the #people-ops channel. Once you have access, familiarize yourself with the site-admin page (used to manage customer accounts, license keys, etc.).
 - Obtain access to the Sourcegraph Dropbox team folder. You can request this in the #people-ops Slack channel.
   - Get access to the "Customer contracts" folder as well.
 - Ask for a license to LinkedIn Sales Navigator tool in #sales channel
-- Read through [Architecture overview](https://docs.sourcegraph.com/dev/background-information/architecture) to understand how our application and system works. If you have any questions, reach out to @nicksnyder.
+- Read through [Architecture overview](https://docs.sourcegraph.com/dev/background-information/architecture) to understand how our application and system works. If you have any questions, reach out to @nicksnyder, and make sure to update/incorporate what you learned from that q&a here.
 
 ### General onboarding during weeks 1 and 2
 
