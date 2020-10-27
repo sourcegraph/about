@@ -90,7 +90,7 @@ code, my organization's code, or even all of open source code?
 
 ## Example: turning code checks into code search queries
 
-Earlier this year Sourcegraph introduced [structural search](blog/going-beyond-regular-expressions-with-structural-code-search/)
+Earlier this year Sourcegraph introduced [structural search](/blog/going-beyond-regular-expressions-with-structural-code-search/)
 to search over code syntax. Structural search uses [comby](https://comby.dev) to
 implement a basic building block in traditional code checkers: it interprets
 programs as concrete syntax trees, not just plaintext.
