@@ -5,23 +5,23 @@ This document contains the search team's current roadmap.
 1. 🔄 [Enterprise homepage](#1-enterprise-homepage)
 1. 🔄 [Search tour](#2-search-tour)
 1. 🔄 [Search expressions](#3-search-expressions)
-1. 🔄 Scaling indexed text search to 500k repositories
-1. 🔄 Streaming search
-1. Code monitoring (private code monitors, no sharing, emails + webhooks)
-1. Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
-1. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
-1. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
-1. Search language rules engine
-1. Saved searches without monitoring
-1. Search results redesign
-1. Diff/commit search performance
-1. Search input redesign
-1. Structural search performance
-1. As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed (better version contexts 2/2)
-1. Code monitoring (shareable)
-1. Semantic search: prototype validation
-1. External search result providers
-1. Semantic search: implementation
+1. 🔄 [Scaling indexed text search to 500k repositories](#4-scaling-indexed-text-search-to-500k-repositories)
+1. 🔄 [Streaming search](#5-streaming-search)
+1. [Code monitoring (private code monitors, no sharing, emails + webhooks)](#6-code-monitoring-version-1)
+1. [Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD](#7-performance-at-scale)
+1. [As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)](#8-search-expressions)
+1. [As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)](#9-search-expressions)
+1. [Search language rules engine](#10-search-language-rules-engine)
+1. [Saved searches without monitoring](#11-saved-searches-without-monitoring)
+1. [Search results redesign](#12-search-results-redesign)
+1. [Diff/commit search performance](#13-diffcommit-search-performance)
+1. [Search input redesign](#14-search-input-redesign)
+1. [Structural search performance](#15-structural-search-performance)
+1. [As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed (better version contexts 2/2)](#16-as-a-user-i-can-create-a-scope-of-code-i-want-to-search-across-as-a-list-of-repositories-branches-that-should-be-indexed-better-version-contexts-22)
+1. [Code monitoring (shareable)](#17-code-monitoring-version-2)
+1. [Semantic search: prototype validation](#18-semantic-search-prototype-validation)
+1. [External search result providers](#19-external-search-result-providers)
+1. [Semantic search: implementation](#20-semantic-search-implementation)
 
 
 
