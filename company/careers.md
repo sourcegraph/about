@@ -33,7 +33,7 @@ We're hiring! Check out our open positions:
 ### Marketing
 
 - [Director of Community](../handbook/marketing/roles/director_of_community.md)
-- [Director of Content](../handbook/marketing/roles/editor_in_chief.md)
+- [Director of Content Strategy](../handbook/marketing/roles/editor_in_chief.md)
 
 ### Operations, finance, and legal
 
