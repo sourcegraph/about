@@ -102,6 +102,18 @@ export const InContentBlockquote: React.FunctionComponent<{
     </blockquote>
 )
 
+export const InContentImage: React.FunctionComponent<{
+    src: string
+    alt: string
+    className?: string
+    caption?: string
+}> = ({ src, caption, alt, className }) => (
+    <p>
+        <img src={src} className={className} alt={alt} />
+        {caption && <footer className="blockquote-footer">{caption}</footer>}
+    </p>
+)
+
 export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     title?: string
     description?: string
