@@ -1,4 +1,4 @@
-# Goals
+# Cloud goals and priorities
 
 ## Guiding principles
 
@@ -10,26 +10,19 @@
 
 ## Goals
 
-### User configured public code on Sourcegraph Cloud
+### Private code on Sourcegraph Cloud
 
-**Problem:** Sourcegraph Cloud proactively indexes and refreshes only a fixed set of public repositories (e.g., top 100k public repositories on GitHub.com). Code outside of this set is lazily updated when a user visits that repository, and is not stored in our search index. This does not allow individual users to search over all the code that they might care about (e.g., as user might have one or more of their own repositories that are not in the top 100k on GitHub.com).
+**Problem:** Customers who want to use Sourcegraph with their private code must setup and run a Sourcegraph instance on their own compute infrastructure. There are customers who want to use Sourcegraph but don't want to have to deploy and operate their own Sourcegraph instance and associated compute infrastructure. These customers expect to be able to search over only the code they care about, and are not inundated with public or irrelevant code. To host private code on Sourcegraph Cloud, we need to not only ensure the security of our product (which is important for on-premise deployments too), but we also have to ensure the security of our Sourcegraph Cloud infrastructure.
 
 **Milestones:**
 
-1. The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
+1. ✅ The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
    - Code is indexed.
-1. Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
+1. 🔄 Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
    - Connecting their first code host and adding their own public repos is intuitive and easy for new and existing users.
    - System activity and progress is easy to understand and doesn’t take too long.
      - Repo syncing
      - Repo indexing
-
-### Private code on Sourcegraph Cloud
-
-**Problem:** Customers who want to use Sourcegraph with their private code must setup and run a Sourcegraph instance on their own compute infrastructure. There are customers who want to use Sourcegraph but don't want to have to deploy and operate their own Sourcegraph instance and associated compute infrastructure. To host private code on Sourcegraph Cloud, we need to not only ensure the security of our product (which is important for on-premise deployments too), but we also have to ensure the security of our Sourcegraph Cloud infrastructure.
-
-**Milestones:**
-
 1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
    - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
    - All private repository content are only decryptable by Sourcegraph services.
