@@ -6,12 +6,14 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
 
 ### CE-specific onboarding during weeks 1 and 2
 
-- Get familiar with our systems and processes, including:
-  - GitHub
-  - [HubSpot](https://app.hubspot.com/contacts/2762526/deals/board/view/all/)
+- Get familiar with our systems and processes (NOTE: Request access/licenses to these tools in #internal-it-tools):
+  - [GitHub](https://github.com/) (Provide GitHub username and request access to Sourcegraph repo)
+  - [HubSpot](https://app.hubspot.com/contacts/2762526/deals/board/view/all/) 
+  - [Salesforce](https://sourcegraph2020.my.salesforce.com/?ec=302&startURL=%2Fvisualforce%2Fsession%3Furl%3Dhttps%253A%252F%252Fsourcegraph2020.lightning.force.com%252Flightning%252Fpage%252Fhome)
   - Set up [email logging](https://about.sourcegraph.com/handbook/sales/records)
   - [JIRA Service Desk](https://sourcegraph.atlassian.net/jira/servicedesk/projects/SG/queues/custom/1)
   - [Looker](https://sourcegraph.looker.com/dashboards/94?Unique%20Server%20ID=&Site%20ID=&filter_config=%7B%22Unique%20Server%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:2%7D%5D,%22Site%20ID%22:%5B%7B%22type%22:%22%3D%22,%22values%22:%5B%7B%22constant%22:%22%22%7D,%7B%7D%5D,%22id%22:3%7D%5D%7D)
+  - [Krisp](https://krisp.ai/)
   - Familiarize yourself with the [Weekly CE Sync Notes](https://docs.google.com/document/d/1c40u7Bh2vPIAHcz8qS_qLOt310MfjrGeHN5-W45nh4U/edit) and format 
     - Updates to be provided in order of priority 
 - [Join as many customer calls as possible](../sales/onboarding/joining_customer_calls.md)
@@ -33,7 +35,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
 - Set up introductory calls with Distribution, Sales, Product, and Marketing team members
 - Read our [CE handbook pages](index.md)
   - [Support](support.md)
-- Set up a Sourcegraph.com account and request access to become a site-admin in the #internal-it-tools. Once you have access, familiarize yourself with the site-admin page (used to manage customer accounts, license keys, etc.).
+- Set up a Sourcegraph.com account and request access to become a site-admin in the #internal-it-tools Slack channel. Once you have access, familiarize yourself with the site-admin page (used to manage customer accounts, license keys, etc.).
 - Obtain access to the Sourcegraph Dropbox team folder. You can request this in the #internal-it-tools Slack channel.
   - Get access to the "Customer contracts" folder as well.
 - Ask for a license to LinkedIn Sales Navigator tool in #sales channel
