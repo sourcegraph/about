@@ -8,17 +8,21 @@ This document contains the search team's current roadmap.
 1. 🔄 [Scaling indexed text search to 500k repositories](#4-scaling-indexed-text-search-to-500k-repositories)
 1. 🔄 [Streaming search](#5-streaming-search)
 1. [Code monitoring (private code monitors, no sharing, emails + webhooks)](#6-code-monitoring-version-1)
-1. [Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD](#7-performance-at-scale)
-1. [As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)](#8-search-expressions)
-1. [As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)](#9-search-expressions)
+1. [Performance at scale](#7-performance-at-scale)
+follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
+1. [Consolidate repogroups + search scopes](#8-consolidate-repogroups-search-scopes)
+as a user, I can create a scope of code I want to search across as a list of repositories 
+1. [Better version contexts 1/2](#9-better-version-contexts-12)
+as a user, I can create a scope of code I want to search across as a list of repositories + branches
 1. [Search language rules engine](#10-search-language-rules-engine)
 1. [Saved searches without monitoring](#11-saved-searches-without-monitoring)
 1. [Search results redesign](#12-search-results-redesign)
 1. [Diff/commit search performance](#13-diffcommit-search-performance)
 1. [Search input redesign](#14-search-input-redesign)
 1. [Structural search performance](#15-structural-search-performance)
-1. [As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed (better version contexts 2/2)](#16-as-a-user-i-can-create-a-scope-of-code-i-want-to-search-across-as-a-list-of-repositories-branches-that-should-be-indexed-better-version-contexts-22)
-1. [Code monitoring (shareable)](#17-code-monitoring-version-2)
+1. [Better version contexts 2/2](#16-better-version-contexts-22) 
+as a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed
+1. [Code monitoring version 2](#17-code-monitoring-version-2)
 1. [Semantic search: prototype validation](#18-semantic-search-prototype-validation)
 1. [External search result providers](#19-external-search-result-providers)
 1. [Semantic search: implementation](#20-semantic-search-implementation)
@@ -71,13 +75,16 @@ This document contains the search team's current roadmap.
   - **Estimated start:** 2020-11-02
   - **Estimated effort:** 4 weeks
   
-#### 7. Performance at scale: follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
+#### 7. Performance at scale 
+Follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
 
-#### 8. As a user, I can create a scope of code I want to search across as a list of repositories (consolidate repogroups + search scopes)
+#### 8. Consolidate repogroups + search scopes
+As a user, I can create a scope of code I want to search across as a list of repositories
   - Consolidate the overlapping features for this experience - repogroups and search scope pages.
   - Scoping your search to multiple repositories is intuitive and easy ([issue](https://github.com/sourcegraph/sourcegraph/issues/10621))
 
-#### 9. As a user, I can create a scope of code I want to search across as a list of repositories + branches (better version contexts 1/2)
+#### 9. Better version contexts 1/2
+As a user, I can create a scope of code I want to search across as a list of repositories + branches
   - Creating version context scopes manually is time consuming. Improve this user experience ([issue](https://github.com/sourcegraph/sourcegraph/issues/11569))
   - ToDo: consolidate user requests for a better search experience with version contexts set
 
@@ -116,7 +123,8 @@ This document contains the search team's current roadmap.
   - Structural search is a good experience for larger-scale code bases and cloud users.
   - Structural search supports security use cases that require returning exhaustive search results, i.e., every result from the entire set of code they care about.
 
-#### 16. As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed (better version contexts 2/2)
+#### 16. Better version contexts 2/2
+As a user, I can create a scope of code I want to search across as a list of repositories + branches that should be indexed
   - Improve the speed for unindexed code (e.g. diffs, commits) in the version context scopes they want to search over.
 
 #### 17. Code monitoring version 2
