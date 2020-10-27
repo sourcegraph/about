@@ -17,32 +17,73 @@
 **Milestones:**
 
 1. ✅ The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-   - Code is indexed.
+1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
 1. 🔄 Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-   - Connecting their first code host and adding their own public repos is intuitive and easy for new and existing users.
+1. Organization admins can manage membership.
+1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
+1. Sourcegraph Cloud is Generally Available (GA).
+
+### Backend infrastructure
+
+Backend infrastructure goals are ad hoc as requests come up from customers or other teams. The Cloud team is responsible for scheduling and prioritizing these requests as they come up. See the [roadmap](../../product/roadmap.md#cloud) for planned items.
+
+## Roadmap
+
+<!-- Gantt chart syntax documentation: https://mermaid-js.github.io/mermaid/diagrams-and-syntax-and-examples/gantt.html -->
+
+<pre class="mermaid" data-rendered-width="150%" data-scroll-right="50%">
+gantt
+    title In progress work
+    dateFormat YYYY-MM-DD
+    axisFormat %b %d
+
+section Milestones
+    3.21 :active, release-3.21, 2020-09-21, 2020-10-20
+    3.22 :        release-3.22, 2020-10-21, 2020-11-20
+
+section Cloud
+    User added code is indexed and searchable                 :done,   2020-09-23, 2020-10-07
+    RFC 167 - Product license tiers                           :active, 2020-10-07, 14d
+    Syncing repos is more scalable                            :active, 2020-10-07, 14d
+    Metrics/monitoring in place                               :active, 2020-10-07, 14d
+    GitHub app to simplify access to repositories (spike)     :        2020-10-21, 2d
+    Webhooks to receive repo permissions and metadata (spike) :        2020-10-21, 2d
+
+1. ✅ User added code is indexed
+1. ✅ Users do not need to take any steps for a repository they add to be searchable
+1. 🔄 [RFC 167: Product license tiers](https://docs.google.com/document/d/1XozQ4JINJqirdaG-XqGtboT2-PlIXPyBn6EwV7Q3pWI/edit?ts=5f0811cf#heading=h.trqab8y0kufp)
+1. 🔄 Syncing repos is more scalable
+1. 🔄 Metrics/monitoring in place to ensure a good experience
+1. GitHub app to have users sign in with GitHub and select the repos/organizations that have access.
+1. Use webhooks to receive updates on anything that is relevant to this user’s connection to GitHub
+1. Equivalent things to GitLab and Bitbucket Cloud
+1. User understands state and progress of their configured repositories and associated metadata
+1. [UX TBD: New sign up/auth flow]
+1. [UX TBD: Communicate state]
+
+Unplanned:
+
+- [Non-Git VCS](https://docs.google.com/document/d/1Y2xYbckAz5jlBePER_BarypeDfP3mjjX9bBOZm3ALqY/edit#heading=h.m60esa7uysvx)
+
+### Old notes:
+
+- Connecting their first code host and adding their own public repos is intuitive and easy for new and existing users.
    - System activity and progress is easy to understand and doesn’t take too long.
      - Repo syncing
      - Repo indexing
-1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
-   - No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
+- No plaintext tokens or secrets anywhere (including gitserver .git/config remotes).
    - All private repository content are only decryptable by Sourcegraph services.
      - Gitserver.
      - Searcher and code intel caches.
      - Any other service that needs access to repository contents needs to be able to decrypt what it needs on the fly.
    - Searching the user's or organization's private code versus searching all Cloud code is intuitive.
    - **DEPENDENCY:** We first need to finish [user configured public code on Sourcegraph Cloud](#user-configured-public-code-on-sourcegraph-cloud).
-1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
-   - Authorization from code hosts is enforced (e.g., organizations, teams).
+- Authorization from code hosts is enforced (e.g., organizations, teams).
    - Repository visibility and permissions on Sourcegraph is intuitive.
    - Adding private repositories is part of the same flows as adding public repositories.
    - **DEPENDENCY**: We need to have [visibility into our attack surface](../security/index.md#visibility-into-sourcegraph-clouds-attack-surface).
-1. Sourcegraph Cloud is Generally Available (GA).
-   - Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
+- Abuse protection: API rate limiting, DDoS mitigation, limiting user accounts.
    - Scalable syncing of permissions, repos, changesets.
    - High availability, SLOs, etc.
    - Billing and subscriptions.
    - [Confidence in our security model](../security/index.md#confidence-in-our-security-model).
-
-### Backend infrastructure
-
-Backend infrastructure goals are ad hoc as requests come up from customers or other teams. The Cloud team is responsible for scheduling and prioritizing these requests as they come up. See the [roadmap](../../product/roadmap.md#cloud) for planned items.
