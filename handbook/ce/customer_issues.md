@@ -11,7 +11,7 @@ We maintain two issue trackers:
 
 Support tickets should be translated to GitHub issues when they require an Engineering team to be involved. See the [CE to engineering issue handover documentation](ce_to_eng_handover.md) for more.
 
-File new customer issues in the [private issue tracker](https://github.com/sourcegraph/customer/issues/new), providing all information required for troubleshooting (such as screenshots, logs, or conversation transcripts) and tagging it with `customer/$name`. Link to the appropriate Jira Service Desk ticket and link to the reporting company's profile in [HubSpot](#find-the-unique-company-url).
+File new customer issues in the [private customer issue tracker](https://github.com/sourcegraph/customer/issues/new), providing all information required for troubleshooting (such as screenshots, logs, or conversation transcripts) and labelling it with `customer/$name`. Link to the appropriate Jira Service Desk ticket and link to the reporting company's profile in [HubSpot](#find-the-unique-company-url).
 
 If it turns our to be a general issue affecting multiple deployments, create an issue in the [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues/new/choose). The issue must not include any private information and it should link to the related customer issues in its description.
 
