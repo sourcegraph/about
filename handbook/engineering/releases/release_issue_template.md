@@ -103,7 +103,10 @@ Once there are no more release-blocking issues (as reported by the `release:stat
         ```
   - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
     - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
-- [ ] Ask the product team to merge the blog post ([example](https://github.com/sourcegraph/about/pull/83)).
+- [ ] Ask the product team to merge the blog post ([example](https://github.com/sourcegraph/about/pull/83)). Add the pull request to the release campaign:
+  ```sh
+  yarn run release release:add-to-campaign $MAJOR.$MINOR.0 sourcegraph/about <pr-number>
+  ```
 
 ### Post-release
 
