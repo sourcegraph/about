@@ -28,7 +28,6 @@ We're hiring! Check out our open positions:
 ### Customer engineering
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
-- [Head of Customer Support](../handbook/ce/roles/head_of_customer_support.md)
 
 ### Marketing
 
