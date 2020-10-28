@@ -17,7 +17,7 @@
 **Milestones:**
 
 1. ✅ The Sourcegraph organization and team members can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
-1. The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
+1. 🔄 The Sourcegraph organization and team members can add private code to Sourcegraph Cloud.
 1. 🔄 Any user can add public code from GitHub.com, GitLab.com, and Bitbucket Cloud.
 1. Organization admins can manage membership (wording WIP).
 1. Any user or organization can add private code to Sourcegraph Cloud for free before it's GA.
