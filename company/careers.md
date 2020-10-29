@@ -8,7 +8,6 @@ We're hiring! Check out our open positions:
 
 ### Engineering
 
-- [Engineering Manager - Code Intelligence](../handbook/engineering/hiring/engineering-manager-code-intelligence.md)
 - [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
