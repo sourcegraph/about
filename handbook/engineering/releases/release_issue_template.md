@@ -16,6 +16,11 @@ Arguments:
 **Note:** All `yarn run release ...` commands should be run from folder `dev/release`.
 **Note:** All `yarn run test ...` commands should be run from folder `web`.
 
+## Setup
+
+- [ ] Ensure release configuration in `dev/release/config.json` is up to date with the parameters for the current release.
+- [ ] Ensure the latest version of the release tooling has been built before each step using `yarn run build` in `dev/release`.
+
 ## $FIVE_WORKING_DAYS_BEFORE_RELEASE (5 work days before release): Prep for branch cut
 
 - [ ] Post a release status update to Slack - review all release-blocking issues, and ensure someone is resolving each.
