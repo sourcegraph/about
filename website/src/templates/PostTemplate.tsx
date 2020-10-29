@@ -1,5 +1,6 @@
 import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import { POST_TYPE_TO_COMPONENT, postType, BLOG_TYPE_TO_INFO, urlToPost, Post } from '../components/blog/postTypes'
 import { BlogHeader } from '../components/blog/BlogHeader'
@@ -11,6 +12,7 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
     const image = 'https://about.sourcegraph.com/sourcegraph-mark.png'
+    const canonical = post.frontmatter.canonical
     const meta = {
         title,
         image,
@@ -22,6 +24,9 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
 
     return (
         <Layout location={location} meta={meta} className="bg-light navbar-light">
+            <Helmet>
+                {canonical ? (<link rel="canonical" href={canonical} />) : ('')}
+            </Helmet>
             <div className="">
                 <div className="container-lg">
                     <BlogHeader {...blogInfo} />
@@ -58,6 +63,7 @@ export const pageQuery = graphql`
                 tags
                 publishDate(formatString: "MMMM D, YYYY")
                 slug
+                canonical
                 changelogItems {
                     url
                     category

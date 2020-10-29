@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 import { CaseStudyRequestDemoForm } from '../components/content/CaseStudyPage'
 import { ContentPage } from '../components/content/ContentPage'
 import { ContentSection } from '../components/content/ContentSection'
@@ -71,6 +72,9 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
 
         return (
             <Layout location={this.props.location} meta={meta} className="navbar-dark bg-black">
+                <Helmet>
+                    {canonical ? (<link rel="canonical" href={canonical} />) : ('')}
+                </Helmet>
                 <ContentPage
                     title="The Podcast🎙"
                     titleClassName="podcast__banner text-white"

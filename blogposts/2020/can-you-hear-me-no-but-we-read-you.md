@@ -2,12 +2,15 @@
 title: "Can you hear me? No, but we read you—an experiment with video calls"
 author: Quinn Keast
 authorUrl: https://twitter.com/quinnkeast
-publishDate: 2020-10-15
+publishDate: 2020-10-29
 tags: [blog]
 slug: can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls
 heroImage: /blog/silent-team-call.jpg
 published: true
+canonical: https://fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call
 ---
+
+_This article originally appeared on [Fast Company](https://fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call)._
 
 At Sourcegraph, we’re all-remote. That means we write a lot—in emails, Google Docs, Github, and Slack. We work hard to cultivate a written-first culture.
 
