@@ -14,7 +14,7 @@ Sourcegraph search is:
 
 ## Search goals and priorities
 
-The [search roadmap](roadmap.md) is driven by the team's [goals](goals.md).
+See [goals and priorities](goals.md).
 
 ## Iterations
 
