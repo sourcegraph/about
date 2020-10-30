@@ -1,6 +1,6 @@
 # Web team
 
-<div style="text-align: center; margin-bottom: 1.5rem">
+<div style="text-align: left; margin-bottom: 1.5rem">
   <img src="https://storage.googleapis.com/sourcegraph-assets/web-team-logo.svg" width="40%" alt="Sourcegraph Web Team Logo">
 </div>
 
