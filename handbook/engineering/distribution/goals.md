@@ -15,7 +15,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
   - We are able to rollback to or redeploy a previous version.
   - Stretch: We can correlate deployments to Grafana metrics and Stackdriver logs.
   - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployment.
-  - TBD: We can trigger a deployment via a `/` command in Slack.
+  - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
 - **Milestones**: TBD
 
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single command
