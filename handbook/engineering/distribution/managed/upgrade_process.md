@@ -49,7 +49,12 @@ export OLD_DEPLOYMENT=red # the current deployment
 export NEW_DEPLOYMENT=$([ "$OLD_DEPLOYMENT" = "red" ] && echo "black" || echo "red")
 ```
 
-For the most 
+You can replace the `DEPLOYMENT` variable used in [operations](./operations.md), following the steps in this guide to determine which value `DEPLOYMENT` should be, like so:
+
+```sh
+export DEPLOYMENT=$OLD_DEPLOYMENT
+# ... commands
+```
 
 ## 1) Add a banner indicating scheduled maintenance is in progress
 
@@ -151,7 +156,7 @@ cd $CUSTOMER
 VERSION=$VERSION ../update-docker-compose.sh $NEW_DEPLOYMENT/
 # Address any merge conflicts in $NEW_DEPLOYMENT/ if needed.
 git add $NEW_DEPLOYMENT/
-git commit -m "$CUSTOMER: upgrade to to $VERSION"
+git commit -m "$CUSTOMER: upgrade to $VERSION"
 ```
 
 Then `terraform apply`.
