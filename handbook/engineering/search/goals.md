@@ -2,12 +2,14 @@
 
 ## Goals
 
+Goals help us achieve our [vision](index.md#vision) for search.
+
 ### Scalable
 
 - **Scale indexed search to 500k repositories**
    - **Problem:** We have customers who need Sourcegraph to scale to 500k repositories. Some parts of Sourcegraph don't work well at that scale.
    - **Outcome:** Sourcegraph can search 500k repositories in less than 300ms. This is on par with [grep.app](https://grep.app).
-   - **In progress work:** [Scaling indexed text search to 500k repositories](#4-scaling-indexed-text-search-to-500k-repositories)
+   - **Planned work:** [Scaling indexed text search to 500k repositories](#4-scaling-indexed-text-search-to-500k-repositories)
 
 ### Fast
 
@@ -23,7 +25,7 @@
 - **Extend Search Query Language**
   - **Problem:** It is imperative that users can find and filter the code, files, repositories, and commits they care about in extremely large codebases.
   - **Outcomes:** Users can express relations on code, files, repositories, and commits in search queries to more effectively filter the data they need. Sourcegraph is the exclusive industrial-strength search solution that provides these capabilities.
-  - **In progress work:** [Search language rules engine](#10-search-language-rules-engine)
+  - **Planned work:** [Search language rules engine](#10-search-language-rules-engine)
 
 ### Easy to use
 
@@ -43,20 +45,21 @@
 - **Code monitoring** ([RFC 227](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit))
   - **Problem:** Users want to be notified about important things going on in their code.
   - **Outcome:** Notifications create a shared understanding and raise awareness of what’s going on in the code.
-  - **Planned work:** [Code monitoring (private code monitors, no sharing, emails + webhooks)](#6-code-monitoring-version-1)
+  - **Planned work:** [Code monitoring version 1](#6-code-monitoring-version-1)
 
 ---
 
 ## Roadmap
 
-This document contains the search team's current roadmap.
+The search roadmap is driven by the team's [goals](#goals).
+
 
 1. 🔄 [Enterprise homepage](#1-enterprise-homepage)
 1. 🔄 [Search tour](#2-search-tour)
 1. 🔄 [Search expressions](#3-search-expressions)
 1. 🔄 [Scaling indexed text search to 500k repositories](#4-scaling-indexed-text-search-to-500k-repositories)
 1. 🔄 [Streaming search](#5-streaming-search)
-1. 🔄 [Code monitoring (private code monitors, no sharing, emails + webhooks)](#6-code-monitoring-version-1)
+1. [Code monitoring (private code monitors, no sharing, emails + webhooks)](#6-code-monitoring-version-1)
 1. [Performance at scale](#7-performance-at-scale)
 follow-up to “scale indexed text search to 500k repositories”, focus and scope TBD
 1. [Consolidate repogroups + search scopes](#8-consolidate-repogroups-search-scopes)
