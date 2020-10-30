@@ -13,6 +13,7 @@
 - [9) Switch the load balancer target](#9-switch-the-load-balancer-target)
 - [10) Remove the banner indicating scheduled maintenance is in progress](#10-remove-the-banner-indicating-scheduled-maintenance-is-in-progress)
 - [11) Take down the old deployment](#11-take-down-the-old-deployment)
+- [12) Open a pull request to commit your changes](#12-open-a-pull-request-to-commit-your-changes)
 
 ## Walkthrough video
 
@@ -34,6 +35,12 @@ Many of the following commands in this guide, as well as the commands [operation
 ```sh
 export CUSTOMER=<customer_or_instance_name>
 export VERSION=v<sourcegraph_version>
+```
+
+Start a branch for your upgrade in [`deploy-sourcegraph-managed`](https://github.com/sourcegraph/deploy-sourcegraph-managed):
+
+```sh
+git checkout -b $CUSTOMER/upgrade-to-$VERSION
 ```
 
 Figure out [what instance is currently live](./operations.md#redblack-deployment-model) for the managed instance you are upgrading - it should be either `red` or `black`:
@@ -223,3 +230,11 @@ rm -rf $OLD_DEPLOYMENT/
 git add .
 git commit -m "$CUSTOMER: remove $OLD_DEPLOYMENT deployment"
 ```
+
+## 12) Open a pull request to commit your changes
+
+```sh
+git push origin HEAD
+```
+
+And click the provided link to open a pull request in [`deploy-sourcegraph-managed`](https://github.com/sourcegraph/deploy-sourcegraph-managed).
