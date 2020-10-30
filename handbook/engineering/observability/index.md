@@ -17,5 +17,8 @@ Observability includes:
 - [Monitoring developer guide](monitoring.md)
   - [The five pillars of monitoring](monitoring_pillars.md)
   - [Monitoring architecture](./monitoring_architecture.md)
+- [Searching by hand](query.md)
+- [Cloudflare logging](cloudflare.md)
 - Distributed tracing developer guide (coming soon)
 - Logging developer guide (coming soon)
+
