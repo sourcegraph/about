@@ -220,5 +220,6 @@ Also remove the deploy config for that deployment as it is no longer used:
 ```sh
 cd $CUSTOMER
 rm -rf $OLD_DEPLOYMENT/
+git add .
 git commit -m "$CUSTOMER: remove $OLD_DEPLOYMENT deployment"
 ```
