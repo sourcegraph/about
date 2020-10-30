@@ -9,9 +9,13 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 - **Owner**: TBD
 - **Status**: Not started. Unknown amount of work.
 - **Outcomes**:
-  - It is simple to identify when a commit has been deployed to an environment
-  - We can trigger a deployment via a `/` command in Slack
-  - Stretch: Branches can trigger a parallel `sourcegraph-frontend` deployment
+  - It is simple to identify when a commit has been deployed to an environment.
+  - Developers are notified when their PR is deployed to an environment.
+  - Deployments display information about the artifact they are deploying.
+  - We are able to rollback to or redeploy a previous version.
+  - Stretch: We can correlate deployments to Grafana metrics and Stackdriver logs.
+  - Stretch: Branches can trigger a parallel `sourcegraph-frontend` deployment.
+  - TBD: We can trigger a deployment via a `/` command in Slack.
 - **Milestones**: TBD
 
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single command
