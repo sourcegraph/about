@@ -14,7 +14,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
   - Deployments display information about the artifact they are deploying.
   - We are able to rollback to or redeploy a previous version.
   - Stretch: We can correlate deployments to Grafana metrics and Stackdriver logs.
-  - Stretch: Branches can trigger a parallel `sourcegraph-frontend` deployment.
+  - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployment.
   - TBD: We can trigger a deployment via a `/` command in Slack.
 - **Milestones**: TBD
 
