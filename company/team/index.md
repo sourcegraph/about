@@ -432,6 +432,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [jonah@sourcegraph.com](mailto:jonah@sourcegraph.com), [justdueck](https://github.com/justdueck), [LinkedIn](https://www.linkedin.com/in/jonah-dueck/)
 -  Jonah has been working within the IT space since high school. He started out by founding and running a small IT company in northern Nevada while still in high school and after graduating, moved on to working for another small company in Northern California. Most recently, he worked in internal IT operations and technical program management at Google for about 2 years. Outside of work, he enjoys rock climbing, playing music (guitar and drums), riding his motorcycle and working on his old VW bus (there's always something breaking on it).
 
+## Artem Ruts (he/him)
+
+- Software Engineer
+- Pittsburgh, PA, USA 🇺🇸
+- [artem@sourcegraph.com](mailto:artem@sourcegraph.com), [artemruts](https://github.com/artemruts), [LinkedIn](https://www.linkedin.com/in/artemruts/)
+- Name pronunciation: /[arˈtʲɵm ruts](http://ipa-reader.xyz/?text=ar%CB%88t%CA%B2%C9%B5m%20ruts)/
+- Artem is a Software Engineer from Belarus with a Master’s in Computer Science. Before teaming up with Sourcegraph, Artem dazzled the IT crowd at Wayfair and, prior to that, Thomson Reuters. Avid believers in lifelong learning, Artem and his awesome wife currently enjoy dabbling in blocks, balls, and trucks with their infant daughter. In his rare and fleeting free time, you might be able to catch him rollerblading (though you’d have to be awfully fast) or studying foreign languages.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)

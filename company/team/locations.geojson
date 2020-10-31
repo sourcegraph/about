@@ -351,6 +351,19 @@
           47.67278567576541
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Artem Ruts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.99589,
+          40.44062
+        ]
+      }
     }
   ]
 }
