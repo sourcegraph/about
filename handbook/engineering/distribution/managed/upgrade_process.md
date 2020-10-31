@@ -62,7 +62,7 @@ You can replace the `DEPLOYMENT` variable used in [operations](./operations.md),
 
 ```sh
 export DEPLOYMENT=$OLD_DEPLOYMENT
-# ... commands
+# ... commands that target specific instances like `default-$DEPLOYMENT-instance`
 ```
 
 ## 1) Add a banner indicating scheduled maintenance is in progress
