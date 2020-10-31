@@ -38,13 +38,15 @@ This document contains the goals and work log for the search team's [2-week iter
     - SMTP is tracked in pings [#14115](https://github.com/sourcegraph/sourcegraph/issues/14115).
 - **Work log:**
     - 2020-10-23: Finished v1 of GraphQL schema for code monitoring (Google drive > Sourcegraph shared > Search > Code Monitor GraphQL Design). Next step: Review together with Juliana.
+    - 2020-10-30: Juliana and I agreed on the first version of the GraphQL schema. I have put up a PR that covers 80% of it. It will probably take another 2 days to finish the stub mutations and the rest of the schema. The stubs will not be connected to the DB yet.
 
 ### Scale indexed search to 500k repositories
 - **Owner(s):** Stefan, Keegan
 - **Outcomes:**
     - We have a similar performance for simple regex searches and their literal equivalents (EG `config overall`) on indexed repositories.
 - **Work log:**
-    - 2020-10-23: Created a patch for google/zoekt with performance improvements for searches such as `(field)(?-s:.)*?(bar)`. Depending on the relation between the search terms (how frequent they are and how frequently they appear on the same line) we see reduced latencies between 86% (best case) and -3.5% (worst case). This change is motivated by https://github.com/sourcegraph/sourcegraph/issues/14351.
+    - 2020-10-23: Created a patch for google/zoekt with performance improvements for searches s uch as `(field)(?-s:.)*?(bar)`. Depending on the relation between the search terms (how frequent they are and how frequently they appear on the same line) we see reduced latencies between 86% (best case) and -3.5% (worst case). This change is motivated by https://github.com/sourcegraph/sourcegraph/issues/14351.
+    - 2020-10-30: I worked extensively on the patch this week. We probably still have to iron out some kinks, but I feel confident that we are converging on a good solution.
 
 ### Streaming search
 
@@ -55,7 +57,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - API: statistics for designs.
     - Backend: true streaming for text search with stats.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2020-10-30: Basic integration tests have been added for streaming search, including mocking the server sent events. [#15122](https://github.com/sourcegraph/sourcegraph/pull/15122)
 
 ### Search Tour
 - **Owner(s):** @farhan
@@ -64,7 +66,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Search tour is re-enabled by default for enterprise customers.
     - Search tour usage is tracked in pings [#14781](https://github.com/sourcegraph/sourcegraph/issues/14781).
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2020-10-30: [#14783](https://github.com/sourcegraph/sourcegraph/issues/14783) is fixed. PRs are open to get search tour usage in pings; awaiting review from the BizOps team, who are also working on cleaning up existing pings before merging PRs that add more data to pings. [#15113](https://github.com/sourcegraph/sourcegraph/pull/15113), [#63](https://github.com/sourcegraph/analytics/pull/63).
 
 ### Improve tracking of search onboarding on enterprise instances
 - **Owner(s):** @farhan
@@ -72,7 +74,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Total number of unique searchers is tracked in pings [#14575](https://github.com/sourcegraph/sourcegraph/issues/14575).
     - Weekly retention is tracked in pings [#13636](https://github.com/sourcegraph/sourcegraph/issues/13636).
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2020-10-30: [#14575](https://github.com/sourcegraph/sourcegraph/issues/14575) was closed due to the data already existing. PRs are open to add weekly retention to pings. [#15199](https://github.com/sourcegraph/sourcegraph/pull/15199), [#65](https://github.com/sourcegraph/analytics/pull/65)
 
 ## 2020-10-5 to 2020-10-16
 
