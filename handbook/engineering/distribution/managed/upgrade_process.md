@@ -1,5 +1,7 @@
 # Upgrading a managed instance
 
+Managed instances configuration is tracked in [`deploy-sourcegraph-managed-instances`](https://github.com/sourcegraph/deploy-sourcegraph-managed). For basic operations like accessing an instance for these steps, see [managed instances operations](operations.md).
+
 - [Walkthrough video](#walkthrough-video)
 - [0) Setup](#0-setup)
 - [1) Add a banner indicating scheduled maintenance is in progress](#1-add-a-banner-indicating-scheduled-maintenance-is-in-progress)
@@ -30,7 +32,7 @@ These videos reference some customer names, and as such can only be shared with 
 
 Managed instances configuration is tracked in [`deploy-sourcegraph-managed`](https://github.com/sourcegraph/deploy-sourcegraph-managed) - make sure you have the latest revision of this repository checked out. For basic operations like accessing an instance for these steps, see [managed instances operations](operations.md).
 
-Many of the following commands in this guide, as well as the commands [operations](./operations.md), use variables. You can replace variables with the correct values by hand, or export the appropriate values for the upgrade:
+Many of the following commands in this guide, as well as the commands [operations](./operations.md), use environment variables. Export the appropriate values for the upgrade so you don't lose track:
 
 ```sh
 export CUSTOMER=<customer_or_instance_name>
@@ -49,7 +51,7 @@ Figure out [what instance is currently live](./operations.md#redblack-deployment
 gcloud compute instances list --project=sourcegraph-managed-$CUSTOMER
 ```
 
-Set up the following values (or replace them as you go):
+Export the following values in your shell:
 
 ```sh
 export OLD_DEPLOYMENT=red # the current deployment
@@ -116,7 +118,7 @@ Make sure the version (`3-17-2`) describes the current version of the instance, 
 
 ## 4) Initialize the new production deployment
 
-Copy the previous deployment's Docker Compose configuration:
+Copy the old deployment's Docker Compose configuration:
 
 ```sh
 cd $CUSTOMER
@@ -125,7 +127,7 @@ git add $NEW_DEPLOYMENT/
 git commit -m "$CUSTOMER: cp -R $OLD_DEPLOYMENT/ $NEW_DEPLOYMENT/"
 ```
 
-Initialize the `NEW_DEPLOYMENT` production deployment using the snapshot created in the previous step, by editing `$CUSTOMER/terraform.tfvars` with something like:
+Initialize the new production deployment (`NEW_DEPLOYMENT`) using the snapshot created in the previous step, by editing `$CUSTOMER/terraform.tfvars` with something like:
 
 ```diff
  load_balancer_target = "red"
@@ -188,7 +190,7 @@ Take down the new `$NEW_DEPLOYMENT` deployment, for example:
 
 ## 8) Confirm instance health
 
-[Access Grafana](operations.md#port-forwarding-direct-access-to-caddy-jaeger-and-grafana) and confirm the instance is healthy by verifying no critical alerts are firing.
+[Access Grafana](operations.md#port-forwarding-direct-access-to-caddy-jaeger-and-grafana) and confirm the instance is healthy by verifying no critical alerts are firing, and there has been no large increase in warning alerts.
 
 ## 9) Switch the load balancer target
 
@@ -238,3 +240,5 @@ git push origin HEAD
 ```
 
 And click the provided link to open a pull request in [`deploy-sourcegraph-managed`](https://github.com/sourcegraph/deploy-sourcegraph-managed).
+
+**IMPORTANT: DO NOT FORGET TO GET YOUR PR APPROVED AND MERGED**, if you forget then the next person upgrading the instance will have a very bad time.
