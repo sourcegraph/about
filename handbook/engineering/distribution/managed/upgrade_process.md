@@ -58,7 +58,7 @@ export OLD_DEPLOYMENT=red # the current deployment
 export NEW_DEPLOYMENT=$([ "$OLD_DEPLOYMENT" = "red" ] && echo "black" || echo "red")
 ```
 
-You can replace the `DEPLOYMENT` variable used in [operations](./operations.md), following the steps in this guide to determine which value `DEPLOYMENT` should be, like so:
+You can replace the `DEPLOYMENT` variable used in the examples in [operations](./operations.md) (using this guide to determine the appropriate value) like so:
 
 ```sh
 export DEPLOYMENT=$OLD_DEPLOYMENT
