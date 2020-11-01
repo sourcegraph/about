@@ -7074,14 +7074,7 @@ gatsby-plugin-typescript@^2.4.21:
     "@babel/runtime" "^7.11.2"
     babel-plugin-remove-graphql-queries "^2.9.20"
 
-gatsby-plugin-utils@^0.2.27:
-  version "0.2.27"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.27.tgz#913cfc42065dbf98080f031ce84bc2b2ecedf50b"
-  integrity sha512-DqYNn9ufyNRapIi68kmPYKQgiwOQiY465ZzmCZMqjL2C0iHRzOhY219COFD2p8bZ/zghj7Cf6LKB2FVehgVJ1g==
-  dependencies:
-    joi "^17.2.1"
-
-gatsby-plugin-utils@^0.2.37:
+gatsby-plugin-utils@^0.2.27, gatsby-plugin-utils@^0.2.37:
   version "0.2.37"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.37.tgz#e964009b39da6da535a5dfd919fca4734143cb0a"
   integrity sha512-QV4D8uZnmndjnNd8DXWhLeVNHNgqjv4Yt7PU8vq6kXFVqxhF7E7qbVpE26wVFvR38UAwsx25vF02NIwl/2sJPg==
@@ -12854,10 +12847,10 @@ react-router@5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-share@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/react-share/-/react-share-4.3.0.tgz#9455436a917c431ec96fbfb90359e595148a9e15"
-  integrity sha512-o22ySANU2l9Ih/ICyC+a6KoWxQ0dKNTIdfm3k3dCKj+16zfYgafHfiPqPYSkGJz1DeFcNJuU5FsgpWvqR1hdCA==
+react-share@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-share/-/react-share-4.3.1.tgz#2eac80bc5e3f1c6d83c7315342db1fd2f21009d3"
+  integrity sha512-ikh0y8NKxhU7dQBXh1Jccd1ANLb9WNYaSonln33yLyNYo2HTBRp9D6HkTsFlgX/2J9GPsGLqhzzpDNiVKx3WVA==
   dependencies:
     classnames "^2.2.5"
     jsonp "^0.2.1"
