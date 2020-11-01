@@ -1818,17 +1818,17 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@sourcegraph/eslint-config@^0.20.15":
-  version "0.20.15"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.20.15.tgz#fc4741b542d03b45cb4d9b9125d1ed9f5db19c36"
-  integrity sha512-aRcPhPCd1VHxc5dwawTs+rbvP1UncMwIQ1JhZOZwf43RJHKjyxPEkeGch+Hs952mmuGZ2At07SrZm2CNPwQ8yQ==
+"@sourcegraph/eslint-config@^0.20.16":
+  version "0.20.16"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.20.16.tgz#78ebb5ec3569ac886c8533651e01c798e8086715"
+  integrity sha512-kBgquxOK4rqyXtMD8FMjnh1Et0pUMF1Aea3iYh4k2FQPy2P46ig+UKz+XzRJFai7GHrKhCLkiCCJuWRCukf2dw==
   dependencies:
     "@sourcegraph/prettierrc" "^3.0.3"
     "@typescript-eslint/eslint-plugin" "^4.5.0"
     "@typescript-eslint/parser" "^4.5.0"
     eslint-config-prettier "^6.15.0"
     eslint-plugin-ban "^1.4.0"
-    eslint-plugin-etc "^0.0.3-beta.48"
+    eslint-plugin-etc "^1.1.5"
     eslint-plugin-import "^2.22.1"
     eslint-plugin-jsdoc "^30.7.6"
     eslint-plugin-react "^7.21.4"
@@ -5801,10 +5801,10 @@ eslint-plugin-ban@^1.4.0:
   dependencies:
     requireindex "~1.2.0"
 
-eslint-plugin-etc@^0.0.3-beta.48:
-  version "0.0.3-beta.49"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-etc/-/eslint-plugin-etc-0.0.3-beta.49.tgz#2f4c83faf5cf5957e540514a007e0178af3269aa"
-  integrity sha512-cOCF6fJOlrqH3R9hs3mnqASGcDv93mnTJ1wa1Ep7SFJvjP+8+OiyaFL5bVbNyxUBuKbPjKHM7yAnC8b6KtX3sg==
+eslint-plugin-etc@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-etc/-/eslint-plugin-etc-1.1.5.tgz#29102203ed4475ca17d2230ccb1236a9148443c0"
+  integrity sha512-3xL62PJiDEPSy1XJGFOViT+pTnfzIe18LYZEWcShBjvf/MMGZBo+hbtb0gJ+u/3UCNkW+cx7+XLpfcEp3UzYcQ==
   dependencies:
     "@phenomnomnominal/tsquery" "^4.0.0"
     "@typescript-eslint/experimental-utils" "^4.0.0"
