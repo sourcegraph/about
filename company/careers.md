@@ -42,6 +42,8 @@ We're hiring! Check out our open positions:
 ### People Ops
 
 - [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
+- [Recruiter (customer-facing roles)](recruiter_customer_facing.md)
+- [Technical Recruiter - Product](technical_recruiter_product.md)
 
 ## Apply
 
