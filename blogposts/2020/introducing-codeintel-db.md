@@ -8,26 +8,28 @@ heroImage: https://image.flaticon.com/icons/png/512/51/51333.png
 published: true
 ---
 
-A bit over a year ago, the code intelligence backend started as a single node process with access only to its own persistent volume. We chose SQLite as our persistence mechanism for a handful of reasons:
+A bit over a year ago, the code intelligence backend started as a single node process with access only to its own persistent volume. We chose SQLite as our persistence layer for a handful of reasons:
 
 - It was the faster implementation compared to other contending designs we tried.
 - Our MVP did not have access to Postgres at the time, which was owned solely by another team. Only later did we get access to Postgres to store cross-repository metadata and work queue data.
-- SQLite had some nice properties such as easy data warehousing opportunities (on which we have not capitalized) and bulk deletion of expired data was straightforward. All we had to do was delete the SQLite file.
+- SQLite had some nice properties such as easy data warehousing opportunities (on which we have yet to capitalize). Additionally, bulk deletion of expired data was straightforward - just delete the SQLite file from disk in its entirety.
 
-[A lot of the architecture has changed](https://about.sourcegraph.com/blog/evolution-of-the-precise-code-intel-backend/) since then, but the choice of our persistence medium remained constant. Using SQLite for this data has become an operational and feature burden for the code intelligence team.
+[A lot of the architecture has changed](https://about.sourcegraph.com/blog/evolution-of-the-precise-code-intel-backend/) since then, but the choice of our persistence layer remained constant. Using SQLite as our adoption and scale grew uncovered some fundamental pain points, and it became easy to view as an operational and velocity burden for the code intelligence team.
 
 - We need to maintain a periodic process to reconcile the data on disk with the metadata we store in Postgres.
 - We have good instructions and tips for backup and recovery of our Postgres data store, but have never officially recommended backing up other persistent volumes.
 - We locked ourselves into a node topology which is not easily scalable. We essentially have a singleton service over a persistent volume. In order to scale this service horizontally (which would become necessary once either the amount of data or the frequency of queries increased), we would need to shard the data across multiple volumes. This throws a lot of wrenches into our plans: we need to be able to automatically move data on increase or decrease of shard counts; we need to be able to route requests to the correct node with that data; we need to ensure that reconciliation between the data on disk and the metadata we store in Postgres is aware that there are multiple nodes where data _could_ reside.
 - There is no efficient way to implement certain data access patterns we may need in the future. For example, looking for data matching a certain identifier _name_ would require us to open every SQLite database on disk (and, no, opening batches of 100 files at a time is not a solution).
 
-Instead of forging ahead and tackling the complexity we've made for ourselves, we decided to take a step back and re-evaluate whether or not our previous architecture choices were meeting our current needs. Based on these grievances, they clearly did not.
+This is a lot of complexity to tame, and none of it is actually related to the problem space of our product. Forging ahead and pouring engineering time, effort, and resources into patching our existing persistence layer to accommodate new requirements is a losing battle. If we do it right, we've sacrificed velocity on adding new features and fixing bugs which are actually visible to a user. If we do it wrong, we can actually make the product significantly worse: poor performance at large scale, incorrect results, and permanent loss of user data are all risks of reconciling, restoring, and sharding data incorrectly.
+
+Best not to continue too far down that path.
 
 So what do we do? <!-- TODO - fill out more about the question -->
 
 Moving this data into Postgres was an obvious choice that greatly reduced the burdens listed above.
 
-- Moving data to an existing technology allows us to re-use the same advice and documentation for backup and disaster recovery strategies. Removing the number of knobs that must be turned by site-admins is always going to be a win across the board.
+- Moving data to a technology already used elsewhere in our tech stack allows us to re-use the same advice and documentation for backup and disaster recovery strategies. Lowering the number of knobs that must be turned by site-admins is always going to be a win across the board.
 - Moving from an embedded database to a server-client database removes the nasty singleton property on the service. Now that multiple servers can interact with the same data concurrently without risk of corruption, we can scale the services horizontally without requiring additional effort into implementing sticky sessions or complex request routing rules.
 
 This change also opened up possibilities for future expansion.
