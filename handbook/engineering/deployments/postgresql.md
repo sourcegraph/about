@@ -14,6 +14,8 @@ For read-only access there is also an option of using [BigQuery](
 https://console.cloud.google.com/bigquery?sq=527047051561:67f2616f4acb4b7cb3639e4a97e2f4aa
 ) and their `EXTERNAL_QUERY` syntax.
 
+There are two ways of connecting: either using the `gcloud beta sql connect` command or running the proxy on a port locally.
+
 ### Command line only use (pgsql)
 
 You may use these gcloud commands to connect directly to the databases:
