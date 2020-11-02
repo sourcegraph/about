@@ -12,7 +12,7 @@ We have a flexible vacation policy with mandatory annual vacation time that enco
 
 ## 🏥 Medical
 
-We offer high-quality medical and dental care for all full-time employees and their dependents.
+We offer high-quality medical and dental care for all full-time US-based employees and their dependents.
 
 ## 🏃 Wellness
 
@@ -32,11 +32,11 @@ We have generous [company, team, and individual travel budgets](travel.md) to en
 
 ## 🌐 Internet
 
-Your paycheck automatically includes a fixed reimbursement for $50 of internet expenses monthly.
+We reimburse up to $50 of internet expenses monthly.
 
 ## 📱 Mobile phone
 
-Your paycheck automatically includes a fixed reimbursement for $75 of mobile phone expenses monthly.
+We reimburse up to $75 of mobile phone expenses monthly.
 
 ## 🚚 Moving
 
