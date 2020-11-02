@@ -36,7 +36,6 @@ We're hiring! Check out our open positions:
 ### Operations, finance, and legal
 
 - [Internal Tools](../handbook/ops/roles/internal_tools.md)
-- [Financial Planning & Analysis Analyst](../handbook/ops/roles/financial_planning_analysis.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 
 ### People Ops
