@@ -16,8 +16,17 @@ It is imperative that we raise adoption *deeply* within a particular language an
 1. 🔄 Support incrementally indexing source code to reduce the time to useful intelligence.
 1. 🔄 Support automatically indexing source code to reduce the amount of effort required from users.
 1. 🔄 lsif-go provides results for 80% of Go code intelligence operations for three companies.
+    - https://github.com/sourcegraph/customer/issues/76
+    - https://github.com/sourcegraph/customer/issues/77
+    - https://github.com/sourcegraph/customer/issues/78
 1. 🔄 lsif-clang provides results for 80% of Go code intelligence operations for three companies.
+    - https://github.com/sourcegraph/customer/issues/86
+    - https://github.com/sourcegraph/customer/issues/87
+    - https://github.com/sourcegraph/customer/issues/88
 1. 🔄 lsif-java provides results for 80% of Go code intelligence operations for three companies.
+    - https://github.com/sourcegraph/customer/issues/79
+    - https://github.com/sourcegraph/customer/issues/80
+    - https://github.com/sourcegraph/customer/issues/81
 1. lsif-node provides results for 80% of Go code intelligence operations for three companies.
 1. Integrate with build tools to reduce the friction of indexing monorepos.
     - Support Bazel
