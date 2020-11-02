@@ -2,7 +2,7 @@
 
 > **Note:** Looking for _how to monitor Sourcegraph?_ See the [observability documentation](https://docs.sourcegraph.com/admin/observability).
 
-This document gives a quick overview of how to manually search for data that isn't currently represented or displayed in [Grafana dashboards](https://docs.sourcegraph.com/admin/observability/metrics). Note that, in most cases, writing manual queries indicates that you should be [adding monitoring](https://about.sourcegraph.com/handbook/engineering/observability/monitoring#adding-monitoring) so that the next person who needs to find that data doesn't need to repeat your work. 
+This document gives a quick overview of how to manually search for data that isn't currently represented or displayed in [Grafana dashboards](https://docs.sourcegraph.com/admin/observability/metrics). If the data you are querying is to monitor the health of Sourcegraph, you should be [adding monitoring](https://about.sourcegraph.com/handbook/engineering/observability/monitoring#adding-monitoring) instead so that the next person and site admins/customers alike don't need to repeat your work. 
 
 ## Prometheus
 
