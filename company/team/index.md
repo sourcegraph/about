@@ -440,6 +440,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Name pronunciation: /[arˈtʲɵm ruts](http://ipa-reader.xyz/?text=ar%CB%88t%CA%B2%C9%B5m%20ruts)/
 - Artem is a Software Engineer from Belarus with a Master’s in Computer Science. Before teaming up with Sourcegraph, Artem dazzled the IT crowd at Wayfair and, prior to that, Thomson Reuters. Avid believers in lifelong learning, Artem and his awesome wife currently enjoy dabbling in blocks, balls, and trucks with their infant daughter. In his rare and fleeting free time, you might be able to catch him rollerblading (though you’d have to be awfully fast) or studying foreign languages.
 
+## Alex Russell-Saw (he/him)
+
+- Software Engineer
+- Peckham, London, UK 🇬🇧
+- GitHub: arussellsaw
+- [alex@sourcegraph.com](mailto:alex@sourcegraph.com), [@arussellsaw](https://twitter.com/arussellsaw) 
+- Alex lives in Southeast London with his partner Rebecca (a chef), with their cat and dog (Gillian and Dustin). Before Sourcegraph he was building a bank at Monzo. In their free time they enjoy eating too much and drinking natural wines, as well as cooking all sorts of nonsense. He is also a serial project starter-but-not-finisher and you can find some of his fine unfinished work here: https://books.russellsaw.io https://news.russellsaw.io https://yaas.cat, he's also learning to make video games but isn't very good yet.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
