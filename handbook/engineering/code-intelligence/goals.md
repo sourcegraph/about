@@ -23,7 +23,6 @@ It is imperative that we raise adoption *deeply* within a particular language an
     - Support Bazel
     - Support Buck
     - Support Pants
-    - Support OAO
 
 ### Increase the number of languages that we support fully
 
