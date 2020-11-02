@@ -355,19 +355,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Alex Russell-Saw"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-					51.5085300,
-          -0.1257400
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Artem Ruts"
       },
       "geometry": {
@@ -378,5 +365,18 @@
         ]
       }
     }
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alex Russell-Saw"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1257400,
+					51.5085300
+        ]
+      }
+    },
   ]
 }
