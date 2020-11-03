@@ -27,6 +27,7 @@ We're hiring! Check out our open positions:
 ### Customer engineering
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
+- [Training Engineer](../handbook/ce/roles/training_engineer.md)
 
 ### Marketing
 
