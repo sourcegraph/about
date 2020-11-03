@@ -15,7 +15,7 @@ It is imperative that we raise adoption *deeply* within a particular language an
 1. Update pings and dashboards to accurately reflect this goal's success criteria.
 1. 🔄 Support incrementally indexing source code to reduce the time to useful intelligence.
 1. 🔄 Support automatically indexing source code to reduce the amount of effort required from users.
-1. 🔄 lsif-go provides results for 80% of Go code intelligence operations for three companies.
+1. 🔄  Reach 80% precise code intelligence for Go within 3 organizations.
     - https://github.com/sourcegraph/customer/issues/76
     - https://github.com/sourcegraph/customer/issues/77
     - https://github.com/sourcegraph/customer/issues/78
