@@ -2,7 +2,7 @@
 
 ## Goals
 
-Track our progress in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
+Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
 ### The majority of code intel results are precise (for languages we support fully)
 
