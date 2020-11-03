@@ -85,6 +85,10 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - Reach out to set up an introduction
   - Define success criteria for growth
   
+## Month 1
+
+- Join CE rotation on Bi-Monthly Product Tour 
+  
 ## FAQ
 
 - How do we interface in customer engagements?
