@@ -29,7 +29,7 @@ It is imperative that we raise adoption *deeply* within a particular language an
     - https://github.com/sourcegraph/customer/issues/79
     - https://github.com/sourcegraph/customer/issues/80
     - https://github.com/sourcegraph/customer/issues/81
-1. lsif-node provides results for 80% of Go code intelligence operations for three companies.
+1. Validate Typescript/Javascript support: lsif-node provides results for 80% of code intelligence operations for three companies.
 1. Integrate with build tools to reduce the friction of indexing monorepos.
     - Support Bazel
     - Support Buck
