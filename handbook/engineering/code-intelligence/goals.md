@@ -25,7 +25,7 @@ It is imperative that we raise adoption *deeply* within a particular language an
     - https://github.com/sourcegraph/customer/issues/86
     - https://github.com/sourcegraph/customer/issues/87
     - https://github.com/sourcegraph/customer/issues/88
-1. 🔄 lsif-java provides results for 80% of Go code intelligence operations for three companies.
+1. 🔄 Validate Java support: lsif-java provides results for 80% of code intelligence operations for three companies.
     - https://github.com/sourcegraph/customer/issues/79
     - https://github.com/sourcegraph/customer/issues/80
     - https://github.com/sourcegraph/customer/issues/81
