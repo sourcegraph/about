@@ -33,7 +33,7 @@ It is imperative that we raise adoption *deeply* within a particular language an
     - Support Buck
     - Support Pants
 
-### Increase the number of languages that we support fully
+### Increase the number of fully supported languages
 
 **Problem:** Our first goal increases adoption _deeply_ at companies whose core stack aligns with the set of languages we fully support. Unfortunately, this says nothing about enterprise customers who are _partially_ supported or _unsupportable_ because we lack support for a common language. There will always be a large pool of untapped users we can reach by adding support for additional languages.
 
