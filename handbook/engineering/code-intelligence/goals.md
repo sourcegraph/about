@@ -4,7 +4,7 @@
 
 Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
-### The majority of code intel results are precise (for languages we support fully)
+### 95% of all code intel results are precise for any fully supported language
 
 _Languages we fully support currently include Go, TypeScript, C/C++, and Java._ Languages will be added to this list as we make progress toward our second goal, listed below.
 
