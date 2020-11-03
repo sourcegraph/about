@@ -4,7 +4,7 @@
 
 Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
-### 95% of all code intel results are precise for any fully supported language
+### Grow LSIF adoption and usage reaching 10k precise code intel WAUs
 
 _Languages we fully support currently include Go, TypeScript, C/C++, and Java._ Languages will be added to this list as we make progress toward our second goal, listed below.
 
