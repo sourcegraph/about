@@ -144,7 +144,7 @@ const ITEMS: {
         },
         {
             name: 'Handy',
-            url: '/external-logos/handy-logo-01.svg',
+            url: '/external-logos/handy-logo.svg',
         },
     ]
 
