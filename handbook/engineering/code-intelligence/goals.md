@@ -21,7 +21,7 @@ It is imperative that we raise adoption *deeply* within a particular language an
     - https://github.com/sourcegraph/customer/issues/76
     - https://github.com/sourcegraph/customer/issues/77
     - https://github.com/sourcegraph/customer/issues/78
-1. 🔄 lsif-clang provides results for 80% of Go code intelligence operations for three companies.
+1. 🔄  Validate C++ support: lsif-clang provides results for 80% of code intelligence operations for three companies.
     - https://github.com/sourcegraph/customer/issues/86
     - https://github.com/sourcegraph/customer/issues/87
     - https://github.com/sourcegraph/customer/issues/88
