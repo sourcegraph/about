@@ -14,7 +14,13 @@ For read-only access there is also an option of using [BigQuery](
 https://console.cloud.google.com/bigquery?sq=527047051561:67f2616f4acb4b7cb3639e4a97e2f4aa
 ) and their `EXTERNAL_QUERY` syntax.
 
-There are two ways of connecting: either using the `gcloud beta sql connect` command or running the proxy on a port locally.
+## Installing the cloud-sql proxy
+
+Go to the [cloud-sql proxy install page](https://cloud.google.com/sql/docs/postgres/sql-proxy#install) and install the proxy binary. Ensure that is reachable on your path.
+
+
+There are two ways of connecting: either using the `gcloud beta sql connect` command which will use the `pgsql` client or running the proxy on a port locally to utilize whatever tools you typically use.
+
 
 ### Command line only use (pgsql)
 
