@@ -457,6 +457,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [jean@sourcegraph.com](mailto:jean@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jeandp)
 - Jean lives with his wife, quadruplet daughters and 3 dogs in Cape Town, South Africa. Their family loves the outdoors, whether it's hiking in the mountains or spending time at the beach. He's been in IT for the past 16 years of which he's been a manager for 7. Prior to Sourcegraph, he was a manager at GitLab.
 
+## Eli Rothschild (He/Him)
+
+- Account Executive
+- New York, New York (Currently in Boca Raton, FL)
+- [eli@sourcegraph.com](mailto:eli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eli-rothschild-b922824a/)
+- Eli was raised in Baltimore, has been in NYC since 2007 (living in 4 of the 5 boroughs), and recently joined the unofficial 6th borough of Boca Raton. He has since been in SaaS sales with early stage to high growth companies for a majority of his professional career. Most recently he had been an Enterprise Account Executive at Segment, and prior to that, at Mixpanel during similar stages of growth. When not listening to the latest tech and business podcasts, Eli enjoys learning about political history, pplaying chess, and traveling with his wife and social circle.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
