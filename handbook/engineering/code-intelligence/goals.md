@@ -1,4 +1,4 @@
-# Cloud goals and priorities
+# Code Intelligence goals and priorities
 
 ## Goals
 
