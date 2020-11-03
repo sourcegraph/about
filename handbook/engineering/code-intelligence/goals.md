@@ -1,6 +1,4 @@
-# Code Intelligence goals and priorities
-
-## Goals
+# Code Intelligence goals
 
 Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
