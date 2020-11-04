@@ -10,7 +10,7 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. Validate Go support: Reach 80% precise code intelligence for Go within 3 organizations.
+1. Validate Go support: 80% of Go code intel queries are precise within 3 customers.
     - ✅ [Deliver to $U](https://github.com/sourcegraph/customer/issues/78)
     - 🔄 [Deliver to $S](https://github.com/sourcegraph/customer/issues/77)
     - [Deliver to $C](https://github.com/sourcegraph/customer/issues/76)
