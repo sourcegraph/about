@@ -2,7 +2,7 @@
 
 Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
-### Grow LSIF adoption and usage reaching 10k precise code intel WAUs
+### Grow LSIF adoption and usage reaching ?k precise code intel operations a month
 
 **Problem:** By default, users get basic code intel results which are often incorrect for tokens with common names (such as Get). This is solved by enabling precise code intel, which gives users faster, 100% accurate results for a definition or reference for a symbol they hover over. 
 
@@ -10,24 +10,24 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. Validate Go support: 80% of Go code intel queries are precise within 3 customers.
-    - ✅ [Deliver to $U](https://github.com/sourcegraph/customer/issues/78)
-    - 🔄 [Deliver to $S](https://github.com/sourcegraph/customer/issues/77)
-    - [Deliver to $C](https://github.com/sourcegraph/customer/issues/76)
-1. Validate C++ support: Reach 80% precise code intelligence for C++ within 3 organizations.
-    - [Deliver to $H](https://github.com/sourcegraph/customer/issues/86)
-    - [Deliver to $F](https://github.com/sourcegraph/customer/issues/87)
-    - [Deliver to $I](https://github.com/sourcegraph/customer/issues/88)
+1. Deliver precise Go code intelligence to 3 customers. (+?k monthly operations)
+    - ✅ [Deliver to $U](https://github.com/sourcegraph/customer/issues/78) (+5k monthly operations)
+    - 🔄 [Deliver to $S](https://github.com/sourcegraph/customer/issues/77) (+?k monthly operations)
+    - [Deliver to $C](https://github.com/sourcegraph/customer/issues/76) (+?k monthly operations)
+1. Deliver precise C++ code intelligence to 3 customers. (+?k monthly operations)
+    - [Deliver to $H](https://github.com/sourcegraph/customer/issues/86) (+?k monthly operations)
+    - [Deliver to $F](https://github.com/sourcegraph/customer/issues/87) (+?k monthly operations)
+    - [Deliver to $I](https://github.com/sourcegraph/customer/issues/88) (+?k monthly operations)
 1. 🔄 Support automatically indexing source code within Sourcegraph.
 1. 🔄 Support incremental indexing of Go source code.
-1. Validate Java support: Reach 80% precise code intelligence for Java within 3 organizations.
-    - Deliver to $C1 (TBD)
-    - Deliver to $C2 (TBD)
-    - Deliver to $C3 (TBD)
-1. Validate TypeScript support: Reach 80% precise code intelligence for TypeScript within 3 organizations.
-    - Deliver to $C1 (TBD)
-    - Deliver to $C2 (TBD)
-    - Deliver to $C3 (TBD)
+1. Deliver precise Java code intelligence to 3 customers. (+?k monthly operations)
+    - Deliver to $C1 (TBD) (+?k monthly operations)
+    - Deliver to $C2 (TBD) (+?k monthly operations)
+    - Deliver to $C3 (TBD) (+?k monthly operations)
+1. Deliver precise TypeScript code intelligence to 3 customers. (+?k monthly operations)
+    - Deliver to $C1 (TBD) (+?k monthly operations)
+    - Deliver to $C2 (TBD) (+?k monthly operations)
+    - Deliver to $C3 (TBD) (+?k monthly operations)
 1. Automatically maintain a list of languages unsupported by precise code intelligence ordered by that language's impact. Currently we gather data by hand from multiple sources, which is easy to get wrong and quick to become stale. We need to add additional ping data and find a way to automate customer surveys to correctly gauge a language's desire over time.
 1. Integrate with build tools to reduce the friction of indexing monorepos.
     - Support Bazel
