@@ -1,14 +1,14 @@
 # Operations roles
 
-## [Business Operations](./bizops/index.md)
+## [Business Operations](../bizops/index.md)
 
 - [Director of Business Operations](./director_business_operations.md)
 
-## [Internal Tools](./internal-tools/index.md)
+## [Internal Tools](../internal-tools/index.md)
 
 - [Internal Tools](./internal_tools.md)
 
-## [Legal](./legal/index.md)
+## [Legal](../legal/index.md)
 
 - [Senior Commercial Counsel](./senior_commercial_counsel.md)
 
