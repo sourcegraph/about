@@ -11,9 +11,7 @@
 
 ## Every two weeks
 
-At the beginning of each cycle, [we determine](#planning) what work we plan to do to bring us closer to accomplishing our goals.
-
-At the end of each cycle, we run a [retrospective meeting](#retrospective) to review the progress we have made over the cycle, reflect on what worked well and identify improvement areas.
+At the beginning of each cycle, [we determine](#planning) what work we plan to do to bring us closer to accomplishing our goals. We run a [retrospective meeting](#retrospective) at the end of each cycle to review the progress we have made over the cycle, reflect on what worked well and identify improvement areas.
 
 ### Planning
 
@@ -77,9 +75,32 @@ The second Monday before the [20th (release day)](../releases/index.md), this me
 
 These meetings are recorded (posted automatically to the #distributioneers Slack channel) so that anyone whose timezone does not permit can participate after the fact.
 
-### Daily updates
+### Friday GitHub update
 
-#### Slack update
+Before EOD (local time) on Fridays distribution members are expected to post an update with the following to [our monthly tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+Distribution):
+
+- What you've worked on **this week**
+- What you plan to focus on **next week**
+- Anything that you think may not get finished in time for the release
+
+**Example:**
+
+> **This week:**
+>
+> - Lots of progress on regression test suite, but did not manage to fully close the issue as I discovered some additional problem, check this \[comment\]\(link\).
+> - Fixed the Terraform apply bug described in #9330
+>
+> **Next week:**
+>
+> Ill fix the regression test problem in #1234 + start working on cleaning some the repeated steps from the release process in #1235.
+
+The goal of this update is to communicate to _the broader Sourcegraph team_ a summary of our plans, what progress we've made, and anything that is at risk at a high-level. This information, complemetned by the daily updates, will be used by the [engineering manager](../roles.md#engineering-manager) to send the [weekly leadership update](../leadership/index.md#weekly-updates).
+
+## Daily updates
+
+We use daily updates to ensure we have frequent communication across the team helping us keep in sync while working asynchronously, and help each other when we are blocked. Updates are asynchronous instead of face-to-face video call stand-ups because it allows collaboration across different timezones and work schedules.
+
+### Slack update
 
 At the start of your day (local time) distribution members are expected to post an update in Slack communicating:
 
@@ -105,28 +126,3 @@ At the start of your day (local time) distribution members are expected to post 
 > https://github.com/sourcegraph/sourcegraph/pull/9331 turned out much harder than I thought, it may slip this release, I could use another set of eyes on this
 
 The goal of this update is to ensure we're discussing things as a team, asking for help when appropriate, reflecting on our progress, and giving others the opportunity to provide help and guidance.
-
-#### Friday GitHub update
-
-Before EOD (local time) on Fridays distribution members are expected to post an update with the following to [our monthly tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+Distribution):
-
-- What you've worked on **this week**
-- What you plan to focus on **next week**
-- Anything that you think may not get finished in time for the release
-
-**Example:**
-
-> **This week:**
->
-> - Lots of progress on regression test suite, but did not manage to fully close the issue as I discovered some additional problem, check this \[comment\]\(link\).
-> - Fixed the Terraform apply bug described in #9330
->
-> **Next week:**
->
-> Ill fix the regression test problem in #1234 + start working on cleaning some the repeated steps from the release process in #1235.
-
-The goal of this update is to communicate to _the broader Sourcegraph team_ a summary of our plans, what progress we've made, and anything that is at risk at a high-level. This information, complemetned by the daily updates, will be used by the [engineering manager](../roles.md#engineering-manager) to send the [weekly leadership update](../leadership/index.md#weekly-updates).
-
-#### Why weekly updates?
-
-We use asynchronous updates via Slack and GitHub instead of face-to-face video call stand-ups because it allows collaboration across different timezones and work schedules.
