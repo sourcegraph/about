@@ -11,23 +11,20 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 **Milestones:**
 
 1. Deliver precise Go code intelligence to 3 customers. (+?k monthly operations)
-    - ✅ [Deliver to $U](https://github.com/sourcegraph/customer/issues/78) (+5k monthly operations)
+    - ✅ [Deliver to $U](https://github.com/sourcegraph/customer/issues/78) (+?k monthly operations)
     - 🔄 [Deliver to $S](https://github.com/sourcegraph/customer/issues/77) (+?k monthly operations)
     - [Deliver to $C](https://github.com/sourcegraph/customer/issues/76) (+?k monthly operations)
 1. Deliver precise C++ code intelligence to 3 customers. (+?k monthly operations)
-    - [Deliver to $H](https://github.com/sourcegraph/customer/issues/86) (+?k monthly operations)
     - [Deliver to $F](https://github.com/sourcegraph/customer/issues/87) (+?k monthly operations)
-    - [Deliver to $I](https://github.com/sourcegraph/customer/issues/88) (+?k monthly operations)
+    - [Deliver to $H](https://github.com/sourcegraph/customer/issues/86) (+?k monthly operations)
+    - [Deliver to $N](https://github.com/sourcegraph/customer/issues/130) (+?k monthly operations)
 1. 🔄 Support automatically indexing source code within Sourcegraph.
 1. 🔄 Support incremental indexing of Go source code.
 1. Deliver precise Java code intelligence to 3 customers. (+?k monthly operations)
-    - Deliver to $C1 (TBD) (+?k monthly operations)
-    - Deliver to $C2 (TBD) (+?k monthly operations)
-    - Deliver to $C3 (TBD) (+?k monthly operations)
+    - [Deliver to $U](https://github.com/sourcegraph/customer/issues/131) (+?k monthly operations)
+    - [Deliver to $F](https://github.com/sourcegraph/customer/issues/132) (+?k monthly operations)
 1. Deliver precise TypeScript code intelligence to 3 customers. (+?k monthly operations)
-    - Deliver to $C1 (TBD) (+?k monthly operations)
-    - Deliver to $C2 (TBD) (+?k monthly operations)
-    - Deliver to $C3 (TBD) (+?k monthly operations)
+    - [Deliver to $U](https://github.com/sourcegraph/customer/issues/133) (+?k monthly operations)
 1. Automatically maintain a list of languages unsupported by precise code intelligence ordered by that language's impact. Currently we gather data by hand from multiple sources, which is easy to get wrong and quick to become stale. We need to add additional ping data and find a way to automate customer surveys to correctly gauge a language's desire over time.
 1. Integrate with build tools to reduce the friction of indexing monorepos.
     - Support Bazel
