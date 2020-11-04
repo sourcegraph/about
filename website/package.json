@@ -45,7 +45,7 @@
     "rehype-react": "^6.1.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "ts-loader": "^8.0.7"
+    "ts-loader": "^8.0.9"
   },
   "keywords": [
     "gatsby"
