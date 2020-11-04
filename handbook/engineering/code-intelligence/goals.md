@@ -33,7 +33,7 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Support Bazel
     - Support Buck
     - Support Pants
-1. Build indexers for high-impact language/ecosystems
+1. Build indexers for high-impact language/ecosystems.
     - Support Python
     - Support Scala
     - Support C#
