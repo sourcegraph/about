@@ -51,7 +51,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         alt="Searching for code in the Sourcegraph search bar"
                     />
                     <img
-                        src="/screenshots/search-page-0.png"
+                        src="/screenshots/search-page-1.png"
                         className="home__screenshot home__screenshot--nested"
                         alt="Code results from a code search, including code coverage states"
                     />

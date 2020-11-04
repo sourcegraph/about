@@ -27,6 +27,7 @@ We're hiring! Check out our open positions:
 ### Customer engineering
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
+- [Training Engineer](../handbook/ce/roles/training_engineer.md)
 
 ### Marketing
 
@@ -36,12 +37,13 @@ We're hiring! Check out our open positions:
 ### Operations, finance, and legal
 
 - [Internal Tools](../handbook/ops/roles/internal_tools.md)
-- [Financial Planning & Analysis Analyst](../handbook/ops/roles/financial_planning_analysis.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 
 ### People Ops
 
 - [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
+- [Recruiter (customer-facing roles)](../handbook/people-ops/roles/recruiter_customer_facing.md)
+- [Technical Recruiter - Product](../handbook/people-ops/roles/technical_recruiter_product.md)
 
 ## Apply
 
