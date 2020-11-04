@@ -77,31 +77,38 @@ The second Monday before the [20th (release day)](../releases/index.md), this me
 
 These meetings are recorded (posted automatically to the #distributioneers Slack channel) so that anyone whose timezone does not permit can participate after the fact.
 
-### Weekly updates
+### Daily updates
 
-#### Wednesday Slack update
+#### Slack update
 
-Wed, before EOD (local time): distribution members are expected to post an update in Slack communicating:
+At the start of your day (local time) distribution members are expected to post an update in Slack communicating:
 
 1. What you have worked on since your last update
-2. What you are working on now
-3. Anything you feel uneasy about, think is at risk of not being completed, etc.
+2. What you are going to be working on today
+3. Anything you feel uneasy about, think is at risk of not being completed, blockers, etc.
 
 **Example:**
 
-> **Update:**
+> **Since last update:**
 >
-> - Helped \$CUSTOMER with search scaling questions.
-> - Made some progress on updating the regression test suite, more work to do.
-> - Opened a PR for that nasty bug (https://github.com/sourcegraph/sourcegraph/pull/9330)
-> - https://github.com/sourcegraph/sourcegraph/pull/9331 turned out much harder than I thought, it may slip this release
-> - I am now focused on https://github.com/sourcegraph/sourcegraph/issues/10419
+> - Helped \$CUSTOMER with search scaling questions, the issue is still open as im waiting for a reply
+> - Made some progress on updating the regression test suite and merged the fix for the timeout, but there still some other issues with the FooBar test.
+> - Merged the changes to the DNS and closed https://github.com/sourcegraph/sourcegraph/issues/10418
+>
+> **Today:**
+>
+> Ill work on a PR for that nasty bug (https://github.com/sourcegraph/sourcegraph/pull/9330)
+> and then re-focus on https://github.com/sourcegraph/sourcegraph/issues/10419
+>
+> **Blockers**
+>
+> https://github.com/sourcegraph/sourcegraph/pull/9331 turned out much harder than I thought, it may slip this release, I could use another set of eyes on this
 
 The goal of this update is to ensure we're discussing things as a team, asking for help when appropriate, reflecting on our progress, and giving others the opportunity to provide help and guidance.
 
 #### Friday GitHub update
 
-Fri, before EOD (local time): distribution members are expected to post an update with the following to [our monthly tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+Distribution):
+Before EOD (local time) on Fridays distribution members are expected to post an update with the following to [our monthly tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+Distribution):
 
 - What you've worked on **this week**
 - What you plan to focus on **next week**
@@ -109,26 +116,17 @@ Fri, before EOD (local time): distribution members are expected to post an updat
 
 **Example:**
 
-> This week:
+> **This week:**
 >
-> - Lots of progress on regression test suite, more to do.
-> - That nasty bug is fixed (https://github.com/sourcegraph/sourcegraph/pull/9330)
-> - https://github.com/sourcegraph/sourcegraph/pull/9331 turned out much harder than we thought and it may slip this release
-> - Next week: Will finish up the above + start working on automating releases
+> - Lots of progress on regression test suite, but did not manage to fully close the issue as I discovered some additional problem, check this \[comment\]\(link\).
+> - Fixed the Terraform apply bug described in #9330
+>
+> **Next week:**
+>
+> Ill fix the regression test problem in #1234 + start working on cleaning some the repeated steps from the release process in #1235.
 
-The goal of this update is to communicate to _the broader Sourcegraph team_ what we're working on, what progress we've made, and anything that is at risk at a high-level.
+The goal of this update is to communicate to _the broader Sourcegraph team_ a summary of our plans, what progress we've made, and anything that is at risk at a high-level. This information, complemetned by the daily updates, will be used by the [engineering manager](../roles.md#engineering-manager) to send the [weekly leadership update](../leadership/index.md#weekly-updates).
 
-#### Why weekly & asynchronous updates?
+#### Why weekly updates?
 
-We use asynchronous updates via Slack and GitHub instead of face-to-face video call stand-ups because it allows:
-
-- You to write your update and consume other's updates at your own pace.
-- Others to opt-out of conversations they may not have stake in easily (topics worth discussing with the entire team can be brought up at the weekly team sync.)
-
-We send updates twice a week because:
-
-- Daily updates are too frequent, tedious to write out, tedious to consume, and give the impression that someone wants an hour-by-hour account of work (we do not).
-- A single weekly update make it easy to forget what you did at the start of the week, forget to ask for help, and make it hard for others to offer help in a timely fashion.
-- Two updates a week encourage posting updates and gathering feedback regularly, while still focusing on just the high-level key points of interest.
-
-We want to respect autonomy and view updates as a tool to help remind team members to collaborate together, ask for help, and perform self-reflection about whether your current focus is right or not.
+We use asynchronous updates via Slack and GitHub instead of face-to-face video call stand-ups because it allows collaboration across different timezones and work schedules.
