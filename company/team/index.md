@@ -93,7 +93,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Vanesa Ortiz (she/her)
 
-- Name pronunciation: /[ˈvanɛsa](http://ipa-reader.xyz/?text=%5B%CB%88van%C9%9Bsa%5D&voice=Penelope)
+- Name pronunciation: /[ˈvanɛsa ɔɹˈtiz]/(http://ipa-reader.xyz/?text=%5B%CB%88van%C9%9Bsa%5D&voice=Penelope)
 - Content Engineer
 - San Francisco, CA, USA 🇺🇸
 - [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
