@@ -10,21 +10,21 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. Deliver precise Go code intelligence to 3 customers _(+?k ops/mo)_.
-    - ✅ [Deliver to $U](https://github.com/sourcegraph/customer/issues/78) _(+?k ops/mo)_.
-    - 🔄 [Deliver to $S](https://github.com/sourcegraph/customer/issues/77) _(+?k ops/mo)_.
-    - [Deliver to $C](https://github.com/sourcegraph/customer/issues/76) _(+?k ops/mo)_.
-1. Deliver precise C++ code intelligence to 3 customers. (+?k monthly operations)
-    - [Deliver to $F](https://github.com/sourcegraph/customer/issues/87) _(+?k ops/mo)_.
-    - [Deliver to $H](https://github.com/sourcegraph/customer/issues/86) _(+?k ops/mo)_.
-    - [Deliver to $N](https://github.com/sourcegraph/customer/issues/130) _(+?k ops/mo)_.
+1. Deliver precise Go code intelligence to 3 customers.
+    - ✅ [*N<sub>1</sub>*][N1]
+    - 🔄 [*N<sub>2</sub>*][N2]
+    - [*N<sub>3</sub>*][N3]
+1. Deliver precise C++ code intelligence to 3 customers.
+    - [*N<sub>4</sub>*][N4]
+    - [*N<sub>5</sub>*][N5]
+    - [*N<sub>6</sub>*][N6]
 1. 🔄 Support automatically indexing source code within Sourcegraph.
 1. 🔄 Support incremental indexing of Go source code.
-1. Deliver precise Java code intelligence to 3 customers _(+?k ops/mo)_.
-    - [Deliver to $U](https://github.com/sourcegraph/customer/issues/131) _(+?k ops/mo)_.
-    - [Deliver to $F](https://github.com/sourcegraph/customer/issues/132) _(+?k ops/mo)_.
-1. Deliver precise TypeScript code intelligence to 3 customers _(+?k ops/mo)_.
-    - [Deliver to $U](https://github.com/sourcegraph/customer/issues/133) _(+?k ops/mo)_.
+1. Deliver precise Java code intelligence to 3 customers.
+    - [*N<sub>7</sub>*][N7]
+    - [*N<sub>8</sub>*][N8]
+1. Deliver precise TypeScript code intelligence to 3 customers.
+    - [*N<sub>9</sub>*][N9]
 1. Automatically maintain a list of languages unsupported by precise code intelligence ordered by that language's impact. Currently we gather data by hand from multiple sources, which is easy to get wrong and quick to become stale. We need to add additional ping data and find a way to automate customer surveys to correctly gauge a language's desire over time.
 1. Integrate with build tools to reduce the friction of indexing monorepos.
     - Support Bazel
@@ -34,3 +34,13 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Support Python
     - Support Scala
     - Support C#
+
+[N1]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.lgv97p81ib7i
+[N2]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.14bhbwgxexyk
+[N3]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.77q74hyj1vt7
+[N4]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.dody7tmh0cys
+[N5]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.yaz1er2nj6qx
+[N6]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.vu3qkq4e0r70
+[N7]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.22p5u8gdheua
+[N8]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.wugsa2bws90r
+[N9]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.xq968uve0czg
