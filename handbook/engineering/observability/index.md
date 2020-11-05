@@ -1,6 +1,6 @@
 # Sourcegraph observability developer guide
 
-**Note:** Looking for _how to monitor Sourcegraph?_ See the [observability documentation](https://docs.sourcegraph.com/admin/observability).
+> **Note:** Looking for _how to monitor Sourcegraph?_ See the [observability documentation](https://docs.sourcegraph.com/admin/observability).
 
 Observability includes:
 
@@ -15,6 +15,9 @@ Observability includes:
 ## Developer guides
 
 - [Monitoring developer guide](monitoring.md)
-    - [The five pillars of monitoring](monitoring_pillars.md)
+  - [The five pillars of monitoring](monitoring_pillars.md)
+  - [Monitoring architecture](./monitoring_architecture.md)
+- [Cloudflare logging](cloudflare.md)
 - Distributed tracing developer guide (coming soon)
 - Logging developer guide (coming soon)
+

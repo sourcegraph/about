@@ -1,6 +1,17 @@
 # Security team
 
+<div style="text-align: center; margin-bottom: 1rem">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/security-team-logo.jpg" width="50%" alt="Shielding Sourcegraph from attackers">
+</div>
+
 We think that security is an enabler for the business. Sourcegraph is committed to proactive security, and addressing vulnerabilities in a timely manner. We approach security with a can-do philosophy, and look to achieve product goals while maintaining a positive posture, and increasing our security stance over time.
+
+## Contact
+
+- [security@sourcegraph.com](mailto:security@sourcegraph.com)
+- #security channel Slack.
+- [@sourcegraph/security](https://github.com/orgs/sourcegraph/teams/security) on GitHub.
+- [report a vulnerability](reporting-vulnerabilities.md)
 
 ## Goals
 
@@ -16,11 +27,11 @@ These goals represent our targeted work for 70% of our time. The remaining 30% i
     1. Three or more vulnerabilities with a high severity, or a CVSS score of at least 4.0 are resolved. (3.21 release)
 1. We have resolved container vulnerabilities with a high severity, or a CVSS score of at least 4.0, or that resolution is planned. (3.22 release)
 1. All compute nodes are continuously scanned for known security vulnerabilities and the security team is alerted as vulnerabilities are found. (3.22 release)
-    1. We have resolved compute vulnerabilities with a high severity, or a CVSS score of at least 4.0, or that resolution is planned. (3.22 release)
-1. Implement centralized storage of all of our existing logs (e.g., application logs, compute infrastructure logs). (3.22 release)
-1. Start collecting audit and access logs (e.g., visibility into both intentional and unintentional logins). This is useful from both a security visibility point of view, as also a requirement for various auditing frameworks (though not currently a target). (3.22 release)
-1. Normalize log format in our centralized log storage so that it is easier to correlate and search. This is a prerequisite for creating automated alerts from the logs. (3.23 release)
-1. Create alerts and dashboards to automate the process of investigating events of interest (e.g., detect and alert on a spike of failed login attempts to a single account, or across Sourcegraph Cloud as a whole). (3.23 release)
+    1. We have resolved compute vulnerabilities with a high severity, or a CVSS score of at least 4.0, or that resolution is planned. (3.23 release)
+1. Implement centralized storage of all of our existing logs (e.g., application logs, compute infrastructure logs). (3.23 release)
+1. Start collecting audit and access logs (e.g., visibility into both intentional and unintentional logins). This is useful from both a security visibility point of view, as also a requirement for various auditing frameworks (though not currently a target). (3.23 release)
+1. Normalize log format in our centralized log storage so that it is easier to correlate and search. This is a prerequisite for creating automated alerts from the logs. (3.24 release)
+1. Create alerts and dashboards to automate the process of investigating events of interest (e.g., detect and alert on a spike of failed login attempts to a single account, or across Sourcegraph Cloud as a whole). (3.24 release)
 
 ### Confidence in our security model
 
@@ -37,11 +48,7 @@ These goals represent our targeted work for 70% of our time. The remaining 30% i
 1. We host our private [infrastructure repository](http://github.com/sourcegraph/infrastructure) on Sourcegraph Cloud. (TBD, somewhat dependent on outputs of CtF)
 1. We allow paying customers to host their private code on Sourcegraph Cloud. (TBD, somewhat dependent on outputs of CtF)
 
-## Contact
-
-- [security@sourcegraph.com](mailto:security@sourcegraph.com)
-- #security channel Slack.
-- [@sourcegraph/security](https://github.com/orgs/sourcegraph/teams/security) on GitHub.
+----
 
 ## Responsibilities
 
@@ -53,38 +60,6 @@ These goals represent our targeted work for 70% of our time. The remaining 30% i
 - Increase our security posture by running traditional security tools such as vulnerability scanners, SAST, and DAST tools.
   - https://github.com/sourcegraph/sourcegraph/security/code-scanning
 - Create a culture of security at Sourcegraph that empowers all of our engineers to write secure code.
-
-## Reporting a vulnerability
-
-If you think that you have found a security issue, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 1 US business day to acknowledge that we received them and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling).
-
-### Bounties
-
-We provide monetary rewards, up to \$10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers impacted, the difficulty of exploiting the vulnerability, and the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit.
-
-We will send payment to a valid PayPal account after the issue is confirmed fixed or 90 days from the original report, whichever happens first. We will ask you for the name and country associated with your PayPal account.
-
-We may choose to not issue a reward if any of the following apply:
-
-1. You engage in disruptive behavior on sourcegraph.com itself (e.g. spamming our system with requests, fake accounts, denial of service). Sourcegraph is [open source software](https://github.com/sourcegraph/sourcegraph), so you can [install a copy yourself](https://docs.sourcegraph.com/#quickstart-guide) and test against that instead.
-1. You publicly disclose a vulnerability before we confirm that it is OK to do so. We want to give our customers time to upgrade to a patched version before public disclosure.
-1. You spam us with duplicate and/or low quality vulnerability reports (e.g. copy/pasting generic issues from automatic scanning tools).
-1. You are a current or former teammate at Sourcegraph (e.g. employee, contractor, intern).
-1. You are friends or family with a current or former teammate at Sourcegraph.
-
-## How we respond to security vulnerability reports
-
-When we receive [a report of a security vulnerability](#how-to-report-a-security-vulnerability), a member of our security team determines if a reported vulnerability should be investigated by an engineer.
-
-- If so, a member of our security team will [file a vulnerability report in sourcegraph/security-issues](https://github.com/sourcegraph/security-issues/issues/new/choose) and follow the checklist in the issue template.
-
-- If not, a member of our security team will respond to the report to notify the reporter why we are not acting on the report.
-
-  > Thank you for your report. Could you please provide us with $INFOX, $INFOY, and \$INFOZ so we can investigate this further?
-
-  > Thank you for your report. We will not be taking further action on this report because \$REASONS.
-
----
 
 ## How we work
 

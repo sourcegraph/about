@@ -351,6 +351,32 @@
           47.67278567576541
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Artem Ruts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.99589,
+          40.44062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alex Russell-Saw"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1257400,
+          51.5085300
+        ]
+      }
     }
   ]
 }

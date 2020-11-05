@@ -12,6 +12,10 @@ Sourcegraph search is:
 - **Easy to use:** Users can quickly understand how to find what they are looking for and what options are available for searching. The search syntax is clear and intuitive.
 - **Shareable:** Sourcegraph searches are easy to share, and provide team and organization wide value. This in turn creates network effects that compound the value Sourcegraph provides with scale.
 
+## Search goals and priorities
+
+See [goals and priorities](goals.md).
+
 ## Iterations
 
 The search team plans its work in **2-week iterations**.
@@ -44,88 +48,6 @@ Iterations start **every other Monday**.
     - The mid-iteration update should contain a forecast for the next week, and whether the remaining planned work is on track to be completed on time.
     - The end-of-iteration update should mention whether the planned outcomes were reached or not, and if not, why.
 
-
-## Goals
-
-_Updated 2020-09-11_
-
-### Scalable
-
-- **Scale indexed search to 500k repositories**
-   - **Problem:** We have customers who need Sourcegraph to scale to 500k repositories. Some parts of Sourcegraph don't work well at that scale.
-   - **Outcome:** Sourcegraph can search 500k repositories in less than 300ms. This is on par with [grep.app](https://grep.app).
-   - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
-   - **Owners:** Keegan/Stefan
-   - **Status:** [In progress](perf.md)
-   - **Estimated completion**: 3.23 (End of December 2020)
-
-### Fast
-
-- **Unblock improving user perceived performance**
-  - **Problem:** Our current search infrastructure relies on on-shot requests with aggressive timeouts, but it is hard to tune those timeouts for large codebases. If we make the timeouts too small, then search may not return results for needle-in-the-haystack queries (because the search timed out). If we make the timeouts too large, then search becomes slower across the board and users spend time waiting for more results when we could have returned useful results to them sooner. Detecting and handling these timeouts across multiple service boundaries is also error prone and has led to bugs.
-  - **Outcome:**
-      - Unblock the ability to add responsive and fast-loading search results.
-      - Return results faster for large result sets, e.g. indexed repositories in very large codebases.
-  - **Plan:** Streaming search
-  - **Owners:** Keegan, Juliana
-  - **Status:** In progress
-  - **Estimated completion:**
-    - ~~3.21~~ 2020-09-23 update: We revised this estimate after discussing needed work on the design & frontend side.
-    - 3.22
-
-### Expressive
-
-- **Extend Search Query Language**
-  - **Problem:** It is imperative that users can find and filter the code, files, repositories, and commits they care about in extremely large codebases.
-  - **Outcomes:** Users can express relations on code, files, repositories, and commits in search queries to more effectively filter the data they need. Sourcegraph is the exclusive industrial-strength search solution that provides these capabilities.
-  - **Owner:** Rijnard
-  - **Status:** In progress
-  - **Plan**
-      - Implement a query language extension to express relations (i.e., rules) on code, files, repositories, and commits. This replaces awkward one-off filters like `repohasfile`, `repohascommitafter` that do not generalize.
-      - Prototype semantic search functionality that combines text search and LSIF data
-      - Implement quality-of-life features for search: syntax highlighting, multiline queries, improve structural search performance
-  - **Owner:** Rijnard/Stefan
-  - **Status:** Not started
-  - **Estimated start:** 3.21
-  - **Estimated effort:** 4 months
-
-### Easy to use
-
-- **Improve search experience**
-  - **Problem:**
-      - New users who are trying Sourcegraph for the first time have trouble learning the syntax and breadth of Sourcegraph features.
-          - **Plan:** Search onboarding tour
-          - **Owner:** Farhan
-          - **Status:** In progress
-          - **Estimated completion**:
-              - ~~3.20~~ 2020-09-22 update: not all bugs found during the initial round of user testing were fixed in 3.20
-              - 3.21
-      - It is hard for users to quickly get to code they care about.
-          - **Plan:** Enterprise homepage
-          - **Owner:** Farhan, Juliana
-          - **Status:** In progress
-         - **Estimated completion**: 3.21
-  - **Outcomes:**
-     - New users introduced to Sourcegraph are able to quickly run searches that show them the value of Sourcegraph.
-     - Users can run searches over code they care about more quickly.
-     - Sourcegraph surfaces code and searches users care about.
-
-### Shareable
-
-- **Code monitoring** ([RFC 227](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit))
-  - **Problem:** Users want to be notified about important things going on in their code.
-  - **Outcome:** Notifications create a shared understanding and raise awareness of what’s going on in the code.
-  - **Plan**
-      - Improved diff search performance
-      - Webhooks on search results
-          - Slack integration
-          - Zapier integration
-          - Email
-  - **Owner:** TBD
-  - **Status:** Not started
-  - **Estimated start:** 2020-11-02
-  - **Estimated effort:** 4 weeks
-
 ## Contact
 
 - #search channel or @searchers on Slack.
@@ -140,6 +62,7 @@ _Updated 2020-09-11_
   - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
   - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
   - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
+  - R.N, full-stack engineer, joining December 14th
 
 ## On-call
 
@@ -151,5 +74,6 @@ _Updated 2020-09-11_
 _Updated 2020-10-07_
 
 We are looking to hire:
+
 - A [full-stack software engineer](../hiring/software-engineer-full-stack.md)
 - A [backend software engineer](../hiring/software-engineer-backend.md)

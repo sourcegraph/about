@@ -1,6 +1,38 @@
 # Marketing operations
 
-## UTMs
+## Technology stack
+
+### Demand generation
+
+- [Salesforce](https://sourcegraph2020.my.salesforce.com/)
+- Hubspot
+- Zoominfo
+
+### Website infrastructure
+
+- Gatsby
+- Netlify
+- Cookiebot
+
+### Content
+
+- [YouTube](https://www.youtube.com/channel/UCOy2N25-AHqE43XupT9mwZQ)
+- [Vimeo](https://vimeo.com/sourcegraph)
+- Google Cloud Storage
+
+### SEM and SEO tools
+
+- Google Ads
+- Google Analytics
+- Google Optimize
+- Google Search Console
+- Google Tag Manager
+- Moz Pro
+- Ubersuggest
+
+## Marketing attribution
+
+### UTMs
 
 All URLs used on external sites should contain UTM parameters for lead attribution. Any URLs built must be logged in the [UTM builder](https://docs.google.com/spreadsheets/d/1U0HRC5WVz3tsP6z9pqDLG8igTMSf2-pQGhbRoVn_iu0/edit#gid=0).
 
@@ -10,12 +42,10 @@ HubSpot automatically captures the parameter as long as the URL parameter name m
 
 The forms that support UTM are:
 
-- Registration for a livestream
-- Request a demo or enterprise trial 
-- Request a PDF
-- Request code change management demo
 - Contact us
+- Request a demo or enterprise trial 
 - In-product request (enterprise) trial 
+- Request a PDF
 
 The parameters that our HubSpot workflows support are `utm_campaign`, `utm_source` and `utm_medium`. Tag @ericbm in #marketing if more parameters are needed. 
 
@@ -47,6 +77,6 @@ All major lead generation-related events (demo requests, livestream registration
 
 To delete a contact requesting to be deleted from our systems:
 
-- Review our list of [data sources](https://about.sourcegraph.com/handbook/ops/bizops/index.md#data-sources) and delete the contact from each source. 
+- Review our list of [data sources](https://about.sourcegraph.com/handbook/ops/bizops#data-sources) and delete the contact from each source. 
 - Take and log [screenshots](https://drive.google.com/drive/folders/1974oAceBuVXt-3a1ULI2LgBHk6gID-3V) in the [Data Protection Officer folder](https://drive.google.com/drive/folders/1974oAceBuVXt-3a1ULI2LgBHk6gID-3V) of attempt to find contact in the system. 
 - Email contact from personal Sourcegraph email with the following `We have received your [CCPA|GDPR] request to be deleted from Sourcegraph systems. Your information has been permanently wiped from all our systems (screenshot attached), and as a result you will no longer receive any communications from us. [PERSONALIZED SENTENCE based on situation]`.  

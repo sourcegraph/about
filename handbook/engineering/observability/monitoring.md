@@ -1,30 +1,30 @@
 # Sourcegraph monitoring developer guide
 
-**Note:** Looking for _how to monitor Sourcegraph?_ See the [observability documentation](https://docs.sourcegraph.com/admin/observability).
+> **Note:** Looking for _how to monitor Sourcegraph?_ See the [observability documentation](https://docs.sourcegraph.com/admin/observability).
 
-This document describes how to develop Sourcegraph's monitoring:
+This document describes how to develop Sourcegraph's monitoring.
 
 ![image](https://user-images.githubusercontent.com/3173176/82078081-65c62780-9695-11ea-954a-84e8e9686970.png)
 
 - [Overview](#overview)
-  - [What is monitoring?](#what-is-monitoring)
-  - [Monitoring technology we use](#monitoring-technology-we-use)
-- [The five pillars of monitoring](#the-five-pillars-of-monitoring)
-- [How easy is it to add monitoring?](#how-easy-is-it-to-add-monitoring)
-  - [(optional) configure panel options](#optional-configure-panel-options)
-  - [(optional) add solution documentation](#optional-add-solution-documentation)
+  - [Monitoring pillars](#monitoring-pillars)
+  - [Monitoring architecture](#monitoring-architecture)
+- [Finding monitoring](#finding-monitoring)
+  - [Find available metrics](#find-available-metrics)
+  - [Queries](#queries)
+- [Adding monitoring](#adding-monitoring)
+  - [Configure panel options](#configure-panel-options)
+  - [Add solution documentation](#add-solution-documentation)
+  - [Tracking a new service](#tracking-a-new-service)
 - [Grafana](#grafana)
   - [Connecting Grafana to a remote Prometheus instance](#connecting-grafana-to-a-remote-prometheus-instance)
   - [Upgrading Grafana](#upgrading-grafana)
 - [Prometheus and Alertmanager](#prometheus-and-alertmanager)
-  - [Prometheus wrapper](#prometheus-wrapper)
   - [Upgrading Prometheus or Alertmanager](#upgrading-prometheus-or-alertmanager)
 - [Additional reading](#additional-reading)
 - [Next steps](#next-steps)
 
 ## Overview
-
-### What is monitoring?
 
 Monitoring at Sourcegraph encapsulates:
 
@@ -40,45 +40,42 @@ It does not include:
 
 Monitoring is just one piece of Sourcegraph's observability. See the [observability developer guide](index.md) for more information.
 
-### Monitoring technology we use
+### Monitoring pillars
 
-We use [Prometheus](https://prometheus.io) for:
+To learn more about our monitoring goals and principles, refer to: [monitoring pillars](monitoring_pillars.md).
 
-- Collecting high-level, and low-cardinality, metrics from our services.
-- Defining alerting rules (we define alerts both as a single Prometheus metric and as Prometheus alert rules, more on this later).
-  - Alerts can be [consumed programmatically](https://docs.sourcegraph.com/admin/observability/alerting_custom_consumption) or processed by [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/), which is [bundled into `sourcegraph/prometheus`](#prometheus-and-alertmanager).
+### Monitoring architecture
 
-We use [Grafana](https://grafana.com) for:
+To learn more about our monitoring stack and architecture, refer to: [monitoring architecture](./monitoring_architecture.md).
 
-- Displaying dashboards for our Prometheus metrics.
-- Sending our Prometheus metric alerts to site admins via email, Slack, etc.
+## Finding Monitoring
 
-We use a custom [declarative Go generator syntax](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/monitoring) for:
+### Find available metrics
 
-- Defining the services we monitor.
-- Describing _what those services do_ to site admins.
-- Laying out dashboards in a uniform, consistent, and simple way.
-- Asserting constraints and principles that we want to hold ourselves to, such as ["every metric must have a defined alert"](#the-five-pillars-of-monitoring).
-- Generating the Prometheus alerting rules and Grafana dashboards.
-- Generating documentation in the form of ["possible solutions"](https://docs.sourcegraph.com/admin/observability/alert_solutions) for site admins to follow when alerts are firing.
+If you need to find where metrics are declared or updated you can use Sourcegraph itself to search if you have a metric name. Sometimes
+the metrics are hard to find because their name declarations are not literal strings but are concatenated instead in code from variables.
+You can try a specialized tool called `promgrep` to find them. Run the tool in the root `sourcegraph/sourcegraph` source directory.
 
-## The five pillars of monitoring
+```
+$ go get github.com/sourcegraph/promgrep
+$ promgrep <some_partial_metric_name>
+```
 
-At Sourcegraph we impose five strict constraints to monitoring which, at first, may seem quite surprising:
+If you run it in an Emacs shell buffer or in GoLand terminal then the results are clickable and get you to the locations in code
+where the metrics are declared.
 
-1. Creating dashboards that describe something other than a single Sourcegraph service is forbidden.
-2. Adding a graph/panel that visualizes a metric, without defining an associated alert, is forbidden.
-3. Creating dashboards outside of the monitoring generator, such as with the Grafana WYSIWYG editor, is forbidden. All metrics should be presented in the most plain, mundane, non-fanciful way that every site admin can understand.
-4. Creating graphs/panels with more than 5 cardinalities (labels) is forbidden (in most cases there should only be one.)
-5. The most useful information should be presented first, the least useful information should be hidden by default.
+Running `promgrep` without any arguments lists all declared metrics.
 
-To understand why we impose these constraints, see [the five pillars of monitoring](monitoring_pillars.md)
+### Queries
 
-## How easy is it to add monitoring?
+The quickest way to test these queries would be to access the Grafana instance exposed to admins at `/-/debug/grafana` via a reverse-proxy. You can then use any of [the Prometheus metric types](https://prometheus.io/docs/concepts/metric_types/) to extract useful information from the prometheus metrics mentioned above. For an example of queries we've found useful, you can see the [frontend monitoring queries here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@64aa473/-/blob/monitoring/frontend.go#L12-43).
+
+## Adding monitoring
 
 There are some steps involved, but it's easy and the development process is quite seamless:
 
 1. Get your Prometheus metric merged in our main codebase. You can find [examples](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+prometheus.MustRegister%28&patternType=literal) throughout our code, and [learn about the Proemtheus metric types](https://prometheus.io/docs/concepts/metric_types/).
+   - If you are doing this for a new service, also refer to [tracking a new service](#tracking-a-new-service).
 2. Use the Grafana Explore page [on Sourcegraph.com](https://sourcegraph.com/-/debug/grafana/explore), [k8s.sgdev.org](https://k8s.sgdev.org/-/debug/grafana/explore), or [your local development server](http://localhost:3080/-/debug/grafana/explore) to start writing your Prometheus query.
 3. Make a guess about what a good/bad value for your query is. It's OK if this isn't perfect, just do your best. Some examples:
    - `Warning: Alert{GreaterOrEqual: 50}`
@@ -99,7 +96,7 @@ There are some steps involved, but it's easy and the development process is quit
 
 As soon as you save the file, everything is regenerated by `dev/start.sh` (Grafana dashboards, Prometheus alerting rules, documentation, etc.) and you can simply refresh on the dashboard you're editing to see your changes.
 
-### (optional) configure panel options
+### Configure panel options
 
 There are not many panel options (intentionally) to keep things simple. The primary thing you'll use is to change the Grafana display from plain numbers to a unit like seconds:
 
@@ -113,7 +110,9 @@ There are not many panel options (intentionally) to keep things simple. The prim
 }
 ```
 
-### (optional) add solution documentation
+This step is optional, but highly recommended.
+
+### Add solution documentation
 
 It's best if you also add some Markdown documentation with your best guess of what someone _might consider doing_ if they observe the alert firing (again, just your best guess is good enough here):
 
@@ -130,14 +129,30 @@ It's best if you also add some Markdown documentation with your best guess of wh
 }
 ```
 
-> Tip: In `PossibleSolutions` Markdown, you can use single quotes anywhere you would normally use backticks for code, and indention will automatically be removed for you.
-
+> **Tip:** In `PossibleSolutions` Markdown, you can use single quotes anywhere you would normally use backticks for code, and indention will automatically be removed for you.
 
 Once you save the file, `doc/admin/observability/alert_solutions.md` will automatically be regenerated and you can even preview your changes at [http://localhost:5080/admin/observability/alert_solutions](http://localhost:5080/admin/observability/alert_solutions).
 
+This step is optional, but highly recommended.
+
+### Tracking a new service
+
+Metrics should be made available over HTTP for [Prometheus](./monitoring_architecture.md#sourcegraph-prometheus) to scrape. By default, Prometheus expects metrics to be exported on `$SERVICEPORT/metrics` - for example, run your local Sourcegraph dev server and metrics should be available on `http://localhost:$SERVICEPORT/metrics`.
+
+In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), Prometheus uses the Kubernetes API to discover endpoints to scrape. Just add the following annotations to your service definition:
+
+```yaml
+metadata:
+  annotations:
+    prometheus.io/port: "$SERVICEPORT" # replace with the port your service runs on 
+    sourcegraph.prometheus/scrape: "true"
+```
+
+In [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker), Prometheus relies on targets defined in the [`prometheus_targets`](https://github.com/sourcegraph/deploy-sourcegraph-docker/blob/master/prometheus/prometheus_targets.yml) configuration file - you will need to add your service here.
+
 ## Grafana
 
-Sourcegraph uses a custom Grafana image, [`sourcegraph/grafana`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/grafana), which contains minor changes from the vanilla Grafana image.
+Sourcegraph uses a custom Grafana image, [`sourcegraph/grafana`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/grafana), which contains minor changes from the vanilla Grafana image. Learn more about its role in our overall monitoring architecture [here](./monitoring_architecture.md#sourcegraph-grafana).
 
 ### Connecting Grafana to a remote Prometheus instance
 
@@ -169,20 +184,7 @@ To upgrade Grafana, make the appropriate version change to the [`sourcegraph/gra
 
 ## Prometheus and Alertmanager
 
-Sourcegraph uses a custom Prometheus image, [`sourcegraph/prometheus`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/prometheus), that bundles:
-
-* [Prometheus](https://prometheus.io), which consumes metrics from Sourcegraph services
-* [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/), which handles alerts from Prometheus
-* [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/prometheus/cmd/prom-wrapper), which subscribes to updates in [site configuration](https://docs.sourcegraph.com/admin/config/site_config) and propagates relevant settings to Alertmanager configuration.
-
-### Prometheus wrapper
-
-The [prom-wrapper](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/prometheus/cmd/prom-wrapper):
-
-* Handles starting up Prometheus and Alertmanager
-* Applies updates to site configuration by [generating a diff and applying changes](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+type:symbol+Change+OR+Diff&patternType=literal)
-  * Most notably, this includes [configuring notifiers and silences](https://docs.sourcegraph.com/admin/observability/alerting) for Sourcegraph alerts
-* [Exposes endpoints for configuration issues, alerts summary statuses, and reverse-proxies Prometheus and Alertmanager](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:docker-images/prometheus+PathPrefix%28:%5Bpath%5D%29.Handler%28:%5Bhandler%5D%29&patternType=structural)
+Sourcegraph uses a custom Prometheus image, [`sourcegraph/prometheus`](https://github.com/sourcegraph/sourcegraph/tree/master/docker-images/prometheus), that bundles Alertmanager and a wrapper program for managing configuration changes. Learn more about its role in our overall monitoring architecture [here](./monitoring_architecture.md#sourcegraph-prometheus).
 
 ### Upgrading Prometheus or Alertmanager
 
@@ -206,4 +208,3 @@ To upgrade Prometheus or Alertmanager, make the appropriate version and sum chan
 - Look at the monitoring for one of our services: [monitoring/symbols.go](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/monitoring/symbols.go)
 - Check out [the API documentation for `Observable`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/monitoring/generator.go#L106-194)
 - Send a PR and tag `@slimsag` or `@distribution` for review!
-

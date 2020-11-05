@@ -19,6 +19,7 @@ export interface Post {
         title: string
         description: string
         slug: string
+        canonical: string
         publishDate: string
         heroImage?: string
         author?: string
@@ -92,7 +93,7 @@ export interface BlogTypeInfo {
     title: string
     belowTitle?: React.ReactFragment
     baseUrl: string
-    meta: { title: string; description: string; image?: string }
+    meta: { title: string; description: string; image?: string; }
 }
 
 export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {

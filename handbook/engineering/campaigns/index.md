@@ -2,9 +2,9 @@
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/campaigneros.png"  align=right alt="Campaigñeros Logo">
 
-User-facing documentation: https://docs.sourcegraph.com/user/campaigns
+User-facing documentation: https://docs.sourcegraph.com/campaigns
 
-Developer documentation: https://docs.sourcegraph.com/dev/campaigns_development
+Developer documentation: https://docs.sourcegraph.com/dev/background-information/campaigns
 
 ### New, work-in-progress UX
 
@@ -120,7 +120,7 @@ The Campaigns team is the current owner of [src-cli](https://github.com/sourcegr
 
 ## Members
 
-- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Quinn Slack](../../../company/team/index.md#quinn-slack) is involved in the meantime.
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Rob Rhyne](../../../company/team/index.md#rob-rhyne) is involved in the meantime.
 - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager))
    - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
    - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)

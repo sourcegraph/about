@@ -27,13 +27,6 @@ When a goal is "done", move it to our [work log](worklog.md)
 - Owner: Each EM owns this for their own team and should communicate the status of the goal setting process for their team in the handbook itself.
 - Status: [In progress](../../../company/goals.md#engineering).
 
-#### Engineering manager onboarding
-
-- Problem: We recently hired and onboarded our first group of engineering managers and onboarded each of them in an ad hoc way. We will be hiring at least one more engineering manager in the near future (for the web team) and we want to document what we have learned so they have an even better onboarding experience.
-- Owner: Nick
-- Plan: Document the onboarding process for engineering managers in our handbook before the EM for the web team starts.
-- Status: Not started.
-
 ### Medium term (~3-6 months)
 
 #### Publicly documented compensation bands
@@ -61,11 +54,10 @@ When a goal is "done", move it to our [work log](worklog.md)
 ### Slack
 
 - #leadership-chat is a public channel (not specific to this team or engineering) where anyone can discuss and share information of general interest to leadership at Sourcegraph.
-- #eng-leadership-team is a private channel for members of this team to discuss sensitive topics, or topics that would be noise to people outside of the team. For anything else, prefer to use #leadership-chat.
 
 ### Meetings
 
-We have a 1hr sync with product and engineering every Tuesday at 9am PT ([meeting notes](https://docs.google.com/document/d/10fEh3Cw0ENKjFYDP-4OoLZbOZTVAtMpifc2WM_1mGVU/edit)).
+We have a 1hr sync with product and engineering every Monday at 9:30am PT ([meeting notes](https://docs.google.com/document/d/10fEh3Cw0ENKjFYDP-4OoLZbOZTVAtMpifc2WM_1mGVU/edit)).
 
 ### Weekly updates
 
@@ -78,6 +70,8 @@ Engineering managers send an update to [engineering-leadership-status@sourcegrap
 - What should my peer-team/manager be aware of?
 
 If you have sensitive information to communicate, please send a separate email directly to the relevant people.
+
+The subject of the email should contain the date the update is being sent (e.g. "Search update 2020-10-14") so each weekly update starts a distinct thread (otherwise they get grouped together in the Google Groups UI).
 
 ## Book recommendations
 

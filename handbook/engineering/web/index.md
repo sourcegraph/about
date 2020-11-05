@@ -1,51 +1,35 @@
+<img src="./logo.svg" alt="Sourcegraph Web Team Logo" style="width: 35%; float: right; margin-left: 1rem">
+
 # Web team
 
 The web team owns the maintenance and expansion of our web application and code host integrations as vehicles to deliver the value of [extensions](https://docs.sourcegraph.com/extensions) to our users.
 
 This is a large ownership area, so the team creates a focused plan each iteration, by agreeing on an appropriately small set of [iteration goals](../../../company/goals/index.md). Each goal should have more than one teammate working on it.
 
+<div style="clear: both"/>
+
 ## Contact
 
 - #web channel or @web-team in Slack.
 - [team/web](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/web) label and [@sourcegraph/web](https://github.com/orgs/sourcegraph/teams/web) team on GitHub.
 
-## Goals
+## [Goals](goals.md)
 
-### Long term
-
-**_Deliver the full, unique value of [extensions](https://docs.sourcegraph.com/extensions) to our users._**
-
-**Outcome**: Our webapp, browser extensions and native integrations are great platforms to provide our users unique value through extensions. These platforms are well-maintained, consistent, easy to setup, well-documented, well-tested, performant, and show their power through convincing extensions built on top of them. The extensions platform and API provide powerful capabilities to extension developers and a great developer experience.
-
-### Medium term
-
-To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans.
-We will tackle these medium-term goals in order, though expect to have some work done in parallel as we progress.
-
-1. **Make the products that extensions are build on (web app, code host integrations) more consistent and improve discoverability.**
-   Our web app has accumulated a lot of design debt over time, which negatively impacts how we can use it as a vehicle to deliver extensions.
-   With areas like the repository page, user settings area (which extensions are configured through), navigation, command palette UI and the extension registry affected, it is hard to provide a good UX around extensions (the extension registry blends into goal (2)).
-   Our code host integrations, which are an implementation of our extension API, are a huge driver of adoption inside companies and multiply the value of extensions by bringing them into code review workflows, but are difficult to discover and setup.
-2. **Bring the extension platform into shape.**
-   Our extension platform includes the workflow around creating, installing and using extensions, the API exposed to developers and its documentation.
-   To grow adoption of extensions, these need to be solid, but they are currently lacking on multiple dimensions.
-   Some API areas like code insights are still in prototype phase and are still undocumented (this blends into goal (3)).
-   Our extension host is also currently implemented in a way that makes it difficult for us to maintain, evolve to enable more use cases and to onboard new teammates into this area of the codebase.
-   Combining this with writing a few smaller extensions (part of goal (3)) allows us to dogfood the experience and inform us where the platform is lacking.
-3. **Build out compelling use cases with the extensions platform.**
-   This includes writing more extensions ourselves, but also extending the extension API with more capabilities to enable more use cases.
-   We have a long list of ideas and use cases customers shared with us that we can solve and/or enable customers to solve with extensions.
-   Some of these integrate Sourcegraph with more external services to suit the setups of more customers, others provide completely new value no other product provides.
-
-### Short term
-
-See [iterations](#iterations).
+See [goals](goals.md)
 
 ## Tech stack
 
 TypeScript, React, RxJS, GraphQL, Go.
 
 ## Processes
+
+### Backlog
+
+The web team keeps a [backlog Github project board](https://github.com/orgs/sourcegraph/projects/98).
+
+We use the backlog for tracking bugs, small features, and unplanned work. We don't use the backlog for tracking work that is expressly planned in our [roadmap](../../product/roadmap.md#web).
+
+To add an issue, tag it `team/web` to notify the web team PM and put it in the "to triage" column of the board. Unless you're directly asked, only web team members should move issues out of the "to triage" column on the board. A web team member will confirm the issue is web team-related, and then move it to the appropriate column.
 
 ### Iterations
 
@@ -109,7 +93,7 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 ## Members
 
 - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/product_manager.md))
-- [J.P.](../../../company/team/index.md#todo) ([Engineering Manager](../roles.md#engineering-manager)) starting 2020-11-02. In the meantime, Felix will run team syncs, goal setting, iteration planning, retrospectives and team status updates.
+- [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](../roles.md#engineering-manager))
   - [Felix Becker](../../../company/team/index.md#felix-becker)
   - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)

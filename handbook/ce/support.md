@@ -16,6 +16,22 @@ Because our code is open source, any user can file an issue on our public issue 
 - You may not want to discuss your private deployment or configuration, to share your logs, etc.
 - We won't be able to measure (and improve on) our response and resolution times.
 
+### New customer welcome message
+When a new customer first comes onboard (i.e. signs a contract with us for the first time), we like to send them a welcome message from the Support team (and support@sourcegraph.com email address), introducing ourselves and the official process for reaching out requesting support. The template is as follows:
+
+>Hello \<Customer Name\>!
+
+>My name is \<CE Rep Name\>, I’m a Customer Engineer here at Sourcegraph, and I want to welcome you to our support family! We’re excited that you’ve joined us and want to let you know we are here to help you be successful in resolving any issues with deploying, operating, and maintaining your Sourcegraph instance. 
+
+>We are truly passionate about helping make your experience with Sourcegraph as successful as possible, so if you ever need assistance or have any questions pertaining to your Sourcegraph instance, please don’t hesitate to reach out to us at support@sourcegraph.com.
+
+>Have a wonderful week, \<Customer Name\>. Please let us know how we can help!
+
+>\<CE Rep Name\>  
+Customer Engineer  
+support@sourcegraph.com
+
+
 ## How to provide support
 
 - [Support duties](#support-duties)
@@ -104,6 +120,10 @@ Enterprise Plus and Elite customers should refer to their contracts if they have
 1. Visit the [instances Looker dashboard](https://sourcegraph.looker.com/looks/436).
 1. Find the row for the customer's instance. (If you can't find it, ask in #analytics on Slack.)
 1. Look at the version number in the row's **Latest Version** column.
+
+### Offline instances
+
+Some customer instances are offline or only [provide critical telemtry](https://docs.sourcegraph.com/admin/pings#critical-telemetry). The [full list is in Google Drive](https://docs.google.com/document/d/18q-xbHl53hg_y_0xX-buZpD04vMv3vJrqiXd9IeeE64/edit). 
 
 ## Getting nice email signatures
 

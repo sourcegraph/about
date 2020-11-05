@@ -2,12 +2,14 @@
 
 The Sales team represents us and our values to customers, bringing back dollars and feedback to help us grow.
 
+- [Account Tiers](https://docs.google.com/document/d/14420oruJWMLKj67ObZiDzRK5GpHmRWXDjlDbH7L6T00/edit?ts=5f7e4023#heading=h.qdguquy7dt7i)
 - [Pricing](https://about.sourcegraph.com/pricing)
 - [Common questions from prospective customers](common_customer_questions.md)
 - [Sales team onboarding](onboarding/index.md)
 - [Sales interview process](interviews/index.md)
 - [Recording lead and customer emails, calls, and notes](records.md)
 - [Using Salesforce](salesforce.md)
+- [Sales Resources](salesresources.md)
 
 ## Pipeline, data, and models
 
@@ -101,6 +103,12 @@ Company has 50+ devs
 Target Accounts are prospective customer accounts that the SDR/AE have specifically identified as priority accounts for outbound prospecting efforts.
 
 Target Accounts can be easily identified in Salesforce by the “Target Account” field designation. To make any updates to this field on a particular account, please contact your manager.
+
+AE can trade a targeted account for an unassigned account with managers approval. Must be in writing and sent to the Manager and SDR team.
+If the Manager accepts trade/Account will be transferred to AE. AE’s SDR will be assigned automatically to account unless there is activity within the last 30 days by an SDR.
+
+If there is activity on the account by an SDR other than the AE’s, The SDR will have 30 days from the Assignment date to set an opportunity.  If no opportunity(per ROE of opportunity criteria) exists after 30 days, the account will be assigned to the AE’s SDR.
+SDR also has the authority without managers approval to assign the account to the AE’s SDR right away.
 
 ## Stages
 

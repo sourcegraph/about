@@ -67,7 +67,7 @@ For the most popular languages, the new language extensions are enabled by defau
 
 We want anyone to be able to start using Sourcegraph for code search without reading a manual. That's why we made Sourcegraph search super fast and added one-click query suggestions (computed locally using heuristics) to refine your query.
 
-But when you're searching more than a couple times daily, learning Sourcegraph's search keywords (such as `repo:`) will make you more productive. Click the new <kbd>?</kbd> icon next to any search button to see a quick reference. See ["Search query syntax"](https://docs.sourcegraph.com/user/search/queries) for more info.
+But when you're searching more than a couple times daily, learning Sourcegraph's search keywords (such as `repo:`) will make you more productive. Click the new <kbd>?</kbd> icon next to any search button to see a quick reference. See ["Search query syntax"](https://docs.sourcegraph.com/code_search/reference/queries) for more info.
 
 [Try it out](https://sourcegraph.com/search?q=repo:%5Egithub.com/kubernetes/kubernetes%24+lang:go+-f:test+-f:vendor+controller) (click the <kbd>?</kbd> next to the search button):
 

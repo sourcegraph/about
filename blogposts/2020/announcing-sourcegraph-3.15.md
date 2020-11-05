@@ -92,7 +92,7 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
   <p style="text-align: center"><a href="https://youtu.be/PAsZP6wv3Gg" target="_blank">View on YouTube</a></p>
 </p>
 
-Search for file contents using AND and OR expressions in queries. These operators enable more expressive searches in regexp and structural search modes. [The documentation](https://docs.sourcegraph.com/user/search/queries#operators) includes more details about how to these operators and their precedence and grouping.
+Search for file contents using AND and OR expressions in queries. These operators enable more expressive searches in regexp and structural search modes. [The documentation](https://docs.sourcegraph.com/code_search/reference/queries#operators) includes more details about how to these operators and their precedence and grouping.
 
 For example, if you want to find all of the places where two functions are within the same file, you can use the AND operator: `conf.Get( and log15.Error(` &mdash; [see example query results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+conf.Get%28+and+log15.Error%28&patternType=regexp).
 

@@ -28,7 +28,7 @@ Ready to install or upgrade? **[Install Sourcegraph 2.5](https://docs.sourcegrap
 
 ### Code change notifications
 
-We've added email and Slack notifications for saved searches, so you get "Google Alerts"-style notifications for any code change that matches a query. You can use this to get notified when there are API changes, new dependencies, use of certain OSS licenses (such as GPL), security- and authentication-related changes, AWS secret keys committed in code, etc. [Set up saved searches and notifications.](https://docs.sourcegraph.com/user/search#saved-searches)
+We've added email and Slack notifications for saved searches, so you get "Google Alerts"-style notifications for any code change that matches a query. You can use this to get notified when there are API changes, new dependencies, use of certain OSS licenses (such as GPL), security- and authentication-related changes, AWS secret keys committed in code, etc. [Set up saved searches and notifications.](https://docs.sourcegraph.com/code_search/explanations/features#saved-searches)
 
 <div class="pa2 ba b--light-8 br2" style="padding-bottom:27.2%;height:0;position:relative;overflow:hidden;">
 
@@ -79,7 +79,7 @@ You can now easily configure Sourcegraph to search across all of your GitLab pro
 
 ### Improved search scopes UI
 
-Search scopes are now accessible on every page to more easily filter your search. Click the down-arrow next to the search bar to view your scopes and refine your search. [See the documentation on adding search scopes](https://docs.sourcegraph.com/user/search/scopes).
+Search scopes are now accessible on every page to more easily filter your search. Click the down-arrow next to the search bar to view your scopes and refine your search. [See the documentation on adding search scopes](https://docs.sourcegraph.com/code_search/how-to/scopes).
 
 ### Search scope pages
 

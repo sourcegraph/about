@@ -79,7 +79,7 @@ We plan to continue on this path of performance improvements, and the next relea
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
-An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/user/code_intelligence/precise_code_intelligence) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
+An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
 
 To see this experiment in action, find a Go repository hosted on GitHub that has not been picked up by Sourcegraph. Then, visit that repository on [sourcegraph.com/search](https://sourcegraph.com/search). After navigating through the codebase for a while, you should see the hover tooltips and definition results become more accurate.
 
@@ -185,7 +185,7 @@ We are running a [survey](https://www.surveygizmo.com/s3/5628315/SG) to understa
 - Notifications about Sourcegraph being out of date will now be shown to site admins and users (depending on how out-of-date it is).
 - Alerts are now configured using `observability.alerts` in the site configuration, instead of via the Grafana web UI. This does not yet support all Grafana notification channel types, and is not yet supported on `sourcegraph/server` ([#11473](https://github.com/sourcegraph/sourcegraph/issues/11473)). For more details, please refer to the [Sourcegraph alerting guide](https://docs.sourcegraph.com/admin/observability/alerting).
 - Experimental basic support for detecting if your Sourcegraph instance is over or under-provisioned has been added through a set of dashboards and warning-level alerts based on container utilization.
-- Query [operators](https://docs.sourcegraph.com/user/search/queries#operators) `and` and `or` are now enabled by default in all search modes for searching file content. [#11521](https://github.com/sourcegraph/sourcegraph/pull/11521)
+- Query [operators](https://docs.sourcegraph.com/code_search/reference/queries#operators) `and` and `or` are now enabled by default in all search modes for searching file content. [#11521](https://github.com/sourcegraph/sourcegraph/pull/11521)
 
 ### Changed
 

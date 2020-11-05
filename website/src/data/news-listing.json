@@ -1,11 +1,39 @@
 {
   "y2020": [
     {
+      "newsSource": "Fast Company",
+      "newsTitle": "I’m deaf, and this is what happens when I get on a Zoom call",
+      "newsDate": "October 26, 2020",
+      "newsLink": "https://www.fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call",
+      "newsImage": "/external-logos/fast-company-logo.png"
+    },
+    {
+      "newsSource": "SD Times",
+      "newsTitle": "Report: The emergence of Big Code comes with big problems",
+      "newsDate": "October 23, 2020",
+      "newsLink": "https://sdtimes.com/softwaredev/report-the-emergence-of-big-code-comes-with-big-problems/",
+      "newsImage": "/external-logos/sd-times-sq-logo.svg"
+    },
+    {
+      "newsSource": "Software.com",
+      "newsTitle": "Big Code—How ‘More Code, Faster’ Creates Problems",
+      "newsDate": "October 15, 2020",
+      "newsLink": "https://www.software.com/src/big-code-how-more-code-faster-creates-problems",
+      "newsImage": "/external-logos/software-com-src-logo.png"
+    },
+    {
       "newsSource": "Devops.com",
       "newsTitle": "New Survey Highlights Codebase Size Problems",
       "newsDate": "October 9, 2020",
       "newsLink": "https://devops.com/new-survey-highlights-codebase-size-problems/",
       "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
+      "newsSource": "Devchat.tv",
+      "newsTitle": "Podcast: Caddy 2 Web Server with Matthew Holt (starts 1:10:22)",
+      "newsDate": "October 6, 2020",
+      "newsLink": "https://devchat.tv/js-jabber/jsj-452-caddy-2-web-server-with-matthew-holt/",
+      "newsImage": "/external-logos/devchat-tv-logo.png"
     },
     {
       "newsSource": "Gigazine",
@@ -69,6 +97,13 @@
       "newsDate": "October 4, 2020",
       "newsLink": "https://developers.slashdot.org/story/20/10/04/0157214/51-of-developers-say-theyre-managing-100-times-more-code-than-a-decade-ago",
       "newsImage": "/external-logos/slashdot-logo.png"
+    },
+    {
+      "newsSource": "Techzine",
+      "newsTitle": "Ontwikkelaars beheren 100 keer meer code dan 10 jaar geleden",
+      "newsDate": "October 2, 2020",
+      "newsLink": "https://www.techzine.be/nieuws/devops/61168/ontwikkelaars-beheren-100-keer-meer-code-dan-10-jaar-geleden/",
+      "newsImage": "/external-logos/techzine-logo.png"
     },
     {
       "newsSource": "Best Gaming Pro",

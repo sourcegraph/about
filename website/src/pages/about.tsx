@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import * as sacks from '../images/about/david-sacks.jpg'
 import * as craft from '../images/about/sg-craftventures.png'
+import * as felicis from '../images/about/sg-felicis.png'
 import * as goldcrest from '../images/about/sg-goldcrest.png'
 import * as redpoint from '../images/about/sg-redpoint.png'
 
@@ -249,6 +250,9 @@ export default class About extends React.Component<any, any> {
                                     <div className="col-md-3">
                                         <img src={goldcrest} alt="Goldcrest Capital" />
                                     </div>
+                                    <div className="col-md-3">
+                                        <img src={felicis} alt="Felicis Ventures" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +273,7 @@ export default class About extends React.Component<any, any> {
                                     </li>
                                     <li className="about__founders-board-member">
                                         <img
-                                            src="https://www.redpoint.com/app/uploads/2015/08/Redpoint_Scott_Raney-0033-Edit-297x297.jpg"
+                                            src="https://cdn.sanity.io/images/22xmfoma/production/9cd78ccf0ec09884fc271d8736331b479df35e5f-804x798.jpg"
                                             alt="Scott Raney"
                                         />
                                         <div className="p-2">
@@ -385,7 +389,7 @@ export default class About extends React.Component<any, any> {
                         </div>
                     </div>
                 </div>
-            </Layout>
+            </Layout >
         )
     }
 }

@@ -15,9 +15,21 @@
 - What is the purpose of the team the candidate would be joining, and why would a candidate want to join your team?
 - If this is the first hire for a particular role/team, what are the high-level expectations for that new role/team?
 
-### Qualifications:
+### Responsiblities
 
-Minimum qualifications to do the job - include only absolutely necessary skills in this section.
+Multiple formats can be used for this section. 
+- For a role where you expect to hire a single person: 
+  - Paragraph format describing the responsiblities.
+  - What you expect the role to accomplish in the first 30, 60, and 90 days. 
+- For general roles expecting looking to hire a range of experience like engineering or sales:
+  - Paragraph format will likely make more sense as expectations for what an employee will accomplish will depend on their experience.
+
+### Qualifications:
+The qualifications and nice to haves sections should include concrete set of skills and experiences that are identifiable in a candidate's profile or application. These are the skills and experiences for the team to determine if we want to move forward with an interview. This section is a subset of everything we need for the role. This section excludes anything that would be a given for any of our roles. For example: high agency is something we would look for in all our roles, and creating high quality software is something we would look for in all our engineers.
+
+Best use of this section is to list skills and experiences that are unique to the role that is quantifiable and identifiable.
+
+Qualification section are the minimum qualifications to do the job - include only absolutely necessary skills and experiences in this section.
 
 - Quantifiable and demonstrable skills.
 - Examples of demonstrable skills:
@@ -25,6 +37,7 @@ Minimum qualifications to do the job - include only absolutely necessary skills 
   - Brought on $500K+ contracts from top Fortune 500 companies.
 - Avoid qualitative words like "excellent" or "passionate".
 - Do not include "nice to haves" in this section.
+- Avoid general skills that is expected of everyone we hire, or is expected for everyone in that role. For example, communication skills, being collaborative, able to write clean and reusable code for engineering roles, or writing skills for writer roles.
 
 ### Nice to haves:
 

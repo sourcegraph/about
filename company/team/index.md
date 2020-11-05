@@ -93,10 +93,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Vanesa Ortiz (she/her)
 
+- Name pronunciation: /[ˈvanɛsa ɔɹˈtiz](http://ipa-reader.xyz/?text=%5B%CB%88van%C9%9Bsa%20%C9%94%C9%B9%CB%88tiz%5D&voice=Penelope)/
 - Content Engineer
 - San Francisco, CA, USA 🇺🇸
 - [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
-- Vanesa loves to travel (45 countries so far), spend time with her daughter and husband, sing and make jewelry. She grew up in the jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics and Political Science before transtitioning to software engineering. Her weakness is sushi.
+- Vanesa loves to travel (45 countries so far), spend time with her daughter, son and husband, sing and make jewelry. She grew up in the Dominican jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics before transtitioning to software engineering. Her weakness is sushi.
 
 ## Noemi Mercado (she/her)
 
@@ -316,13 +317,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [elizabeth@sourcegraph.com](mailto:elizabeth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/elizabeth-stirling-753b2779/)
 - Elizabeth is a Seattle area native who loves exploring the city. She has been interested in security ever since reading [Neal Stephenson's novel Reamde](https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497) when she was a kid. Her spare time is spent hiking around the forests of the Pacific Northwest and working on whatever side project catches her fancy. She has spent far too much money on keyboards and pretty rocks - sometimes even forging her own Bismuth crystals. Elizabeth graduated with a B.S. in Computer Science from the University of Washington in Seattle.
 
-## Tion Thomas (he/him)
-
-- Customer Engineer
-- Frederick, MD, USA, us
-- [tion@sourcegraph.com](mailto:tion@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tion-thomas-30562017), [tistru](https://github.com/tistru), [YouTube](https://www.youtube.com/channel/UC9l1NGH1xciYs9z1LQ6CtqA)
-- Tion is a native New Yorker who has spent time all over the US including Boston, Florida, Indiana, Oregon, and currently Maryland. He has a B.S and M.S in computer science from Tufts University and Purdue University respectively. Prior to joining Sourcegraph, Tion has worked in a variety of domains including systems engineering, software validation, strategic planning, UX, application engineering, programming, developer relations, and technical production spread over Lockheed Martin, Electronic Arts, Intel, Razer, and Magic Leap. His passion is in gaming and he continues to be an active member on many gaming forums and blogs while playing some of the latest games in his spare time. He also enjoys sports, music, and is an AV enthusiast (home theater and audio/video technologies). Tion is a proud father of 2 beautiful kids and a husband of 7 years! He loves working with customers and helping to enable amazing technology that is readily accessible to everyone.
-
 ## Quinn Keast (he/him)
 
 - Product Designer
@@ -424,6 +418,53 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Mountain View, CA, USA 🇺🇸
 - [joe.kirscher@sourcegraph.com](mailto:joe.kirscher@sourcegraph.com)
 - Joe grew up in Nebraska before coming out to California for college. He has grown to love the mild weather and wine country around the Bay Area, which is fortunate, because he doesn't play football so they won't let him back into Nebraska. After a couple years of consulting, he then spent a total of 10 years working in Sales Operations at Yahoo and FireEye and is now excited to help Sourcegraph scale up!
+
+## Kacie Jenkins (she/her)
+
+- VP of Marketing
+- Sea Ranch, CA, USA 🇺🇸
+- [kacie@sourcegraph.com](mailto:kacie@sourcegraph.com), [@mskaciej](https://twitter.com/mskaciej), [LinkedIn](https://www.linkedin.com/in/kaciejenkins)
+- Kacie lives on the northern California coast with her partner Brooks and their feisty little pup, Beatrix (Bebe). Prior to Sourcegraph, Kacie led global marketing at Ace Hotel Group, where she launched the first AI-generated hotel lobby soundscape in partnership with Bjork and Microsoft. As VP of Marketing at Fastly, she helped grow Fastly from a 25-person startup into a global, publicly-traded company. She has memorized the Joy of Cooking chocolate chip cookie recipe, and always has a song playing in her head.
+
+## Jonah Dueck (he/him)
+
+- Customer Engineer
+- Santa Clara, CA, USA 🇺🇸
+- [jonah@sourcegraph.com](mailto:jonah@sourcegraph.com), [justdueck](https://github.com/justdueck), [LinkedIn](https://www.linkedin.com/in/jonah-dueck/)
+-  Jonah has been working within the IT space since high school. He started out by founding and running a small IT company in northern Nevada while still in high school and after graduating, moved on to working for another small company in Northern California. Most recently, he worked in internal IT operations and technical program management at Google for about 2 years. Outside of work, he enjoys rock climbing, playing music (guitar and drums), riding his motorcycle and working on his old VW bus (there's always something breaking on it).
+
+## Artem Ruts (he/him)
+
+- Software Engineer
+- Pittsburgh, PA, USA 🇺🇸
+- [artem@sourcegraph.com](mailto:artem@sourcegraph.com), [artemruts](https://github.com/artemruts), [LinkedIn](https://www.linkedin.com/in/artemruts/)
+- Name pronunciation: /[arˈtʲɵm ruts](http://ipa-reader.xyz/?text=ar%CB%88t%CA%B2%C9%B5m%20ruts)/
+- Artem is a Software Engineer from Belarus with a Master’s in Computer Science. Before teaming up with Sourcegraph, Artem dazzled the IT crowd at Wayfair and, prior to that, Thomson Reuters. Avid believers in lifelong learning, Artem and his awesome wife currently enjoy dabbling in blocks, balls, and trucks with their infant daughter. In his rare and fleeting free time, you might be able to catch him rollerblading (though you’d have to be awfully fast) or studying foreign languages.
+
+## Alex Russell-Saw (he/him)
+
+- Software Engineer
+- Peckham, London, UK 🇬🇧
+- GitHub: arussellsaw
+- [alex@sourcegraph.com](mailto:alex@sourcegraph.com), [@arussellsaw](https://twitter.com/arussellsaw) 
+- Alex lives in Southeast London with his partner Rebecca (a chef), with their cat and dog (Gillian and Dustin). Before Sourcegraph he was building a bank at Monzo. In their free time they enjoy eating too much and drinking natural wines, as well as cooking all sorts of nonsense. He is also a serial project starter-but-not-finisher and you can find some of his fine unfinished work here: https://books.russellsaw.io https://news.russellsaw.io https://yaas.cat, he's also learning to make video games but isn't very good yet.
+
+## Jean du Plessis (he/him)
+
+- Engineering Manager, Web
+- Cape Town, South Africa 🇿🇦
+- GitHub: [jeanduplessis](https://github.com/jeanduplessis)
+- Name pronunciation: [ʒɑ̃n dy plɛsi](http://ipa-reader.xyz/?text=%CA%92%C9%91%CC%83n%20dy%20pl%C9%9Bsi&voice=Joey)
+- [jean@sourcegraph.com](mailto:jean@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jeandp)
+- Jean lives with his wife, quadruplet daughters and 3 dogs in Cape Town, South Africa. Their family loves the outdoors, whether it's hiking in the mountains or spending time at the beach. He's been in IT for the past 16 years of which he's been a manager for 7. Prior to Sourcegraph, he was a manager at GitLab.
+
+## Eli Rothschild (He/Him)
+
+- Account Executive
+- New York, New York (Currently in Boca Raton, FL)
+- [eli@sourcegraph.com](mailto:eli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eli-rothschild-b922824a/)
+- Eli was raised in Baltimore, MD, has been in New York City since 2007 (resided in 4 of the 5 boroughs), and recently joined the unofficial 6th borough of NYC, Boca Raton, FL. He has been in SaaS sales with early stage to high growth companies for a majority of his professional career. Prior to joining Sourcegraph, Eli was an Enterprise Account Executive at Segment, and previously at Mixpanel during similar stages of company growth. When not listening to the latest tech and business podcasts, Eli is a student of U.S and World history, enjoys playing chess, following his favorite sports teams, and traveling with his wife.
+
 
 <!-- Paste *your* section above this line by following our template below:
 
