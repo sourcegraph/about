@@ -74,7 +74,7 @@ We want to discover what external systems our users want to use campaigns with, 
 
 Our team's public roadmap is part of our larger [Product roadmap](https://about.sourcegraph.com/handbook/product/roadmap#campaigns).
 
-### Process
+### Roadmap Process
 
 Our roadmapping process is a team effort. As we receive customer feedback, and as we come up with cool new features, we record these in one of three places. Customer feedback goes into our [team Productboard page](https://sourcegraph.productboard.com/feature-board/2104383-campaigns). Well-defined tasks live in our [team backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fcampaigns+milestone%3ABacklog). And larger, less defined ideas live in the bottom section of our [private roadmap doc](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaWgLk1dBvQVKDg-J7pwjGg8tpps/edit#), below the _fog of war_ line.
 
@@ -134,5 +134,4 @@ No open positions at this time.
 
 - [User-facing documentation](https://docs.sourcegraph.com/campaigns)
 - [Developer documentation](https://docs.sourcegraph.com/dev/background-information/campaigns)
-
 
