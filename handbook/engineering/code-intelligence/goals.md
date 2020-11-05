@@ -3,6 +3,7 @@
 ## Goals
 
 ### Grow LSIF adoption and usage reaching [*N<sub>0</sub>*][N0] precise code intel operations a month
+
 Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
 **Problem:** By default, users get basic code intel results which are often incorrect for tokens with common names (such as Get). This is solved by enabling precise code intel, which gives users faster, 100% accurate results for a definition or reference for a symbol they hover over. 
@@ -53,5 +54,3 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 [N7]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.22p5u8gdheua
 [N8]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.wugsa2bws90r
 [N9]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.xq968uve0czg
-
-
