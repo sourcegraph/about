@@ -4,48 +4,48 @@
 
 Goals help us achieve our [vision](index.md#vision) for search.
 
-### Scalable
+### Mature query language
 
-- **Scale indexed search to 500k repositories**
-   - **Problem:** We have customers who need Sourcegraph to scale to 500k repositories. Some parts of Sourcegraph don't work well at that scale.
-   - **Outcome:** Sourcegraph can search 500k repositories in less than 300ms. This is on par with [grep.app](https://grep.app).
-   - **Planned work:** [Scaling indexed text search to 500k repositories](#4-scaling-indexed-text-search-to-500k-repositories)
+**Problem:** customers choose other search tools over Sourcegraph because they cannot express the queries they care about with Sourcegraph. TODO customer examples.
 
-### Fast
+**Targets**
 
-- **Unblock improving user perceived performance**
-  - **Problem:** Our current search infrastructure relies on on-shot requests with aggressive timeouts, but it is hard to tune those timeouts for large codebases. If we make the timeouts too small, then search may not return results for needle-in-the-haystack queries (because the search timed out). If we make the timeouts too large, then search becomes slower across the board and users spend time waiting for more results when we could have returned useful results to them sooner. Detecting and handling these timeouts across multiple service boundaries is also error prone and has led to bugs.
-  - **Outcome:**
-      - Unblock the ability to add responsive and fast-loading search results.
-      - Return results faster for large result sets, e.g. indexed repositories in very large codebases.
-  - **In progress work:** [Streaming search](#5-streaming-search)
+TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph with other search tools
 
-### Expressive
+**Milestones**
 
-- **Extend Search Query Language**
-  - **Problem:** It is imperative that users can find and filter the code, files, repositories, and commits they care about in extremely large codebases.
-  - **Outcomes:** Users can express relations on code, files, repositories, and commits in search queries to more effectively filter the data they need. Sourcegraph is the exclusive industrial-strength search solution that provides these capabilities.
-  - **Planned work:** [Search language rules engine](#10-search-language-rules-engine)
+1. Search expressions
+1. Search language rules engine
 
-### Easy to use
+### Performant search users can trust
 
-- **Improve search experience**
-  - **Problem:**
-      - New users who are trying Sourcegraph for the first time have trouble learning the syntax and breadth of Sourcegraph features.
-          - **In progress work:** [Search tour](#2-search-tour)
-      - It is hard for users to quickly get to code they care about.
-          - **In progress work:** [Enterprise homepage](#1-enterprise-homepage)
-  - **Outcomes:**
-     - New users introduced to Sourcegraph are able to quickly run searches that show them the value of Sourcegraph.
-     - Users can run searches over code they care about more quickly.
-     - Sourcegraph surfaces code and searches users care about.
+**Problem:** Search is too slow or frequently times out at the scale some of our customers care about, and at the scale we want Sourcegraph Cloud to reach. In large-scale codebases, running the same search several times yields varying result counts, with no insights into the underlying reasons. Customers cannot trust that their codebase was exhaustively searched.
 
-### Shareable
+**Targets**
 
-- **Code monitoring** ([RFC 227](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit))
-  - **Problem:** Users want to be notified about important things going on in their code.
-  - **Outcome:** Notifications create a shared understanding and raise awareness of what’s going on in the code.
-  - **Planned work:** [Code monitoring version 1](#6-code-monitoring-version-1)
+- **By EOY 2020**: Latency for the set of search queries run by search-blitz is less than TODO Nms with 500k repositories indexed on Sourcegraph Cloud
+    - 2020-11-05: TODO
+- **By EOY 2020**: P99 time to first result is less than TODO Nms across all search types on Sourcegraph Cloud
+    - 2020-11-05: TODO
+
+
+**Milestones**
+
+1. Scale indexed text search to 500k repositories
+1. Streaming search
+
+### Better monitoring capabilities
+
+**Problem:** Customers want to be notified about important changes in their codebase. Our saved searches feature fails to address their desired use cases, so they have been building workarounds themselves. Saved searches are limited to email notifications, where webhooks would allow Sourcegraph notifications to reach a wider audience at customer orgs. TODO customer examples.
+
+**Target**
+
+- **By TODO timeline**: TODO N customers are using code monitors
+    - 2020-11-05: 0 customers are using code monitors
+
+**Milestones**
+
+1. Code monitoring (private code monitors, no sharing, emails + webhooks)
 
 ---
 
@@ -57,7 +57,7 @@ The search roadmap is driven by the team's [goals](#goals).
 1. 🔄 [Enterprise homepage](#1-enterprise-homepage)
 1. 🔄 [Search tour](#2-search-tour)
 1. 🔄 [Search expressions](#3-search-expressions)
-1. 🔄 [Scaling indexed text search to 500k repositories](#4-scaling-indexed-text-search-to-500k-repositories)
+1. 🔄 [Scale indexed text search to 500k repositories](#4-scale-indexed-text-search-to-500k-repositories)
 1. 🔄 [Streaming search](#5-streaming-search)
 1. [Code monitoring (private code monitors, no sharing, emails + webhooks)](#6-code-monitoring-version-1)
 1. [Performance at scale](#7-performance-at-scale)
@@ -104,7 +104,7 @@ See [search roadmap prioritization](https://docs.google.com/document/d/1sUoaF8ot
 - **Owner:** Rijnard
 - **Status:** In progress
 
-### 4. Scaling indexed text search to 500k repositories
+### 4. Scale indexed text search to 500k repositories
 
 - **Plan:** Incrementally add repositories to Sourcegraph.com until searches get slow or start breaking. Fix those things. Then continue adding repositories.
 - **Owners:** Keegan/Stefan
