@@ -54,7 +54,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
        - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
        - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
        - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
-       - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
+       - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
    - 30m **VP Engineering**
    - 30m **CTO**
    - 30m **CEO**
