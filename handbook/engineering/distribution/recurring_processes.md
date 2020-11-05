@@ -11,7 +11,7 @@
 
 ## Every two weeks
 
-At the beginning of each cycle, [we determine](#planning) what work we plan to do to bring us closer to accomplishing our goals. We run a [retrospective meeting](#retrospective) at the end of each cycle to review the progress we have made over the cycle, reflect on what worked well and identify improvement areas.
+At the beginning of each cycle, [we determine what work we plan to do](#planning) to bring us closer to accomplishing our goals. We run a [retrospective meeting](#retrospective) at the end of each cycle to review the progress we have made over the cycle, reflect on what worked well and identify improvement areas.
 
 ### Planning
 
