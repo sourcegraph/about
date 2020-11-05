@@ -1,8 +1,9 @@
-# Code Intelligence goals
+# Code Intelligence goals and priorities
 
-Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
+## Goals
 
 ### Grow LSIF adoption and usage reaching [*N<sub>0</sub>*][N0] precise code intel operations a month
+Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
 **Problem:** By default, users get basic code intel results which are often incorrect for tokens with common names (such as Get). This is solved by enabling precise code intel, which gives users faster, 100% accurate results for a definition or reference for a symbol they hover over. 
 
@@ -10,30 +11,37 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. Deliver precise Go code intelligence to 3 customers.
-    - ✅ [*N<sub>1</sub>*][N1]
-    - 🔄 [*N<sub>2</sub>*][N2]
-    - [*N<sub>3</sub>*][N3]
-1. Deliver precise C++ code intelligence to 3 customers.
-    - [*N<sub>4</sub>*][N4]
-    - [*N<sub>5</sub>*][N5]
-    - [*N<sub>6</sub>*][N6]
+1. 🔄 Deliver precise Go code intelligence to 3 customers.
+1. 🔄 Deliver precise C++ code intelligence to 3 customers.
 1. 🔄 Support automatically indexing source code within Sourcegraph.
 1. 🔄 Support incremental indexing of Go source code.
-1. Deliver precise Java code intelligence to 3 customers.
-    - [*N<sub>7</sub>*][N7]
-    - [*N<sub>8</sub>*][N8]
+1. 🔄 Deliver precise Java code intelligence to 3 customers.
 1. Deliver precise TypeScript code intelligence to 3 customers.
-    - [*N<sub>9</sub>*][N9]
-1. Automatically maintain a list of languages unsupported by precise code intelligence ordered by that language's impact. Currently we gather data by hand from multiple sources, which is easy to get wrong and quick to become stale. We need to add additional ping data and find a way to automate customer surveys to correctly gauge a language's desire over time.
-1. Integrate with build tools to reduce the friction of indexing monorepos.
-    - Support Bazel
-    - Support Buck
-    - Support Pants
-1. Build indexers for high-impact language/ecosystems.
-    - Support Python
-    - Support Scala
-    - Support C#
+1. Automate the list of languages unsupported by precise code intelligence ordered by impact. 
+1. Integrate with 3 widely used build tools to reduce the friction of indexing monorepos.
+1. Build indexers for 3 high-impact language/ecosystems.
+    
+## Roadmap
+
+1. ✅ Deliver precise Go code intelligence to [*N<sub>1</sub>*][N1]
+1. 🔄 Deliver precise Go code intelligence to [*N<sub>2</sub>*][N2]
+1. 🔄 Add additional ping data to split usage by language
+1. 🔄 Add native Gradle support for lsif-java
+1. 🔄 Provide best effort auto-indexing for supported languages [RFC 201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit)
+1. 🔄 Add incremental indexing for monorepo support [RFC 170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit#)
+1. Deliver precise Go code intelligence to [*N<sub>3</sub>*][N3]
+1. Deliver precise C++ code intelligence to [*N<sub>4</sub>*][N4]
+1. Deliver precise C++ code intelligence to [*N<sub>5</sub>*][N5]
+1. Deliver precise C++ code intelligence to [*N<sub>6</sub>*][N6]
+1. Deliver precise Java code intelligence to [*N<sub>7</sub>*][N7]
+1. Deliver precise Java code intelligence to [*N<sub>8</sub>*][N8]
+1. Deliver precise TypeScript code intelligence to [*N<sub>9</sub>*][N9]
+1. Support Bazel
+1. Support Buck
+1. Support Pants
+1. Support C#
+1. Support Python
+1. Support Scala
 
 [N0]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.63lmpljtve9f
 [N1]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.lgv97p81ib7i
@@ -45,3 +53,5 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 [N7]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.22p5u8gdheua
 [N8]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.wugsa2bws90r
 [N9]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.xq968uve0czg
+
+
