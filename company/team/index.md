@@ -465,6 +465,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [eli@sourcegraph.com](mailto:eli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eli-rothschild-b922824a/)
 - Eli was raised in Baltimore, MD, has been in New York City since 2007 (resided in 4 of the 5 boroughs), and recently joined the unofficial 6th borough of NYC, Boca Raton, FL. He has been in SaaS sales with early stage to high growth companies for a majority of his professional career. Prior to joining Sourcegraph, Eli was an Enterprise Account Executive at Segment, and previously at Mixpanel during similar stages of company growth. When not listening to the latest tech and business podcasts, Eli is a student of U.S and World history, enjoys playing chess, following his favorite sports teams, and traveling with his wife.
 
+## Josh Saunders 
+
+- Customer Engineer
+- Napa, CA, USA 🇺🇸
+- [josh@sourcegraph.com](mailto:josh@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joshua-saunders-6a899820/)
+- Josh was raised in Toledo, OH and has lived in Northern California since 2014. He’s very curious and has held positions in a few industries including public health, medical devices, and, most recently, tech. His first startup experience was with Segment, where he was one of the first hires on the Customer Success team. After Segment, he joined Tray.io to build and lead their Customer Success organization. In Josh’s free time he loves to build and ride bikes, cheer (and sometimes cry) on the Cleveland Browns, travel California, and spend time with his wife, Tammy, and their furbaby, Griffin.
 
 <!-- Paste *your* section above this line by following our template below:
 
