@@ -58,11 +58,11 @@ This exercise is designed to give you an opportunity to demonstrate your skills 
 We designed this exercise to give you an opportunity to demonstrate your software development and collaboration skills, as they come to developing a small, secure application.
 
 - You will choose a 90-minute timeframe to work with a member of our team on a small console application.
-- During our exercise, we will share detailed instructions for building a console application that processes a file and outputs various metrics.
+- During our exercise, we will share detailed instructions, and a repository, for building a console application that processes a file and outputs various metrics.
 - You can ask questions, discuss your approach, and share ideas as we work together during this exercise.
 - You can look up documentation on the internet while you are coding.
 - You can use open-source libraries, and the language of your choice.
-- After the exercise, you will [email us](mailto:security@sourcegraph.com) your solution as a zip file and we will get back to you on next steps within 2 US business days.
+- After the exercise, you issue a pull request and we will get back to you on next steps within 2 US business days.
 
 ## FAQ
 
