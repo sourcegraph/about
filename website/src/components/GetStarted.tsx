@@ -57,8 +57,8 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                 <a className="btn btn-sm btn-outline-primary mb-2" href="https://docs.sourcegraph.com">
                                     Docs <ExternalLinkIcon className="icon-inline ml-1 small" />{' '}
                                 </a>{' '}
-                                <Link className="btn btn-sm btn-outline-primary mb-2" to="/contact/request-info">
-                                    Schedule time with a Sourcegraph engineer
+                                <Link className="btn btn-sm btn-outline-primary mb-2" to="https://info.sourcegraph.com/product-tour">
+                                    Join the next live product tour
                                 </Link>
                             </div>
                         </div>
