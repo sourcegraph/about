@@ -37,7 +37,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Stephen Gutekanst
 
-- IC / Software Engineer
+- Internal Contributor / Software Engineer
 - Phoenix, AZ, USA 🇺🇸
 - [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com), [@slimsag](https://twitter.com/slimsag), [LinkedIn](https://www.linkedin.com/in/slimsag), [pronounce my name 🔊](https://www.name-coach.com/stephen-gutekanst)
 - Stephen enjoys spending time with his numerous [kittos](https://github.com/slimsag/slimsag/blob/master/CATS.md) while solving some of the most critical and technically challenging issues he can get his hands on. Prior to Sourcegraph, he worked 3 years full-time on a game engine in Go while in school. Over the past ~6 years he has been working directly with some of our largest customers and relentlessly advocating for users, and today focuses on high-value low-cost wins across the board.
