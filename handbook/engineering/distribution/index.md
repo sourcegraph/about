@@ -108,7 +108,7 @@ Go, Docker, Kubernetes
 
 Other:
 
-- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) is in an experimental role acting as an internal contributor, focused on high-value low-cost wins across the board. His work is not isolated to the Distribution team, it will tracked in [a project board](https://github.com/orgs/sourcegraph/projects/106), with status updates to his manager and any other relevant teams regularly. He will work closely with (and sometimes embedded in) other teams, and get alignment with the product team (and any other team) on his work. This is an experiment between 2020-11-23 and 2021-01-23 and we will evaluate the outcome around that time. [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) will continue to be his manager during this experiment.
+- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) is in an experimental role acting as [an internal contributor, focused on high-value low-cost wins across the board.](https://docs.google.com/document/d/18c9dVjw5MuvOMHahCFQQPAVsp1vRdFDDI_7hmo5MWyQ/edit) His work is not isolated to the Distribution team, it will tracked in [a project board](https://github.com/orgs/sourcegraph/projects/106), with status updates to his manager and any other relevant teams regularly. He will work closely with (and sometimes embedded in) other teams, and get alignment with the product team (and any other team) on his work. This is an experiment between 2020-11-23 and 2021-01-23 and we will evaluate the outcome around that time. [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) will continue to be his manager during this experiment.
 
 ## On-call
 
