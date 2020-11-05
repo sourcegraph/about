@@ -61,7 +61,7 @@ Distribution team members may also be involved in other areas of Sourcegraph not
     - Documenting when to upgrade from one deploy type to another
     - Resource estimation for new deployments
     - Scaling advice for existing deployments
-    - **Primary owners**: TBD
+    - **Primary owners**: whole team, @stephen for advice
     - **Related code**: [resource estimator docs](https://docs.sourcegraph.com/admin/install/resource_estimator), [resource estimator repository](https://github.com/sourcegraph/resource-estimator), [Kubernetes scaling docs](https://docs.sourcegraph.com/admin/install/kubernetes/scale)
 - **Observability: Monitoring** ("site admins should easily know the health of Sourcegraph")
   - Monitoring & alerting infrastructure
