@@ -36,6 +36,7 @@ We're hiring! Check out our open positions:
 
 ### Operations, finance, and legal
 
+- [Director of Business Operations & Strategy](../handbook/ops/roles/director_business_operations.md)
 - [Internal Tools](../handbook/ops/roles/internal_tools.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 
