@@ -2,7 +2,7 @@
 
 ## [Business Operations](../bizops/index.md)
 
-- [Director of Business Operations](./director_business_operations.md)
+- [Director of Business Operations & Strategy](./director_business_operations.md)
 
 ## [Internal Tools](../internal-tools/index.md)
 
