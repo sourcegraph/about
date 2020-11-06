@@ -75,18 +75,17 @@ Revert or disable features that may cause delays. As necessary, `git cherry-pick
 
 Once there are no more release-blocking issues (as reported by the `release:status` command) proceed with creating the final release:
 
+- [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) on
+  `main` is accurate (no items should have been added since branch cut, but some items may need to
+  be removed).
 - [ ] Tag the final release:
   ```
   yarn run release release-candidate:create final
   ```
-- [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) on
-  `main` is accurate (no items should have been added since branch cut, but some items may need to
-  be removed).
 - [ ] Wait for the release Docker images to be available in [Docker Hub](https://hub.docker.com/r/sourcegraph/server/tags).
 - [ ] Release Docker Compose by following [these instructions](https://github.com/sourcegraph/deploy-sourcegraph-docker/blob/master/RELEASING.md)
-- [ ] Open PRs that publish the new release:
+- [ ] Open PRs that publish the new release and address any action items required to finalize draft PRs (track PR status via the [generated release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns)):
   ```sh
-  # Run this in the main sourcegraph repository in the `dev/release` directory on `main` branch:
   yarn run release release:stage
   ```
 
@@ -107,10 +106,6 @@ Once there are no more release-blocking issues (as reported by the `release:stat
 - [ ] Announce that the release is live:
   ```sh
   yarn run release release:close
-  ```
-- [ ] Announce that the release is live:
-  ```sh
-  yarn run release release:close $MAJOR.$MINOR.0
   ```
 
 ### Post-release

@@ -10,36 +10,57 @@ Arguments:
 
 # $MAJOR.$MINOR.$PATCH Patch Release
 
-**Attention developers:** Add pending changes to this checklist, cherry-pick the relevant commits onto branch `$MAJOR.$MINOR`. **Only check off items if the relevant PR/commits have been cherry-picked into the branch**:
+**Attention developers:** Add commits on `main` to include in this patch release to this checklist.
 
-- [ ] TODO: Add PR or commit links here.
-    ```
-    git log v$MAJOR.$MINOR.$(($PATCH-1))...$MAJOR.$MINOR --pretty=format:'- [ ] %H %s' --reverse
-    ```
+- [ ] TODO: Add commit links here.
+
+```
+git log v$MAJOR.$MINOR.$(($PATCH-1))...$MAJOR.$MINOR --pretty=format:'- [ ] %H %s' --reverse
+```
+
+**Only check off items if the commit have been cherry-picked into the branch**.
 
 ## Setup
 
 - [ ] Ensure release configuration in `dev/release/config.json` is up to date with the parameters for the current release.
 - [ ] Ensure the latest version of the release tooling has been built before each step using `yarn run build` in `dev/release`.
 
-## Release Sourcegraph
+## Prepare release
 
-- [ ] Push the branch [`$MAJOR.$MINOR`](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR) with your cherry-picked commit(s) and make sure CI passes.
+- [ ] Ensure that all the commits listed above has been cherry-picked to [`$MAJOR.$MINOR`](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR) and make sure CI passes.
+    ```
+    git checkout $MAJOR.$MINOR
+    git pull
+    git cherry-pick <commit0> <commit1> ... # all relevant commits from the main branch
+    git push $MAJOR.$MINOR
+    ```
+- [ ] Cherry-pick relevant [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) configuration changes from `master` onto the `$MAJOR.$MINOR` release branch, and ensure CI passes.
+    ```
+    git checkout $MAJOR.$MINOR
+    git pull
+    git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
+    git push $MAJOR.$MINOR
+    ```
+- [ ] Cherry-pick relevant [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) configuration changes from `master` onto the `$MAJOR.$MINOR` release branch, and ensure CI passes.
+    ```
+    git checkout $MAJOR.$MINOR
+    git pull
+    git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
+    git push $MAJOR.$MINOR
+    ```
 - [ ] Push a release candidate tag:
     ```
-    git checkout '$MAJOR.$MINOR'
-    git tag -a 'v$MAJOR.$MINOR.$PATCH-rc.1' -m 'v$MAJOR.$MINOR.$PATCH-rc.1' && git push origin 'v$MAJOR.$MINOR.$PATCH-rc.1'
-    ```
-- [ ] If CI passes, push the release tag:
-    ```
-    git checkout '$MAJOR.$MINOR'
-    git tag -a 'v$MAJOR.$MINOR.$PATCH' -m 'v$MAJOR.$MINOR.$PATCH' && git push origin 'v$MAJOR.$MINOR.$PATCH'
+    yarn run release release-candidate:create 1
     ```
 
-Verify the Sourcegraph Server image works:
+## Stage release
 
-- [ ] Wait for the final Docker images to be available at https://hub.docker.com/r/sourcegraph/server/tags.
-- [ ] Run the old and new images at least three times to make sure it starts:
+- [ ] Tag the final release:
+    ```
+    yarn run release release-candidate:create final
+    ```
+- [ ] Wait for the release Docker images to be available in [Docker Hub](https://hub.docker.com/r/sourcegraph/server/tags).
+- [ ] Ensure the image starts for upgrades and new instances:
     ```
     # 1. Answer YES to delete /tmp/sourcegraph with the old image
     IMAGE=sourcegraph/server:$MAJOR.$MINOR ./dev/run-server-image.sh
@@ -50,41 +71,14 @@ Verify the Sourcegraph Server image works:
     # 3. Answer YES to delete /tmp/sourcegraph with the new image
     IMAGE=sourcegraph/server:$MAJOR.$MINOR.$PATCH ./dev/run-server-image.sh
     ```
-
-## Update Kubernetes deployment
-
-In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
-
-- [ ] Cherry-pick relevant `deploy-sourcegraph` configuration changes from `master` onto the relevant release branch.
-    ```
-    git checkout $MAJOR.$MINOR
-    git pull
-    git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
-    git push $MAJOR.$MINOR
-    ```
-
-## Release Docker Compose
-
-- [ ] Release Docker Compose by following [these instructions](https://github.com/sourcegraph/deploy-sourcegraph-docker/blob/master/RELEASING.md)
-
-## Stage release
-
-- [ ] Create a new section for the patch version in the changelog. Verify that all changes that have been cherry picked onto the release branch have been moved to this section of the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) on `main`.
-- [ ] Open PRs that publish the new release:
+- [ ] Open PRs that publish the new release and address any action items required to finalize draft PRs (track PR status via the [generated release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns)):
   ```sh
-  # Run this in the main sourcegraph repository in the `dev/release` directory on `main` branch:
   yarn run release release:stage
-  ```
-- [ ] Create a PR to update the [Kubernetes upgrade guide](https://docs.sourcegraph.com/admin/updates/kubernetes) indicating the steps required to upgrade. Add the created pull request to the release campaign:
-  ```sh
-  yarn run release release:add-to-campaign sourcegraph/sourcegraph <pr-number>
-  ```
-- [ ] Create a PR to update [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) as required. Add the created pull request to the release campaign:
-  ```sh
-  yarn run release release:add-to-campaign sourcegraph/deploy-sourcegraph-docker <pr-number>
   ```
 
 ## Release
+
+<!-- Keep in sync with release_issue_template's "Release" section -->
 
 - [ ] From the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns), merge the release-publishing PRs created previously.
   - For [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), also:
