@@ -1,8 +1,8 @@
-# Director of Business Operations
+# Director of Business Operations & Strategy
 
-Sourcegraph's business operations team empowers our product, design, and engineering organizations with the insights, tools, and data they need to make better decisions. As the Director of Business Operations, you will build the team that helps our product organization scale and serve every developer in the world.
+Sourcegraph's business operations team empowers every part of the business with the data and insights, execution and project management, and strategic and business expertise that they need to make better decisions and move faster. Business operations partners with the leadership team to help define company strategy and allocate precious time and resources optimally. As the Director of Business Operations & Strategy, you will build and lead the team that helps us navigate hypergrowth efficiently as we reach every developer in the world.
 
-You will own product analytics, data engineering and infrastructure, project management and internal consulting, and will be a key voice in setting company strategy.
+You will own business and product analytics, corporate strategy, data engineering, project management, and internal consulting, and will be an important voice in all major company decisions.
 
 Our team and our sales are growing fast—we’ve proven strong product-market fit, with wall-to-wall usage and top-tier engagement, genuine love from our users and customers, and tens of thousands of paid daily active users at some of the world’s premier development teams.
 
@@ -12,10 +12,10 @@ Our team and our sales are growing fast—we’ve proven strong product-market f
 
 - Conduct a comprehensive review of our business operations, including the metrics and goals we track, the data we collect, to systems we use, and the teams and projects we serve, and build a team growth roadmap.
   - Conduct interviews with the entire executive team to understand gaps and needs.
-- Work closely with and get to know our existing business operations and broader ops team.
+- Work closely with and get to know our existing business operations team members (as well as the broader ops team).
 - Go through an intensive training program on our product, our value propositions, our customers, our team, and our processes.
-- Take ownership of our internal and external reporting and our business operations team goals.
-
+- Get your hands dirty by jumping to help with at least one project (e.g. project management for our Campaigns product release, help our Customer Engineering team define key metrics and build reporting, collect market data to inform pricing for a few feature, etc.)
+- Take ownership of our internal and external reporting, as well as our business operations team goals.
 
 ### In the first 60 days you will…
 
@@ -23,15 +23,15 @@ Our team and our sales are growing fast—we’ve proven strong product-market f
   - Business Operations Analyst
   - Data Engineer
   - Project Manager
-- Take hands-on ownership of 1–2 large-scale projects to improve or reshape our business operations playbook, or to establish new reporting for teams that need it.
-- Establish plans for and document a new cross-functional Project Management and internal consulting capability.
+- Take hands-on ownership of 1–2 large-scale projects to improve or reshape our business operations playbook, to establish new reporting for teams that need it, or beyond.
+- Establish plans for and document new cross-functional business operations team capabilities, including Project Management and internal consulting.
 - Define new goals for the business operations team.
 
 ### In the first 90 days you will…
 
-- Continue to build and scale our business operations capability in line with our Product and Engineering team growth.
+- Continue to build our business operations capability to support our overall company growth.
 - Establish the team, systems, and processes for deriving insights from [Sourcegraph Cloud](../../engineering/cloud/goals.md), in addition to our current self-hosted products.
-- Contribute to our ops team-wide and company-wide goals, by actively helping other teams make better decisions and grow sales or usage of Sourcegraph.
+- Contribute to our operations team-wide and [company-wide goals](../../../company/goals/index.md), by actively helping other teams make better decisions and grow sales or usage of Sourcegraph.
 
 ## Qualifications
 
