@@ -66,6 +66,13 @@ We review each candidate at each stage of our hiring pipeline (e.g. application,
 
 Current employees can refer a candidate [here](https://hire.lever.co/referrals/new)
 
+Having your referral complete the application provides helpful context when considering their profile, but is not required. 
+
+Benefits of having a referral complete the application:
+
+- Provides information that the hiring team think is important for the role that may not have been represented in their resume or referral notes.
+- Allows the hiring team to have a deeper conversation about who they are, what they are looking for, and about their experience.
+
 ## Hiring flow
 
 For any members of a hiring team, please see [this folder](https://drive.google.com/drive/u/0/folders/1tJAroT8Z1sPnWkETSbe2mFFaD5_g7Q_E) for a breakdown of each team's hiring process. The documents will outline responsibilities by role (Hiring Manager, Scheduling Coordinator, and People Ops) for each team.

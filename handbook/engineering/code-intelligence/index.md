@@ -20,7 +20,7 @@ The origin of our work is the core of Sourcegraph, first implemented as [srclib]
 
 2017 - Over time we started to experience some issues with language servers. They can be difficult to deploy, slow at runtime, slow to adopt by members of their respective language communities, and slow to develop.
 
-2018 - We added a new basic code intelligence that is built on search-based heuristics to allow us to provide quick and good enough i.e. "imprecise" support for the [most popular programming languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22). 
+2018 - We added a new basic code intelligence that is built on search-based heuristics to allow us to provide quick and good enough i.e. "imprecise" support for the [most popular programming languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22).
 
 2019 - While looking for more efficient alternatives to language servers we found LSIF (Language Server Index Format) which provided an index-based implementation of precise code navigation (similar to srclib) with the advantage of being able to build on top of the work done in the LSP community (LSIF and LSP are sister protocols).
 
@@ -34,58 +34,9 @@ To be the point of discovery for the knowledge graph for all source code.
 
 Build a code intelligence platform that understands code in all languages and provides rich metadata to power code search, insights and campaigns.
 
-## Goals
+## [Goals](goals.md)
 
-This list will be updated regularly with links to the technical implementation details in RFCs and/or Github issues.
-
-### Provide precise code intel for the primary programming languages that combined cover > 50% of usage across customer projects.
-
-- Metrics:
-  - Language coverage (%)
-- Planned work:
-  1. Resolve outstanding issues for lsif-clang, ship to 3 customers, [tracking issue 12349](https://github.com/sourcegraph/sourcegraph/issues/12349).
-  1. Resolve outstanding issues for lsif-java, ship to 3 customers, [tracking issue 13017](https://github.com/sourcegraph/sourcegraph/issues/13017).
-  1. Resolve outstanding issues for lsif-go, ship to 3 customers, [tracking issue 13015](https://github.com/sourcegraph/sourcegraph/issues/13015).
-  1. Provide best effort auto-indexing for supported languages, [RFC-199](https://docs.google.com/document/d/1rCduWqaLAbMu2s43RwJTBbRlhL6qS3oqq4iawiGdoVE/edit), [RFC-201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit).
-- Success Outcome: We have accurate and comprehensive precise code intel for C++, Go, and Java. We will work to ship each indexer to at least 3 customers and gather feedback for future iteration. The precision level for each indexer tool is > 80%.
-- Progress: See the [Code Intel Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
-
-### Create a backend that can perform and scale across organizations of various sizes up to the upper boundaries of our system.
-
-- Metrics:
-  - Request Latency
-  - System Throughput
-  - Max number of repositories (N1)
-  - Max size of project (N2)
-  - Max commit rate of repository (N3)
-- Planned work:
-  1. Gather current values for metrics Request Latency and System Throughput, create benchmarks for existing system.
-  1. Source and track current performance of tools across following dimensions: Number of repositories (N1), Size of project (N2), Commit rate of repos (N3).
-  1. Determine the upper boundary of the code intel backend across scale dimensions: max of N1, N2, N3.
-  1. Create a testbed environment that allows the team to instantiate & execute instances against various use cases in a controlled method for automation of stress and volume testing, [RFC 218](https://docs.google.com/document/d/1UitCAKefZLCewzDqxN787EsKDdepZ9Dqz1zXpdPFjgU/view).
-  1. Develop a prototype for incremental indexing, [RFC-170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit).
-  1. Shard bundle manager, [RFC-200](https://docs.google.com/document/d/1IfkY9a6odfQmkjGtgJBFtPOUFuTwWryawFfVGRi8hO4/).
-- Success Outcome: We understand the upper boundaries N1-N3. Code intel backend can achieve latency and throughput targets when operating within upper bounds of inputs N1-N3.
-
-### LSIF indexers can operate in monorepos architecture.
-
-- Metrics:
-  - Time to Intelligence (TTI)
-- Planned work:
-  1. Create definition for Time to Intelligence metric and determine how this metric is measured and tracked.
-  1. Create and send a survey to customers to gather information on monorepos use cases and stats.
-  1. Identify the common challenges our customers are experiencing when operating Sourcegraph in monorepos by working directly with 3 customers to index a monorepos, gather feedback and identity problems we need to address.
-  1. Update lsif-\* tools to enable indexing subsets of a project.
-  1. Integrate with monorepos build systems: Bazel and stretch goal is one of: Buck, Pants, OAO
-- Successful Outcome: Users are able to process monorepos with the same TTI as any other type of repository. Our tools provide configuration options that accomodate for complex use cases (cross repository and sub-project code intel).
-
-### Provide clarity on capabilities of code intel tools at each release state
-
-- Planned work:
-  1. Define release states and their respective criteria.
-  1. Assess each code intel tool against criteria and determine release state.
-  1. Communicate changes by updating documentation on lsif.dev and /sourcegraph/lsif-\* repos.
-- Success Outcome: We are able to consistently apply release states to our tools as they move through development lifecycle. We have provided clear communication to users, internal teams and stakeholders on capabilities of each tool.
+See [goals and priorities](goals.md)
 
 ## Contact
 
@@ -105,22 +56,24 @@ Here are some key ways to contact us:
 - On Google Drive, we use the [Code Intel](https://drive.google.com/drive/folders/1vKcW5EM4RBIuF8ZFvPM0G1FRwl_03RXK) directory.
 
 ## Team process
+
 The code intel team has defined a set of rituals that keeps the team connected around our common goals. As a team we also believe in good meeting etiquette, and to ensure effective meetings for everyone every meeting must have a meaningful topic, agenda, and stated goal or purpose statement defined ahead of time.
 
 On a weekly basis:
 
-* Team Sync Meeting: Every Monday, the code intel team meets to stay in sync and hear from stakeholders. We use a Google doc for [agenda and meeting notes](https://docs.google.com/document/d/1R4gXavKwajVRplHSy1ECn_ZHMoQZIwiGKqWWb2SdbUE/edit). Prior to the weekly sync meeting, each team member should:
+- Team Sync Meeting: Every Monday, the code intel team meets to stay in sync and hear from stakeholders. We use a Google doc for [agenda and meeting notes](https://docs.google.com/document/d/1R4gXavKwajVRplHSy1ECn_ZHMoQZIwiGKqWWb2SdbUE/edit). Prior to the weekly sync meeting, each team member should:
+
   1. Add any agenda items that should be discussed.
   1. Review any existing agenda items and be prepared to discuss them.
   1. Update the current release [tracking issue](../tracking_issues.md) with a summary of progress for the previous week and plans for the next week.
 
-* Team Updates: Every Friday, we update the tracking issue with our weekly progress to inform external stakeholders of the state of milestone goals. The engineers working on a goal are responsible for its update.
-  
+- Team Updates: Every Friday, we update the tracking issue with our weekly progress to inform external stakeholders of the state of milestone goals. The engineers working on a goal are responsible for its update.
+
 For each iteration (currently one month long), we follow this process:
 
-* Planning Meeting(s): Prior to each iteration the team has planning meetin(s) to discuss which items should be prioritized for the upcoming release. We revisit oustanding work that track against our team goals, and go over [our backlog](https://github.com/sourcegraph/sourcegraph/labels/team%2Fcode-intelligence) of bugs and feature requests. Once the team agrees on a task, we add it to the tracking issue and as part of our team goals for the milestone.
+- Planning Meeting(s): Prior to each iteration the team has planning meetin(s) to discuss which items should be prioritized for the upcoming release. We revisit oustanding work that track against our team goals, and go over [our backlog](https://github.com/sourcegraph/sourcegraph/labels/team%2Fcode-intelligence) of bugs and feature requests. Once the team agrees on a task, we add it to the tracking issue and as part of our team goals for the milestone.
 
-* Retrospective Meeting: After the release branch has been cut for the iteration, the team has a retro to discuss how the iteration went, and what changes we might want to make to continously improve our teamwork.
+- Retrospective Meeting: After the release branch has been cut for the iteration, the team has a retro to discuss how the iteration went, and what changes we might want to make to continously improve our teamwork.
 
 We track most of our work using [issues on the Sourcegraph main repository](https://github.com/sourcegraph/sourcegraph/issues). If you have an issue that wants our attention, mention [the @sourcegraph/code-intel team](https://github.com/orgs/sourcegraph/teams/code-intel) or tag your issue with the [`team/code-intelligence` label](https://github.com/sourcegraph/sourcegraph/labels/team%2Fcode-intelligence).
 
@@ -147,12 +100,12 @@ Our team is growing and to help our new teammates have the best onboarding exper
 ## Members
 
 - [María Craig](../../../company/team/index.md#maría-craig-she-her) ([Product Manager](../../product/roles/product_manager.md))
-- We are hiring an [Engineering Manager for this team](../hiring/engineering-manager-code-intelligence.md).
+- [O.C.](../../../company/team/index.md#todo) starting 2020-11-23.
   - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
   - [Garo Brik](../../../company/team/index.md#garo-brik-they-them)
   - [Noah Santschi-Cooney](../../../company/team/index.md#noah-santschi-cooney-he-him)
 
-Temporary responsibilities while we search for an engineering manager:
+Temporary responsibilities until O.C. starts:
 
 - María
   - Send [weekly update](../leadership/index.md#weekly-updates)
@@ -193,7 +146,5 @@ Temporary responsibilities while we search for an engineering manager:
 ## Growth plan
 
 _Updated 2020-09-22_
-
-We are hiring an [Engineering Manager](../hiring/engineering-manager-code-intelligence.md) to lead and grow this team.
 
 We are also interested to hire an engineer who is capable of working on our web application as well as our backend systems. Apply here: [Software Engineer - Full Stack](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-full-stack)
