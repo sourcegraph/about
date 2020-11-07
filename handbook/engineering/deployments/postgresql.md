@@ -19,20 +19,19 @@ https://console.cloud.google.com/bigquery?sq=527047051561:67f2616f4acb4b7cb3639e
 Go to the [cloud-sql proxy install page](https://cloud.google.com/sql/docs/postgres/sql-proxy#install) and install the proxy binary. Ensure that is reachable on your path.
 
 
-There are two ways of connecting: either using the `gcloud beta sql connect` command which will use the `pgsql` client or running the proxy on a port locally to utilize whatever tools you typically use.
-
+There are two ways of connecting: either using the `gcloud beta sql connect` command which will use the `pgsql` client or running the proxy on a port locally to utilize your preferred tools.
 
 ### Command line only use (pgsql)
 
 You may use these gcloud commands to connect directly to the databases:
 
-- Default db {[Password](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/svfiw4vcbxhhbobpl442olyebu/)}
+- Default db {[Password](https://start.1password.com/open/i?a=HEDEDSLHPBFGRBTKAKJWE23XX4&v=dnrhbauihkhjs5ag6vszsme45a&i=pjxf64qxwsin4d56xij6vm3gva&h=my.1password.com)}
   ```
-    gcloud beta sql connect --project sourcegraph-dev sg-cloud-732a936743 --user=sg -d=sg
+    gcloud beta sql connect --project sourcegraph-dev sg-cloud-732a936743 --user=dev -d=sg
   ```
-- Code intel db {[Password](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/wcnh2e3ql7j2x54zflqen5mzva)}
+- Code intel db {[Password](https://start.1password.com/open/i?a=HEDEDSLHPBFGRBTKAKJWE23XX4&v=dnrhbauihkhjs5ag6vszsme45a&i=hbgj2dfajwj7cdiifk3zb2h2b4&h=my.1password.com)}
   ```
-    gcloud beta sql connect --project sourcegraph-dev sg-cloud-code-intel-9fc67e507c  --user=sg -d=sg
+    gcloud beta sql connect --project sourcegraph-dev sg-cloud-code-intel-9fc67e507c  --user=dev -d=sg
   ```
 
   Go to [Example Queries](#example-queries) to continue
@@ -56,7 +55,7 @@ If you are frequently using this to access the database for read-only operations
 
 ## Example queries
 🔥 You are directly interfacing with the production database, if you are unsure of any commands please reach out in #dev-chat or #dev-ops
-
+    Please prefer using the readonly user
 - See all fields on a table (ie the `repo` table)
   ```
     \d+ repo
