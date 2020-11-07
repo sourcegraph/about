@@ -93,6 +93,31 @@ As we deploy Sourcegraph to multiple different environments, we need to provide 
   - ~~Create code to bootstrap new projects.~~ Done: 3.21
   - Document project and folder usage guidelines.
 
+### Site admins use reliable methods like Docker Compose or Kubernetes for production deployments
+
+Many customers of Sourcegraph today are still running a single-container `sourcegraph/server` deployment in production. In 2019 we began advising all new deployments that this deployment option is _not_ for production use because it has no proper resource isolation and as such when it falls over it is impossible to debug, leading to painstakingly urgent migrations to better deployment types and frustrated/angry customers. We would like to get to a world where all production instances of Sourcegraph use reliable deployment methods like Docker Compose or Kubernetes.
+
+- **Owner**: TBD
+- **Status**: [RFC 263 REVIEW: Single-container deployments are for demos only](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPpEzA3-0glPEMY/edit)
+- **Outcomes**:
+  - Customer deployments become more reliable in performance, stability, uptime, etc.
+  - No customers are using the unreliable `sourcegraph/server` for their production deployment.
+  - Customers upgrade to Docker Compose or Kubernetes deployments without any major trouble.
+- **Milestones**:
+  - ~~RFC creation.~~
+  - RFC approval.
+  - ...TBD...
+
+### Upgrades across multiple Sourcegraph versions should be easier
+
+Upgrading from 3.13 -> 3.17 requires you perform 4 individual upgrades today (3.14 -> 3.15 -> 3.16 -> 3.17) which is extremely painful and time consuming for site admins, especially so given how time consuming our upgrade process is in general. We would like to make upgrades across multiple Sourcegraph versions easier.
+
+- **Owner**: TBD
+- **Status**: Not started. Unknown amount of work.
+- **Outcomes**:
+  - Customers can upgrade across multiple versions of Sourcegraph, allowing them to get up-to-date more quickly and easily.
+- **Milestones**:
+
 ## Short-term goals
 
 Short-term goals are described in our [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fdistribution).
