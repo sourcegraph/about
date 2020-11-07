@@ -10,19 +10,13 @@ Arguments:
 
 # $MAJOR.$MINOR.$PATCH Patch Release
 
-**Attention developers:** Add commits on `main` to include in this patch release to this checklist.
+**Attention developers:** to get your commits in `main` included in this patch release, please file a [patch request](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.$PATCH%3A+) for review. Only check off items if the commit have been cherry-picked into the `$MAJOR.$MINOR` branch by the release captain.
 
-- [ ] TODO: Add commit links here.
-
-```
-git log v$MAJOR.$MINOR.$(($PATCH-1))...$MAJOR.$MINOR --pretty=format:'- [ ] %H %s' --reverse
-```
-
-**Only check off items if the commit have been cherry-picked into the branch**.
+- [ ] TODO: Add commit links and their associated patch request issues here
 
 ## Setup
 
-- [ ] Ensure release configuration in `dev/release/config.json` is up to date with the parameters for the current release.
+- [ ] Ensure release configuration in `dev/release/config.json` on `main` is up to date with the parameters for the current release.
 - [ ] Ensure the latest version of the release tooling has been built before each step using `yarn run build` in `dev/release`.
 
 ## Prepare release
@@ -93,3 +87,11 @@ git log v$MAJOR.$MINOR.$(($PATCH-1))...$MAJOR.$MINOR --pretty=format:'- [ ] %H %
   ```sh
   yarn run release release:close
   ```
+
+## Post-release
+
+- [ ] Open a PR to update `dev/release/config.json` with the parameters for the current release.
+- [ ] Run `yarn build` to rebuild the release script (necessary, because `config.json` is compiled in).
+- [ ] Close this issue.
+
+*Note*: If another patch release is requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md) be filled out first.

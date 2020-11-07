@@ -18,7 +18,7 @@ Arguments:
 
 ## Setup
 
-- [ ] Ensure release configuration in `dev/release/config.json` is up to date with the parameters for the current release.
+- [ ] Ensure release configuration in `dev/release/config.json` on `main` is up to date with the parameters for the current release.
 - [ ] Ensure the latest version of the release tooling has been built before each step using `yarn run build` in `dev/release`.
 
 ## $FIVE_WORKING_DAYS_BEFORE_RELEASE (5 work days before release): Prep for branch cut
@@ -110,7 +110,7 @@ Once there are no more release-blocking issues (as reported by the `release:stat
 ### Post-release
 
 - [ ] Notify the next release captain that they are on duty for the next release. They should complete the steps in this section.
-- [ ] Update `dev/release/config.json` with the parameters for the current release.
+- [ ] Open a PR to update `dev/release/config.json` with the parameters for the current release.
 - [ ] Run `yarn build` to rebuild the release script (necessary, because `config.json` is compiled in).
 - [ ] Create release calendar events, tracking issue, and announcement for next release:
   ```sh
@@ -122,3 +122,5 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   ```
 - [ ] Close this issue.
 - [ ] Close the milestone.
+
+*Note*: If a patch release are requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.1) be filled out first.
