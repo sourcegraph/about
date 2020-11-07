@@ -4,7 +4,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 ## Medium-term goals (~3-6 Months)
 
-### [Improve deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
+### [Improve internal deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
 
 Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegraph Cloud) has several usability problems - for example, it is hard for engineers to identify when a commit was deployed to an environment or which deployment is currently running in a particular environment. We want to improve the deployment experience, making sure we can deploy with confidence and can easily understand in which stage of the pipeline a change currently is.
 
@@ -20,12 +20,12 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
 - **Milestones**: TBD
 
-### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single command
+### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single action
 
 Creating a new release for our deployments is currently a semi-automated process, which requires several manual steps and synchronizing our versioned artifacts (Sourcegraph, Kubernetes manifests, docker-compose manifests, etc). We want to enable any engineer to perform a release as often as needed, to enable this we want to make releasing Sourcegraph a simple, automated process.
 
 - **Owner**: Dave, Robert
-- **Status**: In progress. Estimated completion by end of 2020.
+- **Status**: In progress. Estimated completion by end of FY21-Q1.
 - **Outcomes**:
   - Releases can be triggered by a single manual step.
   - All supported deployment types are released at the same time with the same command.
@@ -37,7 +37,7 @@ Creating a new release for our deployments is currently a semi-automated process
   - [Releases can be done in a single day](https://github.com/orgs/sourcegraph/projects/90). **In progress**
   - [Enable continuous regression tests on `main`](https://github.com/orgs/sourcegraph/projects/90). **In progress**
   - [Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/90). **In progress**
-  - Releases can be done automatically with a single `/` command via Slack. _Estimated: 2020_
+  - Releases can be done automatically with a single action (e.g. CLI command, `/` command in Slack, etc.). _Estimated: 2020_
 
 ### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
 
@@ -64,17 +64,17 @@ We will start by looking at our Kubernetes deployment and working on an easier u
   - Design customization workflow.
     - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
 
-### Improve the debugging and troubleshooting process
+### Further standardize the debugging and troubleshooting process
 
-As we deploy Sourcegraph to multiple different environments, we need to provide a consistent and straightforward process to debug issues. We are currently lacking tools to collect debugging information (configuration, type, size, diff from upstream, etc) consistently and a process to capture the output of debugging sessions to feed back into our priorities and documentation.
-We will initially focus on reducing the time it takes to collect troubleshooting information.
+As we deploy Sourcegraph to multiple different environments, we need to provide a consistent and straightforward process to debug issues across our deployments and customers' deployments. We have some standardized tooling such as Grafana dashboards, alerting, and Jaeger tracing - but we need to further improve the usage of these and further standardized/formalize the debugging process.
 
 - **Owner**: TBD
 - **Status**: Not started. Unknown amount of work.
 - **Outcomes**:
   - We can categorize and capture the amount of effort spent on different incident types.
-  - We can provide a straightforward set of tools to collect initial debugging and deployment information.
-  - TBD
+  - We provide a straightforward set of processes/tools to collect initial debugging and deployment information (configuration, type, size, diff from upstream, recently-firing alerts, logs, etc.)
+  - Alerts in services owned by other teams at Sourcegraph are well-defined, extensive, and have excellent documentation site admins can understand.
+  - The tooling we rely on to debug our own infrastructure is aligned with the tooling we use to debug customer deployments.
 - **Milestones**: TBD
 
 ### [Split Cloud infrastructure into separate GCP projects](https://github.com/orgs/sourcegraph/projects/92)
