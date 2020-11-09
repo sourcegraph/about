@@ -33,7 +33,7 @@ TODO
 
 ### Fiscal years
 
-A fiscal year is a one-year period that corporations like Sourcegraph use for accounting and budgeting. Sourcegraph's fiscal year runs from February 1 to January 31. Having our fiscal year be offset by one month from the calendar year ensures that our fiscal Q4 doesn't end during December holidays, making our quarters more even and predictable, and eliminating pre-New Year stress for our sales, finance, and other teammates.
+A fiscal year is a one-year period that corporations like Sourcegraph use for accounting and budgeting. Sourcegraph's fiscal year runs from February 1 to January 31. Having our fiscal year offset by one month from the calendar year ensures that our fiscal Q4 doesn't end during December holidays, making our quarters more even and predictable, and eliminating pre-New Year stress for our sales, finance, and other teammates.
 
 **Fiscal years that don't align with calendar years (such as our fiscal year) are referred to by the year in which the period ends**.
 
