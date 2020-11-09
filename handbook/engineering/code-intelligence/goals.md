@@ -12,37 +12,39 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. 🔄 Deliver precise Go code intelligence to 3 customers.
-1. 🔄 Deliver precise C++ code intelligence to 3 customers.
+1. 🔄 Deliver precise Go code intelligence to 3 organizations.
+    - ✅ Deliver to [*N<sub>1</sub>*][N1]
+    - 🔄 Deliver to [*N<sub>2</sub>*][N2]
+    - Deliver to [*N<sub>3</sub>*][N3]
+1. 🔄 Deliver precise C++ code intelligence to 3 organizations.
+    - Deliver to [*N<sub>4</sub>*][N4]
+    - Deliver to [*N<sub>5</sub>*][N5]
+    - Deliver to [*N<sub>6</sub>*][N6]
 1. 🔄 Support automatically indexing source code within Sourcegraph.
+    - 🔄 Provide best effort auto-indexing for supported languages [RFC 201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit)
 1. 🔄 Support incremental indexing of Go source code.
-1. 🔄 Deliver precise Java code intelligence to 3 customers.
-1. Deliver precise TypeScript code intelligence to 3 customers.
+    - 🔄 Add incremental indexing for monorepo support [RFC 170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit#)
+1. 🔄 Deliver precise Java code intelligence to 3 organizations.
+    -  🔄 Add native Gradle support for lsif-java
+    - Deliver to [*N<sub>7</sub>*][N7]
+    - Deliver to [*N<sub>8</sub>*][N8]
+    - Deliver to (TBD)
+1. Deliver precise TypeScript code intelligence to 3 organizations.
+    - Deliver to [*N<sub>9</sub>*][N9]
+    - Deliver to (TBD)
+    - Deliver to (TBD)
 1. Automate the list of languages unsupported by precise code intelligence ordered by impact. 
 1. Integrate with 3 widely used build tools to reduce the friction of indexing monorepos.
+    - Support Bazel
+    - Support Buck
+    - Support Pants
 1. Build indexers for 3 high-impact language/ecosystems.
+    - Support C#
+    - Support Python
+    - Support Scala
     
 ## Roadmap
-
-1. ✅ Deliver precise Go code intelligence to [*N<sub>1</sub>*][N1]
-1. 🔄 Deliver precise Go code intelligence to [*N<sub>2</sub>*][N2]
-1. 🔄 Add additional ping data to split usage by language
-1. 🔄 Add native Gradle support for lsif-java
-1. 🔄 Provide best effort auto-indexing for supported languages [RFC 201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit)
-1. 🔄 Add incremental indexing for monorepo support [RFC 170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit#)
-1. Deliver precise Go code intelligence to [*N<sub>3</sub>*][N3]
-1. Deliver precise C++ code intelligence to [*N<sub>4</sub>*][N4]
-1. Deliver precise C++ code intelligence to [*N<sub>5</sub>*][N5]
-1. Deliver precise C++ code intelligence to [*N<sub>6</sub>*][N6]
-1. Deliver precise Java code intelligence to [*N<sub>7</sub>*][N7]
-1. Deliver precise Java code intelligence to [*N<sub>8</sub>*][N8]
-1. Deliver precise TypeScript code intelligence to [*N<sub>9</sub>*][N9]
-1. Support Bazel
-1. Support Buck
-1. Support Pants
-1. Support C#
-1. Support Python
-1. Support Scala
+The code intel team roadmap is tracked in [productboard](https://sourcegraph.productboard.com/feature-board/1825051-code-intel)
 
 [N0]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.63lmpljtve9f
 [N1]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.lgv97p81ib7i
