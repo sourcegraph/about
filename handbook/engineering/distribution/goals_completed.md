@@ -61,7 +61,7 @@ Today much of our internal infrastructure is managed directly instead of through
 
 ### All site admins should have alerting set up to be notified when Sourcegraph is unhealthy
 
-We have standardized alerting across our deployment methods, but it is very difficult to set up. Make it easy enough that all site admins can configure alerting and get notified when SOurcegraph is unhealthy.
+We have standardized alerting across our deployment methods, but it is very difficult to set up. Make it easy enough that all site admins can configure alerting and get notified when Sourcegraph is unhealthy.
 
 - Owner: Robert
 
