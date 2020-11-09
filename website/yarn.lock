@@ -6629,10 +6629,10 @@ gatsby-plugin-google-gtag@^2.1.13:
     "@babel/runtime" "^7.11.2"
     minimatch "^3.0.4"
 
-gatsby-plugin-google-tagmanager@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.4.0.tgz#551c6df37f60a5eb0c2f24a3d8191a06fc5fee0e"
-  integrity sha512-1DsLaHeLoUq5RUWPDPgHxa0mxdnCvJLuyoqP+h4U3w5PyMhk2Knso40PlR8NU7CfIWKn52m9CbFefjPpw9z5AA==
+gatsby-plugin-google-tagmanager@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.4.1.tgz#58de169c531df7f8168281f69abf15ad47134969"
+  integrity sha512-DzSVx3N0slNsYupENQ5GNmQ7V/CWUkwf0bp5pjUIsYPa6ctT8APqx+4CFneApmLynpTq2soyAhfTMvgad6CCBQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
 
@@ -6826,10 +6826,10 @@ gatsby-remark-copy-linked-files@^2.3.19:
     probe-image-size "^5.0.0"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-images@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.4.1.tgz#7c7875a54db1c98ffa8394887f621f681a8fbb73"
-  integrity sha512-6sAnteMX+dIBE3ekHr1dpwmnyItjt/4tKer3EWGhj1QjSK8IImjkH7nhanTuePugj/hBgCbuVzBFIwejQSIbZA==
+gatsby-remark-images@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.4.2.tgz#e2c166379939c23ebc1d4afefba335c7583a5e88"
+  integrity sha512-wvuOJe81CPGrfUijdRrxQ8XwK3osG7SyOjBZ6LTz5DlJ5oeWUkMq7U41zzjkaY5foBl1ylMfFJ9ymcj879Roxw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     chalk "^4.1.0"
@@ -6871,10 +6871,10 @@ gatsby-remark-unwrap-images@^1.0.2:
     unist-util-remove "^1.0.1"
     unist-util-visit "^1.4.0"
 
-gatsby-source-filesystem@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.4.1.tgz#46e284542c2244ae2a13dcc9d912ef3550dedd64"
-  integrity sha512-JDFgK+873XebNvZreEhDzgRlkZ6jEXuS4A+TuJT3EPfTZ3h15YMGnldR2AWhAWYDFX9i2RfFPDuAo8xYzuFY1Q==
+gatsby-source-filesystem@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.4.2.tgz#4d599f64058d4f25032b93eda2b036c9910a0d5b"
+  integrity sha512-we6z7h/KrhKcYhTo9HIVpmuiN15P/D+j3AgxAgJ1zZtCkGymffmhKwyTSMDAp/g0Grz+i6vvofYwOEhXOt62iA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     better-queue "^3.8.10"
