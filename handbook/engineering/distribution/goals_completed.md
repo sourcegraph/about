@@ -14,7 +14,7 @@ This page records goals completed by the Distribution team historically. See als
 
 ### Automatic e2e testing
 
-[RFC 137](https://docs.google.com/document/d/14f7lwfToeT6t_vxnGsCuXqf3QcB5GRZ2Zoy6kYqBAIQ/edit#heading=h.trqab8y0kufp) saw us remove our e2e tests from CI entirely because it was unreliable. Now e2e tests are ran as part of our monthly release process completely manually, and are heavily broken/outdated each time we attempt to do it. Fixing them often takes ~1.5d of work from a developer on the team. Per the RFC, we want to run these e2e tests on CI in an automated and reliable fashion.
+[RFC 137](https://docs.google.com/document/d/14f7lwfToeT6t_vxnGsCuXqf3QcB5GRZ2Zoy6kYqBAIQ/edit#heading=h.trqab8y0kufp) saw us remove our e2e tests from CI entirely because it was unreliable. Now e2e tests are run as part of our monthly release process completely manually, and are heavily broken/outdated each time we attempt to do it. Fixing them often takes ~1.5d of work from a developer on the team. Per the RFC, we want to run these e2e tests on CI in an automated and reliable fashion.
 
 - [Tracking issue](https://github.com/sourcegraph/sourcegraph/issues/10646)
 - Discussions: [RFC 137](https://docs.google.com/document/d/14f7lwfToeT6t_vxnGsCuXqf3QcB5GRZ2Zoy6kYqBAIQ/edit#heading=h.trqab8y0kufp)
@@ -115,4 +115,3 @@ See [RFC 63: Authless management console access](https://docs.google.com/documen
 
 - Owner: Stephen
 - Discussions: [RFC 63: Authless management console access](https://docs.google.com/document/d/1RkOS4EehLtAXhunTazkjCI4yKi5Hc8eRcHZ_v1Fz_QU/edit)
-
