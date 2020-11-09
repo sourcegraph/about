@@ -8,7 +8,7 @@ Goals help us achieve our [vision](index.md#vision) for search.
 
 **Problem:** customers choose other search tools over Sourcegraph because they cannot express the queries they care about with Sourcegraph. TODO customer examples.
 
-**Targets**
+**Success criteria**
 
 TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph with other search tools
 
@@ -21,7 +21,7 @@ TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph
 
 **Problem:** Search is too slow or frequently times out at the scale some of our customers care about, and at the scale we want Sourcegraph Cloud to reach. In large-scale codebases, running the same search several times yields varying result counts, with no insights into the underlying reasons. Customers cannot trust that their codebase was exhaustively searched.
 
-**Targets**
+**Success criteria**
 
 - **By EOY 2020**: Latency for the set of search queries run by search-blitz is less than TODO Nms with 500k repositories indexed on Sourcegraph Cloud
     - 2020-11-05: TODO
@@ -38,7 +38,7 @@ TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph
 
 **Problem:** Customers want to be notified about important changes in their codebase. Our saved searches feature fails to address their desired use cases, so they have been building workarounds themselves. Saved searches are limited to email notifications, where webhooks would allow Sourcegraph notifications to reach a wider audience at customer orgs. TODO customer examples.
 
-**Target**
+**Success criteria**
 
 - **By TODO timeline**: TODO N customers are using code monitors
     - 2020-11-05: 0 customers are using code monitors
