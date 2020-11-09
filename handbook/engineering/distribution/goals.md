@@ -64,17 +64,17 @@ We will start by looking at our Kubernetes deployment and working on an easier u
   - Design customization workflow.
     - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
 
-### Further standardize the debugging and troubleshooting process
+### Improve the debugging and troubleshooting process
 
-As we deploy Sourcegraph to multiple different environments, we need to provide a consistent and straightforward process to debug issues across our deployments and customers' deployments. We have some standardized tooling such as Grafana dashboards, alerting, and Jaeger tracing - but we need to further improve the usage of these and further standardized/formalize the debugging process.
+As we deploy Sourcegraph to multiple different environments, we need to provide a consistent and straightforward process to debug issues. We are currently lacking tools to collect debugging information (configuration, type, size, diff from upstream, etc) consistently and a process to capture the output of debugging sessions to feed back into our priorities and documentation.
+We will initially focus on reducing the time it takes to collect troubleshooting information.
 
 - **Owner**: TBD
 - **Status**: Not started. Unknown amount of work.
 - **Outcomes**:
   - We can categorize and capture the amount of effort spent on different incident types.
-  - We provide a straightforward set of processes/tools to collect initial debugging and deployment information (configuration, type, size, diff from upstream, recently-firing alerts, logs, etc.)
-  - Alerts in services owned by other teams at Sourcegraph are well-defined, extensive, and have excellent documentation site admins can understand.
-  - The tooling we rely on to debug our own infrastructure is aligned with the tooling we use to debug customer deployments.
+  - We can provide a straightforward set of tools to collect initial debugging and deployment information.
+  - TBD
 - **Milestones**: TBD
 
 ### [Split Cloud infrastructure into separate GCP projects](https://github.com/orgs/sourcegraph/projects/92)
