@@ -108,7 +108,7 @@ Many customers of Sourcegraph today are still running a single-container `source
   - RFC approval.
   - ...TBD...
 
-### Upgrades across multiple Sourcegraph versions should be easier
+### Support upgrading across multiple Sourcegraph versions
 
 Upgrading from 3.13 -> 3.17 requires you perform 4 individual upgrades today (3.14 -> 3.15 -> 3.16 -> 3.17) which is extremely painful and time consuming for site admins, especially so given how time consuming our upgrade process is in general. We would like to make upgrades across multiple Sourcegraph versions easier.
 
