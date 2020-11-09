@@ -12,7 +12,7 @@ Goals help us achieve our [vision](index.md#vision) for search.
 
 TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph with other search tools
 
-**Milestones**
+**Planned work**
 
 1. Search expressions
 1. Search language rules engine
@@ -29,7 +29,7 @@ TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph
     - 2020-11-05: TODO
 
 
-**Milestones**
+**Planned work**
 
 1. Scale indexed text search to 500k repositories
 1. Streaming search
@@ -43,7 +43,7 @@ TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph
 - **By TODO timeline**: TODO N customers are using code monitors
     - 2020-11-05: 0 customers are using code monitors
 
-**Milestones**
+**Planned work**
 
 1. Code monitoring (private code monitors, no sharing, emails + webhooks)
 
