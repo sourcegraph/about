@@ -122,3 +122,7 @@ Upgrading from 3.13 -> 3.17 requires you perform 4 individual upgrades today (3.
 ## Short-term goals
 
 Short-term goals are described in our [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fdistribution).
+
+## Past goals
+
+We record past goals that we have completed [here](goals_completed.md).
