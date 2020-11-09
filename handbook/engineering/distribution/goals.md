@@ -92,6 +92,7 @@ We will initially focus on reducing the time it takes to collect troubleshooting
   - ~~Move non-production deployments to separate projects.~~ Done: 3.21
   - ~~Create code to bootstrap new projects.~~ Done: 3.21
   - Document project and folder usage guidelines.
+  - Set spending limits for dynamic environments.
 
 ### Site admins use reliable methods like Docker Compose or Kubernetes for production deployments
 
