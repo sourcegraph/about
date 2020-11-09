@@ -71,7 +71,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-- You apply here and submit a sample of previous work.
+- You [apply here](https://jobs.lever.co/sourcegraph/5743038c-94a5-47b6-827a-ad16bf37aeea/apply) and submit a sample of previous work.
 - We set up a 30 minute hiring manager intro call with the VP of Marketing to chat about Sourcegraph, your experience, and what you’re looking for in your next role.
 - We schedule a few more hours of interviews:
   - 30 min VP of Product
@@ -85,3 +85,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
 If you’re interested in Sourcegraph but aren’t yet ready to apply we are still happy to connect and answer any questions that you might have: [DM us on Twitter](https://twitter.com/srcgraph) or email [hiring@sourcegraph.com](mailto:hiring@sourcegraph.com).
+
+**[Click here to apply](https://jobs.lever.co/sourcegraph/5743038c-94a5-47b6-827a-ad16bf37aeea/apply)**
+
+Go back to the [careers page](../../../company/careers.md) for all open positions.
