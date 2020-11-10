@@ -29,12 +29,12 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 ## Engineering
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 ### [Engineering leadership](../../handbook/engineering/leadership/index.md#goals)
-### [Campaigns](../../handbook/engineering/campaigns/index.md#goals)
+### [Campaigns](../../handbook/engineering/campaigns/goals.md#goals)
 ### [Cloud](../../handbook/engineering/cloud/goals.md#goals)
-### [Code intelligence](../../handbook/engineering/code-intelligence/index.md#goals)
-### [Distribution](../../handbook/engineering/distribution/goals.md)
-### [Search](../../handbook/engineering/search/goals.md)
-### [Security](../../handbook/engineering/security/index.md#goals)
+### [Code intelligence](../../handbook/engineering/code-intelligence/goals.md#goals)
+### [Distribution](../../handbook/engineering/distribution/goals.md#goals)
+### [Search](../../handbook/engineering/search/goals.md#goals)
+### [Security](../../handbook/engineering/security/goals.md#goals)
 ### [Web](../../handbook/engineering/web/goals.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
