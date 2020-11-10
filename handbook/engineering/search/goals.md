@@ -6,7 +6,13 @@ Goals help us achieve our [vision](index.md#vision) for search.
 
 ### Mature query language
 
-**Problem:** customers choose other search tools over Sourcegraph because they cannot express the queries they care about with Sourcegraph. TODO customer examples.
+**Problem:** The Sourcegraph query language does not support the growing complexity of searches being run by our users.
+
+Examples:
+
+- I want to only show examples from repositories that have been modified in the last 3 months so I see the most recent solutions.
+- I want to find repositories that have not been modified in over a year so I can deprecate them.
+- TODO: add more examples.
 
 **Success criteria**
 
