@@ -73,11 +73,11 @@ Rules that help us make decisions in crucial moments of the design process.
 
 - **Always design with the advanced user in mind**
 
-Our users are mostly highly skilled developers who are used to complex interfaces. They are more knowledgeable and need less guidance than regular web users. They also have higher expectations and are less forgiving.
+Our users are developers who are accustomed to using complex interfaces. They are more knowledgeable and need less guidance than regular web users. They also have higher expectations and are less forgiving.
 
 - **Consider familiar patterns first**
 
-Whenever possible, use well-known patterns from products our users spend a lot of time in, like IDEs or code hosts.
+Whenever possible, use well-known patterns from products our users spend a lot of time in, like IDEs, code hosts, or other developer tools.
 
 - **Don't hesitate to innovate but remember to onboard**
 
@@ -93,7 +93,7 @@ Sourcegraph is growing at an extraordinary pace. Our designs need to be flexible
 
 - **Manage complexity**
 
-We need to handle the unavoidable complexity of our product. Our users should see Sourcegraph as a powerful and intuitive tool. Aim to remove obstacles and unnecessary elements from both flows and interfaces. Use just-in-time knowledge and contextual help to educate and empower. Enable shortcuts and customisations, especially for power users.
+We need to handle the unavoidable complexity of our product. Our users should see Sourcegraph as a powerful and intuitive tool. Aim to remove obstacles and unnecessary elements from both flows and interfaces. Use just-in-time knowledge and contextual help to educate and empower. Enable shortcuts and customizations, especially for technical users accustomed to using keyboard navigation.
 
 ## Figma
 
