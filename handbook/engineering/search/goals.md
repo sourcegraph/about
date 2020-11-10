@@ -23,7 +23,7 @@ TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph
 1. Search expressions
 1. Search language rules engine
 
-### Performant search users can trust
+### Users trust Sourcegraph for fast and reliable search results at scale
 
 **Problem:** Search is too slow or frequently times out at the scale some of our customers care about, and at the scale we want Sourcegraph Cloud to reach. In large-scale codebases, running the same search several times yields varying result counts, with no insights into the underlying reasons. Customers cannot trust that their codebase was exhaustively searched.
 
