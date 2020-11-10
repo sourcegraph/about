@@ -40,7 +40,7 @@ TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph
 1. Scale indexed text search to 500k repositories
 1. Streaming search
 
-### Sourcegraph helps customers monitor important changes to their codeebase
+### Sourcegraph proactively notifies of important code changes
 
 **Problem:** Customers want to be notified about important changes in their codebase. Our saved searches feature fails to address their desired use cases, so they have been building workarounds themselves. Saved searches are limited to email notifications, where webhooks would allow Sourcegraph notifications to reach a wider audience at customer orgs. TODO customer examples.
 
