@@ -21,7 +21,8 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Deliver to [*N<sub>5</sub>*][N5]
     - Deliver to [*N<sub>6</sub>*][N6]
 1. 🔄 Support automatically indexing source code within Sourcegraph.
-    - 🔄 Provide best effort auto-indexing for supported languages [RFC 201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit)
+    - ✅  Provide best effort auto-indexing for supported languages [RFC 201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit)
+    - Next steps TBD
 1. 🔄 Support incremental indexing of Go source code.
     - 🔄 Add incremental indexing for monorepo support [RFC 170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit#)
 1. 🔄 Deliver precise Java code intelligence to 3 organizations.
