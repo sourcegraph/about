@@ -51,8 +51,10 @@ Now, in a new terminal, run the command below. The database will be running on `
   ```
 
 ## Example queries
-🔥 You are directly interfacing with the production database. If you are unsure of any commands, please reach out in #dev-chat or #dev-ops
-    Please prefer using the readonly user 'frontend-dev'
+
+> 🔥 You are directly interfacing with the production database. If you are unsure of any commands, please reach out in #dev-chat or #dev-ops.
+> Please prefer using the readonly user `frontend-dev`
+
 - See all fields on a table (ie the `repo` table)
   ```
     \d+ repo
