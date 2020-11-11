@@ -52,7 +52,9 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We schedule 5 remote interviews totalling 3.5 hours over video chat across multiple days.
    - **Technical experience:** We ask you about your past work and accomplishments.
    - **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
-   - **VP of Engineering/CEO/CTO:** We ask you about what motivates you to do your best work, and we tell you more about the vision for the company.
+   - 30m **VP Engineering**
+   - 30m **CTO**
+   - 30m **CEO**
 1. We check your references.
 1. We make you a job offer.
 
