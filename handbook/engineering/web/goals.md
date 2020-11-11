@@ -4,35 +4,44 @@
 
 ### Long term
 
-**_The web team has three areas of focus: creating and maintaining a highly usable and intentionally designed webapp interface; delivering the full, unique value of [extensions](https://docs.sourcegraph.com/extensions); maintaining and expanding code host integrations; and developing code insights into an entirely new featureset._**
+**_The web team has four areas of focus:_**
+
+  1. **_Creating and maintaining a highly usable and intentionally designed webapp interface_**
+  1. **_Delivering the full, unique value of Sourcegraph [extensions](https://docs.sourcegraph.com/extensions)_**
+  1. **_Maintaining and expanding code host [integrations](https://docs.sourcegraph.com/integration)_**
+  1. **_Developing code insights into an entirely new featureset_**
 
 **Outcome**: 
-1. Our webapp, browser extensions and native integrations, and code insights all provide our users unique value. 
-1. These platforms are well-maintained, well-designed, consistent, easy to setup, well-documented, well-tested, performant, and leave users impressed. 
-1. The webapp helps users discover and employ the full power of Sourcegraph effectively, with a high quality and highly usable interface. 
-1. Soucegraph extensions and extensions API provide powerful capabilities to users and a great experience for extension developers. 
-1. Code insights expose the value of code metadata to users at all levels of an organization. 
+
+* All of these areas of focus are well-maintained, well-designed, well-documented, well-tested, performant, easy to set up, and leave users impressed. 
+* The webapp helps users discover and employ the full power of Sourcegraph effectively, with a high quality and highly usable interface. 
+* Soucegraph extensions and the extensions API provide powerful capabilities to users and a great experience for extension developers. 
+* Sourcegraph code host native integrations and browser extensions support the most common code hosts and browsers. 
+* Code insights expose the value of Sourcegraph's knowledge of your codebase to users at all levels of an organization. 
 
 ### Medium term
 
-TODO SPLIT TO 4 CATEGORIES
-
-To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans.
+_To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans. These medium-term goals are listed in order of rought priority. This means we preference the sooner-listed goal when making progress on one would conflict with another goal, but it doesn't mean we only work on the first goal until it's done – we balance our iterations in sum so we can make some progress on all of these goals over a quarter. Within each goal, the sub-goals are also listed in (stricter) priority order._ 
 
 1. **Make the Sourcegraph web interfaces more consistent and improve discoverability of Sourcegraph features.**
-   
-   1.  Make progress on design debt throughought the web app, such as on the repository page, user settings area, navigation, settings, and command palette UI. 
-   1. TODO ADD/SPLIT
+   1. Make progress on design debt throughought the web app where the web team owns the design: repo page areas and panels, navigation and headers, general theming, and the blog page (file viewer). 
+   1. Build and update designs to help users discover or understand everything Sourcegraph offers, like new navigation menus and header concepts. 
 
-2. **Make the browser extension and Sourcegraph extensions a core part of Sourcegraph users' experiences.**
-   1. To grow adoption of extensions, build new API endpoints that are robust and obviously useful. 
-   1. The extensions action bar needs to be clear and scalable, and help users discover our extensions. 
-   1. We want to track anonymized, general usage of extensions to determine which extensions are most successful at adding value for our users. 
+1. **Make Sourcegraph extensions a core part of Sourcegraph users' experiences.**
+   1. Track anonymized, general usage of extensions to determine which extensions are most successful at adding value for our users to inform our future work.
+   1. Build new API endpoints that are robust and obviously useful (used immediately in an extension), to grow adoption of extensions. 
+   1. Make the extensions action bar clear and scalable, and help users discover and use our extensions. 
    1. Improve discoverability and design of the extension registry to enable users to find the most useful extensions and make users excited to build their own extension. 
 
-3. **Make insights an entirely new reason to use Sourcegraph.**
-   1. We want to expose metrics that let our users measure and track their own goals, whether those are migrations, code smells, security needs, cross-collaboration, or other information about code. 
-   1. We want to focus this project on the most pressing needs of our customers, before expanding it to cover continually more use cases. 
+1. **Make code insights an entirely new reason to use Sourcegraph.**
+   1. Focus on building prototypes to solve the most pressing needs of our customers, to clearly demonstrate the value of code insights. 
+   1. Expose more generalizable metrics that let our users measure and track their own goals, whether those are migrations, code smells, security needs, cross-collaboration, or other information about code. 
+   1. Expose features that let our users build their own insights. 
+
+1. **Make code host integrations reach more users more often.**
+   1. Maintain the existing native integrations and browser extensions. 
+   1. Build support for new code hosts and new browsers, like Safari and Gerrit. 
+   1. Build support for the browser extension to reference both a private Sourcegraph instance and public code on Sourcegraph.com. 
 
 ### Short term
 
@@ -46,8 +55,8 @@ The individual tasks and progress of the current iteration can be found as GitHu
 1. ✅ The Sourcegraph browser extension is more discoverable and easy to congifure ([RFC 221](https://docs.google.com/document/d/19f4xleYBU1zZZdqMmXlLmFxeR-fwEpOwTOgViOFOnyo/edit))
 1. ✅ Build new and improved Sourcegraph extensions to showcase the value and opportunity of extensions ([RFC 246](https://docs.google.com/document/d/1HngEeLNAe7_QzVJr6UPi0Si4ZALqTzb7uonOxUiJP6g/edit))
 1. ✅ Improve the Sourcegraph extensions (internal) development experience ([RFC 155](https://docs.google.com/document/d/1ikrUNVe3YVbR-JpegxhjrFdmRkTGzTLcOMkKHnOyjuE/edit)) and (external) documentation
-1. 🔄 Code insights TBD
+1. 🔄 Code insights migration prototype and directory decoration
+1. 🔄 Safari browser extension
 1. Sourcegraph web app navigation is clearer and intentionally designed ([RFC 248](https://docs.google.com/document/d/1AEeCuXuYGlu2kU9HfTuh5rMuoL2ASxy-G4LFje_ySFE/edit?usp=drive_web&ouid=110069214620879702746))
 1. Page title breadcrumbs are unified and useful 
 1. Later-stage code insights work 
-
