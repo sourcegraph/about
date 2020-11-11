@@ -47,7 +47,7 @@ Now, in a new terminal, run the command below. The database will be running on `
 
   ```
     export PGPASSWORD='<$PASSWORD>'
-    pgsql -h localhost -p 5555 -d sg -U 'dev-readonly'
+    psql -h localhost -p 5555 -d sg -U 'dev-readonly'
   ```
 
 ## Example queries
