@@ -38,7 +38,7 @@ _To reach our long-term goal, we set the following medium-term goals to guide ou
    1. Expose more generalizable metrics that let our users measure and track their own goals, whether those are migrations, code smells, security needs, cross-collaboration, or other information about code. 
    1. Expose features that let our users build their own insights. 
 
-1. **Make code host integrations reach more users more often.**
+1. **Increase the weekly active users of all our code host integrations.**
    1. Maintain the existing native integrations and browser extensions. 
    1. Build support for new code hosts and new browsers, like Safari and Gerrit. 
    1. Build support for the browser extension to reference both a private Sourcegraph instance and public code on Sourcegraph.com. 
