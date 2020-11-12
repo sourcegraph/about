@@ -24,7 +24,7 @@
 _To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans. These medium-term goals are listed in order of rought priority. This means we preference the sooner-listed goal when making progress on one would conflict with another goal, but it doesn't mean we only work on the first goal until it's done – we balance our iterations in sum so we can make some progress on all of these goals over a quarter. Within each goal, the sub-goals are also listed in (stricter) priority order._ 
 
 1. **Make the Sourcegraph web interfaces more consistent and improve discoverability of Sourcegraph features.**
-   1. Make progress on design debt throughought the web app where the web team owns the design: repo page areas and panels, navigation and headers, general theming, and the blog page (file viewer). 
+   1. Make progress on design debt throughout the web app where the web team owns the design: repo page areas and panels, navigation and headers, general theming, and the blob page (file viewer). 
    1. Build and update designs to help users discover or understand everything Sourcegraph offers, like new navigation menus and header concepts. 
 
 1. **Make Sourcegraph extensions a core part of Sourcegraph users' experiences.**
