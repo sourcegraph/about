@@ -34,26 +34,20 @@ How we'll achieve this:
 
 Eventually we want to be publishing tons of compelling stuff for developers and other similar audiences. For now, we're building the infrastructure so we can do this well and track the results, and we'll publish a small number of very compelling things.
 
-Timeline: 2 months (ending 2020-10-02)
-
-Outcomes:
-
-- The about site looks really nice, has visitor and conversion tracking, and is SEO'd. (@aileen)
-- The workflow for publishing things is smooth and well documented so someone else with basic Git knowledge can follow it. (@aileen + @sqs)
-- Our tone, voice, writing standards, personas, and "philosophy on how to be compelling to developers" are all documented. (@sqs)
-- We publish the monthly release announcement and 3 other things (some combo of new about site pages, videos, and blog posts) using the documented workflow and standards, and all of these things pass the secret test of whether they're really, really compelling to developers. (@sqs)
-- A developer (who is not @sqs or @beyang) publishes a blog post using the documented workflow and standards, and it passes the [secret test of whether it's really, really compelling to developers](https://docs.google.com/document/d/1IgS9bq-wmCDKrGpydcJV1k_dzxulviyNAbaj7LLV-RY/edit). (That doc is only visible to the marketing team. It's secret so people don't try to game it.) (@sqs)
-- We can determine how many and which leads came from which content we published. (@aileen + @lori)
-
 #### Help other teams that need marketing support
 
 Timeline: ongoing
 
 Tasks:
-
+- The about site looks really nice, has visitor and conversion tracking, and is SEO'd. (@aileen)
+- The workflow for publishing things is smooth and well documented so someone else with basic Git knowledge can follow it. (@aileen)
 - Make and maintain materials (slides, one-pagers, and proposals) for the sales team (@lori)
 - Manage and tweak Google ads to drive engagement with our product (@lori)
-- Respond to public and private messages on social media (@sqs)
+- We can determine how many and which leads came from which content we published. (@aileen + @lori)
+- We publish the monthly release announcement and 3 other things (some combo of new about site pages, videos, and blog posts) using the documented workflow and standards, and all of these things pass the secret test of whether they're really, really compelling to developers. 
+- A developer (who is not @sqs or @beyang) publishes a blog post using the documented workflow and standards, and it passes the [secret test of whether it's really, really compelling to developers](https://docs.google.com/document/d/1IgS9bq-wmCDKrGpydcJV1k_dzxulviyNAbaj7LLV-RY/edit). (That doc is only visible to the marketing team. It's secret so people don't try to game it.)
+- Our tone, voice, writing standards, personas, and "philosophy on how to be compelling to developers" are all documented. 
+- Respond to public and private messages on social media 
 
 ### 12-month plan
 
@@ -64,7 +58,6 @@ Tasks:
 - Highlight customer value/stories
 - Engage existing influential users live
 - Spread Sourcegraph.com in open-source communities with existing traction
-- Hire VP Marketing and grow team
 
 ## Members
 
