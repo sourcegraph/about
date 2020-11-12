@@ -56,8 +56,18 @@ Other:
 - [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerDistribution%2C+:%5B_%5D%7D+OR+%28:%5B_%5D%2C+ObservableOwnerDistribution%29+count:1000&patternType=structural)
 - [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/aa59eba4-9b34-45ea-9515-c4dab4cbdac9/main)
 
-## Hiring status
+## Growth plan
 
-_Updated 2020-06-02_
+_Updated 2020-11-11_
 
-The team has doubled in size recently so it isn't a high priority to grow this team further, but we are always open to hiring exceptional people. [Apply here](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-distribution.md).
+We are looking to grow this team to 8 engineers so we can split this team into two new teams.
+
+TODO(@gonza): define specific roles we are hiring for.
+
+### Deployment and Operations platform
+
+This team owns how Sourcegraph site admins (including on-premise customers and our own Cloud deployment) deploy, upgrade, and monitor Sourcegraph.
+
+### Developer platform
+
+This team owns general developer productivity and happiness at Sourcegraph. The customers of this team are other engineers at Sourcegraph. Ownership areas include, but aren't limited to, our dev environment, our build pipelines, and developer bots/automation.
