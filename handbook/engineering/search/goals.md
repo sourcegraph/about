@@ -1,57 +1,44 @@
+
+
+
 # Search goals and priorities
 
 ## Goals
 
-Goals help us achieve our [vision](index.md#vision) for search.
+### Support large scale organizations
 
-### Mature query language
-
-**Problem:** The Sourcegraph query language does not support the growing complexity of searches being run by our users.
-
-Examples:
-
-- I want to only show examples from repositories that have been modified in the last 3 months so I see the most recent solutions.
-- I want to find repositories that have not been modified in over a year so I can deprecate them.
-- TODO: add more examples.
-
-**Success criteria**
-
-TODO table of use cases / capabilities we want to achieve, comparing Sourcegraph with other search tools
-
-**Planned work**
-
-1. Search expressions
-1. Search language rules engine
-
-### Users trust Sourcegraph for fast and reliable search results at scale
-
-**Problem:** Search is too slow or frequently times out at the scale some of our customers care about, and at the scale we want Sourcegraph Cloud to reach. In large-scale codebases, running the same search several times yields varying result counts, with no insights into the underlying reasons. Customers cannot trust that their codebase was exhaustively searched.
-
-**Success criteria**
-
-- **By EOY 2020**: Latency for the set of search queries run by search-blitz is less than TODO Nms with 500k repositories indexed on Sourcegraph Cloud
-    - 2020-11-05: TODO
-- **By EOY 2020**: P99 time to first result is less than TODO Nms across all search types on Sourcegraph Cloud
-    - 2020-11-05: TODO
+**Definition of large scale:**
+Customers with ([looker](https://sourcegraph.looker.com/looks/436))
+- Git Directory size > 100 GB and < 50 TB
+- \> 1 billion LOC and < 5 billion LOC
 
 
-**Planned work**
 
-1. Scale indexed text search to 500k repositories
-1. Streaming search
+**Problem:** Large customers expect search to be fast at their scale. Customers expect to be able to search over their codebase intuitively, and want their first search result quickly. For larger organizations, customers care about getting all search results for important changes in their codebase. Supporting search at this scale also helps work towards supporting the Cloud growth efforts.
 
-### Sourcegraph proactively notifies of important code changes
+**Outcome:** What does this look like? Describe this in prose using descriptions from the team: [Search team 6 month vision](https://docs.google.com/document/d/1iiYCKK5D2PTVzzFmTF1OHl5SNLVkYfbOfyrCcoYM_24/edit#heading=h.bi6mdia4vr7w) 
 
-**Problem:** Customers want to be notified about important changes in their codebase. Our saved searches feature fails to address their desired use cases, so they have been building workarounds themselves. Saved searches are limited to email notifications, where webhooks would allow Sourcegraph notifications to reach a wider audience at customer orgs. TODO customer examples.
-
-**Success criteria**
-
-- **By TODO timeline**: TODO N customers are using code monitors
-    - 2020-11-05: 0 customers are using code monitors
-
-**Planned work**
-
-1. Code monitoring (private code monitors, no sharing, emails + webhooks)
+**Milestones (unordered):** 
+- All basic search types (indexed, regular expression, structural) are fast at this scale.
+    - What is fast?
+        - Time to first result: Time until user sees their first result on the client
+        - Total search latency: Time until results are sent to the client
+    - Different targets for different search types
+        - Need baselines
+- Users trust Sourcegraph to return all their search results.
+- Users can find important changes in their codebase with search
+    - They use code monitoring to stay on top of changes.
+    - They are easily learning and using our advanced syntax (structural/AND/OR) 
+- They can find what they’re looking for in the search UI.
+    - The information hierarchy is clear
+    - UI is less busy and interactions are clear.
+    - Alerts are readable and clear.
+- Users take less time to drill down to search results.
+- Users find diff and commit search performant.
+- Sharing useful searches within the organization is easy.
+    - Sharing search links is easy
+- Users can bookmark searches.
+- We’ve learned which semantic search features customers find most useful.
 
 ---
 
