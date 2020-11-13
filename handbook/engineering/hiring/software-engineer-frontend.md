@@ -13,7 +13,7 @@ The following engineering teams are currently hiring for this role:
 - You are proficiency in the English language, both written and verbal, sufficient for success in a remote and largely asynchronous work environment.
 - You communicate clearly and empathetically, especially in writing and documentation.
 - You share our [values](../../../company/values.md), and work in accordance with those values
-- You have the ability to thrive in a fully remote and largely asynchronous organization
+- You have the ability to thrive in an all-remote and largely asynchronous organization
 
 ## Your responsibilities
 
@@ -58,7 +58,8 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We screen your application for suitability for the role by looking at:
    1. Your past work experience. In the absence of professional work experience we would look at any open-source projects you have created or contribute to.
    1. Whether you have the necessary technical skills that we require.
-   1. The answers you provide to the application questions
+   1. The answers you provide to the application questions.
+   1. And the [Nice-to-haves](#nice-to-haves) we listed above.
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. You complete a 3-hour [coding excercise](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test the technical qualifications and responsibilities of the role as [listed above](#your-responsibilities).
    1. _Note: while we do not disqualify candidates who do not have React and TypeScript experience from taking the excercise, you will be required to use these for the excercise._
