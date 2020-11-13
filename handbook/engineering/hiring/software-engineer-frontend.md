@@ -2,15 +2,22 @@
 
 We are looking for frontend engineers who know how to build intuitive user experiences to make the power of [Universal Code Search](https://about.sourcegraph.com/product) accessible to everyone. You will have a lot of ownership to solve tough technical and UX problems in key areas of our web application and browser extensions (e.g. code search, code navigation, campaigns).
 
+The following engineering teams are currently hiring for this role:
+
+1. [Web](../web/index.md#growth-plan) - all experience levels
+2. [Cloud](../cloud/index.md#growth-plan) - senior experience level
+
 ## About you
 
 - You have practice at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g. cut scope) to ship quickly and iterate when necessary.
+- You are proficiency in the English language, both written and verbal, sufficient for success in a remote and largely asynchronous work environment.
 - You communicate clearly and empathetically, especially in writing and documentation.
-- You are [high agency](../../../company/values.md#high-agency).
+- You share our [values](../../../company/values.md), and work in accordance with those values
+- You have the ability to thrive in a fully remote and largely asynchronous organization
 
 ## Your responsibilities
 
-- Work closely with a dedicated designer and PM to implement high-quality UIs.
+- Work closely with a dedicated designer and PM to implement high-quality UIs using React, SCSS and TypeScript.
 - Actively participate in the planning of the features we're going to build, e.g. by writing and reviewing RFCs.
 - Build UIs you will love to use yourself as a developer.
 - Ensure UI/UX consistency in our app.
@@ -33,7 +40,9 @@ We are looking for frontend engineers who know how to build intuitive user exper
 - Experience building browser extensions (e.g. Chrome, Firefox, Safari).
 - Large and/or numerous contributions to open source projects.
 - Published blog posts and/or tech talks about your work.
-- Experience working on small high-performing teams, preferably tech startups.
+- Experience working on small high-performing product teams, preferably tech startups.
+- Experience working with a global or otherwise multicultural team
+- Developer platform/tool industry experience
 
 ## Learn more about us
 
@@ -46,10 +55,17 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 ## Interview process
 
 1. You [apply here](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7/apply).
+1. We screen your application for suitability for the role by looking at:
+   1. Your past work experience. In the absence of professional work experience we would look at any open-source projects you have created or contribute to.
+   1. Whether you have the necessary technical skills that we require.
+   1. The answers you provide to the application questions
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
-1. You complete a 3-hour [exercise project](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test the technical qualifications listed above.
-1. We review your submission and schedule a **1 hour follow-up call** to discuss it.
-1. We schedule additional interviews across multiple days.
+1. You complete a 3-hour [coding excercise](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test the technical qualifications and responsibilities of the role as [listed above](#your-responsibilities).
+   1. _Note: while we do not disqualify candidates who do not have React and TypeScript experience from taking the excercise, you will be required to use these for the excercise._
+1. We review your submission and schedule a **1 hour follow-up call** with an engineer and designer to discuss it.
+   1. _Note: at this point, based on the evaluation of the coding excercise assessment, we might choose to allocate you to a different team than you might have indicated a preference for during your application if we believe your skills would be more suitable in it._
+1. We set up a 1-hour interview with the **Hiring Manager** who will tell you more about the role in the team. They will ask you about your past work and accomplishments and assess your sutiability for the role.
+1. If, after the coding excercise evaluation and hiring manager interviews, we believe you to be a suitable candidate for the role, we schedule the following additional interviews across multiple days:
    - 1h **Technical experience:** We ask you about your past work and accomplishments in depth, how you worked with others, decisions you made, and what you'd do differently today.
    - 1h **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
    - 30m **VP Engineering**
