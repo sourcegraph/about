@@ -21,7 +21,7 @@
 
 ### Medium term
 
-_To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans. These medium-term goals are listed in order of rough priority. This means we prefer a sooner-listed goal when making progress on one would conflict with another goal, but it doesn't mean we only work on the first goal until it's done – we balance our iterations in sum so we can make some progress on all of these goals over a quarter. Within each goal, the sub-goals are also listed in (stricter) priority order._ 
+_To reach our long-term goal, we set the following medium-term goals to guide our short-term iteration plans. These medium-term goals are listed in order of rough priority. This means we preference a sooner-listed goal when making progress on one would conflict with another goal, but it doesn't mean we only work on the first goal until it's done – we balance our iterations in sum so we can make some progress on all of these goals over a quarter. Within each goal, the sub-goals are also listed in (stricter) priority order._ 
 
 1. **Make the Sourcegraph web interfaces more consistent and improve discoverability of Sourcegraph features.**
    1. Make progress on design debt throughout the web app where the web team owns the design: repo page areas and panels, navigation and headers, general theming, and the blob page (file viewer). 
