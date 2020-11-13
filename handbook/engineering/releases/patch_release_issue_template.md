@@ -16,6 +16,10 @@ Arguments:
 
 ---
 
+**Note:** All `yarn run release ...` commands should be run from folder `dev/release`.
+
+**Note:** All `yarn run test ...` commands should be run from folder `web`.
+
 ## Setup
 
 - [ ] Ensure release configuration in `dev/release/config.json` on `main` is up to date with the parameters for the current release.
