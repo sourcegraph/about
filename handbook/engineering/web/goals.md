@@ -29,7 +29,7 @@ _To reach our long-term goal, we set the following medium-term goals to guide ou
 
 1. **Make Sourcegraph extensions a core part of Sourcegraph users' experiences.**
    1. Track anonymized, general usage of extensions to determine which extensions are most successful at adding value for our users to inform our future work.
-   1. Build new API endpoints that are robust and obviously useful (used immediately in an extension), to grow adoption of extensions. 
+   1. Build, maintain, and update API endpoints that are robust and immediately useful, to grow adoption of extensions. 
    1. Make the extensions action bar clear and scalable, and help users discover and use our extensions. 
    1. Improve discoverability and design of the extension registry to enable users to find the most useful extensions and make users excited to build their own extension. 
 
