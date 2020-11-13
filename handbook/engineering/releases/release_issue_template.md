@@ -18,6 +18,7 @@ This release is scheduled for $RELEASE_DATE.
 ---
 
 **Note:** All `yarn run release ...` commands should be run from folder `dev/release`.
+
 **Note:** All `yarn run test ...` commands should be run from folder `web`.
 
 ## Setup
