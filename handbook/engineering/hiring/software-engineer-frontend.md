@@ -63,7 +63,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. You complete a 3-hour [coding excercise](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test the technical qualifications and responsibilities of the role as [listed above](#your-responsibilities).
    1. _Note: while we do not disqualify candidates who do not have React and TypeScript experience from taking the excercise, you will be required to use these for the excercise._
-1. We review your submission and schedule a **1 hour follow-up call** with an engineer and designer to discuss it.
+1. An engineer and a designer will review your submission and schedule a **1 hour follow-up call** to discuss it.
    1. _Note: at this point, based on the evaluation of the coding excercise assessment, we might choose to allocate you to a different team than you might have indicated a preference for during your application if we believe your skills would be more suitable in it._
 1. We set up a 1-hour interview with the **Hiring Manager** who will tell you more about the role in the team. They will ask you about your past work and accomplishments and assess your sutiability for the role.
 1. If, after the coding excercise evaluation and hiring manager interviews, we believe you to be a suitable candidate for the role, we schedule the following additional interviews across multiple days:
