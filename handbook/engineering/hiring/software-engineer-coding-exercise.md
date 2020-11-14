@@ -23,7 +23,7 @@ If we decide to move forward, we will schedule a 30-minute followup call to disc
 We designed this exercise to measure your understanding of building web UIs.
 
 - You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
-- The exercise asks you to implement a UI in a scaffolded TypeScript React app.
+- The exercise asks you to implement a UI in a scaffold TypeScript React app.
 - We provide you with the code of the scaffold app, the URL of a working GraphQL API to fetch data from and a link to a Figma design for the UI.
 - You are free in how you chose to implement your solution, and can change the existing code in any way you'd like, however be aware the scaffold app is there to save you time.
 - You can use your own development environment and lookup documentation on the internet.
