@@ -10,10 +10,8 @@ The following engineering teams are currently hiring for this role:
 ## About you
 
 - You have practice at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g. cut scope) to ship quickly and iterate when necessary.
-- You are proficient in the English language, both written and verbal, sufficient for success in a remote and largely asynchronous work environment.
 - You communicate clearly and empathetically, especially in writing and documentation.
 - You share our [values](../../../company/values.md), and work in accordance with those values
-- You have the ability to thrive in an all-remote and largely asynchronous organization
 
 ## Your responsibilities
 
@@ -55,25 +53,29 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 ## Interview process
 
 1. You [apply here](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7/apply).
-1. We screen your application for suitability for the role by looking at:
-   1. Your past work experience. In the absence of professional work experience we would look at any open-source projects you have created or contribute to.
-   1. Whether you have the necessary technical skills that we require.
-   1. The answers you provide to the application questions.
-   1. And the [Nice-to-haves](#nice-to-haves) we listed above.
-1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
-1. You complete a 3-hour [coding excercise](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test the technical qualifications and responsibilities of the role as [listed above](#your-responsibilities).
-   1. _Note: while we do not disqualify candidates who do not have React and TypeScript experience from taking the excercise, you will be required to use these for the excercise._
-1. An engineer and a designer will review your submission and schedule a **1 hour follow-up call** to discuss it.
-   1. _Note: at this point, based on the evaluation of the coding excercise assessment, we might choose to allocate you to a different team than you might have indicated a preference for during your application if we believe your skills would be more suitable in it._
-1. We set up a 1-hour interview with the **Hiring Manager** who will tell you more about the role in the team. They will ask you about your past work and accomplishments and assess your sutiability for the role.
-1. If, after the coding excercise evaluation and hiring manager interviews, we believe you to be a suitable candidate for the role, we schedule the following additional interviews across multiple days:
-   - 1h **Technical experience:** We ask you about your past work and accomplishments in depth, how you worked with others, decisions you made, and what you'd do differently today.
-   - 1h **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
-   - 30m **VP Engineering**
-   - 30m **CTO**
-   - 30m **CEO**
+1. The **Hiring Manager** screens your application for suitability for the role by looking at:
+   - The answers you provide to the application questions.
+   - The skills you have obtained in your career.
+   - Your past work experience. In the absence of professional work experience we would look at any open-source projects you have created or contribute to.
+   - The [Nice-to-haves](#nice-to-haves) we listed above.
+1. A **Recruiter** sets up a 30 minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
+1. We set up a 1 hour interview with the **Hiring Manager**, who will tell you more about the role in the team. They will ask you about your past work and accomplishments and assess your sutiability for the role.
+1. You complete a 3 hour [coding excercise](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test your technical ability and the responsibilities of the role as [listed above](#your-responsibilities).
+   - _Note: while we do not disqualify candidates who do not have React and TypeScript experience from taking the excercise, you will be required to use these for the excercise._
+1. An **Engineer** and a **Designer** will review and grade your submission.
+1. We schedule a **1 hour follow-up call** to discuss your submission and ask any questions we might have to clarify our understanding of your technical capability and sutiability for the role.
+1. We schedule the following additional interviews, in no particular order, across multiple days:
+   - 1 hour **Technical experience:** We ask you about your past work and accomplishments in depth, how you worked with others, decisions you made, and what you'd do differently today.
+   - 1 hour **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
+   - 30 minutes **VP Engineering**
+   - 30 minutes **CTO**
+   - 30 minutes **CEO**
 1. We check your references.
 1. We make you a job offer.
+
+**Please note the following:**
+- Your application could get rejected after any one of the steps in our interview process.
+- We might choose to assign you to a different team than you might have indicated a preference for during your application if we believe your skills would be more suited in it._
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
