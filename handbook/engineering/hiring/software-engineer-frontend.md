@@ -10,7 +10,7 @@ The following engineering teams are currently hiring for this role:
 ## About you
 
 - You have practice at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g. cut scope) to ship quickly and iterate when necessary.
-- You are proficiency in the English language, both written and verbal, sufficient for success in a remote and largely asynchronous work environment.
+- You are proficient in the English language, both written and verbal, sufficient for success in a remote and largely asynchronous work environment.
 - You communicate clearly and empathetically, especially in writing and documentation.
 - You share our [values](../../../company/values.md), and work in accordance with those values
 - You have the ability to thrive in an all-remote and largely asynchronous organization
