@@ -41,8 +41,8 @@ The following engineering teams are currently hiring for this role:
 - Large and/or numerous contributions to open source projects.
 - Published blog posts and/or tech talks about your work.
 - Experience working on small high-performing product teams, preferably tech startups.
-- Experience working with a global or otherwise multicultural team
-- Developer platform/tool industry experience
+- Experience working with a global or otherwise multicultural team.
+- Developer platform/tool industry experience.
 
 ## Learn more about us
 
