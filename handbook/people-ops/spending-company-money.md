@@ -12,11 +12,15 @@ We want to make sure you have what you need to be productive and happy in your r
 
 ### Full-time teammates
 
-We have an "all-in" total budget of $1500 for desk setup, which includes all the items in the "Desk items" section. If you expect to significantly exceed the listed amount on any purchase, please notify @sourcegraph/people-ops so we can decide if we need to update this guide.
+We have an "all-in" total budget of **$1,850** for desk setup, which includes all the items in the "Desk items" section, and higher budgets for some teams. If you expect to significantly exceed the listed amount on any purchase, please notify @sourcegraph/people-ops so we can decide if we need to update this guide.
+
+#### Additional team budgets
+
+- [Design team](../product/design/index.md) members have a total budget of **$2,650** for purchasing higher-resolution monitors or other design equipment.
 
 ### Interns
 
-The budget for interns is $750 and includes only the electronic items in the "Desk set-up" section.
+The budget for interns is **$925*** and includes only the electronic items in the "Desk set-up" section.
 
 ### Desk items
 
