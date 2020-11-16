@@ -11,7 +11,7 @@ The following engineering teams are currently hiring for this role:
 
 - You have practice at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g. cut scope) to ship quickly and iterate when necessary.
 - You communicate clearly and empathetically, especially in writing and documentation.
-- You share our [values](../../../company/values.md), and work in accordance with those values
+- You share our [values](../../../company/values.md), and work in accordance with those values.
 
 ## Your responsibilities
 
