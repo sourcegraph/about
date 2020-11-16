@@ -1,51 +1,52 @@
-
-
-
 # Search goals and priorities
 
 ## Goals
 
 ### Support large scale organizations
 
-**Definition of large scale:**
-Customers with ([looker](https://sourcegraph.looker.com/looks/436))
-- Git Directory size > 100 GB and < 50 TB
-- \> 1 billion LOC and < 5 billion LOC
+Timeline: ~6 months (May 2021)
 
+#### Definition of large scale
 
+Organizations with:
 
-**Problem:** Large customers expect search to be fast at their scale. Customers expect to be able to search over their codebase intuitively, and want their first search result quickly. For larger organizations, customers care about getting all search results for important changes in their codebase. Supporting search at this scale also helps work towards supporting the Cloud growth efforts.
+- A Git directory size between 100 GB and 50 TB
+- Total lines of code (LOC) between 1 billion and 5 billion
 
-**Outcome:** What does this look like? Describe this in prose using descriptions from the team: [Search team 6 month vision](https://docs.google.com/document/d/1iiYCKK5D2PTVzzFmTF1OHl5SNLVkYfbOfyrCcoYM_24/edit#heading=h.bi6mdia4vr7w) 
+See [looker](https://sourcegraph.looker.com/looks/436) for current customer data.
 
-**Milestones (unordered):** 
+#### Problem
+
+Large customers expect search to be fast at their scale. Customers expect to be able to search over their codebase intuitively, and want their first search result quickly. For larger organizations, customers care about getting all search results for important changes in their codebase. Supporting search at this scale also helps work towards supporting the Cloud growth efforts.
+
+#### Outcome
+
+TODO: What does this look like? Describe this in prose using descriptions from the team: [Search team 6 month vision](https://docs.google.com/document/d/1iiYCKK5D2PTVzzFmTF1OHl5SNLVkYfbOfyrCcoYM_24/edit#heading=h.bi6mdia4vr7w).
+
+- Make it clear to the passing naive hacker that they couldn’t write something which replaces us in a few weekends / just use grep.
+- Our search experience is consistent, reliable, and predictable: IE Sourcegraph search does what it says and says what it does.
+- We understand more about each individual user and tailor their results so that results are ranked to promote the languages and repositories they are most likely to care about.
+- Search queries and their results become a frictionless starting point for creating all the other business objects our users will start to value… monitors, insights, campaigns and /next/.
+- Search is optimized for the cloud, where hundreds of a company’s private repos will live alongside hundreds of thousands of public open source repos.
+- We have a learnable, comprehensive code search query language; performant and reliable search across all result types we offer; a polished product that handles failure cases properly; and a personalized experience for users that surfaces their most relevant code.
+
+#### Milestones (currently unordered)
+
 - All basic search types (indexed, regular expression, structural) are fast at this scale.
     - What is fast?
         - Time to first result: Time until user sees their first result on the client
         - Total search latency: Time until results are sent to the client
-    - Different targets for different search types
-        - Need baselines
+    - Need baselines for different targets for different search types
 - Users trust Sourcegraph to return all their search results.
 - Users can find important changes in their codebase with search
-    - They use code monitoring to stay on top of changes.
-    - They are easily learning and using our advanced syntax (structural/AND/OR) 
 - They can find what they’re looking for in the search UI.
-    - The information hierarchy is clear
-    - UI is less busy and interactions are clear.
-    - Alerts are readable and clear.
 - Users take less time to drill down to search results.
 - Users find diff and commit search performant.
 - Sharing useful searches within the organization is easy.
-    - Sharing search links is easy
 - Users can bookmark searches.
 - We’ve learned which semantic search features customers find most useful.
 
----
-
 ## Roadmap
-
-The search roadmap is driven by the team's [goals](#goals).
-
 
 1. 🔄 [Enterprise homepage](#1-enterprise-homepage)
 1. 🔄 [Search tour](#2-search-tour)
@@ -73,8 +74,6 @@ as a user, I can create a scope of code I want to search across as a list of rep
 1. [Semantic search: implementation](#20-semantic-search-implementation)
 
 See [search roadmap prioritization](https://docs.google.com/document/d/1sUoaF8otA25NMapVcM5yHfP82kFie0NUd3_kL5Rg2Ns/edit) for more details on individual items.
-
----
 
 ## Roadmap details
 
