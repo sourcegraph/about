@@ -11,9 +11,9 @@ This document describes in-depth the background and pillars that drive how we de
 
 ## Long-term vision
 
-A traditional user of a monitoring stack is going to have a lot of context about things like what dashboards are showing, what alerts mean, how to use the components in the stack, since they will either have set the thing up themselves OR have people who did.
+A traditional user of a monitoring stack is going to have a lot of context about things like what dashboards are showing, what metrics and alerts mean, how to use the components in the stack, since they will either have set the thing up themselves OR have people who did.
 
-In stark contrast, we're putting together an alerting system for people with zero context about how Sourcegraph works, what the alerts mean, and in many cases it may be their first time interacting with components used in our monitoring stack at all. In many cases, our metrics and alerts may not give the site admin any useful information that they themselves can act on other than "I should contact support and ask why this is happening".
+In stark contrast, we're putting together a monitoring system for people with zero context about how Sourcegraph works, what our metrics and alerts mean, and in many cases it may be their first time interacting with components used in our monitoring stack at all. In many cases, our metrics and alerts may not give the site admin any useful information that they themselves can act on other than "I should contact support and ask why this is happening".
 
 To achieve this, our monitoring architecture is designed with the goal of providing a robust out-of-the-box monitoring experience that deployment admins can easily leverage. This goal includes:
 
@@ -22,7 +22,7 @@ To achieve this, our monitoring architecture is designed with the goal of provid
 * **Make alert notifications painless to configure** - we want minimize the number of Sourcegraph instances without any alerting set up. Alerts directly indicate issues that might impact user experience, and we want to ensure that deployment admins are equipped with the signals to help them provide their users with the best experience. This includes not requiring steps like port-forwarding or custom ConfigMaps for configuration.
 * **Dogfood the monitoring we ship as much as possible** - in the past, monitoring components have been difficult to use or completely broken since we do not rely on them heavily.
 
-To see the decisions made to support these goals, refer to the [Sourcegraph monitoring architecture](./monitoring_architecture.md#metrics).
+To see the architectural decisions made to support these goals, refer to the [Sourcegraph monitoring architecture](./monitoring_architecture.md#metrics).
 
 ### History
 
@@ -45,7 +45,6 @@ Monitoring tooling at Sourcegraph is developed to encourage the following guidel
 
 - [**Dashboards should only be created with the monitoring generator**](#dashboards-should-only-be-created-with-the-monitoring-generator)
 - [**Dashboards should describe a single service**](#dashboards-should-describe-a-single-service)
-- [**Graphs should have associated alerts**](#graphs-should-have-associated-alerts)
 - [**Graphs should have less than 5 cardinality**](#graphs-should-have-less-than-5-cardinality)
 - [**Less useful graphs should be hidden by default**](#less-useful-graphs-should-be-hidden-by-default)
 
@@ -61,10 +60,9 @@ Creating dashboards outside of the monitoring generator, such as with the Grafan
 
 Using the Grafana WYSIWYG editor, or otherwise operating outside the constraints of [the monitoring generator](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/monitoring) makes it:
 
-- Extremely easy to introduce dashboards that do not comply with the constraints we want to impose.
+- Much harder to integrate with our [monitoring architecture](./monitoring_architecture.md): generated dashboard integration, generated documentation, alerting support, and more.
 - Extremely easy to introduce dashboards that have inconsistency errors through mistakes that are easy to make (e.g. not using UTC time on dashboards, the preset timeframe being inconsistent, it not self-describing to admins what it does, etc.)
 - Difficult for others to modify and review without introducing regressions (e.g. due to Grafana schema version changes, which happen frequently, producing large diffs)
-- Much harder to declare proper alerts in our regular high-level alerting architecture.
 
 To learn more about what you get for free by using the monitoring generator, see [TODO](#TODO).
 
@@ -105,32 +103,6 @@ Consider "when the metric I am monitoring is bad, where do I want the site admin
 In other words, you should add the metric you are monitoring to an existing service's dashboard.
 
 This also allows our [high-level alerting metrics](https://docs.sourcegraph.com/admin/observability/metrics_guide), which are generated from the same observables that each dashboard is generated from, to describe the health of Sourcegraph per-service (instead of per-service + topic like "HTTP").
-
-### Graphs should have associated alerts
-
-Adding a graph/panel that visualizes a metric, without defining an associated alert, is discouraged. This includes purely informational graphs.
-
-#### Explanation
-
-Almost anything worth monitoring should have _some_ explanation of what a bad or good value is.
-
-By saying "I do not want to define an alert" what we are actually doing is shying away from the question of "how should someone interpret what this number means?" and instead saying "I will keep this information private, just for myself"
-
-Our monitoring infrastructure _forces_ you to declare at least a _Warning_ alert. It's OK if this is flaky, or even if it fires when something is not wrong.
-
-The point is _you have to give a best-guess at what a bad or good value looks like because you are the only one who can answer that question._ Otherwise, the information you are 'monitoring' cannot be interpreted by anyone else and is inherently useless to anyone except you: it should not exist in a dashboard then.
-
-See also ["the difference between Warning and Critical alerts"](https://docs.sourcegraph.com/admin/observability/alerting_custom_consumption#the-difference-between-critical-and-warning-alerts) for how we communicate this to site admins.
-
-#### What you should do
-
-Declare a `Warning` alert, and give it your best guess at what a threshold would look like. It's OK if it's flaky, or fires when there isn't a problem sometimes or on some Sourcegraph instances.
-
-Over time, we will adjust the alert so it becomes more reliable and becomes the baseline number that most Sourcegraph instances observe. Once it becomes really reliable (and empirically proven to be so, based on pings we get from customer instances), it can be promoted to a `Critical` alert as well if it speaks of a critical part of Sourcegraph.
-
-#### Exceptions
-
-TODO
 
 ### Graphs should have less than 5 cardinality
 
@@ -188,8 +160,6 @@ Than it is for us to say:
 #### What you should do
 
 If it can't fit on a normal laptop screen, it should generally be hidden!
-
-Additionally, admins will still see your metric if something is going wrong by nature of the fact that we enforce "there must be a defined alert per metric we are displaying." By hiding it, we're just being honest that most people aren't going to see it and making sure the most important information is front-and-center!
 
 ## Next steps
 
