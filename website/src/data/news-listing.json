@@ -1,6 +1,20 @@
 {
   "y2020": [
     {
+      "newsSource": "IT Business Edge",
+      "newsTitle": "Big Code Equals Big Problems for Wannabe Software Companies",
+      "newsDate": "November 13, 2020",
+      "newsLink": "https://www.itbusinessedge.com/blogs/it-unmasked/big-code-equals-big-problems-for-wannabe-software-companies.html",
+      "newsImage": "/external-logos/it-businessedge-logo.png"
+    },
+    {
+      "newsSource": "Interesting Engineering",
+      "newsTitle": "How Programming Has Changed Over the Last Decade",
+      "newsDate": "November 12, 2020",
+      "newsLink": "https://interestingengineering.com/how-programming-has-changed-over-the-last-decade",
+      "newsImage": "/external-logos/interesting-engineering-logo.png"
+    },
+    {
       "newsSource": "Fast Company",
       "newsTitle": "I’m deaf, and this is what happens when I get on a Zoom call",
       "newsDate": "October 26, 2020",
@@ -111,6 +125,13 @@
       "newsDate": "October 2, 2020",
       "newsLink": "https://bestgamingpro.com/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/",
       "newsImage": "/external-logos/bestgamingpro-logo.png"
+    },
+    {
+      "newsSource": "Business Insider - Markets Insider",
+      "newsTitle": "Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries",
+      "newsDate": "October 1, 2020",
+      "newsLink": "https://markets.businessinsider.com/news/stocks/survey-findings-reveal-big-code-presents-challenges-for-development-teams-across-all-industries-1029641029",
+      "newsImage": "/external-logos/business-insider-logo.png"
     },
     {
       "newsSource": "Developpez",
