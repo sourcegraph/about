@@ -75,7 +75,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 **Please note the following:**
 - Your application could get rejected after any one of the steps in our interview process.
-- We might choose to assign you to a different team than you might have indicated a preference for during your application if we believe your skills would be more suited in it._
+- We might choose to assign you to a different team than you might have indicated a preference for during your application if we believe your skills would be more suited for it.
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
