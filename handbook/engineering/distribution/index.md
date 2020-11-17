@@ -66,7 +66,7 @@ TODO(@gonza): define specific roles we are hiring for.
 
 ### Deployment and Operations platform
 
-This team owns how Sourcegraph site admins (including on-premise customers and our own Cloud deployment) deploy, upgrade, and monitor Sourcegraph.
+This team owns how Sourcegraph site admins (including on-premise customers and our own Cloud deployment) deploy, upgrade, operate and monitor Sourcegraph.
 
 ### Developer platform
 
