@@ -112,6 +112,6 @@ Sourcegraph surfaces high-level [**code insights**](https://docs.google.com/docu
 
 ### Extensions and integrations
 
-**Sourcegraph extensions** empower users to integrate Sourcegraph with any third-party service providing useful information about code (code coverage, exception tracking, tracing, code quality). They are consistently supported across all code host integrations and the Sourcegraph UI.
+**Sourcegraph extensions** empower users to integrate Sourcegraph with any third-party service providing useful information about code (e.g. code coverage, exception tracking, tracing, code quality). They are consistently supported across all code host integrations and the Sourcegraph UI.
 
 The **browser extension** and code host **native integrations** are a breeze to set up, and add compelling value when reading or reviewing code. Enabling native code host integrations for all users is a no-brainer for site admins.
