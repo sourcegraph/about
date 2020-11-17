@@ -53,11 +53,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 ## Interview process
 
 1. You [apply here](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7/apply).
-1. The **Hiring Manager** screens your application for suitability for the role by looking at:
-   - The answers you provide to the application questions.
-   - The skills you have obtained in your career.
-   - Your past work experience. In the absence of professional work experience we would look at any open-source projects you have created or contribute to.
-   - The [Nice-to-haves](#nice-to-haves) we listed above.
+1. The **Hiring Manager** reviews all the information you provided on your application to determine if you meet our qualifications for this role (if there is another open role we think you would be better qualified for, we will let you know).
 1. A **Recruiter** sets up a 30 minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. We set up a 1 hour interview with the **Hiring Manager**, who will tell you more about the role in the team. They will ask you about your past work and accomplishments and assess your suitability for the role.
 1. You complete a 3 hour [coding excercise](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test your technical ability and the responsibilities of the role as [listed above](#your-responsibilities).
