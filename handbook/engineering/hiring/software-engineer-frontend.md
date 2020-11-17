@@ -59,7 +59,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - Your past work experience. In the absence of professional work experience we would look at any open-source projects you have created or contribute to.
    - The [Nice-to-haves](#nice-to-haves) we listed above.
 1. A **Recruiter** sets up a 30 minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
-1. We set up a 1 hour interview with the **Hiring Manager**, who will tell you more about the role in the team. They will ask you about your past work and accomplishments and assess your sutiability for the role.
+1. We set up a 1 hour interview with the **Hiring Manager**, who will tell you more about the role in the team. They will ask you about your past work and accomplishments and assess your suitability for the role.
 1. You complete a 3 hour [coding excercise](software-engineer-coding-exercise.md#frontend-coding-exercise) that we designed to test your technical ability and the responsibilities of the role as [listed above](#your-responsibilities).
    - _Note: while we do not disqualify candidates who do not have React and TypeScript experience from taking the excercise, you will be required to use these for the excercise._
 1. An **Engineer** and a **Designer** will review and grade your submission.
