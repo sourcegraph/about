@@ -52,7 +52,7 @@ We do regular updates to communicate our progress to members of the team, and to
 
 Collaborating across timezones requires regular communication to keep each other updated on our progress, and coordinate work handoff if needed. We also use this opportunity to build camaraderie between team members by sharing some non-work related aspects of our lives with each other.   
 
-We use [Geekbot](https://geekbot.com/) to facilitate all this and these updates are purely for coordination within the team (as opposed to for external stakeholders). At the start of each working day, Geekbot will ask each teammate a set of questions and the responses will be posted in the #web-internal Slack channel.  
+We use [Geekbot](https://geekbot.com/) to facilitate all this and these updates are purely for coordination within the team (as opposed to for external stakeholders). At the start of each working day, Geekbot will ask each teammate a set of questions and the responses will be posted in the #web-chat Slack channel.  
 
 All teammates are expected to be part of this channel, and should read the updates, to learn what your teammates have been working on, and check if they need your help.
 
