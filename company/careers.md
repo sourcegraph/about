@@ -1,6 +1,6 @@
 # Careers
 
-Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology. Read our [Master Plan](https://about.sourcegraph.com/plan) to learn more about what we're building, and why it matters.
+Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology. Read [Sourcegraph strategy](strategy.md) to learn more about what we're building, and why it matters.
 
 ## Open positions
 
