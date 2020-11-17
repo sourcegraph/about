@@ -46,6 +46,10 @@ We're hiring! Check out our open positions:
 - [Recruiter (customer-facing roles)](../handbook/people-ops/roles/recruiter_customer_facing.md)
 - [Technical Recruiter - Product](../handbook/people-ops/roles/technical_recruiter_product.md)
 
+### CEO
+
+- [Executive Business Administrator](../handbook/ceo/executive_business_administrator_role.md)
+
 ## Apply
 
 Apply by following the directions in the job description.
