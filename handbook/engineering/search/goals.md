@@ -15,7 +15,7 @@ Organizations with:
 
 See [looker](https://sourcegraph.looker.com/looks/436) for current customer data.
 
-#### Problem
+#### [WIP] Problem
 
 Large customers expect search to be fast at their scale. Customers expect to be able to search over their codebase intuitively, and want their first search result quickly. For larger organizations, customers care about getting all search results for important changes in their codebase. Supporting search at this scale also helps work towards supporting the Cloud growth efforts.
 
