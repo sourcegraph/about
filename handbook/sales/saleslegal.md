@@ -4,9 +4,9 @@
 
 ### Conflict Check
 
-Before any legal team involvement (such as reviewing an MSA), we need to check with our lawyers to see if they have any conflicts in advising us on negotiations with our customers.
+Before any legal team involvement (such as reviewing an MSA), we need to check with our lawyers to see if they have any conflicts in advising us in negotiations with a customer.
 
-A conflict check should be initiated for any first time customer when they have a deal that reaches the XXXXXXX stage.
+A conflict check should be initiated for any first time customer by the time a deal reaches the "Contract Negotitiation" stage in Salesforce.
 
 To initiate a conflict check draft and send a short email with the following information to our legal team:
 
