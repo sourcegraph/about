@@ -32,7 +32,7 @@ Things we consider when reviewing your solution:
 - Adherance to the design
 - Functional completeness
 - Semantically correct and accesible markup
-- Whether the structure of the components and code separate UI and logic concerns
+- Whether the code is well-structured
 - Test coverage
 
 If we decide to move forward, we schedule a one hour follow-up call to discuss your submission.
