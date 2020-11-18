@@ -123,4 +123,4 @@ Examples:
 - Build an extension API for Sourcegraph that enables developers to bring data from their favorite dev tools (for example: code coverage, exception tracking, tracing, code quality) into their Sourcegraph workflow.
 - Build useful Sourcegraph extensions on top of the Sourcegraph extension API (for example: Codecov, Datadog, Sentry, Lightstep)
 
-This team will not be created until we have identified a dedicated engineering manager and a dedicated product manager. In the meantime
+This team will not be created until we have identified a dedicated engineering manager and a dedicated product manager.
