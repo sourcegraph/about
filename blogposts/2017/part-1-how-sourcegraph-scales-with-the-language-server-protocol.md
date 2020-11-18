@@ -99,4 +99,4 @@ We believe that LSP will bring a new wave of Code-Intelligence-powered editor pl
 Hopefully, I've given you a better idea of the technical problems we’re solving at Sourcegraph and why they matter to the greater software community. In subsequent posts, I’ll dive into extensions we’ve made to LSP to enable novel Code Intelligence abilities (cross-dependency jump-to-def and global usage examples), and I’ll describe implementation details of language servers that we think will be broadly useful and interesting. If you are like us and find this interesting, [start contributing](https://github.com/Microsoft/language-server-protocol) and [sign up for Sourcegraph](https://sourcegraph.com/).
 
 ## Part 2: How Sourcegraph scales with the Language Server Protocol
-[Making Code Intelligence “just work”](https://text.sourcegraph.com/part-2-how-sourcegraph-scales-with-the-language-server-protocol-73b86175f38b#.lvv6feuvy)
+[Making Code Intelligence “just work”](https://text.sourcegraph.com/part-2-how-sourcegraph-scales-with-the-language-server-protocol)
