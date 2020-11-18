@@ -1,0 +1,27 @@
+# How and when to engage with legal
+
+* **Never talk to an attorney from a customer account without our legal present!**
+
+### Conflict Check
+
+Before any legal team involvement (such as reviewing an MSA), we need to check with our lawyers to see if they have any conflicts in advising us on negotiations with our customers.
+
+A conflict check should be initiated for any first time customer when they have a deal that reaches the XXXXXXX stage.
+
+To initiate a conflict check draft and send a short email with the following information to our legal team:
+
+> Please start a conflict check for the following company:
+>
+> Company Name
+>
+> Contact Name
+>
+> Type of Deployment [On-prem or Managed Instance]
+>
+> Potential Deal Size
+>
+> Special Business Terms
+>
+> Timeframe [Standard or Urgent]
+
+Back to the [Sales](https://about.sourcegraph.com/handbook/sales/) directory.
