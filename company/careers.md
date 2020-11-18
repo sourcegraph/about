@@ -1,6 +1,6 @@
 # Careers
 
-Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology. Read our [Master Plan](https://about.sourcegraph.com/plan) to learn more about what we're building, and why it matters.
+Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology. Read [Sourcegraph strategy](strategy.md) to learn more about what we're building, and why it matters.
 
 ## Open positions
 
@@ -12,7 +12,6 @@ We're hiring! Check out our open positions:
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
 - [Software Engineer - Security](../handbook/engineering/hiring/software-engineer-security.md)
-- [Software Engineer - Full stack](../handbook/engineering/hiring/software-engineer-full-stack.md)
 
 ### Product
 
@@ -38,7 +37,7 @@ We're hiring! Check out our open positions:
 ### Operations, finance, and legal
 
 - [Director of Business Operations & Strategy](../handbook/ops/roles/director_business_operations.md)
-- [Internal Tools](../handbook/ops/roles/internal_tools.md)
+- [Tech Ops Manager](../handbook/ops/roles/tech_operations_manager.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 
 ### People Ops
@@ -46,6 +45,10 @@ We're hiring! Check out our open positions:
 - [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
 - [Recruiter (customer-facing roles)](../handbook/people-ops/roles/recruiter_customer_facing.md)
 - [Technical Recruiter - Product](../handbook/people-ops/roles/technical_recruiter_product.md)
+
+### CEO
+
+- [Executive Business Administrator](../handbook/ceo/executive_business_administrator_role.md)
 
 ## Apply
 

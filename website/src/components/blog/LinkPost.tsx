@@ -27,15 +27,29 @@ export const LinkPost: React.FunctionComponent<Props> = ({
         .replace(/^<p>/, '')
         .replace(/<\/p>$/, '')
 
+    const titleClassName = 'font-size-base font-family-base link-post__html d-inline'
+    const title = post.frontmatter.canonical ? (
+        <h2 className={titleClassName}>
+            <Link
+                to={post.frontmatter.canonical}
+                dangerouslySetInnerHTML={{
+                    __html: titleHTML,
+                }}
+            ></Link>
+        </h2>
+    ) : (
+        <h2
+            className={titleClassName}
+            dangerouslySetInnerHTML={{
+                __html: titleHTML,
+            }}
+        />
+    )
+
     return (
         <Tag className={`link-post ${className}`}>
             <div className="card-body">
-                <h2
-                    className="font-size-base font-family-base link-post__html d-inline"
-                    dangerouslySetInnerHTML={{
-                        __html: titleHTML,
-                    }}
-                />
+                {title}
                 <div className="link-post__html d-inline" dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
             <div className="card-footer bg-unset border-top-0 pt-0">

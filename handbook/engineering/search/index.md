@@ -62,7 +62,8 @@ Iterations start **every other Monday**.
   - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
   - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
   - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
-  - R.N, full-stack engineer, joining December 14th
+  - R.N, full-stack engineer, joining 2020-12-14
+  - C.C., backend engineer, joining 2021-01-04
 
 ## On-call
 
@@ -71,11 +72,10 @@ Iterations start **every other Monday**.
 
 ## Growth plan
 
-_Updated 2020-11-05_
+_Updated 2020-11-13_
 
 We are looking to hire:
 
-- A [full-stack software engineer](../hiring/software-engineer-full-stack.md)
 - A [backend software engineer](../hiring/software-engineer-backend.md)
 
 Loïc will be at management capacity when we reach 7-8 engineers on the team, but we will still need to grow further to deliver on our goals for search. Our next step will be to split the team in half. Both of these teams will be cross-functional, with frontend + backend skills, and will have design needs. Before we split these teams, we will need to hire an EM and a PM.

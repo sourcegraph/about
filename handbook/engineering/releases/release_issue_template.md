@@ -11,14 +11,19 @@ Arguments:
 - $ONE_WORKING_DAY_BEFORE_RELEASE
 -->
 
-# $MAJOR.$MINOR Release ($RELEASE_DATE)
+# $MAJOR.$MINOR Release
+
+This release is scheduled for $RELEASE_DATE.
+
+---
 
 **Note:** All `yarn run release ...` commands should be run from folder `dev/release`.
+
 **Note:** All `yarn run test ...` commands should be run from folder `web`.
 
 ## Setup
 
-- [ ] Ensure release configuration in `dev/release/config.json` on `main` is up to date with the parameters for the current release.
+- [ ] Ensure release configuration in [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) on `main` is up to date with the parameters for the current release.
 - [ ] Ensure the latest version of the release tooling has been built before each step using `yarn run build` in `dev/release`.
 
 ## $FIVE_WORKING_DAYS_BEFORE_RELEASE (5 work days before release): Prep for branch cut
@@ -102,7 +107,7 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   ```sh
   yarn run release release:add-to-campaign sourcegraph/about <pr-number>
   ```
-- [ ] Announce that the release is live:
+- [ ] Finalize and announce that the release is live:
   ```sh
   yarn run release release:close
   ```
@@ -110,8 +115,8 @@ Once there are no more release-blocking issues (as reported by the `release:stat
 ### Post-release
 
 - [ ] Notify the next release captain that they are on duty for the next release. They should complete the steps in this section.
-- [ ] Open a PR to update `dev/release/config.json` with the parameters for the current release.
-- [ ] Run `yarn build` to rebuild the release script (necessary, because `config.json` is compiled in).
+- [ ] Open a PR to update [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) with the parameters for the current release.
+- [ ] Run `yarn build` to rebuild the release script.
 - [ ] Create release calendar events, tracking issue, and announcement for next release:
   ```sh
   # Add calendar events and reminders for key dates in the release cycle
@@ -121,6 +126,5 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   yarn run release tracking:release-issue
   ```
 - [ ] Close this issue.
-- [ ] Close the milestone.
 
-*Note*: If a patch release are requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.1) be filled out first.
+**Note:** If a patch release are requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.1%3A+) be filled out and approved first.

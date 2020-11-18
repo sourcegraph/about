@@ -69,14 +69,15 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, React.FunctionComponent<Po
 }
 
 export const postType = (post: Post): PostType =>
-    post.frontmatter.tags?.includes('release') ? PostType.ReleasePost
+    post.frontmatter.tags?.includes('release')
+        ? PostType.ReleasePost
         : post.frontmatter.tags?.includes('press')
-            ? PostType.PressReleasePost
-            : post.frontmatter.tags?.includes('podcast')
-                ? PostType.PodcastPost
-                : post.frontmatter.style === 'short-inline-title'
-                    ? PostType.LinkPost
-                    : PostType.BlogPost
+        ? PostType.PressReleasePost
+        : post.frontmatter.tags?.includes('podcast')
+        ? PostType.PodcastPost
+        : post.frontmatter.style === 'short-inline-title'
+        ? PostType.LinkPost
+        : PostType.BlogPost
 
 export enum BlogType {
     GopherCon = 'go',
@@ -93,7 +94,7 @@ export interface BlogTypeInfo {
     title: string
     belowTitle?: React.ReactFragment
     baseUrl: string
-    meta: { title: string; description: string; image?: string; }
+    meta: { title: string; description: string; image?: string }
 }
 
 export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
@@ -111,8 +112,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         baseUrl: '/press-release',
         meta: {
             title: 'Sourcegraph - Press release',
-            description:
-                'Press release from Sourcegraph',
+            description: 'Press release from Sourcegraph',
         },
     },
     graphql: {
@@ -165,4 +165,7 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
     },
 }
 
-export const urlToPost = (post: Post, blog: BlogTypeInfo): string => post.fields.permalink
+export const urlToPost = (post: Post, blog: BlogTypeInfo): string =>
+    post.frontmatter.style === 'short-inline-title' && post.frontmatter.canonical
+        ? post.frontmatter.canonical
+        : post.fields.permalink
