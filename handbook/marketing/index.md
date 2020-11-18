@@ -1,7 +1,7 @@
 # Marketing
 
 
-<img align="right" src="https://sourcegraphstatic.com/marketing-logo.gif" style="max-height:100%" />
+<img align="right" src="https://sourcegraphstatic.com/marketing-logo.gif" style="max-height:100%" alt="marketing logo gif"/>
 
 - [Messaging](messaging.md)
   - [What is Sourcegraph?](messaging.md#sourcegraph-value-proposition)
