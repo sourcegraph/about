@@ -39,6 +39,7 @@ We're hiring! Check out our open positions:
 - [Director of Business Operations & Strategy](../handbook/ops/roles/director_business_operations.md)
 - [Tech Ops Manager](../handbook/ops/roles/tech_operations_manager.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
+- [Salesforce Administrator and Developer](../handbook/ops/roles/sf_admin_developer.md)
 
 ### People Ops
 
