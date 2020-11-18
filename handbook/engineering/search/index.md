@@ -72,7 +72,7 @@ Iterations start **every other Monday**.
 
 ## Growth plan
 
-_Updated 2020-11-13_
+_Updated 2020-11-18_
 
 We are looking to hire:
 
@@ -84,6 +84,17 @@ Loïc will be at management capacity when we reach 7-8 engineers on the team, bu
 
 The search core team will focus on the capabilities, scalability and polish of our core feature set: search language and supporting UI, search backends.
 
+Examples:
+
+- Scale indexed search to 1m repositories.
+- Reduce latency and timeouts of search.
+- Implement streaming search.
+
 ### Search growth
 
-The Search growth team will focus on initiatives aiming at growing usage or adoption of our search features, such as onboarding efforts or features unlocking new use cases (eg. code monitoring).
+The Search growth team will focus on initiatives aiming at growing usage or adoption of our search features, such as onboarding efforts or features unlocking new use cases.
+
+Examples:
+
+- Implement code monitoring.
+- Increase search weekly active users.

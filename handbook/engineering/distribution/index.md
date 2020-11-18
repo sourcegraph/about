@@ -58,16 +58,32 @@ Other:
 
 ## Growth plan
 
-_Updated 2020-11-11_
+_Updated 2020-11-18_
 
-We are looking to grow this team to 8 engineers so we can split this team into two new teams.
+We are looking to grow this team to 8 engineers so we can split into two teams.
 
-TODO(@gonza): define specific roles we are hiring for.
+<!-- TODO(@nick): Does it actually make sense to grow and divide here? -->
 
-### Deployment and Operations platform
+### Distribution
 
-This team owns how Sourcegraph site admins (including on-premise customers and our own Cloud deployment) deploy, upgrade, operate and monitor Sourcegraph.
+This team owns how we develop, build, release, deploy, and upgrade Sourcegraph Cloud and at customers on-premise.
 
-### Developer platform
+Examples:
 
-This team owns general developer productivity and happiness at Sourcegraph. The customers of this team are other engineers at Sourcegraph. Ownership areas include, but aren't limited to, our dev environment, our build pipelines, and developer bots/automation.
+- Expand and maintain our customer deployment options (for example: single Docker image, Docker Compose, Kubernetes, AMI)
+- Ensure that we have a fast and automated release/deployment process to Cloud.
+- Maintain Buildkite infrastructure.
+- Provide automated upgrades for on-premise customers.
+- Build general dev tools that aren't specific to frontend or backend (for example: Codenotify, merge/review bots). <!-- TODO(@nick): should this be under the operations team? -->
+
+### Operations platform
+
+This team is directly responsible for Sourcegraph Cloud uptime and reliability, as well as being responsible for operational infrastructure that enables other engineering teams to observe and monitor the parts of the product they own.
+
+Examples:
+
+- Provide logging and metrics infrastructure that enables developers to observe/search current and historical data as well as define alerts.
+- Provision and scale of our Cloud resources (for example: GCP).
+- Measure and sustain 99.99% uptime and reliability of Sourcegraph Cloud.
+- Enforce access controls and network security policies for our Cloud resources.
+- Make it easy for customers to share relevant data when submitting bug reports.
