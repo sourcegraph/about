@@ -11,14 +11,19 @@ Arguments:
 - $ONE_WORKING_DAY_BEFORE_RELEASE
 -->
 
-# $MAJOR.$MINOR Release ($RELEASE_DATE)
+# $MAJOR.$MINOR Release
+
+This release is scheduled for $RELEASE_DATE.
+
+---
 
 **Note:** All `yarn run release ...` commands should be run from folder `dev/release`.
+
 **Note:** All `yarn run test ...` commands should be run from folder `web`.
 
 ## Setup
 
-- [ ] Ensure release configuration in `dev/release/config.json` is up to date with the parameters for the current release.
+- [ ] Ensure release configuration in [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) on `main` is up to date with the parameters for the current release.
 - [ ] Ensure the latest version of the release tooling has been built before each step using `yarn run build` in `dev/release`.
 
 ## $FIVE_WORKING_DAYS_BEFORE_RELEASE (5 work days before release): Prep for branch cut
@@ -75,27 +80,17 @@ Revert or disable features that may cause delays. As necessary, `git cherry-pick
 
 Once there are no more release-blocking issues (as reported by the `release:status` command) proceed with creating the final release:
 
+- [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) on
+  `main` is accurate (no items should have been added since branch cut, but some items may need to
+  be removed).
 - [ ] Tag the final release:
   ```
   yarn run release release-candidate:create final
   ```
-- [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) on
-  `main` is accurate (no items should have been added since branch cut, but some items may need to
-  be removed).
 - [ ] Wait for the release Docker images to be available in [Docker Hub](https://hub.docker.com/r/sourcegraph/server/tags).
-- [ ] Release Docker Compose by following [these instructions](https://github.com/sourcegraph/deploy-sourcegraph-docker/blob/master/RELEASING.md)
-- [ ] Open PRs that publish the new release:
+- [ ] Open PRs that publish the new release and address any action items required to finalize draft PRs (track PR status via the [generated release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns)):
   ```sh
-  # Run this in the main sourcegraph repository in the `dev/release` directory on `main` branch:
   yarn run release release:stage
-  ```
-- [ ] Create a PR to update the [Kubernetes upgrade guide](https://docs.sourcegraph.com/admin/updates/kubernetes) indicating the steps required to upgrade. Add the created pull request to the release campaign:
-  ```sh
-  yarn run release release:add-to-campaign sourcegraph/sourcegraph <pr-number>
-  ```
-- [ ] Create a PR to update [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) as required. Add the created pull request to the release campaign:
-  ```sh
-  yarn run release release:add-to-campaign sourcegraph/deploy-sourcegraph-docker <pr-number>
   ```
 
 ## $RELEASE_DATE: Release
@@ -112,20 +107,16 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   ```sh
   yarn run release release:add-to-campaign sourcegraph/about <pr-number>
   ```
-- [ ] Announce that the release is live:
+- [ ] Finalize and announce that the release is live:
   ```sh
   yarn run release release:close
-  ```
-- [ ] Announce that the release is live:
-  ```sh
-  yarn run release release:close $MAJOR.$MINOR.0
   ```
 
 ### Post-release
 
 - [ ] Notify the next release captain that they are on duty for the next release. They should complete the steps in this section.
-- [ ] Update `dev/release/config.json` with the parameters for the current release.
-- [ ] Run `yarn build` to rebuild the release script (necessary, because `config.json` is compiled in).
+- [ ] Open a PR to update [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) with the parameters for the current release.
+- [ ] Run `yarn build` to rebuild the release script.
 - [ ] Create release calendar events, tracking issue, and announcement for next release:
   ```sh
   # Add calendar events and reminders for key dates in the release cycle
@@ -135,4 +126,5 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   yarn run release tracking:release-issue
   ```
 - [ ] Close this issue.
-- [ ] Close the milestone.
+
+**Note:** If a patch release are requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.1%3A+) be filled out and approved first.

@@ -1,8 +1,6 @@
 # Code intelligence team
 
-<div style="text-align: center; margin-bottom: 1rem">
-  <img src="https://storage.googleapis.com/sourcegraph-assets/exploding-brain.jpg" width="50%" alt="This is your brain on code">
-</div>
+<img align="right" src="https://sourcegraphstatic.com/docs/images/code-intelligence/code-intel-team%3Dlogo.png" height="350" alt="Sourcegraph Code intelligence team logo"></img>
 
 The Code Intelligence team builds tools and services that provide contextual information around code, taking into account its lexical, syntactic, and semantic structure. This includes:
 
@@ -36,7 +34,7 @@ Build a code intelligence platform that understands code in all languages and pr
 
 ## [Goals](goals.md)
 
-See [goals](goals.md)
+See [goals and priorities](goals.md)
 
 ## Contact
 
@@ -145,6 +143,10 @@ Temporary responsibilities until O.C. starts:
 
 ## Growth plan
 
-_Updated 2020-09-22_
+_Updated 2020-11-13_
 
-We are also interested to hire an engineer who is capable of working on our web application as well as our backend systems. Apply here: [Software Engineer - Full Stack](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-full-stack)
+We are looking to grow this team a lot to increase our ability to provide precise code intelligence for many languages at massive scale.
+
+If you are interested in the scale portion, please apply to [Software Engineer - Backend](../hiring/software-engineer-backend.md).
+
+If you are interested to help us expand our language support, email nick@sourcegraph.com with how you think you can help.

@@ -37,10 +37,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Stephen Gutekanst
 
-- Distribution / Software Engineer
+- Internal Contributor / Software Engineer
 - Phoenix, AZ, USA 🇺🇸
 - [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com), [@slimsag](https://twitter.com/slimsag), [LinkedIn](https://www.linkedin.com/in/slimsag), [pronounce my name 🔊](https://www.name-coach.com/stephen-gutekanst)
-- Stephen enjoys spending time with his numerous [kittos](https://raw.githubusercontent.com/slimsag/slimsag/master/kingdom_final.jpg) while solving some of the most critical and technically challenging issues he can get his hands on. Over the past 5 years he has been working directly with some of our largest customers and relentlessly advocating for users. Prior to Sourcegraph, he worked 3 years full-time on a game engine in Go while attending college.
+- Stephen enjoys spending time with his numerous [kittos](https://github.com/slimsag/slimsag/blob/master/CATS.md) while solving some of the most critical and technically challenging issues he can get his hands on. Prior to Sourcegraph, he worked 3 years full-time on a game engine in Go while in school. Over the past ~6 years he has been working directly with some of our largest customers and relentlessly advocating for users, and today focuses on high-value low-cost wins across the board.
 
 ## Ryan Slade (he/him)
 
@@ -265,13 +265,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [mark@sourcegraph.com](mailto:mark@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mmuldez/)
 - Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, where he successfully built a strong and sustainable pipeline for the company. In his spare time, Mark loves to spend time with his wife, his 2-year-old little guy, and their mini Australian shepherd dog. He's a big Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and goes to the beach to avoid getting bit by mosquitoes. He also thinks spicy mayo is life. 🙌🏽
 
-## Pooja Jain (she/her)
-
-- Product Manager
-- San Francisco, CA, USA 🇺🇸
-- [pooja@sourcegraph.com](mailto:pooja@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/poojajn/), [poojaj-tech](https://github.com/poojaj-tech), [Twitter](https://twitter.com/pooja___j)
-- Pooja enjoys going to (cold) beaches in San Francisco and thinking about productivity hacks in her free time. Prior to Sourcegraph, Pooja worked at a design agency to deliver software-enabled design services at several top startups. Before that, she spent 5 years at Facebook building core product features for 500M+ users on FB Groups and FB Events, launching a new Movie ticket purchase product and developing an onboarding process for online learning in classrooms. Pooja graduated with a BS and MS in Computer science from UIUC with a specialization in user interface design and machine learning.
-
 ## Christine Lovett (she/her)
 
 - Customer Engineer
@@ -465,6 +458,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [eli@sourcegraph.com](mailto:eli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eli-rothschild-b922824a/)
 - Eli was raised in Baltimore, MD, has been in New York City since 2007 (resided in 4 of the 5 boroughs), and recently joined the unofficial 6th borough of NYC, Boca Raton, FL. He has been in SaaS sales with early stage to high growth companies for a majority of his professional career. Prior to joining Sourcegraph, Eli was an Enterprise Account Executive at Segment, and previously at Mixpanel during similar stages of company growth. When not listening to the latest tech and business podcasts, Eli is a student of U.S and World history, enjoys playing chess, following his favorite sports teams, and traveling with his wife.
 
+## Josh Saunders 
+
+- Customer Engineer
+- Napa, CA, USA 🇺🇸
+- [josh@sourcegraph.com](mailto:josh@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joshua-saunders-6a899820/)
+- Josh was raised in Toledo, OH and has lived in Northern California since 2014. He’s very curious and has held positions in a few industries including public health, medical devices, and, most recently, tech. His first startup experience was with Segment, where he was one of the first hires on the Customer Success team. After Segment, he joined Tray.io to build and lead their Customer Success organization. In Josh’s free time he loves to build and ride bikes, cheer (and sometimes cry) on the Cleveland Browns, travel California, and spend time with his wife, Tammy, and their furbaby, Griffin.
 
 <!-- Paste *your* section above this line by following our template below:
 

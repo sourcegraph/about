@@ -6,6 +6,7 @@ The following engineering teams are currently hiring for this role:
 
 1. [Search](../search/index.md)
 2. [Cloud](../cloud/index.md)
+3. [Code intelligence](../code-intelligence/index.md)
 
 ## Qualifications
 
@@ -43,19 +44,19 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We schedule additional interviews across multiple days.
    - 1h **Architecture:** We give you an open problem statement and you walk us through how you would solve the problem.
      - Will interview with 2 of the following:
-       - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
-       - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
-       - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
-       - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
-       - [Alan Harris](../../../company/team/index.md#alan-harris-he-him)
-       - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
+        - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
+        - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
+        - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
+        - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
+        - [Alan Harris](../../../company/team/index.md#alan-harris-he-him)
+        - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
    - 1h **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
      - Will interview with the Product Manager of the team you expressed preference for and 1 other of:
-       - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
-       - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
-       - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
-       - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
-       - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
+        - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+        - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
+        - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
+        - [María Craig](../../../company/team/index.md#maría-craig-she-her)
+        - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
    - 30m **VP Engineering**
    - 30m **CTO**
    - 30m **CEO**

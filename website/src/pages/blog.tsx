@@ -32,6 +32,7 @@ export const pageQuery = graphql`
                         heroImage
                         author
                         authorUrl
+                        canonical
                         tags
                         publishDate(formatString: "MMMM D, YYYY")
                         slug

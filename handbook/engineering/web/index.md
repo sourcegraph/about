@@ -50,20 +50,11 @@ We do regular updates to communicate our progress to members of the team, and to
 
 #### Daily Slack updates
 
-Collaborating across timezones requires regular communication to keep each other updated on our progress, and coordinate work handoff if needed. We use daily Slack updates to achieve this.
-These updates are purely for coordination within the team (as opposed to for external stakeholders).
+Collaborating across timezones requires regular communication to keep each other updated on our progress, and coordinate work handoff if needed. We also use this opportunity to build camaraderie between team members by sharing some non-work related aspects of our lives with each other.   
 
-Every day, Slackbot will post a reminder in the #web channel to write your daily update.
+We use [Geekbot](https://geekbot.com/) to facilitate all this and these updates are purely for coordination within the team (as opposed to for external stakeholders). At the start of each working day, Geekbot will ask each teammate a set of questions and the responses will be posted in the #web-chat Slack channel.  
 
-**At the end of each working day**, you should post your update as a threaded response to the Slackbot message.
-
-You should include in your update:
-
-- What you worked on during your day.
-- Whether you're blocked on anything to make progress (a code review, input in an RFC or in a GitHub issue...).
-- What you plan on tackling next.
-
-**At the beginning of each working day**, you should read the updates thread for the previous working day, to learn what your teammates have been working on, and check if they need your help.
+All teammates are expected to be part of this channel, and should read the updates, to learn what your teammates have been working on, and check if they need your help.
 
 ### Retrospectives
 
@@ -100,7 +91,7 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 
 ## Growth plan
 
-We are growing the web team by hiring [frontend engineers](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-frontend.md). When this team gets big enough, we expect to split it into two teams with the following ownership areas:
+We are growing the web team by hiring [frontend engineers](../hiring/software-engineer-frontend.md). When this team gets big enough, we expect to split it into two teams with the following ownership areas:
 
 - Web infrastructure
   - The **Sourcegraph web application and codebase** is clean, cohesive, stable and performant. It's easy for all teammates to onboard and contribute to the web application.
