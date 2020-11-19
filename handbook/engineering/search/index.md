@@ -55,7 +55,7 @@ Iterations start **every other Monday**.
 
 ## Members
 
-- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md))
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
 - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
   - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
   - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
@@ -72,16 +72,16 @@ Iterations start **every other Monday**.
 
 ## Growth plan
 
-_Updated 2020-11-05_
+_Updated 2020-11-13_
 
 We are looking to hire:
 
-- A [full-stack software engineer](../hiring/software-engineer-full-stack.md)
 - A [backend software engineer](../hiring/software-engineer-backend.md)
 
 ### Splitting the team
 
 Loïc will be at management capacity when we reach 7-8 engineers on the team, but we will still need to grow further to deliver on our goals for search. Our next step will be to split the team in half:
+
 - The **Search:core** team will focus on the capabilities, scalability and polish of our core feature set: search language and supporting UI, search backends.
 - The **Search:growth** team will focus on initiatives aiming at growing usage or adoption of our search features, such as onboarding efforts or features unlocking new use cases (eg. code monitoring).
 

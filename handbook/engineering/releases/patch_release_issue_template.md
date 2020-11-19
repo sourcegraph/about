@@ -12,36 +12,47 @@ Arguments:
 
 **Attention developers:** to get your commits in `main` included in this patch release, please file a [patch request](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.$PATCH%3A+) for review. Only check off items if the commit have been cherry-picked into the `$MAJOR.$MINOR` branch by the release captain.
 
-- [ ] TODO: Add commit links and their associated patch request issues here
+- [ ] TODO: Add [patch request issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Apatch-release-request) and their associated commits on `main` here
+
+---
+
+**Note:** All `yarn run release ...` commands should be run from folder `dev/release`.
+
+**Note:** All `yarn run test ...` commands should be run from folder `web`.
 
 ## Setup
 
-- [ ] Ensure release configuration in `dev/release/config.json` on `main` is up to date with the parameters for the current release.
+- [ ] Ensure release configuration in [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) on `main` is up to date with the parameters for the current release.
 - [ ] Ensure the latest version of the release tooling has been built before each step using `yarn run build` in `dev/release`.
 
 ## Prepare release
 
-- [ ] Ensure that all the commits listed above has been cherry-picked to [`$MAJOR.$MINOR`](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR) and make sure CI passes.
+Ensure all patch changes are included:
+
+- [ ] Ensure that all [patch request issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Apatch-release-request) are accounted for, and that the commits listed above has been cherry-picked to [`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR), and ensure CI passes on the release branch.
     ```
     git checkout $MAJOR.$MINOR
     git pull
     git cherry-pick <commit0> <commit1> ... # all relevant commits from the main branch
     git push $MAJOR.$MINOR
     ```
-- [ ] Cherry-pick relevant [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) configuration changes from `master` onto the `$MAJOR.$MINOR` release branch, and ensure CI passes.
+- [ ] Cherry-pick relevant [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) configuration changes from `master` to the [`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph/tree/$MAJOR.$MINOR), and ensure CI passes on the release branch.
     ```
     git checkout $MAJOR.$MINOR
     git pull
     git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
     git push $MAJOR.$MINOR
     ```
-- [ ] Cherry-pick relevant [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) configuration changes from `master` onto the `$MAJOR.$MINOR` release branch, and ensure CI passes.
+- [ ] Cherry-pick relevant [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) configuration changes from `master` to the [`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph-docker/tree/$MAJOR.$MINOR), and ensure CI passes on the release branch.
     ```
     git checkout $MAJOR.$MINOR
     git pull
     git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
     git push $MAJOR.$MINOR
     ```
+
+Create and test release candidates:
+
 - [ ] Push a release candidate tag:
     ```
     yarn run release release-candidate:create 1
@@ -76,22 +87,17 @@ Arguments:
 <!-- Keep in sync with release_issue_template's "Release" section -->
 
 - [ ] From the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns), merge the release-publishing PRs created previously.
-  - For [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), also:
-    - [ ] Tag the `v$MAJOR.$MINOR.0` release at the most recent commit on the `v$MAJOR.$MINOR` branch.
-        ```sh
-        VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
-        ```
   - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
     - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
-- [ ] Announce that the release is live:
+- [ ] Finalize and announce that the release is live:
   ```sh
   yarn run release release:close
   ```
 
 ## Post-release
 
-- [ ] Open a PR to update `dev/release/config.json` with the parameters for the current release.
-- [ ] Run `yarn build` to rebuild the release script (necessary, because `config.json` is compiled in).
+- [ ] Open a PR to update [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) with the parameters for the current release.
+- [ ] Run `yarn build` to rebuild the release script.
 - [ ] Close this issue.
 
-*Note*: If another patch release is requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md) be filled out first.
+**Note:** If another patch release is requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md) be filled out and approved first.

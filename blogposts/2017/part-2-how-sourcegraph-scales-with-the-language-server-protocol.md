@@ -14,7 +14,7 @@ published: true
 
 ## Making Code Intelligence “just work”
 
-In [my last post](https://text.sourcegraph.com/part-1-how-sourcegraph-scales-with-the-language-server-protocol), I introduced the Language Server Protocol as the open source protocol that we at Sourcegraph believe will enable a new set of developer tools powered by **Code Intelligence**. Code Intelligence, if you recall, is just shorthand for
+In [my last post](https://about.sourcegraph.com/blog/part-1-how-sourcegraph-scales-with-the-language-server-protocol), I introduced the Language Server Protocol as the open source protocol that we at Sourcegraph believe will enable a new set of developer tools powered by **Code Intelligence**. Code Intelligence, if you recall, is just shorthand for
 
 *   jump-to-def
 *   find-references
