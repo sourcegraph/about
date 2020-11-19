@@ -143,7 +143,7 @@ For _instances of services_ in particular, you might be thinking "surely that is
 
 ### Less useful graphs should be hidden by default
 
-The most useful information should be presented first, the least useful information should be hidden by default.
+The most useful information should be presented first, the least useful information should be hidden by default. This means that in the monitoring generator, most groups of graphs should default to hidden.
 
 #### Explanation
 
