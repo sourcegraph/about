@@ -64,8 +64,6 @@ Using the Grafana WYSIWYG editor, or otherwise operating outside the constraints
 - Extremely easy to introduce dashboards that have inconsistency errors through mistakes that are easy to make (e.g. not using UTC time on dashboards, the preset timeframe being inconsistent, it not self-describing to admins what it does, etc.)
 - Difficult for others to modify and review without introducing regressions (e.g. due to Grafana schema version changes, which happen frequently, producing large diffs)
 
-To learn more about what you get for free by using the monitoring generator, see [TODO](#TODO).
-
 #### What you should do
 
 You might be thinking:

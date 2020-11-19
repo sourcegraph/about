@@ -23,7 +23,7 @@ We use a custom [declarative Go generator syntax](https://sourcegraph.com/github
 - Generating the [Prometheus alerting rules](#alerting) and Grafana dashboards.
 - Generating documentation in the form of ["possible solutions"](https://docs.sourcegraph.com/admin/observability/alert_solutions) for site admins to follow when alerts are firing.
 
-This allows us to assert constraints and principles that we want to hold ourselves to, as described in [our monitoring pillars](./monitoring_pillars.md), as well as provide integrations with our monitoring architecture. To learn more about what you get for free by using the monitoring generator, see [TODO](#TODO).
+This allows us to assert constraints and principles that we want to hold ourselves to, as described in [our monitoring pillars](./monitoring_pillars.md), as well as provide integrations with our monitoring architecture.
 
 To learn more about adding monitoring using the generator, see [adding monitoring](./monitoring.md#adding-monitoring).
 
