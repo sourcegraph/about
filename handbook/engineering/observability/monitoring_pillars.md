@@ -54,7 +54,7 @@ To make significant changes to the monitoring tooling, please reach out to the [
 
 ### Dashboards should only be created with the monitoring generator
 
-Creating dashboards outside of the monitoring generator, such as with the Grafana WYSIWYG editor, is discouraged. All metrics should be presented in the most plain, mundane, non-fanciful way that every site admin can understand.
+Creating dashboards outside of the monitoring generator, such as with the Grafana WYSIWYG editor, is discouraged. All metrics should be presented in a set of uniform, standard ways that every site admin can understand.
 
 #### Explanation
 
