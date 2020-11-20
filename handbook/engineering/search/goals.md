@@ -17,9 +17,19 @@ Organizations with:
 
 See [looker](https://sourcegraph.looker.com/looks/436) for current customer data.
 
-#### [WIP] Problem
+#### Problem
 
-Large customers expect search to be fast at their scale. Customers expect to be able to search over their codebase intuitively, and want their first search result quickly. For larger organizations, customers care about getting all search results for important changes in their codebase. Supporting search at this scale also helps work towards supporting the Cloud growth efforts.
+**Scale across our feature set:** customers at large-scale organizations care about more than indexed text search; they would like to use structural search and diff/commit search across the entirety of their codebase, yet this is largely impossible currently: structural search queries on large-scale codebases frequently time out, and diff/commit search have a 50 repository limit.
+
+**Speed across our feature set:** Large customers expect search to be fast at their scale, no matter the search type (literal, regexp, structural, diff, commit). Today, search is TODO metrics.
+
+**Trust:** large customers would like to use Sourcegraph to search for security issues across their entire codebase. They expect Sourcegraph to return consistent and exhaustive results. Currently, running the same global query multiple times on a large codebase will often yield different result counts, without giving insight as to why. This leads to customers losing trust in Sourcegraph.
+
+**Flexibility:** to find the code they care about, large-scale customers frequently request specific filtering capabilities (for instance "return all repositories that are not stale, and that contain a given pattern"). Up until now, this has required the addition of one-off, specific filters such as `repohasfile`, `repohascommitafter`. This approach does not scale.
+
+**Relevance:** users of Sourcegraph in large organizations frequently care about only a subset of the code indexed on their instance (for example, Python backend developers will primarily care about repositories containing Python backend code). Currently, it is hard for users to understand how to search only the code they care about by default, or to refine search results to find the code they care about.
+
+**Alerting:** customers using Sourcegraph to find security issues in their codebase rarely want to run one-off queries; they would like Sourcegraph to run their queries regularly, and to notify them of new results, so that they can take action. Saved searches, our current solution for this use case, is hard to understand, limited to email notifications (while customers frequently want to integrate with third-party services through webhooks), and suffers from the scale and performance limiations of diff search on large codebases. 
 
 #### [WIP] Outcome
 
