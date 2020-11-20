@@ -21,7 +21,7 @@ See [looker](https://sourcegraph.looker.com/looks/436) for current customer data
 
 **Scale across our feature set:** customers at large-scale organizations care about more than indexed text search; they would like to use structural search and diff/commit search across the entirety of their codebase, yet this is largely impossible currently: structural search queries on large-scale codebases frequently time out, and diff/commit search have a 50 repository limit.
 
-**Speed across our feature set:** Large customers expect search to be fast at their scale, no matter the search type (literal, regexp, structural, diff, commit). Today, search is TODO metrics.
+**Speed across our feature set:** Large customers expect search to be [fast at their scale](perf.md), no matter the search type (literal, regexp, structural, diff, commit). Today, search is TODO metrics.
 
 **Trust:** large customers would like to use Sourcegraph to search for security issues across their entire codebase. They expect Sourcegraph to return consistent and exhaustive results. Currently, running the same global query multiple times on a large codebase will often yield different result counts, without giving insight as to why. This leads to customers losing trust in Sourcegraph.
 
