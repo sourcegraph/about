@@ -35,8 +35,9 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Deliver to [*N<sub>3</sub>*][N3]
 
 1. Sourcegraph Cloud has precise code intelligence for 100 Java repositories.
-    - Finish lsif-java
+    - Add support for third-party code intelligence in lsif-java
     - Support automatic indexing of Gradle projects
+    - Support automatic indexing of Maven projects
     - Auto-detect common Java project configurations and enable auto-indexing for Java projects on Sourcegraph Cloud
     - Fix broken auto-index configurations for high-profile projects
 
