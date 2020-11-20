@@ -10,21 +10,40 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Outcome:** 
 
+- Customers are able to easily set up precise code intel for our supported languages.
+- [*N<sub>x</sub>*][Nx] popular open source repos are indexed on Sourcegraph Cloud.
 - Users on Sourcegraph Cloud get precise code intelligence results for the most popular repos in each of the languages we support.
-- CE and Sales have a significant amount of open source repos to showcase and can easily demonstrate the value of setting up precise code intelligence. 
-- Customers are able to easily set up precise code intel for our supported languages. 
+- CE and Sales have a significant amount of open source repos to showcase and can easily demonstrate the value of setting up precise code intelligence.
 - For languages that are particularly subject to unusual setups and tooling, our indexed open source showcase helps us determine if setup issues are caused by an unusual customer dev environment.
-- Nx popular open source repos are indexed on Sourcegraph Cloud.
-- Precise code intel reaches N0 precise code intel operations a month. 
+- Precise code intel reaches [*N<sub>0</sub>*][N0] precise code intel operations a month.
 
 **Milestones:**
 
-1. 🔄 Deliver precise Go code intelligence to 3 organizations.
-    - ✅ Deliver to [*N<sub>1</sub>*][N1]
-    - 🔄 Deliver to [*N<sub>2</sub>*][N2]
+1. 🔄 Sourcegraph Cloud has precise code intelligence for 200 C++ repositories.
+    - 🔄 Improve stability and observability in lsif-clang
+    - 🔄 Improve stability and observability in the code intel executor (the auto-indexer)
+    - Support Bazel projects
+    - Auto-detect common C++ project configurations and enable auto-indexing for C++ projects
+    - Fix broken auto-index configurations for high-profile projects
+
+1. Deliver precise code intel for C++ to three customers.
+    - Deliver to [*N<sub>1</sub>*][N1]
+    - Deliver to [*N<sub>2</sub>*][N2]
     - Deliver to [*N<sub>3</sub>*][N3]
-    
+
+1. Sourcegraph Cloud has precise code intelligence for 200 Java repositories.
+    - Finish lsif-java
+    - Support Gradle projects
+    - Auto-detect common Java project configurations and enable auto-indexing for Java projects
+    - Fix broken auto-index configurations for high-profile projects
+
+1. Deliver precise code intel for Java to three customers.
+    - Deliver to [*N<sub>4</sub>*][N4]
+    - Deliver to [*N<sub>5</sub>*][N5]
+    - Deliver to [*N<sub>6</sub>*][N6]
+
 ## Roadmap
+
 The code intel team roadmap is tracked in [productboard](https://sourcegraph.productboard.com/feature-board/1825051-code-intel)
 
 [N0]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.63lmpljtve9f
