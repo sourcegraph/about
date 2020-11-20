@@ -47,8 +47,8 @@ We want to discover what external systems our users want to use campaigns with, 
 1. **Customer outreach to improve adoption of campaigns**
 1.  ~~User credentials ([RFC 242](https://docs.google.com/document/d/1SqoWWm1xs82QibrWwYsXmpmgweN6EpcKt1qXrRBjjlU/edit)), which will allow non-site-admins to create campaigns~~ (landed 3.22)
 1. Better burndown charts 
-1. Allow multiple changeset specs in a single repository
-1. Improve previews on updates to show the delta between existing changesets and the updated changesets
+1. Allow multiple changeset in a single repository
+1. Improve previews on updates to show the delta between existing changesets and the changesets after after the campaign spec changes are applied
 1. Allow campaign to specify target branch
 1. Create campaign spec even if subset of repos have failures
 1. Versioning/releasing of src-cli with respect to sg/sg
