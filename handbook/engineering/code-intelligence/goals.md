@@ -2,20 +2,25 @@
 
 ## Goals
 
-### Grow LSIF adoption and usage reaching [*N<sub>0</sub>*][N0] precise code intel operations a month
+### Expand language support and adoption of precise code intelligence
 
 Progress on adoption and usage is tracked in our [Looker dashboard](https://sourcegraph.looker.com/dashboards/131).
 
-**Problem:** By default, users get basic code intel results which are often incorrect for tokens with common names (such as Get). This is solved by enabling precise code intel, which gives users faster, 100% accurate results for a definition or reference for a symbol they hover over. 
+**Problem:** Adoption of precise code intelligence comes with a cost. This cost often exceeds a customers's expectation of the benefits precise code intelligence may provide to their organization. Sales, marketing, and the CE teams do not have access to a large open source corpus to demonstrate the possible benefit.
 
-**Outcome:** 
+**Outcome:**
+
+- Precise code intel reaches [*N<sub>0</sub>*][N0] precise code intel operations a month.
+- CE and Sales have a significant amount of open source repos to showcase and can easily demonstrate the value of setting up precise code intelligence.
+- For languages that are particularly subject to unusual setups and tooling, our indexed open source showcase helps us determine if setup issues are caused by an unusual customer dev environment.
+
+
+
 
 - Customers are able to easily set up precise code intel for our supported languages.
 - [*N<sub>x</sub>*][Nx] popular open source repos are indexed on Sourcegraph Cloud.
 - Users on Sourcegraph Cloud get precise code intelligence results for the most popular repos in each of the languages we support.
-- CE and Sales have a significant amount of open source repos to showcase and can easily demonstrate the value of setting up precise code intelligence.
-- For languages that are particularly subject to unusual setups and tooling, our indexed open source showcase helps us determine if setup issues are caused by an unusual customer dev environment.
-- Precise code intel reaches [*N<sub>0</sub>*][N0] precise code intel operations a month.
+
 
 **Milestones:**
 
