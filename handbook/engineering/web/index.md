@@ -19,7 +19,15 @@ See [goals](goals.md)
 
 ## Tech stack
 
-TypeScript, React, RxJS, GraphQL, Go.
+We use a modern, flexible tech stack.
+Here are some of the technologies we use to deliver on our goals:
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [SCSS](https://sass-lang.com/) + [Bootstrap](https://getbootstrap.com/)
+- [WebExtension APIs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API)
+- [RxJS](https://rxjs-dev.firebaseapp.com/guide/overview)
+- [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 
 ## Processes
 
@@ -50,9 +58,9 @@ We do regular updates to communicate our progress to members of the team, and to
 
 #### Daily Slack updates
 
-Collaborating across timezones requires regular communication to keep each other updated on our progress, and coordinate work handoff if needed. We also use this opportunity to build camaraderie between team members by sharing some non-work related aspects of our lives with each other.   
+Collaborating across timezones requires regular communication to keep each other updated on our progress, and coordinate work handoff if needed. We also use this opportunity to build camaraderie between team members by sharing some non-work related aspects of our lives with each other.
 
-We use [Geekbot](https://geekbot.com/) to facilitate all this and these updates are purely for coordination within the team (as opposed to for external stakeholders). At the start of each working day, Geekbot will ask each teammate a set of questions and the responses will be posted in the #web-chat Slack channel.  
+We use [Geekbot](https://geekbot.com/) to facilitate all this and these updates are purely for coordination within the team (as opposed to for external stakeholders). At the start of each working day, Geekbot will ask each teammate a set of questions and the responses will be posted in the #web-chat Slack channel.
 
 All teammates are expected to be part of this channel, and should read the updates, to learn what your teammates have been working on, and check if they need your help.
 
