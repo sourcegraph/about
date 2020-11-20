@@ -8,7 +8,7 @@ We want to get a solid set of customers who regularly use and rely on campaigns.
 
 What will get us there?
 
-- **Proactive outreach** Campaigns is new and transformative software. Many companies are not yet aware they need it, but will not be able to live without it when they discover it. We need to find those companies within our customer base and introduce them to campaigns. This process will also teach about marketing campaigns.
+- **Proactive outreach** Campaigns is new and transformative software. Many companies are not yet aware they need large scale code modifications. We need to find those companies within our customer base and introduce them to campaigns. This process will also teach us about marketing campaigns.
 - **Smoother on-ramp:** Internal testing has revealed that using campaigns for the first time is not as easy as it could be. A frictionless initial experience is critical to adoption and a delightful user experience.
 - **Better debugging experience:** It can be challenging to debug a more complex campaign. Figuring out what went wrong and how to fix it is a slow iterative loop.
 - **User validation:** The above issues were revealed by user testing. Once we believe we have fixed them, we need to validate this with further user testing.
