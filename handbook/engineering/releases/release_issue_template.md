@@ -13,7 +13,7 @@ Arguments:
 
 # $MAJOR.$MINOR Release
 
-This release is scheduled for $RELEASE_DATE.
+This release is scheduled for **$RELEASE_DATE**.
 
 ---
 
@@ -96,20 +96,14 @@ Once there are no more release-blocking issues (as reported by the `release:stat
 ## $RELEASE_DATE: Release
 
 - [ ] From the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns), merge the release-publishing PRs created previously.
-  - For [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), also:
-    - [ ] Tag the `v$MAJOR.$MINOR.0` release at the most recent commit on the `v$MAJOR.$MINOR` branch.
-        ```sh
-        VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
-        ```
-  - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
-    - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
-- [ ] Ask the product team to merge the blog post ([example](https://github.com/sourcegraph/about/pull/83)). Add the pull request to the release campaign:
-  ```sh
-  yarn run release release:add-to-campaign sourcegraph/about <pr-number>
-  ```
-- [ ] Finalize and announce that the release is live:
+  - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the `$MAJOR.$MINOR` branch.
+- [ ] Finalize (generate tags) and announce that the release is live:
   ```sh
   yarn run release release:close
+  ```
+- [ ] Ask the product team to merge the blog post. Add the pull request to the release campaign:
+  ```sh
+  yarn run release release:add-to-campaign sourcegraph/about <pr-number>
   ```
 
 ### Post-release
@@ -125,6 +119,7 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   # Create the release tracking issue (i.e., this issue)
   yarn run release tracking:release-issue
   ```
+- [ ] Close the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns).
 - [ ] Close this issue.
 
 **Note:** If a patch release are requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.1%3A+) be filled out and approved first.

@@ -87,9 +87,8 @@ Create and test release candidates:
 <!-- Keep in sync with release_issue_template's "Release" section -->
 
 - [ ] From the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns), merge the release-publishing PRs created previously.
-  - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
-    - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
-- [ ] Finalize and announce that the release is live:
+  - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the `$MAJOR.$MINOR` branch.
+- [ ] Finalize (generate tags) and announce that the release is live:
   ```sh
   yarn run release release:close
   ```
@@ -98,6 +97,7 @@ Create and test release candidates:
 
 - [ ] Open a PR to update [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) with the parameters for the current release.
 - [ ] Run `yarn build` to rebuild the release script.
+- [ ] Close the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns).
 - [ ] Close this issue.
 
 **Note:** If another patch release is requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md) be filled out and approved first.
