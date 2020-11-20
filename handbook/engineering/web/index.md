@@ -25,7 +25,8 @@ Here are some of the technologies we use to deliver on our goals:
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [SCSS](https://sass-lang.com/) + [Bootstrap](https://getbootstrap.com/)
-- [WebExtension APIs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API)
+- [GraphQL](https://graphql.org/)
+- [WebExtensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API)
 - [RxJS](https://rxjs-dev.firebaseapp.com/guide/overview)
 - [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 
