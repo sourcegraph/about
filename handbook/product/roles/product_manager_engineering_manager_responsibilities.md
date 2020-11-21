@@ -27,7 +27,6 @@ th:first-of-type {
 }
 td {
     vertical-align: top;
-    padding: 10px 30px;
 }
 </style>
 
