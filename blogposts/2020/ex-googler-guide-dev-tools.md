@@ -6,7 +6,7 @@ authorUrl: https://twitter.com/beyang
 publishDate: 2020-11-24
 tags: [blog]
 slug: ex-googler-guide-dev-tools
-heroImage: /blog/exoogler-backpack-dev-tools.jpg
+heroImage: /blog/exgoogler-backpack-dev-tools.jpg
 published: true
 ---
 
