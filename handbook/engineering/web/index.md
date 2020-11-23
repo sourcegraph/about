@@ -69,6 +69,7 @@ To ensure the team can be productive right from the start of an iteration we sta
       1. The priority
       1. The effort estimate 
       1. The available capacity of the team
+      1. Any left over issues that won't be complete from the prior iteration, and whether those issues should still be prioritized next iteration or moved to a backlog category.
    1. On the Friday, the teammates are invited to review the planned iteration scope and to provide feedback
    1. The PM will prepare the current iteration project in GitHub with the relevant issues.
 
