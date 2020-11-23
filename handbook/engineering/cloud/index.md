@@ -107,8 +107,8 @@ By default, members of the team will provide a brief update about the goals they
 
 ### Code reviews
 
-- **Post-merge feedback:** It is important to make progress while getting feedback from other teammates in code reviews. On the one hand, the pull request author doesn't have to be blocked by all reviewers who the author intends to get feedback from; on the other hand, reviewers can still focus on their work on hands and leave feedback at their convenience. It is at pull request author's best judgement if a pull request should wait (for high-risk changes) or simply rely on post-merge feedback.
-- **Approve to unblock:** When the reviewer thinks there is no obvious blocker and trusts the pull request author would take care of comments/questions/concerns (e.g. anwser to questions, explain rationale, act on code suggestions) before merging the pull request.
+- **Post-merge feedback:** It is important to make progress while getting feedback from other teammates in code reviews. On the one hand, the pull request author doesn't have to be blocked by all reviewers who the author intends to get feedback from; on the other hand, reviewers can still focus on their work on hands and leave feedback at their convenience. The pull request author should use their best judgement to decide if a pull request should wait (for high-risk changes) or simply rely on post-merge feedback.
+- **Approve to unblock:** When the reviewer thinks there are no obvious blockers and trusts the pull request author will take care of comments/questions/concerns (e.g. answer to questions, explain rationale, act on code suggestions) before merging the pull request.
 - **Request for changes:** When the reviewer believes it is important to get another round of review from the person before merging the pull request. This situation often happens when there is a significant design change.
 
 ## Members
