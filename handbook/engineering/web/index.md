@@ -60,17 +60,18 @@ To ensure the team can be productive right from the start of an iteration we sta
    1. The PM identifies and communicates design input needed from the Product Designer and works to prioritize it with them.     
 1. Second week of the iteration
    1. By the Wednesday, the EM and PM should have ensured that:
-      1. All planned work have refined issues in GitHub
+      1. All planned work have refined issues in GitHub and are added to the 'Next iteration' column on the backlog board
       1. All issues are in a "Ready for dev" state
       1. All issues have effort estimates and have been prioritized
       1. The team’s available capacity for the next iteration is known. 
          1. A teammates capacity is calculated at 80% of the iteration days - vacation days.
+   1. On the Wednesday, the teammates are invited to review the planned iteration scope and to provide feedback.
    1. On the Thursday, the EM and PM will have a sync call to finalize the next iteration’s scope. In determining the iteration scope they will factor in:
       1. The priority
       1. The effort estimate 
       1. The available capacity of the team
       1. Any left over issues that won't be complete from the prior iteration, and whether those issues should still be prioritized next iteration or moved to a backlog category.
-   1. On the Friday, the teammates are invited to review the planned iteration scope and to provide feedback
+      1. Feedback from the teammates
    1. The PM will prepare the current iteration project in GitHub with the relevant issues.
 
 ### Updates
