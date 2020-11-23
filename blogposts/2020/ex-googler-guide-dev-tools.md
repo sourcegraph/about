@@ -150,6 +150,6 @@ Building software at scale is hard. As everyone who has read <a href="https://en
 &nbsp;
 <hr>
 
-**Try out Sourcegraph.** Get started searching your code by self-hosting [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
+**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
 
 Please feel free to ask us questions either via posting on Twitter[@srcgraph](https://twitter.com/srcgraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
