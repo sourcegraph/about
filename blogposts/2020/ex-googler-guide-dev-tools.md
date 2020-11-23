@@ -147,6 +147,7 @@ One of your competitive advantages after leaving Google will be to apply these e
 
 Building software at scale is hard. As everyone who has read The Mythical Man Month knows, you can't get better software just by hiring more engineers. You need better tools. Just as software is a multiplier for the productivity of end users, dev tools are a multiplier for the productivity of the people who build the software. So if you truly believe in your new company's mission, make it one of your priorities to use your special knowledge as an ex-Googler and bring them the best developer tools available.
 
+&nbsp;
 <hr>
 
 **Try out Sourcegraph.** Get started searching your new code by self-hosting [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
