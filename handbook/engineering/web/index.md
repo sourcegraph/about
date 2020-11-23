@@ -57,7 +57,7 @@ To ensure the team can be productive right from the start of an iteration we sta
       1. A "Ready for dev" status means that all the necessary information has been captured or prepared so that the engineer taking up the issue can essentially start working on it immediately.
          1. This does not involve figuring out implementation detail, as we do not tell engineers how to execute a task, but rather tell them the problem and make the requirements clear, and then ask them to figure out the best way to implement the solution.
          1. We don't block on design dependencies for a task, but try to identify any dependency early on and communicate this requirement to the product designer.
-   1. The PM identifies and communicate design input needed from the Product Designer and works to prioritize it with them.     
+   1. The PM identifies and communicates design input needed from the Product Designer and works to prioritize it with them.     
 1. Second week of the iteration
    1. By the Wednesday, the EM and PM should have ensured that:
       1. All planned work have refined issues in GitHub
