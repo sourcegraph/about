@@ -145,11 +145,11 @@ Google prioritizes developer experience and developer tools in a way unlike most
 
 One of your competitive advantages after leaving Google will be to apply these experiences to bring great new dev tools into your new organization to boost your own productivity and the productivity of your teammates. By using these tools to spread effective best practices for developing software at scale, you can bring one of Google's key competitive advantages—the effectiveness of its engineering organization—to your new company.
 
-Building software at scale is hard. As everyone who has read The Mythical Man Month knows, you can't get better software just by hiring more engineers. You need better tools. Just as software is a multiplier for the productivity of end users, dev tools are a multiplier for the productivity of the people who build the software. So if you truly believe in your new company's mission, make it one of your priorities to use your special knowledge as an ex-Googler and bring them the best developer tools available.
+Building software at scale is hard. As everyone who has read <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month" rel="nofollow" target="_blank">*The Mythical Man Month*</a> knows, you can't get better software just by hiring more engineers. You need better tools. Just as software is a multiplier for the productivity of end users, dev tools are a multiplier for the productivity of the people who build the software. So if you truly believe in your new company's mission, make it one of your priorities to use your special knowledge as an ex-Googler and bring them the best developer tools available.
 
 &nbsp;
 <hr>
 
-**Try out Sourcegraph.** Get started searching your new code by self-hosting [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
+**Try out Sourcegraph.** Get started searching your code by self-hosting [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
 
 Please feel free to ask us questions either via posting on Twitter[@srcgraph](https://twitter.com/srcgraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
