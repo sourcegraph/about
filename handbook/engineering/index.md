@@ -23,6 +23,7 @@
     - [Release issue template](releases/release_issue_template.md)
   - [External contributions](external_contributions.md)
   - [Introducing a new service](introducing_a_new_service.md)
+  - [Security patterns](security_patterns.md)
 - Tooling
   - [Ignoring editor config files in Git](ignoring_editor_config_files.md)
   - [Configuring Zoom to send recordings to Slack automatically](configuring_zoom_recordings_to_slack_automatically.md)
@@ -34,6 +35,15 @@
   - [Honeycomb](honeycomb.md)
   - [Adding and debugging ping data](adding_ping_data.md)
   - [Adding buildkite secrets](adding_buildkite_secrets.md)
+
+## Guiding principles
+
+We build things in this order:
+
+1. **Make it work**: Build the minimal useful thing that we can use to start collecting feedback and validating we are on the right track. Take shortcuts where possible (cut scope, not quality) because this work might get thrown away if we discover we are going in the wrong direction.
+1. **Make it smooth**: Once we have signal that we are building the right thing, the next goal is to make the experience smooth so we feel good about putting this in front of users. Aim for smooth when in the make it work phase (to avoid duplicate efforts), but if it's possible to separate the two in order to move things forward, we should!
+1. **Make it fast**: Now that the experience works smoothly, make sure it is fast for users. There is no benefit to speeding up a fundamentally broken experience.
+1. **Make it scale**: Make it work at large scale. It is better to have high demand and need to surge on scalability than to make an infinitely scalable unused feature.
 
 ## Ownership of technical decisions
 

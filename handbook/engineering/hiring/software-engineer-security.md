@@ -26,7 +26,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. You speak with the Security manager for 30 minutes. To prepare:
     - Read through [our handbook](https://github.com/sourcegraph/about) to learn more about how we operate and to find answers to common questions that you might have.
 1. You write a short security assessment, taking less than **1hr** of your time, explaining a security vulnerability [sample problem](https://docs.google.com/document/d/1oXhjU_3y2uhpmWJ2hD0NTaqSanUAOlKDFFmjazAU3Rg/).
-1. You pair with us on a [90-minute coding exercise](software-engineer-coding-exercise.md#security-coding-exercise), that we designed for you to be able to demonstrate you code.
+1. We schedule a live, [90-minute pair-programming exercise](software-engineer-coding-exercise.md#cli-coding-exercise) with a Sourcegraph engineer.
 1. We schedule remote interviews over video chat across multiple days.
    - 1h **Security concepts:** We give you an open problem statement and you walk us through how you would solve the problem.
       - Will interview with 2 of the following:
@@ -41,11 +41,10 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
           - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
    - 1h **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
       - Will interview with 2 of the following:
-         - [Christina Forney](../../../company/team/index.md#christina-forney-she-her)
          - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
          - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
-         - [Pooja Jain](../../../company/team/index.md#pooja-jain-she-her)
-         - [Dan Adler](../../../company/team/index.md#dan-adler-he-him)
+         - [María Craig](../../../company/team/index.md#maría-craig-she-her)
+         - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
          - If we have at least one of the above, the second interviewer can be [any engineer on the security team](../security/index.md#members) or any engineer mentioned in this document.
    - 30m **VP Engineering**
    - 30m **CTO**

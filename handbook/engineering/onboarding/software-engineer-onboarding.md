@@ -40,7 +40,7 @@ There will be plenty for you to read and learn about when you're not working on 
 - Read through the rest of the engineering handbook to learn more about how we operate.
 - Read how we choose and continually update our [goals](../../../company/goals/index.md).
 - Read how we plan and keep each other up to date with [tracking issues](../tracking_issues.md).
-- Frontend engineers should watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn about how design and engineering work together
+- Frontend engineers should watch [Figma for Sourcegraphers part 1](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn about how design and engineering work together. [Part 2, working with the Wildcard design system](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) shows how to work with our design system and may be interesting for anyone who wants to submit designs.
 
 ## Weeks 4-6
 
@@ -58,3 +58,7 @@ By now, you'll have shipped multiple improvements, paired with all members of yo
 - Get hacking!
 
 At Sourcegraph, you'll be expected to own the problems your team is solving, and work with the team to define solutions and plan your work — we think it's important that you start doing this early on!
+
+## Give feedback on your onboarding
+
+You should be discussing your onboarding progress every week with your manager. At the end of week 6 at Sourcegraph, spend one hour summarizing your onboarding experience (what has gone well, what was challenging, what would help you moving forward). Write down your thoughts and discuss them in your next 1-1 with your manager. Take your time to answer thoughtfully — your answers will be very important to make sure our onboarding process is even better for future hires!

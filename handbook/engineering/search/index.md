@@ -55,14 +55,15 @@ Iterations start **every other Monday**.
 
 ## Members
 
-- [Pooja Jain](../../../company/team/index.md#) ([Product Manager](../../product/roles/product_manager.md))
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
 - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
   - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
   - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
   - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
   - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
   - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
-  - R.N, full-stack engineer, joining December 14th
+  - R.N, full-stack engineer, joining 2020-12-14
+  - C.C., backend engineer, joining 2021-01-04
 
 ## On-call
 
@@ -71,9 +72,19 @@ Iterations start **every other Monday**.
 
 ## Growth plan
 
-_Updated 2020-10-07_
+_Updated 2020-11-13_
 
 We are looking to hire:
 
-- A [full-stack software engineer](../hiring/software-engineer-full-stack.md)
 - A [backend software engineer](../hiring/software-engineer-backend.md)
+
+### Splitting the team
+
+Loïc will be at management capacity when we reach 7-8 engineers on the team, but we will still need to grow further to deliver on our goals for search. Our next step will be to split the team in half:
+
+- The **Search:core** team will focus on the capabilities, scalability and polish of our core feature set: search language and supporting UI, search backends.
+- The **Search:growth** team will focus on initiatives aiming at growing usage or adoption of our search features, such as onboarding efforts or features unlocking new use cases (eg. code monitoring).
+
+Both of these teams will be cross-functional, with frontend + backend skills, and will have design needs.
+
+Before we split these teams, we will need to hire an EM and a PM.

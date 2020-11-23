@@ -1,12 +1,9 @@
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
-import AccountMultipleIcon from 'mdi-react/AccountMultipleIcon'
-import MapIcon from 'mdi-react/MapIcon'
-import NavigationIcon from 'mdi-react/NavigationIcon'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
-import * as sacks from '../images/about/david-sacks.jpg'
 import * as craft from '../images/about/sg-craftventures.png'
 import * as felicis from '../images/about/sg-felicis.png'
 import * as goldcrest from '../images/about/sg-goldcrest.png'
@@ -14,6 +11,8 @@ import * as redpoint from '../images/about/sg-redpoint.png'
 
 export default class About extends React.Component<any, any> {
     public render(): JSX.Element | null {
+        const description =
+            'Sourcegraph builds universal code search for every developer and company so they can innovate faster. We help developers and companies with billions of lines of code create the software you use every day.'
         return (
             <Layout location={this.props.location}>
                 <div className="about content-page bg-white text-dark">
@@ -25,97 +24,80 @@ export default class About extends React.Component<any, any> {
                         <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
                         <meta name="twitter:card" content="summary" />
 
-                        <meta
-                            name="twitter:description"
-                            content="The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
-                        />
-                        <meta
-                            property="og:description"
-                            content="The pace at which humans can write code is the only thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
-                        />
-                        <meta
-                            name="description"
-                            content="The pace at which humans can write code is the only thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
-                        />
+                        <meta name="twitter:description" content={description} />
+                        <meta property="og:description" content={description} />
+                        <meta name="description" content={description} />
                     </Helmet>
                     <div>
                         <div className="light-11-bg jumbotron about__jumbotron text-center">
                             <div className="container py-5">
-                                <h1>
-                                    The pace at which humans can write code is the only thing that stands between us and
-                                    flying cars, a habitat on Mars, and a cure for cancer.
-                                </h1>
+                                <h1>About Sourcegraph</h1>
+                                <p className="h4 font-weight-normal">
+                                    Sourcegraph builds universal code search for every developer and company so they can
+                                    innovate faster. We help developers and companies with billions of lines of code
+                                    create the software you use every day.
+                                </p>
                             </div>
                         </div>
                         <div className="about__plan">
                             <div className="about__plan-container container">
                                 <div className="row">
                                     <div className="col-md-12">
-                                        <h1 className="mb-0">
-                                            Sourcegraph strategy
-                                            <br />
-                                        </h1>
-                                        <hr />
-                                        <h2>
-                                            We want everyone to be able to build software.
-                                            <br />
-                                        </h2>
+                                        <h3>Learn all about Sourcegraph</h3>
                                         <p>
-                                            A world where everyone, not just the ~0.2% who can code today, builds
-                                            software will see faster and more broadly beneficial technological progress.
-                                            Here is what we are working on now to help this happen:
+                                            The <a href="/handbook">Sourcegraph handbook</a> has everything from our
+                                            high-level strategy and goals to documentation of routine business
+                                            processes. It's public for everyone to read because we are{' '}
+                                            <a href="/company/values#open-and-transparent">open and transparent</a>.
                                         </p>
-                                        <ul>
-                                            <li>Ubiquitous code intelligence</li>
-                                            <li>Better code review</li>
-                                            <li>Large-scale code change management</li>
-                                        </ul>
-                                        <a href="/company/strategy">
-                                            <button className="btn btn-primary about__plan-btn">
-                                                Read our strategy
-                                            </button>
+                                        <a href="/handbook" className="btn btn-primary">
+                                            Read the Sourcegraph handbook <ArrowRightIcon className="ml-1" />
                                         </a>
+                                        <h6 className="mt-5">Handbook pages you might find interesting:</h6>
+                                        <ul className="list-unstyled list-inline">
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/company/strategy">Strategy</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/company/values">Values</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/company/remote">All-remote</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/company/goals">Goals</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/company/team">Team</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/company/careers">Open roles (we're hiring!)</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/handbook/communication/code_of_conduct">
+                                                    Commitment to inclusion
+                                                </a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/company/team/org_chart">Org chart</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                Codes of conduct:{' '}
+                                                <a href="/handbook/communication/code_of_conduct">Team</a> and{' '}
+                                                <a href="/community/code_of_conduct">Community</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/handbook/communication/content_guidelines">Style guide</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/direction">Product direction</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/handbook/marketing/messaging">Messaging</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="about__values">
-                            <div className="container">
-                                <h1 className="mb-3">
-                                    Values
-                                    <br />
-                                </h1>
-                                <div className="row">
-                                    <div className="col-md-4">
-                                        <AccountMultipleIcon className="material-icons mb-2" />
-                                        <h2>People</h2>
-                                        <p>
-                                            Together we are advancing technology. We will attract, hire and retain the
-                                            best teammates in the world and treat everyone in a first-class manner.
-                                        </p>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <MapIcon className="material-icons mb-2" />
-                                        <h2>Journey</h2>
-                                        <p>
-                                            The collection of moments, experiences, and memories that the team shares as
-                                            we make progress: the light moments, the laughter, the team coming together
-                                            to solve a problem.
-                                        </p>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <NavigationIcon className="material-icons mb-2" />
-                                        <h2>Progress</h2>
-                                        <p>
-                                            The continuous march toward achieving our mission as a team: the milestones,
-                                            the successes, and the breakthroughs.
-                                            <br />
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="/handbook">
-                                    <button className="btn btn-primary">Read the Sourcegraph handbook</button>
-                                </a>
                             </div>
                         </div>
                         <div className="about__founders">
@@ -256,140 +238,9 @@ export default class About extends React.Component<any, any> {
                                 </div>
                             </div>
                         </div>
-                        <div className="about__founders">
-                            <div className="container">
-                                <h1 className="mb-3">
-                                    Board of Directors
-                                    <br />
-                                </h1>
-                                <ul className="about__founders-board">
-                                    <li className="about__founders-board-member">
-                                        <img src={sacks} alt="David Sacks" />
-                                        <div className="p-2">
-                                            <strong>David Sacks</strong>
-                                            <br />
-                                            Craft Ventures
-                                        </div>
-                                    </li>
-                                    <li className="about__founders-board-member">
-                                        <img
-                                            src="https://cdn.sanity.io/images/22xmfoma/production/9cd78ccf0ec09884fc271d8736331b479df35e5f-804x798.jpg"
-                                            alt="Scott Raney"
-                                        />
-                                        <div className="p-2">
-                                            <strong>Scott Raney</strong>
-                                            <br />
-                                            Redpoint Ventures
-                                        </div>
-                                    </li>
-
-                                    <li className="about__founders-board-member">
-                                        <img
-                                            src="https://crunchbase-production-res.cloudinary.com/image/upload/c_thumb,h_120,w_120,f_auto,g_faces,z_0.7,b_white,q_auto:eco/v1486580570/fmeyvwzlvcvtk3oaozbg.jpg"
-                                            alt="Daniel Friedland"
-                                        />
-                                        <div className="p-2">
-                                            <strong>Daniel Friedland</strong>
-                                            <br />
-                                            Goldcrest Capital
-                                        </div>
-                                    </li>
-
-                                    <li className="about__founders-board-member">
-                                        <img
-                                            src="https://avatars1.githubusercontent.com/u/1646931?v=4&s=460"
-                                            alt="Beyang Liu"
-                                        />
-                                        <div className="p-2">
-                                            <strong>Beyang Liu</strong>
-                                            <br />
-                                            Sourcegraph
-                                        </div>
-                                    </li>
-
-                                    <li className="about__founders-board-member">
-                                        <img
-                                            src="https://avatars1.githubusercontent.com/u/1976?v=4&s=460"
-                                            alt="Quinn Slack"
-                                        />
-                                        <div className="p-2">
-                                            <strong>Quinn Slack</strong>
-                                            <br />
-                                            Sourcegraph
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div className="col-md-3" />
-                            </div>
-                        </div>
-                        <div className="about__founders">
-                            <div className="container">
-                                <h1>
-                                    Advisors and supporters
-                                    <br />
-                                </h1>
-                                <div className="about__founders-advisors">
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Adam Ross</strong>, Goldcrest Capital
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Bear Douglas</strong>, Slack
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>David Stewart</strong>, Business Advisor
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Adam Frankl</strong>, Marketing Advisor
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Jens Pillgram-Larsen</strong>, Google
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>James Waldrop</strong>, Fitbit
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Mark Striebeck</strong>, Google
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Mike Saparov</strong>, CoreOS
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Audrey Maclean</strong>, Entrepreneur
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Joseph Malchow</strong>, HNVR
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Bill Malloy</strong>, Technologist &amp; Financier
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>John Vrionis</strong>, Unusual Ventures
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Kevin Mahaffey</strong>, Lookout
-                                    </div>
-                                    <br />
-                                    <div className="about__founders-advisors-item">
-                                        <strong>Peter Hébert</strong>, Lux Capital
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </Layout >
+            </Layout>
         )
     }
 }

@@ -11,47 +11,124 @@ This document contains the goals and work log for the search team's [2-week iter
     - $DESIRED_OUTCOME
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
+    
+## 2020-11-16 to 2020-11-27
+
+### Streaming search
+
+- **Owner(s):** Keegan, Juliana, Rob
+- **Outcomes:**
+    - The search results page can consume the streaming data directly as it comes in, without the need to convert to GraphQL types
+    - Fully functioning progress API from the backend. This will allow us to have the "full" streaming experience with diff/commit search.
+- **Work log:**
+    - 2020-11-20: (juliana) Porting of the search UI to support streaming search is underway with good progress. Initial blank page ([#15993](https://github.com/sourcegraph/sourcegraph/pull/15993)), filters ([#15997](https://github.com/sourcegraph/sourcegraph/pull/15997)), tabs and infobar  ([#16038](https://github.com/sourcegraph/sourcegraph/pull/16038)), version context warning  ([#16039](https://github.com/sourcegraph/sourcegraph/pull/16039))
+    
+### Code monitoring
+
+- **Owner(s):** Stefan, Juliana, Farhan
+- **Outcomes:**
+    - Code monitor CRUD: users are able to list and edit (non-functioning) monitors
+- **Work log:**
+    - 2020-11-20: (stefan): milestone reached for backend implementation of code monitors: minimum set of GraphQL queries and mutations to support the POC are in place. Next step: implement "query runner" and "email sender".
+    - 2020-11-23 (farhan): code monitoring listing page completed. Edit functionality is deprioritized in favor of search context prototyping, so may not be completed this iteration.
+
+### Documentation clean up and content
+
+- **Owner(s):** Farhan
+- **Outcomes:**
+    - Clean up all existing search docs so each doc has single responsibility and is in the correct Tutorial/Explanation/How-to/Reference category.
+    - Add docs for users transitioning from OpenGrok: differences from OpenGrok, keywords and search formats available, typical searches in OG and Sourcegraph equivalents.
+
+### Ship Search Expressions and Query Highlighting, Hovers
+- **Owner(s):** Rijnard
+- **Outcomes:**
+    - The frontend work is in place to ship search expressions. I will be tying it together and adding docs. I will also activate query syntax highlighting and hovers for our next release, and will make progress on that this iteration.
+- **Work log:**
+    - 2020-11-20: We have stable and feature-complete regexp highlighting for all patterns/fields and preliminary structural search and hover support. I also helped with release this week, unblocking various search regression testing, and backend code cleanup. My next week will focus on completing search expression work and feature-complete smart query hovers.
+
+### Search context prototyping
+- **Owner(s):** Farhan
+- **Outcomes:**
+    - Build a prototype for search contexts following Figma desigsn for @quinnkeast, and iterate as needed until Quinn is able to complete his testing.
+- **Work log:**
+    - 2020-11-23: Newly added goal.
 
 ## 2020-11-02 to 2020-11-13
 
 ### Code monitoring
 
-- **Owner(s):** Stefan
+- **Owner(s):** Stefan, Juliana, Farhan
 - **Outcomes:**
     - Spill over from last iteration: finish stub-implementation of code monitoring schema.
+    - Initial UI for code monitor CRUD: users are able to create and list (non-functioning) monitors
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2020-11-04: Code Monitoring now has an (empty) feature-flagged homepage ([#15355](https://github.com/sourcegraph/sourcegraph/pull/15355))
+    - 2020-11-06: Code Monitoring code has been moved to enteprise folder as it will be an enterprise feature. ([#15443](https://github.com/sourcegraph/sourcegraph/pull/15443), [#15513](https://github.com/sourcegraph/sourcegraph/pull/15513))
+    - 2020-11-09: (stefan) GraphQL mutations (create, delete, toggle, edit) for the monitor table are up for review.
+    - 2020-11-09 (farhan): Basic code monitoring creation page is up for review.
+    - 2020-11-13 (stefan): GraphQL mutations for create, delete and toggle were merged. This week I worked mostly on preparing the code for `editCodeMonitor` and replacing stubs with resolvers that return real data. Once `editCodeMonitor` is in place I expect the other mutations to be relatively straightforward.
+    - 2020-11-13 (farhan): Create code monitor page is complete.
 
 ### Scale indexed search to 500k repositories
 
 - **Owner(s):** Stefan, Keegan
 - **Outcomes:**
     - Spill over from last iteration: merge our patch to upstream zoekt.
-    - RFP: for regex queries, queries such as "term1 term2" are interpreted as literal regex (alternative: implicit AND) instead of being fuzzified in the parsing layer.
+    - RFC: for regex queries, queries such as "term1 term2" are interpreted as literal regex (alternative: implicit AND) instead of being fuzzified in the parsing layer.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2020-11-09: Created RFC 264 to discuss interpretation of regex queries, which has implications for the performance of queries such as `term1 term2` (with regex toggle set to active).
+    - 2020-11-09: Regarding merging perf work to zoekt upstream: Finished addressing review comments of CR. Waiting for feedback from Han-Wen.
+    - 2020-11-13: I haven't work on this topic this week. The CR is still parked until Han-Wen returns from his vacation.
 
 ### Streaming search
 
 - **Owner(s):** Keegan, Juliana, Rob
 - **Outcomes:**
     - Something that makes you go yay on Sourcegraph.com
-    
+    - Non-functional (fake data) progress UI is created to match Figma designs
+- **Work log:**
+    - 2020-11-04: Backend streaming implementation of commit/diff search. Needs to be wired up to HTTP API layer still.
+    - 2020-11-05: Progress API in webapp PoC done to unblock UI work.
+    - 2020-11-06: Initial bootstrapping for streaming search progress UI is underway ([#15549](https://github.com/sourcegraph/sourcegraph/pull/15549))
+    - 2020-11-13: Streaming progress UI (with fake data) is compelte ([#15668](https://github.com/sourcegraph/sourcegraph/pull/15668))
+    - 2020-11-13: Streaming for diff/commit working. I am working through some bugs around unexpected buffering happening, but will share a demo video soon.
+
 ### Featureful frontend query parser, part 2
 
 - **Owner(s):** Rijnard
 - **Outcomes:**
     - As before, we need a proper frontend query parser for syntax highlighting, hover hints, and consistent UI state (toggle activation) of search expressions and future query syntax extension.  All of that couldn't fit into the previous iteration: In this iteration I will merge the code we need to unblock shipping search expressions (first bullet in [14016](https://github.com/sourcegraph/sourcegraph/issues/14016)). Time allowing I'll add some contextual regex/structural highlighting, since I prototyped it already.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
-    
+    - 2020-11-08: Finished the base parser code that unblocks the part for query-checking complex expressions in the frontend. There are still bits to refine, but it's complete enough to use for the checks we need. I spent some time adding regex/structural query syntax highlighting and hovers in a prototype branch, and will incrementally merge this work into the main branch.
+    - 2020-11-15: Finished the validation check that uses scanner/parser code to drive better UI. I've drafted changes that solve the toggle issue and query mangling (see [#13958](https://github.com/sourcegraph/sourcegraph/issues/13958). I stopped just short of putting up these PRs at the end of the week, because I discovered that our logic for transforming/parsing queries is spread out and I need to restructure this so that it isn't so tricky to follow how we manipulate queries and avoid re-scanning/re-parsing things. I also committed basic regex highlighting to internal Sourcegraph org users--so far so good.
+
 ### Quality-of-life search code improvements, continued
 
 - **Owner(s):** Rijnard
 - **Outcomes:**
-    - This is a catch-all goal for improving the quality of our backend search code (bug fixes and refactors). One concrete goal is to fix a nasty commit search issue [#13313](https://github.com/sourcegraph/sourcegraph/issues/13313) that I have a WIP branch fix for. There's also a structural search/archive copying deficiency I want/need to look into [#14619](https://github.com/sourcegraph/sourcegraph/issues/14619#issuecomment-720910776).
-- **Work log:**    
-    - YYYY-MM-DD: $UPDATE    
+    - This is a catch-all goal for improving the quality of our search code (bug fixes and refactors). One concrete goal is to fix a nasty commit search issue [#13313](https://github.com/sourcegraph/sourcegraph/issues/13313) that I have a WIP branch fix for. There's also a structural search/archive copying deficiency I want/need to look into [#14619](https://github.com/sourcegraph/sourcegraph/issues/14619#issuecomment-720910776).
+- **Work log:**
+    - 2020-11-08: Will be spending time this week to resolve slow structural search/archive copying. Fixed two minor bugs in frontend parsing/hovers [#15410](https://github.com/sourcegraph/sourcegraph/pull/15410), [#15367](https://github.com/sourcegraph/sourcegraph/pull/15367).
+    - 2020-11-15: Discussed how to go about rearchitecting code paths for structural search and settled on a direction in https://github.com/sourcegraph/sourcegraph/issues/14619#issuecomment-726653340. Unfortunately I didn't make progress with a solution I can ship yet. I decided not to tackle the commit issue because the commit code was touched heavily for streaming. I spent some time debugging a possible `repohasfile` issue for the release, but I'm not sure it's resolved yet [#15178](https://github.com/sourcegraph/sourcegraph/issues/15178).
+
+### Improve tracking of search onboarding on enterprise instances
+- **Owner(s):** @farhan
+- **Outcomes:**
+    - Spillover from last iteration, PRs merged for: Weekly retention is tracked in pings [#13636](https://github.com/sourcegraph/sourcegraph/issues/13636).
+    - Spillover from last iteration, PRs merged for: Search tour usage is tracked in pings [#14781](https://github.com/sourcegraph/sourcegraph/issues/14781).
+    - Spillover from last iteration: SMTP is tracked in pings [#14115](https://github.com/sourcegraph/sourcegraph/issues/14115).
+- **Work log:**
+    - 2020-11-09: PRs for search tour usage pings were merged. Updated PR for weekly retention pings after review feedback from Cloud team, still awaiting review from BizOps. RFC for SMTP pings still awaiting review from Pooja and Dan, pinged them to see whether this is still a priority.
+    - 2020-11-13: PR for weekly retention is ready to be merged as of Friday Singapore time. @ebrodymoore will merge once the BigQuery schema is updated.
+
+### Documentation clean up and content
+
+- **Owner(s):** Farhan
+- **Outcomes:**
+    - Clear goals are outlined for improvements to search documentation, to be completed next iteration.
+- **Work log:**
+    - 2020-11-09: Planning and reading up on Divio's documentation system. Outcome has been changed to complete planning this iteration, and work on actually improving docs for next iteration.
+    - 2020-11-13: No update. I was focused on code monitoring, and this was bumped to a lower priority.
 
 ## 2020-10-19 to 2020-10-30
 
@@ -82,6 +159,7 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - 2020-10-23: Finished v1 of GraphQL schema for code monitoring (Google drive > Sourcegraph shared > Search > Code Monitor GraphQL Design). Next step: Review together with Juliana.
     - 2020-10-30: Juliana and I agreed on the first version of the GraphQL schema. I have put up a PR that covers 80% of it. It will probably take another 2 days to finish the stub mutations and the rest of the schema. The stubs will not be connected to the DB yet.
+    - 2020-10-30 (@farhan): [RFC for SMTP pings](https://docs.google.com/document/d/1fp3zuhjw6gykaF2_TRWDh7ia-dAdDqrj9gxjtFmcy7I/edit#heading=h.trqab8y0kufp) is awaiting review
 
 ### Scale indexed search to 500k repositories
 - **Owner(s):** Stefan, Keegan
@@ -112,7 +190,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Search tour is re-enabled by default for enterprise customers.
     - Search tour usage is tracked in pings [#14781](https://github.com/sourcegraph/sourcegraph/issues/14781).
 - **Work log:**
-    - 2020-10-30: [#14783](https://github.com/sourcegraph/sourcegraph/issues/14783) is fixed. PRs are open to get search tour usage in pings; awaiting review from the BizOps team, who are also working on cleaning up existing pings before merging PRs that add more data to pings. [#15113](https://github.com/sourcegraph/sourcegraph/pull/15113), [#63](https://github.com/sourcegraph/analytics/pull/63).
+    - 2020-10-30: [#14783](https://github.com/sourcegraph/sourcegraph/issues/14783) is fixed. PRs are open to get search tour usage in pings; awaiting review from the BizOps team, who are also working on cleaning up existing pings before merging PRs that add more data to pings. [#15113](https://github.com/sourcegraph/sourcegraph/pull/15113), [#63](https://github.com/sourcegraph/analytics/pull/63). Tour is enabled by default on enterprise.
 
 ### Improve tracking of search onboarding on enterprise instances
 - **Owner(s):** @farhan

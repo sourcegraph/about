@@ -2,6 +2,8 @@
 
 We strive for an outcome-based roadmap: each roadamp item should describe the problem we want to solve or outcome we want to achieve.
 
+## Roadmap visualization
+
 <!-- Gantt chart syntax documentation: https://mermaid-js.github.io/mermaid/diagrams-and-syntax-and-examples/gantt.html -->
 
 <pre class="mermaid" data-rendered-width="150%" data-scroll-right="50%">
@@ -14,9 +16,6 @@ section Milestones
     3.21 :active, release-3.21, 2020-09-21, 2020-10-20
     3.22 :        release-3.22, 2020-10-21, 2020-11-20
 
-%% section Campaigns
-%%     TO DO :active, after release-3.21, 30d
-
 section Cloud
     User added code is indexed and searchable                 :done,   2020-09-23, 2020-10-07
     RFC 167 - Product license tiers                           :active, 2020-10-07, 14d
@@ -25,20 +24,6 @@ section Cloud
     GitHub app to simplify access to repositories (spike)     :        2020-10-21, 2d
     Webhooks to receive repo permissions and metadata (spike) :        2020-10-21, 2d
 
-section Code intel
-    SQLite data to Postgres migration                       :done,   2020-10-01, 2020-10-20
-    Auto-indexing for supported languages (RFC 201)         :active, 2020-10-10, 40d
-    Rebuild lsif-java indexer using com.sun.source          :active, 2020-10-10, 40d
-    Add native Gradle support for lsif-java                 :active, 2020-10-21, 14d
-    Add native Maven support for lsif-java                  :active, 2020-11-05, 14d
-    Resolve outstanding issues for lsif-clang delivery      :active, 2020-09-21, 50d
-    Ship lsif-clang to 3 organizations                      :active, 2020-11-01, 20d
-    Review and fill documentation gaps to ease adoption     :active, 2020-10-21, 15d
-    Ship lsif-go to 2 organizations                         :active, 2020-11-01, 20d
-    Add incremental indexing for monorepo support (RFC 170) :active, 2020-11-10, 5d
-    Ship lsif-java to 3 organizations                       :        2020-11-20, 20d
-    Integrate with Bazel for monorepo support               :        2020-11-21, 7d
-
 section Web
     Browser extension discoverability                         :done,    2020-09-28, 14d
     Build new and improved extensions                         :active,   2020-10-12, 14d
@@ -46,54 +31,105 @@ section Web
     Code insights TBD                                         :         2020-11-09, 14d
     Web nav updates                                           :         2020-11-09, 7d
     Breadcrumbs                                               :         2020-11-16, 7d
-
-%% section Search
-%%     TO DO :active, after release-3.21, 30d
 </pre>
 
-## Campaigns
+<div id="roadmap-loading">
+	Compiling roadmap...
+	<br/>
+	<small>If the roadmaps do not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
+</div>
 
-1. **Customer outreach to improve adoption of campaigns**
-1. User credentials ([RFC 242](https://docs.google.com/document/d/1SqoWWm1xs82QibrWwYsXmpmgweN6EpcKt1qXrRBjjlU/edit)), which will allow non-site-admins to create campaigns
-1. Versioning/releasing of src-cli with respect to sg/sg
-1. Respect GitHub GraphQL rate limits
-1. Improved documentation of src-cli login process
+## [Campaigns roadmap](../engineering/campaigns/goals.md#roadmap)
+## [Cloud roadmap](../engineering/cloud/goals.md#roadmap)
+## [Code Intel roadmap](../engineering/code-intelligence/goals.md#roadmap)
+## [Distribution roadmap](../engineering/distribution/goals.md#roadmap)
+## [Search roadmap](../engineering/search/goals.md#roadmap)
+## [Security roadmap](../engineering/security/goals.md#roadmap)
+## [Web roadmap](../engineering/web/goals.md#roadmap)
 
-See [roadmap at a glance](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaWgLk1dBvQVKDg-J7pwjGg8tpps/edit#) for more.
+---
 
-## Cloud
+## How to edit
 
-See [cloud roadmap](../engineering/cloud/goals.md#roadmap)
+This page is generated automatically based on the contents of other handbook pages.
 
-## Code intel
+1. To add a team's roadmap, [edit this page](https://github.com/sourcegraph/about/edit/main/handbook/product/roadmap.md) and add a link to the section of the team's page that lists the roadmap (such as `### [My team](../../handbook/myteam/goals.md#roadmap)`). If the entire page is about the rooadmap, omit the section from the URL (for example, omit `#roadmap`).
+1. To edit a team's roadmap, edit the linked section on the team's page. In the example above, you'd edit the `Roadmap` section of `../../handbook/myteam/goals.md`. Everything in that section until the next same-level heading is displayed on this page.
+1. To add any other text or structure to this page, just insert it as you would normally. Only 3rd-level heading links (lines that start with `###` and that have a link) are treated specially; all other content is preserved.
 
-1. ✅ Simplify database structure and improve performance by migrating SQLite data to Postgres
-1. 🔄 Provide best effort auto-indexing for supported languages [RFC 201](https://docs.google.com/document/d/1NPQs1s814LZjNXjPuavqC1N7hZR192DNtmSBmAeH9UY/edit)
-1. 🔄 Rebuild lsif-java indexer using com.sun.source
-1. 🔄 Add native Gradle support for lsif-java
-1. 🔄 Add native Maven support for lsif-java
-1. 🔄 Resolve outstanding issues for lsif-clang delivery
-1. 🔄 Ship lsif-clang to 3 organizations
-1. 🔄 Review and fill documentation gaps to ease adoption
-1. 🔄 Ship lsif-go to 2 organizations
-1. 🔄 Add incremental indexing for monorepo support [RFC 170](https://docs.google.com/document/d/1NPu0Vc7FpdoYwCrtpnu-8KB4OPbw7L0KBTqw96JVc8w/edit#)
-1. Ship lsif-java to 3 organizations
-1. Integrate with Bazel for monorepo support
+<script>
+// This script injects the roadmap content into each section of this page that links to a team page.
+// It is similar to the script used to generate the org chart in ../../company/team/org_chart.md and ../../company/goals/index.md
 
-See [Code Intel roadmap](https://docs.google.com/document/d/1JPNelxg_8xwZKz8TT2BnpCccShOgxJrLubf2RNGye50/edit#) for more.
+const getHeadingLevel = heading => heading instanceof HTMLHeadingElement ? parseInt(heading.tagName.slice(1), 10) : undefined
 
-## Distribution
+const cloneHeading = (origHeading, level) => {
+	const newHeading = document.createElement(`h${level}`)
+	newHeading.innerHTML = origHeading.innerHTML
+	return newHeading
+}
 
-See [Distribution roadmap](https://github.com/sourcegraph/about/pull/1104).
+async function getPageSectionContent(pageUrl, level) {
+	const sectionId = pageUrl.includes('#') ? pageUrl.replace(/^.*#/, '') : null
 
-## Search
+	const resp = await fetch(pageUrl)
+	const doc = new DOMParser().parseFromString(await resp.text(), "text/html")
+	const section = sectionId ? doc.getElementById(sectionId) : doc.querySelector('.markdown-body > h1')
+	if (!section) {
+		const error = document.createElement('p')
+		error.innerText = `Error compiling roadmap: page at ${pageUrl} has no ${sectionId ? `section with ID ${sectionId}` : 'content'}.`
+		return error
+	}
 
-See [search roadmap](../engineering/search/goals.md).
+	const wrapper = document.createElement('section')
+	const iterator = doc.createNodeIterator(doc, NodeFilter.SHOW_ELEMENT, () => NodeFilter.FILTER_ACCEPT)
+	let curNode
+	let started = false
+	let startLevel = undefined
+	let demoteByLevels = undefined
+	while (curNode = iterator.nextNode()) {
+		if (curNode instanceof HTMLHeadingElement && sectionId ? curNode.id === sectionId : curNode === section) {
+			started = true
+			startLevel = getHeadingLevel(curNode)
+			demoteByLevels = level - startLevel
+			continue
+		}
+		if (started) {
+			if (curNode instanceof HTMLHeadingElement) {
+				const curNodeLevel = getHeadingLevel(curNode)
 
-## Security
+				if (curNodeLevel <= startLevel) {
+					// End at next same-level heading.
+					break
+				}
 
-See [WIP roadmap](https://sourcegraph.productboard.com/feature-board/2119755-cloud).
+				// Demote headings so that the injected content's headings are smaller.
+				const demotedLevel = Math.min(curNodeLevel + demoteByLevels, 6)
+				curNode = cloneHeading(curNode, demotedLevel)
+			}
 
-## Web
+			wrapper.appendChild(curNode)
+		}
+	}
 
-See [web roadmap](../engineering/web/goals.md#roadmap)
+	return wrapper
+}
+
+const sectionHeaders = Array.from(document.querySelectorAll('h2,h3')).filter(section => Boolean(section.querySelector('a[href]:not([aria-hidden])')))
+Promise.all(
+	sectionHeaders.map(async sectionHeader => ({
+		header: sectionHeader,
+		content: await getPageSectionContent(
+			sectionHeader.querySelector('a[href]:not([aria-hidden])').href,
+			getHeadingLevel(sectionHeader)
+		),
+	}))
+).then(sections => {
+	const loading = document.getElementById('roadmap-loading')
+	loading.innerHTML = '' // clear
+
+	for (const {header, content} of sections) {
+		header.parentNode.insertBefore(content, header.nextSibling)
+	}
+})
+</script>

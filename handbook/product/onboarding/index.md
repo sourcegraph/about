@@ -59,7 +59,7 @@ Remember:
 - Familiarize yourself with our [team chat](../../communication/team_chat.md) and join team channels on Slack, as well as any other channels you find interesting. [Product team chat documentation](../../communication/team_chat.md#product).
 - Set up your [local development environment](https://github.com/sourcegraph/sourcegraph/blob/main/doc/dev/getting-started/index.md). If you encounter any issues, ask for help in Slack and then update the documentation to reflect the resolution (so the next person that we hire doesn't run into the same problem).
    - You will need to run Sourcegraph locally to test and validate work that engineering is doing, to provide early feedback, or to review the UX of recently implemented work.
-- [Add Sourcegraph as a browser search engine](https://docs.sourcegraph.com/integration/browser_search_engine). Add another entry for our internal instance: `https://sourcegraph.sgdev.org/search?q=%s`. This also ensures you have access to our internal instance.
+- [Add Sourcegraph as a browser search engine](https://docs.sourcegraph.com/integration/browser_search_engine). To search our private code, log in to our [internal dogfood instance](../../engineering/deployments/instances.md#k8s-sgdev-org) ([`k8s.sgdev.org`](https://k8s.sgdev.org)) and add another entry: `https://k8s.sgdev.org/search?q=%s`.
 - Install a text editor of your choice. A lot of the team uses [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Get to know the product
@@ -83,7 +83,8 @@ Remember:
 ### Know our tools
 
 - Figma
-  - Watch [Figma for Sourcegraphers](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn how we use the application
+  - Watch [Figma for Sourcegraphers part 1](https://drive.google.com/file/d/1zzUKDJN5XUwvKF8LfKZqQb7gK9NpK1Wx/view?usp=sharing) to learn how we use the application
+  - Watch [Figma for Sourcegraphers part 2 (intro to the Wildcard Design System)](https://drive.google.com/file/d/1kfT3PVvTag_e0RXLAt6nndf6fS2n1Slv/view)
   - Read [Figma developers guide](https://www.smashingmagazine.com/2020/09/figma-developers-guide/)
 
 ### Understand company and team goals
@@ -97,10 +98,7 @@ Remember:
 ### Get ready to contribute to the docs
 
 - Read the [content guidelines](../../communication/content_guidelines.md) for contributing to the handbook, product docs, and product copy
-- Google Cloud Storage: Ask in **#dev-chat** for the following Google Cloud Storage permissions for publishing graphics:
-   - `storage.objects.delete`
-   - `resourcemanager.projects.get`
-   - `storage.buckets.list`
+- Google Cloud Storage access: Ask in #product to be added to the `gcp-assets-users` group.
 - **Screenshot/GIF making software**: See the [handbook](https://about.sourcegraph.com/handbook/marketing/adding_screenshots_screen_recording) for guidelines about software. Expense the program that works for you when you need it.
 - [Product documentation guidelines](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/dev/documentation.md)
 - [Docs to Markdown add-on for Google Docs](https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607)

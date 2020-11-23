@@ -25,8 +25,12 @@ We designed this exercise to measure your understanding of building web UIs.
 - You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
 - The exercise asks you to implement a UI in a scaffold TypeScript React app.
 - We provide you with the code of the scaffold app, the URL of a working GraphQL API to fetch data from and a link to a Figma design for the UI.
-- You are free in how you chose to implement it and can change the existing code in any way you'd like.
 - You can use your own development environment and lookup documentation on the internet.
+
+We will grade your submission on both the code (implementation) and the result (UI, functionality, etc), so we recommend to not compromise one over the other.
+Apply the same standards to your solution you would to any solution you implement in a real-world production-ready app.
+If you can't get the whole exercise done in the time box, cut scope and make informed trade-offs the same way you would for a "real" app and note them in your README.
+Try to hand in a "well-rounded" submission that demonstrates your skills as well as possible.
 
 If we decide to move forward, we schedule a one hour follow-up call to discuss your submission.
 
@@ -43,15 +47,18 @@ We designed this exercise to measure your understanding of HTTP requests, concur
 
 If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
 
-## Full stack coding exercise
+## CLI coding exercise
 
-This exercise is designed to give you an opportunity to demonstrate your skills building a web application end-to-end.
+We designed this synchronous exercise to measure your approach to coding a small application in a paired setting.
 
-- You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time that works for you; there are no scheduling constraints.
-- At your chosen date and time, we will send you detailed instructions. We provide you with an easy to run Postgres database pre-loaded with data. Your goal is to build a few features on top of it.
-- You should have docker-compose installed on your computer.
-- You can look up documentation on the internet while you are coding.
-- After three hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
+* We will schedule a 90-minute timeframe to work with a Sourcegraph engineer.
+* In this exercise you write a command-line application that processes a data file and computes some simple metrics.
+* The data file will be emailed to you 10-minutes prior to the interview.
+* You may use the language of your choice.
+* You can use your own development environment, and look up documentation on the internet.
+* You are not prohibited from using open-source libraries.
+
+If we device to move forward, we will schedule interviews with team members.
 
 ## Security coding exercise
 

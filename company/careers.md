@@ -1,6 +1,6 @@
 # Careers
 
-Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology. Read our [Master Plan](https://about.sourcegraph.com/plan) to learn more about what we're building, and why it matters.
+Join us on our mission to make it so everyone, in every community, in every country, and in every industry can create products using the best technology. Read [Sourcegraph strategy](strategy.md) to learn more about what we're building, and why it matters.
 
 ## Open positions
 
@@ -12,7 +12,6 @@ We're hiring! Check out our open positions:
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
 - [Software Engineer - Security](../handbook/engineering/hiring/software-engineer-security.md)
-- [Software Engineer - Full stack](../handbook/engineering/hiring/software-engineer-full-stack.md)
 
 ### Product
 
@@ -27,22 +26,30 @@ We're hiring! Check out our open positions:
 ### Customer engineering
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
+- [Training Engineer](../handbook/ce/roles/training_engineer.md)
 
 ### Marketing
 
 - [Director of Community](../handbook/marketing/roles/director_of_community.md)
-- [Director of Content](../handbook/marketing/roles/editor_in_chief.md)
+- [Director of Product Marketing](../handbook/marketing/roles/director_of_product_marketing.md)
+- [Director of Content Strategy](../handbook/marketing/roles/director_of_content_strategy.md)
 
 ### Operations, finance, and legal
 
-- [Internal Tools](../handbook/ops/roles/internal_tools.md)
+- [Director of Business Operations & Strategy](../handbook/ops/roles/director_business_operations.md)
+- [Tech Ops Manager](../handbook/ops/roles/tech_operations_manager.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
+- [Salesforce Administrator and Developer](../handbook/ops/roles/sf_admin_developer.md)
 
 ### People Ops
 
 - [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
 - [Recruiter (customer-facing roles)](../handbook/people-ops/roles/recruiter_customer_facing.md)
 - [Technical Recruiter - Product](../handbook/people-ops/roles/technical_recruiter_product.md)
+
+### CEO
+
+- [Executive Business Administrator](../handbook/ceo/executive_business_administrator_role.md)
 
 ## Apply
 
@@ -57,6 +64,14 @@ Our team consists of talented, collaborative, driven individuals who are attract
 ## Our work
 
 Most of our work, including our main product, is [open source](https://github.com/sourcegraph)! You can check out our code to see the kinds of problems that we work on, file an issue if you run into any problems, or even submit a PR if you want to help make Sourcegraph better.
+
+## Our pledge
+
+We pledge to make participation in our company an open and welcoming experience for everyone, regardless of ability, age, body size, skin color, culture, education, ethnicity, gender identity and expression, immigration status, level of experience, mental and physical ability, nationality, personal appearance, political beliefs, race, relationship or family status, religion, sex, sexual identity and orientation, or socio-economic status.
+
+We care about the safety and comfort of everyone in our community, including colleagues, contributors, and users.
+
+See more about [our commitment](../handbook/communication/code_of_conduct.md).
 
 ## Benefits
 

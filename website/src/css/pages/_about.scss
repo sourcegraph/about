@@ -4,27 +4,13 @@
     }
 
     &__plan {
-        padding: 3rem 0 0 0;
+        padding: 3rem 0;
         background-color: $light-10;
         &-container {
             background-color: #ffffff;
             padding: 2rem 2rem;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
+            border-radius: 0.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        &-btn {
-            margin-top: 1.5rem;
-        }
-    }
-
-    &__values {
-        padding: 3rem 0;
-        background-color: $light-9;
-        svg {
-            color: $light-7;
-            width: 4rem;
-            height: 4rem;
         }
     }
 
@@ -56,19 +42,6 @@
                     width: 4rem;
                     border-top-left-radius: 0.5rem;
                     border-bottom-left-radius: 0.5rem;
-                }
-            }
-        }
-
-        &-advisors {
-            margin-top: 1rem;
-
-            &-item {
-                display: inline-block;
-                border-bottom: 1px solid $light-10;
-                padding: 0.5rem 0;
-                &:last-child {
-                    border-bottom: 0;
                 }
             }
         }

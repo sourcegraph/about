@@ -36,7 +36,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                    sourcegraph/server:3.21.2</span>
+                                    sourcegraph/server:3.22.0</span>
                                 <span className="get-started__copytext">
                                     <ClipboardArrowLeftOutlineIcon
                                         className="copytext icon-inline ml-1 medium"
@@ -57,8 +57,8 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                 <a className="btn btn-sm btn-outline-primary mb-2" href="https://docs.sourcegraph.com">
                                     Docs <ExternalLinkIcon className="icon-inline ml-1 small" />{' '}
                                 </a>{' '}
-                                <Link className="btn btn-sm btn-outline-primary mb-2" to="/contact/request-info">
-                                    Schedule time with a Sourcegraph engineer
+                                <Link className="btn btn-sm btn-outline-primary mb-2" to="https://info.sourcegraph.com/product-tour">
+                                    Join the next live product tour
                                 </Link>
                             </div>
                         </div>
