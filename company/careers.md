@@ -65,6 +65,14 @@ Our team consists of talented, collaborative, driven individuals who are attract
 
 Most of our work, including our main product, is [open source](https://github.com/sourcegraph)! You can check out our code to see the kinds of problems that we work on, file an issue if you run into any problems, or even submit a PR if you want to help make Sourcegraph better.
 
+## Our pledge
+
+We pledge to make participation in our company an open and welcoming experience for everyone, regardless of ability, age, body size, skin color, culture, education, ethnicity, gender identity and expression, immigration status, level of experience, mental and physical ability, nationality, personal appearance, political beliefs, race, relationship or family status, religion, sex, sexual identity and orientation, or socio-economic status.
+
+We care about the safety and comfort of everyone in our community, including colleagues, contributors, and users.
+
+See more about [our commitment](../handbook/communication/code_of_conduct.md).
+
 ## Benefits
 
 [Benefits and perks](../handbook/people-ops/benefits-and-perks.md).
