@@ -74,7 +74,26 @@ export default class About extends React.Component<any, any> {
                                                 <a href="/company/careers">Open roles (we're hiring!)</a>
                                             </li>
                                             <li className="list-inline-item mr-4">
+                                                <a href="/handbook/communication/code_of_conduct">
+                                                    Commitment to inclusion
+                                                </a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
                                                 <a href="/company/team/org_chart">Org chart</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                Codes of conduct:{' '}
+                                                <a href="/handbook/communication/code_of_conduct">Team</a> and{' '}
+                                                <a href="/community/code_of_conduct">Community</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/handbook/communication/content_guidelines">Style guide</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/direction">Product direction</a>
+                                            </li>
+                                            <li className="list-inline-item mr-4">
+                                                <a href="/handbook/marketing/messaging">Messaging</a>
                                             </li>
                                         </ul>
                                     </div>
