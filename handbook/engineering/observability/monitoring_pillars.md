@@ -46,7 +46,7 @@ Monitoring tooling at Sourcegraph is developed to encourage the following guidel
 - [**Dashboards should only be created with the monitoring generator**](#dashboards-should-only-be-created-with-the-monitoring-generator)
 - [**Dashboards should describe a single service**](#dashboards-should-describe-a-single-service)
 - [**Graphs should have less than 5 cardinality**](#graphs-should-have-less-than-5-cardinality)
-- [**Less useful graphs should be hidden by default**](#less-useful-graphs-should-be-hidden-by-default)
+- [**Only the most useful and simple graphs should be visible by default**](#only-the-most-useful-and-simple-graphs-should-be-visible-by-default)
 
 Before trying to circumvent the guidelines enforced by our monitoring tooling, please keep in mind that these pillars are defined to help us achieve our [goals](#long-term-vision) and alleviate [pain points we have encountered in the past](#history). Each of the above pillars are documented with detailed explanations, recommendations for what you can do, and exceptions where applicable.
 
