@@ -1,6 +1,6 @@
 ---
 title: An ex-Googler's guide to dev tools
-description: Many ex-Googlers wish they could simply clone the dev tools ecosystem inside of Google to their new company.  This guide to dev tools will help you get started and make you and your new teams be as productive as possible.
+description:  After leaving Google, many engineers miss the developer tools. Here's one ex-Googler's guide to navigating the dev tools landscape outside of Google, finding the ones that fill the gaps you're feeling, and introducing these to your new team.
 author: Beyang Liu
 authorUrl: https://twitter.com/beyang
 publishDate: 2020-11-24
