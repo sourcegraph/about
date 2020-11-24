@@ -129,7 +129,9 @@ We expect `update_commits` to be taking ~50ms and need to confirm that. Is it ~5
 
 #### Exceptions
 
-Some graphs will require per-instance granularity. For example, per-container or per-Gitserver replica graphs might be rendered entirely unhelpful if we do not have the ability to observe the behaviour of each individual instance.
+Some graphs will require more granularity. For example, per-container or per-Gitserver replica graphs might be rendered entirely unhelpful if we do not have the ability to observe the behaviour of each individual instance.
+
+When creating high-cardinality graphs, please consider how understandable the graph is in terms of how easy it is to grok as human.
 
 #### What you should do
 
@@ -139,7 +141,7 @@ If the information you are presenting is not important enough to warrant being s
 
 For _instances of services_ in particular, you might be thinking "surely that is an exception?" But no, it is not generally. It is better that an admin knows there is an issue with _a searcher_, or _a gitserver_ and that admin looks through the logs of each to determine the issue than it is to give an information overload which makes it hard to interpret individual panels at all.
 
-### Less useful graphs should be hidden by default
+### Only the most useful and simple graphs should be visible by default
 
 The most useful information should be presented first, the least useful information should be hidden by default. This means that in the monitoring generator, most groups of graphs should default to hidden.
 
