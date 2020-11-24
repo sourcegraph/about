@@ -70,13 +70,13 @@ You might be thinking:
 
 > But writing code for dashboards is quite painful, let alone a bunch of generation code that I now need to understand!
 
-In truth, we are only using Go as a nice type-checked declarative syntax, which provides auto-completion, documentation on hover, and more for free. It's simpler to use than a configuration file, and the constraints we impose in monitoring means that we do not allow doing any fanciful dashboards intentionally -- which means you are basically _just_ writing a Prometheus query, and barely any layout or styling.
+In truth, we are only using Go as a nice type-checked declarative syntax, which provides auto-completion, documentation on hover, and more for free. It's simpler to use than a configuration file, and provides safety guarantees along with document generator, alert integration, default styling and other features which make creating panels easier. This means you are only required to write a Prometheus query, a description and barely any layout or styling.
 
 To learn more about what it takes to add dashboards, see [adding monitoring](monitoring.md#adding-monitoring).
 
 ### Dashboards should describe a single service
 
-Creating dashboards that describe something other than a single Sourcegraph service is strongly discouraged. This includes ad-hoc dashboards, like an "HTTP" dashboard.
+Creating dashboards that describe something other than a single Sourcegraph service is strongly discouraged. This includes ad-hoc dashboards, like a catch-all "HTTP" dashboard.
 
 #### Explanation
 
