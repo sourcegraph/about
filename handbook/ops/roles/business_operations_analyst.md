@@ -34,7 +34,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-1. You [apply here](https://jobs.lever.co/sourcegraph/4d8ff305-71c8-4b28-a328-461c58819053/apply).
+1. You [apply here](https://jobs.lever.co/sourcegraph/38c35bb5-2121-4d07-8fb7-0e8922f7dd7b/apply).
 1. We set up a 30 minute call to chat with you about Sourcegraph to find out what you are looking for in your next role.
 1. We give you a small case study project to see how you would approach the job at Sourcegraph.
 1. We schedule a few more hours of interviews.
