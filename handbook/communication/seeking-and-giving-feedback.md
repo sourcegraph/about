@@ -22,7 +22,7 @@ When giving feedback, it's important to:
 
 - Make sure you understand what kind of feedback is sought. If it's not clear what kind of feedback is sought, clarify before giving feedback.
 - Focus feedback on the specific feedback sought. Other feedback may be valuable, but should be separated into a distinct conversation.
-- Provide feedback in terms of **why**, not **how** (unless specifically sought).
+- Always start with **why**, not **how**. Potential solutions can be useful to clarify your feedback, but aren't feedback in themselves.
 - Clarify where the feedback is coming from: is it based on a heuristic or best practice? Is it from a previous decision? Is it rooted in personal opinion?
 - Focus on the work, not the individual.
 
