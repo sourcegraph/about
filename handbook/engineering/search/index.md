@@ -55,7 +55,7 @@ Iterations start **every other Monday**.
 
 ## Members
 
-- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [María Craig](https://about.sourcegraph.com/company/team#mar%C3%ADa-craig-she-her) and [Alicja Suska](https://about.sourcegraph.com/company/team#alicja-suska-she-her) are involved in the meantime.
 - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
   - [Farhan Attamimi](../../../company/team/index.md#farhan-attamimi)
   - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
