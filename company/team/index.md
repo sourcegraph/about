@@ -465,6 +465,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [josh@sourcegraph.com](mailto:josh@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joshua-saunders-6a899820/)
 - Josh was raised in Toledo, OH and has lived in Northern California since 2014. He’s very curious and has held positions in a few industries including public health, medical devices, and, most recently, tech. His first startup experience was with Segment, where he was one of the first hires on the Customer Success team. After Segment, he joined Tray.io to build and lead their Customer Success organization. In Josh’s free time he loves to build and ride bikes, cheer (and sometimes cry) on the Cleveland Browns, travel California, and spend time with his wife, Tammy, and their furbaby, Griffin.
 
+## Owen Convey (he/him)
+
+- Engineering Manager
+- Barcelona, Spain 🇪🇸 
+- Github: [scalabilitysolved](https://github.com/scalabilitysolved)
+- [oconvey@sourcegraph.com](mailto:oconvey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/owenconvey/)
+- Owen was born and raised in England and has been residing in Barcelona since 2012.  He spends a lot of time watching Rugby, playing with his young daughter and tinkering with his laptop.  Prior to Sourcegraph, he was a manager at Help Scout and loves empowering and motivating autonomous engineering teams.  His Achilles' heel is most definitely pizza.
+
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
