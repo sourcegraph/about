@@ -16,8 +16,6 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ## [Customer Engineering](../../handbook/ce/index.md#goals)
 
-## [Marketing]
-
 ## [Operations](../../handbook/ops/index.md#goals)
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 ### [People ops](../../handbook/people-ops/index.md#goals)
