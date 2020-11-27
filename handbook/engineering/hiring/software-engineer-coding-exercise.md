@@ -24,7 +24,7 @@ We designed this exercise to measure your understanding of building web UIs.
 
 - You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
 - The exercise asks you to implement a UI in a scaffold TypeScript **React** app.
-- We provide you with the code of the scaffold app, the URL of a working **GraphQL API** to fetch data from and a link to a Figma **design** for the UI.
+- We provide you with the code of the scaffold app, the URL of a working **GraphQL API** to fetch data from and a link to a **Figma design** for the UI.
 - You can use your own development environment and lookup documentation on the internet.
 - You should have Node.js (>=14.0.0) installed on your computer.
 
