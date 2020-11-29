@@ -184,7 +184,7 @@ export default class About extends React.Component<any, any> {
                                                     </div>
                                                 </a>
                                                 <a
-                                                    href="https://www.linkedin.com/in/beyang-liu-07651227/"
+                                                    href="https://www.linkedin.com/in/beyang-liu/"
                                                     target="_blank"
                                                 >
                                                     <div className="icon">
