@@ -51,6 +51,7 @@ For each iteration (currently one month long), we follow this process:
   * EM creates a [tracking issue](https://about.sourcegraph.com/handbook/engineering/tracking_issues) for the iteration which will hold our goals and plans, in addition to tracking the issues we intend to address.
   * Everyone on the team looks through [our backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fcampaigns+milestone%3ABacklog) for any issues they think we should consider for the next sprint, and set the corresponding Campaigns Sprint milestone.
   * Everyone on the team looks through the current tracking issue for any issues they do not expect to finish by the end of the sprint (EOD Tuesday), and set the next sprint's milestone so they will show up on  the new tracking issue.
+  * Engineers add estimates to issues in the new tracking issue if they are missing.
   * Everyone on the team reviews the roadmap doc and comments their thoughts. Replace estimate placeholders with your actual estimates (and a best-guess range is fine: "3-5d"). For any items without linked Github issues, please create those issues and link them.
 
 * We then have our planning meeting to determine our common goals for the iteration.
