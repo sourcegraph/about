@@ -37,6 +37,7 @@ Credentials: [1Password](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme
 ### Gerrit
 
 URL: https://gerrit.sgdev.org
+
 Git URL: gerrit-ssh.sgdev.org
 
 Credentials: Google Auth
