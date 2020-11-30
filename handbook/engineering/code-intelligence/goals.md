@@ -22,9 +22,11 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. 🔄 Sourcegraph Cloud has precise code intelligence for 100 C++ repositories.
+1. 🔄 Sourcegraph Cloud has precise code intelligence for 5 C++ repositories.
     - 🔄 Improve stability and observability in lsif-clang
     - 🔄 Improve stability and observability in the code intel executor (for auto-indexing)
+
+1. 🔄 Sourcegraph Cloud has precise code intelligence for 100 C++ repositories.
     - Support automatic indexing of Bazel projects
     - Auto-detect common C++ project configurations and enable auto-indexing for C++ projects on Sourcegraph Cloud
     - Fix broken auto-index configurations for high-profile projects
@@ -35,16 +37,7 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Deliver to [*N<sub>3</sub>*][N3]
 
 1. Sourcegraph Cloud has precise code intelligence for 100 Java repositories.
-    - Add support for third-party code intelligence in lsif-java
-    - Support automatic indexing of Gradle projects
-    - Support automatic indexing of Maven projects
-    - Auto-detect common Java project configurations and enable auto-indexing for Java projects on Sourcegraph Cloud
-    - Fix broken auto-index configurations for high-profile projects
-
-1. Increase precise code intel operations by ([*N<sub>4</sub>*][N4]+[*N<sub>5</sub>*][N5]+[*N<sub>6</sub>*][N6]) per month.
-    - Deliver to [*N<sub>4</sub>*][N4]
-    - Deliver to [*N<sub>5</sub>*][N5]
-    - Deliver to [*N<sub>6</sub>*][N6]
+1. Deliver Java to three enterprise customers.
 
 ## Roadmap
 
