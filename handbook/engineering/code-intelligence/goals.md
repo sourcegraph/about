@@ -25,11 +25,15 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 1. 🔄 Sourcegraph Cloud has up-to-date precise code intelligence for 5 C++ repositories.
     - 🔄 Improve stability and observability in lsif-clang
     - 🔄 Improve stability and observability in the code intel executor (for auto-indexing)
-
-1. 🔄 Sourcegraph Cloud has up-to-date precise code intelligence for 100 C++ repositories.
-    - Support automatic indexing of Bazel projects
     - Auto-detect common C++ project configurations and enable auto-indexing for C++ projects on Sourcegraph Cloud
     - Fix broken auto-index configurations for high-profile projects
+    
+1. Sourcegraph Cloud has up-to-date precise code intelligence for 5 C++ repositories that use Bazel as a build system.
+    - Support automatic indexing of Bazel projects
+
+1. Sourcegraph Cloud has up-to-date precise code intelligence for 5 C++ repositories exceeding 1mil LOC.
+
+1. Sourcegraph Cloud has up-to-date precise code intelligence for 5 C++ repositories _with some other property_.
 
 1. Increase precise code intel operations by ([*N<sub>1</sub>*][N1]+[*N<sub>2</sub>*][N2]+[*N<sub>3</sub>*][N3]) per month.
     - Deliver to [*N<sub>1</sub>*][N1]
