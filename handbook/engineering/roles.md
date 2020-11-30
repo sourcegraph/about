@@ -12,7 +12,7 @@ Software engineers build our product and infrastructure.
 - Iteratively create and maintain high quality architecture, code, tests, and documentation that aligns with team goals.
 - Document and share your progress in relevant locations at least once a week (for example: in GitHub issues, team slack channel, #progress, [CHANGELOG.md](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md)).
 - Prioritize unblocking and supporting your teammates (for example: sharing knowledge, answering questions, providing feedback).
-- Help us build a great team by referring people who you would like to work with, interviewing candidates, and suggesting improvements to our hiring process.
+- Help build a great team by referring people who you would like to work with, interviewing candidates, and suggesting improvements to our hiring process.
 
 ## Engineering Manager
 
