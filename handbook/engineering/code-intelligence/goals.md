@@ -14,7 +14,8 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Outcome:**
 
-- 200 popular open source C++ and Java repos are indexed on Sourcegraph Cloud.
+- 25 popular open source C++ repositories are indexed on Sourcegraph Cloud.
+- 25 popular open source java repositories are indexed on Sourcegraph Cloud.
 - C++ and Java indexers are adopted by at least 3 customers each.
 - Precise code intel reaches [*N<sub>0</sub>*][N0] precise code intel operations a month.
 - CE and Sales have a significant amount of open source repos to showcase and can easily demonstrate the value of setting up precise code intelligence.
@@ -22,9 +23,10 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. 🔄 Sourcegraph Cloud has up-to-date precise code intelligence for 5 C++ repositories.
+1. 🔄 Sourcegraph Cloud has up-to-date precise code intelligence for C++ repositories.
     - 🔄 Improve stability and observability in lsif-clang
     - 🔄 Improve stability and observability in the code intel executor (for auto-indexing)
+    - Auto-index 5 repositories on Sourcegraph Cloud
 
 1. Sourcegraph Cloud has up-to-date precise code intelligence for C++ repositories that use cmake as a build system. 
     - Auto-detect common cmake project configurations in the auto-indexer
@@ -35,18 +37,18 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Auto-detect common Bazel project configurations in the auto-indexer
     - Auto-index 5 repositories on Sourcegraph Cloud that use Bazel as a build system
 
-1. Sourcegraph Cloud has up-to-date precise code intelligence for 5 C++ repositories exceeding 1mil SLOC.
+1. Sourcegraph Cloud has up-to-date precise code intelligence for C++ repositories that exceed 1mil SLOC.
     - Reduce lsif-clang memory usage
-    - Auto-index 5 repositories on Sourcegraph Cloud exceeding 1mil SLOC
+    - Auto-index 5 repositories on Sourcegraph Cloud that exceed 1mil SLOC
 
-1. Sourcegraph Cloud has up-to-date precise code intelligence for 5 C++ repositories _with some other property_.
+1. _Placeholder_ (some other C++ property)
 
 1. Increase precise code intel operations by ([*N<sub>1</sub>*][N1]+[*N<sub>2</sub>*][N2]+[*N<sub>3</sub>*][N3]) per month.
     - Deliver to [*N<sub>1</sub>*][N1]
     - Deliver to [*N<sub>2</sub>*][N2]
     - Deliver to [*N<sub>3</sub>*][N3]
 
-1. Sourcegraph Cloud has up-to-date precise code intelligence for 100 Java repositories.
+1. Sourcegraph Cloud has up-to-date precise code intelligence for 25 Java repositories.
 1. Deliver Java to three enterprise customers.
 
 ## Roadmap
