@@ -15,7 +15,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Quinn Slack
 
-- [CEO](../../handbook/ceo/index.md), Co-founder, Board of Directors
+- [CEO](../../handbook/ceo/index.md), Cofounder, Board of Directors
 - San Francisco, CA, USA 🇺🇸
 - [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com), [slack.org](https://slack.org), [@sqs](https://twitter.com/sqs), [LinkedIn](https://www.linkedin.com/in/quinnslack), [he](http://pronoun.is/he)
 - Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
@@ -25,7 +25,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - CTO, Co-founder, Board of Directors
 - San Francisco, CA, USA 🇺🇸
 - [beyang@sourcegraph.com](mailto:beyang@sourcegraph.com), [@beyang](https://twitter.com/beyang), [LinkedIn](https://www.linkedin.com/in/beyang-liu)
-- Beyang Liu is CTO and co-founder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.
+- Beyang Liu is CTO and cofounder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.
 
 ## Christina Forney (she/her)
 
