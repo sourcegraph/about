@@ -10,9 +10,20 @@
             max-width: 200px;
             margin-bottom: 1.2rem;
         }
+        &-title {
+            margin-bottom: 0;
+        }
     }
     &__item a{
-        color: #000;
+        color: $dark-9;
     }
-    
+}
+
+.leadership__social li{
+    color: $dark-9;
+    padding: 0.3rem;
+}
+
+.leadership__social li:first-child{
+    padding-left: 0;
 }
