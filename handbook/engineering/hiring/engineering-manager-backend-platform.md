@@ -9,7 +9,7 @@ This team is currently called our "Cloud" team because it is focused on [buildin
 You will:
 
 - Facilitate an inclusive and cohesive team environment where everyone is happy, motivated, and productive.
-- Model, teach, and reinforce [our company values](../../../company/values.md) and [our guiding engineering principles](../index.md#guiding-principles) to the team.
+- Model, teach, and reinforce [our company values](../../../company/values.md) and [our guiding engineering principles](../index.md#guiding-principles).
 - Ensure the team has clear incremental goals that are documented and are always up-to-date.
 - Regularly communicate the team's progress toward their goals as well as changes in team goals to appropriate stakeholders.
 - Support and coach teammates to grow in their careers and fulfill their responsibilities.
@@ -38,12 +38,6 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - 45m [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) (VP Engineering)
    - 30m [Tomás Senart](../../../company/team/index.md#tomás-senart) (Engineering Manager, Cloud)
 1. Interviews.
-   - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md). We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
-     - The interviewers will be [Christina Forney](../../../company/team/index.md##christina-forney-she-her) (VP Product) and one of the following:
-       - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
-       - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
-       - [María Craig](../../../company/team/index.md#maría-craig-she-her)
-       - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
    - 1h [Engineering leadership](engineering-leadership.md).
      - The interviewers will be [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) and another Engineering Manager except Tomás.
    - 1h [Technical experience](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md) - We ask you about your past work and accomplishments.
@@ -51,6 +45,12 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
        - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
        - [Alex Russell-Saw](../../../company/team/index.md#alex-russell-saw-he-him)
        - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
+   - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md). We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
+     - The interviewers will be [Christina Forney](../../../company/team/index.md##christina-forney-she-her) (VP Product) and one of the following:
+       - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+       - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
+       - [María Craig](../../../company/team/index.md#maría-craig-she-her)
+       - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
    - 30m [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
 
 If we want to move forward after these sets of interviews, we will setup 30-minute calls to meet any [members of the Cloud team](../cloud/index.md#members) that weren't already an interviewer. These calls are informal and don't have a script.
