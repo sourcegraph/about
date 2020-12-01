@@ -43,7 +43,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-1. You apply here (TODO - create Lever job)
+<!-- 1. You [apply here](#todo). --><!-- This is commented out because I will be sending some outbound messages before accepting applications. -->
 1. Intro calls
    - 45m [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) (VP Engineering)
    - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
