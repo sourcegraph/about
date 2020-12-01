@@ -22,7 +22,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Beyang Liu
 
-- CTO, Co-founder, Board of Directors
+- CTO, Cofounder, Board of Directors
 - San Francisco, CA, USA 🇺🇸
 - [beyang@sourcegraph.com](mailto:beyang@sourcegraph.com), [@beyang](https://twitter.com/beyang), [LinkedIn](https://www.linkedin.com/in/beyang-liu)
 - Beyang Liu is CTO and cofounder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.
