@@ -8,7 +8,7 @@ The conclusion of every project should include analysis of performance. Below is
 
 **Author**: Eric Brody-Moore
 
-**Overview**: Super cool info about data relating to and the next iteration of search homepages, tour, performance and more that deserved its own thread. Eric BM set up issues where he thought appropriate but most of other action items are either on him or too far out in the future.
+**Overview**: Data relating to and the next iteration of search homepages, tour, performance and more. Eric BM set up GitHub issues where he thought appropriate but most of other action items are either on him or should be revisited in the future by the product team.
 
 ### Cloud homepage
 
