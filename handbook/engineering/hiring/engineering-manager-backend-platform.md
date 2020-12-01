@@ -1,8 +1,8 @@
-# Engineering Manager - Backend Platform
+# Engineering Manager - Backend Platform and Cloud
 
-We are looking for an engineering manager to join the team that is building the backend platform upon which product engineering teams can iterate quickly and safely. The team's mission is to promote and champion consistency and simplicity across all backend code by building shared tools, libraries and infrastructure for common use cases, scale and maintain said infrastructure and ultimately create leverage for and accelerate other teams.
+We are looking for an engineering manager to lead the team that is building the backend platform that enables our product engineering teams to iterate quickly and safely. The team's mission is to create leverage for and accelerate the velocity of other engineering teams by promoting and championing consistency and simplicity across all backend code, and by building shared tools, libraries, and scalable infrastructure for common use cases.
 
-The [Cloud team](https://about.sourcegraph.com/handbook/engineering/cloud) team will become the Backend Platform team once we hire a Product Manager to drive the Cloud project forward.
+This team is currently called our "Cloud" team because it is focused on [building and launching the first version of Sourcegraph Cloud](../cloud/goals.md#private-code-on-sourcegraph-cloud). In the short term, you will help the team balance work on Sourcegraph Cloud as well as engineering infrastructure. In the medium/long term, you will figure out how we transition to a state where we have a dedicated backend platform team while ensuring that our cloud product is sufficiently owned and maintained.
 
 ## Responsibilities
 
@@ -17,17 +17,10 @@ You will:
 
 ## Qualifications
 
-- You have 2+ years of experience directly managing at least 6 full-time software engineers. We expect you already know how to lead a team.
+- You have 2+ years of experience directly managing at least 4 full-time software engineers. We expect you already know how to lead a team.
 - You have done some amount of coding in the past 2 years (for example: at work or on a personal project) to keep your skills up-to-date. We expect that you are able to review and provide valuable feedback on code, architecture, and designs.
 - You are able to clearly communicate your past accomplishments verbally (example: in an interview) and in writing (examples: in your resume, in your answers to our application questions).
 - You have experience breaking up complex technical problems into smaller achievable milestones that the team can iterate on.
-
-## Nice to haves
-
-- You have experience designing, architecting, scaling, and optimizing systems that span multiple layers of a tech stack (example: frontend, backend, CLI).
-- You have grown at least one junior engineer to a senior+ level.
-- You have designed a software engineer interview process from first principles.
-- You have built and delivered an application that works on multiple platforms (examples: different operating systems, cloud versus on-premise)
 
 ## Learn more about us
 
