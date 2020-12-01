@@ -40,7 +40,7 @@ At the beginning of each cycle, [we determine what work we plan to do](#planning
 1. Revisit the goals. Are they still the right goals?
 1. If there are any remaining uncertainties following the meeting, the owners of each theme or task should follow up before the start of the cycle.
 
-**Note on pairing:** Pairing is a great way to share knowledge about the different projects that team is working on and pays dividends own the road. Teammates are encouraged to spend **2 hours** per cycle pairing with someone on all projects that you are _not_ working on. You are also encouraged to take own fewer tasks in order to accomdate this (remember that people with be pairing with you as well). 
+**Note on pairing:** Pairing is a great way to share knowledge about the different projects that team is working on and pays dividends down the road. Teammates are encouraged to spend time on each cycle pairing with someone on all projects that you are _not_ working on. You are also encouraged to take own fewer tasks in order to accommodate this. As a rule of thumb estimate around **2 hours** for pairing and remember that people with be pairing with you as well. 
 
 **Note on agency and responsibility:**
 
