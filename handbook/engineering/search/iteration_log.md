@@ -46,6 +46,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Streaming search is available behind a feature flag, which we enable by default for the Sourcegraph org.
     - The backend progress API is functional.
     - We have repo-level streaming for search types other than `diff`.
+    - The streaming search UI is closer to feature parity with the GraphQL search UI.
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
     
