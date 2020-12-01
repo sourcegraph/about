@@ -9,7 +9,7 @@ SDR team description
 
 ## Links
 
-- [SDR handoff guide](./#sdr-to-ae-handoff)
+- [SDR handoff guide](#sdr-to-ae-handoff)
 
 ## SDR to AE handoff
 
