@@ -8,7 +8,7 @@ This team is currently called our "Cloud" team because it is focused on [buildin
 
 You will:
 
-- Facilitate a inclusive and cohesive team environment where everyone is happy, motivated, and productive.
+- Facilitate an inclusive and cohesive team environment where everyone is happy, motivated, and productive.
 - Model, teach, and reinforce [our company values](../../../company/values.md) and [our guiding engineering principles](../index.md#guiding-principles) to the team.
 - Ensure the team has clear incremental goals that are documented and are always up-to-date.
 - Regularly communicate the team's progress toward their goals as well as changes in team goals to appropriate stakeholders.
