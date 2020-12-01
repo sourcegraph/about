@@ -40,6 +40,15 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
     
+### Structural search for monorepos
+- **Owner(s):** Juliana, Keegan
+- **Outcomes:**
+    - Streaming search is available behind a feature flag, which we enable by default for the Sourcegraph org.
+    - The backend progress API is functional.
+    - We have repo-level streaming for search types other than `diff`.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+    
 ## 2020-11-16 to 2020-11-27
 
 ### Streaming search
