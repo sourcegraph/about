@@ -67,6 +67,6 @@ If we want to move forward after these sets of interviews, we will setup 30-minu
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-Apply here. — TODO Create Lever job
+<!-- **[Click here to apply](#todo)** --><!-- This is commented out because I will be sending some outbound messages before accepting applications. -->
 
 Go back to the [careers page](../../../company/careers.md) for all open positions.
