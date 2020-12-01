@@ -13,7 +13,7 @@
 /blog/press-release-sourcegraph-announces-new-gitlab-native-integration /press-release/sourcegraph-announces-new-gitlab-native-integration 301!
 /blog/sourecgraph-liveblogging-at-gophercon-2018 /blog/sourcegraph-liveblogging-at-gophercon-2018 301!
 /blog/strange-loop  /strange-loop 301!
-/careers /jobs 301!
+/careers /company/careers 301!
 /case-studies/quantcast /case-studies/quantcast-large-scale-refactoring 301!
 /changelog https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md 301!
 /contact/request-automation-demo /contact/request-code-change-management-demo 301!
@@ -80,6 +80,7 @@
 /go/go-in-debian /go/gophercon-2018-go-in-debian/ 301!
 /go/grpc-in-production  /go/grpc-in-production-alan-shreve/ 301!
 /events /blog 301!
+/jobs /company/careers 301!
 /plan /company/strategy 301!
 /press-releases/our-abcs-childrens-book /press-release/our-abcs-childrens-book 301!
 /press-releases/sourcegraph-announces-new-gitlab-native-integration /press-release/sourcegraph-announces-new-gitlab-native-integration 301!
