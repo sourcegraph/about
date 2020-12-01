@@ -18,7 +18,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [CEO](../../handbook/ceo/index.md), Cofounder, Board of Directors
 - San Francisco, CA, USA 🇺🇸
 - [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com), [slack.org](https://slack.org), [@sqs](https://twitter.com/sqs), [LinkedIn](https://www.linkedin.com/in/quinnslack), [he](http://pronoun.is/he)
-- Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
+- Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn cofounded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
 
 ## Beyang Liu
 
@@ -315,7 +315,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Product Designer
 - Berlin, Germany 🇩🇪
 - [qkeast@sourcegraph.com](mailto:qkeast@sourcegraph.com), [@quinnkeast](https://twitter.com/quinnkeast), [LinkedIn](https://www.linkedin.com/in/quinn-keast/), [quinnkeast](https://github.com/quinnkeast), [quinnkeast.com](https://quinnkeast.com)
-- Quinn is a Canadian product & UX designer living in Berlin. His background is in design, and prior to Sourcegraph, he has a broad range of experience including working with a branding and advertising agency, a major non-profit environmental conservancy, and a global meal kit company. He also co-founded a UX consultancy that worked with growing product teams and organizations across Canada. Outside of work, Quinn is passionate about Ultimate frisbee, writing, speaking, and tinkering around. Learn more about Quinn's guiding values and how he works as a human at his personal [Quinn.README](https://quinnkeast.com/readme)!
+- Quinn is a Canadian product & UX designer living in Berlin. His background is in design, and prior to Sourcegraph, he has a broad range of experience including working with a branding and advertising agency, a major non-profit environmental conservancy, and a global meal kit company. He also cofounded a UX consultancy that worked with growing product teams and organizations across Canada. Outside of work, Quinn is passionate about Ultimate frisbee, writing, speaking, and tinkering around. Learn more about Quinn's guiding values and how he works as a human at his personal [Quinn.README](https://quinnkeast.com/readme)!
 
 ## Juliana Peña (she/her)
 
@@ -381,7 +381,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Product Manager
 - Barcelona, Spain 🇪🇸 / Buenos Aires, Argentina 🇦🇷
 - [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [macraig](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
-- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
+- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she cofounded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
 
 ## Chris Surdi
 
