@@ -20,7 +20,7 @@ Engineering managers lead, grow, and develop teams of software engineers.
 
 ### Responsibilities
 
-- Facilitate a inclusive and cohesive team environment where everyone is happy, motivated, and productive (examples: [retrospectives](../../retrospectives/index.md), [team events](../people-ops/travel.md#team-events), [compensation](../people-ops/compensation.md)).
+- Facilitate an inclusive and cohesive team environment where everyone is happy, motivated, and productive (examples: [retrospectives](../../retrospectives/index.md), [team events](../people-ops/travel.md#team-events), [compensation](../people-ops/compensation.md)).
 - Model, teach, and reinforce [our company values](../../company/values.md) and [our guiding engineering principles](index.md#guiding-principles) to the team.
 - Ensure the team has clear incremental goals that are documented and are always up-to-date (example: [PM – EM partnership responsibilities](../product/roles/product_manager_engineering_manager_responsibilities.md)).
 - Regularly communicate the team's progress toward their goals as well as changes in team goals to appropriate stakeholders (examples: presenting a slide at [company meeting](../communication/company_meeting.md), [weekly updates](leadership/index.md#weekly-updates))
