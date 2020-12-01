@@ -1,6 +1,5 @@
 # SDR team
 
-SDR team description
 
 ## Members
 
