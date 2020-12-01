@@ -1,4 +1,17 @@
-# SDR-->AE handoff process for inbound/outbound prospect follow-up:
+# SDR team
+
+SDR team description
+
+## Members
+
+- [Mark Muldez](../../../../company/team/index.md#mark-muldez-he-him)
+- [Quin Keough](../../../../company/team/index.md#quin-keough)
+
+## Links
+
+- [SDR handoff guide](./#sdr-to-ae-handoff)
+
+## SDR to AE handoff
 
 Before the first call with the prospect:
 
