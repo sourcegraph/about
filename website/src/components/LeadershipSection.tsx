@@ -103,7 +103,7 @@ export const LeadershipSection: React.FunctionComponent<{ className?: string }> 
             {LEADERS.map((staff, i) => (
                 <div className="col-lg-4 mb-6">
                     <div key={i} className={`leadership-section__item ${staff.name.replace(' ', '-').toLowerCase()}`}>
-                        <img className="leadership-section__item-image" src={staff.image} alt={`Sourcegraph team: ${staff.name} - ${staff.title}`} />
+                        <a href={staff.bio}><img className="leadership-section__item-image" src={staff.image} alt={`Sourcegraph team: ${staff.name} - ${staff.title}`} /></a>
                         <h5><a href={staff.bio}>{staff.name}</a></h5>
                         <p className="leadership-section__item-title">{staff.title}</p>
                         <ul className="nav leadership-section__item-social mt-1">
