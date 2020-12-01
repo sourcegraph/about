@@ -39,6 +39,16 @@ This document contains the goals and work log for the search team's [2-week iter
     - Make structural search work better for monorepos. Currently monorepos can time out for structural search purely because it takes too long to copy the data to search. The outcome focuses on architectural changes to avoid unnecessary data zipping and copying to our searcher worker. 
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
+
+### Streaming search
+
+- **Owner(s):** Keegan, Juliana, Rob
+- **Outcomes:**
+    - Fully functioning progress API from the backend. This will allow us to have the "full" streaming experience with diff/commit search.
+    - The streaming search UI is closer to feature parity with the GraphQL search UI. Loading, error, and alert states are present.
+    - Streaming search feature flag is enabled in cloud for Sourcegraph org members.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
     
 ## 2020-11-16 to 2020-11-27
 
