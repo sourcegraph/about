@@ -4,20 +4,16 @@ We are looking for an engineering manager to join the team that is building the 
 
 The [Cloud team](https://about.sourcegraph.com/handbook/engineering/cloud) team will become the Backend Platform team once we hire a Product Manager to drive the Cloud project forward.
 
-## About you
+## Responsibilities
 
-- You know how to authentically inspire, challenge, and grow individuals and teams.
-- You are motivated to work on ambitious long term goals to solve complex technical challenges.
-- You can effectively reason about and communicate the value of platform projects to stakeholders.
-- You thrive in making plans with your team, and communicate those appropriately.
-- You are [high agency](https://www.linkedin.com/pulse/high-agency-its-importance-how-cultivate-shreyas-doshi/).
+You will:
 
-## Your responsibilities
-
-- You will facilitate a cohesive team environment where everyone is happy, motivated, and productive.
-- You will ensure that the team has [well defined goals that are aligned with the business](https://about.sourcegraph.com/handbook/engineering/cloud#goals) that are effectively communicated to all levels of the company, and that the team is making continuous iterative progress towards those goals every week.
-- You will help engineers grow in their careers.
-- You will hire exceptional engineers to grow the team in a sustainable way so that the team can accomplish more over time.
+- Facilitate a inclusive and cohesive team environment where everyone is happy, motivated, and productive.
+- Model, teach, and reinforce [our company values](../../company/values.md) and [our guiding engineering principles](index.md#guiding-principles) to the team.
+- Ensure the team has clear incremental goals that are documented and are always up-to-date.
+- Regularly communicate the team's progress toward their goals as well as changes in team goals to appropriate stakeholders.
+- Support and coach teammates to grow in their careers and fulfill their responsibilities.
+- Grow the team in a sustainable way so that the team can accomplish more over time.
 
 ## Qualifications
 
