@@ -488,7 +488,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Asheville, North Carolina, United States 🇺🇸
 - GitHub: spc74
 - [scott@sourcegraph.com](mailto:scott@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/scottpcampbell/)
-- Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
+- Name pronunciation:  	s k AH t   k ae m b u hl 
 - Scott lives in Asheville, NC with his wife and youngest daughter.  He has two other older children that are in college and graduated from college, respectively. He's had a long career in engineering and sales capacities with various software companies, large and small.  He possesses a natural curiousity to deeply understand his customer's challenges and help them apply technology to materially impact their business.  Outside of work, Scott enjoys nearly any activity involving water or mountains, including snowboarding, hiking, biking and wake surfing.  He also enjoys rooting for his alma mater Texas A&M Aggies football team, landscaping and traveling to explore new parts of the world.
 
 
