@@ -106,7 +106,7 @@ export const LeadershipSection: React.FunctionComponent<{ className?: string }> 
                         <img className="leadership-section__item-image" src={staff.image} alt={`Sourcegraph team: ${staff.name} - ${staff.title}`} />
                         <h5><a href={staff.bio}>{staff.name}</a></h5>
                         <p className="leadership-section__item-title">{staff.title}</p>
-                        <ul className="nav leadership__social mt-1">
+                        <ul className="nav leadership-section__item-social mt-1">
                             <li className="nav-item">
                                 <a
                                     href={staff.github}
