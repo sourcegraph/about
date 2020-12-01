@@ -51,6 +51,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
        - [Eric Broody-Moore](../../../company/team/index.md#eric-brody-moore)
        - [María Craig](../../../company/team/index.md#maría-craig-she-her)
        - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
+   - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
    - 30m [Quinn Slack](../../../company/team/index.md#quinn-slack) (CEO)
 
 If we want to move forward after these sets of interviews, we will setup 30-minute calls to meet any [members of the Cloud team](../cloud/index.md#members) that weren't already an interviewer. These calls are informal and don't have a script.
