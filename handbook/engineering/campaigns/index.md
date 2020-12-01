@@ -48,7 +48,7 @@ When I create a campaign to make large-scale code changes I want to _focus on th
 For each iteration (currently one month long), we follow this process:
 
 * Before the iteration begins, we do pre-planning to make the most of our the planning meeting:
-  * EM creates a [tracking issue](https://about.sourcegraph.com/handbook/engineering/tracking_issues) for the iteration which will hold our goals and plans, in addition to tracking the issues we intend to address.
+  * EM creates a [tracking issue](https://about.sourcegraph.com/handbook/engineering/tracking_issues) for the iteration which will hold our goals and plans, in addition to tracking the issues we intend to address. EM also creates the milestone for sprint N+1 and a `planned/CampaignsSprintN` label for things that didn't get finished in the previous sprint.
   * Everyone on the team looks through [our backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fcampaigns+milestone%3ABacklog) for any issues they think we should consider for the next sprint, and set the corresponding Campaigns Sprint milestone.
   * Everyone on the team looks through the current tracking issue for any issues they do not expect to finish by the end of the sprint (EOD Tuesday), and set the next sprint's milestone so they will show up on  the new tracking issue.
   * Engineers add estimates to issues in the new tracking issue if they are missing.
