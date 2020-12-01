@@ -41,8 +41,6 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Reduce lsif-clang memory usage
     - Auto-index 5 repositories on Sourcegraph Cloud that exceed 1mil SLOC
 
-1. _Placeholder_ (some other C++ property)
-
 1. Increase precise code intel operations by ([*N<sub>1</sub>*][N1]+[*N<sub>2</sub>*][N2]+[*N<sub>3</sub>*][N3]) per month.
     - Deliver to [*N<sub>1</sub>*][N1]
     - Deliver to [*N<sub>2</sub>*][N2]
