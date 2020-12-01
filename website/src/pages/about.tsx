@@ -36,7 +36,7 @@ export default class About extends React.Component<any, any> {
                         />
                     </Helmet>
                     <div>
-                        <div className="content-section container hero-section py-5">
+                        <div className="content-section hero-section py-5">
                             <div className="container py-5">
                                 <h1>About Sourcegraph</h1>
                                 <p className="h4 font-weight-normal">

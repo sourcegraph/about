@@ -7,6 +7,7 @@ const LEADERS: {
     name: string
     image: string
     title: string
+    bio: string
     github: string
     linkedin: string
     twitter: string
@@ -15,7 +16,8 @@ const LEADERS: {
         {
             name: 'Quinn Slack',
             image: '/staff/avatar-quinn.jpg',
-            title: 'CEO and Co-founder',
+            title: 'CEO and Cofounder',
+            bio: '/company/team#quinn-slack',
             github: 'https://github.com/sqs',
             linkedin: 'https://www.linkedin.com/in/quinnslack',
             twitter: 'https://twitter.com/sqs'
@@ -23,7 +25,8 @@ const LEADERS: {
         {
             name: 'Beyang Liu',
             image: '/staff/avatar-beyang.jpg',
-            title: 'CTO and Co-founder',
+            title: 'CTO and Cofounder',
+            bio: '/company/team#beyang-liu',
             github: 'https://github.com/beyang',
             linkedin: 'https://www.linkedin.com/in/beyang-liu',
             twitter: 'https://twitter.com/beyang'
@@ -32,6 +35,7 @@ const LEADERS: {
             name: 'Christina Forney',
             image: '/staff/avatar-christina.jpg',
             title: 'VP Product',
+            bio: '/company/team#christina-forney-she-her',
             github: 'https://github.com/christinaforney',
             linkedin: 'https://www.linkedin.com/in/christinaforney',
             twitter: 'https://twitter.com/christina4nee'
@@ -40,6 +44,7 @@ const LEADERS: {
             name: 'Dan Adler',
             image: '/staff/avatar-dan.jpg',
             title: 'VP Operations',
+            bio: '/company/team#dan-adler-he-him',
             github: 'https://github.com/dadlerj',
             linkedin: 'https://www.linkedin.com/in/danielnealadler',
             twitter: 'https://twitter.com/DanielNealAdler'
@@ -48,6 +53,7 @@ const LEADERS: {
             name: 'Gregg Stone',
             image: '/staff/avatar-gregg.jpg',
             title: 'VP Sales',
+            bio: '/company/team#gregg-stone',
             github: 'https://github.com/sourcegraph',
             linkedin: 'https://www.linkedin.com/in/stonegregg',
             twitter: 'https://twitter.com/srcgraph'
@@ -56,6 +62,7 @@ const LEADERS: {
             name: 'Julia Gilinets',
             image: '/staff/avatar-julia.jpg',
             title: 'VP Customer Engineering',
+            bio: '/company/team#julia-gilinets-she-her',
             github: 'https://twitter.com/JuliaSourceress',
             linkedin: 'https://www.linkedin.com/in/juliagilinets',
             twitter: 'https://github.com/juliasourceress'
@@ -64,6 +71,7 @@ const LEADERS: {
             name: 'Kacie Jenkins',
             image: '/staff/avatar-kacie.jpg',
             title: 'VP Marketing',
+            bio: '/company/team#kacie-jenkins-she-her',
             github: 'https://github.com/sourcegraph',
             linkedin: 'https://www.linkedin.com/in/kaciejenkins',
             twitter: 'https://twitter.com/mskaciej'
@@ -72,6 +80,7 @@ const LEADERS: {
             name: 'Nick Snyder',
             image: '/staff/avatar-nick.jpg',
             title: 'VP Engineering',
+            bio: '/company/team#nick-snyder-he-him',
             github: 'https://github.com/nicksnyder',
             linkedin: 'https://www.linkedin.com/in/nickdsnyder',
             twitter: 'https://twitter.com/nickdsnyder'
@@ -80,6 +89,7 @@ const LEADERS: {
             name: 'Noemi Mercado',
             image: '/staff/avatar-noemi.jpg',
             title: 'Head of People Ops',
+            bio: '/company/team#noemi-mercado-she-her',
             github: 'https://github.com/mercadon',
             linkedin: 'https://www.linkedin.com/in/noemí-mercado-3aa92798',
             twitter: 'https://twitter.com/srcgraph'
@@ -87,17 +97,15 @@ const LEADERS: {
     ]
 
 export const LeadershipSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <div id="leadership" className={`leadership-section container-fluid ${className}`}>
+    <div id="leadership" className={`leadership-section ${className}`}>
         <h2>Leadership</h2>
         <div className="row mt-5">
             {LEADERS.map((staff, i) => (
                 <div className="col-lg-4 mb-6">
                     <div key={i} className={`leadership-section__item ${staff.name.replace(' ', '-').toLowerCase()}`}>
                         <img className="leadership-section__item-image " src={staff.image} alt={`Sourcegraph team: ${staff.name} - ${staff.title}`} />
-                        <div>
-                            <h5>{staff.name}</h5>
-                            <p>{staff.title}</p>
-                        </div>
+                        <h5><a href={staff.bio}>{staff.name}</a></h5>
+                        <p>{staff.title}</p>
                         <ul className="nav footer__social mt-1">
                             <li className="nav-item">
                                 <a
