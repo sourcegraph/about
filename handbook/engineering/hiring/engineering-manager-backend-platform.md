@@ -33,9 +33,10 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 ## Interview process
 
 <!-- 1. You [apply here](#todo). --><!-- This is commented out because I will be sending some outbound messages before accepting applications. -->
+
 1. Intro calls
    - 45m [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) (VP Engineering)
-   - 30m [Beyang Liu](../../../company/team/index.md#beyang-liu) (CTO)
+   - 30m [Tomás Senart](../../../company/team/index.md#tomás-senart) (Engineering Manager, Cloud)
 1. Interviews.
    - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md). We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
      - The interviewers will be [Christina Forney](../../../company/team/index.md##christina-forney-she-her) (VP Product) and one of the following:
@@ -44,7 +45,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
        - [María Craig](../../../company/team/index.md#maría-craig-she-her)
        - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
    - 1h [Engineering leadership](engineering-leadership.md).
-     - The interviewers will be [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) and [Tomás Senart](../../../company/team/index.md#tomás-senart).
+     - The interviewers will be [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) and another Engineering Manager except Tomás.
    - 1h [Technical experience](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md) - We ask you about your past work and accomplishments.
      - The interviewers will be two of the following:
        - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
