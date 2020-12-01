@@ -1,0 +1,14 @@
+.leadership-section {
+    &__header {
+        font-size: $font-size-base;
+        padding: 0 15px;
+    }
+    &__item {
+        margin-bottom: 5px;
+        line-height: 1.15;
+        &-image {
+            max-width: 200px;
+            margin-bottom: 1.2rem;
+        }
+    }
+}
