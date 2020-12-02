@@ -28,6 +28,7 @@ We're hiring! Check out our open positions:
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
 - [Training Engineer](../handbook/ce/roles/training_engineer.md)
+- [Head of Customer Success (Customer Engineering), East & West](https://jobs.lever.co/sourcegraph/82f595d8-9a88-40f6-b84a-b243c58754f0)
 
 ### Marketing
 
