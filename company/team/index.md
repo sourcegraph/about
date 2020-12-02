@@ -476,7 +476,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Nick McMillen (he/him)
 
 - Customer Engineer
-- San Francisco, CA, US
+- San Francisco, CA, US 🇺🇸
 - GitHub: [mcmillennick](https://github.com/mcmillennick)
 - [nmcmillen@sourcegraph.com](mailto:nmcmillen@sourcegraph.com)
 - Nick was born and raised in the Bay Area but moved to San Francisco in 2011. Before Sourcegraph he worked at Sepialine as well as some early stage startups. In his free time he's an avid maker who loves working on props from movies and tv (ask him about 3d printing or laser cutting). He also obesses about all things space and has way too much NASA merch. 
