@@ -11,6 +11,34 @@ This document contains the goals and work log for the search team's [2-week iter
     - $DESIRED_OUTCOME
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
+
+## 2020-11-30 to 2020-12-10
+
+### Code monitoring
+
+- **Owner(s):** Stefan, Juliana, Farhan
+- **Outcomes:**
+    - Functioning code monitoring. Users can create and edit code monitors, see the status, and receive emails.
+    - Design QA feedback on the code monitoring creation and list pages is addressed.
+    - (Loïc) Starting points for code monitoring are documented
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Documentation clean up and content
+
+- **Owner(s):** Farhan
+- **Outcomes:**
+    - Add docs for users transitioning from OpenGrok: differences from OpenGrok, keywords and search formats available, typical searches in OG and Sourcegraph equivalents.
+    - Clean up all existing search docs so each doc has single responsibility and is in the correct Tutorial/Explanation/How-to/Reference category.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+    
+### Structural search for monorepos
+- **Owner(s):** Rijnard
+- **Outcomes:**
+    - Make structural search work better for monorepos. Currently monorepos can time out for structural search purely because it takes too long to copy the data to search. The outcome focuses on architectural changes to avoid unnecessary data zipping and copying to our searcher worker. 
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
     
 ## 2020-11-16 to 2020-11-27
 
@@ -24,6 +52,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - 2020-11-20: (juliana) Porting of the search UI to support streaming search is underway with good progress. Initial blank page ([#15993](https://github.com/sourcegraph/sourcegraph/pull/15993)), filters ([#15997](https://github.com/sourcegraph/sourcegraph/pull/15997)), tabs and infobar  ([#16038](https://github.com/sourcegraph/sourcegraph/pull/16038)), version context warning  ([#16039](https://github.com/sourcegraph/sourcegraph/pull/16039))
     - 2020-11-20: (keegan) Spent most of the week tracking down unexpected slowness/buffering in diff search. Once I fixed it locally I created a [demo video](https://www.loom.com/share/e4f9a8f85ba74321bbf3dd3f74aafe06) of streaming diff search. Rest of the week was spent on debugging diff search performance in prod.
     - 2020-11-24: (keegan) My plan for this week is to fully focus on progress API in the backend. However, I have worked on both a [customer P1](https://github.com/sourcegraph/sourcegraph/issues/15992) issue and some [long standing tech debt](https://github.com/sourcegraph/sourcegraph/pull/16121) with Tomas. I expect to still have a PR ready of a fully functioning progress backend, but its getting a little tight.
+    - 2020-11-25: (juliana) Streaming search now renders results ([#16097](https://github.com/sourcegraph/sourcegraph/pull/16097))
 
 ### Code monitoring
 
@@ -31,8 +60,18 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Outcomes:**
     - Code monitor CRUD: users are able to list and edit (non-functioning) monitors
 - **Work log:**
-    - 2020-11-20: (stefan): milestone reached for backend implementation of code monitors: minimum set of GraphQL queries and mutations to support the POC are in place. Next step: implement "query runner" and "email sender".
+    - 2020-11-20 (stefan): milestone reached for backend implementation of code monitors: minimum set of GraphQL queries and mutations to support the POC are in place. Next step: implement "query runner" and "email sender".
     - 2020-11-23 (farhan): code monitoring listing page completed. Edit functionality is deprioritized in favor of search context prototyping, so may not be completed this iteration.
+    - 2020-11-27 (stefan): finished new query runner, for now queries are queued for executing every 5 minutes. Next step: implement "email sender".
+    - 2020-11-30 (farhan): did not work on code monitoring this week to prioritize search contexts prototyping.
+
+### Scale indexed search to 500k repositories
+
+- **Owner(s):** Stefan, Keegan
+- **Outcomes:**
+    - Improved performance for simple regex queries such as "term1 term2 patternType:regexp"
+- **Work log:**
+    - 2020-11-27 (stefan): Our CR for upstream zoekt was accepted and we merged it into to our fork. I added related queries to search-blitz to measure improvements. Local tests just on zoekt and on medium sized repos showed that latencies reduce between 30% to 80% for relevant queries. I will look at search-blitz data next week.
 
 ### Documentation clean up and content
 
@@ -40,6 +79,8 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Outcomes:**
     - Clean up all existing search docs so each doc has single responsibility and is in the correct Tutorial/Explanation/How-to/Reference category.
     - Add docs for users transitioning from OpenGrok: differences from OpenGrok, keywords and search formats available, typical searches in OG and Sourcegraph equivalents.
+- **Work log:**: 
+    - 2020-11-30: Gathered requirements for OpenGrok transition docs. Did not make much progress on writing those docs yet.
 
 ### Ship Search Expressions and Query Highlighting, Hovers
 - **Owner(s):** Rijnard
@@ -47,6 +88,9 @@ This document contains the goals and work log for the search team's [2-week iter
     - The frontend work is in place to ship search expressions. I will be tying it together and adding docs. I will also activate query syntax highlighting and hovers for our next release, and will make progress on that this iteration.
 - **Work log:**
     - 2020-11-20: We have stable and feature-complete regexp highlighting for all patterns/fields and preliminary structural search and hover support. I also helped with release this week, unblocking various search regression testing, and backend code cleanup. My next week will focus on completing search expression work and feature-complete smart query hovers.
+    - 2020-11-27: I refactored frontend code to account for search expressions and handle query transformation for UI toggles correctly. Didn't get a chance to update search expression documentation, will catch up to that in a day or two's worth of work. I implemented and activated hovers for regular expressions 
+🎉.
+
 
 ### Search context prototyping
 - **Owner(s):** Farhan
@@ -54,6 +98,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Build a prototype for search contexts following Figma desigsn for @quinnkeast, and iterate as needed until Quinn is able to complete his testing.
 - **Work log:**
     - 2020-11-23: Newly added goal.
+    - 2020-11-30: Completed prototype for search contexts, and iterated on it together with Quinn several times. Quinn has conducted some hallway testing, and will continue to do so. We were able to identify limitations in the design, and came up with solutions for those. We also have a WIP gist outlining the process of functional prototyping and its benefits.
 
 ## 2020-11-02 to 2020-11-13
 

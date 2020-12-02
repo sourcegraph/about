@@ -15,17 +15,17 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Quinn Slack
 
-- [CEO](../../handbook/ceo/index.md), Co-founder, Board of Directors
+- [CEO](../../handbook/ceo/index.md), Cofounder, Board of Directors
 - San Francisco, CA, USA 🇺🇸
 - [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com), [slack.org](https://slack.org), [@sqs](https://twitter.com/sqs), [LinkedIn](https://www.linkedin.com/in/quinnslack), [he](http://pronoun.is/he)
-- Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn co-founded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
+- Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn cofounded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
 
 ## Beyang Liu
 
-- CTO, Co-founder, Board of Directors
+- CTO, Cofounder, Board of Directors
 - San Francisco, CA, USA 🇺🇸
-- [beyang@sourcegraph.com](mailto:beyang@sourcegraph.com), [@beyang](https://twitter.com/beyang), [LinkedIn](https://www.linkedin.com/in/beyang-liu-07651227)
-- Beyang Liu is CTO and co-founder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.
+- [beyang@sourcegraph.com](mailto:beyang@sourcegraph.com), [@beyang](https://twitter.com/beyang), [LinkedIn](https://www.linkedin.com/in/beyang-liu)
+- Beyang Liu is CTO and cofounder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.
 
 ## Christina Forney (she/her)
 
@@ -315,7 +315,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Product Designer
 - Berlin, Germany 🇩🇪
 - [qkeast@sourcegraph.com](mailto:qkeast@sourcegraph.com), [@quinnkeast](https://twitter.com/quinnkeast), [LinkedIn](https://www.linkedin.com/in/quinn-keast/), [quinnkeast](https://github.com/quinnkeast), [quinnkeast.com](https://quinnkeast.com)
-- Quinn is a Canadian product & UX designer living in Berlin. His background is in design, and prior to Sourcegraph, he has a broad range of experience including working with a branding and advertising agency, a major non-profit environmental conservancy, and a global meal kit company. He also co-founded a UX consultancy that worked with growing product teams and organizations across Canada. Outside of work, Quinn is passionate about Ultimate frisbee, writing, speaking, and tinkering around. Learn more about Quinn's guiding values and how he works as a human at his personal [Quinn.README](https://quinnkeast.com/readme)!
+- Quinn is a Canadian product & UX designer living in Berlin. His background is in design, and prior to Sourcegraph, he has a broad range of experience including working with a branding and advertising agency, a major non-profit environmental conservancy, and a global meal kit company. He also cofounded a UX consultancy that worked with growing product teams and organizations across Canada. Outside of work, Quinn is passionate about Ultimate frisbee, writing, speaking, and tinkering around. Learn more about Quinn's guiding values and how he works as a human at his personal [Quinn.README](https://quinnkeast.com/readme)!
 
 ## Juliana Peña (she/her)
 
@@ -381,7 +381,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Product Manager
 - Barcelona, Spain 🇪🇸 / Buenos Aires, Argentina 🇦🇷
 - [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [macraig](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
-- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
+- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she cofounded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
 
 ## Chris Surdi
 
@@ -480,6 +480,24 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [mcmillennick](https://github.com/mcmillennick)
 - [nmcmillen@sourcegraph.com](mailto:nmcmillen@sourcegraph.com)
 - Nick was born and raised in the Bay Area but moved to San Francisco in 2011. Before Sourcegraph he worked at Sepialine as well as some early stage startups. In his free time he's an avid maker who loves working on props from movies and tv (ask him about 3d printing or laser cutting). He also obesses about all things space and has way too much NASA merch. 
+
+## Virginia Ulrich (she/her)
+
+- Head of Customer Support
+- Portland, Oregon, United States 🇺🇸
+- GitHub: virginiaulrich
+- [virginia@sourcegraph.com](mailto:virginia@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/virginiaulrich/) 
+- Name pronunciation: vr ji nyuh  oo l ri ch
+- Virginia lives with her partner (Vinh) and two cats, Little Miss Gable (tuxedo) and Hercules Mulligan (orange tabby). She derives joy from the tiny beautiful moments of human connection, hikes across the city and out in nature, and cooking for others. She studied literature and discovered her love of computer science quite by accident. With many years in customer service in various forms, Virginia can geek out for hours about the philosophy of 👍 customer support, the importance of compassion > empathy, and all things involving people helping other people.
+
+## Scott Campbell (he/him)
+
+- Account Executive
+- Asheville, North Carolina, United States 🇺🇸
+- GitHub: spc74
+- [scott@sourcegraph.com](mailto:scott@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/scottpcampbell/)
+- Name pronunciation:  	s k AH t   k ae m b u hl 
+- Scott lives in Asheville, NC with his wife and youngest daughter.  He has two other older children that are in college and graduated from college, respectively. He's had a long career in engineering and sales capacities with various software companies, large and small.  He possesses a natural curiousity to deeply understand his customer's challenges and help them apply technology to materially impact their business.  Outside of work, Scott enjoys nearly any activity involving water or mountains, including snowboarding, hiking, biking and wake surfing.  He also enjoys rooting for his alma mater Texas A&M Aggies football team, landscaping and traveling to explore new parts of the world.
 
 <!-- Paste *your* section above this line by following our template below:
 
