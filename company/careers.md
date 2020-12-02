@@ -8,6 +8,7 @@ We're hiring! Check out our open positions:
 
 ### Engineering
 
+- [Engineering Manager - Backend Platform and Cloud](../handbook/engineering/hiring/engineering-manager-backend-platform.md)
 - [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
@@ -32,7 +33,6 @@ We're hiring! Check out our open positions:
 
 - [Director of Community](../handbook/marketing/roles/director_of_community.md)
 - [Director of Product Marketing](../handbook/marketing/roles/director_of_product_marketing.md)
-- [Director of Content Strategy](../handbook/marketing/roles/director_of_content_strategy.md)
 
 ### Operations, finance, and legal
 
