@@ -24,7 +24,7 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 **Milestones:**
 
 1. 🔄 Sourcegraph Cloud has up-to-date precise code intelligence for C++ repositories.
-    - 🔄 Increase observability in the code intel executor to aid in troubleshooting the auto-indexer
+    - 🔄 Increase observability in the code intel executor to make troubleshooting failed auto-index records possible
     - 🔄 Auto-index 5 repositories on Sourcegraph Cloud
 
 1. Sourcegraph Cloud has up-to-date precise code intelligence for C++ repositories that use cmake as a build system. 
