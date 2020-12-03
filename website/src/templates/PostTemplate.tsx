@@ -12,6 +12,7 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
     const image = 'https://about.sourcegraph.com/sourcegraph-mark.png'
+    const socialImage = post.frontmatter.socialImage
     const canonical = post.frontmatter.canonical
     const meta = {
         title,
@@ -26,6 +27,9 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
         <Layout location={location} meta={meta} className="bg-light navbar-light">
             <Helmet>
                 {canonical ? (<link rel="canonical" href={canonical} />) : ('')}
+                {socialImage ? (<meta name="twitter:card" content="summary_large_image" />) : ''}
+                {socialImage ? (<meta name="twitter:image" content={socialImage} />) : (<meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
+                {socialImage ? (<meta name="og:image" content={socialImage} />) : (<meta name="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
             </Helmet>
             <div className="">
                 <div className="container-lg">
@@ -58,6 +62,7 @@ export const pageQuery = graphql`
                 title
                 description
                 heroImage
+                socialImage
                 author
                 authorUrl
                 tags

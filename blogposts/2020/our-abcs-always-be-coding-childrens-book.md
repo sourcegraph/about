@@ -6,6 +6,7 @@ publishDate: 2020-04-23T10:00-07:00
 tags: [blog]
 slug: our-abcs-always-be-coding-childrens-book
 heroImage: https://about.sourcegraph.com/blog/our-abcs.png
+socialImage: https://about.sourcegraph.com/blog/our-abcs.png
 published: true
 ---
 
