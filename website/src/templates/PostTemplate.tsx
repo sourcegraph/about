@@ -27,8 +27,8 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
         <Layout location={location} meta={meta} className="bg-light navbar-light">
             <Helmet>
                 {canonical ? (<link rel="canonical" href={canonical} />) : ('')}
-                {image ? (<meta name="twitter:image" content={socialImage} />) : (<meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
-                {image ? (<meta name="og:image" content={socialImage} />) : (<meta name="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
+                {socialImage ? (<> <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content={socialImage} /> </>) : (<meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
+                {socialImage ? (<meta name="og:image" content={socialImage} />) : (<meta name="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
             </Helmet>
             <div className="">
                 <div className="container-lg">
