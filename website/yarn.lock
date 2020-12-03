@@ -1648,10 +1648,10 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@sourcegraph/eslint-config@^0.20.17":
-  version "0.20.17"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.20.17.tgz#5d9901930ed5a79e948d54cdd658395dd4d589cd"
-  integrity sha512-0407JzzGjHUk7cY7ctF0QVUDq7BHRW89Iatt80aubzMrNJWPovD7k7pXNz6WbP3xrrlcqjunWUwGHp/x5FQHjA==
+"@sourcegraph/eslint-config@^0.20.18":
+  version "0.20.18"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.20.18.tgz#78c397dcdf6a184bb0e193c75a302fc85ac2648b"
+  integrity sha512-4J5b9dAYHr8TDIdgxYOFqjoXnfgqW+tPmG+lR1/jEc9i+602J3d+/t/6c+OK/ydwFdRpgiSh0MP6Yv5Gt29rmA==
   dependencies:
     "@sourcegraph/prettierrc" "^3.0.3"
     "@typescript-eslint/eslint-plugin" "^4.9.0"
@@ -1663,7 +1663,7 @@
     eslint-plugin-jsdoc "^30.7.8"
     eslint-plugin-react "^7.21.4"
     eslint-plugin-react-hooks "^4.2.0"
-    eslint-plugin-rxjs "^2.0.0"
+    eslint-plugin-rxjs "^2.1.5"
     eslint-plugin-unicorn "^21.0.0"
 
 "@sourcegraph/prettierrc@^3.0.3":
@@ -5637,10 +5637,10 @@ eslint-plugin-react@^7.20.6, eslint-plugin-react@^7.21.4:
     resolve "^1.17.0"
     string.prototype.matchall "^4.0.2"
 
-eslint-plugin-rxjs@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-rxjs/-/eslint-plugin-rxjs-2.0.0.tgz#cdf624783bc2551c6b5a67114a7498c4394a9e1a"
-  integrity sha512-h4WhHktoYEieOhcxh8zmvWHf3RP5mOinUJYrpYWc4QrMX5Afkl9PO5yp7ArDx2HqgilZJ0Q46NuALmx+++7+cw==
+eslint-plugin-rxjs@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-rxjs/-/eslint-plugin-rxjs-2.1.5.tgz#67f864a4a42a301d5845d6b27444627677ca89cd"
+  integrity sha512-gQppucbXyYKCxgdBVud/mwVJ1+EIA7jr5WXvyGslWWEhA7JfQcVSKHpanywAT4QDvRreyq0sY3Kzm0hKgYJGBQ==
   dependencies:
     "@typescript-eslint/experimental-utils" "^4.0.0"
     common-tags "^1.8.0"
