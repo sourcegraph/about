@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
+import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 
 const ITEMS: {
     name: string
@@ -100,8 +101,12 @@ const ITEMS: {
             url: '/external-logos/outreach-logo.svg',
         },
         {
-            name: 'GetYourGuide',
-            url: '/external-logos/gyg.svg',
+            name: 'Cornerstone OnDemand',
+            url: '/external-logos/cornerstone-ondemand-logo.svg',
+        },
+        {
+            name: 'Skelter Labs',
+            url: '/external-logos/skelter-labs-logo.svg',
         },
         {
             name: 'Expanse',
@@ -114,6 +119,14 @@ const ITEMS: {
         {
             name: 'Button',
             url: '/external-logos/use-button-logo.svg',
+        },
+        {
+            name: 'Cambridge University Press',
+            url: '/external-logos/cambridge-university-press-logo.svg',
+        },
+        {
+            name: 'Workiva',
+            url: '/external-logos/workiva-vector-logo.svg',
         },
         {
             name: 'Apex Clearing',
@@ -145,6 +158,10 @@ const ITEMS: {
         {
             name: 'Handy',
             url: '/external-logos/handy-logo.svg',
+        },
+        {
+            name: 'GetYourGuide',
+            url: '/external-logos/gyg.svg',
         },
     ]
 
@@ -361,6 +378,13 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
             <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
                 Our customers use Sourcegraph every day to build software you rely on.
             </h3>
+            {!showButton &&
+                <div className="row justify-content-center">
+                    <div className="col-lg-6 text-center">
+                        <a href="/case-studies">Read case studies <ArrowRightBoxIcon className="icon-inline ml-1" /></a>
+                    </div>
+                </div>
+            }
             <div
                 className="customer-container-outer"
                 ref={innerContainerRef}
