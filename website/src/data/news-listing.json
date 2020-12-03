@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Sourcegraph",
+      "newsTitle": "Press Release: Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search",
+      "newsDate": "December 3, 2020",
+      "newsLink": "/press-release/sourcegraph-secures-series-c-sequoia",
+      "newsImage": "/sourcegraph-mark.png"
+    },
+    {
       "newsSource": "IT Business Edge",
       "newsTitle": "Big Code Equals Big Problems for Wannabe Software Companies",
       "newsDate": "November 13, 2020",
