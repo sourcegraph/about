@@ -14,7 +14,7 @@ Your day-to-day responsibilities will include:
 
 Your first project could be:
 * Leading a deep-dive into retention users on [Sourcegraph Cloud](https://sourcegraph.com/search). Why do users come back or churn? What changes in our product would you recommend to optimize for retention? 
-* Supporting the [search team](../../engineering/search/index.md) in evaluating our search performance, including finding baselines, peeling back layers to understand which dimensions of searches lead to poor performance.
+* Supporting the [search team](https://about.sourcegraph.com/handbook/engineering/search) in evaluating our search performance, including finding baselines, peeling back layers to understand which dimensions of searches lead to poor performance.
 * Developing dashboards to understand and track the adoption of [Sourcegraph extensions](https://sourcegraph.com/extensions), and working with the web and product teams on how to make extensions more discoverable. 
 
 ## Qualifications
