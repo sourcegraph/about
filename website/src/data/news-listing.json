@@ -1,6 +1,13 @@
 {
   "y2020": [
     {
+      "newsSource": "Silicon Valley Business Journal",
+      "newsTitle": "The Funded: This year's VC funding already tops all of last year's",
+      "newsDate": "December 4, 2020",
+      "newsLink": "https://www.bizjournals.com/sanjose/news/2020/12/04/this-years-vc-funding-already-tops-all-of-last-ye.html",
+      "newsImage": "/external-logos/svbj-logo.png"
+    },
+    {
       "newsSource": "Wall Street Journal",
       "newsTitle": "VC Daily: Question of the Week: What’s the Future of Clean-Tech Startups?",
       "newsDate": "December 4, 2020",
@@ -41,6 +48,13 @@
       "newsDate": "December 3, 2020",
       "newsLink": "https://siliconangle.com/2020/12/03/google-developers-startup-sourcegraph-lands-50m-sequoia-led-round/",
       "newsImage": "/external-logos/silicon-angle-logo.svg"
+    },
+    {
+      "newsSource": "Fortune",
+      "newsTitle": "Newsletter|Term Sheet Venture Deals",
+      "newsDate": "December 3, 2020",
+      "newsLink": "https://fortune.com/2020/12/03/the-problem-with-vc-backed-founders-who-say-they-dont-care-about-getting-rich/",
+      "newsImage": "/external-logos/fortune-logo.svg"
     },
     {
       "newsSource": "FinSMES",
