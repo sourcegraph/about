@@ -50,8 +50,8 @@ We cross-post our open positions to the following locations:
   1. [Director of Community](../../marketing/roles/director_of_community.md)
   1. [Director of Product Marketing](../../marketing/roles/director_of_product_marketing.md)
   1. [Account Executive](../../sales/roles/account_executive.md)
-  1. [Product Manager](../handbook/product/roles/product_manager.md)
-  1. [Product Designer](../handbook/product/roles/product_designer.md)
+  1. [Product Manager](../../product/roles/product_manager.md)
+  1. [Product Designer](../../product/roles/product_designer.md)
 
 We welcome suggestions for more places that we can post!
 
