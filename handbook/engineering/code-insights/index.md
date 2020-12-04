@@ -24,6 +24,7 @@ Code insights will combine Sourcegraph-created metrics with other third-party da
 1. Expose features that let users explore insights by team, repo(s), or other sub-metrics. 
 1. Connect code insights to other Sourcegraph features – make a campaign to impact a metric or set up code monitoring to notify you about changes to an insight. 
 1. Add plug-and-play integrations to Sourcegraph code insights that let users easily integrate third-party data into their insights. 
+1. Discover new, validated code metrics that engineering teams should track (and let teams track them).
 
 ## We're hiring for this team!
 
