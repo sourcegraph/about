@@ -33,10 +33,10 @@ export default class ContentTemplate extends React.Component<any, any> {
                 <div className="content-page bg-white text-dark">
                     <Helmet>
                         <title>{title}</title>
-                        <meta property="og:title" content={title} />
+                        <meta prefix="og: http://ogp.me/ns#" property="og:title" content={title} />
                         <meta name="twitter:title" content={title} />
                         <meta name="twitter:description" content={excerpt} />
-                        <meta property="og:description" content={excerpt} />
+                        <meta prefix="og: http://ogp.me/ns#" property="og:description" content={excerpt} />
                         <meta name="description" content={excerpt} />
                     </Helmet>
                     <section className="content-page__title">
