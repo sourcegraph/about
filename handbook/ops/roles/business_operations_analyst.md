@@ -8,9 +8,9 @@ Our team and our sales are growing fast—we’ve proven strong product-market f
 
 Your day-to-day responsibilities will include:
 * Partner with teams across the company to identify key metrics and growth drivers, build and maintain data pipelines and dashboards, and recommend actions to drive growth.
-* Perform analyses and research that contribute to important strategic and operational decisions
+* Perform analyses and research that contribute to important strategic and operational decisions.
 * Design and implement the business systems and processes that will scale with as the company does.
-* Pitch in however you can when needed to drive the company forward. We're still a lean team and are often asked to fill gaps in the growing organization
+* Pitch in however you can when needed to drive the company forward. We're still a lean team and are often asked to fill gaps in the growing organization.
 
 Your first project could be:
 * Leading a deep-dive into retention users on [Sourcegraph Cloud](https://sourcegraph.com/search). Why do users come back or churn? What changes in our product would you recommend to optimize for retention? 
@@ -19,9 +19,9 @@ Your first project could be:
 
 ## Qualifications
 
-* Demonstrated background in analytical roles (BizOps, Growth, Consulting, Finance, etc.)
-* Familiarity with SaaS business models, growth analytics and how software companies grow
-* Exhibited behavior as a self-starter with high agency
+* Demonstrated background in analytical roles (BizOps, Growth, Consulting, Finance, etc).
+* Familiarity with SaaS business models, growth analytics and how software companies grow.
+* Exhibited behavior as a self-starter with high agency.
 * Excitement for software development (no training as an Engineer required, but you should have an understanding of how software development happens and Sourcegraph's value proposition).
 
 ## Learn more about us
