@@ -1,6 +1,48 @@
 {
   "y2020": [
     {
+      "newsSource": "VentureBeat",
+      "newsTitle": "Sourcegraph raises $50 million to tackle ‘big code’ problems with universal search",
+      "newsDate": "December 3, 2020",
+      "newsLink": "https://venturebeat.com/2020/12/03/sourcegraph-raises-50-million-to-tackle-big-code-problems-with-universal-search/",
+      "newsImage": "/external-logos/venturebeat-logo.png"
+    },
+    {
+      "newsSource": "Crunchbase News",
+      "newsTitle": "Sourcegraph Lands $50M Series C",
+      "newsDate": "December 3, 2020",
+      "newsLink": "https://news.crunchbase.com/news/sourcegraph-lands-50m-series-c/",
+      "newsImage": "/external-logos/crunchbase-news-logo.png"
+    },
+    {
+      "newsSource": "Silicon Angle",
+      "newsTitle": "Google for developers’ startup Sourcegraph lands $50M Sequoia-led round",
+      "newsDate": "December 3, 2020",
+      "newsLink": "https://siliconangle.com/2020/12/03/google-developers-startup-sourcegraph-lands-50m-sequoia-led-round/",
+      "newsImage": "/external-logos/silicon-angle-logo.svg"
+    },
+    {
+      "newsSource": "FinSMES",
+      "newsTitle": "Sourcegraph Raises $50M in Series C Funding",
+      "newsDate": "December 3, 2020",
+      "newsLink": "https://www.finsmes.com/2020/12/sourcegraph-raises-50m-in-series-c-funding.html",
+      "newsImage": "/external-logos/finsmes-logo.svg"
+    },
+    {
+      "newsSource": "Devops.com",
+      "newsTitle": "Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search",
+      "newsDate": "December 3, 2020",
+      "newsLink": "https://devops.com/sourcegraph-secures-50-million-in-series-c-funding-for-universal-code-search/ ",
+      "newsImage": "/external-logos/devops-com-logo.png"
+    },
+    {
+      "newsSource": "AIthority",
+      "newsTitle": "Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search",
+      "newsDate": "December 3, 2020",
+      "newsLink": "https://aithority.com/it-and-devops/sourcegraph-secures-50-million-in-series-c-funding-for-universal-code-search/ ",
+      "newsImage": "/external-logos/aithority-logo.png"
+    },
+    {
       "newsSource": "Sourcegraph",
       "newsTitle": "Press Release: Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search",
       "newsDate": "December 3, 2020",
@@ -460,7 +502,7 @@
       "newsTitle": "Sourcegraph raises $23 million to bring universal code search to all developers",
       "newsDate": "March 3, 2020",
       "newsLink": "https://venturebeat.com/2020/03/03/sourcegraph-raises-23-million-to-bring-universal-code-search-to-all-developers/",
-      "newsImage": "/external-logos/venturebeat-logo.svg"
+      "newsImage": "/external-logos/venturebeat-logo.png"
     },
     {
       "newsSource": "InsideBIGData",
