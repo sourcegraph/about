@@ -29,7 +29,7 @@ TODO
   - [Jonah Dueck](../../company/team/index.md#jonah-dueck-he-him)
   - [Josh Saunders](../../company/team/index.md#josh-saunders)
 - Customer Support
-  - [Virginia Ulrich] (https://about.sourcegraph.com/company/team#virginia-ulrich-she-her) Head of Customer Support
+  - [Virginia Ulrich] (../../company/team/index.md#virginia-ulrich-she-her) Head of Customer Support
   - We will be hiring support engineers soon. Our Customer Engineers will continue in their support rotation for now.
 - Training
 
