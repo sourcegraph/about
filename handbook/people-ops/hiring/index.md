@@ -42,7 +42,7 @@ We cross-post our open positions to the following locations:
 - ["Ask HN: Who is Hiring" monthly thread](hacker-news-who-is-hiring.md)
 - [RemoteWoman](https://remotewoman.com/)
 - [Tech Ladies](https://www.hiretechladies.com/). With our current plan we can post up to 10 roles at a time (and can rotate out roles as they are filled). Here are the 10 roles that we post:
-  1. [Engineering Manager - Backend Platform and Cloud](../../engineering/hiring/engineering-manager-backend-platform)
+  1. [Engineering Manager - Backend Platform and Cloud](../../engineering/hiring/engineering-manager-backend-platform.md)
   1. [Software Engineer - Frontend](../../engineering/hiring/software-engineer-frontend.md)
   1. [Software Engineer - Backend](../../engineering/hiring/software-engineer-backend.md)
   1. [Software Engineer - Distribution](../../engineering/hiring/software-engineer-distribution.md)
