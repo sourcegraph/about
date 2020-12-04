@@ -14,12 +14,13 @@ Your day-to-day responsibilities will include:
 
 Your first project could be:
 * Leading a deep-dive into retention users on [Sourcegraph Cloud](https://sourcegraph.com/search). Why do users come back or churn? What changes in our product would you recommend to optimize for retention? 
-* Supporting the search team in evaluating our search performance, including finding baselines, peeling back layers to understand which dimensions of searches lead poor performance.
+* Supporting the [search team](../../engineering/search/index.md) in evaluating our search performance, including finding baselines, peeling back layers to understand which dimensions of searches lead to poor performance.
 * Developing dashboards to understand and track the adoption of [Sourcegraph extensions](https://sourcegraph.com/extensions), and working with the web and product teams on how to make extensions more discoverable. 
 
 ## Qualifications
 
-* Demonstrated background in analytical roles (BizOps, Growth, Consulting, Finance, etc).
+* Background in analytical roles (BizOps, Growth, Consulting, Finance, etc).
+* Demonstrated technical skillset in Excel, SQL, and data analysis/visualization tools (we use Looker). Experience with Python/R is a nice-to-have but not required. 
 * Familiarity with SaaS business models, growth analytics and how software companies grow.
 * Exhibited behavior as a self-starter with high agency.
 * Excitement for software development (no training as an Engineer required, but you should have an understanding of how software development happens and Sourcegraph's value proposition).
