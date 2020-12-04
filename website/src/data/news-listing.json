@@ -1,6 +1,27 @@
 {
   "y2020": [
     {
+      "newsSource": "Wall Street Journal",
+      "newsTitle": "VC Daily: Question of the Week: What’s the Future of Clean-Tech Startups?",
+      "newsDate": "December 4, 2020",
+      "newsLink": "https://www.wsj.com/articles/vc-daily-question-of-the-week-whats-the-future-of-clean-tech-startups-11607091952",
+      "newsImage": "/external-logos/wsj-logo.png"
+    },
+    {
+      "newsSource": "FinTech InShorts",
+      "newsTitle": "Sourcegraph: Raises $50M in Series C Funding",
+      "newsDate": "December 4, 2020",
+      "newsLink": "https://www.fintechinshorts.com/sourcegraph-raises-50m-in-series-c-funding/",
+      "newsImage": "/external-logos/fintech-inshorts-logo.png"
+    },
+    {
+      "newsSource": "VCBay",
+      "newsTitle": "Universal Code Search platform Sourcegraph secures US$ 50 million Series C funding",
+      "newsDate": "December 4, 2020",
+      "newsLink": "https://www.vcbay.news/2020/12/04/universal-code-search-platform-sourcegraph-secures-us-50-million-series-c-funding/",
+      "newsImage": "/external-logos/vcbay-logo.png"
+    },
+    {
       "newsSource": "VentureBeat",
       "newsTitle": "Sourcegraph raises $50 million to tackle ‘big code’ problems with universal search",
       "newsDate": "December 3, 2020",
