@@ -9,7 +9,7 @@ Our team and our sales are growing fast—we’ve proven strong product-market f
 Your day-to-day responsibilities will include:
 * Partner with teams across the company to identify key metrics and growth drivers, build and maintain data pipelines and dashboards, and recommend actions to drive growth.
 * Perform analyses and research that contribute to important strategic and operational decisions.
-* Design and implement the business systems and processes that will scale with as the company does.
+* Design and implement the business systems and processes that will scale with the company.
 * Pitch in however you can when needed to drive the company forward. We're still a lean team and are often asked to fill gaps in the growing organization.
 
 Your first project could be:
