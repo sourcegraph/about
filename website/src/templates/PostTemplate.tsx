@@ -1,11 +1,11 @@
 import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
-import Layout from '../components/Layout'
-import { POST_TYPE_TO_COMPONENT, postType, BLOG_TYPE_TO_INFO, urlToPost, Post } from '../components/blog/postTypes'
 import { BlogHeader } from '../components/blog/BlogHeader'
+import { BLOG_TYPE_TO_INFO, Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../components/blog/postTypes'
+import Layout from '../components/Layout'
 
-interface Props extends PageProps<{ markdownRemark: Post }> { }
+interface Props extends PageProps<{ markdownRemark: Post }> {}
 
 export const PostTemplate: React.FunctionComponent<Props> = ({ data, location }) => {
     const post = data.markdownRemark
@@ -26,10 +26,22 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
     return (
         <Layout location={location} meta={meta} className="bg-light navbar-light">
             <Helmet>
-                {canonical ? (<link rel="canonical" href={canonical} />) : ('')}
-                {socialImage ? (<meta name="twitter:card" content="summary_large_image" />) : ''}
-                {socialImage ? (<meta name="twitter:image" content={socialImage} />) : (<meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
-                {socialImage ? (<meta name="og:image" content={socialImage} />) : (<meta name="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />)}
+                {canonical ? <link rel="canonical" href={canonical} /> : ''}
+                {socialImage ? <meta name="twitter:card" content="summary_large_image" /> : ''}
+                {socialImage ? (
+                    <meta name="twitter:image" content={socialImage} />
+                ) : (
+                    <meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
+                )}
+                {socialImage ? (
+                    <meta prefix="og: http://ogp.me/ns#" name="og:image" content={socialImage} />
+                ) : (
+                    <meta
+                        prefix="og: http://ogp.me/ns#"
+                        name="og:image"
+                        content="https://about.sourcegraph.com/sourcegraph-mark.png"
+                    />
+                )}
             </Helmet>
             <div className="">
                 <div className="container-lg">
