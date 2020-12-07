@@ -1,6 +1,20 @@
 {
   "y2020": [
     {
+      "newsSource": "Techcrunch",
+      "newsTitle": "Podcast: Equity Monday (starts 3:18) ",
+      "newsDate": "December 7, 2020",
+      "newsLink": "https://techcrunch.com/2020/12/07/equity-monday-airbnb-pricing-sequoia-makes-money-and-early-stage-rounds/?tpcc=ECTW2020",
+      "newsImage": "/external-logos/techcrunch-logo.png"
+    },
+    {
+      "newsSource": "Xataka",
+      "newsTitle": "Qué es Sourcegraph, la herramienta que usan los desarrolladores de Google y Amazon y en la que Sequoia ha invertido 50 millones",
+      "newsDate": "December 7, 2020",
+      "newsLink": "https://www.xataka.com/pro/que-sourcegraph-herramienta-que-usan-desarrolladores-google-amazon-que-sequoia-ha-invertido-50-millones",
+      "newsImage": "/external-logos/xataka-logo.png"
+    },
+    {
       "newsSource": "Silicon Valley Business Journal",
       "newsTitle": "The Funded: This year's VC funding already tops all of last year's",
       "newsDate": "December 4, 2020",
@@ -83,6 +97,13 @@
       "newsDate": "December 3, 2020",
       "newsLink": "/press-release/sourcegraph-secures-series-c-sequoia",
       "newsImage": "/sourcegraph-mark.png"
+    },
+    {
+      "newsSource": "Devops.com",
+      "newsTitle": "MediaOps Announces the Finalists for the DevOps Dozen² 2020 Awards",
+      "newsDate": "December 2, 2020",
+      "newsLink": "https://www.einpresswire.com/article/531942242/mediaops-announces-the-finalists-for-the-devops-dozen-2020-awards",
+      "newsImage": "/external-logos/devops-com-logo.png"
     },
     {
       "newsSource": "IT Business Edge",
