@@ -10,9 +10,11 @@ In the short-term, the Product team is experimenting with having a values score 
 
 | Score | Description |
 | --- | --- |
-| 👎👎 | Exhibited behavior that is contrary to this value. |
-| 👎 | No evidence towards or against this value (neutral). |
+| 👎👎 | Abundant evidence that this person 's behavior isn't aligned with this value. |
+| 👎 | Evidence that this person 's behavior isn't aligned with this value.  |
 | 👍 | Demonstrated this value with evidence. |
 | 👍👍 | Exceptionally demonstrated this value, with abundant evidence. |
 
 There is a text box for filling in any notes about the above value ratings.
+
+If your interview did not get signal on a value (or if you got conflicting signals), then you can choose to not rate the value and instead share your thoughts in the open text box.
