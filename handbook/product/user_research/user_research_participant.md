@@ -5,7 +5,7 @@ Here’s everything you need to know ahead of time.
 
 ## Prerequisites
 
-- The tool we use, Lookback, works with Chrome. You’ll need to use Chrome to join the session.
+- The tool we use, [Lookback](https://lookback.io/), works with Chrome. You’ll need to use Chrome to join the session.
 - Please make sure you install the [Participate by Lookback](https://chrome.google.com/webstore/detail/participate-by-lookback/ppapgcbnefafdghpfglgilaghielefgn/related) extension for Chrome.
 - Before joining the session, please make sure to turn on “Do not disturb” and hide any windows you don’t want others to see.
 
@@ -16,3 +16,4 @@ Here’s everything you need to know ahead of time.
 3. You can leave at any time, ask questions at any time, and share as much or as little information as you’d like.
 4. While you can ask questions at any time, we might not be able to answer! Often, we’re interested in seeing how you answer that question for yourself.
 5. We’re testing our ideas, **not you**! You can’t do anything wrong.
+6. When the project is over, we’ll share the outcome so you can see where things ended up!
