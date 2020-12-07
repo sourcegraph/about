@@ -60,7 +60,7 @@ We provide [competitive compensation](https://about.sourcegraph.com/handbook/peo
 Learn more about what it is like to work at Sourcegraph by reading [our handbook](https://about.sourcegraph.com/handbook/).
 
 ## Interview process
-1. You apply [here TODO]().
+1. You apply [here](https://jobs.lever.co/sourcegraph/320d9b9a-65f0-4e96-a068-08a1515816b3).
 1. We set up a 30 minute call to chat with you about Sourcegraph to find out what you are looking for in your next role.
 1. We schedule a few more hours of interviews.
 1. We check your references.
