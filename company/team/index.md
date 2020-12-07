@@ -505,7 +505,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Tralee, County Kerry, Ireland 🇮🇪
 - GitHub: TommyODonnell
 - [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tommyodonnell87/)
-- Tommy hails from County Kerry on the South West Coast of Ireland. He graduated with a degree in Business studies from the University of Limerick before completing a Masters in Accounting at Dublin City University. Since completing his studies he has spent over 5 years working on a diverse range of clients at the EY Limerick and Boston offices, before spending the past 5 years in a financial reporting role at Pivotal Software. When he is not stuck in spreadsheets, you will probably find him having a quiet pint of Guinness, following the fortunes of the New England Patriots and the Kerry Gaelic Football team, or reading up on the latest rounds of funding’s in the startup world.
+- Tommy hails from County Kerry on the South West Coast of Ireland. He graduated with a degree in Business studies from the University of Limerick before completing a Masters in Accounting at Dublin City University. Prior to Sourcegraph Tommy spent over 5 years working on a diverse range of clients at the EY Limerick and Boston offices, before spending a further 5 years in a financial reporting role at Pivotal Software. When he is not stuck in spreadsheets, you will probably find him having a quiet pint of Guinness, following the fortunes of the New England Patriots and the Kerry Gaelic Football team, or reading up on the latest rounds of funding’s in the startup world.
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
