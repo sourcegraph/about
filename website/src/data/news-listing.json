@@ -1,6 +1,7 @@
 {
   "y2020": [
     {
+<<<<<<< HEAD
       "newsSource": "Techcrunch",
       "newsTitle": "Podcast: Equity Monday (starts 3:18) ",
       "newsDate": "December 7, 2020",
@@ -15,6 +16,8 @@
       "newsImage": "/external-logos/xataka-logo.png"
     },
     {
+=======
+>>>>>>> main
       "newsSource": "Silicon Valley Business Journal",
       "newsTitle": "The Funded: This year's VC funding already tops all of last year's",
       "newsDate": "December 4, 2020",
