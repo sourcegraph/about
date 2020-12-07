@@ -84,8 +84,8 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   `main` is accurate (no items should have been added since branch cut, but some items may need to
   be removed).
 - [ ] Tag the final release:
-  ```
-  yarn run release release-candidate:create final
+  ```sh
+  yarn run release release:create-candidate final
   ```
 - [ ] Wait for the release Docker images to be available in [Docker Hub](https://hub.docker.com/r/sourcegraph/server/tags).
 - [ ] Open PRs that publish the new release and address any action items required to finalize draft PRs (track PR status via the [generated release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns)):
