@@ -35,7 +35,6 @@ We're hiring! Check out our open positions:
 
 - [Creative Director](../handbook/marketing/roles/creative_director.md)
 - [Director of Community](../handbook/marketing/roles/director_of_community.md)
-- [Director of Product Marketing](../handbook/marketing/roles/director_of_product_marketing.md)
 
 ### Operations, finance, and legal
 
