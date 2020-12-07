@@ -499,6 +499,13 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Name pronunciation:  	s k AH t   k ae m b u hl 
 - Scott lives in Asheville, NC with his wife and youngest daughter.  He has two other older children that are in college and graduated from college, respectively. He's had a long career in engineering and sales capacities with various software companies, large and small.  He possesses a natural curiousity to deeply understand his customer's challenges and help them apply technology to materially impact their business.  Outside of work, Scott enjoys nearly any activity involving water or mountains, including snowboarding, hiking, biking and wake surfing.  He also enjoys rooting for his alma mater Texas A&M Aggies football team, landscaping and traveling to explore new parts of the world.
 
+## Tommy O Donnell (he/him)
+
+- Manager, Financial Planning & Analysis
+- Tralee, County Kerry, Ireland 🇮🇪
+- GitHub: TommyODonnell
+- [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tommyodonnell87/)
+- Tommy hails from County Kerry on the South West Coast of Ireland. He graduated with a degree in Business studies from the University of Limerick before completing a Masters in Accounting at Dublin City University. Since completing his studies he has spent over 5 years working on a diverse range of clients at the EY Limerick and Boston offices, before spending the past 5 years in a financial reporting role at Pivotal Software. When he is not stuck in spreadsheets, you will probably find him having a quiet pint of Guinness, following the fortunes of the New England Patriots and the Kerry Gaelic Football team, or reading up on the latest rounds of funding’s in the startup world.
 <!-- Paste *your* section above this line by following our template below:
 
 ## Full Name (optional pronouns)
