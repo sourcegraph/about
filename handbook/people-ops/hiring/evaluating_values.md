@@ -2,27 +2,17 @@
 
 We expect every teammate, team, and our company to live up to the [Sourcegraph values](../../../company/values.md). It is therefore important that we evaluate every candidate on the values to determine how successful they will be within Sourcegraph.
 
-It is the responsibility of every interviewer to think about these values when interviewing a candidate. When submitting feedback for a candidate, copy the list of values into your notes and score the candidate out of 5 based on the rubric.
+We are actively working on creating a formal process for values interviewing ([Ops RFC 7](https://docs.google.com/document/d/1d1a53dEP-k5Qsjv7BOAGq9lg4RL4Br7wg-weglJjHwY/edit)) to create a structured set of questions that are used consistently across the organization to evaluate value alignment.
 
 ## Rubric
 
+In the short-term, the Product team is experimenting with having a values score card inside of feedback forms that uses the following rubric:
+
 | Score | Description |
 | --- | --- |
-| -1 | Exhibited behavior that is contrary to this value. |
-| 0 | No evidence towards or against this value (neutral). |
-| 1 | Demonstrated this value with evidence. |
-| 2 | Exceptionally demonstrated this value, with abundant evidence. |
+| 👎👎 | Exhibited behavior that is contrary to this value. |
+| 👎 | No evidence towards or against this value (neutral). |
+| 👍 | Demonstrated this value with evidence. |
+| 👍👍 | Exceptionally demonstrated this value, with abundant evidence. |
 
-## Values to copy into feedback
-
-Use this plaintext format for easy addition to the Lever feedback area.
-
-```markdown
-- Be customer driven:
-- Work as a team:
-- High agency:
-- High quality:
-- Open and transparent:
-- Continuously grow:
-- Be a good human:
-```
+There is a text box for filling in any notes about the above value ratings.
