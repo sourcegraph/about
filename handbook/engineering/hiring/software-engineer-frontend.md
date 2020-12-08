@@ -66,7 +66,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - 30 minutes **CTO**
    - 30 minutes **CEO**
 1. We make you a job offer.
-1. We check your references.
+1. By default, [we check your references during your first week at Sourcegraph](https://about.sourcegraph.com/handbook/people-ops/hiring/reference_check_questions).
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
