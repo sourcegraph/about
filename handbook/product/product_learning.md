@@ -2,6 +2,30 @@
 
 The conclusion of every project should include analysis of performance. Below is the beginnings of us keeping track of what we've learned based on usage data.
 
+## 2020-12-06
+
+**Team**: Web
+
+**Author**: Joel Kwartler, with help from Eric Brody-Moore
+
+**Overview**: Data related to the value of browser extensions (+integrations) and recent improvements. Actions are simply to emphasize on the importance of our code host integrations. 
+
+### Integration User Value
+
+_Conclusion_: A [qualitative analysis](https://sourcegraph.looker.com/explore/sourcegraph_events/nps_submissions?qid=YDTCYMvtpsTde5VyPvwTni) of all NPS feedback reasons for the past 14 months (Nov 2019-Nov 2020) found 6% of them cite a feature the integrations provide as the only given reason for their score. 
+
+A [mapping of DAU/MAU vs Integration Usage Saturation](https://sourcegraph.looker.com/merge?mid=O70qAsSQSePBKsg8R78n31&toggle=vis) by customer displayed a positive correlation between integration use and high customer use. 
+
+An [analysis of retention](https://docs.google.com/presentation/d/1zH6kyUC2RT8Ss0b1Tv57fo3Tg5NflHZT44BE9nCYmLk/edit?ts=5fcb2950#slide=id.gaf6f52a0fb_0_1) found significantly higher retention on Sourcegraph.com for users with the extension. 
+
+-  Action: we will continue to prioritize adoption, growth, and maintenance of our integrations. 
+
+### Browser Extension Panel Redesign
+
+_Conclusion_: The browser extension [panel redesign](https://docs.google.com/presentation/d/1zH6kyUC2RT8Ss0b1Tv57fo3Tg5NflHZT44BE9nCYmLk/edit?ts=5fcb2950#slide=id.gaf6f52a0fb_0_7) was successful at reducing uninstall feedback around "usage confusion" or "security concerns" to 0 (from [*N<sub>0</sub>*][N0]). It also reduced our [uninstall/install rates by 5%](https://docs.google.com/spreadsheets/d/1nRmZTPbXNKfh2xc2bZPOySB7A2YSUOaDBfFLmdpHHgo/edit#gid=1640698666&range=V24) in month 1. 
+
+- Action: we will continue to make design/UI updates to features that need more design love in order to address user feedback.
+
 ## 2020-11-30
 
 **Team**: Search
@@ -36,3 +60,5 @@ _Conclusion_: Need to look at the data, but it’s a disjointed experience now. 
 _Conclusion_: P50/90/99 aren’t really helpful; we need to change how we approach this or how we use this data.
 
 - Going forward, we should setup a system that runs test queries multiple times per day on a large instance (e.g. Cloud when we hit more repositories), and these queries should be based on customer use cases.
+
+[N0]: https://docs.google.com/document/d/1iMlVh_Wm47v4YRpEvazrC5lmbJLkXwlGAEelTCqIx5Q/edit 
