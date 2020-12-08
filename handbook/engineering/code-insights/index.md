@@ -17,7 +17,7 @@ Code insights will also allow to combine these Sourcegraph-created metrics with 
 
 Code insights is the first feature primarily built for non-search-based user personas.
 
-## Goals
+## Vision
 
 1. Expose the value of Sourcegraph's knowledge of your codebase to users at all levels of an organization.
 1. Expose generalizable metrics that let our users measure and track their own goals, whether those are migrations, code smells, test coverage,  security needs, cross-collaboration, or other information about code.
