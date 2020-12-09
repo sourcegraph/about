@@ -12,7 +12,7 @@ Our accountants prepare unaudited financial statements every month based on the 
 
 Any expenses more than 90 days old require approval by People Ops.
 
-## Teammates based outside of the US
+## Contractors
 
 Contractors should also submit expense reports promptly at the end of each month, and include the expenses in their [monthly invoices](https://about.sourcegraph.com/handbook/people-ops/invoices). Once the expenses are approved, the full invoice can be paid.
 
