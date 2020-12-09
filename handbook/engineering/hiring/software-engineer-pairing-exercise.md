@@ -1,6 +1,6 @@
 # Pairing exercise
 
-We ask candidates to spend an hour pairing with an engineer on the team they are applying to. **The pairing exercise is not used for technical evaluation.** That's what the [async coding exercise](software-engineer-coding-challenge.md) is for.
+We ask candidates to spend an hour pairing with an engineer on the team they are applying to. **The pairing exercise is not used for technical evaluation.** That's what the [async coding exercise](software-engineer-coding-exercise.md) is for.
 
 ## What we're looking for
 
