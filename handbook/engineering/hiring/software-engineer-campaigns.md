@@ -12,7 +12,7 @@ We work together, laugh a lot, and are always learning.
 - We’re in the early stages of creating this product, and have a lot of [autonomy and agency](https://about.sourcegraph.com/company/values#high-agency). As a result, we all have significant impact on the shape and direction of Campaigns. We can see our own fingerprints all over, making it all the more delightful when customers love our work.
 - We have all sorts of interesting challenges and opportunities for growth. Frontend and backend coding, architecture and design, authoring RFCs, testing, demoing to customers, collecting and incorporating feedback, supporting our customers… we do it all.
 - Our technical challenges are varied and fun: from git diff parsing to TypeScript, to efficiently querying REST/GraphQL APIs without overloading a code host, to building a “declarative distributed system” that reconciles state across code hosts, to designing the DSL that is our campaign spec, to building terminal emulation into our tests, it does not get dull around here.
-- We have so many exciting ideas on our roadmap! Better changeset sorting/filtering/management, automated labels/reviewers/merging, bringing the power of campaigns to monorepos, server-side execution, and more. We are still at the beginning of this journey, with so much cool work in front of us.
+- We have so many exciting ideas on our [roadmap](https://about.sourcegraph.com/handbook/engineering/campaigns/goals#roadmap)! Better changeset sorting/filtering/management, automated labels/reviewers/merging, bringing the power of campaigns to monorepos, server-side execution, and more. We are still at the beginning of this journey, with so much cool work in front of us.
 - We’re a team full of funny, highly-skilled, empathetic developers who are all great communicators. Especially the manager, who is just all-around wonderful (and, it should be noted, is the one writing this).
 
 ## What we need from you
@@ -25,12 +25,12 @@ Beyond that, we’re looking for the following:
 
 - Experience creating single page applications using React or similar component-based frontend frameworks.
 - Skilled at writing clean, reusable CSS and semantic HTML to implement visual designs.
-- Familiarity with TypeScript or a different typed programming language.
-- Experience in at least one server side language, such as Go, Java, Python, PHP, or Ruby.
+- Familiarity with TypeScript or another typed programming language.
+- Experience (professional or otherwise) in at least one server side language, such as Go, Java, Python, PHP, or Ruby.
+- Familiarity with HTTP and web technologies/concepts such as REST and GraphQL.
 - Experience building and testing end-to-end applications (e.g. unit, integration, and e2e testing).
 - Good knowledge of Git in particular and other version control systems in general.
 - Experience in SQL, Postgres or other transactional, relational databases. Able to model and design schemas.
-- Have worked with containers in production environments.
 
 ## Not sure if this is you?
 
@@ -68,8 +68,3 @@ We want to ensure Sourcegraph is an environment that suits your working style an
 <!-- **[Click here to apply](#todo)** --><!-- This is commented out because I will be sending some outbound messages before accepting applications. -->
 
 Go back to the [careers page](https://about.sourcegraph.com/company/careers) for all open positions.
-
-
-
-
-
