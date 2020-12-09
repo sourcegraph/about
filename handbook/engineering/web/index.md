@@ -128,7 +128,7 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
   - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
   
-_* Joel is the acting PM for this team until we are able to hire a dedicated PM for it._  
+_* Joel is the acting PM for this team until we are able to hire a dedicated PM for it. Once that happens, he will focus entirely on code insights._  
 
 ## Growth plan
 
