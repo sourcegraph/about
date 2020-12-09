@@ -29,7 +29,7 @@ Beyond that, we’re looking for the following:
 - Experience in at least one server side language, such as Go, Java, Python, PHP, or Ruby.
 - Experience building and testing end-to-end applications (e.g. unit, integration, and e2e testing).
 - Good knowledge of Git in particular and other version control systems in general.
-- Experience in SQL, Postgres or other transactional, relational databases. Able to model and design schemas.
+- Able to write queries and design schemas in SQL, Postgres or other transactional, relational databases.
 - Have worked with containers in production environments.
 
 ## Not sure if this is you?
@@ -68,7 +68,6 @@ We want to ensure Sourcegraph is an environment that suits your working style an
 <!-- **[Click here to apply](#todo)** --><!-- This is commented out because I will be sending some outbound messages before accepting applications. -->
 
 Go back to the [careers page](https://about.sourcegraph.com/company/careers) for all open positions.
-
 
 
 
