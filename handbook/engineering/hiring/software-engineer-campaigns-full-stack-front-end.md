@@ -56,7 +56,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. An **Engineer** and a **Designer** will review and grade your submission. We will send you our review along with some follow-up questions.
 1. We schedule the following additional interviews, in no particular order, across multiple days:
    - 1 hour **Team collaboration:** We ask you about how you work and communicate in a team setting, how you handle tricky situations, decisions you made, and what you'd do differently today.
-   - 1 hour **Code collaboration:** You pair with an engineer on a small task to ensure you would be a good fit for this particular team. Another engineer will observe, to reduce bias.
+   - 1 hour **Code collaboration:** You [pair with an engineer](software-engineer-pairing-exercise.md) on a small task to ensure you would be a good fit for this particular team. Another engineer will observe, to reduce bias.
    - 30 minutes **VP Engineering**
    - 30 minutes **CTO**
    - 30 minutes **CEO**
