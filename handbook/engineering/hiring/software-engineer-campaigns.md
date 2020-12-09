@@ -30,7 +30,7 @@ Beyond that, we’re looking for the following:
 - Familiarity with HTTP and web technologies/concepts such as REST and GraphQL.
 - Experience building and testing end-to-end applications (e.g. unit, integration, and e2e testing).
 - Good knowledge of Git in particular and other version control systems in general.
-- Experience in SQL, Postgres or other transactional, relational databases. Able to model and design schemas.
+- Able to write queries and design schemas in SQL, Postgres or other transactional, relational databases.
 
 ## Not sure if this is you?
 
