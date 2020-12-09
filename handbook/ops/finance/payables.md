@@ -21,7 +21,7 @@ Just [contact the finance team](index.md#contact) if you believe you are eligibl
 |Role|Default monthly credit limit|
 |---|---|
 |Department leads (VP-level or above)|$10,000|
-|Managers|$1,000|
+|Managers|$2,000|
 
 ## Getting invoices paid
 
