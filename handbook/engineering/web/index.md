@@ -122,7 +122,7 @@ Before web team syncs, teammates and stakeholders should write down under "Discu
 
 ## Members
 
-- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager *](../../product/roles/product_manager.md))
+- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/product_manager.md)*)
 - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](../roles.md#engineering-manager))
   - [Felix Becker](../../../company/team/index.md#felix-becker)
   - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
