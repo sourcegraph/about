@@ -12,7 +12,7 @@ We work together, laugh a lot, and are always learning.
 - We’re in the early stages of creating this product, and have a lot of [autonomy and agency](https://about.sourcegraph.com/company/values#high-agency). As a result, we all have significant impact on the shape and direction of Campaigns. We can see our own fingerprints all over, making it all the more delightful when customers love our work.
 - We have all sorts of interesting challenges and opportunities for growth. Frontend and backend coding, architecture and design, authoring RFCs, testing, demoing to customers, collecting and incorporating feedback, supporting our customers… we do it all.
 - Our technical challenges are varied and fun: from [git diff parsing](https://github.com/sourcegraph/go-diff) to [TypeScript](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/client/web/src/enterprise/campaigns), to [efficiently querying REST/GraphQL APIs](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/enterprise/internal/campaigns/syncer.go) without overloading a code host, to building a “declarative distributed system” that [reconciles state across code hosts](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@963d99f52a0c366e6481336f1b0314ed80e0663d/-/blob/enterprise/internal/campaigns/reconciler.go#L133-20)3, to designing [the DSL that is our campaign spec](https://docs.sourcegraph.com/campaigns/references/campaign_spec_yaml_reference), to [building terminal emulation into our tests](https://sourcegraph.com/github.com/sourcegraph/src-cli@a1721db3a205dad52b1bde7b9a2d21479c9ccba8/-/blob/cmd/src/campaign_progress_printer_test.go#L119-187), it does not get dull around here.
-- We have so many exciting ideas on our roadmap! Better changeset sorting/filtering/management, automated labels/reviewers/merging, bringing the power of campaigns to monorepos, server-side execution, and more. We are still at the beginning of this journey, with so much cool work in front of us.
+- We are still at the beginning of this journey, with so much cool work in front of us: better changeset sorting/filtering/management, automated labels/reviewers/merging, bringing the power of campaigns to monorepos, server-side execution, and more. And there are many more exciting ideas on our roadmap!  
 - We’re a team full of funny, highly-skilled, empathetic developers who are all great communicators. Especially the manager, who is just all-around wonderful (and, it should be noted, is the one writing this).
 
 ## What we need from you
@@ -68,6 +68,5 @@ We want to ensure Sourcegraph is an environment that suits your working style an
 <!-- **[Click here to apply](#todo)** --><!-- This is commented out because I will be sending some outbound messages before accepting applications. -->
 
 Go back to the [careers page](https://about.sourcegraph.com/company/careers) for all open positions.
-
 
 
