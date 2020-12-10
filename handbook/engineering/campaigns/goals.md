@@ -43,7 +43,7 @@ How do we do this:
   * Integrate with issue tracking systems
 
 Our success metrics:
-  * Seconds from changeset create to changeset merged
+  * Seconds from changeset created to changeset merged
   * Percentage of customer changesets merged is greater than (TBD)
 
 ## Increase the scope of campaigns
