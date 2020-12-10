@@ -1,4 +1,4 @@
-# Code insights team (coming soon)
+# Code insights team
 
 The code insights team will be responsible for building and delivering [**code insights**](https://docs.google.com/document/d/1EHzor6I1GhVVIpl70mH-c10b1tNEl_p1xRMJ9qHQfoc/edit) to engineering leaders, empowering data-driven decisions in engineering organizations.
 
