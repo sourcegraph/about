@@ -53,9 +53,9 @@ git push origin release
 
 If all user sessions need to be invalidated, you can run this on the `frontend` database to force all users to log in again.
 
-  ```
+```
 UPDATE users SET invalidated_sessions_at=now(), updated_at=now();
-  ```
+```
 
 ### Accessing sourcegraph.com database
 
@@ -96,7 +96,6 @@ To learn more about this deployment, see [instances](./instances.md#k8s-sgdev-or
 To create an account on [k8s.sgdev.org](https://k8s.sgdev.org), log in with your Sourcegraph Google account via OpenID Connect.
 
 To promote a user to site admin (required to make configuration changes), use the admin user credentials available in 1password (titled `k8s.sgdev.org admin user`) to log in to [k8s.sgdev.org](https://k8s.sgdev.org), and go to the [users page](https://k8s.sgdev.org/site-admin/users) to promote the desired user.
-
 
 ## Cloudflare Configuration
 
