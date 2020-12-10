@@ -6,7 +6,7 @@ The team will own unlocking new use cases of Sourcegraph search and improving ad
 
 - Adding [code monitoring](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit) capabilities to Sourcegraph
 - Improving user onboarding to the Sourcegraph query language
-- Making Sourcegraph search aware of [contexs](https://docs.google.com/document/d/1mlxy7Fy19Q2yua7Fjg0xCda1c07f9RoR8rXxU22Ni60/edit) that help users search through the code they care about
+- Making Sourcegraph search aware of [contexts](https://docs.google.com/document/d/1mlxy7Fy19Q2yua7Fjg0xCda1c07f9RoR8rXxU22Ni60/edit) that help users search through the code they care about
 
 While some engineers will join the Search growth team immediately following the split, the team will likely need to grow to achieve its goals, and you own defining hiring needs and execuing on them.
 
