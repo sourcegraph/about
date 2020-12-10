@@ -2,7 +2,7 @@
 
 As our [search team plans to split](../search/index.md#growth-plan), we are looking for an engineering manager to build and lead our [Search growth](../search/index.md#search-growth) team.
 
-The team will own unlocking new use cases of Sourcegraph search and improving adoption and retention of Sourcegraph search features for Cloud and Enerprise users alike, through projecs such as:
+The team will own unlocking new use cases of Sourcegraph search and improving adoption and retention of Sourcegraph search features for Cloud and Enterprise users alike, through projecs such as:
 
 - Adding [code monitoring](https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit) capabilities to Sourcegraph
 - Improving user onboarding to the Sourcegraph query language
