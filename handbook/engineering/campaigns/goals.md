@@ -1,17 +1,36 @@
 # Campaigns goals
 
-## Design and build the best experience for creating changesets across many repositories
+The campaigns team is building the best solution available for creating and managing large scale changes. To do so we will focus on the following objectives:
 
-Campaigns need to be easy to explain, easy to understand, easy to get started, and easy to explore.
+## Grow adoption of campaigns 
+
+We need to grow usage of campaigns to understand our customer use cases and inform our roadmap.
+
+How do we do this:
+  * Proactive customer outreach
+  * Continual user validation
+  * Strive to create a frictionless initial experience
+  * Provide amazing support
+
+Our success metrics:
+  * Build a base of 10 customers who have created 80 campaigns and made 4000 changesets in Q4
+  * [Looker dashboard with usage metrics](https://sourcegraph.looker.com/dashboards/136) (internal only)
+
+
+## Design and build the most robust, yet easy to use solution for creating changesets across many repositories
+
+Campaigns need to be easy to explain, easy to understand, easy to start using, and easy to explore. At the same time, it should be the most powerful tool available for making programatic changes to multiple repositories. 
 
 How do we do this:
   * Clean conceptual model
-  * Excellent docs, tutorials, demos/training
   * Expressive syntax
+  * Understand our customers environments and requirements
+  * Strong alignment of features to developer objectives
+  * Excellent docs, tutorials, demos/training
   * Best debugging experience
 
 Our success metrics:
-  * TBD
+  * Reduction of feature requests over time
 
 ## Build the best solution for managing large numbers of changesets
 
@@ -25,6 +44,7 @@ How do we do this:
 
 Our success metrics:
   * Seconds from changeset create to changeset merged
+  * Percentage of customer changesets merged is greater than (TBD)
 
 ## Increase the scope of campaigns
 
@@ -32,8 +52,8 @@ Today, campaigns are intended for creating changesets in many owned repositories
 
 How do we do this:
   * Add support for monorepos
-  * Enable campaigns on open source projects
   * Add support for other code hosts
+  * Enable campaigns on open source projects
 
 Our success metrics:
   * TBD
@@ -47,19 +67,3 @@ How do we do this:
 
 Our success metrics:
   * TBD
-
-## Grow adoption of campaigns
-
-We need to make it as easy as possible for new customers to try out campaigns:
-
-How do we do this:
-  * Proactive customer outreach
-  * Frictionless initial experience
-  * Continual user validation to determine our roadmap
-  * Discoverability of campaigns through sourcegraph.com and OSS campaigns
-
-Our success metrics:
-  * [Looker dashboard with usage metrics](https://sourcegraph.looker.com/dashboards/136) (internal only)
-
-Milestones:
-  * Build a base of 10 customers who have created 80 campaigns and made 4000 changesets in Q4
