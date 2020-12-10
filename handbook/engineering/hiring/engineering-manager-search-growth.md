@@ -48,7 +48,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
      - The interviewers will be [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him) and another Engineering Manager except Loïc.
    - 1h [Technical experience](https://github.com/sourcegraph/interviews/blob/master/engineering/technical-experience.md) - We ask you about your past work and accomplishments.
      - The interviewers will be two of the following:
-       - [Juliana Peña](../../../company/team/index.md#keegan-pena-she-her)
+       - [Juliana Peña](../../../company/team/index.md##juliana-peña-she-her)
        - [Rijnard Van Tonder](../../../company/team/index.md#rijnard-van-tonder)
        - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
    - 1h [Team collaboration](https://github.com/sourcegraph/interviews/blob/master/engineering/team-collaboration.md). We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
