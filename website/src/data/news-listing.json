@@ -1,6 +1,27 @@
 {
   "y2020": [
     {
+      "newsSource": "Business Insider",
+      "newsTitle": "Code-collaboration startup Sourcegraph explains the key strategy that helped it nab big customers like Uber and Amazon early on",
+      "newsDate": "December 10, 2020",
+      "newsLink": "https://www.businessinsider.com/sourcegraph-self-hosted-customers-amazon-uber-cloud-2020-12",
+      "newsImage": "/external-logos/business-insider-logo.png"
+    },
+    {
+      "newsSource": "Pulse 2.0",
+      "newsTitle": "Universal Code Search Company Sourcegraph Raises $50 Million",
+      "newsDate": "December 8, 2020",
+      "newsLink": "https://pulse2.com/sourcegraph-raises-50-million-funding/",
+      "newsImage": "/external-logos/pulse2.0-logo.png"
+    },
+    {
+      "newsSource": "Market Currents WealthNet",
+      "newsTitle": "Weekly Investment Picks (November 30 to December 7)",
+      "newsDate": "December 8, 2020",
+      "newsLink": "https://www.marketcurrentswealthnet.com/news/weekly-investment-picks-november-30-to-december-7/",
+      "newsImage": "/external-logos/market-currents-wealthnet-logo.png"
+    },
+    {
       "newsSource": "Techcrunch",
       "newsTitle": "Podcast: Equity Monday (starts 3:18) ",
       "newsDate": "December 7, 2020",
