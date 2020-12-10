@@ -1,6 +1,7 @@
 /abc /resources/abcs-book
 /blog/discuss-code-and-docs-in-repositories https://docs.sourcegraph.com 301!
 /blog/hiring-cloud /blog/felicis-investment-fast-growth
+/blog/how-companies-buy-software-for-developers /pricing 301!
 /blog/making-code-nav-twice-as-fast /blog/optimizing-a-code-intel-backend 301!
 /blog/performance-improvements-in-precise-code-intel /blog/optimizing-a-code-intel-backend 301!
 /blog/gitlab-adds-code-navigation-and-code-intelligence-by-sourcegraph /blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence 301!
