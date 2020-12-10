@@ -54,7 +54,7 @@ git push origin release
 If all user sessions need to be invalidated, you can run this on the `frontend` database to force all users to log in again.
 
   ```
-    UPDATE users SET invalidated_sessions_at=now(), updated_at=now() ;
+UPDATE users SET invalidated_sessions_at=now(), updated_at=now();
   ```
 
 ### Accessing sourcegraph.com database
