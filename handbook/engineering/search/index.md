@@ -84,17 +84,22 @@ Loïc will be at management capacity when we reach 7-8 engineers on the team, bu
 
 The search core team will focus on the capabilities, scalability and polish of our core feature set: search language and supporting UI, search backends.
 
-Examples:
+[Loïc Guychard](../../../company/team/index.md#loïc-guychard) will be the engineering manager of the Search core team. We are looking to hire a [Product Manager](../../product/roles/product_manager.md) for this team.
+
+Example projects:
 
 - Scale indexed search to 1m repositories.
 - Reduce latency and timeouts of search.
-- Implement streaming search.
+- Streaming search.
 
 ### Search growth
 
 The Search growth team will focus on initiatives aiming at growing usage or adoption of our search features, such as onboarding efforts or features unlocking new use cases.
 
-Examples:
+We are looking to hire an [engineering manager](../hiring/engineering-manager-search-growth.md) and a [Product Manager](../../product/roles/product_manager.md) for this team.
 
-- Implement code monitoring.
+Example projects:
+
+- Version contexts
+- Code monitoring.
 - Increase search weekly active users.
