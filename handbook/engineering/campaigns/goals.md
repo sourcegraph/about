@@ -13,6 +13,32 @@ What will get us there?
 - **Better debugging experience:** It can be challenging to debug a more complex campaign. Figuring out what went wrong and how to fix it is a slow iterative loop.
 - **User validation:** The above issues were revealed by user testing. Once we believe we have fixed them, we need to validate this with further user testing.
 
+
+### Design and build the best solution for changing code across many repositories
+  * How do we do this:
+    * Expressive syntax
+    * Clean conceptual model
+    * Best debugging experience
+    * Excellent docstutorials, demos/training
+  * Our Success Metrics
+    * tbd
+
+### Build the best solution for managing changesets
+  * Much of the work in completing a large scale change is performed in the gap between changesets created and changesets merged
+  *	How do we do this:
+  * Helping users understand the overall status of their campaign
+  * Provide tools to find and resolve problematic changesets
+  * Providing flexible tools to help users, prompt reviewers and owners, to merge the created changesets
+  * Our Success Metrics
+    * Seconds to merge
+
+### Increase the scope of campaigns 
+  * Monorepo support
+  * Open source projects
+  
+### Improve quality and stability 
+
+
 ### Grow adoption of campaigns
 
 Once we’re out of beta, we want everyone to start using campaigns!
@@ -41,26 +67,3 @@ Another example: in some cases, it’s cumbersome to first search code in the br
 Our users use more than just their code host and Sourcegraph. They use ticket trackers, review systems, and time trackers.
 
 We want to discover what external systems our users want to use campaigns with, and ensure that we can integrate with them. For example, an organization that uses JIRA will likely want to be able to link tickets to campaigns and have the state updated as the campaign is executed.
-
-## Roadmap
-
-1. **Customer outreach to improve adoption of campaigns**
-1.  ~~User credentials ([RFC 242](https://docs.google.com/document/d/1SqoWWm1xs82QibrWwYsXmpmgweN6EpcKt1qXrRBjjlU/edit)), which will allow non-site-admins to create campaigns~~ (landed 3.22)
-1. Better burndown charts 
-1. Allow multiple changeset in a single repository
-1. Improve previews on updates to show the delta between existing changesets and the changesets after after the campaign spec changes are applied
-1. Allow campaign to specify target branch
-1. Create campaign spec even if subset of repos have failures
-1. Versioning/releasing of src-cli with respect to sg/sg
-1. Improved documentation of src-cli login process
-1. Add filtering/searching to campaign and changeset lists
-1. Ability to auto-merge changesets, depending on various conditions
-1. Ability to add default reviewers to changesets
-
-### Roadmap Process
-
-Our roadmapping process is a team effort. As we receive customer feedback, and as we come up with cool new features, we record these in one of three places. Customer feedback goes into our [team Productboard page](https://sourcegraph.productboard.com/feature-board/2104383-campaigns). Well-defined tasks live in our [team backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fcampaigns+milestone%3ABacklog). And larger, less defined ideas live in the bottom section of our [private roadmap doc](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaWgLk1dBvQVKDg-J7pwjGg8tpps/edit#), below the _fog of war_ line.
-
-It is the job of the EM and PM to pull/formulate/define tasks from the above sources and prioritize them. That prioritized list is under the [Future heading](https://docs.google.com/document/d/1zRTfK6mENKicfLwDaWgLk1dBvQVKDg-J7pwjGg8tpps/edit#heading=h.jk3gp8lyopke) of our roadmap doc.
-
-For our sprint planning, the team looks over the prioritized list, revises estimates on work needed, and agrees on these priorities. Once we are aligned, we pull as much as will comfortably fit into the next sprint, creating GitHub issues as needed, and track those in that sprint's tracking issue.
