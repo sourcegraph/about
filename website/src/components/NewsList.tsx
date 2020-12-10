@@ -16,11 +16,11 @@ class News extends React.Component {
                                     className="col-sm-4 col-lg-2 text-center d-flex align-items-center"
                                     style={{ minHeight: '120px' }}
                                 >
-                                    <img
+                                    <a href={newsDetail.newsLink} target="_blank" rel="nofollow noopener"><img
                                         className="news__image"
                                         src={newsDetail.newsImage}
                                         alt={newsDetail.newsTitle}
-                                    />
+                                    /></a>
                                 </div>
                                 <div className="col-sm-10 col-lg-10 align-self-center">
                                     <p>
