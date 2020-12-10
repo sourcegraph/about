@@ -21,3 +21,4 @@ People Ops will coordinate a calls with references and hiring managers. People O
 * If you were writing their annual review today, where would they have an opportunity to improve or build on their skills?
 * Do you have any advice for their future manager?
 * Was there ever a time where [candidate] was disrespectful in any way to other members of the team?
+* (HM then jumps in with any specific questions they have for the reference)
