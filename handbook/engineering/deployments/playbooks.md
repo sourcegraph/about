@@ -1,5 +1,17 @@
 # Playbooks for deployments
 
+- [Playbooks for deployments](#playbooks-for-deployments)
+  - [Sourcegraph.com](#sourcegraphcom)
+    - [Deploying to sourcegraph.com](#deploying-to-sourcegraphcom)
+    - [Rolling back sourcegraph.com](#rolling-back-sourcegraphcom)
+    - [Invalidating all user sessions](#invalidating-all-user-sessions)
+    - [Accessing sourcegraph.com database](#accessing-sourcegraphcom-database)
+      - [Via the CLI](#via-the-cli)
+      - [Via BigQuery (for read-only operations)](#via-bigquery-for-read-only-operations)
+  - [k8s.sgdev.org](#k8ssgdevorg)
+    - [Manage users in k8s.sgdev.org](#manage-users-in-k8ssgdevorg)
+  - [Cloudflare Configuration](#cloudflare-configuration)
+
 ## Sourcegraph.com
 
 To learn more about this deployment, see [instances](./instances.md#sourcegraph-com).
@@ -36,6 +48,14 @@ git push origin release
 
 1. Go to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) and remove the `"extends:["default:automergeDigest"]` entry for the "Sourcegraph Docker images" group ([example](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/commit/0eb16fd9e3ddfcf3a3c75ccdda0e7eddabf19c7a)).
 1. Once you have fixed the issue in the `main` branch of [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph), re-enable auto-deploys by reverting your change to [renovate.json](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/renovate.json) from step 1.
+
+### Invalidating all user sessions
+
+If all user sessions need to be invalidated, you can run this on the `frontend` database to force all users to log in again.
+
+  ```
+    UPDATE users SET invalidated_sessions_at=now(), updated_at=now() ;
+  ```
 
 ### Accessing sourcegraph.com database
 
@@ -76,6 +96,7 @@ To learn more about this deployment, see [instances](./instances.md#k8s-sgdev-or
 To create an account on [k8s.sgdev.org](https://k8s.sgdev.org), log in with your Sourcegraph Google account via OpenID Connect.
 
 To promote a user to site admin (required to make configuration changes), use the admin user credentials available in 1password (titled `k8s.sgdev.org admin user`) to log in to [k8s.sgdev.org](https://k8s.sgdev.org), and go to the [users page](https://k8s.sgdev.org/site-admin/users) to promote the desired user.
+
 
 ## Cloudflare Configuration
 
