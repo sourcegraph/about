@@ -12,7 +12,7 @@ Requested references will typically be a former manager(s) and/or colleague(s) a
 
 ## Reference call
 
-People Ops will coordinate a calls with references and hiring managers. People Ops will conduct the reference calls with the hiring manager present to address any potential concerns or follow-up questions.
+The recruiter will coordinate a calls with references and hiring managers. The recruiter will conduct the reference calls with the hiring manager present to address any potential concerns or follow-up questions.
 
 ## Reference call questions
 
