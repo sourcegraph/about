@@ -19,7 +19,7 @@ What will get us there?
     * Expressive syntax
     * Clean conceptual model
     * Best debugging experience
-    * Excellent docstutorials, demos/training
+    * Excellent docs/tutorials, demos/training
   * Our Success Metrics
     * tbd
 
