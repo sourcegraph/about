@@ -100,6 +100,6 @@ We are looking to hire an [engineering manager](../hiring/engineering-manager-se
 
 Example projects:
 
-- Version contexts
+- Version contexts.
 - Code monitoring.
 - Increase search weekly active users.
