@@ -1,6 +1,6 @@
 # Reference checks
 
-References will be requested by the hiring manager on a case by case basis and the hiring manager is responsible for deciding which specific references they would like to speak to based on the candidate's work experience.
+References will be requested by the hiring manager on a case by case basis and the hiring manager is responsible for deciding which specific references they would like to speak to based on the candidate's work experience and interview performance.
 
 Ultimately, the goal behind our reference checks is to ensure that we are setting up the new hire for success and know how to best work with them.
 
