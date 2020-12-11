@@ -7,6 +7,14 @@ The assumption is that any candidate who gets to this stage meets the technical 
 All pairing sessions should include a third engineer in the room as an observer. As such, they can stay muted for the bulk of the interview. Having another person
 in the room provides a more complete picture of the candidate and helps to reduce bias.
 
+## Details of the exercise
+
+- We will schedule a 60-minute timeframe to work with a Sourcegraph engineer.
+- In this exercise you write a command-line application that performs a simple task.
+- We will send you the specific details 10 minutes prior to the interview.
+- You may use the language of your choice.
+- You can use your own development environment, and look up documentation on the internet.
+
 ## What we're looking for
 
 At a high level, this is what we are evaluating our candidates for:
@@ -21,7 +29,7 @@ At a high level, this is what we are evaluating our candidates for:
 
 ## Before the interview
 
-The engineer leading the pairing exercise should choose a relatively easy task to work on. An ideal exercise should:
+The engineer leading the pairing exercise should choose a task to work on from [this list](https://docs.google.com/document/d/1CRrR9ujgTesi3ZDVNSRcUo3ZFAAaPBt5nY7enHGkwTg/edit). An ideal exercise should:
 
 - be easy to explain
 - be language agnostic, so the candidate can use whatever language/tools they are most comfortable with
