@@ -13,7 +13,7 @@ How do we do this:
   * Provide amazing support
 
 Our success metrics:
-  * Build a base of 10 customers who have created 80 campaigns and made 4000 changesets in Q4
+  * Build a base of 10 customers who have created 80 campaigns and made 4000 changesets in 2020 Q4
   * [Looker dashboard with usage metrics](https://sourcegraph.looker.com/dashboards/136) (internal only)
 
 
