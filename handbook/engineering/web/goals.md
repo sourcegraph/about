@@ -9,7 +9,8 @@
   1. **_Creating and maintaining a highly usable and intentionally designed webapp interface_**
   1. **_Delivering the full, unique value of Sourcegraph [extensions](https://docs.sourcegraph.com/extensions)_**
   1. **_Maintaining and expanding_ [_code host integrations_](https://docs.sourcegraph.com/dev/background-information/web/code_host_integrations)**
-  1. **_Developing code insights into an entirely new featureset_**
+
+ℹ️ _As of TODO, Code Insights moved out of the Web Team into it's own team._ You can find the team's [goals here](../../code-insights/goals/index.md).
 
 **Outcome**: 
 
@@ -17,16 +18,10 @@
 * The webapp helps users discover and employ the full power of Sourcegraph effectively, with a high quality and highly usable interface. 
 * Soucegraph extensions and the extensions API provide powerful capabilities to users and a great experience for extension developers. 
 * Sourcegraph code host native integrations and browser extensions support the most common code hosts and browsers. 
-* Code insights expose the value of Sourcegraph's knowledge of your codebase to users at all levels of an organization. 
 
 ### Medium term
 
 _These medium-term goals are listed in order of rough priority. This means we preference a sooner-listed goal when making progress on one would conflict with another goal, but it doesn't mean we only work on the first goal until it's done – we balance our iterations in sum so we can make some progress on all of these goals over a quarter. Within each goal, the sub-goals are also listed in (stricter) priority order._ 
-
-1. **Make code insights an entirely new reason to use Sourcegraph.**
-   1. Focus on building prototypes to solve the most pressing needs of our customers, to clearly demonstrate the value of code insights. 
-   1. Expose more generalizable metrics that let our users measure and track their own goals, whether those are migrations, code smells, security needs, cross-collaboration, or other information about code. 
-   1. Expose features that let our users build their own insights. 
 
 1. **Make Sourcegraph extensions a core part of Sourcegraph users' experiences.**
    1. Track anonymized, general usage of extensions to determine which extensions are most successful at adding value for our users to inform our future work.
@@ -55,7 +50,7 @@ The individual tasks and progress of the current iteration can be found as GitHu
 1. ✅ The Sourcegraph browser extension is more discoverable and easy to congifure ([RFC 221](https://docs.google.com/document/d/19f4xleYBU1zZZdqMmXlLmFxeR-fwEpOwTOgViOFOnyo/edit))
 1. ✅ Build new and improved Sourcegraph extensions to showcase the value and opportunity of extensions ([RFC 246](https://docs.google.com/document/d/1HngEeLNAe7_QzVJr6UPi0Si4ZALqTzb7uonOxUiJP6g/edit))
 1. ✅ Improve the Sourcegraph extensions (internal) development experience ([RFC 155](https://docs.google.com/document/d/1ikrUNVe3YVbR-JpegxhjrFdmRkTGzTLcOMkKHnOyjuE/edit)) and (external) documentation
-1. 🔄 Code insights migration prototype and directory decoration
+1. ✅ Code insights migration prototype and directory decoration
 1. 🔄 Safari browser extension
 1. Sourcegraph web app navigation is clearer and intentionally designed ([RFC 248](https://docs.google.com/document/d/1AEeCuXuYGlu2kU9HfTuh5rMuoL2ASxy-G4LFje_ySFE/edit?usp=drive_web&ouid=110069214620879702746))
 1. Page title breadcrumbs are unified and useful 

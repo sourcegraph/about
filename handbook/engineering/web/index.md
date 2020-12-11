@@ -1,21 +1,82 @@
-<img src="./logo.svg" alt="Sourcegraph Web Team Logo" style="width: 35%; float: right; margin-left: 1rem">
+
 
 # Web team
 
-The web team owns the maintenance and expansion of our web application and code host integrations as vehicles to deliver the value of [extensions](https://docs.sourcegraph.com/extensions) to our users.
+<img src="./logo.svg" alt="Sourcegraph Web Team Logo" style="width: 120px; float: right; padding: 0 1rem">
 
-This is a large ownership area, so the team creates a focused plan each iteration, by agreeing on an appropriately small set of [iteration goals](../../../company/goals/index.md). Each goal should have more than one teammate working on it.
+The Web team owns the maintenance and expansion of our web application and code host integrations as vehicles to deliver the value of [extensions](https://docs.sourcegraph.com/extensions) to our users.
+We also define and maintain the standards and tooling for how we do web development at Sourcegraph.
+<div style="clear: both"></div>
 
-<div style="clear: both"/>
+## Members
+
+- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/product_manager.md))
+- [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](../roles.md#engineering-manager))
+  - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
+  - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
+  - [T.R.](../../../company/team/index.md##full-name-optional-pronouns) _(Starts 2021-01-11)_
+  
+ℹ️ _Joel is the acting PM for this team until we are able to hire a dedicated PM for it. Once that happens, he will focus entirely on [Code Insights](../code-insights/index.md)._  
 
 ## Contact
 
-- #web channel or @web-team in Slack.
+- [#web](https://sourcegraph.slack.com/archives/CMT39K56Z) channel or @web-team in Slack.
 - [team/web](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/web) label and [@sourcegraph/web](https://github.com/orgs/sourcegraph/teams/web) team on GitHub.
 
 ## [Goals](goals.md)
 
 See [goals](goals.md)
+
+## Growth plan
+
+ℹ️ _Updated TODO_
+
+We are actively hiring [frontend engineers](../hiring/software-engineer-frontend.md) to grow the Web team. 
+When this team team gets big enough, we expect to split into two teams **Frontend platform and code browsing** and **Extensions and Integrations**
+
+ℹ️ _As of TODO, [Code Insights](../code-insights/index.md) moved out of the Web Team into it's own team, lead by Felix Becker (Interim EM) and Joel Kwartler (PM)._
+
+### Frontend platform and code browsing
+
+This team is responsible for:
+
+1. Defining how we do web development at Sourcegraph and ensuring that our product engineering teams have the tools and components they need to quickly build high quality user experiences everywhere we use web technologies (for example: web application, browser extensions).
+1. The core user experience of the Sourcegraph product
+
+The team's areas of responsibility include:
+
+- Frontend platform
+   - Creating and maintaining a standard Sourcegraph UI component library.
+   - Sourcegraph web tech stack, tools, patterns, documentation, education (e.g. webpack, TypeScript, React, RxJS).
+   - Documentation and training material to enable product teams and new hires to quickly learn how we do web development at Sourcegraph.
+   - Define and maintain how we test frontend code.
+   - Ensuring an efficiency and reliabile frontend CI pipeline.
+- Code browsing
+   - Application navigation and information hierarchy
+   - Syntax highlighting and file viewing
+   - Repository landing pages and file directory pages
+   - Basic code host-like features (e.g. viewing diffs, commits, history)
+   - Sourcegraph application homepage
+   - Accessibility support
+
+### Extensions and integrations
+
+This team is responsible for: 
+
+1. Bringing the value of Sourcegraph to other developer tools
+1. Bringing the value of other developer tools into Sourcegraph
+
+The team's areas of responsibility include:
+
+- Sourcegraph extensions
+   - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
+   - Building useful Sourcegraph extensions on top of the Sourcegraph extension API (for example: Codecov, Datadog, Sentry, Lightstep)
+   - Documentation and tutorials that enable third party developers to create extensions that are actively used.
+- Integrations   
+   - Surface code intelligence (and other Sourcegraph data) in code hosts through user installed browser extensions.
+   - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developer look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extensions to get code intelligence.
+
+ℹ️ _This team will only split out into it's own team once we have identified a dedicated engineering manager and a dedicated product manager._
 
 ## Tech stack
 
@@ -42,8 +103,9 @@ To add an issue, tag it `team/web` to notify the web team PM and put it in the "
 
 ### Iterations
 
+The web team has a large ownership area, so the team creates a focused plan each iteration, by agreeing on an appropriately small set of [iteration goals](../../../company/goals/index.md).
+
 We plan our work in **2-week iterations**.
-We work on a single project in those 2 weeks as a team.
 
 Our goals for the current and past iterations can be found in our [iteration goals living Google Doc](https://docs.google.com/document/d/1n9WKjieKmd2YYkNrEsOfdmxRYUrbowLWjq05phLoQ6s/edit).
 
@@ -120,48 +182,3 @@ The meeting notes of web team syncs can be found [in this doc](https://docs.goog
 
 Before web team syncs, teammates and stakeholders should write down under "Discussion items" in the meeting notes document anything that they'd like to bring up for discussion with the whole team.
 
-## Members
-
-- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/product_manager.md)*)
-- [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](../roles.md#engineering-manager))
-  - [Felix Becker](../../../company/team/index.md#felix-becker)
-  - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
-  - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  
-_* Joel is the acting PM for this team until we are able to hire a dedicated PM for it. Once that happens, he will focus entirely on code insights._  
-
-## Growth plan
-
-_Updated 2020-11-18_
-
-We are growing the web team by hiring [frontend engineers](../hiring/software-engineer-frontend.md). When this team gets big enough, we expect to spin off two teams (code insights, and extensions and integrations) and convert the web team into an infrastructure team.
-
-### Web platform
-
-This team is accountable for ensuring that our product engineering teams have the tools and components they need to quickly build high quality user experiences everywhere we use web technologies (for example: web application, browser extensions). The primary customers of this team are other engineers at Sourcegraph.
-
-Examples:
-
-- Creating a standard component library.
-- Documentation to enable product teams and new hires to quickly learn how we do web development at Sourcegraph.
-- Product improvements that affect our entire app and don't have a clear product team owner (for example: new nav bar, complete site redesign)
-- Efficiency and reliability of frontend CI pipeline steps.
-
-### Code insights
-
-This team is responsible for building and delivering [**code insights**](https://docs.google.com/document/d/1EHzor6I1GhVVIpl70mH-c10b1tNEl_p1xRMJ9qHQfoc/edit) to engineering leaders, empowering data-driven decisions.
-
-This team will not be created until we have identified a dedicated engineering manager and a dedicated product manager.
-
-### Extensions and integrations
-
-This team is responsible for how we bring the value of Sourcegraph to other developer tools as well as how we bring the value of other developers tools into Sourcegraph.
-
-Examples:
-
-- Surface code intelligence (and other Sourcegraph data) in code hosts through user installed browser extensions.
-- Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developer look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extensions to get code intelligence.
-- Build an extension API for Sourcegraph that enables developers to bring data from their favorite dev tools (for example: code coverage, exception tracking, tracing, code quality) into their Sourcegraph workflow.
-- Build useful Sourcegraph extensions on top of the Sourcegraph extension API (for example: Codecov, Datadog, Sentry, Lightstep)
-
-This team will not be created until we have identified a dedicated engineering manager and a dedicated product manager.
