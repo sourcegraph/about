@@ -34,7 +34,7 @@ We use Expensify for expense report submission and approval. You will receive an
   - Software purchases or subscriptions should be categorized as "Software and SaaS <$1000"
   - Computer purchases and other hardware (monitor, headphones, etc.) should be categorized as "Computer & Related" 
   - Home office set-up purchases (chairs, desks, etc.) should be categorized as "Furniture & Office"
-  - Note: there is no designated "home office setup" category in Expensify, each item you expense should be categorized individually. So even though we have one home office setup budget, it spans across multiple categories.
+  - Note: there is no designated "home office setup" category in Expensify. Each expensed item should be categorized individually. So even though we have one home office setup budget, it spans across multiple categories.
 - Please ensure the date and description fields are properly filled out
   - The date listed on your expense should be the date of purchase (not the date of submission).
   - The description field should list exactly what item is being expensed.
