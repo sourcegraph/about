@@ -8,7 +8,7 @@ We're hiring! Check out our open positions:
 
 ### Engineering
 
-- [Engineering Manager - Backend Platform and Cloud](../handbook/engineering/hiring/engineering-manager-backend-platform.md)
+- [Engineering Manager - Cloud Application and Core Services](../handbook/engineering/hiring/engineering-manager-cloud.md)
 - [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
