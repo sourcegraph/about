@@ -8,7 +8,7 @@ Our mission is to build a code intelligence platform that understands code in al
 
 ## How does Code Intelligence work from a high level?
 
-We write language specific indexers that emit [LSIF](https://lsif.dev/) data about projects.  This information is processed, persisted and used to answer [LSP](https://microsoft.github.io/language-server-protocol/) requests on demand such as Go to Definition and Find references within Sourcegraph.
+We write language specific indexers that emit [LSIF](https://lsif.dev/) data about projects.  This information is processed, persisted and used to answer [LSP](https://microsoft.github.io/language-server-protocol/) requests on demand such as Go to Definition and Find References within Sourcegraph.
 
 ## What problems would you be working on?
 
@@ -82,4 +82,3 @@ We want to ensure Sourcegraph is an environment that suits your working style an
 #TODO Add Lever link here
 
 Go back to the [careers page](https://about.sourcegraph.com/company/careers) for all open positions.
-
