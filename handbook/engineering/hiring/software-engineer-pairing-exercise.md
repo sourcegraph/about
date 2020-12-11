@@ -21,7 +21,7 @@ At a high level, this is what we are evaluating our candidates for:
 
 - Clear explanations of ideas and decisions.
 - Frequent communication while pairing.
-- Willingness to drive, while the other engineer in the loop.
+- Willingness to drive, with the other engineer in the loop.
 - Ability to let the interviewer drive while staying engaged.
 - Flexibility in considering other ideas and approaches, and in making changes to the code.
 - Ability to break down a problem and decide on an approach as a pair.
