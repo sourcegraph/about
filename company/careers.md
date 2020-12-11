@@ -54,12 +54,6 @@ We're hiring! Check out our open positions:
 
 - [Executive Business Administrator](../handbook/ceo/executive_business_administrator_role.md)
 
-## Apply
-
-Apply by following the directions in the job description.
-
-If you're interested in Sourcegraph but aren't yet ready to apply, we are still happy to connect and answer any questions that you might have: [DM us on Twitter](https://twitter.com/srcgraph) or email hiring@sourcegraph.com.
-
 ## Our team
 
 Our team consists of talented, collaborative, driven individuals who are attracted to the massive problem we are tackling. We work in an open environment that treats people in a first-class manner and provides them with ownership, responsibility, and autonomy. See the [Sourcegraph handbook](https://about.sourcegraph.com/handbook) for more about what it's like to work at Sourcegraph.
