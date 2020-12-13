@@ -76,7 +76,6 @@ The team's areas of responsibility include:
    - Surface code intelligence (and other Sourcegraph data) in code hosts through user installed browser extensions.
    - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developer look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extensions to get code intelligence.
 
-ℹ️ _This team will only split out into it's own team once we have identified a dedicated engineering manager and a dedicated product manager._
 
 ## Tech stack
 
