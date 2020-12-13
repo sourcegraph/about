@@ -32,7 +32,7 @@ See [goals](goals.md)
 ℹ️ _Updated TODO_
 
 We are actively hiring [frontend engineers](../hiring/software-engineer-frontend.md) to grow the Web team. 
-When this team team gets big enough, we expect to split into two teams **Frontend platform and code browsing** and **Extensions and Integrations**
+When this team team gets big enough, we expect to split into two teams **Frontend platform and code browsing** and **Extensions and Integrations**. We will only make this split once we have identified a dedicated engineering manager and a dedicated product manager.
 
 ℹ️ _As of TODO, [Code Insights](../code-insights/index.md) moved out of the Web Team into it's own team, lead by Felix Becker (Interim EM) and Joel Kwartler (PM)._
 
@@ -181,4 +181,3 @@ The web team holds weekly syncs.
 The meeting notes of web team syncs can be found [in this doc](https://docs.google.com/document/u/1/d/1IUsjbtYdGiAHvRUB1yf4eqnynin9WsxFR2zFCMm78jw/edit#).
 
 Before web team syncs, teammates and stakeholders should write down under "Discussion items" in the meeting notes document anything that they'd like to bring up for discussion with the whole team.
-
