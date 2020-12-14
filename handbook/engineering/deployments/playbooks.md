@@ -52,7 +52,7 @@ git push origin release
 
 ### Backing up & restoring a Cloud SQL instance (production databases)
 
-Before any poentially risky operation you should ensure the databases have recent backups. We currently have daily backups enabled.
+Before any potentially risky operation you should ensure the databases have recent ( < 1 hour) backups. We currently have daily backups enabled.
 
 You can create a backup of a Cloud SQL instance via `gcloud sql backups create --instance=${instance_name} --project=sourcegraph-dev`
 
