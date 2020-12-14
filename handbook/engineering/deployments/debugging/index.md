@@ -7,10 +7,9 @@ This guide will allow you to debug one of our running services in the **dogfood*
 - [Debugging](#debugging)
 ----[Gain-access-to-the-cluster](./tutorial.md#gain-access-to-the-cluster)
 
-
 ## Intro to crictl
 
-[Kubernetes Docs](https://kubernetes.io/docs/tasks/debug-application-cluster/crictl/)
+_[Kubernetes Docs](https://kubernetes.io/docs/tasks/debug-application-cluster/crictl/)_
 
-When debugging pods on the node itself you should prefer `critctl` from <https://github.com/kubernetes-sigs/cri-tools/releases>.
+When debugging pods on the node itself you should prefer `critctl` from <https://github.com/kubernetes-sigs/cri-tools/releases> over docker.
 This tool works with all OCI container runtime. Kubernetes supports several container runtime and docker is not the only one.
