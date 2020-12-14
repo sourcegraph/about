@@ -511,5 +511,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Customer Engineer
 - Chicago, IL, USA 🇺🇸
-- [mike@sourcegraph.com](mailto:mike@sourcegraph.com), [GitHub:mike-r-mclaughlin](https://github.com/mike-r-mclaughlin), [LinkedIn](https://www.linkedin.com/in/mikermclaughlin/)
+- GitHub: [mike-r-mclaughlin](https://github.com/mike-r-mclaughlin)
+- [mike@sourcegraph.com](mailto:mike@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mikermclaughlin/)
 - Mike spent the first half of his career as a developer.  He transitioned to pre-sales after realizing how much he loves working with customers to solve technically challenging problems.  Mike lives in Chicago's Lincoln Park neighborhood with his wife Erika and their 2 cats (Winston and Mattie) and dog (Stella).  His pets can usually be found napping by his desk during working hours.  When not working, Mike enjoys traveling, live music, and relaxing on the couch.
