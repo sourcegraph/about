@@ -377,6 +377,19 @@
           51.5085300
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mike McLaughlin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6593,
+          41.92154
+         ]
+      }
     }
   ]
 }
