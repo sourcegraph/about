@@ -129,6 +129,10 @@ Here are some other questions that candidates have asked (e.g., in the [CEO inte
 1. How much cash does the company have in the bank?
 1. Other [questions about Sourcegraph's internal financial metrics](../../ceo/index.md#questions-about-sourcegraph).
 
+## Reference checks
+
+[Reference checks](reference_check_questions.md).
+
 ## Making an offer
 
 Once the decision is made to [extend an offer](interview_process.md#outcome) to a candidate, a representative from the People Ops team will reach out to the hiring manager to figure out offer details together.
