@@ -5,8 +5,7 @@ We maintain multiple [instances](instances.md) of Sourcegraph:
 - [Instances](./instances.md): information about our different instances
   - [sourcegraph.com](instances.md#sourcegraph-com) is our production deployment for open source code.
   - [sourcegraph.sgdev.org](instances.md#sourcegraph-sgdev-org) is our private deployment of Sourcegraph that contains some of our private code.
-  - [k8s.sgdev.org](instances.md#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers. Note that this also contains all of our private code.
-- [Managed instances](../distribution/managed/index.md) are deployments of Sourcegraph we manage for customers.
+  - [k8s.sgdev.org](instances.md#k8s-sgdev-org) is a dogfood deployment that replicates the scale of our largest customers. Note that this also contains all of our private code. - [Managed instances](../distribution/managed/index.md) are deployments of Sourcegraph we manage for customers.
   - [demo.sourcegraph.com](instances.md#demo-sourcegraph-com) is a managed instance used for CE demos.
   - [devmanaged.sourcegraph.com](instances.md#devmanaged-sourcegraph-com) is a managed instance used for managed instances development.
 
@@ -14,6 +13,11 @@ Learn more about how these work in:
 
 - [Deployments](#deployments)
   - [Deployment basics](#deployment-basics)
+    - [Kubernetes](./kubernetes.md): setting up access, tips, and more
+    - [Security](./security.md): TLS configuration,
+    - [Testing](./testing.md): deploying test instances of Sourcegraph
+    - [PostgresSQL](./postgresql.md): Tips for working with Postgres and our deployments]
+    - [Playbooks](./playbooks.md): how-to guides for common tasks
     - [Images](#images)
     - [Renovate](#renovate)
     - [Infrastructure](#infrastructure)
