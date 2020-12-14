@@ -39,7 +39,7 @@ We will grow to 6 to 8 engineers, with two distinctive problem spaces:
 ## Qualifications
 
 * Solid understanding of either C++ or Java with a focus on Clang or Javac fundamentals from a language tooling perspective.
-* Experience with dependency management systems, and build systems coupled with a strong desire to learn new ones.
+* Experience with dependency management systems and build systems coupled with a strong desire to learn new ones.
 * Ability to communicate clearly and empathetically, especially in writing and documentation.
 * Practiced at creating high quality software balanced with a pragmatic understanding of how to make appropriate tradeoffs (e.g., cut scope) to ship quickly and iterate when necessary.
 
