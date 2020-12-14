@@ -11,19 +11,19 @@ Bash is frequently used in our build, CI and deployment systems. Some general gu
 
 Prefer using `mapfile` instead of `while IFS` to read a file
 
-    ```
-    mapfile -t myArray < file.txt
-    ```
+```
+mapfile -t myArray < file.txt
+```
 
-    instead of
+instead of
 
-    ```
-    input="/path/to/txt/file"
-    while IFS= read -r line
-    do
-      echo "$line"
-    done < "$input"
-    ```
+```
+input="/path/to/txt/file"
+while IFS= read -r line
+do
+  echo "$line"
+done < "$input"
+```
 
 ### Set -eu -o pipefail
 
