@@ -673,8 +673,8 @@ We describe ourselves with a few different names depending on context, and we sh
 
 - **Sourcegraph**: Main product. Prefer using this name unless you need to be more precise.
 - **Self-hosted Sourcegraph instance**: Only if clarification between Sourcegraph Cloud, managed instances, and on-premises instances is required.
-- **Managed Sourcegraph instance**: Only if clarification between the Sourcegraph Cloud instance, self-hosted instances, and managed instances is required.
-- **Sourcegraph Server**: The public instance of Sourcegraph for open source code at [sourcegraph.com](https://sourcegraph.com).
+- **Sourcegraph Server**: Only if clarification between the Sourcegraph Cloud instance, self-hosted instances, and managed instances is required.
+- **Sourcegraph.com**: The public instance of Sourcegraph for open source code at [sourcegraph.com](https://sourcegraph.com).
 - **Sourcegraph integrations**: The general term for our integrations. When referencing specific integrations:
     - Sourcegraph(’s) Phabricator integration
     - Sourcegraph(’s) GitHub integration
