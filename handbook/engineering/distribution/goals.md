@@ -67,6 +67,16 @@ Creating a new release for our deployments is currently a semi-automated process
   - Document project and folder usage guidelines.
   - Set spending limits for dynamic environments.
 
+### Improve Sourcegraph monitoring developer experience
+
+- **Owner**: Gonza, Robert
+- **Status**: In progress. Estimated completion by end of FY21-Q1.
+- **Outcomes**:
+  - Our monitoring stack is compelling for engineers at Sourcegraph to interact with and build on top of.
+  - Our monitoring stack supports use cases specific to the needs of engineers at Sourcegraph and Sourcegraph Cloud.
+- **Milestones**:
+  - [Monitoring pillar redux](https://github.com/orgs/sourcegraph/projects/112)
+
 ## Future goals
 
 These are ideas for future goals that the team might work on. Just because something is on this list, does not mean it will be worked on next.
