@@ -15,6 +15,10 @@ Prefer using `mapfile` instead of `while IFS` to read a file
 mapfile -t myArray < file.txt
 ```
 
+```bash
+mapfile -t myArray < <(find -d .)
+```
+
 instead of
 
 ```bash
