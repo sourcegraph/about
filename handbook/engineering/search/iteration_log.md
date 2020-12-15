@@ -19,6 +19,7 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Outcomes:**
     - Streaming search UI renders errors
     - Streaming search is presented to the team in a Brainfood session
+    - Progress API is combined with results and streams out.
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
