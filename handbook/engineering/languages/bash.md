@@ -3,21 +3,21 @@
 Bash is frequently used in our build, CI and deployment systems. Some general guidelines and recommended reading
 
 - [Bash style](#bash-style)
-    - [Reading from a file](#reading-from-a-file)
-    - [Set -eu -o pipefail](#set--eu--o-pipefail)
+  - [Reading from a file](#reading-from-a-file)
+  - [Set -eu -o pipefail](#set--eu--o-pipefail)
   - [References](#references)
 
 ### Reading from a file
 
 Prefer using `mapfile` instead of `while IFS` to read a file
 
-```
+```bash
 mapfile -t myArray < file.txt
 ```
 
 instead of
 
-```
+```bash
 input="/path/to/txt/file"
 while IFS= read -r line
 do
