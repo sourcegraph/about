@@ -5,7 +5,7 @@ In order to debug the services we deploy you should understand the environment t
 This guide will allow you to debug one of our running services in the **dogfood** deployment which mimics our customer environment. All of our services here run on a Kubernetes cluster.
 
 - [Debugging](#debugging)
-----[Gain-access-to-the-cluster](./tutorial.md#gain-access-to-the-cluster)
+  - [Gain-access-to-the-cluster](./tutorial.md#gain-access-to-the-cluster)
 
 ## Intro to crictl
 
