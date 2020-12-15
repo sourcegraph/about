@@ -290,7 +290,7 @@
     {
       "type": "Feature",
       "properties": {
-         "name": "Dave Try"
+        "name": "Dave Try"
       },
       "geometry": {
         "type": "Point",
@@ -373,8 +373,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.1257400,
-          51.5085300
+          -0.12574,
+          51.50853
         ]
       }
     },
@@ -388,7 +388,20 @@
         "coordinates": [
           -87.6593,
           41.92154
-         ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "André Eleuterio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.27690029144287,
+          -25.44831240093052
+        ]
       }
     }
   ]
