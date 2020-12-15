@@ -522,3 +522,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [novoselrok](https://github.com/novoselrok)
 - [rok@sourcegraph.com](mailto:rok@sourcegraph.com), [@novoselrok](https://twitter.com/novoselrok)
 - Rok is a software engineer from Trebnje, Slovenia. He finished his Master's degree in computer science at the University of Ljubljana, focusing on parallel programming languages. Before joining Sourcegraph his work was mostly in the ad-tech industry. In his free time, he likes to tinker with various side projects ranging from compilers to WebAssembly. Outside of programming, he enjoys hiking, playing FIFA and supporting the Arsenal football club.
+
+## André Eleuterio (he/him)
+
+- Security Engineer
+- Curitiba, Brazil 🇧🇷
+- GitHub: [andreeleuterio](https://github.com/andreeleuterio)
+- [andre@sourcegraph.com](mailto:andre@sourcegraph.com), [@eleuterio_](https://twitter.com/eleuterio_)
+- André is a Security Engineer from Curitiba, Brazil. Before joining Sourcegraph he was working at npm and GitHub, holding different security responsibilities. André is a devout follower of Athletico Paranaense, a local soccer team, despite its rare joys and successes. Definitely a geek, be careful when bringing up Breath of the Wild or Magic the Gathering around André as that can lead to some very long conversations.
