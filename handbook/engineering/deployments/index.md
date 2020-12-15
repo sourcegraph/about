@@ -11,17 +11,16 @@ We maintain multiple [instances](instances.md) of Sourcegraph:
 
 Learn more about how these work in:
 
-- [Deployments](#deployments)
-  - [Deployment basics](#deployment-basics)
-    - [Kubernetes](./kubernetes.md): setting up access, tips, and more
-    - [Security](./security.md): TLS configuration,
-    - [Testing](./testing.md): deploying test instances of Sourcegraph
-    - [PostgresSQL](./postgresql.md): Tips for working with Postgres and our deployments]
-    - [Playbooks](./playbooks.md): how-to guides for common tasks
-    - [Images](#images)
-    - [Renovate](#renovate)
-    - [Infrastructure](#infrastructure)
-    - [Debugging](./debugging.md)
+- [Deployment basics](#deployment-basics)
+  - [Kubernetes](./kubernetes.md): setting up access, tips, and more
+  - [Security](./security.md): TLS configuration,
+  - [Testing](./testing.md): deploying test instances of Sourcegraph
+  - [PostgresSQL](./postgresql.md): Tips for working with Postgres and our deployments]
+  - [Playbooks](./playbooks.md): how-to guides for common tasks
+  - [Images](#images)
+  - [Renovate](#renovate)
+  - [Infrastructure](#infrastructure)
+  - [Debugging](./debugging.md)
   - [deploy-sourcegraph](#deploy-sourcegraph)
     - [Merging changes from deploy-sourcegraph](#merging-changes-from-deploy-sourcegraph)
   - [Relationship between the repositories](#relationship-between-the-repositories)
