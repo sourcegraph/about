@@ -6,31 +6,33 @@ The campaigns team is building the best solution available for creating and mana
 
 We need to grow usage of campaigns to understand our customer use cases and inform our roadmap.
 
-How do we do this:
-  * Proactive customer outreach
-  * Continual user validation
-  * Strive to create a frictionless initial experience
-  * Provide amazing support
-
-Our success metrics:
-  * Build a base of 10 customers who have created 80 campaigns and made 4000 changesets in 2020 Q4
-  * [Looker dashboard with usage metrics](https://sourcegraph.looker.com/dashboards/136) (internal only)
+### How do we will do this:
+* The product manager will work with the CE team to identify customers who fit our current product offering and onboard them to campaigns. 
+* The campaigns team will identify and correct user experience issues which hinder adoption
+* The engineering team will strive quickly correct errors which impede adoption
 
 
-## Design and build the most robust, yet easy to use solution for creating changesets across many repositories
+## Design and build the best solution for creating many changesets
+For a single solution to become the best tool for making large scale changes at any given company,  it must provide features which meet the varying requirements dictated by each environment, configuration and workflow found in the company. 
 
-Campaigns need to be easy to explain, easy to understand, easy to start using, and easy to explore. At the same time, it should be the most powerful tool available for making programatic changes to multiple repositories. 
+Currently the tools companies do have for making large scale changes are only usable by a select group of experienced developers and solve a limited number of use cases. 
 
-How do we do this:
-  * Clean conceptual model
-  * Expressive syntax
-  * Understand our customers environments and requirements
-  * Strong alignment of features to developer objectives
-  * Excellent docs, tutorials, demos/training
-  * Best debugging experience
+### Problems
+* Campaigns does not currently allow users to open many changesets in a single repo in a way that supports monorepo workflows
+*  It takes too long to merge changesets because owners are not aware the   changesets were created
+* The documentation and usability of campaigns are not sufficient to provide a frictionless experience for less experienced developers
 
-Our success metrics:
-  * Reduction of feature requests over time
+### Milestones
+* Robust support for monorepo workflows
+* Support adding reviewers to changesets
+* Support adding labels to changesets
+* Documentation on how to set up and start using and troubleshoot campaigns has been tested and improved
+
+### Outcomes
+* We sign one monorepo customer in Q1
+* Multiple customers find value in adding reviewers and labels to changesets
+* An increase in the average number of merged changesets is observed
+* A reduction in the number of support requests for users getting started with campaigns
 
 ## Design and build the best solution for managing many changesets
 
