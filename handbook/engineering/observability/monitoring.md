@@ -235,7 +235,9 @@ Dashboards can be deployed to our Cloud deployment by adding them in `json` form
 
 Once the dashboard is ready to be shipped to customers, we will need to port it to the [monitoring generator](./monitoring_architecture.md#monitoring-generator) to be included in our next Sourcegraph release.
 
-You can use a local Grafana or the Cloud grafana to create a new dashboard and then export it by following these steps:
+You can use a [local Grafana](#connecting-grafana-to-a-remote-prometheus-instance) or the Cloud Grafana to create a new dashboard and once its ready, export it by following these steps:
+
+> **Warning**: Cloud Grafana does not allow saving
 
 - Open "Dashboard Settings" (top right cog).
 - Select "JSON Model".
