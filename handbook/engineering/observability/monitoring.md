@@ -229,7 +229,7 @@ kubectl port-forward svc/prometheus 9090:30090 -n prod
 
 While all dashboards required to troubleshoot our product should be shipped to customers, our Cloud deployment might require additional dashboards to the ones we ship to customers, for example:
 - The dashboard is not ready yet to graduate to customers
-- The dashboard applies only to our Cloud deployment
+- When the additional dashboard applies only to our Cloud deployment
 
 Dashboards can be deployed to our Cloud deployment by adding them in `json` format to `dashboards/files` in https://github.com/sourcegraph/deploy-sourcegraph-dot-com/. To learn more, reference its [documentation](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/feature/release/dashboards)
 
