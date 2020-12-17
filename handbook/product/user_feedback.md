@@ -58,23 +58,18 @@ We have a few different email lists that are used to send us feedback.
 
 - **Purpose:** Customers and prospects often give product feedback on calls with sales members. 
 
-> **Owner:** _TODO Process update coming soon_
+- **Owner:** The Sales team owns feedback from sales calls. 
 
 ### Hubspot forms
 
-> **Purpose/Owner:** _TODO what hubspot forms do we have that are not NPS or Browser uninstall?_
-
-### NPS Survey
+#### NPS Survey
 
 - **Purpose:** We prompt customers to provide NPS ratings from within the Sourcegraph UI. 
-- **Owner:** The product manager on feedback rotation owns responding to or forwarding NPS feedback. 
+- **Owner:** The product manager on [feedback rotation](product_management/responding_to_user_feedback.md#feedback-rotation) owns responding to or forwarding NPS feedback. 
 
-### Browser Extension Uninstall Feedback 
+#### Browser Extension Uninstall Feedback 
 - **Purpose:** We ask everyone who uninstalls the browser extension why they no longer want it. 
 - **Owner:** The browser extension product manager (currently the [Web team product manager](../engineering/web/index.md#members)) owns responding to this feedback. 
-
-### Product Feedback
-> _TODO_ I'm not sure what this refers to; is there a channel not covered here? Is this covered by slack `#feedback`?
 
 ## Productboard
 
