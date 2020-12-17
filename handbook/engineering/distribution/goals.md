@@ -75,8 +75,8 @@ These are ideas for future goals that the team might work on. Just because somet
 
 Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegraph Cloud) has several usability problems - for example, it is hard for engineers to identify when a commit was deployed to an environment or which deployment is currently running in a particular environment. We want to improve the deployment experience, making sure we can deploy with confidence and can easily understand in which stage of the pipeline a change currently is.
 
-- **Owner**: TBD
-- **Status**: Not started. Unknown amount of work.
+- **Owner**: Dax
+- **Status**: Not started. Unknown amount of work. _Estimated: FY21-Q1_
 - **Outcomes**:
   - It is simple to identify when a commit has been deployed to an environment.
   - Developers are notified when their PR is deployed to an environment.
