@@ -10,11 +10,10 @@ The code insights team is building at the forefront of developer knowledge and c
 ## Why this job is exciting
 
 - You will be one of the **founding engineers** for this team. You will have a large, immediate impact on the shape and direction of code insights.
-- Despite its early stage, code insights is a heavily-validated feature: multiple Fortune-1000 companies have used and positively received our early prototypes.
+- Despite its early stage, code insights is a heavily-validated feature: multiple Fortune-1000 companies have specifically requested early access to use our working prototypes.
 - Ahead lay extremely interesting challenges and opportunities for growth in making code insights scalable to hundreds of thousands of repositories, while also making it more powerful with filter capabilities, actionable insights, custom data sources – and much more we haven't even thought of yet.
 - In addition to serving all of Sourcegraph's existing developer users, code insights is the first feature we're building to serve engineering and product leaders at the director-or-above-level.
 - Sourcegraph's users all have technical backgrounds, meaning we can focus on the innovation and power of code insights rather than get caught up in product education.
-- In the same way that Sourcegraph is the first-mover and market-leader in code search, code insights is the first product of its kind for tangible code metrics and analysis.
 - Code insights will shape how all the top engineering-first companies build, organize, and evaluate themselves.
 
 ## About you
@@ -26,7 +25,7 @@ The code insights team is building at the forefront of developer knowledge and c
 ## Your responsibilities
 
 - Work closely with a PM and a designer to implement a high-quality UI for code insights using React, SCSS and TypeScript.
-- Actively shape the direction and participate in the planning of the features we're going to build, e.g. by writing and reviewing RFCs.
+- Actively shape the direction and participate in the planning of the features we're going to build, e.g. by writing and reviewing [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs).
 - Build accessible UIs that other engineers and engineering leaders love using.
 - Collaborate with backend engineers to define the ideal APIs needed to deliver on the desired user experience.
 - Collaborate with other product teams like search, code intelligence and campaigns to figure out integration points with other Sourcegraph features.
