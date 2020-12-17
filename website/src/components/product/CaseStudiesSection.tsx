@@ -12,7 +12,7 @@ const CASESTUDIES: {
         {
             name: 'CERN',
             logo: '/external-logos/cern-badge-logo.jpg',
-            title: 'Criteo uses Sourcegraph universal code search to tackle Big Code',
+            title: 'CERN reduces technical debt in mission-critical applications',
             url: '/case-studies/cern-reduces-technical-debt',
         },
         {
