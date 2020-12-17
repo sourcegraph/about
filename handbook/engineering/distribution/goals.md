@@ -12,7 +12,7 @@ Performing upgrades to deployments is currently a complicated process that requi
 We will start by looking at our Kubernetes deployment and working on an easier update process.
 
 - **Owner**: Geoffrey, Uwe
-- **Status**: In progress. Estimated completion FY20-Q4.
+- **Status**: In progress. Estimated completion FY21-Q1.
 - **Outcomes**:
   - Upgrades to deployments do not require resolving diff conflicts from upstream.
   - Upgrading a deployment configuration requires less than 2 hours of work.
@@ -23,12 +23,12 @@ We will start by looking at our Kubernetes deployment and working on an easier u
     - ~~Dhall.~~ Done: `3.18`
   - ~~Create a Kubernetes deployment PoC.~~ Done: `3.19`
   - ~~Design Dhall Architecture.~~ Done: `3.20`
-  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback. **In progress**
   - ~~Create a demo video/presentation to gather customer feedback.~~ Done: `Dist: 2020.11.30`
-  - Create customer facing migration path and how-to documentation. _Estimated: 2020_
-  - Use Dhall to generate public Kubernetes manifests.
-  - Migrate a highly technical customer to Dhall and collect usage feedback.
-  - Design customization workflow.
+  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback. **In progress**
+  - Create customer facing migration path and how-to documentation. _Estimated: FY21-Q1_
+  - Use Dhall to generate public Kubernetes manifests. _Estimated: FY21-Q1_
+  - Migrate a highly technical customer to Dhall and collect usage feedback. _Estimated: FY21-Q1_
+  - Design customization workflow. _Estimated: FY21-Q1_
     - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
 
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types by running a single action
@@ -48,7 +48,7 @@ Creating a new release for our deployments is currently a semi-automated process
   - ~~[Enable continuous regression tests on `main`](https://github.com/orgs/sourcegraph/projects/90).~~ Done: `Dist: 2020.11.16`
   - ~~[Ensure relevant engineers are notified of broken builds](https://github.com/orgs/sourcegraph/projects/90).~~ Done: `Dist: 2020.11.16`
   - [Releases can be done in a single day](https://github.com/orgs/sourcegraph/projects/90). **In progress**
-  - Releases can be done automatically with a single action (e.g. CLI command, `/` command in Slack, etc.). _Estimated: 2020_
+  - Releases can be done automatically with a single action (e.g. CLI command, `/` command in Slack, etc.). _Estimated: FY21-Q1_
 
 ### [Split Cloud infrastructure into separate GCP projects](https://github.com/orgs/sourcegraph/projects/92)
 
