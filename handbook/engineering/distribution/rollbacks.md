@@ -3,6 +3,11 @@
 Before you consider a rollback, please read the [README](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/migrations/README.md?utm_product_name=GoLand&utm_product_version=GoLand#L22:48)
 carefully.
 
+## Testing
+
+Before performing a rollback at a customer site it is a good thing to practice the same rollback (between the same versions)
+on a test cluster and to write down the first and last migration numbers in the range.
+
 ## Gotchas
 
 ### Migrations have to be invertible
@@ -22,6 +27,11 @@ made in code.
 A rollback at a customer could involve very large tables. In this case it makes sense to test the rollback with a test
 cluster that has similarly large amounts of data to get an idea how long the migrations will take and how large the
 transactions will be.
+
+### Squashed migrations
+
+If the rollback overlaps with squashed migrations then careful sorting out of the migration ranges is required.
+This should definitely be tested on a test cluster.
 
 ## Performing many migrations
 
