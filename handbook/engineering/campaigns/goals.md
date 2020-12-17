@@ -49,7 +49,7 @@ Completing a large scale change in any organization requires coordination with a
 
 * Support creating tickets/issues alongside or instead of code changes.
 * Users can search, filter and sort changesets by check and review status, title, repository and branch.
-* A campaign owner can nudge developers to merge changesets .
+* A campaign owner can nudge developers to merge changesets.
 * Campaigns can leverage the automerge capabilities provided by their code host.
 
 ### Outcomes
