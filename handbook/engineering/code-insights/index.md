@@ -21,7 +21,7 @@ Code insights is the first feature primarily built for non-search-based user per
 
 **Problem:** Code insights solves two problems. 
 
-1. The Sourcegraph sales cycle is unusual because although we consistently wow our users, the economic decision-maker is usually not one of these users. Instead, the people with the power to sign a contract with us are higher up within an organization and usually depend on running a trial to fully understand the value of Sourcegraph. If code insights answers these personas' higher-level questions about codebases that our core features do not currently answer, it could dramatically speed up our sales cycle as well as our sales pipeline. These personas . 
+1. The Sourcegraph sales cycle is unusual because although we consistently wow our users, the economic decision-maker is usually not one of these users. Instead, the people with the power to sign a contract with us are higher up within an organization and usually depend on running a trial to fully understand the value of Sourcegraph. If code insights answers these personas' higher-level questions about codebases that our core features do not currently answer, it could dramatically speed up our sales cycle as well as our sales pipeline.
 
 1. Sourcegraph has lots of information about your code, but currently only exposes specific, low-level information at the file or directory level. Engineers and engineering managers/directors/VPs have lots of questions about their codebase that Sourcegraph can answer but currently does not. 
 
@@ -49,7 +49,7 @@ _Because code insights is an entirely new feature and closely informed by custom
 - Customers buy Sourcegraph for the code insights or buy code insights as its own paid feature. 
 - Code insights incorporates all of a customer's 3rd-party code information as the central place to learn anything about your code. 
 - You can use code monitoring to get alerted when an insight metric hits a trigger. 
-- There is a natural path in the UI to go from an insight to a campaign that impacts the value of the insight. 
+- There is a natural path in the UI to go from an insight to a campaign that impacts the value of the insight.
 
 ## Roadmap
 
