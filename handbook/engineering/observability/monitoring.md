@@ -231,7 +231,7 @@ While all dashboards required to troubleshoot our product should be shipped to c
 - The dashboard is not ready yet to graduate to customers
 - The dashboard applies only to our Cloud deployment
 
-Dashboards can be deployed for raw json to our Cloud deployment by adding them to `dashboards/files` in https://github.com/sourcegraph/deploy-sourcegraph-dot-com/. To learn more, reference its [documentation](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/feature/release/dashboards)
+Dashboards can be deployed to our Cloud deployment by adding them in `json` format to `dashboards/files` in https://github.com/sourcegraph/deploy-sourcegraph-dot-com/. To learn more, reference its [documentation](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/tree/feature/release/dashboards)
 
 Once the dashboard is ready to be shipped to customers, we will need to port it to the [monitoring generator](./monitoring_architecture.md#monitoring-generator) to be included in our next Sourcegraph release.
 
