@@ -235,6 +235,15 @@ Dashboards can be deployed to our Cloud deployment by adding them in `json` form
 
 Once the dashboard is ready to be shipped to customers, we will need to port it to the [monitoring generator](./monitoring_architecture.md#monitoring-generator) to be included in our next Sourcegraph release.
 
+You can use a local Grafana or the Cloud grafana to create a new dashboard and then export by following these steps:
+
+- Open "Dashboard Settings" (top right cog).
+- Select "JSON Model".
+- Select the JSON content and save to a `.json` file in `sourcegraph/deploy-sourcegraph-dot-com/dashboards/files`.
+- Create a new Pull Request with your changes.
+
+Once deployed, you should be able to see your changes in [sourcegraph.com](https://sourcegraph.com/-/debug/grafana).
+
 ### Upgrading Grafana
 
 To upgrade Grafana, make the appropriate version change to the [`sourcegraph/grafana` Dockerfile](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%40master+FROM+grafana/grafana:.*&patternType=regexp) and make sure to:
