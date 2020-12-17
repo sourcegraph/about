@@ -10,6 +10,12 @@ const CASESTUDIES: {
     external?: boolean
 }[] = [
         {
+            name: 'CERN',
+            logo: '/external-logos/cern-badge-logo.jpg',
+            title: 'Criteo uses Sourcegraph universal code search to tackle Big Code',
+            url: '/case-studies/cern-reduces-technical-debt',
+        },
+        {
             name: 'Criteo',
             logo: '/external-logos/criteo-logo.svg',
             title: 'Criteo uses Sourcegraph universal code search to tackle Big Code',
