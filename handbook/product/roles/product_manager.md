@@ -20,7 +20,9 @@ You will **own an area of the product**\* and:
 - Be transparent in your internal and external communication. Sourcegraph is open source, so most discussions are public or in channels where you communicate directly with our customers.
 - Uphold your side of the [PM – EM partnership responsibilities](product_manager_engineering_manager_responsibilities.md).
 
-\* Product teams or product areas in need of a PM, grouped by priority of current business needs.
+### Product areas
+
+\* Product teams or areas in need of a PM, grouped by priority of current business needs.
 
 - Highest urgency
    - [Campaigns](../../engineering/campaigns/index.md)
