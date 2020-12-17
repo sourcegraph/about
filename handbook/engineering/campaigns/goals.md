@@ -7,7 +7,7 @@ The campaigns team is building the best solution available for creating and mana
 We need to grow usage of campaigns to understand our customer use cases and inform our roadmap.
 
 ### How do we will do this:
-* The product manager will work with the CE team to identify customers who fit our current product offering and onboard them to campaigns. 
+* The product manager will work with the CE team to identify customers who fit our current product offering and onboard them to campaigns
 * The campaigns team will identify and correct user experience issues which hinder adoption
 * The engineering team will strive quickly correct errors which impede adoption
 
