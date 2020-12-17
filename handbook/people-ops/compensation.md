@@ -26,7 +26,7 @@ We are an early-stage technology company, and you can have a huge impact on our 
 
 Equity grants vest monthly with a 1 year cliff.
 
-Teammates within the US receive incentive stock options (ISOs) and teammates outside of the US receive non-qualified stock option (NSOs).
+Teammates classified as employees receive incentive stock options (ISOs) to the maximum degree possible, while teammates classified as contractors receive non-qualified stock option (NSOs).
 
 TODO(@sourcegraph/people-ops): add more detail here about the kind of options and how to understand their value.
 
