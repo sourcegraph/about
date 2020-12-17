@@ -31,7 +31,7 @@ similar to how we use it in dev.
 
 The following are steps to accomplish this:
 
-Before starting the migration, check that the customer DB is at the expected migration number:
+Before starting the rollback, check that the customer DB is at the expected migration number:
 
 Without namespace:
 
@@ -45,6 +45,8 @@ With namespace `ns-sourcegraph` (change as appropriate):
 kubectl -n ns-sourcegraph exec $(kubectl -n ns-sourcegraph get pod -l app=pgsql -o jsonpath='{.items[0].metadata.name}') -- psql -U sg -c 'SELECT * FROM schema_migrations'
 ```
 
+- Deploy the previous version of Sourcegraph onto the cluster. Make sure that the dirty DB flag is `false`. The frontends will complain that
+  the DB is at a newer schema version. That is expected and ok.
 - Prepare a `migrations.tar.gz` package file with the contents of the `migrations` directory at the current customer version.
 - Copy both `migrations.tar.gz` and the `migrate` [binary](https://github.com/golang-migrate/migrate/releases) onto the pgsql pod.
 - We will run `migrate` on the pod to eliminate kubectl port-forwarding of the postgres DB port. This is important if migrations
