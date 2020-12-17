@@ -19,7 +19,7 @@ Currently the tools companies do have for making large scale changes are only us
 
 ### Problems
 * Campaigns does not currently allow users to open many changesets in a single repo in a way that supports monorepo workflows
-*  It takes too long to merge changesets because owners are not aware the   changesets were created
+* It takes too long to merge changesets because owners are not aware the  changesets were created
 * The documentation and usability of campaigns are not sufficient to provide a frictionless experience for less experienced developers
 
 ### Milestones
