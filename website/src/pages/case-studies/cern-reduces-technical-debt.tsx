@@ -1,8 +1,11 @@
+import * as chris from '../../../static/case-studies/chris-roderick-cern.jpg'
+import * as lhc from '../../../static/case-studies/cern-image-lhc-cc.jpg'
 import * as React from 'react'
 import {
     CaseStudyPage,
     CaseStudyRequestDemoForm,
     InContentBlockquote,
+    InContentImage
 } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
@@ -22,12 +25,12 @@ export default ((props: any) => (
         <CaseStudyPage
             customer="CERN"
             title="Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications"
-            logo="/external-logos/cern-logo.png"
+            logo=""
             quote={{
                 quote:
                     'Sourcegraph is extremely valuable for what we do. Without it, we couldn’t estimate the risks and costs of our APIs’ evolution, or clean up deprecated APIs.',
                 author: 'Vito Baggiolini, Senior Software Engineer, CERN',
-                image: '/case-studies/cern-image-lhc.jpg',
+                image: '/external-logos/cern-reverse-logo.svg',
             }}
         >
             <ContentSection color="white" className="col-md-6 pb-5">
@@ -35,15 +38,35 @@ export default ((props: any) => (
                     <p>Physicists at CERN use some of the world's most powerful particle accelerators to discover what the universe is made of and how it works. Over the last 18 years, the organization’s codebase for accelerator controls has grown to roughly 15 million lines of code. CERN operates within a self-contained software system that is developed and maintained by nearly 300 people, with all of its code in Sourcegraph. To achieve efficient development and safe upgrades, developers require a tool that lets them quickly and effectively search through their entire codebase so they can easily change and reuse code where necessary. </p>
                     <h2 className="pt-5 pb-1">Avoiding reinventing the wheel with universal code search</h2>
                     <p>Sourcegraph empowers developers at CERN to reuse code that already exists, avoiding duplication and saving developers countless hours redoing work that has already been done. It takes search one step further by &quot;understanding&quot; the structure of the code (as opposed to just &quot;seeing&quot; it as raw text), enabling the organization to do semantic searches that yield accurate results.</p>
-
+                    <div className="row justify-content-md-center pt-3">
+                        <div className="col-md-8">
+                            <InContentImage
+                                src={lhc}
+                                alt="Large Hadron Collider, image by CERN"
+                                caption="Large Hadron Collider, image by CERN"
+                                className="case-studies__img img-fluid mx-auto d-block mb-3"
+                            />
+                        </div>
+                    </div>
                     <InContentBlockquote
                         quote="I was recently tasked with something that I, admittedly, had no idea how to do, but I was sure that someone at CERN must’ve already done it at some point. Sourcegraph universal code search took me directly to the code I was looking for so I could repurpose it. It’s also an invaluable tool for enabling our developers to learn from one another."
                         author="Vito Baggiolini"
                     />
-                    <InContentBlockquote
-                        quote="Sourcegraph helps us with technical debt reduction and the consolidation of our codebase by letting us avoid duplication, spot the usage of deprecated APIs or internal (non-API) library code, and identify general purpose code in specific projects (such as utility classes) that can be factored out and shared in a core library"
-                        author="Chris Roderick, Applications and Services Section Leader, CERN"
-                    />
+                    <div className="row pt-3">
+                        <div className="col-md-3 pt-3">
+                            <InContentImage
+                                src={chris}
+                                alt="Chris Roderick, Applications and Services Section Leader, CERN"
+                                caption="Chris Roderick, Applications and Services Section Leader, CERN"
+                                className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
+                            />
+                        </div>
+                        <div className="col-md-9">
+                            <InContentBlockquote
+                                quote="Sourcegraph helps us with technical debt reduction and the consolidation of our codebase by letting us avoid duplication, spot the usage of deprecated APIs or internal (non-API) library code, and identify general purpose code in specific projects (such as utility classes) that can be factored out and shared in a core library"
+                            />
+                        </div>
+                    </div>
                     <h2 className="pt-5 pb-1">Tackling mission-critical code changes with ease</h2>
                     <InContentBlockquote
                         quote="Sourcegraph lets us make informed decisions on how to evolve our codebase. For example, a library owner knows exactly how all other developers use their API, and can therefore make educated decisions on how to evolve it."
