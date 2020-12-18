@@ -24,7 +24,7 @@ The code insights team is building at the forefront of developer knowledge and c
 
 ## Your responsibilities
 
-- Work closely with a PM and a designer to implement a high-quality UI for code insights using React, SCSS and TypeScript.
+- Work closely with a Product Manager and Product Designer to implement a high-quality UI for code insights using React, SCSS, and TypeScript.
 - Actively shape the direction and participate in the planning of the features we're going to build, e.g. by writing and reviewing [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs).
 - Build accessible UIs that other engineers and engineering leaders love using.
 - Collaborate with backend engineers to define the ideal APIs needed to deliver on the desired user experience.
