@@ -43,7 +43,7 @@ Completing a large scale change in any organization requires coordination with a
 * Company workflows often require issues/tickets to accompany changes to their code bases. Campaigns does natively support issue tracking systems.
 * It is currently too difficult to find changesets which cannot or have not been merged.
 * Often owners do not prioritize merging changesets. It takes too long to nudge the owners of each changeset. 
-* We do not currently support automerge.  Doing so would greatly reduce the manual effort required to merge changesets. 
+* We do not currently support automerge. Doing so would greatly reduce the manual effort required to merge changesets. 
 
 ### Milestones
 
