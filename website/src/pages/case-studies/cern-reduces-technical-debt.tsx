@@ -25,29 +25,29 @@ export default ((props: any) => (
         <CaseStudyPage
             customer="CERN"
             title="Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications"
-            logo=""
+            heroImage="/external-logos/cern-name-reverse-logo.svg"
+            heroLink="https://procurement.web.cern.ch"
             quote={{
                 quote:
                     'Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks and costs of our APIs’ evolution.',
-                author: 'Vito Baggiolini, Senior Software Engineer, CERN',
-                image: '/external-logos/cern-name-reverse-logo.svg',
+                author: 'Vito Baggiolini, Senior Software Engineer, CERN'
             }}
         >
             <ContentSection color="white" className="col-md-6 pb-5">
                 <div className="container">
                     <p>Physicists at CERN use some of the world's most powerful particle accelerators to discover what the universe is made of and how it works. Over the last 18 years, the organization’s Java codebase for accelerator controls has grown to roughly 15 million lines of code. CERN operates within a self-contained software system that is developed and maintained by nearly 300 people, with all of its code in Sourcegraph. To achieve efficient development and safe upgrades, developers require a tool that lets them quickly and effectively search through their entire codebase so they can easily change and reuse code where necessary. </p>
-                    <h2 className="pt-5 pb-1">Avoiding reinventing the wheel with universal code search</h2>
-                    <p>Sourcegraph empowers developers at CERN to reuse code that already exists, avoiding duplication and saving developers countless hours redoing work that has already been done. It takes search one step further by &quot;understanding&quot; the structure of the code (as opposed to just &quot;seeing&quot; it as raw text), enabling the organization to do semantic searches that yield accurate results.</p>
                     <div className="row justify-content-md-center pt-3">
                         <div className="col-md-8">
                             <InContentImage
                                 src={lhc}
                                 alt="Large Hadron Collider, image by CERN"
                                 caption="Large Hadron Collider, image by CERN"
-                                className="case-studies__img img-fluid mx-auto d-block mb-3"
+                                className="case-studies__img img-fluid d-block mb-3"
                             />
                         </div>
                     </div>
+                    <h2 className="pt-5 pb-1">Avoiding reinventing the wheel with universal code search</h2>
+                    <p>Sourcegraph empowers developers at CERN to reuse code that already exists, avoiding duplication and saving developers countless hours redoing work that has already been done. It takes search one step further by &quot;understanding&quot; the structure of the code (as opposed to just &quot;seeing&quot; it as raw text), enabling the organization to do semantic searches that yield accurate results.</p>
                     <InContentBlockquote
                         quote="I was recently tasked with something that I, admittedly, had no idea how to do, but I was sure that someone at CERN must’ve already done it at some point. Sourcegraph universal code search took me directly to the code I was looking for so I could repurpose it. It’s also an invaluable tool for enabling our developers to learn from one another."
                         author="Vito Baggiolini"
