@@ -3,7 +3,7 @@
 The code insights team is looking for an experienced, passionate engineer to build with us an entirely new product area of Sourcegraph: Code insights.
 Code insights is the first feature in Sourcegraph that provides **high-level** information about code, building atop all Sourcegraph's other features and even external data sources.
 
-We're building a [small, autonomous, international, full stack team](https://about.sourcegraph.com/handbook/engineering/code-insights).
+We're building an [autonomous, international, full-stack team](https://about.sourcegraph.com/handbook/engineering/code-insights).
 
 The code insights team is building at the forefront of developer knowledge and code analysis using lean, user-focused methods – and everything we've built so far makes both our customers and our coworkers react with delight and surprise.
 
