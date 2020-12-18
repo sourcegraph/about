@@ -8,7 +8,7 @@ We're hiring! Check out our open positions:
 
 ### Engineering
 
-- [Engineering Manager - Backend Platform and Cloud](../handbook/engineering/hiring/engineering-manager-backend-platform.md)
+- [Engineering Manager - Cloud Application and Core Services](../handbook/engineering/hiring/engineering-manager-cloud.md)
 - [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
@@ -44,11 +44,6 @@ We're hiring! Check out our open positions:
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 - [Salesforce Administrator and Developer](../handbook/ops/roles/sf_admin_developer.md)
 
-### People Ops
-
-- [Onboarding & Teammate Success Manager](../handbook/people-ops/roles/onboarding_teammate_success_manager.md)
-- [Recruiter (customer-facing roles)](../handbook/people-ops/roles/recruiter_customer_facing.md)
-- [Technical Recruiter - Product](../handbook/people-ops/roles/technical_recruiter_product.md)
 
 ### CEO
 

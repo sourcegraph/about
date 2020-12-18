@@ -31,7 +31,7 @@ At Sourcegraph, our customers and community are developers, and we equate develo
 ### In the first 90 days you will…
 * Build and scale an open source program that expands OSS use of Sourcegraph by providing value for leading projects, for example:
     * Providing search homepages for OSS projects and integrating Sourcegraph into OSS onboarding and reference documentation.
-    * Working with OSS projects to enable LISF and add a Sourcegraph badge in their README.
+    * Working with OSS projects to enable [LSIF](https://lsif.dev/) and add a Sourcegraph badge in their README.
 * Identify and execute mutually beneficial co-marketing opportunities that will raise awareness within the developer community and drive referrals.
 * Grow the amount of advocates within our Sourcegraph community and increase brand engagement with high quality content, virtual events, and experiences.
 * Increase the number of developers who regularly mention, give talks, write content, and organize/attend virtual events related to Sourcegraph. 
@@ -66,7 +66,5 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
 **[Click here to apply](https://jobs.lever.co/sourcegraph/480e8d71-03af-4659-ac90-b8e32ad4ef34/apply)**
-
-If you’re interested in Sourcegraph but aren’t yet ready to apply we are still happy to connect and answer any questions that you might have: DM us on Twitter or email hiring@sourcegraph.com.
 
 Go back to the [careers page](../../../company/careers.md) for all open positions.

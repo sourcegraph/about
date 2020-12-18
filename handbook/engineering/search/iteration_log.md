@@ -11,8 +11,27 @@ This document contains the goals and work log for the search team's [2-week iter
     - $DESIRED_OUTCOME
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
+    
+## 2020-12-14 to 2021-01-04
 
-## 2020-11-30 to 2020-12-10
+### Streaming search
+- **Owner(s):** Juliana, Keegan
+- **Outcomes:**
+    - Streaming search UI renders errors
+    - Streaming search is presented to the team in a Brainfood session
+    - Progress API is combined with results and streams out.
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### $GOAL_OR_THEME
+
+- **Owner(s):** $OWNER
+- **Outcomes:**
+    - $DESIRED_OUTCOME
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+## 2020-11-30 to 2020-12-11
 
 ### Code monitoring
 
@@ -22,7 +41,10 @@ This document contains the goals and work log for the search team's [2-week iter
     - Design QA feedback on the code monitoring creation and list pages is addressed.
     - (Loïc) Starting points for code monitoring are documented
 - **Work log:**
+    - 2020-12-04 (stefan): The backend is ready for v1 of code monitoring. I have already created a couple of code monitors on Cloud and emails are sent as expected. I removed the unsubscribe link in the email by updating a rule on Mailchimp.
     - 2020-12-04 (stefan): I made good progress this week. Locally, code monitoring works as expected including sending emails. I am currently splitting up the changes in smaller chunks to make the updates more reviewable. I don't expect to have enough time to implement a custom "unsubscribe", so we will go with Mailchimp (just like saved searches). Since Mailchimp adds the unsubscribe footer automatically, we have to make a minor adjustment to the design of the email template. I plan to spend the next week fixing minor bugs, increasing test coverage, and improving code quality.
+    - 2020-12-04 (farhan - posted late): Factored out the code monitoring form, opened PR for edit functionality, added GraphQL requests for editing. Worked on a lot of small details e.g. enabling/disabling buttons, confirmation before cancelling, redirecting to list page. 
+    - 2020-12-14 (farhan): Merged editing and deleting functionality. Added unit tests for whole flow. Implemented two rounds of QA. Fixed bugs found around editing actions, submitting the form before all fields were complete on Safari.
 
 ### Documentation clean up and content
 
@@ -31,7 +53,8 @@ This document contains the goals and work log for the search team's [2-week iter
     - Add docs for users transitioning from OpenGrok: differences from OpenGrok, keywords and search formats available, typical searches in OG and Sourcegraph equivalents.
     - Clean up all existing search docs so each doc has single responsibility and is in the correct Tutorial/Explanation/How-to/Reference category.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2020-12-04 (posted late): Checked in with CE team for requirements on the OpenGrok documentation. It turns out the [existing page](https://docs.sourcegraph.com/code_search/how-to/opengrok) was useful for a customer facing this issue, and they'll be linking to the page in their onboarding process. May need to improve discoverability down the line, but for now we're waiting on additional requests they might have. Updated outdated content on that page.
+    - 2020-12-14: no update here, was focused on code monitoring.
     
 ### Structural search for monorepos
 - **Owner(s):** Rijnard
@@ -39,6 +62,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Make structural search work better for monorepos. Currently monorepos can time out for structural search purely because it takes too long to copy the data to search. The outcome focuses on architectural changes to avoid unnecessary data zipping and copying to our searcher worker. 
 - **Work log:**
     - 2020-12-04: I have a work-in-progress branch that pulls out the current frontend code and rearchitects things to run through searcher. Next step is to make searcher talk directly to Zoekt. This week I also took some time to familiarize myself with our dashboard and spent some time making informative search tables/graphs. I also spent time finalizing toggle behavior for search expressions and refactoring frontend query code.
+    - 2020-12-11: I haven't completed the work to have searcher talk to Zoekt yet, this needs more time and I couldn't hit this objective in one iteration. I estimate I need another week or two to get it done. Other work this week was refactoring frontend and backend code to polish search expressions for commit search, and query highlighting/hovers for release.
     
 ### Streaming search
 - **Owner(s):** Juliana, Keegan
@@ -48,9 +72,13 @@ This document contains the goals and work log for the search team's [2-week iter
     - We have repo-level streaming for search types other than `diff`.
     - The streaming search UI is closer to feature parity with the GraphQL search UI.
 - **Work log:**
+    - 2020-12-02: (keegan) backend progress API implemented, but only sends at the end of stream.
     - 2020-12-03: (juliana) Streaming search is now enabled for Sourcegraph org users on sourcegraph.com
     - 2020-12-04: (juliana) Streaming search now shows states (loading, completed with no results, completed with some results) ([#16410](https://github.com/sourcegraph/sourcegraph/pull/16410))
     - 2020-12-04: (juliana) Met with Rob to QA to the search progress UI design implementation. Some PRs and work items have been created out of that. ([#16475](https://github.com/sourcegraph/sourcegraph/pull/16475), [#16476](https://github.com/sourcegraph/sourcegraph/pull/16476))
+    - 2020-12-11: (juliana) More front-end features have been completed for streaming search: alerts, saving searches, search again with skipped results, plus more UI polish fixes 
+    - 2020-12-11: (keegan) did some follow-up work on progress API after feedback from enabling streaming. Including samples of repos that where skipped in the messages.
+    - 2020-12-11: (keegan) overall did not make much progress this iteration. Had low productivity.
     
     
 ## 2020-11-16 to 2020-11-27

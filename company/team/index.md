@@ -507,3 +507,26 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tommyodonnell87/)
 - Tommy hails from County Kerry on the South West Coast of Ireland. He graduated with a degree in Business studies from the University of Limerick before completing a Masters in Accounting at Dublin City University. Prior to Sourcegraph Tommy spent over 5 years working on a diverse range of clients at the EY Limerick and Boston offices, before spending a further 5 years in a financial reporting role at Pivotal Software. When he is not stuck in spreadsheets, you will probably find him having a quiet pint of Guinness, following the fortunes of the New England Patriots and the Kerry Gaelic Football team, or reading up on the latest rounds of funding’s in the startup world.
 
+## Mike McLaughlin (he/him)
+
+- Customer Engineer
+- Chicago, IL, USA 🇺🇸
+- GitHub: [mike-r-mclaughlin](https://github.com/mike-r-mclaughlin)
+- [mike@sourcegraph.com](mailto:mike@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mikermclaughlin/)
+- Mike spent the first half of his career as a developer.  He transitioned to pre-sales after realizing how much he loves working with customers to solve technically challenging problems.  Mike lives in Chicago's Lincoln Park neighborhood with his wife Erika and their 2 cats (Winston and Mattie) and dog (Stella).  His pets can usually be found napping by his desk during working hours.  When not working, Mike enjoys traveling, live music, and relaxing on the couch.
+
+## Rok Novosel (he/him)
+
+- Software Engineer
+- Trebnje, Slovenia 🇸🇮
+- GitHub: [novoselrok](https://github.com/novoselrok)
+- [rok@sourcegraph.com](mailto:rok@sourcegraph.com), [@novoselrok](https://twitter.com/novoselrok)
+- Rok is a software engineer from Trebnje, Slovenia. He finished his Master's degree in computer science at the University of Ljubljana, focusing on parallel programming languages. Before joining Sourcegraph his work was mostly in the ad-tech industry. In his free time, he likes to tinker with various side projects ranging from compilers to WebAssembly. Outside of programming, he enjoys hiking, playing FIFA and supporting the Arsenal football club.
+
+## André Eleuterio (he/him)
+
+- Security Engineer
+- Curitiba, Brazil 🇧🇷
+- GitHub: [andreeleuterio](https://github.com/andreeleuterio)
+- [andre@sourcegraph.com](mailto:andre@sourcegraph.com), [@eleuterio_](https://twitter.com/eleuterio_)
+- André is a Security Engineer from Curitiba, Brazil. Before joining Sourcegraph he was working at npm and GitHub, holding different security responsibilities. André is a devout follower of Athletico Paranaense, a local soccer team, despite its rare joys and successes. Definitely a geek, be careful when bringing up Breath of the Wild or Magic the Gathering around André as that can lead to some very long conversations.

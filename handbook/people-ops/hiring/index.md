@@ -42,7 +42,7 @@ We cross-post our open positions to the following locations:
 - ["Ask HN: Who is Hiring" monthly thread](hacker-news-who-is-hiring.md)
 - [RemoteWoman](https://remotewoman.com/)
 - [Tech Ladies](https://www.hiretechladies.com/). With our current plan we can post up to 10 roles at a time (and can rotate out roles as they are filled). Nick owns this list and payments are made with Nick's Brex. Tech Ladies checks our open positions every month to see if there are updates, but we can request an update anytime by emailing jobpostings@hiretechladies.com. Here are the 10 roles that we post:
-  1. [Engineering Manager - Backend Platform and Cloud](../../engineering/hiring/engineering-manager-backend-platform.md)
+  1. [Engineering Manager - Cloud Application and Core Services](../../engineering/hiring/engineering-manager-cloud.md)
   1. [Software Engineer - Frontend](../../engineering/hiring/software-engineer-frontend.md)
   1. [Software Engineer - Backend](../../engineering/hiring/software-engineer-backend.md)
   1. [Software Engineer - Distribution](../../engineering/hiring/software-engineer-distribution.md)
@@ -129,8 +129,14 @@ Here are some other questions that candidates have asked (e.g., in the [CEO inte
 1. How much cash does the company have in the bank?
 1. Other [questions about Sourcegraph's internal financial metrics](../../ceo/index.md#questions-about-sourcegraph).
 
+## Reference checks
+
+[Reference checks](reference_check_questions.md).
+
 ## Making an offer
 
-Once the decision is made to [extend an offer](interview_process.md#outcome) to a candidate, the hiring manager and a representative from the People Ops team will schedule a call to walk through a summary of the offer. This summary will include an overview of cash compensation (including any commission or bonus plans), benefits, and any equity-based compensation (including a simple calculator for potential future values).
+Once the decision is made to [extend an offer](interview_process.md#outcome) to a candidate, a representative from the People Ops team will reach out to the hiring manager to figure out offer details together.
 
-With the candidate's approval, Sourcegraph will then conduct three reference check interviews with former peers and at least one former manager. If we are happy with the results, the Sourcegraph legal team will send the official DocuSign with the appropriate contracting or employment agreement(s) for the candidate's role, status, and location. Templates for employees and contractors can be found in the shared [HR/Employees/Contractors Dropbox folder](https://www.dropbox.com/home/Legal/HR%3AEmployees%3AContractors).
+When the offer is approved, the hiring manager and a representative from the People Ops team will schedule a call to walk through a summary of the offer with the candidate. This summary will include an overview of cash compensation (including any commission or bonus plans), benefits, and any equity-based compensation (including a simple calculator for potential future values).
+
+Once the candidate verbally accepts the offer, Sourcegraph legal team will send the official DocuSign with the appropriate contracting or employment agreement(s) for the candidate's role, status, and location. Templates for employees and contractors can be found in the shared [HR/Employees/Contractors Dropbox folder](https://www.dropbox.com/home/Legal/HR%3AEmployees%3AContractors).

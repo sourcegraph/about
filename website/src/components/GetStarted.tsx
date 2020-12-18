@@ -61,6 +61,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                     Join the next live product tour
                                 </Link>
                             </div>
+                            <div className="pt-1">Contact us: <a href="/contact/request-info/?form_submission_source=getting-started">Talk with a product engineer</a></div>
                         </div>
                         <div className="col-lg-6 get-started__search">
                             <h2 className="get-started__search-headings">Search public code</h2>
