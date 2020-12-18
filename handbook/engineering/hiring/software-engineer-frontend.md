@@ -89,7 +89,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
             - [Eric Brody-Moore](../../../company/team/index.md#eric-brody-moore)
             - [Jonah Dueck](../../../company/team/index.md#jonah-dueck-he-him)
             - [Josh Saunders](../../../company/team/index.md#josh-saunders)
-            - [Nick McMillen](#nick-mcmillen-he-him)
+            - [Nick McMillen](../../../company/team/index.md#nick-mcmillen-he-him)
             - [Christine Lovett](../../../company/team/index.md#christine-lovett-she-her)
    - 30 minutes [VP Engineering](../../../company/team/index.md#nick-snyder-he-him)
    - 30 minutes [CTO](../../../company/team/index.md#beyang-liu)
