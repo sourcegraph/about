@@ -11,8 +11,8 @@ const CASESTUDIES: {
 }[] = [
         {
             name: 'CERN',
-            logo: '/external-logos/cern-badge-logo.jpg',
-            title: 'CERN reduces technical debt in mission-critical applications',
+            logo: '/external-logos/cern-name-logo.svg',
+            title: 'Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications',
             url: '/case-studies/cern-reduces-technical-debt',
         },
         {

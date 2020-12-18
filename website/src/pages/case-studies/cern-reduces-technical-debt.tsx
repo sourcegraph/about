@@ -18,7 +18,7 @@ export default ((props: any) => (
             title: 'Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications',
             description:
                 'Sourcegraph empowers developers at CERN to reuse existing code and manage mission-critical code changes with ease',
-            image: 'https://about.sourcegraph.com/external-logos/cern-logo.png',
+            image: 'https://about.sourcegraph.com/external-logos/cern-name-reverse-logo.svg',
         }}
         className="navbar-dark bg-black"
     >
@@ -28,9 +28,9 @@ export default ((props: any) => (
             logo=""
             quote={{
                 quote:
-                    'Sourcegraph is extremely valuable for what we do. Without it, we couldn’t estimate the risks and costs of our APIs’ evolution, or clean up deprecated APIs.',
+                    'Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks and costs of our APIs’ evolution.',
                 author: 'Vito Baggiolini, Senior Software Engineer, CERN',
-                image: '/external-logos/cern-reverse-logo.svg',
+                image: '/external-logos/cern-name-reverse-logo.svg',
             }}
         >
             <ContentSection color="white" className="col-md-6 pb-5">

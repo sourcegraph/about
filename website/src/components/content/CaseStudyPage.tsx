@@ -16,6 +16,7 @@ interface Props {
     logo: string
     quote?: Quote
     pdf?: string
+    heroImage?: string
     className?: string
     titleClassName?: string
     children?: React.ReactNode
@@ -29,11 +30,17 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
     className = 'case-study',
     titleClassName = '',
     pdf,
+    heroImage,
     children,
 }) => (
         <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
             <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
                 {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
+                {heroImage && (
+                    <div className="col-12 col-lg-9">
+                        <img className="img-fluid mx-auto d-block mb-3" src={heroImage} alt={customer} />
+                    </div>
+                )}
                 {pdf && (
                     <a href={pdf} className="btn btn-primary mt-3" rel="nofollow" target="_blank">
                         <i className="fa fa-file-pdf pr-2" />
