@@ -12,13 +12,13 @@ changelogItems:
   - description: "Experimental: [`transformChanges` in campaign specs](https://docs.sourcegraph.com/campaigns/references/campaign_spec_yaml_reference#transformchanges) is now available as a feature preview to allow users to create multiple changesets in a single repository."
     url: https://github.com/sourcegraph/sourcegraph/pull/16235
     category: Campaigns
-  - description: "Extensions can now add decorations to files on the sidebar tree view and tree page through the experimental `FileDecoration` API."
+  - description: "Extensions can now add decorations to files on the sidebar tree view and tree page through the [experimental `FileDecoration` API](https://docs.sourcegraph.com/extensions/authoring/tutorials/file_decorations)."
     url: https://github.com/sourcegraph/sourcegraph/pull/15833
     category: Extensions
   - description: "Search queries may now scope subexpressions across repositories and files, and also allow greater freedom for combining search filters. See the updated documentation on [search subexpressions](https://docs.sourcegraph.com/code_search/tutorials/search_subexpressions) to learn more."
     url: https://github.com/sourcegraph/sourcegraph/pull/16866
     category: Search
-  - description: The total size of all Git repositories and the lines of code for indexed branches are displayed in the site admin overview.
+  - description: The total size of all Git repositories and the total lines of code for indexed branches are now displayed in the site admin overview.
     url: https://github.com/sourcegraph/sourcegraph/issues/15125
     category: Admin
   - description: Extensions can now easily query the Sourcegraph GraphQL API through a dedicated API method.
