@@ -28,7 +28,8 @@ To update a template place the new template in the main Sales Template folder, n
 
  - [CE Account Ownership](https://docs.google.com/spreadsheets/d/1EbAlUlMoZU-M2haRj0DoW3E7h7KG2D0vwLX3PlwL-h0/edit#gid=0)
 
-##Customer Notes
+## Customer Notes
+
 Where to Store Customer Notes and Documents:
  - Create Folder in the 'Customer Notes' Shared Folder Here
  - Naming Convention for Folder: "Customer/Prospect Name" - - then # customer or # prospect (see folder for examples)
