@@ -6,31 +6,25 @@ tags: [blog, release]
 slug: "release/3.23"
 published: true
 changelogItems:
-  - description: The total size of all Git repositories and the lines of code for indexed branches are displayed in the site admin overview.
-    url: https://github.com/sourcegraph/sourcegraph/issues/15125
-    category: Admin
   - description: "Various additions to syntax highlighting and hover tooltips in the search query bar (e.g., regular expressions). Can be disabled with `{ \"experimentalFeatures\": { \"enableSmartQuery\": false } }` in case of unlikely adverse effects."
     url: https://github.com/sourcegraph/sourcegraph/pull/16742
     category: Search
-  - description: "Search queries may now scope subexpressions across repositories and files, and also allow greater freedom for combining search filters. See the updated documentation on [search subexpressions](https://docs.sourcegraph.com/code_search/tutorials/search_subexpressions) to learn more."
-    url: https://github.com/sourcegraph/sourcegraph/pull/16866
-    category: Search
-  - description: The total size of all Git repositories and the lines of code for indexed branches will be sent back in pings as part of critical telemetry.
-    url: https://github.com/sourcegraph/sourcegraph/pull/16188
-    category: Repositories
   - description: "Experimental: [`transformChanges` in campaign specs](https://docs.sourcegraph.com/campaigns/references/campaign_spec_yaml_reference#transformchanges) is now available as a feature preview to allow users to create multiple changesets in a single repository."
     url: https://github.com/sourcegraph/sourcegraph/pull/16235
     category: Campaigns
   - description: "Extensions can now add decorations to files on the sidebar tree view and tree page through the experimental `FileDecoration` API."
     url: https://github.com/sourcegraph/sourcegraph/pull/15833
     category: Extensions
-  - description: "Licensing is now enforced for campaigns: creating a campaign with more than five changesets requires a valid license. Please [contact Sourcegraph with any licensing questions](https://about.sourcegraph.com/contact/sales/)."
-    url: https://github.com/sourcegraph/sourcegraph/issues/15715
-    category: Campaigns
-  - description: "The `gitserver` container now has a dependency on Postgres. This does not require any additional configuration unless access to Postgres requires a sidecar proxy / firewall rules."
-    url: https://github.com/sourcegraph/sourcegraph/pull/16121
+  - description: "Search queries may now scope subexpressions across repositories and files, and also allow greater freedom for combining search filters. See the updated documentation on [search subexpressions](https://docs.sourcegraph.com/code_search/tutorials/search_subexpressions) to learn more."
+    url: https://github.com/sourcegraph/sourcegraph/pull/16866
+    category: Search
+  - description: The total size of all Git repositories and the lines of code for indexed branches are displayed in the site admin overview.
+    url: https://github.com/sourcegraph/sourcegraph/issues/15125
     category: Admin
   - description: Extensions can now easily query the Sourcegraph GraphQL API through a dedicated API method.
     url: https://github.com/sourcegraph/sourcegraph/pull/15566
     category: API
+  - description: "Licensing is now enforced for campaigns: creating a campaign with more than five changesets requires a valid license. Please [contact Sourcegraph with any licensing questions](https://about.sourcegraph.com/contact/sales/)."
+    url: https://github.com/sourcegraph/sourcegraph/issues/15715
+    category: Campaigns
 ---
