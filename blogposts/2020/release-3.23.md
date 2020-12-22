@@ -9,7 +9,7 @@ changelogItems:
   - description: "Various additions to syntax highlighting and hover tooltips in the search query bar (e.g., regular expressions). Can be disabled with `{ \"experimentalFeatures\": { \"enableSmartQuery\": false } }` in case of unlikely adverse effects."
     url: https://github.com/sourcegraph/sourcegraph/pull/16742
     category: Search
-  - description: "Experimental: In campaign specs, [`transformChanges`](https://docs.sourcegraph.com/campaigns/references/campaign_spec_yaml_reference#transformchanges) is now available as a feature preview to allow users to create multiple changesets in a single repository."
+  - description: "Experimental: [`transformChanges` in campaign specs](https://docs.sourcegraph.com/campaigns/references/campaign_spec_yaml_reference#transformchanges) is now available as a feature preview to allow users to create multiple changesets in a single repository."
     url: https://github.com/sourcegraph/sourcegraph/pull/16235
     category: Campaigns
   - description: "Extensions can now add decorations to files on the sidebar tree view and tree page through the [experimental `FileDecoration` API](https://docs.sourcegraph.com/extensions/authoring/tutorials/file_decorations)."
