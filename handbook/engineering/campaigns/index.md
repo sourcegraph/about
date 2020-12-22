@@ -60,9 +60,12 @@ For each iteration (currently one month long), we follow this process:
   * Then we look at our roadmap doc to discuss comments people had, verify estimates, and ultimately to sort the items in terms of priority. *The goal is to have a freshly prioritized roadmap.*
   * Finally, we work down that list, adding the highest priority items to our tracking issue (creating issues if needed), assigning them to engineers until we are at capacity (leaving some slack in the sprint for customer support and other unexpected issues).
 
-* Each day, Slack reminds us to do our stand-up, which consists of a *short* message (it shouldn't take longer than 30s to write) in the reminder's thread. As we are a globally distributed team, this can be a statement of intent for the day, or a recap of what we have finished that day.
-
 * After sprint planning, the team has a retro to discuss how the previous sprint went, and what changes we might want to our working agreements.
+
+* Each day, Slack reminds us to do our text check-in, which consists of a *short* message (it shouldn't take longer than a minute to write) in the reminder's thread. This should be a recap of what we have finished that day.
+
+* On Tuesdays, each engineer posts a status update in the current tracking issue with any additional info regarding what they accomplished in the previous week, as well as what they intend to accomplish in the coming week. The EM then rolls this up into a status update that is emailed to engineering leadership.
+  * Since most of the "what we accomplished" details have already been recorded in the daily Slack check-ins, it is not necessary for engineers to repeat any of those items. The status update could still include any additional info or color that the engineer wishes to record (if any), but would primarily be forward-looking.
 
 ## Working Agreements
 
