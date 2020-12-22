@@ -49,7 +49,7 @@ When I create a campaign to make large-scale code changes I want to _focus on th
 
 * Each day, Slack reminds us to do our text check-in, which consists of a *short* message (it shouldn't take longer than a minute to write) in the reminder's thread. This should be a recap of what we have finished that day.
 
-* On Tuesdays, each engineer posts a status update in the current tracking issue with any additional info regarding what they accomplished in the previous week, as well as what they intend to accomplish in the coming week. The EM then rolls this up into a status update that is emailed to engineering leadership.
+* On Tuesdays, each engineer posts a status update in the current tracking issue with any additional info regarding what they accomplished in the previous week that wasn't captured in their daily status updates, as well as what they intend to accomplish in the coming week. The EM then rolls this up into a status update that is emailed to engineering leadership.
   * Since most of the "what we accomplished" details have already been recorded in the daily Slack check-ins, it is not necessary for engineers to repeat any of those items. The status update could still include any additional info or color that the engineer wishes to record (if any), but would primarily be forward-looking.
 
 * One Big Thing: Each sprint, each engineer gets one big thing to work on — one significant chunk of work scoped to be doable in a single sprint (leaving some slack in the sprint for customer support and other unexpected issues). When it is completed, engineers will pull P0 items from [our planning project](https://github.com/sourcegraph/sourcegraph/projects/10) into the current sprint to work on (or P1 if there are no P0s).
