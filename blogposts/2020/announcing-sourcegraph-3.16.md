@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.16
 heroImage: /blog/3.16-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements"
 ---
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
@@ -94,15 +95,15 @@ We are excited to hear your feedback as we continue to work on this feature! Get
 
 Sourcegraph 3.16 includes multiple smaller bug fixes and performance improvements to campaigns. In addition, we focused on making it easier and more straightforward to start using campaigns on your Sourcegraph instance. We addressed this in several ways: by providing clearer instructions in the onboarding process, improving the webhooks setup process, and by improving our documentation.
 
-We highly recommend configuring [campaigns webhooks](https://docs.sourcegraph.com/user/campaigns/getting_started) for your Sourcegraph instance to reduce the load on the code host, and to improve the syncing performance of campaigns updated in Sourcegraph with the code host.
+We highly recommend configuring [campaigns webhooks](https://docs.sourcegraph.com/campaigns/getting_started) for your Sourcegraph instance to reduce the load on the code host, and to improve the syncing performance of campaigns updated in Sourcegraph with the code host.
 
-The [documentation for campaigns](https://docs.sourcegraph.com/user/campaigns) has also undergone a complete overhaul and includes the video above that explains what campaigns can do.
+The [documentation for campaigns](https://docs.sourcegraph.com/campaigns) has also undergone a complete overhaul and includes the video above that explains what campaigns can do.
 
 Campaigns are currently in beta. During the beta period, campaigns are free to use. After the beta period, campaigns will be available as a paid add-on. Please [contact us](mailto:sales@sourcegraph.com) for more information.
 
 ## Best-in-class syntax highlighting
 
-![syntax_highlighting](https://storage.googleapis.com/sourcegraph-assets/blog/diff.gif?v=2)
+![syntax_highlighting](https://sourcegraphstatic.com/blog/diff.gif?v=2)
 
 Sourcegraph 3.16 includes major improvements to syntax highlighting throughout Sourcegraph. In addition to general improvements, six new languages are supported (Smarty, Ethereum / Solidity / Vyper, Cuda, COBOL, vb.NET, and ASP.NET), and 30 new file extensions are now detected.
 
@@ -126,7 +127,7 @@ Our precise code intelligence backend has been rewritten from TypeScript to Go. 
 
 ## Discover useful scopes with `repogroup` autocompletion
 
-![Repogroup-autocompletion](https://storage.googleapis.com/sourcegraph-assets/repogroup_completion.gif)
+![Repogroup-autocompletion](https://sourcegraphstatic.com/repogroup_completion.gif)
 
 The `repogroup` filter is useful for creating collections of repositories to search over within Sourcegraph. However, there wasn’t an easy way for users to learn what `repogroups` were available. Now, Sourcegraph provides autocompletion to help you discover available options. This happens automatically when you start typing, or can be triggered using the ctrl-spacebar keyboard shortcut. Try it out in the new smart search bar for plain text mode or in interactive mode!
 
@@ -148,7 +149,7 @@ We want to better understand the activity of users on a Sourcegraph instance whi
 
 The out-of-the-box search-based code intelligence was broken on indexed commits for Haskell, JSONNet, Kotlin, Scala, Swift, Thrift, and TypeScript for several releases. Our symbol indexer did not know how to extract symbols for these languages, even though our unindexed symbol service did. This has been fixed and users with code in these languages should expect to see code intelligence hovers for their code once again!
 
-Additionally, Cobol and Tcl have been added to our growing list of languages supported via Sourcegraph’s basic code intelligence. Every Sourcegraph instance comes enabled with basic code intelligence provided by search-based heuristics. For fast and precise code intelligence, see our [LSIF documentation](https://docs.sourcegraph.com/user/code_intelligence/lsif).
+Additionally, Cobol and Tcl have been added to our growing list of languages supported via Sourcegraph’s basic code intelligence. Every Sourcegraph instance comes enabled with basic code intelligence provided by search-based heuristics. For fast and precise code intelligence, see our [LSIF documentation](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
 ## Changelog
 

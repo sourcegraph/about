@@ -16,7 +16,7 @@ We're building Sourcegraph to be the **best way for developers to search and bro
 
 New in Sourcegraph 2.9:
 
-- [Easy organization-wide G Suite installation of the Chrome extension](#easy-organization-wide-g-suite-rollout-of-the-chrome-extension)
+- [Easy organization-wide Google Workspace installation of the Chrome extension](#easy-organization-wide-google-workspace-rollout-of-the-chrome-extension)
 - [Filtering search results by repository](#filtering-search-results-by-repository)
 - [Large result sets and pagination](#large-result-sets-and-pagination)
 - [Improved code view and hover tooltips](#improved-code-view-and-hover-tooltips)
@@ -31,18 +31,18 @@ Sourcegraph is a self-hosted code search and intelligence tool that helps your t
 
 Sourcegraph runs securely in your own network, takes 5 minutes to install, scales to 1,000s of developers and 10,000s of repositories, and is free to use (with paid upgrades starting at [$5/user/month](/pricing)). It pretty quickly becomes one of the most-used tools in an organization, as we hear from teams of 10s–1,000s of developers using Sourcegraph.
 
-See "[Sourcegraph overview](https://docs.sourcegraph.com/user)" and "[Sourcegraph tour](https://docs.sourcegraph.com/user/tour)" for more information, and watch it in action:
+See "[Sourcegraph overview](https://docs.sourcegraph.com/getting-started)" and "[Sourcegraph tour](https://docs.sourcegraph.com/getting-started/tour)" for more information, and watch it in action:
 
 ![2018-05-29 14.12.03](//images.ctfassets.net/le3mxztn6yoo/30ts8Zdk0gkoYquOyyOQsu/bdad165ebb471034c45b91777dd59bdb/2018-05-29_14.12.03.gif)
 
-## Easy organization-wide G Suite rollout of the Chrome extension
-You can now install and preconfigure the [Sourcegraph Chrome extension](https://docs.sourcegraph.com/integration/browser_extension) for all users in your G Suite organization.
+## Easy organization-wide Google Workspace rollout of the Chrome extension
+You can now install and preconfigure the [Sourcegraph Chrome extension](https://docs.sourcegraph.com/integration/browser_extension) for all users in your Google Workspace organization.
 
-This means that everyone in your organization will get code intelligence in files, diffs, and PRs on GitHub.com, GitHub Enterprise, and Phabricator. After the admin configures [G Suite automatic installation of the Chrome extension](https://docs.sourcegraph.com/integration/google_gsuite), each user's Chrome browser will install and configure the Sourcegraph Chrome extension automatically. (It may take a few hours to fully propagate the Chrome settings.) Then all users will see code intelligence like this:
+This means that everyone in your organization will get code intelligence in files, diffs, and PRs on GitHub.com, GitHub Enterprise, and Phabricator. After the admin configures [Google Workspace automatic installation of the Chrome extension](https://docs.sourcegraph.com/integration/google_gsuite), each user's Chrome browser will install and configure the Sourcegraph Chrome extension automatically. (It may take a few hours to fully propagate the Chrome settings.) Then all users will see code intelligence like this:
 
 ![Screenshot from 2018-06-18 13-29-15](//images.ctfassets.net/le3mxztn6yoo/1YQvAWkZxKYIEkye4wu4Q0/00541554ad928d47fbeed0f88646f8af/Screenshot_from_2018-06-18_13-29-15.png)
 
-See "[Automatically install with G Suite](https://docs.sourcegraph.com/integration/google_gsuite)" in the Sourcegraph documentation for more information.
+See "[Automatically install with Google Workspace](https://docs.sourcegraph.com/integration/google_gsuite)" in the Sourcegraph documentation for more information.
 
 ## Filtering search results by repository
 When you search for code on Sourcegraph, it's now easier to refine the results by repository.

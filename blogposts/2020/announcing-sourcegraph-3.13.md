@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.13
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.13: Interactive search mode, structural search toggle, and campaigns with custom code execution"
 ---
 
 Quickly explore and better understand all the code everywhere with Sourcegraph Universal Code Search. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -99,7 +100,7 @@ For example, if I wanted to bump the version of RxJS in several repositories, my
 }
 ```
 
-See [our documentation](https://docs.sourcegraph.com/user/automation#creating-a-campaign-from-a-set-of-patches) for more details and examples.
+See [our documentation](https://docs.sourcegraph.com/campaigns) for more details and examples.
 
 Code change management campaigns are in private beta. [Watch the campaigns screencasts](https://about.sourcegraph.com/product/code-change-management#see-it-in-action) to see what we have planned, and [apply for early access](https://about.sourcegraph.com/contact/request-code-change-management-demo/) to campaigns for your organization.
 
@@ -107,7 +108,7 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
 
 ![Sourcegraph basic code intelligence languages](/blog/3-13-language-extensions.png)
 
-With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, and VHDL, Sourcegraph basic code intelligence now supports 32 languages. Every Sourcegraph instance comes enabled with basic code intelligence provided by search based heuristics. For fast and precise code intelligence see our [LSIF documentation](https://docs.sourcegraph.com/user/code_intelligence/lsif).
+With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, and VHDL, Sourcegraph basic code intelligence now supports 32 languages. Every Sourcegraph instance comes enabled with basic code intelligence provided by search based heuristics. For fast and precise code intelligence see our [LSIF documentation](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
 ## LSIF-based precise code intelligence for Dart
 
@@ -118,7 +119,7 @@ With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, a
   <p style="text-align: center"><a href="https://vimeo.com/392760161" target="_blank">View on Vimeo</a></p>
 </p>
 
-The [Dart LSIF indexer](https://github.com/sourcegraph/lsif-dart) makes precise code intelligence available for Dart projects. LSIF (Language Server Index Format) is a file format for precomputed code intelligence data that you can upload to your Sourcegraph instance for your projects. Follow the [LSIF quickstart guide](https://docs.sourcegraph.com/user/code_intelligence/lsif_quickstart) to get started and see the most up-to-date information on languages with LSIF indexers at [lsif.dev](https://lsif.dev/).
+The [Dart LSIF indexer](https://github.com/sourcegraph/lsif-dart) makes precise code intelligence available for Dart projects. LSIF (Language Server Index Format) is a file format for precomputed code intelligence data that you can upload to your Sourcegraph instance for your projects. Follow the [LSIF quickstart guide](https://docs.sourcegraph.com/code_intelligence/lsif_quickstart) to get started and see the most up-to-date information on languages with LSIF indexers at [lsif.dev](https://lsif.dev/).
 
 ## New `content` search keyword
 

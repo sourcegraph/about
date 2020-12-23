@@ -6,6 +6,7 @@ tags: [blog]
 slug: sourcegraph-3.10
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.10: Improved search autocompletion, native GitLab integration, and search and replace campaigns"
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -99,7 +100,7 @@ Video will be added later, not essential for release post, but important in its 
 
 With the completion of the Java LSIF indexer, LSIF-based precise code intelligence now supports five languages: Go, Typescript, Java, C++, and Python. See [lsif.dev](https://lsif.dev/) for the most up-to-date information on the list of languages with LSIF indexers.
 
-We are looking for feedback from project owners interested in trying out precise code intelligence! Use our new [LSIF quickstart guide](https://docs.sourcegraph.com/user/code_intelligence/lsif_quickstart) to try it out manually before adding it as a step in your CI.
+We are looking for feedback from project owners interested in trying out precise code intelligence! Use our new [LSIF quickstart guide](https://docs.sourcegraph.com/code_intelligence/lsif_quickstart) to try it out manually before adding it as a step in your CI.
 
 ## Scaling search for our largest customers
 

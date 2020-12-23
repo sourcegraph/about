@@ -2,7 +2,7 @@
 /* tslint:disable no-console */
 
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import './css/styles.scss'
 
 interface HtmlProps {
@@ -23,11 +23,11 @@ export default class HTML extends React.Component<HtmlProps> {
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
-                    {head.title.toComponent()}
                     {head.meta.toComponent()}
                     {head.link.toComponent()}
                     {/* {css} */}
                     <link rel="icon" type="image/png" href="/favicon.png" />
+                    <link rel="alternate" type="application/rss+xml" title="Sourcegraph Blog" href="/rss.xml" />
                     <link
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"

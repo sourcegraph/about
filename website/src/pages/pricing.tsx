@@ -1,10 +1,10 @@
-import { Link } from 'gatsby'
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import { PricingPlan, Features } from '../components/pricing/PricingPlan'
+import { Features, PricingPlan } from '../components/pricing/PricingPlan'
 import { PricingPlanProperty } from '../components/pricing/PricingPlanProperty'
+import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const DESCRIPTION =
     'Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan.'
@@ -35,7 +35,7 @@ const TEAM_FEATURES: Features = { ...STARTER_FEATURES, userAndAdminRoles: true }
 
 export default ((props: any) => (
     <Layout location={props.location}>
-        <div className="bg-white text-dark">
+        <div className="text-dark">
             <Helmet>
                 <title>Sourcegraph - Pricing</title>
                 <meta name="twitter:title" content="Sourcegraph - Pricing" />
@@ -45,13 +45,14 @@ export default ((props: any) => (
                 <meta name="description" content={DESCRIPTION} />
                 <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>
-            <div className="pricing-page">
-                <ContentSection color="primary" className="hero-section text-center py-5">
+            <div className="pricing-page mt-2">
+                <ContentSection className="hero-section text-center py-5">
+                    <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
                     <h2>Universal Code Search scales with your team</h2>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
-                    <div className="row pt-3">
-                        <div className="col-6 col-md-4 mx-auto mb-4">
+                    <div className="row pt-4">
+                        <div className="col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Free"
@@ -78,7 +79,7 @@ export default ((props: any) => (
                                 buttonHref="https://docs.sourcegraph.com#quickstart-guide"
                             />
                         </div>
-                        <div className="col-6 col-md-4 mx-auto mb-4">
+                        <div className="col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Team"
@@ -86,11 +87,7 @@ export default ((props: any) => (
                                 planProperties={
                                     <>
                                         <PricingPlanProperty
-                                            description={
-                                                <>
-                                                    Add up to 200 users. Packs start at $325/mo for 25 additional users.
-                                                </>
-                                            }
+                                            description={<>Add $325/mo for 25 additional users. 50 users max.</>}
                                         >
                                             25 users included
                                         </PricingPlanProperty>
@@ -104,7 +101,7 @@ export default ((props: any) => (
                                 buttonHref="https://sourcegraph.com/subscriptions/new"
                             />
                         </div>
-                        <div className="col-6 col-md-4 mx-auto mb-4">
+                        <div className="col-md-4 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Enterprise"
@@ -123,7 +120,7 @@ export default ((props: any) => (
                                             Custom user pricing
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            SLA, 24/7, and dedicated support
+                                            SLA with dedicated support
                                         </PricingPlanProperty>
                                     </>
                                 }
@@ -139,6 +136,7 @@ export default ((props: any) => (
                                     customBranding: true,
                                     onlineTraining: true,
                                     customContractLegalBillingTerms: true,
+                                    unlimitedCode: true,
                                 }}
                                 beforeCampaignsFragment={
                                     <span className="text-muted pl-4 small mt-4">Available add-ons:</span>
@@ -149,7 +147,7 @@ export default ((props: any) => (
                             />
                         </div>
                     </div>
-                    <div class="py-3 text-center">
+                    <div className="py-3 text-center">
                         <h3>Education and nonprofit discounts</h3>
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits. Please{' '}
@@ -157,26 +155,10 @@ export default ((props: any) => (
                             discounts for your development teams.
                         </p>
                     </div>
+                    <hr className="my-4" />
                 </div>
             </div>
-            <ContentSection color="purple" className="hero-section text-center py-5">
-                <h2>Try Sourcegraph Enterprise for free</h2>
-                <Link
-                    className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
-                    to="/contact/request-trial/?form_submission_source=pricing-free-trial-banner"
-                >
-                    Free trial
-                </Link>
-            </ContentSection>
-            <ContentSection color="primary" className="hero-section text-center py-5">
-                <h2>More questions?</h2>
-                <Link
-                    className="btn btn-lg btn-outline-light mt-3 font-weight-normal"
-                    to="/contact/sales/?form_submission_source=pricing-contact-sales-banner"
-                >
-                    Contact sales
-                </Link>
-            </ContentSection>
+            <TrySourcegraph className="my-6" />
         </div>
     </Layout>
 )) as React.FunctionComponent<any>

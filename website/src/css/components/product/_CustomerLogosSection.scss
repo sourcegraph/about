@@ -1,48 +1,28 @@
-@import 'node_modules/bootstrap/scss/utilities/screenreaders';
+// .customer-logos-section {
+//     &__header {
+//         font-size: $font-size-base;
+//         padding: 0 15px;
+//     }
 
-.customer-logos-section {
-    $max-width: 135px;
-    &__item {
-        max-width: $max-width;
-        margin-bottom: 1.5rem;
-        line-height: 1.15;
-        &-logo {
-            // stylelint-disable-next-line declaration-property-unit-whitelist
-            height: 70px;
-            max-width: $max-width;
-            margin-bottom: 0.5rem;
-            &-synthesized {
-                border-width: 2px !important;
-                $custom-color: #e83c3b;
-                font-family: 'Circular' !important;
-                $color: $custom-color;
-                border-color: lighten($color, 30%) !important;
-                background: linear-gradient(
-                    to left,
-                    rgba($color, 0.15) 0%,
-                    transparent 45%,
-                    transparent 55%,
-                    rgba($color, 0.15) 100%
-                );
-                color: $color;
-            }
-        }
+//     $max-width: 135px;
+//     &__item {
+//         max-width: $max-width;
+//         margin-bottom: 0;
+//         line-height: 1.15;
+//         &-logo {
+//             // stylelint-disable-next-line declaration-property-unit-whitelist
+//             height: 50px;
+//             max-width: $max-width;
+//             margin-bottom: 0.5rem;
+//             filter: grayscale(100%) contrast(130%);
+//             opacity: 0.5;
+//         }
+//     }
+// }
 
-        // Don't allow logos to wrap beyond 1200px wide
-        // This may change once we have enough logos to fill 2 lines
-        //@include media-breakpoint-up(lg) {
-        //    &:nth-child(n+8) {
-        //        @include sr-only();
-        //}
-
-        &-caption {
-            font-size: 0.7rem;
-            line-height: normal;
-            display: block;
-        }
-
-        &.quantcast, &.convoy {
-            padding-top: 16px;
-        }
-    }
-}
+// .full-color {
+//     .customer-logos-section__item-logo {
+//         filter: none;
+//         opacity: 100;
+//     }
+// }

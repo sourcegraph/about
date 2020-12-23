@@ -314,8 +314,7 @@ toolbox.
 regular expression. `sed`[^4] is a tool that matches and transforms text using regular
 expressions. Both are extremely versatile and useful tools to have in your programmer's toolbox.
 
-Suppose again you're adding an additional parameter to the [`errorutil.Handler`
-function]([source](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@11fe76d8682e32957e7dadcecd6ef4ce364c39d0/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19))
+Suppose again you're adding an additional parameter to the `errorutil.Handler` [function](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@11fe76d8682e32957e7dadcecd6ef4ce364c39d0/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19)
 and now need to update all call sites of that function to pass some default value for the extra
 argument. You can do that[^5] in a one-liner with `grep` and `sed`:
 
@@ -586,7 +585,7 @@ support any find-replace tool that can be run as a local command or Docker conta
 Codemod, `grep`, `sed`, and any custom script are all fair game.
 
 Campaigns are currently in beta, available in Sourcegraph versions 3.15 and later. Read the
-[Campaigns documentation](https://docs.sourcegraph.com/user/campaigns) to learn more.
+[Campaigns documentation](https://docs.sourcegraph.com/campaigns) to learn more.
 
 
 ## Further reading
@@ -612,7 +611,7 @@ resources:
   * [Comby documentation and reference site](https://comby.dev/)
   * [Comby interactive playground](https://comby.live/)
 * Campaigns
-  * [Campaigns Documentation and Getting Started](https://docs.sourcegraph.com/user/campaigns)
+  * [Campaigns Documentation and Getting Started](https://docs.sourcegraph.com/campaigns)
   * [A video introduction to campaigns](https://www.youtube.com/watch?v=aqcCrqRB17w)
 
 [^1]: I say "most commonly used", but fluency with regex is by no means ubiquitous. You can graduate

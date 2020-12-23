@@ -1,132 +1,58 @@
-import { graphql, Link } from 'gatsby'
+import { Link } from 'gatsby'
 import * as React from 'react'
-import { ContentPage } from '../components/content/ContentPage'
+import { Helmet } from 'react-helmet'
+import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import News from '../components/NewsList'
 
-interface PressRelease {
-    title: string
-    image: string
-    publishDate: string
-    url: string
-}
-// tslint:disable-next-line: no-any
-export default class NewsPage extends React.Component<any, any> {
-    // tslint:disable-next-line: no-any
-    constructor(props: any) {
-        super(props)
-        this.state = {
-            events: [],
-        }
-    }
+const description = 'The latest Sourcegraph news and press releases.'
 
-    public render(): JSX.Element | null {
-        const pressReleases: PressRelease[] = this.props.data.allMarkdownRemark.edges
-            // tslint:disable-next-line: no-any
-            .filter((post: any) => post.node.frontmatter.published === true)
-            .map(
-                // tslint:disable-next-line: no-any
-                (item: any): PressRelease => ({
-                    title: item.node.frontmatter.title,
-                    image: item.node.frontmatter.heroImage,
-                    publishDate: item.node.frontmatter.publishDate,
-                    url: `/press-releases/${item.node.frontmatter.slug}`,
-                })
-            )
-        return (
-            <Layout location={this.props.location}>
-                <ContentPage
-                    title="Sourcegraph in the news"
-                    description="The latest Sourcegraph news and press releases"
-                >
-                    <div className="news bg-white text-dark">
-                        <section>
-                            <div className="container">
-                                <div className="row justify-content-start">
-                                    <div className="col-sm-10 col-lg-10">
-                                        <h2 className="py-4">Press releases</h2>
-                                        {pressReleases.map(({ title, image, publishDate, url }, i: number) => (
-                                            <div className="row mb-4 news__item">
-                                                <div className="col-sm-3 col-lg-2 text-center">
-                                                    <img
-                                                        className="news__image"
-                                                        src={image}
-                                                        style={{ maxWidth: '100px' }}
-                                                    />
-                                                </div>
-                                                <div className="col-sm-9 col-lg-10 align-self-center">
-                                                    <p>
-                                                        <Link to={url} rel="nofollow" key={i} className="d-block">
-                                                            {title}
-                                                        </Link>
-                                                        <span className="news__date ml-0">{publishDate}</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="container">
-                                <div className="row justify-content-start">
-                                    <div className="col-sm-10 col-lg-10">
-                                        <h2>News</h2>
-                                        <News></News>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="container">
-                                <div className="row justify-content-md-center">
-                                    <div className="col mt-5">
-                                        <h3>Media contact</h3>
-                                        <p>
-                                            Tanya Carlsson
-                                            <br />
-                                            Offleash PR for Sourcegraph
-                                            <br />
-                                            <a href="mailto:tanya@offleashpr.com">tanya@offleashpr.com</a>
-                                            <br />
-                                            <a href="tel:+17075296139">+1 707-529-6139</a>
-                                            <br />
-                                            &nbsp;
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+export default ((props: any) => (
+    <Layout location={props.location}>
+        <div className="text-dark">
+            <Helmet>
+                <title>Sourcegraph - News</title>
+                <meta name="twitter:title" content="Sourcegraph - News" />
+                <meta property="og:title" content="Sourcegraph - News" />
+                <meta name="twitter:description" content={description} />
+                <meta property="og:description" content={description} />
+                <meta name="description" content={description} />
+                <link rel="icon" type="image/png" href="/favicon.png" />
+            </Helmet>
+            <ContentSection className="hero-section text-center py-5">
+                <h1 className="display-2 font-weight-bold">Sourcegraph News</h1>
+                <p>
+                    The latest Sourcegraph news and <Link to="/press-release">press releases</Link>
+                </p>
+            </ContentSection>
+            <div className="news">
+                <section>
+                    <div className="container">
+                        <div className="row justify-content-start">
+                            <News></News>
+                        </div>
                     </div>
-                </ContentPage>
-            </Layout>
-        )
-    }
-}
 
-export const pageQuery = graphql`
-    query PressReleases {
-        allMarkdownRemark(
-            filter: { frontmatter: { tags: { in: "press-release" } } }
-            sort: { fields: [frontmatter___publishDate], order: DESC }
-        ) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        heroImage
-                        author
-                        tags
-                        publishDate(formatString: "MMMM D, YYYY")
-                        slug
-                        description
-                        published
-                    }
-                    html
-                    excerpt(pruneLength: 300)
-                    fields {
-                        slug
-                    }
-                }
-            }
-        }
-    }
-`
+                    <div className="container">
+                        <div className="row justify-content-md-center">
+                            <div className="col mt-5">
+                                <h3>Media contact</h3>
+                                <p>
+                                    Tanya Carlsson
+                                    <br />
+                                    Offleash PR for Sourcegraph
+                                    <br />
+                                    <a href="mailto:tanya@offleashpr.com">tanya@offleashpr.com</a>
+                                    <br />
+                                    <a href="tel:+17075296139">+1 707-529-6139</a>
+                                    <br />
+                                    &nbsp;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </Layout>
+)) as React.FunctionComponent<any>

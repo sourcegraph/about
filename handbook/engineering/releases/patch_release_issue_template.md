@@ -1,5 +1,5 @@
 <!--
-DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn run release patch:issue <version>` from the
+DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn run release tracking:patch-issue <version>` from the
 `dev/release` directory in the main repository to create a patch release issue, instead.
 
 Arguments:
@@ -10,61 +10,83 @@ Arguments:
 
 # $MAJOR.$MINOR.$PATCH Patch Release
 
-**Attention developers:** Add pending changes to this checklist, cherry-pick the relevant commits onto branch `$MAJOR.$MINOR`. **Only check off items if the relevant PR/commits have been cherry-picked into the branch**:
+**Attention developers:** to get your commits in `main` included in this patch release, please file a [patch request](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.$PATCH%3A+) for review. Only check off items if the commit have been cherry-picked into the `$MAJOR.$MINOR` branch by the release captain.
 
-- [ ] TODO: Add PR or commit links here.
-    ```
-    git log v$MAJOR.$MINOR.$(($PATCH-1))...$MAJOR.$MINOR --pretty=format:'- [ ] %H %s' --reverse
-    ```
+- [ ] TODO: Add [patch request issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Apatch-release-request) and their associated commits on `main` here
 
-## Release sourcegraph/server
+---
 
-- [ ] Push the branch [`$MAJOR.$MINOR`](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR) with your cherry-picked commit(s) and make sure CI passes.
-- [ ] Push a release candidate tag:
-    ```
-    git checkout '$MAJOR.$MINOR'
-    git tag -a 'v$MAJOR.$MINOR.$PATCH-rc.1' -m 'v$MAJOR.$MINOR.$PATCH-rc.1' && git push origin 'v$MAJOR.$MINOR.$PATCH-rc.1'
-    ```
-- [ ] If CI passes, push the release tag:
-    ```
-    git checkout '$MAJOR.$MINOR'
-    git tag -a 'v$MAJOR.$MINOR.$PATCH' -m 'v$MAJOR.$MINOR.$PATCH' && git push origin 'v$MAJOR.$MINOR.$PATCH'
-    ```
-- [ ] Wait for the final Docker images to be available at https://hub.docker.com/r/sourcegraph/server/tags.
-- [ ] Run the old and new images at least three times to make sure it starts:
-    ```
-    # 1. Answer YES to delete /tmp/sourcegraph with the old image
-    IMAGE=sourcegraph/server:$MAJOR.$MINOR ./dev/run-server-image.sh
-    
-    # 2. Answer NO to delete /tmp/sourcegraph with the new image
-    IMAGE=sourcegraph/server:$MAJOR.$MINOR.$PATCH ./dev/run-server-image.sh
-    
-    # 3. Answer YES to delete /tmp/sourcegraph with the new image
-    IMAGE=sourcegraph/server:$MAJOR.$MINOR.$PATCH ./dev/run-server-image.sh
-    ```
+**Note:** All `yarn run release ...` commands should be run from folder `dev/release`.
 
-## Release Kubernetes deployment
+**Note:** All `yarn run test ...` commands should be run from folder `web`.
 
-In [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph):
+## Setup
 
-- [ ] Wait for Renovate to open a PR named **"Update Sourcegraph Docker images"** and merge that PR ([example](https://github.com/sourcegraph/deploy-sourcegraph/pull/199) and note Renovate may have merged it automatically).
-- [ ] Wait for Renovate to open a PR named **"Update Sourcegraph Prometheus / Grafana Docker images"** and merge that PR (note Renovate may have merged it automatically).
-- [ ] Cherry-pick the image tag update commits from `master` onto `$MAJOR.$MINOR` branch. Then push the release tag:
+- [ ] Ensure release configuration in [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) on `main` is up to date with the parameters for the current release.
+- [ ] Ensure you have the latest version of the release tooling and configuration by checking out and updating `sourcegraph@main`.
+
+## Prepare release
+
+Ensure all patch changes are included:
+
+- [ ] Ensure that all [patch request issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Apatch-release-request) are accounted for, and that the commits listed above has been cherry-picked to [`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR), and ensure CI passes on the release branch.
+    ```
+    git checkout $MAJOR.$MINOR
+    git pull
+    git cherry-pick <commit0> <commit1> ... # all relevant commits from the main branch
+    git push $MAJOR.$MINOR
+    ```
+- [ ] Cherry-pick relevant [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph) configuration changes from `master` to the [`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph/tree/$MAJOR.$MINOR), and ensure CI passes on the release branch.
     ```
     git checkout $MAJOR.$MINOR
     git pull
     git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
     git push $MAJOR.$MINOR
-    git tag v$MAJOR.$MINOR.$PATCH
-    git push origin v$MAJOR.$MINOR.$PATCH
+    ```
+- [ ] Cherry-pick relevant [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker) configuration changes from `master` to the [`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph-docker/tree/$MAJOR.$MINOR), and ensure CI passes on the release branch.
+    ```
+    git checkout $MAJOR.$MINOR
+    git pull
+    git cherry-pick <commit0> <commit1> ... # all relevant commits from the master branch
+    git push $MAJOR.$MINOR
     ```
 
-## Update the docs
+Create and test release candidates:
 
-- [ ] Open and merge PRs that publish the release (the PRs created by this command must be merged manually):
+- [ ] Push a release candidate tag:
+    ```
+    yarn run release release:create-candidate 1
+    ```
+- [ ] Ensure the [Sourcegraph pipeline](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=$MAJOR.$MINOR), [QA pipeline](https://buildkite.com/sourcegraph/qa/builds?branch=$MAJOR.$MINOR), and [E2E pipeline](https://buildkite.com/sourcegraph/e2e/builds?branch=$MAJOR.$MINOR) in Buildkite passes.
+
+## Stage release
+
+- [ ] Tag the final release:
+    ```sh
+    yarn run release release:create-candidate final
+    ```
+- [ ] Ensure the [Sourcegraph pipeline](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=$MAJOR.$MINOR), [QA pipeline](https://buildkite.com/sourcegraph/qa/builds?branch=$MAJOR.$MINOR), and [E2E pipeline](https://buildkite.com/sourcegraph/e2e/builds?branch=$MAJOR.$MINOR) in Buildkite passes.
+- [ ] Open PRs that publish the new release and address any action items required to finalize draft PRs (track PR status via the [generated release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns)):
+  ```sh
+  yarn run release release:stage
   ```
-  yarn run release release:publish $MAJOR.$MINOR.$PATCH
+
+## Release
+
+<!-- Keep in sync with release_issue_template's "Release" section -->
+
+- [ ] From the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns), merge the release-publishing PRs created previously.
+  - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
+    - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
+- [ ] Finalize and announce that the release is live:
+  ```sh
+  yarn run release release:close
   ```
-- [ ] Cherry pick the release-publishing PR from sourcegraph/sourcegraph@master into the release branch.  
-- [ ] Create a new section for the patch version in the changelog. Verify that all changes that have been cherry picked onto the release branch have been moved to this section of the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) on `master`.
-- [ ] Post a reply in the #dev-announce thread to say that the release is complete.
+
+## Post-release
+
+- [ ] Open a PR to update [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) with the parameters for the current release.
+- [ ] Ensure you have the latest version of the release tooling and configuration by checking out and updating `sourcegraph@main`.
+- [ ] Close this issue.
+
+**Note:** If another patch release is requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md) be filled out and approved first.

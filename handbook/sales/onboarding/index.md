@@ -7,11 +7,10 @@ See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFP
 ## Week 1
 
 - Get familiar with the internal tools we use
-- Join all customer calls during this period that you can
-  - Watch the calendars of other sales team members and ask if you can add yourself (or be added) to each customer call
+- [Join all customer calls](joining_customer_calls.md) during this period that you can
 - Checkpoints
   - Pass a [quiz](quiz.md)
-  - Deliver compelling 30-second pitches for the following [personas](../../product/personas.md):
+  - Deliver compelling 30-second pitches for the following [personas](../../marketing/personas.md):
      - Infrastructure/Platform Engineer
      - Site Reliability Engineer (SRE)
      - Engineering and DevOps Managers
@@ -22,7 +21,7 @@ See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFP
 [Recording on 2019-11-01](https://zoom.us/recording/play/m6olRsgG3vWpZ6ZJYg1FJr1RKeAPoUnsE4lvelSrs64_N-7AZ1QTSJ0eb8WXXSXk)
 
 - [People Ops](../../people-ops/index.md)
-  - [General onboarding steps](../../people-ops/onboarding/index.md#for-all-new-teammates)
+  - [General onboarding steps](../../people-ops/onboarding/index.md#general-onboarding-checklist)
   - [Sourcegraph handbook](../../index.md) intro
   - GitHub account setup and tutorial
   - HubSpot account setup
@@ -31,10 +30,10 @@ See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFP
   - Vision
   - [Values](../../../company/values.md)
   - Company pitch
-  - [OKRs](../../../company/okrs/index.md)
+  - [Goals](../../../company/goals/index.md)
   - Last board deck
 - [Product](../../product/index.md)
-  - [Personas](../../product/personas.md)
+  - [Personas](../../marketing/personas.md)
   - [Products](https://about.sourcegraph.com/product)
   - Demo of key user flows
 - Read/watch
@@ -50,7 +49,7 @@ See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFP
 
 [Recording of marketing and sales on 2019-11-04](https://zoom.us/recording/share/rGJPF_xL7GvD5Sp8dMK4JM__SQQ2koOIhPfvtNcqO8iwIumekTziMw)
 
-- [Support/Customer Success](../../support/index.md)
+- [Customer Engineering](../../ce/index.md) ([Support](../../ce/support.md) + Customer Success)
   - Prepare you to handle incoming support requests for a 2-week rotation
   - Looker dashboard overview
 - [Marketing](../../marketing/index.md)
@@ -63,7 +62,7 @@ See also [Sales onboarding logistics](https://docs.google.com/document/d/1un9fFP
   - Current customers and pipeline/goals overview
      - [Q4 model](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=665660264)
      - [Past quarterly IARR](https://docs.google.com/presentation/d/1I2nhK_2uz0o8jiBqajzdTPHcy9Hnl9n1LROo1ZlJW-Q/edit#slide=id.g41cb4d21db_0_0)
-  - Value props and pitches for various [personas](../../product/personas.md)
+  - Value props and pitches for various [personas](../../marketing/personas.md)
   - FAQ and common objections
 
 ### Day 3

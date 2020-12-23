@@ -4,3 +4,4 @@ yarn.lock
 docs/server/config/site.md
 .idea
 /.bin/
+.vscode/settings.json

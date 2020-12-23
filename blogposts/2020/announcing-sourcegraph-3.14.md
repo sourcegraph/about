@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.14
 heroImage: https://about.sourcegraph.com/blog/3.14-release-blog-img.jpg
 published: true
+description: "Sourcegraph 3.14: Faster repository permissions, excluding forks and archived repositories by default, and Docker Compose deployment"
 ---
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
@@ -108,7 +109,7 @@ Using the `src-cli` to generate diffs and create a campaign plan has been improv
 * `.gitignore` files are now respected when creating patches.
 * On macOS, `src` CLI can [now be installed with Homebrew.](https://github.com/sourcegraph/homebrew-src-cli)
 
-Take a look at the [improved documentation](https://docs.sourcegraph.com/user/campaigns) for usage and examples.
+Take a look at the [improved documentation](https://docs.sourcegraph.com/campaigns) for usage and examples.
 
 When creating your campaign in Sourcegraph, it is now clearer what state the campaign is in and is easier to differentiate between draft patches and changesets that have been created on the code host. Additionally, you can now filter the changesets to quickly find which ones need follow-up.
 

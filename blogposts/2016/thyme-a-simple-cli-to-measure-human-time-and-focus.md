@@ -16,7 +16,7 @@ published: true
 
 Do you ever think about how to make yourself a more productive programmer? At [Sourcegraph](https://sourcegraph.com), this is a question we think about every day. Our entire mission is to make your life as a developer easier and more efficient.
 
-![](/blog-images/1*2v_gWy792Wru6O1MiookSA.png)
+![](https://cdn-images-1.medium.com/max/800/1*2v_gWy792Wru6O1MiookSA.png)
 
 <a href='https://github.com/sourcegraph/thyme'>Thyme</a> is a sampling profiler for your productivity.
 

@@ -1,8 +1,7 @@
+import { Link } from 'gatsby'
 import React from 'react'
-import { COLORS } from '../Jumbotron'
 import slugify from 'slugify'
-import { RequestDemoAction } from '../../css/components/actions/RequestDemoAction'
-import { ContentPage } from './ContentPage'
+import { COLORS } from '../Jumbotron'
 import { ContentSection } from './ContentSection'
 
 interface Quote {
@@ -32,37 +31,37 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
     pdf,
     children,
 }) => (
-    <div className={`${slugify(customer).toLowerCase()}-${className}`}>
-        <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
-            {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
-            {pdf && (
-                <a href={pdf} className="btn btn-primary mt-4" rel="nofollow" target="_blank">
-                    <i className="fa fa-file-pdf pr-2" />
-                    Download PDF
+        <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
+            <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
+                {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
+                {pdf && (
+                    <a href={pdf} className="btn btn-primary mt-3" rel="nofollow" target="_blank">
+                        <i className="fa fa-file-pdf pr-2" />
+                        Download PDF
                 </a>
-            )}
-        </CaseStudyJumbotron>
+                )}
+            </CaseStudyJumbotron>
 
-        <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
-            <div className="container py-4">
-                <h1 className={`${titleClassName}`}>{title}</h1>
-            </div>
-        </ContentSection>
+            <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
+                <div className="container pt-6 pb-4">
+                    <h1 className={`${titleClassName}`}>{title}</h1>
+                </div>
+            </ContentSection>
 
-        {children}
-    </div>
-)
+            {children}
+        </div>
+    )
 
 export const MediaQuote: React.FunctionComponent<{
     image?: string
     quote: string
     author: string
 }> = ({ image, quote, author }) => (
-    <div className="container pt-6">
+    <div className="container pt-3">
         <div className="case-studies__quote row justify-content-center">
             {image && (
                 <div className="col-12 col-lg-9">
-                    <img className="rounded-circle img-fluid mx-auto d-block pb-3" src={image} alt={author} />
+                    <img className="rounded-circle img-fluid mx-auto d-block mb-3" src={image} alt={author} />
                 </div>
             )}
             <div className="col-12 col-lg-9">
@@ -83,8 +82,8 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
     children?: React.ReactNode
 }> = ({ customer, logo, className = '', color = 'dark', children }) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
-        <div className="container text-center pt-5 pb-3">
-            <img className="case-studies__logo" src={logo} />
+        <div className="container text-center pt-3 pb-3">
+            <img className="case-studies__logo my-3" src={logo} alt={customer} />
             <span className="case-studies__label d-block mt-1">
                 <span className="sr-only">{customer}</span> case study
             </span>
@@ -103,20 +102,32 @@ export const InContentBlockquote: React.FunctionComponent<{
     </blockquote>
 )
 
+export const InContentImage: React.FunctionComponent<{
+    src: string
+    alt: string
+    className?: string
+    caption?: string
+}> = ({ src, caption, alt, className }) => (
+    <p>
+        <img src={src} className={className} alt={alt} />
+        {caption && <footer className="blockquote-footer">{caption}</footer>}
+    </p>
+)
+
 export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     title?: string
     description?: string
 }> = ({
-    title = 'See how Sourcegraph can help with a demo and free enterprise trial',
-    description = 'Universal Code Search enables developers to explore and better understand all code, everywhere, faster. Let us show you how.',
+    title = 'See Sourcegraph in action.',
+    description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
 }) => (
-    <ContentPage
-        title={title}
-        description={description}
-        mainActions={
-            <div className="d-flex flex-column align-items-center">
-                <RequestDemoAction className="mt-3" />
-            </div>
-        }
-    />
-)
+            <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
+                <div className="container text-center pt-6">
+                    <h3 className="display-3 font-weight-bold">{title}</h3>
+                    <p>{description}</p>
+                    <Link className="btn btn-primary mx-2 mb-3" to="/contact/request-demo" title="Request a demo">
+                        Schedule a demo
+            </Link>
+                </div>
+            </ContentSection>
+        )

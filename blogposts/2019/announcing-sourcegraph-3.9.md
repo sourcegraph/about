@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.9
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.9: Literal search by default, multi-project LSIF code intelligence, Grafana dashboards, and configuration"
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -83,7 +84,7 @@ Sourcegraph's built-in monitoring with Grafana and Prometheus has been enhanced 
 
 ## LSIF-based code intelligence for multi-language repositories
 
-LSIF-based code intelligence now works on repositories with multiple projects and languages. Languages currently supported for LSIF include Go, TypeScript, Python, and C/C++, with support for Java currently in development. [Enable LSIF-powered code intelligence](https://docs.sourcegraph.com/user/code_intelligence/lsif) for your repositories by adding a simple step to your CI build process.
+LSIF-based code intelligence now works on repositories with multiple projects and languages. Languages currently supported for LSIF include Go, TypeScript, Python, and C/C++, with support for Java currently in development. [Enable LSIF-powered code intelligence](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence) for your repositories by adding a simple step to your CI build process.
 
 See the new [lsif.dev](https://lsif.dev/) site for list of languages with LSIF indexers (which means you can get precise, LSIF-based code intelligence on Sourcegraph).
 
@@ -106,7 +107,7 @@ Note that secrets and tokens are not automatically redacted. Please review the f
 
 ## Experimental paginated search API
 
-To enable better programmatic consumption of search results, Sourcegraph 3.9 introduces the ability to consume an entire search result set via multiple paginated search requests. The results will be returned with a stable order. This [new paginated search API](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) is experimental and is not yet ready for production use, but we are eager to hear feedback from early adopters as we work to further improve it. (If you're interested, see the [paginated search documentation](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) and [architecture design document](https://docs.sourcegraph.com/dev/architecture/search-pagination))
+To enable better programmatic consumption of search results, Sourcegraph 3.9 introduces the ability to consume an entire search result set via multiple paginated search requests. The results will be returned with a stable order. This [new paginated search API](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) is experimental and is not yet ready for production use, but we are eager to hear feedback from early adopters as we work to further improve it. (If you're interested, see the [paginated search documentation](https://docs.sourcegraph.com/api/graphql/search#sourcegraph-3-9-experimental-paginated-search) and [architecture design document](https://docs.sourcegraph.com/dev/background-information/architecture/search-pagination))
 
 
 ## Kubernetes: migration to using StatefulSets

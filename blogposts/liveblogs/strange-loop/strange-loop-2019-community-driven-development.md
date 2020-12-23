@@ -65,5 +65,4 @@ For more about the NSC:
 
 [The project on GitHub](https://github.com/CZagrobelny/new_sanctuary_asylum)
 
-[Join the newsletter](newsanctuary.tech@gmail.com)
-
+[Join the newsletter](mailto:newsanctuary.tech@gmail.com)

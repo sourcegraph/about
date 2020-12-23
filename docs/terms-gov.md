@@ -1,7 +1,6 @@
 ---
 layout: markdown
 title: Terms of Service for U.S. Federal Government Users
-permalink: terms-gov
 ---
 
 Last modified: April 22, 2019
@@ -79,5 +78,3 @@ Sourcegraph and You (together, the **"Parties"**) agree that modifications to th
 1. **Precedence; Further Amendment; Termination**. This Amendment constitutes an amendment to the ToS; language in the ToS indicating it may not be modified or that it alone is the entire agreement between the Parties is waived. If there is any conflict between this Amendment and the ToS, or between this Amendment and other rules or policies on the Company site or services, this Amendment shall prevail. This Amendment may be further amended only upon written agreement executed by both Parties. The Government may close its account and terminate this agreement at any time. Company may close Government's account and terminate this agreement on 30 days written notice, but the Government shall not be entitled to a refund of any fees paid.
 
 2. **Posting and availability of this Amendment**. The parties agree this Amendment contains no confidential or proprietary information, and either party may release it to the public at large.
-
-

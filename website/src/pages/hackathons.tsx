@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 
 export default class Pricing extends React.Component<any, any> {
@@ -74,7 +74,7 @@ export default class Pricing extends React.Component<any, any> {
                                     </p>
                                     <p>
                                         When you're ready to present, check out the{' '}
-                                        <a target="blank" href="https://docs.sourcegraph.com/user/tour">
+                                        <a target="blank" href="https://docs.sourcegraph.com/getting-started/tour">
                                             Sourcegraph tour
                                         </a>{' '}
                                         for example use-cases to show off.

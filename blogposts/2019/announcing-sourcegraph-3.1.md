@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.1
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.1 released'
 ---
 
 Sourcegraph 3.1 is now out! This release includes stability and documentation improvements, plus an easy query builder for searching your code (with useful query examples). Also, mark your calendars: our new fixed release schedule means you get a new Sourcegraph release on the 20th of each month.
@@ -87,9 +88,9 @@ This means the [Git extras Sourcegraph extension](https://sourcegraph.com/extens
 
 Since shipping version 2.4 in January 2018, we've released 11 versions of Sourcegraph. Shipping regularly means progress is constant and predictable.
 
-We're constantly looking for ways to improve our release process. Inspired by [GitLab's fixed monthly release cycle](https://about.gitlab.com/2018/11/21/why-gitlab-uses-a-monthly-release-cycle/), Sourcegraph is now [released on the 20th of each month](https://docs.sourcegraph.com/dev/releases).
+We're constantly looking for ways to improve our release process. Inspired by [GitLab's fixed monthly release cycle](https://about.gitlab.com/2018/11/21/why-gitlab-uses-a-monthly-release-cycle/), Sourcegraph is now [released on the 20th of each month](https://about.sourcegraph.com/handbook/engineering/releases).
 
-We encourage feedback as early as possible so we can incorporate it into our product planning. View the [product roadmap](https://docs.sourcegraph.com/dev/roadmap) to track what features are slated for the next release.
+We encourage feedback as early as possible so we can incorporate it into our product planning. View the [product roadmap](https://about.sourcegraph.com/direction) to track what features are slated for the next release.
 
 ## Changelog
 

@@ -9,21 +9,41 @@
 - Programming guides
   - [Go](languages/go.md)
   - [TypeScript](languages/typescript.md)
-- [Testing](testing.md)
-- [Continuous integration](continuous_integration.md)
-- [Product documentation](product_documentation.md)
-- [Continuous releasability](continuous_releasability.md)
-- [Commit message guidelines](commit_messages.md)
-- [Ignoring editor config files in Git](ignoring_editor_config_files.md)
-- [Incidents](incidents.md)
-- [Releases](releases/index.md)
-  - [Release issue template](releases/release_issue_template.md)
-- [Deployments](deployments.md)
-- [On-call](on_call/index.md)
-- [Prometheus](prometheus.md)
-- [Adding ping data](adding_ping_data.md)
-- [Adding buildkite secrets](adding_buildkite_secrets.md)
-- [External contributions](external_contributions.md)
+  - [Terraform](languages/terraform.md)
+- Practices & Philosophy
+  - [Customer Issues](../ce/customer_issues.md)
+  - [Incidents](incidents/index.md)
+  - [Testing](testing.md)
+  - [Styling UI](./web/styling.md)
+  - [Continuous integration](continuous_integration.md)
+  - [Product documentation](product_documentation.md)
+  - [Continuous releasability](continuous_releasability.md)
+  - [Commit message guidelines](commit_messages.md)
+  - [Releases](releases/index.md)
+    - [Release issue template](releases/release_issue_template.md)
+  - [External contributions](external_contributions.md)
+  - [Introducing a new service](introducing_a_new_service.md)
+  - [Security patterns](security_patterns.md)
+- Tooling
+  - [Ignoring editor config files in Git](ignoring_editor_config_files.md)
+  - [Configuring Zoom to send recordings to Slack automatically](configuring_zoom_recordings_to_slack_automatically.md)
+- Infrastructure
+  - [Cloud environments](environments.md)
+  - [Deployments](deployments/index.md)
+  - [On-call](incidents/on_call.md)
+  - [Observability](observability/index.md)
+  - [Honeycomb](honeycomb.md)
+  - [Adding and debugging ping data](adding_ping_data.md)
+  - [Adding buildkite secrets](adding_buildkite_secrets.md)
+
+## Guiding principles
+
+We build things in this order:
+
+1. **Make it work**: Build the minimal useful thing that we can use to start collecting feedback and validating we are on the right track. Take shortcuts where possible (cut scope, not quality) because this work might get thrown away if we discover we are going in the wrong direction.
+1. **Make it smooth**: Once we have signal that we are building the right thing, the next goal is to make the experience smooth so we feel good about putting this in front of users. Aim for smooth when in the make it work phase (to avoid duplicate efforts), but if it's possible to separate the two in order to move things forward, we should!
+1. **Make it fast**: Now that the experience works smoothly, make sure it is fast for users. There is no benefit to speeding up a fundamentally broken experience.
+1. **Make it scale**: Make it work at large scale. It is better to have high demand and need to surge on scalability than to make an infinitely scalable unused feature.
 
 ## Ownership of technical decisions
 
@@ -31,7 +51,7 @@ The default owner of any technical decision is the person or team that owns the 
 
 If ownership is unclear, ask "Do we have a designated owner for X?" in an appropriate Slack channel and @mention appropriate managers.
 
-If there is a dispute about ownership, then perform a [clean escalation](../communication/clean_escalation.md) to determine an owner.
+If there is a dispute about ownership, then perform a [clean escalation](../communication/code_of_conduct.md#clean-escalation) to determine an owner.
 
 ## [Roles and responsibilities](roles.md)
 
@@ -40,17 +60,30 @@ If there is a dispute about ownership, then perform a [clean escalation](../comm
 
 ## Teams
 
-Our engineering organization is divided into mission based teams that contain the necessary cross-functional skillsets to achieve the desired mission.
+[**List of engineering teams**](../../company/team/org_chart.md#engineering)
 
-- [Distribution](distribution/index.md)
-- [Campaigns](campaigns/index.md)
-- [Cloud](cloud/index.md)
-- [Code intelligence](code-intelligence/index.md)
-- [Search](search/index.md)
-- [Security](security/index.md)
-- [Web](web/index.md)
+Our engineering organization is divided into mission based teams that contain the necessary cross-functional skillsets to achieve the desired mission. The leader of each team is responsible for ensuring appropriate cross-team collaboration happens when shared infrastructure needs to change.
 
-The leader of each team is responsible for ensuring appropriate cross-team collaboration happens when shared infrastructure needs to change.
+[2021 Organizational Plan](2021_org.md)
+
+### Transferring teams
+
+Start a discussion with your manager if you are interested to switch teams. Your manager will chat with you to understand what you want and then propose next steps. Team transfers need to be approved by the [VP of Engineering](roles.md#vp-engineering).
+
+## Open positions
+
+[Open positions](hiring/index.md#open-positions)
+
+## Innovation time
+
+We love it when engineers have ideas for things they want to do, even if they don't align with our existing iteration plans or [goals](../../company/goals/index.md). We want to create time and space for engineers to work on these ideas without negatively impacting our team goals and planned work.
+
+If you have an idea for something you want to work on, then you have a few options:
+
+1. **Just do it** if you can timebox the effort (e.g., 1-2 days) such that it won't impact your ability to deliver on existing plans.
+2. If working on your idea would require a non-trivial amount of time or would impact your ability to deliver on existing plans, then have a discussion with your manager to come up with a feasible plan (e.g., explicitly schedule time to work on your idea during the next iteration).
+
+In any case, you should report the results of your work in [progress updates](tracking_issues.md#progress-updates) just like any other work.
 
 ## Repositories
 

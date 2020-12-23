@@ -1,10 +1,14 @@
 # Go style guide
 
-This file documents the style used in Sourcegraph's code. For non-code text, see the overall [style guide](../../communication/style_guide.md).
+This file documents the style used in Sourcegraph's code. For non-code text, see the overall [content guidelines](../../communication/content_guidelines.md).
 
 For all things not covered in this document, defer to
 [Go Code Review Comments](https://code.google.com/p/go-wiki/wiki/CodeReviewComments)
 and [Effective Go](http://golang.org/doc/effective_go.html).
+
+We also have subsections here:
+- [Testing Go Code](#Testing)
+- [Exposing Services](#exposing-services)
 
 ## Panics
 
@@ -119,7 +123,7 @@ var addAllVecs(...)
 
 Pronounceable names:
 
-- Screen readers can read actually read them
+- Screen readers can actually read them
 - Takes less time than pronouncing a string of letters
 
 [You should watch this short YouTube video of @juliaferraioli navigating some Go code with a screenreader.](https://www.youtube.com/watch?v=xwjvufcJK-Q)

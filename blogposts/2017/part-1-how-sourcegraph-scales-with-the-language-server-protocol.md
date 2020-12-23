@@ -14,7 +14,7 @@ published: true
 
 ## The problem of Code Intelligence and the need for an open standard
 
-_Update:_ [_Part 2 of this series is now published_](https://text.sourcegraph.com/part-2-how-sourcegraph-scales-with-the-language-server-protocol-73b86175f38b#.v0dq2ua8z)_._
+_Update:_ [_Part 2 of this series is now published_](https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol)_._
 
 Sourcegraph lets you view any line of code in your web browser with all the navigation features of an IDE and more. That includes both classic abilities — like jump-to-definition, find-references, tooltips, and symbol search — and novel superpowers like cross-repository jump-to-definition and global usage examples. The sum of these parts is a quick, frictionless way to discuss or make sense of code.
 
@@ -69,7 +69,7 @@ M x N
 
 LSP defines a communication protocol that sits between editor plugins and the underlying analysis libraries. You build one language server for each language and one plugin for each editor. Each editor plugin that speaks LSP will now have support for every single language server. you've reduced the M x N problem to an M + N problem.
 
-![](/blog-images/1*ws2LYhzfuHpEimlb9-knWQ.png)
+![1*ws2LYhzfuHpEimlb9-knWQ](//images.contentful.com/le3mxztn6yoo/5fAE4L5xKEM2wOE6WGsMyY/18126663e1f38d946fcfae2b06c2cd88/1_ws2LYhzfuHpEimlb9-knWQ.png)
 
 M + N
 
@@ -99,4 +99,4 @@ We believe that LSP will bring a new wave of Code-Intelligence-powered editor pl
 Hopefully, I've given you a better idea of the technical problems we’re solving at Sourcegraph and why they matter to the greater software community. In subsequent posts, I’ll dive into extensions we’ve made to LSP to enable novel Code Intelligence abilities (cross-dependency jump-to-def and global usage examples), and I’ll describe implementation details of language servers that we think will be broadly useful and interesting. If you are like us and find this interesting, [start contributing](https://github.com/Microsoft/language-server-protocol) and [sign up for Sourcegraph](https://sourcegraph.com/).
 
 ## Part 2: How Sourcegraph scales with the Language Server Protocol
-[Making Code Intelligence “just work”](https://text.sourcegraph.com/part-2-how-sourcegraph-scales-with-the-language-server-protocol-73b86175f38b#.lvv6feuvy)
+[Making Code Intelligence “just work”](https://about.sourcegraph.com/blog/part-2-how-sourcegraph-scales-with-the-language-server-protocol)

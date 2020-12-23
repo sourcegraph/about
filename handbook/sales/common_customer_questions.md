@@ -24,7 +24,7 @@ Here is a strategy for handling this question live (for simplicity, this assumes
 
 > Well, first, how often do you use GitHub code search? [Their response is almost always "a few times a week" or less.] Makes total sense. The most helpful way to think about the difference is that with really good code search, you'd actually use code search many times *per day*. Sourcegraph becomes the first place you go to answer questions and unblock yourself while coding. I'll send you the public stats and docs (and the [Yelp usage chart](https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html)) about code search usage inside our customers and Google and Facebook, which all have really good code search. We usually see around 10-20% of developers inside an organization immediately becoming daily code search users, and over the next few weeks or months as other developers get accustomed to it, that number grows to 60-90% of all developers.
 >
-> - [If they want more specific feature information, run through the [Sourcegraph tour](https://docs.sourcegraph.com/user/tour) and show them how Sourcegraph can answer questions that come up many times per day while coding.]
+> - [If they want more specific feature information, run through the [Sourcegraph tour](https://docs.sourcegraph.com/getting-started/tour) and show them how Sourcegraph can answer questions that come up many times per day while coding.]
 > - [If they want to see these usage claims backed up by data, walk through the materials you mentioned with them live.]
 
 ## Should I deploy using Docker or to a cluster?
@@ -54,6 +54,13 @@ Here's a comprehensive answer that you can trim down based on the prospective cu
 ## How hard is it to set up and maintain Sourcegraph in my organization?
 
 > You can [set up Sourcegraph](https://docs.sourcegraph.com/#quickstart) and see value in 5 minutes. Most of our customers tell us Sourcegraph is one of the easiest applications to maintain, but we're happy to give a more precise estimate of the burden if you help us understand the environment in which you intend to deploy Sourcegraph. As a specific data point, one of our large customers reported that maintaining Sourcegraph for 1,000+ daily users takes ~5% of a single person's time.
+
+## How is Sourcegraph different from Kythe?
+
+Kythe is a very low-level code intelligence system. It plays the same role as LSIF (which is what Sourcegraph uses instead of Kythe for code intelligence). Kythe is not a product that they can actually use. It doesn’t do code search, code browsing, code host integrations, campaigns, code insights, etc.
+
+It's like saying instead of Salesforce CRM we will just use InsightSquared (actually Kythe is even lower-level than InsightSquared, but you get the idea).
+
 
 ## Is Sourcegraph a platform, tool, or application?
 

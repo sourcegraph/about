@@ -1,51 +1,45 @@
 import { Link } from 'gatsby'
-import GitHubCircleIcon from 'mdi-react/GithubCircleIcon'
-import LinkedinIcon from 'mdi-react/LinkedinBoxIcon'
+import GithubIcon from 'mdi-react/GithubIcon'
+import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
+import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import * as React from 'react'
-import { PRODUCT_FEATURES, PRODUCT_USE_CASES } from './ProductPopover'
-import HubspotSubscribe from './Subscribe'
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
-    <footer className="footer pt-6 pb-2">
+    <footer className={`${minimal ? '' : 'pt-6 pb-2'}`}>
         <div className="footer__container container">
             {!minimal && (
                 <React.Fragment>
                     <div className="row footer__nav-sections">
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
-                            <h3 className="footer__nav-header">Why Sourcegraph?</h3>
+                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-2">
+                            <h3 className="footer__nav-header">About Sourcegraph</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <Link to="/product">Product</Link>
+                                    <Link to="/case-studies">Case studies</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/universal-code-search">What is Universal Code Search?</Link>
+                                    <Link to="/customers">Customers</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/pricing">Pricing</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <a
+                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
+                                        target="_blank"
+                                        rel="noopener"
+                                        className="bigCode"
+                                    >
+                                        Not a developer?
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
-                            <h3 className="footer__nav-header">Features &amp; use cases</h3>
-                            <ul className="nav flex-column">
-                                {PRODUCT_FEATURES.map(({ text, to }, i) => (
-                                    <li key={i} className="nav-item">
-                                        <Link to={to}>{text}</Link>
-                                    </li>
-                                ))}
-                                {PRODUCT_USE_CASES.map(({ text, to }, i) => (
-                                    <li key={i} className="nav-item">
-                                        <Link to={to}>{text}</Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-3">
                             <h3 className="footer__nav-header">Resources</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <a href="https://docs.sourcegraph.com">Documentation</a>
+                                    <Link to="/blog">Blog</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
@@ -53,58 +47,87 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/blog">Blog</Link>
+                                    <a href="https://docs.sourcegraph.com">Documentation</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/podcast">Podcast</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link to="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">Big code survey</Link>
+                                </li>
                             </ul>
                         </div>
-                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3">
+                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-4">
                             <h3 className="footer__nav-header">Company</h3>
                             <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <a href="/company/strategy">Master plan</a>
-                                </li>
                                 <li className="nav-item">
                                     <Link to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/news">News</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="/handbook">Handbook</a>
+                                    <a href="/company/careers">Careers</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/contact">Contact</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/jobs">Careers</Link>
+                                    <a href="/handbook">Handbook</a>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/news">News</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="/company/strategy">Sourcegraph strategy</a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-12 col-lg-3 mb-5">
-                            <Link to="/">
-                                <img className="footer__logo" src="/sourcegraph/logo--light.svg" />
+                        <div className="col-12 col-lg-3 mb-5 order-md-1">
+                            <Link className="row footer__logo ml-1" to="/">
+                                <span role="img" aria-label="Sourcegraph - Universal code search">
+                                    {' '}
+                                </span>
                             </Link>
                             <ul className="nav footer__social mt-1">
                                 <li className="nav-item">
-                                    <a href="https://github.com/sourcegraph" target="_blank">
-                                        <GitHubCircleIcon />
+                                    <a
+                                        href="https://github.com/sourcegraph"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="GitHub"
+                                    >
+                                        <GithubIcon />
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://twitter.com/srcgraph" target="_blank">
+                                    <a
+                                        href="https://twitter.com/srcgraph"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="Twitter"
+                                    >
                                         <TwitterIcon />
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://www.linkedin.com/company/4803356/" target="_blank">
+                                    <a
+                                        href="https://www.linkedin.com/company/4803356/"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="LinkedIn"
+                                    >
                                         <LinkedinIcon />
                                     </a>
                                 </li>
+                                <li className="nav-item">
+                                    <a
+                                        href="https://www.youtube.com/c/Sourcegraph/featured"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="YouTube"
+                                    >
+                                        <YouTubeIcon />
+                                    </a>
+                                </li>
                             </ul>
-                            <HubspotSubscribe></HubspotSubscribe>
                         </div>
                     </div>
                 </React.Fragment>

@@ -1,102 +1,128 @@
 # Distribution team
 
-The distribution team is responsible for making Sourcegraph easy to deploy, scale, monitor, and debug. We solve challenging problems that our customers face when they deploy and scale Sourcegraph on-premise in a variety of environments, and that we face when we deploy and scale [Sourcegraph.com](https://sourcegraph.com/search) (the largest Sourcegraph installation in the world).
+<img align="right" src="https://user-images.githubusercontent.com/3173176/92966535-955f2380-f42c-11ea-8723-2aa60c55b2db.png" height="500px" alt="Sourcegraph Distribution team logo"></img>
 
-## Team API
+The distribution team is responsible for making Sourcegraph easy to deploy, scale, monitor, and debug. We solve the most challenging problems our customers face deploying Sourcegraph on-premise in a variety of environments, and on [Sourcegraph.com](https://sourcegraph.com/search) - the largest Sourcegraph instance in the world.
+
+## Contact
 
 - Slack: #distributioneers channel or @distribution
+- [Support rotation](#support-rotation)
 - File issues: [team/distribution](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) label
-- What we're currently working on: [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fdistribution+label%3Atracking+distribution), [roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit#heading=h.mi8zg2ql2uc6)
 
-## Ownership areas
+## Team communication
 
-The following is a breakdown of the areas of Sourcegraph that the Distribution team owns. It aims to be 100% comprehensive, but the owners are merely aspirational goal posts, not mandates. At the end of the day, whoever has most context will own the area.
+Our team has two Slack channels, one public (#distributioneers) and one private (#distribution-team). **Our default is to use the public channel**. The #distribution-team channel will only be used for discussing internal team topics, like scheduling, retrospectives, how we do updates, etc.
 
-Distribution team members may also be involved in other areas of Sourcegraph not mentioned here (i.e., you're not restricted just to the distribution team or working on just the areas of ownership assigned below.)
+## [Goals](goals.md)
 
-- **Infrastructure**
-    - Sourcegraph.com
-    - Dogfood instances (k8s.sgdev.org, sourcegraph.sgdev.org)
-    - 3rd-party services (ghe.sgdev.org)
-    - Buildkite, CI pipeline / infrastructure.
-    - **Primary owners:** @geoffrey, @dave
-    - **Related code**: [infrastructure repository](https://github.com/sourcegraph/infrastructure), [CI pipeline code](https://sourcegraph.com/search?q=repo%3A%5Egithub%5C.com%2Fsourcegraph%2Fsourcegraph%24+file%3Abuild.sh%7C%2Fci%2F+count%3A1000&patternType=literal)
-- **Release pipeline**
-    - End-to-end release process infrastructure
-    - Creating monthly releases
-    - Testing environments when applicable
-    - Releasing security updates when asked to
-    - **Primary owners:** @uwe
-    - **Related code**: [release captain experience](https://about.sourcegraph.com/handbook/engineering/releases#release-captain), [release tooling](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/dev/release)
-- **Deployment**
-    - **Kubernetes cluster installation & upgrade experience**
-        - Kubernetes YAML & associated tooling
-        - Cloud-specific setup docs (AWS/Google Cloud)
-        - Deployment setup & upgrade docs
-        - **Primary owners:** @uwe, @geoffrey
-        - **Related code**: [deploy-sourcegraph repository](https://github.com/sourcegraph/deploy-sourcegraph), [cluster installation docs](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/admin/install/cluster.md)
-    - **Docker Compose & pure-docker installation & upgrade experience**
-        - Docker-compose YAML & associated tooling
-        - Pure-docker shell scripts & upgrade docs
-        - Cloud-specific setup docs (AWS/Google Cloud)
-        - Deployment setup & upgrade docs
-        - **Primary owners**: @stephen, @geoffrey
-        - **Related code**: [deploy-sourcegraph-docker repository](https://github.com/sourcegraph/deploy-sourcegraph-docker), [docker-compose installation docs](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/doc/admin/install/docker-compose), [docker-compose upgrade docs](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/admin/updates/docker_compose.md) [pure-docker upgrade docs](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/admin/updates/pure_docker.md).
-    - **Single-container installation & upgrade experience**
-        - Primarily in maintenance mode
-        - Pushing admins to upgrade to Docker Compose
-        - Communicating the limitations of single-container deployments
-        - **Primary owners**: @stephen
-        - **Related code**: [cmd/server in main repo](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:cmd/server/&patternType=regexp)
-    - **Scalability**
-        - Documenting when to upgrade from one deploy type to another
-        - Resource estimation for new deployments
-        - Scaling advice for existing deployments
-        - **Primary owners**: @stephen
-        - **Related code**: [resource estimator docs](https://docs.sourcegraph.com/admin/install/resource_estimator), [resource estimator repository](https://github.com/sourcegraph/resource-estimator), [Kubernetes scaling docs](https://docs.sourcegraph.com/admin/install/kubernetes/scale)
-- **Observability: Monitoring** ("site admins should easily know the health of Sourcegraph")
-    - Monitoring & alerting infrastructure
-    - Educating site admins about how to monitor Sourcegraph
-    - Working with & ensuring engineering @ Sourcegraph adds needed monitoring
-    - **Primary owners**: @stephen, @uwe
-    - **Related code**: [monitoring generator (dashboards/alerts)](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/monitoring), [Grafana docker image](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/docker-images/grafana), [Prometheus docker image](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/docker-images/prometheus)
-- **Observability: Debugging** ("site admins should be able to collect the information needed to debug issues easily")
-    - Logging & Tracing infrastructure
-    - Working with & ensuring engineering @ Sourcegraph adds needed logging/tracing to debug issues
-    - Making the debugging process for common problems seamless and straightforward
-    - Making reporting issues with all needed information easy
-    - Ensuring logs/tracing are not overly verbose, identify most useful information for solving problems
-    - **Primary owners**: @stephen
-    - **Related code**: [Jaeger Docker images and code](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:jaeger&patternType=literal), [opentracing code (broadly)](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+opentracing&patternType=literal), Jaeger [k8s](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/deploy-sourcegraph%24+jaeger&patternType=literal), [docker-compose/pure-docker](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/deploy-sourcegraph-docker%24+jaeger&patternType=literal), and [single-container](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:cmd/server+jaeger&patternType=literal) deployments & [associated docs](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:doc/admin/observability+jaeger%7Ctracing&patternType=regexp)
-
-## Tech stack
-
-Go, Docker, Kubernetes
+See [Goals](goals.md)
 
 ## Details
 
-* [Recurring processes](./recurring_processes.md)
-* [Internal infrastructure](./internal_infrastructure.md)
-* [Tools](./tools/index.md)
-* Tutorials
-  * [Observability developer guide](observability/index.md)
-  * [How to set up a separate website maintained by Sourcegraph](separate_website.md)
-  * [How to replay a metrics dump from a customer](use_metrics_dump.md)
-  * [How to simulate k8s admin security restrictions](k8s_admin_custom_policy.md)
-  * [How to test the Gitlab native integration locally](gitlab_native_local.md)
-  * [How to make updates to global settings and configuration on sourcegraph.com](update_sourcegraph_website.md)
+- [Ownership areas](ownership_areas.md)
+- [Recurring processes](recurring_processes.md)
+- [Internal infrastructure](internal_infrastructure.md)
+- [Product & personas](product.md)
+- [Tools](tools/index.md)
+- Tutorials
+  - [Observability developer guide](../observability/index.md)
+  - [Managed instances](managed/index.md)
+  - [Collecting and inspecting metrics dumps](metrics_dumps.md)
+  - [How to set up a separate website maintained by Sourcegraph](separate_website.md)
+  - [How to simulate k8s admin security restrictions](k8s_admin_custom_policy.md)
+  - [How to test the Gitlab native integration locally](gitlab_native_local.md)
+  - [How to make updates to global settings and configuration on sourcegraph.com](update_sourcegraph_website.md)
+  - [Create GCP commitments](gcp.md#committed-use-discounts)
+  - [Update various service tokens for sourcegraph.com](tokens.md)
+- FAQ
+  - [Why is there not a "stable" or "latest" Docker image tag?](faq.md#why-is-there-not-a-stable-or-latest-docker-image-tag)
+  - [Rollbacks](rollbacks.md)
 
 ## Members
 
-- [G. P.](https://hire.lever.co/search/5f3b284f-04ce-4bdc-86ba-f9eed6a0ae9e) ([engineering manager](../roles.md#engineering-manager)) estimated start date in June.
-- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) ([project lead](../roles.md#project-lead))
-- [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
-- [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
-- [Dave Try](../../../company/team/index.md#dave-try)
-- [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
+- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. The engineering team is owning PM responsibilities in the meantime.
+- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
+  - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
+  - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
+  - [Dave Try](../../../company/team/index.md#dave-try)
+  - [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
+  - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
 
-## Hiring status
+Other:
 
-_Updated 2020-06-02_
+- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) is in an experimental role acting as [an internal contributor, focused on high-value low-cost wins across the board.](https://docs.google.com/document/d/18c9dVjw5MuvOMHahCFQQPAVsp1vRdFDDI_7hmo5MWyQ/edit) His work is not isolated from the Distribution team, it will tracked on [a project board](https://github.com/orgs/sourcegraph/projects/106), with regular status updates to his manager and any other relevant teams. He will work closely with (and sometimes embedded in) other teams, and get alignment with the product team (and any other team) on his work. This is an experiment between 2020-11-23 and 2021-01-23 and we will evaluate the outcome around that time. [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) will continue to be his manager during this experiment.
 
-The team has doubled in size recently so it isn't a high priority to grow this team further, but we are always open to hiring exceptional people. [Apply here](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-distribution.md).
+## On-call rotation
+
+Who is on call? Slack: `/genie whoisoncall Distribution`
+
+We have an OpsGenie rotation to respond to [incidents](../incidents/index.md) (events that cause service disruption). You can find more information about [being on call in the handbook](../incidents/on_call.md).
+
+**Incidents on-call**
+
+- [Alerts owned by this team](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24+file:monitoring/.*+%7B:%5B_%5D%2C+Owner:+ObservableOwnerDistribution%2C+:%5B_%5D%7D+OR+%28:%5B_%5D%2C+ObservableOwnerDistribution%29+count:1000&patternType=structural)
+- [OpsGenie rotation](https://sourcegraph.app.opsgenie.com/teams/dashboard/aa59eba4-9b34-45ea-9515-c4dab4cbdac9/main)
+
+## Support rotation
+
+Who is on call? Slack: `/genie whoisoncall distribution-support`
+
+We maintain a support rotation to deal day-to-day requests (respond to ad-hoc, time-sensitive questions from customers or other teams, RFC review requests, etc). This makes it easier for other teams to reach out an engineer on the team who's priority is answering these questions and helps other engineers on the team remain focused. You can read more about this on the references below.
+When you are the active support engineer, your focus and priority is responding to requests and questions in #distributioneers, sometimes this might require creating an issue, re-assigning, looping in other engineers, etc.
+
+_If for any reason you are unavailable for a rotation, please coordinate with the team for someone to take over._
+
+**References:**
+
+- [SRE Book](https://sre.google/sre-book/dealing-with-interrupts/)
+
+### Contacting the support engineer
+
+There are many reasons to contact the support engineer depending on the priority or urgency of a request.
+Here are some guidelines that will help ensure we can reply to your request appropriately.
+
+#### General questions
+
+Send us a message in #distributioneers and notify the active engineer by `@` his user in the message.
+Alternatively `@` the engineer in the thread in which he is required.
+If this is a **time sensitive request**, please let us know in the message that this is the case
+
+#### Customer incidents
+
+You can send an urgent notification to the engineer directly from Slack utilizing the following command: `/genie alert "ce/p1: Customer XYZ systems are impaired #12345" for distribution-support`.
+If the engineer is unable, a message will be send to the rest of the team.
+
+Please provide a link to an [issue](https://about.sourcegraph.com/handbook/ce/customer_issues) in the message.
+
+## Growth plan
+
+_Updated 2020-11-18_
+
+We are looking to grow this team to 8 engineers so we can split into two teams.
+
+<!-- TODO(@nick): Does it actually make sense to grow and divide here? -->
+
+### Distribution
+
+This team owns how we develop, build, release, deploy, and upgrade Sourcegraph Cloud and at customers on-premise.
+
+Examples:
+
+- Expand and maintain our customer deployment options (for example: single Docker image, Docker Compose, Kubernetes, AMI)
+- Ensure that we have a fast and automated release/deployment process to Cloud.
+- Maintain Buildkite infrastructure.
+- Provide automated upgrades for on-premise customers.
+- Build general dev tools that aren't specific to frontend or backend (for example: Codenotify, merge/review bots). <!-- TODO(@nick): should this be under the operations team? -->
+
+### Operations platform
+
+This team is directly responsible for Sourcegraph Cloud uptime and reliability, as well as being responsible for operational infrastructure that enables other engineering teams to observe and monitor the parts of the product they own.
+
+Examples:
+
+- Provide logging and metrics infrastructure that enables developers to observe/search current and historical data as well as define alerts.
+- Provision and scale of our Cloud resources (for example: GCP).
+- Measure and sustain 99.99% uptime and reliability of Sourcegraph Cloud.
+- Enforce access controls and network security policies for our Cloud resources.
+- Make it easy for customers to share relevant data when submitting bug reports.

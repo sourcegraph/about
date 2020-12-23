@@ -6,6 +6,7 @@ tags: [blog]
 slug: sourcegraph-3.11
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Sourcegraph 3.11: Structural search, removed management console, language statistics, and NPM credentials campaign"
 ---
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -46,7 +47,7 @@ Sourcegraph couldn't be what it is without the community.
   <p style="text-align: center"><a href="https://vimeo.com/380662673" target="_blank">View on Vimeo</a></p>
 </p>
 
-Sourcegraph 3.11 introduces [structural search](https://docs.sourcegraph.com/user/search/structural), a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
+Sourcegraph 3.11 introduces [structural search](https://docs.sourcegraph.com/code_search/reference/structural), a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
 
 It can be awkward or difficult to match code blocks or nested expressions with regexp. To meet this challenge we’ve introduced a new and easier way to search code that operates more closely on the parse tree of the input using [Comby syntax](https://comby.dev/) for structural matching.
 
@@ -68,7 +69,7 @@ Known limitations:
 
 - Only indexed repositories will show results for structural search. On [Sourcegraph](https://sourcegraph.com/search), we index approximately 10,000 of the most popular repositories on GitHub.
 - To use this query syntax you must include `patterntype:structural` to activate the search type.
-- See [additional functionality and limitations](https://docs.sourcegraph.com/user/search/structural#current-functionality-and-restrictions)
+- See [additional functionality and limitations](https://docs.sourcegraph.com/code_search/reference/structural#current-functionality-and-restrictions)
 
 ## Management console removed to simplify configuration
 
@@ -123,7 +124,7 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
   <p style="text-align: center"><a href="https://vimeo.com/380662321" target="_blank">View on Vimeo</a></p>
 </p>
 
-A new experimental feature has been added to show [language statistics about your search query](https://docs.sourcegraph.com/user/search#statistics). Search result pages now have a **Stats** link to a visual breakdown of the languages that comprise the results for the query. This data is also available through our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
+A new experimental feature has been added to show [language statistics about your search query](https://docs.sourcegraph.com/code_search/explanations/features#statistics). Search result pages now have a **Stats** link to a visual breakdown of the languages that comprise the results for the query. This data is also available through our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
 
 Language analysis is computationally expensive, so this feature is currently behind a feature flag. To enable, update your global, organization, or user settings to include `{ “experimentalFeatures”: { “searchStats”: true } }`.
 
@@ -133,7 +134,7 @@ Language analysis is computationally expensive, so this feature is currently beh
 
 This month we published a [new case study](https://about.sourcegraph.com/case-studies/lyft-monolith-to-microservices) showing how Sourcegraph code search helped ensure production stability at Lyft during their monolith to microservices decomposition.
 
-![Lyft case study preview](/images/3-11-lyft.png "Lyft case study preview")
+![Lyft case study preview](/blog/3-11-lyft.png "Lyft case study preview")
 
 ### See you at GitLab Commit 2020 in San Francisco
 
@@ -150,13 +151,13 @@ Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit
 ### Added
 
 - Language statistics by commit are available via the API. [#6737](https://github.com/sourcegraph/sourcegraph/pull/6737)
-- Added a new page that shows [language statistics for the results of a search query](https://docs.sourcegraph.com/user/search#statistics).
+- Added a new page that shows [language statistics for the results of a search query](https://docs.sourcegraph.com/code_search/explanations/features#statistics).
 - Global settings can be configured from a local file using the environment variable `GLOBAL_SETTINGS_FILE`.
 - High-level health metrics and dashboards have been added to Sourcegraph's monitoring (found under the **Site admin** -> **Monitoring** area). [#7216](https://github.com/sourcegraph/sourcegraph/pull/7216)
 - Logging for GraphQL API requests not issued by Sourcegraph is now much more verbose, allowing for easier debugging of problematic queries and where they originate from. [#5706](https://github.com/sourcegraph/sourcegraph/issues/5706)
 - A new campaign type finds and removes leaked NPM credentials. [#6893](https://github.com/sourcegraph/sourcegraph/pull/6893)
 - Campaigns can now be retried to create failed changesets due to ephemeral errors (e.g. network problems when creating a pull request on GitHub). [#6718](https://github.com/sourcegraph/sourcegraph/issues/6718)
-- The initial release of [structural code search](https://docs.sourcegraph.com/user/search/structural).
+- The initial release of [structural code search](https://docs.sourcegraph.com/code_search/reference/structural).
 
 ### Changed
 
@@ -181,7 +182,7 @@ Sourcegraph is sponsoring [GitLab Commit](https://about.gitlab.com/events/commit
 
 ### Removed
 
-- The management console has been removed. All critical configuration previously stored in the management console will be automatically migrated to your site configuration. For more information about this change, or if you use `SITE_CONFIG_FILE` / `CRITICAL_CONFIG_FILE`, please see the [migration notes for Sourcegraph v3.11+](doc/admin/migration/3_11.md).
+- The management console has been removed. All critical configuration previously stored in the management console will be automatically migrated to your site configuration. For more information about this change, or if you use `SITE_CONFIG_FILE` / `CRITICAL_CONFIG_FILE`, please see the [migration notes for Sourcegraph v3.11+](https://docs.sourcegraph.com/@3.11/admin/migration/3_11).
 
 The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.11) is available on GitHub.
 

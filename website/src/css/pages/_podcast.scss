@@ -1,6 +1,7 @@
 .podcast {
     &__banner {
         font-size: 4rem;
+        font-weight: normal;
     }
     &__subbanner {
         font-size: 1.25rem;
@@ -18,7 +19,9 @@
     &__subscribe {
         text-align: center;
         border-top: 1px solid $dark-5;
-        color: $blue-3;
+        border-bottom: 1px solid $dark-5;
+        color: black;
+        background-color: $blue-3;
         padding-top: 1em;
         padding-bottom: 1em;
         &-highlight {
@@ -31,8 +34,19 @@
             margin-left: 0.85em;
         }
         a {
-            color: $blue-3;
+            color: $black;
         }
+    }
+
+    &__subscribe-top {
+        border-top: 1px solid $dark-5;
+        &__subscribe {
+            border-top: 0;
+        }
+    }
+
+    &__subscribe-episode {
+        margin-bottom: 1em;
     }
 
     &__content-option {
@@ -52,7 +66,7 @@
             border-radius: 0.5em;
         }
         a.podcast__content-option-selected {
-            text-shadow: 0 0 .9px $blue-3, 0 0 .9px $blue-3;
+            text-shadow: 0 0 0.9px $blue-3, 0 0 0.9px $blue-3;
             border: 1px solid $blue-3;
             box-sizing: border-box;
         }
@@ -60,7 +74,6 @@
 
     &__episode {
         margin: auto auto 7em auto;
-        padding-top: 5em;
         border-top: 1px solid $dark-5;
     }
 
@@ -69,8 +82,7 @@
     }
 
     &__backtoall {
-        margin-top: -0.5em;
-        margin-bottom: -1em;
+        margin-bottom: 1em;
         a {
             color: $dark-3;
         }
@@ -78,7 +90,7 @@
 
     &__title {
         font-size: 2.5em;
-        margin: 0.5em auto 0.25em auto;
+        margin: 0.75em auto 0.75em auto;
         font-weight: 100;
         color: $blue-3;
         a {
@@ -100,7 +112,7 @@
     }
 
     &__player {
-        margin: 2em auto 2em auto;
+        margin: 3em auto;
         audio {
             filter: saturate(100%) invert(90%);
         }
@@ -116,4 +128,9 @@
         }
     }
 
+    &__acknowledgements {
+        h2 {
+            font-size: 1.75rem;
+        }
+    }
 }

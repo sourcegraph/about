@@ -6,6 +6,7 @@ publishDate: 2020-04-23T10:00-07:00
 tags: [blog]
 slug: our-abcs-always-be-coding-childrens-book
 heroImage: https://about.sourcegraph.com/blog/our-abcs.png
+socialImage: https://about.sourcegraph.com/blog/our-abcs.png
 published: true
 ---
 
@@ -16,9 +17,9 @@ With many family homes now being an office (and perhaps a school as well), we wa
 We love what we’ve come up with and hope you will too—a new digital children’s book titled "[Our ABCs: Always Be Coding](https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf)”—for all children that wonder what their techie parents do all day, night, and some weekends too!
 
 <div class="text-center">
-    <h2 class="h5 pb-3">Our ABCS: Always Be Coding</h2>
+    <h2 class="h5 pb-3">Our ABCs: Always Be Coding</h2>
     <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download" class="d-block" id="abc-dlbook" target="new">
-        <img src="/blog/our-abcs-hero.png" class="my-1"/>
+        <img src="/blog/our-abcs-hero.png" class="my-1" alt="Our ABCs: Always Be Coding book"/>
     </a>
     <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download" class="button btn btn-primary mt-4 mb-2" id="abc-dlbook" target="new">Download your book</a>
 </div>

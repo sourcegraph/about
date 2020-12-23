@@ -29,6 +29,7 @@ Sourcegraph generally holds two company-wide events each year, each fully covere
 - Teams are expected to use discretion about what events are appropriate for team outings. Be inclusive! Contact @sourcegraph/people-ops with any questions.
 - Reserve plenty of time for just hanging out, touring around, having fun, etc. Quality time is important.
 - If one individual is a member of multiple teams, they will receive the same amount for each of their teams.
+- The budget can be used for online team bonding events if the team prefers.
 
 ## Individual travel
 
@@ -38,5 +39,5 @@ Sourcegraph generally holds two company-wide events each year, each fully covere
 
 ## Professional development and education
 
-- Each team member has a $1,000 USD budget for professional development and education, as outlined on our [careers page](https://github.com/sourcegraph/careers#-professional-development).
+- Each team member has a $1,000 USD budget for professional development and education, as outlined on our [benefits page](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks#professional-development).
 - This can also be used for travel related to professional development (e.g., for conferences or training sessions).

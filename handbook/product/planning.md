@@ -1,18 +1,18 @@
 # Planning
 
-Planning is a continuous process of negotiation between product and engineering. Teams should review the project roadmap weekly with the [Product Manager](roles.md#product-manager) during their team meetings, and update it regularly as new information comes in. The product manager should also review the plans for all projects in the next release for overall coherency. This ensures that projects can work on the schedules that make the most sense for them (subject to the constraint of needing to ship some kind of milestone monthly). A particularly long-term project can have many months of visibility into requirements and plans, and shorter or more experimental projects can be planned with shorter time horizons.
+Planning is a continuous process of negotiation between product and engineering. Teams should review the project roadmap weekly with the [Product Manager](roles/product_manager.md) during their team meetings, and update it regularly as new information comes in. The product manager should also review the plans for all projects in the next release for overall coherency. This ensures that projects can work on the schedules that make the most sense for them (subject to the constraint of needing to ship some kind of milestone monthly). A particularly long-term project can have many months of visibility into requirements and plans, and shorter or more experimental projects can be planned with shorter time horizons.
 
 ## Planning artifacts
 
 Planning requires several artifacts for communicating. This section clarifies how each artifact is used in the planning process.
 
-### OKRs
+### Goals
 
-[OKRs](../../company/okrs/index.md) align teams with the company's goals for the quarter. They should be used to make prioritization decisions and help to maintain team direction and focus.
+[Goals](../../company/goals/index.md) align teams with the company's goals. They should be used to make prioritization decisions and help to maintain team direction and focus.
 
-### Project roadmap
+### Roadmap
 
-[The project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing) is where we track and prioritize larger projects that we intend to finish in the next 3-6 months.
+[The roadmap](roadmap.md) is where we track and prioritize larger projects that we intend to finish in the next 3-6 months.
 
 Engineering should feel empowered to add items to the roadmap that they feel strongly about, which will start conversations with product. We want to push decisions down to people closest to those problems. It is product's responsibility to help give insight into customer pains and feedback, strategic priorities, and to ensure consistency across the product.
 

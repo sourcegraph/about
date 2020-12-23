@@ -4,7 +4,7 @@ author: Quinn Slack
 publishDate: 2019-12-09T10:00-08:00
 tags: [blog]
 slug: code-navigation-in-github-pull-requests
-heroImage: https://storage.googleapis.com/sourcegraph-assets/code-navigation-in-github-pull-requests-typescript-hover-hero.png
+heroImage: https://sourcegraphstatic.com/code-navigation-in-github-pull-requests-typescript-hover-hero.png
 published: true
 ---
 
@@ -16,7 +16,7 @@ Code navigation helps you review code in GitHub pull requests more quickly and e
 
 Here's what it looks like:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/code-navigation-in-github-pull-requests-typescript-hover.png" />
+<img src="https://sourcegraphstatic.com/code-navigation-in-github-pull-requests-typescript-hover.png" alt="Github pull request demonstrating code navigation to help review code."/>
 
 How does it help? Suppose you're reviewing a pull request that calls a function you don't recognize. You'll be able to quickly answer:
 
@@ -26,7 +26,7 @@ How does it help? Suppose you're reviewing a pull request that calls a function 
 
 ## Set it up
 
-You'll need to use Sourcegraph because [GitHub's code navigation](https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github) doesn't work in pull requests. GitHub has no public plans to add support, but if it does, switching should be easy because Sourcegraph's underlying [code intelligence](https://docs.sourcegraph.com/user/code_intelligence) for [20+ languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) is open source, uses open standards (including Microsoft's LSP and [LSIF](https://docs.sourcegraph.com/user/code_intelligence/lsif)), and is [vendor neutral](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/).
+You'll need to use Sourcegraph because [GitHub's code navigation](https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github) doesn't work in pull requests. GitHub has no public plans to add support, but if it does, switching should be easy because Sourcegraph's underlying [code intelligence](https://docs.sourcegraph.com/code_intelligence) for [20+ languages](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22) is open source, uses open standards (including Microsoft's LSP and [LSIF](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)), and is [vendor neutral](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/).
 
 #### First: try it on a public repository (~1min)
 

@@ -1,6 +1,6 @@
 # Code reviews
 
-All code should be reviewed and approved by an appropriate teammate before being merged into the `master` branch.
+All code should be reviewed and approved by an appropriate teammate before being merged into the `main` branch.
 
 Our goal is to have a code review process and culture that everyone would opt-in to even if code reviews weren't required.
 
@@ -56,7 +56,7 @@ Here are some examples of reasons to skip code review that are NOT acceptable:
   - The customer expects the feature to work and be maintained. Code review helps ensure both of these things by increasing the quality and distributing ownership.
 - "This code is experimental"
   - Our goal is to have a code review culture such that engineers who are working on "experimental" code still find code reviews valuable and worth doing (for all the benefits mentioned in the rest of this document).
-  - All code that is in `master` has the potential to impact customers (e.g. by causing a bug) and other developers at Sourcegraph (e.g. by making it harder to refactor code). As such, it is in our interest to ensure a certain quality level on all code whether or not it is considered "experimental".
+  - All code that is in `main` has the potential to impact customers (e.g. by causing a bug) and other developers at Sourcegraph (e.g. by making it harder to refactor code). As such, it is in our interest to ensure a certain quality level on all code whether or not it is considered "experimental".
   - Assume that we allowed "experimental" code to bypass code review. How would we know when it is no longer experimental and how would it get reviewed? Either it wouldn't get reviewed, or an engineer would have to review all the code after the fact without a nice PR diff to look at or effective way to make comments. Neither of these outcomes would meet our need of reviewing all non-experimental code.
 - "I don't have someone to review this code"
   - Ask for help to identify someone else on the team with whom you can share your knowledge, context, and ownership.
@@ -123,6 +123,8 @@ If your change touches multiple parts of our codebase (e.g. Go, TypeScript), the
 
 GitHub will automatically assign reviewers if there is a matching entry in the [CODEOWNERS](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/.github/CODEOWNERS) file, but that doesn't necessarily mean that you need to wait for an approval from everyone. For example, if you are making a change to the search backend then you only need approval from one person on that team, not all of them.
 
+For small changes across few files assign to the team and request a review.
+
 Use your best judgement and ask if you are uncertain.
 
 ## When should I use a draft PR?
@@ -131,4 +133,4 @@ A draft PR signals that the change is not ready for reviewed. This is useful, fo
 
 ## Security
 
-Special care should be taken when reviewing a diff that contains, or is adjacent to, comments that contain the following string: `🚨 SECURITY`. These comments indicate security-sensitive code, the correctness of which is necessary to ensure that no private data is accessed by unauthorized actors. The code owner of any modified security-sensitive code must approve the changeset before it is merged.
+Special care should be taken when reviewing a diff that contains, or is adjacent to, comments that contain the following string: `🚨 SECURITY`. These comments indicate security-sensitive code, the correctness of which is necessary to ensure that no private data is accessed by unauthorized actors. The code owner of any modified security-sensitive code must approve the changeset before it is merged. Please refer to [Security patterns](security_patterns.md) for considerations when touching security-sensitive code.

@@ -1,22 +1,24 @@
-.typ h2,
-.typ h3,
-.typ h4,
-.typ p {
-  font-family: Open Sans;
-  border: none;
+.typ {
+  font-family: "PT Sans";
 }
 .typ h1 {
-  font-size: 54px;
+  font-size: 64px;
+  font-weight: 600;
   border: none;
 }
+.h1_content {
+  font-size: 52px;
+}
 .typ h2 {
-  font-size: 32px;
+  font-size: 40px;
+  border: none;
 }
 .typ h3 {
-  font-size: 28px;
+  font-size: 20px;
 }
-.typ h4 {
-  font-size: 24px;
+p {
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
 }
 .mark,
 .mark-rev {

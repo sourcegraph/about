@@ -1,35 +1,53 @@
 # Product
 
-The Product team strives to make the following true:
+## Team
 
-- The team is working on the most important things (listed in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit)) to execute on [our strategy](../../direction/index.md) that is moving us forward on [our vision](../../company/strategy.md).
-- Each teammate has the customer and product context needed (about customer problems, likely future priorities, possible solutions, etc.) to perform their work effectively.
-- The product vision and roadmap are communicated well to teammates and everyone outside Sourcegraph.
+The product team consists of the product managers, product designers, and technical writers on the team.
 
-## [Roles](roles.md)
+### Members
 
-[Onboarding to the product team](./onboarding/index.md)
+- [Christina Forney](../../../company/team/index.md#christina-forney-she-her), VP Product
+- [Product management](product_management/index.md)
+  - [María Craig](../../../company/team/index.md#maría-craig-she-her) - ([Code intel](../engineering/code-intelligence/index.md))
+  - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) - ([Web](../engineering/web/index.md))
+- [Product design](design/index.md)
+  - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+  - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
+  - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
+- [Technical writing](technical_writing/index.md)
 
-See job descriptions and responsibilities of roles on the Product team:
+### [Roles](roles/index.md)
 
-- [Product Manager](roles.md#product-manager) ([We're hiring!](https://github.com/sourcegraph/careers/blob/master/job-descriptions/product-manager.md))
-- [Product Designer](roles.md#product-designer)
+See [Roles](roles/index.md) for open positions and hiring targets.
+
+## Planning
+
+- [Product team goals](goals.md)
+- [Roadmap](roadmap.md)
 
 ## Resources
 
+### References
+
+- [Onboarding to the product team](./onboarding/index.md)
+- [Personas](../marketing/personas.md)
 - The [Sourcegraph workflow](../../workflow/index.md) describes how our product fits into the developer workflow.
-- [Personas](personas.md)
+- Product documents (PDs)
+  - [All PDs](https://drive.google.com/drive/folders/1Wd-Xx2wNbFtSzeJwbZqMOxdbFDUFxlyR) (Google Drive)
+  - [How we use PDs](product_documents.md)
+- RFCs (requests for comment)
+  - [All RFC documents](https://drive.google.com/drive/folders/1bip_pMeWePyNNdCEETRzoyMdLtntcNKR) (Google Drive)
+  - [How we use RFCs](../communication/rfcs/index.md)
+- [Product learnings](product_learning.md)
+
+### Metrics
+
 - [Product metrics dashboard](https://sourcegraph.looker.com/dashboards/127)
+
+### Tools
+
 - [Figma](https://www.figma.com/files/team/438792081639669302/Sourcegraph)
 - [Productboard](https://sourcegraph.productboard.com/)
-
-## Product planning
-
-- [Planning](planning.md) - how we do planning and the artifacts we use to plan.
-- [Delivery plans](delivery_plans.md) - how validate the things we build solve user problems.
-- [Tracking issues](../engineering/tracking_issues.md) - how we keep track of planned and on-going work.
-- [Prioritizing](prioritizing.md) - how we prioritize work, and how to get things prioritized.
-- [Tracking user feedback](user_feedback.md) - sources of feedback and how we keep track of that feedback.
 
 ## Release early, release often
 
@@ -38,8 +56,3 @@ Each project, no matter how long-running, needs to plan to ship _something_ in e
 The reason for this is to avoid going for too long without customer feedback (from customers trying it) or even technical/product feedback (from performing the diligent work of polishing it to be ready to release). Lacking these critical checks means we will end up building something that doesn't solve people's problems or that is over-built.
 
 When we have relaxed this in the past, the results have been bad and the overwhelming feedback from retrospectives has been to release regularly.
-
-## Templates
-
-- [Release blog post template](./release_blog_post_template.md)
-- [Release blog post tracking issue template](./release_issue_template.md)

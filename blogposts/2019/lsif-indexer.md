@@ -8,17 +8,18 @@ tags: [
 slug: writing-an-lsif-indexer
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: "Writing an LSIF Indexer"
 ---
 
 <div class="alert alert-info">
 
-Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/user/code_intelligence/lsif)".
+Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
 
 </div>
 
 This article explores what it would take to write an LSIF indexer. Along the way, we will learn a little bit about parsing, walking abstract syntax trees, scopes and the LSIF file format.
 
-[LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (Language Server Index Format) is a data format that captures code intelligence facilitating code navigation, hover documentation etc. The blog post _[Code intelligence with LSIF](https://about.sourcegraph.com/blog/code-intelligence-with-lsif)_ has more details about LSIF.
+[LSIF](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (Language Server Index Format) is a data format that captures code intelligence facilitating code navigation, hover documentation etc. The blog post _[Code intelligence with LSIF](/go/code-intelligence-with-lsif/)_ has more details about LSIF.
 
 An LSIF indexer analyzes a collection of input source code files and produces an LSIF data file. This LSIF data file, in turn, is used by an editor or a Sourcegraph instance or some other developer tool to offer functionality like "Go to Definition", "Show References", hover results with documentation and type information, semantic search, etc.
 
@@ -223,7 +224,7 @@ with [dot](https://graphviz.gitlab.io/download/).
 - Validate: `lsif-util validate data.lsif`
 - Visualize: `lsif-util visualize data.lsif --distance 2 | dot -Tpng -o image.png`
 
-Of course, since we're Sourcegraph, we would be happy if you try out LSIF with a Sourcegraph instance by following these [instructions](https://docs.sourcegraph.com/user/code_intelligence/lsif).
+Of course, since we're Sourcegraph, we would be happy if you try out LSIF with a Sourcegraph instance by following these [instructions](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
 Check out [LSIF.dev](https://lsif.dev) for a curated list of LSIF indexers. If you are interested in adding your LSIF indexer to the list, create a pull request [here](https://github.com/lsif/lsif.github.io).
 

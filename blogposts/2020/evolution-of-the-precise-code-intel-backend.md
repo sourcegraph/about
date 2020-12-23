@@ -1,6 +1,6 @@
 ---
-title: "Evolution of the precise code intel backend"
-description: This post reflects on the high-level technical changes as the precise code intel services matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. 
+title: "The Language Server Index Format (LSIF) at Sourcegraph, a year in review"
+description: We've spent a year building out the world's largest semantic code index using the Language Server Index Format (LSIF). Read about the technical journey, from MVP to scaling and optimizing the system to support large-scale codebases.
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 publishDate: 2020-06-17T10:00-07:00
@@ -10,186 +10,222 @@ heroImage: /blog/big-brain.png
 published: true
 ---
 
-On July 12, Sourcegraph's LSIF-based precise code intelligence will have received its first commit a year ago.
+Jumping to the definition of a symbol under your cursor and finding all its references are two of the basic mental mechanics of software engineering. Fast code navigation accelerates the rate at which you can build a mental model of the code, and when it's available, you're likely to use it hundreds, if not thousands, of times per day.
 
-<div class="text-center">
-    <strong>🎉 Happy 🎉 Almost 🎉 Birthday 🎉</strong>
+<div style="margin: 2em;">
+<img src="https://sourcegraphstatic.com/predcise-j2d-find-refs.gif" alt="Precise jump to definition and find refs" />
 </div>
 
-Sourcegraph's [precise code intelligence features](https://docs.sourcegraph.com/user/code_intelligence/lsif) are driven by user-uploaded LSIF indexes created in their own build and continuous integration systems. When browsing code that has been indexed, all hover tooltips, definitions, and reference results are _precise_ rather than heuristic (based off of search results, which is the no-configuration default).
+Code navigation is the core of how Sourcegraph helps you understand the parts of the universe of code that are most relevant and important to you. Code navigation also presents a difficult technical challenge, especially when you want to provide code navigation *outside the IDE* in a variety of other applications where developers are trying to understand code: a web-based code search engine like [Sourcegraph.com](https://sourcegraph.com/search), [private instances of Sourcegraph](https://docs.sourcegraph.com/#quickstart-guide), and in code hosts like GitHub, GitLab, Bitbucket, and Phabricator through the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
 
-This post reflects on the high-level technical changes as the precise code intel services matured through additional features, changing environment requirements, hardening, performance improvements, refactoring, and one major rewrite in a different language. These changes span +324k/-277k lines of code over 527 commits.
+In order to provide compiler-accurate code navigation, IDEs work a lot of magic behind the scenes which involves static analysis, incremental compilation, build execution, and lots and lots of caching, much of which assumes read, write, and exec permissions on your local filesystem. So how does Sourcegraph provide precise code navigation to any user within milliseconds without this access? The answer is the Language Server Index Format, or LSIF ("elsif"). This post will share our technical journey with LSIF, including why we chose to adopt this as the foundation for our precise code navigation, the challenges we faced scaling an LSIF-based backend, and where we see things going from here.
 
-I may not _strictly_ be able to call this post a work of [software archaeology](https://en.wikipedia.org/wiki/Software_archaeology) (since it's only a year old, it's actively used, not a legacy codebase, the primary author is still here to talk about it, and it isn't completely undocumented). It may be more accurate to call it a [historiographical artifact](https://en.wikipedia.org/wiki/Historiography), but dinosaurs are cooler than books so welcome to the dig site.
+## Motivations
 
----
+The journey to LSIF began in 2013 with the first version of Sourcegraph. Precise code navigation was a first-order concern, even in that early version of the application. At the time, code navigation was a feature that was available only in editors — and only in certain languages for each editor, depending on whether there was a plugin that added support for a specific language to a specific editor.
 
-## Provenance
+To enable code navigation in web-based interfaces (and with an eye toward enabling it across all languages in all editors), Sourcegraph created [srclib](https://srclib.org), the first open-source cross-language code analysis toolchain and indexing format. Projects like the Language Server Protocol and Kythe were still years away from being released.
 
-**PR**: [Add LSIF support (#4799)](https://github.com/sourcegraph/sourcegraph/pull/4799)
+[srclib](https://srclib.org) worked quite well in those early versions of Sourcegraph. However, adding a srclib indexer for every language turned out to be quite an undertaking. There were many other product features that demanded time and attention, and so support for new languages was slow to develop. In the meantime, the Language Server Protocol emerged as a new open protocol for providing code navigation across many editors. LSP piggybacked on the growing traction of VS Code and many implementations of LSP emerged for most major languages. In this growing ecosystem, we at Sourcegraph saw an opportunity to take advantage of and also give back to an emerging open-source community that was dedicated to making code intelligence ubiquitous for every language.
 
-Chris Wendt wrote the initial draft of the service as a simple TypeScript express server proxied by the HTTP API of the frontend service. This kept the number of public services low and kept the request authentication flow to a single code path. The express server would accept raw LSIF input and store it on disk, unchanged. Queries to the lsif-server through a proof of concept LSIF-specific [extension](https://docs.sourcegraph.com/extensions) would read the raw LSIF data for that repository, parse it into memory, and walk the graph to construct the appropriate response.
+We contributed language server implementations for Go, TypeScript and JavaScript, Python, and Java. And we incorporated language servers into our application architecture, so they could be deployed with Sourcegraph to provide precise code intelligence for many more languages that we had been able to provide with srclib and our limited developer-hours.
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-1.png)
+Language servers served our users well for a number of years, but eventually, as the amount of code on Sourcegraph.com grew and large organizations began to adopt Sourcegraph for their big internal codebases, scaling and performance became an issue.
 
-The choice of TypeScript was a natural one at the time: the (then called) codenav team consisted of what would later become the web and the code intelligence teams. TypeScript was a major core competency of the team, and there was an additional benefit of being able to reuse code from the [server](https://github.com/microsoft/vscode-lsif-extension/tree/d9d4f25ffcd735d6a45bdfe0f3c811cf4bb376e0/server/src) package in an unpublished Visual Studio Code [extension](https://github.com/microsoft/vscode-lsif-extension) to jump start the service with a functional consumer of the LSIF protocol (which was only 0.4.0 at this point in time).
+Fast forward to early 2019, when our largest customer began regularly reporting language server outages related to high usage volume and large codebase size. We began looking for ways to improve performance at scale, and started thinking about how to combine the richness of the LSP ecosystem with the performance of an indexing-based approach like srclib.
 
-This code, and the manner in which it was written, was absolutely the golden standard of an MVP. It did exactly what it needed to in order to solicit feedback from users and find its place in the universe of possible features. As all such minimum implementations should be, it lacked attention to scalability, performance, and robustness (because you do **not** spend that energy on a feature that is immediately scrapped).
+In February 2019, to our surprise and delight, Dirk Bäumer, one of the creators of LSP, announced the Language Server Index Format (LSIF), a code intelligence indexing format "similar in spirit to LSP".
 
-I would begin my journey at Sourcegraph as a member of the codenav team ten days after this PR was opened. Around this time, Sourcegraph had made the decision to de-prioritize the work on language servers in support of building out an infrastructure to enable precise code intelligence supported by LSIF indexes. The [LSIF announcement blog post](/blog/code-intelligence-with-lsif) outlines some of the reasons we chose to shift our focus. This allowed us to budget the effort into improving scalability, performance, and robustness of the service while extending its feature set to eventually subsume what language servers were currently providing.
+## What is LSIF?
 
-## Commit to a storage format
+LSIF provides a cross-language serialization format that describes the data needed to quickly resolve actions like go-to-definition and find-references. Raw LSIF data is JSON that looks like this:
 
-**PR**: [SQLite backend (#5332)](https://github.com/sourcegraph/sourcegraph/pull/5332)
+```
+{"id":"13","type":"vertex","label":"definitionResult"}
+{"id":"14","type":"edge","label":"textDocument/definition","outV":"11","inV":"13"}
+{"id":"15","type":"edge","label":"item","outV":"13","inVs":["10"],"document":"7"}
+{"id":"16","type":"vertex","label":"packageInformation","name":"github.com/sourcegraph/sourcegraph","manager":"gomod","version":"v3.17.0-rc.1-82e67052f048"}
+```
 
-The first issue to tackle was choosing how to represent LSIF data within the service. The MVP simply kept the raw LSIF input on disk, parsing it into memory on demand. Not every query would parse the LSIF input from scratch - there was an LRU cache that would allow multiple requests to hit the same LSIF index without re-parsing. However, LSIF indexes can be **very** large. The time to read these indexes into memory in the first place was non-negligible, and storing even a few large indexes in memory was likely to cause an OOM crash.
+Sourcegraph accepts user-uploaded LSIF data, which can be generated by an LSIF indexer implementation in any local checkout of code. The most common scenario is as a step in a repository's CI pipeline. Once Sourcegraph receives this data, it transforms it into an internal format, which is optimized for scale and query speed. Sourcegraph uses this data to power both local (with the same repository) and cross-repository code navigation actions like go-to-defintion and find-references.
 
-We needed to find a way to query only the portion of the index we needed to answer a query, and we needed to find a way to do it efficiently. We decided to convert the raw LSIF data into an internal protocol-oblivious format on upload, giving us complete control over the storage format. Having control of the storage format allowed it to be designed efficiently for the proposed access patterns:
+Today, the Sourcegraph LSIF backend has multiple components that each handle some aspect of uploading, parsing, transforming, reading, writing, and manipulating the LSIF data to serve user requests. This is the story of how this system grew and evolved over time. It is a story that spans 527 commits and +324k/-277k lines of code.
+
+## MVP
+
+The LSIF backend began life as a simple [Express](https://expressjs.com/) server written in TypeScript, proxied to the outside world by an endpoint in the Sourcegraph frontend API. This server accepted LSIF uploads and wrote them directly to disk. On a query request, the server would read the LSIF data for the current repository from disk into memory, parse it into a structured representation, and walk the graph of vertices and edges to construct the appropriate response.
+
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-1.png)
+
+On the client side, we wrote a simple [Sourcegraph extension](https://docs.sourcegraph.com/extensions) to query the lsif-server API.
+
+We chose TypeScript and Express, because this was the fastest way to get something up and running, given the experience of our team. The primary goal was to solicit feedback from users about the ergonomics of the upload API (for which users would have to configure their CI pipeline to generate LSIF) and the basic user experience of code navigation backed by LSIF. Performance, scalability, robustness, and code quality were not primary concerns.
+
+## Optimizing for queries
+
+To serve queries, the MVP implementation would simply read the raw LSIF data from disk into memory, parse it into a structured representation, and then walk the graph to compute the query result. LSIF indexes, however, can be very large (larger than the size of the codebase at any given revision). On larger codebases, this added significant latency to serving the user request and would often also call OOM crashes.
+
+We needed to make the following operations fast:
 
 - get definitions for an identifier at a given source position
 - get references for an identifier at a given source position
 - get the hover text for an identifier at a given source position
 
-After several round-trip design discussions, we reduced our backend choices between:
+In order to do this, we decided to store the LSIF data in a different format that was optimized for these operations. After several design discussions, we reduced our choices to two options:
 
 - [SQLite](https://www.sqlite.org/index.html), an embedded file-based SQL database engine, and
 - [Dgraph](https://dgraph.io/), a distributed graph database built on top of an LSM-tree-based database [BadgerDB](https://github.com/dgraph-io/badger).
 
-In order to prove or disprove the performance of one storage format over the other, we built two versions of the backend (the Dgraph backend implementation can be found [here](https://github.com/sourcegraph/sourcegraph/pull/5333)). Benchmarks showed that the upload performance of the SQLite and Dgraph backends were both proportional to the input size: SQLite with a factor between 2.2x and 2.8, and Dgraph with a factor of 25x. There were likely multiplying factors that increased this performance discrepancy, including lack of experience with graph databases, no operational experience with Dgraph, and a bad choice of graph schema.
+We built two versions of the backend. Benchmarks showed that the upload performance of the SQLite and Dgraph backends were both proportional to the input size: SQLite with a factor between 2.2x and 2.8, and Dgraph with a factor of 25x. We were relatively inexperienced with Dgraph, so the relatively slow performance could be explained by a lack of operational experience and a bad choice of graph schema (the Dgraph backend implementation can be found [here](https://github.com/sourcegraph/sourcegraph/pull/5333)).
 
-We chose to run with SQLite due to its higher initial performance, familiarity, and easy operational properties. SQLite is still the on-disk format for code intelligence bundles in Sourcegraph.
+Had we more time, we might have experimented more with Dgraph, but we decided to go with SQLite based on its higher initial performance, the familiarity we had with using it in the past, and the fact that it would be easier to deploy operationally into the many deployment environments that our customers have.
 
-After this change, raw LSIF uploads were processed immediately into a SQLite file which is stored on disk, and queries need only to access the documents containing the target source range. Standard SQL design and tricks apply here.
+After [this change](https://github.com/sourcegraph/sourcegraph/pull/5332), queries only needed to read from disk the documents containing the target source range, instead of the LSIF dump for the entire repository.
 
-## Process uploads asynchronously
 
-**PR**: [LSIF: Split server and worker (#5525)](https://github.com/sourcegraph/sourcegraph/pull/5525)
+## Processing uploads asynchronously
 
-After the previous change, raw LSIF data was no longer parsed in the query path but at upload time. However, the upload is still an HTTP request that is subject to the properties, rules, and whims of [OSI layer 5](https://en.wikipedia.org/wiki/OSI_model) and below. The conversion process itself is heavy and hasn't received much love in terms of optimization - processing large files would take longer than some client, server, and/or proxy timeouts, and would end up disconnecting upload requests for even moderately sized payloads.
+In the MVP, the LSIF upload process was synchronous. This was acceptable in the MVP, because all it was doing was reading the LSIF data from network and writing it directly to disk. Adopting SQLite as the backend store for precise code navigation added an additional transformation step to the LSIF upload process. Rather than simply read the LSIF data from network and write directly to disk, we now had to parse the data and convert it into a SQLite bundle. This increased the LSIF upload response time significantly, and we began bumping into timeouts enforced by various clients, servers, and proxies within or around Sourcegraph.
 
-It was still very easy to crash the entire process by uploading a large file, which it still had to read into memory during conversion. Because conversion happens within an HTTP handler, it was also easy to crash the lsif-server by uploading multiple small files, the sum of which exceed the memory resources allotted to the lsif-server.
+We also started to see more frequent OOM errors in the lsif-server process for larger uploads, as the data conversion process also increased memory usage. The same process handled both uploads and queries, so uploading a large file (or multiple small ones in parallel) could, by OOMing the process, also take down code navigation queries.
 
-The solution we chose was to extract the processing work from the express server into another service which pulls work off of a shared queue. Upload operations became fast as it only required the transfer of the payload to hit disk and not be fully converted. Processing one upload at a time ensured that a series of uploads would not crash the system, and processing large uploads could be remedied by increasing the memory allocated to the lsif-worker process. The lsif-worker is known today as the precise-code-intel-worker.
+To address this issue, we decided to separate the work of converting LSIF into SQLite bundles into a separate background process. The lsif-server process would continue to handle uploads and queries, but the uploads handler would be similar to that of the MVP implementation, transparently writing the raw data to disk rather that converting it synchronously. The lsif-worker[^1] process would consume the queue of LSIF dumps to process, converting these to SQLite bundles in the background.
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-2.png)
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-2.png)
 
-As a choice of shared queue, we went with [node-resque](https://github.com/actionhero/node-resque), which is a Node.js port of the [resque](https://github.com/resque/resque) library popular in the Rails ecosystem. This library uses Redis to store the job data, which was already a component of our stack. Alternative choices included using Postgres (which was a component of our stack but guarded by a small list of services), using some sort of local [IPC](https://en.wikipedia.org/wiki/Inter-process_communication) (which would prevent us from scaling the lsif-server and lsif-workers independently in the future), and using an AMQP server (which was not yet an existing component in our stack).
+To coordinate work between the LSIF upload handler and the lsif-worker process, we needed a queue. We used [node-resque](https://github.com/actionhero/node-resque), a Node.js port of the popular Rails library [resque](https://github.com/resque/resque). This library stores job data in Redis, which was already a component of our stack. We also considered using PostreSQL (but accessing the existing PostgreSQL instance came with certain restrictions due to concerns for uptime and performance), some sort of local [IPC](https://en.wikipedia.org/wiki/Inter-process_communication) (but this would have prevented scaling lsif-server and lsif-worker independently), and using an AMQP server (but this would have required introducing a new major service into our architecture).
 
-## Store cross-repo data in Postgres
+We implemented the splitting of lsif-server and lsif-worker in [this PR](https://github.com/sourcegraph/sourcegraph/pull/5525).
 
-**PR**: [LSIF: Cross-repository database to target Postgres (#5740)](https://github.com/sourcegraph/sourcegraph/pull/5740)
 
-Up until this point, we were storing converted LSIF index data in SQLite databases one-to-one: each uploaded LSIF index became a single database on-disk. In order to support cross-repository queries (jump to remote definition, find references across repositories) we had an additional `xrepo.db` database that allowed us to look up indexes by the versioned packages that they provide and the versioned packages on which they depend.
+## Storing cross-repository data in PostgreSQL
 
-So far, we had one instance of the lsif-server and one instance of the lsif-worker, both deployed in the same Docker container so that both processes could share the same persistent disk space. In order to break these services apart and scale horizontally, we needed to migrate the data owned by `xrepo.db` out of SQLite, which does not allow concurrent writes from multiple processes. Moving this data into our existing Postgres instance was easy: both the beginning and end states defined a few simple tables and didn't require any fancy tricks. 
+Each uploaded LSIF index became a single SQLite database on-disk. These single-repository databases would have been sufficient to support local (within the same repository) code navigation. In order to make the code navigation experience truly seamless and magical, we wanted to support cross-repository code navigation. In other words, we wanted users to click on a reference to a function defined in some dependency and arrive directly at the definition of that function in its source repository. Pretty neat!
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-3.png)
+To enable that, we added an additional SQLite database (`xrepo.db`) that enabled us to look up repository indexes by the versioned packages they provided and the version packages on which they depended.
 
-The unknown scale of additional writes concerned us. Would it cause operational issues or affect the performance of unrelated parts of the application? To be safe, we kept the table spaces disjoint (prefixed table names, no foreign keys to existing tables) and planned to support migrating this database into a second Postgres instance. This required us doing some nasty trickery with [db_link](https://github.com/sourcegraph/sourcegraph/blob/d1cffed06e58a90082243601d936279214547e30/migrations/1528395594_create_lsif_database.up.sql) in order to run migrations, which we found quite painful and [eventually reverted](https://github.com/sourcegraph/sourcegraph/pull/5935). Some back-of-the-envelope calculations showed that the load wouldn't overwhelm Postgres (which is difficult to do anyway - Postgres is quite the beast). Thankfully, these calculations turned out to be correct.
+This was fine so long as there was just one instance each of lsif-server and lsif-worker and they both lived in the same Docker container. However, in order to support LSIF across large, multi-repository codebases, we needed to scale. This meant that the multiple lsif-server and lsif-worker instances would be running in different Docker containers, perhaps on different machines, and could no longer rely on share access to a single-writer-at-a-time SQLite database. We moved the `xrepo.db` data into PostgreSQL.
 
-## Choose a new queueing library
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-3.png)
 
-**PR**: [LSIF: Replace node-resque with bull (#6062)](https://github.com/sourcegraph/sourcegraph/pull/6062)
+The potential volume of additional writes continued to concern us. As LSIF use grew, would it cause operational issues in the PostgreSQL instance that would affect the performance of unrelated parts of the application? To be safe, we kept the table spaces of the LSIF data disjoint (prefixed table names, no foreign keys to existing tables) from the other data. We also tried migrating the LSIF tables into a second PostgreSQL instance. However, this required some nasty trickery with [db_link](https://github.com/sourcegraph/sourcegraph/blob/d1cffed06e58a90082243601d936279214547e30/migrations/1528395594_create_lsif_database.up.sql) in order to run migrations, which we found quite painful and [eventually reverted](https://github.com/sourcegraph/sourcegraph/pull/5935). Some more back-of-the-envelope calculations suggested that the LSIF-related load wouldn't overwhelm the single shared PostgreSQL instance, and these calculations have largely held up over time.
 
-This change updates the interface to the job queue to use [bull](https://github.com/OptimalBits/bull) instead of [node-resque](https://github.com/actionhero/node-resque). This was not a major architectural change, but updating the library did remove some operational issues we were experiencing with stuck workers and lost jobs. Switching to the new library also unlocked some additional features such as running jobs on a schedule à la cron and being able to list the jobs in a particular state (and with the magic of Redis's [EVAL](https://redis.io/commands/eval) command, [searching within job payloads for text matching a query](https://github.com/sourcegraph/sourcegraph/blob/d323af7360dadd40aee35de3476a7577c1f726f1/lsif/src/search-jobs.lua)).
+<!-- **PR**: [LSIF: Cross-repository database to target Postgres (#5740)](https://github.com/sourcegraph/sourcegraph/pull/5740) -->
 
-Additional relevant PRs:
 
-- [LSIF: Add machinery for repeated/scheduled jobs (#6067)](https://github.com/sourcegraph/sourcegraph/pull/6067)
-- [LSIF: Add scheduled job to clean old job data (#6136)](https://github.com/sourcegraph/sourcegraph/pull/6136)
-- [LSIF: Endpoints for jobs in lsif-server (#6227)](https://github.com/sourcegraph/sourcegraph/pull/6227)
+## Queue v2: Bull and Redis
 
-## Store job data in Postgres
+We saw some operational issues related to stuck workers and lost jobs that we traced back to our queueing library, node-resque. This motivated a switch to [Bull](https://github.com/OptimalBits/bull), which also had some additional features that allowed us to schedule jobs (similar in spirit to cron), list all jobs in a particular state, and [search within job payloads for text matching a query](https://github.com/sourcegraph/sourcegraph/blob/d323af7360dadd40aee35de3476a7577c1f726f1/lsif/src/search-jobs.lua) using Redis's EVAL command.
 
-**PRs**: 
-- [LSIF: Dequeue from postgres (#6879)](https://github.com/sourcegraph/sourcegraph/pull/6879)
-- [LSIF: Enqueue jobs to postgres (#6877)](https://github.com/sourcegraph/sourcegraph/pull/6877)
-- [LSIF: Remove dead LSIF jobs code (#6880)](https://github.com/sourcegraph/sourcegraph/pull/6880)
+The relevant PRs:
 
-The evolution of the job queue continues. This change updates the interface over enqueueing/dequeueing jobs to target Postgres instead of Redis. This reduces a lot of complexity. Both the lsif-server and lsif-worker no longer rely on Redis, which was used as an ephemeral and truncatable cache in all other parts of the application. All of the custom Lua scripts that reach into the data owned by Bull could be reduced into a few SQL statements.
+- [Replace node-resque with bull (#6062)](https://github.com/sourcegraph/sourcegraph/pull/6062)
+- [Add machinery for repeated/scheduled jobs (#6067)](https://github.com/sourcegraph/sourcegraph/pull/6067)
+- [Add scheduled job to clean old job data (#6136)](https://github.com/sourcegraph/sourcegraph/pull/6136)
+- [Endpoints for jobs in lsif-server (#6227)](https://github.com/sourcegraph/sourcegraph/pull/6227)
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-4.png)
 
-Reducing the number of services in which mutations occur during a transaction is always a win. This change allowed us to re-use existing Postgres transactions for the job queue as well. It's no longer possible to commit a Postgres transaction on successful conversion yet fail to mark the job as resolved in the queue, as modifying the queue can now be done as part of the transaction.
+## Queue v3: PostgreSQL
 
-## Add GraphQL resolvers
+<!-- **PRs**:  -->
+<!-- - [LSIF: Dequeue from postgres (#6879)](https://github.com/sourcegraph/sourcegraph/pull/6879) -->
+<!-- - [LSIF: Enqueue jobs to postgres (#6877)](https://github.com/sourcegraph/sourcegraph/pull/6877) -->
+<!-- - [LSIF: Remove dead LSIF jobs code (#6880)](https://github.com/sourcegraph/sourcegraph/pull/6880) -->
 
-**PR**: [LSIF: Add LSIF intelligence GraphQL resolvers (#7021)](https://github.com/sourcegraph/sourcegraph/pull/7021)
+The adoption of Bull resolved some issues in our queue implementation, but others remained. In particular, there was a problem of enforcing logical transactions across data that was stored partially in Redis and partially in PostgreSQL.
 
-At this point, the lsif-server was accessible only by an undocumented proxy in the frontend. This proxy was used to both accept upload payloads, and to query the definitions, references, and hover text of particular source ranges. The only consumers of this API were Sourcegraph-authored language extensions ([sourcegraph/go](https://sourcegraph.com/extensions/sourcegraph/go), [sourcegraph/typescript](https://sourcegraph.com/extensions/sourcegraph/typescript)).
+In particular, data could be written to PostgreSQL indicating the successful completion of an LSIF bundle conversion, but the corresponding job in the queue, stored in Redis, could not be updated within in the same transaction. These sometimes got out of sync.
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-5.png)
+Furthermore, Redis is treated by other parts of Sourcegraph as an ephemeral and truncatable cache. Site administrators were aware of this, and if they felt they could safely wipe Redis data, this would wreak havoc on the LSIF processing queue.
 
-This data is much more useful than simply powering jump-to-def and is wasted behind an undocumented API. The change made the same data visible outside of the extension through the GraphQL API. This not only opened up queries to be used by other Sourcegraph features (such as [Campaigns](https://docs.sourcegraph.com/user/campaigns) and the currently in-progress Code Insights), but to Sourcegraph-external extension authors and to any user that wants to run ad-hoc queries. As the data we gather through LSIF indexes continues to grow (we've recently added support for [diagnostics](https://github.com/sourcegraph/sourcegraph/pull/11233)), so does the universe of possible uses. We're excited to discover what uses of this data lies ahead.
+To address these issues, we moved the queue data from Redis into PostgreSQL. This reduced a lot of complexity. As it turned out, all of the custom Lua scripts that reached into the Redis data could be reduced into a few SQL queries. We could now also use PostgreSQL transaction to enforce all-or-nothing atomicity on LSIF-related updates.
 
-## "Just add threads"
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-4.png)
 
-**PR**: [LSIF: Replicate worker within container (#8951)](https://github.com/sourcegraph/sourcegraph/pull/8951)
+## Adding GraphQL resolvers
 
-At this point, the lsif-server and lsif-worker were bundled within the [same container](https://github.com/sourcegraph/sourcegraph/blob/7443d5f7bcbe0ec038a2f2602aec34558f79284c/cmd/lsif-server/Dockerfile). We decided to [prefork](https://www.cs.ait.ac.th/~on/O/oreilly/perl/cookbook/ch17_13.htm) the number of worker processes running in the container, increasing the number of uploads that could be processed at one time.
+<!-- **PR**: [LSIF: Add LSIF intelligence GraphQL resolvers (#7021)](https://github.com/sourcegraph/sourcegraph/pull/7021) -->
 
-This is a rudimentary way to scale horizontally, as the resources are still limited to the physical nodes and there is no isolation between workers: if one worker is processing a particular large upload, it can cause the other processes to run out of memory. All of the workers will crash at once and take the lsif-server process down with them.
+For a while, the lsif-server was accessible only through an undocumented proxy in the Sourcegraph frontend service. This proxy accepted uploads and served code navigation queries. The only consumers of this API were first-party Sourcegraph extensions like [sourcegraph/go](https://sourcegraph.com/extensions/sourcegraph/go) and [sourcegraph/typescript](https://sourcegraph.com/extensions/sourcegraph/typescript).
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-6.png)
+Adding a GraphQL API enabled the LSIF backend to be used by other parts of Sourcegraph, such as the nascent [Campaigns](https://docs.sourcegraph.com/campaigns) feature and the currently in-progress [Code Insights](https://about.sourcegraph.com/blog/sourcegraph-3.17#product-preview-code-insights), and also to third-party Sourcegraph extension authors and third-party API consumers. As the functionality of the LSIF backend continues to grow (we've recently added support for [diagnostics](https://github.com/sourcegraph/sourcegraph/pull/11233)), so do the possibilities for users of this API.
 
-At this point it was a reasonable tradeoff, and gave us some quick wins with increased processing throughput. This particular change also helped us get past some issues we were having in our [Sourcegraph.com](https://sourcegraph.com) deployment, which was suffering from [head-of-line blocking](https://en.wikipedia.org/wiki/Head-of-line_blocking).
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-5.png)
 
-## Introduce the bundle manager
+## Introducing multiple workers
 
-**PR**: [LSIF: RFC127-1: Add API between backend and database (#9179)](https://github.com/sourcegraph/sourcegraph/pull/9179)
+<!-- **PR**: [LSIF: Replicate worker within container (#8951)](https://github.com/sourcegraph/sourcegraph/pull/8951) -->
 
-The plan, all along, was to scale the lsif-server and lsif-worker instances horizontally when necessary (the workers were likely needed to scale first as they do the most CPU and memory-intensive work). Unfortunately, I had misunderstood the capabilities of Kubernetes persistent volumes: I was assuming that the disk could be mounted as [RWX](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes), or read-write-many, over multiple nodes. As it turns out, this access mode is only supported by a few volume plugins (Azure, CephFS, Glusterfs, and NFS to name a few). The GCEPersistentDisk plugin, which we use for our [Sourcegraph.com](https://sourcegraph.com) deployment, does not support this access mode.
+The lsif-server and lsif-worker were still run together in the [same container](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@7443d5f7bcbe0ec038a2f2602aec34558f79284c/-/blob/cmd/lsif-server/Dockerfile). As an easy way to enable multiple workers without changing the container orchestration, we decided to [prefork](https://stackoverflow.com/questions/25834333/what-exactly-is-a-pre-fork-web-server-model) the worker.
 
-Well, shoot.
+This was a rudimentary way to scale, as overall resource use was still constrained by the single container and there was no isolation between worker processes (meaning runaway memory use in one can starve out all the others in the container), but this worked well enough for the time being. This change also helped us resolve some issues with LSIF processing on [Sourcegraph.com](https://sourcegraph.com), which was suffering from [head-of-line blocking](https://en.wikipedia.org/wiki/Head-of-line_blocking).
 
-Our path forward was to add [another level of indirection](https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering), which is honestly the solution to _most_ problems. This change introduces a new lsif-dump-manager, known today as the precise-code-intel-bundle-manager, the service that owns the persistent disk. 
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-6.png)
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-7.png)
+## Introducing the bundle manager
 
-This frees any responsibility of reading or writing to the disk from the lsif-server and the lsif-worker, making them free to scale horizontally and statelessly. Scaling the dump managers themselves is a different problem, but one we have some experience with already due to the sharded nature of our gitservers.
+<!-- **PR**: [LSIF: RFC127-1: Add API between backend and database (#9179)](https://github.com/sourcegraph/sourcegraph/pull/9179) -->
 
-## Rewrite services in Go
+We needed to enable the lsif-server and lsif-worker instances to scale horizontally. At the same time, all instances had to have shared access to the same persistent storage that would store the LSIF data used to serve queries.
 
-**PRs**:
-- [Rewrite precise-code-intel-api-server in Go (#9703)](https://github.com/sourcegraph/sourcegraph/pull/9703/)
-- [Rewrite precise-code-intel-bundle-manager in Go (#9586)](https://github.com/sourcegraph/sourcegraph/pull/9586/)
-- [Rewrite precise-code-intel-worker in Go (#10105)](https://github.com/sourcegraph/sourcegraph/pull/10105)
+Naively, we thought this might be possible by simply attaching a shared disk to each separate instance. In practice, however, there are some issues with doing this. Kubernetes Persistent Volumes by default cannot be mounted as read-write-many across multiple nodes. There are volume plugins such as CephFS, GlusterFS, and NFS that enable this, but the reliability and performance of such shared access filesystems can be an issue and furthermore, they were unsupported in GCP, which is what Sourcegraph.com is deployed on.
 
-At this point, the code nav team had been split into the web and code intel for some time. After a few changes in the code intel team's membership, we gained a _lot_ of Go talent and lost a bit of TypeScript talent. We no longer had the same core competencies, and it made sense from both an organizational and architectural standpoint to rewrite the existing TypeScript backend code in order to unify it with the greater Sourcegraph codebase.
+The solution was to factor out the responsibility of managing the shared storage into a separate service, the bundle manager (originally called the lsif-dump-manager, today known as the precise-code-intel-bundle-manager).
 
-We decided to _slowly_ rewrite each of the services into Go. Our high-level plan was to first extract the CPU-bound work done by the lsif-server into a high-performance Go process which could be called by the existing worker code (this is similar to the [strangler fig](https://martinfowler.com/bliki/StranglerFigApplication.html) pattern of refactoring). This part of the stack seemed to benefit the most from a rewrite, and allowed us to use existing knowledge to aggressively optimize Go rather than having to learn low-level optimization techniques for Node.js environments. Eventually, more and more of the worker would fall into the Go code's event horizon, and eventually the entire worker would be replaced.
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-7.png)
 
-But actions don't always occur as they're planned.
+This made the lsif-server and lsif-worker stateless, freeing them to scale horizontally. Scaling the bundle managers requires a sharding scheme, similar to what we already used for the gitserver service that is responsible for serving Git data in the Sourcegraph backend.
 
-Turns out it's pretty easy to write the same system in a language you know well after fixing all the bugs in a different language, and I just rewrote all three services in a single pass. The resulting code wasn't particularly idiomatic as it really was meant to be a fast, behaviorally-equivalent translation into the target language. Constant, small refactorings have been occurring since the rewrite in order to shape the code into something more appropriate for the new environment.
+## Rewriting in Go
 
-This has unlocked a large number of performance improvement opportunities, the results of which will be detailed in the Sourcegraph 3.17 release announcement. The technical details are described in a blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel).
+<!-- **PRs**: -->
+<!-- - [Rewrite precise-code-intel-api-server in Go (#9703)](https://github.com/sourcegraph/sourcegraph/pull/9703/) -->
+<!-- - [Rewrite precise-code-intel-bundle-manager in Go (#9586)](https://github.com/sourcegraph/sourcegraph/pull/9586/) -->
+<!-- - [Rewrite precise-code-intel-worker in Go (#10105)](https://github.com/sourcegraph/sourcegraph/pull/10105) -->
 
-## Remove the API server
+The original LSIF backend had been written in TypeScript, because that was easiest to prototype and it also matched the technical skillset of the original team. Over time, performance became more of a consideration and the experience of the team shifted more toward Go. In particular, we were familiar with a variety of techniques to optimize programs written in Go, but were less well-versed in such techniques for applications written in TypeScript.
 
-**PRs**: 
-- [codeintel: Call handleEnqueue from lsifserver proxy (#10871)](https://github.com/sourcegraph/sourcegraph/pull/10871)
-- [codeintel: Call query methods from from lsifserver client (#10872)](https://github.com/sourcegraph/sourcegraph/pull/10872)
-- [Remove precise-code-intel-api-server service (#10906)](https://github.com/sourcegraph/sourcegraph/pull/10906)
+Because performance was becoming a first-order consideration, we decided to rewrite things in Go.
 
-After rewriting the services in Go, the lsif-server process maintained no local state, and queries to it no longer crossed a language boundary. There was little reason to keep the service separate. The client used by the frontend's HTTP API and GraphQL resolvers was able to directly perform the same functions as the old server's HTTP handlers, and the newly unused HTTP server/routing code could be dropped. 
+Initially, we decided to adopt the [strangler fig](https://martinfowler.com/bliki/StranglerFigApplication.html) model of refactoring, extracting first only the CPU-bound work into a high-performance Go process, which would be called by the existing worker code. Eventually, over time, more of the logic would be ported into the Go process.
 
-![architecture diagram](https://storage.googleapis.com/sourcegraph-assets/lsif-arch-8.png)
+However, things don't always go according to plan.
 
-This change is discussed in more detail in the above mentioned blog post on [performance improvements for precise code intel](/blog/performance-improvements-in-precise-code-intel/#collapse-network-boundaries).
+I knew the ins and outs of the TypeScript code, so I simply rewrote all three services in Go in a single pass. The resulting code wasn't particularly idiomatic, since I wanted to focus on bringing the new system to life as quickly as possible, so we could sunset the old one. Continuing refactors have made the code more idiomatic over time.
 
----
+The rewrite has unlocked a large number of performance improvement opportunities, the results of which are described in [Optimizing a code intelligence backend](/blog/making-code-nav-twice-as-fast).
 
-The journey is not stopping here. We plan to continue to add features, and adjust the service so that we can support massive scale. Concerns on our horizon include (but are not limited to):
 
-- Automatic indexing of repositories
-- Support for monorepos (large code scale, high commit frequency)
-- The creation of a large-scale public index (to support jumping from private code to OSS)
+## Removing lsif-server
+
+<!-- **PRs**:  -->
+<!-- - [codeintel: Call handleEnqueue from lsifserver proxy (#10871)](https://github.com/sourcegraph/sourcegraph/pull/10871) -->
+<!-- - [codeintel: Call query methods from from lsifserver client (#10872)](https://github.com/sourcegraph/sourcegraph/pull/10872) -->
+<!-- - [Remove precise-code-intel-api-server service (#10906)](https://github.com/sourcegraph/sourcegraph/pull/10906) -->
+
+After rewriting the LSIF backend in Go, the LSIF API server (lsif-server) was completely stateless and it no longer had to talk to a process (the bundle manager) written in a different language. After taking a step back, we realized the API server process now had little purpose.
+
+We moved what remained of the LSIF API server logic from the server handlers into the client used by other parts of Sourcegraph (the external HTTP and GraphQL APIs) to query LSIF data. Then we dropped the LSIF API server:
+
+![architecture diagram](https://sourcegraphstatic.com/lsif-arch-8.png)
+
+## Looking forward
+
+The journey isn't stopping here. In 3.17, we made significant performance improvements to the LSIF backend, and we will continue adding features and investing in optimizations to support massive scale for LSIF.
+
+Just a few things we are looking forward to:
+
+- Automatic, zero-config LSIF indexing of repositories
+- Support for monorepos and other large repositories with high commit frequency
+- Creating a public index of all open-source code, and connecting this to private code to enable seamless jumping from proprietary code to open-source dependencies
 
 Keep an eye out for updates!
 
 <style>
   /* Images in this post have natural borders
      Make <p><img></p> snuggle up nice and close to the surrounding text */
-  .blog-post__body img { box-shadow: none; margin: -16px auto; }
+  .blog-post__html img { box-shadow: none; margin: -16px auto; }
 </style>
+
+
+[^1]: The lsif-worker process is today known as the precise-code-intel-worker.

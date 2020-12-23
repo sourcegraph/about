@@ -19,14 +19,14 @@ export default class Uninstall extends React.Component<any, any> {
     public render(): JSX.Element | null {
         return (
             <Layout location={this.props.location}>
-                <div className="uninstall bg-white text-dark">
-                    <section className="uninstall__header">
+                <div className="uninstall content-page">
+                    <section className="uninstall__header bg-dark text-light">
                         <h1>Thank you for using Sourcegraph</h1>
                     </section>
-                    <section className="uninstall__body">
+                    <section className="uninstall__body bg-white text-dark">
                         <div className="measure-wide center">
                             <div className="uninstall__form">
-                                <h3 className="f4"> Why did you uninstall Sourcegraph for GitHub? </h3>
+                                <h3>Why did you uninstall Sourcegraph for GitHub? </h3>
                                 <p>Your feedback helps us improve the product for everyone.</p>
                                 <div id="hubspotEditorForm" />
                             </div>

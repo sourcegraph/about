@@ -8,6 +8,7 @@ tags: [
 slug: sourcegraph-3.3
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
+description: 'Sourcegraph 3.3: Improving the user experience for site admins'
 ---
 
 We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navigation tool (self-hosted, open source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
@@ -111,7 +112,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 <div style="text-align: center">
 
-  ![](/blog/sourcegraph-browser-extension-enable-prompt.png)
+  ![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
 
 </div>
 
@@ -119,7 +120,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 Definitions are now filtered using `import` / `require` statements to reduce false matches and improve accuracy.
 
-![](/blog/filtered-imports.png)
+![Filtered imports](/blog/filtered-imports.png)
 
 ## Swift code navigation
 
@@ -136,7 +137,7 @@ See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googlep
 
 The symbols sidebar is now scoped to the current file/directory you’re viewing.
 
-![](/blog/file-scoped-symbols.png)
+![File scoped symbols](/blog/file-scoped-symbols.png)
 
 <!--
 TODO(ryan): Show once 3.3 is available on DigitalOcean
@@ -159,7 +160,7 @@ Terraform plans for Google Cloud and Azure are being scheduled for upcoming rele
 
 ## Handle common search queries containing (unintended) invalid regexp
 
-Using [regexps in search queries](https://docs.sourcegraph.com/user/search/queries) is powerful, but sometimes you forget and just want to find matches for `open(`. Previously, this was treated as a regexp error, but now Sourcegraph does The Right Thing™ and looks for the literal match when there is no ambiguity.
+Using [regexps in search queries](https://docs.sourcegraph.com/code_search/reference/queries) is powerful, but sometimes you forget and just want to find matches for `open(`. Previously, this was treated as a regexp error, but now Sourcegraph does The Right Thing™ and looks for the literal match when there is no ambiguity.
 
 ## Making Sourcegraph a part of your dev tools stack
 
@@ -177,7 +178,7 @@ Give Sourcegraph the best chance of gaining traction by using our step-by-step g
 [**2. How to compare your existing code search tool to Sourcegraph**](https://docs.sourcegraph.com/adopt/comp)<br />
 If a code search tool already exists such as Hound or OpenGrok, our code search comparison guide highlights the strengths and weaknesses of your current code search tool in comparison with Sourcegraph
 
-[**3. See how our customers use Sourcegraph**](https://docs.sourcegraph.com/user/tour)<br />
+[**3. See how our customers use Sourcegraph**](https://docs.sourcegraph.com/getting-started/tour)<br />
 See examples of how developers at companies such as Uber, Lyft, and Yelp depend on Sourcegraph every day.
 
 ## Jump to Sentry issue from your code

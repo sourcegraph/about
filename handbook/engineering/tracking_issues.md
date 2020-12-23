@@ -6,12 +6,12 @@
 1. [Creating a tracking issue](#creating-a-tracking-issue)
 1. [Populating and maintaining a tracking issue](#populating-and-maintaining-a-tracking-issue)
 1. [Planning a milestone with a tracking issue](#planning-a-milestone-with-a-tracking-issue)
-1. [Using a tracking issue for progress check-ins](#using-a-tracking-issue-for-progress-check-ins)
+1. [Progress updates](#progress-updates)
 1. [Contributing to the tracking issue tool](#contributing-to-the-tracking-issue-tool)
 
 ## What is a tracking issue?
 
-A tracking issue is a GitHub issue that captures the planned and on-going work of a team's milestone, project, RFC, OKR or anything else of the sort. This artifact is a medium used for planning, progress check-ins and stakeholder communication.
+A tracking issue is a GitHub issue that captures the planned and on-going work of a team's milestone, project, RFC, goal or anything else of the sort. This artifact is a medium used for planning, progress check-ins and stakeholder communication.
 
 You can take a look at [examples of open tracking issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking) to get a sense of what they look like.
 
@@ -40,6 +40,20 @@ Issues and pull requests from private repositories will have their title replace
 
 The generated work load can be re-ordered manually in the GitHub UI and that ordering will be preserved when the tracking issue is updated.
 
+#### Nesting
+
+A tracking issue can also track other tracking issues. This is helpful when tracking the implementation work of an RFC or a multiple-milestone goal. As an example, we will refer to the [tracking issue for the code intelligence team's 3.21 milestone](https://github.com/sourcegraph/sourcegraph/issues/13987) (shown below), and the [tracking issue for RFC 235](https://github.com/sourcegraph/sourcegraph/issues/13882).
+
+<div class="text-center">
+  <a href="https://sourcegraphstatic.com/efritz-tracking-issue.png" target="_blank">
+    <img src="https://sourcegraphstatic.com/efritz-tracking-issue.png" alt="Nested tracking issues" style="width: 50%">
+  </a>
+</div>
+
+The 3.21 milestone tracking issue will track all issues and pull requests with the `team/code-intelligence` label in milestone 3.21. The RFC tracking issue will track all issues and pull requests with both the `team/code-intelligence` label and the `RFC-235` label. Because the RFC tracking issue and its children have a _superset_ of labels tracked by the milestone tracking issue, the latter will include all of the issues referenced in the former.
+
+If a tracking issue includes other tracking issues, then all issues and PRs will be nested under the _most specific_ tracking issue that includes it (the tracking issue with the most label overlap). This allows arbitrarily deep nesting of tracking issues, which can span over multiple assignees and milestones.
+
 #### Labels
 
 These are the standard labels you can use to refine how each work item in the tracking issue looks. You can add any number of these labels to an issue or pull request.
@@ -51,7 +65,7 @@ These are the standard labels you can use to refine how each work item in the tr
 - **debt**: Technical debt issues will be displayed with the 🧶emoji.
 - **estimate/\$Nd**: A rough day level estimate of the task will be displayed alongside the emojis and summed up to a total workload in days that is displayed next to the teammate's GitHub handle.
 
-Apart from these standard labels, you can display any label inline (e.g. `perf`) by explicitly allowing it. This is done by adding a `<!-- LABEL: $YOUR_LABEL_NAME -->` comment to the tracking issue body outside the `<!-- BEGIN WORK-->` and `<-- END WORK -->` section which is reserved for the generated work loads.
+Apart from these standard labels, you can display any label inline (e.g. `perf`) by explicitly allowing it. This is done by adding a `<!-- LABEL: $YOUR_LABEL_NAME -->` comment to the tracking issue body outside the `<!-- BEGIN WORK-->` and `<!-- END WORK -->` section which is reserved for the generated work loads.
 
 #### Pull requests
 
@@ -61,11 +75,12 @@ Pull requests, if labeled and milestoned correctly, will show up in their author
 
 Planning a team's milestone happens in the last week of the previous milestone.
 
-1. [Open a new tracking issue](#creating-a-tracking-issue) with the appropriate `team/$TEAM` label and the right milestone.
+1. [Open a new tracking issue](#creating-a-tracking-issue) with `WIP` in the title, add the appropriate `team/$TEAM` label, and add it to the right milestone.
 1. Ask all members of the team through appropriate channels to create or assign issues to this milestone. When possible, issues should be estimated with the appropriate `estimate/$DAYS` label.
 1. Once everyone's ready, have the tracking issue review by relevant parties (e.g. product team,).
 1. Make adjustments to the planned work with the team based on the feedback from the review.
 1. Add the `planned/$MILESTONE` label to all planned issues. This is used to track what work was originally planned, even if it gets deprioritized during the milestone.
+1. Remove `WIP` from the title.
 
 All planned work items are meant to be finished in the iteration. If this doesn't happen, it is either due to unknown unknowns or lack of estimating accuracy. While we cannot work on the former, we can on the latter — over time, we aim to estimate better.
 
@@ -79,13 +94,16 @@ Despite estimation having a bad reputation in some circles, we find it valuable 
 
 Roadmap items may take more than an iteration to implement. As such please link to an issue which is scoped to this iteration. If it isn't clear how to break down a larger item in a scope increment, a **spike** of one or two days could be appropriate to determine such scope and then create the resulting issues for the iteration — it's fine to update the tracking issue with the results of a spike during the iteration.
 
-## Using a tracking issue for progress check-ins
+## Progress updates
 
-A tracking issue can be used as a central communication hub for the progress being done around whatever is being tracked.
+Each engineer is responsible for posting a weekly update on Friday to tracking issues where they have assigned work (most engineers only have work on a single tracking issue associated with the team they are one). The update should be in prose and communicate progress made, pain points, a forecast for the next week, and whether the remaining planned work is on track to be completed on time.
 
-To that end, those working on a tracking issue write high level periodic summaries of their progress for interested parties and other stakeholders to follow along without being exposed to too much detail. These summaries are written as comments on the tracking issue.
+- Good: `Last week I made progress on adding support for X (RFC 123), but was blocked by Y. Y was due to Z. I am continuing to work on this and expect to have this ready for review by Thursday. I am on track to finish my planned work this iteration.` There are a lot of good examples in these tracking issues:
+    - https://github.com/sourcegraph/sourcegraph/issues/11523
+    - https://github.com/sourcegraph/sourcegraph/issues/11494
+- Not as good: `Worked on #111, #444, and RFC 123`
 
-You can see an example of such a summary [here](https://github.com/sourcegraph/sourcegraph/issues/9910#issuecomment-616405856).
+Each engineering manager is responsible for posting a weekly update on Monday. This update should be in prose, and should capture your individual progress as well as any team context that isn't obvious from the individual updates from others on the team (e.g., important team decisions, implementation milestones, pain points, changes to planned work, unexpected work that took time away from planned work). You should assume that anyone who reads your update will have read the previous individual updates, so no need to repeat anything.
 
 ## Contributing to the tracking issue tool
 

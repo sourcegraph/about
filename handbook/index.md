@@ -1,59 +1,64 @@
 # Sourcegraph handbook
 
-The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/open_source_open_company.md#open-company).
+The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/index.md#open-company).
 
-## Company
+The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. 
 
-- [Strategy](../company/strategy.md)
-- [Handbook usage](usage.md)
 - [Editing the handbook](editing.md)
-- [Communication](communication/index.md)
-  - [Style guide](communication/style_guide.md)
-- [Team](../company/team/index.md)
-- [CEO](ceo/index.md)
+- [Handbook usage](usage.md)
 
-## People Ops
+## [Company](../company/index.md)
+- [All-remote](../company/remote/index.md)
+- [Strategy](../company/strategy.md)
+- [Goals](../company/goals/index.md)
+- [Team](../company/team/index.md)
+  - [Org chart](../company/team/org_chart.md)
+  - [Careers](../company/careers.md)
+- [CEO](ceo/index.md)
+- [Communication](communication/index.md)
+  - [Content guidelines](communication/content_guidelines.md)
+
+## Teams at Sourcegraph
+
+### People Ops
 
 - [People Ops](people-ops/index.md)
   - [Leadership](leadership/index.md)
   - [1-1](leadership/1-1.md)
 
-## Product
+### [Product](product/index.md)
 
+- [Direction (2020 product strategy)](../direction/index.md)
 - [Product](product/index.md)
-  - [Sourcegraph workflow](../workflow/index.md)
-  - [Direction](../direction/index.md)
-  - [Personas](product/personas.md)
+  - [Product Management](product/product_management/index.md)
+  - [Product Design](product/design/index.md)
 
-## Design
+### [Engineering](engineering/index.md)
 
-- [Design](design/index.md)
-
-## Engineering
+<!-- When updating the engineering team list below, please also update company/team/org_chart.md. -->
 
 - [Engineering](engineering/index.md)
+  - [Campaigns](engineering/campaigns/index.md)
+  - [Cloud](engineering/cloud/index.md)
+  - [Code intelligence](engineering/code-intelligence/index.md)
+  - [Distribution](engineering/distribution/index.md)
+  - [Search](engineering/search/index.md)
+  - [Security](engineering/security/index.md)
+  - [Web](engineering/web/index.md)
 
-## Support
+### Customer Engineering
 
-- [Support](support/index.md)
+- [Customer Engineering](ce/index.md)
+  - [Support](ce/support.md)
 
-## Marketing
+### [Marketing](marketing/index.md)
 
-- [Marketing](marketing/index.md)
-  - [Messaging](marketing/messaging.md)
-    - [What is Sourcegraph?](marketing/messaging.md#sourcegraph-value-proposition)
-    - [What problems does Sourcegraph solve?](marketing/messaging.md#what-problems-does-sourcegraph-solve)
-- [Definitions](https://docs.google.com/document/d/1h6xQeGHpMrsUUJ63Q6KupUNzq1iOpZfZSMC6ta3pLiY/edit#heading=h.pt4ztk7qhub0)
-- [Developer relations](marketing/developer-relations/index.md)
-- [Marketing operations](marketing/marketing_operations.md)
-- [Livestream events](marketing/livestream.md)
-- [Online content](marketing/content.md)
-  - [Website style guide](marketing/website_style_guide.md)
+### [Sales](sales/index.md)
 
-## Sales
+### [Operations](ops/index.md)
 
-- [Sales](sales/index.md)
-
-## Business Operations
-
-- [Business Operations](bizops/index.md)
+- [Business & product operations](ops/bizops/index.md)
+- [Sales strategy & operations](ops/sales-ops/index.md)
+- [Finance & accounting](ops/finance/index.md)
+- [Legal](ops/legal/index.md)
+- [Tech operations](ops/tech-ops/index.md)

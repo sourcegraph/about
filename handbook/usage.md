@@ -29,7 +29,7 @@ Join the `#handbook` Slack channel to see proposed changes.
    - In your message announcing the change, just include `[Handbook/process] change:`, the commit message subject, and the link. Don't write a separate summary of the change (if you feel the need to do so, you should have used a better commit message).
    - Ensure everyone who needs to be aware of the change is made aware. If you see people do things that indicate they aren't aware, gently remind them of the change. If you don't nudge them, other people will see them doing things the wrong/old way and start to doubt the handbook's accuracy or currency.
 1. Strongly prefer creating a pull request over filing an issue on the handbook or mentioning it on Slack, even if you aren't able to propose the full edits you'd like to make.
-1. Follow the [style guide](communication/style_guide.md).
+1. Follow the [content guidelines](communication/content_guidelines.md).
 
 > NOTE: If your contribution is about using or configuring Sourcegraph (the product), it most likely belongs in the [product documentation](engineering/product_documentation.md).
 
@@ -66,9 +66,19 @@ If you use Google Chrome, you can add a Sourcegraph handbook search shortcut to 
    - URL with %s in place of query: https://about.sourcegraph.com/search?q=%s
 1. Press the **Add** button.
 
-#### Usage
+### Firefox 
 
-1. Focus in Chrome’s address bar (by clicking, tapping, or pressing <kbd>⌘L</kbd> on macOS or <kbd>Ctrl+L</kbd> on Linux).
+If you use Firefox, you can add a Sourcegraph handbook search shortcut to the address bar
+
+#### Setup 
+
+1. Right-click the search bar on https://about.sourcegraph.com/handbook.
+1. Choose `Add a keyword for this Search`.
+1. Enter a keyword that you would like to use (e.g. `hb`).
+
+### Usage
+
+1. Focus in Chrome’s or Firefox's address bar (by clicking, tapping, or pressing <kbd>⌘L</kbd> on macOS or <kbd>Ctrl+L</kbd> on Linux).
 1. Type the keyword you entered previously (e.g., `hb`) then press <kbd>Tab</kbd>.
 1. Type in a query and press <kbd>Enter</kbd>.
 
@@ -83,7 +93,7 @@ We chose Markdown files in a Git repository for the handbook because it allows g
 
 ## Why make this handbook public?
 
-Sourcegraph is an [open product, an open company, and open source](../company/open_source_open_company.md). Our company principles, strategies, and processes are all publicly documented.
+Sourcegraph is an [open product, an open company, and open source](../company/index.md#sourcegraph-open-product-open-company-open-source). Our company principles, strategies, and processes are all publicly documented.
 
 ## Acknowledgements
 

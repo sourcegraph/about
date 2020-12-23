@@ -62,11 +62,34 @@
                 }
             }
         }
+        @media only screen and (max-width: 768px) {
+            &-list {
+                flex-direction: column;
+                align-items: center;
+                &-item {
+                    font-size: 1rem;
+                    &-title {
+                        font-size: 1rem;
+                    }
+                    &-description {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
 
     &__work {
         background: $light-10;
         color: #000000;
+        
+        @media only screen and (max-width: 768px) {
+            .jobs__container {
+                p {
+                    line-height: 30px;
+                }
+            }
+        }
     }
 
     &__positions {

@@ -12,7 +12,7 @@ published: true
 
 Search code over all of your company's repositories, save and reuse common search queries and scopes, and do it all more quickly with style. This release also includes previews of diff/commit search and author/date filters, which help you debug issues and find usage examples in your company’s code.
 
-Sourcegraph gives the power of [great code search](https://docs.sourcegraph.com/user/search) to every developer at your company, so you can ship better code faster. It runs securely in your own network and is easy to install and upgrade.
+Sourcegraph gives the power of [great code search](https://docs.sourcegraph.com/code_search) to every developer at your company, so you can ship better code faster. It runs securely in your own network and is easy to install and upgrade.
 
 Ready to install or upgrade?
 **Install [Sourcegraph 2.3](https://docs.sourcegraph.com)** with a single command to get great code search today. Current customers can [update now](https://docs.sourcegraph.com/admin/updates).
@@ -54,23 +54,23 @@ By popular request, we've added a light color theme in addition to our current d
 ## Organizations
 You can now create and join organizations (also known as “orgs”). Organizations are named groups of users with an associated JSON settings file. These settings take effect for all users who are members of the organization. What kinds of settings, you might ask? This release includes custom search scopes and saved queries, and more features that rely on configuration will be rolling out soon.
 
-Server admins can [create organizations that new users automatically join](https://docs.sourcegraph.com/user/organizations), and any user can create organizations and invite new members from the settings page.
+Server admins can [create organizations that new users automatically join](https://docs.sourcegraph.com/admin/organizations), and any user can create organizations and invite new members from the settings page.
 <div style="padding-bottom:78.8%;height:0;position:relative;">
   <img alt="SS2.3 orgs" src="//images.contentful.com/le3mxztn6yoo/3xHwIft9qUqwqcYiYGamAu/c4dbe46cf2d8698472ce3e63aef0a7c2/Screen_Shot_2017-12-05_at_12.17.13_PM.png" />
 </div>
 
 ## Custom search scopes
-Every project and team has a different set of repositories they commonly work with and search over. We've added [custom search scopes](https://docs.sourcegraph.com/user/search/#scope) to enable users and organizations to search over predefined subsets of files and repositories. Instead of typing the set of files and repositories you search over, you can now simply define a search scope and select it from the dropdown next to the search box whenever you need.
+Every project and team has a different set of repositories they commonly work with and search over. We've added [custom search scopes](https://docs.sourcegraph.com/code_search/explanations/features/#scope) to enable users and organizations to search over predefined subsets of files and repositories. Instead of typing the set of files and repositories you search over, you can now simply define a search scope and select it from the dropdown next to the search box whenever you need.
 <div style="padding-bottom:72.8%;height:0;position:relative;">
   <img src="//images.contentful.com/le3mxztn6yoo/6mdWr31pBY2YwgQwmmE446/1c099368b51400f18a9cefdecb8d79dc/SS2017_settings_and_search_scopes.gif" alt="SS2.3 settings and search scopes" class="ba pa1 b--light-7 br2" />
 </div>
 
 ## Saved queries
-[Saved queries](https://docs.sourcegraph.com/user/search/#saved-queries) let you save and describe search queries so you can easily monitor the results on an ongoing basis. You might think of them as the beginning of “Google Alerts or IFTTT/Zapier for your code.”
+[Saved queries](https://docs.sourcegraph.com/code_search/explanations/features/#saved-queries) let you save and describe search queries so you can easily monitor the results on an ongoing basis. You might think of them as the beginning of “Google Alerts or IFTTT/Zapier for your code.”
 
 You can create a saved query for anything searchable, including (with this release) diffs and commits across all branches of your repositories. Saved queries can be an early warning system for common problems in your code--and a way to monitor best practices, the progress of refactors, etc.
 
-See some [examples of useful saved queries](https://docs.sourcegraph.com/user/search/#examples-of-useful-saved-queries), including:
+See some [examples of useful saved queries](https://docs.sourcegraph.com/code_search/explanations/features/#examples-of-useful-saved-queries), including:
 * Recently security-related changes on all branches (which we recommend tech leads monitor every day)
 * Hacks and TODOs in code
 * New usages of specific functions

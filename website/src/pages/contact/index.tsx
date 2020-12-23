@@ -1,18 +1,36 @@
 import { Link } from 'gatsby'
 import EmailIcon from 'mdi-react/EmailIcon'
-import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
-import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon'
+import GithubIcon from 'mdi-react/GithubIcon'
+import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import MapMarkerIcon from 'mdi-react/MapMarkerIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { ContentPage } from '../../components/content/ContentPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 
+const title = 'Sourcegraph - Contact Sourcegraph'
+const desc = 'Contact a real human being on our team.'
+
 export default ((props: any) => (
     <Layout location={props.location}>
-        <ContentPage title="Contact Sourcegraph" description="Contact a real human being on our team.">
-            <ContentSection color="white" className="py-6">
+        <Helmet>
+            <title>{title}</title>
+            <meta name="twitter:title" content={title} />
+            <meta property="og:title" content={title} />
+            <meta name="twitter:description" content={desc} />
+            <meta property="og:description" content={desc} />
+            <meta name="description" content={desc} />
+            <link rel="icon" type="image/png" href="/favicon.png" />
+        </Helmet>
+        <ContentPage
+            title={title}
+            description={desc}
+            className="text-dark"
+            titleClassName="display-2 font-weight-bold"
+        >
+            <ContentSection className="pt-6 pb-2">
                 <div className="row">
                     <div className="col-md-6 mb-4 pb-1">
                         <div className="card">
@@ -26,7 +44,7 @@ export default ((props: any) => (
                                     href="https://github.com/sourcegraph/sourcegraph/issues"
                                     target="_blank"
                                 >
-                                    <GithubCircleIcon /> File a public issue
+                                    <GithubIcon /> File a public issue
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -83,14 +101,14 @@ export default ((props: any) => (
                                     target="_blank"
                                     href="https://github.com/sourcegraph"
                                 >
-                                    <GithubCircleIcon /> github.com/sourcegraph
+                                    <GithubIcon /> github.com/sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
                                     target="_blank"
                                     href="https://www.linkedin.com/company/sourcegraph"
                                 >
-                                    <LinkedinBoxIcon /> Sourcegraph on LinkedIn
+                                    <LinkedinIcon /> Sourcegraph on LinkedIn
                                 </a>
                                 <div className="list-group-item d-flex p-relative">
                                     <MapMarkerIcon className="mr-1" />
