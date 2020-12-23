@@ -32,7 +32,7 @@ This release is scheduled for $RELEASE_DATE.
 - [ ] Post a release status update to Slack - review all release-blocking issues, and ensure someone is resolving each.
   ```sh
   yarn run release release:status
-  ``` 
+  ```
 
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE (4 work days before release): Branch cut
 
@@ -75,20 +75,20 @@ Revert or disable features that may cause delays. As necessary, `git cherry-pick
   N=<release-candidate-number> yarn run release release:create-candidate $N
   ```
 - [ ] Re-run the automated test suite against the new release candidate, file any regressions as
-  `release-blocker` issues.
+      `release-blocker` issues.
   - [ ] If necessary, manually test features or workflows affected by the cherry-pick.
 - [ ] Post a release status update by running the command below. Ensure someone is resolving each release-blocking issue. If there are no more release-blocking issues, proceed to tag the final release in the next section.
   ```
   yarn run release release:status
-  ``` 
+  ```
 
 ## Tag final release
 
 Once there are no more release-blocking issues (as reported by the `release:status` command) proceed with creating the final release:
 
 - [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) on
-  `main` is accurate (no items should have been added since branch cut, but some items may need to
-  be removed).
+      `main` is accurate (no items should have been added since branch cut, but some items may need to
+      be removed).
 - [ ] Tag the final release:
   ```sh
   yarn run release release:create-candidate final
@@ -104,9 +104,9 @@ Once there are no more release-blocking issues (as reported by the `release:stat
 - [ ] From the [release campaign](https://k8s.sgdev.org/organizations/sourcegraph/campaigns), merge the release-publishing PRs created previously.
   - For [deploy-sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph), also:
     - [ ] Tag the `v$MAJOR.$MINOR.0` release at the most recent commit on the `v$MAJOR.$MINOR` branch.
-        ```sh
-        VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
-        ```
+      ```sh
+      VERSION='v$MAJOR.$MINOR.0' bash -c 'git tag -a "$VERSION" -m "$VERSION" && git push origin "$VERSION"'
+      ```
   - For [sourcegraph](https://github.com/sourcegraph/sourcegraph), also:
     - [ ] Cherry pick the release-publishing PR from `sourcegraph/sourcegraph@main` into the release branch.
 - [ ] Ask the product team to merge the blog post ([example](https://github.com/sourcegraph/about/pull/83)). Add the pull request to the release campaign:
@@ -118,13 +118,13 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   yarn run release release:close
   ```
 
-
 ### Post-release
 
 - [ ] Notify the next release captain that they are on duty for the next release. They should complete the steps in this section.
 - [ ] Open a PR to update [`dev/release/release-config.jsonc`](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/dev/release/release-config.jsonc) with the parameters for the current release.
 - [ ] Ensure you have the latest version of the release tooling and configuration by checking out and updating `sourcegraph@main`.
 - [ ] Create release calendar events, tracking issue, and announcement for next release:
+
   ```sh
   # Add calendar events and reminders for key dates in the release cycle
   yarn run release tracking:release-timeline
@@ -132,6 +132,7 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   # Create the release tracking issue (i.e., this issue)
   yarn run release tracking:release-issue
   ```
+
 - [ ] Close this issue.
 
 **Note:** If a patch release are requested after the release, ask that a [patch request issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=team%2Fdistribution&template=request_patch_release.md&title=$MAJOR.$MINOR.1%3A+) be filled out and approved first.

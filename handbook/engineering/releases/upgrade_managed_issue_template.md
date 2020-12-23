@@ -10,10 +10,8 @@ Arguments:
 
 # $MAJOR.$MINOR
 
-## $ONE_WORKING_DAY_AFTER_RELEASE Upgrade managed instances 
+## $ONE_WORKING_DAY_AFTER_RELEASE Upgrade managed instances
 
 - [ ] Upgrade [demo.sourcegraph.com](https://demo.sourcegraph.com)
 - [ ] Upgrade [devmanaged.sourcegraph.com](https://demo.sourcegraph.com)
 - [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/company/1712860829](https://app.hubspot.com/contacts/2762526/company/1712860829/)
-
-
