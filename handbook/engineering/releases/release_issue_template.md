@@ -36,27 +36,6 @@ This release is scheduled for $RELEASE_DATE.
 
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE (4 work days before release): Branch cut
 
-- [ ] Update the changelog and merge the generated pull request:
-  ```sh
-  yarn run release changelog:cut
-  ```
-- [ ] Review e2e & regression tests on release branch created in the prevoius steps, if there are any failures file a :
-  - [ ] [e2e](https://buildkite.com/sourcegraph/e2e)
-  - [ ] [qa](https://buildkite.com/sourcegraph/qa)
-  - [ ] [code-intel-qa](https://buildkite.com/sourcegraph/code-intel-qa)
-- [ ] File any regressions as release-blocker issues and assign the appropriate teams.
-
-## $FOUR_WORKING_DAYS_BEFORE_RELEASE to $ONE_WORKING_DAY_BEFORE_RELEASE: Cut new release candidates
-
-As necessary, `git cherry-pick` bugfix (not feature!) commits from `master` into the release branch.
-Aggressively revert or disable features that may cause delays:
-
-- [ ] Review [all release-blocking issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+label%3Arelease-blocker). Add them as checklist items here. Ensure someone is resolving each.
-- [ ] Review [all other open issues in the milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+org%3Asourcegraph+-label%3Arelease-blocker+milestone%3A$MAJOR.$MINOR) and ask assignees to triage them to a different milestone (preferring Backlog).
-
-Cut a new release candidate daily if necessary:
-
-- [ ] Cut and announce release candidate:
 - [ ] Create the `$MAJOR.$MINOR` branch off the CHANGELOG commit in the previous step: `git branch $MAJOR.$MINOR && git push origin $MAJOR.$MINOR`.
 
 Upon branch cut, create and test the first release candidate:
@@ -78,7 +57,7 @@ Revert or disable features that may cause delays. As necessary, `git cherry-pick
       `release-blocker` issues.
   - [ ] If necessary, manually test features or workflows affected by the cherry-pick.
 - [ ] Post a release status update by running the command below. Ensure someone is resolving each release-blocking issue. If there are no more release-blocking issues, proceed to tag the final release in the next section.
-  ```
+  ```shell
   yarn run release release:status
   ```
 
