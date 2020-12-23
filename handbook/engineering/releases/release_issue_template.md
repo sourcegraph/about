@@ -9,6 +9,7 @@ Arguments:
 - $FIVE_WORKING_DAYS_BEFORE_RELEASE
 - $FOUR_WORKING_DAYS_BEFORE_RELEASE
 - $ONE_WORKING_DAY_BEFORE_RELEASE
+- $ONE_WORKING_DAY_AFTER_RELEASE
 -->
 
 # $MAJOR.$MINOR Release ($RELEASE_DATE)
@@ -44,19 +45,11 @@ Arguments:
   yarn run release release-candidate:create $MAJOR.$MINOR.0-rc.1
   yarn run release release-candidate:dev-announce $MAJOR.$MINOR.0-rc.1
   ```
-- [ ] Run regression tests:
-  - [ ] Follow [README.md](https://github.com/sourcegraph/sourcegraph/blob/master/web/src/regression/README.md) to set up your e2e environment. 
-        Run the tests from the `web` directory. A more complete set of env vars can be found in this
-        [1password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/gm5dfflq6sfclmotneuayfdj5q) entry.
-  - [ ] New Sourcegraph Docker container:
-    - Run the initializer: `E2E_INIT=true SOURCEGRAPH_BASE_URL=http://localhost:7080 yarn run test:regression -t 'Initialize new Sourcegraph instance'`
-    - Run the regression test suite: `SOURCEGRAPH_BASE_URL=http://localhost:7080 yarn run test:regression`
-  - [ ] Upgrade from previous release:
-    - Run the initializer on a Docker container running the last patch version of the previous major/minor release.
-    - Upgrade and run the regression test suite.
-  - [ ] New Sourcegraph Kubernetes cluster:
-    - Run the initializer on a new Sourcegraph Kubernetes cluster.
-    - Run the regression test suite.
+- [ ] Review e2e & regression tests on release branch created in the prevoius steps, if there are any failures file a :
+  - [ ] [e2e](https://buildkite.com/sourcegraph/e2e)
+  - [ ] [qa](https://buildkite.com/sourcegraph/qa)
+  - [ ] [code-intel-qa](https://buildkite.com/sourcegraph/code-intel-qa)
+- [ ] File any regressions as release-blocker issues and assign the appropriate teams.
 
 ## $FOUR_WORKING_DAYS_BEFORE_RELEASE to $ONE_WORKING_DAY_BEFORE_RELEASE: Cut new release candidates
 
@@ -112,6 +105,7 @@ Cut a new release candidate daily if necessary:
 - [ ] Merge the release-publishing PRs created previously.
 - [ ] Cherry pick the release-publishing PR from sourcegraph/sourcegraph@master into the release branch.
 - [ ] Merge the blog post ([example](https://github.com/sourcegraph/about/pull/83)).
+
 
 ### Post-release
 
