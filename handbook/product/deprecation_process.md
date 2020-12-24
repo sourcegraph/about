@@ -14,10 +14,27 @@ If the answers to these questions suggest that deprecation is the best path forw
 
 ## Documenting a feature's deprecation 
 
-You should create a blog post to publish when we deprecate the feature. The blog post should contain:
+You should then create a blog post to publish when we deprecate the feature. The blog post should contain:
 
 - Why we're deprecating the feature
 - The deprecation timeline
 - Workarounds for the feature's users, if relevant
 
-We use a blog post because it's publicly accessible, timestamped, and easy to send directly to any customers or prospects asking about the feature. 
+We document this in a blog post because blog posts are publicly accessible, timestamped, and easy to send directly to any customers or prospects asking about the feature. 
+
+## Preparing internal teams for the deprecation
+
+Once you have the blog post, you should share it with the CE team by sharing the blog post in #CE, as well as share any other context they might need in order to support customers or do high touch outreach. 
+
+You should also share the blog post in #Product so the product and engineering teams are aware. 
+
+Answer any questions or concerns about the deprecation that teams may have. 
+
+## Deprecating the feature
+
+Only after sharing this deprecation internally should you do any engineering work needed to deprecate the feature.   
+
+## Publishing the blog post 
+
+The blog post should be published when the first version that includes the deprecation is released, as a separate blog post. The release's blog post should link to the deprecation post from the release changelog section.  
+
