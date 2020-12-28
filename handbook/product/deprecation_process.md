@@ -36,5 +36,5 @@ Only after sharing this deprecation internally should you do any engineering wor
 
 ## Publishing the blog post 
 
-The blog post should be published when the first version that includes the deprecation is released, as a standalone post. The release's blog post should link to the deprecation post from the release changelog section.  
+The blog post should be published when the first version that includes the deprecation is released. The release blog post changelog section should link to the deprecation post.  
 
