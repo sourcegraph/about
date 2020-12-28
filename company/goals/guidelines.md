@@ -30,14 +30,9 @@ We believe:
 
 ## Choosing goals
 
-A goal's format is:
-
-> **Goal title** \
-> Description of the goal and how to evaluate whether we met the goal (with a link to an automatically updated metrics dashboard, if appropriate).
-
 1. Each goal has a single person (not multiple people) who's ultimately responsible for it.
    - Many people can be working toward a goal, but there must be one person who's ultimately responsible.
-   - It's OK for a team to own a goal. That means the manager is ultimately responsible for it. A team should not have more than 1 or 2 goals (to make sure it's not becoming a workgroup with too many disparate goals).
+   - It's OK for a team to own a goal. That means the manager is ultimately responsible for it. A team should not have more than 1 or 2 goals (to make sure it's not becoming a workgroup with too many disparate goals). Engineering teams should all have [engineering team goals](#engineering-team-goals).
 1. No person can have more than 5 goals at once. (This number is arbitrary, but it feels right.) Fewer is better.
 1. Pick goals where failure would be painful.
 1. Pick goals where you can influence the outcome. Avoid using a lagging indicator as a goal.
@@ -48,6 +43,27 @@ A goal's format is:
    - Setting a goal for _X_ is not the same as _committing_ to shipping _X_ to customers. We are much more conservative in setting expectations with customers about firm ship dates than we are in setting goals.
    - Write your goals so they communicate effectively to an audience who understands that goals aren't promises. Don't write goals so cautiously that they are hard to understand. (For example, "Improve code intelligence support for Java" is a good goal, especially with well defined outcomes. But "Investigate feasibility of improvements to Java code intelligence" is probably bad.)
 1. If a goal's success criteria can be reduced to a single quantitative metric, that's great. But don't try to force it. It's OK to rely on human judgment to judge the success of a goal.
+
+## Goal formats
+
+A goal's general format is:
+
+> **Goal title** \
+> Description of the goal and how to evaluate whether we met the goal (with a link to an automatically updated metrics dashboard, if appropriate).
+
+### Engineering team goals 
+
+Each engineering team should have its own goals page with explicit goals. Because engineering team goals are larger than a single person's goal, we use the following format: 
+
+> **Goal title:** _The title for a vision that is achievable within a 6-12 month time frame._ 
+> 
+> **Problem:** _A prose description of the problem that the goal is meant to address. The "why" of the goal._  
+>
+> **Milestones:** _Checkpoints along a linear prerequisite path that would demonstrate incremental progress towards this goal. Milestones are not specific single tasks and likely encompass 1-2 months of progress. It may make sense to list milestone-specific outcomes beneath each milestone._ 
+>
+> **Outcomes:** _The quantitative and qualitative metrics that demonstrate the goal has successfully solved the problem. Outcomes are not "tasks completed;" they are signals that the problem itself is solved._
+
+Goals and outcomes should be relatively stable, unless a team chooses to de-prioritize a goal or discovers a better way to measure it. Milestones can be subtracted or added while working on a goal as necessary – the focus should be on achieving the outcomes (the "what") and not any specific set of tasks (the "how").  
 
 ### Sensitive information
 
