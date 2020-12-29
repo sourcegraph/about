@@ -1,39 +1,39 @@
 # Code insights team
 
-The code insights team will be responsible for building and delivering [**code insights**](https://docs.google.com/document/d/1EHzor6I1GhVVIpl70mH-c10b1tNEl_p1xRMJ9qHQfoc/edit) to engineering leaders, empowering data-driven decisions in engineering organizations.
+The code insights team will be responsible for building and delivering code insights to engineering leaders, empowering data-driven decisions in engineering organizations.
 
 <img src="./screenshot.svg" alt="Screenshot of a code insights dashboard with graphs" />
 
 ## What is code insights?
 
-Code insights is the first feature in Sourcegraph that can tell you things about your code at a **high level**. Here's a [demo](https://www.youtube.com/watch?v=XqeRb6Mc4Co) of a code insights prototype.
+Code insights is the first feature in Sourcegraph that can tell you things about your code at a **high level**. 
 
-Sourcegraph is in the unique position to give these insights because we have universal code search: To know _anything_ about your code at a high level means you must know _everything_ about your code at a low level.
+Code insights dashboards will answer questions like "How is a migration progressing?", "What areas of the code are most vulnerable to bugs?", and "How many developers are using a specific API?" Code insights will also incorporate third-party data like code coverage or static analysis metrics to deliver on the promise of aggregating everything you can know about your code. 
 
-Code insights connects a lot of features that Sourcegraph already has and builds on top of them.
+Sourcegraph is in the unique position to give these insights because we have universal code search: to know _anything_ about your code at a high level confidently means you must know _everything_ about your code at a low level.
+
+Code insights connects many features that Sourcegraph already has and builds on top of them.
 We go beyond single-step code intelligence and search to connect the full cycle of analyzing (code intelligence), monitoring (code insights), and actionably changing a codebase (campaigns).
 
-Code insights will also allow to combine these Sourcegraph-created metrics with other third-party data sources.
+Code insights is the first feature primarily built for non-search-based user personas (developers), instead focusing first on the needs of engineering directors and VPs.
 
-Code insights is the first feature primarily built for non-search-based user personas.
+For more information about code insights, see the original [product document](https://docs.google.com/document/d/1EHzor6I1GhVVIpl70mH-c10b1tNEl_p1xRMJ9qHQfoc/edit) or this [demo](https://www.youtube.com/watch?v=XqeRb6Mc4Co) of a code insights prototype.
 
 ## Goals 
 
-**Problem:** Code insights solves two problems. 
+**Problem:** Engineers and engineering managers/directors/VPs want to be able to understand their codebase at a high level (which parts of the code base are health/unhealthy? How close are we to removing all instances of a code smell?). Existing tools that just use git data don't answer these questions because they don't look at the code itself, just the pattern of commits. Sourcegraph has all the information needed to answer these questions, but there is currently no way for an engineering leader to get the answer out of Sourcegraph. 
 
-1. The Sourcegraph sales cycle is unusual because although we consistently wow our users, the economic decision-maker is usually not one of these users. Instead, the people with the power to sign a contract with us are higher up within an organization and usually depend on running a trial to fully understand the value of Sourcegraph. If code insights answers these personas' higher-level questions about codebases that our core features do not currently answer, it could dramatically speed up our sales cycle as well as our sales pipeline.
-
-1. Sourcegraph has lots of information about your code, but currently only exposes specific, low-level information at the file or directory level. Engineers and engineering managers/directors/VPs have lots of questions about their codebase that Sourcegraph can answer but currently does not. 
+**Value to Sourcegraph:** The Sourcegraph sales cycle is unusual because although we consistently wow our users, the economic decision-maker is usually not one of these users. Instead, the people with the power to sign a contract with us are higher up within an organization and usually depend on running a trial to fully understand the value of Sourcegraph. When code insights answers these personas' higher-level questions about codebases that our core features do not currently answer, it can dramatically speed up our sales cycle as well as our sales pipeline by giving decision makers a reason to buy Sourcegraph without needing to run a trial.
 
 **Milestones:**
 
 _Because code insights is an entirely new feature and closely informed by customer feedback, the further in the future goals get, the more flexible the order of these milestones is (especially when it comes to interleaving "business" milestones like beta/GA/paid with feature milestones)._ 
 
-1. 🔄 Code insights prototypes let us gather qualitative feedback to guide the initial product direction. 
-1. We can quantitatively measure the adoption of code insights prototypes. 
+1. 🔄 Three customers give us qualitative feedback after using our code insights prototypes to guide the initial product direction. 
+1. We have decided on and implemented metrics to quantitatively measure the adoption of code insights prototypes (see [RFC 279](https://docs.google.com/document/d/1I10tm5CFZvzQYNeV--JacRGLLIUesXQBp6ZO8uhakRs/edit#)). 
 1. All but the largest customers can use insights prototypes over their entire codebase (there are little to no scaling issues). 
 1. Code insights moves from prototype to beta feature (easy to enable or enabled by default, documented, and supported by the CE team rather than the product team). 
-1. Code insights beta features are actively used at 5 enterprise customers. 
+1. Code insights beta features are actively used at 5 enterprise customers by VPs/Directors. 
 1. Customers can easily create their own custom insights in the UI. 
 1. Code insights integrates natively with other Sourcegraph features like campaigns and code monitoring. 
 1. Code insights is GA (generally available) for all customers. 
@@ -43,6 +43,7 @@ _Because code insights is an entirely new feature and closely informed by custom
 1. We have discovered and validated entirely new code metrics that engineering teams should and can use code insights to track. 
 
 **Outcomes:**
+
 - We have weekly quantitative reports on the use of code insights at each customer. 
 - Customers communicate to their AE/CE that they use code insights in making engineering decisions. 
 - Customers who express explicit interest in the code insights features have a faster sales cycle through our pipeline than our average customer. 
@@ -53,7 +54,7 @@ _Because code insights is an entirely new feature and closely informed by custom
 
 ## Roadmap
 
-Our roadmap is in productboard (coming 2020-12-27). 
+Our [roadmap is in productboard](https://sourcegraph.productboard.com/roadmap/2327428-code-insights-objectives-roadmap). We organize our roadmap by milestone objective rather than feature, because to achieve each milestone we may shift or prioritize features based on further customer feedback or product decisions. 
 
 ## We're hiring for this team!
 
