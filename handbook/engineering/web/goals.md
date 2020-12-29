@@ -3,7 +3,7 @@
 **_The web team has two areas of focus:_**
 
   1. **_Extensibility: delivering the full, unique value of Sourcegraph across [extensions](https://docs.sourcegraph.com/extensions) and_ [_code host integrations_](https://docs.sourcegraph.com/dev/background-information/web/code_host_integrations).**
-  1. **_Web platform: creating and maintaining a highly usable and intentionally designed webapp interface_**
+  1. **_Frontend platform: creating and maintaining a highly usable and intentionally designed webapp interface_**
 
 **_Until it has fully staffed its own team, the web team also "parents" the code insights team [TODO update with link]_** 
 
@@ -83,7 +83,7 @@ Right now you can only use Sourcegraph's search features on Sourcegraph in a bro
 - The Sourcegraph IDE extension increases DAU of Sourcegraph N% across our customer base. 
 - The Sourcegraph IDE extension reaches TODO N,000 developers. 
 
-### Make the web app UI consistent, accessible, and scalable (_web platform_)
+### Make the web app UI consistent, accessible, and scalable (_frontend platform_)
 
 **Problem:** 
 
