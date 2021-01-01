@@ -73,7 +73,7 @@
     "@types/lodash": "4.14.166",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
-    "@types/react-router-dom": "5.1.6",
+    "@types/react-router-dom": "5.1.7",
     "@types/react-share": "3.0.3",
     "gatsby-cli": "^2.15.0",
     "gatsby-plugin-tslint": "^0.0.2",
