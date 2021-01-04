@@ -562,3 +562,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [content-hacker](https://github.com/content-hacker)
 - [erica@sourcegraph.com](mailto:you@sourcegraph.com), [LinkedIn](https://www.linkedin.com/feed/)
 - Erica lives in the Colorado Rocky Mountains where she spends most of her time exploring nature and trying to hack high-altitude gardening. She started her career as a journalist working for a variety of print and digital publications before transitioning to a career in tech. Prior to working at Sourcegraph, Erica was the head of global content at GitLab. Erica freely admits that she is terrible at spelling and would be lost without spellcheck. Hobbies include astrology, cooking, hiking, and homesteading.
+
+## Camden Cheek (he/him)
+
+- Software Engineer
+- Monument, Colorado, USA 🇺🇸
+- GitHub: [camdencheek](https://github.com/camdencheek)
+- [camden@sourcegraph.com](mailto:camden@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/camdencheek/)
+- Camden is originally from Michigan, but recently moved to Colorado, where he enjoys spending his time hiking, playing cello, and perfecting his dev environment. Before joining the Sourcegraph team, Camden worked on building a logging agent in Go at observIQ. Before that, Camden got a degree in Biomedical Engineering before deciding that the only thing he really liked about it was the coding.
