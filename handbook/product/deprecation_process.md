@@ -6,7 +6,7 @@ Sometimes we need to deprecate features that we've already released. We follow t
 
 You should first determine the potential impact of the feature deprecation: 
 
-- Are any users are using the feature? Who are they? Is there another feature that also meets their needs? 
+- Are any users using the feature? Who are they? Is there another feature that also meets their needs? 
 - Are any Sourcegraph teams using the feature, or a subset of its code?
 - Are any sales prospects specifically interested in the feature? 
 
@@ -37,4 +37,3 @@ Only after sharing this deprecation internally should you do any engineering wor
 ## Publishing the blog post 
 
 The blog post should be published when the first version that includes the deprecation is released. The release blog post changelog section should link to the deprecation post.  
-
