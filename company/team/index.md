@@ -554,3 +554,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [emily@sourcegraph.com](mailto:emily@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/emchap/)
 - [Name pronunciation](https://www.name-coach.com/emily-chapman-ec13ee64-97e1-4eb4-978f-59d672131b50)
 - Emily grew up in Atlanta, GA but now lives in Los Angeles. She started her career at Mailchimp/Mandrill before stints at Trello/Atlassian, Healthify, and Help Scout. She is the creator of [Lana Ipsum](http://lanaipsum.com/), a Lana Del Rey lorem ipsum generator. She is obsessed with the .horse TLD, localization of the sweet potato emoji (🍠), and the ways in which SMTP can run into encoding issues. In her free time she can be found either cooking, or trying to convince her very loud cat to be less loud. She has an Anthropology degree and knows a lot about bog bodies.
+
+## Erica Lindberg (she/her)
+
+- Director of Content Strategy
+- Nederland, CO, USA 🇺🇸
+- GitHub: [content-hacker](https://github.com/content-hacker)
+- [erica@sourcegraph.com](mailto:you@sourcegraph.com), [LinkedIn](https://www.linkedin.com/feed/)
+- Erica lives in the Colorado Rocky Mountains where she spends most of her time exploring nature and trying to hack high-altitude gardening. She started her career as a journalist working for a variety of print and digital publications before transitioning to a career in tech. Prior to working at Sourcegraph, Erica was the head of global content at GitLab. Erica freely admits that she is terrible at spelling and would be lost without spellcheck. Hobbies include cooking, hiking, homesteading, and occult sciences. 
