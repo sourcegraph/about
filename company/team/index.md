@@ -538,3 +538,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: Hannah-Sourcegraph
 - [hannah@sourcegraph.com](mailto:hannah@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/hannah-freilich-5ba30780/)
 - Hannah was born and raised in CT, but has been living in and around Boston for the past 15 years.  Formerly a public school teacher, Hannah became inspired by entreprenuership and decided to pursue a career in tech sales at a small startup.  In her free time, she enjoys spending time with family and friends, listening to music, cooking, traveling and enjoying the outdoors. 
+
+## Emily Chapman (she/her)
+
+- Customer Engineer
+- Los Angeles, USA, 🇺🇸
+- GitHub: [emchap](https://github.com/emchap)
+- [emily@sourcegraph.com](mailto:emily@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/emchap/)
+- [Name pronunciation](https://www.name-coach.com/emily-chapman-ec13ee64-97e1-4eb4-978f-59d672131b50)
+- Emily grew up in Atlanta, GA but now lives in Los Angeles. She started her career at Mailchimp/Mandrill before stints at Trello/Atlassian, Healthify, and Help Scout. She is the creator of [Lana Ipsum](http://lanaipsum.com/), a Lana Del Rey lorem ipsum generator. She is obsessed with the .horse TLD, localization of the sweet potato emoji (🍠), and the ways in which SMTP can run into encoding issues. In her free time she can be found either cooking, or trying to convince her very loud cat to be less loud. She has an Anthropology degree and knows a lot about bog bodies.
