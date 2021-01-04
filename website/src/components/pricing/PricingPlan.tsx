@@ -10,11 +10,9 @@ export interface Features {
     codeChangeManagementCampaigns: boolean
     codeHostIntegration: true
     api: true
-    singleSignOn: true
     selfHosted: true
-
     userAndAdminRoles: boolean
-
+    singleSignOn: boolean
     multipleCodeHosts: boolean
     repositoryPermissions: boolean
     optimizedRepositoryUpdates: boolean
@@ -54,13 +52,14 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
             'Works with GitHub, GitLab, Bitbucket Server/Cloud, and other popular code hosts (or manually add repositories from any VCS)',
     },
     api: { label: 'Comprehensive API', description: 'A secure, robust GraphQL API for your repository and code data' },
-    singleSignOn: {
-        label: 'SSO/SAML',
-        description: 'Single sign-on user authentication with SAML, OAuth, OpenID Connect, and HTTP auth proxy',
-    },
+
     selfHosted: {
         label: 'Self-hosted deployment',
         description: 'Deploy with Docker, Docker Compose, or Kubernetes on your own infrastructure',
+    },
+    singleSignOn: {
+        label: 'SSO/SAML',
+        description: 'Single sign-on user authentication with SAML, OAuth, OpenID Connect, and HTTP auth proxy',
     },
     userAndAdminRoles: {
         label: 'User and admin roles',
@@ -120,9 +119,9 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'codeIntelligence',
     'codeHostIntegration',
     'api',
-    'singleSignOn',
     'selfHosted',
     'userAndAdminRoles',
+    'singleSignOn',
     'codeChangeManagementCampaigns',
     'multipleCodeHosts',
     'repositoryPermissions',
