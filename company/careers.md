@@ -42,6 +42,7 @@ We're hiring! Check out our open positions:
 - [Tech Ops Manager](../handbook/ops/roles/tech_operations_manager.md)
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 - [Salesforce Administrator and Developer](../handbook/ops/roles/sf_admin_developer.md)
+- [VP Talent](../handbook/talent/vp_talent.md)
 
 
 ### CEO
