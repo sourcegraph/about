@@ -549,7 +549,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Emily Chapman (she/her)
 
 - Customer Engineer
-- Los Angeles, USA, c
+- Los Angeles, USA, 🇺🇸
 - GitHub: [emchap](https://github.com/emchap)
 - [emily@sourcegraph.com](mailto:emily@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/emchap/)
 - [Name pronunciation](https://www.name-coach.com/emily-chapman-ec13ee64-97e1-4eb4-978f-59d672131b50)
@@ -558,7 +558,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Erica Lindberg (she/her)
 
 - Director of Content Strategy
-- Nederland, CO USA, 🇺🇸
+- Nederland, CO, USA 🇺🇸
 - GitHub: [content-hacker](https://github.com/content-hacker)
 - [erica@sourcegraph.com](mailto:you@sourcegraph.com), [LinkedIn](https://www.linkedin.com/feed/)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
