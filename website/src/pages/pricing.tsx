@@ -16,9 +16,9 @@ const STARTER_FEATURES: Features = {
     codeChangeManagementCampaigns: false,
     codeHostIntegration: true,
     api: true,
-    singleSignOn: true,
     selfHosted: true,
     userAndAdminRoles: false,
+    singleSignOn: false,
     multipleCodeHosts: false,
     repositoryPermissions: false,
     optimizedRepositoryUpdates: false,
@@ -31,7 +31,7 @@ const STARTER_FEATURES: Features = {
 }
 
 /** The Team feature set. */
-const TEAM_FEATURES: Features = { ...STARTER_FEATURES, userAndAdminRoles: true }
+const TEAM_FEATURES: Features = { ...STARTER_FEATURES, singleSignOn: false, userAndAdminRoles: true }
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -63,7 +63,6 @@ export default ((props: any) => (
                                             description={
                                                 <>
                                                     <br />
-                                                    <br />
                                                 </>
                                             }
                                         >
@@ -87,9 +86,13 @@ export default ((props: any) => (
                                 planProperties={
                                     <>
                                         <PricingPlanProperty
-                                            description={<>Add $325/mo for 25 additional users. 50 users max.</>}
+                                            description={
+                                                <>
+                                                    <br />
+                                                </>
+                                            }
                                         >
-                                            25 users included
+                                            25 users max
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-2 pt-1">Email support</PricingPlanProperty>
                                     </>
@@ -113,7 +116,6 @@ export default ((props: any) => (
                                                 <>
                                                     Scales to 100,000+ users
                                                     <br />
-                                                    <br />
                                                 </>
                                             }
                                         >
@@ -126,6 +128,7 @@ export default ((props: any) => (
                                 }
                                 features={{
                                     ...TEAM_FEATURES,
+                                    singleSignOn: true,
                                     codeChangeManagementCampaigns: true,
                                     multipleCodeHosts: true,
                                     repositoryPermissions: true,
