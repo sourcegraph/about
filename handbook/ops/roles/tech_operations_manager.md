@@ -1,6 +1,6 @@
 # Tech Operations Manager
 
-We are looking for an leader, an engineer, and an operator to build and improve our Tech Operations team. As we grow our team and customer base rapidly, we need your help building, upgrading, and maintaining the internal applications that are straining to keep up!
+We are looking for a leader, an engineer, and an operator to build and improve our Tech Operations team. As we grow our team and customer base rapidly, we need your help building, upgrading, and maintaining the internal applications that are straining to keep up!
 
 ## Responsibilities
 
@@ -47,8 +47,6 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We make you a job offer.
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
-
-If you're interested in Sourcegraph but aren't yet ready to apply we are still happy to connect and answer any questions that you might have: [DM us on Twitter](https://twitter.com/srcgraph) or email hiring@sourcegraph.com.
 
 **[Click here to apply](https://jobs.lever.co/sourcegraph/e21ff6b1-87fd-4214-8ff6-16881aba2023)**
 

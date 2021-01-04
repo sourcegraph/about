@@ -39,13 +39,13 @@ Company meeting is an effective way to:
 ## Agenda
 
 1. Introduce any new team members starting this week
-   - The manager of the team member (or, if someone else knows them better, then that person if appropriate) presents a brief (~30-second) intro, stating the new team member's role, why we hired them, and what their first project is (if known). Then the person should pass it off to the new team member to say hello and share a fun fact about themselves. {#new-team-member-intro}
-1. Birthdays/anniversaries (owner: @sqs presents)
+   - The manager of the team member presents a brief (~30-second) intro, stating the new team member's role, why we hired them, and what their first project is (if known). Then the person should pass it off to the new team member to say hello and share a fun fact about themselves. {#new-team-member-intro}
+1. Work anniversaries (owner: @sqs presents)
 1. Inspiration of the week (message @sqs to volunteer to present an inspiration)
-1. Chaneglog from last week (owner: @christina)
+1. Changelog from last week (owner: @christina)
 1. Progress on our [company goals](../../company/goals/index.md) (owner: @sqs)
 1. Product metrics update (owner: @ericbm)
-1. All customer [bookings](../sales/index.md#booking) and churn since the previous company meeting (owner: @ericbm, @gregg presents)
+1. All customer [bookings](../sales/index.md#booking) and churn since the previous company meeting (owner: @tommy, @gregg presents)
 1. New and expansion pipeline: include full table, discuss only significant changes since the previous company meeting (owner: @joe kirscher, @gregg presents)
 1. Hiring: Open roles we're hiring for, offers extended/accepted/rejected (owner: @david)
 1. What's new in the [handbook](../index.md) (owner: @sqs)
@@ -56,16 +56,17 @@ Company meeting is an effective way to:
 
 ## Recordings
 
-> We haven't automated this process yet. One possible solution would be to automatically copy Zoom recordings to Google Drive.
+> We haven't automated this process yet.
 
 @sqs will post the company meeting recording in #general after the meeting finishes. If @sqs is not working on a given day or if he forgets, here is the process:
 
-1. Go to https://zoom.us/recording/management (as a Zoom admin)
+1. Go to https://zoom.us/recording/management (as a Zoom admin).
 1. Next to the correct item (Topic: `Company meeting`), press `Share...`.
 1. In the dialog, select `Share this recording: Publicly` and press `Save`.
 1. Ensure `Password protection` is on.
 1. Press `Copy sharing information to clipboard`.
-1. Paste in #general on Slack as a reply to the thread that originally linked the slides for company meeting.
+1. Write a message in #general saying `Company meeting W21 slides + recording` (replace `W21` with the actual week number from the title of the Google Slides doc).
+1. As a reply to that message's thread, paste the copied Zoom recording info and a link to the Google Slides doc.
 
 ## Presenters who can't attend
 

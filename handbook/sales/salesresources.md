@@ -14,11 +14,12 @@ Please do not edit the templates directly -- create a copy and place it in a dif
 
 The following templates are currently available:
 
-- [Enterprise License Agreement and Order Form](https://docs.google.com/document/d/1QrFksymcceOO38jhU5ZHIhr_u6LHW6i8/)
+- [Enterprise License Agreement and Order Form](https://drive.google.com/file/d/1OzzyL3z13QeD6qInrhv-5Zyqg8GDQmBr/)
 - [Proposal](https://docs.google.com/presentation/d/1Qv75e1oSSL9eRyf8RMOPDFpqoQdOAdmB3lvWcvsZz94/)
 - [Proof of Concept](https://docs.google.com/document/d/1IYI4w4Pavjf1s14CNZZ0VPSaheWGtdaNSCD0VDFWlEE/)
 - [Sales Email](https://docs.google.com/document/d/1a7NayrKc8JWKgzlpawVCUVCTHFYucrSGA5wuF706B-M/)
 - [Mutual Nondisclosure Agreement](https://drive.google.com/file/d/1M6UA8ro-qsdrj9fiB7wkJlD2jpy8epDI/)
+- [Sourcegraph W9](https://drive.google.com/file/d/1sxASpL9AmPiUgMx2qE-yXLtwTlfHGyBW/)
 
 ### Updating Templates
 
@@ -27,6 +28,17 @@ To update a template place the new template in the main Sales Template folder, n
 ### Useful Links
 
  - [CE Account Ownership](https://docs.google.com/spreadsheets/d/1EbAlUlMoZU-M2haRj0DoW3E7h7KG2D0vwLX3PlwL-h0/edit#gid=0)
+
+## Customer Notes
+
+Where to Store Customer Notes and Documents:
+
+- Create Folder in the ['Customer Notes' Shared Folder Here](https://drive.google.com/drive/folders/1OsRinDgrC53Zaue8ToTToXbVnW8HPoeA)
+- Naming Convention for Folder: "Customer/Prospect Name" - - then # customer or # prospect (see folder for examples)
+- Within that folder, add all of your documents and notably, your running notes google document (which you'll link to the Salesforce opportunity in the designated field)
+- If you'd like to save this folder into your own drive, that's simple and welcomed. Simply right click on the folder, then select 'Add Shortcut to Drive' - - then choose the preferred destination where you'd like this to land within your 'My Drive'
+
+Note: Salesforce is the communication and document source of truth for our Sales Team. Upload all docs (contracts, etc) to Salesforce and the customer's folder in Dropbox as well.
 
 ## Sales Content
 

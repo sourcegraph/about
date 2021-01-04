@@ -13,9 +13,11 @@ interface Quote {
 interface Props {
     customer: string
     title: string
-    logo: string
+    logo?: string
     quote?: Quote
     pdf?: string
+    heroImage?: string
+    heroLink?: string
     className?: string
     titleClassName?: string
     children?: React.ReactNode
@@ -29,11 +31,24 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
     className = 'case-study',
     titleClassName = '',
     pdf,
+    heroImage,
+    heroLink,
     children,
 }) => (
         <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
             <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
-                {quote && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
+                {heroImage && (<div className="case-studies__quote row pt-3">
+                    <div className="col-lg-3">
+                        <a href={heroLink} rel="nofollow"><img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} /></a>
+                    </div>
+                    <div className="col-lg-9 ">
+                        {quote && <div className="text-left">
+                            <p className="text-light" dangerouslySetInnerHTML={{ __html: quote.quote }} />
+                            <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
+                        </div>}
+                    </div>
+                </div>)}
+                {quote && !heroImage && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
                 {pdf && (
                     <a href={pdf} className="btn btn-primary mt-3" rel="nofollow" target="_blank">
                         <i className="fa fa-file-pdf pr-2" />
@@ -83,7 +98,7 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
 }> = ({ customer, logo, className = '', color = 'dark', children }) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
         <div className="container text-center pt-3 pb-3">
-            <img className="case-studies__logo my-3" src={logo} alt={customer} />
+            {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}
             <span className="case-studies__label d-block mt-1">
                 <span className="sr-only">{customer}</span> case study
             </span>

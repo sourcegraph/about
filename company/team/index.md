@@ -16,7 +16,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Quinn Slack
 
 - [CEO](../../handbook/ceo/index.md), Cofounder, Board of Directors
-- San Francisco, CA, USA 🇺🇸
+- Mill Valley, CA, USA 🇺🇸
 - [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com), [slack.org](https://slack.org), [@sqs](https://twitter.com/sqs), [LinkedIn](https://www.linkedin.com/in/quinnslack), [he](http://pronoun.is/he)
 - Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn cofounded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
 
@@ -141,7 +141,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - VP Operations
 - San Francisco, CA, USA 🇺🇸
 - [dan@sourcegraph.com](mailto:dan@sourcegraph.com), [@DanielNealAdler](https://twitter.com/DanielNealAdler), [LinkedIn](https://www.linkedin.com/in/danielnealadler/), [dadlerj](https://github.com/dadlerj)
-- In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his girlfriend and dog in San Francisco.
+- In his role at Sourcegraph, Dan finally found the perfect mix of IDEs and spreadsheets. After receiving a C.S. degree from Rice U., Dan spent a decade in the business world: consulting, investing, and before Sourcegraph, getting an MBA at Stanford. Dan lives with his fiancé and dog in San Francisco.
 
 ## Tomás Senart
 
@@ -537,3 +537,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Hoboken, NJ
 - [jbollin@sourcegraph.com](mailto:jbollin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joshua-bollin-0840226/)
 - Josh lives in Hoboken with his wife Lindsey and two sons Luke & Michael (separated by 16 years!).  Prior to Sourcegraph, Josh helped to drive unicorn exits for AppDynamics and Datadog.  Die-hard foodies, both Lindsey and Josh have spent quite a bit of time in the kitchen during the pandemic to replace their restaurant habit.
+
+## Hannah Freilich
+
+- Account Executive
+- Quincy, MA
+- GitHub: Hannah-Sourcegraph
+- [hannah@sourcegraph.com](mailto:hannah@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/hannah-freilich-5ba30780/)
+- Hannah was born and raised in CT, but has been living in and around Boston for the past 15 years.  Formerly a public school teacher, Hannah became inspired by entreprenuership and decided to pursue a career in tech sales at a small startup.  In her free time, she enjoys spending time with family and friends, listening to music, cooking, traveling and enjoying the outdoors. 

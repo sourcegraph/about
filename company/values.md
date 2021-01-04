@@ -6,9 +6,9 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 - [**Work as a team**](#work-as-a-team): You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
 - [**High agency**](#high-agency): You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
 - [**High quality**](#high-quality): You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.
+- [**Be a good human**](#be-a-good-human): You are kind, empathetic, authentic, humble.
 - [**Open and transparent**](#open-and-transparent): You proactively communicate in an open and transparent way.
 - [**Continuously grow**](#continuously-grow): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
-- [**Be a good human**](#be-a-good-human): You are kind, empathetic, authentic, humble.
 
 ---
 
@@ -53,6 +53,10 @@ If we discover that we've produced something that does not meet our quality bar,
 
 High-quality isn't the opposite of iterative. You can keep quality high while still being iterative by narrowing the scope (for example, by solving a smaller problem at first, or by solving it only for certain customers initially).
 
+### Be a good human
+
+You are kind, empathetic, authentic, humble.
+
 ### Open and transparent
 
 We are an [open company](index.md#open-company).
@@ -95,6 +99,3 @@ Our code and PRs are public, so lack of transparency is only obfuscation, not se
 
 You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
 
-### Be a good human
-
-You are kind, empathetic, authentic, humble.

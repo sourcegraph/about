@@ -33,7 +33,6 @@ We're hiring! Check out our open positions:
 
 ### Marketing
 
-- [Creative Director](../handbook/marketing/roles/creative_director.md)
 - [Director of Community](../handbook/marketing/roles/director_of_community.md)
 
 ### Operations, finance, and legal
@@ -44,10 +43,6 @@ We're hiring! Check out our open positions:
 - [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
 - [Salesforce Administrator and Developer](../handbook/ops/roles/sf_admin_developer.md)
 
-### People Ops
-
-- [Recruiter (customer-facing roles)](../handbook/people-ops/roles/recruiter_customer_facing.md)
-- [Technical Recruiter - Product](../handbook/people-ops/roles/technical_recruiter_product.md)
 
 ### CEO
 
