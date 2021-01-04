@@ -62,7 +62,7 @@ export default ((props: any) => (
                         </div>
                         <div className="col-md-9">
                             <InContentBlockquote
-                                quote="Sourcegraph helps us with technical debt reduction and the consolidation of our codebase by letting us avoid duplication, spot the usage of deprecated APIs or internal (non-API) library code, and identify general purpose code in specific projects (such as utility classes) that can be factored out and shared in a core library"
+                                quote="Sourcegraph helps us with technical debt reduction and the consolidation of our codebase by letting us avoid duplication, spot the usage of deprecated APIs or internal (non-API) library code, and identify general purpose code in specific projects (such as utility classes) that can be factored out and shared in a core library."
                                 author="Chris Roderick, Applications and Services Section Leader, CERN"
                             />
                         </div>
