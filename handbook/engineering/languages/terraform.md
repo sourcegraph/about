@@ -1,7 +1,7 @@
 # Terraform style guide
 
 - General Terraform [styleguide](https://www.terraform.io/docs/configuration/style.html)
-- Sourcegraph Terraform Playbook [playbook](./lang-playbook/terraform.md)
+- Sourcegraph Terraform Playbook [playbook](./extended_guide/terraform.md)
 
 ## State
 
