@@ -92,7 +92,7 @@ export default ((props: any) => (
                                                 </>
                                             }
                                         >
-                                            25 users
+                                            Up to 25 users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-2 pt-1">Email support</PricingPlanProperty>
                                     </>
