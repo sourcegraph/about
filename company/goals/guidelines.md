@@ -59,9 +59,15 @@ Each engineering team should have its own goals page with explicit goals. Becaus
 > 
 > **Problem:** _A prose description of the problem that the goal is meant to address. The "why" of the goal._
 >
-> **Milestones:** _Checkpoints along a linear prerequisite path that would demonstrate incremental progress towards this goal. Milestones are not specific single tasks and likely encompass 1-2 months of progress. It may make sense to list milestone-specific outcomes beneath each milestone._ 
+> **Milestones:** 
 >
-> **Outcomes:** _The quantitative and qualitative metrics that demonstrate the goal has successfully solved the problem. Outcomes are not "tasks completed;" they are signals that the problem itself is solved._
+> 1. _First milestone: A checkpoint along a linear prerequisite path that would demonstrate incremental progress towards this goal. Milestones are not specific single tasks and likely encompass 1-2 months of progress._ 
+>    
+>     - **Outcome:** _The quantitative and qualitative metrics that demonstrate the milestone has made progress towards solving the problem. Outcomes are not "tasks completed;" they are signals that the problem itself is solved._
+> 
+> 1. _Next milestone..._
+>        
+>     - **Outcome:** _This milestone's outcome..._
 
 Goals and outcomes should be relatively stable, unless a team chooses to de-prioritize a goal or discovers a better way to measure it. Milestones can be subtracted or added while working on a goal as necessary – the focus should be on achieving the outcomes (the "what") to solve the problem and not any specific set of tasks (the "how").  
 
