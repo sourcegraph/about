@@ -16,7 +16,7 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/pull/13690
     category: Search
   - description: "Structural search syntax now allows regular expressions in patterns. Also, `...` can now be used in place of `:[_]`."
-    url: https://docs.sourcegraph.com/@main/user/search/structural
+    url: https://docs.sourcegraph.com/code_search/reference/structural
     category: Search
   - description: "Experimental: A new homepage UI for Sourcegraph Server shows the user their recent searches, repositories, files, and saved searches. It can be enabled with `experimentalFeatures.showEnterpriseHomePanels`."
     url: https://github.com/sourcegraph/sourcegraph/issues/13407

@@ -57,7 +57,7 @@ We've added a couple features to help site admins manage a Sourcegraph instance 
 
 - Improved [management console](https://docs.sourcegraph.com/admin/management_console) JSON editor for critical configuration, now with editor completion, inline documentation, and validation.
 - Look up users by email address in the GraphQL API
-- [Prevent users from changing their username](https://docs.sourcegraph.com/admin/config/critical_config#reference) (from the username set by SSO)
+- [Prevent users from changing their username](https://docs.sourcegraph.com/admin/migration/3_11) (from the username set by SSO)
 
 Making configuration changes through the JSON editor is now easier too with easy to access documentation in the editor itself.
 

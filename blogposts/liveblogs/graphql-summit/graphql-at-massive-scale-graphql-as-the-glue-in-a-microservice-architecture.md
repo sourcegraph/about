@@ -264,4 +264,4 @@ Then the team had a realization:
 So they decided to release it under the MIT License: [GrAMPS: GraphQL Apollo Microservice Pattern Server](https://github.com/gramps-graphql/gramps-express) ([npm package](https://www.npmjs.com/org/gramps)). Check it out now!
 
 ---
-Check out the full slides to Jason's talk here: https://code.lengstorf.com/presentations/graphql-microservices/slides/
+Check out the full slides to Jason's talk here: https://jlengstorf.github.io/presentations/graphql-microservices/slides/#/
