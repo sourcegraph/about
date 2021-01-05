@@ -55,15 +55,17 @@ A goal's general format is:
 
 Each engineering team should have its own goals page with explicit goals. Because engineering team goals are larger than a single person's goal, we use the following format: 
 
-> **Goal title:** _The title for a vision that is achievable within a 6-12 month time frame._ 
+> **Goal title:** _The title for a finite vision that is achievable within a 6-12 month time frame._ 
 > 
-> **Problem:** _A prose description of the problem that the goal is meant to address. The "why" of the goal._  
+> **Problem:** _A prose description of the problem that the goal is meant to address. The "why" of the goal._
 >
 > **Milestones:** _Checkpoints along a linear prerequisite path that would demonstrate incremental progress towards this goal. Milestones are not specific single tasks and likely encompass 1-2 months of progress. It may make sense to list milestone-specific outcomes beneath each milestone._ 
 >
 > **Outcomes:** _The quantitative and qualitative metrics that demonstrate the goal has successfully solved the problem. Outcomes are not "tasks completed;" they are signals that the problem itself is solved._
 
-Goals and outcomes should be relatively stable, unless a team chooses to de-prioritize a goal or discovers a better way to measure it. Milestones can be subtracted or added while working on a goal as necessary – the focus should be on achieving the outcomes (the "what") and not any specific set of tasks (the "how").  
+Goals and outcomes should be relatively stable, unless a team chooses to de-prioritize a goal or discovers a better way to measure it. Milestones can be subtracted or added while working on a goal as necessary – the focus should be on achieving the outcomes (the "what") to solve the problem and not any specific set of tasks (the "how").  
+
+Importantly, good goals should enable the team to confidently say "no" (or "later") to unrelated work by creating a shared vision with a clear scope. 
 
 ### Sensitive information
 
