@@ -330,7 +330,7 @@ And if you find code checking valuable and want to learn more about our work at 
 
 <sup>1</sup> Another one of my favorites tools using the same principle is [Kibit](https://github.com/jonase/kibit) for Clojure.
 <br/>
-<sup>2</sup> See the [structural search reference](https://docs.sourcegraph.com/@main/user/search/structural#syntax-reference) for more details about special syntax.
+<sup>2</sup> See the [structural search reference](https://about.sourcegraph.com/blog/code-search-turned-code-checker/) for more details about special syntax.
 <br/>
 <sup>3</sup> These are all the [simple static check](https://staticcheck.io/docs/checks) of the form `S<number>`, excluding `SA` and `ST` checks.
 <br/>

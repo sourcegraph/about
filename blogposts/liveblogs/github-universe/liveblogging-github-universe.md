@@ -27,7 +27,7 @@ For those of you lucky enough to be at the conference, stop by and say hello! Lo
 
 So stay tuned for a fantastic conference with some great new tools and processes for software development. Or in the words of Steve Ballmer, “Developers! Developers! Developers! Developers!”
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/Vhh_GeBPOhs" frameborder="0" allowfullscreen></iframe>
+<div class="text-center"><iframe width="640" height="480" src="https://www.youtube.com/embed/Vhh_GeBPOhs" frameborder="0" allowfullscreen></iframe></div>
 
 Developers, I say!
 
@@ -66,7 +66,7 @@ Developers, I say!
 *   Making Electron Development Simpler, More Pleasant, and More Productive
 *   Transforming Tribal Knowledge into Learning Trees
 *   Crossing the Canyon of Cognizance: A Shared Adventure
-*   Tips & Tricks: Gotta Git Them All ([Brent Beer](https://twitter.com/brntbeer), [video](http://www.ustream.tv/recorded/91383441), [slides](https://speakerdeck.com/brntbeer/tips-and-tricks-gotta-git-them-all))
+*   Tips & Tricks: Gotta Git Them All ([Brent Beer](https://twitter.com/brntbeer), [video](https://www.youtube.com/watch?v=LsxDxL4PYik), [slides](https://speakerdeck.com/brntbeer/tips-and-tricks-gotta-git-them-all))
 *   Billions and billions of commits: Learning from open source data
 *   Building and Scaling a Distributed and Inclusive Team
 *   Crossing the Language Divide in Open Source Projects

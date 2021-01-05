@@ -62,7 +62,7 @@ As a result, AWS CodeCommit and Gitolite get a new `exclude` field, plus AWS Cod
 
 Some teams for whom Sourcegraph is a critical piece of infrastructure want to check their Sourcegraph configuration into version control.
 
-For these teams, [site configuration](https://docs.sourcegraph.com/admin/config/site_config), [critical configuration](https://docs.sourcegraph.com/admin/config/critical_config), and [external services configuration](https://docs.sourcegraph.com/admin/external_service) can be loaded from the file system or Kubernetes ConfigMap if the following environment variables are set on the server:
+For these teams, [site configuration](https://docs.sourcegraph.com/admin/config/site_config), [critical configuration](https://docs.sourcegraph.com/admin/migration/3_11), and [external services configuration](https://docs.sourcegraph.com/admin/external_service) can be loaded from the file system or Kubernetes ConfigMap if the following environment variables are set on the server:
 
 ```bash
 CRITICAL_CONFIG_FILE=critical.json
