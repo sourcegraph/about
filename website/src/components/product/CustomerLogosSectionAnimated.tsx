@@ -117,6 +117,10 @@ const ITEMS: {
             url: '/external-logos/cloudflare-color-logo.svg',
         },
         {
+            name: 'Factset',
+            url: '/external-logos/factset-logo.svg',
+        },
+        {
             name: 'Button',
             url: '/external-logos/use-button-logo.svg',
         },
