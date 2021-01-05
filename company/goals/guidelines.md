@@ -63,7 +63,7 @@ Each engineering team should have its own goals page with explicit goals. Becaus
 >
 > 1. _First milestone: A checkpoint along a linear prerequisite path that would demonstrate incremental progress towards this goal. Milestones are not specific single tasks and likely encompass 1-2 months of progress._ 
 >    
->     - **Outcome:** _The quantitative and qualitative metrics that demonstrate the milestone has made progress towards solving the problem. Outcomes are not "tasks completed;" they are signals that the problem itself is solved._
+>     - **Outcome:** _The quantitative and qualitative metrics that demonstrate the milestone has made progress towards solving the problem. Outcomes are not "tasks completed;" they are signals that the problem itself is solved. A milestone might have multiple outcomes._
 > 
 > 1. _Next milestone..._
 >        
