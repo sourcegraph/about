@@ -40,8 +40,6 @@ We're hiring! Check out our open positions:
 - [Business Operations Analyst](../handbook/ops/roles/business_operations_analyst.md)
 - [Director of Business Operations & Strategy](../handbook/ops/roles/director_business_operations.md)
 - [Tech Ops Manager](../handbook/ops/roles/tech_operations_manager.md)
-- [Senior Commercial Counsel](../handbook/ops/roles/senior_commercial_counsel.md)
-- [Salesforce Administrator and Developer](../handbook/ops/roles/sf_admin_developer.md)
 - [VP Talent](../handbook/talent/vp_talent.md)
 
 
