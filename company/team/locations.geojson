@@ -403,6 +403,19 @@
           -25.44831240093052
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camden Cheek"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.85763549804688,
+          39.08583712285596
+        ]
+      }
     }
   ]
 }
