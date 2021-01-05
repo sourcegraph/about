@@ -26,7 +26,7 @@ We document this in a blog post because blog posts are publicly accessible, time
 
 Once you have the blog post, you should share it with the CE team by sharing the blog post in #CE. This gives the CE team context so they can support customers or do high touch outreach. 
 
-You should also share the blog post in #dev-announce so the product and engineering teams are aware. 
+You should also share the blog post in #general so all teams are aware of it.  
 
 Answer any questions or concerns about the deprecation that teams may have. 
 
