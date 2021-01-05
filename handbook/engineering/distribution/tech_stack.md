@@ -39,3 +39,7 @@ Also see [internal infrasturcture](./internal_infrastructure.md) and [tools](./t
 **Best practices:**
 
 - Adhere to the [Sourcegraph Terraform style guide](../languages/terraform.md)
+
+## Kubernetes
+
+**Use cases:** Deploying services
