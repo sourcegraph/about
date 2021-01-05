@@ -25,36 +25,45 @@ For more information about code insights, see the original [product document](ht
 
 **Value to Sourcegraph:** The Sourcegraph sales cycle is unusual because although we consistently wow our users, the economic decision-maker is usually not one of these users. Instead, the people with the power to sign a contract with us are higher up within an organization and usually depend on running a trial to fully understand the value of Sourcegraph. When code insights answers these personas' higher-level questions about codebases that our core features do not currently answer, it can dramatically speed up our sales cycle as well as our sales pipeline by giving decision makers a reason to buy Sourcegraph without needing to run a trial.
 
-**Milestones:**
+**Milestones and Outcomes:**
 
-_Because code insights is an entirely new feature and closely informed by customer feedback, the further in the future goals get, the more flexible the order of these milestones is (especially when it comes to interleaving "business" milestones like beta/GA/paid with feature milestones)._ 
+_Because code insights is an entirely new feature and closely informed by customer feedback, the further in the future goals get, the more flexible the order of these milestones is (especially when it comes to interleaving "business" milestones like beta/GA/paid, with feature milestones, like third-party data or monitoring/campaign integration)._ 
 
-1. 🔄 Three customers give us qualitative feedback after using our code insights prototypes to guide the initial product direction. 
-1. We have decided on and implemented metrics to quantitatively measure the adoption of code insights prototypes (see [RFC 279](https://docs.google.com/document/d/1I10tm5CFZvzQYNeV--JacRGLLIUesXQBp6ZO8uhakRs/edit#)). 
-1. All but the largest customers can use insights prototypes over their entire codebase (there are little to no scaling issues). 
-1. Code insights moves from prototype to beta feature (easy to enable or enabled by default, documented, and supported by the CE team rather than the product team). 
-1. Code insights beta features are actively used at 5 enterprise customers by VPs/Directors. 
-1. Customers can easily create their own custom insights in the UI. 
-1. Code insights integrates natively with other Sourcegraph features like campaigns and code monitoring. 
-1. Code insights is GA (generally available) for all customers. 
-1. Customers can incorporate third-party data into their insights with plug-and-play UX. 
-1. Code insights is a paid product. 
-1. Code insights is the primary driver behind 5 enterprise sales. 
-1. We have discovered and validated entirely new code metrics that engineering teams should and can use code insights to track. 
+1. ✅ Three customers give us qualitative feedback after using our code insights prototypes to guide the initial product direction. 
 
-**Outcomes:**
+    - **Outcome:** We have a list of potential features and their likely value that we can use to achieve our initial adoption milestones ([Productboard view](https://sourcegraph.productboard.com/feature-board/2327586-code-insights-next-objective)). 
 
-- We have weekly quantitative reports on the use of code insights at each customer. 
-- Customers communicate to their AE/CE that they use code insights in making engineering decisions. 
-- Customers who express explicit interest in the code insights features have a faster sales cycle through our pipeline than our average customer. 
-- Customers buy Sourcegraph for the code insights or buy code insights as its own paid feature. 
-- Code insights incorporates all of a customer's 3rd-party code information as the central place to learn anything about your code. 
-- You can use code monitoring to get alerted when an insight metric hits a trigger. 
-- There is a natural path in the UI to go from an insight to a campaign that impacts the value of the insight.
+1. 🔄 We have decided on and implemented metrics to quantitatively measure the adoption of code insights prototypes (see [RFC 279](https://docs.google.com/document/d/1I10tm5CFZvzQYNeV--JacRGLLIUesXQBp6ZO8uhakRs/edit#)). 
+
+    - **Outcome:** We have weekly quantitative reports on the use of code insights at each customer. 
+
+1. Code insights can scale to large (if not the largest) codebases. 
+
+    - **Outcome:** All but the largest customers can use insights prototypes over their entire codebase to answer questions about the state of _all_ of their code.
+
+1. Code insights provides the functionality and positioning to be immediately useful to many customers (this may include integrations with campaigns, code monitoring, or third party data sources – see [Productboard feature view](https://sourcegraph.productboard.com/feature-board/1793095-code-insights)).  
+
+    - **Outcome:** Code insights features are actively in use by VPs/Directors at 5+ enterprise customers.  
+
+1. Customers can easily create their own custom insights in an intentionally-designed UI.
+
+    - **Outcome:** Code insights can move from prototype to beta feature (easy to enable or enabled by default, documented, and supported by the CE team rather than the product team).  
+
+1. Code insights is GA (generally available) for all customers and has low/no barriers to wide adoption. 
+
+    - **Outcome:** Customers communicate to their AE/CE that they use code insights in making engineering decisions. 
+    - **Outcome:** Overall usage of code insights increases as many existing customers start using code insights for the first time. 
+    - **Outcome:** Customers use code insights with limited help from CE in setting them up. 
+
+1. Code insights provides enough value to be a paid product. 
+
+    - **Outcome:** Existing customers buy code insights as its own paid feature. 
+    - **Outcome:** Customers who express explicit interest in the code insights features have a faster sales cycle through our pipeline than our average customer. 
+    - **Outcome:** Code insights is the primary driver behind 5 new enterprise sales. 
 
 ## Roadmap
 
-Our [roadmap is in productboard](https://sourcegraph.productboard.com/roadmap/2327428-code-insights-objectives-roadmap). We organize our roadmap by milestone objective rather than feature, because to achieve each milestone we may shift or prioritize features based on further customer feedback or product decisions. 
+Our [roadmap is in Productboard](https://sourcegraph.productboard.com/roadmap/2327428-code-insights-objectives-roadmap). We organize our roadmap by milestone objective rather than feature, because to achieve each milestone we may shift or prioritize features based on further customer feedback or product decisions. 
 
 ## We're hiring for this team!
 
