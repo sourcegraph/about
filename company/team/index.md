@@ -560,5 +560,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Director of Content Strategy
 - Nederland, CO, USA 🇺🇸
 - GitHub: [content-hacker](https://github.com/content-hacker)
-- [erica@sourcegraph.com](mailto:you@sourcegraph.com), [LinkedIn](https://www.linkedin.com/feed/)
+- [erica@sourcegraph.com](mailto:erica@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ericalindberg/)
 - Erica lives in the Colorado Rocky Mountains where she spends most of her time exploring nature and trying to hack high-altitude gardening. She started her career as a journalist working for a variety of print and digital publications before transitioning to a career in tech. Prior to working at Sourcegraph, Erica was the head of global content at GitLab. Erica freely admits that she is terrible at spelling and would be lost without spellcheck. Hobbies include astrology, cooking, hiking, and homesteading.
+
+## Andy Schumeister (he/him)
+
+- Director of Product Marketing
+- Minneapolis, MN, USA 🇺🇸
+- GitHub: [abschu](https://github.com/abschu)
+- [andy@sourcegraph.com](mailto:andy@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/andy-schumeister/)
+- Andy lives in Minneapolis, MN with his husband and daughter. After spending nearly a decade in the Bay Area, he decided he was ready for freezing winters again. Andy worked at General Mills and Google before getting his MBA at Stanford. From there, he joined Segment where he fell in love with marketing technical products. In his free time, Andy loves spending time with his family, working out, and eating Sour Patch Kids.
+
