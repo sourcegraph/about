@@ -66,7 +66,7 @@ export default ((props: any) => (
                                                 </>
                                             }
                                         >
-                                            Up to 10 users
+                                            Includes 10 users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">Community support</PricingPlanProperty>
                                     </>
@@ -82,7 +82,7 @@ export default ((props: any) => (
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Team"
-                                price={<div className="text-center">Starts at $150/mo</div>}
+                                price={<div className="text-center">$150/mo</div>}
                                 planProperties={
                                     <>
                                         <PricingPlanProperty
@@ -92,7 +92,7 @@ export default ((props: any) => (
                                                 </>
                                             }
                                         >
-                                            25 users max
+                                            Includes 25 users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-2 pt-1">Email support</PricingPlanProperty>
                                     </>
