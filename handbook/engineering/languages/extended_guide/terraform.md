@@ -10,7 +10,7 @@ To debug some more involved terraform problems you may need to directly modify t
 
 1. Use `terraform state pull` to examine the statefile locally.
 
-1. If possible, use `terraform state rm` to make the necessary state modifications.
+1. If possible, use `terraform state rm`/`terraform state mv X Y` to make the necessary state modifications.
    Otherwise, manually edit the state file and run `terraform state push` to update the remote state.
 
     1. In cases where a corrupted state has been pushed, you can pull a previous object version with [gsutil](https://cloud.google.com/storage/docs/using-object-versioning)
