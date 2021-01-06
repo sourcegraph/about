@@ -43,3 +43,7 @@ Also see [internal infrasturcture](./internal_infrastructure.md) and [tools](./t
 ## Kubernetes
 
 **Use cases:** Deploying services
+
+## Dhall
+
+**Use cases:** Providing configuration for our deployment supported deployment types.
