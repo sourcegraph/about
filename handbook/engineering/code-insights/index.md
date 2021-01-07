@@ -41,7 +41,7 @@ _Because code insights is an entirely new feature and closely informed by custom
 
     - **Outcome:** All but the largest customers can use insights prototypes over their entire codebase to answer questions about the state of _all_ of their code.
 
-1. Code insights provides the functionality and positioning to be immediately useful to many customers (this may include integrations with campaigns, code monitoring, or third party data sources – see [Productboard feature view](https://sourcegraph.productboard.com/feature-board/1793095-code-insights)).  
+1. Code insights are useful to a broad set of customers (this may include integrations with campaigns, code monitoring, or third party data sources – see [Productboard feature view](https://sourcegraph.productboard.com/feature-board/1793095-code-insights)).  
 
     - **Outcome:** Code insights features are actively in use by VPs/Directors at 5+ enterprise customers.  
 
