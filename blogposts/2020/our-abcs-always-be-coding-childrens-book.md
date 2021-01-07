@@ -27,7 +27,7 @@ We love what we’ve come up with and hope you will too—a new digital children
 The A-Z format introduces simple concepts in a fun and easy-to-understand way so that kids can get curious about coding and perhaps take the first step in beginning their journey in learning how to code. Or at least it will provide an engaging and educational distraction to give you a break for a few minutes!
 
 <div class="video-embed embed-responsive embed-responsive-16by9 my-5">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6bCO63O4swI?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/6bCO63O4swI?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
  </div>
  
 <p class="text-center">

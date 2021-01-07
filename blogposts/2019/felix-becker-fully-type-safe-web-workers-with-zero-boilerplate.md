@@ -10,7 +10,7 @@ published: true
 ---
 
 <p style="text-align: center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/sSkx5SVc2OA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sSkx5SVc2OA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 TypeScript and ECMAScript have some of the most beautiful constructs and syntaxes to do parallel, non-blocking programming—but unfortunately, only for standard APIs like fetch in the browser or file IO in Node. When implementing anything CPU-bound in TypeScript, offloading it into a different, parallel execution context and exposing an equally type-safe and flexible API for it is non-trivial.

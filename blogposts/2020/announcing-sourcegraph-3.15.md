@@ -53,7 +53,7 @@ Go in-depth with the 3.15 release by watching the recorded livestream with Produ
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/EJ221hdssDw" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/EJ221hdssDw" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 </p>
 
@@ -66,7 +66,7 @@ Go in-depth with the 3.15 release by watching the recorded livestream with Produ
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/ju0XEFU31W0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/ju0XEFU31W0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://youtu.be/ju0XEFU31W0" target="_blank">View on YouTube</a></p>
 </p>
@@ -87,7 +87,7 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/PAsZP6wv3Gg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/PAsZP6wv3Gg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://youtu.be/PAsZP6wv3Gg" target="_blank">View on YouTube</a></p>
 </p>
@@ -138,7 +138,7 @@ Additionally, it is now possible to log all search and GraphQL requests slower t
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/Q2ZWPwMmbOI" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/Q2ZWPwMmbOI" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <p style="text-align: center"><a href="https://youtu.be/Q2ZWPwMmbOI" target="_blank">View on YouTube</a></p>
 </p>

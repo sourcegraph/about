@@ -89,7 +89,7 @@ To work more efficiently, we needed to create reusable components that provide a
 Headers described earlier, are a great example of an editable component we have created in Figma. Designers can edit elements like page titles, breadcrumbs, or buttons. Every instance is linked to the parent component and is automatically updated if its styles change. In addition, each design component is created in two variants - for light and dark themes. Thanks to using the consistent naming convention of .../light and .../dark, it is easy to switch between the modes. It is also worth mentioning that color names in Figma are aligned with CSS variables used by our developers. It makes the design handoff process easier and prevents us from using colors from outside of our pallet.
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/azrbGVShQis?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/azrbGVShQis?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
 See this design in [Figma](https://www.figma.com/file/iQIlSvEBuVz1jXTGjRVNeE/Header-editable-component-example-Sourcegraph?node-id=0%3A1)

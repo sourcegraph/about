@@ -18,7 +18,7 @@ _Update (June 22, 2016): Added support for pull requests and diffs._
 
 [**Install Chrome extension for GitHub.**] (https://docs.sourcegraph.com/integration/browser_extension) And don’t let your team review any code until they get it, too!_For Go, Java, TypeScript, and JavaScript only; more languages_ [_coming soon_](https://sourcegraph.com/beta)_!_
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/hIs4QtuM1Ig" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/hIs4QtuM1Ig" frameborder="0" allowfullscreen></iframe>
 
 The [Sourcegraph Chrome extension](https://docs.sourcegraph.com/integration/browser_extension) keeps you in flow while coding, with:
 

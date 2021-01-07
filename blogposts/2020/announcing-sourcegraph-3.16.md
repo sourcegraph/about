@@ -48,7 +48,7 @@ Sourcegraph couldn't be what it is without the community.
 Go in-depth with the 3.16 release by watching the recorded livestream with Product Manager [Christina Forney](https://twitter.com/christina4nee) and Software Engineers [Thorsten Ball](https://twitter.com/thorstenball), [Loïc Guychard](https://github.com/lguychard), and [Eric Fritz](https://github.com/efritz).
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TgbiCEGaFyU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/TgbiCEGaFyU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
 ---
@@ -56,7 +56,7 @@ Go in-depth with the 3.16 release by watching the recorded livestream with Produ
 ## Introducing version contexts to search past releases
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S_gj44k97CA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/S_gj44k97CA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
 Many organizations have old releases running in production and need to search across all the code for a release. Sourcegraph 3.16 introduces version contexts as an experimental feature. This introduces the ability to create a context consisting of many repositories with specific revisions to be searched. As you explore search results, you might need to navigate your code. Version contexts are respected by code intelligence hovers (go to definition and find references), and allow you to quickly traverse the specific code revisions you care about.
@@ -90,7 +90,7 @@ We are excited to hear your feedback as we continue to work on this feature! Get
 ## Smoother getting started experience for campaigns
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/aqcCrqRB17w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
 Sourcegraph 3.16 includes multiple smaller bug fixes and performance improvements to campaigns. In addition, we focused on making it easier and more straightforward to start using campaigns on your Sourcegraph instance. We addressed this in several ways: by providing clearer instructions in the onboarding process, improving the webhooks setup process, and by improving our documentation.
@@ -114,7 +114,7 @@ For an example of syntax highlighting on a diff, check out [a recent change in t
 ## Easier to read queries in plain text mode
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZtnqWhIcLeg?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/ZtnqWhIcLeg?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
 We introduced the smart search bar for plain text mode that provides syntax highlighting, hover tooltips, and diagnostics on search queries in [Sourcegraph 3.13](https://about.sourcegraph.com/blog/sourcegraph-3.13#smart-search-field-in-plain-text-mode). This means that Sourcegraph can provide useful hints, such as fixing invalid quotes, to get to search results faster. Sourcegraph 3.16 removes the feature flag and makes this the standard experience for all users in plain text mode.
