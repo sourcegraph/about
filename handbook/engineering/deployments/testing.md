@@ -4,7 +4,7 @@ This section documents testing clusters and deployments.
 
 ## Create a project in the "Engineering Projects" folder
 
-Create a folder with your name [here](https://console.cloud.google.com/projectselector2/home/dashboard?orgonly=true&supportedpurview=project&project=&folder=795981974432)
+Create a folder with your name [here](https://console.cloud.google.com/projectselector2/home/dashboard?orgonly=true&supportedpurview=project&project=&folder=795981974432) following our [naming conventions](../environments.md#Engineering-Projects)
 
 ## How to manually start a test cluster in our "Sourcegraph Auxiliary' project on GCP
 
@@ -59,7 +59,7 @@ kubectl apply -f sourcegraph.Storageclass.yaml
 kubectl port-forward svc/sourcegraph-frontend 3080:30080
 ```
 
-Please delete your test cluster when you are done testing. You may also consider deleting your project to ensure all resources tied to your account are cleaned up. 
+Please delete your test cluster when you are done testing. You may also consider deleting your project to ensure all resources tied to your account are cleaned up.
 
 ## How to start a test cluster in your project on GCP with a script
 
