@@ -34,6 +34,7 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 ### [Search](../../handbook/engineering/search/goals.md#goals)
 ### [Security](../../handbook/engineering/security/goals.md#goals)
 ### [Web](../../handbook/engineering/web/goals.md#goals)
+### [Code Insights](../../handbook/engineering/code-insights.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
 
