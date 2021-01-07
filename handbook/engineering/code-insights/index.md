@@ -45,14 +45,15 @@ _Because code insights is an entirely new feature and closely informed by custom
 
     - **Outcome:** Code insights features are actively in use by VPs/Directors at 5+ enterprise customers.  
 
-1. Customers can easily create their own custom insights in an intentionally-designed UI.
+1. Customers can easily create their own custom insights using a dedicated UI.
 
-    - **Outcome:** Code insights can move from prototype to beta feature (easy to enable or enabled by default, documented, and supported by the CE team rather than the product team).  
+    - **Outcome:** Code insights can move from prototype to beta feature (easy to enable or enabled by default, documented, and supported by the CE team rather than the product team).
+    - **Outcome:** At least three customers create their own code insights that they actively reference.  
 
 1. Code insights is GA (generally available) for all customers and has low/no barriers to wide adoption. 
 
     - **Outcome:** Customers communicate to their AE/CE that they use code insights in making engineering decisions. 
-    - **Outcome:** Overall usage of code insights increases as many existing customers start using code insights for the first time. 
+    - **Outcome:** 10% of Sourcegraph customers actively use code insights. 
     - **Outcome:** Customers use code insights with limited help from CE in setting them up. 
 
 1. Code insights provides enough value to be a paid product. 
