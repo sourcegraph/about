@@ -27,7 +27,7 @@ This screencast (with accompanying audio) shows how to enable and configure the 
 
 <div class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/jfF84lYZg2c" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/jfF84lYZg2c" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <br/>
 </div>
@@ -38,7 +38,7 @@ This screencast (with accompanying audio) shows how to enable code intelligence 
 
 <div class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube.com/embed/qJDbuML5jFU" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/qJDbuML5jFU" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
   <br/>
 </div>

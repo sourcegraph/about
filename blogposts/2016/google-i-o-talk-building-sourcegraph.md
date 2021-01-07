@@ -28,7 +28,7 @@ Unlike other code search engines, Sourcegraph actually analyzes and understands 
 
 **If you haven’t used** [**Sourcegraph**](https://sourcegraph.com)**,** check out [the homepage](https://sourcegraph.com/) and then come back here. Since the rest of this post is about how we built Sourcegraph, it’s important for you to know what it is.
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/-DpKaoPz8l8" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/-DpKaoPz8l8" frameborder="0" allowfullscreen></iframe>
 
 ### Building Sourcegraph with Go
 

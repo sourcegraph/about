@@ -20,7 +20,7 @@ So far, IPFS has 2 implementations: [go-ipfs](https://github.com/jbenet/go-ipfs)
 
 Let’s dig a bit deeper into IPFS and how it could be used.
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/Fa4pckodM9g" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/Fa4pckodM9g" frameborder="0" allowfullscreen></iframe>
 
 ### The Permanent Web
 

@@ -27,7 +27,7 @@ Open-sourcing has many benefits, but there's a lot of open source code out there
 
 **_Read on for more, or watch the video and slides._**
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/ScUIlbHnxGI" frameborder="0" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube-nocookie.com/embed/ScUIlbHnxGI" frameborder="0" allowfullscreen></iframe>
 
 <script async class="speakerdeck-embed" data-id="0afd670b6a6b4f3fb8ed1d4897892084" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
