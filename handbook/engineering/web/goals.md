@@ -22,10 +22,10 @@ See also our [completed goals](goals_completed.md).
 
 **Milestones:**
 
-1. We can collect anonymized, aggregate usage data of our extensions to determine the popularity and usage of (existing and future) extensions ([RFC 267](https://docs.google.com/document/d/1HKgwTyG-IcRM81xLAmussWV4EdK95uy7GjKFIG8vgU4/edit#heading=h.trqab8y0kufp)). 
+1. 🔄 We can collect anonymized, aggregate usage data of our extensions to determine the popularity and usage of (existing and future) extensions ([RFC 267](https://docs.google.com/document/d/1HKgwTyG-IcRM81xLAmussWV4EdK95uy7GjKFIG8vgU4/edit#heading=h.trqab8y0kufp)). 
    - **Outcome:** We can measure usage and adoption of extensions, by extension ID, across our customers in order to make informed product decisions. 
 
-1. The on-Sourcegraph extensions UI (action bar and contribution points) is clear and scalable, to help users discover and use extensions. 
+1. 🔄 The on-Sourcegraph extensions UI (action bar and contribution points) is clear and scalable, to help users discover and use extensions. 
    - **Outcome:** - [*N<sub>1</sub>*][N1]% of Sourcegraph server users use at least one extension a week. 
 
 1. The extensions registry promotes discovery of relevant extensions and third-party extensions. 
@@ -54,7 +54,7 @@ See also our [completed goals](goals_completed.md).
 
 **Milestones:**
 
-1. The Sourcegraph browser extension supports Gerrit. 
+1. 🔄 The Sourcegraph browser extension supports Gerrit. 
    - **Outcome:** Sales closes deals with customers that primarily use Gerrit ([primary customer example](https://github.com/sourcegraph/customer/issues/138)).
 
 1. The Sourcegraph code host integrations expose all of Sourcegraph's extension features on the code host UI, like directory decorations or extensions action bar and status bar functionality. 
@@ -80,7 +80,7 @@ Right now you can only use Sourcegraph's search features on Sourcegraph in a bro
 
 **Milestones:** _This project is still early-stage and these milestones are more likely than normal to change based on early feature research._
 
-1. Determine the minimum lovable prototype feature(s) necessary to launch an IDE integration (example features: basic search, advanced search, code intel, Sourcegraph extension). 
+1. 🔄 Determine the minimum lovable prototype feature(s) necessary to launch an IDE integration (example features: basic search, advanced search, code intel, Sourcegraph extension). 
    - **Outcome:** A prioritized feature list built upon user research that can form the initial roadmap of the IDE extension. (This may reorder the later goals and add feature-based milestones.) 
 
 1. Determine and build tracking for core performance and adoption metrics of the IDE extension. 
@@ -105,7 +105,7 @@ Right now you can only use Sourcegraph's search features on Sourcegraph in a bro
 The Sourcegraph web platform has accumulated lots of design debt, since much of it was built before we had a design team. Additionally, the existing UI components don't scale to Sourcegraph's feature growth. The web platform should be more accessible, delightful, customizable, and scalable in order to empower Sourcegraph's users and Sourcegraph's internal teams' development.
 
 ### Milestones: 
-1. Sourcegraph's core navigation effectively highlights our core features and scales to new ones. 
+1. 🔄 Sourcegraph's core navigation effectively highlights our core features and scales to new ones. 
    - **Outcome:** We have a defined path forward for expanding navigation to include new features without needing to frequently redesign. 
 
 1. Sourcegraph's UI lets users customize themes, colors, and font attributes. 
