@@ -1,6 +1,8 @@
 # Code insights goals and roadmap
 
-## Code insights generates revenue in FY22
+## Goals 
+
+### Code insights generates revenue in FY22
 
 **Problem:** Engineers and engineering managers/directors/VPs want to be able to understand their codebase at a high level (which parts of the code base are health/unhealthy? How close are we to removing all instances of a code smell?). Existing tools that just use git data don't answer these questions because they don't look at the code itself, just the pattern of commits. Sourcegraph has all the information needed to answer these questions, but there is currently no way for an engineering leader to get the answer out of Sourcegraph. 
 
