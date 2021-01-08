@@ -36,7 +36,6 @@ You will be a part of the organization that ensures every Sourcegraph customer g
 - A background in training, teaching, or education, especially of a (senior) technical audience, is ideal.
 - (Not essential) experience in a customer-facing function, such as Sales Engineering, Success, Developer Relations, etc.
 - An organized approach to work, with proven track record of using data to guide decision-making.
-- Enthusiasm for building a new team and new strategy from scratch, and working on challenging open-ended problems.
 - Enthusiasm for building a new team and new strategy from scratch, and working on challenging open-ended problems, while embodying our [values](https://about.sourcegraph.com/company/values).
 - Given most of our customers and prospects are located in the U.S., candidates in U.S. timezones are preferred.
 
