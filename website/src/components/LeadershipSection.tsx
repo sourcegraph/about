@@ -59,15 +59,6 @@ const LEADERS: {
             twitter: 'https://twitter.com/srcgraph'
         },
         {
-            name: 'Julia Gilinets',
-            image: '/staff/avatar-julia.jpg',
-            title: 'VP Customer Engineering',
-            bio: '/company/team#julia-gilinets-she-her',
-            github: 'https://twitter.com/JuliaSourceress',
-            linkedin: 'https://www.linkedin.com/in/juliagilinets',
-            twitter: 'https://github.com/juliasourceress'
-        },
-        {
             name: 'Kacie Jenkins',
             image: '/staff/avatar-kacie.jpg',
             title: 'VP Marketing',
