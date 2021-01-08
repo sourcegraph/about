@@ -69,7 +69,7 @@
     "@sourcegraph/stylelint-config": "^1.1.9",
     "@sourcegraph/tsconfig": "^4.0.1",
     "@sourcegraph/tslint-config": "^13.4.0",
-    "@types/bootstrap": "5.0.1",
+    "@types/bootstrap": "5.0.2",
     "@types/lodash": "4.14.167",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
