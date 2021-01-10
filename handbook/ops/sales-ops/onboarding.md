@@ -25,9 +25,9 @@ Start by reading the [operations team onboarding page](../onboarding.md). Once y
 - Read our [customer case studies](https://about.sourcegraph.com/customers)
 - Read our [customer personas](../../marketing/personas.md)
 - Review our sales content and collateral
-  - [Sales content & templates](https://drive.google.com/drive/folders/14guSNICPX5bHxUxXIeb1web6MN8z7FA4)
-  - [ROI calculators](https://drive.google.com/drive/folders/1-7K3P-E1ITzbJUOCB6l_LLmb79jZkWJp)
-  - [Customer order forms](https://drive.google.com/drive/folders/1OJhW_5DwQvmfViHJ9E_9hb9M41BYKjjt)
+  - [Sales content](https://drive.google.com/drive/folders/14guSNICPX5bHxUxXIeb1web6MN8z7FA4)
+  - [Sales templates](https://drive.google.com/drive/u/0/folders/1eBfRzDDM-fonChy5kumN5m1aS-aZxlYM)
+  - [ROI calculators](https://drive.google.com/drive/u/0/folders/1-7K3P-E1ITzbJUOCB6l_LLmb79jZkWJp)
 - [Join as many customer calls as you can](../../sales/onboarding/joining_customer_calls.md) in your first few weeks
 
 ### Get to know our tools
