@@ -10,7 +10,7 @@ If you are facilitating a retrospective for a project or release, follow these s
 
 ### Collect feedback
 
-Create a new Google Doc with an appropriate title (e.g. "3.2 retrospective") in the [Retrospectives folder](https://drive.google.com/drive/u/0/folders/1UiNZujRgsThPFkHoWJvymlsNDsBRtn6O) that is editable by everyone participating in the retrospective. Paste in the following agenda:
+Create a new Google Doc with an appropriate title (e.g. "3.2 retrospective") in the [Retrospectives folder](https://drive.google.com/drive/folders/1ch43AU8jiSTT_YL9tNfJOPMLD0pgqObb) that is editable by everyone participating in the retrospective. Paste in the following agenda:
 
 ```
 Purpose: [SHORT DESCRIPTION OF THE SCOPE AND PURPOSE OF THIS RETROSPECTIVE]
