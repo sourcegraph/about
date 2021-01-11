@@ -416,6 +416,19 @@
           39.08583712285596
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tom Ross"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2599945068359375,
+          53.884511629030904
+        ]
+      }
     }
   ]
 }
