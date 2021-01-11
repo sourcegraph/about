@@ -571,3 +571,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [abschu](https://github.com/abschu)
 - [andy@sourcegraph.com](mailto:andy@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/andy-schumeister/)
 - Andy lives in Minneapolis, MN with his husband and daughter. After spending nearly a decade in the Bay Area, he decided he was ready for freezing winters again. Andy worked at General Mills and Google before getting his MBA at Stanford. From there, he joined Segment where he fell in love with marketing technical products. In his free time, Andy loves spending time with his family, being active/working out, and eating Sour Patch Kids.
+
+## Tom Ross (he/him)
+
+- Software Engineer
+- York, North Yorkshire, UK 🇬🇧
+- GitHub: [umpox](https://github.com/umpox)
+- [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
+- Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
