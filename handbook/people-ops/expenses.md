@@ -26,6 +26,7 @@ We use Expensify for expense report submission and approval. You will receive an
 
 - Use the date of purchase (not the date of submission).
 - Add a description of your expense in the designated field. 
+- Submit the report to `noemi@sourcegraph.com`
 
 
 ### When submitting an expense via Expensify
