@@ -46,4 +46,4 @@ Also see [internal infrasturcture](./internal_infrastructure.md) and [tools](./t
 
 ## Dhall
 
-**Use cases:** Providing configuration for our deployment supported deployment types.
+**Use cases:** Providing configuration for our deployment-supported deployment types ([work in progress](https://github.com/orgs/sourcegraph/projects/71)).
