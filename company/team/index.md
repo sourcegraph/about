@@ -579,3 +579,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [umpox](https://github.com/umpox)
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
 - Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
+
+## Greg Bastis
+
