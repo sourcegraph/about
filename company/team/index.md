@@ -269,7 +269,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Engineering Manager
 - Palma de Mallorca, Balearic Islands, Spain, 🇪🇸
-- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [LinkedIn](https://linkedin.com/in/pecig), [pecigonzalo](https://github.com/pecigonzalo), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
+- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [pecigonzalo](https://github.com/pecigonzalo), [LinkedIn](https://linkedin.com/in/pecig), [manager docs](gonza.md), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
   gone down the tech rabbit hole and learned programming languages 🤓.
 
@@ -432,7 +432,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Software Engineer
 - Peckham, London, UK 🇬🇧
 - GitHub: arussellsaw
-- [alex@sourcegraph.com](mailto:alex@sourcegraph.com), [@arussellsaw](https://twitter.com/arussellsaw) 
+- [alex@sourcegraph.com](mailto:alex@sourcegraph.com), [@arussellsaw](https://twitter.com/arussellsaw)
 - Alex lives in Southeast London with his partner Rebecca (a chef), with their cat and dog (Gillian and Dustin). Before Sourcegraph he was building a bank at Monzo. In their free time they enjoy eating too much and drinking natural wines, as well as cooking all sorts of nonsense. He is also a serial project starter-but-not-finisher and you can find some of his fine unfinished work here: https://books.russellsaw.io https://news.russellsaw.io https://yaas.cat, he's also learning to make video games but isn't very good yet.
 
 ## Jean du Plessis (he/him)
@@ -451,7 +451,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [eli@sourcegraph.com](mailto:eli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eli-rothschild-b922824a/)
 - Eli was raised in Baltimore, MD, has been in New York City since 2007 (resided in 4 of the 5 boroughs), and recently joined the unofficial 6th borough of NYC, Boca Raton, FL. He has been in SaaS sales with early stage to high growth companies for a majority of his professional career. Prior to joining Sourcegraph, Eli was an Enterprise Account Executive at Segment, and previously at Mixpanel during similar stages of company growth. When not listening to the latest tech and business podcasts, Eli is a student of U.S and World history, enjoys playing chess, following his favorite sports teams, and traveling with his wife.
 
-## Josh Saunders 
+## Josh Saunders
 
 - Customer Engineer
 - Napa, CA, USA 🇺🇸
@@ -461,7 +461,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Owen Convey (he/him)
 
 - Engineering Manager
-- Barcelona, Spain 🇪🇸 
+- Barcelona, Spain 🇪🇸
 - Github: [scalabilitysolved](https://github.com/scalabilitysolved)
 - [oconvey@sourcegraph.com](mailto:oconvey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/owenconvey/)
 - Owen was born and raised in England and has been residing in Barcelona since 2012.  He spends a lot of time watching Rugby, playing with his young daughter and tinkering with his laptop.  Prior to Sourcegraph, he was a manager at Help Scout and loves empowering and motivating autonomous engineering teams.  His Achilles' heel is most definitely pizza.
@@ -472,14 +472,14 @@ To add yourself to this page, copy the following template, paste it at the end o
 - San Francisco, CA, US 🇺🇸
 - GitHub: [mcmillennick](https://github.com/mcmillennick)
 - [nmcmillen@sourcegraph.com](mailto:nmcmillen@sourcegraph.com)
-- Nick was born and raised in the Bay Area but moved to San Francisco in 2011. Before Sourcegraph he worked at Sepialine as well as some early stage startups. In his free time he's an avid maker who loves working on props from movies and tv (ask him about 3d printing or laser cutting). He also obesses about all things space and has way too much NASA merch. 
+- Nick was born and raised in the Bay Area but moved to San Francisco in 2011. Before Sourcegraph he worked at Sepialine as well as some early stage startups. In his free time he's an avid maker who loves working on props from movies and tv (ask him about 3d printing or laser cutting). He also obesses about all things space and has way too much NASA merch.
 
 ## Virginia Ulrich (she/her)
 
 - Head of Customer Support
 - Portland, Oregon, United States 🇺🇸
 - GitHub: virginiaulrich
-- [virginia@sourcegraph.com](mailto:virginia@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/virginiaulrich/) 
+- [virginia@sourcegraph.com](mailto:virginia@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/virginiaulrich/)
 - Name pronunciation: vr ji nyuh  oo l ri ch
 - Virginia lives with her partner (Vinh) and two cats, Little Miss Gable (tuxedo) and Hercules Mulligan (orange tabby). She derives joy from the tiny beautiful moments of human connection, hikes across the city and out in nature, and cooking for others. She studied literature and discovered her love of computer science quite by accident. With many years in customer service in various forms, Virginia can geek out for hours about the philosophy of 👍 customer support, the importance of compassion > empathy, and all things involving people helping other people.
 
@@ -489,7 +489,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Asheville, North Carolina, United States 🇺🇸
 - GitHub: spc74
 - [scott@sourcegraph.com](mailto:scott@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/scottpcampbell/)
-- Name pronunciation:  	s k AH t   k ae m b u hl 
+- Name pronunciation:  	s k AH t   k ae m b u hl
 - Scott lives in Asheville, NC with his wife and youngest daughter.  He has two other older children that are in college and graduated from college, respectively. He's had a long career in engineering and sales capacities with various software companies, large and small.  He possesses a natural curiousity to deeply understand his customer's challenges and help them apply technology to materially impact their business.  Outside of work, Scott enjoys nearly any activity involving water or mountains, including snowboarding, hiking, biking and wake surfing.  He also enjoys rooting for his alma mater Texas A&M Aggies football team, landscaping and traveling to explore new parts of the world.
 
 ## Tommy O Donnell (he/him)
@@ -537,7 +537,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Quincy, MA
 - GitHub: Hannah-Sourcegraph
 - [hannah@sourcegraph.com](mailto:hannah@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/hannah-freilich-5ba30780/)
-- Hannah was born and raised in CT, but has been living in and around Boston for the past 15 years.  Formerly a public school teacher, Hannah became inspired by entreprenuership and decided to pursue a career in tech sales at a small startup.  In her free time, she enjoys spending time with family and friends, listening to music, cooking, traveling and enjoying the outdoors. 
+- Hannah was born and raised in CT, but has been living in and around Boston for the past 15 years.  Formerly a public school teacher, Hannah became inspired by entreprenuership and decided to pursue a career in tech sales at a small startup.  In her free time, she enjoys spending time with family and friends, listening to music, cooking, traveling and enjoying the outdoors.
 
 ## Emily Chapman (she/her)
 
