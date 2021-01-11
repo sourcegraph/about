@@ -46,6 +46,8 @@ We have a 1hr sync every Monday at 9:30am PT.
 
 ### Weekly updates
 
+**Goal:** Increase awareness of each team's progress, tie progress to larger company goals, and communicate it across the organization.
+
 Product managers (or engineering managers for teams that don't have a PM) send an update to [engineering-leadership-status@sourcegraph.com](https://groups.google.com/a/sourcegraph.com/g/engineering-leadership-status) every Friday by 1PM [PT](https://time.is/PT), or at EOD Thursday if you don't work on Friday. Delegate to someone else on your team to send the update when you are on vacation.
 
 Anyone at the company can join the group to subscribe to these updates, but your primary audience is your manager (VP Eng and VP Product) and your peers (EMs/PMs).
