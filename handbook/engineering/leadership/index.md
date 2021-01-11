@@ -57,7 +57,7 @@ Try to answer the following questions for each goal that your team is working on
 - What important things happened last week (for example: changes in important metrics, contact with customers, feedback collected, things shipped)?
 - What are the plans for this week?
 - What should my peer-team and manager be aware of?
-- Write one sentence that highlights on thing the team made progress on this week (can include an optional screenshot) that the VP Eng or VP Prodect can share to the entire company at company meeting. This progress should be framed in a way that is understandable by anyone at the company. It is ok if you don't have a highlight like this every week, but not having something two weeks in a row will raise questions.
+- Write one sentence that highlights one thing the team made progress on this week (can include an optional screenshot) that the VP Eng or VP Product can share to the entire company at company meeting. This progress should be framed in a way that is understandable by anyone at the company. It is okay if you don't have a highlight like this every week, but not having something two weeks in a row will raise questions.
 
 The subject of the email should contain the date the update is being sent (e.g. "Search update 2020-10-14") so each weekly update starts a distinct email thread (otherwise they get grouped together in the Google Groups UI).
 
