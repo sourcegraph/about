@@ -579,3 +579,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [umpox](https://github.com/umpox)
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
 - Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
+
+## Seth Hoover (he/him)
+
+- Senior Salesforce Administrator
+- Menifee, CA, USA 🇺🇸
+- GitHub: [seth-sourcegraph](https://github.com/seth-sourcegraph)
+- [seth@sourcegraph.com](mailto:seth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sethhoover)
+- Seth lives in Menifee, CA with his wife, three dogs, two cats, and a horse (the horse actually has an "apartment" at a nearby equestrian facility). He has been working on the Salesforce.com platform for more than 13 years. He started out working as a member of Salesforce Support prior to moving into consulting. In his free time, he enjoys martial arts, paintball, airsoft, offroading and ATVs, movies and reading.
