@@ -8,7 +8,7 @@ The conclusion of every project should include analysis of performance. Below is
 
 **Author**: Eric Brody-Moore
 
-**Overview**: A deep-dive into what actions lead to Cloud retention. The [full slide deck](https://docs.google.com/presentation/d/1JM-FEFFAwHNfpPvx0bvAl8yyLYIok61pe_idsk4EofE/edit#slide=id.p) is available on Google Drive
+**Overview**: A deep-dive into what actions lead to Cloud retention. The [full slide deck](https://docs.google.com/presentation/d/1JM-FEFFAwHNfpPvx0bvAl8yyLYIok61pe_idsk4EofE/edit#slide=id.p) is available on Google Drive.
 
 ### Cloud retention  
 
@@ -79,4 +79,5 @@ _Conclusion_: P50/90/99 aren’t really helpful; we need to change how we approa
 
 - Going forward, we should setup a system that runs test queries multiple times per day on a large instance (e.g. Cloud when we hit more repositories), and these queries should be based on customer use cases.
 
+## References
 [N0]: https://docs.google.com/document/d/1iMlVh_Wm47v4YRpEvazrC5lmbJLkXwlGAEelTCqIx5Q/edit 
