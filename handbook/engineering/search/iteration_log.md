@@ -37,7 +37,7 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
-### Exhaustive Search
+### Search rules
 - **Owner(s):** Rijnard
 - **Outcomes:**
     - RFC published.
