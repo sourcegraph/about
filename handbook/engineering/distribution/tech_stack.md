@@ -1,6 +1,6 @@
 # Distribution tech stack
 
-This document lists the Distribution team's technologies and best practices for each within the Distribution team.
+This document lists the technologies used by the Distribution team, what they are used for, and best practices for each within Distribution.
 
 Also see [internal infrasturcture](./internal_infrastructure.md) and [tools](./tools/index.md) for specific infrastructure and tools.
 
