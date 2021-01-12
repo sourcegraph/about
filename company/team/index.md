@@ -579,3 +579,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [umpox](https://github.com/umpox)
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
 - Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
+
+## Felipe Janer (he/him)
+
+- Software Engineer
+- Cali, Colombia 🇨🇴
+- GitHub: [5h1rU](https://github.com/5h1rU)
+- [felipe@sourcegraph.com](mailto:felipe@sourcegraph.com)
+- [name pronunciation](http://ipa-reader.xyz/?text=%2Ffeˈlipe%2F&voice=Joey) 🔊
+- Felipe lives in Cali, Colombia. He worked remotely for several New York based companies for almost eight years. This experience allowed him to build products from the ground, take critical technical decisions, lead projects, code a lot, and learn in the process. Outside of work, he loves to work out and watch every America de Cali soccer match.
