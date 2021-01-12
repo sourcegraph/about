@@ -82,7 +82,7 @@ We use third-party applications such as Google Cloud Platform, Honeycomb, and mo
 
 We use third-party applications such as Stripe and Xero to manage corporate billing and invoicing. These companies provide further information about their own privacy practices on their websites.
 
-We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third party tracking and online advertising”](#third-party-tracking-and-online-advertising) below.
+We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third party tracking and online advertising”](#Third-Party-Tracking-and-Online-Advertising) below.
 
 <span style="color:#b200f8;">
 
@@ -118,7 +118,11 @@ We may also aggregate or otherwise strip data of all personally identifying char
 
 Any information or content that you voluntarily disclose for posting to the Website becomes available to the public, as controlled by any applicable privacy settings. If you remove information or content that you posted to the Website, copies may remain viewable in cached and archived pages of the Website, or if other Users have copied or saved that information.
 
-### Third Party Tracking and Online Advertising
+<span style="color:#b200f8;">
+
+## Third Party Tracking and Online Advertising
+
+</span>
 
 We participate in interest-based advertising and use third party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third party online advertising networks, social media companies, and other third party services, to collect information about your use of our Service over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use. Typically, though not always, the information used for interest-based advertising is collected through cookies or similar tracking technologies. We and our third party partners use this information to make the advertisements you see online more relevant to your interests, as well as to provide advertising-related services such as reporting, attribution, analytics and market research.
 
