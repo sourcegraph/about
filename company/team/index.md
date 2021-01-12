@@ -580,6 +580,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
 - Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
 
+## Greg Bastis (he/him)
+
+- VP Sales, Western Region
+- San Francisco, CA, :us:
+- GitHub: gb1228
+- [gb@sourcegraph.com](mailto:gb@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/gregbastis/)
+- Greg (“GB” to limit confusion with Sourcegraph’s first Gregg, Stone) lives San Francisco’s Outer Sunset neighborhood with his wife, Brenda, who he met working at Boulder, Colorado’s landmark The Sink Bar & Restaurant in 2005. He first moved to San Francisco in 2008 for a job with Salesforce, before heading over to Optimizely where he spent 6 years helping enterprise Product & Engineering teams deliver exceptional digital experiences through Full Stack experimentation. When not working, you can find GB on his 90’s era steel bicycles, exploring all that Northern California has to offer (usually wearing lots and lots of pink).
+
+
 ## Seth Hoover (he/him)
 
 - Senior Salesforce Administrator
