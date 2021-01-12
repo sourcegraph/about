@@ -49,7 +49,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 <div
                                     className={`collapse navbar-collapse justify-content-end ${
                                         this.state.isOpen ? 'show' : ''
-                                    }`}
+                                        }`}
                                     id="navcol-1"
                                 >
                                     <ul className="nav navbar-nav d-flex w-100">
@@ -84,7 +84,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             <a
                                                 className="header__nav-link nav-link"
                                                 href="https://sourcegraph.com/sign-in"
-                                                title="For public code only on Sourcegraph.com"
+                                                title="Search public code with Sourcegraph Cloud"
                                             >
                                                 Sign in
                                             </a>
@@ -93,7 +93,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             <Link
                                                 className="header__nav-link nav-link btn btn-outline-primary"
                                                 to="/get-started"
-                                                title="For public code only on Sourcegraph.com"
+                                                title="Get started with Sourcegraph"
                                             >
                                                 Get started
                                             </Link>
