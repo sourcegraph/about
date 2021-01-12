@@ -112,7 +112,7 @@ td {
 ### Reporting
 | EM expectations | PM expectations |
 | --- | --- |
-| - Provide weekly status report to engineering leadership | - Look over weekly update by EOD [the day before it gets sent] and supplement any info |
+| - Provide weekly status report to engineering leadership | - Provide weekly progress highlight to share at company meeting <br> - Look over weekly update by EOD [the day before it gets sent] and supplement any info |
 <br/>
 
 ### Career development and performance management
