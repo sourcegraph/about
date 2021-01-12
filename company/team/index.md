@@ -579,3 +579,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [umpox](https://github.com/umpox)
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
 - Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
+
+## Dan Braun (he/him)
+
+- Account Executive
+- Long Island, NY
+- GitHub: [dpbraun](https://github.com/dpbraun)
+- [dbraun@sourcegraph.com](mailto:dbraun@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/daniel-braun-27079a56)
+- Dan lives in Long Island, NY with his wife Stephanie and his six year-old son James. Dan began his sales career in Financial Services, working for Met Life and JPMorgan Chase. In 2012, Dan began his IT sales career with CA Technologies, then joined AppDynamics where he helped contribute to the succes that eventually led to the historic acquisiiton by Cisco. Dan is a longtime (and long-suffering!) NY Mets and NY Jets fan, always hopeful that "there's always next year!" Outside of work, you can find Dan on a local golf course, at the beach or playing mini golf or go-karting with his son. 
