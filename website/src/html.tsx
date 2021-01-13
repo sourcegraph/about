@@ -32,12 +32,14 @@ export default class HTML extends React.Component<HtmlProps> {
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
                     />
+                    {/*  HubSpot tracking code */}
                     <script
                         type="text/javascript"
                         id="hs-script-loader"
                         async={true}
                         defer={true}
                         src="//js.hs-scripts.com/2762526.js"
+                        data-cookieconsent="marketing"
                     />
                     <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
                     {/*  Google Tag Manager */}
