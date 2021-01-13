@@ -22,7 +22,7 @@ The Customer Engineering team partners with the [Sales team] (../sales/index.md)
   * [Guide to demoing the Campaigns feature](https://drive.google.com/drive/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn) (video recording)
     * [Slides](https://docs.google.com/presentation/d/1niZBMhHKWJT1-n_ExSbYIRD51vcubrWwQm-Tc5EZo8s/edit#slide=id.g7d2aea8729_0_0)
     * [Campaign demo and training materials](https://docs.google.com/document/d/1xQxhdGaudydOn5nBGIG91F6Z4VR4NwBfuKFvgbmCjJo/edit?usp=drive_web&ouid=107037782400977645523)
-
+  * [Troubleshooting playbooks](https://about.sourcegraph.com/handbook/engineering/incidents/playbooks)
 
 ## Goals
 
