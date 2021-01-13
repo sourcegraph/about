@@ -29,7 +29,7 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 1. 🔄 Sourcegraph Cloud can auto-configure precise code intelligence for C++ repositories that use cmake as a build system. 
     - 🔄 Auto-index 5 repositories on Sourcegraph Cloud that use cmake as a build system
-    - Auto-detect 5 common cmake project configurations in the auto-indexer
+    - Add inference rules for cmake projects and have at least 5 repositories fully auto-indexed on Cloud
 
 1. Sourcegraph Cloud can auto-configure precise code intelligence for C++ repositories that use Bazel as a build system.
     - Support Bazel projects in lsif-clang
