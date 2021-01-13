@@ -612,3 +612,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [felipe@sourcegraph.com](mailto:felipe@sourcegraph.com)
 - [name pronunciation](http://ipa-reader.xyz/?text=%2Ffeˈlipe%2F&voice=Joey) 🔊
 - Felipe lives in Cali, Colombia. He worked remotely for several New York based companies for almost eight years. This experience allowed him to build products from the ground, take critical technical decisions, lead projects, code a lot, and learn in the process. Outside of work, he loves to work out and watch every America de Cali soccer match.
+
+## Malo Marrec (he/him)
+- Product Manager, Campaigns
+- Paris, France 🇫🇷
+- [Linkedin](https://www.linkedin.com/in/malo-marrec)
+- [malo@sourcegraph.com](mailto:malo@sourcegraph.com)
+- Malo lives in Paris, France after spending some time in the Bay Area. Priori to Sourcegraph, he bounced around a few early stage startups building infrastucture and developer tools. Malo graduated with an MS from Stanford, and an MS from Ecole Centrale Paris. Outside of work, he kite surfs and reads a ton of books.
