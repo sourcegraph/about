@@ -596,3 +596,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [seth-sourcegraph](https://github.com/seth-sourcegraph)
 - [seth@sourcegraph.com](mailto:seth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sethhoover)
 - Seth lives in Menifee, CA with his wife, three dogs, two cats, and a horse (the horse actually has an "apartment" at a nearby equestrian facility). He has been working on the Salesforce.com platform for more than 13 years. He started out working as a member of Salesforce Support prior to moving into consulting. In his free time, he enjoys martial arts, paintball, airsoft, offroading and ATVs, movies and reading.
+
+## Ólafur Páll Geirsson (he/him)
+
+- Software Engineer, Code Intelligence
+- Drøbak, Norway 🇳🇴
+- [olafurpg@sourcegraph.com](mailto:olafurpg@sourcegraph.com), [GitHub](https://github.com/olafurpg), [Twitter](https://twitter.com/olafurpg), [LinkedIn](https://linkedin.com/in/olafurpg).
+- Olaf is an Icelander who was born in Sweden and lives in Norway with his wife who he met at a sauna in Finland. Prior to Sourcegraph, Olaf worked on Scala developer tooling such as Scalafmt (code formatter), Scalafix (refactoring and linting tool), Metals (language server), BSP (Build Server Protocol) and SemanticDB (data model about code). In his spare time, Olaf likes to make delicious food and run in the woods.

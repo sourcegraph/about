@@ -429,6 +429,19 @@
           53.884511629030904
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ólafur Páll Geirsson"
+      },
+      "geometry": {
+        "type": "Point",
+         "coordinates": [
+           10.777587890625,
+           59.90133567536662
+        ]
+      }
     }
   ]
 }
