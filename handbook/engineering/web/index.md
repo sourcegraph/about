@@ -18,8 +18,8 @@ This is a large ownership area, so the team creates a focused plan each iteratio
   - [Felix Becker](../../../company/team/index.md#felix-becker)
   - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  - [Tom Ross](../../../company/team/index.md##tom-ross-he-him)
-  - [Felipe Janer](../../../company/team/index.md##felipe-janer-he-him)
+  - [Tom Ross](../../../company/team/index.md#tom-ross-he-him)
+  - [Felipe Janer](../../../company/team/index.md#felipe-janer-he-him)
 
 _* Joel is the acting PM for this team until we are able to hire a dedicated PM for it. Once that happens, he will focus entirely on code insights._  
 
