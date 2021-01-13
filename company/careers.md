@@ -8,6 +8,7 @@ We're hiring! Check out our open positions:
 
 ### Engineering
 
+- [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
 - [Engineering Manager - Cloud Application and Core Services](../handbook/engineering/hiring/engineering-manager-cloud.md)
 - [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)

@@ -580,6 +580,30 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
 - Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
 
+## Greg Bastis (he/him)
+
+- VP Sales, Western Region
+- San Francisco, CA, :us:
+- GitHub: gb1228
+- [gb@sourcegraph.com](mailto:gb@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/gregbastis/)
+- Greg (“GB” to limit confusion with Sourcegraph’s first Gregg, Stone) lives San Francisco’s Outer Sunset neighborhood with his wife, Brenda, who he met working at Boulder, Colorado’s landmark The Sink Bar & Restaurant in 2005. He first moved to San Francisco in 2008 for a job with Salesforce, before heading over to Optimizely where he spent 6 years helping enterprise Product & Engineering teams deliver exceptional digital experiences through Full Stack experimentation. When not working, you can find GB on his 90’s era steel bicycles, exploring all that Northern California has to offer (usually wearing lots and lots of pink).
+
+
+## Seth Hoover (he/him)
+
+- Senior Salesforce Administrator
+- Menifee, CA, USA 🇺🇸
+- GitHub: [seth-sourcegraph](https://github.com/seth-sourcegraph)
+- [seth@sourcegraph.com](mailto:seth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sethhoover)
+- Seth lives in Menifee, CA with his wife, three dogs, two cats, and a horse (the horse actually has an "apartment" at a nearby equestrian facility). He has been working on the Salesforce.com platform for more than 13 years. He started out working as a member of Salesforce Support prior to moving into consulting. In his free time, he enjoys martial arts, paintball, airsoft, offroading and ATVs, movies and reading.
+
+## Ólafur Páll Geirsson (he/him)
+
+- Software Engineer, Code Intelligence
+- Drøbak, Norway 🇳🇴
+- [olafurpg@sourcegraph.com](mailto:olafurpg@sourcegraph.com), [GitHub](https://github.com/olafurpg), [Twitter](https://twitter.com/olafurpg), [LinkedIn](https://linkedin.com/in/olafurpg).
+- Olaf is an Icelander who was born in Sweden and lives in Norway with his wife who he met at a sauna in Finland. Prior to Sourcegraph, Olaf worked on Scala developer tooling such as Scalafmt (code formatter), Scalafix (refactoring and linting tool), Metals (language server), BSP (Build Server Protocol) and SemanticDB (data model about code). In his spare time, Olaf likes to make delicious food and run in the woods.
+
 ## Felipe Janer (he/him)
 
 - Software Engineer
