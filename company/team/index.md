@@ -603,3 +603,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Drøbak, Norway 🇳🇴
 - [olafurpg@sourcegraph.com](mailto:olafurpg@sourcegraph.com), [GitHub](https://github.com/olafurpg), [Twitter](https://twitter.com/olafurpg), [LinkedIn](https://linkedin.com/in/olafurpg).
 - Olaf is an Icelander who was born in Sweden and lives in Norway with his wife who he met at a sauna in Finland. Prior to Sourcegraph, Olaf worked on Scala developer tooling such as Scalafmt (code formatter), Scalafix (refactoring and linting tool), Metals (language server), BSP (Build Server Protocol) and SemanticDB (data model about code). In his spare time, Olaf likes to make delicious food and run in the woods.
+
+## Felipe Janer (he/him)
+
+- Software Engineer
+- Cali, Colombia 🇨🇴
+- GitHub: [5h1rU](https://github.com/5h1rU)
+- [felipe@sourcegraph.com](mailto:felipe@sourcegraph.com)
+- [name pronunciation](http://ipa-reader.xyz/?text=%2Ffeˈlipe%2F&voice=Joey) 🔊
+- Felipe lives in Cali, Colombia. He worked remotely for several New York based companies for almost eight years. This experience allowed him to build products from the ground, take critical technical decisions, lead projects, code a lot, and learn in the process. Outside of work, he loves to work out and watch every America de Cali soccer match.
