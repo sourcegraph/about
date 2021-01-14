@@ -36,7 +36,6 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Auto-index 5 repositories on Sourcegraph Cloud that use Bazel as a build system
     - Add inference rules for Bazel projects and have at least 5 repositories fully auto-indexed on Cloud
 
-
 1. Sourcegraph Cloud has up-to-date precise code intelligence for C++ repositories that exceed 1mil SLOC.
     - Reduce lsif-clang memory usage
     - Auto-index 5 repositories on Sourcegraph Cloud that exceed 1mil SLOC
@@ -52,6 +51,9 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 ## Roadmap
 
 The code intel team roadmap is tracked in [productboard](https://sourcegraph.productboard.com/roadmap/2288108-code-intel).
+
+At a glance roadmap as of 2021-01-14:
+![2021-01-14](https://sourcegraphstatic.com/handbook/product-roadmaps/2021-01-14CodeIntelRoadmap.png)
 
 [N0]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.63lmpljtve9f
 [N1]: https://docs.google.com/document/d/1T4KPRiRFVoAG2-yhokdxlKjozVflUOSH1k9X68PmrVs/edit#bookmark=id.lgv97p81ib7i
