@@ -597,7 +597,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [seth@sourcegraph.com](mailto:seth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sethhoover)
 - Seth lives in Menifee, CA with his wife, three dogs, two cats, and a horse (the horse actually has an "apartment" at a nearby equestrian facility). He has been working on the Salesforce.com platform for more than 13 years. He started out working as a member of Salesforce Support prior to moving into consulting. In his free time, he enjoys martial arts, paintball, airsoft, offroading and ATVs, movies and reading.
 
-## Ólafur Páll Geirsson (he/him)
+## Ólafur Páll Geirsson (he/him) <a name="olafurpg"></a>
 
 - Software Engineer, Code Intelligence
 - Drøbak, Norway 🇳🇴
