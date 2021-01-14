@@ -115,7 +115,6 @@ The Campaigns team is the current owner of [src-cli](https://github.com/sourcegr
 - [Campaign's Drive Folder (private)](https://drive.google.com/drive/u/0/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn)
 - [Campaign's Product Marketing Brief](https://docs.google.com/document/d/1yQpCKF50gx8_T-KDnU4s9TjW6fZpMUfWLF2h4xSM8jk)
 
-
 ## Growth plan
 
 _Updated 2020-12-09_
