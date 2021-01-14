@@ -44,7 +44,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-1. You [apply here](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57/apply).
+1. You [apply here](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a/apply).
 1. We set up a 30 minute call to chat with you about Sourcegraph to find out what you are looking for in your next role.
 1. We give you a small case study project to see how you would approach the job at Sourcegraph.
 1. We schedule a few more hours of interviews (with a teammate in Customer Engineering, a teammate in Engineering, our (interim) VP of Customer Engineering, and our co-founder/CTO).
@@ -53,6 +53,6 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-**[Click here to apply](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57/apply)**
+**[Click here to apply](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a/apply)**
 
 Go back to the [careers page](../../../company/careers.md) for all open positions.
