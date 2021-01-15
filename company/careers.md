@@ -15,6 +15,7 @@ We're hiring! Check out our open positions:
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
 - [Software Engineer - Security](../handbook/engineering/hiring/software-engineer-security.md)
+- [Software Engineer - Campaigns - Full Stack / Frontend](../handbook/engineering/hiring/software-engineer-campaigns-full-stack-front-end.md)
 
 ### Product
 
