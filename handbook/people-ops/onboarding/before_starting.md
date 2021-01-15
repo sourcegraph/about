@@ -35,7 +35,7 @@ Recent and planned improvements are noted in _italics_ in the list below.
   - Zoom
   - Lever
   - Lattice
-- New hires are assigned an onboarding buddy by their manager (People Ops will reach out to managers via Slack to confirm onboarding buddy)
+- Each new teammate is assigned an onboarding buddy by their manager (People Ops will reach out to managers via Slack to confirm the onboarding buddy)
 
 ### The week of onboarding
 
