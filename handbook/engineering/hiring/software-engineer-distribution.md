@@ -32,7 +32,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - We will give you an overview of the exercise in advance.
    - We will send you the details at a time of your choosing and you will have up to 2 hours to work on each of the two exercises.
    - You will be able to use your own development environment and lookup documentation on the internet.
-2. We schedule 4 hours of remote interviews over video chat across multiple days.
+1. We schedule 4 hours of remote interviews over video chat across multiple days.
    - **Architecture:** We give you an open problem statement and you walk us through how you would solve the problem.
    - **Technical experience:** We ask you about your past work and accomplishments.
    - **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
