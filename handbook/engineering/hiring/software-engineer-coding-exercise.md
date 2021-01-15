@@ -74,7 +74,7 @@ We designed this exercise to measure your skills at integrating build and deploy
 - You should have a recent version of Go (≥ 1.13) installed on your computer.
 - You should have a simple Kubernetes local cluster ([kind](https://kind.sigs.k8s.io/), [k3d](https://github.com/rancher/k3d), [minikube](https://minikube.sigs.k8s.io/docs/start/))
 - You can look up documentation on the internet while you are coding.
-- After two hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
+- After three hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
 
 If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
 
