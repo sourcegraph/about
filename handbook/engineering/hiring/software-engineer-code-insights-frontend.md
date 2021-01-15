@@ -62,7 +62,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 ## Interview process
 
-<!-- 1. You [apply here](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb/apply). -->
+1. You [apply here](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb/apply).
 1. The **Hiring Manager** reviews all the information you provided on your application to determine if you meet our qualifications for this role (if there is another open role we think you would be better qualified for, we will let you know).
 1. A **Recruiter** sets up a 30 minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. We set up a 45 minutes interview with the **Hiring Manager**, who will tell you more about the available role in the team. They will ask you about your past work experience, accomplishments and assess your suitability for the role and alignment with [Sourcegraph's values](../../../company/values.md).
@@ -104,6 +104,6 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-<!-- **[Click here to apply](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb/apply)** -->
+**[Click here to apply](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb/apply)**
 
 Go back to the [careers page](../../../company/careers.md) for all open positions or read more about our [hiring processes](../../people-ops/hiring/index.md).
