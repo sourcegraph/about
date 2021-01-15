@@ -49,8 +49,9 @@ When I create a campaign to make large-scale code changes I want to _focus on th
 
 * Each day, Slack reminds us to do our text check-in, which consists of a *short* message (it shouldn't take longer than a minute to write) in the reminder's thread. This should be a recap of what we have finished that day.
 
-* On Tuesdays, each engineer posts a status update in the current tracking issue with any additional info regarding what they accomplished in the previous week that wasn't captured in their daily status updates, as well as what they intend to accomplish in the coming week. The EM then rolls this up into a status update that is emailed to engineering leadership.
+* Each week, at 23:30 UTC on Thursdays, Slack reminds us to post our plans for the next week. This should consist of a short message (about a paragraph) in the reminder's thread covering our plans, and anything that they accomplished in the previous week that wasn't captured in their daily status updates. The PM then rolls this up into a status update that is emailed to engineering leadership.
   * Since most of the "what we accomplished" details have already been recorded in the daily Slack check-ins, it is not necessary for engineers to repeat any of those items. The status update could still include any additional info or color that the engineer wishes to record (if any), but would primarily be forward-looking.
+  * Responses should be posted when each of us are next working; people in incompatible time zones do not need to get up in the middle of the night to do this immediately!
 
 * One Big Thing: Each sprint, each engineer gets one big thing to work on — one significant chunk of work scoped to be doable in a single sprint (leaving some slack in the sprint for customer support and other unexpected issues). When it is completed, engineers will pull P0 items from [our planning project](https://github.com/orgs/sourcegraph/projects/119) into the current sprint to work on (or P1 if there are no P0s).
 
@@ -98,33 +99,22 @@ The private channel is for communications that would be of no interest to someon
 The Campaigns team is the current owner of [src-cli](https://github.com/sourcegraph/src-cli), due to the fact that most of the src-cli work in recent months has been related to Campaigns. We do not expect to be the permanent owners of src-cli; when another team becomes the main contributor, we will transfer ownership to them.
 
 ## Members
-
-- M.M. ([Product Manager](../../product/roles/product_manager.md), starting January 11). [Rob Rhyne](../../../company/team/index.md#rob-rhyne) is involved in the meantime.
+- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) acting Product Manager and Product Designer
+- [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) ([Product Manager](../../product/roles/product_manager.md)) (onboarding)
 - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager))
   - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
   - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
   - [Erik Seliger](../../../company/team/index.md#erik-seliger)
-  
-## Onboarding
-  
-We're excited to have you on the team! Your perspective as both a new user of the campaigns product and a new teammate is very valuable to us. Please keep notes on any issues you encounter as you are learning the product. We'll use those notes to improve the product and process.
 
-We've compiled the following list of resources to help you learn about the product, how it's sold and how to get started using it:
-
-- Read the product marketing document to understand the high level talking points and landscape surrounding campaigns
-- Watch a [recorded training session](https://chorus.ai/meeting/3C6D73BB499F41E9815AB540CFA54CBD?tab=summary)
-  - A less technical demo can be found [here](https://chorus.ai/meeting/D15E98AF1C434E41B47B7CA1B43BB30B?tab=summary) (demo starts at 8:17)
-- Watch the [demoing campaigns presentation](https://drive.google.com/drive/u/0/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn) to learn how we think about the unique selling points of the product and how to present them
-- Read the [campaigns product documentation](https://docs.sourcegraph.com/campaigns)
-  - Pay special attention to [how src excecutes a campaign spec](https://docs.sourcegraph.com/campaigns/explanations/how_src_executes_a_campaign_spec)
-  - Read the [quickstart](https://docs.sourcegraph.com/campaigns/quickstart) and create the hello world campaign
-- Review the [demoing campaigns document](https://docs.google.com/document/d/1xQxhdGaudydOn5nBGIG91F6Z4VR4NwBfuKFvgbmCjJo/edit) and consume the resources found there, then create a few campaigns in the demo
 
 ## Related links
 
 - [User-facing documentation](https://docs.sourcegraph.com/campaigns)
 - [Developer documentation](https://docs.sourcegraph.com/dev/background-information/campaigns)
-
+- [Onboarding](onboarding.md)
+- [Supporting Campaigns](supporting-campaigns.md)
+- [Campaign's Drive Folder (private)](https://drive.google.com/drive/u/0/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn)
+- [Campaign's Product Marketing Brief](https://docs.google.com/document/d/1yQpCKF50gx8_T-KDnU4s9TjW6fZpMUfWLF2h4xSM8jk)
 ## Growth plan
 
 _Updated 2020-12-09_
