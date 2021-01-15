@@ -38,7 +38,7 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
    - **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
    - **CTO:** We ask you about what motivates you to do your best work, and we tell you more about the vision for the company.
 1. We check your references.
-4. We make you a job offer.
+1. We make you a job offer.
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
