@@ -45,10 +45,6 @@ We're hiring! Check out our open positions:
 - [VP Talent](../handbook/talent/vp_talent.md)
 
 
-### CEO
-
-- [Executive Business Administrator](../handbook/ceo/executive_business_administrator_role.md)
-
 ## Apply
 
 Apply by following the directions in the job description.
