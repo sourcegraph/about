@@ -4,7 +4,7 @@ This is a breakdown of what new teammates (and hiring managers) can expect Peopl
 
 ## Future improvements
 
-It’s important to note that today’s onboarding procedures were created and built for a much smaller volume of people than we are currently onboarding. This page will outline the steps we are currently taking for each weekly cohort, but please keep in mind that many of these procedures and tools will be changing as we our first Onboarding and Training Manager starts. 
+It’s important to note that today’s onboarding procedures were created and built for a much smaller volume of people than we are currently onboarding. This page will outline the steps we are currently taking for each weekly cohort, but please keep in mind that many of these procedures and tools will be changing as our first Onboarding and Training Manager starts. 
 
 Recent and planned improvements are noted in _italics_ in the list below.
 
@@ -35,6 +35,7 @@ Recent and planned improvements are noted in _italics_ in the list below.
   - Zoom
   - Lever
   - Lattice
+- New hires are assigned an onboarding buddy by their manager (People Ops will reach out to managers via Slack to confirm onboarding buddy)
 
 ### The week of onboarding
 
