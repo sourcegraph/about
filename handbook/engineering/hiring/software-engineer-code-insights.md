@@ -86,21 +86,16 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
         - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
         - [Erik Seliger](../../../company/team/index.md#erik-seliger)
    - 1 hour **Team collaboration:** We ask you about how you work and communicate in a team setting, how you handle tricky situations, decisions you made, and what you'd do differently today.
-      - You will interview with one teammate from each of the following 2 lists
-         - **Engineer**:
-            - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
+      - You will interview with one person from each of these lists:
+         - **Product/design**
+            - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him)
+            - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
+            - Can backfill with any product manager, designer, or engineering manager.
+         - **Engineering management**
             - [Loïc Guychard](../../../company/team/index.md#lo%c3%afc-guychard)
             - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
-         - **Non-engineer**:
-            - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
-            - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her)
-            - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him)
-            - [María Craig](../../../company/team/index.md#mar%c3%ada-craig-she-her)
-            - [Eric Brody-Moore](../../../company/team/index.md#eric-brody-moore)
-            - [Jonah Dueck](../../../company/team/index.md#jonah-dueck-he-him)
-            - [Josh Saunders](../../../company/team/index.md#josh-saunders)
-            - [Nick McMillen](../../../company/team/index.md#nick-mcmillen-he-him)
-            - [Christine Lovett](../../../company/team/index.md#christine-lovett-she-her)
+            - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
+            -  Can backfill with any engineering manager.
    - 30 minutes [VP Engineering](../../../company/team/index.md#nick-snyder-he-him)
    - 30 minutes [CTO](../../../company/team/index.md#beyang-liu)
    - [30 minutes CEO](../../ceo/index.md#interviews-with-me)
