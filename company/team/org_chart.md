@@ -17,6 +17,7 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 ### [Search](../../handbook/engineering/search/index.md#members)
 ### [Security](../../handbook/engineering/security/index.md#members)
 ### [Web](../../handbook/engineering/web/index.md#members)
+### [Code Insights](../../handbook/engineering/code-insights/index.md)
 
 ## [Customer Engineering](../../handbook/ce/index.md#members)
 
