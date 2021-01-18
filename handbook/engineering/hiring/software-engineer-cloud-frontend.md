@@ -1,6 +1,6 @@
 # Software Engineer - Cloud - Frontend
 
-The [Cloud team](../cloud/index.md) is looking for an experienced frontend engineer who knows how to build intuitive user experiences to make the power of [Universal Code Search](https://about.sourcegraph.com/product) accessible to everyone on [sourcegraph.com](https://sourcegraph.com/). You will have a lot of ownership to solve tough technical and UX problems that will drive massive adoption of our product by developers all around the world.
+The [Cloud team](../cloud/index.md) is looking for a senior frontend engineer who knows how to build intuitive user experiences to make the power of [Universal Code Search](https://about.sourcegraph.com/product) accessible to everyone on [sourcegraph.com](https://sourcegraph.com/). You will have a lot of ownership to solve tough technical and UX problems that will drive massive adoption of our product by developers all around the world.
 
 ## About you
 
