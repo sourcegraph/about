@@ -10,7 +10,7 @@ We're hiring! Check out our open positions:
 
 - [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
 - [Engineering Manager - Cloud Application and Core Services](../handbook/engineering/hiring/engineering-manager-cloud.md)
-- [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
+- [Software Engineer - Cloud - Frontend](../handbook/engineering/hiring/software-engineer-cloud-frontend.md)
 - [Software Engineer - Code Insights - Frontend](../handbook/engineering/hiring/software-engineer-code-insights-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
@@ -45,7 +45,6 @@ We're hiring! Check out our open positions:
 - [Business Operations Analyst](../handbook/ops/roles/business_operations_analyst.md)
 - [Tech Ops Manager](../handbook/ops/roles/tech_operations_manager.md)
 - [VP Talent](../handbook/talent/vp_talent.md)
-
 
 ## Apply
 
