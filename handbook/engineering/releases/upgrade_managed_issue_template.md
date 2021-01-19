@@ -1,11 +1,11 @@
 <!--
-DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn release tracking-issue:create` from the
-`dev/release` directory in the main repository to create a release tracking issue, instead.
+DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn release tracking:issues` in the `sourcegraph/sourcegraph` repository.
 
 Arguments:
 - $MAJOR
 - $MINOR
 - $PATCH
+- $RELEASE_DATE
 - $ONE_WORKING_DAY_AFTER_RELEASE
 -->
 

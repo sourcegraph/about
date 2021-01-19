@@ -1,10 +1,12 @@
 <!--
-DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn release tracking-issue:create` in the main repository to create a release tracking issue, instead.
+DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn release tracking:issues` in the `sourcegraph/sourcegraph` repository.
 
 Arguments:
 - $MAJOR
 - $MINOR
+- $PATCH
 - $RELEASE_DATE
+- $ONE_WORKING_DAY_AFTER_RELEASE
 -->
 
 # $MAJOR.$MINOR release
@@ -96,11 +98,8 @@ Notify the next [release captain](https://about.sourcegraph.com/handbook/enginee
 - [ ] Ensure you have the latest version of the release tooling and configuration by checking out and updating `sourcegraph@main`.
 - [ ] Create release calendar events, tracking issue, and announcement for next release:
   ```sh
-  # Add calendar events and reminders for key dates in the release cycle
-  yarn run release tracking:release-timeline
-
-  # Create the release tracking issue (i.e., this issue)
-  yarn run release tracking:release-issue
+  yarn run release tracking:issues
+  yarn run release tracking:timeline
   ```
 - [ ] Close this issue.
 

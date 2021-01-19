@@ -1,11 +1,12 @@
 <!--
-DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn release tracking:patch-issue <version>` in the main repository to create a patch release issue, instead.
+DO NOTE COPY THIS ISSUE TEMPLATE MANUALLY. Use `yarn release tracking:issues` in the `sourcegraph/sourcegraph` repository.
 
 Arguments:
 - $MAJOR
 - $MINOR
 - $PATCH
 - $RELEASE_DATE
+- $ONE_WORKING_DAY_AFTER_RELEASE
 -->
 
 # $MAJOR.$MINOR.$PATCH patch release
