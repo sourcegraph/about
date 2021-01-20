@@ -119,7 +119,7 @@ We use the backlogs for tracking bugs, small features, and unplanned work. We do
 To add an issue, tag it `team/web` to notify the web team PM and put it in the "to triage" column of the board. Unless you're directly asked, only web team members should move issues out of the "to triage" column on the board. A web team member will confirm the issue is web team-related, and then move it to the appropriate column.
 
 #### Tracking Issues
-The web team makes use of [tracking issues](../tracking_issues.md) for tracking progress on the implementation of new features. When starting work on a new and significant feature, the web team should ensure that a tracking issue created appropriately.
+The web team makes use of [tracking issues](../tracking_issues.md) for tracking progress on the implementation of new features. When starting work on a new and significant feature, the web team should ensure that a tracking issue is created appropriately.
 
 #### Product Feedback
 
