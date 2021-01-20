@@ -14,29 +14,38 @@ To run this demo, you need:
 - At least one campaign configured on demo.sourcegraph.com
 - At least one monitor configured on demo.souircegraph.com
 
+**Note**: Depending on the nature of the demo and the amount of time you have, you may want to chop the Campaigns, Insights, and Monitoring content off and either shorten the demo or discuss in more detail how [Precise Code Intelligence](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence) works.
+
 ## Flow
 
+### Intros
+1. Introduce yourself and your role as the technical point of contact during the proof of concept phase and if they become a customer.
+2. Give a high-level outline of what the demo will cover: our search product in-depth; our extensions; and our campaigns, monitoring, and insights tools briefly.
+3. Mention that if anyone has questions about the last three, they can schedule a more in-depth meeting at a later date.
+4. Mention that you will be pausing for questions throughout and leave space for questions at the end.
+
 ### Search
-1. Introduce yourself and open sourcegraph.com/search. (In the future, we will use demo.sourcegraph.com, but currently most CEs use sourcegraph.com.) 
-2. Give a two-sentence summary of what Sourcegraph is. Highlight that it’s a Google-like experience and that this is an idea that’s already quite popular at Google and Facebook—our team aims to bring that same experience to everyone else.
-3. Frame the demo as being oriented around building a new auth service in the Sourcegraph codebase. Start with a broad search for `new auth provider` (literal search).
+1. Open sourcegraph.com/search. (In the future, we will use demo.sourcegraph.com, but currently most CEs use sourcegraph.com.) 
+2. Give a two-sentence summary of what Sourcegraph is. Highlight that it’s a Google-like experience and that this is an idea that’s already quite popular at Google and Facebook—our team aims to bring that same experience to everyone else. Not only do we help you find what you’re looking for, but we also help you better understand it.
+3. Frame the demo as being oriented around building a new auth flow in the Sourcegraph codebase—you're roleplaying as a new engineer who isn't super familiar with this code and hasn't built a new auth flow before. Start with a broad search for `new auth provider` (literal search).
 4. Explain the results you’re seeing—they’re coming from a variety of different repos, in different languages, because the Sourcegraph search experience is intended to be broad (unlike pulling a repo down locally and searching within it).
 5. Add `repo:^github\.com/sourcegraph/sourcegraph$` to your query. Explain the repo filters below the search box (we auto-suggest repos based on the results) and how it’s useful for when you as an engineer don’t know where the code you’re looking for is.
 6. Enable the regex search option and explain it and its [fuzzy matching](https://docs.sourcegraph.com/code_search/reference/queries#regular-expression-search) on whitespace (both because this is a useful feature and because if you don’t enable it you won’t get any results). 
 7. Highlight that you now have a much smaller set of results. 
 8. From there, discuss the auto-generated filters beneath the search bar. Demonstrate that you can click `lang:go` to limit to just Go files, which our backend is written in. Delete that and show that you can also type `lang:go` and have it auto-populate with suggestions. 
-9. Once you have those results, highlight the auto-suggested filter to remove test files. Apply it.
+9. Once you have those results, highlight the auto-suggested filter to remove test files (`-file:_test`). Apply it.
 10. At this point, scroll through the results to find `authz.go`. Open that file by clicking on the highlighted line number, and discuss how you can navigate directly to a particular line of code.
 11. Pause and ask if there are questions.
 12. From there, hover over the `NewAuthzProviders` function, and highlight the code intelligence features (you can see the definition and the structure of the function).
 13. Click on Go to definition, and show that it has navigated you to the function definition. Highlight that though we are searching one repo, this would work cross-repo as well.
-14. Enable git blame for the entire file. Discuss what the integration shows, and highlight that you can click into an associated commit and view that in Sourcegraph. Show that. 
-15. Navigate back to the `authz` file, and show the history feature. Highlight that this is useful to see how stable code is—is this buggy code being actively rewritten, or is this pretty stable? 
-16. Click on one of the PRs in the history view. Highlight the “view in code host” button, and click it to open the PR in Github.
-17. From Github, highlight that Sourcegraph’s browser extension allows you as a developer to view hover tool tips in the code host, allowing for informed code review, even if the change is large. 
-18. Find a function, hover over it in Github, and show that “go to definition” keeps you in Github.
-19. From there, highlight that the browser extension allows you to search using the `src` shortcut in the browser bar.
-20. Pause to ask if there are any questions.
+14. Discuss structural search. If you knew the name of the function, for example, you could have run a structural search to find it instead. Run a structural search for `repo:^github\.com/sourcegraph/sourcegraph lang:go func NewAuthzProviders(...) (...) {...}` instead. Highlight that unlike regexes, it's multiline by default.
+15. Open one of the results of the structural search tog et back to where you were. Enable git blame for the entire file. Discuss what the integration shows, and highlight that you can click into an associated commit and view that in Sourcegraph. Show that. 
+16. Navigate back to the `authz` file, and show the history feature. Highlight that this is useful to see how stable code is—is this buggy code being actively rewritten, or is this pretty stable? 
+17. Click on one of the PRs in the history view. Highlight the “view in code host” button, and click it to open the PR in Github.
+18. From Github, highlight that Sourcegraph’s browser extension allows you as a developer to view hover tool tips in the code host, allowing for informed code review, even if the change is large. 
+19. Find a function, hover over it in Github, and show that “go to definition” keeps you in Github.
+20. From there, highlight that the browser extension allows you to search using the `src` shortcut in the browser bar.
+21. Pause to ask if there are any questions.
 
 ### Extensions
 21. Return to Sourcegraph, and highlight the Open In Editor extension. Open the file in your editor to show that that looks like.
@@ -56,3 +65,6 @@ To run this demo, you need:
 31. Navigate back to demo.sourcegraph.com, and open the monitoring page. Give a two-sentence description of the feature, highlighting that it allows you to be alerted when new results for a particular query become available in your code base; highlight the utility for security concerns (not using an old library, for example).
 32. Create a new monitor, and quickly walk through setting it up. The contents are up to you; anything works so long as you can quickly build it on the fly.
 33. Pause and ask for final questions.
+
+### Outro
+34. Share your name again, and kick it back to the AE.
