@@ -90,7 +90,7 @@ Once there are no more release-blocking issues (as reported by the `release:stat
   yarn release release:close
   ```
 
-### Post-release
+## Post-release
 
 Notify the next [release captain](https://about.sourcegraph.com/handbook/engineering/releases#release-captain) that they are on duty for the next release. They should complete the steps in this section.
 
