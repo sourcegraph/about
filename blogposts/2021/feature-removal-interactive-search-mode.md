@@ -5,8 +5,7 @@ author: Sourcegraph
 authorUrl: https://about.sourcegraph.com
 publishDate: 2021-01-20T10:00-07:00
 tags: [blog]
-slug: the-blog-slug
-heroImage: /blog/thumbnail-image.jpg
+slug: feature-removal-interactive-search-mode
 published: true
 ---
 
