@@ -6,7 +6,7 @@ tags: [blog, release]
 slug: "release/3.24"
 published: true
 changelogItems:
-  - description: Added panels to the Sourcegraph monitoring dashboards
+  - description: Monitoring dashboards now include links to relevant documentation and annotation overlays for alerts and version changes.
     url: https://docs.sourcegraph.com/admin/observability/metrics#grafana
     category: Admin
   - description: Suggested filters in the search results page can now be scrolled.
