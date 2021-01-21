@@ -6,13 +6,13 @@ tags: [blog, release]
 slug: "release/3.24"
 published: true
 changelogItems:
-  - description: Monitoring dashboards now include links to relevant documentation and annotation overlays for alerts and version changes.
+  - description: "Monitoring dashboards now include links to relevant documentation and annotation overlays for alerts and version changes."
     url: https://docs.sourcegraph.com/admin/observability/metrics#grafana
     category: Admin
-  - description: Suggested filters in the search results page can now be scrolled.
+  - description: "Suggested filters in the search results page can now be scrolled."
     url: https://github.com/sourcegraph/sourcegraph/pull/17097
     category: Search
-  - description: Dashboard links included in monitoring alerts are now more specific.
+  - description: "Dashboard links included in monitoring alerts are now more specific."
     url: https://docs.sourcegraph.com/admin/observability/alerting
     category: Admin
   - description: "The `serviceType` field is now deprecated and will be removed completely in a future release. The `serviceKind` field of the `ExternalServiceKind` type has been added to `Repository.externalURLs` GraphQL API."
