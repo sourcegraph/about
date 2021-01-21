@@ -24,8 +24,8 @@ changelogItems:
   - description: "The endpoint for \"Open in Sourcegraph\" functionality in editor extensions now uses code host connection information to resolve the repository, which makes it more correct and respect the `repositoryPathPattern` setting."
     url: https://github.com/sourcegraph/sourcegraph/pull/16846
     category: Repositories
-  - description: "Interactive mode has now been removed."
-    url: https://github.com/sourcegraph/sourcegraph/pull/16868
+  - description: "Interactive search mode has now been removed."
+    url: https://about.sourcegraph.com/blog/feature-removal-interactive-search-mode/
     category: Search
 ---
 \* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
