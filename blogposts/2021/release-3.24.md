@@ -15,7 +15,7 @@ changelogItems:
   - description: Dashboard links included in monitoring alerts are now more specific.
     url: https://docs.sourcegraph.com/admin/observability/alerting
     category: Admin
-  - description: "Added `serviceKind` field of the `ExternalServiceKind` type to `Repository.externalURLs` GraphQL API, `serviceType` field is deprecated and will be removed in the future releases."
+  - description: "The `serviceType` field is now deprecated and will be removed completely in a future release. The `serviceKind` field of the `ExternalServiceKind` type has been added to `Repository.externalURLs` GraphQL API."
     url: https://github.com/sourcegraph/sourcegraph/issues/14979
     category: API
   - description: "The minimum Kubernetes version required to use the [Kubernetes deployment option](https://docs.sourcegraph.com/admin/install/kubernetes) is now v1.15 (released June 2019)."
