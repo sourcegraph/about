@@ -45,7 +45,7 @@ We will start by looking at our Kubernetes deployment and working on an easier u
   - ~~Move CI to a new GCP project.~~ Done: 3.21
   - ~~Move non-production deployments to separate projects.~~ Done: 3.21
   - ~~Create code to bootstrap new projects.~~ Done: 3.21
-  - Document project and folder usage guidelines.
+  - ~~Document project and folder usage guidelines.~~
   - ~~Set spending limits for dynamic environments.~~ Descoped
 
 ## Future goals
