@@ -12,7 +12,7 @@ changelogItems:
   - description: Suggested filters in the search results page can now be scrolled.
     url: https://github.com/sourcegraph/sourcegraph/pull/17097
     category: Search
-  - description: Dashboard links now included in monitoring alerts.
+  - description: Dashboard links included in monitoring alerts are now more specific.
     url: https://docs.sourcegraph.com/admin/observability/alerting
     category: Admin
   - description: "Added `serviceKind` field of the `ExternalServiceKind` type to `Repository.externalURLs` GraphQL API, `serviceType` field is deprecated and will be removed in the future releases."
