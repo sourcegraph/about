@@ -8,43 +8,39 @@ My personal site is [slack.org](https://slack.org).
 
 Everyone at Sourcegraph contributes to these top company goals, but the CEO is *ultimately* responsible for achieving these goals through building the right team and setting the right [strategy](../../company/strategy.md).
 
-### Grow adoption
+### Spread code search
 
-Owner: @sqs
+Owner: TBD
 
-We want to grow the number of people who actually regularly choose to use Sourcegraph. This is a leading indicator of progress toward our mission to make it so everyone can code.
+We want to grow the number of people who use Sourcegraph. This is a leading indicator of progress toward our mission to make it so everyone can code.
 
-- We say "adoption" not just "usage" or "awareness" because we don't want just drive-by/one-time visitors.
-- We want to target people whose adoption would lead to us getting more customers.
-- Ideally, the ways in which we grow adoption are scalable (that is, they can be extrapolated over time to reach ~10M+ devs monthly).
-
-We'll measure adoption using a combination of the following metrics (WIP):
-
-- User feedback, as measured by the NPS survey
-- Number of first-time users
-- Cohort retention
-
-First, we need to get solid measurements of all of these numbers. Then we will set quantitative targets.
+We'll measure adoption as monthly active users (MAU). (Target is set internally, TODO link from handbook.)
 
 ### Grow revenue
 
-Owner: @sqs
+Owner: TBD
 
-Revenue, like user adoption, is a leading indicator of progress toward our mission. Revenue earned from a customer is evidence that we're solving a big problem, and it helps us hire more great people so we can solve similar problems for more customers.
+Revenue, like user adoption, is a leading indicator of progress toward our mission. Revenue earned from a customer is evidence that we're solving a big problem, and it helps us hire more great people so we can solve similar problems for more customers. (Target is set internally, TODO link from handbook.)
 
 > Revenue is a lagging indicator. Something you do today might not yield a dollar of revenue for many months. We could set a top company goal around pipeline, which is a model of future revenue sources that would theoretically give us faster feedback. But we want our top company goals to be well-defined indicators of success, so pipeline (as a model/abstraction that depends on various assumptions) isn't appropriate. Our sales team still does track pipeline, and we'll experiment with using it to recognize other teams' impact (such as an engineer shipping a feature that helps several prospects have successful Sourcegraph roll-outs).
+
+### Accomplish the preceding 2 goals without breaking the company
+
+Owner: @sqs
+
+The previous 2 goals entail fast growth, which is risky for any company to undergo. We don't want to achieve them, or try to achieve them, by doing things that would break the company. We will settle for slower growth if that is needed to preserve our values.
 
 ## Responsibilities
 
 See "[Roles of the CEO](roles.md)".
 
-## Communicating with me
+## Communication
 
-The best way to communicate is [asynchronously and publicly](../communication.md). If you need a video call with me, [send me a calendar invite](../communication.md#scheduling-meetings) and include an agenda in the description.
+### Scheduling time with me
 
-My preferred working hours are 07:30-17:00 and 19:00-21:00 US Pacific Time (Google Calendar does not let me specify a noncontigous "working hours" block). If you want to schedule something with me outside of those hours, that's usually fine; just give me a few days of advance notice or check with me first.
+If possible, let's talk [asynchronously and publicly](../communication.md). If you need to schedule a time to speak with me, the best way is to contact Katerina Nikolova, my Executive Business partner, who can find a good time.
 
-I've found *recurring* meetings with specific single teammates (other than my [1-1s](../leadership/1-1.md)) to be ineffective. In most cases, people either want to discuss topics with me that are best discussed with a larger group, or they don't have any topics to discuss but don't want to offend me by canceling the recurring event. Anyone is always welcome to schedule time to chat with me whenever they want, and if you really want to schedule a recurring chat with me (in addition to your 1-1 with your manager), go for it--and I won't be offended if you want to cancel.
+My preferred working hours are 08:00-17:30 US Pacific Time.
 
 ### Asking for a review from me
 

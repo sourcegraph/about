@@ -12,6 +12,28 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
+## 2021-01-25 to 2021-02-05
+
+### Search contexts
+- **Owner(s):** Rok
+- **Outcomes:**
+    - [Issues](https://docs.google.com/document/d/1SU6AdJPa1vzQVUKc2Otj608GztsNARF1v4pnA-fTKzU/edit?usp=sharing) regarding search context namespacing are resolved.
+    - The API supports search queries with a provided search context (`global` and `@username`).
+- **Work log:**
+
+### Streaming search
+- **Owner(s):** Juliana, Keegan, Stefan
+    - Streaming search turned on for Sourcegraph.com.
+      - Improve user experience during streaming.
+      - Streaming support for filters and alerts.
+      - Performance/reliability testing in webapp and backend.
+- **Work log:**
+
+### Exhaustive Search
+- **Owner(s):** Keegan
+- **Outcomes:**
+    - Defering until next iteration to fully focus on streaming.
+
 ## 2021-01-11 to 2021-01-22
 
 ### Streaming search
@@ -21,28 +43,33 @@ This document contains the goals and work log for the search team's [2-week iter
     - Streaming text search.
     - Non streaming backends fallback gracefully.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-01-13: Streaming upto the Zoekt client. We still need to make it stream per replica and streaming within the replica. Got blocked by streaming progress updates.
+    - 2021-01-14: Error/skipped items UI has been updated to match design
+    - 2021-01-15: Search expression support in streaming.
+    - 2021-01-15: Work towards progress streaming and zoekt streaming. Both are now unblocked for next week. We have a high level plan to tackle both next week.
+    - 2021-01-22: Lots of updates. Streaming progress, streaming zoekt per replica and search backend now only uses streaming. For graphqlbackend we rely on aggregating the stream. Streaming as a whole is functional. We are now fixing obvious flaws in it before turning on the feature flag.
 
 ### Exhaustive Search
 - **Owner(s):** Keegan
 - **Outcomes:**
     - RFC published.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-01-15: An early incomplete draft is being reviewed. Hope to publish widely next week.
+    - 2021-01-22: Decided to fully focus on streaming search. Pushing out working on the RFC until we have the streaming feature flag turned on.
     
 ### Structural search for monorepos
 - **Owner(s):** Rijnard, Camden
 - **Outcomes:**
     - Make structural search work better for monorepos. Currently monorepos can time out for structural search purely because it takes too long to copy the data to search. The outcome focuses on architectural changes to avoid unnecessary data zipping and copying to our searcher worker (see [sourcegraph/sourcegraph#14619](https://github.com/sourcegraph/sourcegraph/issues/14619)).
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-01-15: Steady progress and almost have end-to-end code working to go through searcher. Difficult to communicate and construct the parts we need from frontend to searcher though.
 
 ### Search rules
 - **Owner(s):** Rijnard
 - **Outcomes:**
     - RFC published.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-01-15: No progress at this time, too busy with **Structural search for monorepos**.
 
 ### Search contexts
 - **Owner(s):** Rok
@@ -50,7 +77,8 @@ This document contains the goals and work log for the search team's [2-week iter
     - Validate approach for resolving a search context to a set of repositories to search on the backend.
     - Validate implementation plan for frontend changes with Quinn Keast.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-01-19: Started on UI tweaks for search toggle buttons and the copy button redesign
+    - 2021-01-15: Researching the backend for resolving repositories and how contexts will fit into it. Researching the query language and how to add the `context:` filter. Raised an issue with Quinn regarding search context namespacing.
 
 ## 2020-12-14 to 2021-01-08
 

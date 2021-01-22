@@ -10,10 +10,12 @@ We're hiring! Check out our open positions:
 
 - [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
 - [Engineering Manager - Cloud Application and Core Services](../handbook/engineering/hiring/engineering-manager-cloud.md)
-- [Software Engineer - Frontend](../handbook/engineering/hiring/software-engineer-frontend.md)
+- [Software Engineer - Cloud - Frontend](../handbook/engineering/hiring/software-engineer-cloud-frontend.md)
+- [Software Engineer - Code Insights - Frontend](../handbook/engineering/hiring/software-engineer-code-insights-frontend.md)
 - [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
 - [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
 - [Software Engineer - Security](../handbook/engineering/hiring/software-engineer-security.md)
+- [Software Engineer - Campaigns - Full Stack / Frontend](../handbook/engineering/hiring/software-engineer-campaigns-full-stack-frontend.md)
 
 ### Product
 
@@ -28,6 +30,7 @@ We're hiring! Check out our open positions:
 ### Customer Engineering
 
 - [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
+- [Customer Support Engineer](../handbook/ce/roles/customer_support_engineer.md)
 - [Training Engineer](../handbook/ce/roles/training_engineer.md)
 - [Director of Customer Engineering, East](https://jobs.lever.co/sourcegraph/82f595d8-9a88-40f6-b84a-b243c58754f0)
 - [Director of Customer Engineering, West](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1)
@@ -42,11 +45,6 @@ We're hiring! Check out our open positions:
 - [Business Operations Analyst](../handbook/ops/roles/business_operations_analyst.md)
 - [Tech Ops Manager](../handbook/ops/roles/tech_operations_manager.md)
 - [VP Talent](../handbook/talent/vp_talent.md)
-
-
-### CEO
-
-- [Executive Business Administrator](../handbook/ceo/executive_business_administrator_role.md)
 
 ## Apply
 

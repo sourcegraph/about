@@ -13,12 +13,14 @@
 - [Noemi Mercado](../../../company/team/index.md#noemi-mercado-she-her), Head of People Ops
   - [David Li](../../../company/team/index.md#david-li-he-him), Technical Recruiter
   - Cecily Black, Recruiting Coordinator
+  - [Inés Roitman](https://about.sourcegraph.com/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
 
 ## Teammate experience
 
 - [All-remote work](../../company/remote/index.md)
 - [Interview process](hiring/interview_process.md)
 - [Hiring](hiring/index.md)
+- [Before starting](onboarding/before_starting.md)
 - [Onboarding](onboarding/index.md)
 - [Performance review cycles](review-cycles.md)
 - [United States visa sponsorship](visa-sponsorship.md)
@@ -34,7 +36,7 @@
 - [Invoices](invoices.md)
 - [Covered expenses](spending-company-money.md) (aka "Spending company money")
 - [Expense reports](expenses.md)
-- [Vacation/FTO](https://github.com/sourcegraph/Graphbook/blob/master/Holidays,%20FTO,%20and%20leaves%20of%20absence/Vacation%20and%20FTO.md)
+- [Vacation/FTO/PTO](https://github.com/sourcegraph/Graphbook/blob/master/Holidays,%20FTO,%20and%20leaves%20of%20absence/Vacation%20and%20FTO.md)
 - [Holidays](holidays.md)
 - [Donations](donations.md)
 

@@ -49,8 +49,9 @@ When I create a campaign to make large-scale code changes I want to _focus on th
 
 * Each day, Slack reminds us to do our text check-in, which consists of a *short* message (it shouldn't take longer than a minute to write) in the reminder's thread. This should be a recap of what we have finished that day.
 
-* On Tuesdays, each engineer posts a status update in the current tracking issue with any additional info regarding what they accomplished in the previous week that wasn't captured in their daily status updates, as well as what they intend to accomplish in the coming week. The EM then rolls this up into a status update that is emailed to engineering leadership.
+* Each week, at 23:30 UTC on Thursdays, Slack reminds us to post our plans for the next week. This should consist of a short message (about a paragraph) in the reminder's thread covering our plans, and anything that they accomplished in the previous week that wasn't captured in their daily status updates. The PM then rolls this up into a status update that is emailed to engineering leadership.
   * Since most of the "what we accomplished" details have already been recorded in the daily Slack check-ins, it is not necessary for engineers to repeat any of those items. The status update could still include any additional info or color that the engineer wishes to record (if any), but would primarily be forward-looking.
+  * Responses should be posted when each of us are next working; people in incompatible time zones do not need to get up in the middle of the night to do this immediately!
 
 * One Big Thing: Each sprint, each engineer gets one big thing to work on — one significant chunk of work scoped to be doable in a single sprint (leaving some slack in the sprint for customer support and other unexpected issues). When it is completed, engineers will pull P0 items from [our planning project](https://github.com/orgs/sourcegraph/projects/119) into the current sprint to work on (or P1 if there are no P0s).
 
@@ -67,15 +68,15 @@ Our two-week sprints start every other Wednesday. We follow this process:
   * Everyone on the team looks through [our backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fcampaigns+milestone%3ABacklog) for any issues they think we should consider for the next sprint. To to so, add the issue to the "Needs prioritization" column of [our planning project](https://github.com/orgs/sourcegraph/projects/119).
   * Everyone on the team looks through the current tracking issue for any issues they do not expect to finish by the end of the sprint (EOD Tuesday), and set the next sprint's milestone so they will show up on the new tracking issue. (Feel free to un-assign these if you wish.) Make sure to set the relevant `planned` label on issues that move to the next sprint, for tracking and accountability.
   * Engineers add/refine estimates to issues in the new tracking issue and the planning project. All estimates in GitHub are assumed to be upper-bound estimates. (A missing estimate means "between 1 second and 1 trillion years.")
-  * Everyone on the team reviews the roadmap doc and comments their thoughts. Replace estimate placeholders with your actual estimates (and a best-guess range is fine: "3-5d"). For any items without linked Github issues, please create those issues and link them. **(NOTE: When we move to Productboard, this step will become obsolete.)**
+  * Everyone on the team reviews our [roadmap in Productboard](https://sourcegraph.productboard.com/roadmap/2263724-campaigns-releases) for the current/next release.
 
 * We then have our planning meeting to determine our common goals for the iteration.
   * First we verify that any unfinished items in the old sprint will be finished by EOD.
   * Next, we look at all of the items in the new sprint, to verify that these are our highest priority items that we definitely want to finish this sprint. (These tend to be smaller items, like bug fixes, or work carrying over from the previous sprint.) These should all be prioritized as P0s in the planning project. (If they are not P0s, then we remove the milestone and assing the correct priority.)
-  * Then we look at our roadmap doc to discuss comments people had, verify estimates, and ultimately to sort the items in terms of priority. *The goal is to have a freshly prioritized roadmap.* **(NOTE: When we move to Productboard, this step will become obsolete.)**
+  * Then we look at our [roadmap in Productboard](https://sourcegraph.productboard.com/roadmap/2263724-campaigns-releases) to align on priorities and verify estimates. *The goal is to have a freshly prioritized roadmap.*
   * We work as a team to assign One Big Thing to each engineer.
   * Finally, we verify that the sum of the estimates of our P0 column is does not exceed 2 days per engineer. In other words:
-    * `issues.filter(p0).map(estimate).sum <= (num_engineers * 2).days`
+     * `issues.filter(p0).map(estimate).sum <= (num_engineers * 2).days`
 
 * After sprint planning, the team has a retro to discuss how the previous sprint went, and what changes we might want to our working agreements.
 
@@ -98,8 +99,8 @@ The private channel is for communications that would be of no interest to someon
 The Campaigns team is the current owner of [src-cli](https://github.com/sourcegraph/src-cli), due to the fact that most of the src-cli work in recent months has been related to Campaigns. We do not expect to be the permanent owners of src-cli; when another team becomes the main contributor, we will transfer ownership to them.
 
 ## Members
-
-- M.M. ([Product Manager](../../product/roles/product_manager.md), starting January 11). [Rob Rhyne](../../../company/team/index.md#rob-rhyne) is involved in the meantime.
+- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) acting Product Manager and Product Designer
+- [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) ([Product Manager](../../product/roles/product_manager.md)) (onboarding)
 - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager))
   - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
   - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
@@ -112,9 +113,10 @@ The Campaigns team is the current owner of [src-cli](https://github.com/sourcegr
 - [Developer documentation](https://docs.sourcegraph.com/dev/background-information/campaigns)
 - [Onboarding](onboarding.md)
 - [Supporting Campaigns](supporting-campaigns.md)
-
+- [Campaign's Drive Folder (private)](https://drive.google.com/drive/u/0/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn)
+- [Campaign's Product Marketing Brief](https://docs.google.com/document/d/1yQpCKF50gx8_T-KDnU4s9TjW6fZpMUfWLF2h4xSM8jk)
 ## Growth plan
 
 _Updated 2020-12-09_
 
-We are looking for a [full-stack or front-end engineer](../hiring/software-engineer-campaigns-full-stack-front-end.md) to join our team!
+We are looking for a [full-stack or frontend engineer](../hiring/software-engineer-campaigns-full-stack-frontend.md) to join our team!
