@@ -34,7 +34,7 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 
 
 ## Sales
-<!-- When updating the engineering team list below, please also update handbook/index.md.  -->
+<!-- When updating the engineering team list below, please also update handbook/index.md. -->
 ### [Sales team](../../handbook/handbook/sales/index.md#members)
 ### [SDR team](../../handbook/sales/sdrteam/index.md#members)
 ### [Sales strategy & operations](../../handbook/ops/sales-ops/index.md#members)
