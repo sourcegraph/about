@@ -4,7 +4,7 @@
 
 {{define "head"}}
 	{{if (or (not .Content) .ContentVersion)}}<meta name="robots" content="noindex">{{end}}
-        {{with .Content}}<link ref="canonical" href="https://about.sourcegraph.com/{{.Path}}">{{end}}
+        {{with .Content}}<link rel="canonical" href="https://about.sourcegraph.com/{{.Path}}">{{end}}
 {{end}}
 
 {{define "content"}}
