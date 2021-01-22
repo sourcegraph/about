@@ -12,12 +12,12 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 ### [Campaigns](../../handbook/engineering/campaigns/index.md#members)
 ### [Cloud](../../handbook/engineering/cloud/index.md#members)
+### [Code insights](../../handbook/engineering/code-insights/index.md#members)
 ### [Code intelligence](../../handbook/engineering/code-intelligence/index.md#members)
 ### [Distribution](../../handbook/engineering/distribution/index.md#members)
 ### [Search](../../handbook/engineering/search/index.md#members)
 ### [Security](../../handbook/engineering/security/index.md#members)
 ### [Web](../../handbook/engineering/web/index.md#members)
-### [Code Insights](../../handbook/engineering/code-insights/index.md)
 
 ## [Customer Engineering](../../handbook/ce/index.md#members)
 
