@@ -46,7 +46,7 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     
     **Outcome:** 5 popular open source C++ repositories that exceed 1M SLOC have up-to-date precise code intelligence on Sourcegraph Cloud.
 
-1. Increase precise code intel montly operations.
+1. Increase precise code intel monthly operations.
     - Deliver to [*N<sub>1</sub>*][N1]
     - Deliver to [*N<sub>2</sub>*][N2]
     - Deliver to [*N<sub>3</sub>*][N3]
