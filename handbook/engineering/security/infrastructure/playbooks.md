@@ -74,7 +74,7 @@ This requires multiple steps to properly configure. Most of these are going to b
 4. [Create our elastic instance](#elastic-cloud-logging).
    1. Note that the following instructions are part of creating the Elastic instance, since pubsubbeats perform some Elastic configuration
 5. [Encrypt elastic secrets](#encrypt-deployment-secrets) and add them to the repository.
-6. [Deploy pubsubbeats](deploy pubsubbeats).
+6. [Deploy pubsubbeats](#deploy-pubsubbeats).
 
 
 
@@ -84,7 +84,7 @@ This should never need to happen after initial cluster creation.
 
 Currently only documented for production logging, but these documents will be updated to reflect environment-specific deployments in  [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281).
 
-This assumes that you have the json-formatted [service account key](pubsubbeat-subscriber@sourcegraph-security-logging.iam.gserviceaccount.com) for the `pubsubbeat-subscriber`service account, the username & password for the elastic `pubsubbeat` user, and the [elastic cloud ID](https://www.elastic.co/guide/en/cloud/current/ec-cloud-id.html) on hand.
+This assumes that you have the json-formatted [service account key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) for the `pubsubbeat-subscriber`service account, the username & password for the elastic `pubsubbeat` user, and the [elastic cloud ID](https://www.elastic.co/guide/en/cloud/current/ec-cloud-id.html) on hand.
 
 Pipe a file of format:
 
