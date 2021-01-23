@@ -243,6 +243,14 @@ To validate that we succeeded, run `kubectl get pods -n cos-auditd ` and verify 
 
 Playbooks for deploying and configuring our managed services.
 
+
+
+### Scaling Elastic Cloud
+
+Assuming Elastic Cloud is in Healthy state, or in Warn state because it hasn't had a snapshot in a few hours, scaling Elastic should be trivial. To scale Elastic, follow [these instructions](https://www.elastic.co/guide/en/cloud-enterprise/current/ece-resize-deployment.html) to edit the deployment, and increase the number of nodes. If Elastic is already out of disk, and in red state, follow the instructions in [Debugging Elastic](#debugging-elastic)
+
+
+
 ### Elastic Cloud logging
 
 How to configure a production-ready Elastic Cloud deployment for pubsubbeats logging.
@@ -296,10 +304,6 @@ How to configure a production-ready Elastic Cloud deployment for pubsubbeats log
 
       1. Update the maximum index size to be 50 GB.
 
-
-
-
-
 ## Debugging Playbooks
 
 Playbooks for debugging GCP projects, GKE projects, and managed services.
@@ -319,6 +323,10 @@ To implement in [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281
 #### 
 
 ### Debugging Elastic
+
+Note that Elastic will often be in `Warn` state since we create snapshots on a daily basis, not an hourly basis, since each snapshot takes an hour or two to create. This is intentional, and we should only be concerned if the last snapshot was more than ~26 hrs ago.
+
+
 
 While Elastic shouldn't need too much debugging, occasionally it can get itself stuck into bad states when running out of disk, or when its resources are overloaded. A good utility to manage Elastic is [cerebro](https://github.com/lmenezes/cerebro), which can easily be run via [docker](https://github.com/lmenezes/cerebro-docker). You'll want to have an Elastic superuser for this, which can be created by a similar process as used in [elastic cloud configuration](#elastic-cloud-logging) step 1.4.
 
