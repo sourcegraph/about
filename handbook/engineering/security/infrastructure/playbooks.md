@@ -306,7 +306,7 @@ Playbooks for debugging GCP projects, GKE projects, and managed services.
 
 ### Debugging logging
 
-If no pubsubbeat logs are are being sent to Elastic `logging/helm/pubsubbeat/charts/pubsubbeat/templates/deployment.yaml` to run with arguments ` args: ["-c", "/usr/local/bin/pubsubbeat -c /etc/configmap/pubsubbeat.yml -e -d \"*\"]`. This enables debug logging. Then, search through the output logs for `connection` `error`, and other things that might indicate why the logs aren't reaching Elastic.
+If no pubsubbeat logs are are being sent to Elastic `logging/helm/pubsubbeat/charts/pubsubbeat/templates/deployment.yaml` to run with arguments ` args: ["-c", "/usr/local/bin/pubsubbeat -c /etc/configmap/pubsubbeat.yml -e -d \"*\"]`. This enables debug logging. Then, search through the output logs for `connection` `error`, and other things that might indicate why the logs aren't reaching Elastic. Also check to see that Elastic disk usage is below ~80% in at least two different nodes. If it's not, scale Elastic immediately.
 
 
 
