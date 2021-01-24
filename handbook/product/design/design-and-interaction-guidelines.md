@@ -18,12 +18,12 @@ In Sourcegraph’s search and file experiences, code is the most important eleme
 
 The interaction model of the search experience is also unique. Clicking text on the page will almost always result in running a query or viewing a file. In a normal web application, we would clearly highlight these interactive elements so that the user understands where the actions are. If we were to do so on search pages, these elements would quickly outweigh and overwhelm the code. 
 
-### Examples pages:
+### Examples:
 
 * [Search results](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:.*/go+auth&patternType=literal)
 * [File views](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/package.json)
 
-### Examples of design and interaction principles:
+<img src='./margins-example.png' />
 
 _Small margins and reduced padding help to minimize scanning and scrolling. This allows developers to see code faster… and fit more of it on the screen._
 
@@ -32,6 +32,8 @@ _Small margins and reduced padding help to minimize scanning and scrolling. This
 
 In the search application, we generally display icons without labels. This is a common pattern in IDEs and other complicated UIs with many functions. This helps us maintain a high amount of information density while exposing many features within a single click. 
 
+<img src='./icons-example.png' />
+
 _Extensions and file menus compared with the VS Code’s git and windowing functions._
 
 ## Web application page design
@@ -39,17 +41,18 @@ _Extensions and file menus compared with the VS Code’s git and windowing funct
 We increasingly need to render standard webpages that present larger bodies of text to the user, accept user input, or allow management of elements. These pages require page widths and margins that promote text readability, a clear distinction between links and body copy, and padding and margins that allow elements to state their importance and guide users through the content. 
 
 
-### Example pages:
+### Example:
 
 [Repository groups](https://sourcegraph.com/refactor-python2-to-3)
 [Settings](https://sourcegraph.com/users/rrhyne/settings)
 [Extensions](https://sourcegraph.com/extensions)
 [Campaigns](https://k8s.sgdev.org/campaigns?visible=10)
 
-### Examples of design and interaction principles:
+<img src='./signup-example.png' />
 
 _Clearly recognizable links help orient users to common signup actions._
 
+<img src='./large-margin-example.png' />
 
 _The large margins around the Kubernetes logo convey to the user: “This page is focused on Kubernetes”._
 
