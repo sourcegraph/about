@@ -2,7 +2,7 @@
 
 When a prospect or customer files a new support ticket or raises a new issue, CE and Engineering should follow the steps below to ensure the issue is handled successfully.
 
-If something hasn't risen to the level of creating an issue (for example, you're trying to confirm if something reported by a customer in Slack is intented or not), you can also contact the [Distribution on-call engineer](../engineering/distribution#contacting-the-support-engineer).
+If something hasn't risen to the level of creating an issue (for example, you're trying to confirm if something reported by a customer in Slack is intented or not), you can also contact the [Distribution on-call engineer](../engineering/distribution#contacting-the-support-engineer) if it is a Distribution-related issue. Escalation processes vary per-team; check their Handbook documentation for more info.
 
 ## Principles
 
