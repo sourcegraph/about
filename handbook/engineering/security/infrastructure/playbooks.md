@@ -28,7 +28,7 @@ To implement in [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281
 
 ## GCP Deployment Playbooks
 
-Playbooks and step - by - step instructions on how to deploy our projects. It's assumed that you already have [terraform](https://www.terraform.io/) installed.
+Playbooks and step-by-step instructions on how to deploy our projects. It's assumed that you already have [terraform](https://www.terraform.io/) installed.
 
 It's recommended that you use [tfenv](https://github.com/tfutils/tfenv) to help manage terraform versions.
 
