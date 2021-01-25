@@ -30,15 +30,34 @@ Learn more about what it is like to work at Sourcegraph by reading [our handbook
 1. We set up a 30-minute call to learn more about what you are looking for, tell you about Sourcegraph, and answer any questions that you have.
 1. We evaluate relevant technical skills that you have via an asynchronous coding exercise.
    - We will give you an overview of the exercise in advance.
-   - We will send you the details at a time of your choosing and you will have up to 2 hours to work on each of the two exercises.
+   - We will send you the details at a time of your choosing and you will have up to 3 hours to work on each of the two exercises.
    - You will be able to use your own development environment and lookup documentation on the internet.
+     - It will be reviewed by two teammates from [Distribution](https://about.sourcegraph.com/handbook/engineering/distribution#members)
 1. We schedule 4 hours of remote interviews over video chat across multiple days.
-   - **Architecture:** We give you an open problem statement and you walk us through how you would solve the problem.
-   - **Technical experience:** We ask you about your past work and accomplishments.
-   - **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
-   - **CTO:** We ask you about what motivates you to do your best work, and we tell you more about the vision for the company.
-1. We check your references.
-1. We make you a job offer.
+   - 1h **Technical experience:** We ask you about your past work and accomplishments.
+     - You will interview with two teammates from the following list
+       - **Distribution**:
+         - [Distribution member](https://about.sourcegraph.com/handbook/engineering/distribution#members)
+       - **Non-Distribution**:
+         - []()
+   - 1h **Architecture:** We give you an open problem statement and you walk us through how you would solve the problem.
+     - You will interview with two teammates from the following list
+       - **Distribution**:
+         - [Distribution member](https://about.sourcegraph.com/handbook/engineering/distribution#members)
+       - **Non-Distribution**:
+         - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
+         - []()
+   - 1h **Team collaboration:** We ask you about how you work and communicate in a team setting, and how you handle tricky situations.
+     - You will interview with two teammates from the following list
+       - [Rob Rhyne](../../../company/team/index.md#rob-rhyne)
+       - [Jonah Dueck](../../../company/team/index.md#jonah-dueck-he-him)
+       - [Josh Saunders](../../../company/team/index.md#josh-saunders)
+       - [Nick McMillen](../../../company/team/index.md#nick-mcmillen-he-him)
+       - [Christine Lovett](../../../company/team/index.md#christine-lovett-she-her)
+   - 30m **VP Engineering:** We ask you about what motivates you to do your best work, and we tell you more about the vision for the company.
+   - 30m **CTO:** We ask you about what motivates you to do your best work, and we tell you more about the vision for the company.
+2. We check your references.
+3. We make you a job offer.
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
