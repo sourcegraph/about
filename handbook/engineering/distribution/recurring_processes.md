@@ -30,7 +30,7 @@ At the beginning of each cycle, [we determine what work we plan to do](#planning
 
 1. Kick-off async planning during our [weekly sync meeting](#weekly-distribution-team-sync).
 1. Review the current [goals and milestones](./goals.md), ensure those goals and milestones match are up to date, and match what you think we should be working on. If this is not the case, propose a new goal.
-3. Review the [open Distribution issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Ateam%2Fdistribution+user%3Asourcegraph) and move all issues to the current cycle you think should be considered for prioritization.
+1. Review the [open Distribution issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Ateam%2Fdistribution+user%3Asourcegraph) and move all issues to the current cycle you think should be considered for prioritization.
    - If an issue is important but doesn't satisfy the goals, consider if the goal needs to be changed.
 4. Review [technical debt](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Ateam%2Fdistribution+user%3Asourcegraph+label%3Adebt), [quality of life](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Ateam%2Fdistribution+user%3Asourcegraph+label%3Aquality-of-life) or [innovation issues](../../index.md#innovation-time) you would like to work on this cycle.
 5. Update the [planning document](https://docs.google.com/document/d/1Ko1MbyO1yIr7aQsvIRAAbjdnOJ2qUQB9kTJQvcWWcOY) with your the proposed theme and tasks.
