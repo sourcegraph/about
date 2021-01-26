@@ -1,10 +1,10 @@
-# Security Infrastructure
+# Security infrastructure
 
 We maintain multiple flavors of infrastructure with various degrees of management. 
 
 
 
-## GCP Infrastructure Basics
+## GCP infrastructure basics
 
 GCP infrastructure is configured via [terraform](https://www.terraform.io/) in the [infrastructure repository](https://github.com/sourcegraph/infrastructure/). All configuration for security projects should be stored in the [security subdirectory](https://github.com/sourcegraph/infrastructure/tree/main/security). Please adhere to this [terraform style guide](../../languages/terraform.md) when working here.
 
@@ -58,7 +58,7 @@ Will likely be similar to the above [logging infrastructure](#logging).
 
 
 
-## GKE Deployment Basics
+## GKE deployment basics
 
 This section explains how to use various tools used to generate and deploy kubernetes configuration to GKE.
 
@@ -104,15 +104,15 @@ Unmaintained and [to be deleted](https://github.com/sourcegraph/sourcegraph/issu
 
 
 
-## Managed Services
+## Managed services
 
-### Elastic Cloud
+### Elastic cloud
 
 We currently use elastic cloud to store centralized security logs. This allows us to avoid the overhead of managing it ourselves, while getting something that's reasonably performant and stable. 
 
 Elastic cloud web portal is [here](https://cloud.elastic.co/home). Credentials are stored in 1Password.
 
-#### Elastic Logging
+#### Elastic logging
 
 Currently contains all stackdriver logs from the GCP projects `sourcegraph-dogfood` and `sourcegraph-dev`. Note that stackdriver also contains OS audit logs from GKE nodes on the primary GKE clusters for those projects. This is due to the afforementioned `gke-logging` module being deployed in them as part of our [logging infrastructure](#logging).
 
@@ -124,7 +124,7 @@ Note that the index refresh interval is 30 seconds.
 
 
 
-#### Elastic Logging Stage
+#### Elastic logging stage
 
 To implement in [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281).
 

@@ -1,10 +1,10 @@
-# Security Infrastructure Playbooks
+# Security infrastructure playbooks
 
 Contains playbooks for GCP project deployments, GKE project deployments, 
 
 
 
-## GKE Deployment Playbooks
+## GKE deployment playbooks
 
 This section contains playbooks for how to deploy our k8s infrastructure
 
@@ -22,11 +22,11 @@ This deploys pubsubbeats. Currently this will deploy it to production, but these
 2. Get access to the logging cluster by running `gcloud container clusters get-credentials --region us-central1-f --project sourcegraph-security-logging logging`
 3. From `security/logging/helm/pubsubbeat` run the command `helmfile template | kubectl --context gke_sourcegraph-security-logging_us-central1-f_logging apply -f -`
 
-### Logging Staging
+### Logging staging
 
 To implement in [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281).
 
-## GCP Deployment Playbooks
+## GCP deployment playbooks
 
 Playbooks and step-by-step instructions on how to deploy our projects. It's assumed that you already have [terraform](https://www.terraform.io/) installed.
 
@@ -36,7 +36,7 @@ For basic terraform issues, see [debugging terraform](#debugging-terraform)
 
 
 
-### Creating a new GCP Project
+### Creating a new GCP project
 
 This is done via terraform from `gcp/projects` in the [Sourcegraph infrastructure repository](https://github.com/sourcegraph/infrastructure). Unless you're a GCP admin, you'll be blocked on permissions here. 
 
@@ -185,7 +185,7 @@ Validate that the logs are being ingested into elastic by searching `json.resour
 
 
 
-### Ingesting Audit Logs from a new GKE cluster
+### Ingesting audit logs from a new GKE cluster
 
 This assumes that stackdriver logs are already ingested by pubsubbeats. If not, [do this first](#ingesting-logs-from-a-new-gcp-project).
 
@@ -239,19 +239,19 @@ To validate that we succeeded, run `kubectl get pods -n cos-auditd ` and verify 
 
 
 
-## Managed Service Deployment Playbooks
+## Managed service deployment playbooks
 
 Playbooks for deploying and configuring our managed services.
 
 
 
-### Scaling Elastic Cloud
+### Scaling elastic cloud
 
 Assuming Elastic Cloud is in Healthy state, or in Warn state because it hasn't had a snapshot in a few hours, scaling Elastic should be trivial. To scale Elastic, follow [these instructions](https://www.elastic.co/guide/en/cloud-enterprise/current/ece-resize-deployment.html) to edit the deployment, and increase the number of nodes. If Elastic is already out of disk, and in red state, follow the instructions in [Debugging Elastic](#debugging-elastic)
 
 
 
-### Elastic Cloud logging
+### Elastic cloud logging
 
 How to configure a production-ready Elastic Cloud deployment for pubsubbeats logging.
 
@@ -304,7 +304,7 @@ How to configure a production-ready Elastic Cloud deployment for pubsubbeats log
 
       1. Update the maximum index size to be 50 GB.
 
-## Debugging Playbooks
+## Debugging playbooks
 
 Playbooks for debugging GCP projects, GKE projects, and managed services.
 
@@ -322,7 +322,7 @@ To implement in [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281
 
 #### 
 
-### Debugging Elastic
+### Debugging elastic
 
 Note that Elastic will often be in `Warn` state since we create snapshots on a daily basis, not an hourly basis, since each snapshot takes an hour or two to create. This is intentional, and we should only be concerned if the last snapshot was more than ~26 hrs ago.
 
