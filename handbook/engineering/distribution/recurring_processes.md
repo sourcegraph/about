@@ -29,7 +29,7 @@ At the beginning of each cycle, [we determine what work we plan to do](#planning
 **Async proposal (1 week before the planning meeting):** We start working on a draft set of projects and their required tasks for the next cycle. The idea here is to identify a superset of issues to be prioritized for this cycle, rather than to identify the exact set of issues.
 
 1. Kick-off async planning during our [weekly sync meeting](#weekly-distribution-team-sync).
-2. Review the current [goals and milestones](./goals.md), ensure those goals and milestones match are up to date, and match what you think we should be working on. If this is not the case, propose a new goal.
+1. Review the current [goals and milestones](./goals.md), ensure those goals and milestones match are up to date, and match what you think we should be working on. If this is not the case, propose a new goal.
 3. Review the [open Distribution issues](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Ateam%2Fdistribution+user%3Asourcegraph) and move all issues to the current cycle you think should be considered for prioritization.
    - If an issue is important but doesn't satisfy the goals, consider if the goal needs to be changed.
 4. Review [technical debt](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Ateam%2Fdistribution+user%3Asourcegraph+label%3Adebt), [quality of life](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Ateam%2Fdistribution+user%3Asourcegraph+label%3Aquality-of-life) or [innovation issues](../../index.md#innovation-time) you would like to work on this cycle.
