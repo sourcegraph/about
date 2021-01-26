@@ -18,8 +18,8 @@ changelogItems:
   - description: "The `serviceType` field is now deprecated and will be removed completely in a future release. The `serviceKind` field of the `ExternalServiceKind` type has been added to `Repository.externalURLs` GraphQL API."
     url: https://github.com/sourcegraph/sourcegraph/issues/14979
     category: API
-  - description: "The minimum Kubernetes version required to use the [Kubernetes deployment option](https://docs.sourcegraph.com/admin/install/kubernetes) is now v1.15 (released June 2019)."
-    url: "https://kubernetes.io/blog/2019/06/19/kubernetes-1-15-release-announcement/"
+  - description: "The minimum Kubernetes version required to use the Kubernetes deployment option is now v1.15 (released June 2019)."
+    url: "https://docs.sourcegraph.com/admin/install/kubernetes"
     category: Admin
   - description: "The endpoint for \"Open in Sourcegraph\" functionality in editor extensions now uses code host connection information to resolve the repository, which makes it more correct and respect the `repositoryPathPattern` setting."
     url: https://github.com/sourcegraph/sourcegraph/pull/16846
