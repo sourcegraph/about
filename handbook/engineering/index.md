@@ -70,6 +70,18 @@ Our engineering organization is divided into mission based teams that contain th
 
 Start a discussion with your manager if you are interested to switch teams. Your manager will chat with you to understand what you want and then propose next steps. Team transfers need to be approved by the [VP of Engineering](roles.md#vp-engineering).
 
+### Communication
+
+#### Slack channel convention
+
+Engineering teams follow the following convention when creating Slack channels for both internal (own team) and external (all teammates) communication.
+
+1. ${TEAMNAME}-team for internal team stuff. E.g. `web-team`
+1. ${TEAMNAME}-chat for external team communication. E.g. `web-chat`
+
+Teams are encouraged to keep their channels public and to ensure all work related conversation happens in the open in their relevant `-chat` channel.  
+If teams require additional channels they should follow the convension of prefixing the channel name with their team name. E.g. `web-onboarding`
+
 ## Open positions
 
 [Open positions](hiring/index.md#open-positions)
