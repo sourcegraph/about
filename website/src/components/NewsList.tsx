@@ -4,11 +4,11 @@ import NewsData from '../data/news-listing'
 class News extends React.Component {
     public render(): JSX.Element {
         return (
-            <div>
+            <div className="container">
                 {NewsData.map((newsYear: { year: React.ReactNode }, index: any) => (
                     <div className="row">
                         <div className="col-lg-2">
-                            <h3 id="news2020">{newsYear.year}</h3>
+                            <h3 id={'news' + newsYear.year} className="news__year">{newsYear.year}</h3>
                         </div>
                         <div className="col-lg-10 container-fluid">
                             {newsYear.articles.map((a, i) => (
