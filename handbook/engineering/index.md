@@ -74,13 +74,13 @@ Start a discussion with your manager if you are interested to switch teams. Your
 
 #### Slack channel convention
 
-Engineering teams follow the following convention when creating Slack channels for both internal (own team) and external (all teammates) communication.
+Engineering teams follow the following convention when creating Slack channels for internal (own team) and external (all teammates) communication.
 
-1. ${TEAMNAME}-team for internal team stuff. E.g. `web-team`
-1. ${TEAMNAME}-chat for external team communication. E.g. `web-chat`
+1. ${TEAMNAME}-team for internal team communication like standup notes, social chats, etc that does not relate to the team's goals or work they are doing. e.g. `web-team`
+1. ${TEAMNAME}-chat for general work related team communication like discussing goals, requesting help on an issue, asking general questions relating to the team's area of responsibility. e.g. `web-chat`
 
 Teams are encouraged to keep their channels public and to ensure all work related conversation happens in the open in their relevant `-chat` channel.  
-If teams require additional channels they should follow the convension of prefixing the channel name with their team name. E.g. `web-onboarding`
+If teams require additional channels they should follow the convension of prefixing the channel name with their team name. e.g. `web-onboarding`
 
 ## Open positions
 
