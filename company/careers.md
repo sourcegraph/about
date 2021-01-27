@@ -44,7 +44,7 @@ We're hiring! Check out our open positions:
 
 - [Finance & Operations Analyst](https://jobs.lever.co/sourcegraph/35d6628e-9e9a-4385-a4ea-67e411732cb4)
 
-### People Operations
+### People Operations and Talent
 - [VP Talent](https://about.sourcegraph.com/handbook/talent/vp_talent) 
 - [Teammate Success Manager](https://about.sourcegraph.com/handbook/people-ops/roles/onboarding_teammate_success_manager)
 - [Technical Recruiter - Product](https://about.sourcegraph.com/handbook/people-ops/roles/technical_recruiter_product)
