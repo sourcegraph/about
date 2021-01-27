@@ -74,13 +74,12 @@ Start a discussion with your manager if you are interested to switch teams. Your
 
 #### Slack channel convention
 
-Engineering teams follow the following convention when creating Slack channels for internal (own team) and external (all teammates) communication.
+Our goal is to facilitate open and transparent communication both within teams as well as between teams. Since these are two different audiences, we recommend that each team maintains two separate channels in Slack following these naming conventions:
 
-1. ${TEAMNAME}-team for internal team communication like standup notes, social chats, etc that does not relate to the team's goals or work they are doing. e.g. `web-team`
-1. ${TEAMNAME}-chat for general work related team communication like discussing goals, requesting help on an issue, asking general questions relating to the team's area of responsibility. e.g. `web-chat`
+1. `${TEAMNAME}-chat` is the default channel for discussing work that the team is doing and fielding questions from outside of the team. If you have a question to ask another team, ask it in their `-chat` channel.
+1. `{$TEAMNAME}-team` is a secondary channel that the team can use to communicate about topics that are not related to the work of the team and clearly only relevant to members of the team itself (for example: social chit chat, notifying team you will be late to a team meeting, scheduling a team meeting or offsite). This channel is *not* for having internal team discussions about work the team is doing; those discussions are potentially relevant to people outside of the team and should be done in `-chat`. The team should treat this as their own channel, even if non-teammates have joined. We encourage teams to keep this channel public for transparency.
 
-Teams are encouraged to keep their channels public and to ensure all work related conversation happens in the open in their relevant `-chat` channel.  
-If teams require additional channels they should follow the convension of prefixing the channel name with their team name. e.g. `web-onboarding`
+If teams require additional channels they should follow the convention of prefixing the channel name with their team name. For example: `web-onboarding`
 
 ## Open positions
 
