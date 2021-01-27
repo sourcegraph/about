@@ -1648,10 +1648,10 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@sourcegraph/eslint-config@^0.20.19":
-  version "0.20.19"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.20.19.tgz#52e38a7db9596a0a0032880bac45c22d78737195"
-  integrity sha512-X9YVu89hPbEc2FjGQ5uVkmi6AhOA+XkCPiXXrEmLe1OVPt3G2d0wsugSpZj4yRdfzMBMZXezI+w7ayUVFJktDQ==
+"@sourcegraph/eslint-config@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/eslint-config/-/eslint-config-0.21.0.tgz#9234a65193bb026c157dac5a0b95b115f3e2f324"
+  integrity sha512-3yynNBgvREtKXKLqEIsB/txg39e5X8ehOPE1zUVPRF9LDcaO1cbxbB48YgMyS0JHXTi6DkJnm5RRc+fUmFq29Q==
   dependencies:
     "@sourcegraph/prettierrc" "^3.0.3"
     "@typescript-eslint/eslint-plugin" "^4.9.1"
