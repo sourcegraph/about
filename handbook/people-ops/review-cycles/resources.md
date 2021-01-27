@@ -1,4 +1,4 @@
-# Resources for reviewers
+# Resources and guides for reviewers
 
 This list of resources is a work in progress. 
 
