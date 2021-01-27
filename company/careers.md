@@ -43,7 +43,6 @@ We're hiring! Check out our open positions:
 ### Operations, finance, and legal
 
 - [Finance & Operations Analyst](https://jobs.lever.co/sourcegraph/35d6628e-9e9a-4385-a4ea-67e411732cb4)
-- [VP Talent](../handbook/talent/vp_talent.md)
 
 ### People Operations
 - [VP Talent](https://about.sourcegraph.com/handbook/talent/vp_talent) 
