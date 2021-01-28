@@ -58,7 +58,7 @@ _The large margins around the Kubernetes logo convey to the user: “This page i
 
 ### Web application icons
 
-In the web application sections, icons should always have an accompanying label. See this article on [Icon Usability](https://www.nngroup.com/articles/icon-usability/) from the Nielson Norman group for more information. Note that this stance is contradictory to the requirements for icons in search application pages.
+In the web application sections, icons should generally be accompanied by a label. See this article on [Icon Usability](https://www.nngroup.com/articles/icon-usability/) from the Nielson Norman group for more information. Note that this stance is contradictory to the requirements for icons in search application pages.
 
 
 ## Web application content rendered in code pages
