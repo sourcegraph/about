@@ -28,9 +28,9 @@ The interaction model of the search experience is also unique. Clicking text on 
 _Small margins and reduced padding help to minimize scanning and scrolling. This allows developers to see code faster… and fit more of it on the screen._
 
 
-### Icons and labels
+### Code page icons
 
-In the search application, we generally display icons without labels. This is a common pattern in IDEs and other complicated UIs with many functions. This helps us maintain a high amount of information density while exposing many features within a single click. 
+In code pages, we generally display icons without labels. This is a common pattern in IDEs and other complicated UIs with many functions. This helps us maintain a high amount of information density while exposing many features within a single click. 
 
 <img src='./icons-example.png' />
 
