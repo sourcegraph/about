@@ -14,7 +14,7 @@ Web application - a more traditional web application style with larger margins a
 
 ## Code pages design
 
-In Sourcegraph’s search and file experiences, code is the most important element. The design of these pages reflects that priority. Contrast is balanced so that code stands out above all else. Panels clearly segment content and tools from the code. Pages are full width, and margins and padding are slim to increase the density of information which helps us display as much code on the screen as possible. 
+In Sourcegraph’s search, file, diff and other views, code is the most important element. To collectively refer to these pages we use the phrase 'code pages'. The design of these pages should focus on code as the most important element. Contrast is balanced so that code stands out above all else. Panels clearly segment content and tools from the code. Pages are full width, and margins and padding are slim to increase the density of information which helps us display as much code on the screen as possible. 
 
 The interaction model of the search experience is also unique. Clicking text on the page will almost always result in running a query or viewing a file. In a normal web application, we would clearly highlight these interactive elements so that the user understands where the actions are. If we were to do so on search pages, these elements would quickly outweigh and overwhelm the code. 
 
