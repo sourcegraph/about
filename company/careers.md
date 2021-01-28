@@ -39,6 +39,7 @@ We're hiring! Check out our open positions:
 ### Marketing
 
 - [Director of Community](https://jobs.lever.co/sourcegraph/480e8d71-03af-4659-ac90-b8e32ad4ef34)
+- [Customer Marketing Manager](https://jobs.lever.co/sourcegraph/5769890f-69bd-4ff5-8515-233ce8e3c620)
 
 ### Operations, finance, and legal
 
