@@ -59,6 +59,10 @@ const ITEMS: {
             // },
         },
         {
+            name: 'Dropbox',
+            url: '/external-logos/dropbox-logo.svg',
+        },
+        {
             name: 'Prezi',
             url: '/external-logos/prezi-logo.svg',
         },
