@@ -9,7 +9,7 @@ Arguments:
 - $ONE_WORKING_DAY_AFTER_RELEASE
 -->
 
-# $MAJOR.$MAJOR.$MINOR managed instances upgrade
+# $MAJOR.$MINOR.$PATCH managed instances upgrade
 
 These [managed instances](https://about.sourcegraph.com/handbook/engineering/distribution/managed) upgrades are scheduled for **$ONE_WORKING_DAY_AFTER_RELEASE**.
 
