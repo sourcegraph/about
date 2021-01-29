@@ -42,7 +42,7 @@
 
 ## [Roles](roles.md)
 
-See [open roles and job descriptions](roles.md) on the People Ops team.
+See our [careers page](../../company/careers.md) for open roles on the People Ops team.
 
 ## [Code of conduct](../communication/code_of_conduct.md)
 
