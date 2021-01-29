@@ -13,11 +13,12 @@ exports.onInitialClientRender = function () {
   }
   if (window) {
     window.jQuery =
-      window.jQuery ||
-      (() => ({
-        change: () => {},
-        trigger: () => {},
-      }))
+      window.jQuery || function(nodeOrSelector) {
+        if (typeof(nodeOrSelector) == 'string') {
+            return document.querySelector(s);
+        }
+        return nodeOrSelector;
+    };
   }
 }
 

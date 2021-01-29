@@ -1,21 +1,43 @@
+import cookies from 'js-cookie'
+
+export const SOURCEGRAPH_ANONYMOUS_ID_KEY = 'sourcegraphAnonymousUid'
 export interface HubSpotForm {
     portalId: string
     formId: string
     targetId: string
     onFormSubmit?: (obj: { data: { name: string; value: string }[] }) => void
-    //  onFormSubmitted?: () => void
+    onFormReady?: (form: HTMLElement) => void
 }
 
-export function createHubSpotForm({ portalId, formId, targetId }: HubSpotForm): void {
+export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
     const script = document.createElement('script')
     script.src = '//js.hsforms.net/forms/v2.js'
     const hubspot = document.getElementById(targetId)
     hubspot!.appendChild(script)
+    const anonymousId = cookies.get(SOURCEGRAPH_ANONYMOUS_ID_KEY)
     script.addEventListener('load', () => {
-        ; (window as any).hbspt.forms.create({
+        ;(window as any).hbspt.forms.create({
             portalId,
             formId,
             target: `#${targetId}`,
+            onFormSubmit,
+            onFormReady: (form: HTMLElement) => {
+                // The `form` parameter is a jQuery form object. We have a polyfill
+                // in gatsby-browser.js which allows us to access it as a DOM element
+                // instead of a jQuery object.
+
+                if (form) {
+                    // We want to populate hidden fields in the form with values stored in cookies when the form loads.
+                    const anonId: HTMLInputElement | null = form.querySelector('input[name="anonymous_user_id"]')
+                    if (anonId) {
+                        // Populate the hidden anonymous_user_id form field with the value from the sourcegraphAnonymousUid cookie.
+                        anonId.value = anonymousId || ''
+                    }
+                }
+                if (onFormReady) {
+                    onFormReady(form)
+                }
+            },
         })
     })
 }
