@@ -21,7 +21,7 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
             formId,
             target: `#${targetId}`,
             onFormSubmit,
-            onFormReady: (form: HTMLElement) => {
+            onFormReady: (form: HTMLFormElement) => {
                 // The `form` parameter is normally a jQuery wrapper around a form element.
                 // We polyfill jQuery in gatsby-browser.js to return the form element directly.
 
