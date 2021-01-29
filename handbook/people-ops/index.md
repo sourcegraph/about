@@ -40,7 +40,7 @@
 - [Holidays](holidays.md)
 - [Donations](donations.md)
 
-## [Roles](roles.md)
+## Roles
 
 See our [careers page](../../company/careers.md) for open roles on the People Ops team.
 
