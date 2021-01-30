@@ -50,7 +50,7 @@ These goals represent our targeted work for 70% of our focus time. The remaining
 1. Configure [Vanta](https://www.vanta.com/) to document and plan our SOC readiness.
 1. Prepare for SOC 2 type 1 certification and contract with an auditor to complete the audit. 
    1. This will serve as a way to communicate to our customers that we're on the right track in our SOC certification process.
-   1. SOC 3 is the focus as audit reports are designed to be more easily  digestible than SOC 2 - nothing prevents us from sharing our SOC 2 audit artifacts.
+   1. SOC 3 is the focus as audit reports are designed to be more easily digestible than SOC 2 - nothing prevents us from sharing our SOC 2 audit artifacts.
 1. Put protocols in place to produce and gather the requisite auditable artifacts for SOC 3.
 1. Attain SOC certifications and publicly share the reports.
 
