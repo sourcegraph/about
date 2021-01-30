@@ -45,7 +45,7 @@ These goals represent our targeted work for 70% of our focus time. The remaining
 
 ### SOC Audit readiness
 
-**Problem:** As we begin providing a SaaS product, attaining a full SOC 2/3 certification will become necessary to enable the business. Note that a SOC 3 provides the same assurances as a SOC 2 certification, but contains fewer details, and is something that we can [freely distribute](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc3report.html). Therefore, we intend to pursue a SOC 3 certification in keeping with our company values of [openness and transparency](../../../company/values.md#open-and-transparent). If reasonable, we'll pursue SOC 2 type 2 in parallel with this, since it's the same audit process. After operating in a SOC 2 environment for six months, we will attain SOC 2 type 2 - as per the requirement.
+**Problem:** As we begin providing a SaaS product, attaining a full SOC 2/3 certification will become necessary to enable the business. Note that a SOC 3 provides the same assurances as a SOC 2 certification, but contains fewer details, and is something that we can [freely distribute](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc3report.html). If reasonable, we'll pursue SOC 2 type 2 in parallel with this, since it's the same audit process. After operating in a SOC 2 environment for six months, we will attain SOC 2 type 2 - as per the requirement.
 
 1. Configure [Vanta](https://www.vanta.com/) to document and plan our SOC readiness.
 1. Prepare for SOC 2 type 1 certification and contract with an auditor to complete the audit. 
