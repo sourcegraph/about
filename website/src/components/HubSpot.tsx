@@ -24,7 +24,6 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
             onFormReady: (form: HTMLFormElement) => {
                 // The `form` parameter is normally a jQuery wrapper around a form element.
                 // We polyfill jQuery in gatsby-browser.js to return the form element directly.
-
                 if (form) {
                     // We want to populate hidden fields in the form with values stored in cookies when the form loads.
                     const anonymousIdInput = form.querySelector<HTMLInputElement>('input[name="anonymous_user_id"]')
