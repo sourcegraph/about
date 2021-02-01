@@ -1,4 +1,4 @@
-# Campaigns goals
+# Goals
 
 The campaigns team is building the best solution available for creating and managing large scale changes. To do so we will focus on the following objectives:
 
