@@ -198,6 +198,13 @@ We do regular backlog triages together, where we go through [the issues in our b
 This helps us resurface older issues, create shared awareness for existing deficiencies among everyone on our team and ensures no-longer-applicable issues are closed.
 To manage the load for these triages, a triage may have a specific theme, like "debt" or "performance".
 
+### Code reviews
+
+The team follow's the [default code review guidelines](../code_reviews.md) with the following addition:
+
+1. If the author would like any of the requested reviewers to merge the PR after approval they add the label `merge-on-any-approve`
+1. If the author would like their PR to be merged once all of the requested reviewers have approved it they add the label `merge-on-all-approve`
+
 ## Team syncs
 
 The web team holds weekly syncs.
