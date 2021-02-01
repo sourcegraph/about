@@ -20,19 +20,43 @@ This document contains the goals and work log for the search team's [2-week iter
     - [Issues](https://docs.google.com/document/d/1SU6AdJPa1vzQVUKc2Otj608GztsNARF1v4pnA-fTKzU/edit?usp=sharing) regarding search context namespacing are resolved.
     - The API supports search queries with a provided search context (`global` and `@username`).
 - **Work log:**
+    - 2021-01-29: Added support for retrieving user-added repositories. Opened PRs implementing search with a search context and listing search contexts.
 
 ### Streaming search
 - **Owner(s):** Juliana, Keegan, Stefan
     - Streaming search turned on for Sourcegraph.com.
-      - Improve user experience during streaming.
-      - Streaming support for filters and alerts.
-      - Performance/reliability testing in webapp and backend.
+       - Improve user experience during streaming.
+       - Streaming support for filters and alerts.
+       - Performance/reliability testing in webapp and backend.
 - **Work log:**
+    - 2021-01-29: Perf/reliability improvements (avoid batching of results, lots of PRs); UX improvements (count proposals, progress info) and initial work on factoring out search from graphqlbackend.
+    - 2021-02-01: Backend plan for the week is responding to feedback from Sourcegraph org dogfooding. When not doing that, improving streaming design in preparation for Exhaustive Search work.
 
 ### Exhaustive Search
 - **Owner(s):** Keegan
 - **Outcomes:**
     - Defering until next iteration to fully focus on streaming.
+
+### Structural search for monorepos
+- **Owner(s):** Rijnard, Camden
+- **Outcomes:**
+    - Close out remaining issues, and make searcher querying Zoekt the default path for structural search.
+- **Work log:**
+    - 2021-01-28: Benchmarked the new path and made it the default after looking at the results. There are a couple of minor concerns we can improve, and possibly explore structural search support for unindexed repositories. Other than that, we have a head start on [RFC 254](https://docs.google.com/document/d/1_m63fsBMAtqaq3GA_aMzKUPxD3yxTy8d12lJE6qN6PU/edit#) which was published early this week.
+
+### Refactor search query parsing
+- **Owner(s):** Juliana
+- **Outcomes:**
+    - Search query parsing for query, pattern type, case sensitivity and version context are done in a single place instead of multiple times in differet components
+- **Work log:**
+    - 2021-01-28: Refactoring has been completed
+
+### Code monitoring
+- **Owner(s):** Juliana
+- **Outcomes:**
+    - Address high priority polish issues to get Code Monitoring out to customers
+- **Work log:**
+    - 2021-01-29: All high priority issues and some medium priority issues have been addressed ([tracking issue](https://github.com/sourcegraph/sourcegraph/issues/17414))
 
 ## 2021-01-11 to 2021-01-22
 
@@ -48,6 +72,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - 2021-01-15: Search expression support in streaming.
     - 2021-01-15: Work towards progress streaming and zoekt streaming. Both are now unblocked for next week. We have a high level plan to tackle both next week.
     - 2021-01-22: Lots of updates. Streaming progress, streaming zoekt per replica and search backend now only uses streaming. For graphqlbackend we rely on aggregating the stream. Streaming as a whole is functional. We are now fixing obvious flaws in it before turning on the feature flag.
+    - 2021-01-25: UI polish work to address issues with streaming search progress
 
 ### Exhaustive Search
 - **Owner(s):** Keegan

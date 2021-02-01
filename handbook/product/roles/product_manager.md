@@ -28,10 +28,10 @@ You will **own an area of the product**\* and:
    - [Cloud](../../engineering/cloud/index.md)
    - [Search](../../engineering/search/index.md)
    - Spread code search/growth (new company effort)
+   - [Distribution](../../engineering/distribution/index.md)
 - Medium urgency
    - Backend infrastructure (expansion from current Cloud team growth)
    - Frontend platform (expansion from current web team growth)
-   - [Distribution](../../engineering/distribution/index.md)
 - Lowest urgency
    - Integrations (expansion from current web team growth)
    - [Security](../../engineering/security/index.md)
@@ -101,3 +101,4 @@ We want to ensure Sourcegraph is an environment that suits your working style an
 **[Click here to apply](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296/apply)**
 
 Go back to the [careers page](../../../company/careers.md) for all open positions.
+

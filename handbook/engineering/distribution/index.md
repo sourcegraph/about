@@ -41,13 +41,13 @@ See [Goals](goals.md)
 - [Update various service tokens for sourcegraph.com](tokens.md)
 - [Rollbacks](rollbacks.md)
 
-### FAQ
+### [FAQ](faq.md)
 
 - [Why is there not a "stable" or "latest" Docker image tag?](faq.md#why-is-there-not-a-stable-or-latest-docker-image-tag)
 
 ## Members
 
-- We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. The engineering team is owning PM responsibilities in the meantime.
+- We're hiring a [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296) for this role. The engineering team is owning PM responsibilities in the meantime.
 - [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
   - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
   - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)

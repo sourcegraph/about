@@ -437,9 +437,21 @@
       },
       "geometry": {
         "type": "Point",
-         "coordinates": [
-           10.777587890625,
-           59.90133567536662
+        "coordinates": [
+          10.777587890625,
+          59.90133567536662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malo Marrec"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4547656774520874,
+          48.73036516102081
         ]
       }
     }

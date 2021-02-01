@@ -18,10 +18,9 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ## [Operations](../../handbook/ops/index.md#goals)
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [People ops](../../handbook/people-ops/index.md#goals)
-### [Business & product operations](../../handbook/ops/bizops/index.md#goals)
-### [Sales strategy & operations](../../handbook/ops/sales-ops/index.md#goals)
-### [Finance & accounting](../../handbook/ops/finance/index.md#goals)
+### [People Ops](../../handbook/people-ops/index.md#goals)
+### [Business Operations & Strategy](../../handbook/ops/bizops/index.md#goals)
+### [Finance & Accounting](../../handbook/ops/finance/index.md#goals)
 ### [Legal](../../handbook/ops/legal/index.md#goals)
 
 ## Engineering

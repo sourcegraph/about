@@ -27,16 +27,17 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 
 ## Operations
 <!-- When updating the ops team list below, please also update handbook/index.md. -->
-### [People ops](../../handbook/people-ops/index.md#people-ops-team-members)
-### [Business & product operations](../../handbook/ops/bizops/index.md#members)
-### [Finance & accounting](../../handbook/ops/finance/index.md#members)
+### [People Ops](../../handbook/people-ops/index.md#people-ops-team-members)
+### [Business Operations & Strategy](../../handbook/ops/bizops/index.md#members)
+### [Finance & Accounting](../../handbook/ops/finance/index.md#members)
 ### [Legal](../../handbook/ops/legal/index.md#members)
+### [Tech Ops](../../handbook/ops/tech-ops/index.md#members)
 
 ## Sales
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 ### [Sales team](../../handbook/sales/index.md#members)
 ### [SDR team](../../handbook/sales/sdrteam/index.md#members)
-### [Sales strategy & operations](../../handbook/ops/sales-ops/index.md#members)
+### [Sales strategy & operations](../../handbook/sales/sales-ops/index.md#members)
 
 ## Other teams: TODO
 
