@@ -29,6 +29,7 @@ See [security goals and priorities](goals.md)
 - Increase our security posture by running traditional security tools such as vulnerability scanners, SAST, and DAST tools.
   - https://github.com/sourcegraph/sourcegraph/security/code-scanning
   - [Infrastructure information](./infrastructure/index.md)
+  - [Security tooling](./tooling/index.md)
 - Create a culture of security at Sourcegraph that empowers all of our engineers to write secure code.
 
 ## How we work
@@ -96,4 +97,4 @@ Security develops infrastructure in the [Auxilliary project](https://console.clo
 
 ## Open Positions
 
-[Software Engineer - Security](../../engineering/hiring/software-engineer-security.md)
+[Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)

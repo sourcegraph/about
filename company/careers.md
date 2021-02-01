@@ -9,46 +9,51 @@ We're hiring! Check out our open positions:
 ### Engineering
 
 - [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
-- [Engineering Manager - Cloud Application and Core Services](../handbook/engineering/hiring/engineering-manager-cloud.md)
-- [Software Engineer - Cloud - Frontend](../handbook/engineering/hiring/software-engineer-cloud-frontend.md)
-- [Software Engineer - Code Insights - Frontend](../handbook/engineering/hiring/software-engineer-code-insights-frontend.md)
-- [Software Engineer - Backend](../handbook/engineering/hiring/software-engineer-backend.md)
-- [Software Engineer - Distribution](../handbook/engineering/hiring/software-engineer-distribution.md)
-- [Software Engineer - Security](../handbook/engineering/hiring/software-engineer-security.md)
-- [Software Engineer - Campaigns - Full Stack / Frontend](../handbook/engineering/hiring/software-engineer-campaigns-full-stack-frontend.md)
+- [Engineering Manager - Cloud Application and Core Services](https://jobs.lever.co/sourcegraph/95ad534f-8724-45dc-9b50-291c5926a7dc)
+- [Software Engineer - Cloud - Frontend](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7)
+- [Software Engineer - Code Insights - Frontend](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb)
+- [Software Engineer - Backend](https://jobs.lever.co/sourcegraph/a0dba744-ed1d-4172-8a4a-0feb52609322)
+- [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
+- [Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+- [Software Engineer - Campaigns - Full Stack / Frontend](https://jobs.lever.co/sourcegraph/886e4343-6efc-4ab1-b204-f9115cfdeae3)
 
 ### Product
 
-- [Product Manager](../handbook/product/roles/product_manager.md)
-- [Product Designer](../handbook/product/roles/product_designer.md)
-- [Technical Writer](../handbook/product/roles/technical_writer.md)
+- [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)
+- [Product Designer](https://jobs.lever.co/sourcegraph/fa7d3807-ae4c-4a35-9401-56dad0958227)
+- [Technical Writer](https://jobs.lever.co/sourcegraph/933f214e-338b-422b-b5d9-0b01057576d3)
 
 ### Sales
 
-- [Account Executive](../handbook/sales/roles/account_executive.md)
+- [Account Executive](https://jobs.lever.co/sourcegraph/35aff80b-be4f-4887-a465-3e91e1ca3d2b)
 
 ### Customer Engineering
 
-- [Customer Engineer](../handbook/ce/roles/customer_engineer.md)
-- [Customer Support Engineer](../handbook/ce/roles/customer_support_engineer.md)
-- [Training Engineer](../handbook/ce/roles/training_engineer.md)
+- [Customer Engineer](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57)
+- [Customer Support Engineer](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a)
+- [Training Engineer](https://jobs.lever.co/sourcegraph/7aae60bb-228f-4e48-89f8-d16646aa4642)
 - [Director of Customer Engineering, East](https://jobs.lever.co/sourcegraph/82f595d8-9a88-40f6-b84a-b243c58754f0)
 - [Director of Customer Engineering, West](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1)
 - VP Customer Engineering (to be posted very soon)
 
 ### Marketing
 
-- [Director of Community](../handbook/marketing/roles/director_of_community.md)
+- [Director of Community](https://jobs.lever.co/sourcegraph/480e8d71-03af-4659-ac90-b8e32ad4ef34)
+- [Managing Editor](https://jobs.lever.co/sourcegraph/ab3b91a6-dc80-4883-9134-1a5a7a62f871)
+- [Customer Marketing Manager](https://jobs.lever.co/sourcegraph/5769890f-69bd-4ff5-8515-233ce8e3c620)
 
 ### Operations, finance, and legal
 
 - [Finance & Operations Analyst](https://jobs.lever.co/sourcegraph/35d6628e-9e9a-4385-a4ea-67e411732cb4)
 
 ### People Operations and Talent
-- [VP Talent](https://about.sourcegraph.com/handbook/talent/vp_talent) 
-- [Teammate Success Manager](https://about.sourcegraph.com/handbook/people-ops/roles/onboarding_teammate_success_manager)
-- [Technical Recruiter - Product](https://about.sourcegraph.com/handbook/people-ops/roles/technical_recruiter_product)
-- [Recruiter - GTM](https://about.sourcegraph.com/handbook/people-ops/roles/recruiter_customer_facing) 
+
+- [VP Talent](../handbook/talent/vp_talent.md)
+- [VP People Operations](../handbook/people-ops/vp_people_ops.md)
+- [Teammate Success Manager](https://jobs.lever.co/sourcegraph/700949a2-09ce-4de7-b3bd-a5af5032a4a9)
+- [Technical Recruiter - Product](https://jobs.lever.co/sourcegraph/c1630817-8de1-41e5-b199-00e1664be861)
+- [Recruiter - GTM](https://jobs.lever.co/sourcegraph/15af1881-2a4d-4c1c-86c2-0e157e4af889) 
+
 
 ## Apply
 

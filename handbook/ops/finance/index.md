@@ -8,7 +8,7 @@ The finance & accounting team is responsible for helping Sourcegraph acquire and
 
 ## Team
 
-We are hiring for the finance & accounting team! See all [open positions](../roles/index.md).
+We are hiring for the finance & accounting team! See all [open positions](../../../../company/careers.md).
 
 ### Members
 
@@ -17,7 +17,7 @@ We are hiring for the finance & accounting team! See all [open positions](../rol
 
 ### Roles
 
-See the [Operations roles](../roles/index.md) page.
+See our [careers page](../../../../company/careers.md) for open roles on the Finance team.
 
 ## Contact
 
