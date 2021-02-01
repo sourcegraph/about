@@ -42,7 +42,7 @@
     "react-router-dom": "^5.2.0",
     "react-share": "^4.3.1",
     "react-spring": "^8.0.27",
-    "rehype-react": "^6.1.0",
+    "rehype-react": "^6.2.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "ts-loader": "^8.0.14"
