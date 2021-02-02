@@ -27,7 +27,7 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
                 if (form) {
                     // We want to populate hidden fields in the form with values stored in cookies when the form loads.
                     const anonymousIdInput = form.querySelector<HTMLInputElement>('input[name="anonymous_user_id"]')
-                    if (anonymousIdInput) {
+                    if (anonymousIdInput && anonymousIdInput.value === '') {
                         // Populate the hidden anonymous_user_id form field with the value from the sourcegraphAnonymousUid cookie.
                         anonymousIdInput.value = anonymousId || ''
                     }
