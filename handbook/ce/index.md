@@ -2,8 +2,8 @@
 
 On the Customer Engineering team, we help developers use Sourcegraph to solve their organization's Big Code problems. 
 
-- [**Customer Engineers**](roles/customer_engineer.md) help our developer users and champions get more value from using Sourcegraph.
-- [**Customer Support Engineers**](roles/customer_support_engineer.md) solve technical problems from all organizations about deployment, configuration, integration, authentication, scaling, troubleshooting, and more. <!-- Example: A Customer Support Engineer might help a customer get perfect cross-repository code intelligence set up for all of their code so they have joyful and more effective code reviews. -->
+- [**Customer Engineers**](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57) help our developer users and champions get more value from using Sourcegraph in more and better ways.
+- [**Customer Support Engineers**](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a) solve technical problems from all organizations about deployment, configuration, integration, authentication, scaling, troubleshooting, and more. <!-- Example: A Customer Support Engineer might help a customer get perfect cross-repository code intelligence set up for all of their code so they have joyful and more effective code reviews. -->
 
 We work with many other teams at Sourcegraph, including:
 
@@ -48,19 +48,25 @@ We work with many other teams at Sourcegraph, including:
   - [Nick McMillen](../../company/team/index.md#nick-mcmillen-he-him)
 - Customer Support
   - [Virginia Ulrich](../../company/team/index.md#virginia-ulrich-she-her) (Head of Customer Support)
-  - We will be hiring Customer Support Engineers soon. Our Customer Engineers will continue in their support rotation for now.
+  - We are hiring [Customer Support Engineers](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a). Our Customer Engineers will continue in their support rotation until then.
 - [Quinn Slack](../../company/team/index.md#quinn-slack) (CEO) is leading Customer Engineering for now.
   - We are hiring for VP Customer Engineering and will have the role posted very soon.
 
 ## Roles
 
-We're hiring! Join us. See [roles](./roles/index.md) page.
+- [Customer Engineer](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57)
+- [Customer Support Engineer](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a)
+- [Training Engineer](https://jobs.lever.co/sourcegraph/7aae60bb-228f-4e48-89f8-d16646aa4642)
+- [Director of Customer Engineering, East](https://jobs.lever.co/sourcegraph/82f595d8-9a88-40f6-b84a-b243c58754f0)
+- [Director of Customer Engineering, West](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1)
+- VP of Customer Engineering (to be posted soon)
 
 ## Meetings
 
 - CE team and account strategy meeting (weekly on Tuesdays): Open team discussion about any topics, plus time for any team member to present specific situations occurring in their accounts and get advice from the rest of the team.
 - Demo workshop (weekly on Fridays): A weekly super chill, no-pressure, no-stress place where you can show off your new demo ideas and get helpful demo feedback/tips from team members.
 - CE team hangout (weekly on Fridays): An open forum to ask questions, collaborate, and chat as a team.
+- Product backlog review (weekly on Fridays): Discuss product feedback and requirements with the Product and Sales teams. To join, find it on a team member's calendar and add yourself.
 
 ## Pre-sales and post-sales
 
