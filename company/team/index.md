@@ -627,3 +627,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Buenos Aires, Argentina 🇦🇷 / Barcelona, Spain 🇪🇸 
 - [ines@sourcegraph.com](mailto:ines@sourcegraph.com), [GitHub](https://github.com/InesRoitman), [LinkedIn](https://www.linkedin.com/in/ines-roitman/) , [Pronounce my name 🔊](https://www.pronouncenames.com/In%C3%A9s)
 - Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection. 
+
+## James Clifford (he/him)
+
+- Account Executive
+- San Francisco, CA, USA 🇺🇸
+- GitHub: [jclifford1](https://github.com/jclifford1)
+- [jclifford@sourcegraph.com](mailto:jclifford@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jamesclifford91/)
+- James lives in San Francisco's North Beach neighborhood. Prior to Sourcegraph, James spent 5.5 years at Optimizely where he helped enterprise Engineering, Product, and Data teams to deliver better digital experiences through Full Stack experimentation and feature management. James graduated with a BA in Economics from Middlebury College. Outside of work, James can be found skiing in Tahoe or surfing and kiteboarding in the Pacific Ocean and San Francisco Bay.
