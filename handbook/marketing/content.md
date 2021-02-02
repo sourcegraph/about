@@ -2,7 +2,7 @@
 
 At Sourcegraph, we define **content marketing** as generating awareness, building trust, and nurturing our relationship with the developer community and enterprise buyers by providing interesting, relevant, and valuable content. This definition explains why we create content and who we create it for. 
 
-**Content strategy** dives a layer deeper to include the governance and operations of content: how we generate, validate, and approve ideas; how we ensure quality and consistency; where we distribute content; how we measure performance; and how we update, revise, and retire content
+**Content strategy** dives a layer deeper to include the governance and operations of content: how we generate, validate, and approve ideas; how we ensure quality and consistency; where we distribute content; how we measure performance; and how we update, revise, and retire content.
 
 ## Quick links
 
