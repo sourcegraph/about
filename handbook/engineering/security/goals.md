@@ -14,7 +14,7 @@ These goals represent our targeted work for 70% of our focus time. The remaining
 
 **Milestones:** 
 
-1. We need a better way to store and access [our own secrets](https://docs.google.com/document/d/1HzO7szEm-h4fqlQOnVbcJdpDmfQiM7Rb-Tz4CMEYl-Q).
+1. We have a better way to store and access [our own secrets](https://docs.google.com/document/d/1HzO7szEm-h4fqlQOnVbcJdpDmfQiM7Rb-Tz4CMEYl-Q).
 2. We have implemented continuous scanning for known security vulnerabilities, and have resolved all impactful vulnerabilities.
    1. Infrastructure vulnerability scans
    2. Docker image scans
