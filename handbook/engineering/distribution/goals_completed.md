@@ -2,6 +2,8 @@
 
 This page records goals completed by the Distribution team historically. See also our [current goals](goals.md).
 
+- [**2021**](#2021)
+  - [FY-21-Q1](#FY-21-Q1)
 - [**2020**](#2020)
   - [FY-20-Q4](#FY-20-Q1)
   - [FY-20-Q3](#FY-20-Q1)
@@ -10,9 +12,35 @@ This page records goals completed by the Distribution team historically. See als
 - [**2019**](#2019)
   - [FY-19-Q4](#FY-19-Q4)
 
-## 2020
+## 2021
 
 ### FY-21-Q1
+
+### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
+
+Performing upgrades to deployments is currently a complicated process that requires keeping a fork of our configuration and resolving diff conflicts when performing upgrades which are often complicated as the configuration might contain environment-specific customization. This process creates a bad experience for our customers because of the unknown amount of effort of the upgrade process.
+We will start by looking at our Kubernetes deployment and working on an easier update process.
+
+- **Owner**: Geoffrey, Uwe
+- **Status**: Parked
+- **Outcomes**:
+  - Upgrades to deployments do not require resolving diff conflicts from upstream.
+  - Upgrading a deployment configuration requires less than 2 hours of work.
+- **Milestones**:
+  - ~~Research and evaluate possible tools.~~ Done: `3.19`
+    - ~~Bash/JQ.~~
+    - ~~Cue.~~ Done: `3.17`
+    - ~~Dhall.~~ Done: `3.18`
+  - ~~Create a Kubernetes deployment PoC.~~ Done: `3.19`
+  - ~~Design Dhall Architecture.~~ Done: `3.20`
+  - ~~Create a demo video/presentation to gather customer feedback.~~ Done: `Dist: 2020.11.30`
+  - ~~Migrate all Sourcegraph components to Dhall code~~ Done: `2021.02.05`
+  - ~~Use Dhall to generate public Kubernetes manifests. _Estimated: FY21-Q1_~~
+  - ~~Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback.~~
+  - ~~Create customer facing migration path and how-to documentation. _Estimated: FY21-Q1_~~
+  - ~~Migrate a highly technical customer to Dhall and collect usage feedback. _Estimated: FY21-Q1_~~
+  - ~~Design customization workflow. _Estimated: FY21-Q1_~~
+    - ~~Potentially Kustomize would still be used for last-mile changes and non-standard derivations.~~
 
 ### [Split Cloud infrastructure into separate GCP projects](https://github.com/orgs/sourcegraph/projects/92)
 
@@ -50,6 +78,8 @@ We want to enable any engineer to perform a release as often as needed, to enabl
   - ~~[Releases can be done automatically (e.g. CLI command, `/` command in Slack, etc.)](https://github.com/orgs/sourcegraph/projects/131)~~._Descoped_: See "Descoped outcomes"
 - **Descoped outcomes**:
   - [Releases can be done automatically (e.g. CLI command, `/` command in Slack, etc.)](https://github.com/orgs/sourcegraph/projects/131): this outcome was descoped since the work on this goal has brought the release process to a reasonable state, and a [preliminary investigation](https://github.com/sourcegraph/sourcegraph/issues/9252#issuecomment-761713632) indicated that there might be diminishing returns from additional work on this. A new goal has been created to track work on this.
+
+## 2020
 
 ### FY-20-Q4
 

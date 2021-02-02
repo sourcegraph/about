@@ -6,30 +6,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 Progress toward our active goals is described in our [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fdistribution).
 
-### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
 
-Performing upgrades to deployments is currently a complicated process that requires keeping a fork of our configuration and resolving diff conflicts when performing upgrades which are often complicated as the configuration might contain environment-specific customization. This process creates a bad experience for our customers because of the unknown amount of effort of the upgrade process.
-We will start by looking at our Kubernetes deployment and working on an easier update process.
-
-- **Owner**: Geoffrey, Uwe
-- **Status**: In progress. Estimated completion FY21-Q1.
-- **Outcomes**:
-  - Upgrades to deployments do not require resolving diff conflicts from upstream.
-  - Upgrading a deployment configuration requires less than 2 hours of work.
-- **Milestones**:
-  - ~~Research and evaluate possible tools.~~ Done: `3.19`
-    - ~~Bash/JQ.~~
-    - ~~Cue.~~ Done: `3.17`
-    - ~~Dhall.~~ Done: `3.18`
-  - ~~Create a Kubernetes deployment PoC.~~ Done: `3.19`
-  - ~~Design Dhall Architecture.~~ Done: `3.20`
-  - ~~Create a demo video/presentation to gather customer feedback.~~ Done: `Dist: 2020.11.30`
-  - Migrate internal deployments to Dhall, onboard other teams on how to make changes with Dhall and collect feedback. **In progress**
-  - Create customer facing migration path and how-to documentation. _Estimated: FY21-Q1_
-  - Use Dhall to generate public Kubernetes manifests. _Estimated: FY21-Q1_
-  - Migrate a highly technical customer to Dhall and collect usage feedback. _Estimated: FY21-Q1_
-  - Design customization workflow. _Estimated: FY21-Q1_
-    - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
 
 ## Future goals
 
