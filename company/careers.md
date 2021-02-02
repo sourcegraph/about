@@ -45,6 +45,7 @@ We're hiring! Check out our open positions:
 ### Operations, finance, and legal
 
 - [Finance & Operations Analyst](https://jobs.lever.co/sourcegraph/35d6628e-9e9a-4385-a4ea-67e411732cb4)
+- [Tech Ops Analyst](https://jobs.lever.co/sourcegraph/40e2f3cc-9cc1-4753-8ab1-c1269e531cf3)
 
 ### People Operations and Talent
 
