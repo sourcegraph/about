@@ -14,6 +14,22 @@ This page records goals completed by the Distribution team historically. See als
 
 ### FY-21-Q1
 
+### [Split Cloud infrastructure into separate GCP projects](https://github.com/orgs/sourcegraph/projects/92)
+
+- **Owner**: Gonza
+- **Outcomes**:
+  - ~~We have a clear guideline on when to split resources to new projects.~~ Deprioritized
+  - We report the cost of each project.
+  - ~~We can set spending limits for dynamic environments.~~ Deprioritized
+- **Milestones**:
+  - ~~Create initial GCP structure.~~ Done: 3.19
+  - ~~Move non-production projects to folders.~~ Done: 3.20
+  - ~~Move CI to a new GCP project.~~ Done: 3.21
+  - ~~Move non-production deployments to separate projects.~~ Done: 3.21
+  - ~~Create code to bootstrap new projects.~~ Done: 3.21
+  - ~~Document project and folder usage guidelines.~~
+  - ~~Set spending limits for dynamic environments.~~ Descoped
+
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types
 
 Creating a new release for our deployments is currently a semi-automated process, which requires several manual steps and synchronizing our versioned artifacts (Sourcegraph, Kubernetes manifests, docker-compose manifests, etc).

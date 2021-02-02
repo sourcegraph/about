@@ -31,23 +31,6 @@ We will start by looking at our Kubernetes deployment and working on an easier u
   - Design customization workflow. _Estimated: FY21-Q1_
     - Potentially Kustomize would still be used for last-mile changes and non-standard derivations.
 
-### [Split Cloud infrastructure into separate GCP projects](https://github.com/orgs/sourcegraph/projects/92)
-
-- **Owner**: Gonza
-- **Status**: In progress. Estimated complete by end of 2020.
-- **Outcomes**:
-  - We have a clear guideline on when to split resources to new projects.
-  - We report the cost of each project.
-  - We can set spending limits for dynamic environments.
-- **Milestones**:
-  - ~~Create initial GCP structure.~~ Done: 3.19
-  - ~~Move non-production projects to folders.~~ Done: 3.20
-  - ~~Move CI to a new GCP project.~~ Done: 3.21
-  - ~~Move non-production deployments to separate projects.~~ Done: 3.21
-  - ~~Create code to bootstrap new projects.~~ Done: 3.21
-  - ~~Document project and folder usage guidelines.~~
-  - ~~Set spending limits for dynamic environments.~~ Descoped
-
 ## Future goals
 
 These are ideas for future goals that the team might work on. Just because something is on this list, does not mean it will be worked on next.
