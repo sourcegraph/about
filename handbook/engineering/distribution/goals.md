@@ -6,8 +6,39 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 Progress toward our active goals is described in our [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fdistribution).
 
+### [Collect metrics and feedback about Sourcegraph deployments]()
 
+Sourcegraph collects a number of data points through pings that are used to understand how customers use Sourcegraph and drive how we improve the product. We currently do not have any metrics, pings or manual data points collected from customers, which makes it impossible for the Distribution team to make educated guesses on features that customers require and how projects should be prioritized.
 
+- **Owner**:
+- **Status**:
+- **Outcomes**:
+  - We can collect feedback from site-admins.
+  - We have defined an initial set of data points to collect.
+  - We have a tool in place to store and query site-admin data.
+  - We have a process that allows CE/CSE to relay feedback provided by customers.
+- **Milestones**: TBD
+
+### [Make t]()
+
+As a potential customer, I want to default to a minimal Sourcegraph deployment, so that I can grow my infrastructure cost and complexity with usage.
+
+- **Owner**:
+- **Status**:
+- **Outcomes**:
+  -
+- **Milestones**: TBD
+
+### [Provide a Sourcegraph stack deployment option]()
+
+As a site-admin, I want to have an full Sourcegraph deployment option, so that I can avoid the complexities of setting up a Kubernetes cluster.
+
+- **Owner**:
+- **Status**:
+- **Outcomes**:
+  - Customers can deploy a Sourcegraph Kubernetes cluster to an isolated project in their own cloud
+  - Customers can deploy a Sourcegraph single-instance into an existing project in their own cloud
+- **Milestones**: TBD
 ## Future goals
 
 These are ideas for future goals that the team might work on. Just because something is on this list, does not mean it will be worked on next.
