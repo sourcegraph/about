@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Farhan Attamimi <farhan@sourcegraph.com>",
   "dependencies": {
+    "@types/js-cookie": "2.2.6",
     "@types/react-helmet": "6.1.0",
     "bootstrap": "^4.6.0",
     "catch-links": "^2.0.1",
@@ -30,6 +31,7 @@
     "gatsby-transformer-json": "^2.10.0",
     "gatsby-transformer-remark": "^2.15.0",
     "gatsby-transformer-sharp": "^2.11.0",
+    "js-cookie": "^2.2.1",
     "lodash": "^4.17.20",
     "mdi-react": "^7.4.0",
     "node-sass": "^4.14.1",
