@@ -24,7 +24,7 @@ _* Joel is the acting PM for this team until we are able to hire a dedicated PM 
 
 ## Contact
 
-- [#web](https://sourcegraph.slack.com/archives/CMT39K56Z) channel or @web-team in Slack.
+- [#web-chat](https://sourcegraph.slack.com/archives/CMT39K56Z) channel or @web in Slack.
 - [team/web](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/web) label and [@sourcegraph/web](https://github.com/orgs/sourcegraph/teams/web) team on GitHub.
 
 ## [Goals](goals.md)
@@ -104,9 +104,9 @@ We default to asynchronous communication in Slack and GitHub issues over other m
 
 The team communicates in the following channels in Slack:
 
-[**#web**](https://sourcegraph.slack.com/archives/CMT39K56Z): All work related commmunication happens in this channel. This is also the primary channel for teammates outside of the team to reach out to us.
+[**#web-chat**](https://sourcegraph.slack.com/archives/CMT39K56Z): All work related commmunication happens in this channel. This is also the primary channel for teammates outside of the team to reach out to us.
 
-[**#web-chat**](https://sourcegraph.slack.com/archives/C01EM5J1NF8): Our daily standups (facilited through Geekbot) go into this channel as well as all non-work related commmunication. Random conversations, banter, jokes etc. are all welcome here. 
+[**#web-team**](https://sourcegraph.slack.com/archives/C01EM5J1NF8): Our daily standups (facilited through Geekbot) go into this channel as well as all non-work related commmunication. Random conversations, banter, jokes etc. are all welcome here. 
 
 [**#web-onboarding**](https://sourcegraph.slack.com/archives/C01K7TKKR09): This channel is dedicated to questions or thoughts that new teammates have while they onboard. It's a safe space to simply think out load and the goal is to identify things that we can improve and things we should make more clear in the handbook.
 
@@ -117,6 +117,9 @@ The web team keeps a backlog GitHub project board for each of our focus areas: [
 We use the backlogs for tracking bugs, small features, and unplanned work. We don't use the backlog for tracking work that is expressly planned in our [roadmap](goals.md#roadmap). 
 
 To add an issue, tag it `team/web` to notify the web team PM and put it in the "to triage" column of the board. Unless you're directly asked, only web team members should move issues out of the "to triage" column on the board. A web team member will confirm the issue is web team-related, and then move it to the appropriate column.
+
+#### Tracking Issues
+The web team makes use of [tracking issues](../tracking_issues.md) for tracking progress on the implementation of new features. The web team should ensure that a tracking issue is created when starting work on features that are expected to take longer than a single iteration to deliver.
 
 #### Product Feedback
 
