@@ -39,6 +39,7 @@ As a site-admin, I want to have an full Sourcegraph deployment option, so that I
   - Customers can deploy a Sourcegraph Kubernetes cluster to an isolated project in their own cloud
   - Customers can deploy a Sourcegraph single-instance into an existing project in their own cloud
 - **Milestones**: TBD
+
 ## Future goals
 
 These are ideas for future goals that the team might work on. Just because something is on this list, does not mean it will be worked on next.

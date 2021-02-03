@@ -3,18 +3,18 @@
 This page records goals completed by the Distribution team historically. See also our [current goals](goals.md).
 
 - [**2021**](#2021)
-  - [FY-21-Q1](#FY-21-Q1)
+  - [FY-22-Q1](#FY-22-Q1)
 - [**2020**](#2020)
-  - [FY-20-Q4](#FY-20-Q1)
-  - [FY-20-Q3](#FY-20-Q1)
-  - [FY-20-Q2](#FY-20-Q1)
-  - [FY-20-Q1](#FY-20-Q1)
+  - [FY-21-Q4](#FY-21-Q1)
+  - [FY-21-Q3](#FY-21-Q1)
+  - [FY-21-Q2](#FY-21-Q1)
+  - [FY-21-Q1](#FY-21-Q1)
 - [**2019**](#2019)
-  - [FY-19-Q4](#FY-19-Q4)
+  - [FY-20-Q4](#FY-20-Q4)
 
 ## 2021
 
-### FY-21-Q1
+### FY-22-Q1
 
 ### [Upgrades between releases are easy to perform](https://github.com/orgs/sourcegraph/projects/71)
 
@@ -81,7 +81,7 @@ We want to enable any engineer to perform a release as often as needed, to enabl
 
 ## 2020
 
-### FY-20-Q4
+### FY-21-Q4
 
 #### Automatic e2e testing
 
@@ -108,7 +108,7 @@ We have had customers interested in deploying Sourcegraph at large-scale with ~5
 - [Tracking issue](https://github.com/sourcegraph/customer/issues/57)
 - Discussions: [Initial planning issue](https://github.com/sourcegraph/customer/issues/57), [discussion about costs at this scale](https://github.com/sourcegraph/customer/issues/20)
 
-### FY-20-Q3
+### FY-21-Q3
 
 #### Docker-compose should be released on-time (on the 20th)
 
@@ -136,21 +136,21 @@ We have standardized alerting across our deployment methods, but it is very diff
 
 - Owner: Robert
 
-### FY-20-Q2
+### FY-21-Q2
 
 (This section left empty as we were using a different goal system during this time.)
 
-### FY-20-Q1
+### FY-21-Q1
 
 (This section left empty as we were using a different goal system during this time.)
 
 ## 2019
 
-### FY-19-Q1
+### FY-20-Q1
 
 (This section left empty as we were using a different goal system during this time.)
 
-### FY-19-Q4
+### FY-20-Q4
 
 (This section left empty as we were using a different goal system during this time.)
 
