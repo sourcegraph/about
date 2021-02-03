@@ -5,9 +5,9 @@ This page records goals completed by the Distribution team historically. See als
 - [**2021**](#2021)
   - [FY-22-Q1](#FY-22-Q1)
 - [**2020**](#2020)
-  - [FY-21-Q4](#FY-21-Q1)
-  - [FY-21-Q3](#FY-21-Q1)
-  - [FY-21-Q2](#FY-21-Q1)
+  - [FY-21-Q4](#FY-21-Q4)
+  - [FY-21-Q3](#FY-21-Q3)
+  - [FY-21-Q2](#FY-21-Q2)
   - [FY-21-Q1](#FY-21-Q1)
 - [**2019**](#2019)
   - [FY-20-Q4](#FY-20-Q4)
@@ -58,6 +58,10 @@ We will start by looking at our Kubernetes deployment and working on an easier u
   - ~~Document project and folder usage guidelines.~~
   - ~~Set spending limits for dynamic environments.~~ Descoped
 
+## 2020
+
+### FY-21-Q4
+
 ### Any engineer at Sourcegraph can create a release for all of our supported deployment types
 
 Creating a new release for our deployments is currently a semi-automated process, which requires several manual steps and synchronizing our versioned artifacts (Sourcegraph, Kubernetes manifests, docker-compose manifests, etc).
@@ -78,10 +82,6 @@ We want to enable any engineer to perform a release as often as needed, to enabl
   - ~~[Releases can be done automatically (e.g. CLI command, `/` command in Slack, etc.)](https://github.com/orgs/sourcegraph/projects/131)~~._Descoped_: See "Descoped outcomes"
 - **Descoped outcomes**:
   - [Releases can be done automatically (e.g. CLI command, `/` command in Slack, etc.)](https://github.com/orgs/sourcegraph/projects/131): this outcome was descoped since the work on this goal has brought the release process to a reasonable state, and a [preliminary investigation](https://github.com/sourcegraph/sourcegraph/issues/9252#issuecomment-761713632) indicated that there might be diminishing returns from additional work on this. A new goal has been created to track work on this.
-
-## 2020
-
-### FY-21-Q4
 
 #### Automatic e2e testing
 
@@ -145,14 +145,6 @@ We have standardized alerting across our deployment methods, but it is very diff
 (This section left empty as we were using a different goal system during this time.)
 
 ## 2019
-
-### FY-20-Q1
-
-(This section left empty as we were using a different goal system during this time.)
-
-### FY-20-Q4
-
-(This section left empty as we were using a different goal system during this time.)
 
 #### Push admins to upgrade more frequently
 
