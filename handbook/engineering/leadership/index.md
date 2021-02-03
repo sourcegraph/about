@@ -6,7 +6,7 @@ This page documents the engineering leadership team.
 
 - [Beyang Liu](../../../company/team/index.md#beyang-liu), CTO
 - [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](../roles.md#vp-engineering)
-- [Everyone who reports to Nick](eng_org.md#organization)
+- [Everyone who reports to Nick](../eng_org.md#organization)
 
 ## Goals
 
