@@ -52,14 +52,8 @@ Iterations start **every other Monday**.
 
 ## Members
 
-- We're hiring a [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
-- [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
-  - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
-  - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
-  - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
-  - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
-  - [Rok Novosel](../../../company/team/index.md#rok-novosel-he-him)
-  - [Camden Cheek](../../../company/team/index.md#camden-cheek-hehim)
+- We're hiring a [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantimoe.
+- [Engineering team](../eng_org.md#search-product)
 
 ## On-call
 

@@ -48,16 +48,7 @@ See [Goals](goals.md)
 ## Members
 
 - We're hiring a [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296) for this role. The engineering team is owning PM responsibilities in the meantime.
-- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
-  - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
-  - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
-  - [Dave Try](../../../company/team/index.md#dave-try)
-  - [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
-  - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
-
-Other:
-
-- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) is in an experimental role acting as [an internal contributor, focused on high-value low-cost wins across the board.](https://docs.google.com/document/d/18c9dVjw5MuvOMHahCFQQPAVsp1vRdFDDI_7hmo5MWyQ/edit) His work is not isolated from the Distribution team, it will tracked on [a project board](https://github.com/orgs/sourcegraph/projects/106), with regular status updates to his manager and any other relevant teams. He will work closely with (and sometimes embedded in) other teams, and get alignment with the product team (and any other team) on his work. This is an experiment between 2020-11-23 and 2021-01-23 and we will evaluate the outcome around that time. [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) will continue to be his manager during this experiment.
+- [Engineering team](../eng_org.md#distribution)
 
 ## On-call rotation
 

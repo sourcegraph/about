@@ -115,14 +115,7 @@ By default, members of the team will provide a brief update about the goals they
 
 - We're hiring a [Product Manager](../../product/roles/product_manager.md) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
 - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) ([Product Designer](../../product/roles/product_designer.md))
-- [Tomás Senart](../../../company/team/index.md#tomás-senart) ([Engineering Manager](../roles.md#engineering-manager))
-  - [Joe Chen](../../../company/team/index.md#joe-chen)
-  - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
-  - [Asdine El Hrychy](../../../company/team/index.md#asdine-el-hrychy)
-  - [Alan Harris](../../../company/team/index.md#alan-harris-he-him)
-  - [Artem Ruts](../../../company/team/index.md#artem-ruts-he-him)
-  - [Alex Russell-Saw](../../../company/team/index.md#alex-russell-saw-he-him)
-  - I. G. estimated start date is February 1st 2021
+- [Engineering team](../eng_org.md#core-application)
 
 ## Growth plan
 

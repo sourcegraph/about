@@ -106,12 +106,10 @@ The private channel is for communications that would be of no interest to someon
 The Campaigns team is the current owner of [src-cli](https://github.com/sourcegraph/src-cli), due to the fact that most of the src-cli work in recent months has been related to Campaigns. We do not expect to be the permanent owners of src-cli; when another team becomes the main contributor, we will transfer ownership to them.
 
 ## Members
+
 - [Rob Rhyne](../../../company/team/index.md#rob-rhyne) acting Product Manager and Product Designer
 - [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) Product Manager (onboarding)
-- [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) Engineering Manager
-  - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
-  - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
-  - [Erik Seliger](../../../company/team/index.md#erik-seliger)
+- [Engineering team](../eng_org.md#campaigns)
 
 ## Related links
 

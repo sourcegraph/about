@@ -36,6 +36,11 @@ Build a code intelligence platform that understands code in all languages and pr
 
 See [goals and priorities](goals.md)
 
+## Members
+
+- [María Craig](../../../company/team/index.md#maría-craig-she-her) Product Manager
+- [Engineering team](../eng_org.md#code-intelligence)
+
 ## Contact
 
 - #code-intel channel or @codeintel in Slack.
@@ -94,15 +99,6 @@ Our team is growing and to help our new teammates have the best onboarding exper
 **Inverted Presentation**: Our new teammate has now had some time to explore the source code and will use their knowledge to present to the team. You can choose to either explain the architecture of an existing component or present a solution to a problem you just solved. The team will give feedback and clarify where needed and provide more details to high-level designs.
 
 **Feedback**: We want to hear from our new teammate how helpful each of these onboarding experiences was and we will continuously update our onboarding guide based on new insights. As per the engineering guide for feedback will be gathered in week 6.
-
-## Members
-
-- [María Craig](../../../company/team/index.md#maría-craig-she-her) Product Manager
-- [Owen Convey](../../../company/team/index.md#owen-convey-he-him) ([Engineering Manager](../roles.md#engineering-manager))
-  - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
-  - [Garo Brik](../../../company/team/index.md#garo-brik-they-them)
-  - [Noah Santschi-Cooney](../../../company/team/index.md#noah-santschi-cooney-he-him)
-  - [Ólafur Páll Geirsson](../../../company/team/index.md#olafurpg)
 
 ## Ownership
 
