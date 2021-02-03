@@ -635,3 +635,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [jclifford1](https://github.com/jclifford1)
 - [jclifford@sourcegraph.com](mailto:jclifford@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jamesclifford91/)
 - James lives in San Francisco's North Beach neighborhood. Prior to Sourcegraph, James spent 5.5 years at Optimizely where he helped enterprise Engineering, Product, and Data teams to deliver better digital experiences through Full Stack experimentation and feature management. James graduated with a BA in Economics from Middlebury College. Outside of work, James can be found skiing in Tahoe or surfing and kiteboarding in the Pacific Ocean and San Francisco Bay.
+
+## TJ DeVries
+
+- Software Engineer
+- Rockford, MI, USA 🇺🇸
+- GitHub: tjdevries
+- [tjdevries@sourcegraph.com](mailto:tjdevries@sourcegraph.com), [twitch.tv/teej_dv](https://twitch.tv/teej_dv)
+- The letter T, and then the letter J
+- TJ lives in Rockford, Michigan. Besides coding during the day, TJ also likes to code on his Twitch stream (linked above). Generally you can find him working on Neovim or Neovim-related plugins and having a good time hanging out with Twitch chat. Outside of coding, TJ loves to spend time with his wife, son and doggo. Also, playing four-mallet marimba is one of his other favorite activities. 
