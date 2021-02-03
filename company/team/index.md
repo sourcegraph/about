@@ -542,7 +542,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Emily Chapman (she/her)
 
 - Customer Engineer
-- Los Angeles, USA, 🇺🇸
+- Los Angeles, USA
 - GitHub: [emchap](https://github.com/emchap)
 - [emily@sourcegraph.com](mailto:emily@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/emchap/)
 - [Name pronunciation](https://www.name-coach.com/emily-chapman-ec13ee64-97e1-4eb4-978f-59d672131b50)
