@@ -13,7 +13,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
 ## Organization
 
 - [Beyang Liu](../../../company/team/index.md#beyang-liu), CTO
-- [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](../roles.md#vp-engineering)
+- [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](roles.md#vp-engineering)
   - Org: Search and replace (WIP name)
     - FQ3 Engineering director, Nick acting manager until then.
     - Team: Search platform and infrastructure (currently [Search](search/index.md)) {#search-platform-and-infrastructure}
@@ -23,7 +23,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
         - FQ1 backend engineer
         - FQ3 backend engineer
     - Team: Search product (currently [Search](search/index.md)) {#search-product}
-      - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
+      - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](roles.md#engineering-manager))
         - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
         - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
         - [Rok Novosel](../../../company/team/index.md#rok-novosel-he-him)
@@ -32,7 +32,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
         - FQ2 frontend hire
         - FQ3/4 TBD
     - Team: [Code intelligence](code-intelligence/index.md) {#code-intelligence}
-      - [Owen Convey](../../../company/team/index.md#owen-convey-he-him) ([Engineering Manager](../roles.md#engineering-manager))
+      - [Owen Convey](../../../company/team/index.md#owen-convey-he-him) ([Engineering Manager](roles.md#engineering-manager))
         - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
         - [Garo Brik](../../../company/team/index.md#garo-brik-they-them)
         - [Noah Santschi-Cooney](../../../company/team/index.md#noah-santschi-cooney-he-him)
@@ -42,7 +42,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
         - FQ3 engineer
         - FQ4 engineer
     - Team: [Campaigns](campaigns/index.md) {#campaigns}
-      - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager))
+      - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](roles.md#engineering-manager))
         - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
         - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
         - [Erik Seliger](../../../company/team/index.md#erik-seliger)
@@ -50,7 +50,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
         - FQ2 engineer
         - FQ3/4 TBD
   - Org: Web (WIP name)
-    - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](../roles.md#engineering-manager))
+    - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](roles.md#engineering-manager))
     - Team: Frontend platform (currently [web team](web/index.md)) {#frontend-platform}
       - FQ1 [Engineering Manager](roles.md#engineering-manager), Jean acting manager until then.
         - [Tom Ross](../../../company/team/index.md#tom-ross-he-him)
@@ -66,7 +66,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
         - FQ2 frontend engineer
         - FQ4 frontend engineer
     - Team: [Code insights](code-insights/index.md) {#code-insights}
-      - [Felix Becker](../../../company/team/index.md#felix-becker) ([Engineering Manager](../roles.md#engineering-manager))
+      - [Felix Becker](../../../company/team/index.md#felix-becker) ([Engineering Manager](roles.md#engineering-manager))
         - FQ1 [backend engineer](https://jobs.lever.co/sourcegraph/a0dba744-ed1d-4172-8a4a-0feb52609322)
         - FQ1 [frontend engineer](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb)
         - FQ2 [frontend engineer](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb)
@@ -83,7 +83,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
         - FQ3 [security engineer](https://hire.lever.co/jobs/postings/edit/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
         - FQ4 [security engineer](https://hire.lever.co/jobs/postings/edit/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
     - Team: [Distribution](distribution/index.md) {#distribution}
-      - [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
+      - [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](roles.md#engineering-manager))
         - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
         - [Dave Try](../../../company/team/index.md#dave-try)
         - [Robert Lin](../../../company/team/index.md#robert-lin) (on leave, return TBD)
