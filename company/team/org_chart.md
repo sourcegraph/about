@@ -8,7 +8,7 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 	<small>If the org chart does not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
 
-## [Engineering](../../handbook/engineering/eng_org.md#members)
+## [Engineering](../../handbook/engineering/eng_org.md#organization)
 
 ## [Product](../../handbook/product/index.md#members)
 
