@@ -41,7 +41,7 @@ We work with many other teams at Sourcegraph, including:
 <!-- Alphabetically, by surname. -->
 
 - Customer Engineers
-  - [Emily Chapman](../../company/team/index.md#emily-chapman-she-her)
+  - [Emily Chapman](../../company/team/index.md#emily-chapman-she-her) New changes!
   - [Jonah Dueck](../../company/team/index.md#jonah-dueck-he-him)
   - [Christine Lovett](../../company/team/index.md#christine-lovett-she-her)
   - [Mike McLaughlin](../../company/team/index.md#mike-mclaughlin-he-him)
