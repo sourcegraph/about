@@ -91,7 +91,7 @@ Security develops infrastructure in the [Auxilliary project](https://console.clo
 
 ## Members
 
-[Engineering team](../eng_org.md#security)
+- [Engineering team](../eng_org.md#security)
 
 ## Open Positions
 
