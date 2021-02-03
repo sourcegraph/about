@@ -13,7 +13,7 @@ We work with many other teams at Sourcegraph, including:
 ---
 
 * [Customer Engineering Onboarding](onboarding.md)
-* [Customer Support Onboarding] (customer-support-onboarding.md)
+* [Customer Support Onboarding](customer-support-onboarding.md)
 * [Team members](#members)
 * [Customer notes](customer-notes.md)
 * [Training session and demo flows](training.md)
