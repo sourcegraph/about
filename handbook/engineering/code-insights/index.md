@@ -32,4 +32,5 @@ The code insights team also keeps a [backlog GitHub project board](https://githu
 ## Members
 
 - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) Product Manager
+- [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/product_designer.md))
 - [Engineering team](../eng_org.md#code-insights)

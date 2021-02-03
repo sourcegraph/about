@@ -107,8 +107,8 @@ The Campaigns team is the current owner of [src-cli](https://github.com/sourcegr
 
 ## Members
 
-- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) acting Product Manager and Product Designer
 - [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) Product Manager (onboarding)
+- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) [Product Designer](../../product/roles/product_designer.md)
 - [Engineering team](../eng_org.md#campaigns)
 
 ## Related links
@@ -119,8 +119,3 @@ The Campaigns team is the current owner of [src-cli](https://github.com/sourcegr
 - [Supporting Campaigns](supporting-campaigns.md)
 - [Campaign's Drive Folder (private)](https://drive.google.com/drive/u/0/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn)
 - [Campaign's Product Marketing Brief](https://docs.google.com/document/d/1yQpCKF50gx8_T-KDnU4s9TjW6fZpMUfWLF2h4xSM8jk)
-## Growth plan
-
-_Updated 2020-12-09_
-
-We are looking for a [full-stack or frontend engineer](https://jobs.lever.co/sourcegraph/886e4343-6efc-4ab1-b204-f9115cfdeae3) to join our team!
