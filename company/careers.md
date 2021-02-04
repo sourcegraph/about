@@ -12,6 +12,7 @@ We're hiring! Check out our open positions:
 - [Engineering Manager - Cloud Application and Core Services](https://jobs.lever.co/sourcegraph/95ad534f-8724-45dc-9b50-291c5926a7dc)
 - [Software Engineer - Cloud - Frontend](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7)
 - [Software Engineer - Code Insights - Frontend](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb)
+- [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 - [Software Engineer - Backend](https://jobs.lever.co/sourcegraph/a0dba744-ed1d-4172-8a4a-0feb52609322)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
 - [Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
