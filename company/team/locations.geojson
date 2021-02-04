@@ -454,6 +454,17 @@
           48.73036516102081
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {"Jean du Plessis"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.69546890258789,
+          -33.81944570348443
+        ]
+      }
     }
   ]
 }

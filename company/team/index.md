@@ -441,7 +441,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Cape Town, South Africa 🇿🇦
 - GitHub: [jeanduplessis](https://github.com/jeanduplessis)
 - Name pronunciation: [ʒɑ̃n dy plɛsi](http://ipa-reader.xyz/?text=%CA%92%C9%91%CC%83n%20dy%20pl%C9%9Bsi&voice=Joey)
-- [jean@sourcegraph.com](mailto:jean@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jeandp)
+- [jean@sourcegraph.com](mailto:jean@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jeandp), [manager docs](jean-du-plessis.md),
 - Jean lives with his wife, quadruplet daughters and 3 dogs in Cape Town, South Africa. Their family loves the outdoors, whether it's hiking in the mountains or spending time at the beach. He's been in IT for the past 16 years of which he's been a manager for 7. Prior to Sourcegraph, he was a manager at GitLab.
 
 ## Eli Rothschild (He/Him)
