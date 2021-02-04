@@ -23,7 +23,7 @@ Sourcegraph collects a number of data points through pings that are used to unde
 
 ### [Provide a Sourcegraph in a box deployment option]()
 
-As a site-admin, I want to have an full Sourcegraph deployment option, so that I can avoid the complexities of setting up a Kubernetes cluster.
+Sourcegraph is currently deployed via three, self serve methods. The only one-step deployment method (the sourcegraph docker image) is being sunsetted. As a result, we need to provide a turn-key full deployment option of Sourcegraph. Thus sllowing end users to explore a full featured deployment, without having to understand the complexity of cloud infrastructure.
 
 - **Owner**:
 - **Status**: TBD. _Estimate FY22-Q1_
@@ -36,7 +36,16 @@ As a site-admin, I want to have an full Sourcegraph deployment option, so that I
   - Docker-compose in a box can be upgraded in place.
   - We have Infrastructure as Code to deploy a Kuberentes cluster with Sourcegraph from scratch to 1 cloud provider.
   - Stretch: We can leverage Cloud services of the cloud provider for the requried services.
-  - 
+
+### [Make t]()
+
+As a potential customer, I want to default to a minimal Sourcegraph deployment, so that I can grow my infrastructure cost and complexity with usage.
+
+- **Owner**:
+- **Status**:
+- **Outcomes**:
+  -
+- **Milestones**: TBD
 
 ## Future goals
 
