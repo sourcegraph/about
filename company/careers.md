@@ -4,7 +4,7 @@ Join us on our mission to make it so everyone, in every community, in every coun
 
 ## Open positions
 
-We're hiring! Check out our open positions:
+We're hiring! All our positions are remote. Our teammates are distributed [around the world.](https://about.sourcegraph.com/company/team)
 
 ### Engineering
 
@@ -26,7 +26,9 @@ We're hiring! Check out our open positions:
 
 ### Sales
 
-- [Account Executive](https://jobs.lever.co/sourcegraph/35aff80b-be4f-4887-a465-3e91e1ca3d2b)
+- [Account Executive - US East](https://jobs.lever.co/sourcegraph/35aff80b-be4f-4887-a465-3e91e1ca3d2b)
+- [Account Executive - US West](https://jobs.lever.co/sourcegraph/21ff9156-32d9-40e6-b0d5-6d3a555ccd12)
+- [Account Executive - International](https://jobs.lever.co/sourcegraph/c56818d3-9613-4c57-a50d-fc5de3fee01a)
 
 ### Customer Engineering
 
