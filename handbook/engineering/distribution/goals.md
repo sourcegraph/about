@@ -44,12 +44,26 @@ As a site-admin, I want to have an full Sourcegraph deployment option, so that I
 
 These are ideas for future goals that the team might work on. Just because something is on this list, does not mean it will be worked on next.
 
+### [Deprecate single-docker for production usage]
+
+In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPpEzA3-0glPEMY/edit#) we discussed and agreed to deprecate single-docker for production usage. The RFC has been approved and we have to take the next steps in removing this deployment type.
+
+- **Owner**:
+- **Status**: Not started. _Estimated: FY22-Q1_
+- **Outcomes**:
+  - No new production deployments are crated using single-docker
+- **Milestones**:
+  - Create migration docs for customer and Sourcegraph to assist customers
+  - Set deprecation notice and announce deprecation in X versions
+  - Update documentation
+  - Stretch: Remove the single-docker deployment option
+
 ### [Improve internal deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
 
 Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegraph Cloud) has several usability problems - for example, it is hard for engineers to identify when a commit was deployed to an environment or which deployment is currently running in a particular environment. We want to improve the deployment experience, making sure we can deploy with confidence and can easily understand in which stage of the pipeline a change currently is.
 
 - **Owner**: Dax
-- **Status**: Not started. Unknown amount of work. _Estimated: FY21-Q1_
+- **Status**: Not started. Unknown amount of work. _Estimated: FY22-Q1_
 - **Outcomes**:
   - It is simple to identify when a commit has been deployed to an environment.
   - Developers are notified when their PR is deployed to an environment.
