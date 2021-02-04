@@ -44,6 +44,18 @@ As a site-admin, I want to have an full Sourcegraph deployment option, so that I
 
 These are ideas for future goals that the team might work on. Just because something is on this list, does not mean it will be worked on next.
 
+### [Provide an alternative docker registry]
+
+DockerHub announced that they will be rate-limiting image pulls for anonymous and free clients. While we don't anticipate this affecting our customers, we want to have some solution in place in the case some of them are affected.
+
+- **Owner**:
+- **Status**: Not started. TBD
+- **Outcomes**:
+  - We have a mirrored docker repository containing all our old+new builds
+  - Have documentation on how to change the repository that can be used by CE to assist customers
+- **Milestones**:
+  -
+
 ### [Deprecate single-docker for production usage]
 
 In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPpEzA3-0glPEMY/edit#) we discussed and agreed to deprecate single-docker for production usage. The RFC has been approved and we have to take the next steps in removing this deployment type.
@@ -51,11 +63,11 @@ In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPp
 - **Owner**:
 - **Status**: Not started. _Estimated: FY22-Q1_
 - **Outcomes**:
-  - No new production deployments are crated using single-docker
+  - No new production deployments are crated using single-docker after completion.
 - **Milestones**:
   - Create migration docs for customer and Sourcegraph to assist customers
   - Set deprecation notice and announce deprecation in X versions
-  - Update documentation
+  - single-docker is deprecated for production usage
   - Stretch: Remove the single-docker deployment option
 
 ### [Improve internal deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
