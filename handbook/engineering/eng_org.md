@@ -16,7 +16,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
 - [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](roles.md#vp-engineering)
     - Org: Search and replace (WIP name)
         - FQ3 Engineering director, Nick acting manager until then.
-        - Team: Search platform and infrastructure (currently [Search](search/index.md)) {#search-platform-and-infrastructure}
+        - Team: Search core backend (currently [Search](search/index.md)) {#search-core-backend}
             - FQ2 [Engineering Manager](roles.md#engineering-manager), Loïc acting manager until then.
                 - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
                 - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
