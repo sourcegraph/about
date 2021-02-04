@@ -457,7 +457,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"Jean du Plessis"},
+      "properties": {"name":"Jean du Plessis"},
       "geometry": {
         "type": "Point",
         "coordinates": [
