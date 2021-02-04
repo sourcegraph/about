@@ -12,7 +12,7 @@ We have a flexible vacation policy with mandatory annual vacation time that enco
 
 ## 🏥 Medical
 
-We offer high-quality medical, dental, and vision care for all full-time employees and their dependents. We cover 99% to 100% of premiums for employees and all of their dependents for each.
+We offer high-quality medical, dental, and vision care for all US-based full-time employees and their dependents. We cover 99% to 100% of premiums for employees and all of their dependents for each.
 
 ## 🏥 Life insurance
 
