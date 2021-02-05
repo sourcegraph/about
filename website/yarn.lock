@@ -1664,10 +1664,10 @@
   resolved "https://registry.yarnpkg.com/@sourcegraph/prettierrc/-/prettierrc-3.0.3.tgz#51bfa9b2588fe35121593fa877143e6373028289"
   integrity sha512-FQ1/Ued4I02R0JkrHHofDN163juVxUnPALzfxPZrDZUHv+c3jHjfZhmTHEz+Wd+g3b7MFk0fkj36nZSnvPyU8A==
 
-"@sourcegraph/stylelint-config@^1.1.9":
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/@sourcegraph/stylelint-config/-/stylelint-config-1.1.9.tgz#12c7d6476a6074c170a5e945e3bdf43f7b0711cf"
-  integrity sha512-g+NZstXoNO6XT3041gVB9shmaIOD74hgZ67Vr05APcID0vmdQ9eiefvwvNz1OGH1vVV5su9QuYLu0gynUpAaMg==
+"@sourcegraph/stylelint-config@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sourcegraph/stylelint-config/-/stylelint-config-1.2.0.tgz#b2b8c5091c4104de82842f30f34b50954b4bf5bf"
+  integrity sha512-0AZSnuY4nzRolTO6QYb4xlMwwkg/1WgpHm15a9gsk4i6yA8wVHakFdyP05Y2gXBkkI4LazzsKeGxGyieu0Q/Qw==
   dependencies:
     stylelint-config-prettier "^8.0.1"
     stylelint-config-standard "^20.0.0"
