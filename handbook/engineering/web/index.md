@@ -19,14 +19,14 @@ This is a large ownership area, so the team creates a focused plan each iteratio
    - FQ1 [Engineering Manager](roles.md#engineering-manager), Jean acting manager until then.
          - [Tom Ross](../../../company/team/index.md#tom-ross-he-him)
          - [Felipe Janer](../../../company/team/index.md#felipe-janer-he-him)
-         - V.B.
+         - V.B. 2021-02-22
          - FQ3 frontend engineer
          - FQ4 frontend engineer
 - Extensibility {#extensibility-eng}
    - FQ3 [Engineering Manager](roles.md#engineering-manager), Jean acting manager until then.
          - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
          - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-         - FQ1 frontend engineer
+         - M.S. 2021-02-15
          - FQ2 frontend engineer
          - FQ4 frontend engineer
 
