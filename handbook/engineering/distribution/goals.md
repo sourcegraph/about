@@ -23,7 +23,7 @@ Sourcegraph collects a number of data points through pings that are used to unde
 
 ### [Provide a Sourcegraph in a box deployment option]()
 
-Sourcegraph is currently deployed via three, self serve methods. The only one-step deployment method (the sourcegraph docker image) is being sunsetted. As a result, we need to provide a turn-key full deployment option of Sourcegraph. Thus sllowing end users to explore a full featured deployment, without having to understand the complexity of cloud infrastructure.
+Sourcegraph is currently deployed via three, self serve methods. The only one-step deployment method (the sourcegraph docker image) is being sunsetted. As a result, we need to provide a turn-key full deployment option of Sourcegraph. Thus lallowing end users to explore a full featured deployment, without having to understand the complexity of cloud infrastructure.
 
 - **Owner**:
 - **Status**: TBD. _Estimate FY22-Q1_
