@@ -320,9 +320,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## David Li (he/him)
 
 - Technical Recruiter
-- San Francisco, CA, USA 🇺🇸
+- Seattle, WA, USA 🇺🇸
 - [david@sourcegraph.com](mailto:david@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/withdavidli/)
-- David is originally from the Northeast US and has been in the San Francisco Bay Area since 2013. Prior to Sourcegraph he was at Facebook and Cruise (self-driving cars), where he helped build new teams and scaled recruiting efforts through analytics and operations. He is interested in tennis and has recently started attending music festivals (you'll see him in the front!).
+- David is originally from the Northeast US and has recently moved to Seattle. Prior to Sourcegraph he was at Facebook and Cruise (self-driving cars), where he helped build new teams and scaled recruiting efforts through analytics and operations. He is interested in tennis and has recently started attending music festivals (you'll see him in the front!).
 
 ## Tharuntej Kandala (he/him)
 
