@@ -273,14 +273,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
   gone down the tech rabbit hole and learned programming languages 🤓.
 
-## Chayim Kirshen (he/him)
-
-- Kh-ay-eem (or Hayeem)
-- Security Engineer
-- Kiryat Hasharon, Israel, 🇮🇱
-- [chayim@sourcegraph.com](mailto:chayim@sourcegraph.com)
-- Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a piece of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics. Plus za'atar - he covers everything he can in za'atar.
-
 ## Alicja Suska (she/her)
 
 - /aˈlʲit͡s.ja/
