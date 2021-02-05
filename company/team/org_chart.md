@@ -8,7 +8,22 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 	<small>If the org chart does not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
 
-## [Engineering](../../handbook/engineering/eng_org.md#organization)
+## Engineering
+
+- [Beyang Liu](index.md#beyang-liu), CTO
+- [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering)
+	- [Search](../../handbook/engineering/search/index.md)
+	- [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
+	- [Campaigns](../../handbook/engineering/campaigns/index.md)
+    - [Web](../../handbook/engineering/web/index.md)
+        - [Frontend platform](../../handbook/engineering/web/index.md)
+        - [Extensibility](../../handbook/engineering/web/index.md)
+		- [Code insights](../../handbook/engineering/code-insights/index.md)
+	- [Security](../../handbook/engineering/security/index.md)
+	- [Distribution](../../handbook/engineering/distribution/index.md)
+	- [Cloud](../../handbook/engineering/cloud/index.md)
+
+[Future engineering org chart and hiring plan](../../handbook/engineering/eng_org.md)
 
 ## [Product](../../handbook/product/index.md#members)
 
@@ -99,6 +114,33 @@ Promise.all(
 		const headerLinkUrl = new URL(headerLink.href)
 		headerLinkUrl.hash = ''
 		headerLink.href = headerLinkUrl.toString()
+	}
+})
+
+async function getPageOrgList(pageUrl) {
+	const sectionId = pageUrl.replace(/^.*#/, '')
+
+	const resp = await fetch(pageUrl)
+	const doc = new DOMParser().parseFromString(await resp.text(), "text/html")
+	const section = doc.getElementById(sectionId)
+	if (!section) {
+		const error = document.createElement('p')
+		error.innerText = `Error generating org chart: page at ${pageUrl} has no section with ID ${sectionId}.`
+		return error
+	}
+    return section.parentNode
+}
+
+const teamAnchors = Array.from(document.querySelectorAll('a')).filter(a => a.innerText.startsWith('Team: '))
+Promise.all(
+	teamAnchors.map(async a => ({
+		anchor: a,
+		content: await getPageOrgChart(a.href),
+	}))
+).then(data => {
+	for (const {anchor, content} of data) {
+        // Replace the parent node list item
+        anchor.parentNode.replaceWith(content)
 	}
 })
 </script>

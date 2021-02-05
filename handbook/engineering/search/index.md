@@ -55,13 +55,13 @@ Iterations start **every other Monday**.
 - We're hiring a [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
 - [Rob Rhyne](../../../company/team/index.md#rob-rhyne) and [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) ([Product Designers](../../product/roles/product_designer.md))
 - Search core backend {#search-core-backend-eng}
-    - FQ2 [Engineering Manager](roles.md#engineering-manager), Loïc acting manager until then.
+    - FQ2 [Engineering Manager](../roles.md#engineering-manager), Loïc acting manager until then.
         - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
         - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
         - FQ1 backend engineer
         - FQ3 backend engineer
 - Search product {#search-product-eng}
-    - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](roles.md#engineering-manager))
+    - [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager))
         - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
         - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
         - [Rok Novosel](../../../company/team/index.md#rok-novosel-he-him)
