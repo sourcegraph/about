@@ -6,7 +6,7 @@ These values are the beliefs and principles that help us achieve our [goals](goa
 - [**Work as a team**](#work-as-a-team): You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
 - [**High agency**](#high-agency): You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
 - [**High quality**](#high-quality): You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.
-- [**Be a good human**](#be-a-good-human): You are kind, empathetic, authentic, humble.
+- [**Be welcoming and inclusive**](#be-welcoming-and-inclusive): You make people from all groups and backgrounds feel comfortable belonging to our team and community.
 - [**Open and transparent**](#open-and-transparent): You proactively communicate in an open and transparent way.
 - [**Continuously grow**](#continuously-grow): You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
 
@@ -53,9 +53,21 @@ If we discover that we've produced something that does not meet our quality bar,
 
 High-quality isn't the opposite of iterative. You can keep quality high while still being iterative by narrowing the scope (for example, by solving a smaller problem at first, or by solving it only for certain customers initially).
 
-### Be a good human
+### Be welcoming and inclusive
 
-You are kind, empathetic, authentic, humble.
+You make people from all groups and backgrounds feel comfortable belonging to our team and community. You understand that diversity is having a seat at the table, inclusion is having a voice, and belonging is having that voice be heard. You are actively against racism and bias.
+
+- In order for us to realize our purpose, our team must have diverse perspectives that are truly heard. 
+- In order for everyone to feel safe sharing their perspective, truly having a voice, and being heard, we must all continuously confront our unconscious biases by identifying them ourselves, graciously accepting when they are identified for us, and doing the work to ensure our biases do not inform our conduct and decision-making.
+
+We view equity and inclusion as foundational elements to our culture, our success, and our ability to realize our purpose. We understand that:
+
+- We all have unconscious biases we need to confront. 
+- Good people can say and do biased or racist things (and this doesn’t automatically make them bad people).
+- Diversity supports our moral values and practical goals and we cannot truly have diversity without also having equity and inclusion.
+- We consider a focus on diversity, equity, and inclusion a critical job function of all leaders at Sourcegraph.
+
+
 
 ### Open and transparent
 
