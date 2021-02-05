@@ -316,19 +316,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Chayim Kirshen"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8532,
-          32.3215
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Elizabeth Stirling"
       },
       "geometry": {
