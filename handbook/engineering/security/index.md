@@ -91,7 +91,6 @@ Security develops infrastructure in the [Auxilliary project](https://console.clo
 
 ## Members
 
-- [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([Engineering Manager](../roles.md#engineering-manager)).
 - [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
 - [André Eleuterio](../../../company/team/index.md#andré-eleuterio-hehim)
 
