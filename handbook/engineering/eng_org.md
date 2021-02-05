@@ -10,11 +10,35 @@ Our engineering organization is divided into mission based teams that contain th
 
 If you are already at Sourcegraph and see a current or future opportunity that you're interested in, please tell your manager. Your manager will chat with you to understand what you want and then propose next steps. Team transfers need to be approved by the [VP of Engineering](roles.md#vp-engineering).
 
-## Organization
+## Current organization
+
+- [Beyang Liu](index.md#beyang-liu), CTO
+- [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering)
+	- [Search](../../handbook/engineering/search/index.md)
+	- [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
+	- [Campaigns](../../handbook/engineering/campaigns/index.md)
+    - [Web](../../handbook/engineering/web/index.md)
+        - [Frontend platform](../../handbook/engineering/web/index.md)
+        - [Extensibility](../../handbook/engineering/web/index.md)
+		- [Code insights](../../handbook/engineering/code-insights/index.md)
+	- [Security](../../handbook/engineering/security/index.md)
+	- [Distribution](../../handbook/engineering/distribution/index.md)
+	- [Cloud](../../handbook/engineering/cloud/index.md)
+
+## Planned organization
+
+This is the current plan for our engineering organization and growth.
+
+Hiring plans are neither targets nor constraints, they are merely forecasts given current information. They should be continuously kept up-to-date.
+
+- If we find an awesome candidate for a role we weren't planning on hiring for until later, and we think we have the capacity to onboard that person now, we'll hire that awesome candidate now!
+- If we planned to grow a team faster, but we're seeing signals that we need to slow down growth (for example: new hires having difficulty onboarding, team doesn't have clear goals or progress), then we will slow or pause that team's hiring until those issues are resolved.
+
+Plans can change!
 
 - [Beyang Liu](../../../company/team/index.md#beyang-liu), CTO
 - [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](roles.md#vp-engineering)
-    - Search and replace (WIP name)
+    - Search and replace (WIP name) {#search-and-replace}
         - FQ3 Director of Engineering, Nick acting manager until then.
         - [Team: Search core backend](search/index.md#search-core-backend-eng)
         - [Team: Search product](search/index.md#search-product-eng)
@@ -22,7 +46,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
             - [Team: Code intelligence](code-intelligence/index.md#code-intelligence-eng)
         - Campaigns
             - [Team: Campaigns](campaigns/index.md#campaigns-eng)
-    - Org: Web (WIP name)
+    - Web (WIP name) {#web}
         - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](roles.md#engineering-manager))
         - [Team: Frontend platform](web/index.md#frontend-platform-eng)
         - [Team: Extensibility](web/index.md#extensibility-eng)
@@ -36,6 +60,13 @@ If you are already at Sourcegraph and see a current or future opportunity that y
             - [Team: Distribution](distribution/index.md#distribution-eng)
         - [Team: Core application](cloud/index.md#core-application-eng)
         - [Team: Backend platform](cloud/index.md#backend-platform-eng)
+
+Known gaps in current plan:
+
+- Right now the following things are a bit unclearly owned between Cloud and Distribution, and we need to scale our ability invest more in all of these things this year:
+  - Better customer deployment/upgrades
+  - Better dev build and CI (speed, reliability, fast deploys to prod)
+  - Cloud uptime, reliability, scaling, observability
 
 <script>
 // This script injects the org chart content into each section of this page that links to a team page.

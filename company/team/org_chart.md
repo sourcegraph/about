@@ -8,22 +8,9 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 	<small>If the org chart does not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
 
-## Engineering
+## [Engineering](../../handbook/engineering/eng_org.md#current-organization)
 
-- [Beyang Liu](index.md#beyang-liu), CTO
-- [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering)
-	- [Search](../../handbook/engineering/search/index.md)
-	- [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
-	- [Campaigns](../../handbook/engineering/campaigns/index.md)
-    - [Web](../../handbook/engineering/web/index.md)
-        - [Frontend platform](../../handbook/engineering/web/index.md)
-        - [Extensibility](../../handbook/engineering/web/index.md)
-		- [Code insights](../../handbook/engineering/code-insights/index.md)
-	- [Security](../../handbook/engineering/security/index.md)
-	- [Distribution](../../handbook/engineering/distribution/index.md)
-	- [Cloud](../../handbook/engineering/cloud/index.md)
-
-[Future engineering org chart and hiring plan](../../handbook/engineering/eng_org.md)
+[Future engineering org chart and hiring plan](../../handbook/engineering/eng_org.md#planned-organization)
 
 ## [Product](../../handbook/product/index.md#members)
 
