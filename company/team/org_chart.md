@@ -8,20 +8,13 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 	<small>If the org chart does not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
 
-## Engineering
-<!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [Campaigns](../../handbook/engineering/campaigns/index.md#members)
-### [Cloud](../../handbook/engineering/cloud/index.md#members)
-### [Code insights](../../handbook/engineering/code-insights/index.md#members)
-### [Code intelligence](../../handbook/engineering/code-intelligence/index.md#members)
-### [Distribution](../../handbook/engineering/distribution/index.md#members)
-### [Search](../../handbook/engineering/search/index.md#members)
-### [Security](../../handbook/engineering/security/index.md#members)
-### [Web](../../handbook/engineering/web/index.md#members)
+## [Engineering](../../handbook/engineering/eng_org.md#current-organization)
 
-## [Customer Engineering](../../handbook/ce/index.md#members)
+[Future engineering org chart and hiring plan](../../handbook/engineering/eng_org.md#planned-organization)
 
 ## [Product](../../handbook/product/index.md#members)
+
+## [Customer Engineering](../../handbook/ce/index.md#members)
 
 ## [Marketing](../../handbook/marketing/index.md#members)
 
@@ -108,6 +101,33 @@ Promise.all(
 		const headerLinkUrl = new URL(headerLink.href)
 		headerLinkUrl.hash = ''
 		headerLink.href = headerLinkUrl.toString()
+	}
+})
+
+async function getPageOrgList(pageUrl) {
+	const sectionId = pageUrl.replace(/^.*#/, '')
+
+	const resp = await fetch(pageUrl)
+	const doc = new DOMParser().parseFromString(await resp.text(), "text/html")
+	const section = doc.getElementById(sectionId)
+	if (!section) {
+		const error = document.createElement('p')
+		error.innerText = `Error generating org chart: page at ${pageUrl} has no section with ID ${sectionId}.`
+		return error
+	}
+    return section.parentNode
+}
+
+const teamAnchors = Array.from(document.querySelectorAll('a')).filter(a => a.innerText.startsWith('Team: '))
+Promise.all(
+	teamAnchors.map(async a => ({
+		anchor: a,
+		content: await getPageOrgChart(a.href),
+	}))
+).then(data => {
+	for (const {anchor, content} of data) {
+        // Replace the parent node list item
+        anchor.parentNode.replaceWith(content)
 	}
 })
 </script>
