@@ -10,7 +10,7 @@
     "catch-links": "^2.0.1",
     "gatsby": "^2.32.0",
     "gatsby-image": "^2.11.0",
-    "gatsby-plugin-advanced-sitemap": "^1.5.7",
+    "gatsby-plugin-advanced-sitemap": "^1.6.0",
     "gatsby-plugin-catch-links": "^2.10.0",
     "gatsby-plugin-feed": "^2.13.0",
     "gatsby-plugin-google-gtag": "^2.8.0",
