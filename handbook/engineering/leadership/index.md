@@ -59,6 +59,8 @@ Please include the following content in your update:
     - Processes like planning, retrospectives, offsites, hiring, and post-mortems are important and valuable ingredients to generating progress over time, but are not themselves progress, so shouldn't be highlighted here.
     - This progress should be framed in a way that is understandable by anyone at the company.
   - Great highlights will be presented at company meeting by the VP of Eng or VP of Product.
+    - It is helpful if screenshots are somewhere between squarish or 4:3. Very wide screenshots will not scale well on a slide.
+    - If you can, include a link to where you took a screenshot so we can retake the screenshot at a different display ratio if necessary.
 - Answer the following questions for each goal that your team is working on:
   - What important things happened last week (for example: changes in important metrics, customer feedback collected, things shipped)?
   - What are the plans for this week?
