@@ -63,7 +63,7 @@ Please include the following content in your update:
     - If you can, include a link to where you took a screenshot so we can retake the screenshot at a different display ratio if necessary.
 - Answer the following questions for each goal that your team is working on:
   - What important things happened last week (for example: changes in important metrics, customer feedback collected, things shipped)?
-  - What are the plans for this week?
+  - What are the plans for next week?
   - What should my peer-team and manager be aware of?
 
 Good examples:
