@@ -6,6 +6,10 @@ Join us on our mission to make it so everyone, in every community, in every coun
 
 We're hiring! All our positions are remote. Our teammates are distributed [around the world.](https://about.sourcegraph.com/company/team)
 
+## Internships and new grad hiring
+
+Generally, we are not hiring for interns and new grads. The decision to hire interns and new grads are determined by individual hiring managers. People considered for intern and new grad roles have demonstrated skills and project work above their peer group. Examples of this work are building an open source project related to Sourcegraph, acting as a primary maintainer for a significant open source dependency, significant contribution to open source projects, or something of that caliber. 
+
 ### Engineering
 
 - [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
