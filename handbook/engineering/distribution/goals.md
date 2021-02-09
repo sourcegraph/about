@@ -6,7 +6,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 Progress toward our active goals is described in our [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fdistribution).
 
-### [Collect metrics and feedback about Sourcegraph deployments]()
+### [Collect metrics and feedback about Sourcegraph deployments](https://github.com/orgs/sourcegraph/projects/143)
 
 Sourcegraph collects a number of data points through pings that are used to understand how customers use Sourcegraph and drive how we improve the product. We currently do not have any metrics, pings or manual data points collected from site-admins, which makes it impossible for the Distribution team to make educated guesses on features that site-admins require and how projects should be prioritized.
 
