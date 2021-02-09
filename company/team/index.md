@@ -636,3 +636,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [tjdevries@sourcegraph.com](mailto:tjdevries@sourcegraph.com), [twitch.tv/teej_dv](https://twitch.tv/teej_dv)
 - The letter T, and then the letter J
 - TJ lives in Rockford, Michigan. Besides coding during the day, TJ also likes to code on his Twitch stream (linked above). Generally you can find him working on Neovim or Neovim-related plugins and having a good time hanging out with Twitch chat. Outside of coding, TJ loves to spend time with his wife, son and doggo. Also, playing four-mallet marimba is one of his other favorite activities. 
+
+## Manuel Ucles
+
+- Customer Engineer 
+- Phoenix, AZ, USA 🇺🇸
+- GitHub: [mucles](https://github.com/mucles)
+- [manuel@sourcegraph.com](mailto:manuel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/manuel-ucles-444080151/)
+- Manny is from Honduras 🇭🇳 but has lived in Phoenix, Arizona most of his life. He enjoys playing basketball, chess and does boxing/MMA in his spare time. Prior to Sourcegraph, Manny worked as an Application Engineer at Freedom Financial. He also has experience as a Software Engineering at Mckesson and a Data Analyst at Uber.
+
