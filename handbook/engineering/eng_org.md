@@ -58,8 +58,8 @@ Plans can change!
       - [Team: Security](security/index.md#security-eng)
     - Distribution
       - [Team: Distribution](distribution/index.md#distribution-eng)
-    - [Team: Core application](cloud/index.md#core-application-eng)
-    - [Team: Backend platform](cloud/index.md#backend-platform-eng)
+    - [Team: Core application](core-application/index.md#core-application-eng)
+    - [Team: Backend platform](core-application/index.md#backend-platform-eng)
 
 Known gaps in current plan:
 
