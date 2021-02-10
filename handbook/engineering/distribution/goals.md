@@ -32,7 +32,6 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - Engineers can trigger a deployment of a desired version.
   - Engineers can trigger a rollback to a previous version.
   - Stretch: Rollbacks stop the line and prevent any further deployments.
-  - TBD: Migrations and other dangerous operations have an automated method of being performed.
 - **Milestones**:
   - We provide an easy to understand live view of the lifecycle of a commit to deployment.
   - Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
