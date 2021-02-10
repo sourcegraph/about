@@ -26,7 +26,6 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
 
 - **Status**: Not started. _Estimated: FY22-Q1_
 - **Outcomes**:
-  - ~~We can correlate deployments to Grafana metrics.~~ _Done_
   - Engineers can easily identify on which stage of our full CI/CD pipeline is a given commit.
   - Engineers can determine what commits are currently running on a given environment.
   - Engineers are optionally notified when their commits are deployed.
