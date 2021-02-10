@@ -41,7 +41,7 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
   - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployments.
 
-### [Deprecate single-docker for production usage]
+### [Deprecate single-docker for production usage]()
 
 In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPpEzA3-0glPEMY/edit#) we discussed and agreed to deprecate `single-docker` for production usage. The RFC has been approved and we have to take the next steps in removing this deployment type.
 
