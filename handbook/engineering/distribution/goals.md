@@ -37,7 +37,7 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - We provide an easy to understand live view of the lifecycle of a commit to deployment.
   - Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
   - We can manually trigger an automated deployment (insiders, rc, v) with minimal effort.
-  - Commits `sourcegraph/sourcegraph@main` can be deployed to an environment in less than 30 minutes after passing CI.
+  - Commits to `sourcegraph/sourcegraph@main` can be deployed to an environment in less than 30 minutes after passing CI.
   - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
   - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployments.
 
