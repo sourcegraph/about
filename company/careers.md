@@ -14,7 +14,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 - [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
 - [Engineering Manager - Cloud Application and Core Services](https://jobs.lever.co/sourcegraph/95ad534f-8724-45dc-9b50-291c5926a7dc)
-- [Software Engineer - Cloud - Frontend](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7)
 - [Software Engineer - Code Insights - Frontend](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb)
 - [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 - [Software Engineer - Backend](https://jobs.lever.co/sourcegraph/a0dba744-ed1d-4172-8a4a-0feb52609322)
@@ -49,7 +48,7 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 - [Managing Editor](https://jobs.lever.co/sourcegraph/ab3b91a6-dc80-4883-9134-1a5a7a62f871)
 - [Customer Marketing Manager](https://jobs.lever.co/sourcegraph/5769890f-69bd-4ff5-8515-233ce8e3c620)
 - [Content Marketing Manager](https://jobs.lever.co/sourcegraph/7a4175fb-10c8-4849-8f73-3afc6abe9db8)
-- [Senior Manager, Marketing Operations](https://jobs.lever.co/sourcegraph/d6250f88-1580-4655-95cc-aa67c0ec8c08) 
+- [Senior Manager, Marketing Operations](https://jobs.lever.co/sourcegraph/d6250f88-1580-4655-95cc-aa67c0ec8c08)
 
 ### Operations, finance, and legal
 
@@ -62,8 +61,7 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 - [VP People Operations](../handbook/people-ops/vp_people_ops.md)
 - [Teammate Success Manager](https://jobs.lever.co/sourcegraph/700949a2-09ce-4de7-b3bd-a5af5032a4a9)
 - [Technical Recruiter - Product](https://jobs.lever.co/sourcegraph/c1630817-8de1-41e5-b199-00e1664be861)
-- [Recruiter - GTM](https://jobs.lever.co/sourcegraph/15af1881-2a4d-4c1c-86c2-0e157e4af889) 
-
+- [Recruiter - GTM](https://jobs.lever.co/sourcegraph/15af1881-2a4d-4c1c-86c2-0e157e4af889)
 
 ## Apply
 
