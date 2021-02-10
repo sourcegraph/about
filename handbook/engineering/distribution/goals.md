@@ -44,31 +44,19 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - Developers are optionally notified when their commits are deployed
   - A commit to master can be deployed in less than 30 minutes (CD pipeline is fast)
 
-### [Provide a Sourcegraph in a box deployment option]()
+### [Deprecate single-docker for production usage]
 
-Sourcegraph is currently deployed via three, self serve methods. The only one-step deployment method (the sourcegraph docker image) is being sunsetted. As a result, we need to provide a turn-key full deployment option of Sourcegraph. Thus lallowing end users to explore a full featured deployment, without having to understand the complexity of cloud infrastructure.
+In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPpEzA3-0glPEMY/edit#) we discussed and agreed to deprecate single-docker for production usage. The RFC has been approved and we have to take the next steps in removing this deployment type.
 
 - **Owner**:
-- **Status**: TBD. _Estimate FY22-Q1_
+- **Status**: Not started. _Estimated: FY22-Q1_
 - **Outcomes**:
-  - Customers can deploy a Sourcegraph docker-compose deployment to 1 cloud provider.
-  - Customers can deploy a Sourcegraph Kubernetes cluster to 1 cloud provider.
+  - No new production deployments are crated using single-docker after completion.
 - **Milestones**:
-  - There is a pipeline in place to deploy and version Sourcegraph docker-compose images.
-  - We can deploy a docker-compose in a box version of Sourcegraph to 1 cloud provider.
-  - Docker-compose in a box can be upgraded in place.
-  - We have Infrastructure as Code to deploy a Kuberentes cluster with Sourcegraph from scratch to 1 cloud provider.
-  - Stretch: We can leverage Cloud services of the cloud provider for the requried services.
-
-### [Make t]()
-
-As a potential customer, I want to default to a minimal Sourcegraph deployment, so that I can grow my infrastructure cost and complexity with usage.
-
-- **Owner**:
-- **Status**:
-- **Outcomes**:
-  -
-- **Milestones**: TBD
+  - Create migration docs for customer and Sourcegraph to assist customers
+  - Set deprecation notice and announce deprecation in X versions
+  - single-docker is deprecated for production usage
+  - Stretch: Remove the single-docker deployment option
 
 ## Future goals
 
@@ -83,22 +71,23 @@ DockerHub announced that they will be rate-limiting image pulls for anonymous an
 - **Outcomes**:
   - We have a mirrored docker repository containing all our old+new builds
   - Have documentation on how to change the repository that can be used by CE to assist customers
-- **Milestones**:
-  -
+- **Milestones**: TBD
 
-### [Deprecate single-docker for production usage]
+### [Provide a Sourcegraph in a box deployment option]()
 
-In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPpEzA3-0glPEMY/edit#) we discussed and agreed to deprecate single-docker for production usage. The RFC has been approved and we have to take the next steps in removing this deployment type.
+Sourcegraph is currently deployed via three, self serve methods. The only one-step deployment method (the sourcegraph docker image) is being sunsetted. As a result, we need to provide a turn-key full deployment option of Sourcegraph. Thus allowing end users to explore a full featured deployment, without having to understand the complexity of cloud infrastructure.
 
 - **Owner**:
-- **Status**: Not started. _Estimated: FY22-Q1_
+- **Status**: TBD.
 - **Outcomes**:
-  - No new production deployments are crated using single-docker after completion.
+  - Customers can deploy a Sourcegraph docker-compose deployment to 1 cloud provider.
+  - Customers can deploy a Sourcegraph Kubernetes cluster to 1 cloud provider.
 - **Milestones**:
-  - Create migration docs for customer and Sourcegraph to assist customers
-  - Set deprecation notice and announce deprecation in X versions
-  - single-docker is deprecated for production usage
-  - Stretch: Remove the single-docker deployment option
+  - There is a pipeline in place to deploy and version Sourcegraph docker-compose images.
+  - We can deploy a docker-compose in a box version of Sourcegraph to 1 cloud provider.
+  - Docker-compose in a box can be upgraded in place.
+  - We have Infrastructure as Code to deploy a Kuberentes cluster with Sourcegraph from scratch to 1 cloud provider.
+  - Stretch: We can leverage Cloud services of the cloud provider for the required services.
 
 ### Improve the debugging and troubleshooting process
 
