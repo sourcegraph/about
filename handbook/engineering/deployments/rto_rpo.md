@@ -1,6 +1,3 @@
-
-<a title="Own work, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:RPO_RTO_example.svg"><img width="512" alt="RPO RTO example" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/RPO_RTO_example.svg/512px-RPO_RTO_example.svg.png"></a>
-
 # Recovery Time Objective  (RTO)
 
   This defines the maximum disruption we have agreed is allowable.
