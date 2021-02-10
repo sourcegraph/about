@@ -85,13 +85,20 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
 - **Status**: Not started. Unknown amount of work. _Estimated: FY22-Q1_
 - **Outcomes**:
   - It is simple to identify when a commit has been deployed to an environment.
-  - Developers are notified when their PR is deployed to an environment.
   - Deployments display information about the artifact they are deploying.
-  - We are able to rollback to or redeploy a previous version.
+  - There are approved steps to rollback a commit & deploy a previous version
   - Stretch: We can correlate deployments to Grafana metrics and Stackdriver logs.
   - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployment.
   - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
-- **Milestones**: TBD
+  - TBD: Migrations and other dangerous operations have an approved method of being performed
+
+- **Milestones**:
+  - Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
+  - Developers can determine what commits are currently running on Sourcegraph cloud
+  - All developers use tools provided by distribution to monitor the current status of commits
+  - (After the above are completed)
+  - Developers are optionally notified when their commits are deployed
+  - A commit to master can be deployed in less than 30 minutes (CD pipeline is fast)
 
 ### Improve the debugging and troubleshooting process
 
