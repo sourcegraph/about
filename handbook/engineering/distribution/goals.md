@@ -41,7 +41,7 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
   - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployments.
 
-### [Deprecate single-docker for production usage]()
+### Deprecate single-docker for production usage
 
 In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPpEzA3-0glPEMY/edit#) we discussed and agreed to deprecate `single-docker` for production usage. The RFC has been approved and we have to take the next steps in removing this deployment type.
 
@@ -58,7 +58,7 @@ In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPp
 
 These are ideas for future goals that the team might work on. Just because something is on this list, does not mean it will be worked on next.
 
-### [Provide an alternative docker registry]
+### Provide an alternative docker registry
 
 DockerHub announced that they will be rate-limiting image pulls for anonymous and free clients. While we don't anticipate this affecting our customers, we want to have some solution in place in the case some of them are affected.
 
@@ -68,7 +68,7 @@ DockerHub announced that they will be rate-limiting image pulls for anonymous an
   - Have documentation on how to change the repository that can be used by CE to assist customers
 - **Milestones**: TBD
 
-### [Provide a Sourcegraph in a box deployment option]()
+### Provide a Sourcegraph in a box deployment option
 
 Sourcegraph is currently deployed via three, self serve methods. The only one-step deployment method (the sourcegraph docker image) is being sunsetted. As a result, we need to provide a turn-key full deployment option of Sourcegraph. Thus allowing end users to explore a full featured deployment, without having to understand the complexity of cloud infrastructure.
 
