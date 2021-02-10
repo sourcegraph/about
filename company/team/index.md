@@ -516,13 +516,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [andre@sourcegraph.com](mailto:andre@sourcegraph.com), [@eleuterio_](https://twitter.com/eleuterio_)
 - André is a Security Engineer from Curitiba, Brazil. Before joining Sourcegraph he was working at npm and GitHub, holding different security responsibilities. André is a devout follower of Athletico Paranaense, a local soccer team, despite its rare joys and successes. Definitely a geek, be careful when bringing up Breath of the Wild or Magic the Gathering around André as that can lead to some very long conversations.
 
-## Josh Bollin
-
-- VP Sales, East
-- Hoboken, NJ
-- [jbollin@sourcegraph.com](mailto:jbollin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joshua-bollin-0840226/)
-- Josh lives in Hoboken with his wife Lindsey and two sons Luke & Michael (separated by 16 years!).  Prior to Sourcegraph, Josh helped to drive unicorn exits for AppDynamics and Datadog.  Die-hard foodies, both Lindsey and Josh have spent quite a bit of time in the kitchen during the pandemic to replace their restaurant habit.
-
 ## Hannah Freilich
 
 - Account Executive
