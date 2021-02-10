@@ -21,6 +21,29 @@ Sourcegraph collects a number of data points through pings that are used to unde
   - We have the tools and process in place to collect date
   - We have collected data from 10 site-admins
 
+### [Improve internal deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
+
+Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegraph Cloud) has several usability problems - for example, it is hard for engineers to identify when a commit was deployed to an environment or which deployment is currently running in a particular environment. We want to improve the deployment experience, making sure we can deploy with confidence and can easily understand in which stage of the pipeline a change currently is.
+
+- **Owner**: Dax
+- **Status**: Not started. Unknown amount of work. _Estimated: FY22-Q1_
+- **Outcomes**:
+  - It is simple to identify when a commit has been deployed to an environment.
+  - Deployments display information about the artifact they are deploying.
+  - There are approved steps to rollback a commit & deploy a previous version
+  - Stretch: We can correlate deployments to Grafana metrics and Stackdriver logs.
+  - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployment.
+  - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
+  - TBD: Migrations and other dangerous operations have an approved method of being performed
+
+- **Milestones**:
+  - Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
+  - Developers can determine what commits are currently running on Sourcegraph cloud
+  - All developers use tools provided by distribution to monitor the current status of commits
+  - (After the above are completed)
+  - Developers are optionally notified when their commits are deployed
+  - A commit to master can be deployed in less than 30 minutes (CD pipeline is fast)
+
 ### [Provide a Sourcegraph in a box deployment option]()
 
 Sourcegraph is currently deployed via three, self serve methods. The only one-step deployment method (the sourcegraph docker image) is being sunsetted. As a result, we need to provide a turn-key full deployment option of Sourcegraph. Thus lallowing end users to explore a full featured deployment, without having to understand the complexity of cloud infrastructure.
@@ -76,29 +99,6 @@ In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPp
   - Set deprecation notice and announce deprecation in X versions
   - single-docker is deprecated for production usage
   - Stretch: Remove the single-docker deployment option
-
-### [Improve internal deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
-
-Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegraph Cloud) has several usability problems - for example, it is hard for engineers to identify when a commit was deployed to an environment or which deployment is currently running in a particular environment. We want to improve the deployment experience, making sure we can deploy with confidence and can easily understand in which stage of the pipeline a change currently is.
-
-- **Owner**: Dax
-- **Status**: Not started. Unknown amount of work. _Estimated: FY22-Q1_
-- **Outcomes**:
-  - It is simple to identify when a commit has been deployed to an environment.
-  - Deployments display information about the artifact they are deploying.
-  - There are approved steps to rollback a commit & deploy a previous version
-  - Stretch: We can correlate deployments to Grafana metrics and Stackdriver logs.
-  - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployment.
-  - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
-  - TBD: Migrations and other dangerous operations have an approved method of being performed
-
-- **Milestones**:
-  - Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
-  - Developers can determine what commits are currently running on Sourcegraph cloud
-  - All developers use tools provided by distribution to monitor the current status of commits
-  - (After the above are completed)
-  - Developers are optionally notified when their commits are deployed
-  - A commit to master can be deployed in less than 30 minutes (CD pipeline is fast)
 
 ### Improve the debugging and troubleshooting process
 
