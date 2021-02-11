@@ -50,3 +50,14 @@ This started as a design research thread in Slack and escalated into something a
 - My workflow is very keyboard driven. I rely heavily on shortcuts to interact with IDE features (via lsp), run tests, jump around files.
 
 ![Workspace of Keegan Carruthers-Smith, Software Engineer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/keegan_carruthers-smith.png)
+
+## Noah Santschi-Cooney, Software Engineer
+
+- VSCode for everything that's not Java/Kotlin.
+- Dark mode (except for Slack and Chromium).
+- [Atom One Dark](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark) themes for VSCode, IntelliJ, i3/Rofi and Kitty terminal and [modified Adapta Nokto](https://github.com/Strum355/adapta-gtk-theme) for GTK applications.
+- Dual monitor with 27" 1440p and 24" 1080p monitors.
+- Big time user of LSP features (find symbol, find refs/impls etc) and keyboard shortcuts where possible (with vimium for chromium).
+
+![Workspace 1 of Noah Santschi-Cooney, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/noah-sc-1.png)
+![Workspace 2 of Noah Santschi-Cooney, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/noah-sc-2.png)
