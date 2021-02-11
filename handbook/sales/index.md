@@ -27,6 +27,7 @@ TODO
 ## Members
 
 - [Gregg Stone](../../company/team/index.md#gregg-stone) (VP of Sales)
+- [Dudley Nostrand](../../company/team/index.md#dudley-nostrand) (Sr. Manager, Value Engineering)
 - [Josh Bollin](../../company/team/index.md#josh-bollin) (RVP of East)
   - [Kai Passo](../../company/team/index.md#kai-passo-he-him)
   - [Bill Kolman](../../company/team/index.md#bill-kolman)
