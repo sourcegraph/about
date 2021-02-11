@@ -31,7 +31,6 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - Engineers are optionally notified when their commits are deployed.
   - Engineers can trigger a deployment of a desired version.
   - Engineers can trigger a rollback to a previous version.
-  - We have fixed the top 3 problems highlighted by engineers at Sourcegraph.
   - Our deployment pipeline earns a 9+ score from Sourcegraph engineering team.
   - Stretch: Rollbacks stop the line and prevent any further deployments.
 - **Milestones**:
