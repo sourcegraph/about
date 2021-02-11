@@ -16,9 +16,9 @@ Sourcegraph collects a number of data points through pings that are used to unde
   - We can survey site-admins actively or passively.
   - CE/CS can relay site-admins feedback and requirements which we can report on.
 - **Milestones**:
-  - We have defined an initial set of data points we wish to collect.
-  - The is a process and tool in place that allows CE/CS and direct site-admins to relay feedback provided by site-admins.
-  - We have collected data from 10 site-admins.
+  1. We have defined an initial set of data points we wish to collect.
+  1. The is a process and tool in place that allows CE/CS and direct site-admins to relay feedback provided by site-admins.
+  1. We have collected data from 10 site-admins.
 
 ### [Improve internal deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
 
@@ -26,23 +26,19 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
 
 - **Status**: Not started. _Estimated: FY22-Q1_
 - **Outcomes**:
-  - Engineers can easily identify on which stage of our full CI/CD pipeline is a given commit.
-  - Engineers can determine what commits are currently running on a given environment.
-  - Engineers are optionally notified when their commits are deployed.
-  - Engineers can trigger a deployment of a desired version.
-  - Engineers can trigger a rollback to a previous version.
   - Our deployment pipeline earns a 9+ score from Sourcegraph engineering team.
-  - Stretch: Rollbacks stop the line and prevent any further deployments.
+  - Fix the top 5 problems as highlighted by Sourcegraph engineers.
 - **Milestones**:
-  - Survey all Sourcegraph engineers to score our current deployment pipeline.
-  - We provide an easy to understand live view of the lifecycle of a commit to deployment.
-  - Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
-  - We can manually trigger an automated deployment (insiders, rc, v) with minimal effort.
-  - Commits to `sourcegraph/sourcegraph@main` can be deployed to an environment in less than 30 minutes after passing CI.
-  - Fix the top 3 problems as highlighted by Sourcegraph engineers.
-  - Survey all Sourcegraph engineers again to score the new deployment experience.
-  - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
-  - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployments.
+  1. Survey all Sourcegraph engineers to score our current deployment pipeline.
+  1. Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
+  1. Engineers can easily identify on which stage of our full CI/CD pipeline is a given commit.
+  1. Engineers can determine what release is currently running on a given environment.
+  1. Engineers can be notified when their commits have been deployed.
+  1. Engineers can trigger a deployment of a desired version.
+  1. Engineers can trigger a rollback to a previous version.
+  1. Survey all Sourcegraph engineers again to score the new deployment experience.
+  1. TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
+  1. TBD: Branches can trigger a parallel `sourcegraph-frontend` deployments.
 
 ### Deprecate single-docker for production usage
 
@@ -52,10 +48,10 @@ In [RFC 263](https://docs.google.com/document/d/1GPypas4ZUZIw346EcNDM1up2OOQFyPp
 - **Outcomes**:
   - No new production deployments are crated using `single-docker` after completion.
 - **Milestones**:
-  - Create migration docs for customer and Sourcegraph to assist customers.
-  - Set deprecation notice and announce deprecation in X versions.
-  - `single-docker` is deprecated for production usage.
-  - Stretch: Remove the `single-docker` deployment option.
+  1. Create migration docs for customer and Sourcegraph to assist customers.
+  1. Set deprecation notice and announce deprecation in X versions.
+  1. `single-docker` is deprecated for production usage.
+  1. Stretch: Remove the `single-docker` deployment option.
 
 ## Future goals
 
