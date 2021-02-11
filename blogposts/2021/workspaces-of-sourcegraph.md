@@ -40,3 +40,13 @@ This started as a design research thread in Slack and escalated into something a
 - Desktop organization: Using MacOS fullscreen tiling helps keep things focused, i use dedicated desktop spaces for different 'modes' eg working on code, team/company comms, and a dedicated desktop for nonsense like twitter.
 
 ![Workspace of Alex Russell-Saw, Software Engineer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/alex_russell-saw.png)
+
+## Keegan Carruthers-Smith, Software Engineer
+
+- Emacs
+- Light mode
+- [Leuven](https://github.com/fniessen/emacs-leuven-theme) colour scheme
+- Either in emacs, browser (Safari) or terminal (kitty). Mostly in emacs since I use it for work journal/issue tracking (org-mode), git (magit), email (notmuch) and code (gopls + lsp).
+- My workflow is very keyboard driven. I rely heavily on shortcuts to interact with IDE features (via lsp), run tests, jump around files.
+
+![Workspace of Keegan Carruthers-Smith, Software Engineer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/keegan_carruthers-smith.png)
