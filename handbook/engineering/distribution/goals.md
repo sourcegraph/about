@@ -31,12 +31,17 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - Engineers are optionally notified when their commits are deployed.
   - Engineers can trigger a deployment of a desired version.
   - Engineers can trigger a rollback to a previous version.
+  - We have fixed the top 3 problems highlighted by engineers at Sourcegraph.
+  - Our deployment pipeline earns a 9+ score from Sourcegraph engineering team.
   - Stretch: Rollbacks stop the line and prevent any further deployments.
 - **Milestones**:
+  - Survey all Sourcegraph engineers to score our current deployment pipeline.
   - We provide an easy to understand live view of the lifecycle of a commit to deployment.
   - Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
   - We can manually trigger an automated deployment (insiders, rc, v) with minimal effort.
   - Commits to `sourcegraph/sourcegraph@main` can be deployed to an environment in less than 30 minutes after passing CI.
+  - Fix the top 3 problems as highlighted by Sourcegraph engineers.
+  - Survey all Sourcegraph engineers again to score the new deployment experience.
   - TBD: We can trigger rollbacks and deployments via a `/` command in Slack.
   - TBD: Branches can trigger a parallel `sourcegraph-frontend` deployments.
 
