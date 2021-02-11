@@ -29,3 +29,14 @@ This started as a design research thread in Slack and escalated into something a
 
 ![Primary screen workspace organization of Christina Forney, VP Product](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/christina_forney1.png)
 ![Secondary screen workspace organization of Christina Forney, VP Product](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/christina_forney2.png)
+
+## Alex Russell-Saw, Software Engineer
+
+- Goland
+- [Dracula](https://draculatheme.com/) colour scheme
+- Chrome: either for docs or the current feature i'm working on.
+- IdeaVim: i'm still in denial that i'm not using Vim anymore, so i've remapped all of Goland's keybinds into vim-style leader key combinations 🙈
+- Ultrawide monitor: they're mostly sold for gaming, but i really like using them for productivity, it gives all the benefits of a multi monitor setup without the desk clutter.
+- Desktop organization: Using MacOS fullscreen tiling helps keep things focused, i use dedicated desktop spaces for different 'modes' eg working on code, team/company comms, and a dedicated desktop for nonsense like twitter.
+
+![Workspace of Alex Russell-Saw, Software Engineer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/alex_russell-saw.png)
