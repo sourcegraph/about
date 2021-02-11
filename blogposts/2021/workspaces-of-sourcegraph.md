@@ -61,3 +61,13 @@ This started as a design research thread in Slack and escalated into something a
 
 ![Workspace 1 of Noah Santschi-Cooney, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/noah-sc-1.png)
 ![Workspace 2 of Noah Santschi-Cooney, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/noah-sc-2.png)
+
+## Eric Fritz, Software Engineer
+
+- VSCode with [Fira Code](https://github.com/tonsky/FiraCode) and [Nord Extra Dark](https://marketplace.visualstudio.com/items?itemName=yamenarahman.nord-extra-dark), [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets), and [Indent-Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- Dark mode
+- 30" 5k iMac and 2x Dell Ultrasharp U2718Q 27" 4K IPS monitors Portrait/Landscape/Portrait mode
+- Ergodox EZ with Cherry MX Blue switches
+- My [dotfiles](https://github.com/efritz/dotfiles)
+
+![Combined workspace of Eric Fritz, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/efritz-combined.png)
