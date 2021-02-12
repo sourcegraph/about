@@ -173,3 +173,29 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 I basically do everything either in tmux or in the browser. In tmux I spawn lots of windows/shells as I need them, but have different sessions for work, private recreational programming, and other things.  In the browser I always have 3 pinned tabs (for gmail accounts and other email account). I also use Alfred a lot (to search Sourcegraph for example).
 
 ![Workspace of Thorsten Ball, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/thorsten.png)
+
+## Thorsten Ball, Software Engineer
+
+- Environment: tmux in a fullscreen Kitty window that covers everything
+- Editor: Neovim (sometimes VS Code with Vim keybindings for TypeScript/Rust)
+- Mode: 90% of the time it’s light with the Lucius colorscheme, 10% it’s dark with the VS Code dark colorscheme
+- Font: JetBrains Mono
+- Shell: zsh
+- Vim configuration: https://github.com/mrnugget/vimconfig
+- Dotfiles: https://github.com/mrnugget/dotfiles
+
+I basically do everything either in tmux or in the browser. In tmux I spawn lots of windows/shells as I need them, but have different sessions for work, private recreational programming, and other things.  In the browser I always have 3 pinned tabs (for gmail accounts and other email account). I also use Alfred a lot (to search Sourcegraph for example).
+
+![Workspace of Thorsten Ball, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/thorsten.png)
+
+
+## TJ Kandala, Software Engineer
+
+- Editor: VS Code
+- Mode: Dark
+- Theme: SynthWave 84
+- Extensions: Bracket Pair Colorizer, GitLens, Sourcegraph
+- Misc: Fira Code font, Tilix terminal emulator
+
+![Workspace of Thorsten Ball, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tj.png)
+
