@@ -130,7 +130,7 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 
 ![Workspace 1 of Erik Seliger, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/erik.png)
 
-## Artem Ruts
+## Artem Ruts, Software Engineer
 
 - VSCode to write lots of code:
   - Dark mode
