@@ -35,7 +35,10 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 1. Build lsif-clang testing infrastructure
     - TBD roadmap item
-    - TBD roadmap item
+    - Build a tool which can to semantically compare and diff LSIF dumps.
+    - Write a test harness for lsif-clang which can perform snapshot tests on small code snippets.
+    - Spike: Explore how to perform snapshot tests on large projects for integration testing.
+
     
     **Outcome:** TBD
 
