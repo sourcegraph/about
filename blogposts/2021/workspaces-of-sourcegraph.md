@@ -130,4 +130,14 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 
 ![Workspace 1 of Erik Seliger, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/erik.png)
 
+## Artem Ruts
 
+- VSCode to write lots of code:
+  - Dark mode
+  - Nord theme + Material icon theme + Fira Code
+  - Plugins:
+    - ESLint + Hadolint + Prettier + Shellformat + shell-check + code spell checker + XML Tools + YAML + Todo Tree + Sourcegraph
+    - GO + GraphQL + Docker + Svelte + Reactjs code snippets + Debuggers for Chrome and FF (Some plugins are disabled and I may enable when I need them)
+- Nano + syntax highlighting to write less code, tweak things remotely, break things with sudo 
+
+![Workspace 1 of Artem Ruts, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/artem.png)
