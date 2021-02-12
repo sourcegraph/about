@@ -67,7 +67,7 @@ This started as a design research thread in Slack and escalated into something a
 
 - VSCode with [Fira Code](https://github.com/tonsky/FiraCode) and [Nord Extra Dark](https://marketplace.visualstudio.com/items?itemName=yamenarahman.nord-extra-dark), [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets), and [Indent-Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 - Dark mode
-- 30" 5k iMac and 2x Dell Ultrasharp U2718Q 27" 4K IPS monitors Portrait/Landscape/Portrait mode
+- 27" 5k iMac (3.2 GHz 8-core Intel Xeon W, 64GB RAM) and 2x Dell Ultrasharp U2718Q 27" 4K IPS monitors Portrait/Landscape/Portrait mode
 - Ergodox EZ with Cherry MX Blue switches
 - My [dotfiles](https://github.com/efritz/dotfiles)
 
