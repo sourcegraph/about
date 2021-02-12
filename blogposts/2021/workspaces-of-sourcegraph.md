@@ -110,13 +110,14 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 
 ## Camden Cheek, Software Engineer
 
-- Neovim
-- Dark mode
-- Gruvbox
+- Neovim / tmux in Alacritty
+- Gruvbox dark mode
+- [Hack](https://sourcefoundry.org/hack/) font
 - Plugins/features highlights
   - Builtin Neovim LSP for code navigation/intel
   - FZF/ripgrep for global file/content search
   - Shortcuts to open my current location in Github/Sourcegraph
+- Hammerspoon for custom keybindings and window management
 
 ![Workspace 1 of Camden Cheek, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/camden.png)
 
