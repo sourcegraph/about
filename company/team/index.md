@@ -638,3 +638,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [manuel@sourcegraph.com](mailto:manuel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/manuel-ucles-444080151/)
 - Manny is from Honduras 🇭🇳 but has lived in Phoenix, Arizona most of his life. He enjoys playing basketball, chess and does boxing/MMA in his spare time. Prior to Sourcegraph, Manny worked as an Application Engineer at Freedom Financial. He also has experience as a Software Engineer at Mckesson and a Data Analyst at Uber.
 
+## Miles Mulcare (he/him)
+
+- Account Executive
+- San Francisco, CA, USA 🇺🇸
+- GitHub: [MilesmulcareSG](https://github.com/)
+- [miles@sourcegraph.com](mailto:miles@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milesmulcare)
+- Miles lives in San Francisco's North Beach neighborhood. Prior to Sourcegraph, Miles spent 7.5 years at Fastly where he helped enterprise Engineering, Product, and Security teams to scale from $10M to over $200M in revenue. Miles graduated with a BA in Communications from Lewis & Clark College. Outside of work, Miles enjoys time with his family, Paige and Liam, and he is an avid road and mountain biker.
