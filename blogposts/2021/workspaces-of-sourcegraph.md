@@ -71,3 +71,28 @@ This started as a design research thread in Slack and escalated into something a
 - My [dotfiles](https://github.com/efritz/dotfiles)
 
 ![Combined workspace of Eric Fritz, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/efritz-combined.png)
+
+## Adam Harvey, Software Engineer
+
+I use a mixture of VS Code with more or less the recommended plugins and nothing else (sometimes in remote mode to a devbox in the cloud; sometimes locally), and neovim with airline (for a better statusbar) and coc (for LSP purposes) — I've tried the native support in neovim nightlies, but I hit too many rough edges. Everything is in light mode. Like Keegan, I'm also very keyboard driven.
+
+I don't tend to layer much else into my editing experience: I use a separate terminal (kitty), rather than the builtin ones.
+
+Outside of that, I tend to be very single window focused: I run everything in a separate fullscreen window on a separate workspace in Sway, and use hotkeys to switch between workspaces. (1 is always Firefox; 2 is kitty; 3 is personal chat; 4 is Slack; 5 is VSCode; 6- are used for ad hoc one offs.) Generally speaking I have as little chrome as possible: menu bars are usually disabled once I know hot keys, and I have sway configured to disable titlebars unless the workspace is split or the window is floating. Minimal distraction.
+
+![Workspace 1 of Adam Harvey, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/aharvey.png)
+
+## TJ Devries, Software Engineer
+
+- Neovim in Kitty Terminal
+- Use Kitty tabs to keep different workflows / setups separate
+- Use a lot of neovim builtin terminal / other tools
+- Also shown is using Telescope for fuzzy finding files / symbols
+- Also shown is floating window for running tests in middle of screen to get quick feedback (i have some stuff setup to run test under cursor, etc.)
+- I use JetBrains Mono as the font
+- I use custom colorscheme I made awhile ago called gruvbuddy (it started a lot closer to gruvbox)
+
+![Workspace 1 of TJ Devries, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/teej_simple_split.png)
+![Workspace 2 of TJ Devries, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/teej_telescope.png)
+
+
