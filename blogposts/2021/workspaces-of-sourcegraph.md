@@ -57,6 +57,7 @@ This started as a design research thread in Slack and escalated into something a
 - Dark mode (except for Slack and Chromium).
 - [Atom One Dark](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark) themes for VSCode, IntelliJ, i3/Rofi and Kitty terminal and [modified Adapta Nokto](https://github.com/Strum355/adapta-gtk-theme) for GTK applications.
 - Dual monitor with 27" 1440p and 24" 1080p monitors.
+- Custom spin of Inconsolata (named [MonoStroom](https://github.com/Strum355/MonoStroom)) as system-wide monospace font.
 - Big time user of LSP features (find symbol, find refs/impls etc) and keyboard shortcuts where possible (with vimium for chromium).
 
 ![Workspace 1 of Noah Santschi-Cooney, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/noah-sc-1.png)
