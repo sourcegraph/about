@@ -115,6 +115,17 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
   - FZF/ripgrep for global file/content search
   - Shortcuts to open my current location in Github/Sourcegraph
 
-![Workspace 1 of Stephen Gutekanst, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/camden.png)
+![Workspace 1 of Camden Cheek, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/camden.png)
+
+## Erik Seliger, Software Engineer
+
+- VSCode
+- Light and dark, depending on day time (but more light than dark)
+- Standard theme
+- Language servers and their refactoring tools
+- Multi-cursors
+- Editor integrated search a lot too
+
+![Workspace 1 of Erik Seliger, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/erik.png)
 
 
