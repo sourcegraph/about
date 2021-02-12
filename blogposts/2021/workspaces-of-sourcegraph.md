@@ -197,5 +197,4 @@ I basically do everything either in tmux or in the browser. In tmux I spawn lots
 - Extensions: Bracket Pair Colorizer, GitLens, Sourcegraph
 - Misc: Fira Code font, Tilix terminal emulator
 
-![Workspace of Thorsten Ball, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tj.png)
-
+![Workspace of TJ Kandala, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tj.png)
