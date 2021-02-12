@@ -642,6 +642,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Account Executive
 - San Francisco, CA, USA 🇺🇸
-- GitHub: [MilesmulcareSG](https://github.com/)
+- GitHub: [MilesmulcareSG](https://github.com/MilesmulcareSG)
 - [miles@sourcegraph.com](mailto:miles@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milesmulcare)
 - Miles lives in San Francisco's North Beach neighborhood. Prior to Sourcegraph, Miles spent 7.5 years at Fastly where he helped enterprise Engineering, Product, and Security teams to scale from $10M to over $200M in revenue. Miles graduated with a BA in Communications from Lewis & Clark College. Outside of work, Miles enjoys time with his family, Paige and Liam, and he is an avid road and mountain biker.
