@@ -96,3 +96,25 @@ Outside of that, I tend to be very single window focused: I run everything in a 
 ![Workspace 2 of TJ Devries, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/teej_telescope.png)
 
 
+## Stephen Gutekanst, Software Engineer
+
+It's a disaster ("method to the madness"), but: I usually have open a browser, where the left half of my ~40 or so tabs are related to the PRs and other things I am working on, and the right half are tabs related to research (e.g. Sourcegraph tabs for looking at code I am working on) or things I am helping others on (e.g. reviewing RFCs, PRs)
+I do not use VS Code's terminal support, instead I have generally one terminal open with a tab for each of: the Sourcegraph dev server, git actions in different repositories, customer work I might be doing, etc.
+
+In my editor I keep open every file (usually <60) that I have interacted with when working on my current project (in this case, code insights.) I do not ever open files that I am not constantly referencing, if I need to do a one-off search I use a Sourcegraph browser tab. On the far left tab I have a single scratch doc with random notes. I use the VS Code search feature to jump between code I am working on, with tricks like ) GoMethod( to find Go methods. I have the Go langserver disabled.
+
+![Workspace 1 of Stephen Gutekanst, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/stephen.png)
+
+## Camden Cheek, Software Engineer
+
+- Neovim
+- Dark mode
+- Gruvbox
+- Plugins/features highlights
+  - Builtin Neovim LSP for code navigation/intel
+  - FZF/ripgrep for global file/content search
+  - Shortcuts to open my current location in Github/Sourcegraph
+
+![Workspace 1 of Stephen Gutekanst, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/camden.png)
+
+
