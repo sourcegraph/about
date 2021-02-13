@@ -638,3 +638,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [manuel@sourcegraph.com](mailto:manuel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/manuel-ucles-444080151/)
 - Manny is from Honduras 🇭🇳 but has lived in Phoenix, Arizona most of his life. He enjoys playing basketball, chess and does boxing/MMA in his spare time. Prior to Sourcegraph, Manny worked as an Application Engineer at Freedom Financial. He also has experience as a Software Engineer at Mckesson and a Data Analyst at Uber.
 
+## Kylie Fligstein (she/her)
+
+- Executive Business Partner to VP of Product
+- Oakland, CA, USA 🇺🇸 
+- GitHub: kyfli
+- [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
+- Kylie is PomChi mother to a young pup named Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented exectuor, with an emphasis on following up & through. 
