@@ -43,6 +43,10 @@ const ITEMS: {
             url: '/external-logos/toast-logo.svg',
         },
         {
+            name: 'GE',
+            url: '/external-logos/general-electric-logo.svg',
+        },
+        {
             name: 'SoFi',
             url: '/external-logos/sofi-logo.svg',
             // link: {
