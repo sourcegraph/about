@@ -642,6 +642,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 - Executive Business Partner to VP of Product
 - Oakland, CA, USA 🇺🇸 
-- GitHub: kyfli
+- GitHub: [kyfli](https://github.com/kyfli)
 - [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
 - Kylie is PomChi mother to a young pup named Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented exectuor, with an emphasis on following up & through. 
