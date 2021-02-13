@@ -21,5 +21,11 @@ You might think of this page as a remote version of "the clever workflows and sh
 - **Use a tab manager** like [Tabbs](https://chrome.google.com/webstore/detail/tabbs/cicnbbdlbjaoioilpbdioeeaockgbhfi) or [Tabli](https://chrome.google.com/webstore/detail/tabli/igeehkedfibbnhbfponhjjplpkeomghi). 
 - **Set up a separate [Chrome profile](https://support.google.com/chrome/answer/2364824?co=GENIE.Platform%3DDesktop&hl=en)** so you can keep your work and personal bookmarks and autocompletes/shortcuts separate. 
 
+## Other tools 
 
+- [Loom](https://loom.com) for quick videos for demos or bugs.
+
+## Miscellaneous 
+
+- **Learn the keyboard shortcut to pull up your emoji keyboard:** now you can emoji-react places beyond Slack, or use emojis for visual distinction in titles/comments in all your other tools. On Mac it's `command` + `control` + `[space]`. 
 
