@@ -7,7 +7,7 @@ You might think of this page as a remote version of "the clever workflows and sh
 ## Slack 
 
 - **Set up [custom channel sections](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) in your sidebar to organize all your channels.** You can expand/collapse groups of channels. For example, you might make a group called "Social" that contains channels like #random, #pets-of-sourcegraph, and #cooking.
-- **Automatically add links to your slack posts by copying a url, highlighting the text you want to link in the slack message, and then pasting.** This way you don't need to use the Slack "add link" button nor the slack keyboard shortcut of cmd+shift+U; you can use your cmd+v paste shortcut.
+- **Automatically add links to your slack posts by copying a url, highlighting the text you want to link in the slack message, and then pasting.** This way you can use `cmd`+`v` instead of the Slack "add link" button or the slack keyboard shortcut of `cmd`+`shift`+`U`.
 
 ### Popular app integrations 
 - **[Connect your Google calendar](https://slack.com/app-pages/google-calendar)** to get reminders and show when you're in a meeting. 
@@ -27,5 +27,5 @@ You might think of this page as a remote version of "the clever workflows and sh
 
 ## Miscellaneous 
 
-- **Learn the keyboard shortcut to pull up your emoji keyboard:** now you can emoji-react places beyond Slack, or use emojis for visual distinction in titles/comments in all your other tools. On Mac it's `command` + `control` + `[space]`. 
+- **Learn the keyboard shortcut to pull up your emoji keyboard:** now you can emoji-react places beyond Slack, or use emojis for visual distinction in titles/comments in all your other tools. On Mac it's `command`+`control`+`space`. 
 
