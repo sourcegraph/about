@@ -205,4 +205,4 @@ I basically do everything either in tmux or in the browser. In tmux I spawn lots
 
 # What does your editor look like? 
 
-What editors, themes and fonts do you use? DM or tweet us at ![@srcgraph](https://twitter.com/srcgraph) to share your thoughts and images. /Make sure to not include sensitive information in any screens you share!/
+What editors, themes and fonts do you use? DM or tweet us at [@srcgraph](https://twitter.com/srcgraph) to share your thoughts and images. /Make sure to not include sensitive information in any screens you share!/
