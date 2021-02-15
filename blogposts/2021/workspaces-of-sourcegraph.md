@@ -3,7 +3,7 @@ title: The workspaces of Sourcegraph
 author: Rob Rhyne
 authorUrl: https://twitter.com/robrhyne
 publishDate: 2021-02-10T18:00+02:00
-tags: [blog, remote]
+tags: [blog, remote, design]
 slug: workspaces-of-sourcegraph
 published: true
 ---
