@@ -8,7 +8,25 @@ slug: workspaces-of-sourcegraph
 published: true
 ---
 
-This started as a design research thread in Slack and escalated into something awesome very quickly! Here are all the workspaces and dev setups of our team.
+The Sourcegraph design team is exploring the display of search results and code in our application. As part of this exploration, we are reviewing trends in typography, color schemes, and UI complexity in the places our engineers view code the most… their editors.  While our research is far from complete, we thought you might find the characteristics of where our team writes code interesting. 
+
+## Light/dark mode and contrast
+Three quarters of our engineers preferred a dark theme over a light theme.  Curiously, the majority of dark mode users chose a low contrast between code and background. Backgrounds colors averaged 85% black while the  primary code color to background contrast ratio was around 9 to 1. 
+
+Conversely, all light mode users at Sourcegraph prefer the maximum contrast with 100% white backgrounds and a black primary code color. 
+
+![Representative contrast](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/workspace-contrast.png)
+
+## Information density
+There are clearly two camps… those who use an IDE (mainly VS Code) and terminal based editors such as neovim/vim/emacs users. Editor users had around 96% of editor screen real estate dedicated to code. IDE users had from 80 to 90% of their screens is dedicated to code or the terminal, with the rest occupied by file trees and other UI such as menus and tabs. 
+
+## Fonts are commonly customized
+Over half of our engineers customize their programing font.  Among these users, [FiraCode](https://github.com/tonsky/FiraCode) was the most popular choice (those [programming ligatures](https://github.com/tonsky/FiraCode#whats-in-the-box) are amazing) followed by  [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Other fonts include  [MonoStroom](https://github.com/Strum355/MonoStroom) , [Cascadia Code](https://github.com/microsoft/cascadia-code)),  and [Hack](https://sourcefoundry.org/hack/).
+
+While our sample sizes certainly do not allow an industry wide representation of the design and display of code, we found these results interesting.  If you would like to contribute tweet pictures of your editors to @srcgraph. /Just make sure to not include sensitive information!/
+
+
+# Some of our developer’s setups:
 
 ## Rob Rhyne, Product Designer
 
