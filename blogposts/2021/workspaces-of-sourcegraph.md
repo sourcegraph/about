@@ -23,8 +23,6 @@ There are clearly two camps… those who use an IDE (mainly VS Code) and termina
 ## Fonts are commonly customized
 Over half of our engineers customize their programing font.  Among these users, [FiraCode](https://github.com/tonsky/FiraCode) was the most popular choice (those [programming ligatures](https://github.com/tonsky/FiraCode#whats-in-the-box) are amazing) followed by  [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Other fonts include  [MonoStroom](https://github.com/Strum355/MonoStroom) , [Cascadia Code](https://github.com/microsoft/cascadia-code)),  and [Hack](https://sourcefoundry.org/hack/).
 
-While our sample sizes certainly do not allow an industry wide representation of the design and display of code, we found these results interesting.  If you would like to contribute tweet pictures of your editors to @srcgraph. /Just make sure to not include sensitive information!/
-
 
 # Some of our developer’s setups:
 
@@ -203,3 +201,8 @@ I basically do everything either in tmux or in the browser. In tmux I spawn lots
 - Misc: Fira Code font, Tilix terminal emulator
 
 ![Workspace of TJ Kandala, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tj.png)
+
+
+# What does your editor look like? 
+
+What editors, themes and fonts do you use? DM or tweet us at ![@srcgraph](https://twitter.com/srcgraph) to share your thoughts and images. /Make sure to not include sensitive information in any screens you share!/
