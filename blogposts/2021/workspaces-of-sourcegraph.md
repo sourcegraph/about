@@ -96,7 +96,7 @@ Outside of that, I tend to be very single window focused: I run everything in a 
 ![Workspace 1 of TJ Devries, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/teej_simple_split.png)
 ![Workspace 2 of TJ Devries, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/teej_telescope.png)
 
-## Stephen Gutekanst, Senior IC
+## Stephen Gutekanst, Software Engineer
 
 It's a disaster ("method to the madness"), but:
 
