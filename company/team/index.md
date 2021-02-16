@@ -644,4 +644,12 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Oakland, CA, USA 🇺🇸 
 - GitHub: [kyfli](https://github.com/kyfli)
 - [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
-- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through. 
+- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through.
+
+## Murat Sutunc (he/him)
+
+- Software Engineer
+- Mountain View, CA, USA 🇺🇸
+- Name pronunciation: [muˈɾat](http://ipa-reader.xyz/?text=mu%CB%88%C9%BEat&voice=Joey)
+- [@muratsu](https://github.com/muratsu), [murat@sourcegraph.com](mailto:murat@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/muratsutunc)
+- Murat started his career at Microsoft working on web standards. He worked on the JavaScript runtime engine and was a founding team member of the TypeScript language. After Microsoft, he founded a venture-backed company and eventually found his way to the Bay Area. Outside of work, Murat is passionate about cooking, finance, and video games.
