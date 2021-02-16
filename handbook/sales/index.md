@@ -23,13 +23,13 @@ The Sales team represents us and our values to customers, bringing back dollars 
 ## Goals
 
 Make Sourcegraph valuable and accessible to every company
-Grow ARR 3x YoY (+$14M IARR)
+Grow ARR 3x YoY
  - 95% Gross Revenue Retention
  - 175% Net Revenue Retention
 
 Solve Big Code problems for the largest enterprises (5k+ user, multi-business unit, global)
  - Land 10 large enterprise customers
- - Close $5M IARR in the large enterprise segment
+ - Close 30% IARR in the large enterprise segment
  - Successfully deploy to a 5k+ MAU within a large enterprise account
 
 Build a company that thrives amid rapid growth
