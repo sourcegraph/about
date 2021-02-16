@@ -25,7 +25,7 @@ export default class DemoPage extends React.Component<any, any> {
     }
     public render(): JSX.Element | null {
         const title = 'Sourcegraph - Schedule a Sourcegraph Campaigns demo.'
-        const desc = 'Talk with a product specialist or engineer to learn how you can automate large-scale code changes with Sourcegraph.'
+        const desc = 'Learn how you can automate large-scale code changes with Sourcegraph.'
         return (
             <Layout location={this.props.location} minimal={true}>
                 <Helmet>
@@ -46,7 +46,7 @@ export default class DemoPage extends React.Component<any, any> {
                             <div className="col-md-6">
                                 <h1 className="display-3 font-weight-bold">Request a demo</h1>
                                 <h3 className="font-weight-light">
-                                    Talk with a product specialist or engineer to learn how you can automate large-scale code changes with Sourcegraph.
+                                    Learn how you can automate large-scale code changes with Sourcegraph.
                                 </h3>
                                 <div className="form mt-5">
                                     <div id="hubspotRequestDemoForm" className="d-flex justify-center" />
