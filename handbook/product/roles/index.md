@@ -1,6 +1,9 @@
 # Roles on the Product team
 
-This page lists the roles on the product team. See our [careers page](../../../company/careers.md) for open positions and [product interviews](./interviews/index.md) for details on our interview processes.
+This page lists the roles on the product team.
+
+- Open product roles are listed on the [company careers page](../../../company/careers.md).
+- [Interview processes documentation](./interviews/index.md) has detailed steps for each role.
 
 ## Product Manager
 
