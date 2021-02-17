@@ -37,9 +37,8 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Build a tool which can to semantically compare and diff LSIF dumps.
     - Write a test harness for lsif-clang which can perform snapshot tests on small code snippets.
     - Spike: Explore how to perform snapshot tests on large projects for integration testing.
-
     
-    **Outcome:** TBD
+    **Outcome:** We can confidently make code changes to lsif-clang without worrying about obvious bugs.
 
 1. Sourcegraph Cloud has precise code intelligence for C++ repositories that use Bazel as a build system.
     - Support Bazel projects in lsif-clang.
@@ -65,7 +64,6 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
     - Jump to declaration.
     - Jump to implementation.
     - Switch between source and header file.
-   
 
 ### Java precise code intelligence support
 
