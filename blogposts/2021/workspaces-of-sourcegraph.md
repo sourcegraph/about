@@ -207,6 +207,18 @@ I basically do everything either in tmux or in the browser. In tmux I spawn lots
 ![Workspace of TJ Kandala, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tj.png)
 
 
+## Quinn Keast, Product Designer
+
+- Nova (Cobalt theme) and VSCode (Cobalt2)
+- Typeface: Operator Mono
+- Sourcegraph light theme
+- Desktop organization: Browser and reference materials on the left, Figma or full-screen editors on the main display. Sometimes I use terminals in the IDE, and other times I use iTerm2.
+
+I'm experimenting with the Nova editor alongside VSCode, which replaced Sublime Text 2. I don't have any standard window setup, shifting as I need for any given design, research, or programming need. I've been using the fantastic Operator Mono font with ligatures and italics for years.
+
+![Primary screen workspace organization of Quinn Keast, Product Designer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/Quinn-Keast-1.png)
+![Secondary screen workspace organization of Quinn Keast, Product Designer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/Quinn-Keast-2.png)
+
 # What does your editor look like? 
 
 What editors, themes and fonts do you use? DM or tweet us at [@srcgraph](https://twitter.com/srcgraph) to share your thoughts and images. /Make sure to not include sensitive information in any screens you share!/
