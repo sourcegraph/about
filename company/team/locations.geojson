@@ -452,6 +452,17 @@
           -33.81944570348443
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Lisa Tagliaferri"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.650002,
+          -73.949997
+        ]
+      }
     }
   ]
 }
