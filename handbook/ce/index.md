@@ -28,7 +28,7 @@ We work with many other teams at Sourcegraph, including:
 	* [Team rituals](support-team-rituals.md)
 	* [Prioritization](support-prioritization.md)
 	* [Workflow](support-workflow.md)
-	* [p0 incident response](p0-incident-response.md)
+	* [p0 incident response](p0-Incident-Response.md)
 	* [Legacy support overview](legacy-support-overview.md)
 	* [How to route questions from customers](routing_questions.md)
 	* [User deletion](delete_users_guide.md)
