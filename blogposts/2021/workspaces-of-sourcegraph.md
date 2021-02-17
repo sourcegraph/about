@@ -125,7 +125,7 @@ It's a disaster ("method to the madness"), but:
 
 In my editor I keep open every file (usually <60) that I have interacted with when working on my current project (in this case, the backend for Code Insights.) I do not ever open files that I am not constantly referencing, if I need to do a one-off search I use a Sourcegraph browser tab. On the far left tab I have a single scratch doc with random notes. I use the VS Code search feature to jump between code I am working on, with tricks like `) GoMethod(` to find Go methods. I have gopls (the Go langserver) disabled because I often find it taking too many resources and/or preventing me from saving Go files while it tries to run formatting operations.
 
-![Workspace of Stephen Gutekanst](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/stephen.png)
+![Workspace of Stephen Gutekanst](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/stepheng.png)
 
 ## Camden Cheek, Software Engineer
 
@@ -149,7 +149,7 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 - Multi-cursors
 - Editor integrated search a lot too
 
-![Workspace 1 of Erik Seliger, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/erik.png)
+![Workspace 1 of Erik Seliger, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/eriks.png)
 
 ## Artem Ruts, Software Engineer
 
