@@ -95,13 +95,14 @@ Here's a look at the individual setups in greater detail:
 
 ## Adam Harvey, Software Engineer
 
-I use a mixture of VS Code with more or less the recommended plugins and nothing else (sometimes in remote mode to a devbox in the cloud; sometimes locally), and neovim with airline (for a better statusbar) and coc (for LSP purposes) — I've tried the native support in neovim nightlies, but I hit too many rough edges. Everything is in light mode. Like Keegan, I'm also very keyboard driven.
+I use a mixture of [Visual Studio Code](https://code.visualstudio.com/) with more or less the recommended language support plugins and nothing else (sometimes in remote mode to a devbox in the cloud; sometimes locally), and [Neovim](https://neovim.io/) with [airline](https://github.com/vim-airline/vim-airline) for a better statusbar and [coc.nvim](https://github.com/neoclide/coc.nvim) to get the same LSP magic as you get in VSCode — I've tried the [native LSP client](https://neovim.io/doc/user/lsp.html) in neovim nightlies, but I hit too many rough edges. I tend to keep my editors as just editors: I don't use builtin terminals or debugging capabilities.
 
-I don't tend to layer much else into my editing experience: I use a separate terminal (kitty), rather than the builtin ones.
+Styling wise, everything is in light mode — I find it helps me focus, and I keep dark mode for late night phone usage when I should be sleeping — and I use [Fira Code](https://github.com/tonsky/FiraCode) as a font because I love ligatures, even if I don't always love its serifs. Like Keegan, I'm also very keyboard driven.
 
-Outside of that, I tend to be very single window focused: I run everything in a separate fullscreen window on a separate workspace in Sway, and use hotkeys to switch between workspaces. (1 is always Firefox; 2 is kitty; 3 is personal chat; 4 is Slack; 5 is VSCode; 6- are used for ad hoc one offs.) Generally speaking I have as little chrome as possible: menu bars are usually disabled once I know hot keys, and I have sway configured to disable titlebars unless the workspace is split or the window is floating. Minimal distraction.
+In terms of general workflow, I tend to be very single window focused: I run everything in a separate fullscreen window on a separate workspace in [Sway](https://swaywm.org/) on [Arch Linux](https://archlinux.org/), and use hotkeys to switch between workspaces. (1 is always Firefox; 2 is kitty; 3 is personal chat; 4 is Slack; 5 is VSCode; 6- are used for ad hoc one offs.) Generally speaking I have as little chrome as possible, besides [Waybar](https://github.com/Alexays/Waybar): menu bars are usually disabled once I know hot keys, and I have Sway configured to disable title bars unless the workspace has multiple tiled windows or the window is floating. Minimal distraction.
 
-![Workspace 1 of Adam Harvey, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/aharvey.png)
+![vim workspace of Adam Harvey, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/aharvey-1.png)
+![VSCode workspace of Adam Harvey, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/aharvey-2.png)
 
 ## TJ Devries, Software Engineer
 
