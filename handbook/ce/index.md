@@ -24,7 +24,7 @@ We work with many other teams at Sourcegraph, including:
   * [Demo instances](demo_instances.md)
 * [Support](support.md)
 	* [Team bios](support-bios.md)
-	* [Team schedule](support.schedule.md)
+	* [Team schedule](support-schedule.md)
 	* [Team rituals](support-team-rituals.md)
 	* [Prioritization](support-prioritization.md)
 	* [Workflow](support-workflow.md)
