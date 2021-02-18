@@ -28,6 +28,8 @@ See [security goals and priorities](goals.md)
   - https://github.com/sourcegraph/security-issues
 - Increase our security posture by running traditional security tools such as vulnerability scanners, SAST, and DAST tools.
   - https://github.com/sourcegraph/sourcegraph/security/code-scanning
+  - [Infrastructure information](./infrastructure/index.md)
+  - [Security tooling](./tooling/index.md)
 - Create a culture of security at Sourcegraph that empowers all of our engineers to write secure code.
 
 ## How we work
@@ -89,10 +91,14 @@ Security develops infrastructure in the [Auxilliary project](https://console.clo
 
 ## Members
 
-- [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([Engineering Manager](../roles.md#engineering-manager)).
-- [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
-- [André Eleuterio](../../../company/team/index.md#andré-eleuterio-hehim)
+- FQ1 [Engineering Manager](../roles.md#engineering-manager), Elizabeth acting manager until then. {#security-eng}
+  - [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
+  - [André Eleuterio](../../../company/team/index.md#andré-eleuterio-hehim)
+  - FQ1 [security engineer](https://hire.lever.co/jobs/postings/edit/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+  - FQ2 [security engineer](https://hire.lever.co/jobs/postings/edit/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+  - FQ3 [security engineer](https://hire.lever.co/jobs/postings/edit/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+  - FQ4 [security engineer](https://hire.lever.co/jobs/postings/edit/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
 
 ## Open Positions
 
-[Software Engineer - Security](../../engineering/hiring/software-engineer-security.md)
+[Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)

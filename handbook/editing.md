@@ -10,7 +10,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 - Any engineer at Sourcegraph can help. (The *code* that engineers write at Sourcegraph also consists of files in a Git repository, so engineers are very familiar with making these kinds of edits.)
 - [Teammates who have already made a handbook change](https://sourcegraph.com/github.com/sourcegraph/about/-/stats/contributors?path=handbook%2F) can help.
-- **Handbook heroes**: Ask @eric, @aileen, or @aharvey for handbook help on Slack (DM or #handbook). They volunteered to help anyone with anything handbook-related!
+- **Handbook heroes**: Ask the @handbook-heroes group in Slack (including @eric, @aileen, @aharvey, @virginia, and @jean) for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be a handbook hero, simply edit this page, add your name to the list and ping @handbook-heroes in the #handbook channel to inform them_
 - Ask in #handbook: `Who can screen-share with me to help me make an edit to the handbook?`
 - Don't be afraid of breaking anything! It is very easy for any engineer on the team to roll back to the previous version of the handbook if you make a mistake.
 
@@ -70,8 +70,19 @@ To make edits to multiple files and submit all of the edits as a group to be rev
 
 > NOTE: These steps are not exhaustively documented. Please [ask for help](#how-to-get-help) as many times as you need to until you feel comfortable with this process.
 
+### Web interface
+
+A screen recording of how to make multiple changes in a single PR in the web interface for GitHub:
+
+<iframe src="https://share.getcloudapp.com/yAu6oB7v?embed=true&amp;branding=true&amp;title=true" style="border:none" allowtransparency="true" allowfullscreen="true" width="100%" height="100%" frameborder="0"></iframe>
+
+A screen recording of how to make a new file and include it for review in the web interface for GitHub:
+
+<iframe src="https://share.getcloudapp.com/7Kup2n2x?embed=true&amp;branding=true&amp;title=true" style="border:none" allowtransparency="true" allowfullscreen="true" width="100%" height="100%" frameborder="0"></iframe>
+
 ### macOS
 
+### Github Desktop version
 Here's a screen recording of the steps (written out below) for macOS:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/diZUeHZhekc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

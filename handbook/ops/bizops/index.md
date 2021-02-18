@@ -1,15 +1,18 @@
-# Business & product operations
+# Business Operations & Strategy
 
-The business & product operations (BizOps) team is responsible for [translating business goals (strategy) into tactical operations (execution)](https://medium.com/business-startup-development-and-more/why-your-startup-also-needs-a-bizops-team-5d2e7d436a0).
+The Business Operations & Strategy (BizOps) team is responsible for [translating business goals (strategy) into tactical operations (execution)](https://medium.com/business-startup-development-and-more/why-your-startup-also-needs-a-bizops-team-5d2e7d436a0).
 
 ## Members
 
-- [Dan Adler](../../../../company/team/index.md#dan-adler-he-him), VP Operations
+- S.S., Director of Business Operations & Strategy (starting 2021-02-15)
 - [Eric Brody-Moore](../../../../company/team/index.md#eric-brody-moore), Business Operations Senior Analyst
+- [Farhan Attamimi](../../../../company/team/index.md#farhan-attamimi), Business Operations Analyst
+- S.H., Business Operations Analyst (starting 2021-03-08)
+- K.B., Business Operations Analyst (starting 2021-03-08)
 
 ## Roles
 
-See the [Operations roles](../roles/index.md) page.
+See our [careers page](../../../../company/careers.md) for open roles on the BizOps team.
 
 ## Goals
 
@@ -26,6 +29,7 @@ To reach us, mention @business-team in the most relevant channel (i.e. #marketin
 Dashboards are structured by goal instead of team. As we have more and more projects being worked on and tracked concurrently, this makes it easier for the product, engineering and business teams to track, link to, and simplify the lifecycle of dashboards. For example, we don't need to think about when it's time to deprecate a look from the code intel dashboard. When the goal is removed, the dashboard is archived.
 
 WIP
+
 - LSIF adoption
 - Sourcegraph WAU
 - Browser extension adoption

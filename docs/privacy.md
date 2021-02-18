@@ -3,7 +3,7 @@ layout: markdown
 title: Sourcegraph Privacy Policy
 ---
 
-Last modified: February 21, 2020
+Last modified: January 15, 2021
 
 Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**) understands that privacy is important to our online visitors to our Sourcegraph.com website and users of our online services (collectively, for the purposes of this Privacy Policy, our **"Website"**), as well as users of our private or self-hosted Sourcegraph instances (collectively with our Website, our **"Service"** or **"Services"**). This Privacy Policy explains how we collect, use, share and protect your personal information that we collect through our Service. By using our Service, you agree to the terms of this Privacy Policy and our <a href="/terms">Terms of Service</a>.
 
@@ -57,7 +57,7 @@ We and our third-party partners may automatically collect certain types of usage
 
 - **Email beacons**. We may employ clear gifs (also known as web beacons) in HTML-based emails sent to our users to track which emails are opened and which links are clicked by recipients. The information allows for more accurate reporting and improvement of the Website.
 
-- **Web analytics**. We may also collect analytics data, or use third-party analytics tools, to help us measure traffic and usage trends for the Website. These tools collect information sent by your browser or mobile device, including the pages you visit, your use of third party applications, and other information that assists us in analyzing and improving the Website.
+- **Web analytics**. We may also collect analytics data, or use third-party analytics tools, to help us measure traffic and usage trends for the Website. These tools collect information sent by your browser or mobile device, including the pages you visit, your use of third-party applications, and other information that assists us in analyzing and improving the Website.
 
 Although we do our best to honor the privacy preferences of our Users, we are not able to respond to Do Not Track signals from your browser at this time.
 
@@ -82,7 +82,7 @@ We use third-party applications such as Google Cloud Platform, Honeycomb, and mo
 
 We use third-party applications such as Stripe and Xero to manage corporate billing and invoicing. These companies provide further information about their own privacy practices on their websites.
 
-We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third party tracking and online advertising”](#third-party-tracking-and-online-advertising) below.
+We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third-party tracking and online advertising”](#Third-party-tracking-and-online-advertising) below.
 
 <span style="color:#b200f8;">
 
@@ -118,9 +118,13 @@ We may also aggregate or otherwise strip data of all personally identifying char
 
 Any information or content that you voluntarily disclose for posting to the Website becomes available to the public, as controlled by any applicable privacy settings. If you remove information or content that you posted to the Website, copies may remain viewable in cached and archived pages of the Website, or if other Users have copied or saved that information.
 
-### Third Party Tracking and Online Advertising
+<span style="color:#b200f8;">
 
-We participate in interest-based advertising and use third party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third party online advertising networks, social media companies, and other third party services, to collect information about your use of our Service over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use. Typically, though not always, the information used for interest-based advertising is collected through cookies or similar tracking technologies. We and our third party partners use this information to make the advertisements you see online more relevant to your interests, as well as to provide advertising-related services such as reporting, attribution, analytics and market research.
+## Third-party tracking and online advertising
+
+</span>
+
+We participate in interest-based advertising and use third-party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third-party online advertising networks, social media companies, and other third-party services, to collect information about your use of our Service over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use. Typically, though not always, the information used for interest-based advertising is collected through cookies or similar tracking technologies. We and our third-party partners use this information to make the advertisements you see online more relevant to your interests, as well as to provide advertising-related services such as reporting, attribution, analytics and market research.
 
 To learn more about interest-based advertising and how you may be able to opt-out of some of this advertising, you may wish to visit the Network Advertising Initiative’s online resources, at http://www.networkadvertising.org/choices, and/or the DAA’s resources at www.aboutads.info/choices. You may also be able to set your browser to delete or notify you of cookies by actively managing the settings on your browser or mobile device. Please note that some advertising opt-outs may not be effective unless your browser is set to accept cookies. Furthermore, if you use a different device, change browsers or delete the opt-out cookies, you may need to perform the opt-out task again.
 
@@ -206,7 +210,7 @@ Sourcegraph does not knowingly collect or solicit any information from anyone un
 
 </span>
 
-Our Service may integrate with or contain links to other third party sites and services. We are not responsible for the practices employed by third-party websites or services embedded in, linked to, or linked from the Service and your interactions with any third-party website or service are subject to that third-party's own rules and policies.
+Our Service may integrate with or contain links to other third-party sites and services. We are not responsible for the practices employed by third-party websites or services embedded in, linked to, or linked from the Service and your interactions with any third-party website or service are subject to that third-party's own rules and policies.
 
 <span style="color:#b200f8;">
 

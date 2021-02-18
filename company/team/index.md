@@ -273,14 +273,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
   gone down the tech rabbit hole and learned programming languages 🤓.
 
-## Chayim Kirshen (he/him)
-
-- Kh-ay-eem (or Hayeem)
-- Security Engineer
-- Kiryat Hasharon, Israel, 🇮🇱
-- [chayim@sourcegraph.com](mailto:chayim@sourcegraph.com)
-- Chayim loves to rollerblade, cycle, listen to and play music; he's always exploring a new idea, and entranced by a piece of music. He spent years shipping 3D software, building cloud things, securing networks, and growing all the vegetables he could in the smallest part of his garden possible. When he's not online he's playing with his kids, reading pulpy science fiction, or delving into behavioural economics. Plus za'atar - he covers everything he can in za'atar.
-
 ## Alicja Suska (she/her)
 
 - /aˈlʲit͡s.ja/
@@ -320,9 +312,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## David Li (he/him)
 
 - Technical Recruiter
-- San Francisco, CA, USA 🇺🇸
+- Seattle, WA, USA 🇺🇸
 - [david@sourcegraph.com](mailto:david@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/withdavidli/)
-- David is originally from the Northeast US and has been in the San Francisco Bay Area since 2013. Prior to Sourcegraph he was at Facebook and Cruise (self-driving cars), where he helped build new teams and scaled recruiting efforts through analytics and operations. He is interested in tennis and has recently started attending music festivals (you'll see him in the front!).
+- David is originally from the Northeast US and has recently moved to Seattle. Prior to Sourcegraph he was at Facebook and Cruise (self-driving cars), where he helped build new teams and scaled recruiting efforts through analytics and operations. He is interested in tennis and has recently started attending music festivals (you'll see him in the front!).
 
 ## Tharuntej Kandala (he/him)
 
@@ -441,7 +433,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Cape Town, South Africa 🇿🇦
 - GitHub: [jeanduplessis](https://github.com/jeanduplessis)
 - Name pronunciation: [ʒɑ̃n dy plɛsi](http://ipa-reader.xyz/?text=%CA%92%C9%91%CC%83n%20dy%20pl%C9%9Bsi&voice=Joey)
-- [jean@sourcegraph.com](mailto:jean@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jeandp)
+- [jean@sourcegraph.com](mailto:jean@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jeandp), [manager docs](jean-du-plessis.md),
 - Jean lives with his wife, quadruplet daughters and 3 dogs in Cape Town, South Africa. Their family loves the outdoors, whether it's hiking in the mountains or spending time at the beach. He's been in IT for the past 16 years of which he's been a manager for 7. Prior to Sourcegraph, he was a manager at GitLab.
 
 ## Eli Rothschild (He/Him)
@@ -524,13 +516,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [andre@sourcegraph.com](mailto:andre@sourcegraph.com), [@eleuterio_](https://twitter.com/eleuterio_)
 - André is a Security Engineer from Curitiba, Brazil. Before joining Sourcegraph he was working at npm and GitHub, holding different security responsibilities. André is a devout follower of Athletico Paranaense, a local soccer team, despite its rare joys and successes. Definitely a geek, be careful when bringing up Breath of the Wild or Magic the Gathering around André as that can lead to some very long conversations.
 
-## Josh Bollin
-
-- VP Sales, East
-- Hoboken, NJ
-- [jbollin@sourcegraph.com](mailto:jbollin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/joshua-bollin-0840226/)
-- Josh lives in Hoboken with his wife Lindsey and two sons Luke & Michael (separated by 16 years!).  Prior to Sourcegraph, Josh helped to drive unicorn exits for AppDynamics and Datadog.  Die-hard foodies, both Lindsey and Josh have spent quite a bit of time in the kitchen during the pandemic to replace their restaurant habit.
-
 ## Hannah Freilich
 
 - Account Executive
@@ -579,3 +564,92 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [umpox](https://github.com/umpox)
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
 - Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
+
+## Greg Bastis (he/him)
+
+- VP Sales, Western Region
+- San Francisco, CA, :us:
+- GitHub: gb1228
+- [gb@sourcegraph.com](mailto:gb@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/gregbastis/)
+- Greg (“GB” to limit confusion with Sourcegraph’s first Gregg, Stone) lives San Francisco’s Outer Sunset neighborhood with his wife, Brenda, who he met working at Boulder, Colorado’s landmark The Sink Bar & Restaurant in 2005. He first moved to San Francisco in 2008 for a job with Salesforce, before heading over to Optimizely where he spent 6 years helping enterprise Product & Engineering teams deliver exceptional digital experiences through Full Stack experimentation. When not working, you can find GB on his 90’s era steel bicycles, exploring all that Northern California has to offer (usually wearing lots and lots of pink).
+
+
+## Seth Hoover (he/him)
+
+- Senior Salesforce Administrator
+- Menifee, CA, USA 🇺🇸
+- GitHub: [seth-sourcegraph](https://github.com/seth-sourcegraph)
+- [seth@sourcegraph.com](mailto:seth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sethhoover)
+- Seth lives in Menifee, CA with his wife, three dogs, two cats, and a horse (the horse actually has an "apartment" at a nearby equestrian facility). He has been working on the Salesforce.com platform for more than 13 years. He started out working as a member of Salesforce Support prior to moving into consulting. In his free time, he enjoys martial arts, paintball, airsoft, offroading and ATVs, movies and reading.
+
+## Ólafur Páll Geirsson (he/him) <a name="olafurpg"></a>
+
+- Software Engineer, Code Intelligence
+- Drøbak, Norway 🇳🇴
+- [olafurpg@sourcegraph.com](mailto:olafurpg@sourcegraph.com), [GitHub](https://github.com/olafurpg), [Twitter](https://twitter.com/olafurpg), [LinkedIn](https://linkedin.com/in/olafurpg).
+- Olaf is an Icelander who was born in Sweden and lives in Norway with his wife who he met at a sauna in Finland. Prior to Sourcegraph, Olaf worked on Scala developer tooling such as Scalafmt (code formatter), Scalafix (refactoring and linting tool), Metals (language server), BSP (Build Server Protocol) and SemanticDB (data model about code). In his spare time, Olaf likes to make delicious food and run in the woods.
+
+## Felipe Janer (he/him)
+
+- Software Engineer
+- Cali, Colombia 🇨🇴
+- GitHub: [5h1rU](https://github.com/5h1rU)
+- [felipe@sourcegraph.com](mailto:felipe@sourcegraph.com)
+- [name pronunciation](http://ipa-reader.xyz/?text=%2Ffeˈlipe%2F&voice=Joey) 🔊
+- Felipe lives in Cali, Colombia. He worked remotely for several New York based companies for almost eight years. This experience allowed him to build products from the ground, take critical technical decisions, lead projects, code a lot, and learn in the process. Outside of work, he loves to work out and watch every America de Cali soccer match.
+
+## Malo Marrec (he/him)
+- Product Manager
+- Paris, France 🇫🇷
+- [Linkedin](https://www.linkedin.com/in/malo-marrec)
+- [malo@sourcegraph.com](mailto:malo@sourcegraph.com)
+- Malo lives in Paris, France after some time in the Bay Area. Prior to Sourcegraph, he bounced around a few early stage startups building infrastucture and developer tools. Malo graduated with an MS from Stanford, and an MS from Ecole Centrale Paris. Outside of work, he kite surfs and reads a ton of books.
+
+
+## Inés Roitman (she/her)
+
+- Onboarding and Training Manager
+- Buenos Aires, Argentina 🇦🇷 / Barcelona, Spain 🇪🇸 
+- [ines@sourcegraph.com](mailto:ines@sourcegraph.com), [GitHub](https://github.com/InesRoitman), [LinkedIn](https://www.linkedin.com/in/ines-roitman/) , [Pronounce my name 🔊](https://www.pronouncenames.com/In%C3%A9s)
+- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection. 
+
+## James Clifford (he/him)
+
+- Account Executive
+- San Francisco, CA, USA 🇺🇸
+- GitHub: [jclifford1](https://github.com/jclifford1)
+- [jclifford@sourcegraph.com](mailto:jclifford@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/jamesclifford91/)
+- James lives in San Francisco's North Beach neighborhood. Prior to Sourcegraph, James spent 5.5 years at Optimizely where he helped enterprise Engineering, Product, and Data teams to deliver better digital experiences through Full Stack experimentation and feature management. James graduated with a BA in Economics from Middlebury College. Outside of work, James can be found skiing in Tahoe or surfing and kiteboarding in the Pacific Ocean and San Francisco Bay.
+
+## TJ DeVries
+
+- Software Engineer
+- Rockford, MI, USA 🇺🇸
+- GitHub: tjdevries
+- [tjdevries@sourcegraph.com](mailto:tjdevries@sourcegraph.com), [twitch.tv/teej_dv](https://twitch.tv/teej_dv)
+- The letter T, and then the letter J
+- TJ lives in Rockford, Michigan. Besides coding during the day, TJ also likes to code on his Twitch stream (linked above). Generally you can find him working on Neovim or Neovim-related plugins and having a good time hanging out with Twitch chat. Outside of coding, TJ loves to spend time with his wife, son and doggo. Also, playing four-mallet marimba is one of his other favorite activities. 
+
+## Manuel Ucles
+
+- Customer Engineer 
+- Phoenix, AZ, USA 🇺🇸
+- GitHub: [mucles](https://github.com/mucles)
+- [manuel@sourcegraph.com](mailto:manuel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/manuel-ucles-444080151/)
+- Manny is from Honduras 🇭🇳 but has lived in Phoenix, Arizona most of his life. He enjoys playing basketball, chess and does boxing/MMA in his spare time. Prior to Sourcegraph, Manny worked as an Application Engineer at Freedom Financial. He also has experience as a Software Engineer at Mckesson and a Data Analyst at Uber.
+
+## Kylie Fligstein (she/her)
+
+- Executive Business Partner to VP of Product
+- Oakland, CA, USA 🇺🇸 
+- GitHub: [kyfli](https://github.com/kyfli)
+- [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
+- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through. 
+
+## Caitlin Moran (she/her)
+
+- Enterprise Account Executive
+- Brooklyn, NY USA 🇺🇸 
+- GitHub: [Caitlinsourcegraph](https://github.com/caitlinsourcegraph)
+- [Caitlin@sourcegraph.com](mailto:caitlin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/caitlincarducci/)
+- Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC! 

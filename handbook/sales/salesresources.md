@@ -15,6 +15,7 @@ Please do not edit the templates directly -- create a copy and place it in a dif
 The following templates are currently available:
 
 - [Enterprise License Agreement and Order Form](https://drive.google.com/file/d/1OzzyL3z13QeD6qInrhv-5Zyqg8GDQmBr/)
+- [Sourcegraph - Enterprise Services Agreement and Order Form (Hosted Services)](https://docs.google.com/document/d/1wAg8CJMTpkB9gYtm0OrFxnlis7k3SL5A/)
 - [Proposal](https://docs.google.com/presentation/d/1Qv75e1oSSL9eRyf8RMOPDFpqoQdOAdmB3lvWcvsZz94/)
 - [Proof of Concept](https://docs.google.com/document/d/1IYI4w4Pavjf1s14CNZZ0VPSaheWGtdaNSCD0VDFWlEE/)
 - [Sales Email](https://docs.google.com/document/d/1a7NayrKc8JWKgzlpawVCUVCTHFYucrSGA5wuF706B-M/)
@@ -38,7 +39,7 @@ Where to Store Customer Notes and Documents:
 - Within that folder, add all of your documents and notably, your running notes google document (which you'll link to the Salesforce opportunity in the designated field)
 - If you'd like to save this folder into your own drive, that's simple and welcomed. Simply right click on the folder, then select 'Add Shortcut to Drive' - - then choose the preferred destination where you'd like this to land within your 'My Drive'
 
-Note: Salesforce is the communication and document source of truth for our Sales Team. Upload all docs (contracts, etc) to Salesforce and the customer's folder in Dropbox as well.
+Note: Salesforce is the communication and document source of truth for our Sales Team. Upload all docs (contracts, etc) to Salesforce and the customer's folder in the [Custome contracts folder on GDrive](https://drive.google.com/drive/folders/1ePvVWcZYdd1_3ZlCP5A0lvMbBhBCVfSm) as well.
 
 ## Sales Content
 

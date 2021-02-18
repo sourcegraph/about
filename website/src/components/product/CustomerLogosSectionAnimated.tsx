@@ -43,6 +43,10 @@ const ITEMS: {
             url: '/external-logos/toast-logo.svg',
         },
         {
+            name: 'GE',
+            url: '/external-logos/general-electric-logo.svg',
+        },
+        {
             name: 'SoFi',
             url: '/external-logos/sofi-logo.svg',
             // link: {
@@ -57,6 +61,10 @@ const ITEMS: {
             //     target: '_blank',
             //     rel: 'nofollow',
             // },
+        },
+        {
+            name: 'Dropbox',
+            url: '/external-logos/dropbox-logo.svg',
         },
         {
             name: 'Prezi',

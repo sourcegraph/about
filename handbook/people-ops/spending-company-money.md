@@ -19,6 +19,7 @@ This is not a hard budget—rather, it is a guide based on what past teammates h
 #### Team-specific totals
 
 - We expect new [Design team](../product/design/index.md) members to spend **$2,650** to allow for purchasing higher-resolution monitors or other design equipment.
+- Since they are customer-facing and need to deliver high-quality demos and support, [Customer Engineering](https://about.sourcegraph.com/handbook/ce) team members can exceed these limits (within reason) to allow for purchasing beefier-spec computers, additional monitors, mics, lighting, etc.
 
 ### Interns
 
@@ -41,19 +42,19 @@ The estimated spend for interns is **$925*** and includes only the electronic it
 
 Once your contract is signed, you will need to purchase and expense your Sourcegraph computer. Computers and laptop insurance (this includes Apple Care if you purchase a Mac as your work computer) are fully reimbursable outside of the [desk setup total estimate above](#desk-set-up), however, engineering roles have different hardware requirements from other roles (please see below for necessary specs corresponding to your role). Computers are considered property of the company.
 
-**Laptop (engineering team):**
+**Laptop (engineering team and customer support team):**
 
-- [16" MacBook Pro, 2.4 GHz (5 GHz turbo) 8‑core (upgrade), 64 GB (upgrade), 1 TB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-gray-2.3ghz-8-core-processor-1tb#)
+- 16" MacBook Pro, 2.4 GHz (5 GHz turbo) 8‑core (upgrade), 64 GB (upgrade), 1 TB SSD
 - Any other laptop that is of equal or lesser value than the pre-approved laptop.
 
 **Laptop (product team):**
 
-- [13" MacBook Pro, 2.3 GHz (4.1 GHz turbo) 4-core (upgrade), 32 GB (upgrade), 512 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-2.0ghz-quad-core-processor-with-turbo-boost-up-to-3.8ghz-512gb#). If you need to update any specs, please reach out to @sourcegraph/people-ops for approval.
+- 13" MacBook Pro, 2.3 GHz (4.1 GHz turbo) 4-core (upgrade), 32 GB (upgrade), 512 GB SSD. If you need to update any specs, please reach out to @sourcegraph/people-ops for approval.
 - Any other laptop that is of equal or lesser value than the pre-approved laptop.
 
 **Laptop (all other teams):**
 
-- [13" MacBook Pro, 2.3 GHz (4.1 GHz turbo) 4-core (upgrade), 16 GB, 512 GB SSD](https://www.apple.com/shop/buy-mac/macbook-pro/13-inch-space-gray-2.0ghz-quad-core-processor-with-turbo-boost-up-to-3.8ghz-512gb#). If you need to update any specs, please reach out to @sourcegraph/people-ops for approval.
+- 13" MacBook Pro, 2.0 GHz (3.8 GHz turbo) Intel Core i5 processor, 16 GB, 512 GB SSD. If you need to update any specs, please reach out to @sourcegraph/people-ops for approval. 
 - Any other laptop that is of equal or lesser value than the pre-approved laptop.
 
 **Other computer:**

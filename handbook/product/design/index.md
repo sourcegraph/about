@@ -18,9 +18,9 @@ Here are a few of the things we strive to make true:
 
 ## Working with design / requesting design work
 
-Working with design should feel fluid, you should be able to open an issue or bring up a concern in slack, and receive actionable feedback: either implementable, or a call to explore further.
+Working with design should feel fluid, you should be able to open an issue or bring up a concern in Slack, and receive actionable feedback: either implementable, or a call to explore further.
 
-You should also not feel limited to words, images (sketches, or references made by editing the broswer DOM) are also encouraged. 
+You should also not feel limited to words, images (sketches, or references made by editing the browser DOM) are also encouraged. 
 
 ### Tracking design priorities
 
@@ -66,6 +66,10 @@ While design does adds time at the beginning of a project, it improves velocity 
 ## Design process
 
 Our design process is documented here: **[Design process](design_process.md)**
+
+## Design and interaction guidelines
+
+The process of designing for the Sourcegraph application has some special considerations. To help maintain consistency and reduce subjectivity we are documenting these items in our [design and interaction guidelines](./design-and-interaction-guidelines.md).
 
 ## Design Principles
 

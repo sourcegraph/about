@@ -17,23 +17,37 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 ## [Customer Engineering](../../handbook/ce/index.md#goals)
 
 ## [Operations](../../handbook/ops/index.md#goals)
+
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [People ops](../../handbook/people-ops/index.md#goals)
-### [Business & product operations](../../handbook/ops/bizops/index.md#goals)
-### [Sales strategy & operations](../../handbook/ops/sales-ops/index.md#goals)
-### [Finance & accounting](../../handbook/ops/finance/index.md#goals)
+
+### [People Ops](../../handbook/people-ops/index.md#goals)
+
+### [Business Operations & Strategy](../../handbook/ops/bizops/index.md#goals)
+
+### [Finance & Accounting](../../handbook/ops/finance/index.md#goals)
+
 ### [Legal](../../handbook/ops/legal/index.md#goals)
 
 ## Engineering
+
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
+
 ### [Engineering leadership](../../handbook/engineering/leadership/index.md#goals)
+
 ### [Campaigns](../../handbook/engineering/campaigns/goals.md#goals)
-### [Cloud](../../handbook/engineering/cloud/goals.md#goals)
+
+### [Core application](../../handbook/engineering/core-application/goals.md#goals)
+
 ### [Code intelligence](../../handbook/engineering/code-intelligence/goals.md#goals)
+
 ### [Distribution](../../handbook/engineering/distribution/goals.md#goals)
+
 ### [Search](../../handbook/engineering/search/goals.md#goals)
+
 ### [Security](../../handbook/engineering/security/goals.md#goals)
+
 ### [Web](../../handbook/engineering/web/goals.md#goals)
+
 ### [Code Insights](../../handbook/engineering/code-insights/goals.md#goals)
 
 ## [Product](../../handbook/product/goals.md)

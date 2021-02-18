@@ -8,7 +8,7 @@
 - **[Lever](https://www.lever.co/):** Access our recruiting tool for tracking candidates in the hiring pipeline.
 - **[Slack](https://slack.com/)**: Access our team communication tool.
 - **[GitHub](https://github.com/sourcegraph/)**: Access our code and our handbook.
-- **[Lattice](https://sourcegraph.latticehq.com/)**: Access our [teammate feedback cycles](../review-cycles.md) (takes place every quarter– Noemi will send out details).
+- **[Lattice](https://sourcegraph.latticehq.com/)**: Access our [teammate feedback cycles](../review-cycles/index.md) (takes place every quarter– Noemi will send out details).
 - **[1Password](https://1password.com/)**: Access shared team passwords and store your own passwords.
 - **[Zoom](https://zoom.us/signin):** Set up your Zoom account and [recommended settings](../../communication.md#video-calls). 
 - **[Jamf Now](https://sourcegraph.jamfcloud.com/)**: Enroll your device in our MDM (ask Noemi for your access code).
@@ -31,7 +31,9 @@
 - Add any local [holidays](../holidays.md) you observe to your calendar so people know you're not working.
 - Make it so any attendees can edit meetings you create: `Default guest permissions: Modify event` (this makes it easy for teammates to reschedule when necessary).
 - Set up a recurring weekly [1-1 meeting](../../leadership/1-1.md) with your manager (e.g., `1-1 $YOURNAME-$MANAGERNAME`).
-- Join the Sourcegraph events calendar by copying `sourcegraph.com_9cd67o8p3gs0rtpj73bt326psk@group.calendar.google.com` into your [add calendar field](https://calendar.google.com/calendar/u/0/r/settings/addcalendar?) and also join the [social calendar](../../../company/remote/social_calendar.md)
+- Join the Sourcegraph events calendar by copying `sourcegraph.com_9cd67o8p3gs0rtpj73bt326psk@group.calendar.google.com` into your [add calendar field](https://calendar.google.com/calendar/u/0/r/settings/addcalendar?) 
+- Also join the [social calendar](../../../company/remote/social_calendar.md)
+- You can add a secondary time zone in your calendar. This will show two time columns. This is very useful when you work closely with people in another time zone. Go to **Settings > General > Time zone** and select the **Display secondary time zone** box. Choose the time zones you want and label them.
 
 ## Learn how to contribute to the handbook
 
@@ -50,5 +52,6 @@
 - Go through the [analytics onboarding](https://sourcegraph.looker.com/projects/sourcegraph_events/files/1_home.md). This onboarding is within Looker, so if you don't have an account you can ask for access in #analytics.
 - Watch Dan's [Sourcegraph Demo](https://drive.google.com/file/d/1VUZ0rnZQpNgjtGDI0tMC-h-OtL0Czz8H/view)
 - Learn how we can (and cannot) [reference our customers externally](../../sales/index.md#customer)
+- Learn your [Sourcegraph teammates' favorite productivity hacks and shortcuts](../../../company/remote/teammate-recommended_productivity_hacks.md). 
 
 Bonus: you can celebrate joining Sourcegraph by changing your LinkedIn background to the [Sourcegraph banner](https://drive.google.com/file/d/1Fgrn_vaVVHVcKTaX9g5fDh9_Bwk9jL3E/view?usp=sharing)!

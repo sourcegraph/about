@@ -2,12 +2,13 @@
 
 The Sourcegraph handbook describes how we (Sourcegraph teammates) work. It's publicly visible because we are an [open company](../company/index.md#open-company).
 
-The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate. 
+The handbook is a living document and we expect every teammate to propose improvements, changes, additions, and fixes to keep it continuously up-to-date and accurate.
 
 - [Editing the handbook](editing.md)
 - [Handbook usage](usage.md)
 
 ## [Company](../company/index.md)
+
 - [All-remote](../company/remote/index.md)
 - [Strategy](../company/strategy.md)
 - [Goals](../company/goals/index.md)
@@ -39,7 +40,8 @@ The handbook is a living document and we expect every teammate to propose improv
 
 - [Engineering](engineering/index.md)
   - [Campaigns](engineering/campaigns/index.md)
-  - [Cloud](engineering/cloud/index.md)
+  - [Core application](engineering/core-application/index.md)
+  - [Code Insights](engineering/code-insights/index.md)
   - [Code intelligence](engineering/code-intelligence/index.md)
   - [Distribution](engineering/distribution/index.md)
   - [Search](engineering/search/index.md)
@@ -49,17 +51,18 @@ The handbook is a living document and we expect every teammate to propose improv
 ### [Customer Engineering](ce/index.md)
 
 - [Customer Engineering](ce/index.md)
-- [Customer Technical Support](ce/support.md)
+- [Customer Support](ce/support.md)
 - Customer Training (TODO)
 
 ### [Marketing](marketing/index.md)
 
 ### [Sales](sales/index.md)
 
+- [Sales strategy & operations](sales/sales-ops/index.md)
+
 ### [Operations](ops/index.md)
 
-- [Business & product operations](ops/bizops/index.md)
-- [Sales strategy & operations](ops/sales-ops/index.md)
-- [Finance & accounting](ops/finance/index.md)
+- [Business Operations & Strategy](ops/bizops/index.md)
+- [Finance & Accounting](ops/finance/index.md)
 - [Legal](ops/legal/index.md)
-- [Tech operations](ops/tech-ops/index.md)
+- [Tech Ops](ops/tech-ops/index.md)

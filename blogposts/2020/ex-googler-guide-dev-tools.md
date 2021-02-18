@@ -7,10 +7,15 @@ publishDate: 2020-11-24
 tags: [blog]
 slug: ex-googler-guide-dev-tools
 heroImage: /blog/exgoogler-backpack-dev-tools.jpg
+socialImage: /blog/exgoogler-campfire.jpg
 published: true
 ---
 
 Many years ago, I did a brief stint at Google. A lot has changed since then, but even that brief exposure to Google's internal developer tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
+
+<div style="margin: 2em;">
+<img src="/blog/exgoogler-campfire.jpg" style="max-width: 600px" alt="Ex-Googler's guide to dev tools" />
+</div>
 
 In other ways, however, Google's internal tools are awfully limited. In particular, nearly all of them are tightly coupled with Google's unique internal ecosystem. Unfortunately, that means you can't take them with you when you leave.
 

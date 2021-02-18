@@ -2,7 +2,9 @@
 
 This document is provided as a glossary for new CE team members to know how to route questions from customers. It is a rough feature ownership mapping by team.
 
-In many cases, questions can span multiple teams. For example, a question about how to scale up indexed search to serve a large set of repositories could cover the Distribution, Cloud, and Search teams. In such cases, default to asking the [Distribution team](../engineering/distribution/index.md) for more precise guidance first.
+In many cases, questions can span multiple teams. For example, a question about how to scale up indexed search to serve a large set of repositories could cover the Distribution, Cloud, and Search teams. In such cases, default to asking the [Distribution team](../engineering/distribution/index.md#support-rotation) for more precise guidance first.
+
+If escalating to a dev team, check their team page in the Handbook to confirm if they've specified a preferred escalation process.
 
 Additions to this document are welcome.
 
@@ -20,17 +22,23 @@ For any questions about license key extension, the CE team is responsible. See t
 
 Any questions about deployment should be routed to the [Distribution team](../engineering/distribution/index.md).
 
+If asking the Distribution team in their Slack channel, ping the [on-call dev](../engineering/distribution/index.md#support-rotation).
+
 ## Monitoring, management, and performance optimization
 
-**Keywords**: `scaling`, `resources`, `performance`/`perf`, `monitoring`, `Grafana`, `Prometheus`
+**Keywords**: `scaling`, `resources`, `performance`/`perf`, `monitoring`, `Grafana`, `Prometheus`, `alert`, `dashboard`
 
-Any questions about monitoring and performance should be routed to the [Distribution team](../engineering/distribution/index.md).
+Questions about specific alerts and graph panels should be routed to the team that owns the alert or panel, as indicated by relevant entry in [Alert solutions](https://docs.sourcegraph.com/admin/observability/alert_solutions) or the [Dashboards reference](https://docs.sourcegraph.com/admin/observability/dashboards) respectively.
+
+Any other questions about monitoring and performance should be routed to the [Distribution team](../engineering/distribution/index.md).
+
+If asking the Distribution team in their Slack channel, ping the [on-call dev]../engineering/distribution/index.md#support-rotation).
 
 ## Code host connections
 
 **Keywords**: `code host`, `cloning`, `syncing`, `token`, `GitHub`, `GitLab`, `Bitbucket`, `Phabricator`, `Gerrit`, `repository`, `project`, `Perforce`, `src-expose`
 
-Any questions about code host connections and repository syncing should be routed to the [Cloud team](../engineering/cloud/index.md).
+Any questions about code host connections and repository syncing should be routed to the [Core application team](../engineering/core-application/index.md).
 
 Note that this section applies to backend connections with code hosts, such as repository cloning and syncing. Questions about [frontend/UI integrations with code hosts](#browser-extensions-and-code-host-native-integrations) (e.g., getting code intelligence inside of a code host) should be rounted to the [Web team](../engineering/web/index.md).
 
@@ -38,13 +46,13 @@ Note that this section applies to backend connections with code hosts, such as r
 
 **Keywords**: `permissions`, `ACLs`, `access`, `authorization`, `authz`
 
-Any questions about repository permissions should be routed to the [Cloud team](../engineering/cloud/index.md).
+Any questions about repository permissions should be routed to the [Core application team](../engineering/core-application/index.md).
 
 ## User authentication (SSO)
 
 **Keywords**: `authentication`, `authn`, `SSO`, `SAML`, `OAuth`, `auth proxy`, `OpenIDConnect`, `OIDC`
 
-Any questions about user authentication should be routed to the [Cloud team](../engineering/cloud/index.md).
+Any questions about user authentication should be routed to the [Core application team](../engineering/core-application/index.md).
 
 ## Code intelligence
 

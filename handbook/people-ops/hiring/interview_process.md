@@ -30,7 +30,7 @@ For each interview we ideally want:
 
 Interviewers may be adjusted due to scheduling difficulties (e.g. interviewer availability, timezones).
 
-We want to mimimize the bias in our hiring process, so we will try to avoid scheduling you as an interviewer for candidates that you have an existing relationship with (e.g. close friends, family, significant others, candidate who you refer). This may be unavoidable if you are the hiring manager.
+We want to minimize the bias in our hiring process, so we will try to avoid scheduling you as an interviewer for candidates that you have an existing relationship with (e.g. close friends, family, significant others, candidate who you refer). This may be unavoidable if you are the hiring manager.
 
 ## Scheduling
 
@@ -39,6 +39,8 @@ We are flexible when it comes to scheduling interviews because we are all-remote
 Even if candidates prefer to batch all their interviews together, it might not be possible due to the timezones of available interviewers.
 
 If interviews are spread over multiple days and it is clear from the initial feedback that we won't be moving forward, we will cancel the remaining scheduled interviews to save ourselves and the candidate time.
+
+Select the "interviews" calendar for the "add to calendar" option in Lever when scheduling interviews so that it shows on our shared Google Interviews calendar. 
 
 ## Writing feedback
 

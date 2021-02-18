@@ -316,19 +316,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Chayim Kirshen"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8532,
-          32.3215
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Elizabeth Stirling"
       },
       "geometry": {
@@ -429,6 +416,54 @@
           53.884511629030904
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ólafur Páll Geirsson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.777587890625,
+          59.90133567536662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malo Marrec"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.4547656774520874,
+          48.73036516102081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Jean du Plessis"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.69546890258789,
+          -33.81944570348443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Tommy O Donnell"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.708664566278458,
+          52.267426934723936
+        ]
+      }
     }
   ]
 }
+

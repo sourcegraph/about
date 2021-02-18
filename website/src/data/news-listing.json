@@ -3,6 +3,13 @@
     "year": 2021,
     "articles": [
       {
+        "newsSource": "Forbes",
+        "newsTitle": "Startup Opportunities In AI – The Unbundling Of Search",
+        "newsDate": "January 12, 2021",
+        "newsLink": "https://www.forbes.com/sites/konstantinebuhler/2021/01/12/startup-opportunities-in-ai--the-unbundling-of-search/",
+        "newsImage": "/external-logos/forbes-logo.png"
+      },
+      {
         "newsSource": "Business Insider",
         "newsTitle": "54 tech startups to bet your career on in 2021",
         "newsDate": "January 4, 2021",
@@ -711,6 +718,18 @@
         "newsDate": "November 12, 2019",
         "newsLink": "https://sdtimes.com/softwaredev/sd-times-news-digest-codefreshs-ci-cd-live-debugger-azure-functions-premium-and-smartbear-announces-readyapi-3-0/",
         "newsImage": "/external-logos/sd-times-sq-logo.svg"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "articles": [
+      {
+        "newsSource": "Forbes",
+        "newsTitle": "30 Under 30 2017: The Young Innovators Transforming Enterprise Tech",
+        "newsDate": "January 3, 2017",
+        "newsLink": "https://www.forbes.com/sites/kathleenchaykowski/2017/01/03/30-under-30-2017-the-young-innovators-transforming-enterprise-tech/",
+        "newsImage": "/external-logos/forbes-logo.png"
       }
     ]
   }

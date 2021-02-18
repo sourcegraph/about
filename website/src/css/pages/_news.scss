@@ -5,11 +5,24 @@
     &__image {
         width: 100%;
         max-width: 150px;
-	margin-bottom: 1rem;
+        margin-bottom: 1rem;
     }
-   &__date {
-	font-size: 0.9em;
-	margin-left: .5em;
-	opacity: .7;
+    &__date {
+        font-size: 0.9em;
+        margin-left: 0.5em;
+        opacity: 0.7;
+    }
+
+    /* Mobile Portrait */
+    @media only screen and (max-device-width: 667px) and (orientation: portrait) {
+        &__year {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        &__image {
+            max-width: 100px;
+            margin-bottom: 0;
+        }
     }
 }

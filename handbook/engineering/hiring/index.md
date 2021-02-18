@@ -10,8 +10,4 @@ See our [careers page](../../../company/careers.md#engineering) for open positio
 
 [Private interview documentation](https://github.com/sourcegraph/interviews/tree/master/engineering/software-engineer).
 
-## Paused
-
-We aren't currently processing applications for these positions, but expect to continue hiring for them in the near future.
-
-- [Software Engineer - Code Intelligence](software-engineer-code-intelligence.md)
+[Software engineer pairing exercise](software-engineer-pairing-exercise.md).

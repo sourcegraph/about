@@ -13,24 +13,84 @@ This is a large ownership area, so the team creates a focused plan each iteratio
 
 ## Members
 
-- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/product_manager.md)*)
-- [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](../roles.md#engineering-manager))
-  - [Felix Becker](../../../company/team/index.md#felix-becker)
-  - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
-  - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  - [Tom Ross](../../../company/team/index.md##tom-ross-he-him)
-  - [F.J.](../../../company/team/index.md##full-name-optional-pronouns) _(Starts 2021-01-11)_
-
-_* Joel is the acting PM for this team until we are able to hire a dedicated PM for it. Once that happens, he will focus entirely on code insights._  
+<!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
+- [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
+- [Frontend platform](index.md) {#frontend-platform-eng}
+   - We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)) for this role. Alicja and Jean are involved in the meantime. 
+   - FQ1 [Engineering Manager](../roles.md#engineering-manager), Jean acting manager until then.
+         - [Tom Ross](../../../company/team/index.md#tom-ross-he-him)
+         - [Felipe Janer](../../../company/team/index.md#felipe-janer-he-him)
+         - V.B. 2021-02-22
+         - FQ3 frontend engineer
+         - FQ4 frontend engineer
+- [Extensibility](index.md) {#extensibility-eng}
+   - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it ([apply here](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)). Once that happens, Joel will focus entirely on code insights. 
+   - FQ3 [Engineering Manager](../roles.md#engineering-manager), Jean acting manager until then.
+         - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
+         - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
+         - M.S. 2021-02-15
+         - FQ2 frontend engineer
+         - FQ4 frontend engineer
 
 ## Contact
 
-- [#web](https://sourcegraph.slack.com/archives/CMT39K56Z) channel or @web-team in Slack.
+- [#web-chat](https://sourcegraph.slack.com/archives/CMT39K56Z) channel or @web in Slack.
 - [team/web](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/web) label and [@sourcegraph/web](https://github.com/orgs/sourcegraph/teams/web) team on GitHub.
 
 ## [Goals](goals.md)
 
 See [goals](goals.md)
+
+## Growth plan
+
+_Updated 2020-01-14_
+
+- As of 2021-01-14, we are no longer accepting [frontend engineer](../hiring/software-engineer-frontend.md) applications to focus on the Frontend Platform work stream. We will be opening applications for JavaScript engineers to apply to work on our Extensibility work stream by the end of January 2021.
+
+When this team team gets big enough, we expect to split into two dedicated teams: **Frontend platform** and **Extensibility**. 
+
+_In January 2021, [Code Insights](../code-insights/index.md) moved out of the Web Team into its own team, lead by Felix Becker (EM) and Joel Kwartler (PM)._
+
+### Frontend platform: frontend web platform and code browsing 
+
+This team is responsible for:
+
+1. Defining how we do web development at Sourcegraph and ensuring that our product engineering teams have the tools and components they need to quickly build high quality user experiences everywhere we use web technologies (for example: web application, browser extensions).
+1. The core user experience of the Sourcegraph product
+
+The team's areas of responsibility include:
+
+- Frontend platform
+   - Creating and maintaining a standard Sourcegraph UI component library.
+   - Sourcegraph web tech stack, tools, patterns, documentation, education (e.g. webpack, TypeScript, React, RxJS).
+   - Documentation and training material to enable product teams and new hires to quickly learn how we do web development at Sourcegraph.
+   - Define and maintain how we test frontend code.
+   - Ensuring an efficient and reliabile frontend CI pipeline.
+- Code browsing
+   - Application navigation and information hierarchy
+   - Syntax highlighting and file viewing
+   - Repository landing pages and file directory pages
+   - Basic code host-like features (e.g. viewing diffs, commits, history)
+   - Sourcegraph application homepage
+   - Accessibility support
+
+### Extensibility: Sourcegraph extensions and code host integrations
+
+This team is responsible for: 
+
+1. Bringing the value of Sourcegraph to other developer tools
+1. Bringing the value of other developer tools into Sourcegraph
+
+The team's areas of responsibility include:
+
+- Sourcegraph extensions
+   - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
+   - Building useful Sourcegraph extensions on top of the Sourcegraph extension API (for example: Codecov, Datadog, Sentry, Lightstep).
+   - Documentation and tutorials that enable third party developers to create extensions that are actively used.
+   - Building and maintaining the extensions registry and discovery paths to create a community around Sourcegraph extensions.
+- Integrations   
+   - Surface code intelligence (and other Sourcegraph data) in code hosts through user installed browser extensions. 
+   - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developers look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extension to get code intelligence.
 
 ## Tech stack
 
@@ -47,6 +107,19 @@ Here are some of the technologies we use to deliver on our goals:
 
 ## Processes
 
+### Communication
+
+We recognize that frequent, open communication is key to the success of our team, especially in an all-remote environment.
+We default to asynchronous communication in Slack and GitHub issues over other mediums (video calls, emails) as we are respectful of our teammates' time. 
+
+The team communicates in the following channels in Slack:
+
+[**#web-chat**](https://sourcegraph.slack.com/archives/CMT39K56Z): All work related commmunication happens in this channel. This is also the primary channel for teammates outside of the team to reach out to us.
+
+[**#web-team**](https://sourcegraph.slack.com/archives/C01EM5J1NF8): Our daily standups (facilited through Geekbot) go into this channel as well as all non-work related commmunication. Random conversations, banter, jokes etc. are all welcome here. 
+
+[**#web-onboarding**](https://sourcegraph.slack.com/archives/C01K7TKKR09): This channel is dedicated to questions or thoughts that new teammates have while they onboard. It's a safe space to simply think out load and the goal is to identify things that we can improve and things we should make more clear in the handbook.
+
 ### Backlog
 
 The web team keeps a backlog GitHub project board for each of our focus areas: [frontend platform backlog](https://github.com/orgs/sourcegraph/projects/117) and [extensibility backlog](https://github.com/orgs/sourcegraph/projects/116). 
@@ -55,14 +128,18 @@ We use the backlogs for tracking bugs, small features, and unplanned work. We do
 
 To add an issue, tag it `team/web` to notify the web team PM and put it in the "to triage" column of the board. Unless you're directly asked, only web team members should move issues out of the "to triage" column on the board. A web team member will confirm the issue is web team-related, and then move it to the appropriate column.
 
+#### Tracking Issues
+The web team makes use of [tracking issues](../tracking_issues.md) for tracking progress on the implementation of new features. The web team should ensure that a tracking issue is created when starting work on features that are expected to take longer than a single iteration to deliver.
+
 #### Product Feedback
 
 Specific product feedback about well-defined, small features can be found directly in the backlog boards. More general product feedback that applies to larger features, or that needs more research and planning to be actionable, is kept in Productboard, separated by focus area: [extensibility feedback](https://sourcegraph.productboard.com/feature-board/2330167-web-extensibility) and [frontend platform feedback](https://sourcegraph.productboard.com/feature-board/2330177-web-frontend-platform). 
 
 ### Iterations
 
+The web team has a large ownership area, so the team creates a focused plan each iteration, by agreeing on an appropriately small set of [iteration goals](../../../company/goals/index.md).
+
 We plan our work in **2-week iterations**.
-We work on a single project in those 2 weeks as a team.
 
 Our goals for the current and past iterations can be found in our [iteration goals living Google Doc](https://docs.google.com/document/d/1n9WKjieKmd2YYkNrEsOfdmxRYUrbowLWjq05phLoQ6s/edit).
 
@@ -101,6 +178,13 @@ To ensure the team can be productive right from the start of an iteration we sta
       1. Any left over issues that won't be complete from the prior iteration, and whether those issues should still be prioritized next iteration or moved to a backlog category.
       1. Feedback from the teammates
    1. The PM will prepare the current iteration project in GitHub with the relevant issues.
+   
+#### Progress monitoring
+
+We monitor the progress of the work in an iteration in the following ways:
+1. Iteration: The overall iteration progress is monitored through a GitHub project board (See [Iterations](#iterations).)
+1. Tracking issue: If a feature is made up out of multiple issue we use a tracking issue to keep track of its progress. (See [Tracking issues](#tracking-issues).)
+1. Pull request: The implementation of a feature is tracked through a checklist in description of the pull request.  (See [PR template](https://github.com/sourcegraph/sourcegraph/blob/main/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md).)
 
 ### Updates
 
@@ -116,20 +200,26 @@ All teammates are expected to be part of this channel, and should read the updat
 
 ### Retrospectives
 
-After each iteration, we hold a retrospective, to reflect on the past iteration. We use this retrospective to:
+After each iteration, we hold a sync retrospective meeting to reflect on the past iteration. We use this meeting to:
 
-- Understand whether we accomplished the goals we set at the beginning of the iteration. If we didn't accomplish them, reflect on the reasons why.
-- Discuss things that didn't go well in the iteration, and identify action items to improve on these in the next iteration.
-- Discuss things that went well in the past iteration, and that we should do more of / invest more into.
+- Review the previous retro’s action items to ensure we hold teammates accountable for actioning them
+- We give _Shoutouts!_ to teammates to show appreciation for something they did that we appreciated.
+- Discuss things that went well in the past iteration and that we should do more of / invest more into it.
+- We discuss the things that could have gone better and what we can learn from it to improve.
+- We talk about processes that we should revisit/refine/propose to improve our efficiency?
 
-At the beginning of each iteration, the engineering manager will:
+We capture and assign actions to teammates to action. Teammates should consider actions coming out of the retrospective as a very high priority.
 
-- Schedule the retrospective meeting
-- Set up a Slack reminder three days before the retrospective meeting, asking teammates to write their discussion topics [in our retrospectives document](https://docs.google.com/document/d/1YW45Dksk0vIn7drhatwLyo6YbMMkS-naHcuShUi1OOw/edit#heading=h.dxt1jy5hsf1d)
+Teammates contribute to the retrospective asynchronously during the iteration by adding their thoughts to our [retrospective document](https://docs.google.com/document/d/1YW45Dksk0vIn7drhatwLyo6YbMMkS-naHcuShUi1OOw/edit). Teammates are highly encouraged to comment on points raised before the sync meeting in the document.
 
-We do regular backlog triages together, where we go through [the issues in our backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+label%3Ateam%2Fweb).
-This helps us resurface older issues, create shared awareness for existing deficiencies among everyone on our team and ensures no-longer-applicable issues are closed.
-To manage the load for these triages, a triage may have a specific theme, like "debt" or "performance".
+We rotate who leads the retrospective to allow all teammates an opportunity to lead the session. Teammates can find the rotation schedule at the top of the [retrospective document](https://docs.google.com/document/d/1YW45Dksk0vIn7drhatwLyo6YbMMkS-naHcuShUi1OOw/edit). 
+
+### Code reviews
+
+The team follow's the [default code review guidelines](../code_reviews.md) with the following addition:
+
+1. If the author would like any of the requested reviewers to merge the PR after approval they add the label `merge-on-any-approve`
+1. If the author would like their PR to be merged once all of the requested reviewers have approved it they add the label `merge-on-all-approve`
 
 ## Team syncs
 
@@ -139,53 +229,18 @@ The meeting notes of web team syncs can be found [in this doc](https://docs.goog
 
 Before web team syncs, teammates and stakeholders should write down under "Discussion items" in the meeting notes document anything that they'd like to bring up for discussion with the whole team.
 
-## Growth plan
+## Hack time
 
-_Updated 2020-01-08*_
+The web team engineers hold a weekly "hack time" session: a scheduled block of time dedicated to pair programming (or, more accurately, crowd/mob programming) on a task together as a team.
 
-*Updated by Joel on behalf of Jean.
+The reasons why we do hack time as a team:
 
-We are actively hiring [frontend engineers](../hiring/software-engineer-frontend.md) to grow the Web team. 
-When this team team gets big enough, we expect to split into two teams **Frontend platform** and **Extensibility**. We will only make this split once we have identified a dedicated engineering manager and a dedicated product manager.
+- it lets the team share knowledge and context
+- it builds shared ownership over the work
+- it's also an opportunity to discuss ideas and socialize
 
-_In January 2021, [Code Insights](../code-insights/index.md) moved out of the Web Team into its own team, lead by Felix Becker (Interim EM) and Joel Kwartler (PM)._
+The team chooses a tasks (or topic) for hack time in advance, in order to avoid spending time deciding what to work on at the beginning of the session. The process is:
 
-### Frontend platform: frontend web platform and code browsing 
-
-This team is responsible for:
-
-1. Defining how we do web development at Sourcegraph and ensuring that our product engineering teams have the tools and components they need to quickly build high quality user experiences everywhere we use web technologies (for example: web application, browser extensions).
-1. The core user experience of the Sourcegraph product
-
-The team's areas of responsibility include:
-
-- Frontend platform
-   - Creating and maintaining a standard Sourcegraph UI component library.
-   - Sourcegraph web tech stack, tools, patterns, documentation, education (e.g. webpack, TypeScript, React, RxJS).
-   - Documentation and training material to enable product teams and new hires to quickly learn how we do web development at Sourcegraph.
-   - Define and maintain how we test frontend code.
-   - Ensuring an efficiency and reliabile frontend CI pipeline.
-- Code browsing
-   - Application navigation and information hierarchy
-   - Syntax highlighting and file viewing
-   - Repository landing pages and file directory pages
-   - Basic code host-like features (e.g. viewing diffs, commits, history)
-   - Sourcegraph application homepage
-   - Accessibility support
-
-### Extensibility: Sourcegraph extensions and code host integrations
-
-This team is responsible for: 
-
-1. Bringing the value of Sourcegraph to other developer tools
-1. Bringing the value of other developer tools into Sourcegraph
-
-The team's areas of responsibility include:
-
-- Sourcegraph extensions
-   - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
-   - Building useful Sourcegraph extensions on top of the Sourcegraph extension API (for example: Codecov, Datadog, Sentry, Lightstep)
-   - Documentation and tutorials that enable third party developers to create extensions that are actively used.
-- Integrations   
-   - Surface code intelligence (and other Sourcegraph data) in code hosts through user installed browser extensions. 
-   - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developer look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extensions to get code intelligence.
+- A weekly Slack reminder in the `#web-team` channel creates a thread for the team to propose ideas for the next hack time.
+- By default, if the work from the last hack time session was unfinished, then the team continues on that work.
+- If no task has been proposed by the time that the hack time session starts, and there's no task to continue from last time, then that session is cancelled.

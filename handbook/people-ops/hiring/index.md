@@ -13,24 +13,35 @@
    - All interviewers submit written feedback independently before being able to see feedback from other interviewers. Feedback may not be edited after submission.
    - We maintain a consistent hiring [decision process](#decision-making-process) for all candidates.
 1. Hiring managers own the hiring process for their team.
-    - Hiring managers are encouraged to experiment to learn how to improve their hiring process.
-    - The handbook is kept up-to-date with our learnings and current norms.
-    
+   - Hiring managers are encouraged to experiment to learn how to improve their hiring process.
+   - The handbook is kept up-to-date with our learnings and current norms.
+
 ## How recruiting interfaces with hiring managers
 
-For any members of a hiring team, please see [this page](how_recruiting_interfaces_with_hiring_managers.md) for a breakdown of each step in the hiring process. 
+For any members of a hiring team, please see [this page](how_recruiting_interfaces_with_hiring_managers.md) for a breakdown of each step in the hiring process.
 
 The page will outline responsibilities by role (Hiring Manager, Scheduling Coordinator, and People Ops) for each team.
-    
+
 ## Recruiting tools
 
-We currently use Lever as our applicant tracking system. [guide coming soon]
+We utilize LinkedIn and TopFunnel as our sourcing platforms.
 
-We utilize LinkedIn as our sourcing platform. 
+Hiring managers will be a assigned a hiring manager seat on the platform. For details on hiring manager seat capabilities, [click here](https://about.sourcegraph.com/handbook/people-ops/hiring/linkedin).
 
-Hiring managers will be a assigned a hiring manager seat on the platform. For details on hiring manager seat capabilities, [click here](https://about.sourcegraph.com/handbook/people-ops/hiring/linkedin). 
+We will work with recruiters and hiring managers to gain access to the tools they need to be successfull.
 
-We will work with recruiters and hiring managers to gain access to the tools they need to be successfull. 
+## Using external recruiting gencies
+
+Folder for agency tracker and to store contracts here: https://drive.google.com/drive/folders/1I6fpcQEP4ueQP_sjyO2MwuRnujmzti4a
+
+- Who is allowed to engage with external recruiting agencies?
+   - Any hiring managers that need additional support to full-fill hiring needs. Usually if they do not have internal recruiter. Speak with David Li or Noemi Mercado if you have an agency in mind or need help finding one.
+- Is it not allowed if we have an internal recruiter for the team?
+   - This should be reviewed on a case by case basis to see what is the required candidate pipeline to meet the team’s hiring goals. If internal recruiter(s) are not enough to meet the needs of the team then hiring manager can seek external help.
+- Do we allow exclusive contracts to hire for our roles?
+   - Most roles should allow for multiple sources for hiring. Exceptions to this can be for executive level roles. 
+- How do agencies submit candidates?
+   - All agencies should submit candidates through our agency portal at a minimum. Please speak to David Li on how to set this up. 
 
 ## Open positions
 
@@ -42,16 +53,16 @@ We cross-post our open positions to the following locations:
 - ["Ask HN: Who is Hiring" monthly thread](hacker-news-who-is-hiring.md)
 - [RemoteWoman](https://remotewoman.com/)
 - [Tech Ladies](https://www.hiretechladies.com/). With our current plan we can post up to 10 roles at a time (and can rotate out roles as they are filled). Nick owns this list and payments are made with Nick's Brex. Tech Ladies checks our open positions every month to see if there are updates, but we can request an update anytime by emailing jobpostings@hiretechladies.com. Here are the 10 roles that we post:
-  1. [Engineering Manager - Cloud Application and Core Services](../../engineering/hiring/engineering-manager-cloud.md)
-  1. [Software Engineer - Frontend](../../engineering/hiring/software-engineer-frontend.md)
-  1. [Software Engineer - Backend](../../engineering/hiring/software-engineer-backend.md)
-  1. [Software Engineer - Distribution](../../engineering/hiring/software-engineer-distribution.md)
-  1. [Software Engineer - Security](../../engineering/hiring/software-engineer-security.md)
-  1. [Director of Community](../../marketing/roles/director_of_community.md)
-  1. [Creative Director](../../marketing/roles/creative_director.md)
-  1. [Account Executive](../../sales/roles/account_executive.md)
-  1. [Product Manager](../../product/roles/product_manager.md)
-  1. [Product Designer](../../product/roles/product_designer.md)
+  1. [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
+  1. [Engineering Manager - Cloud Application and Core Services](https://jobs.lever.co/sourcegraph/95ad534f-8724-45dc-9b50-291c5926a7dc)
+  1. [Software Engineer - Cloud - Frontend](https://jobs.lever.co/sourcegraph/b2f9a8b0-cc06-4629-81a0-0f2fa64271c7)
+  1. [Software Engineer - Backend](https://jobs.lever.co/sourcegraph/a0dba744-ed1d-4172-8a4a-0feb52609322)
+  1. [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
+  1. [Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+  1. [Director of Community](https://jobs.lever.co/sourcegraph/480e8d71-03af-4659-ac90-b8e32ad4ef34)
+  1. [Account Executive](https://jobs.lever.co/sourcegraph/35aff80b-be4f-4887-a465-3e91e1ca3d2b)
+  1. [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)
+  1. [Product Designer](https://jobs.lever.co/sourcegraph/fa7d3807-ae4c-4a35-9401-56dad0958227)
 
 We welcome suggestions for more places that we can post!
 
@@ -70,20 +81,20 @@ See the [job descriptions guidelines](./job_description_guidelines.md) when crea
 We review each candidate at each stage of our hiring pipeline (e.g. application, phone screen, interviews, references) to determine if we want to move the candidate to the next stage. Here are some things that we consider:
 
 - Applications
-    - Does this candidate meet all qualifications for the role they are applying for?
-    - Does this candidate's resume and application effectively communicate their skills, accomplishments, and a genuine interest in Sourcegraph?
-    - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
-    - What makes this candidate's application stand out and excite us about moving forward with interviews?
+  - Does this candidate meet all qualifications for the role they are applying for?
+  - Does this candidate's resume and application effectively communicate their skills, accomplishments, and a genuine interest in Sourcegraph?
+  - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
+  - What makes this candidate's application stand out and excite us about moving forward with interviews?
 - Interviews
-    - Does this candidate have the skills and experience that we are looking for?
-    - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
-    - What makes us excited about hiring this candidate?
+  - Does this candidate have the skills and experience that we are looking for?
+  - How do this candidate's skills, accomplishments, and interest in Sourcegraph compare to other candidates or our current team?
+  - What makes us excited about hiring this candidate?
 
 ## Making a referral
 
 Current employees can refer a candidate [here](https://hire.lever.co/referrals/new)
 
-Having your referral complete the application provides helpful context when considering their profile, but is not required. 
+Having your referral complete the application provides helpful context when considering their profile, but is not required.
 
 Benefits of having a referral complete the application:
 
@@ -140,3 +151,11 @@ Once the decision is made to [extend an offer](interview_process.md#outcome) to 
 When the offer is approved, the hiring manager and a representative from the People Ops team will schedule a call to walk through a summary of the offer with the candidate. This summary will include an overview of cash compensation (including any commission or bonus plans), benefits, and any equity-based compensation (including a simple calculator for potential future values).
 
 Once the candidate verbally accepts the offer, Sourcegraph legal team will send the official DocuSign with the appropriate contracting or employment agreement(s) for the candidate's role, status, and location. Templates for employees and contractors can be found in the shared [HR/Employees/Contractors Dropbox folder](https://www.dropbox.com/home/Legal/HR%3AEmployees%3AContractors).
+
+## Policy on outreaching to prospective candidates that work at a Sourcegraph customer
+
+It is okay to reach out to these prospective candidates. Do not mention their current employer or team being a customer of ours in the outreach. We should always be targeted in the people we outreach to because of their skills and experience. We should not be using our customer vendor relationship as a way to outreach to our customer's employees.  
+
+## Policy for candidates re-applying to roles
+
+Candidates are able to re-apply for roles at any time. The hiring team will review all relevant information, including past interviews, when considering a person's candidacy.
