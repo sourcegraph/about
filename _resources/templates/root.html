@@ -5,23 +5,42 @@
 <head>
 	<title>{{block "title" .}}Home{{end}} - Sourcegraph</title>
 	<link rel="icon" type="image/png" href="{{asset "sourcegraph-mark.png"}}" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{{asset "layout.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "document.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "search.css"}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset "content.css"}}" />
 	<script type="text/javascript" src="{{asset "scripts.js"}}"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- Google Consent Mode and Cookiebot -->
+	<script data-cookieconsent="ignore">
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("consent", "default", {
+			ad_storage: "denied",
+			analytics_storage: "denied",
+			wait_for_update: 500
+		});
+		gtag("set", "ads_data_redaction", true);	
+	</script>
 	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-		w[l] = w[l] || []; w[l].push({
-			'gtm.start': new Date().getTime(), event: 'gtm.js'
-		}); var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-			'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-TB4NLS7');</script>
+	<script data-cookieconsent="ignore">(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TB4NLS7');
+	</script>
 	<!-- End Google Tag Manager -->
-	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d" data-blockingmode="auto" type="text/javascript"></script>
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
+		data-blockingmode="auto" type="text/javascript"></script>
 	{{block "head" .}}{{end}}
 </head>
 
