@@ -644,7 +644,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Oakland, CA, USA 🇺🇸
 - GitHub: [kyfli](https://github.com/kyfli)
 - [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
-- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through.
+- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through. 
 
 ## Caitlin Moran (she/her)
 
