@@ -36,7 +36,7 @@ Welcome back! Let’s get started....
 	* Github
 	* Slack
 	* Zoom
-	* 1Password (we might not use this heavily)
+	* 1Password
 	* Lever (for when we are hiring and you participate in the interview process
 	* Lattice (for [our 360 review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles))
 	* Sourcegraph.com (admin): If you are not an admin and/or are not part of the [Sourcegraph organization](https://sourcegraph.com/organizations/sourcegraph/?_ga=2.50609121.915950522.1613401291-2109866561.1610586218), post in #it-tech-ops and request the access
