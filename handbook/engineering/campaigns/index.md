@@ -94,6 +94,7 @@ Our two-week sprints start every other Wednesday. We follow this process:
 * We do not scramble to get last-minute changes in before branch-cut. (If it's a blocking issue, there's [a process for that](https://about.sourcegraph.com/handbook/engineering/releases#issues).)
 * If there is no agenda in our sync doc for our Wednesday and Thursday syncs by 5 minutes before the meeting starts, the meeting is automatically cancelled.
 * If a process isn't serving us, we are quick to shut it down.
+* We aim to improve the developer experience of working on the campaigns and the Sourcegraph codebase as we work on it. We do that by allowing ourselves to set aside time to implement improvements if we see a chance to do so. For example: it's okay to spend half a day improving our test tooling if we know that it will make things easier for us and others in the future.
 
 ## Team Communication
 
@@ -112,7 +113,7 @@ The Campaigns team is the current owner of [src-cli](https://github.com/sourcegr
 - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager)) {#campaigns-eng}
   - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
   - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
-  - [Erik Seliger](../../../company/team/index.md#erik-seliger)j
+  - [Erik Seliger](../../../company/team/index.md#erik-seliger)
   - FQ1 [full-stack engineer](https://jobs.lever.co/sourcegraph/886e4343-6efc-4ab1-b204-f9115cfdeae3)
   - FQ2 engineer
 

@@ -16,12 +16,20 @@ We show up for our customers, open source users, and teammates by living up to o
 
 Keeping our reason for existence and guiding principles in mind in all of our work and interactions, we ensure consistent outcomes, allowing each member of the team to have space and creativity to get there in different ways and learn from each other. When it is important that we do things consistently, we make sure to maintain our support section of the handbook. When we have knowledge to share, we ensure it’s reflected in [our official documentation](https://docs.sourcegraph.com/) so that customers have a single source of truth.
 
+For additional context, check out [RFC 274](https://docs.google.com/document/d/1eLJmEVoD4H2s18gw65OCKSEX7ZQiG38FU_jU3UsrBKY/edit#), the starting vision for CS at Sourcegraph.
+
 ## We know that we are successful when we …
 
-- **Maintain 95% CSAT (customer satisfaction).** Part of the support workflow will be seeking confirmation from a customer that they agree we are done with that particular conversation/issue. At that time, we will initiate a request to rate how support was during that conversation. In order to encourage healthy behavior of not cherry picking cases to work, the target allows for support engineers to learn and grow. It’s okay that this is not 100%, so long as we learn and are able to maintain 95%.
-- **Meet SLA (service level agreement) response 100% of the time.** Meeting SLA response requires a thoughtful first response that summarizes the troubleshooting the support engineer has already done, as well as next steps. A response of “we are on it” would not be sufficient for us to count as successfully meeting SLA. If we are staffed correctly and have reasonable SLAs, it should be possible to always meet our SLA response expectations.
-- **Meet SLA (service level agreement) resolution 95% of the time.** While it’s possible to always meet our SLA response expectations, we will need to allow ourselves reasonable grace with our target for SLA resolution. This grace accounts for using commercially reasonable efforts to provide a resolution or workaround.
-- **No more than 10% of cases result in a request for help from engineering per month.** Requests for help are questions about how something works and/or troubleshooting assistance. This does not include defects or feature improvement requests. 10% may be the wrong target, but it’s a start and no matter what, the target will reflect the intention that the support team will strive to be as self-sufficient as possible.
+* **Maintain 95% CSAT (customer satisfaction).** Part of the support workflow will be seeking confirmation from a customer that they agree we are done with that particular conversation/issue. At that time, we will initiate a request to rate how support was during that conversation. In order to encourage healthy behavior of not cherry picking cases to work, the target allows for support engineers to learn and grow. It’s okay that this is not 100%, so long as we learn and are able to maintain 95%.
+* **Meet SLA (service level agreement) response 100% of the time.** Meeting SLA response requires a thoughtful first response that summarizes the troubleshooting the support engineer has already done, as well as next steps. A response of “we are on it” would not be sufficient for us to count as successfully meeting SLA. If we are staffed correctly and have reasonable SLAs, it should be possible to always meet our SLA response expectations.
+* **Meet SLA (service level agreement) resolution 95% of the time.** While it’s possible to always meet our SLA response expectations, we will need to allow ourselves reasonable grace with our target for SLA resolution. This grace accounts for using commercially reasonable efforts to provide a resolution or workaround.
+* **No more than 10% of cases result in a request for help from engineering per month.** Requests for help are questions about how something works and/or troubleshooting assistance. This does not include defects or feature improvement requests. 10% may be the wrong target, but it’s a start and no matter what, the target will reflect the intention that the support team will strive to be as self-sufficient as possible.
+* **We complete any [FY22 OKRs](https://docs.google.com/document/d/18d3sX38O6ephNuoHqZT9BwU1m1_FGuRfsTwYbc8lMV8/edit#heading=h.obnaanj0svtb) (or quarterly) assigned to our team.** We will contribute to and/or own the following key results (details about what we will do to achieve these results coming after a 2021-03-23 team brainstorm):
+	* Vitals, health, and opportunity metrics for accounts are reliably tracked (annual)
+	* 90% of usage and support questions can be handled by referring to relevant documentation (annual)
+	* 95% of all P2 issues/questions handled by Customer Support are resolved in one week (Q1)
+	* We may also be asked to collaborate with other teams on the OKRs they own
+
 
 We will use FY22-Q1 to baseline our performance toward these targets. Based on our performance, we will use goals to close any gaps and make any improvements. For example, if we find that in FY22-Q1, we average 20 requests for help from engineering per month, then we will have goals that reflect the work we need to do to increase our expertise and reduce our reliance on engineering for help.
 
@@ -72,13 +80,19 @@ We work alongside just about every team. Here is how we add value to each other 
 
 
 
-## How we do our work (our practices)
+## Our practices (how we work)
 
 Letting customers talk to us where they prefer and streamlining our workflow must also be balanced with other elements of the customer experience. Handoffs cause frustration more than any other aspect of trying to get help. How we work accounts for this. It also accounts for continually positioning our CEs as trusted and reliable partners who need time to think about customers proactively.
 
-- **Zendesk allows us to see the big picture.** Right now, our customers are able to initiate conversations for help via several methods (Slack channels, support@ email, Twitter, etc). Allowing customers to initiate conversations via several methods increases the likelihood that we become aware of issues, feedback, etc as quickly as possible. In order to scale this, we use Zendesk. Zendesk simplifies what would otherwise feel complex through out-of-the-box configuration and integrations, allowing us to have everything in one place for easy prioritization and powerful data tracking. We get the benefit of everything coming to one place and customers have the lowest barrier possible to interact with us. 
+We rely mostly on our ethos to inform our decisions and actions, allowing for the team to be creative and innovate. The practices we write down represent the things that need to be done the same way, every time, by every person on the team. As a general rule, this should always be a very small list.
 
-- ...to be added soon!
+* [Team README](support-bios.md)
+* [Team schedule](support-schedule.md)
+* [Team rituals](support-team-rituals.md)
+* [Prioritization](support-prioritization.md)
+* [Workflow](support-workflow.md)
+* [Engaging other teams](engaging-other-teams.md)
+* [P0 incident response](p0-Incident-Response.md)
 
 
 

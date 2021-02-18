@@ -644,7 +644,15 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Oakland, CA, USA 🇺🇸 
 - GitHub: [kyfli](https://github.com/kyfli)
 - [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
-- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through.
+- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through. 
+
+## Caitlin Moran (she/her)
+
+- Enterprise Account Executive
+- Brooklyn, NY USA 🇺🇸 
+- GitHub: [Caitlinsourcegraph](https://github.com/caitlinsourcegraph)
+- [Caitlin@sourcegraph.com](mailto:caitlin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/caitlincarducci/)
+- Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC! 
 
 ## Murat Sutunc (he/him)
 
