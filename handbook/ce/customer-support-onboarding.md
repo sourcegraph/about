@@ -47,7 +47,7 @@ Welcome back! Let’s get started....
 	* ProductBoard (managed by our product team and we may sometimes need access to understand feedback from customers relevant to support)
 	* Jira Service Desk (our legacy tool for support cases and some good examples to look through)
 	* Zendesk (our current tool for support!)
-* Verify you are in the following Slack channels (and join them if not) -- if you have any questions about the purpose or value of a particular channel (not all of them have updated descriptions or topics, ask in #customer-support-chat). It’s a lot of channels and can feel super overwhelming. Sometimes it helps to use Slack’s section functionality so you can organize all of them by those you need to pay attention to more frequently vs those you can look at whenever.
+* Verify you are in the following Slack channels (and join them if not) -- if you have any questions about the purpose or value of a particular channel (not all of them have updated descriptions or topics), ask in #customer-support-chat. It’s a lot of channels and can feel super overwhelming. Sometimes it helps to use Slack’s section functionality so you can organize all of them by those you need to pay attention to more frequently vs those you can look at whenever.
 	* Team channels
 		* customer-support-chat: This is where we collaborate with each other!
 		* customer-support: This is our channel where we collaborate with those outside of the team
