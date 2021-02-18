@@ -26,7 +26,7 @@ Welcome back! Let’s get started....
 * Read [this article](https://www.infoworld.com/article/3514213/sourcegraph-universal-code-search-and-intelligence.html) that summarizes the value of Sourcegraph
 * Plan to attend the weekly “Product Tour” session (on Thursdays) for your first 3-4 weeks. It will be repetitive, but each week, more and more will start to click. 
 * Read [our support overview](https://about.sourcegraph.com/handbook/ce/support) (including the sub links). Post any questions you have in our #customer-support-chat Slack channel
-* Be sure you are invited to and start attending the weekly CSE planning/retro session, weekly CE account strategy check-in, and weekly CSE “cheers” huddle
+* Be sure you are invited to and start attending the weekly CSE planning/retro session, weekly CE account strategy check-in, and weekly CSE “cheers” huddle as outlined in our [rituals](https://about.sourcegraph.com/handbook/ce/support-team-rituals)
 * Schedule introductory chats with every member of [the Customer Engineering org](https://about.sourcegraph.com/handbook/ce#members). It’s okay to schedule these over your first few weeks, however you see fit.
 * Open and merge your first GitHub pull request in the handbook
 * Create free otter.ai and Grammarly accounts (link otter.ai to your Zoom account) -- why we use this is explained in [our team rituals doc](https://about.sourcegraph.com/handbook/ce/support-team-rituals).
