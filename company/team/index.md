@@ -651,5 +651,5 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Director of Developer Education
 - New York City 🗽
 - [lisa@sourcegraph.com](mailto:lisa@sourcegraph.com), [GitHub](https://github.com/ltagliaferri), [lisatagliaferri.org](https://lisatagliaferri.org), [@lisaironcutter](https://twitter.com/lisaironcutter), [LinkedIn](https://www.linkedin.com/in/lisa-tagliaferri/)
-- Name pronunciation: tal YA feh REE
-- Lisa wants to make tech more accessible through education and community building. She previously led the Developer Education / Community team at DigitalOcean, and wrote very popular open access books on Python programming and machine learning. An interdisciplinary researcher and teacher, Lisa earned her PhD from the City University of New York, and held postdoctoral positions at MIT and Harvard. A native New Yorker, she is interested in both public transportation and complicated street parking signage.
+- Name pronunciation: tal YA feh ree
+- Lisa wants to make tech more accessible through education and community building. She previously led the Developer Education/Community team at DigitalOcean, and wrote very popular open access books on Python programming and machine learning. An interdisciplinary researcher and teacher, Lisa earned her PhD from the City University of New York, and held postdoctoral positions at MIT and Harvard. A native New Yorker, she is interested in both public transportation and complicated street parking signage.
