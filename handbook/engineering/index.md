@@ -5,7 +5,6 @@
   - [All RFC documents](https://drive.google.com/drive/folders/1zP3FxdDlcSQGC1qvM9lHZRaHH4I9Jwwa) (Google Drive)
   - [How we use RFCs](../communication/rfcs/index.md)
 - [Tracking issues](tracking_issues.md)
-- [Code reviews](code_reviews.md)
 - Programming guides
   - [Go](languages/go.md)
   - [TypeScript](languages/typescript.md)
