@@ -455,6 +455,17 @@
     },
     {
       "type": "Feature",
+      "properties": {"name":"Lisa Tagliaferri"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.650002,
+          -73.949997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": {"name":"Tommy O Donnell"},
       "geometry": {
         "type": "Point",
