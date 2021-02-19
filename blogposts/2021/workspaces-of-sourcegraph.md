@@ -26,7 +26,9 @@ Conversely, all light mode users at Sourcegraph prefer the maximum contrast with
 There are clearly two camps… those who use an Integrated Developer Environment (mainly VS Code) and terminal-based editors such as neovim/vim/emacs users. Editor users had around 96% of editor screen real estate dedicated to code. IDE users had from 80 to 90% of their screens is dedicated to code or the terminal, with the rest occupied by file trees and other UI such as menus and tabs. 
 
 ## Fonts are commonly customized
-Over half of our engineers customize their programing font.  Among these users, [FiraCode](https://github.com/tonsky/FiraCode) was the most popular choice (those [programming ligatures](https://github.com/tonsky/FiraCode#whats-in-the-box) are amazing) followed by  [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Other fonts include  [MonoStroom](https://github.com/Strum355/MonoStroom) , [Cascadia Code](https://github.com/microsoft/cascadia-code)),  and [Hack](https://sourcefoundry.org/hack/).
+Over half of our engineers customize their programing font.  Among these users, [FiraCode](https://github.com/tonsky/FiraCode) was the most popular choice, followed by  [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Other fonts include  [MonoStroom](https://github.com/Strum355/MonoStroom) , [Cascadia Code](https://github.com/microsoft/cascadia-code)),  and [Hack](https://sourcefoundry.org/hack/).
+
+Why customize your programming font? Glad you asked! Code, like no other language, can be dramatically altered by the slightest change. Programming fonts make it easier to distinguish characters and can render operators with [custom ligatures](https://github.com/tonsky/FiraCode#whats-in-the-box) to enhance readability. These traits can reduce errors and lead to better applications. 
 
 ## What we learned
 While these results are not statistically significant, one trend does stand out... developers will customize their environments to better suit their style of development. 
