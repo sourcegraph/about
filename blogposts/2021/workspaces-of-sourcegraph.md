@@ -232,4 +232,4 @@ I'm experimenting with the Nova editor alongside VSCode, which replaced Sublime 
 
 # What does your editor look like? 
 
-What editors, themes and fonts do you use? DM or tweet us at [@srcgraph](https://twitter.com/srcgraph) to share your thoughts and images. /Make sure to not include sensitive information in any screens you share!/
+We want to see your setup too! Tweet it to us [@srcgraph](https://twitter.com/srcgraph).
