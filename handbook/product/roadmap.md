@@ -1,6 +1,16 @@
 # Product roadmap
 
-We strive for an outcome-based roadmap: each roadamp item should describe the problem we want to solve or outcome we want to achieve.
+Each team currently maintains their roadmaps in the way that is most effective for planning.
+
+<div class="alert alert-warning">
+NOTE: Dates and timelines below are not considered commitments, these roadmaps are used for planning purposes and are subject to change.
+</div>
+
+<div id="roadmap-loading">	
+	Compiling roadmap...
+	<br/>	
+	<small>If the roadmaps do not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
+</div>
 
 ## Roadmap visualization
 
@@ -8,11 +18,11 @@ We strive for an outcome-based roadmap: each roadamp item should describe the pr
 
 ## [Core application roadmap](../engineering/core-application/goals.md#roadmap)
 
-## [Code Intel roadmap](../engineering/code-intelligence/goals.md#roadmap)
+## [Code intel roadmap](../engineering/code-intelligence/goals.md#roadmap)
 
 ## [Distribution roadmap](../engineering/distribution/goals.md#roadmap)
 
-## [Search roadmap](../engineering/search/goals.md#roadmap-and-milestones)
+## [Search roadmap](../engineering/search/goals.md#roadmap)
 
 ## [Security roadmap](../engineering/security/goals.md#roadmap)
 
