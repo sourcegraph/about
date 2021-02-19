@@ -685,3 +685,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 - jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
 - Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
 
+## Dudley Nostrand
+- Senior Manager, Value Engineering
+- Hamilton, Massachusetts USA
+- GitHub: [dnostrand](https://github.com/dnostrand)
+- dudley@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/dudleynostrand/)
+- Dudley lives in Hamilton, MA ( just north of Boston) with his wife Sasha and two kids Xander and Bennett (both in college in NC). Originally from Florida and Newport, Rhode Island, he moved to Hamilton 22 years ago. He spent 15 years at Fidelity Investments, before moving on to tech companies like BMC and Appdynamics/Cisco. He enjoys spending time boating, fishing, riding his motorcycle, and traveling with his family to tropical destinations to sit on the beach and swim in the ocean.
