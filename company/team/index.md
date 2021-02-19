@@ -661,3 +661,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [JonKish](https://github.com/jonkish)
 - jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
 - Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
+
+## Will Camp (he/him)
+- Account Executive 
+- Austin, TX USA 🇺🇸 
+- GitHub: [wcamp123](https://github.com/wcamp123)
+- [will@sourcegraph.com](mailto:will@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/willcampv/)
+- Will was born and raised in Lexington, MA right outside of Boston. He most recently lived in NYC for seven years before moving to Austin, TX . Will started his career in Finance and eventually moved to SaaS sales with early stage to high growth companies such as Mixpanel & AppsFlyer. Outside of work, Will enjoys skiing, cooking, traveling and spending time with his girlfriend and their English Lab, Walter.
