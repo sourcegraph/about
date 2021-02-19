@@ -697,6 +697,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Los Angeles, CA USA 🇺🇸
 - GitHub: [shaan-sourcegraph](https://github.com/shaan-sourcegraph)
 - [shaan@sourcegraph.com](mailto:shaan@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/shaansheth/)
--Shaan joins Sourcegraph after a decade in finance and operations roles at large and small software companies, including Salesforce and Greenhouse Software. 
+- Shaan joins Sourcegraph after a decade in finance and operations roles at large and small software companies, including Salesforce and Greenhouse Software. 
 Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and optimizing for the best credit card points programs. Shaan grew up in CA and graduated from UC Berkeley.
 
