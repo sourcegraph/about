@@ -8,7 +8,11 @@ slug: workspaces-of-sourcegraph
 published: true
 ---
 
-The Sourcegraph design team is exploring how to improve the display of code throughout the application. As part of this exploration, we are reviewing trends in typography, color schemes, and UI complexity in the places our engineers view code the most… their editors.  While our research is far from complete, we thought you might find a breakdown of the visual characteristics of where our team writes code of interest. 
+Developers read quite a bit. We read books, blog posts and documentation, but mostly, we read code. We read so much code, that many of us have become a bit particular about how it is displayed. 
+
+So as the Sourcegraph design team began to study how to improve how we display code, it makes sense that we would study the place developers can decide exactly how it should look... their editors.
+
+While our research is far from complete, we thought you might find a breakdown of the visual characteristics of where our team writes code of interest.
 
 ## Light/dark mode and contrast
 Three quarters of our engineers preferred a dark theme over a light theme.  Curiously, the majority of dark mode users chose a low contrast between code and background. Backgrounds colors averaged 85% black while the  primary code color to background contrast ratio was around 9 to 1. 
