@@ -655,7 +655,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC! 
 
 
-**Jon Kishpaugh (he/him)**
+## Jon Kishpaugh (he/him)
 - Account Executive 
 - San Francisco, CA, USA
 - GitHub: [JonKish] (https://github.com/jonkish)
