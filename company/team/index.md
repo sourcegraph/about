@@ -658,6 +658,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Jon Kishpaugh (he/him)
 - Account Executive 
 - San Francisco, CA, USA
-- GitHub: [JonKish] (https://github.com/jonkish)
+- GitHub: [JonKish](https://github.com/jonkish)
 - jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
-- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active.  
+- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
