@@ -31,7 +31,11 @@ Over half of our engineers customize their programing font.  Among these users, 
 Why customize your programming font? Glad you asked! Code, like no other language, can be dramatically altered by the slightest change. Programming fonts make it easier to distinguish characters and can render operators with [custom ligatures](https://github.com/tonsky/FiraCode#whats-in-the-box) to enhance readability. These traits can reduce errors and lead to better applications. 
 
 ## What we learned
-While these results are not statistically significant, one trend does stand out... developers will customize their environments to better suit their style of development. 
+While these results are not statistically significant, one trend does stand out... developers will customize their environments to improve the readability of code. Keep scrolling to check out some of the setups Sourcegraphers have deployed to help them create universal code search.
+
+/What editors, themes and fonts do you use? DM or tweet us at @srcgraph to share your thoughts and images. Make sure to not include sensitive information in any screens you share!/
+
+## Workspaces of Sourcegraph
 
 Here's a look at the individual setups in greater detail:
 
