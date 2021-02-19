@@ -9,6 +9,7 @@ You might think of this page as a remote version of "the clever workflows and sh
 - **Set up [custom channel sections](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) in your sidebar to organize all your channels.** You can expand/collapse groups of channels. For example, you might make a group called "Social" that contains channels like #random, #pets-of-sourcegraph, and #cooking.
 - **Automatically add links to your slack posts by copying a url, highlighting the text you want to link in the slack message, and then pasting.** This way you can use `cmd`+`v` instead of the Slack "add link" button or the slack keyboard shortcut of `cmd`+`shift`+`U`.
 - **Disable their WYSIWYG editor if you prefer markdown.** Go to Preferences > Advanced > Check "Format messages with markup." 
+- **Show only unread channels in your channel sections.** Right-click on a channel section or the "Channels" header, then select "Show" > "Unread channels only." 
 
 ### Popular app integrations 
 - **[Connect your Google calendar](https://slack.com/app-pages/google-calendar)** to get reminders and show when you're in a meeting. 

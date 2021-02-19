@@ -563,7 +563,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - York, North Yorkshire, UK 🇬🇧
 - GitHub: [umpox](https://github.com/umpox)
 - [tom@sourcegraph.com](mailto:tom@sourcegraph.com)
-- Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport. 
+- Tom lives in York, UK with his girlfriend (also a developer) and their two cats (Gus & Leo). He stumbled upon his love for the web when starting an internship, before realising that he had to support Internet Explorer 8. Since then, Tom has enjoyed building powerful web-applications and, prior to Sourcegraph, has been a developer at DAZN and Sky. In his free time, he enjoys supporting his soccer team Liverpool FC, swimming, and following various forms of motorsport.
 
 ## Greg Bastis (he/him)
 
@@ -609,9 +609,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Inés Roitman (she/her)
 
 - Onboarding and Training Manager
-- Buenos Aires, Argentina 🇦🇷 / Barcelona, Spain 🇪🇸 
+- Buenos Aires, Argentina 🇦🇷 / Barcelona, Spain 🇪🇸
 - [ines@sourcegraph.com](mailto:ines@sourcegraph.com), [GitHub](https://github.com/InesRoitman), [LinkedIn](https://www.linkedin.com/in/ines-roitman/) , [Pronounce my name 🔊](https://www.pronouncenames.com/In%C3%A9s)
-- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection. 
+- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection.
 
 ## James Clifford (he/him)
 
@@ -628,20 +628,20 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: tjdevries
 - [tjdevries@sourcegraph.com](mailto:tjdevries@sourcegraph.com), [twitch.tv/teej_dv](https://twitch.tv/teej_dv)
 - The letter T, and then the letter J
-- TJ lives in Rockford, Michigan. Besides coding during the day, TJ also likes to code on his Twitch stream (linked above). Generally you can find him working on Neovim or Neovim-related plugins and having a good time hanging out with Twitch chat. Outside of coding, TJ loves to spend time with his wife, son and doggo. Also, playing four-mallet marimba is one of his other favorite activities. 
+- TJ lives in Rockford, Michigan. Besides coding during the day, TJ also likes to code on his Twitch stream (linked above). Generally you can find him working on Neovim or Neovim-related plugins and having a good time hanging out with Twitch chat. Outside of coding, TJ loves to spend time with his wife, son and doggo. Also, playing four-mallet marimba is one of his other favorite activities.
 
 ## Manuel Ucles
 
-- Customer Engineer 
+- Customer Engineer
 - Phoenix, AZ, USA 🇺🇸
 - GitHub: [mucles](https://github.com/mucles)
 - [manuel@sourcegraph.com](mailto:manuel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/manuel-ucles-444080151/)
-- Manny is from Honduras 🇭🇳 but has lived in Phoenix, Arizona most of his life. He enjoys playing basketball, chess and does boxing/MMA in his spare time. Prior to Sourcegraph, Manny worked as an Application Engineer at Freedom Financial. He also has experience as a Software Engineer at Mckesson and a Data Analyst at Uber.
+- Manny is from Honduras 🇭🇳 but has lived in Phoenix, Arizona most of his life. He enjoys playing basketball, chess and does boxing/MMA in his spare time. Prior to Sourcegraph, Manny worked as an Application Engineer at Freedom Financial. He also has experience as a Software Engineer at Mckesson and a Data Analyst at Uber.
 
 ## Kylie Fligstein (she/her)
 
 - Executive Business Partner to VP of Product
-- Oakland, CA, USA 🇺🇸 
+- Oakland, CA, USA 🇺🇸
 - GitHub: [kyfli](https://github.com/kyfli)
 - [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
 - Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through. 
@@ -649,7 +649,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Caitlin Moran (she/her)
 
 - Enterprise Account Executive
-- Brooklyn, NY USA 🇺🇸 
+- Brooklyn, NY USA 🇺🇸
 - GitHub: [Caitlinsourcegraph](https://github.com/caitlinsourcegraph)
 - [Caitlin@sourcegraph.com](mailto:caitlin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/caitlincarducci/)
 - Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC! 
@@ -661,3 +661,18 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Name pronunciation: [muˈɾat](http://ipa-reader.xyz/?text=mu%CB%88%C9%BEat&voice=Joey)
 - [@muratsu](https://github.com/muratsu), [murat@sourcegraph.com](mailto:murat@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/muratsutunc)
 - Murat started his career at Microsoft working on web standards. He worked on the JavaScript runtime engine and was a founding team member of the TypeScript language. After Microsoft, he founded a venture-backed company and eventually found his way to the Bay Area. Outside of work, Murat is passionate about cooking, finance, and video games.
+
+## Lisa Tagliaferri (flexible)
+
+- Director of Developer Education
+- New York City 🗽
+- [lisa@sourcegraph.com](mailto:lisa@sourcegraph.com), [GitHub](https://github.com/ltagliaferri), [lisatagliaferri.org](https://lisatagliaferri.org), [@lisaironcutter](https://twitter.com/lisaironcutter), [LinkedIn](https://www.linkedin.com/in/lisa-tagliaferri/)
+- Name pronunciation: tal YA feh ree
+- Lisa wants to make tech more accessible through education and community building. She previously led the Developer Education/Community team at DigitalOcean, and wrote very popular open access books on Python programming and machine learning. An interdisciplinary researcher and teacher, Lisa earned her PhD from the City University of New York, and held postdoctoral positions at MIT and Harvard. A native New Yorker, she is interested in both public transportation and complicated street parking signage.
+
+## Jon Kishpaugh (he/him)
+- Account Executive 
+- San Francisco, CA, USA
+- GitHub: [JonKish](https://github.com/jonkish)
+- jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
+- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
