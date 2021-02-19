@@ -12,6 +12,7 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
     - [Support](support.md)
   - Get a Sourcegraph instance [deployed](https://docs.sourcegraph.com/admin/install) using the `docker-compose` flow
     - Watch [Dave's Kubernetes Walkthrough video](https://drive.google.com/drive/folders/1JqQlrmGX8u_EuhNptj-qrzuZ4RifhTuF) for an understanding of that setup process
+    - Watch [Stephen's Kubernetes Upgrade video](https://drive.google.com/file/d/1oIrKJPo9hvc2UMfpb-a57HV9fCYEcS9n/view) to see how customers upgrade K8s instances.
     - Ask for any help needed along the way in our #ce channel
     - Update our docs where necessary
   - Watch recorded product demos (see [Resources](https://about.sourcegraph.com/handbook/ce/onboarding#resources) below)
@@ -26,7 +27,6 @@ Welcome to Sourcegraph! This document will guide you through customer engineerin
   - Become familiar with any [accounts](https://docs.google.com/spreadsheets/d/1EbAlUlMoZU-M2haRj0DoW3E7h7KG2D0vwLX3PlwL-h0/edit#gid=154354692) that have been assigned to you.
     - Accounts can mean prospects or existing customers
     - Know their use case, read past meeting notes, etc.
-  - Signup and attend a [Product Tour](https://info.sourcegraph.com/product-tour).
   - Add shared [CE calendar](https://calendar.google.com/calendar/u/0?cid=Y19yY3Y0ZTRqODI0OXZzNmJwbzd0bXFrZjVuZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t) to your calendar
 
 ### Week 2

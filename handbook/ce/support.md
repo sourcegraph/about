@@ -1,93 +1,102 @@
-# Support
+# Customer Support
 
-This document is to help Sourcegraph teammates provide our prospects and customers with support.
+## Our ethos
 
-## How support works for users
+Customer Support at Sourcegraph exists to resolve technical issues and answer technical/product questions in a way that feels (reasonably) effortless for our customers. Support is the go-to technical team for the Customer Engineering team, helping customers both pre- and post-sales.
 
-### Recommended support path and SLAs
+We show up for our customers, open source users, and teammates by living up to our Sourcegraph values and handbook, as well as these additional guiding principles …
 
-Users have a wide range of methods to communicate with Sourcegraph, but we only provide a support SLA on a single path: **filing a support ticket by emailing us at support@sourcegraph.com**.
+- Seeking/providing context so the why is clear
+- Demonstrating profound compassion for the people with whom our paths cross and the problems/questions we help them solve, meeting them where they are
+- Only asking our customers and teammates things we can’t do or answer ourselves
+- Persistently working toward and/or seeking resolution that works equally for our customers and us
+- Staying at least a step ahead (summarizing current status, giving clear next steps, and setting expectations in every communication)
+- Being flexible and open, maintaining a first principles thinking approach, and always confronting and growing past our biases
+- Outgrowing ourselves, the way we work, and continuously improving
 
-### Support tickets vs. issues
+Keeping our reason for existence and guiding principles in mind in all of our work and interactions, we ensure consistent outcomes, allowing each member of the team to have space and creativity to get there in different ways and learn from each other. When it is important that we do things consistently, we make sure to maintain our support section of the handbook. When we have knowledge to share, we ensure it’s reflected in [our official documentation](https://docs.sourcegraph.com/) so that customers have a single source of truth.
 
-Because our code is open source, any user can file an issue on our public issue tracker at any time (and we typically encourage it!). However, we don't encourage customers with enterprise contracts to file issues:
+For additional context, check out [RFC 274](https://docs.google.com/document/d/1eLJmEVoD4H2s18gw65OCKSEX7ZQiG38FU_jU3UsrBKY/edit#), the starting vision for CS at Sourcegraph.
 
-- Your GitHub username is not connected to your company, so we don't know what service level you are covered by and we can't enforce an SLA.
-- You may not want to discuss your private deployment or configuration, to share your logs, etc.
-- We won't be able to measure (and improve on) our response and resolution times.
+## We know that we are successful when we …
 
-### New customer welcome message
-When a new customer first comes onboard (i.e. signs a contract with us for the first time), we like to send them a welcome message from the Support team (and support@sourcegraph.com email address), introducing ourselves and the official process for reaching out requesting support. The template is as follows:
-
->Hello \<Customer Name\>!
-
->My name is \<CE Rep Name\>, I’m a Customer Engineer here at Sourcegraph, and I want to welcome you to our support family! We’re excited that you’ve joined us and want to let you know we are here to help you be successful in resolving any issues with deploying, operating, and maintaining your Sourcegraph instance. 
-
->We are truly passionate about helping make your experience with Sourcegraph as successful as possible, so if you ever need assistance or have any questions pertaining to your Sourcegraph instance, please don’t hesitate to reach out to us at support@sourcegraph.com.
-
->Have a wonderful week, \<Customer Name\>. Please let us know how we can help!
-
->\<CE Rep Name\>  
-Customer Engineer  
-support@sourcegraph.com
+* **Maintain 95% CSAT (customer satisfaction).** Part of the support workflow will be seeking confirmation from a customer that they agree we are done with that particular conversation/issue. At that time, we will initiate a request to rate how support was during that conversation. In order to encourage healthy behavior of not cherry picking cases to work, the target allows for support engineers to learn and grow. It’s okay that this is not 100%, so long as we learn and are able to maintain 95%.
+* **Meet SLA (service level agreement) response 100% of the time.** Meeting SLA response requires a thoughtful first response that summarizes the troubleshooting the support engineer has already done, as well as next steps. A response of “we are on it” would not be sufficient for us to count as successfully meeting SLA. If we are staffed correctly and have reasonable SLAs, it should be possible to always meet our SLA response expectations.
+* **Meet SLA (service level agreement) resolution 95% of the time.** While it’s possible to always meet our SLA response expectations, we will need to allow ourselves reasonable grace with our target for SLA resolution. This grace accounts for using commercially reasonable efforts to provide a resolution or workaround.
+* **No more than 10% of cases result in a request for help from engineering per month.** Requests for help are questions about how something works and/or troubleshooting assistance. This does not include defects or feature improvement requests. 10% may be the wrong target, but it’s a start and no matter what, the target will reflect the intention that the support team will strive to be as self-sufficient as possible.
+* **We complete any [FY22 OKRs](https://docs.google.com/document/d/18d3sX38O6ephNuoHqZT9BwU1m1_FGuRfsTwYbc8lMV8/edit#heading=h.obnaanj0svtb) (or quarterly) assigned to our team.** We will contribute to and/or own the following key results (details about what we will do to achieve these results coming after a 2021-03-23 team brainstorm):
+	* Vitals, health, and opportunity metrics for accounts are reliably tracked (annual)
+	* 90% of usage and support questions can be handled by referring to relevant documentation (annual)
+	* 95% of all P2 issues/questions handled by Customer Support are resolved in one week (Q1)
+	* We may also be asked to collaborate with other teams on the OKRs they own
 
 
-## How to provide support
+We will use FY22-Q1 to baseline our performance toward these targets. Based on our performance, we will use goals to close any gaps and make any improvements. For example, if we find that in FY22-Q1, we average 20 requests for help from engineering per month, then we will have goals that reflect the work we need to do to increase our expertise and reduce our reliance on engineering for help.
 
-- [Support duties](#support-duties)
-- [The support process](#the-support-process)
-- [Using Jira](#using-jira)
-- [SLAs](#slas)
-- [Deprecated support channels](#deprecated-support-channels)
+In addition to these top level key performance indicators (KPIs), we will have several more to help us uncover any team health issues as quickly as possible and look at any interesting trends that could result in product, practice, and/or staffing improvements. For example: 
 
-### Support duties
+* Total case volume
+* Type of case (how-to question, defect, product improvement)
+* Percent of issues/questions by product/feature
+* Average number of replies per conversation
+* Average time between replies (for support team, for customers)
+* Average number of cases per customer
+* Volume of cases by each customer
+* Volume of cases incoming during US hours, Europe hours, etc
 
-There are two roles in the support process:
 
-- Front-line support: the individual who has the responsibility for responding to a support ticket within our [response time SLA](#slas), requesting any necessary information, and assigning a support owner.
-- Support owner: the individual who has the responsibility for seeing the ticket through until it is closed (ideally within our [resolution time SLA](#slas)), or until it is reassigned to a different owner.
+## How we intersect with other teams
+We work alongside just about every team. Here is how we add value to each other and a collaboration overview for each pairing.
 
-Front-line support is owned by the CE team by default. See our [CE to Engineering handover](ce_to_eng_handover.md) documentation to understand the rare exceptions to this rule.
+### Customer Engineers (CEs)
+- **How support adds value to CE:** Support is the go-to technical team for our CEs, helping customers both pre- and post-sales, and allowing CEs to do more proactive work by taking on the reactive technical troubleshooting work when customers experience issues.
+- **How CE adds value to support:** CE has nuanced context that is valuable to how support works with a customer; CE can also help clarify / remind customers we need information (during regularly scheduled calls) on the more tricky issues.
+- **Collaboration overview:** We can think of CE and support as work best friends, working closely together every day, primarily communicating in Slack. CEs (or others -- including customers -- but primarily CEs) may engage support at any point during the pre-sales and post-sales customer engagement process. Where Sales is focused on the commercial relationship, CE is focused on product success/usage/adoption. If the CE is stuck, doesn’t know the answer, that is the exact right time to bring in support and let support do the heads-down troubleshooting work. This relationship helps provide space for CEs to be proactive and fits in perfectly with the already reactive nature of the support workflow.
 
-Support owners can be anybody at Sourcegraph. In some cases, the front-line support rep may be able to close the issue themselves.
+### Software Engineers (SWEs)
+- **How support adds value to SWEs:** Support handles the majority of customer issues, reducing the amount of time engineering has to be reactive and providing a more data-driven view into the source of recurring issues/questions; support also handles the majority of internal and external communication during a critical p0 incident (letting engineering stay focused on solving the issue).
+- **How SWEs adds value to support:** SWEs create a high quality product and when needed, helps support when they get stuck (this should be more rare than frequent), and helps uplevel support via planned training sessions, periodic pairing, deep-dives on new features/products, etc.
+- **Collaboration overview:** Whether a defect or a question, all interactions with engineering initiated by support will start by filing a GitHub issue, making it easier to track trends and follow-up.
 
-### The support process
+### Product
+- **How support adds value to product:** Support provides a data-driven view into the source of recurring issues/questions, ad-hoc feedback shared whilst helping customers, and helps update documentation so customers (and we) have a single source of truth.
+- **How product adds value to support:** Product educates support on new features and helps clarify expected behavior questions.
+- **Collaboration overview:** TBD where support will ask product for help clarifying expected behavior (GitHub, an existing Slack channel, etc) and how to best collaborate on documentation.
 
-#### Support rotation
+### Marketing
+- **How support adds value to marketing:** Support helps ensure that when developers think of Sourcegraph, they associate it with quality and responsiveness.
+- **How marketing adds value to support:** Marketing provides self-service avenues for our customers to learn and help each other learn (community, developer education).
+- **Collaboration overview:** When a customer engages on a social platform and marketing feels it's best for support to engage, they will push that conversation into Zendesk via an integration and we will then coordinate with them to help. 
 
-The CE team maintains an active front-line support rotation for tickets filed in Jira Service Desk. For now, the following week's assignment is named in the weekly internal CE sync.
+### Sales
+- **How support adds value to sales:** Support helps ensure (via collaboration with CE) that technical issues/questions are not a blocker to sales conversations.
+- **How sales adds value to support:** Sales, like CE, has nuanced context that is valuable to how support works with a customer.
+- **Collaboration overview:** Mostly via the CE bringing in support.
 
-Once a CE takes over a ticket, their responsibility to see it through or assign an owner doesn't stop when their front-line duty ends. They continue to own those tickets until they're closed.
+### Operations
+- **How support adds value to operations:** Support delivers on SLA to inform whether our promised SLAs in contracts are accurate and also provides a general data set that can help us see a more full picture about customer health and team performance. Support is a team that is built to hire folks who may need some on-the-job training (either technical or customer service), allowing us to build relationships with universities, code academies, etc. 
+- **How operations adds value to support:** Operations provides the foundation of everything. They also provide data from multiple sources to help support see the most nuanced view to make thoughtful priority decisions.
+- **How we collaborate:** Ad-hoc based on hiring, onboarding, and data needs.
 
-#### Front-line support
 
-The current front-line support representative should immediately open the support email, determine the severity (see "[How CE hands issues to Engineering](ce_to_eng_handover.md#How-CE-hands-issues-to-Engineering)"), determine how to respond (e.g., if an answer is as simple as providing a link to our docs, or if someone else should be tagged in), and respond to the user in Jira. 
 
-If someone else is taking ownership, assign them in the issue, and notify them in the #ce channel in Slack. If you are unsure who should take ownership of the issue, ask for advice in the #ce channel.
+## Our practices (how we work)
 
-The initial email response should not be delayed while waiting for input. If you don't know who to assign, simply acknowledge receipt of the ticket and promise to follow-up. Responses should be natural, and don't need to fit any formal "voice". Respond how you'd want a support representative to respond to you.
+Letting customers talk to us where they prefer and streamlining our workflow must also be balanced with other elements of the customer experience. Handoffs cause frustration more than any other aspect of trying to get help. How we work accounts for this. It also accounts for continually positioning our CEs as trusted and reliable partners who need time to think about customers proactively.
 
-Example response:
+We rely mostly on our ethos to inform our decisions and actions, allowing for the team to be creative and innovate. The practices we write down represent the things that need to be done the same way, every time, by every person on the team. As a general rule, this should always be a very small list.
 
->Hi Alice,
->Sorry to hear you ran into that, thanks for reaching out.
->
->I've added Bob and Carol from our distribution team to this chain—they'll follow up shortly to help resolve this!
->
->Best,
->Dan
+* [Team README](support-bios.md)
+* [Team schedule](support-schedule.md)
+* [Team rituals](support-team-rituals.md)
+* [Prioritization](support-prioritization.md)
+* [Workflow](support-workflow.md)
+* [Engaging other teams](engaging-other-teams.md)
+* [P0 incident response](p0-Incident-Response.md)
 
-This response, like all others, should come through Jira, not via a personal email client. "Adding" a teammate to the thread should occur by assigning them ownership of the ticket in Jira and, ideally, sharing a link to the ticket with them in Slack.
 
-#### Support owners
 
-Support owners have the responsibility of ensuring that a ticket is closed, or if necessary, passed off to a more appropriate support owner.
-
-Support owner emails should be natural, and don't need to fit any formal "voice". Email how you'd want a support representative to respond to you.
-
-Since each ticket can take a unique path, there is no single template at this stage. The support owner should determine up front what information to request to debug the issue to minimize the number of back-and-forths required. If, after three responses from the user, the support owner still isn't certain about the issue, they can request a call/liveshare to debug the issue together live. In this scenario, the support owner should notify the account executive (from sales) that works with the company.
-
-### SLAs
+## Our Service Level Agreements (SLAs)
 
 We strive to maintain the response and resolution times below.
 
@@ -112,29 +121,3 @@ We will work with the customer to schedule maintenance downtime at least 24 hour
 #### For customers with custom support agreements:
 
 Enterprise Plus and Elite customers should refer to their contracts if they have custom service-level agreements.
-
-## Finding debugging information
-
-### How to find which Sourcegraph version a company is running
-
-1. Visit the [instances Looker dashboard](https://sourcegraph.looker.com/looks/436).
-1. Find the row for the customer's instance. (If you can't find it and it's not an Offline Instance mentioned below, ask in #analytics on Slack.)
-1. Look at the version number in the row's **Latest Version** column.
-
-### Offline instances
-
-Some customer instances are offline or only [provide critical telemtry](https://docs.sourcegraph.com/admin/pings#critical-telemetry). The [full list is in Google Drive](https://docs.google.com/document/d/18q-xbHl53hg_y_0xX-buZpD04vMv3vJrqiXd9IeeE64/edit). 
-
-## Getting nice email signatures
-
-1. In Gmail **Settings** > **General** scroll down to signature:
-
-![image](https://user-images.githubusercontent.com/3173176/79911585-73112e80-83d5-11ea-85b3-929c20de72d6.png)
-
-2. Make the first line your name in bold
-3. Make the second line your title
-4. Choose **Insert image** and then **Web Address (URL)** and enter https://sourcegraphstatic.com/sourcegraph-logo.png then choose **Medium** size after it has been entered.
-5. Click the image, then click **Link** and paste https://sourcegraph.com into the **Web Address** field. Now your image links to the website!
-6. Your signature should now look something like this, and clicking the Sourcegraph logo should bring you to sourcegraph.com:
-
-![image](https://user-images.githubusercontent.com/3173176/79911829-e450e180-83d5-11ea-9b9b-9c1cc1056740.png)

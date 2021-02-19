@@ -23,9 +23,10 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Product
 
+- [Director of Product](https://jobs.lever.co/sourcegraph/3d9b0fae-707f-4e38-b8f6-1f5cfd47e9f0)
 - [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)
 - [Product Designer](https://jobs.lever.co/sourcegraph/fa7d3807-ae4c-4a35-9401-56dad0958227)
-- [Technical Writer](https://jobs.lever.co/sourcegraph/933f214e-338b-422b-b5d9-0b01057576d3)
+- Director of Technical Writing (to be posted very soon)
 
 ### Sales
 
@@ -49,6 +50,7 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 - [Customer Marketing Manager](https://jobs.lever.co/sourcegraph/5769890f-69bd-4ff5-8515-233ce8e3c620)
 - [Content Marketing Manager](https://jobs.lever.co/sourcegraph/7a4175fb-10c8-4849-8f73-3afc6abe9db8)
 - [Senior Manager, Marketing Operations](https://jobs.lever.co/sourcegraph/d6250f88-1580-4655-95cc-aa67c0ec8c08)
+- [Project Coordinator, Brand](https://jobs.lever.co/sourcegraph/27b81606-f391-4ef5-bb1d-7b3dcc6d1cce)
 
 ### Operations, finance, and legal
 

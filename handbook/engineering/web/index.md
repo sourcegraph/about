@@ -14,24 +14,23 @@ This is a large ownership area, so the team creates a focused plan each iteratio
 ## Members
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
-- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/product_manager.md)*)
-- [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/product_designer.md))
-- [Frontend platform](.) {#frontend-platform-eng}
+- [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
+- [Frontend platform](index.md) {#frontend-platform-eng}
+   - We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)) for this role. Alicja and Jean are involved in the meantime. 
    - FQ1 [Engineering Manager](../roles.md#engineering-manager), Jean acting manager until then.
          - [Tom Ross](../../../company/team/index.md#tom-ross-he-him)
          - [Felipe Janer](../../../company/team/index.md#felipe-janer-he-him)
          - V.B. 2021-02-22
          - FQ3 frontend engineer
          - FQ4 frontend engineer
-- [Extensibility](.) {#extensibility-eng}
+- [Extensibility](index.md) {#extensibility-eng}
+   - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it ([apply here](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)). Once that happens, Joel will focus entirely on code insights. 
    - FQ3 [Engineering Manager](../roles.md#engineering-manager), Jean acting manager until then.
          - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
          - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
          - M.S. 2021-02-15
          - FQ2 frontend engineer
          - FQ4 frontend engineer
-
-_* Joel is the acting PM for this team until we are able to hire a dedicated PM for it. Once that happens, he will focus entirely on code insights._  
 
 ## Contact
 
@@ -217,7 +216,7 @@ We rotate who leads the retrospective to allow all teammates an opportunity to l
 
 ### Code reviews
 
-The team follow's the [default code review guidelines](../code_reviews.md) with the following addition:
+The team follow's the [default code review guidelines](https://docs.sourcegraph.com/dev/background-information/code_reviews) with the following addition:
 
 1. If the author would like any of the requested reviewers to merge the PR after approval they add the label `merge-on-any-approve`
 1. If the author would like their PR to be merged once all of the requested reviewers have approved it they add the label `merge-on-all-approve`
@@ -229,3 +228,19 @@ The web team holds weekly syncs.
 The meeting notes of web team syncs can be found [in this doc](https://docs.google.com/document/u/1/d/1IUsjbtYdGiAHvRUB1yf4eqnynin9WsxFR2zFCMm78jw/edit#).
 
 Before web team syncs, teammates and stakeholders should write down under "Discussion items" in the meeting notes document anything that they'd like to bring up for discussion with the whole team.
+
+## Hack time
+
+The web team engineers hold a weekly "hack time" session: a scheduled block of time dedicated to pair programming (or, more accurately, crowd/mob programming) on a task together as a team.
+
+The reasons why we do hack time as a team:
+
+- it lets the team share knowledge and context
+- it builds shared ownership over the work
+- it's also an opportunity to discuss ideas and socialize
+
+The team chooses a tasks (or topic) for hack time in advance, in order to avoid spending time deciding what to work on at the beginning of the session. The process is:
+
+- A weekly Slack reminder in the `#web-team` channel creates a thread for the team to propose ideas for the next hack time.
+- By default, if the work from the last hack time session was unfinished, then the team continues on that work.
+- If no task has been proposed by the time that the hack time session starts, and there's no task to continue from last time, then that session is cancelled.
