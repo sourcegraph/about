@@ -452,6 +452,29 @@
           -33.81944570348443
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Lisa Tagliaferri"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.650002,
+          -73.949997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Tommy O Donnell"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.708664566278458,
+          52.267426934723936
+        ]
+      }
     }
   ]
 }
+

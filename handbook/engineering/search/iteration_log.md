@@ -19,7 +19,7 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Outcomes:**
     - Implement frontend and backend components to support `select` filtering. See overview of work in [#18002](https://github.com/sourcegraph/sourcegraph/issues/18002) and RFC 254.
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-02-12: `select:` functionality is live on Sourcegraph.com as of Sunday 15 Feb (for some reason deploys didn't go through on Friday?. It's working--next work items to address are around `limitHit`/`show more` functionality, optimizations, and extensions for `symbols`. We still have to add metrics capturing/pings. The current issue #18002 tracks these items.
 
 ### Search contexts
 - **Owner(s):** Rok, Juliana
@@ -27,7 +27,33 @@ This document contains the goals and work log for the search team's [2-week iter
     - Finish implementing search contexts UI
     - Search contexts are ready for user testing on Cloud
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-02-12: Search context dropdown is now populated with real data, search contexts can be selected (keyboard or mouse interaction), context is appended to the query when copying, and context filter is fully supported on the frontend.
+    - 2021-02-19: Finished up all of the tasks needed to start user testing search contexts on Cloud (storing last selected search context in localStorage, adding context parameter to URL, search within dropdown, context is appended to query when searching).
+
+### Streaming search/Exhaustive Search
+- **Owner(s):** Juliana, Keegan, Stefan
+    - Increased user confidence
+    - Stream results per shard: Currently, we stream results per zoekt instance.
+      To avoid aggregation and reduce the memory footprint we have to enable
+      zoekt to stream back results as they are found for each shard. This will
+      improve performance for streaming search and enable exhaustive search.
+- **Work log:**
+    - 2021-02-11: We made several improvements to increase the user's confidence
+      in reported statistics
+      - Align effect of `count:` filter with reported number of results.
+      - For streaming, we now use 500 as a common limit for all search results.
+        This makes the number of returned results more predictable. Previously
+        we had a limit of 30 per search backend.
+      - We don't report more results than the user asked for.
+    - 2021-02-12:
+      - Made progress to enable zoekt for streaming. We prototyped different
+        protocols and encodings to find a good fit to move forward.
+    - 2021-02-19:
+      - Zoekt now has a new endpoint `/stream` which we call from Sourcegraph.
+        Within Zoekt we still process a search in batch mode but stream the
+        results back in chunks. We already started updating Zoekt to support
+        streaming natively, however we will only finish this during the next
+        itertion.
 
 ## 2021-01-25 to 2021-02-05
 

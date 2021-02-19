@@ -153,4 +153,14 @@ a:hover {
 	.visible-sm { display: none; }
 	.visible-lg { display: unset; }
 }
+/* Cookiebot updates */
+body {
+  background-color: #f4f6f8;
+}
+button#CybotCookiebotDialogBodyButtonDetails {
+	text-decoration: none;
+}
+.container-md {
+    max-width: 1140px;
+}
 
