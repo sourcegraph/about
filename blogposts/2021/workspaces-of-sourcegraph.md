@@ -15,7 +15,7 @@ So as the Sourcegraph design team began to study how to improve how we display c
 While our research is far from complete, we thought you might find a breakdown of the visual characteristics of where our team writes code of interest.
 
 ## Light/dark mode and contrast
-Three quarters of our engineers preferred a dark theme over a light theme.  Curiously, the majority of dark mode users chose a low contrast between code and background. Backgrounds colors averaged 85% black while the  primary code color to background contrast ratio was around 9 to 1. 
+Three-quarters of our engineers preferred a dark theme over a light theme.  Curiously, the majority of our dark mode users chose a lower contrast between code and background than their light theme oriented peers. Background colors averaged 85% black and the primary code color to background contrast ratio averaged 9 to 1.  This seems to contradict the dark themes offered by many other developer tools, where dark is often interpreted as near 100% black and text is often 100% white. 
 
 Conversely, all light mode users at Sourcegraph prefer the maximum contrast with 100% white backgrounds and a black primary code color. 
 
