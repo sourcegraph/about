@@ -653,3 +653,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - GitHub: [Caitlinsourcegraph](https://github.com/caitlinsourcegraph)
 - [Caitlin@sourcegraph.com](mailto:caitlin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/caitlincarducci/)
 - Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC! 
+
+
+## Jon Kishpaugh (he/him)
+- Account Executive 
+- San Francisco, CA, USA
+- GitHub: [JonKish](https://github.com/jonkish)
+- jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
+- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
