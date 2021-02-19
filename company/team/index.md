@@ -661,3 +661,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [lisa@sourcegraph.com](mailto:lisa@sourcegraph.com), [GitHub](https://github.com/ltagliaferri), [lisatagliaferri.org](https://lisatagliaferri.org), [@lisaironcutter](https://twitter.com/lisaironcutter), [LinkedIn](https://www.linkedin.com/in/lisa-tagliaferri/)
 - Name pronunciation: tal YA feh ree
 - Lisa wants to make tech more accessible through education and community building. She previously led the Developer Education/Community team at DigitalOcean, and wrote very popular open access books on Python programming and machine learning. An interdisciplinary researcher and teacher, Lisa earned her PhD from the City University of New York, and held postdoctoral positions at MIT and Harvard. A native New Yorker, she is interested in both public transportation and complicated street parking signage.
+
+## Jon Kishpaugh (he/him)
+- Account Executive 
+- San Francisco, CA, USA
+- GitHub: [JonKish](https://github.com/jonkish)
+- jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
+- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
