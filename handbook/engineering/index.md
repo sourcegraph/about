@@ -11,7 +11,7 @@
   - [TypeScript](languages/typescript.md)
   - [Terraform](languages/terraform.md)
 - Practices & Philosophy
-  - [Customer Issues](../ce/customer_issues.md)
+  - [Customer Issues](../ce/engaging-other-teams.md)
   - [Incidents](incidents/index.md)
   - [Testing](testing.md)
   - [Styling UI](./web/styling.md)
