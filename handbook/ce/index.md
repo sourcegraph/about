@@ -32,7 +32,6 @@ We work with many other teams at Sourcegraph, including:
 	* [Engaging other teams](engaging-other-teams.md)
 	* [Tools](support-tools.md)
 	* [p0 incident response](p0-Incident-Response.md)
-	* [Legacy support overview](legacy-support-overview.md)
 	* [User deletion](delete_users_guide.md)
 	* [Creating and maintaining license keys for customers](license_keys.md)
 	* [Moving off the insiders build](leaving-insiders-build.md)
