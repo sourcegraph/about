@@ -61,6 +61,6 @@ Before web team syncs, teammates and stakeholders should write down under "Agend
 - FQ3 [Engineering Manager](../roles.md#engineering-manager), Jean acting manager until then.
   - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  - [Murat Sutunc](../../../company/team#murat-sutunc-he-him)
+  - [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him)
   - FQ2 frontend engineer
   - FQ4 frontend engineer
