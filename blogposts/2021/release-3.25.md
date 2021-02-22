@@ -10,7 +10,7 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/pull/18024
     category: Admin
   - description: Structural search now supports searching unindexed revisions and indexed branches other than default.
-    url: https://github.com/sourcegraph/sourcegraph/pull/17726
+    url: https://github.com/sourcegraph/sourcegraph/pull/17967
     category: Search
   - description: "Experimental: The webapp can now stream search results to the client, improving search performance. To enable it, add `{ \"experimentalFeatures\": { \"searchStreaming\": true } }` in user settings."
     url: https://github.com/sourcegraph/sourcegraph/pull/16097
@@ -21,8 +21,12 @@ changelogItems:
   - description: "Secrets (such as access tokens and passwords) will now appear as REDACTED when editing external service config, and in graphql API responses."
     url: https://github.com/sourcegraph/sourcegraph/issues/17261
     category: Admin
-  - description: Improved performance of structural search on monorepo deployments
+  - description: "Improved performance of structural search on monorepo deployments."
     url: https://github.com/sourcegraph/sourcegraph/pull/17846
     category: Search
+  - description: "When previewing a campaign spec, changesets can be filtered by current state or the action(s) to be performed."
+    url: https://github.com/sourcegraph/sourcegraph/issues/16960
+    category: Campaigns
+
 ---
 \* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
