@@ -58,7 +58,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### People Operations and Talent
 
-- [VP Talent](../handbook/talent/vp_talent.md)
 - [VP People Operations](../handbook/people-ops/vp_people_ops.md)
 - [Teammate Success Manager](https://jobs.lever.co/sourcegraph/700949a2-09ce-4de7-b3bd-a5af5032a4a9)
 - [Technical Recruiter - Product](https://jobs.lever.co/sourcegraph/c1630817-8de1-41e5-b199-00e1664be861)
