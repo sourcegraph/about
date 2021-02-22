@@ -700,3 +700,8 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Shaan joins Sourcegraph after a decade in finance and operations roles at large and small software companies, including Salesforce and Greenhouse Software. 
 Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and optimizing for the best credit card points programs. Shaan grew up in CA and graduated from UC Berkeley.
 
+## Tammy Zhu (she/her)
+- Director of Legal
+- San Francisco, CA, USA 🇺🇸
+- [tammy@sourcegraph.com](mailto:tammy@sourcegraph.com)
+- Tammy joins Sourcegraph after years of counseling technology companies on matters including products, litigation, commercial contracts, data privacy, M&A, startup financing, and regulatory filings and investigations. She enjoys creative writing, reading fiction, solo traveling, watching basketball, and baking sourdough during the pandemic. 
