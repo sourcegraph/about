@@ -24,8 +24,5 @@ changelogItems:
   - description: Improved performance of structural search on monorepo deployments
     url: https://github.com/sourcegraph/sourcegraph/pull/17846
     category: Search
-  - description: "Removed the `search.migrateParser` setting. As of 3.20 and onward, a new parser processes search queries by default. Previously, `search.migrateParser` was available to enable the legacy parser. Enabling/disabling this setting now no longer has any effect."
-    url: https://github.com/sourcegraph/sourcegraph/pull/17344
-    category: Search
 ---
 \* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
