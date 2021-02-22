@@ -6,9 +6,9 @@ tags: [blog, release]
 slug: "release/3.25"
 published: true
 changelogItems:
-  - description: "Go `1.15` introduced changes to SSL/TLS connection validation which requires certificates to include a `SAN`. This field was not included in older certificates and clients relied on the `CN` field. You might see an error like `x509: certificate relies on legacy Common Name field`. We recommend that customers using Sourcegraph with an external database that is connected using SSL/TLS check whether the certificate is up to date. AWS RDS customers please reference <a href='https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL-certificate-rotation.html'>AWS' documentation on updating the SSL/TLS certificate</a> for steps to rotate your certificate."
-    category: Admin
+  - description: "Go `1.15` introduced changes to SSL/TLS connection validation which requires certificates to include a `SAN`. This field was not included in older certificates and clients relied on the `CN` field. You might see an error like `x509: certificate relies on legacy Common Name field`. We recommend that customers using Sourcegraph with an external database that is connected using SSL/TLS check whether the certificate is up to date. AWS RDS customers please reference <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL-certificate-rotation.html\">AWS' documentation on updating the SSL/TLS certificate</a> for steps to rotate your certificate."
     url: https://github.com/sourcegraph/sourcegraph/pull/18024
+    category: Admin
   - description: Structural search now supports searching unindexed revisions and indexed branches other than default.
     url: https://github.com/sourcegraph/sourcegraph/pull/17726
     category: Search
