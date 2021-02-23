@@ -41,7 +41,7 @@ export default ((props: any) => (
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Community support on our <Link to="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</Link></li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Email support</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Support during working hours (all North American timezones)</li>
-                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />48 hour reponse time* to critical issues</li>
+                                    <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />48 hour response time* to critical issues</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime (managed instances only)</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Initial implementation support on architecture, deployment, configuration, and rollout</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Shared Slack channel for feedback and communication (available)</li>
@@ -59,7 +59,7 @@ export default ((props: any) => (
                                     <li className="list-group-item bg-transparent border-0"><CheckIcon className={checkClassName} /> Community support on our <Link to="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</Link></li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Email support</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Support during working hours (all North American timezones)</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 48 hour reponse time* to critical issues</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 48 hour response time* to critical issues</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />99.5% uptime (managed instances only)</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Initial implementation support on architecture, deployment, configuration, and rollout</li>
                                     <li className={`${liClassName} pricing-plan-feature__value-false`}><CheckIcon className={nocheckClassName} />Shared Slack channel for feedback and communication (available)</li>
@@ -77,7 +77,7 @@ export default ((props: any) => (
                                     <li className="list-group-item bg-transparent border-0"><CheckIcon className={checkClassName} /> Community support on our <Link to="https://github.com/sourcegraph/sourcegraph/issues">public issue tracker</Link></li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Email support</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Support during working hours (all North American timezones)</li>
-                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 24 hour reponse time* to critical issues</li>
+                                    <li className={liClassName}><CheckIcon className={checkClassName} /> 24 hour response time* to critical issues</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> 99.5% uptime (managed instances only)</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Initial implementation support on architecture, deployment, configuration, and rollout</li>
                                     <li className={liClassName}><CheckIcon className={checkClassName} /> Shared Slack channel for feedback and communication (available, <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">contact us</Link>)</li>
