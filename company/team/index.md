@@ -712,4 +712,4 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Portland, OR, USA 🇺🇸
 - GitHub: [DaedalusG](https://github.com/DaedalusG)
 - [warren@sourcegraph.com](mailto:warren@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/warren-gifford-he-him-b1141a1b4/)
-- Warren is a nerd who became interested in coding after reading one too many sci-fi's. Following a non linear trajectory, he studied mathematics and philosophy before becoming an automotive technician, and finally attended a coding bootcamp to pursue software development. Perennially curious, Warren can be found reading poetry, playing violin, exercising, or watching star trek with his loyal dog Bajor.
+- Warren is a nerd who became interested in coding after reading one too many sci-fi's. Following a nonlinear trajectory, he studied mathematics and philosophy before becoming an automotive technician, and finally attended a coding bootcamp to pursue software development. Perennially curious, Warren can be found reading poetry, playing violin, exercising, or watching star trek with his loyal dog Bajor.
