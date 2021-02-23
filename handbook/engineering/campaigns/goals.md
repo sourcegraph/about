@@ -25,7 +25,6 @@ Progress on adoption and usage is tracked in this [Looker dashboard](https://sou
 - Users can manipulate (push, close, comment on) many changesets
 
 **Outcome**
-
 - N3% of users creating 100+ campaigns report success
 
 ## Broad campaigns adoption and great developer experience
