@@ -38,6 +38,7 @@ You might think of this page as a remote version of "the clever workflows and sh
 
 - [Loom](https://loom.com) for quick videos for demos or bugs.
 - [Textexpander](https://textexpander.com) or [aText](https://www.trankynam.com/atext/) for text expansions and abbreviations. Use it to store things like your Zoom URL, Calendly URL, and our ISO date format in a way that can be easily populated into other documents.
+- [Kap](https://getkap.co/) open source screen recorder for MacOS 
 
 ## Miscellaneous 
 
