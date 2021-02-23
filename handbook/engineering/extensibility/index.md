@@ -11,7 +11,7 @@ The extensibility team owns our code host and third-party integrations (includin
 
 This team is responsible for:
 
-1. Bringing the value of Sourcegraph to other developer tools
+1. Bringing the value of Sourcegraph to everywhere you work with code
 1. Bringing the value of other developer tools into Sourcegraph
 
 The team's areas of responsibility include:
