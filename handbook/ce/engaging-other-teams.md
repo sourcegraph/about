@@ -143,6 +143,7 @@ When posting in Distribution team's Slack channel, @ mention the [on-call dev](.
 If the issue is a defect, we trust our teammates in product and engineering to schedule the fix based on all other priorities they have to consider. The context you provide on urgency in the ticket is useful to them for this. If the customer requires a timeline update, we can talk with the relevant engineering team to get a sense. We never want to make promises, but we can share what we know and make sure the customer doesn't feel left in the dark or like no one cares about their issue. 
 
 ### Collaboration
+
 Ask the engineer helping you to see if they would like to work directly with the customer. If so, we can add them in cc on the Zendesk ticket (if the origin was the support@ email) or @ them in the relevant customer-facing Slack thread. We never want to be an unnecessary go-between, but depending on the issue, we also don't want to erode the customer's trust in your ability. It's okay that you need help and it's also okay to position that as your desire to talk with your teammates (as described in step 1).
 
 ### Resolution
