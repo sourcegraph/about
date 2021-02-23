@@ -39,7 +39,7 @@ Remember:
 ### Day 1
 
 - Complete [general onboarding](../../people-ops/onboarding/general-onboarding.md)
-   - Keep the [guiding principles](../../people-ops/onboarding.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
+   - Keep the [guiding principles](../../people-ops/onboarding/index.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
 - Write your 30-60-90 day objectives in your 1:1 doc with Christina
 
 ### Get to know the team
