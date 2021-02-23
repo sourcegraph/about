@@ -26,7 +26,7 @@ Never say "I need to ask engineering" or anything that can erode trust with the 
 
 
 ## Step 2: Check with your teammates first and move forward when needed
-If you don't need and help are filing a defect, you can skip this step.
+If you don't need help and are filing a defect, you can skip this step.
 
 When you need help, post in our #customer-support-chat Slack channel first to see if anyone on our team is able to help you move forward. Always trust your assessment of the situation and move forward to engaging engineering based on the level of urgency/priority associated with the work. 
 
