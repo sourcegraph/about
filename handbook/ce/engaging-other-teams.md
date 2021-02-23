@@ -11,6 +11,7 @@ When we need help, we seek it consistently, following the steps outlined here. W
 At no point are we meant to be gate keepers or go-betweens. Generally, when a CE needs help, they will come to us. They may also still go directly to engineering for other questions they have. And when we engage engineering, if the CE wants to be included, be sure to do so. This is especially relevant for customers still in the pre-sales process where everything is just a bit more sensitive. 
 
 ## Step 1: Gather all the details/context and set expectations with the customer
+
 The more we know, the easier it will be to find the answer. For example:
 
 * Do we have updated details about the customer's environment?
