@@ -721,3 +721,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [valerybugakov](https://github.com/valerybugakov)
 - [valery@sourcegraph.com](mailto:valery@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/valerybugakov/), [@valerybugakov](https://twitter.com/valerybugakov), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Valery)
 - Valery is a product-centric software engineer. He joins Sourcegraph after years of helping various early-stage startups to build web products and scale frontend engineering teams. Open-source enthusiast and avid traveler he can't wait for the open borders to explore new places. In his free time, he enjoys snowboarding, especially freeriding in the winter, and basketball + surfing in the summer.
+
+## Giselle Northy (she/her)
+- Customer Support Engineer
+- Sherwood, OR, USA 🇺🇸
+- GitHub: [northyg](https://github.com/northyg)
+- [giselle@sourcegraph.com](mailto:giselle@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/giselle-northy/), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Giselle)
+- Giselle is a long time nerd who has dabbled in coding and PC games for many years. She started her tech career after several twists and turns, followed by a short stint in Sales & Marketing. At work her passions include automating the boring, creating an amazing customer experience, leveling up coding skills, and learning something new every day! Outside of work, she enjoys spending time with family, her fur children Odin the dog, cats Ben & Jerry, exercise, gardening and nature walks.
