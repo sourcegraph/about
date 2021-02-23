@@ -705,3 +705,11 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - San Francisco, CA, USA 🇺🇸
 - [tammy@sourcegraph.com](mailto:tammy@sourcegraph.com)
 - Tammy joins Sourcegraph after years of counseling technology companies on matters including products, litigation, commercial contracts, data privacy, M&A, startup financing, and regulatory filings and investigations. She enjoys creative writing, reading fiction, solo traveling, watching basketball, and baking sourdough during the pandemic. 
+
+## Warren Gifford (he/him)
+
+- Customer Service Engineer
+- Portland, OR, USA 🇺🇸
+- GitHub: [DaedalusG](https://github.com/DaedalusG)
+- [warren@sourcegraph.com](mailto:warren@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/warren-gifford-he-him-b1141a1b4/)
+- Warren is a nerd who became interested in coding after reading one too many sci-fi's. Following a non linear trajectory, he studied mathematics and philosophy before becoming an automotive technician, and finally attended a coding bootcamp to pursue software development. Perennially curious, Warren can be found reading poetry, playing violin, exercising, or watching star trek with his loyal dog Bajor.
