@@ -163,7 +163,6 @@ For any questions about contract renewal, the CE and [Sales](../sales/index.md) 
 
 For any questions about license key extension, the CE team is responsible. See the [license key management documentation](../sales/license_keys.md) for guidance.
 
-
 ### Usage statistics
 
 **Keywords**: `usage`, `users`, `DAU`, `WAU`, `MAU`
