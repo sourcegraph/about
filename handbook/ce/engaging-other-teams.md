@@ -30,7 +30,6 @@ If you don't need help and are filing a defect, you can skip this step.
 
 When you need help, post in our #customer-support-chat Slack channel first to see if anyone on our team is able to help you move forward. Always trust your assessment of the situation and move forward to engaging engineering based on the level of urgency/priority associated with the work. 
 
-
 ## Step 3: Identify which team can help you
 
 In many cases, questions can span multiple teams. For example, a question about how to scale up indexed search to serve a large set of repositories could cover the Distribution, Cloud, and Search teams. In such cases, start where you think is best and our teammates in engineering will help us figure out if we need to go to another engineering team. 
