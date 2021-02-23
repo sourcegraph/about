@@ -127,7 +127,7 @@ If it turns our to be a general issue affecting multiple deployments, create an 
 ### Add the priority label
 Add a prioritization label to the issue, from `p0` to `p3` based on a combination of (1) the severity of the issue, (2) the prioritization of the reporting company and (3) any relevant context that translates to level of urgency:
 
-* `p0`: System outages (`about`, `/search`, or `docs` is fully unreachable) are always p0. At your discretion, we may also designate an issue p0 that results in the company's Sourcegraph instance being unusable. 
+* `p0`: System outages (`about`, `/search` (for sourcegraph.com only), or `docs` is fully unreachable) are always p0. At your discretion, we may also designate an issue p0 that results in the company's Sourcegraph instance being unusable. 
 * `p1`: All customer reported issues per our contractual p1 service level agreement definition [here](https://about.sourcegraph.com/handbook/ce/support#our-service-level-agreements-slas).
 * `p2`: All customer reported issues per our contractual p2 service level agreement definition [here](https://about.sourcegraph.com/handbook/ce/support#our-service-level-agreements-slas).
 * `p3`: All feature requests.
