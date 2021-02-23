@@ -27,8 +27,5 @@ changelogItems:
   - description: "When previewing a campaign spec, changesets can be filtered by current state or the action(s) to be performed."
     url: https://github.com/sourcegraph/sourcegraph/issues/16960
     category: Campaigns
-  - description: "Experimental: Sync Perforce depots directly through the Sourcegraph UI. To enable, use the feature flag `\"experimentalFeatures\": { \"perforce\": \"enabled\" }`. For more information, see <a href=\"https://docs.sourcegraph.com/admin/repo/perforce\">how to add your Perforce depots."
-    url: https://docs.sourcegraph.com/admin/repo/perforce
-    category: Admin
 ---
 \* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
