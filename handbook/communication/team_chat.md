@@ -67,14 +67,16 @@ If teams require additional channels they should follow the convention of prefix
 - #feedback - Feedback directly from our users & customers
 - #product - Product questions, ideas and thoughts
 
-### Operations/G&A
+### Operations
 
 - #business-ops - Strategy, operations and project management support
 - #people-ops - Onboarding, team satisfaction, reviews and much more
+- #hiring - Candidate hiring
+- #it-tech-ops - IT, software, and access questions
 - #finance - Dollars and cents
+- #legal - Legal questions
 - #marketintel - Market and industry intelligence - products, funding, competition
 - #payments - Customer payment notifications
-- #hiring - Candidate hiring
 - #analytics - All things data
 
 ### Go-to-market
