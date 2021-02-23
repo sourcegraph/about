@@ -66,7 +66,6 @@ If teams require additional channels they should follow the convention of prefix
 - #design - How Sourcegraph looks visually
 - #feedback - Feedback directly from our users & customers
 - #product - Product questions, ideas and thoughts
-- #analytics - User metrics, analytics, etc.
 
 ### Operations/G&A
 
@@ -76,7 +75,7 @@ If teams require additional channels they should follow the convention of prefix
 - #marketintel - Market and industry intelligence - products, funding, competition
 - #payments - Customer payment notifications
 - #hiring - Candidate hiring
-- #analytics - [Analytics](../ops/bizops/analytics.md)
+- #analytics - All things data
 
 ### Go-to-market
 
