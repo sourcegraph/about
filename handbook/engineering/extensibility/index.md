@@ -18,7 +18,7 @@ The team's areas of responsibility include:
 
 - Sourcegraph extensions
   - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
-  - Building useful Sourcegraph extensions on top of the Sourcegraph extension API (for example: Codecov, Datadog, Sentry, Lightstep).
+  - Building and maintaining useful Sourcegraph extensions on top of the Sourcegraph extension API ([Sourcegraph-maintained extensions](https://docs.sourcegraph.com/dev/background-information/sourcegraph_extensions)).
   - Documentation and tutorials that enable third party developers to create extensions that are actively used.
   - Building and maintaining the extensions registry and discovery paths to create a community around Sourcegraph extensions.
 - Integrations
