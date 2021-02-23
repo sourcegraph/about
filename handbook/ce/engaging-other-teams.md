@@ -24,7 +24,6 @@ Never say "I need to ask engineering" or anything that can erode trust with the 
 * "I want to talk to some of my teammates about this one..."
 * Or, if it's a defect, "I've filed the issue in our public tracker. I'll let you know when it's resolved and you can follow along here...."
 
-
 ## Step 2: Check with your teammates first and move forward when needed
 
 If you don't need help and are filing a defect, you can skip this step.
