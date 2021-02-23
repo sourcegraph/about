@@ -728,3 +728,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [northyg](https://github.com/northyg)
 - [giselle@sourcegraph.com](mailto:giselle@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/giselle-northy/), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Giselle)
 - Giselle is a long time nerd who has dabbled in coding and PC games for many years. She started her tech career after several twists and turns, followed by a short stint in Sales & Marketing. At work her passions include automating the boring, creating an amazing customer experience, leveling up coding skills, and learning something new every day! Outside of work, she enjoys spending time with family, her fur children Odin the dog, cats Ben & Jerry, exercise, gardening and nature walks.
+
+## Alex Fogg (he/him)
+- Customer Engineer
+- Philadelphia, PA, USA 🇺🇸
+- GitHub: [alexfogg](https://github.com/alexfogg)
+- [afogg@sourcegraph.com](mailto:afogg@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/alexfogg/)
+- Alex spent the bulk his career working as a software engineer and team lead in NYC at startups and media companies. His love of people, process, communication, and customers led him to the customer engineering role. Alex loves traveling and staying active via hiking/biking/running. He spends his weeknights watching YouTube cooking videos and loves to try out new recipes.
