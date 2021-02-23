@@ -701,7 +701,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 
 ## Warren Gifford (he/him)
 
-- Customer Service Engineer
+- Customer Support Engineer
 - Portland, OR, USA 🇺🇸
 - GitHub: [DaedalusG](https://github.com/DaedalusG)
 - [warren@sourcegraph.com](mailto:warren@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/warren-gifford-he-him-b1141a1b4/)
