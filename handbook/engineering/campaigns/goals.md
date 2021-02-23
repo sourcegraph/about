@@ -1,6 +1,6 @@
 # Goals
 
-## Deliver campaigns to as many users as possible
+# Overarching goal: Deliver campaigns to as many users as possible
 Campaigns are GA and already create value for some early adopters. The next step is to onboard a broader audience.
 Campaigns will be most valuable for users with large codebases and teams, which are more likely to be found at large tech startups or in the enterprise. Therefore, our primary goal now is to increase adoption of campaigns for our enterprise customers.
 Longer term, we want to push continuous code maintenance and campaigns to every developer.
@@ -17,7 +17,7 @@ Progress on adoption and usage is tracked in this [Looker dashboard](https://sou
 - We track usage with a monthly MAUs and customer penetration report
 - CE and sales are equipped with enough material and examples to demonstrate the value of campaigns to a broad range of users with varied workflows.
 
-## Users can create, manage and track large scale campaigns
+## Objective: Users can create, manage and track large scale campaigns
 **Milestones**
 
 - ✅ Campaigns support monorepos
@@ -27,7 +27,7 @@ Progress on adoption and usage is tracked in this [Looker dashboard](https://sou
 **Outcome**
 - N3% of users creating 100+ campaigns report success
 
-## Broad campaigns adoption and great developer experience
+## Objective: Broad campaigns adoption and great developer experience
 We want to make it so that campaigns is easy to onboard and use not only for a few power users, but also for all software engineers. This is a key limitation of existing in-house tooling at out customers.
 
 **Outcomes**
@@ -35,7 +35,7 @@ We want to make it so that campaigns is easy to onboard and use not only for a f
 - Developers from teams outside infrastructure / developer services start using campaigns
 - N4% of users that land on the campaigns dashboard become Active Campaigns Maintainers
 
-## Changeset creators get changesets merged faster
+## Objective: Changeset creators get changesets merged faster
 A campaign is successful when its changes get merged.
 
 **Outcomes**
@@ -43,7 +43,7 @@ A campaign is successful when its changes get merged.
 - We have a weekly, actionable time-to-merge report
 - We observe that time-to-merge decreases over time (goal TBD)
 
-## Recurring campaigns
+## Objective: Recurring campaigns
 **Outcomes**
 
 - Users can set campaigns to run recurrently
