@@ -16,7 +16,7 @@ The more we know, the easier it will be to find the answer. For example:
 * Do we have updated details about the customer's environment?
 * Do we have the steps to be able to reproduce the issue and relevant screenshots and logs?
 * Do we know if the customer made any other changes to their environment recently (this could be anything, not just related to Sourcegraph)?
-* Do have a few examples of users who are impacted and those who are not If the issue is not impacting all of their users?
+* Do we have a few examples of users who are impacted and those who are not if the issue is not impacting all of their users?
 * Do we have an understanding of the level of urgency the customer and/or our CE/Sales counterparts are feeling to resolve the issue?
 
 Never say "I need to ask engineering" or anything that can erode trust with the customer in your ability. It's okay that you need help! Instead say things like:
