@@ -713,3 +713,11 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [DaedalusG](https://github.com/DaedalusG)
 - [warren@sourcegraph.com](mailto:warren@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/warren-gifford-he-him-b1141a1b4/)
 - Warren is a nerd who became interested in coding after reading one too many sci-fi's. Following a nonlinear trajectory, he studied mathematics and philosophy before becoming an automotive technician, and finally attended a coding bootcamp to pursue software development. Perennially curious, Warren can be found reading poetry, playing violin, exercising, or watching star trek with his loyal dog Bajor.
+
+## Valery Bugakov (he/him)
+
+- Software Engineer
+- St. Petersburg, Russia 🇷🇺
+- GitHub: [valerybugakov](https://github.com/valerybugakov)
+- [valery@sourcegraph.com](mailto:valery@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/valerybugakov/), [@valerybugakov](https://twitter.com/valerybugakov), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Valery)
+- Valery is a product-centric software engineer. He joins Sourcegraph after years of helping various early-stage startups to build web products and scale frontend engineering teams. Open-source enthusiast and avid traveler he can't wait for the open borders to explore new places. In his free time, he enjoys snowboarding, especially freeriding in the winter, and basketball + surfing in the summer.
