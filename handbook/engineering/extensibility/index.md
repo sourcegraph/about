@@ -22,7 +22,7 @@ The team's areas of responsibility include:
   - Documentation and tutorials that enable third party developers to create extensions that are actively used.
   - Building and maintaining the extensions registry and discovery paths to create a community around Sourcegraph extensions.
 - Code host integrations
-  - Surface code intelligence (and other Sourcegraph data) in code hosts through user installed browser extensions.
+  - Surface code intelligence (and other Sourcegraph data) in code hosts through user-installed browser extensions.
   - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developers look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extension to get code intelligence.
 
 [List of Sourcegraph-maintained extension repositories](https://docs.sourcegraph.com/dev/background-information/sourcegraph_extensions)
