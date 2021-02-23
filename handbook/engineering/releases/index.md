@@ -130,5 +130,5 @@ In the future, we may introduce continuous releases if these issues become surmo
 
 ### Weekend releases
 
-If the 20th falls on a non-working day, the release captain has the right but not the obligation to change the day (+/- 3 days) the release images are published.
+If the 20th falls on a non-working day, the release captain has the right but not the obligation to change the day (+/- 3 days) that the release images are published.
 If they decide to do this, they should move the google calendar events and announce the change in the #dev-announce channel.
