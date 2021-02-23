@@ -25,6 +25,7 @@ Progress on adoption and usage is tracked in this [Looker dashboard](https://sou
 - Users can manipulate (push, close, comment on) many changesets
 
 **Outcome**
+
 - N3% of users creating 100+ campaigns report success
 
 ## Objective: Broad campaigns adoption and great developer experience
@@ -47,7 +48,6 @@ A campaign is successful when its changes get merged.
 **Outcomes**
 
 - Users can set campaigns to run recurrently
-- At least 3 customers use campaigns for security use cases
 
 # Roadmap
 
@@ -61,6 +61,6 @@ We maintain a [directionally correct roadmap](https://sourcegraph.productboard.c
 We generally think about campaigns features in terms of 4 themes:
 
 - expand the realm where campaigns can run
-- creating many changesets easily
-- managing and tracking many changesets easily
+- create many changesets easily
+- manage and track many changesets easily
 - get changesets merged faster
