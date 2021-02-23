@@ -152,9 +152,6 @@ Ask the engineer helping you to see if they would like to work directly with the
 
 Even when engineering is helping, you own the work and it is your job to reach resolution as outlined in our [workflow](https://about.sourcegraph.com/handbook/ce/support-workflow).
 
-
-
-
 ## And sometimes, we need help from teams outside of engineering ...
 
 ### Subscriptions and licenses
