@@ -135,6 +135,7 @@ Add a prioritization label to the issue, from `p0` to `p3` based on a combinatio
 ## Step 5: Collaborate and resolve
 
 ### Requests for help (RFHs)
+
 After you file the Github issue, alert the relevant engineering team you did so in Slack. Keep it simple and provide a brief description of what you need, link to the Github issue, and any context around timeline (for example: it's okay to look at this tomorrow or later in the week).
 
 When posting in Distribution team's Slack channel, @ mention the [on-call dev](../engineering/distribution/index.md#support-rotation).
