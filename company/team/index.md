@@ -77,13 +77,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [keegan@sourcegraph.com](mailto:keegan@sourcegraph.com), [keegancsmith](https://github.com/keegancsmith), [@keegan_csmith](https://twitter.com/keegan_csmith)
 - Keegan likes living in places with lots of sun and fibre internet. Prior to Sourcegraph, Keegan worked on the developer tools team at Facebook and spent too much time studying Mathematics and Computer Science. When not doing his day job, Keegan is usually out and about with his wife and son. He can also be found in a skatepark, on a squash court or on a mountain.
 
-## Uwe Hoffmann
-
-- Software Engineer
-- San Francisco Bay Area, CA, USA 🇺🇸
-- [uwe@sourcegraph.com](mailto:uwe@sourcegraph.com), [uwedeportivo](https://github.com/uwedeportivo)
-- Uwe has finally given up on his dream of playing in the NBA and has decided that writing software is not that bad after all.
-
 ## Joe Chen
 
 - Software Engineer
