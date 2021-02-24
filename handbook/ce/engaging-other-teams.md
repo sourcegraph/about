@@ -79,7 +79,7 @@ Any questions about code intelligence and navigation should be routed to the [Co
 
 ### Search
 
-**Keywords**: `search`, `indexed search`, `indexing`, `diff search`, `symbols`, `keyword`, `filter`, `scope`, `version context`, `repogroup`, `saved search`
+**Keywords**: `search`, `indexed search`, `indexing`, `diff search`, `symbols`, `keyword`, `filter`, `scope`, `version context`, `repogroup`, `saved search`, `code monitoring`
 
 Any questions about search should be routed to the [Search team](../engineering/search/index.md).
 
