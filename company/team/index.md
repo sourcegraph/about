@@ -728,3 +728,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [alexfogg](https://github.com/alexfogg)
 - [afogg@sourcegraph.com](mailto:afogg@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/alexfogg/)
 - Alex spent the bulk his career working as a software engineer and team lead in NYC at startups and media companies. His love of people, process, communication, and customers led him to the customer engineering role. Alex loves traveling and staying active via hiking/biking/running. He spends his weeknights watching YouTube cooking videos and loves to try out new recipes.
+
+## Adeola Akinsiku
+- Customer Support Engineer
+- Atlanta, GA, USA 🇺🇸
+- GitHub: [adeola-ak](https://github.com/adeola-ak)
+- [adeola@sourcegraph.com](mailto:adeola@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/adeola-a-b0b6b270)
+- Adeola joins Sourcegraph fresh out of an engineering bootcamp after years of doing work that she never felt challenged or very excited about. Having studied Finance in undergrad, she knows a thing or two about credit and managing money, but really loves to talk about all things code. Adeola finds life to be awfully boring without purpose and meaning, and strives to become a better person both professionally and personally everyday. Real connections mean a lot to Adeola and she loves to engage with people who feel the same way. Outside of work, she loves going out to eat, watching basketball, sniffing candles, reading and relaxing.
