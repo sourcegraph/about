@@ -101,7 +101,7 @@ Any questions about campaigns should be routed to the [Campaigns team](../engine
 
 ## Step 4: File a Github issue
 
-It can seem duplicative, but it's just as important when we need help as it is when we file a defect to file a Github issue. This allows us to understand how we are doing toward our goal of being a self-sustaining team, as well as trends over time that impact the customer experience and our team's experience.
+It can seem duplicative, but it's just as important when we need help as it is when we file a defect to file a Github issue. This allows us to understand how we are doing toward our goal of being a self-sustaining team, as well as trends over time that impact the customer experience, engineering work load planning, and our team's experience.
 
 ### Select the right issue tracker
 
