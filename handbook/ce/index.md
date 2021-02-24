@@ -62,9 +62,9 @@ CSEs are the go-to technical team for our CEs, helping customers both pre- and p
   - T. (Director of Customer Engineering, US East; starting 2021-03-01)
 - Customer Support Engineers
   - Adeola Akinsiku
-  - [Warren Gifford](../../company/team/index.md#giselle-northy-she-her)
+  - [Warren Gifford](../../company/team/index.md#warren-gifford-he-him)
   - S. (starting 2021-03-01)
-  - [Giselle Northy](../../company/team/index.md#alex-fogg-he-him)
+  - [Giselle Northy](../../company/team/index.md#giselle-northy-she-her)
   - B. (starting 2021-03-01)
   - [Virginia Ulrich](../../company/team/index.md#virginia-ulrich-she-her) (Head of Customer Support)
 - [Quinn Slack](../../company/team/index.md#quinn-slack) (CEO) is leading Customer Engineering for now.
