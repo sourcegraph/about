@@ -186,7 +186,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - [felix@sourcegraph.com](mailto:felix@sourcegraph.com), [felixfbecker](https://github.com/felixfbecker), [Twitter](https://github.com/felixfbecker), [LinkedIn](https://www.linkedin.com/in/felixfbecker/)
 - Felix discovered batch files on Windows 98 in elementary school and one thing led to another. He has the most fun in all things web technology and open source, especially TypeScript. But when that gets boring, he likes to play field hockey and sail the north & baltic seas.
 
-# Roux (they/them)
+## Roux (they/them)
 
 - [Pronounced roo](http://ipa-reader.xyz/?text=%C9%B9u%CB%90)
 - Software engineer
