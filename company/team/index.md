@@ -95,10 +95,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Noemi Mercado (she/her)
 
 - People Ops
-- San Francisco, CA, USA 🇺🇸
+- San Francisco, CA (Ramaytush Ohlone land)
 - GitHub: [mercadon](https://github.com/mercadon)
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/), [pronounce my name 🔊](https://www.name-coach.com/noemi-mercado)
-- Noemi is a Bay Area native that spends her free time caring for her cacti collection and volunteering with the local chapter of Border Angels. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care. She also has a pup named Valencia.
+- Noemi was borned and raised in the Bay Area, she spends her free time caring for her cacti collection and pup named Valencia. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care.
 
 ## Nick Snyder (he/him)
 
