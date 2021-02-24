@@ -1,6 +1,6 @@
 # Engaging Other Teams
 
-Our goal as Customer Support is to only need help from engineering no more than 10% of the time (not counting when we file defects). It's okay that we need help, and we will need help, and we also continually take what we learn each time we do back to the rest of the team (and our product documentation, as relevant).
+Our goal as Customer Support is to need help from engineering no more than 10% of the time (not counting when we file defects). It's okay that we need help, and we will need help, and we also continually take what we learn each time we do back to the rest of the team (and our product documentation, as relevant).
 
 When we need help, we seek it consistently, following the steps outlined here. We created these steps to ensure we:
 
