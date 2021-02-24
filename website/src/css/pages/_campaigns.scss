@@ -1,0 +1,29 @@
+.campaigns-page {
+    &__header-and-hero {
+        background: url('/customers-page-bg.svg') no-repeat;
+        background-size: cover;
+    }
+    &__see-how {
+        font-size: 1.25rem;
+    }
+    .list-group-item {
+        background-color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav.nav-tabs {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 10px 30px;
+    }
+    .nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
+        border: none;
+    }
+    .nav-tabs a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
