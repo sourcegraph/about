@@ -160,13 +160,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Garo Brik"
+        "name": "Roux"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.38858032226562,
-          43.643032068770395
+          -123.11934,
+          49.24966
         ]
       }
     },
