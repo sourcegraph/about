@@ -20,10 +20,7 @@ The more we know, the easier it will be to find the answer. For example:
 * Do we have a few examples of users who are impacted and those who are not if the issue is not impacting all of their users?
 * Do we have an understanding of the level of urgency the customer and/or our CE/Sales counterparts are feeling to resolve the issue?
 
-Never say "I need to ask engineering" or anything that can erode trust with the customer in your ability. It's okay that you need help! Instead say things like:
-
-* "I want to talk to some of my teammates about this one..."
-* Or, if it's a defect, "I've filed the issue in our public tracker. I'll let you know when it's resolved and you can follow along here...."
+Never say "I need to ask engineering" or anything that can erode trust with the customer in your ability. It's okay that you need help! Instead say things like: "I want to talk to some of my teammates about this one..."
 
 ## Step 2: Check with your teammates first and move forward when needed
 
