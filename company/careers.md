@@ -82,7 +82,7 @@ We pledge to make participation in our company an open and welcoming experience 
 
 We care about the safety and comfort of everyone in our community, including colleagues, contributors, and users.
 
-See more about [our commitment](../handbook/communication/code_of_conduct.md).
+See more about [diversity, equity, and inclusion](../handbook/communication/dei.md) at Sourcegraph.
 
 ## Benefits
 
