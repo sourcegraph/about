@@ -2,7 +2,7 @@
 
 This page describes Sourcegraph's analytics function, our data sources, and how to use our data tools.
 
-- [Data sources]()
+- [Data sources](#data-sources)
 - [Data tools]()
 - Using Looker
 
