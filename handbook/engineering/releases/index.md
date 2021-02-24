@@ -8,7 +8,7 @@ This document describes how we release Sourcegraph.
 
 **Sourcegraph releases are monthly.**
 A *release* refers to a minor version increase of Sourcegraph (e.g. `3.0.0` -> `3.1.0`).
-We aim to create releases by 10am US Pacific Time on the 20th day of each month. ([why?](#why-the-20th))
+We create releases by 10am US Pacific Time on the 20th day of each month. ([why?](#why-the-20th))
 
 These releases **may** require [manual migration steps](https://docs.sourcegraph.com/admin/updates).
 
@@ -130,5 +130,6 @@ In the future, we may introduce continuous releases if these issues become surmo
 
 ### Weekend releases
 
-If the 20th falls on a non-working day, the release captain has the right but not the obligation to change the day (+/- 3 days) that the release images are published.
+If the 20th falls on a non-working day, the release captain has the right but not the obligation
+ to change the day (up to 3 days before the 20th) that the release images are published.
 If they decide to do this, they should move the google calendar events and announce the change in the #dev-announce channel.
