@@ -82,6 +82,12 @@ Sourcegraph has a lot of repositories!
 - [Infrastructure repositories](https://github.com/sourcegraph?utf8=%E2%9C%93&q=repo-type-infrastructure&type=&language=)
 - [Customer infrastructure repositories](https://github.com/sourcegraph?utf8=%E2%9C%93&q=repo-type-infrastructure+repo-type-customer&type=&language=)
 
+## Where Sourcegraph is deployed:
+
+- [Sourcegraph Cloud](https://sourcegraph.com/search)
+- [Sourcegraph About](https://about.sourcegraph.com)
+- [Design system](https://5f0f381c0e50750022dc6bf7-mejvlwvrtv.chromatic.com)
+
 ## Where Sourcegraph gets extended functionality:
 
 - [Code intelligence repositories](https://github.com/sourcegraph?utf8=%E2%9C%93&q=repo-type-codeintel&type=&language=)
