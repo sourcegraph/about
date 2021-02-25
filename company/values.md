@@ -67,7 +67,7 @@ We view equity and inclusion as foundational elements to our culture, our succes
 - Diversity supports our moral values and practical goals and we cannot truly have diversity without also having equity and inclusion.
 - We consider a focus on diversity, equity, and inclusion a critical job function of all leaders at Sourcegraph.
 
-
+For more information, see our "[Diversity, equity, and inclusion](../../handbook/communication/dei.md)".
 
 ### Open and transparent
 
