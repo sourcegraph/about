@@ -33,7 +33,7 @@ These are the principles that guide all content creation at Sourcegraph. 
 
 ### Values alignment 
 
-How our content strategy aligns with our company valaues.
+How our content strategy aligns with our company values.
 
 | Value      | Content alignment |
 | ----------- | ----------- |
