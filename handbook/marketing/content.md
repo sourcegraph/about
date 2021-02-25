@@ -6,10 +6,6 @@ At Sourcegraph, we define **content marketing** as generating awareness, buildin
 
 [Read the FY22 Content Strategy.](https://docs.google.com/document/d/1uz9AN5ZiGkbVD5mQmoKNO4mdbKaI1lukQcxPB2JiPx4/edit#)
 
-## Table of contents 
-
-1. [Quick links]
-1. [Editorial process]
 
 ## Quick links
 
