@@ -12,6 +12,7 @@ Exceptions:
 - #customer-updates similarly retains messages for two years because a lot of customer context ends up in Slack threads and it is not currently practical to move that to another system of record.
 - #feedback retains messages indefinitely because it provides a good source of user testimonials.
 - #engaging-external-engineers retains indefinitely because team chat is the easiest way to solicit advice from our broader team, and the questions are usually one-off, so it wouldn't make sense to try to make this more organized.
+- #sales-prospecting retains indefinitely to support the education of new teammates about how to communicate with customers and prospects.
 - All channels that we share with customers or prospects (typically containing the prefixes #trial- or #support-) retain messages indefinitely to preserve context for support or audit-related purposes.
 
 [Historical archive of Slack messages prior to 2019-11-09](https://drive.google.com/file/d/1FUbOEsMM4fWRpxymgNHZCAssOPEFDelJ/view?usp=sharing): unzip and open `sourcegraph-slack-archive-to-20191109/index.html` to view. If you consult this, please be sure to add whatever information you learn to a source of truth so we reduce our reliance on this archive.
@@ -34,6 +35,10 @@ Because Sourcegraph is a global, [all-remote company](../../company/remote/index
 However, a corollary to this is that they are free to read your message whenever is convenient for them. There is no expectation that people will be responsive over the [weekend/vacation/evening/etc.](../../company/remote/index.md#is-there-an-expectation-to-work-over-the-weekends).
 
 Make sure to set up Slack to only send you notifications when you want to see them!
+
+## Use threads instead of channel-wide responses
+
+In public channels, we use threads to organize conversations around topics and limit the number of notifications into a channel. That being said, when a thread reaches a point where a result or update would be useful for the entire channel to be aware of, you can check the `Also send to #channel` to send it into the channel's main view. 
 
 ## Channels
 
@@ -62,18 +67,25 @@ If teams require additional channels they should follow the convention of prefix
 - #design - How Sourcegraph looks visually
 - #feedback - Feedback directly from our users & customers
 - #product - Product questions, ideas and thoughts
-- #analytics - User metrics, analytics, etc.
 
-### Business
+### Operations
+
+- #business-ops - Strategy, operations and project management support
+- #people-ops - Onboarding, team satisfaction, reviews and much more
+- #hiring - Candidate hiring
+- #it-tech-ops - IT, software, and access questions
+- #finance - Dollars and cents
+- #legal - Legal questions
+- #marketintel - Market and industry intelligence - products, funding, competition
+- #payments - Customer payment notifications
+- #analytics - All things data
+
+### Go-to-market
 
 - #marketing - [Marketing](../marketing/index.md)
 - #sales - [Sales](../sales/index.md)
-- #analytics - [Analytics](../ops/bizops/index.md#analytics)
-- #marketintel - Market and industry intelligence - products, funding, competition
-- #payments - Customer payment notifications
-- #hiring - Candidate hiring
 - #customer-updates - Updates on the status of customers
-- #dev-rel - Developer relations, events, blog posts, tweets, etc.
+- #ce - Helping devs use Sourcegraph effectively
 
 ### Engineering
 

@@ -11,7 +11,32 @@ This document contains the goals and work log for the search team's [2-week iter
     - $DESIRED_OUTCOME
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
-    
+
+## 2021-02-22 to 2021-03-05
+
+### `select` polish and `contains` filter predicate MVP
+- **Owner(s):** Rijnard, Camden
+- **Outcomes:**
+    - Polish remaining `select` work (optimization and add pings, see [#18002](https://github.com/sourcegraph/sourcegraph/issues/18002))
+    - Start implementing `contains` filter predicate (see [#18584](https://github.com/sourcegraph/sourcegraph/issues/18584))
+- **Work log:**
+
+### Clean up graphqlbackend resolvers
+- **Owner(s):** Camden
+- **Outcomes:**
+    - Make all search result types independent of resolvers (tracking issue [#18348](https://github.com/sourcegraph/sourcegraph/issues/18348))
+    - Move result types out of graphqlbackend
+- **Work log:**
+
+### Enterprise search contexts
+
+- **Owner(s):** Rok
+- **Outcomes:**
+    - Enterprise contexts RFC includes DB schema, API schema, and a clear migration path for version contexts
+    - Enterprise contexts RFC undergoing review (or at least ready for review)
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
 ## 2021-02-08 to 2021-02-19
 
 ### Implement `select` filtering
@@ -20,6 +45,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Implement frontend and backend components to support `select` filtering. See overview of work in [#18002](https://github.com/sourcegraph/sourcegraph/issues/18002) and RFC 254.
 - **Work log:**
     - 2021-02-12: `select:` functionality is live on Sourcegraph.com as of Sunday 15 Feb (for some reason deploys didn't go through on Friday?. It's working--next work items to address are around `limitHit`/`show more` functionality, optimizations, and extensions for `symbols`. We still have to add metrics capturing/pings. The current issue #18002 tracks these items.
+    - 2021-02-19: Updated behavioral specification for `select:`, implemented bug fixes and additional UI hovers for it. `select:` support is considered shippable now, modulo metrics tracking/optimization/docs. On the timeline we've allocated 3 reamining weeks polish this work, and have work-in-progress optimizations for `select`, associated refactoring, and metrics tracking in the pipeline. Whatever time we gain should be spent on refactoring related code (e.g., result types, query types) for upcoming filter predicate support, or we will be slowed down by the current code when we move to work on that next.
 
 ### Search contexts
 - **Owner(s):** Rok, Juliana
@@ -28,6 +54,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Search contexts are ready for user testing on Cloud
 - **Work log:**
     - 2021-02-12: Search context dropdown is now populated with real data, search contexts can be selected (keyboard or mouse interaction), context is appended to the query when copying, and context filter is fully supported on the frontend.
+    - 2021-02-19: Finished up all of the tasks needed to start user testing search contexts on Cloud (storing last selected search context in localStorage, adding context parameter to URL, search within dropdown, context is appended to query when searching).
 
 ### Streaming search/Exhaustive Search
 - **Owner(s):** Juliana, Keegan, Stefan
@@ -45,8 +72,15 @@ This document contains the goals and work log for the search team's [2-week iter
         we had a limit of 30 per search backend.
       - We don't report more results than the user asked for.
     - 2021-02-12:
-      - Made progress to enable zoekt for streaming. We prototyped differnt
+      - Made progress to enable zoekt for streaming. We prototyped different
         protocols and encodings to find a good fit to move forward.
+    - 2021-02-19:
+      - Zoekt now has a new endpoint `/stream` which we call from Sourcegraph.
+        Within Zoekt we still process a search in batch mode but stream the
+        results back in chunks. We already started updating Zoekt to support
+        streaming natively, however we will only finish this during the next
+        itertion.
+    - 2021-02-19: Numerous perf fixes have been made to the frontend to aid streaming search. Streaming search now also renders branch names or commit IDs when necessary.
 
 ## 2021-01-25 to 2021-02-05
 

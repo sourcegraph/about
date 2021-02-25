@@ -4,6 +4,10 @@ Because Sourcegraph is all-remote, we actively share tips + tricks for using all
 
 You might think of this page as a remote version of "the clever workflows and shortcuts you'd notice by looking over someone's shoulder as they worked."
 
+## GSuite
+
+- **Search across all GSuite content with Google Cloud Search.** You can use https://cloudsearch.google.com/cloudsearch to search across Mail, Drive, Groups and Calendar, as an additional tip, you can create a custom search for it as recommended in the [Chrome](#chrome) section using `https://cloudsearch.google.com/cloudsearch/search?q=%s`.
+
 ## Slack 
 
 - **Set up [custom channel sections](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) in your sidebar to organize all your channels.** You can expand/collapse groups of channels. For example, you might make a group called "Social" that contains channels like #random, #pets-of-sourcegraph, and #cooking.
@@ -12,6 +16,7 @@ You might think of this page as a remote version of "the clever workflows and sh
 - **Show only unread channels in your channel sections.** Right-click on a channel section or the "Channels" header, then select "Show" > "Unread channels only." 
 
 ### Popular app integrations 
+
 - **[Connect your Google calendar](https://slack.com/app-pages/google-calendar)** to get reminders and show when you're in a meeting. 
 - **[Connect Zoom](https://sourcegraph.slack.com/apps/A5GE9BMQC-zoom)** so you can type `/zoom` and quickly start zoom calls. 
 - **[Connect Clockwise](https://www.getclockwise.com/)** if you use it to schedule meetings; use the GCal integration to send you reminders and the Clockwise integration to handle detailed Slack status updates. 
@@ -33,8 +38,12 @@ You might think of this page as a remote version of "the clever workflows and sh
 
 - [Loom](https://loom.com) for quick videos for demos or bugs.
 - [Textexpander](https://textexpander.com) or [aText](https://www.trankynam.com/atext/) for text expansions and abbreviations. Use it to store things like your Zoom URL, Calendly URL, and our ISO date format in a way that can be easily populated into other documents.
+- [Kap](https://getkap.co/) open source screen recorder for MacOS 
+- [CleanShot X](https://cleanshot.com/) is a paid but incredibly good screenshot/GIF/video  recording tool for macOS. 
+- [Screenflow](http://www.telestream.net/screenflow/overview.htm) is a paid video recording product that allows you to record your screen and webcam at the same time.
 
 ## Miscellaneous 
 
 - **Learn the keyboard shortcut to pull up your emoji keyboard:** now you can emoji-react places beyond Slack, or use emojis for visual distinction in titles/comments in all your other tools. On Mac it's `command`+`control`+`space`. 
 - **Use Lattice to quiz yourself on teammmate faces and names.** Log in to [Lattice](https://sourcegraph.latticehq.com/) and scroll to the bottom of the page; on the left, click [Play Office Party](https://sourcegraph.latticehq.com/office-party) to run through a quiz to see how many faces you can match to names.
+- **Use these keyboard shortcuts to reduce mouse clicks. Quickly close tabs or programs, and open new tabs in a program.** On Mac `command`+`t` will open a new tab in web browsers, many IDE's, and Mac terminal. On Mac `command`+`w` will close the current existing tab.

@@ -80,6 +80,10 @@ Structured meetings are great, but it's important to have casual, unscheduled, f
 
 See "[1-1 meetings](../leadership/1-1.md)".
 
+## [Announcements](announcements.md)
+
+See "[Announcements](announcements.md)".
+
 ## Google Docs
 
 1. We use Google Docs for:
@@ -125,10 +129,11 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 
 - [Seeking and giving feedback](./seeking-and-giving-feedback.md)
 
-## Handling conflict
+## Handling conflicts
 
-- [Conflict resolution](./code_of_conduct.md#conflict-resolution)
-- [Clean escalation](./code_of_conduct.md#clean-escalation)
+- [Conflict resolution](./conflicts.md)
+- [Clean escalation](./conflicts.md#clean-resolution)
+- [Customer ethics policy](customer_ethics.md)
 
 ## Brain Food
 

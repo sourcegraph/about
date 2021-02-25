@@ -22,7 +22,7 @@ In order to get some purposeful face-time in with each other, we convene synchro
 ## Communication
 In order to maintain healthy communication, we...
 
-* We populate and refer to our [team bio doc](support-bios.md) to orient ourselves for working with each other
+* We populate and refer to our [team README](support-bios.md) to orient ourselves for working with each other
 * We use otter.ai when we are on Zoom with each other to make it easier for everyone to follow along with the conversation
 * We honor that not everyone writes/speaks English as their first language and use Grammarly and HemingwayApp to help make sure we are saying what we intend
 * We rotate who facilitates our weekly planning/retro session so that we normalize hearing each other and noticing when someone isn't getting a chance to talk
@@ -31,8 +31,9 @@ In order to maintain healthy communication, we...
 ## Expectations
 In order to keep the air clear with each other, we do the following:
 
-* We honor our [Sourcegraph values](https://about.sourcegraph.com/company/values), [code of conduct](https://about.sourcegraph.com/handbook/communication/code_of_conduct), and [team ethos](https://about.sourcegraph.com/handbook/ce/support#our-ethos)
+* We honor our [Sourcegraph values](../../company/values.md), [code of conduct](../communication/code_of_conduct.md), and [team ethos](support.md#our-ethos)
 * We make it clear when are committing to do something, we make it equally clear when we cannot, and we adjust and communicate accordingly when life happens
 * We let each other know immediately when we are feeling like it's anything other than feasible to get done what we have committed to doing
 * We let each other know immediately the moment we realize something we committed to doing may be at risk somehow
 * We let each other know when we are unavailable by posting in our #customer-support-chat Slack channel, setting our Slack status, blocking our personal calendar, and marking the not working calendar
+* When we are out for more than a day or two, we create a "what did I miss" doc in our [shared drive folder](https://drive.google.com/drive/u/1/folders/1w-4j9T1z1GxnpvSbr_o5VRVxkct7w27O) for our teammates to populate with things we need to catch-up, be aware of when we return.

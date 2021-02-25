@@ -10,17 +10,17 @@ We work with many other teams at Sourcegraph, including:
 - with the [Sales team](../sales/index.md) in our relationships with prospects and customers; and
 - with the [Product team](../product/index.md) and [Engineering team](../engineering/index.md) on product feedback and requirements (by aggregating and relaying what users tell us, and by helping team members get in touch with or solicit feedback from the right users).
 
+### What is the difference between a Customer Engineer and Customer Support Engineer?
+CSEs are the go-to technical team for our CEs, helping customers both pre- and post-sales, and allowing CEs to do more proactive work by taking on the reactive technical troubleshooting work when customers experience issues. We can think of CE and CSE as work best friends, working closely together every day. Where Sales is focused on the commercial relationship, CE is focused on product success/usage/adoption. If the CE is stuck, doesn’t know the answer, that is the exact right time to bring in a CSE and let support do the heads-down troubleshooting work. 
+
 ---
 
 * [Customer Engineering Onboarding](onboarding.md)
 * [Customer Support Onboarding](customer-support-onboarding.md)
 * [Team members](#members)
-* [Customer notes](customer-notes.md)
-* [Training session and demo flows](training.md)
-	* [Basic Demo Flow](comprehensive-demo-script.md)
-	* [Sourcegraph 101](training.md#sourcegraph-101-standard-demo-flow)
-	* [Becoming a Sourcegraph power user](training.md#becoming-a-sourcegraph-power-user)
-	* [Sourcegraph office hours](training.md#sourcegraph-office-hours)
+* [Training sessions](https://docs.google.com/document/d/1nFePrSIcIakMmjOEY01vNc6VRe7WiJ0iOWygeZlbpYw/edit) (Sourcegraph 101, 102, office hours, etc.)
+* Demos
+  * [Comprehensive demo flow](https://docs.google.com/document/d/1q903Yl-vkOqkQ4e3JRiw-u8x8aJ50iTezllzcj_MJWc/edit)
   * [Demo instances](demo_instances.md)
   * [Examples of committed secrets/keys/hardcoded IP addresses/emails](https://github.com/sourcegraph-testing/ce-code-smells/)
 * [Support](support.md)
@@ -35,8 +35,9 @@ We work with many other teams at Sourcegraph, including:
 	* [User deletion](delete_users_guide.md)
 	* [Creating and maintaining license keys for customers](license_keys.md)
 	* [Moving off the insiders build](leaving-insiders-build.md)
+
 * Resources
-  * [QBR Guide](qbr_guide.md)
+  * [QBR Guide](https://docs.google.com/document/d/1gFRn2SkX19sU0GSMGndNkk-I9cFe7FlN3xlZ2UX3Frs/edit#u)
   * [Guide to demoing the Campaigns feature](https://drive.google.com/drive/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn) (video recording)
     * [Slides](https://docs.google.com/presentation/d/1niZBMhHKWJT1-n_ExSbYIRD51vcubrWwQm-Tc5EZo8s/edit#slide=id.g7d2aea8729_0_0)
     * [Campaign demo and training materials](https://docs.google.com/document/d/1xQxhdGaudydOn5nBGIG91F6Z4VR4NwBfuKFvgbmCjJo/edit?usp=drive_web&ouid=107037782400977645523)
@@ -46,15 +47,23 @@ We work with many other teams at Sourcegraph, including:
 
 <!-- Alphabetically, by surname. -->
 
-- Customer Engineers
+- Customer Engineers (US West)
   - [Emily Chapman](../../company/team/index.md#emily-chapman-she-her)
   - [Jonah Dueck](../../company/team/index.md#jonah-dueck-he-him)
+  - [Nick McMillen](../../company/team/index.md#nick-mcmillen-he-him)
+  - [Manuel Ucles](../../company/team/index.md#manuel-ucles)
+- Customer Engineers (US East)
   - [Christine Lovett](../../company/team/index.md#christine-lovett-she-her)
   - [Mike McLaughlin](../../company/team/index.md#mike-mclaughlin-he-him)
-  - [Nick McMillen](../../company/team/index.md#nick-mcmillen-he-him)
-- Customer Support
+  - [Alex Fogg](../../company/team/index.md#alex-fogg-he-him)
+  - T. (Director of Customer Engineering, US East; starting 2021-03-01)
+- Customer Support Engineers
+  - [Adeola Akinsiku](../../company/team/index.md#adeola-akinsiku)
+  - [Warren Gifford](../../company/team/index.md#warren-gifford-he-him)
+  - S. (starting 2021-03-01)
+  - [Giselle Northy](../../company/team/index.md#giselle-northy-she-her)
+  - B. (starting 2021-03-01)
   - [Virginia Ulrich](../../company/team/index.md#virginia-ulrich-she-her) (Head of Customer Support)
-  - We are hiring [Customer Support Engineers](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a). Our Customer Engineers will continue in their support rotation until then.
 - [Quinn Slack](../../company/team/index.md#quinn-slack) (CEO) is leading Customer Engineering for now.
   - We are hiring for VP Customer Engineering and will have the role posted very soon.
 
@@ -63,8 +72,9 @@ We work with many other teams at Sourcegraph, including:
 - [Customer Engineer](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57)
 - [Customer Support Engineer](https://jobs.lever.co/sourcegraph/d58a382e-0c20-4dec-9657-63f164ec703a)
 - [Training Engineer](https://jobs.lever.co/sourcegraph/7aae60bb-228f-4e48-89f8-d16646aa4642)
-- [Director of Customer Engineering, East](https://jobs.lever.co/sourcegraph/82f595d8-9a88-40f6-b84a-b243c58754f0)
-- [Director of Customer Engineering, West](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1)
+- [Director of Customer Engineering, US East](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1) (this role is filled)
+- [Director of Customer Engineering, US West](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1)
+- We're also starting to hire for Customer Engineering outside the US, initially somebody located around UTC+0. You would start as a Customer Engineer and then build a team.
 - VP of Customer Engineering (to be posted soon)
 
 ## Meetings

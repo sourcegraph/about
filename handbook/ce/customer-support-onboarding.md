@@ -27,7 +27,8 @@ Welcome back! Let’s get started....
 * Plan to watch this [product demo recording](https://www.youtube.com/watch?v=iTBTri_q5MA&feature=youtu.be) once a week for your first 3-4 weeks. It will be repetitive, but each week, more and more will start to click. Start this week!
 * Read [our support overview](https://about.sourcegraph.com/handbook/ce/support) (including the sub links). Post any questions you have in our #customer-support-chat Slack channel
 * Be sure you are invited to and start attending the weekly CSE planning/retro session, weekly CE account strategy check-in, and weekly CSE “cheers” huddle as outlined in our [rituals](https://about.sourcegraph.com/handbook/ce/support-team-rituals)
-* Schedule introductory chats with every member of [the Customer Engineering org](https://about.sourcegraph.com/handbook/ce#members). It’s okay to schedule these over your first few weeks, however you see fit.
+* Schedule introductory chats with every member of [the Customer Engineering org](https://about.sourcegraph.com/handbook/ce#members). It’s okay to schedule these over your first few weeks, however you see fit. To schedule the chat with Quinn, work with Katerina (his executive business partner and owner of his calendar).
+* Schedule an introductory chat with Katerina, too! As Quinn's executive business partner, she is part of the CE team right now and just a lovely person to spend time with. We will likely pull her in as we work to solve problems for how our team operates, since she will be able to help us understand if we should be coordinating more broadly, etc.
 * Open and merge your first GitHub pull request in the handbook
 * Create free otter.ai and Grammarly accounts (link otter.ai to your Zoom account) and bookmark Hemingwayapp -- why we use these is explained in [our team rituals doc](https://about.sourcegraph.com/handbook/ce/support-team-rituals).
 * Verify you have access to all the required tools -- and check out [Support Tools](support-tools.md) for an overview of the value they bring you and how they all fit together
@@ -142,6 +143,7 @@ Big pause here. These next tasks need a ton of improvement -- as mentioned in th
 * You have had a chat with each engineering manager and each member of the Distribution team
 * You have completed the playbook(s) you committed to do
 * You have added or substantially updated at least one section to our official product documentation
+* You have started values training deep dives 1-3
 
 ### In order to ensure the above declarations are true, you will complete the following tasks:
 
@@ -149,6 +151,8 @@ Big pause here. These next tasks need a ton of improvement -- as mentioned in th
 * Follow through on your plan to complete the playbook(s) you committed to do Note: more on this soon.
 * Get ready to contribute to product documentation by following [these steps](https://about.sourcegraph.com/handbook/product/onboarding#get-ready-to-contribute-to-the-docs) (though hold-off on purchasing anything to make gifs until we know we have a need for that)
 * Add or substantially update at least one section to our official product documentation
+* Purchase the book [Leader's Guide to Unconscious Bias](https://www.franklincovey.com/unconscious-bias-book/) by Pamela Fuller in preparation for values training 2
+* Start attending values training 1-3 sessions (invite sent by Virginia)
 
 
 
@@ -157,6 +161,7 @@ Big pause here. These next tasks need a ton of improvement -- as mentioned in th
 * You find that you rarely need help to get started helping a customer
 * You have continued to update product documentation and the handbook as needed
 * You have identified and made progress on a project during your focus blocks
+* You have completed values training deep dives 1-3
 * You have completed a career roadmap with your manager
 
 ### In order to ensure the above declarations are true, you will complete the following tasks:
@@ -164,4 +169,5 @@ Big pause here. These next tasks need a ton of improvement -- as mentioned in th
 * Keep helping customers!
 * Update product documentation and/or the handbook as needed
 * Determine a project to work on, develop a plan, and start working on it during your focus blocks
+* Continue attending values training 1-3 sessions
 * Schedule time with your manager to talk about your career roadmap

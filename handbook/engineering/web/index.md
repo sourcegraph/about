@@ -25,7 +25,7 @@ This is a large ownership area, so the team creates a focused plan each iteratio
          - FQ4 frontend engineer
 - [Extensibility](index.md) {#extensibility-eng}
    - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it ([apply here](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296)). Once that happens, Joel will focus entirely on code insights. 
-   - FQ3 [Engineering Manager](../roles.md#engineering-manager), Jean acting manager until then.
+   - P.D. starting 2020-03-01
          - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
          - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
          - M.S. 2021-02-15
@@ -216,7 +216,7 @@ We rotate who leads the retrospective to allow all teammates an opportunity to l
 
 ### Code reviews
 
-The team follow's the [default code review guidelines](../code_reviews.md) with the following addition:
+The team follow's the [default code review guidelines](https://docs.sourcegraph.com/dev/background-information/code_reviews) with the following addition:
 
 1. If the author would like any of the requested reviewers to merge the PR after approval they add the label `merge-on-any-approve`
 1. If the author would like their PR to be merged once all of the requested reviewers have approved it they add the label `merge-on-all-approve`

@@ -26,14 +26,16 @@ Find the Sales (and the rest of the company's) FY22 OKRs [here](https://docs.goo
 
 ## Members
 
+Not all team members are reflected here yet. If you see yourself missing, please add yourself!
+
 - [Gregg Stone](../../company/team/index.md#gregg-stone) (VP of Sales)
-- [Josh Bollin](../../company/team/index.md#josh-bollin) (RVP of East)
+- [Dudley Nostrand](../../company/team/index.md#dudley-nostrand) (Sr. Manager, Value Engineering)
+- RVP of East (to be filled)
   - [Kai Passo](../../company/team/index.md#kai-passo-he-him)
   - [Bill Kolman](../../company/team/index.md#bill-kolman)
   - [Eli Rothschild](../../company/team/index.md#eli-rothschild-he-him)
   - [Scott Cambell](../../company/team/index.md#scott-campbell-he-him)
   - [Hannah Freilich](../../company/team/index.md#hannah-freilich)
-  - Dan Braun
 - [Greg Bastis](../../company/team/index.md#greg-bastis-he-him) (RVP of West)
   - [Owen Brennan](../../company/team/index.md#owen-brennan-he-him)
   - [Chris Surdi](../../company/team/index.md#chris-surdi)
@@ -46,7 +48,6 @@ See [roles](./roles/index.md) page.
 
 ### [Customer engineering](../ce/support.md) (for customer support)
 
-- [Sales-to-CE new customer handover process](sales_to_ce_handover.md)
 - [How to request support (for customers)](../ce/support.md#how-to-get-support-for-customers)
 - [Creating and maintaining license keys for customers](../ce/license_keys.md)
 

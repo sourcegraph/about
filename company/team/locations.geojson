@@ -160,13 +160,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Garo Brik"
+        "name": "Roux"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.38858032226562,
-          43.643032068770395
+          -123.11934,
+          49.24966
         ]
       }
     },
@@ -450,6 +450,17 @@
         "coordinates": [
           18.69546890258789,
           -33.81944570348443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Lisa Tagliaferri"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.650002,
+          -73.949997
         ]
       }
     },
