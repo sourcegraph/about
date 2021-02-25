@@ -94,7 +94,7 @@ Any questions about Sourcegraph extensions should be routed to the [Extensibilit
 
 ### Campaigns
 
-**Keywords**: `campaigns`, `large scale code changes`, `refactoring`, `src-cli`
+**Keywords**: `campaigns`, `large scale code changes`, `refactoring`, `src-cli`, `automation`, `batch changes`
 
 Any questions about campaigns should be routed to the [Campaigns team](../engineering/campaigns/index.md).
 
