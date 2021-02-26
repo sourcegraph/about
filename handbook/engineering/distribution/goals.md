@@ -23,7 +23,7 @@ Sourcegraph collects a number of data points through pings that are used to unde
 
 Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegraph Cloud) has several usability problems - for example, it is hard for engineers to identify when a commit on `sourcegraph/sourcegraph` was deployed to an environment or which deployment is currently running in a particular environment. We want to improve the deployment experience, making sure we can deploy with confidence and can easily understand in which stage of the pipeline a change currently is.
 
-- **Status**: Not started. _Estimated: FY22-Q1_
+- **Status**: In Progress. _Estimated: FY22-Q1_
 - **Outcomes**:
   - Our deployment pipeline earns a positive score from Sourcegraph engineering team.
   - Fix the top 5 problems as highlighted by Sourcegraph engineers.
