@@ -14,7 +14,7 @@ Sourcegraph collects a number of data points through pings that are used to unde
 - **Outcomes**:
   - We can survey site-admins actively or passively.
 - **Milestones**:
-  1. We have defined an initial set of data points we wish to collect.
+  ~~1. We have defined an initial set of data points we wish to collect.
   1. We have a tool in place to store and query site-admin data.
   1. There are processes and tools that allows CEs, CSEs and site-admins provide feedback.
   1. We have collected data from 10 site-admins.
