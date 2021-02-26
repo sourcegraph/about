@@ -28,7 +28,7 @@ Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegr
   - Our deployment pipeline earns a positive score from Sourcegraph engineering team.
   - Fix the top 5 problems as highlighted by Sourcegraph engineers.
 - **Milestones**:
-  1. Survey all Sourcegraph engineers to score our current deployment pipeline.
+  ~~1. Survey all Sourcegraph engineers to score our current deployment pipeline.
   1. Commits are deployed in a deterministic way to k8s.sgdev.org & sourcegraph.com.
   1. Engineers can easily identify on which stage of our full CI/CD pipeline is a given commit.
   1. Engineers can determine what release is currently running on a given environment.
