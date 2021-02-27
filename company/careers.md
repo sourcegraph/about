@@ -12,8 +12,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Engineering
 
-- [Director of Engineering - Platform and Infrastructure](https://jobs.lever.co/sourcegraph/8fcbaade-e511-4d93-bd9b-9cc7ec3438af)
-- [Engineering Manager - Core Application](https://jobs.lever.co/sourcegraph/95ad534f-8724-45dc-9b50-291c5926a7dc)
 - [Software Engineer - Code Insights - Frontend](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb)
 - [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
