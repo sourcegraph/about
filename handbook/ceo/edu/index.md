@@ -1,5 +1,7 @@
 # Product education
 
+NOTE: This entire document should be considered a brain dump. It often breaks the 4th wall and cycles often without delination among (1) describing the situation dryly and factually, (2) analyzing the situation critically, and (3) suggesting or speaking in the messaging we might use with an external audience. The section structure of this doc is mostly arbitrary. It is far from being ready as an immediately useful sales enablement doc!
+
 
 ## Who we target
 
@@ -91,6 +93,8 @@ Benefits:
 - Reduce existential threat to business
 
 ## Product components
+
+We use the 
 
 ```
 Search > Understand > Act/Automate
