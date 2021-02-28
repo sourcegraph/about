@@ -34,6 +34,8 @@ Proof points of Big Code being a valid and important problem:
 - What specific problems and pains (within Big Code) do we address?
 - What is the business value of addressing these pains?
 
+NOTE: This section describes the value prop of Sourcegraph in a way that's similar to the popular "Value Drivers" framework. I (@sqs) don't have a lot of experience with it, and I just used it as advisory. I don't mean to force us to use that framework if we don't want to, and I may have misunderstood parts of it.
+
 ### Boost dev productivity
 
 With Big Code, everything your devs do takes longer and longer. They lose flow more often and get frustrated. No matter how fast your builds are, how good your deployment system is, etc., if there's a lot of code and complexity, developers will struggle to understand the code and their productivity will suffer.
@@ -53,6 +55,13 @@ Benefits:
 
 - Get more from your existing dev team
 - Attract, retain, and leverage top talent
+
+What's required to solve it:
+
+- A way for devs to find and understand all code:
+  - Intelligent and intuitive for every dev to use many times daily
+  - Deeply integrated with other dev tools
+  - Scalable and secure for the largest enterprises
 
 Resources:
 
@@ -76,6 +85,13 @@ Benefits:
 
 - Increase revenue by shipping better products sooner
 
+What's required to solve it:
+
+- A way to make big improvements more quickly and safely
+  - Promote reuse and refactoring of existing code and APIs
+  - Faster deprecation of old code and APIs without breaking things
+  - Visibility into usage trends, dependencies, ownership, etc.
+
 ### Reduce security risk
 
 Your security risks grow as your code expands and ages. It's not just forward progress that's slowing, but also your devs experience huge setbacks whenever there are incidents, and your company faces existential threats if you leak sensitive data. You're already mitigating this, but that inevitably means lower productivity and slower innovation as devs are interrupted for incident response and more manual security/compliance processes.
@@ -92,13 +108,19 @@ Benefits:
 - Reduce disruptions to dev teams (to boost dev productivity and ease innovation)
 - Reduce existential threat to business
 
+What's required to solve it: (NOTE: this part I am least confident in being useful or the right way to frame)
+
+- A way to fix and monitor problems across all code
+  - Powerful and flexible to solve novel and complex issues
+  - Centralized, well-integrated workflow that security and devs both love
+
 ## Product components
 
-We use the 
+> NOTE: The way we talk about Sourcegraph (the product) should be consistent with the value drivers above, so that it's clear how our product addresses those things. It's also important that we lay it out in a way that makes our differentiation really easy to understand.
 
-```
-Search > Understand > Act/Automate
-```
+- **Search:** Devs need a way to find code across all repositories, versions, history, both internal and open-source, all languages. If it takes more than 10 seconds to search and find code, that's a very bad developer experience. They'll lose flow, and velocity and happiness comes to a crashing halt.
+- **Understand:** Devs need a way to understand code. What's this API? Who owns it? Who last touched it? Who's calling it? Is it running in production? Throwing errors? All of this, and more, needs to be accessible to every dev. It needs to be so easy and fast that they won't lose flow. And it needs to be comprehensive and accurate across all of your code, or else innovation slows because nobody will really, truly know how to safely remove code, change an API, or make big improvements without breaking other teams.
+- **Act/Automate:** Devs need a way to automate large-scale code refactors, security fixes, and migrations across hundreds or thousands of repositories. To automate, of course, you need a system that indexes and understands all of your code. At Google, for example, 70% of code changes are automated, which gives the human developers tremendous leverage and happiness/flow. 
 
 This is not a "pyramid". Any of these components can be the entry point (the first thing that a customer wants to do). Different personas will likely find different components most interesting.
 
