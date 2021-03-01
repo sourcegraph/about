@@ -457,14 +457,6 @@ To add yourself to this page:
 - [oconvey@sourcegraph.com](mailto:oconvey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/owenconvey/)
 - Owen was born and raised in England and has been residing in Barcelona since 2012.  He spends a lot of time watching Rugby, playing with his young daughter and tinkering with his laptop.  Prior to Sourcegraph, he was a manager at Help Scout and loves empowering and motivating autonomous engineering teams.  His Achilles' heel is most definitely pizza.
 
-## Nick McMillen (he/him)
-
-- Customer Engineer
-- San Francisco, CA, US 🇺🇸
-- GitHub: [mcmillennick](https://github.com/mcmillennick)
-- [nmcmillen@sourcegraph.com](mailto:nmcmillen@sourcegraph.com)
-- Nick was born and raised in the Bay Area but moved to San Francisco in 2011. Before Sourcegraph he worked at Sepialine as well as some early stage startups. In his free time he's an avid maker who loves working on props from movies and tv (ask him about 3d printing or laser cutting). He also obesses about all things space and has way too much NASA merch.
-
 ## Virginia Ulrich (she/her)
 
 - Head of Customer Support
