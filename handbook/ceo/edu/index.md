@@ -118,7 +118,7 @@ What's required to solve it: (NOTE: this part I am least confident in being the 
 
 > NOTE: The way we talk about Sourcegraph (the product) should be consistent with the value drivers above, so that it's clear how our product addresses those things. It's also important that we lay it out in a way that makes our differentiation really easy to understand.
 
-What's required to make Big Code work? What is Sourcegraph? These 3 things:
+What's required to make Big Code work? What is Sourcegraph? These 3 product pillars:
 
 - **Search:** Devs need a way to find code across all repositories, versions, history, both internal and open-source, all languages. If it takes more than 10 seconds to search and find code, that's a very bad developer experience. They'll lose flow, and velocity and happiness comes to a crashing halt.
 - **Understand:** Devs need a way to understand code. What's this API? Who owns it? Who last touched it? Who's calling it? Is it running in production? Throwing errors? All of this, and more, needs to be accessible to every dev. It needs to be so easy and fast that they won't lose flow. And it needs to be comprehensive and accurate across all of your code, or else innovation slows because nobody will really, truly know how to safely remove code, change an API, or make big improvements without breaking other teams.
@@ -161,13 +161,23 @@ Compared to editors and IDEs: Editors and IDEs are optimized for editing, not fo
 
 Selling Sourcegraph is different from selling other kinds of enterprise software in several important ways.
 
-### Code search has no compelling event / TODO "Creating a compelling event"
+### Code search has no compelling event
 
 An organization--and our buyer--generally doesn't feel acute, quantifiable pain if they roll out code search next month instead of today. There are almost never any important projects or deadlines for which an organization needs code search by a specific date. Even if the buyer sees evidence of code search boosting dev productivity and happiness, it's tough to quantify the cost of waiting a few more days or weeks.
 
-Code search is not seen as adding a brand new capability, only enhancing existing workflows.
+Code search is not seen as adding a brand new capability, only as enhancing existing workflows. (We think that's the wrong way to view it, but that doesn't change that many people do view it that way.)
 
-We are mitigating this by: TODO
+So far, we've mitigated this in 2 ways:
+
+- Developers who have started to use Sourcegraph inside a company generally would get very upset if it's taken away from them. We run clearly defined evaluations with time-limited trial license keys. When the evaluation's success criteria are met, they need to continue along the agreed-upon process and timeline to purchase to ensure their devs have continued access to Sourcegraph.
+- We've made as strong of a case as possible that waiting is costly.
+
+Here's how we're addressing this in the future:
+
+- Bolstering the security and risk reduction value prop, both the product capabilities and how we market it.
+- Investing in the Automate product pillar, which is 
+- Investing in the Understand product pillar, which can be tied to the roll-out timeline of other important tools and practices. It will significantly enhance adoption of and adherence to other tools/practices by making them visible to devs in their existing workflow (e.g., showing code coverage or Datadog information anytime devs view code on Sourcegraph, on their code host, or during code review).
+- Better value engineering to show customers the value of Sourcegraph.
 
 ### Sourcegraph is not (really) a system of record
 
