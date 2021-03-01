@@ -741,3 +741,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [adeola-ak](https://github.com/adeola-ak)
 - [adeola@sourcegraph.com](mailto:adeola@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/adeola-a-b0b6b270)
 - Adeola joins Sourcegraph fresh out of an engineering bootcamp after years of doing work that she never felt challenged or very excited about. Having studied Finance in undergrad, she knows a thing or two about credit and managing money, but really loves to talk about all things code. Adeola finds life to be awfully boring without purpose and meaning, and strives to become a better person both professionally and personally everyday. Real connections mean a lot to Adeola and she loves to engage with people who feel the same way. Outside of work, she loves going out to eat, watching basketball, sniffing candles, reading and relaxing.
+
+## Patrick Dubroy (he/him)
+- Engineering Manager, Frontend Platform
+- Munich, Germany 🇩🇪
+- GitHub: [pdubroy](https://github.com/pdubroy)
+- [patrick@sourcegraph.com](mailto:patrick@sourcegraph.com), [Twitter](https://twitter.com/dubroy), [LinkedIn](https://www.linkedin.com/in/pdubroy), [dubroy.com](https://dubroy.com/) 
+- Patrick is a small-town Canadian kid who's been living in Germany for the past 10 years. Previously, he worked on autonomous driving at Lyft, where he was an enthusiastic user of Sourcegraph. Outside of work, he loves to play soccer, watch [Bayern Munich](https://fcbayern.com/) games, and explore the gravel roads around Munich on his bike.
