@@ -35,6 +35,6 @@ TODO
 
 **Small asks and questions:** Post in the #analytics or #business-ops channel.
 
-To reach us, mention @business-team in the most relevant channel (i.e. #marketing for a marketing-related question).
+To reach us, simply mention @business-team in the relevant channel or thread.
 
-If you need clarification or are not sure about any of the above, ask a question in #analytics or @business-ops channel.
+If you need clarification or are not sure about any of the above, ask a question in #analytics or #business-ops channel.

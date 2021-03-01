@@ -11,13 +11,14 @@ This page describes Sourcegraph's analytics function, our data sources, and how 
 We collect data from the following:
 
 - Google Analytics: Website analytics for Sourcegraph marketing and docs pages (not Sourcegraph.com)
+- Google Tag Manager: Tag management system to collect event data and execute custom scripts across marketing our sites (i.e. (about|info|docs).sourcegraph.com)
 - HubSpot: Marketing automation
 - Salesforce: Customer Relationship Management system (CRM)
 - MixMax: Email marketing automation (Apollo is not used in production, but still retains data)
 - ZoomInfo:  Data enrichment of account and contact information
 - Sourcegraph.com Site-admin pages: customer subscriptions and license keys
 - [Pings](https://docs.sourcegraph.com/admin/pings) from self-hosted Sourcegraph instances containing anonymous and aggregated information. There are [specific guidelines](https://docs.sourcegraph.com/dev/background-information/adding_ping_data) that must be followed for teams to add ping data. 
-- [Custom tool to track events](https://github.com/sourcegraph/sourcegraph/issues/5486) on the Sourcegraph.com instance
+- [Event logger: custom tool to track events](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/client/web/src/tracking/eventLogger.ts). On Sourcegraph.com, this sends events directly to BigQuery. On customer instances, this sends events to the `EventLogs` database, which is then used to populate pings.
 - [Prometheus dashboards](https://sourcegraph.com/-/debug/grafana/?orgId=1) show high-level insight into the health of a Sourcegraph instance to admins. Sourcegraph teammates can see the health of Sourcegraph.com. 
 
 We have [written policies about how we handle customer information](./customer_data_policy.md). 

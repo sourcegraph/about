@@ -14,9 +14,10 @@ You'll have to get some basics set up in your first few days:
 
 - [Sourcegraph FY22 OKRs](https://docs.google.com/document/d/18d3sX38O6ephNuoHqZT9BwU1m1_FGuRfsTwYbc8lMV8/edit#heading=h.obnaanj0svtb)
 - [Sourcegraph values](../../../company/values.md)
-- [Sourcegraph master plan](../../../company/strategy.md)
+- [Sourcegraph strategy](../../../company/strategy.md)
 - [Sourcegraph direction (1 year plan)](../../../direction/index.md)
 - [Current BizOps projects](https://github.com/orgs/sourcegraph/projects/63)
+- [CustomerOps project tracker](https://docs.google.com/spreadsheets/d/16YKiI5-jn5xH8t1n7z3pC-4AQfJnOsZLlgJfWj2RlY4/edit#gid=0)
 - [BizOps @ Sourcegraph deck](https://docs.google.com/presentation/d/1B8TIkOsFXUofLKcwu3ZKUuFgSe7si_HNFXj8Qne4_ug/edit#slide=id.gb969c13690_0_15)
 
 ### Understand Sourcegraph communication and documentation standards
@@ -44,10 +45,11 @@ You'll have to get some basics set up in your first few days:
 ### Get to know fellow teammates
 
 - Schedule 1:1s with teammates to start getting to know who you'll be working with! The [org chart](../../../company/team/org_chart.md) is a good place to start with this.
+- Begin joining relevant weekly team meetings wherever possible. For example, if you will be working closely with our commercial teams (e.g. Sales, Marketing, Customer Engineering), join our weekly Customer Ops sync, the company pipeline review, and more. Your manager will help you identify and get invites to the right list of meetings.
 
 ## Weeks 2 and 3
 
-- Your manager and you will work together to find good onboarding projects that combine your areas of interest with real problems we need to solve. These projects should the following elements:
+- Your manager and you will work together to find good onboarding projects that combine your areas of interest with real problems we need to solve. These projects should include the following elements:
     - Familiarize you with our tech stack (HubSpot/Salesforce for customer ops roles and BigQuery/Looker for product ops roles)
     - Reinforce our product's value propositions
     - Include collaboration with another team to start building familiarity with how other teams operate
