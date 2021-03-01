@@ -12,10 +12,10 @@ You'll have to get some basics set up in your first few days:
 
 ### Understand company and team mission, values and goals
 
-- [Sourcegraph FY22 OKRs](https://docs.google.com/document/d/18d3sX38O6ephNuoHqZT9BwU1m1_FGuRfsTwYbc8lMV8/edit#heading=h.obnaanj0svtb)
 - [Sourcegraph values](../../../company/values.md)
 - [Sourcegraph strategy](../../../company/strategy.md)
 - [Sourcegraph direction (1 year plan)](../../../direction/index.md)
+- [Sourcegraph FY22 OKRs](https://docs.google.com/document/d/18d3sX38O6ephNuoHqZT9BwU1m1_FGuRfsTwYbc8lMV8/edit#heading=h.obnaanj0svtb)
 - [Current BizOps projects](https://github.com/orgs/sourcegraph/projects/63)
 - [CustomerOps project tracker](https://docs.google.com/spreadsheets/d/16YKiI5-jn5xH8t1n7z3pC-4AQfJnOsZLlgJfWj2RlY4/edit#gid=0)
 - [BizOps @ Sourcegraph deck](https://docs.google.com/presentation/d/1B8TIkOsFXUofLKcwu3ZKUuFgSe7si_HNFXj8Qne4_ug/edit#slide=id.gb969c13690_0_15)
@@ -27,6 +27,8 @@ You'll have to get some basics set up in your first few days:
 - Learn about how we work. We're in all-remote company, which means [we work asynchronously as much as possible](../../../company/remote/index.md#all-remote) and lot of decision making happens through [RFCs](../../communication/rfcs/index.md).
 
 ### Onboarding sessions
+
+Your manager will help you schedule the following training sessions:
 - Product demo
     - Cloud vs. self-hosted
     - Search (including code monitoring)

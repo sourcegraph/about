@@ -26,7 +26,7 @@ TODO
 
 **Internal BizOps projects:**  We use [GitHub issues in the Sourcegraph analytics repository](https://github.com/sourcegraph/analytics/issues) to document projects, and the [analytics kanban board](https://github.com/orgs/sourcegraph/projects/63) for team-wide prioritization and current projects.
 
-**Cross-functional projects:** Tag @sourcegraph/bizops in existing [sourcegraph/sourcegraph GitHub issues](https://github.com/sourcegraph/sourcegraph/issues) or create a new issue in the BizOps repository. For larger projects, please work with the BizOps team to lay out the following information to help us understand and prioritize your request:
+**Cross-functional projects:** Tag [@sourcegraph/bizops](https://github.com/orgs/sourcegraph/teams/bizops) in existing [sourcegraph/sourcegraph GitHub issues](https://github.com/sourcegraph/sourcegraph/issues) or create a new issue in the BizOps repository. For larger projects, please work with the BizOps team to lay out the following information to help us understand and prioritize your request:
 
 - **People:** Who is involved, and what are the expectations of each person? Who will be responsible for driving the project forward? Does each person have the necessary bandwidth to uphold the expecations asked of them? 
 - **End state:** What is the end state of the project? What decisions will be made? Be as specific as possible (i.e. if the end state is a graph, draw out the graph). Please provide a "data roadmap" if there are going to be multiple phases of the project. 
