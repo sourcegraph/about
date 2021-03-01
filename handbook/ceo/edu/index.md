@@ -128,7 +128,7 @@ This is not a "pyramid" (i.e., Search is not the base). Any of these components 
 
 ### Feature mapping
 
-How do Search, Understand, and Automate map to product features and eng teams?
+How do Search, Understand, and Automate map to Sourcegraph product features?
 
 - Search: code search, plus all the work to sync code and permissions across many different code hosts and other sources
 - Understand: all the contextual information we can provide: code intelligence, extensions (both the extensions API and specific extensions, such as Datadog), code insights (which is a way to model higher-level concepts in code; currently we think of it as "dashboards and charts" but I would like us to shift to thinking of code insights as a way to model concepts such as "this is a unit test vs. slow e2e test" or "this React component is using the new good API, not the bad old API", and the dashboards/charts would just be one of many ways that these concepts are exhibited); plus bringing all these things into the editor (not just on the web and code host)
@@ -171,7 +171,9 @@ We are mitigating this by: TODO
 
 ### Sourcegraph is not (really) a system of record
 
-Most enterprise software is a "system of record", which means that it's where certain important data originates and lives. For example, Salesforce is the system of record for our customer/sales data.
+Most enterprise software is a "system of record", which means that it's where certain important data lives. For example, Salesforce is the system of record for our customer/sales data. Google Workspace is the system of record for our email.
+
+Here's a quick test for whether something is a system of record. If you got rid of it and completely deleted your accounts on it, would you lose any data? For Salesforce and Google Workspace, the answer is yes. For Google web search (which isn't a system of record), the answer is no (ignoring secondary data like your search history).
 
 #### Pros and cons of being a system of record
 
@@ -193,7 +195,28 @@ These 3 factors feed each other. For example, in a domain where fragmentation an
 
 The most important predictor of a domain having weak systems of record is whether *both* individuals and organizations adopt and use it separately. That is the case for email (you chose your personal email provider independently of your work IT department's choice) but not for CRMs (you go along with whatever your company chose).
 
-#### TODO: what this means for Sourcegraph
+#### What this means for Sourcegraph
+
+Today, Sourcegraph is a "system of engagement", not a system of record. The systems of record that we integrate most closely with are the code hosts (such as GitHub and GitLab).
+
+Code hosts are relatively weak systems of record:
+
+- Fragmentation is high, both in the overall market and within individual large enterprises.
+  - Overall market fragmentation: GitHub, GitLab, and Bitbucket have roughly equal market shares, and they're all fiercely competitive. Few people expect any single one to become dominant. (GitHub has the vast majority of open-source code, but for this analysis, it makes sense to consider all code, including organizations' code.)
+  - Large enterprises' code is scattered across many code hosts. It's very rare for a large enterprise to have all of their code on a single code host. We often see dozens of code hosts, such as a large US bank with 40+ instances of Bitbucket, many newer instances of GitLab in early-adopter business units, some code on GitHub.com, some instances of GitHub Enterprise Server, plus legacy code in numerous other systems. It'd be a massive effort to centralize all code in one place, and for these large enterprises, no single code host instance could support the necessary scale or requirements. Even if all code could be centralized, rogue dev teams or M&A would likely introduce other places where code lives.
+- Overlap: Atlassian's strong product suite besides Bitbucket (Jira, Confluence, etc.), Microsoft's enterprise install base and strong product suite, and GitLab's broad feature set all create reasons for customers to choose a code host not *just* because of how good it is as a code host, but rather how well it meets other requirements that vary widely from customer to customer.
+- Open standards enable easy portability and less data lock-in. Code hosts generally serve Git repositories, and Git is an open standard. A Git repository is easily portable from one code host to another. Code hosts only truly own the repository metadata (such as repository/user permissions, issues, and pull requests).
+
+Let's see how the pros/cons mentioned above apply to Sourcegraph today:
+
+- No mandated usage. Using Sourcegraph code search is generally optional (not mandated) for users at a company. It doesn't really make sense to *mandate* use of a search product for all employees, because search helps with many different workflows and not just one specific, clearly defined workflow. So, just like Google web search, our product needs to be *so* good that users affirmatively decide to use it (and remember it) each time they have a problem it can solve. (I like to think that this makes us [try harder](https://slate.com/business/2013/08/hertz-vs-avis-advertising-wars-how-an-ad-firm-made-a-virtue-out-of-second-place.html) to build a great product.)
+- No data lock-in. Sourcegraph doesn't exert data lock-in, because there isn't really much data that lives in Sourcegraph. Some vendors might like exerting data lock-in on their customers, but we're quite okay with lacking this "advantage".
+- No rip-and-replace needed. Sourcegraph doesn't *replace* any existing system of record, so it's much easier to deploy (with respect to both organizational buy-in and technical complexity). The other code search tools that Sourcegraph sometimes replaces are not systems of record and have few integrations that rely on them, so they are relatively easy to rip out.
+
+Our future roadmap will bring us closer to being a system of record in 2 ways:
+
+- We'll become a system of record, not for code but for Automate (batch code changes and code monitoring). For example, in a company with 200 batch changes in the past year and 50 ongoing patterns being monitored, all that data is important. There are no existing systems of record for these kinds of things because the capabilities are novel.
+- We'll become a "system of integration", the sole place inside a company where *every* dev goes to find things across *all* the code and can better understand code because *all* the context is there. Sourcegraph will be exhaustive and comprehensive. While most of the underlying data will be stored on other systems, in large companies there are so many other systems that the one system that brings them all together has many of the benefits of being a system of record.
 
 ### Users take a while to become accustomed to using search / TODO "Winning over devs who haven't used code search before"
 
