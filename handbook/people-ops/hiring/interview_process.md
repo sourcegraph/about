@@ -66,6 +66,19 @@ Every interviewer should be evaluating candidates on the Sourcegraph values in a
 
 All positive feedback with no strongly positive feedback is usually not sufficient. We want to hire people who we are excited to work with.
 
+#### Removing bias from your rating
+
+Many teammates will interview a candidate only once in the context of a specific focus area. A possible side-effect is a biased view of a candidate's performance related to this focus area.  
+
+It would be best if you evaluated a candidate on their performance in the focus area as well as an overall _"would this person work well with the team"_ (based on our [values](evaluating_values.md)).  
+Look at those two ratings separately and synthesize them into a single _"should we hire this person"_ rating based on the rating guidance above. 
+
+For further guidance, consider the following anti-patterns we want to avoid:
+
+1. You fixate only on evaluating the candidate on the narrow area of focus of the interview. You ignore other holistic signals that might be warning flags or positives that explain away some demerits in the focus area.
+2. You don't pursue the area of focus deeply enough and walk away only with a shallow general impression of the candidate.
+3. You let your holistic impression of a person bleed into your evaluation of how well they did in the focus area (especially on something like technical performance).
+
 ## Debriefs
 
 We conduct debriefs after a candidate finishes interviews. The debrief should be scheduled in advance and added to the calendar at the same time we invite the candidate to interviews. The recruiting coordinator will export all feedback as a PDF and share with each of the interviewers prior to the debrief.
