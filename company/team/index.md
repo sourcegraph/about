@@ -741,3 +741,9 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [pdubroy](https://github.com/pdubroy)
 - [patrick@sourcegraph.com](mailto:patrick@sourcegraph.com), [Twitter](https://twitter.com/dubroy), [LinkedIn](https://www.linkedin.com/in/pdubroy), [dubroy.com](https://dubroy.com/) 
 - Patrick is a small-town Canadian kid who's been living in Germany for the past 10 years. Previously, he worked on autonomous driving at Lyft, where he was an enthusiastic user of Sourcegraph. Outside of work, he loves to play soccer, watch [Bayern Munich](https://fcbayern.com/) games, and explore the gravel roads around Munich on his bike.
+
+## Beatrix Woo (she/her)
+- Customer Support Engineer
+- San Diego, CA, USA 
+- - [beatrix@sourcegraph.com](mailto:beatrix@sourcegraph.com), [GitHub](https://github.com/abeatrix), [LinkedIn](https://www.linkedin.com/in/wbeatrix/) , [Pronounce my name 🔊](https://www.youtube.com/watch?v=aZWHsV96NqY)
+- Originally from Hong Kong, Beatrix is now residing in the sunny San Diego with her husband and their Shiba Inu, Goku. She has recently made a career change from the Financial industry after working for Morgan Stanley and Uber to pick up her old passion in coding. She is currently working toward her Master’s Degree in Software Engineering. In her free time, Beatrix likes to spend time with her family, learn about different technologies, build mechanical keyboards, and play League of Legends with friends. 
