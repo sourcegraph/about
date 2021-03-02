@@ -19,6 +19,7 @@ You'll have to get some basics set up in your first few days:
 - [Current BizOps projects](https://github.com/orgs/sourcegraph/projects/63)
 - [CustomerOps project tracker](https://docs.google.com/spreadsheets/d/16YKiI5-jn5xH8t1n7z3pC-4AQfJnOsZLlgJfWj2RlY4/edit#gid=0)
 - [BizOps @ Sourcegraph deck](https://docs.google.com/presentation/d/1B8TIkOsFXUofLKcwu3ZKUuFgSe7si_HNFXj8Qne4_ug/edit#slide=id.gb969c13690_0_15)
+- [BizOps Overview](https://docs.google.com/presentation/d/1B8TIkOsFXUofLKcwu3ZKUuFgSe7si_HNFXj8Qne4_ug/edit#slide=id.gb969c13690_0_15)
 
 ### Understand Sourcegraph communication and documentation standards
 
