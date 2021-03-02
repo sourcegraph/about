@@ -61,9 +61,9 @@ CSEs are the go-to technical team for our CEs, helping customers both pre- and p
 - Customer Support Engineers
   - [Adeola Akinsiku](../../company/team/index.md#adeola-akinsiku)
   - [Warren Gifford](../../company/team/index.md#warren-gifford-he-him)
-  - S. (starting 2021-03-01)
+  - [Stompy Mwendwa](../../company/team/index.md#stompy-mwendwa)
   - [Giselle Northy](../../company/team/index.md#giselle-northy-she-her)
-  - B. (starting 2021-03-01)
+  - [Beatrix Woo](../../company/team/index.md#beatrix-woo-she-her)
   - [Virginia Ulrich](../../company/team/index.md#virginia-ulrich-she-her) (Head of Customer Support)
 - [Quinn Slack](../../company/team/index.md#quinn-slack) (CEO) is leading Customer Engineering for now.
   - We are hiring for VP Customer Engineering and will have the role posted very soon.
