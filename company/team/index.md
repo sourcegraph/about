@@ -754,3 +754,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [airamare01](https://github.com/airamare01)
 - [stompy@sourcegraph.com](mailto:stompy@sourcegraph.com), [@stompy_amare](https://twitter.com/stompy-amare), [stompymwendwa.com](https://stompymwendwa.com), [LinkedIn](https://www.linkedin.com/in/stompy-mwendwa), [pronounce my name 🔊](https://www.name-coach.com/stompy-mwendwa)
 - Stompy is from the Pride of Africa and previously worked in customer success roles prior to joining Sourcegraph. He is a CS graduate and fell in with computers playing around with MS-DOS in the mid-90s. Stompy loves helping people achieve their goals and is a staunch believer of the Swahili proverb: "Kusaidia ni moyo wala si utajiri" - Helping is of the heart, not of the pocket. When he's not working, he loves hopping onto motorcycles and going on adventures, watching/playing basketball(Go Lakers!), playing video games, listening to hip-hop and going out to eat.
+
+## Indradhanush Gupta (he/him)
+- Software Engineer, Core Application
+- Kolkata, India, 🇮🇳
+- GitHub: [indradhanush](https://github.com/indradhanush)
+- [indradhanush@sourcegraph.com](mailto:indradhanush@sourcegraph.com), [Twitter](https://twitter.com/indradhanush92), [Pronounce my name 🔊](https://pronouncenames.com/pronounce/indradhanush), [indradhanush.github.io](https://indradhanush.github.io)
+- Indradhanush is a tinkerer and a lazy one at that. If he ever has to do the same thing twice, chances are he will work on automating it away. He likes to go down rabbit holes thinking about human psychology and obsesses about his audio quality on video calls. Away from work, he suffers from having too many hobbies but is most passionate about playing drums. His other hobbies in order of frequency are playing Dungeons & Dragons once a week with friends, playing on his PS4 once every few weeks, reading a book (science, fiction and fantasy) once every few months and painting once every few years.
