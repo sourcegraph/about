@@ -9,7 +9,6 @@
   - [Customer Issues](../ce/engaging-other-teams.md)
   - [Incidents](incidents/index.md)
   - [Styling UI](./web/styling.md)
-  - [Web-specific testing guide](./web/testing.md)
   - [Product documentation](product_documentation.md)
   - [Continuous releasability](continuous_releasability.md)
   - [Releases](releases/index.md)
