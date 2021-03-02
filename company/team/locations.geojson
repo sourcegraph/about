@@ -433,7 +433,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Malo Marrec"},
+        "name": "Malo Marrec"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -444,7 +445,9 @@
     },
     {
       "type": "Feature",
-      "properties": {"name":"Jean du Plessis"},
+      "properties": {
+        "name": "Jean du Plessis"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -455,7 +458,9 @@
     },
     {
       "type": "Feature",
-      "properties": {"name":"Lisa Tagliaferri"},
+      "properties": {
+        "name": "Lisa Tagliaferri"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -466,7 +471,9 @@
     },
     {
       "type": "Feature",
-      "properties": {"name":"Stompy Mwendwa"},
+      "properties": {
+        "name": "Stompy Mwendwa"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -477,7 +484,12 @@
     },
     {
       "type": "Feature",
-      "properties": {"name":"Tommy O Donnell"},
+      "properties": {
+        "name": "Tommy O Donnell"
+      },
+      "properties": {
+        "name": "Tommy O Donnell"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
