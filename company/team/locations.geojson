@@ -466,6 +466,17 @@
     },
     {
       "type": "Feature",
+      "properties": {"name":"Stompy Mwendwa"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.939599,
+          -1.493488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": {"name":"Tommy O Donnell"},
       "geometry": {
         "type": "Point",
