@@ -3,6 +3,7 @@
 This page contains brief bios of our team. Teammates may also have a personal documentation page in this directory that is named according to their Sourcegraph email address (e.g. you@sourcegraph.com -> you.md).
 
 To add yourself to this page:
+
 1. Accept GitHub's email invite to the Sourcegraph org (you should be a member of [the `Everyone` group](https://github.com/orgs/sourcegraph/teams/everyone) in Sourcegraph's GitHub organization).
 1. Go to the bottom right of this page and click "Edit this page." 
 1. In the edit view, copy the following template, paste it at the end of the edit view, and make it about yourself! Look at others' bios for examples. 
