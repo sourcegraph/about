@@ -12,7 +12,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Engineering
 
-- [Software Engineer - Code Insights - Frontend](https://jobs.lever.co/sourcegraph/73fda68b-c821-4627-af07-41a0850072fb)
 - [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
 - [Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
