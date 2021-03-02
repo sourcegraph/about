@@ -485,7 +485,19 @@
           52.267426934723936
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indradhanush Gupta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.43994140625,
+          22.643798766430393
+        ]
+      }
     }
   ]
 }
-
