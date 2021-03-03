@@ -761,3 +761,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [indradhanush](https://github.com/indradhanush)
 - [indradhanush@sourcegraph.com](mailto:indradhanush@sourcegraph.com), [Twitter](https://twitter.com/indradhanush92), [Pronounce my name 🔊](https://pronouncenames.com/pronounce/indradhanush), [indradhanush.github.io](https://indradhanush.github.io)
 - Indradhanush is a tinkerer and a lazy one at that. If he ever has to do the same thing twice, chances are he will work on automating it away. He likes to go down rabbit holes thinking about human psychology and obsesses about his audio quality on video calls. Away from work, he suffers from having too many hobbies but is most passionate about playing drums. His other hobbies in order of frequency are playing Dungeons & Dragons once a week with friends, playing on his PS4 once every few weeks, reading a book (science, fiction and fantasy) once every few months and painting once every few years.
+
+## Tia Wucher (she/her/hers)
+- Director of Customer Engineering, East
+- Apple Valley, MN, USA
+- GitHub: [tiawucher](https://github.com/tiawucher)
+- [tia@sourcegraph.com](mailto:tia@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tiawucher)
+- Tia is a true Minnesotan who embodies the strange accent and language of the midwest (Ope, Uff da, You Betcha); she even makes hotdish! She enjoys hopping in the camper for a weekend in the outdoors, hiking in Jackson Hole, WY and her precious family - husband Robert, pupson Nelson, pupson Philippe and furcat Sophia. Before joining Sourcegraph, she was the Sr. Director of Technical Success at Optimizely where she supported and lead three teams: Solution Engineers, Technical Support Engineers and Technical Account Managers. Her mission at Sourcegraph is to make our customers and team wildly successful.
