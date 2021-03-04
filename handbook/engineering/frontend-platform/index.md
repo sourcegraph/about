@@ -17,7 +17,7 @@ The Frontend Platform team (part of the Web org) defines and maintains the stand
 
 ## Contact
 
-- [#frontend-platform-chat](https://app.slack.com/client/T02FSM7DL channel or @frontend-platform in Slack.
+- [#frontend-platform-chat](https://app.slack.com/client/T02FSM7DL) channel or @frontend-platform in Slack.
 - [team/frontend-platform](https://github.com/sourcegraph/sourcegraph/labels/team%2Ffrontend-platform) label and [@sourcegraph/frontend-platform](https://github.com/orgs/sourcegraph/teams/frontend-platform) team on GitHub.
 
 ## Goals
