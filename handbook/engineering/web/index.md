@@ -31,7 +31,7 @@ As of March 2021, the Web org is made up multiple teams, and some members who wo
 - [Code Insights](../frontend-platform/index.md)
    - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
    - [Felix Becker](../../../company/team/index.md#felix-becker) ([Engineering Manager](../roles.md#engineering-manager)) {#code-insights-eng}
-   - V.K. (March 2021)
+   - V. K. starting 2021-03-22
    - FQ1 [backend engineer](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 
 ## Contact
