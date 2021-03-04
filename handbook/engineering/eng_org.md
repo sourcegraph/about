@@ -48,11 +48,11 @@ Plans can change!
             - [Team: Campaigns](campaigns/index.md#campaigns-eng)
     - Web org {#web}
         - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](roles.md#engineering-manager))
-        - [Frontend platform](frontend-platform/index.md)
-            - [Team: Frontend platform](frontend-platform/index.md#frontend-platform-eng)
+        - [Frontend platform](web/frontend-platform/index.md)
+            - [Team: Frontend platform](web/frontend-platform/index.md#frontend-platform-eng)
         - [Team: Extensibility](web/index.md#extensibility-eng)
-        - [Code insights](code-insights/index.md)
-            - [Team: Code insights](code-insights/index.md#code-insights-eng)
+        - [Code insights](web/code-insights/index.md)
+            - [Team: Code insights](web/code-insights/index.md#code-insights-eng)
     - Platform and infrastructure {#platform-and-infrastructure}
         - B.C. starting 2020-03-22
         - [Security](security/index.md)

@@ -15,10 +15,10 @@ The Web org owns and maintains several areas of the product:
 As of March 2021, the Web org is made up multiple teams, and some members who work across multiple teams:
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
-- [Jean du Plessis](../../../company/team#jean-du-plessis-he-him) (Director)
+- [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) (Director)
 - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
 - [Frontend platform](../web/frontend-platform/index.md)
-   - [Patrick Dubroy](../../../company/team/index.md#tom-ross-he-him) ([Engineering Manager](../engineering/roles#engineering-manager))
+   - [Patrick Dubroy](../../../company/team/index.md#tom-ross-he-him) ([Engineering Manager](../roles.md#engineering-manager))
       - [Tom Ross](../../../company/team/index.md#tom-ross-he-him)
       - [Felipe Janer](../../../company/team/index.md#felipe-janer-he-him)
       - [Valery Bugakov](../../../company/team/index.md#valery-bugakov-he-him)
@@ -48,7 +48,7 @@ _Updated 2020-01-14_
 
 - As of 2021-01-14, we are no longer accepting [frontend engineer](../hiring/software-engineer-frontend.md) applications to focus on the Frontend Platform work stream. We will be opening applications for JavaScript engineers to apply to work on our Extensibility work stream by the end of January 2021.
 
-_In January 2021, [Code Insights](../code-insights/index.md) moved out of the Web Team into its own team, lead by Felix Becker (EM) and Joel Kwartler (PM)._
+_In January 2021, [Code Insights](code-insights/index.md) moved out of the Web Team into its own team, lead by Felix Becker (EM) and Joel Kwartler (PM)._
 
 ### Extensibility: Sourcegraph extensions and code host integrations
 

@@ -48,7 +48,7 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ### [Web](../../handbook/engineering/web/goals.md#goals)
 
-### [Code Insights](../../handbook/engineering/code-insights/goals.md#goals)
+#### [Code Insights](../../handbook/engineering/web/code-insights/goals.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
 
