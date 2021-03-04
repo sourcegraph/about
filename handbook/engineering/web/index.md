@@ -17,7 +17,7 @@ As of March 2021, the Web org is made up multiple teams, and some members who wo
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
 - [Jean du Plessis](../../../company/team#jean-du-plessis-he-him) (Director)
 - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
-- [Frontend platform](../frontend-platform/index.md)
+- [Frontend platform](../web/frontend-platform/index.md)
    - [Patrick Dubroy](../../../company/team/index.md#tom-ross-he-him) ([Engineering Manager](../engineering/roles#engineering-manager))
       - [Tom Ross](../../../company/team/index.md#tom-ross-he-him)
       - [Felipe Janer](../../../company/team/index.md#felipe-janer-he-him)
@@ -28,7 +28,7 @@ As of March 2021, the Web org is made up multiple teams, and some members who wo
         - [Marek Zaluski](../../../company/team/index.md#marek-zaluski)
         - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
         - [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him)
-- [Code Insights](../frontend-platform/index.md)
+- [Code Insights](../web/frontend-platform/index.md)
    - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
    - [Felix Becker](../../../company/team/index.md#felix-becker) ([Engineering Manager](../roles.md#engineering-manager)) {#code-insights-eng}
    - V. K. starting 2021-03-22

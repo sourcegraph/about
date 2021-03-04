@@ -46,9 +46,9 @@ The handbook is a living document and we expect every teammate to propose improv
   - [Search](engineering/search/index.md)
   - [Security](engineering/security/index.md)
   - [Web org](engineering/web/index.md)
-    - [Code Insights](engineering/code-insights/index.md)
+    - [Code Insights](engineering/web/code-insights/index.md)
     - Extensibility (TODO)
-    - [Frontend Platform](engineering/frontend-platform/index.md)
+    - [Frontend Platform](engineering/web/frontend-platform/index.md)
 
 ### [Customer Engineering](ce/index.md)
 
