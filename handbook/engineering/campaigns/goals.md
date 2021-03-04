@@ -60,7 +60,7 @@ We maintain a [directionally correct roadmap](https://sourcegraph.productboard.c
 # How we built those goals and milestones
 We generally think about campaigns features in terms of 4 themes:
 
-- expand the realm where campaigns can run
-- create many changesets easily
-- manage and track many changesets easily
-- get changesets merged faster
+1. create many changesets easily
+1. track, manage, and merge many changesets easily
+1. expand the realm where campaigns can run
+1. keep campaigns robust and performant
