@@ -18,7 +18,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
 	- [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
 	- [Campaigns](../../handbook/engineering/campaigns/index.md)
     - [Web](../../handbook/engineering/web/index.md)
-        - [Frontend platform](../../handbook/engineering/web/index.md)
+        - [Frontend platform](../../handbook/engineering/frontend-platform/index.md)
         - [Extensibility](../../handbook/engineering/web/index.md)
 		- [Code insights](../../handbook/engineering/code-insights/index.md)
 	- [Security](../../handbook/engineering/security/index.md)
@@ -46,9 +46,10 @@ Plans can change!
             - [Team: Code intelligence](code-intelligence/index.md#code-intelligence-eng)
         - [Campaigns](campaigns/index.md)
             - [Team: Campaigns](campaigns/index.md#campaigns-eng)
-    - Web (WIP name) {#web}
+    - Web org {#web}
         - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](roles.md#engineering-manager))
-        - [Team: Frontend platform](web/index.md#frontend-platform-eng)
+        - [Frontend platform](frontend-platform/index.md)
+            - [Team: Frontend platform](frontend-platform/index.md#frontend-platform-eng)
         - [Team: Extensibility](web/index.md#extensibility-eng)
         - [Code insights](code-insights/index.md)
             - [Team: Code insights](code-insights/index.md#code-insights-eng)
