@@ -18,7 +18,7 @@ PMM should be embedded with the product team as early as possible for P1 launche
 
 ## P2 launch
 P2 launches are reserved for features or small products. P2 launches:
-- Tend to be most interesting to existing Sourcegraph customers
+- Tend to be most interesting to existing Sourcegraph customers or prospects
 - Make an existing Sourcegraph use case better or expand upon something we already do
 - Do not typically introduce a new SKU and are included with the core product (though not necessarily available to all customers/plans)
 - Are typically goaled on product adoption or leads  
