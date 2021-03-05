@@ -510,6 +510,19 @@
           22.643798766430393
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giselle Northy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.841766,
+          45.355389
+        ]
+      }
     }
   ]
 }
