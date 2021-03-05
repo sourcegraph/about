@@ -487,9 +487,6 @@
       "properties": {
         "name": "Tommy O Donnell"
       },
-      "properties": {
-        "name": "Tommy O Donnell"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -508,6 +505,19 @@
         "coordinates": [
           88.43994140625,
           22.643798766430393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Felipe Janer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.52870178222656,
+          3.276944305988395
         ]
       }
     }
