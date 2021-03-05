@@ -510,6 +510,19 @@
           22.643798766430393
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rob Rhyne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3834228515625,
+          33.19847683493303
+        ]
+      }
     }
   ]
 }
