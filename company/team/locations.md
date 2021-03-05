@@ -27,5 +27,4 @@ To add your own location:
         }
     }
     ```
-1. Add your json to the file [locations.geojson](https://github.com/sourcegraph/about/blob/main/company/team/locations.geojson?short_path=b82b3c3) file
 1. Send a pull request to update the file!
