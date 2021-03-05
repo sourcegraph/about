@@ -75,9 +75,13 @@ Effective RFCs contain the following information:
 - Title that includes the RFC number.
   - The title is inlined in the Google Doc so that it is more visible and will not disappear if exported to a different format.
 - Metadata about the state of the RFC. Including but not limited to:
-  - **Editor:** A single person responsible for iterating on the content of the RFC.
-     - Generally, this is the author of the Google Doc but it is possible for ownership to be transferred.
-     - If there are multiple authors, they can be listed separately (e.g. under _Authors_), but a single person should be chosen and listed as the editor.
+  - **Editor:** The single person who is directly responsible for the content in the RFC.
+     - The editor ensures that:
+        - The RFC is well written.
+        - The right people review the RFC.
+        - Comments and feedback are addressed.
+        - The RFC progresses toward a resolution.
+     - The editor frequently authors most of the document, but that is not a strict requirement. They may delegate responsibilities to other teammates.
   - **Status:** A description of the current state or outcome of the RFC. Illustrative examples:
      - "Still drafting this. I expect to share this with the web team September 6."
      - "Collecting feedback. I will update the RFC on September 8 based on the feedback collected.
