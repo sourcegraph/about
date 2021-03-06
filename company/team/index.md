@@ -71,10 +71,10 @@ To add yourself to this page:
 
 ## Eric Brody-Moore
 
-- Growth & Business Operations
-- San Francisco, CA 🇺🇸
-- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ericbm/), [ebrodymoore](https://github.com/ebrodymoore)
-- Eric splits his weekends eating his way through the Bay Area and getting out of town to explore the west coast nature, snowboard or golf. Prior to Sourcegraph, Eric was the first hire at Drift Marketplace, where he built the finance and analytics functions, and Deloitte Consulting’s strategy and operations practice. Eric graduated with a BS in Finance from the University of Washington.
+- Business Operations Manager
+- Nashville, TN, USA 🇺🇸
+- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [@ebrodymoore](https://github.com/ebrodymoore), [LinkedIn](https://www.linkedin.com/in/ericbm/) 
+- Eric enjoys golfing, snowboarding and just about anything else outdoors. Prior to Sourcegraph, Eric has worked across strategy & ops, finance and analytics at Drift and Deloitte Consulting. He was going to end his bio here, but had to mention his deep, deep love for his hometown Michigan Wolverines.
 
 ## Keegan Carruthers-Smith
 
