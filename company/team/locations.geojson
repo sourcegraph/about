@@ -501,19 +501,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Beatrix Woo"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -117.161087,
-          32.715736
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Indradhanush Gupta"
       },
       "geometry": {
