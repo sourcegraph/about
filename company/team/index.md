@@ -71,10 +71,10 @@ To add yourself to this page:
 
 ## Eric Brody-Moore
 
-- Growth & Business Operations
-- San Francisco, CA 🇺🇸
-- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ericbm/), [ebrodymoore](https://github.com/ebrodymoore)
-- Eric splits his weekends eating his way through the Bay Area and getting out of town to explore the west coast nature, snowboard or golf. Prior to Sourcegraph, Eric was the first hire at Drift Marketplace, where he built the finance and analytics functions, and Deloitte Consulting’s strategy and operations practice. Eric graduated with a BS in Finance from the University of Washington.
+- Business Operations Manager
+- Nashville, TN, USA 🇺🇸
+- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [@ebrodymoore](https://github.com/ebrodymoore), [LinkedIn](https://www.linkedin.com/in/ericbm/) 
+- Eric enjoys golfing, snowboarding and just about anything else outdoors. Prior to Sourcegraph, Eric has worked across strategy & ops, finance and analytics at Drift and Deloitte Consulting. He was going to end his bio here, but had to mention his deep, deep love for his hometown Michigan Wolverines.
 
 ## Keegan Carruthers-Smith
 
@@ -126,14 +126,6 @@ To add yourself to this page:
 - Brest, Brittany, France 🇫🇷
 - [loic@sourcegraph.com](mailto:loic@sourcegraph.com), [lguychard](https://github.com/lguychard), [LinkedIn](https://www.linkedin.com/in/lo%C3%AFc-guychard-749b8152/)
 - Loïc loves oceanside living and long bike rides. He started his career as a linguist, before transitioning to software engineering while working at Dashlane.
-
-## Aileen Agricola (she/her)
-
-- First name pronounced eye-LEAN
-- Senior Digital Marketing Manager
-- San Carlos, CA and Bainbridge Island, WA USA 🇺🇸
-- [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
-- Aileen is a techie at heart with a foundation in IT and databases. Her first startup experience was at Patrol Software where she got the startup buzz to try out multiple roles in customer support, product management, business development and sales. Most recently, she built the website for [Neo4j](https://neo4j.com) and learned that everything is connected. In her spare time she keeps active by hiking, running or biking. She also loves to travel and binges the best in streaming tv.
 
 ## Dan Adler (he/him)
 
