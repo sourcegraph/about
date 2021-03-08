@@ -44,8 +44,8 @@ Plans can change!
         - [Team: Search product](search/index.md#search-product-eng)
         - [Code intelligence](code-intelligence/index.md)
             - [Team: Code intelligence](code-intelligence/index.md#code-intelligence-eng)
-        - [Campaigns](campaigns/index.md)
-            - [Team: Campaigns](campaigns/index.md#campaigns-eng)
+        - [Batch changes](batch-changes/index.md)
+            - [Team: Batch changes](batch-changes/index.md#batch-changes-eng)
     - Web org {#web}
         - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](roles.md#engineering-manager))
         - [Code insights](web/code-insights/index.md)
