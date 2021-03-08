@@ -1,4 +1,4 @@
-<img src="../logo.svg" alt="Sourcegraph Web Team Logo" style="width: 35%; float: right; margin-left: 1rem">
+<img src="../logo.svg" alt="Sourcegraph Web Team Logo" style="width: 35%; max-width: 200px; float: right; margin-left: 1rem;">
 
 # Frontend Platform team
 
@@ -13,7 +13,7 @@ The Frontend Platform team (part of the Web org) defines and maintains the stand
 - [Patrick Dubroy](../../../../company/team/index.md#patrick-dubroy-he-him) ([Engineering Manager](../../../engineering/roles/index.md#engineering-manager)) {#frontend-platform-eng}
     - [Tom Ross](../../../../company/team/index.md#tom-ross-he-him)
     - [Felipe Janer](../../../../company/team/index.md#felipe-janer-he-him)
-    - [Valery Bugakov](../../../../company/team/index.md#valery-bugakov-he-him)
+    - [Valery Bugakov](../../../../company/team/index.md#valery-bugakov-he-him) (moves to Code Insights in FQ2)
 
 ## Contact
 
