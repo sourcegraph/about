@@ -16,7 +16,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
 - [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering)
 	- [Search](../../handbook/engineering/search/index.md)
 	- [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
-	- [Campaigns](../../handbook/engineering/campaigns/index.md)
+	- [Batch changes](../../handbook/engineering/batch-changes/index.md)
     - [Web](../../handbook/engineering/web/index.md)
         - [Frontend platform](../../handbook/engineering/web/frontend-platform/index.md)
         - [Extensibility](../../handbook/engineering/web/index.md)

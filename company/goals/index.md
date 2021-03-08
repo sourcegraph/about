@@ -34,7 +34,7 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ### [Engineering leadership](../../handbook/engineering/leadership/index.md#goals)
 
-### [Campaigns](../../handbook/engineering/campaigns/goals.md#goals)
+### [Batch changes](../../handbook/engineering/batch-changes/goals.md#goals)
 
 ### [Core application](../../handbook/engineering/core-application/goals.md#goals)
 
