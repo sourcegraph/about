@@ -1,4 +1,6 @@
-# Campaigns team
+# Batch changes team
+
+**We're in the process of renaming "Campaigns" to "Batch changes"**
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/campaigneros.png"  align=right alt="Campaigñeros Logo">
 
