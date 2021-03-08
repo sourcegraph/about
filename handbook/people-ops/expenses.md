@@ -29,7 +29,7 @@ You will receive an invitation via email to our Expensify organization during yo
   - Home office set-up purchases (chairs, desks, etc.) should be categorized as "Furniture & Office"
   - Note: there is no designated "home office setup" category in Expensify. Each expensed item should be categorized individually. So even though we have one home office setup budget, it spans across multiple categories.
 
-## New teammates (Based outside of the US)
+## Teammates based outside of the US
 
 Contractors should also submit expense reports promptly at the end of each month, and include the expenses in their [monthly invoices](https://about.sourcegraph.com/handbook/people-ops/invoices). Once the expenses are approved, the full invoice can be paid.
 
