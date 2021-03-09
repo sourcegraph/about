@@ -177,7 +177,7 @@ export default ((props: any) => (
                             time to recovery. Find breaking changes, with diff and commit search returning all matching
                             search results to identify everywhere a pattern, package, or API is used. Mitigate tech
                             security and compliance risks with saved searches to alert for known vulnerabilities and
-                            risky code changes. Batch changes then automate the process of fixing, merging, and deploying
+                            risky code changes. Then, use Batch Changes to automate the process of fixing, merging, and deploying
                             the necessary changes across codebases.
                         </p>
                     </div>
@@ -270,7 +270,7 @@ export default ((props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Fix things quickly and safely</h2>
                         <p>
-                            Teams run batch changes to swiftly and securely remove legacy code, fix critical security
+                            Teams use Batch Changes to swiftly and securely remove legacy code, fix critical security
                             issues, pay down tech debt, and make large-scale code changes and refactors across the
                             entire codebase:
                             <ul>
