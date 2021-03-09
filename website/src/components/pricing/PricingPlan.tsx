@@ -162,7 +162,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     planProperties,
     features,
 
-    beforeBatchesFragment: beforeBatchesFragment,
+    beforeBatchesFragment,
 
     buttonLabel,
     buttonClassName,
