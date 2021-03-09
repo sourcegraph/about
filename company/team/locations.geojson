@@ -487,9 +487,6 @@
       "properties": {
         "name": "Tommy O Donnell"
       },
-      "properties": {
-        "name": "Tommy O Donnell"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -521,6 +518,19 @@
         "coordinates": [
           -117.3834228515625,
           33.19847683493303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {  
+        "name": "Inés Roitman"
+       },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1625471115112305,
+          41.383280998305466
         ]
       }
     }
