@@ -322,7 +322,7 @@ with your thoughts. We're still working on performance and usability enhancement
 so that you can search your code and not just popular projects, so stay tuned!
 In the meantime, you can find an all-in-one config for replacing the patterns on your local machine
 at [comby-tools/go-patterns](https://github.com/comby-tools/go-patterns). If you want to make large scale,
-org-wide changes, talk to us about [campaigns](https://docs.sourcegraph.com/campaigns).
+org-wide changes, talk to us about [Batch Changes](https://docs.sourcegraph.com/campaigns).
 And if you find code checking valuable and want to learn more about our work at Sourcegraph, reach us at
 <feedback@sourcegraph.com>. Happy searching!
 
