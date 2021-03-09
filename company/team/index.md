@@ -5,8 +5,8 @@ This page contains brief bios of our team. Teammates may also have a personal do
 To add yourself to this page:
 
 1. Accept GitHub's email invite to the Sourcegraph org (you should be a member of [the `Everyone` group](https://github.com/orgs/sourcegraph/teams/everyone) in Sourcegraph's GitHub organization).
-1. Go to the bottom right of this page and click "Edit this page." 
-1. In the edit view, copy the following template, paste it at the end of the edit view, and make it about yourself! Look at others' bios for examples. 
+1. Go to the bottom right of this page and click "Edit this page."
+1. In the edit view, copy the following template, paste it at the end of the edit view, and make it about yourself! Look at others' bios for examples.
 1. Under "Commit changes" at the bottom of the page, replace the "Update index.md" text with a summary of your change, e.g., Add Alex to team page.
 1. Click the green "Commit changes" button. If you do not see the green "Commit Changes" button, refer to step 1. Successful changes will become visible shortly (but not immediately).
 
@@ -73,7 +73,7 @@ To add yourself to this page:
 
 - Business Operations Manager
 - Nashville, TN, USA 🇺🇸
-- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [@ebrodymoore](https://github.com/ebrodymoore), [LinkedIn](https://www.linkedin.com/in/ericbm/) 
+- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [@ebrodymoore](https://github.com/ebrodymoore), [LinkedIn](https://www.linkedin.com/in/ericbm/)
 - Eric enjoys golfing, snowboarding and just about anything else outdoors. Prior to Sourcegraph, Eric has worked across strategy & ops, finance and analytics at Drift and Deloitte Consulting. He was going to end his bio here, but had to mention his deep, deep love for his hometown Michigan Wolverines.
 
 ## Keegan Carruthers-Smith
@@ -318,7 +318,7 @@ To add yourself to this page:
 
 ## Chris Pine (he/she/they/Chris)
 
-- Engineering Manager, Campaigns
+- Engineering Manager, Batch Changes
 - Portland, OR, USA 🇺🇸
 - [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [chrispine](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
 - Name pronunciation: /[kɹɪs paɪn](http://ipa-reader.xyz/?text=k%C9%B9%C9%AAs%20pa%C9%AAn&voice=Joanna)/
@@ -628,7 +628,7 @@ To add yourself to this page:
 - Oakland, CA, USA 🇺🇸
 - GitHub: [kyfli](https://github.com/kyfli)
 - [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
-- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through. 
+- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through.
 
 ## Caitlin Moran (she/her)
 
@@ -636,7 +636,7 @@ To add yourself to this page:
 - Brooklyn, NY USA 🇺🇸
 - GitHub: [Caitlinsourcegraph](https://github.com/caitlinsourcegraph)
 - [Caitlin@sourcegraph.com](mailto:caitlin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/caitlincarducci/)
-- Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC! 
+- Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC!
 
 ## Miles Mulcare (he/him)
 
@@ -663,11 +663,11 @@ To add yourself to this page:
 - Lisa wants to make tech more accessible through education and community building. She previously led the Developer Education/Community team at DigitalOcean, and wrote very popular open access books on Python programming and machine learning. An interdisciplinary researcher and teacher, Lisa earned her PhD from the City University of New York, and held postdoctoral positions at MIT and Harvard. A native New Yorker, she is interested in both public transportation and complicated street parking signage.
 
 ## Jon Kishpaugh (he/him)
-- Account Executive 
+- Account Executive
 - San Francisco, CA, USA
 - GitHub: [JonKish](https://github.com/jonkish)
 - jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
-- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
+- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active.
 
 ## Dudley Nostrand
 - Senior Manager, Value Engineering
@@ -688,7 +688,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Director of Legal
 - San Francisco, CA, USA 🇺🇸
 - [tammy@sourcegraph.com](mailto:tammy@sourcegraph.com)
-- Tammy joins Sourcegraph after years of counseling technology companies on matters including products, litigation, commercial contracts, data privacy, M&A, startup financing, and regulatory filings and investigations. She enjoys creative writing, reading fiction, solo traveling, watching basketball, and baking sourdough during the pandemic. 
+- Tammy joins Sourcegraph after years of counseling technology companies on matters including products, litigation, commercial contracts, data privacy, M&A, startup financing, and regulatory filings and investigations. She enjoys creative writing, reading fiction, solo traveling, watching basketball, and baking sourdough during the pandemic.
 
 ## Warren Gifford (he/him)
 
@@ -731,14 +731,14 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Engineering Manager, Frontend Platform
 - Munich, Germany 🇩🇪
 - GitHub: [pdubroy](https://github.com/pdubroy)
-- [patrick@sourcegraph.com](mailto:patrick@sourcegraph.com), [Twitter](https://twitter.com/dubroy), [LinkedIn](https://www.linkedin.com/in/pdubroy), [dubroy.com](https://dubroy.com/) 
+- [patrick@sourcegraph.com](mailto:patrick@sourcegraph.com), [Twitter](https://twitter.com/dubroy), [LinkedIn](https://www.linkedin.com/in/pdubroy), [dubroy.com](https://dubroy.com/)
 - Patrick is a small-town Canadian kid who's been living in Germany for the past 10 years. Previously, he worked on autonomous driving at Lyft, where he was an enthusiastic user of Sourcegraph. Outside of work, he loves to play soccer, watch [Bayern Munich](https://fcbayern.com/) games, and explore the gravel roads around Munich on his bike.
 
 ## Beatrix Woo (she/her)
 - Customer Support Engineer
-- San Diego, CA, USA 
+- San Diego, CA, USA
 - - [beatrix@sourcegraph.com](mailto:beatrix@sourcegraph.com), [GitHub](https://github.com/abeatrix), [LinkedIn](https://www.linkedin.com/in/wbeatrix/) , [Pronounce my name 🔊](https://www.youtube.com/watch?v=aZWHsV96NqY)
-- Originally from Hong Kong, Beatrix is now residing in the sunny San Diego with her husband and their Shiba Inu, Goku. She has recently made a career change from the Financial industry after working for Morgan Stanley and Uber to pick up her old passion in coding. She is currently working toward her Master’s Degree in Software Engineering. In her free time, Beatrix likes to spend time with her family, learn about different technologies, build mechanical keyboards, and play League of Legends with friends. 
+- Originally from Hong Kong, Beatrix is now residing in the sunny San Diego with her husband and their Shiba Inu, Goku. She has recently made a career change from the Financial industry after working for Morgan Stanley and Uber to pick up her old passion in coding. She is currently working toward her Master’s Degree in Software Engineering. In her free time, Beatrix likes to spend time with her family, learn about different technologies, build mechanical keyboards, and play League of Legends with friends.
 
 ## Stompy Mwendwa
 - Customer Support Engineer
@@ -751,7 +751,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Sales Development Rep
 - Boston, MA, USA :us:
 - [samcregg@sourcegraph.com](mailto:samcregg@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sam-cregg/)
-- Sam enjoys golfing, boating and being outdoors. Prior to Sourcegraph, Sam  worked at IBM in a variety of sales roles including Hybrid Cloud, IoT and Blockchain. He loves to travel and hopes to do more in the coming years. He is a big Boston sports fan who is orginally from Topsfield, MA but now lives in the North End of Boston.  
+- Sam enjoys golfing, boating and being outdoors. Prior to Sourcegraph, Sam  worked at IBM in a variety of sales roles including Hybrid Cloud, IoT and Blockchain. He loves to travel and hopes to do more in the coming years. He is a big Boston sports fan who is orginally from Topsfield, MA but now lives in the North End of Boston.
 
 ## Indradhanush Gupta (he/him)
 - Software Engineer, Core Application

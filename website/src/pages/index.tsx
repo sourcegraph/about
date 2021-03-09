@@ -190,7 +190,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <h2>Make large-scale code changes</h2>
                         <p>
-                            Remove legacy code, fix critical security issues, and pay down tech debt. Run batch changes to
+                            Remove legacy code, fix critical security issues, and pay down tech debt. Use Batch Changes to
                             compute diffs and create branches and pull requests across multiple repositories. With
                             Sourcegraph, teams move fast and fix things, safely.
                         </p>
