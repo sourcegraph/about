@@ -766,3 +766,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [tiawucher](https://github.com/tiawucher)
 - [tia@sourcegraph.com](mailto:tia@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tiawucher)
 - Tia is a true Minnesotan who embodies the strange accent and language of the midwest (Ope, Uff da, You Betcha); she even makes hotdish! She enjoys hopping in the camper for a weekend in the outdoors, hiking in Jackson Hole, WY and her precious family - husband Robert, pupson Nelson, pupson Philippe and furcat Sophia. Before joining Sourcegraph, she was the Sr. Director of Technical Success at Optimizely where she supported and lead three teams: Solution Engineers, Technical Support Engineers and Technical Account Managers. Her mission at Sourcegraph is to make our customers and team wildly successful.
+
+## Sarah Reece (she/her)
+- Director, Demand Generation
+- Winston Salem, NC, USA
+- GitHub: [sarah-reece](https://github.com/sarah-reece)
+- [sarah@sourcegraph.com](mailto:sarah@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sbethreece/)
+- Sarah is a North Carolina native, tracking her roots all the way back to legendary pioneers and indigenous peoples. While her roots go deep, her wings spread wide. She's lived, worked, and traveled all over the world. She's intensely curious and comes alive when learning new things and connecting previously unconnected dots. Hobbies include underestimating how long a hike will take, acting as if she's a sommelier, and lurking financial subreddits.
