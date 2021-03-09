@@ -148,7 +148,7 @@ To address these issues, we moved the queue data from Redis into PostgreSQL. Thi
 
 For a while, the lsif-server was accessible only through an undocumented proxy in the Sourcegraph frontend service. This proxy accepted uploads and served code navigation queries. The only consumers of this API were first-party Sourcegraph extensions like [sourcegraph/go](https://sourcegraph.com/extensions/sourcegraph/go) and [sourcegraph/typescript](https://sourcegraph.com/extensions/sourcegraph/typescript).
 
-Adding a GraphQL API enabled the LSIF backend to be used by other parts of Sourcegraph, such as the nascent [Campaigns](https://docs.sourcegraph.com/campaigns) feature and the currently in-progress [Code Insights](https://about.sourcegraph.com/blog/sourcegraph-3.17#product-preview-code-insights), and also to third-party Sourcegraph extension authors and third-party API consumers. As the functionality of the LSIF backend continues to grow (we've recently added support for [diagnostics](https://github.com/sourcegraph/sourcegraph/pull/11233)), so do the possibilities for users of this API.
+Adding a GraphQL API enabled the LSIF backend to be used by other parts of Sourcegraph, such as the nascent [Batch Changes](https://docs.sourcegraph.com/campaigns) feature and the currently in-progress [Code Insights](https://about.sourcegraph.com/blog/sourcegraph-3.17#product-preview-code-insights), and also to third-party Sourcegraph extension authors and third-party API consumers. As the functionality of the LSIF backend continues to grow (we've recently added support for [diagnostics](https://github.com/sourcegraph/sourcegraph/pull/11233)), so do the possibilities for users of this API.
 
 ![architecture diagram](https://sourcegraphstatic.com/lsif-arch-5.png)
 
