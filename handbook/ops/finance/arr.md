@@ -6,8 +6,6 @@ Twice every month the finance team closes the books and reports the latest ARR t
 
 ## Definitions
 
-See [definitions of ARR, IARR, new IARR, expansion IARR, and bookings](../../sales/index.md#definitions) in the sales handbook.
-
 ### New IARR
 
 - Throughout each month, finance will take any announced sales and add them to the ARR tracker spreadsheet on the Deals tab. Whenever a sale is announced in the #sales Slack channel, before adding it to the ARR tracker spreadsheet, finance will respond to the AE with their assumptions for the following values, and sales must confirm in writing that each of these is correct:
