@@ -747,6 +747,12 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [stompy@sourcegraph.com](mailto:stompy@sourcegraph.com), [@stompy_amare](https://twitter.com/stompy-amare), [stompymwendwa.com](https://stompymwendwa.com), [LinkedIn](https://www.linkedin.com/in/stompy-mwendwa), [pronounce my name 🔊](https://www.name-coach.com/stompy-mwendwa)
 - Stompy is from the Pride of Africa and previously worked in customer success roles prior to joining Sourcegraph. He is a CS graduate and fell in with computers playing around with MS-DOS in the mid-90s. Stompy loves helping people achieve their goals and is a staunch believer of the Swahili proverb: "Kusaidia ni moyo wala si utajiri" - Helping is of the heart, not of the pocket. When he's not working, he loves hopping onto motorcycles and going on adventures, watching/playing basketball(Go Lakers!), playing video games, listening to hip-hop and going out to eat.
 
+## Sam Cregg
+- Sales Development Rep
+- Boston, MA, USA :us:
+- [samcregg@sourcegraph.com](mailto:samcregg@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sam-cregg/)
+- Sam enjoys golfing, boating and being outdoors. Prior to Sourcegraph, Sam  worked at IBM in a variety of sales roles including Hybrid Cloud, IoT and Blockchain. He loves to travel and hopes to do more in the coming years. He is a big Boston sports fan who is orginally from Topsfield, MA but now lives in the North End of Boston.  
+
 ## Indradhanush Gupta (he/him)
 - Software Engineer, Core Application
 - Kolkata, India, 🇮🇳
