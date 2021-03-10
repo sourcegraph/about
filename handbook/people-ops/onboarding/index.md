@@ -27,7 +27,7 @@ This is a basic breakdown of our expectations for providing a smooth onboarding 
 - New hire has the necessary support from their peers, manager, and People team (regular 1-1s, shadowing...)
 - New hire knows where to find answers to their questions 
 - New hire experiences no logistical challenges (payroll, expenses, benefits, setting up accounts or other systems...)
-- The onboarding checklist manageable and easy to navigate by new hire
+- The onboarding checklist is manageable and easy to navigate by new hire
 
 ### Onboarding experience
 We will be putting surveys in place to collect feedback from all new teammates to make sure that their onboarding experience is properly equipping them with the support and resources necessary for them to be successful in their new role. 
