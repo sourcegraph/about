@@ -702,10 +702,9 @@
           45.355389
         ]
       } 
-    }    
-     }
+    },
     { 
-   "type": "Feature",
+      "type": "Feature",
       "properties": {
         "name": "Virginia Ulrich"
       },
@@ -714,5 +713,8 @@
         "coordinates": [
           -122.658722,
           45.512230
+        ]
+      }
+    }
   ]
 }
