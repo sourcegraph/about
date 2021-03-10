@@ -11,27 +11,15 @@ Time periods we track:
 
 ## Growth metric user categories
 
-We track the following categories in [pings](../../../../sourcegraph/doc/admin/pings.md) for each month. The explanations are framed as though we're talking about the current month, but apply to any given month.
+We track the following categories in pings for each month. The explanations are framed as though we're talking about the current month, but apply to any given month.
 
-### Retained
-
-Users who were active last month *and* this month
-
-### Churned
-
-Users who were active last month but not this month
-
-### Resurrected
-
-Users who were *not* active last month but are active this month
-
-### Created
-
-Users whose account was created this month
-
-### Deleted
-
-Users whose account was deleteed this month
+| Metric      | Description                                                      |
+|-------------|------------------------------------------------------------------|
+| Retained    | Users who were active last month *and* this month                |
+| Churned     | Users who were active last month but not this month              |
+| Resurrected | Users who were *not* active last month but are active this month |
+| Created     | Users whose account was created this month                       |
+| Deleted     | Users whose account was deleted this month                       |
 
 ## Engagement ratios
 
