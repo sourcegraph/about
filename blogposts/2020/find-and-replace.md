@@ -518,7 +518,7 @@ released publicly.
 
 ### Campaigns
 
-_**Note:** Campaigns have evolved since this post was written, and we now call them batch changes. See [our docs](https://docs.sourcegraph.com/campaigns) for the latest._
+_**Note:** Campaigns have evolved since this post was written, and we now call them batch changes. See [our docs](https://docs.sourcegraph.com/batch_changes) for the latest._
 
 After hearing the same thing over and over again from different development teams, we decided to try
 to build a general solution for this hairy problem of large-scale code transformation. Starting in
