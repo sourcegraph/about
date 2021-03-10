@@ -12,8 +12,11 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Engineering
 
+- [Director of Engineering - Global code graph](https://jobs.lever.co/sourcegraph/92a29215-e44f-4f2e-b147-73a8cb756d09)
 - [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
+- Frontend engineer - Search (will be posted soon)
+- Very experienced security leader or advisor (will be posted soon)
 
 ### Product
 
