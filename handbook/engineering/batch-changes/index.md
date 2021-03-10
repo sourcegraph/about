@@ -126,6 +126,7 @@ The Campaigns team is the current owner of [src-cli](https://github.com/sourcegr
 - [Supporting Campaigns](supporting-batch-changes.md)
 - [Campaign's Drive Folder (private)](https://drive.google.com/drive/u/0/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn)
 - [Campaign's Product Marketing Brief](https://docs.google.com/document/d/1yQpCKF50gx8_T-KDnU4s9TjW6fZpMUfWLF2h4xSM8jk)
+- [Batch Changes AE training deck (private)](https://docs.google.com/presentation/d/1N50kk1N712lvsWI_BrGB4WH8LHnOVYrkxqvRS9WubuA/edit#slide=id.gc5f60dc480_0_12)
 
 ## Growth plan
 
