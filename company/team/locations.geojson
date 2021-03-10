@@ -676,6 +676,19 @@
           44.9773
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steph Hay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.451424,
+          33.983841
+        ]
+      }
+    }    
   ]
 }
