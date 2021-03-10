@@ -195,7 +195,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/campaigns">
+                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/batch_changes">
                                 Batch Changes documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
@@ -233,7 +233,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <p>
                             Aggregate data from connected external services, and enhance it with code intelligence
                             to give you the information you care about. Take direct actions on these insights with&nbsp;
-                            <Link to="https://docs.sourcegraph.com/campaigns">Batch Changes</Link>, like proposing
+                            <Link to="https://docs.sourcegraph.com/batch_changes">Batch Changes</Link>, like proposing
                             an automated refactor to fix a problem detected through static analysis.
                         </p>
                         <div className="pt-1">
