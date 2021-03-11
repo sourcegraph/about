@@ -72,3 +72,7 @@ Collaborating across timezones requires regular communication to keep each other
 We use [Geekbot](https://geekbot.com/) to facilitate all this and these updates are purely for coordination within the team (as opposed to for external stakeholders). At the start of each working day, Geekbot will ask each teammate a set of questions and the responses will be posted in the [**#web-org-teams**] Slack channel.
 
 All teammates are expected to be part of this channel, and should read the updates, to learn what your teammates have been working on, and check if they need your help.
+
+### Status updates
+
+Each Engineering Manager of the teams in the org is responsible for sending out a [status update](../leadership/index.md#status-updates) by the Monday following the team's retrospective.
