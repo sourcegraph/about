@@ -18,7 +18,7 @@ Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) 
 
 ## Developing locally
 
-[Click here to develop the handbook locally](#Handbook)
+Developing the static site locally is separate from developing the handbook. [Read the Handbook section](#Handbook) to learn how to develop the handbook locally.
 
 In a terminal, change into the `website` directory, and run:
 

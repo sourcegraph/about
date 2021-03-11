@@ -21,6 +21,32 @@ This document contains the goals and work log for the search team's [2-week iter
   - Finish implement `contains` filter predicate (see [#18584](https://github.com/sourcegraph/sourcegraph/issues/18584)) and pings metrics
   - Document `select` and `contains` usage and examples (ship this release)
 
+### Enterprise contexts
+
+- **Owner(s):** Rok
+- **Outcomes:**
+    - RFC reviewed and approved
+    - MVP ready to be shipped (ideally within the 3.26 release)
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Streaming
+
+- **Owner(s):** Stefan, Keegan, Juliana
+- **Outcomes:**
+  - Streaming defaults to on for all environments.
+  - Streaming release blockers fixed.
+
+### Exhaustive
+
+- **Owner(s):** Stefan, Keegan
+- **Outcomes:**
+  - Enable zoekt end to end streaming for everyone on sourcegraph.com. [#18303](https://github.com/sourcegraph/sourcegraph/issues/18303)
+  - Result limit and counts improvements (detailed breakdown, display limits, etc). [#18297](https://github.com/sourcegraph/sourcegraph/issues/18297)
+  - src-cli for streaming done. For now what is missing is `-json` support.
+  - Implement scheduler in Zoekt.
+  - Initial release plan shared.
+
 ## 2021-02-22 to 2021-03-05
 
 ### Enable mandatory linting

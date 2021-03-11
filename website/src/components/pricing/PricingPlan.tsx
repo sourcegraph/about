@@ -7,7 +7,7 @@ import { PricingPlanFeature } from './PricingPlanFeature'
 export interface Features {
     codeSearch: true
     codeIntelligence: true
-    codeChangeManagementCampaigns: boolean
+    batchChanges: boolean
     codeHostIntegration: true
     api: true
     selfHosted: true
@@ -41,10 +41,10 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         label: 'Code intelligence',
         description: 'Code navigation for 30+ languages, with hovers, definitions, and references across repositories',
     },
-    codeChangeManagementCampaigns: {
-        label: 'Campaigns (beta)',
+    batchChanges: {
+        label: 'Batch changes',
         description:
-            'Code change management campaigns help coordinate large-scale changes across many repositories. Campaigns is in beta. During beta, it is available in all plans at no extra charge. After the beta, campaigns will be a paid add-on for all plans.',
+            'Batch changes help coordinate large-scale changes across many repositories. Batch changes are a paid add-on for all plans.',
     },
     codeHostIntegration: {
         label: 'Code host integrations',
@@ -122,7 +122,7 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'selfHosted',
     'userAndAdminRoles',
     'singleSignOn',
-    'codeChangeManagementCampaigns',
+    'batchChanges',
     'multipleCodeHosts',
     'repositoryPermissions',
     'optimizedRepositoryUpdates',
@@ -143,7 +143,7 @@ interface Props {
     price: React.ReactFragment
     features: Features
 
-    beforeCampaignsFragment: React.ReactFragment
+    beforeBatchesFragment: React.ReactFragment
 
     buttonLabel: string
     buttonClassName: string
@@ -162,7 +162,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     planProperties,
     features,
 
-    beforeCampaignsFragment,
+    beforeBatchesFragment,
 
     buttonLabel,
     buttonClassName,
@@ -190,7 +190,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
             <ol className="list-group list-group-flush py-3">
                 {FEATURE_ORDER.map(feature => (
                     <>
-                        {feature === 'codeChangeManagementCampaigns' ? beforeCampaignsFragment : null}
+                        {feature === 'batchChanges' ? beforeBatchesFragment : null}
                         <PricingPlanFeature
                             key={feature}
                             info={FEATURE_INFO[feature]}

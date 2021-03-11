@@ -12,9 +12,11 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Engineering
 
+- [Director of Engineering - Global code graph](https://jobs.lever.co/sourcegraph/92a29215-e44f-4f2e-b147-73a8cb756d09)
 - [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
-- [Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+- [Frontend Engineer - Search](https://jobs.lever.co/sourcegraph/73c64b38-9bd9-41cc-bc8b-e8d87d91abac)
+- Very experienced security leader or advisor (will be posted soon)
 
 ### Product
 
@@ -48,7 +50,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Operations, finance, and legal
 
-- [Finance & Operations Analyst](https://jobs.lever.co/sourcegraph/35d6628e-9e9a-4385-a4ea-67e411732cb4)
 - [Tech Ops Analyst](https://jobs.lever.co/sourcegraph/40e2f3cc-9cc1-4753-8ab1-c1269e531cf3)
 
 ### People Operations and Talent

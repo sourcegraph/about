@@ -16,7 +16,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
 - [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering)
 	- [Search](../../handbook/engineering/search/index.md)
 	- [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
-	- [Campaigns](../../handbook/engineering/campaigns/index.md)
+	- [Batch changes](../../handbook/engineering/batch-changes/index.md)
     - [Web](../../handbook/engineering/web/index.md)
         - [Frontend platform](../../handbook/engineering/web/frontend-platform/index.md)
         - [Extensibility](../../handbook/engineering/web/index.md)
@@ -29,23 +29,18 @@ If you are already at Sourcegraph and see a current or future opportunity that y
 
 This is the current plan for our engineering organization and growth.
 
-Hiring plans are neither targets nor constraints, they are merely forecasts given current information. They should be continuously kept up-to-date.
-
-- If we find an awesome candidate for a role we weren't planning on hiring for until later, and we think we have the capacity to onboard that person now, we'll hire that awesome candidate now!
-- If we planned to grow a team faster, but we're seeing signals that we need to slow down growth (for example: new hires having difficulty onboarding, team doesn't have clear goals or progress), then we will slow or pause that team's hiring until those issues are resolved.
-
-Plans can change!
+Plans can change given new information!
 
 - [Beyang Liu](../../../company/team/index.md#beyang-liu), CTO
 - [Nick Snyder](../../../company/team/index.md#nick-snyder-he-him), [VP Engineering](roles.md#vp-engineering)
-    - Search and replace (WIP name) {#search-and-replace}
-        - FQ2 Director of Engineering, Nick acting manager until then.
+    - Global code graph {#global-code-graph}
+        - FQ2 [Director of Engineering](https://jobs.lever.co/sourcegraph/92a29215-e44f-4f2e-b147-73a8cb756d09), Nick acting manager until then.
         - [Team: Search core backend](search/index.md#search-core-backend-eng)
         - [Team: Search product](search/index.md#search-product-eng)
         - [Code intelligence](code-intelligence/index.md)
             - [Team: Code intelligence](code-intelligence/index.md#code-intelligence-eng)
-        - [Campaigns](campaigns/index.md)
-            - [Team: Campaigns](campaigns/index.md#campaigns-eng)
+        - [Batch changes](batch-changes/index.md)
+            - [Team: Batch changes](batch-changes/index.md#batch-changes-eng)
     - Web org {#web}
         - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) ([Engineering Manager](roles.md#engineering-manager))
         - [Code insights](web/code-insights/index.md)
