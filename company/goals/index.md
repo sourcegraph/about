@@ -32,7 +32,7 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 
-### [Batch changes](../../handbook/engineering/batch-changes/goals.md#goals)
+### [Batch Changes](../../handbook/engineering/batch-changes/goals.md#goals)
 
 ### [Core application](../../handbook/engineering/core-application/goals.md#goals)
 
