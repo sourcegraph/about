@@ -32,6 +32,7 @@ Engineering managers lead, grow, and develop teams of software engineers.
 ### Responsibilities
 
 TODO
+
 ## VP Engineering
 
 ### Responsibilities
