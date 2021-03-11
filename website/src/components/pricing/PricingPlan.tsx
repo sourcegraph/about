@@ -44,7 +44,7 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     batchChanges: {
         label: 'Batch changes',
         description:
-            'Batch changes help coordinate large-scale changes across many repositories. Batch changes are a paid add-on for all plans.',
+            'Automate large-scale code changes across all of your repositories and code hosts. Available as a paid add-on for customers on the Enterprise plan.',
     },
     codeHostIntegration: {
         label: 'Code host integrations',
