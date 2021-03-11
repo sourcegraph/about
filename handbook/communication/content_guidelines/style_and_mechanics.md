@@ -722,7 +722,12 @@ Only use _we_ and _our_ (as in “our GitHub integration”) in informal documen
 
 ### Feature names
 
-Don’t capitalize descriptive product or feature names. Features are not proper nouns. Avoid phrasing that can imply official product names.
+When referencing the product or category, the following should be treated as proper, singular nouns:
+
+- Universal Code Search
+- Batch Changes
+
+Don’t capitalize descriptive product or feature names. Avoid phrasing that can imply official product names.
 
 <div class="usage">
 <div class="item yes">
@@ -743,19 +748,19 @@ Don’t capitalize descriptive product or feature names. Features are not proper
 </div>
 </div>
 
-Use the natural plural/singular form. If a feature name is a plural noun, treat it as a plural noun.
+Use the natural plural/singular form when describing the functionality. 
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Batch changes are available.</li>
+<li>Extensions are available.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>Batch changes is available.</li>
+<li>Extensions is available.</li>
 </ul>
 </div>
 </div>
@@ -766,13 +771,13 @@ Refer to the natural noun of the product feature directly.
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Batch changes are available.</li>
+<li>Extensions are available.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>The batch changes feature is available.</li>
+<li>The extensions feature is available.</li>
 </ul>
 </div>
 </div>
