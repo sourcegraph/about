@@ -12,7 +12,7 @@ export const RequestBatchChangesDemo: React.FunctionComponent = (props: any) => 
             targetId: 'hubspotRequestBatchChangesDemo',
         })
     }, [])
-    const title = 'Sourcegraph - Schedule a Sourcegraph Campaigns demo.'
+    const title = 'Sourcegraph - Schedule a Batch Changes demo.'
     const desc = 'Learn how you can automate large-scale code changes with Sourcegraph.'
     return (
         <Layout location={props.location} minimal={true}>
