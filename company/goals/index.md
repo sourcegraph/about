@@ -44,7 +44,9 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ### [Security](../../handbook/engineering/security/goals.md#goals)
 
-### [Web](../../handbook/engineering/web/goals.md#goals)
+### [Frontend Platform](../../handbook/engineering/web/frontend-platform/goals.md#goals)
+
+### [Extensibility](../../handbook/engineering/web/extensibility/goals.md#goals)
 
 #### [Code Insights](../../handbook/engineering/web/code-insights/goals.md#goals)
 
