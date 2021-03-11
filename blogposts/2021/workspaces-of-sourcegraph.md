@@ -1,5 +1,5 @@
 ---
-title: The workspaces of Sourcegraph
+title: Improving code display: A look at 17 developer workspaces 
 author: Rob Rhyne
 authorUrl: https://twitter.com/robrhyne
 publishDate: 2021-02-10T18:00+02:00
