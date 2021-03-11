@@ -9,7 +9,7 @@ Time periods we track:
 - Weekly active user (WAU)
 - Monthly active user (MAU)
 
-## Growth metric user categories
+## Growth metrics user categories
 
 We track the following categories in pings for each month. The explanations are framed as though we're talking about the current month, but apply to any given month.
 
@@ -23,10 +23,7 @@ We track the following categories in pings for each month. The explanations are 
 
 ## Engagement ratios
 
-### DAU/MAU
-
-The ratio of average DAUs over a month to the number of MAUs in the corresponding month. If the ratio is 0.4 or 40%, the average user used Sourcegraph 12 days per month (30 days * .4 = 12). 
-
-### DAU/WAU
-
-The ratio of average DAUs over a week to the number of WAUs in the corresponding week. If the ratio is 0.4 or 40%, the average user used Sourcegraph 2.8 days per week (7 days * .4 = 2.8).
+| Metric  | Description                                                                                                                                                                                   |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DAU/MAU | The ratio of average DAUs over a month to the number of MAUs in the corresponding month. If the ratio is 0.4 or 40%, the average user used Sourcegraph 12 days per month (30 days * .4 = 12). |
+| DAU/WAU | The ratio of average DAUs over a week to the number of WAUs in the corresponding week. If the ratio is 0.4 or 40%, the average user used Sourcegraph 2.8 days per week (7 days * .4 = 2.8).   |
