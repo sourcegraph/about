@@ -6,7 +6,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 Progress toward our active goals is described in our [tracking issue](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Atracking+label%3Ateam%2Fdistribution).
 
-### [Collect metrics and feedback about Sourcegraph deployments](https://github.com/orgs/sourcegraph/projects/143)
+### [Understand Sourcegraph site-admin requirements](https://github.com/orgs/sourcegraph/projects/143)
 
 Sourcegraph collects a number of data points through pings that are used to understand how customers use Sourcegraph and drive how we improve the product. We currently do not have any metrics, pings or manual data points collected from site-admins, which makes it impossible for the Distribution team to make educated guesses on features that site-admins require and how projects should be prioritized.
 
@@ -19,7 +19,7 @@ Sourcegraph collects a number of data points through pings that are used to unde
   1. ~~There are processes and tools that allows CEs, CSEs and site-admins provide feedback.~~
   1. We have collected data from 10 site-admins.
 
-### [Improve internal deployment pipeline UX](https://github.com/orgs/sourcegraph/projects/96)
+### [Fast and reliable deployments to Sourcegraph Cloud](https://github.com/orgs/sourcegraph/projects/96)
 
 Our existing deployment pipelines to our Sourcegraph instances (such as Sourcegraph Cloud) has several usability problems - for example, it is hard for engineers to identify when a commit on `sourcegraph/sourcegraph` was deployed to an environment or which deployment is currently running in a particular environment. We want to improve the deployment experience, making sure we can deploy with confidence and can easily understand in which stage of the pipeline a change currently is.
 
