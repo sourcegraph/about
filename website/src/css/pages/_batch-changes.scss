@@ -1,6 +1,9 @@
 .batch-changes-page {
     &__hero-and-header {
-        background-image: url('/batch-changes/hero_illustration.svg'), url('/customers-page-bg.svg');
+        background-image: url('/batch-changes/hero_illustration.svg'), url('/customers-page-bg.svg'),
+            // Fallback while the SVGs are loading
+            radial-gradient(ellipse at bottom left, $indigo-5, transparent),
+            radial-gradient(ellipse at bottom right, $cyan-3, transparent);
         background-repeat: no-repeat;
         background-size: auto 113%, cover;
         background-position: center right 15%, top left;
