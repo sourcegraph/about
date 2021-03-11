@@ -555,8 +555,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.061920,
-          37.901760
+          -122.06192,
+          37.90176
         ]
       }
     },
@@ -568,8 +568,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.872140,
-          42.613170
+          -70.87214,
+          42.61317
         ]
       }
     },
@@ -701,9 +701,9 @@
           -122.841766,
           45.355389
         ]
-      } 
+      }
     },
-    { 
+    {
       "type": "Feature",
       "properties": {
         "name": "Virginia Ulrich"
@@ -712,7 +712,20 @@
         "type": "Point",
         "coordinates": [
           -122.658722,
-          45.512230
+          45.51223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adeola Akinsiku"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2489013671875,
+          32.33587963983594
         ]
       }
     }
