@@ -18,6 +18,7 @@ I do weekly [1-1s](../../handbook/leadership/1-1.md) with my direct reports.
 ## Skip-level meetings
 
 I do skip-level meetings with all my indirect reports once a month.
+
 ## Getting to know you
 
 If I am your new manager, I will ask you to schedule a series of three 60 minute 1-1s (1 per week, in addition to our regular 1-1) to learn more about you.  
