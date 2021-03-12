@@ -9,14 +9,14 @@ As the company grows, new hires are joining almost every week. The onboarding pr
   </tr>\
   <tr>\
    <td>About ten days before the new hire starts (or as soon as they sign the contract, if they haven't by that time) a Welcome email is sent to the new hire with the Hiring Manager in CC. Here we ask for certain information we need to get them onboarded:
-- We confirm start date
-- We confirm email preference
-- We send out information about purchasing the laptop
-- We ask for T-shirt size, for swag purposes, and address for shipping
-- We ask for a selfie
-- For US hires we inform about documentation needed for I-9 paperwork
-- We ask for their phone number, for account setup
-- And GitHub username, if they have one.
+<p>- We confirm start date
+<p>- We confirm email preference
+<p>- We send out information about purchasing the laptop
+<p>- We ask for T-shirt size, for swag purposes, and address for shipping
+<p>- We ask for a selfie
+<p>- For US hires we inform about documentation needed for I-9 paperwork
+<p>- We ask for their phone number, for account setup
+<p>- And GitHub username, if they have one.
    </td>\
    <td>PeopleOps
    </td>\
