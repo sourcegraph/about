@@ -1,12 +1,11 @@
 # Onboarding process for Hiring Managers
 
-As the company grows, new hires are joining almost every week. The onboarding process the new hire goes through requires actions from both PeopleOps and the Hiring Manager. Some Hiring Managers are doing this for the first time and they don\'92t know what the process looks like, here they will find the necessary information. 
-
+As the company grows, new hires are joining almost every week. The onboarding process the new hire goes through requires actions from both PeopleOps and the Hiring Manager. Some Hiring Managers are doing this for the first time and they don't know what the process looks like, here they will find the necessary information.
+<p>
+ <p>
+   <strong>Before first day</strong>
 <table>\
-  <tr>\
-   <td><strong>Before first day</strong>
- 
-  </tr>\
+
   <tr>\
    <td>About ten days before the new hire starts (or as soon as they sign the contract, if they haven't by that time) a Welcome email is sent to the new hire with the Hiring Manager in CC. Here we ask for certain information we need to get them onboarded:
      <p>
