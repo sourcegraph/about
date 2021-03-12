@@ -87,7 +87,20 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                         </ul>
                     </div>
                     <div className="col-lg-7">
-                        <img src="https://via.placeholder.com/585x328.png" className="w-100" />
+                        <video
+                            className="w-100 h-auto shadow"
+                            width={1280}
+                            height={720}
+                            autoPlay={true}
+                            muted={true}
+                            loop={true}
+                            controls={false}
+                        >
+                            <source
+                                type="video/mp4"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/how-it-works.mp4"
+                            />
+                        </video>
                     </div>
                 </div>
             </ContentSection>
@@ -131,7 +144,20 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                     </p>
                 </div>
                 <div className="col-lg-7">
-                    <img src="https://via.placeholder.com/585x328.png" className="w-100" />
+                    <video
+                        className="w-100 h-auto shadow"
+                        width={1280}
+                        height={720}
+                        autoPlay={true}
+                        muted={true}
+                        loop={true}
+                        controls={false}
+                    >
+                        <source
+                            type="video/mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/creation-to-merge.mp4"
+                        />
+                    </video>
                 </div>
             </div>
         </ContentSection>
