@@ -24,13 +24,13 @@ Never assume that a problem is somebody else's to fix!
 This is a basic breakdown of our expectations for providing a smooth onboarding process:
 
 - New teammate has the tools and resources they need to navigate their day to day (accounts, software...)
-- New hire has the necessary support from their peers, manager, and People team (regular 1-1s, shadowing...)
-- New hire knows where to find answers to their questions 
-- New hire experiences no logistical challenges (payroll, expenses, benefits, setting up accounts or other systems...)
-- The onboarding checklist is manageable and easy to navigate by new hire
+- New teammate has the necessary support from their peers, manager, and People team (regular 1-1s, shadowing...)
+- New teammate knows where to find answers to their questions 
+- New teammate experiences no logistical challenges (payroll, expenses, benefits, setting up accounts or other systems...)
+- The onboarding checklist is manageable and easy to navigate by new teammate
 
 ### Onboarding experience
-We will be putting surveys in place to collect feedback from all new teammates to make sure that their onboarding experience is properly equipping them with the support and resources necessary for them to be successful in their new role. 
+Surveys are conducted at the 3-month mark to collect feedback from all new teammates to make sure that their onboarding experience is properly equipping them with the support and resources necessary for them to be successful in their new role. 
 
 #### Onboarding content
 Survey questions:
@@ -45,11 +45,11 @@ Survey questions:
 - Was the format easy to follow?
 - Was each task and its purpose communicated clearly?
 
-#### Post-onboarding check-in
-People Ops sets up individual meeting to meet with new hire to collect live feedback and address any questions or concerns.
+#### Mid-onboarding check-in
+People Ops sets up individual meetings to collect live feedback and address any questions or concerns from every new teammate at the 1-month mark.
 
 ### Onboarding effectiveness
-We will also be collecting feedback from managers to measure overall onboarding effectiveness so we can ensure that our onboarding is helping new teammates properly ramp up for their roles in the expected timeframe.
+Surveys are also conducted at the 3-month mark to collect feedback from hiring managers to measure overall onboarding effectiveness so we can ensure that our onboarding is helping new teammates properly ramp up for their roles in the expected timeframe.
 
 Survey questions:
 - Was the teammate able to comply with their assignments (in time)?
