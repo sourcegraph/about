@@ -11,7 +11,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Sourcegraph - Batch changes',
+            title: 'Sourcegraph - Batch Changes',
             description: 'Automate large-scale code changes',
             image: '/favicon.png',
         }}
@@ -20,11 +20,11 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
             <div className="container pb-4">
                 <div className="row">
                     <div className="col-lg-7 mb-lg-6 mt-6">
-                        <div className="text-uppercase">Batch changes</div>
+                        <div className="text-uppercase">Batch Changes</div>
                         <h1 className="display-2 font-weight-bold mb-0">Automate large-scale code changes</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
                             Keep your code up-to-date, fix critical security issues, and pay down tech debt across all
-                            of your repositories with batch changes.
+                            of your repositories with Batch Changes.
                         </p>
                         <RequestDemoAction />
                     </div>
@@ -37,7 +37,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
             <h1 className="mb-3">Change code everywhere with a single declarative file</h1>
             <div className="row justify-content-center">
                 <p className="col-md-8">
-                    Batch changes give you a declarative structure for finding and modifying code across all of your
+                    Batch Changes gives you a declarative structure for finding and modifying code across all of your
                     repositories. With a simple UI, it is easy to track and manage all of your changesets through checks
                     and code reviews until each change is merged.
                 </p>
@@ -61,7 +61,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             alt="Graphic of a single developer updating a lot of repositories."
                         />
                         <figcaption className="mt-5">
-                            Using <strong className="text-purple">batch changes</strong> to update repositories
+                            Using <strong className="text-purple">Batch Changes</strong> to update repositories
                         </figcaption>
                     </figure>
                 </div>
@@ -99,7 +99,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-10 text-center">
                     <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                         <p>
-                            The ability to automate downstream changes that Sourcegraph batch changes provides is a key
+                            The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
                             capability for reducing the hidden burden of updates pushed across teams and enabling us to
                             increase our engineering velocity
                         </p>
@@ -182,7 +182,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-10 text-center">
                     <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                         <p>
-                            Sourcegraph batch changes gives us the confidence we need to understand the total impact of
+                            Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
                             large-scale code changes before we make them. This enables the entire team to make more
                             impactful decisions more often.
                         </p>
@@ -199,7 +199,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
 
         {/* Demo */}
         <ContentSection className="py-4 py-md-7">
-            <h1 className="mb-3 text-center">See batch changes in action</h1>
+            <h1 className="mb-3 text-center">See Batch Changes in action</h1>
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
@@ -208,7 +208,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
-                        title="Sourcegraph batch changes demo"
+                        title="Sourcegraph Batch Changes demo"
                     ></iframe>
                 </div>
             </div>
