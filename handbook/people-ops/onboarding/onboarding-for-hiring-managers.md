@@ -4,7 +4,7 @@ As the company grows, new hires are joining almost every week. The onboarding pr
 <p>
  <p>
    <strong>Before first day</strong>
-<table>\
+<table>
 
   <tr>\
    <td>About ten days before the new hire starts (or as soon as they sign the contract, if they haven't by that time) a Welcome email is sent to the new hire with the Hiring Manager in CC. Here we ask for certain information we need to get them onboarded:
