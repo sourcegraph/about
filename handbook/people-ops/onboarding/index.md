@@ -23,7 +23,7 @@ Never assume that a problem is somebody else's to fix!
 ### Onboarding expectations
 This is a basic breakdown of our expectations for providing a smooth onboarding process:
 
-- New hire has the tools and resources they need to navigate their day to day (accounts, software...)
+- New teammate has the tools and resources they need to navigate their day to day (accounts, software...)
 - New hire has the necessary support from their peers, manager, and People team (regular 1-1s, shadowing...)
 - New hire knows where to find answers to their questions 
 - New hire experiences no logistical challenges (payroll, expenses, benefits, setting up accounts or other systems...)
