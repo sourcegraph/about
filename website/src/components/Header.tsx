@@ -30,9 +30,10 @@ export default class Header extends React.Component<HeaderProps, any> {
             <>
                 {/* Temporary banner for batch changes */}
                 {(this.props.isHome || this.props.isBlog) && (
-                    <div className="text-center bg-purple text-white font-weight-bold p-2">
-                        <Link to="/batch-changes" className="text-reset">
-                            Sourcegraph Batch Changes are available now!
+                    <div className="d-flex align-items-center justify-content-center bg-purple text-white font-weight-bold p-2">
+                        Introducing Batch Changes: Automate large-scale code changes.
+                        <Link to="/batch-changes" className="ml-2 btn btn-sm btn-light">
+                            Learn more
                         </Link>
                     </div>
                 )}
