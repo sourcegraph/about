@@ -7,6 +7,25 @@ import Tabs from 'react-bootstrap/Tabs'
 import { TrySourcegraph } from '../components/TrySourcegraph'
 import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 
+const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
+    <video
+        className="w-100 h-auto shadow"
+        width={1280}
+        height={720}
+        autoPlay={true}
+        muted={true}
+        loop={true}
+        playsInline={true}
+        controls={false}
+    >
+        <source
+            type="video/webm"
+            src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.webm`}
+        />
+        <source type="video/mp4" src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`} />
+    </video>
+)
+
 export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -87,20 +106,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                         </ul>
                     </div>
                     <div className="col-lg-7">
-                        <video
-                            className="w-100 h-auto shadow"
-                            width={1280}
-                            height={720}
-                            autoPlay={true}
-                            muted={true}
-                            loop={true}
-                            controls={false}
-                        >
-                            <source
-                                type="video/mp4"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/how-it-works.mp4"
-                            />
-                        </video>
+                        <Video name="how-it-works" />
                     </div>
                 </div>
             </ContentSection>
@@ -144,20 +150,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                     </p>
                 </div>
                 <div className="col-lg-7">
-                    <video
-                        className="w-100 h-auto shadow"
-                        width={1280}
-                        height={720}
-                        autoPlay={true}
-                        muted={true}
-                        loop={true}
-                        controls={false}
-                    >
-                        <source
-                            type="video/mp4"
-                            src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/creation-to-merge.mp4"
-                        />
-                    </video>
+                    <Video name="creation-to-merge" />
                 </div>
             </div>
         </ContentSection>
