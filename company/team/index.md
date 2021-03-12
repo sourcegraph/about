@@ -780,3 +780,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [stephmhay](https://github.com/stephmhay)
 - [steph@sourcegraph.com](mailto:steph@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/stephaniemhay)
 - Steph lives in Los Angeles and loves taking advantage of the perfect weather by getting outside as much as possible. After multiple failed attempts at surfing, she has finally accepted that she is much better suited to outdoor activities requiring little to no skill and has since taken up paddleboarding and long walks on the beach. Steph started her career in investment banking and also worked in venture investing before joining Sourcegraph.
+
+## Kelsey Brown (she/her)
+- Business Operations Analyst
+- Arlington, VA, USA 🇺🇸 
+- GitHub: [kelsey-brown](https://github.com/kelsey-brown)
+- [kelsey@sourcegraph.com](mailto:kelsey@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kelsey-brown-25220b68/)
+- Prior to Sourcegraph, Kelsey worked in consulting on projects related to strategy, business operations, and technology. Outside of work, Kelsey loves doing anything active, including weightlifting, snowboarding, and playing ultimate frisbee. She is currently based in the Washington, DC area, but hails from Chicago, and would therefore be happy to passionately defend the superiority of Chicago-style over New York-style pizza with you any day of the week.
