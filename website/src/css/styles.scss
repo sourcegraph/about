@@ -6,10 +6,10 @@
 
 @import 'colors';
 
-$font-family-sans-serif: 'IBM Plex Sans';
-$font-family-base: 'IBM Plex Sans';
-$font-family-monospace: 'IBM Plex Mono';
-$headings-font-family: 'PT Sans';
+$font-family-sans-serif: 'IBM Plex Sans', ui-system, sans-serif;
+$font-family-monospace: 'IBM Plex Mono', monospace;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: 'PT Sans', $font-family-base;
 
 $blue: #2c7ef6;
 $red: #dc3545;
