@@ -66,12 +66,12 @@ And create a Check in meeting for new hires with PeopleOps after the first month
    <td>PeopleOps
    </td>\
   </tr>\
-  <tr>\
-   <td><strong>First day</strong>
-   </td>\
-   <td>
-   </td>\
-  </tr>\
+</table>
+
+<p>
+ <p><strong>First day</strong>
+   </table>
+ 
   <tr>\
    <td>You should notify new hires of any 1:1s they should have (any people on their team, or adjacent teams they will work closely with) so they can set them up.
    </td>\
