@@ -36,7 +36,7 @@ Directors lead, grow, and develop multiple teams in Engineering.
 - Lead, organize, and support the work of multiple engineering teams to deliver on key initiatives that are critical to the success of Sourcegraph.
 - Recruit, hire, and grow excellent engineers and engineering managers to create a diverse team.
 - Model, teach, and apply [our values](../../../company/values.md) in everyday interactions.
-- You will facilitate and sustain a healthy, inclusive team culture where everyone is set up to do their best work.
+- Facilitate and sustain a healthy, inclusive team culture where everyone is set up to do their best work.
 
 ## VP Engineering
 
