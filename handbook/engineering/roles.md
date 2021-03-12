@@ -29,7 +29,7 @@ Engineering managers lead, grow, and develop teams of software engineers.
 
 ## Director of Engineering
 
-Directors lead, grow and develop multiple teams in Engineering.
+Directors lead, grow, and develop multiple teams in Engineering.
 
 ### Responsibilities
 
