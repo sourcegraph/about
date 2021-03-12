@@ -9,6 +9,7 @@ As the company grows, new hires are joining almost every week. The onboarding pr
   </tr>\
   <tr>\
    <td>About ten days before the new hire starts (or as soon as they sign the contract, if they haven't by that time) a Welcome email is sent to the new hire with the Hiring Manager in CC. Here we ask for certain information we need to get them onboarded:
+     <p>
 <p>- We confirm start date
 <p>- We confirm email preference
 <p>- We send out information about purchasing the laptop
@@ -29,25 +30,14 @@ As the company grows, new hires are joining almost every week. The onboarding pr
   </tr>\
   <tr>\
    <td>The Thursday before they start, we create their Sourcegraph email. Once we have this we add them to:
-<p>\
-\
-    Slack
-<p>\
-\
-    Zoom
-<p>\
-\
-    1password
-<p>\
-\
-    Lever
-<p>\
-\
-    Lattice
-<p>\
-\
-    Process St.
-<p>\
+<p>
+     <p>- Slack
+     <p>- Zoom     
+     <p>- 1password
+     <p>- Lever
+     <p>- Lattice
+     <p>- Process St.
+<p>
 And create a Check in meeting for new hires with PeopleOps after the first month.
    </td>\
    <td>PeopleOps
@@ -55,26 +45,24 @@ And create a Check in meeting for new hires with PeopleOps after the first month
   </tr>\
   <tr>\
    <td>We will also let Hiring Managers know through the #people-ops channel in Slack that the email is live. Now you should:
-<p>\
-\
-    Create recurring 1:1 with new teammate
-<p>\
-\
-    Add new teammate to any team/role specific meetings and calls
-<p>\
-Having this done before day one will make it easier for the new hire and an overall better experience.
+<p>
+  - Create recurring 1:1 with new teammate
+<p>
+  - Add new teammate to any team/role specific meetings and calls
+<p>
+  Having this done before day one will make it easier for the new hire and an overall better experience.
    </td>\
    <td>Hiring Manager
    </td>\
   </tr>\
   <tr>\
-   <td>PeopleOps will contact the suggested buddy and make sure they are available. Once they accept, we\'92ll create a weekly recurring meeting for both of them to meet for a month.
+   <td>PeopleOps will contact the suggested buddy and make sure they are available. Once they accept, we'll create a weekly recurring meeting for both of them to meet for a month.
    </td>\
    <td>PeopleOps
    </td>\
   </tr>\
   <tr>\
-   <td>The Friday before they start, we will send an email. Here they will have the login details to start on their first day, the link to their Process St checklist and useful information (Onboarding buddy program, the Monday\'92s company meeting where they will be introduced, we are handbook first, etc.).\
+   <td>The Friday before they start, we will send an email. Here they will have the login details to start on their first day, the link to their Process St checklist and useful information (Onboarding buddy program, the Monday\'92s company meeting where they will be introduced, we are handbook first, etc.).
    </td>\
    <td>PeopleOps
    </td>\
@@ -82,17 +70,17 @@ Having this done before day one will make it easier for the new hire and an over
   <tr>\
    <td><strong>First day</strong>
    </td>\
-   <td>\
+   <td>
    </td>\
   </tr>\
   <tr>\
-   <td>You should notify new hires of any 1:1s they should have (any people on their team, or adjacent teams they will work closely with) so they can set them up.\
+   <td>You should notify new hires of any 1:1s they should have (any people on their team, or adjacent teams they will work closely with) so they can set them up.
    </td>\
    <td>Hiring Manager
    </td>\
   </tr>\
   <tr>\
-   <td>Once the new hire accepts their Lattice account, we will link them to their manager. Also, once they\'92ve accepted their 1password account, we\'92ll give them access and share the Shared vault with them.
+   <td>Once the new hire accepts their Lattice account, we will link them to their manager. Also, once they've accepted their 1password account, we'll give them access and share the Shared vault with them.
    </td>\
    <td>PeopleOps
    </td>\
@@ -100,11 +88,11 @@ Having this done before day one will make it easier for the new hire and an over
   <tr>\
    <td><strong>Checklist</strong>
   </td>\
-   <td>\
+   <td>
    </td>\
   </tr>\
   <tr>\
-   <td>PeopleOps and Hiring Manager will be able to follow the new hire\'92s progress on Process St. Also, they\'92ve got certain tasks assigned to them, too.\
+   <td>PeopleOps and Hiring Manager will be able to follow the new hire's progress on Process St. Also, they've got certain tasks assigned to them, too.
    </td>\
    <td>Hiring Manager & PeopleOps
    </td>\
@@ -116,7 +104,8 @@ Having this done before day one will make it easier for the new hire and an over
    </td>\
   </tr>\
 </table>\
-\
-\
-For any extra context, information or suggestions, please contact In\'e9s Roitman (@Ines)
+     <p> 
+<p>
+       <p>
+For any extra context, information or suggestions, please contact Inés Roitman (@Ines)
 }
