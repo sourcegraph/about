@@ -230,7 +230,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/EfKwKFzOs3E?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
