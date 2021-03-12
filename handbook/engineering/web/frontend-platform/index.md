@@ -1,6 +1,6 @@
-<img src="../logo.svg" alt="Sourcegraph Web Team Logo" style="width: 35%; float: right; margin-left: 1rem">
-
 # Frontend Platform team
+
+<img src="../logo.svg" alt="Sourcegraph Web Team Logo" style="width: 35%; float: right; margin-left: 1rem">
 
 The Frontend Platform team (part of the Web org) defines and maintains the standards and tooling for web development at Sourcegraph.
 
@@ -14,6 +14,35 @@ The Frontend Platform team (part of the Web org) defines and maintains the stand
     - [Tom Ross](../../../../company/team/index.md#tom-ross-he-him)
     - [Felipe Janer](../../../../company/team/index.md#felipe-janer-he-him)
     - [Valery Bugakov](../../../../company/team/index.md#valery-bugakov-he-him)
+
+## Mission
+
+To empower all users and Sourcegraph frontend developers to achieve maximum efficiency and effectiveness, by enabling and building a first-class web experience.
+
+## Vision
+
+Using and developing Sourcegraph is effortless.
+- We have a frictionless developer experience that empowers our frontend engineers to achieve the maximum value from the time spent on development.
+- We have an intuitive, performant, and consistent user experience that makes Sourcegraph an indispensable part of every developer workflow.
+
+## Responsibilities
+
+1. Frontend platform:
+   - Creating and maintaining Wildcard Component Library.
+   - Owning the Sourcegraph web tech stack, tools, patterns, documentation, education.
+   - Documentation and training material to enable product teams and new hires to quickly learn how we do web development at Sourcegraph.
+   - Define and maintain how we test and deploy frontend code.
+   - Ensuring an efficient and reliable frontend CI pipeline.
+   - Track, measure, and improve cross-cutting frontend metrics like bundle size, number of requests, etc.
+
+2. The core user experience of the Sourcegraph product:
+    - Accessibility, navigation, and information hierarchy
+    - Performance and efficiency of the core UI
+    - Syntax highlighting and code browsing
+    - Repository landing pages and file directory pages
+    - Basic code host-like features (e.g. viewing diffs, commits, history)
+    - Sourcegraph application homepage
+    - Support and enable other teams in all of the above.
 
 ## Contact
 
