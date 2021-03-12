@@ -10,7 +10,7 @@ published: true
 
 Developers read *a lot*. We read books, blog posts, documentation, but mostly, we read code. We read code when need to review a peer's work, when searching code, when trying to understand and change existing code, the list goes on. We read so much code, that many of us have become quite particular about how it is displayed. 
 
-Since searching and reading code are intrinsically related, the Sourcegraph design team began to study how to improve how we display code. Our goal is to make reading code easier, so it makes sense that we would study the place developers can decide exactly how their code should look... their editors.
+Since searching and reading code are intrinsically related, the Sourcegraph design team began to study how we could improve the display of code in Sourcegraph. Our goal is to make reading code easier, so it makes sense that we would study the place developers can decide exactly how their code should look: their editors.
 
 While our research is far from complete, we thought you might find a breakdown of the visual characteristics of where our team writes code of interest.
 
@@ -23,7 +23,7 @@ Conversely, all light mode users at Sourcegraph prefer the maximum contrast with
 *Contrast representative of typical dark and light modes.*
 
 ## Information density
-There are clearly two camps… those who use an Integrated Developer Environment (mainly VS Code) and terminal-based editors such as neovim/vim/emacs users. Editor users had around 96% of editor screen real estate dedicated to code. IDE users had from 80 to 90% of their screens is dedicated to code or the terminal, with the rest occupied by file trees and other UI such as menus and tabs. 
+There are clearly two camps: those who use an Integrated Developer Environment (IDE), which in this case is mainly VS Code, and terminal-based editors such as neovim/vim/emacs users. Editor users had around 96% of editor screen real estate dedicated to code. IDE users had from 80 to 90% of their screens is dedicated to code or the terminal, with the rest occupied by file trees and other UI such as menus and tabs. 
 
 ## Fonts are commonly customized
 Over half of our engineers customize their programing font.  Among these users, [FiraCode](https://github.com/tonsky/FiraCode) was the most popular choice, followed by  [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Other fonts include  [MonoStroom](https://github.com/Strum355/MonoStroom) , [Cascadia Code](https://github.com/microsoft/cascadia-code)),  and [Hack](https://sourcefoundry.org/hack/).
