@@ -139,7 +139,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
         {/* Use Cases */}
         <ContentSection className="py-4 py-md-7">
             <h1 className="mb-3 text-center">Use cases</h1>
-            <Tabs defaultActiveKey="configuration" id="use-cases">
+            <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
                 <Tab eventKey="configuration" title="Configuration">
                     <div className="row mt-5 justify-content-center">
                         <p className="col-lg-8">

@@ -92,6 +92,8 @@ $navbar-light-hover-color: $blue;
 $navbar-dark-color: $light;
 $navbar-dark-hover-color: $blue;
 
+$nav-tabs-border-width: 0;
+
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
 
@@ -329,4 +331,9 @@ body {
 
 .list-spaced > li {
     margin-bottom: 1rem;
+}
+
+.nav-tabs {
+    font-weight: 600;
+    font-size: 1.25em;
 }
