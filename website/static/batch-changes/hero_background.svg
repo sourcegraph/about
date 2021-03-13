@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidyMid slice">
     <rect x="0%" y="0%" width="100%" height="100%" fill="white" />
     <rect x="0%" y="0%" width="100%" height="100%" fill="url(#paint0_linear)" />
     <rect x="0%" y="0%" width="100%" height="100%" fill="url(#paint1_linear)" />
     <rect x="0%" y="0%" width="100%" height="100%" fill="url(#paint4_linear)" />
-    <rect fill="url(#background)" x="0" y="0" width="100%" height="100%" mask="url(#mask0)" />
+    <rect fill="url(#background)" x="0%" y="0%" width="100%" height="100%" mask="url(#mask0)" />
     <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="2056" height="710">
         <path d="M0 710L2047 710V0L0 0V710Z" fill="url(#paint5_linear)" />
         <path d="M0 0L0 710L2056 710V0L0 0Z" fill="url(#paint6_linear)" />
