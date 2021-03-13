@@ -28,10 +28,33 @@ const STARTER_FEATURES: Features = {
     customBranding: false,
     onlineTraining: false,
     customContractLegalBillingTerms: false,
+    managedInstance: false
 }
 
 /** The Team feature set. */
 const TEAM_FEATURES: Features = { ...STARTER_FEATURES, singleSignOn: false, userAndAdminRoles: true }
+
+const ENTERPRISE_FEATURES: Features = {
+    codeSearch: false,
+    codeIntelligence: false,
+    codeHostIntegration: false,
+    api: false,
+    selfHosted: false,
+    batchChanges: true,
+    singleSignOn: true,
+    userAndAdminRoles: true,
+    multipleCodeHosts: true,
+    repositoryPermissions: true,
+    optimizedRepositoryUpdates: true,
+    privateExtensions: true,
+    deploymentMetricsAndMonitoring: true,
+    backupRestore: true,
+    customBranding: false,
+    onlineTraining: true,
+    customContractLegalBillingTerms: false,
+    unlimitedCode: true,
+    managedInstance: true
+}
 
 export default ((props: any) => (
     <Layout location={props.location}>
@@ -48,102 +71,50 @@ export default ((props: any) => (
             <div className="pricing-page mt-2">
                 <ContentSection className="hero-section text-center py-5">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
-                    <h2>Universal Code Search scales with your team</h2>
+                    <h2>Universal Code Search</h2>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
                     <div className="row pt-4">
-                        <div className="col-md-4 mx-auto mb-4">
+                        <div className="col-md-6 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Free"
                                 price={<div className="text-center">$0/mo</div>}
                                 planProperties={
                                     <>
-                                        <PricingPlanProperty
-                                            description={
-                                                <>
-                                                    <br />
-                                                </>
-                                            }
-                                        >
-                                            Includes 10 users
+                                        <PricingPlanProperty>
+                                            Up to 10 users
                                         </PricingPlanProperty>
-                                        <PricingPlanProperty className="mt-3">Community support</PricingPlanProperty>
+                                        <PricingPlanProperty className="mt-3">
+                                            Community support<br/>&nbsp;
+                                        </PricingPlanProperty>
                                     </>
                                 }
                                 features={STARTER_FEATURES}
-                                beforeBatchesFragment={<li className="mt-4 list-group-item border-0" />}
+                                isFree={true}
                                 buttonLabel="Deploy"
                                 buttonClassName="btn-outline-primary"
                                 buttonHref="https://docs.sourcegraph.com#quickstart-guide"
                             />
                         </div>
-                        <div className="col-md-4 mx-auto mb-4">
-                            <PricingPlan
-                                className="pricing-page__plan"
-                                name="Team"
-                                price={<div className="text-center">$150/mo</div>}
-                                planProperties={
-                                    <>
-                                        <PricingPlanProperty
-                                            description={
-                                                <>
-                                                    <br />
-                                                </>
-                                            }
-                                        >
-                                            Includes 25 users
-                                        </PricingPlanProperty>
-                                        <PricingPlanProperty className="mt-2 pt-1">Email support</PricingPlanProperty>
-                                    </>
-                                }
-                                features={TEAM_FEATURES}
-                                beforeBatchesFragment={<li className="mt-4 list-group-item border-0" />}
-                                buttonLabel="Buy now"
-                                buttonClassName="btn-success"
-                                buttonHref="https://sourcegraph.com/subscriptions/new"
-                            />
-                        </div>
-                        <div className="col-md-4 mx-auto mb-4">
+
+                        <div className="col-md-6 mx-auto mb-4">
                             <PricingPlan
                                 className="pricing-page__plan"
                                 name="Enterprise"
                                 price={<div className="text-center">Custom pricing</div>}
                                 planProperties={
                                     <>
-                                        <PricingPlanProperty
-                                            description={
-                                                <>
-                                                    Scales to 100,000+ users
-                                                    <br />
-                                                </>
-                                            }
-                                        >
-                                            Custom user pricing
+                                        <PricingPlanProperty>
+                                            Unlimited users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            SLA with dedicated support
+                                            SLA with dedicated customer engineer<br/>and private Slack channel
                                         </PricingPlanProperty>
                                     </>
                                 }
-                                features={{
-                                    ...TEAM_FEATURES,
-                                    singleSignOn: true,
-                                    batchChanges: true,
-                                    multipleCodeHosts: true,
-                                    repositoryPermissions: true,
-                                    optimizedRepositoryUpdates: true,
-                                    privateExtensions: true,
-                                    deploymentMetricsAndMonitoring: true,
-                                    backupRestore: true,
-                                    customBranding: true,
-                                    onlineTraining: true,
-                                    customContractLegalBillingTerms: true,
-                                    unlimitedCode: true,
-                                }}
-                                beforeBatchesFragment={
-                                    <span className="text-muted pl-4 small mt-4">Available add-ons:</span>
-                                }
+                                features={ENTERPRISE_FEATURES}
+                                isFree={false}
                                 buttonLabel="Contact us"
                                 buttonClassName="btn-outline-primary"
                                 buttonHref="/contact/request-info/?form_submission_source=pricing-enterprise"
