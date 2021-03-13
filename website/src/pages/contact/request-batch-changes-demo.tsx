@@ -13,7 +13,7 @@ export const RequestBatchChangesDemo: React.FunctionComponent = (props: any) => 
         })
     }, [])
     const title = 'Sourcegraph - Schedule a Batch Changes demo.'
-    const desc = 'Learn how you can automate large-scale code changes with Sourcegraph.'
+    const desc = 'Learn how you can automate large-scale code changes with Sourcegraph Batch Changes.'
     return (
         <Layout location={props.location} minimal={true}>
             <Helmet>
