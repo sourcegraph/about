@@ -163,7 +163,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                     <div className="row mt-5 justify-content-center">
                         <p className="col-lg-8">
                             Quickly edit every CI, build, and other configuration files to make changes such as altering
-                            steps, migrating versions or changing base images.
+                            steps, migrating versions, or changing base images.
                         </p>
                     </div>
                     <div className="text-center">
