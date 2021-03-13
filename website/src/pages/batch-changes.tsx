@@ -42,7 +42,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                         <div className="text-uppercase">Batch Changes</div>
                         <h1 className="display-2 font-weight-bold mb-0">Automate large-scale code changes</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
-                            Keep your code up-to-date, fix critical security issues, and pay down tech debt across all
+                            Keep your code up to date, fix critical security issues, and pay down tech debt across all
                             of your repositories with Batch Changes.
                         </p>
                         <RequestDemoAction />
