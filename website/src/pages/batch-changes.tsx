@@ -145,8 +145,8 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                     <h1 className="mb-3">Track changes from creation to merge</h1>
                     <p>Tracking changes to many repositories requires spreadsheets and manual labor.</p>
                     <p>
-                        With Batch Changes, you can automatically track changeset lifecycle status, like check state, reviews, and merge status via
-                        the Sourcegraph UI so you can get the changesets merged.
+                        With Batch Changes, you can automatically track changeset lifecycle status, like check state,
+                        reviews, and merge status via the Sourcegraph UI so you can get the changesets merged.
                     </p>
                 </div>
                 <div className="col-lg-7">
