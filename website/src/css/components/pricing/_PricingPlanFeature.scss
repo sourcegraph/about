@@ -1,8 +1,9 @@
 .pricing-plan-feature {
-    &__value-true {
-    }
+    font-size: 1.125rem;
+
     &__icon-true {
         color: var(--success);
+        margin-right: 0.5rem;
     }
 
     &__value-false {
