@@ -1,17 +1,18 @@
-# Google for Code team
+# Package docs team
 
-TODO
+Sourcegraph aims to be the standard developer reference and code search for the open-source universe.  
+This team focuses on providing package docs for code repositories that are interactive, informative and indexable by web crawlers.
 
 ## Members
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
-- [Jean du Plessis](../../../../company/team/index.md#jean-du-plessis-he-him) (Acting [Engineering Manager](../../roles.md#engineering-manager)) {#google-for-code-eng}
+- [Jean du Plessis](../../../../company/team/index.md#jean-du-plessis-he-him) (Acting [Engineering Manager](../../roles.md#engineering-manager)) {#package-docs-eng}
     - [Stephen Gutekanst](../../../../company/team/index.md#stephen-gutekanst)
     - FQ4 backend engineer
 
 ## Contact
 
-- [#google-for-code](https://sourcegraph.slack.com/archives/C01PXV54BH9) channel in Slack.
+- [#package-docs-chat](https://sourcegraph.slack.com/archives/C01PXV54BH9) channel in Slack.
 
 ## Goals
 
