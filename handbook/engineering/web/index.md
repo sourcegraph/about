@@ -8,7 +8,7 @@ The Web org owns and maintains several areas of the product that is taken care o
 1. [Frontend platform](frontend-platform/index.md): the maintenance and expansion of the Sourcegraph web application. We also define and maintain the standards and tooling for how we do web development at Sourcegraph. 
 2. [Extensibility](extensibility/index.md): our code host and third-party integrations (including our browser extension) and our [Sourcegraph extensions](https://docs.sourcegraph.com/extensions).
 3. [Code insights](code-insights/index.md): empowering data-driven decisions in engineering organizations.
-4. [Package docs](package-docs/index.md): making Sourcegraph the standard developer reference and code search for the open-source universe.
+4. [API docs](api-docs/index.md): making Sourcegraph the standard developer reference and code search for the open-source universe.
 
 <div style="clear: both"/>
 
@@ -38,7 +38,7 @@ As of March 2021, the Web org is made up of multiple teams, and some members who
               - V. K. starting 2021-03-22
               - FQ1 [backend engineer](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
               - [Valery Bugakov](../../../company/team/index.md#valery-bugakov-he-him) (joins from Frontend Platform in FQ2)
-     - [Package docs](../web/package-docs/index.md)
+     - [API docs](../web/api-docs/index.md)
          - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) is the acting [Engineering Manager](../roles.md#engineering-manager) for this team
               - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
 

@@ -21,7 +21,7 @@ If you are already at Sourcegraph and see a current or future opportunity that y
         - [Frontend platform](../../handbook/engineering/web/frontend-platform/index.md)
         - [Extensibility](../../handbook/engineering/web/extensibility/index.md)
 		- [Code insights](../../handbook/engineering/web/code-insights/index.md)
-        - [Package docs](../../handbook/engineering/web/package-docs/index.md)
+        - [API docs](../../handbook/engineering/web/api-docs/index.md)
 	- [Security](../../handbook/engineering/security/index.md)
 	- [Distribution](../../handbook/engineering/distribution/index.md)
 	- [Core application](../../handbook/engineering/core-application/index.md)
@@ -50,8 +50,8 @@ Plans can change given new information!
             - [Team: Extensibility](web/extensibility/index.md#extensibility-eng)
         - [Frontend platform](web/frontend-platform/index.md)
             - [Team: Frontend platform](web/frontend-platform/index.md#frontend-platform-eng)
-        - [Package docs](web/package-docs/index.md)
-            - [Team: Package docs](web/package-docs/index.md#package-docs-eng)
+        - [API docs](web/api-docs/index.md)
+            - [Team: API docs](web/api-docs/index.md#api-docs-eng)
     - Platform and infrastructure {#platform-and-infrastructure}
         - B.C. starting 2020-03-22
         - [Security](security/index.md)

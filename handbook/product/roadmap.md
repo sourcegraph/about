@@ -30,7 +30,7 @@ NOTE: Dates and timelines below are not considered commitments, these roadmaps a
 
 ## [Code Insights roadmap](../engineering/web/code-insights/goals.md#roadmap)
 
-## [Package docs roadmap](../engineering/web/package-docs/goals.md#roadmap)
+## [API docs roadmap](../engineering/web/api-docs/goals.md#roadmap)
 
 ---
 

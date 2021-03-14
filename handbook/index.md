@@ -49,7 +49,7 @@ The handbook is a living document and we expect every teammate to propose improv
     - [Code insights](engineering/web/code-insights/index.md)
     - [Extensibility](engineering/web/extensibility/index.md)
     - [Frontend platform](engineering/web/frontend-platform/index.md)
-    - [Package docs](engineering/web/package-docs/index.md)
+    - [API docs](engineering/web/api-docs/index.md)
 
 ### [Customer Engineering](ce/index.md)
 
