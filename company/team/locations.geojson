@@ -464,8 +464,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          40.650002,
-          -73.949997
+          -73.949997,
+          40.650002
         ]
       }
     },
@@ -487,9 +487,6 @@
       "properties": {
         "name": "Tommy O Donnell"
       },
-      "properties": {
-        "name": "Tommy O Donnell"
-      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -508,6 +505,227 @@
         "coordinates": [
           88.43994140625,
           22.643798766430393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rob Rhyne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3834228515625,
+          33.19847683493303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Will Camp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.743057,
+          30.267153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eric Brody-Moore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.781601,
+          36.162663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katerina Nikolova"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.06192,
+          37.90176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dudley Nostrand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.87214,
+          42.61317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dan Adler"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.420174,
+          37.780079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shaan Sheth"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.242766,
+          34.053691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Owen Brennan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.200886,
+          43.616616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Inés Roitman"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.177432,
+          41.382894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Greg Bastis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.420174,
+          37.780079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quin Keough"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.074142,
+          33.448437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sarah Reecee"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.639099,
+          35.780398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tia Wucher"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.265469,
+          44.9773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steph Hay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.451424,
+          33.983841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giselle Northy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.841766,
+          45.355389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Virginia Ulrich"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.658722,
+          45.51223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adeola Akinsiku"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2489013671875,
+          32.33587963983594
         ]
       }
     }

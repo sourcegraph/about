@@ -14,7 +14,10 @@ I use the [CliftonStrengths assessment](https://www.gallup.com/cliftonstrengths)
 ## 1-1s
 
 I do weekly [1-1s](../../handbook/leadership/1-1.md) with my direct reports.  
-I use [Lattice](https://lattice.com/one-on-ones) to manage my 1-1s as it allows for collaborating on an agenda before the meeting and capturing notes and actions in a structured way during it.
+
+## Skip-level meetings
+
+I do skip-level meetings with all my indirect reports once a month.
 
 ## Getting to know you
 

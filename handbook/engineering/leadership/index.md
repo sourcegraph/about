@@ -9,25 +9,11 @@ This page documents the engineering leadership team.
   - [Tomás Senart](../../../company/team/index.md#tomás-senart), [Engineering Manager](../roles.md#engineering-manager), [Core application](../core-application/index.md)
   - [Loïc Guychard](../../../company/team/index.md#loïc-guychard), [Engineering Manager](../roles.md#engineering-manager), [Search](../search/index.md)
   - [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim), [Engineering Manager](../roles.md#engineering-manager), [Distribution](../distribution/index.md)
-  - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris), [Engineering Manager](../roles.md#engineering-manager), [Campaigns](../campaigns/index.md)
-  - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him), [Engineering Manager](../roles.md#engineering-manager), [Web](../web/index.md)
+  - [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris), [Engineering Manager](../roles.md#engineering-manager), [Batch Changes](../batch-changes/index.md)
   - [Owen Convey](../../../company/team/index.md#owen-convey-he-him), [Engineering Manager](../roles.md#engineering-manager), [Code Intelligence](../code-intelligence/index.md)
-
-## Goals
-
-Our long term vision is to build an organization that attracts and retains the best teammates from around the world, and that consistently delivers a high quality product to our customers.
-
-When a goal is "done", move it to our [work log](worklog.md)
-
-### Publicly documented compensation bands
-
-**Problem:** When we were smaller, it was easy to contain consistent compensation across the entire team because there were fewer people to coordinate with. Now that we are bigger and have more engineering managers making offers and compensation decisions, we need to have clearly documented compensation bands so we can maintain consistency while federating decision making. We want to make this public because it will help candidates understand what they can expect before they even apply. This is a better candidate experience and it avoids rare but real situations where a candidate goes through our interview process only to discover that their compensation expectations don't fit into our bands.
-
-**Milestones:**
-
-1. ✅ Update our benchmark data and set bands to be shared with engineering managers internally to help them make offers and review/adjust compensation for their teams. https://docs.google.com/spreadsheets/d/1ywMdWxL8jCpGRXvEIY-bCVD4d4OZNRvz6-Gn4Spg4XU/edit#gid=292189111
-1. Create more useful definitions for the expectations associated with each level of compensation.
-1. Update the [compensation documentation in our handbook](../../people-ops/compensation.md#ranges) so candidates and current teammates know what our bands are.
+  - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him), [Director of Engineering](../roles.md#engineering-manager), [Web org](../web/index.md)
+    - [Felix Becker](../../../company/team/index.md#felix-becker), [Engineering Manager](../roles.md#engineering-manager), [Code insights](../web/code-insights/index.md)
+    - [Patrick Dubroy](../../../company/team/index.md#patric-dubroy-he-him), [Engineering Manager](../roles.md#engineering-manager), [Frontend platform](../web/frontend-platform/index.md)
 
 ## Communication
 
@@ -43,33 +29,23 @@ We have a 1hr sync every Monday at 9:30am PT.
 - This meeting is recorded and automatically posted to #eng-manager-team.
 - Our [meeting notes](https://docs.google.com/document/d/1nZTGua3cdMTJLwANlBZNX2uXiDXLuYDBkH9tehwdqTY/edit#) are also internally available to the whole team.
 
-### Weekly updates
+### Status updates
 
-The goal of these weekly updates is to communicate each team's progress and tie that progress to larger company goals.
+The goal of status updates is to communicate each team's progress toward their OKRs and roadmap items.
 
-Engineering managers send an update to [engineering-team-status@sourcegraph.com](https://groups.google.com/a/sourcegraph.com/g/engineering-team-status) every Friday by 1PM [PT](https://time.is/PT), or at EOD Thursday if you don't work on Friday. Delegate to someone else on your team to send the update when you are on vacation.
+Engineering managers send an update to [engineering-team-status@sourcegraph.com](https://groups.google.com/a/sourcegraph.com/g/engineering-team-status) after each iteration retrospective. Teams have different iteration cadences, and as such, we do not expect updates to come through on the same day, but it should follow soon after you have completed your retrospective for the iteration.
 
-Anyone at the company can join the group to subscribe to these updates, but your primary audience is your manager (VP Eng and VP Product) and your peers (EMs/PMs). You can also cc your own team.
+You may send an update anytime (you don't need to wait for the end of an iteration). It might help communicate the achievement of an important milestone or significant change of plans mid-iteration.
+
+Delegate to someone else on your team to send the update when you are on vacation.
+
+While any teammate can join the group to receive these updates, your target audience is up (your manager) and out (your peers). You can also cc your team.
 
 Please include the following content in your update:
 
-- The subject of the email should contain the team name and the date the update is being sent (e.g. "Search update 2020-10-14") so each weekly update starts a distinct email thread (otherwise they get grouped together in the Google Groups UI).
-- Write one sentence that highlights one important thing (for example: changes in important metrics, customer feedback collected, things shipped) the team made progress on this week and include a image/screenshot when possible.
-  - The sentence should articulate what specifically was completed and why it was important.
-    - Processes like planning, retrospectives, offsites, hiring, and post-mortems are important and valuable ingredients to generating progress over time, but are not themselves progress, so shouldn't be highlighted here.
-    - This progress should be framed in a way that is understandable by anyone at the company.
-  - Great highlights will be presented at company meeting by the VP of Eng or VP of Product.
-    - It is helpful if screenshots are somewhere between squarish or 4:3. Very wide screenshots will not scale well on a slide.
-    - If you can, include a link to where you took a screenshot so we can retake the screenshot at a different display ratio if necessary.
-- Answer the following questions for each goal that your team is working on:
-  - What important things happened this week (for example: changes in important metrics, customer feedback collected, things shipped)?
-  - What are the plans for next week?
-  - What should my peer-team and manager be aware of?
-
-Good examples:
-
-- https://groups.google.com/a/sourcegraph.com/g/engineering-team-status/c/7zHism3B44w/m/mK2mT4AaAgAJ
-- https://groups.google.com/a/sourcegraph.com/g/engineering-team-status/c/6zTRJu2JYc0/m/VCOPNVwbAgAJ
+- The email subject should contain the team name and the date (e.g., "Search update 2020-10-14") so each update starts a distinct email thread (otherwise, they get grouped in the Google Groups UI).
+- Follow the [3Ps](https://en.wikipedia.org/wiki/Progress,_plans,_problems) approach to reporting on the _Progress_, ~~Problems~~ _Challenges_, and _Plans_ against the team's goals.
+- Managers should favor a prose style communication over a changelog style update.
 
 ## Book recommendations
 

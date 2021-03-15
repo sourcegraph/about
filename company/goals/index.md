@@ -32,9 +32,7 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 
-### [Engineering leadership](../../handbook/engineering/leadership/index.md#goals)
-
-### [Campaigns](../../handbook/engineering/campaigns/goals.md#goals)
+### [Batch Changes](../../handbook/engineering/batch-changes/goals.md#goals)
 
 ### [Core application](../../handbook/engineering/core-application/goals.md#goals)
 
@@ -46,9 +44,11 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ### [Security](../../handbook/engineering/security/goals.md#goals)
 
-### [Web](../../handbook/engineering/web/goals.md#goals)
+### [Frontend platform](../../handbook/engineering/web/frontend-platform/goals.md#goals)
 
-#### [Code Insights](../../handbook/engineering/web/code-insights/goals.md#goals)
+### [Extensibility](../../handbook/engineering/web/extensibility/goals.md#goals)
+
+#### [Code insights](../../handbook/engineering/web/code-insights/goals.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
 

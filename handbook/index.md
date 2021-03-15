@@ -39,16 +39,17 @@ The handbook is a living document and we expect every teammate to propose improv
 <!-- When updating the engineering team list below, please also update company/team/org_chart.md. -->
 
 - [Engineering](engineering/index.md)
-  - [Campaigns](engineering/campaigns/index.md)
+  - [Batch Changes](engineering/batch-changes/index.md)
   - [Core application](engineering/core-application/index.md)
   - [Code intelligence](engineering/code-intelligence/index.md)
   - [Distribution](engineering/distribution/index.md)
   - [Search](engineering/search/index.md)
   - [Security](engineering/security/index.md)
   - [Web org](engineering/web/index.md)
-    - [Code Insights](engineering/web/code-insights/index.md)
-    - Extensibility (TODO)
-    - [Frontend Platform](engineering/web/frontend-platform/index.md)
+    - [Code insights](engineering/web/code-insights/index.md)
+    - [Extensibility](engineering/web/extensibility/index.md)
+    - [Frontend platform](engineering/web/frontend-platform/index.md)
+    - [API docs](engineering/web/api-docs/index.md)
 
 ### [Customer Engineering](ce/index.md)
 

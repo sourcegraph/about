@@ -50,7 +50,7 @@ export default ((props: any) => (
                                 Catch more bugs with better code reviews
                                 <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#campaigns" className="list-group-item list-group-item-action">
+                            <Link to="#batch-changes" className="list-group-item list-group-item-action">
                                 Fix things quickly and safely <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
@@ -177,7 +177,7 @@ export default ((props: any) => (
                             time to recovery. Find breaking changes, with diff and commit search returning all matching
                             search results to identify everywhere a pattern, package, or API is used. Mitigate tech
                             security and compliance risks with saved searches to alert for known vulnerabilities and
-                            risky code changes. Campaigns then automate the process of fixing, merging, and deploying
+                            risky code changes. Then, use Batch Changes to automate the process of fixing, merging, and deploying
                             the necessary changes across codebases.
                         </p>
                     </div>
@@ -263,14 +263,14 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <hr className="my-md-6" id="campaigns" />
+                <hr className="my-md-6" id="batch-changes" />
             </ContentSection>
             <ContentSection className="mt-5">
                 <div className="row">
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Fix things quickly and safely</h2>
                         <p>
-                            Teams run campaigns to swiftly and securely remove legacy code, fix critical security
+                            Teams use Batch Changes to swiftly and securely remove legacy code, fix critical security
                             issues, pay down tech debt, and make large-scale code changes and refactors across the
                             entire codebase:
                             <ul>
@@ -294,11 +294,11 @@ export default ((props: any) => (
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 className="embed-responsive-item"
-                                src="https://www.youtube-nocookie.com/embed/EfKwKFzOs3E?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameBorder={0}
-                                title="Sourcegraph Campaigns"
+                                title="Sourcegraph Batch Changes"
                             ></iframe>
                         </div>
                     </div>

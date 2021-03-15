@@ -12,9 +12,12 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Engineering
 
-- [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
+- [Director of Engineering - Global code graph](https://jobs.lever.co/sourcegraph/92a29215-e44f-4f2e-b147-73a8cb756d09)
+- [Backend Engineer - Code Insights](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
+- [Site Reliability Engineer (SRE) / DevOps – Distribution](https://jobs.lever.co/sourcegraph/282b1709-0b4f-47b6-8188-722d8e59b512)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
-- [Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+- [Frontend Engineer - Search](https://jobs.lever.co/sourcegraph/73c64b38-9bd9-41cc-bc8b-e8d87d91abac)
+- Very experienced security leader or advisor (will be posted soon)
 
 ### Product
 
@@ -33,8 +36,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 - [Customer Engineer](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57)
 - [Training Engineer](https://jobs.lever.co/sourcegraph/7aae60bb-228f-4e48-89f8-d16646aa4642)
-- [Director of Customer Engineering, East](https://jobs.lever.co/sourcegraph/82f595d8-9a88-40f6-b84a-b243c58754f0)
-- [Director of Customer Engineering, West](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1)
 - VP Customer Engineering (to be posted very soon)
 
 ### Marketing
@@ -50,7 +51,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Operations, finance, and legal
 
-- [Finance & Operations Analyst](https://jobs.lever.co/sourcegraph/35d6628e-9e9a-4385-a4ea-67e411732cb4)
 - [Tech Ops Analyst](https://jobs.lever.co/sourcegraph/40e2f3cc-9cc1-4753-8ab1-c1269e531cf3)
 
 ### People Operations and Talent
