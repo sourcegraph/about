@@ -8,7 +8,7 @@
 
 ## Positioning and value drivers
 
-### 1-sentence pitch 
+### 1-sentence pitch
 
 Sourcegraph Batch Changes enables developers to automate and manage large-scale code changes across all of their repositories and code hosts.
 
