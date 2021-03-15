@@ -48,7 +48,7 @@ Learn how to [create and publish a blog post](https://about.sourcegraph.com/hand
 
 ## Handbook
 
-The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in this repository. Soon it will be deployed together with the rest of the about.sourcegraph.com site.
+The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in this repository. This is currently deployed in GCP.
 
 The handbook uses [docsite](https://github.com/sourcegraph/docsite).
 
