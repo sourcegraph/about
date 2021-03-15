@@ -24,7 +24,7 @@ Using and developing Sourcegraph is effortless.
 ## Responsibilities
 
 1. Frontend platform:
-   - Creating and maintaining Wildcard Component Library.
+   - Creating and maintaining the Wildcard Component Library.
    - Owning the Sourcegraph web tech stack, tools, and patterns.
    - Documentation and training material to enable product teams and new hires to quickly learn how we do web development at Sourcegraph.
    - Define and maintain how we test and deploy frontend code.
