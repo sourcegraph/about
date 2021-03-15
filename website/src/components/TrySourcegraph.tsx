@@ -2,7 +2,10 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { ContentSection } from './content/ContentSection'
 
-export const TrySourcegraph: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
+export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; className?: string }> = ({
+    demoFormURL = '/contact/request-demo',
+    className = '',
+}) => (
     <ContentSection className={className}>
         <div className="row">
             <div className="col-md-6 pr-md-5">
@@ -13,7 +16,7 @@ export const TrySourcegraph: React.FunctionComponent<{ className?: string }> = (
                 </p>
             </div>
             <div className="col-md-6 pt-3 align-self-center text-center">
-                <Link className="btn btn-outline-secondary mx-2 mb-3" to="/contact/request-demo" title="Request a demo">
+                <Link className="btn btn-outline-secondary mx-2 mb-3" to={demoFormURL} title="Request a demo">
                     Schedule a demo
                 </Link>
                 <Link className="btn btn-primary mx-2 mb-3" to="/get-started" title="Try Sourcegraph now">

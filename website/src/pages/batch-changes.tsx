@@ -236,7 +236,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
         <hr className="container my-md-6" />
 
         <ContentSection>
-            <TrySourcegraph />
+            <TrySourcegraph demoFormURL="/contact/request-batch-changes-demo" />
         </ContentSection>
     </Layout>
 )
