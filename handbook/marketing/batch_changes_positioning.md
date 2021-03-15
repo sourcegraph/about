@@ -23,14 +23,13 @@ Sourcegraph Batch Changes enables developers to automate and manage large-scale 
 
 #### Benefits
 
-- Reduce the time it takes to make large-scale code changes by 80%
+- Can reduce the time it takes to make large-scale code changes by 80%
 - Increase the speed and accuracy of making changes while reducing the risk of introducing breaking changes
 - Improve code quality throughout the org by reducing the risk of bugs or bad code making it to production
 
 #### Customer proof points
 
-- Workiva case study (coming soon)
-- Indeed case study (coming soon)
+- Coming soon
 
 ## Personas
 
@@ -58,8 +57,7 @@ Sourcegraph Batch Changes enables developers to automate and manage large-scale 
 ## Resources
 
 - Training (internal)
-- Docs
-- Landing page
-- Demo video
-- Blog post 
-
+- [Docs](https://docs.sourcegraph.com/batch_changes)
+- Landing page (coming soon)
+- [Demo video](https://www.youtube.com/watch?v=eOmiyXIWTCw)
+- Blog post (coming soon)
