@@ -26,7 +26,7 @@ The pipeline for customer data is below
 
 ###  Looker 
 
-We use Looker to view the aggregate results. This allows teams that use this data
+We use BigQuery to [transform](https://console.cloud.google.com/bigquery/scheduled-queries/locations/us/configs/615bc536-0000-2e57-bbd9-f40304364c86/runs?project=telligentsourcegraph) the results and Looker to [view them](https://sourcegraph.looker.com/dashboards-next/170). This allows teams that use this data. 
 to view trends over time and see what the majority of customers use.
 
 ### Salesforce
@@ -46,7 +46,6 @@ in the customer repo and tag @sourcegraph/bizops , @sourcegraph/customer-enginee
 
 If this change is approved, then we can use the issue to coordinate the necessary 
 schema changes.
-
 
 
 
