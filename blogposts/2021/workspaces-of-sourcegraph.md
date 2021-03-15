@@ -8,6 +8,8 @@ slug: workspaces-of-sourcegraph
 published: true
 ---
 
+![Workspaces of Soucegraph graphic](/blog/workspaces-of-sourcegraph-final-compressed.jpg)
+
 Developers read *a lot*. We read books, blog posts, documentation, but mostly, we read code. We read code when need to review a peer's work, when searching code, when trying to understand and change existing code, the list goes on. We read so much code, that many of us have become quite particular about how it is displayed. 
 
 Since searching and reading code are intrinsically related, the Sourcegraph design team began to study how we could improve the display of code in Sourcegraph. Our goal is to make reading code easier, so it makes sense that we would study the place developers can decide exactly how their code should look: their editors.
