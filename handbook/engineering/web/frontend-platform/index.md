@@ -33,7 +33,7 @@ Using and developing Sourcegraph is effortless.
    - Documentation and training material to enable product teams and new hires to quickly learn how we do web development at Sourcegraph.
    - Define and maintain how we test and deploy frontend code.
    - Ensuring an efficient and reliable frontend CI pipeline.
-   - Track, measure, and improve cross-cutting frontend metrics like bundle size, number of requests, etc.
+   - Track, measure, and improve cross-cutting frontend metrics like bundle size, [Web vitals](https://web.dev/vitals/), etc.
 
 2. The core user experience of the Sourcegraph product:
     - Accessibility, navigation, and information hierarchy
