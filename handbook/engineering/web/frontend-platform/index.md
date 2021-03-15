@@ -18,6 +18,7 @@ To empower all users and Sourcegraph frontend developers to achieve maximum effi
 ## Vision
 
 Using and developing Sourcegraph is effortless.
+
 - We have a frictionless developer experience that empowers our frontend engineers to achieve the maximum value from the time spent on development.
 - We have an intuitive, performant, and consistent user experience that makes Sourcegraph an indispensable part of every developer workflow.
 
