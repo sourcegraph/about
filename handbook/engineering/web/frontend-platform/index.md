@@ -38,9 +38,8 @@ Using and developing Sourcegraph is effortless.
 2. The core user experience of the Sourcegraph product:
     - Accessibility, navigation, and information hierarchy
     - Performance and efficiency of the core UI
-    - Syntax highlighting and code browsing
-    - Repository landing pages and file directory pages
-    - Basic code host-like features (e.g. viewing diffs, commits, history)
+    - All code browsing and code host-like views
+    - Code syntax highlighting    
     - Sourcegraph application homepage
     - Support and enable other teams in all of the above.
 
