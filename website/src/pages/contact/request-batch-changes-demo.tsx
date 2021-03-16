@@ -33,9 +33,7 @@ export const RequestBatchChangesDemo: React.FunctionComponent = (props: any) => 
                     <div className="row">
                         <div className="col-md-6">
                             <h1 className="display-3 font-weight-bold">Request a demo</h1>
-                            <h3 className="font-weight-light">
-                                Learn how you can automate large-scale code changes with Sourcegraph.
-                            </h3>
+                            <h3 className="font-weight-light">{desc}</h3>
                             <div className="form mt-5">
                                 <div id="hubspotRequestBatchChangesDemo" className="d-flex justify-center" />
                             </div>
