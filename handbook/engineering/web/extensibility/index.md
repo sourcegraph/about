@@ -43,7 +43,7 @@ Make Sourcegraph part of developers' daily workflow.
 
 ## Goals
 
-[Goals](Goals.md)
+[Goals](goals.md)
 
 ## Growth plan
 
