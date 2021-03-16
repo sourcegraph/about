@@ -1,11 +1,10 @@
-import { PageProps } from 'gatsby'
+import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import { TrySourcegraph } from '../components/TrySourcegraph'
-import { RequestDemoAction } from '../css/components/actions/RequestDemoAction'
 
 const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
     <video
@@ -26,6 +25,8 @@ const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
     </video>
 )
 
+const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
+
 export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -45,7 +46,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             Keep your code up to date, fix critical security issues, and pay down tech debt across all
                             of your repositories with Batch Changes.
                         </p>
-                        <RequestDemoAction />
+                        <Link className="btn btn-primary" to={batchChangesDemoFormURL} title="Request a demo">
+                            Request a demo
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -236,7 +239,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
         <hr className="container my-md-6" />
 
         <ContentSection>
-            <TrySourcegraph demoFormURL="/contact/request-batch-changes-demo" />
+            <TrySourcegraph demoFormURL={batchChangesDemoFormURL} />
         </ContentSection>
     </Layout>
 )
