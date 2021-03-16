@@ -25,4 +25,14 @@
         padding-left: 64px;
         padding-right: 64px;
     }
+
+    &--team {
+        .pricing-plan__features {
+            padding: 0;
+        }
+
+        .pricing-plan-feature {
+            color: #676767;
+        }
+    }
 }
