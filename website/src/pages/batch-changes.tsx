@@ -116,7 +116,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
         </div>
 
         {/* Social proof */}
-        <ContentSection className="py-4 py-md-7">
+        <ContentSection className="py-4 pt-md-8 pb-md-5">
             <div className="row justify-content-center">
                 <div className="col-lg-10 text-center">
                     <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
@@ -199,7 +199,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
         </ContentSection>
 
         {/* Social proof */}
-        <ContentSection className="py-4 py-md-7">
+        <ContentSection className="py-4">
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-10 text-center">
                     <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
