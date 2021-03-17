@@ -24,7 +24,7 @@ Sourcegraph powers your first stop for any information about your code, for any 
 1. All of Sourcegraph's most powerful features are easily available on most any code host while using any browser thanks to native integrations and browser extensions.
 
 ## Responsibilities
-
+_The extensibility team has many ownership areas, but not all of them are under active development at the same time. We nonetheless list them all here as a source of truth for deciding if an issue, feedback, or comment is relevant to the extensibility team. You can find our current priorities in our [goals page](goals.md)._
 1. Sourcegraph extensions
    - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
    - Build and maintain useful Sourcegraph extensions.([Sourcegraph-maintained extensions](https://docs.sourcegraph.com/dev/background-information/sourcegraph_extensions)).
