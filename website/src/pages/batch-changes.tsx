@@ -160,39 +160,51 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
 
         {/* Use Cases */}
         <ContentSection className="py-4 py-md-7">
-            <h1 className="mb-3 text-center">How developers use Batch Changes </h1>
+            <h1 className="mb-5 text-center">How developers use Batch Changes </h1>
             <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
                 <Tab eventKey="configuration" title="Configuration">
                     <div className="row mt-5 justify-content-center">
-                        <p className="col-lg-8">
-                            Quickly edit every CI, build, and other configuration files to make changes such as altering
-                            steps, migrating versions, or changing base images.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <img src="https://via.placeholder.com/815x392.png" />
+                        <div className="col-lg-8">
+                            <p>
+                                Quickly edit every CI, build, and other configuration files to make changes such as
+                                altering steps, migrating versions, or changing base images.
+                            </p>
+                            <img
+                                className="w-100 mt-4"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/configuration.png"
+                                alt="Batch change spec for configuration use case"
+                            />
+                        </div>
                     </div>
                 </Tab>
                 <Tab eventKey="refactoring" title="Refactoring">
                     <div className="row mt-5 justify-content-center">
-                        <p className="col-lg-8">
-                            Use language-aware tooling of your choice to perform complex refactors like updating an API
-                            and its function calls or replacing libraries entirely.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <img src="https://via.placeholder.com/815x392.png" />
+                        <div className="col-lg-8">
+                            <p>
+                                Use language-aware tooling of your choice to perform complex refactors like updating an
+                                API and its function calls or replacing libraries entirely.
+                            </p>
+                            <img
+                                className="w-100 mt-4"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/refactoring.png"
+                                alt="Batch change spec for refactoring use case"
+                            />
+                        </div>
                     </div>
                 </Tab>
                 <Tab eventKey="security" title="Security">
                     <div className="row mt-5 justify-content-center">
-                        <p className="col-lg-8">
-                            Refactor code to replace insecure functions, update vulnerable packages, or modify container
-                            configurations across hundreds of repositories.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <img src="https://via.placeholder.com/815x392.png" />
+                        <div className="col-lg-8">
+                            <p>
+                                Refactor code to replace insecure functions, update vulnerable packages, or modify
+                                container configurations across hundreds of repositories.
+                            </p>
+                            <img
+                                className="w-100 mt-4"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/security.png"
+                                alt="Batch change spec for security use case"
+                            />
+                        </div>
                     </div>
                 </Tab>
             </Tabs>
