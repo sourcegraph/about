@@ -34,7 +34,9 @@ Sourcegraph powers your first stop for any information about your code, for any 
    - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developers look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extension to get code intelligence.
 1. Browser extensions
    - Surface code intelligence and other Sourcegraph data in code hosts (for example: Github) through user-installed browser extensions.
-
+1. IDE and other third-party code view integrations
+    - Develop and maintain IDE integrations that bring Sourcegraph functionality right to your IDE
+    - Explore and develop features for other popular code-view websites like https://pkg.go.dev/ and messaging platforms like Slack
 
 ## Contact
 
