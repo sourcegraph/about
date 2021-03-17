@@ -76,7 +76,7 @@ The team makes use of [tracking issues](../../tracking_issues.md) for tracking p
 
 #### Product Feedback
 
-Specific product feedback about well-defined, small features can be found directly in the backlog boards. More general product feedback that applies to larger features, or that needs more research and planning to be actionable is kept in [Productboard](https://sourcegraph.productboard.com/feature-board/2330167-web-extensibility)
+Specific product feedback about well-defined, small features can be found directly in the backlog boards. More general product feedback that applies to larger features or that needs more research and planning to be actionable is kept in [Productboard](https://sourcegraph.productboard.com/feature-board/2330167-web-extensibility)
 
 ### Iterations
 
