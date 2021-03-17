@@ -31,9 +31,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Sourcegraph - Batch Changes',
-            description: 'Automate large-scale code changes',
-            image: '/favicon.png',
+            title: 'Sourcegraph Batch Changes | Large-Scale Code Changes',
+            description:
+                'Automate large-scale changes with Sourcegraph Batch Changes. Keep your code up to date and pay down tech debt across all repositories and code hosts.',
         }}
         heroAndHeaderClassName="batch-changes-page__hero-and-header"
         hero={
