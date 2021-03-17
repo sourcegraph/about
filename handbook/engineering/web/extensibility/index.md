@@ -29,7 +29,7 @@ _The extensibility team has many ownership areas, but not all of them are under 
    - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
    - Build and maintain useful Sourcegraph extensions.([Sourcegraph-maintained extensions](https://docs.sourcegraph.com/dev/background-information/sourcegraph_extensions)).
    - Documentation and tutorials that enable third-party developers to create actively useful extensions.
-   - Building and maintaining the extensions registry and discovery paths to create a community around Sourcegraph extensions.
+   - Building and maintaining the extensions registry, discovery paths, and extensions developer toolsets, to create an ecosystem around Sourcegraph extensions.
 1. Code host integrations
    - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developers look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extension to get code intelligence.
 1. Browser extensions
