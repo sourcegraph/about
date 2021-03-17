@@ -17,7 +17,7 @@ Our mission is to bring the value of Sourcegraph to everywhere you work with cod
 
 ## Vision
 
-Make Sourcegraph part of developers' daily workflow.
+Sourcegraph powers your first stop for any information about your code, for any tool or website you use. 
 
 1. We'll build a healthy ecosystem of Sourcegraph extensions to bring the power of existing developer tools into our platform to empower developers.
 1. We'll augment existing developer workflows by building new ways to use Sourcegraph on other websites and IDEs.
