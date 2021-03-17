@@ -8,7 +8,7 @@ The Business Operations & Strategy (BizOps) team operates with the mission of dr
     - [Eric Brody-Moore](../../../../company/team/index.md#eric-brody-moore), Business Operations Manager
     - [Farhan Attamimi](../../../../company/team/index.md#farhan-attamimi), Business Operations Analyst
     - [Steph Hay](../../../../company/team/index.md#steph-hay-she-her), Business Operations Analyst
-    - [Kelsey Brown](../../../../company/team#kelsey-brown-she-her), Business Operations Analyst
+    - [Kelsey Brown](../../../../company/team/index.md#kelsey-brown-she-her), Business Operations Analyst
 
 ## Functional areas
 
