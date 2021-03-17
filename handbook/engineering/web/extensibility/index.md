@@ -31,7 +31,7 @@ _The extensibility team has many ownership areas, but not all of them are under 
    - Documentation and tutorials that enable third-party developers to create actively useful extensions.
    - Building and maintaining the extensions registry, discovery paths, and extensions developer toolsets, to create an ecosystem around Sourcegraph extensions.
 1. Code host integrations
-   - Add native support for Sourcegraph in code hosts (for example: GitLab) or popular sites where developers look at code examples (e.g. https://reactjs.org, https://pkg.go.dev/) so users don't have to install our browser extension to get code intelligence.
+   - Add native support for Sourcegraph in code hosts (for example: [GitLab native integration](https://docs.sourcegraph.com/integration/gitlab#gitlab-ui-native-integration)) when possible, so all users of a Sourcegraph instance can get features like code intelligence on their code host without individual setup.
 1. Browser extensions
    - Surface code intelligence and other Sourcegraph data in code hosts (for example: Github) through user-installed browser extensions.
 1. IDE and other third-party code view integrations
