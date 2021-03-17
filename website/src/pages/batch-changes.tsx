@@ -170,7 +170,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                                 altering steps, migrating versions, or changing base images.
                             </p>
                             <img
-                                className="w-100 mt-4"
+                                className="w-100 h-auto mt-4"
+                                width="750"
+                                height="480"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/configuration.png"
                                 alt="Batch change spec for configuration use case"
                             />
@@ -185,7 +187,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                                 API and its function calls or replacing libraries entirely.
                             </p>
                             <img
-                                className="w-100 mt-4"
+                                className="w-100 h-auto mt-4"
+                                width="750"
+                                height="480"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/refactoring.png"
                                 alt="Batch change spec for refactoring use case"
                             />
@@ -200,7 +204,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                                 container configurations across hundreds of repositories.
                             </p>
                             <img
-                                className="w-100 mt-4"
+                                className="w-100 h-auto mt-4"
+                                width="750"
+                                height="480"
                                 src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/security.png"
                                 alt="Batch change spec for security use case"
                             />
