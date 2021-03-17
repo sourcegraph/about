@@ -75,7 +75,7 @@ We plan and track our day-to-day work on our [Kanban board](https://github.com/o
 - Work is scheduled by adding a card to either the _Planned (product)_ or the _Planned (eng)_ column.
    - _Planned (product)_ is for work that directly contributes to product goals, and is refreshed and prioritized by the PM/EM.
    - _Planned (eng)_ is refreshed and prioritized by the engineers. This is the place for refactorings, developer experience improvements, etc.
-- Work should not be moved into either column until the design and engineering teams agree that it is ready for development.
+- Work should not be moved into either column until it is ready for development.
    - Anything that needs design input gets the `needs-design` label and goes in the _Needs input_ column.
 - When starting work, engineers pull cards from one of the _Planned_ columns and move it to the _In Progress_ column. The other columns are self-explanatory 🙂
 - We do not yet have work-in-progress (WIP) limits for the columns, but will consider that soon.
