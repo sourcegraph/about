@@ -21,6 +21,7 @@ Sourcegraph powers your first stop for any information about your code, for any 
 
 1. Build a healthy ecosystem of Sourcegraph extensions, built by developers everywhere, who want to bring the power of existing developer tools they love into our platform. 
 1. Build new paths to get value from Sourcegraph on other websites and IDEs.
+1. All of Sourcegraph's most powerful features are easily available on most any code host while using any browser thanks to native integrations and browser extensions.
 
 ## Responsibilities
 
