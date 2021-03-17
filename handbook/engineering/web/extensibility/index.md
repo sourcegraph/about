@@ -20,7 +20,7 @@ Our mission is to bring the value of Sourcegraph to everywhere you work with cod
 Sourcegraph powers your first stop for any information about your code, for any tool or website you use. 
 
 1. Build a healthy ecosystem of Sourcegraph extensions, built by developers everywhere, who want to bring the power of existing developer tools they love into our platform. 
-1. We'll augment existing developer workflows by building new ways to use Sourcegraph on other websites and IDEs.
+1. Build new paths to get value from Sourcegraph on other websites and IDEs.
 
 ## Responsibilities
 
