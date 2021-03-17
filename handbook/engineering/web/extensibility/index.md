@@ -67,7 +67,7 @@ We use a modern, flexible tech stack. Here are some of the technologies we use t
 ## Processes
 
 ### Backlog
-We use backlogs for tracking bugs, small features, and unplanned work. You can find the [extensibility backlog](https://github.com/orgs/sourcegraph/projects/116?fullscreen=true) on Github. Please note that, we don't use the backlog for tracking work that is expressly planned in our [roadmap](https://sourcegraph.productboard.com/roadmap/2599047-extensibility-fy22-roadmap). 
+We use backlogs for tracking bugs, small features, and unplanned work. You can find the [extensibility backlog](https://github.com/orgs/sourcegraph/projects/116?fullscreen=true) on Github. Please note that we don't use the backlog for tracking work that is expressly planned in our [roadmap](https://sourcegraph.productboard.com/roadmap/2599047-extensibility-fy22-roadmap). 
 
 To add an issue, tag it `team/extensibility` to notify the Extensibility team and put it in the "to triage" column of the board. Unless you're directly asked, only extensibility team members should move issues out of the "to triage" column on the board. A team member will confirm the issue is team-related and then move it to the appropriate column.
 
