@@ -104,7 +104,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             <li>Programmatically define changes by creating a declarative specification file</li>
                             <li>Execute specifications via a lightweight CLI</li>
                             <li>
-                                Track changeset lifecycle statuses across multiple code hosts via the Sourcegraph UI
+                                Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI
                             </li>
                         </ul>
                     </div>
