@@ -93,10 +93,10 @@ Specific product feedback about well-defined, small features can be found direct
 Every two weeks, we hold a review/retrospective meeting to reflect on the past two weeks. We use this meeting to:
 
 - Review the previous retro’s action items to ensure they get completed
-- We give _Shoutouts!_ to teammates to show appreciation for something they did that we appreciated.
-- Discuss things that went well in the past two weeks and that we should do more of / invest more into it.
-- We discuss the things that could have gone better and what we can learn from it to improve.
-- We talk about processes that we should revisit/refine/propose to improve our efficiency?
+- Give _Shoutouts!_ to teammates to show appreciation for something they did that we appreciated
+- Discuss things that went well in the past two weeks and that we should do more of / invest more into it
+- Discuss the things that could have gone better and what we can learn from it to improve
+- Talk about processes that we should revisit/refine/propose to improve our efficiency.
 
 We capture and assign actions to individual teammates. Teammates should consider actions coming out of the retrospective as a very high priority.
 
