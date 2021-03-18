@@ -123,7 +123,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                         <p>
                             The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
                             capability for reducing the hidden burden of updates pushed across teams and enabling us to
-                            increase our engineering velocity
+                            increase our engineering velocity.
                         </p>
                         <footer className="blockquote-footer">
                             Jared Hodge, Sr. Manager Developer Experience
