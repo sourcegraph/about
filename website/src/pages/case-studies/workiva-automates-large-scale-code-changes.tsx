@@ -74,8 +74,8 @@ export default ((props: any) => (
                     </p>
 
                     <ul className="mt-3">
-                        <li>Propagate a new version of React to all frontend repos</li>
-                        <li>Update API versions of kubernetes resources</li>
+                        <li>Propagate a new version of React to all frontend repositories</li>
+                        <li>Update API versions of Kubernetes resources</li>
                         <li>Migrate to a new CDN while updating all code references</li>
                         <li>Update UI component syntax as necessary to support a new version of the Dart language</li>
                         <li>Run test batch changes to ensure that new Chrome web browser releases wouldn't result in any software failures</li>
