@@ -38,7 +38,7 @@ Hubspot is a customer relationship management (CRM) software. We use HubSpot pri
 ​
 * [Happiness survey](https://app.hubspot.com/forms/2762526/417ec50b-39b4-41fa-a267-75da6f56a7cf/performance ): An example of an in-product form
 ​
-**[Landing page**s](https://app.hubspot.com/website/2762526/pages/landing)**: **we use landing pages for some marketing campaigns. Landing pages usually include a form.
+**[Landing pages](https://app.hubspot.com/website/2762526/pages/landing)**: we use landing pages for some marketing campaigns. Landing pages usually include a form.
 ​
 * eBook landing page ([HubSpot config](https://app.hubspot.com/content/2762526/edit/25681347967/content)): [https://info.sourcegraph.com/universal-code-search-ebook-req](https://info.sourcegraph.com/universal-code-search-ebook-req) 
 ​
