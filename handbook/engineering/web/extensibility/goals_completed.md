@@ -14,7 +14,7 @@ _Since Q4 isn't over yet, this is just a placeholder of things moved off the Ext
 1. **Make Sourcegraph extensions a core part of Sourcegraph users' experiences.**
    1. ✅Track anonymized, general usage of extensions to determine which extensions are most successful at adding value for our users to inform our future work.
    1. ✅ Build, maintain, and update API endpoints that are robust and immediately useful, to grow adoption of extensions. 
-   1. 🔄 Make the extensions action bar clear and scalable, and help users discover and use our extensions. (Moved into FY2)
+   1. 🔄 Make the extensions action bar clear and scalable, and help users discover and use our extensions. (Moved into FY22Q1)
 
 1. **Increase the weekly active users of all our code host integrations.**
    1. ✅ Maintain the existing native integrations and browser extensions. 
