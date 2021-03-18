@@ -46,7 +46,7 @@ Hubspot is a customer relationship management (CRM) software. We use HubSpot pri
 ​
 **[Integrations](https://app.hubspot.com/integrations-settings/2762526/installed)**: connect HubSpot with other tools. For example, we have a ZoomInfo integration that will enrich Contact fields with ZoomInfo data if available. The most critical integration is the Salesforce integration, which sends contact data between HubSpot and Salesforce.
 ​
-**[Workflow**s](https://app.hubspot.com/workflows/2762526): a way to automate tasks. We use workflows heavily to update custom fields in Contact records. They’re also able to update customer records (e.g. ZoomInfo) or update data in other tools (e.g. Salesforce campaigns) via our integrations . 
+**[Workflows](https://app.hubspot.com/workflows/2762526)**: a way to automate tasks. We use workflows heavily to update custom fields in Contact records. They’re also able to update customer records (e.g. ZoomInfo) or update data in other tools (e.g. Salesforce campaigns) via our integrations . 
 ​
 * [Update a Contact’s Original Source based on the First Source URL](https://app.hubspot.com/workflows/2762526/platform/flow/53778208/edit ) 
 ​
