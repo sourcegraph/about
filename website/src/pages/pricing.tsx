@@ -87,7 +87,7 @@ export default ((props: any) => (
                                             Up to 10 users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            Community support<br/>&nbsp;
+                                            Community support on our public issue tracker<br />&nbsp;
                                         </PricingPlanProperty>
                                     </>
                                 }
@@ -110,7 +110,7 @@ export default ((props: any) => (
                                             Unlimited users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            SLA with dedicated customer engineer<br/>and private Slack channel
+                                            SLA with dedicated customer engineer<br />and private Slack channel
                                         </PricingPlanProperty>
                                     </>
                                 }
@@ -125,15 +125,17 @@ export default ((props: any) => (
 
                     <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10 text-center">
-                            <blockquote className="blockquote pricing-page__quote pricing-page__quote--in-content">
-                                <p>
-                                    Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
+                            <a href="/case-studies/lyft-monolith-to-microservices/" className="pricing-page__quote-link">
+                                <blockquote className="blockquote pricing-page__quote pricing-page__quote--in-content text-dark">
+                                    <p>
+                                        Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
                                 </p>
-                                <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
-                                <div className="d-flex justify-content-center my-4">
-                                    <img src="/external-logos/lyft-logo.svg" width="87px" alt="Lyft" />
-                                </div>
-                            </blockquote>
+                                    <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
+                                    <div className="d-flex justify-content-center my-4">
+                                        <img src="/external-logos/lyft-logo.svg" width="87px" alt="Lyft" />
+                                    </div>
+                                </blockquote>
+                            </a>
                         </div>
                     </div>
 
@@ -154,18 +156,21 @@ export default ((props: any) => (
                                     <div className="col-md-6 mx-auto mb-4 pr-6">
                                         <ol className="pricing-plan__features list-group list-group-flush mr-5">
                                             <PricingPlanFeature
+                                                key="team-feature-1"
                                                 info={{ label: "15 additional users (25 total)", description: "" }}
                                                 value={true}
                                                 tag="li"
                                                 className="list-group-item bg-transparent border-0 px-0"
                                             />
                                             <PricingPlanFeature
+                                                key="team-feature-2"
                                                 info={{ label: "User and admin roles", description: "Allow only certain users (site admins) to view and edit site configuration and repository/code host credentials" }}
                                                 value={true}
                                                 tag="li"
                                                 className="list-group-item bg-transparent border-0 px-0"
                                             />
                                             <PricingPlanFeature
+                                                key="team-feature-3"
                                                 info={{ label: "Email support", description: "" }}
                                                 value={true}
                                                 tag="li"
@@ -201,15 +206,17 @@ export default ((props: any) => (
 
                     <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10 text-center">
-                            <blockquote className="blockquote pricing-page__quote pricing-page__quote--in-content">
-                                <p>
-                                    Sourcegraph pays for itself many times over—it’s a game changer.
+                            <a href="/case-studies/criteo-tackles-big-code/" className="pricing-page__quote-link">
+                                <blockquote className="blockquote pricing-page__quote pricing-page__quote--in-content text-dark">
+                                    <p>
+                                        Sourcegraph pays for itself many times over—it’s a game changer.
                                 </p>
-                                <footer className="blockquote-footer">François Jehl, Senior Engineering Manager, Criteo</footer>
-                                <div className="d-flex justify-content-center my-4">
-                                    <img src="/external-logos/criteo-logo.svg" width="156px" alt="Criteo" />
-                                </div>
-                            </blockquote>
+                                    <footer className="blockquote-footer">François Jehl, Senior Engineering Manager, Criteo</footer>
+                                    <div className="d-flex justify-content-center my-4">
+                                        <img src="/external-logos/criteo-logo.svg" width="156px" alt="Criteo" />
+                                    </div>
+                                </blockquote>
+                            </a>
                         </div>
                     </div>
 
@@ -217,7 +224,7 @@ export default ((props: any) => (
 
                 </div>
             </div>
-            <TrySourcegraph className="my-6" demoCta={false} />
+            <TrySourcegraph className="my-6" demoFormURL="" />
         </div>
     </Layout>
 )) as React.FunctionComponent<any>

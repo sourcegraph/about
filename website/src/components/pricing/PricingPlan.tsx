@@ -43,7 +43,7 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         description: 'Code navigation for 30+ languages, with hovers, definitions, and references across repositories',
     },
     batchChanges: {
-        label: 'Batch changes (available add-on)',
+        label: 'Batch Changes (available add-on)',
         description:
             'Automate large-scale code changes across all of your repositories and code hosts.',
     },

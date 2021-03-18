@@ -5,6 +5,12 @@
         margin: 0 auto;
     }
 
+    &__quote-link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
     &__quote {
         margin: 0 auto;
         padding: 0 2.5rem;
