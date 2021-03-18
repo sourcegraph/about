@@ -7,7 +7,7 @@ The distribution team is responsible for making Sourcegraph easy to deploy, scal
 ## Contact
 
 - Slack: #distributioneers channel or @distribution
-- [Support rotation](#support-rotation)
+- For support requests, please use our dedicated [support rotation](#support-rotation)
 - File issues: [team/distribution](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) label
 
 ## Team communication
@@ -53,7 +53,7 @@ See [Goals](goals.md)
   - [Dave Try](../../../company/team/index.md#dave-try)
   - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
   - FQ1 [distribution engineer](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
-  - FQ2 [Robert Lin](../../../company/team/index.md#robert-lin)
+  - FQ2 [Robert Lin](../../../company/team/index.md#robert-lin) (early July)
   - FQ3 hire
 
 ## On-call rotation

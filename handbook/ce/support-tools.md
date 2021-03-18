@@ -7,7 +7,7 @@ When you first start in support, the list of tools to set-up can feel like a lot
 * Github is where our handbook lives.
 * Zoom is how we connect synchronously. 
 * Gmail is mostly for notifications.
-* Google calendar is for your own calendar, as well as shared calendars (like the CS team calendar).
+* Google calendar is for your calendar, as well as shared calendars (like the CS team calendar).
 * Gsuite is for drafts, slide decks, and spreadsheets.
 * Lattice is to facilitate our for our twice yearly [review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles).
 * Lever is for hiring.
@@ -46,12 +46,12 @@ The best way to use Zendesk as an agent is via the web app. The mobile app is ni
 Our job requires that at least one of us is actively paying attention to what's coming into Zendesk between 9am-5pm pacific Monday - Friday. The only time the team expects you to not be logged in during your working hours is during your focus blocks as listed in our [schedule](https://about.sourcegraph.com/handbook/ce/support-schedule). Otherwise, if you need to focus, just let the team know in our #customer-support-chat Slack channel so we can coordinate and make sure to have you covered!
 
 ### Notifications
-Set your notifications however you see fit to make sure you are able to help monitor the queue. We also let Zendesk notify us via email every time there is a new ticket.
+Set your notifications however you see fit to make sure you are able to help monitor the queue. 
 
 ### Views
 When you log into Zendesk, all tickets are organized by the following views:
 
-* **Unassigned tickets.** All new tickets that are waiting for an owner.
+* **Unassigned tickets.** All new tickets that no one on the team has taken accountability for yet
 * **Your unsolved tickets.** All of your tickets that you are actively working on.
 * **All unsolved tickets.** All tickets from across the entire team that everyone is actively working on.
 * **Recently solved tickets.** All tickets that have been moved to solved status (tickets only stay in this status for 16 business hours and then they move to closed). When in a solved state, if customers reply this ticket re-opens. If in a closed state and the customer replies, a new ticket is created.
@@ -69,7 +69,7 @@ When you close a ticket, these are the required fields you must populate:
 * **Lifecycle:** Designates whether the request is associated with a customer when they are in the pre-sales or post-sales part of their lifecycle with us
 * **Official type:** Designates whether this is a question, defect report, or help request
 * **Official priority:** Designates whether the priority is p0, p1, or p2 per our definitions outlined in our [prioritization guidelines](https://about.sourcegraph.com/handbook/ce/support-prioritization). 
-* **Engineering team:** Designates which engineering team owns the part of the product or feature associated with the ticket (think, if I got help/needed help which engineering team did I go to/would have gone to?)
+* **Engineering team:** Designates which engineering team is responsible for the part of the product or feature associated with the ticket (think, if I got help/needed help which engineering team did I go to/would have gone to?)
 
 ### Why there are duplicate ticket data fields
 In addition to the required fields noted above, we also have these fields that seem duplicative...
@@ -89,6 +89,9 @@ The schedule in Zendesk reflects our SLA hours and is set to 9-5 pacific, Monday
 Since we are global team, we do not add every holiday that everyone celebrates. We only add the holidays where the majority/all of the team is unavailable.
 
 The SLA timer reflects our most aggressive SLA and for many customers, we have more time to respond and invoke this latitude as necessary as outlined in our [prioritization guidelines](https://about.sourcegraph.com/handbook/ce/support-prioritization). 
+
+### Default to private/internal notes
+We have Zendesk set to default to private/internal notes. Since much of our work happens in Slack and we only use internal notes, this ensures we are not sending out-of-context emails by forgetting to change the toggle.
 
 ### Automations
 We have a few automations set-up to streamline our workflow:

@@ -13,7 +13,7 @@ const DESCRIPTION =
 const STARTER_FEATURES: Features = {
     codeSearch: true,
     codeIntelligence: true,
-    codeChangeManagementCampaigns: false,
+    batchChanges: false,
     codeHostIntegration: true,
     api: true,
     selfHosted: true,
@@ -72,7 +72,7 @@ export default ((props: any) => (
                                     </>
                                 }
                                 features={STARTER_FEATURES}
-                                beforeCampaignsFragment={<li className="mt-4 list-group-item border-0" />}
+                                beforeBatchesFragment={<li className="mt-4 list-group-item border-0" />}
                                 buttonLabel="Deploy"
                                 buttonClassName="btn-outline-primary"
                                 buttonHref="https://docs.sourcegraph.com#quickstart-guide"
@@ -98,7 +98,7 @@ export default ((props: any) => (
                                     </>
                                 }
                                 features={TEAM_FEATURES}
-                                beforeCampaignsFragment={<li className="mt-4 list-group-item border-0" />}
+                                beforeBatchesFragment={<li className="mt-4 list-group-item border-0" />}
                                 buttonLabel="Buy now"
                                 buttonClassName="btn-success"
                                 buttonHref="https://sourcegraph.com/subscriptions/new"
@@ -129,7 +129,7 @@ export default ((props: any) => (
                                 features={{
                                     ...TEAM_FEATURES,
                                     singleSignOn: true,
-                                    codeChangeManagementCampaigns: true,
+                                    batchChanges: true,
                                     multipleCodeHosts: true,
                                     repositoryPermissions: true,
                                     optimizedRepositoryUpdates: true,
@@ -141,7 +141,7 @@ export default ((props: any) => (
                                     customContractLegalBillingTerms: true,
                                     unlimitedCode: true,
                                 }}
-                                beforeCampaignsFragment={
+                                beforeBatchesFragment={
                                     <span className="text-muted pl-4 small mt-4">Available add-ons:</span>
                                 }
                                 buttonLabel="Contact us"

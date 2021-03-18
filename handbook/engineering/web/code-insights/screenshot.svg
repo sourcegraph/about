@@ -482,7 +482,7 @@
                                 </a>
                             </g>
                             <g data-tag="li" id="nav-item4" class="nav-item" data-z-index="auto" data-stacking-context="true" role="listitem" aria-owns="nav-link4">
-                                <a href="https://sourcegraph.com/campaigns" data-tag="a" id="nav-link4" class="nav-link btn btn-link px-1 text-decoration-none d-flex align-items-center" data-z-index="auto" data-stacking-context="true" role="link" aria-owns="icon-inline1 icon-inline2 d-none3">
+                                <a href="https://sourcegraph.com/batch-changes" data-tag="a" id="nav-link4" class="nav-link btn btn-link px-1 text-decoration-none d-flex align-items-center" data-z-index="auto" data-stacking-context="true" role="link" aria-owns="icon-inline1 icon-inline2 d-none3">
                                     <g data-tag="svg" id="icon-inline1" class="icon-inline d-lg-none" data-z-index="auto" data-stacking-context="true" mask="url(#mask-for-icon-inline11)" aria-owns="path11 path12 path13 path14">
                                         <mask id="mask-for-icon-inline11">
                                             <rect width="0" height="0" x="0" y="0" fill="#ffffff"/>

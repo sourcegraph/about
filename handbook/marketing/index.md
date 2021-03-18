@@ -5,7 +5,9 @@
 - [Messaging](messaging.md)
     - [What is Sourcegraph?](messaging.md#sourcegraph-value-proposition)
     - [What problems does Sourcegraph solve?](messaging.md#what-problems-does-sourcegraph-solve)
+    - [Batch Changes positioning](batch_changes_positioning.md)
 - [Product marketing](product_marketing.md)
+    - [Marketing launch tiers](marketing_launch_tiers.md)
 - [Content Marketing](content.md)
     - [Editing blog posts](editing_blog_posts.md)
     - [Creating blog posts](creating_blog_posts.md)
@@ -25,8 +27,7 @@
         - We will be hiring a Managing Editor, Social Media Marketing Manager, Producer (video and podcast production), and Content Marketing Manager
     - [Lisa Tagliaferri](../../company/team/index.md#lisa-tagliaferri-flexible), Director of Developer Education
         - We will be hiring technical educators
-    - Sarah Reece, Director of Demand Generation
-        - [Aileen Agricola](../../company/team/index.md#aileen-agricola-she-her), Senior Digital Marketing Manager
+    - [Sarah Reece](https://about.sourcegraph.com/company/team#sarah-reece-she-her), Director of Demand Generation
         - Lori Heyman, Digital Marketing Programs
     - Tommy Pesavento, Director of Brand Design
         - We will be hiring a brand design team
