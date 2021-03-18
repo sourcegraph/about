@@ -7,7 +7,7 @@ An overview of the tools we use for CustomerOps, with some useful links.
 ​
 Hubspot is a customer relationship management (CRM) software. We use HubSpot primarily for marketing operations. Any marketing activity that generates leads will funnel leads into HubSpot. In order to capture these leads, we embed HubSpot forms onto our marketing websites (about.sourcegraph.com, info.sourcegraph.com), and use HubSpot landing pages
 ​
-**[Contact**s](https://app.hubspot.com/contacts/2762526/contacts/list/view/all/): all generated leads are turned into HubSpot Contacts.
+**[Contacts](https://app.hubspot.com/contacts/2762526/contacts/list/view/all/)**: all generated leads are turned into HubSpot Contacts.
 ​
 ​
 *Built-in fields ([full list](https://knowledge.hubspot.com/contacts/hubspots-default-contact-properties )):
