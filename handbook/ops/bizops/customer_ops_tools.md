@@ -10,7 +10,7 @@ Hubspot is a customer relationship management (CRM) software. We use HubSpot pri
 **[Contacts](https://app.hubspot.com/contacts/2762526/contacts/list/view/all/)**: all generated leads are turned into HubSpot Contacts.
 ​
 ​
-*Built-in fields ([full list](https://knowledge.hubspot.com/contacts/hubspots-default-contact-properties )):
+* Built-in fields ([full list](https://knowledge.hubspot.com/contacts/hubspots-default-contact-properties)):
 ​
     * Basic contact info: Name, Email, Company, etc.
 ​
