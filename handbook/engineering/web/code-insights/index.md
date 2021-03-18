@@ -15,7 +15,7 @@ The code insights team is responsible for building and delivering code insights 
 
 ## Mission
 
-To create a Sourcegraph code insights product that exposes high-level context, trends, and other information about your code. 
+To create a Sourcegraph code insights product that answers all your important high-level questions about what's in your code and how it's changing. 
 
 ## Vision 
 
