@@ -26,7 +26,7 @@ TODO
 
 ## How we work
 
-**Internal BizOps projects:**  We use [GitHub issues in the Sourcegraph analytics repository](https://github.com/sourcegraph/analytics/issues) to document projects, and the [analytics kanban board](https://github.com/orgs/sourcegraph/projects/63) for team-wide prioritization and current projects.
+We use [GitHub issues in the Sourcegraph analytics repository](https://github.com/sourcegraph/analytics/issues) to document projects, and the [analytics kanban board](https://github.com/orgs/sourcegraph/projects/63) for team-wide prioritization and current projects.
 
 ## How to work with us
 
