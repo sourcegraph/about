@@ -16,9 +16,11 @@ export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; cla
                 </p>
             </div>
             <div className="col-md-6 pt-3 align-self-center text-center">
-                <Link className="btn btn-outline-secondary mx-2 mb-3" to={demoFormURL} title="Request a demo">
-                    Schedule a demo
-                </Link>
+                {demoFormURL &&
+                    <Link className="btn btn-outline-secondary mx-2 mb-3" to={demoFormURL} title="Request a demo">
+                        Schedule a demo
+                    </Link>
+                }
                 <Link className="btn btn-primary mx-2 mb-3" to="/get-started" title="Try Sourcegraph now">
                     Try Sourcegraph now
                 </Link>

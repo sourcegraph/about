@@ -10,17 +10,18 @@ Things happen pretty much in this order...and at every step, our decisions and a
 
 3. **A CSE decides which conversation needs attention next.**  As a general rule, we help in the order the request was received and aim to not have anyone waiting more than a couple of hours for a meaningful first response. In situations where we have too much work to honor this, we identify what needs to be handled next by following the "making hard decisions" list in [our prioritization guidance](https://about.sourcegraph.com/handbook/ce/support-prioritization).
 
-4. **A CSE takes ownership of a conversation in Zendesk.** From that moment, the CSE owns making sure the issue is resolved. How many open, active issues a CSE can handle simultaneously depends. The team will always have to work together to make sure everyone has the time and space they need to solve issues effectively. If any of us feel overwhelmed, we talk about it together and figure out a solution so that workloads are balanced and allow us to do our best work. 
+4. **A CSE takes accountability for a conversation in Zendesk.** From that moment, the CSE is accountable for making sure the issue is resolved. How many open, active issues a CSE can handle simultaneously depends. The team will always have to work together to make sure everyone has the time and space they need to solve issues effectively. If any of us feel overwhelmed, we talk about it together and figure out a solution so that workloads are balanced and allow us to do our best work. 
 
 5. **The CSE pauses to build context.** This is the most counterintuitive, unique step in our workflow. It is also the step that does the most to ensuring the kind of customer experience we want to provide. You can get full context for the customer by: 
 	1. Determining what kind of customer it is by reviewing our [support plans](https://about.sourcegraph.com/support/) and seeing status in Salesforce (in the future, this will render in Zendesk)
-	2. Talking with the CE who is assigned (listed in Salesforce on the customer account record), if one is assigned
-	2. Looking at the Salesforce data surfaced in Zendesk (this is coming soon -- so for now it's just looking in Salesforce)
-	3. The special notes in Zendesk (which should always match what we have in our [Exceptions for Customers document](https://docs.google.com/document/d/1YeRxSeVizEJPE1JNA5FG7mIz3ucjSxYXkEBX2XEytJU/edit)
-	4. Relevant Looker dashboards (for example [the distribution board](https://sourcegraph.looker.com/dashboards-next/163))
-	5. Looking at other recent cases 
-	6. To find which Sourcegraph version a company is running, visit the [instances Looker dashboard](https://sourcegraph.looker.com/looks/436), find the row for the customer's instance, and look at the version number in the row's **Latest Version** column. Some customer instances are offline or only [provide critical telemtry](https://docs.sourcegraph.com/admin/pings#critical-telemetry). The [full list is in Google Drive](https://docs.google.com/document/d/18q-xbHl53hg_y_0xX-buZpD04vMv3vJrqiXd9IeeE64/edit). If you don't see a customer in the Looker dashboard or the Google list, ask in #analytics on Slack. 
-	7. Depending on where the case originated, we may need to check with our internal teammates to ensure we have full context. For example, again, a quick check with the CE might yield invaluable information. If the issue is from marketing, we should see if they have any considerations for our response.
+	2. Talking with the CE who is assigned (listed in Salesforce on the customer account record -- this will be mapped into Zendesk soon), if one is assigned
+	2. Looking at the customer health and customer engagement ratings (listed in Salesforce on the customer account record -- this will also be mapped into Zendesk soon)
+	3. Looking at the Salesforce data surfaced in Zendesk (again, this will be mapped into Zendesk soon -- so for now it's just looking in Salesforce)
+	4. The special notes in Zendesk (which should always match what we have in our [Exceptions for Customers document](https://docs.google.com/document/d/1YeRxSeVizEJPE1JNA5FG7mIz3ucjSxYXkEBX2XEytJU/edit)
+	5. Relevant Looker dashboards (for example [the distribution board](https://sourcegraph.looker.com/dashboards-next/163))
+	6. Looking at other recent cases 
+	7. To find which Sourcegraph version a company is running, visit the [instances Looker dashboard](https://sourcegraph.looker.com/looks/436), find the row for the customer's instance, and look at the version number in the row's **Latest Version** column. Some customer instances are offline or only [provide critical telemtry](https://docs.sourcegraph.com/admin/pings#critical-telemetry). The [full list is in Google Drive](https://docs.google.com/document/d/18q-xbHl53hg_y_0xX-buZpD04vMv3vJrqiXd9IeeE64/edit). If you don't see a customer in the Looker dashboard or the Google list, ask in #analytics on Slack. 
+	8. Depending on where the case originated, we may need to check with our internal teammates to ensure we have full context. For example, again, a quick check with the CE might yield invaluable information. If the issue is from marketing, we should see if they have any considerations for our response.
 	
 	Spend 10-15 minutes just orienting to that customer before even looking at the details of the issue.
  
@@ -28,15 +29,14 @@ Things happen pretty much in this order...and at every step, our decisions and a
 
 	Virginia is primarily responsible for triaging new tickets and moving things over to our unassigned queue for step 5 above. Even after triage, since these are our Enterprise customers, we do one of the following:
 	1. **trial- channels.** Always pause to confirm with a CE first if it's best for you to help or not. These are pre-sales situations and require a bit more upfront collaboration. Create a post in our #customer-support channel and @ the CE to confirm. If they agree, also have the CE review your response first. We want to do everything we can to help customers say yes to Sourcegraph and this kind of close collaboration is hugely valuable. If the CE wants to handle it, leave an internal note on the ticket in Zendesk and set the ticket to solved.
-	2. **support- channels.** Comment in the thread from the customer in Slack with "I'll help you with this. @[CE] let me know if you have any thoughts." This will signal ownership to the CE and let the customer know we are on it. 
-	3. **Taking ownership of more than one issue at a time.** If you see a customer has posted a few questions at once, go ahead and take ownership of them all. Often when customers do this the issues end up being related and it will be a better experience for everyone involved if the same person handles them all. This may require you to get help on other tickets and that is okay! Just let the team know and we will figure it out.		
+	2. **support- channels.** Comment in the thread from the customer in Slack with "I'll help you with this. @[CE] let me know if you have any thoughts." This will signal your accountability to the CE and let the customer know we are on it. 
+	3. **Taking accountability for more than one issue at a time.** If you see a customer has posted a few questions at once, go ahead and take accountability for them all. Often when customers do this the issues end up being related and it will be a better experience for everyone involved if the same person handles them all. This may require you to get help on other tickets and that is okay! Just let the team know and we will figure it out.		
 
 7. **The CSE responds within our SLA response time as stated [here](https://about.sourcegraph.com/handbook/ce/support#our-service-level-agreements-slas)**. The goal of our first responses is to be helpful, show progress, and not ever have anyone wondering what's next. As such, our first response is always informed by 1) considering full context for the customer, the issue, and the situation (we did most of this in step 5) and 2) first trying to solve the issue. Sometimes we may need to ask clarifying questions and that's okay! Just be sure to share context with the customer so they understand why we need the information we ask for. 
 
 8. **The CSE ensures the issue is resolved.** This step is the biggest step. It could mean identifying and filing a defect. It could mean helping the customer figure out what they need to do. If we get stuck, that's okay! It will happen. A lot. Here are the steps we take when we are stuck:
 	1.  Ask our teammates in our #customer-support-chat Slack channel. 
-	2. If we collectively don't know the answer, then we seek help from our CE teammates by posting in our #customer-support Slack channel and @ mentioning @CE. *Note: we do this through 2021-03 as part of onboarding* 
-	3. If we are still stuck, we engage engineering following the steps outlined [here](https://about.sourcegraph.com/handbook/ce/engaging-other-teams).  
+	2. If we collectively don't know the answer, then we engage engineering following the steps outlined [here](https://about.sourcegraph.com/handbook/ce/engaging-other-teams).  
 	
 9. **The CSE resolves the issue.** We don't consider something resolved unless the customer does/would. Resolution happens in a few ways. Only when one of these is true do we designate a case "closed" in Zendesk -- and if we were working in Slack, we leave that channel.	
 	1. We help the customer figure out what they need to do and they confirm they have done it and agree the issue is resolved AND we complete any internal tasks born from working on the ticket (like updating documentation).
@@ -46,9 +46,9 @@ Things happen pretty much in this order...and at every step, our decisions and a
 	5. If we are still working on finding the answer and the customer stops responding, we email a couple more times to see if they had a chance to look at our last response. If they still don't respond, and they have a CE, talk with them to see if they have another way to get in touch and see what's going on. If not, or ff the customer does not have a CE, AND we complete any internal tasks born from working on the ticket (like updating documentation), then it's okay to close the ticket at this point.
 
 10. **While we work, we keep Zendesk, Slack, and/or Salesforce up-to-date.** If a ticket originates in Slack, you'll still need to keep Zendesk up to date. Switch the requestor to the person asking for help in Slack so that the issue ties to the right customer. Use the internal notes function in Zendesk to leave notes for yourself to track your progress and decisions (these will also appear in Salesforce for others to see). A summary of what happened should be obvious in Zendesk even if all the work happened in Slack. Also, we will often learn details about a customer's environment, etc that we should keep in Salesforce. We update and enter new such data in Salesforce as we learn it. *Note: There will be more details about this soon; we have a bit figure out still for how this will work, what data we need.* This data is then rendered in Zendesk so we don't have to ask the customer for it again. Zendesk also always reflects where we are at in our process by using the status function:
-	1. New = a CSE has yet to take ownership
-	2. Open = a CSE owns the next step
-	3. Pending = the customer owns the next step
+	1. New = a CSE has yet to taken accountability
+	2. Open = a CSE is accountable for the next step
+	3. Pending = the customer is accountable for the next step
 	4. On-hold = it's a defect and we are waiting for engineering to fix it
 	5. Solved = the issue is resolved as described above
 	6. Closed = the final state (solved tickets move to this status automatically after 16 business hours)
@@ -101,7 +101,7 @@ As explained above, our customers are able to initiate conversations for help vi
 * **Those involved:** CE/support/engineering
 * **Details:** *Note: We still need to figure out exactly how support will be involved.* You can see which customers have such contracts in our [Exceptions for Customers document](https://docs.google.com/document/d/1YeRxSeVizEJPE1JNA5FG7mIz3ucjSxYXkEBX2XEytJU/edit).
 
-### Customer-owned Slack accounts
+### External (customer) Slack accounts
 * **Purpose:** We have a couple customers who were not able to join our Slack account, so we agreed to join theirs. Generally, we don't want to do this because it's very hard to scale, have coverage when folks are not working, etc.
 * **Those involved:** CE > support
 * **Details:** CEs check with support before agreeing to this. For these customers, we assign two CSEs to be in the customer's Slack account so we have optimal coverage. Support manually creates Zendesk tickets to track this work. ou can see which customers have such set-up in our [Exceptions for Customers document](https://docs.google.com/document/d/1YeRxSeVizEJPE1JNA5FG7mIz3ucjSxYXkEBX2XEytJU/edit).

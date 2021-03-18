@@ -43,7 +43,7 @@ Any questions about deployment should be routed to the [Distribution team](../en
 
 **Keywords**: `scaling`, `resources`, `performance`/`perf`, `monitoring`, `Grafana`, `Prometheus`, `alert`, `dashboard`
 
-Questions about specific alerts and graph panels should be routed to the team that owns the alert or panel, as indicated by relevant entry in [Alert solutions](https://docs.sourcegraph.com/admin/observability/alert_solutions) or the [Dashboards reference](https://docs.sourcegraph.com/admin/observability/dashboards) respectively.
+Questions about specific alerts and graph panels should be routed to the team that is responsible for the alert or panel, as indicated by relevant entry in [Alert solutions](https://docs.sourcegraph.com/admin/observability/alert_solutions) or the [Dashboards reference](https://docs.sourcegraph.com/admin/observability/dashboards) respectively.
 
 Any other questions about monitoring and performance should be routed to the [Distribution team](../engineering/distribution/index.md).
 
@@ -137,7 +137,7 @@ Selecting priority is more of an art than a science. Start with the issue and it
 
 After you file the Github issue, alert the relevant engineering team you did so in Slack. Keep it simple and always provide 1) a brief description of what you need, 2) link to the Github issue, and 3) the context around timeline (for example: it's okay to look at this tomorrow or later in the week).
 
-When posting in Distribution team's Slack channel, @ mention the [on-call dev](../engineering/distribution/index.md#support-rotation).
+When posting in Distribution team's Slack channel, @ mention the [on-call dev](../engineering/distribution/index.md#support-rotation) (not the team @ group -- while we use the @ group for all other engineering teams, most of our help requests go to Distribution, so they have a support rotation to help let the team have more focus time)
 
 ### Defects
 
@@ -149,7 +149,7 @@ Ask the engineer helping you to see if they would like to work directly with the
 
 ### Resolution
 
-Even when engineering is helping, you own the work and it is your job to reach resolution as outlined in our [workflow](https://about.sourcegraph.com/handbook/ce/support-workflow).
+Even when engineering is helping, you are accountable for the work and it is your job to reach resolution as outlined in our [workflow](https://about.sourcegraph.com/handbook/ce/support-workflow).
 
 ## And sometimes, we need help from teams outside of engineering ...
 

@@ -728,7 +728,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Adeola joins Sourcegraph fresh out of an engineering bootcamp after years of doing work that she never felt challenged or very excited about. Having studied Finance in undergrad, she knows a thing or two about credit and managing money, but really loves to talk about all things code. Adeola finds life to be awfully boring without purpose and meaning, and strives to become a better person both professionally and personally everyday. Real connections mean a lot to Adeola and she loves to engage with people who feel the same way. Outside of work, she loves going out to eat, watching basketball, sniffing candles, reading and relaxing.
 
 ## Patrick Dubroy (he/him)
-- Engineering Manager, Frontend Platform
+- Engineering Manager, Frontend platform
 - Munich, Germany 🇩🇪
 - GitHub: [pdubroy](https://github.com/pdubroy)
 - [patrick@sourcegraph.com](mailto:patrick@sourcegraph.com), [Twitter](https://twitter.com/dubroy), [LinkedIn](https://www.linkedin.com/in/pdubroy), [dubroy.com](https://dubroy.com/)
@@ -780,3 +780,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [stephmhay](https://github.com/stephmhay)
 - [steph@sourcegraph.com](mailto:steph@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/stephaniemhay)
 - Steph lives in Los Angeles and loves taking advantage of the perfect weather by getting outside as much as possible. After multiple failed attempts at surfing, she has finally accepted that she is much better suited to outdoor activities requiring little to no skill and has since taken up paddleboarding and long walks on the beach. Steph started her career in investment banking and also worked in venture investing before joining Sourcegraph.
+
+## Kelsey Brown (she/her)
+- Business Operations Analyst
+- Arlington, VA, USA 🇺🇸 
+- GitHub: [kelsey-brown](https://github.com/kelsey-brown)
+- [kelsey@sourcegraph.com](mailto:kelsey@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kelsey-brown-25220b68/)
+- Prior to Sourcegraph, Kelsey worked in consulting on projects related to strategy, business operations, and technology. Outside of work, Kelsey loves doing anything active, including weightlifting, snowboarding, and playing ultimate frisbee. She is currently based in the Washington, DC area, but hails from Chicago, and would therefore be happy to passionately defend the superiority of Chicago-style over New York-style pizza with you any day of the week.

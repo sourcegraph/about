@@ -18,8 +18,10 @@ This document contains the goals and work log for the search team's [2-week iter
 ### Implement `contains` filter predicate and document new additions
 - **Owner(s):** Rijnard, Camden
 - **Outcomes:**
-  - Finish implement `contains` filter predicate (see [#18584](https://github.com/sourcegraph/sourcegraph/issues/18584)) and pings metrics
+  - Finish implementing `contains` filter predicate (see [#18584](https://github.com/sourcegraph/sourcegraph/issues/18584)) and pings metrics
   - Document `select` and `contains` usage and examples (ship this release)
+- **Work log:**
+    - 2021-03-12: Initial `contains` implementation close to being merged. Started heavily refactoring our query processing which is slowing progress for evaluating more expressive queries like filter predicates, and will help address [perf/UX issues related streaming](https://github.com/sourcegraph/sourcegraph/issues/18203) (e.g., process queries natively by backends like Zoekt when possible, faster `not` queries, etc.)
 
 ### Enterprise contexts
 
@@ -28,7 +30,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - RFC reviewed and approved
     - MVP ready to be shipped (ideally within the 3.26 release)
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-03-12: RFC halfway reviewed. MVP not likely to be shipped within the next release, because it requires some internal testing to be confident. At this point, the MVP contains the ability to migrate version contexts, view search context "profile" page, and listing search contexts.
 
 ### Streaming
 
@@ -36,6 +38,11 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Outcomes:**
   - Streaming defaults to on for all environments.
   - Streaming release blockers fixed.
+- **Work log:**
+  - 2021-03-12:
+    - Nearly all integration tests run for streaming. One last release blocker left around duplicate results in or queries. Discussing solutions still in [#18203](https://github.com/sourcegraph/sourcegraph/issues/18203).
+    - Fixed "too large spans" in K8S logs. Root cause: we logged to spans ZoektSearch and ZoektSearchAll for every event coming from zoekt. Now we just log aggregates.
+    - Log "time to first result" to Honeycomb (to be reviewed [#19102](https://github.com/sourcegraph/sourcegraph/pull/19102)). Still open: log to Prometheus, add to ping.
 
 ### Exhaustive
 
@@ -46,6 +53,23 @@ This document contains the goals and work log for the search team's [2-week iter
   - src-cli for streaming done. For now what is missing is `-json` support.
   - Implement scheduler in Zoekt.
   - Initial release plan shared.
+- **Work log:**
+  - 2021-03-12:
+    - Scheduler for zoekt out for review. [zoekt#73](https://github.com/sourcegraph/zoekt/pull/74)
+    - src-cli now supports `-json` for streaming.
+
+### Code Monitoring
+- **Owner(s):** Juliana
+- **Outcomes:**
+   - Work is advanced on [Code Monitoring polish items](https://github.com/sourcegraph/sourcegraph/issues/17414)
+- **Work log:**
+   - 2021-03-12: Low cost polish items have been addressed.
+
+### Misc
+
+- **Work log:**
+  - 2021-03-12: Keegan :: Fixed most common panic in production around go symbols. [#19071](https://github.com/sourcegraph/sourcegraph/pull/19071)
+  - 2021-03-12: Stefan :: Tiny refactoring of graphqlbackend.seach_results.go: don't return nil, nil anywhere.
 
 ## 2021-02-22 to 2021-03-05
 

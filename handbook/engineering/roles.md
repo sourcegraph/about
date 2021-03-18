@@ -27,6 +27,17 @@ Engineering managers lead, grow, and develop teams of software engineers.
 - Support and coach teammates to grow in their careers and fulfill their responsibilities (examples: [1-1s](../leadership/1-1.md), [retrospectives](), [review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles/index.md), [compensation](../people-ops/compensation.md))
 - Grow the team in a sustainable way so that the team can accomplish more over time (examples: define open roles, maintain a hiring plan over time, source candidates with help from our talent org, define efficient and effective interview process, make hiring decisions).
 
+## Director of Engineering
+
+Directors lead, grow, and develop multiple teams in Engineering.
+
+### Responsibilities
+
+- Lead, organize, and support the work of multiple engineering teams to deliver on key initiatives that are critical to the success of Sourcegraph.
+- Recruit, hire, and grow excellent engineers and engineering managers to create a diverse team.
+- Model, teach, and apply [our values](../../../company/values.md) in everyday interactions.
+- Facilitate and sustain a healthy, inclusive team culture where everyone is set up to do their best work.
+
 ## VP Engineering
 
 ### Responsibilities

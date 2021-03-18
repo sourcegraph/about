@@ -5,12 +5,12 @@ import { PricingPlanFeature } from './PricingPlanFeature'
  * The features to display for pricing plans.
  */
 export interface Features {
-    codeSearch: true
-    codeIntelligence: true
+    codeSearch: boolean
+    codeIntelligence: boolean
     batchChanges: boolean
-    codeHostIntegration: true
-    api: true
-    selfHosted: true
+    codeHostIntegration: boolean
+    api: boolean
+    selfHosted: boolean
     userAndAdminRoles: boolean
     singleSignOn: boolean
     multipleCodeHosts: boolean
@@ -23,6 +23,7 @@ export interface Features {
     onlineTraining: boolean
     customContractLegalBillingTerms: boolean
     unlimitedCode: boolean
+    managedInstance: boolean
 }
 
 export interface FeatureInfo {
@@ -42,12 +43,12 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         description: 'Code navigation for 30+ languages, with hovers, definitions, and references across repositories',
     },
     batchChanges: {
-        label: 'Batch changes',
+        label: 'Batch changes (available add-on)',
         description:
-            'Batch changes help coordinate large-scale changes across many repositories. Batch changes are a paid add-on for all plans.',
+            'Automate large-scale code changes across all of your repositories and code hosts.',
     },
     codeHostIntegration: {
-        label: 'Code host integrations',
+        label: '1 code host integration',
         description:
             'Works with GitHub, GitLab, Bitbucket Server/Cloud, and other popular code hosts (or manually add repositories from any VCS)',
     },
@@ -112,6 +113,10 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         description:
             'Free and Team tiers limit the total amount of searchable code. Enterprise offers options that scale to any size codebase.',
     },
+    managedInstance: {
+        label: 'Managed instance (available add-on)',
+        description: "Managed instances are provisioned and managed by the Sourcegraph team so you can deploy Sourcegraph without having to worry about managing it.",
+    }
 }
 
 const FEATURE_ORDER: (keyof Features)[] = [
@@ -120,19 +125,20 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'codeHostIntegration',
     'api',
     'selfHosted',
-    'userAndAdminRoles',
-    'singleSignOn',
     'batchChanges',
     'multipleCodeHosts',
-    'repositoryPermissions',
-    'optimizedRepositoryUpdates',
-    'privateExtensions',
-    'deploymentMetricsAndMonitoring',
-    'backupRestore',
-    'customBranding',
-    'onlineTraining',
-    'customContractLegalBillingTerms',
     'unlimitedCode',
+    'repositoryPermissions',
+    'userAndAdminRoles',
+    'singleSignOn',
+    'optimizedRepositoryUpdates',
+    'deploymentMetricsAndMonitoring',
+    'privateExtensions',
+    'backupRestore',
+    'onlineTraining',
+    'managedInstance',
+    'customBranding',
+    'customContractLegalBillingTerms',
 ]
 
 interface Props {
@@ -143,7 +149,7 @@ interface Props {
     price: React.ReactFragment
     features: Features
 
-    beforeBatchesFragment: React.ReactFragment
+    isFree: boolean
 
     buttonLabel: string
     buttonClassName: string
@@ -162,7 +168,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     planProperties,
     features,
 
-    beforeBatchesFragment,
+    isFree,
 
     buttonLabel,
     buttonClassName,
@@ -171,7 +177,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
 }) => {
     const button = (
         <a
-            className={`pricing-plan__button btn ${buttonClassName} w-100 justify-content-center text-center d-inline-flex`}
+            className={`pricing-plan__button btn ${buttonClassName} w-100 mx-auto my-0 justify-content-center text-center d-flex`}
             href={buttonHref}
             onClick={buttonOnClick}
         >
@@ -182,26 +188,26 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     return (
         <div className={`pricing-plan card ${className}`}>
             <h2 className="card-title mt-3 mb-1 text-center pricing-plan__title">{name}</h2>
-            <div className="card-body">{button}</div>
-            <div className="card-body pt-1 text-center d-flex flex-column align-items-center">
-                <div className="mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
+            <div className="card-body pt-3 text-center d-flex flex-column align-items-center">
+                {button}
+                <div className="mt-4 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
                 {planProperties}
             </div>
-            <ol className="list-group list-group-flush py-3">
+            <ol className="pricing-plan__features list-group list-group-flush py-3">
+                {!isFree ? <li className="pricing-plan-feature list-group-item bg-transparent border-0 px-0">All of Free, plus:</li> : null}
                 {FEATURE_ORDER.map(feature => (
                     <>
-                        {feature === 'batchChanges' ? beforeBatchesFragment : null}
                         <PricingPlanFeature
                             key={feature}
                             info={FEATURE_INFO[feature]}
                             value={features[feature]}
                             tag="li"
-                            className="list-group-item bg-transparent border-0"
+                            className="list-group-item bg-transparent border-0 px-0"
                         />
                     </>
                 ))}
             </ol>
-            <div className="card-body">{button}</div>
+            {/* <div className="card-body">{button}</div> */}
         </div>
     )
 }
