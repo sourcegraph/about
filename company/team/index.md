@@ -10,7 +10,9 @@ To add yourself to this page:
 1. Under "Commit changes" at the bottom of the page, replace the "Update index.md" text with a summary of your change, e.g., Add Alex to team page.
 1. Click the green "Commit changes" button. If you do not see the green "Commit Changes" button, refer to step 1. Successful changes will become visible shortly (but not immediately).
 
-## Full Name (optional pronouns)
+**You can find the bio template below (all fields are optional).**
+
+## Full Name (pronouns)
 
 - Role(s)
 - City, region, country, country flag emoji (optional: add yourself to [the team locations map](locations.md)!)
