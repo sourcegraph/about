@@ -2,7 +2,6 @@
 ​
 An overview of the tools we use for CustomerOps, with some useful links.
 ​
-** **
 ​
 **HubSpot**
 ​
