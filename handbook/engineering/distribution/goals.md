@@ -4,7 +4,7 @@ Goals are continuously updated and reviewed. If you find these goals do not refl
 
 ## Goals
 
-Progress toward our goals is described in our [roadmap](#roadmap) and the linked Producboards.
+Progress toward our goals is described in our [roadmap](#roadmap) and the linked Productboards.
 
 ### Understand Sourcegraph site-admin requirements
 
