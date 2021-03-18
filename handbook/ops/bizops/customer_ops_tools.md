@@ -32,7 +32,7 @@ Hubspot is a customer relationship management (CRM) software. We use HubSpot pri
 ​
 * Contacts are created when users sign up on Cloud, install an instance, fill out one of our forms, or speak to a sales rep.
 ​
-**[Form**s](https://app.hubspot.com/forms/2762526): all forms you see on our marketing websites are HubSpot forms. Whenever a user fills out a form, a Contact record is created in HubSpot.
+**[Forms](https://app.hubspot.com/forms/2762526)**: all forms you see on our marketing websites are HubSpot forms. Whenever a user fills out a form, a Contact record is created in HubSpot.
 ​
 * [Demo request form](https://app.hubspot.com/forms/2762526/310000a0-2b6b-4da2-89e9-2be930a8a298/performance)
 ​
