@@ -9,16 +9,15 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'TODO',
+            title: 'Workiva reduces the time it takes to make large-scale code changes by 80%',
             description:
-                'TOOD',
-            // image: "https://about.sourcegraph.com/lyft-sourcegraph-case-study-og-embed.jpg"-pending approval
+                'Workiva case study. Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
         }}
         className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="Workiva"
-            title="TODO page title"
+            title="Workiva reduces the time it takes to make large-scale code changes by 80%"
             logo="/external-logos/workiva-logo.svg"
             quote={{
                 quote:
@@ -72,12 +71,12 @@ export default ((props: any) => (
 
                     <p>
                         As an organization that values paying down tech debt, Workiva’s Client Platform team started using Sourcegraph Batch Changes to help them efficiently propagate updates to dependencies across all of their repositories without any ongoing maintenance. The team has already used Batch Changes to:
-                        <ul>
+                        <ul className="mt-3">
                             <li>Propagate a new version of React to all frontend repos</li>
                             <li>Update API versions of kubernetes resources</li>
                             <li>Migrate to a new CDN while updating all code references</li>
                             <li>Update UI component syntax as necessary to support a new version of the Dart language</li>
-                            <li>Run test batch changes to ensure that new chrome web browser releases wouldn't result in any software failures</li>
+                            <li>Run test batch changes to ensure that new Chrome web browser releases wouldn't result in any software failures</li>
                         </ul>
                     </p>
 
@@ -103,13 +102,12 @@ export default ((props: any) => (
                         quote="Using a tool that isn’t maintained by us saves us time and drives better adoption. In comparison to the tool we built internally, it's much easier to work with, more feature complete, and well documented."
                         author="Evan Weible, Staff Software Engineer, Workiva"
                     />
-                    <br/>
+                    <br />
                 </div>
             </ContentSection>
         </CaseStudyPage>
         <CaseStudyRequestDemoForm
-            title="Need help with your monolith to microservices migration?"
-            description="Sourcegraph Universal Code Search can ensure a safe and efficient deployment plan for migrating your monolith to microservices. Get in touch to schedule a demo."
+            demoFormURL="/contact/request-batch-changes-demo"
         />
     </Layout>
 )) as React.FunctionComponent<any>

@@ -12,8 +12,8 @@ const CASESTUDIES: {
         {
             name: 'Workiva',
             logo: '/external-logos/workiva-vector-logo.svg',
-            title: 'Workiva blah blah',
-            url: '/case-studies/workiva-batch-changes',
+            title: 'Workiva reduces the time it takes to make large-scale code changes by 80%',
+            url: '/case-studies/workiva-automates-large-scale-code-changes',
         },
         {
             name: 'CERN',
