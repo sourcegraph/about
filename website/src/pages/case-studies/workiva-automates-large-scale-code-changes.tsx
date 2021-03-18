@@ -71,14 +71,15 @@ export default ((props: any) => (
 
                     <p>
                         As an organization that values paying down tech debt, Workiva’s Client Platform team started using Sourcegraph Batch Changes to help them efficiently propagate updates to dependencies across all of their repositories without any ongoing maintenance. The team has already used Batch Changes to:
-                        <ul className="mt-3">
-                            <li>Propagate a new version of React to all frontend repos</li>
-                            <li>Update API versions of kubernetes resources</li>
-                            <li>Migrate to a new CDN while updating all code references</li>
-                            <li>Update UI component syntax as necessary to support a new version of the Dart language</li>
-                            <li>Run test batch changes to ensure that new Chrome web browser releases wouldn't result in any software failures</li>
-                        </ul>
                     </p>
+
+                    <ul className="mt-3">
+                        <li>Propagate a new version of React to all frontend repos</li>
+                        <li>Update API versions of kubernetes resources</li>
+                        <li>Migrate to a new CDN while updating all code references</li>
+                        <li>Update UI component syntax as necessary to support a new version of the Dart language</li>
+                        <li>Run test batch changes to ensure that new Chrome web browser releases wouldn't result in any software failures</li>
+                    </ul>
 
                     <InContentBlockquote
                         quote="The fact that Batch Changes runs each step via Docker is super powerful. As long as there's a tool out there that does what you need, you can incorporate it into Batch Changes with minimal effort, and that's been awesome for us."
