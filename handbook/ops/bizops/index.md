@@ -7,8 +7,8 @@ The Business Operations & Strategy (BizOps) team operates with the mission of dr
 - [Shaan Sheth](../../../../company/team/index.md#shaan-sheth-he-him), Director of Business Operations & Strategy
     - [Eric Brody-Moore](../../../../company/team/index.md#eric-brody-moore), Business Operations Manager
     - [Farhan Attamimi](../../../../company/team/index.md#farhan-attamimi), Business Operations Analyst
-    - S.H., Business Operations Analyst (starting 2021-03-08)
-    - K.B., Business Operations Analyst (starting 2021-03-08)
+    - [Steph Hay](../../../../company/team/index.md#steph-hay-she-her), Business Operations Analyst
+    - [Kelsey Brown](../../../../company/team/index.md#kelsey-brown-she-her), Business Operations Analyst
 
 ## Functional areas
 
@@ -34,8 +34,8 @@ TODO
 - **The why:** How does it support [Sourcegraph's company and team goals](../../../company/goals/index.md)?
 - **Timeline:** What's the timeline of the project? When does this need to be delivered, and how will it be followed up upon in the future?
 
-**Small asks and questions:** Post in the #analytics or #business-ops channel.
-
-To reach us, simply mention @business-team in the relevant channel or thread.
+## Contact
+- **Slack:** Post in the #business-ops or #analytics channel. Or mention @business-team in the relevant channel or thread.
+- **GitHub:** [@bizops](https://github.com/orgs/sourcegraph/teams/bizops) team
 
 If you need clarification or are not sure about any of the above, ask a question in #analytics or #business-ops channel.
