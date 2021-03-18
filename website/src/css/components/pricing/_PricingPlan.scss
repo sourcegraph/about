@@ -22,11 +22,14 @@
     }
 
     &__features {
-        padding-left: 64px;
-        padding-right: 64px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     &--team {
+        padding-left: 40px;
+        padding-right: 40px;
+
         .pricing-plan__features {
             padding: 0;
         }

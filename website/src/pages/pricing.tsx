@@ -141,11 +141,11 @@ export default ((props: any) => (
 
                     <div className="row pt-4">
                         <div className="col-md-12 mx-auto mb-4">
-                            <div className="pricing-plan pricing-plan--team card px-6">
+                            <div className="pricing-plan pricing-plan--team card">
                                 <h2 className="card-title mt-3 mb-3 pricing-plan__title">Team</h2>
 
                                 <div className="row">
-                                    <div className="col-md-6 mx-auto mb-4 pr-6">
+                                    <div className="col-md-6 mx-auto mb-4 pr-5">
                                         If you have more than 10 users, you can upgrade to the Team plan for $150/month. This includes all of the features of the Free plan, plus:
                                     </div>
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
@@ -153,7 +153,7 @@ export default ((props: any) => (
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-md-6 mx-auto mb-4 pr-6">
+                                    <div className="col-md-6 mx-auto mb-4 pr-5">
                                         <ol className="pricing-plan__features list-group list-group-flush mr-5">
                                             <PricingPlanFeature
                                                 key="team-feature-1"
