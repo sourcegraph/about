@@ -112,7 +112,7 @@ Key concepts:
 ​
 * **[Tags](https://tagmanager.google.com/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Ftag-manager%2F#/container/accounts/6000399571/containers/30433084/workspaces/66/tags)**: pieces of code that send info to different systems.
 ​
-* **[Trigger**s](https://tagmanager.google.com/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Ftag-manager%2F#/container/accounts/6000399571/containers/30433084/workspaces/66/triggers)**:**** **actions on our website that cause Tags to execute. You can easily define things like "when a URL containing ‘contact’ is visited", or “when a button that says ‘Sign Up’ is clicked”
+* **[Triggers](https://tagmanager.google.com/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Ftag-manager%2F#/container/accounts/6000399571/containers/30433084/workspaces/66/triggers)**: **actions on our website that cause Tags to execute. You can easily define things like "when a URL containing ‘contact’ is visited", or “when a button that says ‘Sign Up’ is clicked”
 ​
 We use Google Tag Manager to:
 ​
