@@ -1,11 +1,11 @@
 /handbook/communication/style_guide /handbook/communication/content_guidelines 308
-/handbook/company_meeting /handbook/communication/company_meeting
+/handbook/company_meeting /handbook/communication/company_meeting 308
 /handbook/documentation /handbook/engineering/product_documentation 308
 /handbook/documentation/separate_website /handbook/engineering/distribution/separate_website 308
 /handbook/documentation/site /handbook/engineering/distribution/update_sourcegraph_website 308
 /handbook/engineering/code_reviews https://docs.sourcegraph.com/dev/background-information/code_reviews 308
 /handbook/engineering/go_style_guide https://docs.sourcegraph.com/dev/background-information/languages/go 308
-/handbook/engineering/languages/go https://docs.sourcegraph.com/dev/background-information/languages/go
+/handbook/engineering/languages/go https://docs.sourcegraph.com/dev/background-information/languages/go 308
 /handbook/engineering/rfcs /handbook/communication/rfcs 308
 /handbook/product/personas /handbook/marketing/personas 308
 /handbook/values /company/values 308
