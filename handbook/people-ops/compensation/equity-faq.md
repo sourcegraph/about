@@ -50,7 +50,7 @@ This means that simply joining the company earlier can result in someone having 
 
 In such cases, teammates are not intended to be punished for joining earlier. If necessary, they will generally receive an additional number of options that matches the _increase_ between their previous and new levels in the latest bands. Some variation can exist in certain situations.
 
-As an example of how this could work in practice, imagine a teammate already has 1,000 options. The company's bands have evolved since that iniital grant, and they are later promoted from their current level, which has a new target of 300 options, to a higher level that has a target of 425 options. For their promotion, this individual would receive +125 options (the difference between 425 and 300) to get them to 1,125 total.
+As an example of how this could work in practice, imagine a teammate already has 1,000 options. The company's bands have evolved since that initial grant, and they are later promoted from their current level, which has a new target of 300 options, to a higher level that has a target of 425 options. For their promotion, this individual would receive +125 options (the difference between 425 and 300) to get them to 1,125 total.
 
 ### Does it matter when I choose to exercise my options?
 
