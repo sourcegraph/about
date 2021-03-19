@@ -91,7 +91,7 @@ Our compensation bands are brought together by the People Ops team from multiple
   - Founding Status: Non-Founders
   - Capital Raised: $100M–$250M
 - The latest raw data for relevant roles is copied into each team's [compensation bands spreadsheets](#compensation-bands). This will automatically update the band data.
-  - The 75th and 90th percentile salary and commission compensation numbers are used as the low and high bounds of the benchmarks. We [exclude variable compensation](commissions-and-bonuses) (for example, bonuses) from benchmarks in roles that don't receive commissions.
+  - The 75th and 90th percentile salary and commission compensation numbers are used as the low and high bounds of the benchmarks. We [exclude variable compensation](#commissions-and-bonuses) (for example, bonuses) from benchmarks in roles that don't receive commissions.
   - The 75th percentile gross equity value (in US dollar value) is used to back into a count of options (by dividing by our latest preferred stock valuation) for a given role and level.
 - The bands are shared with each department lead, who has the ability to manually adjust bands where desired (for example, to interpolate where the data is rough or based on a low sample size, to create bands for roles that don't have corresponding categories in Option Impact, to make adjustments for their particular hiring needs based on their experience, etc.).
 - The Talent and People Ops teams review and sign off on the final approved numbers.
