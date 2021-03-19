@@ -6,16 +6,16 @@ tags: [blog, release]
 slug: "release/3.26"
 published: true
 changelogItems:
-# Unreleased
-# Added
-  - description: Opsgenie API keys can now be added via an environment variable.
+  - description: "From 3.27 onwards Postgres 12 will be considered a minimum requirement for Sourcegraph to run."
+    url: https://docs.sourcegraph.com/admin/postgres
+    category: Admin
+  - description: "Opsgenie API keys can now be added via an environment variable."
     url: https://github.com/sourcegraph/sourcegraph/pull/18662
     category: Admin
   - description: "It's now possible to control where code insights are displayed through the boolean settings `insights.displayLocation.homepage`, `insights.displayLocation.insightsPage` and `insights.displayLocation.directory`."
     url: https://github.com/sourcegraph/sourcegraph/pull/18979
     category: Code Insights
-# Changed
-  - description: "Campaigns have been renamed to Batch Changes! See #18771 for a detailed log on what has been renamed."
+  - description: "Campaigns has been renamed to Batch Changes. If you were already using the functionality under the previous name (campaigns), backwards compatibility has been preserved. See #18771 for a detailed log on what has been renamed."
     url: https://github.com/sourcegraph/sourcegraph/issues/18771
     category: Batch Changes
   - description: "A repository's `remote.origin.url` is not stored on gitserver disk anymore. Note: if you use the experimental feature `customGitFetch` your setting may need to be updated to specify the remote URL."
@@ -30,12 +30,8 @@ changelogItems:
   - description: "Cursor hover information in the search query bar will now display after 150ms (previously 0ms)."
     url: https://github.com/sourcegraph/sourcegraph/pull/18916
     category: Search
-# Fixed
   - description: Auto complete suggestions for repositories and files containing spaces will now be automatically escaped when accepting the suggestion.
     url: https://github.com/sourcegraph/sourcegraph/issues/18635
-    category: Repositories
-  - description: An issue causing repository results containing spaces to not be clickable in some cases.
-    url: https://github.com/sourcegraph/sourcegraph/pull/18668
     category: Repositories
   - description: Closing a batch change now correctly closes the entailed changesets, when requested by the user.
     url: https://github.com/sourcegraph/sourcegraph/pull/18957
