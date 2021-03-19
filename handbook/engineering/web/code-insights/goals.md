@@ -50,6 +50,9 @@ See also our [completed goals](goals_completed.md).
 
 Our [roadmap is in Productboard](https://sourcegraph.productboard.com/roadmap/2327428-code-insights-objectives-roadmap). We organize our roadmap by milestone objective rather than feature, because to achieve each milestone we may shift or prioritize features based on further customer feedback or product decisions.
 
+<div style="overflow-x: auto; width: 100%">
+<!-- Screenshot taken with this browser extension: https://chrome.google.com/webstore/detail/svg-screenshot/nfakpcpmhhilkdpphcjgnokknpbpdllg -->
 <object data="./roadmap.svg" type="image/svg+xml" />
+</div>
 
 Last updated: 2021-03-19
