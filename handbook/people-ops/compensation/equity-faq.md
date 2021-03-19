@@ -2,7 +2,7 @@
 
 ## Sourcegraph options
 
-Sourcegraph currently only provides equity to employees in the form of options.
+Sourcegraph currently only provides equity to teammates in the form of options.
 
 By default, all option grants vest monthly over four years with a 1-year cliff. This means that 25% of your grant will vest on the 1-year anniversary of the vesting start date, and the remaining 75% vest in equal (1/48th of the total) amounts on a monthly basis.
 
