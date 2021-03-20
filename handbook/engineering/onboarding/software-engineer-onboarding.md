@@ -49,7 +49,7 @@ There will be plenty for you to read and learn about when you're not working on 
     - [Part 2, working with the Wildcard design system](https://drive.google.com/file/d/1kfT3PVvTag_e0RXLAt6nndf6fS2n1Slv/view?usp=sharing) shows how to work with our design system and may be interesting for anyone who wants to submit designs.
   - Read [Testing web code](https://docs.sourcegraph.com/dev/background-information/testing_web_code) to understand our preferred patterns and approaches for writing tests in the frontend. We recommend reading this before you write your first test in the frontend.
   - Read our [Styling UI](https://docs.sourcegraph.com/dev/background-information/web/styling) documentation to understand our CSS stack and the constraints we work within when styling UI. We highly recommend reading this before you start working on a frontend task, as it will make you more effective.
-  - Read our [TypeScript coding guide](https://docs.sourcegraph.com/dev/background-information/languages/typescript#typescript-programming-patterns) to  understand what TypeScript patterns we follow that are not easily detected with lint rules.
+  - Read our [TypeScript programming patterns](https://docs.sourcegraph.com/dev/background-information/languages/typescript#typescript-programming-patterns) to understand what TypeScript patterns we follow that are not easily detected with lint rules.
 
 
 ## Weeks 4-6
