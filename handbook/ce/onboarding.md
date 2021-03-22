@@ -127,6 +127,6 @@ NOTE: Request access/licenses to these tools in [#it-tech-ops](https://sourcegra
     - Prospects: #trial-companyname / new format is: #trial-companyname-sourcegraph
     - Customers: #support-companyname / new format is: #support-companyname-sourcegraph
 - How do I route technical questions to the appropriate team?
-  - [Routing Customer Questions](https://about.sourcegraph.com/handbook/ce/routing_questions)
+  - [Routing Customer Questions](routing_questions.md)
 - Where can I track user feedback?
   - [User Feedback](https://about.sourcegraph.com/handbook/product/user_feedback)
