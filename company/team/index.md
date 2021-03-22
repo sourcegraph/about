@@ -715,6 +715,14 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [giselle@sourcegraph.com](mailto:giselle@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/giselle-northy/), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Giselle)
 - Giselle is a long time nerd who has dabbled in coding and PC games for many years. She started her tech career after several twists and turns, followed by a short stint in Sales & Marketing. At work her passions include automating the boring, creating an amazing customer experience, leveling up coding skills, and learning something new every day! Outside of work, she enjoys spending time with family, her fur children Odin the dog, cats Ben & Jerry, exercise, gardening and nature walks.
 
+## Vova Kulikov (he/him)
+
+- Software Engineer
+- St. Petersburg, Russia 🇷🇺
+- GitHub [vovakulikov](https://github.com/vovakulikov)
+- [vova@sourcegraph.com](mailto:vova@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/vovakulikov/), [@vovakulikov](https://twitter.com/_vovakulikov), [vovakulikov.me](https://vovakulikov.me), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Vova)
+- Vova is a software engineer with a designer background. Found himself passionate about UX/UI and write some open-source code. He joins Sourcegraph after years of working on the frontend platform at Wrike. He loves generative art, geometry, and mathematics. Outside of work, he loves to play basketball and watch NBA Boston Celtics games.
+
 ## Alex Fogg (he/him)
 - Customer Engineer
 - Philadelphia, PA, USA 🇺🇸
