@@ -22,7 +22,7 @@ Everything we do stems from our [purpose](#purpose), to make it so **everyone ca
 
 ## Purpose
 
-We want to make it so **everyone can code**. A world where everyone, not just ~0.1% of the world population, can code will see faster and more broadly beneficial technological progress.
+Sourcegraph exists to make it so **everyone can code**. We want the technology built over the next 100 years to solve everyone's problems, not just problems felt by large technology companies or the unrepresentative 0.1% of the world who can code today.
 
 ### Background
 
@@ -34,7 +34,9 @@ Today, only about 0.1% of the world's population can code. That tiny group has b
 
 ## Mission
 
-To make it so [everyone can code](#purpose), we will create tools, networks, and incentives for coding at ever-larger scale.
+To make it so [everyone can code](#purpose), we will create tools and incentives so that more people can code.
+
+(Why incentives, not just tools? Just creating better ways to write code or learn to code isn't enough. People need to earn a living, and coding must help them do that--with a financial incentive--for it to become widespread.)
 
 ## [Values](values.md)
 
@@ -42,13 +44,17 @@ Our [values](values.md) are the principles and beliefs that help us achieve our 
 
 ## Big Code
 
-We're living in [the era of Big Code](https://thenewstack.io/universal-code-search-a-new-search-tech-for-the-era-of-big-code/): the amount, complexity, and value of code is growing quickly.
+**More devs ➜ more code ➜ more complexity**
+
+<img src="big-code-cycle.svg" style="max-width:400px;padding:2rem 0" alt="The Big Code cycle. A cycle where more devs leads to more code, which leads to more complexity, and so on." />
+
+Engineering teams today are expected to ship code faster and more frequently than ever before. To meet this expectation, most companies hire more developers. The problem is that more devs leads to more code, which leads to more complexity, which leads to more devs, and so on. We call this the Big Code cycle.
 
 Tools and practices that were conceived before the era of Big Code will break down, leaving codebases that are huge but complex and brittle. Any change might shatter the whole thing. Developers become hesitant about making changes. Productivity slows, communication bottlenecks grow, deadlines are missed, and quality declines.
 
 This is a new game. Companies that master this will thrive. Companies that don't will fail.
 
-> For people as users of technology, Big Code is great. It means there's more software out there, it's more personalized, it's faster, it's on their desktop and phone and watch, it's localized, and so on. But for developers, it's way harder and takes way more work to build software than it did 10 years ago.
+> For people as users of technology, Big Code is great. It means there's more software out there, it's more personalized, it's faster, it's on their desktop and phone and watch, it's localized, and so on. But for developers and organizations, it's way harder and takes way more work to build software than it did 10 years ago.
 
 ## Vision
 
