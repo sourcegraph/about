@@ -742,5 +742,18 @@
         ]
       }
     }
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Bill Creager"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                30.082670,
+                -97.842484
+            ]
+        }
+    }
   ]
 }

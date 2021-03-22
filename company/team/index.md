@@ -804,3 +804,9 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [kelsey-brown](https://github.com/kelsey-brown)
 - [kelsey@sourcegraph.com](mailto:kelsey@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kelsey-brown-25220b68/)
 - Prior to Sourcegraph, Kelsey worked in consulting on projects related to strategy, business operations, and technology. Outside of work, Kelsey loves doing anything active, including weightlifting, snowboarding, and playing ultimate frisbee. She is currently based in the Washington, DC area, but hails from Chicago, and would therefore be happy to passionately defend the superiority of Chicago-style over New York-style pizza with you any day of the week.
+
+## Bill Creager
+- Director of Engineering
+- Buda, TX USA 🇺🇸 
+- [bill.creager@sourcegraph.com](mailto:bill.creager@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/bill-creager-8055911a/)
+- If he isn't in front of this computer, Bill can usually be found doing one of the following: eating some BBQ in Austin, riding his bike or running, watching his kids play soccer, camping with the family, or working with his hands (building furniture, building and playing guitars). He grew up in Phoenix, AZ and went to Northern Arizona University in Flagstaff, AZ where he studied computer science (after a quick detour in Environmental Engineering, it wasn't for him).   Prior to Sourcegraph he worked at Procore, Spiceworks, and Demand Media and has been living in Texas for 11 years (he got there as quick as he could)!
