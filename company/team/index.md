@@ -804,3 +804,9 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [kelsey-brown](https://github.com/kelsey-brown)
 - [kelsey@sourcegraph.com](mailto:kelsey@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kelsey-brown-25220b68/)
 - Prior to Sourcegraph, Kelsey worked in consulting on projects related to strategy, business operations, and technology. Outside of work, Kelsey loves doing anything active, including weightlifting, snowboarding, and playing ultimate frisbee. She is currently based in the Washington, DC area, but hails from Chicago, and would therefore be happy to passionately defend the superiority of Chicago-style over New York-style pizza with you any day of the week.
+
+## Ryan Hitchman
+- Software Engineer, Search Core Backend
+- Boulder, Colorado, USA
+- [hitchman@sourcegraph.com](mailto:hitchman@sourcegraph.com), [rmmh](https://github.com/rmmh), [LinkedIn](https://www.linkedin.com/in/ryan-hitchman-485974aa)
+- Ryan loves cooking, photography, his family, and learning all sorts of trivia.
