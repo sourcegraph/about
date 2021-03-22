@@ -9,7 +9,7 @@ changelogItems:
   - description: "Campaigns has been renamed to Batch Changes. If you were already using it under the previous name (campaigns), backwards compatibility has been preserved. See #18771 for a detailed log on what has been renamed."
     url: https://github.com/sourcegraph/sourcegraph/issues/18771
     category: Batch Changes
-  - description: "From 3.27 onwards Postgres 12 will be considered a minimum requirement for Sourcegraph to run."
+  - description: "From 3.27 onwards, Postgres 12 will be considered a minimum requirement for Sourcegraph to run."
     url: https://docs.sourcegraph.com/admin/postgres
     category: Admin
   - description: "Control where code insights are displayed through the boolean settings `insights.displayLocation.homepage`, `insights.displayLocation.insightsPage` and `insights.displayLocation.directory`."
@@ -27,12 +27,12 @@ changelogItems:
   - description: "Syntax highlighting for Elixir, Elm, REG, Julia, Move, Nix, Puppet, VimL, and Coq is now supported."
     url: https://github.com/sourcegraph/sourcegraph/pull/19282
     category:
-  - description: "New query field `select` enables returning only results of the desired type."
+  - description: "New query field `select` enables you to specify the result type from the set of search results."
     url: https://docs.sourcegraph.com/code_search/reference/language#select
     category: Search
-
-
-Cut
+  - description: "Precision class indicators have been improved for code intelligence results in both the hover overlay as well as the definition and references locations panel."
+    url: https://github.com/sourcegraph/sourcegraph/pull/18843
+    category: Code Intelligence
 - description: Searches are streamed into Sourcegraph by default.
     url: https://github.com/sourcegraph/sourcegraph/pull/19300
     category: Search
@@ -54,9 +54,6 @@ Cut
   - description: "The `repo.cloned` column is deprecated in favour of `gitserver_repos.clone_status`. It will be removed in a subsequent release."
     url:
     category: Repositories
-  - description: Precision class indicators have been improved for code intelligence results in both the hover overlay as well as the definition and references locations panel.
-    url: https://github.com/sourcegraph/sourcegraph/pull/18843
-    category:
   - description: Auto complete suggestions for repositories and files containing spaces will now be automatically escaped when accepting the suggestion.
     url: https://github.com/sourcegraph/sourcegraph/issues/18635
     category: Repositories
