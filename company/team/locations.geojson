@@ -728,6 +728,19 @@
           32.33587963983594
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vova Kulikov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.378398895263672,
+          59.94555469995002
+        ]
+      }
     }
   ]
 }
