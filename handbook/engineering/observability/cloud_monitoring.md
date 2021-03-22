@@ -11,7 +11,7 @@ monitor.
   <p>Version and Alert Annotations</p>
 </video>
 <video class="theme-light-only" width="1760" height="1060" autoplay loop muted playsinline style="width: 100%; height: auto; max-width: 50rem">
-  <source src="https://storage.googleapis.com/sourcegraph-assets/sourcegraph-assets/VersionAndAlertAnnotations.webm" type="video/webm">
+  <source src="https://storage.googleapis.com/sourcegraph-assets/VersionAndAlertAnnotations.webm" type="video/webm">
   <p>Version and Alert Annotations</p>
 </video>
 
