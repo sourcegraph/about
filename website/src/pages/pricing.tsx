@@ -124,13 +124,13 @@ export default ((props: any) => (
                     </div>
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10">
+                        <div className="col-lg-10 text-center">
                             <a href="/case-studies/lyft-monolith-to-microservices/" className="pricing-page__quote-link">
                                 <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
                                     <p>
                                         Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
                                 </p>
-                                    <footer className="blockquote-footer">Aneesh Agrawal, Software Engineer, Lyft</footer>
+                                    <footer className="blockquote-footer text-center">Aneesh Agrawal, Software Engineer, Lyft</footer>
                                     <div className="d-flex justify-content-center my-4">
                                         <img src="/external-logos/lyft-logo.svg" width="87px" alt="Lyft" />
                                     </div>
@@ -205,13 +205,13 @@ export default ((props: any) => (
                     <hr className="my-4" />
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10">
+                        <div className="col-lg-10 text-center">
                             <a href="/case-studies/criteo-tackles-big-code/" className="pricing-page__quote-link">
                                 <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
                                     <p>
                                         Sourcegraph pays for itself many times over—it’s a game changer.
                                 </p>
-                                    <footer className="blockquote-footer">François Jehl, Senior Engineering Manager, Criteo</footer>
+                                    <footer className="blockquote-footer text-center">François Jehl, Senior Engineering Manager, Criteo</footer>
                                     <div className="d-flex justify-content-center my-4">
                                         <img src="/external-logos/criteo-logo.svg" width="156px" alt="Criteo" />
                                     </div>
