@@ -48,21 +48,19 @@ Our [values](values.md) are the principles and beliefs that help us achieve our 
 
 <img src="big-code-cycle.svg" style="max-width:400px;padding:2rem 0" alt="The Big Code cycle. A cycle where more devs leads to more code, which leads to more complexity, and so on." />
 
-Engineering teams today are expected to ship code faster and more frequently than ever before. To meet this expectation, most companies hire more developers. The problem is that more devs leads to more code, which leads to more complexity, which leads to more devs, and so on. We call this the Big Code cycle.
+Engineering teams today are expected to ship code faster and more frequently than ever before. To meet this expectation, most companies hire more devs. More devs leads to more code, which leads to more complexity, which leads to more devs, and so on. We call this the Big Code cycle.
 
-Tools and practices that were conceived before the era of Big Code will break down, leaving codebases that are huge but complex and brittle. Any change might shatter the whole thing. Developers become hesitant about making changes. Productivity slows, communication bottlenecks grow, deadlines are missed, and quality declines.
+{#big-code-problems} Big Code presents 3 big problems:
 
-This is a new game. Companies that master this will thrive. Companies that don't will fail.
-
-> For people as users of technology, Big Code is great. It means there's more software out there, it's more personalized, it's faster, it's on their desktop and phone and watch, it's localized, and so on. But for developers and organizations, it's way harder and takes way more work to build software than it did 10 years ago.
+1. **Poor dev experience.** Onboarding, debugging, fixing bugs, reviewing code, understanding code, and so on--it all gets harder and harder. Devs get frustrated and unproductive. It gets harder to attract and retain the best developers.
+1. **Slow dev velocity.** Everything gets slower. Shipping new things, deprecating old things, or making any big improvements. You get to the end of the year and you wonder, "What did we do? How did we make so little progress on the roadmap?" That's scary to everyone at your organization because you're counting on these new products and features to increase revenue.
+1. **Huge security risks.** These grow as your code expands and ages. So, it's not just forward progress that's slowing, but you'll also face huge setbacks and existential threats. You can mitigate these, but that inevitably means lower productivity and slower innovation as devs are interrupted for incident response and more manual security/compliance processes.
 
 ## Vision
 
 ### 1-year vision
 
-> Problem statement: In large and complex codebases ([Big Code](#big-code)), it's hard for developers to discover, understand, and fix code.
-
-Sourcegraph is the one place to find and fix things across all code.
+Sourcegraph is the one place for developers to search, understand, and automate code.
 
 - Sourcegraph knows almost everything that can be known about your code (code structure, Git metadata, build, code hosts, runtime metrics, code reviews, docs, issues, project management, etc.).
 - It's easy to find and use this information on Sourcegraph itself and in your editor, code host, and code reviews.
