@@ -124,9 +124,9 @@ export default ((props: any) => (
                     </div>
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <a href="/case-studies/lyft-monolith-to-microservices/" className="pricing-page__quote-link">
-                                <blockquote className="blockquote pricing-page__quote pricing-page__quote--in-content text-dark">
+                                <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
                                     <p>
                                         Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
                                 </p>
@@ -205,9 +205,9 @@ export default ((props: any) => (
                     <hr className="my-4" />
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <a href="/case-studies/criteo-tackles-big-code/" className="pricing-page__quote-link">
-                                <blockquote className="blockquote pricing-page__quote pricing-page__quote--in-content text-dark">
+                                <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
                                     <p>
                                         Sourcegraph pays for itself many times over—it’s a game changer.
                                 </p>
