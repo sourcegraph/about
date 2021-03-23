@@ -1,13 +1,13 @@
 ---
 title: Introducing Batch Changes
-description: Automate and track large-scale code changes across all of your repositories and code hosts.
+description: Learn how to automate and track large-scale code changes across all of your repositories and code hosts with Sourcegraph Batch Changes. 
 author: Erica Lindberg
 authorUrl: https://about.sourcegraph.com/company/team#erica-lindberg-she-her
 publishDate: 2021-03-24T10:00-07:00
-tags: [blog]
-slug: the-blog-slug
-heroImage: /blog/thumbnail-image.jpg
-socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
+tags: [blog, product, batch changes]
+slug: introducing-batch-changes
+heroImage: 
+socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 ---
 
@@ -20,13 +20,11 @@ This could be a likely situation for just about any codebase. Now think, if chan
 For the [platform team at Workiva](http://about.sourcegraph.com/case-studies/workiva-automates-large-scale-code-changes/), the difference between manually updating dozens of repositories when a new library was released, versus automating it with a batch change, was an 80% reduction in the time it took to implement the change. “We fell into the habit of letting tech debt accumulate to the point where all of a sudden, we’d have to bring everything to a screeching halt and do nothing for a month or a sprint or even a quarter and clean up the tech debt in that certain area,” said Trent Grover, Director of Architecture at Workiva. “The easier the tooling, the faster we can release breaking changes.” 
 
 > *“The easier the tooling, the faster we can release breaking changes.”*
-
 > *- Trent Grover, Director of Architecture, Workiva*
 
 The anxiety over managing and updating code is real, and at Sourcegraph, we aim to change that. In the same way that Sourcegraph Universal Code Search enables you to quickly explore and understand all of your code, [Sourcegraph Batch Changes](https://about.sourcegraph.com/batch-changes) enables development teams to automate and more easily manage large-scale code changes. With Batch Changes, teams can keep their code up to date, fix critical security issues, and pay down technical debt across all their repositories, minus the stress and anxiety. 
 
 > *“The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key capability for reducing the hidden burden of updates pushed across teams and enabling us to increase our engineering velocity.”* 
-
 > *- Jared Hodge, Sr. Manager Developer Experience, Indeed*
 
 ## Batch Changes explained
