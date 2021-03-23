@@ -21,7 +21,7 @@ changelogItems:
   - description: "Sourcegraph is now built with Go 1.16."
     url: https://github.com/sourcegraph/sourcegraph/pull/18447
     category: Admin
-  - description: "Syntax highlighting for Elixir, Elm, REG, Julia, Move, Nix, Puppet, VimL, and Coq is now supported."
+  - description: "Syntax highlighting added for 9 additional languages: Elixir, Elm, REG, Julia, Move, Nix, Puppet, VimL, and Coq."
     url: https://github.com/sourcegraph/sourcegraph/pull/19282
     category:
   - description: "New query field `select` enables you to specify the result type from the set of search results."
