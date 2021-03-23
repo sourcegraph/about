@@ -68,7 +68,7 @@ Drawing the line between what is a code page and what is a web application page 
 In these cases, we can utilize web application styles inside the search context to give links greater importance through color and provide additional margin and padding to aid readability.
 
 ## Accessibility standards
-Our mission is to make it so everyone can code. In order to achieve this it is vital that our applications are designed and built to be accessible to all.
+People of all abilities should have first-class access to code and coding. In order to achieve this it is vital that our applications are designed and built to be accessible to all.
 
 We aim for [WCAG Level AA Conformance](https://www.w3.org/WAI/WCAG2AA-Conformance), use [this reference](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&levels=aaa&technologies=smil%2Cflash%2Csl) to get a better understanding of what this involves.
 
