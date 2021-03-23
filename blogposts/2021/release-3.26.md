@@ -6,7 +6,7 @@ tags: [blog, release]
 slug: "release/3.26"
 published: true
 changelogItems:
-  - description: "Campaigns has been renamed to Batch Changes. If you were already using it under the previous name (campaigns), backwards compatibility has been preserved. See #18771 for a detailed log on what has been renamed."
+  - description: "Campaigns has been renamed to Batch Changes. Backward compatibility has been preserved for folks using it in previous releases. See #18771 for details."
     url: https://github.com/sourcegraph/sourcegraph/issues/18771
     category: Batch Changes
   - description: "From 3.27 onwards, Postgres 12 will be considered a minimum requirement for Sourcegraph to run."
