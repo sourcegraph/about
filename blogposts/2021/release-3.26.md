@@ -15,9 +15,6 @@ changelogItems:
   - description: "You can now customize the location of your code insights using new boolean settings. Options include the home page, insights page, and directory pages."
     url: https://github.com/sourcegraph/sourcegraph/pull/18979
     category: Code Insights
-     - description: Users can now create changesets in batch changes on repositories that are cloned using SSH.
-    url: https://github.com/sourcegraph/sourcegraph/issues/16888
-    category: Batch Changes
   - description: Code monitoring is now available by default for all Enterprise customers.
     url: https://docs.sourcegraph.com/code_monitoring
     category: Code Monitoring
