@@ -33,23 +33,5 @@ changelogItems:
   - description: "New query field `select` enables returning only results of the desired type. See [documentation](https://docs.sourcegraph.com/code_search/reference/language#select) for details."
     url: https://github.com/sourcegraph/sourcegraph/pull/19236
     category: Search
-  - description: "A repository's `remote.origin.url` is not stored on gitserver disk anymore. Note: if you use the experimental feature `customGitFetch` your setting may need to be updated to specify the remote URL."
-    url: https://github.com/sourcegraph/sourcegraph/pull/18535
-    category: Repositories
-  - description: Repositories and files containing spaces will now render with escaped spaces in the query bar rather than being
-    url:
-    category: Repositories
-  - description: "Cursor hover information in the search query bar will now display after 150ms (previously 0ms)."
-    url: https://github.com/sourcegraph/sourcegraph/pull/18916
-    category: Search
-  - description: "The `repo.cloned` column is deprecated in favour of `gitserver_repos.clone_status`. It will be removed in a subsequent release."
-    url:
-    category: Repositories
-  - description: Auto complete suggestions for repositories and files containing spaces will now be automatically escaped when accepting the suggestion.
-    url: https://github.com/sourcegraph/sourcegraph/issues/18635
-    category: Repositories
-  - description: Closing a batch change now correctly closes the entailed changesets, when requested by the user.
-    url: https://github.com/sourcegraph/sourcegraph/pull/18957
-    category: Batch Changes
 ---
 \* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
