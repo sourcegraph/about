@@ -30,9 +30,6 @@ changelogItems:
 - description: Searches are streamed into Sourcegraph by default.
     url: https://github.com/sourcegraph/sourcegraph/pull/19300
     category: Search
-  - description: Opsgenie API keys can now be added via an environment variable.
-    url: https://github.com/sourcegraph/sourcegraph/pull/18662
-    category:
   - description: "New query field `select` enables returning only results of the desired type. See [documentation](https://docs.sourcegraph.com/code_search/reference/language#select) for details."
     url: https://github.com/sourcegraph/sourcegraph/pull/19236
     category: Search
