@@ -30,8 +30,8 @@ changelogItems:
 - description: Searches are streamed into Sourcegraph by default.
     url: https://github.com/sourcegraph/sourcegraph/pull/19300
     category: Search
-  - description: "New query field `select` enables returning only results of the desired type. See [documentation](https://docs.sourcegraph.com/code_search/reference/language#select) for details."
-    url: https://github.com/sourcegraph/sourcegraph/pull/19236
+  - description: "New query field `select` enables returning only results of the desired type."
+    url: https://docs.sourcegraph.com/code_search/reference/language#select
     category: Search
 ---
 \* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
