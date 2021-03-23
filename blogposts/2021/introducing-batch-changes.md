@@ -30,7 +30,7 @@ The anxiety over managing and updating code is real, and at Sourcegraph, we aim 
 > *- Jared Hodge, Sr. Manager Developer Experience, Indeed*
 
 ## Batch Changes explained
-Batch Changes is an automated way to make large-scale code changes across all repositories and code hosts. Batch Changes allows you to easily find the code you want to change, write a declarative spec file describing what the changes should look like, and run a script of your choosing to create changesets on your code hosts. Then, it provides a simple user interface to easily track your pull or merge requests and to manage all of the changesets through checks and code reviews until each change is merged. Instead of managing changes manually with spreadsheets, Batch Changes automates the process of tracking changeset lifecycle status from the creation of a pull request to merged code.  
+Batch Changes is an automated way to make large-scale code changes across all repositories and code hosts. Batch Changes allows you to easily find the code you want to change, write a declarative spec file describing what the changes should look like, and run a script of your choosing to create changesets on your code hosts. Then, it provides a simple user interface to easily track your pull or merge requests and manages all of the changesets through checks and code reviews until each change is merged. Instead of managing changes manually with spreadsheets, Batch Changes automates the process of tracking changeset lifecycle status from the creation of a pull request to merged code.  
 
 ### How it works: Declarative changes, intuitive tracking
 When a change needs to be made, you can search for the occurrences of code to change,  specify the change once—calling any tool that changes code—and apply it everywhere. This not only brings visibility to the magnitude and impact of the change, but automates the process of making the change. 
@@ -41,7 +41,7 @@ When a change needs to be made, you can search for the occurrences of code to ch
 
 
 1. **Search your code:** Find all occurrences of the code you want to change using Sourcegraph Universal Code Search.
-2. **Programmatically define changes:** Create a declarative specification file to find all the code you need to modify, and preview the changes before creating the change within the code host.  You can use any code change tool such as sed, Comby or your own refactoring tool to generate the changes.
+2. **Programmatically define changes:** Create a declarative specification file to find all the code you need to modify, and preview the changes before creating the change within the code host.  You can use any code change tool such as sed, Comby, or your own refactoring tool to generate the changes.
 3. **Execute specifications:** Apply and run changes anywhere via a lightweight CLI. Execute changes via your machine, on the cloud, or in CI. 
 4. **Track your changes:** Track changeset lifecycle statuses across all repositories and code hosts in a dashboard via the Sourcegraph UI. 
 5. **Review changes:** See a changeset burndown chart for an at-a-glance view of each campaign, centralize the review process, and ensure that each pull request is successful with built-in CI and review tracking. 
@@ -59,7 +59,7 @@ Batch Changes can be used in a number of scenarios:
 4. Ship upgrades or breaking changes across all internal repositories. 
 5. Refactor code to replace insecure functions, or update vulnerable packages.
 
-Batch Changes brings visibility and automation to codebase-wide changes. It removes the repetitive work of manually executing code change tools over many repositories, and tracking progress in spreadsheets. With Batch Changes, large-scale code changes become much easier to manage which promotes a healthier, more up-to-date codebase. 
+Batch Changes brings visibility and automation to codebase-wide changes. It removes the repetitive work of manually executing code change tools over many repositories and tracking progress in spreadsheets. With Batch Changes, large-scale code changes become much easier to manage, which promotes a healthier, more up-to-date codebase. 
 
 **Try it for yourself! Enterprise users can create batch changes with up to 5 changesets for free using our [Quickstart for Batch Changes guide](https://docs.sourcegraph.com/batch_changes/quickstart).**
 
