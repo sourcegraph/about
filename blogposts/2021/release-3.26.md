@@ -12,7 +12,7 @@ changelogItems:
   - description: "Upcoming requirement: Starting in the next release, Sourcegraph 3.27 scheduled for April 20th, Postgres 12 will be considered a minimum requirement for Sourcegraph to run."
     url: https://docs.sourcegraph.com/admin/postgres
     category: Admin
-  - description: "Control where code insights are displayed through the boolean settings `insights.displayLocation.homepage`, `insights.displayLocation.insightsPage` and `insights.displayLocation.directory`."
+  - description: "You can now customize the location of your code insights using new boolean settings. Options include the home page, insights page, and directory pages."
     url: https://github.com/sourcegraph/sourcegraph/pull/18979
     category: Code Insights
      - description: Users can now create changesets in batch changes on repositories that are cloned using SSH.
