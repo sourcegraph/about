@@ -24,9 +24,6 @@ changelogItems:
   - description: "Syntax highlighting added for 9 additional languages: Elixir, Elm, REG, Julia, Move, Nix, Puppet, VimL, and Coq."
     url: https://github.com/sourcegraph/sourcegraph/pull/19282
     category:
-  - description: "New query field `select` enables you to specify the result type from the set of search results."
-    url: https://docs.sourcegraph.com/code_search/reference/language#select
-    category: Search
   - description: "Precision class indicators have been improved for code intelligence results in both the hover overlay as well as the definition and references locations panel."
     url: https://github.com/sourcegraph/sourcegraph/pull/18843
     category: Code Intelligence
