@@ -24,7 +24,7 @@ changelogItems:
   - description: "Syntax highlighting added for 9 additional languages: Elixir, Elm, REG, Julia, Move, Nix, Puppet, VimL, and Coq."
     url: https://github.com/sourcegraph/sourcegraph/pull/19282
     category:
-  - description: "Precision class indicators have been improved for code intelligence results in both the hover overlay as well as the definition and references locations panel."
+  - description: "Code intelligence results now have clearer precision indicators (i.e. semantic vs. search-based) in both the hover overlay and definition and references panel."
     url: https://github.com/sourcegraph/sourcegraph/pull/18843
     category: Code Intelligence
 - description: Searches are streamed into Sourcegraph by default.
