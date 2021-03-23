@@ -9,7 +9,7 @@ changelogItems:
   - description: "Campaigns has been renamed to Batch Changes. Backward compatibility has been preserved for folks using it in previous releases. See #18771 for details."
     url: https://github.com/sourcegraph/sourcegraph/issues/18771
     category: Batch Changes
-  - description: "From 3.27 onwards, Postgres 12 will be considered a minimum requirement for Sourcegraph to run."
+  - description: "Upcoming requirement: Starting in the next release, Sourcegraph 3.27 scheduled for April 20th, Postgres 12 will be considered a minimum requirement for Sourcegraph to run."
     url: https://docs.sourcegraph.com/admin/postgres
     category: Admin
   - description: "Control where code insights are displayed through the boolean settings `insights.displayLocation.homepage`, `insights.displayLocation.insightsPage` and `insights.displayLocation.directory`."
