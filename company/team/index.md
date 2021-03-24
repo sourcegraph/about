@@ -810,3 +810,11 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Boulder, Colorado, USA
 - [hitchman@sourcegraph.com](mailto:hitchman@sourcegraph.com), [rmmh](https://github.com/rmmh), [LinkedIn](https://www.linkedin.com/in/ryan-hitchman-485974aa)
 - Ryan loves cooking, photography, his family, and learning all sorts of trivia.
+
+## Bill Creager
+- Director of Engineering
+- Buda, TX USA 🇺🇸 
+- [bill.creager@sourcegraph.com](mailto:bill.creager@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/bill-creager-8055911a/)
+- If he isn't in front of this computer, Bill can usually be found doing one of the following: eating some BBQ in Austin, riding his bike or running, watching his kids play soccer, camping with the family, or working with his hands (building furniture, building and playing guitars). He grew up in Phoenix, AZ and went to Northern Arizona University in Flagstaff, AZ where he studied computer science (after a quick detour in Environmental Engineering, it wasn't for him).   Prior to Sourcegraph he worked at Procore, Spiceworks, and Demand Media and has been living in Texas for 11 years (he got there as quick as he could)!
+
+
