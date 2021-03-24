@@ -131,3 +131,9 @@ As of this post, our [Cloud](https://sourcegraph.com/search) environment has a s
 If we were to utilize a row-level trigger approach to keep the schema version bounds in sync with insertions, we would double our writes to the database: one insert in the target table and one upsert to the schema versions table.
 
 If we were instead to utilize a statement-level trigger approach, the extra cost would be negligible: only a handful of additional upsert operations. However, for this to work, we'd need to know the values of both the `index_id` and `version` column, which we do not have access to in Postgres 9.6.
+
+## Conclusion
+
+In order to enable us to continue to scale and improve the performance of your Sourcegraph instance, we are bumping the minimum supported version of Postgres to unlock new features and performance enhancements.
+
+Once you plan to upgrade to Sourcegraph 3.27, you must first ensure that your database meets the new minimum version requirement of Postgres 12.
