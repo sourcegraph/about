@@ -11,11 +11,11 @@ socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 ---
 
-As codebases grow older, bigger and more complex, making codebase-wide code changes becomes harder. Configuration files, boilerplate code, and code patterns shared by an entire organization are often re-used in dozens or hundreds of repos. Changing them at the scale of the codebase requires a huge amount of work and coordination. But the ability to make that kind of large-scale change is needed to keep things clean, move fast and stay nimble, or respond to new practices.
+As codebases grow older, bigger and more complex, making codebase-wide changes becomes harder. Configuration files, boilerplate code, and code patterns are often re-used in dozens or even hundreds of repos. Changing them at the scale of the codebase requires a huge amount of work and coordination. But the ability to make that kind of large-scale change is needed to keep things clean, move fast and stay nimble, or respond to new practices.
 
-For example, many platform teams find themselves maintaining old versions of internal components because they are reused in hundreds of downstream repos, and it is hard to get the owner to upgrade. Upgrading is painful because it requires manual work from the repository owner, so it’s not likely to be done anytime soon. Over the years, small issues like this accumulate.
+For example, many platform teams find themselves maintaining old versions of internal components because they are reused in hundreds of repos, and it is hard to get the owner to upgrade because upgrading would require manual work. Over the years, small issues like this accumulate.
 
-Making big or small codebase-wide changes requires a lot of manual work, and takes time. Changing something as simple as a few line of boilerplate code in an organization could require days or weeks. It requires identifying all occurrences of the code pattern, sometimes across hundreds or even thousands of repositories. Then, once the repositories are identified, each repository owner has to make the changes manually in their respective repositories. All of this has to be tracked and coordinated across may teams, which more often than not is done in clumsy spreadsheets. This approach tends to be a waste of time and effort, and many non-urgent changes end up being postponed and accumulate over time. In the event a critical security change has to be done, every hour that goes by increases risk and this is not practical.
+Making big or small codebase-wide changes requires a lot of manual work, and takes time. Changing something as simple as a few line of boilerplate code in an organization could require days or weeks. It requires identifying all occurrences of the code pattern, sometimes across thousands of repositories. Then, once the repositories are identified, each repository owner has to make the change. All of this has to be tracked and coordinated across many teams and more often than not this is done in clumsy spreadsheets. This approach tends to be a waste of time and effort, and many non-urgent changes end up being postponed and accumulate over time. In the event a critical security change has to be done, every hour that goes by increases risk and this is not practical.
 
 For the [platform team at Workiva](http://about.sourcegraph.com/case-studies/workiva-automates-large-scale-code-changes/), the difference between manually updating dozens of repositories when a new library was released, versus automating it with a batch change, was an 80% reduction in the time it took to implement the change. “We fell into the habit of letting tech debt accumulate to the point where all of a sudden, we’d have to bring everything to a screeching halt and do nothing for a month or a sprint or even a quarter and clean up the tech debt in that certain area,” said Trent Grover, Director of Architecture at Workiva. “The easier the tooling, the faster we can release breaking changes.” 
 
@@ -28,10 +28,10 @@ This is a difficult problem, and at Sourcegraph, we aim to change that. In the s
 > *- Jared Hodge, Sr. Manager Developer Experience, Indeed*
 
 ## Batch Changes explained
-Batch Changes offers a way to define and execute large-scale code changes across all repositories and code hosts. Batch Changes allows you to easily find the code you want to change, and write a declarative spec file describing what steps need to be ran to change the code, and what changesets (a more generic word for pull requests and merge requests) should look like on your code host. Then, it provides a simple user interface to easily track your changesets and manage them until they get merged. Instead of managing changes manually with spreadsheets, Batch Changes automates the process of tracking changeset lifecycle status from the creation of a pull request to merged code.  
+Batch Changes offers a way to define and execute large-scale code changes across all repositories and code hosts. Batch Changes allows you to easily find the code you want to change, and write a declarative spec file describing how to change the code, and what changesets (a more generic term for pull requests and merge requests) should look like on the code hosts. Then, it provides a simple user interface to easily track your changesets and manage them until they get merged.
 
 ### How it works: Declarative changes
-When a change needs to be made, you can search for the occurrences of code to change, specify the change once—calling any tool that changes code—and apply it everywhere. You can preview what the change will look like across all of the repositories. This automates the process of creating the change and opening the changeset on the codehost, but also brings more visibility on the status of a large scale batch change over time.
+When a change needs to be made, you can search for the occurrences of code to change, specify the change once—using any tool that can change code—and apply it everywhere. You can then preview what the change will look like across all of the repositories. This not only automates the process of first creating the change and then opening the changeset on the codehost, but it also brings more visibility on the status of a large scale change over time.
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
@@ -39,9 +39,9 @@ When a change needs to be made, you can search for the occurrences of code to ch
 
 
 1. **Search your code:** Find all occurrences of the code you want to change using Sourcegraph Universal Code Search.
-2. **Programmatically define changes:** Create a declarative specification file to find all the code you need to modify, and preview the changes before creating the change within the code host.  You can use any code change tool such as sed, Comby, or your own refactoring tool to generate the changes.
-3. **Execute specifications:** Preview, apply and run changes anywhere via a lightweight CLI. Execute changes on your machine or in CI. 
-4. **Track your changes:** Track changeset lifecycle statuses across all repositories and code hosts in a dashboard via the Sourcegraph UI. 
+2. **Programmatically define changes:** Create a declarative specification file to find all the code you need to modify and define steps to change the code. You can use any tool to change code, such as sed, Comby, or your own refactoring tool.
+3. **Execute specifications:** Execute, preview, and apply changes anywhere via a CLI, which can be executed on your computer, CI or any other machine.
+4. **Track your changes:** Track changeset lifecycles across all repositories and code hosts in a dashboard via the Sourcegraph UI. 
 
 Create your first batch change with up to 5 changesets in 10 minutes using our [Quickstart for Batch Changes guide](https://docs.sourcegraph.com/batch_changes/quickstart). You’ll need a local Sourcegraph Enterprise instance, running the latest version ([Sourcegraph 3.26](https://docs.sourcegraph.com/admin/updates)), set up with a few repositories to get started. 
 
@@ -50,8 +50,8 @@ To create more than 5 changesets, [contact us](http://about.sourcegraph.com/cont
 ## Batch Changes in practice
 Batch Changes can be used in a number of scenarios:
 
-1. Modify container configurations.  
-2. Update an API and its function calls or replace libraries. 
+1. Modify container configurations by changing `Dockerfile`s.  
+2. Update an API and its callers or replace entire libraries. 
 3. Edit configuration files to make changes like altering CI steps, migrating versions, or changing base images.
 4. Ship upgrades or breaking changes across all internal repositories. 
 5. Refactor code to replace insecure functions, or update vulnerable packages.
