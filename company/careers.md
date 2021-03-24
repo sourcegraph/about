@@ -16,8 +16,7 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 - [Backend Engineer - Code Insights](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
 - [Site Reliability Engineer (SRE) / DevOps – Distribution](https://jobs.lever.co/sourcegraph/282b1709-0b4f-47b6-8188-722d8e59b512)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
-- [Frontend Engineer - Search](https://jobs.lever.co/sourcegraph/73c64b38-9bd9-41cc-bc8b-e8d87d91abac)
-- Very experienced security leader or advisor (will be posted soon)
+- Experienced security engineering manager (will be posted soon)
 
 ### Product
 

@@ -754,6 +754,19 @@
                 -97.842484
             ]
         }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valery Bugakov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.20642042160034,
+          43.67740105604103
+        ]
+      }
     }
   ]
 }
