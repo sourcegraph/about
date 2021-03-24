@@ -1,5 +1,5 @@
 ---
-title: "Postgres version update"
+title: "We're updating the minimum supported version of Postgres: Here's why."
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 publishDate: 2021-03-23T18:00+02:00
@@ -8,10 +8,10 @@ slug: postgres-version-update
 heroImage: /blog/postgres-version-update.jpg
 socialImage: https://about.sourcegraph.com/blog/postgres-version-update.jpg
 published: true
-description: "As of Sourcegraph 3.27, we are updating the minimum supported version of Postgres from 9.6 to 12."
+description: "As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12."
 ---
 
-As of Sourcegraph 3.27, we are updating the minimum supported version of Postgres from 9.6 to 12.
+As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12.
 
 **If you are using the Sourcegraph maintained Docker images**: Your instance is already using an appropriate Postgres version and no action is needed on your part.
 
@@ -19,19 +19,11 @@ As of Sourcegraph 3.27, we are updating the minimum supported version of Postgre
 
 ## Why does Sourcegraph 3.27 require Postgres 12?
 
-Postgres 9.6 was released on 2016/09/29 and since then there have been a [flood of changes](https://www.postgresql.org/about/featurematrix/) including:
-
-- Covering indexes for B-trees and GiST
-- SQL/JSON path expressions
-- Inlined WITH Queries (Common Table Expressions)
-- Parallel bitmap heap scans
-- Parallel hash and merge joins
-
-Apart from keeping the upgrade lag small so that we are not missing out on performance improvements and usable features, we have a technical impetus for upgrading at this time: Postgres 9.6 contains a SQL standard compatibility exclusion, as noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
+Postgres 9.6 was released on 2016/09/29 and since then there have been a [flood of changes](https://www.postgresql.org/about/featurematrix/). Among these changes is a feature which Sourcegraph requires moving forward: Postgres 9.6 contains a SQL standard compatibility exclusion, as noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
 
 > PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard.
 
-Postgres 10 removes this compatibility restriction.
+Postgres 12, however, supports new and old table references in statement-level triggers.
 
 ### What does this mean?
 
@@ -86,7 +78,7 @@ Postgres requires that each returned row be visible to the current transaction a
 
 As explained in the [documentation](https://www.postgresql.org/docs/9.6/indexes-index-only-scans.html) for index-only scans, partially visible pages require a heap access to check which rows are visible and which are not. These heap access and visibility checks dominate the running time of this query.
 
-### Let's work our magic
+### Speeding up counting queries
 
 In no world can a nearly half-hour query be considered _efficient_. And, due to the consequences caused by Postgres [MVCC](https://www.postgresql.org/docs/9.6/mvcc-intro.html), there are few actions under our control that could make a count of so many objects faster.
 
