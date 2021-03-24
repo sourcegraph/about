@@ -30,7 +30,7 @@ This is a difficult problem, and at Sourcegraph, we aim to change that. In the s
 ## Batch Changes explained
 Batch Changes offers a way to define and execute large-scale code changes across all repositories and code hosts. Batch Changes allows you to easily find the code you want to change, and write a declarative spec file describing how to change the code, and what changesets (a more generic term for pull requests and merge requests) should look like on the code hosts. Then, it provides a simple user interface to easily track your changesets and manage them until they get merged.
 
-### How it works: Declarative changes
+### How it works: declarative changes
 When a change needs to be made, you can search for the occurrences of code to change, specify the change once—using any tool that can change code—and apply it everywhere. You can then preview what the change will look like across all of the repositories. This not only automates the process of first creating the change and then opening the changeset on the codehost, but it also brings more visibility on the status of a large scale change over time.
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -40,8 +40,8 @@ When a change needs to be made, you can search for the occurrences of code to ch
 
 1. **Search your code:** Find all occurrences of the code you want to change using Sourcegraph Universal Code Search.
 2. **Programmatically define changes:** Create a declarative specification file to find all the code you need to modify and define steps to change the code. You can use any tool to change code, such as sed, Comby, or your own refactoring tool.
-3. **Execute specifications:** Execute, preview, and apply changes anywhere via a CLI, which can be executed on your computer, CI or any other machine.
-4. **Track your changes:** Track changeset lifecycles across all repositories and code hosts in a dashboard via the Sourcegraph UI. 
+3. **Execute specifications:** Execute, preview, and apply changes anywhere via a CLI, which can run on your computer, CI or any other machine.
+4. **Track your changes:** Track changeset lifecycle across all repositories and code hosts in a dashboard via the Sourcegraph UI. 
 
 Create your first batch change with up to 5 changesets in 10 minutes using our [Quickstart for Batch Changes guide](https://docs.sourcegraph.com/batch_changes/quickstart). You’ll need a local Sourcegraph Enterprise instance, running the latest version ([Sourcegraph 3.26](https://docs.sourcegraph.com/admin/updates)), set up with a few repositories to get started. 
 
