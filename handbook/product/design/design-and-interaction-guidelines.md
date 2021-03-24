@@ -70,7 +70,7 @@ In these cases, we can utilize web application styles inside the search context 
 ## Accessibility standards
 People of all abilities should have first-class access to code and coding. In order to achieve this it is vital that our applications are designed and built to be accessible to all.
 
-Our criterion is to meet [WCAG Level AA Conformance](https://www.w3.org/WAI/WCAG2AA-Conformance). Use [this reference](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&levels=aaa&technologies=smil%2Cflash%2Csl) to get a better understanding of what this involves.
+We aim for [WCAG Level AA Conformance](https://www.w3.org/WAI/WCAG2AA-Conformance) in all areas. Use [this reference](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_customize&levels=aaa&technologies=smil%2Cflash%2Csl) to get a better understanding of what this involves.
 
 ### Todo:
 
