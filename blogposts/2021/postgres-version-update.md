@@ -100,7 +100,7 @@ Instead of counting the ratio between migrated _rows_ and total rows (which is v
 
 The **obvious approach** would be to migrate all rows in a table associated with the same index at once. Unfortunately, indexes can be very massive. Some enterprise customers are regularly uploading 13GB index files. Thus, our migration batch size is likely going to be too small to guarantee all rows can be migrated, and increasing the batch size will add additional memory and compute constraints on the migrating container.
 
-The **approach we went** with tracks the minimum and maximum row versions for each index in a separate, _much_ smaller table.
+The **approach we chose** tracks the minimum and maximum row versions for each index in a separate, _much_ smaller table.
 
 *lsif\_data\_definitions*:
 
