@@ -6,10 +6,10 @@
 
 @import 'colors';
 
-$font-family-sans-serif: 'IBM Plex Sans';
-$font-family-base: 'IBM Plex Sans';
-$font-family-monospace: 'IBM Plex Mono';
-$headings-font-family: 'PT Sans';
+$font-family-sans-serif: 'IBM Plex Sans', ui-system, sans-serif;
+$font-family-monospace: 'IBM Plex Mono', monospace;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: 'PT Sans', $font-family-base;
 
 $blue: #2c7ef6;
 $red: #dc3545;
@@ -24,7 +24,7 @@ $colors: (
 );
 
 $theme-colors: (
-    'primary': darken($blue, 9%),
+    'primary': #2a66e2,
     'dark': $dark-9,
     'light': $light-11,
     'purple': $brand-purple,
@@ -36,7 +36,7 @@ $theme-colors: (
 
 $brand-primary: $brand-purple;
 
-$border-radius: 0.125rem;
+$border-radius: 0.3125rem;
 $border-radius-lg: 0.25rem;
 $border-radius-sm: 0.1rem;
 
@@ -71,6 +71,12 @@ $spacers: (
     6: (
         $spacer * 4,
     ),
+    7: (
+        $spacer * 6,
+    ),
+    8: (
+        $spacer * 8,
+    ),
 );
 
 $body-bg: #f9f9f9;
@@ -89,16 +95,19 @@ $navbar-light-hover-color: $blue;
 $navbar-dark-color: $light;
 $navbar-dark-hover-color: $blue;
 
+$nav-tabs-border-width: 0;
+
 $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
 
-$input-bg: $gray-900;
+$input-bg: transparent;
 $input-color: $body-color;
 $input-box-shadow: none;
-$input-border-color: $gray-900;
+$input-border-color: map-get($theme-colors, 'primary');
+$input-border-width: 3px;
 $input-focus-bg: $input-bg;
 $input-focus-color: $body-color;
-$input-placeholder-color: $gray-600;
+$input-placeholder-color: $body-color;
 $input-focus-border-color: darken($component-active-bg, 25%);
 $input-focus-box-shadow: none;
 
@@ -124,6 +133,8 @@ $grid-gutter-width: 2rem;
 @import 'node_modules/bootstrap/scss/type';
 @import 'node_modules/bootstrap/scss/grid';
 @import 'node_modules/bootstrap/scss/forms';
+@import 'node_modules/bootstrap/scss/button-group';
+@import 'node_modules/bootstrap/scss/input-group';
 @import 'node_modules/bootstrap/scss/buttons';
 @import 'node_modules/bootstrap/scss/transitions';
 @import 'node_modules/bootstrap/scss/nav';
@@ -265,6 +276,7 @@ table {
 @import 'components/Tweets';
 @import 'pages/404';
 @import 'pages/about';
+@import 'pages/batch-changes';
 @import 'pages/customers';
 @import 'pages/_case_studies';
 @import 'pages/_white_papers';
@@ -318,4 +330,14 @@ body {
 }
 .font-family-base {
     font-family: $font-family-base !important;
+}
+
+.list-spaced > li {
+    margin-bottom: 1rem;
+}
+
+.nav-tabs {
+    font-weight: 600;
+    font-size: 1.25em;
+    border-bottom-width: 1px;
 }

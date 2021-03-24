@@ -28,6 +28,15 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
+                {/* Temporary banner for batch changes */}
+                {/* {(this.props.isHome || this.props.isBlog) && (
+                    <div className="d-flex align-items-center justify-content-center bg-purple text-white font-weight-bold p-2">
+                        Introducing Batch Changes: Automate large-scale code changes.
+                        <Link to="/batch-changes" className="ml-2 btn btn-sm btn-light">
+                            Learn more
+                        </Link>
+                    </div>
+                )} */}
                 <nav className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-lg px-0 px-lg-3">
                         <Link className="navbar-brand header__logo" to="/">
@@ -49,7 +58,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 <div
                                     className={`collapse navbar-collapse justify-content-end ${
                                         this.state.isOpen ? 'show' : ''
-                                        }`}
+                                    }`}
                                     id="navcol-1"
                                 >
                                     <ul className="nav navbar-nav d-flex w-100">

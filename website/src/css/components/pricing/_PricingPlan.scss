@@ -1,9 +1,41 @@
 .pricing-plan {
-    &__title {
-        font-size: 2.75rem;
+    height: 100%;
+
+    .card-body {
+        flex: 0 1 auto;
     }
+
+    &__title {
+        font-size: 2.875rem;
+        line-height: 3.75rem;
+    }
+
+    &__price {
+        font-size: 1.125rem;
+    }
+
     &__button {
-        font-size: 18px;
         min-width: 140px;
+        max-width: 256px;
+
+        font-size: 18px;
+    }
+
+    &__features {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    &--team {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .pricing-plan__features {
+            padding: 0;
+        }
+
+        .pricing-plan-feature {
+            color: #676767;
+        }
     }
 }
