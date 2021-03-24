@@ -25,6 +25,8 @@ Postgres 9.6 was released on 2016/09/29 and since then there have been a [flood 
 
 Postgres 12, however, supports new and old table references in statement-level triggers.
 
+The rest of this post explains the technical motivation for why we needed this capability.
+
 ### What does this mean?
 
 In SQL, there are two ways a trigger can be executed:
