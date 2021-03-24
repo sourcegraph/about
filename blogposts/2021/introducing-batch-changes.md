@@ -11,7 +11,7 @@ socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 ---
 
-As codebases grow in volume and complexity over time, more works needs to be put towards maintaining and improving code. Software engineering has also become more specialized, and developers rely more and more on code they didn't write. Configuration files, boilerplate code, and code patterns themselves need to be kept up to date and changed at the scale of the codebase.
+As codebases grow older, bigger and more complex, making codebase-wide code changes becomes harder. Configuration files, boilerplate code, and code patterns shared by an entire organization are often time re-used in dozens or hundreds of repos. Changing them at the scale of the codebase requires a huge amount of work and coordination. But the ability to make that kind of large-scale change is needed to keep things clean, move fast and stay nimble, or respond to new practices.
 
 For example, many platform teams find themselves maintaining old versions of internal components because they are reused in hundreds of downstream repos, and it is hard to get the owner to upgrade. Upgrading is painful because it requires manual work from the repository owner, so it’s not likely to be done anytime soon. Over the years, small issues like this accumulate.
 
