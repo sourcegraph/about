@@ -6,6 +6,9 @@ tags: [blog, release]
 slug: "release/3.26"
 published: true
 changelogItems:
+  - description: "Batch changes launch!"
+    url: https://about.sourcegraph.com/blog/introducing-batch-changes/
+    category: Batch Changes
   - description: "Campaigns has been renamed to Batch Changes. Backward compatibility has been preserved for folks using it in previous releases. See #18771 for details."
     url: https://github.com/sourcegraph/sourcegraph/issues/18771
     category: Batch Changes
