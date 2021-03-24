@@ -67,7 +67,7 @@ We chose to add a `version` column to these tables so that the backend can deter
 
 This is where the tradeoffs come in to play.
 
-In our [Cloud](https://sourcegraph.com/search) environment, the `lsif_data_definitions` table contains around 300 million rows. Simply counting the number of rows takes around 24 minutes on our production database instance, as seen by the following (simplified) query plan.
+In our [Cloud](https://sourcegraph.com/search) environment, the `lsif_data_definitions` table contains around 300 million rows. Simply counting the number of rows takes around 24 minutes on our production database instance, as seen by the following (simplified) query plan:
 
 ```
 Finalize Aggregate
