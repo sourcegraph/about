@@ -1,7 +1,7 @@
 ---
 title: Introducing Batch Changes
 description: Learn how to automate and track large-scale code changes across all of your repositories and code hosts with Sourcegraph Batch Changes.
-author: Erica Lindberg
+author: Sourcegraph
 authorUrl: https://about.sourcegraph.com/company/team#erica-lindberg-she-her
 publishDate: 2021-03-24T10:00-07:00
 tags: [blog, product, batch changes]
@@ -11,11 +11,11 @@ socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 ---
 
-As codebases grow older, bigger and more complex, making codebase-wide changes becomes harder. Configuration files, boilerplate code, and code patterns are often re-used in dozens or even hundreds of repos. Changing them at the scale of the codebase requires a huge amount of work and coordination. But the ability to make that kind of large-scale change is needed to keep things clean, move fast and stay nimble, or respond to new practices.
+As codebases grow older, bigger, and more complex, making codebase-wide changes becomes harder. Configuration files, boilerplate code, and code patterns are often re-used in dozens or even hundreds of repos. Changing them at the scale of the codebase requires a huge amount of work and coordination. But the ability to make large-scale change is needed to keep things clean, move fast and stay nimble, or respond to new practices.
 
 For example, many platform teams find themselves maintaining old versions of internal components because they are reused in hundreds of repos, and it is hard to get the owner to upgrade because upgrading would require manual work. Over the years, small issues like this accumulate.
 
-Making big or small codebase-wide changes requires a lot of manual work, and takes time. Changing something as simple as a few line of boilerplate code in an organization could require days or weeks. It requires identifying all occurrences of the code pattern, sometimes across thousands of repositories. Then, once the repositories are identified, each repository owner has to make the change. All of this has to be tracked and coordinated across many teams and more often than not this is done in clumsy spreadsheets. This approach tends to be a waste of time and effort, and many non-urgent changes end up being postponed and accumulate over time. In the event a critical security change has to be done, every hour that goes by increases risk and this is not practical.
+Making big or small codebase-wide changes requires a lot of manual work, and takes time. Changing something as simple as a few lines of boilerplate code in an organization could require days or weeks. It requires identifying all occurrences of the code pattern, sometimes across thousands of repositories. Then, once the repositories are identified, each repository owner has to make the change. All of this has to be tracked and coordinated across many teams, and more often than not, this is done in clumsy spreadsheets. This approach tends to be a waste of time and effort, and many non-urgent changes end up being postponed and accumulate over time. In the event that a critical security change has to be done, every hour that goes by increases risk.
 
 For the [platform team at Workiva](http://about.sourcegraph.com/case-studies/workiva-automates-large-scale-code-changes/), the difference between manually updating dozens of repositories when a new library was released, versus automating it with a batch change, was an 80% reduction in the time it took to implement the change. “We fell into the habit of letting tech debt accumulate to the point where all of a sudden, we’d have to bring everything to a screeching halt and do nothing for a month or a sprint or even a quarter and clean up the tech debt in that certain area,” said Trent Grover, Director of Architecture at Workiva. “The easier the tooling, the faster we can release breaking changes.” 
 
