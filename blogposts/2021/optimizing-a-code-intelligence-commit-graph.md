@@ -172,7 +172,7 @@ Running the query above from the commit `703e33` produces the following CTE resu
 <tr class="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>false</td><td>3</td><td>A</td></tr>
 </table>
 
-Notice that there are two ways to get from commit `7033ee` to commit `3d2f27`, the therefore the entries for `3d2f27` are duplicated in the CTE results (and therefore the working table). Also notice that the number of _new_ rows per iteration is growing as the iteration count rises in such graphs. **For some configuration of input, this query is [quadratic](https://accidentallyquadratic.tumblr.com/) instead of linear.**
+Notice that there are two ways to get from commit `7033ee` to commit `3d2f27`, therefore the entries for `3d2f27` are duplicated in the CTE results (and therefore the working table). Also notice that the number of _new_ rows per iteration is growing as the iteration count rises in such graphs. **For some configuration of input, this query is [quadratic](https://accidentallyquadratic.tumblr.com/) instead of linear.**
 
 What we _wanted_ to happen was for the "duplicate rows" not to be inserted into the working table at all. Unfortunately, each record in this example distinct due to the differing path lengths - a detail we glossed over when designing this query in the first place. Another classic case of the computer doing what you _told_ it to do instead of what you _wanted_ it to do. 🙄
 
