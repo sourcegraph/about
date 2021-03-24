@@ -1,12 +1,12 @@
 ---
 title: Introducing Batch Changes
-description: Learn how to automate and track large-scale code changes across all of your repositories and code hosts with Sourcegraph Batch Changes. 
+description: Learn how to automate and track large-scale code changes across all of your repositories and code hosts with Sourcegraph Batch Changes.
 author: Erica Lindberg
 authorUrl: https://about.sourcegraph.com/company/team#erica-lindberg-she-her
 publishDate: 2021-03-24T10:00-07:00
 tags: [blog, product, batch changes]
 slug: introducing-batch-changes
-heroImage: 
+heroImage:
 socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 ---
@@ -34,7 +34,7 @@ Batch Changes is an automated way to make large-scale code changes across all re
 When a change needs to be made, you can search for the occurrences of code to change,  specify the change once—calling any tool that changes code—and apply it everywhere. This not only brings visibility to the magnitude and impact of the change, but automates the process of making the change. 
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/$eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
 
 
