@@ -427,7 +427,7 @@ The size of the table here (relative to the simple table produced by a single-ro
 
 **We drastically underestimated the value of _m_ for some enterprise customers.**
 
-One of our large enterprise customers, one of our earliest adopters of LSIF-base code intelligence at scale, had completed an upgraded from Sourcegraph 3.17 to 3.20. After the upgrade, they realized they were no longer getting refreshed precise code intelligence and sent us this poorly drawn Sydney Opera House of a graph, indicating that something was deeply wrong.
+One of our large enterprise customers, who is also one of our earliest adopters of LSIF-base code intelligence at scale, had completed an upgraded from Sourcegraph 3.17 to 3.20. After the upgrade, they realized they were no longer getting refreshed precise code intelligence and sent us this poorly drawn Sydney Opera House of a graph, indicating that something was deeply wrong.
 
 ![worker OOM](https://sourcegraphstatic.com/blog/commit-graph-optimizations/oom.png)
 
