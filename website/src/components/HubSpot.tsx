@@ -35,7 +35,13 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
                     }
 
                     const firstSourceURLInput = form.querySelector<HTMLInputElement>('input[name="first_source_url"]')
-                    if (firstSourceURLInput && firstSourceURLInput.value === '') {
+                    const emailInput = form.querySelector<HTMLInputElement>('input[name="email"]')
+                    if (
+                        firstSourceURLInput &&
+                        firstSourceURLInput.value === '' &&
+                        emailInput &&
+                        emailInput.value === ''
+                    ) {
                         // Populate the hidden first_source_url form field with the value from the sourcegraphSourceUrl cookie.
                         firstSourceURLInput.value = firstSourceURL || ''
                     }
