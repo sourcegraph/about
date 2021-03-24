@@ -66,6 +66,7 @@ export default ((props: any) => (
                 <meta property="og:title" content="Sourcegraph - Pricing" />
                 <meta name="twitter:description" content={DESCRIPTION} />
                 <meta property="og:description" content={DESCRIPTION} />
+                <meta property="og:image" content="https://about.sourcegraph.com/sourcegraph-og.png" />
                 <meta name="description" content={DESCRIPTION} />
                 <link rel="icon" type="image/png" href="/favicon.png" />
             </Helmet>
