@@ -124,7 +124,7 @@ This second table allows us to efficiently determine which indexes have been mig
 
 It is an efficient operation to count both the total number of indexes as well as the number of indexes that are above or below a particular schema version.
 
-The schema version bounds can be kept in sync with the source table trivially by using triggers on inserts, updates, and deletes: if we insert a new row with a new lowest or new highest version or if we update/delete a row with the last remaining lowest or highest version, then we update the associated min or max version for that index.
+The schema version bounds can be kept in sync with the source table trivially by using triggers on inserts, updates, and deletes: if we insert a new row with a new lowest or new highest version or if we update/delete a row with the last remaining lowest or highest version, then we update the associated minimum or maximum version for that index.
 
 ### The catch
 
