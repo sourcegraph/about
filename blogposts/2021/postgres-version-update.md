@@ -17,7 +17,7 @@ As of Sourcegraph 3.27, we are updating the minimum supported version of Postgre
 
 **If you are maintaining an external database**: If your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27.
 
-## Why are we forcing an upgrade?
+## Why does Sourcegraph 3.27 require Postgres 12?
 
 Postgres 9.6 was released on 2016/09/29 and since then there have been a [flood of changes](https://www.postgresql.org/about/featurematrix/) including:
 
