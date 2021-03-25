@@ -39,7 +39,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Marketing
 
-- [Director of Community](https://jobs.lever.co/sourcegraph/480e8d71-03af-4659-ac90-b8e32ad4ef34)
 - [Managing Editor](https://jobs.lever.co/sourcegraph/ab3b91a6-dc80-4883-9134-1a5a7a62f871)
 - [Customer Marketing Manager](https://jobs.lever.co/sourcegraph/5769890f-69bd-4ff5-8515-233ce8e3c620)
 - [Content Marketing Manager](https://jobs.lever.co/sourcegraph/7a4175fb-10c8-4849-8f73-3afc6abe9db8)
