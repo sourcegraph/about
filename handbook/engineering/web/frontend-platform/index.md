@@ -87,7 +87,7 @@ The team makes use of [tracking issues](../../tracking_issues.md) for tracking p
 #### Getting cross-team feedback on RFC
 
 - Create a [tracking issue](../../tracking_issues.md) on our [Kanban board](https://github.com/orgs/sourcegraph/projects/144).
-- Create a separate issue for the RFC tracking.
+- Create a separate issue for the RFC tracking. [Lock conversation](https://docs.github.com/en/github/building-a-strong-community/locking-conversations): RFC should be discussed in the Google doc.
 - Add _rfc/tracking_ and _team/frontend-platform_ labels to the RFC issue.
 - Link the RFC issue to the tracking issue.
 - Once RFC is ready for review, move it to the _In review_ column and assign _sourcegraph/frontend-devs _ or individual developers to the issue.
