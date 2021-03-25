@@ -173,9 +173,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             <img
                                 className="w-100 h-auto mt-4"
                                 width="750"
-                                height="480"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/configuration.png"
-                                alt="Batch change spec for configuration use case"
+                                height="400"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
+                                alt="Batch spec for updating the username in Circle CI configurations"
                             />
                         </div>
                     </div>
@@ -189,10 +189,10 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             </p>
                             <img
                                 className="w-100 h-auto mt-4"
-                                width="750"
-                                height="480"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/refactoring.png"
-                                alt="Batch change spec for refactoring use case"
+                                width="850"
+                                height="380"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
+                                alt="Batch spec for using Comby to refactor Go code"
                             />
                         </div>
                     </div>
@@ -207,9 +207,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             <img
                                 className="w-100 h-auto mt-4"
                                 width="750"
-                                height="480"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/security.png"
-                                alt="Batch change spec for security use case"
+                                height="472"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
+                                alt="Batch spec for pinning Docker base images to specific versions"
                             />
                         </div>
                     </div>
