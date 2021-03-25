@@ -45,7 +45,8 @@ This document contains the goals and work log for the search team's [2-week iter
 ## Code Monitoring
 - **Owner(s):** Juliana
 - **Outcomes:**
-    - $DESIRED_OUTCOME
+    - Polish items related to the "Monitor" button on the search results page are addressed
+    - Work on checklist for code monitor queries is started
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
