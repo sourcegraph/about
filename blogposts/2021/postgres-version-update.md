@@ -122,8 +122,6 @@ The schema version bounds can be kept in sync with the source table trivially by
 
 ### The catch
 
-Of course this can't be the end of the story. In software engineering, every decision has a catch.
-
 After processing an LSIF index file, we insert data in Postgres utilizing very large bulk insert operations. During this process, we insert tens to hundreds of thousands of rows over multiple tables for each index - but we don't make tens of thousands of requests.
 
 For each insertion query, we supply as many rows as possible - up to `65535 / (# cols)` rows at a time. This reduces the total number of round trips to the database.
