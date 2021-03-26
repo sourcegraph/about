@@ -50,12 +50,13 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
-### Exhaustive
-- **Owner(s):** $OWNER
+### Exhaustive/Streaming
+- **Owner(s):** Stefan, Keegan
 - **Outcomes:**
-    - $DESIRED_OUTCOME
+    - Sharded streaming on Cloud
+    - Fixed highlighting for diff/commit search
 - **Work log:**
-    - YYYY-MM-DD: $UPDATE
+    - 2021-03-26: This week I focussed mainly on improving observability for streaming and exhaustive search. In the course of that I overhauled our logging to Prometheus and Honeycomb. With the improved logging I was able to troubleshoot a recent performance degradation.
 
 ### Misc
 
