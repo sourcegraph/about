@@ -22,7 +22,7 @@ As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum
 
 Sourcegraph 3.27 requires support for new and old table references in statement-level triggers, but Postgres 9.6 contains an SQL standard compatibility exclusion that does not support this. As noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
 
-> PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard.
+> *PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard.*
 
 Postgres 12, however, supports new and old table references in statement-level triggers.
 
