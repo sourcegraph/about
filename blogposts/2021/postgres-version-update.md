@@ -83,7 +83,7 @@ As explained in the [documentation](https://www.postgresql.org/docs/9.6/indexes-
 
 ### Speeding up counting queries
 
-In no world can a nearly half-hour query be considered _efficient_. And, due to the consequences caused by Postgres [MVCC](https://www.postgresql.org/docs/9.6/mvcc-intro.html), there are few actions under our control that could make a count of so many objects faster.
+A near half-hour query is not _efficient_. Due to the consequences caused by Postgres [MVCC](https://www.postgresql.org/docs/9.6/mvcc-intro.html), there are few actions under our control that could make a count of so many objects faster. Instead, we should count fewer things.
 
 So, instead, we should count fewer things.
 
