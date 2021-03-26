@@ -56,7 +56,7 @@ Each migration is written in a generic way that allows it to be controlled by a 
 
 Each migration is required to report its own progress (0-100%) to aid the runner in determining the set of migrations which need to run (and in which direction they must run in the presence of downgrades).
 
-We ran into problems with Postgres 9.6 triggers when trying to implement an out-of-band migration to re-encode the way code intelligence data is stored. A few tables in the codeintel database stores [gob](https://golang.org/pkg/encoding/gob/)-encoded payloads in a `bytea` column. In order to migrate this data into another shape, we need to read these payloads in batches, perform the data migration over each row (in Go, which can properly decode/re-encode the data), then write the new payloads back to the database.
+We ran into problems with Postgres 9.6 triggers when trying to implement an out-of-band migration to re-encode the way code intelligence data is stored. A few tables in the codeintel database stores [gob](https://golang.org/pkg/encoding/gob/)-encoded payloads in a `bytea` column. In order to migrate this data into another shape, we need to read these payloads in batches, perform the data migration over each row (in Go, which can properly decode/re-encode the data), and then write the new payloads back to the database.
 
 We chose to add a `version` column to these tables so that the backend can determine how to properly interpret the payload of a particular row. This way, both old and new payload shapes can be read while new rows are written with the new shape, and old rows are _eventually_ rewritten into the new shape.
 
