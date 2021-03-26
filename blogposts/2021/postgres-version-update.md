@@ -127,11 +127,7 @@ After processing an LSIF index file, we insert data in Postgres utilizing very l
 
 For each insertion query, we supply as many rows as possible, up to `65535 / (# cols)` rows at a time. This reduces the total number of round trips to the database.
 
-As of this post, our [Cloud](https://sourcegraph.com/search) environment has a single index with ~390k rows in the definitions table alone, and each index has over 12k rows in this table on average; 12k rows can be inserted with a single statement, and 390k rows can be inserted over 30 statements.
-
-If we were to utilize a row-level trigger approach to keep the schema version bounds in sync with insertions, we would double our writes to the database: one insert in the target table and one upsert to the schema versions table.
-
-If we were instead to utilize a statement-level trigger approach, the extra cost would be negligible: only a handful of additional upsert operations. However, for this to work, we'd need to know the values of both the `index_id` and `version` column, which we do not have access to in Postgres 9.6.
+As of this post, our [Cloud](https://sourcegraph.com/search) environment has a single index with ~390k rows in the definitions table alone, and each index has over 12k rows in this table on average; 12k rows can be inserted with a single statement, and 390k rows can be inserted over 30 statements. If we were to utilize a row-level trigger approach to keep the schema version bounds in sync with insertions, we would double our writes to the database: one insert in the target table and one upsert to the schema versions table. If we were instead to utilize a statement-level trigger approach, the extra cost would be negligible: only a handful of additional upsert operations. However, for this to work, we'd need to know the values of both the `index_id` and `version` column, which we do not have access to in Postgres 9.6.
 
 ## Conclusion
 
