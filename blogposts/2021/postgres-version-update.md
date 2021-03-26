@@ -15,7 +15,7 @@ As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum
 
 **If you are using the Sourcegraph maintained Docker images:** Your instance is already using an appropriate Postgres version and no action is needed on your part.
 
-**If you are maintaining an external database**: If your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27.
+**If you are maintaining an external database:** If your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27.
 
 ## Why does Sourcegraph 3.27 require Postgres 12?
 
