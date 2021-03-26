@@ -85,7 +85,6 @@ As explained in the [documentation](https://www.postgresql.org/docs/9.6/indexes-
 
 A near half-hour query is not _efficient_. Due to the consequences caused by Postgres [MVCC](https://www.postgresql.org/docs/9.6/mvcc-intro.html), there are few actions under our control that could make a count of so many objects faster. Instead, we should count fewer things.
 
-So, instead, we should count fewer things.
 
 In our naïve attempt to determine the progress of a particular migration, we wanted to simply report the ratio between the number of rows with a version _above_ our target and the total number of rows in the table. However, we don't need progress reporting to be completely accurate (except for at the 0% and 100% edges).
 
