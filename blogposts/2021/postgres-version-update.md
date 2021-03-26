@@ -92,7 +92,7 @@ Each table we care to migrate in the codeintel database has a composite primary 
 
 Instead of counting the ratio between migrated _rows_ and total rows (which is very large), we can instead count the ratio between migrated _indexes_ and total indexes (which is orders of magnitude smaller - 300 million vs. 23 thousand).
 
-The **obvious approach** would be to migrate all rows in a table associated with the same index at once. Unfortunately, indexes can be very massive. Some enterprise customers are regularly uploading 13GB index files. Thus, our migration batch size is likely going to be too small to guarantee all rows can be migrated, and increasing the batch size will add additional memory and compute constraints on the migrating container.
+The **obvious approach** would be to migrate all rows in a table associated with the same index at once. Unfortunately, indexes can be very massive. Some large customers are regularly uploading 13GB index files. Thus, our migration batch size is likely going to be too small to guarantee all rows can be migrated, and increasing the batch size will add additional memory and compute constraints on the migrating container.
 
 The **approach we chose** tracks the minimum and maximum row versions for each index in a separate, _much_ smaller table.
 
