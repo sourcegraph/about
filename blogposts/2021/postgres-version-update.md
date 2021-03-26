@@ -19,7 +19,8 @@ As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum
 
 ## Why does Sourcegraph 3.27 require Postgres 12?
 
-Postgres 9.6 was released on 2016/09/29 and since then there have been a [flood of changes](https://www.postgresql.org/about/featurematrix/). Among these changes is a feature which Sourcegraph requires moving forward: Postgres 9.6 contains a SQL standard compatibility exclusion, as noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
+
+Sourcegraph 3.27 requires support for new and old table references in statement-level triggers, but Postgres 9.6 contains an SQL standard compatibility exclusion that does not support this. As noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
 
 > PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard.
 
