@@ -50,7 +50,7 @@ Some classes of migrations are very difficult to do efficiently:
 - Concurrent index creation takes much longer, can be blocked for an arbitrary amount of time due to live transactions, and can fail requiring an operator to rebuild the index (cherry on top: reindex is not concurrent)
 - Data migrations over large tables can take an arbitrary amount of time
 
-Sourcegraph 3.25 introduced a mechanism for performing out-of-band migrations. Instead of being applied synchronously on application startup, out-of-band migrations are applied in the application background over a longer period of time.
+[Sourcegraph 3.25](/blog/release/3.25/) introduced a mechanism for performing out-of-band migrations. Instead of being applied synchronously on application startup, out-of-band migrations are applied in the application background over a longer period of time.
 
 Each migration is written in a generic way that allows it to be controlled by a global migration runner. This runner is responsible for controlling the throughput of the migration so that it does not require disproportionate memory or compute resources in the database or in the application.
 
