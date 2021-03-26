@@ -11,7 +11,7 @@ published: true
 description: "As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12."
 ---
 
-As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12.
+As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum supported version of Postgres from 9.6 to 12. 
 
 **If you are using the Sourcegraph maintained Docker images**: Your instance is already using an appropriate Postgres version and no action is needed on your part.
 
