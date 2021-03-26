@@ -24,7 +24,7 @@ Sourcegraph 3.27 requires support for new and old table references in statement-
 
 > *PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard.*
 
-Postgres 12, however, supports new and old table references in statement-level triggers.
+We are requiring Postgres 12 because it supports new and old table references in statement-level triggers.
 
 The rest of this post explains the technical motivation for why we needed this capability.
 
