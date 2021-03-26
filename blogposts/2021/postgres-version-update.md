@@ -125,7 +125,7 @@ The schema version bounds can be kept in sync with the source table trivially by
 
 After processing an LSIF index file, we insert data in Postgres utilizing very large bulk insert operations. During this process, we insert tens to hundreds of thousands of rows over multiple tables for each index but we don't make tens of thousands of requests.
 
-For each insertion query, we supply as many rows as possible - up to `65535 / (# cols)` rows at a time. This reduces the total number of round trips to the database.
+For each insertion query, we supply as many rows as possible, up to `65535 / (# cols)` rows at a time. This reduces the total number of round trips to the database.
 
 As of this post, our [Cloud](https://sourcegraph.com/search) environment has a single index with ~390k rows in the definitions table alone, and each index has over 12k rows in this table on average. 12k rows can be inserted with a single statement, and 390k rows can be inserted over 30 statements.
 
