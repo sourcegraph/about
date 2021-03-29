@@ -5,8 +5,8 @@ authorUrl: https://eric-fritz.com
 publishDate: 2021-03-23T18:00+02:00
 tags: [blog]
 slug: postgres-version-update
-heroImage: /blog/postgres-version-update.jpg
-socialImage: https://about.sourcegraph.com/blog/postgres-version-update.jpg
+heroImage: https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update.jpg
+socialImage: https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update.jpg
 published: true
 description: "As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12."
 ---
@@ -19,8 +19,7 @@ As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum
 
 ## Why does Sourcegraph 3.27 require Postgres 12?
 
-
-Sourcegraph 3.27 requires support for new and old table references in statement-level triggers, but Postgres 9.6 contains an SQL standard compatibility exclusion that does not support this. As noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
+Sourcegraph 3.27 requires support for new and old table references in statement-level triggers, but Postgres 9.6 contains an explicit SQL standard compatibility exclusion and does not support this. As noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
 
 > *PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard.*
 
@@ -28,18 +27,18 @@ We are requiring Postgres 12 because it supports new and old table references in
 
 The rest of this post explains the technical motivation for why we needed this capability.
 
-### What does this mean?
+### What are row-level and statement-level triggers?
 
 In SQL, there are two ways a trigger can be executed:
 
 1. Before or after a _row_ is inserted into/updated within/deleted from a target table
 1. Before or after an insert, update, or delete _statement_ over a target table
 
-In the former case, the trigger has access to the `OLD` and `NEW` row values. This allows the trigger to perform actions conditionally as well as extract the previous and updated values in the case the trigger is used to keep denormalized data consistent.
+In the former case, the trigger has access to the `OLD` and `NEW` row values, which allows values of particular columns to be used within the trigger.
 
-In the latter case, the trigger does not have access to the previous or the new data. Unfortunately, this means that statement-level triggers have no access to previous data, and must re-query the new data from the target table to make use of it.
+In the latter case, the trigger does not have access to the previous or the updated data. Unfortunately, statement-level triggers have no access to previous data, and must re-query the target table to make use of any newly updated data.
 
-### Why do we need this particular feature?
+### Why do we need statement-level triggers?
 
 Sourcegraph performs database migrations on application startup. We try our best to keep these migrations fast, as a slow migration will block additional container instances from starting and accepting traffic.
 
@@ -85,10 +84,9 @@ As explained in the [documentation](https://www.postgresql.org/docs/9.6/indexes-
 
 A near half-hour query is not _efficient_. Due to the consequences caused by Postgres [MVCC](https://www.postgresql.org/docs/9.6/mvcc-intro.html), there are few actions under our control that could make a count of so many objects faster. Instead, we should count fewer things.
 
-
 In our naïve attempt to determine the progress of a particular migration, we wanted to simply report the ratio between the number of rows with a version _above_ our target and the total number of rows in the table. However, we don't need progress reporting to be completely accurate (except for at the 0% and 100% edges).
 
-Each table we care to migrate in the codeintel database has a composite primary key containing an _index identifier_. Each unique index identifier corresponds to an LSIF index file uploaded by a user.
+Each table we care to migrate in the codeintel database has a composite primary key containing an _index identifier_. Each unique index identifier corresponds to a precise code intelligence index file uploaded by a user.
 
 Instead of counting the ratio between migrated _rows_ and total rows (which is very large), we can instead count the ratio between migrated _indexes_ and total indexes (which is orders of magnitude smaller - 300 million vs. 23 thousand).
 
@@ -124,14 +122,27 @@ The schema version bounds can be kept in sync with the source table trivially by
 
 Engineering performance around a database is full of trade-offs. In this case, we've gained faster counts by sacrificing efficiency of inserts.
 
-After processing an LSIF index file, we insert data in Postgres utilizing very large bulk insert operations. During this process, we insert tens to hundreds of thousands of rows over multiple tables for each index but we don't make tens of thousands of requests.
+After processing a precise code intelligence index file, we insert data in Postgres utilizing very large bulk insert operations. During this process, we insert tens to hundreds of thousands of rows over multiple tables for each index but we don't make tens of thousands of requests. As of this post, our [Cloud](https://sourcegraph.com/search) environment has a single precise code intelligence index with ~390k rows in the definitions table alone. Each precise code intelligence index has over 12k rows in this table on average.
 
-For each insertion query, we supply as many rows as possible, up to `65535 / (# cols)` rows at a time. This reduces the total number of round trips to the database.
+For each insertion query, we supply as many rows as possible (Postgres has a limit of 65535 values per query). This reduces the total number of round trips to the database, but also minimizes the number of total queries (and invocations of statement-level triggers).
 
-As of this post, our [Cloud](https://sourcegraph.com/search) environment has a single index with ~390k rows in the definitions table alone, and each index has over 12k rows in this table on average; 12k rows can be inserted with a single statement, and 390k rows can be inserted over 30 statements. If we were to utilize a row-level trigger approach to keep the schema version bounds in sync with insertions, we would double our writes to the database: one insert in the target table and one upsert to the schema versions table. If we were instead to utilize a statement-level trigger approach, the extra cost would be negligible: only a handful of additional upsert operations. However, for this to work, we'd need to know the values of both the `index_id` and `version` column, which we do not have access to in Postgres 9.6.
+We are unable to utilize a statement-level trigger approach in Postgres 9.6 as such triggers would not know the value of the `index_id` or `version` columns of newly inserted rows. This leaves us with row-level triggers only, and such an approach would double the number of writes to the database: for each row inserted in the target table there is another upsert to the schema versions table.
+
+So how bad would this approach be?
+
+<div class="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update-latency.png" alt="performance comparison">
+</div>
+
+Turns out it's pretty bad. Inserting 800k rows into the database with statement-level triggers takes under a minute (on a non-production test machine). Using row-level triggers the same operation takes over an hour.
 
 ## Conclusion
 
 In order to enable us to continue to scale and improve the performance of your Sourcegraph instance, we are bumping the minimum supported version of Postgres to unlock new features and performance enhancements.
 
 Once you plan to upgrade to Sourcegraph 3.27, you must first ensure that your database meets the new minimum version requirement of Postgres 12.
+
+<style>
+  .blog-post__html .no-shadow img { box-shadow: none; }
+  .blog-post__html .inline-images img { margin-left: 0; margin-right: 0; padding: 0; border: 0; display: inline; width: 49.5% }
+</style>
