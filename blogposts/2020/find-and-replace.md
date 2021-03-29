@@ -69,7 +69,7 @@ table.brain td img {
       <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg">
     </td>
     <td>
-    You get annoyed wth <code class="language-text">grep</code> and <code class="language-text">sed</code> and find 
+    You get annoyed wth <code class="language-text">grep</code> and <code class="language-text">sed</code> and find
     tools like ripgrep (<code class="language-text">rg</code>) and <code class="language-text">codemod</code>.
     Maybe you dive down the rabbit hole of parsers. Powerful—but it's a slog reading AST specs and writing tree traversers.
     </td>
@@ -517,6 +517,8 @@ released publicly.
 
 
 ### Campaigns
+
+_**Note:** Campaigns have evolved since this post was written, and we now call them batch changes. See [our docs](https://docs.sourcegraph.com/batch_changes) for the latest._
 
 After hearing the same thing over and over again from different development teams, we decided to try
 to build a general solution for this hairy problem of large-scale code transformation. Starting in

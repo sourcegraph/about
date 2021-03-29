@@ -12,6 +12,139 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - YYYY-MM-DD: $UPDATE
 
+## 2021-03-22 to 2021-04-02
+
+### Enterprise contexts
+
+- **Owner(s):** Rok
+- **Outcomes:**
+    - Users are able to search with converted version contexts on the dogfood instance
+    - Basic UI for displaying and listing search contexts
+- **Work log:**
+    - 2021-03-26: API support for converting version contexts is in main (soon on the dogfood instance). Finished the paginated API for search contexts. Started working on minimal UI for displaying and listing search contexts.
+
+### Search predicate builtins, complete `contains` filter predicate
+
+- **Owner(s):** Rijnard, Camden
+- **Outcomes:**
+    - Complete [RFC 353 for search predicate builtins](https://docs.google.com/document/d/1h3WCJEcTeOXwK0DeH8N5QEtPaNta85ddGP4R-2rMdrs/edit#)
+    - Complete `contains` filter predicate work items (See [#18584](https://github.com/sourcegraph/sourcegraph/issues/18584))
+    - Make progress on refactoring query processing (See outline in [RFC 254](https://docs.google.com/document/d/1_m63fsBMAtqaq3GA_aMzKUPxD3yxTy8d12lJE6qN6PU/edit#heading=h.s25eb1cluqod))
+- **Work log:**
+    - 2021-03-26: Partial RFC 353 progress, partial query refactoring progress.
+
+### Alerting and observability
+- **Owner(s):** Camden
+- **Outcomes:**
+  - Have a plan for implementing alerting and a light on-call rotation
+  - Implement better metrics to alert on
+  - Get first minimal alerts working
+- **Work log:**
+
+
+## Code Monitoring
+- **Owner(s):** Juliana
+- **Outcomes:**
+    - Polish items related to the "Monitor" button on the search results page are addressed
+    - Work on checklist for code monitor queries is started
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+### Exhaustive/Streaming
+- **Owner(s):** Stefan, Keegan
+- **Outcomes:**
+    - Sharded streaming on Cloud
+    - Fixed highlighting for diff/commit search
+- **Work log:**
+    - 2021-03-26: This week I focussed mainly on improving observability for streaming and exhaustive search. In the course of that I overhauled our logging to Prometheus and Honeycomb. With the improved logging I was able to troubleshoot a recent performance degradation.
+
+### Misc
+
+- **Work log:**
+    - YYYY-MM-DD: $UPDATE
+
+## 2021-03-08 to 2021-03-22
+
+### Implement `contains` filter predicate and document new additions
+- **Owner(s):** Rijnard, Camden
+- **Outcomes:**
+  - Finish implementing `contains` filter predicate (see [#18584](https://github.com/sourcegraph/sourcegraph/issues/18584)) and pings metrics
+  - Document `select` and `contains` usage and examples (`select` ships this release)
+- **Work log:**
+  - 2021-03-12: Initial `contains` implementation close to being merged. Started heavily refactoring our query processing which is slowing progress for evaluating more expressive queries like filter predicates, and will help address [perf/UX issues related streaming](https://github.com/sourcegraph/sourcegraph/issues/18203) (e.g., process queries natively by backends like Zoekt when possible, faster `not` queries, etc.)
+  - 2021-03-15: Initial `contains` implementation merged. Still need to clean up predicate parsing and improve performance on intersections for high-cardinality matches
+  - 2021-03-19: Merged documentation for `select`. `select` functionality shipped in 3.26. Continued query refactoring to simplify evaluation logic; pings metrics and `contains` frontend implementation deferred for ~1 week to minimize context switching.
+
+
+### Enterprise contexts
+
+- **Owner(s):** Rok
+- **Outcomes:**
+    - RFC reviewed and approved
+    - MVP ready to be shipped (ideally within the 3.26 release)
+- **Work log:**
+    - 2021-03-12: RFC halfway reviewed. MVP not likely to be shipped within the next release, because it requires some internal testing to be confident. At this point, the MVP contains the ability to migrate version contexts, view search context "profile" page, and listing search contexts.
+    - 2021-03-19: Decided to move MVP to next release to allow for some internal testing. Enterprise contexts RFC reviewed and approved. DB and ORM pull requests for enterprise contexts MVP under review and should be merged soon. Paginating search contexts API response complicates the dropdown UI a bit, so we'll have to find a way to address that.
+
+### Streaming
+
+- **Owner(s):** Stefan, Keegan, Juliana
+- **Outcomes:**
+  - Streaming defaults to on for all environments.
+  - Streaming release blockers fixed.
+- **Work log:**
+  - 2021-03-12:
+    - Nearly all integration tests run for streaming. One last release blocker left around duplicate results in or queries. Discussing solutions still in [#18203](https://github.com/sourcegraph/sourcegraph/issues/18203).
+    - Fixed "too large spans" in K8S logs. Root cause: we logged to spans ZoektSearch and ZoektSearchAll for every event coming from zoekt. Now we just log aggregates.
+    - Log "time to first result" to Honeycomb (to be reviewed [#19102](https://github.com/sourcegraph/sourcegraph/pull/19102)). Still open: log to Prometheus, add to ping.
+  - 2021-03-19: Streaming defaults to on for all environments.
+  - 2021-03-19: Streaming now logs to Prometheus, Ping DB, and Honeycomb.
+  - 2021-03-19: Don't mark spans as failed for context errors, which, by design, are very frequent for streaming search.
+  - 2021-03-19: End-to-end tests have been updated to match expectations for Streaming Search
+
+### Exhaustive
+
+- **Owner(s):** Stefan, Keegan
+- **Outcomes:**
+  - Enable zoekt end to end streaming for everyone on sourcegraph.com. [#18303](https://github.com/sourcegraph/sourcegraph/issues/18303)
+  - Result limit and counts improvements (detailed breakdown, display limits, etc). [#18297](https://github.com/sourcegraph/sourcegraph/issues/18297)
+  - src-cli for streaming done. For now what is missing is `-json` support.
+  - Implement scheduler in Zoekt.
+  - Initial release plan shared.
+- **Work log:**
+  - 2021-03-12:
+    - Scheduler for zoekt out for review. [zoekt#73](https://github.com/sourcegraph/zoekt/pull/74)
+    - src-cli now supports `-json` for streaming.
+  - 2021-03-19:
+    - Keegan :: reduced time this week, so did not land scheduler or result limit improvments.
+    - Scheduler PR updated after feedback.
+
+### Code Monitoring
+- **Owner(s):** Juliana
+- **Outcomes:**
+   - Work is advanced on [Code Monitoring polish items](https://github.com/sourcegraph/sourcegraph/issues/17414)
+- **Work log:**
+   - 2021-03-12: Low cost polish items have been addressed.
+
+### Misc
+
+- **Work log:**
+  - 2021-03-17: Rijnard :: Added syntax highlighting definitions 10+ languages, closed 7+ issues including customer requests.
+  - 2021-03-17: Rijnard :: Shipped feature to enable case-sensitivity by default (customer request). [#19242](https://github.com/sourcegraph/sourcegraph/pull/19242)
+  - 2021-03-10: Camden :: Finished pulling result types out of `graphqlbackend`. [#18348](https://github.com/sourcegraph/sourcegraph/issues/18348)
+  - 2021-03-12: Keegan :: Fixed most common panic in production around go symbols. [#19071](https://github.com/sourcegraph/sourcegraph/pull/19071)
+  - 2021-03-12: Keegan :: Several PRs to clean up logs in CI for backend tests (remove log spam, reduce verbosity, add buildkite sections).
+  - 2021-03-12: Stefan :: Tiny refactoring of graphqlbackend.seach_results.go: don't return nil, nil anywhere.
+  - 2021-03-15: Keegan :: Fixed panic in service discovery code. [#19122](https://github.com/sourcegraph/sourcegraph/pull/19122)
+  - 2021-03-17: Camden :: Added highlighting for our queries in documentation. [#70](https://github.com/sourcegraph/docsite/pull/70)
+  - 2021-03-17: Camden :: Small refactoring around how we keep track of result types. [#19226](https://github.com/sourcegraph/sourcegraph/pull/19226)
+  - 2021-03-18: Keegan :: dx work with Erik to move from go-bindata to go embed. [#19256](https://github.com/sourcegraph/sourcegraph/pull/19256) and [19276](https://github.com/sourcegraph/sourcegraph/pull/19276)
+  - 2021-03-18: Camden :: Fixed alignment issue on firefox for docs anchors. [#19238](https://github.com/sourcegraph/sourcegraph/pull/19238)
+  - 2021-03-19: Camden :: Generate railroad diagrams in replacement of the monstrous handwritten tables. [#19289](https://github.com/sourcegraph/sourcegraph/pull/19289)
+  - 2021-03-19: Stefan :: Moved logging from `evaluateLeaf` to the top and refactored parts of it along the way. [#19278](https://github.com/sourcegraph/sourcegraph/pull/19278)
+  - 2021-03-19: Stefan :: Fixed a bug in zoekt that led us to report always a shard count of 1 for every repo. [#19265](https://github.com/sourcegraph/sourcegraph/pull/19265)
+  - 2021-03-19: Juliana :: Started planning for webapp redesign with the Design and Frontend Platform teams
+
 ## 2021-02-22 to 2021-03-05
 
 ### Enable mandatory linting
@@ -23,6 +156,7 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - 2021-02-26: Feedback was generally positive, with some concern expressed for undue linting noise. Created a PR enabling mandatory linting ([#18703](https://github.com/sourcegraph/sourcegraph/pull/18703)) and an issue for tracking progress of unifying `.golangci.yml` and `.golangci.mandatory.yml` ([#18720](https://github.com/sourcegraph/sourcegraph/issues/18720)).
     - 2021-03-01: Merged mandatory linting
+	- 2021-03-02: Enable first set of linters
 
 ### `select` polish and `contains` filter predicate MVP
 - **Owner(s):** Rijnard, Camden
@@ -30,7 +164,9 @@ This document contains the goals and work log for the search team's [2-week iter
     - Polish remaining `select` work (optimization and add pings, see [#18002](https://github.com/sourcegraph/sourcegraph/issues/18002))
     - Start implementing `contains` filter predicate (see [#18584](https://github.com/sourcegraph/sourcegraph/issues/18584))
 - **Work log:**
-    - 2021-02-26: Added backend optimizations to `select`. Made progress understanding how to integrate pings--to reduce effort, we should add pings for `select` and `contains` at the same time. Discussed `contains` implementation and scaffolding. Started related refactoring to query inputs to generally help clean implementation. 
+    - 2021-02-26: Added backend optimizations to `select`. Made progress understanding how to integrate pings--to reduce effort, we should add pings for `select` and `contains` at the same time. Discussed `contains` implementation and scaffolding. Started related refactoring to query inputs to generally help clean implementation.
+    - 2021-03-04: Polished all of `select` including support for `symbol.kind` and frontend autocompletion. Started initial implementation of `contains` on the frontend/backend. Pings for `select` will be added along with `contains` implementation. Outcomes met.
+	- 2021-03-05: Implemented `contains`, but the implementation was a bit dirty, so decided to spend some time refactoring before merging
 
 ### Clean up graphqlbackend resolvers
 - **Owner(s):** Camden
@@ -38,6 +174,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Make all search result types independent of resolvers (tracking issue [#18348](https://github.com/sourcegraph/sourcegraph/issues/18348))
     - Move result types out of graphqlbackend
 - **Work log:**
+	- Everything but commit results are moved out of graphqlbackend. Commit results are blocked on splitting out highlights, which are resolvers
 
 ### Enterprise search contexts
 
@@ -47,6 +184,7 @@ This document contains the goals and work log for the search team's [2-week iter
     - Enterprise contexts RFC undergoing review (or at least ready for review)
 - **Work log:**
     - 2021-02-26: Defined the background and problem sections in the RFC. Removed the context URL parameter - now we are always using query as the source of truth for contexts.
+    - 2021-03-05: Finished the RFC and is now ready for review. Quinn K. and Erik gave it a quick pre-review pass to iron out any obvious issues. Fixed the [issues](https://github.com/sourcegraph/sourcegraph/issues/18732) that were found during user testing search contexts.
 
 ### Exhaustive
 - **Owner(s):** Keegan, Stefan
@@ -56,7 +194,31 @@ This document contains the goals and work log for the search team's [2-week iter
   - Validate scheduler approach with a proof of concept. [#18305](https://github.com/sourcegraph/sourcegraph/issues/18305)
   - Publish exhaustive search RFC.
 - **Work log:**
-  - 2021-02-26: Zoekt stream search implemented. In testing phase now. Display limits implemented. Highlights in diff/commit search contribute to result count. Dynamic filters now use O(1) space to be computed. Published [RFC 288 ](https://docs.google.com/document/d/1dk309wEXA34b-LF66SBOzcNBJ6jZbWXT_eeBL9TZ2Ro/edit#heading=h.trqab8y0kufp): Exhaustive Search.
+  - 2021-02-26: Zoekt stream search implemented. In testing phase now. Display
+    limits implemented. Highlights in diff/commit search contribute to result
+    count. Dynamic filters now use O(1) space to be computed. Published [RFC 288
+    ](https://docs.google.com/document/d/1dk309wEXA34b-LF66SBOzcNBJ6jZbWXT_eeBL9TZ2Ro/edit#heading=h.trqab8y0kufp):
+    Exhaustive Search.
+  - 2021-03-05:
+    - src-cli now supports streaming (PR in review, will probably merge on
+      Monday). As described in RFC 288, src-cli is key for rolling out
+      exhaustive search.
+    - First integration test for streaming search. We had couple of regressions
+      over the last weeks and the new integration tests go a long way in
+      avoiding those moving forward.
+    - Lots of smaller cleanups and bug-fixes: EG we remove
+      `repositoriesSearches` and `indexedRepositoriesSearches`. Those fields
+      were a drag on the performace but were never read.
+
+### Misc
+- **Owner(s):** Keegan, Juliana
+- **Work log***
+  - ci: specify env in the pipeline once (#18690)
+  - gitserver: remove log spam around setting HEAD (#18813)
+  - gitserver: use fetch when cloning (#18535)
+  - dev: build without custom build tags (#18776)
+  - code monitoring: toggle labels fixed and improvements to a11y (#18881)
+  - dev experience: wrote and sent out for review [RFC 344](https://docs.google.com/document/d/1ojZ2bmgnZ7CrUrZXJI1vpH_BI_PQp1ygNWt9VtYjDRA/edit#) for frotend development on deployed instances
 
 ### Streaming search polish
 - **Owner(s):** Juliana
@@ -67,7 +229,8 @@ This document contains the goals and work log for the search team's [2-week iter
     - 2021-02-23: Performance issues have been addressed and streaming is now at an acceptable level of performance
     - 2021-02-22: Server side errors are now handled and displayed to the user correctly
     - 2021-02-24: Streaming search is now enabled globally on Sourcegraph.com
-    - 2021-02-25: Other UI polish fixes for streaming search have been addressed 
+    - 2021-02-25: Other UI polish fixes for streaming search have been addressed
+    - 2021-03-05: Fixed low-hanging fruit a11y issues
 
 ## 2021-02-08 to 2021-02-19
 
@@ -187,7 +350,7 @@ This document contains the goals and work log for the search team's [2-week iter
 - **Work log:**
     - 2021-01-15: An early incomplete draft is being reviewed. Hope to publish widely next week.
     - 2021-01-22: Decided to fully focus on streaming search. Pushing out working on the RFC until we have the streaming feature flag turned on.
-    
+
 ### Structural search for monorepos
 - **Owner(s):** Rijnard, Camden
 - **Outcomes:**

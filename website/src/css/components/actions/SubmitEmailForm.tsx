@@ -6,21 +6,27 @@ export const SubmitEmailForm: React.FunctionComponent<{
     className?: string
 }> = ({ formAction, buttonText, className = '' }) => (
     <div>
-        <form className={`form form-inline ${className}`} action={formAction} method="get">
+        <form
+            className={`form form-inline input-group mb-2 d-inline-flex w-auto ${className}`}
+            action={formAction}
+            method="get"
+        >
             <input
-                className="form-control mr-md-2 mb-2"
+                className="form-control"
                 type="email"
                 name="email"
-                placeholder="Enter work email"
+                placeholder="Enter your email"
                 size={27}
                 autoCapitalize="off"
                 autoCorrect="off"
                 spellCheck={false}
                 autoComplete="email"
             />
-            <button type="submit" role="button" className="btn btn-primary mb-2">
-                {buttonText}
-            </button>
+            <div className="input-group-append">
+                <button type="submit" role="button" className="btn btn-primary">
+                    {buttonText}
+                </button>
+            </div>
         </form>
     </div>
 )

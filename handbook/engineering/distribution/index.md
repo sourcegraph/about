@@ -7,7 +7,7 @@ The distribution team is responsible for making Sourcegraph easy to deploy, scal
 ## Contact
 
 - Slack: #distributioneers channel or @distribution
-- [Support rotation](#support-rotation)
+- For support requests, please use our dedicated [support rotation](#support-rotation)
 - File issues: [team/distribution](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) label
 
 ## Team communication
@@ -53,14 +53,14 @@ See [Goals](goals.md)
   - [Dave Try](../../../company/team/index.md#dave-try)
   - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
   - FQ1 [distribution engineer](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
-  - FQ2 [Robert Lin](../../../company/team/index.md#robert-lin)
+  - FQ2 [Robert Lin](../../../company/team/index.md#robert-lin) (early July)
   - FQ3 hire
 
-## On-call rotation
+## Incident on-call rotation
 
-Who is on call? Slack: `/genie whoisoncall Distribution`
+Who is on-call? Slack: `/genie whoisoncall Distribution`
 
-We have an OpsGenie rotation to respond to [incidents](../incidents/index.md) (events that cause service disruption). You can find more information about [being on call in the handbook](../incidents/on_call.md).
+We have a 24x7 OpsGenie rotation to respond to [incidents](../incidents/index.md) (events that cause service disruption). You can find more information about [being on-call in the handbook](../incidents/on_call.md).
 
 **Incidents on-call**
 
@@ -69,7 +69,9 @@ We have an OpsGenie rotation to respond to [incidents](../incidents/index.md) (e
 
 ## Support rotation
 
-Who is on call? Slack: `/genie whoisoncall distribution-support`
+Who is on-call? Slack: `/genie whoisoncall distribution-support`
+
+_You can directly notify the on-call support engineer by using the handle `@distribution-support`._
 
 We maintain a support rotation to deal day-to-day requests (respond to ad-hoc, time-sensitive questions from customers or other teams, RFC review requests, etc). This makes it easier for other teams to reach out an engineer on the team who's priority is answering these questions and helps other engineers on the team remain focused. You can read more about this on the references below.
 When you are the active support engineer, your focus and priority is responding to requests and questions in #distributioneers, sometimes this might require creating an issue, re-assigning, looping in other engineers, etc.
@@ -87,8 +89,8 @@ Here are some guidelines that will help ensure we can reply to your request appr
 
 #### General questions
 
-Send us a message in #distributioneers and notify the active engineer by `@` his user in the message.
-Alternatively `@` the engineer in the thread in which he is required.
+Send us a message in #distributioneers and notify the active engineer by `@distribution-support` in the message.
+Alternatively `@distribution-support` the engineer in the thread in which he is required.
 If this is a **time sensitive request**, please let us know in the message that this is the case
 
 #### Customer incidents

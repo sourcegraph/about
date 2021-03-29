@@ -12,9 +12,11 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 ### Engineering
 
-- [Software Engineer - Code Insights - Backend](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
+- [Director of Engineering - Global code graph](https://jobs.lever.co/sourcegraph/92a29215-e44f-4f2e-b147-73a8cb756d09)
+- [Backend Engineer - Code Insights](https://jobs.lever.co/sourcegraph/5a25e568-575a-4209-b887-05f914ff0650)
+- [Site Reliability Engineer (SRE) / DevOps – Distribution](https://jobs.lever.co/sourcegraph/282b1709-0b4f-47b6-8188-722d8e59b512)
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
-- [Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+- Experienced security engineering manager (will be posted soon)
 
 ### Product
 
@@ -33,24 +35,19 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 
 - [Customer Engineer](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57)
 - [Training Engineer](https://jobs.lever.co/sourcegraph/7aae60bb-228f-4e48-89f8-d16646aa4642)
-- [Director of Customer Engineering, East](https://jobs.lever.co/sourcegraph/82f595d8-9a88-40f6-b84a-b243c58754f0)
-- [Director of Customer Engineering, West](https://jobs.lever.co/sourcegraph/cb233f84-da0e-4c1d-8a75-c86e265609b1)
 - VP Customer Engineering (to be posted very soon)
 
 ### Marketing
 
-- [Director of Community](https://jobs.lever.co/sourcegraph/480e8d71-03af-4659-ac90-b8e32ad4ef34)
 - [Managing Editor](https://jobs.lever.co/sourcegraph/ab3b91a6-dc80-4883-9134-1a5a7a62f871)
 - [Customer Marketing Manager](https://jobs.lever.co/sourcegraph/5769890f-69bd-4ff5-8515-233ce8e3c620)
 - [Content Marketing Manager](https://jobs.lever.co/sourcegraph/7a4175fb-10c8-4849-8f73-3afc6abe9db8)
 - [Senior Demand Generation Program Manager](https://jobs.lever.co/sourcegraph/5c74fc3f-7b1a-40cb-b106-0bc6c34714ba)
 - [Senior Manager, Marketing Operations](https://jobs.lever.co/sourcegraph/d6250f88-1580-4655-95cc-aa67c0ec8c08)
 - [Product Marketing Manager, Emerging Products](https://jobs.lever.co/sourcegraph/d7813bec-5ebe-438c-a826-f12a78516c16)
-- [Project Coordinator, Brand](https://jobs.lever.co/sourcegraph/27b81606-f391-4ef5-bb1d-7b3dcc6d1cce)
 
 ### Operations, finance, and legal
 
-- [Finance & Operations Analyst](https://jobs.lever.co/sourcegraph/35d6628e-9e9a-4385-a4ea-67e411732cb4)
 - [Tech Ops Analyst](https://jobs.lever.co/sourcegraph/40e2f3cc-9cc1-4753-8ab1-c1269e531cf3)
 
 ### People Operations and Talent

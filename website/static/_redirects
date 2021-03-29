@@ -89,7 +89,6 @@
 /handbook/engineering/hiring/software-engineer-backend https://jobs.lever.co/sourcegraph/a0dba744-ed1d-4172-8a4a-0feb52609322 301!
 /handbook/engineering/hiring/software-engineer-distribution https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b 301!
 /handbook/engineering/hiring/software-engineer-security https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22 301!
-/handbook/engineering/hiring/software-engineer-campaigns-full-stack-frontend https://jobs.lever.co/sourcegraph/886e4343-6efc-4ab1-b204-f9115cfdeae3 301!
 /handbook/product/roles/technical_writer /handbook/product/roles.md#technical-writer 301!
 /handbook/product/roles/product_designer /handbook/product/roles.md#product-designer 301!
 /handbook/product/roles/product_manager /handbook/product/roles.md#product-manager 301!
@@ -117,6 +116,7 @@
 /product/code-search-navigation / 301!
 /product/automation / 301!
 /product/server / 301!
+/product/batch-changes /batch-changes 301!
 /resources/our-abcs-childrens-book-download https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf
 /resources/universal-code-search-ebook/ https://info.sourcegraph.com/universal-code-search-ebook-req 301!
 /solutions/developer-onboarding /product 301!
