@@ -21,7 +21,7 @@ Our schedule is reflected in the working hours set in our calendars and blocks h
 Focus blocks are listed simply as which 1/2 of which day
 
 ## Adjusting the schedule
-* **Ad-hoc adjustments** can be shared in the team Slack channel (#customer-support-chat).
+* **Ad-hoc adjustments** can be shared in the team Slack channel (#customer-support-team).
 * **Lasting adjustments** can be discussed in our weekly 1:1s. 
 
 If an adjustment creates a gap in covering our SLAs, we will figure it out! 
