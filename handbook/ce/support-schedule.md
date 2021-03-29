@@ -6,6 +6,8 @@ This starts by everyone on the team identifying their ideal working hours. If we
 
 Our schedule also makes it clear when folks on the team have dedicated heads-down focus time.
 
+Focus time is created with the intention of ensuring that the support team has dedicated time to focus on specific personal projects or development outside of working on tickets. During focus hours, the team is aware you are unavailable to meet (but please make yourself available if there is an urgent matter). This time is intended to increase productivity and build positive momentum that you can use for the rest of the day. Allow two half-day blocks weekly in your schedule for focus time.
+
 ## Schedule
 Our schedule is reflected in the working hours set in our calendars and blocks held on our calendar for our focus blocks.
 
