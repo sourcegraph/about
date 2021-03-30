@@ -13,7 +13,7 @@ description: "As of Sourcegraph 3.27, we're updating the minimum supported versi
 
 As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum supported version of Postgres from 9.6 to 12. 
 
-**If you are maintaining an external database:** If your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27.
+**If you are maintaining an external database:** If your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27. See the [following instructions](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for a step-by-step guide.
 
 **If you are using the Sourcegraph maintained Docker images:** Your instance is already using an appropriate Postgres version and no action is needed on your part.
 
@@ -140,7 +140,7 @@ Turns out it's pretty bad. Inserting 800k rows into the database with statement-
 
 In order to enable us to continue to scale and improve the performance of your Sourcegraph instance, we are bumping the minimum supported version of Postgres to unlock new features and performance enhancements.
 
-Once you plan to upgrade to Sourcegraph 3.27, you must first ensure that your database meets the new minimum version requirement of Postgres 12.
+Once you plan to upgrade to Sourcegraph 3.27, you must first ensure that your database meets the new minimum version requirement of Postgres 12. See the [following instructions](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for a step-by-step guide.
 
 <style>
   .blog-post__html .no-shadow img { box-shadow: none; }
