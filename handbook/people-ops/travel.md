@@ -1,18 +1,8 @@
-# Team travel budgets
+# Company sponsored events (team and company-wide)
 
-Sourcegraph is an [all-remote](../../company/remote/index.md) company. This means we all need to make an effort to travel to meet up in person and spend quality time with other team members all around the world.
+All company sponsored in-person events are currently on hold until further notice due to COVID-19. We plan to resume company sponsored in person events as soon as it safe to do so. However, all teams are still more than welcome to plan and use company budget to create and plan remote-friendly events!
 
-Team meetups are very important for building cohesiveness in remote teams and spreading Sourcegraph culture across the company.
-
-We want and expect you to use your full travel budgets described here each year! For this reason, they aren't transferrable, and unused budget doesn't roll over into the next year.
-
-For example:
-
-- A teammate cannot reallocate the budget from a company-wide event to an individual trip.
-- A teammate cannot use their team budget for individual travel.
-- A teammate cannot skip the winter holiday party to get a longer stay at the spring/summer company-wide event.
-
-There are four types of company-sponsored, company-paid travel.
+In the meantime, team events are encouraged to take place virtually and team budgets are available for use towards remote/virtual events! If your team would like to plan a virtual team-bonding event feel free to reach out to @people-ops for support.
 
 ## Company-wide events
 
@@ -31,11 +21,29 @@ Sourcegraph generally holds two company-wide events each year, each fully covere
 - If one individual is a member of multiple teams, they will receive the same amount for each of their teams.
 - The budget can be used for online team bonding events if the team prefers.
 
+## Team travel budgets
+
+Sourcegraph is an [all-remote](../../company/remote/index.md) company. This means we all need to make an effort to travel to meet up in person and spend quality time with other team members all around the world.
+
+Team meetups are very important for building cohesiveness in remote teams and spreading Sourcegraph culture across the company.
+
+We want and expect you to use your full travel budgets described here each year! For this reason, they aren't transferrable, and unused budget doesn't roll over into the next year.
+
+For example:
+
+- A teammate cannot reallocate the budget from a company-wide event to an individual trip.
+- A teammate cannot use their team budget for individual travel.
+- A teammate cannot skip the winter holiday party to get a longer stay at the spring/summer company-wide event.
+
+There are four types of company-sponsored, company-paid travel.
+
+
 ## Individual travel
 
 - Each teammate has one fully-paid trip per year to meet up with a group of teammates in another location.
   - This is *in addition* to the other benefits mentioned on this page.
   - The purpose of defining this as one “trip” (instead of providing a set dollar budget) is to avoid punishing teammates that live far away from other teammates, and who would therefore incur higher airfare costs.
+
 
 ## Professional development and education
 
