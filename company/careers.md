@@ -34,7 +34,6 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 ### Customer Engineering
 
 - [Customer Engineer](https://jobs.lever.co/sourcegraph/3ede0606-7a86-45d4-a627-e8cbae7a1a57)
-- [Training Engineer](https://jobs.lever.co/sourcegraph/7aae60bb-228f-4e48-89f8-d16646aa4642)
 
 ### Marketing
 
