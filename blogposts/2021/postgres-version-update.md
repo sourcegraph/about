@@ -1,5 +1,5 @@
 ---
-title: "We're updating the minimum supported version of Postgres. Here's why."
+title: "Why we're updating the minimum supported version of Postgres"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 publishDate: 2021-03-31T18:00+02:00
@@ -8,14 +8,14 @@ slug: postgres-version-update
 heroImage: https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update.jpg
 socialImage: https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update.jpg
 published: true
-description: "As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12."
+description: "As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12. Here's why."
 ---
 
 As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum supported version of Postgres from 9.6 to 12. 
 
-**If you are maintaining an external database:** If your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27. See the [following instructions](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for a step-by-step guide.
+**If you are maintaining an external database** and your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27. See the [following instructions](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for a step-by-step guide.
 
-**If you are using the Sourcegraph maintained Docker images:** Your instance is already using an appropriate Postgres version and no action is needed on your part.
+**If you are using the Sourcegraph maintained Docker images,** your instance is already using an appropriate Postgres version and no action is needed on your part.
 
 ## Why does Sourcegraph 3.27 require Postgres 12?
 
