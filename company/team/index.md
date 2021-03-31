@@ -817,4 +817,10 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [bill.creager@sourcegraph.com](mailto:bill.creager@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/bill-creager-8055911a/)
 - If he isn't in front of this computer, Bill can usually be found doing one of the following: eating some BBQ in Austin, riding his bike or running, watching his kids play soccer, camping with the family, or working with his hands (building furniture, building and playing guitars). He grew up in Phoenix, AZ and went to Northern Arizona University in Flagstaff, AZ where he studied computer science (after a quick detour in Environmental Engineering, it wasn't for him).   Prior to Sourcegraph he worked at Procore, Spiceworks, and Demand Media and has been living in Texas for 11 years (he got there as quick as he could)!
 
+## Samson Goddy (he/him)
 
+- Director of Community
+- Port Harcourt, Nigeria 🇳🇬
+- GitHub: [samswag](https://github.com/samswag)
+- [samson@sourcegraph.com](mailto:samson@sourcegraph.com),[@samson_goddy](https://twitter.com/Samson_Goddy),[LinkedIn](https://linkedin.com/in/samsongoddy)
+- Samson, a software developer who believes in creating something iconic. An open source advocate who has been sustaining projects with his diverse experiences. He maintains tools, desktops and likes contributing back to the large OSS ecosystem. Building communities is something he passionate about, and he currently runs Open Source Community Africa, a non-profit org that promotes and educates everything open source. He loves playing console games, mobile photography and eating jollof rice.
