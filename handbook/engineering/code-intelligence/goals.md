@@ -51,11 +51,11 @@ Progress on adoption and usage is tracked in our [Looker dashboard](https://sour
 
 **Milestones:**
 
-1. ✅ Sourcegraph Cloud has up-to-date precise code intelligence for 5 Gradle repositories.
+1. 🔄 Sourcegraph Cloud has up-to-date precise code intelligence for 5 Gradle repositories.
 
     **Outcome:** 5 popular open source Gradle repositories have up-to-date precise code intelligence on Sourcegraph Cloud.
 
-1. ✅ Sourcegraph Cloud has up-to-date precise code intelligence for 5 Maven repositories.
+1. 🔄 Sourcegraph Cloud has up-to-date precise code intelligence for 5 Maven repositories.
 
     **Outcome:** 5 popular open source Maven repositories have up-to-date precise code intelligence on Sourcegraph Cloud.
     
