@@ -17,6 +17,8 @@ As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum
 
 **If you are using the Sourcegraph maintained Docker images,** your instance is already using an appropriate Postgres version and no action is needed on your part.
 
+Read the [documentation guide](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for instructions on how to upgrade PostgreSQL. 
+
 ## Why does Sourcegraph 3.27 require Postgres 12?
 
 Sourcegraph 3.27 requires support for new and old table references in statement-level triggers, but Postgres 9.6 contains an explicit SQL standard compatibility exclusion and does not support this. As noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
@@ -118,11 +120,11 @@ It is an efficient operation to count both the total number of indexes as well a
 
 The schema version bounds can be kept in sync with the source table trivially by using triggers on inserts, updates, and deletes: if we insert a new row with a new lowest or new highest version or if we update/delete a row with the last remaining lowest or highest version, then we update the associated minimum or maximum version for that index.
 
-### The catch
+### Analyzing the trade-offs
 
 Engineering performance around a database is full of trade-offs. In this case, we've gained faster counts by sacrificing efficiency of inserts.
 
-After processing a precise code intelligence index file, we insert data in Postgres utilizing very large bulk insert operations. During this process, we insert tens to hundreds of thousands of rows over multiple tables for each index but we don't make tens of thousands of requests. As of this post, our [Cloud](https://sourcegraph.com/search) environment has a single precise code intelligence index with ~390k rows in the definitions table alone. Each precise code intelligence index has over 12k rows in this table on average.
+After processing a precise code intelligence index file, we insert data in Postgres utilizing very large bulk insert operations. During this process, we insert tens to hundreds of thousands of rows over multiple tables for each index, but we don't make tens of thousands of requests. As of this post, our [Cloud](https://sourcegraph.com/search) environment has a single precise code intelligence index with ~390k rows in the definitions table alone. Each precise code intelligence index has over 12k rows in this table on average.
 
 For each insertion query, we supply as many rows as possible (Postgres has a limit of 65535 values per query). This reduces the total number of round trips to the database, but also minimizes the number of total queries (and invocations of statement-level triggers).
 
