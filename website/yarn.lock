@@ -9866,10 +9866,10 @@ mdast-util-toc@^5.0:
     unist-util-is "^4.0.0"
     unist-util-visit "^2.0.0"
 
-mdi-react@^7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/mdi-react/-/mdi-react-7.4.0.tgz#9d0f1c977a18518db5a24777ff85b67efa5a5359"
-  integrity sha512-Me04YOxIYU0aepDTwR0zjpBf+6M/VqGEqr+VIh10qeCj3za05sfi7foqokBomcb17IFjTIKXoX92VmKLDQQ6OA==
+mdi-react@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/mdi-react/-/mdi-react-7.5.0.tgz#f4a5782ea8f181647287f259eecc5af52cf67ccd"
+  integrity sha512-giWvxmBKcqOnhN2ekKN1VvFA9/YF2X5CrZyo7S2EcTZktT0chMreIPVCDF2Q3rjoHTWD7tR+cNsTopeDSaeYHg==
 
 mdn-data@2.0.4:
   version "2.0.4"
