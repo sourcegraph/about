@@ -106,7 +106,7 @@ To add yourself to this page:
 - San Francisco, CA (Ramaytush Ohlone land)
 - GitHub: [mercadon](https://github.com/mercadon)
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/), [pronounce my name 🔊](https://www.name-coach.com/noemi-mercado)
-- Noemi was borned and raised in the Bay Area, she spends her free time caring for her cacti collection and pup named Valencia. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care.
+- Noemi was born and raised in the Bay Area, she spends her free time caring for her cacti collection and pup named Valencia. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care.
 
 ## Nick Snyder (he/him)
 
