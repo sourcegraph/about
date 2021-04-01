@@ -1593,7 +1593,7 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@popperjs/core@^2.0.0", "@popperjs/core@^2.6.0":
+"@popperjs/core@2.6.0", "@popperjs/core@^2.0.0":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
   integrity sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
@@ -1766,12 +1766,12 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.1.tgz#78b5433344e2f92e8b306c06a5622c50c245bf6b"
   integrity sha512-S6oPal772qJZHoRZLFc/XoZW2gFvwXusYUmXPXkgxJLuEk2vOt7jc4Yo6z/vtI0EBkbPBVrJJ0B+prLIKiWqHg==
 
-"@types/bootstrap@5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-5.0.8.tgz#23725bf155be5eea507aa66e2ef8fa247b311b72"
-  integrity sha512-jZh3E0J925ClLlcRy9G0A9sfep3WXhElNpv0s6ZDufX8SJ2+1eO0TactMH+AEB8tjrm362zPRvyXmvuFxeexqw==
+"@types/bootstrap@5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-5.0.12.tgz#d044b6404bf3c89fc90df2822a86dfcd349db522"
+  integrity sha512-iowwPfp9Au6aoxS2hOgeRjXE25xdfLrTpmxzQSUs21z5qY3UZpmjSIWF4h8jPYPEXgZioIKLB2OSU8oWzzJAcQ==
   dependencies:
-    "@popperjs/core" "^2.6.0"
+    "@popperjs/core" "2.6.0"
     "@types/jquery" "*"
 
 "@types/cacheable-request@^6.0.1":
