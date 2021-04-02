@@ -50,6 +50,9 @@ See our [careers page](../../company/careers.md) for open roles on the People Op
 
 - [Diversity, equity, and inclusion](../communication/dei.md)
 - [Personal Pronouns](personal-pronouns.md)
+
+## Other policies
+
 - [Anti-corruption/anti-bribery](anti-corruption.md)
 
 ## General office information
