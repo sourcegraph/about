@@ -7,7 +7,7 @@ You might think of this page as a remote version of "the clever workflows and sh
 ## GSuite
 
 - **Search across all GSuite content with Google Cloud Search.** You can use https://cloudsearch.google.com/cloudsearch to search across Mail, Drive, Groups and Calendar, as an additional tip, you can create a custom search for it as recommended in the [Chrome](#chrome) section using `https://cloudsearch.google.com/cloudsearch/search?q=%s`.
-- Use the shortcut URLs [docs.new](http://docs.new), [http://sheets.new](sheets.new), and [slides.new](http://slides.new) for a super fast way to create new docs!
+- Use the shortcut URLs [docs.new](http://docs.new), [sheets.new](http://sheets.new), and [slides.new](http://slides.new) for a super fast way to create new docs!
 
 ## Slack 
 
