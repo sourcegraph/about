@@ -21,18 +21,23 @@ Step 4:
 On the left panel, under the *Select Assignee* tab, pick *Assign to this group* and submit the ticket as open one more time -- this will make sure the ticket lands in the *Unassigned queue* (which requires that ticket have the tag “triaged,” status of “open” and assignee of the Support group).
 
 ## FAQs
-### 1. What should I do when I see a ticket originating from Slack with an internal user as the post owner?
+
+### 1. Whose responsible for triaging?
+
+Virginia is responsible for triaging, and all CSEs are welcome to triage if they are ready to pick up and work a ticket and they see Virginia hasn't yet triaged the new tickets.
+
+### 2. What should I do when I see a ticket originating from Slack with an internal user as the post owner?
 
 The first step would be to open up the slack channel in which the Sourcegraph colleague posted, which is linked in the Zendesk ticket. In here we can see what happened in the conversation. This helps build context as to whether similar tickets correspond to this as well (may or may not necessitate a merge). Based on a slack channel, tickets can be created in Zendesk that are related to the challenge that the customer is facing. For this, it would be great to merge them and associate them to the customer. Also great to note that the ticket can be closed if the colleague in the thread doesn’t need our help.
 
-### 2. What if a new ticket is related to another ticket?
+### 3. What if a new ticket is related to another ticket?
 
 If the other ticket is still open, merge the new ticket into it and alert our teammates who is responsible for the active ticket. This is easiest to see for tickets that originate from Slack. If you catch it for those that come in via email, that is great, but it can be harder to do.
 
-### 3. Can I merge a ticket into one that I closed in the past?
+### 4. Can I merge a ticket into one that I closed in the past?
 Short answer, No. Hopefully in the future, Zendesk will give us this feature; for now, we can link to the other ticket and be sure the requestor is correct.
 
+### 5. Do we have anything to triage manually?
 
-
-	
+Yes, we have a few customers listed in our [Customer Exception list](https://about.sourcegraph.com/handbook/ce/customer-exceptions) that we have to manually triage because we cannot automate the link from Slack to Zendesk. When a customer creates a support request in these channels, we have to manually create a Zendesk ticket and then triage that.	
 	
