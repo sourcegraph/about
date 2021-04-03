@@ -11,6 +11,15 @@ published: true
 description: 'Code intelligence with LSIF'
 ---
 
+(setq markdown-xhtml-header-content
+	"<style type='text/css'>
+		iframe {
+			display: block;
+			margin: 0 auto;
+		}
+	</style>"
+)
+
 <div class="alert alert-info">
 
 Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
