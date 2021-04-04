@@ -30,7 +30,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         rel="noopener"
                                         className="bigCode"
                                     >
-                                        Not a developer?
+                                        Sourcegraph Overview (PDF)
                                     </a>
                                 </li>
                             </ul>
