@@ -4,23 +4,6 @@ All company sponsored in-person events are currently on hold until further notic
 
 In the meantime, team events are encouraged to take place virtually and team budgets are available for use towards remote/virtual events! If your team would like to plan a virtual team-bonding event feel free to reach out to @people-ops for support.
 
-## Company-wide events
-
-Sourcegraph generally holds two company-wide events each year, each fully covered by the company:
-
-- Winter party (typically in San Francisco)
-- Spring/summer event
-
-## Team events
-
-- Each team is allocated $4,000 USD per year per teammate for team meetups (minimum two members of the team).
-- This is designed to allow each team to hold at least one event every six months (in addition to the company-wide events above).
-- This budget can be used for travel (airfare, trains, etc.), lodging (hotels, rental homes, etc.), events, meals and entertainment, and more.
-- Teams are expected to use discretion about what events are appropriate for team outings. Be inclusive! Contact @sourcegraph/people-ops with any questions.
-- Reserve plenty of time for just hanging out, touring around, having fun, etc. Quality time is important.
-- If one individual is a member of multiple teams, they will receive the same amount for each of their teams.
-- The budget can be used for online team bonding events if the team prefers.
-
 ## Team travel budgets
 
 Sourcegraph is an [all-remote](../../company/remote/index.md) company. This means we all need to make an effort to travel to meet up in person and spend quality time with other team members all around the world.
@@ -37,6 +20,22 @@ For example:
 
 There are four types of company-sponsored, company-paid travel.
 
+## Company-wide events
+
+Sourcegraph generally holds two company-wide events each year, each fully covered by the company:
+
+- Winter party (typically in San Francisco)
+- Spring/summer event
+
+## Team events
+
+- Each team is allocated $4,000 USD per year per teammate for team meetups (minimum two members of the team).
+- This is designed to allow each team to hold at least one event every six months (in addition to the company-wide events above).
+- This budget can be used for travel (airfare, trains, etc.), lodging (hotels, rental homes, etc.), events, meals and entertainment, and more.
+- Teams are expected to use discretion about what events are appropriate for team outings. Be inclusive! Contact @sourcegraph/people-ops with any questions.
+- Reserve plenty of time for just hanging out, touring around, having fun, etc. Quality time is important.
+- If one individual is a member of multiple teams, they will receive the same amount for each of their teams.
+- The budget can be used for online team bonding events if the team prefers.
 
 ## Individual travel
 
