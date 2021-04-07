@@ -158,16 +158,32 @@ no one needed an explanation and nearly everyone understood what the feature is
 roughly about.
 
 But renaming what we built _again_? It would've been tempting to answer with
-"customers are already using it" or "we've recorded demo videos with the old
-names!" or "there's so many screenshots we would need to change". In all
-honesty, though, we had to admit: existing customers probably won't mind as long
-as it's not a breaking change, some of our screenshots were outdated already,
-and we've been meaning to record an up-to-date demo video again too.
+"customers are already using it, why bother?" or "we've recorded demo videos
+with the old names!" or "there's so many screenshots we would need to change".
+In all honesty, though, we had to admit: existing customers probably won't mind
+as long as it's not a breaking change, some of our screenshots were outdated
+already, and we've been meaning to record an up-to-date demo video again too.
 
-So, [renaming we did][pr5].
+So, [renaming we did][pr5] and followed it up with the first official,
+non-alpha, non-beta, download-it-now-and-try-it launch of [Batch
+Changes][launch].
 
-TODO TODO TODO
+Looking back over these five pull requests and at the past 1.5 years now I'm
+still surprised. Working in iterations is all I did in my career so fake: 2 week
+sprints, 4 weeks, Agile, Scrum, Shape Up, even - ugh - [SAFe][safe]. I know how
+easy it is to say "but this is what we said we wanted to build" or "but we
+invested all that time!". It's really easy and I'm still not quite sure how we
+avoided falling into these traps. My best guess (and this _will_ sound cheesy)
+is: commitment. Commitment to building an excellent product, commitment to
+building something that provides value to customers, even if it means starting
+from scratch when you realise you're in a dead end. 
 
+Or let's turn this around: how hard was it to say in January last year, after a
+team of engineers had spent months building it, that we need to rip out half of
+it and change the flow completely? Really hard is my bet. But we did and that
+still inspires and motivates me, because I'd rather build and ship something
+that _is_ valuable and that _is_ good than to give customers something just
+because we build it.
 
 [pr1]: https://github.com/sourcegraph/sourcegraph/pull/5482
 [pr2]: https://github.com/sourcegraph/sourcegraph/pull/8008
@@ -176,6 +192,8 @@ TODO TODO TODO
 [pr4b]: https://github.com/sourcegraph/sourcegraph/pull/11972
 [evencoolercode]: https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e863448757e09850349b8a2bd7b1e540f6a6259a/-/blob/enterprise/internal/batches/reconciler/executor.go#L91-129
 [pr5]: https://github.com/sourcegraph/about/pull/2745
+[launch]: https://about.sourcegraph.com/blog/introducing-batch-changes/
+[safe]: https://www.google.com/search?q=scaled+agile+framework&tbm=isch
 
 <!---
 Pull requests:
