@@ -41,3 +41,10 @@ Short answer, No. Hopefully in the future, Zendesk will give us this feature; fo
 
 Yes, we have a few customers listed in our [Customer Exception list](https://about.sourcegraph.com/handbook/ce/customer-exceptions) that we have to manually triage because we cannot automate the link from Slack to Zendesk. When a customer creates a support request in these channels, we have to manually create a Zendesk ticket and then triage that.	
 	
+### 6. What do I do when I see a company update in the triage queue?
+
+We sometimes get all company updates coming to the support mailbox. Company updates could be meeting updates etc. When you come across these updates, from a data integrity perepective, please go ahead and delete them.
+
+### 5. What is _view for triage?
+
+In our shared Slack channels with customers, an issue can be followed up by a customer in a separate thread. It gets a bit confusing to know whether a ticket is related to another just from eyeballing them on Zendesk. The _view for triage_ helps us identify related threads in a customer channel to help merge related issues into one ticket.
