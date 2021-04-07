@@ -27,7 +27,7 @@ local maximums and the sunken cost fallacy.
 
 To give you some context for these terms, let me tell you how I see the premise
 of iteration-based product development. It doesn't matter whether you call it
-_Agile_, _Sprint, _Shape Up_ or something else, the idea is this: until you've
+_Agile_, _Sprint_, _Shape Up_ or something else, the idea is this: until you've
 built the product, you don't _really_ know what it should look like or how to
 best build it. You've never used it, so how would you know how it best works?
 You also haven't built it (yet), so you don't have experience building it.
