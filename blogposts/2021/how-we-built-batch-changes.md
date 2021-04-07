@@ -33,13 +33,13 @@ best build it. You've never used it, so how would you know how it best works?
 You also haven't built it (yet), so you don't have experience building it.
 Chances that you can accurately predict how its development will go are low.
 
-Acknowledging that you _don't_ plan the development of the product from start to
-finish in every detail. You _don't_ nail down and define the hundreds of steps
-it will take to go from 0 to fully-built and shipped and launched product.
-Instead, working iteration-based, you define roughly where you want to go and
-then take a single small step. Then you look around, get your bearings, correct
-course if necessary, and take another step. Build something, ship it, learn,
-build again.
+So you acknowledge that you don't know and then you _don't_ plan the development
+of the product from start to finish in every detail. You _don't_ nail down and
+define the hundreds of steps it will take to go from 0 to fully-built and
+shipped and launched product. Instead, working iteration-based, you define
+roughly where you want to go and then take a single small step. Then you look
+around, get your bearings, correct course if necessary, and take another step.
+Build something, ship it, learn, build again.
 
 I personally love working like this and think that in a lot of contexts in which
 software is being developed (fast-moving startups, for example) it's the best way to
@@ -170,7 +170,7 @@ Changes][launch].
 
 Looking back over these five pull requests and at the past 1.5 years now I'm
 still surprised. Working in iterations is all I did in my career so fake: 2 week
-sprints, 4 weeks, Agile, Scrum, Shape Up, even - ugh - [SAFe][safe]. I know how
+sprints, 4 weeks, Agile, Scrum, even - ugh - [SAFe][safe]. I know how
 easy it is to say "but this is what we said we wanted to build" or "but we
 invested all that time!". It's really easy and I'm still not quite sure how we
 avoided falling into these traps. My best guess (and this _will_ sound cheesy)
