@@ -177,15 +177,7 @@ TODO TODO TODO
 [evencoolercode]: https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e863448757e09850349b8a2bd7b1e540f6a6259a/-/blob/enterprise/internal/batches/reconciler/executor.go#L91-129
 [pr5]: https://github.com/sourcegraph/about/pull/2745
 
-<!-- Rename: it's easy to say "customers are already using it, we've already recorded -->
-<!-- demo videos and made screenshots" but we also had to admit that customers -->
-<!-- probably won't think negatively as long the name changes in a -->
-<!-- backwards-compatible way and, come to think of it, some screenshots have been -->
-<!-- outdated for a few months now and, yes, we've been meaning to record a new demo -->
-<!-- video. -->
-
 <!---
-
 Pull requests:
 
 PR #1:
@@ -200,5 +192,4 @@ PR #4:
 - 4 Aug 2020: [Implement ApplyCampaign and changeset reconciler by mrnugget · Pull Request #12435 · sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph/pull/12435)
 PR #5:
 - Rename batch changes
-
 -->
