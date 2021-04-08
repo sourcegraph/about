@@ -253,12 +253,14 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Trent Grover, Director of Architecture, Workiva
                                 </footer>
-                                <img
-                                    src="/external-logos/workiva-vector-logo.svg"
-                                    width="120px"
-                                    className="my-2"
-                                    alt="Workiva"
-                                />
+                                <div className="d-flex justify-content-center my-2">
+                                    <img
+                                        src="/external-logos/workiva-vector-logo.svg"
+                                        width="120px"
+                                        className="my-2"
+                                        alt="Workiva"
+                                    />
+                                </div>
                             </blockquote>
                         </div>
                     </div>
