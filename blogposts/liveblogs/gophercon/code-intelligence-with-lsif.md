@@ -11,15 +11,6 @@ published: true
 description: 'Code intelligence with LSIF'
 ---
 
-(setq markdown-xhtml-header-content
-	"<style type='text/css'>
-		iframe {
-			display: block;
-			margin: 0 auto;
-		}
-	</style>"
-)
-
 <div class="alert alert-info">
 
 Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
@@ -43,7 +34,9 @@ What format is that code intelligence data in? We are using [LSIF](https://githu
 
 To learn more, check out our lightning talk about LSIF from GopherCon 2019:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fMIRKRj_A88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="text-center">
+	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fMIRKRj_A88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 We have found that developing LSIF indexers is much easier than language servers. A one-shot command line tool that runs in the proper build environment and writes data to file is simpler than implementing a long lived remote LSP server. In the few weeks that we’ve been working on LSIF support we have been able to create new LSIF exporters for [Go](https://github.com/sourcegraph/lsif-go), [Python](https://github.com/sourcegraph/lsif-py), and [C/C++](https://github.com/sourcegraph/lsif-cpp). Microsoft has also already created LSIF exporters for [TypeScript](https://github.com/microsoft/lsif-node) and [Java](https://github.com/microsoft/lsif-java).
 
