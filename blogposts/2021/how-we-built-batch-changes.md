@@ -1,14 +1,13 @@
 ---
-title: "How we built Batch Changes, explained in 5 pull requests"
+title: 'How we built Batch Changes, explained in 5 pull requests'
 author: Thorsten Ball
 authorUrl: https://twitter.com/thorstenball
 publishDate: 2021-04-16T18:00+02:00
 tags: [blog]
 slug: how-we-built-batch-changes
-<!-- TODO: heroImage: /blog/TODO.jpg -->
-<!-- TODO: socialImage: https://about.sourcegraph.com/blog/TODO.jpg -->
+# TODO: heroImage: /blog/TODO.jpg
+# TODO: socialImage: https://about.sourcegraph.com/blog/TODO.jpg
 published: false
-
 ---
 
 Straightforward is the last word I’d use to describe how we built Batch Changes.
@@ -142,7 +141,7 @@ will, to see an example of what "declarative" means and how we reconcile the
 current and the desired state (as described by a user) of a changeset. (Sidenote
 for the curious: the code today is [even cooler][evencoolercode], take a look).
 
-That brings us to the last of the five pull requests. 
+That brings us to the last of the five pull requests.
 
 Towards the end of last year we ripped the "beta" label off of Campaigns and
 started to concentrate on getting more customers to use it: writing better (or
@@ -176,7 +175,7 @@ invested all that time!". It's really easy and I'm still not quite sure how we
 avoided falling into these traps. My best guess (and this _will_ sound cheesy)
 is: commitment. Commitment to building an excellent product, commitment to
 building something that provides value to customers, even if it means starting
-from scratch when you realise you're in a dead end. 
+from scratch when you realise you're in a dead end.
 
 Or let's turn this around: how hard was it to say in January last year, after a
 team of engineers had spent months building it, that we need to rip out half of
