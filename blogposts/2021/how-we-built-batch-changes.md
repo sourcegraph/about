@@ -10,12 +10,13 @@ slug: how-we-built-batch-changes
 published: false
 ---
 
-"Straightforward" is the last word I'd use to describe how we built Batch Changes.
-Exciting, rewarding, surprising, iterative, customer-focused - one of those
-maybe, but not straightfoward. The two name changes in 1.5 years of development
-— from Automation to Campaigns to Batch Changes — give you a glimpse of why. The
-real story, though, the one that makes me doubt whether we actually pulled this
-off, I think is best told by five pull requests.
+"Straightforward" is the last word I'd use to describe how we built Batch
+Changes. Exciting, rewarding, surprising, iterative, customer-focused - one of
+those maybe, but not straightfoward. The two name changes in 1.5 years of
+development — from Automation to Campaigns to Batch Changes — give you a glimpse
+of why. The real story, though, the one that makes me doubt whether we actually
+built and shipped Batch Changes the way we did, I think is best told by five
+pull requests.
 
 Not because these pull requests solve hard technical problems in two lines of
 clever code or fix nasty bugs that held us back for months. It's because they
