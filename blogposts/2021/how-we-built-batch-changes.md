@@ -67,21 +67,20 @@ We did, with [this pull request][pr1] — a placeholder here for all of the code
 we wrote in September and October 2019 to rebuild the functionality of the
 prototype from scratch.
 
-What made us do it though? We came to the conclusion
-that building the product from the ground up, fully understanding and owning the
-code is more important to the long-term success of the project and the team than
-merging a prototype to get something out there as fast as possible. From my
-perspective now this was one of the key decisions that, to this day, helped us
-avoid accumulating large amounts of technical debt, even though we were
-constantly shipping new things.
+What made us do it though? We came to the conclusion that building the product
+from the ground up, thereby fully understanding and owning the code is more
+important to the long-term success of the project and the team than merging a
+prototype to get something out there as fast as possible. From my perspective
+now this was one of the key decisions that helped us avoid accumulating large
+amounts of technical debt, even though we've constantly shipped new things.
 
 Only a few months later, though, we were stuck. We realised that what we had
 built and shipped as an alpha to customers just didn't work on a conceptual
-level. In that version, batch changes (called _campaigns_ at the time) were executed on
-the Sourcegraph instance to produce changes in repositories, which was cool from
-a technical standpoint but it felt clunky and slow, and adding a new type of
-campaign (to produce a new type of change) required us to add new code. "Meh" is
-a good word to use here.
+level. In that version, batch changes (called _campaigns_ at the time) were
+executed on the Sourcegraph instance to produce changes in repositories, which
+was cool from a technical standpoint but it felt clunky and slow, and extending
+which types of change could be made required us to add new code. "Meh" is a good
+word to use here.
 
 So at this point we had thrown the prototype away, built the product from
 scratch and had to realise that, well, _this isn't it_. So what did we do?
