@@ -10,7 +10,7 @@ slug: how-we-built-batch-changes
 published: false
 ---
 
-Straightforward is the last word I'd use to describe how we built Batch Changes.
+"Straightforward" is the last word I'd use to describe how we built Batch Changes.
 Exciting, rewarding, surprising, iterative, customer-focused - one of those
 maybe, but not straightfoward. The two name changes in 1.5 years of development
 — from Automation to Campaigns to Batch Changes — give you a glimpse of why. The
@@ -30,7 +30,7 @@ it. You've never used it — how would you know how it works best? You also
 haven't built it yet, which means you don't have experience building it. Chances
 are low that you can accurately predict how its development will go.
 
-So you do is you acknowledge that you don't know. And then you lean into that:
+So what you do is you acknowledge that you don't know. And then you lean into that:
 you _don't_ plan the development of the product from start to finish in every
 detail. You _don't_ nail down and define the hundreds of steps it will take to
 go from zero to fully-built and shipped and launched product. Instead, working
@@ -64,7 +64,9 @@ customers pointed at and said "I want this"?
 
 We did, with [this pull request][pr1] — a placeholder here for all of the code
 we wrote in September and October 2019 to rebuild the functionality of the
-prototype from scratch. What made us do it though? We came to the conclusion
+prototype from scratch.
+
+What made us do it though? We came to the conclusion
 that building the product from the ground up, fully understanding and owning the
 code is more important to the long-term success of the project and the team than
 merging a prototype to get something out there as fast as possible. From my
@@ -74,9 +76,9 @@ constantly shipping new things.
 
 Only a few months later, though, we were stuck. We realised that what we had
 built and shipped as an alpha to customers just didn't work on a conceptual
-level. In that version, campaigns (now called batch changes) were executed on
+level. In that version, batch changes (called _campaigns_ at the time) were executed on
 the Sourcegraph instance to produce changes in repositories, which was cool from
-a technical standpoint but it felt clunky, and slow, and adding a new type of
+a technical standpoint but it felt clunky and slow, and adding a new type of
 campaign (to produce a new type of change) required us to add new code. "Meh" is
 a good word to use here.
 
@@ -88,7 +90,7 @@ don't produce changes on the server-side but instead accept _diffs_ through
 the API and, as part of the Sourcegraph CLI, provide a tool to produce those
 diffs wherever you can run the CLI with whatever Docker container you want?
 
-The server-side would then only have concern itself with diffs and how to
+The server-side would then only have concern itself with diffs: how to
 publish them on code hosts as pull and merge requests, how to sync them, how to
 track them, how to rate limit their creation, etc. We wouldn't have to ship a
 new release every time we came up with a new way to produce diffs. And our
@@ -104,7 +106,7 @@ customers even earlier.
 
 So far, so good, right? Yes, except, you know, [naming is
 hard](https://martinfowler.com/bliki/TwoHardThings.html) and while we could've
-made the old name for the feature — _Automation_ — work we decided to rename it.
+gone with the old name for the feature — _Automation_ — we decided to rename it.
 Take a look at [PR #3][p3] for the first of many in February 2020 that changed
 "[Aa]utomation" to "[Cc]ampaigns" in our codebase.
 
@@ -121,8 +123,8 @@ update the changes?
 
 I wouldn't say we were stuck again - we were constantly shipping new features
 and improvements. But it also started dawning on us that maybe we've exhausted
-one idea. Tweaking wouldn't get us out of this, nor a sledgehammer. But maybe if
-we look at it from a different angle? What if instead of requiring users say
+one idea. Tweaking wouldn't get us out of this, nor would a sledgehammer. But maybe if
+we look at it from a different angle? What if, instead of requiring users to say
 what should happen to produce a campaign, we switch to a _declarative_ model and
 let them describe what the campaign should like in a YAML file?
 
@@ -132,11 +134,11 @@ development) and showed it to teammates and colleagues. The time it took a
 colleague to go from "ok, tell me what campaigns are" to "ohhh, I get it! nice"
 was reduced tenfold. Very much to our relief, since the changes necessary to
 make the documentation a reality were huge. We had to build a distributed,
-_declarative_ system that manages hundreds and thousands of pull and merge
+_declarative_ system that manages hundreds or thousands of pull and merge
 requests across different code hosts.
 
-Once the idea was validated by a lot "this totally makes sense" from potential
-users we got to work. Look at [this PR][pr4b], number 4b in this series if you
+Once the idea was validated by a lot of "this totally makes sense" from potential
+users, we got to work. Look at [this PR][pr4b], number 4b in this series if you
 will, to see an example of what "declarative" means and how we reconcile the
 current and the desired state (as described by a user) of a changeset. (Sidenote
 for the curious: the code today is [even cooler][evencoolercode], take a look).
@@ -145,22 +147,22 @@ That brings us to the last of the five pull requests.
 
 Towards the end of last year we ripped the "beta" label off of Campaigns and
 started to concentrate on getting more customers to use it: writing better (or
-even any) documentation, improving the onboarding process, providing
-troubleshooting help, fixing bugs and edge cases.
+in some cases any) documentation, improving the onboarding process, providing
+troubleshooting help, and fixing bugs and edge cases.
 
-At the same time our fast-growing product marketing team started working towards
+At the same time, our fast-growing product marketing team started working towards
 making our product as a whole more consistent. One thing that stood out was the
-name "Campaigns". Next to the names of our other features it didn't fit in. It
-also always required a sentence or two of explanation ("Glad you asked. A
-campaign is a ..."). In a data-driven approach to finding a new name Batch
+name "Campaigns". Next to the names of our other features, it didn't fit in. It
+also always required a sentence or two of explanation. ("Glad you asked. A
+campaign is a ...") In a data-driven approach to finding a new name, Batch
 Changes came out as the winner. Ahead of Campaigns, Batches, Clusters, Bulk
-Changes, and others. No one asked in a survey needed an explanation and nearly
-everyone understood what the feature is roughly about.
+Changes, and others. No one we asked in our survey needed an explanation, and nearly
+everyone understood what the feature was roughly about.
 
 But renaming what we built _again_? It would've been tempting to answer with
 "customers are already using it, why bother?" or "we've recorded demo videos
 with the old names!" or "there's so many screenshots we would need to change".
-In all honesty, though, we had to admit: existing customers probably won't mind
+In all honesty, though, we had to admit: existing customers probably wouldn't mind
 as long as it's not a breaking change, some of our screenshots were outdated
 already, and we've been meaning to record an up-to-date demo video anyway.
 
@@ -168,15 +170,15 @@ So, [renaming we did][pr5] and followed it up with the first official,
 non-alpha, non-beta, download-it-now-and-try-it launch of [Batch
 Changes][launch].
 
-Looking back over these five pull requests and at the past 1.5 years now I'm
+Looking back over these five pull requests and at the past 1.5 years now, I'm
 still surprised. I know how easy it is to say "but this is what we said we
-wanted to build" or "but we invested all that time!". I've worked in iterations
+wanted to build" or "but we invested all that time!" I've worked in iterations
 all my life. 2 week sprints, 4 weeks, Agile, Scrum, even - ugh - [SAFe][safe].
-The danger to get stuck and not knowing how to get out of it is always there.
+The danger of getting stuck and not knowing how to get out of it is always there.
 I'm still not quite sure how we avoided that trap. My best guess (and this
 _will_ sound cheesy) is: commitment. Commitment to building an excellent
 product, commitment to building something that provides value to customers, even
-if it means starting from scratch when you realise you're in a dead end.
+if it means starting from scratch when you realize you're at a dead end.
 
 Or let's turn this around: how hard was it to say in January last year, after a
 team of engineers had spent months building it, that we need to rip out half of
