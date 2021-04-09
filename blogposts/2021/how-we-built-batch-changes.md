@@ -43,14 +43,14 @@ I personally love working like this and think that in a lot of contexts in which
 software is being developed (fast-moving startups, for example) it's the best
 way to ship successful products.
 
-But there's one huge problem with this approach: it's really easy to iterate
-yourself into a corner. If all you do is take small steps, you can miss the
-point where you should take big leaps to someplace else entirely. You end up
-with [a local maximum](https://elezea.com/2012/09/iphone-5-local-maximum/). And
-even if you realise that you're stuck and _know_ that you must take a big leap,
-it's hard to abandon the things you've built in many, many small iterations. "So
-much work went into this! We can't simply delete it! Right?" Right, it's the
-[sunken cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect).
+But there's one huge problem with this approach: if you're constantly taking
+small steps and adjusting the direction slightly, you _feel_ productive even
+when you're going in circles. You're constantly doing two steps forward and two
+steps back but never take a big leap to someplace else entirely. You end up with
+[a local maximum][localmaximum]. And even if you realise that you're stuck and
+_know_ that you must take a big leap, it's hard to abandon the things you've
+built in many, many small iterations. "So much work went into this! We can't
+simply delete it! Right?" Right, says the [sunken cost fallacy][sunkencost].
 
 Back to the five pull requests and how we've managed to defy both of these dangers.
 
@@ -187,6 +187,8 @@ still inspires and motivates me, because I'd rather build and ship something
 that _is_ valuable and that _is_ good than to give customers something just
 because we build it.
 
+[localmaximum]: https://elezea.com/2012/09/iphone-5-local-maximum/
+[sunkencost]: https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect
 [quinn]: https://about.sourcegraph.com/company/team#quinn-slack
 [pr1]: https://github.com/sourcegraph/sourcegraph/pull/5482
 [pr2]: https://github.com/sourcegraph/sourcegraph/pull/8008
