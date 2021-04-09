@@ -1,5 +1,6 @@
 ---
 title: 'How we built Batch Changes, explained in 5 pull requests'
+description: A 300 character limit field for describing your post. Use this is you want to specially craft the excerpt shown on the index page. Uses the first 300 characters of text from your post if this field does not exist.
 author: Thorsten Ball
 authorUrl: https://twitter.com/thorstenball
 publishDate: 2021-04-16T18:00+02:00
