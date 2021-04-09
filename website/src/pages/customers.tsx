@@ -101,7 +101,7 @@ export default ((props: any) => (
                     </div>
                 </div>
                 <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-10 text-center">
+                    <div className="col-lg-10">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                             <p>
                                 For our new developers, Sourcegraph has been invaluable to get to know the repository
@@ -145,7 +145,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our
@@ -194,7 +194,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     Sourcegraph’s search gave us confidence because we knew we wouldn't overlook
@@ -241,7 +241,7 @@ export default ((props: any) => (
                         <p>Watch how Sid Sijbrandij (GitLab CEO) and Quinn Slack (Sourcegraph CEO) do code reviews.</p>
                     </div>
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     In a code review, you're given a very truncated view of the code, from dozens of
@@ -253,12 +253,14 @@ export default ((props: any) => (
                                 <footer className="blockquote-footer">
                                     Trent Grover, Director of Architecture, Workiva
                                 </footer>
-                                <img
-                                    src="/external-logos/workiva-vector-logo.svg"
-                                    width="120px"
-                                    className="my-2"
-                                    alt="Workiva"
-                                />
+                                <div className="d-flex justify-content-center my-2">
+                                    <img
+                                        src="/external-logos/workiva-vector-logo.svg"
+                                        width="120px"
+                                        className="my-2"
+                                        alt="Workiva"
+                                    />
+                                </div>
                             </blockquote>
                         </div>
                     </div>
@@ -303,7 +305,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
                                 <p>
                                     Sourcegraph gives us the ability to search for and refactor references to deprecated

@@ -125,7 +125,7 @@ export default ((props: any) => (
                     </div>
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <a href="/case-studies/lyft-monolith-to-microservices/" className="pricing-page__quote-link">
                                 <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
                                     <p>
@@ -206,7 +206,7 @@ export default ((props: any) => (
                     <hr className="my-4" />
 
                     <div className="row justify-content-center pt-md-4">
-                        <div className="col-lg-10 text-center">
+                        <div className="col-lg-10">
                             <a href="/case-studies/criteo-tackles-big-code/" className="pricing-page__quote-link">
                                 <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
                                     <p>
