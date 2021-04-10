@@ -192,14 +192,14 @@ SLAs - Turnaround time for Legal review:
 
 Legal:
 
-* legal@sourcegraph.com or
+* [legal@sourcegraph.com](mailto:legal@sourcegraph.com) or
 * #legal slack channel
 
 You should get a confirmation and estimated timing from the Legal team within 1-2 business days of your request. If not, follow up. 
 
 Finance:
 
-* finance@sourcegraph.com or
+* [finance@sourcegraph.com](mailto:finance@sourcegraph.com) or
 * #finance slack channel
 
 
