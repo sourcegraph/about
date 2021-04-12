@@ -18,6 +18,7 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 - [Software Engineer - Distribution](https://jobs.lever.co/sourcegraph/ddef3b91-ce19-4b22-8db4-65e159d7ff2b)
 - Experienced security engineering manager (will be posted soon)
 - Engineering manager for our [Distribution team](../handbook/engineering/distribution/index.md) (will be posted soon)
+- Frontend engineer for our [Extensibility team](../handbook/engineering/web/extensibility/index.md) (will be posted soon)
 
 ### Product
 
