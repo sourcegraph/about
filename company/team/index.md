@@ -232,9 +232,9 @@ To add yourself to this page:
 
 ## Marek Zaluski
 
-- Software Engineer
+- Developer Education Engineer
 - Ottawa, Canada 🇨🇦
-- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [marekweb](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
+- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [GitHub](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
 - Marek is a JavaScript and TypeScript developer with an interest in developer tools and tech education. He occasionally teaches programming courses and contributes to coding bootcamps, and he previously ran a software consulting agency. He lives in Canada's capital with his wife and his jack russell terrier 🐕.
 
 ## Adam Harvey (he/him)
