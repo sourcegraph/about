@@ -59,6 +59,13 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Marketing](marketing/index.md)
 
+– Brand Design
+– Community
+– Content Strategy
+– Demand Generation
+– Developer Education
+– Product Marketing
+
 ### [Sales](sales/index.md)
 
 - [Sales strategy & operations](sales/sales-ops/index.md)
