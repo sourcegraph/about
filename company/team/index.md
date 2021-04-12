@@ -259,14 +259,6 @@ To add yourself to this page:
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [christinelovett](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
 
-## Gonzalo Peci (he/him)
-
-- Engineering Manager
-- Palma de Mallorca, Balearic Islands, Spain, 🇪🇸
-- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [pecigonzalo](https://github.com/pecigonzalo), [LinkedIn](https://linkedin.com/in/pecig), [manager docs](gonza.md), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
-- Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
-  gone down the tech rabbit hole and learned programming languages 🤓.
-
 ## Alicja Suska (she/her)
 
 - /aˈlʲit͡s.ja/

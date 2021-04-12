@@ -238,19 +238,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Gonzalo Peci"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.640044689178467,
-          39.59917423931615
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "María Craig"
       },
       "geometry": {

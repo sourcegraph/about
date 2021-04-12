@@ -186,17 +186,6 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 
 ![Workspace of Tomás Senart, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tsenart.png)
 
-## Gonzalo Peci, Engineering Manager
-
-- Editor: VSCode
-- Mode: Dark is life
-- Theme: Switching between a custom Monokai Pop (a saturated version of monokai) and Dracula
-- Plugins/features: I'll just install as needed, but mostly LSPs, :emojisuggest:, TODO Highlight, colorize, .editorconfig., Fira Code but have been trying, Cascadia Code. Shoutout for Inconsolata before I moved to fonts with ligatures.
-- Console: zsh + Starship Theme + fzf + bat = :heart:
-
-![Workspace of Gonzalo Peci, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/gonza.png)
-
-
 ## Thorsten Ball, Software Engineer
 
 - Environment: tmux in a fullscreen Kitty window that covers everything
