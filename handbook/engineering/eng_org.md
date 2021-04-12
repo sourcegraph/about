@@ -61,6 +61,8 @@ Plans can change given new information!
             - [Team: Distribution](distribution/index.md#distribution-eng)
         - [Team: Core application](core-application/index.md#core-application-eng)
 
+[VP Eng team docs](vpe/index.md).
+
 <script>
 // This script injects the org chart content into each section of this page that links to a team page.
 // It is similar to the script used to compile the goals in ../goals/index.md.
