@@ -754,6 +754,19 @@
           43.67740105604103
         ]
       }
+    },
+      { 
+       "type": "Feature",
+       "properties": {
+         "name": "John Harwell"
+      }, 
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.566860,
+          34.144132 
+        ]
+      }
     }
   ]
 }
