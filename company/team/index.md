@@ -827,5 +827,5 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 ## John Harwell
 - Account Executive
 - Atlanta, GA USA 🇺🇸 
-- [john.harwellk@sourcegraph.com](mailto:john.harwell@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/john-s-harwell/)
+- [john.harwell@sourcegraph.com](mailto:john.harwell@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/john-s-harwell/)
 - John enjoys spending time with his wife, Nicole, and 2 sons, Isaac and Owen, playing games (sports, board, card, video, puzzles, etc.), attending concerts, and traveling to new places. John has been in SaaS sales his entire professional career, much of that time in the project management space. 
