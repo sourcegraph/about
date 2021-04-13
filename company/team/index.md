@@ -823,3 +823,9 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [kmorris50](https://github.com/kmorris50)
 - [kendrick@sourcegraph.com](mailto:kendrick@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kendrick-morris-3563b993)
 - Kendrick grew up in Houston, TX and now resides in San Francisco, CA. He graduated with a degree in Economics-Accounting & Government from Claremont McKenna College. Prior to Sourcegraph, Kendrick worked in the Deloitte San Francisco audit practice and currently holds a CPA license in California. He enjoys listening to podcasts, collecting vintage basketball cards, and driving just about anywhere for good barbecue.
+
+## John Harwell
+- Account Executive
+- Atlanta, GA USA 🇺🇸 
+- [john.harwellk@sourcegraph.com](mailto:john.harwell@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/john-s-harwell/)
+- John enjoys spending time with his wife, Nicole, and 2 sons, Isaac and Owen, playing games (sports, board, card, video, puzzles, etc.), attending concerts, and traveling to new places. John has been in SaaS sales his entire professional career, much of that time in the project management space. 
