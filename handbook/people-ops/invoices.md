@@ -12,7 +12,7 @@ Any teammates based outside of the US are on a contracting structure and will ne
 - Include any fringe benefits on your invoice as individual line items as well (cell phone, internet, wellness benefits, etc.).
 - Submit monthly invoices by the 2nd of the month so that payments can be issued by the 5th.
 - Your monthly invoice amount depends on whether you work a full month or a partial month.
-  - **Full month**: to calculate your monthly invoice, take your annual pay and divide it by 12 to arrive at the monthly amount. Most months are full months, including when you take PTO or when there are holidays.
+  - **Full month**: to find your monthly invoice amount, refer to your contract, which should state the monthly rate (or take your annual pay and divide it by 12 to arrive at the monthly amount). Most months are full months, including when you take PTO or when there are holidays.
   - **Partial month**: use the formula below to prorate partial months. Partial months happen, for example, if your contract starts in the middle of a month.
     - Divide your full month invoice amount by 173.33 hours (average hours worked per month based on 40 hour weeks for 52 weeks, according to IRS).
     - Multiply by the number of hours you worked in the pay period.
