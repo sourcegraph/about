@@ -6,7 +6,7 @@ Join us on our mission to make it so everyone, in every community, in every coun
 
 We're hiring! All our positions are remote. Our teammates are distributed [around the world](https://about.sourcegraph.com/company/team).
 
-Visit our [careers page to see all open positions](careers).
+Visit our [careers page to see all open positions](careers.md).
 
 ## Internships and new grad hiring
 
