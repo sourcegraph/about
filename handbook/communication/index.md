@@ -85,6 +85,7 @@ See "[1-1 meetings](../leadership/1-1.md)".
 See "[Announcements](announcements.md)".
 
 ## Shortening URLs
+
 Using shorter URLs is much easier to fit into small spaces or images than the full link to our page or handbook. 
 These will all redirect to our home page:
 - [srcgr.ph](http://srcgr.ph/)
