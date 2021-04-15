@@ -16,7 +16,7 @@ it. You've never used it, so how would you know how it works best? You also
 haven't built it yet, which means you don't have experience building it. Chances
 are low that you can accurately predict how its development will go.
 
-So what you do is you acknowledge that you don't know, and lean into that.
+So what you do is you acknowledge that you don't know and lean into that.
 You _don't_ plan the development of the product from start to finish in every
 detail. You _don't_ nail down and define the hundreds of steps it will take to
 go from zero to fully-built, shipped, and launched product. Instead, working
