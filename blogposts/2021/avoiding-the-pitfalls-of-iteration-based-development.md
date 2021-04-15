@@ -1,6 +1,6 @@
 ---
-title: Avoiding the pitfalls of iteration-based development, explained in 5 pull requests
-description: From _Automation_ to _Campaigns_ to _Batch Changes_, this is the story of how we built (and rebuilt) our latest code search product, Batch Changes, and the lessons we learned along the way. 
+title: "Avoiding the pitfalls of iteration-based development, explained in 5 pull requests"
+description: "From _Automation_ to _Campaigns_ to _Batch Changes_, this is the story of how we built (and rebuilt) our latest code search product, Batch Changes, and the lessons we learned along the way."
 author: Thorsten Ball
 authorUrl: https://twitter.com/thorstenball
 publishDate: 2021-04-15T18:00+02:00
