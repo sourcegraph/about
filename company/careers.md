@@ -6,10 +6,6 @@ Join us on our mission to make it so everyone, in every community, in every coun
 
 We're hiring! All our positions are remote. Our teammates are distributed [around the world.](https://about.sourcegraph.com/company/team)
 
-## Internships and new grad hiring
-
-Generally, we are not hiring for interns and new grads. The decision to hire interns and new grads are determined by individual hiring managers. People considered for intern and new grad roles have demonstrated skills and project work above their peer group. Examples of this work are building an open source project related to Sourcegraph, acting as a primary maintainer for a significant open source dependency, significant contribution to open source projects, or something of that caliber. 
-
 ### Engineering
 
 - [Director of Engineering - Global code graph](https://jobs.lever.co/sourcegraph/92a29215-e44f-4f2e-b147-73a8cb756d09)
@@ -52,6 +48,10 @@ Generally, we are not hiring for interns and new grads. The decision to hire int
 ### Talent
 - [Technical Recruiter - Product](https://jobs.lever.co/sourcegraph/c1630817-8de1-41e5-b199-00e1664be861)
 - [Recruiter - GTM](https://jobs.lever.co/sourcegraph/15af1881-2a4d-4c1c-86c2-0e157e4af889)
+
+### Internships and new grad hiring
+
+Generally, we are not hiring for interns and new grads. The decision to hire interns and new grads are determined by individual hiring managers. People considered for intern and new grad roles have demonstrated skills and project work above their peer group. Examples of this work are building an open source project related to Sourcegraph, acting as a primary maintainer for a significant open source dependency, significant contribution to open source projects, or something of that caliber. 
 
 ## Apply
 
