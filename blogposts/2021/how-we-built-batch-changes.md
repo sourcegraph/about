@@ -11,23 +11,9 @@ slug: avoiding-the-pitfalls-of-iteration-based-development
 published: false
 ---
 
-"Straightforward" is the last word I'd use to describe how we built Batch
-Changes. Exciting, rewarding, surprising, iterative, customer-focused - one of
-those maybe, but not straightfoward. The two name changes in 1.5 years of
-development — from Automation to Campaigns to Batch Changes — give you a glimpse
-of why. The real story, though, the one that makes me doubt whether we actually
-built and shipped Batch Changes the way we did, I think is best told by five
-pull requests.
-
-Not because these pull requests solve hard technical problems in two lines of
-clever code or fix nasty bugs that held us back for months. It's because they
-show how we avoided two big dangers of iteration-based product development:
-local maximums and the sunken cost fallacy.
-
-To give you some context for these terms, let me tell you how I understand the
-premise of iteration-based work. It doesn't matter whether you call it _Agile_,
-_Sprint_, _Shape Up_ or something else, the idea is this: until you've built the
-product, you don't _really_ know what it should look like or how to best build
+It doesn't matter whether you call it _Agile_, _Sprint_, _Shape Up_ or something
+else. The premise of iteration-based work is this: until you've built the
+product, you don't really know what it should look like or how to best build
 it. You've never used it — how would you know how it works best? You also
 haven't built it yet, which means you don't have experience building it. Chances
 are low that you can accurately predict how its development will go.
@@ -39,10 +25,6 @@ go from zero to fully-built and shipped and launched product. Instead, working
 in iterations, you define roughly where you want to go and then take a single
 small step. Then you look around, get your bearings, correct course if
 necessary, take another step. Build something, ship it, learn, build again.
-
-I personally love working iteratively. In a lot of contexts in which software is
-being developed (fast-moving startups, for example) I think it's the best way to
-ship successful products.
 
 But there's one huge problem with this approach: if you're constantly taking
 small steps and adjusting the direction slightly, you _feel_ productive even
@@ -60,6 +42,16 @@ iterations. "So much work went into this! We can't simply delete it! Right?"
 Right, says the [sunk cost fallacy][sunkencost] - the trap in which you continue
 doing something mainly because you already put a lot of effort in, even if
 continuing might not make sense anymore.
+
+"we can't simply delete it, right?" is also exactly what went through my head
+when we threw away a functioning, shipped, customer-validated prototype of 10k
+lines. Even now, with the question answered with "yes, we can", I find it hard
+to believe we built and shipped Batch Changes the way we did — building it
+twice, renaming it twice — but it is one of the most rewarding and
+customer-focused processes I've been a part of.
+
+The following five pull requests tell the story of how we avoided those two
+dangers - local maximums and the sunk cost fallacy - to build Batch Changes.
 
 ## Pull request #1: Build one to throw away
 
