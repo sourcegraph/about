@@ -1,11 +1,11 @@
 ---
-title: 'How we built Batch Changes, explained in 5 pull requests'
-description: A 300 character limit field for describing your post. Use this is you want to specially craft the excerpt shown on the index page. Uses the first 300 characters of text from your post if this field does not exist.
+title: Avoiding the pitfalls of iteration-based development - in 5 pull requests
+description: From _Automation_ to _Campaigns_ to _Batch Changes_, this is the story of how we built (and rebuilt) our latest code search product explained in five pull requests.
 author: Thorsten Ball
 authorUrl: https://twitter.com/thorstenball
 publishDate: 2021-04-16T18:00+02:00
 tags: [blog]
-slug: how-we-built-batch-changes
+slug: avoiding-the-pitfalls-of-iteration-based-development
 # TODO: heroImage: /blog/TODO.jpg
 # TODO: socialImage: https://about.sourcegraph.com/blog/TODO.jpg
 published: false
@@ -40,20 +40,30 @@ in iterations, you define roughly where you want to go and then take a single
 small step. Then you look around, get your bearings, correct course if
 necessary, take another step. Build something, ship it, learn, build again.
 
-I personally love working like this and think that in a lot of contexts in which
-software is being developed (fast-moving startups, for example) it's the best
-way to ship successful products.
+I personally love working iteratively. In a lot of contexts in which software is
+being developed (fast-moving startups, for example) I think it's the best way to
+ship successful products.
 
 But there's one huge problem with this approach: if you're constantly taking
 small steps and adjusting the direction slightly, you _feel_ productive even
-when you're going in circles. You're constantly doing two steps forward and two
-steps back but never take a big leap to someplace else entirely. You end up with
-[a local maximum][localmaximum]. And even if you realise that you're stuck and
-_know_ that you must take a big leap, it's hard to abandon the things you've
-built in many, many small iterations. "So much work went into this! We can't
-simply delete it! Right?" Right, says the [sunken cost fallacy][sunkencost].
+when you're going in circles. You keep taking two steps forward and two steps
+back but never take a big leap to someplace else entirely.
 
-Back to the five pull requests and how we've managed to defy both of these dangers.
+You end up on [a local maximum][localmaximum]: you're at a point that's higher
+than where you were before, but when you zoom out, you'd see that the there's
+higher points. The product is better than in its previous iteration but not the
+best one it could be.
+
+And even if you realise that you're stuck and _know_ that you must take a big
+leap, it's hard to abandon the things you've built in many, many small
+iterations. "So much work went into this! We can't simply delete it! Right?"
+Right, says the [sunk cost fallacy][sunkencost] - the trap in which you continue
+doing something mainly because you already put a lot of effort in, even if
+continuing might not make sense anymore.
+
+## Pull request #1: Build one to throw away
+
+![Screenshot of pull request #1](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-1.png)
 
 In September 2019 we started working on Batch Changes, except that back then it
 was called _Automation_ and it was already implemented, kinda: [Quinn][quinn]
@@ -86,6 +96,10 @@ word to use here.
 So at this point we had thrown the prototype away, built the product from
 scratch and had to realise that, well, _this isn't it_. So what did we do?
 
+## Pull request #2: Halfway there
+
+![Screenshot of pull request #2](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-2.png)
+
 [We threw half of it away][pr2]. The trigger was this idea: what if we simply
 don't produce changes on the server-side but instead accept _diffs_ through
 the API and, as part of the Sourcegraph CLI, provide a tool to produce those
@@ -105,6 +119,10 @@ abstraction layers it introduced turned out to be incredibly well-fitting. They
 allowed us to go faster and get a _valuable_ tool into the hands of our
 customers even earlier.
 
+## Pull request #3: Naming is hard
+
+![Screenshot of pull request #3](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-3.png)
+
 So far, so good, right? Yes, except, you know, [naming is
 hard](https://martinfowler.com/bliki/TwoHardThings.html) and while we could've
 gone with the old name for the feature — _Automation_ — we decided to rename it.
@@ -113,6 +131,10 @@ Take a look at [PR #3][p3] for the first of many in February 2020 that changed
 
 What followed were months of fine-tuning, user testing, shipping, tweaking -
 _iterating_. We added more features, fixed a lot of bugs, made things go faster.
+
+## Pull request #4: Switching to a declarative system
+
+![Screenshot of pull request #4](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-4.png)
 
 But — and by now you should know where this is going — something felt _off_.
 While Campaigns worked and we had customers using it and saying they loved it,
@@ -129,14 +151,13 @@ we look at it from a different angle? What if, instead of requiring users to say
 what should happen to produce a campaign, we switch to a _declarative_ model and
 let them describe what the campaign should like in a YAML file?
 
-[This pull request](https://github.com/sourcegraph/sourcegraph/pull/10921) shows
-how we asked "what if?": we wrote the documentation first (yes, README-driven
-development) and showed it to teammates and colleagues. The time it took a
-colleague to go from "ok, tell me what campaigns are" to "ohhh, I get it! nice"
-was reduced tenfold. Very much to our relief, since the changes necessary to
-make the documentation a reality were huge. We had to build a distributed,
-_declarative_ system that manages hundreds or thousands of pull and merge
-requests across different code hosts.
+[This pull request][pr4] shows how we asked "what if?": we wrote the
+documentation first (yes, README-driven development) and showed it to teammates
+and colleagues. The time it took a colleague to go from "ok, tell me what
+campaigns are" to "ohhh, I get it! nice" was reduced tenfold. Very much to our
+relief, since the changes necessary to make the documentation a reality were
+huge. We had to build a distributed, _declarative_ system that manages hundreds
+or thousands of pull and merge requests across different code hosts.
 
 Once the idea was validated by a lot of "this totally makes sense" from potential
 users, we got to work. Look at [this PR][pr4b], number 4b in this series if you
@@ -145,6 +166,10 @@ current and the desired state (as described by a user) of a changeset. (Sidenote
 for the curious: the code today is [even cooler][evencoolercode], take a look).
 
 That brings us to the last of the five pull requests.
+
+## Pull request #5: Naming is _really_ hard
+
+![Screenshot of pull request #5](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-5.png)
 
 Towards the end of last year we ripped the "beta" label off of Campaigns and
 started to concentrate on getting more customers to use it: writing better (or
@@ -194,8 +219,8 @@ because we build it.
 [pr1]: https://github.com/sourcegraph/sourcegraph/pull/5482
 [pr2]: https://github.com/sourcegraph/sourcegraph/pull/8008
 [pr3]: https://github.com/sourcegraph/about/pull/583
-[pr4]: https://github.com/sourcegraph/sourcegraph/pull/11972
-[pr4b]: https://github.com/sourcegraph/sourcegraph/pull/11972
+[pr4]: https://github.com/sourcegraph/sourcegraph/pull/10921
+[pr4b]: https://github.com/sourcegraph/sourcegraph/pull/12435
 [evencoolercode]: https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e863448757e09850349b8a2bd7b1e540f6a6259a/-/blob/enterprise/internal/batches/reconciler/executor.go#L91-129
 [pr5]: https://github.com/sourcegraph/about/pull/2745
 [launch]: https://about.sourcegraph.com/blog/introducing-batch-changes/
