@@ -115,7 +115,7 @@ customers even earlier.
 
 So far, so good, right? Yes, except, you know, [naming is
 hard](https://martinfowler.com/bliki/TwoHardThings.html). While we could've
-gone with the old name for the feature (_Automation_), we decided to rename it.
+gone with the old name for the feature (Automation), we decided to rename it.
 Take a look at [PR #3][pr3] for the first of many PRs in February 2020 that changed
 "[Aa]utomation" to "[Cc]ampaigns" in our codebase.
 
@@ -127,7 +127,7 @@ _iterating_. We added more features, fixed a lot of bugs, and made things go fas
 ![Screenshot of pull request #4](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-4.png)
 
 But (and by now you should know where this is going) something felt _off_.
-While _Campaigns_ worked and we had customers using it and saying they loved it,
+While Campaigns worked and we had customers using it and saying they loved it,
 we also noticed that our colleagues had problems using it, often hesitating to
 admit that they were confused with the workflow. Some of the questions we got were:
 why JSON (yes, we made users write JSON by hand)? Why can't I put everything in
