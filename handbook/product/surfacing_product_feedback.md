@@ -14,7 +14,7 @@ You're welcome to tag teammates or teams, but that's not necessary – once the
 
 If you have gotten a specific feedback requests that a customer(s) would like to track the progress of and a GitHub issue for the feedback [does not already exist](https://github.com/sourcegraph/sourcegraph/issues), you can also document this in a [new GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new/choose) to share with the customer. 
 
-Because a shareable issue is by definition public, you should not include any private customer information. You should still reference the customer name, by including a link to the customer in Salesforce.
+Because a shareable issue is by definition public, you should not include any private customer information. You should still point to the customer by including a link to the customer in Salesforce.
 
 After you create a GitHub issue to share with a customer, please note in the body of the issue that `This issue was created so that a customer can track its progress` so the team is aware. Then you should share a link to this issue in `#feedback`. 
 
