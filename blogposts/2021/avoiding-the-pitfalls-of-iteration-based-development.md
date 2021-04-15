@@ -30,7 +30,7 @@ when you're going in circles. You keep taking two steps forward and two steps
 back but never take a big leap to someplace else entirely.
 
 You end up on [a local maximum][localmaximum]: you're at a point that's higher
-than where you were before, but when you zoom out, you'd see that there are
+than where you were before, but when you zoom out you see that there are
 higher points. The product is better than it was in a previous iteration but not yet the
 best one it could be.
 
@@ -56,7 +56,7 @@ dangers — local maximums and the sunk cost fallacy — to build Batch Changes.
 ![Screenshot of pull request #1](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-1.png)
 
 In September 2019 we started working on Batch Changes, except that back then it
-was called _Automation_ and it was already implemented, kind of. [Quinn][quinn]
+was called Automation and it was already implemented, kind of. [Quinn][quinn]
 had built an impressive prototype to show to customers and to ask them whether
 they'd use something like this. More than one said "yes, I would, and _exactly
 like that_." "[Build one to throw
@@ -75,9 +75,9 @@ prototype to get something out there as fast as possible. From my perspective
 now, this was one of the key decisions that helped us avoid accumulating large
 amounts of technical debt even though we've constantly shipped new things.
 
-Only a few months later, though, we were stuck. We realised that what we had
+Only a few months later, though, we were stuck. We realised that what we
 built and shipped as an alpha to customers just didn't work on a conceptual
-level. In that version, Batch Changes (called _Campaigns_ at the time) were
+level. In that version, Batch Changes (called Campaigns at the time) were
 executed on the Sourcegraph instance to produce changes in repositories. This
 was cool from a technical standpoint but it felt clunky and slow, and extending
 which types of changes could be made required us to add new code. "Meh" is a good
@@ -115,7 +115,7 @@ customers even earlier.
 
 So far, so good, right? Yes, except, you know, [naming is
 hard](https://martinfowler.com/bliki/TwoHardThings.html). While we could've
-gone with the old name for the feature (_Automation_) we decided to rename it.
+gone with the old name for the feature (_Automation_), we decided to rename it.
 Take a look at [PR #3][pr3] for the first of many PRs in February 2020 that changed
 "[Aa]utomation" to "[Cc]ampaigns" in our codebase.
 
@@ -127,7 +127,7 @@ _iterating_. We added more features, fixed a lot of bugs, and made things go fas
 ![Screenshot of pull request #4](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-4.png)
 
 But (and by now you should know where this is going) something felt _off_.
-While Campaigns worked and we had customers using it and saying they loved it,
+While _Campaigns_ worked and we had customers using it and saying they loved it,
 we also noticed that our colleagues had problems using it, often hesitating to
 admit that they were confused with the workflow. Some of the questions we got were:
 why JSON (yes, we made users write JSON by hand)? Why can't I put everything in
@@ -144,7 +144,7 @@ let them describe what the campaign should like in a YAML file?
 [This pull request][pr4] shows how we asked "what if?" What if we wrote the
 documentation first (yes, README-driven development) and showed it to teammates
 and colleagues. The time it took a colleague to go from "ok, tell me what
-campaigns are," to "ohhh, I get it, nice!" was reduced tenfold. This was very much to our
+Campaigns are," to "ohhh, I get it, nice!" was reduced tenfold. This was very much to our
 relief since the changes necessary to make the documentation a reality were
 huge. We had to build a distributed, _declarative_ system that manages hundreds
 or thousands of pull and merge requests across different code hosts.
@@ -161,7 +161,7 @@ That brings us to the last of the five pull requests.
 
 ![Screenshot of pull request #5](https://sourcegraphstatic.com/blog/pitfalls-product-dev-5-prs/pull-request-5.png)
 
-Towards the end of last year we ripped the "beta" label off of then-named _Campaigns_ and
+Towards the end of last year we ripped the "beta" label off of then-named Campaigns and
 started to concentrate on getting more customers to use it: writing better (or
 in some cases any) documentation, improving the onboarding process, providing
 troubleshooting help, and fixing bugs and edge cases.
@@ -180,7 +180,7 @@ But renaming what we built _again_? It would've been tempting to answer with
 with the old names!" or "there's so many screenshots we would need to change."
 In all honesty, though, we had to admit that existing customers probably wouldn't mind
 as long as it's not a breaking change. Some of our screenshots were outdated
-already, and we've been meaning to record an up-to-date demo video anyway.
+already, and we'd been meaning to record an up-to-date demo video anyway.
 
 So, [rename it we did][pr5] and followed it up with the first official,
 non-alpha, non-beta, download-it-now-and-try-it launch of [Batch
