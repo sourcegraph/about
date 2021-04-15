@@ -726,26 +726,26 @@ We capitalize product names. Qualify product names with `Sourcegraph $FEATURE` o
 
 List of product names: 
 
+- Code Search
 - Batch Changes
 - Code Insights
 - Code Intelligence
-- Universal Code Search
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>With Sourcegraph Universal Code Search you can...</li>
-<li>You can search across all your repositories with Universal Code Search.</li>
+<li>With Sourcegraph Code Search you can...</li>
+<li>You can use Code Search to search across all your repositories.</li>
 <li>Companies benefit from a universal code search tool because...</li>
-<li>Sourcegraph Batch Changes are... Batch Changes allow you to...</li>
+<li>Sourcegraph Batch Changes allows you to...</li>
 <li>To create a batch change...</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>Use Sourcegraph universal code search to...</li>
+<li>Use Sourcegraph code search to...</li>
 <li>With code insights you can...</li>
 <li>Here’s how to use code intelligence.</li>
 </ul>
@@ -781,13 +781,13 @@ Use the natural plural/singular form. If a product or feature name is a plural n
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Batch Changes are available.</li>
+<li>Over 100 extensions are available.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>Batch Changes is available.</li>
+<li>Over 100 Extensions is available.</li>
 </ul>
 </div>
 </div>
@@ -798,13 +798,13 @@ Refer to the natural noun of the product or feature directly.
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Batch Changes are available.</li>
+<li>Extensions are available.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>The Batch Changes product is available.</li>
+<li>The Extensions product is available.</li>
 </ul>
 </div>
 </div>
