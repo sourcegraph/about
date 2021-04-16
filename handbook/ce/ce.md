@@ -8,7 +8,7 @@ We show up for our customers, open source users, and teammates by living up to o
 
 - We deeply know and understand our customers and their needs; we enable them and guide them
 - We teach our customers new and better ways to get value from Sourcegraph as thought leaders and evangelists
-- We advocate on behalf of our customers internally to product and engineering
+- We serve as the voice of the customer to internal teams, providing key insights and feedback, and raising feature requests
 
 
 ## How we intersect with other teams
