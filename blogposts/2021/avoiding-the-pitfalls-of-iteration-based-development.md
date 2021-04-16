@@ -139,7 +139,7 @@ and improvements. But it also started dawning on us that maybe we've exhausted
 one idea. Tweaking wouldn't get us out of this, nor would a sledgehammer. But maybe if
 we look at it from a different angle? What if, instead of requiring users to say
 what should happen to produce a campaign, we switch to a _declarative_ model and
-let them describe what the campaign should like in a YAML file?
+let them describe what the campaign should look like in a YAML file?
 
 [This pull request][pr4] shows how we asked "what if?" What if we wrote the
 documentation first (yes, README-driven development) and showed it to teammates
