@@ -2,7 +2,7 @@
 
 ## Our ethos
 
-Customer Engineers at Sourcegraph are a combination of pre-sales sales engineering and post-sales customer success. We own the relationship with our developer users and champions at our customers and prospects. We serve as the technical experts during the sales cycle and help enable our customers throughout our journey together.
+Customer Engineers at Sourcegraph are a combination of pre-sales sales engineering and post-sales customer success. We are first and foremost responsible for building and fostering relationships with developer users and champions at our prospects and customers. We serve as the technical experts during the sales cycle and help enable our customers throughout our journey together.
 
 We show up for our customers, open source users, and teammates by living up to our Sourcegraph values and handbook, as well as in the following ways:
 
