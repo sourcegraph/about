@@ -28,7 +28,7 @@ But having Sequoia on our side and raising $50M lets us invest in big new projec
 * **Code Insights:** Companies with a lot of code tend to start using Sourcegraph's API to answer higher-level questions, such as tracking a migration from one library to another, measuring adoption of languages and frameworks, reporting test coverage over time, etc. We're making this a first-class feature of Sourcegraph. Tell us what kind of code insights you'd like to see by taking [a short survey](https://sourcegraph-product.typeform.com/to/Sv7sEkD9).
 * We're also nearing general availability for [**Batch Changes**](https://docs.sourcegraph.com/batch_changes), which let you make large-scale code changes and refactors across many repositories.
 
-Investing in these big projects means growing our team. (In fact, 86% of our expenses are for team compensation.) We're [hiring for many roles](https://about.sourcegraph.com/company/careers) on our global, all-remote team (join us!).
+Investing in these big projects means growing our team. (In fact, 86% of our expenses are for team compensation.) We're [hiring for many roles](https://boards.greenhouse.io/sourcegraph91) on our global, all-remote team (join us!).
 
 ## Why Sequoia?
 
