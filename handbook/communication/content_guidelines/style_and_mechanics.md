@@ -804,7 +804,7 @@ Refer to the natural noun of the product or feature directly.
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>The Extensions product is available.</li>
+<li>The extensions feature is available.</li>
 </ul>
 </div>
 </div>
