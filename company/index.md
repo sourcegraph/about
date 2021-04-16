@@ -1,7 +1,7 @@
 # About Sourcegraph
 
 - [**about.sourcegraph.com**](https://about.sourcegraph.com) for information about Sourcegraph (the product and the company)
-  - [Careers](careers.md)
+  - [Careers](https://boards.greenhouse.io/sourcegraph91)
   - [News](https://about.sourcegraph.com/news)
 - [Sourcegraph handbook](../handbook/index.md#company)
 - [All-remote](remote/index.md)
