@@ -87,10 +87,8 @@ See "[Announcements](announcements.md)".
 ## Shortening URLs
 
 Using shorter URLs is much easier to fit into small spaces or images than the full link to our page or handbook. 
-These will all redirect to our home page:
+This will redirect to our home page:
 - [srcgr.ph](http://srcgr.ph/)
-- [scgr.ph](http://scgr.ph/)
-- [srcgra.ph](http://srcgra.ph/)
 
 We also use (srcgr.ph)[srcgr.ph] as our Bitly custom URL.
 It is also possible to customise specific sub-paths via Bitly. To do so we use our Bitly account, which is linked to our Twitter account. 
