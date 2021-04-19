@@ -1,6 +1,6 @@
 # Technical Writer interview process
 
-1. You [apply](https://jobs.lever.co/sourcegraph/933f214e-338b-422b-b5d9-0b01057576d3/apply).
+1. Candidate applies.
 1. [45 min] **[HM intro call](../hm_intro_call.md)** with [Christina Forney](../../../../../company/team/index.md#christina-forney-she-her), VP Product: We chat with you about Sourcegraph and to find out what you are looking for in your next role.
 1. [1 hr] **Writing portfolio review**: We go over your experience and samples in-depth.
    - [Christina Forney](../../../../../company/team/index.md#christina-forney-she-her)
@@ -13,4 +13,4 @@
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-Go back to the [careers page](../../../../../company/careers.md) for all open positions.
+Go back to the [careers page](https://boards.greenhouse.io/sourcegraph91) for all open positions.

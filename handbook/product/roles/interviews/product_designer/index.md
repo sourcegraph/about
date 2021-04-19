@@ -1,6 +1,6 @@
 # Product Designer interview process
 
-1. You [apply](https://jobs.lever.co/sourcegraph/fa7d3807-ae4c-4a35-9401-56dad0958227/apply).
+1. Candidate applies.
 1. [30 min] **[Initial screen](../initial_screen.md)**: We chat with you about Sourcegraph and to find out what you are looking for in your next role.
 1. [1 hr] **[Portfolio review](./pd_portfolio_review.md)**: You share a case study detailing a specific project that is applicable and impactful from your portfolio.
    - [Christina Forney](../../../../../company/team/index.md#christina-forney-she-her)
@@ -19,4 +19,4 @@
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
-Go back to the [careers page](../../../../../company/careers.md) for all open positions.
+Go back to the [careers page](https://boards.greenhouse.io/sourcegraph91) for all open positions.
