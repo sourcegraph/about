@@ -24,9 +24,11 @@ The page will outline responsibilities by role (Hiring Manager, Scheduling Coord
 
 ## Recruiting tools
 
-We utilize LinkedIn and TopFunnel as our sourcing platforms.
+We use Greenhouse as our applicant tracking system. Please see this [guide to using Greenhouse.](guide_to_using_greenhouse.md) (in progress)
 
-Hiring managers will be a assigned a hiring manager seat on the platform. For details on hiring manager seat capabilities, [click here](https://about.sourcegraph.com/handbook/people-ops/hiring/linkedin).
+We utilize LinkedIn Recruiter and TopFunnel as our sourcing platforms.
+
+Hiring managers will be a assigned a hiring manager seat on the platform. For details on hiring manager seat capabilities, [click here](linkedin.md).
 
 We will work with recruiters and hiring managers to gain access to the tools they need to be successfull.
 
@@ -39,13 +41,13 @@ Folder for agency tracker and to store contracts here: https://drive.google.com/
 - Is it not allowed if we have an internal recruiter for the team?
    - This should be reviewed on a case by case basis to see what is the required candidate pipeline to meet the team’s hiring goals. If internal recruiter(s) are not enough to meet the needs of the team then hiring manager can seek external help.
 - Do we allow exclusive contracts to hire for our roles?
-   - Most roles should allow for multiple sources for hiring. Exceptions to this can be for executive level roles. 
+   - Most roles should allow for multiple sources for hiring. Exceptions to this can be for executive level roles.
 - How do agencies submit candidates?
-   - All agencies should submit candidates through our agency portal at a minimum. Please speak to David Li on how to set this up. 
+   - All agencies should submit candidates through our agency portal at a minimum. Please speak to David Li on how to set this up.
 
 ## Open positions
 
-The source-of-truth for our open positions is [our careers page](../../../company/careers.md) in the handbook.
+The source-of-truth for our open positions is [our careers page](https://boards.greenhouse.io/sourcegraph91)
 
 For job boards that we post to and are considering, [click here](job_boards.md)
 
@@ -75,7 +77,7 @@ We review each candidate at each stage of our hiring pipeline (e.g. application,
 
 ## Making a referral
 
-Current employees can refer a candidate [here](https://hire.lever.co/referrals/new)
+Current employees can refer a candidate in Greenhouse [here](https://tracking.cirrusinsight.com/5ae92f4c-b2ab-4851-852d-32a879d5bc4b/player-vimeo-com-video-163888438)
 
 Having your referral complete the application provides helpful context when considering their profile, but is not required.
 
@@ -100,7 +102,7 @@ It would be nice if we could give feedback like this, but we don't do this today
 
 If any interviewer is asked by a candidate for interview feedback, they may respond with the following message:
 
-> I understand the desire to receive feedback from our interview process, but unfortunately we are not in a position to give it. Here is some public documentation to that effect: https://about.sourcegraph.com/handbook/people-ops/hiring#sharing-interview-feedback.
+> I understand the desire to receive feedback from our interview process, but unfortunately we are not in a position to give it. Here is some public documentation to that effect: https://about.sourcegraph.com/handbook/talent/hiring#sharing-interview-feedback.
 
 ## Respecting time
 
@@ -137,7 +139,7 @@ Once the candidate verbally accepts the offer, Sourcegraph legal team will send 
 
 ## Policy on outreaching to prospective candidates that work at a Sourcegraph customer
 
-It is okay to reach out to these prospective candidates. Do not mention their current employer or team being a customer of ours in the outreach. We should always be targeted in the people we outreach to because of their skills and experience. We should not be using our customer vendor relationship as a way to outreach to our customer's employees.  
+It is okay to reach out to these prospective candidates. Do not mention their current employer or team being a customer of ours in the outreach. We should always be targeted in the people we outreach to because of their skills and experience. We should not be using our customer vendor relationship as a way to outreach to our customer's employees.
 
 ## Policy for candidates re-applying to roles
 

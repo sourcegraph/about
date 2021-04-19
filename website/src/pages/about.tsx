@@ -56,7 +56,7 @@ export default class About extends React.Component<any, any> {
                         <div className="container py-5 mb-5">
                             <h2>Sourcegraph team</h2>
                             <p>Sourcegraph is an <Link to="/company/remote">all-remote</Link> company, working asynchronously across time zones and continents. Meet our <Link to="/company/team">team members</Link> and learn about our commitment to <Link to="/handbook/communication/code_of_conduct#our-standards">inclusion</Link>.</p>
-                            <Link className="btn btn-sm btn-primary mb-2" to="/company/careers">
+                            <Link className="btn btn-sm btn-primary mb-2" to="https://boards.greenhouse.io/sourcegraph91">
                                 Open roles - we're hiring!
                                 </Link>
                         </div>

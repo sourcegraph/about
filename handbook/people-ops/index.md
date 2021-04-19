@@ -11,15 +11,14 @@
 ### People Ops team members
 
 - [Noemi Mercado](../../../company/team/index.md#noemi-mercado-she-her), Head of People Ops
-  - [David Li](../../../company/team/index.md#david-li-he-him), Technical Recruiter
   - Cecily Black, Recruiting Coordinator
   - [Inés Roitman](https://about.sourcegraph.com/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
 
 ## Teammate experience
 
 - [All-remote work](../../company/remote/index.md)
-- [Interview process](hiring/interview_process.md)
-- [Hiring](hiring/index.md)
+- [Interview process](../talent/hiring/interview_process.md)
+- [Hiring](../talent/hiring/index.md)
 - [Onboarding](onboarding/index.md)
 - [Performance review cycles](review-cycles/index.md)
 - [United States visa sponsorship](visa-sponsorship.md)
@@ -44,7 +43,7 @@
 
 ## Roles
 
-See our [careers page](../../company/careers.md) for open roles on the People Ops team.
+See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open roles on the People Ops team.
 
 ## DEI
 
