@@ -835,3 +835,9 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Longon, UK 🇬🇧 
 - [christy@sourcegraph.com](mailto:christy@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/christy-haragan/)
 - Christy used to enjoy playing football (before Covid lockdown; hopefully she can update this in the future once calmer times occur), skiing, running, and yoga. She has been a CTO and co-founder of an app-startup and has a masters degree in Computer Science from the University of York.
+
+## Rebecca Dodd (she/her)
+- Senior Managing Editor
+- London, UK 🇬🇧
+- [rebecca@sourcegraph.com](mailto:rebecca@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rebecca-lee-dodd/)
+- 
