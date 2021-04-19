@@ -832,6 +832,6 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 
 ## Christy Haragan (she/her)
 - Director of Customer Engineering - International
-- Longon, UK 🇬🇧 
+- London, UK 🇬🇧 
 - [christy@sourcegraph.com](mailto:christy@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/christy-haragan/)
 - Christy used to enjoy playing football (before Covid lockdown; hopefully she can update this in the future once calmer times occur), skiing, running, and yoga. She has been a CTO and co-founder of an app-startup and has a masters degree in Computer Science from the University of York.
