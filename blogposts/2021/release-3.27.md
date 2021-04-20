@@ -5,6 +5,17 @@ description: "Sourcegraph 3.27 is released."
 tags: [blog, release]
 slug: "release/3.27"
 published: true
+
+Sourcegraph 3.27 is now available! For this release, we focused on making Sourcegraph Batch Changes even better, added precise Code Intelligence for C++ and Java, and upgraded our minimum supported version of Postgres from 9.6 to 12.
+
+**Batch Changes Updates** 
+[Batch Changes](https://about.sourcegraph.com/batch-changes/) allows you to automate large-scale code changes with a single declarative file. With a simple UI, Batch Changes makes it easy to track and manage all of your changesets from checks to code reviews until each change is merged. 
+As part of this release you can now define Batch Changes rollout windows allowing you to better control when changes are rolled out, and we added the ability to mark changesets as “archived” when a new batch spec is created. 
+
+**Postgres update**
+We updated the minimum supported version of Postgres from 9.6 to 12. If you are maintaining an external database and your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27. 
+[Read more about why we made this change](https://about.sourcegraph.com/blog/postgres-version-update/). 
+
 changelogItems:
   # Added
   - description: "`count:` now supports \"all\" as value. Queries with `count:all` will return up to 999999 results."
