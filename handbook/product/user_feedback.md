@@ -48,7 +48,7 @@ We have a few different email lists that are used to send us feedback.
 ### Slack
 
 - **Purpose:** Slack is a fast way for existing customers and Sourcegraph teammates to provide feedback. 
-- **Owner:** Most feedback in Slack appears in or gets forwarded into a relevant channel that already has clear owners. For feedback that does not have an obvious other location, whoever comes across it should post to the `#feedback` Slack channel. This channel is owned by the Product team. 
+- **Owner:** We [ask that teammates surface product feedback](surfacing_product_feedback.md) in [`#feedback`](https://sourcegraph.slack.com/archives/C0W2E592M). The product manager on [feedback rotation](product_management/responding_to_user_feedback.md#feedback-rotation) owns [routing and logging this feedback](product_management/responding_to_user_feedback.md#slack-feedback-channel).
 
 ### Support tickets
 
@@ -75,7 +75,7 @@ We have a few different email lists that are used to send us feedback.
 ### CE feedback
 
 - **Purpose:** CE teammates work closely with customers and often collect explicit customer feedback, general patterns of feedback they notice with a customer(s), and feedback from using the product themselves. 
-- **Owner:** CE owns putting this feedback in the `#feedback` slack channel, at which point the product team then owns the feedback. 
+- **Owner:** CE owns putting this feedback in the `#feedback` slack channel the [same way](surfacing_product_feedback.md) we ask of other teammates, at which point the product team then owns the feedback. 
 
 ## Productboard
 

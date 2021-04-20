@@ -8,15 +8,17 @@ We deeply value this feedback, so we make this process as frictionless for teamm
 
 ## Post the feedback in [`#feedback`](https://sourcegraph.slack.com/archives/C0W2E592M) on Slack
 
-You're welcome to tag teammates or teams, but that's not necessary – once the feedback is in [#feedback](https://sourcegraph.slack.com/archives/C0W2E592M) the product team will make sure it's routed correctly. 
+You're welcome to tag teammates or teams, but that's not necessary – once the feedback is in [#feedback](https://sourcegraph.slack.com/archives/C0W2E592M) the product team will make sure it's routed correctly.  
 
 ## When to create a GitHub issue
 
-If you have gotten a specific feedback requests that a customer(s) would like to track the progress of and a GitHub issue for the feedback [does not already exist](https://github.com/sourcegraph/sourcegraph/issues), you can also document this in a [new GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new/choose) to share with the customer. 
+If you have gotten a specific feedback requests that a customer(s) would like to track the progress of and a GitHub issue for the feedback [does not already exist](https://github.com/sourcegraph/sourcegraph/issues), you can document this in a [new GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=%23feedback&template=customer_feedback.md&title=) to share with the customer. 
 
-Because a shareable issue is by definition public, you should not include any private customer information. You should still include things like the customer name, by including a link to the customer in Salesforce.
+GitHub issues with the `#feedback` label will automatically post to the #feedback Slack channel on creation; you do not need to manually copy the issue link into #feedback. 
 
-After you create a GitHub issue to share with a customer, please note in the body of the issue that `This issue was created so that a customer can track its progress` so the team is aware. Then you should share a link to this issue in `#feedback`. 
+Because a shareable issue is by definition public, you should not include any private customer information. You should still include things like the customer name, by including a link to the customer in Salesforce. 
+
+If you need to create an issue with more specific customer information, you should [create a new issue in Sourcegraph/Customer](https://github.com/sourcegraph/customer/issues/new/choose), which is private. You can then link that to a public issue in Sourcegraph/Sourcegraph.
 
 ## What if the feedback is [a possible exception]? 
 
