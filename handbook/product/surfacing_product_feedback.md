@@ -8,7 +8,7 @@ We deeply value this feedback, so we make this process as frictionless for teamm
 
 ## Post the feedback in [`#feedback`](https://sourcegraph.slack.com/archives/C0W2E592M) on Slack
 
-You're welcome to tag teammates or teams, but that's not necessary – once the feedback is in [#feedback](https://sourcegraph.slack.com/archives/C0W2E592M) the product team will make sure it's routed correctly.  
+You're welcome to tag teammates or teams, but that's not necessary – once the feedback is in [#feedback](https://sourcegraph.slack.com/archives/C0W2E592M) the product team will [make sure it's routed correctly](product_management/responding_to_user_feedback.md#slack-feedback-channel).  
 
 ## When to create a GitHub issue
 
