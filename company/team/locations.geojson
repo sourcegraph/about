@@ -783,3 +783,18 @@
     }
   ]
 }
+     { 
+       "type": "Feature", 
+       "properties": { 
+         "name": "Rebecca Dodd" 
+       }, 
+       "geometry": { 
+         "type": "Point", 
+         "coordinates": [ 
+          -0.127758,
+          51.507351
+        ]
+      }
+    }
+  ]
+}
