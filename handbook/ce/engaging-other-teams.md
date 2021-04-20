@@ -78,7 +78,11 @@ Any questions about code intelligence and navigation should be routed to the [Co
 
 **Keywords**: `search`, `indexed search`, `indexing`, `diff search`, `symbols`, `keyword`, `filter`, `scope`, `version context`, `repogroup`, `saved search`, `code monitoring`
 
-Any questions about search should be routed to the [Search team](../engineering/search/index.md).
+The search team is divided into two sub-teams, search-product, and search-core. Search-product is focused on delivering features such as search contexts, and search predicates for Cloud and Enterprise alike, as well as driving retention for search in public code. Search-core is focused on growing the global index on Sourcegraph Cloud. 
+
+Any questions about search should be routed to the [Search team](../engineering/search/index.md), via the #search slack channel. Teams should be flagged appropriately via @search-product or @search-core. The search team will also assign a dedicated team member for support inquiries via the @search-core-support and @search-product-support tags.
+
+In GitHub issues search-core and search-product should be flagged via team/search-core and team/search-product respectively. 
 
 ### Browser extension and code host native integrations
 
@@ -138,6 +142,7 @@ Selecting priority is more of an art than a science. Start with the issue and it
 
 After you file the Github issue, alert the relevant engineering team you did so in Slack. Keep it simple and always provide 1) a brief description of what you need, 2) link to the Github issue, and 3) the context around timeline (for example: it's okay to look at this tomorrow or later in the week).
 
+* When it's a RFH for Core App and Distribution, be sure Virginia accounts for it in the temporary [RFH priorities list](https://docs.google.com/spreadsheets/d/1GMSRdsMtelj2LbWdvkJQfiYDHrUcQ_Atd4GVuTONYx4/edit?usp=sharing), which we are currently using (as of 2021-04-19) to understand priorities across all customers and make the best decision for all of our customers and for us as a company. Generally, issues are added in the order opened (so, newest issue = last priority); however, all issues are assessed and reordered based on full context as they are added. If it feels right to you as the CSE responsible for the new issue to be last, add it. If you think it needs a different placement on the list, create a thread to discuss with Virginia and the rest of the team in #customer-support-team. Virginia shares this with Bill and Raf to keep CS, Core App, and Distribution teams aligned across all issues we are collaborating to solve.
 * When posting in Distribution team's Slack channel, use @distribution-support to contact the the [on-call dev](../engineering/distribution/index.md#support-rotation) (not the team @distribution group -- while we use the @ group for all other engineering teams, most of our help requests go to Distribution, so they have a support rotation to help let the team have more focus time)
 * When posting in Batcher Changes team's Slack channel, use @batchers-support 
 * When posting for Core App, be sure to do so in the #core-application-support channel and use @core-app-support
