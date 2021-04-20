@@ -827,3 +827,12 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - London, UK 🇬🇧 
 - [christy@sourcegraph.com](mailto:christy@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/christy-haragan/)
 - Christy used to enjoy playing football (before Covid lockdown; hopefully she can update this in the future once calmer times occur), skiing, running, and yoga. She has been a CTO and co-founder of an app-startup and has a masters degree in Computer Science from the University of York.
+
+## Julie Campagna (she/her)
+- Senior Manager, Customer Advocacy
+- Sebastopol, CA  USA
+- GitHub: [juliecampagna](https://github.com/juliecampagna)
+- [julie@sourcegraph.com](mailto:julie@sourcegraph.com)
+- Name pronunciation: cohmpanya
+- Julie grew up in NH, 30 miles north of Boston, and after attending the University of Maine, moved to San Francisco to become a writer. Starting at PC World magazine, she later joined and wrote and produced customer stories for Adobe Systems and Atlassian. Julie currrently lives with her two bulldogs Angus and Peaches on a ranch in Sonoma County. She enjoys swimming, live music, growing flowers, and reading fiction, as well as riding her Kubota tractor around her yard.
+
