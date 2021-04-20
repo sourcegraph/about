@@ -113,7 +113,7 @@ Optional:
 
 ## Adding images
 
-Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](../product/technical_writing/index.md#uploading-graphics) for instructions.
+Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions.
 
 ## Uploading large files
 
