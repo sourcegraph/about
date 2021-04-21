@@ -17,7 +17,6 @@ We updated the minimum supported version of Postgres from 9.6 to 12. If you are 
 [Read more about why we made this change](https://about.sourcegraph.com/blog/postgres-version-update/). 
 
 changelogItems:
-  # Added
   - description: "`count:` now supports \"all\" as value. Queries with `count:all` will return up to 999999 results."
     url: https://github.com/sourcegraph/sourcegraph/pull/19756
     category:
