@@ -37,4 +37,3 @@ changelogItems:
     url: https://docs.sourcegraph.com/code_search/reference/language#select
     category: Search
 ---
-\* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
