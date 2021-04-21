@@ -33,7 +33,6 @@ changelogItems:
   - description: "The site configuration now supports defining batch change rollout windows, which can be used to slow or disable pushing changesets at particular times of day or days of the week. [#19796](https://github.com/sourcegraph/sourcegraph/pull/19796), [#19797](https://github.com/sourcegraph/sourcegraph/pull/19797), and #19951."
     url: https://github.com/sourcegraph/sourcegraph/pull/19951
     category: Batch Changes
-# Changed
   - description: "Bumped the minimum supported version of Postgres from `9.6` to `12`. The upgrade procedure is mostly automated for existing deployments, but may require action if using the single-container deployment or an external database. See the upgrade documentation for your deployment type for detailed instructions."
     url: https://docs.sourcegraph.com/admin/updates
     category:
