@@ -2,7 +2,11 @@
 
 This document outlines the processes we have in place to pull data from our various third-party tools and get it into BigQuery and Looker for analysis.
 
-We extract data from our tools using several methods, described in more detail below. The methods we use currently include reading data into Google Sheets using data connectors (add-ons), writing Python scripts to query the tools' APIs, and create workflows in Zapier.
+We extract data from our tools using several methods, described in more detail below.
+
+- [Google Sheets Add-Ons](#google-sheets-add-ons)
+- [Writing Python scripts](#write-a-script)
+- [Zapier](#zapier)
 
 ## Google Sheets Add-Ons
 
@@ -19,11 +23,11 @@ Both of these add-ons allow us to define the data we pull from our GA and Salesf
 
 Once the data we want is populated into a Google sheet, we can use it create a new table in BigQuery. In BigQuery, select the dataset you want to add the table to. For example, we have a dataset called `google_analytics` that contains our GA data.
 
-Then, click _Create Table_. In the configuration section, in the dropdown next to _Create table from_, select _Drive_, and _CSV_ as the file format. Then, copy and paste the Google Sheet URL containing your data into the URL field. BigQuery may be able to autodetect the schema, but if not, you will have to add each column name manually. You’ll also need to specify the number of header rows to skip to ensure your headers don’t get included as data.Then, create a table.
+Then, click _Create Table_. In the configuration section, in the dropdown next to _Create table from_, select _Drive_, and _Google Sheets_ as the file format. Then, copy and paste the Google Sheet URL containing your data into the URL field. BigQuery may be able to autodetect the schema, but if not, you will have to add each column name manually. You’ll also need to specify the number of header rows to skip to ensure your headers don’t get included as data. Then, create a table.
 
 Once the table is created in BigQuery, you can create a view in Looker using the table as normal.
 
-_Note_: In order for BigQuery to query your sheet, you’ll need to share the sheet to a Google service account associated with the GCP project that the database is in.
+_Note_: In order for BigQuery to query your sheet, you’ll need to share the sheet to a Google service account associated with the GCP project that the database is in. For example, looks at the service account [this spreadsheet](https://docs.google.com/spreadsheets/d/1fQVFchOA9FmThQLWumJt_bkO5BfgZxUGOSzDnDFRH-8/edit#gid=2123963677) is shared with.
 
 ## Write a script
 
