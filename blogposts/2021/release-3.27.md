@@ -20,9 +20,6 @@ changelogItems:
   - description: "`count:` now supports \"all\" as value. Queries with `count:all` will return up to 999999 results."
     url: https://github.com/sourcegraph/sourcegraph/pull/19756
     category:
-  - description: Credentials for Batch Changes are now validated when adding them.
-    url: https://github.com/sourcegraph/sourcegraph/pull/19602
-    category: Batch Changes
   - description: "Batch Changes now ignore repositories that contain a `.batchignore` file. [#19877](https://github.com/sourcegraph/sourcegraph/pull/19877) and src-cli#509"
     url: "https://github.com/sourcegraph/src-cli/pull/509"
     category: Batch Changes
