@@ -17,9 +17,6 @@ We updated the minimum supported version of Postgres from 9.6 to 12. If you are 
 [Read more about why we made this change](https://about.sourcegraph.com/blog/postgres-version-update/). 
 
 changelogItems:
-  - description: "`count:` now supports \"all\" as value. Queries with `count:all` will return up to 999999 results."
-    url: https://github.com/sourcegraph/sourcegraph/pull/19756
-    category:
   - description: "Batch Changes now ignore repositories that contain a `.batchignore` file. [#19877](https://github.com/sourcegraph/sourcegraph/pull/19877) and src-cli#509"
     url: "https://github.com/sourcegraph/src-cli/pull/509"
     category: Batch Changes
