@@ -28,7 +28,7 @@ Then, click _Create Table_. In the configuration section, in the dropdown next t
 
 Once the table is created in BigQuery, you can create a view in Looker using the table as normal.
 
-_Note_: In order for BigQuery to query your sheet, you’ll need to share the sheet to a Google service account associated with the GCP project that the database is in.
+_Note_: In order for BigQuery to query your sheet, you’ll need to share the sheet to a Google service account associated with the GCP project that the database is in. For example, looks at the service account [this spreadsheet](https://docs.google.com/spreadsheets/d/1fQVFchOA9FmThQLWumJt_bkO5BfgZxUGOSzDnDFRH-8/edit#gid=2123963677) is shared with.
 
 ## Write a script
 
