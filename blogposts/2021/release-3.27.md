@@ -56,7 +56,7 @@ changelogItems:
     category: Search
   - description: "New changes of a Perforce depot will now be reflected in `master` branch after the initial clone."
     url: https://github.com/sourcegraph/sourcegraph/pull/19718
-    category:
+    category: Admin
   - description: Gitolite and Other type code host connection configuration can be correctly displayed.
     url: https://github.com/sourcegraph/sourcegraph/pull/19976
     category:
