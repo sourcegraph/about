@@ -21,7 +21,7 @@ changelogItems:
   - description: "Changesets in batch changes will now be marked as archived instead of being detached when a new batch spec that doesn't include the changesets is applied. Once they're archived users can manually detach them in the UI."
     url: https://github.com/sourcegraph/sourcegraph/pull/19527
     category: Batch Changes
-  - description: "Creating changesets through Batch Changes as a site-admin without configured Batch Changes credentials has been deprecated. Please configure user or global credentials before Sourcegraph 3.29 to not experience any interruptions in changeset creation."
+  - description: "Creating changesets through Batch Changes as a site-admin without configured Batch Changes credentials has been deprecated. To avoid any interruptions in changeset creation, please configure user or global credentials before Sourcegraph 3.29."
     url: https://github.com/sourcegraph/sourcegraph/pull/20143
     category: Admin
   - description: "New changes of a Perforce depot will now be reflected in `master` branch after the initial clone."
