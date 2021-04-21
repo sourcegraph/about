@@ -29,7 +29,7 @@ changelogItems:
     category: Batch Changes
   - description: "The diff view commit visualization now supports both split and unified views, including hovers, go-to-definition, and find-references."
     url: https://github.com/sourcegraph/sourcegraph/pull/19553
-    category:
+    category: Search
   - description: "The site configuration now supports defining batch change rollout windows, which can be used to slow or disable pushing changesets at particular times of day or days of the week. [#19796](https://github.com/sourcegraph/sourcegraph/pull/19796), [#19797](https://github.com/sourcegraph/sourcegraph/pull/19797), and #19951."
     url: https://github.com/sourcegraph/sourcegraph/pull/19951
     category: Batch Changes
