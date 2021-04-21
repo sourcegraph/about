@@ -1,12 +1,12 @@
-# CustomerOps Data Workflows
+# Data Workflows
 
-This document outlines the processes we have in place to pull data from our various third-party customer ops tools and get it into BigQuery and Looker for analysis.
+This document outlines the processes we have in place to pull data from our various third-party tools and get it into BigQuery and Looker for analysis.
 
-We extract data from our customer ops tools using several methods, described in more detail below. The methods we use currently include reading data into Google Sheets using data connectors (add-ons), writing Python scripts to query the tools' APIs, and create workflows in Zapier.
+We extract data from our tools using several methods, described in more detail below. The methods we use currently include reading data into Google Sheets using data connectors (add-ons), writing Python scripts to query the tools' APIs, and create workflows in Zapier.
 
 ## Google Sheets Add-Ons
 
-We use Google Sheets as a data store after pulling data from some of our customer ops tools. Once the sheets are created with the data we want, we connect them to BigQuery to create database tables.
+We use Google Sheets as a data store after pulling data from some of our tools. Once the sheets are created with the data we want, we connect them to BigQuery to create database tables.
 
 The add-ons we use depend on the data source. Currently, we use:
 
