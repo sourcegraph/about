@@ -2,7 +2,12 @@
 
 This document outlines the processes we have in place to pull data from our various third-party customer ops tools and get it into BigQuery and Looker for analysis.
 
-We extract data from our customer ops tools using several methods, described in more detail below. The methods we use currently include reading data into Google Sheets using data connectors (add-ons), writing Python scripts to query the tools' APIs, and create workflows in Zapier.
+We extract data from our customer ops tools using several methods, described in more detail below.
+
+- [Google Sheets Add-Ons](#google-sheets-add-ons)
+- [Writing Python scripts](#write-a-script)
+- [Zapier](#zapier)
+
 
 ## Google Sheets Add-Ons
 
