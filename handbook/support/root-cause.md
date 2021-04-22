@@ -22,7 +22,7 @@ You know this. In your bones, you know this. It's why you were hired to be a CSE
 
 Sometimes, we just need to be reminded.
 
-Take another deep breathe. Have another glass of water. Open the window or step outside and feel the air on your face again. You've got this!
+Take another deep breath. Have another glass of water. Open the window or step outside and feel the air on your face again. You've got this!
 
 Let's break it down:
 
