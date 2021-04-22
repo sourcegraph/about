@@ -24,7 +24,6 @@ export default ((props: any) => (
                 author: 'Brandon Bloom, Senior Software Engineer, Convoy',
                 image: '/case-studies/brandon-bloom-convoy.jpg',
             }}
-            pdf="https://sourcegraphstatic.com/convoy_improved_on_boarding.pdf"
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
@@ -64,7 +63,7 @@ export default ((props: any) => (
 
                     <InContentBlockquote
                         quote="Fast, org-wide code search is a necessity in any organization, and tooling for this is especially necessary when we’ve chosen a multi-repo approach to code organization.
-                        The time I would otherwise spend using either GitHub’s slow search or finding and cloning repos is worth a lot more than $20 / month."
+                        The time I would otherwise spend using either GitHub’s slow search or finding and cloning repos is worth a lot."
                         author="James Reggio, Principal Engineer, Convoy"
                     />
                     <InContentBlockquote
