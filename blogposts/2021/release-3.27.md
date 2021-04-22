@@ -27,6 +27,18 @@ changelogItems:
   - description: "New changes of a Perforce depot will now be reflected in `master` branch after the initial clone."
     url: https://github.com/sourcegraph/sourcegraph/pull/19718
     category: Admin
+  - description: "Search functionality via built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, repo:contains.commit.after(...)`."
+   url: https://github.com/sourcegraph/sourcegraph/issues/18584
+   category: Search
+  - description: "Database encryption, external service config \u0026 user auth data can now be encrypted in the database using the `encryption.keys` config. See the docs for more info."
+   url: https://docs.sourcegraph.com/admin/encryption
+   category:
+  - description: "The new `disableAutoCodeHostSyncs` setting allows site admins to disable any periodic background syncing of configured code host connections. That includes syncing of repository metadata (i.e. not git updates, use `disableAutoGitUpdates` for that), permissions and batch changes changesets, but may include other data we'd sync from the code host API in the future."
+   url:
+   category: Admin
+  - description: "We now respect the `disableAutoGitUpdates` setting when cloning or fetching repos on demand and during cleanup tasks that may re-clone old repos."
+   url: https://github.com/sourcegraph/sourcegraph/pull/20194
+   category: Repositories
 ---
 
 Sourcegraph 3.27 is now available! For this release, we focused on making Sourcegraph Batch Changes even better and upgraded our minimum supported version of Postgres from 9.6 to 12.
