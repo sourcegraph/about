@@ -79,8 +79,8 @@ Welcome back! Let’s get started....
 
 ### In order to ensure the above declarations are true, you will complete the following tasks:
 
-* Write your first weekly planning post (one of our [rituals](support-team-rituals)). You can see examples in our #customer-support-chat Slack channel.
-* Start contributing to the daily captain’s log thread (another of our [rituals](support-team-rituals)). You can see examples in our #customer-support-chat Slack channel.
+* Write your first weekly planning post (one of our [rituals](support-team-rituals.md)). You can see examples in our #customer-support-chat Slack channel.
+* Start contributing to the daily captain’s log thread (another of our [rituals](support-team-rituals.md)). You can see examples in our #customer-support-chat Slack channel.
 * Learn about who our customers are by checking out the [personas](https://about.sourcegraph.com/handbook/marketing/personas) overview and how Sourcegraph is useful for them by reading a few [case studies](https://about.sourcegraph.com/case-studies).
 * Explore the [product overview](https://about.sourcegraph.com/) and for each feature, explore the related [documentation](https://docs.sourcegraph.com/getting-started).
 * Spend some time getting familiar with [the Sourcegraph glossary](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/enterprise/docs/glossary.md)

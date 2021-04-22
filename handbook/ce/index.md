@@ -20,7 +20,6 @@ The CE team are experts on educating customers on how to use the product (use ca
 ---
 
 * [Customer Engineering Onboarding](onboarding.md)
-* [Customer Support Onboarding](customer-support-onboarding.md)
 * [Team members](#members)
 * [Training sessions](https://docs.google.com/document/d/1nFePrSIcIakMmjOEY01vNc6VRe7WiJ0iOWygeZlbpYw/edit) (Sourcegraph 101, 102, office hours, etc.)
 * Demos

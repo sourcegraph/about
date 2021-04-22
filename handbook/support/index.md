@@ -95,6 +95,7 @@ Letting customers talk to us where they prefer and streamlining our workflow mus
 
 We rely mostly on our ethos to inform our decisions and actions, allowing for the team to be creative and innovate. The practices we write down represent the things that need to be done the same way, every time, by every person on the team. Or, the things we absolutely don't want to lose, forget, need to refer back to. As a general rule, this should always be a very small list.
 
+* [Onboarding](customer-support-onboarding.md)
 * [Team README](support-bios.md)
 * [Team schedule](support-schedule.md)
 * [Team rituals](support-team-rituals.md)
