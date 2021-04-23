@@ -32,7 +32,9 @@ Outreach and questions for the finance team can be asked in the #finance Slack c
 - Liaise with all other teams to become trusted business partners
 - Safeguard the assets of the Company
 
-## Goals for FY2022
+## Goals
+
+### FY'22
 
 - Introduce a financial forecasting and close process that allows for timely and accurate reporting
 - Introduce financial reporting tools / software that will support long term value to our financial reporting process
@@ -61,9 +63,9 @@ A fiscal year is a one-year period that corporations like Sourcegraph use for ac
 - Metrics
 	- Quarterly and monthly [IARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=2006715807)
 	- [ARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=1460993554)
-	- [Annualized net retention](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=2006715807)
-	- [Payback period & CAC efficiency](https://docs.google.com/spreadsheets/d/1TzkWruGtCTJguu7j7ScERRyeJ3qiXS1sbmjUojrQO3o/edit#gid=1714197527)
-	- [Burn ratio & ARR per employee](https://docs.google.com/spreadsheets/d/1TzkWruGtCTJguu7j7ScERRyeJ3qiXS1sbmjUojrQO3o/edit#gid=1714197527)
+	- [Annualized net retention](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
+	- [Payback period & CAC efficiency](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
+	- [Burn ratio & ARR per employee](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
 
 ## Definitions
 
