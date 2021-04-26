@@ -53,3 +53,5 @@ We updated the minimum supported version of Postgres from 9.6 to 12. If you are 
 ## New `Contains` functionality 
 
 You can now search for repos containing multiple patterns using the built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, and `repo:contains.commit.after(...)`.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hKXoMVzBZ5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
