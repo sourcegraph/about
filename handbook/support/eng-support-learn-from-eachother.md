@@ -45,7 +45,7 @@ Whenever an engineer or a CSE has the desire/time to create training materials t
 ## Documentation
 We have a shared responsibility to maintain and improve docs.sourcegraph.com. Whenever a CSE identifies a gap or something that needs to be updated, we will either:
 
-* Make the edit (or create) on the actual docs page (in Github) and seek review from the appropriate engineering team
+* Make the edit on (or create) the actual docs page (in Github) and seek review from the appropriate engineering team
 * Explain what is missing and ask that the appropriate engineering team fill in the gaps/needs we have identified that we don’t yet know by filing a docs issue here and tagging the right team + adding the docs tag
 
 When we work on documentation, we…
