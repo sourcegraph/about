@@ -81,7 +81,7 @@ Some engineering teams have a way for a CSE to take on a scope-bound project (li
 Our Frontend Platform team welcomes you to:
 
 1. Learn [Typescript](https://www.typescriptlang.org/) and [React](https://reactjs.org/)
-2. Learn how to write unit test with [Jest](https://jestjs.io/docs/getting-started)
+2. Learn how to write unit tests with [Jest](https://jestjs.io/docs/getting-started)
 3. Read [Developing Sourcegraph ](https://docs.sourcegraph.com/dev)
 4. Read [Web Client Development ](https://docs.sourcegraph.com/dev/background-information/web)
 5. Read [Sourcegraph’s testing principles](https://docs.sourcegraph.com/dev/background-information/testing_principles)
