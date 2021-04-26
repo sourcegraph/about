@@ -50,7 +50,7 @@ We have a shared responsibility to maintain and improve docs.sourcegraph.com. Wh
 
 When we work on documentation, we…
 
-* ...remind ourselves that the vision set forth by our product team for our docs is to align with the the organizational approach outlined in https://documentation.divio.com/, especially [the how-to section](https://documentation.divio.com/how-to-guides/) and [their examples](https://docs.divio.com/en/latest/how-to/) (how-to is the doc type we create/improve to most)
+* ...remind ourselves that the vision set forth by our product team for our docs is to align with the the organizational approach outlined in https://documentation.divio.com/, especially [the how-to section](https://documentation.divio.com/how-to-guides/) and [their examples](https://docs.divio.com/en/latest/how-to/) (how-to is the doc type we create/improve the most)
 * ...remind ourselves of [the guidelines for contributing to product documentation](https://about.sourcegraph.com/handbook/engineering/product_documentation), as well as [the content creation guidelines](https://about.sourcegraph.com/handbook/communication/content_guidelines)
 * ...note that troubleshooting documentation falls into the category of how-to documentation as outlined in the vision above
 * ...ensure that every page in our docs to have a single purpose (it may take us awhile to redo what is there, but keep this in mind for creating/revising)
