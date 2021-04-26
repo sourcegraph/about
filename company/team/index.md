@@ -841,3 +841,9 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [julie@sourcegraph.com](mailto:julie@sourcegraph.com)
 - Name pronunciation: cohmpanya
 - Julie grew up in NH, 30 miles north of Boston, and after attending the University of Maine, moved to San Francisco to become a writer. Starting at PC World magazine, she later joined and wrote and produced customer stories for Adobe Systems and Atlassian. Julie currrently lives with her two bulldogs Angus and Peaches on a ranch in Sonoma County. She enjoys swimming, live music, growing flowers, and reading fiction, as well as riding her Kubota tractor around her yard.
+
+## Carly Jones (she/her)
+- VP, Talent
+- Denver, CO USA 🇺🇸
+- GitHub: [carlyj0nes] (https://github.com/carlyj0nes)
+- Carly is a Denver native who went to college in Vermont (Middlebury), lived in Washington, DC for 5 years, and has since returned home to Colorado.  Prior to Sourcegraph, she gained experience leading talent teams at high growth startups and is passionate about all things talent acquisition.  When not working, you can find Carly tackling a DIY project, practicing her golf game, spending time outdoors, and traveling. 
