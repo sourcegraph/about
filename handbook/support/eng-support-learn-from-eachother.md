@@ -3,7 +3,7 @@
 When set-up for it, engineering and support teams have so much to offer each other. This is how we have set-up our teams to realize the benefits of learning from each other and the discrete workflows and work focuses of each team. And, of course, everything here aligns with support’s desire to be as self-sustaining as possible, where our success is felt most when we are able to understand common troubleshooting patterns, diagnostic steps, and tools, etc with less reliance on engineering in order to solve issues faster for our customers.
 
 ## Data sharing
-CS categories all customer inquiries so that we can get better insight into trends and identify opportunities for improvement. CSEs also share qualitative data about customer context and/or issues to ensure we fully consider what is best for the customer in our decision making.
+CS categorizes all customer inquiries so that we can get better insight into trends and identify opportunities for improvement. CSEs also share qualitative data about customer context and/or issues to ensure we fully consider what is best for the customer in our decision making.
 
 ## Team rotations
 
