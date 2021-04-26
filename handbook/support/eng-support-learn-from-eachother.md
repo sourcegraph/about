@@ -23,7 +23,7 @@ We are not quite a big enough team to have folks pair long term with one team. F
 
 
 ## Root cause focus
-It can be hard to focus on the root cause. It can be far too easy to focus on solving for a symptom instead. CSEs know to keep this focus and how to divide the work so that we offer a quick solution and are able to plan for the deeper work to address the underlying issue.
+It can be hard to focus on the root cause. It can be far too easy to focus on solving for a symptom instead. CSEs know to keep this focus and how to divide the work so that we offer a quick solution and are able to plan for the deeper work to address the underlying issue. Read [an open letter about root cause)[root-cause.md] for more.
 
 ## Support rotation donut pairing
 
@@ -50,12 +50,12 @@ We have a shared responsibility to maintain and improve docs.sourcegraph.com. Wh
 
 When we work on documentation, we…
 
-* Remind ourselves that the vision set forth by our product team for our docs is to align with the the organizational approach outlined in https://documentation.divio.com/, especially [the how-to section](https://documentation.divio.com/how-to-guides/) and [their examples](https://docs.divio.com/en/latest/how-to/) (how-to is the doc type we create/improve to most)
-* Remind ourselves of [the guidelines for contributing to product documentation](https://about.sourcegraph.com/handbook/engineering/product_documentation), as well as [the content creation guidelines](https://about.sourcegraph.com/handbook/communication/content_guidelines)
-* Note that troubleshooting documentation = how-to documentation in this approach and the problem
-* We want every page in our docs to have a single purpose (it may take us awhile to redo what is there, but keep this in mind for creating/revising)
-* If we move a page, we add a redirect for the old URL [here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/_resources/assets/redirects)
-* Default to explaining in text so it’s searchable (avoid screenshots)
+* ...remind ourselves that the vision set forth by our product team for our docs is to align with the the organizational approach outlined in https://documentation.divio.com/, especially [the how-to section](https://documentation.divio.com/how-to-guides/) and [their examples](https://docs.divio.com/en/latest/how-to/) (how-to is the doc type we create/improve to most)
+* ...remind ourselves of [the guidelines for contributing to product documentation](https://about.sourcegraph.com/handbook/engineering/product_documentation), as well as [the content creation guidelines](https://about.sourcegraph.com/handbook/communication/content_guidelines)
+* ...note that troubleshooting documentation falls into the category of how-to documentation as outlined in the vision above
+* ...ensure that every page in our docs to have a single purpose (it may take us awhile to redo what is there, but keep this in mind for creating/revising)
+* ...ensure that if we move a page, we add a redirect for the old URL [here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/_resources/assets/redirects)
+* ...default to explaining in text so it’s searchable (avoid screenshots)
 
 ## Troubleshooting documentation project
 Starting in FY22Q1 with a goal to complete in FY22Q2, CSEs are adopting an area of focus to specifically fill the gap of where to start troubleshooting when an issue surfaces. Giselle is leading this effort (if you have questions) and anyone can see our progress in this table (we simply mark when something is done and if you want more detailed status, you can check with support in #customer-support-chat). When a CSE is responsible for a focus, they will work with that team to capture all the good information about troubleshooting.
