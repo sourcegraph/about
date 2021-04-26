@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.27 release"
 publishDate: 2021-04-20T10:00-07:00
-description: "Sourcegraph 3.27 is released."
+description: "Sourcegraph 3.27 release includes Batch Changes updates, changes to the minimum required version of Postgres, and a new seach feature."
 tags: [blog, release]
 slug: "release/3.27"
 published: true
@@ -50,7 +50,7 @@ As part of this release you can now define batch change rollout windows allowing
 We updated the minimum supported version of Postgres from 9.6 to 12. If you are maintaining an external database and your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27.
 [Read more about why we made this change](https://about.sourcegraph.com/blog/postgres-version-update/).
 
-## New `Contains` functionality 
+## New "Contains" functionality 
 
 You can now search for repos containing multiple patterns using the built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, and `repo:contains.commit.after(...)`.
 
