@@ -33,8 +33,6 @@ changelogItems:
   - description: "User auth data can now be encrypted in the database using the `encryption.keys` config."
    url: https://docs.sourcegraph.com/admin/encryption
    category: Admin
-   url:
-   category: Admin
   - description: "We now respect the `disableAutoGitUpdates` setting when cloning or fetching repos on demand and during cleanup tasks that may re-clone old repos."
    url: https://github.com/sourcegraph/sourcegraph/pull/20194
    category: Repositories
