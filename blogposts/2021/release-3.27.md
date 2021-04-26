@@ -30,7 +30,7 @@ changelogItems:
   - description: "You can now search for repos containing multiple patterns using the built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, and `repo:contains.commit.after(...)`."
    url: https://github.com/sourcegraph/sourcegraph/issues/18584
    category: Search
-  - description: "Database encryption, external service config \u0026 user auth data can now be encrypted in the database using the `encryption.keys` config. See the docs for more info."
+  - description: "User auth data can now be encrypted in the database using the `encryption.keys` config."
    url: https://docs.sourcegraph.com/admin/encryption
    category:
   - description: "The new `disableAutoCodeHostSyncs` setting allows site admins to disable any periodic background syncing of configured code host connections. That includes syncing of repository metadata (i.e. not git updates, use `disableAutoGitUpdates` for that), permissions and batch changes changesets, but may include other data we'd sync from the code host API in the future."
