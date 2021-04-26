@@ -27,7 +27,7 @@ It can be hard to focus on the root cause. It can be far too easy to focus on so
 
 ## Support rotation donut pairing
 
-The engineering doing support rotation for their team can join the #customer-support-weekly-pairing Slack channel and be paired with a CSE for a focused coffee-style chat with the following agenda:
+The engineer doing support rotation for their team can join the #customer-support-weekly-pairing Slack channel and be paired with a CSE for a focused coffee-style chat with the following agenda:
 
 * If CSE and engineer haven’t met before: intros, otherwise, casual catch-up
 * Engineer: what’s going on on my team? What’s being built? What am I (personally) building?
