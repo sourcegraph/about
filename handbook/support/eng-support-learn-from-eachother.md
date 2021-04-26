@@ -19,7 +19,7 @@ We are not quite a big enough team to have folks pair long term with one team. F
 
 * A CSE can join the existing engineering team’s retro session and participate (great for casual collaboration, when there isn’t anything specific, and if the engineering team agrees)
 * The CS team and X engineering team can schedule a time to do a dedicated retro together on a topic, how they are working together, etc
-* A CSE and one rep from each engineering team can join in a org wide session
+* A CSE and one rep from each engineering team can join in an org wide session
 
 
 ## Root cause focus
