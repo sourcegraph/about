@@ -88,6 +88,6 @@ Our Frontend Platform team welcomes you to:
 6. Read [how Sourcegraph tests web code](https://docs.sourcegraph.com/dev/background-information/testing_web_code)
 7. Explore [the frontend codebase ](https://github.com/sourcegraph/sourcegraph/tree/main/client)
 8. Explore [Frontend-platform GitHub issues](https://github.com/sourcegraph/sourcegraph/labels/team%2Ffrontend-platform)
-9. It's best to start with issues with the good first issue label 
+9. Start with issues with the `good first issue` label 
 10. Chat with Virginia about your plan
 11. Let Patrick (engineering manager of the team) know which ticket you’d like to work on
