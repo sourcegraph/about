@@ -33,7 +33,6 @@ changelogItems:
   - description: "User auth data can now be encrypted in the database using the `encryption.keys` config."
    url: https://docs.sourcegraph.com/admin/encryption
    category: Admin
-  - description: "The new `disableAutoCodeHostSyncs` setting allows site admins to disable any periodic background syncing of configured code host connections. That includes syncing of repository metadata (i.e. not git updates, use `disableAutoGitUpdates` for that), permissions and batch changes changesets, but may include other data we'd sync from the code host API in the future."
    url:
    category: Admin
   - description: "We now respect the `disableAutoGitUpdates` setting when cloning or fetching repos on demand and during cleanup tasks that may re-clone old repos."
