@@ -27,7 +27,7 @@ changelogItems:
   - description: "New changes of a Perforce depot will now be reflected in `master` branch after the initial clone."
     url: https://github.com/sourcegraph/sourcegraph/pull/19718
     category: Admin
-  - description: "Search functionality via built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, repo:contains.commit.after(...)`."
+  - description: "You can now search for repos containing multiple patterns using the built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, and `repo:contains.commit.after(...)`."
    url: https://github.com/sourcegraph/sourcegraph/issues/18584
    category: Search
   - description: "Database encryption, external service config \u0026 user auth data can now be encrypted in the database using the `encryption.keys` config. See the docs for more info."
