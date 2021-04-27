@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.27 release"
 publishDate: 2021-04-27T10:00-07:00
-description: "Sourcegraph 3.27 release includes Batch Changes updates, changes to the minimum required version of Postgres, and a new seach feature."
+description: "Sourcegraph 3.27 release includes Batch Changes updates, changes to the minimum required version of Postgres, and added a new seach feature."
 tags: [blog, release]
 slug: "release/3.27"
 published: true
