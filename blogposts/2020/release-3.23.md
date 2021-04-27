@@ -28,4 +28,3 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/issues/15715
     category: Campaigns
 ---
-\* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.
