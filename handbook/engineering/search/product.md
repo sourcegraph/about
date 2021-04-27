@@ -38,6 +38,16 @@ We work in two-week iterations.
 
 Iterations start every other Monday.
 
+#### Planning artifacts
+
+We use two main artifacts to plan iterations: our [planning document](https://docs.google.com/document/d/1swnkQwd724IB_HP3_Mw3KkFnfl45t-PmWcNo_1gtkQM/edit#), and a GitHub project specific to the iteration. We think of their relative roles as follows:
+
+- The planning document is used as a discussion platform to agree on intended outcomes for the iteration. An intended outcome is not "issue #xxxx is closed", but rather "problem X is solved".
+- The GitHub project is an itemized representation of the work needed to accomplish the outcomes listed in the planning document.
+- If some items in the GitHub project are not closed by the end of the iteration, teammates should mention in their last weekly update of the iteration what this impact is on planned outcomes.
+
+#### Planning a new iteration
+
 On the last Thursday of an iteration:
 
 - The EM for the team:
@@ -48,6 +58,21 @@ On the last Thursday of an iteration:
     - Adds relevant issues to the GitHub project for the iteration, based on the content of the planning document.
 
 We have asynchronous discussion in the planning document. On the first Monday of an iteration, during the team sync, we validate the current plan & the contents of the GitHub project together, thus officially starting the iteration.
+
+#### Weekly updates
+
+Every week on Friday, Slackbot will start a thread for teammates to share:
+
+- Progress towards iteration goals.
+- Roadblocks they've encountered.
+- Questions they have for the team.
+- Anything else they'd like to make the team aware of.
+
+#### Projects spanning multiple iterations
+
+Projects that will span multiple iterations should have an associated project board tracking all known issues (example: [search contexts](https://github.com/orgs/sourcegraph/projects/113)). The subset of issues planned for a given iteration can then be added to the iteration's project, as GitHub issues can have multiple associated projects.
+
+#### Changing our processes
 
 We keep our iteration process fluid. We discuss any aspects that could be improved in our retrospective, and aggressively bias towards testing out new changes immediately.
 
