@@ -28,14 +28,14 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/pull/19718
     category: Admin
   - description: "You can now search for repos containing multiple patterns using the built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, and `repo:contains.commit.after(...)`."
-   url: https://github.com/sourcegraph/sourcegraph/issues/18584
-   category: Search
+    url: https://github.com/sourcegraph/sourcegraph/issues/18584
+    category: Search
   - description: "User auth data can now be encrypted in the database using the `encryption.keys` config."
-   url: https://docs.sourcegraph.com/admin/encryption
-   category: Admin
+    url: https://docs.sourcegraph.com/admin/encryption
+    category: Admin
   - description: "We now respect the `disableAutoGitUpdates` setting when cloning or fetching repos on demand and during cleanup tasks that may re-clone old repos."
-   url: https://github.com/sourcegraph/sourcegraph/pull/20194
-   category: Repositories
+    url: https://github.com/sourcegraph/sourcegraph/pull/20194
+    category: Repositories
 ---
 
 Sourcegraph 3.27 is now available! For this release, we focused on making Sourcegraph Batch Changes even better, upgraded our minimum supported version of Postgres from 9.6 to 12, and added a new `contains` functionality to search.
@@ -50,7 +50,7 @@ As part of this release you can now define batch change rollout windows allowing
 We updated the minimum supported version of Postgres from 9.6 to 12. If you are maintaining an external database and your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27.
 [Read more about why we made this change](https://about.sourcegraph.com/blog/postgres-version-update/).
 
-## New "Contains" functionality 
+## New "Contains" functionality
 
 Contains is a new query built-in that enables you to conditionally filter repositories based on the repository contents. For example, you can now search across repositories only if those repositories contain a particular file (like a README), or a particular file with some content (like a CHANGELOG file that includes the word fix).
 
