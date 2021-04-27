@@ -14,7 +14,7 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Goals](../company/goals/index.md)
 - [Team](../company/team/index.md)
   - [Org chart](../company/team/org_chart.md)
-  - [Careers](../company/careers.md)
+  - [Careers](https://boards.greenhouse.io/sourcegraph91)
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
   - [Content guidelines](communication/content_guidelines.md)
@@ -51,10 +51,11 @@ The handbook is a living document and we expect every teammate to propose improv
      - [Frontend platform](engineering/web/frontend-platform/index.md)
      - [API docs](engineering/web/api-docs/index.md)
 
+### [Customer Support](support/index.md)
+
 ### [Customer Engineering](ce/index.md)
 
 - [Customer Engineering](ce/index.md)
-- [Customer Support](ce/support.md)
 - Customer Training (TODO)
 
 ### [Marketing](marketing/index.md)
@@ -64,6 +65,8 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Sales strategy & operations](sales/sales-ops/index.md)
 
 ### [Talent](talent/index.md)
+
+- [Careers](careers.md)
 
 ### [Operations](ops/index.md)
 

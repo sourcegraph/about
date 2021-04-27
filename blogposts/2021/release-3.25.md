@@ -31,4 +31,3 @@ changelogItems:
     url: https://docs.sourcegraph.com/admin/repo/perforce
     category: Admin
 ---
-\* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.

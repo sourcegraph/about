@@ -8,24 +8,40 @@ The finance & accounting team is responsible for helping Sourcegraph acquire and
 
 ## Team
 
-We are hiring for the finance & accounting team! See all [open positions](../../../../company/careers.md).
+We are hiring for the finance & accounting team! See all [open positions](https://boards.greenhouse.io/sourcegraph91).
 
 ### Members
 
 - [Dan Adler](../../../../company/team/index.md#dan-adler-he-him), VP Operations
 - [Tommy O Donnell](https://about.sourcegraph.com/company/team#tommy-o-donnell-he-him), Manager, Financial Planning & Analysis
+- [Kendrick Morris](../../../../company/team/index.md#kendrick-morris-he-him), Finance & Operations Analyst
 
 ### Roles
 
-See our [careers page](../../../../company/careers.md) for open roles on the Finance team.
+See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open roles on the Finance team.
 
 ## Contact
 
 Outreach and questions for the finance team can be asked in the #finance Slack channel, by reaching out to the finance@sourcegraph.com email, or to the finance team members listed above directly.
 
+## Objectives
+
+- Provide timely and accurate financial information
+- Present information in a format that allows for sound decision making
+- Ensure that our Boards expectations are aligned with all teams operational objectives
+- Liaise with all other teams to become trusted business partners
+- Safeguard the assets of the Company
+
 ## Goals
 
-TODO
+### FY'22
+
+- Introduce a financial forecasting and close process that allows for timely and accurate reporting
+- Introduce financial reporting tools / software that will support long term value to our financial reporting process
+- Continuously monitor and evaluate our financial reporting metrics to understand key trends, and determine if new metrics need to be introduced as the company grows
+- Become a trusted business partner to all non Finance team members at Sourcegraph
+- Ensure that we build strong relationships with our customers and add efficiencies to our billings and collection process
+- Support other operational objectives within the Company
 
 ## Reporting
 
@@ -43,16 +59,13 @@ A fiscal year is a one-year period that corporations like Sourcegraph use for ac
 
 ### Sources of truth
 
-- [Financial statements](https://www.dropbox.com/home/Finance/Financial%20reports)
+- Financial statements
 - Metrics
-	- [Quarterly](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=774643452&range=A36) and [monthly](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=774643452&range=A120) IARR
-	- [ARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=508166254)
-	- [Bookings](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=0)
-	- [Net ARR churn](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=774643452&range=A39)
-	- Note: this spreadsheet is updated manually, so it will not be updated in real-time. The BizOps team is committed to updating the sheet within 3 business days (but in most circumstances much sooner) of the closing of a new or renewal deal, or the end of the month for expansions. 
-- [FY 2021 plan financials](https://docs.google.com/spreadsheets/d/1EkZ7O69-2jbgtacoFDrY8L6rP73Hlqp_syyVCnmGAFA/edit#gid=498016854) (including IARR goals, hiring plans and cost model)
-- [Weighted quarterly sales projections](https://sourcegraph.looker.com/looks/614)
-- [Board deck calculations](https://docs.google.com/spreadsheets/d/1iI1J40Pw5o9hDqhx658BQ9QeoFlm-OU8NfbeRY16l8Q/edit#gid=0)
+	- Quarterly and monthly [IARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=2006715807)
+	- [ARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=1460993554)
+	- [Annualized net retention](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
+	- [Payback period & CAC efficiency](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
+	- [Burn ratio & ARR per employee](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
 
 ## Definitions
 
@@ -84,8 +97,18 @@ A booking is when a customer commits to pay us money. This includes when:
 - An existing customer (depending on their contract) takes an action that increases the amount of revenue we will earn from them (such as growing usage or using more premium features)
 - An existing customer renews (including when the renewal is for the same ARR as the previous period)
 
+### Financial Planning and Financial Statement Review
+
+We update our financial plan on a quarterly basis. Our plan covers a twelve-month period and is focused on providing insights into working capital management, as well as predicting and understanding key trends within our business. 
+
+We work with the head of each department in order to update the financial plan.
+
+Following month two of every quarter, we complete a detailed dive in the current quarter actuals versus plan. Our philosophy is to compare our forecasts to results, so that we can constantly improve our forecasting methodologies and approaches to hold ourselves accountable. Additionally, this process drives accountability to the business owners of the budget. We focus on variances that exceed both 5% and $20k thresholds. We use this exercise to determine completeness over our financial statement close process, and also to understand if there is any activity causing fluctuations that we will need to revise on a go-forward basis. This exercise is completed at week 3 and 4 of the Month 3, in a given quarter. Once the quarter is closed, we also complete a detailed review of our plan vs. actual results. This analysis is completed at both a departmental level and a GL account level. We provide detailed explanations for variances that exceed both 5% and $20k thresholds.
+
+We also complete a balance sheet review. This review is focused on providing analysis on key financial statement line items such as Cash, AR, AP, Accruals, and Deferred Revenue. We have a number of methods for analyzing the activity on these accounts.
+
 ## Accounting
 
-We work with an outsourced accounting firm named [Officengine](https://officengine.com/). They close the books monthly and produce our financial statements, and provide support in processing payables, preparing taxes, filing corporate registrations, and more. 
+We work with an outsourced accounting firm named [Officengine](https://officengine.com/). They close the books monthly and produce our financial statements, and provide support in processing payables, preparing taxes, filing corporate registrations, and more.
 
 Reach out to the [Finance team](#team) for an introduction if needed.

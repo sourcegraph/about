@@ -238,19 +238,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Gonzalo Peci"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.640044689178467,
-          39.59917423931615
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "María Craig"
       },
       "geometry": {
@@ -743,17 +730,17 @@
       }
     },
     {
-        "type": "Feature",
-        "properties": {
-            "name": "Bill Creager"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                30.082670,
-                -97.842484
-            ]
-        }
+      "type": "Feature",
+      "properties": {
+        "name": "Bill Creager"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.08267,
+          -97.842484
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -765,6 +752,45 @@
         "coordinates": [
           40.20642042160034,
           43.67740105604103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "John Harwell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56686,
+          34.144132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Christy Haragan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.47103881835937494,
+          50.84323737103244
+        ]
+      }
+     },
+     { 
+       "type": "Feature", 
+       "properties": { 
+         "name": "Rebecca Dodd" 
+       }, 
+       "geometry": { 
+         "type": "Point", 
+         "coordinates": [ 
+          -0.127758,
+          51.507351
         ]
       }
     }

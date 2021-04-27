@@ -3,6 +3,13 @@
     "year": 2021,
     "articles": [
       {
+        "newsSource": "VentureBeat",
+        "newsTitle": "Sourcegraph now lets enterprises automate large-scale code changes across repositories",
+        "newsDate": "March 24, 2021",
+        "newsLink": "https://venturebeat.com/2021/03/24/sourcegraph-now-lets-enterprises-automate-large-scale-code-changes-across-repositories/",
+        "newsImage": "/external-logos/venturebeat-logo.png"
+      },
+      {
         "newsSource": "Forbes",
         "newsTitle": "Startup Opportunities In AI – The Unbundling Of Search",
         "newsDate": "January 12, 2021",

@@ -37,6 +37,7 @@ Surveys are conducted at the 3-month mark to collect feedback from all new teamm
 
 #### Onboarding content
 Survey questions:
+
 - Was there anything that was not provided in your onboarding that you think should have been?
 - Did the onboarding process provide you the tools to carry out your role?
 - Did you have the resources to use them properly?
@@ -44,6 +45,7 @@ Survey questions:
 
 #### Onboarding format and presentation
 Survey questions:
+
 - Was the onboarding platform (Process.st) intuitive and easy to follow?
 - Was the format easy to follow?
 - Was each task and its purpose communicated clearly?
@@ -55,6 +57,7 @@ People Ops sets up individual meetings to collect live feedback and address any 
 Surveys are also conducted at the 3-month mark to collect feedback from hiring managers to measure overall onboarding effectiveness so we can ensure that our onboarding is helping new teammates properly ramp up for their roles in the expected timeframe.
 
 Survey questions:
+
 - Was the teammate able to comply with their assignments (in time)?
 - Were they responsive?
 - Did they participate in team meetings?
@@ -67,9 +70,9 @@ If this needs to get more specific by role, we can make adjustments to questions
 
 ## Before you start at Sourcegraph
 
-Hiring managers can refer to the [Before starting](before_starting.md) page.
+Hiring managers can refer to the [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
 
-1. One week prior to your first day, People Ops will send you a welcome email. Be sure to send them your address, ID, shirt size, and photo for your avatar.
+1. One week prior to your first day, People Ops will send you a welcome email. Be sure to send them your address, phone number, shirt size, photo for your avatar, and for US teammates, the requested documentation.
 1. Order [your computer](../spending-company-money.md#computers).
 1. Order the [desk equipment](../spending-company-money.md#desk-set-up) you need to be productive working remotely.
 
@@ -83,7 +86,7 @@ See [General onboarding checklist](general_onboarding.md).
 
 - [Engineers](../../engineering/onboarding.md)
 - [Customer Engineers](../../ce/onboarding.md)
-- [Customer Support Engineers](../../ce/customer-support-onboarding.md)
+- [Customer Support Engineers](../../support/customer-support-onboarding.md)
 - [Sales team](../../sales/onboarding/index.md)
 - [Product team](../../product/onboarding/index.md)
 - [Business Operations & Strategy](../../ops/bizops/onboarding.md)

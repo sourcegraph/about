@@ -7,6 +7,8 @@ Google drive is the main repository for sales resources and the sales folder can
 - [Certificate of Incorporation](https://drive.google.com/u/0/uc?id=1q7AJT0k8Q5NJO5xN4v7iytaE3Gh6fYBb&export=download)
 - [Insurance Certificate](https://drive.google.com/u/0/uc?id=1Zm2b7KvZS9yL3K6_KZBd4VapCRO4BoyJ&export=download)
 
+Please reach out to finance if you require assistance in completing the vendor onboaring process for our new customers, or if you require any information that is not included above. You can forward any correspondence to finance@sourcegraph.com, or you can connect with the finance team on the #finance channel. Where a vendor directs you to complete vendor onboarding templates, or complete detail on a vendor onboarding portal, finance are happy to complete this exercise.
+
 ## Sales Templates
 
 Sales templates for common use cases can be found in [Sales Template folder](https://drive.google.com/drive/folders/1eBfRzDDM-fonChy5kumN5m1aS-aZxlYM)
@@ -19,8 +21,9 @@ Please do not edit the templates directly -- create a copy and place it in a dif
 
 The following templates are currently available:
 
-- [Enterprise License Agreement and Order Form](https://drive.google.com/u/0/uc?id=1Oo7vbWoGIaIq72zo7TFH9M4eugJXrvNv&export=download)
-- [Sourcegraph - Enterprise Services Agreement and Order Form (Hosted Services)](https://docs.google.com/u/0/uc?id=1wAg8CJMTpkB9gYtm0OrFxnlis7k3SL5A&export=download)
+- [Enterprise License Agreement and Order Form (On Prem)](https://drive.google.com/u/0/uc?id=1Oo7vbWoGIaIq72zo7TFH9M4eugJXrvNv&export=download)
+- [Enterprise License Agreement and Order Form (Offline)](https://drive.google.com/u/0/uc?id=12NWWByxoyYipwdOBXfrwP7QcV22Ir0c9&export=download)
+- [Enterprise Services Agreement and Order Form (Managed Instance)](https://docs.google.com/u/0/uc?id=1wAg8CJMTpkB9gYtm0OrFxnlis7k3SL5A&export=download)
 - [Proposal](https://docs.google.com/presentation/d/1Qv75e1oSSL9eRyf8RMOPDFpqoQdOAdmB3lvWcvsZz94/)
 - [Proof of Concept](https://docs.google.com/file/d/1IYI4w4Pavjf1s14CNZZ0VPSaheWGtdaNSCD0VDFWlEE/)
 - [Sales Email](https://docs.google.com/document/d/1a7NayrKc8JWKgzlpawVCUVCTHFYucrSGA5wuF706B-M/)
@@ -48,4 +51,4 @@ Note: Salesforce is the communication and document source of truth for our Sales
 
 ## Sales Content
 
-Other useful sales content can be found in the [Sales Content folder](https://drive.google.com/drive/folders/14guSNICPX5bHxUxXIeb1web6MN8z7FA4)
+Other useful sales content (including survey results, more sales and analyst decks, a one-pager, and more) can be found in the [Sales Content folder](https://drive.google.com/drive/folders/14guSNICPX5bHxUxXIeb1web6MN8z7FA4)

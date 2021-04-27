@@ -38,7 +38,7 @@ See "[Roles of the CEO](roles.md)".
 
 ### Scheduling time with me
 
-If possible, let's talk [asynchronously and publicly](../communication.md). If you need to schedule a time to speak with me, the best way is to contact Katerina Nikolova, my Executive Business partner, who can find a good time.
+If possible, let's talk [asynchronously and publicly](../communication.md). If you need to schedule a time to speak with me, the best way is to contact Katerina Nikolova, my Chief of Staff.
 
 My preferred working hours are 08:00-17:30 US Pacific Time.
 
@@ -92,4 +92,4 @@ I am happy to share internal financial metrics about the health of our business 
 1. What is the company's current revenue growth rate? What are the future plans for growth?
 1. What are the company's exit plans? We intend to remain an independent company and IPO because we are the leader in a big market.
 
-See "[Sharing company financials](../people-ops/hiring.md#sharing-company-financials)" for more.
+See "[Sharing company financials](../talent/hiring/index.md#sharing-company-financials)" for more.

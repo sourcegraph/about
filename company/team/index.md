@@ -95,7 +95,7 @@ To add yourself to this page:
 ## Vanesa Ortiz (she/her)
 
 - Name pronunciation: /[ˈvanɛsa ɔɹˈtiz](http://ipa-reader.xyz/?text=%5B%CB%88van%C9%9Bsa%20%C9%94%C9%B9%CB%88tiz%5D&voice=Penelope)/
-- Content Engineer
+- Community Advocate
 - San Francisco, CA, USA 🇺🇸
 - [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
 - Vanesa loves to travel (45 countries so far), spend time with her daughter, son and husband, sing and make jewelry. She grew up in the Dominican jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics before transtitioning to software engineering. Her weakness is sushi.
@@ -106,7 +106,7 @@ To add yourself to this page:
 - San Francisco, CA (Ramaytush Ohlone land)
 - GitHub: [mercadon](https://github.com/mercadon)
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/), [pronounce my name 🔊](https://www.name-coach.com/noemi-mercado)
-- Noemi was borned and raised in the Bay Area, she spends her free time caring for her cacti collection and pup named Valencia. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care.
+- Noemi was born and raised in the Bay Area, she spends her free time caring for her cacti collection and pup named Valencia. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care.
 
 ## Nick Snyder (he/him)
 
@@ -232,9 +232,9 @@ To add yourself to this page:
 
 ## Marek Zaluski
 
-- Software Engineer
+- Developer Education Engineer
 - Ottawa, Canada 🇨🇦
-- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [marekweb](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
+- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [GitHub](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
 - Marek is a JavaScript and TypeScript developer with an interest in developer tools and tech education. He occasionally teaches programming courses and contributes to coding bootcamps, and he previously ran a software consulting agency. He lives in Canada's capital with his wife and his jack russell terrier 🐕.
 
 ## Adam Harvey (he/him)
@@ -258,14 +258,6 @@ To add yourself to this page:
 - New York, NY, USA 🇺🇸
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [christinelovett](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
-
-## Gonzalo Peci (he/him)
-
-- Engineering Manager
-- Palma de Mallorca, Balearic Islands, Spain, 🇪🇸
-- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [pecigonzalo](https://github.com/pecigonzalo), [LinkedIn](https://linkedin.com/in/pecig), [manager docs](gonza.md), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
-- Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
-  gone down the tech rabbit hole and learned programming languages 🤓.
 
 ## Alicja Suska (she/her)
 
@@ -640,14 +632,6 @@ To add yourself to this page:
 - [Caitlin@sourcegraph.com](mailto:caitlin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/caitlincarducci/)
 - Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC!
 
-## Miles Mulcare (he/him)
-
-- Account Executive
-- San Francisco, CA, USA 🇺🇸
-- GitHub: [MilesmulcareSG](https://github.com/MilesmulcareSG)
-- [miles@sourcegraph.com](mailto:miles@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milesmulcare)
-- Miles lives in San Francisco's North Beach neighborhood. Prior to Sourcegraph, Miles spent 7.5 years at Fastly where he helped enterprise Engineering, Product, and Security teams to scale from $10M to over $200M in revenue. Miles graduated with a BA in Communications from Lewis & Clark College. Outside of work, Miles enjoys time with his family, Paige and Liam, and he is an avid road and mountain biker.
-
 ## Murat Sutunc (he/him)
 
 - Software Engineer
@@ -817,4 +801,49 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [bill.creager@sourcegraph.com](mailto:bill.creager@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/bill-creager-8055911a/)
 - If he isn't in front of this computer, Bill can usually be found doing one of the following: eating some BBQ in Austin, riding his bike or running, watching his kids play soccer, camping with the family, or working with his hands (building furniture, building and playing guitars). He grew up in Phoenix, AZ and went to Northern Arizona University in Flagstaff, AZ where he studied computer science (after a quick detour in Environmental Engineering, it wasn't for him).   Prior to Sourcegraph he worked at Procore, Spiceworks, and Demand Media and has been living in Texas for 11 years (he got there as quick as he could)!
 
+## Samson Goddy (he/him)
 
+- Director of Community
+- Port Harcourt, Nigeria 🇳🇬
+- GitHub: [samswag](https://github.com/samswag)
+- [samson@sourcegraph.com](mailto:samson@sourcegraph.com),[@samson_goddy](https://twitter.com/Samson_Goddy),[LinkedIn](https://linkedin.com/in/samsongoddy)
+- Samson, a software developer who believes in creating something iconic. An open source advocate who has been sustaining projects with his diverse experiences. He maintains tools, desktops and likes contributing back to the large OSS ecosystem. Building communities is something he passionate about, and he currently runs Open Source Community Africa, a non-profit org that promotes and educates everything open source. He loves playing console games, mobile photography and eating jollof rice.
+
+## Kendrick Morris (he/him)
+- Finance and Operations Analyst
+- San Francisco, CA USA 🇺🇸 
+- GitHub: [kmorris50](https://github.com/kmorris50)
+- [kendrick@sourcegraph.com](mailto:kendrick@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kendrick-morris-3563b993)
+- Kendrick grew up in Houston, TX and now resides in San Francisco, CA. He graduated with a degree in Economics-Accounting & Government from Claremont McKenna College. Prior to Sourcegraph, Kendrick worked in the Deloitte San Francisco audit practice and currently holds a CPA license in California. He enjoys listening to podcasts, collecting vintage basketball cards, and driving just about anywhere for good barbecue.
+
+## John Harwell
+- Account Executive
+- Atlanta, GA USA 🇺🇸 
+- [john.harwell@sourcegraph.com](mailto:john.harwell@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/john-s-harwell/)
+- John enjoys spending time with his wife, Nicole, and 2 sons, Isaac and Owen, playing games (sports, board, card, video, puzzles, etc.), attending concerts, and traveling to new places. John has been in SaaS sales his entire professional career, much of that time in the project management space. 
+
+## Christy Haragan (she/her)
+- Director of Customer Engineering - International
+- London, UK 🇬🇧 
+- [christy@sourcegraph.com](mailto:christy@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/christy-haragan/)
+- Christy used to enjoy playing football (before Covid lockdown; hopefully she can update this in the future once calmer times occur), skiing, running, and yoga. She has been a CTO and co-founder of an app-startup and has a masters degree in Computer Science from the University of York.
+
+## Rebecca Dodd (she/her)
+- Senior Managing Editor
+- London, UK 🇬🇧
+- [rebecca@sourcegraph.com](mailto:rebecca@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rebecca-lee-dodd/)
+- Originally from Cape Town, South Africa, Rebecca started her career in journalism before finding her way into tech via content marketing. Prior to Sourcegraph she worked at GitLab for over four years and managed their company blog. An enthusiastic traveller, Rebecca has a custom Google Map of every city she's ever visited, complete with colour-coded pins of the best coffee shops and restaurants. Ask her for recommendations!
+
+## Julie Campagna (she/her)
+- Senior Manager, Customer Advocacy
+- Sebastopol, CA  USA
+- GitHub: [juliecampagna](https://github.com/juliecampagna)
+- [julie@sourcegraph.com](mailto:julie@sourcegraph.com)
+- Name pronunciation: cohmpanya
+- Julie grew up in NH, 30 miles north of Boston, and after attending the University of Maine, moved to San Francisco to become a writer. Starting at PC World magazine, she later joined and wrote and produced customer stories for Adobe Systems and Atlassian. Julie currrently lives with her two bulldogs Angus and Peaches on a ranch in Sonoma County. She enjoys swimming, live music, growing flowers, and reading fiction, as well as riding her Kubota tractor around her yard.
+
+## Carly Jones (she/her)
+- VP, Talent
+- Denver, CO USA 🇺🇸
+- GitHub: [carlyj0nes] (https://github.com/carlyj0nes)
+- Carly is a Denver native who went to college in Vermont (Middlebury), lived in Washington, DC for 5 years, and has since returned home to Colorado.  Prior to Sourcegraph, she gained experience leading talent teams at high growth startups and is passionate about all things talent acquisition.  When not working, you can find Carly tackling a DIY project, practicing her golf game, spending time outdoors, and traveling. 

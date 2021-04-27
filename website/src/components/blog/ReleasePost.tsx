@@ -1,4 +1,5 @@
 import { Link } from 'gatsby'
+import truncate from 'lodash/truncate'
 import * as React from 'react'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
@@ -12,21 +13,19 @@ interface Props extends PostComponentProps { }
 export const ReleasePost: React.FunctionComponent<Props> = ({
     post,
     url,
+    full,
     className = '',
     headerClassName = '',
     titleClassName = '',
     titleLinkClassName = '',
     tag: Tag = 'div',
-}) => (
-        <Tag className={`release-post ${className}`}>
-            <header className={`release-post__header ${headerClassName}`}>
-                <h1 className={titleClassName}>
-                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
-                        {post.frontmatter.title}
-                    </Link>
-                </h1>
-                <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
-            </header>
+}) => {
+    const body = full ? (
+        <>
+            {post.html && (
+                <div className="card-body release-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
+            )}
+
             <h3 className="card-body pb-2 pt-0 m-0 release-post__changelog-header">Changelog</h3>
             <div className="release-post__items list-group list-group-flush">
                 {post.frontmatter.changelogItems?.map(({ url, category, description }, i) => (
@@ -54,11 +53,38 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 <li className="release-post__help-item">
                     <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
                         Full changelog
-                </a>
+                    </a>
                 </li>
             </ul>
-            {post.html && (
-                <div className="card-body border-top release-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
-            )}
+            <div className="card-body release-post__body">
+                * Please <a href="https://about.sourcegraph.com/contact/sales/">contact Sourcegraph</a> with any licensing questions.
+            </div>
+        </>
+    ) : (
+        <>
+            <p className="blog-post__excerpt">
+                {post.frontmatter.description
+                    ? truncate(post.frontmatter.description, { length: 300 })
+                    : truncate(post.excerpt, { length: 300 })}{' '}
+            </p>
+            <Link to={url} className="blog-post__read-more">
+                Read more
+            </Link>
+        </>
+    )
+
+    return (
+        <Tag className={`release-post ${className}`}>
+            <header className={`release-post__header ${headerClassName}`}>
+                <h1 className={titleClassName}>
+                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
+                        {post.frontmatter.title}
+                    </Link>
+                </h1>
+                <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
+            </header>
+
+            <div className="card-body">{body}</div>
         </Tag>
     )
+}

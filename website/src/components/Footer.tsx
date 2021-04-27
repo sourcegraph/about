@@ -3,6 +3,7 @@ import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
+import TwitchIcon from 'mdi-react/TwitchIcon'
 import * as React from 'react'
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
@@ -30,7 +31,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         rel="noopener"
                                         className="bigCode"
                                     >
-                                        Not a developer?
+                                        Sourcegraph overview (PDF)
                                     </a>
                                 </li>
                             </ul>
@@ -64,7 +65,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/company/careers">Careers</a>
+                                    <a href="https://boards.greenhouse.io/sourcegraph91">Careers</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/contact">Contact</Link>
@@ -125,6 +126,16 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         aria-label="YouTube"
                                     >
                                         <YouTubeIcon />
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a
+                                        href="https://www.twitch.tv/sourcegraph"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="Twitch"
+                                    >
+                                        <TwitchIcon />
                                     </a>
                                 </li>
                             </ul>

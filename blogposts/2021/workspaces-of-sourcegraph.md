@@ -6,7 +6,7 @@ publishDate: 2021-03-16T18:00+02:00
 tags: [blog, remote, design]
 slug: workspaces-of-sourcegraph
 heroImage: /blog/workspaces-of-sourcegraph-final-compressed.jpg
-socialImage: https://about.sourcegraph.com/blog/blog/workspaces-of-sourcegraph-final-compressed.jpg/
+socialImage: https://about.sourcegraph.com/blog/workspaces-of-sourcegraph-final-compressed.jpg/
 published: true
 description: "We asked 17 Sourcegraph developers about their workspace preferences. Here's what we found."
 ---
@@ -185,17 +185,6 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 - Nord as dark mode, but I like light mode too (Tomorrow Light)
 
 ![Workspace of Tomás Senart, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tsenart.png)
-
-## Gonzalo Peci, Engineering Manager
-
-- Editor: VSCode
-- Mode: Dark is life
-- Theme: Switching between a custom Monokai Pop (a saturated version of monokai) and Dracula
-- Plugins/features: I'll just install as needed, but mostly LSPs, :emojisuggest:, TODO Highlight, colorize, .editorconfig., Fira Code but have been trying, Cascadia Code. Shoutout for Inconsolata before I moved to fonts with ligatures.
-- Console: zsh + Starship Theme + fzf + bat = :heart:
-
-![Workspace of Gonzalo Peci, Engineering Manager](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/gonza.png)
-
 
 ## Thorsten Ball, Software Engineer
 

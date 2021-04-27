@@ -38,7 +38,7 @@ As the company grows, new hires are joining almost every week. The onboarding pr
 <li> Slack
 <li> Zoom
 <li> 1password
-<li> Lever
+<li> Greenhouse
 <li> Lattice
 <li> Process St.
    </ul>
@@ -56,6 +56,8 @@ And create a Check in meeting for new hires with PeopleOps after their first mon
 <li> Add new teammate to any team/role specific meetings and calls
      </ul>
 <p>
+  You must also make sure to provide documentation and context on on going projects your team is working on.
+  <p>
 Having this done before day one will make it easier for the new hire and an overall better experience.
    </td>
    <td>Hiring Manager

@@ -84,6 +84,17 @@ See "[1-1 meetings](../leadership/1-1.md)".
 
 See "[Announcements](announcements.md)".
 
+## Shortening URLs
+
+Using shorter URLs is much easier to fit into small spaces or images than the full link to our page or handbook. 
+This will redirect to our home page:
+
+- [srcgr.ph](http://srcgr.ph/)
+
+We also use (srcgr.ph)[srcgr.ph] as our Bitly custom URL.
+It is also possible to customise specific sub-paths via Bitly. To do so we use our Bitly account, which is linked to our Twitter account. 
+
+
 ## Google Docs
 
 1. We use Google Docs for:
@@ -159,3 +170,18 @@ Presentations can use one of two formats:
 - Presentation: Maximum 15 minutes long
 
 To sign-up, use this [Google Sheet](https://docs.google.com/spreadsheets/d/1HLVFH9JUxchPNH4FoIQAThorbpdvmTl0ndmZzmpjsuU/edit?usp=sharing). The talk will be added to the Google Calendar invitation which will be sent to everyone.
+
+## Getting nice email signatures
+
+1. In Gmail **Settings** > **General** scroll down to signature:
+
+![image](https://user-images.githubusercontent.com/3173176/79911585-73112e80-83d5-11ea-85b3-929c20de72d6.png)
+
+2. Make the first line e.g. **Tommy Pesavento** (he/him)
+3. Make the second line your role, include any additional information you like on subsequent lines (socials, etc.)
+4. Choose **Insert image** and then **Web Address (URL)** and enter https://user-images.githubusercontent.com/3173176/115082082-2d892380-9eba-11eb-9606-6c4b9c4eb465.png then choose **Medium** size after it has been entered.
+5. Click the image, then click **Link** and paste https://sourcegraph.com into the **Web Address** field. Now your image links to the website!
+6. Your signature should now look something like this, and clicking the Sourcegraph logo should bring you to sourcegraph.com:
+7. You may wish to add another line like `What is Universal Code Search? | We're hiring!` with links to https://about.sourcegraph.com/ and https://about.sourcegraph.com/company/careers
+
+<img width="464" alt="image" src="https://user-images.githubusercontent.com/3173176/115082263-7a6cfa00-9eba-11eb-93ba-61b72de8b30b.png">
